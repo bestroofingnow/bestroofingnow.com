@@ -88,15 +88,15 @@ export function Header() {
         )}
       >
         <div className="container">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-28">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="https://bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
                 alt={SITE_CONFIG.name}
-                width={180}
-                height={80}
-                className="h-16 w-auto"
+                width={360}
+                height={160}
+                className="h-24 w-auto"
                 priority
               />
             </Link>
