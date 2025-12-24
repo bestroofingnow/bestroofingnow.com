@@ -1,17 +1,19 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function CustomCursor() {
   const [mounted, setMounted] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [position, setPosition] = useState({ x: -100, y: -100 });
+  const [smoothPosition, setSmoothPosition] = useState({ x: -100, y: -100 });
+  const animationRef = useRef<number>();
 
   useEffect(() => {
     setMounted(true);
 
     // Check for touch device
-    if (window.matchMedia('(pointer: coarse)').matches) {
+    if (typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches) {
       return;
     }
 
@@ -23,9 +25,27 @@ export default function CustomCursor() {
       setIsHovering(!!clickable);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+  // Smooth spring-like animation
+  useEffect(() => {
+    const animate = () => {
+      setSmoothPosition(prev => ({
+        x: prev.x + (position.x - prev.x) * 0.15,
+        y: prev.y + (position.y - prev.y) * 0.15,
+      }));
+      animationRef.current = requestAnimationFrame(animate);
+    };
+
+    animationRef.current = requestAnimationFrame(animate);
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [position]);
 
   // Don't render until mounted or on touch devices
   if (!mounted) return null;
@@ -35,57 +55,39 @@ export default function CustomCursor() {
 
   return (
     <div
-      className="fixed pointer-events-none z-[99999]"
+      className="fixed top-0 left-0 z-[99999] pointer-events-none mix-blend-difference hidden md:flex items-center justify-center"
       style={{
-        left: position.x,
-        top: position.y,
+        left: smoothPosition.x,
+        top: smoothPosition.y,
         transform: 'translate(-50%, -50%)',
       }}
     >
+      {/* House Icon Cursor */}
       <div
-        className={`relative transition-all duration-200 ease-out ${
-          isHovering ? 'scale-150 animate-pulse' : 'scale-100'
-        }`}
+        className="relative flex items-center justify-center text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-transform duration-200 ease-out"
+        style={{
+          transform: isHovering ? 'scale(1.5) rotate(0deg)' : 'scale(1) rotate(-15deg)',
+        }}
       >
-        {/* Black stroke with white shadow - visible on light backgrounds */}
         <svg
-          width="40"
-          height="40"
+          xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          fill="none"
-          className="absolute"
-          style={{
-            filter: 'drop-shadow(0 0 2px white) drop-shadow(0 0 2px white) drop-shadow(0 0 4px white)',
-          }}
+          fill="currentColor"
+          className="w-12 h-12"
         >
-          <path
-            d="M12 3L4 10V20C4 20.5523 4.44772 21 5 21H9V15C9 14.4477 9.44772 14 10 14H14C14.5523 14 15 14.4477 15 15V21H19C19.5523 21 20 20.5523 20 20V10L12 3Z"
-            stroke="black"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+          <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.382v7.497a.75.75 0 0 1-.75.75H13.25V16a.75.75 0 0 0-.75-.75h-1a.75.75 0 0 0-.75.75v6H5.5a.75.75 0 0 1-.75-.75V13.753H3.368a.75.75 0 0 1-.53-1.28L11.47 3.841Z" />
         </svg>
 
-        {/* White stroke with black shadow - visible on dark backgrounds */}
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="absolute"
+        {/* Text appears below house when hovering */}
+        <span
+          className="absolute top-full mt-2 text-white font-black uppercase tracking-widest text-[10px] whitespace-nowrap bg-red-600 px-2 py-0.5 rounded-full transition-all duration-200"
           style={{
-            filter: 'drop-shadow(0 0 2px black) drop-shadow(0 0 2px black)',
+            opacity: isHovering ? 1 : 0,
+            transform: isHovering ? 'translateY(0)' : 'translateY(-10px)',
           }}
         >
-          <path
-            d="M12 3L4 10V20C4 20.5523 4.44772 21 5 21H9V15C9 14.4477 9.44772 14 10 14H14C14.5523 14 15 14.4477 15 15V21H19C19.5523 21 20 20.5523 20 20V10L12 3Z"
-            stroke="white"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+          View
+        </span>
       </div>
     </div>
   );
