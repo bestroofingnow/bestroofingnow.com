@@ -3,7 +3,7 @@
 export const IMAGES = {
   // Logos
   logo: {
-    main: 'https://bestroofingnow.com/wp-content/uploads/2024/09/OLD-BRN-logo-no-backgrnd.png',
+    main: 'https://bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
     white: 'https://bestroofingnow.com/wp-content/uploads/2023/03/best-roofing-now-logo-white-text-w-tagline.png',
   },
 

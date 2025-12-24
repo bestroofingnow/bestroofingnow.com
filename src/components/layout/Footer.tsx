@@ -20,7 +20,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <Image
-              src="https://bestroofingnow.com/wp-content/uploads/2024/09/OLD-BRN-logo-no-backgrnd.png"
+              src="https://bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
               alt={SITE_CONFIG.name}
               width={180}
               height={80}
