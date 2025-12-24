@@ -26,7 +26,7 @@ export function Footer() {
               height={80}
               className="h-16 w-auto mb-6 brightness-0 invert"
             />
-            <p className="text-white/80 mb-6">
+            <p className="text-white mb-6">
               Family-owned, veteran-operated roofing company serving Charlotte and
               surrounding areas since 2020. We believe in honesty, transparency,
               and doing the right thing for every customer.
@@ -44,7 +44,7 @@ export function Footer() {
                 ))}
               </div>
               <span className="font-semibold">{SITE_CONFIG.googleRating}</span>
-              <span className="text-white/70">({SITE_CONFIG.googleReviewCount} reviews)</span>
+              <span className="text-white">({SITE_CONFIG.googleReviewCount} reviews)</span>
             </div>
             {/* Social Links */}
             <div className="flex gap-3 mt-4">
@@ -71,7 +71,7 @@ export function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-white/80 hover:text-white transition-colors"
+                    className="text-white hover:text-white transition-colors"
                   >
                     {service.title}
                   </Link>
@@ -88,7 +88,7 @@ export function Footer() {
                 <li key={location.slug}>
                   <Link
                     href={`/locations/${location.slug}`}
-                    className="text-white/80 hover:text-white transition-colors"
+                    className="text-white hover:text-white transition-colors"
                   >
                     {location.city}, {location.state}
                   </Link>
@@ -112,7 +112,7 @@ export function Footer() {
               <li>
                 <a
                   href={`tel:${SITE_CONFIG.phoneClean}`}
-                  className="flex items-start gap-3 text-white/80 hover:text-white transition-colors"
+                  className="flex items-start gap-3 text-white hover:text-white transition-colors"
                 >
                   <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <span className="font-semibold text-lg">{SITE_CONFIG.phone}</span>
@@ -121,13 +121,13 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="flex items-start gap-3 text-white/80 hover:text-white transition-colors"
+                  className="flex items-start gap-3 text-white hover:text-white transition-colors"
                 >
                   <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
                   <span>{SITE_CONFIG.email}</span>
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-white/80">
+              <li className="flex items-start gap-3 text-white">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span>
                   {SITE_CONFIG.address.street}<br />
@@ -135,7 +135,7 @@ export function Footer() {
                   {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
                 </span>
               </li>
-              <li className="flex items-start gap-3 text-white/80">
+              <li className="flex items-start gap-3 text-white">
                 <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <span>{SITE_CONFIG.hours}</span>
               </li>
@@ -158,17 +158,17 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/60 text-sm">
+            <p className="text-white/90 text-sm">
               © {getCurrentYear()} {SITE_CONFIG.name}. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <Link href="/privacy-policy" className="text-white/60 hover:text-white">
+              <Link href="/privacy-policy" className="text-white/90 hover:text-white">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-white/60 hover:text-white">
+              <Link href="/terms" className="text-white/90 hover:text-white">
                 Terms of Service
               </Link>
-              <Link href="/sitemap" className="text-white/60 hover:text-white">
+              <Link href="/sitemap" className="text-white/90 hover:text-white">
                 Sitemap
               </Link>
             </div>

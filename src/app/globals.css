@@ -89,3 +89,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .prose p { margin-bottom: 1.25rem; }
 .prose ul, .prose ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
 .prose a { color: var(--color-link); text-decoration: underline; }
+
+/* Hide default cursor on desktop for custom cursor */
+@media (hover: hover) and (pointer: fine) {
+  body, a, button, [role="button"], input, select, textarea, [data-hover="true"] {
+    cursor: none !important;
+  }
+}
