@@ -4,11 +4,40 @@ import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } fr
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { getCurrentYear } from '@/lib/utils';
 
+// Custom icon components for platforms not in Lucide
+const XTwitterIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
+const TikTokIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z" />
+  </svg>
+);
+
+const PinterestIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <path d="M12 0a12 12 0 00-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.94s-.36-.72-.36-1.77c0-1.66.96-2.9 2.16-2.9 1.02 0 1.51.77 1.51 1.69 0 1.03-.66 2.57-.99 4-.28 1.19.6 2.16 1.78 2.16 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.07-4.88-5.02-4.88-3.42 0-5.43 2.56-5.43 5.22 0 1.03.4 2.14.89 2.74a.36.36 0 01.08.35c-.09.37-.29 1.19-.33 1.35-.05.21-.17.26-.4.16-1.46-.68-2.37-2.82-2.37-4.55 0-3.7 2.69-7.09 7.77-7.09 4.08 0 7.24 2.9 7.24 6.78 0 4.05-2.55 7.32-6.1 7.32-1.19 0-2.31-.62-2.7-1.35l-.73 2.8c-.27 1.02-.99 2.3-1.47 3.08A12 12 0 1012 0z" />
+  </svg>
+);
+
+const YelpIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <path d="M20.16 12.6l-4.08 1.44c-.24.08-.32.28-.2.48l2.6 4.04c.2.32.68.28.84-.04l1.2-3.48c.2-.44-.08-.96-.36-2.44zm-4.52 3.6l-2.76-3.88c-.16-.24-.08-.52.2-.6l4.04-1.44c.44-.16 1 .12 1 .68l-.08 3.76c-.04.44-.52.72-.88.52l-1.52-.04zm-3.84-3.56l3.92-1.4c.4-.16.48-.6.16-.88l-3.12-2.92c-.32-.28-.84-.12-.92.28l-.76 3.76c-.12.52.28 1 .72 1.16zm3.4 6.76l-2.68-3.96c-.16-.24-.48-.24-.64.04l-2.08 3.52c-.2.32.04.76.4.8l3.64.4c.44.04.8-.36.64-.8h.72zm-3.96-7.28l3.84-1.4c.4-.16.56-.6.32-.92l-2.48-3.32c-.24-.32-.72-.24-.92.12l-1.52 4.32c-.16.44.32.92.76 1.2zm-4.04 2.96l3.8 2.48c.32.2.72-.04.68-.44l-.32-4.52c-.04-.44-.52-.72-.92-.52l-3 1.92c-.36.2-.44.76-.24 1.08z" />
+  </svg>
+);
+
 const socialLinks = [
   { icon: Facebook, href: SITE_CONFIG.social.facebook, label: 'Facebook' },
   { icon: Instagram, href: SITE_CONFIG.social.instagram, label: 'Instagram' },
   { icon: Youtube, href: SITE_CONFIG.social.youtube, label: 'YouTube' },
   { icon: Linkedin, href: SITE_CONFIG.social.linkedin, label: 'LinkedIn' },
+  { icon: XTwitterIcon, href: SITE_CONFIG.social.twitter, label: 'X (Twitter)', isCustom: true },
+  { icon: TikTokIcon, href: SITE_CONFIG.social.tiktok, label: 'TikTok', isCustom: true },
+  { icon: PinterestIcon, href: SITE_CONFIG.social.pinterest, label: 'Pinterest', isCustom: true },
+  { icon: YelpIcon, href: SITE_CONFIG.social.yelp, label: 'Yelp', isCustom: true },
 ];
 
 export function Footer() {
@@ -47,17 +76,21 @@ export function Footer() {
               <span className="text-white">({SITE_CONFIG.googleReviewCount} reviews)</span>
             </div>
             {/* Social Links */}
-            <div className="flex gap-3 mt-4">
+            <div className="flex flex-wrap gap-2 mt-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
-                  aria-label={social.label}
+                  className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
+                  aria-label={`Follow us on ${social.label}`}
                 >
-                  <social.icon className="w-5 h-5" />
+                  {social.isCustom ? (
+                    <social.icon />
+                  ) : (
+                    <social.icon className="w-4 h-4" />
+                  )}
                 </a>
               ))}
             </div>

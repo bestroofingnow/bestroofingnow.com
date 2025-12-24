@@ -57,8 +57,8 @@ export function Hero({
 
   return (
     <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark overflow-hidden">
-      {/* Animated Background Shapes */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Animated Background Shapes - decorative */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <motion.div
           className="absolute -top-20 -right-20 w-96 h-96 bg-white/5 rounded-full"
           animate={{
@@ -86,8 +86,8 @@ export function Hero({
         />
       </div>
 
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      {/* Background Pattern - decorative */}
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div
           className="absolute inset-0"
           style={{
@@ -96,12 +96,12 @@ export function Hero({
         />
       </div>
 
-      {/* Optional Background Image */}
+      {/* Optional Background Image - decorative */}
       {backgroundImage && (
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" aria-hidden="true">
           <Image
             src={backgroundImage}
-            alt="Roofing background"
+            alt=""
             fill
             className="object-cover opacity-20"
             priority
@@ -217,8 +217,8 @@ export function Hero({
         </motion.div>
       </div>
 
-      {/* Animated Wave Divider */}
-      <div className="absolute bottom-0 left-0 right-0">
+      {/* Animated Wave Divider - decorative */}
+      <div className="absolute bottom-0 left-0 right-0" aria-hidden="true">
         <motion.svg
           viewBox="0 0 1440 120"
           fill="none"

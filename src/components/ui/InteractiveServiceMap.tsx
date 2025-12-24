@@ -16,21 +16,20 @@ interface ServiceArea {
 
 // Charlotte area locations with approximate relative positions
 const serviceAreas: ServiceArea[] = [
-  { id: 'charlotte', name: 'Charlotte', slug: 'charlotte', coordinates: { x: 50, y: 55 }, isPrimary: true },
-  { id: 'huntersville', name: 'Huntersville', slug: 'huntersville', coordinates: { x: 48, y: 30 } },
-  { id: 'cornelius', name: 'Cornelius', slug: 'cornelius', coordinates: { x: 45, y: 22 } },
-  { id: 'davidson', name: 'Davidson', slug: 'davidson', coordinates: { x: 42, y: 15 } },
-  { id: 'mooresville', name: 'Mooresville', slug: 'mooresville', coordinates: { x: 38, y: 8 } },
-  { id: 'concord', name: 'Concord', slug: 'concord', coordinates: { x: 70, y: 35 } },
-  { id: 'kannapolis', name: 'Kannapolis', slug: 'kannapolis', coordinates: { x: 75, y: 22 } },
-  { id: 'matthews', name: 'Matthews', slug: 'matthews', coordinates: { x: 65, y: 70 } },
-  { id: 'mint-hill', name: 'Mint Hill', slug: 'mint-hill', coordinates: { x: 72, y: 60 } },
-  { id: 'pineville', name: 'Pineville', slug: 'pineville', coordinates: { x: 48, y: 78 } },
-  { id: 'fort-mill', name: 'Fort Mill', slug: 'fort-mill', coordinates: { x: 55, y: 88 } },
-  { id: 'rock-hill', name: 'Rock Hill', slug: 'rock-hill', coordinates: { x: 45, y: 95 } },
-  { id: 'gastonia', name: 'Gastonia', slug: 'gastonia', coordinates: { x: 18, y: 65 } },
-  { id: 'belmont', name: 'Belmont', slug: 'belmont', coordinates: { x: 25, y: 55 } },
-  { id: 'mount-holly', name: 'Mount Holly', slug: 'mount-holly', coordinates: { x: 30, y: 45 } },
+  { id: 'charlotte', name: 'Charlotte', slug: 'charlotte-nc', coordinates: { x: 50, y: 55 }, isPrimary: true },
+  { id: 'huntersville', name: 'Huntersville', slug: 'huntersville-nc', coordinates: { x: 48, y: 30 } },
+  { id: 'cornelius', name: 'Cornelius', slug: 'cornelius-nc', coordinates: { x: 45, y: 22 } },
+  { id: 'davidson', name: 'Davidson', slug: 'davidson-nc', coordinates: { x: 42, y: 15 } },
+  { id: 'mooresville', name: 'Mooresville', slug: 'mooresville-nc', coordinates: { x: 38, y: 8 } },
+  { id: 'concord', name: 'Concord', slug: 'concord-nc', coordinates: { x: 70, y: 35 } },
+  { id: 'kannapolis', name: 'Kannapolis', slug: 'kannapolis-nc', coordinates: { x: 75, y: 22 } },
+  { id: 'matthews', name: 'Matthews', slug: 'matthews-nc', coordinates: { x: 65, y: 70 } },
+  { id: 'mint-hill', name: 'Mint Hill', slug: 'mint-hill-nc', coordinates: { x: 72, y: 60 } },
+  { id: 'pineville', name: 'Pineville', slug: 'pineville-nc', coordinates: { x: 48, y: 78 } },
+  { id: 'gastonia', name: 'Gastonia', slug: 'gastonia-nc', coordinates: { x: 18, y: 65 } },
+  { id: 'denver', name: 'Denver', slug: 'denver-nc', coordinates: { x: 25, y: 35 } },
+  { id: 'mt-holly', name: 'Mt Holly', slug: 'mt-holly-nc', coordinates: { x: 30, y: 45 } },
+  { id: 'lake-norman', name: 'Lake Norman', slug: 'lake-norman', coordinates: { x: 35, y: 20 } },
 ];
 
 export function InteractiveServiceMap() {
@@ -77,10 +76,13 @@ export function InteractiveServiceMap() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
+            role="img"
+            aria-label="Interactive map of Charlotte area service locations. Use the buttons below to select a location."
           >
-            {/* Background Grid */}
+            {/* Background Grid - decorative */}
             <div
               className="absolute inset-0 opacity-20"
+              aria-hidden="true"
               style={{
                 backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)',
                 backgroundSize: '30px 30px'
@@ -125,10 +127,14 @@ export function InteractiveServiceMap() {
                   <g
                     key={area.id}
                     onClick={() => setSelectedArea(area)}
+                    onKeyDown={(e) => e.key === 'Enter' && setSelectedArea(area)}
                     onMouseEnter={() => setHoveredArea(area)}
                     onMouseLeave={() => setHoveredArea(null)}
                     className="cursor-pointer"
                     data-hover="true"
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Select ${area.name} location`}
                   >
                     {/* Pulse Effect */}
                     <motion.circle
@@ -248,13 +254,14 @@ export function InteractiveServiceMap() {
                     Click on any pin on the map to see our services in that area.
                     We proudly serve Charlotte and over 30 surrounding communities.
                   </p>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-2 gap-2" role="group" aria-label="Quick select service areas">
                     {serviceAreas.slice(0, 6).map((area) => (
                       <button
                         key={area.id}
                         onClick={() => setSelectedArea(area)}
-                        className="text-left px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-sm text-gray-300 hover:text-white"
+                        className="text-left px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-sm text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary"
                         data-hover="true"
+                        aria-label={`View roofing services in ${area.name}`}
                       >
                         {area.name}
                       </button>
