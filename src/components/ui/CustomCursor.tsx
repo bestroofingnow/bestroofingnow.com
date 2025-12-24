@@ -1,96 +1,132 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { motion, useSpring, useMotionValue } from 'framer-motion';
 
 const CustomCursor: React.FC = () => {
   const [isHovering, setIsHovering] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  // Initialize off-screen to prevent flash
-  const mouseX = useMotionValue(-100);
-  const mouseY = useMotionValue(-100);
+  const cursorX = useMotionValue(-100);
+  const cursorY = useMotionValue(-100);
 
-  // Smooth spring animation
-  const springConfig = { damping: 20, stiffness: 350, mass: 0.1 };
-  const x = useSpring(mouseX, springConfig);
-  const y = useSpring(mouseY, springConfig);
+  const springConfig = { damping: 25, stiffness: 400, mass: 0.1 };
+  const cursorXSpring = useSpring(cursorX, springConfig);
+  const cursorYSpring = useSpring(cursorY, springConfig);
+
+  const onMouseMove = useCallback((event: MouseEvent) => {
+    cursorX.set(event.clientX);
+    cursorY.set(event.clientY);
+    
+    if (!isVisible) setIsVisible(true);
+
+    const target = event.target as HTMLElement;
+    const isClickable = !!(
+      target.closest('a') ||
+      target.closest('button') ||
+      target.closest('[data-hover="true"]') ||
+      target.closest('[role="button"]')
+    );
+    setIsHovering(isClickable);
+  }, [cursorX, cursorY, isVisible]);
 
   useEffect(() => {
-    setIsMounted(true);
+    // Check if touch device
+    const isTouchDevice = 
+      'ontouchstart' in window || 
+      navigator.maxTouchPoints > 0 ||
+      window.matchMedia('(pointer: coarse)').matches;
 
-    // Only show on non-touch devices
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    if (isTouchDevice) return;
+    if (isTouchDevice) {
+      return;
+    }
 
-    const updateMousePosition = (e: MouseEvent) => {
-      mouseX.set(e.clientX);
-      mouseY.set(e.clientY);
-
-      const target = e.target as HTMLElement;
-      const clickable = target.closest('button') ||
-                        target.closest('a') ||
-                        target.closest('[data-hover="true"]');
-      setIsHovering(!!clickable);
+    window.addEventListener('mousemove', onMouseMove);
+    
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove);
     };
+  }, [onMouseMove]);
 
-    window.addEventListener('mousemove', updateMousePosition, { passive: true });
-    return () => window.removeEventListener('mousemove', updateMousePosition);
-  }, [mouseX, mouseY]);
-
-  // Don't render on server
-  if (!isMounted) return null;
+  // Don't render anything on touch devices or server
+  if (typeof window === 'undefined') return null;
 
   return (
     <motion.div
-      className="fixed top-0 left-0 z-[9999] pointer-events-none hidden md:flex items-center justify-center will-change-transform"
-      style={{ x, y, translateX: '-50%', translateY: '-50%' }}
+      className="pointer-events-none fixed left-0 top-0 z-[9999] hidden md:block"
+      style={{
+        x: cursorXSpring,
+        y: cursorYSpring,
+        translateX: '-50%',
+        translateY: '-50%',
+      }}
+      animate={{ opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 0.15 }}
     >
-      {/* House Icon Cursor with outline for visibility on any background */}
       <motion.div
-        className="relative flex items-center justify-center"
         animate={{
-          scale: isHovering ? 1.5 : 1,
-          rotate: isHovering ? 0 : -15
+          scale: isHovering ? 1.4 : 1,
+          rotate: isHovering ? 0 : -15,
         }}
-        transition={{ type: "spring", stiffness: 300, damping: 25 }}
+        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        className="relative"
       >
-        {/* White stroke outline for visibility */}
+        {/* Shadow/Glow layer */}
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
           viewBox="0 0 24 24"
-          className="w-12 h-12 absolute"
-          style={{ filter: 'drop-shadow(0 0 2px rgba(0,0,0,0.5))' }}
+          className="absolute inset-0 blur-sm opacity-50"
         >
-          <path 
-            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.382v7.497a.75.75 0 0 1-.75.75H13.25V16a.75.75 0 0 0-.75-.75h-1a.75.75 0 0 0-.75.75v6H5.5a.75.75 0 0 1-.75-.75V13.753H3.368a.75.75 0 0 1-.53-1.28L11.47 3.841Z" 
-            fill="none"
-            stroke="white"
-            strokeWidth="2"
+          <path
+            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.382v7.497a.75.75 0 0 1-.75.75H13.25V16a.75.75 0 0 0-.75-.75h-1a.75.75 0 0 0-.75.75v6H5.5a.75.75 0 0 1-.75-.75V13.753H3.368a.75.75 0 0 1-.53-1.28L11.47 3.841Z"
+            fill="#000"
           />
         </svg>
-        {/* Brand color fill */}
+        
+        {/* White outline for visibility on dark backgrounds */}
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
           viewBox="0 0 24 24"
-          fill="#1A43AA"
-          className="w-12 h-12 relative"
+          className="absolute inset-0"
         >
-          <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.382v7.497a.75.75 0 0 1-.75.75H13.25V16a.75.75 0 0 0-.75-.75h-1a.75.75 0 0 0-.75.75v6H5.5a.75.75 0 0 1-.75-.75V13.753H3.368a.75.75 0 0 1-.53-1.28L11.47 3.841Z" />
+          <path
+            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.382v7.497a.75.75 0 0 1-.75.75H13.25V16a.75.75 0 0 0-.75-.75h-1a.75.75 0 0 0-.75.75v6H5.5a.75.75 0 0 1-.75-.75V13.753H3.368a.75.75 0 0 1-.53-1.28L11.47 3.841Z"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="2.5"
+          />
+        </svg>
+        
+        {/* Main house icon - Brand Primary Blue */}
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+          className="relative"
+        >
+          <path
+            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.382v7.497a.75.75 0 0 1-.75.75H13.25V16a.75.75 0 0 0-.75-.75h-1a.75.75 0 0 0-.75.75v6H5.5a.75.75 0 0 1-.75-.75V13.753H3.368a.75.75 0 0 1-.53-1.28L11.47 3.841Z"
+            fill="#1A43AA"
+            stroke="#0f2a6b"
+            strokeWidth="0.5"
+          />
         </svg>
 
-        {/* Text appears below house when hovering */}
-        <motion.span
-          className="absolute top-full mt-2 font-black uppercase tracking-widest text-[10px] whitespace-nowrap bg-red-600 text-white px-2 py-0.5 rounded-full shadow-lg"
-          initial={{ opacity: 0, y: -10 }}
+        {/* Hover label */}
+        <motion.div
+          className="absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap rounded-full bg-red-600 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-lg"
+          initial={{ opacity: 0, y: -5, scale: 0.8 }}
           animate={{
             opacity: isHovering ? 1 : 0,
-            y: isHovering ? 0 : -10
+            y: isHovering ? 0 : -5,
+            scale: isHovering ? 1 : 0.8,
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.15 }}
         >
           View
-        </motion.span>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
