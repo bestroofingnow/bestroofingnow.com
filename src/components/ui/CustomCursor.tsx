@@ -7,7 +7,7 @@ export default function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
   const [position, setPosition] = useState({ x: -100, y: -100 });
   const [smoothPosition, setSmoothPosition] = useState({ x: -100, y: -100 });
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     setMounted(true);
