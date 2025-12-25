@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import NextImage from 'next/image';
 import Link from 'next/link';
 import {
   Shield,
@@ -14,6 +14,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES, PAGE_IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'About Us | Veteran-Owned Roofing Company Charlotte NC',
@@ -143,14 +144,14 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-light rounded-2xl p-8 relative z-10">
-                <div className="aspect-square bg-primary/10 rounded-xl flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Shield className="w-20 h-20 text-primary mx-auto mb-4" />
-                    <p className="text-2xl font-bold text-primary mb-2">Veteran-Founded</p>
-                    <p className="text-gray">Father & Son Owned Since 2019</p>
-                  </div>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-xl relative z-10">
+                <NextImage
+                  src={IMAGES.hero.hero5}
+                  alt="Best Roofing Now team at work"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-32 h-32 bg-accent/10 rounded-full -z-0" />
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary/10 rounded-full -z-0" />

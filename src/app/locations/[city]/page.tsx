@@ -9,7 +9,7 @@ import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { LocationSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
-import { IMAGES } from '@/lib/images';
+import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 
 // Location-specific content for unique pages
 const locationContent: Record<
@@ -326,7 +326,7 @@ export default async function LocationPage({ params }: PageProps) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
-                src={IMAGES.hero.roofTeam}
+                src={LOCATION_HERO_IMAGES[city] || IMAGES.hero.hero11}
                 alt={`Roofing crew working in ${location.city}`}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -334,23 +334,23 @@ export default async function LocationPage({ params }: PageProps) {
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
-                src={IMAGES.services.inspection}
-                alt={`Roof inspection in ${location.city}`}
+                src={IMAGES.houses.house1}
+                alt={`Residential roofing in ${location.city}`}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
-                src={IMAGES.beforeAfter.general}
-                alt={`Before and after roofing project in ${location.city}`}
+                src={IMAGES.projects.work1}
+                alt={`Roofing project in ${location.city}`}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
-                src={IMAGES.hero.metalRoof}
+                src={IMAGES.houses.modern1}
                 alt={`New roof installation in ${location.city}`}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"

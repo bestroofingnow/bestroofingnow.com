@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   DollarSign,
   CheckCircle,
@@ -13,6 +14,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Roof Financing Charlotte NC | Easy Payment Options',
@@ -161,6 +163,46 @@ export default function FinancingPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Image Showcase */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.houses.house1}
+                alt="Beautiful home with new roof"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.houses.house2}
+                alt="Residential roofing project"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.houses.modern1}
+                alt="Modern home with quality roofing"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.houses.house3}
+                alt="Completed roof replacement"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           </div>
         </div>
       </section>

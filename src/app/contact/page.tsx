@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Phone,
   Mail,
@@ -12,6 +13,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES } from '@/lib/images';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -342,15 +344,22 @@ export default function ContactPage() {
             </p>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-lg">
-            <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center">
-              <div className="text-center p-8">
-                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                <p className="text-gray">
-                  Interactive map coming soon
-                </p>
-                <p className="text-sm text-gray mt-2">
-                  {SITE_CONFIG.address.street}, {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
-                </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="relative aspect-video md:aspect-square rounded-xl overflow-hidden">
+                <Image
+                  src={IMAGES.hero.hero21}
+                  alt="Best Roofing Now service area in Charlotte"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-video md:aspect-square rounded-xl overflow-hidden">
+                <Image
+                  src={IMAGES.location.serviceAreaMap}
+                  alt="Charlotte metro service area map"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

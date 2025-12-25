@@ -21,19 +21,19 @@ import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { ServiceSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
-import { IMAGES, PAGE_IMAGES } from '@/lib/images';
+import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 
 // Map service slugs to their image sets
 const serviceImages: Record<string, string[]> = {
-  'residential-roofing': PAGE_IMAGES.services.residential,
-  'commercial-roofing': PAGE_IMAGES.services.commercial,
-  'roof-repair': PAGE_IMAGES.services.repairs,
-  'roof-replacement': PAGE_IMAGES.services.replacement,
-  'roof-inspection': PAGE_IMAGES.services.inspection,
-  'emergency-roofing': PAGE_IMAGES.services.emergency,
-  'storm-damage': PAGE_IMAGES.services.stormDamage,
-  'gutters': PAGE_IMAGES.services.gutters,
-  'siding': PAGE_IMAGES.services.siding,
+  'residential-roofing': [IMAGES.hero.hero1, IMAGES.houses.house1, IMAGES.houses.house2, IMAGES.houses.modern1, IMAGES.projects.work1],
+  'commercial-roofing': [IMAGES.hero.hero2, IMAGES.commercial.office, IMAGES.commercial.warehouse, IMAGES.commercial.healthcare, IMAGES.commercial.education],
+  'roof-repair': [IMAGES.hero.hero3, IMAGES.projects.closeup1, IMAGES.beforeAfter.general, IMAGES.services.repairs, IMAGES.projects.work2],
+  'roof-replacement': [IMAGES.hero.hero4, IMAGES.hero.metalRoof, IMAGES.products.presidential, IMAGES.houses.modern2, IMAGES.projects.work3],
+  'roof-inspection': [IMAGES.hero.hero5, IMAGES.services.inspection, IMAGES.services.droneInspection, IMAGES.services.coreSampling, IMAGES.marketing.image3],
+  'emergency-roofing': [IMAGES.hero.hero6, IMAGES.services.emergency, IMAGES.projects.stormDamage1, IMAGES.services.stormDamage, IMAGES.projects.work4],
+  'storm-damage': [IMAGES.hero.hero7, IMAGES.projects.stormDamage1, IMAGES.services.stormDamage, IMAGES.services.emergency, IMAGES.marketing.image4],
+  'gutters': [IMAGES.hero.hero8, IMAGES.services.gutters, IMAGES.cleaning.softWash, IMAGES.cleaning.pressure, IMAGES.projects.work5],
+  'siding': [IMAGES.hero.hero9, IMAGES.services.siding, IMAGES.beforeAfter.commercialSiding.after, IMAGES.problems.crackedSiding, IMAGES.problems.peeling],
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
