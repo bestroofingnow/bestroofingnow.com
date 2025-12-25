@@ -83,7 +83,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
+                  className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
                   aria-label={`Follow us on ${social.label}`}
                 >
                   {social.isCustom ? (
@@ -98,7 +98,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Our Services</h3>
+            <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
             <ul className="space-y-3">
               {SERVICES.map((service) => (
                 <li key={service.slug}>
@@ -115,7 +115,7 @@ export function Footer() {
 
           {/* Locations */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Service Areas</h3>
+            <h3 className="text-lg font-bold mb-6 text-white">Service Areas</h3>
             <ul className="space-y-3">
               {LOCATIONS.slice(0, 10).map((location) => (
                 <li key={location.slug}>
@@ -140,7 +140,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Contact Us</h3>
+            <h3 className="text-lg font-bold mb-6 text-white">Contact Us</h3>
             <ul className="space-y-4">
               <li>
                 <a

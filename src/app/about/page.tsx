@@ -102,7 +102,7 @@ export default function AboutPage() {
               <Shield className="w-4 h-4" />
               <span className="text-sm font-semibold">Veteran-Founded & Family Owned</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               We Tell People the Truth, Even When It Is Not a Sale
             </h1>
             <p className="text-xl text-white/90">
@@ -292,7 +292,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 Why Charlotte Homeowners Choose Us
               </h2>
               <ul className="space-y-4">

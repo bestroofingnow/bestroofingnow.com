@@ -136,7 +136,7 @@ export default function FAQPage() {
               <HelpCircle className="w-4 h-4" />
               <span className="text-sm font-semibold">Frequently Asked Questions</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Your Roofing Questions, Answered
             </h1>
             <p className="text-xl text-white/90">
@@ -203,7 +203,7 @@ export default function FAQPage() {
       {/* Still Have Questions */}
       <section className="section bg-primary text-white">
         <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Still Have Questions?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">

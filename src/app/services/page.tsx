@@ -27,7 +27,7 @@ export default function ServicesPage() {
       <section className="bg-gradient-primary text-white py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Professional Roofing Services in Charlotte, NC
             </h1>
             <p className="text-xl text-white/90">

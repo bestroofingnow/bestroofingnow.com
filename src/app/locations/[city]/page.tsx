@@ -293,14 +293,14 @@ export default async function LocationPage({ params }: PageProps) {
               <MapPin className="w-6 h-6" />
               <span className="font-semibold">{location.county} County</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Roofing Company in {location.city}, {location.state}
             </h1>
             <p className="text-xl text-white/90 mb-8">{content.description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 href="/contact"
-                className="bg-accent hover:bg-accent-dark"
+                className="bg-accent hover:bg-accent-dark text-white"
               >
                 Get Free Estimate in {location.city}
               </Button>

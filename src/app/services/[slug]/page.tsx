@@ -345,14 +345,14 @@ export default async function ServicePage({ params }: PageProps) {
             <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
               <Icon className="w-8 h-8" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               {service.title} in Charlotte, NC
             </h1>
             <p className="text-xl text-white/90 mb-8">{service.description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 href="/contact"
-                className="bg-accent hover:bg-accent-dark"
+                className="bg-accent hover:bg-accent-dark text-white"
               >
                 Get Free Estimate
               </Button>

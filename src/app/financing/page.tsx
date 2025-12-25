@@ -120,7 +120,7 @@ export default function FinancingPage() {
               <DollarSign className="w-4 h-4" />
               <span className="text-sm font-semibold">Flexible Financing Options</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Get a New Roof Without Breaking the Bank
             </h1>
             <p className="text-xl text-white/90">
@@ -198,7 +198,7 @@ export default function FinancingPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 See Your Estimated Monthly Payment
               </h2>
               <p className="text-white/90 text-lg mb-6">

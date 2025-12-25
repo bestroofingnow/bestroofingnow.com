@@ -42,7 +42,7 @@ export default function ContactPage() {
       <section className="bg-gradient-primary text-white py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Get Your Free Roof Inspection
             </h1>
             <p className="text-xl text-white/90">
@@ -336,7 +336,7 @@ export default function ContactPage() {
       {/* Emergency CTA */}
       <section className="section bg-accent text-white">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-white">
             Roof Emergency? We Are Here 24/7
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
