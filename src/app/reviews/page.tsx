@@ -240,6 +240,25 @@ export default function ReviewsPage() {
         </div>
       </section>
 
+      {/* Review Widget */}
+      <section className="section">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-primary text-center mb-8">
+            Recent Google Reviews
+          </h2>
+          <div className="max-w-4xl mx-auto">
+            <iframe
+              src="https://manage.bestroofingnow.com/reputation/widgets/review_widget/YnvUmp9cZqt5xmVLrnoq?widgetId=691f1dc6f44c6d6cf097352c"
+              width="100%"
+              height="600"
+              frameBorder="0"
+              className="rounded-xl shadow-lg"
+              title="Customer Reviews"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Leave a Review */}
       <section className="section bg-light">
         <div className="container text-center">

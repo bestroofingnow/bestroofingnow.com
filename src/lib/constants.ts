@@ -52,6 +52,29 @@ export const SITE_CONFIG = {
   },
 };
 
+// External widget and API configuration
+export const EXTERNAL_RESOURCES = {
+  widgets: {
+    chatWidget: {
+      src: 'https://widgets.leadconnectorhq.com/loader.js',
+      resourcesUrl: 'https://widgets.leadconnectorhq.com',
+      widgetId: '692def99cf45951b90d25076',
+    },
+    reviewWidget: 'https://manage.bestroofingnow.com/reputation/widgets/review_widget/YnvUmp9cZqt5xmVLrnoq?widgetId=691f1dc6f44c6d6cf097352c',
+    bookingCalendar: 'https://manage.bestroofingnow.com/widget/bookings/bestroofingnowconsultation',
+    instantEstimate: 'https://journeys.demand-iq.com/631cdf2c-ff57-11ef-b232-0a58a9feac02?journeyId=40ddea4c-3884-48bb-9acb-1fcbf409bc60',
+  },
+  projectMapIt: {
+    baseUrl: 'https://projectmapit.com/best-roofing-now-llc/map',
+    apiBase: 'https://projectmapit.com/api/v1',
+    apiKey: '97151bdc-175f-402a-a56d-cf8e1f80047e',
+  },
+  assets: {
+    logo: 'https://storage.googleapis.com/msgsndr/YnvUmp9cZqt5xmVLrnoq/media/6927385cc3c18274f73920b2.png',
+    tiktokIcon: 'https://storage.googleapis.com/msgsndr/YnvUmp9cZqt5xmVLrnoq/media/692efc8e4fb26d70315b0277.png',
+  },
+};
+
 // Brand colors (from current site)
 export const BRAND_COLORS = {
   primary: '#1A43AA',      // Primary blue

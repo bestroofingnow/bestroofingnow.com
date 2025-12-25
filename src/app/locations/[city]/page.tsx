@@ -423,6 +423,32 @@ export default async function LocationPage({ params }: PageProps) {
         showAll={true}
       />
 
+      {/* Project Map */}
+      {location.mapUrl && (
+        <section className="section">
+          <div className="container">
+            <div className="text-center max-w-2xl mx-auto mb-8">
+              <h2 className="text-3xl font-bold text-primary mb-4">
+                Our Recent Projects in {location.city}
+              </h2>
+              <p className="text-gray">
+                Explore roofing projects we have completed in the {location.city} area.
+              </p>
+            </div>
+            <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+              <iframe
+                src={location.mapUrl}
+                width="100%"
+                height="600"
+                frameBorder="0"
+                title={}
+                className="w-full"
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Contact Info */}
       <section className="section bg-light">
         <div className="container">

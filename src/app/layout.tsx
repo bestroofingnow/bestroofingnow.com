@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
@@ -64,6 +65,14 @@ export default function RootLayout({
         <main id="main-content" tabIndex={-1}>{children}</main>
         <Footer />
         <StickyCTA />
+              {/* GHL Chat Widget */}
+        <Script
+          id="ghl-chat-widget"
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com"
+          data-widget-id="692def99cf45951b90d25076"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

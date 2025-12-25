@@ -305,6 +305,30 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Book Online */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-3xl font-bold text-primary mb-4">
+              Schedule Your Free Inspection Online
+            </h2>
+            <p className="text-gray">
+              Pick a time that works best for you. Our team will confirm your appointment within 24 hours.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+            <iframe
+              src="https://manage.bestroofingnow.com/widget/bookings/bestroofingnowconsultation"
+              width="100%"
+              height="700"
+              frameBorder="0"
+              title="Book an Appointment"
+              className="w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Map Section */}
       <section className="section bg-light">
         <div className="container">
