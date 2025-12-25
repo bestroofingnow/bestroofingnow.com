@@ -44,8 +44,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; }
 
-a { color: var(--color-link); text-decoration: none; transition: color 0.2s; }
-a:hover { color: var(--color-primary); }
+a { text-decoration: none; transition: color 0.2s; }
+
+/* Default link colors - only for content areas, not buttons/nav */
+main a:not(.btn):not([class*="bg-"]):not([class*="text-white"]) { color: var(--color-link); }
+main a:not(.btn):not([class*="bg-"]):not([class*="text-white"]):hover { color: var(--color-primary); }
 
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
   outline: 2px solid var(--color-primary);
