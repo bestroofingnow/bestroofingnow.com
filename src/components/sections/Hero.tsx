@@ -135,7 +135,7 @@ export function Hero({
                 ))}
               </div>
               <span className="text-white text-sm font-medium">
-                Rated 5.0 by {SITE_CONFIG.googleReviewCount}+ Happy Customers
+                Rated 5.0 by {SITE_CONFIG.customerCount}+ Happy Customers
               </span>
             </motion.div>
 

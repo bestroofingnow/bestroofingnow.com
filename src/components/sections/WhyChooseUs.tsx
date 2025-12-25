@@ -51,7 +51,7 @@ const features = [
 
 const stats = [
   { value: 5, suffix: '.0', label: 'Google Rating' },
-  { value: SITE_CONFIG.googleReviewCount, suffix: '+', label: 'Happy Customers' },
+  { value: SITE_CONFIG.customerCount, suffix: '+', label: 'Happy Customers' },
   { value: 5, suffix: '+', label: 'Years Experience' },
   { value: 100, suffix: '%', label: 'Satisfaction' },
 ];

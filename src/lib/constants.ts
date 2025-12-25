@@ -19,7 +19,8 @@ export const SITE_CONFIG = {
   hours: 'Open 24 Hours',
   founded: '2020',
   googleRating: 5.0,
-  googleReviewCount: 400,
+  googleReviewCount: 61,
+  customerCount: 400,
   bbbRating: 'A+',
   social: {
     instagram: 'https://www.instagram.com/bestroofingnow',
