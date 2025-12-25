@@ -441,7 +441,7 @@ export default async function LocationPage({ params }: PageProps) {
                 width="100%"
                 height="600"
                 frameBorder="0"
-                title={}
+                title={`Roofing Projects in ${location.city}`}
                 className="w-full"
               />
             </div>
