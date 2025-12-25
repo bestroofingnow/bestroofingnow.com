@@ -96,7 +96,7 @@ export function Testimonials() {
                 </motion.div>
               ))}
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               {SITE_CONFIG.googleRating} Star Rating from {SITE_CONFIG.googleReviewCount}+ Reviews
             </h2>
             <p className="text-white/80 text-lg">
