@@ -437,19 +437,60 @@ export default async function ServicePage({ params }: PageProps) {
             {service.title} Service Areas
           </h2>
           <p className="text-center text-gray max-w-2xl mx-auto mb-8">
-            We provide {service.title.toLowerCase()} services throughout the Charlotte
-            metropolitan area, including:
+            We provide professional {service.title.toLowerCase()} services throughout the Charlotte
+            metropolitan area. Whether you need {service.title.toLowerCase()} in Charlotte, Lake Norman,
+            or any surrounding community, our expert team is ready to help.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {LOCATIONS.map((location) => (
               <Link
                 key={location.slug}
                 href={`/locations/${location.slug}`}
-                className="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow"
+                className="bg-white rounded-lg p-4 hover:shadow-md transition-shadow group"
               >
-                <span className="text-dark font-medium">{location.city}</span>
+                <span className="text-primary font-semibold group-hover:text-accent transition-colors">
+                  {service.title} in {location.city} {location.state}
+                </span>
+                <p className="text-gray text-sm mt-1">
+                  Serving {location.county} County
+                </p>
               </Link>
             ))}
+          </div>
+          <div className="mt-12 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-primary mb-6 text-center">
+              Why Choose Us for {service.title}?
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="font-bold text-dark mb-2">{service.title} in Charlotte NC</h4>
+                <p className="text-gray text-sm">
+                  Our main office in Charlotte means fast response times for all {service.title.toLowerCase()} needs.
+                  From Myers Park to University City, we serve every Charlotte neighborhood.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="font-bold text-dark mb-2">{service.title} in Lake Norman</h4>
+                <p className="text-gray text-sm">
+                  Waterfront properties require specialized expertise. Our {service.title.toLowerCase()} team
+                  understands the unique challenges of Cornelius, Davidson, Huntersville, and Mooresville homes.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="font-bold text-dark mb-2">{service.title} in Concord NC</h4>
+                <p className="text-gray text-sm">
+                  Cabarrus County homeowners trust us for quality {service.title.toLowerCase()}.
+                  We serve Concord, Kannapolis, and Harrisburg with the same excellence.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="font-bold text-dark mb-2">{service.title} in Matthews NC</h4>
+                <p className="text-gray text-sm">
+                  Southeast Charlotte communities including Matthews, Mint Hill, and Monroe
+                  receive our full range of {service.title.toLowerCase()} services.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
