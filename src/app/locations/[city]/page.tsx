@@ -22,192 +22,227 @@ const locationContent: Record<
 > = {
   'charlotte-nc': {
     description:
-      'As Charlotte\'s premier roofing company, Best Roofing Now has been serving homeowners and businesses throughout the Queen City since 2020. Our team knows Charlotte\'s unique weather challenges—from summer storms to occasional ice and hail—and we build roofs that stand up to it all.',
+      'When Charlotte homeowners need a roofing company they can trust, they turn to Best Roofing Now. As the Queen City and largest metropolitan area in the Carolinas, Charlotte combines Southern charm with modern urban living. From the historic tree-lined streets of Myers Park to the bustling energy of Uptown, Charlotte homeowners take pride in properties that reflect the city\'s rich heritage. Charlotte\'s humid subtropical climate brings hot summers, frequent afternoon thunderstorms from April through September, and occasional ice storms in winter. That\'s why choosing a local Charlotte roofing company with storm damage experience matters.',
     neighborhoods: [
-      'Ballantyne', 'SouthPark', 'Myers Park', 'Dilworth', 'NoDa',
-      'Plaza Midwood', 'University City', 'Steele Creek', 'Cotswold',
-      'Elizabeth', 'Eastover', 'Wesley Heights', 'Highland Creek',
+      'Myers Park', 'Dilworth', 'South End', 'NoDa', 'University City',
+      'Ballantyne', 'Plaza Midwood', 'Elizabeth', 'Eastover', 'SouthPark',
+      'Highland Creek', 'Steele Creek', 'Wesley Heights',
     ],
     highlights: [
-      'Main office location at 10130 Mallard Creek Rd',
-      'Same-day emergency service available',
+      'Main office location with fastest response times',
       'Deep knowledge of Charlotte building codes',
-      'Partnerships with local suppliers for faster service',
+      'Insurance claim expertise and adjuster coordination',
+      'Free drone inspections with detailed photo documentation',
     ],
   },
   'concord-nc': {
     description:
-      'Best Roofing Now proudly serves Concord and Cabarrus County with expert roofing services. Whether you\'re near the Concord Mills area, downtown, or in one of the many beautiful neighborhoods, our team provides the same quality service that has earned us a 5-star reputation.',
+      'When Concord homeowners need a roofing company they can trust, they turn to Best Roofing Now. Founded in 1796, Concord\'s name meaning "harmony" reflects the spirit of this thriving city that has grown from a textile hub into one of the fastest-growing communities in the Charlotte metro. Home to Charlotte Motor Speedway and Concord Mills, the city blends historic charm with modern attractions. Concord\'s position in Cabarrus County makes it susceptible to severe thunderstorms moving through the I-85 corridor with high winds, hail, and heavy downpours.',
     neighborhoods: [
-      'Concord Mills', 'Afton Village', 'Christenbury', 'Moss Creek',
-      'Georgian Woods', 'Highland Creek', 'Skybrook',
+      'Historic Downtown', 'Odell School', 'Afton Village', 'Gibson Village',
+      'Charlotte Motor Speedway area', 'Christenbury', 'Moss Creek', 'Skybrook',
     ],
     highlights: [
       'Quick response times to Cabarrus County',
-      'Familiar with local HOA requirements',
-      'Storm damage specialists for the area',
+      'Experience with historic Union Street residences',
+      'Storm damage specialists for the I-85 corridor',
+      'Understanding of textile-era architectural roofing',
     ],
   },
   'huntersville-nc': {
     description:
-      'Huntersville homeowners trust Best Roofing Now for reliable, honest roofing services. From the historic downtown area to newer developments near Birkdale Village, we understand the diverse roofing needs of this growing community.',
+      'When Huntersville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As the southern gateway to Lake Norman, Huntersville perfectly balances suburban convenience with outdoor recreation. With a population exceeding 52,000, this thriving community offers residents access to Birkdale Village shopping, excellent schools, and countless parks including Blythe Landing. Huntersville\'s location between Uptown Charlotte and Lake Norman exposes homes to unique weather patterns, including lake-effect conditions and severe storms that track along the I-77 corridor.',
     neighborhoods: [
       'Birkdale Village', 'Rosedale', 'Vermillion', 'Skybrook',
-      'Cedarfield', 'Monteith Park', 'The Hamptons',
+      'The Farms', 'Gilead Road area', 'Cedarfield', 'Monteith Park',
     ],
     highlights: [
-      'Serving Huntersville since our founding',
-      'Experience with both new construction and older homes',
-      'Local team members who live in the community',
+      'Extensive experience with HOA requirements',
+      'Understanding of planned community aesthetic standards',
+      'Lake-effect weather expertise',
+      'Serving both established and newer developments',
     ],
   },
   'cornelius-nc': {
     description:
-      'Lake Norman living deserves Lake Norman quality roofing. Best Roofing Now serves Cornelius residents with premium roofing services designed to protect your home from the unique weather conditions near the lake.',
+      'When Cornelius homeowners need a roofing company they can trust, they turn to Best Roofing Now. With 70 miles of Lake Norman shoreline, Cornelius has transformed from a small railroad town to one of the most desirable lakefront communities in the Carolinas. Home to Ramsey Creek Park and Holiday Marina, Cornelius offers an unparalleled lakeside lifestyle. Waterfront properties face unique challenges from lake-effect weather patterns, including increased wind exposure and humidity that can accelerate roof aging.',
     neighborhoods: [
-      'Antiquity', 'Bailey\'s Glen', 'Jetton Cove', 'Westmoreland',
-      'The Peninsula', 'Chesapeake',
+      'The Peninsula', 'Birkdale', 'Jetton Road', 'Antiquity',
+      'Caldwell Station', 'Connor Quay', 'Bailey\'s Glen', 'Westmoreland',
     ],
     highlights: [
-      'Understanding of lakefront property needs',
-      'Premium materials for coastal-style weather',
-      'Quick emergency response for the LKN area',
+      'Specialized expertise for lakefront properties',
+      'Premium architectural shingles and metal roofing',
+      'Wind-resistant installation techniques',
+      'Understanding of waterfront home aesthetics',
     ],
   },
   'davidson-nc': {
     description:
-      'Davidson\'s charming community deserves roofing services that match its character. Best Roofing Now brings expertise and integrity to every Davidson roofing project, from historic homes near the college to newer developments.',
+      'When Davidson homeowners need a roofing company they can trust, they turn to Best Roofing Now. Home to Davidson College since 1837, this charming community blends academic excellence with small-town character. Davidson\'s walkable downtown, historic architecture, and strong sense of community make it one of the most distinctive towns in the Lake Norman region. Davidson\'s mature tree canopy provides beautiful shade but also presents roofing challenges during storms with falling limbs and accumulated debris.',
     neighborhoods: [
-      'Davidson Village', 'River Run', 'Bradford', 'Summers Walk',
-      'Westbranch',
+      'Historic Downtown', 'West Branch', 'Summers Walk', 'Davidson Bay',
+      'Bradford', 'Davidson College area', 'River Run',
     ],
     highlights: [
-      'Respect for Davidson\'s historic character',
+      'Respect for historic architectural preservation',
       'Experience with varied architectural styles',
+      'Tree damage and debris removal expertise',
       'Community-focused service approach',
     ],
   },
   'mooresville-nc': {
     description:
-      'Race City trusts Best Roofing Now for fast, reliable roofing services. From lakefront properties to downtown Mooresville, we deliver championship-quality roofing with the speed and precision this community expects.',
+      'When Mooresville homeowners need a roofing company they can trust, they turn to Best Roofing Now. Known as Race City USA for its connection to NASCAR, Mooresville offers the most extensive Lake Norman shoreline access with communities divided by I-77 into lakeside and eastern neighborhoods. The town combines motorsports heritage with family-friendly living and excellent schools in the Iredell-Statesville district. Mooresville\'s larger geographic footprint means homes experience varying weather conditions, from lakeside humidity and wind exposure on the west to the more protected eastern neighborhoods.',
     neighborhoods: [
-      'The Point', 'Langtree', 'Curtis Pond', 'Morrison Plantation',
-      'Muirfield', 'Bridgeport',
+      'The Point', 'Sailor\'s Watch', 'Sisters Cove', 'Morrison Plantation',
+      'Curtis Pond', 'Langtree', 'Muirfield', 'Bridgeport',
     ],
     highlights: [
-      'Serving the entire Mooresville area',
-      'Lakefront roofing specialists',
-      'Commercial and residential expertise',
+      'Serving both lakefront estates and family homes',
+      'Lower Iredell County taxes - protect your investment',
+      'Diverse housing expertise',
+      'Commercial and residential roofing',
     ],
   },
   'lake-norman': {
     description:
-      'The Lake Norman region demands roofing that can handle everything from summer storms to winter weather. Best Roofing Now is the trusted choice for LKN homeowners who want quality, durability, and honest service.',
+      'When Lake Norman homeowners need a roofing company they can trust, they turn to Best Roofing Now. As North Carolina\'s largest man-made lake with 520 miles of shoreline, Lake Norman draws residents seeking waterfront living within easy reach of Charlotte. Often called the "Inland Sea," the lake area spans four counties and includes some of the most prestigious communities in the region. Lake Norman properties face enhanced weather exposure due to the open water, experiencing stronger winds, increased humidity, and unique microclimate conditions.',
     neighborhoods: [
-      'Denver', 'Cornelius', 'Davidson', 'Mooresville', 'Huntersville',
-      'Sherrills Ford',
+      'Cornelius waterfront', 'Davidson waterfront', 'Huntersville waterfront',
+      'Mooresville waterfront', 'Denver', 'Sherrills Ford',
     ],
     highlights: [
-      'Comprehensive Lake Norman coverage',
-      'Understanding of waterfront property needs',
-      'Premium materials for harsh weather protection',
+      'Comprehensive four-county Lake Norman coverage',
+      'Wind-resistant installation techniques',
+      'Materials for constant moisture exposure',
+      'Premium waterfront property expertise',
     ],
   },
   'matthews-nc': {
     description:
-      'Matthews residents deserve roofing services that match their community\'s standards. Best Roofing Now brings honest, quality-focused service to every Matthews home, from historic downtown to newer subdivisions.',
+      'When Matthews homeowners need a roofing company they can trust, they turn to Best Roofing Now. This charming southeast Mecklenburg town maintains its small-town character while providing excellent schools and a thriving downtown district. Matthews\' annual festivals, historic depot, and walkable downtown attract families seeking community-oriented living within easy reach of Charlotte. Matthews\' position in southeast Mecklenburg puts it in the path of storms moving through the region from the southwest with frequent thunderstorms, occasional tornado warnings, and significant hail events.',
     neighborhoods: [
-      'Sardis Woods', 'Matthews Township', 'Fullwood',
-      'Crown Point', 'Weddington Chase',
+      'Historic Downtown', 'Sardis Forest', 'McKee Farms', 'Matthews Farm',
+      'Stallings Road area', 'Sardis Woods', 'Crown Point', 'Weddington Chase',
     ],
     highlights: [
       'Quick service to Union County border',
-      'Experience with Matthews home styles',
+      'Experience with mature tree neighborhoods',
       'Strong local reputation',
+      'Maintaining community aesthetic standards',
     ],
   },
   'mint-hill-nc': {
     description:
-      'Mint Hill\'s family-friendly community deserves a family-owned roofing company. Best Roofing Now brings small-town values and big-city expertise to every Mint Hill roofing project.',
+      'When Mint Hill homeowners need a roofing company they can trust, they turn to Best Roofing Now. Known for its rural character and spacious properties, Mint Hill offers a country feel just minutes from Charlotte. The town\'s commitment to preserving green space and its excellent schools in both Mecklenburg and Union county districts make it attractive to families seeking more land. Mint Hill\'s open spaces and larger lots can increase wind exposure during storms, with thunderstorms, hail, and occasional tornado activity affecting homes throughout the community.',
     neighborhoods: [
-      'Bonterra', 'Summerwood', 'Cheval', 'Plantation Estates',
+      'Clear Creek', 'Chestnut Lane', 'Bain School Road area',
+      'Potter Road communities', 'Bonterra', 'Summerwood', 'Cheval',
     ],
     highlights: [
+      'Service for primary residences and outbuildings',
+      'Experience with larger properties',
       'Family-owned serving families',
-      'Honest assessments, fair prices',
-      'Quick response times',
+      'Barns, workshops, and guest house roofing',
     ],
   },
   'harrisburg-nc': {
     description:
-      'Harrisburg\'s growing community needs roofing contractors who understand both new construction and established homes. Best Roofing Now serves Harrisburg with the expertise this vibrant town deserves.',
+      'When Harrisburg homeowners need a roofing company they can trust, they turn to Best Roofing Now. Positioned at the intersection of Mecklenburg, Cabarrus, and Union counties, Harrisburg has experienced tremendous growth while maintaining its small-town appeal. The town\'s excellent schools and convenient access to Charlotte, Concord, and University City make it ideal for families. Harrisburg\'s location in the path of storms moving northeast from Charlotte means homes frequently experience severe weather, with recent tornado confirmations highlighting the importance of storm-resistant roofing.',
     neighborhoods: [
-      'Highland Creek', 'Harrisburg Town Center', 'Rocky River Crossing',
+      'Highland Creek', 'Rocky River Crossing', 'Stallings Road area',
+      'Pharr Mill communities', 'Harrisburg Town Center',
     ],
     highlights: [
-      'Serving Harrisburg\'s growth',
-      'New construction expertise',
-      'Established home renovations',
+      'Master-planned community experience',
+      'New construction and established home expertise',
+      'Storm-resistant roofing specialists',
+      'Rapid growth area specialists',
     ],
   },
   'kannapolis-nc': {
     description:
-      'From the revitalized downtown to established neighborhoods, Kannapolis homeowners trust Best Roofing Now for quality roofing services. We\'re proud to serve this historic community.',
+      'When Kannapolis homeowners need a roofing company they can trust, they turn to Best Roofing Now. Once home to Cannon Mills and the world\'s largest towel producer, Kannapolis has reinvented itself with the NC Research Campus biotechnology hub. The hometown of Dale Earnhardt maintains its working-class heritage while embracing a biotech-driven future. Kannapolis homes, particularly those built during the textile mill era, feature roof systems that have weathered decades of Carolina storms.',
     neighborhoods: [
-      'Downtown Kannapolis', 'Afton Ridge', 'Irish Buffalo Creek',
+      'Downtown Kannapolis', 'Fieldcrest area', 'Gem Theatre district',
+      'NC Research Campus area', 'Afton Ridge', 'Irish Buffalo Creek',
     ],
     highlights: [
-      'Serving Kannapolis families',
-      'Understanding of local architecture',
+      'Historic mill-era home expertise',
+      'Understanding of architectural preservation',
       'Competitive pricing for the area',
+      'Modern technology for historic properties',
     ],
   },
   'gastonia-nc': {
     description:
-      'Gastonia and Gaston County residents choose Best Roofing Now for reliable, professional roofing services. We bring Charlotte-quality work to the western suburbs with local responsiveness.',
+      'When Gastonia homeowners need a roofing company they can trust, they turn to Best Roofing Now. As Gaston County\'s largest city, Gastonia offers affordable living with easy access to Charlotte via I-85. The city\'s revitalized downtown, historic neighborhoods, and proximity to Crowders Mountain State Park attract residents seeking value without sacrificing convenience. Gastonia\'s position along the I-85 corridor makes it susceptible to severe storms with frequent lightning strikes, high winds, and hail events.',
     neighborhoods: [
-      'Downtown Gastonia', 'Cramerton', 'Belmont area', 'Mount Holly area',
+      'Downtown Gastonia', 'Forestbrook', 'Ashley Park',
+      'Ranlo Road area', 'New Hope', 'Cramerton', 'Belmont area',
     ],
     highlights: [
-      'Expanding service to Gaston County',
-      'Competitive rates for the area',
-      'Same quality as Charlotte service',
+      'Affordable solutions for every budget',
+      'Financing options available',
+      'Charlotte-quality work in western suburbs',
+      'Storm damage specialists',
     ],
   },
   'pineville-nc': {
     description:
-      'Pineville residents near Carolina Place and throughout the community trust Best Roofing Now for honest, quality roofing services. We\'re your neighbors serving neighbors.',
+      'When Pineville homeowners need a roofing company they can trust, they turn to Best Roofing Now. Charlotte\'s southernmost suburb offers convenient access to Carolina Place Mall and the I-485 loop while maintaining a distinct community identity. Pineville\'s affordable housing options and excellent location attract first-time homebuyers and growing families. Pineville experiences severe weather with summer thunderstorms, occasional hail, and high winds, with storms moving north from South Carolina often impacting Pineville first.',
     neighborhoods: [
-      'Carolina Place', 'McMullen Creek', 'Park Crossing',
+      'Carolina Place Mall area', 'McMullen Creek', 'Historic Downtown Pineville',
+      'Park Crossing',
     ],
     highlights: [
-      'Convenient location for Pineville',
+      'Solutions for every price point',
+      'First-time homebuyer friendly',
+      'Starter homes to established neighborhoods',
       'Quick response times',
-      'Local expertise',
     ],
   },
   'denver-nc': {
     description:
-      'Denver and Lincoln County homeowners choose Best Roofing Now for Lake Norman-quality service. We understand the unique needs of this lakeside community.',
+      'When Denver homeowners need a roofing company they can trust, they turn to Best Roofing Now. This quiet Lake Norman community on the lake\'s western shore offers a slower pace of life with lakefront access, festivals like the annual Strawberry Festival, and proximity to Lake Norman State Park. Denver attracts retirees, families, and anyone seeking affordable lakefront living. Denver\'s location on Lake Norman\'s western shore exposes homes to storms moving across the open water with flash flooding, high winds, and regular storm damage.',
     neighborhoods: [
-      'Westport', 'Lake Norman area', 'East Lincoln',
+      'Trilogy at Lake Norman', 'Sailview', 'Westport',
+      'Beatty\'s Ford Park area', 'East Lincoln',
     ],
     highlights: [
-      'Lake Norman specialists',
-      'Premium materials available',
-      'Storm damage response',
+      '55+ community experience',
+      'Lakefront retreat specialists',
+      'Family home expertise',
+      'Lincoln County knowledge',
     ],
   },
   'monroe-nc': {
     description:
-      'Monroe and Union County residents deserve roofing services that match their community values. Best Roofing Now brings integrity and quality to every Monroe roofing project.',
+      'When Monroe homeowners need a roofing company they can trust, they turn to Best Roofing Now. Union County\'s seat offers historic Southern charm with a thriving downtown courthouse square. Monroe\'s excellent schools, affordable real estate, and access to Charlotte via Highway 74 make it attractive to families seeking space and value. Monroe\'s location in Union County puts it in the path of severe weather moving through the region with frequent thunderstorms, tornado warnings, and hail events.',
     neighborhoods: [
-      'Downtown Monroe', 'Wesley Chapel', 'Indian Trail area',
+      'Historic Downtown', 'Wedgewood', 'Indian Trail Road area',
+      'Airport area communities', 'Wesley Chapel',
     ],
     highlights: [
-      'Serving Union County',
-      'Competitive pricing',
-      'Quality workmanship',
+      'Historic property preservation',
+      'Modern construction expertise',
+      'Union County specialists',
+      'Competitive pricing with quality',
+    ],
+  },
+  'mt-holly-nc': {
+    description:
+      'When Mt Holly homeowners need a roofing company they can trust, they turn to Best Roofing Now. This historic Gaston County town on the Catawba River offers small-town living with convenient access to Charlotte and the Mountain Island Lake area. Mt Holly\'s revitalized downtown and affordable housing attract residents seeking community-oriented living. Mt Holly\'s riverside location and proximity to Mountain Island Lake create unique weather patterns with severe storms bringing damaging winds, hail, and heavy rainfall.',
+    neighborhoods: [
+      'Downtown Mt Holly', 'Catawba Heights', 'Lucia Road area',
+      'Stanley area communities',
+    ],
+    highlights: [
+      'Riverside property expertise',
+      'Historic home specialists',
+      'Increased humidity and storm exposure knowledge',
+      'Catawba River area experience',
     ],
   },
 };
