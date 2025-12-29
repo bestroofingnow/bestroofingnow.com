@@ -1,8 +1,17 @@
 import type { NextConfig } from "next";
 
+// WordPress CMS URL - change this to your subdomain after migration
+const WP_CMS_HOSTNAME = process.env.WORDPRESS_HOSTNAME || 'bestroofingnow.com';
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: WP_CMS_HOSTNAME,
+        pathname: '/wp-content/uploads/**',
+      },
+      // Keep original domain for backward compatibility during migration
       {
         protocol: 'https',
         hostname: 'bestroofingnow.com',
@@ -13,7 +22,122 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
-      // Service page redirects
+      // ===========================================
+      // DUPLICATE BLOG POST REDIRECTS
+      // Redirect duplicate posts (-2, -3, -4 suffixes) to canonical versions
+      // ===========================================
+
+      // "New Homeowner? 5 Roofing Facts You Must Know" duplicates
+      { source: '/new-homeowner-5-roofing-facts-you-must-know-2', destination: '/blog/new-homeowner-5-roofing-facts-you-must-know', permanent: true },
+      { source: '/new-homeowner-5-roofing-facts-you-must-know-3', destination: '/blog/new-homeowner-5-roofing-facts-you-must-know', permanent: true },
+
+      // "Modern Metal Roof Styles" duplicates
+      { source: '/modern-metal-roof-styles-photo-catalog-color-guide-2', destination: '/blog/modern-metal-roof-styles-photo-catalog-color-guide', permanent: true },
+      { source: '/modern-metal-roof-styles-photo-catalog-color-guide-3', destination: '/blog/modern-metal-roof-styles-photo-catalog-color-guide', permanent: true },
+
+      // "Why Homeowners Trust the Best Roofing Co" duplicates
+      { source: '/why-homeowners-trust-the-best-roofing-co-in-charlotte-2', destination: '/blog/trust-the-best-roofing-co-in-charlotte', permanent: true },
+
+      // "Selling Your Home? Roofing Checklist" duplicates
+      { source: '/selling-your-home-use-this-roofing-checklist-to-impress-buyers-2', destination: '/blog/selling-your-home-use-this-roofing-checklist-to-impress-buyers', permanent: true },
+      { source: '/selling-your-home-use-this-roofing-checklist-to-impress-buyers-3', destination: '/blog/selling-your-home-use-this-roofing-checklist-to-impress-buyers', permanent: true },
+
+      // "What to Do After a Storm" duplicates
+      { source: '/what-to-do-after-a-storm-hits-your-roof-2', destination: '/blog/what-to-do-after-a-storm-hits-your-roof', permanent: true },
+
+      // "Safety First: On-Site Protocols" duplicates
+      { source: '/safety-first-our-on-site-safety-protocols-2', destination: '/blog/safety-first-our-on-site-safety-protocols', permanent: true },
+
+      // "Quality Control: Final Inspection" duplicates
+      { source: '/quality-control-our-final-inspection-process-2', destination: '/blog/quality-control-our-final-inspection-process', permanent: true },
+
+      // "DIY Inspection Guide" duplicates
+      { source: '/is-your-roof-hiding-problems-diy-inspection-guide-no-ladder-needed-2', destination: '/blog/is-your-roof-hiding-problems-diy-inspection-guide-no-ladder-needed', permanent: true },
+
+      // "How Financing Works" duplicates
+      { source: '/how-financing-works-for-full-roof-replacement-understanding-payment-plans-like-0-interest-for-24-months-2', destination: '/blog/how-financing-works-for-full-roof-replacement-understanding-payment-plans-like-0-interest-for-24-months', permanent: true },
+      { source: '/how-financing-works-for-full-roof-replacement-understanding-payment-plans-like-0-interest-for-24-months-3', destination: '/blog/how-financing-works-for-full-roof-replacement-understanding-payment-plans-like-0-interest-for-24-months', permanent: true },
+      { source: '/how-financing-works-for-full-roof-replacement-understanding-payment-plans-like-0-interest-for-24-months-4', destination: '/blog/how-financing-works-for-full-roof-replacement-understanding-payment-plans-like-0-interest-for-24-months', permanent: true },
+
+      // "Why You Shouldn't Waive Your Deductible" duplicates
+      { source: '/why-you-shouldnt-waive-your-deductible-2', destination: '/blog/why-you-shouldnt-waive-your-deductible', permanent: true },
+
+      // "Call Roofer Before Insurance" duplicates
+      { source: '/why-you-should-call-your-roofer-before-your-insurance-company-2', destination: '/blog/why-you-should-call-your-roofer-before-your-insurance-company', permanent: true },
+
+      // "Does Roof Coating Really Matter" duplicates
+      { source: '/does-roof-coating-really-matter-in-2025-the-truth-about-energy-savings-2', destination: '/blog/does-roof-coating-really-matter-in-2025-the-truth-about-energy-savings', permanent: true },
+
+      // "If Your Roof Could Talk" duplicates
+      { source: '/if-your-roof-could-talk-5-things-it-would-tell-you-before-it-fails-2', destination: '/blog/if-your-roof-could-talk-5-things-it-would-tell-you-before-it-fails', permanent: true },
+
+      // "Flat Roof Replacement vs Coating" duplicates
+      { source: '/flat-roof-replacement-vs-coating-the-ultimate-guide-to-saving-money-on-your-commercial-property-2', destination: '/blog/flat-roof-replacement-vs-coating-the-ultimate-guide-to-saving-money-on-your-commercial-property', permanent: true },
+
+      // "Roof Restoration vs Replacement" duplicates
+      { source: '/roof-restoration-vs-roof-replacement-which-is-better-for-your-charlotte-home-2', destination: '/blog/roof-restoration-vs-roof-replacement-which-is-better-for-your-charlotte-home', permanent: true },
+
+      // "Storm Damage Insurance Claims" duplicates
+      { source: '/how-to-choose-the-best-roof-contractors-after-storm-damage-insurance-claims-made-easy-2', destination: '/blog/how-to-choose-the-best-roof-contractors-after-storm-damage-insurance-claims-made-easy', permanent: true },
+
+      // "5 Years Ribbon Cutting" duplicates
+      { source: '/best-roofing-now-celebrates-5-years-in-lake-norman-with-a-ribbon-cutting-ceremony-2', destination: '/blog/best-roofing-now-celebrates-5-years-in-lake-norman-with-a-ribbon-cutting-ceremony', permanent: true },
+
+      // "Smart Roofing Technology Future-Proofing" duplicates
+      { source: '/smart-roofing-technology-5-ways-the-best-roofing-companies-are-future-proofing-lake-norman-homes-2', destination: '/blog/smart-roofing-technology-5-ways-the-best-roofing-companies-are-future-proofing-lake-norman-homes', permanent: true },
+
+      // "Ultimate Guide to Flat Roof Replacement" duplicates
+      { source: '/the-ultimate-guide-to-flat-roof-replacement-everything-charlotte-businesses-need-to-succeed-2', destination: '/blog/the-ultimate-guide-to-flat-roof-replacement-everything-charlotte-businesses-need-to-succeed', permanent: true },
+
+      // "James Turner Message" duplicates
+      { source: '/a-message-from-james-turner-owner-of-best-roofing-now-integrity-honesty-and-transparency-above-all-2', destination: '/blog/a-message-from-james-turner-owner-of-best-roofing-now-integrity-honesty-and-transparency-above-all', permanent: true },
+
+      // "Flat Roof Installation Mistakes" duplicates
+      { source: '/7-mistakes-youre-making-with-flat-roof-installation-and-how-charlottes-best-roofing-contractors-fix-them-2', destination: '/blog/7-mistakes-youre-making-with-flat-roof-installation-and-how-charlottes-best-roofing-contractors-fix-them', permanent: true },
+
+      // "Homeowners Afraid of Roofers" duplicates
+      { source: '/why-homeowners-are-afraid-to-let-roofers-in-understanding-the-concerns-behind-the-door-2', destination: '/blog/why-homeowners-are-afraid-to-let-roofers-in-understanding-the-concerns-behind-the-door', permanent: true },
+
+      // "Shingle Colors" duplicates
+      { source: '/top-10-most-popular-asphalt-shingle-colors-for-charlotte-homes-in-2025-certainteed-landmark-edition-2', destination: '/blog/top-10-most-popular-asphalt-shingle-colors-for-charlotte-homes-in-2025-certainteed-landmark-edition', permanent: true },
+
+      // "What You Need to Know About Roof Financing" duplicates
+      { source: '/what-you-need-to-know-about-roof-financing-2', destination: '/blog/what-you-need-to-know-about-roof-financing', permanent: true },
+
+      // "Cool Roofs Big Savings" duplicates
+      { source: '/cool-roofs-big-savings-cut-ac-bills-with-the-right-roof-2', destination: '/blog/cool-roofs-big-savings-cut-ac-bills-with-the-right-roof', permanent: true },
+
+      // "Beat the Charlotte Heat" duplicates
+      { source: '/beat-the-charlotte-heat-how-a-cool-roof-lowers-your-summer-energy-bills-2', destination: '/blog/beat-the-charlotte-heat-how-a-cool-roof-lowers-your-summer-energy-bills', permanent: true },
+
+      // "Storm Survival Checklist" duplicates
+      { source: '/dont-miss-hidden-roof-damage-free-storm-survival-checklist-2', destination: '/blog/dont-miss-hidden-roof-damage-free-storm-survival-checklist', permanent: true },
+
+      // "Expired Shingles" duplicates
+      { source: '/expired-shingles-what-every-charlotte-homeowner-should-know-and-why-timely-replacement-matters-2', destination: '/blog/expired-shingles-what-every-charlotte-homeowner-should-know-and-why-timely-replacement-matters', permanent: true },
+
+      // "Smart Roofing Technology Secrets" duplicates
+      { source: '/smart-roofing-technology-secrets-revealed-what-roofing-companies-dont-want-you-to-know-2', destination: '/blog/smart-roofing-technology-secrets-revealed-what-roofing-companies-dont-want-you-to-know', permanent: true },
+
+      // "Durable Roof Guide" duplicates
+      { source: '/the-ultimate-guide-to-choosing-a-durable-roof-metal-single-ply-and-the-latest-innovations-explained-2', destination: '/blog/the-ultimate-guide-to-choosing-a-durable-roof-metal-single-ply-and-the-latest-innovations-explained', permanent: true },
+
+      // "Storms Effect Your Roof" duplicates
+      { source: '/storms-effect-your-roof-2', destination: '/blog/storms-effect-your-roof-2', permanent: true },
+
+      // "Commercial Roofing Solutions" duplicates
+      { source: '/expert-commercial-roofing-solutions-for-your-business-2', destination: '/blog/commercial-roofing-solutions-for-your-business', permanent: true },
+      { source: '/expert-commercial-roofing-solutions-for-your-business-3', destination: '/blog/commercial-roofing-solutions-for-your-business', permanent: true },
+
+      // "Find Your Trusted Local Roofing Company" duplicates
+      { source: '/find-your-trusted-local-roofing-company-today-3', destination: '/blog/find-your-trusted-local-roofing-company-today', permanent: true },
+
+      // "Roof Coating vs Replacement LKN" duplicates
+      { source: '/roof-coating-vs-roof-replacement-which-is-better-for-your-lkn-commercial-property-2', destination: '/blog/roof-coating-vs-roof-replacement-which-is-better-for-your-lkn-commercial-property', permanent: true },
+
+      // ===========================================
+      // SERVICE PAGE REDIRECTS
+      // ===========================================
       { source: '/residential-roofing', destination: '/services/residential-roofing', permanent: true },
       { source: '/commercial-roofing', destination: '/services/commercial-roofing', permanent: true },
       { source: '/roofing-repair', destination: '/services/roof-repair', permanent: true },
@@ -26,8 +150,10 @@ const nextConfig: NextConfig = {
       { source: '/fast-roof-replacement-services', destination: '/services/roof-replacement', permanent: true },
       { source: '/urgent-roof-repair', destination: '/services/emergency-roofing', permanent: true },
       { source: '/insurance-claim-assistance', destination: '/services/storm-damage', permanent: true },
-      
-      // Near me redirects to /services
+
+      // ===========================================
+      // "NEAR ME" REDIRECTS TO /SERVICES
+      // ===========================================
       { source: '/residential-roofing-near-me', destination: '/services', permanent: true },
       { source: '/best-roofers-near-me', destination: '/services', permanent: true },
       { source: '/roof-repair-near-me-2', destination: '/services', permanent: true },
@@ -37,8 +163,10 @@ const nextConfig: NextConfig = {
       { source: '/roof-installation-near-me', destination: '/services', permanent: true },
       { source: '/local-roofers-near-me', destination: '/services', permanent: true },
       { source: '/best-roofing-company-near-me', destination: '/services', permanent: true },
-      
-      // Location blog posts to location pages
+
+      // ===========================================
+      // LOCATION REDIRECTS
+      // ===========================================
       { source: '/best-roofing-company-near-me-charlotte-nc', destination: '/locations/charlotte-nc', permanent: true },
       { source: '/best-roofing-company-near-me-concord-nc', destination: '/locations/concord-nc', permanent: true },
       { source: '/best-roofing-company-near-concord-nc', destination: '/locations/concord-nc', permanent: true },
@@ -51,8 +179,10 @@ const nextConfig: NextConfig = {
       { source: '/roofing-denver-nc', destination: '/locations/denver-nc', permanent: true },
       { source: '/denver-roofing-contractors', destination: '/locations/denver-nc', permanent: true },
       { source: '/charlotte-roofing-contractors', destination: '/locations/charlotte-nc', permanent: true },
-      
-      // Misc pages
+
+      // ===========================================
+      // MISC PAGE REDIRECTS
+      // ===========================================
       { source: '/frequently-asked-questions', destination: '/faq', permanent: true },
       { source: '/roof-financing', destination: '/financing', permanent: true },
       { source: '/request-a-free-estimate', destination: '/contact', permanent: true },

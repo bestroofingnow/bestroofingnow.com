@@ -5,6 +5,7 @@ import { Calendar, ArrowRight, BookOpen } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES } from '@/lib/images';
 import { getPosts } from '@/lib/wordpress';
 
 export const metadata: Metadata = {
@@ -46,8 +47,17 @@ export default async function BlogPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-primary text-white py-20">
-        <div className="container">
+      <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={IMAGES.hero.hero25}
+            alt="Roofing tips and guides from Charlotte experts"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-4">
               <BookOpen className="w-4 h-4" />

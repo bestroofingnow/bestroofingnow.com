@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Star, Quote, Phone, ArrowRight, ExternalLink } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Reviews | Charlotte Roofing Company Reviews',
@@ -125,8 +127,17 @@ export default function ReviewsPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-primary text-white py-20">
-        <div className="container">
+      <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={IMAGES.houses.house1}
+            alt="Beautiful home with new roof by Best Roofing Now"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-4">
               {[1, 2, 3, 4, 5].map((i) => (
@@ -255,6 +266,49 @@ export default function ReviewsPage() {
               className="rounded-xl shadow-lg"
               title="Customer Reviews"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Project Showcase */}
+      <section className="section bg-white">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-primary text-center mb-8">
+            See the Work Behind the Reviews
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.realProjects.project1}
+                alt="Completed roofing project"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.realProjects.project3}
+                alt="Roof replacement project"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.realProjects.drone1}
+                alt="Aerial view of completed roof"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square rounded-xl overflow-hidden">
+              <Image
+                src={IMAGES.houses.house1}
+                alt="Beautiful home with new roof"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           </div>
         </div>
       </section>

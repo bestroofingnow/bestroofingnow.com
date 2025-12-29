@@ -339,8 +339,17 @@ export default async function ServicePage({ params }: PageProps) {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-primary text-white py-20">
-        <div className="container">
+      <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={SERVICE_HERO_IMAGES[slug] || IMAGES.hero.roofTeam}
+            alt={`${service.title} services in Charlotte NC`}
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
               <Icon className="w-8 h-8" />

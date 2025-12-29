@@ -115,8 +115,17 @@ export default function FinancingPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-primary text-white py-20">
-        <div className="container">
+      <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={IMAGES.hero.hero23}
+            alt="Affordable roof financing options"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="container relative z-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-4">
               <DollarSign className="w-4 h-4" />

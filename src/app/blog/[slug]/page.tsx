@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Calendar, ArrowLeft, Clock, Phone, ArrowRight } from 'lucide-react';
 import { BreadcrumbSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES } from '@/lib/images';
 import { getPostBySlug, getPosts } from '@/lib/wordpress';
 
 interface BlogPostPageProps {
@@ -108,8 +109,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
 
       {/* Article Header */}
-      <section className="bg-gradient-primary text-white py-16">
-        <div className="container">
+      <section className="relative bg-gradient-primary text-white py-16 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={featuredImage || IMAGES.hero.hero26}
+            alt={title}
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="container relative z-10">
           <div className="max-w-3xl mx-auto">
             <Link
               href="/blog"

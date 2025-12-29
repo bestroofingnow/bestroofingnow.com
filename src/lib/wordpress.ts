@@ -1,4 +1,9 @@
 // WordPress API integration for headless CMS
+//
+// MIGRATION SETUP:
+// Before migration: Leave WORDPRESS_API_URL unset (uses bestroofingnow.com)
+// After migration:  Set WORDPRESS_API_URL=https://cms.bestroofingnow.com/wp-json/wp/v2
+//                   in your Vercel environment variables
 
 const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://bestroofingnow.com/wp-json/wp/v2';
 

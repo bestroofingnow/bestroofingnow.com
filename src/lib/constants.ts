@@ -69,10 +69,6 @@ export const EXTERNAL_RESOURCES = {
     apiBase: 'https://projectmapit.com/api/v1',
     apiKey: '97151bdc-175f-402a-a56d-cf8e1f80047e',
   },
-  assets: {
-    logo: 'https://storage.googleapis.com/msgsndr/YnvUmp9cZqt5xmVLrnoq/media/6927385cc3c18274f73920b2.png',
-    tiktokIcon: 'https://storage.googleapis.com/msgsndr/YnvUmp9cZqt5xmVLrnoq/media/692efc8e4fb26d70315b0277.png',
-  },
 };
 
 // Brand colors (from current site)
@@ -163,24 +159,67 @@ export const SERVICES = [
   },
 ];
 
-// Service areas / locations with project map links
+// Service areas / locations - 50 mile radius around Charlotte NC
+// Organized by county for SEO and user navigation
 export const LOCATIONS = [
-  { slug: 'charlotte-nc', city: 'Charlotte', state: 'NC', isPrimary: true, county: 'Mecklenburg', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=6929921876fb8fa56e295536' },
-  { slug: 'concord-nc', city: 'Concord', state: 'NC', isPrimary: false, county: 'Cabarrus', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=692991a9a73e38e6e4a2a783' },
-  { slug: 'huntersville-nc', city: 'Huntersville', state: 'NC', isPrimary: false, county: 'Mecklenburg', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=692991c876fb8fa56e29522f' },
-  { slug: 'cornelius-nc', city: 'Cornelius', state: 'NC', isPrimary: false, county: 'Mecklenburg', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=692991e176fb8fa56e2952dc' },
-  { slug: 'davidson-nc', city: 'Davidson', state: 'NC', isPrimary: false, county: 'Mecklenburg', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=692991eb76fb8fa56e29530f' },
-  { slug: 'mooresville-nc', city: 'Mooresville', state: 'NC', isPrimary: false, county: 'Iredell', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=692991f476fb8fa56e295399' },
-  { slug: 'lake-norman', city: 'Lake Norman', state: 'NC', isPrimary: false, county: 'Multiple', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=6929920c76fb8fa56e2954b8' },
-  { slug: 'matthews-nc', city: 'Matthews', state: 'NC', isPrimary: false, county: 'Mecklenburg', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=6929924976fb8fa56e295607' },
-  { slug: 'mint-hill-nc', city: 'Mint Hill', state: 'NC', isPrimary: false, county: 'Mecklenburg', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=6929925176fb8fa56e295637' },
-  { slug: 'harrisburg-nc', city: 'Harrisburg', state: 'NC', isPrimary: false, county: 'Cabarrus' },
-  { slug: 'kannapolis-nc', city: 'Kannapolis', state: 'NC', isPrimary: false, county: 'Cabarrus', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=692991baa73e38e6e4a2a7dc' },
-  { slug: 'gastonia-nc', city: 'Gastonia', state: 'NC', isPrimary: false, county: 'Gaston', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=6929923d76fb8fa56e2955c9' },
-  { slug: 'pineville-nc', city: 'Pineville', state: 'NC', isPrimary: false, county: 'Mecklenburg' },
-  { slug: 'denver-nc', city: 'Denver', state: 'NC', isPrimary: false, county: 'Lincoln', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=6929920076fb8fa56e29545b' },
-  { slug: 'monroe-nc', city: 'Monroe', state: 'NC', isPrimary: false, county: 'Union' },
-  { slug: 'mt-holly-nc', city: 'Mt Holly', state: 'NC', isPrimary: false, county: 'Gaston', mapUrl: 'https://projectmapit.com/best-roofing-now-llc/map?map=6929922b76fb8fa56e295597' },
+  // === MECKLENBURG COUNTY (Primary) ===
+  { slug: 'charlotte-nc', city: 'Charlotte', state: 'NC', isPrimary: true, county: 'Mecklenburg', distance: 0 },
+  { slug: 'huntersville-nc', city: 'Huntersville', state: 'NC', isPrimary: false, county: 'Mecklenburg', distance: 13 },
+  { slug: 'cornelius-nc', city: 'Cornelius', state: 'NC', isPrimary: false, county: 'Mecklenburg', distance: 18 },
+  { slug: 'davidson-nc', city: 'Davidson', state: 'NC', isPrimary: false, county: 'Mecklenburg', distance: 20 },
+  { slug: 'matthews-nc', city: 'Matthews', state: 'NC', isPrimary: false, county: 'Mecklenburg', distance: 10 },
+  { slug: 'mint-hill-nc', city: 'Mint Hill', state: 'NC', isPrimary: false, county: 'Mecklenburg', distance: 11 },
+  { slug: 'pineville-nc', city: 'Pineville', state: 'NC', isPrimary: false, county: 'Mecklenburg', distance: 12 },
+
+  // === CABARRUS COUNTY ===
+  { slug: 'concord-nc', city: 'Concord', state: 'NC', isPrimary: false, county: 'Cabarrus', distance: 20 },
+  { slug: 'kannapolis-nc', city: 'Kannapolis', state: 'NC', isPrimary: false, county: 'Cabarrus', distance: 22 },
+  { slug: 'harrisburg-nc', city: 'Harrisburg', state: 'NC', isPrimary: false, county: 'Cabarrus', distance: 15 },
+
+  // === UNION COUNTY ===
+  { slug: 'monroe-nc', city: 'Monroe', state: 'NC', isPrimary: false, county: 'Union', distance: 25 },
+  { slug: 'indian-trail-nc', city: 'Indian Trail', state: 'NC', isPrimary: false, county: 'Union', distance: 14 },
+  { slug: 'waxhaw-nc', city: 'Waxhaw', state: 'NC', isPrimary: false, county: 'Union', distance: 22 },
+  { slug: 'stallings-nc', city: 'Stallings', state: 'NC', isPrimary: false, county: 'Union', distance: 13 },
+  { slug: 'weddington-nc', city: 'Weddington', state: 'NC', isPrimary: false, county: 'Union', distance: 15 },
+  { slug: 'marvin-nc', city: 'Marvin', state: 'NC', isPrimary: false, county: 'Union', distance: 18 },
+  { slug: 'wesley-chapel-nc', city: 'Wesley Chapel', state: 'NC', isPrimary: false, county: 'Union', distance: 16 },
+
+  // === GASTON COUNTY ===
+  { slug: 'gastonia-nc', city: 'Gastonia', state: 'NC', isPrimary: false, county: 'Gaston', distance: 20 },
+  { slug: 'mt-holly-nc', city: 'Mt Holly', state: 'NC', isPrimary: false, county: 'Gaston', distance: 11 },
+  { slug: 'belmont-nc', city: 'Belmont', state: 'NC', isPrimary: false, county: 'Gaston', distance: 10 },
+  { slug: 'kings-mountain-nc', city: 'Kings Mountain', state: 'NC', isPrimary: false, county: 'Cleveland', distance: 28 },
+
+  // === IREDELL COUNTY ===
+  { slug: 'mooresville-nc', city: 'Mooresville', state: 'NC', isPrimary: false, county: 'Iredell', distance: 26 },
+  { slug: 'statesville-nc', city: 'Statesville', state: 'NC', isPrimary: false, county: 'Iredell', distance: 39 },
+
+  // === LINCOLN COUNTY ===
+  { slug: 'denver-nc', city: 'Denver', state: 'NC', isPrimary: false, county: 'Lincoln', distance: 22 },
+  { slug: 'lincolnton-nc', city: 'Lincolnton', state: 'NC', isPrimary: false, county: 'Lincoln', distance: 29 },
+
+  // === LAKE NORMAN AREA ===
+  { slug: 'lake-norman', city: 'Lake Norman', state: 'NC', isPrimary: false, county: 'Multiple', distance: 20 },
+
+  // === CATAWBA COUNTY ===
+  { slug: 'hickory-nc', city: 'Hickory', state: 'NC', isPrimary: false, county: 'Catawba', distance: 45 },
+  { slug: 'newton-nc', city: 'Newton', state: 'NC', isPrimary: false, county: 'Catawba', distance: 37 },
+
+  // === STANLY COUNTY ===
+  { slug: 'albemarle-nc', city: 'Albemarle', state: 'NC', isPrimary: false, county: 'Stanly', distance: 37 },
+
+  // === CLEVELAND COUNTY ===
+  { slug: 'shelby-nc', city: 'Shelby', state: 'NC', isPrimary: false, county: 'Cleveland', distance: 39 },
+
+  // === SOUTH CAROLINA (York County) ===
+  { slug: 'rock-hill-sc', city: 'Rock Hill', state: 'SC', isPrimary: false, county: 'York', distance: 23 },
+  { slug: 'fort-mill-sc', city: 'Fort Mill', state: 'SC', isPrimary: false, county: 'York', distance: 16 },
+  { slug: 'tega-cay-sc', city: 'Tega Cay', state: 'SC', isPrimary: false, county: 'York', distance: 18 },
+
+  // === SOUTH CAROLINA (Lancaster County) ===
+  { slug: 'indian-land-sc', city: 'Indian Land', state: 'SC', isPrimary: false, county: 'Lancaster', distance: 20 },
+  { slug: 'lancaster-sc', city: 'Lancaster', state: 'SC', isPrimary: false, county: 'Lancaster', distance: 35 },
 ];
 
 // Trust badges and certifications
