@@ -57,33 +57,11 @@ export function Hero({
 
   return (
     <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark overflow-hidden">
-      {/* Animated Background Shapes - decorative */}
+      {/* Static Background Shapes - decorative (no continuous animations for better performance) */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-        <motion.div
-          className="absolute -top-20 -right-20 w-96 h-96 bg-white/5 rounded-full"
-          animate={{
-            scale: [1, 1.2, 1],
-            x: [0, 20, 0],
-            y: [0, -20, 0],
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-accent/10 rounded-full"
-          animate={{
-            scale: [1, 1.1, 1],
-            x: [0, -10, 0],
-            y: [0, 10, 0],
-          }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute top-1/2 left-1/3 w-64 h-64 bg-white/5 rounded-full"
-          animate={{
-            scale: [1, 1.3, 1],
-          }}
-          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-        />
+        <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/5 rounded-full" />
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-accent/10 rounded-full" />
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-white/5 rounded-full hidden md:block" />
       </div>
 
       {/* Background Pattern - decorative */}
@@ -96,15 +74,18 @@ export function Hero({
         />
       </div>
 
-      {/* Optional Background Image - decorative */}
+      {/* Background Image - LCP element */}
       {backgroundImage && (
-        <div className="absolute inset-0" aria-hidden="true">
+        <div className="absolute inset-0">
           <Image
             src={backgroundImage}
-            alt=""
+            alt="Best Roofing Now - Professional roofing team"
             fill
             className="object-cover opacity-20"
             priority
+            fetchPriority="high"
+            sizes="100vw"
+            quality={75}
           />
         </div>
       )}
@@ -122,16 +103,9 @@ export function Hero({
               variants={itemVariants}
               className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6"
             >
-              <div className="flex">
+              <div className="flex" aria-label="5 star rating">
                 {[...Array(5)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0, rotate: -180 }}
-                    animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                    transition={{ delay: 0.5 + i * 0.1, type: 'spring' }}
-                  >
-                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  </motion.div>
+                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
               <span className="text-white text-sm font-medium">
@@ -199,15 +173,9 @@ export function Hero({
                     variants={badgeVariants}
                     initial="hidden"
                     animate="visible"
-                    whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.2)' }}
-                    className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 cursor-default"
+                    className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3 cursor-default hover:bg-white/20 transition-colors"
                   >
-                    <motion.div
-                      animate={{ rotate: [0, 10, -10, 0] }}
-                      transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
-                    >
-                      <signal.icon className="w-5 h-5 text-accent-light flex-shrink-0" />
-                    </motion.div>
+                    <signal.icon className="w-5 h-5 text-accent-light flex-shrink-0" />
                     <span className="text-white text-sm font-medium">{signal.text}</span>
                   </motion.div>
                 ))}
@@ -217,26 +185,20 @@ export function Hero({
         </motion.div>
       </div>
 
-      {/* Animated Wave Divider - decorative */}
+      {/* Wave Divider - decorative */}
       <div className="absolute bottom-0 left-0 right-0" aria-hidden="true">
-        <motion.svg
+        <svg
           viewBox="0 0 1440 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-auto"
           preserveAspectRatio="none"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <motion.path
+          <path
             d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
             fill="white"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{ delay: 0.8, duration: 1.5, ease: 'easeInOut' }}
           />
-        </motion.svg>
+        </svg>
       </div>
     </section>
   );

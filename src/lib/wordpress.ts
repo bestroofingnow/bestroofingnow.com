@@ -158,6 +158,67 @@ export async function getPage(slug: string): Promise<WPPage | null> {
   return pages[0] || null;
 }
 
+export async function searchPosts(query: string, perPage = 10): Promise<WPPost[]> {
+  if (!query.trim()) return [];
+
+  try {
+    const res = await fetch(
+      `${WP_API_URL}/posts?search=${encodeURIComponent(query)}&per_page=${perPage}&_embed=true`,
+      { next: { revalidate: 300 } } // 5 min cache for search
+    );
+
+    if (!res.ok) {
+      return [];
+    }
+
+    return res.json();
+  } catch (error) {
+    console.error('Error searching posts:', error);
+    return [];
+  }
+}
+
+export async function getPostsWithTotal(options: {
+  perPage?: number;
+  page?: number;
+  categories?: number[];
+  orderBy?: string;
+  order?: 'asc' | 'desc';
+} = {}): Promise<{ posts: WPPost[]; total: number; totalPages: number }> {
+  const { perPage = 10, page = 1, categories, orderBy = 'date', order = 'desc' } = options;
+
+  const params = new URLSearchParams({
+    per_page: perPage.toString(),
+    page: page.toString(),
+    orderby: orderBy,
+    order: order,
+    _embed: 'true',
+  });
+
+  if (categories?.length) {
+    params.append('categories', categories.join(','));
+  }
+
+  try {
+    const res = await fetch(`${WP_API_URL}/posts?${params}`, {
+      next: { revalidate: 3600 },
+    });
+
+    if (!res.ok) {
+      return { posts: [], total: 0, totalPages: 0 };
+    }
+
+    const posts = await res.json();
+    const total = parseInt(res.headers.get('X-WP-Total') || '0', 10);
+    const totalPages = parseInt(res.headers.get('X-WP-TotalPages') || '0', 10);
+
+    return { posts, total, totalPages };
+  } catch (error) {
+    console.error('Error fetching posts with total:', error);
+    return { posts: [], total: 0, totalPages: 0 };
+  }
+}
+
 // Helper to strip HTML tags
 export function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, '').trim();

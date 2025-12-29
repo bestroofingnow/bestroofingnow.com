@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
@@ -25,6 +25,27 @@ export default function ContactPage() {
     message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showBookingWidget, setShowBookingWidget] = useState(false);
+  const bookingRef = useRef<HTMLDivElement>(null);
+
+  // Lazy load booking widget when it comes into view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setShowBookingWidget(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px', threshold: 0 }
+    );
+
+    if (bookingRef.current) {
+      observer.observe(bookingRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -327,15 +348,29 @@ export default function ContactPage() {
               Pick a time that works best for you. Our team will confirm your appointment within 24 hours.
             </p>
           </div>
-          <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-            <iframe
-              src="https://manage.bestroofingnow.com/widget/bookings/bestroofingnowconsultation"
-              width="100%"
-              height="700"
-              frameBorder="0"
-              title="Book an Appointment"
-              className="w-full"
-            />
+          <div
+            ref={bookingRef}
+            className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden"
+            style={{ minHeight: '700px' }}
+          >
+            {showBookingWidget ? (
+              <iframe
+                src="https://manage.bestroofingnow.com/widget/bookings/bestroofingnowconsultation"
+                width="100%"
+                height="700"
+                frameBorder="0"
+                title="Book an Appointment"
+                className="w-full"
+                loading="lazy"
+              />
+            ) : (
+              <div className="flex items-center justify-center h-[700px] bg-gray-50">
+                <div className="text-center">
+                  <Clock className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
+                  <p className="text-gray">Loading booking calendar...</p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

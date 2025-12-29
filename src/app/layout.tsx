@@ -13,6 +13,7 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -39,6 +40,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  other: {
+    'dns-prefetch': 'https://bestroofingnow.com',
+  },
 };
 
 export default function RootLayout({
@@ -50,6 +54,13 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <head>
         <meta name="theme-color" content="#1A43AA" />
+        {/* Preconnect to critical origins - image host is most important for LCP */}
+        <link rel="preconnect" href="https://bestroofingnow.com" />
+        <link rel="dns-prefetch" href="https://bestroofingnow.com" />
+        {/* Chat widget loads on lazyOnload, but preconnect helps when it does */}
+        <link rel="preconnect" href="https://widgets.leadconnectorhq.com" />
+        <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
+        <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
         <LocalBusinessSchema />
       </head>
       <body className="antialiased">

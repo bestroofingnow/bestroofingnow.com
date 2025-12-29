@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, ArrowRight, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getPosts } from '@/lib/wordpress';
+import BlogContent from './BlogContent';
 
 export const metadata: Metadata = {
   title: 'Roofing Blog | Tips & Guides from Charlotte Roofers',
@@ -15,27 +15,53 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_CONFIG.url}/blog`,
   },
+  openGraph: {
+    title: 'Roofing Blog | Expert Tips from Charlotte Roofers',
+    description: 'Expert roofing tips, guides, and news. Learn about roof maintenance, repair, replacement, and protecting your Charlotte home.',
+    type: 'website',
+  },
 };
 
 // Revalidate every hour
 export const revalidate = 3600;
 
-function stripHtml(html: string): string {
-  return html.replace(/<[^>]*>/g, '').replace(/&[^;]+;/g, ' ').trim();
-}
-
-function formatDate(dateString: string): string {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-}
-
 export default async function BlogPage() {
-  // Fetch posts from WordPress
-  const posts = await getPosts({ perPage: 12 });
+  // Fetch initial posts from WordPress - get more for client-side search/filter
+  const posts = await getPosts({ perPage: 100 });
+
+  // Generate BlogPosting structured data for AI/SEO readability
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Best Roofing Now Blog',
+    description: 'Expert roofing tips, guides, and news from Charlotte\'s trusted roofing company.',
+    url: `${SITE_CONFIG.url}/blog`,
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_CONFIG.name,
+      logo: {
+        '@type': 'ImageObject',
+        url: IMAGES.logo,
+      },
+    },
+    blogPost: posts.slice(0, 20).map((post: any) => ({
+      '@type': 'BlogPosting',
+      headline: post.title.rendered.replace(/<[^>]*>/g, ''),
+      url: `${SITE_CONFIG.url}/blog/${post.slug}`,
+      datePublished: post.date,
+      dateModified: post.modified,
+      author: {
+        '@type': 'Organization',
+        name: SITE_CONFIG.name,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: SITE_CONFIG.name,
+      },
+      image: post._embedded?.['wp:featuredmedia']?.[0]?.source_url || IMAGES.hero.hero25,
+      description: post.excerpt.rendered.replace(/<[^>]*>/g, '').replace(/&[^;]+;/g, ' ').trim().slice(0, 160),
+    })),
+  };
 
   return (
     <>
@@ -46,8 +72,14 @@ export default async function BlogPage() {
         ]}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
+      {/* Blog structured data for AI/SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+
+      {/* Hero Section - Mobile optimized */}
+      <section className="relative bg-gradient-primary text-white py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src={IMAGES.hero.hero25}
@@ -59,14 +91,14 @@ export default async function BlogPage() {
         </div>
         <div className="container relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-4">
-              <BookOpen className="w-4 h-4" />
-              <span className="text-sm font-semibold">Roofing Tips & Guides</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-3 sm:mb-4">
+              <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="text-xs sm:text-sm font-semibold">Roofing Tips & Guides</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6">
               Expert Roofing Advice for Charlotte Homeowners
             </h1>
-            <p className="text-xl text-white/90">
+            <p className="text-base sm:text-lg md:text-xl text-white/90">
               Learn from Charlotte&apos;s trusted roofing experts. Tips on maintenance, repair,
               replacement, and protecting your home from the elements.
             </p>
@@ -74,98 +106,8 @@ export default async function BlogPage() {
         </div>
       </section>
 
-      {/* Blog Posts */}
-      <section className="section">
-        <div className="container">
-          {posts.length > 0 ? (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post: any) => (
-                <article
-                  key={post.id}
-                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition group"
-                >
-                  {/* Featured Image */}
-                  <div className="aspect-video bg-gray-100 relative overflow-hidden">
-                    {post._embedded?.['wp:featuredmedia']?.[0]?.source_url ? (
-                      <Image
-                        src={post._embedded['wp:featuredmedia'][0].source_url}
-                        alt={post.title.rendered}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center">
-                        <BookOpen className="w-12 h-12 text-gray-300" />
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6">
-                    <div className="flex items-center gap-2 text-sm text-gray mb-3">
-                      <Calendar className="w-4 h-4" />
-                      <time dateTime={post.date}>{formatDate(post.date)}</time>
-                    </div>
-
-                    <h2 className="text-xl font-bold text-dark mb-3 line-clamp-2 group-hover:text-primary transition">
-                      <Link href={`/blog/${post.slug}`}>
-                        <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                      </Link>
-                    </h2>
-
-                    <p className="text-gray mb-4 line-clamp-3">
-                      {stripHtml(post.excerpt.rendered).slice(0, 150)}...
-                    </p>
-
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition"
-                    >
-                      Read More
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <BookOpen className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-dark mb-2">No Posts Yet</h2>
-              <p className="text-gray">Check back soon for roofing tips and guides!</p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Categories */}
-      <section className="section bg-light">
-        <div className="container">
-          <h2 className="text-2xl font-bold text-primary mb-8 text-center">
-            Browse by Topic
-          </h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              'Roof Repair',
-              'Roof Replacement',
-              'Storm Damage',
-              'Insurance Claims',
-              'Maintenance Tips',
-              'Roofing Materials',
-              'Energy Efficiency',
-              'Commercial Roofing',
-            ].map((topic) => (
-              <Link
-                key={topic}
-                href={`/blog?topic=${encodeURIComponent(topic.toLowerCase().replace(' ', '-'))}`}
-                className="px-6 py-3 bg-white rounded-full shadow-md hover:shadow-lg hover:bg-primary hover:text-white transition"
-              >
-                {topic}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Blog Content with Search & Pagination */}
+      <BlogContent initialPosts={posts} />
 
       {/* CTA */}
       <CTASection />
