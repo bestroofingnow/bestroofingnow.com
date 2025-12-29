@@ -49,7 +49,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <Image
-              src="https://bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
+              src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
               alt={SITE_CONFIG.name}
               width={180}
               height={80}

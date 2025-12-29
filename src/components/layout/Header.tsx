@@ -92,7 +92,7 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="https://bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
+                src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
                 alt={SITE_CONFIG.name}
                 width={360}
                 height={160}

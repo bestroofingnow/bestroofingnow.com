@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: SITE_CONFIG.description,
     images: [
       {
-        url: 'https://bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
+        url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
         width: 1200,
         height: 630,
         alt: `${SITE_CONFIG.name} - Professional Roofing Services Charlotte NC`,
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     description: SITE_CONFIG.description,
     site: '@bestroofingnow',
     creator: '@bestroofingnow',
-    images: ['https://bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png'],
+    images: ['https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png'],
   },
   robots: {
     index: true,
