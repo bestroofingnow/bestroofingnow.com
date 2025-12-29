@@ -19,9 +19,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { ServiceSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
+import { getServiceFAQs } from '@/lib/faqs';
 
 // Map service slugs to their image sets
 const serviceImages: Record<string, string[]> = {
@@ -327,9 +328,13 @@ export default async function ServicePage({ params }: PageProps) {
   const Icon = iconMap[service.icon] || Home;
   const otherServices = SERVICES.filter((s) => s.slug !== slug).slice(0, 4);
 
+  // Get enhanced FAQs for this service (with better keyword targeting)
+  const serviceFAQs = getServiceFAQs(slug);
+
   return (
     <>
       <ServiceSchema service={service} />
+      <FAQSchema faqs={serviceFAQs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
@@ -506,9 +511,9 @@ export default async function ServicePage({ params }: PageProps) {
 
       {/* FAQ */}
       <FAQ
-        faqs={content.faqs}
+        faqs={serviceFAQs}
         title={`${service.title} FAQ`}
-        subtitle="Common questions about our services"
+        subtitle={`Common questions about ${service.title.toLowerCase()} in Charlotte NC`}
       />
 
       {/* Related Services */}

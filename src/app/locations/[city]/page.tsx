@@ -7,9 +7,10 @@ import { Button } from '@/components/ui/Button';
 import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { LocationSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { LocationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
+import { generateLocationFAQs } from '@/lib/faqs';
 
 // Location-specific content for unique pages
 const locationContent: Record<
@@ -595,9 +596,13 @@ export default async function LocationPage({ params }: PageProps) {
   const content = locationContent[city] || defaultContent;
   const otherLocations = LOCATIONS.filter((l) => l.slug !== city).slice(0, 6);
 
+  // Generate unique FAQs for this location
+  const locationFAQs = generateLocationFAQs(location.city, location.state, location.county);
+
   return (
     <>
       <LocationSchema location={location} />
+      <FAQSchema faqs={locationFAQs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
@@ -904,8 +909,9 @@ export default async function LocationPage({ params }: PageProps) {
 
       {/* FAQ */}
       <FAQ
+        faqs={locationFAQs}
         title={`${location.city} Roofing FAQ`}
-        subtitle={`Common questions about roofing services in ${location.city}`}
+        subtitle={`Common questions about roofing services in ${location.city}, ${location.state}`}
       />
 
       {/* CTA */}
