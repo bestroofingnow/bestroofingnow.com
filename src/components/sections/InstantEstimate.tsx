@@ -35,8 +35,8 @@ export function InstantEstimate() {
     <section className="section bg-light">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-8">
-          <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-4 py-2 mb-4">
-            <Calculator className="w-4 h-4" />
+          <div className="inline-flex items-center gap-2 bg-accent text-white rounded-full px-4 py-2 mb-4">
+            <Calculator className="w-4 h-4" aria-hidden="true" />
             <span className="text-sm font-semibold">Instant Estimate</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">

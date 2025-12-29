@@ -66,9 +66,9 @@ export function Hero({
               className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4 md:mb-6 animate-fade-in-up"
               style={{ animationDelay: '0s' }}
             >
-              <div className="flex" aria-label="5 star rating">
+              <div className="flex" role="img" aria-label="5 star rating">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
                 ))}
               </div>
               <span className="text-white text-sm font-medium">
