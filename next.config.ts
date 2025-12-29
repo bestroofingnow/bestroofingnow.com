@@ -127,9 +127,6 @@ const nextConfig: NextConfig = {
       // "Durable Roof Guide" duplicates
       { source: '/the-ultimate-guide-to-choosing-a-durable-roof-metal-single-ply-and-the-latest-innovations-explained-2', destination: '/blog/the-ultimate-guide-to-choosing-a-durable-roof-metal-single-ply-and-the-latest-innovations-explained', permanent: true },
 
-      // "Roof Replacement" duplicates (slug without -101 suffix)
-      { source: '/roof-replacement', destination: '/blog/roof-replacement-101', permanent: true },
-
       // "Storms Effect Your Roof" duplicates
       { source: '/storms-effect-your-roof-2', destination: '/blog/storms-effect-your-roof-2', permanent: true },
 
@@ -146,6 +143,7 @@ const nextConfig: NextConfig = {
       // ===========================================
       // SERVICE PAGE REDIRECTS
       // ===========================================
+      { source: '/roof-replacement', destination: '/services/roof-replacement', permanent: true },
       { source: '/residential-roofing', destination: '/services/residential-roofing', permanent: true },
       { source: '/commercial-roofing', destination: '/services/commercial-roofing', permanent: true },
       { source: '/roofing-repair', destination: '/services/roof-repair', permanent: true },
