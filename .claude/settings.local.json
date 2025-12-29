@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate external links and add 404 redirect\n\n- Update BBB link to correct URL\n- Update Google Maps link to full URL with coordinates\n- Replace Angi link with Facebook link on reviews page\n- Add not-found.tsx to redirect all 404s to homepage\n- Remove unused src/data/images.ts duplicate file\n- Add error handling to WordPress API calls to prevent build failures\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate external links and add 404 redirect\n\n- Update BBB link to correct URL\n- Update Google Maps link to full URL with coordinates\n- Replace Angi link with Facebook link on reviews page\n- Add not-found.tsx to redirect all 404s to homepage\n- Remove unused src/data/images.ts duplicate file\n- Add error handling to WordPress API calls to prevent build failures\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(npm run build:*)",
+      "Bash(git fetch:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

@@ -1,117 +1,115 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import { motion, useInView, useAnimation, Variants } from 'framer-motion';
+import { useEffect, useRef, useState, ReactNode } from 'react';
+
+// CSS-based animation wrappers using IntersectionObserver
+// Eliminates Framer Motion dependency (~50KB savings)
+
+interface AnimationProps {
+  children: ReactNode;
+  delay?: number;
+  className?: string;
+}
+
+// Hook for intersection observer based animations
+function useInViewAnimation(margin = '-50px') {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: margin }
+    );
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [margin]);
+
+  return { ref, isInView };
+}
 
 // Fade in from bottom animation
-export function FadeInUp({
-  children,
-  delay = 0,
-  duration = 0.5,
-  className = '',
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  duration?: number;
-  className?: string;
-}) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+export function FadeInUp({ children, delay = 0, className = '' }: AnimationProps) {
+  const { ref, isInView } = useInViewAnimation();
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-      transition={{ duration, delay, ease: 'easeOut' }}
-      className={className}
+      className={`transition-all duration-500 ease-out ${className}`}
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? 'translateY(0)' : 'translateY(30px)',
+        transitionDelay: `${delay}s`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
 // Fade in from left
-export function FadeInLeft({
-  children,
-  delay = 0,
-  duration = 0.5,
-  className = '',
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  duration?: number;
-  className?: string;
-}) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+export function FadeInLeft({ children, delay = 0, className = '' }: AnimationProps) {
+  const { ref, isInView } = useInViewAnimation();
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, x: -50 }}
-      animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-      transition={{ duration, delay, ease: 'easeOut' }}
-      className={className}
+      className={`transition-all duration-500 ease-out ${className}`}
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? 'translateX(0)' : 'translateX(-50px)',
+        transitionDelay: `${delay}s`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
 // Fade in from right
-export function FadeInRight({
-  children,
-  delay = 0,
-  duration = 0.5,
-  className = '',
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  duration?: number;
-  className?: string;
-}) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+export function FadeInRight({ children, delay = 0, className = '' }: AnimationProps) {
+  const { ref, isInView } = useInViewAnimation();
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, x: 50 }}
-      animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-      transition={{ duration, delay, ease: 'easeOut' }}
-      className={className}
+      className={`transition-all duration-500 ease-out ${className}`}
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? 'translateX(0)' : 'translateX(50px)',
+        transitionDelay: `${delay}s`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
 // Scale up animation
-export function ScaleIn({
-  children,
-  delay = 0,
-  duration = 0.5,
-  className = '',
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  duration?: number;
-  className?: string;
-}) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+export function ScaleIn({ children, delay = 0, className = '' }: AnimationProps) {
+  const { ref, isInView } = useInViewAnimation();
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-      transition={{ duration, delay, ease: 'easeOut' }}
-      className={className}
+      className={`transition-all duration-500 ease-out ${className}`}
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? 'scale(1)' : 'scale(0.8)',
+        transitionDelay: `${delay}s`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -121,33 +119,21 @@ export function StaggerContainer({
   staggerDelay = 0.1,
   className = '',
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   staggerDelay?: number;
   className?: string;
 }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
-
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: staggerDelay,
-      },
-    },
-  };
+  const { ref, isInView } = useInViewAnimation();
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      variants={containerVariants}
-      initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
       className={className}
+      style={{ '--stagger-delay': `${staggerDelay}s` } as React.CSSProperties}
+      data-in-view={isInView}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -155,27 +141,30 @@ export function StaggerContainer({
 export function StaggerItem({
   children,
   className = '',
+  index = 0,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
+  index?: number;
 }) {
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' },
-    },
-  };
+  const { ref, isInView } = useInViewAnimation();
 
   return (
-    <motion.div variants={itemVariants} className={className}>
+    <div
+      ref={ref}
+      className={`transition-all duration-500 ease-out ${className}`}
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? 'translateY(0)' : 'translateY(20px)',
+        transitionDelay: `${index * 0.1}s`,
+      }}
+    >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
-// Animated counter for stats
+// Animated counter for stats - pure JS, no Framer Motion
 export function AnimatedCounter({
   value,
   duration = 2,
@@ -189,35 +178,43 @@ export function AnimatedCounter({
   prefix?: string;
   className?: string;
 }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const ref = useRef<HTMLSpanElement>(null);
   const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    if (!isInView) return;
+    const element = ref.current;
+    if (!element || hasAnimated) return;
 
-    let startTime: number;
-    let animationFrame: number;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          observer.disconnect();
 
-    const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
+          let startTime: number;
+          const animate = (timestamp: number) => {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            setCount(Math.floor(easeOutQuart * value));
 
-      // Easing function for smooth animation
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-      setCount(Math.floor(easeOutQuart * value));
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              setCount(value);
+            }
+          };
 
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      } else {
-        setCount(value);
-      }
-    };
+          requestAnimationFrame(animate);
+        }
+      },
+      { rootMargin: '-50px' }
+    );
 
-    animationFrame = requestAnimationFrame(animate);
-
-    return () => cancelAnimationFrame(animationFrame);
-  }, [isInView, value, duration]);
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [value, duration, hasAnimated]);
 
   return (
     <span ref={ref} className={className}>
@@ -226,140 +223,23 @@ export function AnimatedCounter({
   );
 }
 
-// Floating animation (for CTA buttons)
-export function FloatingElement({
-  children,
-  className = '',
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <motion.div
-      animate={{
-        y: [0, -10, 0],
-      }}
-      transition={{
-        duration: 3,
-        repeat: Infinity,
-        ease: 'easeInOut',
-      }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
+// Simple passthrough components for backwards compatibility
+export function FloatingElement({ children, className = '' }: { children: ReactNode; className?: string }) {
+  return <div className={className}>{children}</div>;
 }
 
-// Pulse animation
-export function PulseElement({
-  children,
-  className = '',
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <motion.div
-      animate={{
-        scale: [1, 1.05, 1],
-      }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-        ease: 'easeInOut',
-      }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
+export function PulseElement({ children, className = '' }: { children: ReactNode; className?: string }) {
+  return <div className={className}>{children}</div>;
 }
 
-// Hover scale effect wrapper
-export function HoverScale({
-  children,
-  scale = 1.05,
-  className = '',
-}: {
-  children: React.ReactNode;
-  scale?: number;
-  className?: string;
-}) {
-  return (
-    <motion.div
-      whileHover={{ scale }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
+export function HoverScale({ children, className = '' }: { children: ReactNode; className?: string }) {
+  return <div className={`transition-transform hover:scale-105 ${className}`}>{children}</div>;
 }
 
-// Text reveal animation
-export function TextReveal({
-  text,
-  className = '',
-  delay = 0,
-}: {
-  text: string;
-  className?: string;
-  delay?: number;
-}) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  const words = text.split(' ');
-
-  return (
-    <span ref={ref} className={className}>
-      {words.map((word, i) => (
-        <motion.span
-          key={i}
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.3, delay: delay + i * 0.05 }}
-          className="inline-block mr-[0.25em]"
-        >
-          {word}
-        </motion.span>
-      ))}
-    </span>
-  );
+export function TextReveal({ text, className = '' }: { text: string; className?: string }) {
+  return <span className={className}>{text}</span>;
 }
 
-// Parallax scroll effect
-export function ParallaxSection({
-  children,
-  speed = 0.5,
-  className = '',
-}: {
-  children: React.ReactNode;
-  speed?: number;
-  className?: string;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [offsetY, setOffsetY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (ref.current) {
-        const rect = ref.current.getBoundingClientRect();
-        const scrolled = window.scrollY;
-        const rate = scrolled * speed;
-        setOffsetY(rate);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [speed]);
-
-  return (
-    <div ref={ref} className={className}>
-      <motion.div style={{ y: offsetY }}>{children}</motion.div>
-    </div>
-  );
+export function ParallaxSection({ children, className = '' }: { children: ReactNode; className?: string }) {
+  return <div className={className}>{children}</div>;
 }

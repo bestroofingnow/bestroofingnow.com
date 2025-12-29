@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
 
 interface Testimonial {
@@ -24,39 +23,25 @@ export function TestimonialCarousel({
   autoPlayInterval = 5000,
 }: TestimonialCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
-
-  const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 300 : -300,
-      opacity: 0,
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1,
-    },
-    exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? 300 : -300,
-      opacity: 0,
-    }),
-  };
-
-  const swipeConfidenceThreshold = 10000;
-  const swipePower = (offset: number, velocity: number) => {
-    return Math.abs(offset) * velocity;
-  };
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [direction, setDirection] = useState<'left' | 'right'>('right');
 
   const paginate = useCallback((newDirection: number) => {
-    setDirection(newDirection);
-    setCurrentIndex((prevIndex) => {
-      let nextIndex = prevIndex + newDirection;
-      if (nextIndex < 0) nextIndex = testimonials.length - 1;
-      if (nextIndex >= testimonials.length) nextIndex = 0;
-      return nextIndex;
-    });
-  }, [testimonials.length]);
+    if (isTransitioning) return;
+
+    setDirection(newDirection > 0 ? 'right' : 'left');
+    setIsTransitioning(true);
+
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => {
+        let nextIndex = prevIndex + newDirection;
+        if (nextIndex < 0) nextIndex = testimonials.length - 1;
+        if (nextIndex >= testimonials.length) nextIndex = 0;
+        return nextIndex;
+      });
+      setIsTransitioning(false);
+    }, 300);
+  }, [testimonials.length, isTransitioning]);
 
   useEffect(() => {
     if (!autoPlay) return;
@@ -70,75 +55,81 @@ export function TestimonialCarousel({
 
   const currentTestimonial = testimonials[currentIndex];
 
+  // Touch handling for swipe
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) paginate(1);
+    if (isRightSwipe) paginate(-1);
+  };
+
   return (
     <div className="relative max-w-4xl mx-auto">
       {/* Main Carousel */}
-      <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl p-8 md:p-12 min-h-[300px]">
+      <div
+        className="relative overflow-hidden rounded-2xl bg-white shadow-xl p-8 md:p-12 min-h-[300px]"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/10" />
 
-        <AnimatePresence initial={false} custom={direction} mode="wait">
-          <motion.div
-            key={currentIndex}
-            custom={direction}
-            variants={slideVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{
-              x: { type: 'spring', stiffness: 300, damping: 30 },
-              opacity: { duration: 0.2 },
-            }}
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={1}
-            onDragEnd={(e, { offset, velocity }) => {
-              const swipe = swipePower(offset.x, velocity.x);
+        <div
+          className={`transition-all duration-300 ease-out ${
+            isTransitioning
+              ? direction === 'right'
+                ? 'opacity-0 -translate-x-8'
+                : 'opacity-0 translate-x-8'
+              : 'opacity-100 translate-x-0'
+          }`}
+        >
+          {/* Rating Stars */}
+          <div className="flex justify-center gap-1 mb-6">
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className={`w-6 h-6 transition-all duration-200 ${
+                  i < currentTestimonial.rating
+                    ? 'text-accent fill-accent'
+                    : 'text-gray-300'
+                }`}
+                style={{ animationDelay: `${i * 0.1}s` }}
+              />
+            ))}
+          </div>
 
-              if (swipe < -swipeConfidenceThreshold) {
-                paginate(1);
-              } else if (swipe > swipeConfidenceThreshold) {
-                paginate(-1);
-              }
-            }}
-            className="cursor-grab active:cursor-grabbing"
-          >
-            {/* Rating Stars */}
-            <div className="flex justify-center gap-1 mb-6">
-              {[...Array(5)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: i * 0.1 }}
-                >
-                  <Star
-                    className={`w-6 h-6 ${
-                      i < currentTestimonial.rating
-                        ? 'text-accent fill-accent'
-                        : 'text-gray-300'
-                    }`}
-                  />
-                </motion.div>
-              ))}
-            </div>
+          {/* Testimonial Text */}
+          <blockquote className="text-xl md:text-2xl text-center text-dark mb-8 leading-relaxed">
+            &ldquo;{currentTestimonial.text}&rdquo;
+          </blockquote>
 
-            {/* Testimonial Text */}
-            <blockquote className="text-xl md:text-2xl text-center text-dark mb-8 leading-relaxed">
-              &ldquo;{currentTestimonial.text}&rdquo;
-            </blockquote>
-
-            {/* Author Info */}
-            <div className="text-center">
-              <p className="font-bold text-dark text-lg">{currentTestimonial.name}</p>
-              <p className="text-gray">{currentTestimonial.location}</p>
-              {currentTestimonial.service && (
-                <span className="inline-block mt-2 px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
-                  {currentTestimonial.service}
-                </span>
-              )}
-            </div>
-          </motion.div>
-        </AnimatePresence>
+          {/* Author Info */}
+          <div className="text-center">
+            <p className="font-bold text-dark text-lg">{currentTestimonial.name}</p>
+            <p className="text-gray">{currentTestimonial.location}</p>
+            {currentTestimonial.service && (
+              <span className="inline-block mt-2 px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
+                {currentTestimonial.service}
+              </span>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Navigation Buttons */}
@@ -163,13 +154,19 @@ export function TestimonialCarousel({
           <button
             key={index}
             onClick={() => {
-              setDirection(index > currentIndex ? 1 : -1);
-              setCurrentIndex(index);
+              if (index !== currentIndex) {
+                setDirection(index > currentIndex ? 'right' : 'left');
+                setIsTransitioning(true);
+                setTimeout(() => {
+                  setCurrentIndex(index);
+                  setIsTransitioning(false);
+                }, 300);
+              }
             }}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`h-3 rounded-full transition-all duration-300 ${
               index === currentIndex
                 ? 'bg-primary w-8'
-                : 'bg-gray-300 hover:bg-gray-400'
+                : 'bg-gray-300 hover:bg-gray-400 w-3'
             }`}
             aria-label={`Go to testimonial ${index + 1}`}
           />

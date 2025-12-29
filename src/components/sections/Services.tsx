@@ -1,7 +1,4 @@
-'use client';
-
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
   Home,
   Building2,
@@ -15,7 +12,6 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { SERVICES } from '@/lib/constants';
-import { FadeInUp, StaggerContainer, StaggerItem } from '@/components/ui/Animations';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Home,
@@ -48,76 +44,55 @@ export function Services({
     <section className="section bg-light overflow-hidden">
       <div className="container">
         {/* Section Header */}
-        <FadeInUp>
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              {title}
-            </h2>
-            <p className="text-gray text-lg">{subtitle}</p>
-          </div>
-        </FadeInUp>
+        <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
+            {title}
+          </h2>
+          <p className="text-gray text-base md:text-lg">{subtitle}</p>
+        </div>
 
         {/* Services Grid */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.1}>
-          {displayedServices.map((service, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {displayedServices.map((service) => {
             const Icon = iconMap[service.icon] || Home;
 
             return (
-              <StaggerItem key={service.slug}>
-                <motion.div
-                  whileHover={{ y: -8, scale: 1.02 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="block p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 group h-full"
-                  >
-                    <div className="flex items-start gap-4">
-                      <motion.div
-                        className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300"
-                        whileHover={{ rotate: 5, scale: 1.1 }}
-                      >
-                        <Icon className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
-                      </motion.div>
-                      <div className="flex-1">
-                        <h3 className="text-lg font-bold text-dark mb-2 group-hover:text-primary transition-colors">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray text-sm mb-4">{service.description}</p>
-                        <div className="flex items-center text-primary font-medium text-sm group-hover:text-accent transition-colors">
-                          Learn More
-                          <motion.span
-                            className="ml-1"
-                            initial={{ x: 0 }}
-                            whileHover={{ x: 5 }}
-                          >
-                            <ArrowRight className="w-4 h-4" />
-                          </motion.span>
-                        </div>
-                      </div>
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                className="block p-4 md:p-6 bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full"
+              >
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                    <Icon className="w-6 h-6 md:w-7 md:h-7 text-primary group-hover:text-white transition-colors duration-300" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base md:text-lg font-bold text-dark mb-1 md:mb-2 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray text-sm mb-3 md:mb-4 line-clamp-2">{service.description}</p>
+                    <div className="flex items-center text-primary font-medium text-sm group-hover:text-accent transition-colors">
+                      Learn More
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </div>
-                  </Link>
-                </motion.div>
-              </StaggerItem>
+                  </div>
+                </div>
+              </Link>
             );
           })}
-        </StaggerContainer>
+        </div>
 
         {/* View All Link */}
         {!showAll && SERVICES.length > limit && (
-          <FadeInUp delay={0.5}>
-            <div className="text-center mt-10">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-                <Link
-                  href="/services"
-                  className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
-                >
-                  View All Services
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </motion.div>
-            </div>
-          </FadeInUp>
+          <div className="text-center mt-8 md:mt-10">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent hover:scale-105 transition-all"
+            >
+              View All Services
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
         )}
       </div>
     </section>

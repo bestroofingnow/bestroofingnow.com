@@ -1,8 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { FadeInUp, StaggerContainer, StaggerItem } from '@/components/ui/Animations';
+import { FadeInUp, StaggerItem } from '@/components/ui/Animations';
 import { IMAGES } from '@/lib/images';
 
 interface ProjectGalleryProps {
@@ -32,14 +31,10 @@ export function ProjectGallery({
           </div>
         </FadeInUp>
 
-        <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 gap-4" staggerDelay={0.1}>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {displayImages.map((image, index) => (
-            <StaggerItem key={index}>
-              <motion.div
-                className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer"
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-              >
+            <StaggerItem key={index} index={index}>
+              <div className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02]">
                 <Image
                   src={image}
                   alt={`Roofing project ${index + 1}`}
@@ -49,10 +44,10 @@ export function ProjectGallery({
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-semibold">View Project</span>
                 </div>
-              </motion.div>
+              </div>
             </StaggerItem>
           ))}
-        </StaggerContainer>
+        </div>
       </div>
     </section>
   );

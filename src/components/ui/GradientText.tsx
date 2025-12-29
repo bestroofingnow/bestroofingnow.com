@@ -1,7 +1,4 @@
-'use client';
-
 import React from 'react';
-import { motion } from 'framer-motion';
 
 interface GradientTextProps {
   text: string;
@@ -16,17 +13,9 @@ const GradientText: React.FC<GradientTextProps> = ({
 }) => {
   return (
     <Component className={`relative inline-block font-bold tracking-tight isolate ${className}`}>
-      {/* Main Gradient Text - uses brand colors */}
-      <motion.span
-        className="absolute inset-0 z-10 block bg-gradient-to-r from-primary via-accent via-primary-light to-primary bg-[length:200%_auto] bg-clip-text text-transparent will-change-[background-position]"
-        animate={{
-          backgroundPosition: ['0% center', '200% center'],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "linear",
-        }}
+      {/* Main Gradient Text - uses brand colors with CSS animation */}
+      <span
+        className="absolute inset-0 z-10 block bg-gradient-to-r from-primary via-accent via-primary-light to-primary bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-shift"
         aria-hidden="true"
         style={{
           WebkitBackgroundClip: 'text',
@@ -36,7 +25,7 @@ const GradientText: React.FC<GradientTextProps> = ({
         }}
       >
         {text}
-      </motion.span>
+      </span>
 
       {/* Base layer for solid fallback */}
       <span

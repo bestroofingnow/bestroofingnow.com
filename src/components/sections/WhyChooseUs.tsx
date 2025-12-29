@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
 import {
   Shield,
   Award,
@@ -13,8 +11,7 @@ import {
   Heart
 } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
-import { IMAGES } from '@/lib/images';
-import { FadeInLeft, FadeInRight, AnimatedCounter, StaggerContainer, StaggerItem } from '@/components/ui/Animations';
+import { FadeInLeft, FadeInRight, AnimatedCounter, StaggerItem } from '@/components/ui/Animations';
 
 const features = [
   {
@@ -64,13 +61,10 @@ export function WhyChooseUs() {
           {/* Content Side */}
           <FadeInLeft>
             <div>
-              <motion.div
-                className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-4 py-2 mb-4"
-                whileHover={{ scale: 1.05 }}
-              >
+              <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-4 py-2 mb-4 transition-transform hover:scale-105">
                 <Heart className="w-4 h-4" />
                 <span className="text-sm font-semibold">Why Homeowners Choose Us</span>
-              </motion.div>
+              </div>
 
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                 We Tell the Truth—Even When It Costs Us a Sale
@@ -85,38 +79,30 @@ export function WhyChooseUs() {
               {/* Animated Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 {stats.map((stat, index) => (
-                  <motion.div
+                  <div
                     key={stat.label}
-                    className="text-center p-4 bg-light rounded-xl"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
+                    className="text-center p-4 bg-light rounded-xl transition-all hover:scale-105 hover:shadow-lg animate-fade-in-up"
+                    style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="text-3xl font-bold text-primary">
                       <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                     </div>
                     <div className="text-sm text-gray">{stat.label}</div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 
               {/* Certifications */}
               <div className="flex flex-wrap gap-4">
                 {['CertainTeed Certified', 'GAF Certified', 'Angi Super Service Award'].map((cert, i) => (
-                  <motion.div
+                  <div
                     key={cert}
-                    className="badge"
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5 + i * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
+                    className="badge transition-transform hover:scale-105 animate-fade-in-up"
+                    style={{ animationDelay: `${0.5 + i * 0.1}s` }}
                   >
                     <CheckCircle className="w-4 h-4" />
                     {cert}
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -124,26 +110,19 @@ export function WhyChooseUs() {
 
           {/* Features Grid */}
           <FadeInRight>
-            <StaggerContainer className="grid sm:grid-cols-2 gap-6" staggerDelay={0.1}>
-              {features.map((feature) => (
-                <StaggerItem key={feature.title}>
-                  <motion.div
-                    className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 h-full group"
-                    whileHover={{ y: -5, scale: 1.02 }}
-                  >
-                    <motion.div
-                      className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300"
-                      whileHover={{ rotate: 10 }}
-                      transition={{ type: 'spring' }}
-                    >
+            <div className="grid sm:grid-cols-2 gap-6">
+              {features.map((feature, index) => (
+                <StaggerItem key={feature.title} index={index}>
+                  <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 h-full group hover:-translate-y-1">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300">
                       <feature.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" />
-                    </motion.div>
+                    </div>
                     <h3 className="font-bold text-dark mb-2">{feature.title}</h3>
                     <p className="text-gray text-sm">{feature.description}</p>
-                  </motion.div>
+                  </div>
                 </StaggerItem>
               ))}
-            </StaggerContainer>
+            </div>
           </FadeInRight>
         </div>
       </div>

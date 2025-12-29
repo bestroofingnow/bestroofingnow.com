@@ -2,7 +2,6 @@
 
 import { useState, useRef, useCallback } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 interface BeforeAfterSliderProps {
   beforeImage: string;
@@ -100,12 +99,11 @@ export function BeforeAfterSlider({
       </div>
 
       {/* Slider Handle */}
-      <motion.div
-        className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10"
+      <div
+        className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10 transition-transform hover:scale-x-150"
         style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
         onMouseDown={handleMouseDown}
         onTouchStart={handleMouseDown}
-        whileHover={{ scale: 1.1 }}
       >
         {/* Handle Circle */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-primary">
@@ -137,7 +135,7 @@ export function BeforeAfterSlider({
 
         {/* Vertical Line Effect */}
         <div className="absolute inset-0 w-1 bg-white shadow-lg" />
-      </motion.div>
+      </div>
 
       {/* Instructions Overlay */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-sm font-medium opacity-0 hover:opacity-100 transition-opacity pointer-events-none">

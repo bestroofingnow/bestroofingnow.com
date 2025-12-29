@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { TestimonialCarousel } from '@/components/ui/TestimonialCarousel';
@@ -54,48 +53,25 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="section bg-gradient-to-br from-primary via-primary to-primary-dark text-white overflow-hidden relative">
-      {/* Animated Background Elements */}
+      {/* Static Background Elements - no JS animation */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute top-10 right-10 w-64 h-64 bg-white/5 rounded-full"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{ duration: 8, repeat: Infinity }}
-        />
-        <motion.div
-          className="absolute bottom-10 left-10 w-96 h-96 bg-accent/10 rounded-full"
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.2, 0.4, 0.2],
-          }}
-          transition={{ duration: 10, repeat: Infinity }}
-        />
+        <div className="absolute top-10 right-10 w-64 h-64 bg-white/5 rounded-full animate-pulse" style={{ animationDuration: '8s' }} />
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/10 rounded-full animate-pulse" style={{ animationDuration: '10s' }} />
       </div>
 
       <div className="container relative z-10">
         {/* Section Header */}
         <FadeInUp>
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <motion.div
-              className="flex justify-center mb-4"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
+            <div className="flex justify-center mb-4">
               {[...Array(5)].map((_, i) => (
-                <motion.div
+                <Star
                   key={i}
-                  initial={{ opacity: 0, scale: 0, rotate: -180 }}
-                  whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1, type: 'spring' }}
-                >
-                  <Star className="w-8 h-8 fill-yellow-400 text-yellow-400" />
-                </motion.div>
+                  className="w-8 h-8 fill-yellow-400 text-yellow-400 animate-fade-in-up"
+                  style={{ animationDelay: `${i * 0.1}s` }}
+                />
               ))}
-            </motion.div>
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               {SITE_CONFIG.googleRating} Star Rating from {SITE_CONFIG.googleReviewCount}+ Reviews
             </h2>
@@ -117,13 +93,11 @@ export function Testimonials() {
         {/* Google Reviews Link */}
         <FadeInUp delay={0.4}>
           <div className="text-center mt-12">
-            <motion.a
+            <a
               href="https://www.google.com/search?q=Best+Roofing+Now+Charlotte+NC+reviews"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-primary font-semibold py-3 px-6 rounded-lg hover:bg-white/90 transition-colors shadow-lg"
-              whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}
-              whileTap={{ scale: 0.98 }}
+              className="inline-flex items-center gap-2 bg-white text-primary font-semibold py-3 px-6 rounded-lg hover:bg-white/90 hover:scale-105 hover:shadow-xl transition-all duration-300 shadow-lg"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path
@@ -144,7 +118,7 @@ export function Testimonials() {
                 />
               </svg>
               Read All Google Reviews
-            </motion.a>
+            </a>
           </div>
         </FadeInUp>
       </div>
