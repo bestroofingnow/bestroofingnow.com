@@ -11,7 +11,13 @@ const nextConfig: NextConfig = {
         hostname: WP_CMS_HOSTNAME,
         pathname: '/wp-content/uploads/**',
       },
-      // Keep original domain for backward compatibility during migration
+      // CMS subdomain for WordPress images
+      {
+        protocol: 'https',
+        hostname: 'cms.bestroofingnow.com',
+        pathname: '/wp-content/uploads/**',
+      },
+      // Keep original domain for backward compatibility
       {
         protocol: 'https',
         hostname: 'bestroofingnow.com',
