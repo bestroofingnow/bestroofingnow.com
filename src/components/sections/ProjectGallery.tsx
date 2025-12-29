@@ -37,9 +37,11 @@ export function ProjectGallery({
               <div className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02]">
                 <Image
                   src={image}
-                  alt={`Roofing project ${index + 1}`}
+                  alt={`Roofing project ${index + 1} - Professional roof installation by Best Roofing Now in Charlotte NC`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-semibold">View Project</span>

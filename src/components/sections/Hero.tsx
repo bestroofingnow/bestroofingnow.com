@@ -64,7 +64,7 @@ export function Hero({
             {/* Trust Badge - CSS animation */}
             <div
               className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4 md:mb-6 animate-fade-in-up"
-              style={{ animationDelay: '0.1s' }}
+              style={{ animationDelay: '0s' }}
             >
               <div className="flex" aria-label="5 star rating">
                 {[...Array(5)].map((_, i) => (
@@ -79,7 +79,7 @@ export function Hero({
             {/* Headline - CSS animation */}
             <h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight animate-fade-in-up"
-              style={{ animationDelay: '0.2s' }}
+              style={{ animationDelay: '0.05s' }}
             >
               {title}
             </h1>
@@ -87,7 +87,7 @@ export function Hero({
             {/* Subheadline - CSS animation */}
             <p
               className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed animate-fade-in-up"
-              style={{ animationDelay: '0.3s' }}
+              style={{ animationDelay: '0.1s' }}
             >
               {subtitle}
             </p>
@@ -95,7 +95,7 @@ export function Hero({
             {/* CTA Buttons - CSS animation */}
             <div
               className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 animate-fade-in-up"
-              style={{ animationDelay: '0.4s' }}
+              style={{ animationDelay: '0.15s' }}
             >
               <Button
                 href="/contact"
@@ -123,7 +123,7 @@ export function Hero({
                   <div
                     key={signal.text}
                     className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3 cursor-default hover:bg-white/20 transition-colors animate-fade-in-up"
-                    style={{ animationDelay: `${0.5 + i * 0.1}s` }}
+                    style={{ animationDelay: `${0.2 + i * 0.05}s` }}
                   >
                     <signal.icon className="w-4 h-4 md:w-5 md:h-5 text-accent-light flex-shrink-0" />
                     <span className="text-white text-xs md:text-sm font-medium">{signal.text}</span>

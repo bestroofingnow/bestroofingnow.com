@@ -105,3 +105,32 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     cursor: none !important;
   }
 }
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-fade-in,
+  .animate-fade-in-up,
+  .animate-gradient-shift,
+  .animate-pulse {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Accessibility: Ensure sufficient color contrast for links */
+a:focus,
+button:focus,
+[role="button"]:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

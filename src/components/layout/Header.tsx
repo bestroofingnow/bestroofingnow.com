@@ -102,7 +102,7 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
               {navigation.map((item) => (
                 <div
                   key={item.label}
@@ -116,9 +116,11 @@ export function Header() {
                       'flex items-center gap-1 px-4 py-2 text-dark font-medium rounded-lg',
                       'hover:bg-light hover:text-primary transition-colors'
                     )}
+                    aria-haspopup={item.children ? 'menu' : undefined}
+                    aria-expanded={item.children ? openDropdown === item.label : undefined}
                   >
                     {item.label}
-                    {item.children && <ChevronDown className="w-4 h-4" />}
+                    {item.children && <ChevronDown className="w-4 h-4" aria-hidden="true" />}
                   </Link>
 
                   {/* Dropdown Menu */}
@@ -129,6 +131,8 @@ export function Header() {
                         item.label === 'Services' ? 'w-[600px] -left-40' : 'w-64'
                       )}
                       style={{ marginTop: '-8px' }}
+                      role="menu"
+                      aria-label={`${item.label} submenu`}
                     >
                       <div
                         className={cn(
@@ -182,12 +186,14 @@ export function Header() {
             <button
               className="lg:hidden p-2 rounded-lg hover:bg-light"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-6 h-6" aria-hidden="true" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-6 h-6" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -195,9 +201,14 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-100 animate-fade-in">
+          <div
+            id="mobile-menu"
+            className="lg:hidden bg-white border-t border-gray-100 animate-fade-in"
+            role="navigation"
+            aria-label="Mobile navigation"
+          >
             <div className="container py-4">
-              <nav className="space-y-2">
+              <nav className="space-y-2" aria-label="Main navigation">
                 {navigation.map((item) => (
                   <div key={item.label}>
                     <Link

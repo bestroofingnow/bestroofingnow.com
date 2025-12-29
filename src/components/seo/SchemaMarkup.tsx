@@ -277,3 +277,155 @@ export function ArticleSchema({ post }: ArticleSchemaProps) {
     />
   );
 }
+
+// WebSite Schema for sitelinks search box (AEO enhancement)
+export function WebSiteSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_CONFIG.url}/#website`,
+    url: SITE_CONFIG.url,
+    name: SITE_CONFIG.name,
+    description: SITE_CONFIG.description,
+    publisher: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_CONFIG.url}/blog?search={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+    inLanguage: 'en-US',
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// HowTo Schema for service process (AEO enhancement)
+export function HowToGetRoofEstimateSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Get a Free Roof Inspection in Charlotte NC',
+    description: 'Follow these simple steps to schedule your free roof inspection with Best Roofing Now, Charlotte\'s top-rated roofing company.',
+    totalTime: 'PT5M',
+    estimatedCost: {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: '0',
+    },
+    supply: [],
+    tool: [],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Contact Us',
+        text: `Call us at ${SITE_CONFIG.phone} or fill out our online form to request your free inspection.`,
+        url: `${SITE_CONFIG.url}/contact`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Schedule Your Inspection',
+        text: 'Our team will contact you within 24 hours to schedule a convenient time for your free roof inspection.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Receive Expert Assessment',
+        text: 'A certified roofing expert will inspect your roof and provide a detailed report with photos and recommendations.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Get Your Free Estimate',
+        text: 'Receive a transparent, no-obligation estimate for any recommended repairs or replacement.',
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Professional Service Schema (AEO enhancement for voice search)
+export function ProfessionalServiceSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    '@id': `${SITE_CONFIG.url}/#professionalservice`,
+    name: SITE_CONFIG.name,
+    description: 'Professional roofing contractor serving Charlotte NC and surrounding areas. Specializing in residential and commercial roof repair, replacement, and installation.',
+    url: SITE_CONFIG.url,
+    telephone: SITE_CONFIG.phone,
+    priceRange: '$$',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: `${SITE_CONFIG.address.street} ${SITE_CONFIG.address.suite}`,
+      addressLocality: SITE_CONFIG.address.city,
+      addressRegion: SITE_CONFIG.address.state,
+      postalCode: SITE_CONFIG.address.zip,
+      addressCountry: 'US',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: SITE_CONFIG.geo.latitude,
+      longitude: SITE_CONFIG.geo.longitude,
+    },
+    areaServed: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: SITE_CONFIG.geo.latitude,
+        longitude: SITE_CONFIG.geo.longitude,
+      },
+      geoRadius: '80467', // 50 miles in meters
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'BBB A+ Accreditation',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'Better Business Bureau',
+        },
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'CertainTeed Certified Contractor',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'CertainTeed',
+        },
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
