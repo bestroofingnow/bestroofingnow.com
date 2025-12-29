@@ -127,6 +127,9 @@ const nextConfig: NextConfig = {
       // "Durable Roof Guide" duplicates
       { source: '/the-ultimate-guide-to-choosing-a-durable-roof-metal-single-ply-and-the-latest-innovations-explained-2', destination: '/blog/the-ultimate-guide-to-choosing-a-durable-roof-metal-single-ply-and-the-latest-innovations-explained', permanent: true },
 
+      // "Roof Replacement" duplicates (slug without -101 suffix)
+      { source: '/roof-replacement', destination: '/blog/roof-replacement-101', permanent: true },
+
       // "Storms Effect Your Roof" duplicates
       { source: '/storms-effect-your-roof-2', destination: '/blog/storms-effect-your-roof-2', permanent: true },
 
