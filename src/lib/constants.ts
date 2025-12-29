@@ -20,7 +20,7 @@ export const SITE_CONFIG = {
   founded: '2020',
   googleRating: 5.0,
   googleReviewCount: 61,
-  customerCount: 400,
+  customerCount: 100,
   bbbRating: 'A+',
   social: {
     instagram: 'https://www.instagram.com/bestroofingnow',
