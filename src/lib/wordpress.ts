@@ -74,28 +74,39 @@ export async function getPosts(options: {
     params.append('categories', categories.join(','));
   }
 
-  const res = await fetch(`${WP_API_URL}/posts?${params}`, {
-    next: { revalidate: 3600 }, // Cache for 1 hour
-  });
+  try {
+    const res = await fetch(`${WP_API_URL}/posts?${params}`, {
+      next: { revalidate: 3600 }, // Cache for 1 hour
+    });
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch posts');
+    if (!res.ok) {
+      console.error('Failed to fetch posts:', res.status, res.statusText);
+      return [];
+    }
+
+    return res.json();
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+    return [];
   }
-
-  return res.json();
 }
 
 export async function getPostBySlug(slug: string): Promise<WPPost | null> {
-  const res = await fetch(`${WP_API_URL}/posts?slug=${slug}&_embed=true`, {
-    next: { revalidate: 3600 },
-  });
+  try {
+    const res = await fetch(`${WP_API_URL}/posts?slug=${slug}&_embed=true`, {
+      next: { revalidate: 3600 },
+    });
 
-  if (!res.ok) {
+    if (!res.ok) {
+      return null;
+    }
+
+    const posts = await res.json();
+    return posts[0] || null;
+  } catch (error) {
+    console.error('Error fetching post by slug:', error);
     return null;
   }
-
-  const posts = await res.json();
-  return posts[0] || null;
 }
 
 export async function getAllPostSlugs(): Promise<string[]> {
