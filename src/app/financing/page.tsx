@@ -261,16 +261,16 @@ export default function FinancingPage() {
                   <Calculator className="w-10 h-10" />
                   <div>
                     <p className="font-bold text-xl">Example Payment</p>
-                    <p className="text-white/80">$15,000 roof replacement</p>
+                    <p className="text-white/90">$15,000 roof replacement</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/10 rounded-lg p-4">
-                    <p className="text-sm text-white/70">12 Months @ 0% APR</p>
+                    <p className="text-sm text-white/90">12 Months @ 0% APR</p>
                     <p className="text-2xl font-bold">$1,250/mo</p>
                   </div>
                   <div className="bg-white/10 rounded-lg p-4">
-                    <p className="text-sm text-white/70">60 Months</p>
+                    <p className="text-sm text-white/90">60 Months</p>
                     <p className="text-2xl font-bold">$285/mo</p>
                   </div>
                 </div>

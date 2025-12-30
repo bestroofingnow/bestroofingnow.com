@@ -45,7 +45,7 @@ export function CTASection({
             </Button>
           </div>
 
-          <p className="mt-6 text-white/70 text-sm">
+          <p className="mt-6 text-white/90 text-sm">
             No pressure. No obligation. Just honest advice from a family-owned business.
           </p>
         </div>

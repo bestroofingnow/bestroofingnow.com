@@ -141,7 +141,7 @@ export function InteractiveServiceMap() {
                     >
                       <div className={`text-[4px] text-center font-bold tracking-wide uppercase transition-all ${
                         area.isPrimary ? 'text-white text-[5px]' :
-                        hoveredArea?.id === area.id ? 'text-white' : 'text-gray-400'
+                        hoveredArea?.id === area.id ? 'text-white' : 'text-gray-200'
                       }`}>
                         {area.name}
                       </div>
@@ -155,7 +155,7 @@ export function InteractiveServiceMap() {
             {hoveredArea && !selectedArea && (
               <div className="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-md p-3 rounded-xl border border-white/10 transition-all duration-200">
                 <p className="text-sm text-white font-semibold">{hoveredArea.name}</p>
-                <p className="text-xs text-gray-400">Click to view services</p>
+                <p className="text-xs text-gray-200">Click to view services</p>
               </div>
             )}
           </div>
@@ -219,7 +219,7 @@ export function InteractiveServiceMap() {
             {selectedArea && (
               <button
                 onClick={() => setSelectedArea(null)}
-                className="text-sm text-gray-400 hover:text-white transition-colors"
+                className="text-sm text-gray-200 hover:text-white transition-colors"
               >
                 &larr; View all locations
               </button>

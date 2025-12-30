@@ -75,7 +75,7 @@ export function Testimonials() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               {SITE_CONFIG.googleRating} Star Rating from {SITE_CONFIG.googleReviewCount}+ Reviews
             </h2>
-            <p className="text-white/80 text-lg">
+            <p className="text-white/90 text-lg">
               Do not just take our word for it. Here is what Charlotte homeowners say about working with us.
             </p>
           </div>

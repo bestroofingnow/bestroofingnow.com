@@ -99,14 +99,26 @@ export function BeforeAfterSlider({
       </div>
 
       {/* Slider Handle */}
-      <div
+      <button
+        type="button"
         className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10 transition-transform hover:scale-x-150"
         style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
         onMouseDown={handleMouseDown}
         onTouchStart={handleMouseDown}
+        onKeyDown={(e) => {
+          if (e.key === 'ArrowLeft') {
+            setSliderPosition((prev) => Math.max(0, prev - 5));
+          } else if (e.key === 'ArrowRight') {
+            setSliderPosition((prev) => Math.min(100, prev + 5));
+          }
+        }}
+        aria-label="Drag to compare before and after images. Use left and right arrow keys to adjust."
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={Math.round(sliderPosition)}
       >
         {/* Handle Circle */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-primary">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-primary" aria-hidden="true">
           <div className="flex items-center gap-0.5">
             <svg
               className="w-3 h-3 text-primary"
@@ -134,8 +146,8 @@ export function BeforeAfterSlider({
         </div>
 
         {/* Vertical Line Effect */}
-        <div className="absolute inset-0 w-1 bg-white shadow-lg" />
-      </div>
+        <div className="absolute inset-0 w-1 bg-white shadow-lg" aria-hidden="true" />
+      </button>
 
       {/* Instructions Overlay */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-sm font-medium opacity-0 hover:opacity-100 transition-opacity pointer-events-none">
@@ -184,12 +196,15 @@ export function BeforeAfterGallery({ items }: BeforeAfterGalleryProps) {
                   ? 'border-primary scale-110 shadow-lg'
                   : 'border-transparent opacity-60 hover:opacity-100'
               }`}
+              aria-label={`View ${item.title || `project ${index + 1}`} before and after comparison`}
+              aria-pressed={index === activeIndex}
             >
               <Image
                 src={item.after}
-                alt={item.title || `Project ${index + 1}`}
+                alt=""
                 fill
                 className="object-cover"
+                aria-hidden="true"
               />
             </button>
           ))}
