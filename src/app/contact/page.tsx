@@ -10,7 +10,9 @@ import {
   Clock,
   Send,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
+  Star,
+  Shield
 } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -91,9 +93,26 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-2xl font-bold text-primary mb-6">
+              <h2 className="text-2xl font-bold text-primary mb-4">
                 Request Your Free Estimate
               </h2>
+
+              {/* Trust Bar */}
+              <div className="flex flex-wrap items-center justify-center gap-3 mb-6 p-3 bg-accent/10 rounded-lg border border-accent/20">
+                <span className="flex items-center gap-1 text-sm font-medium">
+                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  <span className="text-dark">5.0 Rating</span>
+                </span>
+                <span className="text-gray-300">|</span>
+                <span className="flex items-center gap-1 text-sm font-medium text-dark">
+                  <Shield className="w-4 h-4 text-primary" />
+                  BBB A+ Rated
+                </span>
+                <span className="text-gray-300">|</span>
+                <span className="text-sm font-medium text-dark">
+                  {SITE_CONFIG.customerCount}+ Happy Customers
+                </span>
+              </div>
 
               {isSubmitted ? (
                 <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
