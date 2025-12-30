@@ -513,65 +513,65 @@ export const WIKIMEDIA_CITY_IMAGES: Record<string, string> = {
 };
 
 // Location-specific hero images (using full slugs to match URL paths)
-// Uses CMS-hosted images for reliable loading
+// Uses real project photos and house images - no text overlays
 export const LOCATION_HERO_IMAGES: Record<string, string> = {
   // Charlotte - custom video
   'charlotte-nc': 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-10.mp4',
 
-  // Primary Charlotte metro - use CMS hero images
-  'huntersville-nc': IMAGES.hero.hero1,
-  'cornelius-nc': IMAGES.hero.hero2,
-  'davidson-nc': IMAGES.hero.hero3,
-  'mooresville-nc': IMAGES.hero.hero4,
-  'matthews-nc': IMAGES.hero.hero5,
-  'mint-hill-nc': IMAGES.hero.hero6,
-  'pineville-nc': IMAGES.hero.hero7,
+  // Primary Charlotte metro - use real project photos
+  'huntersville-nc': IMAGES.realProjects.certainteed1, // CertainTeed Landmark shingles
+  'cornelius-nc': IMAGES.realProjects.drone1, // Drone shot of completed roof
+  'davidson-nc': IMAGES.realProjects.project13, // Completed roof project
+  'mooresville-nc': IMAGES.realProjects.drone2, // Drone aerial view
+  'matthews-nc': IMAGES.realProjects.pmi1, // PMI project photo
+  'mint-hill-nc': IMAGES.realProjects.project1, // Recent project photo
+  'pineville-nc': IMAGES.realProjects.project2, // Project photo
 
   // Cabarrus County
-  'concord-nc': IMAGES.hero.hero8,
-  'kannapolis-nc': IMAGES.hero.hero9,
-  'harrisburg-nc': IMAGES.hero.hero10,
+  'concord-nc': IMAGES.realProjects.project3, // Project photo
+  'kannapolis-nc': IMAGES.realProjects.project4, // Project photo
+  'harrisburg-nc': IMAGES.realProjects.project5, // Project photo
 
   // Union County
-  'monroe-nc': IMAGES.hero.hero13,
-  'indian-trail-nc': IMAGES.hero.hero14,
-  'waxhaw-nc': IMAGES.hero.hero15,
-  'stallings-nc': IMAGES.hero.hero16,
-  'weddington-nc': IMAGES.hero.hero17,
-  'marvin-nc': IMAGES.hero.hero18,
-  'wesley-chapel-nc': IMAGES.hero.hero19,
+  'monroe-nc': IMAGES.realProjects.project6, // Project photo
+  'indian-trail-nc': IMAGES.realProjects.project7, // Project photo
+  'waxhaw-nc': IMAGES.realProjects.project8, // Project photo
+  'stallings-nc': IMAGES.realProjects.project9, // Project photo
+  'weddington-nc': IMAGES.realProjects.project10, // Project photo
+  'marvin-nc': IMAGES.realProjects.project11, // Project photo
+  'wesley-chapel-nc': IMAGES.realProjects.project12, // Project photo
 
   // Gaston County
-  'gastonia-nc': IMAGES.hero.hero20,
-  'mt-holly-nc': IMAGES.hero.hero21,
-  'belmont-nc': IMAGES.hero.hero22,
-  'kings-mountain-nc': IMAGES.hero.hero23,
+  'gastonia-nc': IMAGES.realProjects.project14, // Project photo
+  'mt-holly-nc': IMAGES.realProjects.project15, // Project photo
+  'belmont-nc': IMAGES.realProjects.project16, // Project photo
+  'kings-mountain-nc': IMAGES.realProjects.project17, // Project photo
 
   // Lincoln County / Lake Norman area
-  'lake-norman': IMAGES.hero.hero24,
-  'denver-nc': IMAGES.hero.hero25,
-  'lincolnton-nc': IMAGES.hero.hero26,
+  'lake-norman': IMAGES.realProjects.project18, // Project photo
+  'denver-nc': IMAGES.realProjects.project19, // Project photo
+  'lincolnton-nc': IMAGES.realProjects.project20, // Project photo
 
   // Iredell County
-  'statesville-nc': IMAGES.houses.house1,
+  'statesville-nc': IMAGES.realProjects.project21, // Project photo
 
   // Catawba County
-  'hickory-nc': IMAGES.houses.house2,
-  'newton-nc': IMAGES.houses.house3,
+  'hickory-nc': IMAGES.realProjects.project22, // Project photo
+  'newton-nc': IMAGES.realProjects.project23, // Project photo
 
   // Other NC counties
-  'albemarle-nc': IMAGES.houses.house4,
-  'shelby-nc': IMAGES.houses.house5,
+  'albemarle-nc': IMAGES.realProjects.project24, // Project photo
+  'shelby-nc': IMAGES.realProjects.project25, // Project photo
 
   // South Carolina - York County
-  'rock-hill-sc': IMAGES.houses.modern1,
-  'fort-mill-sc': IMAGES.houses.modern2,
-  'tega-cay-sc': IMAGES.hero.hero1,
+  'rock-hill-sc': IMAGES.realProjects.project26, // Project photo
+  'fort-mill-sc': IMAGES.realProjects.project27, // Project photo
+  'tega-cay-sc': IMAGES.realProjects.project28, // Project photo
 
   // South Carolina - Lancaster County
-  'indian-land-sc': IMAGES.hero.hero2,
-  'lancaster-sc': IMAGES.hero.hero3,
+  'indian-land-sc': IMAGES.realProjects.project29, // Project photo
+  'lancaster-sc': IMAGES.realProjects.project30, // Project photo
 
-  // Default fallback
+  // Default fallback - house with visible roof
   'default': IMAGES.houses.house1,
 };
