@@ -10,11 +10,11 @@ export const SITE_CONFIG = {
   email: 'info@bestroofingnow.com',
   address: {
     street: '10130 Mallard Creek Rd',
-    suite: 'Suite 300',
+    suite: 'Ste 300',
     city: 'Charlotte',
     state: 'NC',
     zip: '28262',
-    full: '10130 Mallard Creek Rd Suite 300, Charlotte, NC 28262',
+    full: '10130 Mallard Creek Rd Ste 300, Charlotte, NC 28262',
   },
   hours: 'Open 24 Hours',
   founded: '2020',
