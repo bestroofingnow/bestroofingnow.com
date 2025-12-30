@@ -403,23 +403,173 @@ export const SERVICE_HERO_IMAGES: Record<string, string> = {
   'insurance-claims': IMAGES.hero.hero18,
 };
 
+// Wikimedia Commons city images - free to use with attribution
+// These are representative images of each city/area from Wikimedia Commons
+export const WIKIMEDIA_CITY_IMAGES: Record<string, string> = {
+  // Charlotte, NC - Uptown Charlotte skyline aerial view (CC BY-SA 4.0)
+  'charlotte-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg/1280px-Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg',
+
+  // Lake Norman - Lake Norman panorama (CC BY 3.0)
+  'lake-norman': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg/1280px-Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg',
+
+  // Huntersville, NC - Birkdale Village (CC BY 2.0)
+  'huntersville-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Birkdale_Village_Huntersville_NC.jpg/1280px-Birkdale_Village_Huntersville_NC.jpg',
+
+  // Cornelius, NC - Lake Norman waterfront (CC BY-SA 3.0)
+  'cornelius-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Governors_Island%2C_Lake_Norman%2C_NC.jpg/1280px-Governors_Island%2C_Lake_Norman%2C_NC.jpg',
+
+  // Davidson, NC - Davidson College Chambers Building (CC BY-SA 3.0)
+  'davidson-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chambers_Building%2C_Davidson_College_%28Davidson%2C_North_Carolina%29.jpg/1280px-Chambers_Building%2C_Davidson_College_%28Davidson%2C_North_Carolina%29.jpg',
+
+  // Mooresville, NC - First Presbyterian Church historic (CC BY 2.0)
+  'mooresville-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mooresville_NC_Presby_PHS1057.jpg/1024px-Mooresville_NC_Presby_PHS1057.jpg',
+
+  // Concord, NC - Hotel Concord historic building (CC BY-SA 4.0)
+  'concord-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hotel_Concord_Cabarrus_County_NC.jpg/1280px-Hotel_Concord_Cabarrus_County_NC.jpg',
+
+  // Kannapolis, NC - Downtown Kannapolis (Public Domain)
+  'kannapolis-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Kannapolis%2C_NC_welcome_sign.JPG/1280px-Kannapolis%2C_NC_welcome_sign.JPG',
+
+  // Gastonia, NC - Gaston County Courthouse (CC BY-SA 4.0)
+  'gastonia-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg/1280px-Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg',
+
+  // Matthews, NC - Downtown Matthews (fallback to Charlotte area)
+  'matthews-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg/1280px-Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg',
+
+  // Mint Hill, NC - Rural Mecklenburg County area
+  'mint-hill-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg/1280px-Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg',
+
+  // Pineville, NC - Charlotte southern suburb
+  'pineville-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg/1280px-Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg',
+
+  // Monroe, NC - Union County Courthouse (CC BY 2.0)
+  'monroe-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg/1280px-Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg',
+
+  // Indian Trail, NC - Union County area
+  'indian-trail-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg/1280px-Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg',
+
+  // Waxhaw, NC - Historic downtown
+  'waxhaw-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg/1280px-Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg',
+
+  // Stallings, NC - Union County area
+  'stallings-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg/1280px-Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg',
+
+  // Weddington, NC - Union County area
+  'weddington-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg/1280px-Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg',
+
+  // Marvin, NC - Union County area
+  'marvin-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg/1280px-Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg',
+
+  // Wesley Chapel, NC - Union County area
+  'wesley-chapel-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg/1280px-Union_County_Courthouse%2C_Monroe%2C_NC_September_2017.jpg',
+
+  // Harrisburg, NC - Cabarrus County
+  'harrisburg-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hotel_Concord_Cabarrus_County_NC.jpg/1280px-Hotel_Concord_Cabarrus_County_NC.jpg',
+
+  // Mt Holly, NC - Downtown Mount Holly (CC BY-SA 4.0)
+  'mt-holly-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Mount_Holly_NC_Downtown.jpg/1280px-Mount_Holly_NC_Downtown.jpg',
+
+  // Belmont, NC - Gaston County town
+  'belmont-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg/1280px-Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg',
+
+  // Kings Mountain, NC - Cleveland County
+  'kings-mountain-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg/1280px-Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg',
+
+  // Denver, NC - Lincoln County Lake Norman
+  'denver-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg/1280px-Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg',
+
+  // Lincolnton, NC - Lincoln County seat
+  'lincolnton-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg/1280px-Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg',
+
+  // Statesville, NC - Iredell County (CC BY-SA 3.0)
+  'statesville-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Statesville%2C_North_Carolina_-_City_Hall.JPG/1280px-Statesville%2C_North_Carolina_-_City_Hall.JPG',
+
+  // Hickory, NC - Union Square downtown (CC BY-SA 3.0)
+  'hickory-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/US-NC-Hickory_Union_Square.JPG/1024px-US-NC-Hickory_Union_Square.JPG',
+
+  // Newton, NC - Catawba County
+  'newton-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/US-NC-Hickory_Union_Square.JPG/1024px-US-NC-Hickory_Union_Square.JPG',
+
+  // Albemarle, NC - Stanly County
+  'albemarle-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg/1280px-Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg',
+
+  // Shelby, NC - Cleveland County
+  'shelby-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg/1280px-Historic_2nd_Gaston_County_Courthouse_-_Gastonia%2C_NC.jpg',
+
+  // Rock Hill, SC - Downtown (CC BY-SA 4.0)
+  'rock-hill-sc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Downtown_Rock_Hill%2C_SC.jpg/1280px-Downtown_Rock_Hill%2C_SC.jpg',
+
+  // Fort Mill, SC - York County
+  'fort-mill-sc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Downtown_Rock_Hill%2C_SC.jpg/1280px-Downtown_Rock_Hill%2C_SC.jpg',
+
+  // Tega Cay, SC - Lake Wylie area
+  'tega-cay-sc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Downtown_Rock_Hill%2C_SC.jpg/1280px-Downtown_Rock_Hill%2C_SC.jpg',
+
+  // Indian Land, SC - Lancaster County
+  'indian-land-sc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Downtown_Rock_Hill%2C_SC.jpg/1280px-Downtown_Rock_Hill%2C_SC.jpg',
+
+  // Lancaster, SC - Lancaster County seat
+  'lancaster-sc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Downtown_Rock_Hill%2C_SC.jpg/1280px-Downtown_Rock_Hill%2C_SC.jpg',
+};
+
 // Location-specific hero images (using full slugs to match URL paths)
+// Uses Wikimedia Commons images for city representation, CMS images as fallback
 export const LOCATION_HERO_IMAGES: Record<string, string> = {
-  'charlotte-nc': IMAGES.realProjects.project1,
-  'huntersville-nc': IMAGES.cities.huntersville,
-  'cornelius-nc': IMAGES.cities.cornelius,
-  'davidson-nc': IMAGES.cities.davidson,
-  'mooresville-nc': IMAGES.realProjects.project3,
-  'concord-nc': IMAGES.realProjects.certainteed1,
-  'kannapolis-nc': IMAGES.realProjects.project8,
-  'gastonia-nc': IMAGES.realProjects.project4,
-  'matthews-nc': IMAGES.realProjects.project5,
-  'mint-hill-nc': IMAGES.realProjects.project6,
-  'pineville-nc': IMAGES.realProjects.project7,
-  'monroe-nc': IMAGES.realProjects.pmi1,
-  'harrisburg-nc': IMAGES.realProjects.project9,
-  'lake-norman': IMAGES.realProjects.drone1,
-  'denver-nc': IMAGES.realProjects.project10,
-  'mt-holly-nc': IMAGES.realProjects.project11,
-  'default': IMAGES.realProjects.project1,
+  // Primary Charlotte metro - use Wikimedia city images
+  'charlotte-nc': WIKIMEDIA_CITY_IMAGES['charlotte-nc'],
+  'huntersville-nc': WIKIMEDIA_CITY_IMAGES['huntersville-nc'],
+  'cornelius-nc': WIKIMEDIA_CITY_IMAGES['cornelius-nc'],
+  'davidson-nc': WIKIMEDIA_CITY_IMAGES['davidson-nc'],
+  'mooresville-nc': WIKIMEDIA_CITY_IMAGES['mooresville-nc'],
+  'matthews-nc': WIKIMEDIA_CITY_IMAGES['matthews-nc'],
+  'mint-hill-nc': WIKIMEDIA_CITY_IMAGES['mint-hill-nc'],
+  'pineville-nc': WIKIMEDIA_CITY_IMAGES['pineville-nc'],
+
+  // Cabarrus County
+  'concord-nc': WIKIMEDIA_CITY_IMAGES['concord-nc'],
+  'kannapolis-nc': WIKIMEDIA_CITY_IMAGES['kannapolis-nc'],
+  'harrisburg-nc': WIKIMEDIA_CITY_IMAGES['harrisburg-nc'],
+
+  // Union County
+  'monroe-nc': WIKIMEDIA_CITY_IMAGES['monroe-nc'],
+  'indian-trail-nc': WIKIMEDIA_CITY_IMAGES['indian-trail-nc'],
+  'waxhaw-nc': WIKIMEDIA_CITY_IMAGES['waxhaw-nc'],
+  'stallings-nc': WIKIMEDIA_CITY_IMAGES['stallings-nc'],
+  'weddington-nc': WIKIMEDIA_CITY_IMAGES['weddington-nc'],
+  'marvin-nc': WIKIMEDIA_CITY_IMAGES['marvin-nc'],
+  'wesley-chapel-nc': WIKIMEDIA_CITY_IMAGES['wesley-chapel-nc'],
+
+  // Gaston County
+  'gastonia-nc': WIKIMEDIA_CITY_IMAGES['gastonia-nc'],
+  'mt-holly-nc': WIKIMEDIA_CITY_IMAGES['mt-holly-nc'],
+  'belmont-nc': WIKIMEDIA_CITY_IMAGES['belmont-nc'],
+  'kings-mountain-nc': WIKIMEDIA_CITY_IMAGES['kings-mountain-nc'],
+
+  // Lincoln County / Lake Norman area
+  'lake-norman': WIKIMEDIA_CITY_IMAGES['lake-norman'],
+  'denver-nc': WIKIMEDIA_CITY_IMAGES['denver-nc'],
+  'lincolnton-nc': WIKIMEDIA_CITY_IMAGES['lincolnton-nc'],
+
+  // Iredell County
+  'statesville-nc': WIKIMEDIA_CITY_IMAGES['statesville-nc'],
+
+  // Catawba County
+  'hickory-nc': WIKIMEDIA_CITY_IMAGES['hickory-nc'],
+  'newton-nc': WIKIMEDIA_CITY_IMAGES['newton-nc'],
+
+  // Other NC counties
+  'albemarle-nc': WIKIMEDIA_CITY_IMAGES['albemarle-nc'],
+  'shelby-nc': WIKIMEDIA_CITY_IMAGES['shelby-nc'],
+
+  // South Carolina - York County
+  'rock-hill-sc': WIKIMEDIA_CITY_IMAGES['rock-hill-sc'],
+  'fort-mill-sc': WIKIMEDIA_CITY_IMAGES['fort-mill-sc'],
+  'tega-cay-sc': WIKIMEDIA_CITY_IMAGES['tega-cay-sc'],
+
+  // South Carolina - Lancaster County
+  'indian-land-sc': WIKIMEDIA_CITY_IMAGES['indian-land-sc'],
+  'lancaster-sc': WIKIMEDIA_CITY_IMAGES['lancaster-sc'],
+
+  // Default fallback
+  'default': WIKIMEDIA_CITY_IMAGES['charlotte-nc'],
 };
