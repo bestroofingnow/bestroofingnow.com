@@ -182,20 +182,30 @@ export function Header() {
               </Button>
             </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 rounded-lg hover:bg-light"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMobileMenuOpen}
-              aria-controls="mobile-menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" aria-hidden="true" />
-              ) : (
-                <Menu className="w-6 h-6" aria-hidden="true" />
-              )}
-            </button>
+            {/* Mobile Phone & Menu */}
+            <div className="lg:hidden flex items-center gap-2">
+              <a
+                href={`tel:${SITE_CONFIG.phoneClean}`}
+                className="flex items-center gap-1.5 px-3 py-2 bg-primary text-white rounded-lg font-semibold text-sm"
+                aria-label={`Call ${SITE_CONFIG.phone}`}
+              >
+                <Phone className="w-4 h-4" aria-hidden="true" />
+                <span className="hidden sm:inline">Call Now</span>
+              </a>
+              <button
+                className="p-2 rounded-lg hover:bg-light"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-menu"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" aria-hidden="true" />
+                ) : (
+                  <Menu className="w-6 h-6" aria-hidden="true" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
 

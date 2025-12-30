@@ -26,9 +26,40 @@ export default function ContactPage() {
     service: '',
     message: '',
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [showBookingWidget, setShowBookingWidget] = useState(false);
   const bookingRef = useRef<HTMLDivElement>(null);
+
+  // Validation functions
+  const validateField = (name: string, value: string): string => {
+    switch (name) {
+      case 'name':
+        if (!value.trim()) return 'Name is required';
+        if (value.trim().length < 2) return 'Name must be at least 2 characters';
+        return '';
+      case 'phone':
+        if (!value.trim()) return 'Phone number is required';
+        const phoneDigits = value.replace(/\D/g, '');
+        if (phoneDigits.length < 10) return 'Please enter a valid 10-digit phone number';
+        return '';
+      case 'email':
+        if (!value.trim()) return 'Email is required';
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(value)) return 'Please enter a valid email address';
+        return '';
+      default:
+        return '';
+    }
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setTouched(prev => ({ ...prev, [name]: true }));
+    const error = validateField(name, value);
+    setErrors(prev => ({ ...prev, [name]: error }));
+  };
 
   // Lazy load booking widget when it comes into view
   useEffect(() => {
@@ -51,6 +82,26 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validate all required fields
+    const requiredFields = ['name', 'phone', 'email'];
+    const newErrors: Record<string, string> = {};
+    const newTouched: Record<string, boolean> = {};
+
+    requiredFields.forEach(field => {
+      newTouched[field] = true;
+      const error = validateField(field, formState[field as keyof typeof formState]);
+      if (error) newErrors[field] = error;
+    });
+
+    setTouched(prev => ({ ...prev, ...newTouched }));
+    setErrors(newErrors);
+
+    // If there are errors, don't submit
+    if (Object.keys(newErrors).length > 0) {
+      return;
+    }
+
     // Form submission logic would go here
     setIsSubmitted(true);
   };
@@ -58,7 +109,14 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+
+    // Clear error when user starts typing (if field was touched)
+    if (touched[name] && errors[name]) {
+      const error = validateField(name, value);
+      setErrors(prev => ({ ...prev, [name]: error }));
+    }
   };
 
   return (
@@ -121,8 +179,8 @@ export default function ContactPage() {
                     Thank You!
                   </h3>
                   <p className="text-green-700 mb-4">
-                    Your request has been received. Our team will contact you within 24 hours
-                    to schedule your free roof inspection.
+                    Your request has been received. Our team will contact you within 2 hours
+                    during business hours to schedule your free roof inspection.
                   </p>
                   <p className="text-green-600 text-sm">
                     Need immediate assistance? Call us at{' '}
@@ -145,9 +203,21 @@ export default function ContactPage() {
                         required
                         value={formState.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                        onBlur={handleBlur}
+                        className={`w-full px-4 py-3 rounded-lg border outline-none transition ${
+                          touched.name && errors.name
+                            ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20'
+                            : 'border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20'
+                        }`}
                         placeholder="John Smith"
+                        aria-invalid={touched.name && !!errors.name}
+                        aria-describedby={errors.name ? 'name-error' : undefined}
                       />
+                      {touched.name && errors.name && (
+                        <p id="name-error" className="mt-1 text-sm text-red-600" role="alert">
+                          {errors.name}
+                        </p>
+                      )}
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-dark mb-2">
@@ -162,9 +232,21 @@ export default function ContactPage() {
                         autoComplete="tel"
                         value={formState.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                        onBlur={handleBlur}
+                        className={`w-full px-4 py-3 rounded-lg border outline-none transition ${
+                          touched.phone && errors.phone
+                            ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20'
+                            : 'border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20'
+                        }`}
                         placeholder="(704) 555-1234"
+                        aria-invalid={touched.phone && !!errors.phone}
+                        aria-describedby={errors.phone ? 'phone-error' : undefined}
                       />
+                      {touched.phone && errors.phone && (
+                        <p id="phone-error" className="mt-1 text-sm text-red-600" role="alert">
+                          {errors.phone}
+                        </p>
+                      )}
                     </div>
                   </div>
 
@@ -181,20 +263,31 @@ export default function ContactPage() {
                       autoComplete="email"
                       value={formState.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                      onBlur={handleBlur}
+                      className={`w-full px-4 py-3 rounded-lg border outline-none transition ${
+                        touched.email && errors.email
+                          ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20'
+                          : 'border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20'
+                      }`}
                       placeholder="john@example.com"
+                      aria-invalid={touched.email && !!errors.email}
+                      aria-describedby={errors.email ? 'email-error' : undefined}
                     />
+                    {touched.email && errors.email && (
+                      <p id="email-error" className="mt-1 text-sm text-red-600" role="alert">
+                        {errors.email}
+                      </p>
+                    )}
                   </div>
 
                   <div>
                     <label htmlFor="address" className="block text-sm font-medium text-dark mb-2">
-                      Property Address *
+                      Property Address <span className="text-gray font-normal">(optional)</span>
                     </label>
                     <input
                       type="text"
                       id="address"
                       name="address"
-                      required
                       value={formState.address}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
