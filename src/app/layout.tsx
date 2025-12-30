@@ -108,13 +108,6 @@ export default function RootLayout({
         {/* CRITICAL: Preconnect to CMS for hero images - most important for LCP */}
         <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
-        {/* Preload hero image for faster LCP */}
-        <link
-          rel="preload"
-          as="image"
-          href="https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png"
-          fetchPriority="high"
-        />
         {/* Secondary preconnects */}
         <link rel="preconnect" href="https://bestroofingnow.com" />
         <link rel="dns-prefetch" href="https://bestroofingnow.com" />
@@ -122,6 +115,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://psai.azureedge.net" />
+        {/* Preconnect to PSAI CDN for faster widget loading */}
+        <link rel="preconnect" href="https://psai.azureedge.net" crossOrigin="anonymous" />
         <LocalBusinessSchema />
         <WebSiteSchema />
         <HowToGetRoofEstimateSchema />
@@ -150,20 +145,20 @@ export default function RootLayout({
           strategy="lazyOnload"
         />
 
-        {/* PSAI Roofing Calculator - Exit Popup (deferred for better FCP) */}
+        {/* PSAI Roofing Calculator - Exit Popup (delayed 5s for better performance) */}
         <Script
           id="1843d7d2-afe1-4ef7-be41-de6ebaab6e09"
           strategy="lazyOnload"
         >
-          {`var scr = document.createElement('script');scr.src='https://psai.azureedge.net/1843d7d2-afe1-4ef7-be41-de6ebaab6e09.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`}
+          {`setTimeout(function(){var scr=document.createElement('script');scr.src='https://psai.azureedge.net/1843d7d2-afe1-4ef7-be41-de6ebaab6e09.js';document.body.appendChild(scr);},5000);`}
         </Script>
 
-        {/* PSAI Weather Widget - Bottom Left (deferred for better FCP) */}
+        {/* PSAI Weather Widget - Bottom Left (delayed 5s for better performance) */}
         <Script
           id="63d40938-3faa-48b2-9bb3-7fd5cd85ee8b"
           strategy="lazyOnload"
         >
-          {`var scr = document.createElement('script');scr.src='https://psai.azureedge.net/63d40938-3faa-48b2-9bb3-7fd5cd85ee8b.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`}
+          {`setTimeout(function(){var scr=document.createElement('script');scr.src='https://psai.azureedge.net/63d40938-3faa-48b2-9bb3-7fd5cd85ee8b.js';document.body.appendChild(scr);},5000);`}
         </Script>
       </body>
     </html>
