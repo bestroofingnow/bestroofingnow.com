@@ -8,7 +8,7 @@ import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { LocationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
-import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
+import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs } from '@/lib/faqs';
 
@@ -661,10 +661,12 @@ export default async function LocationPage({ params }: PageProps) {
                 {(LOCATION_HERO_IMAGES[city] || '').endsWith('.mp4') ? (
                   <video
                     src={LOCATION_HERO_IMAGES[city]}
+                    poster={IMAGES.hero.roofTeam}
                     autoPlay
                     loop
                     muted
                     playsInline
+                    preload="none"
                     className="object-cover w-full"
                     style={{ width: '100%', height: 'auto', maxHeight: '400px' }}
                   />
@@ -734,10 +736,12 @@ export default async function LocationPage({ params }: PageProps) {
               {(LOCATION_HERO_IMAGES[city] || '').endsWith('.mp4') ? (
                 <video
                   src={LOCATION_HERO_IMAGES[city]}
+                  poster={IMAGES.hero.roofTeam}
                   autoPlay
                   loop
                   muted
                   playsInline
+                  preload="none"
                   className="object-cover hover:scale-105 transition-transform duration-300 w-full h-full absolute inset-0"
                 />
               ) : (
@@ -856,9 +860,10 @@ export default async function LocationPage({ params }: PageProps) {
               src="https://projectmapit.com/best-roofing-now-llc/map?map=6929921876fb8fa56e295536"
               width="100%"
               height="600"
-              frameBorder="0"
+              style={{ border: 0 }}
               title={`Roofing Projects Near ${location.city}`}
               className="w-full"
+              loading="lazy"
             />
           </div>
         </div>

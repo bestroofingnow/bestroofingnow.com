@@ -105,15 +105,22 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <head>
         <meta name="theme-color" content="#1A43AA" />
-        {/* Preconnect to critical origins - image host is most important for LCP */}
+        {/* CRITICAL: Preconnect to CMS for hero images - most important for LCP */}
+        <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
+        {/* Preload hero image for faster LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png"
+          fetchPriority="high"
+        />
+        {/* Secondary preconnects */}
         <link rel="preconnect" href="https://bestroofingnow.com" />
         <link rel="dns-prefetch" href="https://bestroofingnow.com" />
-        {/* Chat widget loads on lazyOnload, but preconnect helps when it does */}
-        <link rel="preconnect" href="https://widgets.leadconnectorhq.com" />
+        {/* Non-critical third-party - dns-prefetch only */}
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
-        {/* PSAI widgets preconnect for faster loading */}
-        <link rel="preconnect" href="https://psai.azureedge.net" />
         <link rel="dns-prefetch" href="https://psai.azureedge.net" />
         <LocalBusinessSchema />
         <WebSiteSchema />
@@ -143,18 +150,18 @@ export default function RootLayout({
           strategy="lazyOnload"
         />
 
-        {/* PSAI Roofing Calculator - Exit Popup */}
+        {/* PSAI Roofing Calculator - Exit Popup (deferred for better FCP) */}
         <Script
           id="1843d7d2-afe1-4ef7-be41-de6ebaab6e09"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         >
           {`var scr = document.createElement('script');scr.src='https://psai.azureedge.net/1843d7d2-afe1-4ef7-be41-de6ebaab6e09.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`}
         </Script>
 
-        {/* PSAI Weather Widget - Bottom Left */}
+        {/* PSAI Weather Widget - Bottom Left (deferred for better FCP) */}
         <Script
           id="63d40938-3faa-48b2-9bb3-7fd5cd85ee8b"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         >
           {`var scr = document.createElement('script');scr.src='https://psai.azureedge.net/63d40938-3faa-48b2-9bb3-7fd5cd85ee8b.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`}
         </Script>
