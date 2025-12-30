@@ -658,13 +658,25 @@ export default async function LocationPage({ params }: PageProps) {
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
-                  alt={`Best Roofing Now serving ${location.city}`}
-                  width={600}
-                  height={400}
-                  className="object-cover w-full"
-                />
+                {(LOCATION_HERO_IMAGES[city] || '').endsWith('.mp4') ? (
+                  <video
+                    src={LOCATION_HERO_IMAGES[city]}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover w-full"
+                    style={{ width: '100%', height: 'auto', maxHeight: '400px' }}
+                  />
+                ) : (
+                  <Image
+                    src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
+                    alt={`Best Roofing Now serving ${location.city}`}
+                    width={600}
+                    height={400}
+                    className="object-cover w-full"
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -719,12 +731,23 @@ export default async function LocationPage({ params }: PageProps) {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
-                alt={`Roofing crew working in ${location.city}`}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
+              {(LOCATION_HERO_IMAGES[city] || '').endsWith('.mp4') ? (
+                <video
+                  src={LOCATION_HERO_IMAGES[city]}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover hover:scale-105 transition-transform duration-300 w-full h-full absolute inset-0"
+                />
+              ) : (
+                <Image
+                  src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
+                  alt={`Roofing crew working in ${location.city}`}
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
+                />
+              )}
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image

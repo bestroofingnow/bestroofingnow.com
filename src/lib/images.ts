@@ -406,8 +406,8 @@ export const SERVICE_HERO_IMAGES: Record<string, string> = {
 // Wikimedia Commons city images - free to use with attribution
 // These are representative images of each city/area from Wikimedia Commons
 export const WIKIMEDIA_CITY_IMAGES: Record<string, string> = {
-  // Charlotte, NC - Uptown Charlotte skyline aerial view (CC BY-SA 4.0)
-  'charlotte-nc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg/1280px-Uptown_Charlotte_2018_taking_by_DJI_Phantom_4_pro.jpg',
+  // Charlotte, NC - Custom video/animation
+  'charlotte-nc': 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-10.mp4',
 
   // Lake Norman - Lake Norman panorama (CC BY 3.0)
   'lake-norman': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg/1280px-Lake_Norman%2C_NC%2C_USA_-_panoramio.jpg',
