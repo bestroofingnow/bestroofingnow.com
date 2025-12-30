@@ -8,6 +8,7 @@ import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { LocationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs } from '@/lib/faqs';
@@ -684,6 +685,8 @@ export default async function LocationPage({ params }: PageProps) {
                     muted
                     playsInline
                     preload="none"
+                    // @ts-expect-error - fetchpriority is valid HTML attribute
+                    fetchpriority="low"
                     className="object-cover w-full"
                     style={{ width: '100%', height: 'auto', maxHeight: '400px' }}
                     aria-label={`Best Roofing Now team working in ${location.city}`}
@@ -694,6 +697,7 @@ export default async function LocationPage({ params }: PageProps) {
                     alt={`Best Roofing Now serving ${location.city}`}
                     width={600}
                     height={400}
+                    priority
                     className="object-cover w-full"
                   />
                 )}
@@ -760,6 +764,8 @@ export default async function LocationPage({ params }: PageProps) {
                   muted
                   playsInline
                   preload="none"
+                  // @ts-expect-error - fetchpriority is valid HTML attribute
+                  fetchpriority="low"
                   className="object-cover hover:scale-105 transition-transform duration-300 w-full h-full absolute inset-0"
                   aria-label={`Roofing project video in ${location.city}`}
                 />
@@ -768,6 +774,7 @@ export default async function LocationPage({ params }: PageProps) {
                   src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
                   alt={`Roofing crew working in ${location.city}`}
                   fill
+                  loading="lazy"
                   className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               )}
@@ -777,6 +784,7 @@ export default async function LocationPage({ params }: PageProps) {
                 src={IMAGES.houses.house1}
                 alt={`Residential roofing in ${location.city}`}
                 fill
+                loading="lazy"
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -785,6 +793,7 @@ export default async function LocationPage({ params }: PageProps) {
                 src={IMAGES.projects.work1}
                 alt={`Roofing project in ${location.city}`}
                 fill
+                loading="lazy"
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -793,6 +802,7 @@ export default async function LocationPage({ params }: PageProps) {
                 src={IMAGES.houses.modern1}
                 alt={`New roof installation in ${location.city}`}
                 fill
+                loading="lazy"
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -863,7 +873,7 @@ export default async function LocationPage({ params }: PageProps) {
         showAll={true}
       />
 
-      {/* Project Map - Uses ProjectMapIt embed */}
+      {/* Project Map - Uses ProjectMapIt embed with lazy loading */}
       {locationMapIds[city] && (
         <section className="section">
           <div className="container">
@@ -876,15 +886,7 @@ export default async function LocationPage({ params }: PageProps) {
               </p>
             </div>
             <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-              <iframe
-                src={`https://projectmapit.com/best-roofing-now-llc/map?map=${locationMapIds[city]}`}
-                width="100%"
-                height="600"
-                style={{ border: 0 }}
-                title={`Roofing Projects Near ${location.city}`}
-                className="w-full"
-                loading="lazy"
-              />
+              <LazyProjectMap mapId={locationMapIds[city]} cityName={location.city} />
             </div>
           </div>
         </section>

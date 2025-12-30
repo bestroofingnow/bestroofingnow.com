@@ -115,6 +115,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://psai.azureedge.net" />
+        {/* ProjectMapIt for location pages */}
+        <link rel="dns-prefetch" href="https://projectmapit.com" />
         {/* Preconnect to PSAI CDN for faster widget loading */}
         <link rel="preconnect" href="https://psai.azureedge.net" crossOrigin="anonymous" />
         <LocalBusinessSchema />
