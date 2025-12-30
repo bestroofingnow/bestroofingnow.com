@@ -513,63 +513,65 @@ export const WIKIMEDIA_CITY_IMAGES: Record<string, string> = {
 };
 
 // Location-specific hero images (using full slugs to match URL paths)
-// Uses Wikimedia Commons images for city representation, CMS images as fallback
+// Uses CMS-hosted images for reliable loading
 export const LOCATION_HERO_IMAGES: Record<string, string> = {
-  // Primary Charlotte metro - use Wikimedia city images
-  'charlotte-nc': WIKIMEDIA_CITY_IMAGES['charlotte-nc'],
-  'huntersville-nc': WIKIMEDIA_CITY_IMAGES['huntersville-nc'],
-  'cornelius-nc': WIKIMEDIA_CITY_IMAGES['cornelius-nc'],
-  'davidson-nc': WIKIMEDIA_CITY_IMAGES['davidson-nc'],
-  'mooresville-nc': WIKIMEDIA_CITY_IMAGES['mooresville-nc'],
-  'matthews-nc': WIKIMEDIA_CITY_IMAGES['matthews-nc'],
-  'mint-hill-nc': WIKIMEDIA_CITY_IMAGES['mint-hill-nc'],
-  'pineville-nc': WIKIMEDIA_CITY_IMAGES['pineville-nc'],
+  // Charlotte - custom video
+  'charlotte-nc': 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-10.mp4',
+
+  // Primary Charlotte metro - use CMS hero images
+  'huntersville-nc': IMAGES.hero.hero1,
+  'cornelius-nc': IMAGES.hero.hero2,
+  'davidson-nc': IMAGES.hero.hero3,
+  'mooresville-nc': IMAGES.hero.hero4,
+  'matthews-nc': IMAGES.hero.hero5,
+  'mint-hill-nc': IMAGES.hero.hero6,
+  'pineville-nc': IMAGES.hero.hero7,
 
   // Cabarrus County
-  'concord-nc': WIKIMEDIA_CITY_IMAGES['concord-nc'],
-  'kannapolis-nc': WIKIMEDIA_CITY_IMAGES['kannapolis-nc'],
-  'harrisburg-nc': WIKIMEDIA_CITY_IMAGES['harrisburg-nc'],
+  'concord-nc': IMAGES.hero.hero8,
+  'kannapolis-nc': IMAGES.hero.hero9,
+  'harrisburg-nc': IMAGES.hero.hero10,
 
   // Union County
-  'monroe-nc': WIKIMEDIA_CITY_IMAGES['monroe-nc'],
-  'indian-trail-nc': WIKIMEDIA_CITY_IMAGES['indian-trail-nc'],
-  'waxhaw-nc': WIKIMEDIA_CITY_IMAGES['waxhaw-nc'],
-  'stallings-nc': WIKIMEDIA_CITY_IMAGES['stallings-nc'],
-  'weddington-nc': WIKIMEDIA_CITY_IMAGES['weddington-nc'],
-  'marvin-nc': WIKIMEDIA_CITY_IMAGES['marvin-nc'],
-  'wesley-chapel-nc': WIKIMEDIA_CITY_IMAGES['wesley-chapel-nc'],
+  'monroe-nc': IMAGES.hero.hero13,
+  'indian-trail-nc': IMAGES.hero.hero14,
+  'waxhaw-nc': IMAGES.hero.hero15,
+  'stallings-nc': IMAGES.hero.hero16,
+  'weddington-nc': IMAGES.hero.hero17,
+  'marvin-nc': IMAGES.hero.hero18,
+  'wesley-chapel-nc': IMAGES.hero.hero19,
 
   // Gaston County
-  'gastonia-nc': WIKIMEDIA_CITY_IMAGES['gastonia-nc'],
-  'mt-holly-nc': WIKIMEDIA_CITY_IMAGES['mt-holly-nc'],
-  'belmont-nc': WIKIMEDIA_CITY_IMAGES['belmont-nc'],
-  'kings-mountain-nc': WIKIMEDIA_CITY_IMAGES['kings-mountain-nc'],
+  'gastonia-nc': IMAGES.hero.hero20,
+  'mt-holly-nc': IMAGES.hero.hero21,
+  'belmont-nc': IMAGES.hero.hero22,
+  'kings-mountain-nc': IMAGES.hero.hero23,
 
   // Lincoln County / Lake Norman area
-  'lake-norman': WIKIMEDIA_CITY_IMAGES['lake-norman'],
-  'denver-nc': WIKIMEDIA_CITY_IMAGES['denver-nc'],
-  'lincolnton-nc': WIKIMEDIA_CITY_IMAGES['lincolnton-nc'],
+  'lake-norman': IMAGES.hero.hero24,
+  'denver-nc': IMAGES.hero.hero25,
+  'lincolnton-nc': IMAGES.hero.hero26,
 
   // Iredell County
-  'statesville-nc': WIKIMEDIA_CITY_IMAGES['statesville-nc'],
+  'statesville-nc': IMAGES.houses.house1,
 
   // Catawba County
-  'hickory-nc': WIKIMEDIA_CITY_IMAGES['hickory-nc'],
-  'newton-nc': WIKIMEDIA_CITY_IMAGES['newton-nc'],
+  'hickory-nc': IMAGES.houses.house2,
+  'newton-nc': IMAGES.houses.house3,
 
   // Other NC counties
-  'albemarle-nc': WIKIMEDIA_CITY_IMAGES['albemarle-nc'],
-  'shelby-nc': WIKIMEDIA_CITY_IMAGES['shelby-nc'],
+  'albemarle-nc': IMAGES.houses.house4,
+  'shelby-nc': IMAGES.houses.house5,
 
   // South Carolina - York County
-  'rock-hill-sc': WIKIMEDIA_CITY_IMAGES['rock-hill-sc'],
-  'fort-mill-sc': WIKIMEDIA_CITY_IMAGES['fort-mill-sc'],
-  'tega-cay-sc': WIKIMEDIA_CITY_IMAGES['tega-cay-sc'],
+  'rock-hill-sc': IMAGES.houses.modern1,
+  'fort-mill-sc': IMAGES.houses.modern2,
+  'tega-cay-sc': IMAGES.hero.hero1,
 
   // South Carolina - Lancaster County
-  'indian-land-sc': WIKIMEDIA_CITY_IMAGES['indian-land-sc'],
-  'lancaster-sc': WIKIMEDIA_CITY_IMAGES['lancaster-sc'],
+  'indian-land-sc': IMAGES.hero.hero2,
+  'lancaster-sc': IMAGES.hero.hero3,
 
   // Default fallback
-  'default': WIKIMEDIA_CITY_IMAGES['charlotte-nc'],
+  'default': IMAGES.houses.house1,
 };
