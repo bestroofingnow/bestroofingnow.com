@@ -302,7 +302,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${service.title} Charlotte NC | ${SITE_CONFIG.name}`,
+    title: `${service.title} Charlotte NC`,
     description: `${service.description} Serving Charlotte and surrounding areas. Free estimates, quality workmanship, and satisfaction guaranteed.`,
     keywords: service.keywords,
     alternates: {
