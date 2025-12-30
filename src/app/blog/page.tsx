@@ -8,6 +8,9 @@ import { IMAGES } from '@/lib/images';
 import { getPosts } from '@/lib/wordpress';
 import BlogContent from './BlogContent';
 
+// Low-quality blur placeholder for hero image
+const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
+
 export const metadata: Metadata = {
   title: 'Roofing Blog | Tips & Guides from Charlotte Roofers',
   description:
@@ -87,6 +90,8 @@ export default async function BlogPage() {
             fill
             className="object-cover opacity-20"
             priority
+            placeholder="blur"
+            blurDataURL={BLUR_DATA_URL}
           />
         </div>
         <div className="container relative z-10">

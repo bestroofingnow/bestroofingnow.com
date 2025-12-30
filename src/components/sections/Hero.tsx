@@ -3,6 +3,9 @@ import { Phone, Star, Shield, Clock, Award } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 
+// Low-quality blur placeholder for hero background images
+const HERO_BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIBAAAgIBBAMBAAAAAAAAAAAAAQIDBAAFERIhBhMxQf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECAxEh/9oADAMBEQEEPwDKtLo6uo6nBTjuSViZVDOqFiATsT1neSOr4zGpxSqCKyIwf//Z';
+
 const trustSignals = [
   { icon: Star, text: '5.0 Google Rating' },
   { icon: Shield, text: 'BBB A+ Accredited' },
@@ -54,6 +57,8 @@ export function Hero({
             fetchPriority="high"
             sizes="100vw"
             quality={75}
+            placeholder="blur"
+            blurDataURL={HERO_BLUR_DATA_URL}
           />
         </div>
       )}

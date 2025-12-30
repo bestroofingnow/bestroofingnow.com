@@ -5,6 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, ArrowRight, BookOpen, Search, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
+// Low-quality blur placeholder for blog images
+const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
+
 interface Post {
   id: number;
   slug: string;
@@ -190,6 +193,8 @@ export default function BlogContent({ initialPosts }: BlogContentProps) {
                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             itemProp="image"
+                            placeholder="blur"
+                            blurDataURL={BLUR_DATA_URL}
                           />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center">

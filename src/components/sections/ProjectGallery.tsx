@@ -4,6 +4,9 @@ import Image from 'next/image';
 import { FadeInUp, StaggerItem } from '@/components/ui/Animations';
 import { IMAGES } from '@/lib/images';
 
+// Low-quality blur placeholder for images (generic blue-gray gradient)
+const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
+
 interface ProjectGalleryProps {
   title?: string;
   subtitle?: string;
@@ -42,6 +45,8 @@ export function ProjectGallery({
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   sizes="(max-width: 768px) 50vw, 33vw"
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA_URL}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-semibold">View Project</span>

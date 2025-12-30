@@ -8,6 +8,9 @@ import { SITE_CONFIG, SERVICES } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getPostBySlug, getPosts } from '@/lib/wordpress';
 
+// Low-quality blur placeholder for blog post images
+const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
+
 interface BlogPostPageProps {
   params: Promise<{
     slug: string;
@@ -119,6 +122,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             fill
             className="object-cover opacity-20"
             priority
+            placeholder="blur"
+            blurDataURL={BLUR_DATA_URL}
           />
         </div>
         <div className="container relative z-10">
@@ -162,6 +167,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     fill
                     className="object-cover"
                     priority
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URL}
                   />
                 </div>
               )}

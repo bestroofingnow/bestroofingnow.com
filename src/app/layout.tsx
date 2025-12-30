@@ -139,6 +139,24 @@ export default function RootLayout({
           data-widget-id="692def99cf45951b90d25076"
           strategy="lazyOnload"
         />
+
+        {/* PSAI Roofing Calculator - Exit Popup */}
+        <Script
+          id="psai-roofing-calculator"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `var scr = document.createElement('script');scr.src='https://psai.azureedge.net/1843d7d2-afe1-4ef7-be41-de6ebaab6e09.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`
+          }}
+        />
+
+        {/* PSAI Weather Widget */}
+        <Script
+          id="psai-weather-widget"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `var scr = document.createElement('script');scr.src='https://psai.azureedge.net/63d40938-3faa-48b2-9bb3-7fd5cd85ee8b.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`
+          }}
+        />
       </body>
     </html>
   );
