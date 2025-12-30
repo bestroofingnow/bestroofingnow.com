@@ -57,20 +57,22 @@ export function CTASection({
 // Sticky Mobile CTA
 export function StickyCTA() {
   return (
-    <div className="sticky-cta">
+    <div className="sticky-cta" role="navigation" aria-label="Quick contact options">
       <a
         href={`tel:${SITE_CONFIG.phoneClean}`}
         className="flex-1 flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg font-semibold"
+        aria-label={`Call Best Roofing Now at ${SITE_CONFIG.phone}`}
       >
-        <Phone className="w-5 h-5" />
+        <Phone className="w-5 h-5" aria-hidden="true" />
         Call Now
       </a>
       <a
         href="/contact"
         className="flex-1 flex items-center justify-center gap-2 bg-accent text-white py-3 rounded-lg font-semibold"
+        aria-label="Get a free roofing quote"
       >
         Free Quote
-        <ArrowRight className="w-5 h-5" />
+        <ArrowRight className="w-5 h-5" aria-hidden="true" />
       </a>
     </div>
   );

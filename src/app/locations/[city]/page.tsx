@@ -686,6 +686,7 @@ export default async function LocationPage({ params }: PageProps) {
                     preload="none"
                     className="object-cover w-full"
                     style={{ width: '100%', height: 'auto', maxHeight: '400px' }}
+                    aria-label={`Best Roofing Now team working in ${location.city}`}
                   />
                 ) : (
                   <Image
@@ -760,6 +761,7 @@ export default async function LocationPage({ params }: PageProps) {
                   playsInline
                   preload="none"
                   className="object-cover hover:scale-105 transition-transform duration-300 w-full h-full absolute inset-0"
+                  aria-label={`Roofing project video in ${location.city}`}
                 />
               ) : (
                 <Image
