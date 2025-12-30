@@ -112,6 +112,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
+        {/* PSAI widgets preconnect for faster loading */}
+        <link rel="preconnect" href="https://psai.azureedge.net" />
+        <link rel="dns-prefetch" href="https://psai.azureedge.net" />
         <LocalBusinessSchema />
         <WebSiteSchema />
         <HowToGetRoofEstimateSchema />
