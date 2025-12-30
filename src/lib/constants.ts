@@ -19,7 +19,7 @@ export const SITE_CONFIG = {
   hours: 'Open 24 Hours',
   founded: '2020',
   googleRating: 5.0,
-  googleReviewCount: 61,
+  googleReviewCount: 62,
   customerCount: 100,
   bbbRating: 'A+',
   social: {
@@ -34,17 +34,38 @@ export const SITE_CONFIG = {
     yelp: 'https://www.yelp.com/biz/best-roofing-now-charlotte-9',
   },
   externalProfiles: {
+    // Primary review/map platforms (from Yext)
+    googleMaps: 'https://maps.google.com/maps?cid=6441773537007702181',
+    appleMaps: 'https://maps.apple.com/place?auid=9396785621220896178',
+    bingMaps: 'https://www.bing.com/maps?ss=ypid.YNB21A0F8F3BC68D05&mkt=en-US',
     bbb: 'https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763',
+    nextdoor: 'https://nextdoor.com/pages/best-roofing-now-llc-charlotte-nc/',
+    // Manufacturer certifications
     certainteed: 'https://www.certainteed.com/profiles/bestroofingnowllc',
+    // Business directories (from Yext)
+    yellowPages: 'https://www.yellowpages.com/charlotte-nc/mip/best-roofing-now-561757375',
+    chamberOfCommerce: 'https://www.chamberofcommerce.com/business-directory/north-carolina/charlotte/roofing-contractor/2012422657-best-roofing-now',
+    mapquest: 'http://www.mapquest.com/places/-776571418/',
+    brownbook: 'https://www.brownbook.net/business/50145694/best-roofing-now/',
+    cylex: 'https://www.cylex.us.com/company/best-roofing-now-36772885.html',
+    hotfrog: 'https://www.hotfrog.com/company/1439541993828352',
+    insiderPages: 'https://www.insiderpages.com/profile/23378802',
+    merchantCircle: 'https://www.merchantcircle.com/best-roofing-now-charlotte-nc',
+    showMeLocal: 'https://www.showmelocal.com/profile.aspx?bid=24903150',
+    tupalo: 'https://www.tupalo.co/charlotte-north-carolina/best-roofing-now-mallard-creek-road-suite-300',
+    iGlobal: 'https://www.iglobal.co/united-states/charlotte/best-roofing-now',
+    goLocal247: 'https://www.golocal247.com/biz/best-roofing-now/charlotte-nc/YEXT3830788',
+    ezLocal: 'http://ezlocal.com/nc/charlotte/roofing-contractor/0916786300',
+    citySquares: 'https://citysquares.com/b/best-roofing-now-24693240',
+    // Local Charlotte profiles
     lknConnect: 'https://lknconnectcommunity.com/business-listing/best-roofing-now/',
     businessLeaders: 'https://www.businessleadersofcharlotte.com/Sys/PublicProfile/66833596',
-    nextdoor: 'https://nextdoor.com/pages/best-roofing-now-llc-charlotte-nc/',
+    lakeNormanChamber: 'https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292',
+    // Other profiles
     projectMapIt: 'https://projectmapit.com/best-roofing-now-llc',
     digitalJournal: 'https://www.digitaljournal.com/pr/news/revupmarketer/best-roofing-llc-unveils-cost-effective-1822246992.html',
     wheree: 'https://best-roofing-now-llc.wheree.com/',
     roofingDirect: 'https://www.roofingdirect.com/contractors/best-roofing-now-llc/',
-    mapquest: 'https://www.mapquest.com/us/north-carolina/best-roofing-now-428835039',
-    lakeNormanChamber: 'https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292',
   },
   geo: {
     latitude: 35.3388195,

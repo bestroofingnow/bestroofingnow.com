@@ -175,7 +175,7 @@ export default function ReviewsPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <span className="text-dark font-semibold">Read our reviews on:</span>
             <a
-              href="https://www.google.com/maps/place/Best+Roofing+Now+LLC/@35.3388195,-80.7721267,17z/data=!3m2!4b1!5s0x88541c54d38efa19:0xc5c03a44944625d1!4m6!3m5!1s0x8856a73c2a059bb9:0x5965c6e6e4db10a5!8m2!3d35.3388195!4d-80.7695464!16s%2Fg%2F11ll3jk19t?entry=ttu"
+              href={SITE_CONFIG.externalProfiles.googleMaps}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
@@ -184,7 +184,7 @@ export default function ReviewsPage() {
               <ExternalLink className="w-4 h-4" />
             </a>
             <a
-              href="https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763"
+              href={SITE_CONFIG.externalProfiles.bbb}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
@@ -193,12 +193,30 @@ export default function ReviewsPage() {
               <ExternalLink className="w-4 h-4" />
             </a>
             <a
-              href="https://www.facebook.com/bestroofingnowllc"
+              href={SITE_CONFIG.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
             >
               Facebook
+              <ExternalLink className="w-4 h-4" />
+            </a>
+            <a
+              href={SITE_CONFIG.social.yelp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
+            >
+              Yelp
+              <ExternalLink className="w-4 h-4" />
+            </a>
+            <a
+              href={SITE_CONFIG.externalProfiles.nextdoor}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
+            >
+              Nextdoor
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
@@ -324,7 +342,7 @@ export default function ReviewsPage() {
             homeowners find a roofing company they can trust.
           </p>
           <a
-            href="https://www.google.com/maps/place/Best+Roofing+Now+LLC/@35.3388195,-80.7721267,17z/data=!3m2!4b1!5s0x88541c54d38efa19:0xc5c03a44944625d1!4m6!3m5!1s0x8856a73c2a059bb9:0x5965c6e6e4db10a5!8m2!3d35.3388195!4d-80.7695464!16s%2Fg%2F11ll3jk19t?entry=ttu"
+            href={SITE_CONFIG.externalProfiles.googleMaps}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"

@@ -158,6 +158,8 @@ export default function ContactPage() {
                         id="phone"
                         name="phone"
                         required
+                        inputMode="tel"
+                        autoComplete="tel"
                         value={formState.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
@@ -175,6 +177,8 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       required
+                      inputMode="email"
+                      autoComplete="email"
                       value={formState.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
@@ -237,15 +241,20 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {/* Response Time Promise */}
+                  <p className="text-sm text-accent font-medium text-center mb-2">
+                    We respond within 2 hours during business hours
+                  </p>
+
                   <button
                     type="submit"
                     className="btn btn-primary w-full text-lg py-4"
                   >
                     <Send className="w-5 h-5" />
-                    Request Free Estimate
+                    Get My Free Quote Now
                   </button>
 
-                  <p className="text-sm text-gray text-center">
+                  <p className="text-sm text-gray text-center mt-4">
                     By submitting this form, you agree to be contacted about your roofing needs.
                     We respect your privacy and will never share your information.
                   </p>
@@ -377,9 +386,8 @@ export default function ContactPage() {
                 src="https://manage.bestroofingnow.com/widget/bookings/bestroofingnowconsultation"
                 width="100%"
                 height="700"
-                frameBorder="0"
                 title="Book an Appointment"
-                className="w-full"
+                className="w-full border-0"
                 loading="lazy"
               />
             ) : (
