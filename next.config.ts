@@ -23,6 +23,12 @@ const nextConfig: NextConfig = {
         hostname: 'bestroofingnow.com',
         pathname: '/wp-content/uploads/**',
       },
+      // Wikimedia Commons for city hero images
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        pathname: '/wikipedia/commons/**',
+      },
     ],
     // Optimize image loading for performance
     formats: ['image/avif', 'image/webp'],
