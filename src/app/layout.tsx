@@ -142,21 +142,19 @@ export default function RootLayout({
 
         {/* PSAI Roofing Calculator - Exit Popup */}
         <Script
-          id="psai-roofing-calculator"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `var scr = document.createElement('script');scr.src='https://psai.azureedge.net/1843d7d2-afe1-4ef7-be41-de6ebaab6e09.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`
-          }}
-        />
+          id="1843d7d2-afe1-4ef7-be41-de6ebaab6e09"
+          strategy="afterInteractive"
+        >
+          {`var scr = document.createElement('script');scr.src='https://psai.azureedge.net/1843d7d2-afe1-4ef7-be41-de6ebaab6e09.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`}
+        </Script>
 
-        {/* PSAI Weather Widget */}
+        {/* PSAI Weather Widget - Bottom Left */}
         <Script
-          id="psai-weather-widget"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `var scr = document.createElement('script');scr.src='https://psai.azureedge.net/63d40938-3faa-48b2-9bb3-7fd5cd85ee8b.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`
-          }}
-        />
+          id="63d40938-3faa-48b2-9bb3-7fd5cd85ee8b"
+          strategy="afterInteractive"
+        >
+          {`var scr = document.createElement('script');scr.src='https://psai.azureedge.net/63d40938-3faa-48b2-9bb3-7fd5cd85ee8b.js?v='+Date.now();document.getElementsByTagName('body')[0].appendChild(scr);`}
+        </Script>
       </body>
     </html>
   );
