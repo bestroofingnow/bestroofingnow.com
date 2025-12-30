@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, ArrowLeft, Clock, Phone, ArrowRight } from 'lucide-react';
 import { BreadcrumbSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
-import { SITE_CONFIG } from '@/lib/constants';
+import { SITE_CONFIG, SERVICES } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getPostBySlug, getPosts } from '@/lib/wordpress';
 
@@ -105,6 +105,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           datePublished: post.date,
           dateModified: post.modified,
           image: featuredImage,
+          wordCount: stripHtml(post.content.rendered).split(/\s+/).length,
+          readingTime: readTime,
         }}
       />
 
@@ -183,6 +185,31 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     </p>
                   </div>
                 </div>
+              </div>
+
+              {/* Related Services - Internal Linking for SEO */}
+              <div className="mt-8 p-6 bg-white border border-gray-200 rounded-xl">
+                <h3 className="font-bold text-dark mb-4">Our Roofing Services</h3>
+                <p className="text-gray text-sm mb-4">
+                  Need help with your roof? Explore our professional roofing services in Charlotte NC.
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {SERVICES.slice(0, 6).map((service) => (
+                    <Link
+                      key={service.slug}
+                      href={`/services/${service.slug}`}
+                      className="text-sm text-primary hover:text-accent transition-colors"
+                    >
+                      {service.title} →
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href="/services"
+                  className="inline-block mt-4 text-sm font-semibold text-primary hover:text-accent"
+                >
+                  View All Services →
+                </Link>
               </div>
             </div>
 

@@ -119,12 +119,42 @@ export function ServiceSchema({ service }: ServiceSchemaProps) {
       '@type': 'RoofingContractor',
       '@id': `${SITE_CONFIG.url}/#organization`,
       name: SITE_CONFIG.name,
+      telephone: SITE_CONFIG.phone,
     },
     areaServed: LOCATIONS.map((loc) => ({
       '@type': 'City',
       name: `${loc.city}, ${loc.state}`,
     })),
     serviceType: service.title,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'USD',
+      },
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `${service.title} Services`,
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Free Inspection',
+            description: `Free ${service.title.toLowerCase()} inspection and estimate`,
+          },
+        },
+      ],
+    },
   };
 
   return (
@@ -239,6 +269,8 @@ interface ArticleSchemaProps {
     dateModified?: string;
     author?: string;
     image?: string;
+    wordCount?: number;
+    readingTime?: number;
   };
 }
 
@@ -254,6 +286,7 @@ export function ArticleSchema({ post }: ArticleSchemaProps) {
     author: {
       '@type': 'Organization',
       name: SITE_CONFIG.name,
+      url: SITE_CONFIG.url,
     },
     publisher: {
       '@type': 'Organization',
@@ -267,6 +300,14 @@ export function ArticleSchema({ post }: ArticleSchemaProps) {
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${SITE_CONFIG.url}/blog/${post.slug}`,
+    },
+    wordCount: post.wordCount || undefined,
+    timeRequired: post.readingTime ? `PT${post.readingTime}M` : undefined,
+    inLanguage: 'en-US',
+    isAccessibleForFree: true,
+    about: {
+      '@type': 'Thing',
+      name: 'Roofing',
     },
   };
 
@@ -352,6 +393,108 @@ export function HowToGetRoofEstimateSchema() {
         text: 'Receive a transparent, no-obligation estimate for any recommended repairs or replacement.',
       },
     ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Special Offer Schema for free inspections (AEO/Conversion enhancement)
+export function FreeInspectionOfferSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Offer',
+    '@id': `${SITE_CONFIG.url}/#free-inspection-offer`,
+    name: 'Free Roof Inspection',
+    description: 'Get a comprehensive roof inspection at no cost. Our certified experts will assess your roof condition, identify any issues, and provide a detailed report with photos.',
+    url: `${SITE_CONFIG.url}/contact`,
+    price: '0',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    validFrom: '2024-01-01',
+    priceValidUntil: '2025-12-31',
+    itemOffered: {
+      '@type': 'Service',
+      name: 'Professional Roof Inspection',
+      description: 'Complete roof assessment including shingle condition, flashing, gutters, ventilation, and structural integrity check.',
+      provider: {
+        '@type': 'RoofingContractor',
+        '@id': `${SITE_CONFIG.url}/#organization`,
+      },
+    },
+    offeredBy: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Charlotte, NC',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Review Schema for individual reviews (AEO enhancement)
+export function ReviewsSchema() {
+  const reviews = [
+    {
+      author: 'Sarah M.',
+      rating: 5,
+      text: 'We dealt with Banning and James both were quick to respond and extremely helpful. They were able to get the insurance company to cover all the repairs and a whole new roof.',
+      date: '2024-10-15',
+    },
+    {
+      author: 'Mike T.',
+      rating: 5,
+      text: 'Best Roofing Now is exactly what their name says - the best! James was honest about what we needed and did not try to upsell us.',
+      date: '2024-09-22',
+    },
+    {
+      author: 'Jennifer L.',
+      rating: 5,
+      text: 'After a bad storm damaged our roof, we called several companies. Best Roofing Now was the only one who did not try to scare us into buying more than we needed.',
+      date: '2024-08-18',
+    },
+  ];
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    '@id': `${SITE_CONFIG.url}/#organization`,
+    name: SITE_CONFIG.name,
+    review: reviews.map((review) => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: review.author,
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: review.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      reviewBody: review.text,
+      datePublished: review.date,
+    })),
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
   };
 
   return (

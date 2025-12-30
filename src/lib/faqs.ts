@@ -404,6 +404,50 @@ export const enhancedServiceFAQs: Record<string, FAQ[]> = {
   ],
 };
 
+// Comparison FAQs for featured snippets and AEO (these answer "vs" questions)
+export const comparisonFAQs: FAQ[] = [
+  {
+    question: 'What is the difference between roof repair and roof replacement?',
+    answer: 'Roof repair fixes specific damaged areas like leaks, missing shingles, or flashing issues, typically costing $150-$1,500. Roof replacement removes the entire old roof and installs a new roofing system, costing $8,000-$25,000+. Choose repair if damage is localized and your roof is under 15 years old. Choose replacement if your roof is over 20 years old, has widespread damage, or repair costs exceed 30% of replacement cost. Best Roofing Now provides honest assessments to help you make the right choice.',
+  },
+  {
+    question: 'What is the difference between asphalt shingles and metal roofing?',
+    answer: 'Asphalt shingles cost $3-$7 per square foot, last 20-30 years, and offer many style options. Metal roofing costs $8-$15 per square foot, lasts 40-70 years, and provides superior energy efficiency and storm resistance. Asphalt is more affordable upfront and easier to repair. Metal is more durable long-term, reflects heat to reduce cooling costs, and is environmentally recyclable. For Charlotte homes, both work well—asphalt for budget-conscious homeowners, metal for those wanting long-term value.',
+  },
+  {
+    question: 'What is the difference between 3-tab shingles and architectural shingles?',
+    answer: '3-tab shingles are flat, uniform, and the most affordable option at $2.50-$4 per square foot installed, lasting 15-20 years. Architectural shingles (dimensional shingles) have a layered, textured appearance, cost $4-$7 per square foot, and last 25-30+ years. Architectural shingles are thicker, more wind-resistant (up to 130 MPH vs 60 MPH), and add more curb appeal. Most Charlotte homeowners choose architectural shingles for better value and aesthetics despite slightly higher cost.',
+  },
+  {
+    question: 'What is the difference between GAF and CertainTeed shingles?',
+    answer: 'Both GAF and CertainTeed are premium shingle manufacturers with excellent products. GAF Timberline HDZ offers StainGuard Plus protection and industry-leading wind warranty (130 MPH). CertainTeed Landmark features SureNail technology for better adhesion and offers more color options. Both have similar lifespans (25-50 years with proper installation). GAF is America\'s largest shingle manufacturer; CertainTeed is known for consistent quality. Best Roofing Now is certified by both and helps homeowners choose based on color preferences and specific needs.',
+  },
+  {
+    question: 'What is the difference between TPO and EPDM commercial roofing?',
+    answer: 'TPO (thermoplastic polyolefin) is white, highly reflective, and reduces cooling costs by 10-30%—ideal for Charlotte\'s hot summers. It costs $5-$8 per square foot and lasts 20-30 years. EPDM (rubber roofing) is typically black, costs $4-$7 per square foot, and lasts 20-25 years. TPO welds at seams for superior waterproofing; EPDM uses adhesives or tape. For Charlotte commercial buildings, we typically recommend TPO for energy efficiency, but EPDM remains cost-effective for budget-conscious projects.',
+  },
+  {
+    question: 'Should I repair my roof or wait until it needs full replacement?',
+    answer: 'Repair now if: you have active leaks causing interior damage, missing shingles exposing decking, or storm damage that may worsen. Wait if: damage is purely cosmetic, your roof is near end-of-life anyway (planned replacement within 1-2 years), or you\'re saving for full replacement. Delaying repairs for active leaks can cause thousands in water damage to insulation, drywall, and structure. Our free inspection helps Charlotte homeowners understand the urgency and make informed decisions.',
+  },
+  {
+    question: 'What is the difference between seamless and sectional gutters?',
+    answer: 'Seamless gutters are custom-fabricated on-site to fit your home exactly, with no joints along runs (only at corners and downspouts). Sectional gutters come in pre-cut pieces joined together every 10-20 feet. Seamless gutters cost slightly more ($6-$12 per linear foot vs $4-$8) but last longer and leak less because joints are the weakest points. For Charlotte homes, we always recommend seamless aluminum gutters—the reduced maintenance and leak protection are worth the modest price difference.',
+  },
+  {
+    question: 'What is the difference between vinyl and fiber cement siding?',
+    answer: 'Vinyl siding costs $4-$8 per square foot, requires minimal maintenance, and lasts 20-40 years. Fiber cement (James Hardie) costs $8-$14 per square foot, resists fire/rot/insects, and lasts 50+ years. Vinyl can warp in extreme heat and crack in cold; fiber cement handles temperature swings better. Fiber cement looks more like real wood and increases home value more. For Charlotte\'s humid climate, fiber cement\'s moisture resistance is valuable, but quality vinyl remains a solid budget option.',
+  },
+  {
+    question: 'Is it better to replace roof in spring or fall in Charlotte?',
+    answer: 'Both spring and fall are excellent for roof replacement in Charlotte. Spring (March-May) offers moderate temperatures before summer heat and storms. Fall (September-November) provides cooler weather after hurricane season. Spring advantage: gets ahead of storm season for insurance peace of mind. Fall advantage: shingles seal better in cooler temps and contractors may offer off-peak pricing. Summer works but requires scheduling around afternoon storms. Winter is fine for most projects. We recommend booking 2-4 weeks ahead for either peak season.',
+  },
+  {
+    question: 'What is the difference between roof coating and roof replacement?',
+    answer: 'Roof coatings are liquid-applied protective layers that extend existing roof life by 10-15 years, costing $2-$5 per square foot. Roof replacement removes everything and installs new roofing materials, costing $8-$25 per square foot. Coatings work best on flat commercial roofs in good condition, adding waterproofing and reflectivity. Replacement is needed when the roof structure is compromised, damage is extensive, or the roof has reached end-of-life. Coatings are cost-effective maintenance; replacement is a long-term investment.',
+  },
+];
+
 // Get FAQs for a service, falling back to defaults if not found
 export function getServiceFAQs(serviceSlug: string): FAQ[] {
   return enhancedServiceFAQs[serviceSlug] || [
@@ -420,4 +464,9 @@ export function getServiceFAQs(serviceSlug: string): FAQ[] {
       answer: 'We serve Charlotte and all surrounding areas including Concord, Huntersville, Matthews, Lake Norman, Fort Mill SC, and 30+ other communities within 50 miles of Charlotte.',
     },
   ];
+}
+
+// Get comparison FAQs (useful for FAQ pages and featured snippet optimization)
+export function getComparisonFAQs(): FAQ[] {
+  return comparisonFAQs;
 }

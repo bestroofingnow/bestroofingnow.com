@@ -5,7 +5,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { StickyCTA } from '@/components/sections/CTASection';
-import { LocalBusinessSchema, WebSiteSchema, HowToGetRoofEstimateSchema } from '@/components/seo/SchemaMarkup';
+import { LocalBusinessSchema, WebSiteSchema, HowToGetRoofEstimateSchema, FreeInspectionOfferSchema, ReviewsSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import CustomCursor from '@/components/ui/CustomCursor';
 
@@ -115,6 +115,8 @@ export default function RootLayout({
         <LocalBusinessSchema />
         <WebSiteSchema />
         <HowToGetRoofEstimateSchema />
+        <FreeInspectionOfferSchema />
+        <ReviewsSchema />
       </head>
       <body className="antialiased">
         <CustomCursor />
