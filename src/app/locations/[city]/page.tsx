@@ -528,6 +528,23 @@ const locationContent: Record<
   },
 };
 
+// ProjectMapIt map IDs for each location
+const locationMapIds: Record<string, string> = {
+  'charlotte-nc': '6929921876fb8fa56e295536',
+  'concord-nc': '692991a9a73e38e6e4a2a783',
+  'matthews-nc': '6929924976fb8fa56e295607',
+  'mint-hill-nc': '6929925176fb8fa56e295637',
+  'kannapolis-nc': '692991baa73e38e6e4a2a7dc',
+  'cornelius-nc': '692991e176fb8fa56e2952dc',
+  'lake-norman': '6929920c76fb8fa56e2954b8',
+  'huntersville-nc': '692991c876fb8fa56e29522f',
+  'denver-nc': '6929920076fb8fa56e29545b',
+  'davidson-nc': '692991eb76fb8fa56e29530f',
+  'mooresville-nc': '692991f476fb8fa56e295399',
+  'gastonia-nc': '6929923d76fb8fa56e2955c9',
+  'mt-holly-nc': '6929922b76fb8fa56e295597',
+};
+
 // Default content for locations without specific content
 const defaultContent = {
   description:
@@ -845,29 +862,31 @@ export default async function LocationPage({ params }: PageProps) {
       />
 
       {/* Project Map - Uses ProjectMapIt embed */}
-      <section className="section">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Our Recent Projects Near {location.city}
-            </h2>
-            <p className="text-gray">
-              Explore roofing projects we have completed in the {location.city} area and throughout the Charlotte metro.
-            </p>
+      {locationMapIds[city] && (
+        <section className="section">
+          <div className="container">
+            <div className="text-center max-w-2xl mx-auto mb-8">
+              <h2 className="text-3xl font-bold text-primary mb-4">
+                Our Recent Projects Near {location.city}
+              </h2>
+              <p className="text-gray">
+                Explore roofing projects we have completed in the {location.city} area and throughout the Charlotte metro.
+              </p>
+            </div>
+            <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+              <iframe
+                src={`https://projectmapit.com/best-roofing-now-llc/map?map=${locationMapIds[city]}`}
+                width="100%"
+                height="600"
+                style={{ border: 0 }}
+                title={`Roofing Projects Near ${location.city}`}
+                className="w-full"
+                loading="lazy"
+              />
+            </div>
           </div>
-          <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-            <iframe
-              src="https://projectmapit.com/best-roofing-now-llc/map?map=6929921876fb8fa56e295536"
-              width="100%"
-              height="600"
-              style={{ border: 0 }}
-              title={`Roofing Projects Near ${location.city}`}
-              className="w-full"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Contact Info */}
       <section className="section bg-light">
