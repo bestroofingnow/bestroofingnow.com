@@ -42,7 +42,7 @@ export function InteractiveServiceMap() {
         <FadeInUp>
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4">
-              <MapPin className="w-4 h-4 text-accent" />
+              <MapPin className="w-4 h-4 text-accent" aria-hidden="true" />
               <span className="text-sm font-semibold">Service Area Map</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -190,10 +190,10 @@ export function InteractiveServiceMap() {
                     className="btn btn-primary"
                   >
                     View {selectedArea.name} Services
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                   </Link>
                   <a href={`tel:${SITE_CONFIG.phone}`} className="btn btn-outline border-white text-white hover:bg-white hover:text-primary">
-                    <Phone className="w-4 h-4" />
+                    <Phone className="w-4 h-4" aria-hidden="true" />
                     Call Now
                   </a>
                 </div>

@@ -38,7 +38,7 @@ export function LazyProjectMap({ mapId, cityName }: LazyProjectMapProps) {
           {!isLoaded && (
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100 rounded-2xl">
               <div className="animate-pulse flex flex-col items-center gap-4">
-                <MapPin className="w-12 h-12 text-primary" />
+                <MapPin className="w-12 h-12 text-primary" aria-hidden="true" />
                 <p className="text-gray-600">Loading project map...</p>
               </div>
             </div>
@@ -55,7 +55,7 @@ export function LazyProjectMap({ mapId, cityName }: LazyProjectMapProps) {
         </>
       ) : (
         <div className="w-full h-[600px] bg-gray-100 rounded-2xl flex flex-col items-center justify-center">
-          <MapPin className="w-12 h-12 text-primary/50 mb-4" />
+          <MapPin className="w-12 h-12 text-primary/50 mb-4" aria-hidden="true" />
           <p className="text-gray-500">Scroll to view project map</p>
         </div>
       )}

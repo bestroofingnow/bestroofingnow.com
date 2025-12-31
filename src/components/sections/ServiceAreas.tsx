@@ -14,7 +14,7 @@ export function ServiceAreas() {
             <div className="bg-light rounded-2xl p-8 aspect-square flex items-center justify-center">
               {/* Placeholder for map - can be replaced with actual map integration */}
               <div className="text-center">
-                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
+                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" aria-hidden="true" />
                 <p className="text-gray">
                   Serving the greater Charlotte metro area
                 </p>
@@ -31,7 +31,7 @@ export function ServiceAreas() {
           {/* Content Side */}
           <div>
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
-              <MapPin className="w-4 h-4" />
+              <MapPin className="w-4 h-4" aria-hidden="true" />
               <span className="text-sm font-semibold">Service Areas</span>
             </div>
 
@@ -53,7 +53,7 @@ export function ServiceAreas() {
                   href={`/locations/${location.slug}`}
                   className="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md hover:bg-light transition-all group"
                 >
-                  <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
+                  <MapPin className="w-4 h-4 text-accent flex-shrink-0" aria-hidden="true" />
                   <span className="text-dark font-medium group-hover:text-primary transition-colors">
                     {location.city}
                   </span>
@@ -68,7 +68,7 @@ export function ServiceAreas() {
                 className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
               >
                 View All Service Areas
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5" aria-hidden="true" />
               </Link>
               <span className="text-gray">|</span>
               <a
