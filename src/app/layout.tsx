@@ -119,6 +119,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://projectmapit.com" />
         {/* Preconnect to PSAI CDN for faster widget loading */}
         <link rel="preconnect" href="https://psai.azureedge.net" crossOrigin="anonymous" />
+        {/* Preconnect to Bunny fonts (used by PSAI widgets) */}
+        <link rel="preconnect" href="https://fonts.bunny.net" crossOrigin="anonymous" />
         <LocalBusinessSchema />
         <WebSiteSchema />
         <HowToGetRoofEstimateSchema />

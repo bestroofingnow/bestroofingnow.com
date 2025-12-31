@@ -4,6 +4,10 @@ import type { NextConfig } from "next";
 const WP_CMS_HOSTNAME = process.env.WORDPRESS_HOSTNAME || 'bestroofingnow.com';
 
 const nextConfig: NextConfig = {
+  // Optimize CSS delivery
+  experimental: {
+    optimizeCss: true,
+  },
   images: {
     remotePatterns: [
       {
