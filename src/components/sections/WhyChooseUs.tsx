@@ -62,7 +62,7 @@ export function WhyChooseUs() {
           <FadeInLeft>
             <div>
               <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-4 py-2 mb-4 transition-transform hover:scale-105">
-                <Heart className="w-4 h-4" />
+                <Heart className="w-4 h-4" aria-hidden="true" />
                 <span className="text-sm font-semibold">Why Homeowners Choose Us</span>
               </div>
 
@@ -100,7 +100,7 @@ export function WhyChooseUs() {
                     className="badge transition-transform hover:scale-105 animate-fade-in-up"
                     style={{ animationDelay: `${0.5 + i * 0.1}s` }}
                   >
-                    <CheckCircle className="w-4 h-4" />
+                    <CheckCircle className="w-4 h-4" aria-hidden="true" />
                     {cert}
                   </div>
                 ))}
@@ -115,7 +115,7 @@ export function WhyChooseUs() {
                 <StaggerItem key={feature.title} index={index}>
                   <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 h-full group hover:-translate-y-1">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300">
-                      <feature.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" />
+                      <feature.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true" />
                     </div>
                     <h3 className="font-bold text-dark mb-2">{feature.title}</h3>
                     <p className="text-gray text-sm">{feature.description}</p>

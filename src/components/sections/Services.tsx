@@ -64,7 +64,7 @@ export function Services({
               >
                 <div className="flex items-start gap-3 md:gap-4">
                   <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
-                    <Icon className="w-6 h-6 md:w-7 md:h-7 text-primary group-hover:text-white transition-colors duration-300" />
+                    <Icon className="w-6 h-6 md:w-7 md:h-7 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-base md:text-lg font-bold text-dark mb-1 md:mb-2 group-hover:text-primary transition-colors">
@@ -73,7 +73,7 @@ export function Services({
                     <p className="text-gray text-sm mb-3 md:mb-4 line-clamp-2">{service.description}</p>
                     <div className="flex items-center text-primary font-medium text-sm group-hover:text-accent transition-colors">
                       Learn More
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                     </div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export function Services({
               className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent hover:scale-105 transition-all"
             >
               View All Services
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Link>
           </div>
         )}

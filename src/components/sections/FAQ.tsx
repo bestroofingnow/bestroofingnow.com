@@ -25,7 +25,7 @@ export function FAQ({
           {/* Section Header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
-              <HelpCircle className="w-4 h-4" />
+              <HelpCircle className="w-4 h-4" aria-hidden="true" />
               <span className="text-sm font-semibold">FAQ</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
