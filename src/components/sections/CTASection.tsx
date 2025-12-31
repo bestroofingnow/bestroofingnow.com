@@ -30,7 +30,7 @@ export function CTASection({
               variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-accent"
-              icon={<Calendar className="w-5 h-5" />}
+              icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
             >
               Schedule Free Inspection
             </Button>
@@ -39,7 +39,7 @@ export function CTASection({
               variant="secondary"
               size="lg"
               className="bg-white !text-accent hover:bg-white/90"
-              icon={<Phone className="w-5 h-5" />}
+              icon={<Phone className="w-5 h-5" aria-hidden="true" />}
             >
               Call {SITE_CONFIG.phone}
             </Button>
@@ -60,7 +60,7 @@ export function StickyCTA() {
     <div className="sticky-cta" role="navigation" aria-label="Quick contact options">
       <a
         href={`tel:${SITE_CONFIG.phoneClean}`}
-        className="flex-1 flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-lg font-semibold"
+        className="flex-1 flex items-center justify-center gap-2 bg-primary text-white min-h-[44px] py-3 rounded-lg font-semibold"
         aria-label={`Call Best Roofing Now at ${SITE_CONFIG.phone}`}
       >
         <Phone className="w-5 h-5" aria-hidden="true" />
@@ -68,7 +68,7 @@ export function StickyCTA() {
       </a>
       <a
         href="/contact"
-        className="flex-1 flex items-center justify-center gap-2 bg-accent text-white py-3 rounded-lg font-semibold"
+        className="flex-1 flex items-center justify-center gap-2 bg-accent text-white min-h-[44px] py-3 rounded-lg font-semibold"
         aria-label="Get a free roofing quote"
       >
         Free Quote

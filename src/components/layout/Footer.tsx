@@ -61,7 +61,7 @@ export function Footer() {
               and doing the right thing for every customer.
             </p>
             <div className="flex items-center gap-2 mb-2">
-              <div className="stars">
+              <div className="stars" aria-hidden="true">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
@@ -83,13 +83,13 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+                  className="w-11 h-11 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
                   aria-label={`Follow us on ${social.label}`}
                 >
                   {social.isCustom ? (
                     <social.icon />
                   ) : (
-                    <social.icon className="w-4 h-4" />
+                    <social.icon className="w-5 h-5" aria-hidden="true" />
                   )}
                 </a>
               ))}
@@ -146,8 +146,9 @@ export function Footer() {
                 <a
                   href={`tel:${SITE_CONFIG.phoneClean}`}
                   className="flex items-start gap-3 text-white hover:text-white transition-colors"
+                  aria-label={`Call us at ${SITE_CONFIG.phone}`}
                 >
-                  <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                  <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                   <span className="font-semibold text-lg">{SITE_CONFIG.phone}</span>
                 </a>
               </li>
@@ -155,13 +156,14 @@ export function Footer() {
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
                   className="flex items-start gap-3 text-white hover:text-white transition-colors"
+                  aria-label={`Email us at ${SITE_CONFIG.email}`}
                 >
-                  <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                  <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                   <span>{SITE_CONFIG.email}</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-white">
-                <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
                   {SITE_CONFIG.address.street}<br />
                   {SITE_CONFIG.address.suite}<br />
@@ -169,7 +171,7 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-start gap-3 text-white">
-                <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>{SITE_CONFIG.hours}</span>
               </li>
             </ul>

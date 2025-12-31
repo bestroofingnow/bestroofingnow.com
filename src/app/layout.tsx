@@ -114,13 +114,8 @@ export default function RootLayout({
         {/* Non-critical third-party - dns-prefetch only */}
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
-        <link rel="dns-prefetch" href="https://psai.azureedge.net" />
         {/* ProjectMapIt for location pages */}
         <link rel="dns-prefetch" href="https://projectmapit.com" />
-        {/* Preconnect to PSAI CDN for faster widget loading */}
-        <link rel="preconnect" href="https://psai.azureedge.net" crossOrigin="anonymous" />
-        {/* Preconnect to Bunny fonts (used by PSAI widgets) */}
-        <link rel="preconnect" href="https://fonts.bunny.net" crossOrigin="anonymous" />
         <LocalBusinessSchema />
         <WebSiteSchema />
         <HowToGetRoofEstimateSchema />
@@ -148,34 +143,6 @@ export default function RootLayout({
           data-widget-id="692def99cf45951b90d25076"
           strategy="lazyOnload"
         />
-
-        {/* PSAI Widgets - Load after user interaction for better Core Web Vitals */}
-        <Script
-          id="psai-widgets-loader"
-          strategy="lazyOnload"
-        >
-          {`(function(){
-            var loaded=false;
-            function loadPSAI(){
-              if(loaded)return;
-              loaded=true;
-              ['1843d7d2-afe1-4ef7-be41-de6ebaab6e09','63d40938-3faa-48b2-9bb3-7fd5cd85ee8b'].forEach(function(id){
-                var s=document.createElement('script');
-                s.src='https://psai.azureedge.net/'+id+'.js';
-                s.async=true;
-                document.body.appendChild(s);
-              });
-            }
-            if('requestIdleCallback' in window){
-              requestIdleCallback(function(){setTimeout(loadPSAI,3000)});
-            }else{
-              setTimeout(loadPSAI,5000);
-            }
-            ['scroll','click','touchstart','mousemove'].forEach(function(e){
-              window.addEventListener(e,loadPSAI,{once:true,passive:true});
-            });
-          })();`}
-        </Script>
       </body>
     </html>
   );

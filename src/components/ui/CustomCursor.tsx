@@ -80,6 +80,7 @@ export default function CustomCursor() {
       style={{
         transform: 'translate3d(-100px, -100px, 0) translate(-50%, -50%)',
       }}
+      aria-hidden="true"
     >
       <div
         ref={innerRef}
@@ -93,6 +94,7 @@ export default function CustomCursor() {
           viewBox="0 0 24 24"
           fill="currentColor"
           className="w-12 h-12"
+          aria-hidden="true"
         >
           <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.382v7.497a.75.75 0 0 1-.75.75H13.25V16a.75.75 0 0 0-.75-.75h-1a.75.75 0 0 0-.75.75v6H5.5a.75.75 0 0 1-.75-.75V13.753H3.368a.75.75 0 0 1-.53-1.28L11.47 3.841Z" />
         </svg>

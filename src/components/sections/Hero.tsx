@@ -115,7 +115,7 @@ export function Hero({
                 variant="outline"
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-primary hover:scale-105 active:scale-98 transition-transform"
-                icon={<Phone className="w-5 h-5" />}
+                icon={<Phone className="w-5 h-5" aria-hidden="true" />}
               >
                 {SITE_CONFIG.phone}
               </Button>
@@ -130,7 +130,7 @@ export function Hero({
                     className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3 cursor-default hover:bg-white/20 transition-colors animate-fade-in-up"
                     style={{ animationDelay: `${0.2 + i * 0.05}s` }}
                   >
-                    <signal.icon className="w-4 h-4 md:w-5 md:h-5 text-accent-light flex-shrink-0" />
+                    <signal.icon className="w-4 h-4 md:w-5 md:h-5 text-accent-light flex-shrink-0" aria-hidden="true" />
                     <span className="text-white text-xs md:text-sm font-medium">{signal.text}</span>
                   </div>
                 ))}

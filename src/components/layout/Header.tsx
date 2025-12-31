@@ -122,8 +122,9 @@ export function Header() {
           <a
             href={`tel:${SITE_CONFIG.phoneClean}`}
             className="flex items-center gap-2 font-semibold hover:text-accent-light transition-colors"
+            aria-label={`Call us at ${SITE_CONFIG.phone}`}
           >
-            <Phone className="w-4 h-4" />
+            <Phone className="w-4 h-4" aria-hidden="true" />
             {SITE_CONFIG.phone}
           </a>
         </div>
@@ -246,8 +247,9 @@ export function Header() {
               <a
                 href={`tel:${SITE_CONFIG.phoneClean}`}
                 className="phone-link flex items-center gap-2"
+                aria-label={`Call us at ${SITE_CONFIG.phone}`}
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5" aria-hidden="true" />
                 {SITE_CONFIG.phone}
               </a>
               <Button href="/contact" variant="primary">
