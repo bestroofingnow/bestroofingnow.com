@@ -147,20 +147,32 @@ export default function RootLayout({
           strategy="lazyOnload"
         />
 
-        {/* PSAI Roofing Calculator - Exit Popup (delayed 5s for better performance) */}
+        {/* PSAI Widgets - Load after user interaction for better Core Web Vitals */}
         <Script
-          id="1843d7d2-afe1-4ef7-be41-de6ebaab6e09"
+          id="psai-widgets-loader"
           strategy="lazyOnload"
         >
-          {`setTimeout(function(){var scr=document.createElement('script');scr.src='https://psai.azureedge.net/1843d7d2-afe1-4ef7-be41-de6ebaab6e09.js';document.body.appendChild(scr);},5000);`}
-        </Script>
-
-        {/* PSAI Weather Widget - Bottom Left (delayed 5s for better performance) */}
-        <Script
-          id="63d40938-3faa-48b2-9bb3-7fd5cd85ee8b"
-          strategy="lazyOnload"
-        >
-          {`setTimeout(function(){var scr=document.createElement('script');scr.src='https://psai.azureedge.net/63d40938-3faa-48b2-9bb3-7fd5cd85ee8b.js';document.body.appendChild(scr);},5000);`}
+          {`(function(){
+            var loaded=false;
+            function loadPSAI(){
+              if(loaded)return;
+              loaded=true;
+              ['1843d7d2-afe1-4ef7-be41-de6ebaab6e09','63d40938-3faa-48b2-9bb3-7fd5cd85ee8b'].forEach(function(id){
+                var s=document.createElement('script');
+                s.src='https://psai.azureedge.net/'+id+'.js';
+                s.async=true;
+                document.body.appendChild(s);
+              });
+            }
+            if('requestIdleCallback' in window){
+              requestIdleCallback(function(){setTimeout(loadPSAI,3000)});
+            }else{
+              setTimeout(loadPSAI,5000);
+            }
+            ['scroll','click','touchstart','mousemove'].forEach(function(e){
+              window.addEventListener(e,loadPSAI,{once:true,passive:true});
+            });
+          })();`}
         </Script>
       </body>
     </html>

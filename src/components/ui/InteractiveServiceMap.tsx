@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MapPin, Phone, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -161,12 +161,17 @@ export function InteractiveServiceMap() {
           </div>
 
           {/* Info Panel */}
-          <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div
+            className="space-y-6 animate-fade-in-up"
+            style={{ animationDelay: '0.2s' }}
+            aria-live="polite"
+            aria-atomic="true"
+          >
             {selectedArea ? (
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-accent" />
+                    <MapPin className="w-6 h-6 text-accent" aria-hidden="true" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white">{selectedArea.name}</h3>

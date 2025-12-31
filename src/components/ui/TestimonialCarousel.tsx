@@ -80,15 +80,15 @@ export function TestimonialCarousel({
   };
 
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div className="relative max-w-4xl mx-auto" role="region" aria-label="Customer testimonials" aria-roledescription="carousel">
       {/* Main Carousel */}
       <div
-        className="relative overflow-hidden rounded-2xl bg-white shadow-xl p-8 md:p-12 min-h-[300px]"
+        className="relative overflow-hidden rounded-2xl bg-white shadow-xl p-8 md:p-12 h-[380px] md:h-[340px]"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/10" />
+        <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/10" aria-hidden="true" />
 
         <div
           className={`transition-all duration-300 ease-out ${
@@ -98,12 +98,15 @@ export function TestimonialCarousel({
                 : 'opacity-0 translate-x-8'
               : 'opacity-100 translate-x-0'
           }`}
+          aria-live="polite"
+          aria-atomic="true"
         >
           {/* Rating Stars */}
-          <div className="flex justify-center gap-1 mb-6">
+          <div className="flex justify-center gap-1 mb-6" aria-label={`${currentTestimonial.rating} out of 5 stars`}>
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
+                aria-hidden="true"
                 className={`w-6 h-6 transition-all duration-200 ${
                   i < currentTestimonial.rating
                     ? 'text-accent fill-accent'
@@ -120,15 +123,17 @@ export function TestimonialCarousel({
           </blockquote>
 
           {/* Author Info */}
-          <div className="text-center">
-            <p className="font-bold text-dark text-lg">{currentTestimonial.name}</p>
-            <p className="text-gray">{currentTestimonial.location}</p>
+          <footer className="text-center">
+            <cite className="not-italic">
+              <p className="font-bold text-dark text-lg">{currentTestimonial.name}</p>
+              <p className="text-gray">{currentTestimonial.location}</p>
+            </cite>
             {currentTestimonial.service && (
               <span className="inline-block mt-2 px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
                 {currentTestimonial.service}
               </span>
             )}
-          </div>
+          </footer>
         </div>
       </div>
 
@@ -149,10 +154,13 @@ export function TestimonialCarousel({
       </button>
 
       {/* Dots Indicator */}
-      <div className="flex justify-center gap-2 mt-6">
-        {testimonials.map((_, index) => (
+      <div className="flex justify-center gap-2 mt-6" role="tablist" aria-label="Testimonial navigation">
+        {testimonials.map((testimonial, index) => (
           <button
             key={index}
+            role="tab"
+            aria-selected={index === currentIndex}
+            aria-label={`Testimonial ${index + 1} of ${testimonials.length}: ${testimonial.name}`}
             onClick={() => {
               if (index !== currentIndex) {
                 setDirection(index > currentIndex ? 'right' : 'left');
@@ -163,14 +171,17 @@ export function TestimonialCarousel({
                 }, 300);
               }
             }}
-            className={`h-3 rounded-full transition-all duration-300 ${
+            className={`h-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
               index === currentIndex
                 ? 'bg-primary w-8'
                 : 'bg-gray-300 hover:bg-gray-400 w-3'
             }`}
-            aria-label={`Go to testimonial ${index + 1}`}
           />
         ))}
+      </div>
+      {/* Screen reader announcement */}
+      <div className="sr-only" aria-live="polite">
+        Showing testimonial {currentIndex + 1} of {testimonials.length}
       </div>
     </div>
   );
