@@ -165,6 +165,7 @@ export function StaggerItem({
 }
 
 // Animated counter for stats - pure JS, no Framer Motion
+// Fixed hydration: starts with actual value, animates on client
 export function AnimatedCounter({
   value,
   duration = 2,
@@ -179,10 +180,19 @@ export function AnimatedCounter({
   className?: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value); // Start with actual value for SSR
   const [hasAnimated, setHasAnimated] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Track mount state to avoid hydration mismatch
+  useEffect(() => {
+    setIsMounted(true);
+    setCount(0); // Reset to 0 after mount for animation
+  }, []);
 
   useEffect(() => {
+    if (!isMounted) return;
+
     const element = ref.current;
     if (!element || hasAnimated) return;
 
@@ -214,10 +224,10 @@ export function AnimatedCounter({
 
     observer.observe(element);
     return () => observer.disconnect();
-  }, [value, duration, hasAnimated]);
+  }, [value, duration, hasAnimated, isMounted]);
 
   return (
-    <span ref={ref} className={className}>
+    <span ref={ref} className={className} suppressHydrationWarning>
       {prefix}{count}{suffix}
     </span>
   );

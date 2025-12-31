@@ -102,3 +102,54 @@ export function isValidPhone(phone: string): boolean {
   const phoneRegex = /^[\d\s\-\(\)\+]{10,}$/;
   return phoneRegex.test(phone);
 }
+
+// Track click events for analytics
+// Works with Google Analytics 4 (gtag), Google Tag Manager (dataLayer), and custom handlers
+interface TrackEventParams {
+  action: string;
+  category: string;
+  label?: string;
+  value?: number;
+}
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+  }
+}
+
+export function trackEvent({ action, category, label, value }: TrackEventParams): void {
+  // Google Analytics 4 (gtag.js)
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  }
+
+  // Google Tag Manager (dataLayer)
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    window.dataLayer.push({
+      event: action,
+      eventCategory: category,
+      eventLabel: label,
+      eventValue: value,
+    });
+  }
+
+  // Console log for debugging (only in development)
+  if (process.env.NODE_ENV === 'development') {
+    console.log('[Analytics Event]', { action, category, label, value });
+  }
+}
+
+// Track phone call clicks
+export function trackPhoneClick(location?: string): void {
+  trackEvent({
+    action: 'click_to_call',
+    category: 'engagement',
+    label: location || 'unknown',
+  });
+}

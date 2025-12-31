@@ -15,6 +15,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean;
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
+  onClick?: () => void;
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -43,6 +44,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       iconPosition = 'left',
       children,
       disabled,
+      onClick,
       ...props
     },
     ref
@@ -96,13 +98,22 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             className={baseStyles}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={onClick}
           >
             {content}
           </a>
         );
       }
+      // For tel: links and other non-route links, use anchor tag
+      if (href.startsWith('tel:') || href.startsWith('mailto:')) {
+        return (
+          <a href={href} className={baseStyles} onClick={onClick}>
+            {content}
+          </a>
+        );
+      }
       return (
-        <Link href={href} className={baseStyles}>
+        <Link href={href} className={baseStyles} onClick={onClick}>
           {content}
         </Link>
       );
@@ -113,6 +124,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         className={baseStyles}
         disabled={disabled || loading}
+        onClick={onClick}
         {...props}
       >
         {content}

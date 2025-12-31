@@ -3,6 +3,7 @@
 import { Phone, Calendar, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { trackPhoneClick } from '@/lib/utils';
 
 interface CTASectionProps {
   title?: string;
@@ -40,6 +41,7 @@ export function CTASection({
               size="lg"
               className="bg-white !text-accent hover:bg-white/90"
               icon={<Phone className="w-5 h-5" aria-hidden="true" />}
+              onClick={() => trackPhoneClick('cta-section')}
             >
               Call {SITE_CONFIG.phone}
             </Button>
@@ -62,6 +64,7 @@ export function StickyCTA() {
         href={`tel:${SITE_CONFIG.phoneClean}`}
         className="flex-1 flex items-center justify-center gap-2 bg-primary text-white min-h-[44px] py-3 rounded-lg font-semibold"
         aria-label={`Call Best Roofing Now at ${SITE_CONFIG.phone}`}
+        onClick={() => trackPhoneClick('sticky-cta')}
       >
         <Phone className="w-5 h-5" aria-hidden="true" />
         Call Now

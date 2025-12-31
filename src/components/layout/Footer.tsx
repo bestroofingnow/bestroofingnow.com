@@ -1,8 +1,10 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
-import { getCurrentYear } from '@/lib/utils';
+import { getCurrentYear, trackPhoneClick } from '@/lib/utils';
 
 // Custom icon components for platforms not in Lucide
 const XTwitterIcon = () => (
@@ -147,6 +149,7 @@ export function Footer() {
                   href={`tel:${SITE_CONFIG.phoneClean}`}
                   className="flex items-start gap-3 text-white hover:text-white transition-colors"
                   aria-label={`Call us at ${SITE_CONFIG.phone}`}
+                  onClick={() => trackPhoneClick('footer')}
                 >
                   <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                   <span className="font-semibold text-lg">{SITE_CONFIG.phone}</span>

@@ -1,0 +1,226 @@
+{
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/service",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/service/:slug",
+      "destination": "/services/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/location",
+      "destination": "/locations",
+      "permanent": true
+    },
+    {
+      "source": "/location/:city",
+      "destination": "/locations/:city",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/aboutus",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contactus",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/free-estimate",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/free-inspection",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/get-quote",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/quote",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials",
+      "destination": "/reviews",
+      "permanent": true
+    },
+    {
+      "source": "/faqs",
+      "destination": "/faq",
+      "permanent": true
+    },
+    {
+      "source": "/frequently-asked-questions",
+      "destination": "/faq",
+      "permanent": true
+    },
+    {
+      "source": "/blogs",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/articles",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/charlotte",
+      "destination": "/locations/charlotte-nc",
+      "permanent": true
+    },
+    {
+      "source": "/charlotte-nc",
+      "destination": "/locations/charlotte-nc",
+      "permanent": true
+    },
+    {
+      "source": "/huntersville",
+      "destination": "/locations/huntersville-nc",
+      "permanent": true
+    },
+    {
+      "source": "/concord",
+      "destination": "/locations/concord-nc",
+      "permanent": true
+    },
+    {
+      "source": "/matthews",
+      "destination": "/locations/matthews-nc",
+      "permanent": true
+    },
+    {
+      "source": "/roof-repair",
+      "destination": "/services/roof-repair",
+      "permanent": true
+    },
+    {
+      "source": "/roof-replacement",
+      "destination": "/services/roof-replacement",
+      "permanent": true
+    },
+    {
+      "source": "/roofing",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/residential",
+      "destination": "/services/residential-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/commercial",
+      "destination": "/services/commercial-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/emergency",
+      "destination": "/services/emergency-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/storm-damage-repair",
+      "destination": "/services/storm-damage",
+      "permanent": true
+    },
+    {
+      "source": "/gutter",
+      "destination": "/services/gutters",
+      "permanent": true
+    },
+    {
+      "source": "/gutter-installation",
+      "destination": "/services/gutters",
+      "permanent": true
+    },
+    {
+      "source": "/siding-installation",
+      "destination": "/services/siding",
+      "permanent": true
+    },
+    {
+      "source": "/finance",
+      "destination": "/financing",
+      "permanent": true
+    },
+    {
+      "source": "/payment-options",
+      "destination": "/financing",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).(js|css|woff2|png|jpg|jpeg|webp|avif|svg|ico)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
