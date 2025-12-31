@@ -146,6 +146,7 @@ export default function BlogContent({ initialPosts }: BlogContentProps) {
                     : 'bg-white text-dark hover:bg-primary/10 shadow-sm'
                 }`}
                 aria-pressed={selectedTopic === topic}
+                aria-label={`Filter by ${topic}${selectedTopic === topic ? ' (currently selected)' : ''}`}
               >
                 {topic}
               </button>
@@ -161,6 +162,7 @@ export default function BlogContent({ initialPosts }: BlogContentProps) {
               <button
                 onClick={clearFilters}
                 className="text-sm text-primary hover:text-accent underline"
+                aria-label="Clear all search filters and show all blog posts"
               >
                 Clear all filters
               </button>
@@ -270,6 +272,7 @@ export default function BlogContent({ initialPosts }: BlogContentProps) {
                                 : 'hover:bg-primary/10'
                             }`}
                             aria-current={currentPage === page ? 'page' : undefined}
+                            aria-label={`Go to page ${page}${currentPage === page ? ' (current page)' : ''}`}
                           >
                             {page}
                           </button>
@@ -317,6 +320,7 @@ export default function BlogContent({ initialPosts }: BlogContentProps) {
                 <button
                   onClick={clearFilters}
                   className="btn btn-primary"
+                  aria-label="Clear all search filters and show all blog posts"
                 >
                   Clear Filters
                 </button>

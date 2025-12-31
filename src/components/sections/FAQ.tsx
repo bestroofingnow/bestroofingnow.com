@@ -45,8 +45,10 @@ export function FAQ({
                   className="w-full flex items-center justify-between p-6 text-left"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   aria-expanded={openIndex === index}
+                  aria-controls={`faq-answer-${index}`}
+                  aria-label={`${openIndex === index ? 'Collapse' : 'Expand'} answer to: ${faq.question}`}
                 >
-                  <span className="font-semibold text-dark pr-4">
+                  <span id={`faq-question-${index}`} className="font-semibold text-dark pr-4">
                     {faq.question}
                   </span>
                   <ChevronDown
@@ -54,13 +56,17 @@ export function FAQ({
                       'w-5 h-5 text-primary flex-shrink-0 transition-transform duration-200',
                       openIndex === index && 'rotate-180'
                     )}
+                    aria-hidden="true"
                   />
                 </button>
                 <div
+                  id={`faq-answer-${index}`}
                   className={cn(
                     'overflow-hidden transition-all duration-200',
                     openIndex === index ? 'max-h-96' : 'max-h-0'
                   )}
+                  role="region"
+                  aria-labelledby={`faq-question-${index}`}
                 >
                   <div className="px-6 pb-6 text-gray leading-relaxed">
                     {faq.answer}

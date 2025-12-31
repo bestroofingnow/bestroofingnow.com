@@ -225,6 +225,7 @@ export function InteractiveServiceMap() {
               <button
                 onClick={() => setSelectedArea(null)}
                 className="text-sm text-gray-200 hover:text-white transition-colors"
+                aria-label="Go back to view all service locations"
               >
                 &larr; View all locations
               </button>

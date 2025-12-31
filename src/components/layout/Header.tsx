@@ -168,6 +168,7 @@ export function Header() {
                       )}
                       aria-haspopup="menu"
                       aria-expanded={openDropdown === item.label}
+                      aria-label={`${item.label} menu`}
                       onKeyDown={(e) => handleKeyDown(e, item)}
                       onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                     >
@@ -307,8 +308,9 @@ export function Header() {
                 <a
                   href={`tel:${SITE_CONFIG.phoneClean}`}
                   className="flex items-center justify-center gap-2 py-3 bg-primary text-white rounded-lg font-semibold"
+                  aria-label={`Call us at ${SITE_CONFIG.phone}`}
                 >
-                  <Phone className="w-5 h-5" />
+                  <Phone className="w-5 h-5" aria-hidden="true" />
                   Call {SITE_CONFIG.phone}
                 </a>
                 <Button href="/contact" variant="primary" className="w-full">
