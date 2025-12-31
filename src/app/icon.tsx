@@ -13,19 +13,25 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 11,
-          background: '#1A43AA',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
-          fontWeight: 'bold',
-          borderRadius: 4,
         }}
       >
-        BRN
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-55.png"
+          alt="Best Roofing Now"
+          width={32}
+          height={32}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+          }}
+        />
       </div>
     ),
     {

@@ -9,7 +9,9 @@
       "Bash(git commit:*)",
       "Bash(cat:*)",
       "Bash(curl:*)",
-      "Bash(vercel:*)"
+      "Bash(vercel:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh api:*)"
     ]
   }
 }

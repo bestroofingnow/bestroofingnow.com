@@ -13,19 +13,25 @@ export default function AppleIcon() {
     (
       <div
         style={{
-          fontSize: 64,
-          background: 'linear-gradient(135deg, #1A43AA 0%, #142F7A 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
-          fontWeight: 'bold',
-          borderRadius: 32,
         }}
       >
-        BRN
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-55.png"
+          alt="Best Roofing Now"
+          width={180}
+          height={180}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+          }}
+        />
       </div>
     ),
     {
