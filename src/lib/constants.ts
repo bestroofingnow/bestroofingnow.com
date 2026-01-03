@@ -45,7 +45,7 @@ export const SITE_CONFIG = {
     // Business directories (from Yext)
     yellowPages: 'https://www.yellowpages.com/charlotte-nc/mip/best-roofing-now-561757375',
     chamberOfCommerce: 'https://www.chamberofcommerce.com/business-directory/north-carolina/charlotte/roofing-contractor/2012422657-best-roofing-now',
-    mapquest: 'http://www.mapquest.com/places/-776571418/',
+    mapquest: 'https://www.mapquest.com/us/north-carolina/best-roofing-now-428835039',
     brownbook: 'https://www.brownbook.net/business/50145694/best-roofing-now/',
     cylex: 'https://www.cylex.us.com/company/best-roofing-now-36772885.html',
     hotfrog: 'https://www.hotfrog.com/company/1439541993828352',
@@ -82,7 +82,7 @@ export const EXTERNAL_RESOURCES = {
       widgetId: '692def99cf45951b90d25076',
     },
     reviewWidget: 'https://manage.bestroofingnow.com/reputation/widgets/review_widget/YnvUmp9cZqt5xmVLrnoq?widgetId=691f1dc6f44c6d6cf097352c',
-    bookingCalendar: 'https://manage.bestroofingnow.com/widget/bookings/bestroofingnowconsultation',
+    bookingCalendar: 'https://manage.bestroofingnow.com/widget/bookings/brn-roof-consultation',
     instantEstimate: 'https://journeys.demand-iq.com/631cdf2c-ff57-11ef-b232-0a58a9feac02?journeyId=40ddea4c-3884-48bb-9acb-1fcbf409bc60',
   },
   projectMapIt: {

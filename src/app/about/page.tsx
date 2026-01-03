@@ -273,16 +273,26 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 bg-white rounded-xl shadow-md text-center">
-              <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3" />
+            <a
+              href={SITE_CONFIG.externalProfiles.bbb}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition-shadow group"
+            >
+              <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3 group-hover:text-accent transition-colors" />
               <h3 className="font-bold text-dark mb-1">BBB A+ Rated</h3>
               <p className="text-sm text-gray">Better Business Bureau</p>
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-md text-center">
-              <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3" />
+            </a>
+            <a
+              href={SITE_CONFIG.externalProfiles.certainteed}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition-shadow group"
+            >
+              <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3 group-hover:text-accent transition-colors" />
               <h3 className="font-bold text-dark mb-1">CertainTeed Certified</h3>
               <p className="text-sm text-gray">SELECT ShingleMaster</p>
-            </div>
+            </a>
             <div className="p-6 bg-white rounded-xl shadow-md text-center">
               <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3" />
               <h3 className="font-bold text-dark mb-1">GAF Certified</h3>

@@ -96,6 +96,23 @@ export function Footer() {
                 </a>
               ))}
             </div>
+            {/* Directory Listings */}
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <p className="text-white/70 text-sm mb-2">Find us on:</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+                <a href={SITE_CONFIG.externalProfiles.googleMaps} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">Google</a>
+                <span className="text-white/30">|</span>
+                <a href={SITE_CONFIG.externalProfiles.bbb} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">BBB</a>
+                <span className="text-white/30">|</span>
+                <a href={SITE_CONFIG.externalProfiles.nextdoor} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">Nextdoor</a>
+                <span className="text-white/30">|</span>
+                <a href={SITE_CONFIG.externalProfiles.certainteed} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">CertainTeed</a>
+                <span className="text-white/30">|</span>
+                <a href={SITE_CONFIG.externalProfiles.projectMapIt} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">ProjectMapIt</a>
+                <span className="text-white/30">|</span>
+                <a href={SITE_CONFIG.externalProfiles.lakeNormanChamber} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">Lake Norman Chamber</a>
+              </div>
+            </div>
           </div>
 
           {/* Services */}
@@ -196,10 +213,15 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/90 text-sm">
-              © {getCurrentYear()} {SITE_CONFIG.name}. All rights reserved.
-            </p>
-            <div className="flex gap-6 text-sm">
+            <div className="text-center md:text-left">
+              <p className="text-white/90 text-sm">
+                © {getCurrentYear()} {SITE_CONFIG.name}. All rights reserved.
+              </p>
+              <p className="text-white/70 text-xs mt-1">
+                Fully Insured | Veteran-Owned & Family-Operated
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
               <Link href="/privacy-policy" className="text-white/90 hover:text-white">
                 Privacy Policy
               </Link>
