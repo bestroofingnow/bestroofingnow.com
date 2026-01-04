@@ -20,6 +20,7 @@ import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 import { getServiceFAQs } from '@/lib/faqs';
@@ -342,6 +343,18 @@ export default async function ServicePage({ params }: PageProps) {
           { name: service.title, url: `${SITE_CONFIG.url}/services/${slug}` },
         ]}
       />
+
+      {/* Visual Breadcrumbs */}
+      <div className="bg-light border-b border-gray-200">
+        <div className="container">
+          <Breadcrumbs
+            items={[
+              { name: 'Services', href: '/services' },
+              { name: service.title, href: `/services/${slug}` },
+            ]}
+          />
+        </div>
+      </div>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">

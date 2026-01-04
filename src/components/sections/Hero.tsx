@@ -55,8 +55,8 @@ export function Hero({
             className="object-cover opacity-20"
             priority
             fetchPriority="high"
-            sizes="100vw"
-            quality={75}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            quality={60}
             placeholder="blur"
             blurDataURL={HERO_BLUR_DATA_URL}
           />
@@ -68,7 +68,7 @@ export function Hero({
           <div className="max-w-3xl">
             {/* Trust Badge - CSS animation */}
             <div
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4 md:mb-6 animate-fade-in-up"
+              className="inline-flex items-center gap-2 bg-white/15 md:bg-white/10 md:backdrop-blur-sm rounded-full px-4 py-2 mb-4 md:mb-6 animate-fade-in-up"
               style={{ animationDelay: '0s' }}
             >
               <div className="flex" role="img" aria-label="5 star rating">
@@ -127,7 +127,7 @@ export function Hero({
                 {trustSignals.map((signal, i) => (
                   <div
                     key={signal.text}
-                    className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3 cursor-default hover:bg-white/20 transition-colors animate-fade-in-up"
+                    className="flex items-center gap-2 bg-white/15 md:bg-white/10 md:backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3 cursor-default hover:bg-white/20 transition-colors animate-fade-in-up"
                     style={{ animationDelay: `${0.2 + i * 0.05}s` }}
                   >
                     <signal.icon className="w-4 h-4 md:w-5 md:h-5 text-accent-light flex-shrink-0" aria-hidden="true" />

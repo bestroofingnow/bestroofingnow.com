@@ -90,6 +90,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @keyframes gradientShift { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
 .animate-gradient-shift { animation: gradientShift 6s linear infinite; }
 
+/* Mobile performance: Faster animations and disable expensive effects */
+@media (max-width: 767px) {
+  .animate-fade-in { animation-duration: 0.3s; }
+  .animate-fade-in-up { animation-duration: 0.3s; }
+  .animate-ping { animation: none !important; }
+
+  /* Disable hover transforms on mobile */
+  .card:hover { transform: none; }
+  .btn-primary:hover, .btn-secondary:hover { transform: none; }
+}
+
 .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 1rem; box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1); z-index: 40; display: flex; gap: 0.5rem; }
 @media (min-width: 768px) { .sticky-cta { display: none; } }
 

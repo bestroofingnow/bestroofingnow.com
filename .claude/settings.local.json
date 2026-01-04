@@ -11,7 +11,8 @@
       "Bash(curl:*)",
       "Bash(vercel:*)",
       "Bash(gh repo view:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(nslookup:*)"
     ]
   }
 }

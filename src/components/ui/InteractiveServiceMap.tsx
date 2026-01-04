@@ -57,7 +57,7 @@ export function InteractiveServiceMap() {
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Interactive Map */}
           <div
-            className="relative w-full aspect-square max-w-lg mx-auto bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10 overflow-hidden shadow-2xl animate-fade-in-up"
+            className="relative w-full aspect-square max-w-lg mx-auto bg-white/5 md:backdrop-blur-sm rounded-3xl border border-white/10 overflow-hidden shadow-2xl"
             role="img"
             aria-label="Interactive map of Charlotte area service locations. Use the buttons below to select a location."
           >
@@ -111,7 +111,7 @@ export function InteractiveServiceMap() {
                     tabIndex={0}
                     aria-label={`Select ${area.name} location`}
                   >
-                    {/* Pulse Effect - CSS animation */}
+                    {/* Pulse Effect - Only show on desktop for performance */}
                     <circle
                       cx={area.coordinates.x}
                       cy={area.coordinates.y}
@@ -119,7 +119,7 @@ export function InteractiveServiceMap() {
                       fill="none"
                       stroke={area.isPrimary ? '#C62F2F' : '#1A43AA'}
                       strokeWidth="0.5"
-                      className="animate-ping"
+                      className="hidden lg:block lg:animate-ping"
                       style={{ transformOrigin: `${area.coordinates.x}px ${area.coordinates.y}px` }}
                     />
 
