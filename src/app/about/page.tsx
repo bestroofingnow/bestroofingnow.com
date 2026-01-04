@@ -20,8 +20,21 @@ export const metadata: Metadata = {
   title: 'About Us | Veteran-Owned Roofing Company Charlotte NC',
   description:
     'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Founded by James and his dad Fred with military values of integrity and service.',
+  keywords: [
+    'veteran owned roofing company Charlotte',
+    'family owned roofer Charlotte NC',
+    'Best Roofing Now about',
+    'Charlotte roofing contractor',
+    'trusted roofer Charlotte',
+  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/about`,
+  },
+  openGraph: {
+    title: 'About Best Roofing Now | Veteran-Owned Charlotte Roofing',
+    description: 'Family-owned, veteran-operated roofing company serving Charlotte NC since 2019. BBB A+ rated with military values of integrity and excellence.',
+    url: `${SITE_CONFIG.url}/about`,
+    type: 'website',
   },
 };
 

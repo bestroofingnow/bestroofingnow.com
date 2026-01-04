@@ -11,8 +11,21 @@ export const metadata: Metadata = {
   title: 'Roofing FAQs | Common Roofing Questions Charlotte NC',
   description:
     'Get answers to common roofing questions in Charlotte NC. Learn about roof repair, replacement, insurance claims, materials, and more from Best Roofing Now.',
+  keywords: [
+    'roofing questions Charlotte',
+    'roof repair FAQ',
+    'roof replacement questions',
+    'roofing insurance claims FAQ',
+    'Charlotte roofing help',
+  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/faq`,
+  },
+  openGraph: {
+    title: 'Roofing FAQs | Best Roofing Now Charlotte',
+    description: 'Get answers to common roofing questions. Expert advice on roof repair, replacement, insurance claims, and materials from Charlotte\'s trusted roofers.',
+    url: `${SITE_CONFIG.url}/faq`,
+    type: 'website',
   },
 };
 

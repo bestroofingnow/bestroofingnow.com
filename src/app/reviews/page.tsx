@@ -8,11 +8,24 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Reviews | Charlotte Roofing Company Reviews',
+  title: 'Reviews | Charlotte Roofing Company Reviews | 5-Star Rated',
   description:
     'Read reviews from real Charlotte homeowners about Best Roofing Now. 5-star rated roofing company with 100+ happy customers. See why we are Charlotte\'s most trusted roofers.',
+  keywords: [
+    'Best Roofing Now reviews',
+    'Charlotte roofer reviews',
+    'roofing company reviews Charlotte NC',
+    '5 star roofer Charlotte',
+    'trusted roofing contractor reviews',
+  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/reviews`,
+  },
+  openGraph: {
+    title: 'Customer Reviews | Best Roofing Now Charlotte',
+    description: '5-star rated roofing company with 100+ happy Charlotte homeowners. Read real reviews about our honest, professional roofing services.',
+    url: `${SITE_CONFIG.url}/reviews`,
+    type: 'website',
   },
 };
 

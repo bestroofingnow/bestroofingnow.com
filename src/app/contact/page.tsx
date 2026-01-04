@@ -189,23 +189,23 @@ export default function ContactPage() {
               {/* Trust Bar */}
               <div className="flex flex-wrap items-center justify-center gap-3 mb-6 p-3 bg-accent/10 rounded-lg border border-accent/20">
                 <span className="flex items-center gap-1 text-sm font-medium">
-                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
                   <span className="text-dark">5.0 Rating</span>
                 </span>
-                <span className="text-gray-300">|</span>
+                <span className="text-gray-300" aria-hidden="true">|</span>
                 <span className="flex items-center gap-1 text-sm font-medium text-dark">
-                  <Shield className="w-4 h-4 text-primary" />
+                  <Shield className="w-4 h-4 text-primary" aria-hidden="true" />
                   BBB A+ Rated
                 </span>
-                <span className="text-gray-300">|</span>
+                <span className="text-gray-300" aria-hidden="true">|</span>
                 <span className="text-sm font-medium text-dark">
                   {SITE_CONFIG.customerCount}+ Happy Customers
                 </span>
               </div>
 
               {isSubmitted ? (
-                <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
-                  <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center" role="alert">
+                  <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" aria-hidden="true" />
                   <h3 className="text-2xl font-bold text-green-800 mb-2">
                     Thank You!
                   </h3>
@@ -377,7 +377,7 @@ export default function ContactPage() {
                   >
                     {isSubmitting ? (
                       <>
-                        <svg className="animate-spin w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <svg className="animate-spin w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
@@ -385,7 +385,7 @@ export default function ContactPage() {
                       </>
                     ) : (
                       <>
-                        <Send className="w-5 h-5" />
+                        <Send className="w-5 h-5" aria-hidden="true" />
                         Get My Free Quote Now
                       </>
                     )}
@@ -410,9 +410,10 @@ export default function ContactPage() {
                 <a
                   href={`tel:${SITE_CONFIG.phoneClean}`}
                   className="flex items-start gap-4 p-6 bg-light rounded-xl hover:bg-primary/5 transition group"
+                  aria-label={`Call us at ${SITE_CONFIG.phone}`}
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition">
-                    <Phone className="w-6 h-6 text-primary group-hover:text-white" />
+                    <Phone className="w-6 h-6 text-primary group-hover:text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <h3 className="font-bold text-dark mb-1">Call Us 24/7</h3>
@@ -425,9 +426,10 @@ export default function ContactPage() {
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
                   className="flex items-start gap-4 p-6 bg-light rounded-xl hover:bg-primary/5 transition group"
+                  aria-label={`Email us at ${SITE_CONFIG.email}`}
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition">
-                    <Mail className="w-6 h-6 text-primary group-hover:text-white" />
+                    <Mail className="w-6 h-6 text-primary group-hover:text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <h3 className="font-bold text-dark mb-1">Email Us</h3>
@@ -439,7 +441,7 @@ export default function ContactPage() {
                 {/* Address */}
                 <div className="flex items-start gap-4 p-6 bg-light rounded-xl">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-primary" />
+                    <MapPin className="w-6 h-6 text-primary" aria-hidden="true" />
                   </div>
                   <div>
                     <h3 className="font-bold text-dark mb-1">Office Address</h3>
@@ -453,7 +455,7 @@ export default function ContactPage() {
                 {/* Hours */}
                 <div className="flex items-start gap-4 p-6 bg-light rounded-xl">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-primary" />
+                    <Clock className="w-6 h-6 text-primary" aria-hidden="true" />
                   </div>
                   <div>
                     <h3 className="font-bold text-dark mb-1">Business Hours</h3>
@@ -471,28 +473,28 @@ export default function ContactPage() {
                     href="/services"
                     className="flex items-center gap-2 text-primary hover:text-accent transition"
                   >
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     View Our Services
                   </Link>
                   <Link
                     href="/financing"
                     className="flex items-center gap-2 text-primary hover:text-accent transition"
                   >
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     Financing Options
                   </Link>
                   <Link
                     href="/locations"
                     className="flex items-center gap-2 text-primary hover:text-accent transition"
                   >
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     Service Areas
                   </Link>
                   <Link
                     href="/faq"
                     className="flex items-center gap-2 text-primary hover:text-accent transition"
                   >
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     FAQ
                   </Link>
                 </div>
@@ -528,9 +530,9 @@ export default function ContactPage() {
                 loading="lazy"
               />
             ) : (
-              <div className="flex items-center justify-center h-[700px] bg-gray-50">
+              <div className="flex items-center justify-center h-[700px] bg-gray-50" role="status" aria-label="Loading booking calendar">
                 <div className="text-center">
-                  <Clock className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
+                  <Clock className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" aria-hidden="true" />
                   <p className="text-gray">Loading booking calendar...</p>
                 </div>
               </div>
@@ -587,8 +589,9 @@ export default function ContactPage() {
           <a
             href={`tel:${SITE_CONFIG.phoneClean}`}
             className="btn bg-white text-accent hover:bg-light text-xl px-8 py-4"
+            aria-label={`Call us now at ${SITE_CONFIG.phone} for emergency roofing service`}
           >
-            <Phone className="w-6 h-6" />
+            <Phone className="w-6 h-6" aria-hidden="true" />
             {SITE_CONFIG.phone}
           </a>
         </div>

@@ -17,11 +17,24 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roof Financing Charlotte NC | Easy Payment Options',
+  title: 'Roof Financing Charlotte NC | Easy Payment Options | 0% APR',
   description:
     'Flexible roof financing options in Charlotte NC. Low monthly payments, quick approval, and 0% APR options available. Get the roof you need without breaking the bank.',
+  keywords: [
+    'roof financing Charlotte NC',
+    'roofing payment plans',
+    '0 APR roof financing',
+    'affordable roof replacement',
+    'roof loan Charlotte',
+  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/financing`,
+  },
+  openGraph: {
+    title: 'Roof Financing Options | Best Roofing Now Charlotte',
+    description: 'Affordable roof financing with 0% APR options. Quick approval, low monthly payments. Get your new roof today with flexible payment plans.',
+    url: `${SITE_CONFIG.url}/financing`,
+    type: 'website',
   },
 };
 
