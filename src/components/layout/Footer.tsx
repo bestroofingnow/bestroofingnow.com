@@ -119,7 +119,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
             <ul className="space-y-3">
-              {SERVICES.map((service) => (
+              {SERVICES.slice(0, 6).map((service) => (
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
@@ -129,6 +129,44 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/services"
+                  className="text-accent-light hover:text-white font-medium"
+                >
+                  View All Services →
+                </Link>
+              </li>
+            </ul>
+
+            {/* Quick Links */}
+            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Quick Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/about" className="text-white hover:text-white transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/reviews" className="text-white hover:text-white transition-colors">
+                  Customer Reviews
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-white hover:text-white transition-colors">
+                  Roofing Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-white hover:text-white transition-colors">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link href="/financing" className="text-white hover:text-white transition-colors">
+                  Financing Options
+                </Link>
+              </li>
             </ul>
           </div>
 

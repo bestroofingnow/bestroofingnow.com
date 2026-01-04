@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -25,6 +26,17 @@ export default function LocationsPage() {
           { name: 'Service Areas', url: `${SITE_CONFIG.url}/locations` },
         ]}
       />
+
+      {/* Visual Breadcrumbs */}
+      <div className="bg-light border-b border-gray-200">
+        <div className="container">
+          <Breadcrumbs
+            items={[
+              { name: 'Service Areas', href: '/locations' },
+            ]}
+          />
+        </div>
+      </div>
 
       {/* Hero */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">

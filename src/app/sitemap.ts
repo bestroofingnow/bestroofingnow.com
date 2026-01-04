@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { SERVICES, LOCATIONS } from '@/lib/constants';
 import { getAllPostSlugs } from '@/lib/wordpress';
+import { getAllNeighborhoodParams } from '@/lib/neighborhoods';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://bestroofingnow.com';
@@ -79,6 +80,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: location.isPrimary ? 0.8 : 0.7,
   }));
 
+  // Neighborhood pages
+  const neighborhoodParams = getAllNeighborhoodParams();
+  const neighborhoodPages: MetadataRoute.Sitemap = neighborhoodParams.map(({ city, neighborhood }) => ({
+    url: `${baseUrl}/locations/${city}/${neighborhood}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   // Blog posts from WordPress
   let blogPages: MetadataRoute.Sitemap = [];
   try {
@@ -93,5 +103,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('Error fetching blog posts for sitemap:', error);
   }
 
-  return [...staticPages, ...servicePages, ...locationPages, ...blogPages];
+  return [...staticPages, ...servicePages, ...locationPages, ...neighborhoodPages, ...blogPages];
 }

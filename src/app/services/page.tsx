@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Services } from '@/components/sections/Services';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -24,6 +25,17 @@ export default function ServicesPage() {
           { name: 'Services', url: `${SITE_CONFIG.url}/services` },
         ]}
       />
+
+      {/* Visual Breadcrumbs */}
+      <div className="bg-light border-b border-gray-200">
+        <div className="container">
+          <Breadcrumbs
+            items={[
+              { name: 'Services', href: '/services' },
+            ]}
+          />
+        </div>
+      </div>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
