@@ -58,6 +58,50 @@ export function generateLocationFAQs(city: string, state: string, county: string
   ];
 }
 
+// Generate unique FAQs for each neighborhood page with hyperlocal keywords
+export function generateNeighborhoodFAQs(
+  neighborhood: string,
+  city: string,
+  state: string,
+  homeStyles: string
+): FAQ[] {
+  const primaryHomeStyle = homeStyles.split(',')[0].trim().toLowerCase();
+  return [
+    {
+      question: `How much does roof replacement cost in ${neighborhood}, ${city}?`,
+      answer: `Roof replacement costs in ${neighborhood} typically range from $8,000 to $25,000+ depending on your home's size, roof complexity, and materials chosen. ${neighborhood} homes often feature ${primaryHomeStyle}, which may have specific roofing requirements. Best Roofing Now provides free inspections and detailed quotes with no hidden fees for ${neighborhood} homeowners.`,
+    },
+    {
+      question: `Do you offer free roof inspections in ${neighborhood}?`,
+      answer: `Yes! Best Roofing Now provides completely free, no-obligation roof inspections for ${neighborhood} homeowners. Our certified inspectors understand the unique characteristics of ${neighborhood} homes and will assess your roof's condition with a detailed report and honest recommendations. Call ${SITE_CONFIG.phone} to schedule.`,
+    },
+    {
+      question: `What roofing challenges are common in ${neighborhood}, ${city}?`,
+      answer: `${neighborhood} homes face specific roofing considerations based on the area's architecture and environment. Common challenges include maintaining historic character, dealing with mature tree coverage, and addressing the typical wear patterns of ${primaryHomeStyle}. Our team has extensive experience with ${neighborhood} properties and understands these unique needs.`,
+    },
+    {
+      question: `Are you licensed to work on roofs in ${neighborhood}, ${city} ${state}?`,
+      answer: `Yes, Best Roofing Now is fully licensed, bonded, and insured to perform roofing work throughout ${city} including ${neighborhood}. We're BBB A+ accredited, CertainTeed SELECT ShingleMaster certified, and GAF Factory-Certified. We carry comprehensive insurance to protect ${neighborhood} homeowners.`,
+    },
+    {
+      question: `How long does a roof replacement take in ${neighborhood}?`,
+      answer: `Most residential roof replacements in ${neighborhood} take 1-3 days depending on home size and roof complexity. ${neighborhood}'s ${primaryHomeStyle} may require additional time for architectural details. Our experienced crews work efficiently while maintaining quality standards, and we'll provide a clear timeline during your free estimate.`,
+    },
+    {
+      question: `Do you help ${neighborhood} homeowners with insurance claims?`,
+      answer: `Absolutely! Our team specializes in storm damage claims for ${neighborhood} homeowners. We document all damage thoroughly, meet with insurance adjusters, and advocate for fair settlements. Many ${neighborhood} homes have experienced storm damage, and we help navigate the claims process at no extra cost.`,
+    },
+    {
+      question: `What roofing materials do you recommend for ${neighborhood} homes?`,
+      answer: `For ${neighborhood} homes featuring ${primaryHomeStyle}, we typically recommend premium architectural shingles from CertainTeed or GAF that complement the neighborhood's aesthetic. We'll help you select materials that match ${neighborhood}'s character while providing excellent protection and value.`,
+    },
+    {
+      question: `Why should ${neighborhood} homeowners choose Best Roofing Now?`,
+      answer: `${neighborhood} homeowners choose Best Roofing Now because we understand this community. We're familiar with ${neighborhood}'s architecture, any HOA requirements, and the specific needs of ${primaryHomeStyle}. Our 5-star reviews, BBB A+ rating, and commitment to honest assessments make us the trusted choice for ${neighborhood} residents.`,
+    },
+  ];
+}
+
 // Enhanced service FAQs with more keyword-rich content
 export const enhancedServiceFAQs: Record<string, FAQ[]> = {
   'residential-roofing': [

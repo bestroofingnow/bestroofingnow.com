@@ -8,10 +8,12 @@ import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { LocationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs } from '@/lib/faqs';
+import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
 
 // Location-specific content for unique pages
 const locationContent: Record<
@@ -629,6 +631,18 @@ export default async function LocationPage({ params }: PageProps) {
         ]}
       />
 
+      {/* Visual Breadcrumbs */}
+      <div className="bg-light border-b border-gray-200">
+        <div className="container">
+          <Breadcrumbs
+            items={[
+              { name: 'Locations', href: '/locations' },
+              { name: `${location.city}, ${location.state}`, href: `/locations/${city}` },
+            ]}
+          />
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-20">
         <div className="container">
@@ -850,15 +864,36 @@ export default async function LocationPage({ params }: PageProps) {
                   Neighborhoods We Serve in {location.city}
                 </h3>
                 <div className="grid grid-cols-2 gap-3">
-                  {content.neighborhoods.map((neighborhood) => (
-                    <div
-                      key={neighborhood}
-                      className="flex items-center gap-2 bg-white rounded-lg p-3"
-                    >
-                      <MapPin className="w-4 h-4 text-accent" />
-                      <span className="text-dark text-sm">{neighborhood}</span>
-                    </div>
-                  ))}
+                  {content.neighborhoods.map((neighborhood) => {
+                    const neighborhoodSlug = slugifyNeighborhood(neighborhood);
+                    const hasNeighborhoodPage = getNeighborhoodsByCity(city).some(
+                      (n) => n.slug === neighborhoodSlug
+                    );
+
+                    if (hasNeighborhoodPage) {
+                      return (
+                        <Link
+                          key={neighborhood}
+                          href={`/locations/${city}/${neighborhoodSlug}`}
+                          className="flex items-center gap-2 bg-white rounded-lg p-3 hover:bg-primary/5 hover:shadow-sm transition-all group"
+                        >
+                          <MapPin className="w-4 h-4 text-accent group-hover:text-primary transition-colors" />
+                          <span className="text-dark text-sm group-hover:text-primary transition-colors">{neighborhood}</span>
+                          <ArrowRight className="w-3 h-3 text-gray ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </Link>
+                      );
+                    }
+
+                    return (
+                      <div
+                        key={neighborhood}
+                        className="flex items-center gap-2 bg-white rounded-lg p-3"
+                      >
+                        <MapPin className="w-4 h-4 text-accent" />
+                        <span className="text-dark text-sm">{neighborhood}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             )}
