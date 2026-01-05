@@ -747,6 +747,154 @@ export const SEASONAL_ROOFING = [
   },
 ];
 
+// Roofing Brands for SEO pages
+export const ROOFING_BRANDS = [
+  {
+    slug: 'gaf',
+    name: 'GAF',
+    fullName: 'GAF Roofing Systems',
+    tagline: "North America's Largest Roofing Manufacturer",
+    description: 'GAF is the largest roofing manufacturer in North America, known for the best-selling Timberline series shingles. As a GAF certified contractor, we offer enhanced warranty options.',
+    products: [
+      { name: 'Timberline HDZ', description: 'America\'s #1 selling shingle with LayerLock technology', warranty: '50 years' },
+      { name: 'Timberline AS II', description: 'Algae-resistant architectural shingles', warranty: '50 years' },
+      { name: 'Timberline Ultra HD', description: 'Ultra-dimensional wood shake look', warranty: 'Lifetime' },
+      { name: 'Camelot II', description: 'Designer shingles with artisan crafted appearance', warranty: 'Lifetime' },
+    ],
+    warranties: [
+      'Golden Pledge® - 50-year non-prorated + 25-year workmanship',
+      'Silver Pledge™ - 50-year non-prorated + 10-year workmanship',
+      'System Plus™ - 50-year non-prorated + 5-year workmanship',
+    ],
+    certificationLevel: 'Certified Contractor',
+    keywords: ['GAF roofing Charlotte', 'GAF Timberline', 'GAF certified contractor', 'GAF shingles'],
+  },
+  {
+    slug: 'certainteed',
+    name: 'CertainTeed',
+    fullName: 'CertainTeed Roofing',
+    tagline: 'Quality Made Certain. Satisfaction Guaranteed.',
+    description: 'CertainTeed has been a trusted name in building materials for over 100 years. Their Landmark series offers exceptional durability and beauty.',
+    products: [
+      { name: 'Landmark', description: 'Max definition architectural shingles', warranty: '50 years' },
+      { name: 'Landmark PRO', description: 'Premium architectural with enhanced durability', warranty: 'Lifetime' },
+      { name: 'Landmark Premium', description: 'Thick, heavy designer-style shingles', warranty: 'Lifetime' },
+      { name: 'Presidential Shake', description: 'Luxury shake appearance', warranty: 'Lifetime' },
+    ],
+    warranties: [
+      'SureStart PLUS™ - 50-year material + workmanship coverage',
+      '4-Star Protection - Enhanced warranty for certified installers',
+      '5-Star Protection - Maximum warranty coverage available',
+    ],
+    certificationLevel: 'SELECT ShingleMaster™',
+    keywords: ['CertainTeed roofing Charlotte', 'CertainTeed Landmark', 'CertainTeed certified', 'CertainTeed shingles'],
+  },
+  {
+    slug: 'owens-corning',
+    name: 'Owens Corning',
+    fullName: 'Owens Corning Roofing',
+    tagline: 'The Pink Panther Brand You Trust',
+    description: 'Owens Corning is known for innovation in roofing materials, including the patented SureNail Technology for superior wind resistance.',
+    products: [
+      { name: 'Duration', description: 'Patented SureNail Technology for 130 MPH winds', warranty: 'Lifetime' },
+      { name: 'Duration FLEX', description: 'Flexible for complex roof shapes', warranty: 'Lifetime' },
+      { name: 'TruDefinition Duration', description: 'Bold, contrasting colors', warranty: 'Lifetime' },
+      { name: 'Berkshire', description: 'Premium slate-like appearance', warranty: 'Lifetime' },
+    ],
+    warranties: [
+      'Platinum Protection - Lifetime material + lifetime workmanship',
+      'Preferred Protection - Lifetime material + 10-year workmanship',
+      'System Protection - Lifetime material + 5-year workmanship',
+    ],
+    certificationLevel: 'Preferred Contractor',
+    keywords: ['Owens Corning roofing Charlotte', 'Owens Corning Duration', 'Owens Corning contractor', 'Owens Corning shingles'],
+  },
+];
+
+// Commercial Roofing Systems for SEO pages
+export const COMMERCIAL_SYSTEMS = [
+  {
+    slug: 'tpo-roofing',
+    name: 'TPO Roofing',
+    fullName: 'TPO (Thermoplastic Polyolefin)',
+    description: 'TPO is the fastest-growing commercial roofing system, offering energy efficiency, durability, and cost-effectiveness for flat and low-slope roofs.',
+    benefits: [
+      'Energy-efficient white reflective surface',
+      'Heat-welded seams for superior waterproofing',
+      'Resistant to UV, ozone, and chemical exposure',
+      'Cost-effective installation and maintenance',
+      'Environmentally friendly and recyclable',
+    ],
+    bestFor: 'Commercial buildings, warehouses, retail centers, and restaurants',
+    lifespan: '20-30 years',
+    keywords: ['TPO roofing Charlotte', 'commercial TPO roof', 'TPO roof installation', 'white membrane roofing'],
+  },
+  {
+    slug: 'epdm-roofing',
+    name: 'EPDM Roofing',
+    fullName: 'EPDM (Ethylene Propylene Diene Monomer)',
+    description: 'EPDM rubber roofing has been a trusted commercial roofing solution for over 50 years, known for its durability and flexibility.',
+    benefits: [
+      'Proven 50+ year track record',
+      'Excellent flexibility in all temperatures',
+      'Superior resistance to UV and weathering',
+      'Easy and economical repairs',
+      'Available in black or white',
+    ],
+    bestFor: 'Office buildings, schools, hospitals, and manufacturing facilities',
+    lifespan: '25-30 years',
+    keywords: ['EPDM roofing Charlotte', 'rubber roof commercial', 'EPDM installation', 'flat roof rubber membrane'],
+  },
+  {
+    slug: 'pvc-roofing',
+    name: 'PVC Roofing',
+    fullName: 'PVC (Polyvinyl Chloride)',
+    description: 'PVC roofing offers superior chemical resistance and fire performance, ideal for restaurants, factories, and facilities with rooftop equipment.',
+    benefits: [
+      'Excellent chemical and grease resistance',
+      'Superior fire resistance rating',
+      'Heat-welded seams are stronger than material',
+      'Highly reflective for energy savings',
+      'Long-term durability and flexibility',
+    ],
+    bestFor: 'Restaurants, hospitals, laboratories, and industrial facilities',
+    lifespan: '20-30 years',
+    keywords: ['PVC roofing Charlotte', 'commercial PVC roof', 'PVC membrane installation', 'chemical resistant roofing'],
+  },
+  {
+    slug: 'built-up-roofing',
+    name: 'Built-Up Roofing (BUR)',
+    fullName: 'Built-Up Roofing Systems',
+    description: 'Built-up roofing, often called "tar and gravel," has protected commercial buildings for over 100 years with multiple layers of waterproofing.',
+    benefits: [
+      'Proven multi-layer protection',
+      'Excellent waterproofing performance',
+      'UV protection from gravel surface',
+      'Low maintenance requirements',
+      'Can be applied over existing roofs',
+    ],
+    bestFor: 'Large commercial buildings, warehouses, and industrial facilities',
+    lifespan: '15-30 years',
+    keywords: ['built-up roofing Charlotte', 'BUR roofing', 'tar and gravel roof', 'multi-ply commercial roofing'],
+  },
+  {
+    slug: 'metal-commercial',
+    name: 'Commercial Metal Roofing',
+    fullName: 'Standing Seam Metal Roofing',
+    description: 'Standing seam metal roofing offers superior longevity and modern aesthetics for commercial properties seeking long-term value.',
+    benefits: [
+      'Exceptional 40-70 year lifespan',
+      'Virtually maintenance-free',
+      'Energy-efficient reflective surface',
+      'Wind resistance up to 140 MPH',
+      'Modern architectural appeal',
+    ],
+    bestFor: 'Office buildings, retail centers, churches, and modern commercial architecture',
+    lifespan: '40-70 years',
+    keywords: ['commercial metal roofing Charlotte', 'standing seam commercial', 'metal roof business', 'industrial metal roofing'],
+  },
+];
+
 // FAQ for homepage (subset)
 export const HOMEPAGE_FAQ = [
   {

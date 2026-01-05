@@ -6,6 +6,8 @@ import {
   ROOF_TYPES,
   ROOFING_PROBLEMS,
   SEASONAL_ROOFING,
+  ROOFING_BRANDS,
+  COMMERCIAL_SYSTEMS,
 } from '@/lib/constants';
 
 const BASE_URL = 'https://bestroofingnow.com';
@@ -125,6 +127,66 @@ export async function GET() {
   // Warranty information page
   pages.push({
     url: `${BASE_URL}/warranty`,
+    lastmod: new Date().toISOString(),
+    changefreq: 'monthly',
+    priority: '0.7',
+  });
+
+  // Process page
+  pages.push({
+    url: `${BASE_URL}/process`,
+    lastmod: new Date().toISOString(),
+    changefreq: 'monthly',
+    priority: '0.8',
+  });
+
+  // Emergency services page
+  pages.push({
+    url: `${BASE_URL}/emergency`,
+    lastmod: new Date().toISOString(),
+    changefreq: 'monthly',
+    priority: '0.8',
+  });
+
+  // Brands index page
+  pages.push({
+    url: `${BASE_URL}/brands`,
+    lastmod: new Date().toISOString(),
+    changefreq: 'weekly',
+    priority: '0.8',
+  });
+
+  // Individual brand pages
+  ROOFING_BRANDS.forEach((brand) => {
+    pages.push({
+      url: `${BASE_URL}/brands/${brand.slug}`,
+      lastmod: new Date().toISOString(),
+      changefreq: 'monthly',
+      priority: '0.7',
+    });
+  });
+
+  // Commercial Systems index page
+  pages.push({
+    url: `${BASE_URL}/commercial-systems`,
+    lastmod: new Date().toISOString(),
+    changefreq: 'weekly',
+    priority: '0.8',
+  });
+
+  // Individual commercial system pages
+  COMMERCIAL_SYSTEMS.forEach((system) => {
+    pages.push({
+      url: `${BASE_URL}/commercial-systems/${system.slug}`,
+      lastmod: new Date().toISOString(),
+      changefreq: 'monthly',
+      priority: '0.7',
+    });
+  });
+
+  // Ventilation page
+  pages.push({
+    url: `${BASE_URL}/ventilation`,
     lastmod: new Date().toISOString(),
     changefreq: 'monthly',
     priority: '0.7',
