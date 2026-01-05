@@ -391,10 +391,18 @@ export default function ContactPage() {
                     )}
                   </button>
 
-                  <p className="text-sm text-gray text-center mt-4">
-                    By submitting this form, you agree to be contacted about your roofing needs.
-                    We respect your privacy and will never share your information.
-                  </p>
+                  <div className="mt-4 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <label className="flex items-start gap-3 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        required
+                        className="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
+                      />
+                      <span className="text-xs text-gray leading-relaxed">
+                        By checking this box and submitting this form, I agree to be contacted about my roofing needs via phone calls, SMS/text messages, and emails, including through AI-powered and automated messaging systems. I understand that message and data rates may apply. I can opt out at any time. We respect your privacy and will never share your information with third parties.
+                      </span>
+                    </label>
+                  </div>
                 </form>
               )}
             </div>
