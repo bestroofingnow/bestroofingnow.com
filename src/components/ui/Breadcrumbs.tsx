@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
 
 interface BreadcrumbItem {
-  name: string;
-  href: string;
+  name?: string;
+  label?: string;
+  href?: string;
 }
 
 interface BreadcrumbsProps {
@@ -32,22 +33,23 @@ export function Breadcrumbs({ items, className = '' }: BreadcrumbsProps) {
         </li>
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
+          const displayName = item.name || item.label || '';
           return (
-            <li key={item.href} className="flex items-center">
+            <li key={item.href || displayName} className="flex items-center">
               <ChevronRight className="w-4 h-4 text-gray-400 mx-1" aria-hidden="true" />
-              {isLast ? (
+              {isLast || !item.href ? (
                 <span
                   className="text-dark font-medium"
-                  aria-current="page"
+                  aria-current={isLast ? 'page' : undefined}
                 >
-                  {item.name}
+                  {displayName}
                 </span>
               ) : (
                 <Link
                   href={item.href}
                   className="text-gray-500 hover:text-primary transition-colors"
                 >
-                  {item.name}
+                  {displayName}
                 </Link>
               )}
             </li>

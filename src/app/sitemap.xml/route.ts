@@ -8,6 +8,7 @@ export async function GET() {
     { loc: `${BASE_URL}/sitemaps/core`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/locations`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/services`, lastmod: new Date().toISOString() },
+    { loc: `${BASE_URL}/sitemaps/resources`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/blog`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/images`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/videos`, lastmod: new Date().toISOString() },
