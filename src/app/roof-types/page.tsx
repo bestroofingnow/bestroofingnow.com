@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Phone, Home, Info } from 'lucide-react';
 import { SITE_CONFIG, ROOF_TYPES } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
   title: 'Roof Types & Styles | Best Roofing Now Charlotte NC',
@@ -177,12 +178,13 @@ export default function RoofTypesPage() {
               <Phone className="w-5 h-5" aria-hidden="true" />
               {SITE_CONFIG.phone}
             </a>
-            <Link
-              href="/contact"
-              className="btn bg-accent hover:bg-accent-dark text-white text-lg px-8"
+            <EstimateButton
+              variant="accent"
+              size="lg"
+              className="px-8"
             >
-              Get Free Estimate
-            </Link>
+              Get Free Instant Estimate
+            </EstimateButton>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
+import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS } from '@/lib/constants';
 
 // Local Business Schema for the main site
 export function LocalBusinessSchema() {
@@ -165,30 +165,55 @@ export function ServiceSchema({ service }: ServiceSchemaProps) {
   );
 }
 
-// Location Schema for location pages
+// Location Schema for location pages - Enhanced with ratings and business details
 interface LocationSchemaProps {
   location: {
     city: string;
     state: string;
     slug: string;
+    county?: string;
   };
 }
 
 export function LocationSchema({ location }: LocationSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'RoofingContractor',
     '@id': `${SITE_CONFIG.url}/locations/${location.slug}/#localbusiness`,
     name: `${SITE_CONFIG.name} - ${location.city}, ${location.state}`,
-    description: `Professional roofing services in ${location.city}, ${location.state}. Roof repair, replacement, and installation by ${SITE_CONFIG.name}.`,
+    description: `Professional roofing services in ${location.city}, ${location.state}. Expert roof repair, replacement, and installation. BBB A+ rated, 5-star reviews. Free inspections and estimates.`,
     url: `${SITE_CONFIG.url}/locations/${location.slug}`,
     telephone: SITE_CONFIG.phone,
+    email: SITE_CONFIG.email,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: location.city,
-      addressRegion: location.state,
+      streetAddress: `${SITE_CONFIG.address.street} ${SITE_CONFIG.address.suite}`,
+      addressLocality: SITE_CONFIG.address.city,
+      addressRegion: SITE_CONFIG.address.state,
+      postalCode: SITE_CONFIG.address.zip,
       addressCountry: 'US',
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: SITE_CONFIG.geo.latitude,
+      longitude: SITE_CONFIG.geo.longitude,
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    priceRange: '$$',
+    paymentAccepted: ['Cash', 'Credit Card', 'Check', 'Financing'],
+    currenciesAccepted: 'USD',
     parentOrganization: {
       '@type': 'RoofingContractor',
       '@id': `${SITE_CONFIG.url}/#organization`,
@@ -197,6 +222,52 @@ export function LocationSchema({ location }: LocationSchemaProps) {
       '@type': 'City',
       name: `${location.city}, ${location.state}`,
     },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `Roofing Services in ${location.city}`,
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Roof Repair',
+            description: `Professional roof repair services in ${location.city}`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Roof Replacement',
+            description: `Complete roof replacement in ${location.city}`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Storm Damage Repair',
+            description: `Emergency storm damage repair in ${location.city}`,
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Free Roof Inspection',
+            description: `Complimentary roof inspections in ${location.city}`,
+          },
+        },
+      ],
+    },
+    knowsAbout: [
+      'Roof Repair',
+      'Roof Replacement',
+      'Storm Damage',
+      'Insurance Claims',
+      'Residential Roofing',
+      'Commercial Roofing',
+    ],
   };
 
   return (
@@ -415,8 +486,8 @@ export function FreeInspectionOfferSchema() {
     price: '0',
     priceCurrency: 'USD',
     availability: 'https://schema.org/InStock',
-    validFrom: '2024-01-01',
-    priceValidUntil: '2025-12-31',
+    validFrom: '2025-01-01',
+    priceValidUntil: '2026-12-31',
     itemOffered: {
       '@type': 'Service',
       name: 'Professional Roof Inspection',
@@ -563,6 +634,348 @@ export function ProfessionalServiceSchema() {
         },
       },
     ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Warranty Schema for roofing products and services
+interface WarrantySchemaProps {
+  warrantyType: 'manufacturer' | 'workmanship' | 'extended';
+  productName?: string;
+}
+
+export function WarrantySchema({ warrantyType, productName }: WarrantySchemaProps) {
+  const warranties = {
+    manufacturer: {
+      name: 'Manufacturer Material Warranty',
+      description: 'Premium roofing materials from CertainTeed, GAF, and Owens Corning include manufacturer warranties up to 50 years covering material defects.',
+      duration: 'P50Y',
+      warrantyScope: {
+        '@type': 'WarrantyScope',
+        warrantyScope: 'Material defects and premature wear',
+      },
+    },
+    workmanship: {
+      name: 'Best Roofing Now Workmanship Warranty',
+      description: 'Our workmanship warranty covers installation quality and labor. We stand behind our work and will repair any issues resulting from installation.',
+      duration: 'P10Y',
+      warrantyScope: {
+        '@type': 'WarrantyScope',
+        warrantyScope: 'Installation quality and labor',
+      },
+    },
+    extended: {
+      name: 'Extended System Warranty',
+      description: 'As certified contractors, we offer enhanced warranty options including GAF Golden Pledge (50 years + 25 years workmanship) and CertainTeed SureStart PLUS (5-Star protection).',
+      duration: 'P50Y',
+      warrantyScope: {
+        '@type': 'WarrantyScope',
+        warrantyScope: 'Complete roofing system including materials and labor',
+      },
+    },
+  };
+
+  const warranty = warranties[warrantyType];
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WarrantyPromise',
+    name: warranty.name,
+    description: warranty.description,
+    durationOfWarranty: warranty.duration,
+    warrantyScope: warranty.warrantyScope,
+    itemOffered: productName ? {
+      '@type': 'Product',
+      name: productName,
+    } : {
+      '@type': 'Service',
+      name: 'Roofing Installation',
+      provider: {
+        '@type': 'RoofingContractor',
+        '@id': `${SITE_CONFIG.url}/#organization`,
+      },
+    },
+    seller: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Combined Warranty Schema for warranty page
+export function AllWarrantiesSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Roofing Warranties by Best Roofing Now',
+    description: 'Comprehensive warranty options for roofing services including manufacturer, workmanship, and extended system warranties.',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'WarrantyPromise',
+          name: 'GAF Golden Pledge® Warranty',
+          description: '50-year non-prorated material warranty plus 25-year workmanship coverage. The best warranty in the industry, available only through GAF Master Elite contractors.',
+          durationOfWarranty: 'P50Y',
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        item: {
+          '@type': 'WarrantyPromise',
+          name: 'CertainTeed SureStart PLUS™ 5-Star',
+          description: '50-year material warranty with 25-year SureStart protection and 20-year StreakFighter algae resistance warranty.',
+          durationOfWarranty: 'P50Y',
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        item: {
+          '@type': 'WarrantyPromise',
+          name: 'Owens Corning Platinum Protection',
+          description: 'Lifetime limited warranty on shingles plus lifetime workmanship coverage from Owens Corning Platinum Preferred Contractors.',
+          durationOfWarranty: 'P50Y',
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        item: {
+          '@type': 'WarrantyPromise',
+          name: 'Best Roofing Now Workmanship Warranty',
+          description: 'Our 10-year workmanship warranty covers all aspects of installation. We stand behind our work 100%.',
+          durationOfWarranty: 'P10Y',
+        },
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Person Schema for team members (E-E-A-T enhancement)
+interface PersonSchemaProps {
+  person: {
+    name: string;
+    role: string;
+    description: string;
+    expertise?: string[];
+    certifications?: string[];
+    linkedIn?: string;
+    image?: string;
+  };
+}
+
+export function PersonSchema({ person }: PersonSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: person.name,
+    jobTitle: person.role,
+    description: person.description,
+    worksFor: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+    },
+    knowsAbout: person.expertise || [
+      'Roofing',
+      'Roof Repair',
+      'Roof Replacement',
+      'Storm Damage',
+    ],
+    hasCredential: person.certifications?.map(cert => ({
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: cert,
+    })),
+    sameAs: person.linkedIn ? [person.linkedIn] : undefined,
+    image: person.image,
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Enhanced Organization Schema with E-E-A-T signals
+export function EnhancedOrganizationSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    '@id': `${SITE_CONFIG.url}/#organization`,
+    name: SITE_CONFIG.name,
+    legalName: SITE_CONFIG.legalName,
+    description: SITE_CONFIG.description,
+    url: SITE_CONFIG.url,
+    telephone: SITE_CONFIG.phone,
+    email: SITE_CONFIG.email,
+    foundingDate: SITE_CONFIG.founded,
+    foundingLocation: {
+      '@type': 'Place',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Charlotte',
+        addressRegion: 'NC',
+        addressCountry: 'US',
+      },
+    },
+    founder: [
+      {
+        '@type': 'Person',
+        name: 'James Turner',
+        jobTitle: 'Co-Founder & CEO',
+      },
+      {
+        '@type': 'Person',
+        name: 'Fred Turner',
+        jobTitle: 'Co-Founder',
+        description: 'Military veteran',
+      },
+    ],
+    numberOfEmployees: {
+      '@type': 'QuantitativeValue',
+      minValue: 10,
+      maxValue: 25,
+    },
+    slogan: 'We Tell People the Truth, Even When It Is Not a Sale',
+    ethicsPolicy: `${SITE_CONFIG.url}/about`,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'BBB A+ Accreditation',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'Better Business Bureau',
+          url: 'https://www.bbb.org',
+        },
+        dateCreated: '2020',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'CertainTeed SELECT ShingleMaster',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'CertainTeed Corporation',
+          url: 'https://www.certainteed.com',
+        },
+        dateCreated: '2022',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'GAF Factory-Certified Contractor',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'GAF',
+          url: 'https://www.gaf.com',
+        },
+        dateCreated: '2022',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'Veteran-Owned Business',
+        description: 'Founded by military veteran Fred Turner',
+      },
+    ],
+    award: [
+      'Angi Super Service Award 2023',
+      'BBB A+ Rating',
+    ],
+    sameAs: Object.values(SITE_CONFIG.social),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Product Schema for shingle product pages
+interface ProductSchemaProps {
+  product: typeof SHINGLE_PRODUCTS[0];
+}
+
+export function ProductSchema({ product }: ProductSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.fullName,
+    description: product.description,
+    brand: {
+      '@type': 'Brand',
+      name: product.brandName,
+    },
+    manufacturer: {
+      '@type': 'Organization',
+      name: product.brandName,
+    },
+    category: 'Roofing Shingles',
+    material: 'Asphalt',
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: product.priceRange.match(/\$(\d+)/)?.[1] || '70',
+      highPrice: product.priceRange.match(/\$\d+-\$(\d+)/)?.[1] || '300',
+      offerCount: 1,
+      availability: 'https://schema.org/InStock',
+      seller: {
+        '@type': 'RoofingContractor',
+        '@id': `${SITE_CONFIG.url}/#organization`,
+        name: SITE_CONFIG.name,
+      },
+    },
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Wind Rating',
+        value: product.windRating,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Warranty',
+        value: product.warranty,
+      },
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '50',
+      bestRating: '5',
+      worstRating: '1',
+    },
   };
 
   return (

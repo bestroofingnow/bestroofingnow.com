@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { Phone, Star, Shield, Clock, Award } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Star, Shield, Clock, Award } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
+import { HeroCTA } from './HeroCTA';
 
 // Low-quality blur placeholder for hero background images
 const HERO_BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIBAAAgIBBAMBAAAAAAAAAAAAAQIDBAAFERIhBhMxQf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECAxEh/9oADAMBEQEEPwDKtLo6uo6nBTjuSViZVDOqFiATsT1neSOr4zGpxSqCKyIwf//Z';
@@ -98,28 +98,7 @@ export function Hero({
             </p>
 
             {/* CTA Buttons - CSS animation */}
-            <div
-              className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 animate-fade-in-up"
-              style={{ animationDelay: '0.15s' }}
-            >
-              <Button
-                href="/contact"
-                variant="primary"
-                size="lg"
-                className="bg-accent hover:bg-accent-dark text-white shadow-lg shadow-accent/30 hover:scale-105 active:scale-98 transition-transform"
-              >
-                Get Free Roof Inspection
-              </Button>
-              <Button
-                href={`tel:${SITE_CONFIG.phoneClean}`}
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary hover:scale-105 active:scale-98 transition-transform"
-                icon={<Phone className="w-5 h-5" aria-hidden="true" />}
-              >
-                {SITE_CONFIG.phone}
-              </Button>
-            </div>
+            <HeroCTA />
 
             {/* Trust Signals - CSS animation */}
             {showTrustBadges && (

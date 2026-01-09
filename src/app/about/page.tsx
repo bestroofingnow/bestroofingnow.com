@@ -9,23 +9,31 @@ import {
   Star,
   CheckCircle,
   Phone,
-  ArrowRight
+  ArrowRight,
+  BadgeCheck,
+  Briefcase,
+  Medal,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, EnhancedOrganizationSchema, PersonSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
-import { IMAGES, PAGE_IMAGES } from '@/lib/images';
+import { IMAGES } from '@/lib/images';
+import { TEAM_MEMBERS, COMPANY_CERTIFICATIONS, COMPANY_VALUES } from '@/lib/team';
 
 export const metadata: Metadata = {
   title: 'About Us | Veteran-Owned Roofing Company Charlotte NC',
   description:
-    'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Founded by James and his dad Fred with military values of integrity and service.',
+    'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Founded by James and his dad Fred with military values of integrity and service. BBB A+ rated, manufacturer certified.',
   keywords: [
     'veteran owned roofing company Charlotte',
     'family owned roofer Charlotte NC',
     'Best Roofing Now about',
     'Charlotte roofing contractor',
     'trusted roofer Charlotte',
+    'James Turner roofing',
+    'Fred Turner roofing',
+    'CertainTeed certified roofer',
+    'GAF certified Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/about`,
@@ -38,32 +46,12 @@ export const metadata: Metadata = {
   },
 };
 
-const values = [
-  {
-    icon: Shield,
-    title: 'Integrity First',
-    description:
-      'We tell the truth, even when it means losing a sale. Your trust matters more than any contract.',
-  },
-  {
-    icon: Heart,
-    title: 'Service Before Self',
-    description:
-      'A value learned in the military and applied to every roof. Your home is our mission.',
-  },
-  {
-    icon: Award,
-    title: 'Excellence in All We Do',
-    description:
-      'From the first phone call to the final inspection, we hold ourselves to the highest standards.',
-  },
-  {
-    icon: Users,
-    title: 'Family Values',
-    description:
-      'We treat your home like it belongs to family. Because to us, every customer becomes family.',
-  },
-];
+const iconMap: Record<string, React.ElementType> = {
+  Shield,
+  Heart,
+  Award,
+  Users,
+};
 
 const milestones = [
   {
@@ -107,6 +95,20 @@ export default function AboutPage() {
           { name: 'About Us', url: `${SITE_CONFIG.url}/about` },
         ]}
       />
+      <EnhancedOrganizationSchema />
+      {TEAM_MEMBERS.map((member) => (
+        <PersonSchema
+          key={member.id}
+          person={{
+            name: member.name,
+            role: member.role,
+            description: member.shortBio,
+            expertise: member.expertise,
+            certifications: member.certifications,
+            linkedIn: member.linkedIn,
+          }}
+        />
+      ))}
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -182,8 +184,76 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Truth Story */}
+      {/* Meet Our Team - E-E-A-T Section */}
       <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Meet Our Leadership Team
+            </h2>
+            <p className="text-gray text-lg">
+              The people behind Best Roofing Now, bringing decades of combined experience to protect your home.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {TEAM_MEMBERS.map((member) => (
+              <div key={member.id} className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="p-6">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      {member.isVeteran ? (
+                        <Medal className="w-8 h-8 text-primary" />
+                      ) : member.isFounder ? (
+                        <Briefcase className="w-8 h-8 text-primary" />
+                      ) : (
+                        <BadgeCheck className="w-8 h-8 text-primary" />
+                      )}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-dark">{member.name}</h3>
+                      <p className="text-accent font-semibold">{member.role}</p>
+                      {member.isVeteran && (
+                        <span className="inline-flex items-center gap-1 text-xs bg-primary/10 text-primary px-2 py-1 rounded-full mt-1">
+                          <Medal className="w-3 h-3" />
+                          Military Veteran
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <p className="text-gray text-sm mb-4">{member.shortBio}</p>
+                  <div className="text-sm text-gray mb-4">
+                    <strong className="text-dark">Experience:</strong> {member.experience}
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-sm font-semibold text-dark">Certifications:</p>
+                    <ul className="space-y-1">
+                      {member.certifications.slice(0, 4).map((cert, index) => (
+                        <li key={index} className="flex items-center gap-2 text-sm text-gray">
+                          <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                          {cert}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {member.linkedIn && (
+                    <a
+                      href={member.linkedIn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-primary hover:text-accent mt-4 transition"
+                    >
+                      View LinkedIn Profile <ArrowRight className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Truth Story */}
+      <section className="section">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
@@ -210,7 +280,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="section">
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -221,24 +291,27 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value) => (
-              <div
-                key={value.title}
-                className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow text-center"
-              >
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-8 h-8 text-primary" />
+            {COMPANY_VALUES.map((value) => {
+              const Icon = iconMap[value.icon] || Shield;
+              return (
+                <div
+                  key={value.title}
+                  className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow text-center"
+                >
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-bold text-dark mb-2">{value.title}</h3>
+                  <p className="text-gray text-sm">{value.description}</p>
                 </div>
-                <h3 className="font-bold text-dark mb-2">{value.title}</h3>
-                <p className="text-gray text-sm">{value.description}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Timeline */}
-      <section className="section bg-light">
+      <section className="section">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -274,12 +347,60 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* Detailed Certifications Section - E-E-A-T */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Our Certifications & Credentials
+            </h2>
+            <p className="text-gray text-lg">
+              Industry-recognized certifications that ensure quality workmanship and protect your investment.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {COMPANY_CERTIFICATIONS.map((cert) => (
+              <div key={cert.name} className="bg-white rounded-xl shadow-md p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <BadgeCheck className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="font-bold text-dark text-lg mb-1">{cert.name}</h3>
+                    <p className="text-sm text-accent mb-2">Issued by {cert.issuer} ({cert.year})</p>
+                    <p className="text-gray text-sm mb-3">{cert.description}</p>
+                    <div className="space-y-1">
+                      {cert.benefits.slice(0, 3).map((benefit, index) => (
+                        <div key={index} className="flex items-center gap-2 text-sm text-gray">
+                          <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                          {benefit}
+                        </div>
+                      ))}
+                    </div>
+                    {cert.verificationUrl && (
+                      <a
+                        href={cert.verificationUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm text-primary hover:text-accent mt-3 transition"
+                      >
+                        Verify Certification <ArrowRight className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Certifications Visual */}
       <section className="section">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Certifications & Awards
+              Trusted & Verified
             </h2>
             <p className="text-gray text-lg">
               Recognized for excellence by industry leaders and customer advocacy groups.

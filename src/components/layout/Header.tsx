@@ -1,43 +1,19 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
-import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
+import { Menu, X, Phone, ChevronDown, ChevronRight, MapPin, Home, Building2, Wrench, AlertTriangle, Settings, Award } from 'lucide-react';
+import { SITE_CONFIG, SERVICES, LOCATIONS, ROOFING_MATERIALS } from '@/lib/constants';
 import { Button } from '@/components/ui/Button';
 import { cn, trackPhoneClick } from '@/lib/utils';
+import { MegaMenu } from './MegaMenu';
 
-interface NavChild {
-  label: string;
-  href: string;
-  description?: string;
-}
-
-interface NavItem {
-  label: string;
-  href: string;
-  children?: NavChild[];
-}
-
-const navigation: NavItem[] = [
-  {
-    label: 'Services',
-    href: '/services',
-    children: SERVICES.map((s) => ({
-      label: s.title,
-      href: `/services/${s.slug}`,
-      description: s.description.slice(0, 60) + '...',
-    })),
-  },
-  {
-    label: 'Locations',
-    href: '/locations',
-    children: LOCATIONS.slice(0, 8).map((l) => ({
-      label: `${l.city}, ${l.state}`,
-      href: `/locations/${l.slug}`,
-    })),
-  },
+// Simplified mobile navigation
+const mobileNavigation = [
+  { label: 'Services', href: '/services', hasChildren: true },
+  { label: 'Locations', href: '/locations', hasChildren: true },
+  { label: 'Materials', href: '/materials', hasChildren: true },
   { label: 'About', href: '/about' },
   { label: 'Reviews', href: '/reviews' },
   { label: 'Financing', href: '/financing' },
@@ -48,9 +24,7 @@ const navigation: NavItem[] = [
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [focusedIndex, setFocusedIndex] = useState(-1);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [expandedMobileSection, setExpandedMobileSection] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,52 +34,21 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle keyboard navigation for dropdowns
-  const handleKeyDown = useCallback((e: React.KeyboardEvent, item: NavItem) => {
-    if (!item.children) return;
-
-    const children = item.children;
-
-    switch (e.key) {
-      case 'Enter':
-      case ' ':
-        e.preventDefault();
-        setOpenDropdown(openDropdown === item.label ? null : item.label);
-        setFocusedIndex(0);
-        break;
-      case 'ArrowDown':
-        e.preventDefault();
-        if (openDropdown === item.label) {
-          setFocusedIndex(prev => Math.min(prev + 1, children.length - 1));
-        } else {
-          setOpenDropdown(item.label);
-          setFocusedIndex(0);
-        }
-        break;
-      case 'ArrowUp':
-        e.preventDefault();
-        if (openDropdown === item.label) {
-          setFocusedIndex(prev => Math.max(prev - 1, 0));
-        }
-        break;
-      case 'Escape':
-        setOpenDropdown(null);
-        setFocusedIndex(-1);
-        break;
-      case 'Tab':
-        setOpenDropdown(null);
-        setFocusedIndex(-1);
-        break;
-    }
-  }, [openDropdown]);
-
-  // Focus dropdown item when index changes
+  // Close mobile menu on window resize
   useEffect(() => {
-    if (focusedIndex >= 0 && dropdownRef.current) {
-      const links = dropdownRef.current.querySelectorAll('a[role="menuitem"]');
-      (links[focusedIndex] as HTMLElement)?.focus();
-    }
-  }, [focusedIndex]);
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsMobileMenuOpen(false);
+        setExpandedMobileSection(null);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const toggleMobileSection = (section: string) => {
+    setExpandedMobileSection(expandedMobileSection === section ? null : section);
+  };
 
   return (
     <>
@@ -152,96 +95,8 @@ export function Header() {
               />
             </Link>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
-              {navigation.map((item) => (
-                <div
-                  key={item.label}
-                  className="relative"
-                  onMouseEnter={() => item.children && setOpenDropdown(item.label)}
-                  onMouseLeave={() => { setOpenDropdown(null); setFocusedIndex(-1); }}
-                >
-                  {item.children ? (
-                    <button
-                      type="button"
-                      className={cn(
-                        'flex items-center gap-1 px-4 py-2 text-dark font-medium rounded-lg',
-                        'hover:bg-light hover:text-primary transition-colors'
-                      )}
-                      aria-haspopup="menu"
-                      aria-expanded={openDropdown === item.label}
-                      aria-label={`${item.label} menu`}
-                      onKeyDown={(e) => handleKeyDown(e, item)}
-                      onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
-                    >
-                      {item.label}
-                      <ChevronDown className={cn('w-4 h-4 transition-transform', openDropdown === item.label && 'rotate-180')} aria-hidden="true" />
-                    </button>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className={cn(
-                        'flex items-center gap-1 px-4 py-2 text-dark font-medium rounded-lg',
-                        'hover:bg-light hover:text-primary transition-colors'
-                      )}
-                    >
-                      {item.label}
-                    </Link>
-                  )}
-
-                  {/* Dropdown Menu */}
-                  {item.children && openDropdown === item.label && (
-                    <div
-                      ref={dropdownRef}
-                      className={cn(
-                        'absolute top-full left-0 bg-white rounded-lg shadow-xl border border-gray-100 py-4 pt-6 animate-fade-in',
-                        item.label === 'Services' ? 'w-[600px] -left-40' : 'w-64'
-                      )}
-                      style={{ marginTop: '-8px' }}
-                      role="menu"
-                      aria-label={`${item.label} submenu`}
-                    >
-                      <div
-                        className={cn(
-                          item.label === 'Services'
-                            ? 'grid grid-cols-3 gap-2 px-4'
-                            : 'space-y-1 px-2'
-                        )}
-                      >
-                        {item.children.map((child, index) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            role="menuitem"
-                            tabIndex={focusedIndex === index ? 0 : -1}
-                            className={cn(
-                              'block px-3 py-2 rounded-lg hover:bg-light transition-colors focus:bg-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset',
-                              item.label === 'Services' && 'text-center'
-                            )}
-                            onKeyDown={(e) => {
-                              if (e.key === 'Escape') {
-                                setOpenDropdown(null);
-                                setFocusedIndex(-1);
-                              }
-                            }}
-                          >
-                            <span className="font-medium text-dark text-sm">{child.label}</span>
-                          </Link>
-                        ))}
-                      </div>
-                      <div className="border-t border-gray-100 mt-3 pt-3 px-4">
-                        <Link
-                          href={item.href}
-                          className="text-primary text-sm font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded"
-                        >
-                          View All {item.label} →
-                        </Link>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </nav>
+            {/* Desktop Navigation - Mega Menu */}
+            <MegaMenu isScrolled={isScrolled} />
 
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center gap-3">
@@ -291,24 +146,119 @@ export function Header() {
         {isMobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="lg:hidden bg-white border-t border-gray-100 animate-fade-in"
+            className="lg:hidden bg-white border-t border-gray-100 animate-fade-in max-h-[calc(100vh-112px)] overflow-y-auto"
             role="navigation"
             aria-label="Mobile navigation"
           >
             <div className="container py-4">
-              <nav className="space-y-2" aria-label="Main navigation">
-                {navigation.map((item) => (
+              <nav className="space-y-1" aria-label="Main navigation">
+                {mobileNavigation.map((item) => (
                   <div key={item.label}>
-                    <Link
-                      href={item.href}
-                      className="block py-3 px-4 text-dark font-medium rounded-lg hover:bg-light"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
+                    {item.hasChildren ? (
+                      <>
+                        <button
+                          className="w-full flex items-center justify-between py-3 px-4 text-dark font-medium rounded-lg hover:bg-light"
+                          onClick={() => toggleMobileSection(item.label)}
+                          aria-expanded={expandedMobileSection === item.label}
+                        >
+                          {item.label}
+                          <ChevronDown
+                            className={cn(
+                              'w-5 h-5 transition-transform',
+                              expandedMobileSection === item.label && 'rotate-180'
+                            )}
+                          />
+                        </button>
+
+                        {/* Expanded Sections */}
+                        {expandedMobileSection === item.label && (
+                          <div className="pl-4 pb-2 animate-fade-in">
+                            {item.label === 'Services' && (
+                              <div className="space-y-1">
+                                {SERVICES.slice(0, 8).map((service) => (
+                                  <Link
+                                    key={service.slug}
+                                    href={`/services/${service.slug}`}
+                                    className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    <ChevronRight className="w-4 h-4" />
+                                    {service.shortTitle}
+                                  </Link>
+                                ))}
+                                <Link
+                                  href="/services"
+                                  className="flex items-center gap-2 py-2 px-4 text-sm text-primary font-semibold rounded-lg hover:bg-light"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  View All Services →
+                                </Link>
+                              </div>
+                            )}
+
+                            {item.label === 'Locations' && (
+                              <div className="space-y-1">
+                                {LOCATIONS.slice(0, 8).map((loc) => (
+                                  <Link
+                                    key={loc.slug}
+                                    href={`/locations/${loc.slug}`}
+                                    className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    <MapPin className="w-4 h-4" />
+                                    {loc.city}, {loc.state}
+                                  </Link>
+                                ))}
+                                <Link
+                                  href="/locations"
+                                  className="flex items-center gap-2 py-2 px-4 text-sm text-primary font-semibold rounded-lg hover:bg-light"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  View All Locations →
+                                </Link>
+                              </div>
+                            )}
+
+                            {item.label === 'Materials' && (
+                              <div className="space-y-1">
+                                {ROOFING_MATERIALS.map((material) => (
+                                  <Link
+                                    key={material.slug}
+                                    href={`/materials/${material.slug}`}
+                                    className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    <ChevronRight className="w-4 h-4" />
+                                    {material.shortName}
+                                  </Link>
+                                ))}
+                                <Link
+                                  href="/brands"
+                                  className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  <Award className="w-4 h-4" />
+                                  View Brands
+                                </Link>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="block py-3 px-4 text-dark font-medium rounded-lg hover:bg-light"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    )}
                   </div>
                 ))}
               </nav>
+
+              {/* Mobile CTA */}
               <div className="mt-4 pt-4 border-t border-gray-100 space-y-3">
                 <a
                   href={`tel:${SITE_CONFIG.phoneClean}`}

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Phone, CheckCircle, XCircle, ArrowRight, Scale, Trophy } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_COMPARISONS, ROOFING_MATERIALS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { EstimateButton } from '@/components/estimate';
 
 interface ComparePageProps {
   params: Promise<{ slug: string }>;
@@ -325,12 +326,12 @@ export default async function ComparePage({ params }: ComparePageProps) {
                 <Phone className="w-5 h-5" aria-hidden="true" />
                 Talk to an Expert
               </a>
-              <Link
-                href="/contact"
-                className="btn bg-white text-primary hover:bg-light"
+              <EstimateButton
+                variant="white"
+                className="btn"
               >
-                Get Free Estimate
-              </Link>
+                Get Free Instant Estimate
+              </EstimateButton>
             </div>
           </div>
         </div>
@@ -540,12 +541,13 @@ export default async function ComparePage({ params }: ComparePageProps) {
               <Phone className="w-5 h-5" aria-hidden="true" />
               {SITE_CONFIG.phone}
             </a>
-            <Link
-              href="/contact"
-              className="btn bg-accent hover:bg-accent-dark text-white text-lg px-8"
+            <EstimateButton
+              variant="accent"
+              size="lg"
+              className="px-8"
             >
-              Get Free Estimate
-            </Link>
+              Get Free Instant Estimate
+            </EstimateButton>
           </div>
         </div>
       </section>

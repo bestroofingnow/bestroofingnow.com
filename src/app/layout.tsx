@@ -8,6 +8,7 @@ import { StickyCTA } from '@/components/sections/CTASection';
 import { LocalBusinessSchema, WebSiteSchema, HowToGetRoofEstimateSchema, FreeInspectionOfferSchema, ReviewsSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import CustomCursor from '@/components/ui/CustomCursor';
+import { EstimateProvider } from '@/components/estimate';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -123,26 +124,28 @@ export default function RootLayout({
         <ReviewsSchema />
       </head>
       <body className="antialiased">
-        <CustomCursor />
-        {/* Skip to main content link for accessibility */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
-        >
-          Skip to main content
-        </a>
-        <Header />
-        <main id="main-content" tabIndex={-1}>{children}</main>
-        <Footer />
-        <StickyCTA />
-              {/* GHL Chat Widget */}
-        <Script
-          id="ghl-chat-widget"
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com"
-          data-widget-id="692def99cf45951b90d25076"
-          strategy="lazyOnload"
-        />
+        <EstimateProvider>
+          <CustomCursor />
+          {/* Skip to main content link for accessibility */}
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+          >
+            Skip to main content
+          </a>
+          <Header />
+          <main id="main-content" tabIndex={-1}>{children}</main>
+          <Footer />
+          <StickyCTA />
+          {/* GHL Chat Widget */}
+          <Script
+            id="ghl-chat-widget"
+            src="https://widgets.leadconnectorhq.com/loader.js"
+            data-resources-url="https://widgets.leadconnectorhq.com"
+            data-widget-id="692def99cf45951b90d25076"
+            strategy="lazyOnload"
+          />
+        </EstimateProvider>
       </body>
     </html>
   );

@@ -15,6 +15,12 @@ import {
   CloudRain,
   Droplets,
   Layers,
+  Settings,
+  Sun,
+  Wind,
+  Flame,
+  PanelTop,
+  Square,
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
@@ -24,6 +30,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 import { getServiceFAQs } from '@/lib/faqs';
+import { EstimateButton } from '@/components/estimate';
 
 // Map service slugs to their image sets
 const serviceImages: Record<string, string[]> = {
@@ -36,6 +43,12 @@ const serviceImages: Record<string, string[]> = {
   'storm-damage': [IMAGES.hero.hero7, IMAGES.projects.stormDamage1, IMAGES.services.stormDamage, IMAGES.services.emergency, IMAGES.marketing.image4],
   'gutters': [IMAGES.hero.hero8, IMAGES.services.gutters, IMAGES.cleaning.softWash, IMAGES.cleaning.pressure, IMAGES.projects.work5],
   'siding': [IMAGES.hero.hero9, IMAGES.services.siding, IMAGES.beforeAfter.commercialSiding.after, IMAGES.problems.crackedSiding, IMAGES.problems.peeling],
+  'roof-maintenance': [IMAGES.hero.hero10, IMAGES.services.inspection, IMAGES.projects.work1, IMAGES.houses.house1, IMAGES.marketing.image3],
+  'skylight-installation': [IMAGES.hero.hero11, IMAGES.services.inspection, IMAGES.houses.modern1, IMAGES.projects.work2, IMAGES.marketing.image4],
+  'roof-ventilation': [IMAGES.hero.hero12, IMAGES.services.inspection, IMAGES.houses.house2, IMAGES.projects.closeup1, IMAGES.marketing.image5],
+  'chimney-services': [IMAGES.hero.hero13, IMAGES.services.repairs, IMAGES.projects.work3, IMAGES.houses.house3, IMAGES.marketing.image6],
+  'soffit-fascia': [IMAGES.hero.hero14, IMAGES.services.gutters, IMAGES.projects.work4, IMAGES.houses.modern2, IMAGES.marketing.image7],
+  'flat-roof-repair': [IMAGES.hero.hero15, IMAGES.commercial.office, IMAGES.commercial.warehouse, IMAGES.projects.work5, IMAGES.marketing.image8],
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -48,6 +61,12 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   CloudRain,
   Droplets,
   Layers,
+  Settings,
+  Sun,
+  Wind,
+  Flame,
+  PanelTop,
+  Square,
 };
 
 // Service-specific content
@@ -258,6 +277,138 @@ const serviceContent: Record<
       { question: 'Does new siding improve energy efficiency?', answer: 'Yes! Modern siding with proper insulation can significantly improve your home\'s energy efficiency, reducing heating and cooling costs.' },
     ],
   },
+  'roof-maintenance': {
+    benefits: [
+      'Extend your roof\'s lifespan by years',
+      'Catch small issues before they become major repairs',
+      'Annual inspection with detailed report',
+      'Priority scheduling for repairs',
+      'Maintain warranty compliance',
+      'Protect your home investment',
+    ],
+    process: [
+      { title: 'Annual Inspection', description: 'Comprehensive roof assessment with detailed documentation.' },
+      { title: 'Preventive Repairs', description: 'Fix minor issues before they become costly problems.' },
+      { title: 'Debris Removal', description: 'Clear leaves, branches, and buildup from roof and gutters.' },
+      { title: 'Detailed Report', description: 'Receive photos and recommendations for your records.' },
+      { title: 'Scheduled Follow-ups', description: 'We remind you when your next maintenance is due.' },
+    ],
+    faqs: [
+      { question: 'How often should I have roof maintenance performed?', answer: 'We recommend annual maintenance, ideally in spring or fall. Homes with many trees may benefit from twice-yearly maintenance to clear debris and check for damage.' },
+      { question: 'What does roof maintenance include?', answer: 'Our maintenance includes a full inspection, minor repairs, clearing debris from roof and gutters, checking flashing and seals, and a detailed condition report.' },
+      { question: 'Will maintenance really extend my roof\'s life?', answer: 'Yes! Regular maintenance can add 5-10 years to your roof\'s lifespan by catching and fixing small issues before they cause significant damage.' },
+    ],
+  },
+  'skylight-installation': {
+    benefits: [
+      'Add natural light to any room',
+      'Energy-efficient skylight options',
+      'Expert leak-free installation',
+      'Venting skylights for ventilation',
+      'Tubular options for tight spaces',
+      'Increase home value',
+    ],
+    process: [
+      { title: 'Consultation', description: 'Discuss your goals and identify the best skylight location.' },
+      { title: 'Product Selection', description: 'Choose from fixed, venting, or tubular skylights.' },
+      { title: 'Structural Assessment', description: 'Evaluate roof structure and plan the installation.' },
+      { title: 'Professional Installation', description: 'Expert installation with proper flashing and sealing.' },
+      { title: 'Quality Assurance', description: 'Test for leaks and ensure proper operation.' },
+    ],
+    faqs: [
+      { question: 'Will a skylight leak?', answer: 'Not when properly installed! We use premium flashing kits and follow manufacturer guidelines precisely. Our skylights are warranted against leaks.' },
+      { question: 'What type of skylight is best for my home?', answer: 'It depends on your needs. Fixed skylights are most affordable. Venting skylights add ventilation. Tubular skylights work great for small spaces or rooms without direct roof access.' },
+      { question: 'How much natural light will I get?', answer: 'A standard 2x4 skylight can illuminate a 200+ sq ft room. We\'ll help you determine the right size and placement for optimal lighting.' },
+    ],
+  },
+  'roof-ventilation': {
+    benefits: [
+      'Reduce attic heat in summer',
+      'Prevent ice dams in winter',
+      'Lower energy costs',
+      'Extend shingle lifespan',
+      'Prevent moisture damage',
+      'Improve indoor comfort',
+    ],
+    process: [
+      { title: 'Ventilation Assessment', description: 'Calculate your attic\'s ventilation needs based on size.' },
+      { title: 'Solution Design', description: 'Recommend the right combination of intake and exhaust vents.' },
+      { title: 'Professional Installation', description: 'Install ridge vents, soffit vents, or powered ventilators.' },
+      { title: 'Balance Check', description: 'Ensure proper airflow balance for optimal performance.' },
+      { title: 'Performance Verification', description: 'Test ventilation effectiveness and explain operation.' },
+    ],
+    faqs: [
+      { question: 'Why is roof ventilation important?', answer: 'Proper ventilation prevents heat buildup that damages shingles, reduces energy costs, and prevents moisture problems that lead to mold and rot.' },
+      { question: 'What signs indicate poor ventilation?', answer: 'Signs include ice dams in winter, excessive heat in upper floors, curling shingles, mold in the attic, and higher-than-expected energy bills.' },
+      { question: 'What type of ventilation do I need?', answer: 'Most homes benefit from a combination of soffit intake vents and ridge exhaust vents. We\'ll calculate your specific needs based on attic square footage.' },
+    ],
+  },
+  'chimney-services': {
+    benefits: [
+      'Prevent roof leaks around chimney',
+      'Expert flashing installation',
+      'Chimney cap installation',
+      'Waterproofing services',
+      'Crown repair and restoration',
+      'Protect your home from water damage',
+    ],
+    process: [
+      { title: 'Chimney Inspection', description: 'Assess chimney condition, flashing, cap, and crown.' },
+      { title: 'Problem Identification', description: 'Document issues and recommend solutions.' },
+      { title: 'Repair Planning', description: 'Provide detailed quote for necessary repairs.' },
+      { title: 'Professional Repair', description: 'Expert repairs with quality materials.' },
+      { title: 'Waterproofing', description: 'Apply waterproof sealant for long-term protection.' },
+    ],
+    faqs: [
+      { question: 'Why do chimneys cause roof leaks?', answer: 'The chimney-roof intersection is vulnerable to leaks if flashing fails or the chimney crown cracks. Regular maintenance prevents these common issues.' },
+      { question: 'Do I need a chimney cap?', answer: 'Yes! Chimney caps prevent rain, debris, and animals from entering your chimney. They also contain sparks and improve draft.' },
+      { question: 'How often should chimney flashing be replaced?', answer: 'Quality flashing lasts 20-30 years but should be inspected annually. We often repair or reseal flashing rather than full replacement.' },
+    ],
+  },
+  'soffit-fascia': {
+    benefits: [
+      'Protect roof edges from weather',
+      'Improve attic ventilation',
+      'Enhance curb appeal',
+      'Prevent pest entry',
+      'Low-maintenance materials',
+      'Color options to match your home',
+    ],
+    process: [
+      { title: 'Assessment', description: 'Inspect existing soffit and fascia condition.' },
+      { title: 'Material Selection', description: 'Choose aluminum, vinyl, or wood options.' },
+      { title: 'Color Matching', description: 'Select colors that complement your home.' },
+      { title: 'Professional Installation', description: 'Remove old materials and install new.' },
+      { title: 'Final Inspection', description: 'Ensure proper fit, ventilation, and appearance.' },
+    ],
+    faqs: [
+      { question: 'What is soffit and fascia?', answer: 'Fascia is the board behind your gutter that covers rafter ends. Soffit is the underside of your roof overhang. Together they protect your roof structure and allow ventilation.' },
+      { question: 'What material is best for soffit and fascia?', answer: 'Aluminum is most popular for durability and low maintenance. Vinyl is affordable. Wood offers a traditional look but requires more upkeep.' },
+      { question: 'How do I know if my soffit needs replacing?', answer: 'Signs include peeling paint, rotting wood, pest damage, visible holes, or sagging. We provide free inspections to assess your needs.' },
+    ],
+  },
+  'flat-roof-repair': {
+    benefits: [
+      'Specialized flat roof expertise',
+      'Ponding water solutions',
+      'Membrane repair and coating',
+      'Commercial and residential',
+      'Emergency leak repair',
+      'Extend roof life with coatings',
+    ],
+    process: [
+      { title: 'Flat Roof Inspection', description: 'Identify leaks, ponding areas, and membrane damage.' },
+      { title: 'Solution Recommendation', description: 'Repair, coating, or replacement based on condition.' },
+      { title: 'Surface Preparation', description: 'Clean and prep the roof surface.' },
+      { title: 'Expert Repair', description: 'Apply patches, seams, or full coatings as needed.' },
+      { title: 'Quality Testing', description: 'Water test repairs to ensure leak-free performance.' },
+    ],
+    faqs: [
+      { question: 'Why do flat roofs leak more than pitched roofs?', answer: 'Flat roofs can develop ponding water if not properly sloped. Over time, standing water degrades membranes and causes leaks. We address both the leak and drainage issues.' },
+      { question: 'Can you coat my flat roof instead of replacing it?', answer: 'Often yes! Roof coatings can extend a flat roof\'s life by 10-15 years at a fraction of replacement cost. We\'ll assess if your roof is a good candidate.' },
+      { question: 'What types of flat roofs do you repair?', answer: 'We repair all types: TPO, EPDM, PVC, modified bitumen, and built-up roofs. Our technicians are trained in all major flat roofing systems.' },
+    ],
+  },
 };
 
 // Default content for services without specific content
@@ -377,12 +528,12 @@ export default async function ServicePage({ params }: PageProps) {
             </h1>
             <p className="text-xl text-white/90 mb-8">{service.description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                href="/contact"
+              <EstimateButton
+                variant="accent"
                 className="bg-accent hover:bg-accent-dark text-white"
               >
-                Get Free Estimate
-              </Button>
+                Get Free Instant Estimate
+              </EstimateButton>
               <Button
                 href={`tel:${SITE_CONFIG.phoneClean}`}
                 variant="outline"

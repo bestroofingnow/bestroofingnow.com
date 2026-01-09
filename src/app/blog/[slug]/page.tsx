@@ -2,11 +2,12 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, ArrowLeft, Clock, Phone, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowLeft, Clock, Phone, ArrowRight, MapPin } from 'lucide-react';
 import { BreadcrumbSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getPostBySlug, getPosts } from '@/lib/wordpress';
+import { addInternalLinks, getSmartLinks } from '@/lib/internal-links';
 
 // Low-quality blur placeholder for blog post images
 const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
@@ -86,6 +87,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const title = stripHtml(post.title.rendered);
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
   const readTime = estimateReadTime(post.content.rendered);
+
+  // Process content with automatic internal links
+  const processedContent = addInternalLinks(post.content.rendered);
+
+  // Get smart related links based on content analysis
+  const smartLinks = getSmartLinks(post.content.rendered);
 
   // Get related posts
   const allPosts = await getPosts({ perPage: 4 });
@@ -173,10 +180,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               )}
 
-              {/* Content */}
+              {/* Content - with automatic internal links */}
               <div
                 className="prose prose-lg max-w-none prose-headings:text-primary prose-a:text-primary hover:prose-a:text-accent"
-                dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+                dangerouslySetInnerHTML={{ __html: processedContent }}
               />
 
               {/* Author Box */}
@@ -194,20 +201,27 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               </div>
 
-              {/* Related Services - Internal Linking for SEO */}
+              {/* Dynamic Related Services - Based on Content Analysis */}
               <div className="mt-8 p-6 bg-white border border-gray-200 rounded-xl">
-                <h3 className="font-bold text-dark mb-4">Our Roofing Services</h3>
+                <h3 className="font-bold text-dark mb-4">
+                  {smartLinks.services.length > 0 ? 'Related Roofing Services' : 'Our Roofing Services'}
+                </h3>
                 <p className="text-gray text-sm mb-4">
-                  Need help with your roof? Explore our professional roofing services in Charlotte NC.
+                  {smartLinks.services.length > 0
+                    ? 'Based on this article, you may be interested in these services.'
+                    : 'Need help with your roof? Explore our professional roofing services in Charlotte NC.'}
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                  {SERVICES.slice(0, 6).map((service) => (
+                  {(smartLinks.services.length > 0
+                    ? smartLinks.services
+                    : SERVICES.slice(0, 6).map(s => ({ name: s.title, url: `/services/${s.slug}` }))
+                  ).map((service) => (
                     <Link
-                      key={service.slug}
-                      href={`/services/${service.slug}`}
+                      key={service.url}
+                      href={service.url}
                       className="text-sm text-primary hover:text-accent transition-colors"
                     >
-                      {service.title} →
+                      {service.name} →
                     </Link>
                   ))}
                 </div>
@@ -218,6 +232,37 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   View All Services →
                 </Link>
               </div>
+
+              {/* Dynamic Related Locations - For Local SEO */}
+              {smartLinks.locations.length > 0 && (
+                <div className="mt-4 p-6 bg-white border border-gray-200 rounded-xl">
+                  <h3 className="font-bold text-dark mb-4 flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    Service Areas Mentioned
+                  </h3>
+                  <p className="text-gray text-sm mb-4">
+                    We proudly serve these Charlotte-area communities with professional roofing services.
+                  </p>
+                  <div className="grid grid-cols-2 gap-2">
+                    {smartLinks.locations.map((location) => (
+                      <Link
+                        key={location.url}
+                        href={location.url}
+                        className="flex items-center gap-2 text-sm text-primary hover:text-accent transition-colors"
+                      >
+                        <MapPin className="w-3 h-3" />
+                        {location.name} →
+                      </Link>
+                    ))}
+                  </div>
+                  <Link
+                    href="/locations"
+                    className="inline-block mt-4 text-sm font-semibold text-primary hover:text-accent"
+                  >
+                    View All Service Areas →
+                  </Link>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}

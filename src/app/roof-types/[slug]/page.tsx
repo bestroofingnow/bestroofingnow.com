@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Phone, CheckCircle, AlertTriangle, ArrowRight, Home } from 'lucide-react';
 import { SITE_CONFIG, ROOF_TYPES } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { EstimateButton } from '@/components/estimate';
 
 interface RoofTypePageProps {
   params: Promise<{ slug: string }>;
@@ -262,12 +263,13 @@ export default async function RoofTypePage({ params }: RoofTypePageProps) {
               <Phone className="w-5 h-5" aria-hidden="true" />
               {SITE_CONFIG.phone}
             </a>
-            <Link
-              href="/contact"
-              className="btn bg-accent hover:bg-accent-dark text-white text-lg px-8"
+            <EstimateButton
+              variant="accent"
+              size="lg"
+              className="px-8"
             >
-              Get Free Estimate
-            </Link>
+              Get Free Instant Estimate
+            </EstimateButton>
           </div>
         </div>
       </section>

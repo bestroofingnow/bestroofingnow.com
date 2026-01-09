@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Phone, CheckCircle, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, CheckCircle, ArrowRight, Cloud, Thermometer, Droplets, Wind, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
@@ -14,6 +14,8 @@ import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs } from '@/lib/faqs';
 import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
+import { EstimateButton } from '@/components/estimate';
+import { getClimateData, CHARLOTTE_CLIMATE } from '@/lib/climate';
 
 // Location-specific content for unique pages
 const locationContent: Record<
@@ -619,6 +621,9 @@ export default async function LocationPage({ params }: PageProps) {
   // Generate unique FAQs for this location
   const locationFAQs = generateLocationFAQs(location.city, location.state, location.county);
 
+  // Get climate data for this location
+  const climateData = getClimateData(city);
+
   return (
     <>
       <LocationSchema location={location} />
@@ -656,12 +661,12 @@ export default async function LocationPage({ params }: PageProps) {
             </h1>
             <p className="text-xl text-white/90 mb-8">{content.description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                href="/contact"
+              <EstimateButton
+                variant="accent"
                 className="bg-accent hover:bg-accent-dark text-white"
               >
-                Get Free Estimate in {location.city}
-              </Button>
+                Get Free Instant Estimate in {location.city}
+              </EstimateButton>
               <Button
                 href={`tel:${SITE_CONFIG.phoneClean}`}
                 variant="outline"
@@ -907,6 +912,88 @@ export default async function LocationPage({ params }: PageProps) {
         subtitle={`We offer comprehensive roofing solutions for ${location.city} homes and businesses.`}
         showAll={true}
       />
+
+      {/* Climate & Weather Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-primary mb-4">
+                {location.city} Weather & Roofing Considerations
+              </h2>
+              <p className="text-gray text-lg max-w-2xl mx-auto">
+                Understanding local weather patterns helps you make informed decisions about your roofing materials and maintenance needs.
+              </p>
+            </div>
+
+            {/* Climate Stats Grid */}
+            <div className="grid md:grid-cols-4 gap-4 mb-8">
+              <div className="bg-white rounded-xl p-5 shadow-md text-center">
+                <Droplets className="w-8 h-8 text-primary mx-auto mb-2" />
+                <div className="text-2xl font-bold text-dark mb-1">{climateData.annualRainfall}</div>
+                <div className="text-sm text-gray">Annual Rainfall</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-md text-center">
+                <Thermometer className="w-8 h-8 text-accent mx-auto mb-2" />
+                <div className="text-2xl font-bold text-dark mb-1">{climateData.avgSummerHigh}</div>
+                <div className="text-sm text-gray">Summer High</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-md text-center">
+                <Wind className="w-8 h-8 text-primary mx-auto mb-2" />
+                <div className="text-2xl font-bold text-dark mb-1">{climateData.hailRisk}</div>
+                <div className="text-sm text-gray">Hail Risk</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-md text-center">
+                <Cloud className="w-8 h-8 text-gray mx-auto mb-2" />
+                <div className="text-2xl font-bold text-dark mb-1">{climateData.stormSeason}</div>
+                <div className="text-sm text-gray">Storm Season</div>
+              </div>
+            </div>
+
+            {/* Roofing Considerations */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-accent" />
+                  Roofing Recommendations for {location.city}
+                </h3>
+                <ul className="space-y-3">
+                  {climateData.roofingConsiderations.map((consideration, index) => (
+                    <li key={index} className="flex items-start gap-3 text-gray">
+                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
+                      <span>{consideration}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5 text-accent" />
+                  Recent Storm History
+                </h3>
+                <div className="space-y-4">
+                  {climateData.recentStormHistory.slice(0, 3).map((storm, index) => (
+                    <div key={index} className="border-l-2 border-primary/20 pl-4">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-sm font-bold text-dark">{storm.date}</span>
+                        <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">{storm.type}</span>
+                      </div>
+                      <p className="text-sm text-gray">{storm.impact}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link
+                  href="/services/storm-damage"
+                  className="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-4 hover:text-accent transition"
+                >
+                  Learn about storm damage services <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Project Map - Uses ProjectMapIt embed with lazy loading */}
       {locationMapIds[city] && (

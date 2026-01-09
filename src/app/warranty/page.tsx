@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { Phone, Shield, CheckCircle, Award, FileText, Clock } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { EstimateButton } from '@/components/estimate';
+import { BreadcrumbSchema, AllWarrantiesSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Roofing Warranty Information | Best Roofing Now Charlotte NC',
@@ -26,6 +28,14 @@ export const metadata: Metadata = {
 export default function WarrantyPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Warranty Information', url: `${SITE_CONFIG.url}/warranty` },
+        ]}
+      />
+      <AllWarrantiesSchema />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -356,12 +366,13 @@ export default function WarrantyPage() {
               <Phone className="w-5 h-5" aria-hidden="true" />
               {SITE_CONFIG.phone}
             </a>
-            <Link
-              href="/contact"
-              className="btn bg-accent hover:bg-accent-dark text-white text-lg px-8"
+            <EstimateButton
+              variant="accent"
+              size="lg"
+              className="px-8"
             >
-              Get Free Estimate
-            </Link>
+              Get Free Instant Estimate
+            </EstimateButton>
           </div>
         </div>
       </section>

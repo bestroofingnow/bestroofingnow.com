@@ -5,7 +5,6 @@ import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { ServiceAreas } from '@/components/sections/ServiceAreas';
 import { FAQ } from '@/components/sections/FAQ';
-import { InstantEstimate } from '@/components/sections/InstantEstimate';
 import { CTASection } from '@/components/sections/CTASection';
 import { ProjectGallery } from '@/components/sections/ProjectGallery';
 import { InteractiveServiceMap } from '@/components/ui/InteractiveServiceMap';
@@ -43,7 +42,6 @@ export default function HomePage() {
         showAll={false}
       />
       <WhyChooseUs />
-      <InstantEstimate />
       <ProjectGallery
         title="See Our Work"
         subtitle="Real roofing projects from Charlotte homes just like yours."

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { getCurrentYear, trackPhoneClick } from '@/lib/utils';
+import { EstimateButton } from '@/components/estimate';
 
 // Custom icon components for platforms not in Lucide
 const XTwitterIcon = () => (
@@ -236,12 +237,13 @@ export function Footer() {
 
             {/* CTA */}
             <div className="mt-6">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold py-3 px-6 rounded-lg transition-all"
+              <EstimateButton
+                variant="accent"
+                size="lg"
+                className="inline-flex items-center gap-2"
               >
-                Get Free Estimate
-              </Link>
+                Get Free Instant Estimate
+              </EstimateButton>
             </div>
           </div>
         </div>

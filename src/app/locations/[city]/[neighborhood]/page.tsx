@@ -12,6 +12,7 @@ import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getNeighborhood, getAllNeighborhoodParams, getNeighborhoodsByCity, Neighborhood } from '@/lib/neighborhoods';
 import { generateNeighborhoodFAQs } from '@/lib/faqs';
+import { EstimateButton } from '@/components/estimate';
 
 interface PageProps {
   params: Promise<{ city: string; neighborhood: string }>;
@@ -123,12 +124,12 @@ export default async function NeighborhoodPage({ params }: PageProps) {
               of your neighborhood and provide expert care for {neighborhoodData.homeStyles.split(',')[0].toLowerCase()} and more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                href="/contact"
+              <EstimateButton
+                variant="accent"
                 className="bg-accent hover:bg-accent-dark text-white"
               >
-                Get Free Estimate
-              </Button>
+                Get Free Instant Estimate
+              </EstimateButton>
               <Button
                 href={`tel:${SITE_CONFIG.phoneClean}`}
                 variant="outline"

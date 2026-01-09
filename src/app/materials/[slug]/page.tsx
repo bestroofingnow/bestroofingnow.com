@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { CheckCircle, Phone, Clock, DollarSign, Home, ArrowRight, Star } from 'lucide-react';
-import { SITE_CONFIG, ROOFING_MATERIALS } from '@/lib/constants';
+import { CheckCircle, Phone, Clock, DollarSign, Home, ArrowRight, Star, Award, Shield, Wind } from 'lucide-react';
+import { SITE_CONFIG, ROOFING_MATERIALS, ROOFING_BRANDS, SHINGLE_PRODUCTS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { FAQ } from '@/components/sections/FAQ';
+import { EstimateButton } from '@/components/estimate';
 
 interface MaterialPageProps {
   params: Promise<{ slug: string }>;
@@ -106,13 +107,12 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href={`tel:${SITE_CONFIG.phoneClean}`}
-                className="btn bg-accent hover:bg-accent-dark text-white"
+              <EstimateButton
+                variant="accent"
+                className="btn"
               >
-                <Phone className="w-5 h-5" aria-hidden="true" />
-                Get Free Estimate
-              </a>
+                Get Free Instant Estimate
+              </EstimateButton>
               <Link
                 href="/contact"
                 className="btn bg-white text-primary hover:bg-light"
@@ -222,6 +222,102 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
         </div>
       </section>
 
+      {/* Manufacturers Section - For Asphalt Shingles */}
+      {material.slug === 'asphalt-shingles' && (
+        <section className="section">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-primary mb-4 text-center">
+              Top Asphalt Shingle Manufacturers
+            </h2>
+            <p className="text-lg text-gray text-center mb-12 max-w-3xl mx-auto">
+              We install premium shingles from America&apos;s most trusted manufacturers.
+              As a certified contractor for multiple brands, we can help you choose the perfect shingle for your home.
+            </p>
+
+            <div className="space-y-12">
+              {ROOFING_BRANDS.map((brand) => {
+                const brandProducts = SHINGLE_PRODUCTS.filter(p => p.brand === brand.slug);
+                return (
+                  <div key={brand.slug} className="bg-light rounded-2xl p-8">
+                    <div className="flex flex-col lg:flex-row lg:items-start gap-6 mb-8">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <h3 className="text-2xl font-bold text-primary">{brand.name}</h3>
+                          <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
+                            {brand.certificationLevel}
+                          </span>
+                        </div>
+                        <p className="text-accent font-medium mb-3">{brand.tagline}</p>
+                        <p className="text-gray">{brand.description}</p>
+                      </div>
+                      <div className="lg:text-right">
+                        <Link
+                          href={`/brands/${brand.slug}`}
+                          className="btn btn-outline inline-flex"
+                        >
+                          <Award className="w-4 h-4" aria-hidden="true" />
+                          View {brand.name} Page
+                        </Link>
+                      </div>
+                    </div>
+
+                    <h4 className="font-bold text-dark mb-4">Popular {brand.name} Products:</h4>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {brandProducts.map((product) => (
+                        <Link
+                          key={product.slug}
+                          href={`/products/${product.slug}`}
+                          className="bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition group"
+                        >
+                          <h5 className="font-bold text-primary group-hover:text-accent transition mb-2">
+                            {product.name}
+                          </h5>
+                          <p className="text-sm text-gray mb-3">{product.tagline}</p>
+                          <div className="flex flex-wrap gap-2 mb-3">
+                            <span className="inline-flex items-center gap-1 text-xs bg-green-100 text-green-700 px-2 py-1 rounded">
+                              <Shield className="w-3 h-3" aria-hidden="true" />
+                              {product.warranty}
+                            </span>
+                            <span className="inline-flex items-center gap-1 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">
+                              <Wind className="w-3 h-3" aria-hidden="true" />
+                              {product.windRating}
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-primary font-medium group-hover:text-accent">
+                            View Details
+                            <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition" aria-hidden="true" />
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+
+                    <div className="mt-6 pt-6 border-t border-gray-200">
+                      <h5 className="font-bold text-dark mb-3">Warranty Options:</h5>
+                      <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+                        {brand.warranties.map((warranty, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm text-gray">
+                            <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                            {warranty}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-gray mb-4">Not sure which shingle is right for your home?</p>
+              <Link href="/contact" className="btn btn-primary">
+                Schedule a Free Consultation
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* FAQ Section */}
       <FAQ
         faqs={faqs}
@@ -279,12 +375,13 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
               <Phone className="w-5 h-5" aria-hidden="true" />
               {SITE_CONFIG.phone}
             </a>
-            <Link
-              href="/contact"
-              className="btn bg-accent hover:bg-accent-dark text-white text-lg px-8"
+            <EstimateButton
+              variant="accent"
+              size="lg"
+              className="px-8"
             >
-              Get Free Estimate
-            </Link>
+              Get Free Instant Estimate
+            </EstimateButton>
           </div>
         </div>
       </section>
