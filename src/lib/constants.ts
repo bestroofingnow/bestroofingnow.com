@@ -288,6 +288,48 @@ export const LOCATIONS = [
   // === SOUTH CAROLINA (Lancaster County) ===
   { slug: 'indian-land-sc', city: 'Indian Land', state: 'SC', isPrimary: false, county: 'Lancaster', distance: 20 },
   { slug: 'lancaster-sc', city: 'Lancaster', state: 'SC', isPrimary: false, county: 'Lancaster', distance: 35 },
+
+  // === ROWAN COUNTY ===
+  { slug: 'salisbury-nc', city: 'Salisbury', state: 'NC', isPrimary: false, county: 'Rowan', distance: 38 },
+  { slug: 'china-grove-nc', city: 'China Grove', state: 'NC', isPrimary: false, county: 'Rowan', distance: 28 },
+  { slug: 'landis-nc', city: 'Landis', state: 'NC', isPrimary: false, county: 'Rowan', distance: 26 },
+
+  // === ADDITIONAL GASTON COUNTY ===
+  { slug: 'cramerton-nc', city: 'Cramerton', state: 'NC', isPrimary: false, county: 'Gaston', distance: 12 },
+  { slug: 'lowell-nc', city: 'Lowell', state: 'NC', isPrimary: false, county: 'Gaston', distance: 15 },
+  { slug: 'dallas-nc', city: 'Dallas', state: 'NC', isPrimary: false, county: 'Gaston', distance: 18 },
+  { slug: 'cherryville-nc', city: 'Cherryville', state: 'NC', isPrimary: false, county: 'Gaston', distance: 32 },
+  { slug: 'bessemer-city-nc', city: 'Bessemer City', state: 'NC', isPrimary: false, county: 'Gaston', distance: 25 },
+
+  // === ADDITIONAL YORK COUNTY SC ===
+  { slug: 'clover-sc', city: 'Clover', state: 'SC', isPrimary: false, county: 'York', distance: 28 },
+  { slug: 'york-sc', city: 'York', state: 'SC', isPrimary: false, county: 'York', distance: 32 },
+  { slug: 'lake-wylie-sc', city: 'Lake Wylie', state: 'SC', isPrimary: false, county: 'York', distance: 15 },
+
+  // === ADDITIONAL UNION COUNTY ===
+  { slug: 'wingate-nc', city: 'Wingate', state: 'NC', isPrimary: false, county: 'Union', distance: 28 },
+  { slug: 'fairview-nc', city: 'Fairview', state: 'NC', isPrimary: false, county: 'Union', distance: 22 },
+  { slug: 'hemby-bridge-nc', city: 'Hemby Bridge', state: 'NC', isPrimary: false, county: 'Union', distance: 16 },
+  { slug: 'unionville-nc', city: 'Unionville', state: 'NC', isPrimary: false, county: 'Union', distance: 20 },
+
+  // === ADDITIONAL CABARRUS COUNTY ===
+  { slug: 'mount-pleasant-nc', city: 'Mount Pleasant', state: 'NC', isPrimary: false, county: 'Cabarrus', distance: 25 },
+  { slug: 'midland-nc', city: 'Midland', state: 'NC', isPrimary: false, county: 'Cabarrus', distance: 18 },
+  { slug: 'locust-nc', city: 'Locust', state: 'NC', isPrimary: false, county: 'Cabarrus', distance: 22 },
+
+  // === ADDITIONAL STANLY COUNTY ===
+  { slug: 'oakboro-nc', city: 'Oakboro', state: 'NC', isPrimary: false, county: 'Stanly', distance: 32 },
+  { slug: 'norwood-nc', city: 'Norwood', state: 'NC', isPrimary: false, county: 'Stanly', distance: 38 },
+
+  // === ADDITIONAL LINCOLN COUNTY ===
+  { slug: 'maiden-nc', city: 'Maiden', state: 'NC', isPrimary: false, county: 'Lincoln', distance: 35 },
+
+  // === ADDITIONAL CATAWBA COUNTY ===
+  { slug: 'conover-nc', city: 'Conover', state: 'NC', isPrimary: false, county: 'Catawba', distance: 40 },
+  { slug: 'claremont-nc', city: 'Claremont', state: 'NC', isPrimary: false, county: 'Catawba', distance: 42 },
+
+  // === CHESTER COUNTY SC ===
+  { slug: 'chester-sc', city: 'Chester', state: 'SC', isPrimary: false, county: 'Chester', distance: 45 },
 ];
 
 // Trust badges and certifications
@@ -1517,3 +1559,459 @@ export const HOMEPAGE_FAQ = [
 
 // Get all FAQs flattened for schema markup
 export const ALL_FAQS = Object.values(FAQ_CATEGORIES).flatMap(category => category.faqs);
+
+// ============================================
+// AEO (Answer Engine Optimization) Content
+// Optimized for voice search, featured snippets, and AI assistants
+// ============================================
+
+// Voice Search Optimized FAQs - Conversational, direct answers
+export const VOICE_SEARCH_FAQS = [
+  {
+    question: 'Who is the best roofer near me in Charlotte?',
+    answer: 'Best Roofing Now is Charlotte\'s top-rated roofing company with a 5-star Google rating, BBB A+ accreditation, and over 100 satisfied customers. We are a family-owned, veteran-operated company serving the entire Charlotte metro area.',
+    keywords: ['best roofer near me', 'top roofer Charlotte', 'best roofing company Charlotte'],
+  },
+  {
+    question: 'How much does it cost to replace a roof in Charlotte NC?',
+    answer: 'A roof replacement in Charlotte typically costs between $8,000 and $25,000 for an average home. The exact price depends on your roof size, material choice, and complexity. Best Roofing Now offers free estimates with no hidden fees.',
+    keywords: ['roof replacement cost Charlotte', 'new roof cost NC', 'how much is a new roof'],
+  },
+  {
+    question: 'What is the best roofing material for Charlotte weather?',
+    answer: 'Architectural asphalt shingles from GAF or CertainTeed are ideal for Charlotte\'s climate. They handle our hot summers, heavy rain, and occasional hail well. They offer 130 MPH wind resistance and 25-50 year warranties at an affordable price.',
+    keywords: ['best roofing material Charlotte', 'shingles for NC weather', 'roof for humid climate'],
+  },
+  {
+    question: 'Does insurance cover roof replacement after a storm?',
+    answer: 'Yes, homeowner\'s insurance typically covers roof damage from storms, hail, and wind. Best Roofing Now helps Charlotte homeowners with the entire insurance claim process, from documentation to adjuster meetings, at no extra charge.',
+    keywords: ['roof insurance claim', 'storm damage coverage', 'hail damage insurance'],
+  },
+  {
+    question: 'How long does a roof replacement take?',
+    answer: 'Most residential roof replacements in Charlotte are completed in 1 to 3 days. The timeline depends on your roof size and weather conditions. Best Roofing Now provides a clear schedule before starting any project.',
+    keywords: ['roof replacement time', 'how long new roof', 'roof installation duration'],
+  },
+  {
+    question: 'When should I replace my roof?',
+    answer: 'Replace your roof when it is 20-25 years old, has widespread damage, or you see warning signs like missing shingles, granules in gutters, daylight through the attic, or persistent leaks. Best Roofing Now offers free inspections to assess your roof\'s condition.',
+    keywords: ['when to replace roof', 'signs need new roof', 'roof replacement timing'],
+  },
+  {
+    question: 'Can you fix a leaking roof in Charlotte?',
+    answer: 'Yes, Best Roofing Now repairs roof leaks throughout Charlotte and surrounding areas. We offer 24/7 emergency service for active leaks. Most leak repairs can be completed same-day, and we provide free inspections to find the source.',
+    keywords: ['fix roof leak Charlotte', 'leaking roof repair', 'emergency roof repair'],
+  },
+  {
+    question: 'What roofing company in Charlotte works with insurance?',
+    answer: 'Best Roofing Now specializes in insurance claims for storm damage in Charlotte. We document all damage, meet with adjusters, and handle paperwork. Our team has helped hundreds of homeowners get their roofs covered by insurance.',
+    keywords: ['roofer works with insurance', 'insurance claim roofer', 'storm damage contractor'],
+  },
+  {
+    question: 'How do I know if my roof has hail damage?',
+    answer: 'Hail damage signs include dents in gutters or vents, dark spots on shingles where granules are missing, cracked or bruised shingles, and random patterns of damage. Best Roofing Now provides free hail damage inspections for Charlotte homeowners.',
+    keywords: ['hail damage signs', 'check for hail damage', 'hail damage roof inspection'],
+  },
+  {
+    question: 'What is the phone number for a roofer in Charlotte?',
+    answer: 'Call Best Roofing Now at (704) 605-6047 for all your roofing needs in Charlotte. We are available 24/7 for emergencies and offer free inspections and estimates during regular hours.',
+    keywords: ['roofer phone number Charlotte', 'call roofer', 'roofing company number'],
+  },
+];
+
+// People Also Ask Content - Expandable Q&A format
+export const PEOPLE_ALSO_ASK = {
+  roofReplacement: [
+    {
+      question: 'How much is a new roof in NC?',
+      answer: 'A new roof in North Carolina costs $8,000 to $25,000 on average, depending on home size and materials. Asphalt shingles cost $4-7 per square foot installed, while metal roofing runs $8-15 per square foot.',
+    },
+    {
+      question: 'What is the cheapest roof to install?',
+      answer: 'Asphalt 3-tab shingles are the cheapest roofing option at $3-5 per square foot installed. However, architectural shingles at $4-7 per square foot offer better value with longer lifespans and better warranties.',
+    },
+    {
+      question: 'How long does a 30 year roof really last?',
+      answer: 'A "30-year" asphalt shingle roof typically lasts 20-25 years in real conditions. Charlotte\'s hot summers and storms reduce lifespan. Proper installation and maintenance can help your roof reach or exceed 25 years.',
+    },
+    {
+      question: 'What time of year is cheapest to replace a roof?',
+      answer: 'Late fall and winter (November through February) are often the cheapest times for roof replacement because demand is lower. However, Charlotte\'s mild winters make year-round installation possible at competitive prices.',
+    },
+    {
+      question: 'Can I stay in my house while the roof is being replaced?',
+      answer: 'Yes, you can stay home during roof replacement. The work is exterior only. Expect noise during the day, and we recommend removing fragile wall items and covering attic belongings. Most jobs complete in 1-3 days.',
+    },
+  ],
+  roofRepair: [
+    {
+      question: 'Is it worth repairing a roof?',
+      answer: 'Roof repair is worth it if damage is localized and your roof is under 15 years old. Repairs typically cost $300-1,500 versus $8,000+ for replacement. Best Roofing Now provides honest assessments—we recommend repairs when appropriate.',
+    },
+    {
+      question: 'What is the most common roof repair?',
+      answer: 'The most common roof repairs are fixing leaks around flashing, replacing missing or damaged shingles, and repairing damage around vents and chimneys. These repairs typically cost $150-800 and prevent larger issues.',
+    },
+    {
+      question: 'Can you patch a roof instead of replacing it?',
+      answer: 'Yes, localized damage can often be patched or repaired. This works well for small areas of missing shingles, minor leaks, or isolated storm damage. If more than 30% of your roof needs repair, replacement is more cost-effective.',
+    },
+    {
+      question: 'How do roofers find leaks?',
+      answer: 'Professional roofers find leaks through visual inspection, water testing, thermal imaging, and checking common trouble spots like flashing, vents, and valleys. The leak source is often not directly above the water stain inside.',
+    },
+  ],
+  insurance: [
+    {
+      question: 'Will my insurance go up if I file a roof claim?',
+      answer: 'Typically, storm damage claims do not significantly raise insurance rates since they are not your fault. However, filing multiple claims in a short period may affect rates. Each insurer handles this differently.',
+    },
+    {
+      question: 'How do I get my insurance to pay for a new roof?',
+      answer: 'Document storm damage with photos, file a claim promptly, and have a professional roofer inspect and provide a detailed report. Best Roofing Now meets with adjusters and advocates for fair payment on your behalf.',
+    },
+    {
+      question: 'What if insurance denied my roof claim?',
+      answer: 'You can appeal a denied claim with additional documentation and evidence. Request a re-inspection and provide a professional roofing contractor\'s assessment. Best Roofing Now helps homeowners navigate the appeal process.',
+    },
+    {
+      question: 'Does insurance cover a 20 year old roof?',
+      answer: 'Insurance covers storm damage regardless of roof age, but older roofs may receive depreciated payouts (actual cash value vs. replacement cost). Some policies exclude roofs over 15-20 years. Check your specific policy.',
+    },
+  ],
+  materials: [
+    {
+      question: 'What type of roof lasts the longest?',
+      answer: 'Slate roofs last 75-200 years, followed by tile (50-100 years), metal (40-70 years), and architectural shingles (25-50 years). For most Charlotte homes, architectural shingles offer the best balance of lifespan and cost.',
+    },
+    {
+      question: 'Is a metal roof worth the extra money?',
+      answer: 'Metal roofs cost 2-3 times more than shingles but last 2-3 times longer with minimal maintenance. They are worth it for homeowners planning to stay 15+ years. Energy savings also offset the higher upfront cost.',
+    },
+    {
+      question: 'What is the best roof for hot climates?',
+      answer: 'For Charlotte\'s hot summers, light-colored or reflective roofing materials reduce cooling costs. GAF Timberline Cool Series or metal roofing with reflective coatings can lower attic temperatures by 20°F.',
+    },
+    {
+      question: 'Which shingle brand is best?',
+      answer: 'GAF, CertainTeed, and Owens Corning are the top three shingle brands. All offer excellent quality and warranties. Best Roofing Now primarily installs CertainTeed (SELECT ShingleMaster certified) and GAF products.',
+    },
+  ],
+};
+
+// Featured Snippet Targeting Content - Concise, direct answers
+export const FEATURED_SNIPPETS = {
+  definitions: [
+    {
+      term: 'Roof replacement',
+      definition: 'Roof replacement is the complete removal of existing roofing materials down to the deck, followed by installation of new underlayment and roofing material. A typical residential roof replacement in Charlotte takes 1-3 days and costs $8,000-$25,000.',
+    },
+    {
+      term: 'Architectural shingles',
+      definition: 'Architectural shingles are multi-layered asphalt shingles with a dimensional appearance that mimics wood shake or slate. They weigh more, last longer (25-50 years), and resist higher winds (130 MPH) than 3-tab shingles.',
+    },
+    {
+      term: 'Roof flashing',
+      definition: 'Roof flashing is thin metal (usually aluminum or galvanized steel) installed at roof joints, valleys, chimneys, and vents to direct water away from vulnerable areas. Damaged flashing is a leading cause of roof leaks.',
+    },
+    {
+      term: 'Storm damage assessment',
+      definition: 'A storm damage assessment is a professional inspection of your roof after severe weather to document hail hits, wind damage, and other issues for insurance claims. Best Roofing Now provides free storm damage assessments.',
+    },
+    {
+      term: 'Roof underlayment',
+      definition: 'Roof underlayment is a water-resistant barrier installed directly on the roof deck before shingles. It provides secondary protection against water infiltration. Modern synthetic underlayment is more durable than traditional felt paper.',
+    },
+  ],
+  howTo: [
+    {
+      title: 'How to get a free roof inspection in Charlotte',
+      steps: [
+        'Call Best Roofing Now at (704) 605-6047 or submit an online form',
+        'Schedule a convenient appointment time',
+        'A certified inspector examines your roof inside and out',
+        'Receive a detailed written report with photos within 24-48 hours',
+        'Get honest recommendations with no obligation',
+      ],
+    },
+    {
+      title: 'How to file a roof insurance claim',
+      steps: [
+        'Document damage with photos and videos immediately after the storm',
+        'Contact your insurance company to open a claim',
+        'Schedule a free inspection with Best Roofing Now for professional documentation',
+        'Meet with the insurance adjuster (we can attend with you)',
+        'Review the settlement and proceed with repairs',
+      ],
+    },
+    {
+      title: 'How to choose a roofing contractor in Charlotte',
+      steps: [
+        'Verify NC General Contractor license and insurance',
+        'Check Google reviews and BBB rating',
+        'Confirm manufacturer certifications (GAF, CertainTeed)',
+        'Get written estimates with itemized costs',
+        'Review warranty coverage for materials and workmanship',
+        'Avoid contractors who demand large upfront payments',
+      ],
+    },
+    {
+      title: 'How to check your roof for storm damage',
+      steps: [
+        'Look for missing, cracked, or curled shingles from the ground',
+        'Check gutters for granule accumulation (sand-like material)',
+        'Inspect metal components (vents, flashing) for dents',
+        'Look for debris, branches, or exposed underlayment',
+        'Check attic for daylight, water stains, or moisture',
+        'Schedule a professional inspection for thorough assessment',
+      ],
+    },
+  ],
+  lists: [
+    {
+      title: 'Signs you need a new roof',
+      items: [
+        'Roof is 20-25+ years old',
+        'Multiple missing or damaged shingles',
+        'Excessive granules in gutters',
+        'Visible sagging or drooping',
+        'Daylight visible through roof boards',
+        'Recurring leaks despite repairs',
+        'Neighbors are replacing similar-aged roofs',
+        'Higher energy bills from poor insulation',
+      ],
+    },
+    {
+      title: 'Best roofing materials for Charlotte NC',
+      items: [
+        'Architectural asphalt shingles (most popular, 25-50 years)',
+        'Metal roofing (40-70 years, energy efficient)',
+        'Tile roofing (50-100 years, premium option)',
+        'Flat roofing systems (TPO, EPDM, PVC for commercial)',
+        'Cedar shake (30-40 years, natural beauty)',
+      ],
+    },
+    {
+      title: 'What to expect during roof replacement',
+      items: [
+        'Day 1: Material delivery and old shingle removal',
+        'Day 1-2: Deck inspection and repairs if needed',
+        'Day 2: Underlayment and drip edge installation',
+        'Day 2-3: Shingle installation and flashing',
+        'Day 3: Ridge cap, vents, and final details',
+        'Final: Cleanup, magnetic nail sweep, and walkthrough',
+      ],
+    },
+    {
+      title: 'Questions to ask a roofing contractor',
+      items: [
+        'Are you licensed and insured in North Carolina?',
+        'What manufacturer certifications do you have?',
+        'Do you pull permits and schedule inspections?',
+        'What is included in the warranty?',
+        'Can you provide local references?',
+        'What is the payment schedule?',
+        'How do you handle unexpected repairs?',
+        'Will you work with my insurance company?',
+      ],
+    },
+  ],
+};
+
+// Location-specific AEO content for dynamic page generation
+export const LOCATION_AEO_TEMPLATES = {
+  cityPageQuestions: (city: string, state: string) => [
+    {
+      question: `Who is the best roofer in ${city}, ${state}?`,
+      answer: `Best Roofing Now is the top-rated roofing company serving ${city}, ${state}. With a 5-star Google rating, BBB A+ accreditation, and CertainTeed SELECT ShingleMaster certification, we provide quality roof repair, replacement, and storm damage services to ${city} homeowners.`,
+    },
+    {
+      question: `How much does a new roof cost in ${city}?`,
+      answer: `A new roof in ${city}, ${state} typically costs $8,000 to $25,000 depending on size and materials. Best Roofing Now provides free inspections and detailed estimates for ${city} homeowners with no hidden fees or obligations.`,
+    },
+    {
+      question: `Does Best Roofing Now serve ${city}?`,
+      answer: `Yes, Best Roofing Now provides full roofing services to ${city}, ${state} and surrounding areas. We offer roof replacement, repair, inspection, storm damage restoration, and 24/7 emergency services throughout the Charlotte metro region.`,
+    },
+  ],
+  servicePageQuestions: (service: string) => [
+    {
+      question: `How much does ${service.toLowerCase()} cost in Charlotte?`,
+      answer: `${service} costs vary based on your specific needs. Best Roofing Now provides free estimates for all ${service.toLowerCase()} services in Charlotte. Call (704) 605-6047 or schedule online for a no-obligation quote.`,
+    },
+    {
+      question: `Who offers ${service.toLowerCase()} in Charlotte NC?`,
+      answer: `Best Roofing Now offers professional ${service.toLowerCase()} throughout Charlotte and the surrounding 50-mile area. As a BBB A+ rated, veteran-owned company, we provide quality workmanship with manufacturer-backed warranties.`,
+    },
+  ],
+};
+
+// Speakable content for voice assistants (Google, Alexa, Siri)
+export const SPEAKABLE_CONTENT = {
+  companyIntro: 'Best Roofing Now is Charlotte\'s trusted roofing company. Family-owned and veteran-operated, we provide roof repair, replacement, and storm damage services with 5-star quality. Call 704-605-6047 for a free inspection.',
+  servicesSummary: 'Best Roofing Now offers complete roofing services including roof replacement, repair, inspection, emergency services, storm damage restoration, gutters, siding, and skylights. We serve Charlotte and all areas within 50 miles.',
+  contactInfo: 'Contact Best Roofing Now at 704-605-6047. We are located at 10130 Mallard Creek Road, Suite 300, Charlotte, North Carolina. We offer 24/7 emergency service and free roof inspections.',
+  areaServed: 'Best Roofing Now serves Charlotte and over 50 surrounding cities including Huntersville, Concord, Matthews, Gastonia, Mooresville, Fort Mill, Rock Hill, and all communities within 50 miles of Charlotte.',
+};
+
+// ============================================
+// SOUTH CHARLOTTE & SOUTH END SPECIFIC AEO CONTENT
+// Targeted content for South Charlotte corridor and South End
+// ============================================
+
+// South End Specific FAQs - Voice Search Optimized
+export const SOUTH_END_FAQS = [
+  {
+    question: 'Who is the best roofer in South End Charlotte?',
+    answer: 'Best Roofing Now is the top-rated roofing company serving South End Charlotte. We specialize in the unique roofing needs of South End, including flat roofs on townhomes, rooftop deck waterproofing, and modern construction. Call (704) 605-6047 for a free inspection.',
+    keywords: ['best roofer South End', 'South End roofing company', 'roofer South End Charlotte'],
+  },
+  {
+    question: 'What type of roofing is common in South End Charlotte?',
+    answer: 'South End Charlotte features mostly flat and low-slope roofs on townhomes and condos, requiring TPO, EPDM, or modified bitumen systems. Many properties also have rooftop decks needing specialized waterproofing. Best Roofing Now has extensive experience with South End\'s modern construction.',
+    keywords: ['South End roof types', 'flat roof South End', 'townhome roofing Charlotte'],
+  },
+  {
+    question: 'How much does a roof repair cost in South End?',
+    answer: 'Roof repair costs in South End Charlotte typically range from $300-$1,500 for minor repairs. Flat roof repairs may cost $500-$2,500 depending on the issue. Best Roofing Now provides free inspections and transparent pricing for all South End properties.',
+    keywords: ['roof repair cost South End', 'South End roofing prices', 'townhome roof repair Charlotte'],
+  },
+  {
+    question: 'Do you work with South End HOAs for roofing?',
+    answer: 'Yes, Best Roofing Now has extensive experience with South End HOAs and property management companies. We handle all coordination, documentation, and approval processes. Many South End townhome associations trust us for their roofing needs.',
+    keywords: ['South End HOA roofing', 'townhome association roofer', 'condo roofing Charlotte'],
+  },
+  {
+    question: 'Can you fix a leaking rooftop deck in South End?',
+    answer: 'Yes, Best Roofing Now specializes in rooftop deck waterproofing and repairs throughout South End. We use premium membrane systems designed for Charlotte\'s climate. Our team understands the unique challenges of South End\'s modern rooftop living spaces.',
+    keywords: ['rooftop deck leak repair', 'deck waterproofing South End', 'flat roof leak Charlotte'],
+  },
+];
+
+// South Charlotte Specific FAQs - Voice Search Optimized
+export const SOUTH_CHARLOTTE_FAQS = [
+  {
+    question: 'Who is the best roofer in South Charlotte?',
+    answer: 'Best Roofing Now is South Charlotte\'s premier roofing company, serving Ballantyne, Blakeney, Stonecrest, Rea Farms, and all surrounding neighborhoods. We have a 5-star rating and specialize in the executive homes and HOA communities common in South Charlotte.',
+    keywords: ['best roofer South Charlotte', 'Ballantyne roofing', 'South Charlotte roofing company'],
+  },
+  {
+    question: 'How much does a new roof cost in South Charlotte?',
+    answer: 'A new roof in South Charlotte typically costs $12,000-$35,000 due to larger home sizes and HOA requirements for premium materials. Executive homes in Ballantyne, Piper Glen, and Quail Hollow may cost more for specialty materials. Best Roofing Now provides free estimates.',
+    keywords: ['roof cost South Charlotte', 'Ballantyne roof replacement', 'new roof price 28277'],
+  },
+  {
+    question: 'Do you serve Ballantyne and the 28277 zip code?',
+    answer: 'Yes, Best Roofing Now provides full roofing services throughout Ballantyne and the 28277 zip code, including Blakeney, Stonecrest, Piper Glen, Rea Farms, and all South Charlotte neighborhoods. We understand Ballantyne HOA requirements and premium material specifications.',
+    keywords: ['Ballantyne roofer', '28277 roofing', 'roofer near Ballantyne'],
+  },
+  {
+    question: 'Which roofer handles storm damage in South Charlotte?',
+    answer: 'Best Roofing Now is South Charlotte\'s storm damage specialist. The March 2021 hailstorm and regular severe weather cause significant roof damage throughout Ballantyne, Stonecrest, and surrounding areas. We handle insurance claims and provide emergency repairs.',
+    keywords: ['storm damage roofer South Charlotte', 'hail damage Ballantyne', 'insurance claim roofer 28277'],
+  },
+  {
+    question: 'What roofing materials are required by South Charlotte HOAs?',
+    answer: 'Most South Charlotte HOAs require premium architectural shingles from GAF, CertainTeed, or Owens Corning in approved color palettes. Communities like Piper Glen and Quail Hollow may require natural slate, cedar shake, or designer shingles. Best Roofing Now knows each neighborhood\'s requirements.',
+    keywords: ['South Charlotte HOA roofing', 'Ballantyne roof requirements', 'HOA approved roofer'],
+  },
+  {
+    question: 'Do you work in Providence Plantation and Blakeney?',
+    answer: 'Yes, Best Roofing Now serves Providence Plantation, Blakeney, and all South Charlotte neighborhoods. We have completed numerous projects in these communities and understand their architectural requirements and premium material expectations.',
+    keywords: ['Providence Plantation roofer', 'Blakeney roofing company', 'roofer near Blakeney Charlotte'],
+  },
+];
+
+// South Charlotte Neighborhood-Specific Content for SEO Pages
+export const SOUTH_CHARLOTTE_NEIGHBORHOODS_CONTENT = {
+  ballantyne: {
+    title: 'Roofing Services in Ballantyne, Charlotte NC',
+    description: 'Best Roofing Now is Ballantyne\'s trusted roofing company, serving the master-planned community since 2018. We specialize in the executive homes, golf course properties, and strict HOA requirements common throughout Ballantyne.',
+    keyFeatures: [
+      'Ballantyne HOA compliance expertise',
+      'Golf course property specialists',
+      'Premium architectural shingle installations',
+      'Insurance claim assistance for storm damage',
+    ],
+    recentStorms: 'The March 2021 hailstorm caused widespread damage throughout Ballantyne. Many homes required full roof replacements due to golf ball-sized hail.',
+    commonIssues: 'Storm damage, aging roofs from 1990s construction, HOA compliance',
+  },
+  southEnd: {
+    title: 'Roofing Services in South End, Charlotte NC',
+    description: 'Best Roofing Now provides specialized roofing services for South End\'s unique modern architecture. From flat roofs on townhomes to rooftop deck waterproofing, we understand the needs of Charlotte\'s trendiest neighborhood.',
+    keyFeatures: [
+      'Flat and low-slope roof specialists',
+      'Rooftop deck waterproofing',
+      'Townhome and condo expertise',
+      'HOA and property management coordination',
+    ],
+    recentStorms: 'South End\'s newer construction has generally performed well, but high winds can affect flat roofs and rooftop deck structures.',
+    commonIssues: 'Flat roof maintenance, deck waterproofing, HOA coordination',
+  },
+  blakeney: {
+    title: 'Roofing Services in Blakeney, Charlotte NC',
+    description: 'Best Roofing Now serves the Blakeney community with modern roofing solutions. Our team understands the contemporary architectural styles and townhome requirements in this walkable South Charlotte neighborhood.',
+    keyFeatures: [
+      'Modern townhome roofing',
+      'Contemporary design expertise',
+      'HOA coordination',
+      'Storm damage restoration',
+    ],
+    recentStorms: 'The 2021 hailstorm required widespread roof repairs throughout Blakeney. The open commercial area increases wind exposure during severe weather.',
+    commonIssues: 'Wind damage, HOA requirements, modern construction roofing',
+  },
+  reaFarms: {
+    title: 'Roofing Services in Rea Farms, Charlotte NC',
+    description: 'Best Roofing Now provides premium roofing services for Rea Farms\' executive homes. We specialize in the complex rooflines and high-end finishes common in this prestigious South Charlotte neighborhood.',
+    keyFeatures: [
+      'Executive home roofing expertise',
+      'Complex roofline specialists',
+      'Premium material installations',
+      'HOA compliance',
+    ],
+    recentStorms: 'The Rea Road corridor experienced significant damage during the March 2021 hailstorm. Regular severe thunderstorms bring wind and hail damage seasonally.',
+    commonIssues: 'Storm damage, complex roof designs, premium material requirements',
+  },
+  piperGlen: {
+    title: 'Roofing Services in Piper Glen, Charlotte NC',
+    description: 'Best Roofing Now provides luxury roofing services for Piper Glen\'s exclusive golf course community. We specialize in natural slate, copper accents, and premium materials that meet Piper Glen\'s rigorous standards.',
+    keyFeatures: [
+      'Natural slate and copper installation',
+      'Luxury estate expertise',
+      'Golf course property specialists',
+      'Premium material specialists',
+    ],
+    recentStorms: 'Golf course exposure makes Piper Glen homes vulnerable to wind and hail. Cedar shake and slate roofs require specialized repair after storms.',
+    commonIssues: 'Specialty material repair, storm damage, strict architectural requirements',
+  },
+  quailHollow: {
+    title: 'Roofing Services in Quail Hollow, Charlotte NC',
+    description: 'Best Roofing Now provides PGA-level quality roofing for Quail Hollow\'s luxury estates. Home to the Wells Fargo Championship, this prestigious neighborhood demands the finest materials and craftsmanship.',
+    keyFeatures: [
+      'Luxury estate roofing',
+      'Natural slate and copper',
+      'Premium shake materials',
+      'Master-level craftsmanship',
+    ],
+    recentStorms: 'Quail Hollow\'s mature tree canopy and luxury roofing materials are particularly susceptible to storm damage requiring specialized repair.',
+    commonIssues: 'Premium material repair, storm damage, complex designs',
+  },
+};
+
+// South Charlotte AEO Templates for Dynamic Page Generation
+export const SOUTH_CHARLOTTE_AEO_TEMPLATES = {
+  neighborhoodFAQs: (neighborhood: string) => [
+    {
+      question: `Who is the best roofer in ${neighborhood}?`,
+      answer: `Best Roofing Now is the top-rated roofing company serving ${neighborhood}. With a 5-star Google rating, BBB A+ accreditation, and extensive experience in South Charlotte, we provide quality roof repair, replacement, and storm damage services to ${neighborhood} homeowners.`,
+    },
+    {
+      question: `How much does a new roof cost in ${neighborhood}?`,
+      answer: `A new roof in ${neighborhood} typically costs $10,000 to $30,000 depending on home size and materials. South Charlotte HOAs often require premium architectural shingles. Best Roofing Now provides free estimates with no hidden fees.`,
+    },
+    {
+      question: `Does Best Roofing Now handle storm damage in ${neighborhood}?`,
+      answer: `Yes, Best Roofing Now is ${neighborhood}'s storm damage specialist. We handle the entire insurance claim process, from documentation to adjuster meetings. South Charlotte experiences regular severe storms, and we respond quickly with emergency repairs and tarping.`,
+    },
+  ],
+};

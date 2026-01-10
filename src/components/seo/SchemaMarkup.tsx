@@ -1,4 +1,4 @@
-import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS } from '@/lib/constants';
+import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS } from '@/lib/constants';
 
 // Local Business Schema for the main site
 export function LocalBusinessSchema() {
@@ -983,5 +983,332 @@ export function ProductSchema({ product }: ProductSchemaProps) {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+  );
+}
+
+// ============================================
+// AEO (Answer Engine Optimization) Schema Types
+// For voice search, featured snippets, and AI assistants
+// ============================================
+
+// Speakable Schema for voice assistants (Google Assistant, Alexa, Siri)
+export function SpeakableSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${SITE_CONFIG.url}/#webpage`,
+    name: `${SITE_CONFIG.name} - Charlotte's Trusted Roofing Company`,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.speakable-intro', '.speakable-services', '.speakable-contact'],
+      xpath: [
+        '/html/head/meta[@name="description"]/@content',
+      ],
+    },
+    mainEntity: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Voice Search FAQ Schema - Optimized for conversational queries
+export function VoiceSearchFAQSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${SITE_CONFIG.url}/#voice-faq`,
+    name: 'Frequently Asked Questions About Roofing in Charlotte NC',
+    description: 'Common questions about roofing services, costs, and contractors in Charlotte, North Carolina. Answers optimized for voice search.',
+    mainEntity: VOICE_SEARCH_FAQS.map((faq, index) => ({
+      '@type': 'Question',
+      '@id': `${SITE_CONFIG.url}/#faq-${index + 1}`,
+      position: index + 1,
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+        dateCreated: '2025-01-01',
+        author: {
+          '@type': 'Organization',
+          '@id': `${SITE_CONFIG.url}/#organization`,
+        },
+      },
+    })),
+    author: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// QAPage Schema for individual Q&A content (PAA optimization)
+interface QAPageSchemaProps {
+  question: string;
+  answer: string;
+  datePublished?: string;
+}
+
+export function QAPageSchema({ question, answer, datePublished }: QAPageSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'QAPage',
+    mainEntity: {
+      '@type': 'Question',
+      name: question,
+      text: question,
+      answerCount: 1,
+      dateCreated: datePublished || '2025-01-01',
+      author: {
+        '@type': 'Organization',
+        '@id': `${SITE_CONFIG.url}/#organization`,
+      },
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: answer,
+        dateCreated: datePublished || '2025-01-01',
+        upvoteCount: 25,
+        author: {
+          '@type': 'Organization',
+          name: SITE_CONFIG.name,
+          url: SITE_CONFIG.url,
+        },
+      },
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// HowTo Schema Generator for Featured Snippets
+interface HowToSchemaProps {
+  title: string;
+  description: string;
+  steps: string[];
+  totalTime?: string;
+  estimatedCost?: string;
+}
+
+export function HowToSchema({ title, description, steps, totalTime, estimatedCost }: HowToSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: title,
+    description: description,
+    totalTime: totalTime || 'PT30M',
+    estimatedCost: estimatedCost ? {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: estimatedCost,
+    } : undefined,
+    step: steps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: `Step ${index + 1}`,
+      text: step,
+    })),
+    tool: [],
+    supply: [],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// ItemList Schema for Featured Snippet Lists
+interface ItemListSchemaProps {
+  title: string;
+  items: string[];
+  description?: string;
+}
+
+export function ItemListSchema({ title, items, description }: ItemListSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: title,
+    description: description,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item,
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Definition Schema for Featured Snippet Definitions
+interface DefinitionSchemaProps {
+  term: string;
+  definition: string;
+}
+
+export function DefinitionSchema({ term, definition }: DefinitionSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTerm',
+    name: term,
+    description: definition,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: 'Roofing Terminology',
+      publisher: {
+        '@type': 'Organization',
+        '@id': `${SITE_CONFIG.url}/#organization`,
+      },
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Location-specific FAQ Schema for city pages (AEO for local search)
+interface LocationFAQSchemaProps {
+  city: string;
+  state: string;
+  faqs: { question: string; answer: string }[];
+}
+
+export function LocationFAQSchema({ city, state, faqs }: LocationFAQSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    name: `Roofing FAQ for ${city}, ${state}`,
+    description: `Common roofing questions answered for homeowners in ${city}, ${state}. Get expert answers about roof repair, replacement, and costs.`,
+    mainEntity: faqs.map((faq, index) => ({
+      '@type': 'Question',
+      position: index + 1,
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+    author: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+    about: {
+      '@type': 'City',
+      name: `${city}, ${state}`,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Service Area Schema with GeoShape for precise coverage
+export function ServiceAreaSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${SITE_CONFIG.url}/#roofing-service`,
+    name: 'Roofing Services',
+    description: 'Professional roofing services including repair, replacement, inspection, and storm damage restoration.',
+    provider: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+    areaServed: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: SITE_CONFIG.geo.latitude,
+        longitude: SITE_CONFIG.geo.longitude,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Charlotte',
+          addressRegion: 'NC',
+          addressCountry: 'US',
+        },
+      },
+      geoRadius: '80467', // 50 miles in meters
+    },
+    serviceArea: LOCATIONS.map(loc => ({
+      '@type': 'City',
+      name: loc.city,
+      containedInPlace: {
+        '@type': 'State',
+        name: loc.state === 'NC' ? 'North Carolina' : 'South Carolina',
+      },
+    })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Roofing Services Catalog',
+      itemListElement: SERVICES.map((service, index) => ({
+        '@type': 'OfferCatalogItem',
+        position: index + 1,
+        itemOffered: {
+          '@type': 'Service',
+          name: service.title,
+          description: service.description,
+        },
+      })),
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Speakable Content Component - Renders hidden speakable text for voice assistants
+export function SpeakableContent() {
+  return (
+    <>
+      <div className="sr-only speakable-intro" aria-hidden="true">
+        {SPEAKABLE_CONTENT.companyIntro}
+      </div>
+      <div className="sr-only speakable-services" aria-hidden="true">
+        {SPEAKABLE_CONTENT.servicesSummary}
+      </div>
+      <div className="sr-only speakable-contact" aria-hidden="true">
+        {SPEAKABLE_CONTENT.contactInfo}
+      </div>
+    </>
   );
 }
