@@ -146,9 +146,10 @@ export function Header() {
         {isMobileMenuOpen && (
           <div
             id="mobile-menu"
-            className="lg:hidden bg-white border-t border-gray-100 animate-fade-in max-h-[calc(100vh-112px)] overflow-y-auto"
+            className="lg:hidden bg-white border-t border-gray-100 animate-fade-in max-h-[calc(100vh-112px)] overflow-y-auto overscroll-contain"
             role="navigation"
             aria-label="Mobile navigation"
+            style={{ WebkitOverflowScrolling: 'touch' }}
           >
             <div className="container py-4">
               <nav className="space-y-1" aria-label="Main navigation">
@@ -157,14 +158,14 @@ export function Header() {
                     {item.hasChildren ? (
                       <>
                         <button
-                          className="w-full flex items-center justify-between py-3 px-4 text-dark font-medium rounded-lg hover:bg-light"
+                          className="w-full flex items-center justify-between py-4 px-4 text-dark font-medium rounded-lg active:bg-light transition-colors duration-150"
                           onClick={() => toggleMobileSection(item.label)}
                           aria-expanded={expandedMobileSection === item.label}
                         >
                           {item.label}
                           <ChevronDown
                             className={cn(
-                              'w-5 h-5 transition-transform',
+                              'w-5 h-5 transition-transform duration-150',
                               expandedMobileSection === item.label && 'rotate-180'
                             )}
                           />

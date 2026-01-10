@@ -127,8 +127,8 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
         </button>
 
         {activeMenu === 'services' && (
-          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
-            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[900px] animate-fade-in">
+          <div className="absolute top-full left-0 pt-2 z-50">
+            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[800px] max-w-[calc(100vw-2rem)] animate-fade-in">
               <div className="grid grid-cols-4 gap-6">
                 {Object.entries(serviceCategories).map(([category, slugs]) => (
                   <div key={category}>
@@ -202,8 +202,8 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
         </button>
 
         {activeMenu === 'locations' && (
-          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
-            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[800px] animate-fade-in">
+          <div className="absolute top-full left-0 pt-2 z-50">
+            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[700px] max-w-[calc(100vw-2rem)] animate-fade-in">
               <div className="grid grid-cols-4 gap-6">
                 {Object.entries(locationsByCounty).slice(0, 4).map(([county, locs]) => (
                   <div key={county}>
@@ -265,8 +265,8 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
         </button>
 
         {activeMenu === 'materials' && (
-          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
-            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[700px] animate-fade-in">
+          <div className="absolute top-full right-0 pt-2 z-50">
+            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[600px] max-w-[calc(100vw-2rem)] animate-fade-in">
               <div className="grid grid-cols-3 gap-6">
                 {/* Roofing Materials */}
                 <div>
