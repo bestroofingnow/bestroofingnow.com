@@ -66,6 +66,22 @@ const locationsByCounty = LOCATIONS.reduce((acc, loc) => {
   return acc;
 }, {} as Record<string, typeof LOCATIONS>);
 
+// Lake Norman area cities (special grouping)
+const lakeNormanCities = [
+  'huntersville',
+  'cornelius',
+  'davidson',
+  'mooresville',
+  'denver',
+  'sherrills-ford',
+  'terrell',
+  'lake-norman',
+];
+
+const lakeNormanLocations = LOCATIONS.filter((loc) =>
+  lakeNormanCities.includes(loc.slug)
+);
+
 interface MegaMenuProps {
   isScrolled: boolean;
 }
@@ -203,8 +219,29 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
 
         {activeMenu === 'locations' && (
           <div className="absolute top-full left-0 pt-2 z-50">
-            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[700px] max-w-[calc(100vw-2rem)] animate-fade-in">
-              <div className="grid grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[875px] max-w-[calc(100vw-2rem)] animate-fade-in">
+              <div className="grid grid-cols-5 gap-5">
+                {/* Lake Norman Column */}
+                <div>
+                  <h3 className="text-xs font-bold text-accent uppercase tracking-wider mb-3 flex items-center gap-1">
+                    <MapPin className="w-3 h-3" />
+                    Lake Norman
+                  </h3>
+                  <ul className="space-y-1">
+                    {lakeNormanLocations.slice(0, 8).map((loc) => (
+                      <li key={loc.slug}>
+                        <Link
+                          href={`/locations/${loc.slug}`}
+                          className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors"
+                          onClick={() => setActiveMenu(null)}
+                        >
+                          {loc.city}, {loc.state}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {/* County Columns */}
                 {Object.entries(locationsByCounty).slice(0, 4).map(([county, locs]) => (
                   <div key={county}>
                     <h3 className="text-xs font-bold text-gray uppercase tracking-wider mb-3 flex items-center gap-1">

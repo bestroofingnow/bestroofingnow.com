@@ -180,7 +180,7 @@ export function Header() {
                                   <Link
                                     key={service.slug}
                                     href={`/services/${service.slug}`}
-                                    className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                    className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                   >
                                     <ChevronRight className="w-4 h-4" />
@@ -189,7 +189,7 @@ export function Header() {
                                 ))}
                                 <Link
                                   href="/services"
-                                  className="flex items-center gap-2 py-2 px-4 text-sm text-primary font-semibold rounded-lg hover:bg-light"
+                                  className="flex items-center gap-2 py-3 px-4 text-sm text-primary font-semibold rounded-lg active:bg-light min-h-[44px]"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   View All Services →
@@ -199,11 +199,34 @@ export function Header() {
 
                             {item.label === 'Locations' && (
                               <div className="space-y-1">
-                                {LOCATIONS.slice(0, 8).map((loc) => (
+                                {/* Lake Norman Featured Section */}
+                                <div className="px-4 py-2 text-xs font-bold text-accent uppercase tracking-wider">
+                                  Lake Norman Area
+                                </div>
+                                {LOCATIONS.filter((loc) =>
+                                  ['huntersville', 'cornelius', 'davidson', 'mooresville', 'denver', 'sherrills-ford'].includes(loc.slug)
+                                ).map((loc) => (
                                   <Link
                                     key={loc.slug}
                                     href={`/locations/${loc.slug}`}
-                                    className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                    className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    <MapPin className="w-4 h-4 text-accent" />
+                                    {loc.city}, {loc.state}
+                                  </Link>
+                                ))}
+                                {/* Other Popular Locations */}
+                                <div className="px-4 py-2 text-xs font-bold text-gray uppercase tracking-wider mt-2">
+                                  Other Areas
+                                </div>
+                                {LOCATIONS.filter((loc) =>
+                                  ['charlotte', 'concord', 'gastonia', 'rock-hill', 'fort-mill'].includes(loc.slug)
+                                ).map((loc) => (
+                                  <Link
+                                    key={loc.slug}
+                                    href={`/locations/${loc.slug}`}
+                                    className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                   >
                                     <MapPin className="w-4 h-4" />
@@ -212,10 +235,10 @@ export function Header() {
                                 ))}
                                 <Link
                                   href="/locations"
-                                  className="flex items-center gap-2 py-2 px-4 text-sm text-primary font-semibold rounded-lg hover:bg-light"
+                                  className="flex items-center gap-2 py-3 px-4 text-sm text-primary font-semibold rounded-lg active:bg-light min-h-[44px]"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                  View All Locations →
+                                  View All {LOCATIONS.length} Locations →
                                 </Link>
                               </div>
                             )}
@@ -226,7 +249,7 @@ export function Header() {
                                   <Link
                                     key={material.slug}
                                     href={`/materials/${material.slug}`}
-                                    className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                    className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                   >
                                     <ChevronRight className="w-4 h-4" />
@@ -234,8 +257,15 @@ export function Header() {
                                   </Link>
                                 ))}
                                 <Link
+                                  href="/materials"
+                                  className="flex items-center gap-2 py-3 px-4 text-sm text-primary font-semibold rounded-lg active:bg-light min-h-[44px]"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  View All Materials →
+                                </Link>
+                                <Link
                                   href="/brands"
-                                  className="flex items-center gap-2 py-2 px-4 text-sm text-gray rounded-lg hover:bg-light hover:text-primary"
+                                  className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   <Award className="w-4 h-4" />
