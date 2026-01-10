@@ -15,19 +15,19 @@ const WASTE_FACTOR = 1.15;
 const MATERIAL_PRICING = [
   {
     name: 'Architectural Shingles',
-    pricePerSqFt: { low: 4.00, mid: 6.38, high: 8.75 },
+    pricePerSqFt: { low: 3.60, mid: 5.74, high: 7.88 },
   },
   {
     name: 'Metal Roofing',
-    pricePerSqFt: { low: 10.00, mid: 12.00, high: 14.00 },
+    pricePerSqFt: { low: 9.00, mid: 10.80, high: 12.60 },
   },
   {
     name: 'Synthetic Roofing',
-    pricePerSqFt: { low: 8.00, mid: 10.00, high: 12.00 },
+    pricePerSqFt: { low: 7.20, mid: 9.00, high: 10.80 },
   },
   {
     name: 'Roof Coatings',
-    pricePerSqFt: { low: 3.00, mid: 3.88, high: 4.75 },
+    pricePerSqFt: { low: 2.70, mid: 3.49, high: 4.28 },
   },
 ];
 

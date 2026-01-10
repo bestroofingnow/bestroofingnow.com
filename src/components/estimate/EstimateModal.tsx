@@ -261,8 +261,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Quality architectural shingles with standard installation',
         warranty: 'Lifetime prorated warranty, 10 year full coverage',
         priceRange: {
-          low: Math.round(sqFt * 4.0 * totalMult),
-          high: Math.round(sqFt * 5.0 * totalMult),
+          low: Math.round(sqFt * 3.6 * totalMult),
+          high: Math.round(sqFt * 4.5 * totalMult),
         },
         features: ['Architectural shingles', 'Standard underlayment', 'Ice & water shield at valleys', '10-year workmanship warranty'],
       });
@@ -274,8 +274,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Complete CertainTeed roofing system with enhanced protection',
         warranty: '50-year all-inclusive warranty',
         priceRange: {
-          low: Math.round(sqFt * 5.0 * totalMult),
-          high: Math.round(sqFt * 6.0 * totalMult),
+          low: Math.round(sqFt * 4.5 * totalMult),
+          high: Math.round(sqFt * 5.4 * totalMult),
         },
         features: ['CertainTeed Landmark shingles', 'DiamondDeck underlayment', 'WinterGuard ice & water', 'Intake & exhaust ventilation', '50-year SureStart protection'],
       });
@@ -287,8 +287,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Premium Class 3 impact-resistant shingles',
         warranty: '50-year warranty with impact coverage',
         priceRange: {
-          low: Math.round(sqFt * 6.0 * totalMult),
-          high: Math.round(sqFt * 6.5 * totalMult),
+          low: Math.round(sqFt * 5.4 * totalMult),
+          high: Math.round(sqFt * 5.85 * totalMult),
         },
         features: ['Class 3 impact resistance', 'Insurance discount eligible', 'CertainTeed full system', 'Enhanced curb appeal', 'Maximum protection'],
       });
@@ -301,8 +301,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
           description: 'Designer Class 4 impact-resistant shingles - recommended for your roof size',
           warranty: 'Lifetime warranty with Class 4 impact rating',
           priceRange: {
-            low: Math.round(sqFt * 6.5 * totalMult),
-            high: Math.round(sqFt * 8.5 * totalMult),
+            low: Math.round(sqFt * 5.85 * totalMult),
+            high: Math.round(sqFt * 7.65 * totalMult),
           },
           features: ['Class 4 impact resistance', 'Maximum insurance discounts', 'Designer aesthetics', 'Ultimate durability', 'Best value for large roofs'],
         });
@@ -315,8 +315,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Durable metal panel roofing system',
         warranty: '40-year warranty',
         priceRange: {
-          low: Math.round(sqFt * 8.0 * totalMult),
-          high: Math.round(sqFt * 10.0 * totalMult),
+          low: Math.round(sqFt * 7.2 * totalMult),
+          high: Math.round(sqFt * 9.0 * totalMult),
         },
         features: ['26-gauge metal panels', 'Factory finish', 'Energy efficient', 'Low maintenance', '40-year paint warranty'],
       });
@@ -328,8 +328,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Premium concealed fastener metal roofing',
         warranty: '50-year warranty',
         priceRange: {
-          low: Math.round(sqFt * 10.0 * totalMult),
-          high: Math.round(sqFt * 12.0 * totalMult),
+          low: Math.round(sqFt * 9.0 * totalMult),
+          high: Math.round(sqFt * 10.8 * totalMult),
         },
         features: ['Concealed fasteners', '24-gauge steel', 'Kynar 500 finish', 'No exposed screws', 'Superior weather resistance'],
       });
@@ -341,8 +341,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Premium metal shingles with classic aesthetics',
         warranty: 'Lifetime warranty',
         priceRange: {
-          low: Math.round(sqFt * 12.0 * totalMult),
-          high: Math.round(sqFt * 14.0 * totalMult),
+          low: Math.round(sqFt * 10.8 * totalMult),
+          high: Math.round(sqFt * 12.6 * totalMult),
         },
         features: ['Stone-coated or painted finish', 'Shingle aesthetics', 'Impact resistant', 'Wind resistant to 120mph', 'Lifetime transferable warranty'],
       });
@@ -353,8 +353,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Restore and extend the life of your existing roof',
         warranty: '10-15 year warranty',
         priceRange: {
-          low: Math.round(sqFt * 2.5 * totalMult),
-          high: Math.round(sqFt * 3.5 * totalMult),
+          low: Math.round(sqFt * 2.25 * totalMult),
+          high: Math.round(sqFt * 3.15 * totalMult),
         },
         features: ['Seamless application', 'UV resistant', 'Energy efficient', 'Extends roof life 15+ years', 'No tear-off required'],
       });
@@ -369,8 +369,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: `Beautiful ${syntheticName.toLowerCase()} with modern durability`,
         warranty: '50-year warranty',
         priceRange: {
-          low: Math.round(sqFt * 10.0 * totalMult),
-          high: Math.round(sqFt * 13.0 * totalMult),
+          low: Math.round(sqFt * 9.0 * totalMult),
+          high: Math.round(sqFt * 11.7 * totalMult),
         },
         features: ['Authentic appearance', 'Lightweight', 'Impact resistant', 'Fire resistant', 'Low maintenance'],
       });
@@ -381,8 +381,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         description: 'Enhanced synthetic roofing with premium features',
         warranty: 'Lifetime warranty',
         priceRange: {
-          low: Math.round(sqFt * 13.0 * totalMult),
-          high: Math.round(sqFt * 16.0 * totalMult),
+          low: Math.round(sqFt * 11.7 * totalMult),
+          high: Math.round(sqFt * 14.4 * totalMult),
         },
         features: ['Multi-width blend', 'Enhanced color depth', 'Class 4 impact rating', 'Transferable warranty', 'Complete system installation'],
       });
@@ -492,10 +492,9 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Backdrop */}
+      {/* Backdrop - no click to close, must use X button */}
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-        onClick={onClose}
       />
 
       {/* Modal */}
