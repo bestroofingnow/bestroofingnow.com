@@ -168,6 +168,7 @@ export function Header() {
                               'w-5 h-5 transition-transform duration-150',
                               expandedMobileSection === item.label && 'rotate-180'
                             )}
+                            aria-hidden="true"
                           />
                         </button>
 

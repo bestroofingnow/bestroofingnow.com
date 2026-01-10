@@ -505,7 +505,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
           className="absolute top-3 right-3 p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition z-10 flex flex-col items-center gap-0.5"
           aria-label="Close modal"
         >
-          <X className="w-5 h-5" />
+          <X className="w-5 h-5" aria-hidden="true" />
           <span className="text-[10px] font-medium">close</span>
         </button>
 
@@ -545,8 +545,9 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                       key={prediction.place_id}
                       onClick={() => handleSelectPrediction(prediction)}
                       className="w-full px-4 py-3 text-left hover:bg-gray-50 flex items-start gap-3 border-b border-gray-100 last:border-0"
+                      aria-label={prediction.description}
                     >
-                      <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                      <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <div>
                         <div className="font-medium text-gray-900">
                           {prediction.structured_formatting?.main_text || prediction.description}
@@ -639,7 +640,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 onClick={goBack}
                 className="flex-1 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                 Back
               </button>
               <button
@@ -648,7 +649,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 className="flex-1 py-3 bg-primary hover:bg-primary-dark disabled:bg-gray-300 text-white font-semibold rounded-xl transition flex items-center justify-center gap-2"
               >
                 Next
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -730,7 +731,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 onClick={goBack}
                 className="flex-1 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                 Back
               </button>
               <button
@@ -739,7 +740,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 className="flex-1 py-3 bg-primary hover:bg-primary-dark disabled:bg-gray-300 text-white font-semibold rounded-xl transition flex items-center justify-center gap-2"
               >
                 Next
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -904,7 +905,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 onClick={goBack}
                 className="flex-1 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                 Back
               </button>
               <button
@@ -913,7 +914,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 className="flex-1 py-3 bg-primary hover:bg-primary-dark disabled:bg-gray-300 text-white font-semibold rounded-xl transition flex items-center justify-center gap-2"
               >
                 Next
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -959,7 +960,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 onClick={goBack}
                 className="flex-1 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                 Back
               </button>
               <button
@@ -968,7 +969,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 className="flex-1 py-3 bg-primary hover:bg-primary-dark disabled:bg-gray-300 text-white font-semibold rounded-xl transition flex items-center justify-center gap-2"
               >
                 Next
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -1109,7 +1110,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                   onClick={goBack}
                   className="flex-1 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2"
                 >
-                  <ChevronLeft className="w-5 h-5" />
+                  <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                   Back
                 </button>
                 <button
@@ -1119,7 +1120,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="w-5 h-5 animate-spin" />
+                      <Loader2 className="w-5 h-5 animate-spin" aria-hidden="true" />
                       Processing...
                     </>
                   ) : (

@@ -33,6 +33,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: {
           className={`h-5 w-5 text-gray-500 flex-shrink-0 transition-transform duration-200 ${
             isOpen ? 'rotate-180' : ''
           }`}
+          aria-hidden="true"
         />
       </button>
       <div
@@ -135,6 +136,7 @@ export function VoiceSearchFAQ({ faqs, city, className = '' }: VoiceSearchFAQPro
                   className={`h-5 w-5 text-blue-600 flex-shrink-0 transition-transform duration-200 ${
                     openItems.has(index) ? 'rotate-180' : ''
                   }`}
+                  aria-hidden="true"
                 />
               </button>
               <div

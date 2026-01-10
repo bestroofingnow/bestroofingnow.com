@@ -139,7 +139,7 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
           aria-expanded={activeMenu === 'services'}
         >
           Services
-          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'services' && 'rotate-180')} />
+          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'services' && 'rotate-180')} aria-hidden="true" />
         </button>
 
         {activeMenu === 'services' && (
@@ -214,7 +214,7 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
           aria-expanded={activeMenu === 'locations'}
         >
           Locations
-          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'locations' && 'rotate-180')} />
+          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'locations' && 'rotate-180')} aria-hidden="true" />
         </button>
 
         {activeMenu === 'locations' && (
@@ -298,7 +298,7 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
           aria-expanded={activeMenu === 'materials'}
         >
           Materials
-          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'materials' && 'rotate-180')} />
+          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'materials' && 'rotate-180')} aria-hidden="true" />
         </button>
 
         {activeMenu === 'materials' && (
