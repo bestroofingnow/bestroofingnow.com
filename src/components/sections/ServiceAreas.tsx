@@ -3,25 +3,20 @@
 import Link from 'next/link';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { LOCATIONS, SITE_CONFIG } from '@/lib/constants';
+import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
+
+// Charlotte PMI map ID
+const CHARLOTTE_MAP_ID = '6929921876fb8fa56e295536';
 
 export function ServiceAreas() {
   return (
     <section className="section">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Map Side */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Map Side - PMI Project Map */}
           <div className="relative">
-            <div className="bg-light rounded-2xl p-8 aspect-square flex items-center justify-center">
-              {/* Placeholder for map - can be replaced with actual map integration */}
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" aria-hidden="true" />
-                <p className="text-gray">
-                  Serving the greater Charlotte metro area
-                </p>
-                <p className="text-sm text-gray mt-2">
-                  Based in {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state}
-                </p>
-              </div>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <LazyProjectMap mapId={CHARLOTTE_MAP_ID} cityName="Charlotte" />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/10 rounded-full -z-10" />
