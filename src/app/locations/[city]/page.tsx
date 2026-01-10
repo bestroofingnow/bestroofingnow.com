@@ -1065,15 +1065,17 @@ export default async function LocationPage({ params }: PageProps) {
               with professional roofing services. Call us today for a free estimate!
             </p>
             <div className="bg-white rounded-xl p-8 shadow-md">
-              <div className="grid md:grid-cols-2 gap-6 text-left">
-                <div>
-                  <h3 className="font-bold text-dark mb-2">Office Address</h3>
-                  <p className="text-gray">
-                    {SITE_CONFIG.address.street}<br />
-                    {SITE_CONFIG.address.suite}<br />
-                    {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
-                  </p>
-                </div>
+              <div className={`grid ${isCharlotte ? 'md:grid-cols-2' : ''} gap-6 text-left`}>
+                {isCharlotte && (
+                  <div>
+                    <h3 className="font-bold text-dark mb-2">Office Address</h3>
+                    <p className="text-gray">
+                      {SITE_CONFIG.address.street}<br />
+                      {SITE_CONFIG.address.suite}<br />
+                      {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
+                    </p>
+                  </div>
+                )}
                 <div>
                   <h3 className="font-bold text-dark mb-2">Contact</h3>
                   <p className="text-gray">
