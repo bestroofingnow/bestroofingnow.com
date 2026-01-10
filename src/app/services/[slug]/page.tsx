@@ -547,8 +547,59 @@ export default async function ServicePage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* About This Service - Long Description */}
+      {service.longDescription && (
+        <section className="section bg-light">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-primary mb-6">
+                About Our {service.title} Services
+              </h2>
+              <p className="text-lg text-gray leading-relaxed mb-8">
+                {service.longDescription}
+              </p>
+              {/* Quick Stats */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {service.priceRange && (
+                  <div className="bg-white rounded-xl p-6 shadow-sm">
+                    <div className="text-sm text-gray uppercase tracking-wide mb-2">Price Range</div>
+                    <div className="text-xl font-bold text-primary">{service.priceRange}</div>
+                  </div>
+                )}
+                {service.timeline && (
+                  <div className="bg-white rounded-xl p-6 shadow-sm">
+                    <div className="text-sm text-gray uppercase tracking-wide mb-2">Timeline</div>
+                    <div className="text-xl font-bold text-primary">{service.timeline}</div>
+                  </div>
+                )}
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <div className="text-sm text-gray uppercase tracking-wide mb-2">Warranty</div>
+                  <div className="text-xl font-bold text-primary">Fully Guaranteed</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Charlotte-Specific Info */}
+      {service.charlotteNote && (
+        <section className="section">
+          <div className="container">
+            <div className="max-w-4xl mx-auto bg-primary/5 rounded-2xl p-8 md:p-10">
+              <h2 className="text-2xl font-bold text-primary mb-4">
+                {service.title} in Charlotte, NC
+              </h2>
+              <p className="text-gray text-lg leading-relaxed">
+                {service.charlotteNote}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Benefits Section */}
-      <section className="section">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

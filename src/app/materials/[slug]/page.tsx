@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { CheckCircle, Phone, Clock, DollarSign, Home, ArrowRight, Star, Award, Shield, Wind } from 'lucide-react';
+import { CheckCircle, XCircle, Phone, Clock, DollarSign, Home, ArrowRight, Star, Award, Shield, Wind, Zap, Wrench, Palette, MapPin, TrendingUp, Flame, Calendar } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_MATERIALS, ROOFING_BRANDS, SHINGLE_PRODUCTS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { FAQ } from '@/components/sections/FAQ';
@@ -26,9 +26,9 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
   }
 
   return {
-    title: `${material.name} | Roofing Materials Charlotte NC | Best Roofing Now`,
-    description: `${material.description} Learn about costs, benefits, and installation of ${material.name.toLowerCase()} in Charlotte NC. Free estimates available.`,
-    keywords: material.keywords,
+    title: `${material.name} Charlotte NC | Cost, Pros & Cons, Installation | Best Roofing Now`,
+    description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
+    keywords: [...material.keywords, `${material.shortName.toLowerCase()} roof Charlotte`, `${material.shortName.toLowerCase()} roofing contractor`],
     openGraph: {
       title: `${material.name} | Best Roofing Now Charlotte`,
       description: material.description,
@@ -38,30 +38,44 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
   };
 }
 
-// Generate FAQs for each material
+// Generate FAQs for each material - enhanced with more questions
 function getMaterialFAQs(material: typeof ROOFING_MATERIALS[0]) {
-  return [
+  const baseFaqs = [
     {
       question: `How much does ${material.name.toLowerCase()} cost in Charlotte?`,
-      answer: `${material.name} typically costs ${material.costRange} in the Charlotte area. The exact price depends on your roof size, complexity, and any additional work needed. Contact us for a free, detailed estimate.`,
+      answer: `${material.name} typically costs ${material.costRange} in the Charlotte area. For an average 2,000 sq ft roof, expect to pay ${material.avgCost2000sqft || 'varies based on specifics'}. The exact price depends on your roof size, complexity, pitch, and any additional work needed. Contact us for a free, detailed estimate.`,
     },
     {
       question: `How long does ${material.name.toLowerCase()} last?`,
-      answer: `${material.name} has an expected lifespan of ${material.lifespan} when properly installed and maintained. Charlotte's climate can affect longevity, which is why professional installation is crucial.`,
+      answer: `${material.name} has an expected lifespan of ${material.lifespan} when properly installed and maintained. Charlotte's humid subtropical climate with hot summers and occasional severe storms can affect longevity, which is why professional installation by certified contractors is crucial.`,
     },
     {
       question: `Is ${material.name.toLowerCase()} a good choice for Charlotte homes?`,
-      answer: `${material.name} is ${material.bestFor.toLowerCase()}. Charlotte's humid subtropical climate with occasional severe storms makes quality roofing essential. We can help determine if this material is right for your specific situation.`,
+      answer: `${material.charlotteConsiderations || `${material.name} is ${material.bestFor.toLowerCase()}. Charlotte's climate with hot summers, heavy rainfall, and occasional severe storms makes quality roofing essential. We can help determine if this material is right for your specific situation.`}`,
+    },
+    {
+      question: `What are the pros and cons of ${material.name.toLowerCase()}?`,
+      answer: `Pros include: ${material.benefits.slice(0, 3).join(', ')}. ${material.cons ? `Considerations include: ${material.cons.slice(0, 2).join(', ')}.` : ''} Our experts can help you weigh these factors for your specific situation.`,
+    },
+    {
+      question: `How long does ${material.name.toLowerCase()} installation take?`,
+      answer: `${material.name} installation typically takes ${material.installationTime || '2-5 days for an average home'}. The exact timeline depends on roof size, complexity, weather conditions, and any necessary repairs to the underlying structure.`,
+    },
+    {
+      question: `What maintenance does ${material.name.toLowerCase()} require?`,
+      answer: `${material.maintenanceNeeds || `Regular maintenance includes annual inspections, debris removal, and addressing any issues promptly. Proper maintenance can significantly extend your roof's lifespan.`}`,
     },
     {
       question: `Do you offer financing for ${material.name.toLowerCase()} installation?`,
-      answer: `Yes! We offer flexible financing options for all roofing materials, including ${material.name.toLowerCase()}. Get the roof you want with affordable monthly payments. Ask about our 0% interest options.`,
+      answer: `Yes! We offer flexible financing options for all roofing materials, including ${material.name.toLowerCase()}. Get the roof you want with affordable monthly payments. Ask about our 0% interest options for qualified buyers.`,
     },
     {
       question: `What warranty comes with ${material.name.toLowerCase()}?`,
-      answer: `Warranty coverage varies by manufacturer and product line. Most ${material.name.toLowerCase()} products come with manufacturer warranties of 25-50 years, plus our workmanship warranty. We'll explain all warranty options during your consultation.`,
+      answer: `${material.warrantyInfo || `Warranty coverage varies by manufacturer and product line. Most ${material.name.toLowerCase()} products come with manufacturer warranties, plus our workmanship warranty. We'll explain all warranty options during your consultation.`}`,
     },
   ];
+
+  return baseFaqs;
 }
 
 export default async function MaterialPage({ params }: MaterialPageProps) {
@@ -89,20 +103,40 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
           />
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {material.name}
+              {material.name} in Charlotte NC
             </h1>
             <p className="text-xl text-white/90 mb-8">
               {material.description}
             </p>
 
-            <div className="flex flex-wrap gap-6 mb-8">
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5" aria-hidden="true" />
-                <span><strong>Lifespan:</strong> {material.lifespan}</span>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="bg-white/10 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-1">
+                  <Clock className="w-4 h-4" aria-hidden="true" />
+                  <span className="text-sm text-white/70">Lifespan</span>
+                </div>
+                <div className="font-bold">{material.lifespan}</div>
               </div>
-              <div className="flex items-center gap-2">
-                <DollarSign className="w-5 h-5" aria-hidden="true" />
-                <span><strong>Cost:</strong> {material.costRange}</span>
+              <div className="bg-white/10 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-1">
+                  <DollarSign className="w-4 h-4" aria-hidden="true" />
+                  <span className="text-sm text-white/70">Cost/sq ft</span>
+                </div>
+                <div className="font-bold">{material.costRange.split(' ')[0]}</div>
+              </div>
+              <div className="bg-white/10 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-1">
+                  <Flame className="w-4 h-4" aria-hidden="true" />
+                  <span className="text-sm text-white/70">Fire Rating</span>
+                </div>
+                <div className="font-bold">{material.fireRating?.split(' ')[0] || 'Class A'}</div>
+              </div>
+              <div className="bg-white/10 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-1">
+                  <Wind className="w-4 h-4" aria-hidden="true" />
+                  <span className="text-sm text-white/70">Wind Rating</span>
+                </div>
+                <div className="font-bold">{material.windResistance?.split(' ').slice(0, 3).join(' ') || 'High'}</div>
               </div>
             </div>
 
@@ -124,98 +158,269 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="section">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+      {/* About This Material - Long Description */}
+      {material.longDescription && (
+        <section className="section">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-primary mb-6">
-                Benefits of {material.name}
+                About {material.name}
               </h2>
+              <p className="text-lg text-gray leading-relaxed">
+                {material.longDescription}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Pros and Cons */}
+      <section className="section bg-light">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-primary mb-8 text-center">
+            Pros & Cons of {material.name}
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Pros */}
+            <div className="bg-white rounded-xl p-8 shadow-md">
+              <h3 className="text-xl font-bold text-green-600 mb-6 flex items-center gap-2">
+                <CheckCircle className="w-6 h-6" aria-hidden="true" />
+                Advantages
+              </h3>
               <ul className="space-y-4">
                 {material.benefits.map((benefit, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="text-lg text-dark">{benefit}</span>
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="text-dark">{benefit}</span>
                   </li>
                 ))}
               </ul>
-
-              <div className="mt-8 p-6 bg-light rounded-xl">
-                <div className="flex items-center gap-2 mb-2">
-                  <Home className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <span className="font-bold text-primary">Best For:</span>
-                </div>
-                <p className="text-gray">{material.bestFor}</p>
-              </div>
             </div>
 
-            <div className="bg-light rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-primary mb-6">
-                Quick Facts
+            {/* Cons */}
+            <div className="bg-white rounded-xl p-8 shadow-md">
+              <h3 className="text-xl font-bold text-orange-600 mb-6 flex items-center gap-2">
+                <XCircle className="w-6 h-6" aria-hidden="true" />
+                Considerations
               </h3>
-              <div className="space-y-6">
-                <div>
-                  <div className="text-sm text-gray uppercase tracking-wide mb-1">Expected Lifespan</div>
-                  <div className="text-2xl font-bold text-dark">{material.lifespan}</div>
-                </div>
-                <div>
-                  <div className="text-sm text-gray uppercase tracking-wide mb-1">Cost Range (Installed)</div>
-                  <div className="text-2xl font-bold text-dark">{material.costRange}</div>
-                </div>
-                <div>
-                  <div className="text-sm text-gray uppercase tracking-wide mb-1">Our Rating</div>
-                  <div className="flex items-center gap-1">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} className="w-6 h-6 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-                    ))}
-                  </div>
-                </div>
-              </div>
+              <ul className="space-y-4">
+                {(material.cons || []).map((con, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <XCircle className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="text-dark">{con}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="mt-8 pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray mb-4">
-                  Ready to learn more about {material.name.toLowerCase()} for your home?
-                </p>
-                <a
-                  href={`tel:${SITE_CONFIG.phoneClean}`}
-                  className="btn btn-primary w-full"
-                >
-                  <Phone className="w-5 h-5" aria-hidden="true" />
-                  Call for Free Quote
-                </a>
+      {/* Technical Specifications */}
+      <section className="section">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-primary mb-8 text-center">
+            {material.name} Specifications & Details
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Lifespan</h3>
               </div>
+              <p className="text-gray">{material.lifespan}</p>
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <DollarSign className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Cost (Installed)</h3>
+              </div>
+              <p className="text-gray">{material.costRange}</p>
+              {material.avgCost2000sqft && (
+                <p className="text-sm text-gray mt-1">~{material.avgCost2000sqft} for 2,000 sq ft</p>
+              )}
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Calendar className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Installation Time</h3>
+              </div>
+              <p className="text-gray">{material.installationTime || '2-5 days typical'}</p>
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Wrench className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Maintenance</h3>
+              </div>
+              <p className="text-gray text-sm">{material.maintenanceNeeds || 'Annual inspection recommended'}</p>
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Energy Efficiency</h3>
+              </div>
+              <p className="text-gray text-sm">{material.energyEfficiency || 'Varies by color and product'}</p>
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Warranty</h3>
+              </div>
+              <p className="text-gray text-sm">{material.warrantyInfo || 'Manufacturer + workmanship warranty'}</p>
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Flame className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Fire Rating</h3>
+              </div>
+              <p className="text-gray">{material.fireRating || 'Class A available'}</p>
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Wind className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">Wind Resistance</h3>
+              </div>
+              <p className="text-gray">{material.windResistance || 'High wind rated options available'}</p>
+            </div>
+
+            <div className="bg-light rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <TrendingUp className="w-5 h-5 text-primary" aria-hidden="true" />
+                </div>
+                <h3 className="font-bold text-dark">ROI / Resale Value</h3>
+              </div>
+              <p className="text-gray">{material.roiValue || 'Increases home value'}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Colors */}
+      {material.popularColors && material.popularColors.length > 0 && (
+        <section className="section bg-light">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-primary mb-6 text-center flex items-center justify-center gap-3">
+                <Palette className="w-8 h-8" aria-hidden="true" />
+                Popular {material.shortName} Colors
+              </h2>
+              <p className="text-gray text-center mb-8">
+                Choose from a wide variety of colors to complement your home&apos;s exterior.
+              </p>
+              <div className="flex flex-wrap justify-center gap-3">
+                {material.popularColors.map((color, idx) => (
+                  <span
+                    key={idx}
+                    className="px-4 py-2 bg-white rounded-full shadow-sm text-dark font-medium"
+                  >
+                    {color}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Charlotte-Specific Section */}
+      {material.charlotteConsiderations && (
+        <section className="section">
+          <div className="container">
+            <div className="max-w-4xl mx-auto bg-primary/5 rounded-2xl p-8 md:p-12">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-white" aria-hidden="true" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-primary mb-4">
+                    {material.name} in Charlotte, NC
+                  </h2>
+                  <p className="text-gray text-lg leading-relaxed">
+                    {material.charlotteConsiderations}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Best For Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-primary mb-6">
+              Best For
+            </h2>
+            <div className="bg-white rounded-xl p-8 shadow-md">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Home className="w-8 h-8 text-primary" aria-hidden="true" />
+              </div>
+              <p className="text-xl text-dark">{material.bestFor}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="section bg-light">
+      <section className="section">
         <div className="container">
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">
             Why Choose Best Roofing Now for Your {material.shortName} Roof?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Expert Installation</h3>
+            <div className="bg-light rounded-xl p-6">
+              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                <Award className="w-6 h-6 text-white" aria-hidden="true" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-3">Certified Experts</h3>
               <p className="text-gray">
-                Our certified installers have years of experience with {material.name.toLowerCase()},
+                Our installers are certified by top manufacturers and have years of experience with {material.name.toLowerCase()},
                 ensuring your roof is installed correctly the first time.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Quality Materials</h3>
+            <div className="bg-light rounded-xl p-6">
+              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                <Shield className="w-6 h-6 text-white" aria-hidden="true" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-3">Premium Materials</h3>
               <p className="text-gray">
-                We source only premium materials from trusted manufacturers,
+                We source only the highest quality {material.name.toLowerCase()} from trusted manufacturers,
                 backed by industry-leading warranties.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Transparent Pricing</h3>
+            <div className="bg-light rounded-xl p-6">
+              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                <DollarSign className="w-6 h-6 text-white" aria-hidden="true" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-3">Fair, Transparent Pricing</h3>
               <p className="text-gray">
                 Get a detailed, written estimate with no hidden fees.
-                We offer flexible financing to fit your budget.
+                We offer flexible financing options to fit your budget.
               </p>
             </div>
           </div>
@@ -224,7 +429,7 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
 
       {/* Manufacturers Section - For Asphalt Shingles */}
       {material.slug === 'asphalt-shingles' && (
-        <section className="section">
+        <section className="section bg-light">
           <div className="container">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
               Top Asphalt Shingle Manufacturers
@@ -238,7 +443,7 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
               {ROOFING_BRANDS.map((brand) => {
                 const brandProducts = SHINGLE_PRODUCTS.filter(p => p.brand === brand.slug);
                 return (
-                  <div key={brand.slug} className="bg-light rounded-2xl p-8">
+                  <div key={brand.slug} className="bg-white rounded-2xl p-8 shadow-md">
                     <div className="flex flex-col lg:flex-row lg:items-start gap-6 mb-8">
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-2">
@@ -267,7 +472,7 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
                         <Link
                           key={product.slug}
                           href={`/products/${product.slug}`}
-                          className="bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition group"
+                          className="bg-light rounded-xl p-5 hover:shadow-lg transition group"
                         >
                           <h5 className="font-bold text-primary group-hover:text-accent transition mb-2">
                             {product.name}
@@ -341,6 +546,11 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
                 <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition">
                   {m.name}
                 </h3>
+                <div className="flex gap-4 text-sm text-gray mb-3">
+                  <span>{m.lifespan}</span>
+                  <span>|</span>
+                  <span>{m.costRange.split(' ')[0]}</span>
+                </div>
                 <p className="text-gray text-sm mb-4">{m.description.slice(0, 100)}...</p>
                 <div className="flex items-center gap-2 text-primary font-semibold">
                   Learn More
@@ -364,7 +574,7 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
             Ready for a New {material.shortName} Roof?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Get a free, no-obligation estimate for {material.name.toLowerCase()} installation.
+            Get a free, no-obligation estimate for {material.name.toLowerCase()} installation in Charlotte.
             Our experts are ready to help you choose the perfect solution for your home.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
