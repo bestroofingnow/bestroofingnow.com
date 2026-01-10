@@ -26,6 +26,15 @@ const OUR_BRAND_MARKERS = [
 ];
 
 /**
+ * Fixes CMS domain links to point to the main site
+ * WordPress content may have links to cms.bestroofingnow.com that need to be fixed
+ */
+function fixCmsDomainLinks(html: string): string {
+  // Replace cms.bestroofingnow.com with bestroofingnow.com (handles both http and https)
+  return html.replace(/https?:\/\/cms\.bestroofingnow\.com/gi, 'https://bestroofingnow.com');
+}
+
+/**
  * Cleans up blog-to-blog internal links, keeping only the most relevant ones
  * Replaces excessive blog links with plain text to reduce link dilution
  */
@@ -580,8 +589,11 @@ export function addInternalLinks(
 
   usedLinks.clear();
 
+  // Step 0: Fix CMS domain links (cms.bestroofingnow.com -> bestroofingnow.com)
+  let processedHtml = fixCmsDomainLinks(html);
+
   // Step 1: Clean up existing blog-to-blog links (keep only a few)
-  let processedHtml = cleanupBlogLinks(html, maxBlogLinks);
+  processedHtml = cleanupBlogLinks(processedHtml, maxBlogLinks);
 
   // Step 2: Handle competitor mentions and links
   if (cleanupCompetitors) {
