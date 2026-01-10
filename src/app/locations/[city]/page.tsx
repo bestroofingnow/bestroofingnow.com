@@ -31,23 +31,24 @@ const locationContent: Record<
 > = {
   'charlotte-nc': {
     description:
-      'When Charlotte homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
+      'Looking for the best roofing contractor in Charlotte NC? Best Roofing Now is Charlotte\'s #1 rated roofing company with a perfect 5-star Google rating and 500+ roofs installed. Veteran-owned, family-operated, BBB A+ accredited.',
     extendedContent:
-      'As the Queen City and largest metropolitan area in the Carolinas, Charlotte combines Southern charm with modern urban living. From the historic tree-lined streets of Myers Park to the bustling energy of Uptown, Charlotte homeowners take pride in properties that reflect the city\'s rich heritage and forward-thinking spirit. Best Roofing Now understands that your roof is more than just shingles—it\'s the protection your family depends on every day. That\'s why we\'ve built our reputation as the roofing company in Charlotte that homeowners trust for honest assessments, quality workmanship, and fair pricing. Our proximity to our main office means Charlotte homeowners receive the fastest response times for inspections, emergency repairs, and scheduled replacements. When you choose our roofing company in Charlotte, you\'re choosing a team that lives and works in your community.',
+      'As the Queen City and largest metropolitan area in the Carolinas, Charlotte combines Southern charm with modern urban living. From the historic tree-lined streets of Myers Park to the bustling energy of Uptown, Charlotte homeowners take pride in properties that reflect the city\'s rich heritage and forward-thinking spirit. Best Roofing Now is the roofing contractor Charlotte homeowners trust—with 500+ successful roof installations, a perfect 5-star Google rating, and BBB A+ accreditation. We understand that your roof is more than just shingles—it\'s the protection your family depends on every day. That\'s why we\'ve built our reputation as the #1 roofing contractor in Charlotte for honest assessments, quality workmanship, and fair pricing. Our main office is located right here in Charlotte, which means faster response times for inspections, emergency repairs, and scheduled replacements than any other roofing company near you.',
     roofingChallenges:
-      'Charlotte\'s humid subtropical climate brings hot summers with temperatures regularly exceeding 90°F, frequent afternoon thunderstorms from April through September, and occasional ice storms in winter. The city receives approximately 44 inches of rain annually and experiences severe weather events including straight-line winds, hail, and the occasional tornado that can cause significant roof damage. That\'s why choosing a local roofing company in Charlotte with storm damage experience matters. Our team at Best Roofing Now responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. With Charlotte\'s dense tree canopy and aging housing stock spanning everything from 1920s bungalows to modern new construction, roof damage from falling limbs and storm debris is a common concern. As your trusted roofing company in Charlotte, we\'ve seen it all and know exactly how to protect your home.',
+      'Charlotte\'s humid subtropical climate brings hot summers with temperatures regularly exceeding 90°F, frequent afternoon thunderstorms from April through September, and occasional ice storms in winter. The city receives approximately 44 inches of rain annually and experiences severe weather events including straight-line winds, hail, and the occasional tornado that can cause significant roof damage. That\'s why choosing a local roofing contractor in Charlotte with storm damage experience matters. As Charlotte\'s top-rated roofing contractor, our team at Best Roofing Now responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. With Charlotte\'s dense tree canopy and aging housing stock spanning everything from 1920s bungalows to modern new construction, roof damage from falling limbs and storm debris is a common concern. When you search for "roofing contractor near me" or "roofing company near me," you want a team that knows Charlotte—and that\'s us.',
     servicesIntro:
-      'As the leading roofing company in Charlotte, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing and coating systems. Whether you need a minor repair or a complete roof replacement, our roofing company in Charlotte delivers the quality and professionalism your home deserves. We use only premium materials from trusted manufacturers like GAF and CertainTeed, backed by industry-leading warranties. Contact the roofing company Charlotte homeowners trust for honest assessments and quality workmanship today.',
+      'As the #1 roofing contractor in Charlotte NC, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Whether you need a minor repair or a complete roof replacement, our roofing company in Charlotte delivers the quality and professionalism your home deserves. We\'re certified by CertainTeed, GAF, and Owens Corning—using only premium materials backed by industry-leading warranties. Contact the roofing contractor Charlotte homeowners trust for honest assessments and quality workmanship today.',
     neighborhoods: [
       'Myers Park', 'Dilworth', 'South End', 'NoDa', 'University City',
       'Ballantyne', 'Plaza Midwood', 'Elizabeth', 'Eastover', 'SouthPark',
       'Highland Creek', 'Steele Creek', 'Wesley Heights',
     ],
     highlights: [
-      'Main office location with fastest response times',
-      'Deep knowledge of Charlotte building codes',
-      'Insurance claim expertise and adjuster coordination',
-      'Free drone inspections with detailed photo documentation',
+      '500+ roofs installed with 5-star Google rating',
+      'CertainTeed, GAF & Owens Corning certified',
+      'Insurance claim experts—we handle the paperwork',
+      'Free drone inspections with photo documentation',
+      'Veteran-owned, family-operated since 2020',
     ],
   },
   'concord-nc': {
@@ -587,21 +588,56 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Location Not Found' };
   }
 
+  // Special optimization for Charlotte - primary target market
+  const isCharlotte = city === 'charlotte-nc';
+
+  const title = isCharlotte
+    ? `#1 Roofing Contractor Charlotte NC | Roofing Company Near Me | BBB A+`
+    : `Roofing Contractor ${location.city}, ${location.state} | Roof Repair & Replacement`;
+
+  const description = isCharlotte
+    ? `Charlotte's top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts, insurance claim assistance. Call (704) 605-6047.`
+    : `Best Roofing Now serves ${location.city}, ${location.state} with professional roofing services. Residential & commercial roofing, roof repair, replacement, and emergency services. Free estimates!`;
+
+  const keywords = isCharlotte
+    ? [
+        'roofing contractor Charlotte NC',
+        'roofing company Charlotte NC',
+        'roofing contractor near me',
+        'roofing company near me',
+        'roofers near me Charlotte',
+        'Charlotte roofers',
+        'Charlotte roofing contractor',
+        'Charlotte roofing company',
+        'roof repair Charlotte NC',
+        'roof replacement Charlotte NC',
+        'best roofer Charlotte',
+        'storm damage roof repair Charlotte',
+        'hail damage roof Charlotte',
+      ]
+    : [
+        `roofing contractor ${location.city} ${location.state}`,
+        `roofing company ${location.city} ${location.state}`,
+        `${location.city} roofers`,
+        `roof repair ${location.city}`,
+        `roof replacement ${location.city} ${location.state}`,
+        `roofers near me ${location.city}`,
+      ];
+
   return {
-    title: `Roofing Company ${location.city}, ${location.state} | Roof Repair & Replacement`,
-    description: `Best Roofing Now serves ${location.city}, ${location.state} with professional roofing services. Residential & commercial roofing, roof repair, replacement, and emergency services. Free estimates!`,
-    keywords: [
-      `roofing company ${location.city} ${location.state}`,
-      `${location.city} roofers`,
-      `roof repair ${location.city}`,
-      `roof replacement ${location.city} ${location.state}`,
-    ],
+    title,
+    description,
+    keywords,
     alternates: {
       canonical: `${SITE_CONFIG.url}/locations/${city}`,
     },
     openGraph: {
-      title: `Roofing Services in ${location.city}, ${location.state}`,
-      description: `Professional roofing services in ${location.city}. Free estimates, quality workmanship, BBB A+ rated.`,
+      title: isCharlotte
+        ? `#1 Roofing Contractor Charlotte NC | Best Roofing Now`
+        : `Roofing Services in ${location.city}, ${location.state}`,
+      description: isCharlotte
+        ? `Charlotte's top-rated roofing contractor. 5-star rating, veteran-owned, BBB A+ accredited. Free roof inspections.`
+        : `Professional roofing services in ${location.city}. Free estimates, quality workmanship, BBB A+ rated.`,
       url: `${SITE_CONFIG.url}/locations/${city}`,
     },
   };
@@ -623,6 +659,9 @@ export default async function LocationPage({ params }: PageProps) {
 
   // Get climate data for this location
   const climateData = getClimateData(city);
+
+  // Special optimization for Charlotte
+  const isCharlotte = city === 'charlotte-nc';
 
   return (
     <>
@@ -657,7 +696,7 @@ export default async function LocationPage({ params }: PageProps) {
               <span className="font-semibold">{location.county} County</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Roofing Company in {location.city}, {location.state}
+              {isCharlotte ? `#1 Roofing Contractor in Charlotte, NC` : `Roofing Contractor in ${location.city}, ${location.state}`}
             </h1>
             <p className="text-xl text-white/90 mb-8">{content.description}</p>
             <div className="flex flex-col sm:flex-row gap-4">

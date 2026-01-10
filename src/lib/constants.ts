@@ -20,8 +20,15 @@ export const SITE_CONFIG = {
   founded: '2020',
   googleRating: 5.0,
   googleReviewCount: 62,
-  customerCount: 100,
+  customerCount: 500,
+  roofsInstalled: 500,
+  yearsInBusiness: 5,
   bbbRating: 'A+',
+  certifications: [
+    'CertainTeed SELECT ShingleMaster',
+    'GAF Factory-Certified Contractor',
+    'Owens Corning Preferred Contractor',
+  ],
   social: {
     instagram: 'https://www.instagram.com/bestroofingnow',
     twitter: 'https://x.com/bestroofingnow',
@@ -1568,8 +1575,28 @@ export const ALL_FAQS = Object.values(FAQ_CATEGORIES).flatMap(category => catego
 // Voice Search Optimized FAQs - Conversational, direct answers
 export const VOICE_SEARCH_FAQS = [
   {
+    question: 'Who is the best roofing contractor in Charlotte NC?',
+    answer: 'Best Roofing Now is Charlotte\'s #1 rated roofing contractor with a perfect 5-star Google rating, BBB A+ accreditation, and 500+ roofs installed. We\'re a veteran-owned, family-operated roofing company serving Charlotte and surrounding areas within 50 miles.',
+    keywords: ['best roofing contractor Charlotte NC', 'top roofing contractor Charlotte', '#1 roofing contractor Charlotte'],
+  },
+  {
+    question: 'Who is the best roofing company near me in Charlotte?',
+    answer: 'Best Roofing Now is Charlotte\'s top-rated roofing company with a 5-star Google rating, BBB A+ accreditation, and 500+ successful roof installations. We are a veteran-owned, family-operated company serving the entire Charlotte metro area within 50 miles.',
+    keywords: ['best roofing company near me', 'roofing company near me Charlotte', 'top roofing company Charlotte'],
+  },
+  {
+    question: 'Where can I find a roofing contractor near me?',
+    answer: 'Best Roofing Now is your local roofing contractor serving Charlotte NC and all surrounding areas including Huntersville, Matthews, Concord, Gastonia, and Lake Norman. Call (704) 605-6047 for a free inspection. We\'re veteran-owned with 500+ roofs installed and a perfect 5-star rating.',
+    keywords: ['roofing contractor near me', 'local roofing contractor Charlotte', 'find roofer near me'],
+  },
+  {
+    question: 'What roofing company near me is the best rated?',
+    answer: 'Best Roofing Now is the highest-rated roofing company in Charlotte with a perfect 5.0 Google rating from 62+ reviews. We\'re also BBB A+ accredited and have installed 500+ roofs. As a veteran-owned company, we pride ourselves on honest assessments and quality work.',
+    keywords: ['best rated roofing company near me', 'highest rated roofer Charlotte', 'top rated roofing company'],
+  },
+  {
     question: 'Who is the best roofer near me in Charlotte?',
-    answer: 'Best Roofing Now is Charlotte\'s top-rated roofing company with a 5-star Google rating, BBB A+ accreditation, and over 100 satisfied customers. We are a family-owned, veteran-operated company serving the entire Charlotte metro area.',
+    answer: 'Best Roofing Now is Charlotte\'s top-rated roofing contractor with a 5-star Google rating, BBB A+ accreditation, and 500+ satisfied customers. We are a family-owned, veteran-operated company serving the entire Charlotte metro area.',
     keywords: ['best roofer near me', 'top roofer Charlotte', 'best roofing company Charlotte'],
   },
   {

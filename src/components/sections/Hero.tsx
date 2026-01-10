@@ -9,8 +9,8 @@ const HERO_BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2
 const trustSignals = [
   { icon: Star, text: '5.0 Google Rating' },
   { icon: Shield, text: 'BBB A+ Accredited' },
+  { icon: Award, text: '500+ Roofs Installed' },
   { icon: Clock, text: '24/7 Emergency' },
-  { icon: Award, text: 'Veteran-Founded' },
 ];
 
 interface HeroProps {

@@ -13,11 +13,22 @@ import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: "Charlotte's #1 Roofing Company | Roof Repair & Replacement",
-  description: 'Best Roofing Now is Charlotte NC trusted roofing company. Family-owned, veteran-operated. Free roof inspections, storm damage repair. BBB A+ rated.',
+  title: "#1 Roofing Contractor Charlotte NC | Roofers Near Me | BBB A+ Rated",
+  description: 'Best Roofing Now is Charlotte\'s top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts. Call (704) 605-6047.',
+  keywords: [
+    'roofing contractor Charlotte NC',
+    'roofing company Charlotte NC',
+    'roofers near me Charlotte',
+    'roofing contractor near me',
+    'roofing company near me',
+    'Charlotte roofers',
+    'roof repair Charlotte NC',
+    'roof replacement Charlotte',
+    'best roofer Charlotte',
+  ],
   openGraph: {
-    title: "Best Roofing Now | Charlotte's Trusted Roofing Company",
-    description: 'Family-owned, veteran-operated roofing company in Charlotte NC. Free inspections, honest assessments, and quality craftsmanship.',
+    title: "#1 Roofing Contractor Charlotte NC | Best Roofing Now",
+    description: 'Charlotte\'s top-rated roofing contractor. 5-star Google rating, veteran-owned, BBB A+ rated. Free roof inspections and estimates.',
     url: SITE_CONFIG.url,
   },
   alternates: {
@@ -31,8 +42,8 @@ export default function HomePage() {
       <FAQSchema faqs={HOMEPAGE_FAQ} />
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }]} />
       <Hero
-        title="Charlotte's Most Trusted Roofing Company"
-        subtitle="Family-owned, veteran-founded. We treat every home like it's our own. Free inspections, honest advice, and quality work that lasts."
+        title="Charlotte's #1 Roofing Contractor"
+        subtitle="Veteran-owned roofing company with 500+ roofs installed. 5-star Google rating, BBB A+ accredited. Free inspections, honest assessments, and quality craftsmanship guaranteed."
         backgroundImage={IMAGES.hero.roofTeam}
       />
       <Services

@@ -8,9 +8,18 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Services Charlotte NC | Residential & Commercial',
+  title: 'Roofing Services Charlotte NC | Roofing Contractor Near Me',
   description:
-    'Professional roofing services in Charlotte NC. Residential roofing, commercial roofing, roof repair, replacement, inspection, emergency services, gutters, and siding. Free estimates.',
+    'Professional roofing services from Charlotte\'s #1 roofing contractor. Roof repair, replacement, storm damage, inspections, gutters & siding. 5-star rated, 500+ roofs installed. Free estimates!',
+  keywords: [
+    'roofing services Charlotte NC',
+    'roofing contractor Charlotte',
+    'roofing contractor near me',
+    'roof repair Charlotte',
+    'roof replacement Charlotte NC',
+    'residential roofing Charlotte',
+    'commercial roofing Charlotte',
+  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/services`,
   },
@@ -51,13 +60,12 @@ export default function ServicesPage() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Professional Roofing Services in Charlotte, NC
+              Roofing Contractor Services in Charlotte, NC
             </h1>
             <p className="text-xl text-white/90">
-              From minor repairs to complete roof replacements, we provide
+              Charlotte's #1 rated roofing contractor with 500+ roofs installed. From minor repairs to complete roof replacements, we provide
               comprehensive roofing solutions for residential and commercial
-              properties. Quality craftsmanship backed by industry-leading
-              warranties.
+              properties. 5-star rated, veteran-owned, BBB A+ accredited.
             </p>
           </div>
         </div>

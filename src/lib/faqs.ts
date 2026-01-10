@@ -10,10 +10,28 @@ export interface FAQ {
 // Generate unique FAQs for each location page with local keywords
 export function generateLocationFAQs(city: string, state: string, county: string): FAQ[] {
   const stateName = state === 'NC' ? 'North Carolina' : 'South Carolina';
-  return [
+  const isCharlotte = city === 'Charlotte';
+
+  // Add Charlotte-specific questions at the beginning for the primary market
+  const charlotteSpecificFAQs: FAQ[] = isCharlotte ? [
+    {
+      question: `Who is the best roofing contractor in Charlotte NC?`,
+      answer: `Best Roofing Now is Charlotte's #1 rated roofing contractor with a perfect 5-star Google rating, BBB A+ accreditation, and 500+ roofs installed. We're veteran-owned, family-operated, and certified by CertainTeed, GAF, and Owens Corning. Call ${SITE_CONFIG.phone} for a free inspection.`,
+    },
+    {
+      question: `What roofing company near me is the best in Charlotte?`,
+      answer: `Best Roofing Now is the highest-rated roofing company in Charlotte with a 5.0 Google rating from 62+ reviews. As a local, veteran-owned roofing contractor, we've installed 500+ roofs throughout Charlotte and the surrounding 50-mile area. We offer free inspections and honest assessments.`,
+    },
+    {
+      question: `Where can I find a roofing contractor near me in Charlotte NC?`,
+      answer: `Best Roofing Now is your local roofing contractor located at 10130 Mallard Creek Rd in Charlotte. We serve all of Charlotte and surrounding areas within 50 miles including Huntersville, Matthews, Concord, Lake Norman, and Fort Mill SC. Call ${SITE_CONFIG.phone} for same-day estimates.`,
+    },
+  ] : [];
+
+  const standardFAQs: FAQ[] = [
     {
       question: `How much does a new roof cost in ${city}, ${state}?`,
-      answer: `The cost of a new roof in ${city} typically ranges from $8,000 to $25,000+ depending on the size of your home, materials chosen, and roof complexity. As the trusted roofing company in ${city}, Best Roofing Now provides free inspections and detailed quotes with no hidden fees. We also offer financing options for ${city} homeowners.`,
+      answer: `The cost of a new roof in ${city} typically ranges from $8,000 to $25,000+ depending on the size of your home, materials chosen, and roof complexity. As the trusted roofing contractor in ${city}, Best Roofing Now provides free inspections and detailed quotes with no hidden fees. We also offer financing options for ${city} homeowners.`,
     },
     {
       question: `Do you offer free roof inspections in ${city}?`,
@@ -56,6 +74,9 @@ export function generateLocationFAQs(city: string, state: string, county: string
       answer: `Yes! We offer flexible financing options for ${city} homeowners including 0% interest plans for qualified buyers. We believe every family in ${county} County deserves quality roofing protection. During your free consultation, we'll discuss payment options that fit your budget and help make your roof project affordable.`,
     },
   ];
+
+  // Return Charlotte-specific FAQs first, then standard FAQs
+  return [...charlotteSpecificFAQs, ...standardFAQs];
 }
 
 // Generate unique FAQs for each neighborhood page with hyperlocal keywords
