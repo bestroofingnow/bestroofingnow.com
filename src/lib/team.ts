@@ -38,9 +38,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     experience: '5+ years in roofing',
     certifications: [
       'CertainTeed SELECT ShingleMaster',
-      'GAF Factory-Certified Contractor',
-      'NC General Contractor License',
-      'OSHA 30-Hour Safety Certification',
     ],
     expertise: [
       'Insurance claim negotiation',
@@ -85,10 +82,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     shortBio: 'Chief Production Officer with 28 years of roofing and construction experience. Oversees all production operations and ensures the highest quality standards.',
     experience: '28+ years in roofing & construction',
     certifications: [
-      'Master Roofer Certification',
       'CertainTeed Certified',
-      'GAF Certified',
-      'OSHA Safety Certified',
     ],
     expertise: [
       'Production management',
