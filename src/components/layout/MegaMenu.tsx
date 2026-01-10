@@ -68,13 +68,13 @@ const locationsByCounty = LOCATIONS.reduce((acc, loc) => {
 
 // Lake Norman area cities (special grouping)
 const lakeNormanCities = [
-  'huntersville',
-  'cornelius',
-  'davidson',
-  'mooresville',
-  'denver',
-  'sherrills-ford',
-  'terrell',
+  'huntersville-nc',
+  'cornelius-nc',
+  'davidson-nc',
+  'mooresville-nc',
+  'denver-nc',
+  'sherrills-ford-nc',
+  'terrell-nc',
   'lake-norman',
 ];
 

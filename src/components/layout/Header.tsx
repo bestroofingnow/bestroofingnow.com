@@ -204,7 +204,7 @@ export function Header() {
                                   Lake Norman Area
                                 </div>
                                 {LOCATIONS.filter((loc) =>
-                                  ['huntersville', 'cornelius', 'davidson', 'mooresville', 'denver', 'sherrills-ford'].includes(loc.slug)
+                                  ['huntersville-nc', 'cornelius-nc', 'davidson-nc', 'mooresville-nc', 'denver-nc', 'sherrills-ford-nc', 'lake-norman'].includes(loc.slug)
                                 ).map((loc) => (
                                   <Link
                                     key={loc.slug}

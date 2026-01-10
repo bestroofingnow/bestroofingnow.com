@@ -502,10 +502,11 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition z-10"
-          aria-label="Close"
+          className="absolute top-3 right-3 p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition z-10 flex flex-col items-center gap-0.5"
+          aria-label="Close modal"
         >
           <X className="w-5 h-5" />
+          <span className="text-[10px] font-medium">close</span>
         </button>
 
         {/* Address Step */}

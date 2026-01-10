@@ -336,6 +336,8 @@ export const LOCATIONS = [
 
   // === LAKE NORMAN AREA ===
   { slug: 'lake-norman', city: 'Lake Norman', state: 'NC', isPrimary: false, county: 'Multiple', distance: 20 },
+  { slug: 'sherrills-ford-nc', city: 'Sherrills Ford', state: 'NC', isPrimary: false, county: 'Catawba', distance: 28 },
+  { slug: 'terrell-nc', city: 'Terrell', state: 'NC', isPrimary: false, county: 'Catawba', distance: 30 },
 
   // === CATAWBA COUNTY ===
   { slug: 'hickory-nc', city: 'Hickory', state: 'NC', isPrimary: false, county: 'Catawba', distance: 45 },
