@@ -8,7 +8,7 @@ import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { ProjectGallery } from '@/components/sections/ProjectGallery';
 import { InteractiveServiceMap } from '@/components/ui/InteractiveServiceMap';
-import { FAQSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { FAQSchema, BreadcrumbSchema, HomePageAEOSchemas, SpeakableContent } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -39,8 +39,13 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+      {/* Schema Markup for SEO */}
       <FAQSchema faqs={HOMEPAGE_FAQ} />
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }]} />
+      {/* AEO Schemas for Voice Search and AI Assistants */}
+      <HomePageAEOSchemas />
+      {/* Speakable Content for Voice Assistants */}
+      <SpeakableContent />
       <Hero
         title="Charlotte's #1 Roofing Contractor"
         subtitle="Veteran-owned roofing company with 500+ roofs installed. 5-star Google rating, BBB A+ accredited. Free inspections, honest assessments, and quality craftsmanship guaranteed."

@@ -1,4 +1,4 @@
-import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS } from '@/lib/constants';
+import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS, HOWTO_CONTENT, AI_CITATION_CONTENT, FEATURED_SNIPPET_CONTENT } from '@/lib/constants';
 
 // Local Business Schema for the main site
 export function LocalBusinessSchema() {
@@ -1309,6 +1309,216 @@ export function SpeakableContent() {
       <div className="sr-only speakable-contact" aria-hidden="true">
         {SPEAKABLE_CONTENT.contactInfo}
       </div>
+    </>
+  );
+}
+
+// ============================================
+// ENHANCED AEO SCHEMAS FOR AI ASSISTANTS
+// Optimized for Perplexity, ChatGPT, Google AI, and voice search
+// ============================================
+
+// Multiple HowTo Schemas for voice search and featured snippets
+export function AllHowToSchemas() {
+  return (
+    <>
+      {HOWTO_CONTENT.map((howto, index) => {
+        const schema = {
+          '@context': 'https://schema.org',
+          '@type': 'HowTo',
+          '@id': `${SITE_CONFIG.url}/#howto-${index + 1}`,
+          name: howto.title,
+          description: howto.description,
+          totalTime: howto.totalTime,
+          estimatedCost: {
+            '@type': 'MonetaryAmount',
+            currency: 'USD',
+            value: howto.estimatedCost,
+          },
+          step: howto.steps.map((step, stepIndex) => ({
+            '@type': 'HowToStep',
+            position: stepIndex + 1,
+            name: `Step ${stepIndex + 1}`,
+            text: step,
+          })),
+          tool: [],
+          supply: [],
+        };
+
+        return (
+          <script
+            key={`howto-${index}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        );
+      })}
+    </>
+  );
+}
+
+// AI Citation Schema - Structured data for AI assistants to cite
+export function AICitationSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE_CONFIG.url}/#ai-citation`,
+    name: AI_CITATION_CONTENT.companyFacts.name,
+    alternateName: 'Best Roofing Now LLC',
+    description: `${AI_CITATION_CONTENT.companyFacts.type} serving ${AI_CITATION_CONTENT.companyFacts.location}. ${AI_CITATION_CONTENT.companyFacts.ownership}. ${AI_CITATION_CONTENT.companyFacts.projectsCompleted}.`,
+    url: AI_CITATION_CONTENT.companyFacts.website,
+    telephone: AI_CITATION_CONTENT.companyFacts.phone,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '10130 Mallard Creek Rd, Suite 300',
+      addressLocality: 'Charlotte',
+      addressRegion: 'NC',
+      postalCode: '28262',
+      addressCountry: 'US',
+    },
+    foundingDate: AI_CITATION_CONTENT.companyFacts.founded,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '62',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    areaServed: AI_CITATION_CONTENT.serviceArea.majorCities.map(city => ({
+      '@type': 'City',
+      name: city,
+    })),
+    knowsAbout: [
+      'Roof Replacement',
+      'Roof Repair',
+      'Storm Damage Repair',
+      'Hail Damage Repair',
+      'Insurance Claims',
+      'Emergency Roofing',
+      'Residential Roofing',
+      'Commercial Roofing',
+      'Gutter Installation',
+      'Siding Installation',
+    ],
+    award: AI_CITATION_CONTENT.companyFacts.awards,
+    hasCredential: AI_CITATION_CONTENT.companyFacts.certifications.map(cert => ({
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: cert,
+    })),
+    slogan: 'We Tell People the Truth, Even When It Is Not a Sale',
+    // Key facts for AI extraction
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'Projects Completed',
+        value: AI_CITATION_CONTENT.companyFacts.projectsCompleted,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Service Radius',
+        value: AI_CITATION_CONTENT.companyFacts.serviceRadius,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'Google Rating',
+        value: AI_CITATION_CONTENT.companyFacts.googleRating,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'BBB Rating',
+        value: AI_CITATION_CONTENT.companyFacts.bbbRating,
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Featured Snippet List Schema
+export function FeaturedSnippetListSchema({ listIndex = 0 }: { listIndex?: number }) {
+  const list = FEATURED_SNIPPET_CONTENT.lists[listIndex];
+  if (!list) return null;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${SITE_CONFIG.url}/#featured-list-${listIndex}`,
+    name: list.title,
+    numberOfItems: list.items.length,
+    itemListElement: list.items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item,
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// All Featured Snippet Lists
+export function AllFeaturedSnippetLists() {
+  return (
+    <>
+      {FEATURED_SNIPPET_CONTENT.lists.map((_, index) => (
+        <FeaturedSnippetListSchema key={index} listIndex={index} />
+      ))}
+    </>
+  );
+}
+
+// Definition Schema for Featured Snippets
+export function AllDefinitionSchemas() {
+  return (
+    <>
+      {FEATURED_SNIPPET_CONTENT.definitions.map((def, index) => {
+        const schema = {
+          '@context': 'https://schema.org',
+          '@type': 'DefinedTerm',
+          '@id': `${SITE_CONFIG.url}/#definition-${index}`,
+          name: def.term,
+          description: def.definition,
+          inDefinedTermSet: {
+            '@type': 'DefinedTermSet',
+            name: 'Roofing Industry Terminology',
+            publisher: {
+              '@type': 'Organization',
+              '@id': `${SITE_CONFIG.url}/#organization`,
+            },
+          },
+        };
+
+        return (
+          <script
+            key={`def-${index}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        );
+      })}
+    </>
+  );
+}
+
+// Comprehensive AEO Schema Bundle for Homepage
+export function HomePageAEOSchemas() {
+  return (
+    <>
+      <VoiceSearchFAQSchema />
+      <SpeakableSchema />
+      <AICitationSchema />
+      <AllHowToSchemas />
+      <AllFeaturedSnippetLists />
+      <AllDefinitionSchemas />
     </>
   );
 }
