@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Star, Quote, Phone, ArrowRight, ExternalLink } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { LazyReviewWidget } from '@/components/ui/LazyReviewWidget';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -289,13 +290,10 @@ export default function ReviewsPage() {
             Recent Google Reviews
           </h2>
           <div className="max-w-4xl mx-auto">
-            <iframe
+            <LazyReviewWidget
               src="https://manage.bestroofingnow.com/reputation/widgets/review_widget/YnvUmp9cZqt5xmVLrnoq?widgetId=691f1dc6f44c6d6cf097352c"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              className="rounded-xl shadow-lg"
               title="Customer Reviews"
+              height={600}
             />
           </div>
         </div>

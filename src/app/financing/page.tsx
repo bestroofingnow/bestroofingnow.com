@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { LazyFinancingIframe } from '@/components/ui/LazyFinancingIframe';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -268,27 +269,11 @@ export default function FinancingPage() {
               Soft Credit Pull - Won&apos;t Hurt Your Credit
             </div>
           </div>
-          <div className="bg-white rounded-2xl p-4 md:p-8 max-w-4xl mx-auto">
-            <iframe
-              id="gpp-iframe"
-              width="100%"
+          <div className="max-w-4xl mx-auto p-4 md:p-8">
+            <LazyFinancingIframe
               src="https://getpowerpay.com/financing/roofing/?d=16995"
-              frameBorder="0"
-              scrolling="no"
-              style={{ minHeight: '600px' }}
               title="PowerPay Roof Financing Application"
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.addEventListener('message', function(e) {
-                    var scroll_height = e.data;
-                    if (typeof scroll_height === 'number') {
-                      document.getElementById('gpp-iframe').style.height = scroll_height + 'px';
-                    }
-                  }, false);
-                `,
-              }}
+              minHeight={600}
             />
           </div>
         </div>

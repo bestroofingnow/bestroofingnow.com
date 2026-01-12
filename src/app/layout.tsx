@@ -133,6 +133,10 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
         {/* ProjectMapIt for location pages */}
         <link rel="dns-prefetch" href="https://projectmapit.com" />
+        {/* PowerPay financing - preconnect for faster badge loading */}
+        <link rel="preconnect" href="https://getpowerpay.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://getpowerpay.com" />
+        <link rel="dns-prefetch" href="https://app.getpowerpay.com" />
         <LocalBusinessSchema />
         <WebSiteSchema />
         <HowToGetRoofEstimateSchema />

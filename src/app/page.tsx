@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Hero } from '@/components/sections/Hero';
 import { Services } from '@/components/sections/Services';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
@@ -72,12 +73,14 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="inline-block hover:opacity-90 transition-opacity"
             >
-              <img
+              <Image
                 src="https://getpowerpay.com/badges/home-improvement-style2.png"
                 alt="PowerPay Roof Financing - Apply Now for Home Improvement Financing"
                 width={200}
                 height={80}
                 className="w-[200px] block"
+                loading="lazy"
+                unoptimized
               />
               <span className="block text-center text-xs font-bold text-[#ee9c48]">
                 Roof Financing

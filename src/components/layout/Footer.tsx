@@ -254,12 +254,14 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="inline-block hover:opacity-90 transition-opacity"
               >
-                <img
+                <Image
                   src="https://getpowerpay.com/badges/home-improvement-style2.png"
                   alt="PowerPay Roof Financing - Apply Now"
                   width={200}
                   height={80}
                   className="w-[200px] block"
+                  loading="lazy"
+                  unoptimized
                 />
                 <span className="block text-center text-xs font-bold text-[#ee9c48]">
                   Roof Financing

@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
         hostname: 'upload.wikimedia.org',
         pathname: '/wikipedia/commons/**',
       },
+      // PowerPay financing badges and banners
+      {
+        protocol: 'https',
+        hostname: 'getpowerpay.com',
+        pathname: '/**',
+      },
     ],
     // Optimize image loading for performance
     formats: ['image/avif', 'image/webp'],

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Shield } from 'lucide-react';
 
 interface FinancingBannerProps {
@@ -18,12 +19,14 @@ export function FinancingBanner({ className = '', variant = 'sidebar' }: Financi
             rel="noopener noreferrer"
             className="flex-shrink-0 hover:opacity-90 transition-opacity"
           >
-            <img
+            <Image
               src="https://getpowerpay.com/banners/300x250/1.png"
               alt="PowerPay Roof Financing - Apply Now"
               width={300}
               height={250}
               className="rounded-lg shadow-md"
+              loading="lazy"
+              unoptimized
             />
           </a>
           <div className="text-center md:text-left">
@@ -34,7 +37,7 @@ export function FinancingBanner({ className = '', variant = 'sidebar' }: Financi
               Get the roof you need without breaking the bank. Check your rate in seconds with no impact to your credit score.
             </p>
             <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1.5 rounded-full text-sm font-semibold">
-              <Shield className="w-4 h-4" />
+              <Shield className="w-4 h-4" aria-hidden="true" />
               Soft Credit Pull - Won&apos;t Hurt Your Credit
             </div>
           </div>
@@ -52,16 +55,18 @@ export function FinancingBanner({ className = '', variant = 'sidebar' }: Financi
         rel="noopener noreferrer"
         className="inline-block hover:opacity-90 transition-opacity"
       >
-        <img
+        <Image
           src="https://getpowerpay.com/banners/300x250/1.png"
           alt="PowerPay Roof Financing - Apply Now"
           width={300}
           height={250}
           className="rounded-lg shadow-md mx-auto"
+          loading="lazy"
+          unoptimized
         />
       </a>
       <p className="mt-3 text-sm text-gray-600 flex items-center justify-center gap-1.5">
-        <Shield className="w-4 h-4 text-green-600" />
+        <Shield className="w-4 h-4 text-green-600" aria-hidden="true" />
         <span>Soft credit pull - won&apos;t hurt your credit!</span>
       </p>
     </div>
