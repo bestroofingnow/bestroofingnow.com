@@ -1208,6 +1208,36 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               *Estimates based on satellite data and your selections. Final pricing requires an on-site inspection.
             </p>
 
+            {/* Financing Option */}
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-4 mb-4">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-bold text-gray-900 mb-1">Need Financing?</h4>
+                  <p className="text-sm text-gray-600 mb-2">
+                    Check your rate in seconds with <strong>no impact to your credit score</strong>.
+                    Soft credit pull only - won&apos;t hurt your credit!
+                  </p>
+                  <div className="flex flex-wrap gap-2 text-xs text-gray-500 mb-3">
+                    <span className="bg-white px-2 py-1 rounded">0% APR Options</span>
+                    <span className="bg-white px-2 py-1 rounded">Low Monthly Payments</span>
+                    <span className="bg-white px-2 py-1 rounded">Quick Approval</span>
+                  </div>
+                  <a
+                    href="https://app.getpowerpay.com/apply/16995"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg transition text-sm"
+                  >
+                    Apply for Financing
+                    <ChevronRight className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-primary/5 rounded-xl p-4 mb-4">
               <p className="text-sm text-gray-600 mb-2 text-center">A roofing specialist will contact you shortly!</p>
               <a

@@ -31,6 +31,7 @@ import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 import { getServiceFAQs } from '@/lib/faqs';
 import { EstimateButton } from '@/components/estimate';
+import { FinancingBanner } from '@/components/ui/FinancingBanner';
 
 // Map service slugs to their image sets
 const serviceImages: Record<string, string[]> = {
@@ -665,6 +666,13 @@ export default async function ServicePage({ params }: PageProps) {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Financing Banner */}
+      <section className="section bg-light">
+        <div className="container">
+          <FinancingBanner variant="inline" />
         </div>
       </section>
 

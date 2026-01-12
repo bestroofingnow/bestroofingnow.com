@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
 import {
   DollarSign,
@@ -7,9 +6,6 @@ import {
   Clock,
   CreditCard,
   Shield,
-  Phone,
-  ArrowRight,
-  Calculator
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
@@ -257,65 +253,43 @@ export default function FinancingPage() {
         </div>
       </section>
 
-      {/* Calculator CTA */}
+      {/* Apply Now - PowerPay Integration */}
       <section className="section bg-primary text-white">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                See Your Estimated Monthly Payment
-              </h2>
-              <p className="text-white/90 text-lg mb-6">
-                Get a personalized estimate for your roofing project. Our team will work with you
-                to find a payment plan that fits your budget.
-              </p>
-              <div className="bg-white/10 rounded-xl p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <Calculator className="w-10 h-10" />
-                  <div>
-                    <p className="font-bold text-xl">Example Payment</p>
-                    <p className="text-white/90">$15,000 roof replacement</p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white/10 rounded-lg p-4">
-                    <p className="text-sm text-white/90">12 Months @ 0% APR</p>
-                    <p className="text-2xl font-bold">$1,250/mo</p>
-                  </div>
-                  <div className="bg-white/10 rounded-lg p-4">
-                    <p className="text-sm text-white/90">60 Months</p>
-                    <p className="text-2xl font-bold">$285/mo</p>
-                  </div>
-                </div>
-              </div>
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Apply for Financing Now
+            </h2>
+            <p className="text-white/90 text-lg mb-4">
+              Check your rate in seconds with no impact to your credit score.
+            </p>
+            <div className="inline-flex items-center gap-2 bg-green-500/20 text-green-100 px-4 py-2 rounded-full text-sm font-semibold">
+              <Shield className="w-4 h-4" />
+              Soft Credit Pull - Won&apos;t Hurt Your Credit
             </div>
-            <div className="text-center lg:text-left">
-              <div className="bg-white rounded-2xl p-8 text-dark">
-                <h3 className="text-2xl font-bold text-primary mb-4">
-                  Ready to Get Started?
-                </h3>
-                <p className="text-gray mb-6">
-                  Get a free roof inspection and personalized financing options. No obligation,
-                  no pressure, just honest answers.
-                </p>
-                <div className="space-y-4">
-                  <a
-                    href={`tel:${SITE_CONFIG.phoneClean}`}
-                    className="btn btn-primary w-full justify-center"
-                  >
-                    <Phone className="w-5 h-5" />
-                    Call {SITE_CONFIG.phone}
-                  </a>
-                  <Link
-                    href="/contact"
-                    className="btn bg-light text-primary hover:bg-gray-200 w-full justify-center"
-                  >
-                    Request Free Estimate
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div className="bg-white rounded-2xl p-4 md:p-8 max-w-4xl mx-auto">
+            <iframe
+              id="gpp-iframe"
+              width="100%"
+              src="https://getpowerpay.com/financing/roofing/?d=16995"
+              frameBorder="0"
+              scrolling="no"
+              style={{ minHeight: '600px' }}
+              title="PowerPay Roof Financing Application"
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.addEventListener('message', function(e) {
+                    var scroll_height = e.data;
+                    if (typeof scroll_height === 'number') {
+                      document.getElementById('gpp-iframe').style.height = scroll_height + 'px';
+                    }
+                  }, false);
+                `,
+              }}
+            />
           </div>
         </div>
       </section>

@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { FinancingBanner } from '@/components/ui/FinancingBanner';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -509,6 +510,13 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Financing Banner */}
+      <section className="section bg-light">
+        <div className="container">
+          <FinancingBanner variant="inline" />
         </div>
       </section>
 
