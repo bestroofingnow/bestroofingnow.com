@@ -16,7 +16,12 @@
       "Bash(head:*)",
       "Bash(npx tsc:*)",
       "Bash(npx vercel:*)",
-      "Bash(claude mcp list:*)"
+      "Bash(claude mcp list:*)",
+      "Bash(magick:*)",
+      "Bash(convert:*)",
+      "Bash(npm install:*)",
+      "Bash(node -e:*)",
+      "Bash(ls:*)"
     ]
   }
 }

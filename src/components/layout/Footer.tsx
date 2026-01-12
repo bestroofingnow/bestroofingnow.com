@@ -245,6 +245,27 @@ export function Footer() {
                 Get Free Instant Estimate
               </EstimateButton>
             </div>
+
+            {/* Financing Badge */}
+            <div className="mt-6">
+              <a
+                href="https://app.getpowerpay.com/apply/16995"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block hover:opacity-90 transition-opacity"
+              >
+                <img
+                  src="https://getpowerpay.com/badges/home-improvement-style2.png"
+                  alt="PowerPay Roof Financing - Apply Now"
+                  width={200}
+                  height={80}
+                  className="w-[200px] block"
+                />
+                <span className="block text-center text-xs font-bold text-[#ee9c48]">
+                  Roof Financing
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
