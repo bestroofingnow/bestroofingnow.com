@@ -21,7 +21,8 @@
       "Bash(convert:*)",
       "Bash(npm install:*)",
       "Bash(node -e:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Read(//c/Users/james/**)"
     ]
   }
 }

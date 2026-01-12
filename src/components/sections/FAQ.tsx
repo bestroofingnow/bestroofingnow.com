@@ -19,27 +19,39 @@ export function FAQ({
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="section bg-light">
+    <section
+      className="section bg-light"
+      aria-labelledby="faq-section-title"
+      itemScope
+      itemType="https://schema.org/FAQPage"
+    >
       <div className="container">
         <div className="max-w-3xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
               <HelpCircle className="w-4 h-4" aria-hidden="true" />
               <span className="text-sm font-semibold">FAQ</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <h2
+              id="faq-section-title"
+              className="text-3xl md:text-4xl font-bold text-primary mb-4"
+            >
               {title}
             </h2>
             <p className="text-gray text-lg">{subtitle}</p>
-          </div>
+          </header>
 
-          {/* FAQ Accordion */}
-          <div className="space-y-4">
+          {/* FAQ Accordion - Semantic markup for voice search */}
+          <div className="space-y-4" role="list">
             {faqs.map((faq, index) => (
-              <div
+              <article
                 key={index}
                 className="bg-white rounded-xl shadow-md overflow-hidden"
+                itemScope
+                itemProp="mainEntity"
+                itemType="https://schema.org/Question"
+                role="listitem"
               >
                 <button
                   className="w-full flex items-center justify-between p-6 text-left"
@@ -48,7 +60,11 @@ export function FAQ({
                   aria-controls={`faq-answer-${index}`}
                   aria-label={`${openIndex === index ? 'Collapse' : 'Expand'} answer to: ${faq.question}`}
                 >
-                  <span id={`faq-question-${index}`} className="font-semibold text-dark pr-4">
+                  <span
+                    id={`faq-question-${index}`}
+                    className="font-semibold text-dark pr-4"
+                    itemProp="name"
+                  >
                     {faq.question}
                   </span>
                   <ChevronDown
@@ -67,12 +83,18 @@ export function FAQ({
                   )}
                   role="region"
                   aria-labelledby={`faq-question-${index}`}
+                  itemScope
+                  itemProp="acceptedAnswer"
+                  itemType="https://schema.org/Answer"
                 >
-                  <div className="px-6 pb-6 text-gray leading-relaxed">
+                  <div
+                    className="px-6 pb-6 text-gray leading-relaxed"
+                    itemProp="text"
+                  >
                     {faq.answer}
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
 

@@ -29,7 +29,17 @@ export function Hero({
   backgroundImageAlt = "Charlotte NC roofing contractor - Best Roofing Now professional team installing residential roof",
 }: HeroProps) {
   return (
-    <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark overflow-hidden">
+    <section
+      className="relative bg-gradient-to-br from-primary via-primary to-primary-dark overflow-hidden"
+      itemScope
+      itemType="https://schema.org/RoofingContractor"
+      aria-label="Hero section - Best Roofing Now, Charlotte's top-rated roofing contractor"
+    >
+      {/* Hidden structured data for bots */}
+      <meta itemProp="name" content="Best Roofing Now" />
+      <meta itemProp="telephone" content="(704) 605-6047" />
+      <meta itemProp="priceRange" content="$$" />
+      <link itemProp="url" href="https://bestroofingnow.com" />
       {/* Static Background Shapes - decorative */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/5 rounded-full" />
@@ -72,14 +82,20 @@ export function Hero({
             <div
               className="inline-flex items-center gap-2 bg-white/15 md:bg-white/10 md:backdrop-blur-sm rounded-full px-4 py-2 mb-4 md:mb-6 animate-fade-in-up"
               style={{ animationDelay: '0s' }}
+              itemProp="aggregateRating"
+              itemScope
+              itemType="https://schema.org/AggregateRating"
             >
+              <meta itemProp="ratingValue" content="5.0" />
+              <meta itemProp="bestRating" content="5" />
+              <meta itemProp="ratingCount" content={String(SITE_CONFIG.googleReviewCount)} />
               <div className="flex" role="img" aria-label="5 star rating">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
                 ))}
               </div>
               <span className="text-white text-sm font-medium">
-                Rated 5.0 by {SITE_CONFIG.customerCount}+ Happy Customers
+                Rated <span itemProp="ratingValue">5.0</span> by {SITE_CONFIG.customerCount}+ Happy Customers
               </span>
             </div>
 

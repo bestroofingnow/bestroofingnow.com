@@ -1,13 +1,31 @@
 import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS, HOWTO_CONTENT, AI_CITATION_CONTENT, FEATURED_SNIPPET_CONTENT } from '@/lib/constants';
 
-// Local Business Schema for the main site
+// Local Business Schema for the main site - Enhanced for Map Pack ranking
 export function LocalBusinessSchema() {
+  // Build comprehensive sameAs array with social + key business profiles
+  const sameAsLinks = [
+    ...Object.values(SITE_CONFIG.social),
+    // Critical for Map Pack - Google Business Profile
+    SITE_CONFIG.externalProfiles.googleMaps,
+    // Other key citations that Google values
+    SITE_CONFIG.externalProfiles.bbb,
+    SITE_CONFIG.externalProfiles.nextdoor,
+    SITE_CONFIG.externalProfiles.appleMaps,
+    SITE_CONFIG.externalProfiles.bingMaps,
+    // Manufacturer certifications (authority signals)
+    SITE_CONFIG.externalProfiles.certainteed,
+    // Directory listings
+    SITE_CONFIG.externalProfiles.yellowPages,
+    SITE_CONFIG.externalProfiles.chamberOfCommerce,
+  ].filter(Boolean);
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
     '@id': `${SITE_CONFIG.url}/#organization`,
     name: SITE_CONFIG.name,
     legalName: SITE_CONFIG.legalName,
+    alternateName: ['BRN', 'Best Roofing Now LLC', 'Best Roofing Charlotte'],
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
     telephone: SITE_CONFIG.phone,
@@ -31,19 +49,35 @@ export function LocalBusinessSchema() {
       latitude: SITE_CONFIG.geo.latitude,
       longitude: SITE_CONFIG.geo.longitude,
     },
-    openingHoursSpecification: {
+    // Structured hours - Google prefers explicit daily hours
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '07:00',
+        closes: '19:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Saturday'],
+        opens: '08:00',
+        closes: '17:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Sunday'],
+        opens: '09:00',
+        closes: '16:00',
+        description: 'Emergency calls accepted 24/7',
+      },
+    ],
+    // Special hours indicator for emergency service
+    specialOpeningHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday',
-      ],
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
       opens: '00:00',
       closes: '23:59',
+      description: '24/7 Emergency Roofing Service Available',
     },
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -55,10 +89,26 @@ export function LocalBusinessSchema() {
     priceRange: '$$',
     paymentAccepted: ['Cash', 'Credit Card', 'Check', 'Financing'],
     currenciesAccepted: 'USD',
-    areaServed: LOCATIONS.map((loc) => ({
-      '@type': 'City',
-      name: `${loc.city}, ${loc.state}`,
-    })),
+    // Enhanced area served with GeoCircle for Map Pack
+    areaServed: [
+      {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: SITE_CONFIG.geo.latitude,
+          longitude: SITE_CONFIG.geo.longitude,
+        },
+        geoRadius: '80467', // 50 miles in meters
+      },
+      ...LOCATIONS.slice(0, 10).map((loc) => ({
+        '@type': 'City',
+        name: loc.city,
+        containedInPlace: {
+          '@type': 'State',
+          name: loc.state === 'NC' ? 'North Carolina' : 'South Carolina',
+        },
+      })),
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Roofing Services',
@@ -71,8 +121,10 @@ export function LocalBusinessSchema() {
         },
       })),
     },
-    sameAs: Object.values(SITE_CONFIG.social),
+    // Comprehensive sameAs with GBP and key citations
+    sameAs: sameAsLinks,
     slogan: SITE_CONFIG.tagline,
+    // Enhanced knowsAbout for semantic relevance
     knowsAbout: [
       'Roof Repair',
       'Roof Replacement',
@@ -80,15 +132,47 @@ export function LocalBusinessSchema() {
       'Commercial Roofing',
       'Residential Roofing',
       'Storm Damage Repair',
-      'Insurance Claims',
+      'Hail Damage Repair',
+      'Wind Damage Repair',
+      'Insurance Claims Assistance',
       'Gutter Installation',
       'Siding Installation',
+      'Emergency Roofing',
+      'Roof Inspection',
+      'Asphalt Shingles',
+      'Metal Roofing',
+      'Flat Roofing',
+      'TPO Roofing',
     ],
     isAccreditedBy: [
-      { '@type': 'Organization', name: 'Better Business Bureau' },
-      { '@type': 'Organization', name: 'CertainTeed' },
-      { '@type': 'Organization', name: 'GAF' },
+      {
+        '@type': 'Organization',
+        name: 'Better Business Bureau',
+        url: 'https://www.bbb.org',
+      },
+      {
+        '@type': 'Organization',
+        name: 'CertainTeed',
+        url: 'https://www.certainteed.com',
+      },
+      {
+        '@type': 'Organization',
+        name: 'GAF',
+        url: 'https://www.gaf.com',
+      },
+      {
+        '@type': 'Organization',
+        name: 'Owens Corning',
+        url: 'https://www.owenscorning.com',
+      },
     ],
+    // Additional Map Pack signals
+    hasCredential: SITE_CONFIG.certifications.map(cert => ({
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: cert,
+    })),
+    // Veteran-owned identifier
+    additionalType: 'https://schema.org/VeteranOwned',
   };
 
   return (

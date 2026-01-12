@@ -155,6 +155,110 @@ const additionalLocationLinks: LinkMapping[] = [
     url: '/locations/charlotte-nc',
     title: 'Roofing services in Charlotte, NC',
   },
+  // ============================================
+  // HIGH-VALUE CHARLOTTE NEIGHBORHOODS
+  // Premium areas with homeowners who have higher budgets
+  // ============================================
+  {
+    patterns: ['Myers Park', 'Myers Park Charlotte', 'in Myers Park'],
+    url: '/locations/charlotte-nc',
+    title: 'Premium roofing services in Myers Park, Charlotte NC',
+  },
+  {
+    patterns: ['Dilworth', 'Dilworth Charlotte', 'in Dilworth', 'historic Dilworth'],
+    url: '/locations/charlotte-nc',
+    title: 'Historic home roofing in Dilworth, Charlotte NC',
+  },
+  {
+    patterns: ['Ballantyne', 'Ballantyne Charlotte', 'in Ballantyne', 'Ballantyne area'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Ballantyne, Charlotte NC',
+  },
+  {
+    patterns: ['SouthPark', 'South Park Charlotte', 'in SouthPark', 'SouthPark area'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in SouthPark, Charlotte NC',
+  },
+  {
+    patterns: ['Eastover', 'Eastover Charlotte', 'in Eastover'],
+    url: '/locations/charlotte-nc',
+    title: 'Luxury home roofing in Eastover, Charlotte NC',
+  },
+  {
+    patterns: ['South End', 'SouthEnd', 'South End Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in South End, Charlotte NC',
+  },
+  {
+    patterns: ['NoDa', 'North Davidson', 'NoDa Charlotte', 'arts district'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in NoDa, Charlotte NC',
+  },
+  {
+    patterns: ['Plaza Midwood', 'Plaza-Midwood', 'in Plaza Midwood'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Plaza Midwood, Charlotte NC',
+  },
+  {
+    patterns: ['Uptown Charlotte', 'Uptown', 'Center City Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Uptown Charlotte NC',
+  },
+  {
+    patterns: ['Providence Plantation', 'Providence Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Providence, Charlotte NC',
+  },
+  {
+    patterns: ['Cotswold', 'Cotswold Charlotte', 'in Cotswold'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Cotswold, Charlotte NC',
+  },
+  {
+    patterns: ['Elizabeth', 'Elizabeth Charlotte', 'Elizabeth neighborhood'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Elizabeth, Charlotte NC',
+  },
+  {
+    patterns: ['Wesley Heights', 'Wesley Heights Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Wesley Heights, Charlotte NC',
+  },
+  {
+    patterns: ['Barclay Downs', 'Barclay Downs Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Barclay Downs, Charlotte NC',
+  },
+  {
+    patterns: ['Foxcroft', 'Foxcroft Charlotte', 'in Foxcroft'],
+    url: '/locations/charlotte-nc',
+    title: 'Luxury roofing in Foxcroft, Charlotte NC',
+  },
+  {
+    patterns: ['Quail Hollow', 'Quail Hollow Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Quail Hollow, Charlotte NC',
+  },
+  {
+    patterns: ['Piper Glen', 'Piper Glen Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Piper Glen, Charlotte NC',
+  },
+  {
+    patterns: ['University area', 'University City', 'UNCC area', 'UNC Charlotte area'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in University City, Charlotte NC',
+  },
+  {
+    patterns: ['Steele Creek', 'Steele Creek Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Steele Creek, Charlotte NC',
+  },
+  {
+    patterns: ['Highland Creek', 'Highland Creek Charlotte'],
+    url: '/locations/charlotte-nc',
+    title: 'Roofing services in Highland Creek, Charlotte NC',
+  },
   // Lake Norman
   {
     patterns: [
@@ -530,6 +634,96 @@ const additionalServiceLinks: LinkMapping[] = [
     patterns: ['emergency roof repair', 'emergency roofing', '24/7 roofing', 'roof emergency', 'urgent roof repair'],
     url: '/emergency',
     title: 'Emergency roofing services in Charlotte NC',
+  },
+  // ============================================
+  // HIGH-VALUE BUYER INTENT KEYWORDS
+  // These target homeowners ready to make a purchase decision
+  // ============================================
+
+  // Cost/Price Intent Keywords (highest conversion intent)
+  {
+    patterns: [
+      'roof cost', 'roofing cost', 'cost of roof', 'how much does a roof cost',
+      'roof replacement cost', 'new roof cost', 'roof repair cost',
+      'roof pricing', 'roofing prices', 'average roof cost',
+      'roof estimate', 'roofing estimate', 'free estimate',
+      'get a quote', 'roof quote', 'roofing quote'
+    ],
+    url: '/instant-estimate',
+    title: 'Get a free instant roof estimate in Charlotte NC',
+  },
+  // Financing Intent (ready to buy, need payment options)
+  {
+    patterns: [
+      'roof financing', 'roofing financing', 'finance a new roof',
+      'roof payment plan', 'roofing payment options', 'affordable roofing',
+      'roof financing options', 'monthly roof payments', 'roof loan',
+      'zero down roofing', 'no money down roof'
+    ],
+    url: '/financing',
+    title: 'Roof financing options in Charlotte NC - Easy approval',
+  },
+  // "Best" Qualifier Keywords (comparing options, ready to decide)
+  {
+    patterns: [
+      'best roofer', 'best roofing company', 'best roofing contractor',
+      'top roofer', 'top roofing company', 'top rated roofer',
+      'highly rated roofer', '5 star roofer', 'five star roofing',
+      'best Charlotte roofer', 'best roofer Charlotte'
+    ],
+    url: '/about',
+    title: 'Best Roofing Now - Charlotte\'s top-rated roofing company',
+  },
+  // Comparison/Decision Keywords
+  {
+    patterns: [
+      'roof repair vs replacement', 'repair or replace roof', 'should I replace my roof',
+      'when to replace roof', 'roof lifespan', 'how long does a roof last',
+      'signs you need a new roof', 'replace vs repair'
+    ],
+    url: '/guides/repair-vs-replace',
+    title: 'Roof repair vs replacement guide - Make the right choice',
+  },
+  // Hiring/Choosing Keywords (actively looking for a contractor)
+  {
+    patterns: [
+      'hire a roofer', 'choosing a roofer', 'how to choose a roofer',
+      'what to look for in a roofer', 'questions to ask roofer',
+      'hiring a roofing contractor', 'find a roofer', 'looking for a roofer'
+    ],
+    url: '/about',
+    title: 'Why choose Best Roofing Now - Charlotte\'s trusted roofer',
+  },
+  // Contact/Schedule Intent (ready to take action)
+  {
+    patterns: [
+      'schedule roof inspection', 'book roof inspection', 'schedule estimate',
+      'request quote', 'contact roofer', 'call roofer',
+      'roof consultation', 'roofing consultation'
+    ],
+    url: '/contact',
+    title: 'Contact Best Roofing Now - Free roof inspection',
+  },
+  // Reviews/Trust Keywords (validating their choice)
+  {
+    patterns: [
+      'roofer reviews', 'roofing company reviews', 'roofing reviews',
+      'roofing testimonials', 'customer reviews roofer', 'google reviews roofer',
+      'BBB roofing', 'accredited roofer'
+    ],
+    url: '/reviews',
+    title: 'Best Roofing Now reviews - 5-star rated Charlotte roofer',
+  },
+  // About/Company Info (researching before hiring)
+  {
+    patterns: [
+      'about Best Roofing Now', 'who is Best Roofing Now',
+      'veteran owned roofer', 'veteran roofing company',
+      'local roofer Charlotte', 'Charlotte based roofer',
+      'family owned roofer', 'locally owned roofing'
+    ],
+    url: '/about',
+    title: 'About Best Roofing Now - Veteran-owned Charlotte roofer',
   },
 ];
 
