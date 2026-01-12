@@ -196,7 +196,7 @@ export default function FinancingPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.houses.house1}
-                alt="Beautiful home with new roof"
+                alt="Affordable roof financing Charlotte NC - home with financed new roof installation"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -204,7 +204,7 @@ export default function FinancingPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.houses.house2}
-                alt="Residential roofing project"
+                alt="Roof financing options Charlotte - residential roofing project with payment plans"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -212,7 +212,7 @@ export default function FinancingPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.houses.modern1}
-                alt="Modern home with quality roofing"
+                alt="0% interest roof financing Charlotte NC - modern home with quality roofing"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -220,7 +220,7 @@ export default function FinancingPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.houses.house3}
-                alt="Completed roof replacement"
+                alt="Flexible roof payment plans Charlotte - completed roof replacement with financing"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />

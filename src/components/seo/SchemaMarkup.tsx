@@ -971,10 +971,10 @@ export function ProductSchema({ product }: ProductSchemaProps) {
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '50',
-      bestRating: '5',
-      worstRating: '1',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
     },
   };
 
@@ -1379,10 +1379,10 @@ export function AICitationSchema() {
     foundingDate: AI_CITATION_CONTENT.companyFacts.founded,
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '62',
-      bestRating: '5',
-      worstRating: '1',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
     },
     areaServed: AI_CITATION_CONTENT.serviceArea.majorCities.map(city => ({
       '@type': 'City',

@@ -311,7 +311,7 @@ export default function ReviewsPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project1}
-                alt="Completed roofing project"
+                alt="5-star rated roofing project Charlotte NC - Best Roofing Now customer review"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -319,7 +319,7 @@ export default function ReviewsPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project3}
-                alt="Roof replacement project"
+                alt="Roof replacement Charlotte - verified customer testimonial project photo"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -327,7 +327,7 @@ export default function ReviewsPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.drone1}
-                alt="Aerial view of completed roof"
+                alt="Aerial drone photo completed roof Charlotte NC - Google 5-star reviewed contractor"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -335,7 +335,7 @@ export default function ReviewsPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.houses.house1}
-                alt="Beautiful home with new roof"
+                alt="Charlotte home with new roof installation - satisfied customer review project"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />

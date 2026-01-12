@@ -115,7 +115,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <NextImage
             src={IMAGES.team.teamPhoto}
-            alt="Best Roofing Now team"
+            alt="Best Roofing Now team - veteran-owned roofing company Charlotte NC professional roofing contractors"
             fill
             className="object-cover opacity-20"
             priority
@@ -171,7 +171,7 @@ export default function AboutPage() {
               <div className="rounded-2xl overflow-hidden shadow-xl relative z-10">
                 <NextImage
                   src={IMAGES.team.jamesAndFred}
-                  alt="James and Fred Turner - Father and Son team at Best Roofing Now"
+                  alt="James and Fred Turner - veteran-owned family roofing business owners Charlotte NC Best Roofing Now founders"
                   width={600}
                   height={700}
                   className="object-cover w-full h-full"

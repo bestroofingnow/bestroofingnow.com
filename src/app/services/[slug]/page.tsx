@@ -512,7 +512,7 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="absolute inset-0 z-0">
           <Image
             src={SERVICE_HERO_IMAGES[slug] || IMAGES.hero.roofTeam}
-            alt={`${service.title} services in Charlotte NC`}
+            alt={`${service.title} services in Charlotte NC - Best Roofing Now certified contractor`}
             fill
             className="object-cover opacity-20"
             priority
@@ -645,16 +645,25 @@ export default async function ServicePage({ params }: PageProps) {
             Our {service.title} Work
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {(serviceImages[slug] || PAGE_IMAGES.services.residential).map((image, index) => (
-              <div key={index} className="relative aspect-square rounded-xl overflow-hidden">
-                <Image
-                  src={image}
-                  alt={`${service.title} project ${index + 1}`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
+            {(serviceImages[slug] || PAGE_IMAGES.services.residential).map((image, index) => {
+              const altTexts = [
+                `${service.title} completed project in Charlotte NC - Best Roofing Now`,
+                `Professional ${service.title.toLowerCase()} installation Charlotte NC`,
+                `${service.title} work by certified Charlotte roofing contractor`,
+                `Quality ${service.title.toLowerCase()} services in Charlotte metro area`,
+                `Expert ${service.title.toLowerCase()} - Best Roofing Now Charlotte NC`,
+              ];
+              return (
+                <div key={index} className="relative aspect-square rounded-xl overflow-hidden">
+                  <Image
+                    src={image}
+                    alt={altTexts[index % altTexts.length]}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

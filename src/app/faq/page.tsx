@@ -70,7 +70,7 @@ export default function FAQPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={IMAGES.services.inspection}
-            alt="Professional roof inspection"
+            alt="Professional roof inspection Charlotte NC - Best Roofing Now certified roofing contractor FAQ"
             fill
             className="object-cover opacity-20"
             priority

@@ -752,7 +752,7 @@ export default async function LocationPage({ params }: PageProps) {
                 ) : (
                   <Image
                     src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
-                    alt={`Best Roofing Now serving ${location.city}`}
+                    alt={`Roofing company in ${location.city} ${location.state} - Best Roofing Now certified roofing contractor`}
                     width={600}
                     height={400}
                     priority
@@ -830,7 +830,7 @@ export default async function LocationPage({ params }: PageProps) {
               ) : (
                 <Image
                   src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
-                  alt={`Roofing crew working in ${location.city}`}
+                  alt={`Professional roofing contractor ${location.city} ${location.state} - completed roof project`}
                   fill
                   loading="lazy"
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -840,7 +840,7 @@ export default async function LocationPage({ params }: PageProps) {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.houses.house1}
-                alt={`Residential roofing in ${location.city}`}
+                alt={`Residential roof replacement in ${location.city} NC - asphalt shingle installation`}
                 fill
                 loading="lazy"
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -849,7 +849,7 @@ export default async function LocationPage({ params }: PageProps) {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.projects.work1}
-                alt={`Roofing project in ${location.city}`}
+                alt={`Roof repair services ${location.city} - Best Roofing Now work in progress`}
                 fill
                 loading="lazy"
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -858,7 +858,7 @@ export default async function LocationPage({ params }: PageProps) {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.houses.modern1}
-                alt={`New roof installation in ${location.city}`}
+                alt={`New roof installation ${location.city} ${location.state} - modern home roofing`}
                 fill
                 loading="lazy"
                 className="object-cover hover:scale-105 transition-transform duration-300"

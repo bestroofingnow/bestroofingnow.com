@@ -18,6 +18,7 @@ interface HeroProps {
   subtitle?: string;
   showTrustBadges?: boolean;
   backgroundImage?: string;
+  backgroundImageAlt?: string;
 }
 
 export function Hero({
@@ -25,6 +26,7 @@ export function Hero({
   subtitle = "Family-owned, veteran-operated. We treat every home like it's our own. Free inspections, honest assessments, and quality craftsmanship that lasts.",
   showTrustBadges = true,
   backgroundImage,
+  backgroundImageAlt = "Charlotte NC roofing contractor - Best Roofing Now professional team installing residential roof",
 }: HeroProps) {
   return (
     <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark overflow-hidden">
@@ -50,7 +52,7 @@ export function Hero({
         <div className="absolute inset-0">
           <Image
             src={backgroundImage}
-            alt="Best Roofing Now - Professional roofing team"
+            alt={backgroundImageAlt}
             fill
             className="object-cover opacity-20"
             priority
