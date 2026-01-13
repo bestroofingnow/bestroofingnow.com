@@ -1,0 +1,263 @@
+Category,Page URL,Page Title,Dynamic/Static,Notes
+===========================================================================================================
+OVERVIEW
+===========================================================================================================
+"Total Pages: 394"
+"Static Pages: 27"
+"Dynamic Pages: 367"
+"Blog Posts: 50"
+"Location Pages: 61 cities + 136 neighborhoods = 197"
+"Service Pages: 15"
+"Product Pages: 15"
+"Story Pages: 33"
+"Other Resource Pages: 84"
+===========================================================================================================
+
+CORE PAGES,,,
+Core,/,Homepage,Static,Main landing page with AEO schemas
+Core,/about,About Us,Static,Company info and team
+Core,/contact,Contact,Static,Contact form and info
+Core,/reviews,Reviews,Static,Customer testimonials
+Core,/faq,FAQ,Static,General FAQs
+Core,/process,Process,Static,How we work
+Core,/warranty,Warranty,Static,Warranty information
+Core,/financing,Financing,Static,PowerPay financing
+Core,/emergency,Emergency,Static,24/7 emergency services
+
+SERVICES,,,
+Services,/services,Services Index,Static,All services overview
+Services,/services/residential-roofing,Residential Roofing,Dynamic,
+Services,/services/commercial-roofing,Commercial Roofing,Dynamic,
+Services,/services/roof-repair,Roof Repair,Dynamic,
+Services,/services/roof-replacement,Roof Replacement,Dynamic,
+Services,/services/roof-inspection,Roof Inspection,Dynamic,
+Services,/services/emergency-roofing,Emergency Roofing,Dynamic,
+Services,/services/storm-damage,Storm Damage,Dynamic,
+Services,/services/gutters,Gutters,Dynamic,
+Services,/services/siding,Siding,Dynamic,
+Services,/services/roof-maintenance,Roof Maintenance,Dynamic,
+Services,/services/skylight-installation,Skylight Installation,Dynamic,
+Services,/services/roof-ventilation,Roof Ventilation,Dynamic,
+Services,/services/chimney-services,Chimney Services,Dynamic,
+Services,/services/soffit-fascia,Soffit & Fascia,Dynamic,
+Services,/services/flat-roof-repair,Flat Roof Repair,Dynamic,
+
+LOCATIONS - CITIES (61 total),,,
+Locations,/locations,Locations Index,Static,Service area overview
+Locations,/locations/charlotte-nc,Charlotte NC,Dynamic,Primary market
+Locations,/locations/huntersville-nc,Huntersville NC,Dynamic,
+Locations,/locations/cornelius-nc,Cornelius NC,Dynamic,
+Locations,/locations/davidson-nc,Davidson NC,Dynamic,
+Locations,/locations/matthews-nc,Matthews NC,Dynamic,
+Locations,/locations/mint-hill-nc,Mint Hill NC,Dynamic,
+Locations,/locations/pineville-nc,Pineville NC,Dynamic,
+Locations,/locations/concord-nc,Concord NC,Dynamic,
+Locations,/locations/kannapolis-nc,Kannapolis NC,Dynamic,
+Locations,/locations/harrisburg-nc,Harrisburg NC,Dynamic,
+Locations,/locations/monroe-nc,Monroe NC,Dynamic,
+Locations,/locations/indian-trail-nc,Indian Trail NC,Dynamic,
+Locations,/locations/waxhaw-nc,Waxhaw NC,Dynamic,
+Locations,/locations/stallings-nc,Stallings NC,Dynamic,
+Locations,/locations/weddington-nc,Weddington NC,Dynamic,
+Locations,/locations/marvin-nc,Marvin NC,Dynamic,
+Locations,/locations/wesley-chapel-nc,Wesley Chapel NC,Dynamic,
+Locations,/locations/gastonia-nc,Gastonia NC,Dynamic,
+Locations,/locations/mt-holly-nc,Mt Holly NC,Dynamic,
+Locations,/locations/belmont-nc,Belmont NC,Dynamic,
+Locations,/locations/kings-mountain-nc,Kings Mountain NC,Dynamic,
+Locations,/locations/mooresville-nc,Mooresville NC,Dynamic,
+Locations,/locations/statesville-nc,Statesville NC,Dynamic,
+Locations,/locations/denver-nc,Denver NC,Dynamic,
+Locations,/locations/lincolnton-nc,Lincolnton NC,Dynamic,
+Locations,/locations/lake-norman,Lake Norman NC,Dynamic,
+Locations,/locations/sherrills-ford-nc,Sherrills Ford NC,Dynamic,
+Locations,/locations/terrell-nc,Terrell NC,Dynamic,
+Locations,/locations/hickory-nc,Hickory NC,Dynamic,
+Locations,/locations/newton-nc,Newton NC,Dynamic,
+Locations,/locations/albemarle-nc,Albemarle NC,Dynamic,
+Locations,/locations/shelby-nc,Shelby NC,Dynamic,
+Locations,/locations/rock-hill-sc,Rock Hill SC,Dynamic,
+Locations,/locations/fort-mill-sc,Fort Mill SC,Dynamic,
+Locations,/locations/tega-cay-sc,Tega Cay SC,Dynamic,
+Locations,/locations/indian-land-sc,Indian Land SC,Dynamic,
+Locations,/locations/lancaster-sc,Lancaster SC,Dynamic,
+Locations,/locations/salisbury-nc,Salisbury NC,Dynamic,
+Locations,/locations/china-grove-nc,China Grove NC,Dynamic,
+Locations,/locations/landis-nc,Landis NC,Dynamic,
+Locations,/locations/cramerton-nc,Cramerton NC,Dynamic,
+Locations,/locations/lowell-nc,Lowell NC,Dynamic,
+Locations,/locations/dallas-nc,Dallas NC,Dynamic,
+Locations,/locations/cherryville-nc,Cherryville NC,Dynamic,
+Locations,/locations/bessemer-city-nc,Bessemer City NC,Dynamic,
+Locations,/locations/clover-sc,Clover SC,Dynamic,
+Locations,/locations/york-sc,York SC,Dynamic,
+Locations,/locations/lake-wylie-sc,Lake Wylie SC,Dynamic,
+Locations,/locations/wingate-nc,Wingate NC,Dynamic,
+Locations,/locations/fairview-nc,Fairview NC,Dynamic,
+Locations,/locations/hemby-bridge-nc,Hemby Bridge NC,Dynamic,
+Locations,/locations/unionville-nc,Unionville NC,Dynamic,
+Locations,/locations/mount-pleasant-nc,Mount Pleasant NC,Dynamic,
+Locations,/locations/midland-nc,Midland NC,Dynamic,
+Locations,/locations/locust-nc,Locust NC,Dynamic,
+Locations,/locations/oakboro-nc,Oakboro NC,Dynamic,
+Locations,/locations/norwood-nc,Norwood NC,Dynamic,
+Locations,/locations/maiden-nc,Maiden NC,Dynamic,
+Locations,/locations/conover-nc,Conover NC,Dynamic,
+Locations,/locations/claremont-nc,Claremont NC,Dynamic,
+Locations,/locations/chester-sc,Chester SC,Dynamic,
+
+NEIGHBORHOODS (136 total - Charlotte-centric),,,
+Neighborhoods,/locations/charlotte-nc/myers-park,Myers Park,Dynamic,Premium neighborhood
+Neighborhoods,/locations/charlotte-nc/dilworth,Dilworth,Dynamic,Historic district
+Neighborhoods,/locations/charlotte-nc/south-end,South End,Dynamic,Urban growth area
+Neighborhoods,/locations/charlotte-nc/noda,NoDa,Dynamic,Arts district
+Neighborhoods,/locations/charlotte-nc/plaza-midwood,Plaza Midwood,Dynamic,
+Neighborhoods,/locations/charlotte-nc/ballantyne,Ballantyne,Dynamic,High-value homes
+Neighborhoods,/locations/charlotte-nc/southpark,SouthPark,Dynamic,Premium area
+Neighborhoods,/locations/charlotte-nc/university-city,University City,Dynamic,
+Neighborhoods,/locations/charlotte-nc/highland-creek,Highland Creek,Dynamic,
+Neighborhoods,/locations/charlotte-nc/steele-creek,Steele Creek,Dynamic,
+Neighborhoods,/locations/charlotte-nc/eastover,Eastover,Dynamic,Luxury homes
+Neighborhoods,/locations/charlotte-nc/cotswold,Cotswold,Dynamic,
+Neighborhoods,/locations/charlotte-nc/providence,Providence,Dynamic,
+Neighborhoods,/locations/charlotte-nc/elizabeth,Elizabeth,Dynamic,Historic
+Neighborhoods,/locations/charlotte-nc/uptown,Uptown,Dynamic,Downtown
+Neighborhoods,/locations/charlotte-nc/mountain-island,Mountain Island,Dynamic,
+"... +120 more neighborhood pages for other cities",,,
+
+PRODUCTS (15 total),,,
+Products,/products/gaf-timberline-hdz,GAF Timberline HDZ,Dynamic,Best seller
+Products,/products/gaf-timberline-ultra-hd,GAF Timberline Ultra HD,Dynamic,
+Products,/products/gaf-camelot-ii,GAF Camelot II,Dynamic,Designer shingle
+Products,/products/certainteed-landmark,CertainTeed Landmark,Dynamic,Popular choice
+Products,/products/certainteed-landmark-pro,CertainTeed Landmark Pro,Dynamic,
+Products,/products/certainteed-presidential-shake,CertainTeed Presidential Shake,Dynamic,Premium
+Products,/products/owens-corning-duration,Owens Corning Duration,Dynamic,
+Products,/products/owens-corning-trudefinition-duration,Owens Corning TruDefinition Duration,Dynamic,
+Products,/products/owens-corning-berkshire,Owens Corning Berkshire,Dynamic,
+Products,/products/iko-cambridge,IKO Cambridge,Dynamic,
+Products,/products/iko-dynasty,IKO Dynasty,Dynamic,
+Products,/products/iko-crowne-slate,IKO Crowne Slate,Dynamic,
+Products,/products/tamko-heritage,TAMKO Heritage,Dynamic,
+Products,/products/tamko-heritage-vintage,TAMKO Heritage Vintage,Dynamic,
+Products,/products/tamko-titan-xt,TAMKO Titan XT,Dynamic,
+
+BRANDS (5 total),,,
+Brands,/brands,Brands Index,Static,
+Brands,/brands/gaf,GAF,Dynamic,
+Brands,/brands/certainteed,CertainTeed,Dynamic,
+Brands,/brands/owens-corning,Owens Corning,Dynamic,
+Brands,/brands/iko,IKO,Dynamic,
+Brands,/brands/tamko,TAMKO,Dynamic,
+
+MATERIALS (6 total),,,
+Materials,/materials,Materials Index,Static,
+Materials,/materials/asphalt-shingles,Asphalt Shingles,Dynamic,
+Materials,/materials/metal-roofing,Metal Roofing,Dynamic,
+Materials,/materials/tile-roofing,Tile Roofing,Dynamic,
+Materials,/materials/slate-roofing,Slate Roofing,Dynamic,
+Materials,/materials/flat-roofing,Flat Roofing,Dynamic,
+Materials,/materials/cedar-shake,Cedar Shake,Dynamic,
+
+ROOF TYPES (6 total),,,
+Roof Types,/roof-types,Roof Types Index,Static,
+Roof Types,/roof-types/gable-roof,Gable Roof,Dynamic,
+Roof Types,/roof-types/hip-roof,Hip Roof,Dynamic,
+Roof Types,/roof-types/flat-roof,Flat Roof,Dynamic,
+Roof Types,/roof-types/mansard-roof,Mansard Roof,Dynamic,
+Roof Types,/roof-types/gambrel-roof,Gambrel Roof,Dynamic,
+Roof Types,/roof-types/shed-roof,Shed Roof,Dynamic,
+
+PROBLEMS (6 total),,,
+Problems,/problems,Problems Index,Static,
+Problems,/problems/roof-leak-repair,Roof Leak Repair,Dynamic,
+Problems,/problems/storm-damage-repair,Storm Damage Repair,Dynamic,
+Problems,/problems/missing-shingles,Missing Shingles,Dynamic,
+Problems,/problems/flashing-repair,Flashing Repair,Dynamic,
+Problems,/problems/sagging-roof,Sagging Roof,Dynamic,
+Problems,/problems/gutter-problems,Gutter Problems,Dynamic,
+
+GUIDES (6 total),,,
+Guides,/guides,Guides Index,Static,
+Guides,/guides/roof-replacement-cost,Roof Replacement Cost Guide,Dynamic,High search volume
+Guides,/guides/signs-you-need-new-roof,Signs You Need a New Roof,Dynamic,
+Guides,/guides/how-long-does-roof-last,How Long Does a Roof Last,Dynamic,
+Guides,/guides/roof-maintenance-tips,Roof Maintenance Tips,Dynamic,
+Guides,/guides/insurance-claim-guide,Insurance Claim Guide,Dynamic,
+Guides,/guides/choosing-roofing-contractor,Choosing a Roofing Contractor,Dynamic,
+
+COMPARE (4 total),,,
+Compare,/compare,Compare Index,Static,
+Compare,/compare/metal-vs-shingles,Metal vs Shingles,Dynamic,
+Compare,/compare/tile-vs-shingles,Tile vs Shingles,Dynamic,
+Compare,/compare/metal-vs-tile,Metal vs Tile,Dynamic,
+Compare,/compare/gaf-vs-certainteed,GAF vs CertainTeed,Dynamic,
+
+COMMERCIAL SYSTEMS (5 total),,,
+Commercial,/commercial-systems,Commercial Systems Index,Static,
+Commercial,/commercial-systems/tpo-roofing,TPO Roofing,Dynamic,
+Commercial,/commercial-systems/epdm-roofing,EPDM Roofing,Dynamic,
+Commercial,/commercial-systems/pvc-roofing,PVC Roofing,Dynamic,
+Commercial,/commercial-systems/built-up-roofing,Built-Up Roofing,Dynamic,
+Commercial,/commercial-systems/metal-commercial,Metal Commercial,Dynamic,
+
+SEASONAL (4 total),,,
+Seasonal,/seasonal,Seasonal Index,Static,
+Seasonal,/seasonal/spring-roofing,Spring Roofing,Dynamic,
+Seasonal,/seasonal/summer-roofing,Summer Roofing,Dynamic,
+Seasonal,/seasonal/fall-roofing,Fall Roofing,Dynamic,
+Seasonal,/seasonal/winter-roofing,Winter Roofing,Dynamic,
+
+STORIES (33 total),,,NEW - Neighborhood stories with PMI API
+Stories,/stories,Stories Index,Static,All completed projects
+Stories,/stories/charlotte,Charlotte Stories,Dynamic,Deep SEO + local news
+Stories,/stories/huntersville,Huntersville Stories,Dynamic,
+Stories,/stories/cornelius,Cornelius Stories,Dynamic,
+Stories,/stories/concord,Concord Stories,Dynamic,
+Stories,/stories/rock-hill,Rock Hill Stories,Dynamic,
+Stories,/stories/mooresville,Mooresville Stories,Dynamic,
+Stories,/stories/kannapolis,Kannapolis Stories,Dynamic,
+Stories,/stories/matthews,Matthews Stories,Dynamic,
+Stories,/stories/mint-hill,Mint Hill Stories,Dynamic,
+Stories,/stories/gastonia,Gastonia Stories,Dynamic,
+Stories,/stories/fort-mill,Fort Mill Stories,Dynamic,
+Stories,/stories/monroe,Monroe Stories,Dynamic,
+Stories,/stories/waxhaw,Waxhaw Stories,Dynamic,
+Stories,/stories/mount-holly,Mount Holly Stories,Dynamic,
+Stories,/stories/denver,Denver Stories,Dynamic,
+"... +18 more city story pages",,,
+
+BLOG (50 posts),,,CMS-sourced content
+Blog,/blog,Blog Index,Static,All posts
+Blog,/blog/how-commercial-roof-maintenance-plans-save-charlotte-businesses-money-and-headaches,Commercial Maintenance,Dynamic,
+Blog,/blog/choosing-the-right-gutter-material-for-north-carolina-weather,Gutter Materials,Dynamic,
+Blog,/blog/the-ultimate-guide-to-best-roofing-companies-everything-you-need-to-succeed-in-charlotte,Best Roofing Guide,Dynamic,
+"... +47 more blog posts",,,
+
+OTHER,,,
+Other,/ventilation,Ventilation,Static,
+Other,/sitemap.xml,Sitemap,Dynamic,
+Other,/robots.txt,Robots,Static,
+Other,/manifest.webmanifest,PWA Manifest,Static,
+
+===========================================================================================================
+SUMMARY BY CATEGORY
+===========================================================================================================
+"Core Pages: 9"
+"Services: 16 (1 index + 15 service pages)"
+"Locations: 198 (1 index + 61 cities + 136 neighborhoods)"
+"Products: 15"
+"Brands: 6 (1 index + 5 brands)"
+"Materials: 7 (1 index + 6 materials)"
+"Roof Types: 7 (1 index + 6 types)"
+"Problems: 7 (1 index + 6 problems)"
+"Guides: 7 (1 index + 6 guides)"
+"Compare: 5 (1 index + 4 comparisons)"
+"Commercial: 6 (1 index + 5 systems)"
+"Seasonal: 5 (1 index + 4 seasons)"
+"Stories: 34 (1 index + 33 city stories)"
+"Blog: 51 (1 index + 50 posts)"
+"Other: 4"
+===========================================================================================================
+"GRAND TOTAL: 394 pages"
+===========================================================================================================
