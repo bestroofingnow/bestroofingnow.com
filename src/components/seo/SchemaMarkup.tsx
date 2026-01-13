@@ -623,6 +623,8 @@ export function ReviewsSchema() {
     },
   ];
 
+  // Note: aggregateRating is already in LocalBusinessSchema, so we only include reviews here
+  // to avoid "Review has multiple aggregate ratings" error in Google Search Console
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
@@ -643,13 +645,6 @@ export function ReviewsSchema() {
       reviewBody: review.text,
       datePublished: review.date,
     })),
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: SITE_CONFIG.googleRating,
-      reviewCount: SITE_CONFIG.googleReviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
   };
 
   return (
