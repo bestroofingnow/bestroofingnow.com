@@ -23,7 +23,11 @@
       "Bash(node -e:*)",
       "Bash(ls:*)",
       "Read(//c/Users/james/**)",
-      "Bash(git rev-parse:*)"
+      "Bash(git rev-parse:*)",
+      "mcp__kapture__list_tabs",
+      "Bash(npx supabase --version)",
+      "Bash(npx supabase:*)",
+      "Bash(npm uninstall:*)"
     ]
   }
 }

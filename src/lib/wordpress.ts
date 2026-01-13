@@ -133,6 +133,42 @@ export async function getAllPostSlugs(): Promise<string[]> {
   return posts.map((post) => post.slug);
 }
 
+// Fetch ALL posts with full data (paginated fetch)
+export async function getAllPosts(): Promise<WPPost[]> {
+  const allPosts: WPPost[] = [];
+  let page = 1;
+  let hasMore = true;
+
+  while (hasMore) {
+    try {
+      const res = await fetch(
+        `${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`,
+        { next: { revalidate: 3600 } }
+      );
+
+      if (!res.ok) break;
+
+      const batch = await res.json();
+      if (batch.length === 0) {
+        hasMore = false;
+      } else {
+        allPosts.push(...batch);
+        // If we got less than 100, we've reached the end
+        if (batch.length < 100) {
+          hasMore = false;
+        } else {
+          page++;
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching all posts:', error);
+      break;
+    }
+  }
+
+  return allPosts;
+}
+
 export async function getMedia(id: number): Promise<WPMedia | null> {
   const res = await fetch(`${WP_API_URL}/media/${id}`, {
     next: { revalidate: 86400 }, // Cache for 24 hours

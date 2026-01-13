@@ -16,7 +16,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
     "@headlessui/react": "^2.2.9",
+    "@supabase/supabase-js": "^2.90.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",
     "next": "16.1.1",

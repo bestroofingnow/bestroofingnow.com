@@ -6,8 +6,9 @@ import { Calendar, ArrowLeft, Clock, Phone, ArrowRight, MapPin } from 'lucide-re
 import { BreadcrumbSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
-import { getPostBySlug, getPosts } from '@/lib/wordpress';
+import { getPostBySlug, getPosts, getAllPostSlugs } from '@/lib/wordpress';
 import { addInternalLinks, getSmartLinks } from '@/lib/internal-links';
+import { getOptimizedBlog } from '@/lib/db';
 
 // Low-quality blur placeholder for blog post images
 const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
@@ -49,8 +50,19 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
-  const title = stripHtml(post.title.rendered);
-  const description = stripHtml(post.excerpt.rendered).slice(0, 160);
+  // Check for optimized content first
+  let title = stripHtml(post.title.rendered);
+  let description = stripHtml(post.excerpt.rendered).slice(0, 160);
+
+  try {
+    const optimized = await getOptimizedBlog(slug);
+    if (optimized && optimized.optimization_score > 0) {
+      title = optimized.optimized_title || title;
+      description = optimized.meta_description || description;
+    }
+  } catch {
+    // Use original content if DB fetch fails
+  }
 
   return {
     title: `${title} | Roofing Blog`,
@@ -69,10 +81,10 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 }
 
 export async function generateStaticParams() {
-  // Get recent posts for static generation
-  const posts = await getPosts({ perPage: 50 });
-  return posts.map((post: any) => ({
-    slug: post.slug,
+  // Get ALL posts for static generation (paginates through all)
+  const slugs = await getAllPostSlugs();
+  return slugs.map((slug) => ({
+    slug,
   }));
 }
 
@@ -84,19 +96,43 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  const title = stripHtml(post.title.rendered);
+  // Check for optimized content from database
+  let optimizedData: {
+    title: string;
+    content: string;
+    schemaMarkup: Record<string, unknown> | null;
+  } | null = null;
+
+  try {
+    const optimized = await getOptimizedBlog(slug);
+    if (optimized && optimized.optimization_score > 0) {
+      optimizedData = {
+        title: optimized.optimized_title,
+        content: optimized.optimized_content,
+        schemaMarkup: optimized.schema_markup,
+      };
+    }
+  } catch {
+    // Use original content if DB fetch fails
+  }
+
+  const title = optimizedData?.title || stripHtml(post.title.rendered);
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-  const readTime = estimateReadTime(post.content.rendered);
+  const contentToProcess = optimizedData?.content || post.content.rendered;
+  const readTime = estimateReadTime(contentToProcess);
 
   // Process content with automatic internal links
-  const processedContent = addInternalLinks(post.content.rendered);
+  const processedContent = addInternalLinks(contentToProcess);
 
   // Get smart related links based on content analysis
-  const smartLinks = getSmartLinks(post.content.rendered);
+  const smartLinks = getSmartLinks(contentToProcess);
 
   // Get related posts
   const allPosts = await getPosts({ perPage: 4 });
   const relatedPosts = allPosts.filter((p: any) => p.slug !== slug).slice(0, 3);
+
+  // FAQ schema from optimization
+  const faqSchema = optimizedData?.schemaMarkup;
 
   return (
     <>
@@ -115,10 +151,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           datePublished: post.date,
           dateModified: post.modified,
           image: featuredImage,
-          wordCount: stripHtml(post.content.rendered).split(/\s+/).length,
+          wordCount: stripHtml(contentToProcess).split(/\s+/).length,
           readingTime: readTime,
         }}
       />
+
+      {/* FAQ Schema for AEO (if optimized) */}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Article Header */}
       <section className="relative bg-gradient-primary text-white py-16 overflow-hidden">

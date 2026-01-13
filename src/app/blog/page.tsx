@@ -5,7 +5,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
-import { getPosts } from '@/lib/wordpress';
+import { getAllPosts } from '@/lib/wordpress';
 import BlogContent from './BlogContent';
 
 // Low-quality blur placeholder for hero image
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 export default async function BlogPage() {
-  // Fetch initial posts from WordPress - get more for client-side search/filter
-  const posts = await getPosts({ perPage: 100 });
+  // Fetch ALL posts from WordPress (paginates through all)
+  const posts = await getAllPosts();
 
   // Generate BlogPosting structured data for AI/SEO readability
   const blogPostingSchema = {
