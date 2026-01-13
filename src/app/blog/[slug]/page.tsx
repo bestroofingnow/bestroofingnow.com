@@ -64,6 +64,10 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     // Use original content if DB fetch fails
   }
 
+  // Get featured image for OpenGraph
+  const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+  const ogImage = featuredImage || IMAGES.hero.hero25;
+
   return {
     title: `${title} | Roofing Blog`,
     description,
@@ -76,6 +80,21 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       type: 'article',
       publishedTime: post.date,
       modifiedTime: post.modified,
+      url: `${SITE_CONFIG.url}/blog/${slug}`,
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage],
     },
   };
 }

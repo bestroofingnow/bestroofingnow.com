@@ -454,6 +454,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Service Not Found' };
   }
 
+  // Get service hero image for OpenGraph
+  const images = serviceImages[slug] || [];
+  const ogImage = images[0] || IMAGES.hero.hero1;
+
   return {
     title: `${service.title} Charlotte NC`,
     description: `${service.description} Serving Charlotte and surrounding areas. Free estimates, quality workmanship, and satisfaction guaranteed.`,
@@ -465,6 +469,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: `${service.title} in Charlotte NC`,
       description: service.description,
       url: `${SITE_CONFIG.url}/services/${slug}`,
+      type: 'website',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${service.title} services in Charlotte NC - Best Roofing Now`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.title} in Charlotte NC`,
+      description: service.description,
+      images: [ogImage],
     },
   };
 }

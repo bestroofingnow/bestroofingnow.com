@@ -624,6 +624,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         `roofers near me ${location.city}`,
       ];
 
+  // Get location hero image for OpenGraph (skip videos, use fallback image)
+  const heroImage = LOCATION_HERO_IMAGES[city];
+  const ogImage = heroImage && !heroImage.endsWith('.mp4') ? heroImage : IMAGES.houses.house1;
+
   return {
     title,
     description,
@@ -639,6 +643,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         ? `Charlotte's top-rated roofing contractor. 5-star rating, veteran-owned, BBB A+ accredited. Free roof inspections.`
         : `Professional roofing services in ${location.city}. Free estimates, quality workmanship, BBB A+ rated.`,
       url: `${SITE_CONFIG.url}/locations/${city}`,
+      type: 'website',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `Roofing services in ${location.city}, ${location.state} - Best Roofing Now`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: isCharlotte
+        ? `#1 Roofing Contractor Charlotte NC`
+        : `Roofing Services in ${location.city}, ${location.state}`,
+      description: isCharlotte
+        ? `Charlotte's top-rated roofing contractor. Free roof inspections.`
+        : `Professional roofing services in ${location.city}. Free estimates.`,
+      images: [ogImage],
     },
   };
 }
