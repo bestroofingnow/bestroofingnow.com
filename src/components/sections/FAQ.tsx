@@ -22,8 +22,6 @@ export function FAQ({
     <section
       className="section bg-light"
       aria-labelledby="faq-section-title"
-      itemScope
-      itemType="https://schema.org/FAQPage"
     >
       <div className="container">
         <div className="max-w-3xl mx-auto">
@@ -42,15 +40,12 @@ export function FAQ({
             <p className="text-gray text-lg">{subtitle}</p>
           </header>
 
-          {/* FAQ Accordion - Semantic markup for voice search */}
+          {/* FAQ Accordion - JSON-LD schema is handled separately via FAQSchema component */}
           <div className="space-y-4" role="list">
             {faqs.map((faq, index) => (
               <article
                 key={index}
                 className="bg-white rounded-xl shadow-md overflow-hidden"
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
                 role="listitem"
               >
                 <button
@@ -63,7 +58,6 @@ export function FAQ({
                   <span
                     id={`faq-question-${index}`}
                     className="font-semibold text-dark pr-4"
-                    itemProp="name"
                   >
                     {faq.question}
                   </span>
@@ -83,14 +77,8 @@ export function FAQ({
                   )}
                   role="region"
                   aria-labelledby={`faq-question-${index}`}
-                  itemScope
-                  itemProp="acceptedAnswer"
-                  itemType="https://schema.org/Answer"
                 >
-                  <div
-                    className="px-6 pb-6 text-gray leading-relaxed"
-                    itemProp="text"
-                  >
+                  <div className="px-6 pb-6 text-gray leading-relaxed">
                     {faq.answer}
                   </div>
                 </div>
