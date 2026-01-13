@@ -383,18 +383,39 @@ const CITY_DATA: Record<
   },
 };
 
+// Fallback cities when API is unavailable - ensures pages are always generated
+const FALLBACK_CITIES = [
+  'charlotte', 'huntersville', 'cornelius', 'davidson', 'matthews', 'mint-hill',
+  'pineville', 'concord', 'kannapolis', 'harrisburg', 'monroe', 'indian-trail',
+  'waxhaw', 'stallings', 'weddington', 'marvin', 'wesley-chapel', 'gastonia',
+  'mt-holly', 'belmont', 'kings-mountain', 'mooresville', 'statesville', 'denver',
+  'lincolnton', 'lake-norman', 'sherrills-ford', 'terrell', 'hickory', 'newton',
+  'albemarle', 'shelby', 'rock-hill', 'fort-mill', 'tega-cay', 'indian-land',
+  'lancaster', 'salisbury', 'china-grove', 'mount-holly'
+];
+
 // Generate static params for all cities
 export async function generateStaticParams() {
-  const projects = await fetchAllProjects();
-  const cities = new Set<string>();
+  try {
+    const projects = await fetchAllProjects();
+    const cities = new Set<string>();
 
-  projects.forEach((p) => {
-    if (p.city) {
-      cities.add(p.city.toLowerCase().replace(/\s+/g, '-'));
+    projects.forEach((p) => {
+      if (p.city) {
+        cities.add(p.city.toLowerCase().replace(/\s+/g, '-'));
+      }
+    });
+
+    // If API returned projects, use those cities
+    if (cities.size > 0) {
+      return Array.from(cities).map((slug) => ({ slug }));
     }
-  });
+  } catch (error) {
+    console.error('PMI API failed, using fallback cities:', error);
+  }
 
-  return Array.from(cities).map((slug) => ({ slug }));
+  // Fallback: use predefined list of cities
+  return FALLBACK_CITIES.map((slug) => ({ slug }));
 }
 
 // Generate metadata
@@ -437,33 +458,42 @@ export default async function CityStoryPage({
 }) {
   const { slug } = await params;
   const cityName = slug.replace(/-/g, ' ');
+  const cityData = CITY_DATA[slug];
+  const localStories = LOCAL_STORIES[slug] || [];
+
+  // Type for projects with photos
+  type ProjectWithPhotos = ReturnType<typeof formatProjectForDisplay> & { photos: PMIPhoto[] };
 
   // Fetch projects with photo data for this city
-  const [allProjects, projectsWithPhotos] = await Promise.all([
-    fetchAllProjects(),
-    fetchProjectsWithPhotoData(cityName),
-  ]);
+  let cityProjects: ProjectWithPhotos[] = [];
+  try {
+    const [allProjects, projectsWithPhotos] = await Promise.all([
+      fetchAllProjects(),
+      fetchProjectsWithPhotoData(cityName),
+    ]);
 
-  const cityProjects = allProjects
-    .filter((p) => p.city.toLowerCase() === cityName.toLowerCase())
-    .map((p) => {
-      // Merge photo data if available
-      const withPhotos = projectsWithPhotos.find((wp) => wp._id === p._id);
-      return {
-        ...formatProjectForDisplay(p),
-        photos: withPhotos?.photos || [],
-      };
-    })
-    .sort((a, b) => b.year - a.year);
+    cityProjects = allProjects
+      .filter((p) => p.city.toLowerCase() === cityName.toLowerCase())
+      .map((p) => {
+        // Merge photo data if available
+        const withPhotos = projectsWithPhotos.find((wp) => wp._id === p._id);
+        return {
+          ...formatProjectForDisplay(p),
+          photos: (withPhotos?.photos || []) as PMIPhoto[],
+        };
+      })
+      .sort((a, b) => b.year - a.year);
+  } catch (error) {
+    console.error('Failed to fetch projects for', cityName, error);
+  }
 
-  if (cityProjects.length === 0) {
+  // Show page if we have city data OR projects - only 404 if we have neither
+  if (cityProjects.length === 0 && !cityData) {
     notFound();
   }
 
-  const cityData = CITY_DATA[slug];
-  const localStories = LOCAL_STORIES[slug] || [];
-  const displayName = cityData?.name || cityProjects[0].city;
-  const state = cityData?.state || cityProjects[0].state;
+  const displayName = cityData?.name || (cityProjects[0]?.city || cityName.replace(/\b\w/g, c => c.toUpperCase()));
+  const state = cityData?.state || cityProjects[0]?.state || 'NC';
 
   // Get featured projects (those with photos)
   const featuredProjects = cityProjects.filter((p) => p.photos && p.photos.length > 0);
@@ -487,51 +517,55 @@ export default async function CityStoryPage({
 
       {/* AEO Schemas for Voice Search */}
       <SpeakableSchema />
-      <ItemListSchema
-        title={`Completed Roofing Projects in ${displayName}, ${state}`}
-        items={cityProjects.slice(0, 10).map(
-          (p) => `${p.name}'s roof on ${p.street} - ${p.product || 'Professional roofing'}`
-        )}
-        description={`Best Roofing Now has completed ${cityProjects.length} roofing projects in ${displayName}. See our work and customer testimonials.`}
-      />
+      {cityProjects.length > 0 && (
+        <ItemListSchema
+          title={`Completed Roofing Projects in ${displayName}, ${state}`}
+          items={cityProjects.slice(0, 10).map(
+            (p) => `${p.name}'s roof on ${p.street} - ${p.product || 'Professional roofing'}`
+          )}
+          description={`Best Roofing Now has completed ${cityProjects.length} roofing projects in ${displayName}. See our work and customer testimonials.`}
+        />
+      )}
 
       {/* Project Schema for Voice Search */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'CollectionPage',
-            name: `Roofing Projects in ${displayName}, ${state}`,
-            description: `Browse ${cityProjects.length} completed roofing projects in ${displayName}. Before and after photos, materials used, and customer stories from Best Roofing Now.`,
-            mainEntity: {
-              '@type': 'ItemList',
-              numberOfItems: cityProjects.length,
-              itemListElement: cityProjects.slice(0, 20).map((project, index) => ({
-                '@type': 'ListItem',
-                position: index + 1,
-                item: {
-                  '@type': 'Service',
-                  name: `Roof ${project.serviceType || 'Installation'} at ${project.street}`,
-                  provider: {
-                    '@type': 'RoofingContractor',
-                    name: 'Best Roofing Now',
+      {cityProjects.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'CollectionPage',
+              name: `Roofing Projects in ${displayName}, ${state}`,
+              description: `Browse ${cityProjects.length} completed roofing projects in ${displayName}. Before and after photos, materials used, and customer stories from Best Roofing Now.`,
+              mainEntity: {
+                '@type': 'ItemList',
+                numberOfItems: cityProjects.length,
+                itemListElement: cityProjects.slice(0, 20).map((project, index) => ({
+                  '@type': 'ListItem',
+                  position: index + 1,
+                  item: {
+                    '@type': 'Service',
+                    name: `Roof ${project.serviceType || 'Installation'} at ${project.street}`,
+                    provider: {
+                      '@type': 'RoofingContractor',
+                      name: 'Best Roofing Now',
+                    },
+                    areaServed: {
+                      '@type': 'City',
+                      name: displayName,
+                    },
+                    datePublished: project.date,
                   },
-                  areaServed: {
-                    '@type': 'City',
-                    name: displayName,
-                  },
-                  datePublished: project.date,
-                },
-              })),
-            },
-            speakable: {
-              '@type': 'SpeakableSpecification',
-              cssSelector: ['h1', 'h2', '.speakable-intro'],
-            },
-          }),
-        }}
-      />
+                })),
+              },
+              speakable: {
+                '@type': 'SpeakableSpecification',
+                cssSelector: ['h1', 'h2', '.speakable-intro'],
+              },
+            }),
+          }}
+        />
+      )}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-16">
@@ -544,26 +578,49 @@ export default async function CityStoryPage({
               ← Back to All Stories
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Roofing Projects in {displayName}, {state}
+              {cityProjects.length > 0
+                ? `Roofing Projects in ${displayName}, ${state}`
+                : `Roofing Services in ${displayName}, ${state}`}
             </h1>
-            <p className="text-xl text-white/90 mb-6">
-              {cityProjects.length} completed projects from your neighbors
+            <p className="text-xl text-white/90 mb-6 speakable-intro">
+              {cityProjects.length > 0
+                ? `${cityProjects.length} completed projects from your neighbors`
+                : `Professional roofing services for ${displayName} homeowners. Get a free inspection today.`}
             </p>
-            <div className="flex flex-wrap gap-4" role="list" aria-label="Project statistics">
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
-                <Home className="w-5 h-5" aria-hidden="true" />
-                <span>{cityProjects.length} Projects</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
-                <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-                <span>5.0 Rating</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
-                <Camera className="w-5 h-5" aria-hidden="true" />
-                <span>
-                  {cityProjects.filter((p) => p.photoCount > 0).length} with Photos
-                </span>
-              </div>
+            <div className="flex flex-wrap gap-4" role="list" aria-label="Service highlights">
+              {cityProjects.length > 0 ? (
+                <>
+                  <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
+                    <Home className="w-5 h-5" aria-hidden="true" />
+                    <span>{cityProjects.length} Projects</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
+                    <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                    <span>5.0 Rating</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
+                    <Camera className="w-5 h-5" aria-hidden="true" />
+                    <span>
+                      {cityProjects.filter((p) => p.photoCount > 0).length} with Photos
+                    </span>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
+                    <Shield className="w-5 h-5" aria-hidden="true" />
+                    <span>Licensed & Insured</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
+                    <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                    <span>5.0 Rating</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2" role="listitem">
+                    <Award className="w-5 h-5" aria-hidden="true" />
+                    <span>GAF Master Elite</span>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -752,100 +809,102 @@ export default async function CityStoryPage({
       )}
 
       {/* Projects Grid */}
-      <section className="py-16">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            All {displayName} Projects
-          </h2>
+      {cityProjects.length > 0 && (
+        <section className="py-16">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-center mb-10">
+              All {displayName} Projects
+            </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {cityProjects.map((project) => (
-              <article
-                key={project.id}
-                className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-                itemScope
-                itemType="https://schema.org/Service"
-              >
-                {/* Photo thumbnail strip */}
-                {project.photos && project.photos.length > 0 && (
-                  <div className="h-32 relative">
-                    <ProjectPhotoStrip
-                      photos={project.photos as PMIPhoto[]}
-                      projectName={project.name}
-                    />
-                  </div>
-                )}
-
-                <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-4 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Home className="w-5 h-5 text-primary" aria-hidden="true" />
-                    <span className="font-semibold text-dark" itemProp="name">
-                      {project.name}&apos;s Roof
-                    </span>
-                  </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {cityProjects.map((project) => (
+                <article
+                  key={project.id}
+                  className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden"
+                  itemScope
+                  itemType="https://schema.org/Service"
+                >
+                  {/* Photo thumbnail strip */}
                   {project.photos && project.photos.length > 0 && (
-                    <span className="flex items-center gap-1 text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
-                      <Camera className="w-3 h-3" aria-hidden="true" />
-                      {project.photos.length} photos
-                    </span>
-                  )}
-                </div>
-
-                <div className="p-6">
-                  <div
-                    className="flex items-center gap-2 text-gray-600 mb-3"
-                    itemProp="areaServed"
-                    itemScope
-                    itemType="https://schema.org/Place"
-                  >
-                    <MapPin className="w-4 h-4" aria-hidden="true" />
-                    <span itemProp="address">{project.street}</span>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-4">
-                    <Calendar className="w-4 h-4" aria-hidden="true" />
-                    <time dateTime={project.date}>{project.date}</time>
-                  </div>
-
-                  {project.product && (
-                    <div className="bg-gray-50 rounded-lg p-3 mb-4">
-                      <p className="text-sm font-medium text-dark" itemProp="serviceOutput">
-                        {project.product}
-                      </p>
-                      {project.color && (
-                        <p className="text-xs text-gray-500">{project.color}</p>
-                      )}
+                    <div className="h-32 relative">
+                      <ProjectPhotoStrip
+                        photos={project.photos as PMIPhoto[]}
+                        projectName={project.name}
+                      />
                     </div>
                   )}
 
-                  {project.description && (
-                    <p
-                      className="text-sm text-gray-600 line-clamp-3 mb-4"
-                      itemProp="description"
-                    >
-                      {project.description}
-                    </p>
-                  )}
-
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <span className="text-xs text-gray-400">ZIP: {project.zip}</span>
-                    <a
-                      href={project.mapUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary text-sm font-medium flex items-center gap-1 hover:underline"
-                      itemProp="url"
-                    >
-                      View on Map
-                      <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                    </a>
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-4 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Home className="w-5 h-5 text-primary" aria-hidden="true" />
+                      <span className="font-semibold text-dark" itemProp="name">
+                        {project.name}&apos;s Roof
+                      </span>
+                    </div>
+                    {project.photos && project.photos.length > 0 && (
+                      <span className="flex items-center gap-1 text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
+                        <Camera className="w-3 h-3" aria-hidden="true" />
+                        {project.photos.length} photos
+                      </span>
+                    )}
                   </div>
-                </div>
-              </article>
-            ))}
+
+                  <div className="p-6">
+                    <div
+                      className="flex items-center gap-2 text-gray-600 mb-3"
+                      itemProp="areaServed"
+                      itemScope
+                      itemType="https://schema.org/Place"
+                    >
+                      <MapPin className="w-4 h-4" aria-hidden="true" />
+                      <span itemProp="address">{project.street}</span>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-4">
+                      <Calendar className="w-4 h-4" aria-hidden="true" />
+                      <time dateTime={project.date}>{project.date}</time>
+                    </div>
+
+                    {project.product && (
+                      <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                        <p className="text-sm font-medium text-dark" itemProp="serviceOutput">
+                          {project.product}
+                        </p>
+                        {project.color && (
+                          <p className="text-xs text-gray-500">{project.color}</p>
+                        )}
+                      </div>
+                    )}
+
+                    {project.description && (
+                      <p
+                        className="text-sm text-gray-600 line-clamp-3 mb-4"
+                        itemProp="description"
+                      >
+                        {project.description}
+                      </p>
+                    )}
+
+                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                      <span className="text-xs text-gray-400">ZIP: {project.zip}</span>
+                      <a
+                        href={project.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary text-sm font-medium flex items-center gap-1 hover:underline"
+                        itemProp="url"
+                      >
+                        View on Map
+                        <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* FAQs for AEO */}
       {cityData?.faqs && (
