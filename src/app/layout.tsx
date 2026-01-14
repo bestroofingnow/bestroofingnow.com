@@ -20,7 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: `${SITE_CONFIG.name} | #1 Roofing Contractor Charlotte NC | BBB A+ Rated`,
+    default: `${SITE_CONFIG.name} | Top-Rated Roofing Company Charlotte NC | BBB A+`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: `Charlotte's top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts. Call (704) 605-6047.`,

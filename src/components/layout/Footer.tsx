@@ -6,6 +6,7 @@ import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } fr
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { getCurrentYear, trackPhoneClick } from '@/lib/utils';
 import { EstimateButton } from '@/components/estimate';
+import { getLinksByCategory } from '@/lib/directory-links';
 
 // Custom icon components for platforms not in Lucide
 const XTwitterIcon = () => (
@@ -97,21 +98,34 @@ export function Footer() {
                 </a>
               ))}
             </div>
-            {/* Directory Listings */}
+            {/* Directory Listings - Enhanced */}
             <div className="mt-4 pt-4 border-t border-white/10">
-              <p className="text-white/70 text-sm mb-2">Find us on:</p>
+              <p className="text-white/70 text-sm mb-2">Verified On:</p>
               <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
-                <a href={SITE_CONFIG.externalProfiles.googleMaps} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">Google</a>
-                <span className="text-white/30">|</span>
-                <a href={SITE_CONFIG.externalProfiles.bbb} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">BBB</a>
-                <span className="text-white/30">|</span>
-                <a href={SITE_CONFIG.externalProfiles.nextdoor} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">Nextdoor</a>
-                <span className="text-white/30">|</span>
-                <a href={SITE_CONFIG.externalProfiles.certainteed} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">CertainTeed</a>
-                <span className="text-white/30">|</span>
-                <a href={SITE_CONFIG.externalProfiles.projectMapIt} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">ProjectMapIt</a>
-                <span className="text-white/30">|</span>
-                <a href={SITE_CONFIG.externalProfiles.lakeNormanChamber} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">Lake Norman Chamber</a>
+                {/* Review Platforms */}
+                {getLinksByCategory('reviews').slice(0, 4).map((link, idx) => (
+                  <span key={link.url} className="inline-flex items-center">
+                    <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">{link.name}</a>
+                    {idx < 3 && <span className="text-white/30 ml-3">|</span>}
+                  </span>
+                ))}
+              </div>
+              <p className="text-white/70 text-sm mb-2 mt-3">Certifications:</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+                {/* Certification Links */}
+                {getLinksByCategory('certification').map((link, idx, arr) => (
+                  <span key={link.url} className="inline-flex items-center">
+                    <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">{link.name}</a>
+                    {idx < arr.length - 1 && <span className="text-white/30 ml-3">|</span>}
+                  </span>
+                ))}
+                {/* Local Chambers */}
+                {getLinksByCategory('local-chamber').slice(0, 2).map((link) => (
+                  <span key={link.url} className="inline-flex items-center">
+                    <span className="text-white/30 mr-3">|</span>
+                    <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">{link.name}</a>
+                  </span>
+                ))}
               </div>
             </div>
           </div>

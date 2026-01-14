@@ -1601,3 +1601,354 @@ export function HomePageAEOSchemas() {
     </>
   );
 }
+
+// ============================================
+// IMAGE OBJECT SCHEMAS
+// For better Google Images indexing and rich results
+// ============================================
+
+interface ImageObjectSchemaProps {
+  images: {
+    url: string;
+    caption: string;
+    name?: string;
+    width?: number;
+    height?: number;
+  }[];
+  pageUrl: string;
+}
+
+export function ImageObjectSchema({ images, pageUrl }: ImageObjectSchemaProps) {
+  const schemas = images.map((image, index) => ({
+    '@context': 'https://schema.org',
+    '@type': 'ImageObject',
+    '@id': `${pageUrl}/#image-${index + 1}`,
+    url: image.url,
+    contentUrl: image.url,
+    caption: image.caption,
+    name: image.name || image.caption,
+    width: image.width || 1200,
+    height: image.height || 800,
+    representativeOfPage: index === 0,
+    creditText: 'Best Roofing Now',
+    copyrightNotice: '© Best Roofing Now LLC',
+    creator: {
+      '@type': 'Organization',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+    acquireLicensePage: `${SITE_CONFIG.url}/contact`,
+  }));
+
+  return (
+    <>
+      {schemas.map((schema, index) => (
+        <script
+          key={`image-${index}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+    </>
+  );
+}
+
+// Single image schema for pages with hero images
+interface HeroImageSchemaProps {
+  url: string;
+  caption: string;
+  pageUrl: string;
+}
+
+export function HeroImageSchema({ url, caption, pageUrl }: HeroImageSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ImageObject',
+    '@id': `${pageUrl}/#hero-image`,
+    url: url,
+    contentUrl: url,
+    caption: caption,
+    name: caption,
+    width: 1920,
+    height: 1080,
+    representativeOfPage: true,
+    creditText: 'Best Roofing Now',
+    copyrightNotice: '© Best Roofing Now LLC',
+    creator: {
+      '@type': 'Organization',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// ============================================
+// VIDEO OBJECT SCHEMAS
+// For video rich results and Google Video indexing
+// ============================================
+
+interface VideoObjectSchemaProps {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  contentUrl?: string;
+  embedUrl?: string;
+  duration?: string; // ISO 8601 format (e.g., PT2M30S)
+  pageUrl: string;
+}
+
+export function VideoObjectSchema({
+  name,
+  description,
+  thumbnailUrl,
+  uploadDate,
+  contentUrl,
+  embedUrl,
+  duration,
+  pageUrl,
+}: VideoObjectSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    '@id': `${pageUrl}/#video`,
+    name: name,
+    description: description,
+    thumbnailUrl: thumbnailUrl,
+    uploadDate: uploadDate,
+    contentUrl: contentUrl,
+    embedUrl: embedUrl,
+    duration: duration || 'PT1M',
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_CONFIG.url}/images/logo.png`,
+      },
+    },
+    potentialAction: {
+      '@type': 'WatchAction',
+      target: contentUrl || embedUrl,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// ============================================
+// GALLERY SCHEMA
+// For project galleries and image carousels
+// ============================================
+
+interface GallerySchemaProps {
+  name: string;
+  description: string;
+  images: {
+    url: string;
+    caption: string;
+  }[];
+  pageUrl: string;
+}
+
+export function GallerySchema({ name, description, images, pageUrl }: GallerySchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ImageGallery',
+    '@id': `${pageUrl}/#gallery`,
+    name: name,
+    description: description,
+    numberOfItems: images.length,
+    image: images.map((img, index) => ({
+      '@type': 'ImageObject',
+      position: index + 1,
+      url: img.url,
+      caption: img.caption,
+      creditText: 'Best Roofing Now',
+    })),
+    creator: {
+      '@type': 'Organization',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// ============================================
+// ENHANCED BREADCRUMB WITH POSITION
+// More detailed breadcrumb schema for better GSC recognition
+// ============================================
+
+interface EnhancedBreadcrumbItem {
+  name: string;
+  url: string;
+  image?: string;
+}
+
+interface EnhancedBreadcrumbSchemaProps {
+  items: EnhancedBreadcrumbItem[];
+}
+
+export function EnhancedBreadcrumbSchema({ items }: EnhancedBreadcrumbSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${items[items.length - 1]?.url || SITE_CONFIG.url}/#breadcrumb`,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: {
+        '@type': 'WebPage',
+        '@id': item.url,
+        url: item.url,
+        name: item.name,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// ============================================
+// WEBPAGE SCHEMA
+// Comprehensive webpage schema for each page
+// ============================================
+
+interface WebPageSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  datePublished?: string;
+  dateModified?: string;
+  primaryImage?: string;
+  breadcrumb?: EnhancedBreadcrumbItem[];
+}
+
+export function WebPageSchema({
+  name,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  primaryImage,
+  breadcrumb,
+}: WebPageSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}/#webpage`,
+    url: url,
+    name: name,
+    description: description,
+    datePublished: datePublished || '2024-01-01',
+    dateModified: dateModified || new Date().toISOString().split('T')[0],
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': `${SITE_CONFIG.url}/#website`,
+    },
+    about: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+    primaryImageOfPage: primaryImage ? {
+      '@type': 'ImageObject',
+      url: primaryImage,
+    } : undefined,
+    breadcrumb: breadcrumb ? {
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumb.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: item.url,
+      })),
+    } : undefined,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.speakable-intro', 'meta[name="description"]'],
+    },
+    mainContentOfPage: {
+      '@type': 'WebPageElement',
+      cssSelector: 'main',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// ============================================
+// COLLECTION PAGE SCHEMA
+// For listing pages (services, locations, etc.)
+// ============================================
+
+interface CollectionPageSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  items: { name: string; url: string; description?: string }[];
+}
+
+export function CollectionPageSchema({ name, description, url, items }: CollectionPageSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}/#collection`,
+    url: url,
+    name: name,
+    description: description,
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': `${SITE_CONFIG.url}/#website`,
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: items.length,
+      itemListElement: items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        url: item.url,
+        description: item.description,
+      })),
+    },
+    about: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

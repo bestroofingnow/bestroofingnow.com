@@ -23,15 +23,34 @@ export async function generateMetadata({ params }: SeasonalPageProps): Promise<M
     return { title: 'Season Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${season.title} | Best Roofing Now`,
     description: season.description,
     keywords: season.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/seasonal/${slug}`,
+    },
     openGraph: {
       title: season.title,
       description: season.description,
       url: `${SITE_CONFIG.url}/seasonal/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${season.title} - Best Roofing Now Charlotte NC`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: season.title,
+      description: season.description,
+      images: [ogImage],
     },
   };
 }

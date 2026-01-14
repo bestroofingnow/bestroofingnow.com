@@ -23,15 +23,34 @@ export async function generateMetadata({ params }: CommercialSystemPageProps): P
     return { title: 'System Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${system.fullName} | Commercial Roofing Charlotte NC | Best Roofing Now`,
     description: `${system.description} Professional ${system.name} installation and repair in Charlotte NC.`,
     keywords: system.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/commercial-systems/${slug}`,
+    },
     openGraph: {
       title: `${system.fullName} | Best Roofing Now Charlotte`,
       description: system.description,
       url: `${SITE_CONFIG.url}/commercial-systems/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${system.fullName} in Charlotte NC - Best Roofing Now`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${system.fullName} | Best Roofing Now Charlotte`,
+      description: system.description,
+      images: [ogImage],
     },
   };
 }

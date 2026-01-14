@@ -24,15 +24,34 @@ export async function generateMetadata({ params }: RoofTypePageProps): Promise<M
     return { title: 'Roof Type Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${roofType.name} | Roof Styles Charlotte NC | Best Roofing Now`,
     description: `${roofType.description} Expert ${roofType.name.toLowerCase()} repair, installation, and replacement in Charlotte NC.`,
     keywords: roofType.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/roof-types/${slug}`,
+    },
     openGraph: {
       title: `${roofType.name} | Best Roofing Now Charlotte`,
       description: roofType.description,
       url: `${SITE_CONFIG.url}/roof-types/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${roofType.name} roofing in Charlotte NC - Best Roofing Now`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${roofType.name} | Best Roofing Now Charlotte`,
+      description: roofType.description,
+      images: [ogImage],
     },
   };
 }

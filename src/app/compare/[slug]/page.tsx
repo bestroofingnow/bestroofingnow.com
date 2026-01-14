@@ -4,7 +4,9 @@ import { notFound } from 'next/navigation';
 import { Phone, CheckCircle, XCircle, ArrowRight, Scale, Trophy } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_COMPARISONS, ROOFING_MATERIALS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { EstimateButton } from '@/components/estimate';
+import { BreadcrumbSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
 
 interface ComparePageProps {
   params: Promise<{ slug: string }>;
@@ -24,15 +26,34 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
     return { title: 'Comparison Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${comparison.title} | Roofing Comparison Charlotte NC`,
     description: comparison.description,
     keywords: comparison.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/compare/${slug}`,
+    },
     openGraph: {
       title: `${comparison.title} | Best Roofing Now Charlotte`,
       description: comparison.description,
       url: `${SITE_CONFIG.url}/compare/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${comparison.title} - Best Roofing Now Charlotte NC`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${comparison.title} | Best Roofing Now Charlotte`,
+      description: comparison.description,
+      images: [ogImage],
     },
   };
 }
@@ -296,8 +317,29 @@ export default async function ComparePage({ params }: ComparePageProps) {
     if (cat.winner === 2) material2Wins++;
   });
 
+  const pageUrl = `${SITE_CONFIG.url}/compare/${slug}`;
+
   return (
     <>
+      {/* Schema Markup */}
+      <WebPageSchema
+        name={`${comparison.title} | Roofing Comparison Charlotte NC`}
+        description={comparison.description}
+        url={pageUrl}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Compare', url: `${SITE_CONFIG.url}/compare` },
+          { name: comparison.title, url: pageUrl },
+        ]}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Compare', url: `${SITE_CONFIG.url}/compare` },
+          { name: comparison.title, url: pageUrl },
+        ]}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -548,6 +590,15 @@ export default async function ComparePage({ params }: ComparePageProps) {
             >
               Get Free Instant Estimate
             </EstimateButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Directory Citations */}
+      <section className="py-6 bg-gray-50 border-t border-gray-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <DirectoryCitations pageType="default" maxLinks={3} variant="inline" title="Expert Advice From" />
           </div>
         </div>
       </section>

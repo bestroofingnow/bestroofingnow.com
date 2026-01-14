@@ -4,8 +4,10 @@ import { notFound } from 'next/navigation';
 import { CheckCircle, XCircle, Phone, Clock, DollarSign, Home, ArrowRight, Star, Award, Shield, Wind, Zap, Wrench, Palette, MapPin, TrendingUp, Flame, Calendar } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_MATERIALS, ROOFING_BRANDS, SHINGLE_PRODUCTS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { FAQ } from '@/components/sections/FAQ';
 import { EstimateButton } from '@/components/estimate';
+import { BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
 
 interface MaterialPageProps {
   params: Promise<{ slug: string }>;
@@ -25,15 +27,34 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
     return { title: 'Material Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${material.name} Charlotte NC | Cost, Pros & Cons, Installation | Best Roofing Now`,
     description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
     keywords: [...material.keywords, `${material.shortName.toLowerCase()} roof Charlotte`, `${material.shortName.toLowerCase()} roofing contractor`],
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/materials/${slug}`,
+    },
     openGraph: {
       title: `${material.name} | Best Roofing Now Charlotte`,
       description: material.description,
       url: `${SITE_CONFIG.url}/materials/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${material.name} roofing in Charlotte NC - Best Roofing Now`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${material.name} | Best Roofing Now Charlotte`,
+      description: material.description,
+      images: [ogImage],
     },
   };
 }
@@ -88,9 +109,30 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
 
   const faqs = getMaterialFAQs(material);
   const otherMaterials = ROOFING_MATERIALS.filter((m) => m.slug !== slug).slice(0, 3);
+  const pageUrl = `${SITE_CONFIG.url}/materials/${slug}`;
 
   return (
     <>
+      {/* Schema Markup */}
+      <WebPageSchema
+        name={`${material.name} Charlotte NC | Best Roofing Now`}
+        description={material.description}
+        url={pageUrl}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Materials', url: `${SITE_CONFIG.url}/materials` },
+          { name: material.shortName, url: pageUrl },
+        ]}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Materials', url: `${SITE_CONFIG.url}/materials` },
+          { name: material.shortName, url: pageUrl },
+        ]}
+      />
+      <FAQSchema faqs={faqs} />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -592,6 +634,15 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
             >
               Get Free Instant Estimate
             </EstimateButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Directory Citations */}
+      <section className="py-6 bg-gray-50 border-t border-gray-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <DirectoryCitations pageType="default" maxLinks={3} variant="inline" title="Certified Installer" />
           </div>
         </div>
       </section>

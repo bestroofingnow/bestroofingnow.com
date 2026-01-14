@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { Phone, CheckCircle, Award, Shield, ArrowRight, Star } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_BRANDS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
+import { BreadcrumbSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
 
 interface BrandPageProps {
   params: Promise<{ slug: string }>;
@@ -23,15 +25,34 @@ export async function generateMetadata({ params }: BrandPageProps): Promise<Meta
     return { title: 'Brand Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${brand.fullName} | Certified Installer Charlotte NC | Best Roofing Now`,
     description: `${brand.description} As a ${brand.certificationLevel}, we offer enhanced warranty options on ${brand.name} products.`,
     keywords: brand.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/brands/${slug}`,
+    },
     openGraph: {
       title: `${brand.fullName} | Best Roofing Now Charlotte`,
       description: brand.description,
       url: `${SITE_CONFIG.url}/brands/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${brand.fullName} certified installer in Charlotte NC - Best Roofing Now`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${brand.fullName} | Best Roofing Now Charlotte`,
+      description: brand.description,
+      images: [ogImage],
     },
   };
 }
@@ -46,8 +67,29 @@ export default async function BrandPage({ params }: BrandPageProps) {
 
   const otherBrands = ROOFING_BRANDS.filter((b) => b.slug !== slug);
 
+  const pageUrl = `${SITE_CONFIG.url}/brands/${slug}`;
+
   return (
     <>
+      {/* Schema Markup */}
+      <WebPageSchema
+        name={`${brand.fullName} | Certified Installer Charlotte NC`}
+        description={brand.description}
+        url={pageUrl}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Brands', url: `${SITE_CONFIG.url}/brands` },
+          { name: brand.name, url: pageUrl },
+        ]}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Brands', url: `${SITE_CONFIG.url}/brands` },
+          { name: brand.name, url: pageUrl },
+        ]}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -243,6 +285,15 @@ export default async function BrandPage({ params }: BrandPageProps) {
             >
               Get Free Quote
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Directory Citations */}
+      <section className="py-6 bg-gray-50 border-t border-gray-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <DirectoryCitations pageType="brands" maxLinks={3} variant="inline" title="Certified Contractor" />
           </div>
         </div>
       </section>

@@ -4,8 +4,9 @@ import { notFound } from 'next/navigation';
 import { CheckCircle, Phone, Wind, Shield, DollarSign, ArrowRight, Star, Palette } from 'lucide-react';
 import { SITE_CONFIG, SHINGLE_PRODUCTS, ROOFING_BRANDS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { FAQ } from '@/components/sections/FAQ';
-import { BreadcrumbSchema, ProductSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, ProductSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
 import { EstimateButton } from '@/components/estimate';
 
 interface ProductPageProps {
@@ -26,15 +27,34 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     return { title: 'Product Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${product.fullName} | ${product.brandName} Shingles Charlotte NC`,
     description: `${product.description} Get ${product.name} installed by certified ${product.brandName} contractors in Charlotte NC. ${product.warranty} warranty. Free estimates.`,
     keywords: product.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/products/${slug}`,
+    },
     openGraph: {
       title: `${product.fullName} | Best Roofing Now Charlotte`,
       description: product.description,
       url: `${SITE_CONFIG.url}/products/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${product.fullName} in Charlotte NC - Best Roofing Now`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.fullName} | Best Roofing Now Charlotte`,
+      description: product.description,
+      images: [ogImage],
     },
   };
 }
@@ -82,14 +102,27 @@ export default async function ProductPage({ params }: ProductPageProps) {
     (p) => p.brand !== product.brand
   ).slice(0, 3);
 
+  const pageUrl = `${SITE_CONFIG.url}/products/${slug}`;
+
   return (
     <>
+      <WebPageSchema
+        name={`${product.fullName} | ${product.brandName} Shingles Charlotte NC`}
+        description={product.description}
+        url={pageUrl}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Products', url: `${SITE_CONFIG.url}/products` },
+          { name: product.brandName, url: `${SITE_CONFIG.url}/brands/${product.brand}` },
+          { name: product.name, url: pageUrl },
+        ]}
+      />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
           { name: 'Products', url: `${SITE_CONFIG.url}/products` },
           { name: product.brandName, url: `${SITE_CONFIG.url}/brands/${product.brand}` },
-          { name: product.name, url: `${SITE_CONFIG.url}/products/${slug}` },
+          { name: product.name, url: pageUrl },
         ]}
       />
       <ProductSchema product={product} />
@@ -386,6 +419,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
             >
               Get Free Instant Estimate
             </EstimateButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Directory Citations */}
+      <section className="py-6 bg-gray-50 border-t border-gray-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <DirectoryCitations pageType="products" maxLinks={3} variant="inline" title="Certified Installer" />
           </div>
         </div>
       </section>

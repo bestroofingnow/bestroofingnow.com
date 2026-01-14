@@ -25,8 +25,16 @@ import {
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  ServiceSchema,
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  HeroImageSchema,
+  GallerySchema,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 import { getServiceFAQs } from '@/lib/faqs';
@@ -503,16 +511,50 @@ export default async function ServicePage({ params }: PageProps) {
   // Get enhanced FAQs for this service (with better keyword targeting)
   const serviceFAQs = getServiceFAQs(slug);
 
+  // Get images for gallery schema
+  const pageImages = serviceImages[slug] || PAGE_IMAGES.services.residential;
+  const heroImage = SERVICE_HERO_IMAGES[slug] || IMAGES.hero.roofTeam;
+  const pageUrl = `${SITE_CONFIG.url}/services/${slug}`;
+
+  // Gallery images for schema
+  const galleryImages = pageImages.map((img, index) => ({
+    url: img,
+    caption: `${service.title} project ${index + 1} in Charlotte NC - Best Roofing Now`,
+  }));
+
   return (
     <>
+      {/* Enhanced Schema Markup */}
+      <WebPageSchema
+        name={`${service.title} Charlotte NC | Best Roofing Now`}
+        description={service.description}
+        url={pageUrl}
+        primaryImage={heroImage}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Services', url: `${SITE_CONFIG.url}/services` },
+          { name: service.title, url: pageUrl },
+        ]}
+      />
       <ServiceSchema service={service} />
       <FAQSchema faqs={serviceFAQs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
           { name: 'Services', url: `${SITE_CONFIG.url}/services` },
-          { name: service.title, url: `${SITE_CONFIG.url}/services/${slug}` },
+          { name: service.title, url: pageUrl },
         ]}
+      />
+      <HeroImageSchema
+        url={heroImage}
+        caption={`${service.title} services in Charlotte NC - Best Roofing Now certified contractor`}
+        pageUrl={pageUrl}
+      />
+      <GallerySchema
+        name={`${service.title} Project Gallery`}
+        description={`Recent ${service.title.toLowerCase()} projects in Charlotte NC and surrounding areas`}
+        images={galleryImages}
+        pageUrl={pageUrl}
       />
 
       {/* Visual Breadcrumbs */}
@@ -795,6 +837,18 @@ export default async function ServicePage({ params }: PageProps) {
                 </Link>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Directory Citations */}
+      <section className="py-6 bg-gray-50 border-t border-gray-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <DirectoryCitations pageType="service-detail" maxLinks={3} variant="inline" title="Verified Business" />
+            <p className="text-sm text-gray-500">
+              Licensed, Bonded & Insured | BBB A+ Rated
+            </p>
           </div>
         </div>
       </section>

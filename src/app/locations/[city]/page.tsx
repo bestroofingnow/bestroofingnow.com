@@ -7,8 +7,16 @@ import { Button } from '@/components/ui/Button';
 import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { LocationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  LocationSchema,
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  HeroImageSchema,
+  LocationFAQSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
@@ -16,6 +24,7 @@ import { generateLocationFAQs } from '@/lib/faqs';
 import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
 import { EstimateButton } from '@/components/estimate';
 import { getClimateData, CHARLOTTE_CLIMATE } from '@/lib/climate';
+import { LAKE_NORMAN_LOCATIONS } from '@/lib/directory-links';
 
 // Location-specific content for unique pages
 const locationContent: Record<
@@ -686,16 +695,39 @@ export default async function LocationPage({ params }: PageProps) {
   // Special optimization for Charlotte
   const isCharlotte = city === 'charlotte-nc';
 
+  // Check if this is a Lake Norman area location
+  const isLakeNorman = LAKE_NORMAN_LOCATIONS.some(ln => city.includes(ln.replace('-nc', '')));
+  const pageUrl = `${SITE_CONFIG.url}/locations/${city}`;
+  const heroImage = LOCATION_HERO_IMAGES[city] || IMAGES.hero.roofTeam;
+
   return (
     <>
+      {/* Enhanced Schema Markup */}
+      <WebPageSchema
+        name={`Roofing Contractor ${location.city} ${location.state} | Best Roofing Now`}
+        description={content.description}
+        url={pageUrl}
+        primaryImage={heroImage}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Service Areas', url: `${SITE_CONFIG.url}/locations` },
+          { name: `${location.city}, ${location.state}`, url: pageUrl },
+        ]}
+      />
       <LocationSchema location={location} />
       <FAQSchema faqs={locationFAQs} />
+      <LocationFAQSchema city={location.city} state={location.state} faqs={locationFAQs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
           { name: 'Service Areas', url: `${SITE_CONFIG.url}/locations` },
-          { name: `${location.city}, ${location.state}`, url: `${SITE_CONFIG.url}/locations/${city}` },
+          { name: `${location.city}, ${location.state}`, url: pageUrl },
         ]}
+      />
+      <HeroImageSchema
+        url={heroImage}
+        caption={`Professional roofing services in ${location.city}, ${location.state} - Best Roofing Now`}
+        pageUrl={pageUrl}
       />
 
       {/* Visual Breadcrumbs */}
@@ -1150,6 +1182,24 @@ export default async function LocationPage({ params }: PageProps) {
         title={`${location.city} Roofing FAQ`}
         subtitle={`Common questions about roofing services in ${location.city}, ${location.state}`}
       />
+
+      {/* Directory Citations - Location specific */}
+      <section className="py-6 bg-gray-50 border-t border-gray-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <DirectoryCitations
+              pageType={isLakeNorman ? 'location-lake-norman' : 'location'}
+              locationSlug={city}
+              maxLinks={3}
+              variant="inline"
+              title={isLakeNorman ? 'Lake Norman Area Verified' : 'Verified Business'}
+            />
+            <p className="text-sm text-gray-500">
+              Serving {location.city} &amp; {location.county} County
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <CTASection

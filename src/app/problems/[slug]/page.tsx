@@ -24,15 +24,34 @@ export async function generateMetadata({ params }: ProblemPageProps): Promise<Me
     return { title: 'Problem Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${problem.title} | Best Roofing Now`,
     description: problem.description,
     keywords: problem.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/problems/${slug}`,
+    },
     openGraph: {
       title: problem.title,
       description: problem.description,
       url: `${SITE_CONFIG.url}/problems/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${problem.title} - Best Roofing Now Charlotte NC`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: problem.title,
+      description: problem.description,
+      images: [ogImage],
     },
   };
 }

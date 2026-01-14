@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { Phone, ArrowRight, CheckCircle, AlertTriangle, DollarSign, Clock, FileText } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_GUIDES } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
+import { BreadcrumbSchema, WebPageSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
 
 interface GuidePageProps {
   params: Promise<{ slug: string }>;
@@ -23,15 +25,34 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
     return { title: 'Guide Not Found' };
   }
 
+  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+
   return {
     title: `${guide.title} | Best Roofing Now Charlotte NC`,
     description: guide.description,
     keywords: guide.keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/guides/${slug}`,
+    },
     openGraph: {
       title: `${guide.title} | Best Roofing Now`,
       description: guide.description,
       url: `${SITE_CONFIG.url}/guides/${slug}`,
       type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${guide.title} - Best Roofing Now Charlotte NC`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${guide.title} | Best Roofing Now`,
+      description: guide.description,
+      images: [ogImage],
     },
   };
 }
@@ -297,8 +318,38 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const content = guideContent[slug];
   const otherGuides = ROOFING_GUIDES.filter((g) => g.slug !== slug).slice(0, 3);
 
+  const pageUrl = `${SITE_CONFIG.url}/guides/${slug}`;
+
   return (
     <>
+      {/* Schema Markup */}
+      <WebPageSchema
+        name={`${guide.title} | Best Roofing Now`}
+        description={guide.description}
+        url={pageUrl}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Guides', url: `${SITE_CONFIG.url}/guides` },
+          { name: guide.shortTitle, url: pageUrl },
+        ]}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Guides', url: `${SITE_CONFIG.url}/guides` },
+          { name: guide.shortTitle, url: pageUrl },
+        ]}
+      />
+      <ArticleSchema
+        post={{
+          title: guide.title,
+          description: guide.description,
+          slug: `guides/${slug}`,
+          datePublished: '2024-01-01',
+          dateModified: new Date().toISOString().split('T')[0],
+        }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -434,6 +485,15 @@ export default async function GuidePage({ params }: GuidePageProps) {
             <Link href="/guides" className="btn btn-outline">
               View All Guides
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Directory Citations */}
+      <section className="py-6 bg-gray-50 border-t border-gray-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <DirectoryCitations pageType="default" maxLinks={3} variant="inline" title="Trusted By" />
           </div>
         </div>
       </section>

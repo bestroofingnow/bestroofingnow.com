@@ -27,7 +27,10 @@
       "mcp__kapture__list_tabs",
       "Bash(npx supabase --version)",
       "Bash(npx supabase:*)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(NEXT_TURBO_TASKS=false npm run build:*)",
+      "Bash(NEXT_PRIVATE_LOCAL_WEBPACK=true npm run build:*)",
+      "Bash(npx eslint:*)"
     ]
   }
 }
