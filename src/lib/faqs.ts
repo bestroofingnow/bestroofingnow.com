@@ -467,6 +467,74 @@ export const enhancedServiceFAQs: Record<string, FAQ[]> = {
       answer: 'James Hardie ColorPlus siding comes pre-finished with a 15-year color warranty—no immediate painting needed. Standard fiber cement requires painting but holds paint excellently for 10-15+ years. Charlotte\'s climate is moderate enough that quality paint jobs last well. We can coordinate painting if you choose unfinished fiber cement.',
     },
   ],
+  'residential-roof-maintenance': [
+    {
+      question: 'How often should Charlotte homeowners have roof maintenance performed?',
+      answer: 'We recommend annual roof maintenance for most Charlotte homes, ideally in spring after winter weather or in fall before winter arrives. Homes with many trees or in heavily wooded areas like Myers Park or Dilworth may benefit from twice-yearly maintenance to clear debris and check for damage from falling branches. Regular maintenance catches small issues before they become expensive repairs.',
+    },
+    {
+      question: 'What is included in residential roof maintenance in Charlotte NC?',
+      answer: 'Our residential roof maintenance includes a comprehensive shingle-by-shingle inspection, checking all flashing around chimneys, vents, and skylights, vent boot assessment for cracks, gutter cleaning and debris removal, minor on-the-spot repairs like resealing and recaulking, and a detailed photo report documenting your roof\'s condition. Everything homeowners need to protect their investment.',
+    },
+    {
+      question: 'Does roof maintenance really extend my roof\'s lifespan?',
+      answer: 'Absolutely! Regular maintenance can extend your Charlotte home\'s roof lifespan by 5-10 years. Small issues like cracked caulk, lifted shingles, and worn pipe boots cost very little to fix during maintenance but can cause thousands in water damage if left unchecked. Prevention is always more affordable than repair.',
+    },
+    {
+      question: 'Will roof maintenance keep my warranty valid?',
+      answer: 'Yes! Most manufacturer warranties, including GAF, CertainTeed, and Owens Corning, require documented regular maintenance to remain valid. We provide maintenance records and photos proving proper care, so if you ever need to make a warranty claim, you have complete documentation. Don\'t risk voiding your warranty by neglecting maintenance.',
+    },
+    {
+      question: 'How much does residential roof maintenance cost in Charlotte?',
+      answer: 'Residential roof maintenance in Charlotte typically costs $150-$350 per visit depending on roof size and complexity. This includes comprehensive inspection, gutter cleaning, debris removal, minor repairs, and a detailed report. Compared to the cost of roof repairs or premature replacement, maintenance is an excellent investment that pays for itself many times over.',
+    },
+    {
+      question: 'What is the best time of year for roof maintenance in Charlotte NC?',
+      answer: 'Spring (March-May) and fall (September-November) are ideal for roof maintenance in Charlotte. Spring maintenance addresses any winter damage and prepares your roof for summer storms. Fall maintenance clears accumulated debris and ensures your roof is ready for winter. We recommend scheduling 2-3 weeks in advance during these popular seasons.',
+    },
+    {
+      question: 'Do you offer residential roof maintenance plans in Charlotte?',
+      answer: 'Yes! We offer annual maintenance plans for Charlotte homeowners that include scheduled visits, priority scheduling for any needed repairs, and discounted rates on additional services. Many homeowners appreciate the convenience of automatic scheduling—we remind you when it\'s time for maintenance so you never have to remember.',
+    },
+    {
+      question: 'Can roof maintenance prevent leaks in my Charlotte home?',
+      answer: 'Roof maintenance is specifically designed to prevent leaks. We identify and fix vulnerabilities before they fail—things like cracked pipe boots, deteriorating caulk around flashings, and lifted shingle edges. These small issues are invisible from the ground but cause most roof leaks. Proactive maintenance keeps Charlotte homes dry.',
+    },
+  ],
+  'commercial-roof-maintenance': [
+    {
+      question: 'How often should Charlotte commercial roofs be maintained?',
+      answer: 'We recommend bi-annual maintenance for Charlotte commercial flat roofs—once in spring after winter weather and once in fall before winter. High-traffic roofs with frequent HVAC access may need quarterly inspections. Charlotte\'s intense summer heat and occasional severe storms make regular maintenance essential for commercial buildings.',
+    },
+    {
+      question: 'What is included in commercial roof maintenance in Charlotte NC?',
+      answer: 'Our commercial roof maintenance program includes membrane inspection for TPO, EPDM, or PVC systems, seam integrity checks, drain and scupper clearing, HVAC penetration assessment, parapet wall inspection, ponding water analysis, and comprehensive documentation for property management records. We identify issues before they cause business disruptions.',
+    },
+    {
+      question: 'How much does commercial roof maintenance cost in Charlotte?',
+      answer: 'Commercial roof maintenance in Charlotte typically costs $300-$800 per visit depending on roof size, system type, and accessibility. This includes comprehensive inspection, drain clearing, minor repairs, and detailed reporting. The cost is minimal compared to emergency repairs, interior damage, or business interruption from unexpected leaks.',
+    },
+    {
+      question: 'Can commercial roof maintenance prevent emergency repairs?',
+      answer: 'Yes! The primary goal of commercial maintenance is preventing emergencies. Clogged drains cause ponding water that stresses membranes. Deteriorating seams allow water intrusion. Failed penetration seals leak into the building. Our bi-annual inspections catch these issues early, preventing costly emergency repairs and business disruptions for Charlotte businesses.',
+    },
+    {
+      question: 'Do you provide maintenance documentation for property managers in Charlotte?',
+      answer: 'Absolutely. Every commercial maintenance visit includes comprehensive documentation with photos, condition assessments, and recommendations. Property managers receive detailed reports suitable for ownership records, insurance documentation, and capital planning. Our reports help Charlotte property managers make informed decisions about their roofing assets.',
+    },
+    {
+      question: 'What types of commercial roofs do you maintain in Charlotte?',
+      answer: 'We maintain all commercial roofing systems in Charlotte including TPO, EPDM (rubber), PVC, modified bitumen, built-up roofing (BUR), metal, and coating systems. Each system has specific maintenance requirements—TPO seam welding differs from EPDM adhesive checks. Our certified technicians understand the nuances of every commercial roofing system.',
+    },
+    {
+      question: 'How does Charlotte weather affect commercial flat roofs?',
+      answer: 'Charlotte\'s intense summer heat causes thermal expansion that stresses flat roof seams and membranes. Heavy rain events test drainage systems, and even occasional ice can cause damage. UV exposure degrades roofing materials over time. Our commercial maintenance program specifically addresses these Charlotte-area challenges to maximize your roof\'s lifespan.',
+    },
+    {
+      question: 'Do you work around business hours for commercial maintenance in Charlotte?',
+      answer: 'Yes! We understand that roof maintenance shouldn\'t disrupt your Charlotte business operations. We schedule maintenance visits during low-traffic times, early mornings, evenings, or weekends when needed. For retail and restaurant clients especially, we work around peak business hours to minimize any disruption to your customers.',
+    },
+  ],
 };
 
 // Comparison FAQs for featured snippets and AEO (these answer "vs" questions)

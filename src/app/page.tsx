@@ -93,7 +93,7 @@ export default function HomePage() {
       <Services
         title="Our Roofing Services"
         subtitle="Comprehensive roofing solutions for residential and commercial properties."
-        limit={6}
+        limit={9}
         showAll={false}
       />
       <WhyChooseUs />

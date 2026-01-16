@@ -6,8 +6,9 @@ const BASE_URL = 'https://bestroofingnow.com';
 export async function GET() {
   const sitemaps = [
     { loc: `${BASE_URL}/sitemaps/core`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/locations`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/services`, lastmod: new Date().toISOString() },
+    { loc: `${BASE_URL}/sitemaps/locations`, lastmod: new Date().toISOString() },
+    { loc: `${BASE_URL}/sitemaps/materials`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/resources`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/stories`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/blog`, lastmod: new Date().toISOString() },

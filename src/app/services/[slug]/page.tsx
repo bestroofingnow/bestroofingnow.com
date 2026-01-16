@@ -35,7 +35,7 @@ import {
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
-import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
+import { SITE_CONFIG, SERVICES, LOCATIONS, ROOFING_MATERIALS, ROOFING_PROBLEMS, ROOFING_COMPARISONS, ROOFING_BRANDS } from '@/lib/constants';
 import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 import { getServiceFAQs } from '@/lib/faqs';
 import { EstimateButton } from '@/components/estimate';
@@ -52,7 +52,8 @@ const serviceImages: Record<string, string[]> = {
   'storm-damage': [IMAGES.hero.hero7, IMAGES.projects.stormDamage1, IMAGES.services.stormDamage, IMAGES.services.emergency, IMAGES.marketing.image4],
   'gutters': [IMAGES.hero.hero8, IMAGES.services.gutters, IMAGES.cleaning.softWash, IMAGES.cleaning.pressure, IMAGES.projects.work5],
   'siding': [IMAGES.hero.hero9, IMAGES.services.siding, IMAGES.beforeAfter.commercialSiding.after, IMAGES.problems.crackedSiding, IMAGES.problems.peeling],
-  'roof-maintenance': [IMAGES.hero.hero10, IMAGES.services.inspection, IMAGES.projects.work1, IMAGES.houses.house1, IMAGES.marketing.image3],
+  'residential-roof-maintenance': [IMAGES.hero.hero10, IMAGES.services.inspection, IMAGES.houses.house1, IMAGES.houses.house2, IMAGES.projects.work1],
+  'commercial-roof-maintenance': [IMAGES.hero.hero10, IMAGES.commercial.office, IMAGES.commercial.warehouse, IMAGES.services.inspection, IMAGES.marketing.image3],
   'skylight-installation': [IMAGES.hero.hero11, IMAGES.services.inspection, IMAGES.houses.modern1, IMAGES.projects.work2, IMAGES.marketing.image4],
   'roof-ventilation': [IMAGES.hero.hero12, IMAGES.services.inspection, IMAGES.houses.house2, IMAGES.projects.closeup1, IMAGES.marketing.image5],
   'chimney-services': [IMAGES.hero.hero13, IMAGES.services.repairs, IMAGES.projects.work3, IMAGES.houses.house3, IMAGES.marketing.image6],
@@ -286,26 +287,48 @@ const serviceContent: Record<
       { question: 'Does new siding improve energy efficiency?', answer: 'Yes! Modern siding with proper insulation can significantly improve your home\'s energy efficiency, reducing heating and cooling costs.' },
     ],
   },
-  'roof-maintenance': {
+  'residential-roof-maintenance': {
     benefits: [
-      'Extend your roof\'s lifespan by years',
-      'Catch small issues before they become major repairs',
-      'Annual inspection with detailed report',
-      'Priority scheduling for repairs',
-      'Maintain warranty compliance',
-      'Protect your home investment',
+      'Extend your home roof\'s lifespan by 5-10 years',
+      'Catch small issues before they become expensive repairs',
+      'Annual inspection with detailed photo report',
+      'Gutter cleaning included with every visit',
+      'Maintain manufacturer warranty compliance',
+      'Protect your largest investment - your home',
     ],
     process: [
-      { title: 'Annual Inspection', description: 'Comprehensive roof assessment with detailed documentation.' },
-      { title: 'Preventive Repairs', description: 'Fix minor issues before they become costly problems.' },
-      { title: 'Debris Removal', description: 'Clear leaves, branches, and buildup from roof and gutters.' },
-      { title: 'Detailed Report', description: 'Receive photos and recommendations for your records.' },
-      { title: 'Scheduled Follow-ups', description: 'We remind you when your next maintenance is due.' },
+      { title: 'Schedule Your Visit', description: 'Choose a convenient time for your annual or bi-annual maintenance.' },
+      { title: 'Comprehensive Inspection', description: 'We check shingles, flashing, vents, boots, and all roof components.' },
+      { title: 'Preventive Repairs', description: 'Fix minor issues like cracked caulk, lifted shingles, and worn seals on the spot.' },
+      { title: 'Debris & Gutter Cleaning', description: 'Clear leaves, branches, and buildup from your roof and gutters.' },
+      { title: 'Photo Report & Recommendations', description: 'Receive a detailed report with photos and maintenance recommendations.' },
     ],
     faqs: [
-      { question: 'How often should I have roof maintenance performed?', answer: 'We recommend annual maintenance, ideally in spring or fall. Homes with many trees may benefit from twice-yearly maintenance to clear debris and check for damage.' },
-      { question: 'What does roof maintenance include?', answer: 'Our maintenance includes a full inspection, minor repairs, clearing debris from roof and gutters, checking flashing and seals, and a detailed condition report.' },
-      { question: 'Will maintenance really extend my roof\'s life?', answer: 'Yes! Regular maintenance can add 5-10 years to your roof\'s lifespan by catching and fixing small issues before they cause significant damage.' },
+      { question: 'How often should homeowners have roof maintenance?', answer: 'We recommend annual maintenance for most homes, ideally in spring or fall. Homes with many trees or in heavily wooded areas may benefit from twice-yearly maintenance to clear debris and check for damage from falling branches.' },
+      { question: 'What does residential roof maintenance include?', answer: 'Our residential maintenance includes a comprehensive shingle-by-shingle inspection, checking all flashing and penetrations, vent boot assessment, gutter cleaning, debris removal, minor repairs, and a detailed photo report for your records.' },
+      { question: 'Does maintenance keep my warranty valid?', answer: 'Yes! Most manufacturer warranties require regular maintenance to remain valid. We document all maintenance visits so you have proof of proper care if you ever need to make a warranty claim.' },
+    ],
+  },
+  'commercial-roof-maintenance': {
+    benefits: [
+      'Minimize costly emergency repairs and business disruptions',
+      'Bi-annual inspections with detailed property reports',
+      'Extend flat roof membrane life by years',
+      'Proactive drain clearing prevents ponding water',
+      'HVAC penetration monitoring and sealing',
+      'Documented maintenance history for property records',
+    ],
+    process: [
+      { title: 'Initial Assessment', description: 'Evaluate your commercial roof system type, age, and condition.' },
+      { title: 'Bi-Annual Inspections', description: 'Scheduled visits in spring and fall to catch seasonal issues.' },
+      { title: 'Drain & Debris Clearing', description: 'Clear all drains, scuppers, and gutters to prevent ponding water.' },
+      { title: 'Membrane & Seam Inspection', description: 'Check TPO, EPDM, or PVC seams, penetrations, and flashings.' },
+      { title: 'Detailed Property Report', description: 'Comprehensive documentation for property management and insurance records.' },
+    ],
+    faqs: [
+      { question: 'How often should commercial roofs be maintained?', answer: 'We recommend bi-annual maintenance for commercial flat roofs - once in spring after winter weather and once in fall before winter sets in. High-traffic roofs with frequent HVAC access may need quarterly inspections.' },
+      { question: 'What\'s included in commercial roof maintenance?', answer: 'Our commercial program includes membrane inspection, seam integrity checks, drain and scupper clearing, HVAC penetration assessment, parapet wall inspection, ponding water analysis, and a detailed report with photos for your property records.' },
+      { question: 'Can maintenance extend my commercial roof\'s life?', answer: 'Absolutely. Proactive maintenance can add 5-10 years to a commercial roof\'s lifespan. More importantly, it prevents emergency repairs that cause business disruptions and costly interior damage from leaks.' },
     ],
   },
   'skylight-installation': {
@@ -808,6 +831,152 @@ export default async function ServicePage({ params }: PageProps) {
         title={`${service.title} FAQ`}
         subtitle={`Common questions about ${service.title.toLowerCase()} in Charlotte NC`}
       />
+
+      {/* Related Resources - Cross-links based on service type */}
+      {(slug === 'roof-replacement' || slug === 'residential-roofing' || slug === 'commercial-roofing' || slug === 'roof-repair') && (
+        <section className="section bg-white">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-primary text-center mb-8">
+              Helpful Resources
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Materials - for roof replacement and residential roofing */}
+              {(slug === 'roof-replacement' || slug === 'residential-roofing') && (
+                <div className="bg-light rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-4">Roofing Materials</h3>
+                  <ul className="space-y-2">
+                    {ROOFING_MATERIALS.slice(0, 5).map((material) => (
+                      <li key={material.slug}>
+                        <Link
+                          href={`/materials/${material.slug}`}
+                          className="text-primary hover:text-accent text-sm flex items-center gap-1"
+                        >
+                          <ArrowRight className="w-3 h-3" />
+                          {material.name}
+                        </Link>
+                      </li>
+                    ))}
+                    <li>
+                      <Link href="/materials" className="text-accent font-medium text-sm">
+                        View All Materials →
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+
+              {/* Problems - for roof repair */}
+              {slug === 'roof-repair' && (
+                <div className="bg-light rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-4">Common Roof Problems</h3>
+                  <ul className="space-y-2">
+                    {ROOFING_PROBLEMS.slice(0, 5).map((problem) => (
+                      <li key={problem.slug}>
+                        <Link
+                          href={`/problems/${problem.slug}`}
+                          className="text-primary hover:text-accent text-sm flex items-center gap-1"
+                        >
+                          <ArrowRight className="w-3 h-3" />
+                          {problem.shortName}
+                        </Link>
+                      </li>
+                    ))}
+                    <li>
+                      <Link href="/problems" className="text-accent font-medium text-sm">
+                        View All Problems →
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+
+              {/* Comparisons - for roof replacement */}
+              {slug === 'roof-replacement' && (
+                <div className="bg-light rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-4">Material Comparisons</h3>
+                  <ul className="space-y-2">
+                    {ROOFING_COMPARISONS.slice(0, 5).map((comparison) => (
+                      <li key={comparison.slug}>
+                        <Link
+                          href={`/compare/${comparison.slug}`}
+                          className="text-primary hover:text-accent text-sm flex items-center gap-1"
+                        >
+                          <ArrowRight className="w-3 h-3" />
+                          {comparison.title.replace('Roofing', '').replace('Shingles', '')}
+                        </Link>
+                      </li>
+                    ))}
+                    <li>
+                      <Link href="/compare" className="text-accent font-medium text-sm">
+                        View All Comparisons →
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+
+              {/* Brands - for roof replacement, residential, and commercial */}
+              {(slug === 'roof-replacement' || slug === 'residential-roofing' || slug === 'commercial-roofing') && (
+                <div className="bg-light rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-4">Top Brands We Install</h3>
+                  <ul className="space-y-2">
+                    {ROOFING_BRANDS.slice(0, 5).map((brand) => (
+                      <li key={brand.slug}>
+                        <Link
+                          href={`/brands/${brand.slug}`}
+                          className="text-primary hover:text-accent text-sm flex items-center gap-1"
+                        >
+                          <ArrowRight className="w-3 h-3" />
+                          {brand.name}
+                        </Link>
+                      </li>
+                    ))}
+                    <li>
+                      <Link href="/brands" className="text-accent font-medium text-sm">
+                        View All Brands →
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+
+              {/* Maintenance link - for commercial roofing */}
+              {slug === 'commercial-roofing' && (
+                <div className="bg-light rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-4">Maintenance Programs</h3>
+                  <p className="text-gray text-sm mb-4">
+                    Protect your investment with our commercial roof maintenance programs.
+                  </p>
+                  <Link
+                    href="/services/commercial-roof-maintenance"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent"
+                  >
+                    Commercial Maintenance
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              )}
+
+              {/* Maintenance link - for residential roofing */}
+              {slug === 'residential-roofing' && (
+                <div className="bg-light rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-4">Maintenance Programs</h3>
+                  <p className="text-gray text-sm mb-4">
+                    Keep your roof in top condition with annual maintenance.
+                  </p>
+                  <Link
+                    href="/services/residential-roof-maintenance"
+                    className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent"
+                  >
+                    Residential Maintenance
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Related Services */}
       <section className="section">
