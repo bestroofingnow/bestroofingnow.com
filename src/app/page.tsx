@@ -87,7 +87,7 @@ export default function HomePage() {
       <SpeakableContent />
       <Hero
         title="Best Roofing Now - Charlotte's Top-Rated Roofing Company"
-        subtitle="Veteran-owned roofing contractor with 500+ roofs installed. Full-service roofing, siding, gutters, skylights, and chimney services. Storm damage restoration and insurance claim experts. 5-star Google rating, BBB A+ accredited."
+        subtitle="Veteran-owned roofing contractor with 500+ roofs installed. Full-service roofing including metal roofing, flat roof repair, gutter installation &amp; cleaning, siding, skylights, and chimney services. Storm damage restoration and insurance claim assistance. 5-star Google rating, BBB A+ accredited."
         backgroundImage={IMAGES.hero.roofTeam}
       />
       <Services
@@ -101,34 +101,54 @@ export default function HomePage() {
       {/* Full-Service Contractor Section - GBP Category Coverage */}
       <section className="py-12 bg-white">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-primary mb-4">
               Charlotte&apos;s Full-Service Roofing &amp; Exterior Contractor
             </h2>
             <p className="text-gray-600 mb-8">
               Best Roofing Now is more than just a roofing contractor. As a licensed general contractor and construction company,
-              we provide comprehensive exterior services to protect and beautify your home or business.
+              we provide comprehensive exterior services including metal roofing, gutter installation, siding, and storm damage restoration.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-left">
               <a href="/services/roof-repair" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Roof Repair Shop</span>
+                <span className="font-semibold text-primary">Roof Repair</span>
                 <p className="text-sm text-gray-500">Fast, reliable repairs</p>
               </a>
-              <a href="/services/gutters" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Gutter Service</span>
-                <p className="text-sm text-gray-500">Installation &amp; repair</p>
+              <a href="/services/metal-roofing" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Metal Roofing</span>
+                <p className="text-sm text-gray-500">Standing seam &amp; shingles</p>
+              </a>
+              <a href="/services/flat-roof-repair" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Flat Roof Repair</span>
+                <p className="text-sm text-gray-500">TPO, EPDM &amp; PVC</p>
+              </a>
+              <a href="/services/gutter-installation" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Gutter Installation</span>
+                <p className="text-sm text-gray-500">Seamless aluminum</p>
               </a>
               <a href="/services/gutter-cleaning" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
                 <span className="font-semibold text-primary">Gutter Cleaning</span>
-                <p className="text-sm text-gray-500">Professional cleaning</p>
+                <p className="text-sm text-gray-500">Professional service</p>
               </a>
-              <a href="/services/siding" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Siding Contractor</span>
-                <p className="text-sm text-gray-500">Vinyl &amp; fiber cement</p>
+              <a href="/services/gutter-guards" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Gutter Guards</span>
+                <p className="text-sm text-gray-500">Leaf protection</p>
+              </a>
+              <a href="/services/siding-installation" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Siding Installation</span>
+                <p className="text-sm text-gray-500">James Hardie certified</p>
+              </a>
+              <a href="/services/siding-repair" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Siding Repair</span>
+                <p className="text-sm text-gray-500">Color matching experts</p>
               </a>
               <a href="/services/building-restoration" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
                 <span className="font-semibold text-primary">Building Restoration</span>
                 <p className="text-sm text-gray-500">Storm &amp; fire damage</p>
+              </a>
+              <a href="/services/insurance-claims" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Insurance Claims</span>
+                <p className="text-sm text-gray-500">Claim assistance</p>
               </a>
               <a href="/services/skylight-installation" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
                 <span className="font-semibold text-primary">Skylight Contractor</span>
@@ -138,9 +158,11 @@ export default function HomePage() {
                 <span className="font-semibold text-primary">Chimney Services</span>
                 <p className="text-sm text-gray-500">Flashing &amp; caps</p>
               </a>
-              <a href="/services" className="bg-primary rounded-lg p-4 hover:bg-primary-dark transition-colors">
-                <span className="font-semibold text-white">View All Services</span>
-                <p className="text-sm text-white/80">25+ service options</p>
+            </div>
+            <div className="mt-6">
+              <a href="/services" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+                View All 27 Services
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
               </a>
             </div>
           </div>
