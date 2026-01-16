@@ -18,6 +18,8 @@ import {
   PanelTop,
   Square,
   ArrowRight,
+  FileText,
+  Shield,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
@@ -59,6 +61,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Flame,
   PanelTop,
   Square,
+  FileText,
+  Shield,
 };
 
 // Service categories for organized display
@@ -66,12 +70,12 @@ const serviceCategories = [
   {
     name: 'Core Roofing Services',
     description: 'Our primary roofing services for residential and commercial properties',
-    slugs: ['residential-roofing', 'commercial-roofing', 'roof-repair', 'roof-replacement', 'roof-inspection', 'emergency-roofing'],
+    slugs: ['residential-roofing', 'commercial-roofing', 'roof-repair', 'roof-replacement', 'roof-inspection', 'emergency-roofing', 'metal-roofing'],
   },
   {
     name: 'Storm Damage & Insurance',
-    description: 'Expert storm damage assessment and insurance claim assistance',
-    slugs: ['storm-damage'],
+    description: 'Expert storm damage assessment, insurance claim assistance, and building restoration',
+    slugs: ['storm-damage', 'insurance-claims', 'building-restoration'],
   },
   {
     name: 'Maintenance Programs',
@@ -79,13 +83,18 @@ const serviceCategories = [
     slugs: ['residential-roof-maintenance', 'commercial-roof-maintenance'],
   },
   {
-    name: 'Exterior Services',
-    description: 'Complete exterior protection including gutters, siding, and trim',
-    slugs: ['gutters', 'siding', 'soffit-fascia'],
+    name: 'Gutter Services',
+    description: 'Complete gutter solutions including installation, repair, cleaning, and protection',
+    slugs: ['gutters', 'gutter-installation', 'gutter-repair', 'gutter-cleaning', 'gutter-guards'],
+  },
+  {
+    name: 'Siding Services',
+    description: 'Professional siding installation, repair, and exterior protection',
+    slugs: ['siding', 'siding-installation', 'siding-repair', 'soffit-fascia'],
   },
   {
     name: 'Specialty Services',
-    description: 'Specialized roofing services for unique needs',
+    description: 'Specialized roofing services including skylights, ventilation, and chimney work',
     slugs: ['skylight-installation', 'roof-ventilation', 'chimney-services', 'flat-roof-repair'],
   },
 ];

@@ -21,6 +21,8 @@ import {
   Flame,
   PanelTop,
   Square,
+  FileText,
+  Shield,
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
@@ -59,6 +61,16 @@ const serviceImages: Record<string, string[]> = {
   'chimney-services': [IMAGES.hero.hero13, IMAGES.services.repairs, IMAGES.projects.work3, IMAGES.houses.house3, IMAGES.marketing.image6],
   'soffit-fascia': [IMAGES.hero.hero14, IMAGES.services.gutters, IMAGES.projects.work4, IMAGES.houses.modern2, IMAGES.marketing.image7],
   'flat-roof-repair': [IMAGES.hero.hero15, IMAGES.commercial.office, IMAGES.commercial.warehouse, IMAGES.projects.work5, IMAGES.marketing.image8],
+  // New services for GBP alignment
+  'metal-roofing': [IMAGES.hero.metalRoof, IMAGES.hero.hero4, IMAGES.houses.modern1, IMAGES.houses.modern2, IMAGES.projects.work1],
+  'gutter-cleaning': [IMAGES.hero.hero8, IMAGES.services.gutters, IMAGES.cleaning.softWash, IMAGES.cleaning.pressure, IMAGES.houses.house1],
+  'insurance-claims': [IMAGES.hero.hero7, IMAGES.projects.stormDamage1, IMAGES.services.stormDamage, IMAGES.services.inspection, IMAGES.marketing.image4],
+  'gutter-installation': [IMAGES.hero.hero8, IMAGES.services.gutters, IMAGES.houses.house2, IMAGES.houses.modern1, IMAGES.projects.work2],
+  'gutter-repair': [IMAGES.services.gutters, IMAGES.services.repairs, IMAGES.houses.house1, IMAGES.projects.work3, IMAGES.marketing.image5],
+  'gutter-guards': [IMAGES.hero.hero8, IMAGES.services.gutters, IMAGES.houses.house3, IMAGES.houses.modern2, IMAGES.projects.work4],
+  'siding-installation': [IMAGES.hero.hero9, IMAGES.services.siding, IMAGES.houses.house1, IMAGES.houses.modern1, IMAGES.projects.work5],
+  'siding-repair': [IMAGES.services.siding, IMAGES.services.repairs, IMAGES.problems.crackedSiding, IMAGES.houses.house2, IMAGES.marketing.image6],
+  'building-restoration': [IMAGES.hero.hero7, IMAGES.projects.stormDamage1, IMAGES.services.emergency, IMAGES.beforeAfter.general, IMAGES.marketing.image7],
 };
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -77,6 +89,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Flame,
   PanelTop,
   Square,
+  FileText,
+  Shield,
 };
 
 // Service-specific content
@@ -441,6 +455,205 @@ const serviceContent: Record<
       { question: 'What types of flat roofs do you repair?', answer: 'We repair all types: TPO, EPDM, PVC, modified bitumen, and built-up roofs. Our technicians are trained in all major flat roofing systems.' },
     ],
   },
+  // New services for GBP alignment
+  'metal-roofing': {
+    benefits: [
+      '50+ year lifespan - last roof you\'ll ever need',
+      'Reduces cooling costs by up to 25%',
+      'Superior wind resistance up to 140 mph',
+      '100% recyclable and eco-friendly',
+      'Fire resistant - Class A rating',
+      'Low maintenance requirements',
+    ],
+    process: [
+      { title: 'Consultation', description: 'Discuss your goals, budget, and metal roofing options.' },
+      { title: 'Material Selection', description: 'Choose from standing seam, metal shingles, or corrugated panels.' },
+      { title: 'Detailed Measurement', description: 'Precise measurements for custom panel fabrication.' },
+      { title: 'Professional Installation', description: 'Expert installation with proper underlayment and flashing.' },
+      { title: 'Final Inspection', description: 'Quality check and warranty registration.' },
+    ],
+    faqs: [
+      { question: 'Is metal roofing loud during rain?', answer: 'Not with proper installation! Modern metal roofs are installed over solid decking with underlayment, making them no louder than asphalt shingles.' },
+      { question: 'Will metal roofing attract lightning?', answer: 'No, metal roofing doesn\'t attract lightning any more than other roofing materials. If struck, metal actually disperses the energy safely and won\'t catch fire.' },
+      { question: 'How long does a metal roof last?', answer: 'Quality metal roofs last 50-70 years with minimal maintenance - 2-3 times longer than asphalt shingles. Many come with 50-year warranties.' },
+    ],
+  },
+  'gutter-cleaning': {
+    benefits: [
+      'Prevent water damage to foundation',
+      'Avoid basement flooding',
+      'Protect fascia from rot',
+      'Prevent pest infestations',
+      'Extend gutter lifespan',
+      'Maintain proper drainage',
+    ],
+    process: [
+      { title: 'Inspection', description: 'Assess gutter condition and debris buildup.' },
+      { title: 'Debris Removal', description: 'Hand-remove all leaves, twigs, and debris.' },
+      { title: 'Downspout Flush', description: 'Flush downspouts to ensure proper flow.' },
+      { title: 'System Check', description: 'Check for leaks, loose hangers, and damage.' },
+      { title: 'Cleanup', description: 'Remove all debris from your property.' },
+    ],
+    faqs: [
+      { question: 'How often should I have my gutters cleaned?', answer: 'We recommend twice yearly - in late spring after pollen season and late fall after leaves drop. Homes with many trees may need more frequent cleaning.' },
+      { question: 'Can clogged gutters really damage my home?', answer: 'Yes! Clogged gutters cause water to overflow, damaging your foundation, causing basement flooding, rotting fascia boards, and creating conditions for mold growth.' },
+      { question: 'Do you offer gutter cleaning maintenance plans?', answer: 'Yes! We offer annual and semi-annual gutter cleaning plans at discounted rates. Ask about our maintenance programs.' },
+    ],
+  },
+  'insurance-claims': {
+    benefits: [
+      'Free damage assessment and documentation',
+      'Work directly with your insurance company',
+      'Meet with adjusters on your behalf',
+      'Supplement underpaid claims',
+      'No upfront costs in most cases',
+      'Maximize your claim settlement',
+    ],
+    process: [
+      { title: 'Free Inspection', description: 'Thorough damage assessment with photo documentation.' },
+      { title: 'Claim Filing Assistance', description: 'Help you file your claim with proper documentation.' },
+      { title: 'Adjuster Meeting', description: 'Meet with insurance adjuster to review damage.' },
+      { title: 'Scope Agreement', description: 'Work with insurance to agree on repair scope.' },
+      { title: 'Quality Restoration', description: 'Complete repairs to pre-storm condition.' },
+    ],
+    faqs: [
+      { question: 'Will you help me file my insurance claim?', answer: 'Absolutely! We handle the entire process - from initial documentation to adjuster meetings to final settlement. We advocate for you throughout.' },
+      { question: 'What if my insurance denies my claim?', answer: 'We help appeal denied claims with additional documentation and evidence. Our thorough documentation often helps overturn initial denials.' },
+      { question: 'Do I have to pay anything upfront?', answer: 'For insurance claims, you typically only pay your deductible. We work directly with your insurance company and receive payment from them after repairs are complete.' },
+    ],
+  },
+  'gutter-installation': {
+    benefits: [
+      'Custom seamless gutters - no leaky joints',
+      'Wide color selection to match your home',
+      'Proper sizing for maximum water flow',
+      'Professional downspout placement',
+      'Protect foundation from water damage',
+      'Increase curb appeal',
+    ],
+    process: [
+      { title: 'Assessment', description: 'Evaluate your home\'s drainage needs and roof layout.' },
+      { title: 'Material Selection', description: 'Choose gutter size, color, and style.' },
+      { title: 'On-Site Fabrication', description: 'Custom seamless gutters made on your property.' },
+      { title: 'Professional Installation', description: 'Secure mounting with proper slope for drainage.' },
+      { title: 'Flow Testing', description: 'Test system to ensure proper water flow.' },
+    ],
+    faqs: [
+      { question: 'Why are seamless gutters better?', answer: 'Seamless gutters have no joints along their length, eliminating the most common leak points. They\'re custom-made on-site to fit your home perfectly.' },
+      { question: 'What size gutters do I need?', answer: 'Most homes use 5-inch gutters. Larger homes or those with steep roofs may benefit from 6-inch gutters. We\'ll recommend the right size for your needs.' },
+      { question: 'How long do new gutters last?', answer: 'Quality aluminum gutters last 20-30 years with proper maintenance. We also offer copper gutters that can last 50+ years.' },
+    ],
+  },
+  'gutter-repair': {
+    benefits: [
+      'Fix leaks before water damage spreads',
+      'Reattach sagging sections',
+      'Replace damaged sections',
+      'Reseal leaky joints and seams',
+      'Repair or replace downspouts',
+      'Extend gutter system life',
+    ],
+    process: [
+      { title: 'Inspection', description: 'Identify all gutter issues and damage.' },
+      { title: 'Repair Assessment', description: 'Determine if repair or replacement is best.' },
+      { title: 'Expert Repair', description: 'Fix leaks, reattach sections, seal seams.' },
+      { title: 'Flow Test', description: 'Verify proper drainage after repairs.' },
+      { title: 'Maintenance Tips', description: 'Guidance on keeping gutters functioning.' },
+    ],
+    faqs: [
+      { question: 'Can you repair just a section of my gutters?', answer: 'Yes! We often repair individual sections rather than replacing the entire system. We\'ll give you an honest assessment of what\'s needed.' },
+      { question: 'Why are my gutters pulling away from the house?', answer: 'Usually due to failed hangers, rotted fascia, or ice/debris weight. We can reattach gutters and address underlying issues.' },
+      { question: 'Should I repair or replace my old gutters?', answer: 'It depends on the extent of damage and age. We\'ll give you an honest recommendation - sometimes repairs are all you need, sometimes replacement is more cost-effective.' },
+    ],
+  },
+  'gutter-guards': {
+    benefits: [
+      'Eliminate gutter cleaning hassles',
+      'Prevent clogs and overflow',
+      'Keep pests out of gutters',
+      'Prevent ice dam formation',
+      'Extend gutter lifespan',
+      'Reduce maintenance costs',
+    ],
+    process: [
+      { title: 'Gutter Assessment', description: 'Inspect existing gutters and debris challenges.' },
+      { title: 'Product Selection', description: 'Recommend best guard type for your situation.' },
+      { title: 'Gutter Cleaning', description: 'Thoroughly clean gutters before installation.' },
+      { title: 'Guard Installation', description: 'Secure guards with proper fit and slope.' },
+      { title: 'Performance Check', description: 'Test water flow through guard system.' },
+    ],
+    faqs: [
+      { question: 'Do gutter guards really work?', answer: 'Quality gutter guards significantly reduce debris buildup and maintenance. The key is choosing the right type for your specific trees and conditions.' },
+      { question: 'What type of gutter guard is best?', answer: 'Micro-mesh guards work best for pine needles and small debris. Solid covers with surface tension are great for leaves. We\'ll recommend the best option for your home.' },
+      { question: 'Will I never have to clean my gutters again?', answer: 'Guards dramatically reduce cleaning, but some maintenance may still be needed occasionally. Most homeowners go from twice-yearly cleaning to once every few years.' },
+    ],
+  },
+  'siding-installation': {
+    benefits: [
+      'Transform your home\'s appearance',
+      'Improve energy efficiency',
+      'Low maintenance options available',
+      'Weather protection for decades',
+      'Increase property value',
+      'Multiple style and color options',
+    ],
+    process: [
+      { title: 'Consultation', description: 'Discuss your vision, budget, and material preferences.' },
+      { title: 'Material Selection', description: 'Choose from vinyl, fiber cement, wood, or other options.' },
+      { title: 'Site Preparation', description: 'Remove old siding and install moisture barriers.' },
+      { title: 'Expert Installation', description: 'Precise installation with attention to detail.' },
+      { title: 'Finishing Touches', description: 'Install trim, caulk, and final inspection.' },
+    ],
+    faqs: [
+      { question: 'Which siding material is best for Charlotte?', answer: 'Fiber cement (James Hardie) is excellent for our humid climate - it resists moisture, insects, and rot. Insulated vinyl is also popular for its energy efficiency and low cost.' },
+      { question: 'How long does new siding last?', answer: 'Vinyl lasts 20-40 years, fiber cement 50+ years, and properly maintained wood 20-40 years. All our siding comes with manufacturer warranties.' },
+      { question: 'Can you install siding over existing siding?', answer: 'Sometimes, but we usually recommend removing old siding to inspect sheathing for damage and ensure proper installation. We\'ll assess your specific situation.' },
+    ],
+  },
+  'siding-repair': {
+    benefits: [
+      'Match existing siding colors and styles',
+      'Fix damage before it spreads',
+      'Prevent moisture intrusion',
+      'Restore curb appeal',
+      'More affordable than full replacement',
+      'Quick turnaround times',
+    ],
+    process: [
+      { title: 'Damage Assessment', description: 'Identify all damaged areas and underlying issues.' },
+      { title: 'Material Matching', description: 'Source matching siding materials and colors.' },
+      { title: 'Remove Damaged Sections', description: 'Carefully remove damaged siding.' },
+      { title: 'Repair & Replace', description: 'Install new sections with proper sealing.' },
+      { title: 'Quality Check', description: 'Ensure seamless appearance and weather tightness.' },
+    ],
+    faqs: [
+      { question: 'Can you match my existing siding color?', answer: 'In most cases, yes. We have access to extensive color libraries and can often find exact or very close matches. For older siding, we\'ll discuss your options.' },
+      { question: 'Is it worth repairing or should I replace all the siding?', answer: 'It depends on the extent of damage and siding age. If damage is localized and siding is in good condition overall, repair is cost-effective. We\'ll give you an honest assessment.' },
+      { question: 'What causes siding damage?', answer: 'Common causes include storm damage (hail, wind, debris), moisture intrusion, pest damage, sun fading, and impact from lawn equipment. We\'ll identify the cause and prevent recurrence.' },
+    ],
+  },
+  'building-restoration': {
+    benefits: [
+      'Single point of contact for all restoration',
+      'Work directly with your insurance',
+      'Emergency response available 24/7',
+      'Comprehensive exterior restoration',
+      'Licensed and insured professionals',
+      'Restore to pre-loss condition or better',
+    ],
+    process: [
+      { title: 'Emergency Response', description: 'Immediate action to secure and protect your property.' },
+      { title: 'Damage Assessment', description: 'Comprehensive evaluation and documentation.' },
+      { title: 'Insurance Coordination', description: 'Work with your insurance for proper coverage.' },
+      { title: 'Restoration Plan', description: 'Develop detailed plan for complete restoration.' },
+      { title: 'Quality Restoration', description: 'Execute repairs to restore your property fully.' },
+    ],
+    faqs: [
+      { question: 'What types of damage do you restore?', answer: 'We handle storm damage (hail, wind, tornado), fire damage to exteriors, water damage from roof leaks, and other catastrophic events affecting your roof, siding, gutters, and exterior.' },
+      { question: 'Do you work with insurance companies?', answer: 'Yes! We have extensive experience with insurance claims and handle all communication, documentation, and coordination with your insurance company.' },
+      { question: 'How quickly can you respond to emergencies?', answer: 'We offer 24/7 emergency response with typical arrival within 1-4 hours. We\'ll immediately secure your property to prevent further damage.' },
+    ],
+  },
 };
 
 // Default content for services without specific content
@@ -471,6 +684,35 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Title qualifiers for better GBP alignment and SEO
+const titleQualifiers: Record<string, string> = {
+  'residential-roofing': 'Expert Home Roofing Services',
+  'commercial-roofing': 'Flat Roof & TPO Specialists',
+  'roof-repair': 'Fast & Reliable Service',
+  'roof-replacement': 'Premium Materials & Warranties',
+  'roof-inspection': 'Free No-Obligation Assessment',
+  'emergency-roofing': '24/7 Rapid Response',
+  'storm-damage': 'Insurance Claim Experts',
+  'gutters': 'Installation, Repair & Guards',
+  'siding': 'Vinyl & Fiber Cement Experts',
+  'residential-roof-maintenance': 'Annual Programs',
+  'commercial-roof-maintenance': 'Bi-Annual Inspections',
+  'skylight-installation': 'VELUX Certified Contractor',
+  'roof-ventilation': 'Improve Energy Efficiency',
+  'chimney-services': 'Flashing & Cap Repair',
+  'soffit-fascia': 'Protect Your Roof Edge',
+  'flat-roof-repair': 'TPO, EPDM & PVC Experts',
+  'metal-roofing': 'Standing Seam & Metal Shingles',
+  'gutter-cleaning': 'Professional Debris Removal',
+  'insurance-claims': 'Storm Damage Claim Experts',
+  'gutter-installation': 'Seamless Aluminum Gutters',
+  'gutter-repair': 'Fix Leaks & Sagging Fast',
+  'gutter-guards': 'LeafGuard & Mesh Systems',
+  'siding-installation': 'James Hardie Certified',
+  'siding-repair': 'Color Matching Experts',
+  'building-restoration': 'Storm & Fire Damage Recovery',
+};
+
 export async function generateStaticParams() {
   return SERVICES.map((service) => ({
     slug: service.slug,
@@ -488,16 +730,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Get service hero image for OpenGraph
   const images = serviceImages[slug] || [];
   const ogImage = images[0] || IMAGES.hero.hero1;
+  const qualifier = titleQualifiers[slug] || 'Professional Service';
 
   return {
-    title: `${service.title} Charlotte NC`,
+    title: `${service.title} Charlotte NC | ${qualifier}`,
     description: `${service.description} Serving Charlotte and surrounding areas. Free estimates, quality workmanship, and satisfaction guaranteed.`,
     keywords: service.keywords,
     alternates: {
       canonical: `${SITE_CONFIG.url}/services/${slug}`,
     },
     openGraph: {
-      title: `${service.title} in Charlotte NC`,
+      title: `${service.title} in Charlotte NC | ${qualifier}`,
       description: service.description,
       url: `${SITE_CONFIG.url}/services/${slug}`,
       type: 'website',
@@ -512,7 +755,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${service.title} in Charlotte NC`,
+      title: `${service.title} in Charlotte NC | ${qualifier}`,
       description: service.description,
       images: [ogImage],
     },
@@ -833,7 +1076,7 @@ export default async function ServicePage({ params }: PageProps) {
       />
 
       {/* Related Resources - Cross-links based on service type */}
-      {(slug === 'roof-replacement' || slug === 'residential-roofing' || slug === 'commercial-roofing' || slug === 'roof-repair') && (
+      {(slug === 'roof-replacement' || slug === 'residential-roofing' || slug === 'commercial-roofing' || slug === 'roof-repair' || slug === 'metal-roofing') && (
         <section className="section bg-white">
           <div className="container">
             <h2 className="text-3xl font-bold text-primary text-center mb-8">
@@ -841,7 +1084,7 @@ export default async function ServicePage({ params }: PageProps) {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Materials - for roof replacement and residential roofing */}
-              {(slug === 'roof-replacement' || slug === 'residential-roofing') && (
+              {(slug === 'roof-replacement' || slug === 'residential-roofing' || slug === 'metal-roofing') && (
                 <div className="bg-light rounded-xl p-6">
                   <h3 className="font-bold text-dark mb-4">Roofing Materials</h3>
                   <ul className="space-y-2">
@@ -891,7 +1134,7 @@ export default async function ServicePage({ params }: PageProps) {
               )}
 
               {/* Comparisons - for roof replacement */}
-              {slug === 'roof-replacement' && (
+              {(slug === 'roof-replacement' || slug === 'metal-roofing') && (
                 <div className="bg-light rounded-xl p-6">
                   <h3 className="font-bold text-dark mb-4">Material Comparisons</h3>
                   <ul className="space-y-2">
@@ -916,7 +1159,7 @@ export default async function ServicePage({ params }: PageProps) {
               )}
 
               {/* Brands - for roof replacement, residential, and commercial */}
-              {(slug === 'roof-replacement' || slug === 'residential-roofing' || slug === 'commercial-roofing') && (
+              {(slug === 'roof-replacement' || slug === 'residential-roofing' || slug === 'commercial-roofing' || slug === 'metal-roofing') && (
                 <div className="bg-light rounded-xl p-6">
                   <h3 className="font-bold text-dark mb-4">Top Brands We Install</h3>
                   <ul className="space-y-2">
@@ -972,6 +1215,115 @@ export default async function ServicePage({ params }: PageProps) {
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related Services - Gutter Services Cross-Links */}
+      {(slug === 'gutters' || slug === 'gutter-installation' || slug === 'gutter-repair' || slug === 'gutter-cleaning' || slug === 'gutter-guards') && (
+        <section className="section bg-white">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-primary text-center mb-8">
+              Related Gutter Services
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {slug !== 'gutter-installation' && (
+                <Link href="/services/gutter-installation" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Gutter Installation</h3>
+                  <p className="text-gray text-sm">Custom seamless gutters made on-site for a perfect fit.</p>
+                </Link>
+              )}
+              {slug !== 'gutter-repair' && (
+                <Link href="/services/gutter-repair" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Gutter Repair</h3>
+                  <p className="text-gray text-sm">Fix leaks, sagging, and damage before water damage spreads.</p>
+                </Link>
+              )}
+              {slug !== 'gutter-cleaning' && (
+                <Link href="/services/gutter-cleaning" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Gutter Cleaning</h3>
+                  <p className="text-gray text-sm">Professional debris removal to keep gutters flowing.</p>
+                </Link>
+              )}
+              {slug !== 'gutter-guards' && (
+                <Link href="/services/gutter-guards" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Gutter Guards</h3>
+                  <p className="text-gray text-sm">Eliminate gutter cleaning with quality protection systems.</p>
+                </Link>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related Services - Siding Services Cross-Links */}
+      {(slug === 'siding' || slug === 'siding-installation' || slug === 'siding-repair' || slug === 'soffit-fascia') && (
+        <section className="section bg-white">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-primary text-center mb-8">
+              Related Exterior Services
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {slug !== 'siding-installation' && (
+                <Link href="/services/siding-installation" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Siding Installation</h3>
+                  <p className="text-gray text-sm">Transform your home with new vinyl or fiber cement siding.</p>
+                </Link>
+              )}
+              {slug !== 'siding-repair' && (
+                <Link href="/services/siding-repair" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Siding Repair</h3>
+                  <p className="text-gray text-sm">Fix damaged siding with expert color matching.</p>
+                </Link>
+              )}
+              {slug !== 'soffit-fascia' && (
+                <Link href="/services/soffit-fascia" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Soffit & Fascia</h3>
+                  <p className="text-gray text-sm">Protect your roof edge and improve ventilation.</p>
+                </Link>
+              )}
+              <Link href="/services/gutters" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Gutter Services</h3>
+                <p className="text-gray text-sm">Complete gutter solutions for your exterior protection.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related Services - Storm & Insurance Cross-Links */}
+      {(slug === 'storm-damage' || slug === 'insurance-claims' || slug === 'building-restoration' || slug === 'emergency-roofing') && (
+        <section className="section bg-white">
+          <div className="container">
+            <h2 className="text-3xl font-bold text-primary text-center mb-8">
+              Related Storm & Insurance Services
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {slug !== 'storm-damage' && (
+                <Link href="/services/storm-damage" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Storm Damage</h3>
+                  <p className="text-gray text-sm">Expert storm damage assessment and restoration.</p>
+                </Link>
+              )}
+              {slug !== 'insurance-claims' && (
+                <Link href="/services/insurance-claims" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Insurance Claims</h3>
+                  <p className="text-gray text-sm">We handle the insurance process from start to finish.</p>
+                </Link>
+              )}
+              {slug !== 'building-restoration' && (
+                <Link href="/services/building-restoration" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Building Restoration</h3>
+                  <p className="text-gray text-sm">Complete restoration for storm, fire, and water damage.</p>
+                </Link>
+              )}
+              {slug !== 'emergency-roofing' && (
+                <Link href="/services/emergency-roofing" className="bg-light rounded-xl p-6 hover:shadow-md transition-shadow group">
+                  <h3 className="font-bold text-dark mb-2 group-hover:text-primary">Emergency Services</h3>
+                  <p className="text-gray text-sm">24/7 emergency response to protect your property.</p>
+                </Link>
               )}
             </div>
           </div>

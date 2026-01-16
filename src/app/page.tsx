@@ -39,10 +39,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Roofing Now | Charlotte's Top-Rated Roofing Company",
     description: 'Charlotte\'s top-rated roofing contractor. 5-star Google rating, veteran-owned, BBB A+ rated. Free roof inspections and estimates.',
-    url: SITE_CONFIG.url,
+    url: 'https://www.bestroofingnow.com/',
   },
   alternates: {
-    canonical: SITE_CONFIG.url,
+    canonical: 'https://www.bestroofingnow.com/',
   },
 };
 
@@ -87,16 +87,65 @@ export default function HomePage() {
       <SpeakableContent />
       <Hero
         title="Best Roofing Now - Charlotte's Top-Rated Roofing Company"
-        subtitle="Veteran-owned roofing company with 500+ roofs installed. 5-star Google rating, BBB A+ accredited. Free inspections, honest assessments, and quality craftsmanship guaranteed."
+        subtitle="Veteran-owned roofing contractor with 500+ roofs installed. Full-service roofing, siding, gutters, skylights, and chimney services. Storm damage restoration and insurance claim experts. 5-star Google rating, BBB A+ accredited."
         backgroundImage={IMAGES.hero.roofTeam}
       />
       <Services
         title="Our Roofing Services"
-        subtitle="Comprehensive roofing solutions for residential and commercial properties."
+        subtitle="Comprehensive roofing solutions from Charlotte's trusted general contractor. Roof repair, replacement, gutter services, siding installation, skylights, chimney repair, and building restoration for residential and commercial properties."
         limit={9}
         showAll={false}
       />
       <WhyChooseUs />
+
+      {/* Full-Service Contractor Section - GBP Category Coverage */}
+      <section className="py-12 bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-primary mb-4">
+              Charlotte&apos;s Full-Service Roofing &amp; Exterior Contractor
+            </h2>
+            <p className="text-gray-600 mb-8">
+              Best Roofing Now is more than just a roofing contractor. As a licensed general contractor and construction company,
+              we provide comprehensive exterior services to protect and beautify your home or business.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-left">
+              <a href="/services/roof-repair" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Roof Repair Shop</span>
+                <p className="text-sm text-gray-500">Fast, reliable repairs</p>
+              </a>
+              <a href="/services/gutters" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Gutter Service</span>
+                <p className="text-sm text-gray-500">Installation &amp; repair</p>
+              </a>
+              <a href="/services/gutter-cleaning" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Gutter Cleaning</span>
+                <p className="text-sm text-gray-500">Professional cleaning</p>
+              </a>
+              <a href="/services/siding" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Siding Contractor</span>
+                <p className="text-sm text-gray-500">Vinyl &amp; fiber cement</p>
+              </a>
+              <a href="/services/building-restoration" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Building Restoration</span>
+                <p className="text-sm text-gray-500">Storm &amp; fire damage</p>
+              </a>
+              <a href="/services/skylight-installation" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Skylight Contractor</span>
+                <p className="text-sm text-gray-500">VELUX certified</p>
+              </a>
+              <a href="/services/chimney-services" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
+                <span className="font-semibold text-primary">Chimney Services</span>
+                <p className="text-sm text-gray-500">Flashing &amp; caps</p>
+              </a>
+              <a href="/services" className="bg-primary rounded-lg p-4 hover:bg-primary-dark transition-colors">
+                <span className="font-semibold text-white">View All Services</span>
+                <p className="text-sm text-white/80">25+ service options</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Financing Badge Section */}
       <section className="py-8 bg-gray-50">
