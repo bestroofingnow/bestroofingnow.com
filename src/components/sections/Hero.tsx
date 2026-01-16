@@ -57,7 +57,7 @@ export function Hero({
         />
       </div>
 
-      {/* Background Image - LCP element */}
+      {/* Background Image - LCP element - optimized for mobile performance */}
       {backgroundImage && (
         <div className="absolute inset-0">
           <Image
@@ -67,8 +67,8 @@ export function Hero({
             className="object-cover opacity-20"
             priority
             fetchPriority="high"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-            quality={60}
+            sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1920px"
+            quality={50}
             placeholder="blur"
             blurDataURL={HERO_BLUR_DATA_URL}
           />
@@ -78,10 +78,9 @@ export function Hero({
       <div className="container relative z-10">
         <div className="py-16 md:py-20 lg:py-28">
           <div className="max-w-3xl">
-            {/* Trust Badge - CSS animation */}
+            {/* Trust Badge - no animation delay for faster FCP */}
             <div
-              className="inline-flex items-center gap-2 bg-white/15 md:bg-white/10 md:backdrop-blur-sm rounded-full px-4 py-2 mb-4 md:mb-6 animate-fade-in-up"
-              style={{ animationDelay: '0s' }}
+              className="inline-flex items-center gap-2 bg-white/15 md:bg-white/10 md:backdrop-blur-sm rounded-full px-4 py-2 mb-4 md:mb-6"
               itemProp="aggregateRating"
               itemScope
               itemType="https://schema.org/AggregateRating"
@@ -99,18 +98,16 @@ export function Hero({
               </span>
             </div>
 
-            {/* Headline - CSS animation */}
+            {/* Headline - visible immediately for faster LCP */}
             <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight animate-fade-in-up"
-              style={{ animationDelay: '0.05s' }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight"
             >
               {title}
             </h1>
 
-            {/* Subheadline - CSS animation */}
+            {/* Subheadline - visible immediately */}
             <p
-              className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed animate-fade-in-up"
-              style={{ animationDelay: '0.1s' }}
+              className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed"
             >
               {subtitle}
             </p>
@@ -118,14 +115,13 @@ export function Hero({
             {/* CTA Buttons - CSS animation */}
             <HeroCTA />
 
-            {/* Trust Signals - CSS animation */}
+            {/* Trust Signals - visible immediately */}
             {showTrustBadges && (
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-                {trustSignals.map((signal, i) => (
+                {trustSignals.map((signal) => (
                   <div
                     key={signal.text}
-                    className="flex items-center gap-2 bg-white/15 md:bg-white/10 md:backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3 cursor-default hover:bg-white/20 transition-colors animate-fade-in-up"
-                    style={{ animationDelay: `${0.2 + i * 0.05}s` }}
+                    className="flex items-center gap-2 bg-white/15 md:bg-white/10 md:backdrop-blur-sm rounded-lg px-3 md:px-4 py-2 md:py-3 cursor-default hover:bg-white/20 transition-colors"
                   >
                     <signal.icon className="w-4 h-4 md:w-5 md:h-5 text-accent-light flex-shrink-0" aria-hidden="true" />
                     <span className="text-white text-xs md:text-sm font-medium">{signal.text}</span>

@@ -92,10 +92,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Mobile performance: Faster animations and disable expensive effects */
 @media (max-width: 767px) {
-  .animate-fade-in { animation-duration: 0.3s; }
-  .animate-fade-in-up { animation-duration: 0.3s; }
+  /* CRITICAL: Disable all non-essential animations for faster FCP/Speed Index */
+  .animate-fade-in { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .animate-fade-in-up { animation: none !important; opacity: 1 !important; transform: none !important; }
   .animate-ping { animation: none !important; }
   .animate-gradient-shift { animation: none !important; }
+
+  /* CRITICAL: Disable backdrop-blur on mobile - major performance killer */
+  .backdrop-blur-sm, .backdrop-blur-md, .backdrop-blur { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
 
   /* Disable hover transforms on mobile */
   .card:hover { transform: none; box-shadow: var(--shadow-md); }
@@ -119,6 +123,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   /* Optimize images on mobile */
   img { content-visibility: auto; }
+
+  /* Disable mix-blend-mode for better performance */
+  .mix-blend-difference { mix-blend-mode: normal !important; }
 }
 
 /* Small mobile (< 480px) */

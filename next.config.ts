@@ -40,11 +40,15 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-    // Optimize image loading for performance
+    // Optimize image loading for performance - prefer AVIF for best compression
     formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    // Smaller device sizes for faster mobile loading
+    deviceSizes: [320, 480, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
+    // Reduce default quality for faster loading
+    dangerouslyAllowSVG: false,
+    contentDispositionType: 'inline',
   },
 
   async redirects() {

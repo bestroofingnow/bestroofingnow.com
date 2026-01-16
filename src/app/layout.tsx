@@ -7,8 +7,8 @@ import { Footer } from '@/components/layout/Footer';
 import { StickyCTA } from '@/components/sections/CTASection';
 import { LocalBusinessSchema, WebSiteSchema, HowToGetRoofEstimateSchema, FreeInspectionOfferSchema, ReviewsSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
-import CustomCursor from '@/components/ui/CustomCursor';
 import { EstimateProvider } from '@/components/estimate';
+import { LazyCustomCursor } from '@/components/ui/LazyCustomCursor';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -125,6 +125,13 @@ export default function RootLayout({
         {/* CRITICAL: Preconnect to CMS for hero images - most important for LCP */}
         <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
+        {/* Preload hero image for faster LCP - this is typically the largest contentful paint element */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png"
+          fetchPriority="high"
+        />
         {/* Secondary preconnects */}
         <link rel="preconnect" href="https://bestroofingnow.com" />
         <link rel="dns-prefetch" href="https://bestroofingnow.com" />
@@ -145,7 +152,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <EstimateProvider>
-          <CustomCursor />
+          <LazyCustomCursor />
           {/* Skip to main content link for accessibility */}
           <a
             href="#main-content"

@@ -8,7 +8,7 @@ import { ServiceAreas } from '@/components/sections/ServiceAreas';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import { ProjectGallery } from '@/components/sections/ProjectGallery';
-import { InteractiveServiceMap } from '@/components/ui/InteractiveServiceMap';
+import { LazyInteractiveServiceMap } from '@/components/ui/LazyInteractiveServiceMap';
 import {
   FAQSchema,
   BreadcrumbSchema,
@@ -196,7 +196,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <InteractiveServiceMap />
+      <LazyInteractiveServiceMap />
       <ServiceAreas />
       <FAQ />
       <CTASection

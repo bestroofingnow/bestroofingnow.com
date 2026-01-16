@@ -83,7 +83,7 @@ export function Header() {
       >
         <div className="container">
           <div className="flex items-center justify-between h-28">
-            {/* Logo */}
+            {/* Logo - eager loading but lower priority than hero image for better LCP */}
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
@@ -91,7 +91,8 @@ export function Header() {
                 width={360}
                 height={160}
                 className="h-24 w-auto"
-                priority
+                loading="eager"
+                fetchPriority="low"
               />
             </Link>
 

@@ -9,8 +9,7 @@ export function HeroCTA() {
 
   return (
     <div
-      className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 animate-fade-in-up"
-      style={{ animationDelay: '0.15s' }}
+      className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12"
     >
       <button
         onClick={openEstimateModal}
