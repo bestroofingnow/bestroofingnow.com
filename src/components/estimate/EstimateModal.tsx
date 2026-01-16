@@ -498,7 +498,12 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
       />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-auto">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="estimate-modal-title"
+        className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-auto"
+      >
         {/* Close button */}
         <button
           onClick={onClose}
@@ -516,7 +521,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Home className="w-8 h-8 text-primary" />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              <h2 id="estimate-modal-title" className="text-2xl font-bold text-gray-900 mb-2">
                 Get Your Free Roof Estimate
               </h2>
               <p className="text-gray-600">
@@ -618,11 +623,13 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               <p className="text-gray-600 text-sm">Select the material you&apos;re considering</p>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-3" role="group" aria-label="Roof type options">
               {ROOF_TYPES.map((type) => (
                 <button
                   key={type.id}
                   onClick={() => setRoofType(type.id)}
+                  aria-pressed={roofType === type.id}
+                  aria-label={`${type.name}: ${type.description}`}
                   className={`p-4 rounded-xl border-2 text-left transition ${
                     roofType === type.id
                       ? 'border-primary bg-primary/5'
@@ -670,7 +677,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             </div>
 
             {/* Pitch diagrams */}
-            <div className="grid grid-cols-5 gap-2 mb-4">
+            <div className="grid grid-cols-5 gap-2 mb-4" role="group" aria-label="Roof pitch visual options">
               {[
                 { id: 'easily-walkable', angle: 15, label: 'EASILY\nWALKABLE' },
                 { id: 'barely-walkable', angle: 25, label: 'BARELY\nWALKABLE' },
@@ -681,6 +688,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 <button
                   key={pitch.id}
                   onClick={() => setSteepness(pitch.id)}
+                  aria-pressed={steepness === pitch.id}
+                  aria-label={`Roof pitch: ${pitch.label.replace('\n', ' ')}`}
                   className={`p-2 rounded-lg border-2 transition ${
                     steepness === pitch.id
                       ? 'border-primary bg-primary/5'
@@ -705,18 +714,20 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             </div>
 
             {/* Radio options */}
-            <div className="space-y-2">
+            <div className="space-y-2" role="radiogroup" aria-label="Roof steepness options">
               {STEEPNESS_OPTIONS.map((option) => (
                 <button
                   key={option.id}
                   onClick={() => setSteepness(option.id)}
+                  role="radio"
+                  aria-checked={steepness === option.id}
                   className={`w-full p-3 rounded-lg border-2 text-left transition flex items-center gap-3 ${
                     steepness === option.id
                       ? 'border-primary bg-primary/5'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
-                  <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
+                  <div aria-hidden="true" className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
                     steepness === option.id ? 'border-primary' : 'border-gray-300'
                   }`}>
                     {steepness === option.id && <div className="w-2 h-2 rounded-full bg-primary" />}
@@ -761,10 +772,12 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             </div>
 
             {/* Roof style diagrams - top row */}
-            <div className="grid grid-cols-3 gap-2 mb-2">
+            <div className="grid grid-cols-3 gap-2 mb-2" role="group" aria-label="Roof complexity visual options">
               {/* Simple */}
               <button
                 onClick={() => setComplexity('simple')}
+                aria-pressed={complexity === 'simple'}
+                aria-label="Simple roof style"
                 className={`p-3 rounded-lg border-2 transition ${
                   complexity === 'simple'
                     ? 'border-primary bg-primary/5'
@@ -785,6 +798,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               {/* Hip Roof */}
               <button
                 onClick={() => setComplexity('hip-roof')}
+                aria-pressed={complexity === 'hip-roof'}
+                aria-label="Hip roof style"
                 className={`p-3 rounded-lg border-2 transition ${
                   complexity === 'hip-roof'
                     ? 'border-primary bg-primary/5'
@@ -805,6 +820,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               {/* Hip Roof/Complex */}
               <button
                 onClick={() => setComplexity('hip-complex')}
+                aria-pressed={complexity === 'hip-complex'}
+                aria-label="Hip roof with complex features"
                 className={`p-3 rounded-lg border-2 transition ${
                   complexity === 'hip-complex'
                     ? 'border-primary bg-primary/5'
@@ -830,6 +847,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               {/* Complex Roof */}
               <button
                 onClick={() => setComplexity('complex')}
+                aria-pressed={complexity === 'complex'}
+                aria-label="Complex roof with multiple sections"
                 className={`p-3 rounded-lg border-2 transition ${
                   complexity === 'complex'
                     ? 'border-primary bg-primary/5'
@@ -853,6 +872,8 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               {/* Castle Roof */}
               <button
                 onClick={() => setComplexity('castle')}
+                aria-pressed={complexity === 'castle'}
+                aria-label="Castle style roof - most complex"
                 className={`p-3 rounded-lg border-2 transition ${
                   complexity === 'castle'
                     ? 'border-primary bg-primary/5'
@@ -879,18 +900,20 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             </div>
 
             {/* Radio options */}
-            <div className="space-y-2">
+            <div className="space-y-2" role="radiogroup" aria-label="Roof complexity options">
               {COMPLEXITY_OPTIONS.map((option) => (
                 <button
                   key={option.id}
                   onClick={() => setComplexity(option.id)}
+                  role="radio"
+                  aria-checked={complexity === option.id}
                   className={`w-full p-3 rounded-lg border-2 text-left transition flex items-center gap-3 ${
                     complexity === option.id
                       ? 'border-primary bg-primary/5'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
-                  <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
+                  <div aria-hidden="true" className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
                     complexity === option.id ? 'border-primary' : 'border-gray-300'
                   }`}>
                     {complexity === option.id && <div className="w-2 h-2 rounded-full bg-primary" />}
@@ -903,6 +926,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             <div className="flex gap-3 mt-6">
               <button
                 onClick={goBack}
+                aria-label="Go back to previous step"
                 className="flex-1 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2"
               >
                 <ChevronLeft className="w-5 h-5" aria-hidden="true" />
@@ -934,18 +958,20 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               <p className="text-gray-600 text-sm">This affects equipment and safety requirements</p>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-3" role="radiogroup" aria-label="Number of stories options">
               {STORIES_OPTIONS.map((option) => (
                 <button
                   key={option.id}
                   onClick={() => setStories(option.id)}
+                  role="radio"
+                  aria-checked={stories === option.id}
                   className={`w-full p-4 rounded-xl border-2 text-left transition flex items-center gap-4 ${
                     stories === option.id
                       ? 'border-primary bg-primary/5'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
-                  <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                  <div aria-hidden="true" className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
                     stories === option.id ? 'border-primary' : 'border-gray-300'
                   }`}>
                     {stories === option.id && <div className="w-3 h-3 rounded-full bg-primary" />}
@@ -958,6 +984,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             <div className="flex gap-3 mt-6">
               <button
                 onClick={goBack}
+                aria-label="Go back to previous step"
                 className="flex-1 py-3 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition flex items-center justify-center gap-2"
               >
                 <ChevronLeft className="w-5 h-5" aria-hidden="true" />
@@ -1242,15 +1269,17 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               <p className="text-sm text-gray-600 mb-2 text-center">A roofing specialist will contact you shortly!</p>
               <a
                 href={`tel:${SITE_CONFIG.phoneClean}`}
+                aria-label={`Call us at ${SITE_CONFIG.phone}`}
                 className="flex items-center justify-center gap-2 text-xl font-bold text-primary hover:text-primary-dark"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5" aria-hidden="true" />
                 {SITE_CONFIG.phone}
               </a>
             </div>
 
             <button
               onClick={() => setStep('success')}
+              aria-label="Complete and close estimate"
               className="w-full py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl transition"
             >
               Done
@@ -1275,15 +1304,17 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               <p className="text-sm text-gray-600 mb-2">Need immediate assistance?</p>
               <a
                 href={`tel:${SITE_CONFIG.phoneClean}`}
+                aria-label={`Call us at ${SITE_CONFIG.phone}`}
                 className="inline-flex items-center gap-2 text-xl font-bold text-primary hover:text-primary-dark"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5" aria-hidden="true" />
                 {SITE_CONFIG.phone}
               </a>
             </div>
 
             <button
               onClick={onClose}
+              aria-label="Close estimate modal"
               className="w-full py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl transition"
             >
               Close
