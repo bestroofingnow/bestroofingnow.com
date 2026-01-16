@@ -253,20 +253,6 @@ const nextConfig: NextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' },
         ],
       },
-      // Cache CSS and JS files
-      {
-        source: '/(.*)\\.(css|js)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
-      // Cache HTML pages with revalidation
-      {
-        source: '/:path((?!api).*)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400' },
-        ],
-      },
     ];
   },
 };
