@@ -83,7 +83,7 @@ export function TestimonialCarousel({
     <div className="relative max-w-4xl mx-auto" role="region" aria-label="Customer testimonials" aria-roledescription="carousel">
       {/* Main Carousel */}
       <div
-        className="relative overflow-hidden rounded-2xl bg-white shadow-xl p-8 md:p-12 h-[380px] md:h-[340px]"
+        className="relative overflow-hidden rounded-2xl bg-white shadow-xl p-8 md:p-12 h-[440px] md:h-[380px]"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}

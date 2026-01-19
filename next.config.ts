@@ -4,10 +4,16 @@ import type { NextConfig } from "next";
 const WP_CMS_HOSTNAME = process.env.WORDPRESS_HOSTNAME || 'bestroofingnow.com';
 
 const nextConfig: NextConfig = {
-  // Optimize CSS delivery
+  // Enable compression
+  compress: true,
+
+  // Optimize CSS delivery and other experimental features
   experimental: {
     optimizeCss: true,
   },
+
+  // Power performance mode - more aggressive optimizations
+  poweredByHeader: false,
   images: {
     remotePatterns: [
       {
@@ -37,6 +43,28 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'getpowerpay.com',
+        pathname: '/**',
+      },
+      // ProjectMapIt (PMI) project photos
+      {
+        protocol: 'https',
+        hostname: 'projectmapit.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.projectmapit.com',
+        pathname: '/**',
+      },
+      // AWS S3 buckets (common for PMI image hosting)
+      {
+        protocol: 'https',
+        hostname: '*.amazonaws.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.cloudfront.net',
         pathname: '/**',
       },
     ],
@@ -231,9 +259,15 @@ const nextConfig: NextConfig = {
       {
         source: '/:path*',
         headers: [
+          // DNS prefetching for faster resource loading
           { key: 'X-DNS-Prefetch-Control', value: 'on' },
+          // Security headers
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(self)' },
+          // Performance hints
+          { key: 'X-XSS-Protection', value: '1; mode=block' },
         ],
       },
       // Cache static assets for 1 year
