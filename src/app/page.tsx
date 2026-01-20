@@ -21,10 +21,12 @@ import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: "Best Roofing Now | Top-Rated Roofing Company Charlotte NC | BBB A+",
-  description: 'Best Roofing Now is Charlotte\'s top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts. Call (704) 605-6047.',
+  title: "Best Roofing Company Charlotte NC | 5-Star Rated | Free Inspection",
+  description: 'Looking for the best roofing company in Charlotte? 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Get your FREE roof inspection today! Same-day estimates. Call (704) 605-6047.',
   keywords: [
-    'Best Roofing Now',
+    'best roofing company',
+    'best roofing companies',
+    'best roofing Charlotte NC',
     'roofing company Charlotte NC',
     'roofers near me',
     'roofing contractor near me',
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
     'Charlotte roofing company',
     'veteran owned roofing',
     'BBB A+ roofer',
+    'local roofing companies',
   ],
   openGraph: {
     title: "Best Roofing Now | Charlotte's Top-Rated Roofing Company",

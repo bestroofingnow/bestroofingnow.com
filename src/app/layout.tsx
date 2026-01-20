@@ -25,10 +25,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: `${SITE_CONFIG.name} | Top-Rated Roofing Company Charlotte NC | BBB A+`,
+    default: `Best Roofing Company Charlotte NC | 5-Star Rated | BBB A+ | ${SITE_CONFIG.name}`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
-  description: `Charlotte's top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts. Call (704) 605-6047.`,
+  description: `Looking for the best roofing company? Charlotte's top-rated contractor with 5.0 Google rating, 500+ roofs installed, BBB A+ rated, veteran-owned. FREE inspections & same-day estimates. Call (704) 605-6047.`,
   keywords: [
     // Primary target keywords
     'roofing contractor Charlotte NC',
