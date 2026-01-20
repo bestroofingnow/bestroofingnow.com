@@ -72,7 +72,7 @@ export function FAQ({
                 <div
                   id={`faq-answer-${index}`}
                   className={cn(
-                    'overflow-hidden transition-all duration-200',
+                    'overflow-hidden transition-[max-height] duration-200',
                     openIndex === index ? 'max-h-96' : 'max-h-0'
                   )}
                   role="region"

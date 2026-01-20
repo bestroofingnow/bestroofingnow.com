@@ -50,7 +50,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const baseStyles = cn(
-      'inline-flex items-center justify-center gap-2 font-semibold rounded-lg transition-all duration-200 cursor-pointer',
+      'inline-flex items-center justify-center gap-2 font-semibold rounded-lg transition-[color,background-color,border-color,transform,box-shadow] duration-200 cursor-pointer',
       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
       'disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none',
       'hover:-translate-y-0.5 hover:shadow-lg',

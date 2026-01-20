@@ -48,6 +48,9 @@ const STORIES_OPTIONS = [
   { id: '2-story', name: '2 Story', multiplier: 1.15 },
 ];
 
+// Hoisted regex for email validation (avoids recreation on each render)
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 interface Package {
   name: string;
   tier: 'good' | 'better' | 'best' | 'premium';
@@ -400,7 +403,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
     if (!formData.phone.trim()) errors.phone = 'Phone is required';
     else if (formData.phone.replace(/\D/g, '').length < 10) errors.phone = 'Invalid phone number';
     if (!formData.email.trim()) errors.email = 'Email is required';
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) errors.email = 'Invalid email';
+    else if (!EMAIL_REGEX.test(formData.email)) errors.email = 'Invalid email';
     if (!formData.tcpaConsent) errors.tcpaConsent = 'Consent is required';
 
     setFormErrors(errors);
@@ -534,7 +537,10 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
                   ref={inputRef}
+                  id="estimate-address"
                   type="text"
+                  autoComplete="street-address"
+                  aria-label="Property address"
                   value={address}
                   onChange={(e) => handleAddressChange(e.target.value)}
                   onFocus={() => predictions.length > 0 && setShowPredictions(true)}
@@ -1036,13 +1042,15 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             <form onSubmit={handleSubmitLead} className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="estimate-firstName" className="block text-sm font-medium text-gray-700 mb-1">
                     First Name *
                   </label>
                   <input
+                    id="estimate-firstName"
                     type="text"
+                    autoComplete="given-name"
                     value={formData.firstName}
-                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                    onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
                     className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary ${
                       formErrors.firstName ? 'border-red-500' : 'border-gray-300'
                     }`}
@@ -1052,13 +1060,15 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                   )}
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="estimate-lastName" className="block text-sm font-medium text-gray-700 mb-1">
                     Last Name *
                   </label>
                   <input
+                    id="estimate-lastName"
                     type="text"
+                    autoComplete="family-name"
                     value={formData.lastName}
-                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                    onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
                     className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary ${
                       formErrors.lastName ? 'border-red-500' : 'border-gray-300'
                     }`}
@@ -1070,13 +1080,15 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="estimate-phone" className="block text-sm font-medium text-gray-700 mb-1">
                   Phone *
                 </label>
                 <input
+                  id="estimate-phone"
                   type="tel"
+                  autoComplete="tel"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
+                  onChange={(e) => setFormData(prev => ({ ...prev, phone: formatPhone(e.target.value) }))}
                   placeholder="(704) 555-1234"
                   className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary ${
                     formErrors.phone ? 'border-red-500' : 'border-gray-300'
@@ -1088,13 +1100,15 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="estimate-email" className="block text-sm font-medium text-gray-700 mb-1">
                   Email *
                 </label>
                 <input
+                  id="estimate-email"
                   type="email"
+                  autoComplete="email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                   placeholder="you@example.com"
                   className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary ${
                     formErrors.email ? 'border-red-500' : 'border-gray-300'
@@ -1106,11 +1120,12 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-4">
-                <label className="flex items-start gap-3 cursor-pointer">
+                <label htmlFor="estimate-tcpaConsent" className="flex items-start gap-3 cursor-pointer">
                   <input
+                    id="estimate-tcpaConsent"
                     type="checkbox"
                     checked={formData.tcpaConsent}
-                    onChange={(e) => setFormData({ ...formData, tcpaConsent: e.target.checked })}
+                    onChange={(e) => setFormData(prev => ({ ...prev, tcpaConsent: e.target.checked }))}
                     className="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
                   />
                   <span className="text-xs text-gray-600">

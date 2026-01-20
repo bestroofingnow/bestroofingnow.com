@@ -28,7 +28,7 @@ export function Card({
   const baseStyles = cn(
     'bg-white rounded-xl shadow-md',
     paddingStyles[padding],
-    hover && 'transition-all duration-300 hover:shadow-xl hover:-translate-y-1',
+    hover && 'transition-[transform,box-shadow] duration-300 hover:shadow-xl hover:-translate-y-1',
     className
   );
 
