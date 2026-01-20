@@ -169,6 +169,57 @@ export async function getAllPosts(): Promise<WPPost[]> {
   return allPosts;
 }
 
+// Lightweight post type for listing pages (no content)
+export interface WPPostLite {
+  id: number;
+  slug: string;
+  title: { rendered: string };
+  excerpt: { rendered: string };
+  date: string;
+  modified: string;
+  _embedded?: {
+    'wp:featuredmedia'?: { source_url: string }[];
+  };
+}
+
+// Fetch ALL posts with only the fields needed for listing (much smaller payload)
+// Use this for blog listing pages to avoid oversized ISR pages
+export async function getAllPostsLite(): Promise<WPPostLite[]> {
+  const allPosts: WPPostLite[] = [];
+  let page = 1;
+  let hasMore = true;
+
+  while (hasMore) {
+    try {
+      // Only fetch fields needed for the blog listing - no content!
+      const res = await fetch(
+        `${WP_API_URL}/posts?per_page=100&page=${page}&_embed=wp:featuredmedia&_fields=id,slug,title,excerpt,date,modified,_links`,
+        { next: { revalidate: 3600 } }
+      );
+
+      if (!res.ok) break;
+
+      const batch = await res.json();
+      if (batch.length === 0) {
+        hasMore = false;
+      } else {
+        allPosts.push(...batch);
+        // If we got less than 100, we've reached the end
+        if (batch.length < 100) {
+          hasMore = false;
+        } else {
+          page++;
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching all posts:', error);
+      break;
+    }
+  }
+
+  return allPosts;
+}
+
 export async function getMedia(id: number): Promise<WPMedia | null> {
   const res = await fetch(`${WP_API_URL}/media/${id}`, {
     next: { revalidate: 86400 }, // Cache for 24 hours

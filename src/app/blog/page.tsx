@@ -5,7 +5,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
-import { getAllPosts } from '@/lib/wordpress';
+import { getAllPostsLite, WPPostLite } from '@/lib/wordpress';
 import BlogContent from './BlogContent';
 
 // Low-quality blur placeholder for hero image
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 export default async function BlogPage() {
-  // Fetch ALL posts from WordPress (paginates through all)
-  const posts = await getAllPosts();
+  // Fetch ALL posts from WordPress (paginates through all) - uses lightweight version
+  const posts = await getAllPostsLite();
 
   // Generate BlogPosting structured data for AI/SEO readability
   const blogPostingSchema = {
@@ -47,7 +47,7 @@ export default async function BlogPage() {
         url: IMAGES.logo,
       },
     },
-    blogPost: posts.slice(0, 20).map((post: any) => ({
+    blogPost: posts.slice(0, 20).map((post: WPPostLite) => ({
       '@type': 'BlogPosting',
       headline: post.title.rendered.replace(/<[^>]*>/g, ''),
       url: `${SITE_CONFIG.url}/blog/${post.slug}`,
