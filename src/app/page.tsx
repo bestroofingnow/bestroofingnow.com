@@ -7,8 +7,6 @@ import { Testimonials } from '@/components/sections/Testimonials';
 import { ServiceAreas } from '@/components/sections/ServiceAreas';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { ProjectGallery } from '@/components/sections/ProjectGallery';
-import { LazyInteractiveServiceMap } from '@/components/ui/LazyInteractiveServiceMap';
 import {
   FAQSchema,
   BreadcrumbSchema,
@@ -234,10 +232,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <ProjectGallery
-        title="See Our Work"
-        subtitle="Real roofing projects from Charlotte homes just like yours."
-      />
       <Testimonials />
 
       {/* Trust Badges Section with Directory Citations */}
@@ -253,7 +247,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <LazyInteractiveServiceMap />
       <ServiceAreas />
       <FAQ />
       <CTASection

@@ -31,13 +31,18 @@ export function ServiceAreas() {
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Proudly Serving Charlotte & Surrounding Areas
+              See Our Work & Service Areas
             </h2>
 
-            <p className="text-gray text-lg mb-8">
+            <p className="text-gray text-lg mb-4">
               We provide professional roofing services throughout the Charlotte
-              metropolitan area. Whether you're in the heart of Charlotte or a
+              metropolitan area. Whether you&apos;re in the heart of Charlotte or a
               surrounding community, our team is ready to help protect your home.
+            </p>
+
+            <p className="text-gray mb-8">
+              <strong>Click the map pins</strong> to view our completed roofing projects in your area.
+              See before &amp; after photos, project details, and the quality craftsmanship we deliver to homes just like yours.
             </p>
 
             {/* Locations Grid */}
