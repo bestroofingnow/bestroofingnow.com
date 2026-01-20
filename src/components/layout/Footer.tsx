@@ -46,12 +46,12 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-primary text-white mt-12">
       {/* Main Footer */}
       <div className="container py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Company Info */}
-          <div>
+          <div className="lg:col-span-4">
             <Image
               src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
               alt={SITE_CONFIG.name}
@@ -131,7 +131,7 @@ export function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
             <ul className="space-y-3">
               {SERVICES.slice(0, 6).map((service) => (
@@ -186,7 +186,7 @@ export function Footer() {
           </div>
 
           {/* Locations */}
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-lg font-bold mb-6 text-white">Service Areas</h3>
             <ul className="space-y-3">
               {LOCATIONS.slice(0, 10).map((location) => (
@@ -211,7 +211,7 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-lg font-bold mb-6 text-white">Contact Us</h3>
             <ul className="space-y-4">
               <li>
