@@ -48,10 +48,10 @@ export function Footer() {
   return (
     <footer className="bg-primary text-white mt-12">
       {/* Main Footer */}
-      <div className="container py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+      <div className="container py-16 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 text-center lg:text-left">
           {/* Company Info */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 flex flex-col items-center lg:items-start">
             <Image
               src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
               alt={SITE_CONFIG.name}
@@ -64,7 +64,7 @@ export function Footer() {
               surrounding areas since 2020. We believe in honesty, transparency,
               and doing the right thing for every customer.
             </p>
-            <div className="flex items-center gap-2 mb-2" role="img" aria-label={`Rated ${SITE_CONFIG.googleRating} out of 5 stars based on ${SITE_CONFIG.googleReviewCount} Google reviews`}>
+            <div className="flex items-center justify-center lg:justify-start gap-2 mb-2" role="img" aria-label={`Rated ${SITE_CONFIG.googleRating} out of 5 stars based on ${SITE_CONFIG.googleReviewCount} Google reviews`}>
               <div className="stars" aria-hidden="true">
                 {[...Array(5)].map((_, i) => (
                   <svg
@@ -80,7 +80,7 @@ export function Footer() {
               <span className="text-white" aria-hidden="true">({SITE_CONFIG.googleReviewCount} reviews)</span>
             </div>
             {/* Social Links */}
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 mt-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -101,7 +101,7 @@ export function Footer() {
             {/* Directory Listings - Enhanced */}
             <div className="mt-4 pt-4 border-t border-white/10">
               <p className="text-white/70 text-sm mb-2">Verified On:</p>
-              <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-x-3 gap-y-1 text-sm">
                 {/* Review Platforms */}
                 {getLinksByCategory('reviews').slice(0, 4).map((link, idx) => (
                   <span key={link.url} className="inline-flex items-center">
@@ -111,7 +111,7 @@ export function Footer() {
                 ))}
               </div>
               <p className="text-white/70 text-sm mb-2 mt-3">Certifications:</p>
-              <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-x-3 gap-y-1 text-sm">
                 {/* Certification Links */}
                 {getLinksByCategory('certification').map((link, idx, arr) => (
                   <span key={link.url} className="inline-flex items-center">
@@ -211,13 +211,13 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-3 flex flex-col items-center lg:items-start">
             <h3 className="text-lg font-bold mb-6 text-white">Contact Us</h3>
             <ul className="space-y-4">
               <li>
                 <a
                   href={`tel:${SITE_CONFIG.phoneClean}`}
-                  className="flex items-start gap-3 text-white hover:text-white transition-colors"
+                  className="flex items-center lg:items-start gap-3 text-white hover:text-white transition-colors"
                   aria-label={`Call us at ${SITE_CONFIG.phone}`}
                   onClick={() => trackPhoneClick('footer')}
                 >
@@ -228,14 +228,14 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="flex items-start gap-3 text-white hover:text-white transition-colors"
+                  className="flex items-center lg:items-start gap-3 text-white hover:text-white transition-colors"
                   aria-label={`Email us at ${SITE_CONFIG.email}`}
                 >
                   <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                   <span>{SITE_CONFIG.email}</span>
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-white">
+              <li className="flex items-center lg:items-start gap-3 text-white">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
                   {SITE_CONFIG.address.street}<br />
@@ -243,7 +243,7 @@ export function Footer() {
                   {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
                 </span>
               </li>
-              <li className="flex items-start gap-3 text-white">
+              <li className="flex items-center lg:items-start gap-3 text-white">
                 <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>{SITE_CONFIG.hours}</span>
               </li>
@@ -288,7 +288,7 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container py-6 pb-10 md:pb-6">
+        <div className="container py-8 pb-12 md:pb-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-white/90 text-sm">
