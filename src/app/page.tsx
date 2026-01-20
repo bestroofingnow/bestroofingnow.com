@@ -98,7 +98,7 @@ export default function HomePage() {
       />
       <WhyChooseUs />
 
-      {/* Full-Service Contractor Section - GBP Category Coverage */}
+      {/* GBP Service Categories Section */}
       <section className="py-12 bg-white">
         <div className="container">
           <div className="max-w-5xl mx-auto text-center">
@@ -109,61 +109,96 @@ export default function HomePage() {
               Best Roofing Now is more than just a roofing contractor. As a licensed general contractor and construction company,
               we provide comprehensive exterior services including metal roofing, gutter installation, siding, and storm damage restoration.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-left">
-              <a href="/services/roof-repair" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Roof Repair</span>
-                <p className="text-sm text-gray-500">Fast, reliable repairs</p>
+
+            {/* GBP Category Cards - Primary Link Tier */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+              <a href="/roofing-services" className="bg-gradient-to-br from-primary to-primary-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">🏠</div>
+                <h3 className="font-bold text-xl mb-2">Roofing Services</h3>
+                <p className="text-white/80 text-sm mb-3">Repair, replacement, inspection, metal roofing &amp; flat roofs</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Explore Roofing <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/metal-roofing" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Metal Roofing</span>
-                <p className="text-sm text-gray-500">Standing seam &amp; shingles</p>
+              <a href="/gutter-services" className="bg-gradient-to-br from-primary to-primary-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">🌧️</div>
+                <h3 className="font-bold text-xl mb-2">Gutter Services</h3>
+                <p className="text-white/80 text-sm mb-3">Installation, repair, cleaning &amp; gutter guard systems</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Explore Gutters <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/flat-roof-repair" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Flat Roof Repair</span>
-                <p className="text-sm text-gray-500">TPO, EPDM &amp; PVC</p>
+              <a href="/siding-services" className="bg-gradient-to-br from-primary to-primary-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">🏡</div>
+                <h3 className="font-bold text-xl mb-2">Siding Services</h3>
+                <p className="text-white/80 text-sm mb-3">James Hardie, vinyl siding installation &amp; repair</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Explore Siding <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/gutter-installation" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Gutter Installation</span>
-                <p className="text-sm text-gray-500">Seamless aluminum</p>
+              <a href="/storm-restoration" className="bg-gradient-to-br from-accent to-accent-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">⛈️</div>
+                <h3 className="font-bold text-xl mb-2">Storm Restoration</h3>
+                <p className="text-white/80 text-sm mb-3">Emergency service, insurance claims &amp; full restoration</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Get Help Now <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/gutter-cleaning" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Gutter Cleaning</span>
-                <p className="text-sm text-gray-500">Professional service</p>
+              <a href="/specialty-services" className="bg-gradient-to-br from-primary to-primary-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">✨</div>
+                <h3 className="font-bold text-xl mb-2">Specialty Services</h3>
+                <p className="text-white/80 text-sm mb-3">Skylights, ventilation, chimney &amp; flat roof repair</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Explore Specialty <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/gutter-guards" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Gutter Guards</span>
-                <p className="text-sm text-gray-500">Leaf protection</p>
+              <a href="/solar-services" className="bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">☀️</div>
+                <h3 className="font-bold text-xl mb-2">Solar Roofing</h3>
+                <p className="text-white/80 text-sm mb-3">Solar panel roof integration &amp; solar-ready roofing</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Explore Solar <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/siding-installation" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Siding Installation</span>
-                <p className="text-sm text-gray-500">James Hardie certified</p>
+              <a href="/metal-roofing-services" className="bg-gradient-to-br from-slate-600 to-slate-800 rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">🔩</div>
+                <h3 className="font-bold text-xl mb-2">Metal Roofing</h3>
+                <p className="text-white/80 text-sm mb-3">Standing seam, metal shingles &amp; steel roofing</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Explore Metal <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/siding-repair" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Siding Repair</span>
-                <p className="text-sm text-gray-500">Color matching experts</p>
+              <a href="/commercial-roofing-services" className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+                <div className="text-3xl mb-3">🏢</div>
+                <h3 className="font-bold text-xl mb-2">Commercial Roofing</h3>
+                <p className="text-white/80 text-sm mb-3">TPO, EPDM, flat roofs &amp; commercial repairs</p>
+                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
+                  Explore Commercial <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
-              <a href="/services/building-restoration" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Building Restoration</span>
-                <p className="text-sm text-gray-500">Storm &amp; fire damage</p>
-              </a>
-              <a href="/services/insurance-claims" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Insurance Claims</span>
-                <p className="text-sm text-gray-500">Claim assistance</p>
-              </a>
-              <a href="/services/skylight-installation" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Skylight Contractor</span>
-                <p className="text-sm text-gray-500">VELUX certified</p>
-              </a>
-              <a href="/services/chimney-services" className="bg-light rounded-lg p-4 hover:shadow-md transition-shadow">
-                <span className="font-semibold text-primary">Chimney Services</span>
-                <p className="text-sm text-gray-500">Flashing &amp; caps</p>
+              <a href="/services" className="bg-light rounded-xl p-6 text-primary hover:shadow-xl transition-all group border-2 border-primary/20 hover:border-primary">
+                <div className="text-3xl mb-3">📋</div>
+                <h3 className="font-bold text-xl mb-2">All 27 Services</h3>
+                <p className="text-gray-600 text-sm mb-3">View our complete service directory</p>
+                <span className="inline-flex items-center text-sm font-medium text-primary group-hover:text-accent">
+                  View All <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
               </a>
             </div>
-            <div className="mt-6">
-              <a href="/services" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
-                View All 27 Services
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-              </a>
+
+            {/* Quick Service Links - Secondary Tier */}
+            <div className="border-t border-gray-200 pt-8">
+              <p className="text-sm text-gray-500 mb-4">Popular Services:</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <a href="/services/roof-repair" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roof Repair</a>
+                <a href="/services/roof-replacement" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roof Replacement</a>
+                <a href="/services/metal-roofing" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Metal Roofing</a>
+                <a href="/services/gutter-installation" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Gutter Installation</a>
+                <a href="/services/siding-installation" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Siding Installation</a>
+                <a href="/services/storm-damage" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Storm Damage</a>
+                <a href="/services/skylight-installation" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Skylights</a>
+                <a href="/services/emergency-roofing" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Emergency Service</a>
+              </div>
             </div>
           </div>
         </div>

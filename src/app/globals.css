@@ -32,7 +32,10 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+/* Smooth scroll only if user hasn't set reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 body {
   font-family: var(--font-sans);
@@ -194,4 +197,174 @@ button:focus,
 [role="button"]:focus {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
+}
+
+/* ============================================
+   CLS (Cumulative Layout Shift) Prevention
+   ============================================ */
+
+/* Reserve space for images to prevent layout shift */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reserve space for embeds and iframes */
+iframe {
+  max-width: 100%;
+}
+
+/* Prevent font swap layout shift */
+.font-loading * {
+  visibility: hidden;
+}
+
+/* Reserve height for sticky header - prevents CLS when header becomes sticky */
+header {
+  contain: layout;
+}
+
+/* Prevent CLS from lazy-loaded content */
+[data-lazy] {
+  min-height: 1px;
+}
+
+/* ============================================
+   Additional Accessibility Improvements
+   ============================================ */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #0000CC;
+    --color-accent: #CC0000;
+    --color-gray: #333333;
+    --color-link: #0000EE;
+  }
+
+  .btn, button {
+    border: 2px solid currentColor;
+  }
+
+  a:focus, button:focus {
+    outline-width: 3px;
+  }
+}
+
+/* Ensure minimum touch targets for all interactive elements */
+@media (pointer: coarse) {
+  a, button, input, select, textarea, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Screen reader only content - enhanced */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Make sr-only visible when focused (for skip links) */
+.sr-only:focus, .sr-only:focus-within {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Visible focus indicator for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Ensure links are distinguishable from surrounding text */
+main a:not(.btn):not([class*="bg-"]) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+main a:not(.btn):not([class*="bg-"]):hover {
+  text-decoration-thickness: 2px;
+}
+
+/* ============================================
+   Performance Optimizations
+   ============================================ */
+
+/* Optimize paint performance for fixed/sticky elements */
+.sticky, [class*="sticky"], .fixed, [class*="fixed"] {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Optimize scrolling performance */
+.overflow-auto, .overflow-scroll, .overflow-y-auto, .overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Content visibility for below-the-fold content */
+.lazy-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* ============================================
+   Mobile Speed Index Optimizations
+   ============================================ */
+
+/* Hide non-critical elements on initial mobile load */
+@media (max-width: 767px) {
+  /* Apply content-visibility to all sections except first */
+  section:not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 400px;
+  }
+
+  /* Reduce complexity of gradients on mobile */
+  .bg-gradient-primary,
+  .bg-gradient-to-br {
+    background: var(--color-primary) !important;
+  }
+
+  /* Simplify shadows on mobile */
+  .shadow-lg, .shadow-xl, .shadow-2xl {
+    box-shadow: var(--shadow-md) !important;
+  }
+
+  /* Reduce transition complexity */
+  .transition-all {
+    transition: opacity 0.15s ease, transform 0.15s ease !important;
+  }
+
+  /* Hide decorative SVGs on mobile to reduce paint time */
+  svg[aria-hidden="true"]:not(button svg):not(a svg) {
+    contain: strict;
+  }
+}
+
+/* Ultra-aggressive mobile optimization for slow connections */
+@media (max-width: 767px) and (prefers-reduced-data: reduce) {
+  img:not([loading="eager"]) {
+    display: none;
+  }
 }

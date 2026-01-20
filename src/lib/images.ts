@@ -7,7 +7,9 @@ export const IMAGES = {
 
   // Hero/Banner Images - Primary hero images for pages
   hero: {
-    roofTeam: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png',
+    // Use WebP version for better performance (PNG fallback commented)
+    // Original PNG: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png'
+    roofTeam: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp',
     menOnRoof: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/menonroof.png',
     metalRoof: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/metalroofnew.png',
     homePage: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/hoe_page-removebg-preview.webp',
@@ -192,7 +194,7 @@ export const IMAGES = {
 
   // Service Images
   services: {
-    residential: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png',
+    residential: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp',
     commercial: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Office-Buildings-and-Complexes.webp',
     repairs: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/siding-repair-after.png',
     replacement: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/metalroofnew.png',
@@ -243,7 +245,7 @@ export const IMAGES = {
 
   // Team/Work Images
   team: {
-    roofCrew1: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png',
+    roofCrew1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp',
     roofCrew2: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/menonroof.png',
     work1: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/output1.png',
     jamesAndFred: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/10/jamesanddad-768x1151.jpg.webp',

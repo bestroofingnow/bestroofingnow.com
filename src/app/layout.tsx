@@ -9,12 +9,17 @@ import { LocalBusinessSchema, WebSiteSchema, HowToGetRoofEstimateSchema, FreeIns
 import { SITE_CONFIG } from '@/lib/constants';
 import { EstimateProvider } from '@/components/estimate';
 import { LazyCustomCursor } from '@/components/ui/LazyCustomCursor';
+import { WebVitals } from '@/components/analytics/WebVitals';
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
   preload: true,
+  // Automatically adjust fallback font metrics to reduce CLS
+  adjustFontFallback: true,
+  // Only load weights we actually use (400, 500, 600, 700)
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -122,15 +127,17 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <head>
         <meta name="theme-color" content="#1A43AA" />
-        {/* CRITICAL: Preconnect to CMS for hero images - most important for LCP */}
+        {/* CRITICAL: Preconnect to CMS for images */}
         <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
-        {/* Preload hero image for faster LCP - this is typically the largest contentful paint element */}
+        {/* Hero image preload - ONLY for desktop (hero image hidden on mobile for faster LCP) */}
         <link
           rel="preload"
           as="image"
-          href="https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png"
+          href="https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp"
+          type="image/webp"
           fetchPriority="high"
+          media="(min-width: 768px)"
         />
         {/* Secondary preconnects */}
         <link rel="preconnect" href="https://bestroofingnow.com" />
@@ -152,6 +159,8 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <EstimateProvider>
+          {/* Web Vitals monitoring - reports Core Web Vitals metrics */}
+          <WebVitals />
           <LazyCustomCursor />
           {/* Skip to main content link for accessibility */}
           <a
@@ -164,7 +173,7 @@ export default function RootLayout({
           <main id="main-content" tabIndex={-1}>{children}</main>
           <Footer />
           <StickyCTA />
-          {/* GHL Chat Widget */}
+          {/* GHL Chat Widget - loaded after page is interactive */}
           <Script
             id="ghl-chat-widget"
             src="https://widgets.leadconnectorhq.com/loader.js"

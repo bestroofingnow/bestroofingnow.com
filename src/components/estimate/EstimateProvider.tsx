@@ -1,7 +1,13 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, useCallback, useRef, ReactNode } from 'react';
-import EstimateModal from './EstimateModal';
+import dynamic from 'next/dynamic';
+
+// Lazy load the modal to reduce initial bundle size
+const EstimateModal = dynamic(() => import('./EstimateModal'), {
+  ssr: false,
+  loading: () => null,
+});
 
 interface EstimateContextType {
   openEstimateModal: () => void;
@@ -28,10 +34,14 @@ const EXIT_INTENT_SHOWN_KEY = 'brn_exit_intent_shown';
 
 export function EstimateProvider({ children }: EstimateProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasBeenOpened, setHasBeenOpened] = useState(false); // Track if modal was ever opened
   const [exitIntentEnabled, setExitIntentEnabled] = useState(false);
   const hasShownRef = useRef(false); // Additional in-memory flag to prevent double-firing
 
-  const openEstimateModal = useCallback(() => setIsOpen(true), []);
+  const openEstimateModal = useCallback(() => {
+    setHasBeenOpened(true); // Trigger lazy load
+    setIsOpen(true);
+  }, []);
   const closeEstimateModal = useCallback(() => setIsOpen(false), []);
 
   // Check if exit intent was already shown this session on mount
@@ -71,12 +81,14 @@ export function EstimateProvider({ children }: EstimateProviderProps) {
 
         // Small delay to make the popup feel more intentional
         setTimeout(() => {
+          setHasBeenOpened(true);
           setIsOpen(true);
         }, 100);
       } catch {
         // sessionStorage not available - still show once using ref
         hasShownRef.current = true;
         setTimeout(() => {
+          setHasBeenOpened(true);
           setIsOpen(true);
         }, 100);
       }
@@ -110,7 +122,8 @@ export function EstimateProvider({ children }: EstimateProviderProps) {
   return (
     <EstimateContext.Provider value={{ openEstimateModal, closeEstimateModal, isOpen }}>
       {children}
-      <EstimateModal isOpen={isOpen} onClose={closeEstimateModal} />
+      {/* Only render modal after it's been opened at least once to avoid loading the bundle */}
+      {hasBeenOpened && <EstimateModal isOpen={isOpen} onClose={closeEstimateModal} />}
     </EstimateContext.Provider>
   );
 }

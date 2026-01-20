@@ -515,14 +515,124 @@ const additionalServiceLinks: LinkMapping[] = [
     url: '/services/soffit-fascia',
     title: 'Soffit and fascia repair in Charlotte NC',
   },
-  // Siding
+  // Siding (main service page)
   {
     patterns: [
-      'siding installation', 'siding repair', 'vinyl siding',
-      'new siding', 'siding replacement', 'home siding'
+      'siding services', 'home siding', 'vinyl siding', 'siding contractor',
+      'siding company', 'new siding', 'siding project'
     ],
     url: '/services/siding',
+    title: 'Siding services in Charlotte NC',
+  },
+  // Siding Installation (specific service)
+  {
+    patterns: [
+      'siding installation', 'install siding', 'installing siding',
+      'siding replacement', 'replace siding', 'new siding installation'
+    ],
+    url: '/services/siding-installation',
     title: 'Siding installation in Charlotte NC',
+  },
+  // Siding Repair (specific service)
+  {
+    patterns: [
+      'siding repair', 'repair siding', 'fix siding', 'damaged siding',
+      'siding damage', 'siding issues', 'siding problems'
+    ],
+    url: '/services/siding-repair',
+    title: 'Siding repair services in Charlotte NC',
+  },
+  // Metal Roofing (service page - distinct from materials)
+  {
+    patterns: [
+      'metal roofing service', 'metal roof installation', 'install metal roof',
+      'metal roof contractor', 'standing seam installation', 'metal roof replacement'
+    ],
+    url: '/services/metal-roofing',
+    title: 'Metal roofing installation in Charlotte NC',
+  },
+  // Gutter Cleaning
+  {
+    patterns: [
+      'gutter cleaning', 'clean gutters', 'cleaning gutters', 'gutter cleanout',
+      'clogged gutters', 'blocked gutters', 'gutter debris'
+    ],
+    url: '/services/gutter-cleaning',
+    title: 'Professional gutter cleaning in Charlotte NC',
+  },
+  // Gutter Installation
+  {
+    patterns: [
+      'gutter installation', 'install gutters', 'installing gutters',
+      'new gutter system', 'gutter replacement', 'replace gutters'
+    ],
+    url: '/services/gutter-installation',
+    title: 'Gutter installation in Charlotte NC',
+  },
+  // Gutter Repair
+  {
+    patterns: [
+      'gutter repair', 'repair gutters', 'fix gutters', 'leaking gutters',
+      'gutter leak', 'broken gutter', 'gutter damage'
+    ],
+    url: '/services/gutter-repair',
+    title: 'Gutter repair services in Charlotte NC',
+  },
+  // Gutter Guards
+  {
+    patterns: [
+      'gutter guards', 'gutter protection', 'leaf guards', 'gutter screens',
+      'gutter covers', 'leaf protection', 'gutter guard installation'
+    ],
+    url: '/services/gutter-guards',
+    title: 'Gutter guard installation in Charlotte NC',
+  },
+  // Insurance Claims (service page)
+  {
+    patterns: [
+      'insurance claim assistance', 'roof insurance claim', 'insurance claim help',
+      'file insurance claim', 'insurance claim process', 'claim assistance',
+      'insurance restoration', 'insurance approved'
+    ],
+    url: '/services/insurance-claims',
+    title: 'Roof insurance claim assistance in Charlotte NC',
+  },
+  // Flat Roof Repair
+  {
+    patterns: [
+      'flat roof repair', 'repair flat roof', 'flat roof leak',
+      'flat roof damage', 'flat roof issues', 'low-slope roof repair'
+    ],
+    url: '/services/flat-roof-repair',
+    title: 'Flat roof repair services in Charlotte NC',
+  },
+  // Residential Roof Maintenance
+  {
+    patterns: [
+      'residential roof maintenance', 'home roof maintenance', 'house roof maintenance',
+      'residential maintenance plan', 'homeowner roof maintenance'
+    ],
+    url: '/services/residential-roof-maintenance',
+    title: 'Residential roof maintenance in Charlotte NC',
+  },
+  // Commercial Roof Maintenance
+  {
+    patterns: [
+      'commercial roof maintenance', 'business roof maintenance', 'commercial maintenance plan',
+      'commercial roofing maintenance', 'building roof maintenance'
+    ],
+    url: '/services/commercial-roof-maintenance',
+    title: 'Commercial roof maintenance in Charlotte NC',
+  },
+  // Building Restoration
+  {
+    patterns: [
+      'building restoration', 'storm restoration', 'exterior restoration',
+      'property restoration', 'restoration services', 'restore building',
+      'full restoration', 'damage restoration'
+    ],
+    url: '/services/building-restoration',
+    title: 'Building restoration services in Charlotte NC',
   },
   // Materials
   {
@@ -617,11 +727,11 @@ const additionalServiceLinks: LinkMapping[] = [
     url: '/products/tamko-titan-xt',
     title: 'TAMKO Titan XT shingles in Charlotte NC',
   },
-  // Insurance
+  // Insurance (link to service page, guide is secondary)
   {
     patterns: ['insurance claim', 'insurance claims', 'filing a claim', 'roof insurance', 'homeowner insurance'],
-    url: '/guides/insurance-claim-guide',
-    title: 'Roof insurance claim guide',
+    url: '/services/insurance-claims',
+    title: 'Roof insurance claim assistance in Charlotte NC',
   },
   // Warranty
   {
@@ -932,14 +1042,46 @@ export function extractMentionedServices(html: string): typeof SERVICES[number][
   const mentioned: typeof SERVICES[number][] = [];
   const text = html.toLowerCase();
 
-  // Keywords that map to services
+  // Comprehensive keywords that map to services
   const serviceKeywords: Record<string, string[]> = {
-    'roof-replacement': ['replacement', 'new roof', 'replace'],
-    'roof-repair': ['repair', 'fix', 'patching', 'leak'],
-    'storm-damage': ['storm', 'hail', 'wind damage', 'hurricane', 'tornado'],
-    'roof-inspection': ['inspection', 'inspect', 'assessment', 'evaluate'],
+    // Core roofing services
+    'roof-replacement': ['replacement', 'new roof', 'replace', 'reroof', 're-roof'],
+    'roof-repair': ['repair', 'fix', 'patching', 'leak', 'leaky', 'damaged'],
+    'roof-inspection': ['inspection', 'inspect', 'assessment', 'evaluate', 'examine'],
+    'residential-roofing': ['residential', 'home roof', 'house roof', 'homeowner'],
+    'commercial-roofing': ['commercial', 'business', 'industrial', 'office building', 'warehouse'],
+    'emergency-roofing': ['emergency', 'urgent', '24/7', 'immediate'],
+
+    // Storm and insurance
+    'storm-damage': ['storm', 'hail', 'wind damage', 'hurricane', 'tornado', 'severe weather'],
+    'insurance-claims': ['insurance claim', 'claim assistance', 'insurance restoration', 'file a claim'],
+
+    // Gutters
     'gutters': ['gutter', 'drainage', 'downspout'],
-    'commercial-roofing': ['commercial', 'business', 'flat roof', 'industrial'],
+    'gutter-cleaning': ['gutter cleaning', 'clean gutter', 'clogged gutter', 'blocked gutter'],
+    'gutter-installation': ['gutter installation', 'install gutter', 'new gutter'],
+    'gutter-repair': ['gutter repair', 'fix gutter', 'leaking gutter'],
+    'gutter-guards': ['gutter guard', 'leaf guard', 'gutter protection', 'gutter screen'],
+
+    // Siding
+    'siding': ['siding', 'exterior cladding'],
+    'siding-installation': ['siding installation', 'install siding', 'new siding'],
+    'siding-repair': ['siding repair', 'fix siding', 'damaged siding'],
+
+    // Specialty services
+    'metal-roofing': ['metal roof', 'standing seam', 'metal panel'],
+    'flat-roof-repair': ['flat roof', 'low-slope', 'commercial flat'],
+    'skylight-installation': ['skylight', 'roof window', 'natural light'],
+    'roof-ventilation': ['ventilation', 'attic vent', 'ridge vent', 'soffit vent'],
+    'chimney-services': ['chimney', 'flue', 'chimney cap', 'chimney flash'],
+    'soffit-fascia': ['soffit', 'fascia', 'eave'],
+
+    // Maintenance
+    'residential-roof-maintenance': ['residential maintenance', 'home maintenance', 'annual maintenance'],
+    'commercial-roof-maintenance': ['commercial maintenance', 'business maintenance', 'building maintenance'],
+
+    // Restoration
+    'building-restoration': ['restoration', 'restore', 'full restoration', 'property restoration'],
   };
 
   for (const service of SERVICES) {
