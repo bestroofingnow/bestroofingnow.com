@@ -259,6 +259,8 @@ const nextConfig: NextConfig = {
       {
         source: '/:path*',
         headers: [
+          // HSTS - Force HTTPS for 1 year, include subdomains, allow preload list
+          { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
           // DNS prefetching for faster resource loading
           { key: 'X-DNS-Prefetch-Control', value: 'on' },
           // Security headers
