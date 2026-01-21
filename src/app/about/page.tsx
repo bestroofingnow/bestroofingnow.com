@@ -515,6 +515,16 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
+                href="https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition text-primary font-semibold"
+              >
+                <Award className="w-5 h-5" />
+                Lake Norman Chamber of Commerce Member
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
                 href="https://topsitenet.com/"
                 target="_blank"
                 rel="noopener noreferrer"
