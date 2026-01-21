@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Phone, CheckCircle, Clock, Shield, Users, FileText, Hammer, Sparkles } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Our Roofing Process | What to Expect | Best Roofing Now Charlotte NC',
@@ -112,6 +113,12 @@ const processSteps = [
 export default function ProcessPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Our Process', url: `${SITE_CONFIG.url}/process` },
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">

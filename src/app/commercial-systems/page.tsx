@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Phone, Building2, CheckCircle, Clock } from 'lucide-react';
 import { SITE_CONFIG, COMMERCIAL_SYSTEMS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Commercial Roofing Systems | TPO, EPDM, PVC, Metal | Charlotte NC',
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function CommercialSystemsPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Commercial Roofing Systems', url: `${SITE_CONFIG.url}/commercial-systems` },
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">

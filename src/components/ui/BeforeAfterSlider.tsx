@@ -8,6 +8,10 @@ interface BeforeAfterSliderProps {
   afterImage: string;
   beforeLabel?: string;
   afterLabel?: string;
+  /** Descriptive alt text for before image (defaults to "[beforeLabel] roof condition") */
+  beforeAlt?: string;
+  /** Descriptive alt text for after image (defaults to "[afterLabel] roof condition") */
+  afterAlt?: string;
   className?: string;
 }
 
@@ -16,8 +20,13 @@ export function BeforeAfterSlider({
   afterImage,
   beforeLabel = 'Before',
   afterLabel = 'After',
+  beforeAlt,
+  afterAlt,
   className = '',
 }: BeforeAfterSliderProps) {
+  // Generate descriptive alt text if not provided
+  const beforeAltText = beforeAlt || `${beforeLabel} roof condition - showing damage or wear`;
+  const afterAltText = afterAlt || `${afterLabel} roof condition - completed professional repair`;
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -67,7 +76,7 @@ export function BeforeAfterSlider({
       <div className="relative aspect-[4/3] w-full">
         <Image
           src={afterImage}
-          alt={afterLabel}
+          alt={afterAltText}
           fill
           className="object-cover"
           draggable={false}
@@ -86,7 +95,7 @@ export function BeforeAfterSlider({
         <div className="relative aspect-[4/3] w-full h-full">
           <Image
             src={beforeImage}
-            alt={beforeLabel}
+            alt={beforeAltText}
             fill
             className="object-cover"
             draggable={false}

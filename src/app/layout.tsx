@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -21,6 +21,17 @@ const inter = Inter({
   // Only load weights we actually use (400, 500, 600, 700)
   weight: ['400', '500', '600', '700'],
 });
+
+// Viewport configuration for mobile optimization
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  // Support for notched devices (iPhone X+, etc.)
+  viewportFit: 'cover',
+  themeColor: '#1A43AA',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
@@ -126,7 +137,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <meta name="theme-color" content="#1A43AA" />
         {/* CRITICAL: Preconnect to CMS for images */}
         <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />

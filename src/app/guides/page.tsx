@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { BookOpen, ArrowRight, Phone, FileText, DollarSign, Wrench, Shield, Users } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_GUIDES } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Roofing Guides & Resources | Best Roofing Now Charlotte NC',
@@ -34,6 +35,12 @@ const guideIcons: Record<string, typeof BookOpen> = {
 export default function GuidesPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Guides', url: `${SITE_CONFIG.url}/guides` },
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">

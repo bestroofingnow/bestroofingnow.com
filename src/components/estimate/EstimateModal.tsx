@@ -514,7 +514,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
           aria-label="Close modal"
         >
           <X className="w-5 h-5" aria-hidden="true" />
-          <span className="text-[10px] font-medium">close</span>
+          <span className="text-xs font-medium">close</span>
         </button>
 
         {/* Address Step */}
@@ -712,7 +712,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                       />
                     </svg>
                   </div>
-                  <div className="text-[9px] text-center text-gray-600 whitespace-pre-line leading-tight font-medium">
+                  <div className="text-[11px] text-center text-gray-600 whitespace-pre-line leading-tight font-medium">
                     {pitch.label}
                   </div>
                 </button>
@@ -798,7 +798,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                     <rect x="35" y="48" width="10" height="7" fill="#A0522D" stroke="#8B7355" strokeWidth="0.5"/>
                   </svg>
                 </div>
-                <div className="text-[10px] text-center text-gray-700 font-semibold">SIMPLE</div>
+                <div className="text-xs text-center text-gray-700 font-semibold">SIMPLE</div>
               </button>
 
               {/* Hip Roof */}
@@ -820,7 +820,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                     <rect x="20" y="45" width="40" height="10" fill="#E8DCD0" stroke="#8B7355" strokeWidth="1"/>
                   </svg>
                 </div>
-                <div className="text-[10px] text-center text-gray-700 font-semibold">HIP ROOF</div>
+                <div className="text-xs text-center text-gray-700 font-semibold">HIP ROOF</div>
               </button>
 
               {/* Hip Roof/Complex */}
@@ -844,7 +844,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                     <rect x="15" y="45" width="55" height="10" fill="#E8DCD0" stroke="#8B7355" strokeWidth="1"/>
                   </svg>
                 </div>
-                <div className="text-[10px] text-center text-gray-700 font-semibold">HIP/COMPLEX</div>
+                <div className="text-xs text-center text-gray-700 font-semibold">HIP/COMPLEX</div>
               </button>
             </div>
 
@@ -872,7 +872,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                     <rect x="5" y="50" width="70" height="6" fill="#E8DCD0" stroke="#8B7355" strokeWidth="1"/>
                   </svg>
                 </div>
-                <div className="text-[10px] text-center text-gray-700 font-semibold">COMPLEX ROOF</div>
+                <div className="text-xs text-center text-gray-700 font-semibold">COMPLEX ROOF</div>
               </button>
 
               {/* Castle Roof */}
@@ -901,7 +901,7 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                     <rect x="5" y="50" width="70" height="6" fill="#E8DCD0" stroke="#8B7355" strokeWidth="1"/>
                   </svg>
                 </div>
-                <div className="text-[10px] text-center text-gray-700 font-semibold">CASTLE ROOF</div>
+                <div className="text-xs text-center text-gray-700 font-semibold">CASTLE ROOF</div>
               </button>
             </div>
 

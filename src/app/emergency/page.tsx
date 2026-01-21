@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Phone, AlertTriangle, Clock, Shield, CheckCircle, Zap } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: '24/7 Emergency Roof Repair Charlotte NC | Best Roofing Now',
@@ -58,6 +59,12 @@ const emergencyTypes = [
 export default function EmergencyPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Emergency Services', url: `${SITE_CONFIG.url}/emergency` },
+        ]}
+      />
       {/* Emergency Hero */}
       <section className="bg-red-600 text-white py-16 md:py-20">
         <div className="container">

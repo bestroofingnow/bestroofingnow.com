@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CheckCircle, ArrowRight, Phone, Clock, DollarSign } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_MATERIALS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Roofing Materials Guide | Best Roofing Now Charlotte NC',
@@ -25,6 +26,12 @@ export const metadata: Metadata = {
 export default function MaterialsPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Materials', url: `${SITE_CONFIG.url}/materials` },
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">

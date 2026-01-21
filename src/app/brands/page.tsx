@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Phone, Award, Shield, CheckCircle } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_BRANDS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Roofing Brands We Install | GAF, CertainTeed, Owens Corning | Charlotte NC',
@@ -25,6 +26,12 @@ export const metadata: Metadata = {
 export default function BrandsPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Brands We Install', url: `${SITE_CONFIG.url}/brands` },
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
