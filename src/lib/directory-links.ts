@@ -53,6 +53,7 @@ export const DIRECTORY_LINKS: DirectoryLink[] = [
 
   // === INDUSTRY / CERTIFICATION === (Priority 1)
   { url: 'https://www.certainteed.com/profiles/bestroofingnowllc', name: 'CertainTeed Certified', category: 'certification', priority: 1 },
+  { url: 'https://www.charlotteroofinghub.com/companies/best-roofing-now', name: 'Charlotte Roofing Hub', category: 'industry', location: 'charlotte', priority: 1 },
   { url: 'https://www.roofingdirect.com/contractors/best-roofing-now-llc/', name: 'RoofingDirect', category: 'industry', priority: 2 },
   { url: 'https://roofingloc.com/branch/best-roofing-now-llc-charlotte-10130-mallard-creek-rd-300-charlotte-nc-28262', name: 'RoofingLoc', category: 'industry', priority: 3 },
   { url: 'https://projectmapit.com/best-roofing-now-llc', name: 'ProjectMapIt', category: 'industry', priority: 2 },
