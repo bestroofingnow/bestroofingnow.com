@@ -20,6 +20,7 @@ import { VoiceSearchFAQ, PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
+import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK, CHARLOTTE_VOICE_FAQS, CHARLOTTE_PEOPLE_ALSO_ASK } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs } from '@/lib/faqs';
@@ -1368,6 +1369,35 @@ export default async function LocationPage({ params }: PageProps) {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* Lake Norman Project Photo Gallery - GEO/Local SEO Signal */}
+      {isLakeNorman && (
+        <section className="section bg-light">
+          <div className="container">
+            <LocationProjectGallery
+              cities={
+                city === 'lake-norman'
+                  ? ['Huntersville', 'Cornelius', 'Davidson', 'Mooresville', 'Denver', 'Sherrills Ford']
+                  : city === 'huntersville-nc'
+                  ? ['Huntersville']
+                  : city === 'cornelius-nc'
+                  ? ['Cornelius']
+                  : city === 'davidson-nc'
+                  ? ['Davidson']
+                  : city === 'mooresville-nc'
+                  ? ['Mooresville']
+                  : city === 'denver-nc'
+                  ? ['Denver']
+                  : ['Huntersville', 'Cornelius', 'Davidson', 'Mooresville']
+              }
+              title={`Recent Roofing Projects in ${location.city}`}
+              subtitle={`See real roof installations we've completed for homeowners in ${location.city} and surrounding Lake Norman communities`}
+              maxProjects={6}
+              showViewAll={true}
+            />
           </div>
         </section>
       )}
