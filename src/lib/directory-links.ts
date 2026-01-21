@@ -118,6 +118,7 @@ export const PAGE_DIRECTORY_MAPPING: Record<string, DirectoryCategory[]> = {
   // Location pages - local chambers and maps
   'location': ['local-chamber', 'maps', 'business-directory'],
   'location-lake-norman': ['local-chamber'], // Will get Lake Norman specific links
+  'location-charlotte': ['industry', 'reviews', 'certification'], // Charlotte gets industry + reviews
 
   // Blog - social and media
   'blog': ['social', 'media'],

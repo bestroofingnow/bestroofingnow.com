@@ -20,7 +20,7 @@ import { VoiceSearchFAQ, PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
-import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK } from '@/lib/constants';
+import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK, CHARLOTTE_VOICE_FAQS, CHARLOTTE_PEOPLE_ALSO_ASK } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs } from '@/lib/faqs';
 import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
@@ -811,6 +811,51 @@ export default async function LocationPage({ params }: PageProps) {
         />
       )}
 
+      {/* Charlotte Voice Search FAQ Schema - AEO Optimization */}
+      {isCharlotte && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              '@id': `${pageUrl}/#charlotte-voice-faq`,
+              name: 'Charlotte NC Roofing FAQs - Voice Search Optimized',
+              description: 'Common questions about roofing services in Charlotte NC including roof costs, insurance claims, storm damage, and emergency repairs.',
+              mainEntity: CHARLOTTE_VOICE_FAQS.map((faq, index) => ({
+                '@type': 'Question',
+                '@id': `${pageUrl}/#clt-faq-${index + 1}`,
+                position: index + 1,
+                name: faq.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.answer,
+                  dateCreated: '2025-01-01',
+                  author: {
+                    '@type': 'Organization',
+                    '@id': `${SITE_CONFIG.url}/#organization`,
+                  },
+                },
+              })),
+              author: {
+                '@type': 'RoofingContractor',
+                '@id': `${SITE_CONFIG.url}/#organization`,
+                name: SITE_CONFIG.name,
+              },
+              about: {
+                '@type': 'Place',
+                name: 'Charlotte, North Carolina',
+                geo: {
+                  '@type': 'GeoCoordinates',
+                  latitude: 35.2271,
+                  longitude: -80.8431,
+                },
+              },
+            }),
+          }}
+        />
+      )}
+
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
         <div className="container">
@@ -1327,16 +1372,87 @@ export default async function LocationPage({ params }: PageProps) {
         </section>
       )}
 
+      {/* Charlotte Voice Search FAQs - AEO Optimization */}
+      {isCharlotte && (
+        <section className="section bg-light">
+          <div className="container">
+            <VoiceSearchFAQ
+              faqs={CHARLOTTE_VOICE_FAQS.slice(0, 6)}
+              city="Charlotte"
+            />
+          </div>
+        </section>
+      )}
+
+      {/* Charlotte People Also Ask - AEO Optimization */}
+      {isCharlotte && (
+        <section className="section">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <PeopleAlsoAsk
+                title="Charlotte Roofing Questions"
+                faqs={CHARLOTTE_PEOPLE_ALSO_ASK}
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Charlotte Trust Signals - BBB A+, Veteran-Owned, Charlotte Roofing Hub */}
+      {isCharlotte && (
+        <section className="py-8 bg-gradient-to-r from-primary to-primary-dark text-white">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
+              <div className="flex items-center gap-3">
+                <div className="bg-white/20 rounded-full p-3">
+                  <CheckCircle className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <p className="text-lg font-bold">BBB A+ Accredited & Veteran-Owned</p>
+                  <p className="text-white/80 text-sm">Charlotte&apos;s most trusted roofing contractor since 2020</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-3">
+                <a
+                  href="https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn bg-white text-primary hover:bg-gray-100"
+                >
+                  BBB Profile
+                </a>
+                <a
+                  href="https://www.charlotteroofinghub.com/companies/best-roofing-now"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn bg-white/20 text-white hover:bg-white/30"
+                >
+                  Charlotte Roofing Hub
+                </a>
+                <a
+                  href="https://g.page/r/CaUQ2-TmxmVZEAE/review"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn bg-white/20 text-white hover:bg-white/30"
+                >
+                  Google Reviews
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Directory Citations - Location specific */}
       <section className="py-6 bg-gray-50 border-t border-gray-100">
         <div className="container">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <DirectoryCitations
-              pageType={isLakeNorman ? 'location-lake-norman' : 'location'}
+              pageType={isCharlotte ? 'location-charlotte' : isLakeNorman ? 'location-lake-norman' : 'location'}
               locationSlug={city}
               maxLinks={3}
               variant="inline"
-              title={isLakeNorman ? 'Lake Norman Area Verified' : 'Verified Business'}
+              title={isCharlotte ? 'Charlotte\'s #1 Rated Roofer' : isLakeNorman ? 'Lake Norman Area Verified' : 'Verified Business'}
             />
             <p className="text-sm text-gray-500">
               Serving {location.city} &amp; {location.county} County

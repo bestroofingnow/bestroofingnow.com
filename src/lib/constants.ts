@@ -2084,6 +2084,106 @@ export const LAKE_NORMAN_PEOPLE_ALSO_ASK = [
   },
 ];
 
+// Charlotte Voice Search Optimized FAQs - Primary Market AEO
+export const CHARLOTTE_VOICE_FAQS = [
+  {
+    question: 'Who is the best roofing contractor in Charlotte NC?',
+    answer: 'Best Roofing Now is Charlotte\'s #1 rated roofing contractor with a perfect 5-star Google rating, 500+ roofs installed, and BBB A+ accreditation. We\'re veteran-owned and Charlotte-based, serving the entire metro area. Call (704) 605-6047 for a free inspection.',
+    keywords: ['best roofing contractor Charlotte NC', 'top roofer Charlotte', '#1 roofing company Charlotte'],
+  },
+  {
+    question: 'How much does a new roof cost in Charlotte NC?',
+    answer: 'A new roof in Charlotte NC costs $8,000 to $25,000 for most homes, depending on size and materials. Best Roofing Now offers free detailed estimates with no hidden fees. We also provide flexible financing options. Call (704) 605-6047 for your free estimate.',
+    keywords: ['roof cost Charlotte NC', 'new roof price Charlotte', 'Charlotte roof replacement cost'],
+  },
+  {
+    question: 'Who does emergency roof repair in Charlotte?',
+    answer: 'Best Roofing Now provides 24/7 emergency roof repair in Charlotte NC. We respond quickly to storm damage, leaks, and fallen trees. Our team tarps damaged areas immediately and handles insurance claims. Call (704) 605-6047 anytime for emergency service.',
+    keywords: ['emergency roof repair Charlotte', '24/7 roofer Charlotte NC', 'urgent roof repair Charlotte'],
+  },
+  {
+    question: 'What roofer works with insurance in Charlotte?',
+    answer: 'Best Roofing Now specializes in insurance claims for Charlotte homeowners. We document all damage with drone inspections, meet with adjusters, and handle paperwork at no extra charge. We\'ve helped 500+ Charlotte families with storm damage claims. Call (704) 605-6047.',
+    keywords: ['Charlotte roofing insurance claims', 'storm damage roofer Charlotte', 'insurance roof repair Charlotte NC'],
+  },
+  {
+    question: 'Who is a BBB A+ rated roofer in Charlotte?',
+    answer: 'Best Roofing Now is BBB A+ accredited since 2021 with a perfect 5-star Google rating. We\'re Charlotte\'s most trusted roofing contractor—veteran-owned, family-operated, and committed to honest assessments. Call (704) 605-6047 for quality you can trust.',
+    keywords: ['BBB A+ roofer Charlotte', 'accredited roofing company Charlotte NC', 'trusted roofer Charlotte'],
+  },
+  {
+    question: 'Who fixes hail damage roofs in Charlotte NC?',
+    answer: 'Best Roofing Now is Charlotte\'s hail damage specialist. We provide free drone inspections, detailed damage documentation, and full insurance claim assistance. Charlotte averages 3-4 major hail events yearly—we\'ve repaired thousands of hail-damaged roofs. Call (704) 605-6047.',
+    keywords: ['hail damage roof Charlotte', 'Charlotte hail repair roofer', 'storm damage Charlotte NC'],
+  },
+  {
+    question: 'Is there a veteran-owned roofer in Charlotte?',
+    answer: 'Yes! Best Roofing Now is proudly veteran-owned and family-operated. Founded in Charlotte in 2020, we bring military values of integrity, discipline, and quality workmanship to every roofing project. Call (704) 605-6047 for honest, reliable service.',
+    keywords: ['veteran-owned roofer Charlotte', 'military roofer Charlotte NC', 'veteran roofing company'],
+  },
+  {
+    question: 'What roofing company serves Myers Park Charlotte?',
+    answer: 'Best Roofing Now serves Myers Park and all Charlotte neighborhoods. We specialize in historic home roofing, working with architectural shingles and premium materials that complement Myers Park\'s elegant homes. Call (704) 605-6047 for your Myers Park roof estimate.',
+    keywords: ['Myers Park roofer', 'roofing contractor Myers Park Charlotte', 'historic home roofing Charlotte'],
+  },
+  {
+    question: 'Who does roof replacement in Ballantyne?',
+    answer: 'Best Roofing Now is Ballantyne\'s trusted roofing contractor. We understand HOA requirements and provide all documentation for architectural review. With 500+ roofs installed, we\'re South Charlotte\'s go-to roofer. Call (704) 605-6047 for your Ballantyne estimate.',
+    keywords: ['Ballantyne roof replacement', 'roofer Ballantyne Charlotte', 'South Charlotte roofing contractor'],
+  },
+  {
+    question: 'How long does roof replacement take in Charlotte?',
+    answer: 'Most Charlotte roof replacements take 1-3 days depending on size and weather. Best Roofing Now completes most homes in 1-2 days with our experienced crews. We protect your landscaping and clean up completely. Call (704) 605-6047 to schedule.',
+    keywords: ['roof replacement time Charlotte', 'how long new roof Charlotte NC', 'fast roof replacement Charlotte'],
+  },
+  {
+    question: 'What roofing materials are best for Charlotte weather?',
+    answer: 'For Charlotte\'s humid climate and storm exposure, GAF Timberline HDZ or CertainTeed Landmark shingles with impact resistance rating are ideal. Best Roofing Now recommends Class 4 impact-resistant shingles for maximum hail protection. Call (704) 605-6047 for expert advice.',
+    keywords: ['best roofing materials Charlotte', 'Charlotte weather roof', 'impact resistant shingles Charlotte NC'],
+  },
+  {
+    question: 'Who is the cheapest roofer in Charlotte NC?',
+    answer: 'Best Roofing Now offers competitive Charlotte pricing without sacrificing quality. We provide transparent quotes with no hidden fees, flexible financing, and match comparable written estimates. Quality roofing starts at $4-7 per square foot installed. Call (704) 605-6047.',
+    keywords: ['affordable roofer Charlotte', 'cheap roof Charlotte NC', 'best value roofing Charlotte'],
+  },
+];
+
+// Charlotte People Also Ask Content - Primary Market PAA
+export const CHARLOTTE_PEOPLE_ALSO_ASK = [
+  {
+    question: 'What roofing materials last longest in Charlotte\'s climate?',
+    answer: 'In Charlotte\'s humid subtropical climate with hot summers and severe storms, architectural shingles typically last 20-30 years. Metal roofing lasts 40-70 years and handles Charlotte\'s hail well. For maximum durability, Best Roofing Now recommends Class 4 impact-resistant shingles that can withstand Charlotte\'s 3-4 major hail events per year.',
+  },
+  {
+    question: 'How often does Charlotte NC get hail damage?',
+    answer: 'Charlotte experiences 3-4 significant hail events annually, typically from March through August. The I-85 corridor and areas near the airport see the most hail activity. Best Roofing Now has repaired thousands of hail-damaged roofs and specializes in insurance claim assistance for Charlotte homeowners.',
+  },
+  {
+    question: 'Do I need a permit for roof replacement in Charlotte?',
+    answer: 'Yes, Charlotte-Mecklenburg requires building permits for roof replacement. Permits cost $100-$300 and ensure work meets code. Best Roofing Now handles all permit applications as part of our service—no extra charge or hassle for homeowners. We pull permits for every job.',
+  },
+  {
+    question: 'What is the average roof lifespan in Charlotte NC?',
+    answer: 'Roofs in Charlotte typically last 18-25 years due to our humid summers, severe thunderstorms, and intense UV exposure. Proper ventilation and quality installation extend lifespan by 3-5 years. Trees overhanging roofs (common in Myers Park, Dilworth) can reduce lifespan by promoting moss and debris buildup.',
+  },
+  {
+    question: 'Which Charlotte neighborhoods need roofing most often?',
+    answer: 'Older Charlotte neighborhoods like Myers Park, Dilworth, Plaza Midwood, and Elizabeth have many homes 50-100+ years old that need regular roof attention. Mature tree canopies cause debris and moisture issues. Newer areas like Ballantyne and Steele Creek have fewer issues but still experience storm damage.',
+  },
+  {
+    question: 'How much does roof repair cost in Charlotte NC?',
+    answer: 'Minor roof repairs in Charlotte cost $300-$1,500 for small leaks or missing shingles. Storm damage repairs range from $1,000-$5,000. Major repairs approach $5,000-$10,000. Best Roofing Now provides free inspections to give accurate repair vs. replacement recommendations.',
+  },
+  {
+    question: 'What should I look for in a Charlotte roofing contractor?',
+    answer: 'Look for: NC licensed contractor, liability insurance and workers comp, BBB accreditation, Google reviews above 4.5 stars, manufacturer certifications (GAF, CertainTeed), local Charlotte address, and detailed written estimates. Best Roofing Now meets all these criteria with a perfect 5-star rating and BBB A+.',
+  },
+  {
+    question: 'Does Charlotte get tornadoes that damage roofs?',
+    answer: 'Charlotte experiences 2-3 tornadoes per year on average, mostly EF0-EF1. More common are straight-line winds from severe thunderstorms that can reach 70+ MPH and cause significant roof damage. Best Roofing Now provides 24/7 emergency response for all storm damage types.',
+  },
+];
+
 // People Also Ask Content - Expandable Q&A format
 export const PEOPLE_ALSO_ASK = {
   roofReplacement: [
