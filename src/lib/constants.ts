@@ -1997,6 +1997,93 @@ export const VOICE_SEARCH_FAQS = [
   },
 ];
 
+// ============================================
+// LAKE NORMAN SPECIFIC AEO CONTENT
+// Voice search and PAA optimized for Lake Norman area
+// ============================================
+
+// Lake Norman Voice Search Optimized FAQs
+export const LAKE_NORMAN_VOICE_FAQS = [
+  {
+    question: 'Who is the best roofer near Lake Norman?',
+    answer: 'Best Roofing Now is Lake Norman\'s top-rated waterfront roofing contractor with a perfect 5-star Google rating and BBB A+ accreditation. We specialize in wind-resistant installations for lakefront homes and serve Cornelius, Davidson, Huntersville, Mooresville, and Denver NC. Call (704) 605-6047.',
+    keywords: ['best roofer Lake Norman', 'Lake Norman roofing contractor', 'lakefront roofer NC'],
+  },
+  {
+    question: 'How much does a roof cost in Lake Norman NC?',
+    answer: 'Lake Norman roof replacement typically costs $8,000 to $30,000 depending on home size and complexity. Lakefront homes may cost 10-15% more due to wind-resistant materials and installation requirements. Best Roofing Now offers free estimates for Lake Norman homeowners.',
+    keywords: ['roof cost Lake Norman', 'Lake Norman roof replacement price', 'new roof Lake Norman NC'],
+  },
+  {
+    question: 'Who does roofing in Cornelius NC?',
+    answer: 'Best Roofing Now is the #1 rated roofing contractor in Cornelius NC, serving the Lake Norman area with a 5-star Google rating. We specialize in lakefront roofing, storm damage repair, and insurance claims. Call (704) 605-6047 for a free inspection.',
+    keywords: ['Cornelius NC roofer', 'roofing contractor Cornelius', 'roofer near Cornelius'],
+  },
+  {
+    question: 'What roofing company serves Davidson NC?',
+    answer: 'Best Roofing Now proudly serves Davidson NC and the Lake Norman area. We are a BBB A+ accredited, veteran-owned roofing company with expertise in lakefront and waterfront roofing installations. Free inspections available at (704) 605-6047.',
+    keywords: ['Davidson NC roofing company', 'roofer Davidson', 'roofing contractor Davidson NC'],
+  },
+  {
+    question: 'Who is the best roofer in Huntersville NC?',
+    answer: 'Best Roofing Now is Huntersville\'s most trusted roofing contractor with a perfect 5-star rating. We are a Lake Norman Chamber member and specialize in residential roofing, storm damage, and insurance claims. Call (704) 605-6047.',
+    keywords: ['best roofer Huntersville NC', 'Huntersville roofing contractor', 'top roofer Huntersville'],
+  },
+  {
+    question: 'Who fixes storm damage roofs near Lake Norman?',
+    answer: 'Best Roofing Now is Lake Norman\'s storm damage specialist. We provide 24/7 emergency service, handle insurance claims, and specialize in hail and wind damage repair for lakefront homes. Call (704) 605-6047 for immediate assistance.',
+    keywords: ['Lake Norman storm damage roof', 'hail damage Lake Norman', 'emergency roofer Lake Norman'],
+  },
+  {
+    question: 'What roofing materials are best for lakefront homes?',
+    answer: 'Lakefront homes on Lake Norman need wind-resistant materials rated for 130+ MPH winds. Best Roofing Now recommends GAF Timberline HDZ or CertainTeed Landmark Pro shingles with 6-nail pattern installation for maximum protection against lake winds.',
+    keywords: ['lakefront roofing materials', 'waterfront roof shingles', 'wind resistant roofing Lake Norman'],
+  },
+  {
+    question: 'Is there a roofing company near Mooresville NC?',
+    answer: 'Yes, Best Roofing Now serves Mooresville NC and the entire Lake Norman region. We are a veteran-owned, BBB A+ accredited roofing company with 500+ roofs installed. Call (704) 605-6047 for a free estimate in Mooresville.',
+    keywords: ['Mooresville roofing company', 'roofer near Mooresville', 'Mooresville NC roof repair'],
+  },
+  {
+    question: 'Who is a Lake Norman Chamber member roofer?',
+    answer: 'Best Roofing Now is an official Lake Norman Chamber of Commerce member. We are the trusted roofing contractor for lakefront communities including Cornelius, Davidson, Huntersville, and Mooresville. Call (704) 605-6047.',
+    keywords: ['Lake Norman Chamber roofer', 'chamber member roofing contractor', 'local Lake Norman roofer'],
+  },
+  {
+    question: 'What roofer works with insurance in Lake Norman?',
+    answer: 'Best Roofing Now specializes in insurance claims for Lake Norman homeowners. We document storm and hail damage, meet with adjusters, and handle all paperwork at no extra charge. Call (704) 605-6047 for claim assistance.',
+    keywords: ['Lake Norman insurance roofer', 'roofing insurance claims Lake Norman', 'storm damage claims Lake Norman'],
+  },
+];
+
+// Lake Norman People Also Ask Content
+export const LAKE_NORMAN_PEOPLE_ALSO_ASK = [
+  {
+    question: 'What roofing materials are best for lakefront homes?',
+    answer: 'For Lake Norman lakefront homes, wind-resistant architectural shingles rated for 130+ MPH winds are essential. Best Roofing Now recommends GAF Timberline HDZ or CertainTeed Landmark Pro with enhanced wind warranties. Metal roofing is also excellent for waterfront properties due to its durability against moisture and wind.',
+  },
+  {
+    question: 'How do Lake Norman storms affect roofs?',
+    answer: 'Lake Norman\'s position creates unique weather patterns. Storms intensify over the 32,510-acre lake surface, bringing stronger winds and more hail to lakefront communities. The open water exposure means homes in Cornelius, Davidson, and Mooresville experience 20-30% more wind damage than inland areas.',
+  },
+  {
+    question: 'Do I need a special permit for roofing in Lake Norman?',
+    answer: 'Most Lake Norman towns (Cornelius, Davidson, Huntersville, Mooresville) require building permits for roof replacement. Permit costs range from $100-$300. Best Roofing Now handles all permit applications as part of our service—no extra charge or hassle for homeowners.',
+  },
+  {
+    question: 'What is the average roof lifespan in Lake Norman NC?',
+    answer: 'Roofs in the Lake Norman area typically last 18-25 years due to our humid summers, severe storms, and UV exposure. Lakefront homes may see shorter lifespans (15-20 years) due to increased wind and moisture. Proper installation and ventilation can extend life by 3-5 years.',
+  },
+  {
+    question: 'Which roofing company do Lake Norman HOAs recommend?',
+    answer: 'Many Lake Norman HOAs and property management companies recommend Best Roofing Now for our quality workmanship, proper licensing, and liability insurance. We understand HOA requirements and provide all documentation needed for architectural review approval.',
+  },
+  {
+    question: 'How much does a roof replacement cost in Cornelius NC?',
+    answer: 'Roof replacement in Cornelius NC costs $9,000 to $28,000 for average homes. Lakefront properties may cost 10-15% more for wind-resistant installation. Best Roofing Now provides free, detailed estimates with no hidden fees for Cornelius homeowners.',
+  },
+];
+
 // People Also Ask Content - Expandable Q&A format
 export const PEOPLE_ALSO_ASK = {
   roofReplacement: [

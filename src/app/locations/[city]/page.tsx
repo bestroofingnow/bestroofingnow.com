@@ -14,11 +14,13 @@ import {
   WebPageSchema,
   HeroImageSchema,
   LocationFAQSchema,
+  VoiceSearchFAQSchema,
 } from '@/components/seo/SchemaMarkup';
+import { VoiceSearchFAQ, PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
-import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
+import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs } from '@/lib/faqs';
 import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
@@ -599,13 +601,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   // Special optimization for Charlotte - primary target market
   const isCharlotte = city === 'charlotte-nc';
+  // Special optimization for Lake Norman - waterfront market
+  const isLakeNormanPage = city === 'lake-norman';
+  // Check if this is a Lake Norman area town
+  const isLakeNormanArea = LAKE_NORMAN_LOCATIONS.some(ln => city.includes(ln.replace('-nc', '')));
 
   const title = isCharlotte
     ? `#1 Roofing Contractor Charlotte NC | Roofing Company Near Me | BBB A+`
+    : isLakeNormanPage
+    ? `#1 Lake Norman Roofing Contractor | Waterfront Roof Specialists | BBB A+`
+    : isLakeNormanArea
+    ? `Roofing Contractor ${location.city} NC | Lake Norman Roofers | 5-Star Rated`
     : `Roofing Contractor ${location.city}, ${location.state} | Roof Repair & Replacement`;
 
   const description = isCharlotte
     ? `Charlotte's top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts, insurance claim assistance. Call (704) 605-6047.`
+    : isLakeNormanPage
+    ? `Lake Norman's trusted waterfront roofing experts. Serving Cornelius, Davidson, Huntersville, Mooresville & Denver. Wind-resistant installations, 5-star rated, Chamber member. Free inspections. (704) 605-6047.`
+    : isLakeNormanArea
+    ? `${location.city}'s top-rated roofing contractor serving Lake Norman. 5-star Google rating, BBB A+ accredited, veteran-owned. Storm damage experts, insurance claim assistance. Free estimates! (704) 605-6047.`
     : `Best Roofing Now serves ${location.city}, ${location.state} with professional roofing services. Residential & commercial roofing, roof repair, replacement, and emergency services. Free estimates!`;
 
   const keywords = isCharlotte
@@ -623,6 +637,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         'best roofer Charlotte',
         'storm damage roof repair Charlotte',
         'hail damage roof Charlotte',
+      ]
+    : isLakeNormanPage || isLakeNormanArea
+    ? [
+        `roofing contractor Lake Norman`,
+        `Lake Norman roofing company`,
+        `waterfront roofer Lake Norman`,
+        `lakefront roofing NC`,
+        `${location.city} roofers`,
+        `roof repair ${location.city}`,
+        `storm damage Lake Norman`,
+        `Cornelius roofing`,
+        `Davidson roofing contractor`,
+        `Huntersville roofers`,
+        `Mooresville roof repair`,
+        `wind resistant roofing Lake Norman`,
       ]
     : [
         `roofing contractor ${location.city} ${location.state}`,
@@ -647,9 +676,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: isCharlotte
         ? `#1 Roofing Contractor Charlotte NC | Best Roofing Now`
+        : isLakeNormanPage
+        ? `#1 Lake Norman Roofing Contractor | Waterfront Specialists`
+        : isLakeNormanArea
+        ? `${location.city} Roofing | Lake Norman's Trusted Roofers`
         : `Roofing Services in ${location.city}, ${location.state}`,
       description: isCharlotte
         ? `Charlotte's top-rated roofing contractor. 5-star rating, veteran-owned, BBB A+ accredited. Free roof inspections.`
+        : isLakeNormanPage || isLakeNormanArea
+        ? `Lake Norman's trusted waterfront roofing experts. 5-star rated, Chamber member. Wind-resistant installations. Free inspections.`
         : `Professional roofing services in ${location.city}. Free estimates, quality workmanship, BBB A+ rated.`,
       url: `${SITE_CONFIG.url}/locations/${city}`,
       type: 'website',
@@ -666,9 +701,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: isCharlotte
         ? `#1 Roofing Contractor Charlotte NC`
+        : isLakeNormanPage
+        ? `#1 Lake Norman Roofing Contractor`
+        : isLakeNormanArea
+        ? `${location.city} Roofing | Lake Norman Roofers`
         : `Roofing Services in ${location.city}, ${location.state}`,
       description: isCharlotte
         ? `Charlotte's top-rated roofing contractor. Free roof inspections.`
+        : isLakeNormanPage || isLakeNormanArea
+        ? `Lake Norman's trusted waterfront roofers. 5-star rated. Free inspections.`
         : `Professional roofing services in ${location.city}. Free estimates.`,
       images: [ogImage],
     },
@@ -729,6 +770,46 @@ export default async function LocationPage({ params }: PageProps) {
         caption={`Professional roofing services in ${location.city}, ${location.state} - Best Roofing Now`}
         pageUrl={pageUrl}
       />
+
+      {/* Lake Norman Voice Search FAQ Schema - AEO Optimization */}
+      {isLakeNorman && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              '@id': `${pageUrl}/#lake-norman-voice-faq`,
+              name: 'Lake Norman Roofing FAQs - Voice Search Optimized',
+              description: 'Common questions about roofing services in the Lake Norman area including Cornelius, Davidson, Huntersville, and Mooresville NC.',
+              mainEntity: LAKE_NORMAN_VOICE_FAQS.map((faq, index) => ({
+                '@type': 'Question',
+                '@id': `${pageUrl}/#lkn-faq-${index + 1}`,
+                position: index + 1,
+                name: faq.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.answer,
+                  dateCreated: '2025-01-01',
+                  author: {
+                    '@type': 'Organization',
+                    '@id': `${SITE_CONFIG.url}/#organization`,
+                  },
+                },
+              })),
+              author: {
+                '@type': 'RoofingContractor',
+                '@id': `${SITE_CONFIG.url}/#organization`,
+                name: SITE_CONFIG.name,
+              },
+              about: {
+                '@type': 'Place',
+                name: 'Lake Norman, North Carolina',
+              },
+            }),
+          }}
+        />
+      )}
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
@@ -1182,6 +1263,69 @@ export default async function LocationPage({ params }: PageProps) {
         title={`${location.city} Roofing FAQ`}
         subtitle={`Common questions about roofing services in ${location.city}, ${location.state}`}
       />
+
+      {/* Lake Norman Voice Search FAQs - AEO Optimization */}
+      {isLakeNorman && (
+        <section className="section bg-light">
+          <div className="container">
+            <VoiceSearchFAQ
+              faqs={LAKE_NORMAN_VOICE_FAQS.slice(0, 6)}
+              city="Lake Norman"
+            />
+          </div>
+        </section>
+      )}
+
+      {/* Lake Norman People Also Ask - AEO Optimization */}
+      {isLakeNorman && (
+        <section className="section">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <PeopleAlsoAsk
+                title="Lake Norman Roofing Questions"
+                faqs={LAKE_NORMAN_PEOPLE_ALSO_ASK}
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Lake Norman Chamber Member Badge - Trust Signal */}
+      {isLakeNorman && (
+        <section className="py-8 bg-gradient-to-r from-primary to-primary-dark text-white">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
+              <div className="flex items-center gap-3">
+                <div className="bg-white/20 rounded-full p-3">
+                  <CheckCircle className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <p className="text-lg font-bold">Lake Norman Chamber of Commerce Member</p>
+                  <p className="text-white/80 text-sm">Proud member serving the Lake Norman community</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <a
+                  href="https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn bg-white text-primary hover:bg-gray-100"
+                >
+                  View Chamber Profile
+                </a>
+                <a
+                  href="https://lknconnectcommunity.com/business-listing/best-roofing-now-2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn bg-white/20 text-white hover:bg-white/30"
+                >
+                  LKN Connect
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Directory Citations - Location specific */}
       <section className="py-6 bg-gray-50 border-t border-gray-100">
