@@ -59,7 +59,7 @@ export const DIRECTORY_LINKS: DirectoryLink[] = [
 
   // === LOCAL CHAMBERS / LAKE NORMAN === (Priority 1-2)
   { url: 'https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292', name: 'Lake Norman Chamber', category: 'local-chamber', location: 'lake-norman', priority: 1 },
-  { url: 'https://lknconnectcommunity.com/business-listing/best-roofing-now/', name: 'LKN Connect', category: 'local-chamber', location: 'lake-norman', priority: 1 },
+  { url: 'https://lknconnectcommunity.com/business-listing/best-roofing-now-2/', name: 'LKN Connect', category: 'local-chamber', location: 'lake-norman', priority: 1 },
   { url: 'https://www.businessleadersofcharlotte.com/Sys/PublicProfile/66833596', name: 'Business Leaders of Charlotte', category: 'local-chamber', location: 'charlotte', priority: 2 },
 
   // === GENERAL BUSINESS DIRECTORIES === (Priority 2-4)
