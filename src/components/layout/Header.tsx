@@ -119,7 +119,7 @@ export function Header() {
             <div className="lg:hidden flex items-center gap-2">
               <a
                 href={`tel:${SITE_CONFIG.phoneClean}`}
-                className="flex items-center gap-1.5 px-3 py-2 bg-primary text-white rounded-lg font-semibold text-sm"
+                className="flex items-center gap-1.5 px-3 py-3 min-h-[44px] bg-primary text-white rounded-lg font-semibold text-sm"
                 aria-label={`Call ${SITE_CONFIG.phone}`}
                 onClick={() => trackPhoneClick('header-mobile')}
               >

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import {
   Phone,
   Mail,
@@ -17,6 +18,42 @@ import {
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { FinancingBanner } from '@/components/ui/FinancingBanner';
+
+// Schema markup for Contact page
+const contactPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact Best Roofing Now',
+  description: 'Contact Best Roofing Now for free roof inspections, estimates, and 24/7 emergency roofing services in Charlotte NC and surrounding areas.',
+  url: `${SITE_CONFIG.url}/contact`,
+  mainEntity: {
+    '@type': 'LocalBusiness',
+    '@id': `${SITE_CONFIG.url}/#business`,
+    name: SITE_CONFIG.name,
+    telephone: SITE_CONFIG.phone,
+    email: SITE_CONFIG.email,
+    url: SITE_CONFIG.url,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: SITE_CONFIG.address.street,
+      addressLocality: SITE_CONFIG.address.city,
+      addressRegion: SITE_CONFIG.address.state,
+      postalCode: SITE_CONFIG.address.zip,
+      addressCountry: 'US',
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: SITE_CONFIG.customerCount.toString(),
+    },
+  },
+};
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -612,6 +649,13 @@ export default function ContactPage() {
           </a>
         </div>
       </section>
+
+      {/* Schema Markup */}
+      <Script
+        id="contact-page-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
     </>
   );
 }

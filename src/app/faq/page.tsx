@@ -13,8 +13,9 @@ import {
   Building2,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
-import { SITE_CONFIG, FAQ_CATEGORIES, ALL_FAQS } from '@/lib/constants';
+import { BreadcrumbSchema, FAQSchema, VoiceSearchFAQSchema } from '@/components/seo/SchemaMarkup';
+import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
+import { SITE_CONFIG, FAQ_CATEGORIES, ALL_FAQS, VOICE_SEARCH_FAQS as VOICE_FAQS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function FAQPage() {
         ]}
       />
       <FAQSchema faqs={ALL_FAQS} />
+      <VoiceSearchFAQSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -216,6 +218,16 @@ export default function FAQPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Voice Search Optimized FAQs */}
+      <section className="section">
+        <div className="container">
+          <VoiceSearchFAQ
+            faqs={VOICE_FAQS.slice(0, 6)}
+            city="Charlotte"
+          />
         </div>
       </section>
 

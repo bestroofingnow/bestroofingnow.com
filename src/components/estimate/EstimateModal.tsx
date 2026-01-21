@@ -530,6 +530,9 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               <p className="text-gray-600">
                 Enter your address to get started
               </p>
+              <p className="text-sm text-gray-500 mt-2">
+                Takes about 90 seconds - Free, no obligation
+              </p>
             </div>
 
             <div className="relative">
@@ -619,6 +622,10 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         {step === 'roofType' && (
           <div className="p-6 md:p-8">
             <div className="mb-6">
+              {/* Progress Bar */}
+              <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
+                <div className="bg-primary h-2 rounded-full transition-all duration-300" style={{ width: '25%' }} />
+              </div>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                 <span className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">1</span>
                 <span>of 4</span>
@@ -672,6 +679,10 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         {step === 'steepness' && (
           <div className="p-6 md:p-8">
             <div className="mb-6">
+              {/* Progress Bar */}
+              <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
+                <div className="bg-primary h-2 rounded-full transition-all duration-300" style={{ width: '50%' }} />
+              </div>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                 <span className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">2</span>
                 <span>of 4</span>
@@ -767,6 +778,10 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         {step === 'complexity' && (
           <div className="p-6 md:p-8">
             <div className="mb-6">
+              {/* Progress Bar */}
+              <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
+                <div className="bg-primary h-2 rounded-full transition-all duration-300" style={{ width: '75%' }} />
+              </div>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                 <span className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">3</span>
                 <span>of 4</span>
@@ -954,6 +969,10 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
         {step === 'stories' && (
           <div className="p-6 md:p-8">
             <div className="mb-6">
+              {/* Progress Bar */}
+              <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
+                <div className="bg-primary h-2 rounded-full transition-all duration-300" style={{ width: '100%' }} />
+              </div>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                 <span className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">4</span>
                 <span>of 4</span>
@@ -1018,6 +1037,21 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
               <p className="text-gray-600">
                 Enter your contact info to see your personalized estimate
               </p>
+              {/* Trust Signals */}
+              <div className="flex items-center justify-center gap-3 mt-3 text-xs text-gray-500">
+                <span className="flex items-center gap-1">
+                  <CheckCircle className="w-3.5 h-3.5 text-green-500" aria-hidden="true" />
+                  100% Free
+                </span>
+                <span className="flex items-center gap-1">
+                  <CheckCircle className="w-3.5 h-3.5 text-green-500" aria-hidden="true" />
+                  No Spam
+                </span>
+                <span className="flex items-center gap-1">
+                  <CheckCircle className="w-3.5 h-3.5 text-green-500" aria-hidden="true" />
+                  BBB A+ Rated
+                </span>
+              </div>
             </div>
 
             {estimate && (

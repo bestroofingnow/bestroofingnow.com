@@ -28,6 +28,7 @@ import {
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
+import { PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
@@ -729,6 +730,23 @@ export default function RoofingServicesPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* People Also Ask Section - AEO Optimized */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <PeopleAlsoAsk
+              title="People Also Ask About Roofing in Charlotte"
+              faqs={[
+                { question: 'Who is the best roofing contractor in Charlotte NC?', answer: 'Best Roofing Now is Charlotte\'s #1 rated roofing contractor with a perfect 5-star Google rating, BBB A+ accreditation, and 500+ roofs installed. We\'re a veteran-owned, family-operated roofing company serving Charlotte and surrounding areas within 50 miles.' },
+                { question: 'How much does it cost to replace a roof in Charlotte NC?', answer: 'A roof replacement in Charlotte typically costs between $8,000 and $25,000 for an average home. The exact price depends on your roof size, material choice, and complexity. Best Roofing Now offers free estimates with no hidden fees.' },
+                { question: 'How long does a roof replacement take?', answer: 'Most residential roof replacements in Charlotte take just 1-2 days. Larger or more complex roofs may take 2-3 days. We work efficiently while maintaining quality, and we always clean up thoroughly when finished.' },
+                { question: 'Does insurance cover roof replacement in Charlotte?', answer: 'Homeowner\'s insurance typically covers roof replacement when damage is caused by storms, hail, wind, or other covered perils. Best Roofing Now provides free inspections and helps document damage for insurance claims.' },
+              ]}
+            />
           </div>
         </div>
       </section>
