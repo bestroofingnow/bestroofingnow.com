@@ -501,6 +501,34 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Industry Recognition */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Industry Recognition
+            </h2>
+            <p className="text-gray text-lg mb-8">
+              Best Roofing Now is recognized as a top-rated roofing company serving the Charlotte metro area.
+              Our commitment to quality workmanship, honest pricing, and exceptional customer service has earned
+              us recognition from industry directories and customer review platforms.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://topsitenet.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition text-primary font-semibold"
+              >
+                <Award className="w-5 h-5" />
+                Featured on Topsitenet.com
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <CTASection />
     </>
