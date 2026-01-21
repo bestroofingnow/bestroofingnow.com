@@ -89,7 +89,7 @@ const authorityLinks = {
 const businessProfiles = {
   google: 'https://www.google.com/maps/place/Best+Roofing+Now',
   yelp: 'https://www.yelp.com/biz/best-roofing-now-charlotte',
-  bbb: 'https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-90793988',
+  bbb: 'https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763',
   angi: 'https://www.angi.com/companylist/us/nc/charlotte/best-roofing-now-reviews-10768833.htm',
   facebook: 'https://www.facebook.com/bestroofingnow',
   projectMapIt: 'https://projectmapit.com/best-roofing-now-llc/map',
@@ -817,7 +817,7 @@ export default function RoofingServicesPage() {
                 Visit Our Charlotte Office
               </h2>
               <p className="text-gray">
-                Located at 5701 N Sharon Amity Rd Suite B, Charlotte, NC 28215
+                Located at 10130 Mallard Creek Rd, Ste 300, Charlotte, NC 28262
               </p>
             </div>
 
@@ -825,7 +825,7 @@ export default function RoofingServicesPage() {
               {/* Google Map Embed */}
               <div className="aspect-video w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.0088!2d-80.7802!3d35.2468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE0JzQ4LjUiTiA4MMKwNDYnNDguNyJX!5e0!3m2!1sen!2sus!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.5!2d-80.7696!3d35.3388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc6e4dbd0a5%3A0x59e5c6e6d410a5!2s10130+Mallard+Creek+Rd%2C+Charlotte%2C+NC+28262!5e0!3m2!1sen!2sus!4v1705000000000"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -845,9 +845,9 @@ export default function RoofingServicesPage() {
                     <div>
                       <h3 className="font-semibold text-dark mb-1">Address</h3>
                       <p className="text-gray text-sm">
-                        5701 N Sharon Amity Rd<br />
-                        Suite B<br />
-                        Charlotte, NC 28215
+                        10130 Mallard Creek Rd<br />
+                        Ste 300<br />
+                        Charlotte, NC 28262
                       </p>
                     </div>
                   </div>
