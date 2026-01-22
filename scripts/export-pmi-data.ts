@@ -208,10 +208,10 @@ async function exportData() {
       active: fullProject.active,
       photoCount: fullProject.photoCount,
       slug: generateSlug(fullProject),
-      photos: fullProject.photos?.map(photo => ({
+      photos: fullProject.photos?.map((photo: any) => ({
         pmiId: photo._id,
-        url: photo.url,
-        thumbnailUrl: photo.thumbnailUrl || photo.url,
+        url: photo.path?.large || photo.url,
+        thumbnailUrl: photo.path?.small || photo.thumbnailUrl || photo.path?.large || photo.url,
         caption: photo.caption || null,
         order: photo.order || 0,
       })) || [],

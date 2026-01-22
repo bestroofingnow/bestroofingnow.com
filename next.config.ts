@@ -67,6 +67,18 @@ const nextConfig: NextConfig = {
         hostname: '*.cloudfront.net',
         pathname: '/**',
       },
+      // Google Cloud Storage (PMI photos)
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+        pathname: '/pmi-photos/**',
+      },
+      // Vercel Blob Storage (self-hosted photos)
+      {
+        protocol: 'https',
+        hostname: '*.public.blob.vercel-storage.com',
+        pathname: '/**',
+      },
     ],
     // Optimize image loading for performance - prefer AVIF for best compression
     formats: ['image/avif', 'image/webp'],
