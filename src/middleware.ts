@@ -39,6 +39,9 @@ const KNOWN_ROUTES = new Set([
   'solar-services',
   'metal-roofing-services',
   'commercial-roofing-services',
+  // Project showcase and admin
+  'projects',
+  'admin',
   // System routes
   'api',
   '_next',
