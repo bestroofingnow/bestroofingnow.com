@@ -1,48 +1,45 @@
 import { NextResponse } from 'next/server';
-import { fetchAllProjects, fetchProjectWithPhotos } from '@/lib/pmi-api';
-import type { PMIProject } from '@/lib/pmi-api';
+import * as fs from 'fs';
+import * as path from 'path';
 
 // Cache for 1 hour
 export const revalidate = 3600;
 
+// Load projects from local PMI export file
+function loadPMIExport() {
+  try {
+    const exportPath = path.join(process.cwd(), 'pmi-export.json');
+    if (fs.existsSync(exportPath)) {
+      return JSON.parse(fs.readFileSync(exportPath, 'utf-8'));
+    }
+  } catch (error) {
+    console.error('Error loading PMI export:', error);
+  }
+  return null;
+}
+
 export async function GET() {
   try {
-    // Fetch all projects
-    const allProjects = await fetchAllProjects();
+    const exportData = loadPMIExport();
 
-    // Filter to only projects with photos
-    const projectsWithPhotos = allProjects.filter(
-      (p) => p.withPhotos && p.photoCount > 0
-    );
+    if (!exportData) {
+      return NextResponse.json({
+        projects: [],
+        error: 'PMI export file not found',
+      });
+    }
 
-    // Sort by created date (newest first)
-    projectsWithPhotos.sort(
-      (a, b) => new Date(b.created).getTime() - new Date(a.created).getTime()
-    );
-
-    // Enrich top projects with photo data (limit to 20 to avoid too many API calls)
-    const enrichedProjects: PMIProject[] = await Promise.all(
-      projectsWithPhotos.slice(0, 20).map(async (project) => {
-        try {
-          const detailed = await fetchProjectWithPhotos(project._id);
-          return detailed || project;
-        } catch {
-          return project;
-        }
-      })
-    );
-
-    // Return enriched projects plus the rest without photos
-    const result = [
-      ...enrichedProjects,
-      ...projectsWithPhotos.slice(20),
-    ];
-
-    return NextResponse.json(result);
+    // Return all projects from the export
+    return NextResponse.json({
+      projects: exportData.projects || [],
+      total: exportData.projects?.length || 0,
+      exportedAt: exportData.exportedAt,
+      source: 'pmi-export',
+    });
   } catch (error) {
-    console.error('Error fetching PMI projects:', error);
+    console.error('Error fetching projects:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch projects' },
+      { error: 'Failed to fetch projects', projects: [] },
       { status: 500 }
     );
   }
