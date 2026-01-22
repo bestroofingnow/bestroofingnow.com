@@ -18,6 +18,9 @@
  *   --dry-run          Preview what would be imported without making changes
  */
 
+import * as dotenv from 'dotenv';
+dotenv.config({ path: '.env.local' });
+
 import * as fs from 'fs';
 import { sql } from '@vercel/postgres';
 import { drizzle } from 'drizzle-orm/vercel-postgres';
@@ -191,8 +194,14 @@ async function importData(migrateImages: boolean = false, dryRun: boolean = fals
 
       // Import photos
       for (const photo of project.photos) {
+        // Skip photos without a valid URL
+        if (!photo.url) {
+          console.log(`    Skipping photo without URL: ${photo.pmiId}`);
+          continue;
+        }
+
         let photoUrl = photo.url;
-        let thumbnailUrl = photo.thumbnailUrl;
+        let thumbnailUrl = photo.thumbnailUrl || photo.url;
 
         // Optionally migrate images to Vercel Blob
         if (migrateImages) {
@@ -207,8 +216,8 @@ async function importData(migrateImages: boolean = false, dryRun: boolean = fals
           projectId: insertedProject.id,
           url: photoUrl,
           thumbnailUrl: thumbnailUrl,
-          caption: photo.caption,
-          order: photo.order,
+          caption: photo.caption || null,
+          order: photo.order || 0,
           storageProvider: migrateImages ? 'vercel-blob' : 'pmi',
         });
 
