@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Phone, ChevronDown, ChevronRight, MapPin, Home, Building2, Wrench, AlertTriangle, Settings, Award } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown, ChevronRight, MapPin, Award } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS, ROOFING_MATERIALS } from '@/lib/constants';
 import { Button } from '@/components/ui/Button';
 import { cn, trackPhoneClick } from '@/lib/utils';
@@ -84,15 +84,17 @@ export function Header() {
         <div className="container">
           <div className="flex items-center justify-between h-28">
             {/* Logo - eager loading but lower priority than hero image for better LCP */}
-            <Link href="/" className="flex-shrink-0">
+            <Link href="/" className="flex-shrink-0 h-24 w-[216px]">
               <Image
                 src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
                 alt={SITE_CONFIG.name}
-                width={360}
-                height={160}
+                width={216}
+                height={96}
                 className="h-24 w-auto"
                 loading="eager"
                 fetchPriority="low"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
               />
             </Link>
 

@@ -58,6 +58,7 @@ export function Footer() {
               width={180}
               height={80}
               className="h-16 w-auto mb-6 brightness-0 invert"
+              loading="lazy"
             />
             <p className="text-white mb-6">
               Family-owned, veteran-operated roofing company serving Charlotte and

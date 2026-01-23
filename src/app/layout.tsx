@@ -19,8 +19,8 @@ const inter = Inter({
   preload: true,
   // Automatically adjust fallback font metrics to reduce CLS
   adjustFontFallback: true,
-  // Only load weights we actually use (400, 500, 600, 700)
-  weight: ['400', '500', '600', '700'],
+  // Minimal weights for faster initial load - 400 for body, 700 for headings
+  weight: ['400', '700'],
 });
 
 // Viewport configuration for mobile optimization
@@ -143,6 +143,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        {/* CRITICAL: Preconnect to Google Fonts for faster font loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* CRITICAL: Preconnect to CMS for images */}
         <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />

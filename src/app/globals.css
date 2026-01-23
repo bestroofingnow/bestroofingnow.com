@@ -354,6 +354,17 @@ main a:not(.btn):not([class*="bg-"]):hover {
    Mobile Speed Index Optimizations
    ============================================ */
 
+/* CRITICAL: Optimize hero section for fastest LCP */
+section:first-of-type {
+  contain: layout style;
+}
+
+/* CRITICAL: Hero H1 is the LCP element on mobile - ensure immediate render */
+section:first-of-type h1 {
+  contain: layout style;
+  content-visibility: visible;
+}
+
 /* Hide non-critical elements on initial mobile load */
 @media (max-width: 767px) {
   /* Apply content-visibility to all sections except first */
