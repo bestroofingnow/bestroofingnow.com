@@ -10,6 +10,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { EstimateProvider } from '@/components/estimate';
 import { LazyCustomCursor } from '@/components/ui/LazyCustomCursor';
 import { WebVitals } from '@/components/analytics/WebVitals';
+import { AnalyticsProvider } from '@/components/analytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -119,6 +120,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_CONFIG.url,
   },
+  // Google Search Console & Bing Webmaster verification
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    // Add Bing verification if needed: yandex: 'xxx', other: { 'msvalidate.01': 'xxx' }
+  },
   category: 'Home Services',
   other: {
     'dns-prefetch': 'https://bestroofingnow.com',
@@ -171,6 +177,8 @@ export default function RootLayout({
         <EstimateProvider>
           {/* Web Vitals monitoring - reports Core Web Vitals metrics */}
           <WebVitals />
+          {/* Analytics: GA4, Microsoft Clarity, Facebook Pixel */}
+          <AnalyticsProvider />
           <LazyCustomCursor />
           {/* Skip to main content link for accessibility */}
           <a
