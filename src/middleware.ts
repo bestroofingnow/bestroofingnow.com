@@ -104,8 +104,8 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Skip static file extensions
-  if (/\.(ico|png|jpg|jpeg|gif|webp|svg|css|js|woff|woff2|ttf|eot|map|json)$/i.test(pathname)) {
+  // Skip static file extensions (including .html for verification files)
+  if (/\.(ico|png|jpg|jpeg|gif|webp|svg|css|js|woff|woff2|ttf|eot|map|json|html|xml|txt)$/i.test(pathname)) {
     return NextResponse.next();
   }
 
