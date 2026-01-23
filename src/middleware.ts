@@ -138,7 +138,9 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico, robots.txt, sitemap.xml
+     * - google*.html (verification files)
+     * - *.xml, *.txt files
      */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|google[a-z0-9]+\\.html|.*\\.xml$|.*\\.txt$).*)',
   ],
 };
