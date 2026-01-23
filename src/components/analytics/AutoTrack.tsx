@@ -15,7 +15,6 @@ export function AutoTrack() {
         const phone = link.href.replace('tel:', '');
         analytics.phoneClick(phone);
         fbEvents.contact();
-        console.log('[Analytics] Phone click tracked:', phone);
       }
     };
 
@@ -26,7 +25,6 @@ export function AutoTrack() {
       if (link) {
         const email = link.href.replace('mailto:', '');
         analytics.ctaClick('Email', email);
-        console.log('[Analytics] Email click tracked:', email);
       }
     };
 
@@ -36,7 +34,6 @@ export function AutoTrack() {
       const link = target.closest('a[href^="http"]') as HTMLAnchorElement;
       if (link && !link.href.includes(window.location.hostname)) {
         analytics.ctaClick('Outbound Link', link.href);
-        console.log('[Analytics] Outbound link tracked:', link.href);
       }
     };
 
