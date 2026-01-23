@@ -582,11 +582,19 @@ export default async function CityStoryPage({
                 ? `Roofing Projects in ${displayName}, ${state}`
                 : `Roofing Services in ${displayName}, ${state}`}
             </h1>
-            <p className="text-xl text-white/90 mb-6 speakable-intro">
+            <p className="text-xl text-white/90 mb-4 speakable-intro">
               {cityProjects.length > 0
                 ? `${cityProjects.length} completed projects from your neighbors`
                 : `Professional roofing services for ${displayName} homeowners. Get a free inspection today.`}
             </p>
+            {cityProjects.length > 0 && (
+              <Link
+                href={`/projects/city/${slug}`}
+                className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-4"
+              >
+                View all projects with interactive map →
+              </Link>
+            )}
             <div className="flex flex-wrap gap-4" role="list" aria-label="Service highlights">
               {cityProjects.length > 0 ? (
                 <>
@@ -887,16 +895,14 @@ export default async function CityStoryPage({
 
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                       <span className="text-xs text-gray-400">ZIP: {project.zip}</span>
-                      <a
-                        href={project.mapUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        href={`/projects/city/${slug}`}
                         className="text-primary text-sm font-medium flex items-center gap-1 hover:underline"
                         itemProp="url"
                       >
-                        View on Map
+                        View Projects
                         <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </article>

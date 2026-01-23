@@ -199,15 +199,13 @@ export default async function StoriesPage() {
                   {/* Actions */}
                   <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                     <span className="text-xs text-gray-400">ZIP: {project.zip}</span>
-                    <a
-                      href={project.mapUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      href={`/projects/city/${project.city.toLowerCase().replace(/\s+/g, '-')}`}
                       className="text-primary text-sm font-medium flex items-center gap-1 hover:underline"
                     >
-                      View on Map
+                      View Projects
                       <ArrowRight className="w-4 h-4" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -216,15 +214,13 @@ export default async function StoriesPage() {
 
           {/* View All Link */}
           <div className="text-center mt-10">
-            <a
-              href="https://projectmapit.com/best-roofing-now-llc/map"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/projects"
               className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
             >
-              View All Projects on Map
+              View All Projects with Photos
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

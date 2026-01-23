@@ -35,6 +35,7 @@ export async function GET(request: NextRequest) {
       .filter((p: any) => p.latitude && p.longitude)
       .map((p: any) => ({
         id: p.pmiId,
+        slug: p.pmiId, // Use pmiId as slug for direct linking
         lat: p.latitude,
         lng: p.longitude,
         city: p.city,
@@ -43,7 +44,7 @@ export async function GET(request: NextRequest) {
         photoCount: p.photos?.length || 0,
         hasPhotos: (p.photos?.length || 0) > 0,
         completedDate: p.completedDate,
-        thumbnail: p.photos?.[0]?.thumbnailUrl || null,
+        thumbnail: p.photos?.[0]?.thumbnailUrl || p.photos?.[0]?.url || null,
       }));
 
     // Filter by city if specified

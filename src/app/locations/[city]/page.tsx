@@ -19,7 +19,7 @@ import {
 import { VoiceSearchFAQ, PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
-import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
+import ProjectMap from '@/components/projects/ProjectMap';
 import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK, CHARLOTTE_VOICE_FAQS, CHARLOTTE_PEOPLE_ALSO_ASK } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
@@ -1216,24 +1216,29 @@ export default async function LocationPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Project Map - Uses ProjectMapIt embed with lazy loading */}
-      {locationMapIds[city] && (
-        <section className="section">
-          <div className="container">
-            <div className="text-center max-w-2xl mx-auto mb-8">
-              <h2 className="text-3xl font-bold text-primary mb-4">
-                Our Recent Projects Near {location.city}
-              </h2>
-              <p className="text-gray">
-                Explore roofing projects we have completed in the {location.city} area and throughout the Charlotte metro.
-              </p>
-            </div>
-            <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-              <LazyProjectMap mapId={locationMapIds[city]} cityName={location.city} />
-            </div>
+      {/* Project Map - Interactive map of completed projects */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-3xl font-bold text-primary mb-4">
+              Our Recent Projects Near {location.city}
+            </h2>
+            <p className="text-gray">
+              Explore roofing projects we have completed in the {location.city} area and throughout the Charlotte metro.
+            </p>
+            <Link
+              href={`/projects/city/${location.city.toLowerCase().replace(/\s+/g, '-')}`}
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:underline mt-4"
+            >
+              View all {location.city} projects with photos
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
-        </section>
-      )}
+          <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+            <ProjectMap city={location.city} height="500px" showControls={true} />
+          </div>
+        </div>
+      </section>
 
       {/* Contact Info */}
       <section className="section bg-light">

@@ -155,7 +155,7 @@ export default async function ProjectDetailPage({
     { name: `${project.city}, ${project.state}`, url: `/projects/${project.pmiId}` },
   ];
 
-  // JSON-LD structured data
+  // JSON-LD structured data - ImageGallery
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ImageGallery',
@@ -190,11 +190,74 @@ export default async function ProjectDetailPage({
     },
   };
 
+  // JSON-LD for Local Business / Service
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `${project.serviceType || project.product || 'Roofing'} in ${project.city}`,
+    description: `Professional ${project.product || 'roofing'} installation completed in ${project.city}, ${project.state}`,
+    provider: {
+      '@type': 'RoofingContractor',
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.url,
+      telephone: SITE_CONFIG.phoneClean,
+      areaServed: {
+        '@type': 'City',
+        name: project.city,
+        containedInPlace: {
+          '@type': 'State',
+          name: 'North Carolina',
+        },
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: '100',
+        bestRating: '5',
+        worstRating: '1',
+      },
+    },
+    areaServed: {
+      '@type': 'City',
+      name: project.city,
+    },
+    ...(project.latitude && project.longitude
+      ? {
+          serviceArea: {
+            '@type': 'GeoCircle',
+            geoMidpoint: {
+              '@type': 'GeoCoordinates',
+              latitude: project.latitude,
+              longitude: project.longitude,
+            },
+            geoRadius: '50',
+          },
+        }
+      : {}),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Roofing Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: project.product || 'Roofing',
+          },
+        },
+      ],
+    },
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
       />
 
       {/* Breadcrumbs */}
@@ -291,7 +354,7 @@ export default async function ProjectDetailPage({
 
               <div className="space-y-3">
                 <Link
-                  href={`/locations/${project.city.toLowerCase().replace(/\s+/g, '-')}-nc`}
+                  href={`/projects/city/${project.city.toLowerCase().replace(/\s+/g, '-')}`}
                   className="inline-flex items-center gap-2 text-primary hover:underline"
                 >
                   <MapPin className="w-4 h-4" />

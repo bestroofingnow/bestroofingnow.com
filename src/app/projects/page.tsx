@@ -128,7 +128,7 @@ export default async function ProjectsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Project Map
           </h2>
-          <ProjectMap height="500px" className="mb-8" />
+          <ProjectMap height="500px" className="mb-8" showCityFilter={true} />
           <p className="text-sm text-gray-500 text-center">
             Click on markers to view project details. Blue markers indicate projects with photos.
           </p>
@@ -150,7 +150,7 @@ export default async function ProjectsPage() {
               {cityStats.slice(0, 8).map(({ city, count }) => (
                 <Link
                   key={city}
-                  href={`/projects?city=${encodeURIComponent(city)}`}
+                  href={`/projects/city/${city.toLowerCase().replace(/\s+/g, '-')}`}
                   className="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors"
                 >
                   {city} ({count})
@@ -174,8 +174,9 @@ export default async function ProjectsPage() {
                 const thumbnail = project.photos?.[0]?.thumbnailUrl || project.photos?.[0]?.url;
 
                 return (
-                  <div
+                  <Link
                     key={project.pmiId}
+                    href={`/projects/${project.pmiId}`}
                     className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all overflow-hidden border border-gray-100"
                   >
                     {/* Thumbnail */}
@@ -223,7 +224,7 @@ export default async function ProjectsPage() {
                         {formatDate(project.completedDate)}
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
@@ -269,6 +270,42 @@ export default async function ProjectsPage() {
         </div>
       </section>
 
+      {/* FAQ Section for AEO */}
+      <section className="py-12 bg-white">
+        <div className="container max-w-4xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Frequently Asked Questions About Our Projects
+          </h2>
+          <div className="space-y-6">
+            {projectsFAQs.map((faq, index) => (
+              <div key={index} className="border-b border-gray-200 pb-6 last:border-0">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                <p className="text-gray-600">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Schema for AEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: projectsFAQs.map((faq) => ({
+              '@type': 'Question',
+              name: faq.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+              },
+            })),
+          }),
+        }}
+      />
+
       {/* CTA */}
       <CTASection
         title="Ready to Start Your Roofing Project?"
@@ -277,3 +314,27 @@ export default async function ProjectsPage() {
     </>
   );
 }
+
+// FAQs for AEO (Answer Engine Optimization)
+const projectsFAQs = [
+  {
+    question: 'How many roofing projects has Best Roofing Now completed?',
+    answer: 'Best Roofing Now has completed over 230 verified roofing projects across the Charlotte metro area, Lake Norman, and surrounding communities. Our project gallery showcases real installations with photos from satisfied homeowners.',
+  },
+  {
+    question: 'Can I see photos of roofing projects in my area?',
+    answer: 'Yes! Our interactive project map allows you to browse completed roofing projects by city. Simply use the city filter to see projects near you, complete with photos and project details.',
+  },
+  {
+    question: 'What types of roofing materials do you install?',
+    answer: 'We install a wide variety of roofing materials including GAF Timberline HDZ shingles, CertainTeed Landmark series, Owens Corning Duration, metal roofing, and more. Our project gallery shows examples of each material type.',
+  },
+  {
+    question: 'How can I verify Best Roofing Now\'s work quality?',
+    answer: 'Our project showcase features real photos from actual installations, complete with location data, materials used, and completion dates. We maintain a 5.0 Google rating with over 60 verified reviews.',
+  },
+  {
+    question: 'Do you serve areas outside Charlotte?',
+    answer: 'Yes! We serve the entire Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Concord, Matthews, Gastonia, Rock Hill SC, and many more communities. Browse our project map to see completed work in your neighborhood.',
+  },
+];

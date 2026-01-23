@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
-import { MapPin, Camera, ChevronRight, X, Loader2 } from 'lucide-react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
+import { MapPin, Camera, ChevronRight, X, Loader2, Filter, ZoomIn, ZoomOut, Maximize2 } from 'lucide-react';
+import Link from 'next/link';
 
 interface MapMarker {
   id: string;
@@ -22,6 +23,7 @@ interface ProjectMapProps {
   className?: string;
   height?: string;
   showControls?: boolean;
+  showCityFilter?: boolean;
   onMarkerClick?: (marker: MapMarker) => void;
 }
 
@@ -31,15 +33,29 @@ export function ProjectMap({
   className = '',
   height = '500px',
   showControls = true,
+  showCityFilter = false,
   onMarkerClick,
 }: ProjectMapProps) {
   const [markers, setMarkers] = useState<MapMarker[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedMarker, setSelectedMarker] = useState<MapMarker | null>(null);
+  const [cityFilter, setCityFilter] = useState<string>(city || '');
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const markersLayerRef = useRef<any>(null);
+
+  // Get unique cities for filter dropdown
+  const uniqueCities = useMemo(() => {
+    const cities = [...new Set(markers.map(m => m.city))].sort();
+    return cities;
+  }, [markers]);
+
+  // Filter markers by city
+  const filteredMarkers = useMemo(() => {
+    if (!cityFilter) return markers;
+    return markers.filter(m => m.city.toLowerCase().includes(cityFilter.toLowerCase()));
+  }, [markers, cityFilter]);
 
   // Fetch map data
   useEffect(() => {
@@ -66,7 +82,7 @@ export function ProjectMap({
 
   // Initialize Leaflet map
   useEffect(() => {
-    if (typeof window === 'undefined' || !mapRef.current || markers.length === 0) return;
+    if (typeof window === 'undefined' || !mapRef.current || filteredMarkers.length === 0) return;
 
     // Dynamically load Leaflet
     const loadLeaflet = async () => {
@@ -100,17 +116,22 @@ export function ProjectMap({
         mapInstanceRef.current.remove();
       }
 
-      // Calculate center from markers
-      const lats = markers.map(m => m.lat);
-      const lngs = markers.map(m => m.lng);
+      // Calculate center from filtered markers
+      const lats = filteredMarkers.map(m => m.lat);
+      const lngs = filteredMarkers.map(m => m.lng);
       const centerLat = (Math.min(...lats) + Math.max(...lats)) / 2;
       const centerLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
 
-      // Create map
+      // Create map with full interactivity
       const map = L.map(mapRef.current, {
         center: [centerLat || 35.2271, centerLng || -80.8431], // Default to Charlotte
         zoom: 10,
-        scrollWheelZoom: false,
+        scrollWheelZoom: true, // Enable scroll wheel zoom
+        doubleClickZoom: true, // Enable double-click zoom
+        touchZoom: true, // Enable touch zoom on mobile
+        zoomControl: false, // Hide default zoom controls (we have custom ones)
+        minZoom: 6,
+        maxZoom: 18,
       });
 
       // Add tile layer (OpenStreetMap - free)
@@ -119,15 +140,17 @@ export function ProjectMap({
         maxZoom: 19,
       }).addTo(map);
 
-      // Create custom icon
+      // Add scale control
+      L.control.scale({ position: 'bottomleft', imperial: true, metric: false }).addTo(map);
+
+      // Create custom icon with inline styles (Tailwind classes don't work in innerHTML)
       const createIcon = (hasPhotos: boolean) => {
+        const bgColor = hasPhotos ? '#1d4ed8' : '#9ca3af'; // primary blue or gray
         return L.divIcon({
           className: 'custom-marker',
           html: `
-            <div class="w-8 h-8 rounded-full flex items-center justify-center shadow-lg ${
-              hasPhotos ? 'bg-primary text-white' : 'bg-gray-400 text-white'
-            }">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: ${bgColor}; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
@@ -142,24 +165,61 @@ export function ProjectMap({
       // Add markers
       const markersLayer = L.layerGroup().addTo(map);
 
-      markers.forEach(marker => {
+      filteredMarkers.forEach(marker => {
         const leafletMarker = L.marker([marker.lat, marker.lng], {
           icon: createIcon(marker.hasPhotos),
         });
 
-        // Create popup content
+        // Format date nicely
+        const formattedDate = marker.completedDate
+          ? new Date(marker.completedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })
+          : '';
+
+        // Create popup content with thumbnail
         const popupContent = `
-          <div class="p-2 min-w-[200px]">
-            <p class="font-semibold text-gray-900">${marker.city}, ${marker.state}</p>
-            ${marker.product ? `<p class="text-sm text-gray-600">${marker.product}</p>` : ''}
-            <p class="text-sm text-gray-500 mt-1">
-              ${marker.hasPhotos ? `📷 ${marker.photoCount} photos` : 'No photos'}
-            </p>
-            ${marker.slug ? `<a href="/projects/${marker.slug}" class="text-primary text-sm mt-2 inline-block hover:underline">View Project →</a>` : ''}
+          <div class="project-popup" style="min-width: 240px; font-family: system-ui, -apple-system, sans-serif;">
+            ${marker.thumbnail ? `
+              <div style="width: 100%; height: 120px; border-radius: 8px; overflow: hidden; margin-bottom: 12px; background: #f3f4f6;">
+                <img src="${marker.thumbnail}" alt="${marker.city} roofing project" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.parentElement.style.display='none'" />
+              </div>
+            ` : ''}
+            <p style="font-weight: 600; font-size: 15px; color: #111827; margin: 0 0 4px 0;">${marker.city}, ${marker.state}</p>
+            ${marker.product ? `<p style="font-size: 13px; color: #4b5563; margin: 0 0 4px 0;">${marker.product}</p>` : ''}
+            <div style="display: flex; align-items: center; gap: 12px; font-size: 12px; color: #6b7280; margin: 8px 0;">
+              ${marker.hasPhotos ? `<span>📷 ${marker.photoCount} photos</span>` : '<span>No photos</span>'}
+              ${formattedDate ? `<span>📅 ${formattedDate}</span>` : ''}
+            </div>
+            ${marker.slug ? `
+              <button onclick="window.location.href='/projects/${marker.slug}'" style="display: inline-block; margin-top: 8px; padding: 8px 16px; background: #1d4ed8; color: white; font-size: 13px; font-weight: 500; border-radius: 6px; border: none; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#1d4ed8'">
+                View Project →
+              </button>
+            ` : ''}
           </div>
         `;
 
-        leafletMarker.bindPopup(popupContent);
+        leafletMarker.bindPopup(popupContent, {
+          maxWidth: 300,
+          className: 'custom-popup',
+        });
+
+        // Handle popup open to attach click handlers
+        leafletMarker.on('popupopen', () => {
+          // Find the button in the popup and attach click handler
+          const popup = leafletMarker.getPopup();
+          if (popup) {
+            const container = popup.getElement();
+            if (container) {
+              const btn = container.querySelector('button');
+              if (btn && marker.slug) {
+                btn.onclick = (e: MouseEvent) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.location.href = `/projects/${marker.slug}`;
+                };
+              }
+            }
+          }
+        });
 
         leafletMarker.on('click', () => {
           setSelectedMarker(marker);
@@ -170,8 +230,8 @@ export function ProjectMap({
       });
 
       // Fit bounds to show all markers
-      if (markers.length > 0) {
-        const bounds = L.latLngBounds(markers.map(m => [m.lat, m.lng]));
+      if (filteredMarkers.length > 0) {
+        const bounds = L.latLngBounds(filteredMarkers.map(m => [m.lat, m.lng]));
         map.fitBounds(bounds, { padding: [50, 50] });
       }
 
@@ -187,7 +247,7 @@ export function ProjectMap({
         mapInstanceRef.current = null;
       }
     };
-  }, [markers, onMarkerClick]);
+  }, [filteredMarkers, onMarkerClick]);
 
   if (loading) {
     return (
@@ -208,7 +268,7 @@ export function ProjectMap({
     );
   }
 
-  if (markers.length === 0) {
+  if (markers.length === 0 && !loading) {
     return (
       <div className={`flex items-center justify-center bg-gray-100 rounded-xl ${className}`} style={{ height }}>
         <div className="text-center">
@@ -221,23 +281,82 @@ export function ProjectMap({
 
   return (
     <div className={`relative rounded-xl overflow-hidden shadow-lg ${className}`}>
-      {/* Map Stats */}
+      {/* Map Stats & Filter */}
       {showControls && (
         <div className="absolute top-4 left-4 z-[1000] bg-white/90 backdrop-blur-sm rounded-lg shadow-md px-4 py-2">
           <div className="flex items-center gap-4 text-sm">
             <div className="flex items-center gap-1">
               <MapPin className="w-4 h-4 text-primary" />
-              <span className="font-semibold">{markers.length}</span>
+              <span className="font-semibold">{filteredMarkers.length}</span>
               <span className="text-gray-600">projects</span>
             </div>
             <div className="flex items-center gap-1">
               <Camera className="w-4 h-4 text-primary" />
-              <span className="font-semibold">{markers.filter(m => m.hasPhotos).length}</span>
+              <span className="font-semibold">{filteredMarkers.filter(m => m.hasPhotos).length}</span>
               <span className="text-gray-600">with photos</span>
             </div>
           </div>
         </div>
       )}
+
+      {/* City Filter */}
+      {showCityFilter && uniqueCities.length > 1 && (
+        <div className="absolute top-4 right-4 z-[1000]">
+          <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-md">
+            <div className="flex items-center gap-2 px-3 py-2">
+              <Filter className="w-4 h-4 text-gray-500" />
+              <select
+                value={cityFilter}
+                onChange={(e) => setCityFilter(e.target.value)}
+                className="bg-transparent border-none text-sm font-medium text-gray-700 focus:outline-none cursor-pointer pr-6"
+              >
+                <option value="">All Cities ({markers.length})</option>
+                {uniqueCities.map((c) => {
+                  const count = markers.filter(m => m.city === c).length;
+                  return (
+                    <option key={c} value={c}>
+                      {c} ({count})
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Custom Zoom Controls */}
+      <div className="absolute bottom-4 right-4 z-[1000] flex flex-col gap-2">
+        <button
+          onClick={() => mapInstanceRef.current?.zoomIn()}
+          className="bg-white/90 backdrop-blur-sm rounded-lg shadow-md p-2 hover:bg-white transition-colors"
+          title="Zoom in"
+          aria-label="Zoom in"
+        >
+          <ZoomIn className="w-5 h-5 text-gray-700" />
+        </button>
+        <button
+          onClick={() => mapInstanceRef.current?.zoomOut()}
+          className="bg-white/90 backdrop-blur-sm rounded-lg shadow-md p-2 hover:bg-white transition-colors"
+          title="Zoom out"
+          aria-label="Zoom out"
+        >
+          <ZoomOut className="w-5 h-5 text-gray-700" />
+        </button>
+        <button
+          onClick={() => {
+            if (mapInstanceRef.current && filteredMarkers.length > 0 && window.L) {
+              const bounds = window.L.latLngBounds(filteredMarkers.map(m => [m.lat, m.lng]));
+              mapInstanceRef.current.fitBounds(bounds, { padding: [50, 50] });
+            }
+          }}
+          className="bg-white/90 backdrop-blur-sm rounded-lg shadow-md p-2 hover:bg-white transition-colors"
+          title="Reset view to show all projects"
+          aria-label="Reset view"
+        >
+          <Maximize2 className="w-5 h-5 text-gray-700" />
+        </button>
+      </div>
 
       {/* Map Container */}
       <div ref={mapRef} style={{ height }} className="w-full" />
@@ -250,9 +369,19 @@ export function ProjectMap({
         }
         .leaflet-popup-content-wrapper {
           border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
         .leaflet-popup-content {
-          margin: 8px 12px;
+          margin: 12px;
+        }
+        .leaflet-popup-tip {
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .custom-popup .leaflet-popup-content-wrapper {
+          padding: 0;
+        }
+        .custom-popup .leaflet-popup-content {
+          margin: 12px;
         }
       `}</style>
     </div>

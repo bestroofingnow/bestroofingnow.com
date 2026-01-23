@@ -130,11 +130,9 @@ export async function ProjectGallery({
             if (!thumbnail) return null;
 
             return (
-              <a
+              <Link
                 key={project._id}
-                href={formatted.mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/projects/city/${formatted.city.toLowerCase().replace(/\s+/g, '-')}`}
                 className="group block"
               >
                 <div className="relative aspect-square rounded-xl overflow-hidden cursor-pointer transition-transform hover:scale-[1.02]">
@@ -172,7 +170,7 @@ export async function ProjectGallery({
                     </div>
                   )}
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>

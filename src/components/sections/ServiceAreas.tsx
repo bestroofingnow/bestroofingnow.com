@@ -3,20 +3,17 @@
 import Link from 'next/link';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { LOCATIONS, SITE_CONFIG } from '@/lib/constants';
-import { LazyProjectMap } from '@/components/ui/LazyProjectMap';
-
-// Charlotte PMI map ID
-const CHARLOTTE_MAP_ID = '6929921876fb8fa56e295536';
+import ProjectMap from '@/components/projects/ProjectMap';
 
 export function ServiceAreas() {
   return (
     <section className="section">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Map Side - PMI Project Map */}
+          {/* Map Side - Internal Project Map */}
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <LazyProjectMap mapId={CHARLOTTE_MAP_ID} cityName="Charlotte" />
+              <ProjectMap height="500px" showControls={true} />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/10 rounded-full -z-10" />

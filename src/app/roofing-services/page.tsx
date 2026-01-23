@@ -92,7 +92,7 @@ const businessProfiles = {
   bbb: 'https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763',
   angi: 'https://www.angi.com/companylist/us/nc/charlotte/best-roofing-now-reviews-10768833.htm',
   facebook: 'https://www.facebook.com/bestroofingnow',
-  projectMapIt: 'https://projectmapit.com/best-roofing-now-llc/map',
+  projects: '/projects',
 };
 
 // Core roofing services with authority links

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Camera, ChevronRight, Calendar, Star, ExternalLink } from 'lucide-react';
+import { MapPin, Camera, ChevronRight, Calendar, Star, ArrowRight } from 'lucide-react';
 
 interface ProjectPhoto {
   _id: string;
@@ -211,15 +211,13 @@ export function LocationProjectGallery({
       {/* View All Link */}
       {showViewAll && (
         <div className="text-center mt-6">
-          <a
-            href="https://projectmapit.com/best-roofing-now-llc/map"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/projects"
             className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
           >
             View All Projects on Map
-            <ExternalLink className="w-4 h-4" />
-          </a>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       )}
 
