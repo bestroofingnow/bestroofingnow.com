@@ -169,6 +169,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/nc-roofing-guide" className="text-white hover:text-white transition-colors">
+                  NC Roofing Guide
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-white hover:text-white transition-colors">
                   Roofing Blog
                 </Link>
