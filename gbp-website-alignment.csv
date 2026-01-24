@@ -1,0 +1,26 @@
+GBP Service,GBP Category,Website URL,Website Page Title,Aligned,Notes
+Roof Inspection,Roofing contractor,/services/roof-inspection,Roof Inspection,Yes,FREE service - highlight in GBP
+Roof Repair,Roof repair shop,/services/roof-repair,Roof Repair,Yes,High search volume service
+Roof Replacement,Roofing contractor,/services/roof-replacement,Roof Replacement,Yes,Primary revenue service
+Residential Roofing,Roofing contractor,/services/residential-roofing,Residential Roofing,Yes,Core service page
+Commercial Roofing,Roofing contractor,/services/commercial-roofing,Commercial Roofing,Yes,B2B service - no specific commercial category available
+Emergency Roof Repair,Roofing contractor,/services/emergency-roofing,Emergency Roofing,Yes,24/7 service - add to attributes
+Storm Damage Repair,Building restoration service,/services/storm-damage,Storm Damage & Insurance Claims,Yes,Insurance claim service
+Insurance Claim Assistance,Building restoration service,/services/storm-damage,Storm Damage & Insurance Claims,Yes,Same page as storm damage
+Gutter Installation,Gutter cleaning service,/services/gutters,Gutter Services,Yes,Full gutter services page
+Gutter Repair,Gutter service,/services/gutters,Gutter Services,Yes,Same page
+Gutter Guard Installation,Gutter cleaning service,/services/gutters,Gutter Services,Yes,Same page
+Siding Installation,Siding contractor,/services/siding,Siding Services,Yes,Full siding page
+Siding Repair,Siding contractor,/services/siding,Siding Services,Yes,Same page
+Skylight Installation,Skylight contractor,/services/skylight-installation,Skylight Installation,Yes,VELUX certified
+Roof Ventilation,Roofing contractor,/services/roof-ventilation,Roof Ventilation,Yes,Energy efficiency angle
+Chimney Repair,Chimney services,/services/chimney-services,Chimney Services,Yes,Flashing and caps
+Soffit & Fascia Repair,Roofing contractor,/services/soffit-fascia,Soffit & Fascia,Yes,Exterior trim services
+Flat Roof Repair,Roofing contractor,/services/flat-roof-repair,Flat Roof Repair,Yes,TPO/EPDM specialty
+Residential Roof Maintenance,Roofing contractor,/services/residential-roof-maintenance,Residential Roof Maintenance,Yes,Homeowner maintenance programs
+Commercial Roof Maintenance,Roofing contractor,/services/commercial-roof-maintenance,Commercial Roof Maintenance,Yes,Flat roof maintenance for businesses
+Metal Roofing Installation,Roofing contractor,/materials/metal-roofing,Metal Roofing,Yes,Premium material option
+Asphalt Shingle Roofing,Roofing contractor,/materials/asphalt-shingles,Asphalt Shingles,Yes,Most common material
+Tile Roofing,Roofing contractor,/materials/tile-roofing,Tile Roofing,Yes,Premium option
+Slate Roofing,Roofing contractor,/materials/slate-roofing,Slate Roofing,Yes,Luxury option
+TPO Roofing,Roofing contractor,/commercial-systems,Commercial Systems,Yes,Commercial flat roof

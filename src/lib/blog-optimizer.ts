@@ -2,7 +2,8 @@
 // Uses Claude API to enhance blog content
 
 import Anthropic from '@anthropic-ai/sdk';
-import { saveOptimizedBlog, getOptimizedBlog, type OptimizedBlog } from './db';
+import { saveOptimizedBlog, getOptimizedBlog } from './db';
+import type { OptimizedBlog } from './db/schema';
 import { type WPPost } from './wordpress';
 
 // Initialize Anthropic client
@@ -151,8 +152,8 @@ export async function optimizeAndSaveBlog(post: WPPost): Promise<OptimizedBlog |
   try {
     // Check if already optimized
     const existing = await getOptimizedBlog(post.slug);
-    if (existing && existing.optimization_score > 0) {
-      console.log(`Blog "${post.slug}" already optimized with score ${existing.optimization_score}`);
+    if (existing && existing.optimizationScore && existing.optimizationScore > 0) {
+      console.log(`Blog "${post.slug}" already optimized with score ${existing.optimizationScore}`);
       return existing;
     }
 
@@ -175,18 +176,18 @@ export async function optimizeAndSaveBlog(post: WPPost): Promise<OptimizedBlog |
 
     // Save to database
     const saved = await saveOptimizedBlog({
-      wp_post_id: post.id,
+      wpPostId: post.id,
       slug: post.slug,
-      original_title: stripHtml(post.title.rendered),
-      optimized_title: result.optimizedTitle,
-      original_content: post.content.rendered,
-      optimized_content: result.optimizedContent,
-      meta_description: result.metaDescription,
-      focus_keywords: result.keywords,
-      internal_links: [], // Will be populated by auto-linker
-      schema_markup: faqSchema,
-      optimization_score: result.optimizationScore,
-      last_optimized: new Date(),
+      originalTitle: stripHtml(post.title.rendered),
+      optimizedTitle: result.optimizedTitle,
+      originalContent: post.content.rendered,
+      optimizedContent: result.optimizedContent,
+      metaDescription: result.metaDescription,
+      focusKeywords: result.keywords,
+      internalLinks: [], // Will be populated by auto-linker
+      schemaMarkup: faqSchema,
+      optimizationScore: result.optimizationScore,
+      lastOptimized: new Date(),
     });
 
     console.log(`Saved optimized blog "${post.slug}" with score ${result.optimizationScore}`);
@@ -220,7 +221,7 @@ export async function batchOptimizeBlogs(
     try {
       // Check if already optimized
       const existing = await getOptimizedBlog(post.slug);
-      if (existing && existing.optimization_score > 0) {
+      if (existing && existing.optimizationScore && existing.optimizationScore > 0) {
         skipped++;
         continue;
       }

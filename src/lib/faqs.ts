@@ -28,6 +28,22 @@ export function generateLocationFAQs(city: string, state: string, county: string
     },
   ] : [];
 
+  // "Near me" focused FAQs for local SEO (apply to all locations)
+  const nearMeFAQs: FAQ[] = [
+    {
+      question: `Who is the best roofer near me in ${city}, ${state}?`,
+      answer: `Best Roofing Now is the highest-rated roofing contractor near ${city} with a perfect 5.0 Google rating. As a local, veteran-owned company, we've installed 500+ roofs throughout ${county} County and surrounding areas. Call ${SITE_CONFIG.phone} for a free inspection and see why ${city} homeowners trust us for all their roofing needs.`,
+    },
+    {
+      question: `Where can I find a roofing company near me in ${city}?`,
+      answer: `Best Roofing Now serves ${city} and all of ${county} County from our Charlotte headquarters at 10130 Mallard Creek Rd. We're your local roofing contractor with same-day estimates and 24/7 emergency service. With BBB A+ accreditation and 5-star reviews, we're the trusted choice for ${city} homeowners looking for reliable roofers nearby.`,
+    },
+    {
+      question: `What roofing contractors near me serve ${city}, ${state}?`,
+      answer: `Best Roofing Now proudly serves ${city} and the entire ${county} County area. As local roofing experts, we provide roof replacement, repairs, storm damage restoration, and free inspections. We're family-owned, veteran-operated, and committed to treating every ${city} home like our own. Call ${SITE_CONFIG.phone} for a free estimate.`,
+    },
+  ];
+
   const standardFAQs: FAQ[] = [
     {
       question: `How much does a new roof cost in ${city}, ${state}?`,
@@ -75,8 +91,11 @@ export function generateLocationFAQs(city: string, state: string, county: string
     },
   ];
 
-  // Return Charlotte-specific FAQs first, then standard FAQs
-  return [...charlotteSpecificFAQs, ...standardFAQs];
+  // Return Charlotte-specific FAQs first, then near-me FAQs, then standard FAQs
+  // For non-Charlotte locations, near-me FAQs come first for better local SEO
+  return isCharlotte
+    ? [...charlotteSpecificFAQs, ...standardFAQs]
+    : [...nearMeFAQs, ...standardFAQs];
 }
 
 // Generate unique FAQs for each neighborhood page with hyperlocal keywords
@@ -88,6 +107,14 @@ export function generateNeighborhoodFAQs(
 ): FAQ[] {
   const primaryHomeStyle = homeStyles.split(',')[0].trim().toLowerCase();
   return [
+    {
+      question: `Who is the best roofer near me in ${neighborhood}?`,
+      answer: `Best Roofing Now is the top-rated roofing contractor serving ${neighborhood} in ${city}. With a perfect 5.0 Google rating, 500+ roofs installed, and BBB A+ accreditation, we're the trusted local choice. We understand ${neighborhood}'s unique architectural character and provide free inspections. Call ${SITE_CONFIG.phone} for same-day service.`,
+    },
+    {
+      question: `Where can I find roofing contractors near me in ${neighborhood}, ${city}?`,
+      answer: `Best Roofing Now proudly serves ${neighborhood} and surrounding ${city} neighborhoods. As your local roofing experts, we offer free inspections, same-day estimates, and 24/7 emergency service. Our crews are familiar with ${neighborhood}'s ${primaryHomeStyle} and any HOA requirements. We're just a phone call away: ${SITE_CONFIG.phone}.`,
+    },
     {
       question: `How much does roof replacement cost in ${neighborhood}, ${city}?`,
       answer: `Roof replacement costs in ${neighborhood} typically range from $8,000 to $25,000+ depending on your home's size, roof complexity, and materials chosen. ${neighborhood} homes often feature ${primaryHomeStyle}, which may have specific roofing requirements. Best Roofing Now provides free inspections and detailed quotes with no hidden fees for ${neighborhood} homeowners.`,

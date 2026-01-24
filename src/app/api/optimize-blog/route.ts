@@ -29,13 +29,13 @@ export async function GET(request: NextRequest) {
       found: true,
       data: {
         slug: optimized.slug,
-        optimizedTitle: optimized.optimized_title,
-        metaDescription: optimized.meta_description,
-        keywords: optimized.focus_keywords,
-        optimizationScore: optimized.optimization_score,
-        lastOptimized: optimized.last_optimized,
-        hasOptimizedContent: !!optimized.optimized_content,
-        schemaMarkup: optimized.schema_markup,
+        optimizedTitle: optimized.optimizedTitle,
+        metaDescription: optimized.metaDescription,
+        keywords: optimized.focusKeywords,
+        optimizationScore: optimized.optimizationScore,
+        lastOptimized: optimized.lastOptimized,
+        hasOptimizedContent: !!optimized.optimizedContent,
+        schemaMarkup: optimized.schemaMarkup,
       },
     });
   } catch (error) {
@@ -69,15 +69,15 @@ export async function POST(request: NextRequest) {
     // Check if already optimized (unless forcing)
     if (!forceReoptimize) {
       const existing = await getOptimizedBlog(slug);
-      if (existing && existing.optimization_score > 0) {
+      if (existing && existing.optimizationScore && existing.optimizationScore > 0) {
         return NextResponse.json({
           message: 'Blog already optimized',
           alreadyOptimized: true,
           data: {
             slug: existing.slug,
-            optimizedTitle: existing.optimized_title,
-            optimizationScore: existing.optimization_score,
-            lastOptimized: existing.last_optimized,
+            optimizedTitle: existing.optimizedTitle,
+            optimizationScore: existing.optimizationScore,
+            lastOptimized: existing.lastOptimized,
           },
         });
       }
@@ -102,11 +102,11 @@ export async function POST(request: NextRequest) {
       message: 'Blog optimized successfully',
       data: {
         slug: result.slug,
-        optimizedTitle: result.optimized_title,
-        metaDescription: result.meta_description,
-        keywords: result.focus_keywords,
-        optimizationScore: result.optimization_score,
-        lastOptimized: result.last_optimized,
+        optimizedTitle: result.optimizedTitle,
+        metaDescription: result.metaDescription,
+        keywords: result.focusKeywords,
+        optimizationScore: result.optimizationScore,
+        lastOptimized: result.lastOptimized,
       },
     });
   } catch (error) {

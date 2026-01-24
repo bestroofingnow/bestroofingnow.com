@@ -56,9 +56,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
   try {
     const optimized = await getOptimizedBlog(slug);
-    if (optimized && optimized.optimization_score > 0) {
-      title = optimized.optimized_title || title;
-      description = optimized.meta_description || description;
+    if (optimized && optimized.optimizationScore && optimized.optimizationScore > 0) {
+      title = optimized.optimizedTitle || title;
+      description = optimized.metaDescription || description;
     }
   } catch {
     // Use original content if DB fetch fails
@@ -124,11 +124,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   try {
     const optimized = await getOptimizedBlog(slug);
-    if (optimized && optimized.optimization_score > 0) {
+    if (optimized && optimized.optimizationScore && optimized.optimizationScore > 0) {
       optimizedData = {
-        title: optimized.optimized_title,
-        content: optimized.optimized_content,
-        schemaMarkup: optimized.schema_markup,
+        title: optimized.optimizedTitle,
+        content: optimized.optimizedContent,
+        schemaMarkup: optimized.schemaMarkup,
       };
     }
   } catch {

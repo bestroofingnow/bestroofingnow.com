@@ -1,83 +1,60 @@
-// Supabase database connection and queries
-// Setup: Create Supabase project, add SUPABASE_URL and SUPABASE_ANON_KEY to env
+// Database connection for blog optimization
+// Using Drizzle ORM with Vercel Postgres (Neon) - same as projects-db
 
-import { createClient } from '@supabase/supabase-js';
+import { drizzle } from 'drizzle-orm/vercel-postgres';
+import { sql } from '@vercel/postgres';
+import { eq, inArray } from 'drizzle-orm';
+import * as schema from './db/schema';
 
-// Initialize Supabase client
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL || '';
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || '';
+// Create drizzle instance with schema (only if configured)
+let dbInstance: ReturnType<typeof drizzle<typeof schema>> | null = null;
 
-export const supabase = createClient(supabaseUrl, supabaseKey);
-
-// Types for optimized blog content
-export interface OptimizedBlog {
-  id: number;
-  wp_post_id: number;
-  slug: string;
-  original_title: string;
-  optimized_title: string;
-  original_content: string;
-  optimized_content: string;
-  meta_description: string;
-  focus_keywords: string[];
-  internal_links: InternalLink[];
-  schema_markup: Record<string, unknown>;
-  optimization_score: number;
-  last_optimized: Date;
-  created_at: Date;
+function getDb() {
+  if (!dbInstance && process.env.POSTGRES_URL) {
+    dbInstance = drizzle(sql, { schema });
+  }
+  return dbInstance;
 }
 
+// Helper to check if database is configured
+export function isDatabaseConfigured(): boolean {
+  return !!process.env.POSTGRES_URL;
+}
+
+// Re-export types from schema for convenience
+export type { OptimizedBlog, NewOptimizedBlog, LinkablePage, NewLinkablePage } from './db/schema';
+
+// Type for internal links (matches schema)
 export interface InternalLink {
   url: string;
   anchor: string;
   keyword: string;
 }
 
-export interface LinkablePage {
-  id: number;
-  url: string;
-  title: string;
-  keywords: string[];
-  page_type: 'service' | 'location' | 'blog' | 'landing';
-  priority: number;
-}
-
-// Initialize database tables (run this once via API route)
+// Initialize database - just checks if configured
 export async function initializeDatabase(): Promise<void> {
-  // Tables should be created via Supabase dashboard or migrations
-  // This function checks if tables exist
-  try {
-    const { error: blogsError } = await supabase
-      .from('optimized_blogs')
-      .select('id')
-      .limit(1);
-
-    if (blogsError && blogsError.code === '42P01') {
-      console.log('Tables not yet created. Please run the SQL migrations in Supabase dashboard.');
-      console.log('See /src/lib/db-schema.sql for the required schema.');
-    }
-  } catch (error) {
-    console.error('Error checking database:', error);
+  const db = getDb();
+  if (!db) {
+    console.log('Database not configured. Blog optimization features disabled.');
+    console.log('Set POSTGRES_URL environment variable to enable.');
+    return;
   }
+  console.log('Database configured and ready.');
 }
 
 // Get optimized blog by slug
-export async function getOptimizedBlog(slug: string): Promise<OptimizedBlog | null> {
+export async function getOptimizedBlog(slug: string): Promise<schema.OptimizedBlog | null> {
+  const db = getDb();
+  if (!db) return null;
+
   try {
-    const { data, error } = await supabase
-      .from('optimized_blogs')
-      .select('*')
-      .eq('slug', slug)
-      .single();
+    const result = await db
+      .select()
+      .from(schema.optimizedBlogs)
+      .where(eq(schema.optimizedBlogs.slug, slug))
+      .limit(1);
 
-    if (error) {
-      if (error.code !== 'PGRST116') { // Not found is OK
-        console.error('Error fetching optimized blog:', error);
-      }
-      return null;
-    }
-
-    return data as OptimizedBlog;
+    return result[0] || null;
   } catch (error) {
     console.error('Error fetching optimized blog:', error);
     return null;
@@ -85,22 +62,18 @@ export async function getOptimizedBlog(slug: string): Promise<OptimizedBlog | nu
 }
 
 // Get optimized blog by WordPress post ID
-export async function getOptimizedBlogByWpId(wpPostId: number): Promise<OptimizedBlog | null> {
+export async function getOptimizedBlogByWpId(wpPostId: number): Promise<schema.OptimizedBlog | null> {
+  const db = getDb();
+  if (!db) return null;
+
   try {
-    const { data, error } = await supabase
-      .from('optimized_blogs')
-      .select('*')
-      .eq('wp_post_id', wpPostId)
-      .single();
+    const result = await db
+      .select()
+      .from(schema.optimizedBlogs)
+      .where(eq(schema.optimizedBlogs.wpPostId, wpPostId))
+      .limit(1);
 
-    if (error) {
-      if (error.code !== 'PGRST116') {
-        console.error('Error fetching optimized blog by WP ID:', error);
-      }
-      return null;
-    }
-
-    return data as OptimizedBlog;
+    return result[0] || null;
   } catch (error) {
     console.error('Error fetching optimized blog by WP ID:', error);
     return null;
@@ -109,39 +82,38 @@ export async function getOptimizedBlogByWpId(wpPostId: number): Promise<Optimize
 
 // Save or update optimized blog
 export async function saveOptimizedBlog(
-  blog: Omit<OptimizedBlog, 'id' | 'created_at'>
-): Promise<OptimizedBlog | null> {
+  blog: Omit<schema.NewOptimizedBlog, 'id' | 'createdAt' | 'updatedAt'>
+): Promise<schema.OptimizedBlog | null> {
+  const db = getDb();
+  if (!db) return null;
+
   try {
-    const { data, error } = await supabase
-      .from('optimized_blogs')
-      .upsert(
-        {
-          wp_post_id: blog.wp_post_id,
-          slug: blog.slug,
-          original_title: blog.original_title,
-          optimized_title: blog.optimized_title,
-          original_content: blog.original_content,
-          optimized_content: blog.optimized_content,
-          meta_description: blog.meta_description,
-          focus_keywords: blog.focus_keywords,
-          internal_links: blog.internal_links,
-          schema_markup: blog.schema_markup,
-          optimization_score: blog.optimization_score,
-          last_optimized: new Date().toISOString(),
-        },
-        {
-          onConflict: 'wp_post_id',
-        }
-      )
+    // Try to update first
+    const existing = await db
       .select()
-      .single();
+      .from(schema.optimizedBlogs)
+      .where(eq(schema.optimizedBlogs.wpPostId, blog.wpPostId))
+      .limit(1);
 
-    if (error) {
-      console.error('Error saving optimized blog:', error);
-      return null;
+    if (existing[0]) {
+      // Update existing
+      const updated = await db
+        .update(schema.optimizedBlogs)
+        .set({
+          ...blog,
+          updatedAt: new Date(),
+        })
+        .where(eq(schema.optimizedBlogs.wpPostId, blog.wpPostId))
+        .returning();
+      return updated[0] || null;
+    } else {
+      // Insert new
+      const inserted = await db
+        .insert(schema.optimizedBlogs)
+        .values(blog)
+        .returning();
+      return inserted[0] || null;
     }
-
-    return data as OptimizedBlog;
   } catch (error) {
     console.error('Error saving optimized blog:', error);
     return null;
@@ -149,19 +121,17 @@ export async function saveOptimizedBlog(
 }
 
 // Get all linkable pages for auto-linking
-export async function getLinkablePages(): Promise<LinkablePage[]> {
+export async function getLinkablePages(): Promise<schema.LinkablePage[]> {
+  const db = getDb();
+  if (!db) return [];
+
   try {
-    const { data, error } = await supabase
-      .from('linkable_pages')
-      .select('*')
-      .order('priority', { ascending: false });
+    const result = await db
+      .select()
+      .from(schema.linkablePages)
+      .orderBy(schema.linkablePages.priority);
 
-    if (error) {
-      console.error('Error fetching linkable pages:', error);
-      return [];
-    }
-
-    return data as LinkablePage[];
+    return result;
   } catch (error) {
     console.error('Error fetching linkable pages:', error);
     return [];
@@ -170,32 +140,35 @@ export async function getLinkablePages(): Promise<LinkablePage[]> {
 
 // Save or update linkable page
 export async function saveLinkablePage(
-  page: Omit<LinkablePage, 'id'>
-): Promise<LinkablePage | null> {
+  page: Omit<schema.NewLinkablePage, 'id' | 'createdAt'>
+): Promise<schema.LinkablePage | null> {
+  const db = getDb();
+  if (!db) return null;
+
   try {
-    const { data, error } = await supabase
-      .from('linkable_pages')
-      .upsert(
-        {
-          url: page.url,
-          title: page.title,
-          keywords: page.keywords,
-          page_type: page.page_type,
-          priority: page.priority,
-        },
-        {
-          onConflict: 'url',
-        }
-      )
+    // Try to update first
+    const existing = await db
       .select()
-      .single();
+      .from(schema.linkablePages)
+      .where(eq(schema.linkablePages.url, page.url))
+      .limit(1);
 
-    if (error) {
-      console.error('Error saving linkable page:', error);
-      return null;
+    if (existing[0]) {
+      // Update existing
+      const updated = await db
+        .update(schema.linkablePages)
+        .set(page)
+        .where(eq(schema.linkablePages.url, page.url))
+        .returning();
+      return updated[0] || null;
+    } else {
+      // Insert new
+      const inserted = await db
+        .insert(schema.linkablePages)
+        .values(page)
+        .returning();
+      return inserted[0] || null;
     }
-
-    return data as LinkablePage;
   } catch (error) {
     console.error('Error saving linkable page:', error);
     return null;
@@ -204,7 +177,7 @@ export async function saveLinkablePage(
 
 // Bulk insert linkable pages
 export async function bulkSaveLinkablePages(
-  pages: Omit<LinkablePage, 'id'>[]
+  pages: Omit<schema.NewLinkablePage, 'id' | 'createdAt'>[]
 ): Promise<number> {
   let savedCount = 0;
   for (const page of pages) {
@@ -218,19 +191,17 @@ export async function bulkSaveLinkablePages(
 export async function getBlogsNeedingOptimization(slugs: string[]): Promise<string[]> {
   if (slugs.length === 0) return [];
 
+  const db = getDb();
+  if (!db) return slugs; // Return all if not configured
+
   try {
-    const { data, error } = await supabase
-      .from('optimized_blogs')
-      .select('slug')
-      .in('slug', slugs);
+    const result = await db
+      .select({ slug: schema.optimizedBlogs.slug })
+      .from(schema.optimizedBlogs)
+      .where(inArray(schema.optimizedBlogs.slug, slugs));
 
-    if (error) {
-      console.error('Error checking blogs needing optimization:', error);
-      return slugs; // Return all if we can't check
-    }
-
-    const optimizedSlugs = new Set((data || []).map((r: { slug: string }) => r.slug));
-    return slugs.filter((slug) => !optimizedSlugs.has(slug));
+    const optimizedSlugs = new Set(result.map(r => r.slug));
+    return slugs.filter(slug => !optimizedSlugs.has(slug));
   } catch (error) {
     console.error('Error checking blogs needing optimization:', error);
     return slugs;
@@ -239,17 +210,15 @@ export async function getBlogsNeedingOptimization(slugs: string[]): Promise<stri
 
 // Get all optimized blog slugs
 export async function getAllOptimizedSlugs(): Promise<string[]> {
+  const db = getDb();
+  if (!db) return [];
+
   try {
-    const { data, error } = await supabase
-      .from('optimized_blogs')
-      .select('slug');
+    const result = await db
+      .select({ slug: schema.optimizedBlogs.slug })
+      .from(schema.optimizedBlogs);
 
-    if (error) {
-      console.error('Error fetching optimized slugs:', error);
-      return [];
-    }
-
-    return (data || []).map((r: { slug: string }) => r.slug);
+    return result.map(r => r.slug);
   } catch (error) {
     console.error('Error fetching optimized slugs:', error);
     return [];
@@ -262,30 +231,24 @@ export async function getOptimizationStats(): Promise<{
   avgScore: number;
   lastOptimized: Date | null;
 }> {
+  const db = getDb();
+  if (!db) return { total: 0, avgScore: 0, lastOptimized: null };
+
   try {
-    const { data, error } = await supabase
-      .from('optimized_blogs')
-      .select('optimization_score, last_optimized');
+    const result = await db
+      .select({
+        optimizationScore: schema.optimizedBlogs.optimizationScore,
+        lastOptimized: schema.optimizedBlogs.lastOptimized,
+      })
+      .from(schema.optimizedBlogs);
 
-    if (error) {
-      console.error('Error fetching optimization stats:', error);
-      return { total: 0, avgScore: 0, lastOptimized: null };
-    }
-
-    const records = data || [];
-    const total = records.length;
-    const avgScore =
-      total > 0
-        ? records.reduce((sum: number, r: { optimization_score: number }) => sum + r.optimization_score, 0) / total
-        : 0;
-    const lastOptimized =
-      records.length > 0
-        ? new Date(
-            Math.max(
-              ...records.map((r: { last_optimized: string }) => new Date(r.last_optimized).getTime())
-            )
-          )
-        : null;
+    const total = result.length;
+    const avgScore = total > 0
+      ? result.reduce((sum, r) => sum + (r.optimizationScore || 0), 0) / total
+      : 0;
+    const lastOptimized = result.length > 0
+      ? new Date(Math.max(...result.filter(r => r.lastOptimized).map(r => r.lastOptimized!.getTime())))
+      : null;
 
     return { total, avgScore, lastOptimized };
   } catch (error) {

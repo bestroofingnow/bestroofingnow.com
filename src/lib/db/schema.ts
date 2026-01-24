@@ -124,3 +124,57 @@ export type NewProjectCategory = typeof projectCategories.$inferInsert;
 export type ProjectWithPhotos = Project & {
   photos: Photo[];
 };
+
+// ============================================
+// Blog Optimization Tables
+// ============================================
+
+// Optimized blogs table - stores AI-optimized blog content
+export const optimizedBlogs = pgTable('optimized_blogs', {
+  id: uuid('id').defaultRandom().primaryKey(),
+
+  // WordPress reference
+  wpPostId: integer('wp_post_id').notNull().unique(),
+  slug: text('slug').notNull().unique(),
+
+  // Original content
+  originalTitle: text('original_title').notNull(),
+  originalContent: text('original_content').notNull(),
+
+  // Optimized content
+  optimizedTitle: text('optimized_title').notNull(),
+  optimizedContent: text('optimized_content').notNull(),
+  metaDescription: text('meta_description'),
+
+  // SEO data
+  focusKeywords: jsonb('focus_keywords').$type<string[]>().default([]),
+  internalLinks: jsonb('internal_links').$type<{ url: string; anchor: string; keyword: string }[]>().default([]),
+  schemaMarkup: jsonb('schema_markup').$type<Record<string, unknown>>(),
+
+  // Score and tracking
+  optimizationScore: integer('optimization_score').default(0),
+  lastOptimized: timestamp('last_optimized'),
+
+  // Timestamps
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+// Linkable pages table - for auto-linking functionality
+export const linkablePages = pgTable('linkable_pages', {
+  id: uuid('id').defaultRandom().primaryKey(),
+
+  url: text('url').notNull().unique(),
+  title: text('title').notNull(),
+  keywords: jsonb('keywords').$type<string[]>().default([]),
+  pageType: text('page_type').notNull(), // 'service', 'location', 'blog', 'landing'
+  priority: integer('priority').default(0),
+
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+});
+
+// Types for blog optimization
+export type OptimizedBlog = typeof optimizedBlogs.$inferSelect;
+export type NewOptimizedBlog = typeof optimizedBlogs.$inferInsert;
+export type LinkablePage = typeof linkablePages.$inferSelect;
+export type NewLinkablePage = typeof linkablePages.$inferInsert;

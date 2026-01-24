@@ -30,7 +30,31 @@
       "Bash(npm uninstall:*)",
       "Bash(NEXT_TURBO_TASKS=false npm run build:*)",
       "Bash(NEXT_PRIVATE_LOCAL_WEBPACK=true npm run build:*)",
-      "Bash(npx eslint:*)"
+      "Bash(npx eslint:*)",
+      "Bash(grep:*)",
+      "Bash(tail:*)",
+      "Bash(dir:*)",
+      "Bash(sort:*)",
+      "Bash(gh auth switch:*)",
+      "Bash(npx add-skill vercel-labs/agent-skills)",
+      "Bash(git clone:*)",
+      "mcp__kapture__navigate",
+      "mcp__kapture__screenshot",
+      "mcp__kapture__click",
+      "mcp__kapture__keypress",
+      "mcp__kapture__show",
+      "mcp__kapture__reload",
+      "mcp__kapture__tab_detail",
+      "mcp__kapture__close",
+      "Bash(git reset:*)",
+      "Bash(git log:*)",
+      "Bash(npx tsx:*)",
+      "Bash(npm run db:push:*)",
+      "Bash(npm run pmi:import:*)",
+      "Bash(npm run pmi:export:*)",
+      "Bash(npx lighthouse:*)",
+      "Bash(npx next lint:*)",
+      "Bash(npx drizzle-kit:*)"
     ]
   }
 }
