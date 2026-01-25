@@ -30,6 +30,8 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
+import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
+import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -792,6 +794,22 @@ export default function CommercialRoofingCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      {/* Service City Links */}
+      <ServiceCityLinks
+        city="Charlotte"
+        citySlug="charlotte-nc"
+        title="All Roofing Services in Charlotte NC"
+        subtitle="Beyond commercial roofing, we offer complete solutions for residential and commercial properties."
+      />
+
+      {/* Related Cities */}
+      <RelatedCitiesLinks
+        currentCity="Charlotte"
+        service="Commercial Roofing"
+        serviceSlug="commercial-roofing"
+        title="Commercial Roofing in Nearby Cities"
+      />
 
       {/* Final CTA */}
       <CTASection

@@ -18,6 +18,8 @@ import {
   CloudRain,
   Search,
   MapPin,
+  Anchor,
+  Waves,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
@@ -25,43 +27,45 @@ import { TURNER_NOTES } from '@/lib/turner-family';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
-import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofers Charlotte NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofers Mooresville NC | 5-Star Rated | Best Roofing Now',
   description:
-    'Looking for trusted roofers in Charlotte NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company with 500+ roofs completed. BBB A+ rated. Free estimates for all roofing services.',
+    'Looking for trusted roofers in Mooresville NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving the Lake Norman area. BBB A+ rated. Free estimates for all roofing services.',
   keywords: [
-    'roofers charlotte nc',
-    'charlotte roofers',
-    'local roofers charlotte',
-    'roofers in charlotte nc',
-    'charlotte nc roofers',
-    'best roofers charlotte nc',
-    'top roofers charlotte',
-    'professional roofers charlotte nc',
-    'licensed roofers charlotte',
-    'experienced roofers charlotte nc',
-    'affordable roofers charlotte',
-    'roofers near me charlotte nc',
+    'roofers mooresville nc',
+    'mooresville roofers',
+    'local roofers mooresville',
+    'roofers in mooresville nc',
+    'mooresville nc roofers',
+    'best roofers mooresville nc',
+    'top roofers mooresville',
+    'professional roofers mooresville nc',
+    'licensed roofers mooresville',
+    'experienced roofers mooresville nc',
+    'affordable roofers mooresville',
+    'roofers near me mooresville nc',
+    'lake norman roofers',
+    'roofing company mooresville',
+    'roof repair mooresville nc',
   ],
   alternates: {
-    canonical: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
+    canonical: `${SITE_CONFIG.url}/roofers-mooresville-nc`,
   },
   openGraph: {
-    title: 'Roofers Charlotte NC | 5-Star Rated | Best Roofing Now',
+    title: 'Roofers Mooresville NC | 5-Star Rated | Best Roofing Now',
     description:
-      '5-star rated, veteran-owned roofers serving Charlotte NC. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service available.',
-    url: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
+      '5-star rated, veteran-owned roofers serving Mooresville NC and Lake Norman. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service available.',
+    url: `${SITE_CONFIG.url}/roofers-mooresville-nc`,
     type: 'website',
     images: [
       {
         url: IMAGES.hero.hero2,
         width: 1200,
         height: 630,
-        alt: 'Professional roofers Charlotte NC - Best Roofing Now team at work',
+        alt: 'Professional roofers Mooresville NC - Best Roofing Now team at work',
       },
     ],
   },
@@ -72,19 +76,19 @@ const services = [
   {
     icon: Home,
     title: 'Residential Roofing',
-    description: 'Complete roofing solutions for homes including shingle, metal, and tile roofing.',
+    description: 'Complete roofing solutions for Lake Norman homes including shingle, metal, and tile roofing.',
     href: '/services/residential-roofing',
   },
   {
     icon: Building2,
     title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for businesses.',
+    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Mooresville businesses.',
     href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
     title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage.',
+    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in the Lake Norman area.',
     href: '/services/roof-repair',
   },
   {
@@ -96,13 +100,13 @@ const services = [
   {
     icon: Search,
     title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports and photos.',
+    description: 'Free comprehensive inspections with detailed reports and photos for Mooresville homeowners.',
     href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
     title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance.',
+    description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman residents.',
     href: '/services/storm-damage',
   },
 ];
@@ -112,7 +116,7 @@ const whyChooseUs = [
   {
     icon: Star,
     title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Award,
@@ -137,32 +141,32 @@ const whyChooseUs = [
   {
     icon: Clock,
     title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when you need us most.',
+    description: 'Round-the-clock emergency roofing services for Lake Norman area homes.',
   },
 ];
 
-// Charlotte neighborhoods served
-const charlotteNeighborhoods = [
-  'Myers Park',
-  'Dilworth',
-  'South End',
-  'NoDa',
-  'Plaza Midwood',
-  'Ballantyne',
-  'University City',
-  'Cotswold',
-  'Elizabeth',
-  'Eastover',
-  'SouthPark',
-  'Uptown Charlotte',
-  'Wesley Heights',
-  'Fourth Ward',
-  'Cherry',
-  'Madison Park',
-  'Montford',
-  'Chantilly',
-  'Commonwealth',
-  'Sedgefield',
+// Mooresville and Lake Norman neighborhoods/areas served
+const mooresvilleAreas = [
+  'Downtown Mooresville',
+  'Lake Norman',
+  'Langtree',
+  'Morrison Plantation',
+  'Brawley School',
+  'Curtis Pond',
+  'The Point',
+  'Westport',
+  'Talbert Village',
+  'Magnolia Estates',
+  'Foxwood',
+  'Rolling Hills',
+  'Kings Point',
+  'Williamson Road',
+  'Coddle Creek',
+  'Lake Norman Shores',
+  'Stutts Road',
+  'Race City',
+  'Exit 36 Area',
+  'Birkdale Landing',
 ];
 
 // Nearby cities served
@@ -170,68 +174,68 @@ const nearbyCities = [
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
   { name: 'Cornelius', href: '/locations/cornelius-nc' },
   { name: 'Davidson', href: '/locations/davidson-nc' },
-  { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Matthews', href: '/locations/matthews-nc' },
-  { name: 'Mint Hill', href: '/locations/mint-hill-nc' },
-  { name: 'Pineville', href: '/locations/pineville-nc' },
+  { name: 'Charlotte', href: '/roofers-charlotte-nc' },
+  { name: 'Statesville', href: '/locations/statesville-nc' },
+  { name: 'Troutman', href: '/locations/troutman-nc' },
+  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Sherrills Ford', href: '/locations/sherrills-ford-nc' },
+  { name: 'Terrell', href: '/locations/terrell-nc' },
+  { name: 'Mount Mourne', href: '/locations/mount-mourne-nc' },
+  { name: 'Lake Norman', href: '/locations/lake-norman-nc' },
   { name: 'Concord', href: '/locations/concord-nc' },
-  { name: 'Gastonia', href: '/locations/gastonia-nc' },
-  { name: 'Rock Hill, SC', href: '/locations/rock-hill-sc' },
-  { name: 'Fort Mill, SC', href: '/locations/fort-mill-sc' },
-  { name: 'Indian Trail', href: '/locations/indian-trail-nc' },
 ];
 
-// FAQs about roofers in Charlotte
+// FAQs about roofers in Mooresville
 const faqs = [
   {
-    question: 'Why should I choose Best Roofing Now over other roofers in Charlotte NC?',
+    question: 'Why should I choose Best Roofing Now over other roofers in Mooresville NC?',
     answer:
-      'Best Roofing Now stands out among Charlotte roofers with our 5-star Google rating, BBB A+ accreditation, and veteran-owned values. We have completed over 500 roofs in the Charlotte area and are certified by CertainTeed, GAF, and Owens Corning. Our transparent pricing, free estimates, and industry-leading warranties make us the top choice for Charlotte homeowners.',
+      'Best Roofing Now stands out among Mooresville roofers with our 5-star Google rating, BBB A+ accreditation, and veteran-owned values. We have completed over 500 roofs in the Lake Norman area and are certified by CertainTeed, GAF, and Owens Corning. We are active members of the Lake Norman Chamber of Commerce and deeply committed to serving our neighbors in Mooresville. Our transparent pricing, free estimates, and industry-leading warranties make us the top choice for Lake Norman homeowners.',
   },
   {
-    question: 'Are your roofers licensed and insured in Charlotte NC?',
+    question: 'Are your roofers licensed and insured in Mooresville NC?',
     answer:
-      'Yes, all our roofers are fully licensed in North Carolina and we carry comprehensive general liability and workers compensation insurance. This protects you from any liability during your roofing project. We are happy to provide proof of insurance and licensing upon request.',
+      'Yes, all our roofers are fully licensed in North Carolina and we carry comprehensive general liability and workers compensation insurance. This protects you from any liability during your roofing project. We serve Mooresville and the entire Lake Norman region with the same professional standards. We are happy to provide proof of insurance and licensing upon request.',
   },
   {
-    question: 'How much do roofers in Charlotte NC typically charge?',
+    question: 'How much do roofers in Mooresville NC typically charge?',
     answer:
-      'Roofing costs in Charlotte vary based on the scope of work. Minor repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Factors include roof size, pitch, material choice, and complexity. We provide free, detailed estimates with transparent pricing and no hidden fees.',
+      'Roofing costs in Mooresville vary based on the scope of work and the unique characteristics of Lake Norman homes. Minor repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Lakefront properties may have different considerations due to moisture exposure. Factors include roof size, pitch, material choice, and complexity. We provide free, detailed estimates with transparent pricing and no hidden fees.',
   },
   {
-    question: 'Do you offer free estimates for roofing work in Charlotte?',
+    question: 'Do you offer free estimates for roofing work in Mooresville?',
     answer:
-      'Absolutely! Best Roofing Now provides completely free, no-obligation estimates for all roofing services in Charlotte and surrounding areas. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal. There is no pressure to hire us after receiving your estimate.',
+      'Absolutely! Best Roofing Now provides completely free, no-obligation estimates for all roofing services in Mooresville and the surrounding Lake Norman area. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal. There is no pressure to hire us after receiving your estimate.',
   },
   {
-    question: 'How quickly can your roofers respond to emergencies in Charlotte?',
+    question: 'How quickly can your roofers respond to emergencies in Mooresville?',
     answer:
-      'We offer 24/7 emergency roofing services with typical response times of 1-4 hours for urgent situations like active leaks or storm damage. Our emergency team is equipped to secure your property quickly, prevent further damage, and document everything for insurance purposes.',
+      'We offer 24/7 emergency roofing services with typical response times of 1-4 hours for urgent situations like active leaks or storm damage. Our team is strategically positioned to serve the Lake Norman corridor from Huntersville to Statesville, ensuring fast response times for Mooresville residents. Our emergency team is equipped to secure your property quickly, prevent further damage, and document everything for insurance purposes.',
   },
   {
-    question: 'What areas do your Charlotte roofers serve?',
+    question: 'What areas do your Mooresville roofers serve?',
     answer:
-      'Our roofers serve all of Charlotte and the surrounding metro area including Myers Park, Dilworth, Ballantyne, South End, NoDa, University City, and more. We also serve nearby cities like Huntersville, Matthews, Cornelius, Davidson, Mooresville, Pineville, Concord, Gastonia, and into South Carolina including Rock Hill and Fort Mill.',
+      'Our roofers serve all of Mooresville and the greater Lake Norman region including Downtown Mooresville, Morrison Plantation, Langtree, The Point, Lake Norman Shores, and all lakefront communities. We also serve nearby cities like Huntersville, Cornelius, Davidson, Statesville, Troutman, Denver, and Sherrills Ford. Whether your home is on the lake or inland, we provide the same excellent service.',
   },
   {
-    question: 'What types of roofing materials do your Charlotte roofers work with?',
+    question: 'What types of roofing materials work best for Lake Norman area homes?',
     answer:
-      'Our experienced roofers work with all types of roofing materials including asphalt shingles (architectural and 3-tab), metal roofing, tile roofing, flat roof systems (TPO, EPDM, PVC), slate, and cedar shakes. We can help you choose the best material for your home, budget, and aesthetic preferences.',
+      'Our experienced roofers work with all types of roofing materials, but we often recommend specific options for Lake Norman homes based on moisture exposure and local weather patterns. Popular choices include architectural asphalt shingles, metal roofing (which performs excellently in humid lake environments), and tile roofing. We can help you choose the best material for your home, budget, and the unique conditions of living near Lake Norman.',
   },
   {
-    question: 'Do your roofers help with insurance claims in Charlotte?',
+    question: 'Do your roofers help with insurance claims in Mooresville?',
     answer:
-      'Yes! We have extensive experience helping Charlotte homeowners navigate insurance claims for storm damage. Our roofers provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Charlotte roofs qualify for insurance coverage after storm events, and we help maximize your claim.',
+      'Yes! We have extensive experience helping Mooresville and Lake Norman homeowners navigate insurance claims for storm damage. Our roofers provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. The Lake Norman area frequently experiences severe thunderstorms, and many roofs qualify for insurance coverage after these events. We help maximize your claim while handling the paperwork stress for you.',
   },
 ];
 
-export default function RoofersCharlotteNCPage() {
+export default function RoofersMoresville() {
   return (
     <>
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
-          { name: 'Roofers Charlotte NC', url: `${SITE_CONFIG.url}/roofers-charlotte-nc` },
+          { name: 'Roofers Mooresville NC', url: `${SITE_CONFIG.url}/roofers-mooresville-nc` },
         ]}
       />
       <FAQSchema faqs={faqs} />
@@ -242,7 +246,7 @@ export default function RoofersCharlotteNCPage() {
         <div className="absolute inset-0 z-0 hidden md:block">
           <Image
             src={IMAGES.hero.hero2}
-            alt="Professional roofers Charlotte NC - Best Roofing Now crew installing a new roof"
+            alt="Professional roofers Mooresville NC - Best Roofing Now crew installing a new roof"
             fill
             className="object-cover opacity-20"
             priority
@@ -252,19 +256,19 @@ export default function RoofersCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-              <span className="text-sm font-semibold">5-Star Rated | Veteran-Owned</span>
+              <span className="text-sm font-semibold">5-Star Rated | Veteran-Owned | Lake Norman Area</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Roofers <br className="hidden md:block" />
-              <span className="text-accent-light">Charlotte NC</span>
+              <span className="text-accent-light">Mooresville NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Charlotte&apos;s most trusted roofers with {SITE_CONFIG.roofsInstalled}+ roofs completed
+              Lake Norman&apos;s most trusted roofers with {SITE_CONFIG.roofsInstalled}+ roofs completed
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides 5-star rated roofing services throughout Charlotte NC. From repairs to complete
-              replacements, our certified roofers deliver exceptional quality backed by industry-leading warranties
-              and our BBB A+ rating.
+              Best Roofing Now provides 5-star rated roofing services throughout Mooresville NC and the
+              Lake Norman area. From repairs to complete replacements, our certified roofers deliver
+              exceptional quality backed by industry-leading warranties and our BBB A+ rating.
             </p>
 
             {/* CTA Buttons */}
@@ -303,10 +307,33 @@ export default function RoofersCharlotteNCPage() {
                 Licensed & Insured
               </span>
               <span className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-accent-light" />
-                Veteran-Owned
+                <Anchor className="w-5 h-5 text-accent-light" />
+                Lake Norman Chamber Member
               </span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lake Norman Introduction */}
+      <section className="py-12 bg-white border-b border-gray-100">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <Waves className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">Proudly Serving Lake Norman</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Your Trusted Roofers in Mooresville &amp; Lake Norman
+            </h2>
+            <p className="text-gray text-lg">
+              Mooresville, known as &ldquo;Race City USA&rdquo; and the heart of the Lake Norman region, deserves
+              roofers who understand the unique challenges of lakefront and waterside living. From the humidity
+              and moisture exposure near the lake to the severe thunderstorms that roll through the region, your
+              roof needs expert care. Best Roofing Now has proudly served Mooresville homeowners for years, and
+              we&apos;re active members of the Lake Norman Chamber of Commerce. When you choose us, you&apos;re
+              choosing neighbors who care about this community as much as you do.
+            </p>
           </div>
         </div>
       </section>
@@ -316,11 +343,11 @@ export default function RoofersCharlotteNCPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Complete Roofing Services from Charlotte&apos;s Best Roofers
+              Complete Roofing Services from Mooresville&apos;s Best Roofers
             </h2>
             <p className="text-gray text-lg">
-              Our team of experienced Charlotte roofers handles all your roofing needs with expert
-              craftsmanship and premium materials.
+              Our team of experienced Mooresville roofers handles all your roofing needs with expert
+              craftsmanship and premium materials designed to protect Lake Norman homes.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -353,12 +380,13 @@ export default function RoofersCharlotteNCPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Why Charlotte Homeowners Trust Our Roofers
+                Why Lake Norman Homeowners Trust Our Roofers
               </h2>
               <p className="text-gray text-lg mb-8">
-                When you need roofers in Charlotte NC, you want a team you can trust. Best Roofing
+                When you need roofers in Mooresville NC, you want a team you can trust. Best Roofing
                 Now has built our reputation on quality workmanship, honest assessments, and putting
-                our customers first.
+                our customers first. As proud members of the Lake Norman Chamber of Commerce, we&apos;re
+                committed to serving this community with excellence.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (
@@ -377,7 +405,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative">
               <Image
                 src={IMAGES.realProjects.drone1}
-                alt="Best Roofing Now - Trusted roofers in Charlotte NC with completed roof project"
+                alt="Best Roofing Now - Trusted roofers in Mooresville NC with completed roof project"
                 width={600}
                 height={450}
                 className="rounded-xl shadow-lg"
@@ -400,16 +428,83 @@ export default function RoofersCharlotteNCPage() {
         </div>
       </section>
 
+      {/* Lake Norman Specific Roofing Considerations */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <Anchor className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Lake Norman Expertise</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Roofing Considerations for Lake Norman Homes
+              </h2>
+              <p className="text-gray text-lg">
+                Living near Lake Norman comes with unique roofing challenges that our experienced team
+                understands and addresses with every project.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-light rounded-xl p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Waves className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-bold text-dark mb-2">Humidity &amp; Moisture Control</h3>
+                <p className="text-gray text-sm">
+                  Lake Norman homes face higher humidity levels year-round. We select materials and install
+                  proper ventilation systems to prevent moisture buildup, mold growth, and premature roof
+                  deterioration that lakefront properties are prone to.
+                </p>
+              </div>
+              <div className="bg-light rounded-xl p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <CloudRain className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-bold text-dark mb-2">Storm Damage Protection</h3>
+                <p className="text-gray text-sm">
+                  The Lake Norman region experiences severe thunderstorms, especially in spring and summer.
+                  We use impact-resistant materials and proper installation techniques to protect your home
+                  from wind, hail, and heavy rain.
+                </p>
+              </div>
+              <div className="bg-light rounded-xl p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Home className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-bold text-dark mb-2">Aesthetic Excellence</h3>
+                <p className="text-gray text-sm">
+                  Mooresville and Lake Norman homeowners take pride in their properties. We offer premium
+                  roofing materials that enhance curb appeal while meeting HOA requirements common in
+                  communities like Morrison Plantation and The Point.
+                </p>
+              </div>
+              <div className="bg-light rounded-xl p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-bold text-dark mb-2">Long-Term Warranties</h3>
+                <p className="text-gray text-sm">
+                  Our manufacturer certifications allow us to offer industry-leading warranties on all
+                  Lake Norman roofing projects. Your investment is protected for decades, giving you
+                  peace of mind whether you&apos;re on the lake or nearby.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mid-Page CTA */}
       <section className="bg-accent text-white py-12">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">
-                Looking for Reliable Roofers in Charlotte?
+                Looking for Reliable Roofers in Mooresville?
               </h2>
               <p className="text-white/90">
-                Get a free, no-obligation estimate from Charlotte&apos;s most trusted roofing team.
+                Get a free, no-obligation estimate from Lake Norman&apos;s most trusted roofing team.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -444,24 +539,25 @@ export default function RoofersCharlotteNCPage() {
               <span className="text-sm font-semibold">Service Areas</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Charlotte Roofers Serving All Metro Areas
+              Mooresville Roofers Serving All Lake Norman Areas
             </h2>
             <p className="text-gray text-lg">
-              Our professional roofers serve homeowners and businesses throughout the Greater Charlotte region.
+              Our professional roofers serve homeowners and businesses throughout Mooresville and
+              the greater Lake Norman region.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* Charlotte Neighborhoods */}
+            {/* Mooresville Areas */}
             <div className="bg-light rounded-xl p-6">
-              <h3 className="text-xl font-bold text-dark mb-4">Charlotte Neighborhoods We Serve</h3>
+              <h3 className="text-xl font-bold text-dark mb-4">Mooresville &amp; Lake Norman Areas We Serve</h3>
               <div className="flex flex-wrap gap-2">
-                {charlotteNeighborhoods.map((neighborhood) => (
+                {mooresvilleAreas.map((area) => (
                   <span
-                    key={neighborhood}
+                    key={area}
                     className="inline-block bg-white px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
                   >
-                    {neighborhood}
+                    {area}
                   </span>
                 ))}
               </div>
@@ -502,11 +598,11 @@ export default function RoofersCharlotteNCPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Certified Charlotte Roofers You Can Trust
+              Certified Mooresville Roofers You Can Trust
             </h2>
             <p className="text-gray text-lg">
               Our certifications from industry-leading manufacturers mean you get premium materials backed by
-              extended warranty coverage.
+              extended warranty coverage for your Lake Norman home.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -546,17 +642,17 @@ export default function RoofersCharlotteNCPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Recent Work by Our Charlotte Roofers
+              Recent Work by Our Mooresville Roofers
             </h2>
             <p className="text-gray text-lg">
-              Browse our portfolio of completed roofing projects throughout the Charlotte area.
+              Browse our portfolio of completed roofing projects throughout the Mooresville and Lake Norman area.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project1}
-                alt="Completed residential roof by Charlotte roofers"
+                alt="Completed residential roof by Mooresville roofers"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -564,7 +660,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.certainteed1}
-                alt="CertainTeed shingle installation by Best Roofing Now roofers in Charlotte"
+                alt="CertainTeed shingle installation by Best Roofing Now roofers in Mooresville"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -572,7 +668,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.drone2}
-                alt="Aerial view of completed roof project by Charlotte NC roofers"
+                alt="Aerial view of completed roof project by Mooresville NC roofers"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -580,7 +676,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project3}
-                alt="Professional roofing work by roofers in Charlotte area"
+                alt="Professional roofing work by roofers in Lake Norman area"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -603,10 +699,10 @@ export default function RoofersCharlotteNCPage() {
 
       {/* Service City Links */}
       <ServiceCityLinks
-        city="Charlotte"
-        citySlug="charlotte-nc"
-        title="Roofing Services in Charlotte NC"
-        subtitle="Looking for a specific roofing service? Our Charlotte roofers offer comprehensive solutions for every roofing need."
+        city="Mooresville"
+        citySlug="mooresville-nc"
+        title="Roofing Services in Mooresville NC"
+        subtitle="Looking for a specific roofing service? Our Mooresville roofers offer comprehensive solutions for every roofing need in the Lake Norman area."
       />
 
       {/* Personal Note from James */}
@@ -622,10 +718,22 @@ export default function RoofersCharlotteNCPage() {
                 <p className="text-gray italic mb-4">
                   &ldquo;{TURNER_NOTES.james.onCommunity}&rdquo;
                 </p>
+                <p className="text-gray mb-4">
+                  The Lake Norman area has become like a second home to us. When I first started working in
+                  Mooresville, I fell in love with the community, the lake, and the people. There&apos;s
+                  something special about this area - the way neighbors look out for each other, the pride
+                  homeowners take in their properties, and the small-town feel even as the region grows.
+                </p>
+                <p className="text-gray mb-4">
+                  That&apos;s why we joined the Lake Norman Chamber of Commerce and committed to being more
+                  than just roofers who show up, do a job, and leave. We want to be the roofing company that
+                  Mooresville families trust for generations - the one you recommend to your neighbors and
+                  friends without hesitation.
+                </p>
                 <p className="text-gray">
                   When you hire Best Roofing Now, you&apos;re not just getting roofers - you&apos;re getting a family
-                  that cares about Charlotte as much as you do. We&apos;ve been here for 15 years, raised our kids here,
-                  and built our business on the simple principle that your roof should protect what matters most.
+                  that cares about Lake Norman as much as you do. We treat every roof like it&apos;s protecting
+                  our own family, because in a way, this whole community feels like family to us.
                 </p>
                 <p className="text-primary font-semibold mt-4">
                   Call us today at {SITE_CONFIG.phone} - I&apos;d love to hear from you.
@@ -646,10 +754,10 @@ export default function RoofersCharlotteNCPage() {
                 <span className="text-sm font-semibold">Common Questions</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Charlotte Roofers FAQs
+                Mooresville Roofers FAQs
               </h2>
               <p className="text-gray text-lg">
-                Answers to common questions about hiring roofers in Charlotte NC.
+                Answers to common questions about hiring roofers in Mooresville NC and the Lake Norman area.
               </p>
             </div>
             <div className="space-y-4">
@@ -664,25 +772,9 @@ export default function RoofersCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Service City Links */}
-      <ServiceCityLinks
-        city="Charlotte"
-        citySlug="charlotte-nc"
-        title="Our Roofing Services in Charlotte NC"
-        subtitle="Explore all the roofing services our Charlotte roofers provide."
-      />
-
-      {/* Related Cities */}
-      <RelatedCitiesLinks
-        currentCity="Charlotte"
-        service="Roofers"
-        serviceSlug="roofers"
-        title="Trusted Roofers in Nearby Cities"
-      />
-
       {/* Final CTA */}
       <CTASection
-        title="Ready to Work with Charlotte's Top-Rated Roofers?"
+        title="Ready to Work with Lake Norman's Top-Rated Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."
       />
     </>

@@ -24,6 +24,8 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
+import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
+import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -623,6 +625,22 @@ export default function RoofRepairCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      {/* Service City Links */}
+      <ServiceCityLinks
+        city="Charlotte"
+        citySlug="charlotte-nc"
+        title="All Roofing Services in Charlotte NC"
+        subtitle="Beyond repairs, we offer complete roofing solutions for Charlotte homeowners."
+      />
+
+      {/* Related Cities */}
+      <RelatedCitiesLinks
+        currentCity="Charlotte"
+        service="Roof Repair"
+        serviceSlug="roof-repair"
+        title="Roof Repair in Nearby Cities"
+      />
 
       {/* Final CTA */}
       <CTASection

@@ -18,6 +18,8 @@ import {
   CloudRain,
   Search,
   MapPin,
+  Zap,
+  Trophy,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
@@ -25,66 +27,67 @@ import { TURNER_NOTES } from '@/lib/turner-family';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
-import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofers Charlotte NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofers Concord NC | 5-Star Rated | Best Roofing Now',
   description:
-    'Looking for trusted roofers in Charlotte NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company with 500+ roofs completed. BBB A+ rated. Free estimates for all roofing services.',
+    'Looking for trusted roofers in Concord NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Cabarrus County. BBB A+ rated with 500+ roofs completed. Free estimates for all roofing services in the Charlotte Motor Speedway area.',
   keywords: [
-    'roofers charlotte nc',
-    'charlotte roofers',
-    'local roofers charlotte',
-    'roofers in charlotte nc',
-    'charlotte nc roofers',
-    'best roofers charlotte nc',
-    'top roofers charlotte',
-    'professional roofers charlotte nc',
-    'licensed roofers charlotte',
-    'experienced roofers charlotte nc',
-    'affordable roofers charlotte',
-    'roofers near me charlotte nc',
+    'roofers concord nc',
+    'concord nc roofers',
+    'concord roofers',
+    'local roofers concord nc',
+    'roofers in concord nc',
+    'best roofers concord nc',
+    'top roofers concord',
+    'professional roofers concord nc',
+    'licensed roofers concord',
+    'experienced roofers concord nc',
+    'affordable roofers concord',
+    'roofers near me concord nc',
+    'cabarrus county roofers',
+    'roofing contractors concord nc',
   ],
   alternates: {
-    canonical: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
+    canonical: `${SITE_CONFIG.url}/roofers-concord-nc`,
   },
   openGraph: {
-    title: 'Roofers Charlotte NC | 5-Star Rated | Best Roofing Now',
+    title: 'Roofers Concord NC | 5-Star Rated | Best Roofing Now',
     description:
-      '5-star rated, veteran-owned roofers serving Charlotte NC. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service available.',
-    url: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
+      '5-star rated, veteran-owned roofers serving Concord NC and Cabarrus County. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service available.',
+    url: `${SITE_CONFIG.url}/roofers-concord-nc`,
     type: 'website',
     images: [
       {
-        url: IMAGES.hero.hero2,
+        url: IMAGES.hero.hero3,
         width: 1200,
         height: 630,
-        alt: 'Professional roofers Charlotte NC - Best Roofing Now team at work',
+        alt: 'Professional roofers Concord NC - Best Roofing Now team at work',
       },
     ],
   },
 };
 
-// Services offered
+// Services offered in Concord
 const services = [
   {
     icon: Home,
     title: 'Residential Roofing',
-    description: 'Complete roofing solutions for homes including shingle, metal, and tile roofing.',
+    description: 'Complete roofing solutions for Concord homes including shingle, metal, and tile roofing.',
     href: '/services/residential-roofing',
   },
   {
     icon: Building2,
     title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for businesses.',
+    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Concord businesses.',
     href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
     title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage.',
+    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Concord.',
     href: '/services/roof-repair',
   },
   {
@@ -96,13 +99,13 @@ const services = [
   {
     icon: Search,
     title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports and photos.',
+    description: 'Free comprehensive inspections with detailed reports for Concord homeowners.',
     href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
     title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance.',
+    description: 'Emergency storm damage restoration and insurance claim assistance in Cabarrus County.',
     href: '/services/storm-damage',
   },
 ];
@@ -112,7 +115,7 @@ const whyChooseUs = [
   {
     icon: Star,
     title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Concord and Charlotte area homeowners.`,
   },
   {
     icon: Award,
@@ -127,7 +130,7 @@ const whyChooseUs = [
   {
     icon: CheckCircle,
     title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofers with comprehensive liability insurance.',
+    description: 'Fully licensed NC roofers with comprehensive liability insurance for your protection.',
   },
   {
     icon: Users,
@@ -137,101 +140,108 @@ const whyChooseUs = [
   {
     icon: Clock,
     title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when you need us most.',
+    description: 'Round-the-clock emergency roofing services when Concord homeowners need us most.',
   },
 ];
 
-// Charlotte neighborhoods served
-const charlotteNeighborhoods = [
-  'Myers Park',
-  'Dilworth',
-  'South End',
-  'NoDa',
-  'Plaza Midwood',
-  'Ballantyne',
-  'University City',
-  'Cotswold',
-  'Elizabeth',
-  'Eastover',
-  'SouthPark',
-  'Uptown Charlotte',
-  'Wesley Heights',
-  'Fourth Ward',
-  'Cherry',
-  'Madison Park',
-  'Montford',
-  'Chantilly',
-  'Commonwealth',
-  'Sedgefield',
+// Concord neighborhoods and areas served
+const concordNeighborhoods = [
+  'Downtown Concord',
+  'Afton Village',
+  'Poplar Tent',
+  'Odell School',
+  'Cox Mill',
+  'Weddington Hills',
+  'Highland Creek',
+  'Skybrook',
+  'Christenbury',
+  'Gibson Village',
+  'Moss Creek',
+  'The Palisades',
+  'Kannapolis',
+  'Harrisburg',
+  'Mount Pleasant',
+  'Midland',
+  'Locust',
+  'Cabarrus County',
+  'Coddle Creek',
+  'Rocky River',
 ];
 
-// Nearby cities served
+// Nearby cities served from Concord
 const nearbyCities = [
+  { name: 'Charlotte', href: '/roofers-charlotte-nc' },
+  { name: 'Kannapolis', href: '/locations/kannapolis-nc' },
+  { name: 'Harrisburg', href: '/locations/harrisburg-nc' },
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
+  { name: 'Mooresville', href: '/locations/mooresville-nc' },
   { name: 'Cornelius', href: '/locations/cornelius-nc' },
   { name: 'Davidson', href: '/locations/davidson-nc' },
-  { name: 'Mooresville', href: '/locations/mooresville-nc' },
   { name: 'Matthews', href: '/locations/matthews-nc' },
   { name: 'Mint Hill', href: '/locations/mint-hill-nc' },
-  { name: 'Pineville', href: '/locations/pineville-nc' },
-  { name: 'Concord', href: '/locations/concord-nc' },
-  { name: 'Gastonia', href: '/locations/gastonia-nc' },
-  { name: 'Rock Hill, SC', href: '/locations/rock-hill-sc' },
-  { name: 'Fort Mill, SC', href: '/locations/fort-mill-sc' },
-  { name: 'Indian Trail', href: '/locations/indian-trail-nc' },
+  { name: 'Mount Pleasant', href: '/locations/mount-pleasant-nc' },
+  { name: 'Midland', href: '/locations/midland-nc' },
+  { name: 'Albemarle', href: '/locations/albemarle-nc' },
 ];
 
-// FAQs about roofers in Charlotte
+// FAQs about roofers in Concord
 const faqs = [
   {
-    question: 'Why should I choose Best Roofing Now over other roofers in Charlotte NC?',
+    question: 'Why should I choose Best Roofing Now over other roofers in Concord NC?',
     answer:
-      'Best Roofing Now stands out among Charlotte roofers with our 5-star Google rating, BBB A+ accreditation, and veteran-owned values. We have completed over 500 roofs in the Charlotte area and are certified by CertainTeed, GAF, and Owens Corning. Our transparent pricing, free estimates, and industry-leading warranties make us the top choice for Charlotte homeowners.',
+      'Best Roofing Now stands out among Concord roofers with our 5-star Google rating, BBB A+ accreditation, and veteran-owned values. We have completed over 500 roofs in the Charlotte metro area including Concord and Cabarrus County. Our certified roofers are trained by CertainTeed, GAF, and Owens Corning, offering premium warranty options. We provide transparent pricing, free estimates, and treat every Concord home like our own.',
   },
   {
-    question: 'Are your roofers licensed and insured in Charlotte NC?',
+    question: 'Are your roofers licensed and insured to work in Concord NC?',
     answer:
-      'Yes, all our roofers are fully licensed in North Carolina and we carry comprehensive general liability and workers compensation insurance. This protects you from any liability during your roofing project. We are happy to provide proof of insurance and licensing upon request.',
+      'Yes, all our roofers are fully licensed in North Carolina and we carry comprehensive general liability and workers compensation insurance. This protects Concord homeowners from any liability during roofing projects. We are happy to provide proof of insurance and licensing upon request, and we comply with all Cabarrus County building codes and permit requirements.',
   },
   {
-    question: 'How much do roofers in Charlotte NC typically charge?',
+    question: 'How much do roofers in Concord NC typically charge?',
     answer:
-      'Roofing costs in Charlotte vary based on the scope of work. Minor repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Factors include roof size, pitch, material choice, and complexity. We provide free, detailed estimates with transparent pricing and no hidden fees.',
+      'Roofing costs in Concord vary based on the scope of work. Minor repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Factors include roof size, pitch, material choice (asphalt shingles, metal, tile), and complexity. We provide free, detailed estimates with transparent pricing and no hidden fees. Concord homeowners often find our pricing competitive with other local roofers.',
   },
   {
-    question: 'Do you offer free estimates for roofing work in Charlotte?',
+    question: 'Do you offer free roof inspections and estimates in Concord?',
     answer:
-      'Absolutely! Best Roofing Now provides completely free, no-obligation estimates for all roofing services in Charlotte and surrounding areas. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal. There is no pressure to hire us after receiving your estimate.',
+      'Absolutely! Best Roofing Now provides completely free, no-obligation estimates for all roofing services in Concord and surrounding Cabarrus County areas. Our certified inspectors will thoroughly examine your roof using both visual inspection and drone technology, identify any issues, and provide a detailed written proposal. There is no pressure to hire us after receiving your estimate.',
   },
   {
-    question: 'How quickly can your roofers respond to emergencies in Charlotte?',
+    question: 'How quickly can your roofers respond to emergencies in Concord?',
     answer:
-      'We offer 24/7 emergency roofing services with typical response times of 1-4 hours for urgent situations like active leaks or storm damage. Our emergency team is equipped to secure your property quickly, prevent further damage, and document everything for insurance purposes.',
+      'We offer 24/7 emergency roofing services in Concord with typical response times of 1-4 hours for urgent situations like active leaks or storm damage. Our emergency team is equipped to secure your property quickly, prevent further damage, and document everything for insurance purposes. Living in the Charlotte Motor Speedway area means weather can be unpredictable, and we are ready when you need us.',
   },
   {
-    question: 'What areas do your Charlotte roofers serve?',
+    question: 'What areas near Concord do your roofers serve?',
     answer:
-      'Our roofers serve all of Charlotte and the surrounding metro area including Myers Park, Dilworth, Ballantyne, South End, NoDa, University City, and more. We also serve nearby cities like Huntersville, Matthews, Cornelius, Davidson, Mooresville, Pineville, Concord, Gastonia, and into South Carolina including Rock Hill and Fort Mill.',
+      'Our roofers serve all of Concord and Cabarrus County including Kannapolis, Harrisburg, Mount Pleasant, Midland, and Locust. We also serve the greater Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, and all Charlotte neighborhoods. Whether you are near the Charlotte Motor Speedway or anywhere in Cabarrus County, we are your local roofers.',
   },
   {
-    question: 'What types of roofing materials do your Charlotte roofers work with?',
+    question: 'What types of roofing materials do your Concord roofers work with?',
     answer:
-      'Our experienced roofers work with all types of roofing materials including asphalt shingles (architectural and 3-tab), metal roofing, tile roofing, flat roof systems (TPO, EPDM, PVC), slate, and cedar shakes. We can help you choose the best material for your home, budget, and aesthetic preferences.',
+      'Our experienced roofers work with all types of roofing materials popular in Concord including architectural and 3-tab asphalt shingles, metal roofing (standing seam and ribbed panels), tile roofing, flat roof systems (TPO, EPDM, PVC), and synthetic slate. We help Concord homeowners choose the best material for their home style, budget, and the local climate conditions.',
   },
   {
-    question: 'Do your roofers help with insurance claims in Charlotte?',
+    question: 'Do your roofers help with insurance claims for storm damage in Concord?',
     answer:
-      'Yes! We have extensive experience helping Charlotte homeowners navigate insurance claims for storm damage. Our roofers provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Charlotte roofs qualify for insurance coverage after storm events, and we help maximize your claim.',
+      'Yes! We have extensive experience helping Concord homeowners navigate insurance claims for storm damage. Cabarrus County experiences significant storms, hail, and wind damage throughout the year. Our roofers provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Concord roofs qualify for insurance coverage after storm events, and we help maximize your claim.',
   },
 ];
 
-export default function RoofersCharlotteNCPage() {
+// Concord-specific content
+const concordContent = {
+  intro: `Concord, the seat of Cabarrus County, is known for its rich motorsports heritage, historic downtown, and rapidly growing residential communities. From the excitement of the Charlotte Motor Speedway to the charming streets of downtown, Concord homes need roofing contractors who understand the unique demands of this thriving North Carolina city.`,
+  climate: `The Concord area experiences a humid subtropical climate with hot summers, mild winters, and significant rainfall throughout the year. This weather pattern, combined with occasional severe storms, hail, and high winds near the speedway corridor, means roofs in Concord face unique challenges that require experienced local roofers.`,
+  community: `As Concord continues to grow with new developments in areas like Afton Village, Highland Creek, and Skybrook, homeowners need trusted roofers who can handle everything from new construction to maintaining roofs on historic downtown buildings. Best Roofing Now has been serving Concord families with the same dedication we bring to every Charlotte metro community.`,
+};
+
+export default function RoofersConcordNCPage() {
   return (
     <>
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
-          { name: 'Roofers Charlotte NC', url: `${SITE_CONFIG.url}/roofers-charlotte-nc` },
+          { name: 'Roofers Concord NC', url: `${SITE_CONFIG.url}/roofers-concord-nc` },
         ]}
       />
       <FAQSchema faqs={faqs} />
@@ -241,8 +251,8 @@ export default function RoofersCharlotteNCPage() {
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
           <Image
-            src={IMAGES.hero.hero2}
-            alt="Professional roofers Charlotte NC - Best Roofing Now crew installing a new roof"
+            src={IMAGES.hero.hero3}
+            alt="Professional roofers Concord NC - Best Roofing Now crew installing a new roof in Cabarrus County"
             fill
             className="object-cover opacity-20"
             priority
@@ -252,19 +262,19 @@ export default function RoofersCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-              <span className="text-sm font-semibold">5-Star Rated | Veteran-Owned</span>
+              <span className="text-sm font-semibold">5-Star Rated | Veteran-Owned | Serving Cabarrus County</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Roofers <br className="hidden md:block" />
-              <span className="text-accent-light">Charlotte NC</span>
+              <span className="text-accent-light">Concord NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Charlotte&apos;s most trusted roofers with {SITE_CONFIG.roofsInstalled}+ roofs completed
+              Concord&apos;s most trusted roofers with {SITE_CONFIG.roofsInstalled}+ roofs completed in the Charlotte metro area
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides 5-star rated roofing services throughout Charlotte NC. From repairs to complete
-              replacements, our certified roofers deliver exceptional quality backed by industry-leading warranties
-              and our BBB A+ rating.
+              Best Roofing Now provides 5-star rated roofing services throughout Concord NC and Cabarrus County.
+              From the Charlotte Motor Speedway area to historic downtown Concord, our certified roofers deliver
+              exceptional quality backed by industry-leading warranties and our BBB A+ rating.
             </p>
 
             {/* CTA Buttons */}
@@ -311,16 +321,38 @@ export default function RoofersCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Concord Introduction Section */}
       <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <MapPin className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Serving Concord & Cabarrus County</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Your Trusted Local Roofers in Concord NC
+              </h2>
+            </div>
+            <div className="prose prose-lg max-w-none text-gray">
+              <p>{concordContent.intro}</p>
+              <p>{concordContent.climate}</p>
+              <p>{concordContent.community}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Complete Roofing Services from Charlotte&apos;s Best Roofers
+              Complete Roofing Services from Concord&apos;s Best Roofers
             </h2>
             <p className="text-gray text-lg">
-              Our team of experienced Charlotte roofers handles all your roofing needs with expert
-              craftsmanship and premium materials.
+              Our team of experienced Concord roofers handles all your roofing needs with expert
+              craftsmanship and premium materials backed by manufacturer warranties.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -328,7 +360,7 @@ export default function RoofersCharlotteNCPage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group p-6 bg-light rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
+                className="group p-6 bg-white rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-primary" />
@@ -348,17 +380,17 @@ export default function RoofersCharlotteNCPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="section bg-light">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Why Charlotte Homeowners Trust Our Roofers
+                Why Concord Homeowners Trust Our Roofers
               </h2>
               <p className="text-gray text-lg mb-8">
-                When you need roofers in Charlotte NC, you want a team you can trust. Best Roofing
+                When you need roofers in Concord NC, you want a team you can trust. Best Roofing
                 Now has built our reputation on quality workmanship, honest assessments, and putting
-                our customers first.
+                our customers first throughout Cabarrus County and the greater Charlotte area.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (
@@ -377,7 +409,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative">
               <Image
                 src={IMAGES.realProjects.drone1}
-                alt="Best Roofing Now - Trusted roofers in Charlotte NC with completed roof project"
+                alt="Best Roofing Now - Trusted roofers in Concord NC with completed roof project"
                 width={600}
                 height={450}
                 className="rounded-xl shadow-lg"
@@ -400,16 +432,65 @@ export default function RoofersCharlotteNCPage() {
         </div>
       </section>
 
+      {/* Concord-Specific Features */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Roofing Expertise for Concord&apos;s Unique Needs
+            </h2>
+            <p className="text-gray text-lg">
+              From the NASCAR excitement to growing family neighborhoods, we understand what Concord roofs need.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <Trophy className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-dark mb-2">Motorsports Community</h3>
+              <p className="text-gray text-sm">
+                Living near Charlotte Motor Speedway means unique exposure to noise, vibration, and heavy traffic.
+                We understand the specific roofing needs of homes in the speedway corridor and surrounding
+                entertainment districts.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <Zap className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-dark mb-2">Storm-Ready Roofing</h3>
+              <p className="text-gray text-sm">
+                Cabarrus County experiences severe weather including thunderstorms, hail, and occasional
+                tornadoes. Our impact-resistant roofing solutions and 24/7 emergency service keep
+                Concord homes protected year-round.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <Home className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-dark mb-2">Growing Communities</h3>
+              <p className="text-gray text-sm">
+                With new developments in Afton Village, Highland Creek, and Skybrook, we provide
+                roofing services for both new construction and established Concord neighborhoods,
+                ensuring quality that lasts for decades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mid-Page CTA */}
       <section className="bg-accent text-white py-12">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">
-                Looking for Reliable Roofers in Charlotte?
+                Looking for Reliable Roofers in Concord?
               </h2>
               <p className="text-white/90">
-                Get a free, no-obligation estimate from Charlotte&apos;s most trusted roofing team.
+                Get a free, no-obligation estimate from Cabarrus County&apos;s most trusted roofing team.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -444,19 +525,20 @@ export default function RoofersCharlotteNCPage() {
               <span className="text-sm font-semibold">Service Areas</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Charlotte Roofers Serving All Metro Areas
+              Concord Roofers Serving All of Cabarrus County
             </h2>
             <p className="text-gray text-lg">
-              Our professional roofers serve homeowners and businesses throughout the Greater Charlotte region.
+              Our professional roofers serve homeowners and businesses throughout Concord, Cabarrus County,
+              and the greater Charlotte region.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* Charlotte Neighborhoods */}
+            {/* Concord Neighborhoods */}
             <div className="bg-light rounded-xl p-6">
-              <h3 className="text-xl font-bold text-dark mb-4">Charlotte Neighborhoods We Serve</h3>
+              <h3 className="text-xl font-bold text-dark mb-4">Concord Areas & Neighborhoods We Serve</h3>
               <div className="flex flex-wrap gap-2">
-                {charlotteNeighborhoods.map((neighborhood) => (
+                {concordNeighborhoods.map((neighborhood) => (
                   <span
                     key={neighborhood}
                     className="inline-block bg-white px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
@@ -502,11 +584,11 @@ export default function RoofersCharlotteNCPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Certified Charlotte Roofers You Can Trust
+              Certified Concord Roofers You Can Trust
             </h2>
             <p className="text-gray text-lg">
-              Our certifications from industry-leading manufacturers mean you get premium materials backed by
-              extended warranty coverage.
+              Our certifications from industry-leading manufacturers mean Concord homeowners get premium
+              materials backed by extended warranty coverage.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -516,7 +598,7 @@ export default function RoofersCharlotteNCPage() {
               </div>
               <h3 className="font-bold text-dark mb-2">CertainTeed SELECT ShingleMaster</h3>
               <p className="text-gray text-sm">
-                Top-tier certification with access to premium warranties and specialized training.
+                Top-tier certification with access to premium warranties and specialized training for Concord installations.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-md">
@@ -525,7 +607,7 @@ export default function RoofersCharlotteNCPage() {
               </div>
               <h3 className="font-bold text-dark mb-2">GAF Factory-Certified</h3>
               <p className="text-gray text-sm">
-                Authorized to offer GAF&apos;s Golden Pledge warranty - the best in the industry.
+                Authorized to offer GAF&apos;s Golden Pledge warranty - the best in the industry for Cabarrus County homeowners.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-md">
@@ -534,7 +616,7 @@ export default function RoofersCharlotteNCPage() {
               </div>
               <h3 className="font-bold text-dark mb-2">Owens Corning Preferred</h3>
               <p className="text-gray text-sm">
-                Preferred Contractor status with Owens Corning for extended warranty options.
+                Preferred Contractor status with Owens Corning for extended warranty options on Concord roofing projects.
               </p>
             </div>
           </div>
@@ -546,17 +628,17 @@ export default function RoofersCharlotteNCPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Recent Work by Our Charlotte Roofers
+              Recent Work by Our Concord Roofers
             </h2>
             <p className="text-gray text-lg">
-              Browse our portfolio of completed roofing projects throughout the Charlotte area.
+              Browse our portfolio of completed roofing projects throughout Concord and Cabarrus County.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project1}
-                alt="Completed residential roof by Charlotte roofers"
+                alt="Completed residential roof by Concord roofers"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -564,7 +646,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.certainteed1}
-                alt="CertainTeed shingle installation by Best Roofing Now roofers in Charlotte"
+                alt="CertainTeed shingle installation by Best Roofing Now roofers in Concord"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -572,7 +654,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.drone2}
-                alt="Aerial view of completed roof project by Charlotte NC roofers"
+                alt="Aerial view of completed roof project by Concord NC roofers"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -580,7 +662,7 @@ export default function RoofersCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project3}
-                alt="Professional roofing work by roofers in Charlotte area"
+                alt="Professional roofing work by roofers in Concord area"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -603,10 +685,10 @@ export default function RoofersCharlotteNCPage() {
 
       {/* Service City Links */}
       <ServiceCityLinks
-        city="Charlotte"
-        citySlug="charlotte-nc"
-        title="Roofing Services in Charlotte NC"
-        subtitle="Looking for a specific roofing service? Our Charlotte roofers offer comprehensive solutions for every roofing need."
+        city="Concord"
+        citySlug="concord-nc"
+        title="Roofing Services in Concord NC"
+        subtitle="Looking for a specific roofing service? Our Concord roofers offer comprehensive solutions for every roofing need in Cabarrus County."
       />
 
       {/* Personal Note from James */}
@@ -623,9 +705,10 @@ export default function RoofersCharlotteNCPage() {
                   &ldquo;{TURNER_NOTES.james.onCommunity}&rdquo;
                 </p>
                 <p className="text-gray">
-                  When you hire Best Roofing Now, you&apos;re not just getting roofers - you&apos;re getting a family
-                  that cares about Charlotte as much as you do. We&apos;ve been here for 15 years, raised our kids here,
-                  and built our business on the simple principle that your roof should protect what matters most.
+                  Concord has become one of our favorite communities to serve. From the excitement of race
+                  weekends at the speedway to the quiet neighborhoods of Afton Village, every Concord home
+                  deserves a roof that protects what matters most. When you hire Best Roofing Now, you&apos;re
+                  getting a family that treats your home like our own.
                 </p>
                 <p className="text-primary font-semibold mt-4">
                   Call us today at {SITE_CONFIG.phone} - I&apos;d love to hear from you.
@@ -646,10 +729,10 @@ export default function RoofersCharlotteNCPage() {
                 <span className="text-sm font-semibold">Common Questions</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Charlotte Roofers FAQs
+                Concord Roofers FAQs
               </h2>
               <p className="text-gray text-lg">
-                Answers to common questions about hiring roofers in Charlotte NC.
+                Answers to common questions about hiring roofers in Concord NC and Cabarrus County.
               </p>
             </div>
             <div className="space-y-4">
@@ -664,26 +747,10 @@ export default function RoofersCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Service City Links */}
-      <ServiceCityLinks
-        city="Charlotte"
-        citySlug="charlotte-nc"
-        title="Our Roofing Services in Charlotte NC"
-        subtitle="Explore all the roofing services our Charlotte roofers provide."
-      />
-
-      {/* Related Cities */}
-      <RelatedCitiesLinks
-        currentCity="Charlotte"
-        service="Roofers"
-        serviceSlug="roofers"
-        title="Trusted Roofers in Nearby Cities"
-      />
-
       {/* Final CTA */}
       <CTASection
-        title="Ready to Work with Charlotte's Top-Rated Roofers?"
-        subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."
+        title="Ready to Work with Concord's Top-Rated Roofers?"
+        subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Concord home's needs and your budget."
       />
     </>
   );

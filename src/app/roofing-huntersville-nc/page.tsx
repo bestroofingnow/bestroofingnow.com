@@ -22,6 +22,8 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
+import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
+import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -520,6 +522,22 @@ export default function RoofingHuntersvilleNCPage() {
           </div>
         </div>
       </section>
+
+      {/* Service City Links */}
+      <ServiceCityLinks
+        city="Huntersville"
+        citySlug="huntersville-nc"
+        title="Complete Roofing Services in Huntersville NC"
+        subtitle="From repairs to replacements, we offer comprehensive roofing solutions for Lake Norman homes."
+      />
+
+      {/* Related Cities */}
+      <RelatedCitiesLinks
+        currentCity="Huntersville"
+        service="Roofing Services"
+        serviceSlug="roofing"
+        title="Roofing Services in Nearby Lake Norman Cities"
+      />
 
       {/* Final CTA */}
       <CTASection

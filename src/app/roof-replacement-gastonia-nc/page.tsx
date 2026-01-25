@@ -22,46 +22,50 @@ import {
   ThermometerSun,
   Droplets,
   MapPin,
+  Factory,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
-import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { TURNER_NOTES } from '@/lib/turner-family';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Charlotte NC | New Roof Installation | Best Roofing Now',
+  title: 'Roof Replacement Gastonia NC | Expert Installation | Best Roofing Now',
   description:
-    'Complete roof replacement services in Charlotte NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
+    'Professional roof replacement services in Gastonia NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
   keywords: [
-    'roof replacement charlotte nc',
-    'new roof charlotte nc',
-    'roof replacement cost charlotte',
-    'full roof replacement charlotte nc',
-    'complete roof replacement charlotte',
-    'roof replacement company charlotte',
-    'affordable roof replacement charlotte nc',
-    'quality roof replacement charlotte',
-    'roof replacement services charlotte nc',
-    'professional roof replacement charlotte',
+    'roof replacement gastonia nc',
+    'new roof gastonia nc',
+    'roof replacement cost gastonia',
+    'full roof replacement gastonia nc',
+    'complete roof replacement gastonia',
+    'roof replacement company gastonia',
+    'affordable roof replacement gastonia nc',
+    'quality roof replacement gastonia',
+    'roof replacement services gastonia nc',
+    'professional roof replacement gastonia',
+    'gastonia roofing contractor',
+    'gaston county roof replacement',
   ],
   alternates: {
-    canonical: `${SITE_CONFIG.url}/roof-replacement-charlotte-nc`,
+    canonical: `${SITE_CONFIG.url}/roof-replacement-gastonia-nc`,
   },
   openGraph: {
-    title: 'Roof Replacement Charlotte NC | New Roof Installation | Best Roofing Now',
+    title: 'Roof Replacement Gastonia NC | Expert Installation | Best Roofing Now',
     description:
-      'Complete roof replacement with full tear-off and premium new roof installation in Charlotte NC. Certified installers, industry-leading warranties, and flexible financing options.',
-    url: `${SITE_CONFIG.url}/roof-replacement-charlotte-nc`,
+      'Complete roof replacement with full tear-off and premium new roof installation in Gastonia NC. Certified installers, industry-leading warranties, and flexible financing options.',
+    url: `${SITE_CONFIG.url}/roof-replacement-gastonia-nc`,
     type: 'website',
     images: [
       {
         url: IMAGES.hero.hero4,
         width: 1200,
         height: 630,
-        alt: 'Professional roof replacement Charlotte NC - Best Roofing Now crew installing a new roof',
+        alt: 'Professional roof replacement Gastonia NC - Best Roofing Now crew installing a new roof',
       },
     ],
   },
@@ -72,32 +76,32 @@ const replacementSigns = [
   {
     icon: Clock,
     title: 'Age of Your Roof',
-    description: 'Most asphalt shingle roofs last 20-25 years. If your roof is approaching or past this age, replacement is often more cost-effective than repeated repairs.',
+    description: 'Most asphalt shingle roofs last 20-25 years. If your Gastonia home has an aging roof approaching or past this timeframe, replacement is often more cost-effective than repeated repairs.',
   },
   {
     icon: Droplets,
     title: 'Multiple Leaks',
-    description: 'Recurring leaks in different areas indicate systemic failure. When the underlayment and decking are compromised, a full replacement is the only lasting solution.',
+    description: 'Recurring leaks in different areas indicate systemic failure. When the underlayment and decking are compromised, a full replacement is the only lasting solution for your Gastonia home.',
   },
   {
     icon: Layers,
     title: 'Curling or Missing Shingles',
-    description: 'Widespread shingle damage, curling, buckling, or granule loss across large areas signals the end of your roof\'s protective life.',
+    description: 'Widespread shingle damage, curling, buckling, or granule loss across large areas signals the end of your roof\'s protective life - common in Gaston County\'s variable climate.',
   },
   {
     icon: ThermometerSun,
     title: 'High Energy Bills',
-    description: 'A failing roof allows conditioned air to escape. If your energy bills have increased significantly, your roof\'s insulation value may be compromised.',
+    description: 'A failing roof allows conditioned air to escape. If your energy bills have increased significantly, your roof\'s insulation value may be compromised by Gastonia\'s hot summers.',
   },
   {
     icon: AlertTriangle,
     title: 'Sagging Roof Deck',
-    description: 'A sagging roofline indicates structural damage from prolonged moisture infiltration. This requires immediate attention and full replacement.',
+    description: 'A sagging roofline indicates structural damage from prolonged moisture infiltration. This requires immediate attention and full replacement to protect your home.',
   },
   {
     icon: Home,
     title: 'Daylight Through Roof Boards',
-    description: 'If you see light coming through your attic, your roof deck has holes or gaps that compromise your entire roofing system.',
+    description: 'If you see light coming through your attic, your roof deck has holes or gaps that compromise your entire roofing system and require immediate replacement.',
   },
 ];
 
@@ -106,12 +110,12 @@ const replacementProcess = [
   {
     step: 1,
     title: 'Free Inspection & Estimate',
-    description: 'Our certified inspector thoroughly examines your current roof, attic, and ventilation. We provide a detailed written estimate with material options and transparent pricing.',
+    description: 'Our certified inspector thoroughly examines your current roof, attic, and ventilation. We provide a detailed written estimate with material options and transparent pricing for Gastonia homeowners.',
   },
   {
     step: 2,
     title: 'Material Selection',
-    description: 'Choose from premium shingles, metal roofing, or specialty materials. We help you select the best option for your home\'s style, budget, and Charlotte\'s climate.',
+    description: 'Choose from premium shingles, metal roofing, or specialty materials. We help you select the best option for your home\'s style, budget, and Gaston County\'s climate conditions.',
   },
   {
     step: 3,
@@ -131,7 +135,7 @@ const replacementProcess = [
   {
     step: 6,
     title: 'Final Inspection & Cleanup',
-    description: 'We perform a thorough final inspection, run magnetic sweeps for nails, and leave your property cleaner than we found it. Your warranty documentation is provided.',
+    description: 'We perform a thorough final inspection, run magnetic sweeps for nails, and leave your Gastonia property cleaner than we found it. Your warranty documentation is provided.',
   },
 ];
 
@@ -140,7 +144,7 @@ const materialOptions = [
   {
     icon: Layers,
     title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles offering enhanced durability, wind resistance up to 130 MPH, and beautiful curb appeal. 30-50 year warranties available.',
+    description: 'Premium dimensional shingles offering enhanced durability, wind resistance up to 130 MPH, and beautiful curb appeal. 30-50 year warranties available. Ideal for Gastonia homes.',
     priceRange: '$8,000 - $15,000',
     lifespan: '30-50 years',
     popular: true,
@@ -148,7 +152,7 @@ const materialOptions = [
   {
     icon: Shield,
     title: 'Luxury/Designer Shingles',
-    description: 'Premium shingles that replicate the look of slate or cedar shake. Superior protection with stunning aesthetics and lifetime warranties.',
+    description: 'Premium shingles that replicate the look of slate or cedar shake. Superior protection with stunning aesthetics and lifetime warranties for upscale Gaston County homes.',
     priceRange: '$15,000 - $25,000',
     lifespan: '50+ years',
     popular: false,
@@ -156,7 +160,7 @@ const materialOptions = [
   {
     icon: Sparkles,
     title: 'Metal Roofing',
-    description: 'Standing seam and metal shingle options. Exceptional longevity, energy efficiency, and modern aesthetics. Ideal for Charlotte\'s climate.',
+    description: 'Standing seam and metal shingle options. Exceptional longevity, energy efficiency, and modern aesthetics. Excellent choice for Gastonia\'s hot summers and severe storms.',
     priceRange: '$18,000 - $35,000',
     lifespan: '50-70 years',
     popular: false,
@@ -164,7 +168,7 @@ const materialOptions = [
   {
     icon: Home,
     title: '3-Tab Shingles',
-    description: 'Budget-friendly option that still provides solid protection. Best suited for rental properties, sheds, or budget-conscious projects.',
+    description: 'Budget-friendly option that still provides solid protection. Best suited for rental properties, sheds, or budget-conscious Gastonia homeowners.',
     priceRange: '$6,000 - $10,000',
     lifespan: '15-20 years',
     popular: false,
@@ -176,7 +180,7 @@ const costFactors = [
   {
     icon: Layers,
     title: 'Roof Size & Complexity',
-    description: 'Measured in roofing squares (100 sq ft). Multiple levels, steep slopes, and complex designs increase labor time and materials.',
+    description: 'Measured in roofing squares (100 sq ft). Multiple levels, steep slopes, and complex designs increase labor time and materials for your Gastonia home.',
   },
   {
     icon: Truck,
@@ -186,106 +190,106 @@ const costFactors = [
   {
     icon: Hammer,
     title: 'Deck Repairs',
-    description: 'Rotted or damaged decking must be replaced. Most roofs need some repairs, which adds to the total project cost.',
+    description: 'Rotted or damaged decking must be replaced. Most Gastonia roofs need some repairs, which adds to the total project cost.',
   },
   {
     icon: FileCheck,
     title: 'Permits & Codes',
-    description: 'Charlotte requires roofing permits. We handle all permitting and ensure your new roof meets current building codes.',
+    description: 'Gastonia and Gaston County require roofing permits. We handle all permitting and ensure your new roof meets current building codes.',
   },
 ];
 
-// Charlotte neighborhoods served
-const charlotteNeighborhoods = [
-  'Myers Park',
-  'Dilworth',
-  'South End',
-  'NoDa',
-  'Plaza Midwood',
-  'Ballantyne',
-  'University City',
-  'Cotswold',
-  'Elizabeth',
-  'Eastover',
-  'SouthPark',
-  'Uptown Charlotte',
-  'Wesley Heights',
-  'Fourth Ward',
-  'Cherry',
-  'Madison Park',
-  'Montford',
-  'Chantilly',
-  'Commonwealth',
-  'Sedgefield',
+// Gastonia neighborhoods served
+const gastoniaNeighborhoods = [
+  'Downtown Gastonia',
+  'South Gastonia',
+  'West Gastonia',
+  'East Gastonia',
+  'North Gastonia',
+  'Highland',
+  'Firestone',
+  'Myrtle School',
+  'York Chester',
+  'Parkwood',
+  'Beaty Hills',
+  'Gaston Mall Area',
+  'Ranlo',
+  'Lowell',
+  'McAdenville',
+  'Cramerton',
+  'Spencer Mountain',
+  'Dallas',
+  'Stanley',
+  'Bessemer City',
 ];
 
 // Nearby cities served
 const nearbyCities = [
-  { name: 'Huntersville', href: '/locations/huntersville-nc' },
-  { name: 'Cornelius', href: '/locations/cornelius-nc' },
-  { name: 'Davidson', href: '/locations/davidson-nc' },
-  { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Matthews', href: '/locations/matthews-nc' },
-  { name: 'Mint Hill', href: '/locations/mint-hill-nc' },
-  { name: 'Pineville', href: '/locations/pineville-nc' },
-  { name: 'Concord', href: '/locations/concord-nc' },
-  { name: 'Gastonia', href: '/locations/gastonia-nc' },
+  { name: 'Charlotte', href: '/roof-replacement-charlotte-nc' },
+  { name: 'Belmont', href: '/locations/belmont-nc' },
+  { name: 'Mount Holly', href: '/locations/mount-holly-nc' },
+  { name: 'Cramerton', href: '/locations/cramerton-nc' },
+  { name: 'Dallas', href: '/locations/dallas-nc' },
+  { name: 'Bessemer City', href: '/locations/bessemer-city-nc' },
+  { name: 'Kings Mountain', href: '/locations/kings-mountain-nc' },
+  { name: 'Cherryville', href: '/locations/cherryville-nc' },
+  { name: 'Stanley', href: '/locations/stanley-nc' },
+  { name: 'Lowell', href: '/locations/lowell-nc' },
+  { name: 'McAdenville', href: '/locations/mcadenville-nc' },
   { name: 'Rock Hill, SC', href: '/locations/rock-hill-sc' },
-  { name: 'Fort Mill, SC', href: '/locations/fort-mill-sc' },
-  { name: 'Indian Trail', href: '/locations/indian-trail-nc' },
 ];
 
-// FAQs about roof replacement
+// FAQs about roof replacement in Gastonia
 const faqs = [
   {
-    question: 'How much does a roof replacement cost in Charlotte NC?',
+    question: 'How much does a roof replacement cost in Gastonia NC?',
     answer:
-      'Roof replacement costs in Charlotte typically range from $8,000 to $25,000 for most residential homes, depending on roof size, material choice, and complexity. The average Charlotte home (1,500-2,500 sq ft roof) costs between $10,000 and $18,000 for architectural shingles. We provide free, detailed estimates with no hidden fees.',
+      'Roof replacement costs in Gastonia typically range from $8,000 to $25,000 for most residential homes, depending on roof size, material choice, and complexity. The average Gastonia home (1,500-2,500 sq ft roof) costs between $10,000 and $18,000 for architectural shingles. We provide free, detailed estimates with no hidden fees.',
   },
   {
-    question: 'How long does a complete roof replacement take?',
+    question: 'How long does a complete roof replacement take in Gastonia?',
     answer:
-      'Most residential roof replacements in Charlotte are completed in 1-3 days. Larger homes, complex roof designs, or unexpected deck repairs may extend the timeline to 4-5 days. We work efficiently while maintaining our quality standards and always communicate the expected timeline upfront.',
+      'Most residential roof replacements in Gastonia are completed in 1-3 days. Larger homes, complex roof designs, or unexpected deck repairs may extend the timeline to 4-5 days. We work efficiently while maintaining our quality standards and always communicate the expected timeline upfront.',
   },
   {
     question: 'Do I need to be home during the roof replacement?',
     answer:
-      'No, you do not need to be home during your roof replacement. We just need access to your property and electrical outlets. Many homeowners prefer to be away due to the noise. We will contact you before starting, keep you updated throughout, and walk you through the completed work.',
+      'No, you do not need to be home during your roof replacement. We just need access to your property and electrical outlets. Many Gastonia homeowners prefer to be away due to the noise. We will contact you before starting, keep you updated throughout, and walk you through the completed work.',
   },
   {
-    question: 'What warranties come with a new roof from Best Roofing Now?',
+    question: 'What warranties come with a new roof from Best Roofing Now in Gastonia?',
     answer:
-      'Your new roof includes both manufacturer material warranties (25-50 years depending on product) and our workmanship warranty. As certified installers for CertainTeed, GAF, and Owens Corning, we can offer extended warranties including GAF Golden Pledge (50-year non-prorated) and CertainTeed SureStart PLUS coverage.',
+      'Your new roof includes both manufacturer material warranties (25-50 years depending on product) and our workmanship warranty. As certified installers for CertainTeed, GAF, and Owens Corning, we can offer extended warranties including GAF Golden Pledge (50-year non-prorated) and CertainTeed SureStart PLUS coverage for Gastonia homeowners.',
   },
   {
-    question: 'Can I stay in my home during roof replacement?',
+    question: 'Can I stay in my home during roof replacement in Gastonia?',
     answer:
-      'Yes, you can stay in your home during roof replacement. The work happens outside, so your daily routine is mostly unaffected. Expect some noise during tear-off and installation (typically 7 AM - 6 PM). We recommend removing wall decorations near the ceiling and expect some vibration. Pets may be more comfortable in an interior room or away for the day.',
+      'Yes, you can stay in your Gastonia home during roof replacement. The work happens outside, so your daily routine is mostly unaffected. Expect some noise during tear-off and installation (typically 7 AM - 6 PM). We recommend removing wall decorations near the ceiling and expect some vibration. Pets may be more comfortable in an interior room or away for the day.',
   },
   {
-    question: 'Will my insurance cover roof replacement?',
+    question: 'Will my insurance cover roof replacement in Gaston County?',
     answer:
-      'Insurance typically covers roof replacement if the damage was caused by a covered peril like hail, wind, or fallen trees. Normal wear and aging are generally not covered. We provide detailed damage documentation and work directly with insurance adjusters to help maximize your claim. We offer free storm damage inspections.',
+      'Insurance typically covers roof replacement if the damage was caused by a covered peril like hail, wind, or fallen trees. Gaston County experiences severe storms that often qualify for coverage. Normal wear and aging are generally not covered. We provide detailed damage documentation and work directly with insurance adjusters to help maximize your claim.',
   },
   {
-    question: 'How do I know if I need replacement vs. repair?',
+    question: 'How do I know if I need replacement vs. repair in Gastonia?',
     answer:
-      'Generally, if your roof is under 15 years old with isolated damage, repairs make sense. If your roof is 20+ years old, has multiple problem areas, widespread shingle deterioration, or has had repeated repairs, replacement is usually more cost-effective long-term. Our free inspection includes an honest assessment of the best option for your situation.',
+      'Generally, if your Gastonia home\'s roof is under 15 years old with isolated damage, repairs make sense. If your roof is 20+ years old, has multiple problem areas, widespread shingle deterioration, or has had repeated repairs, replacement is usually more cost-effective long-term. Our free inspection includes an honest assessment of the best option for your situation.',
   },
   {
-    question: 'Do you offer financing for roof replacement?',
+    question: 'Do you offer financing for roof replacement in Gastonia NC?',
     answer:
-      'Yes! We offer flexible financing options to make roof replacement affordable. Options include 0% interest promotional periods, low monthly payments, and terms up to 144 months. Most homeowners qualify, and approval takes just minutes. We can discuss financing during your free estimate.',
+      'Yes! We offer flexible financing options to make roof replacement affordable for Gastonia homeowners. Options include 0% interest promotional periods, low monthly payments, and terms up to 144 months. Most homeowners qualify, and approval takes just minutes. We can discuss financing during your free estimate.',
   },
 ];
 
-export default function RoofReplacementCharlotteNCPage() {
+export default function RoofReplacementGastoniaNCPage() {
   return (
     <>
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
-          { name: 'Roof Replacement Charlotte NC', url: `${SITE_CONFIG.url}/roof-replacement-charlotte-nc` },
+          { name: 'Roof Replacement Gastonia NC', url: `${SITE_CONFIG.url}/roof-replacement-gastonia-nc` },
         ]}
       />
       <FAQSchema faqs={faqs} />
@@ -296,7 +300,7 @@ export default function RoofReplacementCharlotteNCPage() {
         <div className="absolute inset-0 z-0 hidden md:block">
           <Image
             src={IMAGES.hero.hero4}
-            alt="Professional roof replacement Charlotte NC - Best Roofing Now crew installing a new roof"
+            alt="Professional roof replacement Gastonia NC - Best Roofing Now crew installing a new roof"
             fill
             className="object-cover opacity-20"
             priority
@@ -306,19 +310,19 @@ export default function RoofReplacementCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-              <span className="text-sm font-semibold">Certified Installers | Financing Available</span>
+              <span className="text-sm font-semibold">Certified Installers | Financing Available | Gaston County</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Roof Replacement <br className="hidden md:block" />
-              <span className="text-accent-light">Charlotte NC</span>
+              <span className="text-accent-light">Gastonia NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Complete tear-off and new roof installation by certified professionals
+              Complete tear-off and new roof installation by certified professionals in Gaston County
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              When repairs are no longer enough, trust Best Roofing Now for your complete roof replacement in Charlotte.
+              When repairs are no longer enough, trust Best Roofing Now for your complete roof replacement in Gastonia.
               We use premium materials from CertainTeed, GAF, and Owens Corning, backed by industry-leading warranties
-              and our expert installation.
+              and our expert installation - serving all of Gaston County and the greater Charlotte area.
             </p>
 
             {/* CTA Buttons */}
@@ -365,15 +369,70 @@ export default function RoofReplacementCharlotteNCPage() {
         </div>
       </section>
 
-      {/* When You Need Replacement Section */}
+      {/* Gastonia Introduction Section */}
       <section className="section bg-white">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <Factory className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Gaston County Roofing Experts</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Gastonia&apos;s Premier Roof Replacement Company
+              </h2>
+              <p className="text-gray text-lg mb-6">
+                Gastonia, the seat of Gaston County and one of the largest cities in the Charlotte metro area,
+                has a rich industrial heritage and diverse housing stock. From historic downtown homes to modern
+                subdivisions in West Gastonia, our roof replacement services protect the homes that make this
+                community great.
+              </p>
+              <p className="text-gray text-lg mb-6">
+                Located just 20 miles west of Charlotte, Gastonia homes face the same challenging Piedmont
+                climate - hot, humid summers, severe thunderstorms, and occasional hail. Our certified installers
+                use materials and techniques specifically chosen to withstand Gaston County&apos;s weather patterns.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  href="/contact"
+                  variant="primary"
+                  icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
+                >
+                  Schedule Free Inspection
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                src={IMAGES.realProjects.project1}
+                alt="Completed roof replacement project in Gastonia NC by Best Roofing Now"
+                width={600}
+                height={450}
+                className="rounded-xl shadow-lg"
+              />
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4">
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-8 h-8 text-primary" />
+                  <div>
+                    <p className="font-bold text-dark">Serving Gastonia</p>
+                    <p className="text-sm text-gray">Gaston County&apos;s Trusted Roofers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* When You Need Replacement Section */}
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              When Do You Need a Roof Replacement?
+              When Do You Need a Roof Replacement in Gastonia?
             </h2>
             <p className="text-gray text-lg">
-              Sometimes repairs just are not enough. Here are the signs that indicate your Charlotte home
+              Sometimes repairs just are not enough. Here are the signs that indicate your Gastonia home
               needs a complete roof replacement rather than another patch job.
             </p>
           </div>
@@ -381,7 +440,7 @@ export default function RoofReplacementCharlotteNCPage() {
             {replacementSigns.map((sign) => (
               <div
                 key={sign.title}
-                className="p-6 bg-light rounded-xl hover:shadow-lg transition-shadow"
+                className="p-6 bg-white rounded-xl hover:shadow-lg transition-shadow"
               >
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                   <sign.icon className="w-6 h-6 text-accent" />
@@ -405,22 +464,22 @@ export default function RoofReplacementCharlotteNCPage() {
       </section>
 
       {/* Roof Replacement Process */}
-      <section className="section bg-light">
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Our Roof Replacement Process
+              Our Roof Replacement Process in Gastonia
             </h2>
             <p className="text-gray text-lg">
               From initial inspection to final cleanup, here is what to expect when Best Roofing Now
-              replaces your roof in Charlotte.
+              replaces your roof in Gastonia and Gaston County.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {replacementProcess.map((item) => (
               <div
                 key={item.step}
-                className="bg-white rounded-xl p-6 shadow-md relative"
+                className="bg-light rounded-xl p-6 shadow-md relative"
               >
                 <div className="absolute -top-4 -left-4 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
                   {item.step}
@@ -434,14 +493,14 @@ export default function RoofReplacementCharlotteNCPage() {
       </section>
 
       {/* Material Options */}
-      <section className="section bg-white">
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Roofing Material Options
+              Roofing Material Options for Gastonia Homes
             </h2>
             <p className="text-gray text-lg">
-              Choose from premium roofing materials suited to Charlotte&apos;s climate. All options include
+              Choose from premium roofing materials suited to Gaston County&apos;s climate. All options include
               professional installation and manufacturer warranties.
             </p>
           </div>
@@ -449,11 +508,11 @@ export default function RoofReplacementCharlotteNCPage() {
             {materialOptions.map((material) => (
               <div
                 key={material.title}
-                className={`p-6 rounded-xl border-2 ${material.popular ? 'border-accent bg-accent/5' : 'border-gray-200 bg-light'}`}
+                className={`p-6 rounded-xl border-2 ${material.popular ? 'border-accent bg-accent/5' : 'border-gray-200 bg-white'}`}
               >
                 {material.popular && (
                   <span className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-                    Most Popular
+                    Most Popular in Gastonia
                   </span>
                 )}
                 <div className="flex items-start gap-4">
@@ -485,7 +544,7 @@ export default function RoofReplacementCharlotteNCPage() {
                 <p className="text-gray text-sm">
                   As CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred
                   contractors, we can offer enhanced warranties that cover both materials and workmanship
-                  for maximum protection.
+                  for maximum protection of your Gastonia home.
                 </p>
               </div>
               <div className="flex gap-4">
@@ -502,21 +561,21 @@ export default function RoofReplacementCharlotteNCPage() {
       </section>
 
       {/* Cost Factors & Financing */}
-      <section className="section bg-light">
+      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Cost Factors */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                What Affects Roof Replacement Cost?
+                What Affects Roof Replacement Cost in Gastonia?
               </h2>
               <p className="text-gray text-lg mb-8">
-                Several factors determine the final cost of your new roof. We provide transparent,
+                Several factors determine the final cost of your new roof in Gaston County. We provide transparent,
                 itemized estimates so you know exactly what you are paying for.
               </p>
               <div className="space-y-4">
                 {costFactors.map((factor) => (
-                  <div key={factor.title} className="flex items-start gap-4 bg-white p-4 rounded-lg">
+                  <div key={factor.title} className="flex items-start gap-4 bg-light p-4 rounded-lg">
                     <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <factor.icon className="w-5 h-5 text-primary" />
                     </div>
@@ -530,17 +589,17 @@ export default function RoofReplacementCharlotteNCPage() {
             </div>
 
             {/* Financing */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-light rounded-xl shadow-lg p-8">
               <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-4 py-2 mb-4">
                 <DollarSign className="w-4 h-4" aria-hidden="true" />
                 <span className="text-sm font-semibold">Flexible Financing</span>
               </div>
               <h3 className="text-2xl font-bold text-dark mb-4">
-                Affordable Payment Options
+                Affordable Payment Options for Gastonia Homeowners
               </h3>
               <p className="text-gray mb-6">
                 Do not let budget concerns delay your roof replacement. We offer flexible financing
-                options to fit your needs.
+                options to fit the needs of Gastonia and Gaston County homeowners.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center gap-3">
@@ -583,10 +642,10 @@ export default function RoofReplacementCharlotteNCPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">
-                Ready for a New Roof in Charlotte?
+                Ready for a New Roof in Gastonia?
               </h2>
               <p className="text-white/90">
-                Get a free, no-obligation estimate from our certified roof replacement team.
+                Get a free, no-obligation estimate from our certified roof replacement team serving Gaston County.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -613,16 +672,16 @@ export default function RoofReplacementCharlotteNCPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section bg-white">
+      <section className="section bg-light">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Why Charlotte Homeowners Choose Us for Roof Replacement
+                Why Gastonia Homeowners Choose Us for Roof Replacement
               </h2>
               <p className="text-gray text-lg mb-8">
                 When investing in a new roof, you want a company you can trust. Best Roofing Now has
-                earned our reputation through quality work and honest service.
+                earned our reputation throughout Gaston County through quality work and honest service.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="flex items-start gap-3">
@@ -631,7 +690,7 @@ export default function RoofReplacementCharlotteNCPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-dark mb-1">5-Star Rated</h3>
-                    <p className="text-gray text-sm">{SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Charlotte homeowners.</p>
+                    <p className="text-gray text-sm">{SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied homeowners.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -649,7 +708,7 @@ export default function RoofReplacementCharlotteNCPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-dark mb-1">Veteran-Owned</h3>
-                    <p className="text-gray text-sm">Military values of integrity, discipline, and excellence.</p>
+                    <p className="text-gray text-sm">Military values of integrity, discipline, and excellence in every project.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -658,7 +717,7 @@ export default function RoofReplacementCharlotteNCPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-dark mb-1">{SITE_CONFIG.roofsInstalled}+ Roofs</h3>
-                    <p className="text-gray text-sm">Extensive experience with all roof types and materials.</p>
+                    <p className="text-gray text-sm">Extensive experience with all roof types and materials in the region.</p>
                   </div>
                 </div>
               </div>
@@ -666,7 +725,7 @@ export default function RoofReplacementCharlotteNCPage() {
             <div className="relative">
               <Image
                 src={IMAGES.realProjects.drone1}
-                alt="Completed roof replacement in Charlotte NC by Best Roofing Now"
+                alt="Completed roof replacement in Gastonia NC by Best Roofing Now"
                 width={600}
                 height={450}
                 className="rounded-xl shadow-lg"
@@ -690,7 +749,7 @@ export default function RoofReplacementCharlotteNCPage() {
       </section>
 
       {/* Service Areas Section */}
-      <section className="section bg-light">
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
@@ -698,22 +757,22 @@ export default function RoofReplacementCharlotteNCPage() {
               <span className="text-sm font-semibold">Service Areas</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Roof Replacement Throughout Charlotte
+              Roof Replacement Throughout Gaston County
             </h2>
             <p className="text-gray text-lg">
-              We provide professional roof replacement services across the Greater Charlotte region.
+              We provide professional roof replacement services across Gastonia and all of Gaston County.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* Charlotte Neighborhoods */}
-            <div className="bg-white rounded-xl p-6">
-              <h3 className="text-xl font-bold text-dark mb-4">Charlotte Neighborhoods We Serve</h3>
+            {/* Gastonia Neighborhoods */}
+            <div className="bg-light rounded-xl p-6">
+              <h3 className="text-xl font-bold text-dark mb-4">Gastonia Areas We Serve</h3>
               <div className="flex flex-wrap gap-2">
-                {charlotteNeighborhoods.map((neighborhood) => (
+                {gastoniaNeighborhoods.map((neighborhood) => (
                   <span
                     key={neighborhood}
-                    className="inline-block bg-light px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
+                    className="inline-block bg-white px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
                   >
                     {neighborhood}
                   </span>
@@ -722,7 +781,7 @@ export default function RoofReplacementCharlotteNCPage() {
             </div>
 
             {/* Nearby Cities */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-light rounded-xl p-6">
               <h3 className="text-xl font-bold text-dark mb-4">Nearby Cities We Serve</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {nearbyCities.map((city) => (
@@ -751,22 +810,89 @@ export default function RoofReplacementCharlotteNCPage() {
         </div>
       </section>
 
+      {/* Gastonia Specific Content */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+              Roof Replacement Expertise for Gaston County Homes
+            </h2>
+            <div className="prose prose-lg max-w-none">
+              <p className="text-gray text-lg mb-6">
+                Gastonia&apos;s diverse housing stock - from historic mill village homes to modern developments -
+                requires roofing expertise that understands local construction styles and climate challenges.
+                Our team has extensive experience with every type of roof found throughout Gaston County.
+              </p>
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="bg-white rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-3 text-lg">Gaston County Climate Challenges</h3>
+                  <ul className="space-y-2 text-gray">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Hot, humid summers that strain roofing materials</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Severe thunderstorms with damaging winds and hail</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Heavy rainfall requiring proper drainage solutions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Occasional ice events in winter months</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-xl p-6">
+                  <h3 className="font-bold text-dark mb-3 text-lg">Gastonia Home Styles We Serve</h3>
+                  <ul className="space-y-2 text-gray">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Historic downtown and mill village homes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Ranch-style homes throughout established neighborhoods</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Modern two-story homes in newer developments</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Rural properties with larger roof spans</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p className="text-gray text-lg">
+                Whether your home is in Downtown Gastonia, the established neighborhoods near Firestone,
+                the growing communities in West Gastonia, or the surrounding towns like Belmont, Mount Holly,
+                and Cramerton, our certified installers deliver the same exceptional quality and protection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Project Gallery */}
       <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Recent Roof Replacements in Charlotte
+              Recent Roof Replacements in Gaston County
             </h2>
             <p className="text-gray text-lg">
-              Browse our portfolio of completed roof replacement projects throughout the Charlotte area.
+              Browse our portfolio of completed roof replacement projects throughout Gastonia and the surrounding area.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project1}
-                alt="Completed roof replacement project in Charlotte NC"
+                alt="Completed roof replacement project in Gastonia NC"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -774,7 +900,7 @@ export default function RoofReplacementCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.certainteed1}
-                alt="CertainTeed shingle roof replacement in Charlotte"
+                alt="CertainTeed shingle roof replacement in Gaston County"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -782,7 +908,7 @@ export default function RoofReplacementCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.drone2}
-                alt="Aerial view of new roof installation in Charlotte NC"
+                alt="Aerial view of new roof installation in Gastonia NC"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -790,7 +916,7 @@ export default function RoofReplacementCharlotteNCPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={IMAGES.realProjects.project3}
-                alt="Professional roof replacement work in Charlotte area"
+                alt="Professional roof replacement work in Gastonia area"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -808,6 +934,45 @@ export default function RoofReplacementCharlotteNCPage() {
         </div>
       </section>
 
+      {/* Meet the Turner Family */}
+      <MeetTheFamily variant="full" />
+
+      {/* Service City Links */}
+      <ServiceCityLinks
+        city="Gastonia"
+        citySlug="gastonia-nc"
+        title="Roofing Services in Gastonia NC"
+        subtitle="Looking for a specific roofing service? Our Gastonia team offers comprehensive solutions for every roofing need in Gaston County."
+      />
+
+      {/* Personal Note from James */}
+      <section className="py-12 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto bg-primary/5 rounded-xl p-8">
+            <div className="flex items-start gap-4">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-xl font-bold text-primary">JT</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-dark mb-2">A Note from James Turner, Owner</h3>
+                <p className="text-gray italic mb-4">
+                  &ldquo;{TURNER_NOTES.james.onQuality}&rdquo;
+                </p>
+                <p className="text-gray">
+                  Gastonia and Gaston County have been good to our family, and we take pride in serving this
+                  community with the same dedication we bring to every project. When you need a new roof,
+                  you deserve honest advice and quality work - not a high-pressure sales pitch. That&apos;s the
+                  Best Roofing Now difference, and it&apos;s something we bring to every home we work on in Gastonia.
+                </p>
+                <p className="text-primary font-semibold mt-4">
+                  Call us today at {SITE_CONFIG.phone} - I&apos;d love to hear from you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="section bg-light">
         <div className="container">
@@ -818,10 +983,10 @@ export default function RoofReplacementCharlotteNCPage() {
                 <span className="text-sm font-semibold">Common Questions</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Roof Replacement FAQs
+                Roof Replacement FAQs for Gastonia NC
               </h2>
               <p className="text-gray text-lg">
-                Answers to common questions about roof replacement in Charlotte NC.
+                Answers to common questions about roof replacement in Gastonia and Gaston County.
               </p>
             </div>
             <div className="space-y-4">
@@ -836,26 +1001,10 @@ export default function RoofReplacementCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Service City Links */}
-      <ServiceCityLinks
-        city="Charlotte"
-        citySlug="charlotte-nc"
-        title="Complete Roofing Services in Charlotte NC"
-        subtitle="Explore all our roofing solutions for Charlotte homes and businesses."
-      />
-
-      {/* Related Cities */}
-      <RelatedCitiesLinks
-        currentCity="Charlotte"
-        service="Roof Replacement"
-        serviceSlug="roof-replacement"
-        title="Roof Replacement in Nearby Cities"
-      />
-
       {/* Final CTA */}
       <CTASection
-        title="Ready for Your New Roof?"
-        subtitle="Get a free, no-obligation estimate for your roof replacement. Our certified team will assess your roof and provide honest recommendations with transparent pricing."
+        title="Ready for Your New Roof in Gastonia?"
+        subtitle="Get a free, no-obligation estimate for your roof replacement. Our certified team will assess your Gaston County home and provide honest recommendations with transparent pricing."
       />
     </>
   );

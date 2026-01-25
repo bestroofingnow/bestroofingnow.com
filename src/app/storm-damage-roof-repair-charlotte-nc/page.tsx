@@ -27,6 +27,8 @@ import {
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
+import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
+import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
@@ -750,6 +752,22 @@ export default function StormDamageRoofRepairCharlottePage() {
           </div>
         </div>
       </section>
+
+      {/* Service City Links */}
+      <ServiceCityLinks
+        city="Charlotte"
+        citySlug="charlotte-nc"
+        title="All Roofing Services in Charlotte NC"
+        subtitle="From storm damage repairs to complete replacements, we offer comprehensive roofing solutions."
+      />
+
+      {/* Related Cities */}
+      <RelatedCitiesLinks
+        currentCity="Charlotte"
+        service="Storm Damage Repair"
+        serviceSlug="storm-damage-roof-repair"
+        title="Storm Damage Roof Repair in Nearby Cities"
+      />
 
       {/* CTA */}
       <CTASection
