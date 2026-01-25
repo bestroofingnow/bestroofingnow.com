@@ -34,24 +34,22 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Roofing Contractor Charlotte NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofing Services Charlotte NC | Complete Roof Solutions | Best Roofing Now',
   description:
-    'Best Roofing Now is Charlotte NC\'s trusted roofing contractor since 2020. Veteran-owned, GAF & CertainTeed certified. 500+ roofs completed, 5.0 Google rating. Free inspections. Call (704) 605-6047.',
+    'Comprehensive roofing services in Charlotte NC - roof repair, replacement, inspection, storm damage restoration, and emergency services. Veteran-owned, certified installers. Free estimates. Call (704) 605-6047.',
   keywords: [
-    'roofing contractor Charlotte NC',
-    'roofing contractor near me',
-    'Charlotte roofing contractor',
-    'roofing company Charlotte NC',
-    'roofer Charlotte NC',
-    'roof repair Charlotte NC',
-    'roof replacement Charlotte NC',
-    'roof inspection Charlotte',
-    'emergency roof repair Charlotte',
-    'storm damage roof repair Charlotte',
-    'residential roofing Charlotte',
-    'commercial roofing Charlotte NC',
-    'best roofer Charlotte',
-    'licensed roofing contractor Charlotte',
+    'roofing services Charlotte NC',
+    'roofing services near me',
+    'Charlotte roofing services',
+    'roof services Charlotte',
+    'complete roofing solutions Charlotte',
+    'professional roofing services',
+    'full service roofing company',
+    'roofing service providers Charlotte NC',
+    'residential roofing services Charlotte',
+    'commercial roofing services Charlotte NC',
+    'roofing service estimates',
+    'local roofing services Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-services`,

@@ -54,7 +54,16 @@
       "Bash(npm run pmi:export:*)",
       "Bash(npx lighthouse:*)",
       "Bash(npx next lint:*)",
-      "Bash(npx drizzle-kit:*)"
+      "Bash(npx drizzle-kit:*)",
+      "WebFetch(domain:docs.brightdata.com)",
+      "Bash(npm run lint:*)",
+      "Bash(npx next build)",
+      "Bash(node scripts/dataforseo-keywords.js:*)",
+      "Bash(node scripts/dataforseo-related.js:*)",
+      "Bash(git checkout:*)",
+      "Bash(node scripts/seo-audit.js:*)",
+      "Bash(find:*)",
+      "Bash(node scripts/top-100-keywords.js:*)"
     ]
   }
 }

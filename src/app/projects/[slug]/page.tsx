@@ -98,7 +98,7 @@ export async function generateStaticParams() {
   }
 }
 
-// Generate metadata
+// Generate metadata with hyper-local SEO optimization
 export async function generateMetadata({
   params,
 }: {
@@ -113,19 +113,45 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${project.product || 'Roofing'} Project in ${project.city}, ${project.state} | ${SITE_CONFIG.name}`;
-  const description = `View photos of our ${project.product || 'roofing'} project completed in ${project.city}, ${project.state}${project.county ? ` (${project.county} County)` : ''}. ${project.photos.length} photos from this verified installation.`;
+  const cityState = `${project.city}, ${project.state}`;
+  const productType = project.product || 'Roofing';
+  const serviceType = project.serviceType || 'roof installation';
+
+  const title = `${productType} Project in ${cityState} | ${SITE_CONFIG.name}`;
+  const description = `View ${project.photos.length} photos of our ${productType.toLowerCase()} project in ${cityState}${project.county ? ` (${project.county} County)` : ''}. Professional ${serviceType} by Charlotte's top-rated roofing contractor. BBB A+ rated, veteran-owned.`;
+
+  // Hyper-local keywords based on city and product
+  const keywords = [
+    `${productType.toLowerCase()} ${project.city} ${project.state}`.toLowerCase(),
+    `roofer ${project.city} nc`,
+    `roofing contractor ${project.city}`,
+    `${serviceType} ${project.city}`,
+    `roof project ${project.city} nc`,
+    `${project.county ? `roofing ${project.county} county` : ''}`,
+    `local roofer ${project.city}`,
+    `${productType.toLowerCase()} installation ${project.city}`,
+  ].filter(k => k);
 
   return {
     title,
     description,
+    keywords,
+    alternates: {
+      canonical: `${SITE_CONFIG.url}/projects/${project.pmiId}`,
+    },
     openGraph: {
       title,
       description,
       url: `${SITE_CONFIG.url}/projects/${project.pmiId}`,
+      type: 'article',
       images: project.photos[0]?.url
-        ? [{ url: project.photos[0].url, width: 1200, height: 630 }]
+        ? [{ url: project.photos[0].url, width: 1200, height: 630, alt: `${productType} project in ${cityState}` }]
         : undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
     },
   };
 }

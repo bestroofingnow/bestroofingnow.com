@@ -23,14 +23,19 @@ export async function GET() {
 
     // ============================================
     // HIGH-VALUE CHARLOTTE SEO LANDING PAGES
+    // Top 100 keyword targets from DataForSEO
     // ============================================
+    { url: `${BASE_URL}/roofing-charlotte-nc`, changefreq: 'weekly', priority: '1.0' },
+    { url: `${BASE_URL}/roofers-charlotte-nc`, changefreq: 'weekly', priority: '1.0' },
+    { url: `${BASE_URL}/roofing-company-charlotte-nc`, changefreq: 'weekly', priority: '1.0' },
     { url: `${BASE_URL}/roofing-contractor-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/roofers-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/best-roofing-company-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-replacement-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/residential-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-installation-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/industrial-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
 
     // ============================================
     // STORM & EMERGENCY PAGES
@@ -189,6 +194,7 @@ export async function GET() {
     // Other cities
     { url: `${BASE_URL}/roof-repair-pineville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-repair-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-repair-concord-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-concord-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-concord-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-gastonia-nc`, changefreq: 'weekly', priority: '0.8' },
