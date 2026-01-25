@@ -231,6 +231,33 @@ export default function HomePage() {
                 <a href="/services/emergency-roofing" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Emergency Service</a>
               </div>
             </div>
+
+            {/* Charlotte Roofing Landing Pages - High Priority SEO Internal Links */}
+            <div className="border-t border-gray-200 pt-8 mt-6">
+              <p className="text-sm text-gray-500 mb-4">Charlotte Roofing:</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <a href="/roofing-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roofing Charlotte NC</a>
+                <a href="/roofers-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roofers Charlotte NC</a>
+                <a href="/roofing-company-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roofing Company Charlotte</a>
+                <a href="/roof-repair-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roof Repair Charlotte</a>
+                <a href="/roof-replacement-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roof Replacement Charlotte</a>
+                <a href="/roofing-contractor-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roofing Contractor Charlotte</a>
+              </div>
+            </div>
+
+            {/* Lake Norman & Surrounding Cities - Internal Links */}
+            <div className="border-t border-gray-200 pt-8 mt-6">
+              <p className="text-sm text-gray-500 mb-4">Service Areas:</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <a href="/roofing-huntersville-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Huntersville</a>
+                <a href="/roofing-mooresville-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Mooresville</a>
+                <a href="/roofing-cornelius-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Cornelius</a>
+                <a href="/roofing-concord-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Concord</a>
+                <a href="/roofing-davidson-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Davidson</a>
+                <a href="/roofing-matthews-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Matthews</a>
+                <a href="/locations" className="bg-gray-100 rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200 transition-colors">All 60+ Locations →</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

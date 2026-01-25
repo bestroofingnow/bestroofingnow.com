@@ -174,8 +174,50 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
                 ))}
               </div>
 
+              {/* Popular Charlotte Searches - High Priority SEO Links */}
+              <div className="mt-6 pt-4 border-t border-gray-100">
+                <h3 className="text-xs font-bold text-gray uppercase tracking-wider mb-3">Popular in Charlotte</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Link
+                    href="/roofing-charlotte-nc"
+                    className="text-xs px-3 py-1.5 bg-light rounded-full text-dark hover:bg-primary hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Roofing Charlotte NC
+                  </Link>
+                  <Link
+                    href="/roofers-charlotte-nc"
+                    className="text-xs px-3 py-1.5 bg-light rounded-full text-dark hover:bg-primary hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Roofers Charlotte NC
+                  </Link>
+                  <Link
+                    href="/roof-repair-charlotte-nc"
+                    className="text-xs px-3 py-1.5 bg-light rounded-full text-dark hover:bg-primary hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Roof Repair Charlotte
+                  </Link>
+                  <Link
+                    href="/roof-replacement-charlotte-nc"
+                    className="text-xs px-3 py-1.5 bg-light rounded-full text-dark hover:bg-primary hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Roof Replacement Charlotte
+                  </Link>
+                  <Link
+                    href="/commercial-roofing-contractors-charlotte-nc"
+                    className="text-xs px-3 py-1.5 bg-light rounded-full text-dark hover:bg-primary hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Commercial Roofing
+                  </Link>
+                </div>
+              </div>
+
               {/* Bottom CTA */}
-              <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+              <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                 <Link
                   href="/services"
                   className="text-primary text-sm font-semibold hover:text-accent transition-colors flex items-center gap-1"

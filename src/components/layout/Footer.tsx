@@ -155,37 +155,37 @@ export function Footer() {
               </li>
             </ul>
 
-            {/* Quick Links */}
-            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Quick Links</h3>
+            {/* Top Charlotte Searches - High Priority SEO Pages */}
+            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Charlotte Roofing</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-white hover:text-white transition-colors">
-                  About Us
+                <Link href="/roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Charlotte NC
                 </Link>
               </li>
               <li>
-                <Link href="/reviews" className="text-white hover:text-white transition-colors">
-                  Customer Reviews
+                <Link href="/roofers-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Roofers Charlotte NC
                 </Link>
               </li>
               <li>
-                <Link href="/nc-roofing-guide" className="text-white hover:text-white transition-colors">
-                  NC Roofing Guide
+                <Link href="/roofing-company-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Company Charlotte
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-white hover:text-white transition-colors">
-                  Roofing Blog
+                <Link href="/roof-repair-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Roof Repair Charlotte NC
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-white hover:text-white transition-colors">
-                  FAQ
+                <Link href="/roof-replacement-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Roof Replacement Charlotte
                 </Link>
               </li>
               <li>
-                <Link href="/financing" className="text-white hover:text-white transition-colors">
-                  Financing Options
+                <Link href="/roofing-contractor-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Contractor Charlotte
                 </Link>
               </li>
             </ul>
