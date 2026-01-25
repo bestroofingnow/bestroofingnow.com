@@ -20,8 +20,11 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
+import { TURNER_NOTES } from '@/lib/turner-family';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
+import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -590,6 +593,44 @@ export default function RoofersCharlotteNCPage() {
               View All Projects
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Turner Family */}
+      <MeetTheFamily variant="full" />
+
+      {/* Service City Links */}
+      <ServiceCityLinks
+        city="Charlotte"
+        citySlug="charlotte-nc"
+        title="Roofing Services in Charlotte NC"
+        subtitle="Looking for a specific roofing service? Our Charlotte roofers offer comprehensive solutions for every roofing need."
+      />
+
+      {/* Personal Note from James */}
+      <section className="py-12 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto bg-primary/5 rounded-xl p-8">
+            <div className="flex items-start gap-4">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-xl font-bold text-primary">JT</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-dark mb-2">A Note from James Turner, Owner</h3>
+                <p className="text-gray italic mb-4">
+                  &ldquo;{TURNER_NOTES.james.onCommunity}&rdquo;
+                </p>
+                <p className="text-gray">
+                  When you hire Best Roofing Now, you&apos;re not just getting roofers - you&apos;re getting a family
+                  that cares about Charlotte as much as you do. We&apos;ve been here for 15 years, raised our kids here,
+                  and built our business on the simple principle that your roof should protect what matters most.
+                </p>
+                <p className="text-primary font-semibold mt-4">
+                  Call us today at {SITE_CONFIG.phone} - I&apos;d love to hear from you.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

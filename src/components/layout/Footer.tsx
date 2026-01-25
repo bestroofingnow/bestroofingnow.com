@@ -191,11 +191,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Locations */}
+          {/* Locations & Service-City Pages */}
           <div className="lg:col-span-3">
             <h3 className="text-lg font-bold mb-6 text-white">Service Areas</h3>
             <ul className="space-y-3">
-              {LOCATIONS.slice(0, 10).map((location) => (
+              {LOCATIONS.slice(0, 8).map((location) => (
                 <li key={location.slug}>
                   <Link
                     href={`/locations/${location.slug}`}
@@ -211,6 +211,41 @@ export function Footer() {
                   className="text-accent-light hover:text-white font-medium"
                 >
                   View All Locations →
+                </Link>
+              </li>
+            </ul>
+
+            {/* Lake Norman & Surrounding Service Links */}
+            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Lake Norman Area</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/roofing-huntersville-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Huntersville NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-mooresville-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Mooresville NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-cornelius-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Cornelius NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-concord-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Concord NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-repair-huntersville-nc" className="text-white hover:text-white transition-colors">
+                  Roof Repair Huntersville
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-repair-concord-nc" className="text-white hover:text-white transition-colors">
+                  Roof Repair Concord NC
                 </Link>
               </li>
             </ul>

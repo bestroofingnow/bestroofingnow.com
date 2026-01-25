@@ -214,6 +214,52 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
                     Commercial Roofing
                   </Link>
                 </div>
+                {/* Lake Norman Area Quick Links */}
+                <h3 className="text-xs font-bold text-gray uppercase tracking-wider mb-2 mt-4">Lake Norman Area</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Link
+                    href="/roofing-huntersville-nc"
+                    className="text-xs px-3 py-1.5 bg-accent/10 rounded-full text-dark hover:bg-accent hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Huntersville
+                  </Link>
+                  <Link
+                    href="/roofing-mooresville-nc"
+                    className="text-xs px-3 py-1.5 bg-accent/10 rounded-full text-dark hover:bg-accent hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Mooresville
+                  </Link>
+                  <Link
+                    href="/roofing-concord-nc"
+                    className="text-xs px-3 py-1.5 bg-accent/10 rounded-full text-dark hover:bg-accent hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Concord
+                  </Link>
+                  <Link
+                    href="/roofing-cornelius-nc"
+                    className="text-xs px-3 py-1.5 bg-accent/10 rounded-full text-dark hover:bg-accent hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Cornelius
+                  </Link>
+                  <Link
+                    href="/roof-repair-huntersville-nc"
+                    className="text-xs px-3 py-1.5 bg-accent/10 rounded-full text-dark hover:bg-accent hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Roof Repair Huntersville
+                  </Link>
+                  <Link
+                    href="/roof-replacement-mooresville-nc"
+                    className="text-xs px-3 py-1.5 bg-accent/10 rounded-full text-dark hover:bg-accent hover:text-white transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    Roof Replacement Mooresville
+                  </Link>
+                </div>
               </div>
 
               {/* Bottom CTA */}

@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/Button';
 import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
+import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
+import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -611,60 +613,61 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Check if this is a Lake Norman area town
   const isLakeNormanArea = LAKE_NORMAN_LOCATIONS.some(ln => city.includes(ln.replace('-nc', '')));
 
+  // Title format: "Top-Rated Roofing Company in {City} NC | {Trust Signal} | Best Roofing Now"
+  // This is more defensible than "#1" claims and backed by actual reviews
   const title = isCharlotte
-    ? `#1 Roofing Contractor Charlotte NC | Roofing Company Near Me | BBB A+`
+    ? `Top-Rated Roofing Company in Charlotte NC | 500+ Roofs Installed | Best Roofing Now`
     : isLakeNormanPage
-    ? `#1 Lake Norman Roofing Contractor | Waterfront Roof Specialists | BBB A+`
+    ? `Top-Rated Lake Norman Roofing Company | Waterfront Specialists | Best Roofing Now`
     : isLakeNormanArea
-    ? `Roofing Contractor ${location.city} NC | Lake Norman Roofers | 5-Star Rated`
-    : `Roofing Contractor ${location.city}, ${location.state} | Roof Repair & Replacement`;
+    ? `Top-Rated Roofing Company in ${location.city} NC | Lake Norman Area | Best Roofing Now`
+    : `Top-Rated Roofing Company in ${location.city}, ${location.state} | 5-Star Reviews | Best Roofing Now`;
 
   const description = isCharlotte
-    ? `Charlotte's top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts, insurance claim assistance. Call (704) 605-6047.`
+    ? `Looking for a trusted roofing company in Charlotte NC? Best Roofing Now is a 5-star rated, veteran-owned roofer with 500+ roofs installed. BBB A+ rated. Free inspections, storm damage experts. Call (704) 605-6047.`
     : isLakeNormanPage
-    ? `Lake Norman's trusted waterfront roofing experts. Serving Cornelius, Davidson, Huntersville, Mooresville & Denver from our Charlotte headquarters. Wind-resistant installations, 5-star rated, Chamber member. Free inspections. (704) 605-6047.`
+    ? `Lake Norman's trusted waterfront roofing company. Serving Cornelius, Davidson, Huntersville, Mooresville & Denver. Wind-resistant installations, 5-star rated, Chamber member. Free inspections. (704) 605-6047.`
     : isLakeNormanArea
-    ? `Professional roofing services in ${location.city} from Charlotte's top-rated contractor. Just ${location.distance} miles from our Charlotte HQ. 5-star Google rating, BBB A+ accredited. Storm damage experts. Free estimates! (704) 605-6047.`
-    : `Best Roofing Now serves ${location.city}, ${location.state} from our Charlotte headquarters. Just ${location.distance} miles away. Professional roofing services, roof repair, replacement, and emergency services. Free estimates!`;
+    ? `Looking for a roofing company in ${location.city}? Best Roofing Now serves the Lake Norman area with 5-star rated service. Just ${location.distance} miles from our Charlotte HQ. Free estimates! (704) 605-6047.`
+    : `Best Roofing Now is the top-rated roofing company serving ${location.city}, ${location.state}. Just ${location.distance} miles from our Charlotte headquarters. Roof repair, replacement & emergency services. Free estimates!`;
 
   const keywords = isCharlotte
     ? [
-        'roofing contractor Charlotte NC',
         'roofing company Charlotte NC',
-        'roofing contractor near me',
-        'roofing company near me',
-        'roofers near me Charlotte',
-        'Charlotte roofers',
-        'Charlotte roofing contractor',
+        'roofing company in Charlotte NC',
         'Charlotte roofing company',
+        'best roofing company Charlotte NC',
+        'top rated roofing company Charlotte',
+        'Charlotte NC roofers',
+        'roofers in Charlotte NC',
         'roof repair Charlotte NC',
         'roof replacement Charlotte NC',
-        'best roofer Charlotte',
+        'roofing contractor Charlotte NC',
         'storm damage roof repair Charlotte',
-        'hail damage roof Charlotte',
+        'emergency roof repair Charlotte NC',
       ]
     : isLakeNormanPage || isLakeNormanArea
     ? [
-        `roofing contractor Lake Norman`,
+        `roofing company ${location.city} NC`,
+        `roofing company in ${location.city}`,
+        `${location.city} roofing company`,
         `Lake Norman roofing company`,
-        `waterfront roofer Lake Norman`,
-        `lakefront roofing NC`,
         `${location.city} roofers`,
-        `roof repair ${location.city}`,
-        `storm damage Lake Norman`,
-        `Cornelius roofing`,
-        `Davidson roofing contractor`,
-        `Huntersville roofers`,
-        `Mooresville roof repair`,
-        `wind resistant roofing Lake Norman`,
+        `roof repair ${location.city} NC`,
+        `roof replacement ${location.city} NC`,
+        `waterfront roofing Lake Norman`,
+        `storm damage roof repair ${location.city}`,
+        `emergency roof repair ${location.city}`,
       ]
     : [
-        `roofing contractor ${location.city} ${location.state}`,
         `roofing company ${location.city} ${location.state}`,
+        `roofing company in ${location.city}`,
+        `${location.city} roofing company`,
         `${location.city} roofers`,
-        `roof repair ${location.city}`,
+        `roof repair ${location.city} ${location.state}`,
         `roof replacement ${location.city} ${location.state}`,
         `roofers near me ${location.city}`,
+        `best roofing company ${location.city}`,
       ];
 
   // Get location hero image for OpenGraph (skip videos, use fallback image)
@@ -680,17 +683,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     openGraph: {
       title: isCharlotte
-        ? `#1 Roofing Contractor Charlotte NC | Best Roofing Now`
+        ? `Top-Rated Roofing Company in Charlotte NC | Best Roofing Now`
         : isLakeNormanPage
-        ? `#1 Lake Norman Roofing Contractor | Waterfront Specialists`
+        ? `Top-Rated Lake Norman Roofing Company | Best Roofing Now`
         : isLakeNormanArea
-        ? `${location.city} Roofing | Lake Norman's Trusted Roofers`
-        : `Roofing Services in ${location.city}, ${location.state}`,
+        ? `Top-Rated Roofing Company in ${location.city} | Lake Norman Area`
+        : `Top-Rated Roofing Company in ${location.city}, ${location.state}`,
       description: isCharlotte
-        ? `Charlotte's top-rated roofing contractor. 5-star rating, veteran-owned, BBB A+ accredited. Free roof inspections.`
+        ? `Charlotte's top-rated roofing company. 5-star rating, veteran-owned, BBB A+ accredited. Free roof inspections.`
         : isLakeNormanPage || isLakeNormanArea
-        ? `Lake Norman's trusted waterfront roofing experts. 5-star rated, Chamber member. Wind-resistant installations. Free inspections.`
-        : `Professional roofing services in ${location.city}. Free estimates, quality workmanship, BBB A+ rated.`,
+        ? `Lake Norman's trusted waterfront roofing company. 5-star rated, Chamber member. Free inspections.`
+        : `Top-rated roofing company in ${location.city}. Free estimates, quality workmanship, BBB A+ rated.`,
       url: `${SITE_CONFIG.url}/locations/${city}`,
       type: 'website',
       images: [
@@ -698,24 +701,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: `Roofing services in ${location.city}, ${location.state} - Best Roofing Now`,
+          alt: `Top-rated roofing company in ${location.city}, ${location.state} - Best Roofing Now`,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       title: isCharlotte
-        ? `#1 Roofing Contractor Charlotte NC`
+        ? `Top-Rated Roofing Company Charlotte NC`
         : isLakeNormanPage
-        ? `#1 Lake Norman Roofing Contractor`
+        ? `Top-Rated Lake Norman Roofing Company`
         : isLakeNormanArea
-        ? `${location.city} Roofing | Lake Norman Roofers`
-        : `Roofing Services in ${location.city}, ${location.state}`,
+        ? `Top-Rated Roofing Company in ${location.city}`
+        : `Top-Rated Roofing Company in ${location.city}, ${location.state}`,
       description: isCharlotte
-        ? `Charlotte's top-rated roofing contractor. Free roof inspections.`
+        ? `Charlotte's top-rated roofing company. Free roof inspections.`
         : isLakeNormanPage || isLakeNormanArea
-        ? `Lake Norman's trusted waterfront roofers. 5-star rated. Free inspections.`
-        : `Professional roofing services in ${location.city}. Free estimates.`,
+        ? `Lake Norman's trusted roofing company. 5-star rated. Free inspections.`
+        : `Top-rated roofing company in ${location.city}. Free estimates.`,
       images: [ogImage],
     },
   };
@@ -1777,6 +1780,18 @@ export default async function LocationPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Service City Links - Internal Linking for SEO */}
+      <ServiceCityLinks
+        city={location.city}
+        citySlug={city}
+        title={`Roofing Services in ${location.city}`}
+        subtitle={`Looking for a specific roofing service? Click below to learn more about what we offer in ${location.city}.`}
+      />
+
+      {/* Meet the Turner Family - Personal Touch */}
+      {isCharlotte && <MeetTheFamily variant="full" />}
+      {!isCharlotte && <MeetTheFamily variant="compact" />}
 
       {/* CTA */}
       <CTASection
