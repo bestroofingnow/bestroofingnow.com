@@ -2,19 +2,23 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Phone, CheckCircle, ArrowRight, Cloud, Thermometer, Droplets, Wind, AlertTriangle } from 'lucide-react';
+import { MapPin, Phone, CheckCircle, ArrowRight, Cloud, Thermometer, Droplets, Wind, AlertTriangle, Building, Clock, Navigation } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
 import {
-  LocationSchema,
   BreadcrumbSchema,
   FAQSchema,
   WebPageSchema,
   HeroImageSchema,
   LocationFAQSchema,
-  VoiceSearchFAQSchema,
+  PlaceSchema,
+  ServiceAreaMapSchema,
+  ServiceAreaPageSchema,
+  PrimaryLocationSchema,
+  LocationAISearchBundle,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ, PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -23,7 +27,7 @@ import ProjectMap from '@/components/projects/ProjectMap';
 import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK, CHARLOTTE_VOICE_FAQS, CHARLOTTE_PEOPLE_ALSO_ASK } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
-import { generateLocationFAQs } from '@/lib/faqs';
+import { generateLocationFAQs, generateNearMeVoiceSearchFAQs } from '@/lib/faqs';
 import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
 import { EstimateButton } from '@/components/estimate';
 import { getClimateData, CHARLOTTE_CLIMATE } from '@/lib/climate';
@@ -618,10 +622,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const description = isCharlotte
     ? `Charlotte's top-rated roofing contractor. 5-star Google rating, 500+ roofs installed, veteran-owned. Free inspections, storm damage experts, insurance claim assistance. Call (704) 605-6047.`
     : isLakeNormanPage
-    ? `Lake Norman's trusted waterfront roofing experts. Serving Cornelius, Davidson, Huntersville, Mooresville & Denver. Wind-resistant installations, 5-star rated, Chamber member. Free inspections. (704) 605-6047.`
+    ? `Lake Norman's trusted waterfront roofing experts. Serving Cornelius, Davidson, Huntersville, Mooresville & Denver from our Charlotte headquarters. Wind-resistant installations, 5-star rated, Chamber member. Free inspections. (704) 605-6047.`
     : isLakeNormanArea
-    ? `${location.city}'s top-rated roofing contractor serving Lake Norman. 5-star Google rating, BBB A+ accredited, veteran-owned. Storm damage experts, insurance claim assistance. Free estimates! (704) 605-6047.`
-    : `Best Roofing Now serves ${location.city}, ${location.state} with professional roofing services. Residential & commercial roofing, roof repair, replacement, and emergency services. Free estimates!`;
+    ? `Professional roofing services in ${location.city} from Charlotte's top-rated contractor. Just ${location.distance} miles from our Charlotte HQ. 5-star Google rating, BBB A+ accredited. Storm damage experts. Free estimates! (704) 605-6047.`
+    : `Best Roofing Now serves ${location.city}, ${location.state} from our Charlotte headquarters. Just ${location.distance} miles away. Professional roofing services, roof repair, replacement, and emergency services. Free estimates!`;
 
   const keywords = isCharlotte
     ? [
@@ -731,6 +735,9 @@ export default async function LocationPage({ params }: PageProps) {
   // Generate unique FAQs for this location
   const locationFAQs = generateLocationFAQs(location.city, location.state, location.county);
 
+  // Generate "near me" voice search FAQs for AEO optimization
+  const nearMeVoiceSearchFAQs = generateNearMeVoiceSearchFAQs(location.city, location.state, location.county);
+
   // Get climate data for this location
   const climateData = getClimateData(city);
 
@@ -742,11 +749,16 @@ export default async function LocationPage({ params }: PageProps) {
   const pageUrl = `${SITE_CONFIG.url}/locations/${city}`;
   const heroImage = LOCATION_HERO_IMAGES[city] || IMAGES.hero.roofTeam;
 
+  // Calculate response time based on distance
+  const responseTime = location.distance <= 15 ? '30-45 minutes' : location.distance <= 25 ? '45-60 minutes' : '1-2 hours';
+
   return (
     <>
       {/* Enhanced Schema Markup */}
       <WebPageSchema
-        name={`Roofing Contractor ${location.city} ${location.state} | Best Roofing Now`}
+        name={isCharlotte
+          ? `Roofing Contractor Charlotte NC | Best Roofing Now Office Location`
+          : `Roofing Services in ${location.city} ${location.state} | Best Roofing Now`}
         description={content.description}
         url={pageUrl}
         primaryImage={heroImage}
@@ -756,7 +768,25 @@ export default async function LocationPage({ params }: PageProps) {
           { name: `${location.city}, ${location.state}`, url: pageUrl },
         ]}
       />
-      <LocationSchema location={location} />
+      {/* Charlotte gets full LocalBusiness schema with physical address */}
+      {isCharlotte ? (
+        <PrimaryLocationSchema />
+      ) : (
+        /* Service areas get Service schema pointing to Charlotte as provider */
+        <ServiceAreaPageSchema
+          city={location.city}
+          state={location.state}
+          county={location.county}
+          distance={location.distance}
+          slug={location.slug}
+        />
+      )}
+      <PlaceSchema
+        city={location.city}
+        state={location.state}
+        county={location.county}
+      />
+      <ServiceAreaMapSchema />
       <FAQSchema faqs={locationFAQs} />
       <LocationFAQSchema city={location.city} state={location.state} faqs={locationFAQs} />
       <BreadcrumbSchema
@@ -768,7 +798,16 @@ export default async function LocationPage({ params }: PageProps) {
       />
       <HeroImageSchema
         url={heroImage}
-        caption={`Professional roofing services in ${location.city}, ${location.state} - Best Roofing Now`}
+        caption={isCharlotte
+          ? `Best Roofing Now office in Charlotte, NC - Charlotte's top-rated roofing contractor`
+          : `Professional roofing services in ${location.city}, ${location.state} - Serving from Charlotte`}
+        pageUrl={pageUrl}
+      />
+
+      {/* Enhanced AI Search Optimization for Google AI Overview and Voice Assistants */}
+      <LocationAISearchBundle
+        city={location.city}
+        state={location.state}
         pageUrl={pageUrl}
       />
 
@@ -857,6 +896,49 @@ export default async function LocationPage({ params }: PageProps) {
         />
       )}
 
+      {/* "Near Me" Voice Search FAQ Schema - Mobile Local Search Optimization */}
+      {/* Targets queries like "roofers near me [city]" with conversational, mobile-friendly answers */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            '@id': `${pageUrl}/#near-me-voice-faq`,
+            name: `Roofers Near Me in ${location.city} - Voice Search FAQs`,
+            description: `Find answers to common "near me" roofing questions in ${location.city}, ${location.state}. Find local roofers, free inspections, emergency repairs, and top-rated contractors near you.`,
+            mainEntity: nearMeVoiceSearchFAQs.map((faq, index) => ({
+              '@type': 'Question',
+              '@id': `${pageUrl}/#near-me-faq-${index + 1}`,
+              position: index + 1,
+              name: faq.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+                dateCreated: '2025-01-01',
+                author: {
+                  '@type': 'Organization',
+                  '@id': `${SITE_CONFIG.url}/#organization`,
+                },
+              },
+            })),
+            author: {
+              '@type': 'RoofingContractor',
+              '@id': `${SITE_CONFIG.url}/#organization`,
+              name: SITE_CONFIG.name,
+            },
+            about: {
+              '@type': 'Place',
+              name: `${location.city}, ${location.state === 'NC' ? 'North Carolina' : 'South Carolina'}`,
+              containedInPlace: {
+                '@type': 'AdministrativeArea',
+                name: `${location.county} County`,
+              },
+            },
+          }),
+        }}
+      />
+
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
         <div className="container">
@@ -873,14 +955,56 @@ export default async function LocationPage({ params }: PageProps) {
       <section className="bg-gradient-primary text-white py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-4">
-              <MapPin className="w-6 h-6" />
-              <span className="font-semibold">{location.county} County</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              {isCharlotte ? `#1 Roofing Contractor in Charlotte, NC` : `Roofing Contractor in ${location.city}, ${location.state}`}
-            </h1>
-            <p className="text-xl text-white/90 mb-8">{content.description}</p>
+            {isCharlotte ? (
+              /* Charlotte - Physical Location */
+              <>
+                <div className="flex items-center gap-2 mb-4">
+                  <Building className="w-6 h-6" />
+                  <span className="font-semibold">Our Charlotte Office</span>
+                </div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                  Roofing Contractor in Charlotte, NC
+                </h1>
+                <p className="text-xl text-white/90 mb-4">{content.description}</p>
+                <div className="bg-white/10 rounded-lg p-4 mb-8">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold">Visit Our Office</p>
+                      <p className="text-white/80">
+                        {SITE_CONFIG.address.street}, {SITE_CONFIG.address.suite}<br />
+                        {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : (
+              /* Service Areas - Not a physical location */
+              <>
+                <div className="flex items-center gap-2 mb-4">
+                  <Navigation className="w-6 h-6" />
+                  <span className="font-semibold">Service Area - {location.county} County</span>
+                </div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                  Roofing Services in {location.city}, {location.state}
+                </h1>
+                <p className="text-xl text-white/90 mb-4">{content.description}</p>
+                <div className="bg-white/10 rounded-lg p-4 mb-8">
+                  <p className="font-semibold mb-2">Serving {location.city} from Charlotte</p>
+                  <div className="flex flex-wrap gap-4 text-sm">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>{location.distance} miles from our Charlotte HQ</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4" />
+                      <span>Typical response: {responseTime}</span>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
             <div className="flex flex-col sm:flex-row gap-4">
               <EstimateButton
                 variant="accent"
@@ -906,13 +1030,92 @@ export default async function LocationPage({ params }: PageProps) {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-6">
-                Your Trusted Roofing Company in {location.city}
-              </h2>
-              <div className="prose prose-lg text-gray">
-                <p className="mb-4">{content.extendedContent || defaultContent.extendedContent}</p>
-                <p className="mb-4">{content.roofingChallenges || defaultContent.roofingChallenges}</p>
-              </div>
+              {isCharlotte ? (
+                /* Charlotte - Our Office */
+                <>
+                  <h2 className="text-3xl font-bold text-primary mb-6">
+                    Our Charlotte Office
+                  </h2>
+                  <div className="prose prose-lg text-gray">
+                    <p className="mb-4">{content.extendedContent || defaultContent.extendedContent}</p>
+                    <p className="mb-4">{content.roofingChallenges || defaultContent.roofingChallenges}</p>
+                  </div>
+                  {/* Physical Address Card */}
+                  <div className="mt-6 bg-primary/5 rounded-xl p-6 border border-primary/10">
+                    <h3 className="font-bold text-dark mb-4 flex items-center gap-2">
+                      <Building className="w-5 h-5 text-primary" />
+                      Visit Our Charlotte Office
+                    </h3>
+                    <div className="space-y-3">
+                      <p className="text-gray">
+                        <strong>Address:</strong><br />
+                        {SITE_CONFIG.address.street}, {SITE_CONFIG.address.suite}<br />
+                        {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
+                      </p>
+                      <p className="text-gray">
+                        <strong>Phone:</strong> <a href={`tel:${SITE_CONFIG.phoneClean}`} className="text-primary font-semibold">{SITE_CONFIG.phone}</a>
+                      </p>
+                      <p className="text-gray">
+                        <strong>Hours:</strong> {SITE_CONFIG.hours}
+                      </p>
+                      <a
+                        href={SITE_CONFIG.externalProfiles.googleMaps}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition mt-2"
+                      >
+                        <MapPin className="w-4 h-4" />
+                        Get Directions on Google Maps
+                        <ArrowRight className="w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                /* Service Areas - Served from Charlotte */
+                <>
+                  <h2 className="text-3xl font-bold text-primary mb-6">
+                    Serving {location.city} from Charlotte
+                  </h2>
+                  <div className="prose prose-lg text-gray">
+                    <p className="mb-4">{content.extendedContent || defaultContent.extendedContent}</p>
+                    <p className="mb-4">{content.roofingChallenges || defaultContent.roofingChallenges}</p>
+                  </div>
+                  {/* Service from Charlotte Card */}
+                  <div className="mt-6 bg-accent/5 rounded-xl p-6 border border-accent/10">
+                    <h3 className="font-bold text-dark mb-4 flex items-center gap-2">
+                      <Navigation className="w-5 h-5 text-accent" />
+                      How We Serve {location.city}
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-dark">Located {location.distance} miles from Charlotte</p>
+                          <p className="text-sm text-gray">Our team travels from our Charlotte headquarters to serve {location.city} homeowners.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <Clock className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-dark">Typical response time: {responseTime}</p>
+                          <p className="text-sm text-gray">Fast service for inspections, estimates, and emergency repairs.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <Building className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-dark">Charlotte Headquarters</p>
+                          <p className="text-sm text-gray">{SITE_CONFIG.address.street}, {SITE_CONFIG.address.suite}, {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <Button href="/contact" className="mt-4">
+                      Schedule Service in {location.city}
+                    </Button>
+                  </div>
+                </>
+              )}
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
@@ -1244,35 +1447,101 @@ export default async function LocationPage({ params }: PageProps) {
       <section className="section bg-light">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Contact Our {location.city} Roofing Team
-            </h2>
-            <p className="text-gray text-lg mb-6">
-              Ready to get started? Our team serves {location.city} and all of {location.county} County
-              with professional roofing services. Call us today for a free estimate!
-            </p>
-            <div className="bg-white rounded-xl p-8 shadow-md">
-              <div className={`grid ${isCharlotte ? 'md:grid-cols-2' : ''} gap-6 text-left`}>
-                {isCharlotte && (
-                  <div>
-                    <h3 className="font-bold text-dark mb-2">Office Address</h3>
-                    <p className="text-gray">
-                      {SITE_CONFIG.address.street}<br />
-                      {SITE_CONFIG.address.suite}<br />
-                      {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
-                    </p>
+            {isCharlotte ? (
+              /* Charlotte - Physical Office */
+              <>
+                <h2 className="text-3xl font-bold text-primary mb-4">
+                  Visit Our Charlotte Office
+                </h2>
+                <p className="text-gray text-lg mb-6">
+                  Our Charlotte office is the headquarters for all our roofing services in the greater Charlotte metro area.
+                  Stop by for a consultation or call us today for a free estimate!
+                </p>
+                <div className="bg-white rounded-xl p-8 shadow-md">
+                  <div className="grid md:grid-cols-2 gap-6 text-left">
+                    <div>
+                      <h3 className="font-bold text-dark mb-2 flex items-center gap-2">
+                        <Building className="w-5 h-5 text-primary" />
+                        Office Address
+                      </h3>
+                      <p className="text-gray mb-4">
+                        {SITE_CONFIG.address.street}<br />
+                        {SITE_CONFIG.address.suite}<br />
+                        {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
+                      </p>
+                      <a
+                        href={SITE_CONFIG.externalProfiles.googleMaps}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition text-sm"
+                      >
+                        <MapPin className="w-4 h-4" />
+                        Get Directions
+                      </a>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-dark mb-2 flex items-center gap-2">
+                        <Phone className="w-5 h-5 text-primary" />
+                        Contact
+                      </h3>
+                      <p className="text-gray">
+                        Phone: <a href={`tel:${SITE_CONFIG.phoneClean}`} className="text-primary font-semibold">{SITE_CONFIG.phone}</a><br />
+                        Email: <a href={`mailto:${SITE_CONFIG.email}`} className="text-primary">{SITE_CONFIG.email}</a><br />
+                        Hours: {SITE_CONFIG.hours}
+                      </p>
+                    </div>
                   </div>
-                )}
-                <div>
-                  <h3 className="font-bold text-dark mb-2">Contact</h3>
-                  <p className="text-gray">
-                    Phone: <a href={`tel:${SITE_CONFIG.phoneClean}`} className="text-primary font-semibold">{SITE_CONFIG.phone}</a><br />
-                    Email: <a href={`mailto:${SITE_CONFIG.email}`} className="text-primary">{SITE_CONFIG.email}</a><br />
-                    Hours: {SITE_CONFIG.hours}
-                  </p>
                 </div>
-              </div>
-            </div>
+              </>
+            ) : (
+              /* Service Areas - Contact for service from Charlotte */
+              <>
+                <h2 className="text-3xl font-bold text-primary mb-4">
+                  Schedule Service in {location.city}
+                </h2>
+                <p className="text-gray text-lg mb-6">
+                  Ready to get started? Our team travels from Charlotte to serve {location.city} and all of {location.county} County.
+                  Call us today to schedule your free inspection!
+                </p>
+                <div className="bg-white rounded-xl p-8 shadow-md">
+                  <div className="grid md:grid-cols-2 gap-6 text-left">
+                    <div>
+                      <h3 className="font-bold text-dark mb-2 flex items-center gap-2">
+                        <Navigation className="w-5 h-5 text-accent" />
+                        Serving {location.city} from Charlotte
+                      </h3>
+                      <p className="text-gray text-sm mb-3">
+                        Our team travels from our Charlotte headquarters to provide roofing services in {location.city}.
+                      </p>
+                      <ul className="text-sm text-gray space-y-2">
+                        <li className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4 text-accent" />
+                          {location.distance} miles from Charlotte HQ
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-accent" />
+                          Typical response: {responseTime}
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-dark mb-2 flex items-center gap-2">
+                        <Phone className="w-5 h-5 text-primary" />
+                        Contact Us
+                      </h3>
+                      <p className="text-gray">
+                        Phone: <a href={`tel:${SITE_CONFIG.phoneClean}`} className="text-primary font-semibold">{SITE_CONFIG.phone}</a><br />
+                        Email: <a href={`mailto:${SITE_CONFIG.email}`} className="text-primary">{SITE_CONFIG.email}</a><br />
+                        Hours: {SITE_CONFIG.hours}
+                      </p>
+                      <p className="text-xs text-gray mt-3">
+                        <strong>Charlotte Office:</strong> {SITE_CONFIG.address.full}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
@@ -1314,6 +1583,19 @@ export default async function LocationPage({ params }: PageProps) {
         title={`${location.city} Roofing FAQ`}
         subtitle={`Common questions about roofing services in ${location.city}, ${location.state}`}
       />
+
+      {/* "Near Me" Voice Search FAQs - For non-Charlotte, non-Lake Norman locations */}
+      {/* Displays conversational "near me" optimized questions for mobile local search */}
+      {!isCharlotte && !isLakeNorman && (
+        <section className="section bg-light">
+          <div className="container">
+            <VoiceSearchFAQ
+              faqs={nearMeVoiceSearchFAQs.slice(0, 5)}
+              city={location.city}
+            />
+          </div>
+        </section>
+      )}
 
       {/* Lake Norman Voice Search FAQs - AEO Optimization */}
       {isLakeNorman && (

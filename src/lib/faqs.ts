@@ -13,30 +13,56 @@ export function generateLocationFAQs(city: string, state: string, county: string
   const isCharlotte = city === 'Charlotte';
 
   // Add Charlotte-specific questions at the beginning for the primary market
+  // Optimized for "roofers near me charlotte" (8,100 monthly searches) and mobile voice search
   const charlotteSpecificFAQs: FAQ[] = isCharlotte ? [
     {
       question: `Who is the best roofing contractor in Charlotte NC?`,
       answer: `Best Roofing Now is Charlotte's #1 rated roofing contractor with a perfect 5-star Google rating, BBB A+ accreditation, and 500+ roofs installed. We're veteran-owned, family-operated, and certified by CertainTeed, GAF, and Owens Corning. Call ${SITE_CONFIG.phone} for a free inspection.`,
     },
     {
-      question: `What roofing company near me is the best in Charlotte?`,
-      answer: `Best Roofing Now is the highest-rated roofing company in Charlotte with a 5.0 Google rating from 62+ reviews. As a local, veteran-owned roofing contractor, we've installed 500+ roofs throughout Charlotte and the surrounding 50-mile area. We offer free inspections and honest assessments.`,
+      question: `Where can I find roofers near me in Charlotte?`,
+      answer: `Looking for roofers near me in Charlotte? Best Roofing Now is your local, veteran-owned roofing contractor at 10130 Mallard Creek Rd. We've installed 500+ roofs across Charlotte with a perfect 5-star rating. We serve all Charlotte neighborhoods plus surrounding areas within 50 miles including Huntersville, Matthews, Concord, Lake Norman, and Fort Mill SC. Call ${SITE_CONFIG.phone} for a same-day estimate.`,
     },
     {
-      question: `Where can I find a roofing contractor near me in Charlotte NC?`,
-      answer: `Best Roofing Now is your local roofing contractor located at 10130 Mallard Creek Rd in Charlotte. We serve all of Charlotte and surrounding areas within 50 miles including Huntersville, Matthews, Concord, Lake Norman, and Fort Mill SC. Call ${SITE_CONFIG.phone} for same-day estimates.`,
+      question: `What roofing company near me offers free inspections in Charlotte?`,
+      answer: `Best Roofing Now offers 100% free, no-obligation roof inspections for all Charlotte homeowners. As the highest-rated roofing company near Charlotte, we use drone technology to thoroughly assess your roof and provide honest recommendations. We never upsell - if repairs will work, that's what we tell you. Call ${SITE_CONFIG.phone} to schedule your free inspection.`,
+    },
+    {
+      question: `How do I find emergency roof repair near me in Charlotte?`,
+      answer: `Need emergency roof repair near you in Charlotte? Best Roofing Now provides 24/7 emergency roofing services across all of Charlotte and Mecklenburg County. We respond within 1-4 hours for active leaks, storm damage, and fallen trees. Call ${SITE_CONFIG.phone} any time - we're always available to protect your home.`,
+    },
+    {
+      question: `Which roofer near me in Charlotte has the best reviews?`,
+      answer: `Best Roofing Now has the best reviews of any roofer near Charlotte with a perfect 5.0-star Google rating from 62+ verified reviews. We're also BBB A+ accredited since 2021. Charlotte homeowners consistently praise our honest assessments, fair pricing, and quality workmanship. Check our reviews and call ${SITE_CONFIG.phone} for your free estimate.`,
+    },
+    {
+      question: `What is the best roofing company near me in Charlotte NC?`,
+      answer: `Best Roofing Now is rated the best roofing company near Charlotte NC. We've completed 500+ roofing projects with a 5.0 Google rating and BBB A+ accreditation. As a local, veteran-owned company, we treat every Charlotte home like our own. We offer free inspections, honest assessments, and competitive pricing. Call ${SITE_CONFIG.phone}.`,
     },
   ] : [];
 
   // "Near me" focused FAQs for local SEO (apply to all locations)
+  // Optimized for mobile voice search with conversational language
   const nearMeFAQs: FAQ[] = [
     {
       question: `Who is the best roofer near me in ${city}, ${state}?`,
       answer: `Best Roofing Now is the highest-rated roofing contractor near ${city} with a perfect 5.0 Google rating. As a local, veteran-owned company, we've installed 500+ roofs throughout ${county} County and surrounding areas. Call ${SITE_CONFIG.phone} for a free inspection and see why ${city} homeowners trust us for all their roofing needs.`,
     },
     {
-      question: `Where can I find a roofing company near me in ${city}?`,
-      answer: `Best Roofing Now serves ${city} and all of ${county} County from our Charlotte headquarters at 10130 Mallard Creek Rd. We're your local roofing contractor with same-day estimates and 24/7 emergency service. With BBB A+ accreditation and 5-star reviews, we're the trusted choice for ${city} homeowners looking for reliable roofers nearby.`,
+      question: `Where can I find a roofer near me in ${city}?`,
+      answer: `Looking for a roofer near you in ${city}? Best Roofing Now is your local roofing contractor located at 10130 Mallard Creek Rd in Charlotte. We serve all of ${city} and ${county} County with same-day estimates and 24/7 emergency service. As a BBB A+ accredited company with 5-star Google reviews, we're the trusted choice when you search for "roofers near me" in ${city}. Call ${SITE_CONFIG.phone} for immediate assistance.`,
+    },
+    {
+      question: `What roofing company near me offers free inspections?`,
+      answer: `Best Roofing Now offers completely free roof inspections for ${city} homeowners - no strings attached. As the top-rated roofing company near ${city}, we provide honest assessments using drone technology to document your roof's condition. We never pressure you into unnecessary work. If repairs will do, that's what we recommend. Call ${SITE_CONFIG.phone} to schedule your free inspection today.`,
+    },
+    {
+      question: `How do I find emergency roof repair near me?`,
+      answer: `Need emergency roof repair near ${city}? Best Roofing Now provides 24/7 emergency roofing services throughout ${county} County. We respond within 1-4 hours for active leaks, storm damage, and fallen trees. Just call ${SITE_CONFIG.phone} anytime - day or night. We'll secure your roof immediately and handle all insurance paperwork at no extra cost.`,
+    },
+    {
+      question: `Which roofer near me has the best reviews?`,
+      answer: `Best Roofing Now is the highest-reviewed roofing contractor serving ${city} with a perfect 5.0-star Google rating from 62+ reviews. Our BBB A+ accreditation and 500+ completed roofs speak to our quality. ${city} homeowners consistently praise our honest assessments, fair pricing, and professional workmanship. See our reviews and call ${SITE_CONFIG.phone} for your free estimate.`,
     },
     {
       question: `What roofing contractors near me serve ${city}, ${state}?`,
@@ -629,4 +655,51 @@ export function getServiceFAQs(serviceSlug: string): FAQ[] {
 // Get comparison FAQs (useful for FAQ pages and featured snippet optimization)
 export function getComparisonFAQs(): FAQ[] {
   return comparisonFAQs;
+}
+
+// Voice Search FAQ interface with keywords for schema markup
+export interface VoiceSearchFAQ {
+  question: string;
+  answer: string;
+  keywords: string[];
+}
+
+// Generate "near me" optimized voice search FAQs for any location
+// These FAQs use conversational language that matches how people search on mobile
+export function generateNearMeVoiceSearchFAQs(city: string, state: string, county: string): VoiceSearchFAQ[] {
+  const stateName = state === 'NC' ? 'North Carolina' : 'South Carolina';
+  const cityStateShort = `${city}, ${state}`;
+
+  return [
+    {
+      question: `Where can I find a roofer near me in ${city}?`,
+      answer: `Best Roofing Now is your local roofing contractor serving ${city} and all of ${county} County. We're veteran-owned with a perfect 5-star Google rating and 500+ roofs installed. Our Charlotte headquarters is at 10130 Mallard Creek Rd, and we offer same-day estimates and 24/7 emergency service for ${city} homeowners. Call (704) 605-6047.`,
+      keywords: [`roofer near me ${city}`, `roofers near me ${cityStateShort}`, `local roofer ${city}`, `${city} roofers nearby`],
+    },
+    {
+      question: `What roofing company near me offers free inspections in ${city}?`,
+      answer: `Best Roofing Now offers 100% free, no-obligation roof inspections for ${city} homeowners. We use drone technology to thoroughly assess your roof and provide honest recommendations. We never upsell - if repairs will work, that's what we tell you. As a BBB A+ accredited roofing company serving ${county} County, we're the trusted choice. Call (704) 605-6047.`,
+      keywords: [`free roof inspection ${city}`, `roofing company near me ${city} free estimate`, `${city} roof inspection free`],
+    },
+    {
+      question: `How do I find emergency roof repair near me in ${city}?`,
+      answer: `Need emergency roof repair in ${city}? Best Roofing Now provides 24/7 emergency roofing services throughout ${county} County. We respond within 1-4 hours for active leaks, storm damage, and fallen trees. Our team will secure your roof immediately and handle all insurance paperwork at no extra charge. Call (704) 605-6047 anytime.`,
+      keywords: [`emergency roof repair near me ${city}`, `24/7 roofer ${cityStateShort}`, `urgent roof repair ${city}`],
+    },
+    {
+      question: `Which roofer near me in ${city} has the best reviews?`,
+      answer: `Best Roofing Now is the highest-reviewed roofing contractor serving ${city} with a perfect 5.0-star Google rating from 62+ verified reviews. We're BBB A+ accredited and have completed 500+ roofing projects across ${county} County. ${city} homeowners consistently praise our honest assessments, fair pricing, and quality workmanship. Call (704) 605-6047.`,
+      keywords: [`best reviewed roofer ${city}`, `top rated roofer near me ${cityStateShort}`, `${city} roofer best reviews`],
+    },
+    {
+      question: `Who is the best roofing contractor near me in ${city}?`,
+      answer: `Best Roofing Now is rated the best roofing contractor near ${city}. We're veteran-owned, BBB A+ accredited, and have a perfect 5-star Google rating. We've installed 500+ roofs and serve all of ${county} County with roof replacement, repairs, storm damage restoration, and free inspections. Call (704) 605-6047 for your free estimate.`,
+      keywords: [`best roofing contractor near me ${city}`, `best roofer ${cityStateShort}`, `top roofing company ${city}`],
+    },
+    {
+      question: `What roofer near me in ${city} works with insurance?`,
+      answer: `Best Roofing Now specializes in insurance claims for ${city} homeowners. We document all damage with drone inspections, meet with insurance adjusters, and handle all paperwork at no extra charge. We've helped hundreds of ${county} County families with storm damage claims. Call (704) 605-6047 for assistance with your insurance claim.`,
+      keywords: [`${city} roofing insurance claims`, `roofer insurance ${cityStateShort}`, `storm damage roofer ${city}`],
+    },
+  ];
 }

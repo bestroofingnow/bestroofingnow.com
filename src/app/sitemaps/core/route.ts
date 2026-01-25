@@ -20,6 +20,25 @@ export async function GET() {
     { url: `${BASE_URL}/solar-services`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/metal-roofing-services`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/commercial-roofing-services`, changefreq: 'weekly', priority: '0.9' },
+    // SEO landing pages targeting high-value keywords
+    { url: `${BASE_URL}/roofing-contractor-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-replacement-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-charlotte`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/metal-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-inspection-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/emergency`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-leak-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/gutter-installation-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    // Charlotte neighborhood pages
+    { url: `${BASE_URL}/neighborhoods/ballantyne`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/southpark`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/myers-park`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/dilworth`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/plaza-midwood`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/noda`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/uptown`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/university-city`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/neighborhoods/south-end`, changefreq: 'monthly', priority: '0.8' },
   ];
 
   const lastmod = new Date().toISOString();

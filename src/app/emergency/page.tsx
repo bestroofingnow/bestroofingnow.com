@@ -1,25 +1,33 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Phone, AlertTriangle, Clock, Shield, CheckCircle, Zap } from 'lucide-react';
+import { Phone, AlertTriangle, Clock, Shield, CheckCircle, Zap, MapPin, DollarSign, HelpCircle } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
-import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Roof Repair Charlotte NC | Best Roofing Now',
-  description: 'Emergency roof repair available 24/7 in Charlotte NC. Storm damage, active leaks, fallen trees - we respond fast to protect your home. Call now!',
+  title: '24/7 Emergency Roof Repair Charlotte NC | Fast Response | Best Roofing Now',
+  description: 'Need emergency roof repair in Charlotte NC? Our 24/7 emergency roofers respond in 1-2 hours. Storm damage, active leaks, fallen trees - call (704) 605-6047 now!',
   keywords: [
-    'emergency roof repair Charlotte',
-    '24/7 roofing',
-    'storm damage repair',
+    'emergency roof repair charlotte nc',
+    '24/7 emergency roof repair charlotte nc',
+    '24 hour roof repair charlotte',
     'emergency roofer near me',
-    'urgent roof leak repair',
+    'urgent roof repair charlotte nc',
+    'emergency roof leak repair charlotte',
+    'storm damage roof repair charlotte nc',
+    'roof emergency charlotte',
+    'after hours roof repair charlotte',
+    'weekend roof repair charlotte nc',
   ],
   openGraph: {
-    title: '24/7 Emergency Roof Repair | Best Roofing Now Charlotte',
-    description: 'Fast response emergency roofing services in Charlotte NC.',
+    title: '24/7 Emergency Roof Repair Charlotte NC | 1-2 Hour Response',
+    description: 'Emergency roof repair available 24/7 in Charlotte NC. Storm damage, active leaks, fallen trees - we respond in 1-2 hours. Call now!',
     url: `${SITE_CONFIG.url}/emergency`,
     type: 'website',
+  },
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/emergency`,
   },
 };
 
@@ -56,6 +64,154 @@ const emergencyTypes = [
   },
 ];
 
+// Charlotte neighborhood emergency response times
+const neighborhoodResponseTimes = [
+  { name: 'Uptown Charlotte', responseTime: '30-45 min', distance: '5 miles' },
+  { name: 'South End', responseTime: '35-50 min', distance: '6 miles' },
+  { name: 'Myers Park', responseTime: '40-55 min', distance: '8 miles' },
+  { name: 'Dilworth', responseTime: '40-55 min', distance: '7 miles' },
+  { name: 'Plaza Midwood', responseTime: '35-50 min', distance: '6 miles' },
+  { name: 'NoDa', responseTime: '30-45 min', distance: '4 miles' },
+  { name: 'University City', responseTime: '15-30 min', distance: '2 miles' },
+  { name: 'Ballantyne', responseTime: '45-60 min', distance: '12 miles' },
+  { name: 'Matthews', responseTime: '40-55 min', distance: '10 miles' },
+  { name: 'Huntersville', responseTime: '25-40 min', distance: '8 miles' },
+  { name: 'Lake Norman', responseTime: '35-50 min', distance: '15 miles' },
+  { name: 'Concord', responseTime: '30-45 min', distance: '12 miles' },
+];
+
+// Emergency pricing data for transparency
+const emergencyPricing = [
+  { service: 'Emergency Roof Tarping', priceRange: '$300 - $800', description: 'Temporary waterproof covering to prevent further water damage' },
+  { service: 'Emergency Leak Repair', priceRange: '$200 - $600', description: 'Immediate patch repair to stop active leaks' },
+  { service: 'Storm Damage Assessment', priceRange: 'FREE', description: 'Comprehensive damage inspection and documentation' },
+  { service: 'Debris Removal', priceRange: '$150 - $500', description: 'Removal of tree limbs, branches, and storm debris' },
+  { service: 'Emergency Board-Up', priceRange: '$200 - $400', description: 'Secure exposed areas from weather and intruders' },
+  { service: 'Temporary Shingle Repair', priceRange: '$250 - $700', description: 'Replace missing or damaged shingles immediately' },
+];
+
+// Charlotte neighborhoods we serve
+const charlotteNeighborhoods = [
+  'Uptown Charlotte', 'South End', 'Myers Park', 'Dilworth', 'Plaza Midwood',
+  'NoDa', 'Elizabeth', 'Cherry', 'Sedgefield', 'Wilmore', 'Cotswold',
+  'Eastover', 'Providence Park', 'Foxcroft', 'SouthPark', 'Barclay Downs',
+  'Quail Hollow', 'Carmel', 'Stonehaven', 'Ballantyne', 'Piper Glen',
+  'University City', 'Prosperity Village', 'Highland Creek', 'Mallard Creek',
+  'Derita', 'Hidden Valley', 'Newell', 'Oakdale', 'Enderly Park',
+  'Wesley Heights', 'Seversville', 'Optimist Park', 'Belmont', 'Villa Heights',
+  'Commonwealth', 'Chantilly', 'Shannon Park', 'Montclaire', 'Starmount',
+];
+
+// Surrounding cities we serve for emergency repairs
+const surroundingCities = [
+  'Huntersville', 'Cornelius', 'Davidson', 'Mooresville', 'Matthews',
+  'Mint Hill', 'Indian Trail', 'Pineville', 'Fort Mill', 'Rock Hill',
+  'Gastonia', 'Concord', 'Kannapolis', 'Harrisburg', 'Mount Holly',
+];
+
+// FAQ data optimized for featured snippets
+const emergencyFaqs = [
+  {
+    question: 'How quickly can you respond to a roof emergency in Charlotte NC?',
+    answer: 'Our emergency roof repair team typically responds within 1-2 hours to Charlotte NC and surrounding areas. We have crews stationed throughout the metro area, including University City, South End, and Ballantyne, allowing us to reach most Charlotte neighborhoods quickly. For severe storm events affecting multiple homes, response times may vary, but we prioritize active leaks and safety hazards.',
+  },
+  {
+    question: 'What is the cost of emergency roof repair in Charlotte?',
+    answer: 'Emergency roof repair costs in Charlotte typically range from $200 to $800 depending on the service needed. Emergency tarping costs $300-$800, leak repairs run $200-$600, and debris removal is $150-$500. We provide free storm damage assessments and transparent pricing before any work begins. Many emergency repairs are covered by homeowners insurance.',
+  },
+  {
+    question: 'Do you offer 24-hour roof repair services in Charlotte NC?',
+    answer: 'Yes, Best Roofing Now offers 24/7 emergency roof repair services throughout Charlotte NC and the surrounding metro area. Our emergency hotline at (704) 605-6047 is staffed around the clock, including nights, weekends, and holidays. Whether it is 2 AM after a storm or Sunday afternoon, our team is ready to respond.',
+  },
+  {
+    question: 'What should I do while waiting for emergency roof repair?',
+    answer: 'While waiting for emergency roof repair, prioritize safety first - do not climb on the roof. Move valuables away from leak areas, use buckets and towels to contain water, and document all damage with photos and videos for insurance. If water is near electrical fixtures, turn off power to affected areas. Do not attempt DIY repairs that could make the situation worse.',
+  },
+  {
+    question: 'Will my homeowners insurance cover emergency roof repairs?',
+    answer: 'Most homeowners insurance policies cover emergency roof repairs caused by sudden events like storms, fallen trees, hail, and wind damage. Coverage typically includes emergency tarping, temporary repairs, and permanent restoration. Best Roofing Now works directly with insurance companies, documents all damage thoroughly, and helps homeowners navigate the claims process for fair settlements.',
+  },
+  {
+    question: 'What areas near Charlotte do you serve for emergency roof repair?',
+    answer: 'We provide 24/7 emergency roof repair services throughout the Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Indian Trail, Pineville, Concord, Kannapolis, and Gastonia. We also serve Fort Mill and Rock Hill in South Carolina. Our response radius covers approximately 50 miles from our Charlotte headquarters.',
+  },
+];
+
+// EmergencyService Schema component
+function EmergencyServiceSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'EmergencyService',
+    '@id': `${SITE_CONFIG.url}/emergency/#emergency-service`,
+    name: '24/7 Emergency Roof Repair Charlotte NC',
+    alternateName: ['Emergency Roofer Charlotte', '24 Hour Roof Repair Charlotte NC'],
+    description: 'Professional 24/7 emergency roof repair services in Charlotte NC. Fast response for storm damage, active leaks, fallen trees, and all roof emergencies. Licensed and insured.',
+    url: `${SITE_CONFIG.url}/emergency`,
+    telephone: SITE_CONFIG.phone,
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: `${SITE_CONFIG.url}/emergency`,
+      servicePhone: SITE_CONFIG.phone,
+      availableLanguage: ['English', 'Spanish'],
+    },
+    provider: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      telephone: SITE_CONFIG.phone,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: SITE_CONFIG.address.street,
+        addressLocality: SITE_CONFIG.address.city,
+        addressRegion: SITE_CONFIG.address.state,
+        postalCode: SITE_CONFIG.address.zip,
+        addressCountry: 'US',
+      },
+    },
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Charlotte',
+        containedInPlace: { '@type': 'State', name: 'North Carolina' },
+      },
+      ...surroundingCities.map(city => ({
+        '@type': 'City',
+        name: city,
+      })),
+    ],
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+    offers: emergencyPricing.map(item => ({
+      '@type': 'Offer',
+      name: item.service,
+      description: item.description,
+      priceRange: item.priceRange,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+    })),
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: SITE_CONFIG.googleRating,
+      reviewCount: SITE_CONFIG.googleReviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    serviceType: 'Emergency Roof Repair',
+    category: ['Roofing', 'Emergency Services', 'Storm Damage Repair'],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function EmergencyPage() {
   return (
     <>
@@ -65,6 +221,8 @@ export default function EmergencyPage() {
           { name: 'Emergency Services', url: `${SITE_CONFIG.url}/emergency` },
         ]}
       />
+      <EmergencyServiceSchema />
+      <FAQSchema faqs={emergencyFaqs} />
       {/* Emergency Hero */}
       <section className="bg-red-600 text-white py-16 md:py-20">
         <div className="container">
@@ -80,7 +238,7 @@ export default function EmergencyPage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Emergency Roof Repair
+              24/7 Emergency Roof Repair Charlotte NC
             </h1>
             <p className="text-xl text-white/90 mb-8">
               Roof emergencies don&apos;t wait for business hours. Our emergency response
@@ -265,6 +423,151 @@ export default function EmergencyPage() {
             <Link href="/guides/insurance-claim-guide" className="btn btn-outline">
               Read Our Insurance Claim Guide
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency Pricing Transparency */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <DollarSign className="w-8 h-8 text-primary" aria-hidden="true" />
+              <h2 className="text-3xl font-bold text-primary">
+                Emergency Roof Repair Pricing Charlotte NC
+              </h2>
+            </div>
+            <p className="text-gray max-w-2xl mx-auto">
+              Transparent pricing with no hidden fees. We provide upfront estimates before any work begins.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {emergencyPricing.map((item, idx) => (
+              <div key={idx} className="bg-white rounded-xl shadow-md p-5 border border-gray-100">
+                <h3 className="font-bold text-primary mb-1">{item.service}</h3>
+                <div className="text-2xl font-bold text-red-600 mb-2">{item.priceRange}</div>
+                <p className="text-gray text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-gray text-sm mt-6">
+            * Prices are estimates. Final pricing depends on roof size, damage extent, and materials needed.
+            Free estimates provided before work begins.
+          </p>
+        </div>
+      </section>
+
+      {/* Neighborhood Response Times */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Clock className="w-8 h-8 text-primary" aria-hidden="true" />
+              <h2 className="text-3xl font-bold text-primary">
+                Emergency Response Times by Charlotte Neighborhood
+              </h2>
+            </div>
+            <p className="text-gray max-w-2xl mx-auto">
+              Based from our University City headquarters, we serve all Charlotte neighborhoods with fast emergency response.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {neighborhoodResponseTimes.map((area, idx) => (
+              <div key={idx} className="bg-white rounded-lg p-4 text-center shadow-sm border border-gray-100">
+                <h3 className="font-bold text-primary text-sm mb-1">{area.name}</h3>
+                <div className="text-lg font-bold text-red-600">{area.responseTime}</div>
+                <p className="text-gray text-xs">{area.distance} from HQ</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-gray text-sm mt-6">
+            Response times may vary during severe weather events affecting multiple properties.
+          </p>
+        </div>
+      </section>
+
+      {/* Areas We Serve */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <MapPin className="w-8 h-8 text-primary" aria-hidden="true" />
+              <h2 className="text-3xl font-bold text-primary">
+                24/7 Emergency Roof Repair Areas We Serve
+              </h2>
+            </div>
+            <p className="text-gray max-w-2xl mx-auto">
+              We provide emergency roofing services throughout Charlotte and the surrounding metro area.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-8">
+              <h3 className="font-bold text-primary text-lg mb-4 text-center">Charlotte Neighborhoods</h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                {charlotteNeighborhoods.map((neighborhood, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-light text-primary text-sm px-3 py-1 rounded-full border border-gray-200"
+                  >
+                    {neighborhood}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-primary text-lg mb-4 text-center">Surrounding Cities</h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                {surroundingCities.map((city, idx) => (
+                  <Link
+                    key={idx}
+                    href={`/locations/${city.toLowerCase().replace(/\s+/g, '-')}-nc`}
+                    className="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full border border-primary/20 hover:bg-primary/20 transition-colors"
+                  >
+                    {city}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency FAQ Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <HelpCircle className="w-8 h-8 text-primary" aria-hidden="true" />
+              <h2 className="text-3xl font-bold text-primary">
+                Emergency Roof Repair FAQs - Charlotte NC
+              </h2>
+            </div>
+            <p className="text-gray max-w-2xl mx-auto">
+              Common questions about our 24/7 emergency roofing services in Charlotte.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {emergencyFaqs.map((faq, idx) => (
+              <details
+                key={idx}
+                className="bg-white rounded-xl shadow-md border border-gray-100 group"
+              >
+                <summary className="p-5 cursor-pointer font-bold text-primary hover:text-primary/80 list-none flex items-start justify-between gap-4">
+                  <span>{faq.question}</span>
+                  <span className="text-2xl font-light text-gray group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div className="px-5 pb-5 text-gray">
+                  <p>{faq.answer}</p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

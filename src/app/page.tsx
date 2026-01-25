@@ -15,6 +15,11 @@ import {
   WebPageSchema,
   HeroImageSchema,
   GallerySchema,
+  ServiceAreaMapSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
 } from '@/components/seo/SchemaMarkup';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
@@ -84,8 +89,33 @@ export default function HomePage() {
       />
       {/* AEO Schemas for Voice Search and AI Assistants */}
       <HomePageAEOSchemas />
+      {/* Service Area Map Schema for AI readability */}
+      <ServiceAreaMapSchema />
       {/* Speakable Content for Voice Assistants */}
       <SpeakableContent />
+      {/* Enhanced AI Search Optimization for Google AI Overview and Voice Assistants */}
+      <AISearchOptimizationBundle
+        pageUrl={SITE_CONFIG.url}
+        pageName="Best Roofing Now | Charlotte's Top-Rated Roofing Company"
+        includeVoiceActions={true}
+        city="Charlotte"
+      />
+      {/* Voice Search Action Schema for potential actions */}
+      <VoiceSearchActionSchema />
+      {/* Featured Snippet List Schema for "signs you need a new roof" */}
+      <FeaturedSnippetListAnswerSchema
+        question="How do I know if I need a new roof?"
+        directAnswer="Look for these 6 warning signs that indicate you need a new roof in Charlotte NC."
+        items={[
+          'Roof age exceeds 20-25 years',
+          'Missing, curling, or cracked shingles',
+          'Granules accumulating in gutters',
+          'Daylight visible through roof boards',
+          'Multiple or recurring leaks',
+          'Sagging or soft spots on roof',
+        ]}
+        pageUrl={SITE_CONFIG.url}
+      />
       <Hero
         title="Best Roofing Now - Charlotte's Top-Rated Roofing Company"
         subtitle="Veteran-owned roofing contractor with 500+ roofs installed. Full-service roofing including metal roofing, flat roof repair, gutter installation &amp; cleaning, siding, skylights, and chimney services. Storm damage restoration and insurance claim assistance. 5-star Google rating, BBB A+ accredited."

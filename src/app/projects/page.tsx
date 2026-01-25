@@ -6,6 +6,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectMap from '@/components/projects/ProjectMap';
+import { BreadcrumbSchema, CollectionPageSchema, ServiceAreaMapSchema, AISearchOptimizationBundle, FeaturedSnippetListAnswerSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: `Our Roofing Projects | ${SITE_CONFIG.name}`,
@@ -90,6 +91,58 @@ export default async function ProjectsPage() {
 
   return (
     <>
+      {/* Schema Markup for AI readability */}
+      <BreadcrumbSchema items={breadcrumbs} />
+      <CollectionPageSchema
+        name="Roofing Projects Gallery"
+        description={`Browse ${total}+ completed roofing projects by ${SITE_CONFIG.name} across Charlotte, Lake Norman, and surrounding areas. View photos, locations, and project details.`}
+        url={`${SITE_CONFIG.url}/projects`}
+        items={projects.slice(0, 20).map((p: any) => ({
+          name: `Roofing Project in ${p.city}, ${p.state}`,
+          url: `${SITE_CONFIG.url}/projects/${p.pmiId}`,
+          description: p.product ? `${p.product} installation` : 'Professional roofing project',
+        }))}
+      />
+      <ServiceAreaMapSchema />
+
+      {/* AI Search Optimization for Google AI Overview */}
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/projects`}
+        pageName="Roofing Projects Gallery | Best Roofing Now Charlotte"
+        faqs={[
+          {
+            question: 'How many roofing projects has Best Roofing Now completed in Charlotte?',
+            answer: `Best Roofing Now has completed over ${total}+ verified roofing projects across the Charlotte metro area, Lake Norman, and surrounding communities. Our project gallery showcases real installations with photos from satisfied homeowners.`,
+            speakableAnswer: `Best Roofing Now has completed over ${total}+ roofing projects in the Charlotte area with photos from real installations.`,
+          },
+          {
+            question: 'Can I see photos of roofing projects near me in Charlotte?',
+            answer: 'Yes! Our interactive project map allows you to browse completed roofing projects by city. Simply use the city filter to see projects near you, complete with photos and project details.',
+            speakableAnswer: 'Yes! Use our interactive project map to browse completed roofing projects by city with photos and project details.',
+          },
+          {
+            question: 'What roofing materials does Best Roofing Now install?',
+            answer: 'Best Roofing Now installs GAF Timberline HDZ shingles, CertainTeed Landmark series, Owens Corning Duration, metal roofing, and more. Our project gallery shows examples of each material type installed in Charlotte homes.',
+            speakableAnswer: 'We install GAF, CertainTeed, Owens Corning shingles, and metal roofing. View examples in our project gallery.',
+          },
+        ]}
+        city="Charlotte"
+      />
+
+      {/* Featured Snippet Schema for "roofing materials" list */}
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing materials does Best Roofing Now install in Charlotte?"
+        directAnswer="Best Roofing Now installs premium roofing materials from top manufacturers in Charlotte NC."
+        items={[
+          'GAF Timberline HDZ - High wind resistance, industry-leading warranty',
+          'CertainTeed Landmark - Premium architectural shingles with SureNail technology',
+          'Owens Corning Duration - Weather protection and beauty',
+          'Standing Seam Metal Roofing - 40-70 year lifespan',
+          'TPO and EPDM for commercial roofs',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/projects`}
+      />
+
       {/* Breadcrumbs */}
       <section className="bg-gray-50 py-4 border-b">
         <div className="container">

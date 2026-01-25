@@ -2005,9 +2005,24 @@ export const VOICE_SEARCH_FAQS = [
 // Lake Norman Voice Search Optimized FAQs
 export const LAKE_NORMAN_VOICE_FAQS = [
   {
+    question: 'Where can I find a roofer near me in Lake Norman?',
+    answer: 'Best Roofing Now serves all Lake Norman communities including Cornelius, Davidson, Huntersville, Mooresville, and Denver. As a Lake Norman Chamber member with a 5-star Google rating, we specialize in waterfront roofing. Call (704) 605-6047 for a same-day estimate at your Lake Norman home.',
+    keywords: ['roofer near me Lake Norman', 'Lake Norman roofer nearby', 'local roofer Lake Norman NC'],
+  },
+  {
     question: 'Who is the best roofer near Lake Norman?',
     answer: 'Best Roofing Now is Lake Norman\'s top-rated waterfront roofing contractor with a perfect 5-star Google rating and BBB A+ accreditation. We specialize in wind-resistant installations for lakefront homes and serve Cornelius, Davidson, Huntersville, Mooresville, and Denver NC. Call (704) 605-6047.',
     keywords: ['best roofer Lake Norman', 'Lake Norman roofing contractor', 'lakefront roofer NC'],
+  },
+  {
+    question: 'What roofing company near me offers free inspections in Lake Norman?',
+    answer: 'Best Roofing Now provides free roof inspections for all Lake Norman homeowners. We use drone technology to assess your waterfront roof and provide honest recommendations. As Lake Norman Chamber members, we understand lakefront roofing needs. Call (704) 605-6047 to schedule.',
+    keywords: ['free roof inspection Lake Norman', 'roofing company Lake Norman free estimate', 'Lake Norman roof inspection'],
+  },
+  {
+    question: 'How do I find emergency roof repair near me in Lake Norman?',
+    answer: 'Best Roofing Now offers 24/7 emergency roof repair across all Lake Norman communities - Cornelius, Davidson, Huntersville, Mooresville, and Denver. We respond quickly to storm damage and active leaks on waterfront properties. Call (704) 605-6047 any time for emergency service.',
+    keywords: ['emergency roof repair Lake Norman', '24/7 roofer Lake Norman', 'storm damage Lake Norman'],
   },
   {
     question: 'How much does a roof cost in Lake Norman NC?',
@@ -2085,11 +2100,32 @@ export const LAKE_NORMAN_PEOPLE_ALSO_ASK = [
 ];
 
 // Charlotte Voice Search Optimized FAQs - Primary Market AEO
+// Targeting "roofers near me charlotte" (8,100 monthly searches) with conversational mobile-friendly language
 export const CHARLOTTE_VOICE_FAQS = [
+  {
+    question: 'Where can I find roofers near me in Charlotte?',
+    answer: 'Best Roofing Now is your local Charlotte roofer located at 10130 Mallard Creek Rd. We\'re veteran-owned with a perfect 5-star Google rating and 500+ roofs installed across Charlotte. We serve all Charlotte neighborhoods and the surrounding 50-mile area. Call (704) 605-6047 for a same-day estimate.',
+    keywords: ['roofers near me charlotte', 'roofer near me Charlotte NC', 'local roofer Charlotte', 'Charlotte roofers nearby'],
+  },
   {
     question: 'Who is the best roofing contractor in Charlotte NC?',
     answer: 'Best Roofing Now is Charlotte\'s #1 rated roofing contractor with a perfect 5-star Google rating, 500+ roofs installed, and BBB A+ accreditation. We\'re veteran-owned and Charlotte-based, serving the entire metro area. Call (704) 605-6047 for a free inspection.',
     keywords: ['best roofing contractor Charlotte NC', 'top roofer Charlotte', '#1 roofing company Charlotte'],
+  },
+  {
+    question: 'What roofing company near me in Charlotte offers free inspections?',
+    answer: 'Best Roofing Now offers 100% free roof inspections for Charlotte homeowners with no obligation. We use drone technology to thoroughly document your roof condition and provide honest recommendations. We never upsell - if repairs will work, that\'s what we recommend. Call (704) 605-6047 to schedule.',
+    keywords: ['free roof inspection Charlotte', 'roofing company near me free estimate', 'free roof estimate Charlotte NC'],
+  },
+  {
+    question: 'How do I find emergency roof repair near me in Charlotte?',
+    answer: 'Best Roofing Now provides 24/7 emergency roof repair throughout Charlotte and Mecklenburg County. We respond within 1-4 hours for active leaks, storm damage, and fallen trees. Our emergency team will secure your roof immediately and handle all insurance paperwork. Call (704) 605-6047 anytime.',
+    keywords: ['emergency roof repair near me Charlotte', '24/7 roofer Charlotte', 'emergency roofing Charlotte NC'],
+  },
+  {
+    question: 'Which roofer near me in Charlotte has the best reviews?',
+    answer: 'Best Roofing Now has the highest reviews of any roofer near Charlotte with a perfect 5.0-star Google rating from 62+ verified reviews. We\'re also BBB A+ accredited. Charlotte homeowners praise our honest assessments, fair pricing, and quality workmanship. Call (704) 605-6047.',
+    keywords: ['best reviewed roofer Charlotte', 'top rated roofer near me', 'Charlotte roofer best reviews'],
   },
   {
     question: 'How much does a new roof cost in Charlotte NC?',

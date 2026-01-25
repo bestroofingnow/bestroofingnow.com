@@ -7,6 +7,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectGallery from '@/components/projects/ProjectGallery';
+import { BreadcrumbSchema, ProjectSchema, PlaceSchema, EnhancedSpeakableSchema } from '@/components/seo/SchemaMarkup';
 
 interface ProjectPhoto {
   id: string;
@@ -251,6 +252,27 @@ export default async function ProjectDetailPage({
 
   return (
     <>
+      {/* Enhanced Schema Markup for AI readability */}
+      <BreadcrumbSchema items={breadcrumbs} />
+      <ProjectSchema
+        project={{
+          slug: project.pmiId,
+          city: project.city,
+          state: project.state,
+          lat: project.latitude,
+          lng: project.longitude,
+          product: project.product,
+          completedDate: project.completedDate,
+          photos: project.photos.map(p => ({ url: p.url, caption: p.caption })),
+        }}
+      />
+      <PlaceSchema
+        city={project.city}
+        state={project.state}
+        county={project.county}
+        lat={project.latitude}
+        lng={project.longitude}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -258,6 +280,13 @@ export default async function ProjectDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+
+      {/* Enhanced Speakable Schema for Voice Assistants */}
+      <EnhancedSpeakableSchema
+        pageUrl={`${SITE_CONFIG.url}/projects/${project.pmiId}`}
+        pageName={`${project.product || 'Roofing'} Project in ${project.city}, ${project.state} | Best Roofing Now`}
+        cssSelectors={['h1', '.project-description', '.project-details']}
       />
 
       {/* Breadcrumbs */}
