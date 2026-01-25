@@ -303,7 +303,8 @@ async function runDailyCheck() {
     console.log('\n🚨 CRITICAL - KEYWORDS NOT RANKING:');
     results.priorities.slice(0, 10).forEach((p, i) => {
       console.log(`   ${i + 1}. "${p.keyword}"`);
-      console.log(`      Top competitor: ${p.topCompetitors[0]?.domain || 'N/A'}`);
+      const topCompetitor = p.topCompetitors && p.topCompetitors[0] ? p.topCompetitors[0].domain : 'N/A';
+      console.log(`      Top competitor: ${topCompetitor}`);
     });
   }
 
