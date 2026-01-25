@@ -38,8 +38,8 @@ export async function GET() {
       }
 
       // Add city-based project pages
-      const cities = [...new Set(data.projects.map((p: { city: string }) => p.city))];
-      cities.forEach((city: string) => {
+      const cities = [...new Set(data.projects.map((p: { city: string }) => p.city))] as string[];
+      cities.forEach((city) => {
         const slug = city.toLowerCase().replace(/\s+/g, '-');
         pages.push({
           url: `${BASE_URL}/projects/city/${slug}`,
