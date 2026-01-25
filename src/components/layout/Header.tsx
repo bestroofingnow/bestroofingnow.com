@@ -83,14 +83,14 @@ export function Header() {
       >
         <div className="container">
           <div className="flex items-center justify-between h-28">
-            {/* Logo - eager loading but lower priority than hero image for better LCP */}
-            <Link href="/" className="flex-shrink-0 h-24 w-[216px] -mt-2">
+            {/* Logo - aligned with navigation */}
+            <Link href="/" className="flex-shrink-0 flex items-center">
               <Image
                 src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
                 alt={SITE_CONFIG.name}
-                width={216}
-                height={96}
-                className="h-24 w-auto"
+                width={180}
+                height={80}
+                className="h-20 w-auto"
                 loading="eager"
                 fetchPriority="low"
                 placeholder="blur"
