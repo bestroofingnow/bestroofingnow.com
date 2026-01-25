@@ -22,6 +22,8 @@ import {
   FeaturedSnippetListAnswerSchema,
 } from '@/components/seo/SchemaMarkup';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
+import { JamesTip, CommunityInvolvementSection } from '@/components/sections/PersonalTouch';
+import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
@@ -294,6 +296,18 @@ export default function HomePage() {
 
       <Testimonials />
 
+      {/* Meet the Turner Family - Personal Touch */}
+      <MeetTheFamily variant="compact" />
+
+      {/* Roofing Tip from James */}
+      <section className="py-8 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <JamesTip tipId="contractor-advice" />
+          </div>
+        </div>
+      </section>
+
       {/* Trust Badges Section with Directory Citations */}
       <section className="py-8 bg-white border-t border-gray-100">
         <div className="container">
@@ -308,6 +322,10 @@ export default function HomePage() {
       </section>
 
       <ServiceAreas />
+
+      {/* Community Involvement */}
+      <CommunityInvolvementSection count={4} />
+
       <FAQ />
       <CTASection
         title="Ready to Protect Your Home?"

@@ -48,13 +48,13 @@ export const metadata: Metadata = {
     'wind damage shingles charlotte nc',
   ],
   alternates: {
-    canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte`,
+    canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Charlotte NC | Insurance Claim Experts',
     description:
       'Charlotte storm damage roof repair specialists. Expert hail, wind, and tree damage repair. We handle insurance claims. 24/7 emergency response.',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte`,
+    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,
     type: 'website',
     images: [
       {
@@ -123,7 +123,7 @@ const charlotteStormStats = {
 
 // Storm damage service object for schema
 const stormDamageService = {
-  slug: 'storm-damage-roof-repair-charlotte',
+  slug: 'storm-damage-roof-repair-charlotte-nc',
   title: 'Storm Damage Roof Repair Charlotte NC',
   description:
     'Expert storm damage roof repair in Charlotte NC. Hail damage, wind damage, and fallen tree repair. Insurance claim specialists with 24/7 emergency response.',
@@ -158,7 +158,7 @@ const projectShowcase = [
 ];
 
 export default function StormDamageRoofRepairCharlottePage() {
-  const pageUrl = `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte`;
+  const pageUrl = `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`;
 
   return (
     <>
@@ -189,7 +189,7 @@ export default function StormDamageRoofRepairCharlottePage() {
             items={[
               {
                 name: 'Storm Damage Roof Repair Charlotte',
-                href: '/storm-damage-roof-repair-charlotte',
+                href: '/storm-damage-roof-repair-charlotte-nc',
               },
             ]}
           />

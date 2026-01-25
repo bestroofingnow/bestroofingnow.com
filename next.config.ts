@@ -256,6 +256,11 @@ const nextConfig: NextConfig = {
       { source: '/charlotte-roofing-contractors', destination: '/locations/charlotte-nc', permanent: true },
 
       // ===========================================
+      // SEO URL CANONICALIZATION REDIRECTS
+      // ===========================================
+      { source: '/storm-damage-roof-repair-charlotte', destination: '/storm-damage-roof-repair-charlotte-nc', permanent: true },
+
+      // ===========================================
       // MISC PAGE REDIRECTS
       // ===========================================
       { source: '/frequently-asked-questions', destination: '/faq', permanent: true },

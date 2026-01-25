@@ -54,3 +54,141 @@ export const TURNER_FAMILY_INFO = {
       'Shirley moved to Charlotte with Fred in 2022 and ensures every customer feels heard, valued, and cared for throughout their roofing project.',
   },
 };
+
+// Roofing tips and advice from James - these can be displayed throughout the site
+export const JAMES_ROOFING_TIPS = [
+  {
+    id: 'spring-inspection',
+    title: 'Spring Inspection Tip',
+    tip: "After winter, I always tell folks to get up on a ladder and check their gutters. Nine times out of ten, you'll find debris that's been sitting there causing water backup. A $50 gutter cleaning can save you a $5,000 repair.",
+    season: 'spring',
+  },
+  {
+    id: 'storm-prep',
+    title: 'Before Storm Season',
+    tip: "Charlotte gets hit with some nasty storms from April through September. Before the season kicks off, trim any branches within 10 feet of your roof. I've seen too many beautiful roofs destroyed by trees that should've been trimmed months ago.",
+    season: 'spring',
+  },
+  {
+    id: 'attic-check',
+    title: 'The Attic Test',
+    tip: "Want to know if your roof's in trouble? On a rainy day, go up to your attic with a flashlight. Look for any water stains or daylight coming through. If you see either, call someone before that small leak becomes a big problem.",
+    season: 'any',
+  },
+  {
+    id: 'summer-heat',
+    title: 'Summer Heat Advice',
+    tip: "Charlotte summers are brutal on roofs - we regularly hit 95+ degrees. That heat makes shingles expand and contract daily. If your shingles are curling at the edges or losing granules, they're telling you they've had enough.",
+    season: 'summer',
+  },
+  {
+    id: 'insurance-tip',
+    title: 'Insurance Claim Advice',
+    tip: "If you've had storm damage, don't wait to file your claim. Insurance companies have time limits, and the longer you wait, the harder it is to prove the damage was from that specific storm. Document everything with photos the same day if you can.",
+    season: 'any',
+  },
+  {
+    id: 'contractor-advice',
+    title: 'Choosing a Roofer',
+    tip: "Here's my honest advice: never hire a roofer who won't give you a physical address and let you check their reviews. Storm chasers knock on doors after every hail storm and disappear after cashing your insurance check. Local companies like us - we're not going anywhere.",
+    season: 'any',
+  },
+  {
+    id: 'winter-ice',
+    title: 'Ice Dam Prevention',
+    tip: "We don't get as much ice as up north, but when we do, it causes problems. Ice dams form when heat escapes through your attic and melts snow that refreezes at the edge. Good attic insulation prevents most ice dam issues.",
+    season: 'winter',
+  },
+  {
+    id: 'ventilation',
+    title: 'Attic Ventilation',
+    tip: "A lot of folks don't realize their attic needs to breathe. Without proper ventilation, heat builds up in summer and moisture builds up in winter. Both destroy shingles from the inside out. I check ventilation on every inspection - it's that important.",
+    season: 'any',
+  },
+];
+
+// Community involvement and events
+export const COMMUNITY_INVOLVEMENT = [
+  {
+    id: 'habitat-for-humanity',
+    name: 'Habitat for Humanity Charlotte',
+    description: "We've partnered with Habitat for Humanity to provide roofing for families in need. Nothing feels better than handing keys to a family and knowing their roof will protect them for decades.",
+    type: 'nonprofit',
+    ongoing: true,
+  },
+  {
+    id: 'veterans-roof',
+    name: 'Roofs for Veterans',
+    description: "As a veteran myself, I know what it means to serve. Every year we donate a free roof replacement to a local veteran in need. It's our way of saying thank you to those who served.",
+    type: 'nonprofit',
+    ongoing: true,
+  },
+  {
+    id: 'charlotte-chamber',
+    name: 'Charlotte Chamber of Commerce',
+    description: "Being part of the Charlotte business community means more than just having customers here - it means investing in the city's future. We're proud members of the Charlotte Chamber.",
+    type: 'networking',
+    ongoing: true,
+  },
+  {
+    id: 'lake-norman-chamber',
+    name: 'Lake Norman Chamber of Commerce',
+    description: "The Lake Norman area has become like a second home to us. We joined the chamber to better serve our neighbors in Huntersville, Cornelius, Davidson, and Mooresville.",
+    type: 'networking',
+    ongoing: true,
+  },
+  {
+    id: 'bbb-accredited',
+    name: 'Better Business Bureau',
+    description: "Getting BBB accredited wasn't just about the badge - it's a commitment to do business the right way. That A+ rating means something to us, and we work every day to keep it.",
+    type: 'accreditation',
+    ongoing: true,
+  },
+  {
+    id: 'storm-relief',
+    name: 'Emergency Storm Response',
+    description: "When major storms hit Charlotte, we don't wait for calls. We drive through neighborhoods checking on elderly residents and folks we know might need help. That's just what neighbors do.",
+    type: 'community',
+    ongoing: true,
+  },
+];
+
+// Personal anecdotes for storytelling throughout the site
+export const TURNER_ANECDOTES = [
+  {
+    id: 'first-charlotte-job',
+    title: 'Our First Charlotte Job',
+    story: "I still remember our first roofing job in Charlotte - a small ranch house in Plaza Midwood. The homeowner was a single mom who'd been quoted crazy prices by other companies. We did the job for a fair price and she sent us a thank you card that I still have in my office. That's when I knew Charlotte was home.",
+    author: 'james',
+  },
+  {
+    id: 'dad-joins',
+    title: 'When Dad Came to Town',
+    story: "When my dad showed up from Alabama in 2022, I thought he'd want to relax. Instead, he was at the job site at 6 AM the next morning. He said, 'If my name's gonna be on this company, I'm gonna make sure we do it right.' He hasn't slowed down since.",
+    author: 'james',
+  },
+  {
+    id: 'storm-story',
+    title: 'The Night Everything Changed',
+    story: "During the big storm of 2023, we got over 200 calls in 48 hours. Instead of seeing dollar signs, I saw my neighbors in trouble. We worked 18-hour days for two weeks straight, prioritizing the elderly and families with kids. Some of those folks still call just to say hi.",
+    author: 'james',
+  },
+  {
+    id: 'mrs-johnson',
+    title: "Mrs. Johnson's Roof",
+    story: "There was this sweet lady in Myers Park, Mrs. Johnson, who was worried sick about affording a new roof. When we finished the job, she tried to give us cookies instead of a tip. Shirley still talks about those cookies. We've done her maintenance for free ever since - she reminds us of my grandmother.",
+    author: 'james',
+  },
+  {
+    id: 'alabama-lessons',
+    title: 'Lessons from Alabama',
+    story: "Growing up in Alabama, we didn't have much, but we had our word. My daddy taught me that a handshake meant more than any contract. I've carried that with me to Charlotte. When I tell you something, you can take it to the bank.",
+    author: 'fred',
+  },
+  {
+    id: 'shirley-calling',
+    title: 'Why Shirley Answers the Phone',
+    story: "People ask why I answer the phones instead of hiring someone. It's simple - when someone calls about their roof, they're often worried. They need to hear a real person who cares, not a recording. Every call matters to us because every home matters to someone.",
+    author: 'shirley',
+  },
+];
