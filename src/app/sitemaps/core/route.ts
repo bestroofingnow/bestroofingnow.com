@@ -86,6 +86,11 @@ export async function GET() {
     { url: `${BASE_URL}/slate-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/tpo-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/epdm-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    // Premium/Luxury Material Pages
+    { url: `${BASE_URL}/luxury-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/copper-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/designer-shingles-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/cedar-shake-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
 
     // ============================================
     // BRAND-SPECIFIC PAGES
