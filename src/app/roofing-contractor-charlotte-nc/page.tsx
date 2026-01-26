@@ -633,6 +633,24 @@ export default function RoofingContractorCharlotteNCPage() {
         </div>
       </section>
 
+      {/* Cross-Reference to Main Services */}
+      <section className="py-8 bg-primary/5 border-t border-primary/10">
+        <div className="container">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-gray text-center md:text-left">
+              Looking for our complete service offerings?
+            </p>
+            <Link
+              href="/roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+            >
+              View All Roofing Services in Charlotte
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <CTASection
         title="Ready to Work with Charlotte's Best Roofing Contractor?"

@@ -20,6 +20,9 @@ import {
   ThumbsUp,
   DollarSign,
   FileText,
+  TreePine,
+  CloudHail,
+  Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import {
@@ -511,6 +514,92 @@ export default function RoofRepairCharlotteNCPage() {
                 <p className="text-gray text-sm">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 24/7 Emergency Roof Repair Section */}
+      <section id="emergency" className="section bg-red-700 text-white">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-white/20 text-white rounded-full px-4 py-2 mb-4 animate-pulse">
+              <AlertTriangle className="w-5 h-5" />
+              <span className="text-sm font-bold">24/7 EMERGENCY SERVICE</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Emergency Roof Repair Charlotte NC
+            </h2>
+            <p className="text-white/90 text-lg">
+              Roof emergency? Do not wait - water damage spreads fast. Our emergency crews respond
+              within 1-4 hours to protect your Charlotte home from further damage.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="bg-white/10 rounded-xl p-6">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <CloudRain className="w-6 h-6 text-yellow-300" />
+              </div>
+              <h3 className="font-bold text-white mb-2">Active Roof Leaks</h3>
+              <p className="text-white/80 text-sm">Water entering your home needs immediate attention. We stop leaks fast to prevent mold and structural damage.</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-6">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <CloudHail className="w-6 h-6 text-yellow-300" />
+              </div>
+              <h3 className="font-bold text-white mb-2">Storm Damage</h3>
+              <p className="text-white/80 text-sm">Hail, wind, and severe storms require immediate response. We secure your property and document for insurance.</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-6">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <TreePine className="w-6 h-6 text-yellow-300" />
+              </div>
+              <h3 className="font-bold text-white mb-2">Fallen Tree Damage</h3>
+              <p className="text-white/80 text-sm">Trees or branches on your roof need urgent attention. We coordinate removal and repairs.</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-6">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <Hammer className="w-6 h-6 text-yellow-300" />
+              </div>
+              <h3 className="font-bold text-white mb-2">Emergency Tarping</h3>
+              <p className="text-white/80 text-sm">Professional tarping protects your home while permanent repairs are scheduled.</p>
+            </div>
+          </div>
+
+          <div className="bg-white/10 rounded-xl p-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-6 text-center">
+              <div>
+                <div className="text-3xl font-bold text-yellow-300 mb-1">1-4 hrs</div>
+                <p className="text-white/80 text-sm">Response Time</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-yellow-300 mb-1">24/7</div>
+                <p className="text-white/80 text-sm">Availability</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-yellow-300 mb-1">500+</div>
+                <p className="text-white/80 text-sm">Emergencies Handled</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-yellow-300 mb-1">A+</div>
+                <p className="text-white/80 text-sm">BBB Rating</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-white/90 mb-6">
+              Call our 24/7 emergency line any time, day or night - including weekends and holidays.
+            </p>
+            <Button
+              href={`tel:${SITE_CONFIG.phoneClean}`}
+              variant="primary"
+              size="lg"
+              className="bg-white !text-red-700 hover:bg-yellow-300 hover:!text-red-800 font-bold text-lg"
+              icon={<Phone className="w-6 h-6" />}
+            >
+              Call Now: {SITE_CONFIG.phone}
+            </Button>
           </div>
         </div>
       </section>

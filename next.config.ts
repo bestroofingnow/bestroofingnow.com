@@ -268,6 +268,15 @@ const nextConfig: NextConfig = {
       { source: '/request-a-free-estimate', destination: '/contact', permanent: true },
       { source: '/why-were-different', destination: '/about', permanent: true },
       { source: '/service-area-2', destination: '/locations', permanent: true },
+
+      // ===========================================
+      // SEO CONSOLIDATION REDIRECTS
+      // Consolidate competing pages to eliminate keyword cannibalization
+      // ===========================================
+      // Roof Installation → Roof Replacement (same service, different names)
+      { source: '/roof-installation-charlotte-nc', destination: '/roof-replacement-charlotte-nc', permanent: true },
+      // Emergency Roof Repair Charlotte → Main Repair Page (emergency is subset of repair)
+      { source: '/emergency-roof-repair-charlotte-nc', destination: '/roof-repair-charlotte-nc', permanent: true },
     ];
   },
 

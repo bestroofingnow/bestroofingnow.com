@@ -558,7 +558,7 @@ export default function IceStormDamageCharlottePage() {
               </span>
             </Link>
             <Link
-              href="/emergency-roof-repair-charlotte-nc"
+              href="/roof-repair-charlotte-nc#emergency"
               className="bg-light rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow group"
             >
               <AlertTriangle className="w-10 h-10 text-primary mb-4 group-hover:text-accent transition-colors" />

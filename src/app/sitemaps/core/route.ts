@@ -34,7 +34,7 @@ export async function GET() {
     { url: `${BASE_URL}/best-roofing-company-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-replacement-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/residential-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/roof-installation-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    // roof-installation-charlotte-nc redirects to roof-replacement-charlotte-nc (SEO consolidation)
     { url: `${BASE_URL}/industrial-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
 
     // ============================================
