@@ -22,8 +22,11 @@ import {
   Zap,
   Thermometer,
   Truck,
+  Layers,
+  Calculator,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -461,37 +464,61 @@ export default function IndustrialRoofingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Mid-Page CTA */}
-      <section className="bg-accent text-white py-12">
+      {/* Industrial Instant Estimate Section */}
+      <section className="section bg-gradient-to-br from-primary via-primary to-primary-dark text-white">
         <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">
-                Need Industrial Roofing in Charlotte?
-              </h2>
-              <p className="text-white/90">
-                Get a free, no-obligation estimate for your warehouse, factory, or industrial facility.
-              </p>
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-2 mb-4">
+              <Zap className="w-4 h-4" />
+              <span className="text-sm font-bold">CHARLOTTE&apos;S FIRST</span>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                href="/contact"
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-accent"
-                icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
-              >
-                Schedule Free Estimate
-              </Button>
-              <Button
-                href={`tel:${SITE_CONFIG.phoneClean}`}
-                className="bg-white !text-accent hover:bg-white/90"
-                size="lg"
-                icon={<Phone className="w-5 h-5" aria-hidden="true" />}
-              >
-                {SITE_CONFIG.phone}
-              </Button>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Industrial Roof Instant Estimate
+            </h2>
+            <p className="text-xl text-white/90 mb-2">
+              Get an instant price range for your industrial roofing project — no waiting, no hassle.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center border border-white/20">
+              <div className="w-14 h-14 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <Layers className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-white">Roof Replacement</h3>
+              <p className="text-3xl font-bold text-accent mb-2">$1,000 - $2,200</p>
+              <p className="text-white/80 text-sm">per roofing square (100 sq ft)</p>
+              <p className="text-white/60 text-xs mt-2">TPO, EPDM, PVC, Modified Bitumen</p>
             </div>
+
+            <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center border border-white/20">
+              <div className="w-14 h-14 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <Thermometer className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-white">Roof Coatings</h3>
+              <p className="text-3xl font-bold text-accent mb-2">$800 - $1,000</p>
+              <p className="text-white/80 text-sm">per roofing square (100 sq ft)</p>
+              <p className="text-white/60 text-xs mt-2">Silicone, Acrylic, Elastomeric</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center border border-white/20">
+              <div className="w-14 h-14 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <Factory className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-white">Metal Roofing</h3>
+              <p className="text-3xl font-bold text-accent mb-2">$1,000 - $1,600</p>
+              <p className="text-white/80 text-sm">per roofing square (100 sq ft)</p>
+              <p className="text-white/60 text-xs mt-2">Standing Seam, Corrugated, R-Panel</p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <EstimateButton variant="white" size="lg" className="text-lg px-10">
+              Get Your Instant Industrial Estimate
+            </EstimateButton>
+            <p className="text-white/60 text-sm mt-4">
+              No obligation • Instant results • 100% free
+            </p>
           </div>
         </div>
       </section>
