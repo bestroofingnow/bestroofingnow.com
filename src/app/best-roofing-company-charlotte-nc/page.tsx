@@ -27,22 +27,22 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Best Roofing Company Charlotte NC | BBB A+ Rated',
+  title: 'Best Roofing Company Charlotte NC | BBB A+ | Top Rated 2024',
   description:
-    'Looking for the best roofing company in Charlotte NC? Best Roofing Now is BBB A+ rated, veteran-owned, with 500+ roofs completed. 5-star Google reviews. Free estimates available.',
+    'Comparing roofing companies in Charlotte NC? Best Roofing Now ranks #1 with BBB A+ rating, 500+ 5-star reviews, and industry awards. See why homeowners choose us over competitors.',
   keywords: [
     'best roofing company charlotte nc',
-    'best roofers in charlotte',
     'top rated roofing company charlotte',
-    'best roofing contractor charlotte nc',
-    'highest rated roofers charlotte',
-    'best roofing charlotte nc',
-    'top roofing companies charlotte',
-    'best rated roofing company charlotte',
-    'charlotte best roofing company',
     '#1 roofing company charlotte nc',
-    'best local roofers charlotte',
-    'most trusted roofing company charlotte',
+    'highest rated roofing company charlotte',
+    'best roofing company charlotte 2024',
+    'charlotte roofing company rankings',
+    'award winning roofing company charlotte',
+    'bbb a+ roofing company charlotte nc',
+    'top 10 roofing companies charlotte',
+    'roofing company comparison charlotte',
+    'who is the best roofer in charlotte',
+    '5 star roofing company charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/best-roofing-company-charlotte-nc`,

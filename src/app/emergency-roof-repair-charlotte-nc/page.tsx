@@ -39,25 +39,22 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Emergency Roof Repair Charlotte NC | 24/7 Service | Best Roofing Now',
+  title: 'Emergency Roof Repair Charlotte NC | Active Leak & Urgent Damage',
   description:
-    'Need emergency roof repair in Charlotte NC? Best Roofing Now provides 24/7 emergency roofing services with 1-4 hour response time. Storm damage, active leaks, tree damage, and emergency tarping. Call (704) 605-6047 now!',
+    'Urgent roof repair needed in Charlotte NC? Fast response for active roof leaks, sudden damage, and roofing emergencies. Stop the leak now - emergency tarping and repairs. Call (704) 605-6047!',
   keywords: [
     'emergency roof repair charlotte nc',
-    'emergency roof repair charlotte',
-    '24 hour roof repair charlotte nc',
-    'emergency roofing charlotte nc',
     'urgent roof repair charlotte',
-    'emergency roof leak repair charlotte',
+    'roof leaking now charlotte nc',
+    'active roof leak repair charlotte',
+    'emergency roof leak charlotte nc',
+    'roof damage repair urgent charlotte',
     'same day roof repair charlotte nc',
     'emergency roofer charlotte nc',
-    'after hours roof repair charlotte',
-    'emergency roofing contractor charlotte',
-    'storm damage roof repair charlotte nc',
-    '24/7 roofer charlotte nc',
-    'emergency tarp roof charlotte',
-    'roof emergency service charlotte',
-    'weekend roof repair charlotte nc',
+    'roof leaking into house charlotte',
+    'sudden roof damage charlotte nc',
+    'emergency tarp service charlotte nc',
+    'stop roof leak now charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-charlotte-nc`,

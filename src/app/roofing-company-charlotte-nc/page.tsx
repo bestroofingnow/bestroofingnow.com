@@ -24,7 +24,8 @@ import {
   Briefcase,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -32,28 +33,28 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Company Charlotte NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofing Company Charlotte NC | Veteran-Owned & Family Operated',
   description:
-    'Best Roofing Now is a trusted, established roofing company in Charlotte NC. Veteran-owned, BBB A+ rated with 500+ roofs completed. Your reliable local roofing company for all residential and commercial needs. Free estimates!',
+    'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Established business with strong values, BBB A+ rated. Meet the Turner family and our commitment to your home.',
   keywords: [
     'roofing company charlotte nc',
-    'roofing companies charlotte nc',
-    'best roofing company charlotte nc',
-    'top roofing company charlotte',
-    'local roofing company charlotte nc',
-    'roofing company near me charlotte',
-    'reliable roofing company charlotte',
+    'veteran owned roofing company charlotte',
+    'family owned roofing company charlotte nc',
+    'established roofing company charlotte',
+    'roofing business charlotte nc',
+    'local roofing company charlotte',
     'trusted roofing company charlotte nc',
-    'professional roofing company charlotte',
-    'established roofing company charlotte nc',
+    'roofing companies in charlotte',
+    'charlotte roofing company about us',
+    'reputable roofing company charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-company-charlotte-nc`,
   },
   openGraph: {
-    title: 'Roofing Company Charlotte NC | 5-Star Rated | Best Roofing Now',
+    title: 'Roofing Company Charlotte NC | Veteran-Owned & Family Operated',
     description:
-      'Trusted, established roofing company serving Charlotte NC. Veteran-owned, BBB A+ rated with 500+ roofs completed. Free estimates for residential and commercial roofing.',
+      'Meet Best Roofing Now - a veteran-owned, family-operated roofing company serving Charlotte NC. Established with strong values, BBB A+ rated.',
     url: `${SITE_CONFIG.url}/roofing-company-charlotte-nc`,
     type: 'website',
     images: [
@@ -282,6 +283,13 @@ export default function RoofingCompanyCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-company-charlotte-nc`}
+        pageName="Roofing Company Charlotte NC"
+        includeVoiceActions={true}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -618,11 +626,11 @@ export default function RoofingCompanyCharlotteNCPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section with Voice Search Optimization */}
       <section className="section bg-light">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
                 <HelpCircle className="w-4 h-4" aria-hidden="true" />
                 <span className="text-sm font-semibold">Common Questions</span>
@@ -631,17 +639,15 @@ export default function RoofingCompanyCharlotteNCPage() {
                 Roofing Company FAQs
               </h2>
               <p className="text-gray text-lg">
-                Answers to common questions about our roofing company and services in Charlotte NC.
+                Quick answers to common questions about our roofing company and services in Charlotte NC.
               </p>
             </div>
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="font-bold text-dark mb-2">{faq.question}</h3>
-                  <p className="text-gray">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
+            {/* Voice Search Optimized FAQ Component */}
+            <VoiceSearchFAQ
+              faqs={faqs}
+              city="Charlotte"
+              className="bg-white rounded-xl p-6 shadow-md"
+            />
           </div>
         </div>
       </section>

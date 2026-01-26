@@ -20,28 +20,34 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Contractor Charlotte NC | Licensed & Insured | Best Roofing Now',
+  title: 'Roofing Contractor Charlotte NC | Licensed & Certified | GAF CertainTeed',
   description:
-    'Looking for a trusted roofing contractor in Charlotte NC? Best Roofing Now is a BBB A+ rated, veteran-owned roofing company serving Charlotte and surrounding areas. Licensed, insured, and offering free estimates for roof repair, replacement, and installation.',
+    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed SELECT ShingleMaster, Owens Corning Preferred. Fully insured with manufacturer-backed warranties. NC General Contractor License.',
   keywords: [
-    'roofing contractor Charlotte NC',
-    'Charlotte roofing contractor',
-    'roofing contractors near me Charlotte',
-    'licensed roofing contractor Charlotte NC',
-    'insured roofing contractor Charlotte',
-    'best roofing contractor Charlotte',
-    'roof repair contractor Charlotte NC',
-    'roof replacement contractor Charlotte',
-    'professional roofing contractor Charlotte NC',
-    'certified roofing contractor Charlotte',
-    'veteran-owned roofing contractor Charlotte',
-    'BBB rated roofing contractor Charlotte NC',
+    'roofing contractor charlotte nc',
+    'licensed roofing contractor charlotte',
+    'certified roofing contractor charlotte nc',
+    'gaf certified contractor charlotte',
+    'certainteed contractor charlotte nc',
+    'owens corning preferred contractor charlotte',
+    'insured roofing contractor charlotte nc',
+    'bonded roofing contractor charlotte',
+    'nc licensed roofer charlotte',
+    'manufacturer certified roofer charlotte nc',
+    'general contractor roofing charlotte',
+    'warranty backed roofing contractor charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`,
@@ -232,6 +238,12 @@ export default function RoofingContractorCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`}
+        pageName="Roofing Contractor Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

@@ -3,15 +3,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Star, Quote, Phone, ArrowRight, ExternalLink } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, ReviewsSchema, AISearchOptimizationBundle } from '@/components/seo/SchemaMarkup';
 import { LazyReviewWidget } from '@/components/ui/LazyReviewWidget';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Reviews | Charlotte Roofing Company Reviews | 5-Star Rated',
+  title: 'Best Roofing Now Reviews | 5-Star Charlotte Roofing Company',
   description:
-    'Read reviews from real Charlotte homeowners about Best Roofing Now. 5-star rated roofing company with 100+ happy customers. See why we are Charlotte\'s most trusted roofers.',
+    'Read 62+ five-star reviews from real Charlotte homeowners about Best Roofing Now. BBB A+ rated, veteran-owned roofing company. See why we are Charlotte\'s most trusted roofers.',
   keywords: [
     'Best Roofing Now reviews',
     'Charlotte roofer reviews',
@@ -139,6 +139,12 @@ export default function ReviewsPage() {
           { name: 'Reviews', url: `${SITE_CONFIG.url}/reviews` },
         ]}
       />
+      <ReviewsSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/reviews`}
+        pageName="Best Roofing Now Reviews"
+        city="Charlotte"
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -159,7 +165,7 @@ export default function ReviewsPage() {
               ))}
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              What Charlotte Homeowners Say About Us
+              Best Roofing Now Reviews - <span className="text-accent-light">5-Star Rated Charlotte Roofers</span>
             </h1>
             <p className="text-xl text-white/90">
               Do not just take our word for it. Read real reviews from real customers

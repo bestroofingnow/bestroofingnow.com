@@ -38,25 +38,22 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Best Roofers Charlotte NC | #1 Rated | Best Roofing Now',
+  title: 'Best Roofers Charlotte NC | 500+ Five-Star Reviews | Read Testimonials',
   description:
-    'Looking for the best roofers near me in Charlotte? Best Roofing Now is Charlotte\'s #1 rated roofing company with 500+ roofs completed. BBB A+ rated, 5-star reviews, veteran-owned. Free estimates!',
+    'See why Charlotte homeowners rate us 5 stars! Read 500+ verified reviews and testimonials from real customers. Best Roofers Charlotte NC with proven track record of excellence.',
   keywords: [
-    'best roofers near me charlotte',
-    'best roofers charlotte nc',
-    'best roofers in charlotte',
-    '#1 roofers charlotte nc',
-    'top rated roofers charlotte',
+    'best roofers charlotte nc reviews',
+    'charlotte roofers reviews',
     'best rated roofers charlotte nc',
-    'best local roofers charlotte',
-    'best roofers near me',
-    'charlotte best roofers',
-    'highly rated roofers charlotte nc',
-    'top roofers in charlotte',
-    'best residential roofers charlotte',
-    'best roof repair charlotte nc',
-    'best roofing contractors charlotte',
-    'best roofers charlotte metro',
+    '5 star roofers charlotte',
+    'roofer reviews charlotte nc',
+    'top reviewed roofers charlotte',
+    'roofer testimonials charlotte nc',
+    'highly reviewed roofers charlotte',
+    'trusted roofer reviews charlotte',
+    'best roofers near me reviews',
+    'charlotte roofer ratings',
+    'verified roofer reviews charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/best-roofers-charlotte-nc`,

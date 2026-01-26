@@ -15,7 +15,12 @@ import {
   Medal,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, EnhancedOrganizationSchema, PersonSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  EnhancedOrganizationSchema,
+  PersonSchema,
+  AISearchOptimizationBundle,
+} from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { TEAM_MEMBERS, COMPANY_CERTIFICATIONS, COMPANY_VALUES } from '@/lib/team';
@@ -96,6 +101,11 @@ export default function AboutPage() {
         ]}
       />
       <EnhancedOrganizationSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/about`}
+        pageName="About Best Roofing Now"
+        city="Charlotte"
+      />
       {TEAM_MEMBERS.map((member) => (
         <PersonSchema
           key={member.id}

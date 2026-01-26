@@ -23,7 +23,8 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -31,20 +32,20 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Charlotte NC | #1 Rated Roofer | Best Roofing Now',
+  title: 'Roofing Charlotte NC | Complete Roofing Services | Best Roofing Now',
   description:
-    'Looking for quality roofing in Charlotte NC? Best Roofing Now is the #1 rated roofing company with 500+ roofs completed. BBB A+ rated, veteran-owned. Complete roofing services including repairs, replacements, inspections & storm damage. Free estimates!',
+    'Complete roofing services in Charlotte NC - repairs, replacements, inspections & storm damage restoration. BBB A+ rated with 500+ roofs completed. Residential & commercial roofing experts. Free estimates!',
   keywords: [
     'roofing charlotte nc',
-    'roofing in charlotte nc',
-    'charlotte nc roofing',
     'roofing services charlotte nc',
-    'local roofing charlotte nc',
-    'best roofing charlotte nc',
-    'top rated roofing charlotte',
-    'quality roofing charlotte nc',
-    'reliable roofing charlotte',
-    'trusted roofing charlotte nc',
+    'charlotte nc roofing services',
+    'roofing in charlotte north carolina',
+    'charlotte roofing solutions',
+    'full service roofing charlotte',
+    'roof services charlotte nc',
+    'residential commercial roofing charlotte',
+    'roofing work charlotte nc',
+    'professional roofing charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-charlotte-nc`,
@@ -293,6 +294,13 @@ export default function RoofingCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-charlotte-nc`}
+        pageName="Roofing Charlotte NC"
+        includeVoiceActions={true}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -718,11 +726,11 @@ export default function RoofingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section with Voice Search Optimization */}
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
                 <HelpCircle className="w-4 h-4" aria-hidden="true" />
                 <span className="text-sm font-semibold">Frequently Asked Questions</span>
@@ -731,17 +739,15 @@ export default function RoofingCharlotteNCPage() {
                 Roofing Charlotte NC FAQs
               </h2>
               <p className="text-gray text-lg">
-                Answers to common questions about roofing services in Charlotte NC.
+                Quick answers to your most common roofing questions in Charlotte NC.
               </p>
             </div>
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div key={index} className="bg-light rounded-xl shadow-md p-6">
-                  <h3 className="font-bold text-dark mb-2">{faq.question}</h3>
-                  <p className="text-gray">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
+            {/* Voice Search Optimized FAQ Component */}
+            <VoiceSearchFAQ
+              faqs={faqs}
+              city="Charlotte"
+              className="bg-light rounded-xl p-6"
+            />
           </div>
         </div>
       </section>

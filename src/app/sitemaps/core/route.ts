@@ -167,6 +167,9 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-indian-trail-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roofing-gastonia-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roofing-fort-mill-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-repair-fort-mill-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-replacement-fort-mill-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roofers-fort-mill-sc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roofing-rock-hill-sc`, changefreq: 'weekly', priority: '0.9' },
 
     // ============================================

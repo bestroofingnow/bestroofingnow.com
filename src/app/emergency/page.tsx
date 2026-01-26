@@ -3,22 +3,27 @@ import Link from 'next/link';
 import { Phone, AlertTriangle, Clock, Shield, CheckCircle, Zap, MapPin, DollarSign, HelpCircle } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Roof Repair Charlotte NC | Fast Response | Best Roofing Now',
-  description: 'Need emergency roof repair in Charlotte NC? Our 24/7 emergency roofers respond in 1-2 hours. Storm damage, active leaks, fallen trees - call (704) 605-6047 now!',
+  title: '24/7 Emergency Roofing Services Charlotte NC | 1-2 Hour Response',
+  description: 'Charlotte NC 24/7 emergency roofing hotline. We respond in 1-2 hours for roof emergencies - active leaks, fallen trees, sudden damage. Call (704) 605-6047 anytime!',
   keywords: [
-    'emergency roof repair charlotte nc',
-    '24/7 emergency roof repair charlotte nc',
-    '24 hour roof repair charlotte',
-    'emergency roofer near me',
-    'urgent roof repair charlotte nc',
-    'emergency roof leak repair charlotte',
-    'storm damage roof repair charlotte nc',
-    'roof emergency charlotte',
-    'after hours roof repair charlotte',
-    'weekend roof repair charlotte nc',
+    '24/7 roofing service charlotte nc',
+    '24 hour roofer charlotte',
+    'emergency roofing hotline charlotte',
+    'roofer on call charlotte nc',
+    'night time roof repair charlotte',
+    'after hours roofer charlotte nc',
+    'weekend roofing service charlotte',
+    'immediate roof help charlotte',
+    'round the clock roofer charlotte nc',
+    'late night roof repair charlotte',
   ],
   openGraph: {
     title: '24/7 Emergency Roof Repair Charlotte NC | 1-2 Hour Response',
@@ -223,6 +228,13 @@ export default function EmergencyPage() {
       />
       <EmergencyServiceSchema />
       <FAQSchema faqs={emergencyFaqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/emergency`}
+        pageName="Emergency Roof Repair Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+      />
+      <VoiceSearchActionSchema />
       {/* Emergency Hero */}
       <section className="bg-red-600 text-white py-16 md:py-20">
         <div className="container">

@@ -22,7 +22,8 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -30,30 +31,30 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofers Charlotte NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofers Charlotte NC | Local Expert Roofers Near You',
   description:
-    'Looking for trusted roofers in Charlotte NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company with 500+ roofs completed. BBB A+ rated. Free estimates for all roofing services.',
+    'Find trusted local roofers in Charlotte NC. Experienced roofing professionals serving your neighborhood. Licensed, insured roofers with same-day estimates. Call your local Charlotte roofers today!',
   keywords: [
     'roofers charlotte nc',
-    'charlotte roofers',
-    'local roofers charlotte',
-    'roofers in charlotte nc',
-    'charlotte nc roofers',
-    'best roofers charlotte nc',
-    'top roofers charlotte',
-    'professional roofers charlotte nc',
-    'licensed roofers charlotte',
-    'experienced roofers charlotte nc',
-    'affordable roofers charlotte',
-    'roofers near me charlotte nc',
+    'roofers near me charlotte',
+    'local roofers charlotte nc',
+    'charlotte roofers near me',
+    'find roofers charlotte',
+    'hire roofers charlotte nc',
+    'roofers in my area charlotte',
+    'nearby roofers charlotte nc',
+    'charlotte area roofers',
+    'neighborhood roofers charlotte',
+    'roofers close to me charlotte',
+    'local roofing experts charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
   },
   openGraph: {
-    title: 'Roofers Charlotte NC | 5-Star Rated | Best Roofing Now',
+    title: 'Roofers Charlotte NC | Local Expert Roofers Near You',
     description:
-      '5-star rated, veteran-owned roofers serving Charlotte NC. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service available.',
+      'Find experienced local roofers serving Charlotte NC neighborhoods. Licensed and insured roofing professionals with same-day estimates available.',
     url: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
     type: 'website',
     images: [
@@ -236,6 +237,13 @@ export default function RoofersCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofers-charlotte-nc`}
+        pageName="Roofers Charlotte NC"
+        includeVoiceActions={true}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -636,11 +644,11 @@ export default function RoofersCharlotteNCPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section with Voice Search Optimization */}
       <section className="section bg-light">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
                 <HelpCircle className="w-4 h-4" aria-hidden="true" />
                 <span className="text-sm font-semibold">Common Questions</span>
@@ -649,17 +657,15 @@ export default function RoofersCharlotteNCPage() {
                 Charlotte Roofers FAQs
               </h2>
               <p className="text-gray text-lg">
-                Answers to common questions about hiring roofers in Charlotte NC.
+                Quick answers to common questions about hiring roofers in Charlotte NC.
               </p>
             </div>
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="font-bold text-dark mb-2">{faq.question}</h3>
-                  <p className="text-gray">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
+            {/* Voice Search Optimized FAQ Component */}
+            <VoiceSearchFAQ
+              faqs={faqs}
+              city="Charlotte"
+              className="bg-white rounded-xl p-6 shadow-md"
+            />
           </div>
         </div>
       </section>

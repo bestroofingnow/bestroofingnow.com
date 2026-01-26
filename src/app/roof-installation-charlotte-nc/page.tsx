@@ -27,22 +27,22 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roof Installation Charlotte NC | New Roof Experts',
+  title: 'Roof Installation Charlotte NC | New Construction Roofing',
   description:
-    'Expert roof installation in Charlotte NC. Best Roofing Now specializes in new roof installation for homes and businesses. BBB A+ rated, veteran-owned. Free estimates.',
+    'New construction roof installation in Charlotte NC. Expert installers for new builds, home additions, and first-time roofing projects. Builder partnerships available. BBB A+ rated.',
   keywords: [
     'roof installation charlotte nc',
-    'new roof installation charlotte',
-    'roof installation near me charlotte',
-    'new roof charlotte nc',
-    'install new roof charlotte',
-    'roof installation company charlotte',
-    'roof installation services charlotte nc',
-    'professional roof installation charlotte',
     'new construction roofing charlotte',
-    'roof installers charlotte nc',
-    'best roof installation charlotte',
-    'affordable roof installation charlotte nc',
+    'new home roof installation charlotte nc',
+    'roof installers charlotte',
+    'builder roofing contractor charlotte nc',
+    'new build roofing charlotte',
+    'first time roof installation charlotte',
+    'home addition roofing charlotte nc',
+    'construction roofing services charlotte',
+    'custom home roofing charlotte nc',
+    'new roof on new house charlotte',
+    'professional roof installers charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-installation-charlotte-nc`,

@@ -34,20 +34,20 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Charlotte NC | Insurance Claim Experts',
+  title: 'Storm Damage Roof Repair Charlotte NC | Insurance Claim Specialists',
   description:
-    'Charlotte storm damage roof repair specialists. Expert hail, wind, and fallen tree damage repair. Insurance claim assistance, 24/7 emergency response. Free inspection. Call (704) 605-6047.',
+    'Charlotte storm damage roof repair with full insurance claim assistance. Hail damage, wind damage, fallen tree damage experts. We meet with adjusters and document damage. Free storm damage inspection.',
   keywords: [
-    'storm damage roof repair charlotte',
-    'hail damage roof repair charlotte nc',
-    'wind damage roof repair',
-    'roof storm damage insurance claim',
+    'storm damage roof repair charlotte nc',
+    'hail damage roof charlotte nc',
+    'wind damage roof repair charlotte',
+    'roof insurance claim charlotte nc',
     'storm damage roofing contractor charlotte',
-    'emergency roof repair charlotte nc',
-    'hail damage roofer charlotte',
-    'roof repair after storm charlotte',
-    'insurance claim roof repair charlotte',
-    'wind damage shingles charlotte nc',
+    'hail damage shingles charlotte',
+    'tree fell on roof charlotte nc',
+    'roof damage insurance claim charlotte',
+    'hurricane damage roof charlotte nc',
+    'roof adjuster meeting charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,

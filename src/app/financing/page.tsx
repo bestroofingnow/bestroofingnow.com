@@ -8,7 +8,7 @@ import {
   Shield,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle } from '@/components/seo/SchemaMarkup';
 import { LazyFinancingIframe } from '@/components/ui/LazyFinancingIframe';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -123,6 +123,12 @@ export default function FinancingPage() {
           { name: 'Financing', url: `${SITE_CONFIG.url}/financing` },
         ]}
       />
+      <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/financing`}
+        pageName="Roof Financing Charlotte NC"
+        city="Charlotte"
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -142,7 +148,7 @@ export default function FinancingPage() {
               <span className="text-sm font-semibold">Flexible Financing Options</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Get a New Roof Without Breaking the Bank
+              Roof Financing <span className="text-accent-light">Charlotte NC</span> - Easy Payment Options
             </h1>
             <p className="text-xl text-white/90">
               Your roof protects everything you love. Do not let budget concerns stop you from

@@ -21,7 +21,12 @@ import {
   Layers,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -324,6 +329,12 @@ export default function MetalRoofingCharlottePage() {
       />
       <FAQSchema faqs={faqs} />
       <MetalRoofingServiceSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/metal-roofing-charlotte-nc`}
+        pageName="Metal Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

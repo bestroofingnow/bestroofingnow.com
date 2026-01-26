@@ -27,22 +27,22 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Wind Damage Roof Repair Charlotte NC | Emergency Service | Best Roofing Now',
+  title: 'Wind Damage Roof Repair Charlotte NC | Blown Shingles & High Wind',
   description:
-    'Emergency wind damage roof repair in Charlotte NC. 24/7 response for shingle blowoff, storm damage, and urgent repairs. Insurance claim assistance. BBB A+ rated, veteran-owned company.',
+    'Wind damage roof repair in Charlotte NC. Shingle blowoff, high wind damage, and exposed roof deck repairs. Insurance claim assistance for wind-related roof damage. Free inspections.',
   keywords: [
-    'wind damage roof repair Charlotte NC',
-    'wind damaged roof Charlotte',
-    'storm damage roof repair Charlotte',
-    'emergency roof repair Charlotte NC',
-    'shingle blowoff repair Charlotte',
-    'blown off shingles Charlotte',
-    'wind storm roof damage Charlotte',
-    'roof wind damage Charlotte NC',
-    'hurricane roof damage Charlotte',
-    'high wind roof repair near me',
-    'emergency roofer Charlotte NC',
-    'wind damage insurance claim Charlotte',
+    'wind damage roof repair charlotte nc',
+    'wind damaged roof charlotte',
+    'shingle blowoff repair charlotte nc',
+    'blown off shingles charlotte',
+    'wind storm roof damage charlotte',
+    'roof wind damage charlotte nc',
+    'high wind roof repair charlotte',
+    'wind damage insurance claim charlotte',
+    'lifted shingles wind damage charlotte',
+    'wind uplift roof damage charlotte nc',
+    'roof deck exposed wind charlotte',
+    'missing shingles wind charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/wind-damage-roof-repair-charlotte-nc`,
