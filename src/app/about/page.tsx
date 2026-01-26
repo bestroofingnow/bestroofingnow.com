@@ -105,6 +105,7 @@ export default function AboutPage() {
         pageUrl={`${SITE_CONFIG.url}/about`}
         pageName="About Best Roofing Now"
         city="Charlotte"
+        skipFAQ={false}
       />
       {TEAM_MEMBERS.map((member) => (
         <PersonSchema

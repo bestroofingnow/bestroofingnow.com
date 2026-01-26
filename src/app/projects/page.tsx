@@ -127,6 +127,7 @@ export default async function ProjectsPage() {
           },
         ]}
         city="Charlotte"
+        skipFAQ={false}
       />
 
       {/* Featured Snippet Schema for "roofing materials" list */}

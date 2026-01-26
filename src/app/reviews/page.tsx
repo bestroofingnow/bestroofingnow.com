@@ -144,6 +144,7 @@ export default function ReviewsPage() {
         pageUrl={`${SITE_CONFIG.url}/reviews`}
         pageName="Best Roofing Now Reviews"
         city="Charlotte"
+        skipFAQ={false}
       />
 
       {/* Hero Section */}

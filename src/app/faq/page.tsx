@@ -64,8 +64,9 @@ export default function FAQPage() {
           { name: 'FAQ', url: `${SITE_CONFIG.url}/faq` },
         ]}
       />
+      {/* Only ONE FAQPage schema per page - ALL_FAQS includes comprehensive content */}
+      {/* VoiceSearchFAQSchema removed to comply with Google's one FAQPage per page rule */}
       <FAQSchema faqs={ALL_FAQS} />
-      <VoiceSearchFAQSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">

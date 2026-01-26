@@ -1589,10 +1589,12 @@ export function AllDefinitionSchemas() {
 }
 
 // Comprehensive AEO Schema Bundle for Homepage
+// NOTE: VoiceSearchFAQSchema removed to avoid duplicate FAQPage (Google only allows one per page)
+// If you need FAQ schema, use FAQSchema component separately with combined FAQs
 export function HomePageAEOSchemas() {
   return (
     <>
-      <VoiceSearchFAQSchema />
+      {/* VoiceSearchFAQSchema removed - use FAQSchema with HOMEPAGE_FAQ instead */}
       <SpeakableSchema />
       <AICitationSchema />
       <AllHowToSchemas />
@@ -2848,6 +2850,9 @@ export function SpeakableContentBlocks({
 /**
  * Complete AI Search Optimization Bundle
  * Includes all schemas needed for AI Overview and voice search optimization
+ *
+ * IMPORTANT: Set skipFAQ=true when page already has FAQSchema to avoid
+ * duplicate FAQPage errors in Google Search Console
  */
 interface AISearchOptimizationProps {
   pageUrl: string;
@@ -2855,6 +2860,7 @@ interface AISearchOptimizationProps {
   faqs?: { question: string; answer: string; speakableAnswer?: string }[];
   includeVoiceActions?: boolean;
   city?: string;
+  skipFAQ?: boolean; // Set to true when page already has FAQSchema
 }
 
 export function AISearchOptimizationBundle({
@@ -2863,6 +2869,7 @@ export function AISearchOptimizationBundle({
   faqs,
   includeVoiceActions = false,
   city = 'Charlotte',
+  skipFAQ = true, // Default true since most pages already have FAQSchema
 }: AISearchOptimizationProps) {
   // Default Charlotte AI FAQs if none provided
   const defaultFaqs = [
@@ -2893,7 +2900,8 @@ export function AISearchOptimizationBundle({
   return (
     <>
       <EnhancedSpeakableSchema pageUrl={pageUrl} pageName={pageName} />
-      <AIOverviewFAQSchema faqs={faqsToUse} pageUrl={pageUrl} pageName={`${pageName} - FAQ`} />
+      {/* Only include AIOverviewFAQSchema if skipFAQ is false (to avoid duplicate FAQPage) */}
+      {!skipFAQ && <AIOverviewFAQSchema faqs={faqsToUse} pageUrl={pageUrl} pageName={`${pageName} - FAQ`} />}
       {includeVoiceActions && <VoiceSearchActionSchema />}
       <SpeakableContentBlocks city={city} includeCompany includeCost includeServices includeContact />
     </>

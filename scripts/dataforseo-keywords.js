@@ -1,6 +1,6 @@
 const https = require('https');
 
-const auth = Buffer.from('james@bestroofingnow.com:a3a032cad088f3c4').toString('base64');
+const auth = Buffer.from('james@kynexpro.com:c239bdea18ad73af').toString('base64');
 
 // Keywords to research for search volume and competition
 const keywords = [

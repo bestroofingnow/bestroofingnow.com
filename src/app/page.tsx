@@ -96,11 +96,13 @@ export default function HomePage() {
       {/* Speakable Content for Voice Assistants */}
       <SpeakableContent />
       {/* Enhanced AI Search Optimization for Google AI Overview and Voice Assistants */}
+      {/* skipFAQ=true because FAQSchema is already included above with HOMEPAGE_FAQ */}
       <AISearchOptimizationBundle
         pageUrl={SITE_CONFIG.url}
         pageName="Best Roofing Now | Charlotte's Top-Rated Roofing Company"
         includeVoiceActions={true}
         city="Charlotte"
+        skipFAQ={true}
       />
       {/* Voice Search Action Schema for potential actions */}
       <VoiceSearchActionSchema />
