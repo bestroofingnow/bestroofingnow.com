@@ -25,7 +25,7 @@ import {
   Package,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -280,6 +280,12 @@ export default function WarehouseRoofingCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/warehouse-roofing-charlotte-nc`}
+        pageName="Warehouse Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -663,6 +669,64 @@ export default function WarehouseRoofingCharlotteNCPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Related Commercial Roofing Services
+            </h2>
+            <p className="text-gray">
+              Explore our full range of commercial and industrial roofing solutions in Charlotte NC.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/commercial-roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Commercial Roofing Charlotte
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/industrial-roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Industrial Roofing
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/flat-roof-contractors-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Flat Roof Contractors
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/flat-roof-repair-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Flat Roof Repair
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/commercial-roofing-contractors-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Commercial Roofing Contractors
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/metal-roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Metal Roofing Charlotte
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

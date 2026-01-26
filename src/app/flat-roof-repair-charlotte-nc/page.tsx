@@ -20,7 +20,7 @@ import {
   Home,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -256,6 +256,12 @@ export default function FlatRoofRepairCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/flat-roof-repair-charlotte-nc`}
+        pageName="Flat Roof Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -645,6 +651,57 @@ export default function FlatRoofRepairCharlotteNCPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Related Roofing Services
+            </h2>
+            <p className="text-gray">
+              Explore our full range of flat roof and commercial roofing solutions in Charlotte NC.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/flat-roof-contractors-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Flat Roof Contractors
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/commercial-roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Commercial Roofing Charlotte
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/warehouse-roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Warehouse Roofing
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/industrial-roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Industrial Roofing
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/roof-repair-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Roof Repair Charlotte
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

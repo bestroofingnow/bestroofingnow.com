@@ -28,7 +28,7 @@ import {
   ShoppingBag,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -332,6 +332,12 @@ export default function CommercialRoofingCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
+        pageName="Commercial Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -464,6 +470,27 @@ export default function CommercialRoofingCharlotteNCPage() {
                 className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
               >
                 Industrial Roofing
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/warehouse-roofing-charlotte-nc"
+                className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+              >
+                Warehouse Roofing
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/flat-roof-contractors-charlotte-nc"
+                className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+              >
+                Flat Roof Contractors
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/flat-roof-repair-charlotte-nc"
+                className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+              >
+                Flat Roof Repair
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
