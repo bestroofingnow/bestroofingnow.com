@@ -214,6 +214,16 @@ export async function GET() {
     { url: `${BASE_URL}/roof-replacement-concord-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-concord-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-gastonia-nc`, changefreq: 'weekly', priority: '0.8' },
+
+    // ============================================
+    // COMMERCIAL ROOFING CITY PAGES
+    // ============================================
+    { url: `${BASE_URL}/commercial-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/commercial-roofing-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-gastonia-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-rock-hill-sc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-fort-mill-sc`, changefreq: 'weekly', priority: '0.8' },
   ];
 
   const lastmod = new Date().toISOString();
