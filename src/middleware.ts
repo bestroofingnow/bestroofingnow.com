@@ -72,6 +72,10 @@ const SERVICE_SLUGS = new Set([
 // Location slugs - these are handled by /locations/[city]
 const LOCATION_PATTERN = /^(charlotte|huntersville|cornelius|davidson|mooresville|denver|sherrills-ford|terrell|lake-norman|concord|kannapolis|harrisburg|mint-hill|matthews|pineville|indian-trail|weddington|waxhaw|monroe|gastonia|belmont|mount-holly|lincolnton|hickory|statesville|troutman|rock-hill|fort-mill|tega-cay|indian-land|lancaster)-?(nc)?$/i;
 
+// Service+Location pages - pattern like "roof-repair-charlotte-nc", "roofing-huntersville-nc"
+// These are SEO landing pages that should NOT be redirected to /blog/
+const SERVICE_LOCATION_PATTERN = /^.+-(charlotte|huntersville|cornelius|davidson|mooresville|denver|sherrills-ford|terrell|lake-norman|concord|kannapolis|harrisburg|mint-hill|matthews|pineville|indian-trail|weddington|waxhaw|monroe|gastonia|belmont|mount-holly|lincolnton|hickory|statesville|troutman|rock-hill|fort-mill|tega-cay|indian-land|lancaster)-(nc|north-carolina)$/i;
+
 export function middleware(request: NextRequest) {
   // Force HTTPS redirect (defense in depth - Vercel also handles this)
   const proto = request.headers.get('x-forwarded-proto');
@@ -107,6 +111,12 @@ export function middleware(request: NextRequest) {
 
   // Skip location-like patterns
   if (LOCATION_PATTERN.test(firstSegment)) {
+    return NextResponse.next();
+  }
+
+  // Skip service+location pages (e.g., roof-repair-charlotte-nc)
+  // These should be handled by next.config.ts redirects or actual pages
+  if (SERVICE_LOCATION_PATTERN.test(firstSegment)) {
     return NextResponse.next();
   }
 
