@@ -6,13 +6,46 @@ import { MapPin, Phone, CheckCircle, ArrowRight, Home, Calendar, Shield } from '
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getNeighborhood, getAllNeighborhoodParams, getNeighborhoodsByCity, Neighborhood } from '@/lib/neighborhoods';
 import { generateNeighborhoodFAQs } from '@/lib/faqs';
 import { EstimateButton } from '@/components/estimate';
+
+// Generate AEO-optimized FAQs with speakable answers for voice search
+function generateAEONeighborhoodFAQs(neighborhood: string, city: string, state: string, homeStyles: string) {
+  const primaryHomeStyle = homeStyles.split(',')[0].trim().toLowerCase();
+  return [
+    {
+      question: `Who is the best roofer in ${neighborhood}, ${city}?`,
+      answer: `Best Roofing Now is the top-rated roofing contractor serving ${neighborhood} in ${city}. With a 5-star Google rating, BBB A+ accreditation, and over 500 roofs installed, they're the trusted local choice for ${neighborhood} homeowners. They understand the unique architectural character of ${neighborhood} properties and offer free inspections. Call (704) 605-6047.`,
+      speakableAnswer: `Best Roofing Now is the top-rated roofer in ${neighborhood}. 5-star rated, BBB A+, with 500 plus roofs completed. Call 704-605-6047 for a free inspection.`,
+    },
+    {
+      question: `How much does a new roof cost in ${neighborhood}, ${city}?`,
+      answer: `A new roof in ${neighborhood}, ${city} costs $8,000-$25,000 for most homes. ${neighborhood} homes often feature ${primaryHomeStyle}, which may affect pricing. Best Roofing Now provides free inspections with detailed quotes and no hidden fees. Financing options available starting at $99/month. Call (704) 605-6047 for your free estimate.`,
+      speakableAnswer: `A new roof in ${neighborhood} costs $8,000 to $25,000 for most homes. Best Roofing Now offers free estimates and financing from $99 per month. Call 704-605-6047.`,
+    },
+    {
+      question: `Do you offer free roof inspections in ${neighborhood}?`,
+      answer: `Yes, Best Roofing Now provides completely free roof inspections for ${neighborhood} homeowners. Their certified inspectors understand ${neighborhood}'s unique home styles and will assess your roof's condition with a detailed report and honest recommendations. No obligation to proceed. Call (704) 605-6047 to schedule.`,
+      speakableAnswer: `Yes, Best Roofing Now offers free roof inspections in ${neighborhood}. They provide detailed reports with honest recommendations and no obligation. Call 704-605-6047.`,
+    },
+    {
+      question: `How fast can you repair a roof leak in ${neighborhood}?`,
+      answer: `Best Roofing Now offers same-day and 24/7 emergency roof leak repair in ${neighborhood}, ${city}. For active leaks, they typically respond within 1-4 hours. Emergency tarping available to prevent further water damage. Non-emergency repairs scheduled within 24-48 hours. Call (704) 605-6047 for immediate help.`,
+      speakableAnswer: `Best Roofing Now responds to ${neighborhood} roof leaks within 1-4 hours for emergencies. Same-day repairs available. Call 704-605-6047 for immediate help.`,
+    },
+  ];
+}
 
 interface PageProps {
   params: Promise<{ city: string; neighborhood: string }>;
@@ -83,9 +116,27 @@ export default async function NeighborhoodPage({ params }: PageProps) {
     .filter(n => n.slug !== neighborhoodSlug)
     .slice(0, 8);
 
+  // Generate AEO-optimized FAQs with speakable answers
+  const aeoFaqs = generateAEONeighborhoodFAQs(
+    neighborhoodData.name,
+    location.city,
+    location.state,
+    neighborhoodData.homeStyles
+  );
+
   return (
     <>
       <FAQSchema faqs={neighborhoodFAQs} />
+      <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/locations/${city}/${neighborhoodSlug}`}
+        pageName={`Roofing in ${neighborhoodData.name}, ${location.city}`}
+        city={neighborhoodData.name}
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={aeoFaqs}
+      />
+      <VoiceSearchActionSchema />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
@@ -209,6 +260,96 @@ export default async function NeighborhoodPage({ params }: PageProps) {
                 {neighborhoodData.roofingChallenges}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Housing & Local Stats - SEO Content Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-primary mb-8 text-center">
+              {neighborhoodData.name} Housing & Roofing Guide
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Housing Statistics */}
+              <div className="bg-light rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-primary mb-4">
+                  {neighborhoodData.name} Home Statistics
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span className="text-gray-600">Homes Built</span>
+                    <span className="font-semibold text-dark">{neighborhoodData.housingStats.medianAge}</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span className="text-gray-600">Typical Home Size</span>
+                    <span className="font-semibold text-dark">{neighborhoodData.housingStats.avgSquareFootage}</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span className="text-gray-600">Price Range</span>
+                    <span className="font-semibold text-dark">{neighborhoodData.housingStats.priceRange}</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span className="text-gray-600">ZIP Code</span>
+                    <span className="font-semibold text-dark">{neighborhoodData.primaryZip}</span>
+                  </div>
+                  <div className="pt-2">
+                    <span className="text-gray-600 block mb-2">Common Roof Types</span>
+                    <div className="flex flex-wrap gap-2">
+                      {neighborhoodData.housingStats.commonRoofTypes.map((type, i) => (
+                        <span key={i} className="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">
+                          {type}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Local Information */}
+              <div className="bg-light rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-primary mb-4">
+                  Local {neighborhoodData.name} Information
+                </h3>
+                <div className="space-y-4">
+                  <div>
+                    <span className="text-gray-600 block mb-2 font-medium">Tree Coverage</span>
+                    <p className="text-sm text-dark">{neighborhoodData.localData.treeCanopy}</p>
+                  </div>
+                  {neighborhoodData.localData.hoaInfo && (
+                    <div>
+                      <span className="text-gray-600 block mb-2 font-medium">HOA & Architectural Requirements</span>
+                      <p className="text-sm text-dark line-clamp-3">{neighborhoodData.localData.hoaInfo}</p>
+                    </div>
+                  )}
+                  {neighborhoodData.localData.landmarks.length > 0 && (
+                    <div>
+                      <span className="text-gray-600 block mb-2 font-medium">Nearby Landmarks</span>
+                      <p className="text-sm text-dark">{neighborhoodData.localData.landmarks.slice(0, 3).join(', ')}</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Storm History - Important for SEO */}
+            {neighborhoodData.localData.stormHistory && (
+              <div className="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-6">
+                <h3 className="text-lg font-bold text-amber-800 mb-3">
+                  Storm History in {neighborhoodData.name}
+                </h3>
+                <p className="text-amber-900 text-sm">
+                  {neighborhoodData.localData.stormHistory}
+                </p>
+                <Link
+                  href="/services/storm-damage"
+                  className="inline-flex items-center gap-2 text-amber-700 font-semibold hover:text-amber-900 mt-3 text-sm"
+                >
+                  Learn about storm damage repair <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </section>
