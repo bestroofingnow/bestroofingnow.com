@@ -8,19 +8,32 @@ import { SITE_CONFIG } from '@/lib/constants';
 
 type ModalStep = 'address' | 'calculating' | 'roofType' | 'steepness' | 'complexity' | 'stories' | 'form' | 'results' | 'success';
 
+type EstimateType = 'residential' | 'commercial';
+
 interface EstimateModalProps {
   isOpen: boolean;
   onClose: () => void;
+  estimateType?: EstimateType;
 }
 
-// Roof type options
-const ROOF_TYPES = [
+// Residential roof type options
+const RESIDENTIAL_ROOF_TYPES = [
   { id: 'shingles', name: 'Shingles', description: 'Most popular choice' },
   { id: 'metal', name: 'Metal Roofing', description: 'Durable & long-lasting' },
   { id: 'synthetic-cedar', name: 'Synthetic Cedar', description: 'Natural wood look' },
   { id: 'synthetic-clay', name: 'Synthetic Clay', description: 'Mediterranean style' },
   { id: 'synthetic-slate', name: 'Synthetic Slate', description: 'Classic elegance' },
   { id: 'coatings', name: 'Roof Coatings', description: 'Restore existing roof' },
+];
+
+// Commercial roof type options
+const COMMERCIAL_ROOF_TYPES = [
+  { id: 'tpo', name: 'TPO Membrane', description: 'Energy efficient & durable' },
+  { id: 'epdm', name: 'EPDM Rubber', description: 'Time-tested reliability' },
+  { id: 'pvc', name: 'PVC Membrane', description: 'Chemical resistant' },
+  { id: 'modified-bitumen', name: 'Modified Bitumen', description: 'Multi-layer protection' },
+  { id: 'commercial-metal', name: 'Metal Roofing', description: 'Long-lasting & durable' },
+  { id: 'commercial-coatings', name: 'Roof Coatings', description: 'Restore existing roof' },
 ];
 
 // Steepness options
@@ -60,7 +73,9 @@ interface Package {
   features: string[];
 }
 
-export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
+export default function EstimateModal({ isOpen, onClose, estimateType = 'residential' }: EstimateModalProps) {
+  const isCommercial = estimateType === 'commercial';
+  const ROOF_TYPES = isCommercial ? COMMERCIAL_ROOF_TYPES : RESIDENTIAL_ROOF_TYPES;
   const [step, setStep] = useState<ModalStep>('address');
   const [address, setAddress] = useState('');
   const [predictions, setPredictions] = useState<PlacePrediction[]>([]);
@@ -249,13 +264,172 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
 
     const sqFt = estimate.roofSqFt;
     const squares = estimate.squares;
-    const steepMult = STEEPNESS_OPTIONS.find(s => s.id === steepness)?.multiplier || 1.0;
-    const complexMult = COMPLEXITY_OPTIONS.find(c => c.id === complexity)?.multiplier || 1.0;
-    const storyMult = STORIES_OPTIONS.find(s => s.id === stories)?.multiplier || 1.0;
+
+    // For commercial, we use simpler multipliers (flat roofs don't have steep/complex factors)
+    const steepMult = isCommercial ? 1.0 : (STEEPNESS_OPTIONS.find(s => s.id === steepness)?.multiplier || 1.0);
+    const complexMult = isCommercial ? 1.0 : (COMPLEXITY_OPTIONS.find(c => c.id === complexity)?.multiplier || 1.0);
+    const storyMult = isCommercial ? 1.0 : (STORIES_OPTIONS.find(s => s.id === stories)?.multiplier || 1.0);
     const totalMult = steepMult * complexMult * storyMult;
 
     const packages: Package[] = [];
 
+    // Commercial roofing packages
+    if (isCommercial) {
+      if (roofType === 'tpo') {
+        packages.push({
+          name: 'TPO Standard',
+          tier: 'good',
+          description: 'Quality 60-mil TPO membrane with standard installation',
+          warranty: '15-year manufacturer warranty',
+          priceRange: {
+            low: Math.round(sqFt * 10 * totalMult),
+            high: Math.round(sqFt * 14 * totalMult),
+          },
+          features: ['60-mil TPO membrane', 'Energy Star rated', 'Heat-welded seams', 'Standard insulation', '15-year workmanship warranty'],
+        });
+        packages.push({
+          name: 'TPO Premium',
+          tier: 'better',
+          description: 'Premium 80-mil TPO with enhanced insulation package',
+          warranty: '20-year manufacturer warranty',
+          priceRange: {
+            low: Math.round(sqFt * 14 * totalMult),
+            high: Math.round(sqFt * 18 * totalMult),
+          },
+          features: ['80-mil TPO membrane', 'R-30 insulation', 'Reinforced seams', 'Tapered drainage system', '20-year NDL warranty'],
+        });
+        packages.push({
+          name: 'TPO Complete System',
+          tier: 'best',
+          description: 'Complete commercial roofing system with maximum protection',
+          warranty: '25-year NDL warranty',
+          priceRange: {
+            low: Math.round(sqFt * 18 * totalMult),
+            high: Math.round(sqFt * 22 * totalMult),
+          },
+          features: ['80-mil premium TPO', 'Complete drainage solution', 'R-38 insulation', 'Walkway pads included', '25-year no-dollar-limit warranty'],
+        });
+      } else if (roofType === 'epdm') {
+        packages.push({
+          name: 'EPDM Standard',
+          tier: 'good',
+          description: 'Durable 60-mil EPDM rubber membrane',
+          warranty: '15-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 10 * totalMult),
+            high: Math.round(sqFt * 13 * totalMult),
+          },
+          features: ['60-mil EPDM membrane', 'Fully adhered system', 'UV resistant', 'Proven 50+ year track record', 'Factory seams'],
+        });
+        packages.push({
+          name: 'EPDM Premium',
+          tier: 'better',
+          description: 'Premium 90-mil EPDM with enhanced protection',
+          warranty: '20-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 13 * totalMult),
+            high: Math.round(sqFt * 18 * totalMult),
+          },
+          features: ['90-mil EPDM membrane', 'Fleece-back system', 'Enhanced puncture resistance', 'Complete edge details', 'Extended warranty coverage'],
+        });
+      } else if (roofType === 'pvc') {
+        packages.push({
+          name: 'PVC Standard',
+          tier: 'good',
+          description: 'Chemical-resistant PVC membrane system',
+          warranty: '20-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 12 * totalMult),
+            high: Math.round(sqFt * 16 * totalMult),
+          },
+          features: ['60-mil PVC membrane', 'Chemical resistant', 'Heat-welded seams', 'Ideal for restaurants/kitchens', 'Fire resistant'],
+        });
+        packages.push({
+          name: 'PVC Premium',
+          tier: 'better',
+          description: 'Premium PVC with enhanced durability',
+          warranty: '25-year NDL warranty',
+          priceRange: {
+            low: Math.round(sqFt * 16 * totalMult),
+            high: Math.round(sqFt * 22 * totalMult),
+          },
+          features: ['80-mil PVC membrane', 'Reinforced membrane', 'Enhanced chemical resistance', 'Custom color options', 'Full system warranty'],
+        });
+      } else if (roofType === 'modified-bitumen') {
+        packages.push({
+          name: 'Modified Bitumen 2-Ply',
+          tier: 'good',
+          description: 'Traditional 2-ply modified bitumen system',
+          warranty: '15-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 10 * totalMult),
+            high: Math.round(sqFt * 14 * totalMult),
+          },
+          features: ['SBS modified bitumen', '2-ply system', 'Torch applied', 'Excellent waterproofing', 'Time-tested performance'],
+        });
+        packages.push({
+          name: 'Modified Bitumen 3-Ply',
+          tier: 'better',
+          description: 'Enhanced 3-ply system with maximum protection',
+          warranty: '20-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 14 * totalMult),
+            high: Math.round(sqFt * 20 * totalMult),
+          },
+          features: ['Premium SBS membrane', '3-ply system', 'Granulated cap sheet', 'Self-healing properties', 'Enhanced hail resistance'],
+        });
+      } else if (roofType === 'commercial-metal') {
+        packages.push({
+          name: 'Standing Seam Metal',
+          tier: 'good',
+          description: 'Commercial-grade standing seam metal roof',
+          warranty: '30-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 10 * totalMult),
+            high: Math.round(sqFt * 13 * totalMult),
+          },
+          features: ['24-gauge steel panels', 'Concealed fasteners', 'Kynar 500 finish', 'Snow guards included', 'Energy efficient'],
+        });
+        packages.push({
+          name: 'Premium Metal Roof',
+          tier: 'better',
+          description: 'Premium commercial metal roofing system',
+          warranty: '40-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 13 * totalMult),
+            high: Math.round(sqFt * 16 * totalMult),
+          },
+          features: ['22-gauge steel panels', 'Structural standing seam', 'Custom color matching', 'Integrated gutters available', 'Maximum durability'],
+        });
+      } else if (roofType === 'commercial-coatings') {
+        packages.push({
+          name: 'Silicone Coating',
+          tier: 'good',
+          description: 'Restore your existing commercial roof',
+          warranty: '10-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 8 * totalMult),
+            high: Math.round(sqFt * 9 * totalMult),
+          },
+          features: ['Silicone roof coating', 'Seamless application', 'Reflects up to 90% of UV', 'No tear-off required', 'Extends roof life 15+ years'],
+        });
+        packages.push({
+          name: 'Premium Coating System',
+          tier: 'better',
+          description: 'Multi-coat restoration system with reinforcement',
+          warranty: '15-year warranty',
+          priceRange: {
+            low: Math.round(sqFt * 9 * totalMult),
+            high: Math.round(sqFt * 10 * totalMult),
+          },
+          features: ['Premium silicone coating', 'Fabric reinforcement at seams', 'Multiple coat application', 'Cool roof rated', 'Comprehensive warranty'],
+        });
+      }
+
+      return packages;
+    }
+
+    // Residential roofing packages
     if (roofType === 'shingles') {
       // Good - Generic Arch
       packages.push({
@@ -473,7 +647,10 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
 
   // Navigation helpers
   const goBack = () => {
-    const stepOrder: ModalStep[] = ['address', 'calculating', 'roofType', 'steepness', 'complexity', 'stories', 'form', 'results', 'success'];
+    // For commercial, skip steepness/complexity/stories steps
+    const residentialSteps: ModalStep[] = ['address', 'calculating', 'roofType', 'steepness', 'complexity', 'stories', 'form', 'results', 'success'];
+    const commercialSteps: ModalStep[] = ['address', 'calculating', 'roofType', 'form', 'results', 'success'];
+    const stepOrder = isCommercial ? commercialSteps : residentialSteps;
     const currentIndex = stepOrder.indexOf(step);
     if (currentIndex > 0) {
       // Skip calculating when going back
@@ -483,7 +660,14 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
   };
 
   const goNext = () => {
-    if (step === 'roofType' && roofType) setStep('steepness');
+    if (step === 'roofType' && roofType) {
+      // For commercial, skip directly to form after roof type selection
+      if (isCommercial) {
+        setStep('form');
+      } else {
+        setStep('steepness');
+      }
+    }
     else if (step === 'steepness' && steepness) setStep('complexity');
     else if (step === 'complexity' && complexity) setStep('stories');
     else if (step === 'stories' && stories) setStep('form');
@@ -525,13 +709,13 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
                 <Home className="w-8 h-8 text-primary" />
               </div>
               <h2 id="estimate-modal-title" className="text-2xl font-bold text-gray-900 mb-2">
-                Get Your Free Roof Estimate
+                {isCommercial ? 'Get Your Free Commercial Roof Estimate' : 'Get Your Free Roof Estimate'}
               </h2>
               <p className="text-gray-600">
-                Enter your address to get started
+                {isCommercial ? 'Enter your commercial property address' : 'Enter your address to get started'}
               </p>
               <p className="text-sm text-gray-500 mt-2">
-                Takes about 90 seconds - Free, no obligation
+                {isCommercial ? 'First commercial instant estimate tool - Free, no obligation' : 'Takes about 90 seconds - Free, no obligation'}
               </p>
             </div>
 
@@ -624,16 +808,16 @@ export default function EstimateModal({ isOpen, onClose }: EstimateModalProps) {
             <div className="mb-6">
               {/* Progress Bar */}
               <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
-                <div className="bg-primary h-2 rounded-full transition-all duration-300" style={{ width: '25%' }} />
+                <div className="bg-primary h-2 rounded-full transition-all duration-300" style={{ width: isCommercial ? '100%' : '25%' }} />
               </div>
               <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                 <span className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">1</span>
-                <span>of 4</span>
+                <span>of {isCommercial ? '1' : '4'}</span>
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                What type of roof are you interested in?
+                {isCommercial ? 'What type of commercial roofing system?' : 'What type of roof are you interested in?'}
               </h2>
-              <p className="text-gray-600 text-sm">Select the material you&apos;re considering</p>
+              <p className="text-gray-600 text-sm">{isCommercial ? 'Select the system that best fits your needs' : 'Select the material you\'re considering'}</p>
             </div>
 
             <div className="grid grid-cols-2 gap-3" role="group" aria-label="Roof type options">

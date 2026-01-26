@@ -1,6 +1,6 @@
 'use client';
 
-import { useEstimate } from './EstimateProvider';
+import { useEstimate, EstimateType } from './EstimateProvider';
 import { Calculator } from 'lucide-react';
 import { ReactNode } from 'react';
 
@@ -10,6 +10,7 @@ interface EstimateButtonProps {
   variant?: 'primary' | 'accent' | 'outline' | 'white';
   size?: 'sm' | 'md' | 'lg';
   showIcon?: boolean;
+  estimateType?: EstimateType;
 }
 
 export default function EstimateButton({
@@ -18,6 +19,7 @@ export default function EstimateButton({
   variant = 'accent',
   size = 'md',
   showIcon = true,
+  estimateType = 'residential',
 }: EstimateButtonProps) {
   const { openEstimateModal } = useEstimate();
 
@@ -38,7 +40,7 @@ export default function EstimateButton({
 
   return (
     <button
-      onClick={openEstimateModal}
+      onClick={() => openEstimateModal(estimateType)}
       className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {showIcon && <Calculator className="w-5 h-5" aria-hidden="true" />}

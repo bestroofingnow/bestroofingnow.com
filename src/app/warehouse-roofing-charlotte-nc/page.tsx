@@ -601,7 +601,7 @@ export default function WarehouseRoofingCharlotteNCPage() {
           </div>
 
           <div className="text-center">
-            <EstimateButton variant="white" size="lg" className="text-lg px-10">
+            <EstimateButton variant="white" size="lg" className="text-lg px-10" estimateType="commercial">
               Get Your Instant Warehouse Estimate
             </EstimateButton>
             <p className="text-white/60 text-sm mt-4">

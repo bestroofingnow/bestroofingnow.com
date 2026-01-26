@@ -9,10 +9,13 @@ const EstimateModal = dynamic(() => import('./EstimateModal'), {
   loading: () => null,
 });
 
+export type EstimateType = 'residential' | 'commercial';
+
 interface EstimateContextType {
-  openEstimateModal: () => void;
+  openEstimateModal: (type?: EstimateType) => void;
   closeEstimateModal: () => void;
   isOpen: boolean;
+  estimateType: EstimateType;
 }
 
 const EstimateContext = createContext<EstimateContextType | undefined>(undefined);
@@ -34,11 +37,13 @@ const EXIT_INTENT_SHOWN_KEY = 'brn_exit_intent_shown';
 
 export function EstimateProvider({ children }: EstimateProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [estimateType, setEstimateType] = useState<EstimateType>('residential');
   const [hasBeenOpened, setHasBeenOpened] = useState(false); // Track if modal was ever opened
   const [exitIntentEnabled, setExitIntentEnabled] = useState(false);
   const hasShownRef = useRef(false); // Additional in-memory flag to prevent double-firing
 
-  const openEstimateModal = useCallback(() => {
+  const openEstimateModal = useCallback((type: EstimateType = 'residential') => {
+    setEstimateType(type);
     setHasBeenOpened(true); // Trigger lazy load
     setIsOpen(true);
   }, []);
@@ -120,10 +125,10 @@ export function EstimateProvider({ children }: EstimateProviderProps) {
   }, [handleExitIntent]);
 
   return (
-    <EstimateContext.Provider value={{ openEstimateModal, closeEstimateModal, isOpen }}>
+    <EstimateContext.Provider value={{ openEstimateModal, closeEstimateModal, isOpen, estimateType }}>
       {children}
       {/* Only render modal after it's been opened at least once to avoid loading the bundle */}
-      {hasBeenOpened && <EstimateModal isOpen={isOpen} onClose={closeEstimateModal} />}
+      {hasBeenOpened && <EstimateModal isOpen={isOpen} onClose={closeEstimateModal} estimateType={estimateType} />}
     </EstimateContext.Provider>
   );
 }

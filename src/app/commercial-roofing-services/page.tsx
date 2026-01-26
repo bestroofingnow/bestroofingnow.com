@@ -254,6 +254,7 @@ export default function CommercialRoofingServicesPage() {
                 variant="outline"
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-primary"
+                estimateType="commercial"
               >
                 Free Commercial Estimate
               </EstimateButton>
@@ -487,6 +488,7 @@ export default function CommercialRoofingServicesPage() {
                 variant="outline"
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-accent"
+                estimateType="commercial"
               >
                 Free Commercial Estimate
               </EstimateButton>
