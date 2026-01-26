@@ -20,6 +20,7 @@ interface MapMarker {
 
 interface ProjectMapProps {
   city?: string;
+  cities?: string[]; // Multiple cities for regional pages (e.g., Lake Norman)
   className?: string;
   height?: string;
   showControls?: boolean;
@@ -30,6 +31,7 @@ interface ProjectMapProps {
 // Leaflet-based map component (free, no API key required)
 export function ProjectMap({
   city,
+  cities,
   className = '',
   height = '500px',
   showControls = true,
@@ -57,18 +59,35 @@ export function ProjectMap({
     return markers.filter(m => m.city.toLowerCase().includes(cityFilter.toLowerCase()));
   }, [markers, cityFilter]);
 
-  // Fetch map data
+  // Fetch map data - always show projects, expand search if none found locally
   useEffect(() => {
     async function fetchMapData() {
       try {
         const params = new URLSearchParams();
-        if (city) params.set('city', city);
+        // Support multiple cities (for regional pages like Lake Norman)
+        if (cities && cities.length > 0) {
+          params.set('cities', cities.join(','));
+        } else if (city) {
+          params.set('city', city);
+        }
 
         const response = await fetch(`/api/projects/map?${params}`);
         if (!response.ok) throw new Error('Failed to fetch map data');
 
         const data = await response.json();
-        setMarkers(data.markers || []);
+        let fetchedMarkers = data.markers || [];
+
+        // If no projects found for specified city/cities, fetch ALL projects
+        // This ensures the map always shows something (expands to show nearest projects)
+        if (fetchedMarkers.length === 0 && (city || (cities && cities.length > 0))) {
+          const allResponse = await fetch('/api/projects/map');
+          if (allResponse.ok) {
+            const allData = await allResponse.json();
+            fetchedMarkers = allData.markers || [];
+          }
+        }
+
+        setMarkers(fetchedMarkers);
       } catch (err) {
         console.error('Error fetching map data:', err);
         setError('Unable to load map data');
@@ -78,11 +97,11 @@ export function ProjectMap({
     }
 
     fetchMapData();
-  }, [city]);
+  }, [city, cities]);
 
-  // Initialize Leaflet map
+  // Initialize Leaflet map - always show a map even with no markers
   useEffect(() => {
-    if (typeof window === 'undefined' || !mapRef.current || filteredMarkers.length === 0) return;
+    if (typeof window === 'undefined' || !mapRef.current || loading) return;
 
     // Dynamically load Leaflet
     const loadLeaflet = async () => {
@@ -116,16 +135,21 @@ export function ProjectMap({
         mapInstanceRef.current.remove();
       }
 
-      // Calculate center from filtered markers
-      const lats = filteredMarkers.map(m => m.lat);
-      const lngs = filteredMarkers.map(m => m.lng);
-      const centerLat = (Math.min(...lats) + Math.max(...lats)) / 2;
-      const centerLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
+      // Calculate center from filtered markers (default to Charlotte if no markers)
+      let centerLat = 35.2271; // Charlotte default
+      let centerLng = -80.8431;
+
+      if (filteredMarkers.length > 0) {
+        const lats = filteredMarkers.map(m => m.lat);
+        const lngs = filteredMarkers.map(m => m.lng);
+        centerLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+        centerLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
+      }
 
       // Create map with full interactivity
       const map = L.map(mapRef.current, {
-        center: [centerLat || 35.2271, centerLng || -80.8431], // Default to Charlotte
-        zoom: 10,
+        center: [centerLat, centerLng],
+        zoom: filteredMarkers.length > 0 ? 10 : 9, // Slightly wider zoom if showing fallback
         scrollWheelZoom: true, // Enable scroll wheel zoom
         doubleClickZoom: true, // Enable double-click zoom
         touchZoom: true, // Enable touch zoom on mobile
@@ -247,7 +271,7 @@ export function ProjectMap({
         mapInstanceRef.current = null;
       }
     };
-  }, [filteredMarkers, onMarkerClick]);
+  }, [filteredMarkers, onMarkerClick, loading]);
 
   if (loading) {
     return (
@@ -268,16 +292,7 @@ export function ProjectMap({
     );
   }
 
-  if (markers.length === 0 && !loading) {
-    return (
-      <div className={`flex items-center justify-center bg-gray-100 rounded-xl ${className}`} style={{ height }}>
-        <div className="text-center">
-          <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-          <p className="text-gray-600">No projects found in this area</p>
-        </div>
-      </div>
-    );
-  }
+  // Never show empty state - always render the map (it will show default Charlotte area)
 
   return (
     <div className={`relative rounded-xl overflow-hidden shadow-lg ${className}`}>

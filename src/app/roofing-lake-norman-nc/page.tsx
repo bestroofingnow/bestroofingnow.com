@@ -27,8 +27,13 @@ import {
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
+import ProjectMap from '@/components/projects/ProjectMap';
+import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+
+// All cities in the Lake Norman area for project map/gallery
+const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersville', 'Denver', 'Sherrills Ford'];
 
 export const metadata: Metadata = {
   title: 'Lake Norman Roofing | LKN Roofers | Cornelius, Davidson, Mooresville',
@@ -304,6 +309,57 @@ export default function LakeNormanRoofingPage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Lake Norman Projects Map */}
+      <section className="py-16 bg-light">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <MapPin className="w-6 h-6 text-accent" />
+              <span className="text-accent font-semibold">Our Lake Norman Work</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              200+ Roofing Projects in Lake Norman
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Explore our completed roofing projects across Mooresville, Cornelius, Davidson,
+              Huntersville, Denver, and Sherrills Ford. Each pin represents a satisfied homeowner.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+            <ProjectMap
+              cities={LAKE_NORMAN_CITIES}
+              height="500px"
+              showControls={true}
+              showCityFilter={true}
+            />
+          </div>
+
+          <div className="text-center mt-6">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+            >
+              View all Lake Norman projects with photos
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Lake Norman Project Gallery */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <LocationProjectGallery
+            cities={LAKE_NORMAN_CITIES}
+            title="Recent Lake Norman Roofing Projects"
+            subtitle="Real roofing projects from Mooresville, Cornelius, Davidson, Huntersville, Denver & Sherrills Ford"
+            maxProjects={6}
+            showViewAll={true}
+          />
         </div>
       </section>
 
