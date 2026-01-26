@@ -88,6 +88,7 @@ export async function GET() {
     { url: `${BASE_URL}/epdm-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     // Premium/Luxury Material Pages
     { url: `${BASE_URL}/luxury-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/luxury-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/copper-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/designer-shingles-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/cedar-shake-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
@@ -182,6 +183,8 @@ export async function GET() {
     // ============================================
     // Huntersville
     { url: `${BASE_URL}/roof-repair-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofers-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/storm-damage-roof-repair-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/emergency-roof-repair-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
@@ -194,10 +197,15 @@ export async function GET() {
     { url: `${BASE_URL}/roof-inspection-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     // Cornelius
     { url: `${BASE_URL}/roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofers-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/storm-damage-roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     // Davidson
     { url: `${BASE_URL}/roof-replacement-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofers-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     // Other cities
     { url: `${BASE_URL}/roof-repair-pineville-nc`, changefreq: 'weekly', priority: '0.8' },
