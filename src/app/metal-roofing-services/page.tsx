@@ -23,6 +23,9 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  LocalBusinessSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
@@ -184,6 +187,37 @@ export default function MetalRoofingServicesPage() {
           { name: 'Metal Roofing Contractor Charlotte NC', url: pageUrl },
         ]}
       />
+      <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Metal Roofing Contractor Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How much does a metal roof cost in Charlotte NC?',
+            answer: 'Metal roofing in Charlotte typically costs $15,000-$40,000+ for a standard home. Standing seam metal roofing costs $12-$18 per square foot installed, metal shingles cost $8-$14 per square foot, and corrugated panels cost $5-$10 per square foot. While the upfront cost is higher than asphalt shingles, metal roofs last 50+ years, making them more cost-effective long-term.',
+            speakableAnswer: 'Metal roofing in Charlotte costs $15,000 to $40,000 for a typical home. Standing seam runs $12 to $18 per square foot. The 50+ year lifespan makes metal more cost-effective than shingles.',
+          },
+          {
+            question: 'Who is the best metal roofing contractor in Charlotte NC?',
+            answer: 'Best Roofing Now is a top-rated metal roofing contractor in Charlotte NC, offering standing seam, metal shingles, and corrugated panel installation. We are GAF certified, fully licensed and insured, with excellent reviews. Call 704-605-6047 for a free metal roof estimate.',
+            speakableAnswer: 'Best Roofing Now is a top-rated metal roofing contractor in Charlotte. We install standing seam, metal shingles, and corrugated panels. Call 704-605-6047 for a free estimate.',
+          },
+          {
+            question: 'How long does a metal roof last in North Carolina?',
+            answer: 'A properly installed metal roof in North Carolina lasts 50-70 years with minimal maintenance. This is 2-3 times longer than asphalt shingles which typically last 15-25 years. Metal roofs are especially well-suited for NC weather, handling heat, humidity, storms, and hail better than most materials.',
+            speakableAnswer: 'Metal roofs last 50 to 70 years in North Carolina, which is 2 to 3 times longer than asphalt shingles. They handle NC heat, storms, and humidity exceptionally well.',
+          },
+          {
+            question: 'Is a metal roof worth it in Charlotte?',
+            answer: 'Yes, metal roofing is worth it in Charlotte. Metal roofs reduce cooling costs by 20-25% during hot summers, resist severe storms and hail, and last 50+ years. They also increase home value by 1-6%. While the upfront cost is higher, you save money long-term by never needing another roof replacement.',
+            speakableAnswer: 'Yes, metal roofs are worth it in Charlotte. They reduce cooling costs by 20-25%, resist storms and hail, last 50+ years, and increase home value. You save money long-term.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

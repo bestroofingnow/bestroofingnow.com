@@ -20,7 +20,7 @@ import {
   Ruler,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -234,6 +234,26 @@ export default function GutterInstallationCorneliusNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gutter-installation-cornelius-nc`}
+        pageName="Gutter Installation Cornelius NC"
+        city="Cornelius"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How much does gutter installation cost in Cornelius NC?',
+            answer: 'Gutter installation in Cornelius NC costs $6-$15 per linear foot for seamless aluminum gutters, averaging $1,200-$3,000 for Lake Norman homes. Best Roofing Now serves Cornelius with free estimates and lifetime warranties.',
+            speakableAnswer: 'Gutter installation in Cornelius costs $6-15 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
+          },
+          {
+            question: 'Who installs gutters in Cornelius and Lake Norman?',
+            answer: 'Best Roofing Now is the top-rated gutter installer serving Cornelius and Lake Norman communities with a 5-star Google rating. They install seamless aluminum gutters made on-site with color matching to your home.',
+            speakableAnswer: 'Best Roofing Now installs gutters in Cornelius and Lake Norman with 5-star ratings. Call 704-605-6047.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

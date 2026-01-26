@@ -24,6 +24,9 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -183,6 +186,37 @@ export default function StormDamageRoofRepairCharlottePage() {
           { name: 'Storm Damage Roof Repair Charlotte', url: pageUrl },
         ]}
       />
+      <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Storm Damage Roof Repair Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'Who repairs storm damaged roofs in Charlotte NC?',
+            answer: 'Best Roofing Now is Charlotte\'s trusted storm damage roof repair specialist with 24/7 emergency response. We repair hail damage, wind damage, and fallen tree damage. We handle insurance claims from start to finish and have restored over 500 Charlotte homes. Call 704-605-6047 for emergency storm damage service.',
+            speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Charlotte with 24/7 emergency response. We handle hail, wind, and tree damage plus insurance claims. Call 704-605-6047.',
+          },
+          {
+            question: 'Does insurance cover storm damage roof repair in Charlotte?',
+            answer: 'Yes, most homeowners insurance policies cover storm damage including hail, wind, and fallen trees. Storm damage is classified as an "Act of God" claim. Best Roofing Now works with all major insurance companies, meets with adjusters, and helps maximize your claim settlement. You typically pay only your deductible.',
+            speakableAnswer: 'Yes, most insurance covers storm damage to roofs in Charlotte. We work with all insurers and meet with adjusters. You typically pay only your deductible.',
+          },
+          {
+            question: 'How fast can you respond to storm damage in Charlotte?',
+            answer: 'Best Roofing Now responds to storm damage emergencies in Charlotte within 1-4 hours, depending on conditions. We offer 24/7 emergency service including nights and weekends. Our emergency team provides tarping and temporary repairs to prevent water damage while permanent repairs are scheduled.',
+            speakableAnswer: 'We respond to Charlotte storm damage within 1 to 4 hours, 24/7. Emergency tarping prevents water damage while permanent repairs are scheduled.',
+          },
+          {
+            question: 'What types of storm damage do you repair?',
+            answer: 'We repair all types of storm damage in Charlotte including hail damage (dented, cracked, or bruised shingles), wind damage (missing or lifted shingles), fallen tree and debris damage, and damage from hurricane remnants. We also handle emergency tarping, structural repairs, and complete roof replacements when needed.',
+            speakableAnswer: 'We repair hail damage, wind damage, fallen tree damage, and hurricane damage in Charlotte. Services include emergency tarping and full roof replacement.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

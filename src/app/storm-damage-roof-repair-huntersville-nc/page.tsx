@@ -20,7 +20,14 @@ import {
   Umbrella,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocationSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocationSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -214,6 +221,15 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
           { name: 'Storm Damage Roof Repair Huntersville NC', url: `${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Storm Damage Roof Repair Huntersville NC | Insurance Help"
+        description="Expert storm damage roof repair in Huntersville NC. Hail and wind damage specialists with insurance claim assistance."
+        url={`${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Storm Damage Roof Repair Huntersville NC', url: `${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <LocationSchema
         location={{
@@ -223,6 +239,31 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
           county: 'Mecklenburg',
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc`}
+        pageName="Storm Damage Roof Repair Huntersville NC"
+        city="Huntersville"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'Who repairs storm damaged roofs in Huntersville NC?',
+            answer: 'Best Roofing Now provides expert storm damage roof repair in Huntersville NC with 24/7 emergency response. We specialize in hail damage, wind damage, and insurance claim assistance. We serve Birkdale Village, Rosedale, Skybrook, and all Huntersville neighborhoods. Call 704-605-6047 for a free storm damage inspection.',
+            speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Huntersville with 24/7 emergency response. We handle hail and wind damage plus insurance claims. Call 704-605-6047.',
+          },
+          {
+            question: 'Does insurance cover storm damage roof repair in Huntersville?',
+            answer: 'Yes, most homeowners insurance policies in North Carolina cover storm damage including hail, wind, and fallen trees. Best Roofing Now works directly with all major insurance companies, meets with adjusters, and helps maximize your claim settlement. You typically pay only your deductible.',
+            speakableAnswer: 'Yes, most NC homeowners insurance covers storm damage to roofs. We work with all insurers and help maximize your claim. You typically pay only your deductible.',
+          },
+          {
+            question: 'How quickly can you respond to storm damage in Huntersville?',
+            answer: 'Best Roofing Now offers 24/7 emergency storm damage response in Huntersville. We can typically have a crew on-site within hours for emergency tarping. Full inspections are usually scheduled within 24-48 hours after you call.',
+            speakableAnswer: 'We offer 24/7 emergency response in Huntersville. Emergency tarping within hours, full inspections within 24 to 48 hours.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

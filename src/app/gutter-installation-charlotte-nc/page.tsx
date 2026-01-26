@@ -16,7 +16,7 @@ import {
   Wrench,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -419,6 +419,32 @@ export default function GutterInstallationCharlottePage() {
       />
       <FAQSchema faqs={faqs} />
       <GutterInstallationServiceSchema />
+      <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gutter-installation-charlotte-nc`}
+        pageName="Gutter Installation Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How much does gutter installation cost in Charlotte NC?',
+            answer: 'Gutter installation in Charlotte NC costs $6-$15 per linear foot for seamless aluminum gutters, or $1,000-$3,000 for most homes. Copper gutters cost $25-$40 per foot. Best Roofing Now provides free estimates with transparent pricing.',
+            speakableAnswer: 'Gutter installation in Charlotte costs $6-15 per foot for aluminum, or $1,000-3,000 for most homes. Call Best Roofing Now at 704-605-6047.',
+          },
+          {
+            question: 'Who is the best gutter installation company in Charlotte?',
+            answer: 'Best Roofing Now is Charlotte\'s top-rated gutter installation company with a 5-star Google rating and BBB A+ accreditation. This veteran-owned company installs seamless gutters made on-site with lifetime warranties.',
+            speakableAnswer: 'Best Roofing Now is Charlotte\'s top-rated gutter installer with 5-star ratings and lifetime warranties. Call 704-605-6047.',
+          },
+          {
+            question: 'What size gutters do I need in Charlotte NC?',
+            answer: 'Most Charlotte homes need 5-inch gutters for standard roof sizes or 6-inch oversized gutters for large roofs with steep pitches. Best Roofing Now assesses your roof during free inspections to recommend the right gutter size.',
+            speakableAnswer: 'Most Charlotte homes need 5 or 6-inch gutters. Best Roofing Now provides free inspections to recommend the right size.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

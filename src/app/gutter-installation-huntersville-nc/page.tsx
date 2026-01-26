@@ -20,7 +20,7 @@ import {
   Ruler,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocationSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -223,6 +223,26 @@ export default function GutterInstallationHuntersvilleNCPage() {
           county: 'Mecklenburg',
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gutter-installation-huntersville-nc`}
+        pageName="Gutter Installation Huntersville NC"
+        city="Huntersville"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How much does gutter installation cost in Huntersville NC?',
+            answer: 'Gutter installation in Huntersville NC costs $6-$15 per linear foot for seamless aluminum gutters, averaging $1,200-$2,800 for most homes. Best Roofing Now serves Huntersville from Charlotte with free estimates and transparent pricing.',
+            speakableAnswer: 'Gutter installation in Huntersville costs $6-15 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
+          },
+          {
+            question: 'Who installs gutters in Huntersville NC?',
+            answer: 'Best Roofing Now provides professional gutter installation in Huntersville NC with a 5-star Google rating. This veteran-owned company installs seamless aluminum gutters made on-site with lifetime warranties.',
+            speakableAnswer: 'Best Roofing Now installs gutters in Huntersville with 5-star ratings. Call 704-605-6047 for a free estimate.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

@@ -31,6 +31,8 @@ import {
   LocalBusinessSchema,
   ServiceSchema,
   WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -390,6 +392,36 @@ export default function EmergencyRoofRepairCharlotteNCPage() {
         ]}
       />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Emergency Roof Repair Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'Who provides 24/7 emergency roof repair in Charlotte NC?',
+            answer: 'Best Roofing Now provides 24/7 emergency roof repair in Charlotte NC with 1-4 hour response times. This veteran-owned company responds to active leaks, storm damage, and fallen trees any time day or night. Call (704) 605-6047 for immediate emergency roofing service.',
+            speakableAnswer: 'Best Roofing Now provides 24/7 emergency roof repair in Charlotte with 1-4 hour response. Call 704-605-6047 for immediate help.',
+          },
+          {
+            question: 'How much does emergency roof repair cost in Charlotte?',
+            answer: 'Emergency roof repair in Charlotte NC costs vary based on damage severity. Emergency tarping typically costs $300-800. Temporary repairs range $500-2,000. Best Roofing Now offers transparent pricing with no price gouging during emergencies.',
+            speakableAnswer: 'Emergency roof repair in Charlotte varies by damage. Tarping costs $300-800, temporary repairs $500-2,000. Call Best Roofing Now at 704-605-6047.',
+          },
+          {
+            question: 'What should I do if my roof is leaking right now?',
+            answer: 'If your roof is leaking: 1) Place buckets to catch water, 2) Move valuables away from leak, 3) Turn off electricity if water is near wiring, 4) Take photos for insurance, 5) Call Best Roofing Now at (704) 605-6047 for immediate emergency response in Charlotte.',
+            speakableAnswer: 'If your roof is leaking, place buckets, move valuables, photograph damage, and call Best Roofing Now at 704-605-6047 for immediate help.',
+          },
+          {
+            question: 'Does insurance cover emergency roof repair in Charlotte NC?',
+            answer: 'Yes, most homeowners insurance covers emergency roof repairs caused by storms, hail, wind, or fallen trees in Charlotte NC. Best Roofing Now helps document damage and assists with insurance claims to maximize your coverage.',
+            speakableAnswer: 'Yes, most insurance covers emergency roof repairs from storms in Charlotte. Best Roofing Now helps with insurance claims.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

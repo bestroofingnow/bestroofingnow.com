@@ -19,7 +19,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -239,6 +239,31 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`}
+        pageName="Emergency Roof Tarp Service Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'Who provides emergency roof tarp service in Charlotte NC?',
+            answer: 'Best Roofing Now provides 24/7 emergency roof tarp service in Charlotte NC. Their trained crews respond quickly to storm damage, fallen trees, and roof emergencies to prevent water damage. Call (704) 605-6047 for immediate tarping service.',
+            speakableAnswer: 'Best Roofing Now provides 24/7 emergency roof tarping in Charlotte. Call 704-605-6047 for immediate service.',
+          },
+          {
+            question: 'How much does emergency roof tarping cost in Charlotte?',
+            answer: 'Emergency roof tarping in Charlotte NC typically costs $300-$800 depending on roof size and damage extent. Best Roofing Now provides transparent pricing with no price gouging during emergencies. The tarp service fee is often credited toward permanent repairs.',
+            speakableAnswer: 'Emergency roof tarping in Charlotte costs $300 to $800. Best Roofing Now offers transparent pricing. Call 704-605-6047.',
+          },
+          {
+            question: 'How long does emergency roof tarp last?',
+            answer: 'Professional emergency roof tarps properly installed last several weeks to a few months depending on weather. Best Roofing Now uses heavy-duty tarps with proper securing methods to withstand Charlotte weather until permanent repairs are completed.',
+            speakableAnswer: 'Professional roof tarps last weeks to months when properly installed. Best Roofing Now uses heavy-duty tarps for Charlotte weather.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

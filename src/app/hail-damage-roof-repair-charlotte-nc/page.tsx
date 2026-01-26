@@ -20,7 +20,14 @@ import {
   Umbrella,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -228,8 +235,47 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
           { name: 'Hail Damage Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Hail Damage Roof Repair Charlotte NC | Insurance Claims Help"
+        description="Expert hail damage roof repair in Charlotte NC. Free storm damage inspections, insurance claim assistance, and professional repairs."
+        url={`${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Hail Damage Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`}
+        pageName="Hail Damage Roof Repair Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How much does hail damage roof repair cost in Charlotte?',
+            answer: 'Hail damage roof repair in Charlotte typically costs $200-$500 for minor repairs, or $8,000-$25,000+ for full roof replacement if damage is extensive. The good news is that most hail damage is covered by homeowner insurance, so you only pay your deductible (usually $500-$2,500). Best Roofing Now provides free inspections and helps maximize your insurance settlement.',
+            speakableAnswer: 'Minor hail repairs cost $200 to $500, while full replacement runs $8,000 to $25,000. Most hail damage is covered by insurance, so you typically only pay your deductible.',
+          },
+          {
+            question: 'Who repairs hail damage roofs in Charlotte NC?',
+            answer: 'Best Roofing Now is Charlotte\'s trusted hail damage roof repair specialist. We provide free hail damage inspections, work with all major insurance companies, meet with adjusters, and ensure you get a fair settlement. Call 704-605-6047 for a free storm damage inspection.',
+            speakableAnswer: 'Best Roofing Now repairs hail damaged roofs in Charlotte. We offer free inspections and handle insurance claims. Call 704-605-6047 for immediate assistance.',
+          },
+          {
+            question: 'Does insurance cover hail damage to roofs in North Carolina?',
+            answer: 'Yes, most homeowners insurance policies in North Carolina cover hail damage to roofs. Hail damage is typically classified as an "Act of God" claim and covered under your dwelling protection. You will pay your deductible, but the rest of the repair or replacement cost is covered. File claims promptly as NC allows 3 years from the storm date.',
+            speakableAnswer: 'Yes, most NC homeowners insurance covers hail damage to roofs. You pay your deductible and insurance covers the rest. File claims within 3 years of the storm.',
+          },
+          {
+            question: 'How do I know if my roof has hail damage?',
+            answer: 'Signs of hail damage include dented or bruised shingles, missing granules appearing as dark spots, cracked or split shingles, dented gutters and downspouts, damaged roof vents, and dents in metal flashing. Many signs are not visible from the ground, so schedule a free professional inspection after any hail storm in Charlotte.',
+            speakableAnswer: 'Hail damage signs include dented shingles, missing granules, cracked shingles, dented gutters, and damaged vents. Get a free professional inspection after any Charlotte hail storm.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

@@ -13,7 +13,15 @@ import {
   Building2,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, VoiceSearchFAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  VoiceSearchFAQSchema,
+  WebPageSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { SITE_CONFIG, FAQ_CATEGORIES, ALL_FAQS, VOICE_SEARCH_FAQS as VOICE_FAQS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -64,9 +72,44 @@ export default function FAQPage() {
           { name: 'FAQ', url: `${SITE_CONFIG.url}/faq` },
         ]}
       />
+      <WebPageSchema
+        name="Roofing FAQs | Common Roofing Questions Answered | Charlotte NC"
+        description="Get answers to common roofing questions about pricing, insurance claims, materials, weather damage, and more from Charlotte's trusted roofers."
+        url={`${SITE_CONFIG.url}/faq`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'FAQ', url: `${SITE_CONFIG.url}/faq` },
+        ]}
+      />
+      <LocalBusinessSchema />
       {/* Only ONE FAQPage schema per page - ALL_FAQS includes comprehensive content */}
       {/* VoiceSearchFAQSchema removed to comply with Google's one FAQPage per page rule */}
       <FAQSchema faqs={ALL_FAQS} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/faq`}
+        pageName="Roofing FAQ Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'What are the most common roofing questions?',
+            answer: 'The most common roofing questions homeowners ask include: How much does a new roof cost? ($8,000-$25,000+ for Charlotte homes), Does my insurance cover roof damage? (typically yes for storm damage), How long do roofs last? (15-30 years for shingles, 50+ for metal), When should I replace my roof? (when shingles are curling, missing, or 20+ years old), and How do I find a reliable roofer?',
+            speakableAnswer: 'Common roofing questions include cost (8 to 25 thousand dollars), insurance coverage for storm damage, roof lifespan of 15 to 50 years depending on material, and when to replace an aging roof.',
+          },
+          {
+            question: 'How do I know if I need a new roof?',
+            answer: 'Signs you need a new roof include: shingles that are curling, cracking, or missing; granules in your gutters; daylight visible through the attic; sagging roof deck; water stains on ceilings or walls; roof age over 20 years; and neighbors replacing their roofs (similar age homes). Best Roofing Now offers free inspections to assess your roof condition.',
+            speakableAnswer: 'You may need a new roof if shingles are curling, cracking or missing, you see granules in gutters, daylight in the attic, water stains inside, or your roof is over 20 years old.',
+          },
+          {
+            question: 'Who can answer my roofing questions in Charlotte?',
+            answer: 'Best Roofing Now answers roofing questions for Charlotte homeowners. We provide free consultations, honest assessments, and expert guidance on roof repairs, replacements, insurance claims, and material selection. Call 704-605-6047 to speak with our roofing experts.',
+            speakableAnswer: 'Best Roofing Now answers roofing questions for Charlotte homeowners with free consultations and honest assessments. Call 704-605-6047 to speak with a roofing expert.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
