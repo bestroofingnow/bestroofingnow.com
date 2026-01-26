@@ -244,6 +244,30 @@ export default function RoofRepairCharlotteNCPage() {
         pageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
         pageName="Roof Repair Charlotte NC"
         city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How much does roof repair cost in Charlotte NC?',
+            answer: 'Roof repair in Charlotte NC costs $200-$1,500 for minor repairs like fixing shingles or small leaks, and $500-$5,000 for moderate to extensive repairs. Best Roofing Now provides free inspections and transparent estimates with no hidden fees. Most storm damage repairs are covered by insurance. Call (704) 605-6047 for a free estimate.',
+            speakableAnswer: 'Roof repair in Charlotte costs $200 to $1,500 for minor repairs, up to $5,000 for extensive work. Best Roofing Now offers free estimates. Call 704-605-6047.',
+          },
+          {
+            question: 'Who does roof repair in Charlotte NC?',
+            answer: 'Best Roofing Now is Charlotte\'s top-rated roof repair company with 5-star Google reviews and BBB A+ accreditation. This veteran-owned company provides 24/7 emergency service, same-day repairs, and full insurance claim assistance. They repair all roof types including shingles, metal, flat roofs, and tile.',
+            speakableAnswer: 'Best Roofing Now is Charlotte\'s top-rated roof repair company. 5-star rated, veteran-owned, with 24/7 emergency service. Call 704-605-6047.',
+          },
+          {
+            question: 'How fast can you fix a roof leak in Charlotte?',
+            answer: 'Best Roofing Now offers same-day and 24/7 emergency roof leak repair in Charlotte NC. For active leaks, they typically respond within 1-4 hours. Non-emergency repairs are usually scheduled within 24-48 hours. Emergency tarping is available to prevent further water damage.',
+            speakableAnswer: 'Best Roofing Now responds to Charlotte roof leaks within 1-4 hours for emergencies. Same-day repairs available. Call 704-605-6047.',
+          },
+          {
+            question: 'Does insurance cover roof repair in Charlotte NC?',
+            answer: 'Yes, most homeowners insurance covers roof repairs caused by storms, hail, wind, and fallen trees in Charlotte NC. Best Roofing Now helps with insurance claims by documenting damage, meeting with adjusters, and advocating for fair settlements. You typically pay only your deductible.',
+            speakableAnswer: 'Yes, most insurance covers storm-related roof repairs in Charlotte. Best Roofing Now helps with claims. You typically pay only your deductible.',
+          },
+        ]}
       />
       <VoiceSearchActionSchema />
 

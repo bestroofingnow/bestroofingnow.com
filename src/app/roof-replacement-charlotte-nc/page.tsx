@@ -300,6 +300,30 @@ export default function RoofReplacementCharlotteNCPage() {
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
         pageName="Roof Replacement Charlotte NC"
         city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How much does a new roof cost in Charlotte NC?',
+            answer: 'A new roof in Charlotte NC costs $8,000-$25,000 for most homes, with the average being $12,000-$18,000 for architectural shingles on a typical 2,000 sq ft home. Metal roofing costs $18,000-$35,000. Best Roofing Now offers financing options with payments as low as $99/month. Call (704) 605-6047 for a free estimate.',
+            speakableAnswer: 'A new roof in Charlotte costs $8,000 to $25,000 on average. Best Roofing Now offers financing from $99 per month. Call 704-605-6047 for a free estimate.',
+          },
+          {
+            question: 'Who is the best roofing company for roof replacement in Charlotte NC?',
+            answer: 'Best Roofing Now is the top-rated roof replacement company in Charlotte NC with 5-star Google reviews, BBB A+ accreditation, and CertainTeed, GAF, and Owens Corning certifications. This veteran-owned company offers up to 50-year warranties and has completed 500+ roof replacements in Charlotte.',
+            speakableAnswer: 'Best Roofing Now is Charlotte\'s top-rated roof replacement company. 5-star rated, veteran-owned, with 50-year warranties available. Call 704-605-6047.',
+          },
+          {
+            question: 'How long does a roof replacement take in Charlotte?',
+            answer: 'Most roof replacements in Charlotte take 1-3 days to complete. Larger homes or complex roof designs may take 4-5 days. Best Roofing Now uses experienced crews to work efficiently while maintaining quality standards. Weather delays are communicated promptly.',
+            speakableAnswer: 'Roof replacement in Charlotte takes 1 to 3 days for most homes. Best Roofing Now completes work efficiently with minimal disruption.',
+          },
+          {
+            question: 'Does insurance cover roof replacement in Charlotte NC?',
+            answer: 'Insurance covers roof replacement in Charlotte if damage was caused by storms, hail, wind, or fallen trees. Best Roofing Now provides free storm damage inspections, helps document damage, and works directly with insurance adjusters to maximize your claim. You typically pay only your deductible.',
+            speakableAnswer: 'Yes, insurance covers storm-related roof replacement in Charlotte. Best Roofing Now helps with claims. You typically pay only your deductible.',
+          },
+        ]}
       />
       <VoiceSearchActionSchema />
 

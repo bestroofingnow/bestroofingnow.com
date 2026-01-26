@@ -630,6 +630,24 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
         </div>
       </section>
 
+      {/* January 2026 Ice Storm Alert */}
+      <section className="py-6 bg-blue-50 border-t border-blue-100">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-gray-700">
+              <strong>January 2026 Ice Storm:</strong> If your roof or gutters were damaged by the recent ice storm, we&apos;re here to help.
+            </p>
+            <Link
+              href="/ice-storm-damage-charlotte-nc"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent whitespace-nowrap"
+            >
+              Ice Storm Help
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <CTASection
         title="Don't Let Hail Damage Go Unrepaired"

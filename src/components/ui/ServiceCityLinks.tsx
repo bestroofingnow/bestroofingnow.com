@@ -24,6 +24,16 @@ const getServiceLinks = (citySlug: string, cityName: string): ServiceLink[] => {
 
   return [
     {
+      title: `Roofing ${cityName}`,
+      href: `/roofing-${baseSlug}-${state.toLowerCase()}`,
+      description: 'Complete roofing services',
+    },
+    {
+      title: `Roofers ${cityName}`,
+      href: `/roofers-${baseSlug}-${state.toLowerCase()}`,
+      description: 'Local trusted roofers',
+    },
+    {
       title: `Roof Repair ${cityName}`,
       href: `/roof-repair-${baseSlug}-${state.toLowerCase()}`,
       description: 'Fast, reliable roof repairs',
@@ -32,11 +42,6 @@ const getServiceLinks = (citySlug: string, cityName: string): ServiceLink[] => {
       title: `Roof Replacement ${cityName}`,
       href: `/roof-replacement-${baseSlug}-${state.toLowerCase()}`,
       description: 'Complete roof replacement',
-    },
-    {
-      title: `Roof Installation ${cityName}`,
-      href: `/roof-installation-${baseSlug}-${state.toLowerCase()}`,
-      description: 'New roof installation',
     },
     {
       title: `Roof Inspection ${cityName}`,
@@ -62,6 +67,11 @@ const getServiceLinks = (citySlug: string, cityName: string): ServiceLink[] => {
       title: `Metal Roofing ${cityName}`,
       href: `/metal-roofing-${baseSlug}-${state.toLowerCase()}`,
       description: 'Standing seam & metal panels',
+    },
+    {
+      title: `Gutter Installation ${cityName}`,
+      href: `/gutter-installation-${baseSlug}-${state.toLowerCase()}`,
+      description: 'Seamless gutter systems',
     },
   ];
 };

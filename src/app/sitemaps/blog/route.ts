@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getPosts } from '@/lib/wordpress';
+import { getAllPosts } from '@/lib/wordpress';
 
 const BASE_URL = 'https://bestroofingnow.com';
 
@@ -13,11 +13,11 @@ export async function GET() {
     priority: '0.7',
   };
 
-  // Fetch blog posts from WordPress
+  // Fetch ALL blog posts from WordPress (paginated)
   let blogPages: { url: string; lastmod: string; changefreq: string; priority: string }[] = [];
 
   try {
-    const posts = await getPosts({ perPage: 100 });
+    const posts = await getAllPosts();
     blogPages = posts.map((post) => ({
       url: `${BASE_URL}/blog/${post.slug}`,
       lastmod: post.modified ? new Date(post.modified).toISOString() : new Date().toISOString(),

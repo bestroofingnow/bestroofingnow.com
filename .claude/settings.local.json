@@ -63,7 +63,22 @@
       "Bash(git checkout:*)",
       "Bash(node scripts/seo-audit.js:*)",
       "Bash(find:*)",
-      "Bash(node scripts/top-100-keywords.js:*)"
+      "Bash(node scripts/top-100-keywords.js:*)",
+      "WebFetch(domain:bestroofingnow.com)",
+      "Bash(node scripts/seo-gap-analysis.js:*)",
+      "Bash(node scripts/seo-gap-analysis-v2.js:*)",
+      "Bash(node scripts/competitor-serp-analysis.js:*)",
+      "Bash(node scripts/debug-serp.js:*)",
+      "Bash(node scripts/check-api-endpoints.js:*)",
+      "Bash(node scripts/seo-gap-final.js:*)",
+      "Bash(node scripts/seo-rank-tracker.js:*)",
+      "Bash(node scripts/generate-all-pages-csv.js:*)",
+      "Bash(node scripts/fetch-all-urls.js:*)",
+      "Bash(gh run:*)",
+      "Bash(node scripts/commercial-roofing-keywords.js:*)",
+      "Bash(node scripts/seo-full-analysis.js:*)",
+      "Bash(comm:*)",
+      "Bash(xargs -I {} bash -c 'echo \"\"File: {}\"\"; grep -q \"\"AISearchOptimization\\\\|VoiceSearchAction\\\\|PeopleAlsoAsk\"\" \"\"{}\"\" && echo \"\"HAS_SEO_COMPONENTS\"\" || echo \"\"MISSING_SEO_COMPONENTS\"\"')"
     ]
   }
 }
