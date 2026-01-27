@@ -52,8 +52,6 @@ const KNOWN_ROUTES = new Set([
   'manifest.webmanifest',
   'icon',
   'apple-icon',
-  // Geo-blocking
-  'blocked',
 ]);
 
 // Service slugs that have their own pages
@@ -86,15 +84,6 @@ export function middleware(request: NextRequest) {
   }
 
   const pathname = request.nextUrl.pathname;
-
-  // Geo-blocking: Only allow US visitors
-  // Skip for the blocked page itself and WordPress API to avoid redirect loops
-  if (pathname !== '/blocked' && !pathname.startsWith('/wp-json')) {
-    const country = request.headers.get('x-vercel-ip-country') || 'US';
-    if (country !== 'US') {
-      return NextResponse.rewrite(new URL('/blocked', request.url));
-    }
-  }
 
   // Get the first segment of the path
   const firstSegment = pathname.split('/')[1] || '';
