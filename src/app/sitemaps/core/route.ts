@@ -111,6 +111,11 @@ export async function GET() {
     { url: `${BASE_URL}/spring-roof-inspection-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // ============================================
+    // EDUCATIONAL / BLOG CONTENT
+    // ============================================
+    { url: `${BASE_URL}/attic-moisture-control-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+
+    // ============================================
     // INSURANCE & FINANCING PAGES
     // ============================================
     { url: `${BASE_URL}/insurance-claim-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
