@@ -114,6 +114,10 @@ export async function GET() {
     // EDUCATIONAL / BLOG CONTENT
     // ============================================
     { url: `${BASE_URL}/attic-moisture-control-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/diy-roof-maintenance-checklist-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/what-to-do-roof-leak-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roof-vs-shingles-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/office-building-roof-replacement-vs-coating-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
 
     // ============================================
     // INSURANCE & FINANCING PAGES
