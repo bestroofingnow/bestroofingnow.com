@@ -118,6 +118,21 @@ export async function GET() {
     { url: `${BASE_URL}/what-to-do-roof-leak-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roof-vs-shingles-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
     { url: `${BASE_URL}/office-building-roof-replacement-vs-coating-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // Scheduled blogs Jan 28
+    { url: `${BASE_URL}/how-to-choose-roofing-contractor-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/warehouse-roof-repair-vs-replacement-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // Scheduled blogs Jan 29
+    { url: `${BASE_URL}/what-to-do-after-hail-storm-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/tpo-vs-epdm-roofing-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // Scheduled blogs Jan 30
+    { url: `${BASE_URL}/gutter-cleaning-diy-guide-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/restaurant-roof-repair-vs-replacement-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // Scheduled blogs Jan 31
+    { url: `${BASE_URL}/what-to-do-tree-falls-on-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/architectural-vs-3-tab-shingles-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // Scheduled blogs Feb 1
+    { url: `${BASE_URL}/hurricane-roof-preparation-guide-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/church-roof-replacement-guide-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
 
     // ============================================
     // INSURANCE & FINANCING PAGES
