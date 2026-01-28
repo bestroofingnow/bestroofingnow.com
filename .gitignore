@@ -42,3 +42,7 @@ next-env.d.ts
 
 .vercel
 .env*.local
+
+# GSC reports (keep directory, ignore contents)
+/reports/*
+!/reports/.gitkeep

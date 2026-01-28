@@ -18,7 +18,8 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "pmi:export": "npx tsx scripts/export-pmi-data.ts",
-    "pmi:import": "npx tsx scripts/import-to-database.ts"
+    "pmi:import": "npx tsx scripts/import-to-database.ts",
+    "gsc:report": "npx tsx scripts/gsc-weekly-report.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
