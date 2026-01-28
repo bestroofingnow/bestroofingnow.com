@@ -8,6 +8,7 @@ import { StickyCTA } from '@/components/sections/CTASection';
 import { LocalBusinessSchema, WebSiteSchema, HowToGetRoofEstimateSchema, FreeInspectionOfferSchema, ReviewsSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { EstimateProvider } from '@/components/estimate';
+import { SocialProofProvider } from '@/components/social-proof';
 import { LazyCustomCursor } from '@/components/ui/LazyCustomCursor';
 import { WebVitals } from '@/components/analytics/WebVitals';
 import { AnalyticsProvider } from '@/components/analytics';
@@ -178,6 +179,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <EstimateProvider>
+          <SocialProofProvider>
           {/* Web Vitals monitoring - reports Core Web Vitals metrics */}
           <WebVitals />
           {/* Analytics: GA4, Microsoft Clarity, Facebook Pixel */}
@@ -202,6 +204,7 @@ export default function RootLayout({
             data-widget-id="692def99cf45951b90d25076"
             strategy="lazyOnload"
           />
+          </SocialProofProvider>
         </EstimateProvider>
       </body>
     </html>
