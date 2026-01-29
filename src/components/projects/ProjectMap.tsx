@@ -44,13 +44,23 @@ export function ProjectMap({
   onMarkerClick,
 }: ProjectMapProps) {
   const [markers, setMarkers] = useState<MapMarker[]>(initialMarkers || []);
-  const [loading, setLoading] = useState(!initialMarkers || initialMarkers.length === 0);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedMarker, setSelectedMarker] = useState<MapMarker | null>(null);
   const [cityFilter, setCityFilter] = useState<string>(city || '');
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const markersLayerRef = useRef<any>(null);
+  const fetchAttemptedRef = useRef(false);
+
+  // Sync initialMarkers prop to state - handles RSC streaming where props
+  // may arrive after useState initialization
+  useEffect(() => {
+    if (initialMarkers && initialMarkers.length > 0) {
+      setMarkers(initialMarkers);
+      setLoading(false);
+    }
+  }, [initialMarkers]);
 
   // Get unique cities for filter dropdown
   const uniqueCities = useMemo(() => {
@@ -64,12 +74,17 @@ export function ProjectMap({
     return markers.filter(m => m.city.toLowerCase().includes(cityFilter.toLowerCase()));
   }, [markers, cityFilter]);
 
-  // Fetch map data - skip if initialMarkers were provided
+  // Fetch map data from API - always runs as fallback if markers are empty
   useEffect(() => {
-    // If we already have markers from server-side props, skip the fetch
-    if (initialMarkers && initialMarkers.length > 0) {
+    // Skip if we already have markers (from initialMarkers or a previous fetch)
+    if (markers.length > 0) {
+      setLoading(false);
       return;
     }
+
+    // Prevent duplicate fetches
+    if (fetchAttemptedRef.current) return;
+    fetchAttemptedRef.current = true;
 
     async function fetchMapData() {
       try {
@@ -107,7 +122,7 @@ export function ProjectMap({
     }
 
     fetchMapData();
-  }, [city, cities, initialMarkers]);
+  }, [city, cities, markers.length]);
 
   // Initialize Leaflet map - always show a map even with no markers
   useEffect(() => {
