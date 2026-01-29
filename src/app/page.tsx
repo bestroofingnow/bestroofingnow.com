@@ -31,9 +31,11 @@ export const metadata: Metadata = {
   title: "Best Roofing Company Charlotte NC | 5-Star Rated | Free Inspection",
   description: 'Looking for the best roofing company in Charlotte? 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Get your FREE roof inspection today! Same-day estimates. Call (704) 605-6047.',
   keywords: [
+    'best roofing company Charlotte NC',
     'best roofing company Charlotte',
     'best roofing companies near me',
     'best roofers near me',
+    'best roofer Charlotte NC',
     'top rated roofing company Charlotte',
     'roofers near me',
     'roofing contractor near me',
@@ -43,6 +45,8 @@ export const metadata: Metadata = {
     'BBB A+ rated roofer Charlotte',
     '5 star roofing company Charlotte',
     'highly rated roofing company near me',
+    'roofing company Charlotte NC',
+    'Charlotte roofing contractor',
   ],
   openGraph: {
     title: "Best Roofing Now | Charlotte's Top-Rated Roofing Company",
@@ -132,6 +136,126 @@ export default function HomePage() {
         showAll={false}
       />
       <WhyChooseUs />
+
+      {/* What Makes Us Charlotte's Best - Owner's Perspective */}
+      <section className="py-16 bg-gradient-to-b from-slate-50 to-white">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-4">
+              What Makes Us the Best Roofing Company in Charlotte?
+            </h2>
+            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+              We get asked this a lot. Here&apos;s our honest answer &mdash; straight from
+              our founder, James Turner.
+            </p>
+
+            <div className="grid md:grid-cols-5 gap-8 items-start">
+              {/* James's Story - Main Column */}
+              <div className="md:col-span-3 space-y-6">
+                <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      JT
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary text-lg">James Turner</p>
+                      <p className="text-sm text-gray-500">Founder &amp; Owner, Veteran</p>
+                    </div>
+                  </div>
+
+                  <blockquote className="text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                      &ldquo;When I started Best Roofing Now, I didn&apos;t set out to be the
+                      biggest roofing company in Charlotte. I wanted to be the one people trust
+                      most. There&apos;s a difference.&rdquo;
+                    </p>
+                    <p>
+                      &ldquo;The big companies run TV ads and put up billboards. We put up roofs.
+                      Every referral we get is because a neighbor told their neighbor we did right
+                      by them. That&apos;s how we built a 5.0 Google rating with hundreds of
+                      reviews &mdash; one honest job at a time.&rdquo;
+                    </p>
+                    <p>
+                      &ldquo;Being &lsquo;the best&rsquo; isn&apos;t about fancy marketing. It&apos;s
+                      about answering the phone on the first ring. It&apos;s about showing up when
+                      we say we will. It&apos;s about telling a homeowner their roof only needs a
+                      $600 repair instead of selling them a $15,000 replacement they don&apos;t
+                      need.&rdquo;
+                    </p>
+                    <p>
+                      &ldquo;My daddy Fred and my mama Shirley moved from Alabama to help run this
+                      company. That&apos;s how seriously we take it. This isn&apos;t just a
+                      business &mdash; it&apos;s the Turner family name on every roof we touch.
+                      And that name means something to us.&rdquo;
+                    </p>
+                  </blockquote>
+                </div>
+
+                {/* Proof Points */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <div className="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <p className="text-2xl font-bold text-primary">5.0</p>
+                    <p className="text-xs text-gray-500 mt-1">Google Rating</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <p className="text-2xl font-bold text-primary">A+</p>
+                    <p className="text-xs text-gray-500 mt-1">BBB Rating</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <p className="text-2xl font-bold text-primary">500+</p>
+                    <p className="text-xs text-gray-500 mt-1">Roofs Installed</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 text-center border border-gray-100">
+                    <p className="text-2xl font-bold text-primary">15+</p>
+                    <p className="text-xs text-gray-500 mt-1">Years in Charlotte</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Why Customers Choose Us - Sidebar */}
+              <div className="md:col-span-2 space-y-6">
+                <div className="bg-primary text-white rounded-2xl p-6">
+                  <h3 className="font-bold text-lg mb-4">
+                    Why Charlotte Homeowners Choose Best Roofing Now
+                  </h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 font-bold mt-0.5">&#10003;</span>
+                      <span>Veteran-owned &amp; family-operated &mdash; not a franchise</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 font-bold mt-0.5">&#10003;</span>
+                      <span>Same-day estimates &amp; free inspections, every time</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 font-bold mt-0.5">&#10003;</span>
+                      <span>Never upsell work you don&apos;t need</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 font-bold mt-0.5">&#10003;</span>
+                      <span>CertainTeed, GAF &amp; Owens Corning certified</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 font-bold mt-0.5">&#10003;</span>
+                      <span>Full insurance claim assistance at no extra cost</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 font-bold mt-0.5">&#10003;</span>
+                      <span>Financing available &mdash; $0 down options</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 font-bold mt-0.5">&#10003;</span>
+                      <span>Serving 60+ Charlotte-area neighborhoods</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <JamesTip tipId="contractor-advice" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* GBP Service Categories Section */}
       <section className="py-12 bg-white">
@@ -305,7 +429,7 @@ export default function HomePage() {
       <section className="py-8 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <JamesTip tipId="contractor-advice" />
+            <JamesTip tipId="insurance-tip" />
           </div>
         </div>
       </section>

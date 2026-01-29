@@ -18,9 +18,11 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { JamesTip } from '@/components/sections/PersonalTouch';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { Lightbulb, Quote } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Roof Replacement Cost Charlotte NC | 2026 Price Guide | Free Estimates',
@@ -682,6 +684,99 @@ export default function RoofReplacementCostCharlottePage() {
               View All Projects
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Owner's Honest Advice on Costs */}
+      <section className="section bg-gradient-to-br from-primary/5 to-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-5 gap-8 items-start">
+              <div className="lg:col-span-3">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                  <Lightbulb className="w-4 h-4" />
+                  <span className="text-sm font-semibold">From the Owner</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                  Honest Advice on Roof Costs from James Turner
+                </h2>
+                <div className="space-y-4 text-gray">
+                  <p>
+                    &ldquo;I&apos;m going to be straight with you about roof costs in Charlotte. After replacing
+                    over 500 roofs in this area, I&apos;ve seen every pricing trick in the book. Some companies
+                    give you a low estimate to get the job, then pile on &lsquo;surprise&rsquo; charges halfway through.
+                    Others push premium materials on homes that don&apos;t need them.&rdquo;
+                  </p>
+                  <p>
+                    &ldquo;A customer in SouthPark once called us for a full replacement quote. When I got up
+                    there, the roof only needed about $600 in repairs &mdash; two small flashing patches and a
+                    few lifted shingles. I told her the truth instead of selling her a $15,000 roof she didn&apos;t
+                    need. She&apos;s sent us twelve referrals since then. Honesty is the best business plan I&apos;ve
+                    ever had.&rdquo;
+                  </p>
+                  <p className="font-medium text-primary">
+                    &mdash; James Turner, Founder &amp; Owner
+                  </p>
+                </div>
+                <div className="mt-6 bg-white rounded-xl shadow-md p-6">
+                  <h3 className="font-bold text-dark mb-3 flex items-center gap-2">
+                    <Quote className="w-5 h-5 text-primary" />
+                    James&apos;s Red Flags When Getting Roof Quotes
+                  </h3>
+                  <ul className="space-y-3 text-sm text-gray">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold">1.</span>
+                      <span>Estimate is 40%+ below everyone else &mdash; they&apos;ll cut corners or add charges later</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold">2.</span>
+                      <span>Company has no local address or only showed up after a storm</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold">3.</span>
+                      <span>They push you to sign today with &ldquo;this price expires tomorrow&rdquo; pressure</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold">4.</span>
+                      <span>No written warranty details before you sign the contract</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold">5.</span>
+                      <span>They want full payment upfront before any work starts</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="lg:col-span-2">
+                <JamesTip tipId="cost-honesty" />
+                <div className="mt-6 bg-white rounded-xl shadow-md p-6">
+                  <h3 className="font-bold text-dark mb-3">What Most Charlotte Homeowners Choose</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex justify-between">
+                      <span className="text-gray">Most popular material</span>
+                      <span className="font-bold text-primary">Architectural Shingles</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="text-gray">Average project cost</span>
+                      <span className="font-bold text-accent">$12,000 - $15,000</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="text-gray">Average project time</span>
+                      <span className="font-bold text-primary">1-2 days</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="text-gray">Use insurance claims</span>
+                      <span className="font-bold text-green-600">~40% of jobs</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="text-gray">Use financing</span>
+                      <span className="font-bold text-green-600">~30% of jobs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

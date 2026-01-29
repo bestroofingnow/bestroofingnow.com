@@ -14,6 +14,8 @@ import {
   Wrench,
   XCircle,
   ThermometerSun,
+  Quote,
+  Lightbulb,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import {
@@ -21,11 +23,14 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { JamesTip } from '@/components/sections/PersonalTouch';
 
 export const metadata: Metadata = {
   title: 'DIY Gutter Cleaning Guide Charlotte NC | Safe Cleaning Tips',
@@ -35,11 +40,15 @@ export const metadata: Metadata = {
     'gutter cleaning Charlotte NC',
     'DIY gutter cleaning Charlotte',
     'how to clean gutters Charlotte',
+    'cleaning gutters safely',
+    'how to clean gutters safely',
+    'safe gutter cleaning tips',
     'gutter cleaning tips Charlotte NC',
     'gutter cleaning safety Charlotte',
     'when to clean gutters Charlotte',
     'gutter cleaning tools Charlotte',
     'gutter maintenance Charlotte NC',
+    'gutter cleaning near me',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-cleaning-diy-guide-charlotte-nc`,
@@ -279,8 +288,20 @@ export default function GutterCleaningDIYGuidePage() {
           description: 'Step-by-step guide to safely clean your gutters. Tools, safety tips, seasonal schedule, and when to hire professionals.',
           slug: 'gutter-cleaning-diy-guide-charlotte-nc',
           datePublished: '2025-01-30',
-          dateModified: '2025-01-30',
+          dateModified: '2026-01-29',
         }}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gutter-cleaning-diy-guide-charlotte-nc`}
+        pageName="DIY Gutter Cleaning Guide Charlotte NC"
+        faqs={gutterFAQs.map((faq) => ({
+          question: faq.question,
+          answer: faq.answer,
+          speakableAnswer: faq.answer.split('.').slice(0, 2).join('.') + '.',
+        }))}
+        includeVoiceActions={true}
+        city="Charlotte"
+        skipFAQ={true}
       />
 
       <section className="pt-8 pb-12 bg-gradient-to-b from-blue-900 via-blue-800 to-slate-900">
@@ -497,6 +518,124 @@ export default function GutterCleaningDIYGuidePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* James's Gutter Story & Safety Advice */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">
+              A Word from James Turner on Gutter Safety
+            </h2>
+            <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+              After 15 years of roofing and gutter work in Charlotte, here&apos;s what I&apos;ve
+              learned about cleaning gutters safely.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Owner's Story */}
+              <div className="md:col-span-2 space-y-6">
+                <div className="bg-white rounded-xl p-6 border border-blue-100">
+                  <div className="flex items-start gap-3 mb-4">
+                    <Quote className="h-8 w-8 text-blue-600 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-bold text-slate-900">
+                        The Gutter That Saved a Foundation
+                      </h3>
+                      <p className="text-sm text-slate-500">From James Turner, Owner</p>
+                    </div>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed mb-4">
+                    &ldquo;A couple in Mint Hill called about water pooling around their foundation.
+                    They were getting quotes for $12,000 in foundation work. I went out and looked at
+                    the gutters first &mdash; completely clogged with pine needles, downspouts
+                    disconnected. We cleaned everything out and extended the downspouts for $250.
+                    The water problem disappeared.&rdquo;
+                  </p>
+                  <p className="text-slate-700 leading-relaxed">
+                    &ldquo;Their foundation contractor called me afterward and said, &lsquo;You just
+                    saved them twelve grand.&rsquo; That&apos;s why I always tell people: check the
+                    gutters first. Nine times out of ten, the problem starts at the roofline, not
+                    the foundation.&rdquo;
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 border border-yellow-100">
+                  <div className="flex items-start gap-3 mb-4">
+                    <Lightbulb className="h-6 w-6 text-yellow-600 flex-shrink-0 mt-0.5" />
+                    <h3 className="text-lg font-bold text-slate-900">
+                      What I Tell Every Homeowner About Gutter Cleaning
+                    </h3>
+                  </div>
+                  <ul className="space-y-3 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>
+                        <strong>Start from the ground.</strong> Before you even touch a ladder,
+                        walk around your house and look at the gutters from below. Sagging sections,
+                        plant growth, or overflow stains tell you where the worst spots are.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>
+                        <strong>Don&apos;t skip the downspouts.</strong> Most people scoop the gutters
+                        and call it done. If your downspouts are clogged, it doesn&apos;t matter how
+                        clean the gutters are &mdash; the water has nowhere to go.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>
+                        <strong>Charlotte pollen is real.</strong> People think fall is the only
+                        gutter season. In Charlotte, the spring pollen turns to cement in your
+                        gutters if you leave it. That May cleanup is just as important as November.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>
+                        <strong>Know when to call it.</strong> If you get up there and anything
+                        feels off &mdash; the ladder wobbles, you&apos;re dizzy, the roof is steeper
+                        than you thought &mdash; come down. No gutter cleaning is worth a trip to
+                        the ER. I mean that.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* JamesTip Sidebar */}
+              <div className="space-y-6">
+                <JamesTip tipId="gutter-safety" />
+                <JamesTip tipId="fall-prep" />
+
+                {/* Quick Stats */}
+                <div className="bg-blue-900 text-white rounded-xl p-6">
+                  <h3 className="font-bold text-lg mb-4">Gutter Facts</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-3xl font-bold text-yellow-400">$250</p>
+                      <p className="text-blue-200 text-sm">Average gutter cleaning cost</p>
+                    </div>
+                    <div>
+                      <p className="text-3xl font-bold text-yellow-400">$5,000+</p>
+                      <p className="text-blue-200 text-sm">Average water damage repair</p>
+                    </div>
+                    <div>
+                      <p className="text-3xl font-bold text-yellow-400">2x/year</p>
+                      <p className="text-blue-200 text-sm">Recommended cleaning frequency</p>
+                    </div>
+                    <div>
+                      <p className="text-3xl font-bold text-yellow-400">500K+</p>
+                      <p className="text-blue-200 text-sm">Ladder injuries per year in US</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

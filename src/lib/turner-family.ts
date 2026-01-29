@@ -105,6 +105,30 @@ export const JAMES_ROOFING_TIPS = [
     tip: "A lot of folks don't realize their attic needs to breathe. Without proper ventilation, heat builds up in summer and moisture builds up in winter. Both destroy shingles from the inside out. I check ventilation on every inspection - it's that important.",
     season: 'any',
   },
+  {
+    id: 'maintenance-saves',
+    title: 'Why Maintenance Matters',
+    tip: "I had a customer in Ballantyne who skipped maintenance for 5 years. A $150 flashing repair turned into $8,000 of water damage to their ceiling and insulation. I tell every homeowner the same thing: a $199 maintenance plan is the cheapest insurance you'll ever buy.",
+    season: 'any',
+  },
+  {
+    id: 'cost-honesty',
+    title: 'Real Talk on Roof Costs',
+    tip: "When someone asks me what a new roof costs, I don't give them the lowest number to get in the door. I give them the real number. If a contractor's estimate is way lower than everyone else's, that's not a deal - that's a warning sign. Cheap work costs more in the long run.",
+    season: 'any',
+  },
+  {
+    id: 'fall-prep',
+    title: 'Fall Roof Prep',
+    tip: "October in Charlotte is beautiful, but those falling leaves are your roof's worst enemy. They pile up in valleys and gutters, hold moisture, and cause rot. Every November I tell my customers: get those leaves off before winter rain sets in. It takes 30 minutes and saves thousands.",
+    season: 'fall',
+  },
+  {
+    id: 'gutter-safety',
+    title: 'Gutter Cleaning Safety',
+    tip: "I've been on more roofs than I can count, and I still respect the ladder every single time. The biggest mistake I see homeowners make is overreaching - they lean too far to avoid climbing down and moving the ladder. That's how falls happen. Take the extra two minutes to reposition. Your gutters aren't going anywhere.",
+    season: 'any',
+  },
 ];
 
 // Community involvement and events
@@ -190,5 +214,23 @@ export const TURNER_ANECDOTES = [
     title: 'Why Shirley Answers the Phone',
     story: "People ask why I answer the phones instead of hiring someone. It's simple - when someone calls about their roof, they're often worried. They need to hear a real person who cares, not a recording. Every call matters to us because every home matters to someone.",
     author: 'shirley',
+  },
+  {
+    id: 'maintenance-story',
+    title: 'The Leak That Changed Everything',
+    story: "Early on, I got a call from a family in Dilworth whose roof was leaking into their daughter's bedroom. Turns out they'd had a small issue two years earlier but never got it checked. Two years of water damage had rotted the decking. That's when I started offering maintenance plans - because no kid should have a bucket in their room catching rainwater.",
+    author: 'james',
+  },
+  {
+    id: 'honest-estimate',
+    title: 'The Estimate That Lost Us Money',
+    story: "A customer in SouthPark called for a roof replacement quote. When I got up there, the roof only needed $600 in repairs. I told her the truth instead of selling her a $15,000 roof she didn't need. She's sent us twelve referrals since then. Honesty is the best business plan I've ever had.",
+    author: 'james',
+  },
+  {
+    id: 'gutter-rescue',
+    title: 'The Gutter That Saved a Foundation',
+    story: "A couple in Mint Hill called about water pooling around their foundation. They were getting quotes for $12,000 in foundation work. I went out and looked at the gutters first - completely clogged with pine needles, downspouts disconnected. We cleaned everything out and extended the downspouts for $250. The water problem disappeared. Their foundation contractor called me afterward and said, 'You just saved them twelve grand.' That's why I always tell people: check the gutters first.",
+    author: 'james',
   },
 ];

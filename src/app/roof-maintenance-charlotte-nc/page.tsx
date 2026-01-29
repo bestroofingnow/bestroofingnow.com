@@ -21,10 +21,12 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { JamesTip } from '@/components/sections/PersonalTouch';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { Lightbulb, CloudRain, Sun, Leaf, Snowflake } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Roof Maintenance Charlotte NC | Annual Inspection Plans | Best Roofing Now',
@@ -247,6 +249,26 @@ export default function RoofMaintenanceCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`}
+        pageName="Roof Maintenance Charlotte NC"
+        city="Charlotte"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'How often should I have my roof inspected in Charlotte NC?',
+            answer: 'Charlotte homeowners should have their roof inspected annually, plus after any major storm. Charlotte experiences severe thunderstorms, hail, and occasional tropical systems. Best Roofing Now offers annual maintenance plans starting at $199/year.',
+            speakableAnswer: 'You should inspect your Charlotte roof at least once a year, plus after major storms. Best Roofing Now offers maintenance plans starting at $199 a year. Call 704-605-6047.',
+          },
+          {
+            question: 'What does a roof maintenance plan include?',
+            answer: 'A roof maintenance plan from Best Roofing Now includes annual comprehensive inspection, written report with photos, minor repairs up to $200, gutter debris removal, flashing and sealant checks, attic ventilation assessment, priority scheduling, 10% repair discount, and storm damage inspections.',
+            speakableAnswer: 'Our maintenance plan includes annual inspection, minor repairs, gutter cleaning, and priority service starting at $199 a year. Call Best Roofing Now at 704-605-6047.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -447,6 +469,191 @@ export default function RoofMaintenanceCharlotteNCPage() {
               </div>
               <h3 className="font-bold text-dark mb-2">Increase Home Value</h3>
               <p className="text-gray text-sm">A well-maintained roof adds value when selling your home.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Owner's Story - Why We Started Maintenance Plans */}
+      <section className="section bg-gradient-to-br from-primary/5 to-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-5 gap-8 items-start">
+              <div className="lg:col-span-3">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                  <Lightbulb className="w-4 h-4" />
+                  <span className="text-sm font-semibold">From the Owner</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                  Why I Started Offering Maintenance Plans
+                </h2>
+                <div className="space-y-4 text-gray">
+                  <p>
+                    &ldquo;Early in my career, I got a call from a family in Dilworth whose roof was leaking into
+                    their daughter&apos;s bedroom. Turns out they&apos;d had a small flashing issue two years earlier
+                    but never got it checked. Two years of water damage had rotted the decking and ruined their
+                    insulation. What could have been a $150 repair turned into an $8,000 emergency.&rdquo;
+                  </p>
+                  <p>
+                    &ldquo;That night I went home and told Shirley we needed to start doing things differently.
+                    No homeowner should have to put a bucket in their kid&apos;s room to catch rainwater. That&apos;s
+                    when we created our annual maintenance plans &mdash; because catching problems early is always
+                    cheaper than fixing them later.&rdquo;
+                  </p>
+                  <p className="font-medium text-primary">
+                    &mdash; James Turner, Founder &amp; Owner
+                  </p>
+                </div>
+              </div>
+              <div className="lg:col-span-2">
+                <JamesTip tipId="maintenance-saves" />
+                <div className="mt-6 bg-white rounded-xl shadow-md p-6">
+                  <h3 className="font-bold text-dark mb-3">Maintenance by the Numbers</h3>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex justify-between">
+                      <span className="text-gray">Average repair cost avoided</span>
+                      <span className="font-bold text-accent">$3,200</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="text-gray">Years added to roof life</span>
+                      <span className="font-bold text-accent">5-10 yrs</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="text-gray">Issues caught early (%)</span>
+                      <span className="font-bold text-accent">92%</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="text-gray">Annual plan cost</span>
+                      <span className="font-bold text-green-600">$199</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Charlotte Seasonal Maintenance Guide */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Charlotte Seasonal Roof Maintenance Guide
+            </h2>
+            <p className="text-gray text-lg">
+              Charlotte&apos;s subtropical climate brings unique challenges each season. Here&apos;s what James
+              recommends checking throughout the year.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-green-50 rounded-xl p-6 border-t-4 border-green-500">
+              <div className="flex items-center gap-3 mb-4">
+                <Leaf className="w-6 h-6 text-green-600" />
+                <h3 className="font-bold text-dark">Spring (Mar-May)</h3>
+              </div>
+              <ul className="space-y-2 text-sm text-gray">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Inspect for winter damage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Clean gutters of pollen buildup</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Trim branches near roofline</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Check flashing and sealants</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-xs italic text-green-700">
+                &ldquo;Charlotte pollen season is no joke. Those yellow clouds clog gutters faster than you&apos;d think.&rdquo; &mdash; James
+              </p>
+            </div>
+            <div className="bg-yellow-50 rounded-xl p-6 border-t-4 border-yellow-500">
+              <div className="flex items-center gap-3 mb-4">
+                <Sun className="w-6 h-6 text-yellow-600" />
+                <h3 className="font-bold text-dark">Summer (Jun-Aug)</h3>
+              </div>
+              <ul className="space-y-2 text-sm text-gray">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" />
+                  <span>Check for curling shingles from heat</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" />
+                  <span>Verify attic ventilation is working</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" />
+                  <span>Inspect after thunderstorms</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5" />
+                  <span>Look for granule loss in gutters</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-xs italic text-yellow-700">
+                &ldquo;95-degree days make shingles expand and contract. If they&apos;re curling at the edges, they&apos;re telling you something.&rdquo; &mdash; James
+              </p>
+            </div>
+            <div className="bg-orange-50 rounded-xl p-6 border-t-4 border-orange-500">
+              <div className="flex items-center gap-3 mb-4">
+                <Leaf className="w-6 h-6 text-orange-600" />
+                <h3 className="font-bold text-dark">Fall (Sep-Nov)</h3>
+              </div>
+              <ul className="space-y-2 text-sm text-gray">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
+                  <span>Clear leaves from valleys and gutters</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
+                  <span>Schedule annual inspection</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
+                  <span>Reseal around vents and chimneys</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
+                  <span>Check attic insulation before winter</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-xs italic text-orange-700">
+                &ldquo;Leaves pile up in valleys and hold moisture. 30 minutes of cleanup saves thousands in rot damage.&rdquo; &mdash; James
+              </p>
+            </div>
+            <div className="bg-blue-50 rounded-xl p-6 border-t-4 border-blue-500">
+              <div className="flex items-center gap-3 mb-4">
+                <CloudRain className="w-6 h-6 text-blue-600" />
+                <h3 className="font-bold text-dark">Winter (Dec-Feb)</h3>
+              </div>
+              <ul className="space-y-2 text-sm text-gray">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <span>Watch for ice dam formation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <span>Check attic for condensation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <span>Remove any hanging icicles safely</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <span>Inspect after ice or snow events</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-xs italic text-blue-700">
+                &ldquo;Charlotte ice storms don&apos;t happen every year, but when they do, they cause serious damage. Proper insulation prevents most ice dam problems.&rdquo; &mdash; James
+              </p>
             </div>
           </div>
         </div>
