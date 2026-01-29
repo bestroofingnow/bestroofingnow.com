@@ -7,6 +7,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectMap from '@/components/projects/ProjectMap';
+import { getProjectMarkersForCity } from '@/lib/project-data';
 
 interface Project {
   pmiId: string;
@@ -180,6 +181,7 @@ export default async function CityProjectsPage({
   const displayCity = cityData.projects[0]?.city || city.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   const state = cityData.projects[0]?.state || 'NC';
   const totalPhotos = cityData.projects.reduce((sum, p) => sum + (p.photos?.length || 0), 0);
+  const cityMarkers = await getProjectMarkersForCity(displayCity);
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -381,7 +383,7 @@ export default async function CityProjectsPage({
           <p className="text-gray-600 mb-6">
             Click on any marker to view project details and photos.
           </p>
-          <ProjectMap city={displayCity} height="400px" />
+          <ProjectMap city={displayCity} height="400px" initialMarkers={cityMarkers} />
         </div>
       </section>
 

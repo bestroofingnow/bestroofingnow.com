@@ -6,6 +6,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectMap from '@/components/projects/ProjectMap';
+import { getAllProjectMarkers } from '@/lib/project-data';
 import { BreadcrumbSchema, CollectionPageSchema, ServiceAreaMapSchema, AISearchOptimizationBundle, FeaturedSnippetListAnswerSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
@@ -83,6 +84,7 @@ function formatDate(dateString: string) {
 export default async function ProjectsPage() {
   const { projects, total } = await getProjects();
   const cityStats = await getCityStats();
+  const allMarkers = await getAllProjectMarkers();
 
   const breadcrumbs = [
     { name: 'Home', url: '/' },
@@ -182,7 +184,7 @@ export default async function ProjectsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Project Map
           </h2>
-          <ProjectMap height="500px" className="mb-8" showCityFilter={true} />
+          <ProjectMap height="500px" className="mb-8" showCityFilter={true} initialMarkers={allMarkers} />
           <p className="text-sm text-gray-500 text-center">
             Click on markers to view project details. Blue markers indicate projects with photos.
           </p>

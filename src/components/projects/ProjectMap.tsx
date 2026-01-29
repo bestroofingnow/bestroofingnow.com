@@ -21,6 +21,7 @@ interface MapMarker {
 interface ProjectMapProps {
   city?: string;
   cities?: string[]; // Multiple cities for regional pages (e.g., Lake Norman)
+  initialMarkers?: MapMarker[]; // Server-side pre-fetched markers (eliminates client-side fetch)
   className?: string;
   height?: string;
   showControls?: boolean;
@@ -28,18 +29,22 @@ interface ProjectMapProps {
   onMarkerClick?: (marker: MapMarker) => void;
 }
 
+// Export MapMarker type for server-side usage
+export type { MapMarker };
+
 // Leaflet-based map component (free, no API key required)
 export function ProjectMap({
   city,
   cities,
+  initialMarkers,
   className = '',
   height = '500px',
   showControls = true,
   showCityFilter = false,
   onMarkerClick,
 }: ProjectMapProps) {
-  const [markers, setMarkers] = useState<MapMarker[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [markers, setMarkers] = useState<MapMarker[]>(initialMarkers || []);
+  const [loading, setLoading] = useState(!initialMarkers || initialMarkers.length === 0);
   const [error, setError] = useState<string | null>(null);
   const [selectedMarker, setSelectedMarker] = useState<MapMarker | null>(null);
   const [cityFilter, setCityFilter] = useState<string>(city || '');
@@ -59,8 +64,13 @@ export function ProjectMap({
     return markers.filter(m => m.city.toLowerCase().includes(cityFilter.toLowerCase()));
   }, [markers, cityFilter]);
 
-  // Fetch map data - always show projects, expand search if none found locally
+  // Fetch map data - skip if initialMarkers were provided
   useEffect(() => {
+    // If we already have markers from server-side props, skip the fetch
+    if (initialMarkers && initialMarkers.length > 0) {
+      return;
+    }
+
     async function fetchMapData() {
       try {
         const params = new URLSearchParams();
@@ -97,7 +107,7 @@ export function ProjectMap({
     }
 
     fetchMapData();
-  }, [city, cities]);
+  }, [city, cities, initialMarkers]);
 
   // Initialize Leaflet map - always show a map even with no markers
   useEffect(() => {

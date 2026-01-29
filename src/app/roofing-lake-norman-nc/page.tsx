@@ -31,6 +31,7 @@ import ProjectMap from '@/components/projects/ProjectMap';
 import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { getProjectMarkersForCities } from '@/lib/project-data';
 
 // All cities in the Lake Norman area for project map/gallery
 const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersville', 'Denver', 'Sherrills Ford'];
@@ -191,7 +192,8 @@ const lakeNormanFAQs = [
   },
 ];
 
-export default function LakeNormanRoofingPage() {
+export default async function LakeNormanRoofingPage() {
+  const initialMarkers = await getProjectMarkersForCities(LAKE_NORMAN_CITIES);
   return (
     <>
       <BreadcrumbSchema
@@ -332,6 +334,7 @@ export default function LakeNormanRoofingPage() {
           <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
             <ProjectMap
               cities={LAKE_NORMAN_CITIES}
+              initialMarkers={initialMarkers}
               height="500px"
               showControls={true}
               showCityFilter={true}

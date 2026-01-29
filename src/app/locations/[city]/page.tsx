@@ -26,6 +26,7 @@ import { VoiceSearchFAQ, PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import ProjectMap from '@/components/projects/ProjectMap';
+import { getProjectMarkersForCity } from '@/lib/project-data';
 import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK, CHARLOTTE_VOICE_FAQS, CHARLOTTE_PEOPLE_ALSO_ASK } from '@/lib/constants';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
@@ -734,6 +735,7 @@ export default async function LocationPage({ params }: PageProps) {
 
   const content = locationContent[city] || defaultContent;
   const otherLocations = LOCATIONS.filter((l) => l.slug !== city).slice(0, 6);
+  const cityMarkers = await getProjectMarkersForCity(location.city);
 
   // Generate unique FAQs for this location
   const locationFAQs = generateLocationFAQs(location.city, location.state, location.county);
@@ -1441,7 +1443,7 @@ export default async function LocationPage({ params }: PageProps) {
             </Link>
           </div>
           <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-            <ProjectMap city={location.city} height="500px" showControls={true} />
+            <ProjectMap city={location.city} height="500px" showControls={true} initialMarkers={cityMarkers} />
           </div>
         </div>
       </section>
