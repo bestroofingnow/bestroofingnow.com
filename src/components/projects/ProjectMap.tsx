@@ -38,7 +38,7 @@ export function ProjectMap({
   cities,
   initialMarkers,
   className = '',
-  height = '500px',
+  height = '350px',
   showControls = true,
   showCityFilter = false,
   onMarkerClick,
@@ -226,7 +226,7 @@ export function ProjectMap({
 
         // Create popup content with thumbnail
         const popupContent = `
-          <div class="project-popup" style="min-width: 240px; font-family: system-ui, -apple-system, sans-serif;">
+          <div class="project-popup" style="max-width: 280px; width: calc(100vw - 80px); font-family: system-ui, -apple-system, sans-serif;">
             ${marker.thumbnail ? `
               <div style="width: 100%; height: 120px; border-radius: 8px; overflow: hidden; margin-bottom: 12px; background: #f3f4f6;">
                 <img src="${marker.thumbnail}" alt="${marker.city} roofing project" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.parentElement.style.display='none'" />
@@ -399,7 +399,7 @@ export function ProjectMap({
       </div>
 
       {/* Map Container */}
-      <div ref={mapRef} style={{ height }} className="w-full" />
+      <div ref={mapRef} style={{ height }} className="w-full max-h-[60vh]" />
 
       {/* Custom Marker Styles */}
       <style jsx global>{`

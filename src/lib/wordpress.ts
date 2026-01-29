@@ -5,7 +5,7 @@
 // After migration:  Set WORDPRESS_API_URL=https://cms.bestroofingnow.com/wp-json/wp/v2
 //                   in your Vercel environment variables
 
-const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://bestroofingnow.com/wp-json/wp/v2';
+const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://www.bestroofingnow.com/wp-json/wp/v2';
 
 export interface WPPost {
   id: number;

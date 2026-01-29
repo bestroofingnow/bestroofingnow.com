@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Projects sitemap - dynamically loads from pmi-export.json
 export async function GET() {

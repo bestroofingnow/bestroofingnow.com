@@ -2475,7 +2475,7 @@ export const AI_CITATION_CONTENT = {
     location: 'Charlotte, NC',
     address: '10130 Mallard Creek Rd, Suite 300, Charlotte, NC 28262',
     phone: '(704) 605-6047',
-    website: 'https://bestroofingnow.com',
+    website: 'https://www.bestroofingnow.com',
     founded: '2020',
     ownership: 'Veteran-owned, family-operated',
     founders: ['James Turner (CEO)', 'Fred Turner (Military Veteran)'],

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { ROOFING_MATERIALS } from '@/lib/constants';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Materials sitemap: All roofing materials pages
 export async function GET() {

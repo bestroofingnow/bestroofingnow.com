@@ -23,7 +23,7 @@ export function SocialProofNotification({
 
   return (
     <div
-      className={`fixed bottom-4 left-4 z-40 max-w-sm w-full sm:w-auto
+      className={`fixed bottom-20 md:bottom-4 left-4 z-40 max-w-sm w-full sm:w-auto
         bg-white rounded-lg shadow-lg border border-gray-200
         transform transition-all duration-500 ease-out
         ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}
@@ -53,7 +53,7 @@ export function SocialProofNotification({
       </div>
       <button
         onClick={onDismiss}
-        className="absolute top-2 right-2 p-1.5 text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-gray-100"
+        className="absolute top-2 right-2 p-2 min-w-[44px] min-h-[44px] text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-gray-100 flex items-center justify-center"
         aria-label="Dismiss notification"
       >
         <X className="w-4 h-4" />

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getAllPosts } from '@/lib/wordpress';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Blog sitemap: All blog posts
 export async function GET() {

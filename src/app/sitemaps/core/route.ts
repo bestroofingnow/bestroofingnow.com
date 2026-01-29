@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Core pages sitemap: Homepage, about, contact, reviews, financing, faq, and main service silos
 export async function GET() {

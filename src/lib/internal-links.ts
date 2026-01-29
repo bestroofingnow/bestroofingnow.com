@@ -31,7 +31,7 @@ const OUR_BRAND_MARKERS = [
  */
 function fixCmsDomainLinks(html: string): string {
   // Replace cms.bestroofingnow.com with bestroofingnow.com (handles both http and https)
-  return html.replace(/https?:\/\/cms\.bestroofingnow\.com/gi, 'https://bestroofingnow.com');
+  return html.replace(/https?:\/\/cms\.bestroofingnow\.com/gi, 'https://www.bestroofingnow.com');
 }
 
 /**

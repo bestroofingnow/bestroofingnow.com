@@ -10,7 +10,7 @@ import {
   COMMERCIAL_SYSTEMS,
 } from '@/lib/constants';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Resources sitemap: Materials, Guides, Comparisons, Roof Types, Problems, Seasonal, Warranty
 export async function GET() {

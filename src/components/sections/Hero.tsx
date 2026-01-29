@@ -39,7 +39,7 @@ export function Hero({
       <meta itemProp="name" content="Best Roofing Now" />
       <meta itemProp="telephone" content="(704) 605-6047" />
       <meta itemProp="priceRange" content="$$" />
-      <link itemProp="url" href="https://bestroofingnow.com" />
+      <link itemProp="url" href="https://www.bestroofingnow.com" />
 
       {/* Static Background Shapes - HIDDEN on mobile for faster LCP */}
       <div className="absolute inset-0 overflow-hidden hidden md:block" aria-hidden="true">

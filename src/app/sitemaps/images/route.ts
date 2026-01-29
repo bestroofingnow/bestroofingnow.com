@@ -3,7 +3,7 @@ import { IMAGES, LOCATION_HERO_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images'
 import { SERVICES, LOCATIONS } from '@/lib/constants';
 import { getAllNeighborhoodParams } from '@/lib/neighborhoods';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 interface ImageEntry {
   pageUrl: string;

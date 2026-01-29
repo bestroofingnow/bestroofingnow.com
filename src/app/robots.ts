@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/', '/static/'],
       },
     ],
-    sitemap: 'https://bestroofingnow.com/sitemap.xml',
+    sitemap: 'https://www.bestroofingnow.com/sitemap.xml',
   };
 }

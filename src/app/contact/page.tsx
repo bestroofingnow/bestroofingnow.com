@@ -159,7 +159,7 @@ export default function ContactPage() {
           service: formState.service,
           message: formState.message,
           source: 'website_contact_form',
-          page_url: typeof window !== 'undefined' ? window.location.href : 'https://bestroofingnow.com/contact',
+          page_url: typeof window !== 'undefined' ? window.location.href : 'https://www.bestroofingnow.com/contact',
           submitted_at: new Date().toISOString(),
         }),
         mode: 'no-cors', // LeadConnector may not support CORS

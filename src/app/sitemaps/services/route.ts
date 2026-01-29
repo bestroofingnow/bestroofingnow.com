@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { SERVICES } from '@/lib/constants';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Services sitemap: All service pages
 export async function GET() {

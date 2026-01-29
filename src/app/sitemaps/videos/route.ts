@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { IMAGES } from '@/lib/images';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 interface VideoEntry {
   pageUrl: string;

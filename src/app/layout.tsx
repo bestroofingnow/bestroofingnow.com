@@ -128,7 +128,7 @@ export const metadata: Metadata = {
   },
   category: 'Home Services',
   other: {
-    'dns-prefetch': 'https://bestroofingnow.com',
+    'dns-prefetch': 'https://www.bestroofingnow.com',
     'geo.region': 'US-NC',
     'geo.placename': 'Charlotte',
     'geo.position': `${SITE_CONFIG.geo.latitude};${SITE_CONFIG.geo.longitude}`,
@@ -160,8 +160,8 @@ export default function RootLayout({
           media="(min-width: 768px)"
         />
         {/* Secondary preconnects */}
-        <link rel="preconnect" href="https://bestroofingnow.com" />
-        <link rel="dns-prefetch" href="https://bestroofingnow.com" />
+        <link rel="preconnect" href="https://www.bestroofingnow.com" />
+        <link rel="dns-prefetch" href="https://www.bestroofingnow.com" />
         {/* RSS Feed for projects - social media automation */}
         <link rel="alternate" type="application/rss+xml" title="Best Roofing Now - Recent Projects" href="/projects/feed.xml" />
         {/* Non-critical third-party - dns-prefetch only */}

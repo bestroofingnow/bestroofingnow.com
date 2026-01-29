@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { LOCATIONS } from '@/lib/constants';
 import { getAllNeighborhoodParams } from '@/lib/neighborhoods';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Locations sitemap: All cities and neighborhoods
 export async function GET() {

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { fetchAllProjects } from '@/lib/pmi-api';
 
-const BASE_URL = 'https://bestroofingnow.com';
+const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Fallback cities when API is unavailable - mirrors the story page fallback
 const FALLBACK_CITIES = [
