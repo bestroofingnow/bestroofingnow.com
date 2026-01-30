@@ -28,6 +28,15 @@ import {
   ShoppingBag,
   Calculator,
   Zap,
+  Headphones,
+  ClipboardList,
+  BarChart3,
+  Repeat,
+  Home,
+  Car,
+  Server,
+  LandPlot,
+  BadgeCheck,
 } from 'lucide-react';
 import EstimateButton from '@/components/estimate/EstimateButton';
 import { CTASection } from '@/components/sections/CTASection';
@@ -41,7 +50,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Charlotte NC | #1 Rated | Best Roofing Now',
   description:
-    'Expert commercial roofing in Charlotte NC. TPO, EPDM, flat roofing, metal roofing & roof coatings for warehouses, offices, retail & more. BBB A+ rated, veteran-owned. Free estimates!',
+    `Expert commercial roofing in Charlotte NC. TPO, EPDM, flat roofing, metal roofing & roof coatings for warehouses, offices, retail & more. ${SITE_CONFIG.googleRating} Google rating, BBB A+ rated, veteran-owned. Free estimates!`,
   keywords: [
     'commercial roofing charlotte nc',
     'commercial roofing contractors charlotte nc',
@@ -58,6 +67,8 @@ export const metadata: Metadata = {
     'roof coating charlotte nc',
     'commercial roofing company charlotte',
     'business roofing charlotte nc',
+    'commercial roof maintenance charlotte nc',
+    'property manager roofing charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`,
@@ -175,37 +186,163 @@ const whyChooseUs = [
   },
 ];
 
-// Building types served
-const buildingTypes = [
+// Building types we serve - with links to dedicated pages
+const buildingTypesLinked = [
   {
     icon: Warehouse,
-    title: 'Warehouses & Distribution Centers',
-    description: 'Large-scale flat roof systems for logistics and storage facilities throughout the Charlotte metro.',
+    title: 'Warehouses',
+    href: '/warehouse-roofing-charlotte-nc',
+    description: 'Large-scale flat roof systems for logistics and storage facilities.',
+  },
+  {
+    icon: Warehouse,
+    title: 'Distribution Centers',
+    href: '/distribution-center-roofing-charlotte-nc',
+    description: 'High-capacity roofing for distribution and fulfillment centers.',
+  },
+  {
+    icon: Hospital,
+    title: 'Healthcare Facilities',
+    href: '/healthcare-facility-roofing-charlotte-nc',
+    description: 'Specialized roofing for hospitals, clinics, and medical offices.',
   },
   {
     icon: Building,
-    title: 'Office Buildings & Complexes',
-    description: 'Professional roofing for corporate offices, business parks, and multi-tenant commercial buildings.',
+    title: 'Office Buildings',
+    href: '/office-building-roofing-charlotte-nc',
+    description: 'Professional roofing for corporate offices and business parks.',
   },
   {
     icon: ShoppingBag,
     title: 'Retail & Shopping Centers',
-    description: 'Roofing solutions for strip malls, standalone retail, restaurants, and mixed-use developments.',
+    href: '/retail-shopping-center-roofing-charlotte-nc',
+    description: 'Roofing solutions for strip malls, retail, and mixed-use spaces.',
   },
   {
-    icon: Hospital,
-    title: 'Medical & Healthcare Facilities',
-    description: 'Specialized roofing for hospitals, clinics, dental offices, and medical complexes requiring minimal disruption.',
-  },
-  {
-    icon: Church,
-    title: 'Churches & Religious Buildings',
-    description: 'Expert roofing for houses of worship including flat roofs, steep-slope sections, and steeples.',
+    icon: Building,
+    title: 'Hotels & Hospitality',
+    href: '/hotel-hospitality-roofing-charlotte-nc',
+    description: 'Expert roofing for hotels, motels, and hospitality properties.',
   },
   {
     icon: GraduationCap,
-    title: 'Schools & Educational Facilities',
-    description: 'Safe, efficient roofing installations for K-12 schools, daycares, and educational institutions.',
+    title: 'Schools & Education',
+    href: '/school-roofing-charlotte-nc',
+    description: 'Safe, efficient roofing for K-12 schools and educational facilities.',
+  },
+  {
+    icon: Factory,
+    title: 'Manufacturing Plants',
+    href: '/manufacturing-plant-roofing-charlotte-nc',
+    description: 'Industrial-grade roofing for manufacturing and processing facilities.',
+  },
+  {
+    icon: Building2,
+    title: 'Government Buildings',
+    href: '/government-building-roofing-charlotte-nc',
+    description: 'Compliant roofing for government and municipal properties.',
+  },
+  {
+    icon: Server,
+    title: 'Data Centers',
+    href: '/data-center-roofing-charlotte-nc',
+    description: 'Mission-critical roofing for data centers and tech facilities.',
+  },
+  {
+    icon: Car,
+    title: 'Auto Dealerships',
+    href: '/auto-dealership-roofing-charlotte-nc',
+    description: 'Specialized roofing for automotive dealerships and service centers.',
+  },
+  {
+    icon: Church,
+    title: 'Churches & Worship',
+    href: '/church-roofing-charlotte-nc',
+    description: 'Expert roofing for houses of worship including flat and steep-slope.',
+  },
+  {
+    icon: Home,
+    title: 'Apartments & Multi-Family',
+    href: '/apartment-roofing-charlotte-nc',
+    description: 'Comprehensive roofing for apartment complexes and multi-family housing.',
+  },
+  {
+    icon: Factory,
+    title: 'Industrial Facilities',
+    href: '/industrial-roofing-charlotte-nc',
+    description: 'Heavy-duty roofing for industrial parks and production facilities.',
+  },
+];
+
+// Property Manager Services
+const propertyManagerServices = [
+  {
+    icon: Headphones,
+    title: '24/7 Emergency Response',
+    description: 'Round-the-clock emergency commercial roofing services. When a roof emergency threatens your property, we respond within 2-4 hours to minimize damage and protect tenants.',
+  },
+  {
+    icon: ClipboardList,
+    title: 'Maintenance Contracts',
+    description: 'Customized preventive maintenance contracts with bi-annual inspections, priority scheduling, and discounted repairs. Extend roof life by 25-50% and reduce emergency costs.',
+  },
+  {
+    icon: LandPlot,
+    title: 'Multi-Property Portfolio Management',
+    description: 'Manage roofing across your entire property portfolio with a single trusted partner. Consistent quality, unified billing, and coordinated scheduling across all locations.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Detailed Reporting for Stakeholders',
+    description: 'Comprehensive documentation including inspection reports, drone imagery, condition assessments, maintenance logs, and budget projections for property owners and investors.',
+  },
+];
+
+// Maintenance program tiers
+const maintenanceTiers = [
+  {
+    name: 'Essential',
+    frequency: 'Annual Inspection',
+    features: [
+      'Annual roof inspection',
+      'Written condition report',
+      'Drone imagery documentation',
+      'Minor repair identification',
+      'Drain and gutter clearing',
+    ],
+    ideal: 'Ideal for newer commercial roofs in good condition',
+  },
+  {
+    name: 'Professional',
+    frequency: 'Bi-Annual Inspections',
+    features: [
+      'Spring & fall inspections',
+      'Detailed photo documentation',
+      'Drone thermal imaging',
+      'Minor repairs included',
+      'Drain clearing & debris removal',
+      'Warranty compliance tracking',
+      'Priority scheduling',
+    ],
+    ideal: 'Most popular for office buildings and retail properties',
+    popular: true,
+  },
+  {
+    name: 'Premium',
+    frequency: 'Quarterly Inspections',
+    features: [
+      'Quarterly inspections',
+      'Complete photo documentation',
+      'Drone thermal imaging',
+      'All minor repairs included',
+      'Drain clearing & debris removal',
+      'Warranty compliance tracking',
+      'Priority emergency response',
+      '24/7 dedicated hotline',
+      'Annual budget projections',
+      'Stakeholder reports',
+    ],
+    ideal: 'Best for large portfolios and mission-critical facilities',
   },
 ];
 
@@ -270,57 +407,47 @@ const testimonials = [
   },
 ];
 
-// Commercial roofing FAQs
+// Commercial roofing FAQs - optimized 8 questions
 const faqs = [
-  {
-    question: 'What types of commercial roofing systems do you install in Charlotte NC?',
-    answer:
-      'Best Roofing Now installs all major commercial roofing systems in Charlotte including TPO (Thermoplastic Polyolefin), EPDM (Ethylene Propylene Diene Monomer), PVC (Polyvinyl Chloride), modified bitumen, built-up roofing (BUR), standing seam metal roofing, and various roof coating systems. We help Charlotte businesses select the optimal system based on building type, budget, energy efficiency goals, and long-term maintenance requirements.',
-  },
   {
     question: 'How much does commercial roofing cost in Charlotte NC?',
     answer:
-      'Commercial roofing costs in Charlotte typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, and project size. TPO and EPDM systems average $5-8 per square foot, while metal roofing ranges from $8-15 per square foot. A 10,000 sq ft flat roof replacement typically costs $50,000-$100,000. We provide free, detailed estimates with transparent pricing for all commercial projects.',
+      'Commercial roofing costs in Charlotte NC typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, building size, and accessibility. TPO roofing averages $5-8 per square foot, EPDM runs $4-7 per square foot, PVC costs $6-10 per square foot, and standing seam metal ranges from $8-15 per square foot. A 10,000 sq ft flat roof replacement typically costs $50,000-$100,000. Best Roofing Now provides free, detailed estimates with fully transparent pricing for all commercial projects in Charlotte.',
   },
   {
-    question: 'What is the best roofing material for commercial buildings in Charlotte?',
+    question: 'What is the best commercial roofing system for Charlotte?',
     answer:
-      'For Charlotte\'s climate with hot summers and occasional severe storms, TPO roofing is often the best choice for commercial buildings. TPO\'s white reflective surface reduces cooling costs by 10-30%, resists UV damage, and handles temperature fluctuations well. EPDM is excellent for buildings with rooftop equipment, while metal roofing offers superior longevity for industrial facilities. We assess each building\'s specific needs to recommend the optimal solution.',
+      'For Charlotte\'s climate with hot, humid summers and occasional severe storms, TPO (Thermoplastic Polyolefin) is often the best commercial roofing choice. TPO\'s highly reflective white surface reduces cooling costs by 10-30%, resists UV degradation, and handles Charlotte\'s temperature fluctuations exceptionally well. EPDM is excellent for buildings with extensive rooftop equipment, while standing seam metal offers superior longevity (40-70 years) for industrial facilities. Best Roofing Now assesses each building\'s specific requirements to recommend the optimal system.',
   },
   {
-    question: 'How long does a commercial roof last in Charlotte NC?',
+    question: 'How often should a commercial roof be inspected?',
     answer:
-      'Commercial roof lifespan in Charlotte varies by material: TPO and EPDM typically last 20-30 years, modified bitumen 15-25 years, metal roofing 40-70 years, and built-up roofing 15-30 years. Proper maintenance significantly extends roof life. Charlotte\'s intense sun, heat, and storm activity make quality installation and regular maintenance essential for maximizing commercial roof longevity.',
+      'Commercial roofs in Charlotte should be inspected at least twice per year - ideally in spring (after winter weather) and fall (before storm season). Buildings with rooftop HVAC equipment, older roofs, or previous issues should consider quarterly inspections. Best Roofing Now offers commercial roof inspection programs with detailed reporting, drone thermal imaging, and actionable maintenance recommendations. Regular inspections catch small problems before they become costly emergencies and are required to maintain most manufacturer warranties.',
   },
   {
-    question: 'Do you offer commercial roof maintenance programs?',
+    question: 'Can you repair a commercial roof without replacing it?',
     answer:
-      'Yes, Best Roofing Now offers comprehensive commercial roof maintenance programs in Charlotte. Our programs include bi-annual inspections, detailed reporting, minor repairs, debris removal, drain clearing, and documentation for warranty compliance. Regular maintenance can extend roof life by 25-50% and helps identify small issues before they become costly emergency repairs.',
+      'Yes, many commercial roof issues in Charlotte can be repaired without full replacement. Localized leaks, seam failures, punctures, ponding water issues, and flashing damage can often be addressed through targeted repairs. Roof coating systems can extend an aging roof\'s life by 10-15 years at a fraction of replacement cost. Best Roofing Now provides honest assessments - we recommend repair when it makes financial sense and replacement only when necessary. Our free inspection will give you a clear picture of your roof\'s condition and options.',
   },
   {
-    question: 'Can you work around our business hours to minimize disruption?',
+    question: 'What commercial roofing warranties do you offer?',
     answer:
-      'Absolutely. We understand that business continuity is critical. Best Roofing Now offers flexible scheduling for Charlotte commercial projects including night shifts, weekend work, and phased installations. For retail and office buildings, we can complete sections after business hours. For 24/7 facilities like warehouses and medical centers, we develop custom schedules to minimize operational impact.',
+      'Best Roofing Now offers industry-leading commercial roofing warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. NDL warranties cover full replacement cost with no depreciation, providing maximum protection for your investment. Our workmanship warranty covers labor for 10-15 years depending on the project. Extended warranty options are available for qualifying commercial projects through our manufacturer certification status.',
   },
   {
-    question: 'What warranties do you offer on commercial roofing in Charlotte?',
+    question: 'Do you work on occupied commercial buildings?',
     answer:
-      'We offer industry-leading warranties on commercial roofing including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. Our workmanship warranty covers labor for 10-15 years depending on the project. NDL warranties cover full replacement cost with no depreciation, providing maximum protection for your investment.',
+      'Absolutely. Best Roofing Now specializes in working on occupied commercial buildings throughout Charlotte while minimizing disruption to daily operations. We offer flexible scheduling options including night shifts, weekend work, and phased installations. For retail locations, we can work after business hours. For 24/7 operations like warehouses and hospitals, we develop custom work plans that section the roof and manage noise, debris, and access carefully. Safety and minimal disruption are our top priorities.',
   },
   {
-    question: 'Do you handle commercial roof insurance claims?',
+    question: 'What is the difference between TPO, EPDM, and PVC roofing?',
     answer:
-      'Yes, Best Roofing Now has extensive experience with commercial roof insurance claims in Charlotte. We provide thorough damage documentation, meet with adjusters, prepare detailed estimates in insurance-approved formats, and advocate for fair settlements. Storm damage, hail damage, and wind damage to commercial roofs are often covered by property insurance.',
+      'TPO (Thermoplastic Polyolefin) is a single-ply membrane that is heat-welded for seamless installation, highly energy-efficient with a white reflective surface, and cost-effective. EPDM (Ethylene Propylene Diene Monomer) is a synthetic rubber membrane available in black or white, extremely durable with 30+ year track records, and excellent for roofs with heavy foot traffic or equipment. PVC (Polyvinyl Chloride) is the most chemical-resistant option, ideal for restaurants and facilities with grease exhaust. Best Roofing Now installs all three systems and will recommend the best option for your specific building needs and budget.',
   },
   {
-    question: 'What commercial buildings do you service in Charlotte?',
+    question: 'How do I budget for commercial roof maintenance?',
     answer:
-      'Best Roofing Now services all types of commercial buildings in Charlotte including warehouses, distribution centers, office buildings, retail stores, shopping centers, restaurants, medical facilities, hospitals, churches, schools, industrial facilities, manufacturing plants, multi-family housing, and HOA properties. No commercial project is too large or too small.',
-  },
-  {
-    question: 'How quickly can you respond to commercial roof emergencies?',
-    answer:
-      'Best Roofing Now offers 24/7 emergency commercial roofing services throughout Charlotte. For active leaks and urgent situations, we typically respond within 2-4 hours. Our emergency team can provide temporary repairs to prevent further damage, then schedule permanent repairs or replacement. Call (704) 605-6047 for immediate commercial roof emergencies.',
+      'Industry experts recommend budgeting 1-2% of your building\'s value annually for commercial roof maintenance in Charlotte. For a building worth $1 million, that\'s $10,000-$20,000 per year. This covers bi-annual inspections ($500-$1,500 each), minor repairs ($500-$5,000 per occurrence), drain maintenance, and coating touch-ups. Proactive maintenance extends roof life by 25-50% and prevents costly emergency repairs. Best Roofing Now offers structured maintenance contracts that simplify budgeting with fixed annual costs and priority service.',
   },
 ];
 
@@ -369,7 +496,8 @@ export default function CommercialRoofingCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now delivers professional commercial roofing solutions throughout Charlotte NC. From TPO and EPDM
               flat roofs to metal roofing systems, our certified team provides exceptional quality backed by industry-leading
-              warranties, a BBB A+ rating, and {SITE_CONFIG.googleReviewCount}+ five-star reviews.
+              warranties, a BBB A+ rating, and {SITE_CONFIG.googleReviewCount}+ five-star reviews. We serve warehouses,
+              office buildings, retail centers, healthcare facilities, schools, churches, and every type of commercial property.
             </p>
 
             {/* CTA Buttons */}
@@ -397,7 +525,7 @@ export default function CommercialRoofingCharlotteNCPage() {
             <div className="flex flex-wrap items-center gap-6 mt-8 text-sm text-white/80">
               <span className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                5.0 Google Rating ({SITE_CONFIG.googleReviewCount}+ reviews)
+                {SITE_CONFIG.googleRating} Google Rating ({SITE_CONFIG.googleReviewCount}+ reviews)
               </span>
               <span className="flex items-center gap-2">
                 <Shield className="w-5 h-5 text-accent-light" />
@@ -405,7 +533,7 @@ export default function CommercialRoofingCharlotteNCPage() {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                Licensed & Insured
+                Licensed &amp; Insured
               </span>
               <span className="flex items-center gap-2">
                 <Award className="w-5 h-5 text-accent-light" />
@@ -569,32 +697,88 @@ export default function CommercialRoofingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Building Types Section */}
+      {/* Building Types We Serve - with links to ALL building type pages */}
       <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
               <Building2 className="w-4 h-4" aria-hidden="true" />
-              <span className="text-sm font-semibold">Buildings We Serve</span>
+              <span className="text-sm font-semibold">Building Types We Serve</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Commercial Roofing for Every Building Type
+              Commercial Roofing for Every Building Type in Charlotte
             </h2>
             <p className="text-gray text-lg">
               From massive distribution centers to local churches, Best Roofing Now has the expertise and
-              equipment to handle commercial roofing projects of any size in Charlotte NC.
+              equipment to handle commercial roofing projects of any size in Charlotte NC. Click any building
+              type to learn more about our specialized services.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {buildingTypes.map((building) => (
-              <div key={building.title} className="bg-light rounded-xl p-6 hover:shadow-lg transition-shadow">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <building.icon className="w-6 h-6 text-primary" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {buildingTypesLinked.map((building) => (
+              <Link
+                key={building.title}
+                href={building.href}
+                className="group bg-light rounded-xl p-5 hover:shadow-lg transition-all hover:-translate-y-1"
+              >
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <building.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-dark mb-1 group-hover:text-primary transition-colors">{building.title}</h3>
+                    <p className="text-gray text-xs">{building.description}</p>
+                  </div>
                 </div>
-                <h3 className="font-bold text-dark mb-2">{building.title}</h3>
-                <p className="text-gray text-sm">{building.description}</p>
+                <div className="mt-3 flex items-center gap-1 text-primary font-semibold text-sm">
+                  View Services
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Property Manager Services Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <ClipboardList className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">Property Manager Solutions</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Commercial Roofing Services for Charlotte Property Managers
+            </h2>
+            <p className="text-gray text-lg">
+              Managing commercial properties requires a roofing partner you can rely on 24/7. Best Roofing Now
+              offers dedicated property manager services designed to protect your portfolio, simplify maintenance,
+              and deliver detailed reporting for stakeholders.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {propertyManagerServices.map((service) => (
+              <div
+                key={service.title}
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <service.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-dark mb-2">{service.title}</h3>
+                    <p className="text-gray text-sm">{service.description}</p>
+                  </div>
+                </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <EstimateButton variant="primary" size="lg" className="text-lg px-8" estimateType="commercial">
+              Request Property Manager Consultation
+            </EstimateButton>
           </div>
         </div>
       </section>
@@ -658,8 +842,63 @@ export default function CommercialRoofingCharlotteNCPage() {
               Get Your Instant Commercial Estimate
             </EstimateButton>
             <p className="text-white/60 text-sm mt-4">
-              No obligation • Instant results • 100% free
+              No obligation &bull; Instant results &bull; 100% free
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Maintenance Program Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <Repeat className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">Maintenance Programs</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Commercial Roof Maintenance Programs in Charlotte NC
+            </h2>
+            <p className="text-gray text-lg">
+              Proactive maintenance extends commercial roof life by 25-50% and prevents costly emergency repairs.
+              Choose the program that fits your property&apos;s needs and budget.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {maintenanceTiers.map((tier) => (
+              <div
+                key={tier.name}
+                className={`rounded-xl p-6 shadow-md ${tier.popular ? 'bg-primary text-white ring-4 ring-accent' : 'bg-light'}`}
+              >
+                {tier.popular && (
+                  <div className="inline-flex items-center gap-2 bg-accent rounded-full px-3 py-1 mb-4">
+                    <Star className="w-3 h-3" />
+                    <span className="text-xs font-bold">MOST POPULAR</span>
+                  </div>
+                )}
+                <h3 className={`text-xl font-bold mb-1 ${tier.popular ? 'text-white' : 'text-dark'}`}>{tier.name}</h3>
+                <p className={`text-sm mb-4 ${tier.popular ? 'text-white/80' : 'text-primary font-semibold'}`}>{tier.frequency}</p>
+                <ul className="space-y-2 mb-6">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-2">
+                      <CheckCircle className={`w-4 h-4 mt-0.5 flex-shrink-0 ${tier.popular ? 'text-accent' : 'text-green-500'}`} />
+                      <span className={`text-sm ${tier.popular ? 'text-white/90' : 'text-gray'}`}>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className={`text-xs italic ${tier.popular ? 'text-white/70' : 'text-gray'}`}>{tier.ideal}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Button
+              href="/contact"
+              variant="primary"
+              size="lg"
+              icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
+            >
+              Discuss Maintenance Options
+            </Button>
           </div>
         </div>
       </section>
@@ -699,8 +938,80 @@ export default function CommercialRoofingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Service Areas Section */}
+      {/* Commercial Project Portfolio Highlights */}
       <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <BadgeCheck className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">Project Portfolio</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Commercial Roofing Projects Across Charlotte
+            </h2>
+            <p className="text-gray text-lg">
+              Our portfolio spans every type of commercial property in the Charlotte metro area.
+              Here are highlights from recent commercial roofing projects.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+              <div className="relative h-48">
+                <Image
+                  src={IMAGES.commercial.warehouse}
+                  alt="Commercial warehouse roofing project Charlotte NC"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-dark mb-2">50,000 SF Warehouse TPO Replacement</h3>
+                <p className="text-gray text-sm">Complete TPO roof replacement for a University City distribution warehouse. Completed on nights and weekends to avoid operational disruption.</p>
+                <Link href="/warehouse-roofing-charlotte-nc" className="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-3">
+                  Warehouse Roofing Services <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+              <div className="relative h-48">
+                <Image
+                  src={IMAGES.commercial.office}
+                  alt="Commercial office building roofing project Charlotte NC"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-dark mb-2">Multi-Building Office Park EPDM System</h3>
+                <p className="text-gray text-sm">EPDM roof installation across a 3-building Ballantyne office complex. Phased approach maintained full tenant access throughout.</p>
+                <Link href="/office-building-roofing-charlotte-nc" className="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-3">
+                  Office Building Roofing <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+              <div className="relative h-48">
+                <Image
+                  src={IMAGES.commercial.flatRoof}
+                  alt="Commercial retail center roofing project Charlotte NC"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-dark mb-2">Shopping Center Roof Coating System</h3>
+                <p className="text-gray text-sm">Silicone roof coating application for a South Charlotte retail center. Extended existing roof life by 15+ years at 40% of replacement cost.</p>
+                <Link href="/retail-shopping-center-roofing-charlotte-nc" className="inline-flex items-center gap-1 text-primary font-semibold text-sm mt-3">
+                  Retail Roofing Services <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
@@ -718,13 +1029,13 @@ export default function CommercialRoofingCharlotteNCPage() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Charlotte Areas */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-light rounded-xl p-6 shadow-md">
               <h3 className="text-xl font-bold text-dark mb-4">Charlotte Commercial Districts</h3>
               <div className="flex flex-wrap gap-2">
                 {charlotteAreas.map((area) => (
                   <span
                     key={area}
-                    className="inline-block bg-light px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
+                    className="inline-block bg-white px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
                   >
                     {area}
                   </span>
@@ -733,7 +1044,7 @@ export default function CommercialRoofingCharlotteNCPage() {
             </div>
 
             {/* Nearby Cities */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-light rounded-xl p-6 shadow-md">
               <h3 className="text-xl font-bold text-dark mb-4">Nearby Cities We Serve</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {nearbyCities.map((city) => (
@@ -763,7 +1074,7 @@ export default function CommercialRoofingCharlotteNCPage() {
       </section>
 
       {/* Customer Testimonials Section */}
-      <section className="section bg-white">
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
@@ -781,7 +1092,7 @@ export default function CommercialRoofingCharlotteNCPage() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-light rounded-xl shadow-md p-6">
+              <div key={index} className="bg-white rounded-xl shadow-md p-6">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
@@ -810,7 +1121,7 @@ export default function CommercialRoofingCharlotteNCPage() {
       </section>
 
       {/* Certifications Section */}
-      <section className="section bg-light">
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -822,7 +1133,7 @@ export default function CommercialRoofingCharlotteNCPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
+            <div className="bg-light rounded-xl p-6 text-center shadow-md">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
@@ -831,7 +1142,7 @@ export default function CommercialRoofingCharlotteNCPage() {
                 Factory-certified for GAF commercial roofing systems with NDL warranty eligibility.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
+            <div className="bg-light rounded-xl p-6 text-center shadow-md">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
@@ -840,7 +1151,7 @@ export default function CommercialRoofingCharlotteNCPage() {
                 Authorized installer for Carlisle TPO, EPDM, and PVC roofing systems.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
+            <div className="bg-light rounded-xl p-6 text-center shadow-md">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
@@ -849,7 +1160,7 @@ export default function CommercialRoofingCharlotteNCPage() {
                 Certified Firestone Building Products contractor for commercial applications.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
+            <div className="bg-light rounded-xl p-6 text-center shadow-md">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
@@ -863,7 +1174,7 @@ export default function CommercialRoofingCharlotteNCPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="section bg-white">
+      <section className="section bg-light">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -880,7 +1191,7 @@ export default function CommercialRoofingCharlotteNCPage() {
             </div>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="bg-light rounded-xl shadow-md p-6">
+                <div key={index} className="bg-white rounded-xl shadow-md p-6">
                   <h3 className="font-bold text-dark mb-2">{faq.question}</h3>
                   <p className="text-gray">{faq.answer}</p>
                 </div>

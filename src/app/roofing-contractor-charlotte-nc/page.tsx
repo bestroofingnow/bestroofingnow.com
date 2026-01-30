@@ -18,8 +18,15 @@ import {
   CloudRain,
   Search,
   MapPin,
+  FileCheck,
+  ClipboardCheck,
+  BookOpen,
+  Scale,
+  AlertTriangle,
+  ListChecks,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -27,14 +34,17 @@ import {
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
+import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
+import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
+import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Roofing Contractor Charlotte NC | Licensed & Certified | GAF CertainTeed',
   description:
-    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed SELECT ShingleMaster, Owens Corning Preferred. Fully insured with manufacturer-backed warranties. NC General Contractor License.',
+    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed SELECT ShingleMaster, Owens Corning Preferred. 5.0 Google rating, BBB A+ rated, veteran-owned. NC General Contractor license. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
   keywords: [
     'roofing contractor charlotte nc',
     'licensed roofing contractor charlotte',
@@ -48,6 +58,9 @@ export const metadata: Metadata = {
     'manufacturer certified roofer charlotte nc',
     'general contractor roofing charlotte',
     'warranty backed roofing contractor charlotte',
+    'best roofing contractor charlotte nc',
+    'roofing contractor near me charlotte',
+    'local roofing contractor charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`,
@@ -55,7 +68,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Roofing Contractor Charlotte NC | Licensed & Insured | Best Roofing Now',
     description:
-      'BBB A+ rated, veteran-owned roofing contractor serving Charlotte NC. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
+      'BBB A+ rated, veteran-owned roofing contractor serving Charlotte NC. Licensed and insured with 500+ roofs installed. GAF, CertainTeed, Owens Corning certified. Free estimates.',
     url: `${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`,
     type: 'website',
     images: [
@@ -74,38 +87,94 @@ const services = [
   {
     icon: Home,
     title: 'Residential Roofing',
-    description: 'Complete roofing solutions for homes including shingle, metal, and tile roofing.',
+    description: 'Complete roofing solutions for homes including shingle, metal, tile, and slate roofing with extended warranty options.',
     href: '/services/residential-roofing',
   },
   {
     icon: Building2,
     title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for businesses.',
+    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for businesses of all sizes throughout Charlotte.',
     href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
     title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage.',
+    description: 'Fast, reliable repairs for leaks, missing shingles, flashing damage, and storm damage with honest assessments.',
     href: '/services/roof-repair',
   },
   {
     icon: Home,
     title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
+    description: 'Full tear-off and replacement with premium materials and manufacturer-backed warranties up to 50 years.',
     href: '/services/roof-replacement',
   },
   {
     icon: Search,
     title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports and photos.',
+    description: 'Free comprehensive inspections with detailed reports, photos, drone imagery, and honest recommendations.',
     href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
     title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance.',
+    description: '24/7 emergency storm damage restoration with complete insurance claim assistance and documentation.',
     href: '/services/storm-damage',
+  },
+];
+
+// NC Licensing requirements
+const licensingRequirements = [
+  {
+    title: 'NC General Contractor License',
+    description: 'North Carolina requires roofing contractors working on projects over $30,000 to hold a valid General Contractor license. This license is issued by the NC Licensing Board for General Contractors (NCLBGC) and requires passing an exam, demonstrating financial responsibility, and maintaining continuous education.',
+  },
+  {
+    title: 'Licensing Board Verification',
+    description: 'You can verify any roofing contractor\'s license status through the NC Licensing Board website at nclbgc.org. Look up the contractor by name or license number to confirm their license is active and in good standing with no disciplinary actions.',
+  },
+  {
+    title: 'Insurance Requirements',
+    description: 'Licensed roofing contractors in NC are required to carry general liability insurance and workers compensation insurance. Best Roofing Now maintains comprehensive coverage including $2M general liability and full workers comp for all employees.',
+  },
+  {
+    title: 'Building Permits',
+    description: 'Charlotte NC requires building permits for roof replacement projects. Licensed roofing contractors handle the permit application process, ensure work meets NC Residential Building Code requirements, and arrange final inspections.',
+  },
+];
+
+// Questions to ask your roofing contractor
+const contractorQuestions = [
+  {
+    question: 'What is your NC General Contractor license number?',
+    why: 'Verifies they are legally allowed to perform roofing work in North Carolina. You can look up the number at nclbgc.org.',
+  },
+  {
+    question: 'Can you provide proof of liability and workers comp insurance?',
+    why: 'Protects you from financial liability if workers are injured or property is damaged during the project.',
+  },
+  {
+    question: 'What manufacturer certifications do you hold?',
+    why: 'Certifications from GAF, CertainTeed, or Owens Corning enable better warranty coverage. Only 2% of contractors achieve top-tier status.',
+  },
+  {
+    question: 'What specific warranty do you offer on materials and labor?',
+    why: 'Understand exactly what is covered, for how long, and what could void the warranty. Get warranty terms in writing.',
+  },
+  {
+    question: 'Will you handle the building permit and inspections?',
+    why: 'A professional contractor handles all permitting. Unpermitted work can cause problems when selling your home.',
+  },
+  {
+    question: 'What is the detailed scope of work and timeline?',
+    why: 'A detailed written scope prevents misunderstandings and ensures all aspects of the job are covered in the price.',
+  },
+  {
+    question: 'What materials will you use? Can I see specifications?',
+    why: 'Know exactly what materials are going on your roof. Compare brands, grades, and specifications between contractor quotes.',
+  },
+  {
+    question: 'What is your payment schedule?',
+    why: 'Reputable contractors never require more than 30% upfront. Full payment should only be due upon satisfactory completion.',
   },
 ];
 
@@ -134,7 +203,7 @@ const whyChooseUs = [
   {
     icon: Users,
     title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+    description: 'CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred.',
   },
   {
     icon: Clock,
@@ -165,6 +234,10 @@ const charlotteNeighborhoods = [
   'Chantilly',
   'Commonwealth',
   'Sedgefield',
+  'Steele Creek',
+  'Highland Creek',
+  'Providence Plantation',
+  'Foxcroft',
 ];
 
 // Nearby cities served
@@ -183,47 +256,47 @@ const nearbyCities = [
   { name: 'Indian Trail', href: '/locations/indian-trail-nc' },
 ];
 
-// FAQs about hiring a roofing contractor in Charlotte
+// Enhanced FAQs - 8 PAA-targeting questions
 const faqs = [
   {
-    question: 'How do I find a reliable roofing contractor in Charlotte NC?',
+    question: 'What makes a good roofing contractor in Charlotte?',
     answer:
-      'Look for a Charlotte roofing contractor that is BBB accredited, has strong Google reviews, is licensed and insured in North Carolina, and offers free estimates. Best Roofing Now meets all these criteria with our BBB A+ rating, 5-star reviews, and full licensing. We recommend getting at least 3 quotes and checking references before making a decision.',
-  },
-  {
-    question: 'Is Best Roofing Now licensed and insured in Charlotte NC?',
-    answer:
-      'Yes, Best Roofing Now is fully licensed as a roofing contractor in North Carolina and carries comprehensive general liability insurance and workers compensation coverage. This protects you from liability if any accidents occur during your roofing project. We are happy to provide proof of insurance upon request.',
-  },
-  {
-    question: 'What roofing services do you offer in Charlotte?',
-    answer:
-      'We offer complete roofing services in Charlotte including residential roof repair, roof replacement, new roof installation, commercial roofing, storm damage repair, emergency roofing services, roof inspections, gutter installation, and siding services. We work with all roofing materials including asphalt shingles, metal roofing, tile, and flat roof systems.',
+      `A good roofing contractor in Charlotte should have: (1) A valid NC General Contractor license verified at nclbgc.org, (2) BBB accreditation with an A or A+ rating, (3) Strong Google reviews (4.5+ stars with 50+ reviews), (4) Comprehensive insurance (liability + workers comp), (5) Manufacturer certifications from GAF, CertainTeed, or Owens Corning for enhanced warranties, (6) A local Charlotte office with a physical address, (7) Transparent pricing with detailed written estimates, and (8) A track record of completed projects. Best Roofing Now exceeds all these standards with a ${SITE_CONFIG.googleRating} Google rating, ${SITE_CONFIG.googleReviewCount}+ reviews, BBB A+ accreditation, and ${SITE_CONFIG.roofsInstalled}+ completed roofs.`,
   },
   {
     question: 'How much does a roofing contractor charge in Charlotte NC?',
     answer:
-      'Roofing costs in Charlotte vary based on the type of work needed. Roof repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Factors affecting cost include roof size, pitch, material choice, and complexity. We provide free, no-obligation estimates with transparent pricing and no hidden fees.',
+      'Roofing contractor costs in Charlotte NC vary by project type. Roof repairs typically range from $200-$1,500 for minor issues. Partial roof replacements cost $3,000-$8,000. Full residential roof replacements with architectural shingles range from $8,000-$18,000 for average-sized homes (1,500-2,500 sq ft). Premium materials like metal roofing cost $15,000-$35,000. Factors affecting price include roof size, pitch, material choice, number of old layers to remove, and structural repair needs. Best Roofing Now provides free, detailed estimates with transparent pricing and no hidden fees. Call ' + SITE_CONFIG.phone + ' for your free estimate.',
   },
   {
-    question: 'Do you offer free roof inspections in Charlotte?',
+    question: 'Do roofing contractors in NC need to be licensed?',
     answer:
-      'Yes! Best Roofing Now offers completely free roof inspections throughout Charlotte and surrounding areas. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written report with photos. There is no obligation to hire us after the inspection.',
+      'Yes, North Carolina requires roofing contractors to hold a valid General Contractor license issued by the NC Licensing Board for General Contractors (NCLBGC) for any project over $30,000. This license requires passing a comprehensive exam, demonstrating financial responsibility, carrying insurance, and completing continuing education. You can verify any contractor\'s license at nclbgc.org. Hiring an unlicensed contractor puts you at risk for substandard work, no warranty protection, and potential legal liability. Best Roofing Now is fully licensed in North Carolina.',
   },
   {
-    question: 'How long does it take to replace a roof in Charlotte?',
+    question: 'What is the best time of year to hire a roofing contractor in Charlotte?',
     answer:
-      'Most residential roof replacements in Charlotte are completed in 1-3 days, depending on the size and complexity of your roof. Larger homes or complex roof designs may take 3-5 days. We work efficiently while maintaining the highest quality standards and always clean up thoroughly when the job is done.',
+      'The best time to hire a roofing contractor in Charlotte NC is during the fall (September-November) or spring (March-May). These seasons offer mild temperatures ideal for proper shingle adhesion and comfortable working conditions. However, emergency roof repairs should never wait regardless of season. Summer (June-August) is the busiest season for Charlotte roofing contractors, so booking during spring or fall often means shorter wait times and potentially better scheduling. Winter (December-February) is also a viable option for Charlotte since temperatures rarely stay below freezing for extended periods. Best Roofing Now serves Charlotte year-round with flexible scheduling.',
   },
   {
-    question: 'Do you help with insurance claims for roof damage in Charlotte?',
+    question: 'How do I verify a roofing contractor\'s license in NC?',
     answer:
-      'Absolutely. Best Roofing Now has extensive experience working with insurance companies on storm damage claims in Charlotte. We provide detailed documentation, meet with adjusters, and advocate for fair settlements. Many Charlotte roofs qualify for insurance coverage after storm events, and we help maximize your claim.',
+      'To verify a roofing contractor\'s license in North Carolina, visit the NC Licensing Board for General Contractors website at nclbgc.org. Click on "Verify a License" and search by the contractor\'s name or license number. The search results will show: (1) License status (active, expired, revoked), (2) License type and classification, (3) Any disciplinary actions or complaints, (4) Insurance verification. You should always verify a contractor\'s license before signing any contract. If the contractor cannot provide a license number or their license is not active, do not hire them. Best Roofing Now\'s license can be verified at nclbgc.org.',
   },
   {
-    question: 'What warranties do you offer on roofing work in Charlotte?',
+    question: 'What should a roofing contract include?',
     answer:
-      'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As CertainTeed, GAF, and Owens Corning certified installers, we can offer enhanced warranty options like GAF Golden Pledge (50 years material + 25 years workmanship) and CertainTeed SureStart PLUS.',
+      'A professional roofing contract from a Charlotte contractor should include: (1) Full contractor name, address, phone number, and NC license number, (2) Detailed scope of work including removal, materials, and installation methods, (3) Specific materials listed by manufacturer, product name, and color, (4) Project timeline with estimated start and completion dates, (5) Total cost with a payment schedule (never more than 30% upfront), (6) Warranty details for both materials and workmanship, (7) Permit responsibility (contractor should handle), (8) Cleanup and debris removal terms, (9) Change order process, and (10) Cancellation policy. Best Roofing Now provides comprehensive contracts that cover all these elements.',
+  },
+  {
+    question: 'How long should a roofing project take?',
+    answer:
+      'A typical residential roof replacement in Charlotte takes 1-3 days depending on the size and complexity. Here is a general timeline: Permit approval takes 1-3 business days. Tear-off and inspection of the existing roof takes 1 day. Installation of new underlayment, flashing, and roofing material takes 1-2 days. Final cleanup and inspection takes half a day. Larger homes (3,000+ sq ft), steep or complex designs, and projects requiring structural repairs may take 3-5 days total. Weather delays (Charlotte averages 43 inches of rain) can extend timelines. Best Roofing Now provides detailed timelines with each estimate and keeps homeowners informed throughout the project.',
+  },
+  {
+    question: 'What warranty should a roofing contractor offer?',
+    answer:
+      'A reputable Charlotte roofing contractor should offer both a workmanship warranty and a manufacturer material warranty. Workmanship warranties from the contractor typically cover 5-25 years and protect against installation errors. Material warranties from manufacturers range from 25-50 years for shingles and up to lifetime for metal roofing. Best Roofing Now offers the strongest warranties available: GAF Golden Pledge (50-year material + 25-year workmanship), CertainTeed SureStart PLUS (50-year material + 25-year workmanship), and Owens Corning extended coverage. These enhanced warranties are only available through manufacturer-certified contractors like Best Roofing Now.',
   },
 ];
 
@@ -242,6 +315,7 @@ export default function RoofingContractorCharlotteNCPage() {
         pageUrl={`${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`}
         pageName="Roofing Contractor Charlotte NC"
         city="Charlotte"
+        includeVoiceActions={true}
       />
       <VoiceSearchActionSchema />
 
@@ -260,19 +334,23 @@ export default function RoofingContractorCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <Shield className="w-4 h-4" />
-              <span className="text-sm font-semibold">BBB A+ Rated | Veteran-Owned</span>
+              <span className="text-sm font-semibold">BBB A+ Rated | NC Licensed | Veteran-Owned</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Roofing Contractor <br className="hidden md:block" />
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Charlotte's most trusted roofing company with {SITE_CONFIG.roofsInstalled}+ roofs installed
+              Charlotte&apos;s most trusted roofing contractor with {SITE_CONFIG.roofsInstalled}+ roofs installed
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now is a licensed and insured roofing contractor serving Charlotte and the surrounding
-              areas. From roof repairs to complete replacements, our certified team delivers exceptional quality
-              backed by industry-leading warranties.
+              areas. From{' '}
+              <Link href="/roof-repair-charlotte-nc" className="text-accent-light hover:text-white underline">roof repairs</Link>{' '}
+              to{' '}
+              <Link href="/roof-replacement-charlotte-nc" className="text-accent-light hover:text-white underline">complete replacements</Link>,
+              our certified team delivers exceptional quality backed by industry-leading warranties from
+              GAF, CertainTeed, and Owens Corning.
             </p>
 
             {/* CTA Buttons */}
@@ -300,7 +378,7 @@ export default function RoofingContractorCharlotteNCPage() {
             <div className="flex flex-wrap items-center gap-6 mt-8 text-sm text-white/80">
               <span className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                5.0 Google Rating ({SITE_CONFIG.googleReviewCount}+ reviews)
+                {SITE_CONFIG.googleRating} Google Rating ({SITE_CONFIG.googleReviewCount}+ reviews)
               </span>
               <span className="flex items-center gap-2">
                 <Shield className="w-5 h-5 text-accent-light" />
@@ -319,8 +397,56 @@ export default function RoofingContractorCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* NC Roofing Contractor Licensing Section */}
       <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <Scale className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">NC Licensing Guide</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                NC Roofing Contractor Licensing Requirements
+              </h2>
+              <p className="text-gray text-lg">
+                Understanding North Carolina&apos;s licensing requirements helps you hire a legitimate, qualified
+                roofing contractor and avoid scams. Here&apos;s what you need to know.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {licensingRequirements.map((req) => (
+                <div key={req.title} className="bg-light rounded-xl p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <FileCheck className="w-5 h-5 text-primary flex-shrink-0" />
+                    <h3 className="font-bold text-dark">{req.title}</h3>
+                  </div>
+                  <p className="text-gray text-sm">{req.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Verification CTA */}
+            <div className="mt-8 bg-primary/5 border border-primary/20 rounded-xl p-6 flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-1">
+                <h3 className="font-bold text-dark mb-2">Verify Before You Hire</h3>
+                <p className="text-gray text-sm">
+                  Always verify your roofing contractor&apos;s license before signing a contract. You can check
+                  Best Roofing Now&apos;s license and any other contractor at the NC Licensing Board website.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2">
+                <CheckCircle className="w-8 h-8 text-green-500 mx-auto" />
+                <span className="text-sm font-bold text-green-600">Best Roofing Now: VERIFIED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -336,7 +462,7 @@ export default function RoofingContractorCharlotteNCPage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group p-6 bg-light rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
+                className="group p-6 bg-white rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-primary" />
@@ -355,6 +481,60 @@ export default function RoofingContractorCharlotteNCPage() {
         </div>
       </section>
 
+      {/* Questions to Ask Your Roofing Contractor Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <ClipboardCheck className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Expert Guide</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Questions to Ask Your Roofing Contractor
+              </h2>
+              <p className="text-gray text-lg">
+                Before hiring a roofing contractor in Charlotte NC, ask these essential questions to ensure
+                you&apos;re working with a qualified, trustworthy professional.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {contractorQuestions.map((item, index) => (
+                <div key={item.question} className="bg-light rounded-xl p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-dark mb-2">&ldquo;{item.question}&rdquo;</h3>
+                      <p className="text-gray text-sm">
+                        <span className="font-semibold text-primary">Why this matters: </span>
+                        {item.why}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Best Roofing Now CTA */}
+            <div className="mt-8 bg-gradient-to-br from-primary to-primary-dark rounded-xl p-8 text-white text-center">
+              <h3 className="text-2xl font-bold mb-3 text-white">
+                Best Roofing Now Answers Every Question with Confidence
+              </h3>
+              <p className="text-white/80 mb-6 max-w-2xl mx-auto">
+                We are fully licensed, BBB A+ accredited, manufacturer certified, and transparent about every
+                aspect of our work. We welcome these questions because we have nothing to hide.
+              </p>
+              <EstimateButton variant="white" size="lg">
+                Get Your Free Estimate Today
+              </EstimateButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="section bg-light">
         <div className="container">
@@ -365,8 +545,30 @@ export default function RoofingContractorCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When you need a roofing contractor in Charlotte NC, you want a company you can trust. Best Roofing
-                Now has built our reputation on honesty, quality workmanship, and putting customers first.
+                Now has built our reputation on honesty, quality workmanship, and putting customers first. With{' '}
+                {SITE_CONFIG.roofsInstalled}+ roofs completed, we have the experience to handle any project.
               </p>
+
+              {/* Social Proof Stats */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p className="text-2xl font-bold text-primary">{SITE_CONFIG.googleReviewCount}+</p>
+                  <p className="text-xs text-gray">Google Reviews</p>
+                </div>
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p className="text-2xl font-bold text-primary">{SITE_CONFIG.googleRating}</p>
+                  <p className="text-xs text-gray">Star Rating</p>
+                </div>
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p className="text-2xl font-bold text-primary">{SITE_CONFIG.roofsInstalled}+</p>
+                  <p className="text-xs text-gray">Roofs Completed</p>
+                </div>
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p className="text-2xl font-bold text-primary">A+</p>
+                  <p className="text-xs text-gray">BBB Rating</p>
+                </div>
+              </div>
+
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (
                   <div key={item.title} className="flex items-start gap-3">
@@ -397,7 +599,7 @@ export default function RoofingContractorCharlotteNCPage() {
                     ))}
                   </div>
                   <div>
-                    <p className="font-bold text-dark">5.0 Rating</p>
+                    <p className="font-bold text-dark">{SITE_CONFIG.googleRating} Rating</p>
                     <p className="text-sm text-gray">{SITE_CONFIG.googleReviewCount}+ Google Reviews</p>
                   </div>
                 </div>
@@ -416,7 +618,7 @@ export default function RoofingContractorCharlotteNCPage() {
                 Need a Roofing Contractor in Charlotte?
               </h2>
               <p className="text-white/90">
-                Get a free, no-obligation estimate from Charlotte's most trusted roofing company.
+                Get a free, no-obligation estimate from Charlotte&apos;s most trusted roofing company.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -513,7 +715,7 @@ export default function RoofingContractorCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Our certifications from industry-leading manufacturers mean you get premium materials backed by
-              extended warranty coverage.
+              extended warranty coverage that protects your investment for decades.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -523,7 +725,7 @@ export default function RoofingContractorCharlotteNCPage() {
               </div>
               <h3 className="font-bold text-dark mb-2">CertainTeed SELECT ShingleMaster</h3>
               <p className="text-gray text-sm">
-                Top-tier certification with access to premium warranties and specialized training.
+                Top-tier certification with access to premium SureStart PLUS warranties and specialized training.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-md">
@@ -532,7 +734,7 @@ export default function RoofingContractorCharlotteNCPage() {
               </div>
               <h3 className="font-bold text-dark mb-2">GAF Factory-Certified</h3>
               <p className="text-gray text-sm">
-                Authorized to offer GAF's Golden Pledge warranty - the best in the industry.
+                Authorized to offer GAF&apos;s Golden Pledge warranty - the best in the industry.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 text-center shadow-md">
@@ -541,7 +743,7 @@ export default function RoofingContractorCharlotteNCPage() {
               </div>
               <h3 className="font-bold text-dark mb-2">Owens Corning Preferred</h3>
               <p className="text-gray text-sm">
-                Preferred Contractor status with Owens Corning for extended warranty options.
+                Preferred Contractor status with Owens Corning for extended warranty options up to 50 years.
               </p>
             </div>
           </div>
@@ -605,11 +807,11 @@ export default function RoofingContractorCharlotteNCPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section with Voice Search Optimization */}
       <section className="section bg-light">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
                 <HelpCircle className="w-4 h-4" aria-hidden="true" />
                 <span className="text-sm font-semibold">Common Questions</span>
@@ -621,35 +823,89 @@ export default function RoofingContractorCharlotteNCPage() {
                 Answers to common questions about hiring a roofing contractor in Charlotte NC.
               </p>
             </div>
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-md p-6">
-                  <h3 className="font-bold text-dark mb-2">{faq.question}</h3>
-                  <p className="text-gray">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
+            {/* Voice Search Optimized FAQ Component */}
+            <VoiceSearchFAQ
+              faqs={faqs}
+              city="Charlotte"
+              className="bg-white rounded-xl p-6 shadow-md"
+            />
           </div>
         </div>
       </section>
 
-      {/* Cross-Reference to Main Services */}
-      <section className="py-8 bg-primary/5 border-t border-primary/10">
+      {/* Related Roofing Pages */}
+      <section className="section bg-white">
         <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray text-center md:text-left">
-              Looking for our complete service offerings?
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Explore More Roofing Services in Charlotte
+            </h2>
+            <p className="text-gray">
+              Find the specific roofing service you need from Charlotte&apos;s most trusted contractor.
             </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/roofing-charlotte-nc"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
             >
-              View All Roofing Services in Charlotte
+              Roofing Charlotte NC
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/roofers-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Roofers Charlotte NC
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/roof-replacement-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Roof Replacement Charlotte NC
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/roof-repair-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Roof Repair Charlotte NC
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/commercial-roofing-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Commercial Roofing Charlotte NC
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/locations/charlotte-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Charlotte NC Service Area
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Service City Links */}
+      <ServiceCityLinks
+        city="Charlotte"
+        citySlug="charlotte-nc"
+        title="Complete Roofing Contractor Services in Charlotte NC"
+        subtitle="From repairs to replacements, we offer comprehensive roofing solutions for Charlotte homes and businesses."
+      />
+
+      {/* Related Cities */}
+      <RelatedCitiesLinks
+        currentCity="Charlotte"
+        service="Roofing Contractor"
+        serviceSlug="roofing-contractor"
+        title="Licensed Roofing Contractors in Nearby Cities"
+      />
 
       {/* Final CTA */}
       <CTASection

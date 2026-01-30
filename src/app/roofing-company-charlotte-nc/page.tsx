@@ -22,9 +22,21 @@ import {
   BadgeCheck,
   Building,
   Briefcase,
+  Heart,
+  Hammer,
+  DollarSign,
+  FileCheck,
+  Zap,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import EstimateButton from '@/components/estimate/EstimateButton';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -33,9 +45,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Company Charlotte NC | Veteran-Owned & Family Operated',
+  title: 'Roofing Company Charlotte NC | Veteran-Owned | 5-Star Rated | Best Roofing Now',
   description:
-    'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Established business with strong values, BBB A+ rated. Meet the Turner family and our commitment to your home.',
+    'Best Roofing Now is Charlotte NC\'s top-rated veteran-owned roofing company. 5.0 Google rating, 62+ reviews, BBB A+ rated, 500+ roofs installed. GAF, CertainTeed & Owens Corning certified. Free estimates for residential & commercial roofing.',
   keywords: [
     'roofing company charlotte nc',
     'veteran owned roofing company charlotte',
@@ -45,16 +57,19 @@ export const metadata: Metadata = {
     'local roofing company charlotte',
     'trusted roofing company charlotte nc',
     'roofing companies in charlotte',
-    'charlotte roofing company about us',
+    'charlotte roofing company near me',
     'reputable roofing company charlotte nc',
+    'top rated roofing company charlotte nc',
+    'bbb a+ roofing company charlotte',
+    'roofing company lake norman',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-company-charlotte-nc`,
   },
   openGraph: {
-    title: 'Roofing Company Charlotte NC | Veteran-Owned & Family Operated',
+    title: 'Roofing Company Charlotte NC | Veteran-Owned | 5-Star Rated | Best Roofing Now',
     description:
-      'Meet Best Roofing Now - a veteran-owned, family-operated roofing company serving Charlotte NC. Established with strong values, BBB A+ rated.',
+      'Meet Best Roofing Now - Charlotte\'s veteran-owned, family-operated roofing company. 5.0 Google rating, BBB A+ rated, 500+ roofs installed. Free estimates.',
     url: `${SITE_CONFIG.url}/roofing-company-charlotte-nc`,
     type: 'website',
     images: [
@@ -72,8 +87,8 @@ export const metadata: Metadata = {
 const companyCredentials = [
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity, discipline, and excellence.',
+    title: 'Veteran-Owned & Operated',
+    description: 'Proudly veteran-owned and operated with military values of integrity, discipline, and excellence in every project.',
   },
   {
     icon: Award,
@@ -82,13 +97,13 @@ const companyCredentials = [
   },
   {
     icon: Star,
-    title: '500+ Roofs Completed',
-    description: 'Over 500 successful roofing projects completed throughout the Charlotte metro area.',
+    title: `${SITE_CONFIG.roofsInstalled}+ Roofs Completed`,
+    description: `Over ${SITE_CONFIG.roofsInstalled} successful roofing projects completed throughout the Charlotte metro area and Lake Norman region.`,
   },
   {
     icon: BadgeCheck,
     title: 'Manufacturer Certified',
-    description: 'Certified by CertainTeed, GAF, and Owens Corning for premium warranty coverage.',
+    description: 'Certified by CertainTeed, GAF, and Owens Corning for premium warranty coverage and expert installation.',
   },
 ];
 
@@ -97,72 +112,140 @@ const services = [
   {
     icon: Home,
     title: 'Residential Roofing',
-    description: 'Complete residential roofing solutions including shingle, metal, and tile roofing systems.',
+    description: 'Complete residential roofing solutions including shingle, metal, and tile roofing systems for Charlotte homes.',
     href: '/services/residential-roofing',
   },
   {
     icon: Building2,
     title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and comprehensive commercial roofing services.',
-    href: '/services/commercial-roofing',
+    description: 'TPO, EPDM, flat roof systems, and comprehensive commercial roofing services for Charlotte businesses.',
+    href: '/commercial-roofing-charlotte-nc',
   },
   {
     icon: Wrench,
     title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, damaged shingles, and all roofing issues.',
-    href: '/services/roof-repair',
+    description: 'Fast, reliable repairs for leaks, damaged shingles, and all roofing issues with same-day service available.',
+    href: '/roof-repair-charlotte-nc',
   },
   {
     icon: Home,
     title: 'Roof Replacement',
-    description: 'Complete tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+    description: 'Complete tear-off and replacement with premium materials and extended manufacturer warranties.',
+    href: '/roof-replacement-charlotte-nc',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Comprehensive free inspections with detailed reports and honest recommendations.',
+    title: 'Free Roof Inspection',
+    description: 'Comprehensive free inspections with detailed reports, drone imagery, and honest recommendations.',
     href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
     title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and full insurance claim assistance.',
-    href: '/services/storm-damage',
+    description: 'Emergency storm damage restoration and full insurance claim assistance for Charlotte homeowners.',
+    href: '/storm-damage-roof-repair-charlotte-nc',
   },
 ];
 
-// Why choose our company
+// Why choose our company - enhanced
 const whyChooseUs = [
   {
     icon: ThumbsUp,
     title: 'Proven Track Record',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from satisfied Charlotte homeowners and businesses.`,
+    description: `${SITE_CONFIG.googleRating} Google rating with ${SITE_CONFIG.googleReviewCount}+ verified five-star reviews from satisfied Charlotte homeowners and businesses.`,
   },
   {
-    icon: Building,
-    title: 'Established Company',
-    description: 'An established roofing company with deep roots in the Charlotte community.',
+    icon: Heart,
+    title: 'Family Business Values',
+    description: 'A family-owned roofing company serving Charlotte and Lake Norman. Owner James Turner personally oversees every project.',
   },
   {
     icon: Briefcase,
     title: 'Professional Team',
-    description: 'Experienced, background-checked crews who treat your property with respect.',
+    description: 'Experienced, background-checked crews who treat your property with the utmost respect and care.',
   },
   {
     icon: CheckCircle,
     title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing company with comprehensive liability and workers comp insurance.',
+    description: 'Fully licensed NC roofing company with comprehensive liability and workers comp insurance for your protection.',
   },
   {
     icon: Users,
     title: 'Local Ownership',
-    description: 'Locally owned and operated - we live and work in the communities we serve.',
+    description: 'Locally owned and operated by the Turner family - we live and work in the communities we serve.',
   },
   {
     icon: Clock,
     title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when you need us most.',
+    description: 'Round-the-clock emergency roofing services when you need us most. Call anytime, day or night.',
+  },
+];
+
+// What Makes Best Roofing Now Different
+const differentiators = [
+  {
+    icon: Shield,
+    title: 'Veteran-Owned & Operated',
+    description: 'Founded on military values of integrity, discipline, and attention to detail. We bring that same commitment to every roofing project in Charlotte.',
+  },
+  {
+    icon: Heart,
+    title: 'Family Business Serving Lake Norman & Charlotte',
+    description: 'Best Roofing Now is a family business with deep roots in the Charlotte and Lake Norman communities. We treat every customer like a neighbor.',
+  },
+  {
+    icon: Users,
+    title: 'Owner on Every Job Site',
+    description: 'James Turner, owner of Best Roofing Now, personally oversees every roofing project. You won\'t deal with salespeople - you\'ll work directly with the owner.',
+  },
+  {
+    icon: Star,
+    title: `${SITE_CONFIG.googleRating} Google Rating with ${SITE_CONFIG.googleReviewCount}+ Reviews`,
+    description: `Our perfect ${SITE_CONFIG.googleRating} Google rating across ${SITE_CONFIG.googleReviewCount}+ verified reviews reflects our unwavering commitment to customer satisfaction.`,
+  },
+  {
+    icon: Award,
+    title: 'BBB A+ Rated with Zero Complaints',
+    description: `Better Business Bureau A+ accredited with zero complaints. We've earned the highest possible rating through honest business practices.`,
+  },
+  {
+    icon: Hammer,
+    title: `${SITE_CONFIG.roofsInstalled}+ Roofs Installed`,
+    description: `With over ${SITE_CONFIG.roofsInstalled} roofs completed across Charlotte and surrounding areas, our experience ensures quality results on every project.`,
+  },
+];
+
+// Project portfolio highlights
+const projectHighlights = [
+  {
+    title: 'Residential Projects',
+    description: 'Complete roof replacements, repairs, and new construction for Charlotte homes in every neighborhood from Myers Park to Ballantyne.',
+    stats: '400+',
+    label: 'Homes Protected',
+    image: IMAGES.realProjects.certainteed1,
+  },
+  {
+    title: 'Commercial Projects',
+    description: 'Office buildings, retail centers, warehouses, churches, and multi-family properties throughout the Charlotte metro.',
+    stats: '100+',
+    label: 'Businesses Served',
+    image: IMAGES.commercial.office,
+  },
+];
+
+// Certification badges
+const certifications = [
+  {
+    name: 'GAF Factory-Certified Contractor',
+    description: 'Authorized to offer GAF\'s premium warranty coverage including Golden Pledge and Silver Pledge warranties.',
+  },
+  {
+    name: 'CertainTeed SELECT ShingleMaster',
+    description: 'Highest level of CertainTeed certification for expert installation and premium warranty eligibility.',
+  },
+  {
+    name: 'Owens Corning Preferred Contractor',
+    description: 'Recognized by Owens Corning for meeting their rigorous standards for quality installation and customer service.',
   },
 ];
 
@@ -228,47 +311,47 @@ const nearbyCities = [
   { name: 'Indian Trail', href: '/locations/indian-trail-nc' },
 ];
 
-// FAQs about the company
+// FAQs about the company - enhanced with 8 targeted questions
 const faqs = [
   {
-    question: 'What makes Best Roofing Now the best roofing company in Charlotte NC?',
+    question: 'What is the top-rated roofing company in Charlotte NC?',
     answer:
-      'Best Roofing Now stands out as Charlotte\'s premier roofing company through our combination of veteran-owned values, BBB A+ accreditation, 500+ completed roofs, and manufacturer certifications from CertainTeed, GAF, and Owens Corning. Our commitment to quality, transparency, and customer satisfaction has earned us a 5-star Google rating and the trust of homeowners throughout the Charlotte area.',
+      `Best Roofing Now is consistently rated as the top roofing company in Charlotte NC, holding a perfect ${SITE_CONFIG.googleRating} Google rating with ${SITE_CONFIG.googleReviewCount}+ verified reviews. We are also BBB A+ accredited with zero complaints, and have completed over ${SITE_CONFIG.roofsInstalled} roofing projects throughout Charlotte and the Lake Norman region. Our veteran-owned values and manufacturer certifications from CertainTeed, GAF, and Owens Corning set us apart from every other roofing company in Charlotte.`,
   },
   {
-    question: 'Is Best Roofing Now a licensed and insured roofing company?',
+    question: 'How do I choose between roofing companies in Charlotte?',
     answer:
-      'Absolutely. Best Roofing Now is a fully licensed roofing company in North Carolina. We carry comprehensive general liability insurance and workers\' compensation coverage for all our employees. This protects you from any liability during your roofing project. We\'re happy to provide proof of licensing and insurance upon request.',
+      'When comparing roofing companies in Charlotte NC, look for these key factors: BBB accreditation and rating, verified Google reviews (quality matters more than quantity), proper NC licensing and insurance, manufacturer certifications (which enable better warranties), years of experience, transparent pricing, and whether the owner is involved in your project. Best Roofing Now meets all these criteria - and our owner James Turner personally oversees every project.',
   },
   {
-    question: 'How long has your roofing company been serving Charlotte NC?',
+    question: 'Is Best Roofing Now a local Charlotte roofing company?',
     answer:
-      'Best Roofing Now is an established roofing company with years of experience serving the Charlotte metro area. We\'ve completed over 500 roofing projects for residential and commercial clients throughout Charlotte and surrounding communities. Our track record of excellence and customer satisfaction speaks for itself.',
+      'Yes, Best Roofing Now is a locally owned and operated roofing company based in Charlotte NC. Our office is located at 10130 Mallard Creek Rd, Suite 300, Charlotte, NC 28262. We are a family business serving Charlotte and the Lake Norman region, and our owner James Turner lives in the community. Unlike out-of-town storm chasers, we are permanent members of the Charlotte business community and stand behind every roof we install.',
   },
   {
-    question: 'Does your roofing company offer free estimates in Charlotte?',
+    question: 'What services does Best Roofing Now offer?',
     answer:
-      'Yes! Best Roofing Now provides completely free, no-obligation estimates for all roofing services throughout Charlotte and the surrounding areas. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal with transparent pricing. There\'s absolutely no pressure to hire us after receiving your estimate.',
+      'Best Roofing Now is a full-service roofing company offering residential roofing, commercial roofing, roof repair, roof replacement, roof inspection, storm damage restoration, emergency roofing services, metal roofing, flat roofing, gutter services, and siding installation. We work with all roofing materials including asphalt shingles, metal, tile, TPO, EPDM, PVC, modified bitumen, and slate. We also provide free roof inspections and assist with insurance claims.',
   },
   {
-    question: 'What types of roofing services does your company offer?',
+    question: 'Does Best Roofing Now offer financing?',
     answer:
-      'As a full-service roofing company, we handle all residential and commercial roofing needs including roof replacement, roof repair, new construction, storm damage restoration, roof inspections, and emergency services. We work with all roofing materials including asphalt shingles, metal roofing, tile, flat roof systems (TPO, EPDM, PVC), slate, and more.',
+      'Yes, Best Roofing Now offers flexible financing options for roofing projects in Charlotte NC. We understand that a new roof is a significant investment, and we work with multiple financing partners to offer competitive rates and terms that fit your budget. We also accept all major credit cards and can work with your insurance company on covered claims. Contact us for details on current financing offers.',
   },
   {
-    question: 'Why should I choose a local roofing company in Charlotte NC?',
+    question: 'What areas does your roofing company serve?',
     answer:
-      'Choosing a local roofing company like Best Roofing Now means you\'re working with professionals who understand Charlotte\'s specific climate challenges, building codes, and community standards. We\'re invested in our community, stand behind our work, and will be here for warranty service and future needs. Unlike out-of-town contractors, we\'re not going anywhere.',
+      'Best Roofing Now serves all of Charlotte NC and the Greater Charlotte metro area including Myers Park, Dilworth, Ballantyne, South End, NoDa, University City, SouthPark, and all Charlotte neighborhoods. We also serve the Lake Norman communities of Huntersville, Cornelius, Davidson, and Mooresville, plus Matthews, Mint Hill, Pineville, Concord, Gastonia, and into South Carolina including Rock Hill and Fort Mill.',
   },
   {
-    question: 'Does your roofing company help with insurance claims?',
+    question: 'How long has Best Roofing Now been in Charlotte?',
     answer:
-      'Yes, we have extensive experience helping Charlotte homeowners navigate insurance claims for storm damage and other covered roofing issues. Our team provides detailed documentation, meets with insurance adjusters on your behalf, and advocates for fair settlements. Many Charlotte roofs qualify for insurance coverage, and we help maximize your claim.',
+      `Best Roofing Now was founded in ${SITE_CONFIG.founded} and has been serving Charlotte and the surrounding communities for ${SITE_CONFIG.yearsInBusiness}+ years. In that time, we have completed over ${SITE_CONFIG.roofsInstalled} roofing projects, earned a ${SITE_CONFIG.googleRating} Google rating with ${SITE_CONFIG.googleReviewCount}+ reviews, achieved BBB A+ accreditation, and become certified installers for CertainTeed, GAF, and Owens Corning. Our growth is a testament to our commitment to quality and customer satisfaction.`,
   },
   {
-    question: 'What areas does your roofing company serve near Charlotte?',
+    question: 'What makes a roofing company trustworthy?',
     answer:
-      'Our roofing company serves all of Charlotte and the greater metro area including Myers Park, Dilworth, Ballantyne, South End, NoDa, University City, and all Charlotte neighborhoods. We also serve nearby cities including Huntersville, Matthews, Cornelius, Davidson, Mooresville, Pineville, Concord, Gastonia, and into South Carolina including Rock Hill and Fort Mill.',
+      'A trustworthy roofing company should have: a verifiable physical address (not just a P.O. box), proper state licensing and insurance, BBB accreditation, positive Google reviews from real customers, manufacturer certifications, transparent written estimates, and a history of completed projects in your area. Best Roofing Now checks every box - we are BBB A+ rated, have a perfect 5.0 Google rating, hold certifications from three major manufacturers, and our owner personally stands behind every project.',
   },
 ];
 
@@ -306,19 +389,20 @@ export default function RoofingCompanyCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <Shield className="w-4 h-4 text-accent-light" />
-              <span className="text-sm font-semibold">Veteran-Owned | BBB A+ Rated | Established Company</span>
+              <span className="text-sm font-semibold">Veteran-Owned | BBB A+ Rated | {SITE_CONFIG.roofsInstalled}+ Roofs Installed</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Roofing Company <br className="hidden md:block" />
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Your Trusted Local Roofing Company with {SITE_CONFIG.roofsInstalled}+ Roofs Completed
+              Charlotte&apos;s Most Trusted Roofing Company with {SITE_CONFIG.roofsInstalled}+ Roofs Completed &amp; a {SITE_CONFIG.googleRating} Google Rating
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte&apos;s most trusted roofing company. As a veteran-owned, BBB A+ rated
-              company, we deliver exceptional roofing services backed by manufacturer certifications and our
-              commitment to quality craftsmanship.
+              Best Roofing Now is Charlotte&apos;s premier veteran-owned, family-operated roofing company. Owner James Turner
+              personally oversees every project, ensuring military-grade quality and attention to detail. With a BBB A+ rating,
+              {SITE_CONFIG.googleReviewCount}+ five-star Google reviews, and certifications from CertainTeed, GAF, and Owens Corning,
+              we deliver exceptional roofing services backed by the industry&apos;s best warranties.
             </p>
 
             {/* CTA Buttons */}
@@ -346,7 +430,7 @@ export default function RoofingCompanyCharlotteNCPage() {
             <div className="flex flex-wrap items-center gap-6 mt-8 text-sm text-white/80">
               <span className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                5.0 Google Rating ({SITE_CONFIG.googleReviewCount}+ reviews)
+                {SITE_CONFIG.googleRating} Google Rating ({SITE_CONFIG.googleReviewCount}+ reviews)
               </span>
               <span className="flex items-center gap-2">
                 <Shield className="w-5 h-5 text-accent-light" />
@@ -354,7 +438,7 @@ export default function RoofingCompanyCharlotteNCPage() {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                Licensed & Insured
+                Licensed &amp; Insured
               </span>
               <span className="flex items-center gap-2">
                 <Award className="w-5 h-5 text-accent-light" />
@@ -372,21 +456,23 @@ export default function RoofingCompanyCharlotteNCPage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
                 <Building className="w-4 h-4" aria-hidden="true" />
-                <span className="text-sm font-semibold">About Our Company</span>
+                <span className="text-sm font-semibold">About Our Roofing Company</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                An Established Roofing Company You Can Trust
+                A Veteran-Owned Roofing Company Charlotte NC Trusts
               </h2>
               <p className="text-gray text-lg mb-6">
                 Best Roofing Now is more than just a roofing company - we&apos;re your neighbors committed to
-                protecting Charlotte homes and businesses. As a veteran-owned company, we bring military values
-                of integrity, discipline, and excellence to every roofing project.
+                protecting Charlotte homes and businesses. Founded by James Turner, a veteran who brought military
+                values of integrity, discipline, and excellence to the roofing industry, our family-operated
+                company has grown to become one of Charlotte&apos;s most respected roofing contractors.
               </p>
               <p className="text-gray mb-8">
-                With over 500 roofs completed throughout Charlotte and a BBB A+ rating with zero complaints,
+                With over {SITE_CONFIG.roofsInstalled} roofs completed throughout Charlotte and a BBB A+ rating with zero complaints,
                 we&apos;ve built our reputation on quality workmanship, honest assessments, and treating every
                 customer like family. Our certifications from industry leaders like CertainTeed, GAF, and Owens
-                Corning mean you get premium materials backed by the best warranties available.
+                Corning mean you get premium materials backed by the best warranties available. James personally
+                oversees every project - from the initial inspection to the final walkthrough.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {companyCredentials.map((item) => (
@@ -416,7 +502,7 @@ export default function RoofingCompanyCharlotteNCPage() {
                     <Award className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-bold text-dark">500+ Roofs</p>
+                    <p className="font-bold text-dark">{SITE_CONFIG.roofsInstalled}+ Roofs</p>
                     <p className="text-sm text-gray">Completed in Charlotte</p>
                   </div>
                 </div>
@@ -426,8 +512,41 @@ export default function RoofingCompanyCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* What Makes Us Different Section */}
       <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <Heart className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">What Makes Us Different</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              What Makes Best Roofing Now Different from Other Roofing Companies in Charlotte
+            </h2>
+            <p className="text-gray text-lg">
+              In a city with hundreds of roofing companies, Best Roofing Now stands apart through our veteran-owned
+              values, family commitment, and proven track record of excellence.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {differentiators.map((item) => (
+              <div
+                key={item.title}
+                className="p-6 bg-white rounded-xl hover:shadow-lg transition-all"
+              >
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-bold text-dark mb-2">{item.title}</h3>
+                <p className="text-gray text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -443,7 +562,7 @@ export default function RoofingCompanyCharlotteNCPage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group p-6 bg-white rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
+                className="group p-6 bg-light rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-primary" />
@@ -459,24 +578,129 @@ export default function RoofingCompanyCharlotteNCPage() {
               </Link>
             ))}
           </div>
+
+          {/* Additional Service Links */}
+          <div className="mt-10 text-center">
+            <p className="text-gray mb-4">Explore more of our roofing services:</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/metal-roofing-charlotte-nc" className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm">
+                Metal Roofing <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/flat-roof-contractors-charlotte-nc" className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm">
+                Flat Roof Contractors <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/roofing-contractors-charlotte-nc" className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm">
+                Roofing Contractors <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/best-roofing-company-charlotte-nc" className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm">
+                Best Roofing Company <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/emergency-roof-repair-charlotte-nc" className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm">
+                Emergency Roof Repair <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/industrial-roofing-charlotte-nc" className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm">
+                Industrial Roofing <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Project Portfolio Highlights Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <Hammer className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">Project Portfolio</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              {SITE_CONFIG.roofsInstalled}+ Roofing Projects Completed Across Charlotte
+            </h2>
+            <p className="text-gray text-lg">
+              From residential homes in Myers Park to commercial buildings in Uptown, our roofing company
+              has protected properties across every neighborhood in Charlotte NC.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {projectHighlights.map((project) => (
+              <div key={project.title} className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <div className="relative h-64">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} by Best Roofing Now - roofing company Charlotte NC`}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-lg">
+                    <p className="text-2xl font-bold">{project.stats}</p>
+                    <p className="text-xs">{project.label}</p>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-dark mb-2">{project.title}</h3>
+                  <p className="text-gray">{project.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+            >
+              View Our Full Project Portfolio
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Certification Badges Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <BadgeCheck className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">Industry Certifications</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Manufacturer-Certified Roofing Company in Charlotte
+            </h2>
+            <p className="text-gray text-lg">
+              Our certifications from the industry&apos;s top manufacturers mean better warranties, proven expertise,
+              and access to premium roofing materials for your home or business.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {certifications.map((cert) => (
+              <div key={cert.name} className="bg-light rounded-xl p-6 text-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="font-bold text-dark mb-2">{cert.name}</h3>
+                <p className="text-gray text-sm">{cert.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Why Choose Our Company Section */}
-      <section className="section bg-white">
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Why Choose Best Roofing Now?
+              Why Choose Best Roofing Now as Your Roofing Company?
             </h2>
             <p className="text-gray text-lg">
-              Discover why Charlotte homeowners and businesses trust our roofing company for all their
-              roofing needs.
+              Discover why Charlotte homeowners and businesses choose our roofing company for all their
+              roofing needs - from simple repairs to complete replacements.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChooseUs.map((item) => (
-              <div key={item.title} className="p-6 bg-light rounded-xl">
+              <div key={item.title} className="p-6 bg-white rounded-xl">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
@@ -489,7 +713,7 @@ export default function RoofingCompanyCharlotteNCPage() {
       </section>
 
       {/* Customer Reviews Section */}
-      <section className="section bg-light">
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
@@ -500,12 +724,12 @@ export default function RoofingCompanyCharlotteNCPage() {
               What Charlotte Customers Say About Our Roofing Company
             </h2>
             <p className="text-gray text-lg">
-              Don&apos;t just take our word for it - hear from homeowners who trusted us with their roofing projects.
+              Don&apos;t just take our word for it - hear from homeowners who trusted Best Roofing Now with their roofing projects.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-md p-6">
+              <div key={index} className="bg-light rounded-xl shadow-md p-6">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
@@ -520,11 +744,35 @@ export default function RoofingCompanyCharlotteNCPage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <div className="inline-flex items-center gap-2 bg-white rounded-full px-6 py-3 shadow-md">
+            <div className="inline-flex items-center gap-2 bg-light rounded-full px-6 py-3 shadow-md">
               <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-              <span className="font-bold text-dark">5.0 Average Rating</span>
+              <span className="font-bold text-dark">{SITE_CONFIG.googleRating} Average Rating</span>
               <span className="text-gray">from {SITE_CONFIG.googleReviewCount}+ Google Reviews</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Instant Estimate CTA */}
+      <section className="section bg-gradient-to-br from-primary via-primary to-primary-dark text-white">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-accent rounded-full px-4 py-2 mb-4">
+              <Zap className="w-4 h-4" />
+              <span className="text-sm font-bold">INSTANT ESTIMATE</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Get Your Free Roofing Estimate in Seconds
+            </h2>
+            <p className="text-xl text-white/90 mb-8">
+              Use Charlotte&apos;s first instant roofing estimate tool - no waiting, no phone tag, no obligation.
+            </p>
+            <EstimateButton variant="white" size="lg" className="text-lg px-10">
+              Get Your Instant Estimate
+            </EstimateButton>
+            <p className="text-white/60 text-sm mt-4">
+              No obligation &bull; Instant results &bull; 100% free
+            </p>
           </div>
         </div>
       </section>
@@ -565,7 +813,7 @@ export default function RoofingCompanyCharlotteNCPage() {
       </section>
 
       {/* Service Areas Section */}
-      <section className="section bg-white">
+      <section className="section bg-light">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
@@ -573,22 +821,23 @@ export default function RoofingCompanyCharlotteNCPage() {
               <span className="text-sm font-semibold">Service Areas</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Your Local Roofing Company Serving All of Charlotte
+              Your Local Roofing Company Serving All of Charlotte NC
             </h2>
             <p className="text-gray text-lg">
-              Our roofing company serves homeowners and businesses throughout the Greater Charlotte region.
+              Our roofing company serves homeowners and businesses throughout the Greater Charlotte region
+              and Lake Norman area.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Charlotte Neighborhoods */}
-            <div className="bg-light rounded-xl p-6">
+            <div className="bg-white rounded-xl p-6">
               <h3 className="text-xl font-bold text-dark mb-4">Charlotte Neighborhoods We Serve</h3>
               <div className="flex flex-wrap gap-2">
                 {charlotteNeighborhoods.map((neighborhood) => (
                   <span
                     key={neighborhood}
-                    className="inline-block bg-white px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
+                    className="inline-block bg-light px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
                   >
                     {neighborhood}
                   </span>
@@ -597,7 +846,7 @@ export default function RoofingCompanyCharlotteNCPage() {
             </div>
 
             {/* Nearby Cities */}
-            <div className="bg-light rounded-xl p-6">
+            <div className="bg-white rounded-xl p-6">
               <h3 className="text-xl font-bold text-dark mb-4">Nearby Cities We Serve</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {nearbyCities.map((city) => (
@@ -627,7 +876,7 @@ export default function RoofingCompanyCharlotteNCPage() {
       </section>
 
       {/* FAQ Section with Voice Search Optimization */}
-      <section className="section bg-light">
+      <section className="section bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-8">
@@ -636,7 +885,7 @@ export default function RoofingCompanyCharlotteNCPage() {
                 <span className="text-sm font-semibold">Common Questions</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Roofing Company FAQs
+                Roofing Company Charlotte NC FAQs
               </h2>
               <p className="text-gray text-lg">
                 Quick answers to common questions about our roofing company and services in Charlotte NC.
@@ -646,7 +895,7 @@ export default function RoofingCompanyCharlotteNCPage() {
             <VoiceSearchFAQ
               faqs={faqs}
               city="Charlotte"
-              className="bg-white rounded-xl p-6 shadow-md"
+              className="bg-light rounded-xl p-6 shadow-md"
             />
           </div>
         </div>
@@ -689,7 +938,7 @@ export default function RoofingCompanyCharlotteNCPage() {
       {/* Final CTA */}
       <CTASection
         title="Ready to Work with Charlotte's Most Trusted Roofing Company?"
-        subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."
+        subtitle="Get a free, no-obligation estimate from our certified team. Owner James Turner will personally assess your roof and provide honest recommendations tailored to your needs and budget."
       />
     </>
   );

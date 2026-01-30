@@ -191,6 +191,11 @@ export default function SitemapPage() {
                 </Link>
               </li>
               <li>
+                <Link href="/flat-roof-coating-charlotte-nc" className="text-blue-700 hover:underline">
+                  Flat Roof Coating
+                </Link>
+              </li>
+              <li>
                 <Link href="/apartment-roofing-charlotte-nc" className="text-blue-700 hover:underline">
                   Apartment Roofing
                 </Link>
@@ -247,6 +252,16 @@ export default function SitemapPage() {
               <li>
                 <Link href="/compare" className="text-blue-700 hover:underline">
                   Compare Roofing Options
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-repair-cost-charlotte-nc" className="text-blue-700 hover:underline">
+                  Roof Repair Cost Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/commercial-roof-repair-cost-charlotte-nc" className="text-blue-700 hover:underline">
+                  Commercial Roof Repair Cost Guide
                 </Link>
               </li>
               <li>

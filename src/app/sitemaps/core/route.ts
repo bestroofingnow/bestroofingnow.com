@@ -33,6 +33,7 @@ export async function GET() {
     { url: `${BASE_URL}/roof-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/best-roofing-company-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-replacement-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-repair-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/residential-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     // roof-installation-charlotte-nc redirects to roof-replacement-charlotte-nc (SEO consolidation)
     { url: `${BASE_URL}/industrial-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
@@ -63,6 +64,7 @@ export async function GET() {
     { url: `${BASE_URL}/roof-maintenance-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/new-construction-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-coating-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/flat-roof-coating-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-ventilation-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/ridge-vent-installation-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/chimney-flashing-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
@@ -253,6 +255,7 @@ export async function GET() {
     // COMMERCIAL ROOFING CITY PAGES
     // ============================================
     { url: `${BASE_URL}/commercial-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/commercial-roof-repair-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/commercial-roofing-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-gastonia-nc`, changefreq: 'weekly', priority: '0.8' },

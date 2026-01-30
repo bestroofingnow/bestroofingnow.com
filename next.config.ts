@@ -4,6 +4,9 @@ import type { NextConfig } from "next";
 const WP_CMS_HOSTNAME = process.env.WORDPRESS_HOSTNAME || 'bestroofingnow.com';
 
 const nextConfig: NextConfig = {
+  // Prevent duplicate content from trailing slashes
+  trailingSlash: false,
+
   // Enable compression
   compress: true,
 
