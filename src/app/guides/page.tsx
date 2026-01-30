@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'roof cost guide',
     'roofing resources',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/guides`,
+  },
   openGraph: {
     title: 'Roofing Guides & Resources | Best Roofing Now',
     description: 'Expert roofing guides and resources for Charlotte homeowners.',

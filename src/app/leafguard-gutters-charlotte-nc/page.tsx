@@ -18,6 +18,7 @@ import {
   Wrench,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -432,6 +433,13 @@ export default function LeafGuardGuttersCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="See the damage clogged gutters cause — and why LeafGuard prevents it."
+      />
 
       {/* Mid-Page CTA */}
       <section className="bg-accent text-white py-12">

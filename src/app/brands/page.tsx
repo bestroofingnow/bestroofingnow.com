@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'certified roofing contractor',
     'best shingle brands',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/brands`,
+  },
   openGraph: {
     title: 'Roofing Brands We Install | Best Roofing Now',
     description: 'Premium roofing products from America\'s top manufacturers.',

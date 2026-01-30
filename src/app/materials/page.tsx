@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'roofing options',
     'shingles vs metal',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/materials`,
+  },
   openGraph: {
     title: 'Roofing Materials Guide | Best Roofing Now',
     description: 'Compare roofing materials to find the best option for your Charlotte home. Expert guidance on asphalt, metal, tile, slate, and more.',

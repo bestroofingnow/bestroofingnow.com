@@ -10,6 +10,8 @@ export async function GET() {
     { url: `${BASE_URL}/contact`, changefreq: 'monthly', priority: '0.8' },
     { url: `${BASE_URL}/reviews`, changefreq: 'weekly', priority: '0.7' },
     { url: `${BASE_URL}/faq`, changefreq: 'monthly', priority: '0.5' },
+    { url: `${BASE_URL}/nc-roofing-guide`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/sitemap`, changefreq: 'weekly', priority: '0.8' },
     // Main service silo pages - GBP category aligned
     { url: `${BASE_URL}/gutter-services`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/siding-services`, changefreq: 'weekly', priority: '0.9' },
@@ -38,8 +40,8 @@ export async function GET() {
     // ============================================
     // STORM & EMERGENCY PAGES
     // ============================================
-    { url: `${BASE_URL}/emergency`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/storm-damage-roof-repair-charlotte`, changefreq: 'weekly', priority: '0.9' },
+
+
     { url: `${BASE_URL}/hail-damage-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/wind-damage-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/hurricane-damage-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
@@ -66,12 +68,12 @@ export async function GET() {
     { url: `${BASE_URL}/roof-flashing-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-valley-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/fascia-soffit-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/shingle-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+
     { url: `${BASE_URL}/missing-shingles-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/sagging-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/moss-algae-removal-roof-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/ice-dam-prevention-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/siding-and-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+
 
     // ============================================
     // MATERIAL-SPECIFIC PAGES
@@ -136,9 +138,9 @@ export async function GET() {
     // ============================================
     { url: `${BASE_URL}/insurance-claim-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-financing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/free-roof-estimate-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/hoa-approved-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/military-veteran-roofing-discount-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+
+
+
 
     // ============================================
     // BUILDING TYPE PAGES
@@ -180,8 +182,8 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-plaza-midwood-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-noda-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-steele-creek-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/roofing-uptown-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/roofing-eastover-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+
+
 
     // ============================================
     // LAKE NORMAN CITY PAGES
@@ -190,7 +192,7 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-mooresville-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roofing-davidson-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roofing-huntersville-nc`, changefreq: 'weekly', priority: '0.9' },
-    { url: `${BASE_URL}/roofing-denver-nc`, changefreq: 'weekly', priority: '0.9' },
+
     { url: `${BASE_URL}/roofing-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-terrell-nc`, changefreq: 'weekly', priority: '0.8' },
 
@@ -232,12 +234,12 @@ export async function GET() {
     { url: `${BASE_URL}/roofers-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roofing-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/storm-damage-roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+
     // Davidson
     { url: `${BASE_URL}/roof-replacement-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofers-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roofing-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/gutter-installation-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+
     // Other cities
     { url: `${BASE_URL}/roof-repair-pineville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-repair-matthews-nc`, changefreq: 'weekly', priority: '0.8' },

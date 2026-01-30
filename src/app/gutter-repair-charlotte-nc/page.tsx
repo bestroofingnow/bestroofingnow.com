@@ -20,6 +20,7 @@ import {
   Settings,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -450,6 +451,13 @@ export default function GutterRepairCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="See the 3 red flags that lead to costly gutter damage — and how to spot them before it's too late."
+      />
 
       {/* Mid-Page CTA */}
       <section className="bg-accent text-white py-12">

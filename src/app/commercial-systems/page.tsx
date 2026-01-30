@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     'flat roof commercial',
     'industrial roofing',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/commercial-systems`,
+  },
   openGraph: {
     title: 'Commercial Roofing Systems | Best Roofing Now Charlotte',
     description: 'Professional commercial roofing installation and repair.',

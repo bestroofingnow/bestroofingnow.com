@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     'roofing guarantee',
     'workmanship warranty',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/warranty`,
+  },
   openGraph: {
     title: 'Roofing Warranty Information | Best Roofing Now',
     description: 'Complete guide to understanding roofing warranties and coverage options.',

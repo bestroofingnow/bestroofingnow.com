@@ -142,6 +142,14 @@ export default function ServicesPage() {
               comprehensive roofing solutions for residential and commercial
               properties. 5-star rated, veteran-owned, BBB A+ accredited.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <a href={`tel:${SITE_CONFIG.phoneClean}`} className="btn btn-accent text-lg">
+                Call {SITE_CONFIG.phone}
+              </a>
+              <Link href="/contact" className="btn bg-white/10 text-white border border-white/30 hover:bg-white/20 text-lg">
+                Get Free Estimate
+              </Link>
+            </div>
           </div>
         </div>
       </section>

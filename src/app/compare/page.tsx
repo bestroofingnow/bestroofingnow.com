@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     'roof material guide',
     'Charlotte roofing options',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/compare`,
+  },
   openGraph: {
     title: 'Roofing Material Comparisons | Best Roofing Now',
     description: 'Compare roofing materials side-by-side to make the best choice for your home.',

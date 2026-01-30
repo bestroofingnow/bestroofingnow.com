@@ -18,6 +18,7 @@ import {
   Lightbulb,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -639,6 +640,13 @@ export default function GutterCleaningDIYGuidePage() {
           </div>
         </div>
       </section>
+
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="Learn the 3 red flags that mean your gutters need attention right now."
+      />
 
       {/* Charlotte Seasonal Schedule */}
       <section className="py-16 bg-blue-50">

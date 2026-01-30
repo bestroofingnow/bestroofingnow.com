@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     'missing shingles',
     'Charlotte roof repair',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/problems`,
+  },
   openGraph: {
     title: 'Common Roofing Problems | Best Roofing Now',
     description: 'Solutions for every roofing problem. Expert repairs in Charlotte NC.',

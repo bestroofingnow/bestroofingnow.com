@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Roofing Now | Charlotte's Top-Rated Roofing Company",
     description: 'Charlotte\'s top-rated roofing contractor. 5-star Google rating, veteran-owned, BBB A+ rated. Free roof inspections and estimates.',
-    url: 'https://www.bestroofingnow.com/',
+    url: 'https://www.bestroofingnow.com',
   },
   alternates: {
-    canonical: 'https://www.bestroofingnow.com/',
+    canonical: 'https://www.bestroofingnow.com',
   },
 };
 

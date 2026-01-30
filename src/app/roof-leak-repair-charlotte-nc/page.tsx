@@ -21,6 +21,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -529,6 +530,13 @@ export default function RoofLeakRepairCharlottePage() {
           </div>
         </div>
       </section>
+
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="Damaged gutters are a leading cause of roof leaks. Learn the 3 warning signs to watch for."
+      />
 
       {/* Emergency CTA Banner */}
       <section className="bg-accent text-white py-12">

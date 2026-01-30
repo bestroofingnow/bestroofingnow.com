@@ -15,11 +15,9 @@ const mobileNavigation = [
   { label: 'Commercial & Industrial', href: '/commercial-roofing-services', hasChildren: true },
   { label: 'Locations', href: '/locations', hasChildren: true },
   { label: 'Materials', href: '/materials', hasChildren: true },
-  { label: 'About', href: '/about' },
   { label: 'Reviews', href: '/reviews' },
   { label: 'Financing', href: '/financing' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact' },
 ];
 
 export function Header() {

@@ -49,7 +49,7 @@ const features = [
 const stats = [
   { value: 5, suffix: '.0', label: 'Google Rating' },
   { value: SITE_CONFIG.customerCount, suffix: '+', label: 'Happy Customers' },
-  { value: 5, suffix: '+', label: 'Years Experience' },
+  { value: new Date().getFullYear() - 2020, suffix: '+', label: 'Years Experience' },
   { value: 100, suffix: '%', label: 'Satisfaction' },
 ];
 
@@ -94,7 +94,7 @@ export function WhyChooseUs() {
 
               {/* Certifications */}
               <div className="flex flex-wrap gap-4">
-                {['CertainTeed Certified', 'GAF Certified', 'Angi Super Service Award'].map((cert, i) => (
+                {['Owens Corning Preferred', 'CertainTeed Certified', 'GAF Certified', 'Angi Super Service Award'].map((cert, i) => (
                   <div
                     key={cert}
                     className="badge transition-transform hover:scale-105 animate-fade-in-up"

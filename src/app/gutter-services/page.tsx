@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import { FAQ } from '@/components/sections/FAQ';
 import {
   BreadcrumbSchema,
@@ -346,6 +347,13 @@ export default function GutterServicesPage() {
           </div>
         </div>
       </section>
+
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="Most homeowners ignore their gutters until it's too late. See the 3 red flags you need to know."
+      />
 
       {/* Service Areas */}
       <section className="section bg-white">

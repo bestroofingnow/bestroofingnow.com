@@ -20,6 +20,7 @@ import {
   XCircle,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -397,6 +398,13 @@ export default function DIYRoofMaintenanceChecklistPage() {
           </div>
         </div>
       </section>
+
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="Don't skip your gutters — see the 3 red flags that lead to expensive repairs."
+      />
 
       {/* When to Call a Pro */}
       <section className="section">

@@ -12,6 +12,9 @@ import { BreadcrumbSchema, CollectionPageSchema, ServiceAreaMapSchema, AISearchO
 export const metadata: Metadata = {
   title: `Our Roofing Projects | ${SITE_CONFIG.name}`,
   description: `View ${SITE_CONFIG.name}'s completed roofing projects across Charlotte, Lake Norman, and surrounding areas. See real before/after photos and verified installations.`,
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/projects`,
+  },
   openGraph: {
     title: `Roofing Projects Gallery | ${SITE_CONFIG.name}`,
     description: 'Explore our portfolio of completed roofing projects in Charlotte and Lake Norman.',

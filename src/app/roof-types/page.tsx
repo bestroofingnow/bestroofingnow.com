@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     'flat roof',
     'Charlotte roofing',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/roof-types`,
+  },
   openGraph: {
     title: 'Roof Types & Styles | Best Roofing Now',
     description: 'Complete guide to residential roof types and styles for Charlotte homeowners.',

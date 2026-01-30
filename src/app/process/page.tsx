@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'roofing timeline',
     'Charlotte roofing company',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/process`,
+  },
   openGraph: {
     title: 'Our Roofing Process | Best Roofing Now',
     description: 'Step-by-step guide to our professional roofing process.',

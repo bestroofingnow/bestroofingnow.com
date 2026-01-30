@@ -209,7 +209,7 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
                     Roof Replacement Charlotte
                   </Link>
                   <Link
-                    href="/commercial-roofing-contractors-charlotte-nc"
+                    href="/commercial-roofing-services"
                     className="text-xs px-3 py-1.5 bg-light rounded-full text-dark hover:bg-primary hover:text-white transition-colors"
                     onClick={() => setActiveMenu(null)}
                   >
@@ -676,13 +676,6 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
 
       {/* Standard Links */}
       <Link
-        href="/about"
-        className="px-4 py-2 text-dark font-medium rounded-lg hover:bg-light hover:text-primary transition-colors"
-      >
-        About
-      </Link>
-
-      <Link
         href="/reviews"
         className="px-4 py-2 text-dark font-medium rounded-lg hover:bg-light hover:text-primary transition-colors"
       >
@@ -690,7 +683,7 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
       </Link>
 
       <Link
-        href="/financing"
+        href="/roof-financing-charlotte-nc"
         className="px-4 py-2 text-dark font-medium rounded-lg hover:bg-light hover:text-primary transition-colors"
       >
         Financing
@@ -703,12 +696,6 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
         Blog
       </Link>
 
-      <Link
-        href="/contact"
-        className="px-4 py-2 text-dark font-medium rounded-lg hover:bg-light hover:text-primary transition-colors"
-      >
-        Contact
-      </Link>
     </nav>
   );
 }

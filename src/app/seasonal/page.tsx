@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'winter roof repair',
     'Charlotte roofing',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/seasonal`,
+  },
   openGraph: {
     title: 'Seasonal Roofing Services | Best Roofing Now',
     description: 'Expert roofing services for every season in Charlotte NC.',

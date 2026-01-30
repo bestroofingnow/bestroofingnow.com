@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'energy efficient roofing',
     'cool roof Charlotte',
   ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/ventilation`,
+  },
   openGraph: {
     title: 'Attic Ventilation & Energy Efficiency | Best Roofing Now',
     description: 'Proper ventilation solutions for Charlotte homes.',
