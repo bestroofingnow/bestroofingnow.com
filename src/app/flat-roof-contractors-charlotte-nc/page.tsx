@@ -33,9 +33,9 @@ import { IMAGES } from '@/lib/images';
 import { TURNER_NOTES } from '@/lib/turner-family';
 
 export const metadata: Metadata = {
-  title: 'Flat Roof Contractors Charlotte NC | Commercial & Residential | Best Roofing Now',
+  title: 'Flat Roof Contractors Charlotte NC | Licensed & Insured Specialists | Best Roofing Now',
   description:
-    'Expert flat roof contractors in Charlotte NC for commercial and residential properties. TPO, EPDM, PVC, and modified bitumen installation, repair, and replacement. BBB A+ rated. Free estimates.',
+    'Hire the best flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC, and modified bitumen. Find a trusted flat roof contractor for your commercial or residential project. BBB A+ rated. Free estimates.',
   keywords: [
     'flat roof contractors charlotte nc',
     'flat roof installation charlotte',
@@ -46,20 +46,19 @@ export const metadata: Metadata = {
     'pvc flat roof charlotte nc',
     'modified bitumen roofing charlotte',
     'flat roof replacement charlotte nc',
-    'flat roof repair charlotte',
     'flat roof specialists charlotte nc',
     'low slope roofing contractors charlotte',
     'flat roof maintenance charlotte nc',
     'commercial roofing contractors charlotte',
-    'ponding water repair charlotte nc',
+    'hire flat roof contractor charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`,
   },
   openGraph: {
-    title: 'Flat Roof Contractors Charlotte NC | Commercial & Residential | Best Roofing Now',
+    title: 'Flat Roof Contractors Charlotte NC | Licensed & Insured Specialists | Best Roofing Now',
     description:
-      'BBB A+ rated flat roof contractors serving Charlotte NC. Expert TPO, EPDM, PVC installation and repair for commercial and residential properties. Free estimates available.',
+      'Hire BBB A+ rated flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC for commercial and residential projects. Free estimates available.',
     url: `${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`,
     type: 'website',
     images: [

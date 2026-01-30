@@ -27,30 +27,30 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Gutter Guards Charlotte NC | LeafGuard Installation | Best Roofing Now',
+  title: 'Gutter Guards Charlotte NC | Mesh, Micro-Mesh & Screen Systems | Best Roofing Now',
   description:
-    'Professional gutter guard installation in Charlotte NC. LeafGuard, mesh screens, and micro-mesh systems to prevent clogs and protect your home. Free estimates from BBB A+ rated, veteran-owned company.',
+    'Professional gutter guard installation in Charlotte NC. Mesh, micro-mesh, screen, brush, and reverse-curve systems to prevent clogs and protect your home. Compare all gutter guard types. Free estimates from BBB A+ rated, veteran-owned company.',
   keywords: [
     'gutter guards Charlotte NC',
     'gutter guard Charlotte',
     'leaf guards Charlotte',
-    'LeafGuard installation Charlotte',
     'gutter protection Charlotte NC',
-    'leaf filter Charlotte',
     'gutter screens Charlotte',
     'micro mesh gutter guards Charlotte',
     'clog-free gutters Charlotte',
     'gutter guard installation near me',
     'best gutter guards Charlotte NC',
     'gutter protection systems Charlotte',
+    'mesh gutter guards Charlotte',
+    'screen gutter guards Charlotte NC',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-guards-charlotte-nc`,
   },
   openGraph: {
-    title: 'Gutter Guards Charlotte NC | LeafGuard Installation | Best Roofing Now',
+    title: 'Gutter Guards Charlotte NC | Mesh, Micro-Mesh & Screen Systems | Best Roofing Now',
     description:
-      'BBB A+ rated gutter guard installation in Charlotte NC. Prevent clogs, protect your home from water damage. Free estimates available.',
+      'BBB A+ rated gutter guard installation in Charlotte NC. Mesh, micro-mesh, screen, and reverse-curve systems. Prevent clogs, protect your home. Free estimates.',
     url: `${SITE_CONFIG.url}/gutter-guards-charlotte-nc`,
     type: 'website',
     images: [

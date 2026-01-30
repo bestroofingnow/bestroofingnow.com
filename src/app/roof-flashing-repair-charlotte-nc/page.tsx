@@ -25,30 +25,30 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roof Flashing Repair Charlotte NC | Stop Leaks | Best Roofing Now',
+  title: 'Roof Flashing Repair Charlotte NC | Wall, Vent & Pipe Flashing Experts | Best Roofing Now',
   description:
-    'Expert roof flashing repair in Charlotte NC. Stop leaks around chimneys, vents, skylights, and walls. Licensed roofers, free inspections. Call Best Roofing Now today!',
+    'Expert roof flashing repair in Charlotte NC. We fix wall flashing, vent pipe boots, skylight seals, valley flashing, and step flashing leaks. Licensed roofers, free inspections. Call Best Roofing Now today!',
   keywords: [
     'roof flashing repair charlotte nc',
     'flashing replacement charlotte',
-    'chimney flashing repair charlotte nc',
     'skylight flashing repair charlotte',
     'vent flashing repair charlotte nc',
     'roof flashing leak charlotte',
     'step flashing repair charlotte',
     'counter flashing charlotte nc',
     'roof valley flashing charlotte',
-    'flashing around chimney charlotte nc',
     'metal flashing repair charlotte',
     'roof flashing installation charlotte',
+    'wall flashing repair charlotte nc',
+    'pipe flashing repair charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`,
   },
   openGraph: {
-    title: 'Roof Flashing Repair Charlotte NC | Stop Leaks | Best Roofing Now',
+    title: 'Roof Flashing Repair Charlotte NC | Wall, Vent & Pipe Flashing Experts | Best Roofing Now',
     description:
-      'Expert flashing repair around chimneys, vents, skylights, and walls. Stop leaks at their source. BBB A+ rated, free inspections. Charlotte NC.',
+      'Expert flashing repair for walls, vents, skylights, pipes, and valleys. Stop leaks at their source. BBB A+ rated, free inspections. Charlotte NC.',
     url: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`,
     type: 'website',
     images: [

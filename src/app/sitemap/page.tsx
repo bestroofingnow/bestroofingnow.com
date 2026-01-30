@@ -289,12 +289,12 @@ export default function SitemapPage() {
             </h2>
             <ul className="space-y-2">
               <li>
-                <Link href="/roofing-services" className="text-blue-700 hover:underline">
+                <Link href="/services" className="text-blue-700 hover:underline">
                   Roofing Services Overview
                 </Link>
               </li>
               <li>
-                <Link href="/storm-restoration" className="text-blue-700 hover:underline">
+                <Link href="/storm-damage-roof-repair-charlotte-nc" className="text-blue-700 hover:underline">
                   Storm Restoration
                 </Link>
               </li>

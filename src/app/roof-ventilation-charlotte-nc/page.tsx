@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   keywords: [
     'roof ventilation Charlotte NC',
     'attic ventilation Charlotte',
-    'ridge vent installation Charlotte NC',
     'soffit vent installation Charlotte',
     'attic fan Charlotte NC',
     'roof vent installation Charlotte',
@@ -40,6 +39,7 @@ export const metadata: Metadata = {
     'attic ventilation contractors Charlotte NC',
     'exhaust vent installation Charlotte',
     'intake vent installation Charlotte NC',
+    'balanced attic ventilation Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`,

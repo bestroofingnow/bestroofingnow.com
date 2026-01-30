@@ -13,6 +13,16 @@ interface MaterialPageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Canonical URL mappings for material slugs that have competing static keyword pages
+const materialCanonicals: Record<string, string> = {
+  'asphalt-shingles': '/asphalt-shingle-roofing-charlotte-nc',
+  'metal-roofing': '/metal-roofing-charlotte-nc',
+  'slate-roofing': '/slate-roofing-charlotte-nc',
+  'tile-roofing': '/tile-roofing-charlotte-nc',
+  'flat-roofing': '/flat-roof-repair-charlotte-nc',
+  'cedar-shake': '/cedar-shake-roofing-charlotte-nc',
+};
+
 export async function generateStaticParams() {
   return ROOFING_MATERIALS.map((material) => ({
     slug: material.slug,
@@ -34,7 +44,9 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
     description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
     keywords: [...material.keywords, `${material.shortName.toLowerCase()} roof Charlotte`, `${material.shortName.toLowerCase()} roofing contractor`],
     alternates: {
-      canonical: `${SITE_CONFIG.url}/materials/${slug}`,
+      canonical: materialCanonicals[slug]
+        ? `${SITE_CONFIG.url}${materialCanonicals[slug]}`
+        : `${SITE_CONFIG.url}/materials/${slug}`,
     },
     openGraph: {
       title: `${material.name} | Best Roofing Now Charlotte`,

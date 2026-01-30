@@ -40,9 +40,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'New Roof Installation Charlotte NC | Expert Installation | Best Roofing Now',
+  title: 'New Roof Installation Charlotte NC | First-Time Roof & New Construction | Best Roofing Now',
   description:
-    'Professional new roof installation in Charlotte NC. Complete tear-off, new construction, and first-time installations. Shingle, metal, and tile options. BBB A+ rated, veteran-owned. Free estimates!',
+    'New roof installation in Charlotte NC for first-time builds and new construction. Complete roofing system installation from the decking up. Shingle, metal, and tile options. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
     'new roof installation charlotte nc',
     'new roof installation charlotte',
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`,
   },
   openGraph: {
-    title: 'New Roof Installation Charlotte NC | Expert Installation | Best Roofing Now',
+    title: 'New Roof Installation Charlotte NC | First-Time Roof & New Construction | Best Roofing Now',
     description:
-      'Expert new roof installation in Charlotte NC. New construction, complete tear-off, and first-time installations with premium materials and industry-leading warranties.',
+      'New roof installation in Charlotte NC for first-time builds, new construction, and complete roofing system installations with premium materials and industry-leading warranties.',
     url: `${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`,
     type: 'website',
     images: [

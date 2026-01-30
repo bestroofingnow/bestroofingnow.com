@@ -713,6 +713,27 @@ const titleQualifiers: Record<string, string> = {
   'building-restoration': 'Storm & Fire Damage Recovery',
 };
 
+// Canonical URL mappings for service slugs that have competing static keyword pages
+const serviceCanonicals: Record<string, string> = {
+  'roof-repair': '/roof-repair-charlotte-nc',
+  'residential-roofing': '/residential-roofing-charlotte-nc',
+  'roof-inspection': '/roof-inspection-charlotte-nc',
+  'roof-replacement': '/roof-replacement-charlotte-nc',
+  'commercial-roofing': '/commercial-roofing-charlotte-nc',
+  'metal-roofing': '/metal-roofing-charlotte-nc',
+  'flat-roof-repair': '/flat-roof-repair-charlotte-nc',
+  'emergency-roofing': '/services/emergency-roofing',
+  'storm-damage': '/storm-damage-roof-repair-charlotte-nc',
+  'insurance-claims': '/insurance-claim-roofing-charlotte-nc',
+  'gutters': '/gutter-services',
+  'gutter-installation': '/gutter-installation-charlotte-nc',
+  'gutter-repair': '/gutter-repair-charlotte-nc',
+  'gutter-guards': '/gutter-guards-charlotte-nc',
+  'skylight-installation': '/skylight-installation-charlotte-nc',
+  'roof-ventilation': '/roof-ventilation-charlotte-nc',
+  'chimney-services': '/chimney-flashing-repair-charlotte-nc',
+};
+
 export async function generateStaticParams() {
   return SERVICES.map((service) => ({
     slug: service.slug,
@@ -737,7 +758,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: `${service.description} Serving Charlotte and surrounding areas. Free estimates, quality workmanship, and satisfaction guaranteed.`,
     keywords: service.keywords,
     alternates: {
-      canonical: `${SITE_CONFIG.url}/services/${slug}`,
+      canonical: serviceCanonicals[slug]
+        ? `${SITE_CONFIG.url}${serviceCanonicals[slug]}`
+        : `${SITE_CONFIG.url}/services/${slug}`,
     },
     openGraph: {
       title: `${service.title} in Charlotte NC | ${qualifier}`,

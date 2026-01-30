@@ -267,7 +267,7 @@ const nextConfig: NextConfig = {
       // MISC PAGE REDIRECTS
       // ===========================================
       { source: '/frequently-asked-questions', destination: '/faq', permanent: true },
-      { source: '/roof-financing', destination: '/financing', permanent: true },
+      { source: '/roof-financing', destination: '/roof-financing-charlotte-nc', permanent: true },
       { source: '/request-a-free-estimate', destination: '/contact', permanent: true },
       { source: '/why-were-different', destination: '/about', permanent: true },
       { source: '/service-area-2', destination: '/locations', permanent: true },
@@ -280,6 +280,21 @@ const nextConfig: NextConfig = {
       { source: '/roof-installation-charlotte-nc', destination: '/roof-replacement-charlotte-nc', permanent: true },
       // Emergency Roof Repair Charlotte → Main Repair Page (emergency is subset of repair)
       { source: '/emergency-roof-repair-charlotte-nc', destination: '/roof-repair-charlotte-nc', permanent: true },
+
+      // ===========================================
+      // KEYWORD CANNIBALIZATION FIXES
+      // Consolidate duplicate-intent pages to single canonical URLs
+      // ===========================================
+      // Financing: /financing and /roof-financing-charlotte-nc are identical intent
+      { source: '/financing', destination: '/roof-financing-charlotte-nc', permanent: true },
+      // Roofing Services: /roofing-services duplicates /services (same title)
+      { source: '/roofing-services', destination: '/services', permanent: true },
+      // Leak repair: "leaking roof repair" = "roof leak repair" (same keyword)
+      { source: '/leaking-roof-repair-charlotte-nc', destination: '/roof-leak-repair-charlotte-nc', permanent: true },
+      // Storm: /storm-restoration duplicates /storm-damage-roof-repair-charlotte-nc
+      { source: '/storm-restoration', destination: '/storm-damage-roof-repair-charlotte-nc', permanent: true },
+      // Commercial contractors: near-identical title to /commercial-roofing-services
+      { source: '/commercial-roofing-contractors-charlotte-nc', destination: '/commercial-roofing-services', permanent: true },
     ];
   },
 

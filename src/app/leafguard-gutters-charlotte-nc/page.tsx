@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     'clog free gutters charlotte nc',
     'leafguard warranty charlotte',
     'one piece gutter system charlotte',
-    'seamless gutter guards charlotte',
     'leafguard reviews charlotte nc',
-    'gutter protection charlotte',
+    'leafguard cost charlotte nc',
+    'leafguard brand gutters charlotte',
     'never clean gutters charlotte',
   ],
   alternates: {

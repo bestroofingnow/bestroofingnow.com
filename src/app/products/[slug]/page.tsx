@@ -13,6 +13,12 @@ interface ProductPageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Canonical URL mappings for product slugs that have competing static keyword pages
+const productCanonicals: Record<string, string> = {
+  'gaf-timberline-hdz': '/gaf-timberline-shingles-charlotte-nc',
+  'gaf-timberline-ultra-hd': '/gaf-timberline-shingles-charlotte-nc',
+};
+
 export async function generateStaticParams() {
   return SHINGLE_PRODUCTS.map((product) => ({
     slug: product.slug,
@@ -34,7 +40,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     description: `${product.description} Get ${product.name} installed by certified ${product.brandName} contractors in Charlotte NC. ${product.warranty} warranty. Free estimates.`,
     keywords: product.keywords,
     alternates: {
-      canonical: `${SITE_CONFIG.url}/products/${slug}`,
+      canonical: productCanonicals[slug]
+        ? `${SITE_CONFIG.url}${productCanonicals[slug]}`
+        : `${SITE_CONFIG.url}/products/${slug}`,
     },
     openGraph: {
       title: `${product.fullName} | Best Roofing Now Charlotte`,

@@ -26,30 +26,30 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roof Coating Charlotte NC | Silicone & Acrylic Coatings | Best Roofing Now',
+  title: 'Roof Coating Charlotte NC | Extend Your Roof\'s Life 15+ Years | Best Roofing Now',
   description:
-    'Professional roof coating services in Charlotte NC. Silicone and acrylic roof coatings for flat roofs and commercial buildings. Extend your roof life by 10-15 years. Free estimates from BBB A+ rated contractor.',
+    'Professional roof coating for all roof types in Charlotte NC -- pitched, flat, residential, and commercial. Silicone, acrylic, and elastomeric coatings extend your roof\'s life by 15+ years. Free estimates from BBB A+ rated contractor.',
   keywords: [
     'roof coating Charlotte NC',
     'roof coating commercial Charlotte',
     'silicone roof coating Charlotte NC',
     'acrylic roof coating Charlotte',
-    'flat roof coating Charlotte NC',
     'commercial roof coating Charlotte',
     'roof restoration Charlotte NC',
     'elastomeric roof coating Charlotte',
     'cool roof coating Charlotte NC',
-    'flat roof restoration Charlotte',
     'roof sealant Charlotte NC',
     'reflective roof coating Charlotte',
+    'residential roof coating Charlotte NC',
+    'all roof types coating Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-coating-charlotte-nc`,
   },
   openGraph: {
-    title: 'Roof Coating Charlotte NC | Silicone & Acrylic Coatings | Best Roofing Now',
+    title: 'Roof Coating Charlotte NC | Extend Your Roof\'s Life 15+ Years | Best Roofing Now',
     description:
-      'Expert roof coating services in Charlotte. Silicone, acrylic, and elastomeric coatings to extend your roof life and reduce energy costs. Free estimates available.',
+      'Roof coating for all roof types in Charlotte NC -- flat, pitched, residential, and commercial. Silicone, acrylic, and elastomeric coatings extend your roof life 15+ years. Free estimates available.',
     url: `${SITE_CONFIG.url}/roof-coating-charlotte-nc`,
     type: 'website',
     images: [

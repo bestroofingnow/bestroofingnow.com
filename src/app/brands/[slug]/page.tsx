@@ -11,6 +11,13 @@ interface BrandPageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Canonical URL mappings for brand slugs that have competing static keyword pages
+const brandCanonicals: Record<string, string> = {
+  'gaf': '/gaf-roofing-charlotte-nc',
+  'certainteed': '/certainteed-shingles-charlotte-nc',
+  'owens-corning': '/owens-corning-roofing-charlotte-nc',
+};
+
 export async function generateStaticParams() {
   return ROOFING_BRANDS.map((brand) => ({
     slug: brand.slug,
@@ -32,7 +39,9 @@ export async function generateMetadata({ params }: BrandPageProps): Promise<Meta
     description: `${brand.description} As a ${brand.certificationLevel}, we offer enhanced warranty options on ${brand.name} products.`,
     keywords: brand.keywords,
     alternates: {
-      canonical: `${SITE_CONFIG.url}/brands/${slug}`,
+      canonical: brandCanonicals[slug]
+        ? `${SITE_CONFIG.url}${brandCanonicals[slug]}`
+        : `${SITE_CONFIG.url}/brands/${slug}`,
     },
     openGraph: {
       title: `${brand.fullName} | Best Roofing Now Charlotte`,

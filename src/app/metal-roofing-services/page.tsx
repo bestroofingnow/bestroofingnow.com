@@ -34,26 +34,26 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Metal Roofing Contractor Charlotte NC | Standing Seam & Metal Shingles',
+  title: 'Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust',
   description:
-    'Professional metal roofing contractor in Charlotte NC. Standing seam, metal shingles, and corrugated metal roofing. 50+ year lifespan, energy efficient. GAF certified. Free estimates!',
+    'Professional metal roofing installation services in Charlotte NC. Hire a trusted contractor for standing seam, metal shingles, and corrugated panel installation. 50+ year lifespan, energy efficient. GAF certified. Free estimates!',
   keywords: [
+    'metal roofing installation services Charlotte NC',
     'metal roofing contractor Charlotte NC',
-    'metal roof Charlotte',
-    'standing seam metal roof Charlotte NC',
-    'metal roofing installation Charlotte',
+    'metal roof installation Charlotte',
     'metal roof contractor near me',
-    'steel roofing Charlotte NC',
-    'metal shingle roof Charlotte',
+    'steel roofing installation Charlotte NC',
+    'metal shingle installation Charlotte',
     'metal roofing company Charlotte',
+    'hire metal roofing contractor Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-services`,
   },
   openGraph: {
-    title: 'Metal Roofing Contractor Charlotte NC | Standing Seam & Metal Shingles',
+    title: 'Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust',
     description:
-      'Professional metal roofing contractor in Charlotte NC. Standing seam, metal shingles, and corrugated panels. 50+ year lifespan.',
+      'Professional metal roofing installation services in Charlotte NC. Trusted contractor for standing seam, metal shingles, and corrugated panels. 50+ year lifespan.',
     url: `${SITE_CONFIG.url}/metal-roofing-services`,
   },
 };

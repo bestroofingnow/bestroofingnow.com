@@ -9,6 +9,12 @@ interface CommercialSystemPageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Canonical URL mappings for commercial system slugs that have competing static keyword pages
+const systemCanonicals: Record<string, string> = {
+  'tpo-roofing': '/tpo-roofing-charlotte-nc',
+  'epdm-roofing': '/epdm-roofing-charlotte-nc',
+};
+
 export async function generateStaticParams() {
   return COMMERCIAL_SYSTEMS.map((system) => ({
     slug: system.slug,
@@ -30,7 +36,9 @@ export async function generateMetadata({ params }: CommercialSystemPageProps): P
     description: `${system.description} Professional ${system.name} installation and repair in Charlotte NC.`,
     keywords: system.keywords,
     alternates: {
-      canonical: `${SITE_CONFIG.url}/commercial-systems/${slug}`,
+      canonical: systemCanonicals[slug]
+        ? `${SITE_CONFIG.url}${systemCanonicals[slug]}`
+        : `${SITE_CONFIG.url}/commercial-systems/${slug}`,
     },
     openGraph: {
       title: `${system.fullName} | Best Roofing Now Charlotte`,

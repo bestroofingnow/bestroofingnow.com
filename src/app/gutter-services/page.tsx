@@ -34,13 +34,11 @@ export const metadata: Metadata = {
     'Professional gutter services in Charlotte NC. Seamless gutter installation, repair, cleaning, and gutter guard systems. Protect your home from water damage. Free estimates!',
   keywords: [
     'gutter services Charlotte NC',
-    'gutter installation Charlotte',
-    'gutter repair Charlotte NC',
-    'gutter cleaning Charlotte',
-    'gutter guards Charlotte NC',
     'seamless gutters Charlotte',
     'gutter contractor near me',
     'gutter company Charlotte',
+    'gutter solutions Charlotte NC',
+    'complete gutter services Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-services`,

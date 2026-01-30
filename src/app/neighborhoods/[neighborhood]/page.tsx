@@ -212,7 +212,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description,
     keywords,
     alternates: {
-      canonical: `${SITE_CONFIG.url}/neighborhoods/${neighborhoodSlug}`,
+      canonical: `${SITE_CONFIG.url}/locations/charlotte-nc/${neighborhoodSlug}`,
     },
     openGraph: {
       title: `${displayName} Roofing Contractor | Best Roofing Now Charlotte`,
