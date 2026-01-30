@@ -114,6 +114,100 @@ export default function SitemapPage() {
             </ul>
           </section>
 
+          {/* Commercial & Industrial Building Types */}
+          <section>
+            <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">
+              Commercial & Industrial
+            </h2>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/commercial-roofing-services" className="text-blue-700 hover:underline">
+                  Commercial Roofing Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/industrial-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Industrial Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/warehouse-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Warehouse Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/distribution-center-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Distribution Center Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/healthcare-facility-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Healthcare Facility Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/office-building-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Office Building Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/retail-shopping-center-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Retail & Shopping Center Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/hotel-hospitality-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Hotel & Hospitality Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/school-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  School & University Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/manufacturing-plant-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Manufacturing Plant Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/government-building-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Government Building Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/data-center-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Data Center Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/auto-dealership-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Auto Dealership Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/church-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Church Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/apartment-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Apartment Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/condo-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Condo Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/townhouse-roofing-charlotte-nc" className="text-blue-700 hover:underline">
+                  Townhouse Roofing
+                </Link>
+              </li>
+            </ul>
+          </section>
+
           {/* Resources */}
           <section>
             <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">

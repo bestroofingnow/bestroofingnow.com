@@ -23,7 +23,7 @@ interface HeroProps {
 
 export function Hero({
   title = "Charlotte's Most Trusted Roofing Company",
-  subtitle = "Family-owned, veteran-operated. We treat every home like it's our own. Free inspections, honest assessments, and quality craftsmanship that lasts.",
+  subtitle = "Family-owned, veteran-operated. Residential, commercial & industrial roofing — we treat every property like it's our own. Free inspections, honest assessments, and quality craftsmanship that lasts.",
   showTrustBadges = true,
   backgroundImage,
   backgroundImageAlt = "Charlotte NC roofing contractor - Best Roofing Now professional team installing residential roof",

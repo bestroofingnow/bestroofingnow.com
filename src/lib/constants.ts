@@ -2,8 +2,8 @@
 export const SITE_CONFIG = {
   name: 'Best Roofing Now',
   legalName: 'Best Roofing Now LLC',
-  tagline: "Charlotte's Trusted Roofing Company",
-  description: 'Family-owned, veteran-operated roofing company serving Charlotte NC and surrounding areas. Roof repair, replacement, inspection, and emergency services. BBB A+ rated.',
+  tagline: "Charlotte's Trusted Residential, Commercial & Industrial Roofing Company",
+  description: 'Family-owned, veteran-operated residential, commercial & industrial roofing company serving Charlotte NC and surrounding areas. Roof repair, replacement, inspection, and emergency services for homes, businesses, and industrial facilities. BBB A+ rated.',
   url: 'https://www.bestroofingnow.com',
   phone: '(704) 605-6047',
   phoneClean: '+17046056047',

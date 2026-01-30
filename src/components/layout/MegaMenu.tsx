@@ -27,6 +27,8 @@ import {
   HelpCircle,
   Shield,
   Hammer,
+  Factory,
+  Warehouse,
 } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS, ROOFING_MATERIALS, ROOFING_BRANDS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
@@ -278,6 +280,179 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
                 >
                   <Phone className="w-4 h-4" />
                   Get Free Estimate
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Commercial & Industrial Mega Menu */}
+      <div
+        className="relative"
+        onMouseEnter={() => handleMouseEnter('commercial')}
+        onMouseLeave={handleMouseLeave}
+      >
+        <button
+          type="button"
+          className={cn(
+            'flex items-center gap-1 px-4 py-2 text-dark font-medium rounded-lg',
+            'hover:bg-light hover:text-primary transition-colors',
+            activeMenu === 'commercial' && 'bg-light text-primary'
+          )}
+          aria-haspopup="true"
+          aria-expanded={activeMenu === 'commercial'}
+        >
+          Commercial
+          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'commercial' && 'rotate-180')} aria-hidden="true" />
+        </button>
+
+        {activeMenu === 'commercial' && (
+          <div className="absolute top-full left-0 pt-2 z-50">
+            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[700px] max-w-[calc(100vw-2rem)] animate-fade-in">
+              <div className="grid grid-cols-3 gap-6">
+                {/* Commercial Buildings */}
+                <div>
+                  <h3 className="text-xs font-bold text-gray uppercase tracking-wider mb-3 flex items-center gap-1">
+                    <Building2 className="w-3 h-3" />
+                    Commercial Buildings
+                  </h3>
+                  <ul className="space-y-1">
+                    <li>
+                      <Link href="/office-building-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Office Buildings
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/retail-shopping-center-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Retail &amp; Shopping Centers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/hotel-hospitality-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Hotels &amp; Hospitality
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/healthcare-facility-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Healthcare Facilities
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/school-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Schools &amp; Universities
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/church-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Churches
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/auto-dealership-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Auto Dealerships
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Industrial Facilities */}
+                <div>
+                  <h3 className="text-xs font-bold text-gray uppercase tracking-wider mb-3 flex items-center gap-1">
+                    <Factory className="w-3 h-3" />
+                    Industrial Facilities
+                  </h3>
+                  <ul className="space-y-1">
+                    <li>
+                      <Link href="/industrial-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Industrial Roofing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/warehouse-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Warehouses
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/distribution-center-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Distribution Centers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/manufacturing-plant-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Manufacturing Plants
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/data-center-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Data Centers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/government-building-roofing-charlotte-nc" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Government Buildings
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Roofing Systems */}
+                <div>
+                  <h3 className="text-xs font-bold text-gray uppercase tracking-wider mb-3 flex items-center gap-1">
+                    <Layers className="w-3 h-3" />
+                    Roofing Systems
+                  </h3>
+                  <ul className="space-y-1">
+                    <li>
+                      <Link href="/commercial-systems" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors font-semibold" onClick={() => setActiveMenu(null)}>
+                        All Commercial Systems
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/commercial-systems/tpo-roofing" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        TPO Roofing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/commercial-systems/epdm-roofing" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        EPDM Roofing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/commercial-systems/pvc-roofing" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        PVC Roofing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/commercial-systems/metal-commercial" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Metal Roofing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/commercial-systems/built-up-roofing" className="block px-3 py-1.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors" onClick={() => setActiveMenu(null)}>
+                        Built-Up Roofing
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
+                <Link
+                  href="/commercial-roofing-services"
+                  className="text-primary text-sm font-semibold hover:text-accent transition-colors flex items-center gap-1"
+                  onClick={() => setActiveMenu(null)}
+                >
+                  View All Commercial Services <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="btn btn-primary btn-sm"
+                  onClick={() => setActiveMenu(null)}
+                >
+                  <Phone className="w-4 h-4" />
+                  Get Commercial Estimate
                 </Link>
               </div>
             </div>

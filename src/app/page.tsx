@@ -47,6 +47,10 @@ export const metadata: Metadata = {
     'highly rated roofing company near me',
     'roofing company Charlotte NC',
     'Charlotte roofing contractor',
+    'commercial roofing charlotte nc',
+    'industrial roofing charlotte nc',
+    'commercial roof repair charlotte',
+    'warehouse roofing charlotte nc',
   ],
   openGraph: {
     title: "Best Roofing Now | Charlotte's Top-Rated Roofing Company",

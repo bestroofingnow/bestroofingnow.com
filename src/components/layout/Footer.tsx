@@ -49,7 +49,7 @@ export function Footer() {
     <footer className="bg-primary text-white mt-12">
       {/* Main Footer */}
       <div className="container py-16 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 text-center lg:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 text-center lg:text-left">
           {/* Company Info */}
           <div className="lg:col-span-4 flex flex-col items-center lg:items-start">
             <Image
@@ -61,9 +61,10 @@ export function Footer() {
               loading="lazy"
             />
             <p className="text-white mb-6">
-              Family-owned, veteran-operated roofing company serving Charlotte and
-              surrounding areas since 2020. We believe in honesty, transparency,
-              and doing the right thing for every customer.
+              Family-owned, veteran-operated residential, commercial & industrial
+              roofing company serving Charlotte and surrounding areas since 2020.
+              We believe in honesty, transparency, and doing the right thing for
+              every customer.
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-2" role="img" aria-label={`Rated ${SITE_CONFIG.googleRating} out of 5 stars based on ${SITE_CONFIG.googleReviewCount} Google reviews`}>
               <div className="stars" aria-hidden="true">
@@ -191,8 +192,50 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Commercial & Industrial */}
+          <div className="lg:col-span-2">
+            <h3 className="text-lg font-bold mb-6 text-white">Commercial & Industrial</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/commercial-roofing-services" className="text-white hover:text-white transition-colors">
+                  Commercial Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/industrial-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Industrial Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/warehouse-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Warehouse Roofing
+                </Link>
+              </li>
+              <li>
+                <Link href="/office-building-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Office Buildings
+                </Link>
+              </li>
+              <li>
+                <Link href="/healthcare-facility-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Healthcare Facilities
+                </Link>
+              </li>
+              <li>
+                <Link href="/distribution-center-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Distribution Centers
+                </Link>
+              </li>
+              <li>
+                <Link href="/commercial-systems" className="text-accent-light hover:text-white font-medium">
+                  View All Building Types →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Locations & Service-City Pages */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-2">
             <h3 className="text-lg font-bold mb-6 text-white">Service Areas</h3>
             <ul className="space-y-3">
               {LOCATIONS.slice(0, 8).map((location) => (
@@ -252,7 +295,7 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="lg:col-span-3 flex flex-col items-center lg:items-start">
+          <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
             <h3 className="text-lg font-bold mb-6 text-white">Contact Us</h3>
             <ul className="space-y-4">
               <li>

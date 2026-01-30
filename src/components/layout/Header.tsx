@@ -12,6 +12,7 @@ import { MegaMenu } from './MegaMenu';
 // Simplified mobile navigation
 const mobileNavigation = [
   { label: 'Services', href: '/services', hasChildren: true },
+  { label: 'Commercial & Industrial', href: '/commercial-roofing-services', hasChildren: true },
   { label: 'Locations', href: '/locations', hasChildren: true },
   { label: 'Materials', href: '/materials', hasChildren: true },
   { label: 'About', href: '/about' },
@@ -66,6 +67,8 @@ export function Header() {
         <div className="container flex justify-between items-center">
           <div className="flex items-center gap-6">
             <span>Veteran-Founded, Family Owned</span>
+            <span>|</span>
+            <span>Residential, Commercial & Industrial</span>
             <span>|</span>
             <span>BBB A+ Rated</span>
             <span>|</span>
@@ -206,6 +209,61 @@ export function Header() {
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   View All Services →
+                                </Link>
+                              </div>
+                            )}
+
+                            {item.label === 'Commercial & Industrial' && (
+                              <div className="space-y-1">
+                                <div className="px-4 py-2 text-xs font-bold text-accent uppercase tracking-wider">
+                                  Commercial Buildings
+                                </div>
+                                {[
+                                  { href: '/office-building-roofing-charlotte-nc', label: 'Office Buildings' },
+                                  { href: '/retail-shopping-center-roofing-charlotte-nc', label: 'Retail & Shopping Centers' },
+                                  { href: '/hotel-hospitality-roofing-charlotte-nc', label: 'Hotels & Hospitality' },
+                                  { href: '/healthcare-facility-roofing-charlotte-nc', label: 'Healthcare Facilities' },
+                                  { href: '/school-roofing-charlotte-nc', label: 'Schools & Universities' },
+                                  { href: '/church-roofing-charlotte-nc', label: 'Churches' },
+                                ].map((link) => (
+                                  <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    <ChevronRight className="w-4 h-4" />
+                                    {link.label}
+                                  </Link>
+                                ))}
+                                <div className="px-4 py-2 text-xs font-bold text-gray uppercase tracking-wider mt-2">
+                                  Industrial Facilities
+                                </div>
+                                {[
+                                  { href: '/industrial-roofing-charlotte-nc', label: 'Industrial Roofing' },
+                                  { href: '/warehouse-roofing-charlotte-nc', label: 'Warehouses' },
+                                  { href: '/distribution-center-roofing-charlotte-nc', label: 'Distribution Centers' },
+                                  { href: '/manufacturing-plant-roofing-charlotte-nc', label: 'Manufacturing Plants' },
+                                  { href: '/data-center-roofing-charlotte-nc', label: 'Data Centers' },
+                                  { href: '/government-building-roofing-charlotte-nc', label: 'Government Buildings' },
+                                  { href: '/auto-dealership-roofing-charlotte-nc', label: 'Auto Dealerships' },
+                                ].map((link) => (
+                                  <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    <ChevronRight className="w-4 h-4" />
+                                    {link.label}
+                                  </Link>
+                                ))}
+                                <Link
+                                  href="/commercial-roofing-services"
+                                  className="flex items-center gap-2 py-3 px-4 text-sm text-primary font-semibold rounded-lg active:bg-light min-h-[44px]"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  View All Commercial Services →
                                 </Link>
                               </div>
                             )}

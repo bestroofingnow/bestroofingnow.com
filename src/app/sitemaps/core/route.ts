@@ -151,6 +151,16 @@ export async function GET() {
     { url: `${BASE_URL}/apartment-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/church-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/warehouse-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/distribution-center-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/healthcare-facility-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/office-building-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/retail-shopping-center-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/hotel-hospitality-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/school-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/manufacturing-plant-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/government-building-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/data-center-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/auto-dealership-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // ============================================
     // CHARLOTTE NEIGHBORHOOD PAGES
