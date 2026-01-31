@@ -42,6 +42,8 @@ const KNOWN_ROUTES = new Set([
   // Project showcase and admin
   'projects',
   'admin',
+  // Ad landing pages
+  'free-roof-inspection',
   // System routes
   'api',
   '_next',
