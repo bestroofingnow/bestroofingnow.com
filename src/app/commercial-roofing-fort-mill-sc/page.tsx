@@ -255,7 +255,7 @@ export default function CommercialRoofingFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-fort-mill-sc`}
         pageName="Commercial Roofing Fort Mill SC"

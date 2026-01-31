@@ -255,7 +255,7 @@ export default function CommercialRoofingGastoniaNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-gastonia-nc`}
         pageName="Commercial Roofing Gastonia NC"

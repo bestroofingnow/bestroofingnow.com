@@ -215,7 +215,7 @@ export default function RoofReplacementFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-fort-mill-sc`}
         pageName="Roof Replacement Fort Mill SC"

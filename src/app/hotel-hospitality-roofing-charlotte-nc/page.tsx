@@ -261,7 +261,7 @@ export default function HotelHospitalityRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/hotel-hospitality-roofing-charlotte-nc`}
         pageName="Hotel & Hospitality Roofing Charlotte NC"

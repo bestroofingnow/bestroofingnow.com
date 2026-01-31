@@ -245,7 +245,7 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`}
         pageName="Hail Damage Roof Repair Charlotte NC"

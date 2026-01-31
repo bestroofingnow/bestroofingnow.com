@@ -40,7 +40,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Best Roofing Company Charlotte NC | #1 Rated | 5.0 Stars | BBB A+ | Best Roofing Now',
+  title: 'Best Roofing Company Charlotte NC | #1 Rated | BBB A+',
   description:
     `Best Roofing Now is the best roofing company in Charlotte NC. ${SITE_CONFIG.googleRating} Google rating, ${SITE_CONFIG.googleReviewCount}+ 5-star reviews, BBB A+ rated, veteran-owned, ${SITE_CONFIG.roofsInstalled}+ roofs completed. GAF, CertainTeed & Owens Corning certified. Free estimates.`,
   keywords: [
@@ -287,7 +287,7 @@ export default function BestRoofingCompanyCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/best-roofing-company-charlotte-nc`}
         pageName="Best Roofing Company Charlotte NC"

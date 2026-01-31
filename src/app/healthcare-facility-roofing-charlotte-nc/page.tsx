@@ -260,7 +260,7 @@ export default function HealthcareFacilityRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/healthcare-facility-roofing-charlotte-nc`}
         pageName="Healthcare Facility Roofing Charlotte NC"

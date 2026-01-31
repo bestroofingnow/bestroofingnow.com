@@ -1,7 +1,9 @@
 import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS, HOWTO_CONTENT, AI_CITATION_CONTENT, FEATURED_SNIPPET_CONTENT } from '@/lib/constants';
 
 // Local Business Schema for the main site - Enhanced for Map Pack ranking
-export function LocalBusinessSchema() {
+// includeRating: only set to true on pages that display visible reviews/ratings (homepage, reviews, service pages)
+// Google penalizes aggregateRating on pages without visible review content
+export function LocalBusinessSchema({ includeRating = false }: { includeRating?: boolean } = {}) {
   // Build comprehensive sameAs array with social + key business profiles
   const sameAsLinks = [
     ...Object.values(SITE_CONFIG.social),
@@ -79,12 +81,21 @@ export function LocalBusinessSchema() {
       closes: '23:59',
       description: '24/7 Emergency Roofing Service Available',
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: SITE_CONFIG.googleRating,
-      reviewCount: SITE_CONFIG.googleReviewCount,
-      bestRating: 5,
-      worstRating: 1,
+    ...(includeRating ? {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: SITE_CONFIG.googleRating,
+        reviewCount: SITE_CONFIG.googleReviewCount,
+        bestRating: 5,
+        worstRating: 1,
+      },
+    } : {}),
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: SITE_CONFIG.phone,
+      contactType: 'customer service',
+      areaServed: 'US',
+      availableLanguage: ['English', 'Spanish'],
     },
     priceRange: '$$',
     paymentAccepted: ['Cash', 'Credit Card', 'Check', 'Financing'],

@@ -263,7 +263,7 @@ export default function DistributionCenterRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/distribution-center-roofing-charlotte-nc`}
         pageName="Distribution Center Roofing Charlotte NC"

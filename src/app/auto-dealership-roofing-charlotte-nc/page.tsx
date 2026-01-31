@@ -267,7 +267,7 @@ export default function AutoDealershipRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/auto-dealership-roofing-charlotte-nc`}
         pageName="Auto Dealership Roofing Charlotte NC"

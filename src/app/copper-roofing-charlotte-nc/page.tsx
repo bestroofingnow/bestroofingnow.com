@@ -209,7 +209,7 @@ export default function CopperRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/copper-roofing-charlotte-nc`}
         pageName="Copper Roofing Charlotte NC"

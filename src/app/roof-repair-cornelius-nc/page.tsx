@@ -23,7 +23,7 @@ import {
   Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -166,7 +166,7 @@ const nearbyCities = [
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/roof-repair-denver-nc' },
   { name: 'Lake Norman Area', href: '/locations/lake-norman' },
 ];
 
@@ -224,7 +224,13 @@ export default function RoofRepairCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-repair-cornelius-nc`}
+        pageName="Roof Repair Cornelius NC"
+        city="Cornelius"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

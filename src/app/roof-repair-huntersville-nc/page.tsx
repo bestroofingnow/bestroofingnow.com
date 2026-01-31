@@ -21,7 +21,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocationSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -158,7 +158,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/roof-repair-denver-nc' },
   { name: 'Concord', href: '/locations/concord-nc' },
 ];
 
@@ -224,6 +224,12 @@ export default function RoofRepairHuntersvilleNCPage() {
           county: 'Mecklenburg',
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-repair-huntersville-nc`}
+        pageName="Roof Repair Huntersville NC"
+        city="Huntersville"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

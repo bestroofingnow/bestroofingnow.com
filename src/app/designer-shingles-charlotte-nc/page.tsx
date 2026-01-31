@@ -191,7 +191,7 @@ export default function DesignerShinglesCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/designer-shingles-charlotte-nc`}
         pageName="Designer Shingles Charlotte NC"

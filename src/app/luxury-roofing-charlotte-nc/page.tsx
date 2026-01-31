@@ -214,7 +214,7 @@ export default function LuxuryRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`}
         pageName="Luxury Roofing Charlotte NC"

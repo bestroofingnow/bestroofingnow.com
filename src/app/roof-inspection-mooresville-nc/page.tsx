@@ -22,7 +22,7 @@ import {
   ThumbsUp,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -182,7 +182,7 @@ const nearbyCities = [
   { name: 'Huntersville', href: '/emergency-roof-repair-huntersville-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
   { name: 'Statesville', href: '/locations/statesville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/roof-inspection-denver-nc' },
 ];
 
 // FAQs about roof inspections in Mooresville
@@ -239,7 +239,13 @@ export default function RoofInspectionMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-inspection-mooresville-nc`}
+        pageName="Roof Inspection Mooresville NC"
+        city="Mooresville"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

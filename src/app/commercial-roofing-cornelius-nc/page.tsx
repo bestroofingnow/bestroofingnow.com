@@ -194,7 +194,7 @@ const nearbyCities = [
   { name: 'Huntersville', href: '/commercial-roofing-huntersville-nc' },
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Mooresville', href: '/commercial-roofing-mooresville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/commercial-roofing-denver-nc' },
   { name: 'Concord', href: '/commercial-roofing-concord-nc' },
 ];
 
@@ -253,7 +253,7 @@ export default function CommercialRoofingCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-cornelius-nc`}
         pageName="Commercial Roofing Cornelius NC"

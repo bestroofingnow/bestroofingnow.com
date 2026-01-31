@@ -169,7 +169,7 @@ export default function MetalRoofingDavidsonNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/metal-roofing-davidson-nc`}
         pageName="Metal Roofing Davidson NC"

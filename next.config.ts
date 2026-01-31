@@ -254,7 +254,6 @@ const nextConfig: NextConfig = {
       { source: '/best-roofing-company-near-gastonia-nc', destination: '/locations/gastonia-nc', permanent: true },
       { source: '/best-roofing-company-near-me-cornelius-nc', destination: '/locations/cornelius-nc', permanent: true },
       { source: '/the-one-best-roofing-company-denver-nc', destination: '/locations/denver-nc', permanent: true },
-      { source: '/roofing-denver-nc', destination: '/locations/denver-nc', permanent: true },
       { source: '/denver-roofing-contractors', destination: '/locations/denver-nc', permanent: true },
       { source: '/charlotte-roofing-contractors', destination: '/locations/charlotte-nc', permanent: true },
 

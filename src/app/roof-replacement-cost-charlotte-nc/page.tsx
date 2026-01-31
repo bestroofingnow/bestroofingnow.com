@@ -259,7 +259,7 @@ export default function RoofReplacementCostCharlottePage() {
       />
       <FAQSchema faqs={faqs} />
       <PricingSchema />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-cost-charlotte-nc`}
         pageName="Roof Replacement Cost Charlotte NC"

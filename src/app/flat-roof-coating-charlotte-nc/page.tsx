@@ -260,7 +260,7 @@ export default function FlatRoofCoatingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/flat-roof-coating-charlotte-nc`}
         pageName="Flat Roof Coating Charlotte NC"

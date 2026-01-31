@@ -203,7 +203,7 @@ export default function RoofersCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-cornelius-nc`}
         pageName="Roofers Cornelius NC"

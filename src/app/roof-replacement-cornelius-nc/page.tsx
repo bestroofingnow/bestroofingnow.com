@@ -159,7 +159,7 @@ export default function RoofReplacementCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-cornelius-nc`}
         pageName="Roof Replacement Cornelius NC"

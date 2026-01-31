@@ -26,7 +26,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Architectural vs 3-Tab Shingles Charlotte NC | Which Should You Choose?',
+  title: 'Architectural vs 3-Tab Shingles Charlotte NC',
   description:
     'Architectural shingles vs 3-tab in Charlotte NC: Compare cost, durability, appearance, and value. Expert guide to choosing the right shingles for your home.',
   keywords: [

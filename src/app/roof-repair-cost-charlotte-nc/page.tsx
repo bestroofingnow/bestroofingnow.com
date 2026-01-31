@@ -264,7 +264,7 @@ export default function RoofRepairCostCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-cost-charlotte-nc`}
         pageName="Roof Repair Cost Charlotte NC"

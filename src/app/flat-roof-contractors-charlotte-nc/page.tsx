@@ -332,7 +332,7 @@ export default function FlatRoofContractorsCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`}
         pageName="Flat Roof Contractors Charlotte NC"

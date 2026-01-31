@@ -167,7 +167,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Cornelius', href: '/locations/cornelius-nc' },
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/storm-damage-roof-repair-denver-nc' },
   { name: 'Statesville', href: '/locations/statesville-nc' },
   { name: 'Troutman', href: '/locations/troutman-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
@@ -237,7 +237,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/storm-damage-roof-repair-mooresville-nc`}
         pageName="Storm Damage Roof Repair Mooresville NC"

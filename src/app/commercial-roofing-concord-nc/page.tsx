@@ -255,7 +255,7 @@ export default function CommercialRoofingConcordNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-concord-nc`}
         pageName="Commercial Roofing Concord NC"

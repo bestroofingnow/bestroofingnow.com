@@ -365,7 +365,7 @@ export default function RoofingCompanyCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-company-charlotte-nc`}
         pageName="Roofing Company Charlotte NC"

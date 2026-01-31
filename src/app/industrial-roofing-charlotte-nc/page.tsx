@@ -263,7 +263,7 @@ export default function IndustrialRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/industrial-roofing-charlotte-nc`}
         pageName="Industrial Roofing Charlotte NC"

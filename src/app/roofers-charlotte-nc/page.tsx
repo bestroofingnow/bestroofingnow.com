@@ -285,7 +285,7 @@ export default function RoofersCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-charlotte-nc`}
         pageName="Roofers Charlotte NC"

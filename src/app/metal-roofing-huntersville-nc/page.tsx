@@ -22,7 +22,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -203,7 +203,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/metal-roofing-denver-nc' },
   { name: 'Lake Norman', href: '/locations/lake-norman' },
 ];
 
@@ -261,7 +261,13 @@ export default function MetalRoofingHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/metal-roofing-huntersville-nc`}
+        pageName="Metal Roofing Huntersville NC"
+        city="Huntersville"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

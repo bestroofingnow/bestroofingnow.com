@@ -240,7 +240,7 @@ export default function LuxuryRoofingLakeNormanPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/luxury-roofing-lake-norman-nc`}
         pageName="Luxury Roofing Lake Norman NC"

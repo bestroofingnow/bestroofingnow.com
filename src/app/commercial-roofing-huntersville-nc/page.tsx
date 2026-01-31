@@ -195,7 +195,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Mooresville', href: '/commercial-roofing-mooresville-nc' },
   { name: 'Concord', href: '/commercial-roofing-concord-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/commercial-roofing-denver-nc' },
 ];
 
 // FAQs
@@ -253,7 +253,7 @@ export default function CommercialRoofingHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-huntersville-nc`}
         pageName="Commercial Roofing Huntersville NC"

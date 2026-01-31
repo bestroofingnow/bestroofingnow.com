@@ -144,7 +144,7 @@ export default function GutterServicesPage() {
           { name: 'Gutter Services', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Gutter Services Charlotte NC"

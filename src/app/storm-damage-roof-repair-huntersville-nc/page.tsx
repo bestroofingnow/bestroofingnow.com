@@ -33,7 +33,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help | Best Roofing Now',
+  title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help',
   description:
     'Storm damage roof repair in Huntersville NC. Expert hail damage, wind damage, and emergency repairs. We work with your insurance company to get your roof restored. Free inspections!',
   keywords: [
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc`,
   },
   openGraph: {
-    title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help | Best Roofing Now',
+    title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help',
     description:
       'Expert storm damage roof repair in Huntersville NC. Hail, wind, and emergency repairs. Insurance claim assistance. Free storm damage inspections!',
     url: `${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc`,
@@ -164,7 +164,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/storm-damage-roof-repair-denver-nc' },
   { name: 'Concord', href: '/locations/concord-nc' },
 ];
 

@@ -31,7 +31,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Hurricane Roof Preparation Guide Charlotte NC | Protect Your Home',
+  title: 'Hurricane Roof Prep Guide Charlotte NC',
   description:
     'Prepare your Charlotte roof for hurricane season. Inspection checklist, reinforcement options, insurance tips, and what to do before, during, and after the storm.',
   keywords: [

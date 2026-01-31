@@ -254,7 +254,7 @@ export default function CommercialRoofingRockHillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-rock-hill-sc`}
         pageName="Commercial Roofing Rock Hill SC"

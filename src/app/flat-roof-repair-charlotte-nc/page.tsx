@@ -255,7 +255,7 @@ export default function FlatRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/flat-roof-repair-charlotte-nc`}
         pageName="Flat Roof Repair Charlotte NC"

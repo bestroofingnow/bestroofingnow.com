@@ -461,7 +461,7 @@ export default function CommercialRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
         pageName="Commercial Roofing Charlotte NC"

@@ -38,7 +38,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Best Roofers Charlotte NC | 500+ Five-Star Reviews | Read Testimonials',
+  title: 'Best Roofers Charlotte NC | 500+ Five-Star Reviews',
   description:
     'See why Charlotte homeowners rate us 5 stars! Read 500+ verified reviews and testimonials from real customers. Best Roofers Charlotte NC with proven track record of excellence.',
   keywords: [
@@ -318,7 +318,7 @@ export default function BestRoofersCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

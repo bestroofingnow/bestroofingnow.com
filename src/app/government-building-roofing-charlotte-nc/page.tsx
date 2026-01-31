@@ -265,7 +265,7 @@ export default function GovernmentBuildingRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/government-building-roofing-charlotte-nc`}
         pageName="Government Building Roofing Charlotte NC"

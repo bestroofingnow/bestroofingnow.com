@@ -310,7 +310,7 @@ export default function RoofingContractorCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`}
         pageName="Roofing Contractor Charlotte NC"

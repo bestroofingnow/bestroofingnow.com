@@ -27,7 +27,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Church Roof Replacement Guide Charlotte NC | Congregation-Friendly Solutions',
+  title: 'Church Roof Replacement Charlotte NC | Free Estimates',
   description:
     'Church roof replacement in Charlotte NC: Financing options, minimal disruption to services, historic preservation. Trusted by Charlotte congregations.',
   keywords: [

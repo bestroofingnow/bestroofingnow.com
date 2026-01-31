@@ -209,7 +209,7 @@ export default function CedarShakeRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`}
         pageName="Cedar Shake Roofing Charlotte NC"

@@ -26,7 +26,7 @@ import { IMAGES } from '@/lib/images';
 import { TEAM_MEMBERS, COMPANY_CERTIFICATIONS, COMPANY_VALUES } from '@/lib/team';
 
 export const metadata: Metadata = {
-  title: 'About Us | Veteran-Owned Residential, Commercial & Industrial Roofing Company Charlotte NC',
+  title: 'About Us | Veteran-Owned Roofing Company Charlotte NC',
   description:
     'Best Roofing Now is a veteran-owned, family-operated residential, commercial & industrial roofing company in Charlotte NC. Founded by James and his dad Fred with military values of integrity and service. BBB A+ rated, manufacturer certified.',
   keywords: [

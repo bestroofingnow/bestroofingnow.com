@@ -260,7 +260,7 @@ export default function OfficeBuildingRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/office-building-roofing-charlotte-nc`}
         pageName="Office Building Roofing Charlotte NC"

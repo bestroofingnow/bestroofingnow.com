@@ -187,7 +187,7 @@ export default function MetalRoofingServicesPage() {
           { name: 'Metal Roofing Contractor Charlotte NC', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Metal Roofing Contractor Charlotte NC"

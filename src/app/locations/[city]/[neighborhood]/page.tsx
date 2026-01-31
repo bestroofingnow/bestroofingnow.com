@@ -127,7 +127,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
   return (
     <>
       <FAQSchema faqs={neighborhoodFAQs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/locations/${city}/${neighborhoodSlug}`}
         pageName={`Roofing in ${neighborhoodData.name}, ${location.city}`}

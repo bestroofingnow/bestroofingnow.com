@@ -261,7 +261,7 @@ export default function SchoolRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/school-roofing-charlotte-nc`}
         pageName="School Roofing Charlotte NC"

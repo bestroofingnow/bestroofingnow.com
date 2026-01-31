@@ -262,7 +262,7 @@ export default function ManufacturingPlantRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/manufacturing-plant-roofing-charlotte-nc`}
         pageName="Manufacturing Plant Roofing Charlotte NC"

@@ -26,7 +26,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Apartment Roofing Charlotte NC | Multi-Family Experts | Best Roofing Now',
+  title: 'Apartment Roofing Charlotte NC | Multi-Family Experts',
   description:
     'Expert apartment roofing services in Charlotte NC. Multi-family roofing specialists, apartment complex roof repair and replacement. Property management approved. Free estimates.',
   keywords: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`,
   },
   openGraph: {
-    title: 'Apartment Roofing Charlotte NC | Multi-Family Experts | Best Roofing Now',
+    title: 'Apartment Roofing Charlotte NC | Multi-Family Experts',
     description:
       'BBB A+ rated apartment roofing experts in Charlotte NC. Multi-family specialists, property management approved, complete apartment roofing services. Free estimates.',
     url: `${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`,
@@ -203,7 +203,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

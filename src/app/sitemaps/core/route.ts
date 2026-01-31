@@ -12,6 +12,8 @@ export async function GET() {
     { url: `${BASE_URL}/faq`, changefreq: 'monthly', priority: '0.5' },
     { url: `${BASE_URL}/nc-roofing-guide`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/sitemap`, changefreq: 'weekly', priority: '0.8' },
+    // Ad landing pages
+    { url: `${BASE_URL}/free-roof-inspection`, changefreq: 'monthly', priority: '0.6' },
     // Main service silo pages - GBP category aligned
     { url: `${BASE_URL}/gutter-services`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/siding-services`, changefreq: 'weekly', priority: '0.9' },
@@ -192,6 +194,7 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-mooresville-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roofing-davidson-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roofing-huntersville-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roofing-denver-nc`, changefreq: 'weekly', priority: '0.9' },
 
     { url: `${BASE_URL}/roofing-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-terrell-nc`, changefreq: 'weekly', priority: '0.8' },
@@ -223,17 +226,29 @@ export async function GET() {
     { url: `${BASE_URL}/emergency-roof-repair-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roofing-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     // Mooresville
+    { url: `${BASE_URL}/roof-repair-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roofing-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/storm-damage-roof-repair-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-inspection-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     // Cornelius
     { url: `${BASE_URL}/roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofers-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roofing-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Denver
+    { url: `${BASE_URL}/roof-repair-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofers-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-inspection-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-denver-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // Davidson
     { url: `${BASE_URL}/roof-replacement-davidson-nc`, changefreq: 'weekly', priority: '0.8' },

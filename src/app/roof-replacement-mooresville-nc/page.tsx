@@ -20,7 +20,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocationSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -156,7 +156,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Cornelius', href: '/locations/cornelius-nc' },
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/roof-replacement-denver-nc' },
   { name: 'Statesville', href: '/locations/statesville-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
 ];
@@ -223,6 +223,12 @@ export default function RoofReplacementMooresvilleNCPage() {
           county: 'Iredell',
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-replacement-mooresville-nc`}
+        pageName="Roof Replacement Mooresville NC"
+        city="Mooresville"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

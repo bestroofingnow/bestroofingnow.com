@@ -156,7 +156,7 @@ export default function IceStormDamageCharlottePage() {
         ]}
       />
       <FAQSchema faqs={iceStormFAQs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Ice Storm Damage Charlotte NC"

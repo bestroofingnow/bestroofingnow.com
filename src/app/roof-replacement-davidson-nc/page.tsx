@@ -164,7 +164,7 @@ const nearbyCities = [
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/roof-replacement-denver-nc' },
   { name: 'Lake Norman Area', href: '/locations/lake-norman' },
 ];
 
@@ -222,7 +222,7 @@ export default function RoofReplacementDavidsonNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

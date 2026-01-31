@@ -267,7 +267,7 @@ export default function DataCenterRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/data-center-roofing-charlotte-nc`}
         pageName="Data Center Roofing Charlotte NC"

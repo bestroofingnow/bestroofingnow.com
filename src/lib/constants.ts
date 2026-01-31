@@ -452,7 +452,7 @@ export const LOCATIONS = [
   { slug: 'statesville-nc', city: 'Statesville', state: 'NC', isPrimary: false, county: 'Iredell', distance: 39 },
 
   // === LINCOLN COUNTY ===
-  { slug: 'denver-nc', city: 'Denver', state: 'NC', isPrimary: false, county: 'Lincoln', distance: 22 },
+  { slug: 'denver-nc', city: 'Denver', state: 'NC', isPrimary: true, county: 'Lincoln', distance: 22 },
   { slug: 'lincolnton-nc', city: 'Lincolnton', state: 'NC', isPrimary: false, county: 'Lincoln', distance: 29 },
 
   // === LAKE NORMAN AREA ===

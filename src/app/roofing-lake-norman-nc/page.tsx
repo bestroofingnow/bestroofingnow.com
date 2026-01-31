@@ -202,7 +202,7 @@ export default async function LakeNormanRoofingPage() {
           { name: 'Lake Norman Roofing', url: `${SITE_CONFIG.url}/roofing-lake-norman-nc` },
         ]}
       />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <FAQSchema faqs={lakeNormanFAQs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`}

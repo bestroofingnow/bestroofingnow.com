@@ -151,7 +151,7 @@ const localAreas = [
 
 // Nearby cities served
 const nearbyCities = [
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/roofing-denver-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
   { name: 'Cornelius', href: '/locations/cornelius-nc' },
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
@@ -215,7 +215,7 @@ export default function RoofingSherrillsFordNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

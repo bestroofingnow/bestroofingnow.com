@@ -24,7 +24,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -177,7 +177,7 @@ const nearbyCities = [
   { name: 'Charlotte', href: '/roofers-charlotte-nc' },
   { name: 'Statesville', href: '/locations/statesville-nc' },
   { name: 'Troutman', href: '/locations/troutman-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/roofers-denver-nc' },
   { name: 'Sherrills Ford', href: '/locations/sherrills-ford-nc' },
   { name: 'Terrell', href: '/locations/terrell-nc' },
   { name: 'Mount Mourne', href: '/locations/mount-mourne-nc' },
@@ -239,7 +239,13 @@ export default function RoofersMoresville() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofers-mooresville-nc`}
+        pageName="Roofers Mooresville NC"
+        city="Mooresville"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

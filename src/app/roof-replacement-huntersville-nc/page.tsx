@@ -173,7 +173,7 @@ export default function RoofReplacementHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-huntersville-nc`}
         pageName="Roof Replacement Huntersville NC"

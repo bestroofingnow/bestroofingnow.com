@@ -20,6 +20,7 @@ import {
   Ruler,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -157,7 +158,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/gutter-installation-denver-nc' },
   { name: 'Concord', href: '/locations/concord-nc' },
 ];
 
@@ -580,6 +581,14 @@ export default function GutterInstallationHuntersvilleNCPage() {
           </div>
         </div>
       </section>
+
+      {/* YouTube Short */}
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="See why proper gutter installation is critical to protecting your Huntersville home's foundation."
+      />
 
       {/* Final CTA */}
       <CTASection

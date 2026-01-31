@@ -81,7 +81,7 @@ export default function FAQPage() {
           { name: 'FAQ', url: `${SITE_CONFIG.url}/faq` },
         ]}
       />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       {/* Only ONE FAQPage schema per page - ALL_FAQS includes comprehensive content */}
       {/* VoiceSearchFAQSchema removed to comply with Google's one FAQPage per page rule */}
       <FAQSchema faqs={ALL_FAQS} />

@@ -238,7 +238,7 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`}
         pageName="Emergency Roof Tarp Service Charlotte NC"

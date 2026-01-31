@@ -30,7 +30,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Restaurant Roof Repair vs Replacement Charlotte NC | Commercial Guide',
+  title: 'Restaurant Roof: Repair vs Replace Charlotte NC',
   description:
     'Should you repair or replace your Charlotte restaurant roof? Guide to costs, timing, health code compliance, and minimizing downtime. Free commercial estimates.',
   keywords: [

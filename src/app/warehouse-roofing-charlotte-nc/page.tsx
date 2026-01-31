@@ -283,7 +283,7 @@ export default function WarehouseRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/warehouse-roofing-charlotte-nc`}
         pageName="Warehouse Roofing Charlotte NC"

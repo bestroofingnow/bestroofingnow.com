@@ -30,7 +30,7 @@ import { IMAGES } from '@/lib/images';
 import { TURNER_NOTES } from '@/lib/turner-family';
 
 export const metadata: Metadata = {
-  title: 'Affordable Roofing Charlotte NC | Quality at Fair Prices | Best Roofing Now',
+  title: 'Affordable Roofing Charlotte NC | Quality at Fair Prices',
   description:
     'Affordable roofing services in Charlotte NC without sacrificing quality. Transparent pricing, flexible financing options, and insurance claim assistance. Get value you can trust from a BBB A+ rated family-owned company.',
   keywords: [
@@ -298,7 +298,7 @@ export default function AffordableRoofingCharlottePage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AffordableRoofingSchema />
 
       {/* Hero Section */}

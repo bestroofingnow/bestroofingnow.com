@@ -203,7 +203,7 @@ export default function RoofersFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-fort-mill-sc`}
         pageName="Roofers Fort Mill SC"

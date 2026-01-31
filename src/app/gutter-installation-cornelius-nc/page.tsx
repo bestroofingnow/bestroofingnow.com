@@ -20,6 +20,7 @@ import {
   Ruler,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import YouTubeShort from '@/components/sections/YouTubeShort';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -158,7 +159,7 @@ const nearbyCities = [
   { name: 'Davidson', href: '/locations/davidson-nc' },
   { name: 'Huntersville', href: '/locations/huntersville-nc' },
   { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Denver', href: '/locations/denver-nc' },
+  { name: 'Denver', href: '/gutter-installation-denver-nc' },
   { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
   { name: 'Lake Norman', href: '/locations/lake-norman' },
 ];
@@ -233,7 +234,7 @@ export default function GutterInstallationCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/gutter-installation-cornelius-nc`}
         pageName="Gutter Installation Cornelius NC"
@@ -666,6 +667,14 @@ export default function GutterInstallationCorneliusNCPage() {
           </div>
         </div>
       </section>
+
+      {/* YouTube Short */}
+      <YouTubeShort
+        videoId="CXaG6atl-nE"
+        title="The $10,000 Gutter Mistake"
+        heading="Watch: The $10,000 Gutter Mistake"
+        description="See why proper gutter installation is critical to protecting your Cornelius home's foundation."
+      />
 
       {/* Final CTA */}
       <CTASection

@@ -29,7 +29,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Office Building Roof: Replacement vs Coating | Charlotte NC Commercial Guide',
+  title: 'Office Roof: Replacement vs Coating | Charlotte NC',
   description:
     'Is your Charlotte office building roof replacement a waste of money? Compare commercial roof coating vs full replacement. Cost analysis, ROI, and when each option makes sense.',
   keywords: [

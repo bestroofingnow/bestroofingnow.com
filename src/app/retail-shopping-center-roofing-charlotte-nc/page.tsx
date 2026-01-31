@@ -261,7 +261,7 @@ export default function RetailShoppingCenterRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/retail-shopping-center-roofing-charlotte-nc`}
         pageName="Retail Shopping Center Roofing Charlotte NC"

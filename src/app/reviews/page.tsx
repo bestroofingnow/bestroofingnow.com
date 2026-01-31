@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Star, Quote, Phone, ArrowRight, ExternalLink } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, ReviewsSchema, AISearchOptimizationBundle } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, ReviewsSchema, AISearchOptimizationBundle, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { LazyReviewWidget } from '@/components/ui/LazyReviewWidget';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -139,6 +139,7 @@ export default function ReviewsPage() {
           { name: 'Reviews', url: `${SITE_CONFIG.url}/reviews` },
         ]}
       />
+      <LocalBusinessSchema includeRating={true} />
       <ReviewsSchema />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/reviews`}

@@ -151,7 +151,7 @@ export default function IceStormDamageLakeNormanPage() {
         ]}
       />
       <FAQSchema faqs={iceStormFAQs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Ice Storm Damage Lake Norman NC"

@@ -238,7 +238,7 @@ export default function CommercialRoofingMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-mooresville-nc`}
         pageName="Commercial Roofing Mooresville NC"

@@ -5,7 +5,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { StickyCTA } from '@/components/sections/CTASection';
-import { LocalBusinessSchema, WebSiteSchema, HowToGetRoofEstimateSchema, FreeInspectionOfferSchema, ReviewsSchema } from '@/components/seo/SchemaMarkup';
+import { WebSiteSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { EstimateProvider } from '@/components/estimate';
 import { SocialProofProvider } from '@/components/social-proof';
@@ -171,11 +171,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://getpowerpay.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://getpowerpay.com" />
         <link rel="dns-prefetch" href="https://app.getpowerpay.com" />
-        <LocalBusinessSchema />
         <WebSiteSchema />
-        <HowToGetRoofEstimateSchema />
-        <FreeInspectionOfferSchema />
-        <ReviewsSchema />
       </head>
       <body className="antialiased">
         <EstimateProvider>

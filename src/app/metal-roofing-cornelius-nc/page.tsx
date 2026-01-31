@@ -169,7 +169,7 @@ export default function MetalRoofingCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/metal-roofing-cornelius-nc`}
         pageName="Metal Roofing Cornelius NC"

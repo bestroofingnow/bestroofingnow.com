@@ -31,7 +31,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Attic Moisture Control Charlotte NC | Prevent Mold & Ice Dams | Expert Guide',
+  title: 'Attic Moisture Control Charlotte NC | Prevent Mold',
   description:
     'How to control attic moisture in Charlotte NC homes. Prevent mold growth, ice dams, and roof damage caused by humidity. Expert ventilation solutions from Best Roofing Now. Free inspections.',
   keywords: [

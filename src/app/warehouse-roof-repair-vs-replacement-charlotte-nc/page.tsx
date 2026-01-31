@@ -29,7 +29,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Warehouse Roof Repair vs Replacement Charlotte NC | Decision Guide',
+  title: 'Warehouse Roof: Repair vs Replace Charlotte NC',
   description:
     'Should you repair or replace your warehouse roof in Charlotte? Cost analysis, decision criteria, and when each option makes sense for industrial buildings.',
   keywords: [

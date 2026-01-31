@@ -248,7 +248,7 @@ export default function RoofMaintenanceCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`}
         pageName="Roof Maintenance Charlotte NC"

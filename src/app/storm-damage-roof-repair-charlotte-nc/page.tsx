@@ -186,7 +186,7 @@ export default function StormDamageRoofRepairCharlottePage() {
           { name: 'Storm Damage Roof Repair Charlotte', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Storm Damage Roof Repair Charlotte NC"

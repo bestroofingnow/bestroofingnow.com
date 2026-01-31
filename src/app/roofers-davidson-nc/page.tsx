@@ -202,7 +202,7 @@ export default function RoofersDavidsonNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-davidson-nc`}
         pageName="Roofers Davidson NC"

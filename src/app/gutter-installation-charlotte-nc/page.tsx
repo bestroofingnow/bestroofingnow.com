@@ -420,7 +420,7 @@ export default function GutterInstallationCharlottePage() {
       />
       <FAQSchema faqs={faqs} />
       <GutterInstallationServiceSchema />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/gutter-installation-charlotte-nc`}
         pageName="Gutter Installation Charlotte NC"

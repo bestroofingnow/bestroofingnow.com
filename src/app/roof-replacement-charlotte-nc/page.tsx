@@ -295,7 +295,7 @@ export default function RoofReplacementCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
         pageName="Roof Replacement Charlotte NC"
