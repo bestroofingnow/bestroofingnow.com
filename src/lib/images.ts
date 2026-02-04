@@ -1,181 +1,182 @@
-// WordPress Media Library Images organized by category
-// All images sourced from bestroofingnow.com
+// Real project photos from PMI (ProjectMapIt) database
+// All images sourced from actual Best Roofing Now job sites across Charlotte metro area
+// Hosted on Google Cloud Storage: storage.googleapis.com/pmi-photos/
+
+const PMI = 'https://storage.googleapis.com/pmi-photos';
 
 export const IMAGES = {
-  // Logo
+  // Logo - keep branded asset
   logo: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
 
-  // Hero/Banner Images - Primary hero images for pages
+  // Hero/Banner Images - Real PMI project photos from Charlotte area jobs
   hero: {
-    // Use WebP version for better performance (PNG fallback commented)
-    // Original PNG: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/lots-of-guys-on-roof.png'
     roofTeam: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp',
     menOnRoof: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/menonroof.png',
     metalRoof: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/metalroofnew.png',
-    homePage: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/hoe_page-removebg-preview.webp',
-    // New hero images from spreadsheet
-    hero1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp',
-    hero2: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/dac96aa8-19a9-4045-9ce2-ac94105b3aea-hero-picture-1.webp',
-    hero3: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/58c1a3d4-cdd0-479a-853a-cc2fee3d0c10-hero-picture-2.webp',
-    hero4: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/58c1a3d4-cdd0-479a-853a-cc2fee3d0c10-hero-picture-1.webp',
-    hero5: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/437acfb5-7389-4ef2-b692-462e89d4b650-hero-picture.webp',
-    hero6: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/39212490-21c5-4236-85db-416012997072-hero-picture.webp',
-    hero7: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/524251a5-724b-4f32-8f1c-b2f06ce6a2a7-hero-picture.webp',
-    hero8: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/01a032dd-050e-4d9b-ac21-c71a0f8d0681-hero-picture.webp',
-    hero9: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/9c5552f4-7556-47a2-a25e-9c76db6ae948-hero-picture.webp',
-    hero10: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/6f17d15c-5e82-45b1-8f2d-31c66a0d0fe5-hero-picture.webp',
-    hero11: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/a33c79a7-bec3-4a72-b13e-5168d56c09f1-hero-picture.webp',
-    hero12: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/f314e729-5adf-4ee8-8c3c-e6b87824cc79-hero-picture.webp',
-    hero13: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/1b966be5-17a9-4fbd-98fe-fe93a54d79d7-hero-picture.webp',
-    hero14: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/86a551ed-ca3b-4ce5-9e43-906c86825079-hero-picture.webp',
-    hero15: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/a2bd3373-7a88-435c-9476-35986fb0d1f3-hero-picture.webp',
-    hero16: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/79de42e6-7931-4278-81eb-60b26e3dff7e-hero-picture.webp',
-    hero17: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/bec06075-a9a1-4418-8698-747bf77157ab-hero-picture.webp',
-    hero18: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/66aae138-0f2e-4621-87a6-7440f3b79c26-hero-picture.webp',
-    hero19: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/9860664c-55e7-4cae-8554-ec0768ba8ac6-hero-picture.webp',
-    hero20: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/8fd54c81-3a21-4a35-badd-927ce94f982e-hero-picture.webp',
-    hero21: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/c586d54c-9400-4200-8c21-189caa585100-hero-picture.webp',
-    hero22: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/ff94309d-3af3-463f-b499-a2667e48167d-hero-picture.webp',
-    hero23: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/57f1f4b6-287a-4cc4-929a-db1299de32ff-hero-picture.webp',
-    hero24: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/5f5307cd-7e3c-416b-bb69-cb09e0a61ec8-hero-picture.webp',
-    hero25: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/0aad2310-a8d4-4113-a296-27d6101ca981-hero-picture.webp',
-    hero26: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/a00149eb-051f-4a49-bb01-10ac15efd020-hero-picture.webp',
+    homePage: `${PMI}/full-5d515844-6c77-47b1-9857-91064d4b047b.jpeg`,
+    // PMI project photos spread across Charlotte metro projects
+    hero1: `${PMI}/full-5d515844-6c77-47b1-9857-91064d4b047b.jpeg`,
+    hero2: `${PMI}/full-daa76aa1-8063-4951-8df1-9c4fa0193fbf.jpeg`,
+    hero3: `${PMI}/full-d393635e-9ef9-4029-8f0b-94665c4fc527.jpeg`,
+    hero4: `${PMI}/full-8d86cfc6-b7b2-497c-8814-08370dd7365c.jpeg`,
+    hero5: `${PMI}/full-7af5f870-cc77-4685-bc18-7fb52016aa47.jpeg`,
+    hero6: `${PMI}/2025-02-26-07-08-18-c94924d4-2e1b-4743-a301-0804face18f9.jpg`,
+    hero7: `${PMI}/2025-02-20-05-42-36-bd7fa14d-92eb-4082-a681-3b56a5cb93de.jpg`,
+    hero8: `${PMI}/2025-02-10-07-09-07-12840e15-2a58-4ad1-9223-3b30d9eddd81.jpg`,
+    hero9: `${PMI}/2025-01-18-08-14-52-f72962c2-ee84-4f1b-b898-e3befede8c99.jpg`,
+    hero10: `${PMI}/2025-01-03-03-32-56-73531100-8b1e-48c1-be85-3d9477ae121a.jpg`,
+    hero11: `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`, // Huntersville
+    hero12: `${PMI}/full-76a79ab8-dc86-4c03-b8db-ac9587236449.jpeg`, // Concord
+    hero13: `${PMI}/full-9e7b90cb-bb7a-445e-b809-7fbc9cd21377.jpeg`, // Mooresville
+    hero14: `${PMI}/2025-01-15-01-49-06-ac388860-da9e-4997-91f7-334ecac4b044.jpg`, // Rock Hill
+    hero15: `${PMI}/2024-04-16-03-28-01-5f54ec2a-0814-41f1-87e7-068ab5853e9a.jpg`, // Denver
+    hero16: `${PMI}/2023-03-07-08-45-53-d8516fd9-8480-4747-bbc9-4a0a79f285c4.jpg`, // Monroe
+    hero17: `${PMI}/full-b312124c-913c-4408-9882-616a23d564fe.jpeg`, // Waxhaw
+    hero18: `${PMI}/full-ea89d6e0-c6e5-4e7f-a12c-cdcfe82ff104.jpeg`, // Kannapolis
+    hero19: `${PMI}/full-4ef3d6d5-e970-4005-9dcf-7c415e3ea805.jpeg`, // Mount Holly
+    hero20: `${PMI}/full-9b9080dd-f827-45b1-a00d-148b583d2daa.jpeg`, // Cornelius
+    hero21: `${PMI}/2024-12-06-07-36-41-4106108d-4be1-47de-a8f9-80c04c77e56a.jpg`, // Davidson
+    hero22: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`, // Indian Trail
+    hero23: `${PMI}/2024-07-02-04-38-14-ac6ed3f5-a9ef-4b2d-91ab-a3790e5b1bb3.jpg`, // Harrisburg
+    hero24: `${PMI}/full-6ae1b52a-83a6-4783-bc3f-8e272a33a059.jpeg`, // Mint Hill
+    hero25: `${PMI}/full-6d141284-87ff-4aff-9c99-c918070f28bd.jpeg`, // Statesville
+    hero26: `${PMI}/2024-12-13-04-43-12-202a1e47-27ef-4a61-83b0-ef49b58f2f17.jpg`, // Gastonia
   },
 
-  // Charlotte Neighborhood-specific images
+  // Charlotte Neighborhood-specific images - real PMI project photos
   neighborhoods: {
-    myersPark: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Expert-Residential-Roofing-in-Myers-Park-Charlotte.png',
-    dilworth: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Residential-Roofing-in-Dilworth-Charlotte.png',
-    noda: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Residential-Roofing-in-NoDa-Charlotte.png',
-    plazaMidwood: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Residential-Roofing-in-Plaza-Midwood-Charlotte.png',
-    cotswold: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Expert-Residential-Roofing-in-Cotswold-Charlotte.png',
-    elizabeth: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Residential-Roofing-in-Elizabeth-Charlotte.png',
+    myersPark: `${PMI}/full-af1cdaca-8315-4f94-9e05-5b0a3b588e91.jpeg`,
+    dilworth: `${PMI}/full-40bd23bc-59d4-4ae3-a757-c42b52459a8a.jpeg`,
+    noda: `${PMI}/full-6b7e1389-a7a4-4a08-a2b6-d00552db0178.jpeg`,
+    plazaMidwood: `${PMI}/full-b0072c41-1c34-4de0-bd42-34b19810447f.jpeg`,
+    cotswold: `${PMI}/full-97b948ed-f10e-421f-8772-2013fd9e8f38.jpeg`,
+    elizabeth: `${PMI}/full-48a95f36-bac5-4f52-a4a7-4cd3191119ff.jpeg`,
   },
 
-  // Location-specific city images
+  // Location-specific city images - real PMI project photos
   cities: {
-    davidson: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Residential-Roofing-in-Davidson-NC.png',
-    cornelius: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Residential-Roofing-in-Cornelius-NC.png',
-    huntersville: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/Residential-Roofing-in-Huntersville-NC.png',
+    davidson: `${PMI}/2024-12-06-07-36-41-4106108d-4be1-47de-a8f9-80c04c77e56a.jpg`,
+    cornelius: `${PMI}/full-9b9080dd-f827-45b1-a00d-148b583d2daa.jpeg`,
+    huntersville: `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`,
   },
 
-  // Real project photos from job sites
+  // Real project photos from PMI job sites
   realProjects: {
-    project1: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/12/down-net_http20241206-120-q3dobc-scaled.jpg',
-    project2: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/down-net_http20240307-89-woyogs.jpg',
-    project3: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/down-net_http20240307-93-6fpf6t-scaled.jpg',
-    project4: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/down-net_http20240307-54-iy53ay-scaled.jpg',
-    project5: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/down-net_http20240307-58-olqs35.jpg',
-    project6: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/down-net_http20240307-74-ipliqu.jpg',
-    project7: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/down-net_http20240307-92-tgelhs.jpg',
-    project8: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/01/down-net_http20231228-112-ld6g0a.jpg',
-    project9: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/01/down-net_http20240108-92-u2flmp.jpeg',
-    project10: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/01/down-net_http20240107-120-50a2n5.jpeg',
+    project1: `${PMI}/full-5d515844-6c77-47b1-9857-91064d4b047b.jpeg`, // Charlotte
+    project2: `${PMI}/full-daa76aa1-8063-4951-8df1-9c4fa0193fbf.jpeg`, // Charlotte
+    project3: `${PMI}/full-d393635e-9ef9-4029-8f0b-94665c4fc527.jpeg`, // Charlotte
+    project4: `${PMI}/full-8d86cfc6-b7b2-497c-8814-08370dd7365c.jpeg`, // Charlotte
+    project5: `${PMI}/full-7af5f870-cc77-4685-bc18-7fb52016aa47.jpeg`, // Charlotte
+    project6: `${PMI}/2025-02-26-07-08-18-c94924d4-2e1b-4743-a301-0804face18f9.jpg`, // Charlotte
+    project7: `${PMI}/2025-02-20-05-42-36-bd7fa14d-92eb-4082-a681-3b56a5cb93de.jpg`, // Charlotte
+    project8: `${PMI}/2025-02-10-07-09-07-12840e15-2a58-4ad1-9223-3b30d9eddd81.jpg`, // Charlotte
+    project9: `${PMI}/2025-01-18-08-14-52-f72962c2-ee84-4f1b-b898-e3befede8c99.jpg`, // Charlotte
+    project10: `${PMI}/2025-01-03-03-32-56-73531100-8b1e-48c1-be85-3d9477ae121a.jpg`, // Charlotte
     steelGuard: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/01/SteelGUARDPanelScene1Charcoal.jpg',
-    pmi1: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/01/PMI-Pin-already-on-map-11-Aug-22-2023-05_48pm-JDqG-scaled.jpg',
-    certainteed1: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/01/CertainTeed-Landmark-Weathered-Wood-PMI-Pin-already-on-map-PMI-CertainTeed-Landmark-5-Jul-27-2023-01_57pm-4VAg-scaled.jpg',
-    project11: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/down-net_http20240104-61-xxlpi5-scaled.jpeg',
-    project12: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/down-net_http20231227-104-4tb961-scaled.jpeg',
-    project13: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/7-Aug-17-2023-09_18am-2raW-scaled.jpg',
-    drone1: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/DJI_0138-scaled.jpg',
-    drone2: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/DJI_0602-1-scaled.jpg',
-    project14: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/down-net_http20231211-56-flzdv3.jpeg',
-    project15: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/down-net_http20231211-114-iuztoa-scaled.jpeg',
-    project16: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/down-net_http20231211-120-x59cud.jpeg',
-    project17: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/down-net_http20231211-69-g2kba2.jpeg',
-    project18: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/09/1-Aug-22-2023-05_40pm-i7DJ.jpg',
-    project19: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/4995757C-2021_09_03.jpg',
-    project20: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/4995678F-2021_09_03_1_.jpg',
-    project21: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/49955A46-2021_08_31.jpg',
-    project22: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/49954D43-2021_08_12.jpg',
-    project23: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/49953F80-2021_08_12_1_.jpg',
-    project24: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/499532C6-2021_08_12_2_.jpg',
-    project25: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/49951938-2021_08_12_4_.jpg',
-    project26: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/49950AC2-2021_08_12_5_.jpg',
-    project27: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/4994FD94-2021_08_12_6_.jpg',
-    project28: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/4994E998-2021_08_12.png',
-    project29: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/4994CDDC-2021_08_12_8_.jpg',
-    project30: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/4994BFAE-2021_08_12_9_.jpg',
+    pmi1: `${PMI}/2024-12-18-05-53-30-05df95d0-8636-48e2-ba7d-2f66de3b33e8.jpg`, // Charlotte
+    certainteed1: `${PMI}/2024-12-03-03-13-01-14b359e3-370d-4a0a-91ef-3c7b79acadfc.jpg`, // Charlotte
+    project11: `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`, // Huntersville
+    project12: `${PMI}/full-bdb1d414-6ebc-457a-8ce2-e65cd267b64d.jpeg`, // Huntersville
+    drone1: `${PMI}/full-22fa0267-3c36-4ab4-8131-f498d47c8c25.jpeg`, // Huntersville
+    drone2: `${PMI}/full-a19f5d5c-3f3e-460b-b312-f6f5dbb5b0e5.jpeg`, // Huntersville
+    project13: `${PMI}/full-76a79ab8-dc86-4c03-b8db-ac9587236449.jpeg`, // Concord
+    project14: `${PMI}/2024-05-15-02-51-18-30457b83-64a7-4a2f-ad1f-234a9eaba60b.jpg`, // Concord
+    project15: `${PMI}/full-9e7b90cb-bb7a-445e-b809-7fbc9cd21377.jpeg`, // Mooresville
+    project16: `${PMI}/full-2ea792fe-4db5-4be1-b922-bffc708eb312.jpeg`, // Mooresville
+    project17: `${PMI}/2025-01-15-01-49-06-ac388860-da9e-4997-91f7-334ecac4b044.jpg`, // Rock Hill
+    project18: `${PMI}/2024-04-16-03-28-01-5f54ec2a-0814-41f1-87e7-068ab5853e9a.jpg`, // Denver
+    project19: `${PMI}/2023-03-07-08-45-53-d8516fd9-8480-4747-bbc9-4a0a79f285c4.jpg`, // Monroe
+    project20: `${PMI}/full-b312124c-913c-4408-9882-616a23d564fe.jpeg`, // Waxhaw
+    project21: `${PMI}/full-ea89d6e0-c6e5-4e7f-a12c-cdcfe82ff104.jpeg`, // Kannapolis
+    project22: `${PMI}/full-4ef3d6d5-e970-4005-9dcf-7c415e3ea805.jpeg`, // Mount Holly
+    project23: `${PMI}/full-9b9080dd-f827-45b1-a00d-148b583d2daa.jpeg`, // Cornelius
+    project24: `${PMI}/2024-12-06-07-36-41-4106108d-4be1-47de-a8f9-80c04c77e56a.jpg`, // Davidson
+    project25: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`, // Indian Trail
+    project26: `${PMI}/2024-07-02-04-38-14-ac6ed3f5-a9ef-4b2d-91ab-a3790e5b1bb3.jpg`, // Harrisburg
+    project27: `${PMI}/full-6ae1b52a-83a6-4783-bc3f-8e272a33a059.jpeg`, // Mint Hill
+    project28: `${PMI}/full-6d141284-87ff-4aff-9c99-c918070f28bd.jpeg`, // Statesville
+    project29: `${PMI}/2024-12-13-04-43-12-202a1e47-27ef-4a61-83b0-ef49b58f2f17.jpg`, // Gastonia
+    project30: `${PMI}/2024-06-29-02-58-16-3cf62886-c208-47ee-97df-665ce9af09ad.jpg`, // Shelby
     projectMap: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/2025-03-14.png',
   },
 
-  // House exterior images
+  // House/exterior images - real PMI completed projects showing full homes
   houses: {
-    house1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-house-showing-the-full-house-4e454bdc-4e13-4d74-9224-add13e99f9a9.webp',
-    house2: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-house-showing-the-full-house-10033a46-e2ee-4cdf-8383-fb635206ff32.webp',
-    house3: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-house-showing-the-full-house-1b1c2b30-96a4-4766-b696-203ab253e1f1.webp',
-    house4: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-house-showing-the-full-ho-4061dc6b-4a43-4b1e-b190-584673427282.webp',
-    house5: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-house-showing-the-full-ho-2802bf0e-e596-4e43-89e0-e4a798e84dbc.webp',
-    modern1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-modern-home-with-a-freshly-6158cf4f-cc14-4167-801b-4f718750c19b.webp',
-    modern2: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-modern-well-9fbbed2f-ea97-41c0-8d04-1c4eff9b5920.webp',
+    house1: `${PMI}/2024-07-31-01-39-21-4ab97766-d05f-4a09-bee7-f43f3c591dae.jpg`,
+    house2: `${PMI}/2024-06-11-06-21-10-70e2a7c3-20bc-4093-9fe4-1eeb5f45fb39.jpg`,
+    house3: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`, // Dallas
+    house4: `${PMI}/2024-12-21-04-35-58-5b1c5136-6fdd-4b1f-ad37-e260afcd43f3.jpg`, // Lincolnton
+    house5: `${PMI}/2024-01-24-06-42-58-0d0dd377-3feb-4e3d-a062-2a9bb941712e.jpg`, // Albemarle
+    modern1: `${PMI}/full-201ba2bd-ceba-452a-8b80-7479889e78ca.jpeg`,
+    modern2: `${PMI}/full-5bb2b455-961a-4023-a7aa-5cf1e471c210.jpeg`,
   },
 
-  // Work in progress / Project images
+  // Work in progress / active project images from PMI
   projects: {
-    rooftop1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/an-urban-rooftop-scene-capt-2b3c2c3c-808fcbc1-e60f-4cc3-bebc-8392b611240c.webp',
-    contractor1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-professional-contractor-reviews-d-b2add5c2-924ca61b-8d04-44b7-99fe-bcd2ac22dfe3.webp',
-    contractor2: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-professionally-equipped-cont-7bfa6428-39efeccb-667c-4789-8d7e-d99ca284efef.webp',
-    closeup1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/a-detailed-close-c80bcd8d-a317-4cb8-9f14-cfe0d6f1ea41.webp',
-    stormDamage1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/Potential-Roof-Leak-After-Stormy-Wea-e78a0321-81a7-4286-9fc1-07fa2780112c.webp',
-    work1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-17-at-06.19.19_5b99dd5c.webp',
-    work2: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-17-at-06.19.19_21a807d2.webp',
-    work3: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-17-at-06.49.49_14db54f3.webp',
-    work4: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-17-at-07.02.49_319ef621.webp',
-    work5: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-17-at-06.19.19_d4ebe76f.webp',
-    work6: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-03-at-03.53.23_0e37e5f6.webp',
-    work7: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-03-at-03.53.23_1d625795.webp',
-    work8: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-03-at-03.53.23_8d968ea9.webp',
+    rooftop1: `${PMI}/full-2eabcdf5-2cc3-434f-a9f7-9d0654950e33.jpeg`,
+    contractor1: `${PMI}/full-fc50a77c-88a0-4057-b721-775da5beae84.jpeg`,
+    contractor2: `${PMI}/full-d96b1bfa-7ce3-4983-a91c-b51290552509.jpeg`,
+    closeup1: `${PMI}/full-c729c19d-0eb9-4213-b792-9bb7d6c56ffc.jpeg`,
+    stormDamage1: `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`,
+    work1: `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`,
+    work2: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
+    work3: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
+    work4: `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`,
+    work5: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
+    work6: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
+    work7: `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
+    work8: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
   },
 
-  // Professional/Marketing images
+  // Professional/Marketing images - replaced with real PMI project showcase photos
   marketing: {
-    image1: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/07/ChatGPT-Image-Apr-2-2025-04_14_24-PM.webp',
-    image2: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/Adobe-Express-file-1.webp',
-    image3: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/ChatGPT-Image-May-2-2025-09_37_05-AM.webp',
-    image4: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/ChatGPT-Image-May-2-2025-07_05_00-PM.webp',
-    image5: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/ChatGPT-Image-May-2-2025-12_50_20-PM.webp',
-    image6: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/ChatGPT-Image-May-2-2025-12_30_51-PM.webp',
-    image7: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/ChatGPT-Image-May-2-2025-09_40_15-AM.webp',
-    image8: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/ChatGPT-Image-May-2-2025-09_18_42-AM.webp',
-    image9: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/05/ChatGPT-Image-May-2-2025-09_42_34-AM.webp',
-    image10: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/ChatGPT-Image-Apr-2-2025-04_04_36-PM.webp',
-    image11: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-03_03_30-PM.webp',
-    image12: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-02_53_08-PM.webp',
-    image13: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-28-2025-10_31_28-AM.webp',
-    image14: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-28-2025-10_25_36-AM.webp',
-    image15: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-28-2025-10_22_02-AM.webp',
-    image16: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-28-2025-10_16_08-AM.webp',
-    image17: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-04_21_41-PM.webp',
-    image18: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-03_26_08-PM.webp',
-    image19: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-03_22_23-PM.webp',
-    image20: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-31-2025-02_01_53-PM.webp',
-    image21: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-28-2025-10_45_38-AM.webp',
-    image22: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-28-2025-10_57_56-AM.webp',
-    image23: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/ChatGPT-Image-Mar-28-2025-10_52_51-AM.webp',
-    image24: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-02_11_48-PM.webp',
-    image25: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/01/ChatGPT-Image-Mar-31-2025-02_07_42-PM.webp',
-    image26: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-04_29_45-PM.webp',
-    image27: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/ChatGPT-Image-Apr-2-2025-04_18_02-PM.webp',
-    image28: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/ChatGPT-Image-Apr-2-2025-04_09_33-PM.webp',
-    image29: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/03/ChatGPT-Image-Apr-2-2025-02_59_10-PM.webp',
-    image30: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-03_07_05-PM.webp',
-    image31: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/03/ChatGPT-Image-Apr-2-2025-02_05_40-PM.webp',
-    image32: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/05/ChatGPT-Image-Mar-31-2025-03_04_15-PM.webp',
-    image33: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-2-2025-02_47_00-PM.webp',
-    image34: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/ChatGPT-Image-Aug-4-2025-07_53_40-AM.png',
+    image1: `${PMI}/2024-09-04-03-58-23-ac3c5a20-6ecb-4dc2-a780-c89a09e44f4d.jpg`,
+    image2: `${PMI}/2024-08-14-07-05-04-0e6f3e6f-ae0e-4370-b5a1-ac1fe9df2f2c.jpg`,
+    image3: `${PMI}/2024-08-06-06-26-47-e9cc1df2-5c3d-4d2b-9d6e-e1fdee83a818.jpg`,
+    image4: `${PMI}/2024-07-31-01-39-21-4ab97766-d05f-4a09-bee7-f43f3c591dae.jpg`,
+    image5: `${PMI}/2024-07-16-04-41-39-daec3c1a-3e89-46e1-b2e8-a19f5f3e3c82.jpg`,
+    image6: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
+    image7: `${PMI}/2024-07-02-04-38-14-ac6ed3f5-a9ef-4b2d-91ab-a3790e5b1bb3.jpg`,
+    image8: `${PMI}/2024-06-29-02-58-16-3cf62886-c208-47ee-97df-665ce9af09ad.jpg`,
+    image9: `${PMI}/2024-06-11-06-21-10-70e2a7c3-20bc-4093-9fe4-1eeb5f45fb39.jpg`,
+    image10: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`,
+    image11: `${PMI}/2024-05-17-06-53-49-106727f5-6597-4311-af3f-39fa31609843.jpg`,
+    image12: `${PMI}/2024-05-15-02-51-18-30457b83-64a7-4a2f-ad1f-234a9eaba60b.jpg`,
+    image13: `${PMI}/2024-04-16-03-28-01-5f54ec2a-0814-41f1-87e7-068ab5853e9a.jpg`,
+    image14: `${PMI}/2024-12-21-04-35-58-5b1c5136-6fdd-4b1f-ad37-e260afcd43f3.jpg`,
+    image15: `${PMI}/2024-12-18-05-53-30-05df95d0-8636-48e2-ba7d-2f66de3b33e8.jpg`,
+    image16: `${PMI}/2024-12-13-04-43-12-202a1e47-27ef-4a61-83b0-ef49b58f2f17.jpg`,
+    image17: `${PMI}/2024-12-06-07-36-41-4106108d-4be1-47de-a8f9-80c04c77e56a.jpg`,
+    image18: `${PMI}/2024-12-03-03-13-01-14b359e3-370d-4a0a-91ef-3c7b79acadfc.jpg`,
+    image19: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
+    image20: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
+    image21: `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
+    image22: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+    image23: `${PMI}/2024-01-24-06-42-58-0d0dd377-3feb-4e3d-a062-2a9bb941712e.jpg`,
+    image24: `${PMI}/2023-08-23-05-23-53-b874c86e-12de-4359-b43a-2ba908468e3e.jpg`,
+    image25: `${PMI}/2023-07-07-06-53-53-4072732b-c62b-4619-a0d9-4cc49af7315d.jpg`,
+    image26: `${PMI}/2023-01-31-07-01-20-e692a087-a476-439a-ab8a-3611fdfbaceb.jpg`,
+    image27: `${PMI}/2023-01-25-12-44-11-466dcbf0-e3e9-43df-9a14-9c3adba80241.jpg`,
+    image28: `${PMI}/2023-01-15-02-29-32-fc1b5449-7896-4132-b6db-f65be731fb83.jpg`,
+    image29: `${PMI}/2023-01-06-02-16-42-584cf13e-1391-41b2-9b8a-ef37380858b2.jpg`,
+    image30: `${PMI}/2023-01-05-11-50-16-878bdef9-910b-4683-8d19-cbbc41df0999.jpg`,
+    image31: `${PMI}/full-fc306978-96e3-4791-bd0c-61f3be1bca14.jpeg`,
+    image32: `${PMI}/full-607b6541-c151-49b9-8c73-fe9f92252f19.jpeg`,
+    image33: `${PMI}/full-e1fc389a-408b-4c64-9991-60f8478c2253.jpeg`,
+    image34: `${PMI}/full-d7e1b93a-e0f7-4b14-99c7-e95f56ed475c.jpeg`,
   },
 
-  // Miscellaneous images
+  // Miscellaneous images - keep branded assets
   misc: {
-    output1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/08/output1.png',
+    output1: `${PMI}/full-f412b906-b8c1-4e7d-9c68-50a6695a76da.jpeg`,
     lknConnect: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/lkn-connect-01.webp',
     digitalJournal: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/Digital-Journal-logo-removebg-preview.webp',
-    design1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/Untitled-design-1.webp',
-    design2: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/04/Untitled-design.webp',
-    qtq: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/03/qtq80-NBatSl.jpeg',
+    design1: `${PMI}/full-4ebe8cc6-e668-4066-92ad-6ccee8763dc7.jpeg`,
+    design2: `${PMI}/full-9f7b0a2b-6d6c-4754-ab4c-9819c35f1d02.jpeg`,
+    qtq: `${PMI}/full-4864ac50-76be-4e99-8768-209d54235119.jpeg`,
   },
 
-  // Before/After Images
+  // Before/After Images - keep these specific comparison shots
   beforeAfter: {
     sidingRepair: {
       after: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/siding-repair-after.png',
@@ -192,29 +193,29 @@ export const IMAGES = {
     general: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Before-and-after-1.png',
   },
 
-  // Service Images
+  // Service Images - mix of PMI photos and kept specialty images
   services: {
-    residential: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp',
+    residential: `${PMI}/full-5d515844-6c77-47b1-9857-91064d4b047b.jpeg`,
     commercial: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Office-Buildings-and-Complexes.webp',
-    repairs: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/siding-repair-after.png',
-    replacement: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/metalroofnew.png',
+    repairs: `${PMI}/full-c729c19d-0eb9-4213-b792-9bb7d6c56ffc.jpeg`,
+    replacement: `${PMI}/full-daa76aa1-8063-4951-8df1-9c4fa0193fbf.jpeg`,
     inspection: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Visual-Roof-Inspection.png',
-    emergency: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/fallen-debris-or-tree-branches-67b34de7299c5.webp',
-    stormDamage: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/fallen-debris-or-tree-branches-67b34de7299c5.webp',
+    emergency: `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`,
+    stormDamage: `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`,
     gutters: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/the-gutter-guard-brush-67b34a7bc0afd.webp',
     siding: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/commercial-siding-cleaning-roofing-after-.webp',
     droneInspection: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Drone-Inspections.webp',
     coreSampling: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Core-Sampling-1-.webp',
   },
 
-  // Cleaning Services
+  // Cleaning Services - keep specific service photos
   cleaning: {
     chemical: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/chemical-roof-cleaning-67b34c04b5e2c.webp',
     pressure: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/pressure-washing-roof-67b34b914940d.webp',
     softWash: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/soft-washing-low-pressure-cleaning-67b34b57d0984.webp',
   },
 
-  // Commercial Property Types
+  // Commercial Property Types - keep specific property type images
   commercial: {
     office: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Office-Buildings-and-Complexes.webp',
     warehouse: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Warehouses-and-Industrial-Facilities.webp',
@@ -224,13 +225,13 @@ export const IMAGES = {
     flatRoof: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Commercial-flat-roofing-Before-and-after-after.webp',
   },
 
-  // Problem Signs
+  // Problem Signs - keep specific diagnostic images
   problems: {
     mold: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Visible-Mold-or-Mildew-.webp',
     peeling: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Peeling-Paint-or-Fading-Color-.webp',
     energyBills: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Increased-Energy-Bills-.webp',
     crackedSiding: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Cracked-Warped-or-Buckled-Siding-.webp',
-    stormDamage: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/fallen-debris-or-tree-branches-67b34de7299c5.webp',
+    stormDamage: `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`,
   },
 
   // Products
@@ -243,29 +244,29 @@ export const IMAGES = {
     serviceAreaMap: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/service-area-map-lg-67b34d012a03f-1.webp',
   },
 
-  // Team/Work Images
+  // Team/Work Images - keep personal/branded team photos
   team: {
     roofCrew1: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp',
     roofCrew2: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/menonroof.png',
-    work1: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/11/output1.png',
+    work1: `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`,
     jamesAndFred: 'https://cms.bestroofingnow.com/wp-content/uploads/2024/10/jamesanddad-768x1151.jpg.webp',
     teamPhoto: 'https://cms.bestroofingnow.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-14-at-8.23.58-AM-1.jpeg',
   },
 
-  // Recent Instagram/Social Images (generic roofing work)
+  // Gallery - Real PMI project photos from across all service areas
   gallery: [
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/DLXVkO7aNYj.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/vdbsw9QYW9R.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/If_KjGbO0_B.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/TZyY6qVVc2j.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/UjFdmBPi8Yt.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/11/9FDRVxQC6Vm.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/11/fkCW7nq3Gtu.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/11/H4zRMW-PcxJ.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/11/fSDixVeP_fm.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/11/9as744D-Ckm.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/11/Kag_oo5mcrP.webp',
-    'https://cms.bestroofingnow.com/wp-content/uploads/2025/11/2RHDpUSmuO4.webp',
+    `${PMI}/full-5d515844-6c77-47b1-9857-91064d4b047b.jpeg`, // Charlotte
+    `${PMI}/full-af1cdaca-8315-4f94-9e05-5b0a3b588e91.jpeg`, // Charlotte
+    `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`, // Huntersville
+    `${PMI}/full-76a79ab8-dc86-4c03-b8db-ac9587236449.jpeg`, // Concord
+    `${PMI}/full-9e7b90cb-bb7a-445e-b809-7fbc9cd21377.jpeg`, // Mooresville
+    `${PMI}/2025-01-15-01-49-06-ac388860-da9e-4997-91f7-334ecac4b044.jpg`, // Rock Hill
+    `${PMI}/2024-04-16-03-28-01-5f54ec2a-0814-41f1-87e7-068ab5853e9a.jpg`, // Denver
+    `${PMI}/full-b312124c-913c-4408-9882-616a23d564fe.jpeg`, // Waxhaw
+    `${PMI}/full-ea89d6e0-c6e5-4e7f-a12c-cdcfe82ff104.jpeg`, // Kannapolis
+    `${PMI}/full-4ef3d6d5-e970-4005-9dcf-7c415e3ea805.jpeg`, // Mount Holly
+    `${PMI}/full-9b9080dd-f827-45b1-a00d-148b583d2daa.jpeg`, // Cornelius
+    `${PMI}/full-6ae1b52a-83a6-4783-bc3f-8e272a33a059.jpeg`, // Mint Hill
   ],
 };
 
@@ -301,7 +302,7 @@ export function getRandomProjectImage(): string {
   return projectImages[Math.floor(Math.random() * projectImages.length)];
 }
 
-// Image sets for specific pages - using unique images only
+// Image sets for specific pages - using real PMI project photos
 export const PAGE_IMAGES = {
   home: {
     hero: IMAGES.hero.roofTeam,
@@ -383,7 +384,7 @@ export const PAGE_IMAGES = {
   },
 };
 
-// Service-specific hero images mapping
+// Service-specific hero images mapping - all real PMI project photos
 export const SERVICE_HERO_IMAGES: Record<string, string> = {
   'residential-roofing': IMAGES.hero.hero1,
   'commercial-roofing': IMAGES.hero.hero2,
@@ -514,66 +515,65 @@ export const WIKIMEDIA_CITY_IMAGES: Record<string, string> = {
   'lancaster-sc': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Downtown_Rock_Hill%2C_SC.jpg/1280px-Downtown_Rock_Hill%2C_SC.jpg',
 };
 
-// Location-specific hero images (using full slugs to match URL paths)
-// Uses real project photos and house images - no text overlays
+// Location-specific hero images - real PMI project photos by city
 export const LOCATION_HERO_IMAGES: Record<string, string> = {
   // Charlotte - custom video
   'charlotte-nc': 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-10.mp4',
 
-  // Primary Charlotte metro - use real project photos
-  'huntersville-nc': IMAGES.realProjects.certainteed1, // CertainTeed Landmark shingles
-  'cornelius-nc': IMAGES.realProjects.drone1, // Drone shot of completed roof
-  'davidson-nc': IMAGES.realProjects.project13, // Completed roof project
-  'mooresville-nc': IMAGES.realProjects.drone2, // Drone aerial view
-  'matthews-nc': IMAGES.realProjects.pmi1, // PMI project photo
-  'mint-hill-nc': IMAGES.realProjects.project1, // Recent project photo
-  'pineville-nc': IMAGES.realProjects.project2, // Project photo
+  // Primary Charlotte metro - real PMI project photos
+  'huntersville-nc': `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`,
+  'cornelius-nc': `${PMI}/full-9b9080dd-f827-45b1-a00d-148b583d2daa.jpeg`,
+  'davidson-nc': `${PMI}/2024-12-06-07-36-41-4106108d-4be1-47de-a8f9-80c04c77e56a.jpg`,
+  'mooresville-nc': `${PMI}/full-9e7b90cb-bb7a-445e-b809-7fbc9cd21377.jpeg`,
+  'matthews-nc': `${PMI}/full-8d86cfc6-b7b2-497c-8814-08370dd7365c.jpeg`,
+  'mint-hill-nc': `${PMI}/full-6ae1b52a-83a6-4783-bc3f-8e272a33a059.jpeg`,
+  'pineville-nc': `${PMI}/2023-07-07-06-53-53-4072732b-c62b-4619-a0d9-4cc49af7315d.jpg`,
 
   // Cabarrus County
-  'concord-nc': IMAGES.realProjects.project3, // Project photo
-  'kannapolis-nc': IMAGES.realProjects.project4, // Project photo
-  'harrisburg-nc': IMAGES.realProjects.project5, // Project photo
+  'concord-nc': `${PMI}/full-76a79ab8-dc86-4c03-b8db-ac9587236449.jpeg`,
+  'kannapolis-nc': `${PMI}/full-ea89d6e0-c6e5-4e7f-a12c-cdcfe82ff104.jpeg`,
+  'harrisburg-nc': `${PMI}/2024-07-02-04-38-14-ac6ed3f5-a9ef-4b2d-91ab-a3790e5b1bb3.jpg`,
 
   // Union County
-  'monroe-nc': IMAGES.realProjects.project6, // Project photo
-  'indian-trail-nc': IMAGES.realProjects.project7, // Project photo
-  'waxhaw-nc': IMAGES.realProjects.project8, // Project photo
-  'stallings-nc': IMAGES.realProjects.project9, // Project photo
-  'weddington-nc': IMAGES.realProjects.project10, // Project photo
-  'marvin-nc': IMAGES.realProjects.project11, // Project photo
-  'wesley-chapel-nc': IMAGES.realProjects.project12, // Project photo
+  'monroe-nc': `${PMI}/2023-03-07-08-45-53-d8516fd9-8480-4747-bbc9-4a0a79f285c4.jpg`,
+  'indian-trail-nc': `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
+  'waxhaw-nc': `${PMI}/full-b312124c-913c-4408-9882-616a23d564fe.jpeg`,
+  'stallings-nc': `${PMI}/2024-09-04-03-58-23-ac3c5a20-6ecb-4dc2-a780-c89a09e44f4d.jpg`,
+  'weddington-nc': `${PMI}/2024-08-14-07-05-04-0e6f3e6f-ae0e-4370-b5a1-ac1fe9df2f2c.jpg`,
+  'marvin-nc': `${PMI}/2024-08-06-06-26-47-e9cc1df2-5c3d-4d2b-9d6e-e1fdee83a818.jpg`,
+  'wesley-chapel-nc': `${PMI}/2024-07-16-04-41-39-daec3c1a-3e89-46e1-b2e8-a19f5f3e3c82.jpg`,
 
   // Gaston County
-  'gastonia-nc': IMAGES.realProjects.project14, // Project photo
-  'mt-holly-nc': IMAGES.realProjects.project15, // Project photo
-  'belmont-nc': IMAGES.realProjects.project16, // Project photo
-  'kings-mountain-nc': IMAGES.realProjects.project17, // Project photo
+  'gastonia-nc': `${PMI}/2024-12-13-04-43-12-202a1e47-27ef-4a61-83b0-ef49b58f2f17.jpg`,
+  'mt-holly-nc': `${PMI}/full-4ef3d6d5-e970-4005-9dcf-7c415e3ea805.jpeg`,
+  'belmont-nc': `${PMI}/full-f412b906-b8c1-4e7d-9c68-50a6695a76da.jpeg`,
+  'kings-mountain-nc': `${PMI}/full-4ebe8cc6-e668-4066-92ad-6ccee8763dc7.jpeg`,
 
   // Lincoln County / Lake Norman area
-  'lake-norman': IMAGES.realProjects.project18, // Project photo
-  'denver-nc': IMAGES.realProjects.project19, // Project photo
-  'lincolnton-nc': IMAGES.realProjects.project20, // Project photo
+  'lake-norman': `${PMI}/full-2ea792fe-4db5-4be1-b922-bffc708eb312.jpeg`,
+  'denver-nc': `${PMI}/2024-04-16-03-28-01-5f54ec2a-0814-41f1-87e7-068ab5853e9a.jpg`,
+  'lincolnton-nc': `${PMI}/2024-12-21-04-35-58-5b1c5136-6fdd-4b1f-ad37-e260afcd43f3.jpg`,
 
   // Iredell County
-  'statesville-nc': IMAGES.realProjects.project21, // Project photo
+  'statesville-nc': `${PMI}/full-6d141284-87ff-4aff-9c99-c918070f28bd.jpeg`,
 
   // Catawba County
-  'hickory-nc': IMAGES.realProjects.project22, // Project photo
-  'newton-nc': IMAGES.realProjects.project23, // Project photo
+  'hickory-nc': `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
+  'newton-nc': `${PMI}/2023-01-05-11-50-16-878bdef9-910b-4683-8d19-cbbc41df0999.jpg`,
 
   // Other NC counties
-  'albemarle-nc': IMAGES.realProjects.project24, // Project photo
-  'shelby-nc': IMAGES.realProjects.project25, // Project photo
+  'albemarle-nc': `${PMI}/2024-01-24-06-42-58-0d0dd377-3feb-4e3d-a062-2a9bb941712e.jpg`,
+  'shelby-nc': `${PMI}/2024-06-29-02-58-16-3cf62886-c208-47ee-97df-665ce9af09ad.jpg`,
 
   // South Carolina - York County
-  'rock-hill-sc': IMAGES.realProjects.project26, // Project photo
-  'fort-mill-sc': IMAGES.realProjects.project27, // Project photo
-  'tega-cay-sc': IMAGES.realProjects.project28, // Project photo
+  'rock-hill-sc': `${PMI}/2025-01-15-01-49-06-ac388860-da9e-4997-91f7-334ecac4b044.jpg`,
+  'fort-mill-sc': `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
+  'tega-cay-sc': `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
 
   // South Carolina - Lancaster County
-  'indian-land-sc': IMAGES.realProjects.project29, // Project photo
-  'lancaster-sc': IMAGES.realProjects.project30, // Project photo
+  'indian-land-sc': `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+  'lancaster-sc': `${PMI}/2024-05-17-06-53-49-106727f5-6597-4311-af3f-39fa31609843.jpg`,
 
-  // Default fallback - house with visible roof
+  // Default fallback
   'default': IMAGES.houses.house1,
 };
