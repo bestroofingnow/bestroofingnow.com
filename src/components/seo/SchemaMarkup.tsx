@@ -1,5 +1,9 @@
 import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS, HOWTO_CONTENT, AI_CITATION_CONTENT, FEATURED_SNIPPET_CONTENT } from '@/lib/constants';
 
+// Canonical image URLs for schema markup - using real CMS-hosted images
+const SCHEMA_LOGO = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+const SCHEMA_HERO = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp';
+
 // Local Business Schema for the main site - Enhanced for Map Pack ranking
 // includeRating: only set to true on pages that display visible reviews/ratings (homepage, reviews, service pages)
 // Google penalizes aggregateRating on pages without visible review content
@@ -33,10 +37,10 @@ export function LocalBusinessSchema({ includeRating = false }: { includeRating?:
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     foundingDate: SITE_CONFIG.founded,
-    logo: `${SITE_CONFIG.url}/images/logo.png`,
+    logo: SCHEMA_LOGO,
     image: [
-      `${SITE_CONFIG.url}/images/logo.png`,
-      `${SITE_CONFIG.url}/images/hero-roofing.jpg`,
+      SCHEMA_LOGO,
+      SCHEMA_HERO,
     ],
     address: {
       '@type': 'PostalAddress',
@@ -201,9 +205,10 @@ interface ServiceSchemaProps {
     description: string;
     slug: string;
   };
+  includeRating?: boolean;
 }
 
-export function ServiceSchema({ service }: ServiceSchemaProps) {
+export function ServiceSchema({ service, includeRating = false }: ServiceSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -221,13 +226,16 @@ export function ServiceSchema({ service }: ServiceSchemaProps) {
       name: `${loc.city}, ${loc.state}`,
     })),
     serviceType: service.title,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: SITE_CONFIG.googleRating,
-      reviewCount: SITE_CONFIG.googleReviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
+    // Only include aggregateRating on pages that display visible reviews/ratings
+    ...(includeRating ? {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: SITE_CONFIG.googleRating,
+        reviewCount: SITE_CONFIG.googleReviewCount,
+        bestRating: 5,
+        worstRating: 1,
+      },
+    } : {}),
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
@@ -459,10 +467,10 @@ export function ArticleSchema({ post }: ArticleSchemaProps) {
       name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_CONFIG.url}/images/logo.png`,
+        url: SCHEMA_LOGO,
       },
     },
-    image: post.image || `${SITE_CONFIG.url}/images/blog-default.jpg`,
+    image: post.image || SCHEMA_HERO,
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${SITE_CONFIG.url}/blog/${post.slug}`,
@@ -581,8 +589,8 @@ export function FreeInspectionOfferSchema() {
     price: '0',
     priceCurrency: 'USD',
     availability: 'https://schema.org/InStock',
-    validFrom: '2025-01-01',
-    priceValidUntil: '2026-12-31',
+    validFrom: `${new Date().getFullYear()}-01-01`,
+    priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
     itemOffered: {
       '@type': 'Service',
       name: 'Professional Roof Inspection',
@@ -618,19 +626,19 @@ export function ReviewsSchema() {
       author: 'Sarah M.',
       rating: 5,
       text: 'We dealt with Banning and James both were quick to respond and extremely helpful. They were able to get the insurance company to cover all the repairs and a whole new roof.',
-      date: '2024-10-15',
+      date: '2025-10-15',
     },
     {
       author: 'Mike T.',
       rating: 5,
       text: 'Best Roofing Now is exactly what their name says - the best! James was honest about what we needed and did not try to upsell us.',
-      date: '2024-09-22',
+      date: '2025-11-22',
     },
     {
       author: 'Jennifer L.',
       rating: 5,
       text: 'After a bad storm damaged our roof, we called several companies. Best Roofing Now was the only one who did not try to scare us into buying more than we needed.',
-      date: '2024-08-18',
+      date: '2025-12-18',
     },
   ];
 
@@ -1756,7 +1764,7 @@ export function VideoObjectSchema({
       name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_CONFIG.url}/images/logo.png`,
+        url: SCHEMA_LOGO,
       },
     },
     potentialAction: {
@@ -2488,10 +2496,10 @@ export function PrimaryLocationSchema() {
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     foundingDate: SITE_CONFIG.founded,
-    logo: `${SITE_CONFIG.url}/images/logo.png`,
+    logo: SCHEMA_LOGO,
     image: [
-      `${SITE_CONFIG.url}/images/logo.png`,
-      `${SITE_CONFIG.url}/images/hero-roofing.jpg`,
+      SCHEMA_LOGO,
+      SCHEMA_HERO,
     ],
     address: {
       '@type': 'PostalAddress',

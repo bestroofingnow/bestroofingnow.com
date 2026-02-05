@@ -104,7 +104,14 @@
       "Bash(fi)",
       "Bash(xargs:*)",
       "Bash(powershell:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "Bash(git -c commit.gpgsign=false commit -m \"$\\(cat <<''EOF''\nAdd geo-tagged project images with structured data across 130+ pages\n\nDisperse PMI project photos throughout the site with geo-enriched alt text,\nSchema.org ImageObject structured data with contentLocation/GeoCoordinates,\nand city-filtered image galleries. Homepage and main service area pages show\nonly new-roof and before-after images; all other pages show any project type.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(while read f)",
+      "Bash(do if ! grep -q \"GeoProjectGalleryStrip\" \"$f\")",
+      "Bash(then echo \"$f\")",
+      "Bash(echo:*)",
+      "Bash(python:*)",
+      "Bash(wc:*)"
     ]
   }
 }
