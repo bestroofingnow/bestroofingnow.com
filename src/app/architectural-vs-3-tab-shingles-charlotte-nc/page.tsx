@@ -14,6 +14,7 @@ import {
   Wind,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -389,6 +390,16 @@ export default function ArchitecturalVs3TabShinglesPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="other"
+        city="Charlotte"
+        slug="architectural-vs-3-tab-shingles-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/architectural-vs-3-tab-shingles-charlotte-nc`}
+      />
 
       {/* CTA Section */}
       <CTASection

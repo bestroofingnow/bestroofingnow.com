@@ -44,6 +44,11 @@ const KNOWN_ROUTES = new Set([
   'admin',
   // Ad landing pages
   'free-roof-inspection',
+  // Pillar content hub pages
+  'charlotte-roofing-handbook',
+  'roof-repair-vs-replacement-charlotte-nc',
+  'charlotte-storm-season-roof-guide',
+  'charlotte-roofing-costs-2026',
   // System routes
   'api',
   '_next',

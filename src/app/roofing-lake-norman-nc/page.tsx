@@ -19,6 +19,7 @@ import {
   Truck,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -551,6 +552,16 @@ export default async function LakeNormanRoofingPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="roofing-lake-norman-nc"
+        count={4}
+        title="Recent Roofing Projects in Lake Norman, NC"
+        subtitle="Browse completed roofing projects from the Lake Norman area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`}
+      />
 
       <CTASection
         title="Ready for Your Lake Norman Roofing Project?"

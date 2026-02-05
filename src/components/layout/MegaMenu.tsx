@@ -29,6 +29,9 @@ import {
   Hammer,
   Factory,
   Warehouse,
+  BookOpen,
+  DollarSign,
+  Scale,
 } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS, ROOFING_MATERIALS, ROOFING_BRANDS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
@@ -667,6 +670,103 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
                   onClick={() => setActiveMenu(null)}
                 >
                   Browse All Materials & Products <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Guides Mega Menu */}
+      <div
+        className="relative"
+        onMouseEnter={() => handleMouseEnter('guides')}
+        onMouseLeave={handleMouseLeave}
+      >
+        <button
+          type="button"
+          className={cn(
+            'flex items-center gap-1 px-4 py-2 text-dark font-medium rounded-lg',
+            'hover:bg-light hover:text-primary transition-colors',
+            activeMenu === 'guides' && 'bg-light text-primary'
+          )}
+          aria-haspopup="true"
+          aria-expanded={activeMenu === 'guides'}
+        >
+          Guides
+          <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'guides' && 'rotate-180')} aria-hidden="true" />
+        </button>
+
+        {activeMenu === 'guides' && (
+          <div className="absolute top-full right-0 pt-2 z-50">
+            <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 w-[420px] max-w-[calc(100vw-2rem)] animate-fade-in">
+              <h3 className="text-xs font-bold text-gray uppercase tracking-wider mb-3 flex items-center gap-1">
+                <BookOpen className="w-3 h-3" />
+                Charlotte Roofing Guides
+              </h3>
+              <ul className="space-y-1">
+                <li>
+                  <Link
+                    href="/charlotte-roofing-handbook"
+                    className="flex items-center gap-3 px-3 py-2.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    <BookOpen className="w-4 h-4 text-primary flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Roofing Handbook</div>
+                      <div className="text-xs text-gray">Complete homeowner guide for 2026</div>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/roof-repair-vs-replacement-charlotte-nc"
+                    className="flex items-center gap-3 px-3 py-2.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    <Scale className="w-4 h-4 text-primary flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Repair vs. Replacement</div>
+                      <div className="text-xs text-gray">Make the right decision for your roof</div>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/charlotte-storm-season-roof-guide"
+                    className="flex items-center gap-3 px-3 py-2.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    <CloudRain className="w-4 h-4 text-primary flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Storm Protection Guide</div>
+                      <div className="text-xs text-gray">Before, during & after the storm</div>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/charlotte-roofing-costs-2026"
+                    className="flex items-center gap-3 px-3 py-2.5 text-sm text-dark rounded-lg hover:bg-light hover:text-primary transition-colors"
+                    onClick={() => setActiveMenu(null)}
+                  >
+                    <DollarSign className="w-4 h-4 text-primary flex-shrink-0" />
+                    <div>
+                      <div className="font-medium">Pricing Guide (2026)</div>
+                      <div className="text-xs text-gray">Charlotte roofing costs & estimates</div>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+
+              {/* Bottom Link */}
+              <div className="mt-4 pt-3 border-t border-gray-100">
+                <Link
+                  href="/guides"
+                  className="text-primary text-sm font-semibold hover:text-accent transition-colors flex items-center gap-1"
+                  onClick={() => setActiveMenu(null)}
+                >
+                  Browse All Guides <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>

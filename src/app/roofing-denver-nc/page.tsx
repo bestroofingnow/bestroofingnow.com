@@ -20,6 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -534,6 +535,16 @@ export default function RoofingDenverNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="roofing-denver-nc"
+        count={4}
+        title="Recent Roofing Projects in Denver, NC"
+        subtitle="Browse completed roofing projects from the Denver area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-denver-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -716,6 +717,16 @@ export default function RoofInspectionCharlottePage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roof-inspection-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roof-inspection-charlotte-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

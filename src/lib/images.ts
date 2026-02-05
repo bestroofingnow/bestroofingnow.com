@@ -577,3 +577,648 @@ export const LOCATION_HERO_IMAGES: Record<string, string> = {
   // Default fallback
   'default': IMAGES.houses.house1,
 };
+
+// --- Geo-Tagged Image System ---
+
+export type ProjectType = 'new-roof' | 'repair' | 'before-after' | 'storm-damage' | 'work-in-progress' | 'completed-exterior';
+
+export interface GeoTaggedImage {
+  url: string;
+  city: string;
+  state: string;
+  neighborhood?: string;
+  lat: number;
+  lng: number;
+  projectType: ProjectType;
+  materialType?: string;
+  roofType?: 'residential' | 'commercial';
+  description: string;
+}
+
+export const CITY_COORDINATES: Record<string, { lat: number; lng: number }> = {
+  'Charlotte': { lat: 35.2271, lng: -80.8431 },
+  'Huntersville': { lat: 35.4107, lng: -80.8429 },
+  'Cornelius': { lat: 35.4868, lng: -80.8601 },
+  'Davidson': { lat: 35.4993, lng: -80.8487 },
+  'Mooresville': { lat: 35.5849, lng: -80.8101 },
+  'Concord': { lat: 35.4088, lng: -80.5795 },
+  'Kannapolis': { lat: 35.4874, lng: -80.6217 },
+  'Harrisburg': { lat: 35.3240, lng: -80.6537 },
+  'Matthews': { lat: 35.1168, lng: -80.7237 },
+  'Mint Hill': { lat: 35.1793, lng: -80.6473 },
+  'Pineville': { lat: 35.0832, lng: -80.8923 },
+  'Monroe': { lat: 34.9854, lng: -80.5495 },
+  'Indian Trail': { lat: 35.0768, lng: -80.6690 },
+  'Waxhaw': { lat: 34.9243, lng: -80.7434 },
+  'Stallings': { lat: 35.0902, lng: -80.6862 },
+  'Weddington': { lat: 35.0221, lng: -80.7605 },
+  'Marvin': { lat: 34.9921, lng: -80.8134 },
+  'Wesley Chapel': { lat: 35.0071, lng: -80.6740 },
+  'Gastonia': { lat: 35.2621, lng: -81.1873 },
+  'Mount Holly': { lat: 35.2979, lng: -81.0156 },
+  'Belmont': { lat: 35.2430, lng: -81.0390 },
+  'Kings Mountain': { lat: 35.2451, lng: -81.3412 },
+  'Denver': { lat: 35.5318, lng: -81.0298 },
+  'Lincolnton': { lat: 35.4735, lng: -81.2545 },
+  'Statesville': { lat: 35.7826, lng: -80.8873 },
+  'Hickory': { lat: 35.7332, lng: -81.3412 },
+  'Newton': { lat: 35.6699, lng: -81.2215 },
+  'Albemarle': { lat: 35.3501, lng: -80.2001 },
+  'Shelby': { lat: 35.2924, lng: -81.5357 },
+  'Dallas': { lat: 35.3165, lng: -81.1762 },
+  'Rock Hill': { lat: 34.9249, lng: -81.0251 },
+  'Fort Mill': { lat: 35.0074, lng: -80.9451 },
+  'Tega Cay': { lat: 35.0240, lng: -81.0279 },
+  'Indian Land': { lat: 34.9571, lng: -80.8923 },
+  'Lancaster': { lat: 34.7204, lng: -80.7707 },
+};
+
+export const PROJECT_IMAGES: GeoTaggedImage[] = [
+  // Charlotte - New Roof Projects (hero/realProjects)
+  {
+    url: `${PMI}/full-5d515844-6c77-47b1-9857-91064d4b047b.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new asphalt shingle roof installation on residential home',
+  },
+  {
+    url: `${PMI}/full-daa76aa1-8063-4951-8df1-9c4fa0193fbf.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed residential roof replacement with architectural shingles',
+  },
+  {
+    url: `${PMI}/full-d393635e-9ef9-4029-8f0b-94665c4fc527.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'professional roof replacement on Charlotte family home',
+  },
+  {
+    url: `${PMI}/full-8d86cfc6-b7b2-497c-8814-08370dd7365c.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new architectural shingle roof on Charlotte residence',
+  },
+  {
+    url: `${PMI}/full-7af5f870-cc77-4685-bc18-7fb52016aa47.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed roof replacement project in Charlotte neighborhood',
+  },
+  {
+    url: `${PMI}/2025-02-26-07-08-18-c94924d4-2e1b-4743-a301-0804face18f9.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'recent roof installation completed in Charlotte',
+  },
+  {
+    url: `${PMI}/2025-02-20-05-42-36-bd7fa14d-92eb-4082-a681-3b56a5cb93de.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new residential roof with premium shingles in Charlotte',
+  },
+  {
+    url: `${PMI}/2025-02-10-07-09-07-12840e15-2a58-4ad1-9223-3b30d9eddd81.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'full roof replacement on Charlotte home',
+  },
+  {
+    url: `${PMI}/2025-01-18-08-14-52-f72962c2-ee84-4f1b-b898-e3befede8c99.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation with quality craftsmanship in Charlotte',
+  },
+  {
+    url: `${PMI}/2025-01-03-03-32-56-73531100-8b1e-48c1-be85-3d9477ae121a.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed residential roofing project in Charlotte area',
+  },
+  {
+    url: `${PMI}/2024-12-18-05-53-30-05df95d0-8636-48e2-ba7d-2f66de3b33e8.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'roof replacement with CertainTeed shingles in Charlotte',
+    materialType: 'CertainTeed',
+  },
+  {
+    url: `${PMI}/2024-12-03-03-13-01-14b359e3-370d-4a0a-91ef-3c7b79acadfc.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'CertainTeed certified roof installation in Charlotte',
+    materialType: 'CertainTeed',
+  },
+
+  // Charlotte - Neighborhood Projects
+  {
+    url: `${PMI}/full-af1cdaca-8315-4f94-9e05-5b0a3b588e91.jpeg`,
+    city: 'Charlotte', state: 'NC', neighborhood: 'Myers Park', lat: 35.1879, lng: -80.8271,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof on Myers Park historic home',
+  },
+  {
+    url: `${PMI}/full-40bd23bc-59d4-4ae3-a757-c42b52459a8a.jpeg`,
+    city: 'Charlotte', state: 'NC', neighborhood: 'Dilworth', lat: 35.2062, lng: -80.8565,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'roof replacement on Dilworth bungalow',
+  },
+  {
+    url: `${PMI}/full-6b7e1389-a7a4-4a08-a2b6-d00552db0178.jpeg`,
+    city: 'Charlotte', state: 'NC', neighborhood: 'NoDa', lat: 35.2471, lng: -80.8184,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation in NoDa arts district',
+  },
+  {
+    url: `${PMI}/full-b0072c41-1c34-4de0-bd42-34b19810447f.jpeg`,
+    city: 'Charlotte', state: 'NC', neighborhood: 'Plaza Midwood', lat: 35.2218, lng: -80.8047,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'residential roof project in Plaza Midwood',
+  },
+  {
+    url: `${PMI}/full-97b948ed-f10e-421f-8772-2013fd9e8f38.jpeg`,
+    city: 'Charlotte', state: 'NC', neighborhood: 'Cotswold', lat: 35.1853, lng: -80.7987,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new shingle roof on Cotswold home',
+  },
+  {
+    url: `${PMI}/full-48a95f36-bac5-4f52-a4a7-4cd3191119ff.jpeg`,
+    city: 'Charlotte', state: 'NC', neighborhood: 'Elizabeth', lat: 35.2098, lng: -80.8263,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'roof replacement in Elizabeth neighborhood',
+  },
+
+  // Charlotte - Completed Exterior Views (houses)
+  {
+    url: `${PMI}/2024-07-31-01-39-21-4ab97766-d05f-4a09-bee7-f43f3c591dae.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'completed-exterior', roofType: 'residential',
+    description: 'completed home exterior with new roof in Charlotte',
+  },
+  {
+    url: `${PMI}/2024-06-11-06-21-10-70e2a7c3-20bc-4093-9fe4-1eeb5f45fb39.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'completed-exterior', roofType: 'residential',
+    description: 'beautiful home with professionally installed new roof',
+  },
+  {
+    url: `${PMI}/full-201ba2bd-ceba-452a-8b80-7479889e78ca.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'completed-exterior', roofType: 'residential',
+    description: 'modern home exterior showing completed roof project',
+  },
+  {
+    url: `${PMI}/full-5bb2b455-961a-4023-a7aa-5cf1e471c210.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'completed-exterior', roofType: 'residential',
+    description: 'contemporary home with new roofing system installed',
+  },
+
+  // Charlotte - Work in Progress
+  {
+    url: `${PMI}/full-2eabcdf5-2cc3-434f-a9f7-9d0654950e33.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'roofing crew working on residential roof replacement',
+  },
+  {
+    url: `${PMI}/full-fc50a77c-88a0-4057-b721-775da5beae84.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'professional roofing contractor installing shingles',
+  },
+  {
+    url: `${PMI}/full-d96b1bfa-7ce3-4983-a91c-b51290552509.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'experienced roofing team at work on Charlotte home',
+  },
+  {
+    url: `${PMI}/full-c729c19d-0eb9-4213-b792-9bb7d6c56ffc.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'repair', roofType: 'residential',
+    description: 'close-up of roof repair work being performed',
+  },
+  {
+    url: `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'active roof replacement in progress',
+  },
+  {
+    url: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'roofing project underway in Charlotte neighborhood',
+  },
+  {
+    url: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'crew installing new roofing materials',
+  },
+  {
+    url: `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'professional roof installation in Charlotte',
+  },
+  {
+    url: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'roof work being performed by certified roofers',
+  },
+  {
+    url: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'roofing team completing installation work',
+  },
+  {
+    url: `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'ongoing roof project in Charlotte metro area',
+  },
+  {
+    url: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'work-in-progress', roofType: 'residential',
+    description: 'professional roofing work in progress',
+  },
+
+  // Charlotte - Storm Damage
+  {
+    url: `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'storm-damage', roofType: 'residential',
+    description: 'storm damage repair on Charlotte residential roof',
+  },
+
+  // Charlotte - Marketing/Showcase Projects
+  {
+    url: `${PMI}/2024-09-04-03-58-23-ac3c5a20-6ecb-4dc2-a780-c89a09e44f4d.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'showcase roof replacement project in Charlotte',
+  },
+  {
+    url: `${PMI}/2024-08-14-07-05-04-0e6f3e6f-ae0e-4370-b5a1-ac1fe9df2f2c.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'premium roof installation on Charlotte property',
+  },
+  {
+    url: `${PMI}/2024-08-06-06-26-47-e9cc1df2-5c3d-4d2b-9d6e-e1fdee83a818.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'quality roof replacement completed in Charlotte',
+  },
+  {
+    url: `${PMI}/full-fc306978-96e3-4791-bd0c-61f3be1bca14.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof project showcasing expert craftsmanship',
+  },
+  {
+    url: `${PMI}/full-607b6541-c151-49b9-8c73-fe9f92252f19.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'professionally installed new roof in Charlotte',
+  },
+  {
+    url: `${PMI}/full-e1fc389a-408b-4c64-9991-60f8478c2253.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'residential roofing excellence in Charlotte NC',
+  },
+  {
+    url: `${PMI}/full-d7e1b93a-e0f7-4b14-99c7-e95f56ed475c.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed new roof installation in Charlotte area',
+  },
+
+  // Huntersville Projects
+  {
+    url: `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`,
+    city: 'Huntersville', state: 'NC', lat: 35.4107, lng: -80.8429,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation on Huntersville family home',
+  },
+  {
+    url: `${PMI}/full-bdb1d414-6ebc-457a-8ce2-e65cd267b64d.jpeg`,
+    city: 'Huntersville', state: 'NC', lat: 35.4107, lng: -80.8429,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed roof replacement in Huntersville neighborhood',
+  },
+  {
+    url: `${PMI}/full-22fa0267-3c36-4ab4-8131-f498d47c8c25.jpeg`,
+    city: 'Huntersville', state: 'NC', lat: 35.4107, lng: -80.8429,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'aerial drone view of completed Huntersville roof project',
+  },
+  {
+    url: `${PMI}/full-a19f5d5c-3f3e-460b-b312-f6f5dbb5b0e5.jpeg`,
+    city: 'Huntersville', state: 'NC', lat: 35.4107, lng: -80.8429,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'drone inspection of new roof in Huntersville',
+  },
+
+  // Concord Projects
+  {
+    url: `${PMI}/full-76a79ab8-dc86-4c03-b8db-ac9587236449.jpeg`,
+    city: 'Concord', state: 'NC', lat: 35.4088, lng: -80.5795,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation on Concord residence',
+  },
+  {
+    url: `${PMI}/2024-05-15-02-51-18-30457b83-64a7-4a2f-ad1f-234a9eaba60b.jpg`,
+    city: 'Concord', state: 'NC', lat: 35.4088, lng: -80.5795,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'residential roof replacement completed in Concord',
+  },
+
+  // Mooresville Projects
+  {
+    url: `${PMI}/full-9e7b90cb-bb7a-445e-b809-7fbc9cd21377.jpeg`,
+    city: 'Mooresville', state: 'NC', lat: 35.5849, lng: -80.8101,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof on Mooresville home near Lake Norman',
+  },
+  {
+    url: `${PMI}/full-2ea792fe-4db5-4be1-b922-bffc708eb312.jpeg`,
+    city: 'Mooresville', state: 'NC', lat: 35.5849, lng: -80.8101,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed roof project in Mooresville',
+  },
+
+  // Rock Hill, SC
+  {
+    url: `${PMI}/2025-01-15-01-49-06-ac388860-da9e-4997-91f7-334ecac4b044.jpg`,
+    city: 'Rock Hill', state: 'SC', lat: 34.9249, lng: -81.0251,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation on Rock Hill home',
+  },
+
+  // Denver
+  {
+    url: `${PMI}/2024-04-16-03-28-01-5f54ec2a-0814-41f1-87e7-068ab5853e9a.jpg`,
+    city: 'Denver', state: 'NC', lat: 35.5318, lng: -81.0298,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'roof replacement near Lake Norman in Denver',
+  },
+
+  // Monroe
+  {
+    url: `${PMI}/2023-03-07-08-45-53-d8516fd9-8480-4747-bbc9-4a0a79f285c4.jpg`,
+    city: 'Monroe', state: 'NC', lat: 34.9854, lng: -80.5495,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'residential roof project completed in Monroe',
+  },
+
+  // Waxhaw
+  {
+    url: `${PMI}/full-b312124c-913c-4408-9882-616a23d564fe.jpeg`,
+    city: 'Waxhaw', state: 'NC', lat: 34.9243, lng: -80.7434,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation in Waxhaw',
+  },
+
+  // Kannapolis
+  {
+    url: `${PMI}/full-ea89d6e0-c6e5-4e7f-a12c-cdcfe82ff104.jpeg`,
+    city: 'Kannapolis', state: 'NC', lat: 35.4874, lng: -80.6217,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed roof replacement in Kannapolis',
+  },
+
+  // Mount Holly
+  {
+    url: `${PMI}/full-4ef3d6d5-e970-4005-9dcf-7c415e3ea805.jpeg`,
+    city: 'Mount Holly', state: 'NC', lat: 35.2979, lng: -81.0156,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof on Mount Holly home',
+  },
+
+  // Cornelius
+  {
+    url: `${PMI}/full-9b9080dd-f827-45b1-a00d-148b583d2daa.jpeg`,
+    city: 'Cornelius', state: 'NC', lat: 35.4868, lng: -80.8601,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'roof installation in Cornelius near Lake Norman',
+  },
+
+  // Davidson
+  {
+    url: `${PMI}/2024-12-06-07-36-41-4106108d-4be1-47de-a8f9-80c04c77e56a.jpg`,
+    city: 'Davidson', state: 'NC', lat: 35.4993, lng: -80.8487,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'residential roof replacement in Davidson',
+  },
+
+  // Indian Trail
+  {
+    url: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
+    city: 'Indian Trail', state: 'NC', lat: 35.0768, lng: -80.6690,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof on Indian Trail residence',
+  },
+
+  // Harrisburg
+  {
+    url: `${PMI}/2024-07-02-04-38-14-ac6ed3f5-a9ef-4b2d-91ab-a3790e5b1bb3.jpg`,
+    city: 'Harrisburg', state: 'NC', lat: 35.3240, lng: -80.6537,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed roof project in Harrisburg',
+  },
+
+  // Mint Hill
+  {
+    url: `${PMI}/full-6ae1b52a-83a6-4783-bc3f-8e272a33a059.jpeg`,
+    city: 'Mint Hill', state: 'NC', lat: 35.1793, lng: -80.6473,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation in Mint Hill',
+  },
+
+  // Statesville
+  {
+    url: `${PMI}/full-6d141284-87ff-4aff-9c99-c918070f28bd.jpeg`,
+    city: 'Statesville', state: 'NC', lat: 35.7826, lng: -80.8873,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'residential roof replacement in Statesville',
+  },
+
+  // Gastonia
+  {
+    url: `${PMI}/2024-12-13-04-43-12-202a1e47-27ef-4a61-83b0-ef49b58f2f17.jpg`,
+    city: 'Gastonia', state: 'NC', lat: 35.2621, lng: -81.1873,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof on Gastonia home',
+  },
+
+  // Shelby
+  {
+    url: `${PMI}/2024-06-29-02-58-16-3cf62886-c208-47ee-97df-665ce9af09ad.jpg`,
+    city: 'Shelby', state: 'NC', lat: 35.2924, lng: -81.5357,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'completed roofing project in Shelby',
+  },
+
+  // Dallas
+  {
+    url: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`,
+    city: 'Dallas', state: 'NC', lat: 35.3165, lng: -81.1762,
+    projectType: 'completed-exterior', roofType: 'residential',
+    description: 'home exterior with new roof in Dallas NC',
+  },
+
+  // Lincolnton
+  {
+    url: `${PMI}/2024-12-21-04-35-58-5b1c5136-6fdd-4b1f-ad37-e260afcd43f3.jpg`,
+    city: 'Lincolnton', state: 'NC', lat: 35.4735, lng: -81.2545,
+    projectType: 'completed-exterior', roofType: 'residential',
+    description: 'completed roofing project in Lincolnton',
+  },
+
+  // Albemarle
+  {
+    url: `${PMI}/2024-01-24-06-42-58-0d0dd377-3feb-4e3d-a062-2a9bb941712e.jpg`,
+    city: 'Albemarle', state: 'NC', lat: 35.3501, lng: -80.2001,
+    projectType: 'completed-exterior', roofType: 'residential',
+    description: 'new roof on Albemarle residence',
+  },
+
+  // Additional Charlotte marketing images as new-roof
+  {
+    url: `${PMI}/2024-07-16-04-41-39-daec3c1a-3e89-46e1-b2e8-a19f5f3e3c82.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'quality residential roof replacement in Charlotte',
+  },
+  {
+    url: `${PMI}/2024-05-17-06-53-49-106727f5-6597-4311-af3f-39fa31609843.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'professional roof installation in Charlotte metro',
+  },
+  {
+    url: `${PMI}/2023-08-23-05-23-53-b874c86e-12de-4359-b43a-2ba908468e3e.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof completed on Charlotte residential property',
+  },
+  {
+    url: `${PMI}/2023-07-07-06-53-53-4072732b-c62b-4619-a0d9-4cc49af7315d.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'summer roofing project completed in Charlotte',
+  },
+  {
+    url: `${PMI}/2023-01-31-07-01-20-e692a087-a476-439a-ab8a-3611fdfbaceb.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation during winter in Charlotte',
+  },
+  {
+    url: `${PMI}/2023-01-25-12-44-11-466dcbf0-e3e9-43df-9a14-9c3adba80241.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'roof replacement on Charlotte area home',
+  },
+  {
+    url: `${PMI}/2023-01-15-02-29-32-fc1b5449-7896-4132-b6db-f65be731fb83.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'professionally installed new roof in Charlotte NC',
+  },
+  {
+    url: `${PMI}/2023-01-06-02-16-42-584cf13e-1391-41b2-9b8a-ef37380858b2.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'start of year roof project in Charlotte',
+  },
+  {
+    url: `${PMI}/2023-01-05-11-50-16-878bdef9-910b-4683-8d19-cbbc41df0999.jpg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new year roof installation in Charlotte area',
+  },
+
+  // Fort Mill, SC
+  {
+    url: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
+    city: 'Fort Mill', state: 'SC', lat: 35.0074, lng: -80.9451,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation in Fort Mill',
+  },
+
+  // Tega Cay, SC
+  {
+    url: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
+    city: 'Tega Cay', state: 'SC', lat: 35.0240, lng: -81.0279,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'residential roof project in Tega Cay',
+  },
+
+  // Indian Land, SC
+  {
+    url: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+    city: 'Indian Land', state: 'SC', lat: 34.9571, lng: -80.8923,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new roof installation in Indian Land',
+  },
+
+  // Before/After - CMS images
+  {
+    url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Before-and-after-1.png',
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'before-after', roofType: 'residential',
+    description: 'before and after roof replacement comparison',
+  },
+  {
+    url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/siding-repair-after.png',
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'before-after', roofType: 'residential',
+    description: 'before and after siding repair project',
+  },
+  {
+    url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/Commercial-flat-roofing-Before-and-after-after.webp',
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'before-after', roofType: 'commercial',
+    description: 'before and after commercial flat roof restoration',
+  },
+  {
+    url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/02/commercial-siding-cleaning-roofing-after-.webp',
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'before-after', roofType: 'commercial',
+    description: 'before and after commercial siding cleaning',
+  },
+
+  // Additional misc/design PMI images
+  {
+    url: `${PMI}/full-f412b906-b8c1-4e7d-9c68-50a6695a76da.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'finished roof project in Charlotte metro',
+  },
+  {
+    url: `${PMI}/full-4ebe8cc6-e668-4066-92ad-6ccee8763dc7.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'new residential roof with quality materials',
+  },
+  {
+    url: `${PMI}/full-9f7b0a2b-6d6c-4754-ab4c-9819c35f1d02.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'professionally completed roof in Charlotte',
+  },
+  {
+    url: `${PMI}/full-4864ac50-76be-4e99-8768-209d54235119.jpeg`,
+    city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
+    projectType: 'new-roof', roofType: 'residential',
+    description: 'quality roofing workmanship in Charlotte NC',
+  },
+];

@@ -1670,10 +1670,11 @@ interface HeroImageSchemaProps {
   url: string;
   caption: string;
   pageUrl: string;
+  location?: { city: string; state: string; lat: number; lng: number };
 }
 
-export function HeroImageSchema({ url, caption, pageUrl }: HeroImageSchemaProps) {
-  const schema = {
+export function HeroImageSchema({ url, caption, pageUrl, location }: HeroImageSchemaProps) {
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',
     '@id': `${pageUrl}/#hero-image`,
@@ -1691,6 +1692,18 @@ export function HeroImageSchema({ url, caption, pageUrl }: HeroImageSchemaProps)
       '@id': `${SITE_CONFIG.url}/#organization`,
     },
   };
+
+  if (location) {
+    schema.contentLocation = {
+      '@type': 'Place',
+      name: `${location.city}, ${location.state}`,
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: location.lat,
+        longitude: location.lng,
+      },
+    };
+  }
 
   return (
     <script
@@ -1771,6 +1784,7 @@ interface GallerySchemaProps {
   images: {
     url: string;
     caption: string;
+    location?: { city: string; state: string; lat: number; lng: number };
   }[];
   pageUrl: string;
 }
@@ -1783,13 +1797,27 @@ export function GallerySchema({ name, description, images, pageUrl }: GallerySch
     name: name,
     description: description,
     numberOfItems: images.length,
-    image: images.map((img, index) => ({
-      '@type': 'ImageObject',
-      position: index + 1,
-      url: img.url,
-      caption: img.caption,
-      creditText: 'Best Roofing Now',
-    })),
+    image: images.map((img, index) => {
+      const imageObj: Record<string, unknown> = {
+        '@type': 'ImageObject',
+        position: index + 1,
+        url: img.url,
+        caption: img.caption,
+        creditText: 'Best Roofing Now',
+      };
+      if (img.location) {
+        imageObj.contentLocation = {
+          '@type': 'Place',
+          name: `${img.location.city}, ${img.location.state}`,
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: img.location.lat,
+            longitude: img.location.lng,
+          },
+        };
+      }
+      return imageObj;
+    }),
     creator: {
       '@type': 'Organization',
       '@id': `${SITE_CONFIG.url}/#organization`,

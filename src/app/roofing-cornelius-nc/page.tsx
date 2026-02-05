@@ -20,6 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -520,6 +521,16 @@ export default function RoofingCorneliusNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Cornelius"
+        slug="roofing-cornelius-nc"
+        count={4}
+        title="Recent Roofing Projects in Cornelius, NC"
+        subtitle="Browse completed roofing projects from the Cornelius area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-cornelius-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

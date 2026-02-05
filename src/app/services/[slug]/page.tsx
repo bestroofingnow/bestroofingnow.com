@@ -42,6 +42,7 @@ import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 import { getServiceFAQs } from '@/lib/faqs';
 import { EstimateButton } from '@/components/estimate';
 import { FinancingBanner } from '@/components/ui/FinancingBanner';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 
 // Map service slugs to their image sets
 const serviceImages: Record<string, string[]> = {
@@ -1396,6 +1397,17 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="service"
+        city="Charlotte"
+        slug={`services-${slug}`}
+        count={4}
+        title="Charlotte NC Roofing Projects"
+        subtitle="Browse recent completed projects by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/services/${slug}`}
+      />
 
       {/* CTA */}
       <CTASection

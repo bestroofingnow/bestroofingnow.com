@@ -20,6 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -533,6 +534,16 @@ export default function RoofingMooresvilleNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="roofing-mooresville-nc"
+        count={4}
+        title="Recent Roofing Projects in Mooresville, NC"
+        subtitle="Browse completed roofing projects from the Mooresville area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-mooresville-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

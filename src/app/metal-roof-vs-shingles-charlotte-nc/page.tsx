@@ -19,6 +19,7 @@ import {
   Scale,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -519,6 +520,16 @@ export default function MetalRoofVsShinglesPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="other"
+        city="Charlotte"
+        slug="metal-roof-vs-shingles-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/metal-roof-vs-shingles-charlotte-nc`}
+      />
 
       {/* CTA Section */}
       <CTASection

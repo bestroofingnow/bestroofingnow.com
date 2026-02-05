@@ -14,6 +14,11 @@ export async function GET() {
     { url: `${BASE_URL}/sitemap`, changefreq: 'weekly', priority: '0.8' },
     // Ad landing pages
     { url: `${BASE_URL}/free-roof-inspection`, changefreq: 'monthly', priority: '0.6' },
+    // Pillar content hub pages
+    { url: `${BASE_URL}/charlotte-roofing-handbook`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-repair-vs-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/charlotte-storm-season-roof-guide`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/charlotte-roofing-costs-2026`, changefreq: 'weekly', priority: '0.9' },
     // Main service silo pages - GBP category aligned
     { url: `${BASE_URL}/gutter-services`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/siding-services`, changefreq: 'weekly', priority: '0.9' },

@@ -15,6 +15,7 @@ const mobileNavigation = [
   { label: 'Commercial & Industrial', href: '/commercial-roofing-services', hasChildren: true },
   { label: 'Locations', href: '/locations', hasChildren: true },
   { label: 'Materials', href: '/materials', hasChildren: true },
+  { label: 'Guides', href: '/guides', hasChildren: true },
   { label: 'Reviews', href: '/reviews' },
   { label: 'Financing', href: '/financing' },
   { label: 'Blog', href: '/blog' },
@@ -339,6 +340,34 @@ export function Header() {
                                 >
                                   <Award className="w-4 h-4" />
                                   View Brands
+                                </Link>
+                              </div>
+                            )}
+
+                            {item.label === 'Guides' && (
+                              <div className="space-y-1">
+                                {[
+                                  { href: '/charlotte-roofing-handbook', label: 'Roofing Handbook' },
+                                  { href: '/roof-repair-vs-replacement-charlotte-nc', label: 'Repair vs. Replacement' },
+                                  { href: '/charlotte-storm-season-roof-guide', label: 'Storm Protection Guide' },
+                                  { href: '/charlotte-roofing-costs-2026', label: 'Pricing Guide (2026)' },
+                                ].map((link) => (
+                                  <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="flex items-center gap-2 py-3 px-4 text-sm text-gray rounded-lg active:bg-light hover:text-primary min-h-[44px]"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    <ChevronRight className="w-4 h-4" />
+                                    {link.label}
+                                  </Link>
+                                ))}
+                                <Link
+                                  href="/guides"
+                                  className="flex items-center gap-2 py-3 px-4 text-sm text-primary font-semibold rounded-lg active:bg-light min-h-[44px]"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  Browse All Guides →
                                 </Link>
                               </div>
                             )}

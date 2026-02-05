@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { FAQ } from '@/components/sections/FAQ';
 import {
   BreadcrumbSchema,
@@ -819,6 +820,16 @@ export default function StormDamageRoofRepairCharlottePage() {
         service="Storm Damage Repair"
         serviceSlug="storm-damage-roof-repair"
         title="Storm Damage Roof Repair in Nearby Cities"
+      />
+
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="storm-damage-roof-repair-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`}
       />
 
       {/* CTA */}

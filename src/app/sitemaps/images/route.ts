@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
-import { IMAGES, LOCATION_HERO_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
+import { IMAGES, LOCATION_HERO_IMAGES, SERVICE_HERO_IMAGES, PROJECT_IMAGES } from '@/lib/images';
 import { SERVICES, LOCATIONS } from '@/lib/constants';
 import { getAllNeighborhoodParams } from '@/lib/neighborhoods';
+import { generateGeoAltText } from '@/lib/geo-images';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
@@ -14,14 +15,14 @@ interface ImageEntry {
 export async function GET() {
   const imageEntries: ImageEntry[] = [];
 
-  // Homepage images
+  // Homepage images with geo-enriched captions
   imageEntries.push({
     pageUrl: BASE_URL,
     images: [
-      { loc: IMAGES.logo, title: 'Best Roofing Now Logo', caption: 'Professional roofing company in Charlotte NC' },
-      { loc: IMAGES.hero.roofTeam, title: 'Roofing team working on roof', caption: 'Best Roofing Now crew installing new roof in Charlotte' },
-      { loc: IMAGES.houses.house1, title: 'Beautiful home with new roof', caption: 'Residential roofing project in Charlotte NC' },
-      { loc: IMAGES.houses.modern1, title: 'Modern home with quality roofing', caption: 'Premium roof installation Charlotte' },
+      { loc: IMAGES.logo, title: 'Best Roofing Now Logo', caption: 'Professional roofing company in Charlotte, NC - veteran-owned' },
+      { loc: IMAGES.hero.roofTeam, title: 'Best Roofing Now crew installing new roof in Charlotte, NC', caption: 'Professional roofing team working on residential roof installation in Charlotte, NC by Best Roofing Now' },
+      { loc: IMAGES.houses.house1, title: 'Completed residential roof project in Charlotte, NC', caption: 'Beautiful home with new roof installed by Best Roofing Now in Charlotte, NC' },
+      { loc: IMAGES.houses.modern1, title: 'Premium roof installation in Charlotte, NC', caption: 'Modern home with quality architectural shingle roofing in Charlotte, NC by Best Roofing Now' },
     ],
   });
 
@@ -45,42 +46,76 @@ export async function GET() {
     });
   });
 
-  // Location pages with their images
+  // Location pages with geo-enriched images
   LOCATIONS.forEach((location) => {
     const heroImage = LOCATION_HERO_IMAGES[location.slug] || IMAGES.houses.house1;
     // Skip video files for image sitemap
     if (!heroImage.endsWith('.mp4')) {
+      // Find matching geo-tagged image for richer caption
+      const geoImage = PROJECT_IMAGES.find(img => img.url === heroImage);
+      const caption = geoImage
+        ? generateGeoAltText(geoImage)
+        : `Professional roofing services in ${location.city}, ${location.state} by Best Roofing Now`;
       imageEntries.push({
         pageUrl: `${BASE_URL}/locations/${location.slug}`,
         images: [
-          { loc: heroImage, title: `Roofing services in ${location.city}, ${location.state}`, caption: `Professional roofing company serving ${location.city}` },
+          { loc: heroImage, title: `Roofing project in ${location.city}, ${location.state}`, caption },
         ],
       });
     }
   });
 
-  // Neighborhood pages
+  // Neighborhood pages with geo-enriched captions
   const neighborhoodParams = getAllNeighborhoodParams();
   neighborhoodParams.forEach(({ city, neighborhood }) => {
     const cityHeroImage = LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1;
     // Skip video files for image sitemap
     if (!cityHeroImage.endsWith('.mp4')) {
+      const neighborhoodName = neighborhood.replace(/-/g, ' ');
+      const geoImage = PROJECT_IMAGES.find(img => img.url === cityHeroImage);
+      const caption = geoImage
+        ? generateGeoAltText(geoImage)
+        : `Professional roofing services in ${neighborhoodName} by Best Roofing Now`;
       imageEntries.push({
         pageUrl: `${BASE_URL}/locations/${city}/${neighborhood}`,
         images: [
-          { loc: cityHeroImage, title: `Roofing in ${neighborhood.replace(/-/g, ' ')}`, caption: `Professional roofing services` },
+          { loc: cityHeroImage, title: `Roofing project in ${neighborhoodName}`, caption },
         ],
       });
     }
   });
 
-  // Real project photos gallery
+  // Real project photos gallery with geo-enriched captions
   imageEntries.push({
     pageUrl: `${BASE_URL}/reviews`,
-    images: Object.entries(IMAGES.realProjects).slice(0, 20).map(([key, url]) => ({
-      loc: url,
-      title: `Roofing project ${key.replace(/\d+/, '')}`,
-      caption: 'Completed roofing project in Charlotte metro area',
+    images: Object.entries(IMAGES.realProjects).slice(0, 20).map(([, url]) => {
+      const geoImage = PROJECT_IMAGES.find(img => img.url === url);
+      return {
+        loc: url as string,
+        title: geoImage
+          ? `Roofing project in ${geoImage.city}, ${geoImage.state}`
+          : 'Completed roofing project in Charlotte, NC',
+        caption: geoImage
+          ? generateGeoAltText(geoImage)
+          : 'Professional roofing project completed in Charlotte metro area by Best Roofing Now',
+      };
+    }),
+  });
+
+  // Additional geo-tagged project images across all service areas
+  const geoImagesByCity = new Map<string, typeof PROJECT_IMAGES>();
+  PROJECT_IMAGES.forEach(img => {
+    const key = `${img.city}-${img.state}`;
+    if (!geoImagesByCity.has(key)) geoImagesByCity.set(key, []);
+    geoImagesByCity.get(key)!.push(img);
+  });
+
+  imageEntries.push({
+    pageUrl: `${BASE_URL}/projects`,
+    images: PROJECT_IMAGES.slice(0, 30).map(img => ({
+      loc: img.url,
+      title: `${img.projectType.replace(/-/g, ' ')} in ${img.city}, ${img.state}`,
+      caption: generateGeoAltText(img),
     })),
   });
 

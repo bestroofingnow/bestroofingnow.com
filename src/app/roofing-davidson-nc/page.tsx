@@ -20,6 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -521,6 +522,16 @@ export default function RoofingDavidsonNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Davidson"
+        slug="roofing-davidson-nc"
+        count={4}
+        title="Recent Roofing Projects in Davidson, NC"
+        subtitle="Browse completed roofing projects from the Davidson area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-davidson-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

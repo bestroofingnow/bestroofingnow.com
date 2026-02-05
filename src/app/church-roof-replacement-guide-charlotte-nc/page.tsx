@@ -15,6 +15,7 @@ import {
   Calendar,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -482,6 +483,16 @@ export default function ChurchRoofReplacementGuidePage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="other"
+        city="Charlotte"
+        slug="church-roof-replacement-guide-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/church-roof-replacement-guide-charlotte-nc`}
+      />
 
       {/* CTA Section */}
       <CTASection

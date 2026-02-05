@@ -21,6 +21,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { JamesTip } from '@/components/sections/PersonalTouch';
 import { Button } from '@/components/ui/Button';
@@ -810,6 +811,16 @@ export default function RoofMaintenanceCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roof-maintenance-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

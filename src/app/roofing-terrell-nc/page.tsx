@@ -20,6 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -594,6 +595,16 @@ export default function RoofingTerrellNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="roofing-terrell-nc"
+        count={4}
+        title="Recent Roofing Projects in Terrell, NC"
+        subtitle="Browse completed roofing projects from the Terrell area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-terrell-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

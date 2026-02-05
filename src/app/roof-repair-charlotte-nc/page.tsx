@@ -25,6 +25,7 @@ import {
   Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -33,10 +34,12 @@ import {
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
+import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
-import { IMAGES } from '@/lib/images';
+import { getGeoImages } from '@/lib/geo-images';
+import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Roof Repair Charlotte NC | Fast & Affordable | Best Roofing Now',
@@ -233,6 +236,8 @@ const faqs = [
 ];
 
 export default function RoofRepairCharlotteNCPage() {
+  const inlineImages = getGeoImages({ pageType: 'main-service-area', city: 'Charlotte', count: 2, seed: 'roof-repair-charlotte-nc-inline' });
+
   return (
     <>
       <BreadcrumbSchema
@@ -412,13 +417,17 @@ export default function RoofRepairCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
-                src={IMAGES.services.repairs}
-                alt="Professional roof repair work by Best Roofing Now in Charlotte NC"
-                width={600}
-                height={450}
-                className="rounded-xl shadow-lg"
-              />
+              {inlineImages[0] && (
+                <GeoTaggedProjectImage
+                  image={inlineImages[0]}
+                  width={600}
+                  height={450}
+                  className="rounded-xl shadow-lg"
+                  context={{ serviceName: 'Roof repair', pageTitle: 'Roof Repair Charlotte NC' }}
+                  includeSchema={true}
+                  schemaPageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
+                />
+              )}
               <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4">
                 <div className="flex items-center gap-3">
                   <div className="flex">
@@ -667,61 +676,15 @@ export default function RoofRepairCharlotteNCPage() {
       </section>
 
       {/* Project Gallery */}
-      <section className="section bg-white">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Recent Roof Repairs in Charlotte
-            </h2>
-            <p className="text-gray text-lg">
-              Browse examples of our roof repair work throughout the Charlotte area.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project1}
-                alt="Completed roof repair in Charlotte NC"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.certainteed1}
-                alt="Shingle replacement repair in Charlotte"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.drone2}
-                alt="Roof repair project aerial view Charlotte NC"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project3}
-                alt="Storm damage repair completed in Charlotte area"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
-            >
-              View All Projects
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roof-repair-charlotte-nc"
+        count={4}
+        title="Recent Roof Repair Projects in Charlotte, NC"
+        subtitle="See our latest roof repair work across the Charlotte metro area."
+        schemaPageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
+      />
 
       {/* FAQ Section */}
       <section className="section bg-light">

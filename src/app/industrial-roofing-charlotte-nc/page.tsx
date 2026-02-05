@@ -26,6 +26,7 @@ import {
   Calculator,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
@@ -670,6 +671,16 @@ export default function IndustrialRoofingCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="other"
+        city="Charlotte"
+        slug="industrial-roofing-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/industrial-roofing-charlotte-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection

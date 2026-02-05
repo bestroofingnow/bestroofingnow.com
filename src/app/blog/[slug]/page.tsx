@@ -9,6 +9,7 @@ import { IMAGES } from '@/lib/images';
 import { getPostBySlug, getPosts, getAllPostSlugs } from '@/lib/wordpress';
 import { addInternalLinks, getSmartLinks } from '@/lib/internal-links';
 import { getOptimizedBlog } from '@/lib/db';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 
 // Low-quality blur placeholder for blog post images
 const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
@@ -381,6 +382,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </article>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="blog"
+        city="Charlotte"
+        slug={`blog-${slug}`}
+        count={4}
+        title="Related Roofing Projects in Charlotte, NC"
+        subtitle="See our recent roofing work across the Charlotte metro area."
+      />
 
       {/* Bottom CTA */}
       <section className="section bg-primary text-white">

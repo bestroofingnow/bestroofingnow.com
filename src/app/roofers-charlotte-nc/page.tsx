@@ -36,7 +36,10 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
-import { IMAGES } from '@/lib/images';
+import { IMAGES, CITY_COORDINATES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
+import { getGeoImages } from '@/lib/geo-images';
 
 export const metadata: Metadata = {
   title: 'Roofers Charlotte NC | Top-Rated Local Roofers (5.0 Stars) | Best Roofing Now',
@@ -276,6 +279,8 @@ const faqs = [
 ];
 
 export default function RoofersCharlotteNCPage() {
+  const inlineImages = getGeoImages({ pageType: 'main-service-area', city: 'Charlotte', count: 2, seed: 'roofers-charlotte-nc-inline' });
+
   return (
     <>
       <BreadcrumbSchema
@@ -527,12 +532,14 @@ export default function RoofersCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
-                src={IMAGES.realProjects.drone1}
-                alt="Best Roofing Now - Trusted roofers in Charlotte NC with completed roof project"
+              <GeoTaggedProjectImage
+                image={inlineImages[0]}
                 width={600}
                 height={450}
                 className="rounded-xl shadow-lg"
+                context={{ serviceName: 'Roofers', pageTitle: 'Roofers Charlotte NC' }}
+                includeSchema={true}
+                schemaPageUrl={`${SITE_CONFIG.url}/roofers-charlotte-nc`}
               />
               <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4">
                 <div className="flex items-center gap-3">
@@ -747,62 +754,16 @@ export default function RoofersCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Project Gallery */}
-      <section className="section bg-white">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Recent Work by Our Charlotte Roofers
-            </h2>
-            <p className="text-gray text-lg">
-              Browse our portfolio of completed roofing projects throughout the Charlotte area.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project1}
-                alt="Completed residential roof by Charlotte roofers"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.certainteed1}
-                alt="CertainTeed shingle installation by Best Roofing Now roofers in Charlotte"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.drone2}
-                alt="Aerial view of completed roof project by Charlotte NC roofers"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project3}
-                alt="Professional roofing work by roofers in Charlotte area"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
-            >
-              View All Projects
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Project Gallery - Geo-Tagged */}
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roofers-charlotte-nc"
+        count={4}
+        title="Recent Projects by Charlotte's Best Roofers"
+        subtitle="See our latest completed roofing work across the Charlotte metro area."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofers-charlotte-nc`}
+      />
 
       {/* Meet the Turner Family */}
       <MeetTheFamily variant="full" />

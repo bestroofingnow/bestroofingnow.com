@@ -40,6 +40,7 @@ import {
 } from 'lucide-react';
 import EstimateButton from '@/components/estimate/EstimateButton';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -1215,6 +1216,16 @@ export default function CommercialRoofingCharlotteNCPage() {
         service="Commercial Roofing"
         serviceSlug="commercial-roofing"
         title="Commercial Roofing in Nearby Cities"
+      />
+
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="commercial-roofing-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
       />
 
       {/* Final CTA */}

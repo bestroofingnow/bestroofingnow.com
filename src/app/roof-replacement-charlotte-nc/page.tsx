@@ -34,8 +34,11 @@ import {
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
 import { SITE_CONFIG } from '@/lib/constants';
-import { IMAGES } from '@/lib/images';
+import { getGeoImages } from '@/lib/geo-images';
+import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Roof Replacement Charlotte NC | New Roof Installation | Best Roofing Now',
@@ -286,6 +289,8 @@ const faqs = [
 ];
 
 export default function RoofReplacementCharlotteNCPage() {
+  const inlineImages = getGeoImages({ pageType: 'main-service-area', city: 'Charlotte', count: 2, seed: 'roof-replacement-charlotte-nc-inline' });
+
   return (
     <>
       <BreadcrumbSchema
@@ -700,13 +705,18 @@ export default function RoofReplacementCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
-                src={IMAGES.realProjects.drone1}
-                alt="Completed roof replacement in Charlotte NC by Best Roofing Now"
-                width={600}
-                height={450}
-                className="rounded-xl shadow-lg"
-              />
+              {inlineImages[0] && (
+                <GeoTaggedProjectImage
+                  image={inlineImages[0]}
+                  width={600}
+                  height={450}
+                  className="rounded-xl shadow-lg"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  context={{ serviceName: 'Roof replacement', pageTitle: 'Roof Replacement Charlotte NC' }}
+                  includeSchema={true}
+                  schemaPageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
+                />
+              )}
               <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4">
                 <div className="flex items-center gap-3">
                   <div className="flex">
@@ -788,61 +798,15 @@ export default function RoofReplacementCharlotteNCPage() {
       </section>
 
       {/* Project Gallery */}
-      <section className="section bg-white">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Recent Roof Replacements in Charlotte
-            </h2>
-            <p className="text-gray text-lg">
-              Browse our portfolio of completed roof replacement projects throughout the Charlotte area.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project1}
-                alt="Completed roof replacement project in Charlotte NC"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.certainteed1}
-                alt="CertainTeed shingle roof replacement in Charlotte"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.drone2}
-                alt="Aerial view of new roof installation in Charlotte NC"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project3}
-                alt="Professional roof replacement work in Charlotte area"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
-            >
-              View All Projects
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roof-replacement-charlotte-nc-gallery"
+        count={4}
+        title="Recent Roof Replacements in Charlotte"
+        subtitle="Browse our portfolio of completed roof replacement projects throughout the Charlotte area."
+        schemaPageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
+      />
 
       {/* FAQ Section */}
       <section className="section bg-light">
@@ -886,6 +850,17 @@ export default function RoofReplacementCharlotteNCPage() {
         service="Roof Replacement"
         serviceSlug="roof-replacement"
         title="Roof Replacement in Nearby Cities"
+      />
+
+      {/* Geo-Tagged Project Gallery */}
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roof-replacement-charlotte-nc"
+        count={4}
+        title="Recent Roof Replacement Projects in Charlotte, NC"
+        subtitle="See our latest roof replacement work across the Charlotte metro area."
+        schemaPageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
       />
 
       {/* Final CTA */}

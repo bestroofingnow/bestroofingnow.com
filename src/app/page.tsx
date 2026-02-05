@@ -28,8 +28,9 @@ import {
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
 import { JamesTip, CommunityInvolvementSection } from '@/components/sections/PersonalTouch';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
-import { IMAGES } from '@/lib/images';
+import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: "Best Roofing Company Charlotte NC | 5-Star Rated | Free Inspection",
@@ -67,13 +68,14 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  // Gallery images for schema
+  // Gallery images for schema with geo-tagging
+  const charlotteGeo = CITY_COORDINATES['Charlotte'];
   const galleryImages = [
-    { url: IMAGES.projects.work1, caption: 'Complete roof replacement in Charlotte NC - asphalt shingle installation' },
-    { url: IMAGES.projects.work2, caption: 'Residential roofing project in Myers Park Charlotte' },
-    { url: IMAGES.projects.work3, caption: 'Storm damage roof repair in Huntersville NC' },
-    { url: IMAGES.projects.work4, caption: 'New roof installation in Matthews NC' },
-    { url: IMAGES.projects.work5, caption: 'Commercial roofing project in Charlotte metro area' },
+    { url: IMAGES.projects.work1, caption: 'Complete roof replacement in Charlotte NC - asphalt shingle installation', location: { city: 'Charlotte', state: 'NC', ...charlotteGeo } },
+    { url: IMAGES.projects.work2, caption: 'Residential roofing project in Myers Park Charlotte', location: { city: 'Charlotte', state: 'NC', ...charlotteGeo } },
+    { url: IMAGES.projects.work3, caption: 'Storm damage roof repair in Huntersville NC', location: { city: 'Huntersville', state: 'NC', ...CITY_COORDINATES['Huntersville'] } },
+    { url: IMAGES.projects.work4, caption: 'New roof installation in Matthews NC', location: { city: 'Matthews', state: 'NC', ...CITY_COORDINATES['Matthews'] } },
+    { url: IMAGES.projects.work5, caption: 'Commercial roofing project in Charlotte metro area', location: { city: 'Charlotte', state: 'NC', ...charlotteGeo } },
   ];
 
   return (
@@ -99,6 +101,7 @@ export default function HomePage() {
         url={IMAGES.hero.roofTeam}
         caption="Best Roofing Now team - Charlotte's top-rated roofing contractors"
         pageUrl={SITE_CONFIG.url}
+        location={{ city: 'Charlotte', state: 'NC', ...CITY_COORDINATES['Charlotte'] }}
       />
       <GallerySchema
         name="Best Roofing Now Project Gallery"
@@ -149,6 +152,17 @@ export default function HomePage() {
         showAll={false}
       />
       <WhyChooseUs />
+
+      {/* Geo-Tagged Charlotte Project Photos */}
+      <GeoProjectGalleryStrip
+        pageType="homepage"
+        city="Charlotte"
+        slug="home"
+        count={8}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse our latest completed roofing projects across the Charlotte metro area."
+        schemaPageUrl={SITE_CONFIG.url}
+      />
 
       {/* What Makes Us Charlotte's Best - Owner's Perspective */}
       <section className="py-16 bg-gradient-to-b from-slate-50 to-white">

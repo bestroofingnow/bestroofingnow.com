@@ -33,6 +33,7 @@ import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs, generateNearMeVoiceSearchFAQs } from '@/lib/faqs';
 import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { getClimateData, CHARLOTTE_CLIMATE } from '@/lib/climate';
 import { LAKE_NORMAN_LOCATIONS } from '@/lib/directory-links';
 
@@ -1789,6 +1790,17 @@ export default async function LocationPage({ params }: PageProps) {
         citySlug={city}
         title={`Roofing Services in ${location.city}`}
         subtitle={`Looking for a specific roofing service? Click below to learn more about what we offer in ${location.city}.`}
+      />
+
+      {/* Geo Project Gallery Strip - Local SEO Photo Signal */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city={location.city}
+        slug={`locations-${city}`}
+        count={4}
+        title={`Recent Roofing Projects in ${location.city}`}
+        subtitle={`Browse completed roofing projects from the ${location.city} area by Best Roofing Now.`}
+        schemaPageUrl={`${SITE_CONFIG.url}/locations/${city}`}
       />
 
       {/* Meet the Turner Family - Personal Touch */}

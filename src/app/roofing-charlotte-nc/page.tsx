@@ -33,7 +33,10 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
-import { IMAGES } from '@/lib/images';
+import { IMAGES, CITY_COORDINATES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
+import { getGeoImages } from '@/lib/geo-images';
 
 export const metadata: Metadata = {
   title: 'Roofing Charlotte NC | #1 Rated Roofing Company (500+ Roofs) | Best Roofing Now',
@@ -323,6 +326,8 @@ const faqs = [
 ];
 
 export default function RoofingCharlotteNCPage() {
+  const inlineImages = getGeoImages({ pageType: 'main-service-area', city: 'Charlotte', count: 3, seed: 'roofing-charlotte-nc-inline' });
+
   return (
     <>
       <BreadcrumbSchema
@@ -565,13 +570,17 @@ export default function RoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
-                src={IMAGES.realProjects.drone1}
-                alt="Best Roofing Now - #1 rated roofing company in Charlotte NC with completed roof project"
-                width={600}
-                height={450}
-                className="rounded-xl shadow-lg"
-              />
+              {inlineImages[0] && (
+                <GeoTaggedProjectImage
+                  image={inlineImages[0]}
+                  width={600}
+                  height={450}
+                  className="rounded-xl shadow-lg"
+                  context={{ serviceName: 'Roofing Charlotte NC' }}
+                  includeSchema={true}
+                  schemaPageUrl={`${SITE_CONFIG.url}/roofing-charlotte-nc`}
+                />
+              )}
               <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4">
                 <div className="flex items-center gap-3">
                   <div className="flex">
@@ -657,16 +666,31 @@ export default function RoofingCharlotteNCPage() {
                   </div>
                   <h3 className="text-xl font-bold text-dark">Residential Roofing in Charlotte NC</h3>
                 </div>
-                <p className="text-gray mb-4">
-                  Charlotte&apos;s diverse neighborhoods - from the historic homes of Dilworth and Myers Park to the newer
-                  construction in Ballantyne and Steele Creek - each have unique roofing requirements. Best Roofing Now
-                  specializes in all residential roofing systems including architectural asphalt shingles, standing seam
-                  metal roofing, synthetic slate, cedar shakes, and tile roofing. We understand Charlotte&apos;s HOA
-                  requirements and can help you choose materials that meet both architectural guidelines and your budget.
-                </p>
-                <Link href="/services/residential-roofing" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent">
-                  Explore Residential Roofing Services <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="md:flex gap-6">
+                  <div className="flex-1">
+                    <p className="text-gray mb-4">
+                      Charlotte&apos;s diverse neighborhoods - from the historic homes of Dilworth and Myers Park to the newer
+                      construction in Ballantyne and Steele Creek - each have unique roofing requirements. Best Roofing Now
+                      specializes in all residential roofing systems including architectural asphalt shingles, standing seam
+                      metal roofing, synthetic slate, cedar shakes, and tile roofing. We understand Charlotte&apos;s HOA
+                      requirements and can help you choose materials that meet both architectural guidelines and your budget.
+                    </p>
+                    <Link href="/services/residential-roofing" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent">
+                      Explore Residential Roofing Services <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                  {inlineImages[1] && (
+                    <div className="mt-4 md:mt-0 md:w-48 flex-shrink-0">
+                      <GeoTaggedProjectImage
+                        image={inlineImages[1]}
+                        width={192}
+                        height={144}
+                        className="rounded-lg w-full object-cover"
+                        context={{ serviceName: 'Residential roofing' }}
+                      />
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Commercial Roofing */}
@@ -909,62 +933,17 @@ export default function RoofingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Project Gallery */}
-      <section className="section bg-white">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Recent Roofing Projects in Charlotte NC
-            </h2>
-            <p className="text-gray text-lg">
-              Browse our portfolio of completed roofing projects throughout the Charlotte area.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project1}
-                alt="Completed residential roofing project in Charlotte NC"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.certainteed1}
-                alt="CertainTeed shingle installation by Best Roofing Now in Charlotte"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.drone2}
-                alt="Aerial view of completed roofing project in Charlotte NC"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
-                src={IMAGES.realProjects.project3}
-                alt="Professional roofing work completed in Charlotte area"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
-            >
-              View All Projects
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Geo-Tagged Project Gallery */}
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roofing-charlotte-nc"
+        count={8}
+        title="Recent Roofing Projects in Charlotte NC"
+        subtitle="Browse our portfolio of completed roofing projects throughout the Charlotte area."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-charlotte-nc`}
+        includeSchema={true}
+      />
 
       {/* FAQ Section with Voice Search Optimization */}
       <section className="section bg-light">

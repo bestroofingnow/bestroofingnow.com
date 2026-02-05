@@ -29,6 +29,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
@@ -933,6 +934,16 @@ export default function RoofingCompanyCharlotteNCPage() {
         service="Roofing Company"
         serviceSlug="roofing"
         title="Trusted Roofing Company Serving Nearby Cities"
+      />
+
+      <GeoProjectGalleryStrip
+        pageType="main-service-area"
+        city="Charlotte"
+        slug="roofing-company-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-company-charlotte-nc`}
       />
 
       {/* Final CTA */}

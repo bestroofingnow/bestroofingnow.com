@@ -22,6 +22,7 @@ import {
   Home,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { Button } from '@/components/ui/Button';
@@ -929,6 +930,16 @@ export default function AffordableRoofingCharlottePage() {
         citySlug="charlotte-nc"
         title="Our Roofing Services in Charlotte"
         subtitle="Quality roofing services at fair prices throughout the Charlotte metro area"
+      />
+
+      <GeoProjectGalleryStrip
+        pageType="other"
+        city="Charlotte"
+        slug="affordable-roofing-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`}
       />
 
       {/* Final CTA */}

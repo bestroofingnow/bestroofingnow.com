@@ -20,6 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -543,6 +544,16 @@ export default function RoofingHuntersvilleNCPage() {
         service="Roofing Services"
         serviceSlug="roofing"
         title="Roofing Services in Nearby Lake Norman Cities"
+      />
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Huntersville"
+        slug="roofing-huntersville-nc"
+        count={4}
+        title="Recent Roofing Projects in Huntersville, NC"
+        subtitle="Browse completed roofing projects from the Huntersville area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-huntersville-nc`}
       />
 
       {/* Final CTA */}

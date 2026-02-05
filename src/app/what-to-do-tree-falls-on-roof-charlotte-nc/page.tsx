@@ -25,6 +25,7 @@ import {
   WebPageSchema,
   ArticleSchema,
 } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -642,6 +643,16 @@ export default function WhatToDoTreeFallsOnRoofPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="other"
+        city="Charlotte"
+        slug="what-to-do-tree-falls-on-roof-charlotte-nc"
+        count={4}
+        title="Recent Roofing Projects in Charlotte, NC"
+        subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`}
+      />
 
       <CTASection
         title="Need Emergency Help Now?"

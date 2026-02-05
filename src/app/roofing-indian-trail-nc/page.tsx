@@ -24,6 +24,7 @@ import {
   TreePine,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
@@ -902,6 +903,16 @@ export default function RoofingIndianTrailNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Indian Trail"
+        slug="roofing-indian-trail-nc"
+        count={4}
+        title="Recent Roofing Projects in Indian Trail, NC"
+        subtitle="Browse completed roofing projects from the Indian Trail area by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/roofing-indian-trail-nc`}
+      />
 
       {/* Final CTA */}
       <CTASection
