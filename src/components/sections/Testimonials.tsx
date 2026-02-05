@@ -97,7 +97,7 @@ export function Testimonials() {
             <a
               href="https://www.google.com/search?q=Best+Roofing+Now+Charlotte+NC+reviews"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center gap-2 bg-white text-primary font-semibold py-3 px-6 rounded-lg hover:bg-white/90 hover:scale-105 hover:shadow-xl transition-all duration-300 shadow-lg"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">

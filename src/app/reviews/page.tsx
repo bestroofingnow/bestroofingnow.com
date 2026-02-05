@@ -9,7 +9,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Best Roofing Now Reviews | 5-Star Charlotte Roofing Company',
+  title: 'Customer Reviews | 5-Star Rated',
   description:
     'Read 62+ five-star reviews from real Charlotte homeowners about Best Roofing Now. BBB A+ rated, veteran-owned roofing company. See why we are Charlotte\'s most trusted roofers.',
   keywords: [
@@ -199,7 +199,7 @@ export default function ReviewsPage() {
             <a
               href={SITE_CONFIG.externalProfiles.googleMaps}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
             >
               Google
@@ -208,7 +208,7 @@ export default function ReviewsPage() {
             <a
               href={SITE_CONFIG.externalProfiles.bbb}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
             >
               BBB
@@ -217,7 +217,7 @@ export default function ReviewsPage() {
             <a
               href={SITE_CONFIG.social.facebook}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
             >
               Facebook
@@ -226,7 +226,7 @@ export default function ReviewsPage() {
             <a
               href={SITE_CONFIG.social.yelp}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
             >
               Yelp
@@ -235,7 +235,7 @@ export default function ReviewsPage() {
             <a
               href={SITE_CONFIG.externalProfiles.nextdoor}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center gap-2 px-4 py-2 bg-light rounded-full hover:bg-primary/10 transition"
             >
               Nextdoor
@@ -363,7 +363,7 @@ export default function ReviewsPage() {
           <a
             href={SITE_CONFIG.externalProfiles.googleMaps}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             className="btn btn-primary"
           >
             Leave a Google Review

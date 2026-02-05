@@ -33,11 +33,11 @@ export function DirectoryCitations({
             <a
               href={link.url}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="text-primary hover:text-accent transition-colors inline-flex items-center gap-1"
-              aria-label={`Visit our ${link.name} profile`}
+              aria-label={`Visit our ${link.displayName} profile`}
             >
-              {link.name}
+              {link.displayName}
               <ExternalLink className="w-3 h-3" aria-hidden="true" />
             </a>
             {index < links.length - 1 && (
@@ -59,12 +59,12 @@ export function DirectoryCitations({
               <a
                 href={link.url}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="flex items-center gap-2 text-primary hover:text-accent transition-colors"
-                aria-label={`Visit our ${link.name} profile`}
+                aria-label={`Visit our ${link.displayName} profile`}
               >
                 <ExternalLink className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-                <span>{link.name}</span>
+                <span>{link.displayName}</span>
               </a>
             </li>
           ))}
@@ -73,7 +73,7 @@ export function DirectoryCitations({
     );
   }
 
-  // Footer variant
+  // Footer variant - uses short name for compact display
   return (
     <div className={`${className}`}>
       <h4 className="font-semibold text-white mb-3">{title}</h4>
@@ -83,9 +83,9 @@ export function DirectoryCitations({
             key={link.url}
             href={link.url}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             className="text-gray-400 hover:text-white transition-colors text-sm"
-            aria-label={`Visit our ${link.name} profile`}
+            aria-label={`Visit our ${link.displayName} profile`}
           >
             {link.name}
           </a>
@@ -109,9 +109,9 @@ export function TrustBadges({ className = '' }: { className?: string }) {
           key={link.url}
           href={link.url}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           className="px-4 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-sm font-medium text-primary hover:text-accent"
-          aria-label={`View our ${link.name} profile`}
+          aria-label={`View our ${link.displayName} profile`}
         >
           {link.name}
         </a>

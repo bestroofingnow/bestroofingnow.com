@@ -339,7 +339,7 @@ export default function FreeRoofInspectionPage() {
             <a
               href={`https://www.google.com/search?q=Best+Roofing+Now+Charlotte+NC+reviews`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
             >
               See all {SITE_CONFIG.googleReviewCount}+ Google reviews

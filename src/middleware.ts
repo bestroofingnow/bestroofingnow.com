@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { KNOWN_BLOG_SLUGS } from '@/lib/blog-slugs';
 
 // Known routes that should NOT be redirected to /blog/
 const KNOWN_ROUTES = new Set([
@@ -30,6 +31,7 @@ const KNOWN_ROUTES = new Set([
   'sitemaps',
   'privacy-policy',
   'terms',
+  'trusted-partners',
   // GBP-aligned service category pages
   'roofing-services',
   'gutter-services',
@@ -126,21 +128,17 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // For any other root-level path, check if it could be an old blog post
-  // and redirect to /blog/{slug}
-  // This catches old WordPress URLs like /post-slug and redirects to /blog/post-slug
-
-  // Only redirect single-segment paths (not /foo/bar)
+  // Only redirect single-segment paths that are KNOWN blog posts.
+  // Unknown paths fall through to Next.js which returns a proper 404.
   const segments = pathname.split('/').filter(Boolean);
   if (segments.length === 1) {
     const slug = segments[0];
 
-    // Redirect old blog URLs to new structure
-    const url = request.nextUrl.clone();
-    url.pathname = `/blog/${slug}`;
-
-    // Use 301 for permanent redirect (SEO-friendly)
-    return NextResponse.redirect(url, { status: 301 });
+    if (KNOWN_BLOG_SLUGS.has(slug)) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/blog/${slug}`;
+      return NextResponse.redirect(url, { status: 301 });
+    }
   }
 
   return NextResponse.next();

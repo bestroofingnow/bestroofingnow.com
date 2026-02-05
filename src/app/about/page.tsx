@@ -252,7 +252,7 @@ export default function AboutPage() {
                     <a
                       href={member.linkedIn}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       className="inline-flex items-center gap-2 text-sm text-primary hover:text-accent mt-4 transition"
                     >
                       View LinkedIn Profile <ArrowRight className="w-4 h-4" />
@@ -394,7 +394,7 @@ export default function AboutPage() {
                       <a
                         href={cert.verificationUrl}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         className="inline-flex items-center gap-1 text-sm text-primary hover:text-accent mt-3 transition"
                       >
                         Verify Certification <ArrowRight className="w-4 h-4" />
@@ -423,7 +423,7 @@ export default function AboutPage() {
             <a
               href={SITE_CONFIG.externalProfiles.bbb}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition-shadow group"
             >
               <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3 group-hover:text-accent transition-colors" />
@@ -433,7 +433,7 @@ export default function AboutPage() {
             <a
               href={SITE_CONFIG.externalProfiles.certainteed}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition-shadow group"
             >
               <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3 group-hover:text-accent transition-colors" />
@@ -530,7 +530,7 @@ export default function AboutPage() {
               <a
                 href="https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition text-primary font-semibold"
               >
                 <Award className="w-5 h-5" />
@@ -540,7 +540,7 @@ export default function AboutPage() {
               <a
                 href="https://topsitenet.com/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition text-primary font-semibold"
               >
                 <Award className="w-5 h-5" />

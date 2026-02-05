@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin, Shield } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { getCurrentYear, trackPhoneClick } from '@/lib/utils';
 import { EstimateButton } from '@/components/estimate';
@@ -88,7 +88,7 @@ export function Footer() {
                   key={social.label}
                   href={social.href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="w-11 h-11 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
                   aria-label={`Follow us on ${social.label}`}
                 >
@@ -107,7 +107,7 @@ export function Footer() {
                 {/* Review Platforms */}
                 {getLinksByCategory('reviews').slice(0, 4).map((link, idx) => (
                   <span key={link.url} className="inline-flex items-center">
-                    <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">{link.name}</a>
+                    <a href={link.url} target="_blank" rel="noopener" className="text-white/80 hover:text-white" aria-label={link.displayName}>{link.name}</a>
                     {idx < 3 && <span className="text-white/30 ml-3">|</span>}
                   </span>
                 ))}
@@ -117,7 +117,7 @@ export function Footer() {
                 {/* Certification Links */}
                 {getLinksByCategory('certification').map((link, idx, arr) => (
                   <span key={link.url} className="inline-flex items-center">
-                    <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">{link.name}</a>
+                    <a href={link.url} target="_blank" rel="noopener" className="text-white/80 hover:text-white" aria-label={link.displayName}>{link.name}</a>
                     {idx < arr.length - 1 && <span className="text-white/30 ml-3">|</span>}
                   </span>
                 ))}
@@ -125,7 +125,7 @@ export function Footer() {
                 {getLinksByCategory('local-chamber').slice(0, 2).map((link) => (
                   <span key={link.url} className="inline-flex items-center">
                     <span className="text-white/30 mr-3">|</span>
-                    <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">{link.name}</a>
+                    <a href={link.url} target="_blank" rel="noopener" className="text-white/80 hover:text-white" aria-label={link.displayName}>{link.name}</a>
                   </span>
                 ))}
               </div>
@@ -350,20 +350,10 @@ export function Footer() {
                 href="https://app.getpowerpay.com/apply/16995"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 bg-[#ee9c48] hover:bg-[#d98a3a] text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
               >
-                <Image
-                  src="https://getpowerpay.com/badges/home-improvement-style2.png"
-                  alt="PowerPay Roof Financing - Apply Now"
-                  width={200}
-                  height={80}
-                  className="w-[200px] block"
-                  loading="lazy"
-                  unoptimized
-                />
-                <span className="block text-center text-xs font-bold text-[#ee9c48]">
-                  Roof Financing
-                </span>
+                <Shield className="w-4 h-4" aria-hidden="true" />
+                Apply for Roof Financing
               </a>
             </div>
           </div>
@@ -391,6 +381,9 @@ export function Footer() {
               </Link>
               <Link href="/sitemap" className="text-white/90 hover:text-white">
                 Sitemap
+              </Link>
+              <Link href="/trusted-partners" className="text-white/90 hover:text-white">
+                Trusted Partners
               </Link>
             </div>
           </div>

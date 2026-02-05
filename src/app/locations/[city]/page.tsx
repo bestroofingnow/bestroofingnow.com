@@ -615,15 +615,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Check if this is a Lake Norman area town
   const isLakeNormanArea = LAKE_NORMAN_LOCATIONS.some(ln => city.includes(ln.replace('-nc', '')));
 
-  // Title format: "Top-Rated Roofing Company in {City} NC | {Trust Signal} | Best Roofing Now"
-  // This is more defensible than "#1" claims and backed by actual reviews
+  // Title: keep under 42 chars so total with template stays under 60
   const title = isCharlotte
-    ? `Top-Rated Roofing Company in Charlotte NC | 500+ Roofs Installed | Best Roofing Now`
+    ? `Top Roofer Charlotte NC | 500+ Roofs`
     : isLakeNormanPage
-    ? `Top-Rated Lake Norman Roofing Company | Waterfront Specialists | Best Roofing Now`
+    ? `Lake Norman Roofing | Waterfront`
     : isLakeNormanArea
-    ? `Top-Rated Roofing Company in ${location.city} NC | Lake Norman Area | Best Roofing Now`
-    : `Top-Rated Roofing Company in ${location.city}, ${location.state} | 5-Star Reviews | Best Roofing Now`;
+    ? `Top Roofer ${location.city} NC | 5-Star`
+    : `Top Roofer ${location.city} ${location.state} | 5-Star`;
 
   const description = isCharlotte
     ? `Looking for a trusted roofing company in Charlotte NC? Best Roofing Now is a 5-star rated, veteran-owned roofer with 500+ roofs installed. BBB A+ rated. Free inspections, storm damage experts. Call (704) 605-6047.`
@@ -1067,7 +1066,7 @@ export default async function LocationPage({ params }: PageProps) {
                       <a
                         href={SITE_CONFIG.externalProfiles.googleMaps}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition mt-2"
                       >
                         <MapPin className="w-4 h-4" />
@@ -1478,7 +1477,7 @@ export default async function LocationPage({ params }: PageProps) {
                       <a
                         href={SITE_CONFIG.externalProfiles.googleMaps}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition text-sm"
                       >
                         <MapPin className="w-4 h-4" />
@@ -1647,7 +1646,7 @@ export default async function LocationPage({ params }: PageProps) {
                 <a
                   href="https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="btn bg-white text-primary hover:bg-gray-100"
                 >
                   View Chamber Profile
@@ -1655,7 +1654,7 @@ export default async function LocationPage({ params }: PageProps) {
                 <a
                   href="https://lknconnectcommunity.com/business-listing/best-roofing-now-2/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="btn bg-white/20 text-white hover:bg-white/30"
                 >
                   LKN Connect
@@ -1739,7 +1738,7 @@ export default async function LocationPage({ params }: PageProps) {
                 <a
                   href="https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="btn bg-white text-primary hover:bg-gray-100"
                 >
                   BBB Profile
@@ -1747,7 +1746,7 @@ export default async function LocationPage({ params }: PageProps) {
                 <a
                   href="https://www.charlotteroofinghub.com/companies/best-roofing-now"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="btn bg-white/20 text-white hover:bg-white/30"
                 >
                   Charlotte Roofing Hub
@@ -1755,7 +1754,7 @@ export default async function LocationPage({ params }: PageProps) {
                 <a
                   href="https://g.page/r/CaUQ2-TmxmVZEAE/review"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="btn bg-white/20 text-white hover:bg-white/30"
                 >
                   Google Reviews

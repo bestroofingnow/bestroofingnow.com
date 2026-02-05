@@ -2999,3 +2999,44 @@ export function LocationAISearchBundle({ city, state, pageUrl }: LocationAISearc
     </>
   );
 }
+
+// Partner Network Schema - ItemList of trusted partner businesses
+interface PartnerSchemaItem {
+  name: string;
+  url: string;
+  description: string;
+  location: string;
+  serviceType: string;
+}
+
+export function PartnerNetworkSchema({ partners }: { partners: PartnerSchemaItem[] }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Trusted Partners & Roofing Network',
+    description: 'Curated network of trusted roofing contractors and home service professionals recommended by Best Roofing Now.',
+    numberOfItems: partners.length,
+    itemListElement: partners.map((partner, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': partner.serviceType === 'roofing-network' ? 'RoofingContractor' : 'LocalBusiness',
+        name: partner.name,
+        url: partner.url,
+        description: partner.description,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: partner.location.split(',')[0]?.trim(),
+          addressRegion: partner.location.split(',')[1]?.trim(),
+        },
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
