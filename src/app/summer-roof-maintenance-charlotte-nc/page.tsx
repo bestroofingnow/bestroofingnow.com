@@ -26,9 +26,10 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Summer Roof Maintenance Charlotte NC | Heat Protection | Best Roofing Now',
+  title: 'Summer Roof Maintenance Charlotte',
   description:
     'Expert summer roof maintenance in Charlotte NC. Protect your roof from UV damage, heat stress, and summer storms. Professional inspections, ventilation upgrades, and preventive care.',
   keywords: [
@@ -633,6 +634,19 @@ export default function SummerRoofMaintenanceCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Summer Roof Maintenance"
+
+      />
+
       <CTASection
         title="Ready to Protect Your Roof This Summer?"
         subtitle="Schedule your summer maintenance before peak heat arrives. Free inspections and honest recommendations from Charlotte's trusted roofing experts."

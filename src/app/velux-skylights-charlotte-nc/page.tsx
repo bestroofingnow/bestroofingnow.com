@@ -23,9 +23,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'VELUX Skylights Charlotte NC | Certified Installers | Best Roofing Now',
+  title: 'VELUX Skylights Charlotte NC',
   description:
     'VELUX skylight installation in Charlotte NC. Certified installers for solar-powered, fixed, and venting skylights with no-leak warranty. Sun Tunnel tubular skylights. Free estimates.',
   keywords: [
@@ -603,6 +604,19 @@ export default function VeluxSkylightsCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Velux Skylights"
+
+      />
+
       <CTASection
         title="Ready to Brighten Your Home?"
         subtitle="Get a free, no-obligation estimate for VELUX skylight installation. Our certified team will assess your home and recommend the best skylight solutions for your needs."

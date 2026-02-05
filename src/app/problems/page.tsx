@@ -5,7 +5,7 @@ import { SITE_CONFIG, ROOFING_PROBLEMS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Common Roofing Problems | Best Roofing Now Charlotte NC',
+  title: 'Common Roofing Problems',
   description: 'Expert solutions for common roofing problems including leaks, storm damage, missing shingles, and more. Fast repairs in Charlotte NC.',
   keywords: [
     'roofing problems',
@@ -58,6 +58,22 @@ export default function ProblemsPage() {
               >
                 Schedule Inspection
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Overview */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                Charlotte&apos;s climate puts roofs through a demanding cycle: intense summer UV, heavy spring thunderstorms, occasional hail, and winter ice. Over time, these conditions cause shingle granule loss, flashing failures, valley leaks, and ventilation issues that most homeowners do not notice until water stains appear on ceilings. The guides below cover the most common roof problems we see in the Charlotte metro area, explain how to identify them early, and outline the repair options available.
+              </p>
+              <p>
+                If you spot any of these warning signs — water spots, curling shingles, daylight through the attic, or granules in gutters — call us for a free inspection. Catching problems early almost always saves money compared to waiting until they escalate into structural damage.
+              </p>
             </div>
           </div>
         </div>

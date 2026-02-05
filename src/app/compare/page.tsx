@@ -5,7 +5,7 @@ import { SITE_CONFIG, ROOFING_COMPARISONS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Roofing Material Comparisons | Best Roofing Now Charlotte NC',
+  title: 'Roofing Material Comparisons',
   description: 'Compare roofing materials side-by-side. Metal vs shingles, tile vs asphalt, GAF vs CertainTeed. Make an informed decision for your Charlotte home.',
   keywords: [
     'roofing material comparison',

@@ -1,7 +1,6 @@
 'use client';
 
-import Image from 'next/image';
-import { Shield } from 'lucide-react';
+import { Shield, DollarSign } from 'lucide-react';
 
 interface FinancingBannerProps {
   className?: string;
@@ -17,17 +16,11 @@ export function FinancingBanner({ className = '', variant = 'sidebar' }: Financi
             href="https://app.getpowerpay.com/apply/16995"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 hover:opacity-90 transition-opacity"
+            className="flex-shrink-0 bg-gradient-to-br from-[#ee9c48] to-[#d98a3a] text-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow text-center"
           >
-            <Image
-              src="https://getpowerpay.com/banners/300x250/1.png"
-              alt="PowerPay Roof Financing - Apply Now"
-              width={300}
-              height={250}
-              className="rounded-lg shadow-md"
-              loading="lazy"
-              unoptimized
-            />
+            <DollarSign className="w-10 h-10 mx-auto mb-2" aria-hidden="true" />
+            <span className="block text-lg font-bold">Apply Now</span>
+            <span className="block text-sm opacity-90">Roof Financing</span>
           </a>
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-primary mb-2">
@@ -46,24 +39,21 @@ export function FinancingBanner({ className = '', variant = 'sidebar' }: Financi
     );
   }
 
-  // Sidebar variant (300x250 banner)
+  // Sidebar variant
   return (
     <div className={`text-center ${className}`}>
       <a
         href="https://app.getpowerpay.com/apply/16995"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block hover:opacity-90 transition-opacity"
+        className="block bg-gradient-to-br from-[#ee9c48] to-[#d98a3a] text-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow mx-auto max-w-[300px]"
       >
-        <Image
-          src="https://getpowerpay.com/banners/300x250/1.png"
-          alt="PowerPay Roof Financing - Apply Now"
-          width={300}
-          height={250}
-          className="rounded-lg shadow-md mx-auto"
-          loading="lazy"
-          unoptimized
-        />
+        <DollarSign className="w-12 h-12 mx-auto mb-3" aria-hidden="true" />
+        <span className="block text-xl font-bold mb-1">Roof Financing</span>
+        <span className="block text-sm opacity-90 mb-3">Affordable monthly payments</span>
+        <span className="inline-block bg-white text-[#d98a3a] font-bold px-4 py-2 rounded-lg text-sm">
+          Apply Now
+        </span>
       </a>
       <p className="mt-3 text-sm text-gray-600 flex items-center justify-center gap-1.5">
         <Shield className="w-4 h-4 text-green-600" aria-hidden="true" />

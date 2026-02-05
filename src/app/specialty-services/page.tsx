@@ -24,6 +24,8 @@ import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Specialty Roofing Services Charlotte NC | Skylights, Ventilation & More',
@@ -372,6 +374,15 @@ export default function SpecialtyServicesPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="service" city="Charlotte" slug="specialty-services" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Specialty Roofing Services"
+      />
 
       {/* CTA */}
       <CTASection

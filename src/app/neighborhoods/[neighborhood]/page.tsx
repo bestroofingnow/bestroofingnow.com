@@ -18,6 +18,8 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import {
   Neighborhood,
   NEIGHBORHOODS,
@@ -191,7 +193,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const displayName = neighborhood?.name ||
     neighborhoodSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
-  const title = `Roofing Services in ${displayName} Charlotte | Best Roofing Now`;
+  const title = `Roofer ${displayName} Charlotte NC`;
   const description = neighborhood
     ? `${displayName} roofing contractor serving Charlotte NC. Expert roof repair, replacement & storm damage services for ${displayName} homes. ${neighborhood.homeStyles.split(',')[0]}. Free inspections. Call ${SITE_CONFIG.phone}.`
     : `Professional roofing services in ${displayName}, Charlotte NC. Local roofer with 5-star rating. Roof repair, replacement, and storm damage. Free estimates! ${SITE_CONFIG.phone}`;
@@ -752,6 +754,16 @@ export default async function NeighborhoodPage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="location" city="Charlotte" slug={neighborhoodSlug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service={`Roofing in ${displayName}`}
+      />
 
       {/* CTA Section */}
       <CTASection

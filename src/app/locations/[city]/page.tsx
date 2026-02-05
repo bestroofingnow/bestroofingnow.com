@@ -36,6 +36,7 @@ import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { getClimateData, CHARLOTTE_CLIMATE } from '@/lib/climate';
 import { LAKE_NORMAN_LOCATIONS } from '@/lib/directory-links';
+import { getCityGeoData, getGoogleMapsEmbedUrl, getDirectionsUrl } from '@/lib/city-geo-data';
 
 // Location-specific content for unique pages
 const locationContent: Record<
@@ -753,6 +754,7 @@ export default async function LocationPage({ params }: PageProps) {
   const isLakeNorman = LAKE_NORMAN_LOCATIONS.some(ln => city.includes(ln.replace('-nc', '')));
   const pageUrl = `${SITE_CONFIG.url}/locations/${city}`;
   const heroImage = LOCATION_HERO_IMAGES[city] || IMAGES.hero.roofTeam;
+  const geoData = getCityGeoData(city);
 
   // Calculate response time based on distance
   const responseTime = location.distance <= 15 ? '30-45 minutes' : location.distance <= 25 ? '45-60 minutes' : '1-2 hours';
@@ -1758,6 +1760,66 @@ export default async function LocationPage({ params }: PageProps) {
                   className="btn bg-white/20 text-white hover:bg-white/30"
                 >
                   Google Reviews
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Google Maps Embed & Authority Links - Geo Signal */}
+      {geoData && (
+        <section className="py-12 bg-light">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center gap-2 mb-6">
+                <MapPin className="w-5 h-5 text-primary" aria-hidden="true" />
+                <h2 className="text-2xl md:text-3xl font-bold text-primary">
+                  Roofing Services in {location.city}, {location.state}
+                </h2>
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-md mb-6">
+                <iframe
+                  src={getGoogleMapsEmbedUrl(geoData)}
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`Map of ${location.city}, ${location.state} - Best Roofing Now service area`}
+                  className="w-full"
+                />
+              </div>
+              <div className="flex flex-wrap items-center gap-4 text-sm">
+                <a
+                  href={geoData.wikipediaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-primary hover:text-accent transition-colors font-medium"
+                >
+                  <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                  About {location.city}, {location.state}
+                </a>
+                <span className="text-gray-300" aria-hidden="true">|</span>
+                <a
+                  href={geoData.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-primary hover:text-accent transition-colors font-medium"
+                >
+                  <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
+                  View {location.city} on Google Maps
+                </a>
+                <span className="text-gray-300" aria-hidden="true">|</span>
+                <a
+                  href={getDirectionsUrl(geoData)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-primary hover:text-accent transition-colors font-medium"
+                >
+                  <Navigation className="w-3.5 h-3.5" aria-hidden="true" />
+                  Get Directions
                 </a>
               </div>
             </div>

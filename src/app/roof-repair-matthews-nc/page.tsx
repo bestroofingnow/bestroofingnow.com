@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Matthews NC | South Charlotte Roofers | Best Roofing Now',
+  title: 'Roof Repair Matthews NC | Fast',
   description:
     'Fast, reliable roof repair in Matthews NC and South Charlotte. Fix leaks, storm damage, and shingle problems. BBB A+ rated, veteran-owned. Same-day emergency service available. Free estimates.',
   keywords: [
@@ -618,7 +620,26 @@ export default function RoofRepairMatthewsNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Matthews"
+        slug="roof-repair-matthews-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Matthews"
+
+        state="NC"
+
+        citySlug="matthews-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Need Roof Repairs in Matthews?"
         subtitle="Get a free, no-obligation estimate from South Charlotte's trusted roof repair experts. We diagnose problems accurately, provide honest recommendations, and deliver quality repairs at fair prices."

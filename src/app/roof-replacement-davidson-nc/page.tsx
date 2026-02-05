@@ -24,10 +24,12 @@ import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Davidson NC | Davidson College Area | Best Roofing Now',
+  title: 'Roof Replacement Davidson NC',
   description:
     'Need a new roof in Davidson NC? Best Roofing Now specializes in roof replacement for Davidson homes, including historic properties near Davidson College. BBB A+ rated, veteran-owned. Premium materials with 50-year warranties. Free estimates!',
   keywords: [
@@ -622,7 +624,27 @@ export default function RoofReplacementDavidsonNCPage() {
         </div>
       </section>
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Davidson"
+        slug="roof-replacement-davidson-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Davidson"
+
+        state="NC"
+
+        citySlug="davidson-nc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Ready to Replace Your Davidson Roof?"
         subtitle="Get a free, no-obligation quote from Davidson's trusted roofing experts. We'll help you choose the perfect roofing system for your home and budget."

@@ -41,6 +41,7 @@ import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Contractor Charlotte NC | Licensed & Certified | GAF CertainTeed',
@@ -919,6 +920,19 @@ export default function RoofingContractorCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Contractor"
+
+      />
+
       <CTASection
         title="Ready to Work with Charlotte's Best Roofing Contractor?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."

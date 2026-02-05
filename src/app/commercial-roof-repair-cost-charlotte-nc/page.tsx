@@ -38,6 +38,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Commercial Roof Repair Cost Charlotte NC | 2026 Pricing',
@@ -753,6 +754,19 @@ export default function CommercialRoofRepairCostCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Commercial Roof Repair Cost"
+
+      />
+
       <CTASection
         title="Ready to Get an Honest Commercial Roof Repair Estimate?"
         subtitle="Get a free, no-obligation estimate for your commercial roof repair. Our team will assess your building, provide transparent pricing, and help you decide whether repair, re-coat, or replacement makes the most financial sense for your property."

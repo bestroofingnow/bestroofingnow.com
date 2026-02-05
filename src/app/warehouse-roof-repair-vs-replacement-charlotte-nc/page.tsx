@@ -28,6 +28,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Warehouse Roof: Repair vs Replace Charlotte NC',
@@ -504,6 +505,19 @@ export default function WarehouseRoofRepairVsReplacementPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Warehouse Roof Repair Vs Replacement"
+
+      />
+
       <CTASection
         title="Need a Professional Assessment of Your Warehouse Roof?"
         subtitle="Get a free inspection from Best Roofing Now. We'll evaluate your roof's condition and provide honest recommendations - repair, coat, or replace."

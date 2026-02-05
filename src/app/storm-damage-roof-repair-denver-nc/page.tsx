@@ -31,9 +31,11 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Denver NC | Insurance Help | Best Roofing Now',
+  title: 'Storm Damage Repair Denver NC',
   description:
     'Storm damage roof repair in Denver NC. Expert hail, wind, and emergency repairs on Lake Norman western shore. Insurance claim help. Free inspections!',
   keywords: [
@@ -647,7 +649,22 @@ export default function StormDamageRoofRepairDenverNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Denver" slug="storm-damage-roof-repair-denver-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Storm Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Need Storm Damage Help in Denver NC?"
         subtitle="Contact us today for a free storm damage inspection on the Lake Norman western shore. We'll document all damage, help file your insurance claim with Lincoln County expertise, and restore your roof to pre-storm condition."

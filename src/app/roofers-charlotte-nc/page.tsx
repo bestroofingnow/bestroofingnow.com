@@ -40,9 +40,10 @@ import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
 import { getGeoImages } from '@/lib/geo-images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Charlotte NC | Top-Rated Local Roofers (5.0 Stars) | Best Roofing Now',
+  title: 'Roofers Charlotte NC | 5-Star',
   description:
     'Looking for trusted roofers in Charlotte NC? Best Roofing Now is 5-star rated with 62+ Google reviews, BBB A+ accredited, veteran-owned. Licensed NC roofers with 500+ roofs completed. Free estimates! Call (704) 605-6047.',
   keywords: [
@@ -893,6 +894,19 @@ export default function RoofersCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofers"
+
+      />
+
       <CTASection
         title="Ready to Work with Charlotte's Top-Rated Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."

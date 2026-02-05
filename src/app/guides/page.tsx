@@ -6,7 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Roofing Guides & Resources | Best Roofing Now Charlotte NC',
+  title: 'Roofing Guides & Resources',
   description: 'Expert roofing guides for Charlotte homeowners. Learn about roof costs, maintenance tips, insurance claims, and how to choose the right roofing contractor.',
   keywords: [
     'roofing guide Charlotte',

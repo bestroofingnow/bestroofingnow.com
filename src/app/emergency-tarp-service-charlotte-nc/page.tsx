@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Emergency Roof Tarp Service Charlotte NC | 24/7 | Best Roofing Now',
+  title: 'Emergency Tarp Service Charlotte',
   description:
     'Emergency roof tarp service in Charlotte NC. 24/7 storm response for damaged roofs. Fast tarping to prevent water damage. Call Best Roofing Now for immediate help!',
   keywords: [
@@ -583,6 +584,19 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Emergency Tarp Service"
+
+      />
+
       <CTASection
         title="Storm Damage? Get Emergency Help Now"
         subtitle="Our 24/7 emergency crews are ready to protect your home with professional roof tarping. Don't wait - call now to prevent water damage."

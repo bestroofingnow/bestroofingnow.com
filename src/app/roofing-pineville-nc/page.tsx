@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Pineville NC | Carolina Place Area Roofers | Best Roofing Now',
+  title: 'Roofing Pineville NC | Top Rated',
   description:
     'Looking for a trusted roofing company in Pineville NC? Best Roofing Now serves the Carolina Place area from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
   keywords: [
@@ -555,6 +556,19 @@ export default function RoofingPinevilleNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Pineville"
+
+        state="NC"
+
+        citySlug="pineville-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing Services in Pineville NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."

@@ -40,9 +40,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Flat Roof Coating Charlotte NC | Silicone, Acrylic & Elastomeric | Best Roofing Now',
+  title: 'Flat Roof Coating Charlotte NC',
   description:
     'Professional flat roof coating services in Charlotte NC. Silicone, acrylic & elastomeric roof coatings that extend roof life 15-20 years at 50-70% less than replacement. Free infrared moisture scans. Licensed & insured.',
   keywords: [
@@ -668,6 +669,19 @@ export default function FlatRoofCoatingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Flat Roof Coating"
+
+      />
+
       <CTASection
         title="Ready to Extend Your Flat Roof's Life?"
         subtitle="Get a free, no-obligation estimate for your flat roof coating project. Our team will perform a thorough inspection including infrared moisture scanning and provide honest recommendations tailored to your roof's condition and your budget."

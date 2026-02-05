@@ -24,9 +24,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Rock Hill SC | York County Roofing Company | Best Roofing Now',
+  title: 'Roofing Rock Hill SC | 5-Star',
   description:
     'Looking for roofing services in Rock Hill SC? Best Roofing Now serves Rock Hill and York County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation near Winthrop and the Galleria.',
   keywords: [
@@ -594,7 +596,22 @@ export default function RoofingRockHillSCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Rock Hill" slug="roofing-rock-hill-sc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Rock Hill"
+
+        state="SC"
+
+        citySlug="rock-hill-sc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready to Work with Rock Hill's Trusted Roofing Team?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your York County home's needs."

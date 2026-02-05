@@ -10,6 +10,8 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof and Gutter Replacement Charlotte NC | Save with Bundle Pricing',
@@ -369,6 +371,15 @@ export default function RoofAndGutterPage() {
         faqs={bundleFAQs}
         title="Roof & Gutter Replacement FAQ"
         subtitle="Common questions about combining roof and gutter replacement in Charlotte"
+      />
+
+      <GeoProjectGalleryStrip pageType="service" city="Charlotte" slug="roof-and-gutter-replacement" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roof & Gutter Replacement"
       />
 
       {/* CTA */}

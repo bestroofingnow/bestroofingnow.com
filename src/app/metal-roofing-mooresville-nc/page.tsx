@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Metal Roofing Mooresville NC | Standing Seam Experts | Best Roofing Now',
+  title: 'Metal Roofing Mooresville NC',
   description:
     'Premium metal roofing installation in Mooresville NC. Standing seam, metal shingles, and corrugated panels. 50+ year lifespan, energy efficient. Lake Norman\'s metal roofing experts!',
   keywords: [
@@ -574,7 +576,26 @@ export default function MetalRoofingMooresvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="metal-roofing-mooresville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Metal Roofing"
+
+      />
+
       <CTASection
         title="Get Your Free Metal Roofing Estimate in Mooresville"
         subtitle="Contact us today for a free consultation on metal roofing. We'll help you choose the perfect system for your Lake Norman home and provide transparent pricing."

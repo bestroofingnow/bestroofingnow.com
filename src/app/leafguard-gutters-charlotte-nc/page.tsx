@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'LeafGuard Gutters Charlotte NC | Clog-Free Guarantee | Best Roofing Now',
+  title: 'LeafGuard Gutters Charlotte NC',
   description:
     'LeafGuard gutter installation in Charlotte NC. One-piece seamless design with clog-free guarantee. Never clean gutters again! Professional installation with lifetime warranty. Free estimates.',
   keywords: [
@@ -618,6 +619,19 @@ export default function LeafGuardGuttersCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Leafguard Gutters"
+
+      />
+
       <CTASection
         title="Ready to Never Clean Your Gutters Again?"
         subtitle="Get a free, no-obligation estimate for LeafGuard gutters. Our team will assess your home and show you how LeafGuard can protect your property with clog-free performance guaranteed."

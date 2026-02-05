@@ -24,10 +24,12 @@ import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Concord NC | Cabarrus County Roofers | Best Roofing Now',
+  title: 'Roof Replacement Concord NC',
   description:
     'Professional roof replacement in Concord NC. New roof installation for Cabarrus County homes with premium shingles from CertainTeed, GAF & Owens Corning. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -663,7 +665,27 @@ export default function RoofReplacementConcordNCPage() {
         </div>
       </section>
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Concord"
+        slug="roof-replacement-concord-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Concord"
+
+        state="NC"
+
+        citySlug="concord-nc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Ready for a New Roof in Concord?"
         subtitle="Get a free, no-obligation estimate from Cabarrus County's trusted roofing experts. We'll assess your roof, discuss your options, and provide transparent pricing with financing available."

@@ -25,9 +25,10 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Moss & Algae Removal Charlotte NC | Roof Cleaning | Best Roofing Now',
+  title: 'Moss & Algae Removal Charlotte',
   description:
     'Professional moss and algae removal from roofs in Charlotte NC. Soft washing, prevention treatments, and NC humidity solutions. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -680,6 +681,19 @@ export default function MossAlgaeRemovalRoofCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Moss Algae Removal Roof"
+
+      />
+
       <CTASection
         title="Get Your Roof Cleaned Today"
         subtitle="Remove unsightly moss and algae while extending your roof's lifespan. Contact Best Roofing Now for a free estimate on professional roof cleaning."

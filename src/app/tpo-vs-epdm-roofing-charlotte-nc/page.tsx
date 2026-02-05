@@ -27,6 +27,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'TPO vs EPDM Roofing Charlotte NC | Commercial Roof Comparison',
@@ -501,6 +502,19 @@ export default function TPOvsEPDMRoofingPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Tpo Vs Epdm Roofing"
+
+      />
+
       <CTASection
         title="Need Help Choosing Between TPO and EPDM?"
         subtitle="Get expert advice from Best Roofing Now. We'll assess your building, discuss your priorities, and recommend the best roofing system for your specific needs."

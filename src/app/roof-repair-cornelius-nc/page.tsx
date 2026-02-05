@@ -27,9 +27,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Cornelius NC | Lake Norman Emergency Roofers | Best Roofing Now',
+  title: 'Roof Repair Cornelius NC',
   description:
     'Need roof repair in Cornelius NC? Best Roofing Now provides fast, reliable roof repair services near Lake Norman. BBB A+ rated, veteran-owned. Emergency roof repairs, leak fixes, shingle replacement, and storm damage repair. Free estimates!',
   keywords: [
@@ -635,7 +637,26 @@ export default function RoofRepairCorneliusNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Cornelius"
+        slug="roof-repair-cornelius-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Cornelius"
+
+        state="NC"
+
+        citySlug="cornelius-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Ready to Fix Your Cornelius Roof?"
         subtitle="Get a free, no-obligation repair estimate from Lake Norman's trusted roofing experts. We'll assess the damage and provide honest recommendations."

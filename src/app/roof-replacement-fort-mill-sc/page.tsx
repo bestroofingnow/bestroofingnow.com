@@ -26,10 +26,12 @@ import {
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Fort Mill SC | New Roof Installation | Best Roofing Now',
+  title: 'Roof Replacement Fort Mill SC',
   description:
     'Professional roof replacement in Fort Mill SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning. Up to 50-year warranties. BBB A+ rated. Free estimates. Call (704) 605-6047.',
   keywords: [
@@ -530,7 +532,27 @@ export default function RoofReplacementFortMillSCPage() {
         </div>
       </section>
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Fort Mill"
+        slug="roof-replacement-fort-mill-sc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Fort Mill"
+
+        state="SC"
+
+        citySlug="fort-mill-sc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Ready for a New Roof in Fort Mill SC?"
         subtitle="Get a free, no-obligation estimate from York County's trusted roofing contractor. Financing available with payments as low as $99/month."

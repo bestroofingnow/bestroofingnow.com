@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { SEOImage as Image } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import { MapPin, Camera, ChevronRight, Calendar, Star, ArrowRight } from 'lucide-react';
 

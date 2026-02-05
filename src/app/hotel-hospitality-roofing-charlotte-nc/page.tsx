@@ -36,9 +36,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Hotel & Hospitality Roofing Charlotte NC | Hotels, Resorts & Convention Centers | Best Roofing Now',
+  title: 'Hotel Roofing Charlotte NC',
   description:
     'Expert hotel and hospitality roofing contractors in Charlotte NC. We specialize in hotels, resorts, convention centers & restaurants. Minimal guest disruption, fast turnaround. Licensed & insured. Free estimates.',
   keywords: [
@@ -681,6 +682,19 @@ export default function HotelHospitalityRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Hotel & Hospitality Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Hotel Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your hotel, resort, or hospitality property. Our team will assess your building and provide honest recommendations tailored to your guest experience priorities and budget."

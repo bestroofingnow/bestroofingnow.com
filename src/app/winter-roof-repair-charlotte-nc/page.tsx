@@ -25,9 +25,10 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Winter Roof Repair Charlotte NC | Cold Weather Experts | Best Roofing Now',
+  title: 'Winter Roof Repair Charlotte NC',
   description:
     'Expert winter roof repair in Charlotte NC. Cold weather specialists handling ice dam prevention, frozen pipe damage, snow load issues, and emergency repairs. Available 24/7 during winter storms.',
   keywords: [
@@ -633,6 +634,19 @@ export default function WinterRoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Winter Roof Repair"
+
+      />
+
       <CTASection
         title="Need Winter Roof Repair in Charlotte?"
         subtitle="Don't let cold weather damage escalate. Get a free inspection from Charlotte's trusted winter roofing experts. We're available 24/7 for emergencies."

@@ -27,6 +27,8 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof Repair Denver NC | Lake Norman | Free Estimates',
@@ -637,7 +639,26 @@ export default function RoofRepairDenverNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="roof-repair-denver-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Ready to Fix Your Denver NC Roof?"
         subtitle="Get a free, no-obligation repair estimate from Lake Norman's western shore roofing experts. We'll assess the damage and provide honest recommendations for your Denver home."

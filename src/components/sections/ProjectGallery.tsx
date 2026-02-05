@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { SEOImage as Image } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import { MapPin, Camera, ArrowRight } from 'lucide-react';
 import { fetchProjectsWithPhotoData, formatProjectForDisplay, getProjectThumbnail, PMIProject } from '@/lib/pmi-api';

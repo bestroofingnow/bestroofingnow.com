@@ -5,7 +5,7 @@ import { SITE_CONFIG, SEASONAL_ROOFING } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Seasonal Roofing Services | Best Roofing Now Charlotte NC',
+  title: 'Seasonal Roofing Services',
   description: 'Year-round roofing services in Charlotte NC. Spring inspections, summer replacements, fall maintenance, and winter emergency repairs.',
   keywords: [
     'seasonal roofing',

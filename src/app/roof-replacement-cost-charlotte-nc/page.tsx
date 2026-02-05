@@ -24,6 +24,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { Lightbulb, Quote } from 'lucide-react';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof Replacement Cost Charlotte NC | 2026 Price Guide | Free Estimates',
@@ -821,6 +822,19 @@ export default function RoofReplacementCostCharlottePage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Replacement Cost"
+
+      />
+
       <CTASection
         title="Ready to Get Your Roof Replacement Estimate?"
         subtitle="Get a free, no-obligation quote with transparent pricing. Our team will assess your roof and provide honest recommendations tailored to your needs and budget."

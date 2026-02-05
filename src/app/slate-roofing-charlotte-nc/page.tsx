@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Slate Roofing Charlotte NC | Luxury Slate Roof Installation',
@@ -656,6 +657,19 @@ export default function SlateRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Slate Roofing"
+
+      />
+
       <CTASection
         title="Experience the Timeless Elegance of Natural Slate"
         subtitle="Invest in a roof that will protect and beautify your home for generations. Contact Charlotte's trusted slate roofing specialists for a free consultation."

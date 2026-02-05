@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Plaza Midwood Charlotte NC | Historic Craftsman Homes | Best Roofing Now',
+  title: 'Roofing Plaza Midwood Charlotte NC',
   description:
     'Expert roofing services for Plaza Midwood Charlotte NC. Specializing in craftsman homes, bungalows, and historic properties. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
   keywords: [
@@ -557,6 +558,19 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Plaza Midwood"
+
+      />
+
       <CTASection
         title="Ready to Work with Plaza Midwood's Trusted Roofers?"
         subtitle="Get a free, no-obligation estimate from our team. We understand historic homes and will provide honest recommendations for your Plaza Midwood property."

@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Valley Repair Charlotte NC | Valley Leak Experts | Best Roofing Now',
+  title: 'Roof Valley Repair Charlotte NC',
   description:
     'Expert roof valley repair in Charlotte NC. Fix leaking roof valleys with professional metal valley installation and shingle repair. BBB A+ rated, licensed contractor. Free inspections available.',
   keywords: [
@@ -552,6 +553,19 @@ export default function RoofValleyRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Valley Repair"
+
+      />
+
       <CTASection
         title="Ready to Fix Your Roof Valley?"
         subtitle="Don't let a valley leak cause water damage to your home. Get a free inspection and repair estimate from Charlotte's roof valley specialists."

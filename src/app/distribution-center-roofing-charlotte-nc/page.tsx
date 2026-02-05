@@ -38,9 +38,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Distribution Center Roofing Charlotte NC | Warehouse & Logistics Roofs | Best Roofing Now',
+  title: 'Distribution Center Roofing CLT',
   description:
     'Expert distribution center roofing contractors in Charlotte NC. Specializing in fulfillment centers, cold storage, logistics facilities & e-commerce warehouses along the I-85 corridor. TPO, EPDM, metal roofing. Free estimates.',
   keywords: [
@@ -685,6 +686,19 @@ export default function DistributionCenterRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Distribution Center Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Distribution Center Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your distribution center, fulfillment facility, or logistics hub. Our team will assess your building and provide honest recommendations tailored to your operational needs and budget."

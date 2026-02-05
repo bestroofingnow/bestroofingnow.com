@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Gastonia NC | Gaston County Roofers | Best Roofing Now',
+  title: 'Roofing Gastonia NC | Top Rated',
   description:
     'Looking for roofing services in Gastonia NC? Best Roofing Now serves Gastonia and Gaston County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation along the I-85 corridor.',
   keywords: [
@@ -607,6 +608,19 @@ export default function RoofingGastoniaNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Gastonia"
+
+        state="NC"
+
+        citySlug="gastonia-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready to Work with Gastonia's Trusted Roofing Team?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Gaston County property's needs."

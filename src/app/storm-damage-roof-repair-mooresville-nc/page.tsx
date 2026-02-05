@@ -33,9 +33,11 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Mooresville NC | Insurance Claims | Best Roofing Now',
+  title: 'Storm Damage Repair Mooresville',
   description:
     'Expert storm damage roof repair in Mooresville NC and the Lake Norman area. Hail damage repair, wind damage restoration, and insurance claim assistance. BBB A+ rated, veteran-owned. Free storm damage inspections.',
   keywords: [
@@ -679,7 +681,22 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Mooresville" slug="storm-damage-roof-repair-mooresville-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Storm Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Storm Damage? Get Your Free Inspection Today."
         subtitle="Don't wait - storm damage can worsen quickly. Our Mooresville storm damage experts provide free inspections and help you navigate the insurance claim process from start to finish."

@@ -22,9 +22,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Owens Corning Roofing Charlotte NC | Preferred Contractor | Best Roofing Now',
+  title: 'Owens Corning Charlotte NC',
   description:
     'Owens Corning Preferred Contractor in Charlotte NC. Install Duration and TruDefinition shingles with Platinum Protection warranty. BBB A+ rated, veteran-owned roofing company.',
   keywords: [
@@ -579,6 +580,19 @@ export default function OwensCorningRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Owens Corning Roofing"
+
+      />
+
       <CTASection
         title="Ready for Your New Owens Corning Roof?"
         subtitle="Get a free, no-obligation estimate for Owens Corning Duration shingles with Platinum Protection warranty. Our certified team will assess your roof and provide honest recommendations."

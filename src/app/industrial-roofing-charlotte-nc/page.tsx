@@ -38,9 +38,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Industrial Roofing Charlotte NC | Warehouse & Factory Roofs | Best Roofing Now',
+  title: 'Industrial Roofing Charlotte NC',
   description:
     'Expert industrial roofing contractors in Charlotte NC specializing in warehouses, factories, manufacturing plants & distribution centers. TPO, EPDM, metal roofing systems. Licensed & insured. Free estimates.',
   keywords: [
@@ -683,6 +684,19 @@ export default function IndustrialRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Industrial Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Industrial Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your warehouse, factory, or industrial facility. Our team will assess your building and provide honest recommendations tailored to your operational needs and budget."

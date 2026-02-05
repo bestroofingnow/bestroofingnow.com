@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const ogImage = featuredImage || IMAGES.hero.hero25;
 
   return {
-    title: `${title} | Roofing Blog`,
+    title: title.length > 42 ? title.slice(0, 42) : title,
     description,
     alternates: {
       canonical: `${SITE_CONFIG.url}/blog/${slug}`,

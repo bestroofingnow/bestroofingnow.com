@@ -30,6 +30,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Cedar Shake Roofing Charlotte NC | Premium Wood Shake Installation',
@@ -516,6 +517,19 @@ export default function CedarShakeRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Cedar Shake Roofing"
+
+      />
+
       <CTASection
         title="Elevate Your Home with Cedar Shake Roofing"
         subtitle="Request a consultation with Charlotte's cedar roofing specialists. We'll help you explore cedar options that enhance your home's natural beauty for decades to come."

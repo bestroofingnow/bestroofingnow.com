@@ -19,6 +19,8 @@ import { IMAGES } from '@/lib/images';
 import { getNeighborhood, getAllNeighborhoodParams, getNeighborhoodsByCity, Neighborhood } from '@/lib/neighborhoods';
 import { generateNeighborhoodFAQs } from '@/lib/faqs';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 // Generate AEO-optimized FAQs with speakable answers for voice search
 function generateAEONeighborhoodFAQs(neighborhood: string, city: string, state: string, homeStyles: string) {
@@ -64,7 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Neighborhood Not Found' };
   }
 
-  const title = `Roofing Company in ${neighborhoodData.name}, ${location.city} ${location.state} | Best Roofing Now`;
+  const title = `Roofer ${neighborhoodData.name} ${location.city}`;
   const description = `Professional roofing services in ${neighborhoodData.name}, ${location.city}. Roof repair, replacement, and inspection for ${neighborhoodData.homeStyles.split(',')[0].toLowerCase()} and more. Free estimates! Call (704) 605-6047.`;
 
   return {
@@ -499,6 +501,16 @@ export default async function NeighborhoodPage({ params }: PageProps) {
           </div>
         </section>
       )}
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="location" city={location.city} slug={`${city}-${neighborhoodSlug}`} />
+
+      <CityGeoSection
+        city={location.city}
+        state={location.state}
+        citySlug={city}
+        service={`Roofing in ${neighborhoodData.name}`}
+      />
 
       {/* CTA */}
       <CTASection

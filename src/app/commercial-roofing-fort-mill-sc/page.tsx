@@ -29,9 +29,11 @@ import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Fort Mill SC | Kingsley & Baxter | Best Roofing Now',
+  title: 'Commercial Roofing Fort Mill SC',
   description:
     'Expert commercial roofing in Fort Mill SC. TPO, EPDM, flat roofs, metal roofing for Kingsley, Baxter Village & I-77 businesses. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
@@ -624,7 +626,26 @@ export default function CommercialRoofingFortMillSCPage() {
         title="Commercial Roofing in Nearby Cities"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Fort Mill"
+        slug="commercial-roofing-fort-mill-sc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Fort Mill"
+
+        state="SC"
+
+        citySlug="fort-mill-sc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Commercial Roofing in Fort Mill SC?"
         subtitle="Get a free, no-obligation estimate from Fort Mill's trusted commercial roofing company. Our certified team will assess your building and provide expert recommendations."

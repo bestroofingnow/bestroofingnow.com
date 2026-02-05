@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { Shield } from 'lucide-react';
 import { Hero } from '@/components/sections/Hero';
 import { Services } from '@/components/sections/Services';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
@@ -33,7 +33,7 @@ import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
 import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: "Best Roofing Company Charlotte NC | 5-Star Rated | Free Inspection",
+  title: { absolute: 'Best Roofing Company Charlotte NC | Free Inspection' },
   description: 'Looking for the best roofing company in Charlotte? 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Get your FREE roof inspection today! Same-day estimates. Call (704) 605-6047.',
   keywords: [
     'best roofing company Charlotte NC',
@@ -428,20 +428,10 @@ export default function HomePage() {
               href="https://app.getpowerpay.com/apply/16995"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-[#ee9c48] hover:bg-[#d98a3a] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
             >
-              <Image
-                src="https://getpowerpay.com/badges/home-improvement-style2.png"
-                alt="PowerPay Roof Financing - Apply Now for Home Improvement Financing"
-                width={200}
-                height={80}
-                className="w-[200px] block"
-                loading="lazy"
-                unoptimized
-              />
-              <span className="block text-center text-xs font-bold text-[#ee9c48]">
-                Roof Financing
-              </span>
+              <Shield className="w-5 h-5" aria-hidden="true" />
+              Apply for Roof Financing
             </a>
           </div>
         </div>

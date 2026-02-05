@@ -9,6 +9,8 @@ import {
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: '24/7 Emergency Roofing Services Charlotte NC | 1-2 Hour Response',
@@ -583,6 +585,15 @@ export default function EmergencyPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="main-service-area" city="Charlotte" slug="emergency" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Emergency Roofing"
+      />
 
       {/* CTA Section */}
       <section className="section bg-red-600 text-white">

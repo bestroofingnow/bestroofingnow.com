@@ -30,6 +30,8 @@ import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 // Emergency-specific metadata optimized for 24/7 keywords
 export const metadata: Metadata = {
@@ -802,6 +804,15 @@ export default function EmergencyRoofingPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="service" city="Charlotte" slug="emergency-roofing" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Emergency Roofing"
+      />
 
       {/* Final CTA */}
       <CTASection

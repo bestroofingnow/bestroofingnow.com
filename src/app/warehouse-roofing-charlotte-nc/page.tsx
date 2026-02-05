@@ -34,9 +34,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Warehouse Roofing Charlotte NC | Flat Roof Specialists | Best Roofing Now',
+  title: 'Warehouse Roofing Charlotte NC',
   description:
     'Expert warehouse roofing contractors in Charlotte NC. Specializing in flat roofs for warehouses, distribution centers, and logistics facilities. TPO, EPDM, and metal roofing systems. Minimal business disruption guaranteed. Free estimates.',
   keywords: [
@@ -806,6 +807,19 @@ export default function WarehouseRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Warehouse Roofing"
+
+      />
+
       <CTASection
         title="Ready to Protect Your Warehouse Investment?"
         subtitle="Get a free, no-obligation estimate for your warehouse roofing project. We'll assess your facility and provide honest recommendations tailored to your operational needs and budget."

@@ -27,9 +27,10 @@ import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Leak Repair Charlotte NC | Fast Leak Detection | Best Roofing Now',
+  title: 'Roof Leak Repair Charlotte NC',
   description:
     'Expert roof leak repair in Charlotte NC. Fast leak detection, emergency repairs 24/7, and permanent solutions for leaking roofs. Free inspections. BBB A+ rated. Call (704) 605-6047.',
   keywords: [
@@ -810,6 +811,19 @@ export default function RoofLeakRepairCharlottePage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Leak Repair"
+
+      />
+
       <CTASection
         title="Stop Your Roof Leak Today"
         subtitle="Don't let a small leak become a big problem. Get a free inspection and honest assessment from Charlotte's most trusted roofing company. We're available 24/7 for emergencies."

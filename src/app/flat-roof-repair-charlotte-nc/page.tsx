@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Flat Roof Repair Charlotte NC | Commercial & Residential | Best Roofing Now',
+  title: 'Flat Roof Repair Charlotte NC',
   description:
     'Expert flat roof repair in Charlotte NC for commercial and residential properties. TPO, EPDM, PVC, and modified bitumen repairs. Licensed, insured, BBB A+ rated. Free estimates available.',
   keywords: [
@@ -718,6 +719,19 @@ export default function FlatRoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Flat Roof Repair"
+
+      />
+
       <CTASection
         title="Ready to Fix Your Flat Roof?"
         subtitle="Get a free, no-obligation estimate from Charlotte's flat roof specialists. We'll diagnose the problem, explain your options, and provide honest recommendations tailored to your property and budget."

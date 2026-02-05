@@ -27,9 +27,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Hurricane Damage Roof Repair Charlotte NC | Storm Recovery | Best Roofing Now',
+  title: 'Hurricane Roof Repair Charlotte',
   description:
     'Expert hurricane damage roof repair in Charlotte NC. 24/7 emergency response for tropical storm and hurricane damage. Insurance claim assistance, emergency tarping, and full restoration.',
   keywords: [
@@ -635,6 +636,19 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Hurricane Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Hurricane Damage? We're Here to Help"
         subtitle="24/7 emergency response for hurricane and tropical storm damage. Free damage assessments and insurance claim assistance. Call now or schedule online."

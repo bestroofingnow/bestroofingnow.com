@@ -25,6 +25,8 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Gutter Installation Mooresville NC | Seamless Gutters',
@@ -687,7 +689,26 @@ export default function GutterInstallationMooresvilleNCPage() {
         description="See why proper gutter installation is critical to protecting your Mooresville home's foundation."
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="gutter-installation-mooresville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Gutter Installation"
+
+      />
+
       <CTASection
         title="Ready for Seamless Gutters in Mooresville?"
         subtitle="Get a free, no-obligation estimate for custom seamless gutters. We'll measure your home, recommend the ideal size and color, and provide transparent pricing with zero hidden fees."

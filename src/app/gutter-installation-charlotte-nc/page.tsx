@@ -22,9 +22,10 @@ import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchAct
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Gutter Installation Charlotte NC | Seamless Gutters | Best Roofing Now',
+  title: 'Gutter Installation Charlotte NC',
   description:
     'Professional gutter installation in Charlotte NC. Seamless aluminum, copper, steel & vinyl gutters. Expert gutter replacement, sizing, and gutter guard options. Free estimates from BBB A+ rated contractor. Call (704) 605-6047.',
   keywords: [
@@ -1024,6 +1025,19 @@ export default function GutterInstallationCharlottePage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Gutter Installation"
+
+      />
+
       <CTASection
         title="Ready for Gutters That Last?"
         subtitle="Get a free, no-obligation estimate for gutter installation in Charlotte NC. Our experts will help you choose the best gutter solution for your home and budget."

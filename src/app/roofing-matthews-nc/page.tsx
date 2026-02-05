@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Matthews NC | South Charlotte Roofing Company | Best Roofing Now',
+  title: 'Roofing Matthews NC | Top Rated',
   description:
     'Looking for a trusted roofing company in Matthews NC? Best Roofing Now serves Matthews from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in South Charlotte.',
   keywords: [
@@ -555,6 +556,19 @@ export default function RoofingMatthewsNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Matthews"
+
+        state="NC"
+
+        citySlug="matthews-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing Services in Matthews NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."

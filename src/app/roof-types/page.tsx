@@ -6,7 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Roof Types & Styles | Best Roofing Now Charlotte NC',
+  title: 'Roof Types & Styles',
   description: 'Learn about different roof types including gable, hip, flat, mansard, and more. Expert guidance on choosing the right roof style for your Charlotte home.',
   keywords: [
     'roof types',

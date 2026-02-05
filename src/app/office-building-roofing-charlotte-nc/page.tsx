@@ -35,9 +35,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Office Building Roofing Charlotte NC | Corporate & Commercial Roofs | Best Roofing Now',
+  title: 'Office Building Roofing Charlotte',
   description:
     'Expert office building roofing contractors in Charlotte NC. Specializing in high-rise towers, corporate campuses, Class A office, and multi-tenant buildings in Uptown, SouthPark & Ballantyne. Free estimates.',
   keywords: [
@@ -683,6 +684,19 @@ export default function OfficeBuildingRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Office Building Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Office Building Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your office tower, corporate campus, or multi-tenant office building. Our team will assess your property and provide honest recommendations that protect your investment and minimize tenant disruption."

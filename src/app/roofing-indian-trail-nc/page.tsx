@@ -32,9 +32,10 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Indian Trail NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofing Indian Trail NC | 5-Star Rated',
   description:
     'Looking for quality roofing in Indian Trail NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Union County. BBB A+ rated with 500+ roofs completed. Free estimates for residential and commercial roofing services.',
   keywords: [
@@ -915,6 +916,19 @@ export default function RoofingIndianTrailNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Indian Trail"
+
+        state="NC"
+
+        citySlug="indian-trail-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Quality Roofing in Indian Trail NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Union County home's needs and budget."

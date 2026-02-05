@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Condo Roofing Charlotte NC | Association Approved | Best Roofing Now',
+  title: 'Condo Roofing Charlotte NC | HOA',
   description:
     'Expert condo roofing services in Charlotte NC. Association approved installations, flat and low-slope roof specialists, condominium roof repair. BBB A+ rated. Free estimates.',
   keywords: [
@@ -598,6 +599,19 @@ export default function CondoRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Condo Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Condo Roofing?"
         subtitle="Get a free assessment from Charlotte's trusted condominium roofing experts. We work with boards, property managers, and associations to deliver quality results."

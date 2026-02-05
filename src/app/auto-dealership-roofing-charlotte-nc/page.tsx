@@ -42,9 +42,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Auto Dealership Roofing Charlotte NC | Showroom & Service Center Roofs | Best Roofing Now',
+  title: 'Auto Dealership Roofing Charlotte NC | Showroom & Service Center Roofs',
   description:
     'Expert auto dealership roofing contractors in Charlotte NC for showrooms, service bays, body shops & car washes. Curb appeal specialists. Quick turnaround to minimize revenue loss. Licensed & insured. Free estimates.',
   keywords: [
@@ -690,6 +691,19 @@ export default function AutoDealershipRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Auto Dealership Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Auto Dealership Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your showroom, service center, or auto facility. Our team understands that every day of disruption costs you sales — we deliver quality roofing on accelerated timelines that keep your doors open and your customers coming in."

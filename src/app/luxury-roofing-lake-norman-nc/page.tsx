@@ -29,6 +29,8 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Luxury Roofing Lake Norman NC | Waterfront Home Specialists',
@@ -591,7 +593,22 @@ export default function LuxuryRoofingLakeNormanPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Lake Norman" slug="luxury-roofing-lake-norman-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Lake Norman"
+
+        state="NC"
+
+        citySlug="lake-norman"
+
+        service="Luxury Roofing"
+
+      />
+
       <CTASection
         title="Elevate Your Lake Norman Home"
         subtitle="Request a consultation with our waterfront roofing specialists. We'll help you select premium materials engineered for lakefront exposure and built to protect your investment for generations."

@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Gutter Installation Huntersville NC | Seamless Gutters | Best Roofing Now',
+  title: 'Gutter Install Huntersville NC',
   description:
     'Professional gutter installation in Huntersville NC. Custom seamless gutters, gutter guards, and repairs. Protect your home from water damage. Free estimates!',
   keywords: [
@@ -590,7 +592,26 @@ export default function GutterInstallationHuntersvilleNCPage() {
         description="See why proper gutter installation is critical to protecting your Huntersville home's foundation."
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Huntersville"
+        slug="gutter-installation-huntersville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Huntersville"
+
+        state="NC"
+
+        citySlug="huntersville-nc"
+
+        service="Gutter Installation"
+
+      />
+
       <CTASection
         title="Ready for New Gutters in Huntersville?"
         subtitle="Contact us today for a free estimate on seamless gutter installation. We'll help protect your home from water damage with quality gutters built to last."

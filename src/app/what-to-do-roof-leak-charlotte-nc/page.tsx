@@ -27,6 +27,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'What to Do When You Find a Roof Leak | Charlotte NC Emergency Guide',
@@ -529,6 +530,19 @@ export default function WhatToDoRoofLeakPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="What To Do Roof Leak"
+
+      />
+
       <CTASection
         title="Dealing with a Roof Leak Right Now?"
         subtitle="Don't wait - water damage gets worse by the hour. Call Best Roofing Now for emergency service in Charlotte. We respond within 1-4 hours."

@@ -23,6 +23,8 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Metal Roofing Davidson NC | Lake Norman | Standing Seam Experts',
@@ -415,7 +417,26 @@ export default function MetalRoofingDavidsonNCPage() {
         variant="compact"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Davidson"
+        slug="metal-roofing-davidson-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Davidson"
+
+        state="NC"
+
+        citySlug="davidson-nc"
+
+        service="Metal Roofing"
+
+      />
+
       <CTASection
         title="Ready for Metal Roofing in Davidson?"
         subtitle="Get a free quote for premium metal roofing from Lake Norman's trusted specialists. We match metal styles to Davidson's unique character."

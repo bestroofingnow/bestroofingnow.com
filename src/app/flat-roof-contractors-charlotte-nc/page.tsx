@@ -32,9 +32,10 @@ import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { TURNER_NOTES } from '@/lib/turner-family';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Flat Roof Contractors Charlotte NC | Licensed & Insured Specialists | Best Roofing Now',
+  title: 'Flat Roof Contractors Charlotte',
   description:
     'Hire the best flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC, and modified bitumen. Find a trusted flat roof contractor for your commercial or residential project. BBB A+ rated. Free estimates.',
   keywords: [
@@ -1128,6 +1129,19 @@ export default function FlatRoofContractorsCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Flat Roof Contractors"
+
+      />
+
       <CTASection
         title="Ready to Talk About Your Flat Roof Project?"
         subtitle="Get a free, no-obligation estimate from Charlotte's trusted flat roof contractors. We'll assess your property, explain your options, and provide honest recommendations tailored to your needs and budget."

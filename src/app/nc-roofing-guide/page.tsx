@@ -23,6 +23,8 @@ import {
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Complete NC Roofing Guide | Building Codes, Permits & Requirements | Charlotte & Lake Norman',
@@ -1229,6 +1231,15 @@ export default function NCRoofingGuidePage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="guide" city="Charlotte" slug="nc-roofing-guide" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="NC Roofing Guide"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

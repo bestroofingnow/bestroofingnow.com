@@ -6,6 +6,8 @@ import { SITE_CONFIG, ROOFING_BRANDS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { BreadcrumbSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface BrandPageProps {
   params: Promise<{ slug: string }>;
@@ -35,7 +37,7 @@ export async function generateMetadata({ params }: BrandPageProps): Promise<Meta
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${brand.fullName} | Certified Installer Charlotte NC | Best Roofing Now`,
+    title: `${brand.fullName} | Certified Charlotte`,
     description: `${brand.description} As a ${brand.certificationLevel}, we offer enhanced warranty options on ${brand.name} products.`,
     keywords: brand.keywords,
     alternates: {
@@ -77,6 +79,71 @@ export default async function BrandPage({ params }: BrandPageProps) {
   const otherBrands = ROOFING_BRANDS.filter((b) => b.slug !== slug);
 
   const pageUrl = `${SITE_CONFIG.url}/brands/${slug}`;
+
+  // Brand-specific differentiators for richer content
+  const brandReasons: Record<string, { reasons: string[]; overview: string }> = {
+    gaf: {
+      overview: 'GAF manufactures roughly one out of every four shingles installed in the United States. Their Timberline HDZ — America\'s best-selling shingle — uses patented LayerLock technology that creates a mechanical bond between layers, improving wind resistance up to 130 MPH. Charlotte homeowners benefit from GAF\'s StainGuard Plus algae-protection warranty, which is especially valuable in our humid, Southern climate.',
+      reasons: [
+        'Timberline HDZ is the #1 selling shingle in North America for over 20 consecutive years',
+        'LayerLock technology provides a mechanical nail-seal bond for 130 MPH wind resistance',
+        'StainGuard Plus algae-protection warranty — critical for Charlotte\'s humid climate',
+        'Golden Pledge warranty includes 25-year workmanship coverage when installed by a certified contractor',
+        'Full roofing system accessories (underlayment, ridge vents, starter strips) for total protection',
+      ],
+    },
+    certainteed: {
+      overview: 'CertainTeed has manufactured building materials in the U.S. since 1904, and their Landmark series architectural shingles consistently rank among the industry\'s most durable and aesthetically versatile options. As a SELECT ShingleMaster, Best Roofing Now qualifies for CertainTeed\'s highest warranty tier — the 5-Star SureStart PLUS coverage that includes material and workmanship protection.',
+      reasons: [
+        'Over 120 years of manufacturing experience in the U.S.',
+        'Landmark PRO shingles offer a Class 4 impact-resistance option for hail-prone areas',
+        'NaturalWood color palette designed to complement Southern architecture styles',
+        'Presidential Shake line delivers authentic cedar-shake appearance without wood maintenance',
+        '5-Star SureStart PLUS warranty available exclusively through SELECT ShingleMaster contractors',
+      ],
+    },
+    'owens-corning': {
+      overview: 'Owens Corning is a Fortune 500 company whose patented SureNail Technology sets their shingles apart in high-wind regions like the Carolinas. The SureNail strip provides a visible nailing target and a triple-layer reinforcement zone, which independent testing shows outperforms standard shingles in blow-off resistance. Their Duration series is engineered for long-term color accuracy even under intense UV exposure.',
+      reasons: [
+        'Patented SureNail Technology delivers 130 MPH wind-resistance rating with only 4 nails',
+        'TruDefinition color granules resist UV fading — ideal for Charlotte\'s 215+ sunny days per year',
+        'Duration FLEX shingles bend without cracking, perfect for complex roof shapes and dormers',
+        'Platinum Protection warranty includes lifetime workmanship coverage from preferred contractors',
+        'ENERGY STAR-rated Cool Roof shingles available to reduce summer cooling costs',
+      ],
+    },
+    iko: {
+      overview: 'IKO is a global manufacturer with over 70 years of experience and plants across North America and Europe. Their Dynasty line features ArmourZone technology — a reinforced nailing strip that improves wind-uplift resistance and simplifies proper nail placement. For Charlotte homeowners looking for premium performance at a competitive price point, IKO delivers strong value.',
+      reasons: [
+        'ArmourZone reinforced nailing area improves fastener hold and installation accuracy',
+        'Dynasty shingles rated for 130 MPH winds with only 4 nails per shingle',
+        'Nordic line offers extra-large 7.4-inch exposure for dramatic curb appeal',
+        'Iron Clad warranty includes 15-year workmanship coverage from certified contractors',
+        'Competitive pricing makes premium architectural shingles accessible for more budgets',
+      ],
+    },
+    tamko: {
+      overview: 'TAMKO is a family-owned American manufacturer that has been producing roofing products since 1944. Their Titan XT heavyweight shingle was designed specifically for extreme weather regions, making it a strong choice for the Charlotte area where summer storms and occasional hail are common. TAMKO also offers one of the broadest 3-tab selections on the market for budget-conscious projects.',
+      reasons: [
+        'Family-owned for 80+ years — company values align with Best Roofing Now\'s family-run approach',
+        'Titan XT heavyweight shingle provides extra thickness for severe-weather protection',
+        'Heritage series architectural shingles deliver reliable performance at competitive prices',
+        'Algae Guard protection prevents black streaking in Charlotte\'s hot, humid summers',
+        'Broad product range from economy 3-tab to premium architectural for any budget',
+      ],
+    },
+  };
+
+  const brandContent = brandReasons[slug] || {
+    overview: `${brand.name} is a trusted name in the roofing industry, and as a ${brand.certificationLevel}, Best Roofing Now can offer enhanced warranty options on every ${brand.name} installation.`,
+    reasons: [
+      'Industry-leading research and development',
+      'Rigorous quality control and testing',
+      'Wide range of colors and styles',
+      'Strong warranty protection',
+      `Proven performance in Charlotte's climate`,
+    ],
+  };
 
   return (
     <>
@@ -214,28 +281,18 @@ export default async function BrandPage({ params }: BrandPageProps) {
               Why Choose {brand.name}?
             </h2>
 
+            <p className="text-gray-700 text-lg mb-8 text-center leading-relaxed">
+              {brandContent.overview}
+            </p>
+
             <div className="bg-primary/5 rounded-xl p-8">
               <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-dark">Industry-leading research and development</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-dark">Rigorous quality control and testing</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-dark">Wide range of colors and styles</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-dark">Strong warranty protection</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-dark">Proven performance in Charlotte&apos;s climate</span>
-                </li>
+                {brandContent.reasons.map((reason, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="text-dark">{reason}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -269,6 +326,16 @@ export default async function BrandPage({ params }: BrandPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

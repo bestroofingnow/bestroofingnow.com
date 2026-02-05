@@ -30,11 +30,13 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
 import { TURNER_NOTES } from '@/lib/turner-family';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Gastonia NC | Expert Installation | Best Roofing Now',
+  title: 'Roof Replacement Gastonia NC',
   description:
     'Professional roof replacement services in Gastonia NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
   keywords: [
@@ -1001,7 +1003,27 @@ export default function RoofReplacementGastoniaNCPage() {
         </div>
       </section>
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Gastonia"
+        slug="roof-replacement-gastonia-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Gastonia"
+
+        state="NC"
+
+        citySlug="gastonia-nc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Ready for Your New Roof in Gastonia?"
         subtitle="Get a free, no-obligation estimate for your roof replacement. Our certified team will assess your Gaston County home and provide honest recommendations with transparent pricing."

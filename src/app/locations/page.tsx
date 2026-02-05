@@ -66,6 +66,22 @@ export default function LocationsPage() {
         </div>
       </section>
 
+      {/* Area Overview */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                Best Roofing Now serves the entire Charlotte metro area, from the Lake Norman waterfront communities of Cornelius, Davidson, and Denver to the growing suburbs of Concord, Huntersville, and Matthews. Our crews travel daily across Mecklenburg, Iredell, Cabarrus, Lincoln, Gaston, and York (SC) counties, so we know the local building codes, HOA requirements, and weather patterns that affect every roof in the region.
+              </p>
+              <p>
+                Each service area page below includes verified project photos, neighborhood-specific roofing recommendations, and direct contact information. Whether you need a quick storm-damage inspection in Fort Mill or a full roof replacement in Mooresville, our family-owned team is ready to help. Select your city to see recent work near you and request a free, no-obligation estimate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Locations Grid */}
       <section className="section">
         <div className="container">

@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Insurance Claim Roofing Charlotte NC | Storm Damage Experts | Best Roofing Now',
+  title: 'Insurance Claim Roofing Charlotte',
   description:
     'Expert insurance claim roofing in Charlotte NC. We handle your roof insurance claim from start to finish - free inspections, adjuster meetings, documentation, and repairs. BBB A+ rated.',
   keywords: [
@@ -607,6 +608,19 @@ export default function InsuranceClaimRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Insurance Claim Roofing"
+
+      />
+
       <CTASection
         title="Need Help with a Roof Insurance Claim?"
         subtitle="Get a free storm damage inspection and let us handle your insurance claim from start to finish. We advocate for you and ensure you get the settlement you deserve."

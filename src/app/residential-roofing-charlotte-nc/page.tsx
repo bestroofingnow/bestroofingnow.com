@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Residential Roofing Charlotte NC | Expert Home Roofers',
@@ -636,6 +637,19 @@ export default function ResidentialRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Residential Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Residential Roofing in Charlotte?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your home's roof and provide honest recommendations tailored to your needs and budget."

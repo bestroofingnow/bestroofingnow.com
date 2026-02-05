@@ -39,6 +39,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Best Roofing Company Charlotte NC | #1 Rated | BBB A+',
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     'top rated roofing company charlotte',
     '#1 roofing company charlotte nc',
     'highest rated roofing company charlotte',
-    'best roofing company charlotte 2025',
+    'best roofing company charlotte 2026',
     'charlotte roofing company rankings',
     'award winning roofing company charlotte',
     'bbb a+ roofing company charlotte nc',
@@ -851,6 +852,19 @@ export default function BestRoofingCompanyCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Best Roofing Company"
+
+      />
+
       <CTASection
         title="Experience the Best Roofing Company in Charlotte NC"
         subtitle={`Get a free, no-obligation estimate from our certified team. Discover why ${SITE_CONFIG.roofsInstalled}+ Charlotte homeowners and businesses have chosen Best Roofing Now as their trusted roofing company. Owner James Turner personally stands behind every project.`}

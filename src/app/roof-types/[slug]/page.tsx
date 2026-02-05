@@ -5,6 +5,8 @@ import { Phone, CheckCircle, AlertTriangle, ArrowRight, Home } from 'lucide-reac
 import { SITE_CONFIG, ROOF_TYPES } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface RoofTypePageProps {
   params: Promise<{ slug: string }>;
@@ -27,7 +29,7 @@ export async function generateMetadata({ params }: RoofTypePageProps): Promise<M
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${roofType.name} | Roof Styles Charlotte NC | Best Roofing Now`,
+    title: `${roofType.name} | Charlotte NC`,
     description: `${roofType.description} Expert ${roofType.name.toLowerCase()} repair, installation, and replacement in Charlotte NC.`,
     keywords: roofType.keywords,
     alternates: {
@@ -263,6 +265,16 @@ export default async function RoofTypePage({ params }: RoofTypePageProps) {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

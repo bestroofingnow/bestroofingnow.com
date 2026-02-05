@@ -21,9 +21,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'GAF Roofing Charlotte NC | Factory-Certified Contractor | Best Roofing Now',
+  title: 'GAF Roofing Charlotte NC',
   description:
     'Looking for GAF roofing in Charlotte NC? Best Roofing Now is a GAF Factory-Certified contractor offering Timberline HDZ shingles with Golden Pledge warranty. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -577,6 +578,19 @@ export default function GAFRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="GAF Roofing"
+
+      />
+
       <CTASection
         title="Ready for Your New GAF Roof?"
         subtitle="Get a free, no-obligation estimate for GAF Timberline shingles with Golden Pledge warranty. Our certified team will assess your roof and provide honest recommendations."

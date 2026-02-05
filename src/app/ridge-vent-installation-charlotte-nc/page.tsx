@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Ridge Vent Installation Charlotte NC | Attic Ventilation | Best Roofing Now',
+  title: 'Ridge Vent Install Charlotte NC',
   description:
     'Professional ridge vent installation in Charlotte NC. Improve attic ventilation, reduce energy costs, and prevent moisture damage. BBB A+ rated, licensed contractor. Free estimates available.',
   keywords: [
@@ -604,6 +605,19 @@ export default function RidgeVentInstallationCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Ridge Vent Installation"
+
+      />
+
       <CTASection
         title="Ready to Improve Your Attic Ventilation?"
         subtitle="Reduce energy costs, prevent moisture damage, and extend your roof's life with proper ventilation. Get a free assessment from Charlotte's ventilation experts."

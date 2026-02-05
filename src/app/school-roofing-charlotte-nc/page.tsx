@@ -36,9 +36,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'School Roofing Charlotte NC | K-12, Universities & Educational Facilities | Best Roofing Now',
+  title: 'School Roofing Charlotte NC',
   description:
     'Expert school and educational facility roofing contractors in Charlotte NC. Serving CMS schools, universities, private schools & colleges. Summer scheduling, student safety focused. Licensed & insured. Free estimates.',
   keywords: [
@@ -683,6 +684,19 @@ export default function SchoolRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="School Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your School Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your school, university, or educational facility. Our team will assess your building and provide honest recommendations tailored to your district&apos;s timeline, safety requirements, and budget."

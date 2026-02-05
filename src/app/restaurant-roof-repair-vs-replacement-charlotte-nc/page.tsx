@@ -29,6 +29,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Restaurant Roof: Repair vs Replace Charlotte NC',
@@ -654,6 +655,25 @@ export default function RestaurantRoofRepairVsReplacementPage() {
         subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/restaurant-roof-repair-vs-replacement-charlotte-nc`}
       />
+
+
+      <CityGeoSection
+
+
+        city="Charlotte"
+
+
+        state="NC"
+
+
+        citySlug="charlotte-nc"
+
+
+        service="Restaurant Roof Repair Vs Replacement"
+
+
+      />
+
 
       <CTASection
         title="Get Your Free Restaurant Roof Assessment"

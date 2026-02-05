@@ -29,6 +29,7 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { TURNER_NOTES } from '@/lib/turner-family';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Affordable Roofing Charlotte NC | Quality at Fair Prices',
@@ -943,6 +944,19 @@ export default function AffordableRoofingCharlottePage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Affordable Roofing"
+
+      />
+
       <CTASection
         title="Ready for a Fair, Honest Roofing Estimate?"
         subtitle="Get a free, no-obligation quote with transparent pricing. We will show you exactly what you need - nothing more, nothing less."

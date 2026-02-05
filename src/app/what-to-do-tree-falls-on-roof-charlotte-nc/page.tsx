@@ -30,6 +30,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'What to Do When a Tree Falls on Your Roof Charlotte NC | Emergency Guide',
@@ -653,6 +654,25 @@ export default function WhatToDoTreeFallsOnRoofPage() {
         subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`}
       />
+
+
+      <CityGeoSection
+
+
+        city="Charlotte"
+
+
+        state="NC"
+
+
+        citySlug="charlotte-nc"
+
+
+        service="What To Do Tree Falls On Roof"
+
+
+      />
+
 
       <CTASection
         title="Need Emergency Help Now?"

@@ -26,6 +26,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Church Roof Replacement Charlotte NC | Free Estimates',
@@ -495,6 +496,19 @@ export default function ChurchRoofReplacementGuidePage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Church Roof Replacement Guide"
+
+      />
+
       <CTASection
         title="Ready to Protect Your Church Building?"
         subtitle="Best Roofing Now has helped Charlotte congregations of all sizes with roofing projects. Schedule a free assessment and let's discuss your needs."

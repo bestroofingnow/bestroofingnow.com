@@ -39,9 +39,10 @@ import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getGeoImages } from '@/lib/geo-images';
 import { IMAGES, CITY_COORDINATES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Charlotte NC | New Roof Installation | Best Roofing Now',
+  title: 'Roof Replacement Charlotte NC',
   description:
     'Complete roof replacement services in Charlotte NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
   keywords: [
@@ -864,6 +865,19 @@ export default function RoofReplacementCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Ready for Your New Roof?"
         subtitle="Get a free, no-obligation estimate for your roof replacement. Our certified team will assess your roof and provide honest recommendations with transparent pricing."

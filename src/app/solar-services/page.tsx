@@ -27,9 +27,11 @@ import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitati
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Solar Roofing Charlotte NC | Solar Panel Integration | Best Roofing Now',
+  title: 'Solar Roofing Charlotte NC',
   description:
     'Solar roofing solutions in Charlotte NC. Expert solar panel roof integration, solar-ready roof installations, and roof repairs for solar systems. GAF certified. Free consultations!',
   keywords: [
@@ -420,6 +422,15 @@ export default function SolarServicesPage() {
           <DirectoryCitations pageType="service" maxLinks={4} variant="inline" title="Verified Business Profiles" />
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="service" city="Charlotte" slug="solar-services" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Solar Services"
+      />
 
       {/* Final CTA */}
       <section className="bg-gradient-to-r from-accent to-primary text-white py-16">

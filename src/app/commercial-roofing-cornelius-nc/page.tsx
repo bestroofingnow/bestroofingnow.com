@@ -29,9 +29,11 @@ import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Cornelius NC | Lake Norman | TPO & Flat Roof | Best Roofing Now',
+  title: 'Commercial Roofing Cornelius NC',
   description:
     'Expert commercial roofing in Cornelius NC. TPO, EPDM, flat roofs, metal roofing for Lake Norman businesses. The Peninsula to Jetton Road. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
@@ -622,7 +624,26 @@ export default function CommercialRoofingCorneliusNCPage() {
         title="Commercial Roofing in Nearby Cities"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Cornelius"
+        slug="commercial-roofing-cornelius-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Cornelius"
+
+        state="NC"
+
+        citySlug="cornelius-nc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Commercial Roofing in Cornelius NC?"
         subtitle="Get a free, no-obligation estimate from Lake Norman's trusted commercial roofing company. Our certified team will assess your building and provide expert recommendations tailored to your business needs."

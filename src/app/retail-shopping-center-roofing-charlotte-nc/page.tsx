@@ -36,9 +36,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Retail & Shopping Center Roofing Charlotte NC | Mall & Strip Center Roofs | Best Roofing Now',
+  title: 'Retail Center Roofing Charlotte',
   description:
     'Expert retail and shopping center roofing contractors in Charlotte NC. Specializing in malls, strip centers, big box stores & grocery stores. Minimal business disruption. SouthPark, Northlake, Concord Mills. Free estimates.',
   keywords: [
@@ -684,6 +685,19 @@ export default function RetailShoppingCenterRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Retail Shopping Center Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Retail Property Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your shopping center, strip mall, or retail property. Our team will assess your building and provide honest recommendations that protect your investment while keeping your tenants happy and open for business."

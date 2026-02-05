@@ -30,6 +30,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Hurricane Roof Prep Guide Charlotte NC',
@@ -665,6 +666,25 @@ export default function HurricaneRoofPreparationGuidePage() {
         subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/hurricane-roof-preparation-guide-charlotte-nc`}
       />
+
+
+      <CityGeoSection
+
+
+        city="Charlotte"
+
+
+        state="NC"
+
+
+        citySlug="charlotte-nc"
+
+
+        service="Hurricane Roof Preparation Guide"
+
+
+      />
+
 
       <CTASection
         title="Prepare Your Roof Before Hurricane Season"

@@ -37,9 +37,10 @@ import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
 import { getGeoImages } from '@/lib/geo-images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Charlotte NC | #1 Rated Roofing Company (500+ Roofs) | Best Roofing Now',
+  title: 'Roofing Charlotte NC | 500+ Roofs',
   description:
     'Best Roofing Now is Charlotte NC\'s #1 rated roofing company. 5.0 Google rating, BBB A+ rated, veteran-owned. Residential & commercial roofing, repairs, replacements, inspections. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
   keywords: [
@@ -1053,6 +1054,19 @@ export default function RoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Quality Roofing in Charlotte NC?"
         subtitle="Get a free, no-obligation estimate from Charlotte's #1 rated roofing company. Our certified team will assess your roof and provide honest recommendations tailored to your needs and budget."

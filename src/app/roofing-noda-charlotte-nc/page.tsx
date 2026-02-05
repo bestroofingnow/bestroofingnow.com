@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing NoDa Charlotte NC | Arts District Roofers | Best Roofing Now',
+  title: 'Roofing NoDa Charlotte NC',
   description:
     'Professional roofing services for NoDa Charlotte NC. Specializing in historic mill homes, arts district properties, and mixed-use buildings. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -558,6 +559,19 @@ export default function RoofingNodaCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Noda"
+
+      />
+
       <CTASection
         title="Ready to Work with NoDa's Trusted Roofing Experts?"
         subtitle="Get a free, no-obligation estimate from our team. We understand the Arts District's unique properties and will provide honest recommendations for your NoDa home or business."

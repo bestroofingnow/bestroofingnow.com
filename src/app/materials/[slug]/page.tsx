@@ -8,6 +8,8 @@ import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { FAQ } from '@/components/sections/FAQ';
 import { EstimateButton } from '@/components/estimate';
 import { BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface MaterialPageProps {
   params: Promise<{ slug: string }>;
@@ -40,7 +42,7 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${material.name} Charlotte NC | Cost, Pros & Cons, Installation | Best Roofing Now`,
+    title: `${material.name} Charlotte NC | Cost & Info`,
     description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
     keywords: [...material.keywords, `${material.shortName.toLowerCase()} roof Charlotte`, `${material.shortName.toLowerCase()} roofing contractor`],
     alternates: {
@@ -620,6 +622,16 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing Materials"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

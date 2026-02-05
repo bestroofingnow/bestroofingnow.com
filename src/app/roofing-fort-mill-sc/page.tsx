@@ -24,9 +24,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Fort Mill SC | South Charlotte Roofing | Best Roofing Now',
+  title: 'Roofing Fort Mill SC | Top Rated',
   description:
     'Looking for roofing services in Fort Mill SC? Best Roofing Now serves Fort Mill, Baxter, and Tega Cay from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in York County.',
   keywords: [
@@ -594,7 +596,22 @@ export default function RoofingFortMillSCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Fort Mill" slug="roofing-fort-mill-sc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Fort Mill"
+
+        state="SC"
+
+        citySlug="fort-mill-sc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready to Work with Fort Mill's Trusted Roofing Team?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your York County home's needs."

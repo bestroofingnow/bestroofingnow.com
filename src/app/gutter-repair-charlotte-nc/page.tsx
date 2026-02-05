@@ -26,6 +26,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Gutter Repair Charlotte NC | Fast & Affordable',
@@ -642,6 +643,19 @@ export default function GutterRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Gutter Repair"
+
+      />
+
       <CTASection
         title="Ready for Professional Gutter Repair in Charlotte?"
         subtitle="Get a free, no-obligation estimate from our experienced team. We'll assess your gutters and provide honest recommendations with transparent pricing."

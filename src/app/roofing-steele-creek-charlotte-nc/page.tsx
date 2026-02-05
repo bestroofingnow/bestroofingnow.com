@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Steele Creek Charlotte NC | Southwest Charlotte | Best Roofing Now',
+  title: 'Roofing Steele Creek Charlotte NC',
   description:
     'Professional roofing services for Steele Creek Charlotte NC. Specializing in newer subdivisions, family homes, and growing communities. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -559,6 +560,19 @@ export default function RoofingSteeleCreekCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Steele Creek"
+
+      />
+
       <CTASection
         title="Ready to Work with Steele Creek's Trusted Roofing Experts?"
         subtitle="Get a free, no-obligation estimate from our team. We understand subdivision requirements and will provide honest recommendations for your Steele Creek home."

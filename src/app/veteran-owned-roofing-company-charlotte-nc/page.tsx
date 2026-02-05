@@ -32,9 +32,10 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Veteran-Owned Roofing Company Charlotte NC | Best Roofing Now',
+  title: 'Veteran-Owned Roofer Charlotte',
   description:
     'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Founded on military values of integrity, discipline, and excellence. BBB A+ rated. Free estimates. Our Roofs for Veterans program gives back to those who served.',
   keywords: [
@@ -934,6 +935,19 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Veteran-Owned Roofing Company"
+
+      />
+
       <CTASection
         title="Ready to Work with a Veteran-Owned Roofing Company?"
         subtitle="Experience the difference of working with a team built on military values. Get a free, no-obligation estimate from our veteran-owned family business."

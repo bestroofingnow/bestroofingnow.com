@@ -30,9 +30,11 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Fort Mill SC | Top Rated Roofing Company | Best Roofing Now',
+  title: 'Roofers Fort Mill SC | Top Rated',
   description:
     'Looking for trusted roofers in Fort Mill SC? Best Roofing Now serves Fort Mill, Tega Cay, and York County with BBB A+ rated service. Licensed, insured, veteran-owned. Free estimates for all roofing services. Call (704) 605-6047.',
   keywords: [
@@ -536,7 +538,22 @@ export default function RoofersFortMillSCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Fort Mill" slug="roofers-fort-mill-sc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Fort Mill"
+
+        state="SC"
+
+        citySlug="fort-mill-sc"
+
+        service="Roofers"
+
+      />
+
       <CTASection
         title="Ready to Work with Fort Mill's Top Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."

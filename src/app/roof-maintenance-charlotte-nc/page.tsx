@@ -28,9 +28,10 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { Lightbulb, CloudRain, Sun, Leaf, Snowflake } from 'lucide-react';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Maintenance Charlotte NC | Annual Inspection Plans | Best Roofing Now',
+  title: 'Roof Maintenance Charlotte NC',
   description:
     'Professional roof maintenance programs in Charlotte NC. Annual inspections, preventive repairs, and maintenance plans to extend your roof life. BBB A+ rated, veteran-owned company.',
   keywords: [
@@ -823,6 +824,19 @@ export default function RoofMaintenanceCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Maintenance"
+
+      />
+
       <CTASection
         title="Start Protecting Your Roof Today"
         subtitle="Schedule a free roof inspection and learn how our maintenance plans can save you money while extending your roof's lifespan."

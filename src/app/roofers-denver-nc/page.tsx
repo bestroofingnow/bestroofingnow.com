@@ -27,9 +27,11 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Denver NC | Lake Norman | 5-Star Rated | Best Roofing Now',
+  title: 'Roofers Denver NC | 5-Star',
   description:
     'Looking for roofers in Denver NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman western shore. BBB A+. Free estimates.',
   keywords: [
@@ -500,7 +502,22 @@ export default function RoofersDenverNCPage() {
         variant="compact"
       />
 
+      <GeoProjectGalleryStrip pageType="location" city="Denver" slug="roofers-denver-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Roofers"
+
+      />
+
       <CTASection
         title="Ready for Quality Roofing in Denver NC?"
         subtitle="Get a free estimate from Denver's most trusted roofers. Our team will assess your roof and provide honest recommendations tailored to your Lake Norman western shore home."

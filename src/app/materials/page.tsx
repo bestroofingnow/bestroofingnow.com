@@ -6,7 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Roofing Materials Guide | Best Roofing Now Charlotte NC',
+  title: 'Roofing Materials Guide',
   description: 'Compare roofing materials: asphalt shingles, metal roofing, tile, slate, and more. Learn about costs, lifespans, and which material is best for your Charlotte home.',
   keywords: [
     'roofing materials Charlotte NC',
@@ -64,6 +64,22 @@ export default function MaterialsPage() {
               >
                 Free Consultation
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Overview */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                The roofing material you choose determines how long your roof lasts, how well it handles Charlotte&apos;s heat and storm seasons, and what your home looks like from the street. Architectural asphalt shingles remain the most popular residential option in the Charlotte area because they balance cost, durability, and curb appeal. Metal roofing has gained significant share over the past decade thanks to its 40-70 year lifespan and superior wind resistance. Premium options like slate, tile, and cedar shake serve homeowners who prioritize aesthetics and long-term value.
+              </p>
+              <p>
+                Each material page below covers installed cost per square foot, expected lifespan in our local climate, warranty options, and the specific advantages and trade-offs you should consider. Our team installs all of these materials and can help you weigh the options during a free in-home consultation.
+              </p>
             </div>
           </div>
         </div>

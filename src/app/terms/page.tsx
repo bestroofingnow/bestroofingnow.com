@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { SITE_CONFIG } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Best Roofing Now',
+  title: 'Terms of Service',
   description:
     'Terms of service for Best Roofing Now. Review the terms and conditions governing the use of our website and roofing services in Charlotte, NC and surrounding areas.',
   alternates: {

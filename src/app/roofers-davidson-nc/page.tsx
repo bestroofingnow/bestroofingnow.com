@@ -27,9 +27,11 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Davidson NC | Lake Norman | Historic Home Experts | Best Roofing Now',
+  title: 'Roofers Davidson NC | 5-Star',
   description:
     'Looking for trusted roofers in Davidson NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company. Historic home expertise. Davidson College area specialists. Free estimates.',
   keywords: [
@@ -413,7 +415,22 @@ export default function RoofersDavidsonNCPage() {
         variant="compact"
       />
 
+      <GeoProjectGalleryStrip pageType="location" city="Davidson" slug="roofers-davidson-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Davidson"
+
+        state="NC"
+
+        citySlug="davidson-nc"
+
+        service="Roofers"
+
+      />
+
       <CTASection
         title="Ready for Quality Roofing in Davidson?"
         subtitle="Get a free estimate from Davidson's most trusted roofers. Our team will assess your roof and provide honest recommendations tailored to your historic or lakefront home."

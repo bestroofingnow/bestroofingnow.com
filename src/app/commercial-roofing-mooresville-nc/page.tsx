@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Mooresville NC | Race Shop Roofing | Best Roofing Now',
+  title: 'Commercial Roofing Mooresville NC',
   description:
     'Commercial roofing experts in Mooresville NC serving race shops, warehouses, and industrial facilities. TPO, EPDM, flat roofs, and metal roofing. BBB A+ rated, veteran-owned. Free estimates for commercial properties!',
   keywords: [
@@ -669,7 +671,26 @@ export default function CommercialRoofingMooresvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="commercial-roofing-mooresville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready to Protect Your Mooresville Business?"
         subtitle="Get a free, no-obligation commercial roofing quote. We'll assess your building and provide honest recommendations tailored to your business needs."

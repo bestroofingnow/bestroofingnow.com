@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Townhouse Roofing Charlotte NC | HOA Compliant | Best Roofing Now',
+  title: 'Townhouse Roofing Charlotte NC',
   description:
     'Expert townhouse roofing services in Charlotte NC. HOA compliant installations, shared roof specialists, and townhome roof repair. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -593,6 +594,19 @@ export default function TownhouseRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Townhouse Roofing"
+
+      />
+
       <CTASection
         title="Ready for HOA-Compliant Townhouse Roofing?"
         subtitle="Get a free estimate from Charlotte's trusted townhouse roofing experts. We handle HOA approvals, neighbor coordination, and perfect color matching."

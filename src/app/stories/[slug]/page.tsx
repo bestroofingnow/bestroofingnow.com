@@ -33,6 +33,8 @@ import {
   ItemListSchema,
 } from '@/components/seo/SchemaMarkup';
 import { ProjectPhotoGallery, ProjectPhotoStrip } from '@/components/ui/ProjectPhotoGallery';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 // Local news stories tied to roofing for engaging content
 const LOCAL_STORIES: Record<
@@ -430,7 +432,7 @@ export async function generateMetadata({
   const state = cityData?.state || 'NC';
 
   return {
-    title: `Roofing Projects in ${cityName}, ${state} | Real Homes, Real Results`,
+    title: `Roofing Projects ${cityName} ${state}`,
     description: `See completed roofing projects in ${cityName}, ${state}. Before & after photos, materials used, and stories from homeowners we've helped. ${cityData?.description?.slice(0, 100) || ''}`,
     keywords: [
       `roofing ${cityName} ${state}`,
@@ -933,6 +935,16 @@ export default async function CityStoryPage({
           </div>
         </section>
       )}
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="other" city={displayName} slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing"
+      />
 
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">

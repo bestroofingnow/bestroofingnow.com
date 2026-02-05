@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Service Unavailable | Best Roofing Now',
+  title: 'Service Unavailable',
   robots: 'noindex, nofollow',
 };
 

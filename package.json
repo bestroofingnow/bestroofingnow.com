@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npx tsx scripts/generate-blog-slugs.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

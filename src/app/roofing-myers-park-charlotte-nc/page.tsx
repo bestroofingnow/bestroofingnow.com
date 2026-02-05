@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Myers Park Charlotte NC | Luxury Home Roofers | Best Roofing Now',
+  title: 'Roofing Myers Park Charlotte NC',
   description:
     'Looking for a trusted roofer in Myers Park Charlotte NC? Best Roofing Now specializes in luxury home roofing with premium materials for large estates. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -659,6 +660,19 @@ export default function RoofingMyersParkCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Myers Park"
+
+      />
+
       <CTASection
         title="Ready to Work with Myers Park's Luxury Home Roofing Experts?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide recommendations worthy of your Myers Park estate."

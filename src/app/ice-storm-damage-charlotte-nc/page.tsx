@@ -32,6 +32,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'January 2026 Ice Storm Damage Charlotte NC | Emergency Gutter & Roof Repair',
@@ -617,6 +618,19 @@ export default function IceStormDamageCharlottePage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Ice Storm Damage"
+
+      />
+
       <CTASection
         title="Ice Storm Damage? We're Here to Help Charlotte."
         subtitle="Charlotte neighbors - call us today for a free emergency inspection. We'll document your damage, help with insurance, and get your home back to normal. Stay safe out there."

@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Ballantyne Charlotte NC | South Charlotte Roofers | Best Roofing Now',
+  title: 'Roofing Ballantyne Charlotte NC',
   description:
     'Looking for a trusted roofer in Ballantyne Charlotte NC? Best Roofing Now serves the Ballantyne Corporate Park area with premium roofing services for upscale homes. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -658,6 +659,19 @@ export default function RoofingBallantyneCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Ballantyne"
+
+      />
+
       <CTASection
         title="Ready to Work with Ballantyne's Best Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Ballantyne home."

@@ -27,6 +27,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'What to Do After a Hail Storm Charlotte NC | Roof Damage Guide',
@@ -472,6 +473,19 @@ export default function WhatToDoAfterHailStormPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="What To Do After Hail Storm"
+
+      />
+
       <CTASection
         title="Need a Hail Damage Inspection?"
         subtitle="Best Roofing Now offers free hail damage inspections for Charlotte homeowners. We'll document any damage and help you navigate the insurance process."

@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Concord NC | Speedway Area Roofing Company | Best Roofing Now',
+  title: 'Roofing Concord NC | Top Rated',
   description:
     'Looking for a trusted roofing company in Concord NC? Best Roofing Now serves Cabarrus County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair and replacement near Charlotte Motor Speedway.',
   keywords: [
@@ -558,6 +559,19 @@ export default function RoofingConcordNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Concord"
+
+        state="NC"
+
+        citySlug="concord-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing Services in Concord NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."

@@ -33,6 +33,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 import { JamesTip } from '@/components/sections/PersonalTouch';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'DIY Gutter Cleaning Guide Charlotte NC | Safe Cleaning Tips',
@@ -808,6 +809,25 @@ export default function GutterCleaningDIYGuidePage() {
         subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/gutter-cleaning-diy-guide-charlotte-nc`}
       />
+
+
+      <CityGeoSection
+
+
+        city="Charlotte"
+
+
+        state="NC"
+
+
+        citySlug="charlotte-nc"
+
+
+        service="Gutter Cleaning Diy Guide"
+
+
+      />
+
 
       <CTASection
         title="Need Professional Gutter Help?"

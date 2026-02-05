@@ -29,6 +29,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Designer Shingles Charlotte NC | Luxury Architectural Shingles',
@@ -460,6 +461,19 @@ export default function DesignerShinglesCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Designer Shingles"
+
+      />
+
       <CTASection
         title="Elevate Your Home with Designer Shingles"
         subtitle="Schedule a free consultation with Charlotte's premium shingle specialists. We'll help you select the perfect designer shingles that complement your home's architecture and meet your HOA requirements."

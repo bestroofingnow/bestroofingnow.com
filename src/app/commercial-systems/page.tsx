@@ -66,6 +66,22 @@ export default function CommercialSystemsPage() {
         </div>
       </section>
 
+      {/* Overview */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                Commercial and industrial roofs face challenges that residential systems do not — standing water on flat surfaces, rooftop HVAC penetrations, foot traffic from maintenance crews, and strict energy-code requirements. Best Roofing Now installs single-ply membranes (TPO, EPDM, PVC), built-up roofing, and standing-seam metal systems for Charlotte-area businesses ranging from small retail spaces to large warehouse facilities.
+              </p>
+              <p>
+                Each system below is suited to different building types, budgets, and performance goals. Our commercial team will inspect your existing roof, evaluate drainage and insulation, and recommend the system that delivers the longest service life at the best value for your property. All commercial projects include manufacturer warranty registration and an optional preventive maintenance plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Systems Grid */}
       <section className="section">
         <div className="container">

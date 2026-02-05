@@ -38,9 +38,10 @@ import { Button } from '@/components/ui/Button';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Cost Charlotte NC | 2026 Pricing Guide | Best Roofing Now',
+  title: 'Roof Repair Cost Charlotte NC',
   description:
     'How much does roof repair cost in Charlotte NC? 2026 pricing guide: minor repairs $150-$500, moderate $500-$1,500, major $1,500-$5,000+. Free estimates, transparent pricing, no hidden fees. Licensed & insured.',
   keywords: [
@@ -782,6 +783,19 @@ export default function RoofRepairCostCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Repair Cost"
+
+      />
+
       <CTASection
         title="Ready to Find Out Your Roof Repair Cost?"
         subtitle="Get a free, no-obligation estimate for your roof repair in Charlotte NC. Our team will inspect your roof, explain exactly what needs fixing, and provide transparent pricing with no hidden fees."

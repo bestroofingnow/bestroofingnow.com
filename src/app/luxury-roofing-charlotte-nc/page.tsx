@@ -30,6 +30,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Luxury Roofing Charlotte NC | Premium Roofing for Fine Homes',
@@ -465,6 +466,19 @@ export default function LuxuryRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Luxury Roofing"
+
+      />
+
       <CTASection
         title="Experience Luxury Roofing Excellence"
         subtitle="Schedule a complimentary consultation with Charlotte's luxury roofing specialists. We'll help you select the perfect roofing solution that enhances your home's beauty and protects your investment for generations."

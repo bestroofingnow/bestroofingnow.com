@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'CertainTeed Shingles Charlotte NC | SELECT ShingleMaster',
@@ -708,6 +709,19 @@ export default function CertainTeedShinglesCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Certainteed Shingles"
+
+      />
+
       <CTASection
         title="Get a Free CertainTeed Shingles Estimate"
         subtitle="Experience the SELECT ShingleMaster difference. Contact Charlotte's trusted CertainTeed contractor for a free consultation and detailed estimate with enhanced warranty options."

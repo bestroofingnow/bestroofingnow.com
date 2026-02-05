@@ -26,9 +26,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Metal Roofing Huntersville NC | Standing Seam Experts | Best Roofing Now',
+  title: 'Metal Roofing Huntersville NC',
   description:
     'Looking for metal roofing in Huntersville NC? Best Roofing Now specializes in standing seam metal roofs, metal shingles, and metal roof repairs. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
@@ -640,7 +642,26 @@ export default function MetalRoofingHuntersvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Huntersville"
+        slug="metal-roofing-huntersville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Huntersville"
+
+        state="NC"
+
+        citySlug="huntersville-nc"
+
+        service="Metal Roofing"
+
+      />
+
       <CTASection
         title="Ready for Premium Metal Roofing in Huntersville?"
         subtitle="Get a free, no-obligation estimate from Huntersville's metal roofing experts. We'll help you choose the perfect metal roofing system for your home and budget."

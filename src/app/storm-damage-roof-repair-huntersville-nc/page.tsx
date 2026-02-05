@@ -31,6 +31,8 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help',
@@ -621,7 +623,22 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Huntersville" slug="storm-damage-roof-repair-huntersville-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Huntersville"
+
+        state="NC"
+
+        citySlug="huntersville-nc"
+
+        service="Storm Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Need Storm Damage Help in Huntersville?"
         subtitle="Contact us today for a free storm damage inspection. We'll document all damage, help file your insurance claim, and restore your roof to pre-storm condition."

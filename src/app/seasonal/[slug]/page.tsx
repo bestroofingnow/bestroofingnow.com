@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { Phone, CheckCircle, ArrowRight, Sun, Leaf, Snowflake, Flower, Calendar } from 'lucide-react';
 import { SITE_CONFIG, SEASONAL_ROOFING } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface SeasonalPageProps {
   params: Promise<{ slug: string }>;
@@ -26,7 +28,7 @@ export async function generateMetadata({ params }: SeasonalPageProps): Promise<M
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${season.title} | Best Roofing Now`,
+    title: `${season.title}`,
     description: season.description,
     keywords: season.keywords,
     alternates: {
@@ -312,6 +314,16 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Seasonal Roofing"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

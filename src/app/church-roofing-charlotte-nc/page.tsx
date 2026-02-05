@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Church Roofing Charlotte NC | Religious Building Experts | Best Roofing Now',
+  title: 'Church Roofing Charlotte NC | Religious Building Experts',
   description:
     'Expert church roofing services in Charlotte NC. Specializing in steep slopes, steeples, historic churches, and religious buildings. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -624,6 +625,19 @@ export default function ChurchRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Church Roofing"
+
+      />
+
       <CTASection
         title="Ready to Protect Your Place of Worship?"
         subtitle="Get a free assessment from Charlotte's trusted church roofing experts. We bring reverence, expertise, and exceptional craftsmanship to every religious building project."

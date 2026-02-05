@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Apartment Roofing Charlotte NC | Multi-Family Experts',
@@ -604,6 +605,19 @@ export default function ApartmentRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Apartment Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Apartment Roofing?"
         subtitle="Get a free assessment from Charlotte's trusted multi-family roofing experts. We understand property management needs and deliver results with minimal disruption."

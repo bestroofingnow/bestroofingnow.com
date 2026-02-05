@@ -29,9 +29,11 @@ import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Concord NC | Speedway Area | TPO & Flat Roof | Best Roofing Now',
+  title: 'Commercial Roofing Concord NC',
   description:
     'Expert commercial roofing in Concord NC. TPO, EPDM, flat roofs, metal roofing for warehouses, retail centers & Concord Mills area. I-85 corridor. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
@@ -624,7 +626,26 @@ export default function CommercialRoofingConcordNCPage() {
         title="Commercial Roofing in Nearby Cities"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Concord"
+        slug="commercial-roofing-concord-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Concord"
+
+        state="NC"
+
+        citySlug="concord-nc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Commercial Roofing in Concord NC?"
         subtitle="Get a free, no-obligation estimate from Concord's trusted commercial roofing company. Our certified team will assess your building and provide expert recommendations tailored to your business needs."

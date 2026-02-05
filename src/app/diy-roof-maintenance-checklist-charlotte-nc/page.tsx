@@ -32,6 +32,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'DIY Roof Maintenance Checklist Charlotte NC | Homeowner Guide',
@@ -555,6 +556,19 @@ export default function DIYRoofMaintenanceChecklistPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Diy Roof Maintenance Checklist"
+
+      />
+
       <CTASection
         title="Need a Professional Roof Inspection?"
         subtitle="Our trained professionals can safely inspect your entire roof and provide a detailed assessment. Free inspections for Charlotte homeowners."

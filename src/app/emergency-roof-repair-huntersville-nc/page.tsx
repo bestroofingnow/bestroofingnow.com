@@ -26,9 +26,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Emergency Roof Repair Huntersville NC | 24/7 Service | Best Roofing Now',
+  title: 'Emergency Roof Repair Huntersville',
   description:
     '24/7 emergency roof repair in Huntersville NC. Fast response for storm damage, active leaks, fallen trees, and urgent repairs. BBB A+ rated, veteran-owned. Call now for immediate help!',
   keywords: [
@@ -610,6 +612,15 @@ export default function EmergencyRoofRepairHuntersvilleNCPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="location" city="Huntersville" slug="emergency-roof-repair-huntersville-nc" />
+
+      <CityGeoSection
+        city="Huntersville"
+        state="NC"
+        citySlug="huntersville-nc"
+        service="Emergency Roof Repair"
+      />
 
       {/* Final Emergency CTA */}
       <section className="bg-accent text-white py-16">

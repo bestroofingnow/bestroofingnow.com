@@ -33,6 +33,7 @@ import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getProjectMarkersForCities } from '@/lib/project-data';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 // All cities in the Lake Norman area for project map/gallery
 const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersville', 'Denver', 'Sherrills Ford'];
@@ -562,6 +563,25 @@ export default async function LakeNormanRoofingPage() {
         subtitle="Browse completed roofing projects from the Lake Norman area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`}
       />
+
+
+      <CityGeoSection
+
+
+        city="Lake Norman"
+
+
+        state="NC"
+
+
+        citySlug="lake-norman"
+
+
+        service="Roofing"
+
+
+      />
+
 
       <CTASection
         title="Ready for Your Lake Norman Roofing Project?"

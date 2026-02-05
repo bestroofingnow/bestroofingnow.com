@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Coating Charlotte NC | Extend Your Roof\'s Life 15+ Years | Best Roofing Now',
+  title: 'Roof Coating Charlotte NC | Extend Roof Life 15+ Years',
   description:
     'Professional roof coating for all roof types in Charlotte NC -- pitched, flat, residential, and commercial. Silicone, acrylic, and elastomeric coatings extend your roof\'s life by 15+ years. Free estimates from BBB A+ rated contractor.',
   keywords: [
@@ -551,6 +552,19 @@ export default function RoofCoatingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Coating"
+
+      />
+
       <CTASection
         title="Ready for a Free Roof Coating Estimate?"
         subtitle="Extend your roof's life and reduce energy costs with professional roof coating. Contact Charlotte's trusted coating specialists for a free inspection and estimate."

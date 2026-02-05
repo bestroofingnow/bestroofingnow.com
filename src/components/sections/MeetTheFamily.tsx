@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { SEOImage as Image } from '@/components/ui/SEOImage';
 import { Quote, Heart, MapPin, Shield } from 'lucide-react';
 
 interface FamilyMember {

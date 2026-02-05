@@ -5,9 +5,11 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { EstimateButton } from '@/components/estimate';
 import { BreadcrumbSchema, AllWarrantiesSchema } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Warranty Information | Best Roofing Now Charlotte NC',
+  title: 'Roofing Warranty Information',
   description: 'Understand roofing warranties including manufacturer warranties, workmanship guarantees, and extended coverage options. Best Roofing Now Charlotte NC.',
   keywords: [
     'roofing warranty',
@@ -350,6 +352,15 @@ export default function WarrantyPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug="warranty" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing Warranty"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

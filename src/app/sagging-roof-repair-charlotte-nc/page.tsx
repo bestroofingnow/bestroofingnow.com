@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Sagging Roof Repair Charlotte NC | Structural Experts | Best Roofing Now',
+  title: 'Sagging Roof Repair Charlotte NC',
   description:
     'Expert sagging roof repair in Charlotte NC. Water damage, structural issues, age-related sag - we fix it all. Licensed structural roofing experts. BBB A+ rated, veteran-owned. Free inspections.',
   keywords: [
@@ -648,6 +649,19 @@ export default function SaggingRoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Sagging Roof Repair"
+
+      />
+
       <CTASection
         title="Get Expert Sagging Roof Repair Today"
         subtitle="Don't let a sagging roof put your home and family at risk. Contact Best Roofing Now for a free structural inspection and honest assessment of your repair options."

@@ -26,9 +26,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'New Construction Roofing Charlotte NC | Builder Services | Best Roofing Now',
+  title: 'New Construction Roofing Charlotte',
   description:
     'Professional new construction roofing services in Charlotte NC. Reliable builder partnerships, quality materials, and on-schedule completion. BBB A+ rated, veteran-owned company.',
   keywords: [
@@ -659,6 +660,19 @@ export default function NewConstructionRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="New Construction Roofing"
+
+      />
+
       <CTASection
         title="Partner With Charlotte's Trusted Roofing Contractor"
         subtitle="Contact us to discuss your new construction roofing needs. We offer competitive pricing, reliable scheduling, and quality craftsmanship for builders throughout the Charlotte metro."

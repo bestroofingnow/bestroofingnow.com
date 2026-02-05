@@ -23,6 +23,8 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Metal Roofing Cornelius NC | Lake Norman | Standing Seam Experts',
@@ -415,7 +417,26 @@ export default function MetalRoofingCorneliusNCPage() {
         variant="compact"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Cornelius"
+        slug="metal-roofing-cornelius-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Cornelius"
+
+        state="NC"
+
+        citySlug="cornelius-nc"
+
+        service="Metal Roofing"
+
+      />
+
       <CTASection
         title="Ready for Metal Roofing in Cornelius?"
         subtitle="Get a free quote for premium metal roofing from Lake Norman's waterfront specialists. Our standing seam systems are engineered for lakefront performance."

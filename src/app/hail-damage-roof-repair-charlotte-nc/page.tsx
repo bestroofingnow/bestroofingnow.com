@@ -32,9 +32,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Hail Damage Roof Repair Charlotte NC | Insurance Claims Help | Best Roofing Now',
+  title: 'Hail Damage Roof Repair Charlotte',
   description:
     'Hail damage roof repair in Charlotte NC. Best Roofing Now specializes in hail storm damage assessment, insurance claims assistance, and professional repairs. BBB A+ rated, licensed & insured. Free inspections after any storm.',
   keywords: [
@@ -660,6 +661,19 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Hail Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Don't Let Hail Damage Go Unrepaired"
         subtitle="Schedule your free hail damage inspection today. Our team will document all damage, help with your insurance claim, and ensure your roof is properly repaired to protect your home."

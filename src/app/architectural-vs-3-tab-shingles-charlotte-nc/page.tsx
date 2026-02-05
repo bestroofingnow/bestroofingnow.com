@@ -25,6 +25,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Architectural vs 3-Tab Shingles Charlotte NC',
@@ -402,6 +403,19 @@ export default function ArchitecturalVs3TabShinglesPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Architectural Vs 3 Tab Shingles"
+
+      />
+
       <CTASection
         title="Ready to Choose Your New Shingles?"
         subtitle="Get a free estimate from Best Roofing Now. We'll show you samples, explain options, and help you choose the best shingles for your Charlotte home."

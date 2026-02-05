@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Financing Charlotte NC | 0% Interest Options | Best Roofing Now',
+  title: 'Roof Financing Charlotte NC | 0%',
   description:
     'Affordable roof financing in Charlotte NC with 0% interest options. Easy approval, low monthly payments, and flexible terms. Get a new roof today with payments as low as $99/month.',
   keywords: [
@@ -582,6 +583,19 @@ export default function RoofFinancingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Financing"
+
+      />
+
       <CTASection
         title="Ready to Finance Your New Roof?"
         subtitle="Get a free estimate and explore your financing options. With 0% interest promotions and flexible payment plans, a new roof is more affordable than you think."

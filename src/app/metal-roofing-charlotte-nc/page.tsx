@@ -31,6 +31,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Metal Roofing Charlotte NC | Standing Seam & Metal Roof Installation',
@@ -829,6 +830,19 @@ export default function MetalRoofingCharlottePage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Metal Roofing"
+
+      />
+
       <CTASection
         title="Ready to Upgrade to Metal Roofing?"
         subtitle="Get a free, no-obligation estimate for metal roofing installation in Charlotte NC. Our experts will help you choose the best metal roof option for your home and budget."

@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Standing Seam Metal Roof Charlotte NC | Premium Metal Roofing',
@@ -646,6 +647,19 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Standing Seam Metal Roof"
+
+      />
+
       <CTASection
         title="Get a Free Standing Seam Metal Roof Estimate"
         subtitle="Ready to invest in a roof that lasts a lifetime? Contact Charlotte's trusted metal roofing specialists for a free consultation and detailed estimate."

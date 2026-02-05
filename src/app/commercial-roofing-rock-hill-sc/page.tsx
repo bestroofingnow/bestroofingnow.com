@@ -28,9 +28,11 @@ import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Rock Hill SC | Industrial & Flat Roof | Best Roofing Now',
+  title: 'Commercial Roofing Rock Hill SC',
   description:
     'Expert commercial roofing in Rock Hill SC. TPO, EPDM, flat roofs, metal roofing for warehouses, industrial facilities & retail. I-77 corridor. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
@@ -623,7 +625,26 @@ export default function CommercialRoofingRockHillSCPage() {
         title="Commercial Roofing in Nearby Cities"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Rock Hill"
+        slug="commercial-roofing-rock-hill-sc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Rock Hill"
+
+        state="SC"
+
+        citySlug="rock-hill-sc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Commercial Roofing in Rock Hill SC?"
         subtitle="Get a free, no-obligation estimate from Rock Hill's trusted commercial roofing company. Our certified team will assess your facility and provide expert recommendations."

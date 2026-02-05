@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Dilworth Charlotte NC | Historic Home Experts | Best Roofing Now',
+  title: 'Roofing Dilworth Charlotte NC',
   description:
     'Looking for a trusted roofer in Dilworth Charlotte NC? Best Roofing Now specializes in historic home roofing, bungalows, and preservation-friendly repairs. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -659,6 +660,19 @@ export default function RoofingDilworthCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Dilworth"
+
+      />
+
       <CTASection
         title="Ready to Work with Dilworth's Historic Home Roofing Experts?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide recommendations that respect your home's historic character."

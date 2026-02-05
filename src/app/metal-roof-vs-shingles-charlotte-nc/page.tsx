@@ -30,6 +30,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Metal Roof vs Shingles Charlotte NC | 2026 Comparison',
@@ -532,6 +533,19 @@ export default function MetalRoofVsShinglesPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Metal Roof Vs Shingles"
+
+      />
+
       <CTASection
         title="Still Not Sure Which is Right for You?"
         subtitle="Get a free consultation from Best Roofing Now. We'll assess your home, discuss your priorities and budget, and give you honest recommendations - no pressure."

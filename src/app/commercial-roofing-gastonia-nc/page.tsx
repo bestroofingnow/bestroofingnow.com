@@ -29,9 +29,11 @@ import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Gastonia NC | Industrial & Warehouse | Best Roofing Now',
+  title: 'Commercial Roofing Gastonia NC',
   description:
     'Expert commercial roofing in Gastonia NC. TPO, EPDM, flat roofs, metal roofing for warehouses, manufacturing plants & industrial facilities. I-85 corridor specialists. BBB A+ rated. Free estimates!',
   keywords: [
@@ -624,7 +626,26 @@ export default function CommercialRoofingGastoniaNCPage() {
         title="Commercial Roofing in Nearby Cities"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Gastonia"
+        slug="commercial-roofing-gastonia-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Gastonia"
+
+        state="NC"
+
+        citySlug="gastonia-nc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Commercial Roofing in Gastonia NC?"
         subtitle="Get a free, no-obligation estimate from Gastonia's trusted commercial and industrial roofing company. Our certified team will assess your facility and provide expert recommendations."

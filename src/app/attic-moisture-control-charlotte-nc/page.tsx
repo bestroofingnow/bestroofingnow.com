@@ -30,6 +30,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Attic Moisture Control Charlotte NC | Prevent Mold',
@@ -725,6 +726,19 @@ export default function AtticMoistureControlCharlottePage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Attic Moisture Control"
+
+      />
+
       <CTASection
         title="Concerned About Attic Moisture in Your Charlotte Home?"
         subtitle="Get a free attic inspection from Best Roofing Now. We'll assess your ventilation, check for moisture damage, and provide honest recommendations - no pressure, no obligation."

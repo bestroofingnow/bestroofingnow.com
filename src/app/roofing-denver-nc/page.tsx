@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizatio
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Denver NC | Lake Norman Roofers',
@@ -547,6 +548,19 @@ export default function RoofingDenverNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing in Denver NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Lake Norman western shore home."

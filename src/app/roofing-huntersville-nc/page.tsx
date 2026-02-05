@@ -27,9 +27,10 @@ import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Huntersville NC | Top-Rated Roofers | Best Roofing Now',
+  title: 'Roofing Huntersville NC | 5-Star',
   description:
     'Looking for top-rated roofers in Huntersville NC? Best Roofing Now provides expert roofing services to Huntersville and the Lake Norman area. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
   keywords: [
@@ -557,6 +558,19 @@ export default function RoofingHuntersvilleNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Huntersville"
+
+        state="NC"
+
+        citySlug="huntersville-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing in Huntersville NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Lake Norman home or business."

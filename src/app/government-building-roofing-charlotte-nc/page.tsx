@@ -40,9 +40,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Government Building Roofing Charlotte NC | Municipal & Federal Facilities | Best Roofing Now',
+  title: 'Government Roofing Charlotte NC',
   description:
     'Expert government building roofing contractors in Charlotte NC serving Mecklenburg County facilities, City of Charlotte buildings, federal complexes & public works. Procurement compliant. Licensed & insured. Free estimates.',
   keywords: [
@@ -687,6 +688,19 @@ export default function GovernmentBuildingRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Government Building Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Government Building Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your municipal, county, or federal facility. Our team understands government procurement requirements and will provide transparent pricing, compliance documentation, and a project plan tailored to your budget cycle."

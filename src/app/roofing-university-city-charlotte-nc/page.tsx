@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing University City Charlotte NC | UNCC Area | Best Roofing Now',
+  title: 'Roofing University City Charlotte',
   description:
     'Looking for a trusted roofer in University City Charlotte NC? Best Roofing Now serves the UNCC area with professional roofing services for homes, apartments, and student housing. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -659,6 +660,19 @@ export default function RoofingUniversityCityCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing University City"
+
+      />
+
       <CTASection
         title="Ready to Work with University City's Best Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We're local to the UNCC area and ready to help protect your home."

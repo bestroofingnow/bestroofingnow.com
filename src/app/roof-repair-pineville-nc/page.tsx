@@ -26,9 +26,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Pineville NC | Carolina Place Area | Best Roofing Now',
+  title: 'Roof Repair Pineville NC',
   description:
     'Need roof repair in Pineville NC? Best Roofing Now offers fast, reliable repairs for leaks, storm damage, and shingle replacement near Carolina Place Mall. BBB A+ rated. Free estimates!',
   keywords: [
@@ -635,7 +637,26 @@ export default function RoofRepairPinevilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Pineville"
+        slug="roof-repair-pineville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Pineville"
+
+        state="NC"
+
+        citySlug="pineville-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Need Roof Repair in Pineville NC?"
         subtitle="Get a free inspection and honest assessment from Pineville's trusted roofing experts. We'll diagnose the problem and provide a fair, transparent quote."

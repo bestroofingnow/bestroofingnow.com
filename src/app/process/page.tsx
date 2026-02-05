@@ -4,9 +4,11 @@ import { Phone, CheckCircle, Clock, Shield, Users, FileText, Hammer, Sparkles } 
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Our Roofing Process | What to Expect | Best Roofing Now Charlotte NC',
+  title: 'Our Roofing Process | What to Expect',
   description: 'Learn what to expect during your roof replacement or repair. Our step-by-step process ensures quality results and a stress-free experience.',
   keywords: [
     'roofing process',
@@ -286,6 +288,15 @@ export default function ProcessPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug="process" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing Services"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

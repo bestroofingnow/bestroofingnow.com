@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'TPO Roofing Charlotte NC | Commercial Flat Roof Experts',
@@ -624,6 +625,19 @@ export default function TPORoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="TPO Roofing"
+
+      />
+
       <CTASection
         title="Get a Free TPO Roofing Estimate for Your Business"
         subtitle="Protect your commercial investment with energy-efficient TPO roofing. Contact Charlotte's trusted commercial roofing experts for a free consultation and detailed estimate."

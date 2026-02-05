@@ -29,6 +29,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'How to Choose a Roofing Contractor Charlotte NC | 2026 Guide',
@@ -491,6 +492,19 @@ export default function HowToChooseRoofingContractorPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="How To Choose Roofing Contractor"
+
+      />
+
       <CTASection
         title="Ready to Work with a Contractor You Can Trust?"
         subtitle="Best Roofing Now meets every standard in this guide. Get a free estimate from Charlotte's most trusted roofing company."

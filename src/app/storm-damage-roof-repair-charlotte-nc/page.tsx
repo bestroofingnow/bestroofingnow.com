@@ -36,6 +36,7 @@ import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Charlotte NC | Insurance Claim Specialists',
@@ -833,6 +834,19 @@ export default function StormDamageRoofRepairCharlottePage() {
       />
 
       {/* CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Storm Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Storm Damage? Get Your Free Roof Inspection Today"
         subtitle="Fast response, expert assessment, and complete insurance claim support. Most Charlotte homeowners pay only their deductible."

@@ -47,9 +47,10 @@ import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Charlotte NC | #1 Rated | Best Roofing Now',
+  title: 'Commercial Roofing Charlotte NC | #1 Rated',
   description:
     `Expert commercial roofing in Charlotte NC. TPO, EPDM, flat roofing, metal roofing & roof coatings for warehouses, offices, retail & more. ${SITE_CONFIG.googleRating} Google rating, BBB A+ rated, veteran-owned. Free estimates!`,
   keywords: [
@@ -1229,6 +1230,19 @@ export default function CommercialRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Commercial Roofing in Charlotte NC?"
         subtitle="Get a free, no-obligation estimate from Charlotte's #1 rated commercial roofing company. Our certified team will assess your building and provide expert recommendations tailored to your business needs and budget."

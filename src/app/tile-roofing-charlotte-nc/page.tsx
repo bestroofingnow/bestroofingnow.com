@@ -26,9 +26,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Tile Roofing Charlotte NC | Clay & Concrete Tiles | Best Roofing Now',
+  title: 'Tile Roofing Charlotte NC',
   description:
     'Professional tile roofing installation in Charlotte NC. Clay tiles, concrete tiles, Mediterranean styles. Durable, beautiful, and long-lasting. BBB A+ rated, veteran-owned company.',
   keywords: [
@@ -699,6 +700,19 @@ export default function TileRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Tile Roofing"
+
+      />
+
       <CTASection
         title="Transform Your Home with Tile Roofing"
         subtitle="Get a free, no-obligation estimate on premium tile roofing for your Charlotte home. Experience the beauty and durability that can last a lifetime."

@@ -70,6 +70,7 @@ export function GeoTaggedProjectImage({
       <Image
         src={image.url}
         alt={altText}
+        title={altText}
         fill={fill}
         width={!fill ? width : undefined}
         height={!fill ? height : undefined}

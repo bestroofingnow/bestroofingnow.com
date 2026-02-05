@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Huntersville NC | Fast Emergency Service | Best Roofing Now',
+  title: 'Roof Repair Huntersville NC',
   description:
     'Need roof repair in Huntersville NC? Best Roofing Now offers fast, reliable roof repair services including leak repair, storm damage, and emergency repairs. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
@@ -517,7 +519,26 @@ export default function RoofRepairHuntersvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Huntersville"
+        slug="roof-repair-huntersville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Huntersville"
+
+        state="NC"
+
+        citySlug="huntersville-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Ready to Get Your Roof Repaired in Huntersville?"
         subtitle="Contact us today for a free inspection and estimate. Our expert team will diagnose your roof problems and provide honest repair recommendations."

@@ -30,6 +30,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Copper Roofing Charlotte NC | Premium Copper Roof Installation',
@@ -516,6 +517,19 @@ export default function CopperRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Copper Roofing"
+
+      />
+
       <CTASection
         title="Elevate Your Home with Copper Roofing"
         subtitle="Request a consultation with Charlotte's copper roofing specialists. We'll help you explore copper options that enhance your home's beauty and value for generations."

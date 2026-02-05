@@ -24,6 +24,8 @@ import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Siding Services Charlotte NC | Installation, Repair & Replacement',
@@ -428,6 +430,15 @@ export default function SidingServicesPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="service" city="Charlotte" slug="siding-services" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Siding Services"
+      />
 
       {/* CTA */}
       <CTASection

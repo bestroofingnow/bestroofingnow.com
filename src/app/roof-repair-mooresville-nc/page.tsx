@@ -27,6 +27,8 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof Repair Mooresville NC | Lake Norman | Free Estimates',
@@ -656,7 +658,26 @@ export default function RoofRepairMooresvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="roof-repair-mooresville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Ready to Fix Your Mooresville Roof?"
         subtitle="Get a free, no-obligation repair estimate from northern Lake Norman's trusted roofing experts. We'll assess the damage, explain your options, and deliver honest recommendations."

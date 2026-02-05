@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Flashing Repair Charlotte NC | Wall, Vent & Pipe Flashing Experts | Best Roofing Now',
+  title: 'Roof Flashing Repair Charlotte',
   description:
     'Expert roof flashing repair in Charlotte NC. We fix wall flashing, vent pipe boots, skylight seals, valley flashing, and step flashing leaks. Licensed roofers, free inspections. Call Best Roofing Now today!',
   keywords: [
@@ -558,6 +559,19 @@ export default function RoofFlashingRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Flashing Repair"
+
+      />
+
       <CTASection
         title="Stop Flashing Leaks for Good"
         subtitle="Get a free inspection from Charlotte's flashing repair experts. We'll find the problem and fix it right the first time."

@@ -10,6 +10,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { EstimateProvider } from '@/components/estimate';
 import { SocialProofProvider } from '@/components/social-proof';
 import { LazyCustomCursor } from '@/components/ui/LazyCustomCursor';
+import { UrgencyBanner } from '@/components/ui/UrgencyBanner';
 import { WebVitals } from '@/components/analytics/WebVitals';
 import { AnalyticsProvider } from '@/components/analytics';
 
@@ -38,7 +39,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: `Best Roofing Company Charlotte NC | 5-Star Rated | BBB A+ | ${SITE_CONFIG.name}`,
+    default: `Best Roofer Charlotte NC | 5-Star | BBB A+`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: `Looking for the best roofing company? Charlotte's top-rated contractor with 5.0 Google rating, 500+ roofs installed, BBB A+ rated, veteran-owned. FREE inspections & same-day estimates. Call (704) 605-6047.`,
@@ -167,9 +168,7 @@ export default function RootLayout({
         {/* Non-critical third-party - dns-prefetch only */}
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
-        {/* PowerPay financing - preconnect for faster badge loading */}
-        <link rel="preconnect" href="https://getpowerpay.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://getpowerpay.com" />
+        {/* PowerPay financing application */}
         <link rel="dns-prefetch" href="https://app.getpowerpay.com" />
         <WebSiteSchema />
       </head>
@@ -188,6 +187,7 @@ export default function RootLayout({
           >
             Skip to main content
           </a>
+          <UrgencyBanner />
           <Header />
           <main id="main-content" tabIndex={-1}>{children}</main>
           <Footer />

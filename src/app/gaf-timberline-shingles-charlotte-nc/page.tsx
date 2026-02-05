@@ -23,9 +23,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'GAF Timberline Shingles Charlotte NC | HDZ & NS | Best Roofing Now',
+  title: 'GAF Timberline Charlotte NC',
   description:
     'GAF Timberline HDZ and NS shingles installed in Charlotte NC. America\'s #1 selling shingle with LayerLock technology, StainGuard Plus, and 130 MPH wind warranty. Factory-Certified contractor.',
   keywords: [
@@ -657,6 +658,19 @@ export default function GAFTimberlineShinglesCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Gaf Timberline Shingles"
+
+      />
+
       <CTASection
         title="Ready for America's #1 Selling Shingles?"
         subtitle="Get a free, no-obligation estimate for GAF Timberline HDZ or NS shingles. Our certified team will help you choose the right product and color for your home."

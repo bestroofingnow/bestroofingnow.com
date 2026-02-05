@@ -22,7 +22,9 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof Replacement Denver NC | Lake Norman | Free Estimates',
@@ -475,7 +477,27 @@ export default function RoofReplacementDenverNCPage() {
         variant="compact"
       />
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="roof-replacement-denver-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Ready for Your New Denver NC Roof?"
         subtitle="Get a free estimate for roof replacement from Lake Norman's western shore roofing experts. Financing available with payments as low as $150/month."

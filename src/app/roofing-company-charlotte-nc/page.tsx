@@ -44,9 +44,10 @@ import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Company Charlotte NC | Veteran-Owned | 5-Star Rated | Best Roofing Now',
+  title: 'Roofing Company Charlotte NC',
   description:
     'Best Roofing Now is Charlotte NC\'s top-rated veteran-owned roofing company. 5.0 Google rating, 62+ reviews, BBB A+ rated, 500+ roofs installed. GAF, CertainTeed & Owens Corning certified. Free estimates for residential & commercial roofing.',
   keywords: [
@@ -947,6 +948,19 @@ export default function RoofingCompanyCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roofing Company"
+
+      />
+
       <CTASection
         title="Ready to Work with Charlotte's Most Trusted Roofing Company?"
         subtitle="Get a free, no-obligation estimate from our certified team. Owner James Turner will personally assess your roof and provide honest recommendations tailored to your needs and budget."

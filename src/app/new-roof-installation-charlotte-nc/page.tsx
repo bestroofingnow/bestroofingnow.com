@@ -39,9 +39,10 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'New Roof Installation Charlotte NC | First-Time Roof & New Construction | Best Roofing Now',
+  title: 'New Roof Install Charlotte NC',
   description:
     'New roof installation in Charlotte NC for first-time builds and new construction. Complete roofing system installation from the decking up. Shingle, metal, and tile options. BBB A+ rated, veteran-owned. Free estimates!',
   keywords: [
@@ -1192,6 +1193,19 @@ export default function NewRoofInstallationCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="New Roof Installation"
+
+      />
+
       <CTASection
         title="Ready for Your New Roof Installation in Charlotte?"
         subtitle="Get a free, no-obligation estimate from our certified installation team. We'll assess your needs and provide honest recommendations with transparent pricing. Over 500 Charlotte homeowners have trusted us with their new roof - you can too."

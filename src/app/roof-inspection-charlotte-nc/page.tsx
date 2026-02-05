@@ -32,9 +32,10 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Inspection Charlotte NC | Free Roof Inspections | Best Roofing Now',
+  title: 'Roof Inspection Charlotte NC | Free',
   description:
     'Schedule your FREE roof inspection in Charlotte NC today. Comprehensive inspections include drone technology, detailed reports, and expert recommendations. No obligation. Call (704) 605-6047.',
   keywords: [
@@ -729,6 +730,19 @@ export default function RoofInspectionCharlottePage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Inspection"
+
+      />
+
       <CTASection
         title="Schedule Your Free Roof Inspection Today"
         subtitle="Get a comprehensive assessment of your roof's condition with no obligation. Same-day appointments available for Charlotte homeowners."

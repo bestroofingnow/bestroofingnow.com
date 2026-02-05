@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Missing Shingles Repair Charlotte NC | Fast Service | Best Roofing Now',
+  title: 'Missing Shingles Repair Charlotte',
   description:
     'Missing shingles on your roof? Best Roofing Now provides fast, professional missing shingle repair in Charlotte NC. Wind damage, age-related wear - we fix it all. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -644,6 +645,19 @@ export default function MissingShinglesRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Missing Shingles Repair"
+
+      />
+
       <CTASection
         title="Get Your Missing Shingles Repaired Today"
         subtitle="Don't let missing shingles lead to costly water damage. Contact Best Roofing Now for a free inspection and fast, professional repairs."

@@ -25,6 +25,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'EPDM Roofing Charlotte NC | Rubber Roof Installation',
@@ -641,6 +642,19 @@ export default function EPDMRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="EPDM Roofing"
+
+      />
+
       <CTASection
         title="Get a Free EPDM Roofing Estimate"
         subtitle="Protect your commercial investment with proven EPDM rubber roofing. Contact Charlotte's trusted commercial roofing experts for a free consultation and detailed estimate."

@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Terrell NC | West Lake Norman Roofers | Best Roofing Now',
+  title: 'Roofing Terrell NC | Lake Norman',
   description:
     'Looking for roofing services in Terrell NC? Best Roofing Now serves Terrell and West Lake Norman from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
   keywords: [
@@ -607,6 +608,19 @@ export default function RoofingTerrellNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Terrell"
+
+        state="NC"
+
+        citySlug="terrell-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready to Work with Terrell's Trusted Roofing Team?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your property's needs."

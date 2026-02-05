@@ -26,9 +26,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Inspection Denver NC | Free Estimates | Best Roofing Now',
+  title: 'Roof Inspection Denver NC | Free',
   description:
     'Free roof inspections in Denver NC. Comprehensive assessments with detailed reports for Lake Norman western shore homes. BBB A+ rated. Schedule today!',
   keywords: [
@@ -674,7 +676,26 @@ export default function RoofInspectionDenverNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="roof-inspection-denver-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Roof Inspection"
+
+      />
+
       <CTASection
         title="Schedule Your Free Denver NC Roof Inspection"
         subtitle="Get a comprehensive roof assessment with detailed photos and report for your Lake Norman western shore home. 100% free, no obligation. Know exactly what shape your roof is in."

@@ -23,9 +23,11 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Metal Roofing Denver NC | Standing Seam Experts | Best Roofing Now',
+  title: 'Metal Roofing Denver NC',
   description:
     'Premium metal roofing in Denver NC. Standing seam & corrugated for Lake Norman western shore homes. 140+ MPH wind rated. 40-70 year lifespan. Free estimates.',
   keywords: [
@@ -496,7 +498,26 @@ export default function MetalRoofingDenverNCPage() {
         variant="compact"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="metal-roofing-denver-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Metal Roofing"
+
+      />
+
       <CTASection
         title="Ready for Metal Roofing in Denver NC?"
         subtitle="Get a free quote for premium metal roofing from Lake Norman's western shore specialists. Our standing seam systems are engineered for Denver's lakefront wind exposure and backed by warranties up to 50 years."

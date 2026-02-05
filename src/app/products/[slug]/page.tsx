@@ -8,6 +8,8 @@ import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { FAQ } from '@/components/sections/FAQ';
 import { BreadcrumbSchema, ProductSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -36,7 +38,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${product.fullName} | ${product.brandName} Shingles Charlotte NC`,
+    title: `${product.fullName} | Charlotte NC`,
     description: `${product.description} Get ${product.name} installed by certified ${product.brandName} contractors in Charlotte NC. ${product.warranty} warranty. Free estimates.`,
     keywords: product.keywords,
     alternates: {
@@ -401,6 +403,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing Products"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

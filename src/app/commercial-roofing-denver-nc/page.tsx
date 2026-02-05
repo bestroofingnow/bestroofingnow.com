@@ -29,9 +29,11 @@ import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Denver NC | TPO & Flat Roof | Best Roofing Now',
+  title: 'Commercial Roofing Denver NC',
   description:
     'Expert commercial roofing in Denver NC. TPO, EPDM, flat roofs, metal for Lake Norman businesses. Lincoln County specialists. BBB A+ rated. Free estimates!',
   keywords: [
@@ -680,7 +682,26 @@ export default function CommercialRoofingDenverNCPage() {
         title="Commercial Roofing in Nearby Cities"
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="commercial-roofing-denver-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Commercial Roofing"
+
+      />
+
       <CTASection
         title="Ready for Professional Commercial Roofing in Denver NC?"
         subtitle="Get a free, no-obligation estimate from Lake Norman's trusted commercial roofing company. Our certified team will assess your building and provide expert recommendations tailored to Lincoln County requirements and your business needs."

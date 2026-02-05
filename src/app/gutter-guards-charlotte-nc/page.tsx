@@ -27,9 +27,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Gutter Guards Charlotte NC | Mesh, Micro-Mesh & Screen Systems | Best Roofing Now',
+  title: 'Gutter Guards Charlotte NC',
   description:
     'Professional gutter guard installation in Charlotte NC. Mesh, micro-mesh, screen, brush, and reverse-curve systems to prevent clogs and protect your home. Compare all gutter guard types. Free estimates from BBB A+ rated, veteran-owned company.',
   keywords: [
@@ -649,6 +650,19 @@ export default function GutterGuardsCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Gutter Guards"
+
+      />
+
       <CTASection
         title="Ready to Protect Your Gutters?"
         subtitle="Get a free, no-obligation estimate on gutter guard installation for your Charlotte home. Say goodbye to clogged gutters forever."

@@ -31,9 +31,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Mooresville NC | Trusted Lake Norman Roofers | Best Roofing Now',
+  title: 'Roofing Mooresville NC | 5-Star',
   description:
     'Looking for a trusted roofing contractor in Mooresville NC? Best Roofing Now serves Mooresville and Lake Norman from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
   keywords: [
@@ -546,6 +547,19 @@ export default function RoofingMooresvilleNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing in Mooresville NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Lake Norman home or business."

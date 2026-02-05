@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Sitemap | Best Roofing Now',
+  title: 'Sitemap',
   description:
     'Browse the full sitemap of Best Roofing Now. Find links to all our roofing services, service areas, resources, and more.',
   alternates: {

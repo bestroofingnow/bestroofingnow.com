@@ -6,6 +6,8 @@ import { SITE_CONFIG, ROOFING_GUIDES } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { BreadcrumbSchema, WebPageSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface GuidePageProps {
   params: Promise<{ slug: string }>;
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${guide.title} | Best Roofing Now Charlotte NC`,
+    title: `${guide.title}`,
     description: guide.description,
     keywords: guide.keywords,
     alternates: {
@@ -457,6 +459,9 @@ export default async function GuidePage({ params }: GuidePageProps) {
         </div>
       </section>
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="guide" city="Charlotte" slug={slug} />
+
       {/* Other Guides */}
       <section className="section bg-light">
         <div className="container">
@@ -488,6 +493,13 @@ export default async function GuidePage({ params }: GuidePageProps) {
           </div>
         </div>
       </section>
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing Guide"
+      />
 
       {/* Directory Citations */}
       <section className="py-6 bg-gray-50 border-t border-gray-100">

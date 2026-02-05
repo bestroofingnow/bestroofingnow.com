@@ -28,6 +28,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Office Roof: Replacement vs Coating | Charlotte NC',
@@ -584,6 +585,19 @@ export default function OfficeBuildingRoofReplacementVsCoatingPage() {
       />
 
       {/* CTA Section */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Office Building Roof Replacement Vs Coating"
+
+      />
+
       <CTASection
         title="Not Sure Which Option is Right for Your Building?"
         subtitle="Get a free commercial roof assessment from Best Roofing Now. We'll inspect your roof, provide honest recommendations, and give you options - not a sales pitch."

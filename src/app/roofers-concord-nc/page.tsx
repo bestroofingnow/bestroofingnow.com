@@ -29,9 +29,11 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Concord NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofers Concord NC | 5-Star Rated',
   description:
     'Looking for trusted roofers in Concord NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Cabarrus County. BBB A+ rated with 500+ roofs completed. Free estimates for all roofing services in the Charlotte Motor Speedway area.',
   keywords: [
@@ -747,7 +749,22 @@ export default function RoofersConcordNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Concord" slug="roofers-concord-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Concord"
+
+        state="NC"
+
+        citySlug="concord-nc"
+
+        service="Roofers"
+
+      />
+
       <CTASection
         title="Ready to Work with Concord's Top-Rated Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Concord home's needs and your budget."

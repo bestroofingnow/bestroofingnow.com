@@ -22,7 +22,9 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof Replacement Huntersville NC | Lake Norman | Free Estimates',
@@ -379,7 +381,27 @@ export default function RoofReplacementHuntersvilleNCPage() {
         variant="compact"
       />
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Huntersville"
+        slug="roof-replacement-huntersville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Huntersville"
+
+        state="NC"
+
+        citySlug="huntersville-nc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Ready for Your New Huntersville Roof?"
         subtitle="Get a free estimate for roof replacement from the Lake Norman area's most trusted contractor. Financing available with payments as low as $150/month."

@@ -10,6 +10,8 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Storm Damage Roof and Siding Repair Charlotte NC | Insurance Claim Experts',
@@ -411,6 +413,15 @@ export default function StormDamageRoofSidingPage() {
         faqs={stormFAQs}
         title="Storm Damage Roof & Siding FAQ"
         subtitle="Common questions about storm damage restoration in Charlotte"
+      />
+
+      <GeoProjectGalleryStrip pageType="service" city="Charlotte" slug="storm-damage-roof-siding" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Storm Damage Repair"
       />
 
       {/* CTA */}

@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Davidson NC | Davidson College Area Roofers | Best Roofing Now',
+  title: 'Roofing Davidson NC | Top Rated',
   description:
     'Looking for a trusted roofing company in Davidson NC? Best Roofing Now serves Davidson and Lake Norman from our Charlotte headquarters. Expert roofers for historic homes and modern properties. BBB A+ rated, veteran-owned.',
   keywords: [
@@ -534,6 +535,19 @@ export default function RoofingDavidsonNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Davidson"
+
+        state="NC"
+
+        citySlug="davidson-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing in Davidson NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations that respect your home's character and your budget."

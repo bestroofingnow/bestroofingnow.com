@@ -30,9 +30,11 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Fort Mill SC | Emergency & Storm Damage | Best Roofing Now',
+  title: 'Roof Repair Fort Mill SC',
   description:
     'Fast, reliable roof repair in Fort Mill SC. Emergency repairs, storm damage, leak repair, and shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for free estimate.',
   keywords: [
@@ -520,7 +522,26 @@ export default function RoofRepairFortMillSCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Fort Mill"
+        slug="roof-repair-fort-mill-sc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Fort Mill"
+
+        state="SC"
+
+        citySlug="fort-mill-sc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Ready for Professional Roof Repair in Fort Mill SC?"
         subtitle="Get a free, no-obligation estimate from York County's trusted roofing company. Our team will assess your roof and provide honest recommendations."

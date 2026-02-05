@@ -23,10 +23,12 @@ import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, LocationSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Mooresville NC | Lake Norman Experts | Best Roofing Now',
+  title: 'Roof Replacement Mooresville NC',
   description:
     'Need a new roof in Mooresville NC? Best Roofing Now is the Lake Norman area\'s trusted roof replacement company. Premium materials, expert installation, and financing available. Free estimates!',
   keywords: [
@@ -559,7 +561,27 @@ export default function RoofReplacementMooresvilleNCPage() {
         </div>
       </section>
 
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="roof-replacement-mooresville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Roof Replacement"
+
+      />
+
       <CTASection
         title="Get Your Free Roof Replacement Estimate in Mooresville"
         subtitle="Contact us today for a free inspection and detailed estimate. We'll help you choose the perfect roofing solution for your Lake Norman home."

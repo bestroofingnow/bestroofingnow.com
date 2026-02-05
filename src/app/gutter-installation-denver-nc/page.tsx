@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Gutter Installation Denver NC | Seamless Gutters | Best Roofing Now',
+  title: 'Gutter Installation Denver NC',
   description:
     'Professional gutter installation in Denver NC. Seamless aluminum gutters, gutter guards, and repairs for Lake Norman homes. BBB A+ rated. Free estimates!',
   keywords: [
@@ -677,7 +679,26 @@ export default function GutterInstallationDenverNCPage() {
         description="See why proper gutter installation is critical to protecting your Denver NC home's foundation."
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Denver"
+        slug="gutter-installation-denver-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Denver"
+
+        state="NC"
+
+        citySlug="denver-nc"
+
+        service="Gutter Installation"
+
+      />
+
       <CTASection
         title="Ready for Seamless Gutters in Denver NC?"
         subtitle="Get a free, no-obligation estimate for custom seamless gutters on the Lake Norman western shore. We'll measure your home, recommend the right size for lakefront drainage, and provide transparent pricing."

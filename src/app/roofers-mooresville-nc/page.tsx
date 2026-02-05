@@ -29,9 +29,11 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Mooresville NC | 5-Star Rated | Best Roofing Now',
+  title: 'Roofers Mooresville NC | 5-Star Rated',
   description:
     'Looking for trusted roofers in Mooresville NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving the Lake Norman area. BBB A+ rated. Free estimates for all roofing services.',
   keywords: [
@@ -778,7 +780,22 @@ export default function RoofersMoresville() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip pageType="location" city="Mooresville" slug="roofers-mooresville-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Roofers"
+
+      />
+
       <CTASection
         title="Ready to Work with Lake Norman's Top-Rated Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your needs and budget."

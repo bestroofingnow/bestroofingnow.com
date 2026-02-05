@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Ventilation Charlotte NC | Attic Ventilation Experts | Best Roofing Now',
+  title: 'Roof Ventilation Charlotte NC',
   description:
     'Expert roof and attic ventilation services in Charlotte NC. Ridge vents, soffit vents, power ventilators - we install it all. Reduce energy bills, prevent moisture damage. BBB A+ rated. Free estimates.',
   keywords: [
@@ -655,6 +656,19 @@ export default function RoofVentilationCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Ventilation"
+
+      />
+
       <CTASection
         title="Improve Your Home's Ventilation Today"
         subtitle="Don't let poor ventilation shorten your roof's life or waste energy. Contact Best Roofing Now for a free assessment and custom ventilation solution."

@@ -42,9 +42,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Data Center Roofing Charlotte NC | Server Farm & Tech Facility Roofs | Best Roofing Now',
+  title: 'Data Center Roofing Charlotte NC',
   description:
     'Specialized data center roofing contractors in Charlotte NC for enterprise data centers, colocation facilities & cloud provider centers. Zero-downtime installations. Waterproofing experts. Licensed & insured. Free estimates.',
   keywords: [
@@ -690,6 +691,19 @@ export default function DataCenterRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Data Center Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Data Center Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your data center, colocation facility, or tech building. Our team specializes in zero-downtime installations with the enhanced waterproofing and redundancy that mission-critical facilities demand."

@@ -26,6 +26,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Wind Damage Roof Repair Charlotte NC | Blown Shingles & High Wind',
@@ -633,6 +634,19 @@ export default function WindDamageRoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Wind Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Wind Damage? Get Help Now"
         subtitle="Our emergency team is standing by 24/7. Call now for immediate response or schedule a free damage inspection for your Charlotte home."

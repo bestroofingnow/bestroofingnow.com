@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { Phone, CheckCircle, Clock, Building2, ArrowRight } from 'lucide-react';
 import { SITE_CONFIG, COMMERCIAL_SYSTEMS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface CommercialSystemPageProps {
   params: Promise<{ slug: string }>;
@@ -32,7 +34,7 @@ export async function generateMetadata({ params }: CommercialSystemPageProps): P
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${system.fullName} | Commercial Roofing Charlotte NC | Best Roofing Now`,
+    title: `${system.fullName} | Commercial Charlotte`,
     description: `${system.description} Professional ${system.name} installation and repair in Charlotte NC.`,
     keywords: system.keywords,
     alternates: {
@@ -290,6 +292,16 @@ export default async function CommercialSystemPage({ params }: CommercialSystemP
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="service" city="Charlotte" slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Commercial Roofing"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

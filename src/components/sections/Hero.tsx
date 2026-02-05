@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { SEOImage as Image } from '@/components/ui/SEOImage';
 import { Star, Shield, Clock, Award } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { HeroCTA } from './HeroCTA';

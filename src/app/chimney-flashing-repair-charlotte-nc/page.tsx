@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Chimney Flashing Repair Charlotte NC | Leak Prevention | Best Roofing Now',
+  title: 'Chimney Flashing Repair Charlotte NC | Leak Prevention',
   description:
     'Expert chimney flashing repair in Charlotte NC. Stop chimney leaks with professional flashing installation and waterproofing. BBB A+ rated, licensed contractor. Free inspections available.',
   keywords: [
@@ -536,6 +537,19 @@ export default function ChimneyFlashingRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Chimney Flashing Repair"
+
+      />
+
       <CTASection
         title="Ready to Fix Your Chimney Leak?"
         subtitle="Don't let a chimney leak damage your home. Get a free inspection and repair estimate from Charlotte's chimney flashing specialists."

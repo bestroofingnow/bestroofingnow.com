@@ -25,9 +25,10 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Ice Dam Prevention Charlotte NC | Winter Roofing | Best Roofing Now',
+  title: 'Ice Dam Prevention Charlotte NC',
   description:
     'Expert ice dam prevention services in Charlotte NC. Protect your roof from winter damage with proper ventilation, insulation, and ice barriers. BBB A+ rated, veteran-owned. Free inspections.',
   keywords: [
@@ -622,6 +623,19 @@ export default function IceDamPreventionCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Ice Dam Prevention"
+
+      />
+
       <CTASection
         title="Protect Your Roof Before Winter Arrives"
         subtitle="Don't wait until ice dams cause expensive damage. Contact Best Roofing Now for a free assessment of your home's winter readiness."

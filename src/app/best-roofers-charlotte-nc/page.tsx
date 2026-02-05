@@ -37,6 +37,7 @@ import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Best Roofers Charlotte NC | 500+ Five-Star Reviews',
@@ -901,6 +902,19 @@ export default function BestRoofersCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Best Roofers"
+
+      />
+
       <CTASection
         title="Ready to Hire Charlotte's Best Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. Discover why 500+ Charlotte homeowners have chosen Best Roofing Now as their trusted roofing partner."

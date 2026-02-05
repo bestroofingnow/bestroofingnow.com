@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Mint Hill NC | East Charlotte Roofers | Best Roofing Now',
+  title: 'Roofing Mint Hill NC | 5-Star',
   description:
     'Need a roofer in Mint Hill NC? Best Roofing Now serves Mint Hill from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair, replacement, and installation for larger properties in East Charlotte.',
   keywords: [
@@ -556,6 +557,19 @@ export default function RoofingMintHillNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mint Hill"
+
+        state="NC"
+
+        citySlug="mint-hill-nc"
+
+        service="Roofing"
+
+      />
+
       <CTASection
         title="Ready for Expert Roofing Services in Mint Hill NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your property's unique needs."

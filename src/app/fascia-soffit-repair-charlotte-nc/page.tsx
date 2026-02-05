@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Fascia & Soffit Repair Charlotte NC | Trim Specialists | Best Roofing Now',
+  title: 'Fascia & Soffit Charlotte NC',
   description:
     'Professional fascia and soffit repair in Charlotte NC. Fix wood rot, replace damaged trim, and install aluminum fascia and soffit. BBB A+ rated, licensed contractor. Free estimates available.',
   keywords: [
@@ -591,6 +592,19 @@ export default function FasciaSoffitRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Fascia & Soffit Repair"
+
+      />
+
       <CTASection
         title="Ready to Protect Your Home?"
         subtitle="Don't let damaged fascia and soffit lead to bigger problems. Get a free inspection and estimate from Charlotte's trim specialists."

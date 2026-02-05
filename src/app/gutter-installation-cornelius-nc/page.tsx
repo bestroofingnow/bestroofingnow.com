@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Gutter Installation Cornelius NC | Seamless Gutters | Best Roofing Now',
+  title: 'Gutter Installation Cornelius NC',
   description:
     'Professional gutter installation in Cornelius NC. Seamless aluminum gutters, gutter guards, and gutter repair for Lake Norman homes. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [
@@ -676,7 +678,26 @@ export default function GutterInstallationCorneliusNCPage() {
         description="See why proper gutter installation is critical to protecting your Cornelius home's foundation."
       />
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Cornelius"
+        slug="gutter-installation-cornelius-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Cornelius"
+
+        state="NC"
+
+        citySlug="cornelius-nc"
+
+        service="Gutter Installation"
+
+      />
+
       <CTASection
         title="Ready for Seamless Gutters in Cornelius?"
         subtitle="Get a free, no-obligation estimate for custom seamless gutters. We'll measure your home, recommend the right size and style, and provide transparent pricing with no hidden fees."

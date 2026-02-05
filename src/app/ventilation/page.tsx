@@ -3,9 +3,11 @@ import Link from 'next/link';
 import { Phone, Wind, Thermometer, DollarSign, CheckCircle, AlertTriangle, Home } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Attic Ventilation & Roof Energy Efficiency | Charlotte NC | Best Roofing Now',
+  title: 'Attic Ventilation Charlotte NC',
   description: 'Improve your home\'s energy efficiency with proper attic ventilation. Ridge vents, soffit vents, and ventilation solutions for Charlotte homes.',
   keywords: [
     'attic ventilation Charlotte',
@@ -269,6 +271,15 @@ export default function VentilationPage() {
           </div>
         </div>
       </section>
+
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug="ventilation" />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roof Ventilation"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

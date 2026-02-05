@@ -37,9 +37,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Manufacturing Plant Roofing Charlotte NC | Factories & Processing Facilities | Best Roofing Now',
+  title: 'Manufacturing Roofing Charlotte',
   description:
     'Expert manufacturing plant roofing contractors in Charlotte NC. Specializing in factories, processing facilities & production centers. Chemical-resistant, OSHA-compliant roofing. Licensed & insured. Free estimates.',
   keywords: [
@@ -684,6 +685,19 @@ export default function ManufacturingPlantRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Manufacturing Plant Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Manufacturing Plant Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your factory, processing facility, or production center. Our team will assess your building and provide honest recommendations tailored to your chemical exposure, production schedule, and budget."

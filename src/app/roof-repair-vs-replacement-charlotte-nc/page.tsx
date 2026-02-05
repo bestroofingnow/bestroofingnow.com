@@ -39,6 +39,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof Repair vs. Replacement Charlotte NC | Decision Guide (2026)',
@@ -1166,6 +1167,19 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Repair Vs Replacement"
+
+      />
+
       <CTASection
         title="Not Sure Whether to Repair or Replace?"
         subtitle="Get a free, no-obligation inspection from Charlotte's most trusted roofing contractor. We will examine your roof, explain exactly what we find, and give you an honest recommendation based on what makes the most financial sense for your home."

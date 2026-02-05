@@ -24,9 +24,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Tree Damage Roof Repair Charlotte NC | Storm Cleanup | Best Roofing Now',
+  title: 'Tree Damage Roof Repair Charlotte',
   description:
     'Expert tree damage roof repair in Charlotte NC. Fast emergency response when a tree falls on your roof. Insurance claim assistance, full restoration. Call Best Roofing Now 24/7!',
   keywords: [
@@ -563,6 +564,19 @@ export default function TreeDamageRoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Tree Damage Roof Repair"
+
+      />
+
       <CTASection
         title="Complete Tree Damage Restoration"
         subtitle="From emergency response to final repairs, we handle everything. Insurance claim assistance included. Get your free assessment today."

@@ -40,9 +40,10 @@ import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getGeoImages } from '@/lib/geo-images';
 import { IMAGES, CITY_COORDINATES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Charlotte NC | Fast & Affordable | Best Roofing Now',
+  title: 'Roof Repair Charlotte NC | Fast',
   description:
     'Expert roof repair in Charlotte NC. 24/7 emergency service, leak repair, storm damage restoration, and shingle replacement. Fast response, affordable prices. Free estimates from BBB A+ rated roofers.',
   keywords: [
@@ -731,6 +732,19 @@ export default function RoofRepairCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Ready to Fix Your Roof? Contact Charlotte's Trusted Repair Experts"
         subtitle="Get a free, no-obligation estimate for your roof repair. Fast response, honest assessments, and quality repairs backed by warranty."

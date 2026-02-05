@@ -25,9 +25,11 @@ import { BreadcrumbSchema, FAQSchema, LocationSchema } from '@/components/seo/Sc
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Concord NC | Fast & Affordable | Best Roofing Now',
+  title: 'Roof Repair Concord NC | Fast',
   description:
     'Need roof repair in Concord NC? Best Roofing Now offers fast, affordable roof repair services including leak repair, storm damage, and emergency repairs. BBB A+ rated, veteran-owned. Free estimates for Cabarrus County homeowners!',
   keywords: [
@@ -590,7 +592,26 @@ export default function RoofRepairConcordNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Concord"
+        slug="roof-repair-concord-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Concord"
+
+        state="NC"
+
+        citySlug="concord-nc"
+
+        service="Roof Repair"
+
+      />
+
       <CTASection
         title="Ready to Get Your Roof Repaired in Concord?"
         subtitle="Contact us today for a free inspection and estimate. Our expert team will diagnose your roof problems and provide honest, affordable repair recommendations."

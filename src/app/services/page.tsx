@@ -154,6 +154,22 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Services Overview */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                Best Roofing Now delivers a full range of roofing, gutter, and siding services across the Charlotte metropolitan area. Whether your home needs a minor leak repair or a complete roof-to-gutter system replacement, our veteran-owned crew handles every phase of the job — from initial inspection through final cleanup. We hold certifications from GAF, CertainTeed, and Owens Corning, which means our installations qualify for manufacturer-backed warranty coverage that generic contractors cannot offer.
+              </p>
+              <p>
+                Our service catalog covers residential shingle and metal roofing, flat and low-slope commercial systems (TPO, EPDM, PVC), storm-damage restoration with full insurance-claim support, preventive maintenance programs, seamless gutter installation, and exterior siding work including soffit and fascia. Every project starts with a free, no-obligation inspection so you know exactly what your property needs before any work begins.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Categorized Services */}
       {serviceCategories.map((category) => {
         const categoryServices = category.slugs

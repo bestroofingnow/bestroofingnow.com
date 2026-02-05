@@ -26,9 +26,10 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Spring Roof Inspection Charlotte NC | Post-Winter Check | Best Roofing Now',
+  title: 'Spring Roof Inspection Charlotte',
   description:
     'Free spring roof inspections in Charlotte NC. Assess winter damage, clear debris, and prepare for spring storms. Expert post-winter evaluation with detailed reports and photos.',
   keywords: [
@@ -634,6 +635,19 @@ export default function SpringRoofInspectionCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Spring Roof Inspection"
+
+      />
+
       <CTASection
         title="Ready for Your Free Spring Inspection?"
         subtitle="Schedule your complimentary post-winter roof assessment today. Our certified inspectors provide honest evaluations with detailed reports - no obligation, no pressure."

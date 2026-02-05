@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useCallback } from 'react';
-import Image from 'next/image';
+import { SEOImage as Image } from '@/components/ui/SEOImage';
 
 interface BeforeAfterSliderProps {
   beforeImage: string;

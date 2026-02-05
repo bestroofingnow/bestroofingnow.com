@@ -25,9 +25,10 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Asphalt Shingle Roofing Charlotte NC | CertainTeed & GAF | Best Roofing Now',
+  title: 'Asphalt Shingle Roofing Charlotte NC | CertainTeed & GAF',
   description:
     'Expert asphalt shingle roofing in Charlotte NC. CertainTeed and GAF certified installer offering architectural shingles, 3-tab, and designer options. BBB A+ rated, lifetime warranties available. Free estimates.',
   keywords: [
@@ -662,6 +663,19 @@ export default function AsphaltShingleRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Asphalt Shingle Roofing"
+
+      />
+
       <CTASection
         title="Ready for a Beautiful New Shingle Roof?"
         subtitle="Get a free estimate from Charlotte's trusted shingle roofing experts. We'll help you choose the perfect shingles for your home and budget, backed by the best warranties in the industry."

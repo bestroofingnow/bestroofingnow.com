@@ -27,9 +27,11 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Cornelius NC | Lake Norman | 5-Star Rated | Best Roofing Now',
+  title: 'Roofers Cornelius NC | 5-Star',
   description:
     'Looking for trusted roofers in Cornelius NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman waterfront homes. BBB A+ rated. Free estimates.',
   keywords: [
@@ -415,7 +417,22 @@ export default function RoofersCorneliusNCPage() {
         variant="compact"
       />
 
+      <GeoProjectGalleryStrip pageType="location" city="Cornelius" slug="roofers-cornelius-nc" />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Cornelius"
+
+        state="NC"
+
+        citySlug="cornelius-nc"
+
+        service="Roofers"
+
+      />
+
       <CTASection
         title="Ready for Quality Roofing in Cornelius?"
         subtitle="Get a free estimate from Cornelius's most trusted roofers. Our team will assess your roof and provide honest recommendations tailored to your Lake Norman home."

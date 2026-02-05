@@ -26,9 +26,11 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationB
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Inspection Mooresville NC | Free Estimates | Best Roofing Now',
+  title: 'Roof Inspection Mooresville NC',
   description:
     'Free roof inspections in Mooresville NC. Comprehensive assessments with detailed reports and photos. BBB A+ rated, veteran-owned. Serving Lake Norman area. Schedule your free inspection today!',
   keywords: [
@@ -663,7 +665,26 @@ export default function RoofInspectionMooresvilleNCPage() {
         </div>
       </section>
 
+      <GeoProjectGalleryStrip
+        pageType="location"
+        city="Mooresville"
+        slug="roof-inspection-mooresville-nc"
+      />
+
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Mooresville"
+
+        state="NC"
+
+        citySlug="mooresville-nc"
+
+        service="Roof Inspection"
+
+      />
+
       <CTASection
         title="Schedule Your Free Mooresville Roof Inspection"
         subtitle="Get a comprehensive roof assessment with detailed photos and report - 100% free, no obligation. Know exactly what shape your roof is in."

@@ -7,6 +7,8 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { EstimateButton } from '@/components/estimate';
 import { BreadcrumbSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 interface ComparePageProps {
   params: Promise<{ slug: string }>;
@@ -29,7 +31,7 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
   const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
 
   return {
-    title: `${comparison.title} | Roofing Comparison Charlotte NC`,
+    title: `${comparison.title}`,
     description: comparison.description,
     keywords: comparison.keywords,
     alternates: {
@@ -564,6 +566,16 @@ export default async function ComparePage({ params }: ComparePageProps) {
           </div>
         </section>
       )}
+
+      {/* Project Gallery Strip */}
+      <GeoProjectGalleryStrip pageType="other" city="Charlotte" slug={slug} />
+
+      <CityGeoSection
+        city="Charlotte"
+        state="NC"
+        citySlug="charlotte-nc"
+        service="Roofing Materials"
+      />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

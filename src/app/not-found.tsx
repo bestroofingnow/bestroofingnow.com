@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { Home, Search, Phone, ArrowRight, MapPin } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  description: 'The page you are looking for does not exist. Browse our roofing services, locations, and resources or contact Best Roofing Now for help.',
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (

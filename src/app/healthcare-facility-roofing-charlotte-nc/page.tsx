@@ -35,9 +35,10 @@ import {
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Healthcare Facility Roofing Charlotte NC | Hospital & Medical Office Roofs | Best Roofing Now',
+  title: 'Healthcare Roofing Charlotte NC',
   description:
     'Expert healthcare facility roofing contractors in Charlotte NC. Specializing in hospitals, medical offices, clinics & assisted living facilities. Infection control compliant, zero-disruption installation. Free estimates.',
   keywords: [
@@ -682,6 +683,19 @@ export default function HealthcareFacilityRoofingCharlotteNCPage() {
       />
 
       {/* Final CTA */}
+
+      <CityGeoSection
+
+        city="Charlotte"
+
+        state="NC"
+
+        citySlug="charlotte-nc"
+
+        service="Healthcare Facility Roofing"
+
+      />
+
       <CTASection
         title="Ready to Discuss Your Healthcare Facility Roofing Project?"
         subtitle="Get a free, no-obligation estimate for your hospital, medical office, or healthcare campus. Our team will assess your building and provide honest recommendations that prioritize patient safety and operational continuity."
