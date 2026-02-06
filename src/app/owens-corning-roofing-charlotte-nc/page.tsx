@@ -27,26 +27,23 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Owens Corning Charlotte NC',
   description:
-    'Owens Corning Preferred Contractor in Charlotte NC. Install Duration and TruDefinition shingles with Platinum Protection warranty. BBB A+ rated, veteran-owned roofing company.',
+    'Owens Corning shingle installation in Charlotte NC. Install Duration and TruDefinition shingles with manufacturer warranties. BBB A+ rated, veteran-owned roofing company.',
   keywords: [
     'owens corning roofing charlotte nc',
     'owens corning shingles charlotte',
-    'owens corning preferred contractor charlotte',
     'owens corning duration shingles charlotte nc',
-    'owens corning platinum warranty charlotte',
     'owens corning roofer near me',
     'trudefinition duration shingles charlotte',
     'owens corning roof installation charlotte',
-    'pink panther roofing charlotte',
     'owens corning contractor charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`,
   },
   openGraph: {
-    title: 'Owens Corning Roofing Charlotte NC | Preferred Contractor | Best Roofing Now',
+    title: 'Owens Corning Roofing Charlotte NC | Best Roofing Now',
     description:
-      'Owens Corning Preferred Contractor in Charlotte NC. Install Duration shingles with Platinum Protection warranty. BBB A+ rated, veteran-owned.',
+      'Owens Corning shingle installation in Charlotte NC. Install Duration shingles with manufacturer warranties. BBB A+ rated, veteran-owned.',
     url: `${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`,
     type: 'website',
     images: [
@@ -70,8 +67,8 @@ const owensCorningProducts = [
   },
   {
     icon: Shield,
-    title: 'Platinum Protection Warranty',
-    description: 'Lifetime limited warranty on shingles plus 50-year workmanship coverage from Owens Corning.',
+    title: 'Lifetime Limited Warranty',
+    description: 'Duration shingles include a Lifetime limited warranty on materials backed by Owens Corning.',
     href: '/contact',
   },
   {
@@ -104,13 +101,13 @@ const owensCorningProducts = [
 const whyChooseOwensCorning = [
   {
     icon: Award,
-    title: 'Preferred Contractor Network',
-    description: 'Best Roofing Now is an Owens Corning Preferred Contractor with proven expertise.',
+    title: 'Industry-Leading Products',
+    description: 'Owens Corning is a Fortune 500 company with 80+ years of roofing innovation.',
   },
   {
     icon: Shield,
-    title: 'Platinum Protection',
-    description: 'Lifetime material warranty plus 50-year workmanship coverage backed by Owens Corning.',
+    title: 'Strong Warranties',
+    description: 'Lifetime limited material warranty on Duration shingles backed by Owens Corning.',
   },
   {
     icon: Star,
@@ -173,14 +170,14 @@ const nearbyCities = [
 // FAQs about Owens Corning roofing
 const faqs = [
   {
-    question: 'What is an Owens Corning Preferred Contractor?',
+    question: 'Why choose Owens Corning shingles for my Charlotte home?',
     answer:
-      'An Owens Corning Preferred Contractor is a roofing professional who has met Owens Corning\'s standards for installation expertise, proper licensing, adequate insurance, and a commitment to customer satisfaction. This status allows us to offer enhanced warranty options including the Platinum Protection warranty with lifetime material coverage and 50-year workmanship protection backed directly by Owens Corning.',
+      'Owens Corning is a Fortune 500 company with over 80 years of roofing innovation. Their Duration shingles feature patented SureNail Technology for superior wind resistance up to 130 MPH, making them ideal for Charlotte\'s storm season. The TruDefinition color palette offers premium aesthetics with deeper, more dimensional colors than standard shingles.',
   },
   {
-    question: 'What is the Owens Corning Platinum Protection warranty?',
+    question: 'What warranty comes with Owens Corning shingles?',
     answer:
-      'The Platinum Protection warranty is Owens Corning\'s premium warranty package. It includes a Lifetime limited warranty on shingles, 50 years of coverage on workmanship backed by Owens Corning (not just the contractor), and extended coverage on accessories. This comprehensive warranty is only available through Owens Corning Preferred Contractors like Best Roofing Now.',
+      'Owens Corning Duration shingles come with a Lifetime limited warranty on the shingles themselves. The exact warranty terms depend on your installation and the specific products used. We can explain all warranty options during your free estimate to help you choose the right protection for your home.',
   },
   {
     question: 'What is SureNail Technology and why does it matter?',
@@ -241,20 +238,20 @@ export default function OwensCorningRoofingCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <Award className="w-4 h-4" />
-              <span className="text-sm font-semibold">Owens Corning Preferred Contractor</span>
+              <span className="text-sm font-semibold">BBB A+ Rated Contractor</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Owens Corning Roofing <br className="hidden md:block" />
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Preferred Contractor with Platinum Protection warranty coverage
+              Premium Duration shingles with SureNail Technology
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is your trusted Owens Corning Preferred Contractor in Charlotte. We install
-              award-winning Duration shingles with SureNail Technology and back every installation with
-              the comprehensive Platinum Protection warranty. Experience the quality that comes with
-              80+ years of roofing innovation.
+              Best Roofing Now installs award-winning Owens Corning Duration shingles in Charlotte.
+              Experience superior wind resistance up to 130 MPH with patented SureNail Technology and
+              TruDefinition colors that enhance your home&apos;s curb appeal. Quality products from a
+              Fortune 500 company with 80+ years of roofing innovation.
             </p>
 
             {/* CTA Buttons */}
@@ -282,11 +279,11 @@ export default function OwensCorningRoofingCharlotteNCPage() {
             <div className="flex flex-wrap items-center gap-6 mt-8 text-sm text-white/80">
               <span className="flex items-center gap-2">
                 <Award className="w-5 h-5 text-accent-light" />
-                Preferred Contractor
+                CertainTeed ShingleMaster
               </span>
               <span className="flex items-center gap-2">
                 <Shield className="w-5 h-5 text-accent-light" />
-                Platinum Protection
+                GAF Factory-Certified
               </span>
               <span className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
@@ -343,12 +340,12 @@ export default function OwensCorningRoofingCharlotteNCPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Why Choose Owens Corning from a Preferred Contractor
+                Why Choose Owens Corning Products
               </h2>
               <p className="text-gray text-lg mb-8">
-                As an Owens Corning Preferred Contractor, Best Roofing Now has been vetted for installation
-                expertise and commitment to quality. This means you get premium products installed correctly
-                the first time, backed by comprehensive warranty protection that covers both materials and labor.
+                Best Roofing Now installs Owens Corning products with the same expert craftsmanship we bring
+                to every project. As a BBB A+ rated, veteran-owned company, we deliver premium products
+                installed correctly the first time with the warranties and protection your home deserves.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseOwensCorning.map((item) => (
@@ -376,8 +373,8 @@ export default function OwensCorningRoofingCharlotteNCPage() {
                 <div className="flex items-center gap-3">
                   <Award className="w-10 h-10 text-primary" />
                   <div>
-                    <p className="font-bold text-dark">Preferred Contractor</p>
-                    <p className="text-sm text-gray">Platinum Protection Warranty</p>
+                    <p className="font-bold text-dark">BBB A+ Rated</p>
+                    <p className="text-sm text-gray">Veteran-Owned Contractor</p>
                   </div>
                 </div>
               </div>
@@ -395,7 +392,7 @@ export default function OwensCorningRoofingCharlotteNCPage() {
                 Ready for Award-Winning Duration Shingles?
               </h2>
               <p className="text-white/90">
-                Get a free estimate for Owens Corning roofing with Platinum Protection warranty coverage.
+                Get a free estimate for Owens Corning Duration shingles installed by Charlotte experts.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -595,7 +592,7 @@ export default function OwensCorningRoofingCharlotteNCPage() {
 
       <CTASection
         title="Ready for Your New Owens Corning Roof?"
-        subtitle="Get a free, no-obligation estimate for Owens Corning Duration shingles with Platinum Protection warranty. Our certified team will assess your roof and provide honest recommendations."
+        subtitle="Get a free, no-obligation estimate for Owens Corning Duration shingles with manufacturer warranty coverage. Our certified team will assess your roof and provide honest recommendations."
       />
     </>
   );

@@ -46,14 +46,14 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Contractor Charlotte NC | Licensed & Certified | GAF CertainTeed',
   description:
-    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed SELECT ShingleMaster, Owens Corning Preferred. 5.0 Google rating, BBB A+ rated, veteran-owned. NC General Contractor license. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
+    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed ShingleMaster, BBB A+ rated. 5.0 Google rating, veteran-owned. NC General Contractor license. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
   keywords: [
     'roofing contractor charlotte nc',
     'licensed roofing contractor charlotte',
     'certified roofing contractor charlotte nc',
     'gaf certified contractor charlotte',
     'certainteed contractor charlotte nc',
-    'owens corning preferred contractor charlotte',
+    'bbb a+ roofing contractor charlotte',
     'insured roofing contractor charlotte nc',
     'bonded roofing contractor charlotte',
     'nc licensed roofer charlotte',
@@ -205,7 +205,7 @@ const whyChooseUs = [
   {
     icon: Users,
     title: 'Certified Installers',
-    description: 'CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred.',
+    description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
   },
   {
     icon: Clock,
@@ -725,7 +725,7 @@ export default function RoofingContractorCharlotteNCPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-bold text-dark mb-2">CertainTeed SELECT ShingleMaster</h3>
+              <h3 className="font-bold text-dark mb-2">CertainTeed ShingleMaster</h3>
               <p className="text-gray text-sm">
                 Top-tier certification with access to premium SureStart PLUS warranties and specialized training.
               </p>
@@ -743,9 +743,9 @@ export default function RoofingContractorCharlotteNCPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-bold text-dark mb-2">Owens Corning Preferred</h3>
+              <h3 className="font-bold text-dark mb-2">BBB A+ Accredited</h3>
               <p className="text-gray text-sm">
-                Preferred Contractor status with Owens Corning for extended warranty options up to 50 years.
+                Better Business Bureau A+ rating with zero complaints. Committed to customer satisfaction.
               </p>
             </div>
           </div>

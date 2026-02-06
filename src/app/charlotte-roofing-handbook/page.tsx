@@ -802,7 +802,7 @@ export default function CharlotteRoofingHandbookPage() {
                 <Award className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-dark mb-2">CertainTeed</h3>
-              <p className="text-sm text-accent font-semibold mb-4">SELECT ShingleMaster</p>
+              <p className="text-sm text-accent font-semibold mb-4">ShingleMaster</p>
               <p className="text-gray mb-4">
                 CertainTeed is known for industry-leading color options and their Landmark series,
                 which offers the dimensional look of wood shake at an affordable price. As a SELECT

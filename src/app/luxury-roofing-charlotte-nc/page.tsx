@@ -143,7 +143,7 @@ const whyChooseUs = [
   {
     icon: Award,
     title: 'Triple Manufacturer Certified',
-    description: 'GAF Factory-Certified, CertainTeed SELECT ShingleMaster, and Owens Corning Preferred - the highest certifications available.',
+    description: 'GAF Factory-Certified, CertainTeed ShingleMaster - the highest certifications available.',
   },
   {
     icon: Landmark,
@@ -177,7 +177,7 @@ const faqs = [
   {
     question: 'What makes a roofing contractor qualified for luxury homes?',
     answer:
-      'Luxury home roofing requires specialized expertise that most contractors don\'t have. Key qualifications include: manufacturer certifications (GAF Master Elite, CertainTeed SELECT ShingleMaster), experience with premium materials (slate, copper, cedar), understanding of historic preservation, knowledge of HOA requirements, and attention to architectural detail. Best Roofing Now holds the highest certifications from all major manufacturers and has extensive experience in Charlotte\'s most prestigious neighborhoods.',
+      'Luxury home roofing requires specialized expertise that most contractors don\'t have. Key qualifications include: manufacturer certifications (GAF Master Elite, CertainTeed ShingleMaster), experience with premium materials (slate, copper, cedar), understanding of historic preservation, knowledge of HOA requirements, and attention to architectural detail. Best Roofing Now holds the highest certifications from all major manufacturers and has extensive experience in Charlotte\'s most prestigious neighborhoods.',
   },
   {
     question: 'What roofing material is best for homes over $800K?',

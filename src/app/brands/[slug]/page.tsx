@@ -93,13 +93,13 @@ export default async function BrandPage({ params }: BrandPageProps) {
       ],
     },
     certainteed: {
-      overview: 'CertainTeed has manufactured building materials in the U.S. since 1904, and their Landmark series architectural shingles consistently rank among the industry\'s most durable and aesthetically versatile options. As a SELECT ShingleMaster, Best Roofing Now qualifies for CertainTeed\'s highest warranty tier — the 5-Star SureStart PLUS coverage that includes material and workmanship protection.',
+      overview: 'CertainTeed has manufactured building materials in the U.S. since 1904, and their Landmark series architectural shingles consistently rank among the industry\'s most durable and aesthetically versatile options. As a ShingleMaster, Best Roofing Now qualifies for CertainTeed\'s highest warranty tier — the 5-Star SureStart PLUS coverage that includes material and workmanship protection.',
       reasons: [
         'Over 120 years of manufacturing experience in the U.S.',
         'Landmark PRO shingles offer a Class 4 impact-resistance option for hail-prone areas',
         'NaturalWood color palette designed to complement Southern architecture styles',
         'Presidential Shake line delivers authentic cedar-shake appearance without wood maintenance',
-        '5-Star SureStart PLUS warranty available exclusively through SELECT ShingleMaster contractors',
+        '5-Star SureStart PLUS warranty available exclusively through ShingleMaster contractors',
       ],
     },
     'owens-corning': {

@@ -525,8 +525,7 @@ export default function RoofReplacementCharlotteNCPage() {
               <div className="flex-1">
                 <h3 className="font-bold text-dark mb-2">Certified Installation Matters</h3>
                 <p className="text-gray text-sm">
-                  As CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred
-                  contractors, we can offer enhanced warranties that cover both materials and workmanship
+                  As CertainTeed ShingleMaster, GAF Factory-Certified                  contractors, we can offer enhanced warranties that cover both materials and workmanship
                   for maximum protection.
                 </p>
               </div>

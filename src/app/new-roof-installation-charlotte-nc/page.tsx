@@ -384,7 +384,7 @@ const whyChooseUs = [
   {
     icon: Award,
     title: 'Triple Certified',
-    description: 'CertainTeed SELECT, GAF Factory-Certified, and Owens Corning Preferred Contractor status.',
+    description: 'CertainTeed SELECT, GAF Factory-Certified Contractor status.',
   },
   {
     icon: Star,
@@ -925,7 +925,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
             <div className="text-center">
               <Award className="w-12 h-12 text-primary mx-auto mb-2" />
               <p className="font-bold text-dark">CertainTeed</p>
-              <p className="text-sm text-gray">SELECT ShingleMaster</p>
+              <p className="text-sm text-gray">ShingleMaster</p>
             </div>
             <div className="text-center">
               <Award className="w-12 h-12 text-primary mx-auto mb-2" />

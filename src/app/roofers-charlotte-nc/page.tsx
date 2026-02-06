@@ -182,7 +182,7 @@ const whyChooseUs = [
   {
     icon: Users,
     title: 'Certified Installers',
-    description: 'CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred Contractor.',
+    description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
   },
   {
     icon: Clock,
@@ -728,7 +728,7 @@ export default function RoofersCharlotteNCPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-bold text-dark mb-2">CertainTeed SELECT ShingleMaster</h3>
+              <h3 className="font-bold text-dark mb-2">CertainTeed ShingleMaster</h3>
               <p className="text-gray text-sm">
                 Top-tier certification with access to premium SureStart PLUS warranties and specialized training.
               </p>
@@ -746,9 +746,9 @@ export default function RoofersCharlotteNCPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-bold text-dark mb-2">Owens Corning Preferred</h3>
+              <h3 className="font-bold text-dark mb-2">BBB A+ Accredited</h3>
               <p className="text-gray text-sm">
-                Preferred Contractor status with Owens Corning for extended warranty options up to 50 years.
+                Better Business Bureau A+ rating with zero complaints. Committed to customer satisfaction.
               </p>
             </div>
           </div>

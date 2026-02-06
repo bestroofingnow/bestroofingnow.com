@@ -224,13 +224,13 @@ export default function WarrantyPage() {
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-md text-center">
-              <h3 className="text-xl font-bold text-primary mb-3">Owens Corning Preferred</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">BBB A+ Accredited</h3>
               <p className="text-gray text-sm mb-4">
-                Preferred Contractor status enables enhanced warranty options including
-                Platinum Protection.
+                Better Business Bureau A+ rating with zero complaints demonstrates our
+                commitment to customer satisfaction.
               </p>
-              <Link href="/materials/asphalt-shingles" className="text-primary font-semibold text-sm hover:text-accent">
-                Learn About Owens Corning →
+              <Link href="/about" className="text-primary font-semibold text-sm hover:text-accent">
+                About Our Company →
               </Link>
             </div>
           </div>

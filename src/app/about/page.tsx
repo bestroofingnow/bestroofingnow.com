@@ -438,7 +438,7 @@ export default function AboutPage() {
             >
               <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3 group-hover:text-accent transition-colors" />
               <h3 className="font-bold text-dark mb-1">CertainTeed Certified</h3>
-              <p className="text-sm text-gray">SELECT ShingleMaster</p>
+              <p className="text-sm text-gray">ShingleMaster</p>
             </a>
             <div className="p-6 bg-white rounded-xl shadow-md text-center">
               <CheckCircle className="w-12 h-12 text-primary mx-auto mb-3" />

@@ -137,7 +137,7 @@ const shingleTypes = [
 const shingleBrands = [
   {
     name: 'CertainTeed',
-    certification: 'SELECT ShingleMaster',
+    certification: 'ShingleMaster',
     description: 'Premium shingles with industry-leading warranties. Landmark series is our most popular.',
   },
   {
@@ -157,7 +157,7 @@ const whyChooseUs = [
   {
     icon: Award,
     title: 'Manufacturer Certified',
-    description: 'CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred.',
+    description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
   },
   {
     icon: Star,
@@ -253,7 +253,7 @@ const faqs = [
   {
     question: 'What warranties are available on asphalt shingles?',
     answer:
-      'Warranty coverage depends on the shingle type and our certification level with each manufacturer. Standard warranties range from 25-50 years on materials. As a CertainTeed SELECT ShingleMaster and GAF Factory-Certified contractor, we can offer premium warranties including GAF Golden Pledge (50-year material + 25-year workmanship) and CertainTeed SureStart PLUS with full coverage for the first 10 years.',
+      'Warranty coverage depends on the shingle type and our certification level with each manufacturer. Standard warranties range from 25-50 years on materials. As a CertainTeed ShingleMaster and GAF Factory-Certified contractor, we can offer premium warranties including GAF Golden Pledge (50-year material + 25-year workmanship) and CertainTeed SureStart PLUS with full coverage for the first 10 years.',
   },
   {
     question: 'Should I get impact-resistant shingles in Charlotte?',

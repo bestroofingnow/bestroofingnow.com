@@ -37,7 +37,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     shortBio: 'Co-founded Best Roofing Now with his father Fred, bringing business expertise and a commitment to honest, family-focused service.',
     experience: '5+ years in roofing',
     certifications: [
-      'CertainTeed SELECT ShingleMaster',
+      'CertainTeed ShingleMaster',
     ],
     expertise: [
       'Insurance claim negotiation',
@@ -180,10 +180,10 @@ export const COMPANY_CERTIFICATIONS: Certification[] = [
     ],
   },
   {
-    name: 'CertainTeed SELECT ShingleMaster',
-    fullName: 'CertainTeed SELECT ShingleMaster™',
+    name: 'CertainTeed ShingleMaster',
+    fullName: 'CertainTeed ShingleMaster™',
     issuer: 'CertainTeed Corporation',
-    description: 'SELECT ShingleMaster status represents the top tier of CertainTeed certification, achieved by demonstrating excellence in installation, business practices, and customer service. Only a small percentage of roofing contractors achieve this level.',
+    description: 'ShingleMaster status represents the top tier of CertainTeed certification, achieved by demonstrating excellence in installation, business practices, and customer service. Only a small percentage of roofing contractors achieve this level.',
     year: '2022',
     verificationUrl: 'https://www.certainteed.com/profiles/bestroofingnowllc',
     benefits: [
@@ -204,19 +204,6 @@ export const COMPANY_CERTIFICATIONS: Certification[] = [
       'Factory-trained on GAF systems',
       'Access to premium GAF products',
       'Annual certification renewal',
-    ],
-  },
-  {
-    name: 'Owens Corning Preferred Contractor',
-    fullName: 'Owens Corning Roofing Preferred Contractor',
-    issuer: 'Owens Corning',
-    description: 'As an Owens Corning Preferred Contractor, we meet strict standards for professionalism, reliability, and installation quality. This allows us to offer Platinum Protection warranties.',
-    year: '2023',
-    benefits: [
-      'Platinum Protection warranty eligibility',
-      'Access to full Owens Corning product line',
-      'Training on SureNail Technology',
-      'Preferred contractor network benefits',
     ],
   },
   {

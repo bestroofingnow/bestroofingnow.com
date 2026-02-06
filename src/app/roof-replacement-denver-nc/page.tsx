@@ -156,7 +156,7 @@ const faqs = [
   {
     question: 'What warranties do you offer on Denver NC roof replacements?',
     answer:
-      'We provide comprehensive warranties: our own 10-year workmanship warranty plus manufacturer warranties up to 50 years on materials. As a GAF Factory-Certified and CertainTeed SELECT ShingleMaster contractor, we can offer extended warranty programs that cover both materials and labor. All warranties are registered with the manufacturer and transferable if you sell your Denver home.',
+      'We provide comprehensive warranties: our own 10-year workmanship warranty plus manufacturer warranties up to 50 years on materials. As a GAF Factory-Certified and CertainTeed ShingleMaster contractor, we can offer extended warranty programs that cover both materials and labor. All warranties are registered with the manufacturer and transferable if you sell your Denver home.',
   },
 ];
 

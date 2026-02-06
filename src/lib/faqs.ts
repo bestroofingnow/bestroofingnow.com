@@ -155,7 +155,7 @@ export function generateNeighborhoodFAQs(
     },
     {
       question: `Are you licensed to work on roofs in ${neighborhood}, ${city} ${state}?`,
-      answer: `Yes, Best Roofing Now is fully licensed, bonded, and insured to perform roofing work throughout ${city} including ${neighborhood}. We're BBB A+ accredited, CertainTeed SELECT ShingleMaster certified, and GAF Factory-Certified. We carry comprehensive insurance to protect ${neighborhood} homeowners.`,
+      answer: `Yes, Best Roofing Now is fully licensed, bonded, and insured to perform roofing work throughout ${city} including ${neighborhood}. We're BBB A+ accredited, CertainTeed ShingleMaster certified, and GAF Factory-Certified. We carry comprehensive insurance to protect ${neighborhood} homeowners.`,
     },
     {
       question: `How long does a roof replacement take in ${neighborhood}?`,
@@ -213,7 +213,7 @@ export const enhancedServiceFAQs: Record<string, FAQ[]> = {
     },
     {
       question: 'What sets Best Roofing Now apart from other Charlotte residential roofers?',
-      answer: 'Best Roofing Now is family-owned, veteran-operated, and committed to honesty. We won\'t recommend replacement if repairs will work. We\'re BBB A+ accredited, CertainTeed SELECT ShingleMaster certified, and GAF Factory-Certified. Our 5-star reviews reflect our commitment to Charlotte homeowners. We treat every home like it\'s our own family\'s.',
+      answer: 'Best Roofing Now is family-owned, veteran-operated, and committed to honesty. We won\'t recommend replacement if repairs will work. We\'re BBB A+ accredited, CertainTeed ShingleMaster certified, and GAF Factory-Certified. Our 5-star reviews reflect our commitment to Charlotte homeowners. We treat every home like it\'s our own family\'s.',
     },
   ],
   'commercial-roofing': [

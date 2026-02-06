@@ -108,7 +108,7 @@ const whyChooseUs = [
   {
     icon: Award,
     title: 'Certified Installers',
-    description: 'CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred Contractor.',
+    description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
   },
   {
     icon: Star,
@@ -188,7 +188,7 @@ const faqs = [
   {
     question: 'What warranties do you offer on new roofs in Mooresville?',
     answer:
-      'As CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred Contractor, we offer enhanced warranty options. This includes GAF\'s Golden Pledge warranty (50 years material + 25 years workmanship), CertainTeed SureStart PLUS warranty, and Owens Corning Platinum Protection. We also provide our own workmanship warranty on every installation.',
+      'As CertainTeed ShingleMaster, GAF Factory-Certified Contractor, we offer enhanced warranty options. This includes GAF\'s Golden Pledge warranty (50 years material + 25 years workmanship), CertainTeed SureStart PLUS warranty, and Owens Corning Platinum Protection. We also provide our own workmanship warranty on every installation.',
   },
   {
     question: 'How do I know if I need a new roof vs. repairs?',
@@ -506,7 +506,7 @@ export default function RoofReplacementMooresvilleNCPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-bold text-dark mb-2">CertainTeed SELECT ShingleMaster</h3>
+              <h3 className="font-bold text-dark mb-2">CertainTeed ShingleMaster</h3>
               <p className="text-gray text-sm">
                 Top-tier certification with access to SureStart PLUS extended warranties.
               </p>
@@ -524,9 +524,9 @@ export default function RoofReplacementMooresvilleNCPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-bold text-dark mb-2">Owens Corning Preferred</h3>
+              <h3 className="font-bold text-dark mb-2">BBB A+ Accredited</h3>
               <p className="text-gray text-sm">
-                Preferred Contractor status for Platinum Protection warranty options.
+                Better Business Bureau A+ rating with zero complaints. Trusted by Mooresville homeowners.
               </p>
             </div>
           </div>

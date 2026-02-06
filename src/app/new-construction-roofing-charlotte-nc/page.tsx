@@ -248,7 +248,7 @@ const faqs = [
   {
     question: 'Are you certified by major roofing manufacturers?',
     answer:
-      'Yes, we are certified by CertainTeed (SELECT ShingleMaster), GAF (Factory-Certified), and Owens Corning (Preferred Contractor). These certifications allow us to offer enhanced warranties and ensure our installation meets manufacturer specifications.',
+      'Yes, we are certified by CertainTeed (ShingleMaster), GAF (Factory-Certified), and Owens Corning (Preferred Contractor). These certifications allow us to offer enhanced warranties and ensure our installation meets manufacturer specifications.',
   },
 ];
 
@@ -450,7 +450,7 @@ export default function NewConstructionRoofingCharlotteNCPage() {
               <div className="text-center">
                 <Award className="w-12 h-12 text-primary mx-auto mb-2" />
                 <p className="font-bold text-dark">CertainTeed</p>
-                <p className="text-sm text-gray">SELECT ShingleMaster</p>
+                <p className="text-sm text-gray">ShingleMaster</p>
               </div>
               <div className="text-center">
                 <Award className="w-12 h-12 text-primary mx-auto mb-2" />

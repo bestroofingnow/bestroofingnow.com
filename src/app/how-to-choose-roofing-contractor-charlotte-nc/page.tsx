@@ -61,7 +61,7 @@ const contractorFAQs = [
   {
     question: 'What credentials should a Charlotte roofing contractor have?',
     answer:
-      'At minimum: Valid NC General Contractor License, General Liability Insurance ($1M+), Workers Compensation Insurance, and a local business address. Better contractors also have manufacturer certifications (GAF Master Elite, CertainTeed SELECT, Owens Corning Preferred), BBB accreditation, and verifiable reviews on Google and other platforms.',
+      'At minimum: Valid NC General Contractor License, General Liability Insurance ($1M+), Workers Compensation Insurance, and a local business address. Better contractors also have manufacturer certifications (GAF Factory-Certified or Master Elite, CertainTeed ShingleMaster), BBB accreditation, and verifiable reviews on Google and other platforms.',
   },
   {
     question: 'How do I verify a roofing contractor\'s license in North Carolina?',
@@ -94,7 +94,7 @@ const greenFlags = [
   {
     icon: Award,
     title: 'Manufacturer Certifications',
-    description: 'GAF Master Elite, CertainTeed SELECT, or Owens Corning Preferred Contractor status.',
+    description: 'GAF Factory-Certified or Master Elite, CertainTeed ShingleMaster certifications.',
   },
   {
     icon: Star,

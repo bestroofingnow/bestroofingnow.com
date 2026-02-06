@@ -125,7 +125,7 @@ const whyChooseUs = [
   {
     icon: Award,
     title: 'Manufacturer Certified',
-    description: 'CertainTeed SELECT, GAF Factory-Certified, and Owens Corning Preferred Contractor.',
+    description: 'CertainTeed SELECT, GAF Factory-Certified Contractor.',
   },
   {
     icon: Users,
@@ -418,7 +418,7 @@ export default function ResidentialRoofingCharlotteNCPage() {
               <p className="text-gray text-sm mb-4">
                 Premium Landmark series with SureStart PLUS warranty coverage up to 50 years.
               </p>
-              <p className="text-primary font-semibold text-sm">SELECT ShingleMaster Certified</p>
+              <p className="text-primary font-semibold text-sm">ShingleMaster Certified</p>
             </div>
             <div className="bg-light rounded-xl p-6 text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

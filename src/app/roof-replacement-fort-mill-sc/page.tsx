@@ -105,7 +105,7 @@ const whyChooseUs = [
   {
     icon: Award,
     title: 'Manufacturer Certified',
-    description: 'CertainTeed SELECT ShingleMaster, GAF Factory-Certified, and Owens Corning Preferred for extended warranty options.',
+    description: 'CertainTeed ShingleMaster, GAF Factory-Certified for extended warranty options.',
   },
   {
     icon: Shield,

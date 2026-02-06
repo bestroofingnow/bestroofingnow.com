@@ -94,7 +94,7 @@ export function WhyChooseUs() {
 
               {/* Certifications */}
               <div className="flex flex-wrap gap-4">
-                {['Owens Corning Preferred', 'CertainTeed Certified', 'GAF Certified', 'Angi Super Service Award'].map((cert, i) => (
+                {['CertainTeed Certified', 'GAF Certified', 'BBB A+ Accredited', 'Angi Super Service Award'].map((cert, i) => (
                   <div
                     key={cert}
                     className="badge transition-transform hover:scale-105 animate-fade-in-up"

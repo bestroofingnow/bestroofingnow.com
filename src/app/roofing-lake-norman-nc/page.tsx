@@ -190,7 +190,7 @@ const lakeNormanFAQs = [
   },
   {
     question: 'What roofing warranties do you offer for Lake Norman homes?',
-    answer: 'As a GAF Master Elite and CertainTeed SELECT ShingleMaster contractor, we offer enhanced warranties up to 50 years on Lake Norman installations. This includes the GAF Golden Pledge warranty and CertainTeed SureStart PLUS coverage, plus our own 10-year workmanship guarantee.',
+    answer: 'As a GAF Master Elite and CertainTeed ShingleMaster contractor, we offer enhanced warranties up to 50 years on Lake Norman installations. This includes the GAF Golden Pledge warranty and CertainTeed SureStart PLUS coverage, plus our own 10-year workmanship guarantee.',
   },
 ];
 

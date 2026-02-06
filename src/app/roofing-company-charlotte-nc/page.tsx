@@ -242,12 +242,12 @@ const certifications = [
     description: 'Authorized to offer GAF\'s premium warranty coverage including Golden Pledge and Silver Pledge warranties.',
   },
   {
-    name: 'CertainTeed SELECT ShingleMaster',
+    name: 'CertainTeed ShingleMaster',
     description: 'Highest level of CertainTeed certification for expert installation and premium warranty eligibility.',
   },
   {
-    name: 'Owens Corning Preferred Contractor',
-    description: 'Recognized by Owens Corning for meeting their rigorous standards for quality installation and customer service.',
+    name: 'BBB A+ Accredited',
+    description: 'Better Business Bureau A+ rating with zero complaints, demonstrating our commitment to customer satisfaction.',
   },
 ];
 

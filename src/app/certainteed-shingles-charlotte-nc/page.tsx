@@ -28,9 +28,9 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'CertainTeed Shingles Charlotte NC | SELECT ShingleMaster',
+  title: 'CertainTeed Shingles Charlotte NC | ShingleMaster',
   description:
-    'CertainTeed shingles installed by Charlotte\'s only SELECT ShingleMaster contractor. Premium Landmark shingles with industry-best warranties. BBB A+ rated. Free estimates.',
+    'CertainTeed shingles installed by Charlotte\'s only ShingleMaster contractor. Premium Landmark shingles with industry-best warranties. BBB A+ rated. Free estimates.',
   keywords: [
     'certainteed shingles charlotte nc',
     'certainteed roofing charlotte',
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`,
   },
   openGraph: {
-    title: 'CertainTeed Shingles Charlotte NC | SELECT ShingleMaster',
+    title: 'CertainTeed Shingles Charlotte NC | ShingleMaster',
     description:
-      'Premium CertainTeed Landmark shingles installed by Charlotte\'s SELECT ShingleMaster contractor. Enhanced warranties, beautiful colors, and exceptional protection.',
+      'Premium CertainTeed Landmark shingles installed by Charlotte\'s ShingleMaster contractor. Enhanced warranties, beautiful colors, and exceptional protection.',
     url: `${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`,
     type: 'website',
     images: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
         url: IMAGES.realProjects.certainteed1,
         width: 1200,
         height: 630,
-        alt: 'CertainTeed shingles installation Charlotte NC - Best Roofing Now SELECT ShingleMaster',
+        alt: 'CertainTeed shingles installation Charlotte NC - Best Roofing Now ShingleMaster',
       },
     ],
   },
@@ -97,11 +97,11 @@ const productLines = [
   },
 ];
 
-// SELECT ShingleMaster benefits
+// ShingleMaster benefits
 const selectBenefits = [
   {
     icon: BadgeCheck,
-    title: 'SELECT ShingleMaster Certified',
+    title: 'ShingleMaster Certified',
     description: 'The highest CertainTeed contractor certification - only 1% of contractors qualify.',
   },
   {
@@ -125,8 +125,8 @@ const selectBenefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'SELECT ShingleMaster',
-    description: 'Charlotte\'s trusted CertainTeed SELECT ShingleMaster contractor since 2020.',
+    title: 'ShingleMaster',
+    description: 'Charlotte\'s trusted CertainTeed ShingleMaster contractor since 2020.',
   },
   {
     icon: Star,
@@ -183,14 +183,14 @@ const comparison = [
 // FAQs
 const faqs = [
   {
-    question: 'What is a CertainTeed SELECT ShingleMaster?',
+    question: 'What is a CertainTeed ShingleMaster?',
     answer:
-      'SELECT ShingleMaster is CertainTeed\'s highest contractor certification level - only the top 1% of roofing contractors qualify. To achieve this status, contractors must meet strict credentialing requirements, maintain excellent customer reviews, and complete advanced installation training. Best Roofing Now is proud to be Charlotte\'s trusted SELECT ShingleMaster contractor.',
+      'ShingleMaster is CertainTeed\'s highest contractor certification level - only the top 1% of roofing contractors qualify. To achieve this status, contractors must meet strict credentialing requirements, maintain excellent customer reviews, and complete advanced installation training. Best Roofing Now is proud to be Charlotte\'s trusted ShingleMaster contractor.',
   },
   {
     question: 'What warranty comes with CertainTeed shingles?',
     answer:
-      'CertainTeed Landmark shingles come with a 50-year limited warranty. As a SELECT ShingleMaster, we can offer the SureStart PLUS extended warranty which includes 4-star coverage: materials, labor, and workmanship for the first 25 years, with full transferability. This is one of the best warranties in the industry.',
+      'CertainTeed Landmark shingles come with a 50-year limited warranty. As a ShingleMaster, we can offer the SureStart PLUS extended warranty which includes 4-star coverage: materials, labor, and workmanship for the first 25 years, with full transferability. This is one of the best warranties in the industry.',
   },
   {
     question: 'How much do CertainTeed shingles cost in Charlotte?',
@@ -215,12 +215,12 @@ const faqs = [
   {
     question: 'Is CertainTeed better than GAF or Owens Corning?',
     answer:
-      'CertainTeed, GAF, and Owens Corning are all excellent manufacturers. CertainTeed stands out for its extensive color selection, StreakFighter algae resistance, and the SELECT ShingleMaster program which ensures top-quality installation. As certified contractors for multiple manufacturers, we can help you choose the best option for your specific needs.',
+      'CertainTeed, GAF, and Owens Corning are all excellent manufacturers. CertainTeed stands out for its extensive color selection, StreakFighter algae resistance, and the ShingleMaster program which ensures top-quality installation. As certified contractors for multiple manufacturers, we can help you choose the best option for your specific needs.',
   },
   {
     question: 'Can I transfer my CertainTeed warranty if I sell my home?',
     answer:
-      'Yes! CertainTeed warranties are transferable, which adds value when selling your home. With the SureStart PLUS warranty available through SELECT ShingleMaster contractors, the enhanced coverage transfers to the new owner, making your home more attractive to buyers.',
+      'Yes! CertainTeed warranties are transferable, which adds value when selling your home. With the SureStart PLUS warranty available through ShingleMaster contractors, the enhanced coverage transfers to the new owner, making your home more attractive to buyers.',
   },
 ];
 
@@ -241,7 +241,7 @@ export default function CertainTeedShinglesCharlotteNCPage() {
         <div className="absolute inset-0 z-0 hidden md:block">
           <Image
             src={IMAGES.realProjects.certainteed1}
-            alt="CertainTeed shingles installation Charlotte NC - Best Roofing Now SELECT ShingleMaster"
+            alt="CertainTeed shingles installation Charlotte NC - Best Roofing Now ShingleMaster"
             fill
             className="object-cover opacity-20"
             priority
@@ -251,7 +251,7 @@ export default function CertainTeedShinglesCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <BadgeCheck className="w-4 h-4" />
-              <span className="text-sm font-semibold">CertainTeed SELECT ShingleMaster</span>
+              <span className="text-sm font-semibold">CertainTeed ShingleMaster</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               CertainTeed Shingles <br className="hidden md:block" />
@@ -261,7 +261,7 @@ export default function CertainTeedShinglesCharlotteNCPage() {
               Premium Landmark shingles with enhanced SureStart PLUS warranty
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte's trusted CertainTeed SELECT ShingleMaster contractor.
+              Best Roofing Now is Charlotte's trusted CertainTeed ShingleMaster contractor.
               This top-tier certification means you get factory-trained installation, enhanced warranty
               coverage, and the peace of mind that comes with working with the best.
             </p>
@@ -299,19 +299,19 @@ export default function CertainTeedShinglesCharlotteNCPage() {
               </span>
               <span className="flex items-center gap-2">
                 <BadgeCheck className="w-5 h-5 text-green-400" />
-                SELECT ShingleMaster
+                ShingleMaster
               </span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SELECT ShingleMaster Benefits */}
+      {/* ShingleMaster Benefits */}
       <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              The SELECT ShingleMaster Advantage
+              The ShingleMaster Advantage
             </h2>
             <p className="text-gray text-lg">
               As one of the top 1% of CertainTeed contractors, we offer exclusive benefits
@@ -485,7 +485,7 @@ export default function CertainTeedShinglesCharlotteNCPage() {
             <div className="relative">
               <Image
                 src={IMAGES.realProjects.drone1}
-                alt="Best Roofing Now - CertainTeed SELECT ShingleMaster in Charlotte NC"
+                alt="Best Roofing Now - CertainTeed ShingleMaster in Charlotte NC"
                 width={600}
                 height={450}
                 className="rounded-xl shadow-lg"
@@ -517,7 +517,7 @@ export default function CertainTeedShinglesCharlotteNCPage() {
                 Ready for a Premium CertainTeed Roof?
               </h2>
               <p className="text-white/90">
-                Get a free estimate from Charlotte's SELECT ShingleMaster contractor.
+                Get a free estimate from Charlotte's ShingleMaster contractor.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -552,7 +552,7 @@ export default function CertainTeedShinglesCharlotteNCPage() {
                 SureStart PLUS Warranty Protection
               </h2>
               <p className="text-gray text-lg">
-                Only available through SELECT ShingleMaster contractors, the SureStart PLUS
+                Only available through ShingleMaster contractors, the SureStart PLUS
                 warranty provides industry-leading protection.
               </p>
             </div>
@@ -724,7 +724,7 @@ export default function CertainTeedShinglesCharlotteNCPage() {
 
       <CTASection
         title="Get a Free CertainTeed Shingles Estimate"
-        subtitle="Experience the SELECT ShingleMaster difference. Contact Charlotte's trusted CertainTeed contractor for a free consultation and detailed estimate with enhanced warranty options."
+        subtitle="Experience the ShingleMaster difference. Contact Charlotte's trusted CertainTeed contractor for a free consultation and detailed estimate with enhanced warranty options."
       />
     </>
   );

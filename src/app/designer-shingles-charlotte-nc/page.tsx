@@ -87,7 +87,7 @@ const designerBrands = [
       { name: 'Carriage House', description: 'Old-world luxury with dramatic shadow lines', warranty: '50 Year' },
       { name: 'Presidential Shake', description: 'Authentic wood shake appearance', warranty: '50 Year' },
     ],
-    certified: 'SELECT ShingleMaster',
+    certified: 'ShingleMaster',
   },
   {
     brand: 'Owens Corning',

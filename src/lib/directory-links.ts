@@ -53,7 +53,7 @@ export const DIRECTORY_LINKS: DirectoryLink[] = [
   { url: 'https://www.mapquest.com/us/north-carolina/best-roofing-now-428835039', name: 'MapQuest', displayName: 'Best Roofing Now on MapQuest', category: 'maps', priority: 2 },
 
   // === INDUSTRY / CERTIFICATION === (Priority 1)
-  { url: 'https://www.certainteed.com/profiles/bestroofingnowllc', name: 'CertainTeed Certified', displayName: 'CertainTeed SELECT ShingleMaster Certification', category: 'certification', priority: 1 },
+  { url: 'https://www.certainteed.com/profiles/bestroofingnowllc', name: 'CertainTeed Certified', displayName: 'CertainTeed ShingleMaster Certification', category: 'certification', priority: 1 },
   { url: 'https://www.charlotteroofinghub.com/companies/best-roofing-now', name: 'Charlotte Roofing Hub', displayName: 'Best Roofing Now on Charlotte Roofing Hub', category: 'industry', location: 'charlotte', priority: 1 },
   { url: 'https://www.roofingdirect.com/contractors/best-roofing-now-llc/', name: 'RoofingDirect', displayName: 'Best Roofing Now on RoofingDirect', category: 'industry', priority: 2 },
   { url: 'https://roofingloc.com/branch/best-roofing-now-llc-charlotte-10130-mallard-creek-rd-300-charlotte-nc-28262', name: 'RoofingLoc', displayName: 'Best Roofing Now on RoofingLoc', category: 'industry', priority: 3 },

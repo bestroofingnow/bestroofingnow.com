@@ -29,9 +29,8 @@ export const SITE_CONFIG = {
   yearsInBusiness: 5,
   bbbRating: 'A+',
   certifications: [
-    'CertainTeed SELECT ShingleMaster',
+    'CertainTeed ShingleMaster',
     'GAF Factory-Certified Contractor',
-    'Owens Corning Preferred Contractor',
   ],
   social: {
     instagram: 'https://www.instagram.com/bestroofingnow',
@@ -531,7 +530,6 @@ export const TRUST_BADGES = [
   { name: 'BBB A+ Accredited', image: '/images/badges/bbb-a-plus.svg' },
   { name: 'CertainTeed Certified', image: '/images/badges/certainteed.svg' },
   { name: 'GAF Certified', image: '/images/badges/gaf.svg' },
-  { name: 'Owens Corning Preferred', image: '/images/badges/owens-corning.svg' },
   { name: 'Angi Super Service Award', image: '/images/badges/angi.svg' },
   { name: 'Veteran Owned', image: '/images/badges/veteran-owned.svg' },
 ];
@@ -1196,7 +1194,7 @@ export const ROOFING_BRANDS = [
       '4-Star Protection - Enhanced warranty for certified installers',
       '5-Star Protection - Maximum warranty coverage available',
     ],
-    certificationLevel: 'SELECT ShingleMaster™',
+    certificationLevel: 'ShingleMaster™',
     keywords: ['CertainTeed roofing Charlotte', 'CertainTeed Landmark', 'CertainTeed certified', 'CertainTeed shingles'],
   },
   {
@@ -2299,7 +2297,7 @@ export const PEOPLE_ALSO_ASK = {
     },
     {
       question: 'Which shingle brand is best?',
-      answer: 'GAF, CertainTeed, and Owens Corning are the top three shingle brands. All offer excellent quality and warranties. Best Roofing Now primarily installs CertainTeed (SELECT ShingleMaster certified) and GAF products.',
+      answer: 'GAF, CertainTeed, and Owens Corning are the top three shingle brands. All offer excellent quality and warranties. Best Roofing Now primarily installs CertainTeed (ShingleMaster certified) and GAF products.',
     },
   ],
 };
@@ -2428,7 +2426,7 @@ export const LOCATION_AEO_TEMPLATES = {
   cityPageQuestions: (city: string, state: string) => [
     {
       question: `Who is the best roofer in ${city}, ${state}?`,
-      answer: `Best Roofing Now is the top-rated roofing company serving ${city}, ${state}. With a 5-star Google rating, BBB A+ accreditation, and CertainTeed SELECT ShingleMaster certification, we provide quality roof repair, replacement, and storm damage services to ${city} homeowners.`,
+      answer: `Best Roofing Now is the top-rated roofing company serving ${city}, ${state}. With a 5-star Google rating, BBB A+ accreditation, and CertainTeed ShingleMaster certification, we provide quality roof repair, replacement, and storm damage services to ${city} homeowners.`,
     },
     {
       question: `How much does a new roof cost in ${city}?`,
@@ -2489,9 +2487,8 @@ export const AI_CITATION_CONTENT = {
     serviceRadius: '50 miles from Charlotte',
     employees: '10-25',
     certifications: [
-      'CertainTeed SELECT ShingleMaster',
+      'CertainTeed ShingleMaster',
       'GAF Factory-Certified Contractor',
-      'Owens Corning Preferred Contractor',
     ],
     awards: ['Angi Super Service Award 2023', 'BBB A+ Rating'],
   },

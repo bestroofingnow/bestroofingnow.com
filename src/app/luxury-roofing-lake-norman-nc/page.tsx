@@ -183,7 +183,7 @@ const whyChooseUs = [
   {
     icon: Award,
     title: 'Premium Certifications',
-    description: 'GAF Master Elite, CertainTeed SELECT ShingleMaster, and certified copper/slate installers.',
+    description: 'GAF Master Elite, CertainTeed ShingleMaster, and certified copper/slate installers.',
   },
   {
     icon: Shield,

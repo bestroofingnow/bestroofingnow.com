@@ -982,7 +982,7 @@ export function EnhancedOrganizationSchema() {
       },
       {
         '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'CertainTeed SELECT ShingleMaster',
+        credentialCategory: 'CertainTeed ShingleMaster',
         recognizedBy: {
           '@type': 'Organization',
           name: 'CertainTeed Corporation',

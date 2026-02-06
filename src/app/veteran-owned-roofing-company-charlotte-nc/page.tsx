@@ -281,7 +281,7 @@ const faqs = [
   {
     question: 'What certifications does Best Roofing Now have?',
     answer:
-      'Best Roofing Now holds multiple industry certifications including: CertainTeed SELECT ShingleMaster (top tier certification), GAF Factory-Certified Contractor, Owens Corning Preferred Contractor, BBB A+ Accreditation, NC and SC Licensed Contractor, and Angi Super Service Award winner. These certifications mean we can offer industry-leading warranties and have been trained and verified by the top roofing manufacturers in North America.',
+      'Best Roofing Now holds multiple industry certifications including: CertainTeed ShingleMaster certification, GAF Factory-Certified Contractor, BBB A+ Accreditation, NC and SC Licensed Contractor, and Angi Super Service Award winner. These certifications mean we can offer industry-leading warranties and have been trained and verified by the top roofing manufacturers in North America.',
   },
   {
     question: 'How can I verify that you are a legitimate veteran-owned business?',

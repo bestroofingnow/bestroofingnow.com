@@ -212,7 +212,7 @@ const faqs = [
   {
     question: 'What warranties come with your Mooresville roof repairs?',
     answer:
-      'Every repair we perform in Mooresville is backed by our workmanship warranty. When we use manufacturer-supplied materials, you also receive the applicable material warranty. As a CertainTeed SELECT ShingleMaster and GAF Factory-Certified Contractor, we can offer enhanced warranty options on qualifying repairs.',
+      'Every repair we perform in Mooresville is backed by our workmanship warranty. When we use manufacturer-supplied materials, you also receive the applicable material warranty. As a CertainTeed ShingleMaster and GAF Factory-Certified Contractor, we can offer enhanced warranty options on qualifying repairs.',
   },
 ];
 

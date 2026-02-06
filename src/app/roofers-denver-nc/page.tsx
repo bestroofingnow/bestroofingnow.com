@@ -207,7 +207,7 @@ const faqs = [
   {
     question: 'What roofing warranties do you offer in Denver NC?',
     answer:
-      'We offer comprehensive warranty options: our own 10-year workmanship warranty on all installations, plus manufacturer warranties up to 50 years on premium materials. As GAF Master Elite and CertainTeed SELECT ShingleMaster certified contractors, we can offer extended warranty programs not available from standard roofers.',
+      'We offer comprehensive warranty options: our own 10-year workmanship warranty on all installations, plus manufacturer warranties up to 50 years on premium materials. As GAF Master Elite and CertainTeed ShingleMaster certified contractors, we can offer extended warranty programs not available from standard roofers.',
   },
   {
     question: 'Why is Lake Norman western shore roofing different from other areas?',
