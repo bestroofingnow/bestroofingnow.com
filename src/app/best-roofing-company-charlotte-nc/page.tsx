@@ -265,7 +265,7 @@ const faqs = [
   {
     question: 'Does the best roofing company in Charlotte offer warranties?',
     answer:
-      'Yes, Best Roofing Now offers industry-leading warranties that most Charlotte roofing companies cannot match. As a CertainTeed SELECT ShingleMaster, GAF Factory-Certified Contractor, and Owens Corning Preferred Contractor, we can offer manufacturer warranties up to 50 years on materials. We also provide our own workmanship warranty. Options like GAF Golden Pledge (50 years material + 25 years workmanship) are available because of our elite certification status.',
+      'Yes, Best Roofing Now offers industry-leading warranties that most Charlotte roofing companies cannot match. As a CertainTeed ShingleMaster, GAF Factory-Certified Contractor Contractor, we can offer manufacturer warranties up to 50 years on materials. We also provide our own workmanship warranty. Options like GAF Golden Pledge (50 years material + 25 years workmanship) are available because of our elite certification status.',
   },
   {
     question: 'How do I get a free roof inspection from the best roofer in Charlotte?',
@@ -569,8 +569,8 @@ export default function BestRoofingCompanyCharlotteNCPage() {
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
                   <BadgeCheck className="w-10 h-10 text-primary flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-dark">Triple Manufacturer Certified</h4>
-                    <p className="text-sm text-gray">CertainTeed SELECT, GAF Factory-Certified, Owens Corning Preferred</p>
+                    <h4 className="font-bold text-dark">Top Manufacturer Certified</h4>
+                    <p className="text-sm text-gray">CertainTeed ShingleMaster, GAF Factory-Certified, BBB A+ Accredited</p>
                   </div>
                 </div>
               </div>

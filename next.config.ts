@@ -294,6 +294,9 @@ const nextConfig: NextConfig = {
       { source: '/storm-restoration', destination: '/storm-damage-roof-repair-charlotte-nc', permanent: true },
       // Commercial contractors: near-identical title to /commercial-roofing-services
       { source: '/commercial-roofing-contractors-charlotte-nc', destination: '/commercial-roofing-services', permanent: true },
+      // Best Roofers Charlotte: consolidate to homepage which is the primary authority for "best" Charlotte keywords
+      // The homepage has stronger domain authority and should rank for "best roofers charlotte nc"
+      { source: '/best-roofers-charlotte-nc', destination: '/', permanent: true },
     ];
   },
 
