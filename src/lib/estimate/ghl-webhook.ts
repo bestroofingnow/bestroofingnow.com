@@ -1,4 +1,5 @@
 import { LeadData, RoofEstimate, GHLWebhookPayload } from '@/types/estimate';
+import { EXTERNAL_RESOURCES } from '@/lib/constants';
 
 export function buildGHLPayload(
   lead: LeadData,
@@ -43,12 +44,8 @@ export function buildGHLPayload(
 }
 
 export async function submitToGHL(payload: GHLWebhookPayload): Promise<boolean> {
-  const webhookUrl = process.env.GHL_ESTIMATE_WEBHOOK_URL;
-
-  if (!webhookUrl) {
-    console.error('GHL_ESTIMATE_WEBHOOK_URL not configured');
-    return false;
-  }
+  // Use env variable if set, otherwise fall back to centralized constant
+  const webhookUrl = process.env.GHL_ESTIMATE_WEBHOOK_URL || EXTERNAL_RESOURCES.webhooks.ghlLeadWebhook;
 
   try {
     const response = await fetch(webhookUrl, {

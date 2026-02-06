@@ -15,7 +15,7 @@ import {
   Star,
   Shield
 } from 'lucide-react';
-import { SITE_CONFIG } from '@/lib/constants';
+import { SITE_CONFIG, EXTERNAL_RESOURCES } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { FinancingBanner } from '@/components/ui/FinancingBanner';
 
@@ -144,9 +144,7 @@ export default function ContactPage() {
     // Submit to webhook
     setIsSubmitting(true);
     try {
-      const webhookUrl = 'https://services.leadconnectorhq.com/hooks/YnvUmp9cZqt5xmVLrnoq/webhook-trigger/a4e989ac-8e5e-4820-9004-e69319445df8';
-
-      await fetch(webhookUrl, {
+      await fetch(EXTERNAL_RESOURCES.webhooks.ghlLeadWebhook, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

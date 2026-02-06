@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { checkRateLimit, getClientIP, RATE_LIMITS } from '@/lib/estimate/rate-limit';
+import { EXTERNAL_RESOURCES } from '@/lib/constants';
 
 interface LandingLeadPayload {
   firstName: string;
@@ -93,7 +94,7 @@ export async function POST(request: NextRequest) {
     };
 
     // Submit to GHL
-    const webhookUrl = process.env.GHL_ESTIMATE_WEBHOOK_URL;
+    const webhookUrl = process.env.GHL_ESTIMATE_WEBHOOK_URL || EXTERNAL_RESOURCES.webhooks.ghlLeadWebhook;
     if (webhookUrl) {
       try {
         await fetch(webhookUrl, {

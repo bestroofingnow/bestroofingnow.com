@@ -94,6 +94,10 @@ export const EXTERNAL_RESOURCES = {
     reviewWidget: 'https://manage.bestroofingnow.com/reputation/widgets/review_widget/YnvUmp9cZqt5xmVLrnoq?widgetId=691f1dc6f44c6d6cf097352c',
     bookingCalendar: 'https://manage.bestroofingnow.com/widget/bookings/brn-roof-consultation',
   },
+  webhooks: {
+    // Central GHL webhook for all form submissions
+    ghlLeadWebhook: 'https://services.leadconnectorhq.com/hooks/YnvUmp9cZqt5xmVLrnoq/webhook-trigger/EsQX2BVrRztaxx5QpwDH',
+  },
   projectMapIt: {
     baseUrl: 'https://projectmapit.com/best-roofing-now-llc/map',
     apiBase: 'https://projectmapit.com/api/v1',
