@@ -49,8 +49,8 @@ export async function GET() {
     // ============================================
     // STORM & EMERGENCY PAGES
     // ============================================
-
-
+    { url: `${BASE_URL}/emergency-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/hail-damage-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/wind-damage-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/hurricane-damage-roof-repair-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },

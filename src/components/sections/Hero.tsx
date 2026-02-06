@@ -79,24 +79,58 @@ export function Hero({
       <div className="container relative z-10">
         <div className="py-12 md:py-20 lg:py-28">
           <div className="max-w-3xl">
-            {/* Trust Badge - simplified on mobile */}
+            {/* Multi-Platform Rating Badge - Like competitors (Roof Medic, Best Choice) */}
             <div
-              className="inline-flex items-center gap-2 bg-white/15 rounded-full px-3 md:px-4 py-1.5 md:py-2 mb-3 md:mb-6"
+              className="inline-flex flex-wrap items-center gap-2 md:gap-3 bg-white/15 backdrop-blur-sm rounded-xl px-3 md:px-5 py-2 md:py-3 mb-3 md:mb-6"
               itemProp="aggregateRating"
               itemScope
               itemType="https://schema.org/AggregateRating"
             >
               <meta itemProp="ratingValue" content="5.0" />
               <meta itemProp="bestRating" content="5" />
-              <meta itemProp="ratingCount" content={String(SITE_CONFIG.googleReviewCount)} />
-              <div className="flex" role="img" aria-label="5 star rating">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-                ))}
+              <meta itemProp="ratingCount" content={String(SITE_CONFIG.googleReviewCount + SITE_CONFIG.facebookReviewCount + SITE_CONFIG.nextdoorRecommendations)} />
+
+              {/* Google Rating */}
+              <div className="flex items-center gap-1.5">
+                <div className="flex" role="img" aria-label="5 star Google rating">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                  ))}
+                </div>
+                <span className="text-white text-xs md:text-sm font-semibold">
+                  {SITE_CONFIG.googleRating} Google
+                </span>
               </div>
-              <span className="text-white text-xs md:text-sm font-medium">
-                5.0 · {SITE_CONFIG.customerCount}+ Customers
-              </span>
+
+              {/* Separator - hidden on mobile */}
+              <span className="hidden md:inline text-white/40">|</span>
+
+              {/* Facebook Rating - hidden on mobile for speed */}
+              <div className="hidden md:flex items-center gap-1.5">
+                <div className="flex" role="img" aria-label="5 star Facebook rating">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                  ))}
+                </div>
+                <span className="text-white text-xs md:text-sm font-semibold">
+                  {SITE_CONFIG.facebookRating} Facebook
+                </span>
+              </div>
+
+              {/* Separator - hidden on mobile */}
+              <span className="hidden md:inline text-white/40">|</span>
+
+              {/* Nextdoor Rating - hidden on mobile for speed */}
+              <div className="hidden md:flex items-center gap-1.5">
+                <div className="flex" role="img" aria-label="5 star Nextdoor rating">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                  ))}
+                </div>
+                <span className="text-white text-xs md:text-sm font-semibold">
+                  {SITE_CONFIG.nextdoorRating} Nextdoor
+                </span>
+              </div>
             </div>
 
             {/* Headline - THE LCP ELEMENT - renders immediately */}

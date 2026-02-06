@@ -39,7 +39,7 @@ import { EstimateButton } from '@/components/estimate';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Charlotte NC | Insurance Claim Specialists',
+  title: 'Storm Damage Roof Repair Charlotte NC | 24/7 Insurance Help',
   description:
     'Charlotte storm damage roof repair with full insurance claim assistance. Hail damage, wind damage, fallen tree damage experts. We meet with adjusters and document damage. Free storm damage inspection.',
   keywords: [

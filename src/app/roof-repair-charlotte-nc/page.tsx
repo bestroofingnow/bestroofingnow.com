@@ -43,7 +43,7 @@ import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Charlotte NC | Fast',
+  title: 'Roof Repair Charlotte NC | Same-Day Service',
   description:
     'Expert roof repair in Charlotte NC. 24/7 emergency service, leak repair, storm damage restoration, and shingle replacement. Fast response, affordable prices. Free estimates from BBB A+ rated roofers.',
   keywords: [
