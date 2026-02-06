@@ -16,6 +16,27 @@ export async function GET() {
     { url: `${BASE_URL}/trusted-partners`, changefreq: 'monthly', priority: '0.6' },
     // Ad landing pages
     { url: `${BASE_URL}/free-roof-inspection`, changefreq: 'monthly', priority: '0.6' },
+
+    // ============================================
+    // SERVICE ENTITY PAGES (SEO Gap Fills Feb 2026)
+    // ============================================
+    { url: `${BASE_URL}/flat-roof-repair`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/chimney-flashing-repair`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/skylight-installation`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/emergency-roof-tarping`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/fascia-soffit-repair`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-repair`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/standing-seam-metal-roofing`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/architectural-shingles`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/hail-damage-roof-repair`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-coating`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-maintenance`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-certification`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-guards`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/ridge-vent-installation`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/cedar-shake-roofing`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/tile-roofing`, changefreq: 'monthly', priority: '0.8' },
+
     // Pillar content hub pages
     { url: `${BASE_URL}/charlotte-roofing-handbook`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-repair-vs-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },

@@ -46,6 +46,23 @@ const KNOWN_ROUTES = new Set([
   'admin',
   // Ad landing pages
   'free-roof-inspection',
+  // Service entity pages (SEO gap fills)
+  'flat-roof-repair',
+  'chimney-flashing-repair',
+  'skylight-installation',
+  'emergency-roof-tarping',
+  'fascia-soffit-repair',
+  'gutter-repair',
+  'standing-seam-metal-roofing',
+  'architectural-shingles',
+  'hail-damage-roof-repair',
+  'roof-coating',
+  'roof-maintenance',
+  'roof-certification',
+  'gutter-guards',
+  'ridge-vent-installation',
+  'cedar-shake-roofing',
+  'tile-roofing',
   // Pillar content hub pages
   'charlotte-roofing-handbook',
   'roof-repair-vs-replacement-charlotte-nc',
