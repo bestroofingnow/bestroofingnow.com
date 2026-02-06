@@ -479,7 +479,7 @@ export function MegaMenu({ isScrolled }: MegaMenuProps) {
           aria-haspopup="true"
           aria-expanded={activeMenu === 'locations'}
         >
-          Locations
+          Service Areas
           <ChevronDown className={cn('w-4 h-4 transition-transform', activeMenu === 'locations' && 'rotate-180')} aria-hidden="true" />
         </button>
 

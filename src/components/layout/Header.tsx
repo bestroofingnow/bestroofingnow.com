@@ -13,7 +13,7 @@ import { MegaMenu } from './MegaMenu';
 const mobileNavigation = [
   { label: 'Services', href: '/services', hasChildren: true },
   { label: 'Commercial & Industrial', href: '/commercial-roofing-services', hasChildren: true },
-  { label: 'Locations', href: '/locations', hasChildren: true },
+  { label: 'Service Areas', href: '/locations', hasChildren: true },
   { label: 'Materials', href: '/materials', hasChildren: true },
   { label: 'Guides', href: '/guides', hasChildren: true },
   { label: 'Reviews', href: '/reviews' },
@@ -267,7 +267,7 @@ export function Header() {
                               </div>
                             )}
 
-                            {item.label === 'Locations' && (
+                            {item.label === 'Service Areas' && (
                               <div className="space-y-1">
                                 {/* Lake Norman Featured Section */}
                                 <div className="px-4 py-2 text-xs font-bold text-accent uppercase tracking-wider">
