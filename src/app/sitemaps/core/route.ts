@@ -261,6 +261,29 @@ export async function GET() {
     { url: `${BASE_URL}/roof-replacement-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofers-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roofing-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-repair-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+
+    // Mt Holly
+    { url: `${BASE_URL}/roofing-mt-holly-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roofers-mt-holly-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-repair-mt-holly-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-mt-holly-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-mt-holly-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-mt-holly-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-mt-holly-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-mt-holly-nc`, changefreq: 'weekly', priority: '0.8' },
+
+    // Matthews
+    { url: `${BASE_URL}/roofers-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-inspection-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // Other cities
     { url: `${BASE_URL}/roof-repair-pineville-nc`, changefreq: 'weekly', priority: '0.8' },
