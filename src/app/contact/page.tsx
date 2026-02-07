@@ -15,7 +15,7 @@ import {
   Star,
   Shield
 } from 'lucide-react';
-import { SITE_CONFIG, EXTERNAL_RESOURCES } from '@/lib/constants';
+import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { FinancingBanner } from '@/components/ui/FinancingBanner';
 
@@ -141,10 +141,10 @@ export default function ContactPage() {
       return;
     }
 
-    // Submit to webhook
+    // Submit to API route (which forwards to GHL webhook)
     setIsSubmitting(true);
     try {
-      await fetch(EXTERNAL_RESOURCES.webhooks.ghlLeadWebhook, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -156,17 +156,20 @@ export default function ContactPage() {
           address: formState.address,
           service: formState.service,
           message: formState.message,
-          source: 'website_contact_form',
-          page_url: typeof window !== 'undefined' ? window.location.href : 'https://www.bestroofingnow.com/contact',
-          submitted_at: new Date().toISOString(),
         }),
-        mode: 'no-cors', // LeadConnector may not support CORS
       });
 
-      setIsSubmitted(true);
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        const data = await response.json();
+        console.error('Form submission error:', data.error);
+        // Still show success to user, error is logged server-side
+        setIsSubmitted(true);
+      }
     } catch (error) {
       console.error('Form submission error:', error);
-      // Still show success since no-cors doesn't return response
+      // Still show success - we don't want to frustrate the user
       setIsSubmitted(true);
     } finally {
       setIsSubmitting(false);
