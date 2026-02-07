@@ -1722,7 +1722,7 @@ export default async function LocationPage({ params }: PageProps) {
         </section>
       )}
 
-      {/* Charlotte Trust Signals - BBB A+, Veteran-Owned, Charlotte Roofing Hub */}
+      {/* Charlotte Trust Signals - BBB A+, Veteran-Owned, Chamber Member */}
       {isCharlotte && (
         <section className="py-8 bg-gradient-to-r from-primary to-primary-dark text-white">
           <div className="container">
@@ -1732,16 +1732,24 @@ export default async function LocationPage({ params }: PageProps) {
                   <CheckCircle className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <p className="text-lg font-bold">BBB A+ Accredited & Veteran-Owned</p>
-                  <p className="text-white/80 text-sm">Charlotte&apos;s most trusted roofing contractor since 2020</p>
+                  <p className="text-lg font-bold">Charlotte Area Chamber of Commerce Member</p>
+                  <p className="text-white/80 text-sm">BBB A+ Accredited & Veteran-Owned since 2020</p>
                 </div>
               </div>
               <div className="flex flex-wrap justify-center gap-3">
                 <a
-                  href="https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763"
+                  href="https://charlotteareachamberofcommerce.growthzoneapp.com/memberdirectory/Details/active-member-directory-info-4627168"
                   target="_blank"
                   rel="noopener"
                   className="btn bg-white text-primary hover:bg-gray-100"
+                >
+                  Chamber Profile
+                </a>
+                <a
+                  href="https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763"
+                  target="_blank"
+                  rel="noopener"
+                  className="btn bg-white/20 text-white hover:bg-white/30"
                 >
                   BBB Profile
                 </a>

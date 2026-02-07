@@ -120,7 +120,7 @@ export const PAGE_DIRECTORY_MAPPING: Record<string, DirectoryCategory[]> = {
   // Location pages - local chambers and maps
   'location': ['local-chamber', 'maps', 'business-directory'],
   'location-lake-norman': ['local-chamber'], // Will get Lake Norman specific links
-  'location-charlotte': ['industry', 'reviews', 'certification'], // Charlotte gets industry + reviews
+  'location-charlotte': ['local-chamber', 'industry', 'reviews', 'certification'], // Charlotte gets local chamber + industry + reviews
 
   // Blog - social and media
   'blog': ['social', 'media'],
@@ -154,6 +154,12 @@ export const LAKE_NORMAN_LOCATIONS = [
   'lake-norman',
 ];
 
+// Charlotte location slugs - these pages get Charlotte-specific links
+export const CHARLOTTE_LOCATIONS = [
+  'charlotte-nc',
+  'charlotte',
+];
+
 // Function to get relevant directory links for a page
 export function getDirectoryLinksForPage(
   pageType: string,
@@ -164,6 +170,11 @@ export function getDirectoryLinksForPage(
   const isLakeNorman = locationSlug && LAKE_NORMAN_LOCATIONS.some(ln =>
     locationSlug.toLowerCase().includes(ln.replace('-nc', '').replace('-', ' '))
   );
+
+  // Check if this is a Charlotte location or home page
+  const isCharlotte = pageType === 'home' || (locationSlug && CHARLOTTE_LOCATIONS.some(cl =>
+    locationSlug.toLowerCase().includes(cl.replace('-nc', ''))
+  ));
 
   // Get relevant categories for this page type
   const categories = PAGE_DIRECTORY_MAPPING[pageType] || PAGE_DIRECTORY_MAPPING['default'];
@@ -176,6 +187,13 @@ export function getDirectoryLinksForPage(
     const lakeNormanLinks = relevantLinks.filter(link => link.location === 'lake-norman');
     const otherLinks = relevantLinks.filter(link => link.location !== 'lake-norman');
     relevantLinks = [...lakeNormanLinks, ...otherLinks];
+  }
+
+  // For Charlotte pages (including homepage), prioritize Charlotte-specific links
+  if (isCharlotte && !isLakeNorman) {
+    const charlotteLinks = relevantLinks.filter(link => link.location === 'charlotte');
+    const generalLinks = relevantLinks.filter(link => link.location !== 'charlotte' && link.location !== 'lake-norman');
+    relevantLinks = [...charlotteLinks, ...generalLinks];
   }
 
   // Sort by priority
