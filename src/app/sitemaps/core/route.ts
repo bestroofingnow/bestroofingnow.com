@@ -14,6 +14,8 @@ export async function GET() {
     { url: `${BASE_URL}/sitemap`, changefreq: 'weekly', priority: '0.8' },
     // Trusted partners & roofing network
     { url: `${BASE_URL}/trusted-partners`, changefreq: 'monthly', priority: '0.6' },
+    // YouTube videos page
+    { url: `${BASE_URL}/videos`, changefreq: 'weekly', priority: '0.7' },
     // Ad landing pages
     { url: `${BASE_URL}/free-roof-inspection`, changefreq: 'monthly', priority: '0.6' },
 

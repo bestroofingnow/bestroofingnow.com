@@ -44,6 +44,8 @@ const KNOWN_ROUTES = new Set([
   // Project showcase and admin
   'projects',
   'admin',
+  // YouTube videos
+  'videos',
   // Ad landing pages
   'free-roof-inspection',
   // Service entity pages (SEO gap fills)

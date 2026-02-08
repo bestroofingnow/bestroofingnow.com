@@ -382,6 +382,9 @@ export function Footer() {
               <Link href="/sitemap" className="text-white/90 hover:text-white">
                 Sitemap
               </Link>
+              <Link href="/videos" className="text-white/90 hover:text-white">
+                Videos
+              </Link>
               <Link href="/trusted-partners" className="text-white/90 hover:text-white">
                 Trusted Partners
               </Link>
