@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "browserslist": [
-    "Chrome >= 87",
-    "Firefox >= 78",
-    "Safari >= 14",
-    "Edge >= 88",
-    "not dead"
+    "Chrome >= 100",
+    "Firefox >= 100",
+    "Safari >= 15.4",
+    "Edge >= 100",
+    "iOS >= 15.4",
+    "not dead",
+    "not op_mini all"
   ],
   "scripts": {
     "dev": "next dev",

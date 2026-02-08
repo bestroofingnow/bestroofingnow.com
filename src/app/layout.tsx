@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next';
-import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
@@ -10,6 +9,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { EstimateProvider } from '@/components/estimate';
 import { SocialProofProvider } from '@/components/social-proof';
 import { LazyCustomCursor } from '@/components/ui/LazyCustomCursor';
+import { LazyChatWidget } from '@/components/ui/LazyChatWidget';
 import { UrgencyBanner } from '@/components/ui/UrgencyBanner';
 import { WebVitals } from '@/components/analytics/WebVitals';
 import { AnalyticsProvider } from '@/components/analytics';
@@ -151,6 +151,13 @@ export default function RootLayout({
         {/* CRITICAL: Preconnect to CMS for images */}
         <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
+        {/* CRITICAL: Logo preload for LCP - the header logo is the LCP element */}
+        <link
+          rel="preload"
+          as="image"
+          href="/_next/image?url=https%3A%2F%2Fcms.bestroofingnow.com%2Fwp-content%2Fuploads%2F2025%2F12%2FUntitled-design-53.png&w=384&q=75"
+          fetchPriority="high"
+        />
         {/* Hero image preload - ONLY for desktop (hero image hidden on mobile for faster LCP) */}
         <link
           rel="preload"
@@ -195,14 +202,8 @@ export default function RootLayout({
           <main id="main-content" tabIndex={-1}>{children}</main>
           <Footer />
           <StickyCTA />
-          {/* GHL Chat Widget - loaded after page is interactive */}
-          <Script
-            id="ghl-chat-widget"
-            src="https://widgets.leadconnectorhq.com/loader.js"
-            data-resources-url="https://widgets.leadconnectorhq.com"
-            data-widget-id="692def99cf45951b90d25076"
-            strategy="lazyOnload"
-          />
+          {/* GHL Chat Widget - deferred until user interaction for better performance */}
+          <LazyChatWidget />
           </SocialProofProvider>
         </EstimateProvider>
       </body>

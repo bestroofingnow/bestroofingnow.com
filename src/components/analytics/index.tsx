@@ -4,16 +4,18 @@ import { GoogleAnalytics, analytics, trackEvent, trackConversion } from './Googl
 import { MicrosoftClarity } from './MicrosoftClarity';
 import { FacebookPixel, fbEvents } from './FacebookPixel';
 import { AutoTrack } from './AutoTrack';
+import { LazyThirdParty } from './LazyThirdParty';
 
 // Combined Analytics Provider - Add to layout.tsx
+// Scripts are deferred until user interaction to improve initial page load
 export function AnalyticsProvider() {
   return (
-    <>
+    <LazyThirdParty loadOnMobile={true}>
       <GoogleAnalytics />
       <MicrosoftClarity />
       <FacebookPixel />
       <AutoTrack />
-    </>
+    </LazyThirdParty>
   );
 }
 
