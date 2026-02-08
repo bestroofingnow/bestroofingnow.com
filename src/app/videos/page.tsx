@@ -117,8 +117,7 @@ export default async function VideosPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 href={SITE_CONFIG.social.youtube}
-                target="_blank"
-                rel="noopener"
+                external
                 variant="outline"
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-primary"
@@ -242,8 +241,7 @@ export default async function VideosPage() {
               </p>
               <Button
                 href={SITE_CONFIG.social.youtube}
-                target="_blank"
-                rel="noopener"
+                external
                 variant="primary"
                 size="lg"
                 icon={<Youtube className="w-5 h-5" />}
@@ -328,8 +326,7 @@ export default async function VideosPage() {
             </div>
             <Button
               href={SITE_CONFIG.social.youtube}
-              target="_blank"
-              rel="noopener"
+              external
               variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-red-600"
