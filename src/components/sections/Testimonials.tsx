@@ -53,10 +53,10 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="section bg-gradient-to-br from-primary via-primary to-primary-dark text-white overflow-hidden relative">
-      {/* Static Background Elements - no JS animation */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 right-10 w-64 h-64 bg-white/5 rounded-full animate-pulse" style={{ animationDuration: '8s' }} />
-        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/10 rounded-full animate-pulse" style={{ animationDuration: '10s' }} />
+      {/* Static Background Elements - hidden on mobile for better performance */}
+      <div className="absolute inset-0 overflow-hidden hidden md:block" aria-hidden="true">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-white/5 rounded-full" />
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/10 rounded-full" />
       </div>
 
       <div className="container relative z-10">
@@ -67,8 +67,7 @@ export function Testimonials() {
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  className="w-8 h-8 fill-yellow-400 text-yellow-400 animate-fade-in-up"
-                  style={{ animationDelay: `${i * 0.1}s` }}
+                  className="w-8 h-8 fill-yellow-400 text-yellow-400"
                   aria-hidden="true"
                 />
               ))}

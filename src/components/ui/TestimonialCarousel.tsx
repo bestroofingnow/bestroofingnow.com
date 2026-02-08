@@ -25,6 +25,15 @@ export function TestimonialCarousel({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [direction, setDirection] = useState<'left' | 'right'>('right');
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile to disable auto-play (improves INP score)
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile, { passive: true });
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const paginate = useCallback((newDirection: number) => {
     if (isTransitioning) return;
@@ -44,14 +53,15 @@ export function TestimonialCarousel({
   }, [testimonials.length, isTransitioning]);
 
   useEffect(() => {
-    if (!autoPlay) return;
+    // Disable auto-play on mobile to improve INP/performance
+    if (!autoPlay || isMobile) return;
 
     const interval = setInterval(() => {
       paginate(1);
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [autoPlay, autoPlayInterval, paginate]);
+  }, [autoPlay, autoPlayInterval, paginate, isMobile]);
 
   const currentTestimonial = testimonials[currentIndex];
 

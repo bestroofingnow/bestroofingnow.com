@@ -160,6 +160,9 @@ export default function RootLayout({
           fetchPriority="high"
           media="(min-width: 768px)"
         />
+        {/* PMI project photos - storage.googleapis.com */}
+        <link rel="preconnect" href="https://storage.googleapis.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://storage.googleapis.com" />
         {/* Secondary preconnects */}
         <link rel="preconnect" href="https://www.bestroofingnow.com" />
         <link rel="dns-prefetch" href="https://www.bestroofingnow.com" />

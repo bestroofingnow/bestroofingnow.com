@@ -11,6 +11,7 @@ interface GeoTaggedProjectImageProps {
   sizes?: string;
   priority?: boolean;
   loading?: 'lazy' | 'eager';
+  quality?: number;
   context?: { serviceName?: string; pageTitle?: string };
   includeSchema?: boolean;
   schemaPageUrl?: string;
@@ -25,6 +26,7 @@ export function GeoTaggedProjectImage({
   sizes,
   priority,
   loading = 'lazy',
+  quality = 75,
   context,
   includeSchema = false,
   schemaPageUrl,
@@ -78,6 +80,7 @@ export function GeoTaggedProjectImage({
         sizes={sizes}
         priority={priority}
         loading={priority ? undefined : loading}
+        quality={quality}
       />
     </>
   );
