@@ -33,8 +33,8 @@ import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
 import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Roofing Company Charlotte NC | Free Inspection' },
-  description: 'Looking for the best roofing company in Charlotte? 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Get your FREE roof inspection today! Same-day estimates. Call (704) 605-6047.',
+  title: { absolute: 'Best Roofer Charlotte NC | 5-Star | BBB A+' },
+  description: 'Best Roofing Now is Charlotte NC\'s top-rated roofer. 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Roof repair, replacement, inspections. FREE estimates! Call (704) 605-6047.',
   keywords: [
     // Primary Charlotte brand keywords - homepage is the authority
     'best roofing company Charlotte NC',
@@ -138,8 +138,8 @@ export default function HomePage() {
         pageUrl={SITE_CONFIG.url}
       />
       <Hero
-        title="Best Roofing Now - Charlotte's Top-Rated Roofing Company"
-        subtitle="Veteran-owned roofing contractor with 500+ roofs installed. Full-service roofing including metal roofing, flat roof repair, gutter installation &amp; cleaning, siding, skylights, and chimney services. Storm damage restoration and insurance claim assistance. 5-star Google rating, BBB A+ accredited."
+        title="Charlotte NC Roofing Company — 5-Star Rated Roofers"
+        subtitle="Best Roofing Now is Charlotte's #1 rated roofing contractor. Veteran-owned with 500+ roofs installed. Residential &amp; commercial roofing, roof repair, roof replacement, metal roofing, gutter installation, siding, skylights, and storm damage restoration. BBB A+ accredited. Free roof inspections!"
         backgroundImage={IMAGES.hero.roofTeam}
       />
       <Services

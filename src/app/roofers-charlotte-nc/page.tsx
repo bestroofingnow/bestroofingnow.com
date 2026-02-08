@@ -43,9 +43,9 @@ import { getGeoImages } from '@/lib/geo-images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofers Charlotte NC | 5-Star',
+  title: 'Roofers Charlotte NC | 5-Star Rated | BBB A+',
   description:
-    'Looking for trusted roofers in Charlotte NC? Best Roofing Now is 5-star rated with 62+ Google reviews, BBB A+ accredited, veteran-owned. Licensed NC roofers with 500+ roofs completed. Free estimates! Call (704) 605-6047.',
+    'Need trusted roofers in Charlotte NC? Best Roofing Now is 5-star rated with 62+ Google reviews, BBB A+ accredited, veteran-owned. Licensed NC roofers with 500+ roofs completed. FREE estimates! Call (704) 605-6047.',
   keywords: [
     'roofers charlotte nc',
     'roofers near me charlotte',
