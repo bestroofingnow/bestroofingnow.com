@@ -87,11 +87,7 @@ const lakeNormanLocations = LOCATIONS.filter((loc) =>
   lakeNormanCities.includes(loc.slug)
 );
 
-interface MegaMenuProps {
-  isScrolled: boolean;
-}
-
-export function MegaMenu({ isScrolled }: MegaMenuProps) {
+export function MegaMenu() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);

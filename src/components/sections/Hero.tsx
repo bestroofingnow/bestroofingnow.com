@@ -1,7 +1,8 @@
 import { SEOImage as Image } from '@/components/ui/SEOImage';
-import { Star, Shield, Clock, Award } from 'lucide-react';
+import { Shield, Clock, Award, Star } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { HeroCTA } from './HeroCTA';
+import { StarRatingCSS } from '@/components/ui/StarRating';
 
 // Tiny blur placeholder - minimal data for fastest parsing
 const HERO_BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAA4ACgMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAABv/EAB8QAAICAgIDAQAAAAAAAAAAAAECAwQABREhBhIxQf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AptNrLUdWSW1MsijgKnx/eMMB//Z';
@@ -90,13 +91,9 @@ export function Hero({
               <meta itemProp="bestRating" content="5" />
               <meta itemProp="ratingCount" content={String(SITE_CONFIG.googleReviewCount + SITE_CONFIG.facebookReviewCount + SITE_CONFIG.nextdoorRecommendations)} />
 
-              {/* Google Rating */}
+              {/* Google Rating - CSS stars for performance (reduces 15 SVG icons to 1 text element) */}
               <div className="flex items-center gap-1.5">
-                <div className="flex" role="img" aria-label="5 star Google rating">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-                  ))}
-                </div>
+                <StarRatingCSS className="text-sm md:text-base" ariaLabel="5 star Google rating" />
                 <span className="text-white text-xs md:text-sm font-semibold">
                   {SITE_CONFIG.googleRating} Google
                 </span>
@@ -107,12 +104,8 @@ export function Hero({
 
               {/* Facebook Rating - hidden on mobile for speed */}
               <div className="hidden md:flex items-center gap-1.5">
-                <div className="flex" role="img" aria-label="5 star Facebook rating">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-                  ))}
-                </div>
-                <span className="text-white text-xs md:text-sm font-semibold">
+                <StarRatingCSS className="text-base" ariaLabel="5 star Facebook rating" />
+                <span className="text-white text-sm font-semibold">
                   {SITE_CONFIG.facebookRating} Facebook
                 </span>
               </div>
@@ -122,12 +115,8 @@ export function Hero({
 
               {/* Nextdoor Rating - hidden on mobile for speed */}
               <div className="hidden md:flex items-center gap-1.5">
-                <div className="flex" role="img" aria-label="5 star Nextdoor rating">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
-                  ))}
-                </div>
-                <span className="text-white text-xs md:text-sm font-semibold">
+                <StarRatingCSS className="text-base" ariaLabel="5 star Nextdoor rating" />
+                <span className="text-white text-sm font-semibold">
                   {SITE_CONFIG.nextdoorRating} Nextdoor
                 </span>
               </div>

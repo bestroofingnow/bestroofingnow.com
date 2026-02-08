@@ -100,12 +100,17 @@ export function EstimateProvider({ children }: EstimateProviderProps) {
     }
   }, [exitIntentEnabled, isOpen]);
 
-  // Enable exit intent after user has been on page for 10 seconds
-  // This gives users time to engage with content first
+  // Enable exit intent only on desktop after user has been on page for 15 seconds
+  // This gives users time to engage with content first and avoids mobile overhead
   useEffect(() => {
+    // Skip on mobile - exit intent doesn't work well on mobile anyway
+    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+      return;
+    }
+
     const timer = setTimeout(() => {
       setExitIntentEnabled(true);
-    }, 10000); // 10 seconds
+    }, 15000); // 15 seconds to reduce initial JS work
 
     return () => clearTimeout(timer);
   }, []);

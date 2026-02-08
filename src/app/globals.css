@@ -401,3 +401,33 @@ section:first-of-type h1 {
     display: none;
   }
 }
+
+/* ============================================
+   CSS-only Header Scroll Shadow
+   Uses scroll-driven animation - no JS needed
+   ============================================ */
+
+/* Progressive enhancement: CSS scroll-driven shadow */
+@supports (animation-timeline: scroll()) {
+  @keyframes header-shadow-grow {
+    from {
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    }
+    to {
+      box-shadow: 0 4px 12px -2px rgb(0 0 0 / 0.15);
+    }
+  }
+
+  .header-scroll-shadow {
+    animation: header-shadow-grow linear;
+    animation-timeline: scroll();
+    animation-range: 0px 100px;
+  }
+}
+
+/* Fallback for browsers without scroll-timeline support */
+@supports not (animation-timeline: scroll()) {
+  .header-scroll-shadow {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  }
+}

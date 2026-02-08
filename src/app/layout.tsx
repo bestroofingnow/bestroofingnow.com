@@ -10,7 +10,7 @@ import { EstimateProvider } from '@/components/estimate';
 import { SocialProofProvider } from '@/components/social-proof';
 import { LazyCustomCursor } from '@/components/ui/LazyCustomCursor';
 import { LazyChatWidget } from '@/components/ui/LazyChatWidget';
-import { UrgencyBanner } from '@/components/ui/UrgencyBanner';
+import { LazyUrgencyBanner } from '@/components/ui/LazyUrgencyBanner';
 import { WebVitals } from '@/components/analytics/WebVitals';
 import { AnalyticsProvider } from '@/components/analytics';
 
@@ -197,7 +197,7 @@ export default function RootLayout({
           >
             Skip to main content
           </a>
-          <UrgencyBanner />
+          <LazyUrgencyBanner />
           <Header />
           <main id="main-content" tabIndex={-1}>{children}</main>
           <Footer />
