@@ -650,8 +650,63 @@ export default function RoofingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Detailed Roofing Services Content Section */}
+      {/* Message from the Owner */}
       <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-light rounded-2xl p-8 md:p-12 border-l-4 border-primary">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Users className="w-12 h-12 text-primary" />
+                  </div>
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                    A Message from James Turner, Owner
+                  </h2>
+                  <div className="space-y-4 text-gray">
+                    <p className="text-lg leading-relaxed">
+                      I started Best Roofing Now because I was tired of seeing Charlotte homeowners get taken
+                      advantage of. After serving in the military, I came home and saw friends and neighbors
+                      getting hit with surprise charges, shoddy workmanship, and contractors who disappeared
+                      after cashing the check. That&apos;s not how I was raised, and it&apos;s not how we do business.
+                    </p>
+                    <p className="leading-relaxed">
+                      When I knock on your door to give an estimate, I&apos;m going to tell you the truth. If your
+                      roof just needs a few repairs, I&apos;m not going to try to sell you a full replacement.
+                      If you don&apos;t need a new roof for another 5 years, I&apos;ll tell you that too. My reputation
+                      means more to me than a quick sale.
+                    </p>
+                    <p className="leading-relaxed">
+                      I&apos;ve lived in the Charlotte area for over 15 years. I&apos;ve watched the city grow from
+                      the Lake Norman communities down to Ballantyne. My kids go to school here. My family
+                      shops at Harris Teeter and grabs BBQ from Midwood Smokehouse just like yours does.
+                      When I&apos;m working on your roof, I treat it like I&apos;m working on my neighbor&apos;s house -
+                      because in a way, I am.
+                    </p>
+                    <p className="leading-relaxed">
+                      A lot of roofers will tell you what you want to hear just to get the job. We take a
+                      different approach. Every estimate comes with detailed photos, an honest assessment,
+                      and a written quote that won&apos;t change once we start working. No games, no surprises.
+                    </p>
+                    <p className="leading-relaxed font-semibold text-dark">
+                      If you&apos;re looking for someone who will do the job right, stand behind their work,
+                      and treat you like a neighbor - give us a call. I look forward to meeting you.
+                    </p>
+                  </div>
+                  <p className="mt-6 text-primary font-bold text-lg">
+                    — James Turner, Owner & Veteran
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Roofing Services Content Section */}
+      <section className="section bg-light">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
@@ -660,7 +715,7 @@ export default function RoofingCharlotteNCPage() {
 
             <div className="space-y-8">
               {/* Residential Roofing */}
-              <div className="bg-light rounded-xl p-6 md:p-8">
+              <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Home className="w-5 h-5 text-primary" />
@@ -695,7 +750,7 @@ export default function RoofingCharlotteNCPage() {
               </div>
 
               {/* Commercial Roofing */}
-              <div className="bg-light rounded-xl p-6 md:p-8">
+              <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Building2 className="w-5 h-5 text-primary" />
@@ -716,7 +771,7 @@ export default function RoofingCharlotteNCPage() {
               </div>
 
               {/* Roof Repair */}
-              <div className="bg-light rounded-xl p-6 md:p-8">
+              <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Wrench className="w-5 h-5 text-primary" />
@@ -737,7 +792,7 @@ export default function RoofingCharlotteNCPage() {
               </div>
 
               {/* Roof Replacement */}
-              <div className="bg-light rounded-xl p-6 md:p-8">
+              <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Hammer className="w-5 h-5 text-primary" />
@@ -758,7 +813,7 @@ export default function RoofingCharlotteNCPage() {
               </div>
 
               {/* Roof Inspection */}
-              <div className="bg-light rounded-xl p-6 md:p-8">
+              <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Search className="w-5 h-5 text-primary" />
@@ -781,8 +836,154 @@ export default function RoofingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Service Areas Section */}
+      {/* What to Expect Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                What to Expect When You Work With Us
+              </h2>
+              <p className="text-gray text-lg">
+                I believe you deserve to know exactly how we operate before you pick up the phone.
+                Here&apos;s our process, plain and simple.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="flex gap-6 items-start">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">
+                  1
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-dark mb-2">You Call, We Answer</h3>
+                  <p className="text-gray">
+                    When you call our office, you&apos;re not going to get a call center in another state.
+                    You&apos;ll talk to someone right here in Charlotte who knows the area. We&apos;ll ask about
+                    your situation, answer your questions, and schedule an inspection at a time that works
+                    for you - including evenings and weekends if that&apos;s what you need.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">
+                  2
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-dark mb-2">Free, No-Pressure Inspection</h3>
+                  <p className="text-gray">
+                    I&apos;ll come out to your home personally or send one of my trained inspectors. We&apos;ll get
+                    up on the roof - actually look at it, not just from the ground - take photos, check the
+                    attic if you let us, and document everything. Then we sit down with you and show you
+                    exactly what we found. If there&apos;s a problem, we&apos;ll explain it in plain English. If your
+                    roof looks good, we&apos;ll tell you that too. No scare tactics, no pressure.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">
+                  3
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-dark mb-2">Clear, Written Estimate</h3>
+                  <p className="text-gray">
+                    You&apos;ll get a detailed written estimate that breaks down everything: materials, labor,
+                    disposal, permits, the whole thing. The price we quote is the price you pay. Period.
+                    I don&apos;t believe in &quot;discovering&quot; extra work after we&apos;ve started and hitting you
+                    with surprise charges. If we think there might be underlying issues, we discuss that
+                    upfront and account for it in the estimate.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">
+                  4
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-dark mb-2">Professional Installation</h3>
+                  <p className="text-gray">
+                    Once you give us the go-ahead, we handle all the permits and scheduling. Our crew
+                    shows up on time, in uniform, ready to work. We protect your landscaping, clean up
+                    every nail and piece of debris, and leave your property looking better than we found
+                    it. Most residential roof replacements take 1-2 days, and we&apos;ll keep you updated
+                    throughout the process.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">
+                  5
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-dark mb-2">Final Walkthrough & Warranty</h3>
+                  <p className="text-gray">
+                    When we&apos;re done, I or my project manager walks through everything with you. We show
+                    you the completed work, answer any questions, and make sure you&apos;re 100% satisfied
+                    before we consider the job complete. You&apos;ll receive all warranty paperwork,
+                    before-and-after photos, and my personal cell phone number in case you ever need
+                    anything down the road.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Local Charlotte Knowledge Section */}
       <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
+              Why Charlotte Roofing Requires Local Expertise
+            </h2>
+            <div className="prose prose-lg max-w-none text-gray">
+              <p>
+                I&apos;ve been roofing homes across the Charlotte metro area for years, and let me tell you -
+                this area has its own unique challenges. We&apos;re not dealing with Arizona heat or Maine
+                snow. We&apos;ve got our own thing going on, and if your roofer doesn&apos;t understand that,
+                your roof is going to suffer.
+              </p>
+              <p>
+                First off, the humidity. Charlotte summers are brutal on roofs. That constant moisture
+                in the air, combined with our afternoon thunderstorms, creates perfect conditions for
+                algae growth - those black streaks you see on older roofs? That&apos;s algae, and it&apos;s not
+                just ugly. It actually eats away at your shingles over time. When we install a roof,
+                we recommend algae-resistant shingles specifically designed for our climate.
+              </p>
+              <p>
+                Then there&apos;s the hail. Every spring and summer, Charlotte gets hit with hailstorms.
+                Sometimes it&apos;s pea-sized, sometimes it&apos;s golf balls. Either way, it does damage.
+                A lot of homeowners don&apos;t even know their roof has hail damage until they have a leak
+                or go to sell their house. That&apos;s why we recommend Class 4 impact-resistant shingles
+                for most Charlotte homes - they cost a little more upfront but can save you thousands
+                down the road.
+              </p>
+              <p>
+                The temperature swings are another factor. We can go from 30 degrees to 70 degrees in
+                the same week during winter. That expansion and contraction stresses roofing materials,
+                especially around flashing and penetrations. Proper installation techniques that account
+                for this movement are essential - something a contractor from Florida or up north might
+                not think about.
+              </p>
+              <p>
+                And let&apos;s talk about trees. Charlotte is called the &quot;City of Trees&quot; for a reason.
+                Those beautiful oaks and maples that shade our neighborhoods? They also drop leaves,
+                branches, and debris that can clog gutters and valleys. Overhanging branches scrape
+                shingles and hold moisture against the roof. When we do an inspection, we look at the
+                whole picture - not just the roof, but what&apos;s affecting it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
@@ -840,6 +1041,99 @@ export default function RoofingCharlotteNCPage() {
               View All Service Areas
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Honest Advice Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
+              Straight Talk About Charlotte Roofing
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-dark">When You DO Need a New Roof</h3>
+                </div>
+                <ul className="space-y-2 text-gray">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold">•</span>
+                    Your roof is 20+ years old with visible wear
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold">•</span>
+                    You can see daylight through the roof boards in the attic
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold">•</span>
+                    Multiple active leaks in different areas
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold">•</span>
+                    Shingles are curling, cracking, or falling apart
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold">•</span>
+                    Significant hail or storm damage across the entire roof
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold">•</span>
+                    Repair costs are approaching 30% of replacement cost
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                    <Zap className="w-5 h-5 text-red-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-dark">When a Repair is All You Need</h3>
+                </div>
+                <ul className="space-y-2 text-gray">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold">•</span>
+                    One leak around a vent, chimney, or pipe boot
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold">•</span>
+                    A few missing or damaged shingles in one area
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold">•</span>
+                    Flashing needs resealing (common after 10-15 years)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold">•</span>
+                    Minor storm damage in a localized area
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold">•</span>
+                    Roof is under 15 years old with minor issues
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold">•</span>
+                    Problem is isolated to ridge cap or edges only
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-primary/5 rounded-xl p-6 border border-primary/20">
+              <p className="text-gray italic">
+                &quot;Look, I&apos;ll be honest with you - I&apos;ve turned down plenty of jobs where the homeowner
+                was ready to write a check for a new roof, but they didn&apos;t need one. A repair would
+                buy them another 5-10 years easy. Some contractors would take that money in a heartbeat.
+                But when your neighbor asks who did your roof, I want them to hear that we did right
+                by you. That&apos;s how we&apos;ve built our reputation in Charlotte.&quot;
+              </p>
+              <p className="text-primary font-semibold mt-4">— James Turner</p>
+            </div>
           </div>
         </div>
       </section>
