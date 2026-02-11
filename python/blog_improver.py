@@ -18,7 +18,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from config import Config
-from clients import WordPressClient, ClaudeOptimizer
+from clients import WordPressClient
+from clients.claude import ClaudeOptimizer, ClaudeAPIOptimizer, get_optimizer
 from utils import (
     load_json,
     save_json,
@@ -95,10 +96,26 @@ def main():
     print(f"Timestamp: {get_current_timestamp()}")
     print()
 
-    # Check for API key
-    if not Config.ANTHROPIC_API_KEY:
-        print("ERROR: ANTHROPIC_API_KEY not set in environment")
-        sys.exit(1)
+    # Determine which optimizer to use
+    # Prefer Claude Code CLI (no API key needed), fallback to API
+    use_cli = True
+    try:
+        # Test if Claude Code CLI is available
+        import subprocess
+        result = subprocess.run(["claude", "--version"], capture_output=True, timeout=5)
+        if result.returncode != 0:
+            use_cli = False
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        use_cli = False
+
+    if use_cli:
+        print("Using Claude Code CLI (no API key needed)")
+    else:
+        if not Config.ANTHROPIC_API_KEY:
+            print("ERROR: Claude Code CLI not available and ANTHROPIC_API_KEY not set")
+            print("Either install Claude Code or set the API key in environment")
+            sys.exit(1)
+        print("Using Anthropic API (Claude Code CLI not available)")
 
     # 1. Load weekly plan
     print("[Step 1] Loading weekly plan...")
@@ -150,7 +167,7 @@ def main():
 
     # 5. Call Claude to improve content
     print("\n[Step 5] Calling Claude AI for improvement...")
-    optimizer = ClaudeOptimizer(Config.ANTHROPIC_API_KEY)
+    optimizer = get_optimizer(use_cli=use_cli, api_key=Config.ANTHROPIC_API_KEY if not use_cli else None)
 
     result = optimizer.improve_blog_post(
         title=post.title,

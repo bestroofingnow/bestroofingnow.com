@@ -59,6 +59,9 @@ jobs:
           git push
 
   # Blog improvement job - runs every 6 hours
+  # NOTE: In GitHub Actions, Claude Code CLI is not available.
+  # This job requires ANTHROPIC_API_KEY secret to be set.
+  # For local development, the script will use Claude Code CLI if available.
   improve-blog:
     if: github.event.schedule != '0 6 * * 1' || github.event.inputs.action == 'improve'
     runs-on: ubuntu-latest
@@ -76,7 +79,10 @@ jobs:
           cache-dependency-path: python/requirements.txt
 
       - name: Install dependencies
-        run: pip install -r python/requirements.txt
+        run: |
+          pip install -r python/requirements.txt
+          # Install anthropic for GitHub Actions (Claude CLI not available)
+          pip install anthropic>=0.40.0
 
       - name: Check for weekly plan
         id: check-plan
