@@ -1,0 +1,120 @@
+name: Blog Improvement Automation
+
+on:
+  schedule:
+    # Weekly planner: Every Monday at 6 AM UTC
+    - cron: '0 6 * * 1'
+    # Blog improver: Every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 0,6,12,18 * * *'
+
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to run'
+        required: true
+        default: 'improve'
+        type: choice
+        options:
+          - plan
+          - improve
+
+jobs:
+  # Weekly planning job - runs Mondays at 6 AM UTC
+  weekly-plan:
+    if: github.event.schedule == '0 6 * * 1' || github.event.inputs.action == 'plan'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: python/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r python/requirements.txt
+
+      - name: Run weekly planner
+        env:
+          DATAFORSEO_EMAIL: ${{ secrets.DATAFORSEO_EMAIL }}
+          DATAFORSEO_API_KEY: ${{ secrets.DATAFORSEO_API_KEY }}
+        run: python python/weekly_planner.py
+
+      - name: Commit weekly plan
+        run: |
+          git config user.name "Blog Automation Bot"
+          git config user.email "bot@bestroofingnow.com"
+          git add python/data/weekly_plan.json
+          git diff --staged --quiet || git commit -m "chore: update weekly blog improvement plan
+
+          Generated $(date -u +%Y-%m-%d) for week of $(cat python/data/weekly_plan.json | jq -r '.week_of')
+
+          Blogs scheduled: $(cat python/data/weekly_plan.json | jq -r '.total_blogs')"
+          git push
+
+  # Blog improvement job - runs every 6 hours
+  improve-blog:
+    if: github.event.schedule != '0 6 * * 1' || github.event.inputs.action == 'improve'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: python/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r python/requirements.txt
+
+      - name: Check for weekly plan
+        id: check-plan
+        run: |
+          if [ -f python/data/weekly_plan.json ]; then
+            echo "plan_exists=true" >> $GITHUB_OUTPUT
+            pending=$(cat python/data/weekly_plan.json | jq '[.blogs[] | select(.status == "pending")] | length')
+            echo "pending_count=$pending" >> $GITHUB_OUTPUT
+          else
+            echo "plan_exists=false" >> $GITHUB_OUTPUT
+            echo "pending_count=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Skip if no plan or no pending blogs
+        if: steps.check-plan.outputs.plan_exists == 'false' || steps.check-plan.outputs.pending_count == '0'
+        run: |
+          echo "No weekly plan found or no pending blogs."
+          echo "Run the weekly planner first: workflow_dispatch with action=plan"
+          exit 0
+
+      - name: Run blog improver
+        if: steps.check-plan.outputs.plan_exists == 'true' && steps.check-plan.outputs.pending_count != '0'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python python/blog_improver.py
+
+      - name: Commit improved blog
+        if: steps.check-plan.outputs.plan_exists == 'true' && steps.check-plan.outputs.pending_count != '0'
+        run: |
+          git config user.name "Blog Automation Bot"
+          git config user.email "bot@bestroofingnow.com"
+          git add blog-updates/auto/ python/data/
+
+          # Get the slug of the blog that was just improved
+          SLUG=$(git diff --staged --name-only | grep "blog-updates/auto" | head -1 | sed 's/.*auto\/[0-9-]*-//' | sed 's/\.md$//')
+
+          git diff --staged --quiet || git commit -m "feat: auto-improve blog - $SLUG
+
+          Automated blog improvement via Claude AI.
+          See blog-updates/auto/ for the improved content."
+          git push
