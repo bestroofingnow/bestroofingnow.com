@@ -16,6 +16,7 @@
  */
 
 import { SITE_CONFIG } from './constants';
+import { getRoofingContractorIdentity } from './schema-helpers';
 
 // ============================================
 // CORE INTERFACES
@@ -369,11 +370,7 @@ export function generateAIFAQSchema(faqs: AIOptimizedFAQ[] = CHARLOTTE_AI_FAQS) 
         },
       },
     })),
-    author: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-    },
+    author: getRoofingContractorIdentity(),
   };
 }
 
@@ -428,10 +425,7 @@ export function generateSpeakableSchema(
       cssSelector: selectors,
       xpath: ['/html/head/meta[@name="description"]/@content'],
     },
-    mainEntity: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-    },
+    mainEntity: getRoofingContractorIdentity(),
   };
 }
 

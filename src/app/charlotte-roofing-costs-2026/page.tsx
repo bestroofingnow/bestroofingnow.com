@@ -36,6 +36,7 @@ import {
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 import EstimateButton from '@/components/estimate/EstimateButton';
 
@@ -127,17 +128,7 @@ function PricingSchema() {
     description:
       'Complete roofing services in Charlotte NC including repair, replacement, and installation. BBB A+ rated with transparent pricing and free estimates.',
     provider: {
-      '@type': 'RoofingContractor',
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE_CONFIG.address.street,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
+      ...getRoofingContractorIdentity(),
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: SITE_CONFIG.googleRating,

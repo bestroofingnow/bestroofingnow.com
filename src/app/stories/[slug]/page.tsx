@@ -35,6 +35,7 @@ import {
 import { ProjectPhotoGallery, ProjectPhotoStrip } from '@/components/ui/ProjectPhotoGallery';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 
 // Local news stories tied to roofing for engaging content
 const LOCAL_STORIES: Record<
@@ -548,10 +549,7 @@ export default async function CityStoryPage({
                   item: {
                     '@type': 'Service',
                     name: `Roof ${project.serviceType || 'Installation'} at ${project.street}`,
-                    provider: {
-                      '@type': 'RoofingContractor',
-                      name: 'Best Roofing Now',
-                    },
+                    provider: getRoofingContractorIdentity(),
                     areaServed: {
                       '@type': 'City',
                       name: displayName,

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin, Camera, Calendar, ChevronRight, ArrowLeft, Star, Phone, Shield } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectMap from '@/components/projects/ProjectMap';
@@ -232,10 +233,7 @@ export default async function CityProjectsPage({
       })),
     },
     provider: {
-      '@type': 'RoofingContractor',
-      name: SITE_CONFIG.name,
-      url: SITE_CONFIG.url,
-      telephone: SITE_CONFIG.phoneClean,
+      ...getRoofingContractorIdentity(),
       areaServed: {
         '@type': 'City',
         name: displayCity,
@@ -244,46 +242,18 @@ export default async function CityProjectsPage({
           name: 'North Carolina',
         },
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '100',
-        bestRating: '5',
-        worstRating: '1',
-      },
     },
   };
 
   // Local business JSON-LD
   const localBusinessJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    name: `${SITE_CONFIG.name} - ${displayCity}`,
-    url: `${SITE_CONFIG.url}/projects/city/${city}`,
-    telephone: SITE_CONFIG.phoneClean,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: displayCity,
-      addressRegion: state,
-      addressCountry: 'US',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: cityData.avgLat,
-      longitude: cityData.avgLng,
-    },
+    ...getRoofingContractorIdentity(),
     areaServed: {
       '@type': 'City',
       name: displayCity,
     },
     priceRange: '$$',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: cityData.total,
-      bestRating: '5',
-      worstRating: '1',
-    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Roofing Services',

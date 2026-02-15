@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Camera, Calendar, ChevronRight, ArrowLeft, ExternalLink, Shield, Star, CloudRain, Home, Wrench } from 'lucide-react';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectGallery from '@/components/projects/ProjectGallery';
@@ -276,18 +277,7 @@ export default async function ProjectDetailPage({
     numberOfItems: project.photos.length,
     datePublished: project.completedDate,
     url: `${SITE_CONFIG.url}/projects/${projectSlug}`,
-    author: {
-      '@type': 'RoofingContractor',
-      name: SITE_CONFIG.name,
-      url: SITE_CONFIG.url,
-      telephone: SITE_CONFIG.phoneClean,
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Charlotte',
-        addressRegion: 'NC',
-        addressCountry: 'US',
-      },
-    },
+    author: getRoofingContractorIdentity(),
     contentLocation: {
       '@type': 'Place',
       name: `${project.city}, ${project.state}`,
@@ -318,10 +308,7 @@ export default async function ProjectDetailPage({
     name: `${project.serviceType || project.product || 'Roofing'} in ${project.city}, ${project.state}`,
     description: `Professional ${project.product || 'roofing'} completed in ${project.city}, ${project.state}. View ${project.photos.length} verified project photos.`,
     provider: {
-      '@type': 'RoofingContractor',
-      name: SITE_CONFIG.name,
-      url: SITE_CONFIG.url,
-      telephone: SITE_CONFIG.phoneClean,
+      ...getRoofingContractorIdentity(),
       areaServed: {
         '@type': 'City',
         name: project.city,

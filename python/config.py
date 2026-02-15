@@ -13,8 +13,10 @@ class Config:
     """Application configuration"""
 
     # DataForSEO API
-    DATAFORSEO_EMAIL = os.getenv("DATAFORSEO_EMAIL", "james@kynexpro.com")
-    DATAFORSEO_API_KEY = os.getenv("DATAFORSEO_API_KEY", "c239bdea18ad73af")
+    # Prefer DataForSEO Labs Basic Auth vars (DATAFORSEO_LOGIN/DATAFORSEO_PASSWORD) from .env.local.
+    # Fallback to DATAFORSEO_EMAIL/DATAFORSEO_API_KEY if you use that naming elsewhere.
+    DATAFORSEO_EMAIL = os.getenv("DATAFORSEO_EMAIL") or os.getenv("DATAFORSEO_LOGIN") or ""
+    DATAFORSEO_API_KEY = os.getenv("DATAFORSEO_API_KEY") or os.getenv("DATAFORSEO_PASSWORD") or ""
 
     # Anthropic API
     ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")

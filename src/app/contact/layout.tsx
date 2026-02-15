@@ -3,7 +3,7 @@ import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Free Roof Inspection Charlotte NC',
+  title: 'Contact Us',
   description:
     'Contact Best Roofing Now for a free roof inspection in Charlotte NC. Call (704) 605-6047 or request an estimate online. 24/7 emergency service available.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/contact`,
   },
   openGraph: {
-    title: 'Contact Best Roofing Now | Free Roof Inspection Charlotte NC',
+    title: 'Contact Us | Best Roofing Now',
     description:
       'Get a free roof inspection from Charlotte\'s top-rated roofing contractor. Call (704) 605-6047 or schedule online. 24/7 emergency service.',
     url: `${SITE_CONFIG.url}/contact`,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Best Roofing Now | Free Roof Inspection',
+    title: 'Contact Us | Best Roofing Now',
     description:
       'Get a free roof inspection from Charlotte\'s top-rated roofing contractor. Call (704) 605-6047.',
     images: ['https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png'],

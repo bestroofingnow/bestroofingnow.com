@@ -16,6 +16,7 @@ import {
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
@@ -280,19 +281,8 @@ export default async function NeighborhoodPage({ params }: PageProps) {
     url: pageUrl,
     serviceType: 'Roofing Services',
     provider: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
+      ...getRoofingContractorIdentity(),
       email: SITE_CONFIG.email,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: `${SITE_CONFIG.address.street} ${SITE_CONFIG.address.suite}`,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: SITE_CONFIG.googleRating,

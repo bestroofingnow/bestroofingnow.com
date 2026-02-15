@@ -685,35 +685,6 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Title qualifiers for better GBP alignment and SEO
-const titleQualifiers: Record<string, string> = {
-  'residential-roofing': 'Expert Home Roofing Services',
-  'commercial-roofing': 'Flat Roof & TPO Specialists',
-  'roof-repair': 'Fast & Reliable Service',
-  'roof-replacement': 'Premium Materials & Warranties',
-  'roof-inspection': 'Free No-Obligation Assessment',
-  'emergency-roofing': '24/7 Rapid Response',
-  'storm-damage': 'Insurance Claim Experts',
-  'gutters': 'Installation, Repair & Guards',
-  'siding': 'Vinyl & Fiber Cement Experts',
-  'residential-roof-maintenance': 'Annual Programs',
-  'commercial-roof-maintenance': 'Bi-Annual Inspections',
-  'skylight-installation': 'VELUX Certified Contractor',
-  'roof-ventilation': 'Improve Energy Efficiency',
-  'chimney-services': 'Flashing & Cap Repair',
-  'soffit-fascia': 'Protect Your Roof Edge',
-  'flat-roof-repair': 'TPO, EPDM & PVC Experts',
-  'metal-roofing': 'Standing Seam & Metal Shingles',
-  'gutter-cleaning': 'Professional Debris Removal',
-  'insurance-claims': 'Storm Damage Claim Experts',
-  'gutter-installation': 'Seamless Aluminum Gutters',
-  'gutter-repair': 'Fix Leaks & Sagging Fast',
-  'gutter-guards': 'LeafGuard & Mesh Systems',
-  'siding-installation': 'James Hardie Certified',
-  'siding-repair': 'Color Matching Experts',
-  'building-restoration': 'Storm & Fire Damage Recovery',
-};
-
 // Canonical URL mappings for service slugs that have competing static keyword pages
 const serviceCanonicals: Record<string, string> = {
   'roof-repair': '/roof-repair-charlotte-nc',
@@ -752,11 +723,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   // Get service hero image for OpenGraph
   const images = serviceImages[slug] || [];
   const ogImage = images[0] || IMAGES.hero.hero1;
-  const qualifier = titleQualifiers[slug] || 'Professional Service';
+
+  const title = `${service.title} Charlotte NC`;
+  const description = `${service.description} Free estimates. Call ${SITE_CONFIG.phone}.`;
 
   return {
-    title: `${service.title} Charlotte NC | ${qualifier}`,
-    description: `${service.description} Serving Charlotte and surrounding areas. Free estimates, quality workmanship, and satisfaction guaranteed.`,
+    title,
+    description,
     keywords: service.keywords,
     alternates: {
       canonical: serviceCanonicals[slug]
@@ -764,8 +737,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         : `${SITE_CONFIG.url}/services/${slug}`,
     },
     openGraph: {
-      title: `${service.title} in Charlotte NC | ${qualifier}`,
-      description: service.description,
+      title,
+      description,
       url: `${SITE_CONFIG.url}/services/${slug}`,
       type: 'website',
       images: [
@@ -779,8 +752,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${service.title} in Charlotte NC | ${qualifier}`,
-      description: service.description,
+      title,
+      description,
       images: [ogImage],
     },
   };

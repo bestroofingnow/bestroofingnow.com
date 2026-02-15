@@ -57,6 +57,25 @@ export default function RoofTypesPage() {
         </div>
       </section>
 
+      {/* Overview */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                Roof type is more than a style choice. The shape of your roof affects drainage, ventilation, material options, and long term maintenance. A simple gable roof can be straightforward to repair, while complex designs with multiple valleys, dormers, and low slope sections often require more detailed flashing and water management.
+              </p>
+              <p>
+                In the Charlotte area, heavy seasonal rain and wind driven storms make proper slope and drainage especially important. If you are planning a major project, we recommend pairing roof style decisions with a material choice that matches your goals for lifespan, curb appeal, and warranty coverage.
+              </p>
+              <p>
+                Need help identifying your roof type or choosing the best option for a replacement? Start with a <a href="/services/roof-inspection">free roof inspection</a>, or explore <a href="/materials">roofing materials</a> to compare pros, cons, and costs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Roof Types Grid */}
       <section className="section">
         <div className="container">

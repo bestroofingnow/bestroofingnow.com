@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone, AlertTriangle, Clock, Shield, CheckCircle, Zap, MapPin, DollarSign, HelpCircle } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import {
   BreadcrumbSchema,
@@ -162,18 +163,7 @@ function EmergencyServiceSchema() {
       availableLanguage: ['English', 'Spanish'],
     },
     provider: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE_CONFIG.address.street,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
+      ...getRoofingContractorIdentity(),
     },
     areaServed: [
       {

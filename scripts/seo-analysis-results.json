@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-08T13:59:14.509Z",
+  "timestamp": "2026-02-13T14:34:10.764Z",
   "domain": "bestroofingnow.com",
   "domainOverview": null,
   "rankedKeywords": [
@@ -63,9 +63,9 @@
       "keyword": "roofing charlotte nc",
       "position": 46,
       "searchVolume": 3600,
-      "cpc": 8.619999885559082,
+      "cpc": 13.020000457763672,
       "url": "https://www.bestroofingnow.com/",
-      "competition": 0.25
+      "competition": 0.3799999952316284
     },
     {
       "keyword": "roofing in charlotte",
@@ -111,17 +111,17 @@
       "keyword": "roofing company charlotte nc",
       "position": 93,
       "searchVolume": 2900,
-      "cpc": 28.350000381469727,
+      "cpc": 21.06999969482422,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.28999999165534973
+      "competition": 0.3799999952316284
     },
     {
       "keyword": "roofing company charlotte north carolina",
       "position": 109,
       "searchVolume": 2900,
-      "cpc": 28.350000381469727,
+      "cpc": 21.06999969482422,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.28999999165534973
+      "competition": 0.3799999952316284
     },
     {
       "keyword": "roofing contractors in charlotte nc",
@@ -135,15 +135,15 @@
       "keyword": "gutter guard installation near me",
       "position": 58,
       "searchVolume": 2400,
-      "cpc": 30.299999237060547,
+      "cpc": 34,
       "url": "https://www.bestroofingnow.com/services/gutter-guards",
-      "competition": 0.800000011920929
+      "competition": 0.09000000357627869
     },
     {
       "keyword": "roof cricket installation",
       "position": 97,
       "searchVolume": 2400,
-      "cpc": 2.3499999046325684,
+      "cpc": null,
       "url": "https://bestroofingnow.com/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
       "competition": 0.009999999776482582
     },
@@ -151,9 +151,9 @@
       "keyword": "inspecting roof for hail damage",
       "position": 99,
       "searchVolume": 1900,
-      "cpc": 14.270000457763672,
+      "cpc": 14.779999732971191,
       "url": "https://bestroofingnow.com/blog/everything-you-need-to-know-about-storm-damage-roof-inspections-in-lake-norman",
-      "competition": 0.07999999821186066
+      "competition": 0.05999999865889549
     },
     {
       "keyword": "reliable roofing companies",
@@ -167,9 +167,9 @@
       "keyword": "shingle price per square",
       "position": 79,
       "searchVolume": 1900,
-      "cpc": 4.760000228881836,
+      "cpc": 4.360000133514404,
       "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
-      "competition": 0.9300000071525574
+      "competition": 0.9100000262260437
     },
     {
       "keyword": "anatomy of a roof",
@@ -201,7 +201,7 @@
       "searchVolume": 1000,
       "cpc": null,
       "url": "https://www.bestroofingnow.com/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
-      "competition": 0.009999999776482582
+      "competition": 0
     },
     {
       "keyword": "charlotte roofing contractor",
@@ -231,25 +231,25 @@
       "keyword": "roofing contractors in charlotte",
       "position": 50,
       "searchVolume": 880,
-      "cpc": 20.510000228881836,
+      "cpc": 12.880000114440918,
       "url": "https://www.bestroofingnow.com/",
-      "competition": 0.17000000178813934
+      "competition": 0.2199999988079071
     },
     {
-      "keyword": "belmont roofing shingles",
-      "position": 83,
+      "keyword": "china roofing",
+      "position": 93,
       "searchVolume": 720,
-      "cpc": 7.039999961853027,
-      "url": "https://bestroofingnow.com/belmont/",
-      "competition": 0.36000001430511475
+      "cpc": 1.9900000095367432,
+      "url": "https://www.bestroofingnow.com/locations/china-grove-nc",
+      "competition": 0.03999999910593033
     },
     {
       "keyword": "flat rubber roof",
       "position": 101,
       "searchVolume": 720,
-      "cpc": 3.1600000858306885,
+      "cpc": 4.239999771118164,
       "url": "https://www.bestroofingnow.com/materials/flat-roofing",
-      "competition": 0.8100000023841858
+      "competition": 0.7400000095367432
     },
     {
       "keyword": "how much does a shingle roof cost",
@@ -279,25 +279,49 @@
       "keyword": "certainteed or gaf",
       "position": 64,
       "searchVolume": 590,
-      "cpc": 14.079999923706055,
+      "cpc": 4.840000152587891,
       "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
-      "competition": 0.07000000029802322
+      "competition": 0.10000000149011612
     },
     {
       "keyword": "certainteed versus gaf",
       "position": 68,
       "searchVolume": 590,
-      "cpc": 14.079999923706055,
+      "cpc": 4.840000152587891,
       "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
-      "competition": 0.07000000029802322
+      "competition": 0.10000000149011612
     },
     {
       "keyword": "charlotte roofing repair",
       "position": 106,
       "searchVolume": 590,
-      "cpc": 47.36000061035156,
+      "cpc": 67.2699966430664,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.23999999463558197
+      "competition": 0.23000000417232513
+    },
+    {
+      "keyword": "gaf or certainteed",
+      "position": 46,
+      "searchVolume": 590,
+      "cpc": 4.840000152587891,
+      "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+      "competition": 0.10000000149011612
+    },
+    {
+      "keyword": "gaf versus certainteed",
+      "position": 59,
+      "searchVolume": 590,
+      "cpc": 4.840000152587891,
+      "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+      "competition": 0.10000000149011612
+    },
+    {
+      "keyword": "gaf vs certainteed",
+      "position": 68,
+      "searchVolume": 590,
+      "cpc": 4.840000152587891,
+      "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+      "competition": 0.10000000149011612
     },
     {
       "keyword": "hickory nc roofing",
@@ -313,6 +337,14 @@
       "searchVolume": 590,
       "cpc": 15.720000267028809,
       "url": "https://www.bestroofingnow.com/metal-roofing-services",
+      "competition": 0.07000000029802322
+    },
+    {
+      "keyword": "metal roofing in charlotte nc",
+      "position": 35,
+      "searchVolume": 590,
+      "cpc": 15.720000267028809,
+      "url": "https://www.bestroofingnow.com/services/metal-roofing",
       "competition": 0.07000000029802322
     },
     {
@@ -356,6 +388,22 @@
       "competition": 0.23000000417232513
     },
     {
+      "keyword": "emergency roofing service",
+      "position": 92,
+      "searchVolume": 480,
+      "cpc": 71.7300033569336,
+      "url": "https://www.bestroofingnow.com/services/emergency-roofing",
+      "competition": 0.05000000074505806
+    },
+    {
+      "keyword": "flintlastic roofing",
+      "position": 67,
+      "searchVolume": 480,
+      "cpc": 3.9600000381469727,
+      "url": "https://cms.bestroofingnow.com/certainteed-flintastic-built-up-roofing/",
+      "competition": 0.8999999761581421
+    },
+    {
       "keyword": "roof maintenance plan",
       "position": 78,
       "searchVolume": 480,
@@ -372,12 +420,20 @@
       "competition": 0.8100000023841858
     },
     {
-      "keyword": "shingles installation cost",
-      "position": 104,
-      "searchVolume": 480,
-      "cpc": 6.489999771118164,
-      "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
-      "competition": 0.3400000035762787
+      "keyword": "energy-efficient roofing materials",
+      "position": 50,
+      "searchVolume": 390,
+      "cpc": 1.5099999904632568,
+      "url": "https://bestroofingnow.com/blog/the-best-roofing-materials-for-energy-efficiency-in-north-carolina",
+      "competition": 0.019999999552965164
+    },
+    {
+      "keyword": "gaf vs certainteed shingles",
+      "position": 30,
+      "searchVolume": 390,
+      "cpc": 1.899999976158142,
+      "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+      "competition": 0.20999999344348907
     },
     {
       "keyword": "gaston roofing",
@@ -404,6 +460,14 @@
       "competition": 0.4399999976158142
     },
     {
+      "keyword": "shingles installation cost",
+      "position": 104,
+      "searchVolume": 390,
+      "cpc": 16.18000030517578,
+      "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
+      "competition": 0.4099999964237213
+    },
+    {
       "keyword": "contemporary metal roofing",
       "position": 86,
       "searchVolume": 320,
@@ -415,9 +479,9 @@
       "keyword": "roofing charlotte",
       "position": 89,
       "searchVolume": 320,
-      "cpc": 85.72000122070312,
+      "cpc": 16.670000076293945,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.18000000715255737
+      "competition": 0.17000000178813934
     },
     {
       "keyword": "quality roofers near me",
@@ -503,17 +567,17 @@
       "keyword": "roofer concord nc",
       "position": 51,
       "searchVolume": 210,
-      "cpc": 34.59000015258789,
+      "cpc": 35.220001220703125,
       "url": "https://www.bestroofingnow.com/locations/concord-nc",
-      "competition": 0.7400000095367432
+      "competition": 0.8500000238418579
     },
     {
       "keyword": "roofers concord nc",
       "position": 112,
       "searchVolume": 210,
-      "cpc": 34.59000015258789,
+      "cpc": 35.220001220703125,
       "url": "https://www.bestroofingnow.com/locations/concord-nc",
-      "competition": 0.7400000095367432
+      "competition": 0.8500000238418579
     },
     {
       "keyword": "roofing companies mooresville nc",
@@ -548,12 +612,28 @@
       "competition": 0.20999999344348907
     },
     {
+      "keyword": "best residential roofing contractor",
+      "position": 111,
+      "searchVolume": 170,
+      "cpc": null,
+      "url": "https://www.bestroofingnow.com/locations/lowell-nc",
+      "competition": 0.36000001430511475
+    },
+    {
+      "keyword": "charlotte nc gutter installation",
+      "position": 48,
+      "searchVolume": 170,
+      "cpc": 42.869998931884766,
+      "url": "https://www.bestroofingnow.com/services/gutters",
+      "competition": 0.5099999904632568
+    },
+    {
       "keyword": "cost per square to replace shingle roof",
       "position": 95,
       "searchVolume": 170,
-      "cpc": 3.369999885559082,
+      "cpc": 3.059999942779541,
       "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
-      "competition": 0.5299999713897705
+      "competition": 0.6000000238418579
     },
     {
       "keyword": "cost to install shingle roof per square",
@@ -591,9 +671,9 @@
       "keyword": "how to know when to replace a roof",
       "position": 74,
       "searchVolume": 170,
-      "cpc": 12.670000076293945,
+      "cpc": 6.480000019073486,
       "url": "https://www.bestroofingnow.com/blog/when-should-i-replace-my-roof",
-      "competition": 0.41999998688697815
+      "competition": 0.36000001430511475
     },
     {
       "keyword": "price per square shingles installed",
@@ -607,9 +687,9 @@
       "keyword": "rock hill roofing",
       "position": 73,
       "searchVolume": 170,
-      "cpc": 3.799999952316284,
+      "cpc": 19.8700008392334,
       "url": "https://bestroofingnow.com/locations/rock-hill-sc",
-      "competition": 0.6800000071525574
+      "competition": 0.6100000143051147
     },
     {
       "keyword": "rock hill sc roofers",
@@ -623,9 +703,9 @@
       "keyword": "rock hill sc roofing",
       "position": 76,
       "searchVolume": 170,
-      "cpc": 3.799999952316284,
+      "cpc": 19.8700008392334,
       "url": "https://bestroofingnow.com/locations/rock-hill-sc",
-      "competition": 0.6800000071525574
+      "competition": 0.6100000143051147
     },
     {
       "keyword": "roofing companies gastonia nc",
@@ -660,12 +740,28 @@
       "competition": 0.03999999910593033
     },
     {
+      "keyword": "roofing contractor matthews nc",
+      "position": 76,
+      "searchVolume": 170,
+      "cpc": null,
+      "url": "https://bestroofingnow.com/blog/best-roofing-company-near-me-matthews-nc",
+      "competition": 0.05000000074505806
+    },
+    {
       "keyword": "veteran-owned roofing company",
       "position": 18,
       "searchVolume": 170,
       "cpc": 4.190000057220459,
       "url": "https://bestroofingnow.com/blog/5-unexpected-benefits-of-choosing-a-veteran-owned-roofing-company-in-charlotte",
       "competition": 0.44999998807907104
+    },
+    {
+      "keyword": "best choice roofing greenville nc",
+      "position": 72,
+      "searchVolume": 140,
+      "cpc": 19.889999389648438,
+      "url": "https://www.bestroofingnow.com/locations/pineville-nc",
+      "competition": 0.4300000071525574
     },
     {
       "keyword": "broken roof tiles",
@@ -732,6 +828,22 @@
       "competition": 0.029999999329447746
     },
     {
+      "keyword": "monroe roofing & siding",
+      "position": 64,
+      "searchVolume": 140,
+      "cpc": null,
+      "url": "https://www.bestroofingnow.com/locations/monroe-nc",
+      "competition": 0.009999999776482582
+    },
+    {
+      "keyword": "newton roofing",
+      "position": 92,
+      "searchVolume": 140,
+      "cpc": 89.95999908447266,
+      "url": "https://www.bestroofingnow.com/locations/newton-nc",
+      "competition": 0.5
+    },
+    {
       "keyword": "residential roofer charlotte nc",
       "position": 68,
       "searchVolume": 140,
@@ -743,9 +855,9 @@
       "keyword": "residential roofers charlotte",
       "position": 112,
       "searchVolume": 140,
-      "cpc": 77.79000091552734,
+      "cpc": null,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.05000000074505806
+      "competition": 0.019999999552965164
     },
     {
       "keyword": "residential roofing charlotte nc",
@@ -764,20 +876,52 @@
       "competition": 0.2199999988079071
     },
     {
+      "keyword": "roof repair waxhaw nc",
+      "position": 40,
+      "searchVolume": 140,
+      "cpc": null,
+      "url": "https://www.bestroofingnow.com/locations/waxhaw-nc",
+      "competition": 0.03999999910593033
+    },
+    {
+      "keyword": "roofer near me open now",
+      "position": 73,
+      "searchVolume": 140,
+      "cpc": 46.08000183105469,
+      "url": "https://bestroofingnow.com/",
+      "competition": 0.8600000143051147
+    },
+    {
+      "keyword": "roofers in gastonia nc",
+      "position": 42,
+      "searchVolume": 140,
+      "cpc": 11.720000267028809,
+      "url": "https://www.bestroofingnow.com/locations/gastonia-nc",
+      "competition": 0.11999999731779099
+    },
+    {
+      "keyword": "roofing companies concord nc",
+      "position": 44,
+      "searchVolume": 140,
+      "cpc": 30.139999389648438,
+      "url": "https://www.bestroofingnow.com/locations/concord-nc",
+      "competition": 0.7400000095367432
+    },
+    {
       "keyword": "roofing companies in concord nc",
       "position": 56,
       "searchVolume": 140,
-      "cpc": 60.810001373291016,
+      "cpc": 30.139999389648438,
       "url": "https://www.bestroofingnow.com/locations/concord-nc",
-      "competition": 0.949999988079071
+      "competition": 0.7400000095367432
     },
     {
-      "keyword": "roofing contractor matthews nc",
-      "position": 76,
+      "keyword": "roofing company concord nc",
+      "position": 44,
       "searchVolume": 140,
-      "cpc": null,
-      "url": "https://bestroofingnow.com/blog/best-roofing-company-near-me-matthews-nc",
-      "competition": 0.029999999329447746
+      "cpc": 30.139999389648438,
+      "url": "https://www.bestroofingnow.com/locations/concord-nc",
+      "competition": 0.7400000095367432
     },
     {
       "keyword": "roofing huntersville nc",
@@ -789,10 +933,10 @@
     },
     {
       "keyword": "roofing now",
-      "position": 9,
+      "position": 10,
       "searchVolume": 140,
       "cpc": 15.079999923706055,
-      "url": "https://bestroofingnow.com/",
+      "url": "https://www.bestroofingnow.com/",
       "competition": 0.2199999988079071
     },
     {
@@ -828,6 +972,14 @@
       "competition": 0.9200000166893005
     },
     {
+      "keyword": "skylights before and after",
+      "position": 81,
+      "searchVolume": 140,
+      "cpc": null,
+      "url": "https://www.bestroofingnow.com/blog/timing-is-everything-why-you-should-install-skylights-during-your-next-roof-replacement",
+      "competition": 0.05000000074505806
+    },
+    {
       "keyword": "top most roofing",
       "position": 101,
       "searchVolume": 140,
@@ -852,6 +1004,14 @@
       "competition": 0.029999999329447746
     },
     {
+      "keyword": "when should i replace my roof",
+      "position": 60,
+      "searchVolume": 140,
+      "cpc": 11.3100004196167,
+      "url": "https://www.bestroofingnow.com/blog/when-should-i-replace-my-roof",
+      "competition": 0.47999998927116394
+    },
+    {
       "keyword": "ballantyne roofing",
       "position": 33,
       "searchVolume": 110,
@@ -871,9 +1031,9 @@
       "keyword": "best charlotte roofers",
       "position": 34,
       "searchVolume": 110,
-      "cpc": null,
+      "cpc": 40.7599983215332,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.550000011920929
+      "competition": 0.7599999904632568
     },
     {
       "keyword": "best roofer charlotte",
@@ -916,8 +1076,24 @@
       "competition": 0.05999999865889549
     },
     {
+      "keyword": "flat roof replacement options",
+      "position": 59,
+      "searchVolume": 110,
+      "cpc": 16.3799991607666,
+      "url": "https://bestroofingnow.com/blog/stop-wasting-money-on-flat-roof-replacement-try-these-7-cost-saving-alternatives",
+      "competition": 0.9800000190734863
+    },
+    {
       "keyword": "gutter guard charlotte",
       "position": 44,
+      "searchVolume": 110,
+      "cpc": 83.87999725341797,
+      "url": "https://www.bestroofingnow.com/services/gutter-guards",
+      "competition": 0.8100000023841858
+    },
+    {
+      "keyword": "gutter guard charlotte nc",
+      "position": 45,
       "searchVolume": 110,
       "cpc": 83.87999725341797,
       "url": "https://www.bestroofingnow.com/services/gutter-guards",
@@ -930,6 +1106,14 @@
       "cpc": 5.099999904632568,
       "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
       "competition": 0.8199999928474426
+    },
+    {
+      "keyword": "marvin roofing",
+      "position": 41,
+      "searchVolume": 110,
+      "cpc": 52.20000076293945,
+      "url": "https://www.bestroofingnow.com/locations/marvin-nc",
+      "competition": 0.3199999928474426
     },
     {
       "keyword": "metal roof examples",
@@ -948,20 +1132,36 @@
       "competition": 0.6299999952316284
     },
     {
-      "keyword": "roof inspection charlotte nc",
-      "position": 31,
+      "keyword": "rb farina roofing reviews",
+      "position": 19,
+      "searchVolume": 110,
+      "cpc": 36.209999084472656,
+      "url": "https://bestroofingnow.com/blog/top-rated-roofing-company-excellence-you-can-trust",
+      "competition": 0.2199999988079071
+    },
+    {
+      "keyword": "roof gutter now",
+      "position": 116,
+      "searchVolume": 110,
+      "cpc": 5.670000076293945,
+      "url": "https://bestroofingnow.com/services/gutters",
+      "competition": 0.36000001430511475
+    },
+    {
+      "keyword": "roof inspection charlotte",
+      "position": 35,
       "searchVolume": 110,
       "cpc": 9.6899995803833,
       "url": "https://bestroofingnow.com/contact",
       "competition": 0.10000000149011612
     },
     {
-      "keyword": "roofer near me open now",
-      "position": 73,
+      "keyword": "roof inspection charlotte nc",
+      "position": 31,
       "searchVolume": 110,
-      "cpc": 13.789999961853027,
-      "url": "https://bestroofingnow.com/",
-      "competition": 0.8500000238418579
+      "cpc": 9.6899995803833,
+      "url": "https://bestroofingnow.com/contact",
+      "competition": 0.10000000149011612
     },
     {
       "keyword": "roofing companies huntersville nc",
@@ -972,12 +1172,44 @@
       "competition": 0.03999999910593033
     },
     {
+      "keyword": "roofing companies lancaster sc",
+      "position": 17,
+      "searchVolume": 110,
+      "cpc": 63.43000030517578,
+      "url": "https://bestroofingnow.com/locations/lancaster-sc",
+      "competition": 0.6499999761581421
+    },
+    {
+      "keyword": "roofing companies with payment plans near me no credit check",
+      "position": 109,
+      "searchVolume": 110,
+      "cpc": 21.649999618530273,
+      "url": "https://www.bestroofingnow.com/roof-financing-charlotte-nc",
+      "competition": 0.949999988079071
+    },
+    {
       "keyword": "tile roof vs metal roof cost",
       "position": 106,
       "searchVolume": 110,
       "cpc": 11.390000343322754,
       "url": "https://www.bestroofingnow.com/compare/metal-vs-tile",
       "competition": 0.6100000143051147
+    },
+    {
+      "keyword": "york roofing companies",
+      "position": 74,
+      "searchVolume": 110,
+      "cpc": 7.329999923706055,
+      "url": "https://www.bestroofingnow.com/locations/york-sc",
+      "competition": 0.23000000417232513
+    },
+    {
+      "keyword": "york roofing company",
+      "position": 106,
+      "searchVolume": 110,
+      "cpc": 7.329999923706055,
+      "url": "https://www.bestroofingnow.com/locations/york-sc",
+      "competition": 0.23000000417232513
     },
     {
       "keyword": "belmont roofing",
@@ -1023,9 +1255,9 @@
       "keyword": "cost of shingling a house",
       "position": 73,
       "searchVolume": 90,
-      "cpc": 7.949999809265137,
+      "cpc": 25.989999771118164,
       "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
-      "competition": 0.49000000953674316
+      "competition": 0.5600000023841858
     },
     {
       "keyword": "cost to shingle house",
@@ -1036,6 +1268,14 @@
       "competition": 0.5600000023841858
     },
     {
+      "keyword": "flat roof repair charlotte nc",
+      "position": 85,
+      "searchVolume": 90,
+      "cpc": null,
+      "url": "https://bestroofingnow.com/blog/the-ultimate-guide-to-flat-roof-replacement-everything-charlotte-businesses-need-to-succeed",
+      "competition": 0.009999999776482582
+    },
+    {
       "keyword": "home best roofing",
       "position": 109,
       "searchVolume": 90,
@@ -1044,12 +1284,20 @@
       "competition": 0.11999999731779099
     },
     {
+      "keyword": "how often should you have your roof replaced",
+      "position": 86,
+      "searchVolume": 90,
+      "cpc": 33.290000915527344,
+      "url": "https://www.bestroofingnow.com/blog/when-should-i-replace-my-roof",
+      "competition": 0.15000000596046448
+    },
+    {
       "keyword": "metal roof patterns",
       "position": 92,
       "searchVolume": 90,
-      "cpc": 2.7200000286102295,
+      "cpc": 10.140000343322754,
       "url": "https://bestroofingnow.com/blog/modern-metal-roof-styles-photo-catalog-color-guide-3",
-      "competition": 0.5099999904632568
+      "competition": 0.7200000286102295
     },
     {
       "keyword": "metal roofing designs for houses",
@@ -1060,6 +1308,22 @@
       "competition": 0.8899999856948853
     },
     {
+      "keyword": "new roof $99 a month no credit check near me",
+      "position": 32,
+      "searchVolume": 90,
+      "cpc": 41.5,
+      "url": "https://www.bestroofingnow.com/roof-financing-charlotte-nc",
+      "competition": 1
+    },
+    {
+      "keyword": "owens corning vs gaf vs certainteed",
+      "position": 89,
+      "searchVolume": 90,
+      "cpc": 3.630000114440918,
+      "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+      "competition": 0.25999999046325684
+    },
+    {
       "keyword": "price to shingle a house",
       "position": 58,
       "searchVolume": 90,
@@ -1068,28 +1332,36 @@
       "competition": 0.5600000023841858
     },
     {
-      "keyword": "roof gutter now",
-      "position": 116,
+      "keyword": "roof repair huntersville",
+      "position": 41,
       "searchVolume": 90,
-      "cpc": null,
-      "url": "https://bestroofingnow.com/services/gutters",
-      "competition": 0.6000000238418579
-    },
-    {
-      "keyword": "roof inspection charlotte",
-      "position": 35,
-      "searchVolume": 90,
-      "cpc": null,
-      "url": "https://bestroofingnow.com/contact",
-      "competition": 0.07999999821186066
+      "cpc": 110.23999786376953,
+      "url": "https://www.bestroofingnow.com/locations/huntersville-nc",
+      "competition": 0.12999999523162842
     },
     {
       "keyword": "roof repair huntersville nc",
       "position": 81,
       "searchVolume": 90,
-      "cpc": 44.970001220703125,
+      "cpc": 110.23999786376953,
       "url": "https://bestroofingnow.com/blog/roofing-company-near-me-huntersville-nc",
-      "competition": 0.10999999940395355
+      "competition": 0.12999999523162842
+    },
+    {
+      "keyword": "roof repair indian trail nc",
+      "position": 32,
+      "searchVolume": 90,
+      "cpc": null,
+      "url": "https://www.bestroofingnow.com/locations/indian-trail-nc",
+      "competition": 0.009999999776482582
+    },
+    {
+      "keyword": "roof repair matthews nc",
+      "position": 45,
+      "searchVolume": 90,
+      "cpc": 28.829999923706055,
+      "url": "https://www.bestroofingnow.com/locations/matthews-nc",
+      "competition": 0.05999999865889549
     },
     {
       "keyword": "roof repair rock hill",
@@ -1108,14 +1380,6 @@
       "competition": 0.6200000047683716
     },
     {
-      "keyword": "roofers in shelby nc",
-      "position": 49,
-      "searchVolume": 90,
-      "cpc": 26.280000686645508,
-      "url": "https://bestroofingnow.com/locations/shelby-nc",
-      "competition": 0.8299999833106995
-    },
-    {
       "keyword": "roofers monroe nc",
       "position": 64,
       "searchVolume": 90,
@@ -1132,12 +1396,44 @@
       "competition": 0.09000000357627869
     },
     {
+      "keyword": "roofing repair rock hill sc",
+      "position": 61,
+      "searchVolume": 90,
+      "cpc": 8.649999618530273,
+      "url": "https://www.bestroofingnow.com/locations/rock-hill-sc",
+      "competition": 0.6200000047683716
+    },
+    {
+      "keyword": "roofing waxhaw nc",
+      "position": 24,
+      "searchVolume": 90,
+      "cpc": null,
+      "url": "https://www.bestroofingnow.com/locations/waxhaw-nc",
+      "competition": 0.05000000074505806
+    },
+    {
       "keyword": "rubber flat roof cost",
       "position": 113,
       "searchVolume": 90,
       "cpc": 41.88999938964844,
       "url": "https://www.bestroofingnow.com/materials/flat-roofing",
       "competition": 0.15000000596046448
+    },
+    {
+      "keyword": "terrell roofing",
+      "position": 21,
+      "searchVolume": 90,
+      "cpc": 5.659999847412109,
+      "url": "https://www.bestroofingnow.com/locations/terrell-nc",
+      "competition": 0.20999999344348907
+    },
+    {
+      "keyword": "waynco roofing",
+      "position": 79,
+      "searchVolume": 90,
+      "cpc": 0.25999999046325684,
+      "url": "https://www.bestroofingnow.com/",
+      "competition": 0.05999999865889549
     },
     {
       "keyword": "when to get new roof",
@@ -1159,7 +1455,7 @@
       "keyword": "best choice roofing charlotte nc",
       "position": 32,
       "searchVolume": 70,
-      "cpc": 0.3199999928474426,
+      "cpc": 2.759999990463257,
       "url": "https://bestroofingnow.com/",
       "competition": 0.36000001430511475
     },
@@ -1183,9 +1479,9 @@
       "keyword": "charlotte's best roofing and gutters",
       "position": 33,
       "searchVolume": 70,
-      "cpc": 1.440000057220459,
+      "cpc": null,
       "url": "https://bestroofingnow.com/blog/charlottes-best-roofing-co-your-guide-to-a-stronger-safer-roof",
-      "competition": 0.2800000011920929
+      "competition": 0.03999999910593033
     },
     {
       "keyword": "cleaning gutters safely",
@@ -1207,9 +1503,9 @@
       "keyword": "different colors of metal roofing",
       "position": 120,
       "searchVolume": 70,
-      "cpc": 1.600000023841858,
+      "cpc": 3.2200000286102295,
       "url": "https://bestroofingnow.com/blog/modern-metal-roof-styles-photo-catalog-color-guide",
-      "competition": 0.7699999809265137
+      "competition": 0.7400000095367432
     },
     {
       "keyword": "do insurance companies cover metal roofs",
@@ -1228,12 +1524,20 @@
       "competition": 0.029999999329447746
     },
     {
-      "keyword": "flat roof repair charlotte nc",
-      "position": 85,
+      "keyword": "flat roof replacement charlotte nc",
+      "position": 30,
       "searchVolume": 70,
       "cpc": null,
       "url": "https://bestroofingnow.com/blog/the-ultimate-guide-to-flat-roof-replacement-everything-charlotte-businesses-need-to-succeed",
       "competition": 0.029999999329447746
+    },
+    {
+      "keyword": "gable vent repair near me",
+      "position": 77,
+      "searchVolume": 70,
+      "cpc": 43.959999084472656,
+      "url": "https://www.bestroofingnow.com/specialty-services",
+      "competition": 0.9900000095367432
     },
     {
       "keyword": "gutter cleaning safety",
@@ -1242,6 +1546,14 @@
       "cpc": 0.33000001311302185,
       "url": "https://bestroofingnow.com/blog/how-to-clean-your-gutters-without-risking-a-trip-to-the-er-safety-tools-steps",
       "competition": 0.7200000286102295
+    },
+    {
+      "keyword": "how do i know i need a new roof",
+      "position": 103,
+      "searchVolume": 70,
+      "cpc": 4.409999847412109,
+      "url": "https://www.bestroofingnow.com/blog/when-should-i-replace-my-roof",
+      "competition": 0.5899999737739563
     },
     {
       "keyword": "how much are shingles per square foot",
@@ -1255,7 +1567,7 @@
       "keyword": "how much is a square of shingles cost",
       "position": 101,
       "searchVolume": 70,
-      "cpc": 9.720000267028809,
+      "cpc": 7.25,
       "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
       "competition": 0.7400000095367432
     },
@@ -1359,9 +1671,9 @@
       "keyword": "roofing monroe nc",
       "position": 45,
       "searchVolume": 70,
-      "cpc": null,
+      "cpc": 52.27000045776367,
       "url": "https://bestroofingnow.com/locations/monroe-nc",
-      "competition": 0.05999999865889549
+      "competition": 0.15000000596046448
     },
     {
       "keyword": "roofing newton",
@@ -1380,12 +1692,28 @@
       "competition": 0.12999999523162842
     },
     {
+      "keyword": "sustainable roofing products",
+      "position": 101,
+      "searchVolume": 70,
+      "cpc": null,
+      "url": "https://cms.bestroofingnow.com/eco-friendly-roofing-materials/",
+      "competition": 0.019999999552965164
+    },
+    {
       "keyword": "sustainable roofing solutions",
       "position": 69,
       "searchVolume": 70,
       "cpc": null,
       "url": "https://bestroofingnow.com/blog/eco-friendly-roofing-solutions-how-sustainable-materials-can-save-you-money-and-protect-the-planet",
       "competition": 0.029999999329447746
+    },
+    {
+      "keyword": "sustainable shingles",
+      "position": 104,
+      "searchVolume": 70,
+      "cpc": null,
+      "url": "https://cms.bestroofingnow.com/eco-friendly-roofing-materials/",
+      "competition": 0.11999999731779099
     },
     {
       "keyword": "when should roofs be replaced",
@@ -1401,7 +1729,7 @@
       "searchVolume": 70,
       "cpc": null,
       "url": "https://bestroofingnow.com/blog/find-your-trusted-local-roofing-company-today",
-      "competition": 0.3100000023841858
+      "competition": 0.18000000715255737
     },
     {
       "keyword": "albemarle roofing",
@@ -1415,9 +1743,9 @@
       "keyword": "average cost of a square of shingles",
       "position": 89,
       "searchVolume": 50,
-      "cpc": 3.549999952316284,
+      "cpc": 7.46999979019165,
       "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
-      "competition": 0.9599999785423279
+      "competition": 0.5600000023841858
     },
     {
       "keyword": "best choice roofing concord",
@@ -1431,9 +1759,9 @@
       "keyword": "best roofs lenoir city tn",
       "position": 86,
       "searchVolume": 50,
-      "cpc": 15.930000305175781,
+      "cpc": 22.959999084472656,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.6600000262260437
+      "competition": 0.7400000095367432
     },
     {
       "keyword": "carolina storm roofing",
@@ -1444,28 +1772,28 @@
       "competition": 0.07999999821186066
     },
     {
-      "keyword": "charlotte home repair",
-      "position": 106,
+      "keyword": "charlotte nc roof repair",
+      "position": 112,
       "searchVolume": 50,
-      "cpc": 10.170000076293945,
-      "url": "https://bestroofingnow.com/services",
-      "competition": 0.8899999856948853
+      "cpc": 376.260009765625,
+      "url": "https://bestroofingnow.com/",
+      "competition": 0.11999999731779099
     },
     {
       "keyword": "commercial roofer charlotte nc",
       "position": 47,
       "searchVolume": 50,
-      "cpc": 44.810001373291016,
+      "cpc": null,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.10999999940395355
+      "competition": 0.07000000029802322
     },
     {
       "keyword": "commercial roofers charlotte nc",
       "position": 56,
       "searchVolume": 50,
-      "cpc": 44.810001373291016,
+      "cpc": null,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.10999999940395355
+      "competition": 0.07000000029802322
     },
     {
       "keyword": "commercial roofers in charlotte nc",
@@ -1481,63 +1809,47 @@
       "searchVolume": 50,
       "cpc": null,
       "url": "https://bestroofingnow.com/locations/statesville-nc",
-      "competition": 0.3400000035762787
+      "competition": 0.5600000023841858
     },
     {
       "keyword": "concord roofing company",
       "position": 103,
       "searchVolume": 50,
-      "cpc": 170.1699981689453,
+      "cpc": 34.540000915527344,
       "url": "https://bestroofingnow.com/locations/concord-nc",
-      "competition": 0.6899999976158142
+      "competition": 0.5199999809265137
     },
     {
       "keyword": "davidson roofing reviews",
       "position": 60,
       "searchVolume": 50,
-      "cpc": null,
+      "cpc": 28.8799991607666,
       "url": "https://bestroofingnow.com/locations/davidson-nc",
-      "competition": 0.07000000029802322
-    },
-    {
-      "keyword": "do roof coatings work",
-      "position": 50,
-      "searchVolume": 50,
-      "cpc": 3.75,
-      "url": "https://bestroofingnow.com/blog/the-truth-about-roof-coatings-can-homeowners-really-apply-them-themselves",
-      "competition": 0.3499999940395355
+      "competition": 0.1899999976158142
     },
     {
       "keyword": "expert roofing solutions",
       "position": 30,
       "searchVolume": 50,
-      "cpc": null,
+      "cpc": 4.570000171661377,
       "url": "https://bestroofingnow.com/expert-roofing-solutions-for-your-home/",
-      "competition": 0.2199999988079071
-    },
-    {
-      "keyword": "flat roof replacement charlotte nc",
-      "position": 30,
-      "searchVolume": 50,
-      "cpc": null,
-      "url": "https://bestroofingnow.com/blog/the-ultimate-guide-to-flat-roof-replacement-everything-charlotte-businesses-need-to-succeed",
-      "competition": 0.019999999552965164
+      "competition": 0.12999999523162842
     },
     {
       "keyword": "gaf vs owens corning vs certainteed",
       "position": 72,
       "searchVolume": 50,
-      "cpc": 9.170000076293945,
+      "cpc": 0.23000000417232513,
       "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
-      "competition": 0.15000000596046448
+      "competition": 0.17000000178813934
     },
     {
       "keyword": "gutter company charlotte nc",
       "position": 114,
       "searchVolume": 50,
-      "cpc": 46.779998779296875,
+      "cpc": 88.80999755859375,
       "url": "https://www.bestroofingnow.com/services/gutter-installation",
-      "competition": 0.9599999785423279
+      "competition": 0.9300000071525574
     },
     {
       "keyword": "how much to install roof shingles",
@@ -1583,9 +1895,9 @@
       "keyword": "metal roofing monroe nc",
       "position": 53,
       "searchVolume": 50,
-      "cpc": 34.52000045776367,
+      "cpc": 6.779999732971191,
       "url": "https://www.bestroofingnow.com/services/metal-roofing",
-      "competition": 0.05000000074505806
+      "competition": 0.14000000059604645
     },
     {
       "keyword": "most popular metal roof colors",
@@ -1599,9 +1911,9 @@
       "keyword": "north carolina roofing codes",
       "position": 111,
       "searchVolume": 50,
-      "cpc": 9.270000457763672,
+      "cpc": 11.680000305175781,
       "url": "https://bestroofingnow.com/blog/the-role-of-roofing-certifications-in-hiring-reliable-roof-contractors",
-      "competition": 0.11999999731779099
+      "competition": 0.12999999523162842
     },
     {
       "keyword": "preferred roofing & seamless guttering",
@@ -1623,17 +1935,17 @@
       "keyword": "residential roofing companies charlotte nc",
       "position": 85,
       "searchVolume": 50,
-      "cpc": 104,
+      "cpc": 35.459999084472656,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.05000000074505806
+      "competition": 0.10000000149011612
     },
     {
       "keyword": "residential roofing company charlotte nc",
       "position": 95,
       "searchVolume": 50,
-      "cpc": 104,
+      "cpc": 35.459999084472656,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.05000000074505806
+      "competition": 0.10000000149011612
     },
     {
       "keyword": "roof drain crickets",
@@ -1687,9 +1999,9 @@
       "keyword": "roofers fort mill sc",
       "position": 67,
       "searchVolume": 50,
-      "cpc": 5.090000152587891,
+      "cpc": 13.819999694824219,
       "url": "https://bestroofingnow.com/locations/fort-mill-sc",
-      "competition": 0.800000011920929
+      "competition": 0.6000000238418579
     },
     {
       "keyword": "roofers in concord nc",
@@ -1703,9 +2015,9 @@
       "keyword": "roofing companies albemarle nc",
       "position": 40,
       "searchVolume": 50,
-      "cpc": 14.079999923706055,
+      "cpc": 27.290000915527344,
       "url": "https://bestroofingnow.com/locations/albemarle-nc",
-      "competition": 0.1599999964237213
+      "competition": 0.09000000357627869
     },
     {
       "keyword": "roofing companies statesville nc",
@@ -1745,15 +2057,23 @@
       "searchVolume": 50,
       "cpc": null,
       "url": "https://bestroofingnow.com/why-you-should-call-your-roofer-before-your-insurance-company/",
-      "competition": 0.27000001072883606
+      "competition": 0.1599999964237213
     },
     {
       "keyword": "time to replace roof",
       "position": 95,
       "searchVolume": 50,
-      "cpc": 4.010000228881836,
+      "cpc": null,
       "url": "https://bestroofingnow.com/blog/when-should-i-replace-my-roof",
-      "competition": 0.30000001192092896
+      "competition": 0.3700000047683716
+    },
+    {
+      "keyword": "warehouse roof repairs",
+      "position": 71,
+      "searchVolume": 50,
+      "cpc": 17.360000610351562,
+      "url": "https://www.bestroofingnow.com/warehouse-roofing-charlotte-nc",
+      "competition": 0.5299999713897705
     },
     {
       "keyword": "what does a metal roof look like",
@@ -1783,9 +2103,9 @@
       "keyword": "bee roofing york sc",
       "position": 47,
       "searchVolume": 40,
-      "cpc": 3.7200000286102295,
+      "cpc": 22.860000610351562,
       "url": "https://bestroofingnow.com/locations/rock-hill-sc",
-      "competition": 0.3799999952316284
+      "competition": 0.38999998569488525
     },
     {
       "keyword": "best choice roofing charlotte",
@@ -1807,9 +2127,9 @@
       "keyword": "best choice roofing rock hill",
       "position": 37,
       "searchVolume": 40,
-      "cpc": 7.880000114440918,
+      "cpc": 4.840000152587891,
       "url": "https://bestroofingnow.com/locations/rock-hill-sc",
-      "competition": 0.38999998569488525
+      "competition": 0.5199999809265137
     },
     {
       "keyword": "bitumen vs epdm",
@@ -1817,15 +2137,15 @@
       "searchVolume": 40,
       "cpc": null,
       "url": "https://bestroofingnow.com/tpo-vs-epdm-vs-modified-bitumen-the-complete-guide-to-commercial-flat-roof-replacement-in-2025/",
-      "competition": 0.009999999776482582
+      "competition": 0
     },
     {
-      "keyword": "charlotte nc roof repair",
-      "position": 112,
+      "keyword": "charlotte home repair",
+      "position": 106,
       "searchVolume": 40,
-      "cpc": 67.13999938964844,
-      "url": "https://bestroofingnow.com/",
-      "competition": 0.05999999865889549
+      "cpc": 4.239999771118164,
+      "url": "https://bestroofingnow.com/services",
+      "competition": 0.7300000190734863
     },
     {
       "keyword": "charlotte siding companies",
@@ -1841,7 +2161,7 @@
       "searchVolume": 40,
       "cpc": null,
       "url": "https://bestroofingnow.com/locations/charlotte-nc",
-      "competition": 0.28999999165534973
+      "competition": 0.550000011920929
     },
     {
       "keyword": "commercial roof repair charlotte nc",
@@ -1850,6 +2170,14 @@
       "cpc": 31.350000381469727,
       "url": "https://bestroofingnow.com/commercial-roof-repairs/",
       "competition": 0.05999999865889549
+    },
+    {
+      "keyword": "do roof coatings work",
+      "position": 50,
+      "searchVolume": 40,
+      "cpc": 28.670000076293945,
+      "url": "https://bestroofingnow.com/blog/the-truth-about-roof-coatings-can-homeowners-really-apply-them-themselves",
+      "competition": 0.4099999964237213
     },
     {
       "keyword": "energy star certified roofing materials",
@@ -1879,17 +2207,17 @@
       "keyword": "good roofing and restoration",
       "position": 91,
       "searchVolume": 40,
-      "cpc": 5.139999866485596,
+      "cpc": 21.549999237060547,
       "url": "https://bestroofingnow.com/locations/charlotte-nc/eastover",
-      "competition": 0.4099999964237213
+      "competition": 0.3400000035762787
     },
     {
       "keyword": "harrisburg roofing companies",
       "position": 92,
       "searchVolume": 40,
-      "cpc": 59.560001373291016,
+      "cpc": null,
       "url": "https://bestroofingnow.com/locations/harrisburg-nc",
-      "competition": 1
+      "competition": 0.5199999809265137
     },
     {
       "keyword": "harrisburg roofing contractors",
@@ -1929,15 +2257,15 @@
       "searchVolume": 40,
       "cpc": null,
       "url": "https://bestroofingnow.com/blog/new-homeowner-5-roofing-facts-you-must-know-3",
-      "competition": 0
+      "competition": 0.03999999910593033
     },
     {
       "keyword": "is roof rejuvenation worth it",
       "position": 41,
       "searchVolume": 40,
-      "cpc": 46.58000183105469,
+      "cpc": 2.8499999046325684,
       "url": "https://bestroofingnow.com/blog/does-roof-rejuvenation-really-work-charlotte-roofing-companies-reveal-the-truth",
-      "competition": 0.28999999165534973
+      "competition": 0.2199999988079071
     },
     {
       "keyword": "matthews roofing company",
@@ -1975,9 +2303,9 @@
       "keyword": "modern roofing rock hill sc",
       "position": 73,
       "searchVolume": 40,
-      "cpc": 2.549999952316284,
+      "cpc": 5.269999980926514,
       "url": "https://bestroofingnow.com/locations/rock-hill-sc",
-      "competition": 0.44999998807907104
+      "competition": 0.38999998569488525
     },
     {
       "keyword": "modified bitumen roof vs epdm",
@@ -2017,7 +2345,7 @@
       "searchVolume": 40,
       "cpc": null,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.009999999776482582
+      "competition": 0.019999999552965164
     },
     {
       "keyword": "roof leak repair charlotte nc",
@@ -2121,7 +2449,7 @@
       "searchVolume": 40,
       "cpc": null,
       "url": "https://cms.bestroofingnow.com/presidential/",
-      "competition": 0
+      "competition": 0.029999999329447746
     },
     {
       "keyword": "when to replace a roof on a house",
@@ -2145,7 +2473,7 @@
       "searchVolume": 30,
       "cpc": null,
       "url": "https://bestroofingnow.com/belmont/",
-      "competition": 0.10999999940395355
+      "competition": 0.17000000178813934
     },
     {
       "keyword": "best roofing llc",
@@ -2161,7 +2489,7 @@
       "searchVolume": 30,
       "cpc": null,
       "url": "https://bestroofingnow.com/",
-      "competition": 0.5099999904632568
+      "competition": 0.44999998807907104
     },
     {
       "keyword": "choosing a roofing contractor",
@@ -2170,14 +2498,6 @@
       "cpc": null,
       "url": "https://bestroofingnow.com/choosing-the-right-roofing-contractor-expert-tips/",
       "competition": 0.23999999463558197
-    },
-    {
-      "keyword": "flat roof cost vs pitched roof cost",
-      "position": 64,
-      "searchVolume": 30,
-      "cpc": null,
-      "url": "https://bestroofingnow.com/blog/flat-vs-pitched-roofs-which-is-right-for-your-business-in-charlotte",
-      "competition": 0.1599999964237213
     },
     {
       "keyword": "handyman indian land sc",
@@ -2225,7 +2545,7 @@
       "searchVolume": 30,
       "cpc": null,
       "url": "https://bestroofingnow.com/locations/hickory-nc",
-      "competition": 0.03999999910593033
+      "competition": 0.11999999731779099
     },
     {
       "keyword": "metal roofing terminology with pictures",
@@ -2233,7 +2553,7 @@
       "searchVolume": 30,
       "cpc": null,
       "url": "https://bestroofingnow.com/blog/modern-metal-roof-styles-photo-catalog-color-guide-2",
-      "competition": 0.009999999776482582
+      "competition": 0.03999999910593033
     },
     {
       "keyword": "mod bit vs tpo",
@@ -2279,7 +2599,7 @@
       "keyword": "roof repair concord nc",
       "position": 50,
       "searchVolume": 30,
-      "cpc": 113.45999908447266,
+      "cpc": 174.91000366210938,
       "url": "https://bestroofingnow.com/locations/concord-nc",
       "competition": 0.9599999785423279
     },
@@ -2295,9 +2615,9 @@
       "keyword": "roofers in rock hill sc",
       "position": 79,
       "searchVolume": 30,
-      "cpc": 83.43000030517578,
+      "cpc": null,
       "url": "https://bestroofingnow.com/locations/rock-hill-sc",
-      "competition": 1
+      "competition": 0.1599999964237213
     },
     {
       "keyword": "roofers kannapolis nc",
@@ -2319,9 +2639,9 @@
       "keyword": "roofing companies lincolnton nc",
       "position": 45,
       "searchVolume": 30,
-      "cpc": null,
+      "cpc": 14.319999694824219,
       "url": "https://bestroofingnow.com/locations/lincolnton-nc",
-      "competition": 1
+      "competition": 0.9100000262260437
     },
     {
       "keyword": "roofing contractors concord nc",
@@ -2343,9 +2663,9 @@
       "keyword": "roofing kannapolis nc",
       "position": 45,
       "searchVolume": 30,
-      "cpc": 37.52000045776367,
+      "cpc": null,
       "url": "https://bestroofingnow.com/locations/kannapolis-nc",
-      "competition": 0.8899999856948853
+      "competition": 0.9200000166893005
     },
     {
       "keyword": "roofing york sc",
@@ -2383,9 +2703,9 @@
       "keyword": "siding installation charlotte nc",
       "position": 101,
       "searchVolume": 30,
-      "cpc": 5.110000133514404,
+      "cpc": null,
       "url": "https://bestroofingnow.com/services/siding",
-      "competition": 0.36000001430511475
+      "competition": 0.12999999523162842
     },
     {
       "keyword": "vinyl siding repair charlotte nc",
@@ -2415,9 +2735,17 @@
       "keyword": "when should you get a new roof",
       "position": 110,
       "searchVolume": 30,
-      "cpc": 15.579999923706055,
+      "cpc": null,
       "url": "https://bestroofingnow.com/blog/when-should-i-replace-my-roof",
-      "competition": 0.550000011920929
+      "competition": 0.4099999964237213
+    },
+    {
+      "keyword": "flat roof cost vs pitched roof cost",
+      "position": 64,
+      "searchVolume": 20,
+      "cpc": 24.040000915527344,
+      "url": "https://bestroofingnow.com/blog/flat-vs-pitched-roofs-which-is-right-for-your-business-in-charlotte",
+      "competition": 0.27000001072883606
     },
     {
       "keyword": "roofers in fort mill sc",
@@ -2428,6 +2756,14 @@
       "competition": 0.9800000190734863
     },
     {
+      "keyword": "roofers in shelby nc",
+      "position": 49,
+      "searchVolume": 20,
+      "cpc": 136.5,
+      "url": "https://bestroofingnow.com/locations/shelby-nc",
+      "competition": 0.550000011920929
+    },
+    {
       "keyword": "residential roofers charlotte nc",
       "position": 112,
       "searchVolume": 10,
@@ -2436,140 +2772,11 @@
       "competition": null
     }
   ],
-  "backlinks": {
-    "referringDomains": 107,
-    "referringIPs": 84,
-    "referringSubnets": 81,
-    "brokenBacklinks": 0,
-    "referringDomainsNofollow": 47,
-    "domainRank": 195,
-    "topReferringDomains": [
-      {
-        "domain": "projectmapit.com",
-        "rank": 154,
-        "backlinks": 35,
-        "firstSeen": "2023-01-07 04:25:57 +00:00"
-      },
-      {
-        "domain": "pinterest.com",
-        "rank": 147,
-        "backlinks": 1,
-        "firstSeen": "2025-09-13 03:21:55 +00:00"
-      },
-      {
-        "domain": "lakenormanchamber.org",
-        "rank": 61,
-        "backlinks": 12,
-        "firstSeen": "2025-09-07 09:26:29 +00:00"
-      },
-      {
-        "domain": "certainteed.com",
-        "rank": 55,
-        "backlinks": 4,
-        "firstSeen": "2026-02-04 04:36:16 +00:00"
-      },
-      {
-        "domain": "unitedstatesbd.com",
-        "rank": 53,
-        "backlinks": 88,
-        "firstSeen": "2025-06-12 15:05:52 +00:00"
-      },
-      {
-        "domain": "schooleymitchell.com",
-        "rank": 52,
-        "backlinks": 12,
-        "firstSeen": "2024-09-11 15:36:21 +00:00"
-      },
-      {
-        "domain": "falconroofing.net",
-        "rank": 43,
-        "backlinks": 1,
-        "firstSeen": "2026-02-06 16:16:16 +00:00"
-      },
-      {
-        "domain": "certainteed.ca",
-        "rank": 34,
-        "backlinks": 4,
-        "firstSeen": "2026-02-04 04:37:00 +00:00"
-      },
-      {
-        "domain": "ripcityroofcleaning.com",
-        "rank": 29,
-        "backlinks": 5,
-        "firstSeen": "2025-12-05 17:18:29 +00:00"
-      },
-      {
-        "domain": "dynico.net",
-        "rank": 16,
-        "backlinks": 1,
-        "firstSeen": "2023-11-12 16:45:08 +00:00"
-      },
-      {
-        "domain": "growthzoneapp.com",
-        "rank": 14,
-        "backlinks": 29,
-        "firstSeen": "2023-10-10 17:44:01 +00:00"
-      },
-      {
-        "domain": "redmooseexterior.cleaning",
-        "rank": 7,
-        "backlinks": 1,
-        "firstSeen": "2026-02-03 09:50:55 +00:00"
-      },
-      {
-        "domain": "village.do",
-        "rank": 7,
-        "backlinks": 1,
-        "firstSeen": "2025-04-23 09:20:23 +00:00"
-      },
-      {
-        "domain": "oneallratings.com",
-        "rank": 7,
-        "backlinks": 2,
-        "firstSeen": "2025-02-23 17:07:28 +00:00"
-      },
-      {
-        "domain": "actionroofingaustin.com",
-        "rank": 3,
-        "backlinks": 1,
-        "firstSeen": "2023-09-16 02:34:25 +00:00"
-      },
-      {
-        "domain": "chattanoogaroofingco.com",
-        "rank": 2,
-        "backlinks": 1,
-        "firstSeen": "2023-11-23 11:41:53 +00:00"
-      },
-      {
-        "domain": "ready.pro",
-        "rank": 0,
-        "backlinks": 1,
-        "firstSeen": "2026-02-03 04:11:43 +00:00"
-      },
-      {
-        "domain": "buzzshrink.website",
-        "rank": 0,
-        "backlinks": 1,
-        "firstSeen": "2026-01-30 16:19:09 +00:00"
-      },
-      {
-        "domain": "screenshots.wiki",
-        "rank": 0,
-        "backlinks": 1,
-        "firstSeen": "2026-01-28 23:58:37 +00:00"
-      },
-      {
-        "domain": "way2check.cv",
-        "rank": 0,
-        "backlinks": 1,
-        "firstSeen": "2026-01-28 23:34:28 +00:00"
-      }
-    ]
-  },
+  "backlinks": null,
   "competitors": [
     {
       "domain": "roofmaxx.com",
-      "totalKeywords": 8318,
+      "totalKeywords": 8297,
       "topKeywords": [
         {
           "keyword": "alternative roofing materials",
@@ -2594,7 +2801,7 @@
         {
           "keyword": "aluminum drip edge sizes",
           "position": 4,
-          "searchVolume": 40
+          "searchVolume": 20
         }
       ]
     },

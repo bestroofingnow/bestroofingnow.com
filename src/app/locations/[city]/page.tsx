@@ -29,6 +29,7 @@ import ProjectMap from '@/components/projects/ProjectMap';
 import { getProjectMarkersForCity } from '@/lib/project-data';
 import { LocationProjectGallery } from '@/components/ui/LocationProjectGallery';
 import { SITE_CONFIG, LOCATIONS, LAKE_NORMAN_VOICE_FAQS, LAKE_NORMAN_PEOPLE_ALSO_ASK, CHARLOTTE_VOICE_FAQS, CHARLOTTE_PEOPLE_ALSO_ASK } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES, LOCATION_HERO_IMAGES } from '@/lib/images';
 import { generateLocationFAQs, generateNearMeVoiceSearchFAQs } from '@/lib/faqs';
 import { slugifyNeighborhood, getNeighborhoodsByCity } from '@/lib/neighborhoods';
@@ -626,12 +627,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     : `Top Roofer ${location.city} ${location.state} | 5-Star`;
 
   const description = isCharlotte
-    ? `Looking for a trusted roofing company in Charlotte NC? Best Roofing Now is a 5-star rated, veteran-owned roofer with 500+ roofs installed. BBB A+ rated. Free inspections, storm damage experts. Call (704) 605-6047.`
+    ? `5-star, veteran-owned roofer in Charlotte NC. Roof repair and replacement, storm damage help, and free inspections. Call (704) 605-6047.`
     : isLakeNormanPage
-    ? `Lake Norman's trusted waterfront roofing company. Serving Cornelius, Davidson, Huntersville, Mooresville & Denver. Wind-resistant installations, 5-star rated, Chamber member. Free inspections. (704) 605-6047.`
+    ? `Waterfront roofing company serving Lake Norman. Cornelius, Davidson, Huntersville, Mooresville and Denver. 5-star rated. Free inspections. (704) 605-6047.`
     : isLakeNormanArea
-    ? `Looking for a roofing company in ${location.city}? Best Roofing Now serves the Lake Norman area with 5-star rated service. Just ${location.distance} miles from our Charlotte HQ. Free estimates! (704) 605-6047.`
-    : `Best Roofing Now is the top-rated roofing company serving ${location.city}, ${location.state}. Just ${location.distance} miles from our Charlotte headquarters. Roof repair, replacement & emergency services. Free estimates!`;
+    ? `5-star roofing company in ${location.city}. Serving the Lake Norman area. ${location.distance} miles from our Charlotte HQ. Free estimates. (704) 605-6047.`
+    : `Top-rated roofing company in ${location.city}, ${location.state}. Roof repair and replacement, emergency service, and free estimates. Call (704) 605-6047.`;
 
   const keywords = isCharlotte
     ? [
@@ -844,11 +845,7 @@ export default async function LocationPage({ params }: PageProps) {
                   },
                 },
               })),
-              author: {
-                '@type': 'RoofingContractor',
-                '@id': `${SITE_CONFIG.url}/#organization`,
-                name: SITE_CONFIG.name,
-              },
+              author: getRoofingContractorIdentity(),
               about: {
                 '@type': 'Place',
                 name: 'Lake Norman, North Carolina',
@@ -884,11 +881,7 @@ export default async function LocationPage({ params }: PageProps) {
                   },
                 },
               })),
-              author: {
-                '@type': 'RoofingContractor',
-                '@id': `${SITE_CONFIG.url}/#organization`,
-                name: SITE_CONFIG.name,
-              },
+              author: getRoofingContractorIdentity(),
               about: {
                 '@type': 'Place',
                 name: 'Charlotte, North Carolina',
@@ -929,11 +922,7 @@ export default async function LocationPage({ params }: PageProps) {
                 },
               },
             })),
-            author: {
-              '@type': 'RoofingContractor',
-              '@id': `${SITE_CONFIG.url}/#organization`,
-              name: SITE_CONFIG.name,
-            },
+            author: getRoofingContractorIdentity(),
             about: {
               '@type': 'Place',
               name: `${location.city}, ${location.state === 'NC' ? 'North Carolina' : 'South Carolina'}`,
