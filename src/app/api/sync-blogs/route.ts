@@ -3,6 +3,7 @@
 // GET /api/sync-blogs - Get sync status
 
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import { getAllPosts } from '@/lib/wordpress';
 import { batchOptimizeBlogs } from '@/lib/blog-optimizer';
 import { initializeDatabase, getOptimizationStats } from '@/lib/db';
@@ -116,6 +117,9 @@ async function processBlogs(posts: any[], forceReoptimize: boolean) {
 
     syncStatus.results = results;
     syncStatus.lastCompleted = new Date();
+
+    // Revalidate cached WordPress content after sync completes
+    revalidateTag('wordpress-posts', { expire: 0 });
   } catch (error) {
     syncStatus.lastError = error instanceof Error ? error.message : 'Unknown error';
   } finally {

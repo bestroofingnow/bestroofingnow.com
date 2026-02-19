@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
-// Revalidate every hour
-export const revalidate = 3600;
+// On-demand revalidation via webhook/cron (no time-based ISR)
+export const revalidate = false;
 
 export default async function BlogPage() {
   // Fetch ALL posts from WordPress (paginates through all) - uses lightweight version

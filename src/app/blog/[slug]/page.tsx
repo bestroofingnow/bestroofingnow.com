@@ -20,8 +20,8 @@ interface BlogPostPageProps {
   }>;
 }
 
-// Revalidate every hour
-export const revalidate = 3600;
+// On-demand revalidation via webhook/cron (no time-based ISR)
+export const revalidate = false;
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, '').replace(/&[^;]+;/g, ' ').trim();

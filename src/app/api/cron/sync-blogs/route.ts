@@ -3,6 +3,7 @@
 // GET /api/cron/sync-blogs
 
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag } from 'next/cache';
 import { getAllPosts } from '@/lib/wordpress';
 import { batchOptimizeBlogs } from '@/lib/blog-optimizer';
 import { initializeDatabase, getBlogsNeedingOptimization } from '@/lib/db';
@@ -54,6 +55,12 @@ export async function GET(request: NextRequest) {
         console.log(`Progress: ${completed + 1}/${total} - ${currentSlug}`);
       },
     });
+
+    // Revalidate cached WordPress content (expire immediately for fresh data)
+    revalidateTag('wordpress-posts', { expire: 0 });
+    for (const post of limitedPosts) {
+      revalidateTag(`wordpress-post-${post.slug}`, { expire: 0 });
+    }
 
     console.log('Cron job completed:', results);
 

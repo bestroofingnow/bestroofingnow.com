@@ -65,7 +65,7 @@ export async function fetchAllProjects(limit = 50): Promise<PMIProject[]> {
         headers: {
           Authorization: `Bearer ${PMI_API_KEY}`,
         },
-        next: { revalidate: 3600 }, // Cache for 1 hour
+        next: { revalidate: 86400, tags: ['pmi-projects'] },
       }
     );
 
@@ -91,7 +91,7 @@ export async function fetchProject(projectId: string): Promise<PMIProject | null
       headers: {
         Authorization: `Bearer ${PMI_API_KEY}`,
       },
-      next: { revalidate: 3600 },
+      next: { revalidate: 86400, tags: ['pmi-projects'] },
     });
 
     if (!response.ok) return null;
@@ -109,7 +109,7 @@ export async function fetchProjectWithPhotos(projectId: string): Promise<PMIProj
       headers: {
         Authorization: `Bearer ${PMI_API_KEY}`,
       },
-      next: { revalidate: 3600 },
+      next: { revalidate: 86400, tags: ['pmi-projects'] },
     });
 
     if (!response.ok) return null;

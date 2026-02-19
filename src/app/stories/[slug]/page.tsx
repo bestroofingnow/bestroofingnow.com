@@ -975,4 +975,5 @@ export default async function CityStoryPage({
   );
 }
 
-export const revalidate = 3600;
+// On-demand revalidation (no time-based ISR)
+export const revalidate = false;

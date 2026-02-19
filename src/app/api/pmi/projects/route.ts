@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import * as fs from 'fs';
 import * as path from 'path';
 
-// Cache for 1 hour
-export const revalidate = 3600;
+// Cache for 24 hours (reads local JSON, can't use cache tags)
+export const revalidate = 86400;
 
 // Load projects from local PMI export file
 function loadPMIExport() {
