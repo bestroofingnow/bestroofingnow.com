@@ -380,7 +380,7 @@ https://bestroofingnow.com/contact
 OUR CREDENTIALS:
 - BBB A+ Accredited: https://www.bbb.org/us/nc/charlotte/profile/roofing-contractors/best-roofing-now-0473-908763
 - Lake Norman Chamber Member
-- CertainTeed SELECT ShingleMaster
+- CertainTeed ShingleMaster
 - GAF Certified Contractor
 - 5-Star Google Rating
 

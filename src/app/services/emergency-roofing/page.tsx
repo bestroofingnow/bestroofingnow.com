@@ -28,6 +28,7 @@ import {
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
@@ -234,12 +235,7 @@ export default function EmergencyRoofingPage() {
             '@id': `${pageUrl}/#emergency-service`,
             name: '24/7 Emergency Roof Repair Charlotte NC',
             description: '24/7 emergency roof repair service with 30-minute response time. Emergency tarping, leak repair, storm damage restoration.',
-            provider: {
-              '@type': 'RoofingContractor',
-              '@id': `${SITE_CONFIG.url}/#organization`,
-              name: SITE_CONFIG.name,
-              telephone: SITE_CONFIG.phone,
-            },
+            provider: getRoofingContractorIdentity(),
             serviceType: 'Emergency Roofing Repair',
             areaServed: [
               ...primaryCoverageAreas.map(city => ({ '@type': 'City', name: `${city}, NC` })),

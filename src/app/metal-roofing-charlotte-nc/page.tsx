@@ -30,6 +30,7 @@ import {
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -236,18 +237,7 @@ function MetalRoofingServiceSchema() {
     name: 'Metal Roofing Installation Charlotte NC',
     description: 'Professional metal roofing installation services in Charlotte NC. Standing seam, metal shingles, and corrugated metal roofs. 40-70 year lifespan, energy efficient, storm resistant.',
     provider: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE_CONFIG.address.street,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
+      ...getRoofingContractorIdentity(),
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: SITE_CONFIG.googleRating,

@@ -22,6 +22,7 @@ import { JamesTip } from '@/components/sections/PersonalTouch';
 import { Button } from '@/components/ui/Button';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 import { Lightbulb, Quote } from 'lucide-react';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
@@ -180,17 +181,7 @@ function PricingSchema() {
     description:
       'Professional roof replacement services in Charlotte NC. Complete tear-off, installation of new roofing materials, and cleanup. BBB A+ rated.',
     provider: {
-      '@type': 'RoofingContractor',
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE_CONFIG.address.street,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
+      ...getRoofingContractorIdentity(),
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: SITE_CONFIG.googleRating,

@@ -1,4 +1,5 @@
 import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS, HOWTO_CONTENT, AI_CITATION_CONTENT, FEATURED_SNIPPET_CONTENT } from '@/lib/constants';
+import { getOrganizationAddress, getRoofingContractorIdentity } from '@/lib/schema-helpers';
 
 // Canonical image URLs for schema markup - using real CMS-hosted images
 const SCHEMA_LOGO = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
@@ -42,14 +43,7 @@ export function LocalBusinessSchema({ includeRating = false }: { includeRating?:
       SCHEMA_LOGO,
       SCHEMA_HERO,
     ],
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: `${SITE_CONFIG.address.street} ${SITE_CONFIG.address.suite}`,
-      addressLocality: SITE_CONFIG.address.city,
-      addressRegion: SITE_CONFIG.address.state,
-      postalCode: SITE_CONFIG.address.zip,
-      addressCountry: 'US',
-    },
+    address: getOrganizationAddress(),
     geo: {
       '@type': 'GeoCoordinates',
       latitude: SITE_CONFIG.geo.latitude,
@@ -133,6 +127,7 @@ export function LocalBusinessSchema({ includeRating = false }: { includeRating?:
           '@type': 'Service',
           name: service.title,
           description: service.description,
+          provider: getRoofingContractorIdentity(),
         },
       })),
     },
@@ -215,12 +210,7 @@ export function ServiceSchema({ service, includeRating = false }: ServiceSchemaP
     '@id': `${SITE_CONFIG.url}/services/${service.slug}/#service`,
     name: service.title,
     description: service.description,
-    provider: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-    },
+    provider: getRoofingContractorIdentity(),
     areaServed: LOCATIONS.map((loc) => ({
       '@type': 'City',
       name: `${loc.city}, ${loc.state}`,
@@ -254,6 +244,7 @@ export function ServiceSchema({ service, includeRating = false }: ServiceSchemaP
             '@type': 'Service',
             name: 'Free Inspection',
             description: `Free ${service.title.toLowerCase()} inspection and estimate`,
+            provider: getRoofingContractorIdentity(),
           },
         },
       ],
@@ -318,8 +309,7 @@ export function LocationSchema({ location }: LocationSchemaProps) {
     paymentAccepted: ['Cash', 'Credit Card', 'Check', 'Financing'],
     currenciesAccepted: 'USD',
     parentOrganization: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
+      ...getRoofingContractorIdentity(),
     },
     areaServed: {
       '@type': 'City',
@@ -335,6 +325,7 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Roof Repair',
             description: `Professional roof repair services in ${location.city}`,
+            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -343,6 +334,7 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Roof Replacement',
             description: `Complete roof replacement in ${location.city}`,
+            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -351,6 +343,7 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Storm Damage Repair',
             description: `Emergency storm damage repair in ${location.city}`,
+            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -359,6 +352,7 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Free Roof Inspection',
             description: `Complimentary roof inspections in ${location.city}`,
+            provider: getRoofingContractorIdentity(),
           },
         },
       ],
@@ -502,10 +496,7 @@ export function WebSiteSchema() {
     url: SITE_CONFIG.url,
     name: SITE_CONFIG.name,
     description: SITE_CONFIG.description,
-    publisher: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-    },
+    publisher: getRoofingContractorIdentity(),
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -595,16 +586,9 @@ export function FreeInspectionOfferSchema() {
       '@type': 'Service',
       name: 'Professional Roof Inspection',
       description: 'Complete roof assessment including shingle condition, flashing, gutters, ventilation, and structural integrity check.',
-      provider: {
-        '@type': 'RoofingContractor',
-        '@id': `${SITE_CONFIG.url}/#organization`,
-      },
+      provider: getRoofingContractorIdentity(),
     },
-    offeredBy: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-    },
+    offeredBy: getRoofingContractorIdentity(),
     areaServed: {
       '@type': 'City',
       name: 'Charlotte, NC',
@@ -646,9 +630,7 @@ export function ReviewsSchema() {
   // to avoid "Review has multiple aggregate ratings" error in Google Search Console
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    '@id': `${SITE_CONFIG.url}/#organization`,
-    name: SITE_CONFIG.name,
+    ...getRoofingContractorIdentity(),
     review: reviews.map((review) => ({
       '@type': 'Review',
       author: {
@@ -794,16 +776,9 @@ export function WarrantySchema({ warrantyType, productName }: WarrantySchemaProp
     } : {
       '@type': 'Service',
       name: 'Roofing Installation',
-      provider: {
-        '@type': 'RoofingContractor',
-        '@id': `${SITE_CONFIG.url}/#organization`,
-      },
+      provider: getRoofingContractorIdentity(),
     },
-    seller: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-    },
+    seller: getRoofingContractorIdentity(),
   };
 
   return (
@@ -893,11 +868,7 @@ export function PersonSchema({ person }: PersonSchemaProps) {
     name: person.name,
     jobTitle: person.role,
     description: person.description,
-    worksFor: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-    },
+    worksFor: getRoofingContractorIdentity(),
     knowsAbout: person.expertise || [
       'Roofing',
       'Roof Repair',
@@ -1049,11 +1020,7 @@ export function ProductSchema({ product }: ProductSchemaProps) {
       highPrice: product.priceRange.match(/\$\d+-\$(\d+)/)?.[1] || '300',
       offerCount: 1,
       availability: 'https://schema.org/InStock',
-      seller: {
-        '@type': 'RoofingContractor',
-        '@id': `${SITE_CONFIG.url}/#organization`,
-        name: SITE_CONFIG.name,
-      },
+      seller: getRoofingContractorIdentity(),
     },
     additionalProperty: [
       {
@@ -1104,8 +1071,7 @@ export function SpeakableSchema() {
       ],
     },
     mainEntity: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
+      ...getRoofingContractorIdentity(),
     },
   };
 
@@ -1141,9 +1107,7 @@ export function VoiceSearchFAQSchema() {
       },
     })),
     author: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
+      ...getRoofingContractorIdentity(),
     },
   };
 
@@ -1319,8 +1283,7 @@ export function LocationFAQSchema({ city, state, faqs }: LocationFAQSchemaProps)
       },
     })),
     author: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
+      ...getRoofingContractorIdentity(),
     },
     about: {
       '@type': 'City',
@@ -1344,10 +1307,7 @@ export function ServiceAreaSchema() {
     '@id': `${SITE_CONFIG.url}/#roofing-service`,
     name: 'Roofing Services',
     description: 'Professional roofing services including repair, replacement, inspection, and storm damage restoration.',
-    provider: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-    },
+    provider: getRoofingContractorIdentity(),
     areaServed: {
       '@type': 'GeoCircle',
       geoMidpoint: {
@@ -1381,6 +1341,7 @@ export function ServiceAreaSchema() {
           '@type': 'Service',
           name: service.title,
           description: service.description,
+          provider: getRoofingContractorIdentity(),
         },
       })),
     },
@@ -1918,10 +1879,7 @@ export function WebPageSchema({
       '@type': 'WebSite',
       '@id': `${SITE_CONFIG.url}/#website`,
     },
-    about: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-    },
+    about: getRoofingContractorIdentity(),
     primaryImageOfPage: primaryImage ? {
       '@type': 'ImageObject',
       url: primaryImage,
@@ -1988,10 +1946,7 @@ export function CollectionPageSchema({ name, description, url, items }: Collecti
         description: item.description,
       })),
     },
-    about: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-    },
+    about: getRoofingContractorIdentity(),
   };
 
   return (
@@ -2050,9 +2005,7 @@ export function ServiceAreaMapSchema({ serviceAreas }: ServiceAreaMapSchemaProps
     url: `${SITE_CONFIG.url}/locations`,
     mapType: 'https://schema.org/VenueMap',
     about: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
+      ...getRoofingContractorIdentity(),
       areaServed: areas.map(area => {
         const coords = SERVICE_AREA_COORDINATES[area.slug];
         return {
@@ -2165,11 +2118,7 @@ export function ProjectGalleryMapSchema({ projects, city }: ProjectGalleryMapSch
             caption: `Completed roof in ${project.city}, ${project.state}`,
           },
         }),
-        creator: {
-          '@type': 'RoofingContractor',
-          '@id': `${SITE_CONFIG.url}/#organization`,
-          name: SITE_CONFIG.name,
-        },
+        creator: getRoofingContractorIdentity(),
       },
     })),
     mainEntity: {
@@ -2218,16 +2167,8 @@ export function ProjectSchema({ project }: ProjectSchemaProps) {
     url: `${SITE_CONFIG.url}/projects/${project.slug}`,
     dateCreated: project.completedDate,
     datePublished: project.completedDate,
-    creator: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-    },
-    provider: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-    },
+    creator: getRoofingContractorIdentity(),
+    provider: getRoofingContractorIdentity(),
     contentLocation: {
       '@type': 'Place',
       name: `${project.city}, ${project.state}`,
@@ -2263,18 +2204,14 @@ export function ProjectSchema({ project }: ProjectSchemaProps) {
           name: `${project.city}, ${project.state}`,
         },
         creator: {
-          '@type': 'RoofingContractor',
-          '@id': `${SITE_CONFIG.url}/#organization`,
+          ...getRoofingContractorIdentity(),
         },
       })),
     }),
     workExample: {
       '@type': 'Service',
       name: project.product ? `${project.product} Installation` : 'Roof Installation',
-      provider: {
-        '@type': 'RoofingContractor',
-        '@id': `${SITE_CONFIG.url}/#organization`,
-      },
+      provider: getRoofingContractorIdentity(),
     },
   };
 
@@ -2423,6 +2360,7 @@ export function ServiceAreaPageSchema({ city, state, county, distance, slug }: S
             '@type': 'Service',
             name: 'Roof Repair',
             description: `Emergency and scheduled roof repair services in ${city}`,
+            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -2431,6 +2369,7 @@ export function ServiceAreaPageSchema({ city, state, county, distance, slug }: S
             '@type': 'Service',
             name: 'Roof Replacement',
             description: `Complete roof replacement with premium materials in ${city}`,
+            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -2439,6 +2378,7 @@ export function ServiceAreaPageSchema({ city, state, county, distance, slug }: S
             '@type': 'Service',
             name: 'Storm Damage Repair',
             description: `Storm damage assessment and repair services in ${city}`,
+            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -2447,6 +2387,7 @@ export function ServiceAreaPageSchema({ city, state, county, distance, slug }: S
             '@type': 'Service',
             name: 'Free Roof Inspection',
             description: `Complimentary roof inspections for ${city} homeowners`,
+            provider: getRoofingContractorIdentity(),
           },
         },
       ],
@@ -2563,6 +2504,7 @@ export function PrimaryLocationSchema() {
           '@type': 'Service',
           name: service.title,
           description: service.description,
+          provider: getRoofingContractorIdentity(),
         },
       })),
     },
@@ -2632,10 +2574,7 @@ export function EnhancedSpeakableSchema({
       cssSelector: cssSelectors,
       xpath: xpathSelectors,
     },
-    mainEntity: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-    },
+    mainEntity: getRoofingContractorIdentity(),
     isPartOf: {
       '@type': 'WebSite',
       '@id': `${SITE_CONFIG.url}/#website`,
@@ -2704,10 +2643,7 @@ export function AIOverviewFAQSchema({
       },
     })),
     author: {
-      '@type': 'RoofingContractor',
-      '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
+      ...getRoofingContractorIdentity(),
     },
     dateModified: new Date().toISOString().split('T')[0],
   };
@@ -2782,11 +2718,8 @@ export function FeaturedSnippetListAnswerSchema({
 export function VoiceSearchActionSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
+    ...getRoofingContractorIdentity(),
     '@id': `${SITE_CONFIG.url}/#voice-actions`,
-    name: SITE_CONFIG.name,
-    telephone: SITE_CONFIG.phone,
-    url: SITE_CONFIG.url,
     // Potential actions for voice assistants
     potentialAction: [
       {

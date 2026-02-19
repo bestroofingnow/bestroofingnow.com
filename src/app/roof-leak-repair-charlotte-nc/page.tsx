@@ -26,6 +26,7 @@ import YouTubeShort from '@/components/sections/YouTubeShort';
 import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -246,17 +247,7 @@ function LeakRepairServiceSchema() {
     description:
       'Professional roof leak repair services in Charlotte NC. Expert leak detection, emergency repairs 24/7, and permanent solutions for all types of roof leaks. Free inspections available.',
     provider: {
-      '@type': 'RoofingContractor',
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE_CONFIG.address.street,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
+      ...getRoofingContractorIdentity(),
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: SITE_CONFIG.googleRating,

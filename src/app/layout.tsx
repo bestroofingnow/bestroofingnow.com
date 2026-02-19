@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     default: `Best Roofer Charlotte NC | 5-Star | BBB A+`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
-  description: `Looking for the best roofing company? Charlotte's top-rated contractor with 5.0 Google rating, 500+ roofs installed, BBB A+ rated, veteran-owned. FREE inspections & same-day estimates. Call (704) 605-6047.`,
+  description: `5-star, veteran-owned roofing contractor in Charlotte NC. Roof repair and replacement, storm damage help, and free inspections. Call (704) 605-6047.`,
   keywords: [
     // Primary target keywords
     'roofing contractor Charlotte NC',

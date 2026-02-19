@@ -12,9 +12,9 @@ import BlogContent from './BlogContent';
 const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFE0FR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/AMT8fblq8lYS6CVo4JTE0qsyN6ydrYHH4Oc9aznGVpYoIxUsOqxf/9k=';
 
 export const metadata: Metadata = {
-  title: 'Roofing Blog | Tips & Guides from Charlotte Roofers',
+  title: 'Roofing Tips & Guides',
   description:
-    'Expert roofing tips, guides, and news from Best Roofing Now. Learn about roof maintenance, repair, replacement, and more from Charlotte\'s trusted roofing company.',
+    'Roofing tips and guides from Best Roofing Now. Learn roof maintenance, repair, replacement, and storm prep for Charlotte area homeowners.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/blog`,
   },
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
-// Revalidate every hour
-export const revalidate = 3600;
+// On-demand revalidation via webhook/cron (no time-based ISR)
+export const revalidate = false;
 
 export default async function BlogPage() {
   // Fetch ALL posts from WordPress (paginates through all) - uses lightweight version
@@ -107,6 +107,45 @@ export default async function BlogPage() {
               Learn from Charlotte&apos;s trusted roofing experts. Tips on maintenance, repair,
               replacement, and protecting your home from the elements.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro Content (helps users and improves on-page context for search engines) */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Start Here: Roofing Help for Charlotte Homeowners
+            </h2>
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p>
+                If you are trying to decide between roof repair and replacement, planning for storm season, or just want to understand what you are seeing on your shingles, you are in the right place. This blog is written by the same team that inspects and installs roofs across Charlotte, Lake Norman, and the surrounding towns every week.
+              </p>
+              <p>
+                We focus on practical guidance: what the problem is, why it happens, what it typically costs, and what to do next. You will also find checklists you can use before calling a contractor, plus questions to ask so you can compare quotes confidently.
+              </p>
+              <p>
+                Popular starting points:
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mt-6">
+              {[
+                { href: '/blog/roof-shingle-cost-per-square-foot', label: 'Roof Shingle Cost (Per Square Foot)' },
+                { href: '/blog/the-anatomy-of-a-roof-every-part-homeowners-should-know', label: 'The Anatomy of a Roof (Parts Explained)' },
+                { href: '/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one', label: 'Roof Crickets: What They Are and When You Need One' },
+                { href: '/blog/roof-ridges-and-valleys-explained-purpose-benefits-and-maintenance-for-homeowners', label: 'Roof Ridges and Valleys (Purpose and Maintenance)' },
+              ].map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="bg-light rounded-xl p-4 border border-gray-200 hover:border-primary hover:bg-white transition"
+                >
+                  <span className="font-semibold text-primary">{item.label}</span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>

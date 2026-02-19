@@ -7,6 +7,7 @@ import {
   generateStoryHeadline,
   generateStoryDescription,
 } from '@/lib/customer-stories';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 
 interface CustomerStoriesProps {
   stories: CustomerStory[];
@@ -204,10 +205,7 @@ export function CustomerStoriesSchema({ stories }: { stories: CustomerStory[] })
         '@type': 'Service',
         name: generateStoryHeadline(story),
         description: generateStoryDescription(story),
-        provider: {
-          '@type': 'RoofingContractor',
-          name: 'Best Roofing Now',
-        },
+        provider: getRoofingContractorIdentity(),
         areaServed: {
           '@type': 'City',
           name: story.city,

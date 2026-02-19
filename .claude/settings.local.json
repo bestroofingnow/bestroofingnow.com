@@ -111,7 +111,30 @@
       "Bash(then echo \"$f\")",
       "Bash(echo:*)",
       "Bash(python:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "WebFetch(domain:www.bbb.org)",
+      "WebFetch(domain:www.yelp.com)",
+      "WebFetch(domain:www.certainteed.com)",
+      "WebFetch(domain:nextdoor.com)",
+      "WebFetch(domain:www.angi.com)",
+      "WebFetch(domain:homeguide.com)",
+      "WebFetch(domain:www.gaf.com)",
+      "WebFetch(domain:www.owenscorning.com)",
+      "WebFetch(domain:business.lakenormanchamber.org)",
+      "WebFetch(domain:roofmedic.com)",
+      "WebFetch(domain:www.charlotteroofing.com)",
+      "WebFetch(domain:bestchoiceroofing.com)",
+      "WebFetch(domain:signatureexteriorsinc.com)",
+      "WebFetch(domain:southernnationalroofing.com)",
+      "WebFetch(domain:search.google.com)",
+      "Bash(git diff:*)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(node scripts/seo-expanded-analysis.js:*)",
+      "Bash(node scripts/analyze-blog-rankings.js:*)",
+      "WebFetch(domain:cms.bestroofingnow.com)",
+      "Bash(where:*)",
+      "Bash(node scripts/blog-cannibalization-audit.js:*)",
+      "Bash(node scripts/seo-full-audit.js:*)"
     ]
   }
 }

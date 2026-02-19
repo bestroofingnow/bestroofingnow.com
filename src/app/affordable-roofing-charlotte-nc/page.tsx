@@ -27,6 +27,7 @@ import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/s
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
+import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 import { TURNER_NOTES } from '@/lib/turner-family';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
@@ -222,17 +223,7 @@ function AffordableRoofingSchema() {
     description:
       'Quality roofing services at fair, transparent prices in Charlotte NC. Financing available, insurance assistance, and honest pricing from a BBB A+ rated family-owned company.',
     provider: {
-      '@type': 'RoofingContractor',
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE_CONFIG.address.street,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
+      ...getRoofingContractorIdentity(),
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: SITE_CONFIG.googleRating,

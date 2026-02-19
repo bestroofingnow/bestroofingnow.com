@@ -76,7 +76,7 @@ export async function getPosts(options: {
 
   try {
     const res = await fetch(`${WP_API_URL}/posts?${params}`, {
-      next: { revalidate: 3600 }, // Cache for 1 hour
+      next: { tags: ['wordpress-posts'] },
     });
 
     if (!res.ok) {
@@ -94,7 +94,7 @@ export async function getPosts(options: {
 export async function getPostBySlug(slug: string): Promise<WPPost | null> {
   try {
     const res = await fetch(`${WP_API_URL}/posts?slug=${slug}&_embed=true`, {
-      next: { revalidate: 3600 },
+      next: { tags: ['wordpress-posts', `wordpress-post-${slug}`] },
     });
 
     if (!res.ok) {
@@ -116,7 +116,7 @@ export async function getAllPostSlugs(): Promise<string[]> {
 
   while (hasMore) {
     const res = await fetch(`${WP_API_URL}/posts?per_page=100&page=${page}&_fields=slug`, {
-      next: { revalidate: 3600 },
+      next: { tags: ['wordpress-posts'] },
     });
 
     if (!res.ok) break;
@@ -143,7 +143,7 @@ export async function getAllPosts(): Promise<WPPost[]> {
     try {
       const res = await fetch(
         `${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`,
-        { next: { revalidate: 3600 } }
+        { next: { tags: ['wordpress-posts'] } }
       );
 
       if (!res.ok) break;
@@ -194,7 +194,7 @@ export async function getAllPostsLite(): Promise<WPPostLite[]> {
       // Only fetch fields needed for the blog listing - no content!
       const res = await fetch(
         `${WP_API_URL}/posts?per_page=100&page=${page}&_embed=wp:featuredmedia&_fields=id,slug,title,excerpt,date,modified,_links`,
-        { next: { revalidate: 3600 } }
+        { next: { tags: ['wordpress-posts'] } }
       );
 
       if (!res.ok) break;
@@ -222,7 +222,7 @@ export async function getAllPostsLite(): Promise<WPPostLite[]> {
 
 export async function getMedia(id: number): Promise<WPMedia | null> {
   const res = await fetch(`${WP_API_URL}/media/${id}`, {
-    next: { revalidate: 86400 }, // Cache for 24 hours
+    next: { revalidate: 86400, tags: ['wordpress-media'] },
   });
 
   if (!res.ok) {
@@ -234,7 +234,7 @@ export async function getMedia(id: number): Promise<WPMedia | null> {
 
 export async function getPage(slug: string): Promise<WPPage | null> {
   const res = await fetch(`${WP_API_URL}/pages?slug=${slug}`, {
-    next: { revalidate: 3600 },
+    next: { tags: [`wordpress-page-${slug}`] },
   });
 
   if (!res.ok) {
@@ -288,7 +288,7 @@ export async function getPostsWithTotal(options: {
 
   try {
     const res = await fetch(`${WP_API_URL}/posts?${params}`, {
-      next: { revalidate: 3600 },
+      next: { tags: ['wordpress-posts'] },
     });
 
     if (!res.ok) {

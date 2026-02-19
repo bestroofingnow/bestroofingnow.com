@@ -6,7 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Systems | TPO, EPDM, PVC, Metal | Charlotte NC',
+  title: 'Commercial Roofing Systems Charlotte NC',
   description: 'Expert installation of commercial roofing systems in Charlotte NC. TPO, EPDM, PVC, Built-Up, and Metal roofing for businesses and industrial facilities.',
   keywords: [
     'commercial roofing Charlotte',
@@ -72,10 +72,25 @@ export default function CommercialSystemsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-gray-700">
               <p>
-                Commercial and industrial roofs face challenges that residential systems do not — standing water on flat surfaces, rooftop HVAC penetrations, foot traffic from maintenance crews, and strict energy-code requirements. Best Roofing Now installs single-ply membranes (TPO, EPDM, PVC), built-up roofing, and standing-seam metal systems for Charlotte-area businesses ranging from small retail spaces to large warehouse facilities.
+                Commercial and industrial roofs face challenges that residential systems do not: standing water on flat surfaces, rooftop HVAC penetrations, foot traffic from maintenance crews, and strict energy code requirements. Best Roofing Now installs single ply membranes (TPO, EPDM, PVC), built up roofing, and standing seam metal systems for Charlotte area businesses ranging from small retail spaces to large warehouse facilities.
               </p>
               <p>
                 Each system below is suited to different building types, budgets, and performance goals. Our commercial team will inspect your existing roof, evaluate drainage and insulation, and recommend the system that delivers the longest service life at the best value for your property. All commercial projects include manufacturer warranty registration and an optional preventive maintenance plan.
+              </p>
+              <p>
+                Not sure which system fits your building? Start with how you use the space. Restaurants and facilities with grease or chemicals often benefit from PVC. Warehouses and big box retail frequently choose white TPO for energy savings. EPDM remains a proven choice when you want a durable membrane that is easy to service over time. If you want the longest lifespan with strong curb appeal, standing seam metal is hard to beat.
+              </p>
+              <p>
+                During our assessment we review:
+              </p>
+              <ul>
+                <li>Roof slope, drainage, and any ponding water risk</li>
+                <li>Rooftop equipment, penetrations, and foot traffic needs</li>
+                <li>Insulation and energy code requirements</li>
+                <li>Warranty goals and long term maintenance planning</li>
+              </ul>
+              <p>
+                If you need a fast estimate, visit our <Link href="/services/commercial-roofing">commercial roofing</Link> page or <Link href="/contact">contact us</Link> for a free assessment.
               </p>
             </div>
           </div>

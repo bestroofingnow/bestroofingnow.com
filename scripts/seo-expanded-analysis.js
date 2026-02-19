@@ -7,7 +7,19 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const auth = Buffer.from('james@kynexpro.com:c239bdea18ad73af').toString('base64');
+try {
+  require('dotenv').config({ path: '.env.local' });
+} catch {}
+
+const login = process.env.DATAFORSEO_LOGIN;
+const password = process.env.DATAFORSEO_PASSWORD;
+
+if (!login || !password) {
+  console.error('ERROR: Missing DATAFORSEO_LOGIN or DATAFORSEO_PASSWORD');
+  process.exit(1);
+}
+
+const auth = Buffer.from(`${login}:${password}`).toString('base64');
 
 const TARGET_DOMAIN = 'bestroofingnow.com';
 const CHARLOTTE_LOCATION = 'Charlotte,North Carolina,United States';

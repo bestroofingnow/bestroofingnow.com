@@ -12,9 +12,10 @@ export default function BlogLoading() {
               <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-semibold">Roofing Tips & Guides</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6">
+            {/* Avoid an extra <h1> during streaming to prevent multiple H1s in initial HTML. */}
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6">
               Expert Roofing Advice for Charlotte Homeowners
-            </h1>
+            </div>
             <p className="text-base sm:text-lg md:text-xl text-white/90">
               Learn from Charlotte&apos;s trusted roofing experts. Tips on maintenance, repair,
               replacement, and protecting your home from the elements.
