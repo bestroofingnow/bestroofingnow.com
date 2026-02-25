@@ -43,7 +43,7 @@ async function main() {
 // Do not edit manually. Run: npx tsx scripts/generate-blog-slugs.ts
 // Last generated: ${new Date().toISOString()}
 
-export const KNOWN_BLOG_SLUGS = new Set([
+export const KNOWN_BLOG_SLUGS = new Set<string>([
 ${slugs.map((s) => `  '${s}',`).join('\n')}
 ]);
 `;

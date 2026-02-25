@@ -2,7 +2,7 @@
 // Do not edit manually. Run: npx tsx scripts/generate-blog-slugs.ts
 // Last generated: 2026-02-14T22:28:59.790Z
 
-export const KNOWN_BLOG_SLUGS = new Set([
+export const KNOWN_BLOG_SLUGS = new Set<string>([
   'the-lake-norman-wind-tunnel-why-waterfront-homes-face-unique-storm-risks',
   'roof-replacement-vs-roof-repair-which-is-better-for-your-charlotte-home',
   '5-steps-how-to-prepare-for-roof-installation-and-protect-your-investment-easy-guide-for-charlotte-homeowners',
