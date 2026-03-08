@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Leak Repair Charlotte NC | Fast Leak Detection | Best Roofing Now',
-    description:
+  description:
       'Expert roof leak repair in Charlotte NC. Fast leak detection, emergency repairs 24/7, and permanent solutions. Free inspections from BBB A+ rated contractor.',
-    url: `${SITE_CONFIG.url}/roof-leak-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-leak-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Roof leak repair Charlotte NC - professional leak detection and repair',
+  width: 1200,
+  height: 630,
+  alt: 'Roof leak repair Charlotte NC - professional leak detection and repair',
       },
     ],
   },
@@ -68,27 +68,27 @@ export const metadata: Metadata = {
 const leakCauses = [
   {
     icon: CloudRain,
-    title: 'Storm Damage',
-    description: 'Charlotte averages 25+ severe storms per year. High winds, hail, and heavy rain can damage shingles, create gaps, and allow water intrusion.',
-    severity: 'High Risk',
+  title: 'Storm Damage',
+  description: 'Charlotte averages 25+ severe storms per year. High winds, hail, and heavy rain can damage shingles, create gaps, and allow water intrusion.',
+  severity: 'High Risk',
   },
   {
     icon: Clock,
-    title: 'Aging Roof Materials',
-    description: 'Roofs over 15-20 years old experience shingle deterioration, cracked flashing, and worn seals around vents and pipes.',
-    severity: 'Moderate Risk',
+  title: 'Aging Roof Materials',
+  description: 'Roofs over 15-20 years old experience shingle deterioration, cracked flashing, and worn seals around vents and pipes.',
+  severity: 'Moderate Risk',
   },
   {
     icon: Wrench,
-    title: 'Poor Installation',
-    description: 'Improperly installed shingles, inadequate underlayment, or incorrect flashing can cause leaks within years of installation.',
-    severity: 'High Risk',
+  title: 'Poor Installation',
+  description: 'Improperly installed shingles, inadequate underlayment, or incorrect flashing can cause leaks within years of installation.',
+  severity: 'High Risk',
   },
   {
     icon: ThermometerSun,
-    title: 'Thermal Expansion',
-    description: 'Charlotte\'s hot summers (90°F+) and cool winters cause materials to expand and contract, loosening seals over time.',
-    severity: 'Moderate Risk',
+  title: 'Thermal Expansion',
+  description: 'Charlotte\'s hot summers (90°F+) and cool winters cause materials to expand and contract, loosening seals over time.',
+  severity: 'Moderate Risk',
   },
 ];
 
@@ -96,33 +96,33 @@ const leakCauses = [
 const leakSigns = [
   {
     sign: 'Water Stains on Ceilings',
-    description: 'Brown or yellow spots on ceilings, especially after rain, indicate water penetrating through your roof.',
-    urgency: 'Act within 24-48 hours',
+  description: 'Brown or yellow spots on ceilings, especially after rain, indicate water penetrating through your roof.',
+  urgency: 'Act within 24-48 hours',
   },
   {
     sign: 'Mold or Mildew Growth',
-    description: 'Musty odors or visible mold in the attic or upper floors signals ongoing moisture problems.',
-    urgency: 'Immediate attention needed',
+  description: 'Musty odors or visible mold in the attic or upper floors signals ongoing moisture problems.',
+  urgency: 'Immediate attention needed',
   },
   {
     sign: 'Unexplained High Water Bills',
-    description: 'If water is pooling in your attic or walls, it may affect your home\'s humidity and HVAC efficiency.',
-    urgency: 'Schedule inspection',
+  description: 'If water is pooling in your attic or walls, it may affect your home\'s humidity and HVAC efficiency.',
+  urgency: 'Schedule inspection',
   },
   {
     sign: 'Damaged or Missing Shingles',
-    description: 'Visible shingle damage, curling, or missing pieces often precede or accompany roof leaks.',
-    urgency: 'Repair before next storm',
+  description: 'Visible shingle damage, curling, or missing pieces often precede or accompany roof leaks.',
+  urgency: 'Repair before next storm',
   },
   {
     sign: 'Peeling Paint or Wallpaper',
-    description: 'Moisture behind walls causes paint to bubble, peel, or wallpaper to separate.',
-    urgency: 'Investigate source promptly',
+  description: 'Moisture behind walls causes paint to bubble, peel, or wallpaper to separate.',
+  urgency: 'Investigate source promptly',
   },
   {
     sign: 'Sagging Roof Deck',
-    description: 'A sagging roofline indicates prolonged water damage and potential structural issues.',
-    urgency: 'Emergency - call immediately',
+  description: 'A sagging roofline indicates prolonged water damage and potential structural issues.',
+  urgency: 'Emergency - call immediately',
   },
 ];
 
@@ -130,27 +130,27 @@ const leakSigns = [
 const repairProcess = [
   {
     step: 1,
-    title: 'Free Leak Inspection',
-    description: 'Our expert technicians thoroughly inspect your roof, attic, and interior to locate the exact source of the leak.',
-    icon: Search,
+  title: 'Free Leak Inspection',
+  description: 'Our expert technicians thoroughly inspect your roof, attic, and interior to locate the exact source of the leak.',
+  icon: Search,
   },
   {
     step: 2,
-    title: 'Advanced Leak Detection',
-    description: 'We use moisture meters, thermal imaging, and water testing to pinpoint hidden leaks that visual inspection might miss.',
-    icon: Eye,
+  title: 'Advanced Leak Detection',
+  description: 'We use moisture meters, thermal imaging, and water testing to pinpoint hidden leaks that visual inspection might miss.',
+  icon: Eye,
   },
   {
     step: 3,
-    title: 'Professional Repair',
-    description: 'Using premium materials and proven techniques, we permanently fix the leak - not just patch it temporarily.',
-    icon: Wrench,
+  title: 'Professional Repair',
+  description: 'Using premium materials and proven techniques, we permanently fix the leak - not just patch it temporarily.',
+  icon: Wrench,
   },
   {
     step: 4,
-    title: 'Quality Verification',
-    description: 'We perform water testing and thorough inspection to ensure the repair is complete and your roof is watertight.',
-    icon: CheckCircle,
+  title: 'Quality Verification',
+  description: 'We perform water testing and thorough inspection to ensure the repair is complete and your roof is watertight.',
+  icon: CheckCircle,
   },
 ];
 
@@ -158,39 +158,39 @@ const repairProcess = [
 const repairTypes = [
   {
     type: 'Flashing Repair',
-    description: 'Repair or replace deteriorated flashing around chimneys, vents, skylights, and roof intersections.',
-    commonAreas: 'Chimneys, skylights, valleys, walls',
-    priceRange: '$150 - $500',
+  description: 'Repair or replace deteriorated flashing around chimneys, vents, skylights, and roof intersections.',
+  commonAreas: 'Chimneys, skylights, valleys, walls',
+  priceRange: '$150 - $500',
   },
   {
     type: 'Shingle Repair',
-    description: 'Replace damaged, missing, or deteriorated shingles that are allowing water penetration.',
-    commonAreas: 'General roof surface, edges, ridges',
-    priceRange: '$200 - $600',
+  description: 'Replace damaged, missing, or deteriorated shingles that are allowing water penetration.',
+  commonAreas: 'General roof surface, edges, ridges',
+  priceRange: '$200 - $600',
   },
   {
     type: 'Vent Pipe Boot Repair',
-    description: 'Replace cracked or worn rubber boots around plumbing vent pipes - a very common leak source.',
-    commonAreas: 'Bathroom, kitchen, and laundry vents',
-    priceRange: '$150 - $300',
+  description: 'Replace cracked or worn rubber boots around plumbing vent pipes - a very common leak source.',
+  commonAreas: 'Bathroom, kitchen, and laundry vents',
+  priceRange: '$150 - $300',
   },
   {
     type: 'Chimney Leak Repair',
-    description: 'Comprehensive chimney leak solutions including flashing, cap, crown, and waterproofing.',
-    commonAreas: 'Chimney base, cap, mortar joints',
-    priceRange: '$300 - $1,200',
+  description: 'Comprehensive chimney leak solutions including flashing, cap, crown, and waterproofing.',
+  commonAreas: 'Chimney base, cap, mortar joints',
+  priceRange: '$300 - $1,200',
   },
   {
     type: 'Valley Repair',
-    description: 'Fix or replace valley flashing and shingles where two roof planes meet - a high-leak-risk area.',
-    commonAreas: 'Roof valleys and intersections',
-    priceRange: '$400 - $800',
+  description: 'Fix or replace valley flashing and shingles where two roof planes meet - a high-leak-risk area.',
+  commonAreas: 'Roof valleys and intersections',
+  priceRange: '$400 - $800',
   },
   {
     type: 'Flat Roof Leak Repair',
-    description: 'Specialized repairs for TPO, EPDM, and modified bitumen flat roofing systems.',
-    commonAreas: 'Commercial and low-slope roofs',
-    priceRange: '$300 - $1,500',
+  description: 'Specialized repairs for TPO, EPDM, and modified bitumen flat roofing systems.',
+  commonAreas: 'Commercial and low-slope roofs',
+  priceRange: '$300 - $1,500',
   },
 ];
 
@@ -198,42 +198,42 @@ const repairTypes = [
 const faqs = [
   {
     question: 'How much does roof leak repair cost in Charlotte NC?',
-    answer:
+  answer:
       'Roof leak repair in Charlotte typically costs between $150 and $1,500 depending on the leak source and severity. Simple repairs like vent boot replacement run $150-$300, while complex chimney or valley repairs can cost $500-$1,200. We provide free inspections and upfront pricing with no hidden fees. Emergency and after-hours repairs may incur additional service fees.',
   },
   {
     question: 'How quickly can you respond to a roof leak emergency in Charlotte?',
-    answer:
+  answer:
       'Best Roofing Now offers 24/7 emergency roof leak response in Charlotte and surrounding areas. For active leaks during business hours, we typically arrive within 1-4 hours. After-hours emergencies are handled as quickly as possible, often the same night. Call (704) 605-6047 immediately if you have an active leak causing interior damage.',
   },
   {
     question: 'Why does my roof leak only during heavy rain?',
-    answer:
+  answer:
       'Leaks that only appear during heavy rain often indicate wind-driven rain issues, overwhelmed drainage, or small gaps that only allow water entry when volume is high. Common culprits include damaged flashing, clogged gutters backing water under shingles, or deteriorated seals around roof penetrations. These leaks require professional detection to locate the exact entry point.',
   },
   {
     question: 'Can I just patch my leaking roof instead of replacing it?',
-    answer:
+  answer:
       'Many roof leaks can be permanently repaired without full replacement, especially if your roof is under 15-20 years old. However, if you have multiple leak points, widespread shingle deterioration, or storm damage exceeding 30% of the roof surface, replacement may be more cost-effective long-term. We provide honest assessments and never push replacement unless truly needed.',
   },
   {
     question: 'Will my homeowners insurance cover roof leak repair in Charlotte?',
-    answer:
+  answer:
       'Insurance typically covers roof leak repairs if the damage was caused by a covered event like storms, hail, wind, or fallen trees. However, leaks from age, wear, or lack of maintenance are generally not covered. We work with all major insurance companies and can help document damage for your claim. Contact us for a free inspection to assess whether your leak may be covered.',
   },
   {
     question: 'How do I find where my roof is leaking?',
-    answer:
+  answer:
       'Finding a roof leak can be tricky because water often travels along rafters or sheathing before dripping down, making the entry point far from the visible damage. Start by checking the attic during daylight for light penetration or water stains. Common leak sources include around chimneys, vent pipes, skylights, and in valleys. For elusive leaks, professional leak detection with moisture meters and water testing is recommended.',
   },
   {
     question: 'What should I do immediately when I discover a roof leak?',
-    answer:
+  answer:
       'When you discover an active roof leak: 1) Place buckets to catch dripping water, 2) Move valuables and furniture away from the affected area, 3) If safe, place a tarp in the attic to redirect water toward a bucket, 4) Take photos for insurance documentation, 5) Call Best Roofing Now at (704) 605-6047 for emergency response. Do not attempt to go on your roof during rain or wet conditions.',
   },
   {
     question: 'How long does roof leak repair take?',
-    answer:
+  answer:
       'Most roof leak repairs in Charlotte are completed in 1-4 hours once our crew arrives. Simple repairs like vent boot replacement or small shingle patches take about 1 hour. More complex repairs involving flashing, multiple leak points, or chimney work may take a full day. We schedule repairs promptly and work efficiently to restore your roof\'s protection as quickly as possible.',
   },
 ];
@@ -243,58 +243,58 @@ function LeakRepairServiceSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Roof Leak Repair Charlotte NC',
-    description:
+  name: 'Roof Leak Repair Charlotte NC',
+  description:
       'Professional roof leak repair services in Charlotte NC. Expert leak detection, emergency repairs 24/7, and permanent solutions for all types of roof leaks. Free inspections available.',
-    provider: {
+  provider: {
       ...getRoofingContractorIdentity(),
-      aggregateRating: {
+  aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: SITE_CONFIG.googleRating,
-        reviewCount: SITE_CONFIG.googleReviewCount,
-        bestRating: 5,
-        worstRating: 1,
+  ratingValue: SITE_CONFIG.googleRating,
+  reviewCount: SITE_CONFIG.googleReviewCount,
+  bestRating: 5,
+  worstRating: 1,
       },
     },
-    areaServed: {
+  areaServed: {
       '@type': 'City',
-      name: 'Charlotte, NC',
+  name: 'Charlotte, NC',
     },
-    serviceType: 'Roof Leak Repair',
-    hasOfferCatalog: {
+  serviceType: 'Roof Leak Repair',
+  hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Roof Leak Repair Services',
-      itemListElement: [
+  name: 'Roof Leak Repair Services',
+  itemListElement: [
         {
           '@type': 'Offer',
-          name: 'Emergency Roof Leak Repair',
-          description: '24/7 emergency response for active roof leaks',
-          priceSpecification: {
+  name: 'Emergency Roof Leak Repair',
+  description: '24/7 emergency response for active roof leaks',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '200',
-            maxPrice: '1500',
-            unitText: 'per repair',
+  priceCurrency: 'USD',
+  minPrice: '200',
+  maxPrice: '1500',
+  unitText: 'per repair',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Roof Leak Detection',
-          description: 'Professional leak detection using moisture meters and thermal imaging',
-          priceSpecification: {
+  name: 'Roof Leak Detection',
+  description: 'Professional leak detection using moisture meters and thermal imaging',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '0',
-            maxPrice: '150',
-            unitText: 'inspection fee (often waived with repair)',
+  priceCurrency: 'USD',
+  minPrice: '0',
+  maxPrice: '150',
+  unitText: 'inspection fee (often waived with repair)',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Free Roof Leak Inspection',
-          description: 'Complimentary inspection to identify leak source and provide repair estimate',
-          price: '0',
-          priceCurrency: 'USD',
+  name: 'Free Roof Leak Inspection',
+  description: 'Complimentary inspection to identify leak source and provide repair estimate',
+  price: '0',
+  priceCurrency: 'USD',
         },
       ],
     },

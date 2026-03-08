@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Installation Denver NC | Seamless Gutters | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated gutter installation specialists serving Denver NC and Lake Norman western shore. Custom seamless gutters, gutter guards, and repair services. Free estimates.',
-    url: `${SITE_CONFIG.url}/gutter-installation-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-installation-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.gutters,
-        width: 1200,
-        height: 630,
-        alt: 'Gutter installation Denver NC - Best Roofing Now seamless gutter services',
+  width: 1200,
+  height: 630,
+  alt: 'Gutter installation Denver NC - Best Roofing Now seamless gutter services',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Droplets,
-    title: 'Seamless Gutter Installation',
-    description: 'Custom-fabricated seamless aluminum gutters made on-site for lakefront and hillside Denver homes.',
-    href: '/services/gutter-installation',
+  title: 'Seamless Gutter Installation',
+  description: 'Custom-fabricated seamless aluminum gutters made on-site for lakefront and hillside Denver homes.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Shield,
-    title: 'Gutter Guard Installation',
-    description: 'Heavy-duty gutter protection to handle leaf and pine needle debris near Lake Norman State Park.',
-    href: '/services/gutter-guards',
+  title: 'Gutter Guard Installation',
+  description: 'Heavy-duty gutter protection to handle leaf and pine needle debris near Lake Norman State Park.',
+  href: '/services/gutter-guards',
   },
   {
     icon: Wrench,
-    title: 'Gutter Repair & Maintenance',
-    description: 'Fast repairs for storm-damaged, sagging, or leaking gutters on Denver NC properties.',
-    href: '/services/gutter-repair',
+  title: 'Gutter Repair & Maintenance',
+  description: 'Fast repairs for storm-damaged, sagging, or leaking gutters on Denver NC properties.',
+  href: '/services/gutter-repair',
   },
   {
     icon: Ruler,
-    title: 'Downspout Installation',
-    description: 'Oversized downspouts and extensions to manage heavy runoff on sloped lakefront lots.',
-    href: '/services/gutter-installation',
+  title: 'Downspout Installation',
+  description: 'Oversized downspouts and extensions to manage heavy runoff on sloped lakefront lots.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Paintbrush,
-    title: 'Custom Copper Gutters',
-    description: 'Premium copper gutter systems for upscale Denver communities like Trilogy and Pinnacle Shores.',
-    href: '/services/gutter-installation',
+  title: 'Custom Copper Gutters',
+  description: 'Premium copper gutter systems for upscale Denver communities like Trilogy and Pinnacle Shores.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Home,
-    title: 'Gutter Cleaning',
-    description: 'Professional debris removal to keep gutters flowing properly through every season.',
-    href: '/services/gutter-cleaning',
+  title: 'Gutter Cleaning',
+  description: 'Professional debris removal to keep gutters flowing properly through every season.',
+  href: '/services/gutter-cleaning',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman western shore homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman western shore homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'On-Site Fabrication',
-    description: 'Seamless gutters custom-made at your Denver property with our mobile gutter machine.',
+  title: 'On-Site Fabrication',
+  description: 'Seamless gutters custom-made at your Denver property with our mobile gutter machine.',
   },
   {
     icon: Users,
-    title: 'Lakefront Specialists',
-    description: 'Experienced with the unique drainage needs of Lake Norman waterfront and hillside homes.',
+  title: 'Lakefront Specialists',
+  description: 'Experienced with the unique drainage needs of Lake Norman waterfront and hillside homes.',
   },
   {
     icon: Clock,
-    title: 'Same-Day Service',
-    description: 'Most Denver gutter installations and repairs completed in a single day.',
+  title: 'Same-Day Service',
+  description: 'Most Denver gutter installations and repairs completed in a single day.',
   },
 ];
 
@@ -186,42 +186,42 @@ const gutterColors = [
 const faqs = [
   {
     question: 'Why do Denver NC lakefront homes need upgraded gutter systems?',
-    answer:
+  answer:
       'Denver sits on the western shore of Lake Norman, where properties face unique drainage challenges. Lakefront lots often slope toward the water, and heavy rainfall can cause erosion if not properly managed. Our oversized 6-inch seamless gutters with 3x4 downspouts handle the high-volume runoff common during Lake Norman thunderstorms, protecting both your foundation and the shoreline.',
   },
   {
     question: 'How much does gutter installation cost in Denver NC?',
-    answer:
+  answer:
       'Gutter installation in Denver NC typically ranges from $4-12 per linear foot depending on material, size, and roof complexity. Most Denver homes require 150-200 linear feet of gutters. Lakefront properties in communities like Trilogy or Sailview may need larger 6-inch systems which cost more but provide essential capacity. We offer free on-site estimates with transparent pricing.',
   },
   {
     question: 'Do I need gutter guards in Denver NC?',
-    answer:
+  answer:
       'Gutter guards are highly recommended for Denver homes, especially those near Lake Norman State Park or in wooded areas along Beatty\'s Ford Road. The heavy pine, oak, and hardwood canopy drops significant debris year-round. Without guards, gutters can clog quickly, causing water to overflow and damage fascia boards, foundations, and landscaping.',
   },
   {
     question: 'What gutter size do you recommend for Denver NC homes?',
-    answer:
+  answer:
       'We recommend 5-inch seamless gutters for standard Denver homes and 6-inch gutters for homes with steep roof pitches, large roof areas, or lakefront exposure on the western shore. The 6-inch option handles 40% more water volume, which is critical during the intense summer thunderstorms that roll across Lake Norman.',
   },
   {
     question: 'How long does gutter installation take in Denver NC?',
-    answer:
+  answer:
       'Most residential gutter installations in Denver are completed in one day. We bring our mobile fabrication equipment directly to your property to custom-cut each gutter run on-site. Larger lakefront homes in communities like Pinnacle Shores or Island Point may require a second day if the roofline is particularly complex.',
   },
   {
     question: 'Do you handle Lincoln County gutter permits for Denver NC?',
-    answer:
+  answer:
       'While most standard gutter installations in Denver NC do not require a Lincoln County building permit, certain projects involving drainage modifications, grading changes near the shoreline, or work in flood zones may need approval. We handle all necessary permitting and ensure your installation complies with Lincoln County building codes.',
   },
   {
     question: 'What colors are available for seamless gutters in Denver?',
-    answer:
+  answer:
       'We offer over 20 gutter colors to complement your Denver home\'s exterior. Popular choices in lakefront communities include white, bronze, musket brown, and clay. Our seamless aluminum gutters feature a baked enamel finish that resists fading, chipping, and peeling even in direct western shore sun exposure.',
   },
   {
     question: 'Can you replace gutters on older homes in Denver NC?',
-    answer:
+  answer:
       'Absolutely. Many homes in established Denver neighborhoods along Beatty\'s Ford Road and Highway 16 have aging sectional gutters that leak at every seam. We remove old gutters, inspect and repair fascia boards as needed, then install new seamless gutters that provide decades of leak-free performance. We also handle proper disposal of old materials.',
   },
 ];
@@ -236,7 +236,6 @@ export default function GutterInstallationDenverNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/gutter-installation-denver-nc`}
         pageName="Gutter Installation Denver NC"
@@ -246,13 +245,13 @@ export default function GutterInstallationDenverNCPage() {
         faqs={[
           {
             question: 'How much does gutter installation cost in Denver NC?',
-            answer: 'Gutter installation in Denver NC costs $4-$12 per linear foot for seamless aluminum gutters, averaging $1,200-$3,000 for Lake Norman western shore homes. Best Roofing Now serves Denver with free estimates and quality warranties.',
-            speakableAnswer: 'Gutter installation in Denver NC costs $4-12 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
+  answer: 'Gutter installation in Denver NC costs $4-$12 per linear foot for seamless aluminum gutters, averaging $1,200-$3,000 for Lake Norman western shore homes. Best Roofing Now serves Denver with free estimates and quality warranties.',
+  speakableAnswer: 'Gutter installation in Denver NC costs $4-12 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
           },
           {
             question: 'Who installs gutters in Denver NC near Lake Norman?',
-            answer: 'Best Roofing Now is the top-rated gutter installer serving Denver NC and the Lake Norman western shore. We install seamless aluminum gutters fabricated on-site, gutter guards, and copper gutters for communities like Trilogy, Sailview, and Westport.',
-            speakableAnswer: 'Best Roofing Now installs gutters in Denver NC and Lake Norman western shore with 5-star ratings. Call 704-605-6047.',
+  answer: 'Best Roofing Now is the top-rated gutter installer serving Denver NC and the Lake Norman western shore. We install seamless aluminum gutters fabricated on-site, gutter guards, and copper gutters for communities like Trilogy, Sailview, and Westport.',
+  speakableAnswer: 'Best Roofing Now installs gutters in Denver NC and Lake Norman western shore with 5-star ratings. Call 704-605-6047.',
           },
         ]}
       />
@@ -286,7 +285,7 @@ export default function GutterInstallationDenverNCPage() {
               Denver NC homes face unique drainage demands with lakefront slopes, heavy tree canopy near
               Lake Norman State Park, and intense summer storms crossing the western shore. Best Roofing Now
               installs custom seamless gutter systems designed to handle it all, protecting your foundation,
-              landscaping, and shoreline.
+  landscaping, and shoreline.
             </p>
 
             {/* CTA Buttons */}

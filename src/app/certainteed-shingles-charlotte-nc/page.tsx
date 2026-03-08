@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'CertainTeed Shingles Charlotte NC | ShingleMaster',
-    description:
+  description:
       'Premium CertainTeed Landmark shingles installed by Charlotte\'s ShingleMaster contractor. Enhanced warranties, beautiful colors, and exceptional protection.',
-    url: `${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.realProjects.certainteed1,
-        width: 1200,
-        height: 630,
-        alt: 'CertainTeed shingles installation Charlotte NC - Best Roofing Now ShingleMaster',
+  width: 1200,
+  height: 630,
+  alt: 'CertainTeed shingles installation Charlotte NC - Best Roofing Now ShingleMaster',
       },
     ],
   },
@@ -69,31 +69,31 @@ export const metadata: Metadata = {
 const productLines = [
   {
     name: 'Landmark',
-    description: 'The #1 selling premium architectural shingle with dimensional beauty and reliable performance.',
-    warranty: '50-year limited warranty',
-    windRating: '110 mph',
-    algaeResistance: 'StreakFighter technology',
+  description: 'The #1 selling premium architectural shingle with dimensional beauty and reliable performance.',
+  warranty: '50-year limited warranty',
+  windRating: '110 mph',
+  algaeResistance: 'StreakFighter technology',
   },
   {
     name: 'Landmark PRO',
-    description: 'Enhanced protection with Max Def colors for superior curb appeal and performance.',
-    warranty: '50-year limited warranty',
-    windRating: '130 mph',
-    algaeResistance: 'StreakFighter technology',
+  description: 'Enhanced protection with Max Def colors for superior curb appeal and performance.',
+  warranty: '50-year limited warranty',
+  windRating: '130 mph',
+  algaeResistance: 'StreakFighter technology',
   },
   {
     name: 'Landmark Premium',
-    description: 'Ultra-premium weight for maximum impact resistance and distinctive appearance.',
-    warranty: '50-year limited warranty',
-    windRating: '130 mph',
-    algaeResistance: 'StreakFighter technology',
+  description: 'Ultra-premium weight for maximum impact resistance and distinctive appearance.',
+  warranty: '50-year limited warranty',
+  windRating: '130 mph',
+  algaeResistance: 'StreakFighter technology',
   },
   {
     name: 'Grand Manor',
-    description: 'Luxury shingle mimicking the look of natural slate at a fraction of the cost.',
-    warranty: 'Lifetime limited warranty',
-    windRating: '110 mph',
-    algaeResistance: 'StreakFighter technology',
+  description: 'Luxury shingle mimicking the look of natural slate at a fraction of the cost.',
+  warranty: 'Lifetime limited warranty',
+  windRating: '110 mph',
+  algaeResistance: 'StreakFighter technology',
   },
 ];
 
@@ -101,23 +101,23 @@ const productLines = [
 const selectBenefits = [
   {
     icon: BadgeCheck,
-    title: 'ShingleMaster Certified',
-    description: 'The highest CertainTeed contractor certification - only 1% of contractors qualify.',
+  title: 'ShingleMaster Certified',
+  description: 'The highest CertainTeed contractor certification - only 1% of contractors qualify.',
   },
   {
     icon: FileCheck,
-    title: 'SureStart PLUS Warranty',
-    description: 'Enhanced 4-star warranty coverage including workmanship for maximum protection.',
+  title: 'SureStart PLUS Warranty',
+  description: 'Enhanced 4-star warranty coverage including workmanship for maximum protection.',
   },
   {
     icon: Award,
-    title: 'Factory-Trained Crews',
-    description: 'Our installers complete rigorous CertainTeed certification training annually.',
+  title: 'Factory-Trained Crews',
+  description: 'Our installers complete rigorous CertainTeed certification training annually.',
   },
   {
     icon: Shield,
-    title: 'Material & Labor Coverage',
-    description: 'Full coverage of materials AND labor - not just materials like standard warranties.',
+  title: 'Material & Labor Coverage',
+  description: 'Full coverage of materials AND labor - not just materials like standard warranties.',
   },
 ];
 
@@ -125,33 +125,33 @@ const selectBenefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'ShingleMaster',
-    description: 'Charlotte\'s trusted CertainTeed ShingleMaster contractor since 2020.',
+  title: 'ShingleMaster',
+  description: 'Charlotte\'s trusted CertainTeed ShingleMaster contractor since 2020.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Expert Installation',
-    description: 'Manufacturer-certified installation that protects your warranty investment.',
+  title: 'Expert Installation',
+  description: 'Manufacturer-certified installation that protects your warranty investment.',
   },
   {
     icon: Clock,
-    title: 'Fast Turnaround',
-    description: 'Most residential roofs completed in 1-2 days with thorough cleanup.',
+  title: 'Fast Turnaround',
+  description: 'Most residential roofs completed in 1-2 days with thorough cleanup.',
   },
 ];
 
@@ -159,15 +159,15 @@ const whyChooseUs = [
 const colorCollections = [
   {
     name: 'Natural Earthtones',
-    colors: ['Weathered Wood', 'Heather Blend', 'Burnt Sienna', 'Resawn Shake'],
+  colors: ['Weathered Wood', 'Heather Blend', 'Burnt Sienna', 'Resawn Shake'],
   },
   {
     name: 'Classic Grays',
-    colors: ['Pewter', 'Pewterwood', 'Charcoal Black', 'Colonial Slate'],
+  colors: ['Pewter', 'Pewterwood', 'Charcoal Black', 'Colonial Slate'],
   },
   {
     name: 'Designer Colors',
-    colors: ['Moire Black', 'Driftwood', 'Georgetown Gray', 'Hunter Green'],
+  colors: ['Moire Black', 'Driftwood', 'Georgetown Gray', 'Hunter Green'],
   },
 ];
 
@@ -184,42 +184,42 @@ const comparison = [
 const faqs = [
   {
     question: 'What is a CertainTeed ShingleMaster?',
-    answer:
+  answer:
       'ShingleMaster is CertainTeed\'s highest contractor certification level - only the top 1% of roofing contractors qualify. To achieve this status, contractors must meet strict credentialing requirements, maintain excellent customer reviews, and complete advanced installation training. Best Roofing Now is proud to be Charlotte\'s trusted ShingleMaster contractor.',
   },
   {
     question: 'What warranty comes with CertainTeed shingles?',
-    answer:
+  answer:
       'CertainTeed Landmark shingles come with a 50-year limited warranty. As a ShingleMaster, we can offer the SureStart PLUS extended warranty which includes 4-star coverage: materials, labor, and workmanship for the first 25 years, with full transferability. This is one of the best warranties in the industry.',
   },
   {
     question: 'How much do CertainTeed shingles cost in Charlotte?',
-    answer:
+  answer:
       'CertainTeed Landmark shingles typically cost $8,000-$15,000 installed for an average Charlotte home, depending on roof size, complexity, and specific product line. Landmark PRO and Premium lines cost slightly more. We provide detailed, transparent estimates with no hidden fees. The enhanced warranty protection makes CertainTeed an excellent value.',
   },
   {
     question: 'How long do CertainTeed shingles last?',
-    answer:
+  answer:
       'CertainTeed Landmark shingles are designed to last 25-30 years or more in Charlotte\'s climate when properly installed. The 50-year warranty reflects CertainTeed\'s confidence in their products. Proper installation by a certified contractor like Best Roofing Now is key to achieving maximum lifespan.',
   },
   {
     question: 'What colors are available in CertainTeed Landmark?',
-    answer:
+  answer:
       'CertainTeed offers 50+ colors across their product lines. Popular choices in Charlotte include Weathered Wood, Pewter, Charcoal Black, and Colonial Slate. The Max Def color technology in Landmark PRO provides enhanced color definition and depth. We have samples available to help you choose the perfect color for your home.',
   },
   {
     question: 'What is StreakFighter technology?',
-    answer:
+  answer:
       'StreakFighter is CertainTeed\'s algae-resistant technology that prevents ugly black streaks caused by algae growth. This is especially important in Charlotte\'s humid climate where algae can be a problem. All Landmark shingles include StreakFighter technology standard.',
   },
   {
     question: 'Is CertainTeed better than GAF or Owens Corning?',
-    answer:
+  answer:
       'CertainTeed, GAF, and Owens Corning are all excellent manufacturers. CertainTeed stands out for its extensive color selection, StreakFighter algae resistance, and the ShingleMaster program which ensures top-quality installation. As certified contractors for multiple manufacturers, we can help you choose the best option for your specific needs.',
   },
   {
     question: 'Can I transfer my CertainTeed warranty if I sell my home?',
-    answer:
+  answer:
       'Yes! CertainTeed warranties are transferable, which adds value when selling your home. With the SureStart PLUS warranty available through ShingleMaster contractors, the enhanced coverage transfers to the new owner, making your home more attractive to buyers.',
   },
 ];
@@ -234,7 +234,6 @@ export default function CertainTeedShinglesCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

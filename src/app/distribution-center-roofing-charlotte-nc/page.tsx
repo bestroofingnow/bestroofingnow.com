@@ -31,7 +31,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -60,16 +59,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Distribution Center Roofing Charlotte NC | Warehouse & Logistics Roofs | Best Roofing Now',
-    description:
+  description:
       'Expert distribution center roofing contractors in Charlotte NC. Specializing in fulfillment centers, cold storage, logistics facilities & e-commerce warehouses. Licensed & insured with free estimates.',
-    url: `${SITE_CONFIG.url}/distribution-center-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/distribution-center-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Distribution center roofing Charlotte NC - Best Roofing Now logistics facility roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Distribution center roofing Charlotte NC - Best Roofing Now logistics facility roofing project',
       },
     ],
   },
@@ -79,39 +78,39 @@ export const metadata: Metadata = {
 const roofingSystems = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient single-ply membrane ideal for large distribution center roofs. Reflective white surface reduces cooling costs across massive floor plates.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient single-ply membrane ideal for large distribution center roofs. Reflective white surface reduces cooling costs across massive floor plates.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'EPDM Rubber Roofing',
-    description: 'Durable synthetic rubber membrane built for the scale of distribution facilities. Excellent weather resistance and 30+ year lifespan with minimal maintenance.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Durable synthetic rubber membrane built for the scale of distribution facilities. Excellent weather resistance and 30+ year lifespan with minimal maintenance.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Standing seam and R-panel metal roofing for distribution centers requiring superior durability, long spans, and minimal maintenance downtime.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Standing seam and R-panel metal roofing for distribution centers requiring superior durability, long spans, and minimal maintenance downtime.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Spray Foam Roofing',
-    description: 'Seamless insulation and waterproofing perfect for cold storage facilities and temperature-sensitive distribution operations requiring superior R-values.',
-    href: '/services/commercial-roofing',
+  title: 'Spray Foam Roofing',
+  description: 'Seamless insulation and waterproofing perfect for cold storage facilities and temperature-sensitive distribution operations requiring superior R-values.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Multi-layer roofing systems providing heavy-duty protection for high-traffic distribution centers with rooftop equipment and HVAC units.',
-    href: '/services/commercial-roofing',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Multi-layer roofing systems providing heavy-duty protection for high-traffic distribution centers with rooftop equipment and HVAC units.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Roof Coatings & Restoration',
-    description: 'Reflective coatings that extend existing roof life by 10-15 years, reducing costs for distribution centers looking to avoid full replacement.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings & Restoration',
+  description: 'Reflective coatings that extend existing roof life by 10-15 years, reducing costs for distribution centers looking to avoid full replacement.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -119,33 +118,33 @@ const roofingSystems = [
 const buildingTypes = [
   {
     icon: Warehouse,
-    title: 'Distribution Centers',
-    description: 'Large-scale roofing for regional and national distribution hubs ranging from 100,000 to 1,000,000+ square feet along Charlotte\u0027s major corridors.',
+  title: 'Distribution Centers',
+  description: 'Large-scale roofing for regional and national distribution hubs ranging from 100,000 to 1,000,000+ square feet along Charlotte\u0027s major corridors.',
   },
   {
     icon: Truck,
-    title: 'Fulfillment Centers',
-    description: 'Roofing solutions for e-commerce fulfillment operations requiring uninterrupted 24/7 service, including Amazon-style sortation centers.',
+  title: 'Fulfillment Centers',
+  description: 'Roofing solutions for e-commerce fulfillment operations requiring uninterrupted 24/7 service, including Amazon-style sortation centers.',
   },
   {
     icon: Thermometer,
-    title: 'Cold Storage Facilities',
-    description: 'Specialized insulated roofing systems for refrigerated warehouses and freezer facilities that maintain strict temperature control and prevent condensation.',
+  title: 'Cold Storage Facilities',
+  description: 'Specialized insulated roofing systems for refrigerated warehouses and freezer facilities that maintain strict temperature control and prevent condensation.',
   },
   {
     icon: Layers,
-    title: 'Cross-Dock Facilities',
-    description: 'Roofing for cross-docking terminals with multiple loading dock areas, designed to handle high-traffic operations and constant door openings.',
+  title: 'Cross-Dock Facilities',
+  description: 'Roofing for cross-docking terminals with multiple loading dock areas, designed to handle high-traffic operations and constant door openings.',
   },
   {
     icon: Zap,
-    title: 'E-Commerce Warehouses',
-    description: 'Modern roofing systems for tech-enabled e-commerce warehouses with extensive lighting, conveyor, and automation infrastructure on the roof deck.',
+  title: 'E-Commerce Warehouses',
+  description: 'Modern roofing systems for tech-enabled e-commerce warehouses with extensive lighting, conveyor, and automation infrastructure on the roof deck.',
   },
   {
     icon: Building2,
-    title: 'Last-Mile Delivery Hubs',
-    description: 'Roofing for last-mile distribution stations and delivery hubs popping up across Charlotte\u0027s growing suburban corridors and neighborhoods.',
+  title: 'Last-Mile Delivery Hubs',
+  description: 'Roofing for last-mile distribution stations and delivery hubs popping up across Charlotte\u0027s growing suburban corridors and neighborhoods.',
   },
 ];
 
@@ -153,33 +152,33 @@ const buildingTypes = [
 const whyChooseUs = [
   {
     icon: Ruler,
-    title: 'Large-Scale Expertise',
-    description: 'Experienced with projects from 100,000 to 1,000,000+ square feet. We have the equipment, crews, and logistics to match your facility\u0027s scale.',
+  title: 'Large-Scale Expertise',
+  description: 'Experienced with projects from 100,000 to 1,000,000+ square feet. We have the equipment, crews, and logistics to match your facility\u0027s scale.',
   },
   {
     icon: Clock,
-    title: 'Zero-Downtime Installation',
-    description: 'We work around 24/7 operations with night, weekend, and phased crews so your shipments never stop moving.',
+  title: 'Zero-Downtime Installation',
+  description: 'We work around 24/7 operations with night, weekend, and phased crews so your shipments never stop moving.',
   },
   {
     icon: Shield,
-    title: 'Safety Certified',
-    description: 'OSHA-compliant crews trained in distribution center safety protocols, including forklift zones, dock areas, and active shipping lanes.',
+  title: 'Safety Certified',
+  description: 'OSHA-compliant crews trained in distribution center safety protocols, including forklift zones, dock areas, and active shipping lanes.',
   },
   {
     icon: Award,
-    title: 'Manufacturer Certified',
-    description: 'Factory-certified installers for GAF, Carlisle, Firestone, and Johns Manville, ensuring top-tier warranty coverage on your investment.',
+  title: 'Manufacturer Certified',
+  description: 'Factory-certified installers for GAF, Carlisle, Firestone, and Johns Manville, ensuring top-tier warranty coverage on your investment.',
   },
   {
     icon: DollarSign,
-    title: 'Volume Pricing',
-    description: 'Competitive per-square-foot pricing for large distribution center projects. Transparent bids with no hidden costs or change orders.',
+  title: 'Volume Pricing',
+  description: 'Competitive per-square-foot pricing for large distribution center projects. Transparent bids with no hidden costs or change orders.',
   },
   {
     icon: Users,
-    title: 'Dedicated Project Managers',
-    description: 'Single point of contact who coordinates with your facility and operations managers, providing weekly updates and clear timelines.',
+  title: 'Dedicated Project Managers',
+  description: 'Single point of contact who coordinates with your facility and operations managers, providing weekly updates and clear timelines.',
   },
 ];
 
@@ -215,42 +214,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does distribution center roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Distribution center roof replacement in Charlotte typically costs $4 to $9 per square foot for membrane systems (TPO, EPDM) and $8 to $14 per square foot for metal roofing. A 200,000 sq ft distribution center might cost $800,000-$1,800,000 depending on the system, deck condition, and insulation requirements. Cold storage facilities can be 20-30% higher due to specialized insulation. We provide free detailed estimates tailored to your facility.',
   },
   {
     question: 'Can you reroof our distribution center without disrupting 24/7 operations?',
-    answer:
+  answer:
       'Absolutely. We specialize in zero-downtime roofing for 24/7 distribution and fulfillment operations. Our crews work in carefully planned sections, coordinating with your operations team to avoid active shipping lanes, dock areas, and critical zones. We offer night and weekend shifts and have completed projects for major logistics companies in Charlotte without a single shipment delay.',
   },
   {
     question: 'What is the best roofing system for a distribution center in Charlotte?',
-    answer:
+  answer:
       'For most Charlotte distribution centers, we recommend TPO membrane roofing. Its reflective white surface reduces cooling costs by up to 30% during our hot summers, and it handles the large, flat roof expanses common in distribution facilities. For cold storage operations, spray polyurethane foam (SPF) with a protective coating offers superior insulation. Metal roofing is ideal for facilities needing 40+ year lifespans with minimal maintenance.',
   },
   {
     question: 'How do you handle roofing for cold storage and refrigerated warehouses?',
-    answer:
+  answer:
       'Cold storage roofing requires specialized expertise to prevent condensation, ice damming, and thermal bridging. We install high-R-value insulation systems, vapor barriers on the warm side of the assembly, and membrane systems designed for temperature differentials. Our crews understand the critical importance of maintaining your cold chain during installation and work in small sections to prevent temperature fluctuations.',
   },
   {
     question: 'How long does a distribution center roof installation take?',
-    answer:
+  answer:
       'Timeline depends on facility size and complexity. A typical 100,000 sq ft distribution center takes 3-5 weeks for membrane systems, while 500,000+ sq ft facilities may require 10-16 weeks. We provide detailed project schedules upfront, and our phased approach means your operations continue uninterrupted throughout the process. Fast-track options are available for urgent situations.',
   },
   {
     question: 'Do you offer roof maintenance programs for distribution centers?',
-    answer:
+  answer:
       'Yes, we offer comprehensive preventive maintenance programs specifically designed for distribution centers and logistics facilities. Our plans include bi-annual inspections, drain clearing, sealant maintenance, and prompt repair of any issues before they cause leaks that could damage inventory. Regular maintenance can extend your roof\u0027s life by 5-10 years and is often required to maintain manufacturer warranties.',
   },
   {
     question: 'Can your roofing support rooftop solar installations on our distribution center?',
-    answer:
+  answer:
       'Many distribution centers along the I-85 corridor are adding rooftop solar to reduce energy costs. We work with solar contractors to ensure proper load distribution, waterproof penetrations, and compatible membrane systems. We can install a new roof system specifically engineered to support solar arrays, potentially qualifying your facility for federal tax credits and North Carolina renewable energy incentives.',
   },
   {
     question: 'Do you work with national logistics companies and REITs?',
-    answer:
+  answer:
       'Yes, we work with national logistics companies, real estate investment trusts (REITs), and property management firms with multiple distribution facilities in the Charlotte region. We offer dedicated account management, standardized reporting, and can coordinate multi-site projects across your Charlotte-area portfolio. Our experience with national compliance standards and procurement processes makes us a trusted partner for institutional owners.',
   },
 ];
@@ -265,7 +264,6 @@ export default function DistributionCenterRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/distribution-center-roofing-charlotte-nc`}
         pageName="Distribution Center Roofing Charlotte NC"
@@ -356,7 +354,7 @@ export default function DistributionCenterRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               From massive regional distribution centers along I-85 to last-mile delivery hubs throughout Charlotte,
-              we have the expertise to roof any logistics facility.
+  we have the expertise to roof any logistics facility.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -539,7 +537,7 @@ export default function DistributionCenterRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               We serve distribution and logistics facilities throughout the Greater Charlotte area,
-              including the I-85 and I-77 industrial corridors.
+  including the I-85 and I-77 industrial corridors.
             </p>
           </div>
 

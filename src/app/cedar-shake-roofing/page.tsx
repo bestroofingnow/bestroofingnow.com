@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Cedar Shake Roofing Charlotte NC | Natural Wood Roofing | Best Roofing Now',
-    description: 'Premium cedar shake roofing installation and repair in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/cedar-shake-roofing`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Cedar shake roofing in Charlotte NC' }],
+  description: 'Premium cedar shake roofing installation and repair in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/cedar-shake-roofing`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Cedar shake roofing in Charlotte NC' }],
   },
 };
 
@@ -96,8 +96,8 @@ export default function CedarShakeRoofingPage() {
       <ServiceSchema
         service={{
           title: "Cedar Shake Roofing",
-          description: "Premium cedar shake roofing installation and repair in Charlotte NC.",
-          slug: "cedar-shake-roofing",
+  description: "Premium cedar shake roofing installation and repair in Charlotte NC.",
+  slug: "cedar-shake-roofing",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/cedar-shake-roofing`} pageName="Cedar Shake Roofing Charlotte NC" city="Charlotte" />

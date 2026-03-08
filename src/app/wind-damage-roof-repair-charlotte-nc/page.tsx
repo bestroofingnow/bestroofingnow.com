@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Wind Damage Roof Repair Charlotte NC | Emergency Service | Best Roofing Now',
-    description:
+  description:
       '24/7 emergency wind damage roof repair in Charlotte NC. Fast response, insurance claim assistance. BBB A+ rated.',
-    url: `${SITE_CONFIG.url}/wind-damage-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/wind-damage-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.stormDamage,
-        width: 1200,
-        height: 630,
-        alt: 'Wind damage roof repair Charlotte NC - Best Roofing Now emergency services',
+  width: 1200,
+  height: 630,
+  alt: 'Wind damage roof repair Charlotte NC - Best Roofing Now emergency services',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Wind,
-    title: 'Shingle Blowoff Repair',
-    description: 'Fast repair of blown-off, lifted, or creased shingles from high wind events.',
-    href: '/services/storm-damage',
+  title: 'Shingle Blowoff Repair',
+  description: 'Fast repair of blown-off, lifted, or creased shingles from high wind events.',
+  href: '/services/storm-damage',
   },
   {
     icon: AlertTriangle,
-    title: '24/7 Emergency Response',
-    description: 'Round-the-clock emergency tarping and temporary repairs to prevent further damage.',
-    href: '/services/emergency-roofing',
+  title: '24/7 Emergency Response',
+  description: 'Round-the-clock emergency tarping and temporary repairs to prevent further damage.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Home,
-    title: 'Complete Wind Damage Restoration',
-    description: 'Full roof restoration including structural repairs, underlayment, and new shingles.',
-    href: '/services/roof-replacement',
+  title: 'Complete Wind Damage Restoration',
+  description: 'Full roof restoration including structural repairs, underlayment, and new shingles.',
+  href: '/services/roof-replacement',
   },
   {
     icon: FileText,
-    title: 'Insurance Claim Assistance',
-    description: 'Expert documentation and support to help you navigate the insurance claims process.',
-    href: '/services/storm-damage',
+  title: 'Insurance Claim Assistance',
+  description: 'Expert documentation and support to help you navigate the insurance claims process.',
+  href: '/services/storm-damage',
   },
   {
     icon: Camera,
-    title: 'Damage Inspection & Documentation',
-    description: 'Thorough inspection with photos and detailed reports for insurance purposes.',
-    href: '/services/roof-inspection',
+  title: 'Damage Inspection & Documentation',
+  description: 'Thorough inspection with photos and detailed reports for insurance purposes.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Wrench,
-    title: 'Flashing & Vent Repair',
-    description: 'Repair of wind-damaged flashing, vents, ridge caps, and roof accessories.',
-    href: '/services/roof-repair',
+  title: 'Flashing & Vent Repair',
+  description: 'Repair of wind-damaged flashing, vents, ridge caps, and roof accessories.',
+  href: '/services/roof-repair',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'We respond immediately to wind damage emergencies, day or night, to protect your home.',
+  title: '24/7 Emergency Service',
+  description: 'We respond immediately to wind damage emergencies, day or night, to protect your home.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: FileText,
-    title: 'Insurance Experts',
-    description: 'We work directly with insurance companies and help maximize your claim settlement.',
+  title: 'Insurance Experts',
+  description: 'We work directly with insurance companies and help maximize your claim settlement.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
 ];
 
@@ -184,42 +184,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What wind speed causes roof damage?',
-    answer:
+  answer:
       'Roof damage can occur at wind speeds as low as 45-50 mph, though significant damage typically happens at 60+ mph. Charlotte experiences severe thunderstorms with winds exceeding 60-80 mph several times per year. Even "moderate" winds of 40-50 mph can lift and damage older or improperly installed shingles. After any significant wind event, we recommend a free inspection.',
   },
   {
     question: 'How do I know if my roof has wind damage?',
-    answer:
+  answer:
       'Signs of wind damage include: missing or lifted shingles, shingles with creased or bent corners, granules in gutters or on the ground, exposed roof deck or underlayment, damaged flashing around vents and chimneys, and visible debris on the roof. From inside, look for water stains on ceilings. If you suspect damage, call us for a free inspection.',
   },
   {
     question: 'Does homeowners insurance cover wind damage to roofs?',
-    answer:
+  answer:
       'Yes, most homeowners insurance policies in Charlotte cover wind damage to roofs. This includes damage from thunderstorms, hurricanes, and tornadoes. We help document the damage thoroughly and work with your insurance adjuster to ensure you receive fair compensation. Many Charlotte homeowners are surprised to learn their damage qualifies for a full roof replacement.',
   },
   {
     question: 'How quickly can you respond to wind damage emergencies?',
-    answer:
+  answer:
       'We offer 24/7 emergency response throughout Charlotte and typically arrive within 1-4 hours for urgent situations. Our first priority is preventing further damage with emergency tarping and temporary repairs. We then schedule a complete assessment and permanent repairs as quickly as possible.',
   },
   {
     question: 'What should I do immediately after wind damages my roof?',
-    answer:
+  answer:
       'First, ensure everyone is safe and stay away from any hanging debris. Document visible damage with photos from the ground (never climb onto a damaged roof). Move valuables away from any active leaks and place buckets to catch water. Call us immediately for emergency service at (704) 605-6047. Do not attempt roof repairs yourself.',
   },
   {
     question: 'How long does wind damage roof repair take?',
-    answer:
+  answer:
       'Emergency tarping is typically completed within hours of our arrival. Minor repairs like replacing a few shingles can be done in a day. Major repairs or full replacements due to wind damage usually take 1-3 days once materials arrive. We expedite insurance claims to get your permanent repairs completed as quickly as possible.',
   },
   {
     question: 'Will you work with my insurance company?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience with all major insurance companies in Charlotte. We provide detailed documentation, meet with adjusters on-site, and advocate for fair settlements. Our goal is to ensure your roof is fully restored at minimal out-of-pocket cost to you.',
   },
   {
     question: 'Can wind damage that looks minor be serious?',
-    answer:
+  answer:
       'Yes, seemingly minor wind damage can lead to major problems if not addressed. A few lifted shingles can allow water infiltration that damages decking, insulation, and interior ceilings. Creased shingles lose their watertight seal and are prone to leaks. Even if damage appears minimal, we recommend a professional inspection to assess the true extent.',
   },
 ];
@@ -234,7 +234,6 @@ export default function WindDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

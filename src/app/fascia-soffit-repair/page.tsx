@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Fascia & Soffit Repair Charlotte NC | Best Roofing Now',
-    description: 'Professional fascia and soffit repair and replacement services in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/fascia-soffit-repair`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Fascia and soffit repair in Charlotte NC' }],
+  description: 'Professional fascia and soffit repair and replacement services in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/fascia-soffit-repair`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Fascia and soffit repair in Charlotte NC' }],
   },
 };
 
@@ -99,8 +99,8 @@ export default function FasciaSoffitRepairPage() {
       <ServiceSchema
         service={{
           title: "Fascia and Soffit Repair",
-          description: "Professional fascia and soffit repair and replacement services in Charlotte NC.",
-          slug: "fascia-soffit-repair",
+  description: "Professional fascia and soffit repair and replacement services in Charlotte NC.",
+  slug: "fascia-soffit-repair",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/fascia-soffit-repair`} pageName="Fascia Soffit Repair Charlotte NC" city="Charlotte" />

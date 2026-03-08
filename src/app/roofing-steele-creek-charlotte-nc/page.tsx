@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Steele Creek Charlotte NC | Southwest Charlotte | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated roofing contractor serving Steele Creek. Experts in newer subdivisions and family homes. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-steele-creek-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-steele-creek-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Steele Creek Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Steele Creek Charlotte NC',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Steele Creek\'s family homes and newer subdivisions.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Steele Creek\'s family homes and newer subdivisions.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, wind damage, and general maintenance.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, wind damage, and general maintenance.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium shingles and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium shingles and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Comprehensive inspections to protect your home investment.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Comprehensive inspections to protect your home investment.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Quick response to storm damage with insurance claim assistance.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Quick response to storm damage with insurance claim assistance.',
+  href: '/services/storm-damage',
   },
   {
     icon: Building2,
-    title: 'HOA Approved',
-    description: 'We work within HOA guidelines and have experience with subdivision requirements.',
-    href: '/services/residential-roofing',
+  title: 'HOA Approved',
+  description: 'We work within HOA guidelines and have experience with subdivision requirements.',
+  href: '/services/residential-roofing',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'HOA Experience',
-    description: 'Familiar with Steele Creek HOA requirements and approval processes.',
+  title: 'HOA Experience',
+  description: 'Familiar with Steele Creek HOA requirements and approval processes.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Efficient Service',
-    description: 'Quick turnaround times to minimize disruption to your family.',
+  title: 'Efficient Service',
+  description: 'Quick turnaround times to minimize disruption to your family.',
   },
 ];
 
@@ -153,42 +153,42 @@ const nearbyNeighborhoods = [
 const faqs = [
   {
     question: 'Do you have experience with Steele Creek\'s newer subdivisions?',
-    answer:
+  answer:
       'Yes! Best Roofing Now has extensive experience working in Steele Creek\'s master-planned communities like Berewick, Rivergate, and others. We understand the specific requirements of newer construction, including builder-grade materials that may need upgrading, warranty considerations, and the importance of maintaining neighborhood aesthetics.',
   },
   {
     question: 'Can you work with my HOA requirements in Steele Creek?',
-    answer:
+  answer:
       'Absolutely. We\'re familiar with the HOA approval processes common in Steele Creek subdivisions. We can help you select materials that meet your HOA\'s architectural guidelines, provide documentation needed for approval, and ensure our work meets all community standards. Many Steele Creek HOAs have approved our crews for multiple projects.',
   },
   {
     question: 'My home is only 10-15 years old. Why might I need roofing work?',
-    answer:
+  answer:
       'Many Steele Creek homes were built during the early 2000s housing boom with builder-grade materials that may not withstand Charlotte\'s weather as well as premium options. After 10-15 years, it\'s common to see issues like curling shingles, granule loss, or minor leaks. A free inspection can identify if repairs or preventive maintenance will extend your roof\'s life.',
   },
   {
     question: 'How do you handle storm damage claims in Steele Creek?',
-    answer:
+  answer:
       'Steele Creek\'s location in southwest Charlotte makes it susceptible to severe thunderstorms. We have extensive experience with insurance claims in this area. We provide thorough documentation, meet with adjusters, and advocate for fair settlements. Many Steele Creek roofs qualify for insurance coverage after storm events.',
   },
   {
     question: 'What roofing materials do you recommend for Steele Creek homes?',
-    answer:
+  answer:
       'For Steele Creek\'s family homes, we typically recommend architectural shingles like CertainTeed Landmark or GAF Timberline HDZ. These offer excellent durability, curb appeal, and come in colors that complement the neighborhood\'s aesthetic. For homeowners wanting premium options, we offer impact-resistant shingles that may qualify for insurance discounts.',
   },
   {
     question: 'How much does roof replacement cost in Steele Creek?',
-    answer:
+  answer:
       'Roof replacement costs in Steele Creek typically range from $8,000 to $18,000 for most family homes, depending on size, pitch, and material choice. Many homes in the area are similarly sized, so costs tend to fall within a predictable range. We provide free, detailed estimates specific to your home.',
   },
   {
     question: 'Do you offer financing for Steele Creek homeowners?',
-    answer:
+  answer:
       'Yes! We offer flexible financing options to help Steele Creek families invest in quality roofing without straining their budget. We partner with trusted lenders to provide competitive rates. Many homeowners qualify for 0% APR for 12-18 months or affordable monthly payments on longer terms.',
   },
   {
     question: 'How quickly can you complete a roofing project in Steele Creek?',
-    answer:
+  answer:
       'Most Steele Creek homes can be completed in 1-2 days. We work efficiently while maintaining quality, allowing your family to return to normal life quickly. We\'re also respectful of neighbors and work within reasonable hours to minimize disruption to the community.',
   },
 ];
@@ -203,7 +203,6 @@ export default function RoofingSteeleCreekCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -232,7 +231,7 @@ export default function RoofingSteeleCreekCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Steele Creek&apos;s growing communities deserve roofing contractors who understand modern
               subdivisions. Best Roofing Now provides expert roofing services for family homes,
-              working within HOA guidelines while delivering exceptional quality.
+  working within HOA guidelines while delivering exceptional quality.
             </p>
 
             {/* CTA Buttons */}
@@ -295,13 +294,13 @@ export default function RoofingSteeleCreekCharlotteNCPage() {
               </p>
               <p className="text-gray text-lg mb-4">
                 Best Roofing Now understands what Steele Creek homeowners need: reliable service,
-                HOA-compliant materials, efficient project timelines, and roofing that protects your
+  HOA-compliant materials, efficient project timelines, and roofing that protects your
                 family and investment. We&apos;ve completed numerous projects throughout the area and
                 understand the specific needs of this growing community.
               </p>
               <p className="text-gray text-lg mb-6">
                 Whether your home is in a newer subdivision or an established Steele Creek neighborhood,
-                we deliver the same commitment to quality, value, and customer service that has made us
+  we deliver the same commitment to quality, value, and customer service that has made us
                 one of Charlotte&apos;s most trusted roofing contractors.
               </p>
               <div className="flex flex-wrap gap-4">

@@ -23,7 +23,6 @@ import { CTASection } from '@/components/sections/CTASection';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -54,16 +53,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Fort Mill SC | Emergency & Storm Damage | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated roof repair in Fort Mill SC. Fast response for leaks, storm damage, and emergency repairs. Veteran-owned with 500+ roofs serviced. Free estimates!',
-    url: `${SITE_CONFIG.url}/roof-repair-fort-mill-sc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-fort-mill-sc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof repair Fort Mill SC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof repair Fort Mill SC - Best Roofing Now',
       },
     ],
   },
@@ -73,33 +72,33 @@ export const metadata: Metadata = {
 const repairTypes = [
   {
     icon: Droplets,
-    title: 'Leak Repair',
-    description: 'Fast detection and repair of roof leaks before they cause interior water damage to your Fort Mill home.',
+  title: 'Leak Repair',
+  description: 'Fast detection and repair of roof leaks before they cause interior water damage to your Fort Mill home.',
   },
   {
     icon: Wind,
-    title: 'Storm Damage',
-    description: 'Complete storm damage repair including wind, hail, and fallen debris damage with insurance assistance.',
+  title: 'Storm Damage',
+  description: 'Complete storm damage repair including wind, hail, and fallen debris damage with insurance assistance.',
   },
   {
     icon: Home,
-    title: 'Shingle Repair',
-    description: 'Missing, cracked, or curling shingle replacement to restore your roof\'s protection and appearance.',
+  title: 'Shingle Repair',
+  description: 'Missing, cracked, or curling shingle replacement to restore your roof\'s protection and appearance.',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repair',
-    description: 'Repair and replacement of damaged flashing around chimneys, vents, and roof edges.',
+  title: 'Flashing Repair',
+  description: 'Repair and replacement of damaged flashing around chimneys, vents, and roof edges.',
   },
   {
     icon: Thermometer,
-    title: 'Ventilation Repair',
-    description: 'Fixing damaged ridge vents, soffit vents, and attic ventilation systems.',
+  title: 'Ventilation Repair',
+  description: 'Fixing damaged ridge vents, soffit vents, and attic ventilation systems.',
   },
   {
     icon: CloudRain,
-    title: 'Gutter Repair',
-    description: 'Gutter repair and reattachment to protect your foundation from water damage.',
+  title: 'Gutter Repair',
+  description: 'Gutter repair and reattachment to protect your foundation from water damage.',
   },
 ];
 
@@ -107,33 +106,33 @@ const repairTypes = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'Same-Day Service',
-    description: 'Emergency repairs often completed the same day you call. We understand roof issues cannot wait.',
+  title: 'Same-Day Service',
+  description: 'Emergency repairs often completed the same day you call. We understand roof issues cannot wait.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Military values of integrity, excellence, and service guide everything we do.',
+  title: 'Veteran-Owned',
+  description: 'Military values of integrity, excellence, and service guide everything we do.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Fort Mill and Charlotte area customers.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Fort Mill and Charlotte area customers.`,
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed roofing contractor with comprehensive liability and workers comp insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed roofing contractor with comprehensive liability and workers comp insurance.',
   },
   {
     icon: Wrench,
-    title: 'Quality Materials',
-    description: 'We use only premium materials from CertainTeed, GAF, and Owens Corning.',
+  title: 'Quality Materials',
+  description: 'We use only premium materials from CertainTeed, GAF, and Owens Corning.',
   },
 ];
 
@@ -157,35 +156,35 @@ const fortMillAreas = [
 const faqs = [
   {
     question: 'How much does roof repair cost in Fort Mill SC?',
-    answer: 'Roof repair costs in Fort Mill SC typically range from $200-$1,500 depending on the type and extent of damage. Minor repairs like fixing a few shingles cost $200-$500, while more extensive repairs like flashing replacement or larger leak repairs range from $500-$1,500. Emergency and storm damage repairs may cost more. We provide free inspections and detailed quotes so you know exactly what to expect.',
+  answer: 'Roof repair costs in Fort Mill SC typically range from $200-$1,500 depending on the type and extent of damage. Minor repairs like fixing a few shingles cost $200-$500, while more extensive repairs like flashing replacement or larger leak repairs range from $500-$1,500. Emergency and storm damage repairs may cost more. We provide free inspections and detailed quotes so you know exactly what to expect.',
   },
   {
     question: 'Do you offer emergency roof repair in Fort Mill?',
-    answer: 'Yes! Best Roofing Now offers 24/7 emergency roof repair services in Fort Mill SC and York County. Whether you have an active leak, storm damage, or a tree on your roof, our emergency team can typically respond within 2-4 hours. We will secure your property, prevent further damage, and schedule permanent repairs as quickly as possible.',
+  answer: 'Yes! Best Roofing Now offers 24/7 emergency roof repair services in Fort Mill SC and York County. Whether you have an active leak, storm damage, or a tree on your roof, our emergency team can typically respond within 2-4 hours. We will secure your property, prevent further damage, and schedule permanent repairs as quickly as possible.',
   },
   {
     question: 'How quickly can you repair my roof in Fort Mill?',
-    answer: 'Most routine roof repairs in Fort Mill are completed the same day or within 24-48 hours of inspection. Emergency repairs and tarping can often be done within hours of your call. More extensive repairs or those requiring special materials may take 3-5 days. We always provide a timeline before beginning work.',
+  answer: 'Most routine roof repairs in Fort Mill are completed the same day or within 24-48 hours of inspection. Emergency repairs and tarping can often be done within hours of your call. More extensive repairs or those requiring special materials may take 3-5 days. We always provide a timeline before beginning work.',
   },
   {
     question: 'Do you help with insurance claims for storm damage in Fort Mill?',
-    answer: 'Absolutely. We have extensive experience helping Fort Mill homeowners with insurance claims for storm damage. We provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Fort Mill roofs qualify for insurance coverage after hail storms, wind damage, and other weather events.',
+  answer: 'Absolutely. We have extensive experience helping Fort Mill homeowners with insurance claims for storm damage. We provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Fort Mill roofs qualify for insurance coverage after hail storms, wind damage, and other weather events.',
   },
   {
     question: 'How do I know if I need roof repair or replacement?',
-    answer: 'Several factors determine whether repair or replacement is best: roof age (asphalt roofs last 20-25 years), extent of damage, number of previous repairs, and overall condition. Our free inspection includes an honest assessment - we will never recommend replacement when a repair will solve the problem. We document everything with photos so you can make an informed decision.',
+  answer: 'Several factors determine whether repair or replacement is best: roof age (asphalt roofs last 20-25 years), extent of damage, number of previous repairs, and overall condition. Our free inspection includes an honest assessment - we will never recommend replacement when a repair will solve the problem. We document everything with photos so you can make an informed decision.',
   },
   {
     question: 'What are signs I need roof repair in Fort Mill?',
-    answer: 'Common signs you need roof repair include: visible damage or missing shingles, water stains on ceilings or walls, granules in gutters, daylight visible through the roof, sagging areas, higher energy bills, and moss or algae growth. If you notice any of these signs, schedule a free inspection to assess the damage before it worsens.',
+  answer: 'Common signs you need roof repair include: visible damage or missing shingles, water stains on ceilings or walls, granules in gutters, daylight visible through the roof, sagging areas, higher energy bills, and moss or algae growth. If you notice any of these signs, schedule a free inspection to assess the damage before it worsens.',
   },
   {
     question: 'Is Best Roofing Now licensed to work in South Carolina?',
-    answer: 'Yes, Best Roofing Now is properly licensed and insured to perform roofing work in South Carolina including Fort Mill, Tega Cay, and all of York County. We carry comprehensive general liability insurance and workers compensation coverage, protecting you from any liability during your roofing project.',
+  answer: 'Yes, Best Roofing Now is properly licensed and insured to perform roofing work in South Carolina including Fort Mill, Tega Cay, and all of York County. We carry comprehensive general liability insurance and workers compensation coverage, protecting you from any liability during your roofing project.',
   },
   {
     question: 'What warranty do you offer on roof repairs in Fort Mill?',
-    answer: 'All roof repairs in Fort Mill come with our workmanship warranty, typically 2-5 years depending on the repair type. When we use manufacturer materials like CertainTeed, GAF, or Owens Corning, those materials carry their own warranty as well. We stand behind every repair we make.',
+  answer: 'All roof repairs in Fort Mill come with our workmanship warranty, typically 2-5 years depending on the repair type. When we use manufacturer materials like CertainTeed, GAF, or Owens Corning, those materials carry their own warranty as well. We stand behind every repair we make.',
   },
 ];
 
@@ -200,7 +199,6 @@ export default function RoofRepairFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-fort-mill-sc`}
         pageName="Roof Repair Fort Mill SC"
@@ -319,7 +317,7 @@ export default function RoofRepairFortMillSCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When you need roof repair in Fort Mill SC, you need a company that responds quickly, does quality work,
-                and treats you fairly. That is exactly what Best Roofing Now delivers.
+  and treats you fairly. That is exactly what Best Roofing Now delivers.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (

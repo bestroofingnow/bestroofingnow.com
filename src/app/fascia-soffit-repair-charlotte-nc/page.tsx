@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Fascia & Soffit Repair Charlotte NC | Trim Specialists | Best Roofing Now',
-    description:
+  description:
       'Fix damaged fascia and soffit with expert repair and replacement services in Charlotte NC. Aluminum, vinyl, and wood options. Free estimates.',
-    url: `${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional fascia and soffit repair Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Professional fascia and soffit repair Charlotte NC',
       },
     ],
   },
@@ -68,27 +68,27 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Wrench,
-    title: 'Fascia Board Repair',
-    description: 'Repair or replace damaged fascia boards that support your gutters and protect roof edges.',
-    features: ['Wood, aluminum, or composite', 'Custom color matching', 'Integrated gutter support'],
+  title: 'Fascia Board Repair',
+  description: 'Repair or replace damaged fascia boards that support your gutters and protect roof edges.',
+  features: ['Wood, aluminum, or composite', 'Custom color matching', 'Integrated gutter support'],
   },
   {
     icon: Wind,
-    title: 'Soffit Repair & Venting',
-    description: 'Restore soffit panels and ensure proper attic ventilation for energy efficiency.',
-    features: ['Vented soffit panels', 'Proper airflow calculation', 'Pest prevention'],
+  title: 'Soffit Repair & Venting',
+  description: 'Restore soffit panels and ensure proper attic ventilation for energy efficiency.',
+  features: ['Vented soffit panels', 'Proper airflow calculation', 'Pest prevention'],
   },
   {
     icon: Home,
-    title: 'Wood Rot Remediation',
-    description: 'Remove and replace rotted wood before it spreads to rafters and roof structure.',
-    features: ['Complete rot removal', 'Structural repair', 'Preventive treatment'],
+  title: 'Wood Rot Remediation',
+  description: 'Remove and replace rotted wood before it spreads to rafters and roof structure.',
+  features: ['Complete rot removal', 'Structural repair', 'Preventive treatment'],
   },
   {
     icon: Shield,
-    title: 'Aluminum Wrap & Replacement',
-    description: 'Low-maintenance aluminum fascia and soffit that resist rot, pests, and weather damage.',
-    features: ['30+ year lifespan', 'No painting required', 'Custom color options'],
+  title: 'Aluminum Wrap & Replacement',
+  description: 'Low-maintenance aluminum fascia and soffit that resist rot, pests, and weather damage.',
+  features: ['30+ year lifespan', 'No painting required', 'Custom color options'],
   },
 ];
 
@@ -96,23 +96,23 @@ const services = [
 const materials = [
   {
     name: 'Aluminum',
-    benefits: ['Rot-proof', 'Low maintenance', 'Multiple colors', '30+ year lifespan'],
-    description: 'The most popular choice for Charlotte homes. Never rots, never needs painting.',
+  benefits: ['Rot-proof', 'Low maintenance', 'Multiple colors', '30+ year lifespan'],
+  description: 'The most popular choice for Charlotte homes. Never rots, never needs painting.',
   },
   {
     name: 'Vinyl',
-    benefits: ['Affordable', 'Easy to clean', 'Good ventilation', 'Pest resistant'],
-    description: 'Budget-friendly option that provides good performance in our climate.',
+  benefits: ['Affordable', 'Easy to clean', 'Good ventilation', 'Pest resistant'],
+  description: 'Budget-friendly option that provides good performance in our climate.',
   },
   {
     name: 'Wood',
-    benefits: ['Traditional look', 'Paintable', 'Can be stained', 'Authentic appearance'],
-    description: 'Classic choice for historic homes. Requires regular maintenance.',
+  benefits: ['Traditional look', 'Paintable', 'Can be stained', 'Authentic appearance'],
+  description: 'Classic choice for historic homes. Requires regular maintenance.',
   },
   {
     name: 'Composite',
-    benefits: ['Wood look', 'Rot resistant', 'Low maintenance', 'Premium durability'],
-    description: 'Best of both worlds - wood appearance with synthetic durability.',
+  benefits: ['Wood look', 'Rot resistant', 'Low maintenance', 'Premium durability'],
+  description: 'Best of both worlds - wood appearance with synthetic durability.',
   },
 ];
 
@@ -120,33 +120,33 @@ const materials = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Trim Specialists',
-    description: 'Expert craftsmen who specialize in fascia, soffit, and trim installation.',
+  title: 'Trim Specialists',
+  description: 'Expert craftsmen who specialize in fascia, soffit, and trim installation.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Team',
-    description: 'Factory-trained installers for proper installation and warranty coverage.',
+  title: 'Certified Team',
+  description: 'Factory-trained installers for proper installation and warranty coverage.',
   },
   {
     icon: Clock,
-    title: 'Fast Turnaround',
-    description: 'Most fascia and soffit projects completed in 1-2 days.',
+  title: 'Fast Turnaround',
+  description: 'Most fascia and soffit projects completed in 1-2 days.',
   },
 ];
 
@@ -192,42 +192,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does fascia and soffit repair cost in Charlotte NC?',
-    answer:
+  answer:
       'Fascia and soffit repair in Charlotte typically costs $6-$20 per linear foot depending on material and extent of damage. Minor repairs might cost $300-$600, while full replacement on an average home runs $2,000-$5,000. Aluminum is mid-range ($8-$15/ft), wood is similar but requires painting, and composite is premium ($12-$20/ft). We provide free estimates with itemized pricing.',
   },
   {
     question: 'What causes fascia and soffit damage in Charlotte?',
-    answer:
+  answer:
       'Charlotte\'s humid climate is the primary cause of fascia and soffit damage. Wood rot from moisture exposure, pest damage (carpenter bees, woodpeckers, squirrels), clogged gutters that overflow onto fascia, ice dams in winter, and lack of proper attic ventilation all contribute. Regular inspection and maintenance helps prevent major damage.',
   },
   {
     question: 'Should I repair or replace my fascia and soffit?',
-    answer:
+  answer:
       'If damage is localized to a small area (less than 20% of total length), repair is usually cost-effective. However, if you have widespread rot, multiple damaged sections, or your materials are 20+ years old, replacement often makes more sense. We recommend aluminum or composite replacement to prevent future rot problems.',
   },
   {
     question: 'What is the best material for fascia and soffit in Charlotte?',
-    answer:
+  answer:
       'For Charlotte\'s humid climate, we recommend aluminum fascia and soffit. Aluminum is completely rot-proof, never needs painting, resists pest damage, and lasts 30+ years. It comes in many colors to match your home. Vinyl is a budget-friendly alternative, while composite offers a wood look with better durability than real wood.',
   },
   {
     question: 'How long does fascia and soffit installation take?',
-    answer:
+  answer:
       'Most fascia and soffit replacement projects in Charlotte take 1-2 days for an average-sized home. Larger homes or those with extensive rot requiring structural repair may take 3-4 days. We work efficiently while ensuring quality installation and complete cleanup.',
   },
   {
     question: 'Why is my soffit important for attic ventilation?',
-    answer:
+  answer:
       'Soffit vents are critical for proper attic ventilation. They allow cool air to enter the attic at the eaves, while ridge vents or other exhaust vents let hot air escape at the peak. This airflow keeps your attic cooler in summer (reducing AC costs) and prevents moisture buildup that causes mold and ice dams in winter.',
   },
   {
     question: 'Can you match my existing fascia and soffit?',
-    answer:
+  answer:
       'Yes, we can match most existing fascia and soffit materials and colors. For aluminum and vinyl, we have access to a wide range of factory colors. For wood, we can match profiles and stain/paint to blend with existing trim. If an exact match isn\'t possible, we\'ll discuss options like replacing entire sections for consistent appearance.',
   },
   {
     question: 'Do you repair fascia damaged by pests?',
-    answer:
+  answer:
       'Yes, we repair fascia and soffit damaged by carpenter bees, woodpeckers, squirrels, and other pests. Our repair process includes removing damaged materials, treating remaining wood, and installing new materials. We recommend aluminum or composite replacements to prevent future pest damage.',
   },
 ];
@@ -242,7 +242,6 @@ export default function FasciaSoffitRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -414,7 +413,7 @@ export default function FasciaSoffitRepairCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-6">
                 Damaged fascia and soffit can lead to serious problems including water damage,
-                pest infestations, and poor attic ventilation. Watch for these warning signs:
+  pest infestations, and poor attic ventilation. Watch for these warning signs:
               </p>
               <ul className="space-y-3">
                 {problemSigns.map((sign) => (

@@ -20,7 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Ice Dam Prevention Charlotte NC | Winter Roofing | Best Roofing Now',
-    description:
+  description:
       'Expert ice dam prevention in Charlotte NC. Proper ventilation, insulation, and ice barriers to protect your roof from winter damage. Free inspections.',
-    url: `${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero6,
-        width: 1200,
-        height: 630,
-        alt: 'Ice dam prevention services in Charlotte NC - Best Roofing Now winter roofing experts',
+  width: 1200,
+  height: 630,
+  alt: 'Ice dam prevention services in Charlotte NC - Best Roofing Now winter roofing experts',
       },
     ],
   },
@@ -67,28 +67,28 @@ export const metadata: Metadata = {
 const iceDamFormation = [
   {
     step: '1',
-    title: 'Heat Escapes',
-    description: 'Heat from your home rises into the attic through poor insulation or air leaks, warming the roof deck.',
+  title: 'Heat Escapes',
+  description: 'Heat from your home rises into the attic through poor insulation or air leaks, warming the roof deck.',
   },
   {
     step: '2',
-    title: 'Snow Melts',
-    description: 'The warm roof melts the snow on the upper portion of the roof, even while it\'s cold outside.',
+  title: 'Snow Melts',
+  description: 'The warm roof melts the snow on the upper portion of the roof, even while it\'s cold outside.',
   },
   {
     step: '3',
-    title: 'Water Flows Down',
-    description: 'Melted water flows down under the snow until it reaches the cold eaves (overhang) of the roof.',
+  title: 'Water Flows Down',
+  description: 'Melted water flows down under the snow until it reaches the cold eaves (overhang) of the roof.',
   },
   {
     step: '4',
-    title: 'Ice Forms',
-    description: 'At the cold eaves, the water refreezes, forming a ridge of ice - the "dam."',
+  title: 'Ice Forms',
+  description: 'At the cold eaves, the water refreezes, forming a ridge of ice - the "dam."',
   },
   {
     step: '5',
-    title: 'Water Backs Up',
-    description: 'The dam blocks additional melt water, which pools behind it and can leak under shingles into your home.',
+  title: 'Water Backs Up',
+  description: 'The dam blocks additional melt water, which pools behind it and can leak under shingles into your home.',
   },
 ];
 
@@ -96,26 +96,26 @@ const iceDamFormation = [
 const preventionSolutions = [
   {
     icon: Thermometer,
-    title: 'Attic Insulation',
-    description:
+  title: 'Attic Insulation',
+  description:
       'Proper attic insulation (R-38 to R-60 for Charlotte) keeps heat in your living space and out of the attic, reducing snow melt.',
   },
   {
     icon: Home,
-    title: 'Air Sealing',
-    description:
+  title: 'Air Sealing',
+  description:
       'Sealing air leaks around lights, fans, pipes, and hatches prevents warm air from entering the attic and heating the roof.',
   },
   {
     icon: Droplets,
-    title: 'Attic Ventilation',
-    description:
+  title: 'Attic Ventilation',
+  description:
       'Proper intake and exhaust ventilation keeps the roof deck cold and uniform, preventing uneven snow melt.',
   },
   {
     icon: Shield,
-    title: 'Ice & Water Shield',
-    description:
+  title: 'Ice & Water Shield',
+  description:
       'Self-adhering membrane installed under shingles at eaves, valleys, and penetrations provides backup waterproofing.',
   },
 ];
@@ -136,33 +136,33 @@ const iceDamDamage = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: Snowflake,
-    title: 'Winter Specialists',
-    description: 'We understand NC winter weather and how to protect your roof from ice and snow damage.',
+  title: 'Winter Specialists',
+  description: 'We understand NC winter weather and how to protect your roof from ice and snow damage.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Prompt Response',
-    description: 'When winter weather threatens, we respond quickly to protect your home.',
+  title: 'Prompt Response',
+  description: 'When winter weather threatens, we respond quickly to protect your home.',
   },
 ];
 
@@ -170,42 +170,42 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'Do ice dams happen in Charlotte NC?',
-    answer:
+  answer:
       'Yes, while less common than in northern states, Charlotte does experience ice dam conditions during winter weather events. Charlotte typically sees 1-3 snow events per year, and the freeze-thaw cycles are actually ideal for ice dam formation. When snow falls and is followed by sunny days and cold nights, ice dams can form on roofs with poor ventilation or insulation. After the significant snowfall events Charlotte experiences every few years, ice dam damage is common.',
   },
   {
     question: 'What causes ice dams to form?',
-    answer:
+  answer:
       'Ice dams form when heat escaping from your home warms the roof deck, melting the snow above it. The meltwater runs down until it reaches the cold eaves (overhang), where it refreezes because the eaves aren\'t warmed by escaping heat. This ice buildup creates a "dam" that blocks additional meltwater, which can then back up under your shingles and leak into your home. The root causes are typically inadequate attic insulation, poor ventilation, and air leaks.',
   },
   {
     question: 'How can I prevent ice dams on my Charlotte home?',
-    answer:
+  answer:
       'The key to ice dam prevention is keeping your roof deck cold and uniform. This is achieved through: proper attic insulation (we recommend R-38 to R-60), sealing air leaks that allow warm air into the attic, ensuring adequate attic ventilation with balanced intake and exhaust, and installing ice and water shield membrane during roof replacement. We offer comprehensive assessments to identify and address your home\'s specific vulnerabilities.',
   },
   {
     question: 'What is ice and water shield, and do I need it?',
-    answer:
+  answer:
       'Ice and water shield is a self-adhering rubberized membrane installed directly on the roof deck under shingles. It provides a waterproof barrier at vulnerable areas like eaves, valleys, and around penetrations. Building codes in North Carolina require it at eaves (typically 24" past the interior wall line). While it doesn\'t prevent ice dams, it protects against leaks when they occur. We strongly recommend installing it during any roof replacement in Charlotte.',
   },
   {
     question: 'How much does ice dam prevention cost?',
-    answer:
+  answer:
       'Costs vary based on what your home needs. Adding attic insulation typically costs $1,500-$3,500 for a standard home. Air sealing runs $300-$1,500 depending on the extent of leaks. Ventilation improvements range from $500-$2,000. Ice and water shield installation during a reroof is typically included in the price or adds $300-$800. We provide detailed quotes after assessing your home\'s specific needs.',
   },
   {
     question: 'I already have an ice dam. What should I do?',
-    answer:
+  answer:
       'If you have an active ice dam, don\'t try to chip it off yourself - you\'ll likely damage your shingles. Options include: carefully removing snow from the roof with a roof rake (from the ground), applying ice melt products in a stocking to create channels, or calling a professional for steam removal. If water is leaking inside, call us immediately. After the ice dam is addressed, we can help you prevent future occurrences.',
   },
   {
     question: 'Will my homeowners insurance cover ice dam damage?',
-    answer:
+  answer:
       'Most homeowners insurance policies cover sudden water damage from ice dams, including interior damage from leaks. However, they typically don\'t cover the preventive measures (insulation, ventilation) or gradual damage from ongoing issues. After a winter weather event causes ice dam damage, document everything and contact your insurance company. We can help document damage for claims and work with your adjuster.',
   },
   {
     question: 'Can I prevent ice dams without a new roof?',
-    answer:
+  answer:
       'Absolutely! While installing ice and water shield requires a roof replacement, the most important prevention measures can be done anytime: adding attic insulation, sealing air leaks, and improving ventilation. These improvements will not only prevent ice dams but also reduce energy bills year-round. We offer attic assessments and can implement these solutions without touching your existing roof.',
   },
 ];
@@ -236,7 +236,6 @@ export default function IceDamPreventionCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -265,7 +264,7 @@ export default function IceDamPreventionCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Charlotte's winter freeze-thaw cycles can create damaging ice dams on poorly ventilated roofs.
               Best Roofing Now provides comprehensive ice dam prevention services including insulation upgrades,
-              ventilation improvements, and ice barrier installation. Don't wait until winter damage strikes.
+  ventilation improvements, and ice barrier installation. Don't wait until winter damage strikes.
             </p>
 
             {/* CTA Buttons */}
@@ -529,7 +528,7 @@ export default function IceDamPreventionCharlotteNCPage() {
                   <p className="text-gray mb-4">
                     Charlotte's pattern of snow/ice followed by sunny days and cold nights is actually
                     worse for ice dams than consistent cold. The sun warms the roof during the day,
-                    melting snow, while cold nights refreeze the runoff at the eaves.
+  melting snow, while cold nights refreeze the runoff at the eaves.
                   </p>
                   <p className="text-gray">
                     Many Charlotte homes built before modern codes lack adequate attic insulation and

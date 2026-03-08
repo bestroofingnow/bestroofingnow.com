@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Chimney Flashing Repair Charlotte NC | Stop Chimney Leaks | Best Roofing Now',
-    description: 'Professional chimney flashing repair to stop leaks around your chimney.',
-    url: `${SITE_CONFIG.url}/chimney-flashing-repair`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Chimney flashing repair in Charlotte NC' }],
+  description: 'Professional chimney flashing repair to stop leaks around your chimney.',
+  url: `${SITE_CONFIG.url}/chimney-flashing-repair`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Chimney flashing repair in Charlotte NC' }],
   },
 };
 
@@ -91,8 +91,8 @@ export default function ChimneyFlashingRepairPage() {
       <ServiceSchema
         service={{
           title: "Chimney Flashing Repair",
-          description: "Professional chimney flashing repair services in Charlotte NC to stop leaks and protect your home.",
-          slug: "chimney-flashing-repair",
+  description: "Professional chimney flashing repair services in Charlotte NC to stop leaks and protect your home.",
+  slug: "chimney-flashing-repair",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/chimney-flashing-repair`} pageName="Chimney Flashing Repair Charlotte NC" city="Charlotte" />

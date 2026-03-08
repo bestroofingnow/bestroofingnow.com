@@ -32,7 +32,6 @@ import {
   BreadcrumbSchema,
   FAQSchema,
   WebPageSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -60,16 +59,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair vs. Replacement Charlotte NC | Decision Guide (2026)',
-    description:
+  description:
       'Complete guide to deciding between roof repair and replacement in Charlotte NC. 5-question framework, 2026 cost comparisons, material-specific thresholds, and insurance guidance. Free inspections available.',
-    url: `${SITE_CONFIG.url}/roof-repair-vs-replacement-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-vs-replacement-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero10,
-        width: 1200,
-        height: 630,
-        alt: 'Roof repair vs replacement Charlotte NC - decision guide by Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof repair vs replacement Charlotte NC - decision guide by Best Roofing Now',
       },
     ],
   },
@@ -79,43 +78,43 @@ export const metadata: Metadata = {
 const decisionFramework = [
   {
     number: '1',
-    icon: Clock,
-    question: 'How Old Is Your Roof?',
-    repairAnswer: 'Under 15 years old with plenty of life remaining',
-    replaceAnswer: 'Over 20 years old and approaching end of lifespan',
-    detail: 'Most asphalt shingle roofs in Charlotte last 20 to 25 years. If your roof is less than 15 years old and the damage is limited, repair is almost always the smarter move. Once your roof passes 20 years, even minor issues can signal that the entire system is wearing out, and repairs become a short-term fix on a long-term problem.',
+  icon: Clock,
+  question: 'How Old Is Your Roof?',
+  repairAnswer: 'Under 15 years old with plenty of life remaining',
+  replaceAnswer: 'Over 20 years old and approaching end of lifespan',
+  detail: 'Most asphalt shingle roofs in Charlotte last 20 to 25 years. If your roof is less than 15 years old and the damage is limited, repair is almost always the smarter move. Once your roof passes 20 years, even minor issues can signal that the entire system is wearing out, and repairs become a short-term fix on a long-term problem.',
   },
   {
     number: '2',
-    icon: Search,
-    question: 'How Widespread Is the Damage?',
-    repairAnswer: 'Localized to one area or a few shingles',
-    replaceAnswer: 'Spread across multiple areas or the entire roof',
-    detail: 'A few missing shingles after a storm or a single leak around a vent pipe is a straightforward repair. But if you are seeing damage in multiple locations, granule loss across large sections, or daylight through the roof deck in your attic, the underlying roofing system has likely deteriorated beyond what spot repairs can address.',
+  icon: Search,
+  question: 'How Widespread Is the Damage?',
+  repairAnswer: 'Localized to one area or a few shingles',
+  replaceAnswer: 'Spread across multiple areas or the entire roof',
+  detail: 'A few missing shingles after a storm or a single leak around a vent pipe is a straightforward repair. But if you are seeing damage in multiple locations, granule loss across large sections, or daylight through the roof deck in your attic, the underlying roofing system has likely deteriorated beyond what spot repairs can address.',
   },
   {
     number: '3',
-    icon: Home,
-    question: 'Are You Planning to Sell Soon?',
-    repairAnswer: 'Not selling, or selling is 5+ years away',
-    replaceAnswer: 'Selling within 1-3 years and want maximum ROI',
-    detail: 'A new roof in Charlotte typically returns 60 to 70 percent of its cost at resale and can increase your home value by 4 to 6 percent. If you are selling soon, a new roof eliminates a major buyer objection and can help your home sell faster. If you are staying long-term, a well-executed repair may buy you several more years before replacement becomes necessary.',
+  icon: Home,
+  question: 'Are You Planning to Sell Soon?',
+  repairAnswer: 'Not selling, or selling is 5+ years away',
+  replaceAnswer: 'Selling within 1-3 years and want maximum ROI',
+  detail: 'A new roof in Charlotte typically returns 60 to 70 percent of its cost at resale and can increase your home value by 4 to 6 percent. If you are selling soon, a new roof eliminates a major buyer objection and can help your home sell faster. If you are staying long-term, a well-executed repair may buy you several more years before replacement becomes necessary.',
   },
   {
     number: '4',
-    icon: Wrench,
-    question: 'Has Your Roof Been Repaired Before?',
-    repairAnswer: 'First time needing repair, or one prior repair',
-    replaceAnswer: 'Multiple repairs in the last few years',
-    detail: 'If you are calling a roofer every year or two for a different issue, those repair costs add up quickly. Three or more repairs within five years is a strong signal that your roof has reached the point where ongoing patching is throwing money at a declining asset. A single replacement solves the problem permanently.',
+  icon: Wrench,
+  question: 'Has Your Roof Been Repaired Before?',
+  repairAnswer: 'First time needing repair, or one prior repair',
+  replaceAnswer: 'Multiple repairs in the last few years',
+  detail: 'If you are calling a roofer every year or two for a different issue, those repair costs add up quickly. Three or more repairs within five years is a strong signal that your roof has reached the point where ongoing patching is throwing money at a declining asset. A single replacement solves the problem permanently.',
   },
   {
     number: '5',
-    icon: Shield,
-    question: 'Is the Damage Covered by Insurance?',
-    repairAnswer: 'Minor damage that does not meet your deductible',
-    replaceAnswer: 'Storm or hail damage that qualifies for a full claim',
-    detail: 'If a storm caused your damage and your insurance covers full replacement, taking advantage of that coverage is almost always the best financial decision. You get a brand-new roof for just your deductible. Best Roofing Now handles the entire insurance claim process, from documentation to adjuster meetings, to help you maximize your settlement.',
+  icon: Shield,
+  question: 'Is the Damage Covered by Insurance?',
+  repairAnswer: 'Minor damage that does not meet your deductible',
+  replaceAnswer: 'Storm or hail damage that qualifies for a full claim',
+  detail: 'If a storm caused your damage and your insurance covers full replacement, taking advantage of that coverage is almost always the best financial decision. You get a brand-new roof for just your deductible. Best Roofing Now handles the entire insurance claim process, from documentation to adjuster meetings, to help you maximize your settlement.',
   },
 ];
 
@@ -123,45 +122,45 @@ const decisionFramework = [
 const repairTypes = [
   {
     icon: Layers,
-    title: 'Missing or Damaged Shingles',
-    description: 'Wind, hail, or age can cause individual shingles to crack, curl, or blow off entirely. Replacing a handful of shingles is one of the most common and affordable roof repairs in Charlotte.',
-    cost: '$200 - $800',
-    href: '/missing-shingles-repair-charlotte-nc',
+  title: 'Missing or Damaged Shingles',
+  description: 'Wind, hail, or age can cause individual shingles to crack, curl, or blow off entirely. Replacing a handful of shingles is one of the most common and affordable roof repairs in Charlotte.',
+  cost: '$200 - $800',
+  href: '/missing-shingles-repair-charlotte-nc',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repairs',
-    description: 'Flashing around chimneys, vents, walls, and skylights can corrode or pull away over time. Resealing or replacing flashing stops leaks at these vulnerable penetration points.',
-    cost: '$200 - $600',
-    href: '/roof-flashing-repair-charlotte-nc',
+  title: 'Flashing Repairs',
+  description: 'Flashing around chimneys, vents, walls, and skylights can corrode or pull away over time. Resealing or replacing flashing stops leaks at these vulnerable penetration points.',
+  cost: '$200 - $600',
+  href: '/roof-flashing-repair-charlotte-nc',
   },
   {
     icon: TrendingUp,
-    title: 'Valley Repairs',
-    description: 'Roof valleys channel heavy water flow where two slopes meet. Damaged valley flashing or worn shingles in valleys are a frequent source of leaks in Charlotte homes.',
-    cost: '$300 - $1,000',
-    href: '/roof-valley-repair-charlotte-nc',
+  title: 'Valley Repairs',
+  description: 'Roof valleys channel heavy water flow where two slopes meet. Damaged valley flashing or worn shingles in valleys are a frequent source of leaks in Charlotte homes.',
+  cost: '$300 - $1,000',
+  href: '/roof-valley-repair-charlotte-nc',
   },
   {
     icon: CloudRain,
-    title: 'Minor Leak Repair',
-    description: 'Small leaks caught early can be patched quickly and affordably. The key is addressing them before water damages your decking, insulation, or interior ceilings and walls.',
-    cost: '$150 - $500',
-    href: '/roof-repair-charlotte-nc',
+  title: 'Minor Leak Repair',
+  description: 'Small leaks caught early can be patched quickly and affordably. The key is addressing them before water damages your decking, insulation, or interior ceilings and walls.',
+  cost: '$150 - $500',
+  href: '/roof-repair-charlotte-nc',
   },
   {
     icon: AlertTriangle,
-    title: 'Flat Roof Repairs',
-    description: 'Flat and low-slope roofs develop ponding, membrane tears, and seam failures. Targeted patches and recoating can extend their life significantly without full replacement.',
-    cost: '$300 - $1,500',
-    href: '/flat-roof-repair-charlotte-nc',
+  title: 'Flat Roof Repairs',
+  description: 'Flat and low-slope roofs develop ponding, membrane tears, and seam failures. Targeted patches and recoating can extend their life significantly without full replacement.',
+  cost: '$300 - $1,500',
+  href: '/flat-roof-repair-charlotte-nc',
   },
   {
     icon: Shield,
-    title: 'Chimney Flashing Repair',
-    description: 'The intersection between your chimney and roof is one of the most leak-prone areas. Properly sealed chimney flashing prevents costly water intrusion into your home.',
-    cost: '$300 - $800',
-    href: '/chimney-flashing-repair-charlotte-nc',
+  title: 'Chimney Flashing Repair',
+  description: 'The intersection between your chimney and roof is one of the most leak-prone areas. Properly sealed chimney flashing prevents costly water intrusion into your home.',
+  cost: '$300 - $800',
+  href: '/chimney-flashing-repair-charlotte-nc',
   },
 ];
 
@@ -169,43 +168,43 @@ const repairTypes = [
 const costComparison = [
   {
     category: 'Minor Repair (small leak, few shingles)',
-    repairCost: '$300 - $1,500',
-    replaceCost: 'N/A - repair is sufficient',
-    fiveYearRepairCost: '$600 - $3,000',
-    fiveYearReplaceCost: 'N/A',
-    recommendation: 'Repair',
+  repairCost: '$300 - $1,500',
+  replaceCost: 'N/A - repair is sufficient',
+  fiveYearRepairCost: '$600 - $3,000',
+  fiveYearReplaceCost: 'N/A',
+  recommendation: 'Repair',
   },
   {
     category: 'Moderate Damage (flashing, valley, multiple areas)',
-    repairCost: '$1,500 - $5,000',
-    replaceCost: '$8,000 - $15,000',
-    fiveYearRepairCost: '$3,000 - $10,000',
-    fiveYearReplaceCost: '$8,000 - $15,000',
-    recommendation: 'Depends on age',
+  repairCost: '$1,500 - $5,000',
+  replaceCost: '$8,000 - $15,000',
+  fiveYearRepairCost: '$3,000 - $10,000',
+  fiveYearReplaceCost: '$8,000 - $15,000',
+  recommendation: 'Depends on age',
   },
   {
     category: 'Major Damage (widespread, structural)',
-    repairCost: '$5,000 - $8,000',
-    replaceCost: '$8,000 - $15,000',
-    fiveYearRepairCost: '$8,000 - $15,000+',
-    fiveYearReplaceCost: '$8,000 - $15,000',
-    recommendation: 'Replace',
+  repairCost: '$5,000 - $8,000',
+  replaceCost: '$8,000 - $15,000',
+  fiveYearRepairCost: '$8,000 - $15,000+',
+  fiveYearReplaceCost: '$8,000 - $15,000',
+  recommendation: 'Replace',
   },
   {
     category: 'Aging Roof (20+ years, recurring issues)',
-    repairCost: '$2,000 - $5,000/year',
-    replaceCost: '$8,000 - $15,000',
-    fiveYearRepairCost: '$10,000 - $25,000',
-    fiveYearReplaceCost: '$8,000 - $15,000',
-    recommendation: 'Replace',
+  repairCost: '$2,000 - $5,000/year',
+  replaceCost: '$8,000 - $15,000',
+  fiveYearRepairCost: '$10,000 - $25,000',
+  fiveYearReplaceCost: '$8,000 - $15,000',
+  recommendation: 'Replace',
   },
   {
     category: 'Premium/Large Home (3,000+ sq ft)',
-    repairCost: '$2,000 - $7,000',
-    replaceCost: '$15,000 - $30,000+',
-    fiveYearRepairCost: '$4,000 - $15,000',
-    fiveYearReplaceCost: '$15,000 - $30,000+',
-    recommendation: 'Depends on age',
+  repairCost: '$2,000 - $7,000',
+  replaceCost: '$15,000 - $30,000+',
+  fiveYearRepairCost: '$4,000 - $15,000',
+  fiveYearReplaceCost: '$15,000 - $30,000+',
+  recommendation: 'Depends on age',
   },
 ];
 
@@ -213,30 +212,30 @@ const costComparison = [
 const materialThresholds = [
   {
     icon: Layers,
-    material: 'Asphalt Shingles',
-    lifespan: '20-25 years',
-    repairThreshold: 'Under 15 years: repair localized damage',
-    replaceThreshold: 'Over 20 years: consider full replacement',
-    detail: 'Asphalt shingles are the most common roofing material in Charlotte. They perform well in our climate but degrade noticeably after 15 to 20 years. Look for widespread granule loss, curling edges, and cracked shingles as signs that repair is no longer sufficient.',
-    href: '/asphalt-shingle-roofing-charlotte-nc',
+  material: 'Asphalt Shingles',
+  lifespan: '20-25 years',
+  repairThreshold: 'Under 15 years: repair localized damage',
+  replaceThreshold: 'Over 20 years: consider full replacement',
+  detail: 'Asphalt shingles are the most common roofing material in Charlotte. They perform well in our climate but degrade noticeably after 15 to 20 years. Look for widespread granule loss, curling edges, and cracked shingles as signs that repair is no longer sufficient.',
+  href: '/asphalt-shingle-roofing-charlotte-nc',
   },
   {
     icon: Shield,
-    material: 'Metal Roofing',
-    lifespan: '40-70 years',
-    repairThreshold: 'Repair loose panels, fasteners, or sealant failures',
-    replaceThreshold: 'Rarely needs replacement within its lifespan',
-    detail: 'Metal roofs are exceptionally durable and rarely require full replacement. Most metal roof issues in Charlotte involve loose fasteners, sealant deterioration around penetrations, or cosmetic dent repair from hail. These are straightforward repairs that preserve the roof for decades.',
-    href: '/metal-roofing-services',
+  material: 'Metal Roofing',
+  lifespan: '40-70 years',
+  repairThreshold: 'Repair loose panels, fasteners, or sealant failures',
+  replaceThreshold: 'Rarely needs replacement within its lifespan',
+  detail: 'Metal roofs are exceptionally durable and rarely require full replacement. Most metal roof issues in Charlotte involve loose fasteners, sealant deterioration around penetrations, or cosmetic dent repair from hail. These are straightforward repairs that preserve the roof for decades.',
+  href: '/metal-roofing-services',
   },
   {
     icon: Home,
-    material: 'Flat Roofing (TPO, EPDM)',
-    lifespan: '15-30 years',
-    repairThreshold: 'Coat or patch when damage is limited to small areas',
-    replaceThreshold: 'Replace when membrane is brittle or has widespread seam failure',
-    detail: 'Flat roofs on commercial buildings and some Charlotte homes can often be extended with a roof coating rather than full replacement. A quality elastomeric coating over an aging but structurally sound membrane can add 10 to 15 years of life at a fraction of the replacement cost.',
-    href: '/flat-roof-coating-charlotte-nc',
+  material: 'Flat Roofing (TPO, EPDM)',
+  lifespan: '15-30 years',
+  repairThreshold: 'Coat or patch when damage is limited to small areas',
+  replaceThreshold: 'Replace when membrane is brittle or has widespread seam failure',
+  detail: 'Flat roofs on commercial buildings and some Charlotte homes can often be extended with a roof coating rather than full replacement. A quality elastomeric coating over an aging but structurally sound membrane can add 10 to 15 years of life at a fraction of the replacement cost.',
+  href: '/flat-roof-coating-charlotte-nc',
   },
 ];
 
@@ -244,23 +243,23 @@ const materialThresholds = [
 const charlotteFactors = [
   {
     icon: CloudRain,
-    title: 'Storm Frequency',
-    description: 'Charlotte averages 45 to 50 thunderstorm days per year, placing significant stress on roofing systems. Repeated storm exposure accelerates shingle wear and can turn minor damage into major problems if not addressed promptly.',
+  title: 'Storm Frequency',
+  description: 'Charlotte averages 45 to 50 thunderstorm days per year, placing significant stress on roofing systems. Repeated storm exposure accelerates shingle wear and can turn minor damage into major problems if not addressed promptly.',
   },
   {
     icon: Zap,
-    title: 'Hail Risk',
-    description: 'The Charlotte metro area experiences regular hail events that can damage shingles, dent metal components, and crack ridge caps. Even small hail can loosen granules and shorten your roof\'s effective lifespan.',
+  title: 'Hail Risk',
+  description: 'The Charlotte metro area experiences regular hail events that can damage shingles, dent metal components, and crack ridge caps. Even small hail can loosen granules and shorten your roof\'s effective lifespan.',
   },
   {
     icon: FileText,
-    title: 'HOA Requirements',
-    description: 'Many Charlotte neighborhoods, from Ballantyne to Myers Park, have HOA covenants that dictate roofing materials, colors, and maintenance standards. Ensure any repair or replacement meets your HOA specifications to avoid fines or required redo work.',
+  title: 'HOA Requirements',
+  description: 'Many Charlotte neighborhoods, from Ballantyne to Myers Park, have HOA covenants that dictate roofing materials, colors, and maintenance standards. Ensure any repair or replacement meets your HOA specifications to avoid fines or required redo work.',
   },
   {
     icon: Scale,
-    title: 'NC Building Codes',
-    description: 'North Carolina building codes require specific wind resistance ratings, underlayment standards, and installation methods. If your existing roof does not meet current code, a full replacement may be required rather than a repair that leaves non-compliant components in place.',
+  title: 'NC Building Codes',
+  description: 'North Carolina building codes require specific wind resistance ratings, underlayment standards, and installation methods. If your existing roof does not meet current code, a full replacement may be required rather than a repair that leaves non-compliant components in place.',
   },
 ];
 
@@ -268,42 +267,42 @@ const charlotteFactors = [
 const repairVsReplaceFAQs = [
   {
     question: 'How do I decide between roof repair and replacement in Charlotte NC?',
-    answer:
+  answer:
       'The decision comes down to five key factors: roof age, extent of damage, your timeline for selling, repair history, and insurance coverage. If your roof is under 15 years old with localized damage, repair is usually the right choice. If your roof is over 20 years old, has widespread issues, or has needed multiple repairs recently, replacement is typically the better long-term investment. Best Roofing Now provides free inspections with honest recommendations based on your specific situation.',
   },
   {
     question: 'At what point does roof repair cost more than replacement in Charlotte?',
-    answer:
+  answer:
       'As a general rule, when a single repair exceeds 30 percent of the cost of a full replacement, or when cumulative repairs over 3 to 5 years approach 50 percent of replacement cost, you are better off replacing the entire roof. For a typical Charlotte home, that means if repairs are approaching $4,000 to $5,000 and your roof is over 15 years old, it is time to seriously consider replacement.',
   },
   {
     question: 'Does a new roof increase home value in Charlotte NC?',
-    answer:
+  answer:
       'Yes. A new roof in Charlotte typically increases home value by 4 to 6 percent and returns 60 to 70 percent of its cost at resale. Beyond the financial return, a new roof eliminates a major inspection concern for buyers, can reduce time on market, and often results in stronger offers. In competitive Charlotte neighborhoods like Myers Park, SouthPark, and Ballantyne, roof condition is one of the first things buyers evaluate.',
   },
   {
     question: 'How long can I extend my roof with repairs before I need to replace it?',
-    answer:
+  answer:
       'Targeted repairs on a roof that is 10 to 15 years old can often add 5 to 10 additional years of service life. However, once your asphalt shingle roof passes 20 years, repairs become increasingly temporary. At that stage, you may get 1 to 3 years from each repair before the next issue appears. A free inspection from Best Roofing Now will give you an honest assessment of how much life your roof has left.',
   },
   {
     question: 'Will my insurance pay for roof replacement or just repair in Charlotte?',
-    answer:
+  answer:
       'Insurance coverage depends on the cause and extent of damage, your policy type, and the age of your roof. If storm damage is widespread enough to warrant full replacement, most policies will cover it minus your deductible. Some policies pay replacement cost value while others pay actual cash value, which factors in depreciation. Best Roofing Now works directly with your insurance company to document damage and advocate for the maximum settlement your policy allows.',
   },
   {
     question: 'What are the signs I need a new roof instead of repairs in Charlotte NC?',
-    answer:
+  answer:
       'Key signs that replacement is the better option include widespread granule loss in gutters and downspouts, multiple leaks in different areas of your home, shingles that are curling or buckling across large sections, visible sagging in the roof deck, daylight visible through the attic, and a roof age exceeding 20 years. If your roof shows three or more of these signs, repair is likely just postponing the inevitable.',
   },
   {
     question: 'Can I repair part of my roof and replace the rest in Charlotte?',
-    answer:
+  answer:
       'Partial replacement, sometimes called a re-roof of one section, is possible but comes with trade-offs. Mismatched shingle colors, different wear rates between old and new sections, and potential warranty complications can be issues. In Charlotte, most roofing professionals recommend full replacement once more than 30 percent of the roof needs work. Best Roofing Now will assess your specific situation and give you an honest recommendation.',
   },
   {
     question: 'How much does roof repair cost compared to replacement in Charlotte NC in 2026?',
-    answer:
+  answer:
       'In 2026, minor roof repairs in Charlotte range from $300 to $1,500, while major repairs run $1,500 to $5,000. A full roof replacement for a standard Charlotte home costs $8,000 to $15,000 with asphalt shingles, or $15,000 to $30,000 or more for larger homes or premium materials like metal or designer shingles. The best way to know your exact costs is to schedule a free inspection with Best Roofing Now for a detailed, no-obligation estimate.',
   },
 ];
@@ -324,7 +323,6 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={repairVsReplaceFAQs} />
-      <LocalBusinessSchema includeRating={false} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-vs-replacement-charlotte-nc`}
         pageName="Roof Repair vs. Replacement Charlotte NC"
@@ -334,23 +332,23 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
         faqs={[
           {
             question: 'Should I repair or replace my roof in Charlotte NC?',
-            answer: 'If your roof is under 15 years old with localized damage, repair is usually best. If it is over 20 years old with widespread issues or multiple prior repairs, replacement is the better investment. Best Roofing Now offers free inspections with honest recommendations.',
-            speakableAnswer: 'Repair if your roof is under 15 years with minor damage. Replace if it is over 20 years with widespread problems. Call Best Roofing Now at 704-605-6047 for a free inspection.',
+  answer: 'If your roof is under 15 years old with localized damage, repair is usually best. If it is over 20 years old with widespread issues or multiple prior repairs, replacement is the better investment. Best Roofing Now offers free inspections with honest recommendations.',
+  speakableAnswer: 'Repair if your roof is under 15 years with minor damage. Replace if it is over 20 years with widespread problems. Call Best Roofing Now at 704-605-6047 for a free inspection.',
           },
           {
             question: 'How much does roof repair vs replacement cost in Charlotte NC?',
-            answer: 'Minor repairs cost $300-$1,500. Major repairs cost $1,500-$5,000. Full replacement costs $8,000-$15,000 for a standard home, or $15,000-$30,000+ for larger or premium homes. Best Roofing Now provides free estimates.',
-            speakableAnswer: 'Repairs range from $300-5,000. Replacement costs $8,000-15,000 for most homes. Call Best Roofing Now at 704-605-6047 for a free estimate.',
+  answer: 'Minor repairs cost $300-$1,500. Major repairs cost $1,500-$5,000. Full replacement costs $8,000-$15,000 for a standard home, or $15,000-$30,000+ for larger or premium homes. Best Roofing Now provides free estimates.',
+  speakableAnswer: 'Repairs range from $300-5,000. Replacement costs $8,000-15,000 for most homes. Call Best Roofing Now at 704-605-6047 for a free estimate.',
           },
           {
             question: 'When does it make sense to replace instead of repair a roof in Charlotte?',
-            answer: 'Replace when repairs exceed 30% of replacement cost, the roof is over 20 years old, you have had multiple repairs in recent years, or damage is widespread across the entire roof. A new roof also adds 4-6% to Charlotte home values.',
-            speakableAnswer: 'Replace when repair costs exceed 30% of replacement, your roof is over 20 years old, or damage is widespread. Call 704-605-6047 for guidance.',
+  answer: 'Replace when repairs exceed 30% of replacement cost, the roof is over 20 years old, you have had multiple repairs in recent years, or damage is widespread across the entire roof. A new roof also adds 4-6% to Charlotte home values.',
+  speakableAnswer: 'Replace when repair costs exceed 30% of replacement, your roof is over 20 years old, or damage is widespread. Call 704-605-6047 for guidance.',
           },
           {
             question: 'Does insurance cover roof replacement or just repair in Charlotte NC?',
-            answer: 'Insurance typically covers full replacement when storm damage is widespread enough. Coverage depends on your policy type, roof age, and the cause of damage. Best Roofing Now handles insurance claims from start to finish.',
-            speakableAnswer: 'Insurance often covers full replacement for storm damage. Best Roofing Now handles insurance claims. Call 704-605-6047 for help.',
+  answer: 'Insurance typically covers full replacement when storm damage is widespread enough. Coverage depends on your policy type, roof age, and the cause of damage. Best Roofing Now handles insurance claims from start to finish.',
+  speakableAnswer: 'Insurance often covers full replacement for storm damage. Best Roofing Now handles insurance claims. Call 704-605-6047 for help.',
           },
         ]}
       />
@@ -505,7 +503,7 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
               <p className="text-gray mb-6">
                 Common scenarios where repair is the clear winner include storm damage that affected only one slope
                 of your roof, a single leak around a plumbing vent or chimney, wind-lifted shingles in one section,
-                or minor flashing deterioration. These are targeted problems with targeted solutions, and a quality
+  or minor flashing deterioration. These are targeted problems with targeted solutions, and a quality
                 repair will protect your home for years without the expense of a full tear-off and reinstallation.
               </p>
               <p className="text-gray mb-8">
@@ -606,7 +604,7 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
               <p className="text-gray mb-6">
                 From a financial perspective, a new roof on a Charlotte home returns 60 to 70 percent of its cost
                 at resale and increases your home value by 4 to 6 percent. For a median-priced Charlotte home,
-                that can mean $15,000 to $25,000 in added value. A new roof also eliminates the cascading costs
+  that can mean $15,000 to $25,000 in added value. A new roof also eliminates the cascading costs
                 of interior water damage, mold remediation, and energy loss from a compromised roofing system.
               </p>
               <p className="text-gray mb-8">
@@ -890,7 +888,7 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
               <p className="text-gray mb-6">
                 Policy type also matters. Replacement cost value (RCV) policies pay for a new roof at current
                 market rates. Actual cash value (ACV) policies deduct depreciation based on your roof&apos;s age,
-                which can significantly reduce your payout on an older roof. Knowing your policy type before
+  which can significantly reduce your payout on an older roof. Knowing your policy type before
                 filing a claim helps you set realistic expectations.
               </p>
               <p className="text-gray mb-8">
@@ -973,11 +971,11 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
               <p className="text-xl text-white/90 mb-6">
                 The single best thing you can do before deciding between repair and replacement is get a professional
                 inspection from a contractor you trust. At Best Roofing Now, every engagement starts with a thorough,
-                no-obligation inspection because we believe you deserve the full picture before spending a dime.
+  no-obligation inspection because we believe you deserve the full picture before spending a dime.
               </p>
               <p className="text-white/80 mb-6">
                 During our free inspection, we climb on your roof and examine every component: shingles, flashing,
-                valleys, ridge caps, vents, and the overall deck condition. We check your attic for signs of
+  valleys, ridge caps, vents, and the overall deck condition. We check your attic for signs of
                 moisture intrusion, inadequate ventilation, and structural issues. We photograph everything and
                 provide you with a detailed report of our findings.
               </p>

@@ -31,15 +31,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof and Gutter Replacement Charlotte NC | Bundle & Save',
-    description: 'Complete roof and gutter replacement from one trusted contractor. Save time and money with bundle pricing.',
-    url: `${SITE_CONFIG.url}/services/roof-and-gutter-replacement`,
-    type: 'website',
-    images: [
+  description: 'Complete roof and gutter replacement from one trusted contractor. Save time and money with bundle pricing.',
+  url: `${SITE_CONFIG.url}/services/roof-and-gutter-replacement`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Roof and gutter replacement services Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Roof and gutter replacement services Charlotte NC',
       },
     ],
   },
@@ -48,58 +48,58 @@ export const metadata: Metadata = {
 const bundleFAQs = [
   {
     question: 'Why should I replace my roof and gutters at the same time?',
-    answer: 'Replacing your roof and gutters together offers several advantages: 1) You save money with bundle pricing since we\'re already set up at your property. 2) New gutters are installed after the roof, ensuring perfect alignment and proper flashing. 3) You have one point of contact, one warranty, and one project timeline. 4) The drip edge and gutter integration is seamless, preventing future water intrusion issues.',
+  answer: 'Replacing your roof and gutters together offers several advantages: 1) You save money with bundle pricing since we\'re already set up at your property. 2) New gutters are installed after the roof, ensuring perfect alignment and proper flashing. 3) You have one point of contact, one warranty, and one project timeline. 4) The drip edge and gutter integration is seamless, preventing future water intrusion issues.',
   },
   {
     question: 'How much does roof and gutter replacement cost in Charlotte?',
-    answer: 'In Charlotte, combined roof and gutter replacement typically costs $10,000 to $30,000+ depending on home size, roof complexity, and materials chosen. Roof replacement alone averages $8,000-$25,000 and gutters $1,000-$2,500. Our bundle pricing provides savings of 10-15% compared to separate projects. We offer free estimates with detailed breakdowns and financing options.',
+  answer: 'In Charlotte, combined roof and gutter replacement typically costs $10,000 to $30,000+ depending on home size, roof complexity, and materials chosen. Roof replacement alone averages $8,000-$25,000 and gutters $1,000-$2,500. Our bundle pricing provides savings of 10-15% compared to separate projects. We offer free estimates with detailed breakdowns and financing options.',
   },
   {
     question: 'How long does roof and gutter replacement take?',
-    answer: 'A combined roof and gutter project typically takes 2-4 days for most Charlotte homes. Day 1-2 focuses on roof tear-off and installation, with gutters installed on the final day after the roof is complete. This ensures proper alignment and drainage. Weather can affect timing, but we communicate throughout the project.',
+  answer: 'A combined roof and gutter project typically takes 2-4 days for most Charlotte homes. Day 1-2 focuses on roof tear-off and installation, with gutters installed on the final day after the roof is complete. This ensures proper alignment and drainage. Weather can affect timing, but we communicate throughout the project.',
   },
   {
     question: 'Do you offer financing for roof and gutter replacement?',
-    answer: 'Yes! We offer flexible financing options for combined roof and gutter projects including 0% interest plans for qualified buyers. A larger project often qualifies for better financing terms. During your free consultation, we\'ll discuss payment options that fit your budget and help make your exterior renovation affordable.',
+  answer: 'Yes! We offer flexible financing options for combined roof and gutter projects including 0% interest plans for qualified buyers. A larger project often qualifies for better financing terms. During your free consultation, we\'ll discuss payment options that fit your budget and help make your exterior renovation affordable.',
   },
   {
     question: 'What warranty do I get on roof and gutter replacement?',
-    answer: 'You receive comprehensive warranties on both components: manufacturer warranties up to 50 years on roofing materials (CertainTeed, GAF), plus our workmanship warranty covering installation. Seamless aluminum gutters include a 20-year warranty. Having one contractor means seamless warranty service for your entire exterior protection system.',
+  answer: 'You receive comprehensive warranties on both components: manufacturer warranties up to 50 years on roofing materials (CertainTeed, GAF), plus our workmanship warranty covering installation. Seamless aluminum gutters include a 20-year warranty. Having one contractor means seamless warranty service for your entire exterior protection system.',
   },
   {
     question: 'Can you match my new gutters to my new roof color?',
-    answer: 'Absolutely! We offer aluminum gutters in 20+ colors to complement your new roof and home exterior. During your consultation, we bring samples so you can see color combinations against your actual home. Popular Charlotte choices include white, brown, and custom colors matching trim or shingle tones.',
+  answer: 'Absolutely! We offer aluminum gutters in 20+ colors to complement your new roof and home exterior. During your consultation, we bring samples so you can see color combinations against your actual home. Popular Charlotte choices include white, brown, and custom colors matching trim or shingle tones.',
   },
   {
     question: 'What if only my roof or gutters need replacement?',
-    answer: 'We\'ll always give you an honest assessment. If your gutters are in good condition (under 15 years old, no leaks or damage), we may recommend keeping them. Conversely, if your roof has years of life left but gutters are failing, we can replace just the gutters. We only recommend what you actually need.',
+  answer: 'We\'ll always give you an honest assessment. If your gutters are in good condition (under 15 years old, no leaks or damage), we may recommend keeping them. Conversely, if your roof has years of life left but gutters are failing, we can replace just the gutters. We only recommend what you actually need.',
   },
   {
     question: 'Do you install gutter guards with new roof and gutter packages?',
-    answer: 'Yes! Many Charlotte homeowners add gutter guards to their roof and gutter package for maintenance-free protection. We offer several guard styles including micro-mesh for pine needle areas. Adding guards during installation is more cost-effective than retrofitting later.',
+  answer: 'Yes! Many Charlotte homeowners add gutter guards to their roof and gutter package for maintenance-free protection. We offer several guard styles including micro-mesh for pine needle areas. Adding guards during installation is more cost-effective than retrofitting later.',
   },
 ];
 
 const bundleBenefits = [
   {
     icon: DollarSign,
-    title: 'Bundle Savings',
-    description: 'Save 10-15% compared to separate roof and gutter projects. One mobilization, one cleanup, better pricing.',
+  title: 'Bundle Savings',
+  description: 'Save 10-15% compared to separate roof and gutter projects. One mobilization, one cleanup, better pricing.',
   },
   {
     icon: Clock,
-    title: 'Single Timeline',
-    description: 'Your entire exterior is protected in 2-4 days. No waiting months between projects.',
+  title: 'Single Timeline',
+  description: 'Your entire exterior is protected in 2-4 days. No waiting months between projects.',
   },
   {
     icon: Shield,
-    title: 'Seamless Integration',
-    description: 'Gutters installed after roof completion ensures perfect drip edge alignment and flashing.',
+  title: 'Seamless Integration',
+  description: 'Gutters installed after roof completion ensures perfect drip edge alignment and flashing.',
   },
   {
     icon: Award,
-    title: 'One Warranty',
-    description: 'Single point of contact for all warranty claims. No finger-pointing between contractors.',
+  title: 'One Warranty',
+  description: 'Single point of contact for all warranty claims. No finger-pointing between contractors.',
   },
 ];
 
@@ -109,11 +109,11 @@ export default function RoofAndGutterPage() {
   // Create a combined service object for schema
   const combinedService = {
     slug: 'roof-and-gutter-replacement',
-    title: 'Roof and Gutter Replacement',
-    shortTitle: 'Roof & Gutters',
-    description: 'Complete roof and gutter replacement services in Charlotte NC. Save with bundle pricing when you replace both together.',
-    keywords: ['roof and gutter replacement', 'roofing and gutters Charlotte NC'],
-    icon: 'Home',
+  title: 'Roof and Gutter Replacement',
+  shortTitle: 'Roof & Gutters',
+  description: 'Complete roof and gutter replacement services in Charlotte NC. Save with bundle pricing when you replace both together.',
+  keywords: ['roof and gutter replacement', 'roofing and gutters Charlotte NC'],
+  icon: 'Home',
   };
 
   return (

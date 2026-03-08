@@ -27,7 +27,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Veteran-Owned Roofing Company Charlotte NC | Best Roofing Now',
-    description:
+  description:
       'Family-owned, veteran-operated roofing company in Charlotte NC. Built on military values of integrity and service. BBB A+ rated. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/veteran-owned-roofing-company-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/veteran-owned-roofing-company-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.team.jamesAndFred,
-        width: 1200,
-        height: 630,
-        alt: 'Veteran-owned roofing company Charlotte NC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Veteran-owned roofing company Charlotte NC - Best Roofing Now team',
       },
     ],
   },
@@ -76,39 +76,39 @@ export const metadata: Metadata = {
 const militaryValues = [
   {
     icon: Shield,
-    title: 'Integrity First',
-    description: 'We tell the truth, even when it means losing a sale. Military service taught us that honor and honesty are non-negotiable. If repairs will work, we recommend repairs - not a full replacement.',
-    militaryConnection: 'A core Air Force value that guides every interaction with our customers.',
+  title: 'Integrity First',
+  description: 'We tell the truth, even when it means losing a sale. Military service taught us that honor and honesty are non-negotiable. If repairs will work, we recommend repairs - not a full replacement.',
+  militaryConnection: 'A core Air Force value that guides every interaction with our customers.',
   },
   {
     icon: Target,
-    title: 'Mission Excellence',
-    description: 'Every roof is a mission, and we do not leave until the mission is complete. We approach every project with the precision and dedication learned in military service.',
-    militaryConnection: 'Attention to detail and commitment to excellence that defines military operations.',
+  title: 'Mission Excellence',
+  description: 'Every roof is a mission, and we do not leave until the mission is complete. We approach every project with the precision and dedication learned in military service.',
+  militaryConnection: 'Attention to detail and commitment to excellence that defines military operations.',
   },
   {
     icon: Heart,
-    title: 'Service Before Self',
-    description: 'Your home and family come first. We prioritize your needs over profits, ensuring you get exactly what your roof requires - nothing more, nothing less.',
-    militaryConnection: 'The military principle of putting duty and others before personal gain.',
+  title: 'Service Before Self',
+  description: 'Your home and family come first. We prioritize your needs over profits, ensuring you get exactly what your roof requires - nothing more, nothing less.',
+  militaryConnection: 'The military principle of putting duty and others before personal gain.',
   },
   {
     icon: Users,
-    title: 'Brotherhood & Family',
-    description: 'We treat every customer like family and every team member like a brother or sister in arms. This creates a culture of mutual respect and exceptional service.',
-    militaryConnection: 'The bonds formed in military service translate to how we treat our customers.',
+  title: 'Brotherhood & Family',
+  description: 'We treat every customer like family and every team member like a brother or sister in arms. This creates a culture of mutual respect and exceptional service.',
+  militaryConnection: 'The bonds formed in military service translate to how we treat our customers.',
   },
   {
     icon: Flag,
-    title: 'Duty & Accountability',
-    description: 'When we make a commitment, we honor it. Period. No excuses, no shortcuts. We stand behind our work with the same dedication we brought to military service.',
-    militaryConnection: 'Accountability and responsibility are non-negotiable in our operations.',
+  title: 'Duty & Accountability',
+  description: 'When we make a commitment, we honor it. Period. No excuses, no shortcuts. We stand behind our work with the same dedication we brought to military service.',
+  militaryConnection: 'Accountability and responsibility are non-negotiable in our operations.',
   },
   {
     icon: BadgeCheck,
-    title: 'Quality Standards',
-    description: 'Military-grade quality in every installation. We inspect, reinspect, and ensure every detail meets our exacting standards before the job is complete.',
-    militaryConnection: 'The rigorous inspection standards of military equipment maintenance.',
+  title: 'Quality Standards',
+  description: 'Military-grade quality in every installation. We inspect, reinspect, and ensure every detail meets our exacting standards before the job is complete.',
+  militaryConnection: 'The rigorous inspection standards of military equipment maintenance.',
   },
 ];
 
@@ -116,23 +116,23 @@ const militaryValues = [
 const roofsForVeteransProgram = [
   {
     title: 'Free Roof Inspections for Veterans',
-    description: 'Any veteran can receive a complimentary comprehensive roof inspection with a detailed written report.',
-    icon: Home,
+  description: 'Any veteran can receive a complimentary comprehensive roof inspection with a detailed written report.',
+  icon: Home,
   },
   {
     title: 'Veteran Discount Program',
-    description: 'Active duty military, veterans, and military families receive special pricing on all roofing services.',
-    icon: Medal,
+  description: 'Active duty military, veterans, and military families receive special pricing on all roofing services.',
+  icon: Medal,
   },
   {
     title: 'Annual Free Roof Giveaway',
-    description: 'Each year, we donate a complete roof replacement to a deserving veteran family in the Charlotte area.',
-    icon: HandHeart,
+  description: 'Each year, we donate a complete roof replacement to a deserving veteran family in the Charlotte area.',
+  icon: HandHeart,
   },
   {
     title: 'Priority Emergency Service',
-    description: 'Veterans receive priority scheduling for emergency roof repairs - because those who served deserve the best.',
-    icon: Clock,
+  description: 'Veterans receive priority scheduling for emergency roof repairs - because those who served deserve the best.',
+  icon: Clock,
   },
 ];
 
@@ -140,27 +140,27 @@ const roofsForVeteransProgram = [
 const whySupportVeterans = [
   {
     title: 'Proven Leadership',
-    description: 'Veterans bring leadership skills honed through real-world challenges and high-stakes decisions.',
+  description: 'Veterans bring leadership skills honed through real-world challenges and high-stakes decisions.',
   },
   {
     title: 'Strong Work Ethic',
-    description: 'Military training instills discipline, punctuality, and commitment to completing the mission.',
+  description: 'Military training instills discipline, punctuality, and commitment to completing the mission.',
   },
   {
     title: 'Team-First Mentality',
-    description: 'Veterans understand the importance of teamwork and supporting every member of the crew.',
+  description: 'Veterans understand the importance of teamwork and supporting every member of the crew.',
   },
   {
     title: 'Integrity Under Pressure',
-    description: 'Military service teaches the importance of doing the right thing, especially when it is difficult.',
+  description: 'Military service teaches the importance of doing the right thing, especially when it is difficult.',
   },
   {
     title: 'Commitment to Quality',
-    description: 'Attention to detail and refusal to accept mediocrity - standards learned in service.',
+  description: 'Attention to detail and refusal to accept mediocrity - standards learned in service.',
   },
   {
     title: 'Community Investment',
-    description: 'Veterans have already proven their commitment to serving others and their community.',
+  description: 'Veterans have already proven their commitment to serving others and their community.',
   },
 ];
 
@@ -168,39 +168,39 @@ const whySupportVeterans = [
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete home roofing solutions with premium materials and military-grade quality.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete home roofing solutions with premium materials and military-grade quality.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Expert commercial roofing including TPO, EPDM, and flat roof systems.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'Expert commercial roofing including TPO, EPDM, and flat roof systems.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, damage, and general wear.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, damage, and general wear.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with industry-leading warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with industry-leading warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency restoration and insurance claim assistance.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency restoration and insurance claim assistance.',
+  href: '/services/storm-damage',
   },
   {
     icon: Medal,
-    title: 'Veteran Services',
-    description: 'Special programs and pricing for our fellow veterans.',
-    href: '/contact',
+  title: 'Veteran Services',
+  description: 'Special programs and pricing for our fellow veterans.',
+  href: '/contact',
   },
 ];
 
@@ -250,42 +250,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Is Best Roofing Now really a veteran-owned business?',
-    answer:
+  answer:
       'Yes, Best Roofing Now is a verified veteran-owned family business. Fred Turner, our co-founder, is a proud military veteran who brought the values of discipline, integrity, and service learned in uniform to our roofing company. Fred and his son James founded Best Roofing Now in 2019, building the company on the foundation of military values and family principles. We operate with the same commitment to excellence and honor that Fred learned during his military service.',
   },
   {
     question: 'Do you offer discounts for veterans and military families?',
-    answer:
+  answer:
       'Absolutely! We are proud to offer special discounts for active duty military, veterans, and military families. Our Roofs for Veterans program provides reduced pricing on all roofing services, free comprehensive roof inspections, and priority scheduling for emergency repairs. We believe in giving back to those who have served our country. Contact us to learn more about our veteran discount program and how we can help protect your home.',
   },
   {
     question: 'What is the Roofs for Veterans program?',
-    answer:
+  answer:
       'The Roofs for Veterans program is our way of giving back to the military community that shaped who we are. The program includes: free roof inspections for all veterans, special pricing on roofing services for military families, priority emergency service scheduling, and an annual free roof giveaway to a deserving veteran family in the Charlotte area. We created this program because we understand the sacrifices veterans and their families make, and we want to help protect their homes.',
   },
   {
     question: 'How do military values translate to roofing quality?',
-    answer:
+  answer:
       'Military values directly translate to exceptional roofing work in several ways: Integrity means we give honest assessments and never recommend unnecessary work. Discipline means we follow proper procedures and never cut corners. Attention to detail means every shingle, flashing, and seal is inspected and installed correctly. Accountability means we stand behind our work with comprehensive warranties. Service before self means we prioritize your needs over profits. These values are not just words - they are how we operate every day.',
   },
   {
     question: 'Why should I choose a veteran-owned roofing company?',
-    answer:
+  answer:
       'Choosing a veteran-owned roofing company means working with professionals who have demonstrated proven integrity, leadership, and commitment to service. Veterans bring unique qualities to business: unwavering work ethic, ability to perform under pressure, team-first mentality, attention to detail, and a deep sense of accountability. When you hire Best Roofing Now, you are supporting a business that gives back to the community and operates with the same values that protect our nation.',
   },
   {
     question: 'Are you locally owned and operated in Charlotte?',
-    answer:
+  answer:
       'Yes! Best Roofing Now is 100% locally owned and operated in Charlotte, NC. We are not a franchise or a national chain - we are your neighbors. Fred and James Turner live in the Charlotte area and are invested in this community. We employ local workers, support local suppliers, and reinvest in Charlotte. When you hire us, you are supporting a true local, veteran-owned family business.',
   },
   {
     question: 'What certifications does Best Roofing Now have?',
-    answer:
+  answer:
       'Best Roofing Now holds multiple industry certifications including: CertainTeed ShingleMaster certification, GAF Factory-Certified Contractor, BBB A+ Accreditation, NC and SC Licensed Contractor, and Angi Super Service Award winner. These certifications mean we can offer industry-leading warranties and have been trained and verified by the top roofing manufacturers in North America.',
   },
   {
     question: 'How can I verify that you are a legitimate veteran-owned business?',
-    answer:
+  answer:
       'We welcome verification of our veteran-owned status! You can: visit our About page to learn about Fred Turner\'s military service, check our BBB profile which notes our veteran-owned status, read our Google reviews where many customers mention our military values, contact us directly to speak with Fred or James, or visit our office to see our military memorabilia and certificates. We are proud of our veteran heritage and happy to discuss it with anyone.',
   },
 ];
@@ -300,7 +300,6 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -694,7 +693,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
                 <p>
                   We are members of the Lake Norman Chamber of Commerce and active participants in
                   community events throughout the Charlotte metro area. When you hire Best Roofing Now,
-                  you are keeping your dollars local and supporting a family that gives back.
+  you are keeping your dollars local and supporting a family that gives back.
                 </p>
                 <p>
                   Our commitment extends beyond business. We believe in the Charlotte community the

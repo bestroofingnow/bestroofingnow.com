@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Installation Mooresville NC | Seamless Gutters',
-    description:
+  description:
       'BBB A+ rated gutter installation serving Mooresville and northern Lake Norman. Custom seamless gutters, gutter guards, and repair services. Free estimates.',
-    url: `${SITE_CONFIG.url}/gutter-installation-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-installation-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.gutters,
-        width: 1200,
-        height: 630,
-        alt: 'Gutter installation Mooresville NC - Best Roofing Now seamless gutter services',
+  width: 1200,
+  height: 630,
+  alt: 'Gutter installation Mooresville NC - Best Roofing Now seamless gutter services',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Droplets,
-    title: 'Seamless Gutter Installation',
-    description: 'Custom-fabricated seamless aluminum gutters made on-site for Mooresville homes with zero leak-prone joints.',
-    href: '/services/gutter-installation',
+  title: 'Seamless Gutter Installation',
+  description: 'Custom-fabricated seamless aluminum gutters made on-site for Mooresville homes with zero leak-prone joints.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Shield,
-    title: 'Gutter Guard Installation',
-    description: 'High-performance gutter protection to handle heavy leaf and pine needle debris near Lake Norman.',
-    href: '/services/gutter-guards',
+  title: 'Gutter Guard Installation',
+  description: 'High-performance gutter protection to handle heavy leaf and pine needle debris near Lake Norman.',
+  href: '/services/gutter-guards',
   },
   {
     icon: Wrench,
-    title: 'Gutter Repair & Maintenance',
-    description: 'Fast, reliable repairs for sagging, leaking, or storm-damaged gutters throughout Mooresville.',
-    href: '/services/gutter-repair',
+  title: 'Gutter Repair & Maintenance',
+  description: 'Fast, reliable repairs for sagging, leaking, or storm-damaged gutters throughout Mooresville.',
+  href: '/services/gutter-repair',
   },
   {
     icon: Ruler,
-    title: 'Downspout Installation',
-    description: 'Properly sized and positioned downspouts that channel water safely away from your foundation.',
-    href: '/services/gutter-installation',
+  title: 'Downspout Installation',
+  description: 'Properly sized and positioned downspouts that channel water safely away from your foundation.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Paintbrush,
-    title: 'Custom Copper Gutters',
-    description: 'Premium copper gutter systems for upscale Mooresville homes seeking lasting beauty and durability.',
-    href: '/services/gutter-installation',
+  title: 'Custom Copper Gutters',
+  description: 'Premium copper gutter systems for upscale Mooresville homes seeking lasting beauty and durability.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Home,
-    title: 'Gutter Cleaning',
-    description: 'Professional gutter and downspout cleaning to restore proper flow and prevent water damage.',
-    href: '/services/gutter-cleaning',
+  title: 'Gutter Cleaning',
+  description: 'Professional gutter and downspout cleaning to restore proper flow and prevent water damage.',
+  href: '/services/gutter-cleaning',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Better Business Bureau accredited with an A+ rating and zero unresolved complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Better Business Bureau accredited with an A+ rating and zero unresolved complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied homeowners across the Lake Norman region.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied homeowners across the Lake Norman region.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'A veteran-owned company delivering military-grade precision on every gutter installation.',
+  title: 'Veteran-Owned',
+  description: 'A veteran-owned company delivering military-grade precision on every gutter installation.',
   },
   {
     icon: CheckCircle,
-    title: 'On-Site Fabrication',
-    description: 'Seamless gutters formed on-site with our mobile gutter machine for a guaranteed perfect fit.',
+  title: 'On-Site Fabrication',
+  description: 'Seamless gutters formed on-site with our mobile gutter machine for a guaranteed perfect fit.',
   },
   {
     icon: Users,
-    title: 'Trained Installers',
-    description: 'Experienced professionals who ensure proper slope, secure brackets, and watertight connections.',
+  title: 'Trained Installers',
+  description: 'Experienced professionals who ensure proper slope, secure brackets, and watertight connections.',
   },
   {
     icon: Clock,
-    title: 'One-Day Installation',
-    description: 'Most Mooresville gutter installations are completed within a single day with minimal disruption.',
+  title: 'One-Day Installation',
+  description: 'Most Mooresville gutter installations are completed within a single day with minimal disruption.',
   },
 ];
 
@@ -190,42 +190,42 @@ const gutterColors = [
 const faqs = [
   {
     question: 'Why are seamless gutters the best choice for Mooresville homes?',
-    answer:
+  answer:
       'Seamless gutters eliminate the joints found every 10-20 feet in sectional systems, which are the primary source of leaks and clogs. In Mooresville, where mature oaks and pines drop heavy debris near Lake Norman and seasonal storms dump significant rainfall, seamless gutters deliver superior performance. They are custom-made on-site to match your home exactly, so they look great and function flawlessly.',
   },
   {
     question: 'How much does gutter installation cost in Mooresville NC?',
-    answer:
+  answer:
       'Gutter installation in Mooresville typically runs $5-$13 per linear foot depending on material, gutter size, and roof complexity. An average Mooresville home needs 150-200 linear feet of gutters. Homes in lakefront communities like The Point or Riverwood with steeper rooflines may be at the higher end. We provide free on-site estimates with transparent pricing and no surprise fees.',
   },
   {
     question: 'What gutter size do Mooresville homes need?',
-    answer:
+  answer:
       'We recommend 5-inch seamless gutters for most Mooresville residences. However, homes with large roof areas, steep pitches, or heavily wooded lots in areas like Pine Lake and Northington benefit from 6-inch oversized gutters. We also install 3x4 downspouts when extra flow capacity is needed to handle the heavy summer thunderstorms common along the I-77 corridor.',
   },
   {
     question: 'How long does a gutter installation take in Mooresville?',
-    answer:
+  answer:
       'Most residential gutter installations in Mooresville are finished within a single day. We bring our mobile fabrication machine directly to your property, manufacture each seamless run on-site, and install everything with hidden hangers for a clean look. Larger homes or those with complex multi-level rooflines may take two days.',
   },
   {
     question: 'Do you install gutter guards for Mooresville homes?',
-    answer:
+  answer:
       'Yes. Gutter guards are especially valuable in Mooresville due to the abundant hardwood and pine trees surrounding many neighborhoods. We offer micro-mesh guards for fine debris like pine needles and pollen, screen guards for larger leaves, and solid cover systems with surface tension technology. Guards dramatically reduce cleaning frequency and prevent clogs.',
   },
   {
     question: 'What gutter colors match Mooresville homes?',
-    answer:
+  answer:
       'We stock over a dozen factory-finished colors to complement any exterior. Popular selections in Mooresville include white, almond, and clay for lighter homes, plus musket brown, bronze, and black for darker trim. The baked enamel finish resists fading, chipping, and peeling through years of North Carolina sun and rain.',
   },
   {
     question: 'How often should Mooresville gutters be cleaned?',
-    answer:
+  answer:
       'Without gutter guards, we recommend cleaning at least twice per year: once in late spring after pollen season and again in late fall after leaf drop. Mooresville properties surrounded by pines or near Lake Norman may need a third cleaning in mid-summer. Installing gutter guards can reduce cleanings to once per year or less.',
   },
   {
     question: 'Can you repair my existing gutters in Mooresville?',
-    answer:
+  answer:
       'Absolutely. We repair all gutter types across Mooresville, including resealing leaky joints, reattaching sagging sections, patching holes, replacing damaged downspouts, and fixing hanger failures. We will inspect your system and give you an honest recommendation on whether repair or replacement makes the most sense for your budget and long-term needs.',
   },
 ];
@@ -240,7 +240,6 @@ export default function GutterInstallationMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/gutter-installation-mooresville-nc`}
         pageName="Gutter Installation Mooresville NC"
@@ -250,13 +249,13 @@ export default function GutterInstallationMooresvilleNCPage() {
         faqs={[
           {
             question: 'How much does gutter installation cost in Mooresville NC?',
-            answer: 'Gutter installation in Mooresville NC costs $5-$13 per linear foot for seamless aluminum gutters, averaging $1,000-$2,600 for Lake Norman area homes. Best Roofing Now serves Mooresville with free estimates and quality workmanship warranties.',
-            speakableAnswer: 'Gutter installation in Mooresville costs $5-13 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
+  answer: 'Gutter installation in Mooresville NC costs $5-$13 per linear foot for seamless aluminum gutters, averaging $1,000-$2,600 for Lake Norman area homes. Best Roofing Now serves Mooresville with free estimates and quality workmanship warranties.',
+  speakableAnswer: 'Gutter installation in Mooresville costs $5-13 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
           },
           {
             question: 'Who installs gutters in Mooresville and Lake Norman?',
-            answer: 'Best Roofing Now is a top-rated gutter installer serving Mooresville and northern Lake Norman with a 5-star Google rating and BBB A+ accreditation. They fabricate seamless aluminum gutters on-site for a perfect fit.',
-            speakableAnswer: 'Best Roofing Now installs gutters in Mooresville and Lake Norman with 5-star ratings. Call 704-605-6047.',
+  answer: 'Best Roofing Now is a top-rated gutter installer serving Mooresville and northern Lake Norman with a 5-star Google rating and BBB A+ accreditation. They fabricate seamless aluminum gutters on-site for a perfect fit.',
+  speakableAnswer: 'Best Roofing Now installs gutters in Mooresville and Lake Norman with 5-star ratings. Call 704-605-6047.',
           },
         ]}
       />
@@ -499,7 +498,7 @@ export default function GutterInstallationMooresvilleNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Our gutter installation crews serve homeowners throughout Mooresville, the NASCAR corridor,
-              and every lakefront neighborhood along the northern shore.
+  and every lakefront neighborhood along the northern shore.
             </p>
           </div>
 

@@ -24,7 +24,7 @@ import {
   Trophy,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Concord NC | Speedway Area | TPO & Flat Roof',
-    description:
+  description:
       'Expert commercial roofing in Concord NC. TPO, EPDM, flat roofing, metal roofing for warehouses, retail, motorsports facilities. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/commercial-roofing-concord-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-concord-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing Concord NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing Concord NC - Best Roofing Now',
       },
     ],
   },
@@ -76,51 +76,51 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Layers,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient thermoplastic membranes ideal for Concord commercial buildings and large retail centers.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient thermoplastic membranes ideal for Concord commercial buildings and large retail centers.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for warehouses and industrial.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Roofing',
+  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for warehouses and industrial.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Building2,
-    title: 'Flat Roof Systems',
-    description: 'Complete flat roof installation and repair for retail centers, warehouses, and office buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Flat Roof Systems',
+  description: 'Complete flat roof installation and repair for retail centers, warehouses, and office buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Metal Roofing',
-    description: 'Standing seam and corrugated metal roofing for commercial and motorsports facilities.',
-    href: '/services/commercial-roofing',
+  title: 'Metal Roofing',
+  description: 'Standing seam and corrugated metal roofing for commercial and motorsports facilities.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Roof Coatings',
-    description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs for large buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings',
+  description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs for large buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
-    href: '/services/roof-repair',
+  title: 'Commercial Roof Repair',
+  description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: DollarSign,
-    title: 'Preventive Maintenance',
-    description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
-    href: '/services/commercial-roofing',
+  title: 'Preventive Maintenance',
+  description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -128,33 +128,33 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated Commercial Roofer',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Concord commercial clients.`,
+  title: '#1 Rated Commercial Roofer',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Concord commercial clients.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity and excellence on every commercial project.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity and excellence on every commercial project.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Licensed & Insured',
-    description: 'NC licensed commercial contractor with $2M+ liability coverage.',
+  title: 'Fully Licensed & Insured',
+  description: 'NC licensed commercial contractor with $2M+ liability coverage.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
   },
   {
     icon: Clock,
-    title: 'Minimal Business Disruption',
-    description: 'Nights, weekends, and phased installation to keep your business running.',
+  title: 'Minimal Business Disruption',
+  description: 'Nights, weekends, and phased installation to keep your business running.',
   },
 ];
 
@@ -206,42 +206,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What commercial roofing systems do you install in Concord NC?',
-    answer:
+  answer:
       'Best Roofing Now installs all major commercial roofing systems in Concord including TPO (Thermoplastic Polyolefin), EPDM (Ethylene Propylene Diene Monomer), PVC (Polyvinyl Chloride), modified bitumen, built-up roofing (BUR), standing seam metal roofing, and various roof coating systems. For large retail centers like those near Concord Mills, we often recommend TPO for its energy efficiency and durability.',
   },
   {
     question: 'How much does commercial roofing cost in Concord NC?',
-    answer:
+  answer:
       'Commercial roofing costs in Concord typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, and project size. TPO and EPDM systems average $5-8 per square foot, while metal roofing ranges from $8-15 per square foot. Large projects like shopping centers may qualify for volume pricing. We provide free, detailed estimates.',
   },
   {
     question: 'Do you have experience with large retail center roofing?',
-    answer:
+  answer:
       'Yes, Best Roofing Now has extensive experience with large retail center roofing in Concord including strip malls, shopping centers, and big-box retail. We understand the unique requirements of retail roofing including phased work to minimize business disruption, accommodating signage and HVAC equipment, and coordinating with multiple tenants.',
   },
   {
     question: 'Do you offer emergency commercial roof repair in Concord?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers 24/7 emergency commercial roofing services throughout Concord and Cabarrus County. For active leaks and urgent situations, we typically respond within 2-4 hours. Our emergency team provides temporary repairs to prevent further damage. Call (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'How long does a commercial roof last in Concord NC?',
-    answer:
+  answer:
       'Commercial roof lifespan in Concord varies by material: TPO and EPDM typically last 20-30 years, modified bitumen 15-25 years, metal roofing 40-70 years, and built-up roofing 15-30 years. Proper maintenance significantly extends roof life. Concord\'s sun and occasional severe weather make quality installation essential.',
   },
   {
     question: 'Can you work around retail business hours in Concord?',
-    answer:
+  answer:
       'Absolutely. We understand retail businesses can\'t close for roofing work. Best Roofing Now offers flexible scheduling including night shifts, weekend work, and phased installations. For shopping centers and restaurants, we can complete sections after business hours to minimize customer and employee disruption.',
   },
   {
     question: 'What commercial roof warranties do you offer?',
-    answer:
+  answer:
       'We offer industry-leading warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. Our workmanship warranty covers labor for 10-15 years. NDL warranties cover full replacement cost with no depreciation.',
   },
   {
     question: 'Do you handle commercial roof insurance claims in Concord?',
-    answer:
+  answer:
       'Yes, we have extensive experience with commercial roof insurance claims in Concord. We provide thorough damage documentation, meet with adjusters, prepare detailed estimates, and advocate for fair settlements. Storm damage, hail damage, and wind damage to commercial roofs are often covered.',
   },
 ];
@@ -257,7 +257,6 @@ export default function CommercialRoofingConcordNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-concord-nc`}
         pageName="Commercial Roofing Concord NC"

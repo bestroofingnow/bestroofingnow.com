@@ -20,7 +20,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -47,16 +47,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'LeafGuard Gutters Charlotte NC | Clog-Free Guarantee | Best Roofing Now',
-    description:
+  description:
       'LeafGuard one-piece gutter system in Charlotte NC. Clog-free guarantee with lifetime warranty. Never clean your gutters again!',
-    url: `${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'LeafGuard gutter installation Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'LeafGuard gutter installation Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -66,27 +66,27 @@ export const metadata: Metadata = {
 const leafguardFeatures = [
   {
     icon: Leaf,
-    title: 'One-Piece Design',
-    description: 'LeafGuard\'s patented one-piece design combines the gutter and hood into a single seamless unit.',
-    benefits: ['No seams to leak', 'Stronger than sectional', 'Custom fit to your home', 'Handles heavy rainfall'],
+  title: 'One-Piece Design',
+  description: 'LeafGuard\'s patented one-piece design combines the gutter and hood into a single seamless unit.',
+  benefits: ['No seams to leak', 'Stronger than sectional', 'Custom fit to your home', 'Handles heavy rainfall'],
   },
   {
     icon: Shield,
-    title: 'Clog-Free Guarantee',
-    description: 'LeafGuard guarantees your gutters will never clog, or they\'ll clean them for free.',
-    benefits: ['Lifetime clog-free guarantee', 'No more gutter cleaning', 'Protected water flow', 'Debris slides off'],
+  title: 'Clog-Free Guarantee',
+  description: 'LeafGuard guarantees your gutters will never clog, or they\'ll clean them for free.',
+  benefits: ['Lifetime clog-free guarantee', 'No more gutter cleaning', 'Protected water flow', 'Debris slides off'],
   },
   {
     icon: Droplets,
-    title: 'Liquid Adhesion Technology',
-    description: 'The curved hood design uses surface tension to draw water in while debris falls away.',
-    benefits: ['Water clings to hood', 'Debris falls to ground', 'Works in heavy rain', 'Proven engineering'],
+  title: 'Liquid Adhesion Technology',
+  description: 'The curved hood design uses surface tension to draw water in while debris falls away.',
+  benefits: ['Water clings to hood', 'Debris falls to ground', 'Works in heavy rain', 'Proven engineering'],
   },
   {
     icon: Home,
-    title: 'Protect Your Home',
-    description: 'Proper gutter function protects your foundation, landscaping, and prevents water damage.',
-    benefits: ['Foundation protection', 'Prevents basement flooding', 'Protects landscaping', 'Reduces erosion'],
+  title: 'Protect Your Home',
+  description: 'Proper gutter function protects your foundation, landscaping, and prevents water damage.',
+  benefits: ['Foundation protection', 'Prevents basement flooding', 'Protects landscaping', 'Reduces erosion'],
   },
 ];
 
@@ -94,33 +94,33 @@ const leafguardFeatures = [
 const whyChooseLeafguard = [
   {
     icon: Award,
-    title: 'Patented One-Piece Design',
-    description: 'The only gutter system built with the hood as part of the gutter - not an add-on.',
+  title: 'Patented One-Piece Design',
+  description: 'The only gutter system built with the hood as part of the gutter - not an add-on.',
   },
   {
     icon: Shield,
-    title: 'Clog-Free Guarantee',
-    description: 'Lifetime guarantee that your gutters will never clog or LeafGuard cleans them free.',
+  title: 'Clog-Free Guarantee',
+  description: 'Lifetime guarantee that your gutters will never clog or LeafGuard cleans them free.',
   },
   {
     icon: Droplets,
-    title: 'Handles 32" of Rain/Hour',
-    description: 'Engineered to handle the heaviest rainfall - far exceeding Charlotte\'s typical storms.',
+  title: 'Handles 32" of Rain/Hour',
+  description: 'Engineered to handle the heaviest rainfall - far exceeding Charlotte\'s typical storms.',
   },
   {
     icon: Wrench,
-    title: 'ScratchGuard Paint Finish',
-    description: 'Baked-on finish resists scratches and never needs painting.',
+  title: 'ScratchGuard Paint Finish',
+  description: 'Baked-on finish resists scratches and never needs painting.',
   },
   {
     icon: Clock,
-    title: 'Lifetime Warranty',
-    description: 'Fully transferable lifetime warranty covers paint, materials, and workmanship.',
+  title: 'Lifetime Warranty',
+  description: 'Fully transferable lifetime warranty covers paint, materials, and workmanship.',
   },
   {
     icon: CheckCircle,
-    title: 'Professional Installation',
-    description: 'Factory-trained installers ensure proper pitch and secure mounting.',
+  title: 'Professional Installation',
+  description: 'Factory-trained installers ensure proper pitch and secure mounting.',
   },
 ];
 
@@ -128,27 +128,27 @@ const whyChooseLeafguard = [
 const problemsSolved = [
   {
     title: 'Dangerous Ladder Climbing',
-    description: 'Never risk climbing a ladder to clean gutters again. Stay safely on the ground.',
+  description: 'Never risk climbing a ladder to clean gutters again. Stay safely on the ground.',
   },
   {
     title: 'Clogged & Overflowing Gutters',
-    description: 'Leaves, pine needles, and debris are shed before they can enter and clog the gutter.',
+  description: 'Leaves, pine needles, and debris are shed before they can enter and clog the gutter.',
   },
   {
     title: 'Water Damage & Foundation Issues',
-    description: 'Properly functioning gutters direct water away from your foundation.',
+  description: 'Properly functioning gutters direct water away from your foundation.',
   },
   {
     title: 'Ice Dams in Winter',
-    description: 'Reduced debris means better water flow, minimizing ice dam formation.',
+  description: 'Reduced debris means better water flow, minimizing ice dam formation.',
   },
   {
     title: 'Pest & Mosquito Breeding',
-    description: 'No standing water or debris means no habitat for pests and mosquitoes.',
+  description: 'No standing water or debris means no habitat for pests and mosquitoes.',
   },
   {
     title: 'Constant Maintenance',
-    description: 'Eliminate the hassle and expense of regular gutter cleaning.',
+  description: 'Eliminate the hassle and expense of regular gutter cleaning.',
   },
 ];
 
@@ -192,42 +192,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How is LeafGuard different from gutter guards?',
-    answer:
+  answer:
       'LeafGuard is fundamentally different from gutter guards. Traditional gutter guards are add-ons attached to existing gutters, leaving seams and gaps where debris can enter. LeafGuard is a one-piece system where the protective hood is built directly into the gutter - there is no separate guard. This patented design is manufactured as a single unit, eliminating the weaknesses of add-on systems.',
   },
   {
     question: 'What is the LeafGuard clog-free guarantee?',
-    answer:
+  answer:
       'LeafGuard provides a lifetime clog-free guarantee. If your LeafGuard gutters ever clog, they will clean them for free. This guarantee is backed by the manufacturer and is fully transferable if you sell your home. The guarantee covers debris buildup that prevents water from flowing properly through the gutter system.',
   },
   {
     question: 'How much does LeafGuard cost in Charlotte NC?',
-    answer:
+  answer:
       'LeafGuard typically costs between $20-$45 per linear foot installed in Charlotte, depending on factors like home height, roof complexity, and accessibility. While this is more than basic gutters with add-on guards, LeafGuard\'s one-piece design and lifetime warranty provide long-term value. We provide free estimates with no obligation.',
   },
   {
     question: 'Does LeafGuard work with heavy rain in Charlotte?',
-    answer:
+  answer:
       'Absolutely! LeafGuard is engineered to handle up to 32 inches of rain per hour - far exceeding even the most intense Charlotte thunderstorms. The curved hood design uses liquid adhesion (surface tension) to guide water into the gutter while debris slides harmlessly over the edge. Independent testing confirms LeafGuard\'s superior performance in heavy rainfall.',
   },
   {
     question: 'What colors are available for LeafGuard gutters?',
-    answer:
+  answer:
       'LeafGuard is available in over 20 colors with a baked-on ScratchGuard paint finish that never needs painting. Popular choices in Charlotte include white, almond, bronze, and various shades of gray and brown. The paint finish is warrantied for the life of the system and resists scratching, fading, and peeling.',
   },
   {
     question: 'How long does LeafGuard installation take?',
-    answer:
+  answer:
       'Most LeafGuard installations are completed in one day. Our factory-trained installers custom-form each section on-site to ensure a perfect fit with no seams. The installation process includes removing your old gutters, installing the new LeafGuard system with proper pitch, and thoroughly cleaning up the work area.',
   },
   {
     question: 'Will LeafGuard work with my existing roof?',
-    answer:
+  answer:
       'LeafGuard works with virtually any roof type and pitch. The system is custom-formed on-site to match your home\'s specific requirements. Whether you have asphalt shingles, metal roofing, tile, or any other material, LeafGuard can be installed to complement your home\'s appearance and provide clog-free protection.',
   },
   {
     question: 'What warranty does LeafGuard offer?',
-    answer:
+  answer:
       'LeafGuard offers a comprehensive lifetime warranty that covers the paint finish, materials, and workmanship. The warranty is fully transferable to new homeowners if you sell your home, adding value to your property. Additionally, the clog-free guarantee ensures your gutters will perform as promised for as long as you own your home.',
   },
 ];
@@ -242,7 +242,6 @@ export default function LeafGuardGuttersCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

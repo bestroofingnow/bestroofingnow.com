@@ -46,16 +46,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Concord NC | Fast & Affordable | Best Roofing Now',
-    description:
+  description:
       'Fast, affordable roof repair in Concord NC. BBB A+ rated, veteran-owned roofing company. Emergency service available. Free estimates for all roof repairs in Cabarrus County.',
-    url: `${SITE_CONFIG.url}/roof-repair-concord-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-concord-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof repair services in Concord NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof repair services in Concord NC - Best Roofing Now',
       },
     ],
   },
@@ -65,39 +65,39 @@ export const metadata: Metadata = {
 const repairServices = [
   {
     icon: AlertTriangle,
-    title: 'Leak Repair',
-    description: 'Fast identification and repair of roof leaks before they cause water damage to your Concord home.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Fast identification and repair of roof leaks before they cause water damage to your Concord home.',
+  href: '/services/roof-repair',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Expert repair of wind, hail, and storm damage with insurance claim assistance for Cabarrus County homeowners.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Expert repair of wind, hail, and storm damage with insurance claim assistance for Cabarrus County homeowners.',
+  href: '/services/storm-damage',
   },
   {
     icon: Zap,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency roof repair service for urgent situations in Concord that cannot wait.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency roof repair service for urgent situations in Concord that cannot wait.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Home,
-    title: 'Shingle Repair',
-    description: 'Replacement of missing, cracked, or damaged shingles to restore your Concord roof.',
-    href: '/services/residential-roofing',
+  title: 'Shingle Repair',
+  description: 'Replacement of missing, cracked, or damaged shingles to restore your Concord roof.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repair',
-    description: 'Repair or replacement of damaged flashing around chimneys, vents, and skylights.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Repair or replacement of damaged flashing around chimneys, vents, and skylights.',
+  href: '/services/roof-repair',
   },
   {
     icon: Search,
-    title: 'Free Inspection',
-    description: 'Complimentary roof inspection to identify problems and provide honest repair recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Free Inspection',
+  description: 'Complimentary roof inspection to identify problems and provide honest repair recommendations.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -105,33 +105,33 @@ const repairServices = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'Fast Response Time',
-    description: 'Same-day service available for urgent roof repairs in Concord and throughout Cabarrus County.',
+  title: 'Fast Response Time',
+  description: 'Same-day service available for urgent roof repairs in Concord and throughout Cabarrus County.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and excellent track record.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and excellent track record.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers throughout the Charlotte metro.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers throughout the Charlotte metro.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with a commitment to integrity and quality work.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with a commitment to integrity and quality work.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp insurance.',
   },
   {
     icon: Users,
-    title: 'Expert Technicians',
-    description: 'Certified repair specialists with years of experience diagnosing and fixing roof problems.',
+  title: 'Expert Technicians',
+  description: 'Certified repair specialists with years of experience diagnosing and fixing roof problems.',
   },
 ];
 
@@ -139,19 +139,19 @@ const whyChooseUs = [
 const commonRepairIssues = [
   {
     title: 'Storm & Hail Damage',
-    description: 'Concord experiences severe thunderstorms and hail events, especially during spring and summer. We repair damage from high winds, hail impacts, and fallen debris.',
+  description: 'Concord experiences severe thunderstorms and hail events, especially during spring and summer. We repair damage from high winds, hail impacts, and fallen debris.',
   },
   {
     title: 'Aging Shingles',
-    description: 'Many Concord neighborhoods built in the 1990s-2000s now have roofs reaching the end of their lifespan. We identify and repair deteriorating shingles before leaks develop.',
+  description: 'Many Concord neighborhoods built in the 1990s-2000s now have roofs reaching the end of their lifespan. We identify and repair deteriorating shingles before leaks develop.',
   },
   {
     title: 'Flashing Failures',
-    description: 'The hot North Carolina summers cause flashing around chimneys, vents, and skylights to expand and contract, leading to cracks and leaks.',
+  description: 'The hot North Carolina summers cause flashing around chimneys, vents, and skylights to expand and contract, leading to cracks and leaks.',
   },
   {
     title: 'Improper Ventilation',
-    description: 'Poor attic ventilation is common in Concord homes, causing moisture buildup, ice dams in winter, and premature shingle deterioration.',
+  description: 'Poor attic ventilation is common in Concord homes, causing moisture buildup, ice dams in winter, and premature shingle deterioration.',
   },
 ];
 
@@ -185,42 +185,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How quickly can you repair my roof in Concord NC?',
-    answer:
+  answer:
       'For most roof repairs in Concord, we can respond the same day or next day. Emergency repairs are prioritized with our 24/7 service. Minor repairs like replacing a few shingles can often be completed in a few hours, while more extensive repairs may take 1-2 days. We always provide a clear timeline before starting work.',
   },
   {
     question: 'How much does roof repair cost in Concord NC?',
-    answer:
+  answer:
       'Roof repair costs in Concord typically range from $200-$1,500 for most common repairs. Minor repairs like replacing a few shingles start around $200-$400. Leak repairs average $400-$900, while more extensive storm damage may cost $1,000-$1,500. We provide free inspections and upfront pricing with no hidden fees.',
   },
   {
     question: 'Do you offer emergency roof repair in Concord?',
-    answer:
+  answer:
       'Yes! Best Roofing Now offers 24/7 emergency roof repair services in Concord and throughout Cabarrus County. Whether you have an active leak, storm damage, or a tree on your roof, our emergency team responds quickly to prevent further damage and protect your home.',
   },
   {
     question: 'Will my insurance cover roof repairs in Concord?',
-    answer:
+  answer:
       'Many roof repairs in Concord are covered by homeowners insurance, especially those caused by storms, hail, or fallen trees. We have extensive experience working with insurance companies and provide detailed documentation to support your claim. We offer free inspections to help determine if your damage may be covered.',
   },
   {
     question: 'How do I know if my roof needs repair or replacement?',
-    answer:
+  answer:
       'We recommend repair when damage is localized and your roof still has significant life remaining. Signs you may need repair include a few missing shingles, minor leaks, or small areas of damage. Replacement is better when your roof is over 20 years old, has widespread damage, or when repairs would cost more than 30% of replacement cost. Our free inspection helps determine the best option.',
   },
   {
     question: 'What types of roof damage do you repair in Concord?',
-    answer:
+  answer:
       'We repair all types of roof damage in Concord including: missing or damaged shingles, roof leaks, storm and hail damage, wind damage, flashing problems, vent boot failures, gutter damage, ice dam damage, and more. Our technicians are experienced with all roofing materials including asphalt shingles, metal, tile, and flat roofing systems.',
   },
   {
     question: 'Do you provide a warranty on roof repairs?',
-    answer:
+  answer:
       'Yes, all our roof repairs in Concord come with a workmanship warranty. The specific warranty depends on the type of repair performed. We also use quality materials from manufacturers like CertainTeed, GAF, and Owens Corning, which carry their own material warranties. We stand behind our work 100%.',
   },
   {
     question: 'Why is Concord experiencing more roof damage recently?',
-    answer:
+  answer:
       'Concord is one of the fastest-growing cities in North Carolina, with many homes built during development booms now reaching the age where roofs need attention. Combined with increasingly severe weather patterns and summer storms, many Cabarrus County homeowners are seeing more roof issues. Regular inspections help catch problems early.',
   },
 ];
@@ -238,9 +238,9 @@ export default function RoofRepairConcordNCPage() {
       <LocationSchema
         location={{
           city: 'Concord',
-          state: 'NC',
-          slug: 'concord-nc',
-          county: 'Cabarrus',
+  state: 'NC',
+  slug: 'concord-nc',
+  county: 'Cabarrus',
         }}
       />
 
@@ -437,7 +437,7 @@ export default function RoofRepairConcordNCPage() {
             </h2>
             <p className="text-xl text-white/90 mb-8">
               Concord has grown rapidly as one of Charlotte&apos;s most desirable suburbs, with its excellent schools,
-              proximity to Charlotte Motor Speedway, and thriving downtown. We understand the unique needs of
+  proximity to Charlotte Motor Speedway, and thriving downtown. We understand the unique needs of
               Cabarrus County homeowners and the specific challenges our local climate presents.
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-left">

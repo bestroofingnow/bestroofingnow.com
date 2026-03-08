@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'EPDM Roofing Charlotte NC | Rubber Roof Installation',
-    description:
+  description:
       'Professional EPDM rubber roof installation for Charlotte commercial and industrial buildings. Proven durability, easy maintenance, and 30+ year lifespan.',
-    url: `${SITE_CONFIG.url}/epdm-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/epdm-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.flatRoof,
-        width: 1200,
-        height: 630,
-        alt: 'EPDM rubber roof installation Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'EPDM rubber roof installation Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -69,33 +69,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: 'Proven 30+ Year Lifespan',
-    description: 'EPDM has the longest track record of any single-ply membrane, with many installations lasting 30-50 years.',
+  title: 'Proven 30+ Year Lifespan',
+  description: 'EPDM has the longest track record of any single-ply membrane, with many installations lasting 30-50 years.',
   },
   {
     icon: ThermometerSun,
-    title: 'Superior UV Resistance',
-    description: 'Exceptional resistance to UV radiation and ozone - no chalking, cracking, or brittleness over time.',
+  title: 'Superior UV Resistance',
+  description: 'Exceptional resistance to UV radiation and ozone - no chalking, cracking, or brittleness over time.',
   },
   {
     icon: Wrench,
-    title: 'Easy to Repair',
-    description: 'Simple patch repairs can be done quickly and affordably without specialized equipment.',
+  title: 'Easy to Repair',
+  description: 'Simple patch repairs can be done quickly and affordably without specialized equipment.',
   },
   {
     icon: Zap,
-    title: 'Flexible in All Temps',
-    description: 'Maintains flexibility from -40°F to 300°F, handling Charlotte\'s temperature swings with ease.',
+  title: 'Flexible in All Temps',
+  description: 'Maintains flexibility from -40°F to 300°F, handling Charlotte\'s temperature swings with ease.',
   },
   {
     icon: Shield,
-    title: 'Hail Resistant',
-    description: 'The rubber membrane absorbs impact energy, providing excellent protection against hail damage.',
+  title: 'Hail Resistant',
+  description: 'The rubber membrane absorbs impact energy, providing excellent protection against hail damage.',
   },
   {
     icon: Award,
-    title: 'Environmentally Friendly',
-    description: '100% recyclable material with low environmental impact during manufacturing and installation.',
+  title: 'Environmentally Friendly',
+  description: '100% recyclable material with low environmental impact during manufacturing and installation.',
   },
 ];
 
@@ -103,33 +103,33 @@ const benefits = [
 const whyChooseUs = [
   {
     icon: Building2,
-    title: 'EPDM Installation Experts',
-    description: 'Our crews have extensive experience with both fully-adhered and mechanically-attached EPDM systems.',
+  title: 'EPDM Installation Experts',
+  description: 'Our crews have extensive experience with both fully-adhered and mechanically-attached EPDM systems.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte building owners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte building owners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for Carlisle, Firestone, Johns Manville, and other EPDM manufacturers.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for Carlisle, Firestone, Johns Manville, and other EPDM manufacturers.',
   },
   {
     icon: Clock,
-    title: 'Fast Turnaround',
-    description: 'EPDM installs quickly - most commercial roofs completed in 2-5 days.',
+  title: 'Fast Turnaround',
+  description: 'EPDM installs quickly - most commercial roofs completed in 2-5 days.',
   },
 ];
 
@@ -137,18 +137,18 @@ const whyChooseUs = [
 const applications = [
   {
     icon: Factory,
-    title: 'Industrial Facilities',
-    description: 'The #1 choice for warehouses and manufacturing plants due to proven reliability.',
+  title: 'Industrial Facilities',
+  description: 'The #1 choice for warehouses and manufacturing plants due to proven reliability.',
   },
   {
     icon: Warehouse,
-    title: 'Large Warehouses',
-    description: 'Cost-effective coverage for large roof areas with excellent long-term performance.',
+  title: 'Large Warehouses',
+  description: 'Cost-effective coverage for large roof areas with excellent long-term performance.',
   },
   {
     icon: Building2,
-    title: 'Commercial Buildings',
-    description: 'Reliable protection for offices, retail, and multi-tenant commercial properties.',
+  title: 'Commercial Buildings',
+  description: 'Reliable protection for offices, retail, and multi-tenant commercial properties.',
   },
 ];
 
@@ -156,18 +156,18 @@ const applications = [
 const installationMethods = [
   {
     title: 'Fully-Adhered',
-    description: 'Membrane is glued directly to the substrate for maximum wind resistance and durability.',
-    pros: ['Best wind resistance', 'Smooth appearance', 'Ideal for high-wind areas'],
+  description: 'Membrane is glued directly to the substrate for maximum wind resistance and durability.',
+  pros: ['Best wind resistance', 'Smooth appearance', 'Ideal for high-wind areas'],
   },
   {
     title: 'Mechanically-Attached',
-    description: 'Membrane is secured with plates and fasteners, then seams are taped or glued.',
-    pros: ['Lower cost', 'Faster installation', 'Good for large roofs'],
+  description: 'Membrane is secured with plates and fasteners, then seams are taped or glued.',
+  pros: ['Lower cost', 'Faster installation', 'Good for large roofs'],
   },
   {
     title: 'Ballasted',
-    description: 'Loose-laid membrane held in place by river rock or pavers.',
-    pros: ['Lowest cost', 'Easy repairs', 'Added protection'],
+  description: 'Loose-laid membrane held in place by river rock or pavers.',
+  pros: ['Lowest cost', 'Easy repairs', 'Added protection'],
   },
 ];
 
@@ -185,42 +185,42 @@ const comparison = [
 const faqs = [
   {
     question: 'What is EPDM roofing and what is it made of?',
-    answer:
+  answer:
       'EPDM (Ethylene Propylene Diene Monomer) is a synthetic rubber roofing membrane used primarily for low-slope and flat roofs. Made from a durable rubber compound, EPDM has been used in commercial roofing since the 1960s and has the longest track record of any single-ply membrane. Its rubber composition gives it exceptional flexibility and weather resistance.',
   },
   {
     question: 'How much does EPDM roofing cost in Charlotte NC?',
-    answer:
+  answer:
       'EPDM roofing in Charlotte typically costs $4-8 per square foot installed, depending on roof size, membrane thickness (45 or 60 mil), and installation method. For a 10,000 sq ft commercial roof, expect $40,000-$80,000. EPDM is one of the most cost-effective flat roofing options, especially for large roof areas.',
   },
   {
     question: 'How long does an EPDM rubber roof last?',
-    answer:
+  answer:
       'EPDM roofs routinely last 30-50 years when properly installed and maintained. Many original EPDM installations from the 1970s and 1980s are still performing today. The key to longevity is quality installation, proper seam adhesion, and regular maintenance to address any issues before they become major problems.',
   },
   {
     question: 'Is EPDM or TPO better for Charlotte commercial buildings?',
-    answer:
+  answer:
       'Both are excellent choices. EPDM offers a longer track record, easier repairs, and proven 30-50 year longevity. TPO offers better energy efficiency with its white surface. For buildings where energy costs are a major concern, TPO may be better. For maximum proven durability and the lowest lifecycle cost, EPDM is often the choice. We can help you decide based on your specific building and needs.',
   },
   {
     question: 'Can EPDM roofing be installed over an existing roof?',
-    answer:
+  answer:
       'Yes, EPDM can often be installed over existing roofing materials if the substrate is sound and local codes permit. This "recover" approach saves on tear-off costs. However, we always inspect the existing roof thoroughly to ensure there are no underlying issues that need to be addressed first.',
   },
   {
     question: 'How are EPDM roof seams sealed?',
-    answer:
+  answer:
       'EPDM seams are typically sealed using either specially formulated adhesives or seam tape. Both methods create strong, watertight bonds when properly applied. At Best Roofing Now, we use premium seam products and proven techniques to ensure your EPDM seams perform for decades.',
   },
   {
     question: 'Is EPDM roofing good for Charlotte\'s climate?',
-    answer:
+  answer:
       'Absolutely. EPDM\'s flexibility allows it to expand and contract with Charlotte\'s temperature changes without cracking or splitting. Its excellent UV resistance handles our intense summer sun, and the rubber membrane shrugs off our occasional hail storms. EPDM has been protecting Charlotte buildings successfully for decades.',
   },
   {
     question: 'What maintenance does an EPDM roof require?',
-    answer:
+  answer:
       'EPDM requires minimal maintenance - typically just semi-annual inspections to check seams and flashings, clearing debris, and ensuring drains are clear. Any minor issues can be patched easily. This low maintenance requirement is one of EPDM\'s major advantages, keeping your long-term costs low.',
   },
 ];
@@ -235,7 +235,6 @@ export default function EPDMRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -264,7 +263,7 @@ export default function EPDMRoofingCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now specializes in EPDM rubber roof installation for commercial and
               industrial buildings throughout Charlotte. With 60+ years of proven performance,
-              EPDM delivers unmatched reliability and the lowest lifecycle costs.
+  EPDM delivers unmatched reliability and the lowest lifecycle costs.
             </p>
 
             {/* CTA Buttons */}

@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Asphalt Shingle Roofing Charlotte NC | CertainTeed & GAF | Best Roofing Now',
-    description:
+  description:
       'CertainTeed and GAF certified asphalt shingle installation in Charlotte NC. Architectural shingles, designer options, and lifetime warranties. BBB A+ rated with free estimates.',
-    url: `${SITE_CONFIG.url}/asphalt-shingle-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/asphalt-shingle-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.house1,
-        width: 1200,
-        height: 630,
-        alt: 'Asphalt shingle roofing Charlotte NC - Best Roofing Now professional shingle installation',
+  width: 1200,
+  height: 630,
+  alt: 'Asphalt shingle roofing Charlotte NC - Best Roofing Now professional shingle installation',
       },
     ],
   },
@@ -69,39 +69,39 @@ export const metadata: Metadata = {
 const shingleServices = [
   {
     icon: Home,
-    title: 'Shingle Roof Installation',
-    description: 'Complete new roof installation with premium shingles from CertainTeed, GAF, and Owens Corning.',
-    href: '/services/residential-roofing',
+  title: 'Shingle Roof Installation',
+  description: 'Complete new roof installation with premium shingles from CertainTeed, GAF, and Owens Corning.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Layers,
-    title: 'Architectural Shingles',
-    description: 'Dimensional shingles that provide a premium look with enhanced durability and longer warranties.',
-    href: '/services/residential-roofing',
+  title: 'Architectural Shingles',
+  description: 'Dimensional shingles that provide a premium look with enhanced durability and longer warranties.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Palette,
-    title: 'Designer Shingles',
-    description: 'Luxury shingles that replicate the look of slate, cedar shake, or tile at a fraction of the cost.',
-    href: '/services/residential-roofing',
+  title: 'Designer Shingles',
+  description: 'Luxury shingles that replicate the look of slate, cedar shake, or tile at a fraction of the cost.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Shingle Roof Repair',
-    description: 'Fast, reliable repairs for missing, damaged, or leaking shingles. Same-day service available.',
-    href: '/services/roof-repair',
+  title: 'Shingle Roof Repair',
+  description: 'Fast, reliable repairs for missing, damaged, or leaking shingles. Same-day service available.',
+  href: '/services/roof-repair',
   },
   {
     icon: Shield,
-    title: 'Full Roof Replacement',
-    description: 'Complete tear-off and replacement with premium materials and extended warranty options.',
-    href: '/services/roof-replacement',
+  title: 'Full Roof Replacement',
+  description: 'Complete tear-off and replacement with premium materials and extended warranty options.',
+  href: '/services/roof-replacement',
   },
   {
     icon: FileText,
-    title: 'Storm Damage Claims',
-    description: 'Insurance claim assistance for hail and wind damage to your shingle roof.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Claims',
+  description: 'Insurance claim assistance for hail and wind damage to your shingle roof.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -109,27 +109,27 @@ const shingleServices = [
 const shingleTypes = [
   {
     title: '3-Tab Shingles',
-    description: 'Traditional flat shingles offering economical protection. Best for budget-conscious projects.',
-    warranty: '20-25 years',
-    priceRange: '$',
+  description: 'Traditional flat shingles offering economical protection. Best for budget-conscious projects.',
+  warranty: '20-25 years',
+  priceRange: '$',
   },
   {
     title: 'Architectural Shingles',
-    description: 'Multi-layered dimensional shingles with enhanced aesthetics and durability. Most popular choice.',
-    warranty: '30-50 years',
-    priceRange: '$$',
+  description: 'Multi-layered dimensional shingles with enhanced aesthetics and durability. Most popular choice.',
+  warranty: '30-50 years',
+  priceRange: '$$',
   },
   {
     title: 'Designer Shingles',
-    description: 'Premium luxury shingles replicating slate, shake, or tile. Maximum curb appeal and protection.',
-    warranty: 'Lifetime',
-    priceRange: '$$$',
+  description: 'Premium luxury shingles replicating slate, shake, or tile. Maximum curb appeal and protection.',
+  warranty: 'Lifetime',
+  priceRange: '$$$',
   },
   {
     title: 'Impact-Resistant Shingles',
-    description: 'Class 4 rated shingles designed to withstand hail. May qualify for insurance discounts.',
-    warranty: '50 years - Lifetime',
-    priceRange: '$$-$$$',
+  description: 'Class 4 rated shingles designed to withstand hail. May qualify for insurance discounts.',
+  warranty: '50 years - Lifetime',
+  priceRange: '$$-$$$',
   },
 ];
 
@@ -137,18 +137,18 @@ const shingleTypes = [
 const shingleBrands = [
   {
     name: 'CertainTeed',
-    certification: 'ShingleMaster',
-    description: 'Premium shingles with industry-leading warranties. Landmark series is our most popular.',
+  certification: 'ShingleMaster',
+  description: 'Premium shingles with industry-leading warranties. Landmark series is our most popular.',
   },
   {
     name: 'GAF',
-    certification: 'Factory-Certified',
-    description: 'America\'s #1 selling shingle brand. Timberline HDZ offers excellent value.',
+  certification: 'Factory-Certified',
+  description: 'America\'s #1 selling shingle brand. Timberline HDZ offers excellent value.',
   },
   {
     name: 'Owens Corning',
-    certification: 'Preferred Contractor',
-    description: 'TruDefinition Duration shingles with SureNail technology for superior wind resistance.',
+  certification: 'Preferred Contractor',
+  description: 'TruDefinition Duration shingles with SureNail technology for superior wind resistance.',
   },
 ];
 
@@ -156,33 +156,33 @@ const shingleBrands = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Manufacturer Certified',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
+  title: 'Manufacturer Certified',
+  description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Extended Warranties',
-    description: 'Access to enhanced manufacturer warranties including 50-year and lifetime options.',
+  title: 'Extended Warranties',
+  description: 'Access to enhanced manufacturer warranties including 50-year and lifetime options.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability coverage.',
   },
   {
     icon: Users,
-    title: 'Experienced Team',
-    description: `${SITE_CONFIG.roofsInstalled}+ roofs installed in the Charlotte area since ${SITE_CONFIG.founded}.`,
+  title: 'Experienced Team',
+  description: `${SITE_CONFIG.roofsInstalled}+ roofs installed in the Charlotte area since ${SITE_CONFIG.founded}.`,
   },
   {
     icon: Clock,
-    title: 'Quick Installation',
-    description: 'Most shingle roofs completed in 1-3 days with thorough cleanup.',
+  title: 'Quick Installation',
+  description: 'Most shingle roofs completed in 1-3 days with thorough cleanup.',
   },
 ];
 
@@ -232,42 +232,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does asphalt shingle roofing cost in Charlotte NC?',
-    answer:
+  answer:
       'Asphalt shingle roof replacement in Charlotte typically costs $8,000-$25,000 for most homes, depending on roof size, pitch, and shingle choice. 3-tab shingles are most economical, while architectural shingles cost 15-25% more but offer better durability and aesthetics. Designer shingles can cost 30-50% more than architectural. We provide free, detailed estimates with transparent pricing.',
   },
   {
     question: 'What is the difference between 3-tab and architectural shingles?',
-    answer:
+  answer:
       'Three-tab shingles are flat, single-layer shingles that provide basic protection. Architectural (dimensional) shingles have multiple layers that create depth and shadow, providing a more attractive appearance similar to wood or slate. Architectural shingles are also thicker, more durable, and carry longer warranties (30-50 years vs. 20-25 years for 3-tab). We recommend architectural shingles for most Charlotte homes.',
   },
   {
     question: 'What shingle brand do you recommend for Charlotte NC?',
-    answer:
+  answer:
       'We recommend CertainTeed Landmark or GAF Timberline HDZ for most Charlotte homes. Both are high-quality architectural shingles with excellent warranties, color options, and durability for our climate. As certified installers for both brands, we can offer their extended warranty programs. For maximum hail protection, we recommend CertainTeed Landmark Impact or GAF Timberline AS II.',
   },
   {
     question: 'How long does asphalt shingle installation take?',
-    answer:
+  answer:
       'Most residential shingle roof replacements in Charlotte are completed in 1-3 days. A typical 2,000 sq ft home can be completed in 1-2 days, while larger homes with complex rooflines may take 2-3 days. We work efficiently while maintaining quality standards and always complete thorough cleanup each day.',
   },
   {
     question: 'What warranties are available on asphalt shingles?',
-    answer:
+  answer:
       'Warranty coverage depends on the shingle type and our certification level with each manufacturer. Standard warranties range from 25-50 years on materials. As a CertainTeed ShingleMaster and GAF Factory-Certified contractor, we can offer premium warranties including GAF Golden Pledge (50-year material + 25-year workmanship) and CertainTeed SureStart PLUS with full coverage for the first 10 years.',
   },
   {
     question: 'Should I get impact-resistant shingles in Charlotte?',
-    answer:
+  answer:
       'Impact-resistant (Class 4) shingles are an excellent investment in Charlotte due to our occasional severe hail storms. These shingles are engineered to withstand hail impact without damage. Many insurance companies offer premium discounts (5-28%) for Class 4 rated roofs, which can offset the additional cost over time. We recommend Class 4 shingles like CertainTeed Landmark Impact or GAF Timberline AS II for maximum protection.',
   },
   {
     question: 'What colors are most popular for Charlotte homes?',
-    answer:
+  answer:
       'The most popular shingle colors in Charlotte are Weathered Wood, Charcoal, Driftwood, and Pewter Gray. These neutral tones complement the various architectural styles common in Charlotte neighborhoods. We recommend choosing a color that complements your home\'s exterior and considering how dark colors absorb more heat. We can help you visualize colors and make the best choice during your free consultation.',
   },
   {
     question: 'How long do asphalt shingles last in Charlotte NC?',
-    answer:
+  answer:
       'Quality architectural shingles typically last 25-30 years in Charlotte\'s climate, while premium options can last 30+ years with proper maintenance. Factors affecting lifespan include shingle quality, installation technique, attic ventilation, and maintenance. Charlotte\'s hot summers and occasional severe storms can accelerate wear, making proper installation and ventilation especially important. Regular inspections help catch issues early.',
   },
 ];
@@ -282,7 +282,6 @@ export default function AsphaltShingleRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -461,7 +460,7 @@ export default function AsphaltShingleRoofingCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 Our manufacturer certifications mean you get the best products installed correctly,
-                with access to premium warranty options not available from non-certified contractors.
+  with access to premium warranty options not available from non-certified contractors.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (

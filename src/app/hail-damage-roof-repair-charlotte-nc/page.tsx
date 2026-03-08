@@ -24,7 +24,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
@@ -57,16 +56,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Hail Damage Roof Repair Charlotte NC | Insurance Claims Help | Best Roofing Now',
-    description:
+  description:
       'Expert hail damage roof repair in Charlotte NC. Free storm damage inspections, insurance claim assistance, and professional repairs. BBB A+ rated and fully insured.',
-    url: `${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.projects.stormDamage1,
-        width: 1200,
-        height: 630,
-        alt: 'Hail damage roof repair Charlotte NC - Best Roofing Now storm damage assessment',
+  width: 1200,
+  height: 630,
+  alt: 'Hail damage roof repair Charlotte NC - Best Roofing Now storm damage assessment',
       },
     ],
   },
@@ -76,39 +75,39 @@ export const metadata: Metadata = {
 const hailDamageServices = [
   {
     icon: Camera,
-    title: 'Free Hail Damage Inspection',
-    description: 'Comprehensive roof inspection after any hail storm with detailed photo documentation and written report.',
-    href: '/services/roof-inspection',
+  title: 'Free Hail Damage Inspection',
+  description: 'Comprehensive roof inspection after any hail storm with detailed photo documentation and written report.',
+  href: '/services/roof-inspection',
   },
   {
     icon: FileText,
-    title: 'Insurance Claim Assistance',
-    description: 'We work directly with your insurance company, meet with adjusters, and fight for fair settlements.',
-    href: '/services/insurance-claims',
+  title: 'Insurance Claim Assistance',
+  description: 'We work directly with your insurance company, meet with adjusters, and fight for fair settlements.',
+  href: '/services/insurance-claims',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Professional repair of all hail and storm damage including shingles, flashing, gutters, and siding.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Professional repair of all hail and storm damage including shingles, flashing, gutters, and siding.',
+  href: '/services/storm-damage',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Tarping',
-    description: 'Immediate tarping services to protect your home from further water damage after severe storms.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Tarping',
+  description: 'Immediate tarping services to protect your home from further water damage after severe storms.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Shield,
-    title: 'Full Roof Replacement',
-    description: 'When damage is extensive, we provide complete roof replacement with premium, impact-resistant materials.',
-    href: '/services/roof-replacement',
+  title: 'Full Roof Replacement',
+  description: 'When damage is extensive, we provide complete roof replacement with premium, impact-resistant materials.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Umbrella,
-    title: 'Preventive Upgrades',
-    description: 'Upgrade to impact-resistant Class 4 shingles for better protection against future hail storms.',
-    href: '/services/residential-roofing',
+  title: 'Preventive Upgrades',
+  description: 'Upgrade to impact-resistant Class 4 shingles for better protection against future hail storms.',
+  href: '/services/residential-roofing',
   },
 ];
 
@@ -116,33 +115,33 @@ const hailDamageServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Trusted by Charlotte homeowners with an A+ Better Business Bureau rating.',
+  title: 'BBB A+ Rated',
+  description: 'Trusted by Charlotte homeowners with an A+ Better Business Bureau rating.',
   },
   {
     icon: Star,
-    title: 'Insurance Specialists',
-    description: 'Thousands of successful insurance claims processed for Charlotte homeowners.',
+  title: 'Insurance Specialists',
+  description: 'Thousands of successful insurance claims processed for Charlotte homeowners.',
   },
   {
     icon: Shield,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability coverage.',
   },
   {
     icon: CheckCircle,
-    title: 'Free Inspections',
-    description: 'No-cost, no-obligation roof inspections after any hail storm event.',
+  title: 'Free Inspections',
+  description: 'No-cost, no-obligation roof inspections after any hail storm event.',
   },
   {
     icon: Users,
-    title: 'Adjuster Meetings',
-    description: 'We meet with your insurance adjuster to ensure nothing is missed.',
+  title: 'Adjuster Meetings',
+  description: 'We meet with your insurance adjuster to ensure nothing is missed.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Response',
-    description: 'Round-the-clock emergency services when you need us most.',
+  title: '24/7 Emergency Response',
+  description: 'Round-the-clock emergency services when you need us most.',
   },
 ];
 
@@ -188,42 +187,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How do I know if my roof has hail damage?',
-    answer:
+  answer:
       'Common signs of hail damage include dented or bruised shingles, missing granules (appearing as dark spots), cracked shingles, dented gutters or downspouts, and damaged roof vents or flashing. However, many signs of hail damage are not visible from the ground. After any hail storm in Charlotte, we recommend scheduling a free professional inspection to assess your roof thoroughly.',
   },
   {
     question: 'Should I file an insurance claim for hail damage?',
-    answer:
+  answer:
       'If your roof has significant hail damage, filing an insurance claim is usually recommended. Most homeowner policies cover hail damage minus your deductible. We provide free inspections and can help you determine if the damage warrants a claim. If we find qualifying damage, we\'ll document everything and guide you through the claims process.',
   },
   {
     question: 'How long do I have to file a hail damage claim in Charlotte NC?',
-    answer:
+  answer:
       'In North Carolina, you typically have 3 years from the date of the storm to file a property damage claim. However, we strongly recommend filing as soon as possible after discovering damage. Delays can result in further deterioration and make it harder to prove the damage was storm-related. Call us immediately after any hail storm for a free inspection.',
   },
   {
     question: 'Will my insurance rates go up if I file a hail damage claim?',
-    answer:
+  answer:
       'Hail damage claims are typically considered "Act of God" claims and generally don\'t affect your rates the same way at-fault claims do. Many insurance companies don\'t raise rates for weather-related claims, especially if you have a good claims history. We can discuss your specific situation during our free inspection.',
   },
   {
     question: 'How much does hail damage roof repair cost in Charlotte?',
-    answer:
+  answer:
       'The cost depends on the extent of damage. Minor repairs may cost $200-$500, while significant damage may require partial or full roof replacement ranging from $8,000-$25,000. The good news is that most hail damage is covered by homeowner\'s insurance, so you\'d only pay your deductible. We provide free estimates and help maximize your insurance settlement.',
   },
   {
     question: 'Do you work with my insurance company?',
-    answer:
+  answer:
       'Yes, we work with all major insurance companies serving Charlotte including State Farm, Allstate, Nationwide, USAA, Farmers, and more. We provide detailed documentation, meet with adjusters at your property, supplement underpaid claims, and ensure you receive fair compensation for all storm-related damage.',
   },
   {
     question: 'What happens during a hail damage inspection?',
-    answer:
+  answer:
       'Our certified inspectors thoroughly examine your entire roof, including shingles, flashing, vents, gutters, and surrounding areas. We document all damage with detailed photos and measurements. You\'ll receive a comprehensive written report explaining our findings and recommendations. The inspection is completely free with no obligation.',
   },
   {
     question: 'How soon after a hail storm should I schedule an inspection?',
-    answer:
+  answer:
       'Schedule an inspection as soon as safely possible after a hail storm. Early inspection helps document damage before it worsens and ensures you don\'t miss insurance filing deadlines. We offer emergency response and can often inspect your roof within 24-48 hours of your call. Don\'t wait for visible leaks - hidden damage can cause problems for months.',
   },
 ];
@@ -247,7 +246,6 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`}
         pageName="Hail Damage Roof Repair Charlotte NC"
@@ -257,23 +255,23 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
         faqs={[
           {
             question: 'How much does hail damage roof repair cost in Charlotte?',
-            answer: 'Hail damage roof repair in Charlotte typically costs $200-$500 for minor repairs, or $8,000-$25,000+ for full roof replacement if damage is extensive. The good news is that most hail damage is covered by homeowner insurance, so you only pay your deductible (usually $500-$2,500). Best Roofing Now provides free inspections and helps maximize your insurance settlement.',
-            speakableAnswer: 'Minor hail repairs cost $200 to $500, while full replacement runs $8,000 to $25,000. Most hail damage is covered by insurance, so you typically only pay your deductible.',
+  answer: 'Hail damage roof repair in Charlotte typically costs $200-$500 for minor repairs, or $8,000-$25,000+ for full roof replacement if damage is extensive. The good news is that most hail damage is covered by homeowner insurance, so you only pay your deductible (usually $500-$2,500). Best Roofing Now provides free inspections and helps maximize your insurance settlement.',
+  speakableAnswer: 'Minor hail repairs cost $200 to $500, while full replacement runs $8,000 to $25,000. Most hail damage is covered by insurance, so you typically only pay your deductible.',
           },
           {
             question: 'Who repairs hail damage roofs in Charlotte NC?',
-            answer: 'Best Roofing Now is Charlotte\'s trusted hail damage roof repair specialist. We provide free hail damage inspections, work with all major insurance companies, meet with adjusters, and ensure you get a fair settlement. Call 704-605-6047 for a free storm damage inspection.',
-            speakableAnswer: 'Best Roofing Now repairs hail damaged roofs in Charlotte. We offer free inspections and handle insurance claims. Call 704-605-6047 for immediate assistance.',
+  answer: 'Best Roofing Now is Charlotte\'s trusted hail damage roof repair specialist. We provide free hail damage inspections, work with all major insurance companies, meet with adjusters, and ensure you get a fair settlement. Call 704-605-6047 for a free storm damage inspection.',
+  speakableAnswer: 'Best Roofing Now repairs hail damaged roofs in Charlotte. We offer free inspections and handle insurance claims. Call 704-605-6047 for immediate assistance.',
           },
           {
             question: 'Does insurance cover hail damage to roofs in North Carolina?',
-            answer: 'Yes, most homeowners insurance policies in North Carolina cover hail damage to roofs. Hail damage is typically classified as an "Act of God" claim and covered under your dwelling protection. You will pay your deductible, but the rest of the repair or replacement cost is covered. File claims promptly as NC allows 3 years from the storm date.',
-            speakableAnswer: 'Yes, most NC homeowners insurance covers hail damage to roofs. You pay your deductible and insurance covers the rest. File claims within 3 years of the storm.',
+  answer: 'Yes, most homeowners insurance policies in North Carolina cover hail damage to roofs. Hail damage is typically classified as an "Act of God" claim and covered under your dwelling protection. You will pay your deductible, but the rest of the repair or replacement cost is covered. File claims promptly as NC allows 3 years from the storm date.',
+  speakableAnswer: 'Yes, most NC homeowners insurance covers hail damage to roofs. You pay your deductible and insurance covers the rest. File claims within 3 years of the storm.',
           },
           {
             question: 'How do I know if my roof has hail damage?',
-            answer: 'Signs of hail damage include dented or bruised shingles, missing granules appearing as dark spots, cracked or split shingles, dented gutters and downspouts, damaged roof vents, and dents in metal flashing. Many signs are not visible from the ground, so schedule a free professional inspection after any hail storm in Charlotte.',
-            speakableAnswer: 'Hail damage signs include dented shingles, missing granules, cracked shingles, dented gutters, and damaged vents. Get a free professional inspection after any Charlotte hail storm.',
+  answer: 'Signs of hail damage include dented or bruised shingles, missing granules appearing as dark spots, cracked or split shingles, dented gutters and downspouts, damaged roof vents, and dents in metal flashing. Many signs are not visible from the ground, so schedule a free professional inspection after any hail storm in Charlotte.',
+  speakableAnswer: 'Hail damage signs include dented shingles, missing granules, cracked shingles, dented gutters, and damaged vents. Get a free professional inspection after any Charlotte hail storm.',
           },
         ]}
       />
@@ -305,7 +303,7 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Did a recent hail storm damage your roof? Best Roofing Now provides free hail damage inspections,
-              expert insurance claim assistance, and professional repairs. We fight to ensure you get the
+  expert insurance claim assistance, and professional repairs. We fight to ensure you get the
               settlement you deserve. Don't wait - hidden damage gets worse over time.
             </p>
 

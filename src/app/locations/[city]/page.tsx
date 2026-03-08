@@ -54,18 +54,18 @@ const locationContent: Record<
   'charlotte-nc': {
     description:
       'Looking for the best roofing contractor in Charlotte NC? Best Roofing Now is Charlotte\'s #1 rated roofing company with a perfect 5-star Google rating and 500+ roofs installed. Veteran-owned, family-operated, BBB A+ accredited.',
-    extendedContent:
+  extendedContent:
       'As the Queen City and largest metropolitan area in the Carolinas, Charlotte combines Southern charm with modern urban living. From the historic tree-lined streets of Myers Park to the bustling energy of Uptown, Charlotte homeowners take pride in properties that reflect the city\'s rich heritage and forward-thinking spirit. Best Roofing Now is the roofing contractor Charlotte homeowners trust—with 500+ successful roof installations, a perfect 5-star Google rating, and BBB A+ accreditation. We understand that your roof is more than just shingles—it\'s the protection your family depends on every day. That\'s why we\'ve built our reputation as the #1 roofing contractor in Charlotte for honest assessments, quality workmanship, and fair pricing. Our main office is located right here in Charlotte, which means faster response times for inspections, emergency repairs, and scheduled replacements than any other roofing company near you.',
-    roofingChallenges:
+  roofingChallenges:
       'Charlotte\'s humid subtropical climate brings hot summers with temperatures regularly exceeding 90°F, frequent afternoon thunderstorms from April through September, and occasional ice storms in winter. The city receives approximately 44 inches of rain annually and experiences severe weather events including straight-line winds, hail, and the occasional tornado that can cause significant roof damage. That\'s why choosing a local roofing contractor in Charlotte with storm damage experience matters. As Charlotte\'s top-rated roofing contractor, our team at Best Roofing Now responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. With Charlotte\'s dense tree canopy and aging housing stock spanning everything from 1920s bungalows to modern new construction, roof damage from falling limbs and storm debris is a common concern. When you search for "roofing contractor near me" or "roofing company near me," you want a team that knows Charlotte—and that\'s us.',
-    servicesIntro:
+  servicesIntro:
       'As the #1 roofing contractor in Charlotte NC, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Whether you need a minor repair or a complete roof replacement, our roofing company in Charlotte delivers the quality and professionalism your home deserves. We\'re certified by CertainTeed, GAF, and Owens Corning—using only premium materials backed by industry-leading warranties. Contact the roofing contractor Charlotte homeowners trust for honest assessments and quality workmanship today.',
-    neighborhoods: [
+  neighborhoods: [
       'Myers Park', 'Dilworth', 'South End', 'NoDa', 'University City',
       'Ballantyne', 'Plaza Midwood', 'Elizabeth', 'Eastover', 'SouthPark',
       'Highland Creek', 'Steele Creek', 'Wesley Heights',
     ],
-    highlights: [
+  highlights: [
       '500+ roofs installed with 5-star Google rating',
       'CertainTeed, GAF & Owens Corning certified',
       'Insurance claim experts—we handle the paperwork',
@@ -75,18 +75,18 @@ const locationContent: Record<
   },
   'concord-nc': {
     description:
-      'When Concord homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Cabarrus County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Concord homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Cabarrus County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Founded in 1796, Concord\'s name meaning "harmony" reflects the spirit of this thriving city that has grown from a textile hub into one of the fastest-growing communities in the Charlotte metro. Home to Charlotte Motor Speedway and Concord Mills, the city blends historic charm with modern attractions. As a trusted roofing company in Concord, Best Roofing Now understands the unique character of this community. Many Concord homes feature the distinctive architecture of the textile boom era, with slate and traditional shingle roofs that require specialized knowledge to maintain and repair. Whether you live in a historic Union Street residence or a modern development near the speedway, our roofing company in Concord has the expertise to protect your investment.',
-    roofingChallenges:
+  roofingChallenges:
       'Concord\'s position in Cabarrus County makes it susceptible to severe thunderstorms moving through the I-85 corridor. The area frequently experiences high winds, hail, and heavy downpours that can test even well-maintained roofing systems. Recent storm activity has caused significant damage to homes throughout the county. That\'s why choosing a local roofing company in Concord with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the premier roofing company in Concord, we\'ve helped hundreds of homeowners navigate the insurance claim process after storm damage.',
-    servicesIntro:
+  servicesIntro:
       'As your trusted roofing company in Concord, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Concord uses only premium materials and employs skilled craftsmen who take pride in their work. When you need a reliable roofing company in Concord, call the team that Cabarrus County trusts.',
-    neighborhoods: [
+  neighborhoods: [
       'Historic Downtown', 'Odell School', 'Afton Village', 'Gibson Village',
       'Charlotte Motor Speedway area', 'Christenbury', 'Moss Creek', 'Skybrook',
     ],
-    highlights: [
+  highlights: [
       'Quick response times to Cabarrus County',
       'Experience with historic Union Street residences',
       'Storm damage specialists for the I-85 corridor',
@@ -95,18 +95,18 @@ const locationContent: Record<
   },
   'huntersville-nc': {
     description:
-      'When Huntersville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Huntersville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'As the southern gateway to Lake Norman, Huntersville perfectly balances suburban convenience with outdoor recreation. With a population exceeding 52,000, this thriving community offers residents access to Birkdale Village shopping, excellent schools, and countless parks including Blythe Landing with its public boat launch. Best Roofing Now is proud to serve as the trusted roofing company in Huntersville that residents depend on. From the established neighborhoods along Gilead Road to the newer developments in Skybrook and Vermillion, Huntersville homes require roofing solutions that handle both the summer heat and the occasional severe weather event. Our roofing company in Huntersville has extensive experience working with HOAs and maintaining the aesthetic standards of planned communities.',
-    roofingChallenges:
+  roofingChallenges:
       'Huntersville\'s location between Uptown Charlotte and Lake Norman exposes homes to unique weather patterns, including lake-effect conditions and severe storms that track along the I-77 corridor. Spring and summer thunderstorms frequently bring damaging winds and hail to neighborhoods throughout the town. That\'s why choosing a local roofing company in Huntersville with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the leading roofing company in Huntersville, we understand the specific challenges that lake-effect weather creates for local roofs.',
-    servicesIntro:
+  servicesIntro:
       'As your go-to roofing company in Huntersville, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Huntersville delivers the quality workmanship that this growing community deserves. When you need a dependable roofing company in Huntersville, trust the team with deep local roots.',
-    neighborhoods: [
+  neighborhoods: [
       'Birkdale Village', 'Rosedale', 'Vermillion', 'Skybrook',
       'The Farms', 'Gilead Road area', 'Cedarfield', 'Monteith Park',
     ],
-    highlights: [
+  highlights: [
       'Extensive experience with HOA requirements',
       'Understanding of planned community aesthetic standards',
       'Lake-effect weather expertise',
@@ -115,18 +115,18 @@ const locationContent: Record<
   },
   'cornelius-nc': {
     description:
-      'When Cornelius homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Cornelius homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'With 70 miles of Lake Norman shoreline, Cornelius has transformed from a small railroad town to one of the most desirable lakefront communities in the Carolinas. Home to Ramsey Creek Park and Hello Sailor restaurant at Holiday Marina, Cornelius offers an unparalleled lakeside lifestyle. Best Roofing Now is the roofing company in Cornelius that waterfront homeowners trust. Cornelius waterfront homes often feature premium architectural shingles, metal roofing, and custom details that require specialized expertise. We understand the importance of maintaining both the structural integrity and aesthetic appeal of lakefront properties. Our roofing company in Cornelius has worked on some of the most beautiful homes in communities like The Peninsula and Connor Quay.',
-    roofingChallenges:
+  roofingChallenges:
       'Waterfront properties in Cornelius face unique challenges from lake-effect weather patterns, including increased wind exposure and humidity that can accelerate roof aging. Summer thunderstorms rolling across Lake Norman can bring sudden intense weather to shoreline homes. That\'s why choosing a local roofing company in Cornelius with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the trusted roofing company in Cornelius, we specialize in wind-resistant installation techniques and materials that withstand constant moisture exposure.',
-    servicesIntro:
+  servicesIntro:
       'As the premier roofing company in Cornelius, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Cornelius understands the premium standards of Lake Norman living. When you need a skilled roofing company in Cornelius, call the waterfront specialists.',
-    neighborhoods: [
+  neighborhoods: [
       'The Peninsula', 'Birkdale', 'Jetton Road', 'Antiquity',
       'Caldwell Station', 'Connor Quay', 'Bailey\'s Glen', 'Westmoreland',
     ],
-    highlights: [
+  highlights: [
       'Specialized expertise for lakefront properties',
       'Premium architectural shingles and metal roofing',
       'Wind-resistant installation techniques',
@@ -135,18 +135,18 @@ const locationContent: Record<
   },
   'davidson-nc': {
     description:
-      'When Davidson homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Davidson homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Home to Davidson College since 1837, this charming community blends academic excellence with small-town character. Davidson\'s walkable downtown, historic architecture, and strong sense of community make it one of the most distinctive towns in the Lake Norman region. Best Roofing Now is proud to be the roofing company in Davidson that residents trust with their historic and modern homes alike. Davidson\'s mix of historic homes near the college and newer developments requires a roofing contractor who understands architectural preservation alongside modern building techniques. Our roofing company in Davidson takes pride in maintaining the character of this special community while providing modern roofing solutions.',
-    roofingChallenges:
+  roofingChallenges:
       'Davidson\'s mature tree canopy provides beautiful shade but also presents roofing challenges during storms. High winds can bring down limbs onto roofs, and accumulated debris can clog gutters and valleys, leading to water damage if not addressed promptly. That\'s why choosing a local roofing company in Davidson with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As a respected roofing company in Davidson, we have the expertise to work on both protected historic properties and contemporary homes.',
-    servicesIntro:
+  servicesIntro:
       'As your neighborhood roofing company in Davidson, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Davidson respects the town\'s unique character. When you need a thoughtful roofing company in Davidson, trust the team that understands this community.',
-    neighborhoods: [
+  neighborhoods: [
       'Historic Downtown', 'West Branch', 'Summers Walk', 'Davidson Bay',
       'Bradford', 'Davidson College area', 'River Run',
     ],
-    highlights: [
+  highlights: [
       'Respect for historic architectural preservation',
       'Experience with varied architectural styles',
       'Tree damage and debris removal expertise',
@@ -155,18 +155,18 @@ const locationContent: Record<
   },
   'mooresville-nc': {
     description:
-      'When Mooresville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Iredell County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Mooresville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Iredell County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Known as Race City USA for its connection to NASCAR, Mooresville offers the most extensive Lake Norman shoreline access with communities divided by I-77 into lakeside and eastern neighborhoods. The town combines motorsports heritage with family-friendly living and excellent schools in the Iredell-Statesville district. Best Roofing Now is the roofing company in Mooresville that delivers championship-quality results. From luxury lakefront estates in The Point to family homes in Morrison Plantation, Mooresville offers diverse housing requiring tailored roofing approaches. Our roofing company in Mooresville understands that lower Iredell County taxes make proper roof maintenance an important investment in protecting your property value.',
-    roofingChallenges:
+  roofingChallenges:
       'Mooresville\'s larger geographic footprint means homes experience varying weather conditions, from lakeside humidity and wind exposure on the west to the more protected eastern neighborhoods. The area frequently sees severe thunderstorms during spring and summer months. That\'s why choosing a local roofing company in Mooresville with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the go-to roofing company in Mooresville, we serve both residential and commercial properties throughout Race City.',
-    servicesIntro:
+  servicesIntro:
       'As the trusted roofing company in Mooresville, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Mooresville brings the same precision and excellence that defines this NASCAR town. When you need a winning roofing company in Mooresville, call the local experts.',
-    neighborhoods: [
+  neighborhoods: [
       'The Point', 'Sailor\'s Watch', 'Sisters Cove', 'Morrison Plantation',
       'Curtis Pond', 'Langtree', 'Muirfield', 'Bridgeport',
     ],
-    highlights: [
+  highlights: [
       'Serving both lakefront estates and family homes',
       'Lower Iredell County taxes - protect your investment',
       'Diverse housing expertise',
@@ -175,18 +175,18 @@ const locationContent: Record<
   },
   'lake-norman': {
     description:
-      'When Lake Norman homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving multiple counties and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Lake Norman homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving multiple counties and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'As North Carolina\'s largest man-made lake with 520 miles of shoreline, Lake Norman draws residents seeking waterfront living within easy reach of Charlotte. Often called the "Inland Sea," the lake area spans four counties and includes some of the most prestigious communities in the region. Best Roofing Now is the roofing company in Lake Norman that waterfront property owners depend on. Lake Norman waterfront homes represent significant investments requiring specialized roofing expertise. Our roofing company in Lake Norman understands the unique challenges of lake properties, from wind-resistant installation techniques to materials that withstand constant moisture exposure and salt air from boat traffic.',
-    roofingChallenges:
+  roofingChallenges:
       'Lake Norman properties face enhanced weather exposure due to the open water, experiencing stronger winds, increased humidity, and unique microclimate conditions. Storms tracking across the lake can intensify quickly, bringing sudden severe weather to waterfront homes. That\'s why choosing a local roofing company in Lake Norman with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the premier roofing company in Lake Norman, we protect investments across Cornelius, Davidson, Huntersville, Mooresville, Denver, and Sherrills Ford.',
-    servicesIntro:
+  servicesIntro:
       'As the leading roofing company in Lake Norman, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Lake Norman serves waterfront communities across four counties. When you need a specialized roofing company in Lake Norman, trust the lakefront experts.',
-    neighborhoods: [
+  neighborhoods: [
       'Cornelius waterfront', 'Davidson waterfront', 'Huntersville waterfront',
       'Mooresville waterfront', 'Denver', 'Sherrills Ford',
     ],
-    highlights: [
+  highlights: [
       'Comprehensive four-county Lake Norman coverage',
       'Wind-resistant installation techniques',
       'Materials for constant moisture exposure',
@@ -195,18 +195,18 @@ const locationContent: Record<
   },
   'matthews-nc': {
     description:
-      'When Matthews homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Matthews homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'This charming southeast Mecklenburg town maintains its small-town character while providing excellent schools and a thriving downtown district. Matthews\' annual festivals, historic depot, and walkable downtown attract families seeking community-oriented living within easy reach of Charlotte. Best Roofing Now is proud to be the roofing company in Matthews that local families trust. Matthews homes range from established neighborhoods with mature trees to newer developments requiring different maintenance approaches. Our roofing company in Matthews works closely with homeowners to address the specific challenges of each property while maintaining the community\'s aesthetic standards.',
-    roofingChallenges:
+  roofingChallenges:
       'Matthews\' position in southeast Mecklenburg puts it in the path of storms moving through the region from the southwest. The area experiences frequent severe thunderstorms, occasional tornado warnings, and significant hail events that can damage roofing systems. That\'s why choosing a local roofing company in Matthews with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As a trusted roofing company in Matthews, we\'ve served this community through many storm seasons.',
-    servicesIntro:
+  servicesIntro:
       'As your neighborhood roofing company in Matthews, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Matthews delivers small-town service with big-city expertise. When you need a reliable roofing company in Matthews, call your local team.',
-    neighborhoods: [
+  neighborhoods: [
       'Historic Downtown', 'Sardis Forest', 'McKee Farms', 'Matthews Farm',
       'Stallings Road area', 'Sardis Woods', 'Crown Point', 'Weddington Chase',
     ],
-    highlights: [
+  highlights: [
       'Quick service to Union County border',
       'Experience with mature tree neighborhoods',
       'Strong local reputation',
@@ -215,18 +215,18 @@ const locationContent: Record<
   },
   'mint-hill-nc': {
     description:
-      'When Mint Hill homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Mint Hill homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Known for its rural character and spacious properties, Mint Hill offers a country feel just minutes from Charlotte. The town\'s commitment to preserving green space and its excellent schools in both Mecklenburg and Union county districts make it attractive to families seeking more land. Best Roofing Now is the roofing company in Mint Hill that understands larger properties. Mint Hill properties often feature larger homes on spacious lots, many with detached structures like barns, workshops, and guest houses that also require professional roofing attention. Our roofing company in Mint Hill provides comprehensive service for primary residences and outbuildings alike.',
-    roofingChallenges:
+  roofingChallenges:
       'Mint Hill\'s open spaces and larger lots can increase wind exposure during storms. The area frequently experiences the same severe weather as Charlotte, with thunderstorms, hail, and occasional tornado activity affecting homes throughout the community. That\'s why choosing a local roofing company in Mint Hill with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the preferred roofing company in Mint Hill, we understand the unique needs of country properties.',
-    servicesIntro:
+  servicesIntro:
       'As your trusted roofing company in Mint Hill, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Mint Hill serves everything from main residences to barns and outbuildings. When you need a versatile roofing company in Mint Hill, trust the rural property experts.',
-    neighborhoods: [
+  neighborhoods: [
       'Clear Creek', 'Chestnut Lane', 'Bain School Road area',
       'Potter Road communities', 'Bonterra', 'Summerwood', 'Cheval',
     ],
-    highlights: [
+  highlights: [
       'Service for primary residences and outbuildings',
       'Experience with larger properties',
       'Family-owned serving families',
@@ -235,18 +235,18 @@ const locationContent: Record<
   },
   'harrisburg-nc': {
     description:
-      'When Harrisburg homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Cabarrus County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Harrisburg homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Cabarrus County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Positioned at the intersection of Mecklenburg, Cabarrus, and Union counties, Harrisburg has experienced tremendous growth while maintaining its small-town appeal. The town\'s excellent schools and convenient access to Charlotte, Concord, and University City make it ideal for families. Best Roofing Now is the roofing company in Harrisburg that growing families trust. Harrisburg\'s rapid growth means homes ranging from newly constructed to established neighborhoods. Whether your home is in a master-planned community like Highland Creek or an older established area, our roofing company in Harrisburg provides roofing solutions tailored to your specific needs.',
-    roofingChallenges:
+  roofingChallenges:
       'Harrisburg\'s location in the path of storms moving northeast from Charlotte means homes frequently experience severe weather. Recent tornado confirmations in the area highlight the importance of storm-resistant roofing and prompt damage assessment after weather events. That\'s why choosing a local roofing company in Harrisburg with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the reliable roofing company in Harrisburg, we\'ve helped this growing community recover from numerous storms.',
-    servicesIntro:
+  servicesIntro:
       'As your local roofing company in Harrisburg, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Harrisburg supports this rapidly growing community. When you need a responsive roofing company in Harrisburg, call the team that grows with you.',
-    neighborhoods: [
+  neighborhoods: [
       'Highland Creek', 'Rocky River Crossing', 'Stallings Road area',
       'Pharr Mill communities', 'Harrisburg Town Center',
     ],
-    highlights: [
+  highlights: [
       'Master-planned community experience',
       'New construction and established home expertise',
       'Storm-resistant roofing specialists',
@@ -255,18 +255,18 @@ const locationContent: Record<
   },
   'kannapolis-nc': {
     description:
-      'When Kannapolis homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Cabarrus County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Kannapolis homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Cabarrus County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Once home to Cannon Mills and the world\'s largest towel producer, Kannapolis has reinvented itself with the NC Research Campus biotechnology hub. The hometown of Dale Earnhardt maintains its working-class heritage while embracing a biotech-driven future. Best Roofing Now is the roofing company in Kannapolis that honors both old and new. Kannapolis features a unique mix of historic mill-era homes and newer construction. Many older homes have original architectural features worth preserving, requiring contractors who understand both historic preservation and modern roofing technology. Our roofing company in Kannapolis bridges the gap between tradition and innovation.',
-    roofingChallenges:
+  roofingChallenges:
       'Kannapolis homes, particularly those built during the textile mill era, feature roof systems that have weathered decades of Carolina storms. The area experiences the same severe weather patterns as greater Cabarrus County, including frequent thunderstorms and hail. That\'s why choosing a local roofing company in Kannapolis with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As a respected roofing company in Kannapolis, we preserve the city\'s heritage while providing modern protection.',
-    servicesIntro:
+  servicesIntro:
       'As your hometown roofing company in Kannapolis, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Kannapolis combines competitive pricing with quality workmanship. When you need an honest roofing company in Kannapolis, trust the team that shares your values.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Kannapolis', 'Fieldcrest area', 'Gem Theatre district',
       'NC Research Campus area', 'Afton Ridge', 'Irish Buffalo Creek',
     ],
-    highlights: [
+  highlights: [
       'Historic mill-era home expertise',
       'Understanding of architectural preservation',
       'Competitive pricing for the area',
@@ -275,18 +275,18 @@ const locationContent: Record<
   },
   'gastonia-nc': {
     description:
-      'When Gastonia homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Gaston County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Gastonia homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Gaston County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'As Gaston County\'s largest city, Gastonia offers affordable living with easy access to Charlotte via I-85. The city\'s revitalized downtown, historic neighborhoods, and proximity to Crowders Mountain State Park attract residents seeking value without sacrificing convenience. Best Roofing Now is the roofing company in Gastonia that delivers Charlotte quality at Gaston County prices. Gastonia homes span from historic downtown residences to newer suburban developments, each with unique roofing requirements. Our roofing company in Gastonia provides affordable solutions that protect your investment while respecting your budget, with financing options available.',
-    roofingChallenges:
+  roofingChallenges:
       'Gastonia\'s position along the I-85 corridor makes it susceptible to severe storms moving through the region. The area experiences frequent lightning strikes, high winds, and hail events that can cause significant roof damage to homes throughout the county. That\'s why choosing a local roofing company in Gastonia with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the value-focused roofing company in Gastonia, we help homeowners maximize their insurance coverage.',
-    servicesIntro:
+  servicesIntro:
       'As your budget-friendly roofing company in Gastonia, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Gastonia proves quality doesn\'t have to break the bank. When you need an affordable roofing company in Gastonia, call the value experts.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Gastonia', 'Forestbrook', 'Ashley Park',
       'Ranlo Road area', 'New Hope', 'Cramerton', 'Belmont area',
     ],
-    highlights: [
+  highlights: [
       'Affordable solutions for every budget',
       'Financing options available',
       'Charlotte-quality work in western suburbs',
@@ -295,18 +295,18 @@ const locationContent: Record<
   },
   'pineville-nc': {
     description:
-      'When Pineville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Pineville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Mecklenburg County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Charlotte\'s southernmost suburb offers convenient access to Carolina Place Mall and the I-485 loop while maintaining a distinct community identity. Pineville\'s affordable housing options and excellent location attract first-time homebuyers and growing families. Best Roofing Now is the roofing company in Pineville that welcomes new homeowners. Pineville\'s mix of starter homes, established neighborhoods, and newer townhome communities requires flexible roofing solutions. Our roofing company in Pineville works with homeowners at every price point to provide quality roofing that protects your investment without straining your budget.',
-    roofingChallenges:
+  roofingChallenges:
       'Pineville experiences the same severe weather as Charlotte, with summer thunderstorms, occasional hail, and high winds affecting homes throughout the community. The area\'s proximity to South Carolina means storms moving north often impact Pineville first. That\'s why choosing a local roofing company in Pineville with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As your neighborhood roofing company in Pineville, we\'re often the first responders after severe weather.',
-    servicesIntro:
+  servicesIntro:
       'As your accessible roofing company in Pineville, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Pineville makes quality roofing affordable for everyone. When you need a welcoming roofing company in Pineville, call your neighbors at Best Roofing Now.',
-    neighborhoods: [
+  neighborhoods: [
       'Carolina Place Mall area', 'McMullen Creek', 'Historic Downtown Pineville',
       'Park Crossing',
     ],
-    highlights: [
+  highlights: [
       'Solutions for every price point',
       'First-time homebuyer friendly',
       'Starter homes to established neighborhoods',
@@ -315,18 +315,18 @@ const locationContent: Record<
   },
   'denver-nc': {
     description:
-      'When Denver homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Lincoln County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Denver homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Lincoln County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'This quiet Lake Norman community on the lake\'s western shore offers a slower pace of life with lakefront access, festivals like the annual Strawberry Festival, and proximity to Lake Norman State Park. Denver attracts retirees, families, and anyone seeking affordable lakefront living. Best Roofing Now is the roofing company in Denver that serves all generations. Denver\'s appeal to 55+ communities like Trilogy and young families alike means homes with diverse architectural styles and roofing needs. Whether you\'re protecting a lakefront retreat or a family home near town, our roofing company in Denver provides tailored solutions.',
-    roofingChallenges:
+  roofingChallenges:
       'Denver\'s location on Lake Norman\'s western shore exposes homes to storms moving across the open water. The area experiences significant weather events, with flash flooding, high winds, and storm damage reported regularly during severe weather outbreaks. That\'s why choosing a local roofing company in Denver with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the lakeside roofing company in Denver, we understand waterfront weather.',
-    servicesIntro:
+  servicesIntro:
       'As your lakefront roofing company in Denver, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Denver serves the entire Lincoln County community. When you need a caring roofing company in Denver, trust the team that values community.',
-    neighborhoods: [
+  neighborhoods: [
       'Trilogy at Lake Norman', 'Sailview', 'Westport',
       'Beatty\'s Ford Park area', 'East Lincoln',
     ],
-    highlights: [
+  highlights: [
       '55+ community experience',
       'Lakefront retreat specialists',
       'Family home expertise',
@@ -335,18 +335,18 @@ const locationContent: Record<
   },
   'monroe-nc': {
     description:
-      'When Monroe homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Union County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Monroe homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Union County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Union County\'s seat offers historic Southern charm with a thriving downtown courthouse square. Monroe\'s excellent schools, affordable real estate, and access to Charlotte via Highway 74 make it attractive to families seeking space and value. Best Roofing Now is the roofing company in Monroe that preserves Southern heritage. Monroe\'s historic homes near downtown and newer developments throughout Union County require different roofing approaches. Our roofing company in Monroe honors the character of historic properties while bringing modern roofing technology to newer construction.',
-    roofingChallenges:
+  roofingChallenges:
       'Monroe\'s location in Union County puts it in the path of severe weather moving through the region. The area experiences frequent thunderstorms, tornado warnings, and hail events that can cause substantial roof damage. That\'s why choosing a local roofing company in Monroe with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the dependable roofing company in Monroe, we\'ve helped Union County recover from many severe weather events.',
-    servicesIntro:
+  servicesIntro:
       'As your Union County roofing company in Monroe, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Monroe combines quality with competitive pricing. When you need a trustworthy roofing company in Monroe, call the team with Union County values.',
-    neighborhoods: [
+  neighborhoods: [
       'Historic Downtown', 'Wedgewood', 'Indian Trail Road area',
       'Airport area communities', 'Wesley Chapel',
     ],
-    highlights: [
+  highlights: [
       'Historic property preservation',
       'Modern construction expertise',
       'Union County specialists',
@@ -355,18 +355,18 @@ const locationContent: Record<
   },
   'mt-holly-nc': {
     description:
-      'When Mt Holly homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Gaston County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Mt Holly homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Gaston County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'This historic Gaston County town on the Catawba River offers small-town living with convenient access to Charlotte and the Mountain Island Lake area. Mt Holly\'s revitalized downtown and affordable housing attract residents seeking community-oriented living. Best Roofing Now is the roofing company in Mt Holly that values small-town character. Mt Holly\'s mix of historic homes, riverside properties, and newer developments requires versatile roofing expertise. Our roofing company in Mt Holly understands the unique challenges of properties near the Catawba River, including increased humidity and storm exposure.',
-    roofingChallenges:
+  roofingChallenges:
       'Mt Holly\'s riverside location and proximity to Mountain Island Lake create unique weather patterns. The area experiences severe storms from the Charlotte metro that can bring damaging winds, hail, and heavy rainfall. That\'s why choosing a local roofing company in Mt Holly with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the riverside roofing company in Mt Holly, we know how water affects roofs.',
-    servicesIntro:
+  servicesIntro:
       'As your riverside roofing company in Mt Holly, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Mt Holly serves the entire Gaston County community. When you need a dedicated roofing company in Mt Holly, trust your neighbors at Best Roofing Now.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Mt Holly', 'Catawba Heights', 'Lucia Road area',
       'Stanley area communities',
     ],
-    highlights: [
+  highlights: [
       'Riverside property expertise',
       'Historic home specialists',
       'Increased humidity and storm exposure knowledge',
@@ -376,18 +376,18 @@ const locationContent: Record<
   // === NEW LOCATIONS - 50 Mile Expansion ===
   'indian-trail-nc': {
     description:
-      'When Indian Trail homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Union County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Indian Trail homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Union County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'One of the fastest-growing towns in North Carolina, Indian Trail has transformed from a quiet crossroads into a thriving community of over 40,000 residents. Named for the ancient trading path that once connected the Catawba and Waxhaw nations, today\'s Indian Trail offers excellent schools, new shopping at Sun Valley Commons, and easy access to Charlotte via Independence Boulevard. Best Roofing Now is the roofing company in Indian Trail that keeps pace with this growing community. From established neighborhoods along Old Monroe Road to the newest developments, our roofing company in Indian Trail understands the rapid growth and diverse housing stock of this dynamic town.',
-    roofingChallenges:
+  roofingChallenges:
       'Indian Trail\'s location in Union County means homes frequently experience severe thunderstorms moving through from the southwest. The area sees significant weather events including high winds, hail, and heavy rainfall that can damage roofing systems. That\'s why choosing a local roofing company in Indian Trail with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As your trusted roofing company in Indian Trail, we help protect the investments of this fast-growing community.',
-    servicesIntro:
+  servicesIntro:
       'As your local roofing company in Indian Trail, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Indian Trail serves both long-time residents and new arrivals. When you need a responsive roofing company in Indian Trail, call the team that grows with you.',
-    neighborhoods: [
+  neighborhoods: [
       'Sun Valley', 'Hemby Bridge', 'Secrest Shortcut area', 'Old Monroe Road',
       'Wesley Chapel Road area', 'Stallings border communities',
     ],
-    highlights: [
+  highlights: [
       'Fast-growing community specialists',
       'New construction and established home expertise',
       'Quick response times to Union County',
@@ -396,18 +396,18 @@ const locationContent: Record<
   },
   'fort-mill-sc': {
     description:
-      'When Fort Mill homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving York County, SC and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Fort Mill homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving York County, SC and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Fort Mill has become one of the most desirable communities in the Charlotte metro, attracting families with its excellent Fort Mill School District, lower South Carolina taxes, and charming downtown. From the master-planned communities of Baxter Village and Springfield to established neighborhoods along Highway 160, Fort Mill offers something for everyone. Best Roofing Now is the roofing company in Fort Mill that Charlotte\'s southern neighbors trust. We understand that Fort Mill homeowners expect Charlotte-quality work with the convenience of a local company. Our roofing company in Fort Mill delivers exactly that—professional service, premium materials, and the personal attention that comes from a family-owned business.',
-    roofingChallenges:
+  roofingChallenges:
       'Fort Mill experiences the same severe weather patterns as Charlotte, with summer thunderstorms, occasional hail, and high winds affecting homes throughout the community. The area\'s rapid growth means many homes are in newer developments, but even newer roofs can suffer storm damage. That\'s why choosing a roofing company in Fort Mill with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As the Carolina\'s trusted roofing company in Fort Mill, we cross state lines to serve you.',
-    servicesIntro:
+  servicesIntro:
       'As your cross-state roofing company in Fort Mill, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Fort Mill is licensed in both North and South Carolina. When you need a reliable roofing company in Fort Mill, trust the bi-state experts.',
-    neighborhoods: [
+  neighborhoods: [
       'Baxter Village', 'Springfield', 'Regent Park', 'Kingsley',
       'Dobys Bridge area', 'Downtown Fort Mill', 'Gold Hill',
     ],
-    highlights: [
+  highlights: [
       'Licensed in NC and SC',
       'Understanding of SC building codes',
       'Master-planned community experience',
@@ -416,18 +416,18 @@ const locationContent: Record<
   },
   'rock-hill-sc': {
     description:
-      'When Rock Hill homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving York County, SC and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Rock Hill homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving York County, SC and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'South Carolina\'s fifth-largest city, Rock Hill combines historic charm with modern amenities. From the revitalized downtown and Winthrop University campus to major employers like 3D Systems and Comporium, Rock Hill offers economic opportunity and quality of life. Best Roofing Now is the roofing company in Rock Hill that spans the Carolina border. Rock Hill\'s diverse housing stock includes everything from historic homes near downtown to newer developments along Dave Lyle Boulevard. Our roofing company in Rock Hill has the experience to work on any property, from preserving the character of older homes to installing modern roofing systems on new construction.',
-    roofingChallenges:
+  roofingChallenges:
       'Rock Hill sits in the path of severe weather moving through the Charlotte region. The city experiences frequent thunderstorms, hail events, and high winds that can cause significant roof damage. That\'s why choosing a roofing company in Rock Hill with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As your Carolina roofing company in Rock Hill, we understand both NC and SC insurance processes.',
-    servicesIntro:
+  servicesIntro:
       'As your York County roofing company in Rock Hill, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Rock Hill serves the entire York County community. When you need a proven roofing company in Rock Hill, trust the bi-state professionals.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Rock Hill', 'Winthrop area', 'Ebenezer Road', 'Newport',
       'Lake Wylie area', 'Dave Lyle Boulevard', 'Riverwalk',
     ],
-    highlights: [
+  highlights: [
       'York County\'s largest city coverage',
       'Historic and modern home expertise',
       'NC and SC licensed',
@@ -436,18 +436,18 @@ const locationContent: Record<
   },
   'waxhaw-nc': {
     description:
-      'When Waxhaw homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Union County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Waxhaw homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Union County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'This charming Union County town preserves its historic character while embracing growth. With antique shops lining Main Street and community events drawing visitors from across the region, Waxhaw maintains small-town appeal just 25 miles from Charlotte. Best Roofing Now is the roofing company in Waxhaw that respects this heritage. Waxhaw\'s mix of historic downtown buildings and newer residential developments requires a versatile approach. Our roofing company in Waxhaw understands the importance of preserving architectural character while providing modern roofing protection for your investment.',
-    roofingChallenges:
+  roofingChallenges:
       'Waxhaw\'s position in southern Union County puts it in the path of severe weather moving through the region. The area experiences thunderstorms, occasional hail, and high winds during storm season. That\'s why choosing a local roofing company in Waxhaw with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements.',
-    servicesIntro:
+  servicesIntro:
       'As your historic roofing company in Waxhaw, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Waxhaw', 'Cureton', 'Waxhaw Crossing', 'Millbridge',
       'Providence Road area', 'Marvin border communities',
     ],
-    highlights: [
+  highlights: [
       'Historic downtown preservation expertise',
       'Antique district service',
       'Union County specialists',
@@ -456,18 +456,18 @@ const locationContent: Record<
   },
   'belmont-nc': {
     description:
-      'When Belmont homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Gaston County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Belmont homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Gaston County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Often called the "Best Small Town in the South," Belmont offers a thriving Main Street, excellent dining, and the charm of a walkable downtown just 15 minutes from Uptown Charlotte. The historic Abbey and Belmont Abbey College add to the town\'s distinctive character. Best Roofing Now is the roofing company in Belmont that matches the town\'s high standards. Belmont\'s mix of historic homes near downtown and newer developments requires careful attention to architectural compatibility. Our roofing company in Belmont takes pride in maintaining the aesthetic that makes this town special.',
-    roofingChallenges:
+  roofingChallenges:
       'Belmont experiences severe weather from Charlotte\'s western approach. Storms moving through Gaston County bring high winds, hail, and heavy rainfall that can damage roofing systems. That\'s why choosing a local roofing company in Belmont with storm damage experience matters. Our team responds quickly to emergency situations and works directly with your insurance company.',
-    servicesIntro:
+  servicesIntro:
       'As your neighborhood roofing company in Belmont, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Belmont', 'Catawba Heights', 'Belmont Abbey area',
       'Eagle Road communities', 'South Point Road',
     ],
-    highlights: [
+  highlights: [
       'Best Small Town in the South service',
       'Historic home preservation',
       'Main Street aesthetic expertise',
@@ -476,18 +476,18 @@ const locationContent: Record<
   },
   'statesville-nc': {
     description:
-      'When Statesville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Iredell County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Statesville homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Iredell County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'As Iredell County\'s seat and a historic crossroads community, Statesville offers affordable living with easy I-77 access to Charlotte and Lake Norman. The city\'s revitalized downtown, historic neighborhoods, and proximity to outdoor recreation make it attractive to families and retirees alike. Best Roofing Now is the roofing company in Statesville that delivers Charlotte expertise to Iredell County residents. Whether your home is in a historic neighborhood or a newer development, our roofing company in Statesville provides quality service at competitive prices.',
-    roofingChallenges:
+  roofingChallenges:
       'Statesville\'s position along the I-77 corridor exposes homes to severe weather patterns. The area experiences frequent thunderstorms, hail, and high winds that can cause significant roof damage. Our team responds quickly to emergency situations and provides thorough drone inspections.',
-    servicesIntro:
+  servicesIntro:
       'As your Iredell County roofing company in Statesville, Best Roofing Now offers comprehensive roofing services including storm damage inspection, complete roof replacement, emergency roof repair, and commercial roofing systems.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Statesville', 'Signal Hill', 'Northview Acres',
       'Brookdale area', 'Highway 21 corridor',
     ],
-    highlights: [
+  highlights: [
       'Iredell County seat coverage',
       'Affordable solutions',
       'Historic and modern home expertise',
@@ -496,18 +496,18 @@ const locationContent: Record<
   },
   'hickory-nc': {
     description:
-      'When Hickory homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Catawba County and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Hickory homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Catawba County and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'Named one of the best places to live in America by U.S. News & World Report, Hickory combines affordability with quality of life. The city\'s furniture manufacturing heritage, thriving downtown, and proximity to the Blue Ridge Mountains attract residents seeking value and lifestyle. Best Roofing Now extends its Charlotte-area service to Hickory homeowners who deserve the same quality workmanship.',
-    roofingChallenges:
+  roofingChallenges:
       'Hickory\'s foothills location brings unique weather challenges including severe thunderstorms and occasional ice events in winter. The area\'s terrain can create microclimates that affect roofing differently across neighborhoods.',
-    servicesIntro:
+  servicesIntro:
       'As your extended-service roofing company reaching Hickory, Best Roofing Now offers storm damage inspection, roof replacement, emergency repair, and commercial roofing services.',
-    neighborhoods: [
+  neighborhoods: [
       'Downtown Hickory', 'Viewmont', 'Highland', 'Kenworth',
       'Catawba Valley area',
     ],
-    highlights: [
+  highlights: [
       'Extended Charlotte metro service',
       'Furniture City coverage',
       'Foothills weather expertise',
@@ -516,18 +516,18 @@ const locationContent: Record<
   },
   'tega-cay-sc': {
     description:
-      'When Tega Cay homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving York County, SC and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Tega Cay homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving York County, SC and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'This lakeside community on Lake Wylie offers resort-style living with golf courses, waterfront properties, and excellent schools. Tega Cay\'s planned community design and active HOAs mean homeowners expect quality workmanship that maintains neighborhood standards. Best Roofing Now is the roofing company in Tega Cay that understands waterfront living.',
-    roofingChallenges:
+  roofingChallenges:
       'Tega Cay\'s position on Lake Wylie exposes homes to increased wind and weather from the open water. Storm systems can intensify over the lake, bringing stronger winds and more significant rainfall to waterfront properties.',
-    servicesIntro:
+  servicesIntro:
       'As your lakeside roofing company in Tega Cay, Best Roofing Now offers comprehensive roofing services designed for waterfront homes and HOA communities.',
-    neighborhoods: [
+  neighborhoods: [
       'Tega Cay Golf Club area', 'Windjammer', 'The Peninsula',
       'Lake Wylie waterfront', 'Catawba area',
     ],
-    highlights: [
+  highlights: [
       'HOA-compliant workmanship',
       'Waterfront property expertise',
       'Lake Wylie specialists',
@@ -536,18 +536,18 @@ const locationContent: Record<
   },
   'indian-land-sc': {
     description:
-      'When Indian Land homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Lancaster County, SC and the greater Charlotte metro, we bring over two decades of industry expertise to every project.',
-    extendedContent:
+      'When Indian Land homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving Lancaster County, SC and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
+  extendedContent:
       'One of the fastest-growing areas in South Carolina, Indian Land offers newer homes, excellent schools, and lower taxes just across the state line from Charlotte. Master-planned communities like Sun City Carolina Lakes and Edgewater attract families and active adults seeking value. Best Roofing Now serves this growing SC community with the same quality expected in Charlotte.',
-    roofingChallenges:
+  roofingChallenges:
       'Indian Land\'s newer construction means many homes have roofs that are still under manufacturer warranty. However, storm damage can void warranties if not properly addressed. Our team understands warranty requirements and works with manufacturers to protect your coverage.',
-    servicesIntro:
+  servicesIntro:
       'As your bi-state roofing company serving Indian Land, Best Roofing Now offers storm damage inspection, roof replacement, emergency repair, and warranty-conscious service.',
-    neighborhoods: [
+  neighborhoods: [
       'Sun City Carolina Lakes', 'Edgewater', 'Regent Park South',
       'Lancaster Highway corridor', 'Founders Pointe',
     ],
-    highlights: [
+  highlights: [
       'Fastest-growing SC area coverage',
       'New construction warranty expertise',
       'Active adult community experience',
@@ -679,12 +679,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title,
-    description,
-    keywords,
-    alternates: {
+  description,
+  keywords,
+  alternates: {
       canonical: `${SITE_CONFIG.url}/locations/${city}`,
     },
-    openGraph: {
+  openGraph: {
       title: isCharlotte
         ? `Top-Rated Roofing Company in Charlotte NC | Best Roofing Now`
         : isLakeNormanPage
@@ -692,37 +692,37 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         : isLakeNormanArea
         ? `Top-Rated Roofing Company in ${location.city} | Lake Norman Area`
         : `Top-Rated Roofing Company in ${location.city}, ${location.state}`,
-      description: isCharlotte
+  description: isCharlotte
         ? `Charlotte's top-rated roofing company. 5-star rating, veteran-owned, BBB A+ accredited. Free roof inspections.`
         : isLakeNormanPage || isLakeNormanArea
         ? `Lake Norman's trusted waterfront roofing company. 5-star rated, Chamber member. Free inspections.`
         : `Top-rated roofing company in ${location.city}. Free estimates, quality workmanship, BBB A+ rated.`,
-      url: `${SITE_CONFIG.url}/locations/${city}`,
-      type: 'website',
-      images: [
+  url: `${SITE_CONFIG.url}/locations/${city}`,
+  type: 'website',
+  images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: `Top-rated roofing company in ${location.city}, ${location.state} - Best Roofing Now`,
+  width: 1200,
+  height: 630,
+  alt: `Top-rated roofing company in ${location.city}, ${location.state} - Best Roofing Now`,
         },
       ],
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title: isCharlotte
+  title: isCharlotte
         ? `Top-Rated Roofing Company Charlotte NC`
         : isLakeNormanPage
         ? `Top-Rated Lake Norman Roofing Company`
         : isLakeNormanArea
         ? `Top-Rated Roofing Company in ${location.city}`
         : `Top-Rated Roofing Company in ${location.city}, ${location.state}`,
-      description: isCharlotte
+  description: isCharlotte
         ? `Charlotte's top-rated roofing company. Free roof inspections.`
         : isLakeNormanPage || isLakeNormanArea
         ? `Lake Norman's trusted roofing company. 5-star rated. Free inspections.`
         : `Top-rated roofing company in ${location.city}. Free estimates.`,
-      images: [ogImage],
+  images: [ogImage],
     },
   };
 }
@@ -828,27 +828,27 @@ export default async function LocationPage({ params }: PageProps) {
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               '@id': `${pageUrl}/#lake-norman-voice-faq`,
-              name: 'Lake Norman Roofing FAQs - Voice Search Optimized',
-              description: 'Common questions about roofing services in the Lake Norman area including Cornelius, Davidson, Huntersville, and Mooresville NC.',
-              mainEntity: LAKE_NORMAN_VOICE_FAQS.map((faq, index) => ({
+  name: 'Lake Norman Roofing FAQs - Voice Search Optimized',
+  description: 'Common questions about roofing services in the Lake Norman area including Cornelius, Davidson, Huntersville, and Mooresville NC.',
+  mainEntity: LAKE_NORMAN_VOICE_FAQS.map((faq, index) => ({
                 '@type': 'Question',
                 '@id': `${pageUrl}/#lkn-faq-${index + 1}`,
-                position: index + 1,
-                name: faq.question,
-                acceptedAnswer: {
+  position: index + 1,
+  name: faq.question,
+  acceptedAnswer: {
                   '@type': 'Answer',
-                  text: faq.answer,
-                  dateCreated: '2025-01-01',
-                  author: {
+  text: faq.answer,
+  dateCreated: '2026-01-01',
+  author: {
                     '@type': 'Organization',
                     '@id': `${SITE_CONFIG.url}/#organization`,
                   },
                 },
               })),
-              author: getRoofingContractorIdentity(),
-              about: {
+  author: getRoofingContractorIdentity(),
+  about: {
                 '@type': 'Place',
-                name: 'Lake Norman, North Carolina',
+  name: 'Lake Norman, North Carolina',
               },
             }),
           }}
@@ -864,31 +864,31 @@ export default async function LocationPage({ params }: PageProps) {
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               '@id': `${pageUrl}/#charlotte-voice-faq`,
-              name: 'Charlotte NC Roofing FAQs - Voice Search Optimized',
-              description: 'Common questions about roofing services in Charlotte NC including roof costs, insurance claims, storm damage, and emergency repairs.',
-              mainEntity: CHARLOTTE_VOICE_FAQS.map((faq, index) => ({
+  name: 'Charlotte NC Roofing FAQs - Voice Search Optimized',
+  description: 'Common questions about roofing services in Charlotte NC including roof costs, insurance claims, storm damage, and emergency repairs.',
+  mainEntity: CHARLOTTE_VOICE_FAQS.map((faq, index) => ({
                 '@type': 'Question',
                 '@id': `${pageUrl}/#clt-faq-${index + 1}`,
-                position: index + 1,
-                name: faq.question,
-                acceptedAnswer: {
+  position: index + 1,
+  name: faq.question,
+  acceptedAnswer: {
                   '@type': 'Answer',
-                  text: faq.answer,
-                  dateCreated: '2025-01-01',
-                  author: {
+  text: faq.answer,
+  dateCreated: '2026-01-01',
+  author: {
                     '@type': 'Organization',
                     '@id': `${SITE_CONFIG.url}/#organization`,
                   },
                 },
               })),
-              author: getRoofingContractorIdentity(),
-              about: {
+  author: getRoofingContractorIdentity(),
+  about: {
                 '@type': 'Place',
-                name: 'Charlotte, North Carolina',
-                geo: {
+  name: 'Charlotte, North Carolina',
+  geo: {
                   '@type': 'GeoCoordinates',
-                  latitude: 35.2271,
-                  longitude: -80.8431,
+  latitude: 35.2271,
+  longitude: -80.8431,
                 },
               },
             }),
@@ -905,30 +905,30 @@ export default async function LocationPage({ params }: PageProps) {
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
             '@id': `${pageUrl}/#near-me-voice-faq`,
-            name: `Roofers Near Me in ${location.city} - Voice Search FAQs`,
-            description: `Find answers to common "near me" roofing questions in ${location.city}, ${location.state}. Find local roofers, free inspections, emergency repairs, and top-rated contractors near you.`,
-            mainEntity: nearMeVoiceSearchFAQs.map((faq, index) => ({
+  name: `Roofers Near Me in ${location.city} - Voice Search FAQs`,
+  description: `Find answers to common "near me" roofing questions in ${location.city}, ${location.state}. Find local roofers, free inspections, emergency repairs, and top-rated contractors near you.`,
+  mainEntity: nearMeVoiceSearchFAQs.map((faq, index) => ({
               '@type': 'Question',
               '@id': `${pageUrl}/#near-me-faq-${index + 1}`,
-              position: index + 1,
-              name: faq.question,
-              acceptedAnswer: {
+  position: index + 1,
+  name: faq.question,
+  acceptedAnswer: {
                 '@type': 'Answer',
-                text: faq.answer,
-                dateCreated: '2025-01-01',
-                author: {
+  text: faq.answer,
+  dateCreated: '2026-01-01',
+  author: {
                   '@type': 'Organization',
                   '@id': `${SITE_CONFIG.url}/#organization`,
                 },
               },
             })),
-            author: getRoofingContractorIdentity(),
-            about: {
+  author: getRoofingContractorIdentity(),
+  about: {
               '@type': 'Place',
-              name: `${location.city}, ${location.state === 'NC' ? 'North Carolina' : 'South Carolina'}`,
-              containedInPlace: {
+  name: `${location.city}, ${location.state === 'NC' ? 'North Carolina' : 'South Carolina'}`,
+  containedInPlace: {
                 '@type': 'AdministrativeArea',
-                name: `${location.county} County`,
+  name: `${location.county} County`,
               },
             },
           }),
@@ -1326,6 +1326,47 @@ export default async function LocationPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Service Area Commitment - reinforces this is a service area, not a physical office */}
+      {!isCharlotte && (
+        <section className="section bg-white">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 md:p-12">
+                <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+                  Our Commitment to {location.city} Homeowners
+                </h2>
+                <p className="text-gray text-lg text-center mb-8 max-w-2xl mx-auto">
+                  While our office is in Charlotte, our commitment to {location.city} is unwavering. We treat every {location.city} project with the same care and precision as jobs right next to our headquarters.
+                </p>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
+                      <Clock className="w-8 h-8 text-primary" />
+                    </div>
+                    <h3 className="font-bold text-dark mb-2">Same-Day Availability</h3>
+                    <p className="text-sm text-gray">We schedule {location.city} appointments daily. Emergency? We can be there in {responseTime}.</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
+                      <CheckCircle className="w-8 h-8 text-accent" />
+                    </div>
+                    <h3 className="font-bold text-dark mb-2">Local Knowledge</h3>
+                    <p className="text-sm text-gray">We know {location.city}&apos;s neighborhoods, HOA requirements, and {location.county} County building codes inside and out.</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
+                      <Navigation className="w-8 h-8 text-primary" />
+                    </div>
+                    <h3 className="font-bold text-dark mb-2">No Travel Fees</h3>
+                    <p className="text-sm text-gray">{location.city} is part of our core service area. No extra charges for travel — just honest, competitive pricing.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Services Available */}
       <Services
         title={`Roofing Services in ${location.city}`}
@@ -1415,6 +1456,38 @@ export default async function LocationPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* 2026 Roofing Trends for This Area */}
+      <section className="section">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-primary mb-4 text-center">
+              2026 Roofing Trends in {location.city}
+            </h2>
+            <p className="text-gray text-lg mb-8 text-center">
+              Stay ahead of the curve with the latest roofing developments affecting {location.city} homeowners this year.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-primary">
+                <h3 className="font-bold text-dark mb-2">Impact-Resistant Shingles</h3>
+                <p className="text-gray text-sm">With {location.county} County seeing increased hail activity, more {location.city} homeowners are upgrading to Class 4 impact-resistant shingles in 2026. Many insurance companies offer 10-28% premium discounts for these upgrades.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-accent">
+                <h3 className="font-bold text-dark mb-2">Cool Roof Technology</h3>
+                <p className="text-gray text-sm">Energy costs continue rising in 2026. Cool roof coatings and reflective shingles are gaining popularity in {location.city}, reducing attic temperatures by up to 30°F and cutting cooling costs by 15-25%.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-primary">
+                <h3 className="font-bold text-dark mb-2">Storm-Ready Upgrades</h3>
+                <p className="text-gray text-sm">After recent severe weather in the Charlotte metro, {location.city} homeowners are investing in wind-rated underlayment, fortified roof-to-wall connections, and sealed roof decking for 2026 storm season preparedness.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-accent">
+                <h3 className="font-bold text-dark mb-2">Preventive Maintenance Plans</h3>
+                <p className="text-gray text-sm">In 2026, proactive roof maintenance is more cost-effective than ever. Our $49/month maintenance plans for {location.city} homeowners include annual inspections, priority scheduling, and 10% off all repairs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Project Map - Interactive map of completed projects */}
       <section className="section">
         <div className="container">
@@ -1496,7 +1569,7 @@ export default async function LocationPage({ params }: PageProps) {
                   Schedule Service in {location.city}
                 </h2>
                 <p className="text-gray text-lg mb-6">
-                  Ready to get started? Our team travels from Charlotte to serve {location.city} and all of {location.county} County.
+                  Ready to get started? Our team serves {location.city} and all of {location.county} County daily in 2026. Whether you need a free roof inspection, emergency storm damage repair, or a complete roof replacement, we bring the same 5-star quality to every {location.city} project.
                   Call us today to schedule your free inspection!
                 </p>
                 <div className="bg-white rounded-xl p-8 shadow-md">

@@ -24,7 +24,6 @@ import {
   BreadcrumbSchema,
   FAQSchema,
   WebPageSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -55,10 +54,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'January 2026 Ice Storm Damage Charlotte NC | We Are Here to Help',
-    description:
+  description:
       'Charlotte neighbors - we are here to help after the January 2026 ice storm. Free emergency inspections for gutter and roof damage. Stay safe!',
-    url: `${SITE_CONFIG.url}/ice-storm-damage-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/ice-storm-damage-charlotte-nc`,
+  type: 'article',
   },
 };
 
@@ -66,32 +65,32 @@ export const metadata: Metadata = {
 const iceStormFAQs = [
   {
     question: 'My gutters fell off during the ice storm in Charlotte. Can you help?',
-    answer:
+  answer:
       'Yes, we are helping Charlotte homeowners with gutter damage from the January 2026 ice storm. Heavy ice accumulation caused gutters to pull away from fascia boards throughout Mecklenburg County. The weight of ice-filled gutters can exceed hundreds of pounds, overwhelming gutter hangers. We offer free emergency inspections and can often complete repairs within days. Call 704-605-6047.',
   },
   {
     question: 'My roof is leaking now that the ice is melting in Charlotte. What should I do?',
-    answer:
+  answer:
       'Ice dam leaks are becoming common across Charlotte as temperatures rise above freezing. First, place containers under active leaks and move belongings away from affected areas. Do not attempt to go on your roof. Call Best Roofing Now at 704-605-6047 for emergency tarping - we respond within 1-4 hours to prevent further interior water damage.',
   },
   {
     question: 'Will my homeowners insurance cover ice storm damage in Charlotte?',
-    answer:
+  answer:
       'Yes, most homeowners insurance policies cover ice storm damage including fallen gutters, roof damage, and water damage from ice dams. The January 2026 Charlotte ice storm is a covered weather event. North Carolina Governor declared a state of emergency. Best Roofing Now helps Charlotte homeowners document damage and file claims for maximum settlement.',
   },
   {
     question: 'How do I know if my Charlotte home has ice storm damage?',
-    answer:
+  answer:
       'Signs of ice storm damage include: gutters sagging, pulling away, or fallen; water stains on interior ceilings or walls; icicles forming at roof edges or inside gutters (ice dam indicator); missing or damaged shingles; dented vents, flashing, or siding. Since Charlotte saw up to 0.5 inches of ice, damage may not be obvious. We offer free inspections.',
   },
   {
     question: 'How quickly can you respond to ice damage in Charlotte?',
-    answer:
+  answer:
       'We are prioritizing ice storm damage calls across Charlotte and Mecklenburg County. For active leaks and emergencies, we respond within 1-4 hours for tarping and temporary repairs. Full inspections are being scheduled as quickly as possible - typically within 24-48 hours. Call 704-605-6047 for immediate assistance.',
   },
   {
     question: 'What areas of Charlotte are you helping with ice storm damage?',
-    answer:
+  answer:
       'We are responding to ice storm damage throughout Charlotte and Mecklenburg County including South Charlotte, University City, NoDa, Plaza Midwood, Dilworth, Myers Park, Ballantyne, Matthews, Mint Hill, Pineville, and all surrounding areas. Our entire team is focused on helping our Charlotte community recover from this historic ice storm.',
   },
 ];
@@ -100,23 +99,23 @@ const iceStormFAQs = [
 const safetyTips = [
   {
     icon: AlertTriangle,
-    title: 'Stay Off Roofs & Ladders',
-    description: 'Ice-covered surfaces are extremely slippery. Multiple injuries have been reported. Let professionals handle it.',
+  title: 'Stay Off Roofs & Ladders',
+  description: 'Ice-covered surfaces are extremely slippery. Multiple injuries have been reported. Let professionals handle it.',
   },
   {
     icon: Droplets,
-    title: 'Watch for Ice Dam Leaks',
-    description: 'As temperatures rise this week, ice dams may cause water to back up and leak into your home. Check ceilings daily.',
+  title: 'Watch for Ice Dam Leaks',
+  description: 'As temperatures rise this week, ice dams may cause water to back up and leak into your home. Check ceilings daily.',
   },
   {
     icon: Home,
-    title: 'Document All Damage',
-    description: 'Take photos and videos of damage from ground level for insurance claims before any cleanup or repairs.',
+  title: 'Document All Damage',
+  description: 'Take photos and videos of damage from ground level for insurance claims before any cleanup or repairs.',
   },
   {
     icon: Wind,
-    title: 'Beware of Falling Ice',
-    description: 'As ice melts, large chunks may fall from roofs and trees. Keep children and pets away from eaves.',
+  title: 'Beware of Falling Ice',
+  description: 'As ice melts, large chunks may fall from roofs and trees. Keep children and pets away from eaves.',
   },
 ];
 
@@ -158,7 +157,6 @@ export default function IceStormDamageCharlottePage() {
         ]}
       />
       <FAQSchema faqs={iceStormFAQs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Ice Storm Damage Charlotte NC"
@@ -168,18 +166,18 @@ export default function IceStormDamageCharlottePage() {
         faqs={[
           {
             question: 'Who repairs ice storm damage in Charlotte NC?',
-            answer: 'Best Roofing Now is helping Charlotte homeowners with ice storm damage from the January 2026 storm. We repair fallen gutters, fix roof leaks from ice dams, and handle insurance claims. We serve all of Charlotte and Mecklenburg County with 24/7 emergency response. Call 704-605-6047 for free emergency inspection.',
-            speakableAnswer: 'Best Roofing Now repairs ice storm damage in Charlotte. We fix fallen gutters and roof leaks from the January 2026 ice storm. Call 704-605-6047 for free emergency inspection.',
+  answer: 'Best Roofing Now is helping Charlotte homeowners with ice storm damage from the January 2026 storm. We repair fallen gutters, fix roof leaks from ice dams, and handle insurance claims. We serve all of Charlotte and Mecklenburg County with 24/7 emergency response. Call 704-605-6047 for free emergency inspection.',
+  speakableAnswer: 'Best Roofing Now repairs ice storm damage in Charlotte. We fix fallen gutters and roof leaks from the January 2026 ice storm. Call 704-605-6047 for free emergency inspection.',
           },
           {
             question: 'What should I do if my gutters fell off during the Charlotte ice storm?',
-            answer: 'If your gutters fell off during the Charlotte ice storm, first document the damage with photos for insurance. Do not attempt repairs yourself - icy conditions are dangerous. Call Best Roofing Now at 704-605-6047 for a free emergency inspection. We help with insurance claims and can often complete repairs within days.',
-            speakableAnswer: 'Take photos for insurance, then call Best Roofing Now at 704-605-6047. Do not attempt repairs in icy conditions. We offer free emergency inspections.',
+  answer: 'If your gutters fell off during the Charlotte ice storm, first document the damage with photos for insurance. Do not attempt repairs yourself - icy conditions are dangerous. Call Best Roofing Now at 704-605-6047 for a free emergency inspection. We help with insurance claims and can often complete repairs within days.',
+  speakableAnswer: 'Take photos for insurance, then call Best Roofing Now at 704-605-6047. Do not attempt repairs in icy conditions. We offer free emergency inspections.',
           },
           {
             question: 'Does insurance cover ice storm damage in Charlotte?',
-            answer: 'Yes, most homeowners insurance covers ice storm damage including fallen gutters, roof damage, and water damage from ice dams. The January 2026 Charlotte ice storm is a covered weather event. North Carolina declared a state of emergency. Best Roofing Now helps with documentation and insurance claims.',
-            speakableAnswer: 'Yes, most insurance covers ice storm damage. North Carolina declared a state of emergency for the January 2026 storm. We help with insurance claims.',
+  answer: 'Yes, most homeowners insurance covers ice storm damage including fallen gutters, roof damage, and water damage from ice dams. The January 2026 Charlotte ice storm is a covered weather event. North Carolina declared a state of emergency. Best Roofing Now helps with documentation and insurance claims.',
+  speakableAnswer: 'Yes, most insurance covers ice storm damage. North Carolina declared a state of emergency for the January 2026 storm. We help with insurance claims.',
           },
         ]}
       />
@@ -314,7 +312,7 @@ export default function IceStormDamageCharlottePage() {
               <p className="text-gray mb-4">
                 Ice-filled gutters can weigh hundreds of pounds per section, overwhelming even the strongest gutter
                 hangers. We&apos;re receiving calls from across Charlotte about gutters pulled completely off homes,
-                sagging gutters, and damaged fascia boards - especially in South Charlotte, Ballantyne, and University City.
+  sagging gutters, and damaged fascia boards - especially in South Charlotte, Ballantyne, and University City.
               </p>
               <ul className="space-y-2 text-sm text-gray">
                 <li className="flex items-center gap-2">
@@ -411,7 +409,7 @@ export default function IceStormDamageCharlottePage() {
                   <p className="text-red-700">
                     <strong>Charlotte Fire has responded to 350+ calls</strong> since the storm hit. Do not attempt
                     to climb on your roof or use ladders to clear ice. Ice-covered surfaces are extremely dangerous,
-                    and falling ice chunks pose serious hazards. If you have an active leak, place buckets to catch
+  and falling ice chunks pose serious hazards. If you have an active leak, place buckets to catch
                     water and call us immediately at{' '}
                     <a href={`tel:${SITE_CONFIG.phoneClean}`} className="underline font-semibold">
                       {SITE_CONFIG.phone}

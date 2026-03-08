@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Specialty Roofing Services Charlotte NC | Skylights, Ventilation & More',
-    description:
+  description:
       'Specialty roofing services in Charlotte NC. Skylight installation, roof ventilation, chimney services, and flat roof repair.',
-    url: `${SITE_CONFIG.url}/specialty-services`,
+  url: `${SITE_CONFIG.url}/specialty-services`,
   },
 };
 
@@ -56,62 +56,62 @@ export const metadata: Metadata = {
 const specialtyServices = [
   {
     slug: 'skylight-installation',
-    title: 'Skylight Installation',
-    description: 'Add natural light to any room with professionally installed skylights. VELUX certified contractor for leak-free performance.',
-    icon: Sun,
-    highlights: ['VELUX certified', 'Fixed & venting options', 'Energy efficient'],
-    benefits: 'Skylights can reduce lighting costs by up to 10% and make rooms feel larger and more open.',
+  title: 'Skylight Installation',
+  description: 'Add natural light to any room with professionally installed skylights. VELUX certified contractor for leak-free performance.',
+  icon: Sun,
+  highlights: ['VELUX certified', 'Fixed & venting options', 'Energy efficient'],
+  benefits: 'Skylights can reduce lighting costs by up to 10% and make rooms feel larger and more open.',
   },
   {
     slug: 'roof-ventilation',
-    title: 'Roof Ventilation',
-    description: 'Proper attic ventilation extends roof life, reduces energy costs, and prevents moisture damage. Ridge vents, soffit vents, and powered solutions.',
-    icon: Wind,
-    highlights: ['Reduce energy costs', 'Extend roof life', 'Prevent ice dams'],
-    benefits: 'Proper ventilation can reduce cooling costs by 10-15% and extend shingle life by 5-10 years.',
+  title: 'Roof Ventilation',
+  description: 'Proper attic ventilation extends roof life, reduces energy costs, and prevents moisture damage. Ridge vents, soffit vents, and powered solutions.',
+  icon: Wind,
+  highlights: ['Reduce energy costs', 'Extend roof life', 'Prevent ice dams'],
+  benefits: 'Proper ventilation can reduce cooling costs by 10-15% and extend shingle life by 5-10 years.',
   },
   {
     slug: 'chimney-services',
-    title: 'Chimney Services',
-    description: 'Stop chimney leaks with expert flashing repair, cap installation, and waterproofing. One of the most common leak sources we repair.',
-    icon: Flame,
-    highlights: ['Flashing repair', 'Cap installation', 'Waterproofing'],
-    benefits: 'Chimney leaks cause 15-20% of roof-related water damage. Prevention is far cheaper than repair.',
+  title: 'Chimney Services',
+  description: 'Stop chimney leaks with expert flashing repair, cap installation, and waterproofing. One of the most common leak sources we repair.',
+  icon: Flame,
+  highlights: ['Flashing repair', 'Cap installation', 'Waterproofing'],
+  benefits: 'Chimney leaks cause 15-20% of roof-related water damage. Prevention is far cheaper than repair.',
   },
   {
     slug: 'flat-roof-repair',
-    title: 'Flat Roof Repair',
-    description: 'Specialized flat roof expertise for TPO, EPDM, PVC, and modified bitumen systems. Repairs and coatings that extend roof life.',
-    icon: Square,
-    highlights: ['All flat roof types', 'Coating options', 'Ponding solutions'],
-    benefits: 'Flat roof coatings can extend roof life by 10-15 years at a fraction of replacement cost.',
+  title: 'Flat Roof Repair',
+  description: 'Specialized flat roof expertise for TPO, EPDM, PVC, and modified bitumen systems. Repairs and coatings that extend roof life.',
+  icon: Square,
+  highlights: ['All flat roof types', 'Coating options', 'Ponding solutions'],
+  benefits: 'Flat roof coatings can extend roof life by 10-15 years at a fraction of replacement cost.',
   },
 ];
 
 const specialtyFAQs = [
   {
     question: 'Will a skylight leak?',
-    answer: 'Not when properly installed! We\'re VELUX certified and use premium flashing kits designed for Charlotte\'s climate. Our skylights are warranted against leaks. The key is proper installation by trained professionals - that\'s what we provide.',
+  answer: 'Not when properly installed! We\'re VELUX certified and use premium flashing kits designed for Charlotte\'s climate. Our skylights are warranted against leaks. The key is proper installation by trained professionals - that\'s what we provide.',
   },
   {
     question: 'How do I know if my attic has poor ventilation?',
-    answer: 'Signs of poor ventilation include: excessive heat in upper floors during summer, ice dams forming in winter, curling or buckled shingles, mold or mildew in attic, higher than expected energy bills, and roof aging faster than expected. We offer free ventilation assessments.',
+  answer: 'Signs of poor ventilation include: excessive heat in upper floors during summer, ice dams forming in winter, curling or buckled shingles, mold or mildew in attic, higher than expected energy bills, and roof aging faster than expected. We offer free ventilation assessments.',
   },
   {
     question: 'Why do chimneys cause so many roof leaks?',
-    answer: 'The chimney-roof intersection is one of the most vulnerable points on your roof. Flashing must handle thermal expansion, weather exposure, and maintain a seal against a masonry surface. Over time, flashing fails - but regular maintenance prevents most leaks.',
+  answer: 'The chimney-roof intersection is one of the most vulnerable points on your roof. Flashing must handle thermal expansion, weather exposure, and maintain a seal against a masonry surface. Over time, flashing fails - but regular maintenance prevents most leaks.',
   },
   {
     question: 'Can you coat my flat roof instead of replacing it?',
-    answer: 'Often yes! If your flat roof is structurally sound but showing age, a roof coating can extend its life by 10-15 years at 20-30% of replacement cost. We\'ll inspect your roof and give you an honest assessment of whether coating is a good option.',
+  answer: 'Often yes! If your flat roof is structurally sound but showing age, a roof coating can extend its life by 10-15 years at 20-30% of replacement cost. We\'ll inspect your roof and give you an honest assessment of whether coating is a good option.',
   },
   {
     question: 'How much do skylights cost to install?',
-    answer: 'Skylight installation in Charlotte typically costs $1,000-3,500 including the skylight and installation. Tubular skylights for tight spaces cost less ($500-1,200), while large or custom skylights may cost more. We provide free consultations to discuss options for your home.',
+  answer: 'Skylight installation in Charlotte typically costs $1,000-3,500 including the skylight and installation. Tubular skylights for tight spaces cost less ($500-1,200), while large or custom skylights may cost more. We provide free consultations to discuss options for your home.',
   },
   {
     question: 'Do you service commercial flat roofs?',
-    answer: 'Yes! We service all types of commercial flat roofing systems including TPO, EPDM, PVC, modified bitumen, and built-up roofs. We also offer commercial maintenance programs to extend roof life and prevent emergency repairs.',
+  answer: 'Yes! We service all types of commercial flat roofing systems including TPO, EPDM, PVC, modified bitumen, and built-up roofs. We also offer commercial maintenance programs to extend roof life and prevent emergency repairs.',
   },
 ];
 
@@ -180,7 +180,7 @@ export default function SpecialtyServicesPage() {
             <p className="text-xl text-white/90 mb-8">
               Beyond basic roofing, we provide specialized services that enhance your home&apos;s comfort, efficiency, and protection.
               From beautiful skylights that flood rooms with natural light to proper ventilation that extends your roof&apos;s life,
-              our specialty services solve problems most contractors can&apos;t.
+  our specialty services solve problems most contractors can&apos;t.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <EstimateButton
@@ -262,7 +262,7 @@ export default function SpecialtyServicesPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 These aren&apos;t services every roofer can do well. Skylight installation requires understanding of roof structures,
-                proper flashing techniques, and manufacturer certification. Ventilation work requires calculating proper airflow
+  proper flashing techniques, and manufacturer certification. Ventilation work requires calculating proper airflow
                 for your specific attic. Chimney work involves masonry interfaces that many roofers aren&apos;t trained to handle.
               </p>
               <p>
@@ -280,14 +280,14 @@ export default function SpecialtyServicesPage() {
                   <h3 className="text-lg font-bold text-primary mb-2">Ventilation Calculation Expertise</h3>
                   <p className="text-sm">
                     We don&apos;t guess at ventilation. We calculate your attic&apos;s specific needs based on square footage, climate zone,
-                    and existing conditions to design a balanced system that actually works.
+  and existing conditions to design a balanced system that actually works.
                   </p>
                 </div>
                 <div className="bg-light p-6 rounded-xl">
                   <h3 className="text-lg font-bold text-primary mb-2">Chimney & Flashing Specialists</h3>
                   <p className="text-sm">
                     We understand how masonry and roofing systems interact. Our chimney work includes proper step flashing,
-                    counter-flashing, and cricket installation where needed to prevent leaks permanently.
+  counter-flashing, and cricket installation where needed to prevent leaks permanently.
                   </p>
                 </div>
                 <div className="bg-light p-6 rounded-xl">

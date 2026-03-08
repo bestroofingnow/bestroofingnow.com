@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Terrell NC | West Lake Norman Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor serving Terrell NC and West Lake Norman. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-terrell-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-terrell-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Terrell NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Terrell NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Terrell homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Terrell homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for local businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for local businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in the Terrell area.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in the Terrell area.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Terrell homeowners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Terrell homeowners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for West Lake Norman.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for West Lake Norman.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across the region.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across the region.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when storms strike the Lake Norman area.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when storms strike the Lake Norman area.',
   },
 ];
 
@@ -167,42 +167,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Terrell NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Terrell and all of the West Lake Norman area from our Charlotte headquarters. We regularly complete roofing projects throughout this rural Catawba County community. Our team is familiar with local building requirements and the unique needs of properties in the Terrell area.',
   },
   {
     question: 'How far is Terrell from your Charlotte location?',
-    answer:
+  answer:
       'Terrell is approximately 30 miles from our Charlotte headquarters. This is well within our primary service area, and we have completed numerous roofing projects in Terrell and surrounding communities. Distance is never an issue - we provide the same quality service and response times throughout our Lake Norman service area.',
   },
   {
     question: 'What roofing considerations are important for rural Terrell properties?',
-    answer:
+  answer:
       'Rural properties in Terrell often have larger roof areas, may lack nearby tree coverage for wind protection, and can be more exposed to severe weather. We recommend high-quality architectural shingles with excellent wind ratings or metal roofing for superior durability. Proper ventilation is also crucial for homes without the shade of mature trees.',
   },
   {
     question: 'How much does a new roof cost in Terrell NC?',
-    answer:
+  answer:
       'Roof replacement costs in Terrell typically range from $8,000-$25,000 for most homes, depending on size, pitch, material choice, and complexity. Rural properties with larger roofs may be at the higher end of this range. We provide free, no-obligation estimates with transparent pricing for Terrell homeowners.',
   },
   {
     question: 'Do you offer free roof inspections in Terrell?',
-    answer:
+  answer:
       'Absolutely! Best Roofing Now offers completely free roof inspections throughout Terrell and the West Lake Norman area. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written report with photos. There is no obligation to hire us after the inspection.',
   },
   {
     question: 'Can you help with insurance claims for storm damage in Terrell?',
-    answer:
+  answer:
       'Yes, we have extensive experience helping Terrell and Lake Norman homeowners with storm damage insurance claims. This area sees its share of severe weather, and we provide thorough documentation, meet with adjusters, and advocate for fair settlements. Many roofs qualify for insurance coverage after storm events.',
   },
   {
     question: 'What roofing materials work best for Terrell homes?',
-    answer:
+  answer:
       'For Terrell properties, we often recommend architectural shingles with high wind ratings (Class F or H) or metal roofing for superior durability and longevity. Metal roofing is particularly popular in rural areas for its low maintenance and 50+ year lifespan. Our team will assess your specific property and recommend the best materials for your needs.',
   },
   {
     question: 'How quickly can you respond to roofing emergencies in Terrell?',
-    answer:
+  answer:
       'We offer 24/7 emergency roofing services throughout the Lake Norman area including Terrell. For emergencies like active leaks or storm damage, we typically respond within 1-4 hours to secure your property and prevent further damage. Call us anytime at (704) 605-6047 for emergency service.',
   },
 ];
@@ -217,7 +217,6 @@ export default function RoofingTerrellNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -435,7 +434,7 @@ export default function RoofingTerrellNCPage() {
               </p>
               <p>
                 Rural properties in Terrell often present unique roofing considerations. With larger lot sizes,
-                many homes have expansive roof areas that require expert installation. The more open terrain can
+  many homes have expansive roof areas that require expert installation. The more open terrain can
                 also mean increased wind exposure compared to densely developed areas. Our team understands these
                 factors and recommends appropriate solutions including high-wind-rated shingles and metal roofing
                 systems designed to withstand the elements.

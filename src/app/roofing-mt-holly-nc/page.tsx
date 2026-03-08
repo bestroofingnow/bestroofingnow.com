@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Mt Holly NC | Top-Rated Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Mt Holly NC and Gaston County. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Mt Holly homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Mt Holly homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Mt Holly businesses and commercial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Mt Holly businesses and commercial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Mt Holly.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Mt Holly.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Mt Holly homeowners with detailed reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Mt Holly homeowners with detailed reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Gaston County.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Gaston County.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Gaston County homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Gaston County homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Mt Holly residents need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Mt Holly residents need us most.',
   },
 ];
 
@@ -166,42 +166,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Mt Holly NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Mt Holly NC and all of Gaston County from our Charlotte headquarters. We provide complete roofing services including roof repair, replacement, inspection, and storm damage restoration to all Mt Holly neighborhoods from Downtown to Catawba Heights.',
   },
   {
     question: 'How much does a roof replacement cost in Mt Holly NC?',
-    answer:
+  answer:
       'Roof replacement costs in Mt Holly typically range from $7,500 to $22,000 for most homes, depending on roof size, pitch, material choice, and complexity. We provide free, detailed estimates with transparent pricing and financing options available.',
   },
   {
     question: 'What makes Mt Holly roofing needs unique?',
-    answer:
+  answer:
       'Mt Holly is located along the Catawba River in Gaston County, exposing homes to humidity, occasional flooding concerns near the river, and severe storms. Our team understands these conditions and recommends roofing materials and installation methods that withstand the local climate.',
   },
   {
     question: 'Do you handle insurance claims for storm damage in Mt Holly?',
-    answer:
+  answer:
       'Yes, we have extensive experience helping Mt Holly homeowners with storm damage insurance claims. Gaston County sees severe weather, and we provide thorough documentation, meet with adjusters, and advocate for fair settlements to restore your roof properly.',
   },
   {
     question: 'What roofing materials work best for Mt Holly homes?',
-    answer:
+  answer:
       'For Mt Holly homes, we typically recommend architectural shingles from CertainTeed, GAF, or Owens Corning for their durability and aesthetic appeal. Metal roofing is also popular for its longevity, especially for properties near the river. We install all premium roofing materials.',
   },
   {
     question: 'How long does a roof replacement take in Mt Holly?',
-    answer:
+  answer:
       'Most residential roof replacements in Mt Holly are completed in 1-3 days. Larger homes or complex roof designs may take 3-5 days. We work efficiently while maintaining quality standards and always leave your property clean and debris-free.',
   },
   {
     question: 'Do you offer free roof inspections in Mt Holly?',
-    answer:
+  answer:
       'Yes! We offer completely free roof inspections throughout Mt Holly and Gaston County. Our certified inspectors will thoroughly examine your roof and provide a detailed written report with photos. There\'s no sales pressure - just honest information to help you make informed decisions.',
   },
   {
     question: 'Are you familiar with Mt Holly HOA requirements?',
-    answer:
+  answer:
       'Yes, we regularly work with HOA communities throughout Mt Holly and Gaston County. We can help you select approved materials and colors, and provide the documentation needed for HOA approval before starting your project.',
   },
 ];
@@ -457,7 +457,7 @@ export default function RoofingMtHollyNCPage() {
             </p>
             <p className="text-gray">
               Whether you&apos;re in a historic home on South Main Street, a family residence near the schools,
-              or a newer construction in one of the growing subdivisions, Best Roofing Now delivers the quality
+  or a newer construction in one of the growing subdivisions, Best Roofing Now delivers the quality
               roofing services that Mt Holly residents deserve. We&apos;re just a short drive from our Charlotte
               headquarters, ensuring fast response times and reliable service.
             </p>

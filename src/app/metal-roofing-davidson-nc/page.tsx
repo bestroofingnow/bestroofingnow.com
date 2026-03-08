@@ -18,7 +18,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Davidson NC | Lake Norman Specialists',
-    description:
+  description:
       'Premium metal roofing for Davidson NC homes. Standing seam and metal shingles for historic and lakefront properties. 40-70 year lifespan. Free estimates.',
-    url: `${SITE_CONFIG.url}/metal-roofing-davidson-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/metal-roofing-davidson-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.house1,
-        width: 1200,
-        height: 630,
-        alt: 'Metal roofing Davidson NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Metal roofing Davidson NC - Best Roofing Now',
       },
     ],
   },
@@ -68,33 +68,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '40-70 Year Lifespan',
-    description: 'Metal roofs last 2-3x longer than asphalt shingles with minimal maintenance.',
+  title: '40-70 Year Lifespan',
+  description: 'Metal roofs last 2-3x longer than asphalt shingles with minimal maintenance.',
   },
   {
     icon: Wind,
-    title: '130+ MPH Wind Rating',
-    description: 'Excellent for Davidson properties near Lake Norman with wind exposure.',
+  title: '130+ MPH Wind Rating',
+  description: 'Excellent for Davidson properties near Lake Norman with wind exposure.',
   },
   {
     icon: Zap,
-    title: 'Energy Efficient',
-    description: 'Reflects solar heat, reducing cooling costs 10-25% during hot NC summers.',
+  title: 'Energy Efficient',
+  description: 'Reflects solar heat, reducing cooling costs 10-25% during hot NC summers.',
   },
   {
     icon: Shield,
-    title: 'Impact Resistant',
-    description: 'Class 4 hail rating protects against severe weather events.',
+  title: 'Impact Resistant',
+  description: 'Class 4 hail rating protects against severe weather events.',
   },
   {
     icon: Landmark,
-    title: 'Historic Compatible',
-    description: 'Metal shingle styles complement Davidson\'s historic architecture.',
+  title: 'Historic Compatible',
+  description: 'Metal shingle styles complement Davidson\'s historic architecture.',
   },
   {
     icon: DollarSign,
-    title: 'Insurance Savings',
-    description: 'Many insurers offer premium discounts for metal\'s durability.',
+  title: 'Insurance Savings',
+  description: 'Many insurers offer premium discounts for metal\'s durability.',
   },
 ];
 
@@ -102,27 +102,27 @@ const benefits = [
 const metalOptions = [
   {
     title: 'Standing Seam',
-    description: 'Premium concealed fastener system with clean, modern lines. Popular for River Run and lakefront homes.',
-    lifespan: '40-70 years',
-    style: 'Modern/Contemporary',
+  description: 'Premium concealed fastener system with clean, modern lines. Popular for River Run and lakefront homes.',
+  lifespan: '40-70 years',
+  style: 'Modern/Contemporary',
   },
   {
     title: 'Metal Shingles',
-    description: 'Metal panels designed to look like traditional shingles, slate, or cedar shake. Ideal for historic Davidson homes.',
-    lifespan: '40-60 years',
-    style: 'Traditional/Historic',
+  description: 'Metal panels designed to look like traditional shingles, slate, or cedar shake. Ideal for historic Davidson homes.',
+  lifespan: '40-60 years',
+  style: 'Traditional/Historic',
   },
   {
     title: 'Metal Slate',
-    description: 'Lightweight metal that replicates the beauty of natural slate without the weight concerns.',
-    lifespan: '50+ years',
-    style: 'Colonial/Georgian',
+  description: 'Lightweight metal that replicates the beauty of natural slate without the weight concerns.',
+  lifespan: '50+ years',
+  style: 'Colonial/Georgian',
   },
   {
     title: 'Copper Accents',
-    description: 'Premium copper for dormers, bay windows, and architectural details on historic properties.',
-    lifespan: '100+ years',
-    style: 'Historic/Estate',
+  description: 'Premium copper for dormers, bay windows, and architectural details on historic properties.',
+  lifespan: '100+ years',
+  style: 'Historic/Estate',
   },
 ];
 
@@ -130,32 +130,32 @@ const metalOptions = [
 const faqs = [
   {
     question: 'How much does metal roofing cost in Davidson NC?',
-    answer:
+  answer:
       'Metal roofing in Davidson typically costs $15-28 per square foot installed for standing seam, and $12-22 for metal shingles. For a typical Davidson home, expect $20,000-$45,000. Historic homes with specialized metal slate or copper details often range $35,000-$70,000+. While higher than shingles initially, metal\'s 40-70 year lifespan provides excellent long-term value.',
   },
   {
     question: 'Is metal roofing appropriate for historic Davidson homes?',
-    answer:
+  answer:
       'Yes! Metal has been used on American homes for over 200 years and is historically appropriate for Davidson\'s older properties. We offer metal shingle and metal slate options that replicate the look of traditional materials while providing modern performance. Many historic preservation boards approve properly selected metal roofing.',
   },
   {
     question: 'How long does a metal roof last in Davidson NC?',
-    answer:
+  answer:
       'Metal roofs in Davidson typically last 40-70 years, with premium options like copper lasting 100+ years. This is 2-3x longer than traditional asphalt shingles. Proper installation and quality materials are key - both of which we guarantee with our workmanship warranty.',
   },
   {
     question: 'What metal roofing styles work for Davidson homes?',
-    answer:
+  answer:
       'We match metal roofing style to Davidson architecture: standing seam for modern homes and River Run lakefront properties, metal shingles for traditional neighborhoods, and metal slate for historic homes near downtown. We help you select options that complement your home and meet any HOA or historic district requirements.',
   },
   {
     question: 'Does metal roofing work in Davidson\'s climate?',
-    answer:
+  answer:
       'Metal roofing excels in Davidson\'s climate. It handles heat, humidity, heavy rain, and occasional ice/snow exceptionally well. Metal reflects solar heat reducing cooling costs, sheds rain and snow effectively, and won\'t rot or grow mold in our humid summers. It\'s also rated for high winds common near Lake Norman.',
   },
   {
     question: 'Will my Davidson HOA approve metal roofing?',
-    answer:
+  answer:
       'Many Davidson HOAs approve metal roofing, especially metal shingle styles that match the neighborhood aesthetic. We have experience working with Davidson HOAs and can help with the approval process. Metal slate and metal shake options are often approved for traditional neighborhoods.',
   },
 ];
@@ -171,7 +171,6 @@ export default function MetalRoofingDavidsonNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/metal-roofing-davidson-nc`}
         pageName="Metal Roofing Davidson NC"

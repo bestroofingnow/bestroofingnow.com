@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Standing Seam Metal Roofing Charlotte NC | Premium Installation | Best Roofing Now',
-    description: 'Premium standing seam metal roofing installation in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/standing-seam-metal-roofing`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Standing seam metal roofing in Charlotte NC' }],
+  description: 'Premium standing seam metal roofing installation in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/standing-seam-metal-roofing`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Standing seam metal roofing in Charlotte NC' }],
   },
 };
 
@@ -91,8 +91,8 @@ export default function StandingSeamMetalRoofingPage() {
       <ServiceSchema
         service={{
           title: "Standing Seam Metal Roofing",
-          description: "Premium standing seam metal roofing installation in Charlotte NC with 50+ year lifespan.",
-          slug: "standing-seam-metal-roofing",
+  description: "Premium standing seam metal roofing installation in Charlotte NC with 50+ year lifespan.",
+  slug: "standing-seam-metal-roofing",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/standing-seam-metal-roofing`} pageName="Standing Seam Metal Roofing Charlotte NC" city="Charlotte" />

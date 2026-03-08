@@ -29,7 +29,6 @@ import { FAQ } from '@/components/sections/FAQ';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -212,7 +211,6 @@ export default function CharlotteRoofingCosts2026Page() {
       />
       <FAQSchema faqs={costFAQs} />
       <PricingSchema />
-      <LocalBusinessSchema includeRating={false} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/charlotte-roofing-costs-2026`}
         pageName="Charlotte NC Roofing Costs & Pricing Guide 2026"

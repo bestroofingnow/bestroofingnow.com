@@ -50,37 +50,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Restaurant Roof Repair vs Replacement | Charlotte NC Guide',
-    description:
+  description:
       'Expert guide for Charlotte restaurant owners on roof decisions. Health codes, costs, timing, and minimizing business disruption.',
-    url: `${SITE_CONFIG.url}/restaurant-roof-repair-vs-replacement-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/restaurant-roof-repair-vs-replacement-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const restaurantFAQs = [
   {
     question: 'How do I know if my restaurant roof needs replacement vs repair?',
-    answer:
+  answer:
       'Consider replacement if: the roof is 15+ years old with multiple leak points, repair costs exceed 30% of replacement cost, there\'s widespread membrane damage, or you\'ve had health department concerns about ceiling/roof conditions. Repairs make sense for isolated leaks on newer roofs, minor membrane damage, or single-point flashing failures.',
   },
   {
     question: 'Can restaurant roofing work be done without closing the restaurant?',
-    answer:
+  answer:
       'Yes, most work can be completed while you operate. We schedule work in phases, protect HVAC and exhaust systems, and prioritize areas away from customer visibility. Interior work (if needed) is scheduled during closed hours. Only severe structural issues require full closure.',
   },
   {
     question: 'How do grease exhaust systems affect restaurant roofs?',
-    answer:
+  answer:
       'Grease exhaust fans require special flashing and protection. Grease buildup can degrade roofing membranes over time. During any roof work, we inspect exhaust flashings, verify fire code compliance, and install grease-resistant materials around penetrations. Improper exhaust installation is a common cause of restaurant roof failures.',
   },
   {
     question: 'What roofing material is best for restaurants in Charlotte?',
-    answer:
+  answer:
       'TPO and EPDM are most common for flat restaurant roofs. TPO offers better heat reflection (reduces AC costs), while EPDM is more affordable. Modified bitumen works well for roofs with heavy foot traffic from HVAC maintenance. White/reflective surfaces help with Charlotte\'s summer heat and can reduce cooling costs 10-30%.',
   },
   {
     question: 'Will roof work pass Mecklenburg County health inspection?',
-    answer:
+  answer:
       'Our commercial roofing work meets all Mecklenburg County health codes. We ensure: no debris enters food prep areas, HVAC systems remain protected, ceiling integrity is maintained, and all work areas are secured. We can provide documentation for health inspectors if needed.',
   },
 ];
@@ -88,119 +88,119 @@ const restaurantFAQs = [
 const repairVsReplaceFactors = [
   {
     factor: 'Roof Age',
-    repair: 'Under 10-12 years old',
-    replace: 'Over 15 years old (approaching end of life)',
+  repair: 'Under 10-12 years old',
+  replace: 'Over 15 years old (approaching end of life)',
   },
   {
     factor: 'Leak Pattern',
-    repair: '1-2 isolated leak points',
-    replace: 'Multiple leaks across different areas',
+  repair: '1-2 isolated leak points',
+  replace: 'Multiple leaks across different areas',
   },
   {
     factor: 'Membrane Condition',
-    repair: 'Localized damage, seams intact',
-    replace: 'Widespread cracking, splitting, or bubbling',
+  repair: 'Localized damage, seams intact',
+  replace: 'Widespread cracking, splitting, or bubbling',
   },
   {
     factor: 'Cost Analysis',
-    repair: 'Repair cost under 25% of replacement',
-    replace: 'Repair costs exceeding 30%+ of replacement',
+  repair: 'Repair cost under 25% of replacement',
+  replace: 'Repair costs exceeding 30%+ of replacement',
   },
   {
     factor: 'Energy Costs',
-    repair: 'Insulation performing adequately',
-    replace: 'High cooling bills from poor insulation/dark roof',
+  repair: 'Insulation performing adequately',
+  replace: 'High cooling bills from poor insulation/dark roof',
   },
   {
     factor: 'Health Codes',
-    repair: 'No cited violations',
-    replace: 'Multiple ceiling/roof-related citations',
+  repair: 'No cited violations',
+  replace: 'Multiple ceiling/roof-related citations',
   },
 ];
 
 const restaurantChallenges = [
   {
     challenge: 'Grease Exhaust Penetrations',
-    icon: Wind,
-    description:
+  icon: Wind,
+  description:
       'Kitchen exhaust fans create high-heat penetrations that require special flashing and fire-rated materials. Grease buildup degrades standard roofing.',
-    solution: 'Grease-resistant flashings, proper setbacks, and regular maintenance access.',
+  solution: 'Grease-resistant flashings, proper setbacks, and regular maintenance access.',
   },
   {
     challenge: 'HVAC Concentration',
-    icon: Thermometer,
-    description:
+  icon: Thermometer,
+  description:
       'Restaurants typically have 3-5x more HVAC per square foot than offices. Each unit creates penetrations and requires service access.',
-    solution: 'Reinforced walkways, equipment curbs, and phased replacement planning.',
+  solution: 'Reinforced walkways, equipment curbs, and phased replacement planning.',
   },
   {
     challenge: 'Operating Hours',
-    icon: Clock,
-    description:
+  icon: Clock,
+  description:
       'Most restaurants operate 12-16 hours daily with limited closure windows. Noise and dust during meal service is unacceptable.',
-    solution: 'Phased work schedules, early morning starts, and dust containment systems.',
+  solution: 'Phased work schedules, early morning starts, and dust containment systems.',
   },
   {
     challenge: 'Health Code Compliance',
-    icon: Shield,
-    description:
+  icon: Shield,
+  description:
       'Any debris, water intrusion, or ceiling damage can trigger health department issues and potentially forced closure.',
-    solution: 'Interior protection, sealed work areas, and documentation for inspectors.',
+  solution: 'Interior protection, sealed work areas, and documentation for inspectors.',
   },
 ];
 
 const costFactors = [
   {
     type: 'Typical Restaurant Repair',
-    cost: '$1,500 - $8,000',
-    includes: 'Single leak repair, flashing replacement, or small membrane patches.',
+  cost: '$1,500 - $8,000',
+  includes: 'Single leak repair, flashing replacement, or small membrane patches.',
   },
   {
     type: 'Full Roof Replacement',
-    cost: '$8 - $15 per sq ft',
-    includes: 'Complete tear-off, new membrane, insulation, flashings, and warranty.',
+  cost: '$8 - $15 per sq ft',
+  includes: 'Complete tear-off, new membrane, insulation, flashings, and warranty.',
   },
   {
     type: 'Roof Coating/Restoration',
-    cost: '$3 - $6 per sq ft',
-    includes: 'Clean, repair defects, apply reflective coating. Extends life 10-15 years.',
+  cost: '$3 - $6 per sq ft',
+  includes: 'Clean, repair defects, apply reflective coating. Extends life 10-15 years.',
   },
   {
     type: 'HVAC Curb Replacement',
-    cost: '$800 - $2,500 each',
-    includes: 'New equipment curb, flashing, and membrane tie-in during roof work.',
+  cost: '$800 - $2,500 each',
+  includes: 'New equipment curb, flashing, and membrane tie-in during roof work.',
   },
 ];
 
 const minimizeDowntimeSteps = [
   {
     step: 1,
-    title: 'Pre-Work Planning',
-    description:
+  title: 'Pre-Work Planning',
+  description:
       'We survey your roof and operations, identify quiet periods, and create a phased work schedule that minimizes disruption to your busiest hours.',
   },
   {
     step: 2,
-    title: 'Interior Protection',
-    description:
+  title: 'Interior Protection',
+  description:
       'Drop cloths, sealed HVAC vents, and dust barriers protect kitchen and dining areas. We verify protection before starting each phase.',
   },
   {
     step: 3,
-    title: 'Off-Hours Heavy Work',
-    description:
+  title: 'Off-Hours Heavy Work',
+  description:
       'Tear-off and loud work scheduled during closed hours when possible. Early morning starts (5-6 AM) complete noisy tasks before lunch rush.',
   },
   {
     step: 4,
-    title: 'Daily Weather Seal',
-    description:
+  title: 'Daily Weather Seal',
+  description:
       'Each work day ends with temporary waterproofing. Your restaurant is protected overnight and through any weather delays.',
   },
   {
     step: 5,
-    title: 'Clean Work Handoff',
-    description:
+  title: 'Clean Work Handoff',
+  description:
       'Debris cleared, protection verified, and work area secured before each shift. We coordinate with your opening manager.',
   },
 ];
@@ -208,27 +208,27 @@ const minimizeDowntimeSteps = [
 const roofingOptions = [
   {
     type: 'TPO Membrane',
-    pros: ['Highly reflective (lower AC costs)', 'Excellent seam strength', 'Chemical resistant'],
-    cons: ['Higher material cost', 'Requires skilled installation'],
-    best: 'Best for restaurants prioritizing energy efficiency.',
+  pros: ['Highly reflective (lower AC costs)', 'Excellent seam strength', 'Chemical resistant'],
+  cons: ['Higher material cost', 'Requires skilled installation'],
+  best: 'Best for restaurants prioritizing energy efficiency.',
   },
   {
     type: 'EPDM Rubber',
-    pros: ['Lower cost', 'Proven durability', 'Easy repairs'],
-    cons: ['Dark color absorbs heat', 'Not grease-resistant'],
-    best: 'Best for budget-conscious projects or shaded roofs.',
+  pros: ['Lower cost', 'Proven durability', 'Easy repairs'],
+  cons: ['Dark color absorbs heat', 'Not grease-resistant'],
+  best: 'Best for budget-conscious projects or shaded roofs.',
   },
   {
     type: 'Modified Bitumen',
-    pros: ['Excellent durability', 'Handles foot traffic', 'Multiple layer protection'],
-    cons: ['Requires torch application', 'Less reflective'],
-    best: 'Best for roofs with heavy HVAC maintenance traffic.',
+  pros: ['Excellent durability', 'Handles foot traffic', 'Multiple layer protection'],
+  cons: ['Requires torch application', 'Less reflective'],
+  best: 'Best for roofs with heavy HVAC maintenance traffic.',
   },
   {
     type: 'Roof Coating',
-    pros: ['No tear-off required', 'Minimal disruption', 'Reflective surface'],
-    cons: ['Existing roof must be sound', 'Not for severe damage'],
-    best: 'Best for extending life of aging but intact roofs.',
+  pros: ['No tear-off required', 'Minimal disruption', 'Reflective surface'],
+  cons: ['Existing roof must be sound', 'Not for severe damage'],
+  best: 'Best for extending life of aging but intact roofs.',
   },
 ];
 
@@ -251,7 +251,7 @@ export default function RestaurantRoofRepairVsReplacementPage() {
       <FAQSchema
         faqs={restaurantFAQs.map((faq) => ({
           question: faq.question,
-          answer: faq.answer,
+  answer: faq.answer,
         }))}
       />
       <WebPageSchema
@@ -262,10 +262,10 @@ export default function RestaurantRoofRepairVsReplacementPage() {
       <ArticleSchema
         post={{
           title: 'Restaurant Roof Repair vs Replacement: Charlotte NC Guide',
-          description: 'Complete guide for restaurant owners on roof decisions. Health code compliance, costs, timing, and keeping your business open during work.',
-          slug: 'restaurant-roof-repair-vs-replacement-charlotte-nc',
-          datePublished: '2025-01-30',
-          dateModified: '2025-01-30',
+  description: 'Complete guide for restaurant owners on roof decisions. Health code compliance, costs, timing, and keeping your business open during work.',
+  slug: 'restaurant-roof-repair-vs-replacement-charlotte-nc',
+  datePublished: '2025-01-30',
+  dateModified: '2025-01-30',
         }}
       />
 
@@ -283,7 +283,7 @@ export default function RestaurantRoofRepairVsReplacementPage() {
             </h1>
             <p className="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
               Make the right decision for your restaurant&apos;s roof. Health code compliance,
-              minimizing downtime, and protecting your investment.
+  minimizing downtime, and protecting your investment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <EstimateButton

@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Mt Holly NC | TPO, EPDM, Flat Roofs | Best Roofing Now',
-    description:
+  description:
       'Expert commercial roofing in Mt Holly NC. TPO, EPDM, metal, and modified bitumen systems. Licensed contractors serving Gaston County businesses.',
-    url: `${SITE_CONFIG.url}/commercial-roofing-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -63,33 +63,33 @@ export const metadata: Metadata = {
 const roofingSystems = [
   {
     title: 'TPO Roofing',
-    description: 'Energy-efficient single-ply membrane ideal for flat and low-slope commercial roofs.',
-    popular: true,
+  description: 'Energy-efficient single-ply membrane ideal for flat and low-slope commercial roofs.',
+  popular: true,
   },
   {
     title: 'EPDM Roofing',
-    description: 'Durable rubber membrane with excellent weather resistance and long lifespan.',
-    popular: false,
+  description: 'Durable rubber membrane with excellent weather resistance and long lifespan.',
+  popular: false,
   },
   {
     title: 'Metal Roofing',
-    description: 'Standing seam and metal panel systems for commercial and industrial buildings.',
-    popular: false,
+  description: 'Standing seam and metal panel systems for commercial and industrial buildings.',
+  popular: false,
   },
   {
     title: 'Modified Bitumen',
-    description: 'Multi-layer asphalt system offering excellent durability and waterproofing.',
-    popular: false,
+  description: 'Multi-layer asphalt system offering excellent durability and waterproofing.',
+  popular: false,
   },
   {
     title: 'Built-Up Roofing (BUR)',
-    description: 'Traditional multi-ply system with proven performance for flat roofs.',
-    popular: false,
+  description: 'Traditional multi-ply system with proven performance for flat roofs.',
+  popular: false,
   },
   {
     title: 'Roof Coatings',
-    description: 'Extend your roof\'s life with reflective coatings that reduce energy costs.',
-    popular: false,
+  description: 'Extend your roof\'s life with reflective coatings that reduce energy costs.',
+  popular: false,
   },
 ];
 
@@ -97,23 +97,23 @@ const roofingSystems = [
 const commercialServices = [
   {
     icon: Building2,
-    title: 'New Construction',
-    description: 'Complete roofing systems for new commercial buildings in Mt Holly.',
+  title: 'New Construction',
+  description: 'Complete roofing systems for new commercial buildings in Mt Holly.',
   },
   {
     icon: Wrench,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with modern, efficient roofing systems.',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with modern, efficient roofing systems.',
   },
   {
     icon: Clock,
-    title: 'Repairs & Maintenance',
-    description: 'Fast repairs and preventive maintenance to minimize business disruption.',
+  title: 'Repairs & Maintenance',
+  description: 'Fast repairs and preventive maintenance to minimize business disruption.',
   },
   {
     icon: Shield,
-    title: 'Roof Inspections',
-    description: 'Comprehensive inspections to identify issues before they become costly.',
+  title: 'Roof Inspections',
+  description: 'Comprehensive inspections to identify issues before they become costly.',
   },
 ];
 
@@ -121,32 +121,32 @@ const commercialServices = [
 const faqs = [
   {
     question: 'What commercial roofing systems do you install in Mt Holly?',
-    answer:
+  answer:
       'We install all major commercial roofing systems including TPO, EPDM, PVC, modified bitumen, built-up roofing (BUR), metal roofing, and roof coatings. We\'ll recommend the best system for your building and budget.',
   },
   {
     question: 'How much does commercial roofing cost in Mt Holly NC?',
-    answer:
+  answer:
       'Commercial roofing costs vary based on roof size, system type, and building requirements. TPO and EPDM typically run $5-10 per square foot installed. We provide detailed, transparent estimates for every project.',
   },
   {
     question: 'Can you work around our business hours?',
-    answer:
+  answer:
       'Yes! We understand that business disruption is costly. We can schedule work during off-hours, weekends, or in phases to minimize impact on your Mt Holly business operations.',
   },
   {
     question: 'Do you offer commercial roof maintenance programs?',
-    answer:
+  answer:
       'Yes, we offer preventive maintenance programs for Mt Holly businesses. Regular inspections and minor repairs can significantly extend your roof\'s lifespan and prevent costly emergency repairs.',
   },
   {
     question: 'What warranties do you offer on commercial roofing?',
-    answer:
+  answer:
       'We offer manufacturer warranties up to 30 years on materials and our own workmanship warranty. Many commercial systems also qualify for NDL (No Dollar Limit) warranties through major manufacturers.',
   },
   {
     question: 'How long does commercial roof installation take?',
-    answer:
+  answer:
       'Installation time depends on roof size and system complexity. Small commercial roofs may take 3-5 days, while larger projects can take 2-4 weeks. We provide detailed timelines during the estimate process.',
   },
 ];

@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Coating Charlotte NC | Extend Your Roof\'s Life 15+ Years | Best Roofing Now',
-    description:
+  description:
       'Roof coating for all roof types in Charlotte NC -- flat, pitched, residential, and commercial. Silicone, acrylic, and elastomeric coatings extend your roof life 15+ years. Free estimates available.',
-    url: `${SITE_CONFIG.url}/roof-coating-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-coating-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.flatRoof,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof coating services Charlotte NC - flat roof restoration',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof coating services Charlotte NC - flat roof restoration',
       },
     ],
   },
@@ -69,27 +69,27 @@ export const metadata: Metadata = {
 const coatingTypes = [
   {
     icon: Droplets,
-    title: 'Silicone Roof Coatings',
-    description: 'Premium silicone coatings ideal for flat roofs with ponding water. Superior UV resistance and waterproofing.',
-    benefits: ['Handles ponding water', '20+ year lifespan', 'Excellent UV protection'],
+  title: 'Silicone Roof Coatings',
+  description: 'Premium silicone coatings ideal for flat roofs with ponding water. Superior UV resistance and waterproofing.',
+  benefits: ['Handles ponding water', '20+ year lifespan', 'Excellent UV protection'],
   },
   {
     icon: Sun,
-    title: 'Acrylic Roof Coatings',
-    description: 'Cost-effective acrylic coatings for sloped roofs. Highly reflective for energy savings.',
-    benefits: ['Budget-friendly', 'Great reflectivity', 'Easy application'],
+  title: 'Acrylic Roof Coatings',
+  description: 'Cost-effective acrylic coatings for sloped roofs. Highly reflective for energy savings.',
+  benefits: ['Budget-friendly', 'Great reflectivity', 'Easy application'],
   },
   {
     icon: Layers,
-    title: 'Elastomeric Coatings',
-    description: 'Flexible rubber-like coatings that expand and contract with temperature changes.',
-    benefits: ['Superior flexibility', 'Crack bridging', 'Seamless membrane'],
+  title: 'Elastomeric Coatings',
+  description: 'Flexible rubber-like coatings that expand and contract with temperature changes.',
+  benefits: ['Superior flexibility', 'Crack bridging', 'Seamless membrane'],
   },
   {
     icon: ThermometerSun,
-    title: 'Cool Roof Coatings',
-    description: 'ENERGY STAR rated reflective coatings that reduce cooling costs by up to 30%.',
-    benefits: ['Reduces energy costs', 'Lowers roof temperature', 'Extends roof life'],
+  title: 'Cool Roof Coatings',
+  description: 'ENERGY STAR rated reflective coatings that reduce cooling costs by up to 30%.',
+  benefits: ['Reduces energy costs', 'Lowers roof temperature', 'Extends roof life'],
   },
 ];
 
@@ -97,33 +97,33 @@ const coatingTypes = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Certified Applicators',
-    description: 'Factory-trained and certified in all major coating systems for proper application.',
+  title: 'Certified Applicators',
+  description: 'Factory-trained and certified in all major coating systems for proper application.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte property owners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte property owners.`,
   },
   {
     icon: Shield,
-    title: 'Manufacturer Warranties',
-    description: 'We offer coating systems with manufacturer warranties up to 20 years.',
+  title: 'Manufacturer Warranties',
+  description: 'We offer coating systems with manufacturer warranties up to 20 years.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Commercial Specialists',
-    description: 'Extensive experience with commercial flat roof coating and restoration.',
+  title: 'Commercial Specialists',
+  description: 'Extensive experience with commercial flat roof coating and restoration.',
   },
   {
     icon: Clock,
-    title: 'Minimal Disruption',
-    description: 'Coating application causes minimal disruption to your business operations.',
+  title: 'Minimal Disruption',
+  description: 'Coating application causes minimal disruption to your business operations.',
   },
 ];
 
@@ -157,42 +157,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How long does a roof coating last in Charlotte NC?',
-    answer:
+  answer:
       'Quality roof coatings in Charlotte typically last 10-20 years depending on the type. Silicone coatings can last 20+ years, while acrylic coatings typically last 10-15 years. Charlotte\'s hot summers and UV exposure make proper coating selection crucial. We help you choose the right coating for your specific roof type and conditions.',
   },
   {
     question: 'What is the best roof coating for flat roofs in Charlotte?',
-    answer:
+  answer:
       'For Charlotte flat roofs, we typically recommend silicone coatings because they handle ponding water without degrading. Unlike acrylic coatings that can wash away in standing water, silicone remains intact. For roofs with proper drainage, acrylic coatings offer excellent value and reflectivity. We assess your roof\'s drainage and recommend the optimal solution.',
   },
   {
     question: 'Can roof coating be applied over an existing roof?',
-    answer:
+  answer:
       'Yes, roof coatings are designed to be applied over existing roofing materials including TPO, EPDM, modified bitumen, metal, and built-up roofing. The existing roof must be in reasonably good condition with no major structural issues. We thoroughly inspect and prepare the surface before application to ensure proper adhesion.',
   },
   {
     question: 'How much does roof coating cost in Charlotte NC?',
-    answer:
+  answer:
       'Roof coating in Charlotte typically costs $2-5 per square foot depending on the coating type, roof condition, and accessibility. For a 10,000 sq ft commercial roof, expect $20,000-$50,000. This is significantly less than full roof replacement, which can cost 2-3 times as much. We provide free detailed estimates for all coating projects.',
   },
   {
     question: 'Will roof coating reduce my energy bills?',
-    answer:
+  answer:
       'Yes, reflective roof coatings can reduce cooling costs by 10-30% in Charlotte\'s hot climate. White or light-colored coatings reflect solar radiation, keeping roof surface temperatures up to 50 degrees cooler. This reduces heat transfer into your building and decreases air conditioning demands. Many of our customers see significant energy savings.',
   },
   {
     question: 'How long does roof coating application take?',
-    answer:
+  answer:
       'Most commercial roof coating projects in Charlotte take 3-7 days depending on roof size and condition. The process includes surface cleaning, repairs, primer application, and coating layers. We work around your business schedule to minimize disruption. Weather is a factor - we need dry conditions for proper application.',
   },
   {
     question: 'Does roof coating come with a warranty?',
-    answer:
+  answer:
       'Yes, we offer comprehensive warranties on all roof coating systems. Depending on the product and application, manufacturer warranties range from 10-20 years. Additionally, we provide our own workmanship warranty. We\'ll review all warranty options during your free consultation.',
   },
   {
     question: 'Is my roof a good candidate for coating?',
-    answer:
+  answer:
       'Most roofs with 50% or more remaining life are good candidates for coating. Signs that coating is appropriate include minor surface wear, small cracks, and loss of reflectivity. Roofs with major structural damage, extensive ponding, or saturated insulation may require repair or replacement instead. Our free inspection determines if coating is right for your roof.',
   },
 ];
@@ -207,7 +207,6 @@ export default function RoofCoatingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

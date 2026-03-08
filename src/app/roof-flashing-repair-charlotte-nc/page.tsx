@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Flashing Repair Charlotte NC | Wall, Vent & Pipe Flashing Experts | Best Roofing Now',
-    description:
+  description:
       'Expert flashing repair for walls, vents, skylights, pipes, and valleys. Stop leaks at their source. BBB A+ rated, free inspections. Charlotte NC.',
-    url: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof flashing repair in Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof flashing repair in Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -68,23 +68,23 @@ export const metadata: Metadata = {
 const flashingTypes = [
   {
     icon: Flame,
-    title: 'Chimney Flashing',
-    description: 'Step flashing, counter flashing, and cricket installation around masonry chimneys.',
+  title: 'Chimney Flashing',
+  description: 'Step flashing, counter flashing, and cricket installation around masonry chimneys.',
   },
   {
     icon: Wind,
-    title: 'Vent Pipe Flashing',
-    description: 'Repair or replace rubber boots and metal flashing around plumbing vents.',
+  title: 'Vent Pipe Flashing',
+  description: 'Repair or replace rubber boots and metal flashing around plumbing vents.',
   },
   {
     icon: Home,
-    title: 'Skylight Flashing',
-    description: 'Proper sealing and flashing around skylights to prevent leaks.',
+  title: 'Skylight Flashing',
+  description: 'Proper sealing and flashing around skylights to prevent leaks.',
   },
   {
     icon: Droplets,
-    title: 'Valley Flashing',
-    description: 'Metal flashing in roof valleys where two roof planes meet.',
+  title: 'Valley Flashing',
+  description: 'Metal flashing in roof valleys where two roof planes meet.',
   },
 ];
 
@@ -92,27 +92,27 @@ const flashingTypes = [
 const flashingProblems = [
   {
     title: 'Water Stains Near Chimney',
-    description: 'Brown stains on ceiling or walls near your chimney indicate failing chimney flashing.',
+  description: 'Brown stains on ceiling or walls near your chimney indicate failing chimney flashing.',
   },
   {
     title: 'Leaks During Heavy Rain',
-    description: 'Leaks that only appear during heavy storms often point to flashing issues.',
+  description: 'Leaks that only appear during heavy storms often point to flashing issues.',
   },
   {
     title: 'Visible Rust or Corrosion',
-    description: 'Rusted or corroded flashing can no longer provide proper waterproofing.',
+  description: 'Rusted or corroded flashing can no longer provide proper waterproofing.',
   },
   {
     title: 'Separated or Lifted Flashing',
-    description: 'Flashing that has pulled away from the surface it should seal against.',
+  description: 'Flashing that has pulled away from the surface it should seal against.',
   },
   {
     title: 'Missing Caulk or Sealant',
-    description: 'Dried, cracked, or missing sealant allows water to penetrate.',
+  description: 'Dried, cracked, or missing sealant allows water to penetrate.',
   },
   {
     title: 'Damp Attic Near Penetrations',
-    description: 'Moisture in your attic near vents, chimneys, or skylights.',
+  description: 'Moisture in your attic near vents, chimneys, or skylights.',
   },
 ];
 
@@ -120,33 +120,33 @@ const flashingProblems = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Flashing Experts',
-    description: 'Specialized experience with all types of roof flashing repairs and installations.',
+  title: 'Flashing Experts',
+  description: 'Specialized experience with all types of roof flashing repairs and installations.',
   },
   {
     icon: Clock,
-    title: 'Fast Service',
-    description: 'Most flashing repairs completed same-day or within 1-2 days.',
+  title: 'Fast Service',
+  description: 'Most flashing repairs completed same-day or within 1-2 days.',
   },
 ];
 
@@ -154,42 +154,42 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'What is roof flashing and why is it important?',
-    answer:
+  answer:
       'Roof flashing is thin metal (usually aluminum, copper, or galvanized steel) installed at vulnerable points where the roof meets walls, chimneys, vents, skylights, or valleys. Flashing creates a waterproof barrier that directs water away from these critical junctions. Without properly functioning flashing, water can seep into your home and cause significant damage.',
   },
   {
     question: 'How much does roof flashing repair cost in Charlotte NC?',
-    answer:
+  answer:
       'Flashing repair costs in Charlotte typically range from $200 to $800 depending on the location and extent of repairs needed. Simple vent boot replacements start around $150-$250, while chimney flashing replacement can run $400-$1,000+ depending on chimney size and complexity. We provide free inspections and detailed quotes.',
   },
   {
     question: 'How do I know if my roof flashing needs repair?',
-    answer:
+  answer:
       'Common signs include water stains on ceilings or walls near your chimney, skylights, or vents; leaks that appear during heavy rain; visible rust, cracks, or separation in the flashing; missing or deteriorated caulk/sealant; and damp spots in your attic near roof penetrations. We offer free inspections to assess your flashing condition.',
   },
   {
     question: 'Can you repair flashing without replacing the whole roof?',
-    answer:
+  answer:
       'Yes! Flashing repair is a common, standalone repair that doesn\'t require roof replacement. In most cases, we can repair or replace just the failed flashing without disturbing the surrounding shingles (or with minimal shingle work). This is much more cost-effective than full roof replacement when the rest of your roof is in good condition.',
   },
   {
     question: 'What causes roof flashing to fail?',
-    answer:
+  answer:
       'Flashing fails due to age and weathering, thermal expansion/contraction, improper original installation, corrosion, storm damage, settled structures causing separation, and deteriorated sealants. Charlotte\'s hot summers and freeze-thaw cycles in winter are particularly hard on flashing and sealants.',
   },
   {
     question: 'How long does roof flashing last?',
-    answer:
+  answer:
       'Quality roof flashing typically lasts 15-30 years depending on material and installation quality. Aluminum flashing lasts 15-20 years, galvanized steel 20-25 years, and copper can last 50+ years. However, the sealants used with flashing typically need reapplication every 5-10 years to maintain waterproofing.',
   },
   {
     question: 'Should I try to repair roof flashing myself?',
-    answer:
+  answer:
       'We don\'t recommend DIY flashing repair. Improper installation can actually make leaks worse and void roof warranties. Flashing must be properly integrated with roofing materials, and repairs often require working on steep or high roofs. Professional installation ensures the repair is done correctly and safely.',
   },
   {
     question: 'Do you offer warranties on flashing repair?',
-    answer:
+  answer:
       'Yes, all our flashing repairs are backed by our workmanship warranty. We also use quality materials that carry manufacturer warranties. During your free inspection, we\'ll discuss warranty coverage specific to your repair needs.',
   },
 ];
@@ -244,7 +244,6 @@ export default function RoofFlashingRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -272,7 +271,7 @@ export default function RoofFlashingRepairCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Most roof leaks originate at flashing points - where your roof meets walls, chimneys, vents,
-              and skylights. Best Roofing Now specializes in flashing repair and replacement to stop leaks
+  and skylights. Best Roofing Now specializes in flashing repair and replacement to stop leaks
               permanently. Free inspections to identify and fix the problem.
             </p>
 

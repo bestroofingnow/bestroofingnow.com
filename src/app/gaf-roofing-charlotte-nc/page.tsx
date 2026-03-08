@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'GAF Roofing Charlotte NC | Factory-Certified Contractor | Best Roofing Now',
-    description:
+  description:
       'GAF Factory-Certified contractor in Charlotte NC. Install Timberline HDZ shingles with Golden Pledge warranty coverage. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/gaf-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gaf-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'GAF roofing installation Charlotte NC - Best Roofing Now certified contractor',
+  width: 1200,
+  height: 630,
+  alt: 'GAF roofing installation Charlotte NC - Best Roofing Now certified contractor',
       },
     ],
   },
@@ -63,39 +63,39 @@ export const metadata: Metadata = {
 const gafProducts = [
   {
     icon: Home,
-    title: 'Timberline HDZ Shingles',
-    description: 'America\'s #1 selling shingle with LayerLock technology and StrikeZone nailing area.',
-    href: '/gaf-timberline-shingles-charlotte-nc',
+  title: 'Timberline HDZ Shingles',
+  description: 'America\'s #1 selling shingle with LayerLock technology and StrikeZone nailing area.',
+  href: '/gaf-timberline-shingles-charlotte-nc',
   },
   {
     icon: Shield,
-    title: 'Golden Pledge Warranty',
-    description: '50-year material warranty plus 25-year workmanship coverage - the best in the industry.',
-    href: '/contact',
+  title: 'Golden Pledge Warranty',
+  description: '50-year material warranty plus 25-year workmanship coverage - the best in the industry.',
+  href: '/contact',
   },
   {
     icon: Award,
-    title: 'Timberline NS Shingles',
-    description: 'Natural shadow effect with dimensional beauty at an affordable price point.',
-    href: '/gaf-timberline-shingles-charlotte-nc',
+  title: 'Timberline NS Shingles',
+  description: 'Natural shadow effect with dimensional beauty at an affordable price point.',
+  href: '/gaf-timberline-shingles-charlotte-nc',
   },
   {
     icon: Home,
-    title: 'GAF Camelot II',
-    description: 'Ultra-premium designer shingles with the look of slate at a fraction of the cost.',
-    href: '/contact',
+  title: 'GAF Camelot II',
+  description: 'Ultra-premium designer shingles with the look of slate at a fraction of the cost.',
+  href: '/contact',
   },
   {
     icon: Wrench,
-    title: 'GAF Roof System',
-    description: 'Complete roofing system with Deck-Armor, Cobra vents, and Starter Strip Plus.',
-    href: '/services/roof-replacement',
+  title: 'GAF Roof System',
+  description: 'Complete roofing system with Deck-Armor, Cobra vents, and Starter Strip Plus.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Shield,
-    title: 'StainGuard Plus',
-    description: 'Time-release algae-fighting technology keeps your roof looking new for 25 years.',
-    href: '/contact',
+  title: 'StainGuard Plus',
+  description: 'Time-release algae-fighting technology keeps your roof looking new for 25 years.',
+  href: '/contact',
   },
 ];
 
@@ -103,33 +103,33 @@ const gafProducts = [
 const whyChooseGAF = [
   {
     icon: Award,
-    title: 'Factory-Certified Contractor',
-    description: 'Best Roofing Now is GAF Factory-Certified, meeting rigorous installation standards.',
+  title: 'Factory-Certified Contractor',
+  description: 'Best Roofing Now is GAF Factory-Certified, meeting rigorous installation standards.',
   },
   {
     icon: Shield,
-    title: 'Golden Pledge Warranty',
-    description: '50-year material + 25-year workmanship warranty - only available from certified contractors.',
+  title: 'Golden Pledge Warranty',
+  description: '50-year material + 25-year workmanship warranty - only available from certified contractors.',
   },
   {
     icon: Star,
-    title: '#1 Selling Shingles',
-    description: 'GAF Timberline is America\'s best-selling shingle for over 20 consecutive years.',
+  title: '#1 Selling Shingles',
+  description: 'GAF Timberline is America\'s best-selling shingle for over 20 consecutive years.',
   },
   {
     icon: CheckCircle,
-    title: 'LayerLock Technology',
-    description: 'Mechanical fusion creates the strongest bond between shingle layers.',
+  title: 'LayerLock Technology',
+  description: 'Mechanical fusion creates the strongest bond between shingle layers.',
   },
   {
     icon: Clock,
-    title: 'Lifetime Protection',
-    description: 'GAF shingles are engineered to last with Class A fire rating and high wind resistance.',
+  title: 'Lifetime Protection',
+  description: 'GAF shingles are engineered to last with Class A fire rating and high wind resistance.',
   },
   {
     icon: Award,
-    title: 'StainGuard Plus',
-    description: '25-year limited warranty against blue-green algae staining on your roof.',
+  title: 'StainGuard Plus',
+  description: '25-year limited warranty against blue-green algae staining on your roof.',
   },
 ];
 
@@ -173,42 +173,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What does it mean to be a GAF Factory-Certified contractor?',
-    answer:
+  answer:
       'GAF Factory-Certified contractors have met GAF\'s stringent standards for installation training, proper licensing, adequate insurance, and a proven track record of quality work. This certification allows us to offer GAF\'s enhanced warranty options including the Golden Pledge warranty with 25-year workmanship coverage. Only about 7% of roofing contractors nationwide achieve this certification.',
   },
   {
     question: 'What is the GAF Golden Pledge warranty?',
-    answer:
+  answer:
       'The GAF Golden Pledge warranty is the strongest warranty in the roofing industry. It includes a 50-year non-prorated material warranty plus 25 years of workmanship coverage backed by GAF itself - not just the contractor. This means GAF will pay for any repairs due to installation defects for 25 years. This warranty is only available through GAF Factory-Certified contractors like Best Roofing Now.',
   },
   {
     question: 'Why are GAF Timberline shingles so popular in Charlotte?',
-    answer:
+  answer:
       'GAF Timberline shingles are America\'s #1 selling shingle for good reason. They offer excellent protection against Charlotte\'s hot summers and storm season, with Class A fire rating, high wind resistance up to 130 MPH, and StainGuard Plus algae protection. The LayerLock technology provides superior bond strength, and the dimensional appearance adds curb appeal that enhances home value.',
   },
   {
     question: 'How much does a GAF roof cost in Charlotte NC?',
-    answer:
+  answer:
       'A GAF Timberline roof replacement in Charlotte typically ranges from $8,000 to $20,000+ for most homes, depending on roof size, pitch, and complexity. Premium options like Timberline HDZ with Golden Pledge warranty are at the higher end but provide the best value long-term. We provide free, detailed estimates with transparent pricing and financing options available.',
   },
   {
     question: 'What GAF shingle colors are best for Charlotte homes?',
-    answer:
+  answer:
       'Popular GAF shingle colors in Charlotte include Weathered Wood, Charcoal, Hickory, Barkwood, and Pewter Gray. For Charlotte\'s hot climate, lighter colors like Weathered Wood and Pewter Gray can help reduce heat absorption. We provide samples and can show you completed projects in your preferred colors to help you decide.',
   },
   {
     question: 'How long does a GAF roof installation take?',
-    answer:
+  answer:
       'Most GAF roof installations in Charlotte are completed in 1-3 days, depending on roof size and complexity. This includes complete tear-off of the old roof, inspection and repair of the decking, installation of GAF underlayment and accessories, and finally the Timberline shingles. We work efficiently while maintaining the highest quality standards.',
   },
   {
     question: 'Does GAF make good shingles for storm protection?',
-    answer:
+  answer:
       'Yes, GAF shingles offer excellent storm protection. Timberline HDZ shingles have a 130 MPH wind warranty and meet the highest impact resistance standards. The LayerLock technology creates a stronger bond that resists wind uplift. For Charlotte homeowners concerned about storms, GAF shingles are an excellent choice backed by comprehensive warranty coverage.',
   },
   {
     question: 'What is StainGuard Plus and do I need it?',
-    answer:
+  answer:
       'StainGuard Plus is GAF\'s advanced algae-fighting technology that releases copper over time to prevent ugly blue-green algae stains. In Charlotte\'s humid climate, algae growth on roofs is common and can make your home look old and neglected. StainGuard Plus comes standard on most GAF Timberline shingles and includes a 25-year limited warranty against algae discoloration.',
   },
 ];
@@ -223,7 +223,6 @@ export default function GAFRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

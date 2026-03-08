@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'About Best Roofing Now | Veteran-Owned Charlotte Roofing',
-    description: 'Family-owned, veteran-operated roofing company serving Charlotte NC since 2019. BBB A+ rated with military values of integrity and excellence.',
-    url: `${SITE_CONFIG.url}/about`,
-    type: 'website',
+  description: 'Family-owned, veteran-operated roofing company serving Charlotte NC since 2020. BBB A+ rated with military values of integrity and excellence. 500+ roofs completed.',
+  url: `${SITE_CONFIG.url}/about`,
+  type: 'website',
   },
 };
 
@@ -63,33 +63,43 @@ const iconMap: Record<string, React.ElementType> = {
 const milestones = [
   {
     year: '2019',
-    title: 'Company Founded',
-    description: 'James and his dad Fred started Best Roofing Now with one truck and a commitment to honest service.',
+  title: 'Company Founded',
+  description: 'James and his dad Fred started Best Roofing Now with one truck and a commitment to honest service.',
   },
   {
     year: '2020',
-    title: 'BBB Accreditation',
-    description: 'Earned BBB A+ rating within our first year, reflecting our commitment to customer satisfaction.',
+  title: 'BBB Accreditation',
+  description: 'Earned BBB A+ rating within our first year, reflecting our commitment to customer satisfaction.',
   },
   {
     year: '2021',
-    title: 'Team Expansion',
-    description: 'Grew our team to serve more Charlotte families while maintaining our quality standards.',
+  title: 'Team Expansion',
+  description: 'Grew our team to serve more Charlotte families while maintaining our quality standards.',
   },
   {
     year: '2022',
-    title: 'CertainTeed & GAF Certified',
-    description: 'Achieved manufacturer certifications to offer industry-leading warranties.',
+  title: 'CertainTeed & GAF Certified',
+  description: 'Achieved manufacturer certifications to offer industry-leading warranties.',
   },
   {
     year: '2023',
-    title: 'Angi Super Service Award',
-    description: 'Recognized for exceptional service and customer satisfaction.',
+  title: 'Angi Super Service Award',
+  description: 'Recognized for exceptional service and customer satisfaction.',
   },
   {
     year: '2024',
-    title: '5 Years Strong',
-    description: 'Celebrated 5 years serving Charlotte with a ribbon cutting ceremony in Lake Norman.',
+  title: '5 Years Strong',
+  description: 'Celebrated 5 years serving Charlotte with a ribbon cutting ceremony in Lake Norman.',
+  },
+  {
+    year: '2025',
+  title: '500+ Roofs Completed',
+  description: 'Surpassed 500 roof installations across the Charlotte metro while expanding commercial and industrial services.',
+  },
+  {
+    year: '2026',
+  title: 'Expanded Service Area',
+  description: 'Now serving 30+ communities across NC and SC with same-day availability and no travel fees.',
   },
 ];
 
@@ -114,11 +124,11 @@ export default function AboutPage() {
           key={member.id}
           person={{
             name: member.name,
-            role: member.role,
-            description: member.shortBio,
-            expertise: member.expertise,
-            certifications: member.certifications,
-            linkedIn: member.linkedIn,
+  role: member.role,
+  description: member.shortBio,
+  expertise: member.expertise,
+  certifications: member.certifications,
+  linkedIn: member.linkedIn,
           }}
         />
       ))}
@@ -167,7 +177,7 @@ export default function AboutPage() {
                 <p>
                   Fred, a proud military veteran, brought the values of discipline, integrity, and
                   service he learned in uniform. His son James brought fresh energy, business know-how,
-                  and a shared commitment to honest work.
+  and a shared commitment to honest work.
                 </p>
                 <p>
                   Together, they saw something wrong with the roofing industry. Too many

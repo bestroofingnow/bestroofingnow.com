@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Maintenance Program Charlotte NC | Preventive Care | Best Roofing Now',
-    description: 'Preventive roof maintenance programs to extend roof life and maintain warranties.',
-    url: `${SITE_CONFIG.url}/roof-maintenance`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof maintenance in Charlotte NC' }],
+  description: 'Preventive roof maintenance programs to extend roof life and maintain warranties.',
+  url: `${SITE_CONFIG.url}/roof-maintenance`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof maintenance in Charlotte NC' }],
   },
 };
 
@@ -98,8 +98,8 @@ export default function RoofMaintenancePage() {
       <ServiceSchema
         service={{
           title: "Roof Maintenance Program",
-          description: "Preventive roof maintenance programs in Charlotte NC to extend roof life and maintain warranties.",
-          slug: "roof-maintenance",
+  description: "Preventive roof maintenance programs in Charlotte NC to extend roof life and maintain warranties.",
+  slug: "roof-maintenance",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/roof-maintenance`} pageName="Roof Maintenance Charlotte NC" city="Charlotte" />

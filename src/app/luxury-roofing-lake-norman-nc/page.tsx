@@ -22,7 +22,6 @@ import { CTASection } from '@/components/sections/CTASection';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -58,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Luxury Roofing Lake Norman NC | Waterfront Home Specialists',
-    description:
+  description:
       'Premium roofing for Lake Norman\'s finest waterfront homes and estates. Expert installation of copper, slate, cedar shake, and designer shingles with wind-resistant ratings.',
-    url: `${SITE_CONFIG.url}/luxury-roofing-lake-norman-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/luxury-roofing-lake-norman-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Luxury roofing Lake Norman NC - Best Roofing Now waterfront specialists',
+  width: 1200,
+  height: 630,
+  alt: 'Luxury roofing Lake Norman NC - Best Roofing Now waterfront specialists',
       },
     ],
   },
@@ -77,39 +76,39 @@ export const metadata: Metadata = {
 const premiumMaterials = [
   {
     title: 'Standing Seam Metal',
-    description: 'Wind-rated to 140+ MPH, ideal for lakefront exposure. 40-70 year lifespan with minimal maintenance.',
-    benefits: ['Wind resistant', 'Low maintenance', 'Energy efficient'],
-    href: '/metal-roofing-charlotte-nc',
+  description: 'Wind-rated to 140+ MPH, ideal for lakefront exposure. 40-70 year lifespan with minimal maintenance.',
+  benefits: ['Wind resistant', 'Low maintenance', 'Energy efficient'],
+  href: '/metal-roofing-charlotte-nc',
   },
   {
     title: 'Copper Roofing',
-    description: '100+ year lifespan with stunning natural patina. Perfect for accents, dormers, and bay windows.',
-    benefits: ['100+ year life', 'Corrosion proof', 'Increases value'],
-    href: '/copper-roofing-charlotte-nc',
+  description: '100+ year lifespan with stunning natural patina. Perfect for accents, dormers, and bay windows.',
+  benefits: ['100+ year life', 'Corrosion proof', 'Increases value'],
+  href: '/copper-roofing-charlotte-nc',
   },
   {
     title: 'Natural Slate',
-    description: 'Authentic slate provides unmatched beauty and 100+ years of protection for luxury estates.',
-    benefits: ['Timeless beauty', 'Fire resistant', 'Heirloom quality'],
-    href: '/slate-roofing-charlotte-nc',
+  description: 'Authentic slate provides unmatched beauty and 100+ years of protection for luxury estates.',
+  benefits: ['Timeless beauty', 'Fire resistant', 'Heirloom quality'],
+  href: '/slate-roofing-charlotte-nc',
   },
   {
     title: 'Cedar Shake',
-    description: 'Natural wood beauty with premium fire-treated options. 30-50 year lifespan with proper care.',
-    benefits: ['Natural insulation', 'Rustic elegance', 'Eco-friendly'],
-    href: '/cedar-shake-roofing-charlotte-nc',
+  description: 'Natural wood beauty with premium fire-treated options. 30-50 year lifespan with proper care.',
+  benefits: ['Natural insulation', 'Rustic elegance', 'Eco-friendly'],
+  href: '/cedar-shake-roofing-charlotte-nc',
   },
   {
     title: 'Designer Shingles',
-    description: 'GAF Grand Canyon, CertainTeed Grand Manor - luxury appearance with proven performance.',
-    benefits: ['Lifetime warranty', 'Impact rated', 'HOA approved'],
-    href: '/designer-shingles-charlotte-nc',
+  description: 'GAF Grand Canyon, CertainTeed Grand Manor - luxury appearance with proven performance.',
+  benefits: ['Lifetime warranty', 'Impact rated', 'HOA approved'],
+  href: '/designer-shingles-charlotte-nc',
   },
   {
     title: 'Impact-Resistant',
-    description: 'Class 4 impact-rated shingles designed for Lake Norman\'s severe weather and hail events.',
-    benefits: ['Class 4 rated', 'Insurance discounts', 'Hail protection'],
-    href: '/hail-damage-roof-repair-charlotte-nc',
+  description: 'Class 4 impact-rated shingles designed for Lake Norman\'s severe weather and hail events.',
+  benefits: ['Class 4 rated', 'Insurance discounts', 'Hail protection'],
+  href: '/hail-damage-roof-repair-charlotte-nc',
   },
 ];
 
@@ -117,59 +116,59 @@ const premiumMaterials = [
 const lakeNormanCommunities = [
   {
     name: 'The Peninsula',
-    city: 'Cornelius',
-    homes: '$1M - $10M+',
-    href: '/roofing-cornelius-nc',
-    description: 'Exclusive gated waterfront community with marina access',
+  city: 'Cornelius',
+  homes: '$1M - $10M+',
+  href: '/roofing-cornelius-nc',
+  description: 'Exclusive gated waterfront community with marina access',
   },
   {
     name: 'Jetton Road Estates',
-    city: 'Cornelius',
-    homes: '$800K - $5M+',
-    href: '/roofing-cornelius-nc',
-    description: 'Premier waterfront properties with private docks',
+  city: 'Cornelius',
+  homes: '$800K - $5M+',
+  href: '/roofing-cornelius-nc',
+  description: 'Premier waterfront properties with private docks',
   },
   {
     name: 'Governors Island',
-    city: 'Denver',
-    homes: '$1M - $4M+',
-    href: '/roofing-denver-nc',
-    description: 'Private island community with stunning lake views',
+  city: 'Denver',
+  homes: '$1M - $4M+',
+  href: '/roofing-denver-nc',
+  description: 'Private island community with stunning lake views',
   },
   {
     name: 'Westport',
-    city: 'Denver',
-    homes: '$700K - $3M+',
-    href: '/roofing-denver-nc',
-    description: 'Upscale waterfront neighborhood with golf course',
+  city: 'Denver',
+  homes: '$700K - $3M+',
+  href: '/roofing-denver-nc',
+  description: 'Upscale waterfront neighborhood with golf course',
   },
   {
     name: 'River Run',
-    city: 'Davidson',
-    homes: '$800K - $2.5M+',
-    href: '/roofing-davidson-nc',
-    description: 'Custom lakefront homes with private beach access',
+  city: 'Davidson',
+  homes: '$800K - $2.5M+',
+  href: '/roofing-davidson-nc',
+  description: 'Custom lakefront homes with private beach access',
   },
   {
     name: 'Birkdale',
-    city: 'Huntersville',
-    homes: '$600K - $1.5M+',
-    href: '/roofing-huntersville-nc',
-    description: 'Master-planned community near Lake Norman',
+  city: 'Huntersville',
+  homes: '$600K - $1.5M+',
+  href: '/roofing-huntersville-nc',
+  description: 'Master-planned community near Lake Norman',
   },
   {
     name: 'The Point',
-    city: 'Mooresville',
-    homes: '$1.5M - $8M+',
-    href: '/roofing-mooresville-nc',
-    description: 'Exclusive peninsula with panoramic lake views',
+  city: 'Mooresville',
+  homes: '$1.5M - $8M+',
+  href: '/roofing-mooresville-nc',
+  description: 'Exclusive peninsula with panoramic lake views',
   },
   {
     name: 'Trump National',
-    city: 'Mooresville',
-    homes: '$1M - $5M+',
-    href: '/roofing-mooresville-nc',
-    description: 'Golf course community with waterfront homesites',
+  city: 'Mooresville',
+  homes: '$1M - $5M+',
+  href: '/roofing-mooresville-nc',
+  description: 'Golf course community with waterfront homesites',
   },
 ];
 
@@ -177,23 +176,23 @@ const lakeNormanCommunities = [
 const whyChooseUs = [
   {
     icon: Waves,
-    title: 'Waterfront Specialists',
-    description: 'Deep experience with Lake Norman\'s unique weather patterns, lake-effect moisture, and wind exposure.',
+  title: 'Waterfront Specialists',
+  description: 'Deep experience with Lake Norman\'s unique weather patterns, lake-effect moisture, and wind exposure.',
   },
   {
     icon: Award,
-    title: 'Premium Certifications',
-    description: 'GAF Master Elite, CertainTeed ShingleMaster, and certified copper/slate installers.',
+  title: 'Premium Certifications',
+  description: 'GAF Master Elite, CertainTeed ShingleMaster, and certified copper/slate installers.',
   },
   {
     icon: Shield,
-    title: 'Enhanced Warranties',
-    description: 'Manufacturer-backed warranties up to 50 years on materials with our installation workmanship guarantee.',
+  title: 'Enhanced Warranties',
+  description: 'Manufacturer-backed warranties up to 50 years on materials with our installation workmanship guarantee.',
   },
   {
     icon: Home,
-    title: 'HOA Experience',
-    description: 'Extensive experience with Lake Norman HOA requirements and architectural review boards.',
+  title: 'HOA Experience',
+  description: 'Extensive experience with Lake Norman HOA requirements and architectural review boards.',
   },
 ];
 
@@ -201,32 +200,32 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'What roofing materials are best for Lake Norman waterfront homes?',
-    answer:
+  answer:
       'For Lake Norman waterfront properties, we recommend materials rated for high wind exposure: standing seam metal (140+ MPH rated), impact-resistant Class 4 shingles, or premium synthetic slate. Copper accents and gutters add lasting beauty and corrosion resistance for lakefront moisture. We assess each property\'s exposure and recommend the optimal solution.',
   },
   {
     question: 'How much does luxury roofing cost in Lake Norman?',
-    answer:
+  answer:
       'Luxury roofing in Lake Norman varies by material and home size. Designer shingles typically run $15-25/sq ft installed, standing seam metal $18-30/sq ft, cedar shake $20-35/sq ft, and copper $35-60/sq ft. For a 3,000 sq ft Lake Norman waterfront home, expect $45,000-$150,000+ depending on materials. Premium materials often qualify for insurance discounts and significantly increase property value.',
   },
   {
     question: 'Do you work with Lake Norman HOAs and architectural review boards?',
-    answer:
+  answer:
       'Yes, we have extensive experience with Lake Norman HOA requirements including The Peninsula, Trump National, The Point, and other exclusive communities. We handle all HOA submissions, provide material samples, and attend architectural review board meetings when needed. We ensure your new roof meets all community standards.',
   },
   {
     question: 'What wind rating should my Lake Norman roof have?',
-    answer:
+  answer:
       'We recommend minimum 110 MPH wind-rated materials for Lake Norman properties, with 130-150 MPH ratings for exposed waterfront and peninsula locations. Lake Norman experiences significant wind exposure, especially during summer storms and hurricane remnants. Higher wind ratings also often qualify for homeowner insurance premium reductions.',
   },
   {
     question: 'How do you protect waterfront homes during roof replacement?',
-    answer:
+  answer:
       'We implement comprehensive protection for Lake Norman waterfront properties including: tarping and sealing each evening, specialized debris containment to protect docks and landscaping, coordination with dock/boat schedules, and expedited timelines to minimize exposure. Our crews understand the unique considerations of lakefront construction.',
   },
   {
     question: 'Which Lake Norman cities do you serve?',
-    answer:
+  answer:
       'We serve all Lake Norman communities including Cornelius, Davidson, Huntersville, Mooresville, Denver, Sherrills Ford, and Terrell. Our team has completed luxury roofing projects throughout the Lake Norman region, from The Peninsula to Trump National to Governors Island. We provide free on-site estimates for all Lake Norman homeowners.',
   },
 ];
@@ -242,7 +241,6 @@ export default function LuxuryRoofingLakeNormanPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/luxury-roofing-lake-norman-nc`}
         pageName="Luxury Roofing Lake Norman NC"

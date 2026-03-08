@@ -43,16 +43,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Installation Mt Holly NC | Seamless Gutters | Best Roofing Now',
-    description:
+  description:
       'Professional gutter installation in Mt Holly NC. Seamless aluminum, copper, and steel gutters with gutter guard options. Protect your home today.',
-    url: `${SITE_CONFIG.url}/gutter-installation-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-installation-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Gutter installation in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Gutter installation in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -62,33 +62,33 @@ export const metadata: Metadata = {
 const gutterServices = [
   {
     icon: Droplets,
-    title: 'Seamless Gutters',
-    description: 'Custom-fabricated seamless aluminum gutters that reduce leaks and enhance curb appeal.',
+  title: 'Seamless Gutters',
+  description: 'Custom-fabricated seamless aluminum gutters that reduce leaks and enhance curb appeal.',
   },
   {
     icon: Shield,
-    title: 'Gutter Guards',
-    description: 'Keep debris out and reduce maintenance with quality gutter protection systems.',
+  title: 'Gutter Guards',
+  description: 'Keep debris out and reduce maintenance with quality gutter protection systems.',
   },
   {
     icon: Home,
-    title: 'Gutter Replacement',
-    description: 'Full gutter system replacement including downspouts and hangers.',
+  title: 'Gutter Replacement',
+  description: 'Full gutter system replacement including downspouts and hangers.',
   },
   {
     icon: CheckCircle,
-    title: 'Downspout Installation',
-    description: 'Proper downspout placement to direct water away from your foundation.',
+  title: 'Downspout Installation',
+  description: 'Proper downspout placement to direct water away from your foundation.',
   },
   {
     icon: Award,
-    title: 'Copper Gutters',
-    description: 'Premium copper gutter systems for distinctive homes seeking lasting elegance.',
+  title: 'Copper Gutters',
+  description: 'Premium copper gutter systems for distinctive homes seeking lasting elegance.',
   },
   {
     icon: Droplets,
-    title: 'Gutter Repair',
-    description: 'Fix sagging, leaking, or damaged gutters before they cause bigger problems.',
+  title: 'Gutter Repair',
+  description: 'Fix sagging, leaking, or damaged gutters before they cause bigger problems.',
   },
 ];
 
@@ -106,32 +106,32 @@ const benefits = [
 const faqs = [
   {
     question: 'How much do new gutters cost in Mt Holly NC?',
-    answer:
+  answer:
       'Gutter installation in Mt Holly typically costs $1,200 to $4,000 for most homes, depending on linear footage, material choice, and complexity. Seamless aluminum is most popular, while copper gutters are a premium option.',
   },
   {
     question: 'What size gutters do I need?',
-    answer:
+  answer:
       'Most Mt Holly homes use 5-inch K-style gutters, though 6-inch gutters may be recommended for homes with large roof areas or steep pitches. We\'ll assess your home and recommend the right size.',
   },
   {
     question: 'Are seamless gutters worth it?',
-    answer:
+  answer:
       'Yes! Seamless gutters have fewer joints, meaning fewer potential leak points. They\'re custom-fabricated on-site to fit your home perfectly and generally last longer than sectional gutters.',
   },
   {
     question: 'Do you install gutter guards?',
-    answer:
+  answer:
       'Yes, we offer several gutter guard options to reduce maintenance and prevent clogs. Gutter guards are especially valuable in Mt Holly where trees can drop significant debris.',
   },
   {
     question: 'How long do gutters last?',
-    answer:
+  answer:
       'Aluminum gutters typically last 20-30 years, while copper gutters can last 50+ years. Proper installation and maintenance are key to maximizing gutter lifespan.',
   },
   {
     question: 'Can you match my existing gutter color?',
-    answer:
+  answer:
       'Yes! We offer gutters in a wide range of colors to match or complement your home\'s exterior. We\'ll help you choose the perfect color for your Mt Holly home.',
   },
 ];

@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Matthews NC | Local Roofing Contractors | Best Roofing Now',
-    description:
+  description:
       'Best Roofing Now - trusted roofers serving Matthews NC and South Charlotte. Licensed, insured, veteran-owned. 5-star rated with 500+ roofs installed.',
-    url: `${SITE_CONFIG.url}/roofers-matthews-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-matthews-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofers in Matthews NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofers in Matthews NC - Best Roofing Now',
       },
     ],
   },
@@ -63,33 +63,33 @@ export const metadata: Metadata = {
 const credentials = [
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Accredited business with A+ rating and zero complaints.',
+  title: 'BBB A+ Accredited',
+  description: 'Accredited business with A+ rating and zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Fully Licensed',
-    description: 'Licensed roofing contractor in North Carolina.',
+  title: 'Fully Licensed',
+  description: 'Licensed roofing contractor in North Carolina.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Insured',
-    description: 'Comprehensive liability and workers compensation coverage.',
+  title: 'Fully Insured',
+  description: 'Comprehensive liability and workers compensation coverage.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'CertainTeed, GAF, and Owens Corning certified installers.',
+  title: 'Manufacturer Certified',
+  description: 'CertainTeed, GAF, and Owens Corning certified installers.',
   },
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews on Google.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews on Google.`,
   },
   {
     icon: Clock,
-    title: 'Veteran-Owned',
-    description: 'Proudly owned and operated by military veterans.',
+  title: 'Veteran-Owned',
+  description: 'Proudly owned and operated by military veterans.',
   },
 ];
 
@@ -123,32 +123,32 @@ const matthewsAreas = [
 const faqs = [
   {
     question: 'What should I look for when hiring roofers in Matthews NC?',
-    answer:
+  answer:
       'When hiring roofers in Matthews, look for proper licensing, insurance, manufacturer certifications, and a strong local reputation. Best Roofing Now is BBB A+ rated, fully licensed and insured, and certified by major manufacturers.',
   },
   {
     question: 'Are you licensed roofers in North Carolina?',
-    answer:
+  answer:
       'Yes, Best Roofing Now is a fully licensed roofing contractor in North Carolina. We maintain all required licenses and insurance to legally perform roofing work in Matthews and throughout the state.',
   },
   {
     question: 'Do you provide free estimates in Matthews?',
-    answer:
+  answer:
       'Yes, we provide completely free, no-obligation estimates for all roofing projects in Matthews NC. Our estimates include detailed scope of work and transparent pricing.',
   },
   {
     question: 'How quickly can you start a roofing project in Matthews?',
-    answer:
+  answer:
       'For most projects, we can begin within 1-2 weeks of contract signing. Emergency repairs are typically addressed within 24-48 hours. Matthews is just minutes from our Charlotte headquarters.',
   },
   {
     question: 'What warranties do your roofers offer?',
-    answer:
+  answer:
       'We offer manufacturer warranties up to 50 years on materials and our own workmanship warranty. As certified installers, we can offer enhanced warranty options from CertainTeed, GAF, and Owens Corning.',
   },
   {
     question: 'Do you handle permits for Matthews roofing projects?',
-    answer:
+  answer:
       'Yes, we handle all permitting requirements for roofing projects in Matthews and Mecklenburg County. Our team ensures all work meets local building codes and passes inspections.',
   },
 ];
@@ -256,7 +256,7 @@ export default function RoofersMatthewsNCPage() {
             </h2>
             <p className="text-gray text-lg">
               When you choose Best Roofing Now, you&apos;re choosing a team with the credentials,
-              experience, and commitment to quality that Matthews homeowners deserve.
+  experience, and commitment to quality that Matthews homeowners deserve.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

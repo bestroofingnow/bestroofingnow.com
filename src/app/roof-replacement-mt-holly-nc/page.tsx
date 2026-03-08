@@ -43,16 +43,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Mt Holly NC | Quality Installation | Best Roofing Now',
-    description:
+  description:
       'Professional roof replacement in Mt Holly NC. Premium materials, certified installers, industry-leading warranties. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/roof-replacement-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Roof replacement in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof replacement in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -62,23 +62,23 @@ export const metadata: Metadata = {
 const materials = [
   {
     title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 30-50 year warranties.',
-    popular: true,
+  description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 30-50 year warranties.',
+  popular: true,
   },
   {
     title: 'Metal Roofing',
-    description: 'Durable standing seam and metal shingle options with 50+ year lifespan and energy efficiency.',
-    popular: false,
+  description: 'Durable standing seam and metal shingle options with 50+ year lifespan and energy efficiency.',
+  popular: false,
   },
   {
     title: '3-Tab Shingles',
-    description: 'Affordable traditional asphalt shingles for budget-conscious homeowners.',
-    popular: false,
+  description: 'Affordable traditional asphalt shingles for budget-conscious homeowners.',
+  popular: false,
   },
   {
     title: 'Designer Shingles',
-    description: 'Premium luxury shingles that replicate slate or wood shake at a fraction of the cost.',
-    popular: false,
+  description: 'Premium luxury shingles that replicate slate or wood shake at a fraction of the cost.',
+  popular: false,
   },
 ];
 
@@ -96,32 +96,32 @@ const whyReplace = [
 const faqs = [
   {
     question: 'How much does roof replacement cost in Mt Holly NC?',
-    answer:
+  answer:
       'Roof replacement in Mt Holly typically costs $7,500 to $22,000 for most homes, depending on size, material, and complexity. Larger or more complex roofs may cost more. We provide detailed, transparent estimates with no hidden fees.',
   },
   {
     question: 'How long does a roof replacement take in Mt Holly?',
-    answer:
+  answer:
       'Most residential roof replacements in Mt Holly are completed in 1-3 days. Larger homes, complex roof designs, or unexpected issues (like decking replacement) may extend the timeline to 3-5 days.',
   },
   {
     question: 'What roofing materials do you recommend for Mt Holly homes?',
-    answer:
+  answer:
       'For most Mt Holly homes, we recommend architectural shingles from CertainTeed, GAF, or Owens Corning. They offer excellent durability, aesthetics, and value. Metal roofing is great for longevity, especially for properties near the river.',
   },
   {
     question: 'Do you remove the old roof or install over it?',
-    answer:
+  answer:
       'We always recommend and perform complete tear-off of the old roofing. This allows us to inspect the decking, ensure proper installation, and provide the best warranty coverage. Installing over old shingles can hide problems and void warranties.',
   },
   {
     question: 'What warranties do you offer on roof replacement?',
-    answer:
+  answer:
       'We offer manufacturer warranties up to 50 years on materials and our own workmanship warranty. As certified installers for CertainTeed, GAF, and Owens Corning, we can offer enhanced warranty programs with extended coverage.',
   },
   {
     question: 'Will you help with financing for roof replacement?',
-    answer:
+  answer:
       'Yes! We offer flexible financing options through our partners to make roof replacement affordable. Many homeowners qualify for low monthly payments. We also work with insurance companies on storm damage claims.',
   },
 ];

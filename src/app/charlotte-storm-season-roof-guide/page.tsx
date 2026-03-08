@@ -29,7 +29,6 @@ import {
   BreadcrumbSchema,
   FAQSchema,
   WebPageSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -60,16 +59,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Charlotte Storm Season Roof Protection Guide | Before, During & After',
-    description:
+  description:
       'The definitive storm season guide for Charlotte homeowners. Prepare your roof before storms, stay safe during, and recover fast after. Covers hail, wind, hurricane, tree, and ice damage.',
-    url: `${SITE_CONFIG.url}/charlotte-storm-season-roof-guide`,
-    type: 'article',
-    images: [
+  url: `${SITE_CONFIG.url}/charlotte-storm-season-roof-guide`,
+  type: 'article',
+  images: [
       {
         url: IMAGES.services.stormDamage,
-        width: 1200,
-        height: 630,
-        alt: 'Charlotte NC storm season roof protection guide',
+  width: 1200,
+  height: 630,
+  alt: 'Charlotte NC storm season roof protection guide',
       },
     ],
   },
@@ -78,42 +77,42 @@ export const metadata: Metadata = {
 const stormGuideFAQs = [
   {
     question: 'When is storm season in Charlotte NC?',
-    answer:
+  answer:
       'Charlotte\'s primary storm season runs from April through September, with severe thunderstorms, hail, and high winds most frequent during this window. Hurricane and tropical storm remnants typically affect the area from June through November, with peak activity in August and September. Winter ice storms can occur from December through February. Charlotte averages 45-50 thunderstorm days per year.',
   },
   {
     question: 'How do I prepare my roof for storm season in Charlotte?',
-    answer:
+  answer:
       'Start with a professional roof inspection in early spring to identify vulnerable areas like loose shingles, compromised flashing, and worn sealant around penetrations. Clean your gutters and install gutter guards. Trim tree branches within 10 feet of your roof. Check your attic ventilation and ensure ridge vents are secure. Document your roof\'s current condition with dated photographs for insurance purposes. Keep a roofing contractor\'s emergency number saved in your phone.',
   },
   {
     question: 'What should I do if my roof is damaged during a storm?',
-    answer:
+  answer:
       'First, ensure everyone in your home is safe. Do not go on the roof during or immediately after a storm. Assess damage from ground level only and photograph everything before making any temporary repairs. If there is an active leak, place buckets to catch water and move valuables away from affected areas. Contact a licensed roofing contractor for emergency tarping if the roof deck is exposed. File your insurance claim within 48 hours and never sign a contract with a storm chaser who knocks on your door.',
   },
   {
     question: 'Does homeowners insurance cover storm damage to my roof?',
-    answer:
+  answer:
       'Yes, standard homeowners insurance in Charlotte covers storm damage including hail, wind, fallen trees, and hurricane damage. These are classified as "Act of God" events. Most NC policies have a standard deductible ($500-$2,500), though some have separate wind/hurricane deductibles of 1-5% of dwelling coverage. File your claim promptly, provide thorough documentation, and have your roofing contractor present when the adjuster inspects your roof.',
   },
   {
     question: 'How much hail does Charlotte NC get each year?',
-    answer:
+  answer:
       'Charlotte typically experiences 3-5 significant hail events per year, primarily between March and June. The Mecklenburg County area sits in a moderate hail risk zone. Hail stones of one inch or larger cause the most roof damage and almost always warrant an insurance claim. Even smaller hailstones can cause cumulative damage to aging shingles by knocking off granules and cracking the underlying asphalt.',
   },
   {
     question: 'How can I tell if my roof has storm damage I cannot see from the ground?',
-    answer:
+  answer:
       'Many types of storm damage are invisible from ground level. Hail bruising on shingles, hairline cracks, broken seal strips, and loosened nails all require close inspection. After any significant storm event, schedule a free professional inspection with a licensed contractor. They will check for granule displacement, soft spots, dented metal components, and compromised flashing that you would not see without climbing on the roof.',
   },
   {
     question: 'Should I get a roof inspection after every storm in Charlotte?',
-    answer:
+  answer:
       'You do not need an inspection after every light rain, but you should schedule one after any storm that brings hail of any size, sustained winds over 50 mph, significant tree debris, or heavy ice accumulation. Also inspect after tropical storm or hurricane remnants pass through. Best Roofing Now offers free post-storm inspections for Charlotte homeowners, and early detection prevents small damage from becoming expensive problems.',
   },
   {
     question: 'How do I avoid storm chaser roofing scams in Charlotte?',
-    answer:
+  answer:
       'Never sign a contract with a roofer who goes door-to-door after a storm or pressures you to sign immediately. Verify that any contractor has a permanent local address, a North Carolina general contractor license, proper liability and workers compensation insurance, and verifiable local references. Check their BBB rating and Google reviews. A trustworthy contractor will never ask you to sign an Assignment of Benefits (AOB) or demand large upfront deposits before work begins.',
   },
 ];
@@ -143,7 +142,6 @@ export default function CharlotteStormSeasonRoofGuidePage() {
           { name: 'Storm Season Guide', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema includeRating={false} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Charlotte Storm Season Roof Protection Guide"
@@ -153,30 +151,30 @@ export default function CharlotteStormSeasonRoofGuidePage() {
         faqs={[
           {
             question: 'How do I protect my roof during Charlotte storm season?',
-            answer:
+  answer:
               'Protect your Charlotte roof during storm season by scheduling a professional inspection in early spring, repairing damaged flashing and loose shingles, cleaning gutters, trimming overhanging tree branches, and reviewing your insurance policy. Best Roofing Now offers free pre-season roof inspections for Charlotte homeowners. Call 704-605-6047 to schedule.',
-            speakableAnswer:
+  speakableAnswer:
               'Protect your roof by getting a spring inspection, repairing damage, cleaning gutters, and trimming trees. Best Roofing Now offers free pre-season inspections. Call 704-605-6047.',
           },
           {
             question: 'What types of storm damage affect Charlotte roofs?',
-            answer:
+  answer:
               'Charlotte roofs face hail damage (3-5 events per year), wind damage from 45-50 annual thunderstorms, hurricane and tropical storm remnants from June through November, fallen tree damage from Charlotte\'s dense canopy, and winter ice storms. Best Roofing Now repairs all storm damage types and handles insurance claims from start to finish.',
-            speakableAnswer:
+  speakableAnswer:
               'Charlotte roofs face hail, wind, hurricane remnants, fallen trees, and ice storms. Best Roofing Now repairs all types and handles insurance claims.',
           },
           {
             question: 'What should I do after a storm damages my Charlotte roof?',
-            answer:
+  answer:
               'After storm damage, stay safe and assess from ground level only. Photograph all damage before temporary repairs. File your insurance claim within 48 hours. Call Best Roofing Now at 704-605-6047 for emergency tarping and a free damage inspection. We meet with your insurance adjuster and handle the entire claim process.',
-            speakableAnswer:
+  speakableAnswer:
               'After storm damage, stay safe, photograph everything, and file your insurance claim within 48 hours. Call Best Roofing Now at 704-605-6047 for emergency help.',
           },
           {
             question: 'Who handles storm damage roof insurance claims in Charlotte NC?',
-            answer:
+  answer:
               'Best Roofing Now is Charlotte\'s trusted storm damage and insurance claim specialist. We provide free storm damage inspections, detailed documentation for your claim, meet with insurance adjusters on your behalf, and handle the entire process. Over 500 Charlotte homes restored. BBB A+ rated with a perfect 5.0 Google rating.',
-            speakableAnswer:
+  speakableAnswer:
               'Best Roofing Now handles storm damage insurance claims in Charlotte. We inspect, document, meet with adjusters, and manage the entire process. Call 704-605-6047.',
           },
         ]}
@@ -267,7 +265,7 @@ export default function CharlotteStormSeasonRoofGuidePage() {
             <div className="text-gray text-lg space-y-4 mb-10">
               <p>
                 Charlotte sits in one of the most active severe weather corridors in the Southeast,
-                and your roof bears the brunt of every storm that rolls through Mecklenburg County.
+  and your roof bears the brunt of every storm that rolls through Mecklenburg County.
                 The Charlotte metro area averages 45-50 thunderstorm days per year, with 3-5 of those
                 producing significant hail large enough to damage shingles, gutters, and metal roof
                 components. Annual rainfall totals around 43 inches, and much of it arrives during
@@ -383,69 +381,69 @@ export default function CharlotteStormSeasonRoofGuidePage() {
               {[
                 {
                   icon: Eye,
-                  title: 'Schedule a Professional Roof Inspection',
-                  description:
+  title: 'Schedule a Professional Roof Inspection',
+  description:
                     'Have a licensed roofer inspect for loose shingles, damaged flashing, worn sealant, and signs of previous unrepaired damage.',
-                  priority: 'Essential',
-                  link: '/spring-roof-inspection-charlotte-nc',
-                  linkText: 'Schedule Inspection',
+  priority: 'Essential',
+  link: '/spring-roof-inspection-charlotte-nc',
+  linkText: 'Schedule Inspection',
                 },
                 {
                   icon: Droplets,
-                  title: 'Clean Gutters and Downspouts',
-                  description:
+  title: 'Clean Gutters and Downspouts',
+  description:
                     'Clear all debris to ensure proper drainage during heavy rainfall. Backed-up gutters cause water intrusion under shingles.',
-                  priority: 'Essential',
-                  link: '/gutter-services',
-                  linkText: 'Gutter Services',
+  priority: 'Essential',
+  link: '/gutter-services',
+  linkText: 'Gutter Services',
                 },
                 {
                   icon: Shield,
-                  title: 'Install Gutter Guards',
-                  description:
+  title: 'Install Gutter Guards',
+  description:
                     'Reduce ongoing maintenance and prevent storm debris from clogging your drainage system during severe weather.',
-                  priority: 'Recommended',
-                  link: '/gutter-guards-charlotte-nc',
-                  linkText: 'Gutter Guards',
+  priority: 'Recommended',
+  link: '/gutter-guards-charlotte-nc',
+  linkText: 'Gutter Guards',
                 },
                 {
                   icon: TreePine,
-                  title: 'Trim Trees and Remove Dead Branches',
-                  description:
+  title: 'Trim Trees and Remove Dead Branches',
+  description:
                     'Cut branches within 10 feet of your roof. Dead trees should be evaluated by a certified arborist and removed before storm season.',
-                  priority: 'Essential',
+  priority: 'Essential',
                 },
                 {
                   icon: Wrench,
-                  title: 'Repair Vulnerable Areas',
-                  description:
+  title: 'Repair Vulnerable Areas',
+  description:
                     'Fix loose flashing, replace missing shingles, reseal cracked caulk around vents and pipes, and secure ridge caps.',
-                  priority: 'Essential',
-                  link: '/roof-maintenance-charlotte-nc',
-                  linkText: 'Roof Maintenance',
+  priority: 'Essential',
+  link: '/roof-maintenance-charlotte-nc',
+  linkText: 'Roof Maintenance',
                 },
                 {
                   icon: FileText,
-                  title: 'Review Insurance Policy and Document Your Roof',
-                  description:
+  title: 'Review Insurance Policy and Document Your Roof',
+  description:
                     'Understand your deductible and coverage limits. Take dated photos of your roof condition for insurance records.',
-                  priority: 'Essential',
+  priority: 'Essential',
                 },
                 {
                   icon: Snowflake,
-                  title: 'Prepare for Winter Ice Events',
-                  description:
+  title: 'Prepare for Winter Ice Events',
+  description:
                     'Ensure proper attic insulation and ventilation to prevent ice dams. Check that heat cables are functional if installed.',
-                  priority: 'Recommended',
-                  link: '/ice-dam-prevention-charlotte-nc',
-                  linkText: 'Ice Dam Prevention',
+  priority: 'Recommended',
+  link: '/ice-dam-prevention-charlotte-nc',
+  linkText: 'Ice Dam Prevention',
                 },
                 {
                   icon: Phone,
-                  title: 'Build Your Emergency Contact List',
-                  description:
+  title: 'Build Your Emergency Contact List',
+  description:
                     'Save your insurance agent, policy number, and a trusted local roofing contractor in your phone before you need them.',
-                  priority: 'Essential',
+  priority: 'Essential',
                 },
               ].map((item, index) => (
                 <div
@@ -526,7 +524,7 @@ export default function CharlotteStormSeasonRoofGuidePage() {
               <p>
                 When severe weather strikes Charlotte, your primary concern must be the safety of
                 everyone inside your home, not your roof. Move to an interior room on the lowest floor,
-                away from windows and exterior walls. If you live in a manufactured home or feel your
+  away from windows and exterior walls. If you live in a manufactured home or feel your
                 structure is at risk, evacuate to a designated shelter before the storm arrives. Keep
                 battery-powered radios or a charged phone tuned to local emergency alerts from the
                 National Weather Service. Charlotte-area tornado warnings require immediate action:
@@ -536,9 +534,9 @@ export default function CharlotteStormSeasonRoofGuidePage() {
               <p>
                 Under no circumstances should you go on your roof during a storm, even during a lull
                 or what appears to be the passing of the worst weather. Wind gusts can return suddenly,
-                wet roof surfaces are dangerously slippery, and lightning remains a lethal threat until
+  wet roof surfaces are dangerously slippery, and lightning remains a lethal threat until
                 30 minutes after the last thunder. If you hear the sound of your roof failing — cracking,
-                ripping, or see water entering from above — move everyone away from that area
+  ripping, or see water entering from above — move everyone away from that area
                 immediately and place buckets or containers to catch water. Do not attempt temporary
                 repairs until the storm has completely passed and conditions are safe. If a tree falls
                 through your roof creating an open hole, move to the opposite side of the home and call
@@ -649,45 +647,45 @@ export default function CharlotteStormSeasonRoofGuidePage() {
               {[
                 {
                   step: 1,
-                  title: 'Ensure Safety First',
-                  description:
+  title: 'Ensure Safety First',
+  description:
                     'Wait for the all-clear from authorities. Watch for downed power lines and unstable trees. Check on family members and neighbors before assessing property.',
-                  icon: Shield,
+  icon: Shield,
                 },
                 {
                   step: 2,
-                  title: 'Assess Damage from Ground Level',
-                  description:
+  title: 'Assess Damage from Ground Level',
+  description:
                     'Use binoculars to inspect your roof from the ground. Look for missing shingles, exposed decking, damaged gutters, and debris. Never climb on a wet or damaged roof.',
-                  icon: Eye,
+  icon: Eye,
                 },
                 {
                   step: 3,
-                  title: 'Photograph All Damage',
-                  description:
+  title: 'Photograph All Damage',
+  description:
                     'Take wide-angle and close-up photos of every area of damage before any cleanup. Document interior water damage, fallen debris, and damage to gutters and siding.',
-                  icon: FileText,
+  icon: FileText,
                 },
                 {
                   step: 4,
-                  title: 'Prevent Further Damage',
-                  description:
+  title: 'Prevent Further Damage',
+  description:
                     'If safe, tarp exposed areas to prevent water intrusion. Place buckets under leaks. Your insurance policy requires you to mitigate further damage. Keep all receipts.',
-                  icon: Home,
+  icon: Home,
                 },
                 {
                   step: 5,
-                  title: 'File Your Insurance Claim Within 48 Hours',
-                  description:
+  title: 'File Your Insurance Claim Within 48 Hours',
+  description:
                     'Contact your insurer promptly. Provide your documentation and get a claim number. Ask about separate wind or hurricane deductibles that may apply.',
-                  icon: FileText,
+  icon: FileText,
                 },
                 {
                   step: 6,
-                  title: 'Call a Trusted Local Roofing Contractor',
-                  description:
+  title: 'Call a Trusted Local Roofing Contractor',
+  description:
                     'Schedule a free professional inspection with a licensed, locally established contractor. Avoid storm chasers. Your contractor should attend the adjuster meeting.',
-                  icon: Phone,
+  icon: Phone,
                 },
               ].map((item, index) => (
                 <div key={index} className="flex gap-4 items-start bg-light rounded-xl p-5">
@@ -778,9 +776,9 @@ export default function CharlotteStormSeasonRoofGuidePage() {
                 Charlotte&apos;s severe thunderstorms regularly produce straight-line winds exceeding
                 60 mph, and these events cause some of the most visible roof damage in the region.
                 High winds attack your roof&apos;s most vulnerable points first: ridge caps, hip shingles,
-                rake edges, and any area where shingles were improperly nailed or have deteriorated seal
+  rake edges, and any area where shingles were improperly nailed or have deteriorated seal
                 strips. When wind gets under a shingle tab, it can peel entire sections off in seconds,
-                exposing the underlayment or bare decking to rain. Wind damage often creates a cascading
+  exposing the underlayment or bare decking to rain. Wind damage often creates a cascading
                 effect, where missing shingles allow water infiltration that damages the decking, which
                 then weakens the attachment of surrounding shingles. Even if shingles are not completely
                 torn off, high winds break the adhesive seal strips that hold shingle tabs flat, and once
@@ -811,7 +809,7 @@ export default function CharlotteStormSeasonRoofGuidePage() {
                 several hours fatigue shingle adhesion far more than brief gusts, while continuous
                 rainfall at rates exceeding 2-3 inches per hour finds every vulnerability in your
                 roof&apos;s defense. Saturated soil also destabilizes Charlotte&apos;s mature hardwoods,
-                causing widespread tree falls that are the leading cause of catastrophic roof damage
+  causing widespread tree falls that are the leading cause of catastrophic roof damage
                 during tropical events. Hurricane Hugo (1989) produced 80+ mph gusts in Charlotte and
                 caused billions in damage. Florence (2018) brought flooding rains that tested every
                 roof in Mecklenburg County. Your best preparation involves a professional inspection
@@ -844,7 +842,7 @@ export default function CharlotteStormSeasonRoofGuidePage() {
                 even the roof trusses or rafters, requiring structural engineering assessment before
                 repairs can begin. Emergency response is critical because an open hole in your roof
                 allows water to pour directly into your living space, damaging ceilings, insulation,
-                electrical systems, and personal property. If a tree falls on your roof, evacuate the
+  electrical systems, and personal property. If a tree falls on your roof, evacuate the
                 affected area immediately, call 911 if the structure feels unstable, and contact a
                 roofer for emergency tarping as soon as conditions are safe. Insurance typically covers
                 tree damage plus the cost of tree removal from the structure.
@@ -917,7 +915,7 @@ export default function CharlotteStormSeasonRoofGuidePage() {
                 important step in the entire process is the on-site adjuster meeting, and having your
                 roofing contractor present during this inspection is critical. A trained roofer can
                 identify damage patterns that adjusters sometimes miss, particularly hail bruising,
-                compromised seal strips, and damage to less visible components like valley metal and
+  compromised seal strips, and damage to less visible components like valley metal and
                 pipe boot flashings.
               </p>
               <p>
@@ -926,7 +924,7 @@ export default function CharlotteStormSeasonRoofGuidePage() {
                 as &quot;Act of God&quot; events. Your standard deductible applies, though some North
                 Carolina policies carry separate wind or hurricane deductibles of 1-5% of your dwelling
                 coverage amount. Cosmetic damage exclusions are becoming more common in NC policies,
-                so review your policy language carefully. If your claim is denied or underpaid, your
+  so review your policy language carefully. If your claim is denied or underpaid, your
                 contractor can supplement with additional documentation, and you have the right to
                 request re-inspection or hire a public adjuster. Best Roofing Now has helped hundreds
                 of Charlotte homeowners navigate the insurance process, and many clients who were
@@ -1007,23 +1005,23 @@ export default function CharlotteStormSeasonRoofGuidePage() {
               {[
                 {
                   city: 'Charlotte',
-                  href: '/storm-damage-roof-repair-charlotte-nc',
+  href: '/storm-damage-roof-repair-charlotte-nc',
                 },
                 {
                   city: 'Huntersville',
-                  href: '/storm-damage-roof-repair-huntersville-nc',
+  href: '/storm-damage-roof-repair-huntersville-nc',
                 },
                 {
                   city: 'Mooresville',
-                  href: '/storm-damage-roof-repair-mooresville-nc',
+  href: '/storm-damage-roof-repair-mooresville-nc',
                 },
                 {
                   city: 'Cornelius',
-                  href: '/storm-damage-roof-repair-cornelius-nc',
+  href: '/storm-damage-roof-repair-cornelius-nc',
                 },
                 {
                   city: 'Denver',
-                  href: '/storm-damage-roof-repair-denver-nc',
+  href: '/storm-damage-roof-repair-denver-nc',
                 },
               ].map((location, index) => (
                 <Link

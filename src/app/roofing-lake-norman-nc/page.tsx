@@ -23,7 +23,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -65,16 +64,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Lake Norman Roofing | LKN Roofers | Best Roofing Now',
-    description:
+  description:
       'Lake Norman\'s trusted roofing company. Serving Cornelius, Davidson, Mooresville & Huntersville with 500+ local projects. Free estimates & storm damage experts.',
-    url: `${SITE_CONFIG.url}/roofing-lake-norman-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-lake-norman-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Lake Norman roofing services - LKN roofers serving waterfront communities',
+  width: 1200,
+  height: 630,
+  alt: 'Lake Norman roofing services - LKN roofers serving waterfront communities',
       },
     ],
   },
@@ -84,45 +83,45 @@ export const metadata: Metadata = {
 const lakeNormanCommunities = [
   {
     name: 'Cornelius',
-    slug: 'cornelius-nc',
-    description: 'Jetton Road, The Peninsula, Antiquity neighborhoods',
-    population: '32,000+',
-    services: ['Residential', 'Waterfront', 'Storm Damage'],
+  slug: 'cornelius-nc',
+  description: 'Jetton Road, The Peninsula, Antiquity neighborhoods',
+  population: '32,000+',
+  services: ['Residential', 'Waterfront', 'Storm Damage'],
   },
   {
     name: 'Davidson',
-    slug: 'davidson-nc',
-    description: 'River Run, Westmoreland, Davidson College area',
-    population: '14,000+',
-    services: ['Historic Homes', 'Metal Roofing', 'Luxury'],
+  slug: 'davidson-nc',
+  description: 'River Run, Westmoreland, Davidson College area',
+  population: '14,000+',
+  services: ['Historic Homes', 'Metal Roofing', 'Luxury'],
   },
   {
     name: 'Mooresville',
-    slug: 'mooresville-nc',
-    description: 'The Point, Brawley School, Race City USA',
-    population: '50,000+',
-    services: ['Commercial', 'Residential', 'Storm Damage'],
+  slug: 'mooresville-nc',
+  description: 'The Point, Brawley School, Race City USA',
+  population: '50,000+',
+  services: ['Commercial', 'Residential', 'Storm Damage'],
   },
   {
     name: 'Huntersville',
-    slug: 'huntersville-nc',
-    description: 'Birkdale Village, Northcross, Skybrook',
-    population: '60,000+',
-    services: ['Residential', 'Commercial', 'Emergency'],
+  slug: 'huntersville-nc',
+  description: 'Birkdale Village, Northcross, Skybrook',
+  population: '60,000+',
+  services: ['Residential', 'Commercial', 'Emergency'],
   },
   {
     name: 'Denver',
-    slug: 'denver-nc',
-    description: 'Westport, lakefront properties, rural estates',
-    population: '3,500+',
-    services: ['Waterfront', 'Metal Roofing', 'New Construction'],
+  slug: 'denver-nc',
+  description: 'Westport, lakefront properties, rural estates',
+  population: '3,500+',
+  services: ['Waterfront', 'Metal Roofing', 'New Construction'],
   },
   {
     name: 'Sherrills Ford',
-    slug: 'sherrills-ford-nc',
-    description: 'Lake Norman south shore communities',
-    population: '5,000+',
-    services: ['Residential', 'Waterfront', 'Storm Damage'],
+  slug: 'sherrills-ford-nc',
+  description: 'Lake Norman south shore communities',
+  population: '5,000+',
+  services: ['Residential', 'Waterfront', 'Storm Damage'],
   },
 ];
 
@@ -130,39 +129,39 @@ const lakeNormanCommunities = [
 const lknServices = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roof replacement and repair for Lake Norman homes. GAF, CertainTeed, and Owens Corning certified installations.',
-    href: '/residential-roofing-charlotte-nc',
+  title: 'Residential Roofing',
+  description: 'Complete roof replacement and repair for Lake Norman homes. GAF, CertainTeed, and Owens Corning certified installations.',
+  href: '/residential-roofing-charlotte-nc',
   },
   {
     icon: Waves,
-    title: 'Waterfront Home Roofing',
-    description: 'Specialized roofing for lakefront properties. Wind-resistant, impact-rated materials designed for lakeside exposure.',
-    href: '/luxury-roofing-lake-norman-nc',
+  title: 'Waterfront Home Roofing',
+  description: 'Specialized roofing for lakefront properties. Wind-resistant, impact-rated materials designed for lakeside exposure.',
+  href: '/luxury-roofing-lake-norman-nc',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, and metal roofing for Lake Norman businesses. Retail centers, restaurants, and office buildings.',
-    href: '/commercial-roofing-mooresville-nc',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, and metal roofing for Lake Norman businesses. Retail centers, restaurants, and office buildings.',
+  href: '/commercial-roofing-mooresville-nc',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for storm damage, leaks, and wear. Same-day emergency service available 24/7.',
-    href: '/roof-repair-huntersville-nc',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for storm damage, leaks, and wear. Same-day emergency service available 24/7.',
+  href: '/roof-repair-huntersville-nc',
   },
   {
     icon: Shield,
-    title: 'Storm Damage Restoration',
-    description: 'Insurance claim experts for hail and wind damage. We handle the entire claims process for Lake Norman homeowners.',
-    href: '/storm-damage-roof-repair-mooresville-nc',
+  title: 'Storm Damage Restoration',
+  description: 'Insurance claim experts for hail and wind damage. We handle the entire claims process for Lake Norman homeowners.',
+  href: '/storm-damage-roof-repair-mooresville-nc',
   },
   {
     icon: Award,
-    title: 'Metal Roofing',
-    description: 'Standing seam and metal shingle roofing. Perfect for Lake Norman\'s weather with 50+ year lifespans.',
-    href: '/metal-roofing-mooresville-nc',
+  title: 'Metal Roofing',
+  description: 'Standing seam and metal shingle roofing. Perfect for Lake Norman\'s weather with 50+ year lifespans.',
+  href: '/metal-roofing-mooresville-nc',
   },
 ];
 
@@ -170,27 +169,27 @@ const lknServices = [
 const lakeNormanFAQs = [
   {
     question: 'What is the best roofing material for Lake Norman waterfront homes?',
-    answer: 'For Lake Norman waterfront homes, we recommend wind-resistant materials rated for 130+ MPH. Standing seam metal roofing is excellent for lakefront exposure, as is Class 4 impact-resistant shingles like GAF HDZ. These materials withstand the unique weather patterns around the lake while providing excellent longevity and curb appeal.',
+  answer: 'For Lake Norman waterfront homes, we recommend wind-resistant materials rated for 130+ MPH. Standing seam metal roofing is excellent for lakefront exposure, as is Class 4 impact-resistant shingles like GAF HDZ. These materials withstand the unique weather patterns around the lake while providing excellent longevity and curb appeal.',
   },
   {
     question: 'How much does a new roof cost in Lake Norman NC?',
-    answer: 'A new roof in Lake Norman typically costs between $10,000 and $30,000 for most homes. The wide range accounts for Lake Norman\'s diverse housing stock, from standard homes in Huntersville to large waterfront estates in The Peninsula. Best Roofing Now provides free estimates with transparent pricing for all Lake Norman communities.',
+  answer: 'A new roof in Lake Norman typically costs between $10,000 and $30,000 for most homes. The wide range accounts for Lake Norman\'s diverse housing stock, from standard homes in Huntersville to large waterfront estates in The Peninsula. Best Roofing Now provides free estimates with transparent pricing for all Lake Norman communities.',
   },
   {
     question: 'Do you serve all Lake Norman communities?',
-    answer: 'Yes! Best Roofing Now serves the entire Lake Norman area including Cornelius, Davidson, Mooresville, Huntersville, Denver, Sherrills Ford, and Terrell. We\'ve completed over 200 roofing projects in the LKN area and understand the unique needs of lakefront and lake-area homes.',
+  answer: 'Yes! Best Roofing Now serves the entire Lake Norman area including Cornelius, Davidson, Mooresville, Huntersville, Denver, Sherrills Ford, and Terrell. We\'ve completed over 200 roofing projects in the LKN area and understand the unique needs of lakefront and lake-area homes.',
   },
   {
     question: 'How quickly can you respond to storm damage in Lake Norman?',
-    answer: 'Best Roofing Now offers 24/7 emergency response for Lake Norman storm damage. We typically arrive within 2-4 hours for emergency tarping and provide full damage assessments within 24 hours. As local Lake Norman roofers, we\'re positioned to respond faster than Charlotte-based companies.',
+  answer: 'Best Roofing Now offers 24/7 emergency response for Lake Norman storm damage. We typically arrive within 2-4 hours for emergency tarping and provide full damage assessments within 24 hours. As local Lake Norman roofers, we\'re positioned to respond faster than Charlotte-based companies.',
   },
   {
     question: 'Are you licensed for roofing in both NC counties around Lake Norman?',
-    answer: 'Yes, Best Roofing Now is fully licensed, bonded, and insured to perform roofing work in both Mecklenburg County and Iredell County. This covers all Lake Norman communities including Cornelius, Davidson (Mecklenburg) and Mooresville, Troutman (Iredell).',
+  answer: 'Yes, Best Roofing Now is fully licensed, bonded, and insured to perform roofing work in both Mecklenburg County and Iredell County. This covers all Lake Norman communities including Cornelius, Davidson (Mecklenburg) and Mooresville, Troutman (Iredell).',
   },
   {
     question: 'What roofing warranties do you offer for Lake Norman homes?',
-    answer: 'As a GAF Master Elite and CertainTeed ShingleMaster contractor, we offer enhanced warranties up to 50 years on Lake Norman installations. This includes the GAF Golden Pledge warranty and CertainTeed SureStart PLUS coverage, plus our own 10-year workmanship guarantee.',
+  answer: 'As a GAF Master Elite and CertainTeed ShingleMaster contractor, we offer enhanced warranties up to 50 years on Lake Norman installations. This includes the GAF Golden Pledge warranty and CertainTeed SureStart PLUS coverage, plus our own 10-year workmanship guarantee.',
   },
 ];
 
@@ -204,7 +203,6 @@ export default async function LakeNormanRoofingPage() {
           { name: 'Lake Norman Roofing', url: `${SITE_CONFIG.url}/roofing-lake-norman-nc` },
         ]}
       />
-      <LocalBusinessSchema includeRating={true} />
       <FAQSchema faqs={lakeNormanFAQs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`}
@@ -279,7 +277,7 @@ export default async function LakeNormanRoofingPage() {
             </h2>
             <p className="text-gray-600 text-lg">
               From the waterfront estates of The Peninsula to the charming streets of Davidson,
-              we&apos;re the LKN roofers trusted by homeowners across the Lake Norman region.
+  we&apos;re the LKN roofers trusted by homeowners across the Lake Norman region.
             </p>
           </div>
 
@@ -329,7 +327,7 @@ export default async function LakeNormanRoofingPage() {
             </h2>
             <p className="text-gray-600 text-lg">
               Explore our completed roofing projects across Mooresville, Cornelius, Davidson,
-              Huntersville, Denver, and Sherrills Ford. Each pin represents a satisfied homeowner.
+  Huntersville, Denver, and Sherrills Ford. Each pin represents a satisfied homeowner.
             </p>
           </div>
 

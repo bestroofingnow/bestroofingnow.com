@@ -26,7 +26,7 @@ export const SITE_CONFIG = {
   nextdoorRecommendations: 8,
   customerCount: 500,
   roofsInstalled: 500,
-  yearsInBusiness: 5,
+  yearsInBusiness: 6,
   bbbRating: 'A+',
   certifications: [
     'CertainTeed ShingleMaster',
@@ -811,7 +811,7 @@ export const ROOFING_COMPARISONS = [
 export const ROOFING_GUIDES = [
   {
     slug: 'roof-replacement-cost',
-    title: 'Roof Replacement Cost Guide 2025',
+    title: 'Roof Replacement Cost Guide 2026',
     shortTitle: 'Cost Guide',
     description: 'Complete guide to roof replacement costs in Charlotte NC. Learn what factors affect pricing and how to budget for your new roof.',
     keywords: ['roof replacement cost Charlotte', 'new roof cost NC', 'roof replacement estimate', 'how much does roof cost'],
@@ -2613,7 +2613,7 @@ export const FEATURED_SNIPPET_CONTENT = {
   // Table snippets
   tables: [
     {
-      title: 'Average Roof Replacement Costs in Charlotte NC (2025)',
+      title: 'Average Roof Replacement Costs in Charlotte NC (2026)',
       headers: ['Home Size', 'Asphalt Shingles', 'Metal Roofing', 'Premium Materials'],
       rows: [
         ['1,500 sq ft', '$8,000-$12,000', '$15,000-$22,000', '$20,000-$30,000'],

@@ -40,11 +40,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Installation Matthews NC | Seamless Gutters | Best Roofing Now',
-    description:
+  description:
       'Professional gutter installation in Matthews NC. Seamless aluminum, copper, and steel gutters with gutter guard options.',
-    url: `${SITE_CONFIG.url}/gutter-installation-matthews-nc`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter installation in Matthews NC' }],
+  url: `${SITE_CONFIG.url}/gutter-installation-matthews-nc`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter installation in Matthews NC' }],
   },
 };
 

@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Emergency Roof Tarping Charlotte NC | 24/7 Service | Best Roofing Now',
-    description: '24/7 emergency roof tarping to protect your home from further damage.',
-    url: `${SITE_CONFIG.url}/emergency-roof-tarping`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Emergency roof tarping in Charlotte NC' }],
+  description: '24/7 emergency roof tarping to protect your home from further damage.',
+  url: `${SITE_CONFIG.url}/emergency-roof-tarping`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Emergency roof tarping in Charlotte NC' }],
   },
 };
 
@@ -90,8 +90,8 @@ export default function EmergencyRoofTarpingPage() {
       <ServiceSchema
         service={{
           title: "Emergency Roof Tarping",
-          description: "24/7 emergency roof tarping services in Charlotte NC to protect your home from further damage.",
-          slug: "emergency-roof-tarping",
+  description: "24/7 emergency roof tarping services in Charlotte NC to protect your home from further damage.",
+  slug: "emergency-roof-tarping",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/emergency-roof-tarping`} pageName="Emergency Roof Tarping Charlotte NC" city="Charlotte" />

@@ -35,7 +35,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -64,16 +63,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Auto Dealership Roofing Charlotte NC | Showroom & Service Center Roofs | Best Roofing Now',
-    description:
+  description:
       'Expert auto dealership roofing contractors in Charlotte NC for showrooms, service bays, body shops & car washes. Curb appeal specialists with quick turnaround and free estimates.',
-    url: `${SITE_CONFIG.url}/auto-dealership-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/auto-dealership-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.office,
-        width: 1200,
-        height: 630,
-        alt: 'Auto dealership roofing Charlotte NC - Best Roofing Now dealership roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Auto dealership roofing Charlotte NC - Best Roofing Now dealership roofing project',
       },
     ],
   },
@@ -83,39 +82,39 @@ export const metadata: Metadata = {
 const dealershipRoofingSystems = [
   {
     icon: Wrench,
-    title: 'Standing Seam Metal Roofing',
-    description: 'The premier choice for auto dealership showrooms. Clean architectural lines enhance curb appeal, support brand image, and provide 50+ years of low-maintenance durability.',
-    href: '/services/metal-roofing',
+  title: 'Standing Seam Metal Roofing',
+  description: 'The premier choice for auto dealership showrooms. Clean architectural lines enhance curb appeal, support brand image, and provide 50+ years of low-maintenance durability.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient white membrane ideal for large service bay roofs and parts departments. Reduces cooling costs and provides reliable waterproofing for vehicle inventory below.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient white membrane ideal for large service bay roofs and parts departments. Reduces cooling costs and provides reliable waterproofing for vehicle inventory below.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Modified Bitumen Roofing',
-    description: 'Tough, multi-layer system perfect for service bays and body shops that experience heavy foot traffic, chemical exposure, and equipment loads on the roof.',
-    href: '/services/commercial-roofing',
+  title: 'Modified Bitumen Roofing',
+  description: 'Tough, multi-layer system perfect for service bays and body shops that experience heavy foot traffic, chemical exposure, and equipment loads on the roof.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Rubber Roofing',
-    description: 'Cost-effective rubber membrane for used car lot offices, detail shops, and support buildings. Excellent weather resistance with a proven track record in Charlotte&apos;s climate.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Cost-effective rubber membrane for used car lot offices, detail shops, and support buildings. Excellent weather resistance with a proven track record in Charlotte&apos;s climate.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Traditional multi-ply system offering exceptional puncture resistance for service centers with rooftop HVAC units, exhaust systems, and mechanical equipment.',
-    href: '/services/commercial-roofing',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Traditional multi-ply system offering exceptional puncture resistance for service centers with rooftop HVAC units, exhaust systems, and mechanical equipment.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Roof Coatings & Restoration',
-    description: 'Extend the life of existing dealership roofs without the disruption of a full replacement. Reflective coatings reduce energy bills and refresh building appearance.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings & Restoration',
+  description: 'Extend the life of existing dealership roofs without the disruption of a full replacement. Reflective coatings reduce energy bills and refresh building appearance.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -123,33 +122,33 @@ const dealershipRoofingSystems = [
 const dealershipBuildingTypes = [
   {
     icon: Car,
-    title: 'New Car Dealerships',
-    description: 'Roofing solutions for brand-new and OEM-certified dealerships, including showroom buildings that must meet manufacturer image standards and brand design guidelines.',
+  title: 'New Car Dealerships',
+  description: 'Roofing solutions for brand-new and OEM-certified dealerships, including showroom buildings that must meet manufacturer image standards and brand design guidelines.',
   },
   {
     icon: DollarSign,
-    title: 'Used Car Lots',
-    description: 'Cost-effective roofing for independent used car dealerships, sales offices, and covered display areas along Charlotte&apos;s major auto corridors.',
+  title: 'Used Car Lots',
+  description: 'Cost-effective roofing for independent used car dealerships, sales offices, and covered display areas along Charlotte&apos;s major auto corridors.',
   },
   {
     icon: Wrench,
-    title: 'Service & Repair Bays',
-    description: 'Heavy-duty roofing for high-bay service departments with proper ventilation integration, exhaust system penetrations, and resistance to oil and chemical exposure.',
+  title: 'Service & Repair Bays',
+  description: 'Heavy-duty roofing for high-bay service departments with proper ventilation integration, exhaust system penetrations, and resistance to oil and chemical exposure.',
   },
   {
     icon: Paintbrush,
-    title: 'Body Shops & Paint Facilities',
-    description: 'Specialized roofing for collision repair centers and paint booths requiring chemical-resistant membranes and proper ventilation system integration.',
+  title: 'Body Shops & Paint Facilities',
+  description: 'Specialized roofing for collision repair centers and paint booths requiring chemical-resistant membranes and proper ventilation system integration.',
   },
   {
     icon: Sparkles,
-    title: 'Car Washes & Detail Centers',
-    description: 'Moisture-resistant roofing systems for high-humidity environments, including tunnel car washes, self-serve bays, and detailing facilities.',
+  title: 'Car Washes & Detail Centers',
+  description: 'Moisture-resistant roofing systems for high-humidity environments, including tunnel car washes, self-serve bays, and detailing facilities.',
   },
   {
     icon: Layers,
-    title: 'Tire & Auto Parts Stores',
-    description: 'Reliable roofing for standalone tire shops, auto parts retailers, and quick-service centers like oil change and brake shops throughout the Charlotte area.',
+  title: 'Tire & Auto Parts Stores',
+  description: 'Reliable roofing for standalone tire shops, auto parts retailers, and quick-service centers like oil change and brake shops throughout the Charlotte area.',
   },
 ];
 
@@ -157,33 +156,33 @@ const dealershipBuildingTypes = [
 const whyChooseUs = [
   {
     icon: Eye,
-    title: 'Curb Appeal Specialists',
-    description: 'We understand that your showroom roof is part of your brand image. We deliver roofing that enhances your dealership&apos;s appearance and helps attract customers.',
+  title: 'Curb Appeal Specialists',
+  description: 'We understand that your showroom roof is part of your brand image. We deliver roofing that enhances your dealership&apos;s appearance and helps attract customers.',
   },
   {
     icon: Timer,
-    title: 'Quick Turnaround',
-    description: 'Every day with a closed showroom or service bay is lost revenue. We offer accelerated timelines, weekend work, and phased installations to keep your business open.',
+  title: 'Quick Turnaround',
+  description: 'Every day with a closed showroom or service bay is lost revenue. We offer accelerated timelines, weekend work, and phased installations to keep your business open.',
   },
   {
     icon: Wind,
-    title: 'Service Bay Ventilation Experts',
-    description: 'Experienced with exhaust fan integration, ventilation ductwork penetrations, and air handling systems required by service departments and body shops.',
+  title: 'Service Bay Ventilation Experts',
+  description: 'Experienced with exhaust fan integration, ventilation ductwork penetrations, and air handling systems required by service departments and body shops.',
   },
   {
     icon: Award,
-    title: 'OEM Brand Standards',
-    description: 'Familiar with manufacturer facility image programs from major brands. We deliver roofing that meets the design guidelines your franchise agreement requires.',
+  title: 'OEM Brand Standards',
+  description: 'Familiar with manufacturer facility image programs from major brands. We deliver roofing that meets the design guidelines your franchise agreement requires.',
   },
   {
     icon: DollarSign,
-    title: 'Revenue-Conscious Scheduling',
-    description: 'We schedule work to minimize impact during your peak sales periods and coordinate with your managers to protect vehicle inventory from debris and dust.',
+  title: 'Revenue-Conscious Scheduling',
+  description: 'We schedule work to minimize impact during your peak sales periods and coordinate with your managers to protect vehicle inventory from debris and dust.',
   },
   {
     icon: Users,
-    title: 'Multi-Location Experience',
-    description: 'We work with dealership groups operating multiple locations across Charlotte, providing consistent quality and pricing for all your facilities.',
+  title: 'Multi-Location Experience',
+  description: 'We work with dealership groups operating multiple locations across Charlotte, providing consistent quality and pricing for all your facilities.',
   },
 ];
 
@@ -219,42 +218,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What is the best roofing material for an auto dealership showroom in Charlotte?',
-    answer:
+  answer:
       'For auto dealership showrooms in Charlotte, standing seam metal roofing is the top choice. It delivers the clean, modern architectural lines that enhance curb appeal and brand image — critical for attracting customers. Standing seam metal also meets OEM facility image standards from manufacturers like Ford, Toyota, Honda, and BMW. It offers 50+ years of durability, excellent wind resistance for Charlotte storms, and virtually no maintenance. For showroom roofs visible from the road, the aesthetic upgrade pays for itself in customer perception and brand consistency.',
   },
   {
     question: 'How much does auto dealership roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Auto dealership roof replacement costs in Charlotte depend on the building type and material. Showroom roofs using standing seam metal typically run $10-$18 per square foot installed. Service bay and parts department flat roofs using TPO or modified bitumen cost $6-$12 per square foot. A typical dealership complex with a 15,000 sq ft showroom and 20,000 sq ft service area might cost $250,000-$500,000 total. We offer free detailed estimates and can phase work to spread costs across budget periods.',
   },
   {
     question: 'Can you roof our dealership without shutting down sales or service operations?',
-    answer:
+  answer:
       'Absolutely. We specialize in keeping dealerships fully operational during roof work. For showrooms, we use dust barriers, protective coverings for vehicles, and schedule the noisiest work before or after business hours. For service bays, we work in sections so that only a portion of the service department is affected at any time. We coordinate directly with your general manager and service director to plan around your busiest days and protect vehicle inventory throughout the project.',
   },
   {
     question: 'How do you protect our vehicle inventory during roofing work?',
-    answer:
+  answer:
       'Vehicle inventory protection is a top priority on every dealership project. We establish exclusion zones around active work areas, use debris nets and tarps to prevent material from reaching vehicles, and move our material staging areas away from display lots. Before work begins, we create a detailed vehicle protection plan with your inventory manager. At the end of each work day, our crew performs a cleanup sweep and inspection. We carry full liability coverage specifically for situations involving vehicle inventory.',
   },
   {
     question: 'Can you integrate our dealership signage and branding into the new roof design?',
-    answer:
+  answer:
       'Yes, we regularly coordinate with sign companies and dealership brand consultants to integrate signage mounting, channel letter supports, and illuminated sign connections into the roofing system. We ensure sign penetrations are properly flashed and waterproofed, electrical conduit is properly routed, and the roof membrane is not compromised by sign installation. For major rebrands or franchise changes, we can modify the roof structure to accommodate new signage requirements while maintaining watertight integrity.',
   },
   {
     question: 'What are the special roofing considerations for service bays and body shops?',
-    answer:
+  answer:
       'Service bays and body shops have unique roofing requirements beyond standard commercial buildings. Exhaust fan and ventilation system penetrations must be properly flashed and sealed. The roof membrane must resist exposure to oil, solvents, and automotive chemicals that can degrade certain materials — this is why we often recommend modified bitumen or PVC for these areas. High-bay ceilings mean the roof deck handles more thermal movement. We also ensure proper drainage around overhead door headers and loading areas.',
   },
   {
     question: 'When is the best time to re-roof an auto dealership in Charlotte?',
-    answer:
+  answer:
       'The ideal time to re-roof a Charlotte dealership depends on your sales cycle. Most dealerships find that January through March offers the lowest impact on sales, as this is traditionally a slower period for car sales in the Charlotte market. However, weather conditions are also a factor — Charlotte&apos;s spring and fall offer the most predictable weather for roofing work. We can also schedule work to avoid major sales events like year-end clearance, new model launches, and holiday promotions. We work with your management team to find the optimal timing.',
   },
   {
     question: 'Do you handle insurance claims for dealership roof damage from Charlotte storms?',
-    answer:
+  answer:
       'Yes, we have extensive experience working with insurance companies on auto dealership roof claims. Charlotte experiences frequent hailstorms and high winds that damage dealership roofs — both the building roofs and vehicles on the lot. We provide detailed damage assessments, photo documentation, and repair estimates that insurance adjusters need. We can meet with your adjuster on-site, supplement claims when initial assessments are insufficient, and coordinate the repair timeline with your insurance company. We also help document vehicle inventory damage separately from building claims.',
   },
 ];
@@ -269,7 +268,6 @@ export default function AutoDealershipRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/auto-dealership-roofing-charlotte-nc`}
         pageName="Auto Dealership Roofing Charlotte NC"
@@ -361,7 +359,7 @@ export default function AutoDealershipRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               From gleaming new car showrooms on Independence Blvd to high-volume service bays and detail centers,
-              we deliver roofing solutions tailored to every type of automotive facility.
+  we deliver roofing solutions tailored to every type of automotive facility.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

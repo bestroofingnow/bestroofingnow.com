@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: '24/7 Emergency Roof Repair Charlotte NC | 1-2 Hour Response',
-    description: 'Emergency roof repair available 24/7 in Charlotte NC. Storm damage, active leaks, fallen trees - we respond in 1-2 hours. Call now!',
-    url: `${SITE_CONFIG.url}/emergency`,
-    type: 'website',
+  description: 'Emergency roof repair available 24/7 in Charlotte NC. Storm damage, active leaks, fallen trees - we respond in 1-2 hours. Call now!',
+  url: `${SITE_CONFIG.url}/emergency`,
+  type: 'website',
   },
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency`,
@@ -42,33 +42,33 @@ export const metadata: Metadata = {
 const emergencyTypes = [
   {
     title: 'Storm Damage',
-    description: 'High winds, hail, and severe storms can cause immediate damage requiring urgent attention.',
-    icon: '⚡',
+  description: 'High winds, hail, and severe storms can cause immediate damage requiring urgent attention.',
+  icon: '⚡',
   },
   {
     title: 'Active Roof Leaks',
-    description: 'Water actively entering your home causes damage by the minute. We stop leaks fast.',
-    icon: '💧',
+  description: 'Water actively entering your home causes damage by the minute. We stop leaks fast.',
+  icon: '💧',
   },
   {
     title: 'Fallen Trees/Debris',
-    description: 'Tree limbs or debris on your roof create immediate risks and need professional removal.',
-    icon: '🌳',
+  description: 'Tree limbs or debris on your roof create immediate risks and need professional removal.',
+  icon: '🌳',
   },
   {
     title: 'Fire Damage',
-    description: 'After fire department clearance, we secure and protect your roof from further damage.',
-    icon: '🔥',
+  description: 'After fire department clearance, we secure and protect your roof from further damage.',
+  icon: '🔥',
   },
   {
     title: 'Structural Collapse',
-    description: 'Sagging or collapsed roof sections require immediate professional assessment.',
-    icon: '🏠',
+  description: 'Sagging or collapsed roof sections require immediate professional assessment.',
+  icon: '🏠',
   },
   {
     title: 'Missing Roof Sections',
-    description: 'Large areas of missing shingles or exposed decking need urgent weatherproofing.',
-    icon: '🔧',
+  description: 'Large areas of missing shingles or exposed decking need urgent weatherproofing.',
+  icon: '🔧',
   },
 ];
 
@@ -121,27 +121,27 @@ const surroundingCities = [
 const emergencyFaqs = [
   {
     question: 'How quickly can you respond to a roof emergency in Charlotte NC?',
-    answer: 'Our emergency roof repair team typically responds within 1-2 hours to Charlotte NC and surrounding areas. We have crews stationed throughout the metro area, including University City, South End, and Ballantyne, allowing us to reach most Charlotte neighborhoods quickly. For severe storm events affecting multiple homes, response times may vary, but we prioritize active leaks and safety hazards.',
+  answer: 'Our emergency roof repair team typically responds within 1-2 hours to Charlotte NC and surrounding areas. We have crews stationed throughout the metro area, including University City, South End, and Ballantyne, allowing us to reach most Charlotte neighborhoods quickly. For severe storm events affecting multiple homes, response times may vary, but we prioritize active leaks and safety hazards.',
   },
   {
     question: 'What is the cost of emergency roof repair in Charlotte?',
-    answer: 'Emergency roof repair costs in Charlotte typically range from $200 to $800 depending on the service needed. Emergency tarping costs $300-$800, leak repairs run $200-$600, and debris removal is $150-$500. We provide free storm damage assessments and transparent pricing before any work begins. Many emergency repairs are covered by homeowners insurance.',
+  answer: 'Emergency roof repair costs in Charlotte typically range from $200 to $800 depending on the service needed. Emergency tarping costs $300-$800, leak repairs run $200-$600, and debris removal is $150-$500. We provide free storm damage assessments and transparent pricing before any work begins. Many emergency repairs are covered by homeowners insurance.',
   },
   {
     question: 'Do you offer 24-hour roof repair services in Charlotte NC?',
-    answer: 'Yes, Best Roofing Now offers 24/7 emergency roof repair services throughout Charlotte NC and the surrounding metro area. Our emergency hotline at (704) 605-6047 is staffed around the clock, including nights, weekends, and holidays. Whether it is 2 AM after a storm or Sunday afternoon, our team is ready to respond.',
+  answer: 'Yes, Best Roofing Now offers 24/7 emergency roof repair services throughout Charlotte NC and the surrounding metro area. Our emergency hotline at (704) 605-6047 is staffed around the clock, including nights, weekends, and holidays. Whether it is 2 AM after a storm or Sunday afternoon, our team is ready to respond.',
   },
   {
     question: 'What should I do while waiting for emergency roof repair?',
-    answer: 'While waiting for emergency roof repair, prioritize safety first - do not climb on the roof. Move valuables away from leak areas, use buckets and towels to contain water, and document all damage with photos and videos for insurance. If water is near electrical fixtures, turn off power to affected areas. Do not attempt DIY repairs that could make the situation worse.',
+  answer: 'While waiting for emergency roof repair, prioritize safety first - do not climb on the roof. Move valuables away from leak areas, use buckets and towels to contain water, and document all damage with photos and videos for insurance. If water is near electrical fixtures, turn off power to affected areas. Do not attempt DIY repairs that could make the situation worse.',
   },
   {
     question: 'Will my homeowners insurance cover emergency roof repairs?',
-    answer: 'Most homeowners insurance policies cover emergency roof repairs caused by sudden events like storms, fallen trees, hail, and wind damage. Coverage typically includes emergency tarping, temporary repairs, and permanent restoration. Best Roofing Now works directly with insurance companies, documents all damage thoroughly, and helps homeowners navigate the claims process for fair settlements.',
+  answer: 'Most homeowners insurance policies cover emergency roof repairs caused by sudden events like storms, fallen trees, hail, and wind damage. Coverage typically includes emergency tarping, temporary repairs, and permanent restoration. Best Roofing Now works directly with insurance companies, documents all damage thoroughly, and helps homeowners navigate the claims process for fair settlements.',
   },
   {
     question: 'What areas near Charlotte do you serve for emergency roof repair?',
-    answer: 'We provide 24/7 emergency roof repair services throughout the Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Indian Trail, Pineville, Concord, Kannapolis, and Gastonia. We also serve Fort Mill and Rock Hill in South Carolina. Our response radius covers approximately 50 miles from our Charlotte headquarters.',
+  answer: 'We provide 24/7 emergency roof repair services throughout the Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Indian Trail, Pineville, Concord, Kannapolis, and Gastonia. We also serve Fort Mill and Rock Hill in South Carolina. Our response radius covers approximately 50 miles from our Charlotte headquarters.',
   },
 ];
 
@@ -151,54 +151,54 @@ function EmergencyServiceSchema() {
     '@context': 'https://schema.org',
     '@type': 'EmergencyService',
     '@id': `${SITE_CONFIG.url}/emergency/#emergency-service`,
-    name: '24/7 Emergency Roof Repair Charlotte NC',
-    alternateName: ['Emergency Roofer Charlotte', '24 Hour Roof Repair Charlotte NC'],
-    description: 'Professional 24/7 emergency roof repair services in Charlotte NC. Fast response for storm damage, active leaks, fallen trees, and all roof emergencies. Licensed and insured.',
-    url: `${SITE_CONFIG.url}/emergency`,
-    telephone: SITE_CONFIG.phone,
-    availableChannel: {
+  name: '24/7 Emergency Roof Repair Charlotte NC',
+  alternateName: ['Emergency Roofer Charlotte', '24 Hour Roof Repair Charlotte NC'],
+  description: 'Professional 24/7 emergency roof repair services in Charlotte NC. Fast response for storm damage, active leaks, fallen trees, and all roof emergencies. Licensed and insured.',
+  url: `${SITE_CONFIG.url}/emergency`,
+  telephone: SITE_CONFIG.phone,
+  availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: `${SITE_CONFIG.url}/emergency`,
-      servicePhone: SITE_CONFIG.phone,
-      availableLanguage: ['English', 'Spanish'],
+  serviceUrl: `${SITE_CONFIG.url}/emergency`,
+  servicePhone: SITE_CONFIG.phone,
+  availableLanguage: ['English', 'Spanish'],
     },
-    provider: {
+  provider: {
       ...getRoofingContractorIdentity(),
     },
-    areaServed: [
+  areaServed: [
       {
         '@type': 'City',
-        name: 'Charlotte',
-        containedInPlace: { '@type': 'State', name: 'North Carolina' },
+  name: 'Charlotte',
+  containedInPlace: { '@type': 'State', name: 'North Carolina' },
       },
       ...surroundingCities.map(city => ({
         '@type': 'City',
-        name: city,
+  name: city,
       })),
     ],
-    hoursAvailable: {
+  hoursAvailable: {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '00:00',
-      closes: '23:59',
+  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+  opens: '00:00',
+  closes: '23:59',
     },
-    offers: emergencyPricing.map(item => ({
+  offers: emergencyPricing.map(item => ({
       '@type': 'Offer',
-      name: item.service,
-      description: item.description,
-      priceRange: item.priceRange,
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
+  name: item.service,
+  description: item.description,
+  priceRange: item.priceRange,
+  priceCurrency: 'USD',
+  availability: 'https://schema.org/InStock',
     })),
-    aggregateRating: {
+  aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: SITE_CONFIG.googleRating,
-      reviewCount: SITE_CONFIG.googleReviewCount,
-      bestRating: 5,
-      worstRating: 1,
+  ratingValue: SITE_CONFIG.googleRating,
+  reviewCount: SITE_CONFIG.googleReviewCount,
+  bestRating: 5,
+  worstRating: 1,
     },
-    serviceType: 'Emergency Roof Repair',
-    category: ['Roofing', 'Emergency Services', 'Storm Damage Repair'],
+  serviceType: 'Emergency Roof Repair',
+  category: ['Roofing', 'Emergency Services', 'Storm Damage Repair'],
   };
 
   return (

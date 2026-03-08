@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing University City Charlotte NC | UNCC Area | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor serving University City Charlotte NC. Professional roofing services for homes, student housing, and apartments near UNCC. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofing-university-city-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-university-city-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in University City Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in University City Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for University City homes with quality materials at competitive prices.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for University City homes with quality materials at competitive prices.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Multi-Family & Apartments',
-    description: 'Expert roofing for apartment complexes, student housing, and multi-family properties near UNCC.',
-    href: '/services/commercial-roofing',
+  title: 'Multi-Family & Apartments',
+  description: 'Expert roofing for apartment complexes, student housing, and multi-family properties near UNCC.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, affordable repairs for leaks, missing shingles, and storm damage in University City.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, affordable repairs for leaks, missing shingles, and storm damage in University City.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with quality materials and excellent warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with quality materials and excellent warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for University City homeowners and property managers.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for University City homeowners and property managers.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for UNCC area residents.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for UNCC area residents.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied University City homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied University City homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Affordable Pricing',
-    description: 'Competitive pricing that works for families, investors, and first-time homebuyers.',
+  title: 'Affordable Pricing',
+  description: 'Competitive pricing that works for families, investors, and first-time homebuyers.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when University City residents need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when University City residents need us most.',
   },
 ];
 
@@ -179,42 +179,42 @@ const nearbyAreas = [
 const faqs = [
   {
     question: 'What roofing services do you offer in University City Charlotte NC?',
-    answer:
+  answer:
       'Best Roofing Now provides complete roofing services in University City including roof repair, roof replacement, new roof installation, storm damage repair, emergency roofing services, and free roof inspections. We work with homeowners, property managers, and investors in the UNCC area.',
   },
   {
     question: 'Do you work with apartment complexes and student housing near UNCC?',
-    answer:
+  answer:
       'Yes, we have extensive experience with multi-family properties, apartment complexes, and student housing near UNC Charlotte. We understand the unique needs of property managers and can work around tenant schedules. We also offer volume pricing for multiple units.',
   },
   {
     question: 'How much does a roof replacement cost in University City?',
-    answer:
+  answer:
       'Roof replacement costs in University City typically range from $8,000-$18,000 for most homes, depending on size, roof complexity, and material choice. We offer competitive pricing and financing options to make quality roofing accessible. Free estimates with transparent pricing.',
   },
   {
     question: 'Why should University City homeowners choose Best Roofing Now?',
-    answer:
+  answer:
       'University City homeowners choose us because we offer the best combination of quality and value. We\'re BBB A+ rated, veteran-owned, and use quality materials at competitive prices. Our location near University City means faster response times and lower travel costs passed on to you.',
   },
   {
     question: 'How long does a roof replacement take in University City?',
-    answer:
+  answer:
       'Most University City roof replacements are completed in 1-2 days for typical homes. Larger homes or complex roofs may take 2-3 days. We work efficiently to minimize disruption and always clean up thoroughly when the job is done.',
   },
   {
     question: 'Do you offer financing for roofing projects in University City?',
-    answer:
+  answer:
       'Yes, we offer flexible financing options for University City homeowners including 0% APR for qualified buyers. This is especially helpful for first-time homebuyers and young families in the UNCC area who need a new roof but want manageable monthly payments.',
   },
   {
     question: 'Do you handle insurance claims for storm damage in University City?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience with insurance claims for storm damage in University City. Charlotte\'s severe weather means storm damage is common, and we help homeowners navigate the claims process, meet with adjusters, and get fair settlements.',
   },
   {
     question: 'Can you work with investment properties and rentals in University City?',
-    answer:
+  answer:
       'Yes, we work with many real estate investors who own rental properties in University City. We understand the importance of protecting your investment while managing costs. We offer volume discounts for investors with multiple properties and can coordinate work around tenant schedules.',
   },
 ];
@@ -229,7 +229,6 @@ export default function RoofingUniversityCityCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -258,7 +257,7 @@ export default function RoofingUniversityCityCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now is the trusted choice for University City residents seeking quality roofing at
               competitive prices. From Highland Creek to Mallard Creek and the areas surrounding UNC Charlotte,
-              we deliver exceptional service for homeowners, investors, and property managers.
+  we deliver exceptional service for homeowners, investors, and property managers.
             </p>
 
             {/* CTA Buttons */}
@@ -315,12 +314,12 @@ export default function RoofingUniversityCityCharlotteNCPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 University City is one of Charlotte's most dynamic areas, home to UNC Charlotte, University Research Park,
-                and a diverse mix of single-family homes, townhomes, and apartment communities. At Best Roofing Now,
-                we understand the unique needs of this vibrant community.
+  and a diverse mix of single-family homes, townhomes, and apartment communities. At Best Roofing Now,
+  we understand the unique needs of this vibrant community.
               </p>
               <p>
                 Whether you're a first-time homebuyer in Highland Creek, a property investor with rentals near campus,
-                or a property manager overseeing student housing, we provide professional roofing services at prices
+  or a property manager overseeing student housing, we provide professional roofing services at prices
                 that work for your budget. Our office on Mallard Creek Road means we're local to University City
                 and can respond quickly to your needs.
               </p>

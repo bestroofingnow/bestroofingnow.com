@@ -29,7 +29,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -58,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Retail & Shopping Center Roofing Charlotte NC | Mall & Strip Center Roofs | Best Roofing Now',
-    description:
+  description:
       'Expert retail and shopping center roofing contractors in Charlotte NC. Specializing in malls, strip centers, big box stores & grocery stores. Minimal business disruption. Free estimates.',
-    url: `${SITE_CONFIG.url}/retail-shopping-center-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/retail-shopping-center-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.office,
-        width: 1200,
-        height: 630,
-        alt: 'Retail shopping center roofing Charlotte NC - Best Roofing Now commercial retail roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Retail shopping center roofing Charlotte NC - Best Roofing Now commercial retail roofing project',
       },
     ],
   },
@@ -77,39 +76,39 @@ export const metadata: Metadata = {
 const roofingSystems = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient single-ply membrane ideal for retail flat roofs. Reflective surface reduces cooling costs, keeping stores comfortable and utility bills manageable.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient single-ply membrane ideal for retail flat roofs. Reflective surface reduces cooling costs, keeping stores comfortable and utility bills manageable.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'EPDM Rubber Roofing',
-    description: 'Durable, cost-effective rubber membrane perfect for strip centers and multi-tenant retail buildings where reliable, low-maintenance performance is the priority.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Durable, cost-effective rubber membrane perfect for strip centers and multi-tenant retail buildings where reliable, low-maintenance performance is the priority.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Standing seam and architectural metal roofing for retail buildings where curb appeal matters. Attractive profiles in multiple colors to complement any storefront.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Standing seam and architectural metal roofing for retail buildings where curb appeal matters. Attractive profiles in multiple colors to complement any storefront.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Layers,
-    title: 'Modified Bitumen Roofing',
-    description: 'Multi-layer protection ideal for retail buildings with heavy rooftop HVAC equipment, signage supports, and regular maintenance foot traffic.',
-    href: '/services/commercial-roofing',
+  title: 'Modified Bitumen Roofing',
+  description: 'Multi-layer protection ideal for retail buildings with heavy rooftop HVAC equipment, signage supports, and regular maintenance foot traffic.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Proven multi-ply roofing system for large retail facilities like big box stores and grocery anchors requiring long-term, heavy-duty waterproofing.',
-    href: '/services/commercial-roofing',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Proven multi-ply roofing system for large retail facilities like big box stores and grocery anchors requiring long-term, heavy-duty waterproofing.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Roof Coatings & Restoration',
-    description: 'Reflective coatings that extend retail roof life by 10-15 years. A budget-friendly option for shopping centers looking to avoid full tear-off disruption.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings & Restoration',
+  description: 'Reflective coatings that extend retail roof life by 10-15 years. A budget-friendly option for shopping centers looking to avoid full tear-off disruption.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -117,33 +116,33 @@ const roofingSystems = [
 const buildingTypes = [
   {
     icon: Building2,
-    title: 'Regional Shopping Malls',
-    description: 'Large-scale roofing for regional malls like SouthPark Mall, Northlake Mall, and Concord Mills, managing complex multi-section roof systems and anchor tenant coordination.',
+  title: 'Regional Shopping Malls',
+  description: 'Large-scale roofing for regional malls like SouthPark Mall, Northlake Mall, and Concord Mills, managing complex multi-section roof systems and anchor tenant coordination.',
   },
   {
     icon: ShoppingBag,
-    title: 'Strip Centers & Plazas',
-    description: 'Cost-effective roofing for neighborhood strip centers and retail plazas with multiple tenants, coordinating work schedules around each business\u0027s operating hours.',
+  title: 'Strip Centers & Plazas',
+  description: 'Cost-effective roofing for neighborhood strip centers and retail plazas with multiple tenants, coordinating work schedules around each business\u0027s operating hours.',
   },
   {
     icon: Ruler,
-    title: 'Big Box Retail Stores',
-    description: 'Large-footprint roofing for big box retailers like Home Depot, Target, and Walmart, handling 80,000-200,000+ sq ft roof areas efficiently.',
+  title: 'Big Box Retail Stores',
+  description: 'Large-footprint roofing for big box retailers like Home Depot, Target, and Walmart, handling 80,000-200,000+ sq ft roof areas efficiently.',
   },
   {
     icon: Thermometer,
-    title: 'Grocery & Supermarket Stores',
-    description: 'Specialized roofing for grocery stores with extensive HVAC and refrigeration systems, ensuring insulation performance that keeps energy costs in check.',
+  title: 'Grocery & Supermarket Stores',
+  description: 'Specialized roofing for grocery stores with extensive HVAC and refrigeration systems, ensuring insulation performance that keeps energy costs in check.',
   },
   {
     icon: Star,
-    title: 'Boutique & Specialty Retail',
-    description: 'Aesthetic-focused roofing for boutique retail, restaurants, and specialty stores in upscale shopping areas like SouthPark and Birkdale Village.',
+  title: 'Boutique & Specialty Retail',
+  description: 'Aesthetic-focused roofing for boutique retail, restaurants, and specialty stores in upscale shopping areas like SouthPark and Birkdale Village.',
   },
   {
     icon: Zap,
-    title: 'Gas Stations & Convenience Stores',
-    description: 'Quick-turnaround roofing for gas stations, convenience stores, and quick-service restaurants that cannot afford extended closure periods.',
+  title: 'Gas Stations & Convenience Stores',
+  description: 'Quick-turnaround roofing for gas stations, convenience stores, and quick-service restaurants that cannot afford extended closure periods.',
   },
 ];
 
@@ -151,33 +150,33 @@ const buildingTypes = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'Business-Hour Friendly',
-    description: 'We schedule noisy work before store openings or after closing, keeping noise levels minimal during peak shopping hours and customer-facing operations.',
+  title: 'Business-Hour Friendly',
+  description: 'We schedule noisy work before store openings or after closing, keeping noise levels minimal during peak shopping hours and customer-facing operations.',
   },
   {
     icon: Users,
-    title: 'Multi-Tenant Coordination',
-    description: 'We coordinate with property management and individual tenants to schedule work around business operations, sales events, and seasonal busy periods.',
+  title: 'Multi-Tenant Coordination',
+  description: 'We coordinate with property management and individual tenants to schedule work around business operations, sales events, and seasonal busy periods.',
   },
   {
     icon: Shield,
-    title: 'Customer Safety First',
-    description: 'Clear safety barriers, clean staging areas, and debris-free walkways ensure your shoppers and employees are safe throughout the entire project.',
+  title: 'Customer Safety First',
+  description: 'Clear safety barriers, clean staging areas, and debris-free walkways ensure your shoppers and employees are safe throughout the entire project.',
   },
   {
     icon: Award,
-    title: 'Manufacturer Certified',
-    description: 'Factory-certified installers for major roofing manufacturers, providing warranty coverage that meets national retail tenant and landlord standards.',
+  title: 'Manufacturer Certified',
+  description: 'Factory-certified installers for major roofing manufacturers, providing warranty coverage that meets national retail tenant and landlord standards.',
   },
   {
     icon: DollarSign,
-    title: 'Portfolio & Multi-Site Pricing',
-    description: 'Volume discounts for retail property owners with multiple locations. Consistent quality and pricing across your Charlotte-area portfolio.',
+  title: 'Portfolio & Multi-Site Pricing',
+  description: 'Volume discounts for retail property owners with multiple locations. Consistent quality and pricing across your Charlotte-area portfolio.',
   },
   {
     icon: Wrench,
-    title: 'Signage & Curb Appeal',
-    description: 'We protect and work around existing signage, facades, and storefronts, maintaining your retail center\u0027s image throughout the roofing project.',
+  title: 'Signage & Curb Appeal',
+  description: 'We protect and work around existing signage, facades, and storefronts, maintaining your retail center\u0027s image throughout the roofing project.',
   },
 ];
 
@@ -213,42 +212,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does shopping center roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Shopping center roof replacement in Charlotte typically costs $5 to $11 per square foot for membrane systems (TPO, EPDM) and $10 to $18 per square foot for metal roofing. A 40,000 sq ft strip center might cost $200,000-$440,000, while a 200,000+ sq ft regional mall section could range from $1,000,000-$2,200,000. Costs vary based on rooftop equipment density, number of penetrations, and access constraints. We provide free detailed estimates.',
   },
   {
     question: 'Can you reroof our shopping center without closing stores?',
-    answer:
+  answer:
       'Absolutely. We specialize in keeping retail businesses open and operating during roof work. Our crews work in sections, schedule tear-off and noisy operations during off-hours (early mornings, evenings, or overnight for 24-hour tenants), and maintain clear, safe access to all storefronts throughout the project. We have completed shopping center projects across Charlotte without a single day of forced tenant closure.',
   },
   {
     question: 'How do you coordinate with multiple tenants in a shopping center?',
-    answer:
+  answer:
       'We work closely with your property management team to develop a tenant communication plan before work begins. This includes advance notification letters, a posted project schedule, designated contact information for concerns, and regular progress updates. We schedule work around high-traffic periods, avoid major sales events like Black Friday, and coordinate individually with tenants who have unique concerns like restaurants or medical offices.',
   },
   {
     question: 'What is the best roofing system for a retail shopping center in Charlotte?',
-    answer:
+  answer:
       'For most Charlotte shopping centers, TPO membrane is the top choice — it offers excellent energy efficiency, meets current energy codes, and provides a clean, professional appearance. For strip centers where budget is the primary concern, EPDM provides reliable performance at a lower cost. Modified bitumen works well for centers with heavy rooftop equipment. Visible roof areas on upscale retail benefit from architectural standing seam metal for aesthetic appeal.',
   },
   {
     question: 'How do you handle drainage issues on flat retail roofs?',
-    answer:
+  answer:
       'Poor drainage is one of the most common problems on retail flat roofs, leading to ponding water, leaks, and premature membrane failure. We evaluate your entire drainage system during our assessment, including internal drains, scuppers, and gutters. We can add tapered insulation to create proper slope, install additional drains, and ensure all drainage pathways are clear. Proper drainage design is included in every full replacement project.',
   },
   {
     question: 'Can you work around our holiday retail season?',
-    answer:
+  answer:
       'Yes, we understand that the holiday season (October through January) is the busiest time for retail. We typically recommend scheduling major roofing work during the slower months of February through September. However, if emergency repairs are needed during the holidays, our crews can perform targeted repairs during off-hours with minimal impact on your business. We plan project timelines around your retail calendar.',
   },
   {
     question: 'What about rooftop signage and HVAC equipment during a reroof?',
-    answer:
+  answer:
       'We carefully remove, store, and reinstall rooftop signage, curbing, and equipment supports during the reroofing process. HVAC units are typically set on temporary supports and remain operational throughout the project. We coordinate with your HVAC contractors to ensure units are properly resealed and reconnected. All signage is reinstalled to its original position with proper flashing and waterproofing.',
   },
   {
     question: 'Do you offer roof maintenance programs for retail properties?',
-    answer:
+  answer:
       'Yes, we offer preventive maintenance programs designed for retail properties. Our plans include bi-annual inspections (typically spring and fall), drain clearing, sealant touch-ups, and prompt repair of any issues before they become leaks that could damage tenant spaces and inventory. Regular maintenance extends roof life by 5-10 years and helps prevent emergency situations during peak retail periods. We offer portfolio pricing for multi-property owners.',
   },
 ];
@@ -263,7 +262,6 @@ export default function RetailShoppingCenterRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/retail-shopping-center-roofing-charlotte-nc`}
         pageName="Retail Shopping Center Roofing Charlotte NC"

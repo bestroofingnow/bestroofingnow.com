@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Shingle Products | Best Roofing Now',
-    description:
+  description:
       'Compare popular shingle products and specs. Wind ratings, warranties, and price ranges. Free estimates available.',
-    url: `${SITE_CONFIG.url}/products`,
-    type: 'website',
+  url: `${SITE_CONFIG.url}/products`,
+  type: 'website',
   },
 };
 
@@ -29,8 +29,8 @@ export default function ProductsPage() {
 
   const items = SHINGLE_PRODUCTS.map((p) => ({
     name: p.fullName,
-    url: `${SITE_CONFIG.url}/products/${p.slug}`,
-    description: p.description,
+  url: `${SITE_CONFIG.url}/products/${p.slug}`,
+  description: p.description,
   }));
 
   const byBrand = SHINGLE_PRODUCTS.reduce<Record<string, ShingleProduct[]>>((acc, p) => {
@@ -82,7 +82,7 @@ export default function ProductsPage() {
             </h1>
             <p className="text-xl text-white/90 mb-8">
               Compare popular shingle options by brand. See key specs like wind rating, warranty,
-              and typical price range, then request an estimate for your home.
+  and typical price range, then request an estimate for your home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <EstimateButton
@@ -111,7 +111,7 @@ export default function ProductsPage() {
               <p>
                 Choosing the right shingle is a balance of budget, curb appeal, and performance.
                 In the Charlotte area, we pay close attention to wind resistance, algae protection,
-                and warranty coverage. If you are not sure where to start, schedule a free
+  and warranty coverage. If you are not sure where to start, schedule a free
                 inspection and we will recommend options that match your roof design and goals.
               </p>
             </div>

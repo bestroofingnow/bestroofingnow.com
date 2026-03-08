@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Warranty Information | Best Roofing Now',
-    description: 'Complete guide to understanding roofing warranties and coverage options.',
-    url: `${SITE_CONFIG.url}/warranty`,
-    type: 'website',
+  description: 'Complete guide to understanding roofing warranties and coverage options.',
+  url: `${SITE_CONFIG.url}/warranty`,
+  type: 'website',
   },
 };
 
@@ -113,7 +113,7 @@ export default function WarrantyPage() {
               <h3 className="text-2xl font-bold text-primary mb-4">Workmanship Warranty</h3>
               <p className="text-gray mb-4">
                 Covers installation errors. If problems arise from how the roof was installed,
-                your contractor covers the repair.
+  your contractor covers the repair.
               </p>
               <h4 className="font-bold text-dark mb-2">Our Coverage:</h4>
               <ul className="space-y-2 text-gray text-sm">
@@ -311,7 +311,7 @@ export default function WarrantyPage() {
                 </h3>
                 <p className="text-gray text-sm">
                   Most manufacturer warranties are transferable to the new homeowner,
-                  which adds value to your home. Some may have a transfer fee or
+  which adds value to your home. Some may have a transfer fee or
                   time limit. We&apos;ll explain your specific warranty terms.
                 </p>
               </div>

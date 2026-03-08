@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'New Construction Roofing Charlotte NC | Builder Services | Best Roofing Now',
-    description:
+  description:
       'Reliable new construction roofing for Charlotte builders. Quality materials, on-schedule completion, competitive pricing.',
-    url: `${SITE_CONFIG.url}/new-construction-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/new-construction-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'New construction roofing Charlotte NC - Best Roofing Now builder services',
+  width: 1200,
+  height: 630,
+  alt: 'New construction roofing Charlotte NC - Best Roofing Now builder services',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Single-Family New Construction',
-    description: 'Complete roofing solutions for new single-family homes from foundation to finish.',
-    href: '/services/residential-roofing',
+  title: 'Single-Family New Construction',
+  description: 'Complete roofing solutions for new single-family homes from foundation to finish.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Multi-Family & Townhomes',
-    description: 'Efficient roofing for townhome developments and multi-family residential projects.',
-    href: '/services/commercial-roofing',
+  title: 'Multi-Family & Townhomes',
+  description: 'Efficient roofing for townhome developments and multi-family residential projects.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Hammer,
-    title: 'Custom Home Roofing',
-    description: 'Premium materials and specialized installation for custom and luxury homes.',
-    href: '/services/residential-roofing',
+  title: 'Custom Home Roofing',
+  description: 'Premium materials and specialized installation for custom and luxury homes.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Handshake,
-    title: 'Builder Partnership Programs',
-    description: 'Dedicated account management and volume pricing for production builders.',
-    href: '/contact',
+  title: 'Builder Partnership Programs',
+  description: 'Dedicated account management and volume pricing for production builders.',
+  href: '/contact',
   },
   {
     icon: FileText,
-    title: 'Material Selection Consulting',
-    description: 'Help buyers choose the right roofing materials, colors, and upgrades.',
-    href: '/services/roof-replacement',
+  title: 'Material Selection Consulting',
+  description: 'Help buyers choose the right roofing materials, colors, and upgrades.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Wrench,
-    title: 'Warranty Service Support',
-    description: 'Reliable warranty coverage and responsive post-construction service.',
-    href: '/services/roof-repair',
+  title: 'Warranty Service Support',
+  description: 'Reliable warranty coverage and responsive post-construction service.',
+  href: '/services/roof-repair',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'On-Time Delivery',
-    description: 'We understand construction schedules. We show up on time and complete work on schedule.',
+  title: 'On-Time Delivery',
+  description: 'We understand construction schedules. We show up on time and complete work on schedule.',
   },
   {
     icon: Award,
-    title: 'Quality Craftsmanship',
-    description: 'Factory-certified installers ensure every roof meets or exceeds manufacturer specifications.',
+  title: 'Quality Craftsmanship',
+  description: 'Factory-certified installers ensure every roof meets or exceeds manufacturer specifications.',
   },
   {
     icon: Users,
-    title: 'Dedicated Crews',
-    description: 'Consistent crews familiar with your specifications and quality standards.',
+  title: 'Dedicated Crews',
+  description: 'Consistent crews familiar with your specifications and quality standards.',
   },
   {
     icon: Shield,
-    title: 'Fully Licensed & Insured',
-    description: 'Full liability coverage and workers comp protect you and your projects.',
+  title: 'Fully Licensed & Insured',
+  description: 'Full liability coverage and workers comp protect you and your projects.',
   },
   {
     icon: Star,
-    title: 'Builder References',
-    description: 'Proven track record with Charlotte-area builders and developers.',
+  title: 'Builder References',
+  description: 'Proven track record with Charlotte-area builders and developers.',
   },
   {
     icon: Handshake,
-    title: 'Competitive Pricing',
-    description: 'Volume pricing and builder programs that help your bottom line.',
+  title: 'Competitive Pricing',
+  description: 'Volume pricing and builder programs that help your bottom line.',
   },
 ];
 
@@ -144,27 +144,27 @@ const whyChooseUs = [
 const materialOptions = [
   {
     name: 'Architectural Shingles',
-    description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 30-50 year warranties.',
+  description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 30-50 year warranties.',
   },
   {
     name: 'Metal Roofing',
-    description: 'Standing seam and metal shingle options for modern and contemporary designs.',
+  description: 'Standing seam and metal shingle options for modern and contemporary designs.',
   },
   {
     name: 'Tile Roofing',
-    description: 'Clay and concrete tile for Mediterranean, Spanish, and upscale custom homes.',
+  description: 'Clay and concrete tile for Mediterranean, Spanish, and upscale custom homes.',
   },
   {
     name: 'Synthetic Slate & Shake',
-    description: 'Low-maintenance alternatives that replicate the look of natural materials.',
+  description: 'Low-maintenance alternatives that replicate the look of natural materials.',
   },
   {
     name: 'Flat Roofing Systems',
-    description: 'TPO, EPDM, and modified bitumen for flat and low-slope applications.',
+  description: 'TPO, EPDM, and modified bitumen for flat and low-slope applications.',
   },
   {
     name: 'Premium Upgrades',
-    description: 'Enhanced ventilation, ice/water shield, and impact-resistant shingles available.',
+  description: 'Enhanced ventilation, ice/water shield, and impact-resistant shingles available.',
   },
 ];
 
@@ -212,42 +212,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you offer volume pricing for builders?',
-    answer:
+  answer:
       'Yes, we offer competitive volume pricing for builders with ongoing new construction projects. Our builder partnership program includes dedicated account management, priority scheduling, and pricing structures that improve with volume. Contact us to discuss your specific needs and project pipeline.',
   },
   {
     question: 'How do you handle scheduling for new construction?',
-    answer:
+  answer:
       'We understand that timing is critical in new construction. We work directly with your superintendent or project manager to coordinate with your construction schedule. Our dedicated crews are trained to complete work efficiently and can often dry-in a home in a single day, keeping your project on track.',
   },
   {
     question: 'What roofing materials do you recommend for new construction?',
-    answer:
+  answer:
       'For most new construction in Charlotte, we recommend architectural shingles from CertainTeed, GAF, or Owens Corning. These offer excellent durability, warranty coverage, and curb appeal at competitive prices. For custom and luxury homes, we also install metal, tile, and synthetic slate/shake roofing.',
   },
   {
     question: 'Do you offer buyer upgrade options?',
-    answer:
+  answer:
       'Yes, we work with builders to offer homebuyer upgrade packages. Common upgrades include premium shingle lines with enhanced warranties, impact-resistant shingles (which can reduce insurance costs), upgraded ventilation systems, and color options beyond the standard selections.',
   },
   {
     question: 'What is your warranty on new construction roofing?',
-    answer:
+  answer:
       'Our new construction roofing includes comprehensive warranty coverage. Material warranties range from 30-50 years depending on the product selected. We also provide a 5-year workmanship warranty and can extend coverage through manufacturer programs like GAF Golden Pledge or CertainTeed SureStart PLUS.',
   },
   {
     question: 'Can you handle both large developments and custom homes?',
-    answer:
+  answer:
       'Absolutely. We have the capacity and crews to handle production builder developments while also providing the detailed craftsmanship required for custom homes. Our team includes specialists experienced in both high-volume efficiency and custom work with complex roof designs.',
   },
   {
     question: 'How do you handle punch list items and warranty service?',
-    answer:
+  answer:
       'We take warranty service seriously and respond promptly to punch list items. Our warranty team addresses any issues quickly to keep closings on schedule. We maintain detailed documentation for each home and stand behind our work throughout the warranty period.',
   },
   {
     question: 'Are you certified by major roofing manufacturers?',
-    answer:
+  answer:
       'Yes, we are certified by CertainTeed (ShingleMaster), GAF (Factory-Certified), and Owens Corning (Preferred Contractor). These certifications allow us to offer enhanced warranties and ensure our installation meets manufacturer specifications.',
   },
 ];
@@ -262,7 +262,6 @@ export default function NewConstructionRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

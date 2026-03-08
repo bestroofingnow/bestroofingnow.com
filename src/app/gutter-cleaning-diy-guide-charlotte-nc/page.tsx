@@ -58,37 +58,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'DIY Gutter Cleaning Guide for Charlotte NC Homeowners',
-    description:
+  description:
       'Safe, step-by-step gutter cleaning instructions. Tools, timing, safety tips, and when to call the pros.',
-    url: `${SITE_CONFIG.url}/gutter-cleaning-diy-guide-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/gutter-cleaning-diy-guide-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const gutterFAQs = [
   {
     question: 'How often should I clean my gutters in Charlotte NC?',
-    answer:
+  answer:
       'Most Charlotte homes need gutter cleaning twice yearly: once in late fall after leaves drop (November-December) and once in late spring after pollen season (May-June). Homes with many trees nearby may need 3-4 cleanings. Pine trees are especially problematic with year-round needle drop.',
   },
   {
     question: 'Can I clean gutters myself or should I hire a professional?',
-    answer:
+  answer:
       'Single-story homes with easy access can often be DIY projects if you\'re comfortable on ladders. Two-story homes, steep roofs, or homes with difficult access should hire professionals. The $150-300 cost of professional cleaning is worth avoiding a fall injury. If you have any health issues affecting balance, always hire a pro.',
   },
   {
     question: 'What tools do I need to clean my gutters?',
-    answer:
+  answer:
       'Essential tools: sturdy extension ladder, work gloves, gutter scoop or garden trowel, 5-gallon bucket with hook, garden hose with spray nozzle, and safety glasses. Optional but helpful: ladder stabilizer, gutter cleaning wand attachment, and a leaf blower for dry debris.',
   },
   {
     question: 'Is gutter cleaning dangerous?',
-    answer:
+  answer:
       'Falls from ladders cause over 500,000 injuries annually in the US. Proper safety precautions are essential: use a ladder stabilizer, never overreach, have someone spot you, wear non-slip shoes, and avoid working in wet conditions. If uncomfortable at any point, stop and call a professional.',
   },
   {
     question: 'What happens if I don\'t clean my gutters?',
-    answer:
+  answer:
       'Clogged gutters cause: water overflow damaging fascia boards and siding, foundation damage from improper drainage, ice dams in winter, mosquito breeding grounds in standing water, and roof leaks from backed-up water. Repairs from neglected gutters often cost $500-5,000.',
   },
 ];
@@ -96,154 +96,154 @@ const gutterFAQs = [
 const essentialTools = [
   {
     name: 'Extension Ladder',
-    description: 'Must extend 3 feet above gutter line. Ensure 300+ lb capacity.',
-    required: true,
+  description: 'Must extend 3 feet above gutter line. Ensure 300+ lb capacity.',
+  required: true,
   },
   {
     name: 'Work Gloves',
-    description: 'Thick rubber-coated gloves protect from debris, sharp edges, and bugs.',
-    required: true,
+  description: 'Thick rubber-coated gloves protect from debris, sharp edges, and bugs.',
+  required: true,
   },
   {
     name: 'Gutter Scoop',
-    description: 'Plastic scoop designed to fit gutter profile. $5-10 at hardware stores.',
-    required: true,
+  description: 'Plastic scoop designed to fit gutter profile. $5-10 at hardware stores.',
+  required: true,
   },
   {
     name: 'Bucket with Hook',
-    description: 'S-hook attaches 5-gallon bucket to ladder for debris collection.',
-    required: true,
+  description: 'S-hook attaches 5-gallon bucket to ladder for debris collection.',
+  required: true,
   },
   {
     name: 'Garden Hose',
-    description: 'With spray nozzle to flush remaining debris and test flow.',
-    required: true,
+  description: 'With spray nozzle to flush remaining debris and test flow.',
+  required: true,
   },
   {
     name: 'Safety Glasses',
-    description: 'Debris, insects, and splashing water make eye protection essential.',
-    required: true,
+  description: 'Debris, insects, and splashing water make eye protection essential.',
+  required: true,
   },
   {
     name: 'Ladder Stabilizer',
-    description: 'Spreads ladder weight and keeps it off gutters. Highly recommended.',
-    required: false,
+  description: 'Spreads ladder weight and keeps it off gutters. Highly recommended.',
+  required: false,
   },
   {
     name: 'Gutter Cleaning Wand',
-    description: 'Curved attachment for garden hose to clean from ground level.',
-    required: false,
+  description: 'Curved attachment for garden hose to clean from ground level.',
+  required: false,
   },
 ];
 
 const safetyRules = [
   {
     rule: 'Never work alone',
-    reason: 'Have someone spot the ladder and call for help if needed.',
+  reason: 'Have someone spot the ladder and call for help if needed.',
   },
   {
     rule: 'Check the weather',
-    reason: 'Never clean gutters in rain, high winds, or when frost is possible.',
+  reason: 'Never clean gutters in rain, high winds, or when frost is possible.',
   },
   {
     rule: 'Inspect your ladder',
-    reason: 'Check for loose rungs, cracks, or damage before every use.',
+  reason: 'Check for loose rungs, cracks, or damage before every use.',
   },
   {
     rule: 'Set ladder on firm, level ground',
-    reason: 'Use leg levelers on slopes. Never place on soft soil or uneven surfaces.',
+  reason: 'Use leg levelers on slopes. Never place on soft soil or uneven surfaces.',
   },
   {
     rule: 'Maintain 3 points of contact',
-    reason: 'Two hands and one foot, or two feet and one hand on ladder at all times.',
+  reason: 'Two hands and one foot, or two feet and one hand on ladder at all times.',
   },
   {
     rule: 'Never overreach',
-    reason: 'Keep your belt buckle between ladder rails. Climb down and move ladder instead.',
+  reason: 'Keep your belt buckle between ladder rails. Climb down and move ladder instead.',
   },
   {
     rule: 'Face the ladder',
-    reason: 'Always face the ladder when climbing up or down. Never turn around.',
+  reason: 'Always face the ladder when climbing up or down. Never turn around.',
   },
   {
     rule: 'Avoid power lines',
-    reason: 'Keep ladder and tools at least 10 feet from any power lines.',
+  reason: 'Keep ladder and tools at least 10 feet from any power lines.',
   },
 ];
 
 const cleaningSteps = [
   {
     step: 1,
-    title: 'Prepare Your Work Area',
-    description:
+  title: 'Prepare Your Work Area',
+  description:
       'Lay a tarp below where you\'ll be working to catch debris. Position your ladder securely with stabilizer attached. Have all tools ready in your bucket.',
-    duration: '5-10 minutes',
+  duration: '5-10 minutes',
   },
   {
     step: 2,
-    title: 'Remove Large Debris by Hand',
-    description:
+  title: 'Remove Large Debris by Hand',
+  description:
       'Start at the downspout and work away from it. Scoop leaves, twigs, and debris into your bucket. Don\'t push debris into the downspout.',
-    duration: '15-30 minutes per section',
+  duration: '15-30 minutes per section',
   },
   {
     step: 3,
-    title: 'Scrape Stuck-On Debris',
-    description:
+  title: 'Scrape Stuck-On Debris',
+  description:
       'Use your gutter scoop to remove compacted debris and mud buildup along the bottom. Work methodically along the entire gutter length.',
-    duration: '10-20 minutes per section',
+  duration: '10-20 minutes per section',
   },
   {
     step: 4,
-    title: 'Flush with Water',
-    description:
+  title: 'Flush with Water',
+  description:
       'Starting at the far end from the downspout, flush the gutter with your hose. Watch for proper water flow toward downspout.',
-    duration: '5-10 minutes per section',
+  duration: '5-10 minutes per section',
   },
   {
     step: 5,
-    title: 'Clear Downspouts',
-    description:
+  title: 'Clear Downspouts',
+  description:
       'Insert hose into downspout and turn on full pressure. If clogged, use a plumber\'s snake or disassemble the downspout to clear blockage.',
-    duration: '5-15 minutes each',
+  duration: '5-15 minutes each',
   },
   {
     step: 6,
-    title: 'Inspect and Test',
-    description:
+  title: 'Inspect and Test',
+  description:
       'Check for proper drainage, loose hangers, holes, or damage. Run water through entire system to verify flow. Note any repairs needed.',
-    duration: '10-15 minutes',
+  duration: '10-15 minutes',
   },
 ];
 
 const seasonalSchedule = [
   {
     season: 'Spring (May-June)',
-    task: 'Post-Pollen Cleaning',
-    reason:
+  task: 'Post-Pollen Cleaning',
+  reason:
       'Charlotte\'s intense pollen season leaves yellow-green buildup that hardens into blockages. Clean after pollen subsides.',
-    icon: ThermometerSun,
+  icon: ThermometerSun,
   },
   {
     season: 'Summer (July-August)',
-    task: 'Quick Inspection',
-    reason:
+  task: 'Quick Inspection',
+  reason:
       'Summer storms can blow debris into gutters. Do a visual check and clear any visible blockages. Full cleaning usually not needed.',
-    icon: Droplets,
+  icon: Droplets,
   },
   {
     season: 'Fall (November-December)',
-    task: 'Major Cleaning',
-    reason:
+  task: 'Major Cleaning',
+  reason:
       'Most important cleaning of the year. Wait until most leaves have fallen. Critical before winter to prevent ice dams.',
-    icon: Leaf,
+  icon: Leaf,
   },
   {
     season: 'Winter (January-February)',
-    task: 'Emergency Checks Only',
-    reason:
+  task: 'Emergency Checks Only',
+  reason:
       'Don\'t clean in cold weather (slippery conditions). Only address urgent clogs causing ice dams. Consider professional help.',
-    icon: AlertTriangle,
+  icon: AlertTriangle,
   },
 ];
 
@@ -277,7 +277,7 @@ export default function GutterCleaningDIYGuidePage() {
       <FAQSchema
         faqs={gutterFAQs.map((faq) => ({
           question: faq.question,
-          answer: faq.answer,
+  answer: faq.answer,
         }))}
       />
       <WebPageSchema
@@ -288,10 +288,10 @@ export default function GutterCleaningDIYGuidePage() {
       <ArticleSchema
         post={{
           title: 'DIY Gutter Cleaning Guide for Charlotte NC Homeowners',
-          description: 'Step-by-step guide to safely clean your gutters. Tools, safety tips, seasonal schedule, and when to hire professionals.',
-          slug: 'gutter-cleaning-diy-guide-charlotte-nc',
-          datePublished: '2025-01-30',
-          dateModified: '2026-01-29',
+  description: 'Step-by-step guide to safely clean your gutters. Tools, safety tips, seasonal schedule, and when to hire professionals.',
+  slug: 'gutter-cleaning-diy-guide-charlotte-nc',
+  datePublished: '2025-01-30',
+  dateModified: '2026-01-29',
         }}
       />
       <AISearchOptimizationBundle
@@ -299,8 +299,8 @@ export default function GutterCleaningDIYGuidePage() {
         pageName="DIY Gutter Cleaning Guide Charlotte NC"
         faqs={gutterFAQs.map((faq) => ({
           question: faq.question,
-          answer: faq.answer,
-          speakableAnswer: faq.answer.split('.').slice(0, 2).join('.') + '.',
+  answer: faq.answer,
+  speakableAnswer: faq.answer.split('.').slice(0, 2).join('.') + '.',
         }))}
         includeVoiceActions={true}
         city="Charlotte"
@@ -577,8 +577,8 @@ export default function GutterCleaningDIYGuidePage() {
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
                       <span>
                         <strong>Start from the ground.</strong> Before you even touch a ladder,
-                        walk around your house and look at the gutters from below. Sagging sections,
-                        plant growth, or overflow stains tell you where the worst spots are.
+  walk around your house and look at the gutters from below. Sagging sections,
+  plant growth, or overflow stains tell you where the worst spots are.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">

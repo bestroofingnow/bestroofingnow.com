@@ -42,10 +42,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Matthews NC | TPO, EPDM, Flat Roofs | Best Roofing Now',
-    description: 'Expert commercial roofing in Matthews NC. TPO, EPDM, metal systems for businesses.',
-    url: `${SITE_CONFIG.url}/commercial-roofing-matthews-nc`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Commercial roofing in Matthews NC' }],
+  description: 'Expert commercial roofing in Matthews NC. TPO, EPDM, metal systems for businesses.',
+  url: `${SITE_CONFIG.url}/commercial-roofing-matthews-nc`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Commercial roofing in Matthews NC' }],
   },
 };
 

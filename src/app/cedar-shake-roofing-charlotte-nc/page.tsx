@@ -23,7 +23,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -55,16 +54,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Cedar Shake Roofing Charlotte NC | Premium Wood Shake Installation',
-    description:
+  description:
       'Premium cedar shake roofing for Charlotte\'s finest homes. Expert installation of natural wood shakes with stunning rustic elegance. 30-50 year lifespan.',
-    url: `${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.house1,
-        width: 1200,
-        height: 630,
-        alt: 'Cedar shake roofing installation Charlotte NC - Best Roofing Now luxury roofing',
+  width: 1200,
+  height: 630,
+  alt: 'Cedar shake roofing installation Charlotte NC - Best Roofing Now luxury roofing',
       },
     ],
   },
@@ -74,33 +73,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: TreePine,
-    title: 'Natural Beauty',
-    description: 'Each cedar shake is unique with natural grain patterns, providing unmatched rustic elegance and curb appeal.',
+  title: 'Natural Beauty',
+  description: 'Each cedar shake is unique with natural grain patterns, providing unmatched rustic elegance and curb appeal.',
   },
   {
     icon: Clock,
-    title: '30-50 Year Lifespan',
-    description: 'Properly maintained cedar shakes can last 30-50 years, with premium treated shakes lasting even longer.',
+  title: '30-50 Year Lifespan',
+  description: 'Properly maintained cedar shakes can last 30-50 years, with premium treated shakes lasting even longer.',
   },
   {
     icon: Shield,
-    title: 'Natural Insulation',
-    description: 'Cedar provides R-values 2x greater than asphalt shingles, reducing energy costs and improving comfort.',
+  title: 'Natural Insulation',
+  description: 'Cedar provides R-values 2x greater than asphalt shingles, reducing energy costs and improving comfort.',
   },
   {
     icon: Leaf,
-    title: 'Eco-Friendly',
-    description: '100% natural and renewable material. Cedar is biodegradable and sustainably harvested from managed forests.',
+  title: 'Eco-Friendly',
+  description: '100% natural and renewable material. Cedar is biodegradable and sustainably harvested from managed forests.',
   },
   {
     icon: Sparkles,
-    title: 'Weather Resistant',
-    description: 'Naturally resistant to harsh weather, UV rays, and moisture. Expands and contracts with temperature changes.',
+  title: 'Weather Resistant',
+  description: 'Naturally resistant to harsh weather, UV rays, and moisture. Expands and contracts with temperature changes.',
   },
   {
     icon: Paintbrush,
-    title: 'Ages Beautifully',
-    description: 'Develops a distinguished silver-gray patina over time, adding character to your home.',
+  title: 'Ages Beautifully',
+  description: 'Develops a distinguished silver-gray patina over time, adding character to your home.',
   },
 ];
 
@@ -108,23 +107,23 @@ const benefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Certified Cedar Installers',
-    description: 'Our team includes certified cedar shake specialists trained in proper installation and ventilation techniques.',
+  title: 'Certified Cedar Installers',
+  description: 'Our team includes certified cedar shake specialists trained in proper installation and ventilation techniques.',
   },
   {
     icon: Landmark,
-    title: 'Historic & Luxury Expertise',
-    description: 'Extensive experience with Charlotte\'s historic properties and custom luxury homes requiring authentic wood roofing.',
+  title: 'Historic & Luxury Expertise',
+  description: 'Extensive experience with Charlotte\'s historic properties and custom luxury homes requiring authentic wood roofing.',
   },
   {
     icon: Home,
-    title: 'HOA & Architectural Review',
-    description: 'We handle HOA submissions and work with architectural review boards in Charlotte\'s prestigious communities.',
+  title: 'HOA & Architectural Review',
+  description: 'We handle HOA submissions and work with architectural review boards in Charlotte\'s prestigious communities.',
   },
   {
     icon: Shield,
-    title: 'Premium Materials',
-    description: 'We use only #1 Grade Western Red Cedar and offer premium fire-treated and preservative-treated options.',
+  title: 'Premium Materials',
+  description: 'We use only #1 Grade Western Red Cedar and offer premium fire-treated and preservative-treated options.',
   },
 ];
 
@@ -132,23 +131,23 @@ const whyChooseUs = [
 const cedarOptions = [
   {
     title: 'Natural Cedar Shakes',
-    description: 'Traditional hand-split cedar shakes with rustic, textured appearance. Thicker and more irregular for authentic character.',
-    ideal: 'Historic homes, estates, custom architecturally-designed homes',
+  description: 'Traditional hand-split cedar shakes with rustic, textured appearance. Thicker and more irregular for authentic character.',
+  ideal: 'Historic homes, estates, custom architecturally-designed homes',
   },
   {
     title: 'Cedar Shingles',
-    description: 'Precision sawn for a smoother, more uniform appearance. Machine-cut for consistent thickness and clean lines.',
-    ideal: 'Colonial, Cape Cod, and traditional architectural styles',
+  description: 'Precision sawn for a smoother, more uniform appearance. Machine-cut for consistent thickness and clean lines.',
+  ideal: 'Colonial, Cape Cod, and traditional architectural styles',
   },
   {
     title: 'Fire-Treated Cedar',
-    description: 'Cedar treated with fire retardant to meet Class A, B, or C fire ratings. Required in many HOA communities.',
-    ideal: 'HOA communities, fire-prone areas, insurance requirements',
+  description: 'Cedar treated with fire retardant to meet Class A, B, or C fire ratings. Required in many HOA communities.',
+  ideal: 'HOA communities, fire-prone areas, insurance requirements',
   },
   {
     title: 'Preservative-Treated Cedar',
-    description: 'Pressure-treated with wood preservatives for enhanced rot, mold, and insect resistance in humid climates.',
-    ideal: 'Charlotte\'s humid climate, shaded properties, near lakes',
+  description: 'Pressure-treated with wood preservatives for enhanced rot, mold, and insect resistance in humid climates.',
+  ideal: 'Charlotte\'s humid climate, shaded properties, near lakes',
   },
 ];
 
@@ -170,32 +169,32 @@ const luxuryNeighborhoods = [
 const faqs = [
   {
     question: 'How much does cedar shake roofing cost in Charlotte NC?',
-    answer:
+  answer:
       'Cedar shake roofing in Charlotte typically costs $15-$30 per square foot installed, depending on shake grade and treatment options. A full cedar shake roof on a typical Charlotte luxury home costs $25,000-$60,000+. Fire-treated and preservative-treated shakes cost more but provide enhanced protection in our humid climate. While more expensive than asphalt, cedar offers superior insulation and longevity.',
   },
   {
     question: 'How long does a cedar shake roof last in Charlotte?',
-    answer:
+  answer:
       'In Charlotte\'s climate, a well-maintained cedar shake roof typically lasts 30-40 years. Premium treated shakes can last 40-50+ years. Longevity depends on proper installation, adequate ventilation, regular maintenance, and treatment type. We recommend annual inspections and treatment applications every 3-5 years to maximize lifespan.',
   },
   {
     question: 'Does cedar shake roofing require special maintenance?',
-    answer:
+  answer:
       'Yes, cedar shakes require more maintenance than some roofing materials but less than many homeowners expect. Key maintenance includes: keeping the roof clear of debris and leaves, treating with preservative every 3-5 years, addressing moss/mold promptly, maintaining proper ventilation, and annual professional inspections. Our maintenance plans make this easy.',
   },
   {
     question: 'Is cedar shake roofing a fire hazard?',
-    answer:
+  answer:
       'Untreated cedar is combustible, but fire-treated cedar shakes meet Class A, B, or C fire ratings. Many Charlotte HOAs require fire-treated cedar. We primarily install fire-treated shakes which have been pressure-treated with fire retardant chemicals. These treated shakes are as fire-resistant as other common roofing materials.',
   },
   {
     question: 'Will my HOA approve cedar shake roofing?',
-    answer:
+  answer:
       'Most Charlotte HOAs in affluent neighborhoods approve cedar shake roofing, especially for traditional and historic architectural styles. Many HOAs specifically require fire-treated cedar. We handle HOA submissions and architectural review board presentations. We can provide samples, specifications, and photos of our completed cedar shake installations in similar communities.',
   },
   {
     question: 'What\'s the difference between cedar shakes and cedar shingles?',
-    answer:
+  answer:
       'Cedar shakes are split from logs (hand-split face) for a rustic, textured appearance with irregular thickness. Cedar shingles are sawn on both sides for a smoother, more uniform look. Shakes are thicker (½" to ¾") and more weather-resistant, while shingles (less than ½") provide cleaner lines. The choice depends on your architectural style and aesthetic preferences.',
   },
 ];
@@ -211,7 +210,6 @@ export default function CedarShakeRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`}
         pageName="Cedar Shake Roofing Charlotte NC"
@@ -293,7 +291,7 @@ export default function CedarShakeRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Cedar is the choice for Charlotte homeowners who appreciate natural beauty,
-              exceptional insulation, and timeless architectural appeal.
+  exceptional insulation, and timeless architectural appeal.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -349,7 +347,7 @@ export default function CedarShakeRoofingCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 Cedar shake installation requires specialized expertise for proper ventilation,
-                waterproofing, and longevity. Best Roofing Now has the certified training and
+  waterproofing, and longevity. Best Roofing Now has the certified training and
                 experience to deliver exceptional cedar installations that last.
               </p>
               <div className="space-y-6">

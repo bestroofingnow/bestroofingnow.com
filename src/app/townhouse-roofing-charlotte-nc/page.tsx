@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Townhouse Roofing Charlotte NC | HOA Compliant | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated townhouse roofing experts in Charlotte NC. HOA compliant installations, shared roof specialists, and complete townhome roofing services. Free estimates.',
-    url: `${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional townhouse roofing services in Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional townhouse roofing services in Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,33 +67,33 @@ export const metadata: Metadata = {
 const townhouseServices = [
   {
     icon: Home,
-    title: 'Townhome Roof Replacement',
-    description: 'Complete roof replacement for townhouses with attention to shared walls and coordinated scheduling with neighbors.',
+  title: 'Townhome Roof Replacement',
+  description: 'Complete roof replacement for townhouses with attention to shared walls and coordinated scheduling with neighbors.',
   },
   {
     icon: Building2,
-    title: 'Shared Roof Systems',
-    description: 'Expert handling of connected roofing systems shared between multiple townhouse units.',
+  title: 'Shared Roof Systems',
+  description: 'Expert handling of connected roofing systems shared between multiple townhouse units.',
   },
   {
     icon: FileCheck,
-    title: 'HOA Compliance',
-    description: 'We work directly with your HOA to ensure all materials and colors meet community guidelines.',
+  title: 'HOA Compliance',
+  description: 'We work directly with your HOA to ensure all materials and colors meet community guidelines.',
   },
   {
     icon: Handshake,
-    title: 'Neighbor Coordination',
-    description: 'We coordinate with adjacent unit owners when work affects shared roof sections.',
+  title: 'Neighbor Coordination',
+  description: 'We coordinate with adjacent unit owners when work affects shared roof sections.',
   },
   {
     icon: Ruler,
-    title: 'Precise Matching',
-    description: 'Expert color and style matching to maintain visual continuity with neighboring units.',
+  title: 'Precise Matching',
+  description: 'Expert color and style matching to maintain visual continuity with neighboring units.',
   },
   {
     icon: PaintBucket,
-    title: 'HOA Color Matching',
-    description: 'Access to all major HOA-approved shingle colors and styles in Charlotte communities.',
+  title: 'HOA Color Matching',
+  description: 'Access to all major HOA-approved shingle colors and styles in Charlotte communities.',
   },
 ];
 
@@ -101,33 +101,33 @@ const townhouseServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'HOA Experience',
-    description: "We've worked with 100+ HOAs across Charlotte and understand their requirements.",
+  title: 'HOA Experience',
+  description: "We've worked with 100+ HOAs across Charlotte and understand their requirements.",
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte townhouse owners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte townhouse owners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Military values of integrity and attention to detail in every townhouse project.',
+  title: 'Veteran-Owned',
+  description: 'Military values of integrity and attention to detail in every townhouse project.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with liability coverage protecting your HOA and property.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with liability coverage protecting your HOA and property.',
   },
   {
     icon: Users,
-    title: 'Neighbor Friendly',
-    description: 'We minimize disruption and maintain clean, safe job sites in townhouse communities.',
+  title: 'Neighbor Friendly',
+  description: 'We minimize disruption and maintain clean, safe job sites in townhouse communities.',
   },
   {
     icon: Clock,
-    title: 'Efficient Scheduling',
-    description: 'Coordinated timelines that respect HOA rules and neighbor schedules.',
+  title: 'Efficient Scheduling',
+  description: 'Coordinated timelines that respect HOA rules and neighbor schedules.',
   },
 ];
 
@@ -155,42 +155,42 @@ const townhouseCommunities = [
 const faqs = [
   {
     question: 'Do I need HOA approval before replacing my townhouse roof?',
-    answer:
+  answer:
       "Most Charlotte HOAs require approval before any exterior modifications including roofing. We handle the approval process for you by submitting proper documentation, material specifications, and color samples to your HOA's architectural review committee. We're experienced with HOA requirements and can help expedite the approval process.",
   },
   {
     question: 'Who is responsible for a shared townhouse roof?',
-    answer:
+  answer:
       "Responsibility for shared roofs varies by HOA. In some communities, the HOA handles all roof maintenance and replacement. In others, individual owners are responsible for their section. We can help you review your HOA documents to determine responsibility and coordinate with neighbors or the association as needed.",
   },
   {
     question: 'Can you match my roof to neighboring townhouse units?',
-    answer:
+  answer:
       "Absolutely! Maintaining visual continuity is essential in townhouse communities. We carefully match shingle colors, styles, and installation patterns to blend seamlessly with adjacent units. We work with all major manufacturers' HOA-approved color palettes and can provide samples for comparison before work begins.",
   },
   {
     question: 'How do you handle roofing where townhouses are attached?',
-    answer:
+  answer:
       "Shared walls and connected roof sections require special attention. We carefully flash and seal transition points between units, coordinate timing with neighbors when work affects shared areas, and ensure proper drainage across unit boundaries. Our experienced crews understand the unique challenges of attached housing.",
   },
   {
     question: 'How long does townhouse roof replacement take?',
-    answer:
+  answer:
       "Most individual townhouse roofs can be completed in 1-2 days. However, if we're coordinating with neighbors on shared sections, timeline may extend slightly. We work efficiently to minimize disruption to your community and always clean up thoroughly at the end of each day.",
   },
   {
     question: 'Do you work directly with HOA management companies?',
-    answer:
+  answer:
       "Yes, we regularly work with HOA management companies throughout Charlotte including FirstService Residential, CAMS, and Association Management Group. We can submit required documentation, attend meetings if needed, and ensure all work meets community standards.",
   },
   {
     question: 'What roofing materials do HOAs typically approve?',
-    answer:
+  answer:
       "Most Charlotte HOAs approve architectural shingles from major manufacturers like CertainTeed, GAF, and Owens Corning in specific color palettes. Some communities require specific products or colors. As certified installers for all major brands, we can provide any HOA-approved materials and offer extended warranty options.",
   },
   {
     question: 'How much does townhouse roof replacement cost in Charlotte?',
-    answer:
+  answer:
       "Townhouse roof replacement in Charlotte typically ranges from $6,000-$15,000 depending on size, pitch, and material choice. Townhouses generally cost less than single-family homes due to smaller roof areas. We provide free, detailed estimates and can work within HOA budget requirements for community-wide projects.",
   },
 ];
@@ -205,7 +205,6 @@ export default function TownhouseRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

@@ -55,16 +55,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Denver NC | Insurance Help | Best Roofing Now',
-    description:
+  description:
       'Expert storm damage roof repair in Denver NC on Lake Norman western shore. Hail, wind, and emergency repairs. Insurance claim assistance. Free storm damage inspections!',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero7,
-        width: 1200,
-        height: 630,
-        alt: 'Storm damage roof repair services in Denver NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Storm damage roof repair services in Denver NC - Best Roofing Now',
       },
     ],
   },
@@ -74,39 +74,39 @@ export const metadata: Metadata = {
 const stormServices = [
   {
     icon: CloudLightning,
-    title: 'Hail Damage Repair',
-    description: 'Expert assessment and repair of hail damage including shingle bruising, cracking, and granule loss on western shore homes.',
-    href: '/services/storm-damage',
+  title: 'Hail Damage Repair',
+  description: 'Expert assessment and repair of hail damage including shingle bruising, cracking, and granule loss on western shore homes.',
+  href: '/services/storm-damage',
   },
   {
     icon: CloudRain,
-    title: 'Wind Damage Repair',
-    description: 'Repair of wind-lifted, torn, or missing shingles caused by storms crossing Lake Norman from the west.',
-    href: '/services/storm-damage',
+  title: 'Wind Damage Repair',
+  description: 'Repair of wind-lifted, torn, or missing shingles caused by storms crossing Lake Norman from the west.',
+  href: '/services/storm-damage',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Tarping',
-    description: '24/7 emergency tarping service for Denver homes exposed to active leaks after severe storms.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Tarping',
+  description: '24/7 emergency tarping service for Denver homes exposed to active leaks after severe storms.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: FileText,
-    title: 'Insurance Claims Help',
-    description: 'Complete insurance claim assistance from documentation through adjuster meetings to settlement advocacy.',
-    href: '/services/insurance-claims',
+  title: 'Insurance Claims Help',
+  description: 'Complete insurance claim assistance from documentation through adjuster meetings to settlement advocacy.',
+  href: '/services/insurance-claims',
   },
   {
     icon: Umbrella,
-    title: 'Tree Damage Repair',
-    description: 'Removal of fallen branches and tree limbs, plus structural repair from impact damage near wooded areas.',
-    href: '/services/emergency-roofing',
+  title: 'Tree Damage Repair',
+  description: 'Removal of fallen branches and tree limbs, plus structural repair from impact damage near wooded areas.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Shield,
-    title: 'Water Damage Prevention',
-    description: 'Fast response to prevent water intrusion and interior damage after roof breaches on lakefront properties.',
-    href: '/services/emergency-roofing',
+  title: 'Water Damage Prevention',
+  description: 'Fast response to prevent water intrusion and interior damage after roof breaches on lakefront properties.',
+  href: '/services/emergency-roofing',
   },
 ];
 
@@ -114,33 +114,33 @@ const stormServices = [
 const whyChooseUs = [
   {
     icon: FileText,
-    title: 'Insurance Experts',
-    description: 'Extensive experience working with all major insurance companies to maximize your storm damage claim.',
+  title: 'Insurance Experts',
+  description: 'Extensive experience working with all major insurance companies to maximize your storm damage claim.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Response',
-    description: 'Round-the-clock emergency service for Denver homes when severe Lake Norman storms strike.',
+  title: '24/7 Emergency Response',
+  description: 'Round-the-clock emergency service for Denver homes when severe Lake Norman storms strike.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and proven storm restoration track record.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and proven storm restoration track record.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from homeowners we've helped after storms.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from homeowners we've helped after storms.`,
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive insurance covering Lincoln County operations.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive insurance covering Lincoln County operations.',
   },
   {
     icon: Users,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with military discipline applied to every storm restoration project.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with military discipline applied to every storm restoration project.',
   },
 ];
 
@@ -174,42 +174,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why does Denver NC get hit harder by storms than other Lake Norman towns?',
-    answer:
+  answer:
       'Denver sits on the western shore of Lake Norman, directly in the path of storm systems that move west-to-east across the Piedmont. Without the buffer of land mass to the west, storms carry full force across open water before striking Denver properties. This unique exposure means Denver homes in communities like Sailview and Pinnacle Shores often sustain more wind and hail damage than homes on the eastern shore.',
   },
   {
     question: 'Will my insurance cover storm damage repairs in Denver NC?',
-    answer:
+  answer:
       'Most homeowners insurance policies in North Carolina cover storm damage from wind, hail, and fallen trees. Your specific coverage depends on your policy and deductible. We work directly with all major insurance companies and have extensive experience with Lincoln County storm claims. Our free inspection includes detailed photo documentation that strengthens your claim.',
   },
   {
     question: 'How soon after a storm should I get my Denver NC roof inspected?',
-    answer:
+  answer:
       'We recommend scheduling an inspection within 1-2 weeks after any significant storm. North Carolina insurance policies have time limits for filing claims, and small damage can worsen quickly - especially on lakefront properties exposed to moisture and follow-up storms. Our Denver NC team can typically inspect your roof within 24-48 hours of your call.',
   },
   {
     question: 'Do you work with my insurance company on Denver NC storm claims?',
-    answer:
+  answer:
       'Yes. Best Roofing Now has extensive experience working with State Farm, Allstate, Nationwide, Liberty Mutual, USAA, and every major insurer. We handle the complete claims process for Denver homeowners: documenting damage with detailed photos, meeting with adjusters at your property, supplementing underpaid claims, and advocating for fair settlements.',
   },
   {
     question: 'What should I do immediately after a storm damages my Denver home?',
-    answer:
+  answer:
       'First, ensure your family is safe and stay away from any downed power lines or structural damage. Document visible damage with photos from the ground - do not climb on the roof. If you have active leaks, place buckets to catch water and move valuables. Call us at (704) 605-6047 for emergency tarping if needed. Do not make permanent repairs before your insurance inspection.',
   },
   {
     question: 'How long does storm damage repair take in Denver NC?',
-    answer:
+  answer:
       'Timeline depends on damage extent and insurance processing. Emergency tarping happens within hours. Minor repairs can be completed within days of insurance approval. Full roof replacements take 1-3 days once materials arrive. The insurance claim process typically takes 2-4 weeks. We coordinate with Lincoln County for any required permits and keep you informed throughout.',
   },
   {
     question: 'Are there specific Lincoln County requirements for storm damage repairs?',
-    answer:
+  answer:
       'Lincoln County requires building permits for roof replacements and significant structural repairs. Denver NC also falls under specific zoning and lake overlay regulations near the shoreline. Our team handles all Lincoln County permitting requirements, ensures work meets current building codes, and coordinates inspections so you don\'t have to worry about compliance.',
   },
   {
     question: 'Can storm damage be covered if my Denver roof was already aging?',
-    answer:
+  answer:
       'Yes, insurance typically covers storm damage even on older roofs. The key is demonstrating that damage was caused by a specific weather event, not normal wear. Our inspectors are trained to distinguish between storm damage and pre-existing conditions, and we document findings in a way that clearly shows storm-related damage to support your claim.',
   },
 ];
@@ -236,9 +236,9 @@ export default function StormDamageRoofRepairDenverNCPage() {
       <LocationSchema
         location={{
           city: 'Denver',
-          state: 'NC',
-          slug: 'denver-nc',
-          county: 'Lincoln',
+  state: 'NC',
+  slug: 'denver-nc',
+  county: 'Lincoln',
         }}
       />
       <AISearchOptimizationBundle
@@ -250,18 +250,18 @@ export default function StormDamageRoofRepairDenverNCPage() {
         faqs={[
           {
             question: 'Who repairs storm damaged roofs in Denver NC?',
-            answer: 'Best Roofing Now provides expert storm damage roof repair in Denver NC with 24/7 emergency response on the Lake Norman western shore. We specialize in hail damage, wind damage, and insurance claim assistance. We serve Trilogy, Sailview, Westport, and all Denver neighborhoods. Call 704-605-6047 for a free storm damage inspection.',
-            speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Denver NC with 24/7 emergency response on Lake Norman western shore. Call 704-605-6047.',
+  answer: 'Best Roofing Now provides expert storm damage roof repair in Denver NC with 24/7 emergency response on the Lake Norman western shore. We specialize in hail damage, wind damage, and insurance claim assistance. We serve Trilogy, Sailview, Westport, and all Denver neighborhoods. Call 704-605-6047 for a free storm damage inspection.',
+  speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Denver NC with 24/7 emergency response on Lake Norman western shore. Call 704-605-6047.',
           },
           {
             question: 'Does insurance cover storm damage roof repair in Denver NC?',
-            answer: 'Yes, most homeowners insurance policies in North Carolina cover storm damage including hail, wind, and fallen trees. Best Roofing Now works directly with all major insurance companies, meets with adjusters, and helps maximize your claim settlement for Denver NC homeowners in Lincoln County.',
-            speakableAnswer: 'Yes, most NC homeowners insurance covers storm damage. We help Denver NC homeowners maximize claims. Call 704-605-6047.',
+  answer: 'Yes, most homeowners insurance policies in North Carolina cover storm damage including hail, wind, and fallen trees. Best Roofing Now works directly with all major insurance companies, meets with adjusters, and helps maximize your claim settlement for Denver NC homeowners in Lincoln County.',
+  speakableAnswer: 'Yes, most NC homeowners insurance covers storm damage. We help Denver NC homeowners maximize claims. Call 704-605-6047.',
           },
           {
             question: 'How quickly can you respond to storm damage in Denver NC?',
-            answer: 'Best Roofing Now offers 24/7 emergency storm damage response in Denver NC and the Lake Norman western shore. Emergency tarping within hours, full inspections within 24-48 hours. We understand the unique storm exposure Denver faces on the western shore.',
-            speakableAnswer: 'We offer 24/7 emergency response in Denver NC. Emergency tarping within hours, inspections within 24 to 48 hours.',
+  answer: 'Best Roofing Now offers 24/7 emergency storm damage response in Denver NC and the Lake Norman western shore. Emergency tarping within hours, full inspections within 24-48 hours. We understand the unique storm exposure Denver faces on the western shore.',
+  speakableAnswer: 'We offer 24/7 emergency response in Denver NC. Emergency tarping within hours, inspections within 24 to 48 hours.',
           },
         ]}
       />
@@ -294,7 +294,7 @@ export default function StormDamageRoofRepairDenverNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Denver NC sits directly in the path of storms crossing Lake Norman, making western shore homes
               especially vulnerable to hail and wind damage. Best Roofing Now provides rapid emergency response,
-              thorough damage assessments, and expert insurance claim assistance to restore your roof after every storm.
+  thorough damage assessments, and expert insurance claim assistance to restore your roof after every storm.
             </p>
 
             {/* CTA Buttons */}
@@ -460,7 +460,7 @@ export default function StormDamageRoofRepairDenverNCPage() {
               <p className="text-gray text-lg mb-8">
                 Denver&apos;s position on the western shore of Lake Norman means storms hit your home with
                 less warning and more force. You need a roofing company that understands this unique exposure,
-                responds rapidly, and has the experience to navigate Lincoln County requirements and insurance
+  responds rapidly, and has the experience to navigate Lincoln County requirements and insurance
                 claims efficiently.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

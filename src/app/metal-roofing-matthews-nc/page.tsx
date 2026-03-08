@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Matthews NC | Expert Installation | Best Roofing Now',
-    description:
+  description:
       'Premium metal roofing installation in Matthews NC. Standing seam, metal shingles, and more. 50+ year lifespan, energy efficient, low maintenance.',
-    url: `${SITE_CONFIG.url}/metal-roofing-matthews-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/metal-roofing-matthews-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Metal roofing installation in Matthews NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Metal roofing installation in Matthews NC - Best Roofing Now',
       },
     ],
   },
@@ -63,33 +63,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '50+ Year Lifespan',
-    description: 'Metal roofs last 2-3 times longer than traditional asphalt shingles.',
+  title: '50+ Year Lifespan',
+  description: 'Metal roofs last 2-3 times longer than traditional asphalt shingles.',
   },
   {
     icon: Zap,
-    title: 'Energy Efficient',
-    description: 'Reflective coatings reduce cooling costs by up to 25%.',
+  title: 'Energy Efficient',
+  description: 'Reflective coatings reduce cooling costs by up to 25%.',
   },
   {
     icon: Shield,
-    title: 'Storm Resistant',
-    description: 'Withstands winds up to 140 mph and resists hail damage.',
+  title: 'Storm Resistant',
+  description: 'Withstands winds up to 140 mph and resists hail damage.',
   },
   {
     icon: Leaf,
-    title: 'Eco-Friendly',
-    description: '100% recyclable at end of life, often made from recycled materials.',
+  title: 'Eco-Friendly',
+  description: '100% recyclable at end of life, often made from recycled materials.',
   },
   {
     icon: Award,
-    title: 'Low Maintenance',
-    description: 'Minimal upkeep required - no cracking, shrinking, or erosion.',
+  title: 'Low Maintenance',
+  description: 'Minimal upkeep required - no cracking, shrinking, or erosion.',
   },
   {
     icon: Star,
-    title: 'Increases Value',
-    description: 'Metal roofing can increase your home\'s resale value.',
+  title: 'Increases Value',
+  description: 'Metal roofing can increase your home\'s resale value.',
   },
 ];
 
@@ -97,19 +97,19 @@ const benefits = [
 const metalTypes = [
   {
     title: 'Standing Seam',
-    description: 'The premium choice with concealed fasteners and clean, modern lines.',
+  description: 'The premium choice with concealed fasteners and clean, modern lines.',
   },
   {
     title: 'Metal Shingles',
-    description: 'Combines traditional shingle look with metal durability.',
+  description: 'Combines traditional shingle look with metal durability.',
   },
   {
     title: 'Corrugated Metal',
-    description: 'Cost-effective option for residential and agricultural buildings.',
+  description: 'Cost-effective option for residential and agricultural buildings.',
   },
   {
     title: 'Stone-Coated Steel',
-    description: 'Metal durability with the appearance of slate, tile, or shake.',
+  description: 'Metal durability with the appearance of slate, tile, or shake.',
   },
 ];
 
@@ -117,32 +117,32 @@ const metalTypes = [
 const faqs = [
   {
     question: 'How much does metal roofing cost in Matthews NC?',
-    answer:
+  answer:
       'Metal roofing in Matthews typically costs $12,000 to $35,000 for most homes, depending on size, style, and material. While upfront cost is higher than asphalt, the 50+ year lifespan makes it more economical long-term.',
   },
   {
     question: 'Is metal roofing noisy during rain?',
-    answer:
+  answer:
       'Modern metal roofing installed over solid decking with proper underlayment is no noisier than any other roofing material.',
   },
   {
     question: 'Will a metal roof attract lightning?',
-    answer:
+  answer:
       'No, metal roofing does not attract lightning. If lightning does strike, metal roofing dissipates the charge safely and is non-combustible.',
   },
   {
     question: 'Can you install a metal roof over existing shingles?',
-    answer:
+  answer:
       'While possible in some cases, we typically recommend removing old shingles for best results and proper warranty coverage.',
   },
   {
     question: 'What colors and styles are available?',
-    answer:
+  answer:
       'Metal roofing comes in a wide variety of colors and styles. We offer standing seam, metal shingles, stone-coated steel in dozens of colors.',
   },
   {
     question: 'How long does metal roof installation take?',
-    answer:
+  answer:
       'Most residential metal roof installations in Matthews are completed in 2-5 days depending on size and complexity.',
   },
 ];

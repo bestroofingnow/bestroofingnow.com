@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Davidson NC | Davidson College Area Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Davidson NC and Lake Norman. Expert roofers for historic homes and modern properties. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofing-davidson-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-davidson-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Davidson NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Davidson NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Davidson homes including historic properties and modern builds.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Davidson homes including historic properties and modern builds.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Davidson businesses and commercial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Davidson businesses and commercial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Expert repairs for leaks, missing shingles, and storm damage in Davidson.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Expert repairs for leaks, missing shingles, and storm damage in Davidson.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with materials suited to Davidson\'s architectural styles.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with materials suited to Davidson\'s architectural styles.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Davidson homeowners with detailed reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Davidson homeowners with detailed reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Davidson residents need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Davidson residents need us most.',
   },
 ];
 
@@ -169,42 +169,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Davidson NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Davidson NC and the entire Lake Norman area from our Charlotte headquarters. We provide complete roofing services including roof repair, replacement, inspection, and storm damage restoration to all Davidson neighborhoods, from the historic downtown to lakefront communities.',
   },
   {
     question: 'Can you work on historic homes in Davidson NC?',
-    answer:
+  answer:
       'Absolutely. Davidson is known for its charming historic homes, particularly near Davidson College and in Old Davidson. Our team has experience working on historic properties, understanding the need to maintain architectural integrity while providing modern protection. We can match period-appropriate materials and styles.',
   },
   {
     question: 'How much does roof replacement cost in Davidson NC?',
-    answer:
+  answer:
       'Roof replacement costs in Davidson typically range from $8,000 to $25,000 for most homes, depending on roof size, pitch, and material choice. Historic homes or properties requiring specialty materials may vary. We provide free, detailed estimates with transparent pricing.',
   },
   {
     question: 'What roofing materials work best for Davidson homes?',
-    answer:
+  answer:
       'For Davidson homes, we recommend high-quality architectural shingles from CertainTeed, GAF, or Owens Corning. Historic properties may benefit from dimensional shingles that replicate traditional looks. Metal roofing is excellent for longevity, and we also offer slate-look synthetic options.',
   },
   {
     question: 'Do you handle insurance claims for Davidson homeowners?',
-    answer:
+  answer:
       'Yes, we have extensive experience helping Davidson homeowners with insurance claims. Lake Norman sees severe weather, and we provide thorough damage documentation, meet with adjusters, and advocate for fair settlements. Many roofs qualify for insurance coverage after storm events.',
   },
   {
     question: 'How long does a roof replacement take in Davidson?',
-    answer:
+  answer:
       'Most residential roof replacements in Davidson are completed in 1-3 days. We understand Davidson\'s close-knit community character and work efficiently while minimizing disruption to neighbors. Larger or historic homes may take 3-5 days to ensure proper care.',
   },
   {
     question: 'Do you offer free roof inspections in Davidson?',
-    answer:
+  answer:
       'Yes! We offer completely free roof inspections throughout Davidson and Lake Norman. Our certified inspectors will thoroughly examine your roof - including attention to details important for historic homes - and provide a detailed written report with photos.',
   },
   {
     question: 'Are you familiar with Davidson\'s building requirements?',
-    answer:
+  answer:
       'Yes, Davidson has specific architectural standards to preserve the town\'s character. We\'re familiar with local requirements and can help you select materials and colors that comply with Davidson\'s design guidelines while protecting your home.',
   },
 ];

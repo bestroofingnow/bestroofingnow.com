@@ -23,7 +23,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Guards Charlotte NC | Mesh, Micro-Mesh & Screen Systems | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated gutter guard installation in Charlotte NC. Mesh, micro-mesh, screen, and reverse-curve systems. Prevent clogs, protect your home. Free estimates.',
-    url: `${SITE_CONFIG.url}/gutter-guards-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-guards-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.gutters,
-        width: 1200,
-        height: 630,
-        alt: 'Professional gutter guard installation Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional gutter guard installation Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -71,39 +71,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: ShieldCheck,
-    title: 'Micro-Mesh Gutter Guards',
-    description: 'Fine mesh screens that block even the smallest debris while allowing water to flow freely.',
-    href: '/services/gutters',
+  title: 'Micro-Mesh Gutter Guards',
+  description: 'Fine mesh screens that block even the smallest debris while allowing water to flow freely.',
+  href: '/services/gutters',
   },
   {
     icon: Leaf,
-    title: 'Leaf Guard Systems',
-    description: 'Premium leaf protection systems that keep leaves and debris out of your gutters year-round.',
-    href: '/services/gutters',
+  title: 'Leaf Guard Systems',
+  description: 'Premium leaf protection systems that keep leaves and debris out of your gutters year-round.',
+  href: '/services/gutters',
   },
   {
     icon: Home,
-    title: 'Screen Gutter Guards',
-    description: 'Cost-effective screen solutions that prevent large debris from entering your gutter system.',
-    href: '/services/gutters',
+  title: 'Screen Gutter Guards',
+  description: 'Cost-effective screen solutions that prevent large debris from entering your gutter system.',
+  href: '/services/gutters',
   },
   {
     icon: Droplets,
-    title: 'Reverse Curve Guards',
-    description: 'Surface tension systems that direct water into gutters while debris falls away.',
-    href: '/services/gutters',
+  title: 'Reverse Curve Guards',
+  description: 'Surface tension systems that direct water into gutters while debris falls away.',
+  href: '/services/gutters',
   },
   {
     icon: Wrench,
-    title: 'Gutter Guard Repair',
-    description: 'Expert repair and replacement of existing gutter protection systems.',
-    href: '/services/gutters',
+  title: 'Gutter Guard Repair',
+  description: 'Expert repair and replacement of existing gutter protection systems.',
+  href: '/services/gutters',
   },
   {
     icon: Wind,
-    title: 'Complete Gutter Solutions',
-    description: 'Full gutter installation with integrated gutter guard protection systems.',
-    href: '/services/gutters',
+  title: 'Complete Gutter Solutions',
+  description: 'Full gutter installation with integrated gutter guard protection systems.',
+  href: '/services/gutters',
   },
 ];
 
@@ -111,33 +111,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability insurance coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability insurance coverage.',
   },
   {
     icon: Users,
-    title: 'Expert Installers',
-    description: 'Trained and certified gutter guard installation specialists with years of experience.',
+  title: 'Expert Installers',
+  description: 'Trained and certified gutter guard installation specialists with years of experience.',
   },
   {
     icon: Clock,
-    title: 'Lifetime Warranties',
-    description: 'Many of our gutter guard systems come with lifetime no-clog warranties.',
+  title: 'Lifetime Warranties',
+  description: 'Many of our gutter guard systems come with lifetime no-clog warranties.',
   },
 ];
 
@@ -185,42 +185,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What are the best gutter guards for Charlotte NC homes?',
-    answer:
+  answer:
       'The best gutter guards for Charlotte homes depend on your specific needs and budget. Micro-mesh guards offer the best protection against pine needles and small debris common in our area. Reverse curve systems work well for homes with heavy leaf fall. Our experts will assess your property and recommend the ideal solution for your situation during a free consultation.',
   },
   {
     question: 'How much do gutter guards cost in Charlotte NC?',
-    answer:
+  answer:
       'Gutter guard costs in Charlotte typically range from $7-$30 per linear foot installed, depending on the type and quality. Basic screen guards start around $7-$10/ft, while premium micro-mesh systems range from $15-$30/ft. A typical Charlotte home with 150-200 feet of gutters can expect to pay between $1,500-$4,500 for quality gutter guard installation.',
   },
   {
     question: 'Do gutter guards really work?',
-    answer:
+  answer:
       'Yes, quality gutter guards are highly effective at preventing clogs and reducing gutter maintenance. While no system is 100% maintenance-free, good gutter guards can reduce cleaning frequency from 2-4 times per year to once every few years. They also prevent pest infestations, ice dams, and water damage caused by clogged gutters.',
   },
   {
     question: 'Can you install gutter guards on existing gutters?',
-    answer:
+  answer:
       'Absolutely. Most gutter guard systems are designed to retrofit onto existing gutters without replacing them. Our technicians will inspect your current gutters to ensure they are in good condition and properly pitched before installing guards. If repairs are needed, we can handle those as well.',
   },
   {
     question: 'How long do gutter guards last?',
-    answer:
+  answer:
       'Quality gutter guards typically last 20-25 years or more with proper installation. Many premium systems come with lifetime warranties. The longevity depends on the material - aluminum and stainless steel micro-mesh guards last the longest, while plastic screens may need replacement after 10-15 years.',
   },
   {
     question: 'Will gutter guards prevent ice dams?',
-    answer:
+  answer:
       'Gutter guards help reduce ice dam formation by keeping gutters clear of debris that can trap water and freeze. However, for complete ice dam prevention in Charlotte winters, we recommend combining gutter guards with proper attic insulation and ventilation. We can assess your home and recommend a comprehensive solution.',
   },
   {
     question: 'Do gutter guards work with pine needles?',
-    answer:
+  answer:
       'Standard gutter guards may struggle with pine needles, which is important since Charlotte has many pine trees. Micro-mesh gutter guards are the best solution for pine needle problems, as the fine mesh prevents even small needles from entering while still allowing water to flow through.',
   },
   {
     question: 'Do you offer warranties on gutter guard installation?',
-    answer:
+  answer:
       'Yes, we offer comprehensive warranties on all gutter guard installations. This includes our own workmanship warranty plus manufacturer warranties that often extend 20-25 years or even lifetime coverage. We stand behind our installations and will address any issues that arise.',
   },
 ];
@@ -235,7 +235,6 @@ export default function GutterGuardsCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

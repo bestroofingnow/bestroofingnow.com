@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Davidson NC | Fast & Reliable | Best Roofing Now',
-    description: 'Expert roof repair services in Davidson NC. Same-day emergency repairs, storm damage restoration, leak fixes.',
-    url: `${SITE_CONFIG.url}/roof-repair-davidson-nc`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof repair services in Davidson NC' }],
+  description: 'Expert roof repair services in Davidson NC. Same-day emergency repairs, storm damage restoration, leak fixes.',
+  url: `${SITE_CONFIG.url}/roof-repair-davidson-nc`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof repair services in Davidson NC' }],
   },
 };
 

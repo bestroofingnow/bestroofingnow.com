@@ -31,7 +31,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -60,16 +59,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Industrial Roofing Charlotte NC | Warehouse & Factory Roofs | Best Roofing Now',
-    description:
+  description:
       'Expert industrial roofing contractors in Charlotte NC specializing in warehouses, factories, manufacturing plants & distribution centers. Licensed & insured with free estimates.',
-    url: `${SITE_CONFIG.url}/industrial-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/industrial-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Industrial roofing Charlotte NC - Best Roofing Now warehouse roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Industrial roofing Charlotte NC - Best Roofing Now warehouse roofing project',
       },
     ],
   },
@@ -79,39 +78,39 @@ export const metadata: Metadata = {
 const industrialRoofingSystems = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Single-ply membrane ideal for large industrial roofs. Energy-efficient, reflective surface reduces cooling costs in warehouses and factories.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Single-ply membrane ideal for large industrial roofs. Energy-efficient, reflective surface reduces cooling costs in warehouses and factories.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'EPDM Rubber Roofing',
-    description: 'Durable synthetic rubber membrane perfect for large-scale industrial buildings. Excellent weather resistance and 30+ year lifespan.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Durable synthetic rubber membrane perfect for large-scale industrial buildings. Excellent weather resistance and 30+ year lifespan.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Standing seam and corrugated metal roofing for industrial applications. Superior durability and minimal maintenance requirements.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Standing seam and corrugated metal roofing for industrial applications. Superior durability and minimal maintenance requirements.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Shield,
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Multi-layer roofing systems providing exceptional protection for manufacturing facilities and heavy industrial operations.',
-    href: '/services/commercial-roofing',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Multi-layer roofing systems providing exceptional protection for manufacturing facilities and heavy industrial operations.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Spray Foam Roofing',
-    description: 'Seamless insulation and waterproofing ideal for irregularly shaped industrial roofs and energy-conscious facilities.',
-    href: '/services/commercial-roofing',
+  title: 'Spray Foam Roofing',
+  description: 'Seamless insulation and waterproofing ideal for irregularly shaped industrial roofs and energy-conscious facilities.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Industrial Roof Coatings',
-    description: 'Reflective coatings that extend roof life, reduce energy costs, and provide additional waterproofing for aging industrial roofs.',
-    href: '/services/commercial-roofing',
+  title: 'Industrial Roof Coatings',
+  description: 'Reflective coatings that extend roof life, reduce energy costs, and provide additional waterproofing for aging industrial roofs.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -119,33 +118,33 @@ const industrialRoofingSystems = [
 const industrialBuildingTypes = [
   {
     icon: Warehouse,
-    title: 'Warehouses & Distribution Centers',
-    description: 'Large-scale roofing solutions for logistics facilities, fulfillment centers, and storage warehouses of all sizes.',
+  title: 'Warehouses & Distribution Centers',
+  description: 'Large-scale roofing solutions for logistics facilities, fulfillment centers, and storage warehouses of all sizes.',
   },
   {
     icon: Factory,
-    title: 'Manufacturing Plants',
-    description: 'Heavy-duty roofing systems designed to handle the demands of manufacturing operations, including heat, chemicals, and heavy equipment.',
+  title: 'Manufacturing Plants',
+  description: 'Heavy-duty roofing systems designed to handle the demands of manufacturing operations, including heat, chemicals, and heavy equipment.',
   },
   {
     icon: Truck,
-    title: 'Transportation & Logistics Hubs',
-    description: 'Roofing for trucking terminals, rail facilities, and intermodal centers requiring durable, low-maintenance solutions.',
+  title: 'Transportation & Logistics Hubs',
+  description: 'Roofing for trucking terminals, rail facilities, and intermodal centers requiring durable, low-maintenance solutions.',
   },
   {
     icon: Zap,
-    title: 'Power & Utility Facilities',
-    description: 'Specialized roofing for substations, data centers, and utility buildings with unique environmental requirements.',
+  title: 'Power & Utility Facilities',
+  description: 'Specialized roofing for substations, data centers, and utility buildings with unique environmental requirements.',
   },
   {
     icon: Building2,
-    title: 'Food Processing Plants',
-    description: 'Sanitary roofing solutions meeting FDA and USDA requirements for food manufacturing and processing facilities.',
+  title: 'Food Processing Plants',
+  description: 'Sanitary roofing solutions meeting FDA and USDA requirements for food manufacturing and processing facilities.',
   },
   {
     icon: Ruler,
-    title: 'Cold Storage Facilities',
-    description: 'Insulated roofing systems designed to maintain temperature control for refrigerated warehouses and freezer facilities.',
+  title: 'Cold Storage Facilities',
+  description: 'Insulated roofing systems designed to maintain temperature control for refrigerated warehouses and freezer facilities.',
   },
 ];
 
@@ -153,33 +152,33 @@ const industrialBuildingTypes = [
 const whyChooseUs = [
   {
     icon: Ruler,
-    title: 'Large-Scale Expertise',
-    description: 'Experienced in projects ranging from 50,000 to 500,000+ square feet. We have the equipment and crews for industrial-scale work.',
+  title: 'Large-Scale Expertise',
+  description: 'Experienced in projects ranging from 50,000 to 500,000+ square feet. We have the equipment and crews for industrial-scale work.',
   },
   {
     icon: Clock,
-    title: 'Minimal Downtime',
-    description: 'We work around production schedules, offering night and weekend crews to keep your operations running smoothly.',
+  title: 'Minimal Downtime',
+  description: 'We work around production schedules, offering night and weekend crews to keep your operations running smoothly.',
   },
   {
     icon: Shield,
-    title: 'Safety First',
-    description: 'OSHA-compliant crews with extensive industrial safety training. Zero-incident track record on industrial sites.',
+  title: 'Safety First',
+  description: 'OSHA-compliant crews with extensive industrial safety training. Zero-incident track record on industrial sites.',
   },
   {
     icon: Award,
-    title: 'Manufacturer Certified',
-    description: 'Factory-certified installers for major industrial roofing systems including GAF, Carlisle, Firestone, and more.',
+  title: 'Manufacturer Certified',
+  description: 'Factory-certified installers for major industrial roofing systems including GAF, Carlisle, Firestone, and more.',
   },
   {
     icon: DollarSign,
-    title: 'Competitive Pricing',
-    description: 'Volume discounts for large projects. Transparent pricing with no hidden fees or surprise costs.',
+  title: 'Competitive Pricing',
+  description: 'Volume discounts for large projects. Transparent pricing with no hidden fees or surprise costs.',
   },
   {
     icon: Users,
-    title: 'Dedicated Project Managers',
-    description: 'Single point of contact throughout your project. Regular updates and clear communication at every stage.',
+  title: 'Dedicated Project Managers',
+  description: 'Single point of contact throughout your project. Regular updates and clear communication at every stage.',
   },
 ];
 
@@ -215,42 +214,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What is the best roofing system for industrial warehouses in Charlotte?',
-    answer:
+  answer:
       'For large industrial warehouses in Charlotte, we typically recommend TPO or EPDM membrane systems. TPO offers excellent energy efficiency with its reflective white surface, reducing cooling costs by up to 30% in our hot summers. EPDM provides superior durability and a 30+ year lifespan. For facilities requiring additional structural support or aesthetics, standing seam metal roofing is an excellent choice. We assess each building individually to recommend the optimal solution.',
   },
   {
     question: 'How much does industrial roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Industrial roof replacement costs in Charlotte typically range from $4 to $10 per square foot for membrane systems (TPO, EPDM) and $8 to $15 per square foot for metal roofing. A 100,000 sq ft warehouse might cost $400,000-$1,000,000 depending on the system, existing roof condition, and access requirements. We offer free detailed estimates and can discuss financing options for large projects.',
   },
   {
     question: 'Can you work on our facility without stopping production?',
-    answer:
+  answer:
       'Absolutely. We specialize in keeping industrial operations running during roof work. Our crews work in sections, offer night and weekend scheduling, and coordinate with your facility managers to avoid disruptions. We have completed numerous industrial projects in Charlotte without a single hour of production downtime for our clients.',
   },
   {
     question: 'How long does an industrial roof installation take?',
-    answer:
+  answer:
       'Industrial roof installation timelines depend on building size and complexity. A typical 50,000 sq ft warehouse takes 2-4 weeks, while larger facilities (200,000+ sq ft) may require 6-12 weeks. We provide detailed project schedules upfront and can fast-track projects when needed, though this may affect pricing.',
   },
   {
     question: 'Do you handle industrial roof repairs and maintenance?',
-    answer:
+  answer:
       'Yes, we offer comprehensive industrial roof repair and maintenance services. Our emergency response team can address leaks and storm damage quickly to protect your inventory and equipment. We also offer preventive maintenance programs with bi-annual inspections designed specifically for industrial facilities, helping extend roof life and prevent costly emergency repairs.',
   },
   {
     question: 'What warranties do you offer on industrial roofing projects?',
-    answer:
+  answer:
       'We offer manufacturer warranties ranging from 15 to 30 years depending on the roofing system and installation package. As certified installers for major manufacturers, we can provide NDL (No Dollar Limit) warranties on larger projects. Our workmanship warranty covers installation quality. Extended warranty options are available for facilities requiring enhanced coverage.',
   },
   {
     question: 'Can industrial roofs support solar panel installations?',
-    answer:
+  answer:
       'Many industrial roofing systems can accommodate solar installations. We work with solar contractors to ensure proper roof penetrations, load distribution, and waterproofing. If you are planning a solar installation, we can install a roof system specifically designed to support and integrate with solar arrays, potentially qualifying for additional energy incentives.',
   },
   {
     question: 'Do you work with property management companies and national accounts?',
-    answer:
+  answer:
       'Yes, we work with property management companies, REITs, and national accounts with multiple facilities in the Charlotte region. We offer dedicated account management, standardized reporting, and can coordinate multi-site projects. Our experience with national standards and compliance requirements makes us a trusted partner for institutional property owners.',
   },
 ];
@@ -265,7 +264,6 @@ export default function IndustrialRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/industrial-roofing-charlotte-nc`}
         pageName="Industrial Roofing Charlotte NC"
@@ -299,7 +297,7 @@ export default function IndustrialRoofingCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now specializes in industrial roofing for Charlotte&apos;s warehouses, manufacturing plants,
-              and distribution centers. We have the equipment, crews, and expertise to handle projects of any size
+  and distribution centers. We have the equipment, crews, and expertise to handle projects of any size
               while minimizing disruption to your operations.
             </p>
 

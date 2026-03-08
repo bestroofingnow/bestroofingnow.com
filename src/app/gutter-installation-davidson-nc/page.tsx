@@ -39,10 +39,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Installation Davidson NC | Seamless Gutters | Best Roofing Now',
-    description: 'Professional gutter installation in Davidson NC.',
-    url: `${SITE_CONFIG.url}/gutter-installation-davidson-nc`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter installation in Davidson NC' }],
+  description: 'Professional gutter installation in Davidson NC.',
+  url: `${SITE_CONFIG.url}/gutter-installation-davidson-nc`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter installation in Davidson NC' }],
   },
 };
 

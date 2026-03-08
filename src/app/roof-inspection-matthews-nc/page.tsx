@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Inspection Matthews NC | Free Inspections | Best Roofing Now',
-    description: 'Free comprehensive roof inspections in Matthews NC with detailed reports.',
-    url: `${SITE_CONFIG.url}/roof-inspection-matthews-nc`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof inspection in Matthews NC' }],
+  description: 'Free comprehensive roof inspections in Matthews NC with detailed reports.',
+  url: `${SITE_CONFIG.url}/roof-inspection-matthews-nc`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof inspection in Matthews NC' }],
   },
 };
 

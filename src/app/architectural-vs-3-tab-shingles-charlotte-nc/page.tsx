@@ -46,37 +46,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Architectural vs 3-Tab Shingles: Charlotte NC Comparison Guide',
-    description:
+  description:
       'Which asphalt shingle type is best for your Charlotte home? Complete comparison of cost, durability, and value.',
-    url: `${SITE_CONFIG.url}/architectural-vs-3-tab-shingles-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/architectural-vs-3-tab-shingles-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const shingleFAQs = [
   {
     question: 'What\'s the difference between architectural and 3-tab shingles?',
-    answer:
+  answer:
       'Architectural (dimensional) shingles have multiple layers creating a 3D appearance, weigh 50% more, and last 25-30 years. 3-tab shingles are single-layer, flat, uniform, and last 15-20 years. Architectural shingles offer better wind resistance (130 mph vs 60-70 mph) and more aesthetic appeal.',
   },
   {
     question: 'How much more do architectural shingles cost than 3-tab in Charlotte?',
-    answer:
+  answer:
       'In Charlotte, architectural shingles typically cost 20-40% more than 3-tab. For an average home, expect $10,000-$15,000 for architectural vs $7,000-$10,000 for 3-tab. The cost difference is usually $2,000-$5,000 total, but architectural shingles last 10+ years longer.',
   },
   {
     question: 'Are architectural shingles worth the extra money?',
-    answer:
+  answer:
       'For most Charlotte homeowners, yes. The longer lifespan (25-30 years vs 15-20), better wind resistance (critical for Charlotte storms), improved appearance, and higher home value typically outweigh the 20-40% higher upfront cost. Cost per year of life is often similar or better.',
   },
   {
     question: 'Which shingle type handles Charlotte weather better?',
-    answer:
+  answer:
       'Architectural shingles handle Charlotte\'s weather significantly better. They\'re rated for 130 mph winds (vs 60-70 mph for 3-tab), resist hail damage better due to their thickness, and their multi-layer construction handles temperature extremes better.',
   },
   {
     question: 'Do architectural shingles increase home value?',
-    answer:
+  answer:
       'Yes. Studies show architectural shingles can increase home value by 1-3% compared to 3-tab. In Charlotte\'s competitive real estate market, they also make homes more attractive to buyers who recognize the quality difference.',
   },
 ];
@@ -136,10 +136,10 @@ export default function ArchitecturalVs3TabShinglesPage() {
       <ArticleSchema
         post={{
           title: 'Architectural vs 3-Tab Shingles: Charlotte NC Comparison',
-          description: 'Which asphalt shingle type is best for your Charlotte home?',
-          slug: 'architectural-vs-3-tab-shingles-charlotte-nc',
-          datePublished: '2026-01-31',
-          dateModified: '2026-01-31',
+  description: 'Which asphalt shingle type is best for your Charlotte home?',
+  slug: 'architectural-vs-3-tab-shingles-charlotte-nc',
+  datePublished: '2026-01-31',
+  dateModified: '2026-01-31',
         }}
       />
       <FAQSchema faqs={shingleFAQs} />
@@ -311,7 +311,7 @@ export default function ArchitecturalVs3TabShinglesPage() {
             </p>
             <p className="text-white/80 mb-8">
               The 20-40% higher upfront cost is typically offset by the 50%+ longer lifespan,
-              better storm performance, and enhanced home value.
+  better storm performance, and enhanced home value.
             </p>
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}

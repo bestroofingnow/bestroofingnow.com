@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -42,16 +42,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Owens Corning Roofing Charlotte NC | Best Roofing Now',
-    description:
+  description:
       'Owens Corning shingle installation in Charlotte NC. Install Duration shingles with manufacturer warranties. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Owens Corning roofing installation Charlotte NC - Best Roofing Now preferred contractor',
+  width: 1200,
+  height: 630,
+  alt: 'Owens Corning roofing installation Charlotte NC - Best Roofing Now preferred contractor',
       },
     ],
   },
@@ -61,39 +61,39 @@ export const metadata: Metadata = {
 const owensCorningProducts = [
   {
     icon: Home,
-    title: 'TruDefinition Duration Shingles',
-    description: 'Award-winning shingles with SureNail Technology for superior wind resistance up to 130 MPH.',
-    href: '/contact',
+  title: 'TruDefinition Duration Shingles',
+  description: 'Award-winning shingles with SureNail Technology for superior wind resistance up to 130 MPH.',
+  href: '/contact',
   },
   {
     icon: Shield,
-    title: 'Lifetime Limited Warranty',
-    description: 'Duration shingles include a Lifetime limited warranty on materials backed by Owens Corning.',
-    href: '/contact',
+  title: 'Lifetime Limited Warranty',
+  description: 'Duration shingles include a Lifetime limited warranty on materials backed by Owens Corning.',
+  href: '/contact',
   },
   {
     icon: Award,
-    title: 'Duration FLEX Shingles',
-    description: 'Flexible polymer-modified asphalt for superior durability and impact resistance.',
-    href: '/contact',
+  title: 'Duration FLEX Shingles',
+  description: 'Flexible polymer-modified asphalt for superior durability and impact resistance.',
+  href: '/contact',
   },
   {
     icon: Zap,
-    title: 'Duration STORM Shingles',
-    description: 'Highest wind resistance rating (SureNail Technology) for severe weather protection.',
-    href: '/contact',
+  title: 'Duration STORM Shingles',
+  description: 'Highest wind resistance rating (SureNail Technology) for severe weather protection.',
+  href: '/contact',
   },
   {
     icon: Wrench,
-    title: 'Total Protection System',
-    description: 'Complete roofing system with underlayment, ventilation, and ice barrier products.',
-    href: '/services/roof-replacement',
+  title: 'Total Protection System',
+  description: 'Complete roofing system with underlayment, ventilation, and ice barrier products.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Home,
-    title: 'COOL Roof Collection',
-    description: 'Energy-efficient shingles that reflect solar heat and reduce cooling costs.',
-    href: '/contact',
+  title: 'COOL Roof Collection',
+  description: 'Energy-efficient shingles that reflect solar heat and reduce cooling costs.',
+  href: '/contact',
   },
 ];
 
@@ -101,33 +101,33 @@ const owensCorningProducts = [
 const whyChooseOwensCorning = [
   {
     icon: Award,
-    title: 'Industry-Leading Products',
-    description: 'Owens Corning is a Fortune 500 company with 80+ years of roofing innovation.',
+  title: 'Industry-Leading Products',
+  description: 'Owens Corning is a Fortune 500 company with 80+ years of roofing innovation.',
   },
   {
     icon: Shield,
-    title: 'Strong Warranties',
-    description: 'Lifetime limited material warranty on Duration shingles backed by Owens Corning.',
+  title: 'Strong Warranties',
+  description: 'Lifetime limited material warranty on Duration shingles backed by Owens Corning.',
   },
   {
     icon: Star,
-    title: 'SureNail Technology',
-    description: 'Patented nailing zone delivers 130 MPH wind warranty and faster installation.',
+  title: 'SureNail Technology',
+  description: 'Patented nailing zone delivers 130 MPH wind warranty and faster installation.',
   },
   {
     icon: CheckCircle,
-    title: 'TruDefinition Colors',
-    description: 'Premium color palette with greater color depth and dimension than ordinary shingles.',
+  title: 'TruDefinition Colors',
+  description: 'Premium color palette with greater color depth and dimension than ordinary shingles.',
   },
   {
     icon: Clock,
-    title: 'Proven Performance',
-    description: 'Over 80 years of roofing innovation from a trusted Fortune 500 company.',
+  title: 'Proven Performance',
+  description: 'Over 80 years of roofing innovation from a trusted Fortune 500 company.',
   },
   {
     icon: Zap,
-    title: 'Energy Star Rated',
-    description: 'COOL Roof shingles help reduce energy costs and qualify for tax credits.',
+  title: 'Energy Star Rated',
+  description: 'COOL Roof shingles help reduce energy costs and qualify for tax credits.',
   },
 ];
 
@@ -171,42 +171,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why choose Owens Corning shingles for my Charlotte home?',
-    answer:
+  answer:
       'Owens Corning is a Fortune 500 company with over 80 years of roofing innovation. Their Duration shingles feature patented SureNail Technology for superior wind resistance up to 130 MPH, making them ideal for Charlotte\'s storm season. The TruDefinition color palette offers premium aesthetics with deeper, more dimensional colors than standard shingles.',
   },
   {
     question: 'What warranty comes with Owens Corning shingles?',
-    answer:
+  answer:
       'Owens Corning Duration shingles come with a Lifetime limited warranty on the shingles themselves. The exact warranty terms depend on your installation and the specific products used. We can explain all warranty options during your free estimate to help you choose the right protection for your home.',
   },
   {
     question: 'What is SureNail Technology and why does it matter?',
-    answer:
+  answer:
       'SureNail Technology is Owens Corning\'s patented nailing zone that provides exceptional grip and 130 MPH wind warranty. The fabric strip creates a visible nailing line for accurate installation and delivers up to 40% better nail pull-through resistance than standard shingles. For Charlotte homeowners concerned about storm damage, SureNail provides peace of mind that your roof can handle severe weather.',
   },
   {
     question: 'How do Duration shingles compare to other brands?',
-    answer:
+  answer:
       'Owens Corning Duration shingles are consistently rated among the best asphalt shingles available. They feature SureNail Technology for superior wind resistance, TruDefinition colors for enhanced curb appeal, and a lighter weight design that\'s easier on your roof structure. Independent testing shows Duration shingles outperform competitors in wind uplift, nail pull-through, and tear strength.',
   },
   {
     question: 'How much does an Owens Corning roof cost in Charlotte?',
-    answer:
+  answer:
       'An Owens Corning Duration roof in Charlotte typically ranges from $8,000 to $18,000+ for most homes, depending on size, pitch, and complexity. Premium options like Duration STORM or COOL Roof shingles are at the higher end but offer additional benefits. We provide free estimates with transparent pricing and flexible financing options.',
   },
   {
     question: 'What colors are available in Owens Corning shingles?',
-    answer:
+  answer:
       'Owens Corning offers an extensive TruDefinition color palette including popular options like Onyx Black, Estate Gray, Brownwood, Sierra Gray, Teak, and Desert Tan. Their patented color technology creates greater color depth and dimension. We can show you samples and completed projects in your preferred colors to help you choose.',
   },
   {
     question: 'Are Owens Corning shingles good for hot climates like Charlotte?',
-    answer:
+  answer:
       'Yes! Owens Corning offers COOL Roof shingles specifically designed for hot climates. These Energy Star-rated shingles reflect more solar energy to help reduce cooling costs by up to 15%. They\'re available in multiple colors and may qualify for energy efficiency tax credits. Regular Duration shingles also perform well in Charlotte\'s climate with their durable construction.',
   },
   {
     question: 'Why is the Pink Panther associated with Owens Corning?',
-    answer:
+  answer:
       'The Pink Panther has been Owens Corning\'s mascot since 1980. While originally representing their pink fiberglass insulation, the character has become synonymous with quality building materials. When you see the Pink Panther, you know you\'re getting proven, reliable products from a company that stands behind their work - just like Best Roofing Now.',
   },
 ];
@@ -221,7 +221,6 @@ export default function OwensCorningRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

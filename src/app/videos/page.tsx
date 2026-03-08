@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Videos & Tips | Best Roofing Now',
-    description:
+  description:
       'Watch our roofing tips, project showcases, and educational content. Learn from Charlotte\'s top-rated roofing experts.',
-    url: `${SITE_CONFIG.url}/videos`,
-    type: 'website',
+  url: `${SITE_CONFIG.url}/videos`,
+  type: 'website',
   },
 };
 
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
 const videoFaqs = [
   {
     question: 'What kind of roofing videos does Best Roofing Now create?',
-    answer:
+  answer:
       'We create educational roofing content including roof inspection tips, before/after project showcases, storm damage identification guides, roofing material comparisons, and homeowner advice for maintaining your Charlotte NC roof.',
   },
   {
     question: 'How often does Best Roofing Now post new videos?',
-    answer:
+  answer:
       'We regularly post new content including quick tip Shorts and longer educational videos. Subscribe to our YouTube channel to stay updated with the latest roofing tips and project showcases.',
   },
   {
     question: 'Can I request a specific roofing topic for a video?',
-    answer:
+  answer:
       'Yes! We love hearing from homeowners about topics they want to learn more about. Contact us or leave a comment on our YouTube channel with your roofing questions and we may create a video addressing them.',
   },
 ];
@@ -111,7 +111,7 @@ export default async function VideosPage() {
             <p className="text-xl text-white/90 mb-8">
               Watch educational roofing content, project showcases, and expert tips from
               Charlotte&apos;s top-rated roofing company. Learn how to maintain your roof,
-              identify damage, and make informed decisions about repairs and replacements.
+  identify damage, and make informed decisions about repairs and replacements.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

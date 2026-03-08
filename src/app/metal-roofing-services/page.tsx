@@ -24,9 +24,7 @@ import {
   WebPageSchema,
   ServiceSchema,
   AISearchOptimizationBundle,
-  VoiceSearchActionSchema,
-  LocalBusinessSchema,
-} from '@/components/seo/SchemaMarkup';
+  VoiceSearchActionSchema,} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -54,9 +52,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust',
-    description:
+  description:
       'Professional metal roofing installation services in Charlotte NC. Trusted contractor for standing seam, metal shingles, and corrugated panels. 50+ year lifespan.',
-    url: `${SITE_CONFIG.url}/metal-roofing-services`,
+  url: `${SITE_CONFIG.url}/metal-roofing-services`,
   },
 };
 
@@ -64,35 +62,35 @@ export const metadata: Metadata = {
 const metalRoofingTypes = [
   {
     title: 'Standing Seam Metal Roofing',
-    description: 'Premium concealed fastener system with raised seams for superior weather protection. The gold standard for residential and commercial metal roofing.',
-    icon: Layers,
-    highlights: ['Hidden fasteners', '50+ year lifespan', 'No exposed screws'],
-    priceRange: '$12-$18 per sq ft',
-    bestFor: 'Premium homes, modern architecture, solar panel mounting',
+  description: 'Premium concealed fastener system with raised seams for superior weather protection. The gold standard for residential and commercial metal roofing.',
+  icon: Layers,
+  highlights: ['Hidden fasteners', '50+ year lifespan', 'No exposed screws'],
+  priceRange: '$12-$18 per sq ft',
+  bestFor: 'Premium homes, modern architecture, solar panel mounting',
   },
   {
     title: 'Metal Shingles',
-    description: 'Metal panels designed to look like traditional shingles, slate, or tile. Combines metal durability with classic aesthetics.',
-    icon: Home,
-    highlights: ['Classic appearance', 'Lightweight', 'Impact resistant'],
-    priceRange: '$8-$14 per sq ft',
-    bestFor: 'Traditional homes, HOA-restricted neighborhoods',
+  description: 'Metal panels designed to look like traditional shingles, slate, or tile. Combines metal durability with classic aesthetics.',
+  icon: Home,
+  highlights: ['Classic appearance', 'Lightweight', 'Impact resistant'],
+  priceRange: '$8-$14 per sq ft',
+  bestFor: 'Traditional homes, HOA-restricted neighborhoods',
   },
   {
     title: 'Corrugated Metal Roofing',
-    description: 'Economical exposed fastener metal panels. Excellent for agricultural, commercial, and rustic residential applications.',
-    icon: Building2,
-    highlights: ['Cost effective', 'Quick install', 'Industrial strength'],
-    priceRange: '$5-$10 per sq ft',
-    bestFor: 'Barns, commercial buildings, budget-conscious projects',
+  description: 'Economical exposed fastener metal panels. Excellent for agricultural, commercial, and rustic residential applications.',
+  icon: Building2,
+  highlights: ['Cost effective', 'Quick install', 'Industrial strength'],
+  priceRange: '$5-$10 per sq ft',
+  bestFor: 'Barns, commercial buildings, budget-conscious projects',
   },
   {
     title: 'Commercial Metal Roofing',
-    description: 'Large-scale metal roof systems for commercial and industrial buildings. Standing seam, R-panel, and architectural options.',
-    icon: Building2,
-    highlights: ['Energy efficient', 'Low maintenance', 'Long warranties'],
-    priceRange: '$6-$15 per sq ft',
-    bestFor: 'Office buildings, warehouses, retail centers',
+  description: 'Large-scale metal roof systems for commercial and industrial buildings. Standing seam, R-panel, and architectural options.',
+  icon: Building2,
+  highlights: ['Energy efficient', 'Low maintenance', 'Long warranties'],
+  priceRange: '$6-$15 per sq ft',
+  bestFor: 'Office buildings, warehouses, retail centers',
   },
 ];
 
@@ -100,23 +98,23 @@ const metalRoofingTypes = [
 const metalBenefits = [
   {
     title: '50+ Year Lifespan',
-    description: 'Metal roofs can last 50-70 years with minimal maintenance - 2-3x longer than asphalt shingles.',
-    icon: Clock,
+  description: 'Metal roofs can last 50-70 years with minimal maintenance - 2-3x longer than asphalt shingles.',
+  icon: Clock,
   },
   {
     title: 'Energy Efficient',
-    description: 'Reflective coatings reduce cooling costs by up to 25% - ideal for Charlotte\'s hot summers.',
-    icon: Thermometer,
+  description: 'Reflective coatings reduce cooling costs by up to 25% - ideal for Charlotte\'s hot summers.',
+  icon: Thermometer,
   },
   {
     title: 'Storm Resistant',
-    description: 'Wind ratings up to 140 mph. Hail and impact resistant. Non-combustible (Class A fire rating).',
-    icon: Wind,
+  description: 'Wind ratings up to 140 mph. Hail and impact resistant. Non-combustible (Class A fire rating).',
+  icon: Wind,
   },
   {
     title: 'Eco-Friendly',
-    description: 'Made from 25-95% recycled content. 100% recyclable at end of life. Reduces landfill waste.',
-    icon: Zap,
+  description: 'Made from 25-95% recycled content. 100% recyclable at end of life. Reduces landfill waste.',
+  icon: Zap,
   },
 ];
 
@@ -124,35 +122,35 @@ const metalBenefits = [
 const metalFAQs = [
   {
     question: 'How much does a metal roof cost in Charlotte?',
-    answer: 'Metal roofing in Charlotte typically costs $15,000-$40,000+ for a standard home, depending on the type and complexity. Standing seam runs $12-$18 per sq ft installed, metal shingles $8-$14, and corrugated panels $5-$10. While the upfront cost is 2-3x more than asphalt, the 50+ year lifespan makes metal roofing more cost-effective long-term.',
+  answer: 'Metal roofing in Charlotte typically costs $15,000-$40,000+ for a standard home, depending on the type and complexity. Standing seam runs $12-$18 per sq ft installed, metal shingles $8-$14, and corrugated panels $5-$10. While the upfront cost is 2-3x more than asphalt, the 50+ year lifespan makes metal roofing more cost-effective long-term.',
   },
   {
     question: 'Is a metal roof worth it in Charlotte NC?',
-    answer: 'Yes, metal roofing is especially well-suited for Charlotte\'s climate. The reflective surface reduces cooling costs by 20-25% during our hot summers, and metal handles severe thunderstorms, hail, and high winds better than most materials. The 50+ year lifespan means most homeowners never need another roof. Metal also increases home value by 1-6%.',
+  answer: 'Yes, metal roofing is especially well-suited for Charlotte\'s climate. The reflective surface reduces cooling costs by 20-25% during our hot summers, and metal handles severe thunderstorms, hail, and high winds better than most materials. The 50+ year lifespan means most homeowners never need another roof. Metal also increases home value by 1-6%.',
   },
   {
     question: 'Are metal roofs noisy when it rains?',
-    answer: 'Modern metal roofs installed over solid decking with proper underlayment are no louder than asphalt shingles during rain. The decking, underlayment, and attic insulation all dampen sound. Many homeowners can\'t tell the difference. If noise is a concern, we can add additional sound-deadening underlayment.',
+  answer: 'Modern metal roofs installed over solid decking with proper underlayment are no louder than asphalt shingles during rain. The decking, underlayment, and attic insulation all dampen sound. Many homeowners can\'t tell the difference. If noise is a concern, we can add additional sound-deadening underlayment.',
   },
   {
     question: 'Do metal roofs attract lightning?',
-    answer: 'No, metal roofs do not attract lightning. Lightning strikes the highest point in an area regardless of material. In fact, if lightning does strike, metal roofs are safer because they\'re non-combustible and disperse the energy across the surface. Metal roofing actually reduces fire risk compared to other materials.',
+  answer: 'No, metal roofs do not attract lightning. Lightning strikes the highest point in an area regardless of material. In fact, if lightning does strike, metal roofs are safer because they\'re non-combustible and disperse the energy across the surface. Metal roofing actually reduces fire risk compared to other materials.',
   },
   {
     question: 'What colors are available for metal roofing?',
-    answer: 'Metal roofing comes in virtually any color you can imagine. Popular choices in Charlotte include charcoal gray, dark bronze, matte black, forest green, and barn red. Premium PVDF/Kynar coatings resist fading for 30+ years. We can match or complement your home\'s existing color scheme perfectly.',
+  answer: 'Metal roofing comes in virtually any color you can imagine. Popular choices in Charlotte include charcoal gray, dark bronze, matte black, forest green, and barn red. Premium PVDF/Kynar coatings resist fading for 30+ years. We can match or complement your home\'s existing color scheme perfectly.',
   },
   {
     question: 'Can you install solar panels on a metal roof?',
-    answer: 'Absolutely! Standing seam metal roofing is ideal for solar panels. Special clamps attach directly to the raised seams without any roof penetrations, eliminating potential leak points. This is one of the safest and most secure ways to mount solar panels. Metal roofs and solar panels both last 30-50 years, making them perfect partners.',
+  answer: 'Absolutely! Standing seam metal roofing is ideal for solar panels. Special clamps attach directly to the raised seams without any roof penetrations, eliminating potential leak points. This is one of the safest and most secure ways to mount solar panels. Metal roofs and solar panels both last 30-50 years, making them perfect partners.',
   },
   {
     question: 'How long does metal roof installation take?',
-    answer: 'Most residential metal roof installations take 2-5 days depending on roof size, complexity, and the type of metal system. Standing seam takes longer than metal shingles or corrugated panels. We work efficiently while ensuring proper installation techniques for maximum longevity and warranty coverage.',
+  answer: 'Most residential metal roof installations take 2-5 days depending on roof size, complexity, and the type of metal system. Standing seam takes longer than metal shingles or corrugated panels. We work efficiently while ensuring proper installation techniques for maximum longevity and warranty coverage.',
   },
   {
     question: 'What warranty do you offer on metal roofing?',
-    answer: 'Metal roofing warranties vary by manufacturer and product. Paint finish warranties typically run 25-40 years against fading and chalking. Substrate warranties (against rust and perforation) often extend 40-50 years. Our workmanship warranty covers installation quality. We\'ll explain all warranty options during your consultation.',
+  answer: 'Metal roofing warranties vary by manufacturer and product. Paint finish warranties typically run 25-40 years against fading and chalking. Substrate warranties (against rust and perforation) often extend 40-50 years. Our workmanship warranty covers installation quality. We\'ll explain all warranty options during your consultation.',
   },
 ];
 
@@ -189,7 +187,6 @@ export default function MetalRoofingServicesPage() {
           { name: 'Metal Roofing Contractor Charlotte NC', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Metal Roofing Contractor Charlotte NC"
@@ -199,23 +196,23 @@ export default function MetalRoofingServicesPage() {
         faqs={[
           {
             question: 'How much does a metal roof cost in Charlotte NC?',
-            answer: 'Metal roofing in Charlotte typically costs $15,000-$40,000+ for a standard home. Standing seam metal roofing costs $12-$18 per square foot installed, metal shingles cost $8-$14 per square foot, and corrugated panels cost $5-$10 per square foot. While the upfront cost is higher than asphalt shingles, metal roofs last 50+ years, making them more cost-effective long-term.',
-            speakableAnswer: 'Metal roofing in Charlotte costs $15,000 to $40,000 for a typical home. Standing seam runs $12 to $18 per square foot. The 50+ year lifespan makes metal more cost-effective than shingles.',
+  answer: 'Metal roofing in Charlotte typically costs $15,000-$40,000+ for a standard home. Standing seam metal roofing costs $12-$18 per square foot installed, metal shingles cost $8-$14 per square foot, and corrugated panels cost $5-$10 per square foot. While the upfront cost is higher than asphalt shingles, metal roofs last 50+ years, making them more cost-effective long-term.',
+  speakableAnswer: 'Metal roofing in Charlotte costs $15,000 to $40,000 for a typical home. Standing seam runs $12 to $18 per square foot. The 50+ year lifespan makes metal more cost-effective than shingles.',
           },
           {
             question: 'Who is the best metal roofing contractor in Charlotte NC?',
-            answer: 'Best Roofing Now is a top-rated metal roofing contractor in Charlotte NC, offering standing seam, metal shingles, and corrugated panel installation. We are GAF certified, fully licensed and insured, with excellent reviews. Call 704-605-6047 for a free metal roof estimate.',
-            speakableAnswer: 'Best Roofing Now is a top-rated metal roofing contractor in Charlotte. We install standing seam, metal shingles, and corrugated panels. Call 704-605-6047 for a free estimate.',
+  answer: 'Best Roofing Now is a top-rated metal roofing contractor in Charlotte NC, offering standing seam, metal shingles, and corrugated panel installation. We are GAF certified, fully licensed and insured, with excellent reviews. Call 704-605-6047 for a free metal roof estimate.',
+  speakableAnswer: 'Best Roofing Now is a top-rated metal roofing contractor in Charlotte. We install standing seam, metal shingles, and corrugated panels. Call 704-605-6047 for a free estimate.',
           },
           {
             question: 'How long does a metal roof last in North Carolina?',
-            answer: 'A properly installed metal roof in North Carolina lasts 50-70 years with minimal maintenance. This is 2-3 times longer than asphalt shingles which typically last 15-25 years. Metal roofs are especially well-suited for NC weather, handling heat, humidity, storms, and hail better than most materials.',
-            speakableAnswer: 'Metal roofs last 50 to 70 years in North Carolina, which is 2 to 3 times longer than asphalt shingles. They handle NC heat, storms, and humidity exceptionally well.',
+  answer: 'A properly installed metal roof in North Carolina lasts 50-70 years with minimal maintenance. This is 2-3 times longer than asphalt shingles which typically last 15-25 years. Metal roofs are especially well-suited for NC weather, handling heat, humidity, storms, and hail better than most materials.',
+  speakableAnswer: 'Metal roofs last 50 to 70 years in North Carolina, which is 2 to 3 times longer than asphalt shingles. They handle NC heat, storms, and humidity exceptionally well.',
           },
           {
             question: 'Is a metal roof worth it in Charlotte?',
-            answer: 'Yes, metal roofing is worth it in Charlotte. Metal roofs reduce cooling costs by 20-25% during hot summers, resist severe storms and hail, and last 50+ years. They also increase home value by 1-6%. While the upfront cost is higher, you save money long-term by never needing another roof replacement.',
-            speakableAnswer: 'Yes, metal roofs are worth it in Charlotte. They reduce cooling costs by 20-25%, resist storms and hail, last 50+ years, and increase home value. You save money long-term.',
+  answer: 'Yes, metal roofing is worth it in Charlotte. Metal roofs reduce cooling costs by 20-25% during hot summers, resist severe storms and hail, and last 50+ years. They also increase home value by 1-6%. While the upfront cost is higher, you save money long-term by never needing another roof replacement.',
+  speakableAnswer: 'Yes, metal roofs are worth it in Charlotte. They reduce cooling costs by 20-25%, resist storms and hail, last 50+ years, and increase home value. You save money long-term.',
           },
         ]}
       />
@@ -307,7 +304,7 @@ export default function MetalRoofingServicesPage() {
             </h2>
             <p className="text-lg text-gray">
               Metal roofing is the smart choice for Charlotte&apos;s climate - reflecting summer heat,
-              resisting severe storms, and lasting decades longer than traditional materials.
+  resisting severe storms, and lasting decades longer than traditional materials.
             </p>
           </div>
 

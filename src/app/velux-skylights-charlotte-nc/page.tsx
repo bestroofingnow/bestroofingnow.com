@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -46,16 +46,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'VELUX Skylights Charlotte NC | Certified Installers | Best Roofing Now',
-    description:
+  description:
       'VELUX certified skylight installers in Charlotte NC. Solar-powered, fixed, and venting skylights with no-leak warranty. Free estimates.',
-    url: `${SITE_CONFIG.url}/velux-skylights-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/velux-skylights-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'VELUX skylight installation Charlotte NC - Best Roofing Now certified installer',
+  width: 1200,
+  height: 630,
+  alt: 'VELUX skylight installation Charlotte NC - Best Roofing Now certified installer',
       },
     ],
   },
@@ -65,27 +65,27 @@ export const metadata: Metadata = {
 const veluxProducts = [
   {
     icon: Sun,
-    title: 'Fixed Skylights',
-    description: 'Bring natural light into any room with sealed, non-opening skylights for maximum illumination.',
-    features: ['No mechanical parts', 'Maximum light', 'Energy efficient', 'Low maintenance'],
+  title: 'Fixed Skylights',
+  description: 'Bring natural light into any room with sealed, non-opening skylights for maximum illumination.',
+  features: ['No mechanical parts', 'Maximum light', 'Energy efficient', 'Low maintenance'],
   },
   {
     icon: Wind,
-    title: 'Fresh Air Skylights',
-    description: 'Manual or solar-powered venting skylights that open to release heat and improve air quality.',
-    features: ['Natural ventilation', 'Heat release', 'Rain sensor option', 'Reduces AC costs'],
+  title: 'Fresh Air Skylights',
+  description: 'Manual or solar-powered venting skylights that open to release heat and improve air quality.',
+  features: ['Natural ventilation', 'Heat release', 'Rain sensor option', 'Reduces AC costs'],
   },
   {
     icon: Zap,
-    title: 'Solar Powered Skylights',
-    description: 'Self-powered skylights with built-in solar panel - no wiring required and eligible for tax credits.',
-    features: ['No wiring needed', 'Federal tax credit', 'Remote control', 'Programmable'],
+  title: 'Solar Powered Skylights',
+  description: 'Self-powered skylights with built-in solar panel - no wiring required and eligible for tax credits.',
+  features: ['No wiring needed', 'Federal tax credit', 'Remote control', 'Programmable'],
   },
   {
     icon: Sun,
-    title: 'Sun Tunnel Skylights',
-    description: 'Tubular skylights that bring natural light to interior spaces where traditional skylights won\'t fit.',
-    features: ['Works in tight spaces', 'Affordable option', 'Quick installation', 'Flexible tubing'],
+  title: 'Sun Tunnel Skylights',
+  description: 'Tubular skylights that bring natural light to interior spaces where traditional skylights won\'t fit.',
+  features: ['Works in tight spaces', 'Affordable option', 'Quick installation', 'Flexible tubing'],
   },
 ];
 
@@ -93,33 +93,33 @@ const veluxProducts = [
 const whyChooseVelux = [
   {
     icon: Award,
-    title: 'VELUX Certified Installers',
-    description: 'Best Roofing Now is trained and certified to install VELUX products correctly.',
+  title: 'VELUX Certified Installers',
+  description: 'Best Roofing Now is trained and certified to install VELUX products correctly.',
   },
   {
     icon: Shield,
-    title: 'No Leak Warranty',
-    description: 'VELUX provides a 10-year no leak warranty on all skylights when properly installed.',
+  title: 'No Leak Warranty',
+  description: 'VELUX provides a 10-year no leak warranty on all skylights when properly installed.',
   },
   {
     icon: Droplets,
-    title: 'Triple-Pane Glass',
-    description: 'Premium glazing options for maximum energy efficiency and noise reduction.',
+  title: 'Triple-Pane Glass',
+  description: 'Premium glazing options for maximum energy efficiency and noise reduction.',
   },
   {
     icon: Zap,
-    title: 'Solar Powered Options',
-    description: 'No electrician needed - solar panels power the skylight and qualify for 30% tax credit.',
+  title: 'Solar Powered Options',
+  description: 'No electrician needed - solar panels power the skylight and qualify for 30% tax credit.',
   },
   {
     icon: Clock,
-    title: 'Over 80 Years Experience',
-    description: 'VELUX has been the world leader in skylights since 1941.',
+  title: 'Over 80 Years Experience',
+  description: 'VELUX has been the world leader in skylights since 1941.',
   },
   {
     icon: Sun,
-    title: 'Increase Home Value',
-    description: 'Skylights add natural light and can increase home value by improving interior appeal.',
+  title: 'Increase Home Value',
+  description: 'Skylights add natural light and can increase home value by improving interior appeal.',
   },
 ];
 
@@ -127,27 +127,27 @@ const whyChooseVelux = [
 const skylightBenefits = [
   {
     title: 'Natural Light',
-    description: 'Skylights provide up to 3x more natural light than vertical windows of the same size.',
+  description: 'Skylights provide up to 3x more natural light than vertical windows of the same size.',
   },
   {
     title: 'Energy Savings',
-    description: 'Reduce electricity costs by relying less on artificial lighting during the day.',
+  description: 'Reduce electricity costs by relying less on artificial lighting during the day.',
   },
   {
     title: 'Ventilation',
-    description: 'Fresh Air skylights release trapped heat and improve indoor air quality.',
+  description: 'Fresh Air skylights release trapped heat and improve indoor air quality.',
   },
   {
     title: 'Health Benefits',
-    description: 'Natural light improves mood, sleep quality, and vitamin D production.',
+  description: 'Natural light improves mood, sleep quality, and vitamin D production.',
   },
   {
     title: 'Home Value',
-    description: 'Skylights enhance interior spaces and can increase home resale value.',
+  description: 'Skylights enhance interior spaces and can increase home resale value.',
   },
   {
     title: 'Design Appeal',
-    description: 'Add architectural interest and open up dark spaces in your home.',
+  description: 'Add architectural interest and open up dark spaces in your home.',
   },
 ];
 
@@ -191,42 +191,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why choose VELUX skylights over other brands?',
-    answer:
+  answer:
       'VELUX is the world\'s largest skylight manufacturer with over 80 years of experience. They offer the industry\'s best warranty including a 10-year no leak warranty, superior energy efficiency with triple-pane glass options, and innovative features like solar-powered operation. VELUX skylights are engineered for reliability and backed by a company that stands behind their products.',
   },
   {
     question: 'What is the VELUX No Leak Warranty?',
-    answer:
+  answer:
       'VELUX provides a 10-year installation warranty against leaks on all of their skylights when installed by a trained professional. This warranty is backed by VELUX directly and covers both the product and the installation. Additionally, VELUX skylights come with a 20-year warranty on insulated glass and a 10-year warranty on product defects.',
   },
   {
     question: 'How much does VELUX skylight installation cost in Charlotte?',
-    answer:
+  answer:
       'VELUX skylight installation in Charlotte typically ranges from $1,500 to $4,000+ per skylight, depending on the type, size, and roof complexity. Fixed skylights are the most affordable, while solar-powered venting skylights are at the higher end. Sun Tunnel tubular skylights start around $800-$1,200 installed. Solar powered skylights may qualify for a 30% federal tax credit.',
   },
   {
     question: 'Can skylights be installed on any roof?',
-    answer:
+  answer:
       'VELUX skylights can be installed on most roof types with pitches between 15 and 85 degrees. We assess your roof structure, pitch, and framing to determine the best installation approach. Factors like attic space, electrical access (for non-solar models), and roof obstructions are evaluated during our free consultation.',
   },
   {
     question: 'Do VELUX skylights qualify for tax credits?',
-    answer:
+  answer:
       'Yes! VELUX Solar Powered Fresh Air Skylights and Solar Powered Blinds qualify for the federal solar tax credit (currently 30%). This can significantly reduce the cost of installation. You\'ll receive documentation to claim the credit on your taxes. This makes solar-powered skylights an excellent investment for Charlotte homeowners.',
   },
   {
     question: 'Will skylights make my home too hot in Charlotte\'s summer?',
-    answer:
+  answer:
       'Modern VELUX skylights are designed for energy efficiency. They offer Low-E coatings that reduce solar heat gain while allowing natural light through. Fresh Air skylights can be opened to release trapped heat, and programmable blinds can block direct sunlight during peak hours. Many Charlotte homeowners find that proper skylight placement actually reduces cooling costs by decreasing reliance on artificial lighting.',
   },
   {
     question: 'What is a VELUX Sun Tunnel?',
-    answer:
+  answer:
       'A VELUX Sun Tunnel is a tubular skylight that captures sunlight on the roof and channels it through a flexible or rigid tube to brighten interior spaces. Sun Tunnels are ideal for hallways, bathrooms, closets, and other spaces where traditional skylights won\'t fit. They\'re more affordable than deck-mounted skylights and can be installed in just a few hours.',
   },
   {
     question: 'How long does skylight installation take?',
-    answer:
+  answer:
       'Most VELUX skylight installations are completed in one day. A single skylight typically takes 3-5 hours including roof opening, flashing installation, and interior finishing. Sun Tunnel installations are even faster, usually completed in 2-3 hours. We schedule installations to minimize disruption to your daily routine.',
   },
 ];
@@ -241,7 +241,6 @@ export default function VeluxSkylightsCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

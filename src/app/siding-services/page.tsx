@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Siding Services Charlotte NC | Installation & Repair',
-    description:
+  description:
       'Professional siding services in Charlotte NC. James Hardie fiber cement, vinyl siding installation and repair.',
-    url: `${SITE_CONFIG.url}/siding-services`,
+  url: `${SITE_CONFIG.url}/siding-services`,
   },
 };
 
@@ -56,51 +56,51 @@ export const metadata: Metadata = {
 const sidingServices = [
   {
     slug: 'siding-installation',
-    title: 'Siding Installation',
-    description: 'Transform your home with new siding. James Hardie certified installer for fiber cement, plus vinyl and engineered wood options.',
-    icon: '🏡',
-    highlights: ['James Hardie certified', 'Energy efficient', 'Color variety'],
+  title: 'Siding Installation',
+  description: 'Transform your home with new siding. James Hardie certified installer for fiber cement, plus vinyl and engineered wood options.',
+  icon: '🏡',
+  highlights: ['James Hardie certified', 'Energy efficient', 'Color variety'],
   },
   {
     slug: 'siding-repair',
-    title: 'Siding Repair',
-    description: 'Fix damaged sections with expert color matching. Storm damage, rot, and impact repairs completed quickly.',
-    icon: '🔧',
-    highlights: ['Color matching', 'Storm damage repair', 'Fast turnaround'],
+  title: 'Siding Repair',
+  description: 'Fix damaged sections with expert color matching. Storm damage, rot, and impact repairs completed quickly.',
+  icon: '🔧',
+  highlights: ['Color matching', 'Storm damage repair', 'Fast turnaround'],
   },
   {
     slug: 'soffit-fascia',
-    title: 'Soffit & Fascia',
-    description: 'Protect your roof edge and improve ventilation with quality soffit and fascia installation and repair.',
-    icon: '🏠',
-    highlights: ['Roof protection', 'Proper ventilation', 'Low maintenance'],
+  title: 'Soffit & Fascia',
+  description: 'Protect your roof edge and improve ventilation with quality soffit and fascia installation and repair.',
+  icon: '🏠',
+  highlights: ['Roof protection', 'Proper ventilation', 'Low maintenance'],
   },
 ];
 
 const sidingFAQs = [
   {
     question: 'How much does new siding cost in Charlotte NC?',
-    answer: 'Siding costs in Charlotte vary by material: vinyl siding averages $4-8 per square foot installed, fiber cement (James Hardie) runs $8-14 per square foot, and engineered wood is $6-12 per square foot. A typical 2,000 sq ft home costs $8,000-28,000 for complete re-siding depending on material choice.',
+  answer: 'Siding costs in Charlotte vary by material: vinyl siding averages $4-8 per square foot installed, fiber cement (James Hardie) runs $8-14 per square foot, and engineered wood is $6-12 per square foot. A typical 2,000 sq ft home costs $8,000-28,000 for complete re-siding depending on material choice.',
   },
   {
     question: 'What is the best siding for Charlotte\'s climate?',
-    answer: 'Fiber cement siding (James Hardie) is ideal for Charlotte\'s humid climate - it resists moisture, insects, rot, and fire while maintaining its appearance for 50+ years. Insulated vinyl siding is also excellent for energy efficiency. We help you choose based on your priorities and budget.',
+  answer: 'Fiber cement siding (James Hardie) is ideal for Charlotte\'s humid climate - it resists moisture, insects, rot, and fire while maintaining its appearance for 50+ years. Insulated vinyl siding is also excellent for energy efficiency. We help you choose based on your priorities and budget.',
   },
   {
     question: 'How long does siding installation take?',
-    answer: 'Most siding installations in Charlotte take 3-7 days depending on home size and complexity. We work efficiently while protecting your landscaping and property. Weather can affect timelines, but we communicate clearly throughout the process.',
+  answer: 'Most siding installations in Charlotte take 3-7 days depending on home size and complexity. We work efficiently while protecting your landscaping and property. Weather can affect timelines, but we communicate clearly throughout the process.',
   },
   {
     question: 'Can you match my existing siding for repairs?',
-    answer: 'In most cases, yes. We have access to extensive color libraries and manufacturer archives. For older discontinued colors, we can often find close matches or discuss options like painting or partial replacements that blend seamlessly.',
+  answer: 'In most cases, yes. We have access to extensive color libraries and manufacturer archives. For older discontinued colors, we can often find close matches or discuss options like painting or partial replacements that blend seamlessly.',
   },
   {
     question: 'Does new siding improve energy efficiency?',
-    answer: 'Yes! Modern siding, especially insulated vinyl and fiber cement with house wrap, can reduce energy loss by 20-30%. This translates to lower heating and cooling bills. New siding also seals gaps and cracks that let conditioned air escape.',
+  answer: 'Yes! Modern siding, especially insulated vinyl and fiber cement with house wrap, can reduce energy loss by 20-30%. This translates to lower heating and cooling bills. New siding also seals gaps and cracks that let conditioned air escape.',
   },
   {
     question: 'What is the ROI on new siding?',
-    answer: 'New siding offers one of the best returns on investment for home improvements. Fiber cement siding recoup about 75-80% of costs at resale, while vinyl siding returns about 70-75%. Plus, you enjoy the benefits while living in your home.',
+  answer: 'New siding offers one of the best returns on investment for home improvements. Fiber cement siding recoup about 75-80% of costs at resale, while vinyl siding returns about 70-75%. Plus, you enjoy the benefits while living in your home.',
   },
 ];
 

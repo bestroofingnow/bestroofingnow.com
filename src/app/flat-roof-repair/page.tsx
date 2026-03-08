@@ -42,10 +42,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Flat Roof Repair Charlotte NC | TPO, EPDM, PVC | Best Roofing Now',
-    description: 'Expert flat roof repair services in Charlotte NC for commercial and residential properties.',
-    url: `${SITE_CONFIG.url}/flat-roof-repair`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Flat roof repair in Charlotte NC' }],
+  description: 'Expert flat roof repair services in Charlotte NC for commercial and residential properties.',
+  url: `${SITE_CONFIG.url}/flat-roof-repair`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Flat roof repair in Charlotte NC' }],
   },
 };
 
@@ -89,8 +89,8 @@ export default function FlatRoofRepairPage() {
       <ServiceSchema
         service={{
           title: "Flat Roof Repair",
-          description: "Expert flat roof repair services in Charlotte NC for TPO, EPDM, PVC, and modified bitumen roofing systems.",
-          slug: "flat-roof-repair",
+  description: "Expert flat roof repair services in Charlotte NC for TPO, EPDM, PVC, and modified bitumen roofing systems.",
+  slug: "flat-roof-repair",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/flat-roof-repair`} pageName="Flat Roof Repair Charlotte NC" city="Charlotte" />

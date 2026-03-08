@@ -48,37 +48,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'What to Do After a Hail Storm in Charlotte NC | Roof Damage Guide',
-    description:
+  description:
       'Step-by-step guide for Charlotte homeowners after hail. Check damage, document, file claims, get repairs.',
-    url: `${SITE_CONFIG.url}/what-to-do-after-hail-storm-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/what-to-do-after-hail-storm-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const hailFAQs = [
   {
     question: 'How do I know if my roof has hail damage?',
-    answer:
+  answer:
       'From the ground, look for: dents in gutters, downspouts, or AC units; damage to siding or window screens; dents on cars. Actual roof damage (bruised shingles, missing granules, cracked tiles) requires professional inspection. Don\'t go on your roof - call a roofer for a free inspection.',
   },
   {
     question: 'Should I file an insurance claim for hail damage?',
-    answer:
+  answer:
       'If damage is confirmed by a professional inspection, yes. Hail is a covered peril on standard homeowner policies. Have a roofer document the damage first, then file the claim. Time limits apply - most policies require claims within 1-2 years of the storm.',
   },
   {
     question: 'How long do I have to file a hail damage claim in North Carolina?',
-    answer:
+  answer:
       'North Carolina law allows up to 3 years to file property damage claims, but your insurance policy may have shorter deadlines (often 1-2 years). File as soon as damage is confirmed to avoid any issues. Don\'t wait.',
   },
   {
     question: 'Will my insurance rates go up if I file a hail claim?',
-    answer:
+  answer:
       'Hail is considered an "act of God" and typically doesn\'t affect your rates as much as at-fault claims. However, if your area experiences frequent hail claims, insurers may raise rates area-wide. The cost of NOT repairing damage usually outweighs potential rate increases.',
   },
   {
     question: 'Can hail damage be repaired or do I need a new roof?',
-    answer:
+  answer:
       'It depends on extent. Minor hail damage (a few impacted shingles) can be repaired. Widespread damage affecting 25%+ of the roof typically requires replacement. Your adjuster and roofer will assess. Insurance usually covers full replacement if damage is extensive.',
   },
 ];
@@ -86,72 +86,72 @@ const hailFAQs = [
 const immediateSteps = [
   {
     step: 1,
-    title: 'Stay Safe - Don\'t Go on Your Roof',
-    icon: AlertTriangle,
-    description: 'Wet roofs are slippery. Hail can weaken roof structure. Wait for professionals.',
+  title: 'Stay Safe - Don\'t Go on Your Roof',
+  icon: AlertTriangle,
+  description: 'Wet roofs are slippery. Hail can weaken roof structure. Wait for professionals.',
   },
   {
     step: 2,
-    title: 'Check for Obvious Damage from Ground',
-    icon: Home,
-    description: 'Look at gutters, siding, AC units, and cars. These indicate likely roof damage.',
+  title: 'Check for Obvious Damage from Ground',
+  icon: Home,
+  description: 'Look at gutters, siding, AC units, and cars. These indicate likely roof damage.',
   },
   {
     step: 3,
-    title: 'Document Everything with Photos',
-    icon: Camera,
-    description: 'Photograph all visible damage including dates on newspaper for timestamp.',
+  title: 'Document Everything with Photos',
+  icon: Camera,
+  description: 'Photograph all visible damage including dates on newspaper for timestamp.',
   },
   {
     step: 4,
-    title: 'Check Inside for Leaks',
-    icon: Home,
-    description: 'Inspect attic and ceilings for water intrusion. Address active leaks immediately.',
+  title: 'Check Inside for Leaks',
+  icon: Home,
+  description: 'Inspect attic and ceilings for water intrusion. Address active leaks immediately.',
   },
   {
     step: 5,
-    title: 'Call a Local Roofing Company',
-    icon: Phone,
-    description: 'Get a professional inspection before calling insurance. Document actual roof damage.',
+  title: 'Call a Local Roofing Company',
+  icon: Phone,
+  description: 'Get a professional inspection before calling insurance. Document actual roof damage.',
   },
   {
     step: 6,
-    title: 'File Insurance Claim',
-    icon: FileText,
-    description: 'With documentation in hand, file your claim. Have your roofer present for adjuster visit.',
+  title: 'File Insurance Claim',
+  icon: FileText,
+  description: 'With documentation in hand, file your claim. Have your roofer present for adjuster visit.',
   },
 ];
 
 const groundLevelSigns = [
   {
     location: 'Gutters & Downspouts',
-    signs: 'Dents, dings, or dislodged sections',
-    indicates: 'Roof likely impacted by same hail',
+  signs: 'Dents, dings, or dislodged sections',
+  indicates: 'Roof likely impacted by same hail',
   },
   {
     location: 'AC Unit',
-    signs: 'Dented fins, damaged housing',
-    indicates: 'Hail large enough to damage roof',
+  signs: 'Dented fins, damaged housing',
+  indicates: 'Hail large enough to damage roof',
   },
   {
     location: 'Siding',
-    signs: 'Chips, cracks, or dents in vinyl/aluminum',
-    indicates: 'Significant hail event occurred',
+  signs: 'Chips, cracks, or dents in vinyl/aluminum',
+  indicates: 'Significant hail event occurred',
   },
   {
     location: 'Windows & Screens',
-    signs: 'Torn screens, chipped frames',
-    indicates: 'High-velocity hail impact',
+  signs: 'Torn screens, chipped frames',
+  indicates: 'High-velocity hail impact',
   },
   {
     location: 'Deck & Patio',
-    signs: 'Dented railings, damaged furniture',
-    indicates: 'Large hail hit property',
+  signs: 'Dented railings, damaged furniture',
+  indicates: 'Large hail hit property',
   },
   {
     location: 'Vehicles',
-    signs: 'Dented hood, roof, trunk',
-    indicates: 'Definite damaging hail occurred',
+  signs: 'Dented hood, roof, trunk',
+  indicates: 'Definite damaging hail occurred',
   },
 ];
 
@@ -188,10 +188,10 @@ export default function WhatToDoAfterHailStormPage() {
       <ArticleSchema
         post={{
           title: 'What to Do After a Hail Storm in Charlotte NC',
-          description: 'Complete guide to handling hail damage for Charlotte homeowners.',
-          slug: 'what-to-do-after-hail-storm-charlotte-nc',
-          datePublished: '2026-01-29',
-          dateModified: '2026-01-29',
+  description: 'Complete guide to handling hail damage for Charlotte homeowners.',
+  slug: 'what-to-do-after-hail-storm-charlotte-nc',
+  datePublished: '2026-01-29',
+  dateModified: '2026-01-29',
         }}
       />
       <FAQSchema faqs={hailFAQs} />

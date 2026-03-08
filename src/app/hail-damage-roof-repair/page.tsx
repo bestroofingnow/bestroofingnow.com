@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Hail Damage Roof Repair Charlotte NC | Insurance Claims | Best Roofing Now',
-    description: 'Expert hail damage roof repair and insurance claim assistance in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/hail-damage-roof-repair`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Hail damage roof repair in Charlotte NC' }],
+  description: 'Expert hail damage roof repair and insurance claim assistance in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/hail-damage-roof-repair`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Hail damage roof repair in Charlotte NC' }],
   },
 };
 
@@ -97,8 +97,8 @@ export default function HailDamageRoofRepairPage() {
       <ServiceSchema
         service={{
           title: "Hail Damage Roof Repair",
-          description: "Expert hail damage roof repair and insurance claim assistance in Charlotte NC.",
-          slug: "hail-damage-roof-repair",
+  description: "Expert hail damage roof repair and insurance claim assistance in Charlotte NC.",
+  slug: "hail-damage-roof-repair",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/hail-damage-roof-repair`} pageName="Hail Damage Roof Repair Charlotte NC" city="Charlotte" />

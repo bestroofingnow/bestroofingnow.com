@@ -20,9 +20,7 @@ import {
   WebPageSchema,
   ServiceSchema,
   AISearchOptimizationBundle,
-  VoiceSearchActionSchema,
-  LocalBusinessSchema,
-} from '@/components/seo/SchemaMarkup';
+  VoiceSearchActionSchema,} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
@@ -46,9 +44,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Services Charlotte NC | Installation, Repair & Cleaning',
-    description:
+  description:
       'Professional gutter services in Charlotte NC. Seamless gutter installation, repair, cleaning, and gutter guard systems.',
-    url: `${SITE_CONFIG.url}/gutter-services`,
+  url: `${SITE_CONFIG.url}/gutter-services`,
   },
 };
 
@@ -56,58 +54,58 @@ export const metadata: Metadata = {
 const gutterServices = [
   {
     slug: 'gutter-installation',
-    title: 'Gutter Installation',
-    description: 'Custom seamless aluminum gutters made on-site to fit your home perfectly. No leaky joints, proper drainage.',
-    icon: '🏠',
-    highlights: ['Seamless design', 'Color matching', 'Proper slope'],
+  title: 'Gutter Installation',
+  description: 'Custom seamless aluminum gutters made on-site to fit your home perfectly. No leaky joints, proper drainage.',
+  icon: '🏠',
+  highlights: ['Seamless design', 'Color matching', 'Proper slope'],
   },
   {
     slug: 'gutter-repair',
-    title: 'Gutter Repair',
-    description: 'Fix leaks, reattach sagging sections, and restore proper drainage. Most repairs completed same day.',
-    icon: '🔧',
-    highlights: ['Same-day service', 'Leak repair', 'Joint sealing'],
+  title: 'Gutter Repair',
+  description: 'Fix leaks, reattach sagging sections, and restore proper drainage. Most repairs completed same day.',
+  icon: '🔧',
+  highlights: ['Same-day service', 'Leak repair', 'Joint sealing'],
   },
   {
     slug: 'gutter-cleaning',
-    title: 'Gutter Cleaning',
-    description: 'Professional debris removal and downspout flushing. Prevent water damage and foundation issues.',
-    icon: '🍂',
-    highlights: ['Debris removal', 'Downspout flush', 'System check'],
+  title: 'Gutter Cleaning',
+  description: 'Professional debris removal and downspout flushing. Prevent water damage and foundation issues.',
+  icon: '🍂',
+  highlights: ['Debris removal', 'Downspout flush', 'System check'],
   },
   {
     slug: 'gutter-guards',
-    title: 'Gutter Guards',
-    description: 'Eliminate gutter cleaning with quality protection systems. Micro-mesh and solid cover options available.',
-    icon: '🛡️',
-    highlights: ['Leaf protection', 'Low maintenance', '20+ year warranty'],
+  title: 'Gutter Guards',
+  description: 'Eliminate gutter cleaning with quality protection systems. Micro-mesh and solid cover options available.',
+  icon: '🛡️',
+  highlights: ['Leaf protection', 'Low maintenance', '20+ year warranty'],
   },
 ];
 
 const gutterFAQs = [
   {
     question: 'How much do new gutters cost in Charlotte NC?',
-    answer: 'Seamless aluminum gutter installation in Charlotte typically costs $4-12 per linear foot, depending on gutter size, home height, and complexity. Most homes average $1,000-2,500 for complete gutter replacement. We provide free estimates with transparent pricing.',
+  answer: 'Seamless aluminum gutter installation in Charlotte typically costs $4-12 per linear foot, depending on gutter size, home height, and complexity. Most homes average $1,000-2,500 for complete gutter replacement. We provide free estimates with transparent pricing.',
   },
   {
     question: 'What are the signs I need new gutters?',
-    answer: 'Signs you need gutter replacement include: gutters pulling away from the house, multiple leaks or holes, rust or corrosion, sagging sections, water pooling around foundation, peeling paint near gutters, or gutters over 20 years old. We offer free inspections to assess your gutters.',
+  answer: 'Signs you need gutter replacement include: gutters pulling away from the house, multiple leaks or holes, rust or corrosion, sagging sections, water pooling around foundation, peeling paint near gutters, or gutters over 20 years old. We offer free inspections to assess your gutters.',
   },
   {
     question: 'How often should gutters be cleaned in Charlotte?',
-    answer: 'Charlotte homeowners should clean gutters at least twice yearly - in late spring after pollen season and late fall after leaves drop. Homes with many trees may need quarterly cleaning. Gutter guards can reduce cleaning to once every 2-3 years.',
+  answer: 'Charlotte homeowners should clean gutters at least twice yearly - in late spring after pollen season and late fall after leaves drop. Homes with many trees may need quarterly cleaning. Gutter guards can reduce cleaning to once every 2-3 years.',
   },
   {
     question: 'Are seamless gutters worth the extra cost?',
-    answer: 'Yes! Seamless gutters are worth the investment because they eliminate leak-prone joints, last longer (20-30 years vs 10-15 for sectional), look cleaner, and require less maintenance. The small extra cost pays off in longevity and reduced repairs.',
+  answer: 'Yes! Seamless gutters are worth the investment because they eliminate leak-prone joints, last longer (20-30 years vs 10-15 for sectional), look cleaner, and require less maintenance. The small extra cost pays off in longevity and reduced repairs.',
   },
   {
     question: 'Do gutter guards really work?',
-    answer: 'Quality gutter guards significantly reduce debris buildup and maintenance needs. The key is choosing the right type - micro-mesh works best for pine needles, while solid covers handle leaves well. We help you select the best option for your specific trees and environment.',
+  answer: 'Quality gutter guards significantly reduce debris buildup and maintenance needs. The key is choosing the right type - micro-mesh works best for pine needles, while solid covers handle leaves well. We help you select the best option for your specific trees and environment.',
   },
   {
     question: 'Can clogged gutters damage my home?',
-    answer: 'Absolutely. Clogged gutters cause water to overflow, leading to foundation damage, basement flooding, rotted fascia boards, landscape erosion, and conditions for mold growth. In Charlotte\'s 43+ inches of annual rainfall, properly functioning gutters are essential.',
+  answer: 'Absolutely. Clogged gutters cause water to overflow, leading to foundation damage, basement flooding, rotted fascia boards, landscape erosion, and conditions for mold growth. In Charlotte\'s 43+ inches of annual rainfall, properly functioning gutters are essential.',
   },
 ];
 
@@ -144,7 +142,6 @@ export default function GutterServicesPage() {
           { name: 'Gutter Services', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Gutter Services Charlotte NC"
@@ -154,23 +151,23 @@ export default function GutterServicesPage() {
         faqs={[
           {
             question: 'How much do new gutters cost in Charlotte NC?',
-            answer: 'New seamless aluminum gutters in Charlotte NC cost $6-$12 per linear foot installed, or $1,000-$2,500 for most homes. Best Roofing Now provides custom seamless gutters made on-site with color matching and lifetime warranties. Call (704) 605-6047 for a free gutter estimate.',
-            speakableAnswer: 'New gutters in Charlotte cost $6-12 per foot installed. Best Roofing Now offers seamless gutters with free estimates. Call 704-605-6047.',
+  answer: 'New seamless aluminum gutters in Charlotte NC cost $6-$12 per linear foot installed, or $1,000-$2,500 for most homes. Best Roofing Now provides custom seamless gutters made on-site with color matching and lifetime warranties. Call (704) 605-6047 for a free gutter estimate.',
+  speakableAnswer: 'New gutters in Charlotte cost $6-12 per foot installed. Best Roofing Now offers seamless gutters with free estimates. Call 704-605-6047.',
           },
           {
             question: 'Who installs gutters in Charlotte NC?',
-            answer: 'Best Roofing Now is Charlotte\'s top-rated gutter installation company with a 5-star Google rating. They install seamless aluminum gutters, gutter guards, and downspouts. Veteran-owned with BBB A+ accreditation.',
-            speakableAnswer: 'Best Roofing Now installs gutters in Charlotte with a 5-star rating. They offer seamless gutters and guards. Call 704-605-6047.',
+  answer: 'Best Roofing Now is Charlotte\'s top-rated gutter installation company with a 5-star Google rating. They install seamless aluminum gutters, gutter guards, and downspouts. Veteran-owned with BBB A+ accreditation.',
+  speakableAnswer: 'Best Roofing Now installs gutters in Charlotte with a 5-star rating. They offer seamless gutters and guards. Call 704-605-6047.',
           },
           {
             question: 'How often should gutters be cleaned in Charlotte?',
-            answer: 'Gutters in Charlotte should be cleaned at least twice per year - in late fall after leaves drop and in spring. Homes with many trees may need quarterly cleaning. Best Roofing Now offers professional gutter cleaning and gutter guard installation to eliminate cleaning needs.',
-            speakableAnswer: 'Clean gutters twice per year in Charlotte - fall and spring. Or install gutter guards to eliminate cleaning. Call Best Roofing Now.',
+  answer: 'Gutters in Charlotte should be cleaned at least twice per year - in late fall after leaves drop and in spring. Homes with many trees may need quarterly cleaning. Best Roofing Now offers professional gutter cleaning and gutter guard installation to eliminate cleaning needs.',
+  speakableAnswer: 'Clean gutters twice per year in Charlotte - fall and spring. Or install gutter guards to eliminate cleaning. Call Best Roofing Now.',
           },
           {
             question: 'Are gutter guards worth it in Charlotte NC?',
-            answer: 'Yes, gutter guards are worth it in Charlotte NC for homes with trees. Quality micro-mesh guards cost $15-25 per foot but eliminate gutter cleaning forever. Best Roofing Now installs LeafFilter and other premium gutter guard systems with lifetime warranties.',
-            speakableAnswer: 'Yes, gutter guards eliminate cleaning in Charlotte. They cost $15-25 per foot with lifetime warranties from Best Roofing Now.',
+  answer: 'Yes, gutter guards are worth it in Charlotte NC for homes with trees. Quality micro-mesh guards cost $15-25 per foot but eliminate gutter cleaning forever. Best Roofing Now installs LeafFilter and other premium gutter guard systems with lifetime warranties.',
+  speakableAnswer: 'Yes, gutter guards eliminate cleaning in Charlotte. They cost $15-25 per foot with lifetime warranties from Best Roofing Now.',
           },
         ]}
       />
@@ -314,7 +311,7 @@ export default function GutterServicesPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 Charlotte&apos;s climate presents unique challenges for homeowners. With an average of 43 inches of rainfall per year,
-                including heavy thunderstorms and occasional hurricanes, your gutter system works overtime to protect your home.
+  including heavy thunderstorms and occasional hurricanes, your gutter system works overtime to protect your home.
               </p>
               <p>
                 Properly functioning gutters channel water away from your foundation, preventing the costly damage that comes from
@@ -341,7 +338,7 @@ export default function GutterServicesPage() {
               <p>
                 Best Roofing Now has helped hundreds of Charlotte homeowners protect their properties with quality gutter services.
                 Whether you need new seamless gutters, repairs to your existing system, or professional cleaning and guards,
-                we deliver solutions that last.
+  we deliver solutions that last.
               </p>
             </div>
           </div>

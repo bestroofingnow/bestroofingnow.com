@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -58,16 +58,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Gastonia NC | Expert Installation | Best Roofing Now',
-    description:
+  description:
       'Complete roof replacement with full tear-off and premium new roof installation in Gastonia NC. Certified installers, industry-leading warranties, and flexible financing options.',
-    url: `${SITE_CONFIG.url}/roof-replacement-gastonia-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-gastonia-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof replacement Gastonia NC - Best Roofing Now crew installing a new roof',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof replacement Gastonia NC - Best Roofing Now crew installing a new roof',
       },
     ],
   },
@@ -77,33 +77,33 @@ export const metadata: Metadata = {
 const replacementSigns = [
   {
     icon: Clock,
-    title: 'Age of Your Roof',
-    description: 'Most asphalt shingle roofs last 20-25 years. If your Gastonia home has an aging roof approaching or past this timeframe, replacement is often more cost-effective than repeated repairs.',
+  title: 'Age of Your Roof',
+  description: 'Most asphalt shingle roofs last 20-25 years. If your Gastonia home has an aging roof approaching or past this timeframe, replacement is often more cost-effective than repeated repairs.',
   },
   {
     icon: Droplets,
-    title: 'Multiple Leaks',
-    description: 'Recurring leaks in different areas indicate systemic failure. When the underlayment and decking are compromised, a full replacement is the only lasting solution for your Gastonia home.',
+  title: 'Multiple Leaks',
+  description: 'Recurring leaks in different areas indicate systemic failure. When the underlayment and decking are compromised, a full replacement is the only lasting solution for your Gastonia home.',
   },
   {
     icon: Layers,
-    title: 'Curling or Missing Shingles',
-    description: 'Widespread shingle damage, curling, buckling, or granule loss across large areas signals the end of your roof\'s protective life - common in Gaston County\'s variable climate.',
+  title: 'Curling or Missing Shingles',
+  description: 'Widespread shingle damage, curling, buckling, or granule loss across large areas signals the end of your roof\'s protective life - common in Gaston County\'s variable climate.',
   },
   {
     icon: ThermometerSun,
-    title: 'High Energy Bills',
-    description: 'A failing roof allows conditioned air to escape. If your energy bills have increased significantly, your roof\'s insulation value may be compromised by Gastonia\'s hot summers.',
+  title: 'High Energy Bills',
+  description: 'A failing roof allows conditioned air to escape. If your energy bills have increased significantly, your roof\'s insulation value may be compromised by Gastonia\'s hot summers.',
   },
   {
     icon: AlertTriangle,
-    title: 'Sagging Roof Deck',
-    description: 'A sagging roofline indicates structural damage from prolonged moisture infiltration. This requires immediate attention and full replacement to protect your home.',
+  title: 'Sagging Roof Deck',
+  description: 'A sagging roofline indicates structural damage from prolonged moisture infiltration. This requires immediate attention and full replacement to protect your home.',
   },
   {
     icon: Home,
-    title: 'Daylight Through Roof Boards',
-    description: 'If you see light coming through your attic, your roof deck has holes or gaps that compromise your entire roofing system and require immediate replacement.',
+  title: 'Daylight Through Roof Boards',
+  description: 'If you see light coming through your attic, your roof deck has holes or gaps that compromise your entire roofing system and require immediate replacement.',
   },
 ];
 
@@ -111,33 +111,33 @@ const replacementSigns = [
 const replacementProcess = [
   {
     step: 1,
-    title: 'Free Inspection & Estimate',
-    description: 'Our certified inspector thoroughly examines your current roof, attic, and ventilation. We provide a detailed written estimate with material options and transparent pricing for Gastonia homeowners.',
+  title: 'Free Inspection & Estimate',
+  description: 'Our certified inspector thoroughly examines your current roof, attic, and ventilation. We provide a detailed written estimate with material options and transparent pricing for Gastonia homeowners.',
   },
   {
     step: 2,
-    title: 'Material Selection',
-    description: 'Choose from premium shingles, metal roofing, or specialty materials. We help you select the best option for your home\'s style, budget, and Gaston County\'s climate conditions.',
+  title: 'Material Selection',
+  description: 'Choose from premium shingles, metal roofing, or specialty materials. We help you select the best option for your home\'s style, budget, and Gaston County\'s climate conditions.',
   },
   {
     step: 3,
-    title: 'Complete Tear-Off',
-    description: 'We remove all existing shingles, underlayment, and damaged decking down to the bare wood. This allows us to inspect and repair the entire roof structure.',
+  title: 'Complete Tear-Off',
+  description: 'We remove all existing shingles, underlayment, and damaged decking down to the bare wood. This allows us to inspect and repair the entire roof structure.',
   },
   {
     step: 4,
-    title: 'Deck Inspection & Repair',
-    description: 'Every board is inspected for rot, water damage, and structural integrity. Damaged sections are replaced with new plywood before installation begins.',
+  title: 'Deck Inspection & Repair',
+  description: 'Every board is inspected for rot, water damage, and structural integrity. Damaged sections are replaced with new plywood before installation begins.',
   },
   {
     step: 5,
-    title: 'Premium Installation',
-    description: 'New ice and water shield, synthetic underlayment, starter strips, shingles, ridge vents, and flashing are installed to manufacturer specifications.',
+  title: 'Premium Installation',
+  description: 'New ice and water shield, synthetic underlayment, starter strips, shingles, ridge vents, and flashing are installed to manufacturer specifications.',
   },
   {
     step: 6,
-    title: 'Final Inspection & Cleanup',
-    description: 'We perform a thorough final inspection, run magnetic sweeps for nails, and leave your Gastonia property cleaner than we found it. Your warranty documentation is provided.',
+  title: 'Final Inspection & Cleanup',
+  description: 'We perform a thorough final inspection, run magnetic sweeps for nails, and leave your Gastonia property cleaner than we found it. Your warranty documentation is provided.',
   },
 ];
 
@@ -145,35 +145,35 @@ const replacementProcess = [
 const materialOptions = [
   {
     icon: Layers,
-    title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles offering enhanced durability, wind resistance up to 130 MPH, and beautiful curb appeal. 30-50 year warranties available. Ideal for Gastonia homes.',
-    priceRange: '$8,000 - $15,000',
-    lifespan: '30-50 years',
-    popular: true,
+  title: 'Architectural Shingles',
+  description: 'Premium dimensional shingles offering enhanced durability, wind resistance up to 130 MPH, and beautiful curb appeal. 30-50 year warranties available. Ideal for Gastonia homes.',
+  priceRange: '$8,000 - $15,000',
+  lifespan: '30-50 years',
+  popular: true,
   },
   {
     icon: Shield,
-    title: 'Luxury/Designer Shingles',
-    description: 'Premium shingles that replicate the look of slate or cedar shake. Superior protection with stunning aesthetics and lifetime warranties for upscale Gaston County homes.',
-    priceRange: '$15,000 - $25,000',
-    lifespan: '50+ years',
-    popular: false,
+  title: 'Luxury/Designer Shingles',
+  description: 'Premium shingles that replicate the look of slate or cedar shake. Superior protection with stunning aesthetics and lifetime warranties for upscale Gaston County homes.',
+  priceRange: '$15,000 - $25,000',
+  lifespan: '50+ years',
+  popular: false,
   },
   {
     icon: Sparkles,
-    title: 'Metal Roofing',
-    description: 'Standing seam and metal shingle options. Exceptional longevity, energy efficiency, and modern aesthetics. Excellent choice for Gastonia\'s hot summers and severe storms.',
-    priceRange: '$18,000 - $35,000',
-    lifespan: '50-70 years',
-    popular: false,
+  title: 'Metal Roofing',
+  description: 'Standing seam and metal shingle options. Exceptional longevity, energy efficiency, and modern aesthetics. Excellent choice for Gastonia\'s hot summers and severe storms.',
+  priceRange: '$18,000 - $35,000',
+  lifespan: '50-70 years',
+  popular: false,
   },
   {
     icon: Home,
-    title: '3-Tab Shingles',
-    description: 'Budget-friendly option that still provides solid protection. Best suited for rental properties, sheds, or budget-conscious Gastonia homeowners.',
-    priceRange: '$6,000 - $10,000',
-    lifespan: '15-20 years',
-    popular: false,
+  title: '3-Tab Shingles',
+  description: 'Budget-friendly option that still provides solid protection. Best suited for rental properties, sheds, or budget-conscious Gastonia homeowners.',
+  priceRange: '$6,000 - $10,000',
+  lifespan: '15-20 years',
+  popular: false,
   },
 ];
 
@@ -181,23 +181,23 @@ const materialOptions = [
 const costFactors = [
   {
     icon: Layers,
-    title: 'Roof Size & Complexity',
-    description: 'Measured in roofing squares (100 sq ft). Multiple levels, steep slopes, and complex designs increase labor time and materials for your Gastonia home.',
+  title: 'Roof Size & Complexity',
+  description: 'Measured in roofing squares (100 sq ft). Multiple levels, steep slopes, and complex designs increase labor time and materials for your Gastonia home.',
   },
   {
     icon: Truck,
-    title: 'Material Choice',
-    description: 'Architectural shingles, designer shingles, and metal roofing each have different price points. Premium materials offer longer warranties.',
+  title: 'Material Choice',
+  description: 'Architectural shingles, designer shingles, and metal roofing each have different price points. Premium materials offer longer warranties.',
   },
   {
     icon: Hammer,
-    title: 'Deck Repairs',
-    description: 'Rotted or damaged decking must be replaced. Most Gastonia roofs need some repairs, which adds to the total project cost.',
+  title: 'Deck Repairs',
+  description: 'Rotted or damaged decking must be replaced. Most Gastonia roofs need some repairs, which adds to the total project cost.',
   },
   {
     icon: FileCheck,
-    title: 'Permits & Codes',
-    description: 'Gastonia and Gaston County require roofing permits. We handle all permitting and ensure your new roof meets current building codes.',
+  title: 'Permits & Codes',
+  description: 'Gastonia and Gaston County require roofing permits. We handle all permitting and ensure your new roof meets current building codes.',
   },
 ];
 
@@ -245,42 +245,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does a roof replacement cost in Gastonia NC?',
-    answer:
+  answer:
       'Roof replacement costs in Gastonia typically range from $8,000 to $25,000 for most residential homes, depending on roof size, material choice, and complexity. The average Gastonia home (1,500-2,500 sq ft roof) costs between $10,000 and $18,000 for architectural shingles. We provide free, detailed estimates with no hidden fees.',
   },
   {
     question: 'How long does a complete roof replacement take in Gastonia?',
-    answer:
+  answer:
       'Most residential roof replacements in Gastonia are completed in 1-3 days. Larger homes, complex roof designs, or unexpected deck repairs may extend the timeline to 4-5 days. We work efficiently while maintaining our quality standards and always communicate the expected timeline upfront.',
   },
   {
     question: 'Do I need to be home during the roof replacement?',
-    answer:
+  answer:
       'No, you do not need to be home during your roof replacement. We just need access to your property and electrical outlets. Many Gastonia homeowners prefer to be away due to the noise. We will contact you before starting, keep you updated throughout, and walk you through the completed work.',
   },
   {
     question: 'What warranties come with a new roof from Best Roofing Now in Gastonia?',
-    answer:
+  answer:
       'Your new roof includes both manufacturer material warranties (25-50 years depending on product) and our workmanship warranty. As certified installers for CertainTeed, GAF, and Owens Corning, we can offer extended warranties including GAF Golden Pledge (50-year non-prorated) and CertainTeed SureStart PLUS coverage for Gastonia homeowners.',
   },
   {
     question: 'Can I stay in my home during roof replacement in Gastonia?',
-    answer:
+  answer:
       'Yes, you can stay in your Gastonia home during roof replacement. The work happens outside, so your daily routine is mostly unaffected. Expect some noise during tear-off and installation (typically 7 AM - 6 PM). We recommend removing wall decorations near the ceiling and expect some vibration. Pets may be more comfortable in an interior room or away for the day.',
   },
   {
     question: 'Will my insurance cover roof replacement in Gaston County?',
-    answer:
+  answer:
       'Insurance typically covers roof replacement if the damage was caused by a covered peril like hail, wind, or fallen trees. Gaston County experiences severe storms that often qualify for coverage. Normal wear and aging are generally not covered. We provide detailed damage documentation and work directly with insurance adjusters to help maximize your claim.',
   },
   {
     question: 'How do I know if I need replacement vs. repair in Gastonia?',
-    answer:
+  answer:
       'Generally, if your Gastonia home\'s roof is under 15 years old with isolated damage, repairs make sense. If your roof is 20+ years old, has multiple problem areas, widespread shingle deterioration, or has had repeated repairs, replacement is usually more cost-effective long-term. Our free inspection includes an honest assessment of the best option for your situation.',
   },
   {
     question: 'Do you offer financing for roof replacement in Gastonia NC?',
-    answer:
+  answer:
       'Yes! We offer flexible financing options to make roof replacement affordable for Gastonia homeowners. Options include 0% interest promotional periods, low monthly payments, and terms up to 144 months. Most homeowners qualify, and approval takes just minutes. We can discuss financing during your free estimate.',
   },
 ];
@@ -295,7 +295,6 @@ export default function RoofReplacementGastoniaNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -385,7 +384,7 @@ export default function RoofReplacementGastoniaNCPage() {
               </h2>
               <p className="text-gray text-lg mb-6">
                 Gastonia, the seat of Gaston County and one of the largest cities in the Charlotte metro area,
-                has a rich industrial heritage and diverse housing stock. From historic downtown homes to modern
+  has a rich industrial heritage and diverse housing stock. From historic downtown homes to modern
                 subdivisions in West Gastonia, our roof replacement services protect the homes that make this
                 community great.
               </p>
@@ -572,7 +571,7 @@ export default function RoofReplacementGastoniaNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 Several factors determine the final cost of your new roof in Gaston County. We provide transparent,
-                itemized estimates so you know exactly what you are paying for.
+  itemized estimates so you know exactly what you are paying for.
               </p>
               <div className="space-y-4">
                 {costFactors.map((factor) => (
@@ -870,8 +869,8 @@ export default function RoofReplacementGastoniaNCPage() {
               </div>
               <p className="text-gray text-lg">
                 Whether your home is in Downtown Gastonia, the established neighborhoods near Firestone,
-                the growing communities in West Gastonia, or the surrounding towns like Belmont, Mount Holly,
-                and Cramerton, our certified installers deliver the same exceptional quality and protection.
+  the growing communities in West Gastonia, or the surrounding towns like Belmont, Mount Holly,
+  and Cramerton, our certified installers deliver the same exceptional quality and protection.
               </p>
             </div>
           </div>
@@ -962,7 +961,7 @@ export default function RoofReplacementGastoniaNCPage() {
                 <p className="text-gray">
                   Gastonia and Gaston County have been good to our family, and we take pride in serving this
                   community with the same dedication we bring to every project. When you need a new roof,
-                  you deserve honest advice and quality work - not a high-pressure sales pitch. That&apos;s the
+  you deserve honest advice and quality work - not a high-pressure sales pitch. That&apos;s the
                   Best Roofing Now difference, and it&apos;s something we bring to every home we work on in Gastonia.
                 </p>
                 <p className="text-primary font-semibold mt-4">

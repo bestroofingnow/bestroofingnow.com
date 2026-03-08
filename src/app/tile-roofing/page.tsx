@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Tile Roofing Charlotte NC | Clay & Concrete Tiles | Best Roofing Now',
-    description: 'Premium tile roofing installation and repair in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/tile-roofing`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Tile roofing in Charlotte NC' }],
+  description: 'Premium tile roofing installation and repair in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/tile-roofing`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Tile roofing in Charlotte NC' }],
   },
 };
 
@@ -97,8 +97,8 @@ export default function TileRoofingPage() {
       <ServiceSchema
         service={{
           title: "Tile Roofing",
-          description: "Premium tile roofing installation and repair in Charlotte NC with clay and concrete options.",
-          slug: "tile-roofing",
+  description: "Premium tile roofing installation and repair in Charlotte NC with clay and concrete options.",
+  slug: "tile-roofing",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/tile-roofing`} pageName="Tile Roofing Charlotte NC" city="Charlotte" />

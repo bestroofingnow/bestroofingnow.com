@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Skylight Installation Charlotte NC | VELUX Certified | Best Roofing Now',
-    description:
+  description:
       'VELUX certified skylight installation in Charlotte NC. Fixed, venting, and tubular skylights to bring natural light into your home. Free estimates from licensed professionals.',
-    url: `${SITE_CONFIG.url}/skylight-installation-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/skylight-installation-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero14,
-        width: 1200,
-        height: 630,
-        alt: 'Skylight installation Charlotte NC - Best Roofing Now professional skylight services',
+  width: 1200,
+  height: 630,
+  alt: 'Skylight installation Charlotte NC - Best Roofing Now professional skylight services',
       },
     ],
   },
@@ -69,39 +69,39 @@ export const metadata: Metadata = {
 const skylightServices = [
   {
     icon: Sun,
-    title: 'Fixed Skylights',
-    description: 'Non-opening skylights that flood rooms with natural light. Perfect for hallways, stairwells, and vaulted ceilings.',
-    href: '/services/skylight-installation',
+  title: 'Fixed Skylights',
+  description: 'Non-opening skylights that flood rooms with natural light. Perfect for hallways, stairwells, and vaulted ceilings.',
+  href: '/services/skylight-installation',
   },
   {
     icon: Wind,
-    title: 'Venting Skylights',
-    description: 'Operable skylights that open to provide fresh air ventilation along with natural light. Manual or solar-powered options.',
-    href: '/services/skylight-installation',
+  title: 'Venting Skylights',
+  description: 'Operable skylights that open to provide fresh air ventilation along with natural light. Manual or solar-powered options.',
+  href: '/services/skylight-installation',
   },
   {
     icon: Sparkles,
-    title: 'Sun Tunnels',
-    description: 'Tubular skylights that bring natural light to interior rooms, closets, and spaces where traditional skylights won\'t work.',
-    href: '/services/skylight-installation',
+  title: 'Sun Tunnels',
+  description: 'Tubular skylights that bring natural light to interior rooms, closets, and spaces where traditional skylights won\'t work.',
+  href: '/services/skylight-installation',
   },
   {
     icon: Wrench,
-    title: 'Skylight Repair',
-    description: 'Fix leaking, foggy, or damaged skylights. We repair all brands and can restore your skylight to like-new condition.',
-    href: '/services/skylight-installation',
+  title: 'Skylight Repair',
+  description: 'Fix leaking, foggy, or damaged skylights. We repair all brands and can restore your skylight to like-new condition.',
+  href: '/services/skylight-installation',
   },
   {
     icon: Shield,
-    title: 'Skylight Replacement',
-    description: 'Replace outdated or failing skylights with modern, energy-efficient models featuring Low-E glass and improved sealing.',
-    href: '/services/skylight-installation',
+  title: 'Skylight Replacement',
+  description: 'Replace outdated or failing skylights with modern, energy-efficient models featuring Low-E glass and improved sealing.',
+  href: '/services/skylight-installation',
   },
   {
     icon: Zap,
-    title: 'Solar-Powered Skylights',
-    description: 'Self-powered venting skylights with blinds that qualify for federal tax credits. No wiring required.',
-    href: '/services/skylight-installation',
+  title: 'Solar-Powered Skylights',
+  description: 'Self-powered venting skylights with blinds that qualify for federal tax credits. No wiring required.',
+  href: '/services/skylight-installation',
   },
 ];
 
@@ -109,33 +109,33 @@ const skylightServices = [
 const skylightBenefits = [
   {
     icon: Sun,
-    title: 'Natural Light',
-    description: 'Skylights provide up to 3x more light than vertical windows of the same size.',
+  title: 'Natural Light',
+  description: 'Skylights provide up to 3x more light than vertical windows of the same size.',
   },
   {
     icon: Zap,
-    title: 'Energy Savings',
-    description: 'Reduce daytime lighting costs and modern Low-E glass minimizes heat gain in summer.',
+  title: 'Energy Savings',
+  description: 'Reduce daytime lighting costs and modern Low-E glass minimizes heat gain in summer.',
   },
   {
     icon: Wind,
-    title: 'Ventilation',
-    description: 'Venting skylights release hot air that rises, naturally cooling your home.',
+  title: 'Ventilation',
+  description: 'Venting skylights release hot air that rises, naturally cooling your home.',
   },
   {
     icon: Star,
-    title: 'Home Value',
-    description: 'Skylights add aesthetic appeal and can increase your home\'s resale value.',
+  title: 'Home Value',
+  description: 'Skylights add aesthetic appeal and can increase your home\'s resale value.',
   },
   {
     icon: CheckCircle,
-    title: 'Health Benefits',
-    description: 'Natural light improves mood, sleep quality, and overall well-being.',
+  title: 'Health Benefits',
+  description: 'Natural light improves mood, sleep quality, and overall well-being.',
   },
   {
     icon: Award,
-    title: 'Tax Credits',
-    description: 'Solar-powered VELUX skylights may qualify for federal tax credits up to 30%.',
+  title: 'Tax Credits',
+  description: 'Solar-powered VELUX skylights may qualify for federal tax credits up to 30%.',
   },
 ];
 
@@ -143,33 +143,33 @@ const skylightBenefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'VELUX Certified',
-    description: 'Factory-trained VELUX skylight installers ensuring proper installation and warranty protection.',
+  title: 'VELUX Certified',
+  description: 'Factory-trained VELUX skylight installers ensuring proper installation and warranty protection.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability coverage.',
   },
   {
     icon: CheckCircle,
-    title: 'Leak-Free Guarantee',
-    description: 'Proper flashing and installation techniques ensure your skylight won\'t leak.',
+  title: 'Leak-Free Guarantee',
+  description: 'Proper flashing and installation techniques ensure your skylight won\'t leak.',
   },
   {
     icon: Users,
-    title: 'Experienced Team',
-    description: `${SITE_CONFIG.roofsInstalled}+ roofing projects completed in the Charlotte area.`,
+  title: 'Experienced Team',
+  description: `${SITE_CONFIG.roofsInstalled}+ roofing projects completed in the Charlotte area.`,
   },
   {
     icon: Clock,
-    title: 'Quick Installation',
-    description: 'Most skylight installations completed in just one day with minimal disruption.',
+  title: 'Quick Installation',
+  description: 'Most skylight installations completed in just one day with minimal disruption.',
   },
 ];
 
@@ -215,42 +215,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does skylight installation cost in Charlotte?',
-    answer:
+  answer:
       'Skylight installation in Charlotte typically costs $1,000-$3,500 depending on the type, size, and complexity of installation. Fixed skylights are most affordable ($1,000-$1,800), venting skylights run $1,500-$2,500, and tubular sun tunnels cost $500-$1,200. Solar-powered skylights with blinds range from $2,000-$3,500 but may qualify for federal tax credits. We provide free estimates with transparent pricing.',
   },
   {
     question: 'Will a skylight make my home hotter in the summer?',
-    answer:
+  answer:
       'Modern skylights with Low-E glass actually help control heat gain. VELUX skylights feature specially coated glass that blocks heat while allowing natural light to pass through. Additionally, venting skylights can help cool your home by releasing the hot air that naturally rises to your ceiling. We always recommend Low-E glass for Charlotte\'s hot summers.',
   },
   {
     question: 'Do skylights leak?',
-    answer:
+  answer:
       'When properly installed by certified professionals, skylights should not leak. Skylight leaks are almost always the result of improper installation or deteriorating flashing. As VELUX certified installers, we follow manufacturer specifications precisely and use quality flashing systems to ensure a watertight seal. Our installations come with both manufacturer and workmanship warranties.',
   },
   {
     question: 'What is the best skylight for Charlotte NC homes?',
-    answer:
+  answer:
       'For Charlotte\'s climate, we typically recommend VELUX skylights with Low-E glass and solar-powered blinds. The Low-E coating blocks heat during our hot summers, while the blinds give you control over light and temperature. Venting skylights are especially popular in Charlotte as they help release hot air and reduce cooling costs.',
   },
   {
     question: 'Can you install a skylight in any roof?',
-    answer:
+  answer:
       'Skylights can be installed in most roof types including asphalt shingle, metal, tile, and flat roofs. The key considerations are roof pitch, rafter spacing, and interior ceiling construction. During your free consultation, we\'ll assess your specific roof and recommend the best skylight options for your home.',
   },
   {
     question: 'What is a sun tunnel/tubular skylight?',
-    answer:
+  answer:
       'A sun tunnel (or tubular skylight) uses a small dome on your roof connected to a reflective tube that channels natural light into interior spaces. They\'re perfect for rooms where traditional skylights won\'t work, such as closets, bathrooms, hallways, and rooms without direct roof access. They\'re also more affordable and easier to install than traditional skylights.',
   },
   {
     question: 'How long does skylight installation take?',
-    answer:
+  answer:
       'Most skylight installations are completed in one day. A standard fixed or venting skylight installation typically takes 4-6 hours, while tubular skylights (sun tunnels) can be installed in 2-3 hours. More complex installations involving multiple skylights or significant interior finishing work may take 1-2 days.',
   },
   {
     question: 'Are there tax credits for skylights?',
-    answer:
+  answer:
       'Yes! VELUX solar-powered fresh air skylights and blinds qualify for a federal tax credit of up to 30% of the product and installation cost through 2032. This can significantly reduce your investment while bringing natural light and ventilation to your home. We can provide documentation to help you claim this credit.',
   },
 ];
@@ -265,7 +265,6 @@ export default function SkylightInstallationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

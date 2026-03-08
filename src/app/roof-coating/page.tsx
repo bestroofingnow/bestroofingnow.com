@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Coating Charlotte NC | Silicone & Elastomeric | Best Roofing Now',
-    description: 'Professional roof coating services to extend roof life and reduce energy costs.',
-    url: `${SITE_CONFIG.url}/roof-coating`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof coating in Charlotte NC' }],
+  description: 'Professional roof coating services to extend roof life and reduce energy costs.',
+  url: `${SITE_CONFIG.url}/roof-coating`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof coating in Charlotte NC' }],
   },
 };
 
@@ -96,8 +96,8 @@ export default function RoofCoatingPage() {
       <ServiceSchema
         service={{
           title: "Roof Coating",
-          description: "Professional roof coating services in Charlotte NC to extend roof life and reduce energy costs.",
-          slug: "roof-coating",
+  description: "Professional roof coating services in Charlotte NC to extend roof life and reduce energy costs.",
+  slug: "roof-coating",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/roof-coating`} pageName="Roof Coating Charlotte NC" city="Charlotte" />

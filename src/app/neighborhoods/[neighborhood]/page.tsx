@@ -10,7 +10,6 @@ import {
   BreadcrumbSchema,
   FAQSchema,
   WebPageSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -37,66 +36,66 @@ const CHARLOTTE_NEIGHBORHOODS: Record<string, {
 }> = {
   'ballantyne': {
     distanceFromHQ: 18,
-    responseTime: '35-45 minutes',
-    typicalHomeAges: '1991-present',
-    commonMaterials: ['Architectural Shingles', 'Designer Shingles', 'Synthetic Slate'],
-    seoFocus: ['ballantyne roofing contractor', 'ballantyne roof repair', 'ballantyne roof replacement'],
+  responseTime: '35-45 minutes',
+  typicalHomeAges: '1991-present',
+  commonMaterials: ['Architectural Shingles', 'Designer Shingles', 'Synthetic Slate'],
+  seoFocus: ['ballantyne roofing contractor', 'ballantyne roof repair', 'ballantyne roof replacement'],
   },
   'southpark': {
     distanceFromHQ: 12,
-    responseTime: '25-35 minutes',
-    typicalHomeAges: '1960s-2020s',
-    commonMaterials: ['Architectural Shingles', 'Designer Shingles', 'Slate', 'Metal'],
-    seoFocus: ['southpark roofing contractor', 'southpark roof repair', 'southpark roofer'],
+  responseTime: '25-35 minutes',
+  typicalHomeAges: '1960s-2020s',
+  commonMaterials: ['Architectural Shingles', 'Designer Shingles', 'Slate', 'Metal'],
+  seoFocus: ['southpark roofing contractor', 'southpark roof repair', 'southpark roofer'],
   },
   'myers-park': {
     distanceFromHQ: 10,
-    responseTime: '20-30 minutes',
-    typicalHomeAges: '1920s-1960s',
-    commonMaterials: ['Slate', 'Cedar Shake', 'Architectural Shingles', 'Copper'],
-    seoFocus: ['myers park roofing contractor', 'myers park historic roofing', 'myers park roof repair'],
+  responseTime: '20-30 minutes',
+  typicalHomeAges: '1920s-1960s',
+  commonMaterials: ['Slate', 'Cedar Shake', 'Architectural Shingles', 'Copper'],
+  seoFocus: ['myers park roofing contractor', 'myers park historic roofing', 'myers park roof repair'],
   },
   'dilworth': {
     distanceFromHQ: 8,
-    responseTime: '15-25 minutes',
-    typicalHomeAges: '1891-1940s',
-    commonMaterials: ['Slate', 'Architectural Shingles', 'Metal Standing Seam', 'Cedar Shake'],
-    seoFocus: ['dilworth roofing contractor', 'dilworth historic roof repair', 'dilworth roofer'],
+  responseTime: '15-25 minutes',
+  typicalHomeAges: '1891-1940s',
+  commonMaterials: ['Slate', 'Architectural Shingles', 'Metal Standing Seam', 'Cedar Shake'],
+  seoFocus: ['dilworth roofing contractor', 'dilworth historic roof repair', 'dilworth roofer'],
   },
   'plaza-midwood': {
     distanceFromHQ: 6,
-    responseTime: '15-20 minutes',
-    typicalHomeAges: '1920s-1960s',
-    commonMaterials: ['Architectural Shingles', '3-Tab Shingles', 'Metal Standing Seam'],
-    seoFocus: ['plaza midwood roofing contractor', 'plaza midwood roof repair', 'plaza midwood roofer'],
+  responseTime: '15-20 minutes',
+  typicalHomeAges: '1920s-1960s',
+  commonMaterials: ['Architectural Shingles', '3-Tab Shingles', 'Metal Standing Seam'],
+  seoFocus: ['plaza midwood roofing contractor', 'plaza midwood roof repair', 'plaza midwood roofer'],
   },
   'noda': {
     distanceFromHQ: 5,
-    responseTime: '10-20 minutes',
-    typicalHomeAges: '1903-1940s (mill houses), 2010s-present (new)',
-    commonMaterials: ['Architectural Shingles', '3-Tab Shingles', 'Metal Standing Seam'],
-    seoFocus: ['noda roofing contractor', 'north davidson roofing', 'noda roof repair'],
+  responseTime: '10-20 minutes',
+  typicalHomeAges: '1903-1940s (mill houses), 2010s-present (new)',
+  commonMaterials: ['Architectural Shingles', '3-Tab Shingles', 'Metal Standing Seam'],
+  seoFocus: ['noda roofing contractor', 'north davidson roofing', 'noda roof repair'],
   },
   'uptown': {
     distanceFromHQ: 7,
-    responseTime: '15-25 minutes',
-    typicalHomeAges: '2000s-present (residential)',
-    commonMaterials: ['TPO Membrane', 'Modified Bitumen', 'Metal Standing Seam', 'Architectural Shingles'],
-    seoFocus: ['uptown charlotte roofing', 'uptown condo roofing', 'center city roofing contractor'],
+  responseTime: '15-25 minutes',
+  typicalHomeAges: '2000s-present (residential)',
+  commonMaterials: ['TPO Membrane', 'Modified Bitumen', 'Metal Standing Seam', 'Architectural Shingles'],
+  seoFocus: ['uptown charlotte roofing', 'uptown condo roofing', 'center city roofing contractor'],
   },
   'university-city': {
     distanceFromHQ: 3,
-    responseTime: '5-15 minutes',
-    typicalHomeAges: '1970s-present',
-    commonMaterials: ['Architectural Shingles', '3-Tab Shingles', 'Modified Bitumen'],
-    seoFocus: ['university city roofing contractor', 'uncc area roofer', 'university city roof repair'],
+  responseTime: '5-15 minutes',
+  typicalHomeAges: '1970s-present',
+  commonMaterials: ['Architectural Shingles', '3-Tab Shingles', 'Modified Bitumen'],
+  seoFocus: ['university city roofing contractor', 'uncc area roofer', 'university city roof repair'],
   },
   'south-end': {
     distanceFromHQ: 9,
-    responseTime: '20-30 minutes',
-    typicalHomeAges: '2005-present (residential)',
-    commonMaterials: ['TPO Membrane', 'Architectural Shingles', 'Metal Standing Seam'],
-    seoFocus: ['south end roofing contractor', 'south end townhome roofing', 'south end roof repair'],
+  responseTime: '20-30 minutes',
+  typicalHomeAges: '2005-present (residential)',
+  commonMaterials: ['TPO Membrane', 'Architectural Shingles', 'Metal Standing Seam'],
+  seoFocus: ['south end roofing contractor', 'south end townhome roofing', 'south end roof repair'],
   },
 };
 
@@ -106,23 +105,23 @@ function generateAEOFAQs(displayName: string, extraData: typeof CHARLOTTE_NEIGHB
   return [
     {
       question: `Who is the best roofer in ${displayName}, Charlotte?`,
-      answer: `Best Roofing Now is the top-rated roofing contractor serving ${displayName} in Charlotte. With a 5-star Google rating, BBB A+ accreditation, and over 500 roofs completed, they're the trusted choice for ${displayName} homeowners. They offer free inspections and can respond within ${responseTime}. Call (704) 605-6047.`,
-      speakableAnswer: `Best Roofing Now is the top-rated roofer in ${displayName} Charlotte. 5-star rated, BBB A+, with 500 plus roofs completed. Call 704-605-6047.`,
+  answer: `Best Roofing Now is the top-rated roofing contractor serving ${displayName} in Charlotte. With a 5-star Google rating, BBB A+ accreditation, and over 500 roofs completed, they're the trusted choice for ${displayName} homeowners. They offer free inspections and can respond within ${responseTime}. Call (704) 605-6047.`,
+  speakableAnswer: `Best Roofing Now is the top-rated roofer in ${displayName} Charlotte. 5-star rated, BBB A+, with 500 plus roofs completed. Call 704-605-6047.`,
     },
     {
       question: `How much does a roof cost in ${displayName}, Charlotte?`,
-      answer: `A new roof in ${displayName}, Charlotte costs $8,000-$25,000 for most homes. ${extraData?.commonMaterials ? `Common materials in ${displayName} include ${extraData.commonMaterials.slice(0, 2).join(' and ')}.` : ''} Best Roofing Now offers free estimates with no hidden fees and financing from $99/month. Call (704) 605-6047.`,
-      speakableAnswer: `A new roof in ${displayName} Charlotte costs $8,000 to $25,000 for most homes. Best Roofing Now offers free estimates and financing. Call 704-605-6047.`,
+  answer: `A new roof in ${displayName}, Charlotte costs $8,000-$25,000 for most homes. ${extraData?.commonMaterials ? `Common materials in ${displayName} include ${extraData.commonMaterials.slice(0, 2).join(' and ')}.` : ''} Best Roofing Now offers free estimates with no hidden fees and financing from $99/month. Call (704) 605-6047.`,
+  speakableAnswer: `A new roof in ${displayName} Charlotte costs $8,000 to $25,000 for most homes. Best Roofing Now offers free estimates and financing. Call 704-605-6047.`,
     },
     {
       question: `How fast can you repair a roof leak in ${displayName}?`,
-      answer: `Best Roofing Now responds to ${displayName} roof emergencies within ${responseTime}. For active leaks, they offer same-day and 24/7 emergency service with response times of 1-4 hours. Emergency tarping is available to prevent water damage. Call (704) 605-6047.`,
-      speakableAnswer: `Best Roofing Now responds to ${displayName} roof emergencies within ${responseTime}. 24/7 emergency service available. Call 704-605-6047.`,
+  answer: `Best Roofing Now responds to ${displayName} roof emergencies within ${responseTime}. For active leaks, they offer same-day and 24/7 emergency service with response times of 1-4 hours. Emergency tarping is available to prevent water damage. Call (704) 605-6047.`,
+  speakableAnswer: `Best Roofing Now responds to ${displayName} roof emergencies within ${responseTime}. 24/7 emergency service available. Call 704-605-6047.`,
     },
     {
       question: `Do you offer free roof inspections in ${displayName}?`,
-      answer: `Yes, Best Roofing Now provides completely free roof inspections for ${displayName} homeowners. Their certified inspectors assess your roof's condition with detailed photo documentation and provide honest recommendations. No obligation. Call (704) 605-6047 to schedule.`,
-      speakableAnswer: `Yes, Best Roofing Now offers free roof inspections in ${displayName}. No obligation. Call 704-605-6047 to schedule.`,
+  answer: `Yes, Best Roofing Now provides completely free roof inspections for ${displayName} homeowners. Their certified inspectors assess your roof's condition with detailed photo documentation and provide honest recommendations. No obligation. Call (704) 605-6047 to schedule.`,
+  speakableAnswer: `Yes, Best Roofing Now offers free roof inspections in ${displayName}. No obligation. Call 704-605-6047 to schedule.`,
     },
   ];
 }
@@ -132,27 +131,27 @@ function generateNeighborhoodFAQs(neighborhood: Neighborhood, extraData: typeof 
   return [
     {
       question: `How much does a new roof cost in ${neighborhood.name}?`,
-      answer: `Roof replacement costs in ${neighborhood.name} typically range from $8,000 to $25,000 for residential homes, depending on size, materials, and complexity. ${neighborhood.name} homes often feature ${neighborhood.homeStyles.toLowerCase()}, which may require specialized materials. We offer free inspections and detailed estimates for ${neighborhood.name} homeowners. Contact us at ${SITE_CONFIG.phone} for your free estimate.`,
+  answer: `Roof replacement costs in ${neighborhood.name} typically range from $8,000 to $25,000 for residential homes, depending on size, materials, and complexity. ${neighborhood.name} homes often feature ${neighborhood.homeStyles.toLowerCase()}, which may require specialized materials. We offer free inspections and detailed estimates for ${neighborhood.name} homeowners. Contact us at ${SITE_CONFIG.phone} for your free estimate.`,
     },
     {
       question: `What roofing materials are best for ${neighborhood.name} homes?`,
-      answer: `${neighborhood.name} homes commonly use ${extraData.commonMaterials.join(', ')}. The best choice depends on your home's architectural style, HOA requirements, and budget. ${neighborhood.name}'s ${neighborhood.characteristics.split(',')[0].toLowerCase()} makes material selection important. We're certified installers of CertainTeed, GAF, and Owens Corning products suitable for ${neighborhood.name}.`,
+  answer: `${neighborhood.name} homes commonly use ${extraData.commonMaterials.join(', ')}. The best choice depends on your home's architectural style, HOA requirements, and budget. ${neighborhood.name}'s ${neighborhood.characteristics.split(',')[0].toLowerCase()} makes material selection important. We're certified installers of CertainTeed, GAF, and Owens Corning products suitable for ${neighborhood.name}.`,
     },
     {
       question: `How quickly can you respond to roof emergencies in ${neighborhood.name}?`,
-      answer: `Best Roofing Now responds to ${neighborhood.name} emergencies within ${extraData.responseTime}. Located just ${extraData.distanceFromHQ} miles from our Charlotte headquarters at ${SITE_CONFIG.address.street}, we can quickly reach ${neighborhood.name} for storm damage, active leaks, and other urgent situations. Call our 24/7 emergency line at ${SITE_CONFIG.phone}.`,
+  answer: `Best Roofing Now responds to ${neighborhood.name} emergencies within ${extraData.responseTime}. Located just ${extraData.distanceFromHQ} miles from our Charlotte headquarters at ${SITE_CONFIG.address.street}, we can quickly reach ${neighborhood.name} for storm damage, active leaks, and other urgent situations. Call our 24/7 emergency line at ${SITE_CONFIG.phone}.`,
     },
     {
       question: `Do you work with ${neighborhood.name} HOAs?`,
-      answer: `Yes, we have extensive experience working with ${neighborhood.name} HOA requirements. ${neighborhood.localData.hoaInfo} We handle all HOA communications and ensure our work meets community standards. Our team understands ${neighborhood.name}'s architectural guidelines.`,
+  answer: `Yes, we have extensive experience working with ${neighborhood.name} HOA requirements. ${neighborhood.localData.hoaInfo} We handle all HOA communications and ensure our work meets community standards. Our team understands ${neighborhood.name}'s architectural guidelines.`,
     },
     {
       question: `What are common roofing problems in ${neighborhood.name}?`,
-      answer: `${neighborhood.roofingChallenges} Our team has completed numerous projects in ${neighborhood.name} and understands these specific challenges. We use advanced drone technology for thorough inspections and provide detailed assessments.`,
+  answer: `${neighborhood.roofingChallenges} Our team has completed numerous projects in ${neighborhood.name} and understands these specific challenges. We use advanced drone technology for thorough inspections and provide detailed assessments.`,
     },
     {
       question: `How long do roofs typically last in ${neighborhood.name}?`,
-      answer: `Roof lifespan in ${neighborhood.name} depends on materials and maintenance. Architectural shingles last 25-30 years, while premium materials like slate can last 75-100 years. ${neighborhood.name} homes built ${extraData.typicalHomeAges} may have roofs approaching replacement age. Schedule a free inspection to assess your roof's condition.`,
+  answer: `Roof lifespan in ${neighborhood.name} depends on materials and maintenance. Architectural shingles last 25-30 years, while premium materials like slate can last 75-100 years. ${neighborhood.name} homes built ${extraData.typicalHomeAges} may have roofs approaching replacement age. Schedule a free inspection to assess your roof's condition.`,
     },
   ];
 }
@@ -212,29 +211,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title,
-    description,
-    keywords,
-    alternates: {
+  description,
+  keywords,
+  alternates: {
       canonical: `${SITE_CONFIG.url}/locations/charlotte-nc/${neighborhoodSlug}`,
     },
-    openGraph: {
+  openGraph: {
       title: `${displayName} Roofing Contractor | Best Roofing Now Charlotte`,
-      description: `Expert roofing services for ${displayName} homes. 5-star rated, BBB A+ accredited. Free inspections.`,
-      url: `${SITE_CONFIG.url}/neighborhoods/${neighborhoodSlug}`,
-      type: 'website',
-      images: [
+  description: `Expert roofing services for ${displayName} homes. 5-star rated, BBB A+ accredited. Free inspections.`,
+  url: `${SITE_CONFIG.url}/neighborhoods/${neighborhoodSlug}`,
+  type: 'website',
+  images: [
         {
           url: IMAGES.hero.roofTeam,
-          width: 1200,
-          height: 630,
-          alt: `Roofing services in ${displayName}, Charlotte NC`,
+  width: 1200,
+  height: 630,
+  alt: `Roofing services in ${displayName}, Charlotte NC`,
         },
       ],
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title: `${displayName} Roofing | Best Roofing Now`,
-      description: `Professional roofing for ${displayName} Charlotte. Free estimates.`,
+  title: `${displayName} Roofing | Best Roofing Now`,
+  description: `Professional roofing for ${displayName} Charlotte. Free estimates.`,
     },
   };
 }
@@ -259,11 +258,11 @@ export default async function NeighborhoodPage({ params }: PageProps) {
     : [
         {
           question: `Do you serve ${displayName}, Charlotte?`,
-          answer: `Yes! Best Roofing Now proudly serves ${displayName} and all Charlotte neighborhoods. We offer free roof inspections, repairs, replacements, and storm damage restoration. Call us at ${SITE_CONFIG.phone}.`,
+  answer: `Yes! Best Roofing Now proudly serves ${displayName} and all Charlotte neighborhoods. We offer free roof inspections, repairs, replacements, and storm damage restoration. Call us at ${SITE_CONFIG.phone}.`,
         },
         {
           question: `How quickly can you get to ${displayName}?`,
-          answer: `We can typically reach ${displayName} within 30-45 minutes from our Charlotte headquarters. For emergencies, we prioritize rapid response. Call ${SITE_CONFIG.phone} for immediate assistance.`,
+  answer: `We can typically reach ${displayName} within 30-45 minutes from our Charlotte headquarters. For emergencies, we prioritize rapid response. Call ${SITE_CONFIG.phone} for immediate assistance.`,
         },
       ];
 
@@ -276,81 +275,81 @@ export default async function NeighborhoodPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `${pageUrl}/#service`,
-    name: `Roofing Services in ${displayName}`,
-    description: neighborhood?.description || `Professional roofing services for ${displayName}, Charlotte NC homes. Roof repair, replacement, and storm damage restoration.`,
-    url: pageUrl,
-    serviceType: 'Roofing Services',
-    provider: {
+  name: `Roofing Services in ${displayName}`,
+  description: neighborhood?.description || `Professional roofing services for ${displayName}, Charlotte NC homes. Roof repair, replacement, and storm damage restoration.`,
+  url: pageUrl,
+  serviceType: 'Roofing Services',
+  provider: {
       ...getRoofingContractorIdentity(),
-      email: SITE_CONFIG.email,
-      aggregateRating: {
+  email: SITE_CONFIG.email,
+  aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: SITE_CONFIG.googleRating,
-        reviewCount: SITE_CONFIG.googleReviewCount,
-        bestRating: 5,
-        worstRating: 1,
+  ratingValue: SITE_CONFIG.googleRating,
+  reviewCount: SITE_CONFIG.googleReviewCount,
+  bestRating: 5,
+  worstRating: 1,
       },
     },
-    areaServed: {
+  areaServed: {
       '@type': 'Neighborhood',
-      name: displayName,
-      containedInPlace: {
+  name: displayName,
+  containedInPlace: {
         '@type': 'City',
-        name: 'Charlotte',
-        containedInPlace: {
+  name: 'Charlotte',
+  containedInPlace: {
           '@type': 'State',
-          name: 'North Carolina',
+  name: 'North Carolina',
         },
       },
     },
-    hasOfferCatalog: {
+  hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: `Roofing Services for ${displayName}`,
-      itemListElement: [
+  name: `Roofing Services for ${displayName}`,
+  itemListElement: [
         {
           '@type': 'Offer',
-          itemOffered: {
+  itemOffered: {
             '@type': 'Service',
-            name: 'Roof Repair',
-            description: `Professional roof repair services in ${displayName}`,
+  name: 'Roof Repair',
+  description: `Professional roof repair services in ${displayName}`,
           },
         },
         {
           '@type': 'Offer',
-          itemOffered: {
+  itemOffered: {
             '@type': 'Service',
-            name: 'Roof Replacement',
-            description: `Complete roof replacement in ${displayName}`,
+  name: 'Roof Replacement',
+  description: `Complete roof replacement in ${displayName}`,
           },
         },
         {
           '@type': 'Offer',
-          itemOffered: {
+  itemOffered: {
             '@type': 'Service',
-            name: 'Storm Damage Repair',
-            description: `Storm damage restoration in ${displayName}`,
+  name: 'Storm Damage Repair',
+  description: `Storm damage restoration in ${displayName}`,
           },
         },
         {
           '@type': 'Offer',
-          itemOffered: {
+  itemOffered: {
             '@type': 'Service',
-            name: 'Free Roof Inspection',
-            description: `Complimentary roof inspections for ${displayName} homeowners`,
+  name: 'Free Roof Inspection',
+  description: `Complimentary roof inspections for ${displayName} homeowners`,
           },
         },
       ],
     },
-    additionalProperty: [
+  additionalProperty: [
       {
         '@type': 'PropertyValue',
-        name: 'Distance from Charlotte HQ',
-        value: `${distanceFromHQ} miles`,
+  name: 'Distance from Charlotte HQ',
+  value: `${distanceFromHQ} miles`,
       },
       {
         '@type': 'PropertyValue',
-        name: 'Typical Response Time',
-        value: responseTime,
+  name: 'Typical Response Time',
+  value: responseTime,
       },
     ],
   };
@@ -373,7 +372,6 @@ export default async function NeighborhoodPage({ params }: PageProps) {
           { name: displayName, url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName={`${displayName} Roofing Contractor`}
@@ -646,7 +644,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
                 </h2>
                 <p className="text-gray mb-6">
                   Located just {distanceFromHQ} miles from our Charlotte headquarters at {SITE_CONFIG.address.street},
-                  our team can reach {displayName} in approximately {responseTime}. Whether you need an emergency
+  our team can reach {displayName} in approximately {responseTime}. Whether you need an emergency
                   repair or a scheduled inspection, we're your local roofing experts.
                 </p>
                 <div className="space-y-4">

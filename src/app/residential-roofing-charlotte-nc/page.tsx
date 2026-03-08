@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Residential Roofing Charlotte NC | Expert Home Roofers',
-    description:
+  description:
       'Expert residential roofing services in Charlotte NC. BBB A+ rated, veteran-owned. Specializing in home roof repair, replacement, and installation. Free estimates.',
-    url: `${SITE_CONFIG.url}/residential-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/residential-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Residential roofing Charlotte NC - Best Roofing Now home roofing experts',
+  width: 1200,
+  height: 630,
+  alt: 'Residential roofing Charlotte NC - Best Roofing Now home roofing experts',
       },
     ],
   },
@@ -69,39 +69,39 @@ export const metadata: Metadata = {
 const residentialServices = [
   {
     icon: Layers,
-    title: 'Asphalt Shingle Roofing',
-    description: 'Premium architectural and 3-tab shingles from CertainTeed, GAF, and Owens Corning.',
-    href: '/services/residential-roofing',
+  title: 'Asphalt Shingle Roofing',
+  description: 'Premium architectural and 3-tab shingles from CertainTeed, GAF, and Owens Corning.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Home,
-    title: 'Metal Roofing',
-    description: 'Durable standing seam and metal shingle options for long-lasting protection.',
-    href: '/services/residential-roofing',
+  title: 'Metal Roofing',
+  description: 'Durable standing seam and metal shingle options for long-lasting protection.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, flashing, and storm damage.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, flashing, and storm damage.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Full Roof Replacement',
-    description: 'Complete tear-off and replacement with new underlayment and ventilation.',
-    href: '/services/roof-replacement',
+  title: 'Full Roof Replacement',
+  description: 'Complete tear-off and replacement with new underlayment and ventilation.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspections',
-    description: 'Comprehensive inspections with detailed reports - always free.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive inspections with detailed reports - always free.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency restoration and insurance claim assistance for storm damage.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency restoration and insurance claim assistance for storm damage.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -109,33 +109,33 @@ const residentialServices = [
 const whyChooseUs = [
   {
     icon: Home,
-    title: 'Home Roofing Specialists',
-    description: 'We specialize in residential roofing, understanding the unique needs of Charlotte homeowners.',
+  title: 'Home Roofing Specialists',
+  description: 'We specialize in residential roofing, understanding the unique needs of Charlotte homeowners.',
   },
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from Charlotte homeowners we've helped.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from Charlotte homeowners we've helped.`,
   },
   {
     icon: Shield,
-    title: 'Premium Warranties',
-    description: 'Industry-leading warranties including GAF Golden Pledge and CertainTeed SureStart PLUS.',
+  title: 'Premium Warranties',
+  description: 'Industry-leading warranties including GAF Golden Pledge and CertainTeed SureStart PLUS.',
   },
   {
     icon: Award,
-    title: 'Manufacturer Certified',
-    description: 'CertainTeed SELECT, GAF Factory-Certified Contractor.',
+  title: 'Manufacturer Certified',
+  description: 'CertainTeed SELECT, GAF Factory-Certified Contractor.',
   },
   {
     icon: Users,
-    title: 'Veteran-Owned',
-    description: 'Military values of integrity and excellence in every home roofing project.',
+  title: 'Veteran-Owned',
+  description: 'Military values of integrity and excellence in every home roofing project.',
   },
   {
     icon: Clock,
-    title: 'Fast Turnaround',
-    description: 'Most residential roof replacements completed in just 1-3 days.',
+  title: 'Fast Turnaround',
+  description: 'Most residential roof replacements completed in just 1-3 days.',
   },
 ];
 
@@ -183,42 +183,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does residential roofing cost in Charlotte NC?',
-    answer:
+  answer:
       'Residential roofing costs in Charlotte vary based on several factors. Roof repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Factors affecting cost include roof size (square footage), pitch/slope, material choice, number of layers to remove, and any structural repairs needed. We provide free, detailed estimates.',
   },
   {
     question: 'What is the best roofing material for homes in Charlotte NC?',
-    answer:
+  answer:
       'For Charlotte\'s climate, architectural asphalt shingles are the most popular choice, offering excellent durability, weather resistance, and value. Metal roofing is increasingly popular for its longevity (40-70 years) and energy efficiency. For historic homes in neighborhoods like Myers Park or Dilworth, we can match existing materials. We\'ll help you choose the best option for your home and budget.',
   },
   {
     question: 'How long does a residential roof last in Charlotte?',
-    answer:
+  answer:
       'Roof lifespan in Charlotte depends on the material: 3-tab shingles last 15-20 years, architectural shingles 25-30 years, premium shingles like CertainTeed Landmark 30+ years, and metal roofing 40-70 years. Charlotte\'s hot summers and occasional severe storms can affect longevity. Regular maintenance and prompt repairs can extend your roof\'s life significantly.',
   },
   {
     question: 'How long does it take to replace a residential roof?',
-    answer:
+  answer:
       'Most residential roof replacements in Charlotte are completed in 1-3 days. A typical 2,000-3,000 square foot home usually takes 1-2 days. Larger homes, complex roof designs, or homes with multiple layers to remove may take 3-5 days. Weather can also affect timing. We provide accurate timelines during your free estimate.',
   },
   {
     question: 'Do I need to be home during my roof replacement?',
-    answer:
+  answer:
       'No, you don\'t need to be home during your residential roof replacement. Many Charlotte homeowners continue their normal routines while we work. We just ask that you move vehicles away from the work area and secure any pets. We\'ll keep you updated on progress and notify you when the work is complete.',
   },
   {
     question: 'What warranties do you offer on residential roofing?',
-    answer:
+  answer:
       'We offer comprehensive warranties on residential roofing. As certified installers for CertainTeed, GAF, and Owens Corning, we can provide manufacturer warranties up to 50 years on materials plus our own workmanship warranty. Premium options include GAF Golden Pledge (50 years material + 25 years workmanship) and CertainTeed SureStart PLUS.',
   },
   {
     question: 'Does homeowners insurance cover roof replacement?',
-    answer:
+  answer:
       'Homeowners insurance typically covers roof replacement if the damage was caused by a covered peril like wind, hail, or fallen trees. Normal wear and tear is usually not covered. We have extensive experience helping Charlotte homeowners with insurance claims and can meet with adjusters, provide documentation, and advocate for fair settlements.',
   },
   {
     question: 'What signs indicate I need residential roof repair or replacement?',
-    answer:
+  answer:
       'Watch for these signs: missing or damaged shingles, granules in gutters, visible leaks or water stains, daylight through roof boards, sagging areas, moss or algae growth, and age (20+ years for shingles). If you notice any of these, schedule a free inspection. Catching problems early can save you from more expensive repairs later.',
   },
 ];
@@ -233,7 +233,6 @@ export default function ResidentialRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

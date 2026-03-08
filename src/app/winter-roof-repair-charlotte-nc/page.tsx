@@ -20,7 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Winter Roof Repair Charlotte NC | Cold Weather Experts | Best Roofing Now',
-    description:
+  description:
       'Charlotte\'s trusted cold weather roofing experts. Ice dam prevention, winter storm damage repair, and 24/7 emergency services. BBB A+ rated.',
-    url: `${SITE_CONFIG.url}/winter-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/winter-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Winter roof repair services in Charlotte NC - Best Roofing Now cold weather experts',
+  width: 1200,
+  height: 630,
+  alt: 'Winter roof repair services in Charlotte NC - Best Roofing Now cold weather experts',
       },
     ],
   },
@@ -68,39 +68,39 @@ export const metadata: Metadata = {
 const winterServices = [
   {
     icon: Snowflake,
-    title: 'Ice Dam Prevention',
-    description: 'Professional ice dam prevention and removal to protect your roof from winter damage.',
-    href: '/services/roof-repair',
+  title: 'Ice Dam Prevention',
+  description: 'Professional ice dam prevention and removal to protect your roof from winter damage.',
+  href: '/services/roof-repair',
   },
   {
     icon: Thermometer,
-    title: 'Cold Weather Repairs',
-    description: 'Specialized repair techniques designed for freezing temperatures and winter conditions.',
-    href: '/services/roof-repair',
+  title: 'Cold Weather Repairs',
+  description: 'Specialized repair techniques designed for freezing temperatures and winter conditions.',
+  href: '/services/roof-repair',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Winter Service',
-    description: '24/7 emergency response for winter storm damage, leaks, and ice-related issues.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Winter Service',
+  description: '24/7 emergency response for winter storm damage, leaks, and ice-related issues.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Home,
-    title: 'Attic Insulation',
-    description: 'Proper insulation to prevent heat loss and ice dam formation on your roof.',
-    href: '/services/roof-ventilation',
+  title: 'Attic Insulation',
+  description: 'Proper insulation to prevent heat loss and ice dam formation on your roof.',
+  href: '/services/roof-ventilation',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repairs',
-    description: 'Critical flashing repairs to prevent leaks caused by freeze-thaw cycles.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repairs',
+  description: 'Critical flashing repairs to prevent leaks caused by freeze-thaw cycles.',
+  href: '/services/roof-repair',
   },
   {
     icon: Shield,
-    title: 'Winter Inspections',
-    description: 'Comprehensive winter roof inspections to identify vulnerabilities before storms hit.',
-    href: '/services/roof-inspection',
+  title: 'Winter Inspections',
+  description: 'Comprehensive winter roof inspections to identify vulnerabilities before storms hit.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -108,33 +108,33 @@ const winterServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Cold Weather Experts',
-    description: 'Specialized training and equipment for safe, effective winter roof repairs.',
+  title: 'Cold Weather Experts',
+  description: 'Specialized training and equipment for safe, effective winter roof repairs.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with military-grade attention to detail in every repair.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with military-grade attention to detail in every repair.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive winter coverage insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive winter coverage insurance.',
   },
   {
     icon: Users,
-    title: 'Trained Crews',
-    description: 'Safety-certified crews experienced in winter roofing conditions and hazards.',
+  title: 'Trained Crews',
+  description: 'Safety-certified crews experienced in winter roofing conditions and hazards.',
   },
   {
     icon: Clock,
-    title: '24/7 Winter Emergency',
-    description: 'Round-the-clock emergency services when winter storms damage your roof.',
+  title: '24/7 Winter Emergency',
+  description: 'Round-the-clock emergency services when winter storms damage your roof.',
   },
 ];
 
@@ -182,42 +182,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Can you repair a roof in winter in Charlotte NC?',
-    answer:
+  answer:
       'Yes, Best Roofing Now performs roof repairs year-round in Charlotte, including during winter months. While Charlotte\'s winters are generally mild compared to northern states, we use specialized techniques and materials designed for cold weather application. Shingles can become brittle in freezing temperatures, so our crews take extra precautions and use cold-weather adhesives when needed. Emergency repairs are always possible regardless of temperature.',
   },
   {
     question: 'What causes ice dams on Charlotte roofs?',
-    answer:
+  answer:
       'Ice dams form when heat escapes from your attic, melting snow on the roof. The water runs down to the colder eaves where it refreezes, creating a dam that traps water behind it. This trapped water can seep under shingles and cause significant interior damage. Prevention involves proper attic insulation and ventilation. While Charlotte doesn\'t see heavy snow often, ice dams can still occur during our occasional winter storms.',
   },
   {
     question: 'How do you prevent ice dam damage?',
-    answer:
+  answer:
       'Ice dam prevention starts with proper attic insulation and ventilation to keep your roof deck cold and prevent snow from melting unevenly. We also recommend installing ice and water shield membrane along the eaves during roof replacement. For existing ice dams, we safely remove them using steam equipment rather than hacking at ice, which can damage shingles. We never recommend salt or chemicals on roofing materials.',
   },
   {
     question: 'What are signs of winter roof damage?',
-    answer:
+  answer:
       'Signs of winter roof damage include water stains on ceilings or walls, icicles hanging from the eaves (a sign of potential ice damming), visible ice buildup along the roofline, missing or damaged shingles after winter storms, sagging areas that could indicate moisture saturation, and drafty areas indicating compromised insulation. If you notice any of these signs, call us for a free winter inspection.',
   },
   {
     question: 'Do you offer emergency winter roof repair?',
-    answer:
+  answer:
       'Absolutely. Best Roofing Now provides 24/7 emergency roof repair services throughout Charlotte, including during winter storms. We understand that roof emergencies don\'t wait for good weather. Our crews are equipped and trained to work safely in winter conditions to stop active leaks and prevent further damage to your home. Call us anytime at (704) 605-6047.',
   },
   {
     question: 'How much does winter roof repair cost in Charlotte?',
-    answer:
+  answer:
       'Winter roof repair costs in Charlotte are similar to other times of year, ranging from $200-$1,500 for most repairs. Emergency repairs during storms may have a premium due to urgency and hazardous conditions. Ice dam removal typically costs $400-$800 depending on severity. Many winter roof issues are covered by homeowner\'s insurance, and we\'re happy to help with the claims process.',
   },
   {
     question: 'Should I wait until spring to repair my roof?',
-    answer:
+  answer:
       'No - delaying roof repairs through winter can allow small problems to become major damage. Water infiltration from damaged areas will continue through winter rains and any freeze-thaw cycles, potentially causing structural damage, mold growth, and ruined insulation. While some projects like full replacements may be better scheduled for warmer weather, most repairs should be addressed immediately.',
   },
   {
     question: 'How do I prepare my roof for Charlotte winters?',
-    answer:
+  answer:
       'We recommend a fall inspection before winter to identify vulnerabilities, cleaning gutters to prevent ice dam formation, checking attic insulation and ventilation, trimming overhanging branches that could fall under ice weight, and addressing any existing damage. Best Roofing Now offers free pre-winter inspections to help Charlotte homeowners prepare for the cold season.',
   },
 ];
@@ -232,7 +232,6 @@ export default function WinterRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -260,7 +259,7 @@ export default function WinterRoofRepairCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Don't let winter damage compromise your home. Best Roofing Now provides expert cold weather roof repairs,
-              ice dam prevention, and 24/7 emergency services throughout the Charlotte area. Our trained crews work
+  ice dam prevention, and 24/7 emergency services throughout the Charlotte area. Our trained crews work
               safely in winter conditions to protect your home.
             </p>
 

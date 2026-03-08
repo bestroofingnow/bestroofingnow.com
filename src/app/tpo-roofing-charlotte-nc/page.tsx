@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'TPO Roofing Charlotte NC | Commercial Flat Roof Experts',
-    description:
+  description:
       'Professional TPO membrane roofing for Charlotte commercial buildings. Energy-efficient, durable, and cost-effective flat roof solutions from BBB A+ rated experts.',
-    url: `${SITE_CONFIG.url}/tpo-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/tpo-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.flatRoof,
-        width: 1200,
-        height: 630,
-        alt: 'TPO roofing installation Charlotte NC - Best Roofing Now commercial roofing',
+  width: 1200,
+  height: 630,
+  alt: 'TPO roofing installation Charlotte NC - Best Roofing Now commercial roofing',
       },
     ],
   },
@@ -69,33 +69,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Thermometer,
-    title: 'Superior Energy Efficiency',
-    description: 'White TPO membrane reflects 80%+ of solar heat, reducing cooling costs by 10-30% in Charlotte summers.',
+  title: 'Superior Energy Efficiency',
+  description: 'White TPO membrane reflects 80%+ of solar heat, reducing cooling costs by 10-30% in Charlotte summers.',
   },
   {
     icon: Shield,
-    title: 'Chemical Resistant',
-    description: 'Highly resistant to oils, grease, and chemical exposure - perfect for restaurants and industrial facilities.',
+  title: 'Chemical Resistant',
+  description: 'Highly resistant to oils, grease, and chemical exposure - perfect for restaurants and industrial facilities.',
   },
   {
     icon: Zap,
-    title: 'Hot-Air Welded Seams',
-    description: 'Heat-welded seams are 3-4x stronger than the membrane itself, virtually eliminating leak points.',
+  title: 'Hot-Air Welded Seams',
+  description: 'Heat-welded seams are 3-4x stronger than the membrane itself, virtually eliminating leak points.',
   },
   {
     icon: Clock,
-    title: '20-30 Year Lifespan',
-    description: 'Properly installed TPO roofing delivers decades of reliable performance with minimal maintenance.',
+  title: '20-30 Year Lifespan',
+  description: 'Properly installed TPO roofing delivers decades of reliable performance with minimal maintenance.',
   },
   {
     icon: DollarSign,
-    title: 'Cost-Effective',
-    description: 'Lower material and installation costs than PVC with comparable performance makes TPO a smart investment.',
+  title: 'Cost-Effective',
+  description: 'Lower material and installation costs than PVC with comparable performance makes TPO a smart investment.',
   },
   {
     icon: Award,
-    title: 'Environmentally Friendly',
-    description: '100% recyclable membrane with no chlorine content. Qualifies for LEED credits and energy rebates.',
+  title: 'Environmentally Friendly',
+  description: '100% recyclable membrane with no chlorine content. Qualifies for LEED credits and energy rebates.',
   },
 ];
 
@@ -103,33 +103,33 @@ const benefits = [
 const whyChooseUs = [
   {
     icon: Building2,
-    title: 'Commercial Roofing Specialists',
-    description: 'Our crews are specifically trained in TPO installation techniques for commercial applications.',
+  title: 'Commercial Roofing Specialists',
+  description: 'Our crews are specifically trained in TPO installation techniques for commercial applications.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte business owners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte business owners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for major TPO manufacturers including Carlisle, Firestone, and GAF.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for major TPO manufacturers including Carlisle, Firestone, and GAF.',
   },
   {
     icon: Clock,
-    title: 'Minimal Disruption',
-    description: 'We work around your business hours to minimize disruption to your operations.',
+  title: 'Minimal Disruption',
+  description: 'We work around your business hours to minimize disruption to your operations.',
   },
 ];
 
@@ -137,18 +137,18 @@ const whyChooseUs = [
 const applications = [
   {
     icon: Building2,
-    title: 'Office Buildings',
-    description: 'Energy savings and modern aesthetics for professional office spaces.',
+  title: 'Office Buildings',
+  description: 'Energy savings and modern aesthetics for professional office spaces.',
   },
   {
     icon: Warehouse,
-    title: 'Warehouses',
-    description: 'Large-scale installations with excellent durability and weather protection.',
+  title: 'Warehouses',
+  description: 'Large-scale installations with excellent durability and weather protection.',
   },
   {
     icon: Factory,
-    title: 'Industrial Facilities',
-    description: 'Chemical-resistant TPO handles industrial environments with ease.',
+  title: 'Industrial Facilities',
+  description: 'Chemical-resistant TPO handles industrial environments with ease.',
   },
 ];
 
@@ -166,42 +166,42 @@ const comparison = [
 const faqs = [
   {
     question: 'What is TPO roofing and why is it popular for commercial buildings?',
-    answer:
+  answer:
       'TPO (Thermoplastic Polyolefin) is a single-ply roofing membrane specifically designed for flat or low-slope commercial roofs. It\'s become the fastest-growing commercial roofing material because it combines excellent energy efficiency, durability, and cost-effectiveness. The white membrane reflects solar heat, reducing cooling costs by 10-30% - a major benefit for Charlotte businesses facing hot summers.',
   },
   {
     question: 'How much does TPO roofing cost in Charlotte NC?',
-    answer:
+  answer:
       'TPO roofing in Charlotte typically costs $4-8 per square foot installed, depending on roof size, accessibility, membrane thickness, and insulation requirements. For a 10,000 sq ft commercial roof, expect $40,000-$80,000. While similar to EPDM in cost, TPO\'s energy savings often provide better long-term value for Charlotte businesses.',
   },
   {
     question: 'How long does a TPO roof last?',
-    answer:
+  answer:
       'A properly installed TPO roof lasts 20-30 years with regular maintenance. The key factors affecting lifespan are quality of installation (especially seam welding), membrane thickness (60-80 mil recommended), and regular maintenance. Best Roofing Now uses premium materials and proven installation techniques to maximize your TPO roof\'s lifespan.',
   },
   {
     question: 'Is TPO better than EPDM for Charlotte commercial buildings?',
-    answer:
+  answer:
       'For most Charlotte commercial buildings, TPO offers advantages over EPDM due to its superior energy efficiency. TPO\'s white reflective surface reduces cooling costs significantly during our hot summers, while EPDM\'s black surface absorbs heat. However, EPDM may be preferred for certain applications. We can help you choose the best system for your specific needs.',
   },
   {
     question: 'Can TPO roofing be installed over an existing roof?',
-    answer:
+  answer:
       'In many cases, yes. TPO can be installed over existing roofing if the substrate is in good condition and local codes permit. This "recover" approach saves on tear-off costs and reduces landfill waste. However, we always recommend a thorough inspection to ensure the existing roof can support new materials and that any underlying issues are addressed.',
   },
   {
     question: 'How are TPO roof seams sealed?',
-    answer:
+  answer:
       'TPO seams are hot-air welded using specialized equipment that fuses the membrane sheets together at 900-1000°F. This creates seams that are 3-4 times stronger than the membrane itself - far superior to glued or taped seams used with other materials. Properly welded TPO seams are essentially leak-proof.',
   },
   {
     question: 'What thickness of TPO membrane do you recommend?',
-    answer:
+  answer:
       'We typically recommend 60-80 mil TPO membrane for commercial applications in Charlotte. While 45 mil is available, the thicker membranes offer significantly better puncture resistance, UV durability, and longer life. The modest additional cost pays for itself many times over in extended roof life.',
   },
   {
     question: 'Does TPO roofing qualify for energy rebates?',
-    answer:
+  answer:
       'Yes! ENERGY STAR-rated white TPO roofing often qualifies for utility rebates, tax incentives, and LEED credits. The energy savings from reduced cooling costs can be substantial - many Charlotte businesses see 10-30% reductions in summer cooling expenses. We can provide documentation needed for rebate applications.',
   },
 ];
@@ -216,7 +216,6 @@ export default function TPORoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

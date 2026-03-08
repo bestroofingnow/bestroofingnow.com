@@ -22,7 +22,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Huntersville NC | Standing Seam Experts | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated metal roofing experts serving Huntersville NC. Standing seam, metal shingles, and more. Veteran-owned with 50+ year warranty options. Free estimates!',
-    url: `${SITE_CONFIG.url}/metal-roofing-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/metal-roofing-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.metalRoof,
-        width: 1200,
-        height: 630,
-        alt: 'Metal roofing installation in Huntersville NC by Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Metal roofing installation in Huntersville NC by Best Roofing Now',
       },
     ],
   },
@@ -71,39 +71,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Standing Seam Metal Roofing',
-    description: 'Premium standing seam panels with concealed fasteners for maximum durability and sleek aesthetics.',
-    href: '/services/metal-roofing',
+  title: 'Standing Seam Metal Roofing',
+  description: 'Premium standing seam panels with concealed fasteners for maximum durability and sleek aesthetics.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Building2,
-    title: 'Metal Shingle Roofing',
-    description: 'Metal shingles that replicate the look of traditional shingles with superior longevity.',
-    href: '/services/metal-roofing',
+  title: 'Metal Shingle Roofing',
+  description: 'Metal shingles that replicate the look of traditional shingles with superior longevity.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roof Repair',
-    description: 'Expert repairs for existing metal roofs including leak fixes, panel replacement, and fastener work.',
-    href: '/services/roof-repair',
+  title: 'Metal Roof Repair',
+  description: 'Expert repairs for existing metal roofs including leak fixes, panel replacement, and fastener work.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Metal Roof Replacement',
-    description: 'Complete metal roof replacement with premium materials and expert installation.',
-    href: '/services/roof-replacement',
+  title: 'Metal Roof Replacement',
+  description: 'Complete metal roof replacement with premium materials and expert installation.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Building2,
-    title: 'Commercial Metal Roofing',
-    description: 'Industrial and commercial metal roofing systems for businesses in Huntersville.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Metal Roofing',
+  description: 'Industrial and commercial metal roofing systems for businesses in Huntersville.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: CloudRain,
-    title: 'Storm-Resistant Metal Roofing',
-    description: 'Impact-resistant metal roofing designed to withstand severe weather conditions.',
-    href: '/services/storm-damage',
+  title: 'Storm-Resistant Metal Roofing',
+  description: 'Impact-resistant metal roofing designed to withstand severe weather conditions.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -111,33 +111,33 @@ const services = [
 const whyChooseMetal = [
   {
     icon: Clock,
-    title: '50+ Year Lifespan',
-    description: 'Metal roofs last 2-3 times longer than traditional asphalt shingles, often exceeding 50 years.',
+  title: '50+ Year Lifespan',
+  description: 'Metal roofs last 2-3 times longer than traditional asphalt shingles, often exceeding 50 years.',
   },
   {
     icon: Thermometer,
-    title: 'Energy Efficient',
-    description: 'Reflective metal roofing can reduce cooling costs by 10-25% in Huntersville\'s hot summers.',
+  title: 'Energy Efficient',
+  description: 'Reflective metal roofing can reduce cooling costs by 10-25% in Huntersville\'s hot summers.',
   },
   {
     icon: Shield,
-    title: 'Storm Resistant',
-    description: 'Metal roofs withstand winds up to 140 mph and are Class 4 impact resistant for hail.',
+  title: 'Storm Resistant',
+  description: 'Metal roofs withstand winds up to 140 mph and are Class 4 impact resistant for hail.',
   },
   {
     icon: Zap,
-    title: 'Fire Resistant',
-    description: 'Metal roofing is non-combustible with a Class A fire rating for maximum protection.',
+  title: 'Fire Resistant',
+  description: 'Metal roofing is non-combustible with a Class A fire rating for maximum protection.',
   },
   {
     icon: DollarSign,
-    title: 'Increases Home Value',
-    description: 'Metal roofs recoup up to 85% of installation costs and boost curb appeal.',
+  title: 'Increases Home Value',
+  description: 'Metal roofs recoup up to 85% of installation costs and boost curb appeal.',
   },
   {
     icon: Award,
-    title: 'Eco-Friendly',
-    description: 'Made from recycled materials and 100% recyclable at end of life. Sustainable choice.',
+  title: 'Eco-Friendly',
+  description: 'Made from recycled materials and 100% recyclable at end of life. Sustainable choice.',
   },
 ];
 
@@ -145,33 +145,33 @@ const whyChooseMetal = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Huntersville homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Huntersville homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Metal Roof Specialists',
-    description: 'Factory-trained installers certified in standing seam and metal shingle systems.',
+  title: 'Metal Roof Specialists',
+  description: 'Factory-trained installers certified in standing seam and metal shingle systems.',
   },
   {
     icon: Clock,
-    title: 'Local to Huntersville',
-    description: 'Serving Huntersville and Lake Norman area with fast response times.',
+  title: 'Local to Huntersville',
+  description: 'Serving Huntersville and Lake Norman area with fast response times.',
   },
 ];
 
@@ -213,42 +213,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does metal roofing cost in Huntersville NC?',
-    answer:
+  answer:
       'Metal roofing in Huntersville typically costs between $8-$16 per square foot installed, depending on the type of metal and style chosen. Standing seam metal roofing ranges from $12-$18 per sq ft, while metal shingles range from $8-$14 per sq ft. While the initial cost is higher than asphalt, the 50+ year lifespan makes metal roofing a better long-term investment.',
   },
   {
     question: 'Is metal roofing good for North Carolina weather?',
-    answer:
+  answer:
       'Metal roofing is excellent for North Carolina\'s climate. It withstands our hot summers by reflecting solar heat (reducing cooling costs 10-25%), handles heavy rain without deteriorating, resists high winds up to 140 mph, and provides Class 4 hail resistance. Metal roofs also shed snow and ice better than other materials.',
   },
   {
     question: 'What types of metal roofing do you install in Huntersville?',
-    answer:
+  answer:
       'Best Roofing Now installs all types of metal roofing in Huntersville including standing seam (our most popular), metal shingles, corrugated metal, and stone-coated steel. We work with premium materials from manufacturers like Drexel Metals, McElroy Metal, and DECRA. Each system offers different aesthetics and price points to match your home and budget.',
   },
   {
     question: 'How long does metal roof installation take?',
-    answer:
+  answer:
       'Most residential metal roof installations in Huntersville take 2-5 days depending on the size and complexity of your roof. Standing seam systems take slightly longer due to custom panel fabrication. We minimize disruption to your daily routine and always clean up thoroughly when the job is complete.',
   },
   {
     question: 'Will a metal roof make my house hotter?',
-    answer:
+  answer:
       'Actually, the opposite is true! Metal roofs reflect solar radiant heat rather than absorbing it like asphalt shingles. Quality metal roofing with proper ventilation and cool-roof coatings can reduce cooling costs by 10-25% in Huntersville\'s hot summers. Many homeowners notice a significant difference in upstairs comfort.',
   },
   {
     question: 'Do metal roofs attract lightning?',
-    answer:
+  answer:
       'No, metal roofs do not attract lightning. Lightning seeks the path of least resistance to ground, and metal roofs are no more likely to be struck than other roofing materials. In fact, if lightning does strike, metal roofs are safer because they\'re non-combustible and will dissipate the energy rather than catching fire.',
   },
   {
     question: 'What warranty comes with metal roofing?',
-    answer:
+  answer:
       'Metal roofing offers the best warranties in the industry. Paint finishes typically carry 25-40 year warranties against fading and chalking. Substrate warranties cover the metal panels for 20-50 years. Best Roofing Now provides additional workmanship warranties on our installation. Many metal roofs last 50-70 years with proper maintenance.',
   },
   {
     question: 'Can you install metal roofing over existing shingles?',
-    answer:
+  answer:
       'In some cases, yes. Installing metal over existing shingles can save on tear-off costs and is environmentally friendly. However, we need to inspect your current roof deck, evaluate ventilation, and ensure local codes allow it. We\'ll provide an honest assessment of whether overlay or full tear-off is best for your specific situation.',
   },
 ];
@@ -263,7 +263,6 @@ export default function MetalRoofingHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/metal-roofing-huntersville-nc`}
         pageName="Metal Roofing Huntersville NC"
@@ -297,7 +296,7 @@ export default function MetalRoofingHuntersvilleNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now is Huntersville's trusted metal roofing specialist. From standing seam to metal shingles,
-              our factory-trained installers deliver energy-efficient, storm-resistant roofing that lasts a lifetime.
+  our factory-trained installers deliver energy-efficient, storm-resistant roofing that lasts a lifetime.
             </p>
 
             {/* CTA Buttons */}

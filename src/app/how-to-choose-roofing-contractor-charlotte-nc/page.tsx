@@ -50,37 +50,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'How to Choose a Roofing Contractor in Charlotte NC | Expert Guide',
-    description:
+  description:
       'Don\'t get scammed. Learn exactly what to look for when hiring a roofer in Charlotte.',
-    url: `${SITE_CONFIG.url}/how-to-choose-roofing-contractor-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/how-to-choose-roofing-contractor-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const contractorFAQs = [
   {
     question: 'What credentials should a Charlotte roofing contractor have?',
-    answer:
+  answer:
       'At minimum: Valid NC General Contractor License, General Liability Insurance ($1M+), Workers Compensation Insurance, and a local business address. Better contractors also have manufacturer certifications (GAF Factory-Certified or Master Elite, CertainTeed ShingleMaster), BBB accreditation, and verifiable reviews on Google and other platforms.',
   },
   {
     question: 'How do I verify a roofing contractor\'s license in North Carolina?',
-    answer:
+  answer:
       'Visit the NC Licensing Board website (nclbgc.org) and search by company name or license number. Any legitimate contractor will gladly provide their license number. If they hesitate or make excuses, that\'s a major red flag.',
   },
   {
     question: 'What are storm chaser roofers and why should I avoid them?',
-    answer:
+  answer:
       'Storm chasers are out-of-state contractors who follow severe weather, going door-to-door after storms. They often use high-pressure tactics, demand large deposits, do substandard work, and disappear before problems surface. They won\'t be around for warranty claims. Always use local Charlotte contractors with established businesses.',
   },
   {
     question: 'How much deposit should I pay a roofing contractor?',
-    answer:
+  answer:
       'Reputable Charlotte roofers typically require 10-30% deposit or payment for materials only. Never pay more than 50% upfront, and never pay in full before work is complete. Be wary of contractors demanding large cash deposits.',
   },
   {
     question: 'Should I get multiple roofing estimates in Charlotte?',
-    answer:
+  answer:
       'Yes, get 3-5 estimates for comparison. But don\'t automatically choose the cheapest - compare scope of work, materials specified, warranty terms, and company credentials. The lowest bid often means cut corners or hidden costs later.',
   },
 ];
@@ -88,136 +88,136 @@ const contractorFAQs = [
 const greenFlags = [
   {
     icon: Shield,
-    title: 'Proper Licensing & Insurance',
-    description: 'NC contractor license, liability insurance ($1M+), and workers comp. Willing to show certificates.',
+  title: 'Proper Licensing & Insurance',
+  description: 'NC contractor license, liability insurance ($1M+), and workers comp. Willing to show certificates.',
   },
   {
     icon: Award,
-    title: 'Manufacturer Certifications',
-    description: 'GAF Factory-Certified or Master Elite, CertainTeed ShingleMaster certifications.',
+  title: 'Manufacturer Certifications',
+  description: 'GAF Factory-Certified or Master Elite, CertainTeed ShingleMaster certifications.',
   },
   {
     icon: Star,
-    title: 'Strong Online Reviews',
-    description: '4.5+ stars on Google with 50+ reviews. Consistent positive feedback over years.',
+  title: 'Strong Online Reviews',
+  description: '4.5+ stars on Google with 50+ reviews. Consistent positive feedback over years.',
   },
   {
     icon: FileText,
-    title: 'Detailed Written Estimates',
-    description: 'Itemized quotes with materials, labor, timeline, and warranty terms clearly stated.',
+  title: 'Detailed Written Estimates',
+  description: 'Itemized quotes with materials, labor, timeline, and warranty terms clearly stated.',
   },
   {
     icon: Users,
-    title: 'Local Presence',
-    description: 'Physical office in Charlotte area, not just a PO Box. Been in business 5+ years locally.',
+  title: 'Local Presence',
+  description: 'Physical office in Charlotte area, not just a PO Box. Been in business 5+ years locally.',
   },
   {
     icon: MessageSquare,
-    title: 'Professional Communication',
-    description: 'Returns calls promptly, answers questions thoroughly, doesn\'t pressure you to sign immediately.',
+  title: 'Professional Communication',
+  description: 'Returns calls promptly, answers questions thoroughly, doesn\'t pressure you to sign immediately.',
   },
 ];
 
 const redFlags = [
   {
     title: 'Door-to-door after storms',
-    description: 'Legitimate contractors don\'t need to knock on doors. They have enough referral business.',
+  description: 'Legitimate contractors don\'t need to knock on doors. They have enough referral business.',
   },
   {
     title: 'Demands large cash deposit',
-    description: 'Especially if they want 50%+ upfront or insist on cash only. Scam indicator.',
+  description: 'Especially if they want 50%+ upfront or insist on cash only. Scam indicator.',
   },
   {
     title: 'Offers to waive deductible',
-    description: 'This is insurance fraud. Any contractor suggesting this should be avoided completely.',
+  description: 'This is insurance fraud. Any contractor suggesting this should be avoided completely.',
   },
   {
     title: 'No physical address',
-    description: 'Only has a cell phone and PO Box. No way to find them if problems arise.',
+  description: 'Only has a cell phone and PO Box. No way to find them if problems arise.',
   },
   {
     title: 'Pressure to sign immediately',
-    description: '"This price is only good today" or "I have a crew in the area right now."',
+  description: '"This price is only good today" or "I have a crew in the area right now."',
   },
   {
     title: 'Can\'t provide references',
-    description: 'Legitimate contractors have happy customers willing to vouch for their work.',
+  description: 'Legitimate contractors have happy customers willing to vouch for their work.',
   },
   {
     title: 'Unusually low bid',
-    description: 'If one bid is 40%+ lower than others, they\'re cutting corners somewhere.',
+  description: 'If one bid is 40%+ lower than others, they\'re cutting corners somewhere.',
   },
   {
     title: 'No written contract',
-    description: 'Everything should be in writing. Verbal agreements offer no protection.',
+  description: 'Everything should be in writing. Verbal agreements offer no protection.',
   },
 ];
 
 const questionsToAsk = [
   {
     question: 'How long have you been in business in Charlotte?',
-    whyItMatters: 'Local track record matters. 5+ years shows stability.',
+  whyItMatters: 'Local track record matters. 5+ years shows stability.',
   },
   {
     question: 'Can I see your NC contractor license and insurance certificates?',
-    whyItMatters: 'Protects you from liability if workers are injured on your property.',
+  whyItMatters: 'Protects you from liability if workers are injured on your property.',
   },
   {
     question: 'What manufacturer certifications do you hold?',
-    whyItMatters: 'Certifications mean better training, materials access, and warranty options.',
+  whyItMatters: 'Certifications mean better training, materials access, and warranty options.',
   },
   {
     question: 'Do you use subcontractors or your own crew?',
-    whyItMatters: 'Their own crews typically mean better quality control.',
+  whyItMatters: 'Their own crews typically mean better quality control.',
   },
   {
     question: 'What warranty do you offer on labor?',
-    whyItMatters: 'Manufacturer warranties cover materials; labor warranty covers installation.',
+  whyItMatters: 'Manufacturer warranties cover materials; labor warranty covers installation.',
   },
   {
     question: 'Can you provide 3 recent local references?',
-    whyItMatters: 'Talk to actual customers about their experience.',
+  whyItMatters: 'Talk to actual customers about their experience.',
   },
   {
     question: 'What is your payment schedule?',
-    whyItMatters: 'Reasonable: deposit, progress payment, final on completion.',
+  whyItMatters: 'Reasonable: deposit, progress payment, final on completion.',
   },
   {
     question: 'How do you handle unexpected issues discovered during work?',
-    whyItMatters: 'Good contractors communicate before charging for additional work.',
+  whyItMatters: 'Good contractors communicate before charging for additional work.',
   },
 ];
 
 const verificationSteps = [
   {
     step: 1,
-    title: 'Check NC Contractor License',
-    action: 'Visit nclbgc.org and search by company name',
+  title: 'Check NC Contractor License',
+  action: 'Visit nclbgc.org and search by company name',
   },
   {
     step: 2,
-    title: 'Verify Insurance',
-    action: 'Request certificate of insurance; call the insurance company to confirm it\'s active',
+  title: 'Verify Insurance',
+  action: 'Request certificate of insurance; call the insurance company to confirm it\'s active',
   },
   {
     step: 3,
-    title: 'Check BBB Rating',
-    action: 'Search bbb.org for complaints and rating history',
+  title: 'Check BBB Rating',
+  action: 'Search bbb.org for complaints and rating history',
   },
   {
     step: 4,
-    title: 'Read Google Reviews',
-    action: 'Look for patterns in reviews, both positive and negative',
+  title: 'Read Google Reviews',
+  action: 'Look for patterns in reviews, both positive and negative',
   },
   {
     step: 5,
-    title: 'Verify Manufacturer Certifications',
-    action: 'Check manufacturer websites for certified contractor listings',
+  title: 'Verify Manufacturer Certifications',
+  action: 'Check manufacturer websites for certified contractor listings',
   },
   {
     step: 6,
-    title: 'Call References',
-    action: 'Ask about communication, quality, timeline, and any issues',
+  title: 'Call References',
+  action: 'Ask about communication, quality, timeline, and any issues',
   },
 ];
 
@@ -245,10 +245,10 @@ export default function HowToChooseRoofingContractorPage() {
       <ArticleSchema
         post={{
           title: 'How to Choose a Roofing Contractor in Charlotte NC',
-          description: 'Complete guide to finding a trustworthy roofer in Charlotte.',
-          slug: 'how-to-choose-roofing-contractor-charlotte-nc',
-          datePublished: '2026-01-28',
-          dateModified: '2026-01-28',
+  description: 'Complete guide to finding a trustworthy roofer in Charlotte.',
+  slug: 'how-to-choose-roofing-contractor-charlotte-nc',
+  datePublished: '2026-01-28',
+  dateModified: '2026-01-28',
         }}
       />
       <FAQSchema faqs={contractorFAQs} />

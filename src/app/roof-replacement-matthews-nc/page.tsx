@@ -42,16 +42,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Matthews NC | Quality Installation | Best Roofing Now',
-    description:
+  description:
       'Professional roof replacement in Matthews NC. Premium materials, certified installers, industry-leading warranties. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/roof-replacement-matthews-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-matthews-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Roof replacement in Matthews NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof replacement in Matthews NC - Best Roofing Now',
       },
     ],
   },
@@ -61,23 +61,23 @@ export const metadata: Metadata = {
 const materials = [
   {
     title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 30-50 year warranties.',
-    popular: true,
+  description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 30-50 year warranties.',
+  popular: true,
   },
   {
     title: 'Metal Roofing',
-    description: 'Durable standing seam and metal shingle options with 50+ year lifespan and energy efficiency.',
-    popular: false,
+  description: 'Durable standing seam and metal shingle options with 50+ year lifespan and energy efficiency.',
+  popular: false,
   },
   {
     title: '3-Tab Shingles',
-    description: 'Affordable traditional asphalt shingles for budget-conscious homeowners.',
-    popular: false,
+  description: 'Affordable traditional asphalt shingles for budget-conscious homeowners.',
+  popular: false,
   },
   {
     title: 'Designer Shingles',
-    description: 'Premium luxury shingles that replicate slate or wood shake at a fraction of the cost.',
-    popular: false,
+  description: 'Premium luxury shingles that replicate slate or wood shake at a fraction of the cost.',
+  popular: false,
   },
 ];
 
@@ -95,32 +95,32 @@ const whyReplace = [
 const faqs = [
   {
     question: 'How much does roof replacement cost in Matthews NC?',
-    answer:
+  answer:
       'Roof replacement in Matthews typically costs $8,000 to $25,000 for most homes, depending on size, material, and complexity. We provide detailed, transparent estimates with no hidden fees.',
   },
   {
     question: 'How long does a roof replacement take in Matthews?',
-    answer:
+  answer:
       'Most residential roof replacements in Matthews are completed in 1-3 days. Larger homes or complex roof designs may take 3-5 days.',
   },
   {
     question: 'What roofing materials do you recommend for Matthews homes?',
-    answer:
+  answer:
       'For most Matthews homes, we recommend architectural shingles from CertainTeed, GAF, or Owens Corning. They offer excellent durability, aesthetics, and value for the South Charlotte climate.',
   },
   {
     question: 'Do you remove the old roof or install over it?',
-    answer:
+  answer:
       'We always recommend and perform complete tear-off of the old roofing. This allows proper decking inspection, ensures quality installation, and provides the best warranty coverage.',
   },
   {
     question: 'What warranties do you offer on roof replacement?',
-    answer:
+  answer:
       'We offer manufacturer warranties up to 50 years on materials and our own workmanship warranty. As certified installers, we can offer enhanced warranty programs.',
   },
   {
     question: 'Do you offer financing for roof replacement?',
-    answer:
+  answer:
       'Yes! We offer flexible financing options to make roof replacement affordable. Many homeowners qualify for low monthly payments.',
   },
 ];

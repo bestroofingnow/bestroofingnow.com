@@ -20,7 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Moss & Algae Removal Charlotte NC | Roof Cleaning | Best Roofing Now',
-    description:
+  description:
       'Professional moss and algae removal in Charlotte NC. Soft washing, prevention treatments for NC humidity. BBB A+ rated. Free estimates.',
-    url: `${SITE_CONFIG.url}/moss-algae-removal-roof-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/moss-algae-removal-roof-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'Moss and algae removal services in Charlotte NC - Best Roofing Now roof cleaning experts',
+  width: 1200,
+  height: 630,
+  alt: 'Moss and algae removal services in Charlotte NC - Best Roofing Now roof cleaning experts',
       },
     ],
   },
@@ -67,26 +67,26 @@ export const metadata: Metadata = {
 const problems = [
   {
     icon: Droplets,
-    title: 'Water Retention',
-    description:
+  title: 'Water Retention',
+  description:
       'Moss acts like a sponge, holding moisture against your shingles. This accelerates shingle degradation and can lead to rot.',
   },
   {
     icon: AlertTriangle,
-    title: 'Shingle Damage',
-    description:
+  title: 'Shingle Damage',
+  description:
       'Moss roots can lift shingle edges and algae acids degrade the limestone filler, causing granule loss and shortened roof life.',
   },
   {
     icon: Leaf,
-    title: 'Debris Buildup',
-    description:
+  title: 'Debris Buildup',
+  description:
       'Moss traps leaves and debris, creating conditions for further growth and blocking water drainage into gutters.',
   },
   {
     icon: Sun,
-    title: 'Energy Inefficiency',
-    description:
+  title: 'Energy Inefficiency',
+  description:
       'Dark algae streaks absorb more heat, raising attic temperatures and increasing cooling costs during Charlotte\'s hot summers.',
   },
 ];
@@ -95,32 +95,32 @@ const problems = [
 const cleaningProcess = [
   {
     step: '1',
-    title: 'Roof Inspection',
-    description:
+  title: 'Roof Inspection',
+  description:
       'We thoroughly inspect your roof to assess moss/algae growth, identify underlying issues, and check for any damage.',
   },
   {
     step: '2',
-    title: 'Pre-Treatment',
-    description:
+  title: 'Pre-Treatment',
+  description:
       'We apply a biodegradable cleaning solution that breaks down moss and algae without harming plants or animals.',
   },
   {
     step: '3',
-    title: 'Soft Washing',
-    description:
+  title: 'Soft Washing',
+  description:
       'Using low-pressure soft wash techniques, we gently clean the roof without damaging shingles like power washing can.',
   },
   {
     step: '4',
-    title: 'Rinse & Inspection',
-    description:
+  title: 'Rinse & Inspection',
+  description:
       'We thoroughly rinse the roof and inspect our work, ensuring all growth is removed and no damage occurred.',
   },
   {
     step: '5',
-    title: 'Prevention Treatment',
-    description:
+  title: 'Prevention Treatment',
+  description:
       'Optional preventive treatment inhibits future growth, keeping your roof cleaner longer between cleanings.',
   },
 ];
@@ -129,22 +129,22 @@ const cleaningProcess = [
 const preventionMethods = [
   {
     title: 'Zinc or Copper Strips',
-    description:
+  description:
       'Metal strips installed near the ridge slowly release ions that inhibit moss and algae growth as rainwater washes over them.',
   },
   {
     title: 'Algae-Resistant Shingles',
-    description:
+  description:
       'When replacing your roof, we can install shingles with copper granules that resist algae growth for 10-15 years.',
   },
   {
     title: 'Tree Trimming',
-    description:
+  description:
       'Reducing shade over the roof allows more sunlight and faster drying, creating conditions less favorable for growth.',
   },
   {
     title: 'Regular Maintenance',
-    description:
+  description:
       'Annual inspections and debris removal keep small problems from becoming major moss or algae infestations.',
   },
 ];
@@ -153,33 +153,33 @@ const preventionMethods = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: Sparkles,
-    title: 'Soft Wash Experts',
-    description: 'We use gentle, effective soft washing that cleans without damaging your shingles.',
+  title: 'Soft Wash Experts',
+  description: 'We use gentle, effective soft washing that cleans without damaging your shingles.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Lasting Results',
-    description: 'Our cleaning and prevention treatments keep your roof cleaner for years.',
+  title: 'Lasting Results',
+  description: 'Our cleaning and prevention treatments keep your roof cleaner for years.',
   },
 ];
 
@@ -199,42 +199,42 @@ const signsSigns = [
 const faqs = [
   {
     question: 'What causes moss and algae to grow on roofs in Charlotte?',
-    answer:
+  answer:
       'Charlotte\'s humid climate creates ideal conditions for moss and algae growth. Algae (Gloeocapsa magma) causes the dark streaks you see on many roofs - it feeds on the limestone filler in shingles and thrives in humidity. Moss prefers shaded, damp areas and is common on north-facing roof sections or under tree cover. Both are exacerbated by Charlotte\'s frequent rain (43+ inches annually) and summer humidity.',
   },
   {
     question: 'Is the moss or algae damaging my roof?',
-    answer:
+  answer:
       'Yes, both cause damage over time. Algae produces acids that break down the limestone in shingles, causing granule loss and reducing shingle lifespan by years. Moss is worse - it holds moisture against the roof, can lift shingle edges allowing water intrusion, and its roots can work into shingle layers. Left untreated, severe moss growth can shorten roof life by 10 years or more.',
   },
   {
     question: 'What\'s the difference between soft washing and pressure washing?',
-    answer:
+  answer:
       'Pressure washing uses high-pressure water (1,500-3,000+ PSI) to blast debris away. This can damage shingles, strip granules, and void warranties. Soft washing uses low pressure (under 500 PSI) combined with specialized cleaning solutions that kill moss and algae at the root. It\'s the method recommended by shingle manufacturers and what we exclusively use for roof cleaning.',
   },
   {
     question: 'How often should I have my roof cleaned?',
-    answer:
+  answer:
       'In Charlotte\'s humid climate, most roofs benefit from cleaning every 3-5 years, depending on sun exposure and tree coverage. Heavily shaded roofs or those surrounded by trees may need cleaning more frequently. After a professional cleaning with preventive treatment, you can often extend the time between cleanings to 5-7 years.',
   },
   {
     question: 'How much does roof cleaning cost in Charlotte?',
-    answer:
+  answer:
       'Professional soft wash roof cleaning in Charlotte typically costs $250-$600 for most homes, depending on roof size, pitch, and extent of growth. Preventive treatments add $100-$200. The investment is well worth it - cleaning extends roof life and prevents the accelerated damage that moss and algae cause to shingles.',
   },
   {
     question: 'Will roof cleaning void my shingle warranty?',
-    answer:
+  answer:
       'No, soft washing will not void your warranty. In fact, most shingle manufacturers recommend soft washing as the proper cleaning method. What CAN void your warranty is pressure washing, which can damage shingles and strip granules. We exclusively use manufacturer-approved soft wash techniques to protect both your roof and your warranty.',
   },
   {
     question: 'Can I clean my roof myself?',
-    answer:
+  answer:
       'While DIY roof cleaning products exist, we don\'t recommend it for several reasons: it\'s dangerous (slippery roof + cleaning solution), improper techniques can damage shingles, and consumer products are less effective than professional solutions. Additionally, you may not recognize other roof issues a professional would catch during cleaning. Professional cleaning is safer, more effective, and often more cost-effective.',
   },
   {
     question: 'How can I prevent moss and algae from coming back?',
-    answer:
+  answer:
       'Prevention strategies include: installing zinc or copper strips near the ridge (ions inhibit growth), trimming trees to reduce shade, improving attic ventilation to reduce roof moisture, keeping gutters clean to improve drainage, scheduling regular debris removal, and applying preventive treatments during cleaning. When replacing your roof, consider algae-resistant shingles with copper granules.',
   },
 ];
@@ -265,7 +265,6 @@ export default function MossAlgaeRemovalRoofCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

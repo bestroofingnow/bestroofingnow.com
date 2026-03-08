@@ -21,7 +21,7 @@ import {
   Droplets,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Matthews NC | South Charlotte Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated roof repair specialists serving Matthews and South Charlotte. Fast response, quality repairs, and honest pricing. Free estimates.',
-    url: `${SITE_CONFIG.url}/roof-repair-matthews-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-matthews-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Roof repair Matthews NC - Best Roofing Now professional repair services',
+  width: 1200,
+  height: 630,
+  alt: 'Roof repair Matthews NC - Best Roofing Now professional repair services',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Droplets,
-    title: 'Leak Repair',
-    description: 'Fast diagnosis and repair of roof leaks to protect your home from water damage.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Fast diagnosis and repair of roof leaks to protect your home from water damage.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wrench,
-    title: 'Shingle Repair',
-    description: 'Replace missing, cracked, or damaged shingles with matching materials.',
-    href: '/services/roof-repair',
+  title: 'Shingle Repair',
+  description: 'Replace missing, cracked, or damaged shingles with matching materials.',
+  href: '/services/roof-repair',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Expert repair for hail damage, wind damage, and storm-related roof problems.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Expert repair for hail damage, wind damage, and storm-related roof problems.',
+  href: '/services/storm-damage',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Repair',
-    description: '24/7 emergency response for active leaks and urgent roof damage.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repair',
+  description: '24/7 emergency response for active leaks and urgent roof damage.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Home,
-    title: 'Flashing Repair',
-    description: 'Fix leaks around chimneys, vents, skylights, and other roof penetrations.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Fix leaks around chimneys, vents, skylights, and other roof penetrations.',
+  href: '/services/roof-repair',
   },
   {
     icon: Search,
-    title: 'Free Inspection',
-    description: 'Comprehensive roof assessment to identify problems before they worsen.',
-    href: '/services/roof-inspection',
+  title: 'Free Inspection',
+  description: 'Comprehensive roof assessment to identify problems before they worsen.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied South Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied South Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Professionals',
-    description: 'CertainTeed, GAF, and Owens Corning certified for quality repairs.',
+  title: 'Certified Professionals',
+  description: 'CertainTeed, GAF, and Owens Corning certified for quality repairs.',
   },
   {
     icon: Clock,
-    title: 'Same-Day Service',
-    description: 'Fast response with same-day service available for emergency repairs.',
+  title: 'Same-Day Service',
+  description: 'Fast response with same-day service available for emergency repairs.',
   },
 ];
 
@@ -172,23 +172,23 @@ const nearbyCities = [
 const commonRepairs = [
   {
     title: 'Missing Shingles',
-    description: 'Wind can lift and remove shingles, exposing your roof to water damage.',
-    solution: 'We match and replace missing shingles to restore your roof\'s protection.',
+  description: 'Wind can lift and remove shingles, exposing your roof to water damage.',
+  solution: 'We match and replace missing shingles to restore your roof\'s protection.',
   },
   {
     title: 'Roof Leaks',
-    description: 'Leaks can develop from damaged flashing, worn shingles, or failed seals.',
-    solution: 'We locate the source and repair leaks before they cause interior damage.',
+  description: 'Leaks can develop from damaged flashing, worn shingles, or failed seals.',
+  solution: 'We locate the source and repair leaks before they cause interior damage.',
   },
   {
     title: 'Damaged Flashing',
-    description: 'Flashing around chimneys and vents can crack, rust, or pull away.',
-    solution: 'We repair or replace flashing to seal vulnerable areas against water.',
+  description: 'Flashing around chimneys and vents can crack, rust, or pull away.',
+  solution: 'We repair or replace flashing to seal vulnerable areas against water.',
   },
   {
     title: 'Granule Loss',
-    description: 'Excessive granule loss indicates aging shingles that need attention.',
-    solution: 'We assess the extent and recommend repair or replacement as needed.',
+  description: 'Excessive granule loss indicates aging shingles that need attention.',
+  solution: 'We assess the extent and recommend repair or replacement as needed.',
   },
 ];
 
@@ -196,42 +196,42 @@ const commonRepairs = [
 const faqs = [
   {
     question: 'How much does roof repair cost in Matthews NC?',
-    answer:
+  answer:
       'Roof repairs in Matthews typically range from $200-$1,500 depending on the type and extent of damage. Minor repairs like replacing a few shingles cost less, while extensive leak repairs or flashing work may cost more. We provide free estimates with transparent pricing and no hidden fees. We only recommend repairs that are truly needed.',
   },
   {
     question: 'How quickly can you repair my roof in Matthews?',
-    answer:
+  answer:
       'For emergency situations like active leaks, we offer same-day service and can often have a crew on-site within hours. Standard repairs are typically scheduled within 1-3 business days. Most roof repairs in Matthews are completed in just a few hours to one day depending on the scope of work.',
   },
   {
     question: 'How do I know if my roof needs repair vs. replacement?',
-    answer:
+  answer:
       'Generally, if your roof is under 15 years old and damage is localized (affecting less than 30% of the roof), repairs are usually the better choice. Signs you may need replacement include: widespread damage, multiple active leaks, severely aged shingles (20+ years), or repeated repairs in a short time. We provide honest assessments and never push for replacement if repairs will suffice.',
   },
   {
     question: 'Do you offer emergency roof repair in Matthews NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now offers 24/7 emergency roof repair services in Matthews and South Charlotte. For active leaks or severe storm damage, call us immediately at (704) 605-6047. We\'ll respond quickly to prevent further damage to your home, providing emergency tarping if needed until permanent repairs can be made.',
   },
   {
     question: 'Will my insurance cover roof repairs in Matthews?',
-    answer:
+  answer:
       'If your roof was damaged by a covered event like hail, wind, or fallen trees, your homeowners insurance may cover repair costs minus your deductible. We have extensive experience working with insurance companies in Matthews and can help document damage and work with adjusters to ensure fair claim settlements.',
   },
   {
     question: 'What causes roof leaks in Matthews homes?',
-    answer:
+  answer:
       'Common causes of roof leaks in Matthews include: damaged or missing shingles from storms, failed flashing around chimneys and vents, clogged gutters causing water backup, aging roof materials, improper installation, and ice dams in winter. Our free inspections help identify the source and prevent future leaks.',
   },
   {
     question: 'Do you warranty your roof repairs in Matthews NC?',
-    answer:
+  answer:
       'Yes! All roof repairs are backed by our workmanship warranty. When we use materials from our certified partners (CertainTeed, GAF, Owens Corning), those repairs also carry manufacturer material warranties. We stand behind our work and will return to address any issues that arise.',
   },
   {
     question: 'Can you match my existing shingles for repairs?',
-    answer:
+  answer:
       'In most cases, yes. We stock common shingle styles and colors and can source matching materials for most repairs. For older or discontinued shingles, we find the closest available match. If an exact match isn\'t possible, we discuss options with you before proceeding to ensure you\'re satisfied with the appearance.',
   },
 ];
@@ -246,7 +246,6 @@ export default function RoofRepairMatthewsNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

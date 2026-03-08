@@ -22,7 +22,7 @@ import {
   ThumbsUp,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Inspection Mooresville NC | Free Estimates | Best Roofing Now',
-    description:
+  description:
       'Free comprehensive roof inspections in Mooresville NC. Detailed reports with photos. BBB A+ rated, veteran-owned. Serving Lake Norman area.',
-    url: `${SITE_CONFIG.url}/roof-inspection-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-inspection-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.inspection,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof inspection services in Mooresville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof inspection services in Mooresville NC - Best Roofing Now',
       },
     ],
   },
@@ -71,39 +71,39 @@ export const metadata: Metadata = {
 const inspectionServices = [
   {
     icon: Search,
-    title: 'Complete Roof Assessment',
-    description: 'Thorough examination of every roof component from shingles to flashing to ventilation.',
-    href: '/services/roof-inspection',
+  title: 'Complete Roof Assessment',
+  description: 'Thorough examination of every roof component from shingles to flashing to ventilation.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Camera,
-    title: 'Photo Documentation',
-    description: 'High-resolution photos of your entire roof and any issues identified during inspection.',
-    href: '/services/roof-inspection',
+  title: 'Photo Documentation',
+  description: 'High-resolution photos of your entire roof and any issues identified during inspection.',
+  href: '/services/roof-inspection',
   },
   {
     icon: FileText,
-    title: 'Detailed Written Report',
-    description: 'Comprehensive report with findings, recommendations, and estimated costs for any repairs.',
-    href: '/services/roof-inspection',
+  title: 'Detailed Written Report',
+  description: 'Comprehensive report with findings, recommendations, and estimated costs for any repairs.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Home,
-    title: 'Pre-Purchase Inspections',
-    description: 'Thorough inspections for home buyers to understand roof condition before closing.',
-    href: '/services/roof-inspection',
+  title: 'Pre-Purchase Inspections',
+  description: 'Thorough inspections for home buyers to understand roof condition before closing.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Eye,
-    title: 'Storm Damage Assessment',
-    description: 'Post-storm inspections to document damage for insurance claims.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Assessment',
+  description: 'Post-storm inspections to document damage for insurance claims.',
+  href: '/services/storm-damage',
   },
   {
     icon: Clipboard,
-    title: 'Annual Maintenance Check',
-    description: 'Yearly inspections to catch small problems before they become expensive repairs.',
-    href: '/services/roof-inspection',
+  title: 'Annual Maintenance Check',
+  description: 'Yearly inspections to catch small problems before they become expensive repairs.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -127,33 +127,33 @@ const inspectionIncludes = [
 const whyChooseUs = [
   {
     icon: ThumbsUp,
-    title: 'Truly Free',
-    description: 'Our inspections are 100% free with no obligation - no pressure to buy anything.',
+  title: 'Truly Free',
+  description: 'Our inspections are 100% free with no obligation - no pressure to buy anything.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and honesty.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and honesty.',
   },
   {
     icon: Users,
-    title: 'Certified Inspectors',
-    description: 'Our inspectors are trained and certified by leading roofing manufacturers.',
+  title: 'Certified Inspectors',
+  description: 'Our inspectors are trained and certified by leading roofing manufacturers.',
   },
   {
     icon: Clock,
-    title: 'Fast Scheduling',
-    description: 'Most inspections scheduled within 24-48 hours of your request.',
+  title: 'Fast Scheduling',
+  description: 'Most inspections scheduled within 24-48 hours of your request.',
   },
 ];
 
@@ -191,42 +191,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Is the roof inspection really free in Mooresville?',
-    answer:
+  answer:
       'Yes, absolutely! Our roof inspections are 100% free with no obligation. We believe every Mooresville homeowner deserves to know the true condition of their roof. There\'s no pressure to hire us for repairs - we simply provide honest information so you can make informed decisions about your home.',
   },
   {
     question: 'What does a roof inspection include?',
-    answer:
+  answer:
       'Our comprehensive inspection covers every component of your roofing system: shingles or roofing material condition, flashing around chimneys, vents, and skylights, gutter and downspout condition, attic ventilation, soffit and fascia, and overall structural integrity. You\'ll receive a detailed written report with photos documenting our findings.',
   },
   {
     question: 'How long does a roof inspection take in Mooresville?',
-    answer:
+  answer:
       'Most residential roof inspections take 30-60 minutes depending on roof size and complexity. We take our time to thoroughly examine every component. You\'ll receive your written report with photos within 24-48 hours of the inspection.',
   },
   {
     question: 'When should I get my Mooresville roof inspected?',
-    answer:
+  answer:
       'We recommend annual roof inspections, plus inspections after any significant storm. You should also get an inspection if you\'re buying or selling a home, notice any signs of damage or leaks, your roof is over 15 years old, or you\'re considering a roof replacement. Regular inspections can extend your roof\'s life and catch problems early.',
   },
   {
     question: 'Do you provide inspections for insurance claims?',
-    answer:
+  answer:
       'Yes! We provide detailed storm damage inspections for insurance claims. We document all damage with photos and detailed reports, and can meet with your insurance adjuster to ensure all damage is properly identified. Many Mooresville homes have qualified for full roof replacement after storm damage inspections.',
   },
   {
     question: 'Can I be present during the roof inspection?',
-    answer:
+  answer:
       'Absolutely! We encourage homeowners to be present. Our inspector will explain findings as we go and answer any questions. Being present helps you understand your roof\'s condition and makes it easier to discuss recommendations after the inspection.',
   },
   {
     question: 'What if you find problems during my inspection?',
-    answer:
+  answer:
       'If we find issues, we\'ll explain them clearly and provide a written estimate for repairs or replacement. There\'s never any pressure - we provide information so you can make the best decision for your home. We\'re happy to answer questions and explain your options. Many problems can be addressed with minor repairs.',
   },
   {
     question: 'Do you inspect commercial roofs in Mooresville?',
-    answer:
+  answer:
       'Yes, we provide commercial roof inspections throughout Mooresville. For commercial properties, we offer more detailed assessments including core sampling, moisture detection, and comprehensive reports. Contact us for a free commercial roof inspection.',
   },
 ];
@@ -241,7 +241,6 @@ export default function RoofInspectionMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-inspection-mooresville-nc`}
         pageName="Roof Inspection Mooresville NC"
@@ -332,7 +331,7 @@ export default function RoofInspectionMooresvilleNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Our certified inspectors provide thorough assessments tailored to your needs,
-              from routine maintenance checks to pre-purchase evaluations.
+  from routine maintenance checks to pre-purchase evaluations.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -602,7 +601,7 @@ export default function RoofInspectionMooresvilleNCPage() {
               <h3 className="font-bold text-dark mb-2">After Major Storms</h3>
               <p className="text-gray text-sm">
                 Mooresville sees significant storms. After high winds, hail, or heavy rain,
-                an inspection can identify damage that isn't visible from the ground.
+  an inspection can identify damage that isn't visible from the ground.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md">

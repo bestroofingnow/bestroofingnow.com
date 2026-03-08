@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Installation Huntersville NC | Seamless Gutters | Best Roofing Now',
-    description:
+  description:
       'Professional seamless gutter installation in Huntersville NC. Custom-fit gutters, gutter guards, and repairs. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/gutter-installation-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-installation-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero8,
-        width: 1200,
-        height: 630,
-        alt: 'Professional gutter installation in Huntersville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional gutter installation in Huntersville NC - Best Roofing Now',
       },
     ],
   },
@@ -68,39 +68,39 @@ export const metadata: Metadata = {
 const gutterServices = [
   {
     icon: Droplets,
-    title: 'Seamless Gutter Installation',
-    description: 'Custom seamless aluminum gutters made on-site to fit your home perfectly with no leak-prone joints.',
-    href: '/services/gutter-installation',
+  title: 'Seamless Gutter Installation',
+  description: 'Custom seamless aluminum gutters made on-site to fit your home perfectly with no leak-prone joints.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Shield,
-    title: 'Gutter Guard Installation',
-    description: 'Premium gutter guards to keep leaves and debris out while allowing water to flow freely.',
-    href: '/services/gutter-guards',
+  title: 'Gutter Guard Installation',
+  description: 'Premium gutter guards to keep leaves and debris out while allowing water to flow freely.',
+  href: '/services/gutter-guards',
   },
   {
     icon: Wrench,
-    title: 'Gutter Repair',
-    description: 'Expert repair of leaks, sagging gutters, damaged sections, and downspout issues.',
-    href: '/services/gutter-repair',
+  title: 'Gutter Repair',
+  description: 'Expert repair of leaks, sagging gutters, damaged sections, and downspout issues.',
+  href: '/services/gutter-repair',
   },
   {
     icon: Home,
-    title: 'Gutter Replacement',
-    description: 'Complete removal and replacement of old, damaged gutter systems with quality materials.',
-    href: '/services/gutters',
+  title: 'Gutter Replacement',
+  description: 'Complete removal and replacement of old, damaged gutter systems with quality materials.',
+  href: '/services/gutters',
   },
   {
     icon: Paintbrush,
-    title: 'Color Options',
-    description: 'Wide selection of colors to match or complement your home\'s exterior and trim.',
-    href: '/services/gutter-installation',
+  title: 'Color Options',
+  description: 'Wide selection of colors to match or complement your home\'s exterior and trim.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Ruler,
-    title: 'Custom Sizing',
-    description: '5-inch and 6-inch gutters available with properly sized downspouts for your roof area.',
-    href: '/services/gutters',
+  title: 'Custom Sizing',
+  description: '5-inch and 6-inch gutters available with properly sized downspouts for your roof area.',
+  href: '/services/gutters',
   },
 ];
 
@@ -108,33 +108,33 @@ const gutterServices = [
 const whyChooseUs = [
   {
     icon: Droplets,
-    title: 'Seamless Construction',
-    description: 'Gutters fabricated on-site for a perfect fit with no joints to leak along the length.',
+  title: 'Seamless Construction',
+  description: 'Gutters fabricated on-site for a perfect fit with no joints to leak along the length.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and excellent reputation.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and excellent reputation.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers.`,
   },
   {
     icon: Shield,
-    title: 'Quality Materials',
-    description: 'Heavy-gauge aluminum gutters that resist denting and last for decades.',
+  title: 'Quality Materials',
+  description: 'Heavy-gauge aluminum gutters that resist denting and last for decades.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability coverage.',
   },
   {
     icon: Users,
-    title: 'Expert Installation',
-    description: 'Trained installers who ensure proper pitch, secure mounting, and optimal drainage.',
+  title: 'Expert Installation',
+  description: 'Trained installers who ensure proper pitch, secure mounting, and optimal drainage.',
   },
 ];
 
@@ -168,42 +168,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does gutter installation cost in Huntersville NC?',
-    answer:
+  answer:
       'Gutter installation in Huntersville typically costs $4-$12 per linear foot, depending on material and style. For an average home with 150-200 feet of gutters, total cost ranges from $600-$2,400. Factors affecting price include gutter size (5" vs 6"), number of corners and downspouts, accessibility, and whether gutter guards are included. We provide free estimates with transparent pricing.',
   },
   {
     question: 'What are seamless gutters and why are they better?',
-    answer:
+  answer:
       'Seamless gutters are custom-fabricated on-site from a continuous piece of aluminum, so there are no joints or seams along the length of each run. Traditional sectional gutters have seams every 10 feet that can leak over time. Seamless gutters dramatically reduce leak potential, look cleaner, and typically last longer. We fabricate them on-site to fit your home perfectly.',
   },
   {
     question: 'Should I get 5-inch or 6-inch gutters for my Huntersville home?',
-    answer:
+  answer:
       'For most Huntersville homes, 5-inch gutters are sufficient. However, we recommend 6-inch gutters for homes with large roof areas, steep pitches, or in heavily wooded areas that collect more debris. 6-inch gutters handle 40% more water than 5-inch gutters. During your free estimate, we assess your specific needs and recommend the right size.',
   },
   {
     question: 'Do I need gutter guards in Huntersville?',
-    answer:
+  answer:
       'Gutter guards are highly recommended in Huntersville due to the abundant trees in the Lake Norman area. Without guards, pine needles, oak leaves, and other debris quickly clog gutters, causing overflow and potential water damage. Quality gutter guards significantly reduce cleaning frequency and protect your home year-round.',
   },
   {
     question: 'How long do gutters last in Huntersville NC?',
-    answer:
+  answer:
       'Quality aluminum seamless gutters typically last 20-30 years in Huntersville with proper maintenance. Factors affecting lifespan include material thickness, installation quality, and how well they are maintained. Heavy debris buildup, ice damage, and lack of cleaning can shorten their life. Our gutters are made from heavy-gauge aluminum for maximum durability.',
   },
   {
     question: 'What colors are available for gutters?',
-    answer:
+  answer:
       'We offer a wide selection of gutter colors to match or complement your home. Popular choices in Huntersville include white, bronze, black, dark brown, and various shades of beige and gray. The factory-applied finish resists fading and never needs painting. We can help you select the perfect color during your estimate.',
   },
   {
     question: 'How long does gutter installation take?',
-    answer:
+  answer:
       'Most gutter installations in Huntersville are completed in a single day. Our team arrives with the portable gutter machine, fabricates your custom gutters on-site, and installs them along with downspouts and any accessories. Larger homes or those with complex rooflines may require an additional day. We provide a specific timeline during your estimate.',
   },
   {
     question: 'Do you repair existing gutters?',
-    answer:
+  answer:
       'Yes! We provide complete gutter repair services in Huntersville including fixing leaks, reattaching sagging sections, replacing damaged areas, resealing joints, and addressing downspout problems. Sometimes repair is more cost-effective than replacement. We honestly assess your gutters and recommend the best solution for your situation.',
   },
 ];
@@ -221,9 +221,9 @@ export default function GutterInstallationHuntersvilleNCPage() {
       <LocationSchema
         location={{
           city: 'Huntersville',
-          state: 'NC',
-          slug: 'huntersville-nc',
-          county: 'Mecklenburg',
+  state: 'NC',
+  slug: 'huntersville-nc',
+  county: 'Mecklenburg',
         }}
       />
       <AISearchOptimizationBundle
@@ -235,13 +235,13 @@ export default function GutterInstallationHuntersvilleNCPage() {
         faqs={[
           {
             question: 'How much does gutter installation cost in Huntersville NC?',
-            answer: 'Gutter installation in Huntersville NC costs $6-$15 per linear foot for seamless aluminum gutters, averaging $1,200-$2,800 for most homes. Best Roofing Now serves Huntersville from Charlotte with free estimates and transparent pricing.',
-            speakableAnswer: 'Gutter installation in Huntersville costs $6-15 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
+  answer: 'Gutter installation in Huntersville NC costs $6-$15 per linear foot for seamless aluminum gutters, averaging $1,200-$2,800 for most homes. Best Roofing Now serves Huntersville from Charlotte with free estimates and transparent pricing.',
+  speakableAnswer: 'Gutter installation in Huntersville costs $6-15 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
           },
           {
             question: 'Who installs gutters in Huntersville NC?',
-            answer: 'Best Roofing Now provides professional gutter installation in Huntersville NC with a 5-star Google rating. This veteran-owned company installs seamless aluminum gutters made on-site with lifetime warranties.',
-            speakableAnswer: 'Best Roofing Now installs gutters in Huntersville with 5-star ratings. Call 704-605-6047 for a free estimate.',
+  answer: 'Best Roofing Now provides professional gutter installation in Huntersville NC with a 5-star Google rating. This veteran-owned company installs seamless aluminum gutters made on-site with lifetime warranties.',
+  speakableAnswer: 'Best Roofing Now installs gutters in Huntersville with 5-star ratings. Call 704-605-6047 for a free estimate.',
           },
         ]}
       />

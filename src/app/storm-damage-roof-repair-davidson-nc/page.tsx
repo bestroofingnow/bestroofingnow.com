@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Davidson NC | 24/7 Emergency | Best Roofing Now',
-    description: 'Fast storm damage roof repair in Davidson NC with insurance claim assistance.',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Storm damage roof repair in Davidson NC' }],
+  description: 'Fast storm damage roof repair in Davidson NC with insurance claim assistance.',
+  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Storm damage roof repair in Davidson NC' }],
   },
 };
 

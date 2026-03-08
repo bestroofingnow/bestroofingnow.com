@@ -21,7 +21,7 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Mooresville NC | Race Shop Roofing | Best Roofing Now',
-    description:
+  description:
       'Expert commercial roofing in Mooresville NC. Specializing in race shops, warehouses, and industrial facilities. TPO, EPDM, flat roofs, and metal roofing systems.',
-    url: `${SITE_CONFIG.url}/commercial-roofing-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing services in Mooresville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing services in Mooresville NC - Best Roofing Now',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient TPO membrane roofing ideal for Mooresville\'s hot summers and large commercial buildings.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient TPO membrane roofing ideal for Mooresville\'s hot summers and large commercial buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Race Shop Roofing',
-    description: 'Specialized roofing for NASCAR team shops and racing facilities throughout Mooresville.',
-    href: '/services/commercial-roofing',
+  title: 'Race Shop Roofing',
+  description: 'Specialized roofing for NASCAR team shops and racing facilities throughout Mooresville.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Warehouse,
-    title: 'Warehouse Roofing',
-    description: 'Large-scale roofing solutions for warehouses and distribution centers with minimal disruption.',
-    href: '/services/commercial-roofing',
+  title: 'Warehouse Roofing',
+  description: 'Large-scale roofing solutions for warehouses and distribution centers with minimal disruption.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Settings,
-    title: 'EPDM Rubber Roofing',
-    description: 'Durable EPDM membrane systems for flat and low-slope commercial roofs.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Durable EPDM membrane systems for flat and low-slope commercial roofs.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: 'Fast repairs for leaks, punctures, and storm damage to minimize business interruption.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roof Repair',
+  description: 'Fast repairs for leaks, punctures, and storm damage to minimize business interruption.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: FileCheck,
-    title: 'Roof Maintenance Programs',
-    description: 'Preventive maintenance plans to extend your commercial roof\'s life and catch problems early.',
-    href: '/services/roof-inspection',
+  title: 'Roof Maintenance Programs',
+  description: 'Preventive maintenance plans to extend your commercial roof\'s life and catch problems early.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -110,33 +110,33 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied commercial clients.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied commercial clients.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: Factory,
-    title: 'Industrial Experience',
-    description: 'Extensive experience with race shops, warehouses, and industrial facilities.',
+  title: 'Industrial Experience',
+  description: 'Extensive experience with race shops, warehouses, and industrial facilities.',
   },
   {
     icon: Clock,
-    title: 'Minimal Downtime',
-    description: 'We work around your schedule to minimize disruption to your business operations.',
+  title: 'Minimal Downtime',
+  description: 'We work around your schedule to minimize disruption to your business operations.',
   },
   {
     icon: Users,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive commercial liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive commercial liability coverage.',
   },
 ];
 
@@ -190,42 +190,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What commercial roofing systems do you install in Mooresville?',
-    answer:
+  answer:
       'We install all major commercial roofing systems including TPO (Thermoplastic Polyolefin), EPDM rubber roofing, PVC membrane, modified bitumen, built-up roofing (BUR), and standing seam metal roofing. For Mooresville\'s climate, we often recommend white TPO for its energy efficiency and durability.',
   },
   {
     question: 'Do you have experience with race shop roofing in Mooresville?',
-    answer:
+  answer:
       'Yes! Mooresville is "Race City USA" and we have extensive experience roofing NASCAR team shops, racing fabrication facilities, and automotive performance buildings. We understand the unique requirements of these large-span buildings including proper ventilation, clear-span roof systems, and accommodating heavy equipment.',
   },
   {
     question: 'How much does commercial roofing cost in Mooresville NC?',
-    answer:
+  answer:
       'Commercial roofing costs typically range from $4-$12 per square foot depending on the roofing system, roof condition, and building size. TPO and EPDM tend to be more economical ($4-$8/sq ft), while metal and specialty systems cost more ($8-$15/sq ft). We provide free detailed estimates for all commercial projects.',
   },
   {
     question: 'Can you work around our business hours?',
-    answer:
+  answer:
       'Absolutely! We understand that business operations can\'t stop for roofing work. We can schedule work during off-hours, weekends, or in phases to minimize disruption. For race shops with critical deadlines, we coordinate around your schedule to ensure your operations continue uninterrupted.',
   },
   {
     question: 'How long does a commercial roof replacement take?',
-    answer:
+  answer:
       'Commercial roof replacement timelines vary based on building size and roof system. Small buildings (under 10,000 sq ft) typically take 3-7 days. Larger warehouses and race shops can take 2-4 weeks. We provide detailed project timelines with your estimate and keep you updated throughout the process.',
   },
   {
     question: 'Do you offer commercial roof maintenance programs?',
-    answer:
+  answer:
       'Yes, we offer comprehensive preventive maintenance programs for commercial roofs. Regular inspections and maintenance can extend your roof\'s life by 5-10 years, catch small problems before they become expensive repairs, and ensure warranty compliance. Many Mooresville businesses save significantly with our maintenance plans.',
   },
   {
     question: 'What warranties do you offer on commercial roofing?',
-    answer:
+  answer:
       'Commercial roof warranties vary by system. TPO and EPDM systems typically come with 20-30 year manufacturer warranties. Metal roofing offers 40-50 year coverage. We also provide our workmanship warranty on all installations. Extended NDL (No Dollar Limit) warranties are available for additional protection.',
   },
   {
     question: 'Do you handle commercial roof insurance claims?',
-    answer:
+  answer:
       'Yes, we work with commercial insurance claims regularly. We provide detailed documentation, meet with adjusters, and help ensure you receive fair compensation for storm damage and other covered events. Many Mooresville commercial roofs have qualified for full replacement after hail storms.',
   },
 ];
@@ -240,7 +240,6 @@ export default function CommercialRoofingMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-mooresville-nc`}
         pageName="Commercial Roofing Mooresville NC"

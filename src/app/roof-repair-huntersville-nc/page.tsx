@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Huntersville NC | Fast Emergency Service | Best Roofing Now',
-    description:
+  description:
       'Fast, reliable roof repair in Huntersville NC. BBB A+ rated, veteran-owned roofing company. Emergency service available. Free estimates for all roof repairs.',
-    url: `${SITE_CONFIG.url}/roof-repair-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof repair services in Huntersville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof repair services in Huntersville NC - Best Roofing Now',
       },
     ],
   },
@@ -68,39 +68,39 @@ export const metadata: Metadata = {
 const repairServices = [
   {
     icon: AlertTriangle,
-    title: 'Leak Repair',
-    description: 'Fast identification and repair of roof leaks before they cause water damage to your Huntersville home.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Fast identification and repair of roof leaks before they cause water damage to your Huntersville home.',
+  href: '/services/roof-repair',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Expert repair of wind, hail, and storm damage with insurance claim assistance.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Expert repair of wind, hail, and storm damage with insurance claim assistance.',
+  href: '/services/storm-damage',
   },
   {
     icon: Zap,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency roof repair service for urgent situations that cannot wait.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency roof repair service for urgent situations that cannot wait.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Home,
-    title: 'Shingle Repair',
-    description: 'Replacement of missing, cracked, or damaged shingles to restore your roof.',
-    href: '/services/residential-roofing',
+  title: 'Shingle Repair',
+  description: 'Replacement of missing, cracked, or damaged shingles to restore your roof.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repair',
-    description: 'Repair or replacement of damaged flashing around chimneys, vents, and skylights.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Repair or replacement of damaged flashing around chimneys, vents, and skylights.',
+  href: '/services/roof-repair',
   },
   {
     icon: Search,
-    title: 'Free Inspection',
-    description: 'Complimentary roof inspection to identify problems and provide honest repair recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Free Inspection',
+  description: 'Complimentary roof inspection to identify problems and provide honest repair recommendations.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -108,33 +108,33 @@ const repairServices = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'Fast Response Time',
-    description: 'Same-day service available for urgent roof repairs in Huntersville and Lake Norman area.',
+  title: 'Fast Response Time',
+  description: 'Same-day service available for urgent roof repairs in Huntersville and Lake Norman area.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and excellent track record.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and excellent track record.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers throughout the region.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers throughout the region.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with a commitment to integrity and quality work.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with a commitment to integrity and quality work.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp insurance.',
   },
   {
     icon: Users,
-    title: 'Expert Technicians',
-    description: 'Certified repair specialists with years of experience diagnosing and fixing roof problems.',
+  title: 'Expert Technicians',
+  description: 'Certified repair specialists with years of experience diagnosing and fixing roof problems.',
   },
 ];
 
@@ -168,42 +168,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How quickly can you repair my roof in Huntersville?',
-    answer:
+  answer:
       'For most roof repairs in Huntersville, we can respond the same day or next day. Emergency repairs are prioritized with our 24/7 service. Minor repairs like replacing a few shingles can often be completed in a few hours, while more extensive repairs may take 1-2 days. We always provide a clear timeline before starting work.',
   },
   {
     question: 'How much does roof repair cost in Huntersville NC?',
-    answer:
+  answer:
       'Roof repair costs in Huntersville typically range from $200-$1,500 for most common repairs. Minor repairs like replacing a few shingles start around $200-$400. Leak repairs average $400-$900, while more extensive damage may cost $1,000-$1,500. We provide free inspections and upfront pricing with no hidden fees.',
   },
   {
     question: 'Do you offer emergency roof repair in Huntersville?',
-    answer:
+  answer:
       'Yes! Best Roofing Now offers 24/7 emergency roof repair services in Huntersville and throughout the Lake Norman area. Whether you have an active leak, storm damage, or a tree on your roof, our emergency team responds quickly to prevent further damage and protect your home.',
   },
   {
     question: 'Will my insurance cover roof repairs in Huntersville?',
-    answer:
+  answer:
       'Many roof repairs in Huntersville are covered by homeowners insurance, especially those caused by storms, hail, or fallen trees. We have extensive experience working with insurance companies and provide detailed documentation to support your claim. We offer free inspections to help determine if your damage may be covered.',
   },
   {
     question: 'How do I know if my roof needs repair or replacement?',
-    answer:
+  answer:
       'We recommend repair when damage is localized and your roof still has significant life remaining. Signs you may need repair include a few missing shingles, minor leaks, or small areas of damage. Replacement is better when your roof is over 20 years old, has widespread damage, or when repairs would cost more than 30% of replacement cost. Our free inspection helps determine the best option.',
   },
   {
     question: 'What types of roof damage do you repair in Huntersville?',
-    answer:
+  answer:
       'We repair all types of roof damage in Huntersville including: missing or damaged shingles, roof leaks, storm and hail damage, wind damage, flashing problems, vent boot failures, gutter damage, ice dam damage, and more. Our technicians are experienced with all roofing materials including asphalt shingles, metal, tile, and flat roofing systems.',
   },
   {
     question: 'Do you provide a warranty on roof repairs?',
-    answer:
+  answer:
       'Yes, all our roof repairs in Huntersville come with a workmanship warranty. The specific warranty depends on the type of repair performed. We also use quality materials from manufacturers like CertainTeed, GAF, and Owens Corning, which carry their own material warranties. We stand behind our work 100%.',
   },
   {
     question: 'Can you repair my roof while I am at work?',
-    answer:
+  answer:
       'Absolutely! Many of our Huntersville customers are not home during repairs. We simply need access to the exterior of your home. We will provide a detailed quote beforehand, keep you updated via text or phone, and leave the property clean when finished. Payment can be handled remotely for your convenience.',
   },
 ];
@@ -221,9 +221,9 @@ export default function RoofRepairHuntersvilleNCPage() {
       <LocationSchema
         location={{
           city: 'Huntersville',
-          state: 'NC',
-          slug: 'huntersville-nc',
-          county: 'Mecklenburg',
+  state: 'NC',
+  slug: 'huntersville-nc',
+  county: 'Mecklenburg',
         }}
       />
       <AISearchOptimizationBundle

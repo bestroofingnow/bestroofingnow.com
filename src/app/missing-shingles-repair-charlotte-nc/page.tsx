@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -47,16 +47,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Missing Shingles Repair Charlotte NC | Fast Service | Best Roofing Now',
-    description:
+  description:
       'Fast, professional missing shingle repair in Charlotte NC. Wind damage, storm damage, age-related wear - we fix it all. BBB A+ rated. Free estimates.',
-    url: `${SITE_CONFIG.url}/missing-shingles-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/missing-shingles-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Missing shingles repair service in Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Missing shingles repair service in Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -66,26 +66,26 @@ export const metadata: Metadata = {
 const causes = [
   {
     icon: Wind,
-    title: 'Wind Damage',
-    description:
+  title: 'Wind Damage',
+  description:
       'Charlotte experiences severe thunderstorms and high winds. Gusts over 60 mph can lift and tear shingles right off your roof, especially older or improperly installed ones.',
   },
   {
     icon: Clock,
-    title: 'Age & Wear',
-    description:
+  title: 'Age & Wear',
+  description:
       'As shingles age, the adhesive seal weakens and shingles become brittle. After 15-20 years, shingles are much more susceptible to wind uplift and cracking.',
   },
   {
     icon: AlertTriangle,
-    title: 'Poor Installation',
-    description:
+  title: 'Poor Installation',
+  description:
       'Improperly nailed shingles or inadequate starter strips can cause premature shingle loss. We see this often with DIY repairs or unlicensed contractors.',
   },
   {
     icon: Home,
-    title: 'Storm Damage',
-    description:
+  title: 'Storm Damage',
+  description:
       'Hail, falling branches, and severe weather can damage or dislodge shingles. Charlotte averages 25+ severe storm days per year.',
   },
 ];
@@ -94,32 +94,32 @@ const causes = [
 const repairProcess = [
   {
     step: '1',
-    title: 'Free Inspection',
-    description:
+  title: 'Free Inspection',
+  description:
       'We thoroughly inspect your roof to identify all missing, damaged, or vulnerable shingles and assess underlying damage.',
   },
   {
     step: '2',
-    title: 'Damage Assessment',
-    description:
+  title: 'Damage Assessment',
+  description:
       'We check the underlayment and decking for water damage, document everything with photos, and provide a detailed repair estimate.',
   },
   {
     step: '3',
-    title: 'Shingle Matching',
-    description:
+  title: 'Shingle Matching',
+  description:
       'We source matching shingles from our extensive inventory or order exact replacements to maintain your roof\'s appearance.',
   },
   {
     step: '4',
-    title: 'Professional Repair',
-    description:
+  title: 'Professional Repair',
+  description:
       'Our certified installers properly nail and seal replacement shingles, ensuring they\'ll withstand Charlotte\'s weather.',
   },
   {
     step: '5',
-    title: 'Final Inspection',
-    description:
+  title: 'Final Inspection',
+  description:
       'We verify all repairs, clean up completely, and walk you through the work performed with before/after documentation.',
   },
 ];
@@ -128,33 +128,33 @@ const repairProcess = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Same-Day Service',
-    description: 'Fast response for missing shingle repairs to prevent water damage to your home.',
+  title: 'Same-Day Service',
+  description: 'Fast response for missing shingle repairs to prevent water damage to your home.',
   },
 ];
 
@@ -162,42 +162,42 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'How urgent is it to repair missing shingles?',
-    answer:
+  answer:
       'Missing shingles should be repaired as soon as possible. Even one missing shingle exposes your roof deck to water infiltration, which can lead to leaks, mold growth, rotted decking, and damage to your attic insulation. In Charlotte\'s rainy climate (43+ inches annually), water damage can occur quickly. We offer same-day service for urgent repairs.',
   },
   {
     question: 'What causes shingles to blow off during storms?',
-    answer:
+  answer:
       'Shingles blow off due to a combination of factors: high winds (Charlotte sees 60+ mph gusts during severe storms), aging adhesive that\'s lost its bond, improper nailing during installation, or shingles that were already cracked or damaged. The leading edge and ridge areas are most vulnerable to wind uplift.',
   },
   {
     question: 'Can you match my existing shingles?',
-    answer:
+  answer:
       'In most cases, yes. We maintain an extensive inventory of popular shingle colors and styles from major manufacturers like CertainTeed, GAF, and Owens Corning. For older or discontinued shingles, we\'ll find the closest match possible. Keep in mind that existing shingles may have weathered, so new shingles might appear slightly different initially.',
   },
   {
     question: 'How much does it cost to replace missing shingles?',
-    answer:
+  answer:
       'Minor shingle repairs in Charlotte typically range from $150-$400 for a few shingles, while more extensive repairs can range from $400-$1,000+. The cost depends on the number of shingles needed, roof accessibility, and whether there\'s underlying damage. We provide free estimates with transparent pricing - no hidden fees.',
   },
   {
     question: 'Will my homeowners insurance cover missing shingles?',
-    answer:
+  answer:
       'If the missing shingles were caused by a covered peril like wind or hail (common in Charlotte storms), your insurance may cover the repair minus your deductible. We work with insurance companies regularly and can help document the damage for your claim. Normal wear and tear is typically not covered.',
   },
   {
     question: 'How can I prevent shingles from blowing off in the future?',
-    answer:
+  answer:
       'Prevention strategies include: ensuring proper installation with correct nailing patterns, using high-wind rated shingles (we recommend 110+ mph rated for Charlotte), maintaining your roof with regular inspections, trimming overhanging tree branches, and replacing aging shingles before they fail. Our free inspections identify vulnerable areas.',
   },
   {
     question: 'Should I repair or replace my roof if shingles are missing?',
-    answer:
+  answer:
       'It depends on the extent and cause of the damage. If you\'re missing a few shingles due to an isolated incident, repair is usually sufficient. However, if shingles are falling off regularly, your roof is over 20 years old, or you have widespread damage, replacement may be more cost-effective long-term. We\'ll give you an honest assessment.',
   },
   {
     question: 'How long does a missing shingle repair take?',
-    answer:
+  answer:
       'Most missing shingle repairs take 1-3 hours to complete, depending on the number of shingles and roof accessibility. We can typically complete repairs the same day you call. For larger repairs involving multiple areas or underlying damage, the job may take a full day.',
   },
 ];
@@ -228,7 +228,6 @@ export default function MissingShinglesRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -256,7 +255,7 @@ export default function MissingShinglesRepairCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Missing shingles leave your roof vulnerable to leaks and water damage. Best Roofing Now provides fast,
-              expert repairs for wind-damaged, storm-damaged, and age-worn shingles throughout Charlotte. Don't wait
+  expert repairs for wind-damaged, storm-damaged, and age-worn shingles throughout Charlotte. Don't wait
               until a small problem becomes a costly repair.
             </p>
 

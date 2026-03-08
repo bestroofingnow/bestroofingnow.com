@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -46,16 +46,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'GAF Timberline Shingles Charlotte NC | HDZ & NS | Best Roofing Now',
-    description:
+  description:
       'GAF Timberline HDZ and NS shingles installed by Factory-Certified contractor in Charlotte NC. LayerLock technology, StainGuard Plus, and 130 MPH wind warranty.',
-    url: `${SITE_CONFIG.url}/gaf-timberline-shingles-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gaf-timberline-shingles-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'GAF Timberline shingles installation Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'GAF Timberline shingles installation Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -65,27 +65,27 @@ export const metadata: Metadata = {
 const timberlineProducts = [
   {
     icon: Shield,
-    title: 'Timberline HDZ',
-    description: 'Premium line with LayerLock technology, StrikeZone nailing, and 130 MPH wind warranty.',
-    features: ['LayerLock Technology', 'StrikeZone Nailing Area', 'StainGuard Plus', '130 MPH Wind Warranty'],
+  title: 'Timberline HDZ',
+  description: 'Premium line with LayerLock technology, StrikeZone nailing, and 130 MPH wind warranty.',
+  features: ['LayerLock Technology', 'StrikeZone Nailing Area', 'StainGuard Plus', '130 MPH Wind Warranty'],
   },
   {
     icon: Home,
-    title: 'Timberline NS',
-    description: 'Natural shadow effect with dimensional beauty at an excellent value.',
-    features: ['Natural Shadow Effect', 'Dimensional Appearance', 'StainGuard Protection', 'Affordable Value'],
+  title: 'Timberline NS',
+  description: 'Natural shadow effect with dimensional beauty at an excellent value.',
+  features: ['Natural Shadow Effect', 'Dimensional Appearance', 'StainGuard Protection', 'Affordable Value'],
   },
   {
     icon: Zap,
-    title: 'Timberline UHDZ',
-    description: 'Ultra-premium with enhanced curb appeal and the thickest, most durable construction.',
-    features: ['Ultra HD Design', 'Premium Thickness', 'Maximum Durability', 'Enhanced Curb Appeal'],
+  title: 'Timberline UHDZ',
+  description: 'Ultra-premium with enhanced curb appeal and the thickest, most durable construction.',
+  features: ['Ultra HD Design', 'Premium Thickness', 'Maximum Durability', 'Enhanced Curb Appeal'],
   },
   {
     icon: Star,
-    title: 'Timberline Cool Series',
-    description: 'Energy-efficient shingles that reflect solar energy and reduce cooling costs.',
-    features: ['Solar Reflective', 'Energy Star Rated', 'Reduces AC Costs', 'Available in Colors'],
+  title: 'Timberline Cool Series',
+  description: 'Energy-efficient shingles that reflect solar energy and reduce cooling costs.',
+  features: ['Solar Reflective', 'Energy Star Rated', 'Reduces AC Costs', 'Available in Colors'],
   },
 ];
 
@@ -105,33 +105,33 @@ const popularColors = [
 const whyChooseTimberline = [
   {
     icon: Award,
-    title: '#1 Selling Shingle in America',
-    description: 'GAF Timberline has been America\'s best-selling shingle for over 20 years running.',
+  title: '#1 Selling Shingle in America',
+  description: 'GAF Timberline has been America\'s best-selling shingle for over 20 years running.',
   },
   {
     icon: Shield,
-    title: 'LayerLock Technology',
-    description: 'Mechanical fusion creates the strongest bond between shingle layers for durability.',
+  title: 'LayerLock Technology',
+  description: 'Mechanical fusion creates the strongest bond between shingle layers for durability.',
   },
   {
     icon: Wind,
-    title: '130 MPH Wind Warranty',
-    description: 'HDZ shingles withstand extreme winds - critical for Charlotte storm season.',
+  title: '130 MPH Wind Warranty',
+  description: 'HDZ shingles withstand extreme winds - critical for Charlotte storm season.',
   },
   {
     icon: CheckCircle,
-    title: 'StainGuard Plus',
-    description: '25-year algae protection keeps your roof looking new in Charlotte\'s humid climate.',
+  title: 'StainGuard Plus',
+  description: '25-year algae protection keeps your roof looking new in Charlotte\'s humid climate.',
   },
   {
     icon: Palette,
-    title: 'Beautiful Color Options',
-    description: 'Extensive color palette designed to complement any home architectural style.',
+  title: 'Beautiful Color Options',
+  description: 'Extensive color palette designed to complement any home architectural style.',
   },
   {
     icon: Clock,
-    title: 'Lifetime Protection',
-    description: 'Lifetime limited warranty plus Golden Pledge option for workmanship coverage.',
+  title: 'Lifetime Protection',
+  description: 'Lifetime limited warranty plus Golden Pledge option for workmanship coverage.',
   },
 ];
 
@@ -175,42 +175,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What is the difference between Timberline HDZ and Timberline NS?',
-    answer:
+  answer:
       'Timberline HDZ is the premium line featuring LayerLock technology for a mechanical bond between layers, StrikeZone nailing area for faster and more accurate installation, and a 130 MPH wind warranty. Timberline NS (Natural Shadow) offers excellent dimensional appearance and performance at a lower price point but without the LayerLock technology. Both include StainGuard algae protection. For Charlotte\'s storm-prone climate, we often recommend HDZ for its superior wind resistance.',
   },
   {
     question: 'What is LayerLock technology?',
-    answer:
+  answer:
       'LayerLock is GAF\'s patented technology that mechanically fuses the shingle layers together during manufacturing. This creates a stronger, more durable shingle that resists wind uplift and delamination better than traditionally laminated shingles. The result is enhanced performance in high winds and severe weather - particularly important for Charlotte homeowners during storm season.',
   },
   {
     question: 'How much do GAF Timberline shingles cost in Charlotte?',
-    answer:
+  answer:
       'A GAF Timberline roof replacement in Charlotte typically ranges from $8,000 to $20,000+ for most homes. Timberline NS is generally at the lower end of the range, while Timberline HDZ and UHDZ are at the higher end due to their enhanced features. Factors affecting cost include roof size, pitch, complexity, and whether you opt for the Golden Pledge warranty. We provide free, detailed estimates.',
   },
   {
     question: 'What colors does GAF Timberline come in?',
-    answer:
+  answer:
       'GAF Timberline shingles are available in an extensive color palette including Weathered Wood, Charcoal, Hickory, Barkwood, Pewter Gray, Shakewood, Slate, Mission Brown, and many more. Popular choices in Charlotte include Weathered Wood and Charcoal. We can show you samples and photos of completed projects in your preferred colors.',
   },
   {
     question: 'Does StainGuard Plus really prevent algae stains?',
-    answer:
+  answer:
       'Yes! StainGuard Plus is GAF\'s advanced algae-fighting technology that includes specially designed copper-containing granules that release slowly over time to prevent blue-green algae growth. It comes with a 25-year limited warranty against algae discoloration. In Charlotte\'s humid climate where algae growth is common, StainGuard Plus is essential for maintaining your roof\'s appearance.',
   },
   {
     question: 'How long do GAF Timberline shingles last?',
-    answer:
+  answer:
       'GAF Timberline shingles are designed for decades of performance and come with a Lifetime limited warranty. In Charlotte\'s climate with proper installation and ventilation, homeowners can expect 25-30+ years of service. Regular maintenance and prompt repairs of any damage can help maximize your roof\'s lifespan.',
   },
   {
     question: 'What warranty coverage is available for Timberline shingles?',
-    answer:
+  answer:
       'GAF Timberline shingles come with a Lifetime limited warranty on materials. When installed by a GAF Factory-Certified contractor like Best Roofing Now, you can upgrade to the Golden Pledge warranty which adds 25 years of workmanship coverage backed by GAF itself - not just the contractor. This is the strongest warranty in the roofing industry.',
   },
   {
     question: 'Are Timberline shingles good for Charlotte\'s climate?',
-    answer:
+  answer:
       'Absolutely. GAF Timberline shingles are excellent for Charlotte\'s climate. The 130 MPH wind warranty (HDZ) provides protection during severe thunderstorms, StainGuard Plus prevents algae in our humid summers, and the Class A fire rating adds safety. For homes seeking energy efficiency, the Timberline Cool Series reflects solar energy to reduce cooling costs.',
   },
 ];
@@ -226,7 +226,6 @@ export default function GAFTimberlineShinglesCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -312,7 +311,7 @@ export default function GAFTimberlineShinglesCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Choose from multiple Timberline product lines to find the perfect balance of performance,
-              appearance, and value for your Charlotte home.
+  appearance, and value for your Charlotte home.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">

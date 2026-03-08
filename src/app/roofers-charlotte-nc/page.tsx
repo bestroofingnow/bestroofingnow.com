@@ -30,7 +30,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
 import EstimateButton from '@/components/estimate/EstimateButton';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -68,16 +68,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Charlotte NC | Top-Rated Local Roofers | Best Roofing Now',
-    description:
+  description:
       'Find experienced local roofers serving Charlotte NC. 5-star rated, BBB A+ accredited, veteran-owned. Licensed and insured roofing professionals with 500+ roofs completed. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofers Charlotte NC - Best Roofing Now team at work',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofers Charlotte NC - Best Roofing Now team at work',
       },
     ],
   },
@@ -87,39 +87,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Charlotte homes including shingle, metal, tile, and slate roofing for any style or budget.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Charlotte homes including shingle, metal, tile, and slate roofing for any style or budget.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Charlotte businesses and commercial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Charlotte businesses and commercial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, flashing damage, and all types of roof issues.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, flashing damage, and all types of roof issues.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials, extended warranties up to 50 years, and permit handling.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials, extended warranties up to 50 years, and permit handling.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports, high-resolution photos, and honest assessments.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports, high-resolution photos, and honest assessments.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: '24/7 emergency storm damage restoration with full insurance claim documentation and adjuster meetings.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: '24/7 emergency storm damage restoration with full insurance claim documentation and adjuster meetings.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -127,33 +127,33 @@ const services = [
 const rooferChecklist = [
   {
     icon: FileCheck,
-    title: 'Verify NC General Contractor License',
-    description: 'North Carolina requires roofing contractors to hold a valid General Contractor license. Ask for the license number and verify it through the NC Licensing Board for General Contractors at nclbgc.org.',
+  title: 'Verify NC General Contractor License',
+  description: 'North Carolina requires roofing contractors to hold a valid General Contractor license. Ask for the license number and verify it through the NC Licensing Board for General Contractors at nclbgc.org.',
   },
   {
     icon: Star,
-    title: 'Check BBB Rating and Google Reviews',
-    description: 'Look for roofers with a BBB accreditation (A or A+ rating) and strong Google reviews (4.5+ stars with 50+ reviews). This indicates a track record of customer satisfaction and ethical business practices.',
+  title: 'Check BBB Rating and Google Reviews',
+  description: 'Look for roofers with a BBB accreditation (A or A+ rating) and strong Google reviews (4.5+ stars with 50+ reviews). This indicates a track record of customer satisfaction and ethical business practices.',
   },
   {
     icon: Shield,
-    title: 'Ask for Proof of Insurance',
-    description: 'Require both general liability insurance ($1M minimum) and workers compensation coverage. This protects you from financial liability if a worker is injured or your property is damaged during the project.',
+  title: 'Ask for Proof of Insurance',
+  description: 'Require both general liability insurance ($1M minimum) and workers compensation coverage. This protects you from financial liability if a worker is injured or your property is damaged during the project.',
   },
   {
     icon: DollarSign,
-    title: 'Get at Least 3 Written Estimates',
-    description: 'Compare detailed written estimates from at least 3 Charlotte roofers. Beware of quotes that are significantly lower than others - this may indicate cut corners, inferior materials, or hidden fees.',
+  title: 'Get at Least 3 Written Estimates',
+  description: 'Compare detailed written estimates from at least 3 Charlotte roofers. Beware of quotes that are significantly lower than others - this may indicate cut corners, inferior materials, or hidden fees.',
   },
   {
     icon: Award,
-    title: 'Ask About Manufacturer Certifications',
-    description: 'Certifications from GAF, CertainTeed, or Owens Corning mean the roofer has passed training requirements and can offer enhanced warranty options. Only 2% of roofers achieve top-tier certifications.',
+  title: 'Ask About Manufacturer Certifications',
+  description: 'Certifications from GAF, CertainTeed, or Owens Corning mean the roofer has passed training requirements and can offer enhanced warranty options. Only 2% of roofers achieve top-tier certifications.',
   },
   {
     icon: MapPin,
-    title: 'Check for Local Office / Physical Address',
-    description: 'Hire roofers with a verifiable physical address in the Charlotte area. Storm chasers and out-of-town contractors often disappear after collecting payment, leaving you without warranty support.',
+  title: 'Check for Local Office / Physical Address',
+  description: 'Hire roofers with a verifiable physical address in the Charlotte area. Storm chasers and out-of-town contractors often disappear after collecting payment, leaving you without warranty support.',
   },
 ];
 
@@ -161,33 +161,33 @@ const rooferChecklist = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners. Perfect ${SITE_CONFIG.googleRating} rating.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners. Perfect ${SITE_CONFIG.googleRating} rating.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints filed.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints filed.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated. Military values of integrity, discipline, and excellence in every project.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated. Military values of integrity, discipline, and excellence in every project.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofers with comprehensive general liability and workers compensation insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofers with comprehensive general liability and workers compensation insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
+  title: 'Certified Installers',
+  description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services with 1-4 hour response times throughout Charlotte.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services with 1-4 hour response times throughout Charlotte.',
   },
 ];
 
@@ -239,42 +239,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How do I find trustworthy roofers in Charlotte NC?',
-    answer:
+  answer:
       `To find trustworthy roofers in Charlotte NC, start by checking Google reviews (look for 4.5+ stars with 50+ reviews), verify BBB accreditation and rating, confirm NC General Contractor licensing, and ask for proof of insurance. Get at least 3 written estimates and check for manufacturer certifications. Best Roofing Now meets every criteria: ${SITE_CONFIG.googleRating} Google rating with ${SITE_CONFIG.googleReviewCount}+ reviews, BBB A+ accreditation, full NC licensing, comprehensive insurance, and certifications from CertainTeed, GAF, and Owens Corning. We also have a physical Charlotte office at ${SITE_CONFIG.address.full}.`,
   },
   {
     question: 'What should I look for when hiring a roofer?',
-    answer:
+  answer:
       'When hiring a roofer, verify these six essentials: (1) Valid NC General Contractor license - check at nclbgc.org, (2) General liability insurance of at least $1 million and workers compensation coverage, (3) Strong online reputation with BBB accreditation and 4.5+ Google star rating, (4) Manufacturer certifications from GAF, CertainTeed, or Owens Corning for enhanced warranties, (5) Local Charlotte-area office with a physical address (not just a P.O. box), and (6) Detailed written estimates with clear scope of work, materials specified, timeline, and warranty information. Avoid roofers who demand large upfront deposits or only accept cash.',
   },
   {
     question: 'How much do roofers charge in Charlotte?',
-    answer:
+  answer:
       'Charlotte roofers typically charge $200-$1,500 for minor repairs, $3,000-$8,000 for partial replacements, and $8,000-$25,000 for full residential roof replacements with architectural shingles. Metal roofing costs $15,000-$35,000. Prices vary based on roof size, pitch, material choice, and project complexity. Storm damage repairs are often covered by homeowner insurance with minimal out-of-pocket costs. Best Roofing Now provides free, detailed estimates with transparent pricing. Call ' + SITE_CONFIG.phone + ' for your free estimate.',
   },
   {
     question: 'Are Charlotte roofers licensed?',
-    answer:
+  answer:
       'In North Carolina, roofing contractors must hold a valid General Contractor license issued by the NC Licensing Board for General Contractors (NCLBGC) for projects over $30,000. You can verify any contractor\'s license at nclbgc.org. Some smaller repair companies may operate under a home improvement license, but for major roof work, always verify the General Contractor license. Best Roofing Now is fully licensed in North Carolina with comprehensive liability and workers compensation insurance.',
   },
   {
     question: 'What questions should I ask a roofer before hiring?',
-    answer:
+  answer:
       'Ask these essential questions before hiring a Charlotte roofer: (1) Are you licensed in NC? What is your license number? (2) Do you carry general liability and workers comp insurance? Can I see certificates? (3) What manufacturer certifications do you hold? (4) How long have you been operating in Charlotte? (5) Can you provide references from recent Charlotte projects? (6) What warranty do you offer on labor and materials? (7) Will you handle the building permit? (8) What is your estimated timeline? (9) What is your payment schedule? (10) Do you offer financing options? A reputable roofer will answer all these questions openly.',
   },
   {
     question: 'Should I get multiple roofing estimates?',
-    answer:
+  answer:
       'Yes, you should always get at least 3 written estimates from different Charlotte roofers before making a decision. This allows you to compare pricing, materials, warranties, and professionalism. Be wary of estimates that are significantly below others - this often indicates inferior materials, shortcuts, or hidden costs. Each estimate should detail the scope of work, specific materials to be used, project timeline, warranty terms, and total cost. Best Roofing Now provides detailed, transparent estimates with no hidden fees or pressure to sign immediately.',
   },
   {
     question: 'What is the difference between a roofer and a roofing contractor?',
-    answer:
+  answer:
       'In Charlotte NC, a "roofer" typically refers to the skilled tradespeople who physically install and repair roofs, while a "roofing contractor" is the licensed business entity that manages roofing projects, obtains permits, carries insurance, and provides warranties. When you hire Best Roofing Now, you get both: a licensed roofing contractor with experienced, trained roofers. The roofing contractor is responsible for project management, quality control, permit compliance, insurance, and warranty coverage. Always hire a licensed roofing contractor rather than an unlicensed individual for any significant roofing work.',
   },
   {
     question: 'How do I report a bad roofer in North Carolina?',
-    answer:
+  answer:
       'If you have a complaint about a roofer in North Carolina, you have several options: (1) File a complaint with the NC Licensing Board for General Contractors (NCLBGC) at nclbgc.org if the contractor is licensed, (2) File a complaint with the Better Business Bureau (BBB) at bbb.org, (3) Contact the NC Attorney General\'s Consumer Protection Division at ncdoj.gov, (4) File a complaint with the NC Department of Justice consumer services, (5) Leave an honest review on Google and other platforms to warn other homeowners. For contractors operating without a license, report them to the NCLBGC for investigation. This is why choosing a reputable, licensed roofer like Best Roofing Now is so important.',
   },
 ];
@@ -291,7 +291,6 @@ export default function RoofersCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-charlotte-nc`}
         pageName="Roofers Charlotte NC"
@@ -329,7 +328,7 @@ export default function RoofersCharlotteNCPage() {
               throughout Charlotte and the surrounding metro area. From{' '}
               <Link href="/roof-repair-charlotte-nc" className="text-accent-light hover:text-white underline">repairs</Link> to{' '}
               <Link href="/roof-replacement-charlotte-nc" className="text-accent-light hover:text-white underline">complete replacements</Link>,
-              our certified roofers deliver exceptional quality backed by industry-leading warranties
+  our certified roofers deliver exceptional quality backed by industry-leading warranties
               and our BBB A+ rating.
             </p>
 
@@ -516,7 +515,7 @@ export default function RoofersCharlotteNCPage() {
                 When you need roofers in Charlotte NC, you want a team you can trust. Best Roofing
                 Now has built our reputation on quality workmanship, honest assessments, and putting
                 our customers first. With {SITE_CONFIG.roofsInstalled}+ roofs completed across the Charlotte metro area,
-                we have the experience to handle any roofing project.
+  we have the experience to handle any roofing project.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (
@@ -661,7 +660,7 @@ export default function RoofersCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Our professional roofers serve homeowners and businesses throughout the Greater Charlotte region,
-              including all neighborhoods and surrounding cities.
+  including all neighborhoods and surrounding cities.
             </p>
           </div>
 
@@ -785,7 +784,7 @@ export default function RoofersCharlotteNCPage() {
                 <p className="text-gray">
                   When you hire Best Roofing Now, you&apos;re not just getting roofers - you&apos;re getting a family
                   that cares about Charlotte as much as you do. We&apos;ve been here for 15 years, raised our kids here,
-                  and built our business on the simple principle that your roof should protect what matters most.
+  and built our business on the simple principle that your roof should protect what matters most.
                 </p>
                 <p className="text-primary font-semibold mt-4">
                   Call us today at {SITE_CONFIG.phone} - I&apos;d love to hear from you.

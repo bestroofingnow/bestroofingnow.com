@@ -20,7 +20,6 @@ import {
   VoiceSearchActionSchema,
   SpeakableContentBlocks,
   FeaturedSnippetListAnswerSchema,
-  LocalBusinessSchema,
   HowToGetRoofEstimateSchema,
   FreeInspectionOfferSchema,
   ReviewsSchema,
@@ -77,8 +76,6 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Business schemas - rendered on homepage where reviews/ratings are visible */}
-      <LocalBusinessSchema includeRating={true} />
       <HowToGetRoofEstimateSchema />
       <FreeInspectionOfferSchema />
       <ReviewsSchema />

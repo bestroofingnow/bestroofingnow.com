@@ -18,7 +18,7 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Huntersville NC | Lake Norman Area',
-    description:
+  description:
       'Premium roof replacement for Huntersville NC. Serving Birkdale, Skybrook, and Lake Norman communities. GAF Master Elite certified. Financing available.',
-    url: `${SITE_CONFIG.url}/roof-replacement-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Roof replacement Huntersville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof replacement Huntersville NC - Best Roofing Now',
       },
     ],
   },
@@ -68,27 +68,27 @@ export const metadata: Metadata = {
 const roofingOptions = [
   {
     title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles with 30-50 year warranties. GAF Timberline HDZ and CertainTeed Landmark.',
-    priceRange: '$12-18/sq ft',
-    bestFor: 'Most Huntersville homes',
+  description: 'Premium dimensional shingles with 30-50 year warranties. GAF Timberline HDZ and CertainTeed Landmark.',
+  priceRange: '$12-18/sq ft',
+  bestFor: 'Most Huntersville homes',
   },
   {
     title: 'Impact-Resistant Shingles',
-    description: 'Class 4 rated for hail protection. Often qualifies for insurance discounts.',
-    priceRange: '$15-22/sq ft',
-    bestFor: 'Storm-prone areas',
+  description: 'Class 4 rated for hail protection. Often qualifies for insurance discounts.',
+  priceRange: '$15-22/sq ft',
+  bestFor: 'Storm-prone areas',
   },
   {
     title: 'Standing Seam Metal',
-    description: 'Premium metal roofing with 40-70 year lifespan. Excellent for modern homes.',
-    priceRange: '$18-30/sq ft',
-    bestFor: 'Modern & lakefront homes',
+  description: 'Premium metal roofing with 40-70 year lifespan. Excellent for modern homes.',
+  priceRange: '$18-30/sq ft',
+  bestFor: 'Modern & lakefront homes',
   },
   {
     title: 'Designer Shingles',
-    description: 'Luxury shingles mimicking slate or cedar. GAF Grand Canyon, CertainTeed Grand Manor.',
-    priceRange: '$18-28/sq ft',
-    bestFor: 'Upscale neighborhoods',
+  description: 'Luxury shingles mimicking slate or cedar. GAF Grand Canyon, CertainTeed Grand Manor.',
+  priceRange: '$18-28/sq ft',
+  bestFor: 'Upscale neighborhoods',
   },
 ];
 
@@ -96,23 +96,23 @@ const roofingOptions = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '500+ 5-Star Reviews',
-    description: 'The highest-rated roofing company in the Lake Norman area with verified customer reviews.',
+  title: '500+ 5-Star Reviews',
+  description: 'The highest-rated roofing company in the Lake Norman area with verified customer reviews.',
   },
   {
     icon: Award,
-    title: 'GAF Master Elite',
-    description: 'Top 2% of roofers nationally. Golden Pledge warranties up to 50 years available.',
+  title: 'GAF Master Elite',
+  description: 'Top 2% of roofers nationally. Golden Pledge warranties up to 50 years available.',
   },
   {
     icon: DollarSign,
-    title: 'Financing Available',
-    description: 'Flexible financing with payments as low as $150/month for qualified Huntersville homeowners.',
+  title: 'Financing Available',
+  description: 'Flexible financing with payments as low as $150/month for qualified Huntersville homeowners.',
   },
   {
     icon: FileCheck,
-    title: 'Insurance Specialists',
-    description: 'We work directly with insurance companies to maximize storm damage claims.',
+  title: 'Insurance Specialists',
+  description: 'We work directly with insurance companies to maximize storm damage claims.',
   },
 ];
 
@@ -134,32 +134,32 @@ const huntersvilleNeighborhoods = [
 const faqs = [
   {
     question: 'How much does roof replacement cost in Huntersville NC?',
-    answer:
+  answer:
       'Roof replacement in Huntersville typically ranges from $12,000-$30,000 for average homes with architectural shingles. Larger homes in Birkdale, Skybrook, or lakefront areas with premium materials often range $25,000-$50,000+. We provide free detailed estimates with exact pricing for your specific home.',
   },
   {
     question: 'How long does roof replacement take in Huntersville?',
-    answer:
+  answer:
       'Most Huntersville roof replacements are completed in 1-2 days for standard homes. Larger homes or those with complex roof designs may take 2-4 days. We always secure your home each evening and complete thorough cleanup before leaving.',
   },
   {
     question: 'What roofing materials are most popular in Huntersville?',
-    answer:
+  answer:
       'Architectural shingles like GAF Timberline HDZ are most popular in Huntersville for their balance of value and performance. Birkdale and Skybrook homeowners often choose designer shingles for enhanced curb appeal. Impact-resistant shingles are increasingly popular for insurance savings.',
   },
   {
     question: 'Do you offer financing for roof replacement?',
-    answer:
+  answer:
       'Yes, we offer multiple financing options for Huntersville homeowners including same-as-cash financing and low monthly payment plans starting around $150/month. We also help with insurance claims for storm damage replacements, which may cover your entire roof.',
   },
   {
     question: 'Will you work with my Huntersville HOA?',
-    answer:
+  answer:
       'Yes, we have extensive experience with Huntersville HOAs including Birkdale, Skybrook, Vermillion, and other communities. We provide all documentation for architectural review, help select approved colors, and can coordinate with your HOA board directly.',
   },
   {
     question: 'What warranties do you offer on Huntersville roof replacements?',
-    answer:
+  answer:
       'We offer comprehensive warranties including our 10-year workmanship guarantee plus manufacturer warranties up to 50 years. As GAF Master Elite certified, we offer the Golden Pledge warranty - the strongest in the industry covering both materials and labor.',
   },
 ];
@@ -175,7 +175,6 @@ export default function RoofReplacementHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-huntersville-nc`}
         pageName="Roof Replacement Huntersville NC"

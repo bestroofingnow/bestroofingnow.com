@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Ridge Vent Installation Charlotte NC | Roof Ventilation | Best Roofing Now',
-    description: 'Professional ridge vent installation for proper attic ventilation.',
-    url: `${SITE_CONFIG.url}/ridge-vent-installation`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Ridge vent installation in Charlotte NC' }],
+  description: 'Professional ridge vent installation for proper attic ventilation.',
+  url: `${SITE_CONFIG.url}/ridge-vent-installation`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Ridge vent installation in Charlotte NC' }],
   },
 };
 
@@ -92,8 +92,8 @@ export default function RidgeVentInstallationPage() {
       <ServiceSchema
         service={{
           title: "Ridge Vent Installation",
-          description: "Professional ridge vent installation in Charlotte NC for proper attic ventilation.",
-          slug: "ridge-vent-installation",
+  description: "Professional ridge vent installation in Charlotte NC for proper attic ventilation.",
+  slug: "ridge-vent-installation",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/ridge-vent-installation`} pageName="Ridge Vent Installation Charlotte NC" city="Charlotte" />

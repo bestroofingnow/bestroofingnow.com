@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Installation Cornelius NC | Seamless Gutters | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated gutter installation specialists serving Cornelius and Lake Norman. Custom seamless gutters, gutter guards, and repair services. Free estimates.',
-    url: `${SITE_CONFIG.url}/gutter-installation-cornelius-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-installation-cornelius-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.gutters,
-        width: 1200,
-        height: 630,
-        alt: 'Gutter installation Cornelius NC - Best Roofing Now seamless gutter services',
+  width: 1200,
+  height: 630,
+  alt: 'Gutter installation Cornelius NC - Best Roofing Now seamless gutter services',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Droplets,
-    title: 'Seamless Gutter Installation',
-    description: 'Custom-fit seamless aluminum gutters made on-site for a perfect fit with no leak points.',
-    href: '/services/gutter-installation',
+  title: 'Seamless Gutter Installation',
+  description: 'Custom-fit seamless aluminum gutters made on-site for a perfect fit with no leak points.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Shield,
-    title: 'Gutter Guard Installation',
-    description: 'Quality gutter protection systems to keep leaves and debris out of your gutters.',
-    href: '/services/gutter-guards',
+  title: 'Gutter Guard Installation',
+  description: 'Quality gutter protection systems to keep leaves and debris out of your gutters.',
+  href: '/services/gutter-guards',
   },
   {
     icon: Wrench,
-    title: 'Gutter Repair',
-    description: 'Fast, reliable repairs for leaking, sagging, or damaged gutters and downspouts.',
-    href: '/services/gutter-repair',
+  title: 'Gutter Repair',
+  description: 'Fast, reliable repairs for leaking, sagging, or damaged gutters and downspouts.',
+  href: '/services/gutter-repair',
   },
   {
     icon: Paintbrush,
-    title: 'Gutter Cleaning',
-    description: 'Professional gutter cleaning to remove debris and ensure proper water flow.',
-    href: '/services/gutter-cleaning',
+  title: 'Gutter Cleaning',
+  description: 'Professional gutter cleaning to remove debris and ensure proper water flow.',
+  href: '/services/gutter-cleaning',
   },
   {
     icon: Ruler,
-    title: 'Downspout Installation',
-    description: 'Properly sized downspouts and extensions to direct water away from your foundation.',
-    href: '/services/gutter-installation',
+  title: 'Downspout Installation',
+  description: 'Properly sized downspouts and extensions to direct water away from your foundation.',
+  href: '/services/gutter-installation',
   },
   {
     icon: Home,
-    title: 'Gutter Replacement',
-    description: 'Complete gutter system replacement with premium materials and expert installation.',
-    href: '/services/gutter-installation',
+  title: 'Gutter Replacement',
+  description: 'Complete gutter system replacement with premium materials and expert installation.',
+  href: '/services/gutter-installation',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Custom Fabrication',
-    description: 'Seamless gutters made on-site with our mobile gutter machine for a perfect fit.',
+  title: 'Custom Fabrication',
+  description: 'Seamless gutters made on-site with our mobile gutter machine for a perfect fit.',
   },
   {
     icon: Users,
-    title: 'Expert Installers',
-    description: 'Trained professionals who ensure proper pitch, secure hangers, and quality seams.',
+  title: 'Expert Installers',
+  description: 'Trained professionals who ensure proper pitch, secure hangers, and quality seams.',
   },
   {
     icon: Clock,
-    title: 'Same-Day Service',
-    description: 'Many gutter installations and repairs completed in just one day.',
+  title: 'Same-Day Service',
+  description: 'Many gutter installations and repairs completed in just one day.',
   },
 ];
 
@@ -186,42 +186,42 @@ const gutterColors = [
 const faqs = [
   {
     question: 'Why should I choose seamless gutters for my Cornelius home?',
-    answer:
+  answer:
       'Seamless gutters are the gold standard for Lake Norman homes because they have no joints along their length where leaks can develop. Traditional sectional gutters have seams every 10-20 feet that can separate and leak over time. Our seamless gutters are custom-made on-site to fit your home perfectly, ensuring maximum durability and a clean, attractive appearance.',
   },
   {
     question: 'How much does gutter installation cost in Cornelius NC?',
-    answer:
+  answer:
       'Gutter installation in Cornelius typically ranges from $4-12 per linear foot, depending on the material, size, and complexity of your home. A typical home requires 150-200 linear feet of gutters. We provide free on-site estimates with transparent pricing and no hidden fees. Financing options are also available for larger projects.',
   },
   {
     question: 'What size gutters do you recommend for Cornelius homes?',
-    answer:
+  answer:
       'We typically recommend 5-inch seamless gutters for most Cornelius homes, which handle normal rainfall well. However, homes with large roof areas, steep pitches, or in heavily wooded areas may benefit from 6-inch gutters for extra capacity. We also recommend 3x4 downspouts for maximum flow during heavy Lake Norman thunderstorms.',
   },
   {
     question: 'How long does gutter installation take?',
-    answer:
+  answer:
       'Most residential gutter installations in Cornelius are completed in just one day. Larger homes or homes with complex rooflines may require two days. We bring our mobile gutter fabrication machine to your property, custom-make each gutter run on-site, and install everything with minimal disruption to your day.',
   },
   {
     question: 'Do you offer gutter guards in Cornelius NC?',
-    answer:
+  answer:
       'Yes! We install several types of gutter protection systems to match your needs and budget. With the abundance of pine and oak trees around Lake Norman, gutter guards are an excellent investment. Options include micro-mesh guards for fine debris, screen guards for leaves, and solid covers with surface tension technology.',
   },
   {
     question: 'What colors are available for gutters in Cornelius?',
-    answer:
+  answer:
       'We offer a wide range of gutter colors to complement your home\'s exterior. Popular choices in Cornelius include white, almond, clay, musket brown, and bronze. Our seamless aluminum gutters are factory-painted with a baked enamel finish that resists fading, chipping, and peeling for years of attractive performance.',
   },
   {
     question: 'How often should I clean my gutters in Cornelius?',
-    answer:
+  answer:
       'With Lake Norman\'s heavy tree coverage, we recommend cleaning gutters at least twice per year - once in late spring after pollen season and again in late fall after the leaves have dropped. Homes surrounded by pine trees may need more frequent cleaning due to pine needle accumulation. Gutter guards can significantly reduce cleaning frequency.',
   },
   {
     question: 'Do you repair existing gutters in Cornelius NC?',
-    answer:
+  answer:
       'Yes, we provide comprehensive gutter repair services in Cornelius. Common repairs include resealing leaky seams, reattaching sagging gutters, replacing damaged sections, clearing clogs, and fixing or replacing downspouts. Sometimes repair is more cost-effective than replacement; we\'ll provide an honest assessment of your options.',
   },
 ];
@@ -236,7 +236,6 @@ export default function GutterInstallationCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/gutter-installation-cornelius-nc`}
         pageName="Gutter Installation Cornelius NC"
@@ -246,13 +245,13 @@ export default function GutterInstallationCorneliusNCPage() {
         faqs={[
           {
             question: 'How much does gutter installation cost in Cornelius NC?',
-            answer: 'Gutter installation in Cornelius NC costs $6-$15 per linear foot for seamless aluminum gutters, averaging $1,200-$3,000 for Lake Norman homes. Best Roofing Now serves Cornelius with free estimates and lifetime warranties.',
-            speakableAnswer: 'Gutter installation in Cornelius costs $6-15 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
+  answer: 'Gutter installation in Cornelius NC costs $6-$15 per linear foot for seamless aluminum gutters, averaging $1,200-$3,000 for Lake Norman homes. Best Roofing Now serves Cornelius with free estimates and lifetime warranties.',
+  speakableAnswer: 'Gutter installation in Cornelius costs $6-15 per foot. Best Roofing Now offers free estimates. Call 704-605-6047.',
           },
           {
             question: 'Who installs gutters in Cornelius and Lake Norman?',
-            answer: 'Best Roofing Now is the top-rated gutter installer serving Cornelius and Lake Norman communities with a 5-star Google rating. They install seamless aluminum gutters made on-site with color matching to your home.',
-            speakableAnswer: 'Best Roofing Now installs gutters in Cornelius and Lake Norman with 5-star ratings. Call 704-605-6047.',
+  answer: 'Best Roofing Now is the top-rated gutter installer serving Cornelius and Lake Norman communities with a 5-star Google rating. They install seamless aluminum gutters made on-site with color matching to your home.',
+  speakableAnswer: 'Best Roofing Now installs gutters in Cornelius and Lake Norman with 5-star ratings. Call 704-605-6047.',
           },
         ]}
       />
@@ -285,7 +284,7 @@ export default function GutterInstallationCorneliusNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Protect your Cornelius home from water damage with professionally installed seamless gutters from
               Best Roofing Now. Our custom gutter systems are fabricated on-site to fit your home perfectly,
-              with no seams to leak and a wide range of colors to match your exterior.
+  with no seams to leak and a wide range of colors to match your exterior.
             </p>
 
             {/* CTA Buttons */}

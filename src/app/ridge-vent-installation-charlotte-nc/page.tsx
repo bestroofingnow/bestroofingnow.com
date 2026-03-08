@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Ridge Vent Installation Charlotte NC | Attic Ventilation | Best Roofing Now',
-    description:
+  description:
       'Improve your home\'s ventilation with professional ridge vent installation in Charlotte NC. Reduce energy costs and prevent moisture problems. Free estimates.',
-    url: `${SITE_CONFIG.url}/ridge-vent-installation-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/ridge-vent-installation-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional ridge vent installation Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Professional ridge vent installation Charlotte NC',
       },
     ],
   },
@@ -67,27 +67,27 @@ export const metadata: Metadata = {
 const ventilationServices = [
   {
     icon: Wind,
-    title: 'Ridge Vent Installation',
-    description: 'Install continuous ridge vents along your roof peak for optimal attic airflow and ventilation.',
-    features: ['Continuous ventilation', 'Weather-tight design', 'Shingle-over style'],
+  title: 'Ridge Vent Installation',
+  description: 'Install continuous ridge vents along your roof peak for optimal attic airflow and ventilation.',
+  features: ['Continuous ventilation', 'Weather-tight design', 'Shingle-over style'],
   },
   {
     icon: Home,
-    title: 'Soffit Vent Installation',
-    description: 'Install soffit vents to allow cool air intake that works with ridge vents for proper airflow.',
-    features: ['Intake ventilation', 'Multiple styles available', 'Pest-resistant screens'],
+  title: 'Soffit Vent Installation',
+  description: 'Install soffit vents to allow cool air intake that works with ridge vents for proper airflow.',
+  features: ['Intake ventilation', 'Multiple styles available', 'Pest-resistant screens'],
   },
   {
     icon: Zap,
-    title: 'Power Attic Ventilators',
-    description: 'Install powered fans for homes that need additional ventilation capacity.',
-    features: ['Solar or electric options', 'Thermostat controlled', 'High CFM ratings'],
+  title: 'Power Attic Ventilators',
+  description: 'Install powered fans for homes that need additional ventilation capacity.',
+  features: ['Solar or electric options', 'Thermostat controlled', 'High CFM ratings'],
   },
   {
     icon: ThermometerSun,
-    title: 'Ventilation Assessment',
-    description: 'Complete attic ventilation analysis with recommendations to optimize airflow.',
-    features: ['Free assessment', 'NFA calculations', 'Custom solutions'],
+  title: 'Ventilation Assessment',
+  description: 'Complete attic ventilation analysis with recommendations to optimize airflow.',
+  features: ['Free assessment', 'NFA calculations', 'Custom solutions'],
   },
 ];
 
@@ -95,23 +95,23 @@ const ventilationServices = [
 const ventilationBenefits = [
   {
     icon: ThermometerSun,
-    title: 'Reduce Cooling Costs',
-    description: 'Proper ventilation can reduce summer attic temperatures by 30-50 degrees, lowering AC costs.',
+  title: 'Reduce Cooling Costs',
+  description: 'Proper ventilation can reduce summer attic temperatures by 30-50 degrees, lowering AC costs.',
   },
   {
     icon: Droplets,
-    title: 'Prevent Moisture Damage',
-    description: 'Ventilation removes humid air that causes mold, rot, and ice dams in winter.',
+  title: 'Prevent Moisture Damage',
+  description: 'Ventilation removes humid air that causes mold, rot, and ice dams in winter.',
   },
   {
     icon: Home,
-    title: 'Extend Roof Life',
-    description: 'Reducing heat and moisture extends shingle life and prevents premature aging.',
+  title: 'Extend Roof Life',
+  description: 'Reducing heat and moisture extends shingle life and prevents premature aging.',
   },
   {
     icon: Zap,
-    title: 'Improve Comfort',
-    description: 'Better ventilation means more consistent temperatures throughout your home.',
+  title: 'Improve Comfort',
+  description: 'Better ventilation means more consistent temperatures throughout your home.',
   },
 ];
 
@@ -119,33 +119,33 @@ const ventilationBenefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Ventilation Experts',
-    description: 'Specialized knowledge in attic ventilation requirements and solutions.',
+  title: 'Ventilation Experts',
+  description: 'Specialized knowledge in attic ventilation requirements and solutions.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for proper ventilation installation.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for proper ventilation installation.',
   },
   {
     icon: Clock,
-    title: 'Fast Installation',
-    description: 'Most ridge vent installations completed in just one day.',
+  title: 'Fast Installation',
+  description: 'Most ridge vent installations completed in just one day.',
   },
 ];
 
@@ -191,42 +191,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What is a ridge vent and how does it work?',
-    answer:
+  answer:
       'A ridge vent is a continuous ventilation system installed along the peak (ridge) of your roof. It works by allowing hot, humid air to naturally escape from your attic while drawing cooler air in through soffit vents at the eaves. This creates a natural convection cycle that keeps your attic cool and dry without using electricity.',
   },
   {
     question: 'How much does ridge vent installation cost in Charlotte NC?',
-    answer:
+  answer:
       'Ridge vent installation in Charlotte typically costs $400-$1,500 depending on roof length, accessibility, and existing ventilation. The average home costs $600-$900 for ridge vent installation. This includes cutting the ridge opening, installing the vent, and capping with shingles. We provide free estimates with detailed pricing.',
   },
   {
     question: 'Will ridge vents help reduce my energy bills?',
-    answer:
+  answer:
       'Yes, properly installed ridge vents can significantly reduce cooling costs. By allowing hot air to escape from your attic, your air conditioning works less to cool your home. Many Charlotte homeowners see 10-15% reductions in summer cooling costs. Ridge vents are especially effective when paired with adequate soffit intake vents.',
   },
   {
     question: 'Do I need soffit vents with ridge vents?',
-    answer:
+  answer:
       'Yes, ridge vents require soffit vents to work properly. The ventilation system works on the principle of air intake (soffit vents) and exhaust (ridge vents). Without soffit vents providing cool air intake, ridge vents cannot create proper airflow. We assess your soffit ventilation and can install or add vents as needed.',
   },
   {
     question: 'Can ridge vents be installed on an existing roof?',
-    answer:
+  answer:
       'Yes, ridge vents can be installed on existing roofs without a full roof replacement. We cut an opening along the ridge, install the vent, and cap it with matching shingles. It\'s a relatively simple installation that usually takes just one day. We recommend this upgrade during roof replacement for easiest installation.',
   },
   {
     question: 'Will ridge vents leak during rain or snow?',
-    answer:
+  answer:
       'Quality ridge vents are designed with baffles and weather-resistant materials that prevent rain and snow from entering while allowing air to flow freely. Proper installation is key - vents must be correctly positioned and sealed. Our GAF and CertainTeed certified installers ensure leak-free installation.',
   },
   {
     question: 'How much ventilation does my attic need?',
-    answer:
+  answer:
       'Building codes require 1 square foot of Net Free Area (NFA) ventilation for every 150 square feet of attic floor space, or 1:300 if you have a vapor barrier. Half should be intake (soffits) and half exhaust (ridge vents). We calculate your specific requirements during our free assessment.',
   },
   {
     question: 'Are ridge vents better than other attic vents?',
-    answer:
+  answer:
       'Ridge vents are generally considered the most effective passive ventilation solution because they provide continuous ventilation along the entire roof peak and work with natural convection. They\'re also less visible than box vents or turbines. However, some situations may benefit from powered ventilators. We assess your specific needs and recommend the best solution.',
   },
 ];
@@ -241,7 +241,6 @@ export default function RidgeVentInstallationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -270,7 +269,7 @@ export default function RidgeVentInstallationCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now provides professional ridge vent and attic ventilation services
               throughout Charlotte. Proper ventilation protects your roof, reduces energy costs,
-              and prevents moisture damage. Get a free ventilation assessment today.
+  and prevents moisture damage. Get a free ventilation assessment today.
             </p>
 
             {/* CTA Buttons */}

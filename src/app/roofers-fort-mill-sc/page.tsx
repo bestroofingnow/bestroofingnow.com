@@ -23,7 +23,6 @@ import { CTASection } from '@/components/sections/CTASection';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -54,16 +53,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Fort Mill SC | Top Rated Roofing Company | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated roofers serving Fort Mill SC and York County. Veteran-owned with 500+ roofs installed. Licensed, insured. Free estimates!',
-    url: `${SITE_CONFIG.url}/roofers-fort-mill-sc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-fort-mill-sc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Top rated roofers Fort Mill SC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Top rated roofers Fort Mill SC - Best Roofing Now team',
       },
     ],
   },
@@ -73,39 +72,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Fort Mill homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Fort Mill homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Fort Mill businesses and commercial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Fort Mill businesses and commercial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in York County.',
-    href: '/roof-repair-fort-mill-sc',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in York County.',
+  href: '/roof-repair-fort-mill-sc',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/roof-replacement-fort-mill-sc',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/roof-replacement-fort-mill-sc',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Fort Mill homeowners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Fort Mill homeowners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for York County.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for York County.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -113,33 +112,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers in Fort Mill and Charlotte.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers in Fort Mill and Charlotte.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed roofing contractor with comprehensive liability insurance for SC work.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed roofing contractor with comprehensive liability insurance for SC work.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Fort Mill residents need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Fort Mill residents need us most.',
   },
 ];
 
@@ -163,35 +162,35 @@ const fortMillAreas = [
 const faqs = [
   {
     question: 'Who are the best roofers in Fort Mill SC?',
-    answer: `Best Roofing Now is one of the top-rated roofers serving Fort Mill SC with a perfect 5.0 Google rating, BBB A+ accreditation, and over ${SITE_CONFIG.googleReviewCount} reviews. We are veteran-owned, licensed, insured, and certified by major manufacturers including CertainTeed, GAF, and Owens Corning. Our team has installed 500+ roofs throughout the Charlotte metro area including Fort Mill and York County.`,
+  answer: `Best Roofing Now is one of the top-rated roofers serving Fort Mill SC with a perfect 5.0 Google rating, BBB A+ accreditation, and over ${SITE_CONFIG.googleReviewCount} reviews. We are veteran-owned, licensed, insured, and certified by major manufacturers including CertainTeed, GAF, and Owens Corning. Our team has installed 500+ roofs throughout the Charlotte metro area including Fort Mill and York County.`,
   },
   {
     question: 'How much do roofers charge in Fort Mill SC?',
-    answer: 'Roofing costs in Fort Mill SC vary based on the type of work needed. Roof repairs typically range from $200-$1,500, while complete roof replacements range from $8,000-$25,000 for most homes depending on size, pitch, and material choice. We provide free, detailed estimates with transparent pricing and no hidden fees.',
+  answer: 'Roofing costs in Fort Mill SC vary based on the type of work needed. Roof repairs typically range from $200-$1,500, while complete roof replacements range from $8,000-$25,000 for most homes depending on size, pitch, and material choice. We provide free, detailed estimates with transparent pricing and no hidden fees.',
   },
   {
     question: 'Are you licensed roofers in South Carolina?',
-    answer: 'Yes, Best Roofing Now is properly licensed and insured to perform roofing work in South Carolina including Fort Mill, Tega Cay, and all of York County. We carry comprehensive general liability insurance and workers compensation coverage, protecting you from any liability during your roofing project.',
+  answer: 'Yes, Best Roofing Now is properly licensed and insured to perform roofing work in South Carolina including Fort Mill, Tega Cay, and all of York County. We carry comprehensive general liability insurance and workers compensation coverage, protecting you from any liability during your roofing project.',
   },
   {
     question: 'Do Fort Mill roofers offer free estimates?',
-    answer: 'Yes! Best Roofing Now offers completely free roof inspections and estimates throughout Fort Mill SC and York County. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal. There is absolutely no obligation to hire us after the inspection.',
+  answer: 'Yes! Best Roofing Now offers completely free roof inspections and estimates throughout Fort Mill SC and York County. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal. There is absolutely no obligation to hire us after the inspection.',
   },
   {
     question: 'How quickly can Fort Mill roofers repair my roof?',
-    answer: 'Most routine roof repairs in Fort Mill are completed the same day or within 24-48 hours. For emergencies like active leaks or storm damage, we offer 24/7 service and can often respond within 2-4 hours. Complete roof replacements typically take 1-3 days depending on roof size and complexity.',
+  answer: 'Most routine roof repairs in Fort Mill are completed the same day or within 24-48 hours. For emergencies like active leaks or storm damage, we offer 24/7 service and can often respond within 2-4 hours. Complete roof replacements typically take 1-3 days depending on roof size and complexity.',
   },
   {
     question: 'Do you help with insurance claims in Fort Mill?',
-    answer: 'Absolutely. We have extensive experience helping Fort Mill homeowners navigate insurance claims for storm damage and other covered repairs. We provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Fort Mill roofs qualify for insurance coverage after hail storms, wind damage, and other weather events.',
+  answer: 'Absolutely. We have extensive experience helping Fort Mill homeowners navigate insurance claims for storm damage and other covered repairs. We provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Fort Mill roofs qualify for insurance coverage after hail storms, wind damage, and other weather events.',
   },
   {
     question: 'What roofing materials do Fort Mill roofers recommend?',
-    answer: 'For Fort Mill homes, we typically recommend architectural asphalt shingles for their excellent balance of durability, affordability, and style. Popular choices include GAF Timberline HDZ, CertainTeed Landmark Pro, and Owens Corning Duration. Metal roofing is also an excellent option for homeowners seeking maximum longevity (40-70 years). We help you choose the best material based on your home, budget, and goals.',
+  answer: 'For Fort Mill homes, we typically recommend architectural asphalt shingles for their excellent balance of durability, affordability, and style. Popular choices include GAF Timberline HDZ, CertainTeed Landmark Pro, and Owens Corning Duration. Metal roofing is also an excellent option for homeowners seeking maximum longevity (40-70 years). We help you choose the best material based on your home, budget, and goals.',
   },
   {
     question: 'What warranty do Fort Mill roofers offer?',
-    answer: 'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As CertainTeed, GAF, and Owens Corning certified installers, we can offer enhanced warranties like GAF Golden Pledge (50 years material + 25 years workmanship) and CertainTeed SureStart Plus.',
+  answer: 'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As CertainTeed, GAF, and Owens Corning certified installers, we can offer enhanced warranties like GAF Golden Pledge (50 years material + 25 years workmanship) and CertainTeed SureStart Plus.',
   },
 ];
 
@@ -205,7 +204,6 @@ export default function RoofersFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-fort-mill-sc`}
         pageName="Roofers Fort Mill SC"

@@ -270,50 +270,28 @@ interface LocationSchemaProps {
 }
 
 export function LocationSchema({ location }: LocationSchemaProps) {
+  // Location-specific schema that references the global RoofingContractor via @id
+  // instead of duplicating the full business entity (address, hours, rating, etc.)
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    '@id': `${SITE_CONFIG.url}/locations/${location.slug}/#localbusiness`,
-    name: `${SITE_CONFIG.name} - ${location.city}, ${location.state}`,
+    '@type': 'Service',
+    '@id': `${SITE_CONFIG.url}/locations/${location.slug}/#location-service`,
+    name: `Roofing Services in ${location.city}, ${location.state}`,
     description: `Professional roofing services in ${location.city}, ${location.state}. Expert roof repair, replacement, and installation. BBB A+ rated, 5-star reviews. Free inspections and estimates.`,
     url: `${SITE_CONFIG.url}/locations/${location.slug}`,
-    telephone: SITE_CONFIG.phone,
-    email: SITE_CONFIG.email,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: `${SITE_CONFIG.address.street} ${SITE_CONFIG.address.suite}`,
-      addressLocality: SITE_CONFIG.address.city,
-      addressRegion: SITE_CONFIG.address.state,
-      postalCode: SITE_CONFIG.address.zip,
-      addressCountry: 'US',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: SITE_CONFIG.geo.latitude,
-      longitude: SITE_CONFIG.geo.longitude,
-    },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '00:00',
-      closes: '23:59',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: SITE_CONFIG.googleRating,
-      reviewCount: SITE_CONFIG.googleReviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    priceRange: '$$',
-    paymentAccepted: ['Cash', 'Credit Card', 'Check', 'Financing'],
-    currenciesAccepted: 'USD',
-    parentOrganization: {
-      ...getRoofingContractorIdentity(),
+    serviceType: 'Roofing',
+    // Reference the global business entity defined in LocalBusinessSchema
+    provider: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
     },
     areaServed: {
       '@type': 'City',
-      name: `${location.city}, ${location.state}`,
+      name: location.city,
+      containedInPlace: {
+        '@type': 'State',
+        name: location.state === 'NC' ? 'North Carolina' : 'South Carolina',
+      },
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -325,7 +303,6 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Roof Repair',
             description: `Professional roof repair services in ${location.city}`,
-            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -334,7 +311,6 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Roof Replacement',
             description: `Complete roof replacement in ${location.city}`,
-            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -343,7 +319,6 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Storm Damage Repair',
             description: `Emergency storm damage repair in ${location.city}`,
-            provider: getRoofingContractorIdentity(),
           },
         },
         {
@@ -352,19 +327,10 @@ export function LocationSchema({ location }: LocationSchemaProps) {
             '@type': 'Service',
             name: 'Free Roof Inspection',
             description: `Complimentary roof inspections in ${location.city}`,
-            provider: getRoofingContractorIdentity(),
           },
         },
       ],
     },
-    knowsAbout: [
-      'Roof Repair',
-      'Roof Replacement',
-      'Storm Damage',
-      'Insurance Claims',
-      'Residential Roofing',
-      'Commercial Roofing',
-    ],
   };
 
   return (
@@ -1099,7 +1065,7 @@ export function VoiceSearchFAQSchema() {
       acceptedAnswer: {
         '@type': 'Answer',
         text: faq.answer,
-        dateCreated: '2025-01-01',
+        dateCreated: '2026-01-01',
         author: {
           '@type': 'Organization',
           '@id': `${SITE_CONFIG.url}/#organization`,
@@ -1135,7 +1101,7 @@ export function QAPageSchema({ question, answer, datePublished }: QAPageSchemaPr
       name: question,
       text: question,
       answerCount: 1,
-      dateCreated: datePublished || '2025-01-01',
+      dateCreated: datePublished || '2026-01-01',
       author: {
         '@type': 'Organization',
         '@id': `${SITE_CONFIG.url}/#organization`,
@@ -1143,7 +1109,7 @@ export function QAPageSchema({ question, answer, datePublished }: QAPageSchemaPr
       acceptedAnswer: {
         '@type': 'Answer',
         text: answer,
-        dateCreated: datePublished || '2025-01-01',
+        dateCreated: datePublished || '2026-01-01',
         upvoteCount: 25,
         author: {
           '@type': 'Organization',
@@ -2306,33 +2272,10 @@ export function ServiceAreaPageSchema({ city, state, county, distance, slug }: S
     description: `Professional roofing services in ${city}, ${state}${county ? ` (${county} County)` : ''} provided by ${SITE_CONFIG.name}. Located ${distance} miles from our Charlotte headquarters, we offer fast response times and expert roofing solutions for the ${city} area.`,
     url: `${SITE_CONFIG.url}/locations/${slug}`,
     serviceType: 'Roofing Services',
+    // Reference the global business entity by @id (full details in LocalBusinessSchema)
     provider: {
       '@type': 'RoofingContractor',
       '@id': `${SITE_CONFIG.url}/#organization`,
-      name: SITE_CONFIG.name,
-      telephone: SITE_CONFIG.phone,
-      email: SITE_CONFIG.email,
-      url: SITE_CONFIG.url,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: `${SITE_CONFIG.address.street} ${SITE_CONFIG.address.suite}`,
-        addressLocality: SITE_CONFIG.address.city,
-        addressRegion: SITE_CONFIG.address.state,
-        postalCode: SITE_CONFIG.address.zip,
-        addressCountry: 'US',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: SITE_CONFIG.geo.latitude,
-        longitude: SITE_CONFIG.geo.longitude,
-      },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: SITE_CONFIG.googleRating,
-        reviewCount: SITE_CONFIG.googleReviewCount,
-        bestRating: 5,
-        worstRating: 1,
-      },
     },
     areaServed: {
       '@type': 'City',
@@ -2426,66 +2369,22 @@ export function ServiceAreaPageSchema({ city, state, county, distance, slug }: S
 // ============================================
 
 export function PrimaryLocationSchema() {
+  // Location-specific schema for Charlotte NC that references the global
+  // RoofingContractor via @id instead of duplicating all business details.
+  // The full business entity (address, hours, rating, credentials, etc.)
+  // is already rendered once via LocalBusinessSchema in layout.tsx.
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    '@id': `${SITE_CONFIG.url}/locations/charlotte-nc/#localbusiness`,
-    name: SITE_CONFIG.name,
-    legalName: SITE_CONFIG.legalName,
+    '@type': 'Service',
+    '@id': `${SITE_CONFIG.url}/locations/charlotte-nc/#location-service`,
+    name: `Roofing Services in Charlotte, NC`,
     description: `${SITE_CONFIG.name} is Charlotte's top-rated roofing contractor. Family-owned, veteran-operated with 500+ roofs installed. BBB A+ accredited with a perfect 5-star Google rating.`,
     url: `${SITE_CONFIG.url}/locations/charlotte-nc`,
-    telephone: SITE_CONFIG.phone,
-    email: SITE_CONFIG.email,
-    foundingDate: SITE_CONFIG.founded,
-    logo: SCHEMA_LOGO,
-    image: [
-      SCHEMA_LOGO,
-      SCHEMA_HERO,
-    ],
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: `${SITE_CONFIG.address.street} ${SITE_CONFIG.address.suite}`,
-      addressLocality: SITE_CONFIG.address.city,
-      addressRegion: SITE_CONFIG.address.state,
-      postalCode: SITE_CONFIG.address.zip,
-      addressCountry: 'US',
+    serviceType: 'Roofing',
+    provider: {
+      '@type': 'RoofingContractor',
+      '@id': `${SITE_CONFIG.url}/#organization`,
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: SITE_CONFIG.geo.latitude,
-      longitude: SITE_CONFIG.geo.longitude,
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '07:00',
-        closes: '19:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Saturday'],
-        opens: '08:00',
-        closes: '17:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Sunday'],
-        opens: '09:00',
-        closes: '16:00',
-        description: 'Emergency calls accepted 24/7',
-      },
-    ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: SITE_CONFIG.googleRating,
-      reviewCount: SITE_CONFIG.googleReviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    priceRange: '$$',
-    paymentAccepted: ['Cash', 'Credit Card', 'Check', 'Financing'],
-    currenciesAccepted: 'USD',
     areaServed: {
       '@type': 'GeoCircle',
       geoMidpoint: {
@@ -2497,39 +2396,16 @@ export function PrimaryLocationSchema() {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Roofing Services',
+      name: 'Roofing Services in Charlotte',
       itemListElement: SERVICES.map((service) => ({
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
           name: service.title,
           description: service.description,
-          provider: getRoofingContractorIdentity(),
         },
       })),
     },
-    sameAs: [
-      ...Object.values(SITE_CONFIG.social),
-      SITE_CONFIG.externalProfiles.googleMaps,
-      SITE_CONFIG.externalProfiles.bbb,
-      SITE_CONFIG.externalProfiles.nextdoor,
-    ].filter(Boolean),
-    slogan: SITE_CONFIG.tagline,
-    knowsAbout: [
-      'Roof Repair',
-      'Roof Replacement',
-      'Storm Damage Repair',
-      'Hail Damage Repair',
-      'Insurance Claims',
-      'Emergency Roofing',
-      'Residential Roofing',
-      'Commercial Roofing',
-    ],
-    hasCredential: SITE_CONFIG.certifications.map(cert => ({
-      '@type': 'EducationalOccupationalCredential',
-      credentialCategory: cert,
-    })),
-    additionalType: 'https://schema.org/VeteranOwned',
   };
 
   return (

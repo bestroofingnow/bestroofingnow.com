@@ -48,37 +48,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'What to Do When You Find a Roof Leak | Charlotte NC Emergency Guide',
-    description:
+  description:
       'Step-by-step guide for Charlotte homeowners dealing with a roof leak. Immediate actions, damage prevention, and when to call for emergency repair.',
-    url: `${SITE_CONFIG.url}/what-to-do-roof-leak-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/what-to-do-roof-leak-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const leakFAQs = [
   {
     question: 'I just found water dripping from my ceiling. What should I do first?',
-    answer:
+  answer:
       'First, place a bucket or container under the drip to catch water. Move furniture and electronics away from the area. If the ceiling is bulging with water, carefully puncture it with a screwdriver to release water into a bucket - this prevents ceiling collapse. Then call a roofer for emergency service.',
   },
   {
     question: 'Should I go on the roof to find and fix the leak myself?',
-    answer:
+  answer:
       'No, never go on your roof during or after rain - it\'s extremely dangerous when wet. The leak source is also often not directly above where water appears inside. Call a professional who has safety equipment and experience locating leaks.',
   },
   {
     question: 'Will my homeowners insurance cover the roof leak?',
-    answer:
+  answer:
       'It depends on the cause. Insurance typically covers sudden damage from storms, fallen trees, or hail. It usually doesn\'t cover leaks from normal wear, lack of maintenance, or gradual deterioration. Document everything with photos before any repairs.',
   },
   {
     question: 'How quickly can I get emergency roof repair in Charlotte?',
-    answer:
+  answer:
       'Best Roofing Now offers emergency tarping and temporary repairs within 1-4 hours for active leaks in the Charlotte area. We prioritize emergencies to prevent further water damage to your home. Call 704-605-6047 for immediate assistance.',
   },
   {
     question: 'Can a small roof leak cause major damage?',
-    answer:
+  answer:
       'Yes, even small leaks can cause significant damage over time including mold growth (within 24-48 hours), rotted decking and rafters, damaged insulation, ruined drywall, and electrical hazards. Addressing leaks quickly is essential.',
   },
 ];
@@ -86,106 +86,106 @@ const leakFAQs = [
 const immediateSteps = [
   {
     step: 1,
-    title: 'Contain the Water',
-    icon: Droplets,
-    actions: [
+  title: 'Contain the Water',
+  icon: Droplets,
+  actions: [
       'Place buckets, pots, or containers under drips',
       'Use towels to absorb water on floors',
       'If water is pooling on ceiling, puncture it carefully to drain into a bucket',
     ],
-    warning: null,
+  warning: null,
   },
   {
     step: 2,
-    title: 'Protect Your Belongings',
-    icon: Home,
-    actions: [
+  title: 'Protect Your Belongings',
+  icon: Home,
+  actions: [
       'Move furniture away from the leak area',
       'Remove electronics and valuables',
       'Roll up rugs and carpets',
       'Cover items you can\'t move with plastic sheets',
     ],
-    warning: null,
+  warning: null,
   },
   {
     step: 3,
-    title: 'Document Everything',
-    icon: Camera,
-    actions: [
+  title: 'Document Everything',
+  icon: Camera,
+  actions: [
       'Take photos and videos of the leak and damage',
       'Document water stains, wet areas, and damaged items',
       'Note the date, time, and weather conditions',
       'Keep all receipts for emergency supplies',
     ],
-    warning: 'This documentation is critical for insurance claims',
+  warning: 'This documentation is critical for insurance claims',
   },
   {
     step: 4,
-    title: 'Call for Emergency Help',
-    icon: Phone,
-    actions: [
+  title: 'Call for Emergency Help',
+  icon: Phone,
+  actions: [
       'Call a professional roofer for emergency service',
       'Describe the severity and location of the leak',
       'Ask about emergency tarping services',
       'Don\'t wait - water damage compounds quickly',
     ],
-    warning: null,
+  warning: null,
   },
 ];
 
 const doNotList = [
   {
     action: 'Don\'t go on your roof',
-    reason: 'Wet roofs are extremely slippery and dangerous. Let professionals handle it.',
+  reason: 'Wet roofs are extremely slippery and dangerous. Let professionals handle it.',
   },
   {
     action: 'Don\'t ignore "small" leaks',
-    reason: 'Small leaks become big problems. Mold can start growing within 24-48 hours.',
+  reason: 'Small leaks become big problems. Mold can start growing within 24-48 hours.',
   },
   {
     action: 'Don\'t use roofing tar as a permanent fix',
-    reason: 'It\'s a temporary solution at best and can make proper repairs more difficult.',
+  reason: 'It\'s a temporary solution at best and can make proper repairs more difficult.',
   },
   {
     action: 'Don\'t wait for the rain to stop',
-    reason: 'Call for help immediately. Emergency tarping can be done in rain.',
+  reason: 'Call for help immediately. Emergency tarping can be done in rain.',
   },
   {
     action: 'Don\'t throw away damaged items yet',
-    reason: 'Insurance adjusters may need to see damage before you dispose of items.',
+  reason: 'Insurance adjusters may need to see damage before you dispose of items.',
   },
 ];
 
 const commonLeakSources = [
   {
     source: 'Damaged or Missing Shingles',
-    description: 'Wind, hail, or age can damage shingles allowing water entry.',
-    signs: 'Visible damage from ground, granules in gutters',
+  description: 'Wind, hail, or age can damage shingles allowing water entry.',
+  signs: 'Visible damage from ground, granules in gutters',
   },
   {
     source: 'Failed Flashing',
-    description: 'Metal flashing around chimneys, vents, and skylights can corrode or separate.',
-    signs: 'Leaks near chimneys or vents, rust stains',
+  description: 'Metal flashing around chimneys, vents, and skylights can corrode or separate.',
+  signs: 'Leaks near chimneys or vents, rust stains',
   },
   {
     source: 'Clogged Gutters',
-    description: 'Backed-up water can seep under shingles and into the roof deck.',
-    signs: 'Water stains on fascia, overflowing gutters',
+  description: 'Backed-up water can seep under shingles and into the roof deck.',
+  signs: 'Water stains on fascia, overflowing gutters',
   },
   {
     source: 'Ice Dams',
-    description: 'Ice buildup at roof edges forces water under shingles.',
-    signs: 'Icicles at roofline, leaks during/after cold weather',
+  description: 'Ice buildup at roof edges forces water under shingles.',
+  signs: 'Icicles at roofline, leaks during/after cold weather',
   },
   {
     source: 'Pipe Boot Failure',
-    description: 'Rubber boots around plumbing vents crack with age and sun exposure.',
-    signs: 'Leaks in bathroom or kitchen areas',
+  description: 'Rubber boots around plumbing vents crack with age and sun exposure.',
+  signs: 'Leaks in bathroom or kitchen areas',
   },
   {
     source: 'Roof Valley Issues',
-    description: 'Valleys where two roof planes meet are high-stress, high-water-flow areas.',
-    signs: 'Leaks after heavy rain, visible debris in valleys',
+  description: 'Valleys where two roof planes meet are high-stress, high-water-flow areas.',
+  signs: 'Leaks after heavy rain, visible debris in valleys',
   },
 ];
 
@@ -213,10 +213,10 @@ export default function WhatToDoRoofLeakPage() {
       <ArticleSchema
         post={{
           title: 'What to Do When You Find a Roof Leak in Charlotte NC',
-          description: 'Emergency step-by-step guide for handling roof leaks.',
-          slug: 'what-to-do-roof-leak-charlotte-nc',
-          datePublished: '2026-01-27',
-          dateModified: '2026-01-27',
+  description: 'Emergency step-by-step guide for handling roof leaks.',
+  slug: 'what-to-do-roof-leak-charlotte-nc',
+  datePublished: '2026-01-27',
+  dateModified: '2026-01-27',
         }}
       />
       <FAQSchema faqs={leakFAQs} />

@@ -29,7 +29,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -63,16 +62,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Charlotte NC | Fast & Affordable | Best Roofing Now',
-    description:
+  description:
       'Professional roof repair services in Charlotte NC. 24/7 emergency response, leak repair, storm damage, and shingle replacement. BBB A+ rated. Free estimates.',
-    url: `${SITE_CONFIG.url}/roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof repair Charlotte NC - Best Roofing Now technician fixing roof',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof repair Charlotte NC - Best Roofing Now technician fixing roof',
       },
     ],
   },
@@ -82,39 +81,39 @@ export const metadata: Metadata = {
 const repairTypes = [
   {
     icon: Droplets,
-    title: 'Leak Repair',
-    description: 'Fast, permanent solutions for roof leaks. We locate the source of water intrusion and fix it right the first time.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Fast, permanent solutions for roof leaks. We locate the source of water intrusion and fix it right the first time.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wind,
-    title: 'Shingle Replacement',
-    description: 'Missing, cracked, or curling shingles replaced with perfect color matches and proper installation.',
-    href: '/services/roof-repair',
+  title: 'Shingle Replacement',
+  description: 'Missing, cracked, or curling shingles replaced with perfect color matches and proper installation.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repair',
-    description: 'Critical repairs to flashing around chimneys, vents, skylights, and valleys to prevent water damage.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Critical repairs to flashing around chimneys, vents, skylights, and valleys to prevent water damage.',
+  href: '/services/roof-repair',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency repairs for hail, wind, and storm damage. Insurance claim assistance included.',
-    href: '/storm-damage-roof-repair-charlotte',
+  title: 'Storm Damage Repair',
+  description: 'Emergency repairs for hail, wind, and storm damage. Insurance claim assistance included.',
+  href: '/storm-damage-roof-repair-charlotte',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency response for urgent roof problems. Temporary tarping and permanent repairs available.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency response for urgent roof problems. Temporary tarping and permanent repairs available.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Zap,
-    title: 'Flat Roof Repair',
-    description: 'Specialized repairs for TPO, EPDM, and modified bitumen flat roof systems on commercial buildings.',
-    href: '/flat-roof-repair-charlotte-nc',
+  title: 'Flat Roof Repair',
+  description: 'Specialized repairs for TPO, EPDM, and modified bitumen flat roof systems on commercial buildings.',
+  href: '/flat-roof-repair-charlotte-nc',
   },
 ];
 
@@ -122,33 +121,33 @@ const repairTypes = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Roof emergencies do not wait. Our crews respond quickly day or night to protect your home.',
+  title: '24/7 Emergency Service',
+  description: 'Roof emergencies do not wait. Our crews respond quickly day or night to protect your home.',
   },
   {
     icon: Star,
-    title: '5-Star Rated Repairs',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews for quality roof repair work in Charlotte.`,
+  title: '5-Star Rated Repairs',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews for quality roof repair work in Charlotte.`,
   },
   {
     icon: ThumbsUp,
-    title: 'Fix It Right the First Time',
-    description: 'Our experienced technicians diagnose problems accurately and provide lasting repairs.',
+  title: 'Fix It Right the First Time',
+  description: 'Our experienced technicians diagnose problems accurately and provide lasting repairs.',
   },
   {
     icon: DollarSign,
-    title: 'Affordable Pricing',
-    description: 'Transparent, competitive pricing with no hidden fees. We work with your budget.',
+  title: 'Affordable Pricing',
+  description: 'Transparent, competitive pricing with no hidden fees. We work with your budget.',
   },
   {
     icon: FileText,
-    title: 'Insurance Claim Help',
-    description: 'We assist with documentation and work directly with insurance adjusters.',
+  title: 'Insurance Claim Help',
+  description: 'We assist with documentation and work directly with insurance adjusters.',
   },
   {
     icon: Shield,
-    title: 'Warranty Protection',
-    description: 'All repairs backed by our workmanship warranty and manufacturer guarantees.',
+  title: 'Warranty Protection',
+  description: 'All repairs backed by our workmanship warranty and manufacturer guarantees.',
   },
 ];
 
@@ -196,42 +195,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does roof repair cost in Charlotte NC?',
-    answer:
+  answer:
       'Roof repair costs in Charlotte typically range from $200-$1,500 for minor repairs like fixing a few shingles or small leaks. Moderate repairs such as flashing replacement or larger leak repairs run $500-$3,000. More extensive repairs can cost $2,000-$5,000. We provide free inspections and detailed estimates so you know exactly what to expect before any work begins.',
   },
   {
     question: 'How quickly can you respond to a roof emergency in Charlotte?',
-    answer:
+  answer:
       'We offer 24/7 emergency roof repair service with typical response times of 1-4 hours in the Charlotte area. Our emergency crews can install temporary tarps to prevent further water damage and then schedule permanent repairs. Call us immediately if you have an active leak or storm damage.',
   },
   {
     question: 'Will my homeowners insurance cover roof repairs?',
-    answer:
+  answer:
       'Many roof repairs caused by storms, hail, wind, or fallen trees are covered by homeowners insurance. We help Charlotte homeowners navigate the claims process by providing thorough documentation, detailed repair estimates, and meeting with adjusters on your behalf. Routine wear and maintenance repairs are typically not covered.',
   },
   {
     question: 'How do I know if I need a roof repair or full replacement?',
-    answer:
+  answer:
       'We recommend repair when damage is localized to a small area (less than 30% of roof), your roof is under 15 years old, and structural integrity is sound. Full replacement may be better if damage is widespread, your roof is near end of life, or repair costs approach 50% of replacement cost. Our free inspection will give you an honest assessment.',
   },
   {
     question: 'What are signs I need roof repair in Charlotte?',
-    answer:
+  answer:
       'Common warning signs include: water stains on ceilings or walls, missing or damaged shingles visible from the ground, granules in gutters, light visible through roof boards in attic, sagging roof sections, higher than normal energy bills, and mold or mildew in attic. If you notice any of these, schedule a free inspection promptly.',
   },
   {
     question: 'Do you offer warranties on roof repairs?',
-    answer:
+  answer:
       'Yes, all our roof repairs are backed by our workmanship warranty, and we use manufacturer-certified materials that carry their own guarantees. For shingle repairs, we ensure color matching and proper installation techniques. Ask about our warranty details during your free estimate.',
   },
   {
     question: 'Can you repair my roof in bad weather?',
-    answer:
+  answer:
       'For emergencies, our crews can install temporary tarps and protective coverings in most weather conditions to prevent further damage. Permanent repairs require dry conditions for proper material adhesion and safety. We monitor weather forecasts and schedule repairs accordingly, prioritizing your roof as soon as conditions allow.',
   },
   {
     question: 'How long does a typical roof repair take?',
-    answer:
+  answer:
       'Most minor repairs (shingle replacement, small leak fixes) can be completed in 1-4 hours. Moderate repairs like flashing replacement or larger sections take 4-8 hours or a full day. Emergency tarping is typically done within hours of arrival. We work efficiently while maintaining quality standards.',
   },
 ];
@@ -248,7 +247,6 @@ export default function RoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
         pageName="Roof Repair Charlotte NC"
@@ -258,23 +256,23 @@ export default function RoofRepairCharlotteNCPage() {
         faqs={[
           {
             question: 'How much does roof repair cost in Charlotte NC?',
-            answer: 'Roof repair in Charlotte NC costs $200-$1,500 for minor repairs like fixing shingles or small leaks, and $500-$5,000 for moderate to extensive repairs. Best Roofing Now provides free inspections and transparent estimates with no hidden fees. Most storm damage repairs are covered by insurance. Call (704) 605-6047 for a free estimate.',
-            speakableAnswer: 'Roof repair in Charlotte costs $200 to $1,500 for minor repairs, up to $5,000 for extensive work. Best Roofing Now offers free estimates. Call 704-605-6047.',
+  answer: 'Roof repair in Charlotte NC costs $200-$1,500 for minor repairs like fixing shingles or small leaks, and $500-$5,000 for moderate to extensive repairs. Best Roofing Now provides free inspections and transparent estimates with no hidden fees. Most storm damage repairs are covered by insurance. Call (704) 605-6047 for a free estimate.',
+  speakableAnswer: 'Roof repair in Charlotte costs $200 to $1,500 for minor repairs, up to $5,000 for extensive work. Best Roofing Now offers free estimates. Call 704-605-6047.',
           },
           {
             question: 'Who does roof repair in Charlotte NC?',
-            answer: 'Best Roofing Now is Charlotte\'s top-rated roof repair company with 5-star Google reviews and BBB A+ accreditation. This veteran-owned company provides 24/7 emergency service, same-day repairs, and full insurance claim assistance. They repair all roof types including shingles, metal, flat roofs, and tile.',
-            speakableAnswer: 'Best Roofing Now is Charlotte\'s top-rated roof repair company. 5-star rated, veteran-owned, with 24/7 emergency service. Call 704-605-6047.',
+  answer: 'Best Roofing Now is Charlotte\'s top-rated roof repair company with 5-star Google reviews and BBB A+ accreditation. This veteran-owned company provides 24/7 emergency service, same-day repairs, and full insurance claim assistance. They repair all roof types including shingles, metal, flat roofs, and tile.',
+  speakableAnswer: 'Best Roofing Now is Charlotte\'s top-rated roof repair company. 5-star rated, veteran-owned, with 24/7 emergency service. Call 704-605-6047.',
           },
           {
             question: 'How fast can you fix a roof leak in Charlotte?',
-            answer: 'Best Roofing Now offers same-day and 24/7 emergency roof leak repair in Charlotte NC. For active leaks, they typically respond within 1-4 hours. Non-emergency repairs are usually scheduled within 24-48 hours. Emergency tarping is available to prevent further water damage.',
-            speakableAnswer: 'Best Roofing Now responds to Charlotte roof leaks within 1-4 hours for emergencies. Same-day repairs available. Call 704-605-6047.',
+  answer: 'Best Roofing Now offers same-day and 24/7 emergency roof leak repair in Charlotte NC. For active leaks, they typically respond within 1-4 hours. Non-emergency repairs are usually scheduled within 24-48 hours. Emergency tarping is available to prevent further water damage.',
+  speakableAnswer: 'Best Roofing Now responds to Charlotte roof leaks within 1-4 hours for emergencies. Same-day repairs available. Call 704-605-6047.',
           },
           {
             question: 'Does insurance cover roof repair in Charlotte NC?',
-            answer: 'Yes, most homeowners insurance covers roof repairs caused by storms, hail, wind, and fallen trees in Charlotte NC. Best Roofing Now helps with insurance claims by documenting damage, meeting with adjusters, and advocating for fair settlements. You typically pay only your deductible.',
-            speakableAnswer: 'Yes, most insurance covers storm-related roof repairs in Charlotte. Best Roofing Now helps with claims. You typically pay only your deductible.',
+  answer: 'Yes, most homeowners insurance covers roof repairs caused by storms, hail, wind, and fallen trees in Charlotte NC. Best Roofing Now helps with insurance claims by documenting damage, meeting with adjusters, and advocating for fair settlements. You typically pay only your deductible.',
+  speakableAnswer: 'Yes, most insurance covers storm-related roof repairs in Charlotte. Best Roofing Now helps with claims. You typically pay only your deductible.',
           },
         ]}
       />
@@ -400,7 +398,7 @@ export default function RoofRepairCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When you need roof repair in Charlotte NC, you want a company that responds fast,
-                diagnoses accurately, and repairs correctly. Best Roofing Now has earned the trust
+  diagnoses accurately, and repairs correctly. Best Roofing Now has earned the trust
                 of hundreds of Charlotte homeowners with our commitment to quality and customer service.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
@@ -497,23 +495,23 @@ export default function RoofRepairCharlotteNCPage() {
             {[
               {
                 step: '1',
-                title: 'Free Inspection',
-                description: 'We thoroughly inspect your roof, identify all problems, and document findings with photos.',
+  title: 'Free Inspection',
+  description: 'We thoroughly inspect your roof, identify all problems, and document findings with photos.',
               },
               {
                 step: '2',
-                title: 'Detailed Estimate',
-                description: 'You receive a clear, written estimate explaining repairs needed and transparent pricing.',
+  title: 'Detailed Estimate',
+  description: 'You receive a clear, written estimate explaining repairs needed and transparent pricing.',
               },
               {
                 step: '3',
-                title: 'Expert Repair',
-                description: 'Our certified technicians complete repairs using quality materials and proven techniques.',
+  title: 'Expert Repair',
+  description: 'Our certified technicians complete repairs using quality materials and proven techniques.',
               },
               {
                 step: '4',
-                title: 'Final Walkthrough',
-                description: 'We review completed work with you, clean up thoroughly, and explain your warranty.',
+  title: 'Final Walkthrough',
+  description: 'We review completed work with you, clean up thoroughly, and explain your warranty.',
               },
             ].map((item) => (
               <div key={item.step} className="text-center">

@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Roofing Projects Gallery | ${SITE_CONFIG.name}`,
-    description: 'Explore our portfolio of completed roofing projects in Charlotte and Lake Norman.',
-    url: `${SITE_CONFIG.url}/projects`,
+  description: 'Explore our portfolio of completed roofing projects in Charlotte and Lake Norman.',
+  url: `${SITE_CONFIG.url}/projects`,
   },
 };
 
@@ -37,8 +37,8 @@ async function getProjects() {
           .filter((p: any) => p.photos && p.photos.length > 0)
           .sort((a: any, b: any) => new Date(b.completedDate).getTime() - new Date(a.completedDate).getTime())
           .slice(0, 24),
-        total: data.projects.filter((p: any) => p.photos && p.photos.length > 0).length,
-        source: 'pmi-export',
+  total: data.projects.filter((p: any) => p.photos && p.photos.length > 0).length,
+  source: 'pmi-export',
       };
     }
 
@@ -104,8 +104,8 @@ export default async function ProjectsPage() {
         url={`${SITE_CONFIG.url}/projects`}
         items={projects.slice(0, 20).map((p: any) => ({
           name: `Roofing Project in ${p.city}, ${p.state}`,
-          url: `${SITE_CONFIG.url}/projects/${p.pmiId}`,
-          description: p.product ? `${p.product} installation` : 'Professional roofing project',
+  url: `${SITE_CONFIG.url}/projects/${p.pmiId}`,
+  description: p.product ? `${p.product} installation` : 'Professional roofing project',
         }))}
       />
       <ServiceAreaMapSchema />
@@ -117,18 +117,18 @@ export default async function ProjectsPage() {
         faqs={[
           {
             question: 'How many roofing projects has Best Roofing Now completed in Charlotte?',
-            answer: `Best Roofing Now has completed over ${total}+ verified roofing projects across the Charlotte metro area, Lake Norman, and surrounding communities. Our project gallery showcases real installations with photos from satisfied homeowners.`,
-            speakableAnswer: `Best Roofing Now has completed over ${total}+ roofing projects in the Charlotte area with photos from real installations.`,
+  answer: `Best Roofing Now has completed over ${total}+ verified roofing projects across the Charlotte metro area, Lake Norman, and surrounding communities. Our project gallery showcases real installations with photos from satisfied homeowners.`,
+  speakableAnswer: `Best Roofing Now has completed over ${total}+ roofing projects in the Charlotte area with photos from real installations.`,
           },
           {
             question: 'Can I see photos of roofing projects near me in Charlotte?',
-            answer: 'Yes! Our interactive project map allows you to browse completed roofing projects by city. Simply use the city filter to see projects near you, complete with photos and project details.',
-            speakableAnswer: 'Yes! Use our interactive project map to browse completed roofing projects by city with photos and project details.',
+  answer: 'Yes! Our interactive project map allows you to browse completed roofing projects by city. Simply use the city filter to see projects near you, complete with photos and project details.',
+  speakableAnswer: 'Yes! Use our interactive project map to browse completed roofing projects by city with photos and project details.',
           },
           {
             question: 'What roofing materials does Best Roofing Now install?',
-            answer: 'Best Roofing Now installs GAF Timberline HDZ shingles, CertainTeed Landmark series, Owens Corning Duration, metal roofing, and more. Our project gallery shows examples of each material type installed in Charlotte homes.',
-            speakableAnswer: 'We install GAF, CertainTeed, Owens Corning shingles, and metal roofing. View examples in our project gallery.',
+  answer: 'Best Roofing Now installs GAF Timberline HDZ shingles, CertainTeed Landmark series, Owens Corning Duration, metal roofing, and more. Our project gallery shows examples of each material type installed in Charlotte homes.',
+  speakableAnswer: 'We install GAF, CertainTeed, Owens Corning shingles, and metal roofing. View examples in our project gallery.',
           },
         ]}
         city="Charlotte"
@@ -353,12 +353,12 @@ export default async function ProjectsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: projectsFAQs.map((faq) => ({
+  mainEntity: projectsFAQs.map((faq) => ({
               '@type': 'Question',
-              name: faq.question,
-              acceptedAnswer: {
+  name: faq.question,
+  acceptedAnswer: {
                 '@type': 'Answer',
-                text: faq.answer,
+  text: faq.answer,
               },
             })),
           }),
@@ -378,22 +378,22 @@ export default async function ProjectsPage() {
 const projectsFAQs = [
   {
     question: 'How many roofing projects has Best Roofing Now completed?',
-    answer: 'Best Roofing Now has completed over 230 verified roofing projects across the Charlotte metro area, Lake Norman, and surrounding communities. Our project gallery showcases real installations with photos from satisfied homeowners.',
+  answer: 'Best Roofing Now has completed over 230 verified roofing projects across the Charlotte metro area, Lake Norman, and surrounding communities. Our project gallery showcases real installations with photos from satisfied homeowners.',
   },
   {
     question: 'Can I see photos of roofing projects in my area?',
-    answer: 'Yes! Our interactive project map allows you to browse completed roofing projects by city. Simply use the city filter to see projects near you, complete with photos and project details.',
+  answer: 'Yes! Our interactive project map allows you to browse completed roofing projects by city. Simply use the city filter to see projects near you, complete with photos and project details.',
   },
   {
     question: 'What types of roofing materials do you install?',
-    answer: 'We install a wide variety of roofing materials including GAF Timberline HDZ shingles, CertainTeed Landmark series, Owens Corning Duration, metal roofing, and more. Our project gallery shows examples of each material type.',
+  answer: 'We install a wide variety of roofing materials including GAF Timberline HDZ shingles, CertainTeed Landmark series, Owens Corning Duration, metal roofing, and more. Our project gallery shows examples of each material type.',
   },
   {
     question: 'How can I verify Best Roofing Now\'s work quality?',
-    answer: 'Our project showcase features real photos from actual installations, complete with location data, materials used, and completion dates. We maintain a 5.0 Google rating with over 60 verified reviews.',
+  answer: 'Our project showcase features real photos from actual installations, complete with location data, materials used, and completion dates. We maintain a 5.0 Google rating with over 60 verified reviews.',
   },
   {
     question: 'Do you serve areas outside Charlotte?',
-    answer: 'Yes! We serve the entire Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Concord, Matthews, Gastonia, Rock Hill SC, and many more communities. Browse our project map to see completed work in your neighborhood.',
+  answer: 'Yes! We serve the entire Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Concord, Matthews, Gastonia, Rock Hill SC, and many more communities. Browse our project map to see completed work in your neighborhood.',
   },
 ];

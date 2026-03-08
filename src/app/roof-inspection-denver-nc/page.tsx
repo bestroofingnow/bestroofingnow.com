@@ -22,7 +22,7 @@ import {
   ThumbsUp,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Inspection Denver NC | Free Estimates | Best Roofing Now',
-    description:
+  description:
       'Free comprehensive roof inspections in Denver NC. Detailed reports with photos for Lake Norman western shore homes. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/roof-inspection-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-inspection-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.inspection,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof inspection services in Denver NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof inspection services in Denver NC - Best Roofing Now',
       },
     ],
   },
@@ -71,39 +71,39 @@ export const metadata: Metadata = {
 const inspectionServices = [
   {
     icon: Home,
-    title: 'Pre-Purchase Inspections',
-    description: 'Thorough roof evaluations for buyers considering Denver NC homes, from Trilogy estates to East Lincoln properties.',
-    href: '/services/roof-inspection',
+  title: 'Pre-Purchase Inspections',
+  description: 'Thorough roof evaluations for buyers considering Denver NC homes, from Trilogy estates to East Lincoln properties.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Eye,
-    title: 'Storm Damage Assessment',
-    description: 'Post-storm inspections documenting hail, wind, and debris damage for western shore insurance claims.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Assessment',
+  description: 'Post-storm inspections documenting hail, wind, and debris damage for western shore insurance claims.',
+  href: '/services/storm-damage',
   },
   {
     icon: Clipboard,
-    title: 'Annual Maintenance Inspection',
-    description: 'Yearly check-ups to catch weather wear before it becomes costly, critical for lakefront exposure.',
-    href: '/services/roof-inspection',
+  title: 'Annual Maintenance Inspection',
+  description: 'Yearly check-ups to catch weather wear before it becomes costly, critical for lakefront exposure.',
+  href: '/services/roof-inspection',
   },
   {
     icon: FileText,
-    title: 'Insurance Documentation',
-    description: 'Detailed inspection reports with photo evidence formatted for insurance company requirements.',
-    href: '/services/roof-inspection',
+  title: 'Insurance Documentation',
+  description: 'Detailed inspection reports with photo evidence formatted for insurance company requirements.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Search,
-    title: 'Real Estate Inspections',
-    description: 'Seller inspections that build buyer confidence and prevent closing delays on Denver properties.',
-    href: '/services/roof-inspection',
+  title: 'Real Estate Inspections',
+  description: 'Seller inspections that build buyer confidence and prevent closing delays on Denver properties.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Camera,
-    title: 'Warranty Verification',
-    description: 'Manufacturer warranty inspections to verify proper installation and identify covered defects.',
-    href: '/services/roof-inspection',
+  title: 'Warranty Verification',
+  description: 'Manufacturer warranty inspections to verify proper installation and identify covered defects.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -127,33 +127,33 @@ const inspectionIncludes = [
 const whyChooseUs = [
   {
     icon: ThumbsUp,
-    title: 'Truly Free',
-    description: 'Our inspections are 100% free with no obligation - no pressure, just honest information.',
+  title: 'Truly Free',
+  description: 'Our inspections are 100% free with no obligation - no pressure, just honest information.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman western shore homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman western shore homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and honesty.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and honesty.',
   },
   {
     icon: Users,
-    title: 'Certified Inspectors',
-    description: 'Our inspectors are trained and certified by leading roofing manufacturers.',
+  title: 'Certified Inspectors',
+  description: 'Our inspectors are trained and certified by leading roofing manufacturers.',
   },
   {
     icon: Clock,
-    title: 'Fast Scheduling',
-    description: 'Most Denver NC inspections scheduled within 24-48 hours of your request.',
+  title: 'Fast Scheduling',
+  description: 'Most Denver NC inspections scheduled within 24-48 hours of your request.',
   },
 ];
 
@@ -187,42 +187,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Is the roof inspection really free in Denver NC?',
-    answer:
+  answer:
       'Yes, absolutely. Our roof inspections for Denver NC homeowners are 100% free with no obligation. Whether your home is in Trilogy at Lake Norman, Sailview, or anywhere in the 28037 zip code, we provide honest assessments at no cost. There is no pressure to hire us for any repairs - we simply give you the information you need about your roof\'s condition.',
   },
   {
     question: 'How does Lake Norman western shore weather affect my Denver roof?',
-    answer:
+  answer:
       'Denver\'s position on the western shore means your roof takes the full force of storms moving across Lake Norman. Wind speeds accelerate over open water, and hail arrives without the buffering effect of upwind terrain. Over time, this increased exposure causes faster granule loss on shingles, loosened flashing around vents, and greater wear on ridge caps. Annual inspections help catch these issues before they lead to leaks.',
   },
   {
     question: 'How long does a roof inspection take in Denver NC?',
-    answer:
+  answer:
       'Most residential inspections in Denver take 30-60 minutes depending on roof size, pitch, and complexity. Larger lakefront homes in communities like Pinnacle Shores or Island Point with multiple roof planes may take slightly longer. You\'ll receive your written report with photos within 24-48 hours.',
   },
   {
     question: 'Do you inspect Trilogy at Lake Norman HOA roofs?',
-    answer:
+  answer:
       'Yes, we regularly inspect roofs in Trilogy at Lake Norman and understand the community\'s architectural standards and HOA requirements. Whether you need an annual maintenance check, a pre-sale inspection, or assessment after a storm, we provide reports that meet Trilogy HOA documentation standards. We\'re familiar with the common roofing materials used in the community.',
   },
   {
     question: 'When should Denver NC homeowners get their roof inspected?',
-    answer:
+  answer:
       'We recommend annual inspections for all Denver homes due to the increased storm exposure on the western shore. Additionally, get an inspection after any significant storm with hail or high winds, before buying or selling a home, if your roof is over 15 years old, or if you notice any signs of damage like missing shingles or ceiling stains. Regular inspections save thousands by catching problems early.',
   },
   {
     question: 'Do you provide inspection reports for Denver NC insurance claims?',
-    answer:
+  answer:
       'Yes, we provide comprehensive storm damage inspection reports specifically formatted for insurance claims. Our documentation includes high-resolution photos, measurements, damage descriptions, and estimated repair costs. We can also meet with your insurance adjuster at your Denver property to ensure all damage is properly identified and documented for your Lincoln County claim.',
   },
   {
     question: 'What if you find problems during my Denver NC roof inspection?',
-    answer:
+  answer:
       'If we identify issues, we explain them clearly and provide a written estimate for recommended repairs or replacement. There is never any pressure to act immediately or hire us. Many problems can be addressed with minor repairs that extend your roof\'s life for years. We believe in giving Denver homeowners honest information to make the best decision for their home and budget.',
   },
   {
     question: 'Are there specific Lincoln County requirements for roof inspections in Denver?',
-    answer:
+  answer:
       'While Lincoln County does not require mandatory periodic roof inspections for existing homes, inspections are essential for insurance claims, real estate transactions, and ensuring compliance with building codes when repairs or replacements are needed. Our inspectors are familiar with Lincoln County building standards and can identify any code compliance issues that may need to be addressed.',
   },
 ];
@@ -237,7 +237,6 @@ export default function RoofInspectionDenverNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-inspection-denver-nc`}
         pageName="Roof Inspection Denver NC"
@@ -247,13 +246,13 @@ export default function RoofInspectionDenverNCPage() {
         faqs={[
           {
             question: 'Who provides free roof inspections in Denver NC?',
-            answer: 'Best Roofing Now provides free comprehensive roof inspections in Denver NC and the Lake Norman western shore. Our certified inspectors examine every component and provide detailed photo reports. We serve Trilogy, Sailview, Westport, and all Denver neighborhoods. Call 704-605-6047 to schedule.',
-            speakableAnswer: 'Best Roofing Now provides free roof inspections in Denver NC and the Lake Norman western shore. Call 704-605-6047 to schedule.',
+  answer: 'Best Roofing Now provides free comprehensive roof inspections in Denver NC and the Lake Norman western shore. Our certified inspectors examine every component and provide detailed photo reports. We serve Trilogy, Sailview, Westport, and all Denver neighborhoods. Call 704-605-6047 to schedule.',
+  speakableAnswer: 'Best Roofing Now provides free roof inspections in Denver NC and the Lake Norman western shore. Call 704-605-6047 to schedule.',
           },
           {
             question: 'How often should Denver NC roofs be inspected?',
-            answer: 'Denver NC roofs on the Lake Norman western shore should be inspected annually due to increased storm exposure. Additional inspections are recommended after severe storms with hail or high winds. Best Roofing Now provides free inspections with no obligation.',
-            speakableAnswer: 'Denver NC roofs should be inspected annually due to western shore storm exposure. Best Roofing Now offers free inspections. Call 704-605-6047.',
+  answer: 'Denver NC roofs on the Lake Norman western shore should be inspected annually due to increased storm exposure. Additional inspections are recommended after severe storms with hail or high winds. Best Roofing Now provides free inspections with no obligation.',
+  speakableAnswer: 'Denver NC roofs should be inspected annually due to western shore storm exposure. Best Roofing Now offers free inspections. Call 704-605-6047.',
           },
         ]}
       />

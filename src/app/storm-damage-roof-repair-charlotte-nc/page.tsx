@@ -25,7 +25,6 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -59,16 +58,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Charlotte NC | Insurance Claim Experts',
-    description:
+  description:
       'Charlotte storm damage roof repair specialists. Expert hail, wind, and tree damage repair. We handle insurance claims. 24/7 emergency response.',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.stormDamage,
-        width: 1200,
-        height: 630,
-        alt: 'Storm damage roof repair in Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Storm damage roof repair in Charlotte NC',
       },
     ],
   },
@@ -78,42 +77,42 @@ export const metadata: Metadata = {
 const stormFAQs = [
   {
     question: 'How do I know if my roof has storm damage in Charlotte?',
-    answer:
+  answer:
       'Common signs of storm damage in Charlotte include: missing or cracked shingles, dents in metal vents or gutters, granules accumulated in gutters or downspouts, soft spots or bruising on shingles (from hail), damaged flashing around chimneys and vents, fallen tree limbs on the roof, and visible daylight through the attic. After any significant storm in Charlotte, we recommend a free professional inspection since much damage is not visible from the ground.',
   },
   {
     question: 'Will my homeowners insurance cover storm damage roof repair in Charlotte?',
-    answer:
+  answer:
       'Yes, most homeowners insurance policies in Charlotte cover storm damage including hail, wind, and fallen trees. Storm damage is typically classified as an "Act of God" and covered under your dwelling protection. Your policy will have a deductible (usually $500-$2,500). Best Roofing Now works directly with all major insurance companies and helps maximize your claim settlement.',
   },
   {
     question: 'How soon after a storm should I get my roof inspected?',
-    answer:
+  answer:
       'We recommend scheduling a roof inspection within 48 hours of a major storm in Charlotte. Early inspection serves two purposes: it documents damage before it worsens, and most insurance policies require timely reporting (typically within 30 days). After severe storms in Charlotte, we prioritize emergency tarping to prevent further damage, then schedule detailed inspections.',
   },
   {
     question: 'Will filing a storm damage claim raise my insurance premiums?',
-    answer:
+  answer:
       'Storm damage claims are generally considered "no-fault" claims since you cannot prevent hail or wind. In most cases, a single storm damage claim will not significantly impact your premiums. However, multiple claims in a short period might. The value of a new roof (often $10,000-$25,000) typically far outweighs any potential premium increase. We provide honest assessments and only recommend filing claims when the damage warrants it.',
   },
   {
     question: 'What is the storm damage roof repair process with insurance?',
-    answer:
+  answer:
       'Our Charlotte storm damage repair process includes: 1) Free inspection and damage documentation with photos and measurements, 2) We help you file your claim with complete documentation, 3) We meet with your insurance adjuster on-site to review damage together, 4) Once approved, we complete repairs using premium materials, 5) You pay only your deductible - we collect the rest from insurance. The entire process typically takes 2-4 weeks from inspection to completion.',
   },
   {
     question: 'Can you repair just the damaged section of my roof?',
-    answer:
+  answer:
       'Sometimes partial repairs make sense for localized damage. However, if hail or wind damage is widespread across your roof, insurance typically covers full replacement since shingles are damaged uniformly. Partial repairs on extensively damaged roofs often fail because surrounding damaged shingles continue deteriorating. We provide honest assessments and only recommend what is truly needed.',
   },
   {
     question: 'What if my insurance claim is denied or underpaid?',
-    answer:
+  answer:
       'Insurance claim denials and underpayments are common in Charlotte. Best Roofing Now helps appeal denied claims by providing additional documentation, photos, and damage evidence. We can also work with public adjusters if needed. Our thorough initial documentation often helps overturn denials. Many homeowners who were initially denied have had claims approved after we supplemented their evidence.',
   },
   {
     question: 'How quickly can you respond to storm damage emergencies in Charlotte?',
-    answer:
+  answer:
       'Our emergency storm damage team responds within 1-4 hours depending on conditions and demand after major Charlotte storms. We prioritize active leaks and exposed roof decking to prevent water damage to your home. Emergency tarping and temporary repairs protect your property while permanent repairs are scheduled. Call our 24/7 emergency line: (704) 605-6047.',
   },
 ];
@@ -146,21 +145,21 @@ const stormDamageService = {
 const projectShowcase = [
   {
     title: 'Hail Damage Replacement - South Charlotte',
-    description:
+  description:
       'Complete roof replacement after golf ball sized hail damaged over 200 shingles. Insurance covered full replacement.',
-    image: IMAGES.realProjects.project1,
+  image: IMAGES.realProjects.project1,
   },
   {
     title: 'Wind Damage Repair - Huntersville',
-    description:
+  description:
       'High winds lifted ridge caps and edge shingles. Quick repair prevented water intrusion.',
-    image: IMAGES.realProjects.drone1,
+  image: IMAGES.realProjects.drone1,
   },
   {
     title: 'Fallen Tree Damage - Matthews',
-    description:
+  description:
       'Emergency tarping followed by full section replacement. Structural repairs included.',
-    image: IMAGES.services.stormDamage,
+  image: IMAGES.services.stormDamage,
   },
 ];
 
@@ -188,7 +187,6 @@ export default function StormDamageRoofRepairCharlottePage() {
           { name: 'Storm Damage Roof Repair Charlotte', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Storm Damage Roof Repair Charlotte NC"
@@ -198,23 +196,23 @@ export default function StormDamageRoofRepairCharlottePage() {
         faqs={[
           {
             question: 'Who repairs storm damaged roofs in Charlotte NC?',
-            answer: 'Best Roofing Now is Charlotte\'s trusted storm damage roof repair specialist with 24/7 emergency response. We repair hail damage, wind damage, and fallen tree damage. We handle insurance claims from start to finish and have restored over 500 Charlotte homes. Call 704-605-6047 for emergency storm damage service.',
-            speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Charlotte with 24/7 emergency response. We handle hail, wind, and tree damage plus insurance claims. Call 704-605-6047.',
+  answer: 'Best Roofing Now is Charlotte\'s trusted storm damage roof repair specialist with 24/7 emergency response. We repair hail damage, wind damage, and fallen tree damage. We handle insurance claims from start to finish and have restored over 500 Charlotte homes. Call 704-605-6047 for emergency storm damage service.',
+  speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Charlotte with 24/7 emergency response. We handle hail, wind, and tree damage plus insurance claims. Call 704-605-6047.',
           },
           {
             question: 'Does insurance cover storm damage roof repair in Charlotte?',
-            answer: 'Yes, most homeowners insurance policies cover storm damage including hail, wind, and fallen trees. Storm damage is classified as an "Act of God" claim. Best Roofing Now works with all major insurance companies, meets with adjusters, and helps maximize your claim settlement. You typically pay only your deductible.',
-            speakableAnswer: 'Yes, most insurance covers storm damage to roofs in Charlotte. We work with all insurers and meet with adjusters. You typically pay only your deductible.',
+  answer: 'Yes, most homeowners insurance policies cover storm damage including hail, wind, and fallen trees. Storm damage is classified as an "Act of God" claim. Best Roofing Now works with all major insurance companies, meets with adjusters, and helps maximize your claim settlement. You typically pay only your deductible.',
+  speakableAnswer: 'Yes, most insurance covers storm damage to roofs in Charlotte. We work with all insurers and meet with adjusters. You typically pay only your deductible.',
           },
           {
             question: 'How fast can you respond to storm damage in Charlotte?',
-            answer: 'Best Roofing Now responds to storm damage emergencies in Charlotte within 1-4 hours, depending on conditions. We offer 24/7 emergency service including nights and weekends. Our emergency team provides tarping and temporary repairs to prevent water damage while permanent repairs are scheduled.',
-            speakableAnswer: 'We respond to Charlotte storm damage within 1 to 4 hours, 24/7. Emergency tarping prevents water damage while permanent repairs are scheduled.',
+  answer: 'Best Roofing Now responds to storm damage emergencies in Charlotte within 1-4 hours, depending on conditions. We offer 24/7 emergency service including nights and weekends. Our emergency team provides tarping and temporary repairs to prevent water damage while permanent repairs are scheduled.',
+  speakableAnswer: 'We respond to Charlotte storm damage within 1 to 4 hours, 24/7. Emergency tarping prevents water damage while permanent repairs are scheduled.',
           },
           {
             question: 'What types of storm damage do you repair?',
-            answer: 'We repair all types of storm damage in Charlotte including hail damage (dented, cracked, or bruised shingles), wind damage (missing or lifted shingles), fallen tree and debris damage, and damage from hurricane remnants. We also handle emergency tarping, structural repairs, and complete roof replacements when needed.',
-            speakableAnswer: 'We repair hail damage, wind damage, fallen tree damage, and hurricane damage in Charlotte. Services include emergency tarping and full roof replacement.',
+  answer: 'We repair all types of storm damage in Charlotte including hail damage (dented, cracked, or bruised shingles), wind damage (missing or lifted shingles), fallen tree and debris damage, and damage from hurricane remnants. We also handle emergency tarping, structural repairs, and complete roof replacements when needed.',
+  speakableAnswer: 'We repair hail damage, wind damage, fallen tree damage, and hurricane damage in Charlotte. Services include emergency tarping and full roof replacement.',
           },
         ]}
       />
@@ -227,7 +225,7 @@ export default function StormDamageRoofRepairCharlottePage() {
             items={[
               {
                 name: 'Storm Damage Roof Repair Charlotte',
-                href: '/storm-damage-roof-repair-charlotte-nc',
+  href: '/storm-damage-roof-repair-charlotte-nc',
               },
             ]}
           />
@@ -449,28 +447,28 @@ export default function StormDamageRoofRepairCharlottePage() {
                 {[
                   {
                     step: 1,
-                    title: 'Free Storm Damage Inspection',
-                    desc: 'We thoroughly document all roof damage with photos, measurements, and detailed reports that insurance companies need.',
+  title: 'Free Storm Damage Inspection',
+  desc: 'We thoroughly document all roof damage with photos, measurements, and detailed reports that insurance companies need.',
                   },
                   {
                     step: 2,
-                    title: 'Claim Filing Assistance',
-                    desc: 'We help you file your claim correctly with complete documentation for maximum coverage.',
+  title: 'Claim Filing Assistance',
+  desc: 'We help you file your claim correctly with complete documentation for maximum coverage.',
                   },
                   {
                     step: 3,
-                    title: 'Insurance Adjuster Meeting',
-                    desc: 'We meet with your adjuster on-site to walk through all damage and ensure nothing is missed.',
+  title: 'Insurance Adjuster Meeting',
+  desc: 'We meet with your adjuster on-site to walk through all damage and ensure nothing is missed.',
                   },
                   {
                     step: 4,
-                    title: 'Settlement Advocacy',
-                    desc: 'If your claim is underpaid or denied, we supplement with additional evidence and fight for fair compensation.',
+  title: 'Settlement Advocacy',
+  desc: 'If your claim is underpaid or denied, we supplement with additional evidence and fight for fair compensation.',
                   },
                   {
                     step: 5,
-                    title: 'Quality Roof Repair',
-                    desc: 'Once approved, we complete repairs with premium materials. You pay only your deductible.',
+  title: 'Quality Roof Repair',
+  desc: 'Once approved, we complete repairs with premium materials. You pay only your deductible.',
                   },
                 ].map((item) => (
                   <li key={item.step} className="flex gap-4">
@@ -645,7 +643,7 @@ export default function StormDamageRoofRepairCharlottePage() {
                 <h3 className="font-bold text-dark mb-2">Hurricane Season</h3>
                 <p className="text-gray text-sm">
                   Hurricane remnants reach Charlotte {charlotteStormStats.hurricaneRemnants},
-                  typically August through October. Even weakened systems bring sustained winds and
+  typically August through October. Even weakened systems bring sustained winds and
                   heavy rain that stress aging roofs.
                 </p>
               </div>

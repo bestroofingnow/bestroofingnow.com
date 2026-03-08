@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -47,16 +47,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Sagging Roof Repair Charlotte NC | Structural Experts | Best Roofing Now',
-    description:
+  description:
       'Expert sagging roof repair in Charlotte NC. Structural issues, water damage, aging roofs - we diagnose and fix the problem. BBB A+ rated. Free inspections.',
-    url: `${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Sagging roof repair service in Charlotte NC - Best Roofing Now structural experts',
+  width: 1200,
+  height: 630,
+  alt: 'Sagging roof repair service in Charlotte NC - Best Roofing Now structural experts',
       },
     ],
   },
@@ -66,26 +66,26 @@ export const metadata: Metadata = {
 const causes = [
   {
     icon: Droplets,
-    title: 'Water Damage',
-    description:
+  title: 'Water Damage',
+  description:
       'Prolonged water infiltration weakens roof decking and rafters. Charlotte\'s 43+ inches of annual rainfall makes water damage a leading cause of roof sag.',
   },
   {
     icon: Clock,
-    title: 'Age & Deterioration',
-    description:
+  title: 'Age & Deterioration',
+  description:
       'Over time, roofing materials break down and structural components weaken. Roofs over 20-25 years old are particularly susceptible to sagging.',
   },
   {
     icon: Home,
-    title: 'Inadequate Support',
-    description:
+  title: 'Inadequate Support',
+  description:
       'Original construction with undersized rafters, too-wide rafter spacing, or insufficient bracing can lead to gradual structural failure.',
   },
   {
     icon: AlertTriangle,
-    title: 'Excessive Weight',
-    description:
+  title: 'Excessive Weight',
+  description:
       'Multiple roofing layers, heavy materials, snow/ice accumulation, or HVAC equipment can overload the roof structure beyond its capacity.',
   },
 ];
@@ -106,32 +106,32 @@ const warningSigns = [
 const repairProcess = [
   {
     step: '1',
-    title: 'Structural Assessment',
-    description:
+  title: 'Structural Assessment',
+  description:
       'Our experts thoroughly inspect the roof from inside and out, examining rafters, trusses, decking, and load distribution.',
   },
   {
     step: '2',
-    title: 'Cause Identification',
-    description:
+  title: 'Cause Identification',
+  description:
       'We identify the root cause - whether water damage, structural inadequacy, or overloading - to ensure our repair addresses the actual problem.',
   },
   {
     step: '3',
-    title: 'Repair Plan',
-    description:
+  title: 'Repair Plan',
+  description:
       'We develop a comprehensive repair plan with transparent pricing, covering structural reinforcement and any necessary roof work.',
   },
   {
     step: '4',
-    title: 'Structural Repair',
-    description:
+  title: 'Structural Repair',
+  description:
       'Our team reinforces or replaces damaged rafters, trusses, and decking. We add proper bracing and support as needed.',
   },
   {
     step: '5',
-    title: 'Roof Restoration',
-    description:
+  title: 'Roof Restoration',
+  description:
       'Once the structure is sound, we repair or replace roofing materials and ensure proper waterproofing and ventilation.',
   },
 ];
@@ -140,33 +140,33 @@ const repairProcess = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: Hammer,
-    title: 'Structural Expertise',
-    description: 'Experienced in diagnosing and repairing complex structural roof issues.',
+  title: 'Structural Expertise',
+  description: 'Experienced in diagnosing and repairing complex structural roof issues.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Prompt Response',
-    description: 'We understand sagging roofs are urgent - we respond quickly to prevent further damage.',
+  title: 'Prompt Response',
+  description: 'We understand sagging roofs are urgent - we respond quickly to prevent further damage.',
   },
 ];
 
@@ -174,42 +174,42 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'How serious is a sagging roof?',
-    answer:
+  answer:
       'A sagging roof is a serious structural issue that requires immediate attention. It indicates that the roof structure is failing and can no longer adequately support the weight above it. Left unaddressed, a sagging roof can lead to complete roof collapse, extensive water damage, mold growth, and compromised safety for your family. If you notice any sagging, contact a professional immediately.',
   },
   {
     question: 'What causes a roof to sag?',
-    answer:
+  answer:
       'The most common causes of roof sagging in Charlotte are: prolonged water damage that weakens rafters and decking, aging materials that deteriorate over time, inadequate structural support from original construction, excessive weight from multiple roofing layers or heavy materials, and termite or pest damage to wooden structural components. Sometimes it\'s a combination of factors.',
   },
   {
     question: 'Can a sagging roof be repaired, or does it need to be replaced?',
-    answer:
+  answer:
       'Many sagging roofs can be repaired rather than replaced, depending on the extent of damage. If the sag is localized and caught early, we can often reinforce or sister damaged rafters, replace affected decking, and add proper bracing. However, if the damage is extensive or the structure is severely compromised, a full roof replacement with new structural components may be necessary. We\'ll give you an honest assessment.',
   },
   {
     question: 'How much does sagging roof repair cost in Charlotte?',
-    answer:
+  answer:
       'Sagging roof repair costs vary widely based on the cause and extent of damage. Minor structural repairs with localized reinforcement may cost $1,000-$3,000, while major repairs involving rafter replacement, extensive decking, and new roofing can range from $5,000-$15,000+. Complete structural rebuilds can exceed $20,000. We provide detailed, transparent estimates after our inspection.',
   },
   {
     question: 'Will my insurance cover sagging roof repair?',
-    answer:
+  answer:
       'Insurance coverage depends on the cause of the sagging. If the sag resulted from a covered peril like a severe storm, fallen tree, or sudden water damage, your policy may cover repairs. However, sagging due to age, neglect, or deferred maintenance is typically not covered. We can help document damage for insurance claims and work with your adjuster.',
   },
   {
     question: 'How long does it take to repair a sagging roof?',
-    answer:
+  answer:
       'Repair timelines depend on the scope of work needed. Minor structural reinforcement can be completed in 1-2 days. More extensive repairs involving multiple rafters, significant decking replacement, and new roofing typically take 3-7 days. Complex projects requiring major structural work may take 1-2 weeks. We\'ll provide a timeline with your estimate.',
   },
   {
     question: 'Is it safe to stay in my home with a sagging roof?',
-    answer:
+  answer:
       'It depends on the severity of the sag. Minor, localized sagging that\'s been present for some time may not pose immediate danger, but should still be addressed promptly. Significant sagging, especially if it\'s worsening or accompanied by cracking sounds, may indicate imminent structural failure. In severe cases, temporary evacuation may be advisable until repairs are completed.',
   },
   {
     question: 'How can I prevent my roof from sagging?',
-    answer:
+  answer:
       'Preventing roof sag involves: maintaining proper attic ventilation to prevent moisture buildup, addressing leaks immediately before water damage occurs, avoiding multiple roofing layers (we recommend tear-off with each replacement), ensuring gutters drain properly away from the home, scheduling regular roof inspections to catch problems early, and never adding heavy equipment without consulting a structural engineer.',
   },
 ];
@@ -240,7 +240,6 @@ export default function SaggingRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -269,7 +268,7 @@ export default function SaggingRoofRepairCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               A sagging roof is a serious structural issue that won't fix itself. Best Roofing Now specializes in
               diagnosing and repairing sagging roofs throughout Charlotte. From water damage to structural deficiencies,
-              our experienced team gets to the root cause and delivers lasting solutions.
+  our experienced team gets to the root cause and delivers lasting solutions.
             </p>
 
             {/* CTA Buttons */}
