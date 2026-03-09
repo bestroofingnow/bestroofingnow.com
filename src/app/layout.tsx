@@ -148,9 +148,11 @@ export default function RootLayout({
         {/* CRITICAL: Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* CRITICAL: Preconnect to PMI for project images */}
-        <link rel="preconnect" href="https://pmi.bestroofingnow.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://pmi.bestroofingnow.com" />
+        {/* CRITICAL: Preconnect to CMS for WordPress images and GCS for project photos */}
+        <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
+        <link rel="preconnect" href="https://storage.googleapis.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://storage.googleapis.com" />
         {/* CRITICAL: Logo preload for LCP - the header logo is the LCP element */}
         <link
           rel="preload"
