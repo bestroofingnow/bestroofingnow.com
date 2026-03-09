@@ -394,16 +394,20 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Lake Norman & Surrounding Cities - Internal Links */}
+            {/* Lake Norman & Lake Wylie - Internal Links */}
             <div className="border-t border-gray-200 pt-8 mt-6">
-              <p className="text-sm text-gray-500 mb-4">Service Areas:</p>
+              <p className="text-sm text-gray-500 mb-4">Lake Norman &amp; Lake Wylie:</p>
               <div className="flex flex-wrap justify-center gap-3">
+                <a href="/roofing-lake-norman-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Lake Norman</a>
+                <a href="/roofing-lake-wylie-sc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Lake Wylie</a>
+                <a href="/roofing-tega-cay-sc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Tega Cay</a>
+                <a href="/roofing-fort-mill-sc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Fort Mill</a>
                 <a href="/roofing-huntersville-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Huntersville</a>
                 <a href="/roofing-mooresville-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Mooresville</a>
                 <a href="/roofing-cornelius-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Cornelius</a>
-                <a href="/roofing-concord-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Concord</a>
                 <a href="/roofing-davidson-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Davidson</a>
                 <a href="/roofing-matthews-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Matthews</a>
+                <a href="/roofing-concord-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Concord</a>
                 <a href="/locations" className="bg-gray-100 rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200 transition-colors">All 60+ Locations →</a>
               </div>
             </div>

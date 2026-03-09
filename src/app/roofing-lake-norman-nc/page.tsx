@@ -38,34 +38,42 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersville', 'Denver', 'Sherrills Ford'];
 
 export const metadata: Metadata = {
-  title: 'Lake Norman Roofing | LKN Roofers | Cornelius, Davidson, Mooresville',
+  title: 'Lake Norman Roofing | #1 Rated LKN Roofers | Free Estimates',
   description:
-    'Lake Norman\'s trusted roofing company serving Cornelius, Davidson, Mooresville & Huntersville. LKN roofers with 500+ local projects. Free estimates, storm damage experts. Call (704) 605-6047.',
+    'Lake Norman\'s #1 rated roofing company serving Cornelius, Davidson, Mooresville & Huntersville. Roof replacement from $10K, storm damage experts, insurance claim help. Veteran-owned, BBB A+, 200+ LKN projects. FREE estimates! Call (704) 605-6047.',
   keywords: [
     'lake norman roofing',
-    'lkn roofing',
-    'lkn roofers',
     'roofing lake norman nc',
+    'roofers lake norman nc',
     'lake norman roofers',
+    'lkn roofers',
+    'lkn roofing',
+    'roof replacement lake norman nc',
+    'roof repair lake norman nc',
+    'roof replacement cost lake norman',
+    'emergency roof repair lake norman',
+    'storm damage roof repair lake norman',
+    'hail damage roofing lake norman',
+    'best roofers lake norman nc',
+    'roofing company lake norman',
+    'roofing contractor lake norman nc',
+    'waterfront roofing lake norman',
+    'metal roofing lake norman nc',
+    'luxury roofing lake norman',
     'roofing cornelius nc',
     'roofing davidson nc',
     'roofing mooresville nc',
     'roofing huntersville nc',
-    'lake norman roof repair',
-    'lake norman roof replacement',
-    'waterfront roofing lake norman',
-    'storm damage roofing lake norman',
-    'metal roofing lake norman',
-    'luxury roofing lake norman',
-    'best roofers lake norman',
+    'free roof inspection lake norman',
+    'roof insurance claim lake norman',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-lake-norman-nc`,
   },
   openGraph: {
-    title: 'Lake Norman Roofing | LKN Roofers | Best Roofing Now',
+    title: 'Lake Norman Roofing | #1 Rated LKN Roofers | Best Roofing Now',
   description:
-      'Lake Norman\'s trusted roofing company. Serving Cornelius, Davidson, Mooresville & Huntersville with 500+ local projects. Free estimates & storm damage experts.',
+      'Lake Norman\'s #1 rated roofing company. Roof replacement, repair & storm damage for Cornelius, Davidson, Mooresville & Huntersville. 200+ LKN projects. Free estimates & insurance claim experts.',
   url: `${SITE_CONFIG.url}/roofing-lake-norman-nc`,
   type: 'website',
   images: [
@@ -165,31 +173,47 @@ const lknServices = [
   },
 ];
 
-// Lake Norman FAQs
+// Lake Norman FAQs - expanded for transactional keywords and AEO
 const lakeNormanFAQs = [
   {
     question: 'What is the best roofing material for Lake Norman waterfront homes?',
-  answer: 'For Lake Norman waterfront homes, we recommend wind-resistant materials rated for 130+ MPH. Standing seam metal roofing is excellent for lakefront exposure, as is Class 4 impact-resistant shingles like GAF HDZ. These materials withstand the unique weather patterns around the lake while providing excellent longevity and curb appeal.',
+  answer: 'For Lake Norman waterfront homes, we recommend wind-resistant materials rated for 130+ MPH. Standing seam metal roofing is excellent for lakefront exposure, as is Class 4 impact-resistant shingles like GAF HDZ. These materials withstand the unique weather patterns around the lake while providing excellent longevity and curb appeal. Our Lake Norman waterfront roofing specialists can assess your home\'s specific exposure and recommend the best solution.',
   },
   {
-    question: 'How much does a new roof cost in Lake Norman NC?',
-  answer: 'A new roof in Lake Norman typically costs between $10,000 and $30,000 for most homes. The wide range accounts for Lake Norman\'s diverse housing stock, from standard homes in Huntersville to large waterfront estates in The Peninsula. Best Roofing Now provides free estimates with transparent pricing for all Lake Norman communities.',
+    question: 'How much does a roof replacement cost in Lake Norman NC in 2026?',
+  answer: 'A roof replacement in Lake Norman typically costs between $10,000 and $30,000 for most homes in 2026. Standard asphalt shingle roofs for average-sized homes in Huntersville or Cornelius run $10,000-$15,000. Larger homes in Davidson or waterfront estates in The Peninsula can range $18,000-$30,000+. Metal roofing costs $15,000-$35,000. Best Roofing Now provides free, no-obligation estimates with transparent pricing for all Lake Norman communities. Call (704) 605-6047 for your free estimate.',
   },
   {
     question: 'Do you serve all Lake Norman communities?',
-  answer: 'Yes! Best Roofing Now serves the entire Lake Norman area including Cornelius, Davidson, Mooresville, Huntersville, Denver, Sherrills Ford, and Terrell. We\'ve completed over 200 roofing projects in the LKN area and understand the unique needs of lakefront and lake-area homes.',
+  answer: 'Yes! Best Roofing Now serves the entire Lake Norman area including Cornelius, Davidson, Mooresville, Huntersville, Denver, Sherrills Ford, and Terrell. We\'ve completed over 200 roofing projects in the LKN area and understand the unique needs of lakefront and lake-area homes. We are fully licensed in both Mecklenburg County and Iredell County.',
   },
   {
     question: 'How quickly can you respond to storm damage in Lake Norman?',
-  answer: 'Best Roofing Now offers 24/7 emergency response for Lake Norman storm damage. We typically arrive within 2-4 hours for emergency tarping and provide full damage assessments within 24 hours. As local Lake Norman roofers, we\'re positioned to respond faster than Charlotte-based companies.',
+  answer: 'Best Roofing Now offers 24/7 emergency roof repair response for Lake Norman storm damage. We typically arrive within 2-4 hours for emergency tarping and provide full damage assessments within 24 hours. As local Lake Norman roofers, we respond faster than Charlotte-based companies. Call (704) 605-6047 for immediate emergency roof repair in the Lake Norman area.',
+  },
+  {
+    question: 'Does homeowners insurance cover roof replacement in Lake Norman NC?',
+  answer: 'Yes, homeowners insurance typically covers roof replacement when damage is caused by storms, hail, wind, or fallen trees in Lake Norman. North Carolina insurance policies generally cover the full replacement cost minus your deductible. Best Roofing Now handles the entire insurance claim process for Lake Norman homeowners - from documentation and adjuster meetings to supplemental claims. We\'ve helped hundreds of LKN homeowners get their roofs replaced through insurance at minimal out-of-pocket cost.',
   },
   {
     question: 'Are you licensed for roofing in both NC counties around Lake Norman?',
-  answer: 'Yes, Best Roofing Now is fully licensed, bonded, and insured to perform roofing work in both Mecklenburg County and Iredell County. This covers all Lake Norman communities including Cornelius, Davidson (Mecklenburg) and Mooresville, Troutman (Iredell).',
+  answer: 'Yes, Best Roofing Now is fully licensed, bonded, and insured to perform roofing work in both Mecklenburg County and Iredell County. This covers all Lake Norman communities including Cornelius, Davidson (Mecklenburg) and Mooresville, Troutman (Iredell). We carry $2 million in general liability insurance and full workers\' compensation coverage.',
   },
   {
     question: 'What roofing warranties do you offer for Lake Norman homes?',
-  answer: 'As a GAF Master Elite and CertainTeed ShingleMaster contractor, we offer enhanced warranties up to 50 years on Lake Norman installations. This includes the GAF Golden Pledge warranty and CertainTeed SureStart PLUS coverage, plus our own 10-year workmanship guarantee.',
+  answer: 'As a GAF Factory-Certified and CertainTeed ShingleMaster contractor, we offer enhanced warranties up to 50 years on Lake Norman installations. This includes the GAF System Plus warranty and CertainTeed SureStart PLUS coverage, plus our own 10-year workmanship guarantee. These manufacturer-backed warranties are only available through certified contractors like Best Roofing Now.',
+  },
+  {
+    question: 'How long does a roof replacement take in Lake Norman?',
+  answer: 'Most residential roof replacements in Lake Norman take 1-2 days for standard homes and 2-3 days for larger waterfront properties. The timeline depends on roof size, pitch, material choice, and weather conditions. Best Roofing Now coordinates with Lake Norman HOAs in communities like The Peninsula, Jetton Cove, and River Run to ensure smooth scheduling and compliance with community guidelines.',
+  },
+  {
+    question: 'What should I do after a hail storm damages my roof in Lake Norman?',
+  answer: 'After a hail storm in Lake Norman: 1) Document any visible damage with photos, 2) Call Best Roofing Now at (704) 605-6047 for a free emergency inspection, 3) Do NOT sign with storm chasers who go door-to-door, 4) We\'ll provide a detailed damage report and help you file your insurance claim. Lake Norman sees significant hail events, and acting quickly is important to prevent secondary water damage. We handle the entire insurance claim process at no upfront cost.',
+  },
+  {
+    question: 'Is it worth getting a metal roof in Lake Norman NC?',
+  answer: 'Metal roofing is an excellent investment for Lake Norman homes, especially waterfront properties. Standing seam metal roofs last 50+ years, resist 140+ MPH winds, and are Class 4 impact-rated for hail protection. While the upfront cost is higher ($15,000-$35,000), the longevity means you may never need another roof. Metal roofing also offers energy savings of 15-25% on cooling costs. Best Roofing Now installs standing seam and metal shingle roofing across the Lake Norman area.',
   },
 ];
 
@@ -513,9 +537,33 @@ export default async function LakeNormanRoofingPage() {
       <section className="py-16 bg-white">
         <div className="container">
           <h2 className="text-2xl font-bold text-primary mb-8 text-center">
-            More Lake Norman Roofing Resources
+            Lake Norman Roofing Services &amp; Resources
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/roof-repair-lake-norman-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
+              <h3 className="font-bold text-primary group-hover:text-accent">Roof Repair Lake Norman</h3>
+              <p className="text-sm text-gray-600">Same-day leak &amp; storm repair</p>
+            </Link>
+            <Link href="/roof-replacement-lake-norman-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
+              <h3 className="font-bold text-primary group-hover:text-accent">Roof Replacement LKN</h3>
+              <p className="text-sm text-gray-600">Full replacement from $10K</p>
+            </Link>
+            <Link href="/roofers-lake-norman-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
+              <h3 className="font-bold text-primary group-hover:text-accent">Roofers Lake Norman</h3>
+              <p className="text-sm text-gray-600">Top-rated LKN contractors</p>
+            </Link>
+            <Link href="/storm-damage-roof-repair-lake-norman-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
+              <h3 className="font-bold text-primary group-hover:text-accent">Storm Damage LKN</h3>
+              <p className="text-sm text-gray-600">Insurance claim experts</p>
+            </Link>
+            <Link href="/emergency-roof-repair-lake-norman-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
+              <h3 className="font-bold text-primary group-hover:text-accent">Emergency Repair LKN</h3>
+              <p className="text-sm text-gray-600">24/7 emergency service</p>
+            </Link>
+            <Link href="/luxury-roofing-lake-norman-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
+              <h3 className="font-bold text-primary group-hover:text-accent">Luxury Roofing LKN</h3>
+              <p className="text-sm text-gray-600">Premium waterfront homes</p>
+            </Link>
             <Link href="/roofing-cornelius-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
               <h3 className="font-bold text-primary group-hover:text-accent">Roofing Cornelius NC</h3>
               <p className="text-sm text-gray-600">Complete roofing services</p>
@@ -532,17 +580,9 @@ export default async function LakeNormanRoofingPage() {
               <h3 className="font-bold text-primary group-hover:text-accent">Roofing Huntersville NC</h3>
               <p className="text-sm text-gray-600">Emergency &amp; repairs</p>
             </Link>
-            <Link href="/luxury-roofing-lake-norman-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
-              <h3 className="font-bold text-primary group-hover:text-accent">Luxury Roofing LKN</h3>
-              <p className="text-sm text-gray-600">Premium waterfront homes</p>
-            </Link>
             <Link href="/metal-roofing-mooresville-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
               <h3 className="font-bold text-primary group-hover:text-accent">Metal Roofing LKN</h3>
               <p className="text-sm text-gray-600">Standing seam &amp; metal</p>
-            </Link>
-            <Link href="/storm-damage-roof-repair-mooresville-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
-              <h3 className="font-bold text-primary group-hover:text-accent">Storm Damage LKN</h3>
-              <p className="text-sm text-gray-600">Insurance claim help</p>
             </Link>
             <Link href="/commercial-roofing-mooresville-nc" className="bg-light rounded-lg p-4 hover:shadow-md transition-all group">
               <h3 className="font-bold text-primary group-hover:text-accent">Commercial Roofing</h3>

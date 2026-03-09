@@ -30,13 +30,17 @@ export const metadata: Metadata = {
   description:
     'Get answers to 36 common roofing questions about pricing, insurance claims, materials, weather damage, and more. Expert advice from Charlotte\'s trusted roofers at Best Roofing Now.',
   keywords: [
-    'roofing questions Charlotte',
-    'roof repair FAQ',
-    'roof replacement questions',
+    'roofing questions Charlotte NC',
+    'roof repair FAQ Charlotte',
+    'roof replacement questions Charlotte NC',
     'roofing insurance claims FAQ',
-    'Charlotte roofing help',
-    'roof cost FAQ',
+    'how much does a roof cost Charlotte NC',
+    'roof replacement cost Charlotte NC 2026',
     'storm damage roofing FAQ',
+    'roofing questions Lake Norman',
+    'roofing FAQ Lake Wylie SC',
+    'best roofer Charlotte NC FAQ',
+    'roof insurance claim questions Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/faq`,

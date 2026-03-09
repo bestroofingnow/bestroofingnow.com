@@ -20,7 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -153,14 +153,14 @@ const localAreas = [
 
 // Nearby cities served
 const nearbyCities = [
+  { name: 'Lake Wylie', href: '/roofing-lake-wylie-sc' },
+  { name: 'Tega Cay', href: '/roofing-tega-cay-sc' },
   { name: 'Rock Hill', href: '/roofing-rock-hill-sc' },
-  { name: 'Tega Cay', href: '/locations/tega-cay-sc' },
-  { name: 'Indian Land', href: '/locations/indian-land-sc' },
-  { name: 'Lake Wylie', href: '/locations/lake-wylie-sc' },
-  { name: 'Pineville', href: '/locations/pineville-nc' },
-  { name: 'Matthews', href: '/locations/matthews-nc' },
-  { name: 'Ballantyne', href: '/roofing-contractor-charlotte-nc' },
-  { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
+  { name: 'Indian Land', href: '/roofing-indian-trail-nc' },
+  { name: 'Pineville', href: '/roofing-pineville-nc' },
+  { name: 'Matthews', href: '/roofing-matthews-nc' },
+  { name: 'Ballantyne', href: '/roofing-ballantyne-charlotte-nc' },
+  { name: 'Charlotte', href: '/roofing-charlotte-nc' },
 ];
 
 // FAQs about roofing in Fort Mill
@@ -217,6 +217,12 @@ export default function RoofingFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-fort-mill-sc`}
+        pageName="Roofing Fort Mill SC"
+        city="Fort Mill"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

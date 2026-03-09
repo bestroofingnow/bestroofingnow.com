@@ -45,20 +45,25 @@ export const metadata: Metadata = {
     'Looking for roofing in Charlotte NC? Best Roofing Now is #1 rated with 5.0 Google rating, BBB A+, veteran-owned. Residential & commercial roofing, roof repair, roof replacement, inspections. 500+ roofs completed. FREE estimates! (704) 605-6047.',
   keywords: [
     'roofing charlotte nc',
-    'roofing services charlotte nc',
-    'charlotte nc roofing services',
-    'roofing in charlotte north carolina',
-    'charlotte roofing solutions',
-    'full service roofing charlotte',
-    'roof services charlotte nc',
-    'residential commercial roofing charlotte',
-    'roofing work charlotte nc',
-    'professional roofing charlotte nc',
-    'best roofing company charlotte nc',
+    'roofing company charlotte nc',
+    'roofing contractor charlotte nc',
+    'roofer near me charlotte nc',
+    'best roofer charlotte nc',
     'roof replacement charlotte nc',
     'roof repair charlotte nc',
+    'roof replacement cost charlotte nc',
+    'emergency roof repair charlotte nc',
+    'storm damage roof repair charlotte nc',
+    'hail damage roof repair charlotte nc',
+    'free roof inspection charlotte nc',
+    'roofing services charlotte nc',
+    'residential roofing charlotte nc',
+    'commercial roofing charlotte nc',
+    'metal roofing charlotte nc',
+    'roofing lake norman nc',
+    'roofing lake wylie sc',
     'roof inspection charlotte nc',
-    'new roof cost charlotte nc',
+    'new roof cost charlotte nc 2026',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-charlotte-nc`,
@@ -246,18 +251,22 @@ const charlotteNeighborhoods = [
 
 // Nearby cities served
 const nearbyCities = [
-  { name: 'Huntersville', href: '/locations/huntersville-nc' },
-  { name: 'Cornelius', href: '/locations/cornelius-nc' },
-  { name: 'Davidson', href: '/locations/davidson-nc' },
-  { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Matthews', href: '/locations/matthews-nc' },
-  { name: 'Mint Hill', href: '/locations/mint-hill-nc' },
-  { name: 'Pineville', href: '/locations/pineville-nc' },
-  { name: 'Concord', href: '/locations/concord-nc' },
-  { name: 'Gastonia', href: '/locations/gastonia-nc' },
-  { name: 'Rock Hill, SC', href: '/locations/rock-hill-sc' },
-  { name: 'Fort Mill, SC', href: '/locations/fort-mill-sc' },
-  { name: 'Indian Trail', href: '/locations/indian-trail-nc' },
+  { name: 'Lake Norman', href: '/roofing-lake-norman-nc' },
+  { name: 'Lake Wylie, SC', href: '/roofing-lake-wylie-sc' },
+  { name: 'Huntersville', href: '/roofing-huntersville-nc' },
+  { name: 'Cornelius', href: '/roofing-cornelius-nc' },
+  { name: 'Davidson', href: '/roofing-davidson-nc' },
+  { name: 'Mooresville', href: '/roofing-mooresville-nc' },
+  { name: 'Matthews', href: '/roofing-matthews-nc' },
+  { name: 'Fort Mill, SC', href: '/roofing-fort-mill-sc' },
+  { name: 'Tega Cay, SC', href: '/roofing-tega-cay-sc' },
+  { name: 'Concord', href: '/roofing-concord-nc' },
+  { name: 'Gastonia', href: '/roofing-gastonia-nc' },
+  { name: 'Rock Hill, SC', href: '/roofing-rock-hill-sc' },
+  { name: 'Pineville', href: '/roofing-pineville-nc' },
+  { name: 'Indian Trail', href: '/roofing-indian-trail-nc' },
+  { name: 'Mint Hill', href: '/roofing-mint-hill-nc' },
+  { name: 'Denver', href: '/roofing-denver-nc' },
 ];
 
 // Customer testimonials
@@ -323,6 +332,21 @@ const faqs = [
     question: 'How long does roof replacement take in Charlotte?',
   answer:
       'Most residential roof replacements in Charlotte are completed in 1-3 days, depending on size and complexity. A standard 2,000 sq ft home with a straightforward gable roof typically takes 1-2 days. Larger homes (3,000+ sq ft), steep or complex roof designs, and projects requiring structural repairs may take 3-5 days. Factors that can extend the timeline include weather delays (Charlotte receives 43 inches of rain annually), multiple roof layers requiring removal, extensive decking replacement, and custom material installations. Best Roofing Now provides a detailed timeline before starting work and keeps you informed of progress throughout the project.',
+  },
+  {
+    question: 'Do you serve Lake Norman and Lake Wylie from Charlotte?',
+  answer:
+      'Yes! Best Roofing Now serves the entire Charlotte metro area including Lake Norman (Cornelius, Davidson, Mooresville, Huntersville, Denver) and Lake Wylie (Tega Cay, Fort Mill, Lake Wylie SC). We are fully licensed in both North Carolina and South Carolina, covering Mecklenburg, Iredell, Gaston, and York counties. We specialize in waterfront roofing for lakefront homes with wind-resistant, impact-rated materials designed for lakeside exposure. Call (704) 605-6047 for a free estimate anywhere in the Charlotte metro.',
+  },
+  {
+    question: 'Can you help file a roof insurance claim in Charlotte NC?',
+  answer:
+      'Yes, Best Roofing Now provides full insurance claim assistance for Charlotte homeowners. Our process includes: (1) Free storm damage inspection with detailed photo documentation, (2) Written damage report for your insurance company, (3) Meeting with your insurance adjuster on-site, (4) Filing supplemental claims if the initial estimate is too low, (5) Coordinating repairs around the claims timeline. We have helped hundreds of Charlotte, Lake Norman, and Lake Wylie homeowners get their roofs replaced through insurance at minimal out-of-pocket cost. There is no upfront fee for our insurance claim assistance.',
+  },
+  {
+    question: 'What is the cheapest way to replace a roof in Charlotte NC?',
+  answer:
+      'The most affordable roof replacement option in Charlotte is 3-tab asphalt shingles, starting around $6,000-$8,000 for average homes. However, we recommend architectural shingles ($8,000-$15,000) as the best value - they last 25-30 years vs. 15-20 for 3-tab, offer better wind and hail resistance, and add more curb appeal. Many Charlotte homeowners also save significantly through insurance claims for storm-damaged roofs. Best Roofing Now offers financing options and we help identify if your roof qualifies for insurance coverage. Call (704) 605-6047 for a free estimate.',
   },
 ];
 

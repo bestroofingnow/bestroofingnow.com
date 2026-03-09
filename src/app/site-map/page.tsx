@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Browse the full sitemap of Best Roofing Now. Find links to all our roofing services, service areas, resources, and more.',
   alternates: {
-    canonical: `${SITE_CONFIG.url}/sitemap`,
+    canonical: `${SITE_CONFIG.url}/site-map`,
   },
 };
 
@@ -380,6 +380,119 @@ export default function SitemapPage() {
               <li>
                 <Link href="/emergency-roof-repair-huntersville-nc" className="text-blue-700 hover:underline">
                   Emergency Roof Repair Huntersville NC
+                </Link>
+              </li>
+            </ul>
+          </section>
+
+          {/* Lake Norman Area */}
+          <section>
+            <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">
+              Lake Norman Area
+            </h2>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/roofing-lake-norman-nc" className="text-blue-700 hover:underline">
+                  Roofing Lake Norman NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-repair-lake-norman-nc" className="text-blue-700 hover:underline">
+                  Roof Repair Lake Norman NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-replacement-lake-norman-nc" className="text-blue-700 hover:underline">
+                  Roof Replacement Lake Norman NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofers-lake-norman-nc" className="text-blue-700 hover:underline">
+                  Roofers Lake Norman NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/storm-damage-roof-repair-lake-norman-nc" className="text-blue-700 hover:underline">
+                  Storm Damage Roof Repair Lake Norman
+                </Link>
+              </li>
+              <li>
+                <Link href="/emergency-roof-repair-lake-norman-nc" className="text-blue-700 hover:underline">
+                  Emergency Roof Repair Lake Norman
+                </Link>
+              </li>
+              <li>
+                <Link href="/luxury-roofing-lake-norman-nc" className="text-blue-700 hover:underline">
+                  Luxury Roofing Lake Norman
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-mooresville-nc" className="text-blue-700 hover:underline">
+                  Roofing Mooresville NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-cornelius-nc" className="text-blue-700 hover:underline">
+                  Roofing Cornelius NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-davidson-nc" className="text-blue-700 hover:underline">
+                  Roofing Davidson NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-huntersville-nc" className="text-blue-700 hover:underline">
+                  Roofing Huntersville NC
+                </Link>
+              </li>
+            </ul>
+          </section>
+
+          {/* Lake Wylie & South Charlotte */}
+          <section>
+            <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-200 pb-2">
+              Lake Wylie &amp; South Charlotte
+            </h2>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/roofing-lake-wylie-sc" className="text-blue-700 hover:underline">
+                  Roofing Lake Wylie SC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-repair-lake-wylie-sc" className="text-blue-700 hover:underline">
+                  Roof Repair Lake Wylie SC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-replacement-lake-wylie-sc" className="text-blue-700 hover:underline">
+                  Roof Replacement Lake Wylie SC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofers-lake-wylie-sc" className="text-blue-700 hover:underline">
+                  Roofers Lake Wylie SC
+                </Link>
+              </li>
+              <li>
+                <Link href="/storm-damage-roof-repair-lake-wylie-sc" className="text-blue-700 hover:underline">
+                  Storm Damage Roof Repair Lake Wylie
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-tega-cay-sc" className="text-blue-700 hover:underline">
+                  Roofing Tega Cay SC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-fort-mill-sc" className="text-blue-700 hover:underline">
+                  Roofing Fort Mill SC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-rock-hill-sc" className="text-blue-700 hover:underline">
+                  Roofing Rock Hill SC
                 </Link>
               </li>
             </ul>

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'Charlotte storm damage roof repair with full insurance claim assistance. Hail damage, wind damage, fallen tree damage experts. We meet with adjusters and document damage. Free storm damage inspection.',
   keywords: [
     'storm damage roof repair charlotte nc',
-    'hail damage roof charlotte nc',
+    'hail damage roof repair charlotte nc',
     'wind damage roof repair charlotte',
     'roof insurance claim charlotte nc',
     'storm damage roofing contractor charlotte',
@@ -52,6 +52,10 @@ export const metadata: Metadata = {
     'roof damage insurance claim charlotte',
     'hurricane damage roof charlotte nc',
     'roof adjuster meeting charlotte',
+    'storm damage roof repair lake norman nc',
+    'hail damage roofing lake wylie sc',
+    'storm damage roofing huntersville nc',
+    'storm damage roof repair mooresville nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,

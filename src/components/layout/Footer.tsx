@@ -262,8 +262,18 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4 mt-8 text-white">Lake Norman Area</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/roofing-huntersville-nc" className="text-white hover:text-white transition-colors">
-                  Roofing Huntersville NC
+                <Link href="/roofing-lake-norman-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Lake Norman NC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-repair-lake-norman-nc" className="text-white hover:text-white transition-colors">
+                  Roof Repair Lake Norman
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-replacement-lake-norman-nc" className="text-white hover:text-white transition-colors">
+                  Roof Replacement Lake Norman
                 </Link>
               </li>
               <li>
@@ -277,18 +287,43 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-concord-nc" className="text-white hover:text-white transition-colors">
-                  Roofing Concord NC
+                <Link href="/roofing-huntersville-nc" className="text-white hover:text-white transition-colors">
+                  Roofing Huntersville NC
+                </Link>
+              </li>
+            </ul>
+
+            {/* Lake Wylie & South Charlotte */}
+            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Lake Wylie &amp; South Charlotte</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/roofing-lake-wylie-sc" className="text-white hover:text-white transition-colors">
+                  Roofing Lake Wylie SC
                 </Link>
               </li>
               <li>
-                <Link href="/roof-repair-huntersville-nc" className="text-white hover:text-white transition-colors">
-                  Roof Repair Huntersville
+                <Link href="/roofing-tega-cay-sc" className="text-white hover:text-white transition-colors">
+                  Roofing Tega Cay SC
                 </Link>
               </li>
               <li>
-                <Link href="/roof-repair-concord-nc" className="text-white hover:text-white transition-colors">
-                  Roof Repair Concord NC
+                <Link href="/roofing-fort-mill-sc" className="text-white hover:text-white transition-colors">
+                  Roofing Fort Mill SC
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-repair-lake-wylie-sc" className="text-white hover:text-white transition-colors">
+                  Roof Repair Lake Wylie
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-replacement-lake-wylie-sc" className="text-white hover:text-white transition-colors">
+                  Roof Replacement Lake Wylie
+                </Link>
+              </li>
+              <li>
+                <Link href="/roofing-rock-hill-sc" className="text-white hover:text-white transition-colors">
+                  Roofing Rock Hill SC
                 </Link>
               </li>
             </ul>
@@ -379,7 +414,7 @@ export function Footer() {
               <Link href="/terms" className="text-white/90 hover:text-white">
                 Terms of Service
               </Link>
-              <Link href="/sitemap" className="text-white/90 hover:text-white">
+              <Link href="/site-map" className="text-white/90 hover:text-white">
                 Sitemap
               </Link>
               <Link href="/videos" className="text-white/90 hover:text-white">
