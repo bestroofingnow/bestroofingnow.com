@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -225,6 +225,12 @@ export default function RoofingCorneliusNCPage() {
         slug="roofing-cornelius-nc"
         distance={20}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-cornelius-nc`}
+        pageName="Roofing Cornelius NC"
+        city="Cornelius"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

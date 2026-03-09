@@ -27,7 +27,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -286,6 +286,12 @@ export default function RoofingIndianTrailNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-indian-trail-nc`}
+        pageName="Roofing Indian Trail NC"
+        city="Indian Trail"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

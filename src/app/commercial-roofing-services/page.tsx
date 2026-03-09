@@ -22,6 +22,8 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
@@ -193,6 +195,12 @@ export default function CommercialRoofingServicesPage() {
           { name: 'Commercial Roofing Contractor Charlotte NC', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/commercial-roofing-services`}
+        pageName="Commercial Roofing Services Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
