@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: RoofTypePageProps): Promise<M
     return { title: 'Roof Type Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${roofType.name} | Charlotte NC`,

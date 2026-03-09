@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     return { title: 'Product Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${product.fullName} | Charlotte NC`,

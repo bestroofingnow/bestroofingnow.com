@@ -129,7 +129,7 @@ function ArticleSchema() {
     '@type': 'Article',
     headline: 'Complete North Carolina Roofing Guide: Building Codes, Permits & Requirements',
     description: 'Comprehensive guide covering NC roofing codes, Charlotte permit requirements, Lake Norman HOA rules, and best practices for roof replacement in North Carolina.',
-    image: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
+    image: 'https://www.bestroofingnow.com/images/logo.jpg',
     author: {
       '@type': 'Organization',
       name: SITE_CONFIG.name,

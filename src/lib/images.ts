@@ -6,7 +6,7 @@ const PMI = 'https://storage.googleapis.com/pmi-photos';
 
 export const IMAGES = {
   // Logo - keep branded asset
-  logo: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
+  logo: '/images/logo.jpg',
 
   // Hero/Banner Images - Real PMI project photos from Charlotte area jobs
   hero: {

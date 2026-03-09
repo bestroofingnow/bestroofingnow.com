@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
+        url: 'https://www.bestroofingnow.com/images/logo.jpg',
         width: 1200,
         height: 630,
         alt: 'Contact Best Roofing Now - Charlotte NC Roofing Company',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'Contact Us | Best Roofing Now',
     description:
       'Get a free roof inspection from Charlotte\'s top-rated roofing contractor. Call (704) 605-6047.',
-    images: ['https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png'],
+    images: ['https://www.bestroofingnow.com/images/logo.jpg'],
   },
 };
 

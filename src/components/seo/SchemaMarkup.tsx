@@ -2,7 +2,7 @@ import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, 
 import { getOrganizationAddress, getRoofingContractorIdentity } from '@/lib/schema-helpers';
 
 // Canonical image URLs for schema markup - using real CMS-hosted images
-const SCHEMA_LOGO = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+const SCHEMA_LOGO = 'https://www.bestroofingnow.com/images/logo.jpg';
 const SCHEMA_HERO = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp';
 
 // Local Business Schema for the main site - Enhanced for Map Pack ranking

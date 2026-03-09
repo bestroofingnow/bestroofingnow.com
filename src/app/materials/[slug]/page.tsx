@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
     return { title: 'Material Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${material.name} Charlotte NC | Cost & Info`,

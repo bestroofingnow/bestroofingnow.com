@@ -93,7 +93,7 @@ export const metadata: Metadata = {
   description: SITE_CONFIG.description,
   images: [
       {
-        url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
+        url: 'https://www.bestroofingnow.com/images/logo.jpg',
   width: 1200,
   height: 630,
   alt: `${SITE_CONFIG.name} - Professional Roofing Services Charlotte NC`,
@@ -106,7 +106,7 @@ export const metadata: Metadata = {
   description: SITE_CONFIG.description,
   site: '@bestroofingnow',
   creator: '@bestroofingnow',
-  images: ['https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png'],
+  images: ['https://www.bestroofingnow.com/images/logo.jpg'],
   },
   robots: {
     index: true,
@@ -148,14 +148,14 @@ export default function RootLayout({
         {/* CRITICAL: Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* CRITICAL: Preconnect to CMS for images */}
-        <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
+        {/* CRITICAL: Preconnect to PMI for project images */}
+        <link rel="preconnect" href="https://pmi.bestroofingnow.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://pmi.bestroofingnow.com" />
         {/* CRITICAL: Logo preload for LCP - the header logo is the LCP element */}
         <link
           rel="preload"
           as="image"
-          href="/_next/image?url=https%3A%2F%2Fcms.bestroofingnow.com%2Fwp-content%2Fuploads%2F2025%2F12%2FUntitled-design-53.png&w=384&q=75"
+          href="/_next/image?url=%2Fimages%2Flogo.jpg&w=384&q=75"
           fetchPriority="high"
         />
         {/* Hero image preload - ONLY for desktop (hero image hidden on mobile for faster LCP) */}

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: SeasonalPageProps): Promise<M
     return { title: 'Season Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${season.title}`,

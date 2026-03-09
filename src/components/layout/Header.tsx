@@ -60,7 +60,7 @@ export function Header() {
             {/* Logo - critical for LCP */}
             <Link href="/" className="flex-shrink-0 flex items-center">
               <Image
-                src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
+                src="/images/logo.jpg"
                 alt={SITE_CONFIG.name}
                 width={180}
                 height={80}

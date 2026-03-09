@@ -53,7 +53,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-4 flex flex-col items-center lg:items-start">
             <Image
-              src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
+              src="/images/logo.jpg"
               alt={SITE_CONFIG.name}
               width={180}
               height={80}
