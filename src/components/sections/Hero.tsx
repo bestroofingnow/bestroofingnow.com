@@ -2,6 +2,7 @@ import { SEOImage as Image } from '@/components/ui/SEOImage';
 import { Shield, Clock, Award, Star } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { HeroCTA } from './HeroCTA';
+import { HeroImageRotator } from './HeroImageRotator';
 import { StarRatingCSS } from '@/components/ui/StarRating';
 
 // Tiny blur placeholder - minimal data for fastest parsing
@@ -19,7 +20,9 @@ interface HeroProps {
   subtitle?: string;
   showTrustBadges?: boolean;
   backgroundImage?: string;
+  backgroundImages?: string[];
   backgroundImageAlt?: string;
+  rotationInterval?: number;
 }
 
 export function Hero({
@@ -27,7 +30,9 @@ export function Hero({
   subtitle = "Family-owned, veteran-operated. Residential, commercial & industrial roofing — we treat every property like it's our own. Free inspections, honest assessments, and quality craftsmanship that lasts.",
   showTrustBadges = true,
   backgroundImage,
+  backgroundImages,
   backgroundImageAlt = "Charlotte NC roofing contractor - Best Roofing Now professional team installing residential roof",
+  rotationInterval = 6000,
 }: HeroProps) {
   return (
     <section
@@ -59,8 +64,14 @@ export function Hero({
         />
       </div>
 
-      {/* Background Image - HIDDEN on mobile, only show on desktop for faster mobile LCP */}
-      {backgroundImage && (
+      {/* Background Images - HIDDEN on mobile for faster LCP */}
+      {backgroundImages && backgroundImages.length > 1 ? (
+        <HeroImageRotator
+          images={backgroundImages}
+          interval={rotationInterval}
+          alt={backgroundImageAlt}
+        />
+      ) : backgroundImage ? (
         <div className="absolute inset-0 hidden md:block">
           <Image
             src={backgroundImage}
@@ -75,7 +86,7 @@ export function Hero({
             blurDataURL={HERO_BLUR_DATA_URL}
           />
         </div>
-      )}
+      ) : null}
 
       <div className="container relative z-10">
         <div className="py-12 md:py-20 lg:py-28">

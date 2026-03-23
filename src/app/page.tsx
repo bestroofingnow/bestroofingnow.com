@@ -31,6 +31,9 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { SITE_CONFIG, HOMEPAGE_FAQ } from '@/lib/constants';
 import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 
+// Hero rotation: 4 luxury homes with perfect roofs + 2 commercial buildings
+const HERO_IMAGES = IMAGES.heroRotation;
+
 export const metadata: Metadata = {
   title: { absolute: 'Best Roofer Charlotte NC | 5-Star | BBB A+' },
   description: 'Best Roofing Now is Charlotte NC\'s top-rated roofer. 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Roof repair, replacement, inspections. FREE estimates! Call (704) 605-6047.',
@@ -137,7 +140,8 @@ export default function HomePage() {
       <Hero
         title="Charlotte NC Roofing Company — 5-Star Rated Roofers"
         subtitle="Best Roofing Now is Charlotte's #1 rated roofing contractor. Veteran-owned with 500+ roofs installed. Residential &amp; commercial roofing, roof repair, roof replacement, metal roofing, gutter installation, siding, skylights, and storm damage restoration. BBB A+ accredited. Free roof inspections!"
-        backgroundImage={IMAGES.hero.roofTeam}
+        backgroundImages={HERO_IMAGES}
+        rotationInterval={6000}
       />
       <Services
         title="Our Roofing Services"

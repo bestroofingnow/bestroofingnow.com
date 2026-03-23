@@ -32,7 +32,25 @@ export const IMAGES = {
     blogMaintenance: `${STOCK}/blog-maintenance.jpg`,
     // About / team
     aboutTeamConstruction: `${STOCK}/about-team-construction.jpg`,
+    // Home hero rotation - luxury homes with perfect roofs
+    homeLuxury1: `${STOCK}/home-luxury-1.jpg`,
+    homeLuxury2: `${STOCK}/home-luxury-2.jpg`,
+    homeLuxury3: `${STOCK}/home-luxury-3.jpg`,
+    homeLuxury4: `${STOCK}/home-luxury-4.jpg`,
+    // Commercial buildings
+    commercialFlatRoof: `${STOCK}/commercial-flat-roof-1.jpg`,
+    commercialBuilding: `${STOCK}/commercial-building-2.jpg`,
   },
+
+  // Home page hero rotation images (order matters)
+  heroRotation: [
+    `${STOCK}/home-luxury-1.jpg`,
+    `${STOCK}/home-luxury-2.jpg`,
+    `${STOCK}/commercial-flat-roof-1.jpg`,
+    `${STOCK}/home-luxury-3.jpg`,
+    `${STOCK}/home-luxury-4.jpg`,
+    `${STOCK}/commercial-building-2.jpg`,
+  ],
 
   // Hero/Banner Images - Real PMI project photos from Charlotte area jobs
   hero: {
