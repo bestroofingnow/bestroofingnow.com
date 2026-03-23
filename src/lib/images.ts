@@ -32,24 +32,24 @@ export const IMAGES = {
     blogMaintenance: `${STOCK}/blog-maintenance.jpg`,
     // About / team
     aboutTeamConstruction: `${STOCK}/about-team-construction.jpg`,
-    // Home hero rotation - luxury homes with perfect roofs
-    homeLuxury1: `${STOCK}/home-luxury-1.jpg`,
-    homeLuxury2: `${STOCK}/home-luxury-2.jpg`,
-    homeLuxury3: `${STOCK}/home-luxury-3.jpg`,
-    homeLuxury4: `${STOCK}/home-luxury-4.jpg`,
-    // Commercial buildings
-    commercialFlatRoof: `${STOCK}/commercial-flat-roof-1.jpg`,
-    commercialBuilding: `${STOCK}/commercial-building-2.jpg`,
+    // Home hero rotation - aerial views showing roofs clearly
+    roofAerialHome1: `${STOCK}/roof-aerial-home-1.jpg`,
+    roofAerialHome2: `${STOCK}/roof-aerial-home-2.jpg`,
+    roofAerialHome3: `${STOCK}/roof-aerial-home-3.jpg`,
+    roofAerialHome4: `${STOCK}/roof-aerial-home-4.jpg`,
+    // Commercial flat roofs / workers
+    roofCommercialFlat1: `${STOCK}/roof-commercial-flat-1.jpg`,
+    roofCommercialFlat2: `${STOCK}/roof-commercial-flat-2.jpg`,
   },
 
   // Home page hero rotation images (order matters)
   heroRotation: [
-    `${STOCK}/home-luxury-1.jpg`,
-    `${STOCK}/home-luxury-2.jpg`,
-    `${STOCK}/commercial-flat-roof-1.jpg`,
-    `${STOCK}/home-luxury-3.jpg`,
-    `${STOCK}/home-luxury-4.jpg`,
-    `${STOCK}/commercial-building-2.jpg`,
+    `${STOCK}/roof-aerial-home-1.jpg`,
+    `${STOCK}/roof-aerial-home-2.jpg`,
+    `${STOCK}/roof-commercial-flat-1.jpg`,
+    `${STOCK}/roof-aerial-home-3.jpg`,
+    `${STOCK}/roof-aerial-home-4.jpg`,
+    `${STOCK}/roof-commercial-flat-2.jpg`,
   ],
 
   // Hero/Banner Images - Real PMI project photos from Charlotte area jobs
