@@ -9,7 +9,7 @@ export default function NewProjectPage() {
     <div>
       <div className="mb-8">
         <Link
-          href="/admin/projects"
+          href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects"
           className="inline-flex items-center text-gray-600 hover:text-primary mb-4"
         >
           <ArrowLeft className="w-4 h-4 mr-1" />

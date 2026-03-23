@@ -64,7 +64,7 @@ export default function EditProjectPage() {
     return (
       <div className="text-center py-12">
         <p className="text-red-500 mb-4">{error || 'Project not found'}</p>
-        <Link href="/admin/projects" className="text-primary hover:underline">
+        <Link href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects" className="text-primary hover:underline">
           Back to Projects
         </Link>
       </div>
@@ -75,7 +75,7 @@ export default function EditProjectPage() {
     <div>
       <div className="mb-8">
         <Link
-          href="/admin/projects"
+          href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects"
           className="inline-flex items-center text-gray-600 hover:text-primary mb-4"
         >
           <ArrowLeft className="w-4 h-4 mr-1" />

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, FolderOpen, Image, Settings, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, FolderOpen, FileText, Megaphone, LogOut, Menu, X } from 'lucide-react';
 
 // Simple password protection - in production, use proper auth
 const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'admin123';
@@ -72,8 +72,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }
 
   const navItems = [
-    { href: '/admin', icon: LayoutDashboard, label: 'Dashboard' },
-    { href: '/admin/projects', icon: FolderOpen, label: 'Projects' },
+    { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK', icon: LayoutDashboard, label: 'Dashboard' },
+    { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects', icon: FolderOpen, label: 'Projects' },
+    { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/blogs', icon: FileText, label: 'Blog Posts' },
+    { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/cta-banners', icon: Megaphone, label: 'CTA Banners' },
   ];
 
   return (

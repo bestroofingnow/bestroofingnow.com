@@ -113,7 +113,7 @@ export default function AdminProjectsPage() {
           </p>
         </div>
         <Link
-          href="/admin/projects/new"
+          href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects/new"
           className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
             dbConfigured
               ? 'bg-primary text-white hover:bg-primary-dark'
@@ -261,7 +261,7 @@ export default function AdminProjectsPage() {
                           {dbConfigured && (
                             <>
                               <Link
-                                href={`/admin/projects/${projectId}`}
+                                href={`/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects/${projectId}`}
                                 className="p-2 text-gray-500 hover:text-primary hover:bg-gray-100 rounded-lg transition-colors"
                                 title="Edit"
                               >

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FolderOpen, Image, MapPin, Plus, Database, AlertCircle, CheckCircle } from 'lucide-react';
+import { FolderOpen, Image, MapPin, Plus, Database, AlertCircle, CheckCircle, FileText, Megaphone } from 'lucide-react';
 
 interface Stats {
   totalProjects: number;
@@ -59,7 +59,7 @@ export default function AdminDashboard() {
           <p className="text-gray-600">Manage your roofing project showcase</p>
         </div>
         <Link
-          href="/admin/projects/new"
+          href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects/new"
           className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
         >
           <Plus className="w-5 h-5" />
@@ -140,18 +140,39 @@ export default function AdminDashboard() {
           <h2 className="text-xl font-bold text-gray-900 mb-4">Quick Actions</h2>
           <div className="space-y-3">
             <Link
-              href="/admin/projects"
+              href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects"
               className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
             >
               <FolderOpen className="w-5 h-5 text-primary" />
               <span>View All Projects</span>
             </Link>
             <Link
-              href="/admin/projects/new"
+              href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects/new"
               className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
             >
               <Plus className="w-5 h-5 text-primary" />
               <span>Add New Project</span>
+            </Link>
+            <Link
+              href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/blogs"
+              className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
+            >
+              <FileText className="w-5 h-5 text-primary" />
+              <span>Manage Blog Posts</span>
+            </Link>
+            <Link
+              href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/blogs/new"
+              className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
+            >
+              <Plus className="w-5 h-5 text-primary" />
+              <span>Write New Blog Post</span>
+            </Link>
+            <Link
+              href="/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/cta-banners"
+              className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
+            >
+              <Megaphone className="w-5 h-5 text-primary" />
+              <span>Manage CTA Banners</span>
             </Link>
             <Link
               href="/projects"

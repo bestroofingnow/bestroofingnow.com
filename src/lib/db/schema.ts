@@ -178,3 +178,75 @@ export type OptimizedBlog = typeof optimizedBlogs.$inferSelect;
 export type NewOptimizedBlog = typeof optimizedBlogs.$inferInsert;
 export type LinkablePage = typeof linkablePages.$inferSelect;
 export type NewLinkablePage = typeof linkablePages.$inferInsert;
+
+// ============================================
+// Blog Posts Table (native CMS)
+// ============================================
+
+export const blogPosts = pgTable('blog_posts', {
+  id: uuid('id').defaultRandom().primaryKey(),
+
+  // Content
+  title: text('title').notNull(),
+  slug: text('slug').notNull().unique(),
+  content: text('content').notNull(),
+  excerpt: text('excerpt'),
+  featuredImage: text('featured_image'),
+  featuredImageAlt: text('featured_image_alt'),
+
+  // Categorization
+  category: text('category'), // 'roof-repair', 'maintenance', 'storm-damage', etc.
+  tags: jsonb('tags').$type<string[]>().default([]),
+
+  // SEO
+  metaTitle: text('meta_title'),
+  metaDescription: text('meta_description'),
+  focusKeyword: text('focus_keyword'),
+
+  // Author
+  author: text('author').default('Best Roofing Now'),
+
+  // Publishing
+  published: boolean('published').default(false),
+  publishedAt: timestamp('published_at'),
+
+  // Timestamps
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+export type BlogPost = typeof blogPosts.$inferSelect;
+export type NewBlogPost = typeof blogPosts.$inferInsert;
+
+// ============================================
+// CTA Banners Table (admin-changeable)
+// ============================================
+
+export const ctaBanners = pgTable('cta_banners', {
+  id: uuid('id').defaultRandom().primaryKey(),
+
+  // Content
+  name: text('name').notNull(), // Internal name for admin reference
+  title: text('title').notNull(),
+  subtitle: text('subtitle'),
+  buttonText: text('button_text').notNull().default('Schedule Free Inspection'),
+  buttonUrl: text('button_url').notNull().default('/contact'),
+  secondaryButtonText: text('secondary_button_text'),
+  secondaryButtonUrl: text('secondary_button_url'),
+  footnote: text('footnote'),
+
+  // Appearance
+  variant: text('variant').notNull().default('accent'), // 'primary' | 'accent'
+
+  // Placement and status
+  placement: text('placement').notNull().default('global'), // 'global', 'blog', 'services', 'homepage'
+  active: boolean('active').default(false),
+  order: integer('order').default(0),
+
+  // Timestamps
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+export type CTABanner = typeof ctaBanners.$inferSelect;
+export type NewCTABanner = typeof ctaBanners.$inferInsert;
