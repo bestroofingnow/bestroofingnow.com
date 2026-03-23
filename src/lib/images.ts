@@ -3,10 +3,36 @@
 // Hosted on Google Cloud Storage: storage.googleapis.com/pmi-photos/
 
 const PMI = 'https://storage.googleapis.com/pmi-photos';
+const STOCK = '/images/stock';
 
 export const IMAGES = {
   // Logo - keep branded asset
   logo: '/images/logo.jpg',
+
+  // Free stock images (Unsplash, license: free for commercial use)
+  stock: {
+    // Hero images - high-res 1920px wide
+    heroRoofingAerial: `${STOCK}/hero-roofing-aerial.jpg`,
+    heroSuburbanHomes: `${STOCK}/hero-suburban-homes.jpg`,
+    heroHouseExterior: `${STOCK}/hero-house-exterior.jpg`,
+    heroBeautifulHome: `${STOCK}/hero-beautiful-home.jpg`,
+    heroModernHouse: `${STOCK}/hero-modern-house.jpg`,
+    heroNeighborhood: `${STOCK}/hero-neighborhood.jpg`,
+    heroCraftsmanHome: `${STOCK}/hero-craftsman-home.jpg`,
+    ctaFamilyHome: `${STOCK}/cta-family-home.jpg`,
+    // Service images - 1280px wide
+    serviceRoofTiles: `${STOCK}/service-roof-tiles.jpg`,
+    serviceConstructionWorker: `${STOCK}/service-construction-worker.jpg`,
+    serviceRoofingWork: `${STOCK}/service-roofing-work.jpg`,
+    serviceHomeRepair: `${STOCK}/service-home-repair.jpg`,
+    serviceStormDamage: `${STOCK}/service-storm-damage.jpg`,
+    // Blog / content images
+    blogTools: `${STOCK}/blog-tools.jpg`,
+    blogHouseRain: `${STOCK}/blog-house-rain.jpg`,
+    blogMaintenance: `${STOCK}/blog-maintenance.jpg`,
+    // About / team
+    aboutTeamConstruction: `${STOCK}/about-team-construction.jpg`,
+  },
 
   // Hero/Banner Images - Real PMI project photos from Charlotte area jobs
   hero: {
@@ -276,7 +302,7 @@ export function getRandomGalleryImages(count: number = 6): string[] {
   return shuffled.slice(0, count);
 }
 
-// Helper to get random hero image
+// Helper to get random hero image (mix of PMI + stock)
 export function getRandomHeroImage(): string {
   const heroImages = [
     IMAGES.hero.hero1, IMAGES.hero.hero2, IMAGES.hero.hero3, IMAGES.hero.hero4,
@@ -286,8 +312,18 @@ export function getRandomHeroImage(): string {
     IMAGES.hero.hero17, IMAGES.hero.hero18, IMAGES.hero.hero19, IMAGES.hero.hero20,
     IMAGES.hero.hero21, IMAGES.hero.hero22, IMAGES.hero.hero23, IMAGES.hero.hero24,
     IMAGES.hero.hero25, IMAGES.hero.hero26,
+    // Stock images mixed in for variety
+    IMAGES.stock.heroRoofingAerial, IMAGES.stock.heroSuburbanHomes,
+    IMAGES.stock.heroBeautifulHome, IMAGES.stock.heroModernHouse,
+    IMAGES.stock.heroNeighborhood, IMAGES.stock.heroCraftsmanHome,
   ];
   return heroImages[Math.floor(Math.random() * heroImages.length)];
+}
+
+// Helper to get random stock image
+export function getRandomStockImage(): string {
+  const stockImages = Object.values(IMAGES.stock);
+  return stockImages[Math.floor(Math.random() * stockImages.length)];
 }
 
 // Helper to get random house image
@@ -302,18 +338,21 @@ export function getRandomProjectImage(): string {
   return projectImages[Math.floor(Math.random() * projectImages.length)];
 }
 
-// Image sets for specific pages - using real PMI project photos
+// Image sets for specific pages - mix of real PMI photos + stock for variety
 export const PAGE_IMAGES = {
   home: {
     hero: IMAGES.hero.roofTeam,
-    services: [IMAGES.hero.hero1, IMAGES.hero.hero2, IMAGES.hero.hero3],
-    whyChooseUs: IMAGES.marketing.image1,
+    heroFallback: IMAGES.stock.heroBeautifulHome,
+    services: [IMAGES.hero.hero1, IMAGES.stock.serviceRoofTiles, IMAGES.hero.hero3],
+    whyChooseUs: IMAGES.stock.heroSuburbanHomes,
     projects: [IMAGES.projects.work1, IMAGES.projects.work2, IMAGES.projects.work3],
+    neighborhood: IMAGES.stock.heroNeighborhood,
   },
   about: {
-    hero: IMAGES.hero.hero5,
-    team: [IMAGES.hero.menOnRoof, IMAGES.projects.contractor1, IMAGES.projects.contractor2],
-    values: IMAGES.marketing.image3,
+    hero: IMAGES.stock.aboutTeamConstruction,
+    heroFallback: IMAGES.hero.hero5,
+    team: [IMAGES.hero.menOnRoof, IMAGES.projects.contractor1, IMAGES.stock.serviceConstructionWorker],
+    values: IMAGES.stock.heroCraftsmanHome,
   },
   services: {
     hero: IMAGES.hero.hero7,
@@ -364,23 +403,33 @@ export const PAGE_IMAGES = {
     default: [IMAGES.hero.hero18, IMAGES.hero.hero19, IMAGES.hero.hero20],
   },
   contact: {
-    hero: IMAGES.hero.hero21,
+    hero: IMAGES.stock.heroModernHouse,
+    heroFallback: IMAGES.hero.hero21,
     form: IMAGES.marketing.image5,
   },
   faq: {
-    hero: IMAGES.hero.hero22,
+    hero: IMAGES.stock.heroHouseExterior,
+    heroFallback: IMAGES.hero.hero22,
   },
   financing: {
     hero: IMAGES.hero.hero23,
-    cards: [IMAGES.houses.house3, IMAGES.houses.house4, IMAGES.houses.house5],
+    cards: [IMAGES.stock.heroBeautifulHome, IMAGES.houses.house4, IMAGES.stock.heroCraftsmanHome],
   },
   reviews: {
-    hero: IMAGES.hero.hero24,
-    testimonials: [IMAGES.houses.house1, IMAGES.houses.house2, IMAGES.houses.modern1],
+    hero: IMAGES.stock.heroSuburbanHomes,
+    heroFallback: IMAGES.hero.hero24,
+    testimonials: [IMAGES.houses.house1, IMAGES.stock.heroBeautifulHome, IMAGES.houses.modern1],
   },
   blog: {
-    hero: IMAGES.hero.hero25,
-    featured: IMAGES.marketing.image7,
+    hero: IMAGES.stock.heroRoofingAerial,
+    heroFallback: IMAGES.hero.hero25,
+    featured: IMAGES.stock.blogHouseRain,
+    defaultThumbnail: IMAGES.stock.blogMaintenance,
+  },
+  cta: {
+    default: IMAGES.stock.ctaFamilyHome,
+    blog: IMAGES.stock.blogHouseRain,
+    services: IMAGES.stock.serviceRoofingWork,
   },
 };
 
