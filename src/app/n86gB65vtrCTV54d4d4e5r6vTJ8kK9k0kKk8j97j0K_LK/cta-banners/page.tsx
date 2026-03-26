@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import {
   Plus, Edit, Trash2, CheckCircle, XCircle, Loader2, Save, X, Megaphone,
 } from 'lucide-react';
+import { adminFetch } from '@/lib/admin-fetch';
 
 interface CTABanner {
   id: string;
@@ -51,7 +52,7 @@ export default function AdminCTABannersPage() {
 
   const loadBanners = async () => {
     try {
-      const response = await fetch('/api/admin/cta-banners');
+      const response = await adminFetch('/api/admin/cta-banners');
       const data = await response.json();
       setBanners(data.banners || []);
     } catch (err) {
@@ -106,7 +107,7 @@ export default function AdminCTABannersPage() {
         ? `/api/admin/cta-banners/${editingId}`
         : '/api/admin/cta-banners';
 
-      const response = await fetch(url, {
+      const response = await adminFetch(url, {
         method: editingId ? 'PUT' : 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -128,7 +129,7 @@ export default function AdminCTABannersPage() {
 
   const handleToggleActive = async (banner: CTABanner) => {
     try {
-      const response = await fetch(`/api/admin/cta-banners/${banner.id}`, {
+      const response = await adminFetch(`/api/admin/cta-banners/${banner.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ active: !banner.active }),
@@ -146,7 +147,7 @@ export default function AdminCTABannersPage() {
     if (!confirm('Are you sure you want to delete this CTA banner?')) return;
 
     try {
-      const response = await fetch(`/api/admin/cta-banners/${id}`, { method: 'DELETE' });
+      const response = await adminFetch(`/api/admin/cta-banners/${id}`, { method: 'DELETE' });
       if (response.ok) {
         setBanners(banners.filter((b) => b.id !== id));
       } else {

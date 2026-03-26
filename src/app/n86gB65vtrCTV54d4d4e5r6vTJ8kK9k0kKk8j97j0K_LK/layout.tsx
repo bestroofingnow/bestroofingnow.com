@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, FolderOpen, FileText, Megaphone, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, FolderOpen, FileText, Megaphone, LogOut, Menu, X, Search, BookOpen, MessageSquare } from 'lucide-react';
 
-// Simple password protection - in production, use proper auth
-const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'admin123';
+// Password verified server-side via /api/admin/auth
+// The ADMIN_PASSWORD env var must be set (no NEXT_PUBLIC_ prefix — server-only)
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -23,14 +23,25 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     }
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === ADMIN_PASSWORD) {
-      sessionStorage.setItem('admin_auth', 'true');
-      setIsAuthenticated(true);
-      setError('');
-    } else {
-      setError('Invalid password');
+    try {
+      const res = await fetch('/api/admin/auth', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      if (res.ok) {
+        const { token } = await res.json();
+        sessionStorage.setItem('admin_auth', 'true');
+        sessionStorage.setItem('admin_token', token);
+        setIsAuthenticated(true);
+        setError('');
+      } else {
+        setError('Invalid password');
+      }
+    } catch {
+      setError('Login failed. Please try again.');
     }
   };
 
@@ -76,6 +87,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects', icon: FolderOpen, label: 'Projects' },
     { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/blogs', icon: FileText, label: 'Blog Posts' },
     { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/cta-banners', icon: Megaphone, label: 'CTA Banners' },
+    { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/seo-tools', icon: Search, label: 'SEO Tools' },
+    { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/knowledge-base', icon: BookOpen, label: 'Knowledge Base' },
+    { href: '/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/chat-analytics', icon: MessageSquare, label: 'Chat Analytics' },
   ];
 
   return (

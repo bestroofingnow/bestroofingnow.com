@@ -95,13 +95,13 @@ export const EXTERNAL_RESOURCES = {
     bookingCalendar: 'https://manage.bestroofingnow.com/widget/bookings/brn-roof-consultation',
   },
   webhooks: {
-    // Central GHL webhook for all form submissions
-    ghlLeadWebhook: 'https://services.leadconnectorhq.com/hooks/YnvUmp9cZqt5xmVLrnoq/webhook-trigger/EsQX2BVrRztaxx5QpwDH',
+    // GHL webhook URL — set via GHL_LEAD_WEBHOOK_URL env var
+    ghlLeadWebhook: process.env.GHL_LEAD_WEBHOOK_URL || '',
   },
   projectMapIt: {
     baseUrl: 'https://projectmapit.com/best-roofing-now-llc/map',
     apiBase: 'https://projectmapit.com/api/v1',
-    apiKey: '97151bdc-175f-402a-a56d-cf8e1f80047e',
+    apiKey: process.env.PMI_API_KEY || '',
   },
 };
 

@@ -2,7 +2,7 @@
 // Fetches project data and photos for neighborhood stories
 
 const PMI_API_BASE = 'https://projectmapit.com/api/v1';
-const PMI_API_KEY = '97151bdc-175f-402a-a56d-cf8e1f80047e';
+const PMI_API_KEY = process.env.PMI_API_KEY || '';
 
 export interface PMIProject {
   _id: string;

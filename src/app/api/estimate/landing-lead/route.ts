@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { checkRateLimit, getClientIP, RATE_LIMITS } from '@/lib/estimate/rate-limit';
 import { EXTERNAL_RESOURCES } from '@/lib/constants';
+import { verifyTurnstileToken } from '@/lib/turnstile';
+import { forwardLeadToBestRoofingAI } from '@/lib/best-roofing-ai';
 
 interface LandingLeadPayload {
   firstName: string;
@@ -19,6 +21,7 @@ interface LandingLeadPayload {
   utmTerm?: string;
   utmContent?: string;
   landingPage: string;
+  turnstileToken?: string;
 }
 
 export async function POST(request: NextRequest) {
@@ -34,6 +37,15 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = (await request.json()) as LandingLeadPayload;
+
+    // Verify Turnstile CAPTCHA
+    const turnstileResult = await verifyTurnstileToken(body.turnstileToken);
+    if (!turnstileResult.success) {
+      return NextResponse.json(
+        { error: turnstileResult.error || 'CAPTCHA verification failed' },
+        { status: 400 }
+      );
+    }
 
     // Validate required fields
     if (!body.firstName || !body.lastName || !body.phone || !body.email) {
@@ -106,6 +118,23 @@ export async function POST(request: NextRequest) {
         console.error('Landing lead GHL webhook error:', webhookError);
       }
     }
+
+    // Forward to Best Roofing AI (inserts lead + sends Gmail thank-you)
+    forwardLeadToBestRoofingAI({
+      firstName: body.firstName,
+      lastName: body.lastName,
+      email: body.email,
+      phone: body.phone,
+      address: body.address,
+      city: body.city,
+      state: body.state,
+      zip: body.postalCode,
+      source: 'website-ad-landing',
+      serviceType: 'free-inspection',
+      propertyType: 'residential',
+      notes: `Ad landing page lead. Page: ${body.landingPage || '/free-roof-inspection'}. UTM: ${body.utmSource || 'direct'}/${body.utmMedium || 'none'}/${body.utmCampaign || 'none'}`,
+      tags: ['ad-landing', 'free-inspection', 'high-intent'],
+    }).catch((err) => console.error('Best Roofing AI forward error:', err));
 
     return NextResponse.json({
       success: true,

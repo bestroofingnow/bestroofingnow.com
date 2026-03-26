@@ -6,6 +6,7 @@ import {
   Plus, Search, Calendar, Edit, Trash2, Eye, ChevronLeft, ChevronRight,
   FileText, CheckCircle, Clock,
 } from 'lucide-react';
+import { adminFetch } from '@/lib/admin-fetch';
 
 interface BlogPost {
   id: string;
@@ -35,7 +36,7 @@ export default function AdminBlogsPage() {
       if (searchQuery) params.set('search', searchQuery);
       if (publishedFilter) params.set('published', publishedFilter);
 
-      const response = await fetch(`/api/admin/blogs?${params}`);
+      const response = await adminFetch(`/api/admin/blogs?${params}`);
       const data = await response.json();
 
       setPosts(data.posts || []);
@@ -56,7 +57,7 @@ export default function AdminBlogsPage() {
     if (!confirm('Are you sure you want to delete this blog post?')) return;
 
     try {
-      const response = await fetch(`/api/admin/blogs/${id}`, { method: 'DELETE' });
+      const response = await adminFetch(`/api/admin/blogs/${id}`, { method: 'DELETE' });
       if (response.ok) {
         setPosts(posts.filter((p) => p.id !== id));
         setTotal((t) => t - 1);

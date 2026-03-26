@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { checkRateLimit, getClientIP, RATE_LIMITS } from '@/lib/estimate/rate-limit';
 import { buildGHLPayload, submitToGHL } from '@/lib/estimate/ghl-webhook';
 import { LeadData, RoofEstimate } from '@/types/estimate';
+import { verifyTurnstileToken } from '@/lib/turnstile';
+import { forwardLeadToBestRoofingAI } from '@/lib/best-roofing-ai';
 
 export async function POST(request: NextRequest) {
   const clientIP = getClientIP(request);
@@ -16,7 +18,16 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = await request.json();
-    const { lead, estimate } = body as { lead: LeadData; estimate: RoofEstimate };
+    const { lead, estimate, turnstileToken } = body as { lead: LeadData; estimate: RoofEstimate; turnstileToken?: string };
+
+    // Verify Turnstile CAPTCHA
+    const turnstileResult = await verifyTurnstileToken(turnstileToken);
+    if (!turnstileResult.success) {
+      return NextResponse.json(
+        { error: turnstileResult.error || 'CAPTCHA verification failed' },
+        { status: 400 }
+      );
+    }
 
     // Validate required fields
     if (!lead.firstName || !lead.lastName || !lead.phone || !lead.email) {
@@ -60,6 +71,23 @@ export async function POST(request: NextRequest) {
       // Don't fail the request - we can still thank the user
       // The lead data is logged for manual follow-up
     }
+
+    // Forward to Best Roofing AI (inserts lead + sends Gmail thank-you)
+    forwardLeadToBestRoofingAI({
+      firstName: lead.firstName,
+      lastName: lead.lastName,
+      email: lead.email,
+      phone: lead.phone,
+      address: lead.address,
+      city: lead.city,
+      state: lead.state,
+      zip: lead.postalCode,
+      source: 'website-instant-estimate',
+      serviceType: 'roof-replacement',
+      propertyType: 'residential',
+      notes: `Instant estimate lead. Roof: ${estimate.roofSqFt} sqft, ${estimate.squares} squares, pitch ${estimate.pitchRatio}`,
+      tags: ['instant-estimate', 'website-lead', 'roof-replacement'],
+    }).catch((err) => console.error('Best Roofing AI forward error:', err));
 
     return NextResponse.json({
       success: true,

@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Loader2 } from 'lucide-react';
 import BlogForm from '@/components/admin/BlogForm';
+import { adminFetch } from '@/lib/admin-fetch';
 
 export default function EditBlogPostPage() {
   const params = useParams();
@@ -15,7 +16,7 @@ export default function EditBlogPostPage() {
   useEffect(() => {
     async function loadPost() {
       try {
-        const response = await fetch(`/api/admin/blogs/${params.id}`);
+        const response = await adminFetch(`/api/admin/blogs/${params.id}`);
         if (!response.ok) {
           setError('Blog post not found');
           return;
