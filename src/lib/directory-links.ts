@@ -57,7 +57,7 @@ export const DIRECTORY_LINKS: DirectoryLink[] = [
   { url: 'https://www.charlotteroofinghub.com/companies/best-roofing-now', name: 'Charlotte Roofing Hub', displayName: 'Best Roofing Now on Charlotte Roofing Hub', category: 'industry', location: 'charlotte', priority: 1 },
   { url: 'https://www.roofingdirect.com/contractors/best-roofing-now-llc/', name: 'RoofingDirect', displayName: 'Best Roofing Now on RoofingDirect', category: 'industry', priority: 2 },
   { url: 'https://roofingloc.com/branch/best-roofing-now-llc-charlotte-10130-mallard-creek-rd-300-charlotte-nc-28262', name: 'RoofingLoc', displayName: 'Best Roofing Now on RoofingLoc', category: 'industry', priority: 3 },
-  { url: 'https://projectmapit.com/best-roofing-now-llc', name: 'ProjectMapIt', displayName: 'Best Roofing Now Project Portfolio on ProjectMapIt', category: 'industry', priority: 2 },
+
 
   // === LOCAL CHAMBERS / LAKE NORMAN === (Priority 1-2)
   { url: 'https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292', name: 'Lake Norman Chamber', displayName: 'Lake Norman Chamber of Commerce Member', category: 'local-chamber', location: 'lake-norman', priority: 1 },

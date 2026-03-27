@@ -1,8 +1,5 @@
-// ProjectMapIt API Integration
-// Fetches project data and photos for neighborhood stories
-
-const PMI_API_BASE = 'https://projectmapit.com/api/v1';
-const PMI_API_KEY = process.env.PMI_API_KEY || '';
+// Project data - previously fetched from ProjectMapIt API, now served from local static JSON
+import projectsData from '@/data/projects.json';
 
 export interface PMIProject {
   _id: string;
@@ -52,121 +49,63 @@ export interface PMIProjectsResponse {
   results: PMIProject[];
 }
 
-// Fetch all projects with pagination
-export async function fetchAllProjects(limit = 50): Promise<PMIProject[]> {
-  const allProjects: PMIProject[] = [];
-  let page = 1;
-  let hasMore = true;
+// Cast the imported JSON to the correct type
+const allProjectsData: PMIProject[] = projectsData as unknown as PMIProject[];
 
-  while (hasMore) {
-    const response = await fetch(
-      `${PMI_API_BASE}/projects?page=${page}&limit=${limit}`,
-      {
-        headers: {
-          Authorization: `Bearer ${PMI_API_KEY}`,
-        },
-        next: { revalidate: 86400, tags: ['pmi-projects'] },
-      }
-    );
-
-    if (!response.ok) {
-      console.error('PMI API Error:', response.status);
-      break;
-    }
-
-    const data: PMIProjectsResponse = await response.json();
-    allProjects.push(...data.results);
-
-    hasMore = page < data.pages;
-    page++;
-  }
-
-  return allProjects;
+// Fetch all projects (now reads from local JSON)
+export async function fetchAllProjects(_limit?: number): Promise<PMIProject[]> {
+  return allProjectsData;
 }
 
 // Fetch a single project with full details including photos
 export async function fetchProject(projectId: string): Promise<PMIProject | null> {
-  try {
-    const response = await fetch(`${PMI_API_BASE}/project/${projectId}`, {
-      headers: {
-        Authorization: `Bearer ${PMI_API_KEY}`,
-      },
-      next: { revalidate: 86400, tags: ['pmi-projects'] },
-    });
-
-    if (!response.ok) return null;
-    return response.json();
-  } catch (error) {
-    console.error('Error fetching project:', error);
-    return null;
-  }
+  return allProjectsData.find((p) => p._id === projectId) ?? null;
 }
 
 // Fetch project with full details including photos
 export async function fetchProjectWithPhotos(projectId: string): Promise<PMIProject | null> {
-  try {
-    const response = await fetch(`${PMI_API_BASE}/project/${projectId}`, {
-      headers: {
-        Authorization: `Bearer ${PMI_API_KEY}`,
-      },
-      next: { revalidate: 86400, tags: ['pmi-projects'] },
-    });
-
-    if (!response.ok) return null;
-    return response.json();
-  } catch (error) {
-    console.error('Error fetching project with photos:', error);
-    return null;
-  }
+  return allProjectsData.find((p) => p._id === projectId) ?? null;
 }
 
-// Fetch projects with their photos included from individual project endpoints
+// Fetch projects with their photos included
 export async function fetchProjectsWithPhotoData(cityFilter?: string): Promise<PMIProject[]> {
-  const allProjects = await fetchAllProjects();
-  const projectsToEnrich = cityFilter
-    ? allProjects.filter(p => p.city.toLowerCase() === cityFilter.toLowerCase() && p.withPhotos && p.photoCount > 0)
-    : allProjects.filter(p => p.withPhotos && p.photoCount > 0);
+  const filtered = cityFilter
+    ? allProjectsData.filter(
+        (p) =>
+          p.city.toLowerCase() === cityFilter.toLowerCase() &&
+          p.withPhotos &&
+          p.photoCount > 0
+      )
+    : allProjectsData.filter((p) => p.withPhotos && p.photoCount > 0);
 
-  // Fetch detailed project data for projects that have photos (limit to avoid too many requests)
-  const enrichedProjects = await Promise.all(
-    projectsToEnrich.slice(0, 10).map(async (project) => {
-      const detailedProject = await fetchProjectWithPhotos(project._id);
-      return detailedProject || project;
-    })
-  );
-
-  return enrichedProjects.filter((p): p is PMIProject => p !== null);
+  return filtered;
 }
 
 // Fetch projects by city
 export async function fetchProjectsByCity(city: string): Promise<PMIProject[]> {
-  const allProjects = await fetchAllProjects();
-  return allProjects.filter(
+  return allProjectsData.filter(
     (p) => p.city.toLowerCase() === city.toLowerCase()
   );
 }
 
 // Fetch projects by zip code
 export async function fetchProjectsByZip(zip: string): Promise<PMIProject[]> {
-  const allProjects = await fetchAllProjects();
-  return allProjects.filter((p) => p.zip === zip);
+  return allProjectsData.filter((p) => p.zip === zip);
 }
 
 // Fetch projects with photos
 export async function fetchProjectsWithPhotos(): Promise<PMIProject[]> {
-  const allProjects = await fetchAllProjects();
-  return allProjects.filter((p) => p.withPhotos && p.photoCount > 0);
+  return allProjectsData.filter((p) => p.withPhotos && p.photoCount > 0);
 }
 
 // Fetch featured projects
 export async function fetchFeaturedProjects(): Promise<PMIProject[]> {
-  const allProjects = await fetchAllProjects();
-  return allProjects.filter((p) => p.featured);
+  return allProjectsData.filter((p) => p.featured);
 }
 
-// Get project photo URL (via PMI public map)
-export function getProjectMapUrl(project: PMIProject): string {
-  return `https://projectmapit.com/best-roofing-now-llc/map?project=${project._id}`;
+// Get project page URL (previously linked to ProjectMapIt, now links to local projects page)
+export function getProjectMapUrl(_project: PMIProject): string {
+  return '/projects';
 }
 
 // Get project thumbnail from photos array

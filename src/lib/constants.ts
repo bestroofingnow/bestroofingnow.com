@@ -72,7 +72,7 @@ export const SITE_CONFIG = {
     businessLeaders: 'https://www.businessleadersofcharlotte.com/Sys/PublicProfile/66833596',
     lakeNormanChamber: 'https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292',
     // Other profiles
-    projectMapIt: 'https://projectmapit.com/best-roofing-now-llc',
+
     digitalJournal: 'https://www.digitaljournal.com/pr/news/revupmarketer/best-roofing-llc-unveils-cost-effective-1822246992.html',
     wheree: 'https://best-roofing-now-llc.wheree.com/',
     roofingDirect: 'https://www.roofingdirect.com/contractors/best-roofing-now-llc/',
@@ -97,11 +97,6 @@ export const EXTERNAL_RESOURCES = {
   webhooks: {
     // GHL webhook URL — set via GHL_LEAD_WEBHOOK_URL env var
     ghlLeadWebhook: process.env.GHL_LEAD_WEBHOOK_URL || '',
-  },
-  projectMapIt: {
-    baseUrl: 'https://projectmapit.com/best-roofing-now-llc/map',
-    apiBase: 'https://projectmapit.com/api/v1',
-    apiKey: process.env.PMI_API_KEY || '',
   },
 };
 

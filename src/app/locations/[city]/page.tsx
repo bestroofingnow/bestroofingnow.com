@@ -556,22 +556,6 @@ const locationContent: Record<
   },
 };
 
-// ProjectMapIt map IDs for each location
-const locationMapIds: Record<string, string> = {
-  'charlotte-nc': '6929921876fb8fa56e295536',
-  'concord-nc': '692991a9a73e38e6e4a2a783',
-  'matthews-nc': '6929924976fb8fa56e295607',
-  'mint-hill-nc': '6929925176fb8fa56e295637',
-  'kannapolis-nc': '692991baa73e38e6e4a2a7dc',
-  'cornelius-nc': '692991e176fb8fa56e2952dc',
-  'lake-norman': '6929920c76fb8fa56e2954b8',
-  'huntersville-nc': '692991c876fb8fa56e29522f',
-  'denver-nc': '6929920076fb8fa56e29545b',
-  'davidson-nc': '692991eb76fb8fa56e29530f',
-  'mooresville-nc': '692991f476fb8fa56e295399',
-  'gastonia-nc': '6929923d76fb8fa56e2955c9',
-  'mt-holly-nc': '6929922b76fb8fa56e295597',
-};
 
 // Default content for locations without specific content
 const defaultContent = {
