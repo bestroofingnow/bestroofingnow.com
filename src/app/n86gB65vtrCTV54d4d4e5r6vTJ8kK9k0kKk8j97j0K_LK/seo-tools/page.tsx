@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, TrendingUp, FileText, Users, Loader2 } from 'lucide-react';
+import { Search, TrendingUp, FileText, Users, Loader2, Radar, Shield, Sparkles, Bot, BarChart3 } from 'lucide-react';
 import { adminFetch } from '@/lib/admin-fetch';
 
 export default function SeoToolsPage() {
@@ -134,6 +134,56 @@ export default function SeoToolsPage() {
             <h3 className="text-lg font-semibold">Competitor Analysis</h3>
           </div>
           <p className="text-gray-600 text-sm">Discover competitor domains and keyword gaps to exploit.</p>
+        </Link>
+
+        <Link href={`${adminBase}/seo-tools/scans`} className="bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+              <Radar className="w-5 h-5 text-indigo-600" />
+            </div>
+            <h3 className="text-lg font-semibold">Site Scans</h3>
+          </div>
+          <p className="text-gray-600 text-sm">Weekly ranking scans with position tracking, gainers, and losers.</p>
+        </Link>
+
+        <Link href={`${adminBase}/seo-tools/audits`} className="bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 bg-rose-100 rounded-lg flex items-center justify-center">
+              <Shield className="w-5 h-5 text-rose-600" />
+            </div>
+            <h3 className="text-lg font-semibold">Page Audits</h3>
+          </div>
+          <p className="text-gray-600 text-sm">On-page SEO audit: meta tags, headings, images, schema, speed.</p>
+        </Link>
+
+        <Link href={`${adminBase}/seo-tools/optimizer`} className="bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+              <Sparkles className="w-5 h-5 text-emerald-600" />
+            </div>
+            <h3 className="text-lg font-semibold">AI Optimizer</h3>
+          </div>
+          <p className="text-gray-600 text-sm">AI-generated meta, heading, and content improvements per page.</p>
+        </Link>
+
+        <Link href={`${adminBase}/seo-tools/aeo`} className="bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center">
+              <Bot className="w-5 h-5 text-cyan-600" />
+            </div>
+            <h3 className="text-lg font-semibold">AEO Pipeline</h3>
+          </div>
+          <p className="text-gray-600 text-sm">AI Overview targeting, FAQ schema, structured data, citation optimization.</p>
+        </Link>
+
+        <Link href={`${adminBase}/seo-tools/reports`} className="bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+              <BarChart3 className="w-5 h-5 text-blue-600" />
+            </div>
+            <h3 className="text-lg font-semibold">Weekly Reports</h3>
+          </div>
+          <p className="text-gray-600 text-sm">AI-generated weekly summaries with trends, alerts, and recommendations.</p>
         </Link>
       </div>
     </div>
