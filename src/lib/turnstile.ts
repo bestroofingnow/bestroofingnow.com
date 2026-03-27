@@ -16,17 +16,19 @@ interface TurnstileVerifyResult {
 export async function verifyTurnstileToken(token: string | null | undefined): Promise<TurnstileVerifyResult> {
   const secretKey = process.env.TURNSTILE_SECRET_KEY;
 
-  // In development without keys, skip verification
+  // If Turnstile isn't configured, allow submission (don't block leads)
   if (!secretKey) {
-    if (process.env.NODE_ENV === 'development') {
-      return { success: true };
+    if (process.env.NODE_ENV !== 'development') {
+      console.warn('TURNSTILE_SECRET_KEY is not configured — skipping CAPTCHA');
     }
-    console.error('TURNSTILE_SECRET_KEY is not configured');
-    return { success: false, error: 'CAPTCHA not configured' };
+    return { success: true };
   }
 
+  // If no token provided, allow submission but log it
+  // (widget may not have loaded for the user)
   if (!token) {
-    return { success: false, error: 'CAPTCHA verification required' };
+    console.warn('Turnstile token missing — allowing submission');
+    return { success: true };
   }
 
   try {
@@ -45,12 +47,12 @@ export async function verifyTurnstileToken(token: string | null | undefined): Pr
       return { success: true };
     }
 
-    return {
-      success: false,
-      error: 'CAPTCHA verification failed. Please try again.',
-    };
+    // Log failed verification but still allow submission — never lose a lead
+    console.warn('Turnstile verification failed:', data['error-codes']);
+    return { success: true };
   } catch (error) {
     console.error('Turnstile verification error:', error);
-    return { success: false, error: 'CAPTCHA verification failed' };
+    // Network/API failure — allow submission, don't block leads
+    return { success: true };
   }
 }
