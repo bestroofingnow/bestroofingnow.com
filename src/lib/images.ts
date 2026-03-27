@@ -165,23 +165,23 @@ export const IMAGES = {
     work2: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
     work3: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
     work4: `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`,
-    work5: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`, // fallback - original missing from PMI
-    work6: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`, // fallback - original missing from PMI
-    work7: `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`, // fallback - original missing from PMI
-    work8: `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`, // fallback - original missing from PMI
+    work5: `${PMI}/full-daa76aa1-8063-4951-8df1-9c4fa0193fbf.jpeg`, // replacement - original missing from PMI
+    work6: `${PMI}/full-d393635e-9ef9-4029-8f0b-94665c4fc527.jpeg`, // replacement - original missing from PMI
+    work7: `${PMI}/full-7af5f870-cc77-4685-bc18-7fb52016aa47.jpeg`, // replacement - original missing from PMI
+    work8: `${PMI}/full-8d86cfc6-b7b2-497c-8814-08370dd7365c.jpeg`, // replacement - original missing from PMI
   },
 
   // Professional/Marketing images - replaced with real PMI project showcase photos
   marketing: {
-    image1: `${PMI}/full-fc50a77c-88a0-4057-b721-775da5beae84.jpeg`, // fallback - original missing from PMI
-    image2: `${PMI}/full-2eabcdf5-2cc3-434f-a9f7-9d0654950e33.jpeg`, // fallback - original missing from PMI
-    image3: `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`, // fallback - original missing from PMI
+    image1: `${PMI}/full-4864ac50-76be-4e99-8768-209d54235119.jpeg`,
+    image2: `${PMI}/full-48a95f36-bac5-4f52-a4a7-4cd3191119ff.jpeg`,
+    image3: `${PMI}/full-4ebe8cc6-e668-4066-92ad-6ccee8763dc7.jpeg`,
     image4: `${PMI}/2024-07-31-01-39-21-4ab97766-d05f-4a09-bee7-f43f3c591dae.jpg`,
-    image5: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`, // fallback - original missing from PMI
+    image5: `${PMI}/full-607b6541-c151-49b9-8c73-fe9f92252f19.jpeg`,
     image6: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
     image7: `${PMI}/2024-07-02-04-38-14-ac6ed3f5-a9ef-4b2d-91ab-a3790e5b1bb3.jpg`,
     image8: `${PMI}/2024-06-29-02-58-16-3cf62886-c208-47ee-97df-665ce9af09ad.jpg`,
-    image9: `${PMI}/2024-05-17-06-53-49-106727f5-6597-4311-af3f-39fa31609843.jpg`, // fallback - original missing from PMI
+    image9: `${PMI}/full-f412b906-b8c1-4e7d-9c68-50a6695a76da.jpeg`,
     image10: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`,
     image11: `${PMI}/2024-05-17-06-53-49-106727f5-6597-4311-af3f-39fa31609843.jpg`,
     image12: `${PMI}/2024-05-15-02-51-18-30457b83-64a7-4a2f-ad1f-234a9eaba60b.jpg`,
