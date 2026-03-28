@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { BookOpen, Plus, Loader2, Eye, EyeOff, Trash2, Database } from 'lucide-react';
+import { BookOpen, Plus, Loader2, Eye, EyeOff, Trash2, Database, Zap } from 'lucide-react';
 import { adminFetch } from '@/lib/admin-fetch';
 
 interface KBEntry {
@@ -49,6 +49,23 @@ export default function KnowledgeBasePage() {
     }
   }
 
+  const [seedingAuthority, setSeedingAuthority] = useState(false);
+
+  async function seedAuthority() {
+    setSeedingAuthority(true);
+    try {
+      const res = await adminFetch('/api/admin/knowledge-base/seed-authority', { method: 'POST' });
+      const json = await res.json();
+      const d = json.data;
+      alert(`Authority seed: ${d.created} created, ${d.skipped} skipped, ${d.errors} errors`);
+      await fetchEntries();
+    } catch {
+      alert('Authority seed failed');
+    } finally {
+      setSeedingAuthority(false);
+    }
+  }
+
   async function togglePublish(id: string, published: boolean) {
     try {
       await adminFetch(`/api/admin/knowledge-base/${id}`, {
@@ -82,6 +99,14 @@ export default function KnowledgeBasePage() {
           <p className="text-gray-600 text-sm">{entries.length} entries ({entries.filter(e => e.published).length} published)</p>
         </div>
         <div className="flex gap-3">
+          <button
+            onClick={seedAuthority}
+            disabled={seedingAuthority}
+            className="bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700 flex items-center gap-2 text-sm disabled:opacity-50"
+          >
+            {seedingAuthority ? <Loader2 className="w-4 h-4 animate-spin" /> : <Zap className="w-4 h-4" />}
+            Seed Authority Content
+          </button>
           <button
             onClick={seedFaqs}
             disabled={seeding}

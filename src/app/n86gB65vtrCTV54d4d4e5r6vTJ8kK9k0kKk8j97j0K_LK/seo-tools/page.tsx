@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, TrendingUp, FileText, Users, Loader2, Radar, Shield, Sparkles, Bot, BarChart3 } from 'lucide-react';
+import { Search, TrendingUp, FileText, Users, Loader2, Radar, Shield, Sparkles, Bot, BarChart3, Map } from 'lucide-react';
 import { adminFetch } from '@/lib/admin-fetch';
 
 export default function SeoToolsPage() {
@@ -184,6 +184,16 @@ export default function SeoToolsPage() {
             <h3 className="text-lg font-semibold">Weekly Reports</h3>
           </div>
           <p className="text-gray-600 text-sm">AI-generated weekly summaries with trends, alerts, and recommendations.</p>
+        </Link>
+
+        <Link href={`${adminBase}/seo-tools/authority-map`} className="bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 bg-violet-100 rounded-lg flex items-center justify-center">
+              <Map className="w-5 h-5 text-violet-600" />
+            </div>
+            <h3 className="text-lg font-semibold">Authority Map</h3>
+          </div>
+          <p className="text-gray-600 text-sm">Topical coverage analysis — find content gaps and become the AI citation authority.</p>
         </Link>
       </div>
     </div>
