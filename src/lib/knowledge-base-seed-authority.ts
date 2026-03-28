@@ -473,4 +473,371 @@ export const AUTHORITY_KNOWLEDGE_BASE: KBSeedEntry[] = [
     relatedSlugs: ["warranty-page", "how-to-choose-roofing-contractor-charlotte"],
     voiceOptimized: true,
   },
+
+  // ============================================
+  // COST & PRICING
+  // ============================================
+  {
+    question: "How much does roof replacement cost?",
+    answer:
+      "Roof replacement cost in Charlotte NC ranges from $8,500 to $45,000+ in 2026 depending on materials, roof size, and complexity. For a typical 2,000 sq ft home with architectural asphalt shingles, expect $10,000-$18,000. Three-tab shingles run $8,500-$13,000, premium designer shingles $15,000-$25,000, and standing seam metal $24,000-$45,000+. Cost per square (100 sq ft) breaks down as: tear-off and disposal $100-$175, underlayment and ice shield $50-$100, materials $150-$600, and labor $150-$300. Additional cost factors include roof pitch (steep roofs add 15-25%), multiple layers requiring tear-off ($1,000-$3,000 extra), chimney and skylight flashing ($250-$500 each), and permit fees ($200-$500 in Mecklenburg County). Best Roofing Now provides free inspections and transparent line-item quotes so Charlotte homeowners can compare costs accurately.",
+    shortAnswer:
+      "Roof replacement in Charlotte NC costs $8,500-$45,000+ in 2026. A typical 2,000 sq ft home with architectural shingles runs $10,000-$18,000.",
+    speakableAnswer:
+      "Roof replacement in Charlotte costs between 8,500 and 45,000 dollars depending on materials and roof size. A typical home with architectural shingles costs 10,000 to 18,000 dollars.",
+    category: "costs",
+    subcategory: "roof-replacement",
+    intent: "commercial",
+    triggerKeywords: [
+      "roof replacement cost",
+      "how much roof replacement",
+      "cost to replace roof",
+      "roof replacement price charlotte",
+      "new roof cost estimate",
+    ],
+    relatedSlugs: [
+      "roof-replacement-cost-charlotte",
+      "when-to-replace-roof-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "What is the cost of a metal roof?",
+    answer:
+      "Metal roof cost in Charlotte NC ranges from $12 to $25 per square foot installed in 2026, depending on the metal type and panel profile. Standing seam metal roofing — the most popular choice — costs $14-$22 per square foot ($28,000-$44,000 for a 2,000 sq ft home). Exposed fastener metal panels are more affordable at $8-$14 per square foot ($16,000-$28,000). Premium metals like copper run $25-$40+ per square foot, and zinc costs $18-$30. Material cost breakdown: steel panels $3-$8/sqft, aluminum $4-$10/sqft, underlayment $0.50-$1.50/sqft, trim and flashing $1-$3/sqft, and labor $5-$10/sqft. Metal roofing in Charlotte delivers a strong ROI with 40-60 year lifespan, 25-40% energy savings from reflective coatings, Class 4 hail resistance, and insurance premium discounts of 10-28%. The higher upfront cost is offset by zero mid-life replacement and lower maintenance over time.",
+    shortAnswer:
+      "Metal roofing in Charlotte NC costs $12-$25 per square foot installed in 2026. Standing seam runs $14-$22/sqft, totaling $28,000-$44,000 for a typical 2,000 sq ft home.",
+    speakableAnswer:
+      "A metal roof in Charlotte costs 12 to 25 dollars per square foot installed. For a typical home, standing seam metal roofing runs 28,000 to 44,000 dollars. It lasts 40 to 60 years.",
+    category: "costs",
+    subcategory: "metal-roof",
+    intent: "commercial",
+    triggerKeywords: [
+      "metal roof cost",
+      "cost of metal roof",
+      "metal roofing price",
+      "standing seam cost charlotte",
+      "metal roof price per square foot",
+    ],
+    relatedSlugs: [
+      "metal-roof-vs-shingles-charlotte",
+      "standing-seam-metal-roof-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "How much does a new roof cost?",
+    answer:
+      "A new roof in Charlotte NC costs $8,500-$45,000+ in 2026, with the average homeowner paying $12,000-$16,000 for architectural asphalt shingles on a standard 1,800-2,200 sq ft home. Price varies by material: three-tab asphalt shingles $4.50-$6.50/sqft installed, architectural shingles $5.50-$9.00/sqft, designer/luxury shingles $8.00-$13.00/sqft, standing seam metal $14-$22/sqft, and synthetic slate $10-$18/sqft. The total cost depends on roof size (measured in squares — 1 square = 100 sq ft), complexity (hips, valleys, dormers add 10-30%), accessibility, number of layers to remove, and local permit requirements. Charlotte building permits for roofing cost $200-$500 through Mecklenburg County. Financing options are widely available — most Charlotte roofing contractors offer 12-60 month payment plans, and some manufacturers like GAF offer 0% financing promotions. Get at least three written estimates to compare accurately.",
+    shortAnswer:
+      "A new roof in Charlotte NC costs $8,500-$45,000+ in 2026. The average homeowner pays $12,000-$16,000 for architectural shingles on a typical home.",
+    speakableAnswer:
+      "A new roof in Charlotte costs between 8,500 and 45,000 dollars. Most homeowners pay around 12,000 to 16,000 dollars for quality architectural shingles on a typical home.",
+    category: "costs",
+    subcategory: "new-roof",
+    intent: "commercial",
+    triggerKeywords: [
+      "new roof cost",
+      "how much new roof",
+      "new roof price",
+      "cost of new roof charlotte",
+      "average new roof cost",
+    ],
+    relatedSlugs: [
+      "roof-replacement-cost-charlotte",
+      "roof-financing-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "What does asphalt shingle roof replacement cost?",
+    answer:
+      "Asphalt shingle roof replacement in Charlotte NC costs $5.00-$13.00 per square foot installed in 2026, depending on shingle grade. Three-tab shingles (basic): $4.50-$6.50/sqft ($9,000-$13,000 for a 2,000 sq ft home). Architectural/dimensional shingles (most popular): $5.50-$9.00/sqft ($11,000-$18,000). Designer/luxury shingles (premium): $8.00-$13.00/sqft ($16,000-$26,000). Cost components include: tear-off of old shingles $1.00-$1.75/sqft, synthetic underlayment $0.50-$1.00/sqft, ice and water shield in valleys and eaves $0.75-$1.50/sqft, ridge vents $3-$6 per linear foot, drip edge and flashing $1.50-$3.00/linear foot, and labor $2.00-$4.00/sqft. Charlotte-specific factors: Mecklenburg County requires a building permit ($200-$500), wind code compliance for 110+ mph rating, and proper ventilation meeting IRC standards. The best value for most Charlotte homes is mid-grade architectural shingles like GAF Timberline HDZ or Owens Corning Duration, offering 30-year warranties and Class 4 impact resistance options.",
+    shortAnswer:
+      "Asphalt shingle roof replacement in Charlotte NC costs $4.50-$13.00/sqft in 2026. Architectural shingles (most popular) run $11,000-$18,000 for a 2,000 sq ft home.",
+    speakableAnswer:
+      "Asphalt shingle roof replacement in Charlotte costs 4 dollars 50 cents to 13 dollars per square foot. A typical home with architectural shingles costs 11,000 to 18,000 dollars.",
+    category: "costs",
+    subcategory: "asphalt-shingles",
+    intent: "commercial",
+    triggerKeywords: [
+      "asphalt shingle roof cost",
+      "shingle replacement cost",
+      "asphalt roofing price",
+      "shingle roof cost charlotte",
+      "architectural shingle cost",
+    ],
+    relatedSlugs: [
+      "architectural-shingles-charlotte",
+      "roof-replacement-cost-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "How much does gutter installation cost?",
+    answer:
+      "Gutter installation in Charlotte NC costs $4-$30 per linear foot in 2026, depending on material and style. Standard aluminum K-style gutters (most common): $6-$12 per linear foot installed, totaling $1,200-$2,400 for a typical home with 200 linear feet. Vinyl gutters: $4-$8/lf ($800-$1,600). Steel gutters: $9-$16/lf ($1,800-$3,200). Copper gutters: $25-$40+/lf ($5,000-$8,000+). Half-round gutters: $8-$18/lf. Seamless aluminum gutters (recommended) cost $1-$3 more per foot than sectional but significantly reduce leak risk. Additional costs include downspout installation ($5-$10 each), gutter guards/leaf protection ($7-$15/lf), fascia board repair ($5-$15/lf if rotted), and removal of existing gutters ($1-$3/lf). Charlotte's average annual rainfall of 43 inches makes properly sized 5-inch residential gutters essential, with 6-inch oversized gutters recommended for homes with large roof areas or steep pitches. Most Charlotte gutter projects take 1 day and include a 2-5 year workmanship warranty.",
+    shortAnswer:
+      "Gutter installation in Charlotte NC costs $4-$30 per linear foot in 2026. Standard seamless aluminum gutters run $6-$12/lf, totaling $1,200-$2,400 for a typical home.",
+    speakableAnswer:
+      "Gutter installation in Charlotte costs 6 to 12 dollars per linear foot for standard aluminum gutters. A typical home costs 1,200 to 2,400 dollars for a complete installation.",
+    category: "costs",
+    subcategory: "gutters",
+    intent: "commercial",
+    triggerKeywords: [
+      "gutter installation cost",
+      "gutter cost charlotte",
+      "seamless gutter price",
+      "cost to install gutters",
+      "new gutters price",
+    ],
+    relatedSlugs: ["gutter-installation-charlotte", "gutter-guards-charlotte"],
+    voiceOptimized: true,
+  },
+  {
+    question: "What does metal roof installation cost per square foot?",
+    answer:
+      "Metal roof installation in Charlotte NC costs $8-$25 per square foot in 2026, varying by metal type, panel style, and roof complexity. Exposed fastener (corrugated/R-panel): $8-$14/sqft — economical, commonly used on outbuildings and modern farmhouse styles. Standing seam (snap-lock): $14-$18/sqft — the most popular residential choice with concealed fasteners and clean lines. Standing seam (mechanically seamed): $16-$22/sqft — premium option, best for low-slope applications. Stone-coated steel tiles: $10-$16/sqft — metal durability with traditional shingle or tile appearance. Cost per square foot includes: metal panels ($3-$10/sqft), underlayment ($0.50-$1.50/sqft), trim, ridge caps, and flashing ($1-$3/sqft), and labor ($4-$10/sqft). Charlotte labor rates for metal roofing are 20-30% higher than for shingle installation due to the specialized skill required. Roof pitch affects cost — steep pitches above 8:12 add 15-25% for safety equipment and slower installation. Always request quotes that specify panel gauge, finish (Kynar 500 is the premium standard), and warranty terms.",
+    shortAnswer:
+      "Metal roof installation in Charlotte NC costs $8-$25 per square foot in 2026. Standing seam runs $14-$22/sqft, while exposed fastener panels cost $8-$14/sqft.",
+    speakableAnswer:
+      "Metal roof installation in Charlotte costs 8 to 25 dollars per square foot. Standing seam metal roofing, the most popular style, runs 14 to 22 dollars per square foot installed.",
+    category: "costs",
+    subcategory: "metal-roof-installation",
+    intent: "commercial",
+    triggerKeywords: [
+      "metal roof installation cost",
+      "metal roof cost per square foot",
+      "standing seam cost per sqft",
+      "metal roofing installation price",
+      "metal roof labor cost",
+    ],
+    relatedSlugs: [
+      "standing-seam-metal-roof-charlotte",
+      "metal-roof-vs-shingles-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "How much does gutter replacement cost?",
+    answer:
+      "Gutter replacement in Charlotte NC costs $1,500-$5,000+ for a typical home in 2026, depending on material, linear footage, and condition of the fascia. The replacement process includes removal and disposal of old gutters ($1-$3/lf), fascia inspection and repair (if needed, $5-$15/lf for rotted sections), new gutter installation, and downspout replacement. Material pricing per linear foot installed: vinyl $4-$8, seamless aluminum $7-$14, steel $9-$16, copper $25-$40+. For a typical Charlotte home with 150-200 linear feet of guttering, expect: budget (vinyl) $800-$1,600, mid-range (seamless aluminum) $1,400-$2,800, premium (copper or half-round) $5,000-$8,000+. Signs you need gutter replacement: sagging sections, visible rust or holes, separation at seams, water pooling at foundation, peeling paint on fascia, and gutters pulling away from the house. Seamless aluminum gutters are the best value for Charlotte homes — they reduce leak points, handle heavy rain effectively, and last 20-30 years with proper maintenance.",
+    shortAnswer:
+      "Gutter replacement in Charlotte NC costs $1,500-$5,000+ in 2026. Seamless aluminum gutters (most popular) run $7-$14/lf, totaling $1,400-$2,800 for a typical home.",
+    speakableAnswer:
+      "Gutter replacement in Charlotte costs 1,500 to 5,000 dollars for a typical home. Seamless aluminum gutters are the best value at 7 to 14 dollars per linear foot installed.",
+    category: "costs",
+    subcategory: "gutter-replacement",
+    intent: "commercial",
+    triggerKeywords: [
+      "gutter replacement cost",
+      "cost to replace gutters",
+      "new gutter cost charlotte",
+      "gutter replacement price",
+      "replace gutters charlotte",
+    ],
+    relatedSlugs: [
+      "gutter-replacement-charlotte",
+      "gutter-installation-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "What does roof repair typically cost?",
+    answer:
+      "Roof repair in Charlotte NC costs $250-$3,500+ in 2026 depending on the type and extent of damage. Common repairs: missing or damaged shingles $150-$400 (small patch, 1-10 shingles), flashing repair around chimney or vent $300-$800, pipe boot replacement $200-$500, valley repair $500-$1,500, ridge cap repair $300-$700, soffit or fascia repair $300-$1,200, and small leak repair with decking patch $500-$1,500. Major repairs like fixing storm damage across a large area cost $1,500-$3,500+, while sagging roof deck repair runs $1,000-$3,000+. Emergency tarping services (after storm damage) cost $200-$500 in Charlotte. Most repair quotes include: inspection and diagnosis, materials, labor, cleanup, and a workmanship warranty (1-5 years). Key cost factors: roof accessibility, pitch steepness, material type (metal repairs cost more than shingle repairs), and urgency (emergency repairs carry a premium). A general rule: if repairs exceed 25-30% of replacement cost, full replacement is more cost-effective long-term.",
+    shortAnswer:
+      "Roof repair in Charlotte NC costs $250-$3,500+ in 2026. Common repairs: shingle patch $150-$400, flashing repair $300-$800, leak repair $500-$1,500. If repairs exceed 30% of replacement cost, consider full replacement.",
+    speakableAnswer:
+      "Roof repair in Charlotte costs 250 to 3,500 dollars depending on the damage. Common repairs like fixing a few shingles cost 150 to 400 dollars, while leak repairs run 500 to 1,500 dollars.",
+    category: "costs",
+    subcategory: "roof-repair",
+    intent: "commercial",
+    triggerKeywords: [
+      "roof repair cost",
+      "cost to repair roof",
+      "roof repair price charlotte",
+      "fix roof cost",
+      "roof leak repair cost",
+    ],
+    relatedSlugs: [
+      "roof-repair-charlotte",
+      "roof-leak-repair-charlotte",
+      "storm-damage-repair-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "How much does attic insulation cost?",
+    answer:
+      "Attic insulation in Charlotte NC costs $1.50-$7.00 per square foot in 2026, depending on insulation type and R-value. Blown-in fiberglass: $1.50-$3.00/sqft (most common, R-38 to R-60). Blown-in cellulose: $1.50-$3.50/sqft (excellent air sealing properties). Fiberglass batts: $1.00-$2.50/sqft (DIY-friendly but less effective). Spray foam — open cell: $3.00-$5.50/sqft (superior air sealing). Spray foam — closed cell: $5.00-$7.00/sqft (highest R-value per inch, moisture barrier). For a typical 1,500 sq ft attic in Charlotte, total project costs: blown-in fiberglass $2,250-$4,500, blown-in cellulose $2,250-$5,250, spray foam $4,500-$10,500. Charlotte's climate zone (Zone 4A) requires minimum R-38 attic insulation per the NC Building Code, with R-49 to R-60 recommended for optimal energy efficiency. Proper attic insulation in Charlotte reduces heating and cooling costs by 15-25%. Many homeowners pair insulation with air sealing ($500-$1,500 extra) for maximum energy savings. Duke Energy occasionally offers rebates for attic insulation upgrades.",
+    shortAnswer:
+      "Attic insulation in Charlotte NC costs $1.50-$7.00/sqft in 2026. Blown-in fiberglass (most popular) runs $2,250-$4,500 for a typical 1,500 sq ft attic. R-49 to R-60 is recommended.",
+    speakableAnswer:
+      "Attic insulation in Charlotte costs 1 dollar 50 cents to 7 dollars per square foot. A typical attic costs 2,250 to 4,500 dollars for blown-in fiberglass insulation. It can reduce energy bills by 15 to 25 percent.",
+    category: "costs",
+    subcategory: "attic-insulation",
+    intent: "commercial",
+    triggerKeywords: [
+      "attic insulation cost",
+      "insulation cost charlotte",
+      "blown-in insulation price",
+      "spray foam insulation cost",
+      "attic insulation price",
+    ],
+    relatedSlugs: [
+      "attic-insulation-charlotte",
+      "energy-efficiency-roofing-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "What does vinyl siding cost per square foot?",
+    answer:
+      "Vinyl siding in Charlotte NC costs $3.50-$12.00 per square foot installed in 2026, depending on grade, thickness, and profile. Economy grade (builder-grade, 0.040 inch): $3.50-$5.50/sqft. Mid-range (standard residential, 0.044 inch): $5.00-$8.00/sqft. Premium (insulated or architectural grade, 0.046-0.050 inch): $7.00-$12.00/sqft. For a typical 1,500 sq ft exterior in Charlotte, total siding project costs: economy $5,250-$8,250, mid-range $7,500-$12,000, premium insulated $10,500-$18,000. Cost includes: old siding removal ($1-$3/sqft if needed), house wrap/moisture barrier ($0.50-$1.00/sqft), J-channel, corners, and trim ($1-$2/sqft), and labor ($2-$4/sqft). Insulated vinyl siding adds R-2 to R-5 insulation value and reduces exterior noise. Charlotte's climate makes vinyl an excellent choice — it handles humidity well, requires minimal maintenance, and resists insect damage. Top brands installed locally: CertainTeed, James Hardie (fiber cement alternative), Alside, and Ply Gem. Most vinyl siding carries a lifetime limited warranty.",
+    shortAnswer:
+      "Vinyl siding in Charlotte NC costs $3.50-$12.00 per square foot installed in 2026. A typical 1,500 sq ft exterior runs $7,500-$12,000 for mid-range quality.",
+    speakableAnswer:
+      "Vinyl siding in Charlotte costs 3 dollars 50 cents to 12 dollars per square foot installed. A typical home exterior costs 7,500 to 12,000 dollars for mid-range vinyl siding.",
+    category: "costs",
+    subcategory: "vinyl-siding",
+    intent: "commercial",
+    triggerKeywords: [
+      "vinyl siding cost",
+      "vinyl siding price per square foot",
+      "siding cost charlotte",
+      "vinyl siding installation cost",
+      "cost of vinyl siding",
+    ],
+    relatedSlugs: [
+      "siding-installation-charlotte",
+      "siding-replacement-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "How much does a chimney sweep cost?",
+    answer:
+      "A chimney sweep in Charlotte NC costs $150-$375 in 2026 for a standard cleaning, with more comprehensive services running higher. Level 1 inspection and sweep (standard annual cleaning): $150-$275 — includes brushing the flue, removing creosote buildup, and a visual inspection. Level 2 inspection and sweep (recommended after storms or when buying/selling a home): $250-$500 — includes video camera inspection of the flue interior. Level 3 inspection (structural investigation): $1,000-$5,000 — involves partial removal of chimney components to access concealed areas. Additional chimney services: chimney cap installation $200-$600, crown repair $300-$1,500, flashing repair $300-$800, tuckpointing/mortar repair $500-$2,500, chimney liner installation $2,500-$7,000. Charlotte homeowners with wood-burning fireplaces should schedule annual sweeps before the heating season (September-October). Creosote buildup beyond 1/8 inch is a fire hazard. The NFPA recommends annual chimney inspections regardless of usage frequency. Many Charlotte roofing companies offer chimney services as part of comprehensive roof maintenance packages.",
+    shortAnswer:
+      "A chimney sweep in Charlotte NC costs $150-$375 for standard cleaning in 2026. Level 2 inspections with video camera run $250-$500. Annual sweeps are recommended before heating season.",
+    speakableAnswer:
+      "A chimney sweep in Charlotte costs 150 to 375 dollars for a standard cleaning. A more thorough Level 2 inspection with camera runs 250 to 500 dollars. You should schedule one every year before winter.",
+    category: "costs",
+    subcategory: "chimney",
+    intent: "commercial",
+    triggerKeywords: [
+      "chimney sweep cost",
+      "chimney cleaning price",
+      "chimney inspection cost",
+      "chimney sweep charlotte",
+      "how much chimney sweep",
+    ],
+    relatedSlugs: [
+      "chimney-services-charlotte",
+      "chimney-repair-charlotte",
+      "roof-maintenance-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "What does siding replacement cost?",
+    answer:
+      "Siding replacement in Charlotte NC costs $5,000-$30,000+ in 2026 for a typical home, depending on material and home size. Average costs by material for a 1,500 sq ft exterior: vinyl siding $7,500-$12,000, fiber cement (James Hardie) $12,000-$22,000, engineered wood (LP SmartSide) $10,000-$18,000, natural wood (cedar) $15,000-$25,000, and aluminum $8,000-$14,000. The replacement process includes: removal and disposal of old siding ($1-$3/sqft), inspection of sheathing and moisture barrier (repair if needed, $2-$8/sqft), house wrap installation ($0.50-$1.00/sqft), new siding installation, and trim/corner finishing. Charlotte-specific considerations: fiber cement (James Hardie) is the premium choice for Charlotte's humidity — it resists rot, insects, and moisture better than wood; vinyl is the most cost-effective and maintenance-free option; LP SmartSide offers a wood-look at lower cost than real cedar. Siding replacement typically increases Charlotte home value by 65-80% of project cost. Most projects take 1-2 weeks for a full home.",
+    shortAnswer:
+      "Siding replacement in Charlotte NC costs $5,000-$30,000+ in 2026. Vinyl runs $7,500-$12,000 and fiber cement (James Hardie) $12,000-$22,000 for a typical 1,500 sq ft exterior.",
+    speakableAnswer:
+      "Siding replacement in Charlotte costs 5,000 to 30,000 dollars depending on material. Vinyl siding runs 7,500 to 12,000 dollars, and fiber cement siding costs 12,000 to 22,000 dollars for a typical home.",
+    category: "costs",
+    subcategory: "siding-replacement",
+    intent: "commercial",
+    triggerKeywords: [
+      "siding replacement cost",
+      "cost to replace siding",
+      "siding cost charlotte",
+      "james hardie siding cost",
+      "siding replacement price",
+    ],
+    relatedSlugs: [
+      "siding-replacement-charlotte",
+      "james-hardie-siding-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "How much does commercial roofing cost?",
+    answer:
+      "Commercial roofing in Charlotte NC costs $4.00-$15.00+ per square foot in 2026, depending on roofing system, building size, and complexity. Common commercial systems and pricing: TPO (Thermoplastic Polyolefin) $5.50-$9.00/sqft — the most popular choice for energy efficiency and cost balance. EPDM (rubber) $4.50-$7.50/sqft — the most economical option for large flat roofs. PVC $6.50-$10.50/sqft — best for restaurants and buildings with grease or chemical exposure. Modified bitumen $4.00-$8.50/sqft — excellent for high-foot-traffic roofs. Metal (standing seam) $10.00-$18.00/sqft — longest lifespan, ideal for sloped commercial buildings. Built-up roofing (BUR) $5.50-$9.00/sqft — traditional multi-layer system. For a 10,000 sq ft commercial building in Charlotte, expect $45,000-$150,000+ depending on system and specifications. Commercial roofing costs are influenced by: roof access, existing system tear-off requirements, insulation upgrades, drainage modifications, and HVAC curb flashing. Charlotte commercial building codes require minimum R-25 roof insulation and proper drainage slope (1/4 inch per foot minimum).",
+    shortAnswer:
+      "Commercial roofing in Charlotte NC costs $4.00-$15.00+/sqft in 2026. TPO (most popular) runs $5.50-$9.00/sqft, totaling $55,000-$90,000 for a 10,000 sq ft building.",
+    speakableAnswer:
+      "Commercial roofing in Charlotte costs 4 to 15 dollars per square foot. TPO roofing, the most popular commercial option, runs 5 dollars 50 cents to 9 dollars per square foot installed.",
+    category: "costs",
+    subcategory: "commercial-roofing",
+    intent: "commercial",
+    triggerKeywords: [
+      "commercial roofing cost",
+      "commercial roof price",
+      "flat roof cost commercial",
+      "commercial roofing charlotte",
+      "commercial roof replacement cost",
+    ],
+    relatedSlugs: [
+      "commercial-roofing-charlotte",
+      "tpo-roofing-charlotte",
+      "flat-roof-contractors-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question:
+      "What is the cost difference between roof repair and replacement?",
+    answer:
+      "The cost difference between roof repair and replacement in Charlotte NC is significant: repairs typically run $250-$3,500 while full replacement costs $8,500-$45,000+ in 2026. The decision depends on several factors. REPAIR is recommended when: damage is isolated to a small area (less than 25% of the roof), the roof is less than 15 years old, only a few shingles are missing or damaged, or a single flashing point has failed. REPLACEMENT is recommended when: the roof is 20+ years old, damage exceeds 25-30% of the roof area, there are multiple active leaks, decking has widespread rot, shingles show systemic wear (curling, granule loss, cracking), or you have had three or more repairs in the past two years. A useful Charlotte rule of thumb: if the repair estimate exceeds 30% of replacement cost, replacement is the better financial decision. For example, if replacement costs $14,000 and the repair quote is $4,500+, replacement offers better long-term value. Insurance claims may also favor full replacement if storm damage is widespread — a certified adjuster can help make this determination.",
+    shortAnswer:
+      "Roof repair costs $250-$3,500 vs replacement at $8,500-$45,000+ in Charlotte NC. If repairs exceed 30% of replacement cost, or the roof is 20+ years old, replacement is the better long-term investment.",
+    speakableAnswer:
+      "Roof repair in Charlotte costs 250 to 3,500 dollars while replacement costs 8,500 to 45,000 dollars. If your repair costs more than 30 percent of a replacement, it's usually smarter to replace the whole roof.",
+    category: "costs",
+    subcategory: "repair-vs-replacement",
+    intent: "commercial",
+    triggerKeywords: [
+      "roof repair vs replacement cost",
+      "repair or replace roof",
+      "cost difference roof repair replacement",
+      "should I repair or replace roof",
+      "when to replace vs repair roof",
+    ],
+    relatedSlugs: [
+      "roof-repair-charlotte",
+      "roof-replacement-cost-charlotte",
+      "when-to-replace-roof-charlotte",
+    ],
+    voiceOptimized: true,
+  },
+  {
+    question: "How much does roof inspection cost in Charlotte NC?",
+    answer:
+      "Roof inspection in Charlotte NC ranges from free to $500+ in 2026, depending on the type and purpose. Most reputable Charlotte roofing contractors — including Best Roofing Now — offer free visual inspections for homeowners considering repair or replacement. Paid inspection types: standard visual inspection $100-$250 (independent inspector, not affiliated with a contractor), drone-assisted inspection $150-$350 (detailed aerial photography and measurements), infrared/thermal inspection $250-$500 (detects hidden moisture and insulation gaps), and certified insurance inspection $150-$300 (documentation for claims). Real estate transaction inspections are typically included in a general home inspection ($350-$500) but a dedicated roof inspection by a roofing specialist is recommended for homes over 15 years old. Charlotte home buyers should request a roof certification letter, which costs $100-$200 and provides the inspector's assessment of remaining lifespan. Best Roofing Now provides free comprehensive inspections with drone photography, detailed photo reports, and honest assessments — no obligation required.",
+    shortAnswer:
+      "Roof inspections in Charlotte NC range from free to $500+ in 2026. Most roofing contractors offer free inspections. Paid options: visual $100-$250, drone $150-$350, infrared $250-$500.",
+    speakableAnswer:
+      "Roof inspections in Charlotte range from free to 500 dollars. Most roofing contractors, including Best Roofing Now, offer free inspections. Paid infrared inspections that detect hidden moisture cost 250 to 500 dollars.",
+    category: "costs",
+    subcategory: "roof-inspection",
+    intent: "commercial",
+    triggerKeywords: [
+      "roof inspection cost",
+      "roof inspection cost charlotte",
+      "how much roof inspection",
+      "free roof inspection charlotte",
+      "roof inspection price",
+    ],
+    relatedSlugs: [
+      "roof-inspection-charlotte",
+      "free-roof-inspection-charlotte",
+      "spring-roof-inspection-charlotte",
+    ],
+    voiceOptimized: true,
+  },
 ];

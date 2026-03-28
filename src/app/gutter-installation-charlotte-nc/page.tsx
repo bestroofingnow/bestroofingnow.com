@@ -14,7 +14,9 @@ import {
   Building2,
   Clock,
   Wrench,
+  DollarSign,
 } from 'lucide-react';
+import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
@@ -943,6 +945,82 @@ export default function GutterInstallationCharlottePage() {
               View All Service Areas
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Gutter Installation Cost Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <DollarSign className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Pricing Guide</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Gutter Installation Cost in Charlotte NC
+              </h2>
+              <p className="text-gray max-w-2xl mx-auto">
+                Gutter prices vary by material, size, and home layout. Here are 2026 installed prices for Charlotte-area gutter projects.
+              </p>
+            </div>
+
+            {/* Cost Grid */}
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+                <h3 className="font-bold text-dark text-lg mb-2">5&quot; Aluminum</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$4 - $7</p>
+                <p className="text-sm text-gray mb-3">per linear foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Most popular choice</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Rust-resistant</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> 25+ color options</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-accent">
+                <h3 className="font-bold text-dark text-lg mb-2">6&quot; Oversized</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$6 - $10</p>
+                <p className="text-sm text-gray mb-3">per linear foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Handles heavy rainfall</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Ideal for large roofs</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Reduces overflow risk</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+                <h3 className="font-bold text-dark text-lg mb-2">Copper</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$25 - $40</p>
+                <p className="text-sm text-gray mb-3">per linear foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> 50-100 year lifespan</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Beautiful patina finish</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Increases home value</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Total Project Cost Callout */}
+            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center mb-10">
+              <h3 className="text-xl font-bold text-dark mb-2">Total Gutter Cost for a Typical Charlotte Home</h3>
+              <p className="text-4xl font-bold text-primary mb-2">$600 - $2,400</p>
+              <p className="text-gray max-w-xl mx-auto">
+                Based on 150-200 linear feet of seamless aluminum gutters with downspouts, hangers, and end caps. Copper gutter systems for the same home run $3,750-$8,000.
+              </p>
+            </div>
+
+            {/* Citation */}
+            <CitationSection
+              heading="Gutter Installation Cost Facts"
+              citations={[
+                {
+                  topic: 'gutter installation cost Charlotte NC 2026',
+                  content:
+                    'Gutter installation in Charlotte NC costs $4 to $40 per linear foot in 2026, depending on material. Standard 5-inch seamless aluminum gutters cost $4-$7/ft, 6-inch oversized gutters $6-$10/ft, and copper gutters $25-$40/ft installed. A complete gutter system for a typical Charlotte home with 150-200 linear feet of gutters and downspouts costs $600 to $2,400 for aluminum or $3,750 to $8,000 for copper.',
+                  source: 'Best Roofing Now 2026 pricing data — Charlotte NC market',
+                },
+              ]}
+            />
           </div>
         </div>
       </section>

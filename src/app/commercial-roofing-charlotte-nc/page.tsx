@@ -39,6 +39,7 @@ import {
   BadgeCheck,
 } from 'lucide-react';
 import EstimateButton from '@/components/estimate/EstimateButton';
+import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
@@ -1169,6 +1170,101 @@ export default function CommercialRoofingCharlotteNCPage() {
                 Approved installer for Johns Manville single-ply and built-up roofing systems.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commercial Roofing Costs Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <DollarSign className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Pricing Guide</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Commercial Roofing Costs in Charlotte NC
+              </h2>
+              <p className="text-gray max-w-2xl mx-auto">
+                Commercial roofing costs depend on system type, building size, and access complexity. Below are 2026 installed prices per square foot for Charlotte-area projects.
+              </p>
+            </div>
+
+            {/* Cost Table */}
+            <div className="overflow-x-auto mb-10">
+              <table className="w-full bg-white rounded-xl shadow-md overflow-hidden">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left px-6 py-4 font-semibold">Roofing System</th>
+                    <th className="text-left px-6 py-4 font-semibold">Cost / Sq Ft</th>
+                    <th className="text-left px-6 py-4 font-semibold">Lifespan</th>
+                    <th className="text-left px-6 py-4 font-semibold hidden md:table-cell">Best For</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">TPO Membrane</td>
+                    <td className="px-6 py-4 text-primary font-bold">$5.50 - $8.50</td>
+                    <td className="px-6 py-4 text-gray">20-30 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Warehouses, retail, offices</td>
+                  </tr>
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">EPDM Rubber</td>
+                    <td className="px-6 py-4 text-primary font-bold">$4.50 - $7.00</td>
+                    <td className="px-6 py-4 text-gray">20-25 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Low-slope roofs, budget-conscious</td>
+                  </tr>
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">Modified Bitumen</td>
+                    <td className="px-6 py-4 text-primary font-bold">$4.00 - $8.00</td>
+                    <td className="px-6 py-4 text-gray">15-20 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Multi-layer flat roofs</td>
+                  </tr>
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">Standing Seam Metal</td>
+                    <td className="px-6 py-4 text-primary font-bold">$12.00 - $18.00</td>
+                    <td className="px-6 py-4 text-gray">40-60 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Premium commercial, churches, schools</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Average Project Sizes */}
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-light rounded-xl p-6 text-center">
+                <Building2 className="w-8 h-8 text-primary mx-auto mb-3" />
+                <h3 className="font-bold text-dark mb-1">Small Commercial</h3>
+                <p className="text-sm text-gray mb-2">2,000 - 5,000 sq ft</p>
+                <p className="text-xl font-bold text-primary">$11,000 - $42,500</p>
+              </div>
+              <div className="bg-light rounded-xl p-6 text-center">
+                <Warehouse className="w-8 h-8 text-primary mx-auto mb-3" />
+                <h3 className="font-bold text-dark mb-1">Mid-Size Commercial</h3>
+                <p className="text-sm text-gray mb-2">10,000 - 25,000 sq ft</p>
+                <p className="text-xl font-bold text-primary">$55,000 - $212,500</p>
+              </div>
+              <div className="bg-light rounded-xl p-6 text-center">
+                <Factory className="w-8 h-8 text-primary mx-auto mb-3" />
+                <h3 className="font-bold text-dark mb-1">Large Industrial</h3>
+                <p className="text-sm text-gray mb-2">25,000 - 100,000 sq ft</p>
+                <p className="text-xl font-bold text-primary">$137,500 - $850,000</p>
+              </div>
+            </div>
+
+            {/* Citation */}
+            <CitationSection
+              heading="Commercial Roofing Cost Facts"
+              citations={[
+                {
+                  topic: 'commercial roofing cost Charlotte NC 2026',
+                  content:
+                    'Commercial roofing in Charlotte NC costs $4 to $18 per square foot installed in 2026, depending on the membrane system. TPO roofing costs $5.50-$8.50/sqft, EPDM rubber membrane $4.50-$7.00/sqft, modified bitumen $4.00-$8.00/sqft, and standing seam metal $12-$18/sqft. A 10,000 square foot commercial roof replacement typically ranges from $55,000 to $212,500 depending on system choice and building complexity.',
+                  source: 'Best Roofing Now 2026 commercial pricing data — Charlotte NC market',
+                },
+              ]}
+            />
           </div>
         </div>
       </section>

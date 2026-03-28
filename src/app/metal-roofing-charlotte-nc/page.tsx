@@ -20,6 +20,7 @@ import {
   Building2,
   Layers,
 } from 'lucide-react';
+import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
@@ -782,6 +783,82 @@ export default function MetalRoofingCharlottePage() {
                 Better Business Bureau A+ rating with zero complaints. Our reputation is built on integrity and customer satisfaction.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Metal Roofing Cost Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <DollarSign className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Pricing Guide</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Metal Roofing Cost in Charlotte NC
+              </h2>
+              <p className="text-gray max-w-2xl mx-auto">
+                Metal roofing costs vary by material type, roof complexity, and home size. Here are 2026 installed prices for Charlotte-area homes.
+              </p>
+            </div>
+
+            {/* Cost Grid */}
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+                <h3 className="font-bold text-dark text-lg mb-2">Standing Seam</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$12 - $18</p>
+                <p className="text-sm text-gray mb-3">per square foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> 40-60 year lifespan</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Concealed fasteners</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Best wind resistance</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-accent">
+                <h3 className="font-bold text-dark text-lg mb-2">Corrugated Metal</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$8 - $12</p>
+                <p className="text-sm text-gray mb-3">per square foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> 30-50 year lifespan</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Most affordable metal option</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Quick installation</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+                <h3 className="font-bold text-dark text-lg mb-2">Aluminum</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$10 - $15</p>
+                <p className="text-sm text-gray mb-3">per square foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Rust-proof / saltwater safe</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Lightweight</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> 40-60 year lifespan</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Total Project Cost Callout */}
+            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center mb-10">
+              <h3 className="text-xl font-bold text-dark mb-2">Total Project Cost for a 2,000 Sq Ft Home</h3>
+              <p className="text-4xl font-bold text-primary mb-2">$24,000 - $36,000</p>
+              <p className="text-gray max-w-xl mx-auto">
+                Includes tear-off of existing roof, underlayment, flashing, ridge vents, and standing seam metal installation. Price varies by roof pitch and complexity.
+              </p>
+            </div>
+
+            {/* Citation */}
+            <CitationSection
+              heading="Metal Roofing Cost Facts"
+              citations={[
+                {
+                  topic: 'metal roof cost Charlotte NC 2026',
+                  content:
+                    'Metal roofing installation in Charlotte NC costs $8 to $18 per square foot in 2026, depending on material. Standing seam metal roofs cost $12-$18/sqft, corrugated metal $8-$12/sqft, and aluminum $10-$15/sqft installed. A complete metal roof replacement on a typical 2,000 square foot Charlotte home ranges from $24,000 to $36,000 including tear-off, underlayment, and all trim work.',
+                  source: 'Best Roofing Now 2026 pricing data — Charlotte NC market',
+                },
+              ]}
+            />
           </div>
         </div>
       </section>
