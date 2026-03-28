@@ -11,7 +11,6 @@
  * All suggestions are stored as pending optimizations for admin review.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
 import { drizzle } from 'drizzle-orm/vercel-postgres';
 import { sql } from '@vercel/postgres';
 import { eq, and, desc } from 'drizzle-orm';
@@ -23,16 +22,11 @@ import {
   type PageRanking,
   type PageOptimization,
 } from './db/schema';
+import { groqJSON } from './groq-client';
 
 function getDb() {
   if (!process.env.POSTGRES_URL) throw new Error('Database not configured');
   return drizzle(sql);
-}
-
-function getAnthropic(): Anthropic {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) throw new Error('ANTHROPIC_API_KEY not configured');
-  return new Anthropic({ apiKey });
 }
 
 interface OptimizationSuggestion {
@@ -50,8 +44,6 @@ async function generatePageOptimizations(
   audit: PageAudit,
   rankings: PageRanking[],
 ): Promise<OptimizationSuggestion[]> {
-  const anthropic = getAnthropic();
-
   const topKeywords = rankings
     .filter(r => r.position != null)
     .sort((a, b) => (a.position ?? 999) - (b.position ?? 999))
@@ -115,28 +107,18 @@ Respond in this exact JSON array format:
 
 Only include optimizations that will meaningfully improve rankings or AEO visibility. Be specific, not generic.`;
 
-  const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-5-20250514',
-    max_tokens: 3000,
-    messages: [{ role: 'user', content: prompt }],
-  });
-
-  const text = response.content
-    .filter(block => block.type === 'text')
-    .map(block => block.text)
-    .join('');
-
-  // Parse JSON array from response
-  const jsonMatch = text.match(/\[[\s\S]*\]/);
-  if (!jsonMatch) return [];
-
   try {
-    const parsed = JSON.parse(jsonMatch[0]) as OptimizationSuggestion[];
-    return parsed.filter(s =>
+    const parsed = await groqJSON<OptimizationSuggestion[]>(prompt, {
+      maxTokens: 4000,
+      temperature: 0.3,
+    });
+
+    const suggestions = Array.isArray(parsed) ? parsed : [];
+    return suggestions.filter(s =>
       s.optimizationType && s.suggestedValue && s.reasoning && s.impact
     );
-  } catch {
-    console.error('Failed to parse AI optimization response');
+  } catch (error) {
+    console.error('Failed to generate optimizations via Groq:', error);
     return [];
   }
 }

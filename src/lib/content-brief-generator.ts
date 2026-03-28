@@ -1,14 +1,13 @@
 /**
- * Content brief generator using DataForSEO keyword data + Claude AI.
+ * Content brief generator using DataForSEO keyword data + Groq (Llama 4).
  * Generates structured content briefs for blog posts.
+ *
+ * Uses Groq for fast, cost-effective brief generation.
+ * Claude is reserved for actual blog writing and deep research.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import { groqJSON } from './groq-client';
 import type { ParsedKeywordData, ParsedSerpData } from './dataforseo/types';
-
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY || '',
-});
 
 export interface GeneratedBrief {
   title: string;
@@ -19,6 +18,16 @@ export interface GeneratedBrief {
   suggestedHeadings: string[];
   suggestedFaqs: { question: string; answer: string }[];
   wordCountTarget: number;
+}
+
+interface BriefResponse {
+  title: string;
+  secondaryKeywords: string[];
+  suggestedHeadings: string[];
+  suggestedFaqs: { question: string; answer: string }[];
+  wordCountTarget: number;
+  competitorInsights: string;
+  briefContent: string;
 }
 
 export async function generateContentBrief(
@@ -74,30 +83,16 @@ Respond in this exact JSON format:
   "briefContent": "Full content brief with section-by-section guidance (500+ words)"
 }`;
 
-  const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-5-20250514',
-    max_tokens: 4000,
-    messages: [{ role: 'user', content: prompt }],
+  const parsed = await groqJSON<BriefResponse>(prompt, {
+    maxTokens: 4000,
+    temperature: 0.4,
   });
-
-  const text = response.content
-    .filter(block => block.type === 'text')
-    .map(block => block.text)
-    .join('');
-
-  // Parse JSON from response
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) {
-    throw new Error('Failed to parse content brief from AI response');
-  }
-
-  const parsed = JSON.parse(jsonMatch[0]);
 
   return {
     title: parsed.title || `Guide to ${targetKeyword}`,
     targetKeyword,
     secondaryKeywords: parsed.secondaryKeywords || secondaryKeywords,
-    briefContent: parsed.briefContent || text,
+    briefContent: parsed.briefContent || '',
     competitorUrls: topCompetitors.map(r => r.url),
     suggestedHeadings: parsed.suggestedHeadings || [],
     suggestedFaqs: parsed.suggestedFaqs || [],

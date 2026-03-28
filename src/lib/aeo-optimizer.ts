@@ -11,7 +11,6 @@
  * Integrates with DataForSEO SERP data (AI Overview detection, PAA questions).
  */
 
-import Anthropic from '@anthropic-ai/sdk';
 import { drizzle } from 'drizzle-orm/vercel-postgres';
 import { sql } from '@vercel/postgres';
 import { eq, and, desc } from 'drizzle-orm';
@@ -19,22 +18,16 @@ import {
   pageOptimizations,
   pageAudits,
   pageRankings,
-  serpAnalyses,
   type PageAudit,
   type PageRanking,
 } from './db/schema';
 import { getSerpResults } from './dataforseo/client';
 import { getCachedSerp, cacheSerp } from './dataforseo/cache';
+import { groqJSON } from './groq-client';
 
 function getDb() {
   if (!process.env.POSTGRES_URL) throw new Error('Database not configured');
   return drizzle(sql);
-}
-
-function getAnthropic(): Anthropic {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) throw new Error('ANTHROPIC_API_KEY not configured');
-  return new Anthropic({ apiKey });
 }
 
 /** Business info for LocalBusiness schema */
@@ -127,14 +120,18 @@ function generateLocalBusinessSchema(): string {
 /**
  * Use Claude to generate AEO-optimized content for a page.
  */
+interface GroqAeoResult {
+  faqs: { question: string; answer: string }[];
+  citationParagraphs: { text: string; targetKeyword: string }[];
+  serviceSchema: { name: string; description: string } | null;
+}
+
 async function generateAeoContent(
   audit: PageAudit,
   rankings: PageRanking[],
   paaQuestions: string[],
   hasAiOverview: boolean,
 ): Promise<AeoSuggestion[]> {
-  const anthropic = getAnthropic();
-
   const topKeywords = rankings
     .filter(r => r.position != null)
     .sort((a, b) => (a.position ?? 999) - (b.position ?? 999))
@@ -182,25 +179,15 @@ Respond in this exact JSON format:
   "citationParagraphs": [
     {"text": "...", "targetKeyword": "..."}
   ],
-  "serviceSchema": null or {"name": "...", "description": "..."}
+  "serviceSchema": null
 }`;
 
-  const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-5-20250514',
-    max_tokens: 3000,
-    messages: [{ role: 'user', content: prompt }],
-  });
-
-  const text = response.content
-    .filter(block => block.type === 'text')
-    .map(block => block.text)
-    .join('');
-
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) return [];
-
   try {
-    const parsed = JSON.parse(jsonMatch[0]);
+    const parsed = await groqJSON<GroqAeoResult>(prompt, {
+      maxTokens: 4000,
+      temperature: 0.3,
+    });
+
     const suggestions: AeoSuggestion[] = [];
 
     // FAQ schema
@@ -259,8 +246,8 @@ Respond in this exact JSON format:
     }
 
     return suggestions;
-  } catch {
-    console.error('Failed to parse AEO response');
+  } catch (error) {
+    console.error('Failed to generate AEO content via Groq:', error);
     return [];
   }
 }

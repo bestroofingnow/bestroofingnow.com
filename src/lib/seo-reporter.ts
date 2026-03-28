@@ -10,7 +10,6 @@
  * Stores reports in the database and can trigger email digests.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
 import { drizzle } from 'drizzle-orm/vercel-postgres';
 import { sql } from '@vercel/postgres';
 import { eq, desc, ne } from 'drizzle-orm';
@@ -19,16 +18,11 @@ import {
   pageRankings,
   type SeoReport,
 } from './db/schema';
+import { groqJSON } from './groq-client';
 
 function getDb() {
   if (!process.env.POSTGRES_URL) throw new Error('Database not configured');
   return drizzle(sql);
-}
-
-function getAnthropic(): Anthropic {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) throw new Error('ANTHROPIC_API_KEY not configured');
-  return new Anthropic({ apiKey });
 }
 
 interface ReportMetrics {
@@ -114,8 +108,13 @@ async function calculateMetrics(scanId: string): Promise<{
   };
 }
 
+interface GroqReportResult {
+  summary: string;
+  recommendations: { priority: string; action: string; url?: string }[];
+}
+
 /**
- * Generate an AI executive summary for the weekly report.
+ * Generate an AI executive summary for the weekly report using Groq (Llama 4 Maverick).
  */
 async function generateSummary(
   metrics: ReportMetrics,
@@ -123,8 +122,6 @@ async function generateSummary(
   losers: { keyword: string; url: string; change: number; position: number }[],
   prevMetrics?: ReportMetrics | null,
 ): Promise<{ summary: string; recommendations: { priority: string; action: string; url?: string }[] }> {
-  const anthropic = getAnthropic();
-
   const weekOverWeek = prevMetrics ? `
 WEEK-OVER-WEEK CHANGES:
 - Keywords: ${metrics.totalKeywords} (prev: ${prevMetrics.totalKeywords}, ${metrics.totalKeywords > prevMetrics.totalKeywords ? '+' : ''}${metrics.totalKeywords - prevMetrics.totalKeywords})
@@ -168,30 +165,15 @@ Respond in this JSON format:
 
 Keep the summary concise and business-focused. Recommendations should be specific and actionable (max 5).`;
 
-  const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-5-20250514',
-    max_tokens: 1500,
-    messages: [{ role: 'user', content: prompt }],
-  });
-
-  const text = response.content
-    .filter(block => block.type === 'text')
-    .map(block => block.text)
-    .join('');
-
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) {
+  try {
+    return await groqJSON<GroqReportResult>(prompt, {
+      maxTokens: 2000,
+      temperature: 0.3,
+    });
+  } catch (error) {
+    console.error('Groq report generation failed, using fallback:', error);
     return {
       summary: `Weekly scan tracked ${metrics.totalKeywords} keywords. ${metrics.topTenKeywords} in top 10, ${metrics.strikingDistance} in striking distance. ${metrics.positionGains} gains, ${metrics.positionLosses} losses.`,
-      recommendations: [],
-    };
-  }
-
-  try {
-    return JSON.parse(jsonMatch[0]);
-  } catch {
-    return {
-      summary: text.slice(0, 500),
       recommendations: [],
     };
   }
