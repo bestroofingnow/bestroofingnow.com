@@ -37,9 +37,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 const PAGE_URL = `${SITE_CONFIG.url}/tile-roof-vs-shingles-charlotte-nc`;
 
 export const metadata: Metadata = {
-  title: 'Tile Roof vs Asphalt Shingles Charlotte NC | 2026 Cost & Lifespan Guide',
+  title: 'Tile Roof vs Shingles Charlotte NC | 2026 Cost Guide',
   description:
-    'Tile roof vs asphalt shingles in Charlotte NC: compare costs ($15-30 vs $4.50-7/sqft), lifespan (50-75 vs 25-30 years), weight, maintenance, energy efficiency, and storm performance. Expert comparison from BBB A+ rated Charlotte roofer.',
+    'Tile roof vs asphalt shingles in Charlotte NC: costs, lifespan, weight, and storm performance compared. Free estimates from 5-star rated Charlotte roofer.',
   keywords: [
     'tile roof vs asphalt shingles',
     'tile vs shingle roof cost',
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: 'Tile Roof vs Asphalt Shingles Charlotte NC | 2026 Cost & Lifespan Guide',
+    title: 'Tile Roof vs Shingles Charlotte NC | 2026 Cost Guide',
     description:
-      'Complete side-by-side comparison of tile roofing vs asphalt shingles for Charlotte homeowners. Costs, lifespan, weight, maintenance, climate suitability, and expert recommendations.',
+      'Tile roof vs asphalt shingles in Charlotte NC: costs, lifespan, weight, and storm performance compared. Free estimates from 5-star rated Charlotte roofer.',
     url: PAGE_URL,
     type: 'article',
     images: [
@@ -368,9 +368,11 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
     <>
       {/* Schema Markup */}
       <WebPageSchema
-        name="Tile Roof vs Asphalt Shingles Charlotte NC | 2026 Cost & Lifespan Guide"
+        name="Tile Roof vs Shingles Charlotte NC | 2026 Cost Guide"
         description="Complete side-by-side comparison of tile roofing vs asphalt shingles for Charlotte NC homeowners. Costs, lifespan, weight, maintenance, climate suitability, and expert recommendations."
         url={PAGE_URL}
+        datePublished="2025-06-15"
+        dateModified="2026-03-28"
         breadcrumb={[
           { name: 'Home', url: SITE_CONFIG.url },
           { name: 'Compare', url: `${SITE_CONFIG.url}/compare` },
@@ -561,7 +563,7 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
               <Clock className="w-8 h-8 inline-block mr-2" aria-hidden="true" />
-              Lifespan Comparison: How Long Will Each Roof Last?
+              Tile vs Shingle Lifespan: How Long Will Each Roof Last?
             </h2>
             <p className="text-gray text-center mb-8 max-w-3xl mx-auto">
               One tile roof outlasts 2-3 asphalt shingle roofs. Over a 100-year period, the total cost comparison shifts dramatically in tile&apos;s favor for permanent homeowners.
@@ -598,7 +600,7 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
               <Thermometer className="w-8 h-8 inline-block mr-2" aria-hidden="true" />
-              Charlotte NC Climate: Which Roof Material Performs Better?
+              Tile vs Shingles in Charlotte Weather: Which Performs Better?
             </h2>
             <p className="text-gray text-center mb-8 max-w-3xl mx-auto">
               Charlotte&apos;s humid subtropical climate with hot summers, frequent storms, and occasional freezing temperatures affects tile and shingle roofs differently.
@@ -652,7 +654,7 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
-              Weight Considerations: Can Your Charlotte Home Support Tile?
+              Tile Roof Weight vs Shingles: Can Your Charlotte Home Support Tile?
             </h2>
             <p className="text-gray text-center mb-8 max-w-3xl mx-auto">
               Tile roofing weighs 3-5x more than asphalt shingles. This is the single biggest barrier to tile installation on existing Charlotte homes.
@@ -746,7 +748,7 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-primary mb-8 text-center">
-              Pros and Cons for Charlotte Homeowners
+              Tile vs Shingles: Pros and Cons for Charlotte Homeowners
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Tile Pros/Cons */}
