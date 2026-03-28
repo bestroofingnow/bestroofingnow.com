@@ -30,12 +30,20 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
 
   const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
+  // Canonical overrides for comparison slugs that have dedicated static pages
+  const comparisonCanonicals: Record<string, string> = {
+    'gaf-vs-certainteed': '/gaf-vs-certainteed-shingles-charlotte-nc',
+    'tile-vs-shingles': '/tile-roof-vs-shingles-charlotte-nc',
+  };
+
   return {
     title: `${comparison.title}`,
   description: comparison.description,
   keywords: comparison.keywords,
   alternates: {
-      canonical: `${SITE_CONFIG.url}/compare/${slug}`,
+      canonical: comparisonCanonicals[slug]
+        ? `${SITE_CONFIG.url}${comparisonCanonicals[slug]}`
+        : `${SITE_CONFIG.url}/compare/${slug}`,
     },
   openGraph: {
       title: `${comparison.title} | Best Roofing Now Charlotte`,
@@ -121,48 +129,72 @@ const comparisonDetails: Record<string, {
   },
   'tile-vs-shingles': {
     winner: 'Tile for luxury, Shingles for value',
-  intro: 'Tile roofing represents premium durability and Mediterranean elegance, while asphalt shingles offer practical value. For Charlotte homeowners weighing these options, here\'s what you need to know.',
+  intro: 'Tile roofing and asphalt shingles sit at opposite ends of the roofing spectrum. Tile offers unmatched longevity of 50 to 75 years and Mediterranean elegance at $15 to $30 per square foot, while asphalt shingles deliver reliable 25- to 30-year protection at just $4.50 to $7 per square foot. For Charlotte homeowners choosing between these two materials, the right answer depends on your budget, your home\'s structural capacity, and how long you plan to stay. Here is a detailed head-to-head breakdown based on real Charlotte-area pricing and conditions.',
   categories: [
       {
         name: 'Initial Cost',
-  material1: { score: 2, notes: '$10-$18 per sq ft installed. Premium pricing for premium materials.' },
-  material2: { score: 5, notes: '$3.50-$5.50 per sq ft installed. 60-70% less than tile.' },
+  material1: { score: 2, notes: '$15-$30 per sq ft installed in Charlotte. Clay tile runs $15-$25/sqft; concrete tile $10-$18/sqft. A 2,000 sqft roof costs $30,000-$60,000. Premium pricing but a once-in-a-lifetime investment.' },
+  material2: { score: 5, notes: '$4.50-$7 per sq ft installed in Charlotte. Architectural shingles average $5-$7/sqft. A 2,000 sqft roof costs $9,000-$14,000. 60-75% less upfront than tile.' },
   winner: 2,
       },
       {
-        name: 'Lifespan',
-  material1: { score: 5, notes: '50-100 years. Clay and concrete tiles can last a century with proper care.' },
-  material2: { score: 3, notes: '20-30 years. You may need 3 asphalt roofs in one tile roof\'s lifetime.' },
+        name: 'Lifespan & Long-Term Value',
+  material1: { score: 5, notes: '50-75 years typical, up to 100 years for premium clay. One tile roof outlasts 2-3 asphalt roofs. Cost per year of service: $0.40-$0.80/sqft, making tile cheaper long-term for homeowners staying 30+ years.' },
+  material2: { score: 3, notes: '25-30 years for architectural shingles, 15-20 for 3-tab. You will need 2-3 replacements during one tile roof\'s lifespan. Cost per year: $0.18-$0.28/sqft — cheaper short-term but adds up over decades.' },
   winner: 1,
       },
       {
-        name: 'Curb Appeal',
-  material1: { score: 5, notes: 'Distinctive Mediterranean, Spanish, or Mission style. Major wow factor.' },
-  material2: { score: 4, notes: 'Wide variety of styles but more common appearance.' },
-  winner: 1,
-      },
-      {
-        name: 'Weight',
-  material1: { score: 2, notes: 'Very heavy (9-12 lbs/sq ft). May require structural reinforcement.' },
-  material2: { score: 5, notes: 'Lightweight (2-4 lbs/sq ft). Works with any roof structure.' },
+        name: 'Charlotte Climate Suitability',
+  material1: { score: 4, notes: 'Excellent heat resistance for Charlotte\'s 90°F+ summers. Natural thermal mass keeps attics cooler. Handles heavy rain well but individual tiles can crack in severe hail events, which Charlotte averages 2-4 per year. Freeze-thaw cycles (Charlotte gets 40+ frost days) can stress concrete tiles over time.' },
+  material2: { score: 5, notes: 'Purpose-built for temperate climates like Charlotte. Impact-resistant Class 4 options handle hail well. Flexible enough to expand and contract through Charlotte\'s temperature swings (20°F to 100°F). Performs reliably in 45+ annual thunderstorms and 48 inches of annual rainfall.' },
   winner: 2,
       },
       {
-        name: 'Weather Resistance',
-  material1: { score: 5, notes: 'Excellent against fire, rot, and insects. Individual tiles can crack in severe hail.' },
-  material2: { score: 4, notes: 'Good protection. Impact-resistant options available for storm areas.' },
+        name: 'Weight & Structural Requirements',
+  material1: { score: 2, notes: 'Very heavy at 9-12 lbs/sqft (clay) or 7-10 lbs/sqft (concrete). Most Charlotte homes built after 1970 need structural reinforcement costing $2,000-$8,000 before tile installation. A structural engineer assessment ($300-$500) is required first.' },
+  material2: { score: 5, notes: 'Lightweight at 2-4 lbs/sqft. Works with any standard roof framing. No structural upgrades needed. Can be installed over one existing layer in some cases, saving on tear-off costs ($1,000-$2,000).' },
+  winner: 2,
+      },
+      {
+        name: 'Maintenance',
+  material1: { score: 4, notes: 'Low maintenance overall but not zero. Individual cracked tiles need replacement ($8-$15 per tile plus labor). Underlayment beneath tiles degrades every 20-30 years and requires costly access. Annual inspections recommended. Moss and algae growth in Charlotte\'s humid summers requires periodic cleaning.' },
+  material2: { score: 3, notes: 'Requires periodic inspections and maintenance. Granule loss accelerates after year 15. Moss and algae common in Charlotte humidity — algae-resistant shingles recommended. Minor repairs are inexpensive ($200-$500) and any roofer can handle them.' },
   winner: 1,
       },
       {
-        name: 'Installation',
-  material1: { score: 2, notes: 'Complex installation requiring specialized expertise. Fewer qualified installers.' },
-  material2: { score: 5, notes: 'Straightforward installation. Many qualified contractors available.' },
+        name: 'Curb Appeal & Resale Value',
+  material1: { score: 5, notes: 'Distinctive Mediterranean, Spanish, or Mission style. Major wow factor that commands attention. Adds 5-10% to home value in Charlotte\'s luxury neighborhoods like Myers Park, Eastover, and SouthPark. Highly desirable for homes valued over $500,000.' },
+  material2: { score: 4, notes: 'Wide variety of colors and profiles (architectural, designer). Familiar and attractive but common appearance. Adds 3-5% to home value. Preferred by most Charlotte buyers because it signals lower future maintenance costs.' },
+  winner: 1,
+      },
+      {
+        name: 'Weather & Storm Resistance',
+  material1: { score: 4, notes: 'Class A fire rating. Excellent resistance to rot, insects, and UV degradation. Wind resistant to 125+ mph when properly installed. Weakness: individual tiles can crack or shatter in severe hailstorms, and Charlotte sees regular spring and summer hail events.' },
+  material2: { score: 4, notes: 'Impact-resistant Class 4 shingles handle hail well and can earn insurance discounts of 10-28% in NC. Wind ratings up to 130 mph for premium products. More flexible than tile in hail, absorbing impact rather than cracking. Charlotte storm performance: excellent.' },
+  winner: 'tie',
+      },
+      {
+        name: 'Installation Complexity',
+  material1: { score: 2, notes: 'Complex, specialized installation taking 1-2 weeks. Requires experienced tile roofing crews — fewer available in Charlotte compared to shingle installers. Improper installation voids warranties and causes leaks. Factor in 30-50% higher labor costs.' },
+  material2: { score: 5, notes: 'Straightforward 1-3 day installation for most Charlotte homes. Hundreds of qualified contractors in the Charlotte metro. Easier to quality-control and inspect. Lower labor costs and faster project completion.' },
+  winner: 2,
+      },
+      {
+        name: 'Energy Efficiency',
+  material1: { score: 5, notes: 'Natural thermal mass and air gap between tile and deck provide excellent insulation. Can reduce cooling costs 10-20% in Charlotte summers. Clay and concrete tiles do not absorb heat the way dark shingles do. Ideal for south-facing roofs.' },
+  material2: { score: 3, notes: 'Standard shingles absorb significant heat. Cool-roof reflective shingles available but cost 15-20% more. Radiant barrier underlayment can help. Without upgrades, expect higher cooling costs in Charlotte\'s June through September heat.' },
+  winner: 1,
+      },
+      {
+        name: 'Insurance Impact',
+  material1: { score: 3, notes: 'Some insurers charge higher premiums due to expensive tile replacement costs after storms. Hail damage claims involve replacing individual tiles at $8-$15 each plus specialized labor. Check with your Charlotte insurer before committing.' },
+  material2: { score: 5, notes: 'Impact-resistant (IR) shingles qualify for insurance discounts in North Carolina — typically 10-28% off premiums. Lower replacement costs mean lower claim payouts. Most Charlotte insurance companies prefer asphalt for straightforward claims processing.' },
   winner: 2,
       },
     ],
-  verdict: 'Tile roofing is ideal for luxury homes where longevity and aesthetics are priorities. Asphalt shingles make sense for most Charlotte homeowners seeking reliable protection at a reasonable cost.',
-  bestFor1: ['Luxury and custom homes', 'Mediterranean or Spanish architecture', 'Homeowners prioritizing longevity', 'Properties where curb appeal is paramount'],
-  bestFor2: ['Most residential applications', 'Budget-conscious homeowners', 'Traditional home styles', 'Homes without structural reinforcement'],
+  verdict: 'For most Charlotte homeowners, asphalt shingles remain the practical winner — they cost 60-75% less upfront, perform excellently in our climate, and any local roofer can install and maintain them. Tile roofing is the right choice for luxury and custom homes valued over $500,000 where the homeowner plans to stay 20+ years and the structure can support the weight. If longevity and Mediterranean aesthetics are non-negotiable priorities and budget is not the primary concern, tile delivers exceptional lifetime value. For everyone else, high-quality architectural shingles from GAF or CertainTeed provide reliable 25-30 year protection at a fraction of the cost.',
+  bestFor1: ['Luxury homes valued over $500,000', 'Mediterranean, Spanish, or Tuscan architecture', 'Homeowners staying 20+ years who want a forever roof', 'Properties where curb appeal and resale premium are paramount', 'Homes with confirmed structural capacity for heavy roofing', 'South-facing roofs where energy efficiency matters most'],
+  bestFor2: ['Most Charlotte residential applications', 'Budget-conscious homeowners seeking reliable protection', 'Homes without structural reinforcement for heavy materials', 'Homeowners planning to sell within 10-15 years', 'Storm-prone areas where impact-resistant shingles earn insurance discounts', 'Rental properties and investment homes where ROI matters'],
   },
   'metal-vs-tile': {
     winner: 'Metal for performance, Tile for elegance',
@@ -211,48 +243,48 @@ const comparisonDetails: Record<string, {
   },
   'gaf-vs-certainteed': {
     winner: 'Both are excellent choices',
-  intro: 'GAF and CertainTeed are North America\'s two largest shingle manufacturers, both offering premium products. This comparison helps Charlotte homeowners understand the subtle differences between these industry leaders.',
+  intro: 'GAF and CertainTeed are North America\'s two largest shingle manufacturers, both offering premium products. GAF Timberline HDZ costs $90-$110 per square while CertainTeed Landmark costs $85-$105 per square. For a detailed price-per-product breakdown, see our comprehensive GAF vs CertainTeed price comparison.',
   categories: [
       {
-        name: 'Market Share',
-  material1: { score: 5, notes: 'North America\'s #1 manufacturer. Largest market share.' },
-  material2: { score: 4, notes: '#2 manufacturer with strong presence. Part of Saint-Gobain.' },
-  winner: 1,
-      },
-      {
-        name: 'Product Range',
-  material1: { score: 5, notes: 'Timberline series is America\'s best-selling shingle. Wide variety.' },
-  material2: { score: 5, notes: 'Landmark series highly regarded. Extensive color options.' },
-  winner: 'tie',
+        name: 'Price Per Square',
+  material1: { score: 4, notes: 'Timberline HDZ: $90-$110/sq. HDZ RS: $110-$135/sq. Camelot II: $160-$210/sq.' },
+  material2: { score: 5, notes: 'Landmark: $85-$105/sq. Landmark PRO: $105-$130/sq. Presidential: $170-$225/sq.' },
+  winner: 2,
       },
       {
         name: 'Warranty Options',
-  material1: { score: 5, notes: 'Golden Pledge warranty with 50-year coverage and 25-year workmanship.' },
-  material2: { score: 5, notes: 'SureStart Plus with 50-year coverage and 4-star warranty protection.' },
+  material1: { score: 5, notes: 'Golden Pledge: 50-yr non-prorated material + 25-yr workmanship backed by GAF.' },
+  material2: { score: 5, notes: '5-Star SureStart PLUS: 50-yr limited material + workmanship via ShingleMaster.' },
   winner: 'tie',
       },
       {
         name: 'Wind Resistance',
-  material1: { score: 5, notes: 'Up to 130 mph wind warranty. LayerLock technology.' },
-  material2: { score: 5, notes: 'Up to 130 mph wind warranty. NailTrak technology.' },
-  winner: 'tie',
-      },
-      {
-        name: 'Algae Resistance',
-  material1: { score: 5, notes: 'StainGuard Plus with 25-year algae protection.' },
-  material2: { score: 5, notes: 'StreakFighter technology for algae resistance.' },
-  winner: 'tie',
-      },
-      {
-        name: 'Price',
-  material1: { score: 4, notes: 'Competitive pricing. Slightly more affordable on average.' },
-  material2: { score: 4, notes: 'Premium pricing in some product lines.' },
+  material1: { score: 5, notes: '130 MPH standard with LayerLock technology on all Timberline HDZ.' },
+  material2: { score: 4, notes: '110 MPH base (Landmark). 130 MPH on Landmark PRO with NailTrak.' },
   winner: 1,
       },
+      {
+        name: 'Impact Resistance',
+  material1: { score: 5, notes: 'Class 4 via ArmorShield II and Timberline HDZ RS (UL 2218 rated).' },
+  material2: { score: 5, notes: 'Class 4 via Landmark PRO IR designation (UL 2218 rated).' },
+  winner: 'tie',
+      },
+      {
+        name: 'Algae Protection',
+  material1: { score: 5, notes: 'StainGuard Plus: 25-year algae warranty. Copper-release technology.' },
+  material2: { score: 4, notes: 'StreakFighter: 10-15 year algae protection depending on product line.' },
+  winner: 1,
+      },
+      {
+        name: 'Color Options',
+  material1: { score: 5, notes: '20+ colors across Timberline lines. Widest HDZ color selection.' },
+  material2: { score: 5, notes: '18+ colors. NaturalWood palette popular for Southern home styles.' },
+  winner: 'tie',
+      },
     ],
-  verdict: 'Both GAF and CertainTeed produce exceptional shingles backed by strong warranties. Your choice may come down to contractor preference (installers often specialize), specific color availability, or minor price differences. You can\'t go wrong with either brand.',
-  bestFor1: ['Value-conscious homeowners', 'Those wanting America\'s #1 selling shingle', 'Homeowners whose preferred contractor is GAF certified', 'Those seeking LayerLock technology'],
-  bestFor2: ['Those preferring specific CertainTeed colors', 'Homeowners whose preferred contractor is CertainTeed certified', 'Those wanting Landmark Pro or Presidential series', 'Saint-Gobain brand loyalists'],
+  verdict: 'Both GAF and CertainTeed produce exceptional shingles. GAF wins on wind resistance (130 MPH standard) and algae protection (25-yr). CertainTeed wins on entry-level pricing ($5-10/sq less). For a full pricing breakdown including installed costs for Charlotte homes, see our detailed GAF vs CertainTeed price comparison page.',
+  bestFor1: ['Maximum wind protection (130 MPH standard)', 'Longest algae protection (25-yr StainGuard Plus)', 'Golden Pledge warranty with 25-yr workmanship', 'America\'s #1 selling shingle brand'],
+  bestFor2: ['Budget-conscious projects ($5-10/sq savings)', 'NaturalWood color palette for Southern homes', 'Landmark PRO Class 4 impact resistance', 'Presidential Shake cedar-shake appearance'],
   },
 };
 
@@ -473,6 +505,24 @@ export default async function ComparePage({ params }: ComparePageProps) {
             </h2>
             <div className="bg-primary/5 border-l-4 border-primary rounded-r-xl p-8 mb-12">
               <p className="text-lg text-dark leading-relaxed">{details?.verdict}</p>
+              {slug === 'tile-vs-shingles' && (
+                <Link
+                  href="/tile-roof-vs-shingles-charlotte-nc"
+                  className="inline-flex items-center gap-2 text-primary font-semibold mt-4 hover:text-accent transition-colors"
+                >
+                  View Full Tile vs Shingles Comparison with Cost Tables and Climate Analysis
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              )}
+              {slug === 'gaf-vs-certainteed' && (
+                <Link
+                  href="/gaf-vs-certainteed-shingles-charlotte-nc"
+                  className="inline-flex items-center gap-2 text-primary font-semibold mt-4 hover:text-accent transition-colors"
+                >
+                  View Full Price Comparison with Detailed Product Breakdown
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              )}
             </div>
 
             {/* Best For Lists */}

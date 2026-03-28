@@ -778,11 +778,11 @@ export const ROOFING_COMPARISONS = [
   },
   {
     slug: 'tile-vs-shingles',
-    title: 'Tile Roofing vs Asphalt Shingles',
-    description: 'Compare tile roofing and asphalt shingles for durability, cost, and aesthetic appeal.',
+    title: 'Tile Roofing vs Asphalt Shingles Charlotte NC (2026 Cost Guide)',
+    description: 'Tile roof vs asphalt shingles: compare costs ($15-30 vs $4.50-7/sqft), lifespan (50-75 vs 25-30 years), weight, maintenance, and Charlotte NC climate suitability. Expert comparison from a BBB A+ rated contractor.',
     material1: 'tile-roofing',
     material2: 'asphalt-shingles',
-    keywords: ['tile vs shingle roof', 'tile roof vs asphalt', 'tile roofing cost comparison'],
+    keywords: ['tile roof vs asphalt shingles', 'tile vs shingle roof cost', 'is tile roofing worth it', 'tile roof cost Charlotte NC', 'tile vs shingle roof Charlotte', 'tile roof lifespan vs shingles', 'tile roofing pros and cons Charlotte NC'],
   },
   {
     slug: 'metal-vs-tile',
@@ -798,7 +798,7 @@ export const ROOFING_COMPARISONS = [
     description: 'Compare the two leading shingle manufacturers to choose the best brand for your roof.',
     material1: 'gaf',
     material2: 'certainteed',
-    keywords: ['GAF vs CertainTeed', 'best shingle brand', 'shingle brand comparison'],
+    keywords: ['gaf vs certainteed price', 'GAF vs CertainTeed', 'gaf vs certainteed shingles', 'best shingle brand', 'shingle brand comparison', 'gaf vs certainteed cost', 'gaf or certainteed which is better'],
   },
 ];
 
