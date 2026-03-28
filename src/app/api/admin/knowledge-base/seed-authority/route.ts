@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminToken } from '@/lib/admin-auth';
 import { createEntry, getEntryBySlug } from '@/lib/knowledge-base';
 import { AUTHORITY_KNOWLEDGE_BASE } from '@/lib/knowledge-base-seed-authority';
+import { AUTHORITY_KNOWLEDGE_BASE_2 } from '@/lib/knowledge-base-seed-authority-2';
 
 /** POST — seed the knowledge base with comprehensive roofing authority content */
 export async function POST(request: NextRequest) {
@@ -12,7 +13,9 @@ export async function POST(request: NextRequest) {
   let skipped = 0;
   const errors: string[] = [];
 
-  for (const entry of AUTHORITY_KNOWLEDGE_BASE) {
+  const allEntries = [...AUTHORITY_KNOWLEDGE_BASE, ...AUTHORITY_KNOWLEDGE_BASE_2];
+
+  for (const entry of allEntries) {
     const slug = entry.question
       .toLowerCase()
       .replace(/['']/g, '')
@@ -51,7 +54,7 @@ export async function POST(request: NextRequest) {
 
   return NextResponse.json({
     data: {
-      total: AUTHORITY_KNOWLEDGE_BASE.length,
+      total: allEntries.length,
       created,
       skipped,
       errors: errors.length,
