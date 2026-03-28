@@ -416,22 +416,46 @@ const locationContent: Record<
   },
   'rock-hill-sc': {
     description:
-      'When Rock Hill homeowners need a roofing company they can trust, they turn to Best Roofing Now. As a family-owned roofing company serving York County, SC and the greater Charlotte metro, we bring 5+ years of local roofing expertise and 500+ completed projects to every job.',
-  extendedContent:
-      'South Carolina\'s fifth-largest city, Rock Hill combines historic charm with modern amenities. From the revitalized downtown and Winthrop University campus to major employers like 3D Systems and Comporium, Rock Hill offers economic opportunity and quality of life. Best Roofing Now is the roofing company in Rock Hill that spans the Carolina border. Rock Hill\'s diverse housing stock includes everything from historic homes near downtown to newer developments along Dave Lyle Boulevard. Our roofing company in Rock Hill has the experience to work on any property, from preserving the character of older homes to installing modern roofing systems on new construction.',
-  roofingChallenges:
-      'Rock Hill sits in the path of severe weather moving through the Charlotte region. The city experiences frequent thunderstorms, hail events, and high winds that can cause significant roof damage. That\'s why choosing a roofing company in Rock Hill with storm damage experience matters. Our team responds quickly to emergency situations, provides thorough inspections using advanced drone technology, and works directly with your insurance company to ensure fair claim settlements. As your Carolina roofing company in Rock Hill, we understand both NC and SC insurance processes.',
-  servicesIntro:
-      'As your York County roofing company in Rock Hill, Best Roofing Now offers comprehensive roofing services including storm damage inspection and insurance claim assistance, complete roof replacement with lifetime warranty, emergency roof repair with 24/7 availability, preventive maintenance programs, gutter installation and repair, and commercial roofing systems. Our roofing company in Rock Hill serves the entire York County community. When you need a proven roofing company in Rock Hill, trust the bi-state professionals.',
-  neighborhoods: [
-      'Downtown Rock Hill', 'Winthrop area', 'Ebenezer Road', 'Newport',
-      'Lake Wylie area', 'Dave Lyle Boulevard', 'Riverwalk',
+      'Rock Hill SC\'s trusted roofing company — Best Roofing Now. 5-star rated, BBB A+ accredited roofer serving York County with expert roof replacement, repair, storm damage, and insurance claim help. Licensed in NC and SC. Free inspections.',
+    extendedContent:
+      'South Carolina\'s fifth-largest city, Rock Hill combines historic charm with modern amenities. From the revitalized downtown Knowledge Park district and Winthrop University campus to major employers like 3D Systems and Comporium, Rock Hill offers economic opportunity and quality of life that attracts new residents every year. Best Roofing Now is the roofing company Rock Hill homeowners trust for quality workmanship and honest pricing. Rock Hill\'s diverse housing stock spans everything from historic homes near downtown and the Oakland Avenue district to newer developments along Dave Lyle Boulevard and Cel-River Road. Our roofing company in Rock Hill has the expertise to handle any property — from preserving the character of 1920s bungalows to installing modern architectural shingles and standing seam metal roofing on new construction in Riverwalk and Waterford communities.',
+    roofingChallenges:
+      'Rock Hill sits directly in the path of severe weather systems tracking through the Charlotte region along the I-77 corridor. York County regularly experiences damaging thunderstorms from April through September, with hail events, straight-line winds, and occasional tornadoes that can destroy roofing systems in minutes. Rock Hill averages 3-5 significant storm events per year that cause roof damage. That\'s why choosing a roofing company in Rock Hill SC with storm damage experience matters. Best Roofing Now responds quickly to Rock Hill emergencies, provides free drone-assisted inspections with photo documentation, and works directly with both South Carolina and North Carolina insurance carriers to maximize your claim. As a bi-state roofing contractor licensed in both NC and SC, we understand the different building codes, permit requirements, and insurance processes on both sides of the border — giving Rock Hill homeowners a significant advantage when filing storm damage claims.',
+    servicesIntro:
+      'As York County\'s premier roofing company, Best Roofing Now delivers comprehensive roofing services to Rock Hill SC including free storm damage inspections and full insurance claim assistance, complete roof replacement with manufacturer-backed lifetime warranties, 24/7 emergency roof repair with rapid response, preventive maintenance programs, gutter installation and seamless gutter repair, and commercial roofing for Rock Hill businesses along Dave Lyle Boulevard and Cherry Road. We are CertainTeed, GAF, and Owens Corning certified installers — using only premium materials with the strongest warranties in the industry. When you search for a reliable roofing company in Rock Hill SC, choose the team that York County trusts.',
+    neighborhoods: [
+      'Downtown Rock Hill', 'Winthrop University area', 'Ebenezer Road', 'Newport',
+      'Lake Wylie area', 'Dave Lyle Boulevard', 'Riverwalk', 'India Hook',
+      'Oakland Avenue', 'Cel-River Road', 'Waterford', 'Manchester Village',
+      'Cherry Road Corridor', 'Knowledge Park',
     ],
-  highlights: [
-      'York County\'s largest city coverage',
-      'Historic and modern home expertise',
-      'NC and SC licensed',
-      'Understanding of SC insurance processes',
+    highlights: [
+      'York County\'s largest city — full coverage',
+      'Historic and modern home roofing expertise',
+      'Licensed in both NC and SC with dual insurance knowledge',
+      'Free drone inspections with photo documentation',
+      'Storm damage and insurance claim specialists',
+    ],
+  },
+  'lancaster-sc': {
+    description:
+      'Looking for a reliable roofing company in Lancaster SC? Best Roofing Now serves Lancaster County with expert roof replacement, repair, and storm damage services. Licensed in both NC and SC, BBB A+ accredited, 5-star rated.',
+    extendedContent:
+      'The seat of Lancaster County, Lancaster SC blends small-town Southern charm with proximity to the booming Charlotte metro just 35 miles north. From the historic downtown courthouse district to the growing neighborhoods along SC-9 and US-521, Lancaster homeowners value quality craftsmanship and honest service. Best Roofing Now is the roofing company Lancaster SC trusts for professional roof installations and repairs. Whether you own a classic brick ranch near Main Street or a newer home in one of the developing communities south of town, our licensed and insured team brings Charlotte-quality workmanship to Lancaster County at competitive pricing.',
+    roofingChallenges:
+      'Lancaster SC sits in the path of severe weather systems moving through the I-77 corridor from Charlotte. The area regularly experiences damaging thunderstorms, hail events, and high winds from April through September that can compromise even well-maintained roofs. Older homes in the historic district often have aging roofing systems that need careful assessment after storms. As a roofing company serving Lancaster SC, Best Roofing Now responds quickly to emergency situations, provides free drone-assisted inspections, and works with both South Carolina and North Carolina insurance carriers to maximize your storm damage claim. We understand both SC and NC building codes and insurance requirements, making us uniquely qualified to serve Lancaster County homeowners.',
+    servicesIntro:
+      'As your Lancaster County roofing company, Best Roofing Now delivers comprehensive roofing services including free storm damage inspections and insurance claim assistance, full roof replacement with manufacturer-backed warranties, emergency roof repair with rapid response, preventive maintenance programs, gutter installation and repair, and commercial roofing for Lancaster businesses. We are CertainTeed, GAF, and Owens Corning certified installers serving all of Lancaster County. Call the roofing company Lancaster SC homeowners trust.',
+    neighborhoods: [
+      'Downtown Lancaster', 'Indian Land', 'Van Wyck', 'Heath Springs',
+      'Kershaw', 'SC-9 Corridor', 'US-521 Corridor', 'Pleasant Hill',
+    ],
+    highlights: [
+      'Licensed in both NC and SC',
+      'Historic and modern home roofing expertise',
+      'SC and NC insurance claim specialists',
+      'Fast response to Lancaster County emergencies',
+      'Competitive pricing — Charlotte quality, local value',
     ],
   },
   'waxhaw-nc': {

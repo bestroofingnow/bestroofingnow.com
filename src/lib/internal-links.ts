@@ -404,16 +404,17 @@ const additionalServiceLinks: LinkMapping[] = [
     url: '/services/roof-repair',
     title: 'Expert roof repair services in Charlotte NC',
   },
-  // Storm Damage variations
+  // Storm Damage variations — links to dedicated landing page (higher authority than service page)
   {
     patterns: [
       'storm damage', 'hail damage', 'wind damage', 'hurricane damage',
       'storm damage repair', 'storm damage restoration', 'tornado damage',
       'severe weather damage', 'storm-damaged roof', 'hail-damaged',
-      'wind-damaged', 'after a storm', 'storm damage claim'
+      'wind-damaged', 'after a storm', 'storm damage claim',
+      'storm damage roof repair', 'storm damage roof repair near me'
     ],
-    url: '/services/storm-damage',
-    title: 'Storm damage repair and insurance claims in Charlotte NC',
+    url: '/storm-damage-roof-repair',
+    title: 'Storm damage roof repair in Charlotte NC — free inspections & insurance help',
   },
   // Roof Inspection variations
   {
@@ -467,15 +468,17 @@ const additionalServiceLinks: LinkMapping[] = [
     url: '/services/roof-maintenance',
     title: 'Roof maintenance services in Charlotte NC',
   },
-  // Emergency Roofing variations
+  // Emergency Roofing variations — links to dedicated landing page (higher authority)
   {
     patterns: [
       'emergency roofing', 'emergency roof repair', '24/7 roofing',
       'urgent roof repair', 'roof emergency', 'emergency roofer',
-      'same day roof repair', 'immediate roof repair'
+      'same day roof repair', 'immediate roof repair',
+      'emergency roof repair near me', '24 hour roof repair',
+      'roof repair near me today'
     ],
-    url: '/services/emergency-roofing',
-    title: 'Emergency roofing services in Charlotte NC',
+    url: '/emergency-roof-repair',
+    title: '24/7 emergency roof repair near me in Charlotte NC',
   },
   // Skylight Installation
   {
@@ -650,6 +653,70 @@ const additionalServiceLinks: LinkMapping[] = [
     url: '/materials/tile-roofing',
     title: 'Tile roofing in Charlotte NC',
   },
+  // ============================================
+  // PRIORITY COMPARISON & COST PAGES
+  // These target high-volume buyer-intent keywords
+  // ============================================
+  // Tile vs Shingles comparison (Priority #2 — position 18, 3,190/mo)
+  {
+    patterns: [
+      'tile vs shingles', 'tile roof vs shingles', 'tile versus shingles',
+      'tile or shingles', 'shingles vs tile', 'tile roof vs asphalt',
+      'tile vs asphalt shingles'
+    ],
+    url: '/tile-roof-vs-shingles-charlotte-nc',
+    title: 'Tile roof vs asphalt shingles comparison — Charlotte NC 2026 guide',
+  },
+  // Metal vs Shingles cost comparison (Priority gap — 6,600/mo)
+  {
+    patterns: [
+      'metal vs shingles cost', 'metal roof vs shingles cost', 'metal or shingles',
+      'shingle vs metal roof cost', 'cost of shingle roof vs metal roof',
+      'metal vs shingle'
+    ],
+    url: '/shingle-vs-metal-roof-cost',
+    title: 'Metal roof vs shingles cost comparison — Charlotte NC',
+  },
+  // GAF vs CertainTeed comparison (Priority #6 — position 39, 3,530/mo)
+  {
+    patterns: [
+      'GAF vs CertainTeed', 'CertainTeed vs GAF', 'GAF or CertainTeed',
+      'gaf vs certainteed price', 'gaf versus certainteed'
+    ],
+    url: '/gaf-vs-certainteed-shingles-charlotte-nc',
+    title: 'GAF vs CertainTeed shingles comparison — Charlotte NC 2026',
+  },
+  // Asphalt shingle cost (Priority #7 — 12,100/mo gap keyword)
+  {
+    patterns: [
+      'asphalt shingle cost', 'asphalt shingle roof cost', 'shingle roof cost',
+      'cost of shingles', 'shingle prices', 'roofing shingles prices',
+      'asphalt shingle price', 'cost of asphalt shingle roof',
+      'shingle cost per square foot', 'roof shingle cost'
+    ],
+    url: '/asphalt-shingle-roof-cost',
+    title: 'Asphalt shingle roof cost in Charlotte NC — 2026 pricing guide',
+  },
+  // Gutter guard cost (Priority #8 — 4,400/mo, $34 CPC)
+  {
+    patterns: [
+      'gutter guard cost', 'gutter guard installation cost', 'gutter guard price',
+      'cost of gutter guards', 'how much do gutter guards cost',
+      'gutter protection cost', 'leaf guard cost'
+    ],
+    url: '/gutter-guard-cost',
+    title: 'Gutter guard installation cost in Charlotte NC — 2026 pricing',
+  },
+  // Metal roof cost (supporting Priority #1)
+  {
+    patterns: [
+      'metal roof cost', 'cost of metal roof', 'metal roofing cost',
+      'how much does a metal roof cost', 'metal roof price',
+      'standing seam cost', 'metal roof cost per square foot'
+    ],
+    url: '/metal-roof-cost',
+    title: 'Metal roof cost in Charlotte NC — 2026 pricing guide',
+  },
   // Brands
   {
     patterns: ['GAF shingles', 'GAF roofing', 'GAF Timberline', 'Timberline shingles'],
@@ -742,8 +809,8 @@ const additionalServiceLinks: LinkMapping[] = [
   // Emergency
   {
     patterns: ['emergency roof repair', 'emergency roofing', '24/7 roofing', 'roof emergency', 'urgent roof repair'],
-    url: '/emergency',
-    title: 'Emergency roofing services in Charlotte NC',
+    url: '/emergency-roof-repair',
+    title: '24/7 emergency roof repair near me in Charlotte NC',
   },
   // ============================================
   // HIGH-VALUE BUYER INTENT KEYWORDS

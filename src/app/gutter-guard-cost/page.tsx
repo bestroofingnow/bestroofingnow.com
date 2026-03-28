@@ -1372,6 +1372,24 @@ export default function GutterGuardCostPage() {
             >
               Gutter Repair <ArrowRight className="w-4 h-4" />
             </Link>
+            <Link
+              href="/gutter-cost-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Gutter Installation Cost <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/asphalt-shingle-roof-cost"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Shingle Roof Cost <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/charlotte-roofing-costs-2026"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              All Roofing Costs 2026 <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

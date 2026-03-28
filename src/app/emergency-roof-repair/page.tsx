@@ -726,14 +726,14 @@ export default function EmergencyRoofRepairPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
             Related Emergency Services
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link
-              href="/emergency"
+              href="/storm-damage-roof-repair"
               className="bg-light p-6 rounded-xl hover:shadow-lg transition-shadow"
             >
-              <h3 className="font-bold text-primary mb-2">24/7 Emergency Roofing</h3>
+              <h3 className="font-bold text-primary mb-2">Storm Damage Roof Repair</h3>
               <p className="text-gray text-sm">
-                Full emergency roofing services including tarping, board-up, and debris removal.
+                Free storm damage inspections and insurance claim assistance in Charlotte.
               </p>
             </Link>
             <Link
@@ -752,6 +752,15 @@ export default function EmergencyRoofRepairPage() {
               <h3 className="font-bold text-primary mb-2">Hail Damage Repair</h3>
               <p className="text-gray text-sm">
                 Expert hail damage assessment, repair, and insurance claim assistance.
+              </p>
+            </Link>
+            <Link
+              href="/roof-repair-cost-charlotte-nc"
+              className="bg-light p-6 rounded-xl hover:shadow-lg transition-shadow"
+            >
+              <h3 className="font-bold text-primary mb-2">Roof Repair Costs 2026</h3>
+              <p className="text-gray text-sm">
+                How much emergency and standard roof repairs cost in Charlotte NC.
               </p>
             </Link>
           </div>

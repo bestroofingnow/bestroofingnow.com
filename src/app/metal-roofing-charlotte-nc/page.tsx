@@ -1258,6 +1258,88 @@ export default function MetalRoofingCharlottePage() {
 
       />
 
+      {/* Related Metal Roofing Guides */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Metal Roofing Cost Guides &amp; Comparisons
+            </h2>
+            <p className="text-gray">
+              Explore pricing, comparisons, and styles for metal roofing in Charlotte NC.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link
+              href="/metal-roof-cost"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Metal Roof Cost 2026
+              </h3>
+              <p className="text-gray text-sm">
+                Complete pricing for standing seam, corrugated, and metal shingle roofs.
+              </p>
+            </Link>
+            <Link
+              href="/shingle-vs-metal-roof-cost"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Shingles vs Metal Roof Cost
+              </h3>
+              <p className="text-gray text-sm">
+                Side-by-side cost comparison with 30-year ROI analysis.
+              </p>
+            </Link>
+            <Link
+              href="/blog/modern-metal-roof-styles-photo-catalog-color-guide"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Metal Roof Styles &amp; Colors
+              </h3>
+              <p className="text-gray text-sm">
+                Photo catalog of modern metal roof styles, colors, and design inspiration.
+              </p>
+            </Link>
+            <Link
+              href="/standing-seam-metal-roof-charlotte-nc"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Standing Seam Metal Roofing
+              </h3>
+              <p className="text-gray text-sm">
+                Premium standing seam installation for Charlotte homes and businesses.
+              </p>
+            </Link>
+            <Link
+              href="/metal-roof-vs-shingles-charlotte-nc"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Metal vs Shingles Charlotte NC
+              </h3>
+              <p className="text-gray text-sm">
+                Which roofing material is right for your Charlotte home?
+              </p>
+            </Link>
+            <Link
+              href="/tile-roof-vs-shingles-charlotte-nc"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Tile vs Shingles Comparison
+              </h3>
+              <p className="text-gray text-sm">
+                Compare tile, metal, and shingle roofing for Charlotte homes.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="Ready to Upgrade to Metal Roofing?"
         subtitle="Get a free, no-obligation estimate for metal roofing installation in Charlotte NC. Our experts will help you choose the best metal roof option for your home and budget."

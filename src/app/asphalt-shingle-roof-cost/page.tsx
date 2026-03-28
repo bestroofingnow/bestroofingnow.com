@@ -1321,6 +1321,30 @@ export default function AsphaltShingleRoofCostPage() {
             >
               Financing Options <ArrowRight className="w-4 h-4" />
             </Link>
+            <Link
+              href="/tile-roof-vs-shingles-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Tile vs Shingles <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/shingle-vs-metal-roof-cost"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Shingles vs Metal Cost <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/gaf-vs-certainteed-shingles-charlotte-nc"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              GAF vs CertainTeed <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/metal-roof-cost"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Metal Roof Cost <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

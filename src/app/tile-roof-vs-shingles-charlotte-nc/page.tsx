@@ -903,23 +903,23 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                title: 'Tile Roofing Services Charlotte NC',
-                description: 'Expert tile roof installation, repair, and maintenance in Charlotte.',
-                href: '/tile-roofing-charlotte-nc',
+                title: 'Asphalt Shingle Roof Cost 2026',
+                description: 'Complete pricing breakdown for asphalt shingle roofs in Charlotte NC.',
+                href: '/asphalt-shingle-roof-cost',
               },
               {
-                title: 'Asphalt Shingle Roofing Charlotte NC',
-                description: 'GAF and CertainTeed certified shingle installation and repair.',
-                href: '/asphalt-shingle-roofing-charlotte-nc',
+                title: 'Metal Roof vs Shingles Cost',
+                description: 'Side-by-side metal vs shingle cost comparison for Charlotte homes.',
+                href: '/shingle-vs-metal-roof-cost',
               },
               {
-                title: 'Metal vs Shingles Comparison',
-                description: 'Compare metal roofing and asphalt shingles for your Charlotte home.',
-                href: '/compare/metal-vs-shingles',
+                title: 'GAF vs CertainTeed Shingles',
+                description: 'Compare the two top shingle brands — pricing, warranty, and performance.',
+                href: '/gaf-vs-certainteed-shingles-charlotte-nc',
               },
               {
                 title: 'Metal vs Tile Comparison',
-                description: 'Two premium options compared for longevity and value.',
+                description: 'Two premium roofing options compared for longevity and value.',
                 href: '/compare/metal-vs-tile',
               },
               {
@@ -928,9 +928,9 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
                 href: '/charlotte-roofing-costs-2026',
               },
               {
-                title: 'Roof Repair vs Replacement',
-                description: 'When to repair and when to replace your Charlotte roof.',
-                href: '/roof-repair-vs-replacement-charlotte-nc',
+                title: 'Storm Damage Roof Repair',
+                description: 'Free inspections and insurance claim help after Charlotte storms.',
+                href: '/storm-damage-roof-repair',
               },
             ].map((link, idx) => (
               <Link

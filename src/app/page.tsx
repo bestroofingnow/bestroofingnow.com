@@ -320,10 +320,10 @@ export default function HomePage() {
                   Explore Siding <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </span>
               </a>
-              <a href="/storm-restoration" className="bg-gradient-to-br from-accent to-accent-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
+              <a href="/storm-damage-roof-repair" className="bg-gradient-to-br from-accent to-accent-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
                 <div className="text-3xl mb-3">⛈️</div>
-                <h3 className="font-bold text-xl mb-2">Storm Restoration</h3>
-                <p className="text-white/80 text-sm mb-3">Emergency service, insurance claims &amp; full restoration</p>
+                <h3 className="font-bold text-xl mb-2">Storm Damage Repair</h3>
+                <p className="text-white/80 text-sm mb-3">Free inspections, insurance claims &amp; emergency response</p>
                 <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
                   Get Help Now <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </span>
@@ -379,9 +379,9 @@ export default function HomePage() {
                 <a href="/services/metal-roofing" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Metal Roofing</a>
                 <a href="/services/gutter-installation" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Gutter Installation</a>
                 <a href="/services/siding-installation" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Siding Installation</a>
-                <a href="/services/storm-damage" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Storm Damage</a>
+                <a href="/storm-damage-roof-repair" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Storm Damage</a>
                 <a href="/services/skylight-installation" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Skylights</a>
-                <a href="/services/emergency-roofing" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Emergency Service</a>
+                <a href="/emergency-roof-repair" className="bg-light rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Emergency Service</a>
               </div>
             </div>
 
@@ -395,6 +395,20 @@ export default function HomePage() {
                 <a href="/roof-repair-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roof Repair Charlotte</a>
                 <a href="/roof-replacement-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roof Replacement Charlotte</a>
                 <a href="/roofing-contractor-charlotte-nc" className="bg-primary/10 rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Roofing Contractor Charlotte</a>
+              </div>
+            </div>
+
+            {/* Cost Guides & Comparisons - Priority SEO Pages */}
+            <div className="border-t border-gray-200 pt-8 mt-6">
+              <p className="text-sm text-gray-500 mb-4">Cost Guides &amp; Comparisons:</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <a href="/asphalt-shingle-roof-cost" className="bg-green-50 rounded-full px-4 py-2 text-sm font-medium text-green-700 hover:bg-green-600 hover:text-white transition-colors">Shingle Roof Cost</a>
+                <a href="/metal-roof-cost" className="bg-green-50 rounded-full px-4 py-2 text-sm font-medium text-green-700 hover:bg-green-600 hover:text-white transition-colors">Metal Roof Cost</a>
+                <a href="/gutter-guard-cost" className="bg-green-50 rounded-full px-4 py-2 text-sm font-medium text-green-700 hover:bg-green-600 hover:text-white transition-colors">Gutter Guard Cost</a>
+                <a href="/charlotte-roofing-costs-2026" className="bg-green-50 rounded-full px-4 py-2 text-sm font-medium text-green-700 hover:bg-green-600 hover:text-white transition-colors">All Roofing Costs 2026</a>
+                <a href="/tile-roof-vs-shingles-charlotte-nc" className="bg-blue-50 rounded-full px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-600 hover:text-white transition-colors">Tile vs Shingles</a>
+                <a href="/shingle-vs-metal-roof-cost" className="bg-blue-50 rounded-full px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-600 hover:text-white transition-colors">Shingles vs Metal</a>
+                <a href="/gaf-vs-certainteed-shingles-charlotte-nc" className="bg-blue-50 rounded-full px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-600 hover:text-white transition-colors">GAF vs CertainTeed</a>
               </div>
             </div>
 
@@ -412,6 +426,8 @@ export default function HomePage() {
                 <a href="/roofing-davidson-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Davidson</a>
                 <a href="/roofing-matthews-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Matthews</a>
                 <a href="/roofing-concord-nc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Concord</a>
+                <a href="/roofing-rock-hill-sc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Rock Hill SC</a>
+                <a href="/locations/lancaster-sc" className="bg-accent/10 rounded-full px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent hover:text-white transition-colors">Lancaster SC</a>
                 <a href="/locations" className="bg-gray-100 rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200 transition-colors">All 60+ Locations →</a>
               </div>
             </div>

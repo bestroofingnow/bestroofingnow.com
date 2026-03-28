@@ -803,6 +803,88 @@ export default function GAFvsCertainTeedPage() {
         service="Shingle Roofing"
       />
 
+      {/* Related Comparisons & Guides */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              More Roofing Comparisons & Cost Guides
+            </h2>
+            <p className="text-gray">
+              Compare more roofing materials and get detailed pricing for Charlotte NC.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link
+              href="/asphalt-shingle-roof-cost"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Asphalt Shingle Roof Cost 2026
+              </h3>
+              <p className="text-gray text-sm">
+                Complete pricing breakdown for shingle roofs in Charlotte NC.
+              </p>
+            </Link>
+            <Link
+              href="/tile-roof-vs-shingles-charlotte-nc"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Tile Roof vs Shingles
+              </h3>
+              <p className="text-gray text-sm">
+                Side-by-side comparison of tile and asphalt shingles for Charlotte homes.
+              </p>
+            </Link>
+            <Link
+              href="/shingle-vs-metal-roof-cost"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Shingles vs Metal Roof Cost
+              </h3>
+              <p className="text-gray text-sm">
+                Metal vs shingle cost comparison with 30-year ROI analysis.
+              </p>
+            </Link>
+            <Link
+              href="/metal-roof-cost"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Metal Roof Cost 2026
+              </h3>
+              <p className="text-gray text-sm">
+                Standing seam and metal roofing pricing for Charlotte NC.
+              </p>
+            </Link>
+            <Link
+              href="/charlotte-roofing-costs-2026"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Charlotte Roofing Costs 2026
+              </h3>
+              <p className="text-gray text-sm">
+                Complete pricing guide for all roofing materials in Charlotte NC.
+              </p>
+            </Link>
+            <Link
+              href="/storm-damage-roof-repair"
+              className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow group"
+            >
+              <h3 className="font-bold text-primary mb-2 group-hover:text-accent transition">
+                Storm Damage Roof Repair
+              </h3>
+              <p className="text-gray text-sm">
+                Free inspections and insurance claim help for Charlotte storms.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="Need Help Choosing Between GAF and CertainTeed?"
         subtitle="Get a free, no-obligation estimate comparing both brands for your specific roof. Our certified team installs both GAF and CertainTeed with the same quality workmanship and extended warranty coverage."

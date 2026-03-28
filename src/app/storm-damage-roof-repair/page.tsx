@@ -656,7 +656,7 @@ export default function StormDamageRoofRepairPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
             Related Storm Services
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             <Link
               href="/hail-damage-roof-repair"
               className="bg-light p-6 rounded-xl hover:shadow-lg transition-shadow"
@@ -667,6 +667,13 @@ export default function StormDamageRoofRepairPage() {
               </p>
             </Link>
             <Link
+              href="/emergency-roof-repair"
+              className="bg-light p-6 rounded-xl hover:shadow-lg transition-shadow"
+            >
+              <h3 className="font-bold text-primary mb-2">24/7 Emergency Roof Repair</h3>
+              <p className="text-gray text-sm">Same-day emergency roof repair near me — 1-hour response.</p>
+            </Link>
+            <Link
               href="/emergency-roof-tarping"
               className="bg-light p-6 rounded-xl hover:shadow-lg transition-shadow"
             >
@@ -674,11 +681,11 @@ export default function StormDamageRoofRepairPage() {
               <p className="text-gray text-sm">24/7 emergency roof protection and tarping.</p>
             </Link>
             <Link
-              href="/emergency"
+              href="/roof-repair-cost-charlotte-nc"
               className="bg-light p-6 rounded-xl hover:shadow-lg transition-shadow"
             >
-              <h3 className="font-bold text-primary mb-2">Emergency Roofing</h3>
-              <p className="text-gray text-sm">Full emergency roofing services Charlotte NC.</p>
+              <h3 className="font-bold text-primary mb-2">Roof Repair Costs 2026</h3>
+              <p className="text-gray text-sm">What storm damage roof repair costs in Charlotte NC.</p>
             </Link>
           </div>
         </div>
