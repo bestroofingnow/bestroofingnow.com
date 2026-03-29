@@ -39,9 +39,9 @@ import { IMAGES } from '@/lib/images';
 import EstimateButton from '@/components/estimate/EstimateButton';
 
 export const metadata: Metadata = {
-  title: 'Asphalt Shingle Roof Cost (2026) | Charlotte NC Pricing Guide',
+  title: 'Asphalt Shingle Roof Cost Charlotte NC | 2026 Pricing Guide',
   description:
-    'Asphalt shingle roof cost breakdown for Charlotte NC. 3-tab shingles $3.50-$5.50/sq ft, architectural $4.50-$7.00/sq ft, premium designer $7.00-$12.00/sq ft. Full replacement cost by house size, labor vs materials, and money-saving tips from a BBB A+ rated contractor.',
+    'Asphalt shingle roof cost in Charlotte NC: 3-tab $3.50-5.50/sqft, architectural $4.50-7/sqft, designer $7-12/sqft. Full pricing by house size. Free estimates.',
   keywords: [
     'asphalt shingle roof cost',
     'cost of an asphalt shingle roof',
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/asphalt-shingle-roof-cost`,
   },
   openGraph: {
-    title: 'Asphalt Shingle Roof Cost (2026) | Charlotte NC Pricing Guide',
+    title: 'Asphalt Shingle Roof Cost Charlotte NC | 2026 Pricing Guide',
     description:
-      'Complete asphalt shingle roof cost guide for Charlotte NC homeowners. Cost per square foot, by house size, 3-tab vs architectural vs designer comparison, and what affects your price.',
+      'Asphalt shingle roof cost in Charlotte NC: 3-tab $3.50-5.50/sqft, architectural $4.50-7/sqft, designer $7-12/sqft. Full pricing by house size.',
     url: `${SITE_CONFIG.url}/asphalt-shingle-roof-cost`,
     type: 'website',
     images: [

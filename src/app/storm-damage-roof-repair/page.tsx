@@ -34,9 +34,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Charlotte NC | Free Inspections & Insurance Help',
+  title: 'Storm Damage Roof Repair Near Me | Charlotte NC | Free Inspection',
   description:
-    'Expert storm damage roof repair in Charlotte NC. Free inspections, insurance claim assistance, and 24/7 emergency response for hail, wind, fallen trees, and hurricane damage. Call now!',
+    'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage. BBB A+ rated. Call now!',
   keywords: [
     'storm damage roof repair',
     'storm damage roof repair near me',
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair`,
   },
   openGraph: {
-    title: 'Storm Damage Roof Repair Charlotte NC | Free Inspections & Insurance Help',
+    title: 'Storm Damage Roof Repair Near Me | Charlotte NC',
     description:
-      'Expert storm damage roof repair and insurance claim assistance in Charlotte NC. Hail, wind, fallen trees, and emergency response.',
+      'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage.',
     url: `${SITE_CONFIG.url}/storm-damage-roof-repair`,
     type: 'website',
     images: [
@@ -344,7 +344,7 @@ export default function StormDamageRoofRepairPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Storm Damage Repair Services
+              Storm Damage Roof Repair Services Near You
             </h2>
             <p className="text-gray text-lg">
               Complete storm damage repair, emergency response, and insurance claim assistance for
@@ -370,7 +370,7 @@ export default function StormDamageRoofRepairPage() {
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Types of Storm Damage We Repair
+              Types of Storm Damage Roof Repair We Handle
             </h2>
             <p className="text-gray text-lg">
               Charlotte&apos;s location in the Piedmont region of North Carolina exposes roofs to a

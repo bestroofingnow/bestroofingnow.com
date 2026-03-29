@@ -33,9 +33,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Emergency Roof Repair Near Me | Charlotte NC | 24/7 Same-Day Service',
+  title: 'Emergency Roof Repair Near Me | Charlotte NC 24/7 | Call Now',
   description:
-    'Emergency roof repair near me in Charlotte NC. 24/7 same-day roof repair service with 1-hour response. Leak repair, shingle replacement, storm damage fixes. Licensed & insured. Call (704) 605-6047 now!',
+    'Emergency roof repair near me in Charlotte NC. 24/7 same-day service, 1-hour response. Leaks, shingles, storm damage. Licensed & insured. Call (704) 605-6047!',
   keywords: [
     'emergency roof repair near me',
     'emergency roof repair Charlotte NC',
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair`,
   },
   openGraph: {
-    title: 'Emergency Roof Repair Near Me | Charlotte NC | 24/7 Same-Day Service',
+    title: 'Emergency Roof Repair Near Me | Charlotte NC 24/7',
     description:
-      'Same-day emergency roof repair in Charlotte NC. 24/7 service, 1-hour response time. Leak repair, shingle replacement, flashing repair, storm damage. Call now!',
+      'Emergency roof repair near me in Charlotte NC. 24/7 same-day service, 1-hour response. Leaks, shingles, storm damage. Licensed & insured.',
     url: `${SITE_CONFIG.url}/emergency-roof-repair`,
     type: 'website',
     images: [

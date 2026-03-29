@@ -44,9 +44,9 @@ import { IMAGES } from '@/lib/images';
 import EstimateButton from '@/components/estimate/EstimateButton';
 
 export const metadata: Metadata = {
-  title: 'Gutter Guard Cost (2026) | Installation Pricing Per Foot | Charlotte NC',
+  title: 'Gutter Guard Installation Cost 2026 | Charlotte NC Prices',
   description:
-    'How much do gutter guards cost in Charlotte NC? Mesh $7-$12/ft, micro-mesh $10-$18/ft, screen $3-$7/ft. Total installation $600-$5,000+. Compare types, brands (LeafFilter, LeafGuard), and DIY vs pro costs. Free estimates.',
+    'Gutter guard installation cost in Charlotte NC: mesh $7-12/ft, micro-mesh $10-18/ft, screen $3-7/ft. Compare types, brands, and DIY vs pro. Free estimates.',
   keywords: [
     'gutter guard cost',
     'gutter guard installation cost',
@@ -67,9 +67,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/gutter-guard-cost`,
   },
   openGraph: {
-    title: 'Gutter Guard Cost (2026) | Installation Pricing Per Foot | Charlotte NC',
+    title: 'Gutter Guard Installation Cost 2026 | Charlotte NC Prices',
     description:
-      'Complete gutter guard cost guide for Charlotte NC homeowners. Compare costs per foot by type, brand pricing, DIY vs professional installation, and long-term ROI. Free estimates from BBB A+ rated contractor.',
+      'Gutter guard installation cost in Charlotte NC: mesh $7-12/ft, micro-mesh $10-18/ft, screen $3-7/ft. Compare types, brands, DIY vs pro. Free estimates.',
     url: `${SITE_CONFIG.url}/gutter-guard-cost`,
     type: 'website',
     images: [

@@ -28,9 +28,9 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 const PAGE_URL = `${SITE_CONFIG.url}/gaf-vs-certainteed-shingles-charlotte-nc`;
 
 export const metadata: Metadata = {
-  title: 'GAF vs CertainTeed Shingles Price Comparison (2026) | Charlotte NC',
+  title: 'GAF vs CertainTeed Shingles Charlotte NC | 2026 Price Guide',
   description:
-    'Compare GAF vs CertainTeed shingle prices, warranties, wind ratings, and color options for Charlotte NC homes. GAF Timberline HDZ $90-110/sq vs CertainTeed Landmark $85-105/sq. Expert side-by-side comparison from a certified installer of both brands.',
+    'GAF vs CertainTeed shingles compared: prices, warranties, wind ratings, colors. Timberline HDZ $90-110/sq vs Landmark $85-105/sq. Certified installer of both.',
   keywords: [
     'gaf vs certainteed price',
     'gaf vs certainteed shingles',
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: 'GAF vs CertainTeed Shingles Price Comparison (2026) | Charlotte NC',
+    title: 'GAF vs CertainTeed Shingles Charlotte NC | 2026 Price Guide',
     description:
-      'Side-by-side price, warranty, and performance comparison of GAF and CertainTeed shingles from a certified installer of both brands in Charlotte NC.',
+      'GAF vs CertainTeed shingles compared: prices, warranties, wind ratings, colors. Certified installer of both brands in Charlotte NC.',
     url: PAGE_URL,
     type: 'article',
     images: [
