@@ -554,6 +554,23 @@ export default function RoofingDavidsonNCPage() {
 
       />
 
+      {/* Cost Guides & Comparisons */}
+      <section className="py-10 bg-light">
+        <div className="container">
+          <h2 className="text-xl font-bold text-primary mb-4 text-center">Davidson Roofing Cost Guides</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/asphalt-shingle-roof-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Shingle Roof Cost</Link>
+            <Link href="/metal-roof-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Metal Roof Cost</Link>
+            <Link href="/charlotte-roofing-costs-2026" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">All Roofing Costs 2026</Link>
+            <Link href="/gutter-guard-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Gutter Guard Cost</Link>
+            <Link href="/tile-roof-vs-shingles-charlotte-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Tile vs Shingles</Link>
+            <Link href="/gaf-vs-certainteed-shingles-charlotte-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">GAF vs CertainTeed</Link>
+            <Link href="/storm-damage-roof-repair" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Storm Damage Repair</Link>
+            <Link href="/roofing-lake-norman-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Lake Norman Roofing</Link>
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="Ready for Expert Roofing in Davidson NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations that respect your home's character and your budget."

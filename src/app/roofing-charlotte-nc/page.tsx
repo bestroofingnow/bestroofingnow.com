@@ -1350,6 +1350,68 @@ export default function RoofingCharlotteNCPage() {
               Charlotte NC Service Area
               <ArrowRight className="w-4 h-4" />
             </Link>
+            <Link
+              href="/roofing-lake-norman-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Lake Norman Roofing
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/emergency-roof-repair"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Emergency Roof Repair
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Cost Guides & Comparisons - Priority SEO Links */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Charlotte Roofing Cost Guides &amp; Material Comparisons
+            </h2>
+            <p className="text-gray">
+              Research costs, compare materials, and make informed decisions about your Charlotte roof.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <Link href="/asphalt-shingle-roof-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Shingle Roof Cost 2026</h3>
+              <p className="text-gray text-sm">3-tab, architectural, and designer shingle pricing for Charlotte.</p>
+            </Link>
+            <Link href="/metal-roof-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Metal Roof Cost 2026</h3>
+              <p className="text-gray text-sm">Standing seam and metal shingle pricing for Charlotte homes.</p>
+            </Link>
+            <Link href="/charlotte-roofing-costs-2026" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">All Roofing Costs 2026</h3>
+              <p className="text-gray text-sm">Complete Charlotte roofing price guide — every material and service.</p>
+            </Link>
+            <Link href="/gutter-guard-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Gutter Guard Cost</h3>
+              <p className="text-gray text-sm">Mesh, micro-mesh, and screen gutter guard pricing per foot.</p>
+            </Link>
+            <Link href="/tile-roof-vs-shingles-charlotte-nc" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Tile vs Shingles</h3>
+              <p className="text-gray text-sm">Complete cost and lifespan comparison for Charlotte homeowners.</p>
+            </Link>
+            <Link href="/shingle-vs-metal-roof-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Shingles vs Metal Cost</h3>
+              <p className="text-gray text-sm">Side-by-side cost comparison with 30-year ROI analysis.</p>
+            </Link>
+            <Link href="/gaf-vs-certainteed-shingles-charlotte-nc" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">GAF vs CertainTeed</h3>
+              <p className="text-gray text-sm">Compare Charlotte&apos;s two most popular shingle brands.</p>
+            </Link>
+            <Link href="/storm-damage-roof-repair" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Storm Damage Repair</h3>
+              <p className="text-gray text-sm">Free inspections and insurance claim assistance in Charlotte.</p>
+            </Link>
           </div>
         </div>
       </section>

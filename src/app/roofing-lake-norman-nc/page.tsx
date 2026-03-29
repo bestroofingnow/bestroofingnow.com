@@ -592,6 +592,54 @@ export default async function LakeNormanRoofingPage() {
         </div>
       </section>
 
+      {/* Cost Guides & Comparisons */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Lake Norman Roofing Cost Guides &amp; Comparisons
+            </h2>
+            <p className="text-gray">
+              Research roofing costs and compare materials for your Lake Norman home.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <Link href="/asphalt-shingle-roof-cost" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Shingle Roof Cost 2026</h3>
+              <p className="text-gray text-sm">Asphalt shingle pricing for Lake Norman and Charlotte area.</p>
+            </Link>
+            <Link href="/metal-roof-cost" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Metal Roof Cost 2026</h3>
+              <p className="text-gray text-sm">Standing seam metal roofing — popular on LKN waterfront homes.</p>
+            </Link>
+            <Link href="/charlotte-roofing-costs-2026" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">All Roofing Costs 2026</h3>
+              <p className="text-gray text-sm">Complete pricing guide for all roofing materials in the Charlotte metro.</p>
+            </Link>
+            <Link href="/gutter-guard-cost" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Gutter Guard Cost</h3>
+              <p className="text-gray text-sm">Protect LKN gutters from heavy tree debris — cost per foot.</p>
+            </Link>
+            <Link href="/tile-roof-vs-shingles-charlotte-nc" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Tile vs Shingles</h3>
+              <p className="text-gray text-sm">Premium tile vs asphalt for luxury Lake Norman properties.</p>
+            </Link>
+            <Link href="/shingle-vs-metal-roof-cost" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Shingles vs Metal Cost</h3>
+              <p className="text-gray text-sm">Metal is LKN&apos;s fastest-growing choice — see the cost comparison.</p>
+            </Link>
+            <Link href="/gaf-vs-certainteed-shingles-charlotte-nc" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">GAF vs CertainTeed</h3>
+              <p className="text-gray text-sm">Compare the top two shingle brands for Lake Norman homes.</p>
+            </Link>
+            <Link href="/roofing-charlotte-nc" className="bg-light p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Roofing Charlotte NC</h3>
+              <p className="text-gray text-sm">Our main Charlotte service area — 500+ roofs installed.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <GeoProjectGalleryStrip
         pageType="location"
         city="Mooresville"
