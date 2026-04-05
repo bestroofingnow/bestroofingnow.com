@@ -277,6 +277,16 @@ const faqs = [
     answer:
       'Veteran-owned roofing companies like Best Roofing Now bring military values of discipline, integrity, attention to detail, and a commitment to excellence that directly translate to superior roofing work. Veterans are trained to follow strict procedures, maintain high standards, and never cut corners. Our military background means we treat every roofing project with the same seriousness and dedication that served us in the armed forces, resulting in consistently higher quality work and customer satisfaction.',
   },
+  {
+    question: 'How do I find the best roofing company near me?',
+    answer:
+      `The best way to find a top roofing company near you is to check Google reviews (look for 4.8+ ratings with 50+ reviews), verify BBB accreditation, confirm manufacturer certifications, and ask for local references. Best Roofing Now checks every box: a perfect ${SITE_CONFIG.googleRating} Google rating, BBB A+ with zero complaints, certifications from CertainTeed, GAF, and Owens Corning, and over ${SITE_CONFIG.roofsInstalled} completed projects across Charlotte and 60+ surrounding communities. We serve the entire Charlotte metro area including Lake Norman, Matthews, Concord, Gastonia, Fort Mill, and more.`,
+  },
+  {
+    question: 'What should I look for in a roofing company near me?',
+    answer:
+      'When searching for a roofing company near you, prioritize these factors: (1) Local presence with a verifiable physical address — not just a P.O. box. (2) Strong online reviews from real customers in your area. (3) Proper licensing, bonding, and insurance for your state. (4) Manufacturer certifications that enable extended warranties. (5) Transparent, written estimates before work begins. (6) A track record of completed projects you can verify. Best Roofing Now is locally based in Charlotte at 10130 Mallard Creek Rd and serves over 60 communities throughout the Charlotte metro.',
+  },
 ];
 
 export default function BestRoofingCompanyCharlotteNCPage() {

@@ -236,6 +236,16 @@ const faqs = [
     answer:
       'Most roof leak repairs in Charlotte are completed in 1-4 hours once our crew arrives. Simple repairs like vent boot replacement or small shingle patches take about 1 hour. More complex repairs involving flashing, multiple leak points, or chimney work may take a full day. We schedule repairs promptly and work efficiently to restore your roof\'s protection as quickly as possible.',
   },
+  {
+    question: 'Who fixes roof leaks near me in the Charlotte area?',
+    answer:
+      `Best Roofing Now provides expert roof leak repair across the entire Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Concord, Lake Norman, Gastonia, Fort Mill, and 50+ surrounding communities. With ${SITE_CONFIG.roofsInstalled}+ completed projects and a perfect ${SITE_CONFIG.googleRating} Google rating, we are Charlotte's most trusted leak repair specialists. We offer free inspections, 24/7 emergency response, and upfront pricing with no hidden fees. Call ${SITE_CONFIG.phone}.`,
+  },
+  {
+    question: 'How fast can a roofer fix my leak near me?',
+    answer:
+      'For active leaks causing interior damage, Best Roofing Now offers emergency response within 1-4 hours throughout the Charlotte metro area. Once on-site, most leak repairs are completed in 1-4 hours. For non-emergency leaks, we typically schedule repairs within 1-3 business days. Our crews are positioned across Charlotte, Lake Norman, and surrounding communities for fast deployment to your location.',
+  },
 ];
 
 // ServiceSchema for roof leak repair

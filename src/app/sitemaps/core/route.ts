@@ -214,8 +214,21 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-plaza-midwood-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-noda-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-steele-creek-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-
-
+    // High-end Charlotte neighborhoods (Apr 2026)
+    { url: `${BASE_URL}/roofing-foxcroft-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-piper-glen-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-quail-hollow-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-providence-plantation-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-elizabeth-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-beverly-woods-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-cotswold-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Secondary Charlotte neighborhoods (Apr 2026)
+    { url: `${BASE_URL}/roofing-arboretum-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
+    { url: `${BASE_URL}/roofing-rea-farms-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
+    { url: `${BASE_URL}/roofing-blakeney-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
+    { url: `${BASE_URL}/roofing-waverly-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
+    { url: `${BASE_URL}/roofing-providence-crossing-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
+    { url: `${BASE_URL}/roofing-carmel-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
 
     // ============================================
     // LAKE NORMAN CITY PAGES
@@ -228,6 +241,22 @@ export async function GET() {
 
     { url: `${BASE_URL}/roofing-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-terrell-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Lake Norman hub content (Apr 2026)
+    { url: `${BASE_URL}/roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/lake-norman-waterfront-roofing`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/lake-norman-storm-damage-guide`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/lake-norman-roofing-costs-2026`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/best-roofer-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-replacement-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/hail-damage-roof-repair-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/insurance-claim-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/standing-seam-metal-roof-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Lake Norman luxury neighborhood pages (Apr 2026)
+    { url: `${BASE_URL}/roofing-the-peninsula-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-governors-island-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-jetton-cove-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-antiquity-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-the-point-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // ============================================
     // SURROUNDING CITY PAGES
@@ -255,6 +284,7 @@ export async function GET() {
     { url: `${BASE_URL}/gutter-installation-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/emergency-roof-repair-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/metal-roofing-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-inspection-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
     // Mooresville
     { url: `${BASE_URL}/roof-repair-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
@@ -263,6 +293,7 @@ export async function GET() {
     { url: `${BASE_URL}/commercial-roofing-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-inspection-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/emergency-roof-repair-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
     // Cornelius
     { url: `${BASE_URL}/roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
@@ -270,6 +301,8 @@ export async function GET() {
     { url: `${BASE_URL}/metal-roofing-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/storm-damage-roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-inspection-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/emergency-roof-repair-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     // Denver
     { url: `${BASE_URL}/roof-repair-denver-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-replacement-denver-nc`, changefreq: 'weekly', priority: '0.8' },
@@ -279,6 +312,7 @@ export async function GET() {
     { url: `${BASE_URL}/storm-damage-roof-repair-denver-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-inspection-denver-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/emergency-roof-repair-denver-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // Davidson
     { url: `${BASE_URL}/roof-replacement-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
@@ -288,6 +322,8 @@ export async function GET() {
     { url: `${BASE_URL}/storm-damage-roof-repair-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-installation-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-inspection-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/emergency-roof-repair-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // Mt Holly
     { url: `${BASE_URL}/roofing-mt-holly-nc`, changefreq: 'weekly', priority: '0.9' },
@@ -307,6 +343,7 @@ export async function GET() {
     { url: `${BASE_URL}/storm-damage-roof-repair-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-inspection-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-matthews-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // Other cities
     { url: `${BASE_URL}/roof-repair-pineville-nc`, changefreq: 'weekly', priority: '0.8' },
@@ -326,6 +363,14 @@ export async function GET() {
     { url: `${BASE_URL}/commercial-roofing-gastonia-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-rock-hill-sc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/commercial-roofing-fort-mill-sc`, changefreq: 'weekly', priority: '0.8' },
+
+    // ============================================
+    // LUXURY SERVICE PAGES (Apr 2026)
+    // ============================================
+    { url: `${BASE_URL}/custom-home-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gated-community-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/estate-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/historic-home-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
   ];
 
   const lastmod = new Date().toISOString();

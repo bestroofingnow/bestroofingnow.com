@@ -1,0 +1,686 @@
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import {
+  CheckCircle,
+  Phone,
+  Calendar,
+  Shield,
+  Star,
+  ArrowRight,
+  HelpCircle,
+  Award,
+  Users,
+  Clock,
+  FileText,
+  CloudRain,
+  Camera,
+  ClipboardCheck,
+  HandshakeIcon,
+  MapPin,
+} from 'lucide-react';
+import { CTASection } from '@/components/sections/CTASection';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+} from '@/components/seo/SchemaMarkup';
+import { Button } from '@/components/ui/Button';
+import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES } from '@/lib/images';
+import { CityGeoSection } from '@/components/sections/CityGeoSection';
+
+export const metadata: Metadata = {
+  title: 'Insurance Claim Roofing Lake Norman NC',
+  description:
+    'Insurance claim roofing in Lake Norman NC. We handle your roof claim from inspection to completion. BBB A+ rated. Free estimates. Call (704) 605-6047.',
+  keywords: [
+    'insurance claim roofing lake norman',
+    'lake norman roofing insurance claims',
+    'roof insurance claim lake norman nc',
+    'storm damage roof insurance lake norman',
+    'insurance roofing contractor lake norman',
+    'roof claim help lake norman',
+    'hail damage claim roofing lake norman',
+    'wind damage roof insurance lake norman',
+    'insurance roof replacement lake norman nc',
+    'roofing company that works with insurance lake norman',
+  ],
+  alternates: {
+    canonical: `${SITE_CONFIG.url}/insurance-claim-roofing-lake-norman-nc`,
+  },
+  openGraph: {
+    title: 'Insurance Claim Roofing Lake Norman NC | Storm Damage Claims | Best Roofing Now',
+    description:
+      'Expert insurance claim assistance for Lake Norman homeowners. We work directly with your insurance company across Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford.',
+    url: `${SITE_CONFIG.url}/insurance-claim-roofing-lake-norman-nc`,
+    type: 'website',
+    images: [
+      {
+        url: IMAGES.hero.hero18,
+        width: 1200,
+        height: 630,
+        alt: 'Insurance claim roofing Lake Norman NC - Best Roofing Now storm damage experts',
+      },
+    ],
+  },
+};
+
+// Insurance claim process steps
+const claimProcess = [
+  {
+    icon: Phone,
+    step: '1',
+    title: 'Free Storm Damage Inspection',
+    description: 'We thoroughly inspect your Lake Norman home for hail, wind, or storm damage and document everything with photos and detailed notes.',
+  },
+  {
+    icon: FileText,
+    step: '2',
+    title: 'Comprehensive Documentation',
+    description: 'We prepare a detailed damage report with measurements, photos, and material specifications that insurance adjusters require.',
+  },
+  {
+    icon: HandshakeIcon,
+    step: '3',
+    title: 'Meet with Your Adjuster',
+    description: 'We schedule and attend the insurance adjuster meeting at your Lake Norman property to ensure all damage is properly identified.',
+  },
+  {
+    icon: ClipboardCheck,
+    step: '4',
+    title: 'Review & Supplement',
+    description: 'We review your claim approval, identify any missed items, and file supplements if the settlement is insufficient for your lakefront home.',
+  },
+  {
+    icon: Camera,
+    step: '5',
+    title: 'Quality Repairs or Replacement',
+    description: 'Once approved, our certified team completes your roof repair or replacement using premium materials suited for lakeside exposure.',
+  },
+  {
+    icon: Shield,
+    step: '6',
+    title: 'Final Documentation',
+    description: 'We provide all completion documentation, warranty information, and help you close out your claim properly.',
+  },
+];
+
+// Why choose us for insurance claims
+const whyChooseUs = [
+  {
+    icon: Award,
+    title: 'BBB A+ Rated',
+    description: 'Accredited with the Better Business Bureau with an A+ rating for honest, ethical business practices.',
+  },
+  {
+    icon: Star,
+    title: '5-Star Reviews',
+    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners we've helped with claims.`,
+  },
+  {
+    icon: Shield,
+    title: 'Licensed & Insured',
+    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance for your protection.',
+  },
+  {
+    icon: Users,
+    title: 'Insurance Experts',
+    description: 'Years of experience working with all major insurance companies on Lake Norman roof claims.',
+  },
+  {
+    icon: CheckCircle,
+    title: 'No Upfront Costs',
+    description: 'We handle insurance work with no money out of pocket - you only pay your deductible.',
+  },
+  {
+    icon: Clock,
+    title: 'Fast Response',
+    description: 'Quick inspections across all Lake Norman communities to get your claim filed promptly.',
+  },
+];
+
+// Insurance companies we work with
+const insuranceCompanies = [
+  'State Farm',
+  'Allstate',
+  'USAA',
+  'Liberty Mutual',
+  'Nationwide',
+  'Travelers',
+  'Erie Insurance',
+  'Farmers Insurance',
+  'Progressive',
+  'Amica',
+  'NC Farm Bureau',
+  'Hartford',
+];
+
+// Lake Norman city links
+const lakeNormanCities = [
+  { name: 'Cornelius', href: '/locations/cornelius-nc' },
+  { name: 'Davidson', href: '/locations/davidson-nc' },
+  { name: 'Mooresville', href: '/roof-replacement-mooresville-nc' },
+  { name: 'Huntersville', href: '/locations/huntersville-nc' },
+  { name: 'Denver', href: '/roof-replacement-denver-nc' },
+  { name: 'Sherrills Ford', href: '/locations/sherrills-ford-nc' },
+  { name: 'Charlotte', href: '/insurance-claim-roofing-charlotte-nc' },
+  { name: 'Statesville', href: '/locations/statesville-nc' },
+];
+
+// FAQs about insurance claim roofing in Lake Norman
+const faqs = [
+  {
+    question: 'How do I know if I should file a roof insurance claim for my Lake Norman home?',
+    answer:
+      'If your area has experienced a significant storm with hail, high winds, or heavy debris, you may have damage worth claiming. Lake Norman waterfront homes are especially vulnerable to storms crossing the open water. Signs include missing or damaged shingles, dents in gutters, granules in gutters, and visible impact marks. Best Roofing Now offers free inspections across all Lake Norman communities to help you determine if you have a valid claim.',
+  },
+  {
+    question: 'Will filing a roof claim raise my insurance rates in North Carolina?',
+    answer:
+      'Weather-related claims for storm damage typically don\'t raise your rates the same way at-fault claims might. Many Lake Norman homeowners have storm damage without realizing it, especially on waterfront properties where wind-driven hail hits harder. We recommend getting a free inspection to understand your options - there\'s no obligation and no pressure.',
+  },
+  {
+    question: 'What does Best Roofing Now do during the insurance adjuster meeting?',
+    answer:
+      'We walk the roof with your adjuster, point out all documented damage, explain the scope of repairs needed, and ensure nothing is overlooked. For Lake Norman lakefront homes, we specifically highlight wind-driven damage patterns and waterfront exposure factors that adjusters may underestimate. Our presence helps ensure you receive a fair settlement.',
+  },
+  {
+    question: 'What if my Lake Norman roof insurance claim is denied or underpaid?',
+    answer:
+      'We help with denied or underpaid claims regularly across the Lake Norman area. We can file supplements with additional documentation, request re-inspections, and help you understand your policy. Lake Norman waterfront homes often have higher-value policies with comprehensive coverage that adjusters sometimes undervalue.',
+  },
+  {
+    question: 'How long does the insurance claim roofing process take in Lake Norman?',
+    answer:
+      'The typical timeline is 2-4 weeks from inspection to claim approval. After approval, we can usually complete your roof within 1-3 days depending on the scope. Larger Lake Norman lakefront homes may take 3-5 days. We work efficiently while maintaining quality standards and keep you informed throughout the entire process.',
+  },
+  {
+    question: 'Do I have to pay anything upfront for insurance roof work?',
+    answer:
+      'No. For insurance claims across the Lake Norman region, we work directly with your insurance company. You only pay your deductible once the work is complete. We handle all the paperwork, coordination, and communication with your insurer - from Cornelius to Sherrills Ford.',
+  },
+  {
+    question: 'What types of storm damage does insurance typically cover for Lake Norman homes?',
+    answer:
+      'Most Lake Norman homeowner\'s policies cover hail damage, wind damage, damage from fallen trees or debris, and water damage from storm-related roof breaches. Waterfront properties may have additional coverage for wind-driven rain. We help you understand your specific coverage and document all qualifying damage.',
+  },
+  {
+    question: 'Do you serve all Lake Norman communities for insurance claim work?',
+    answer:
+      'Yes, we provide insurance claim roofing services throughout the entire Lake Norman region including Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford. We serve waterfront properties along the shoreline as well as inland neighborhoods in all six communities.',
+  },
+];
+
+export default function InsuranceClaimRoofingLakeNormanNCPage() {
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Insurance Claim Roofing Lake Norman NC', url: `${SITE_CONFIG.url}/insurance-claim-roofing-lake-norman-nc` },
+        ]}
+      />
+      <FAQSchema faqs={faqs} />
+      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/insurance-claim-roofing-lake-norman-nc`}
+        pageName="Insurance Claim Roofing Lake Norman NC"
+        city="Lake Norman"
+        includeVoiceActions={true}
+        skipFAQ={true}
+        faqs={[
+          {
+            question: 'Who handles roof insurance claims in Lake Norman NC?',
+            answer: 'Best Roofing Now handles roof insurance claims throughout Lake Norman NC including Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford. We provide free storm damage inspections, meet with insurance adjusters, and ensure fair settlements. Call 704-605-6047.',
+            speakableAnswer: 'Best Roofing Now handles roof insurance claims across Lake Norman. Free inspections and adjuster meetings included. Call 704-605-6047.',
+          },
+          {
+            question: 'Does insurance cover storm damage to Lake Norman roofs?',
+            answer: 'Yes, most homeowners insurance policies cover storm damage to Lake Norman roofs including hail, wind, and fallen tree damage. You pay your deductible and insurance covers repair or replacement costs. Best Roofing Now helps maximize your settlement with thorough documentation.',
+            speakableAnswer: 'Yes, most insurance covers storm damage to Lake Norman roofs. Best Roofing Now helps maximize your settlement. Call 704-605-6047.',
+          },
+        ]}
+      />
+      <VoiceSearchActionSchema />
+
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0 hidden md:block">
+          <Image
+            src={IMAGES.hero.hero18}
+            alt="Insurance claim roofing Lake Norman NC - Storm damage roof experts"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+        <div className="container relative z-10">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
+              <Shield className="w-4 h-4" />
+              <span className="text-sm font-semibold">Insurance Claim Specialists | All LKN Communities</span>
+            </div>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+              Insurance Claim Roofing <br className="hidden md:block" />
+              <span className="text-accent-light">Lake Norman NC</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 mb-6">
+              Storm damage? We handle your entire roof insurance claim from start to finish across all Lake Norman communities.
+            </p>
+            <p className="text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now specializes in insurance claim roofing for Lake Norman homeowners in Cornelius,
+              Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford. From free storm damage inspections
+              to adjuster meetings and quality repairs - we advocate for you every step of the way. No money
+              out of pocket beyond your deductible.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                href="/contact"
+                variant="primary"
+                size="lg"
+                icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
+              >
+                Free Storm Damage Inspection
+              </Button>
+              <Button
+                href={`tel:${SITE_CONFIG.phoneClean}`}
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-primary"
+                icon={<Phone className="w-5 h-5" aria-hidden="true" />}
+              >
+                Call {SITE_CONFIG.phone}
+              </Button>
+            </div>
+
+            {/* Trust Signals */}
+            <div className="flex flex-wrap items-center gap-6 mt-8 text-sm text-white/80">
+              <span className="flex items-center gap-2">
+                <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                5.0 Google Rating ({SITE_CONFIG.googleReviewCount}+ reviews)
+              </span>
+              <span className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-accent-light" />
+                No Upfront Costs
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                We Meet with Adjusters
+              </span>
+              <span className="flex items-center gap-2">
+                <Award className="w-5 h-5 text-accent-light" />
+                Veteran-Owned
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance Claim Process Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Our Insurance Claim Process for Lake Norman Homes
+            </h2>
+            <p className="text-gray text-lg">
+              We handle every step of your roof insurance claim so you can focus on what matters most.
+              Our process is the same whether you are in Cornelius, Davidson, Mooresville, Huntersville, Denver, or Sherrills Ford.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {claimProcess.map((step) => (
+              <div
+                key={step.title}
+                className="p-6 bg-light rounded-xl hover:shadow-lg transition-all"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-lg">{step.step}</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-dark mb-2">{step.title}</h3>
+                    <p className="text-gray text-sm">{step.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Why Lake Norman Homeowners Trust Us with Insurance Claims
+              </h2>
+              <p className="text-gray text-lg mb-8">
+                Navigating a roof insurance claim can be overwhelming, especially for waterfront
+                homes with complex damage patterns. We&apos;ve helped hundreds of Lake Norman homeowners get fair
+                settlements and quality repairs. Our team knows the insurance process inside and out.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {whyChooseUs.map((item) => (
+                  <div key={item.title} className="flex items-start gap-3">
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-dark mb-1">{item.title}</h3>
+                      <p className="text-gray text-sm">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                src={IMAGES.realProjects.drone1}
+                alt="Insurance claim roofing in Lake Norman NC - completed storm damage repair"
+                width={600}
+                height={450}
+                className="rounded-xl shadow-lg"
+              />
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4">
+                <div className="flex items-center gap-3">
+                  <CloudRain className="w-10 h-10 text-primary" />
+                  <div>
+                    <p className="font-bold text-dark">Storm Damage Experts</p>
+                    <p className="text-sm text-gray">{SITE_CONFIG.roofsInstalled}+ Roofs Restored</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mid-Page CTA */}
+      <section className="bg-accent text-white py-12">
+        <div className="container">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">
+                Think Your Lake Norman Home Has Storm Damage?
+              </h2>
+              <p className="text-white/90">
+                Get a free, no-obligation inspection. We cover Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                href="/contact"
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-accent"
+                icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
+              >
+                Schedule Free Inspection
+              </Button>
+              <Button
+                href={`tel:${SITE_CONFIG.phoneClean}`}
+                className="bg-white !text-accent hover:bg-white/90"
+                size="lg"
+                icon={<Phone className="w-5 h-5" aria-hidden="true" />}
+              >
+                {SITE_CONFIG.phone}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance Companies We Work With */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              We Work with All Major Insurance Companies
+            </h2>
+            <p className="text-gray text-lg">
+              Best Roofing Now has experience working with every major insurance carrier serving Lake Norman.
+              We know their processes and speak their language.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {insuranceCompanies.map((company) => (
+              <span
+                key={company}
+                className="inline-block bg-light px-6 py-3 rounded-full text-dark font-medium border border-gray-200"
+              >
+                {company}
+              </span>
+            ))}
+          </div>
+          <p className="text-center text-gray mt-8">
+            Don&apos;t see your insurance company? No problem - we work with all carriers across Lake Norman.
+          </p>
+        </div>
+      </section>
+
+      {/* What We Document Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Thorough Documentation for Maximum Coverage
+            </h2>
+            <p className="text-gray text-lg">
+              Proper documentation is key to getting your Lake Norman claim approved.
+              We inspect and document every detail for your insurance company.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="font-bold text-dark mb-3">Shingle Damage</h3>
+              <ul className="space-y-2 text-gray text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Hail impact marks</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Missing or lifted shingles</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Granule loss</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Cracked shingles</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="font-bold text-dark mb-3">Metal Components</h3>
+              <ul className="space-y-2 text-gray text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Gutter dents and damage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Vent cap damage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Flashing damage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Downspout damage</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="font-bold text-dark mb-3">Accessories</h3>
+              <ul className="space-y-2 text-gray text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Skylights</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Satellite dishes</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Solar panels</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Chimney caps</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="font-bold text-dark mb-3">Other Damage</h3>
+              <ul className="space-y-2 text-gray text-sm">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Fence damage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Siding damage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Window screens</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span>Dock structures</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+              <MapPin className="w-4 h-4" aria-hidden="true" />
+              <span className="text-sm font-semibold">Service Areas</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Insurance Claim Roofing Throughout Lake Norman
+            </h2>
+            <p className="text-gray text-lg">
+              We help homeowners with roof insurance claims throughout the entire Lake Norman metro area.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="bg-light rounded-xl p-6">
+              <h3 className="font-bold text-dark mb-4">North Shore</h3>
+              <p className="text-gray text-sm">
+                Mooresville, Sherrills Ford, Statesville, and communities along the northern shoreline of Lake Norman
+              </p>
+            </div>
+            <div className="bg-light rounded-xl p-6">
+              <h3 className="font-bold text-dark mb-4">South Shore</h3>
+              <p className="text-gray text-sm">
+                Cornelius, Davidson, Huntersville, and communities along the southern end of Lake Norman
+              </p>
+            </div>
+            <div className="bg-light rounded-xl p-6">
+              <h3 className="font-bold text-dark mb-4">West Shore</h3>
+              <p className="text-gray text-sm">
+                Denver, Stanley, and Lincoln County communities along the western shore of Lake Norman
+              </p>
+            </div>
+          </div>
+          <div className="mt-8">
+            <div className="bg-light rounded-xl p-6">
+              <h3 className="text-xl font-bold text-dark mb-4 text-center">All Cities We Serve</h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                {lakeNormanCities.map((city) => (
+                  <Link
+                    key={city.name}
+                    href={city.href}
+                    className="flex items-center gap-2 text-gray hover:text-primary transition-colors"
+                  >
+                    <ArrowRight className="w-4 h-4" />
+                    <span>{city.name}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/locations"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+            >
+              View All Service Areas
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <HelpCircle className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Common Questions</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Insurance Claim Roofing FAQs - Lake Norman
+              </h2>
+              <p className="text-gray text-lg">
+                Answers to common questions about roof insurance claims in the Lake Norman area.
+              </p>
+            </div>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-md p-6">
+                  <h3 className="font-bold text-dark mb-2">{faq.question}</h3>
+                  <p className="text-gray">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <GeoProjectGalleryStrip
+        pageType="other"
+        city="Lake Norman"
+        slug="insurance-claim-roofing-lake-norman-nc"
+        count={4}
+        title="Recent Roofing Projects in the Lake Norman Area"
+        subtitle="Browse completed roofing projects from the Lake Norman region by Best Roofing Now."
+        schemaPageUrl={`${SITE_CONFIG.url}/insurance-claim-roofing-lake-norman-nc`}
+      />
+
+      <CityGeoSection
+        city="Lake Norman"
+        state="NC"
+        citySlug="lake-norman"
+        service="Insurance Claim Roofing"
+      />
+
+      <CTASection
+        title="Need Help with a Roof Insurance Claim in Lake Norman?"
+        subtitle="Get a free storm damage inspection and let us handle your insurance claim from start to finish. We serve Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford."
+      />
+    </>
+  );
+}

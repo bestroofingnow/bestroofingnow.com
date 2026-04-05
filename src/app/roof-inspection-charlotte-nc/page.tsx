@@ -112,6 +112,16 @@ const inspectionFAQs = [
     answer:
       'Yes, we offer roof assessments for solar panel installation in Charlotte. Before installing solar panels, it\'s essential to ensure your roof is in good condition and can support the additional equipment for 25+ years. We\'ll evaluate your roof\'s structural integrity, remaining lifespan, and any repairs needed before solar installation.',
   },
+  {
+    question: 'Who does free roof inspections near me in Charlotte?',
+    answer:
+      `Best Roofing Now offers completely free, no-obligation roof inspections throughout the Charlotte metro area — including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Concord, Lake Norman, Fort Mill, and 50+ surrounding communities. Our certified inspectors use drone technology and provide same-day written reports with photos. Call ${SITE_CONFIG.phone} or schedule online to book your free inspection.`,
+  },
+  {
+    question: 'How do I schedule a roof inspection near me?',
+    answer:
+      `Scheduling a free roof inspection with Best Roofing Now is simple: call us at ${SITE_CONFIG.phone}, use our online scheduling form, or request an instant estimate on our website. We offer flexible scheduling including same-day and next-day appointments throughout the Charlotte metro area. Whether you need an annual maintenance check, storm damage assessment, pre-purchase inspection, or insurance claim documentation, we can typically inspect your roof within 24-48 hours of your request.`,
+  },
 ];
 
 // Inspection checklist items

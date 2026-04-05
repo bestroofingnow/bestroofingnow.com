@@ -33,31 +33,28 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Luxury Roofing Lake Norman NC | Waterfront Home Specialists',
+  title: 'Luxury Roofing Lake Norman NC | Premium Materials & Estates',
   description:
-    'Premium roofing for Lake Norman waterfront homes and estates. Copper, slate, cedar shake, designer shingles for Cornelius, Davidson, Mooresville, Huntersville. Wind-resistant & impact-rated materials.',
+    'Premium luxury roofing for Lake Norman estates. Copper, slate, cedar shake, designer shingles for Cornelius, Davidson, Mooresville, Huntersville homes. Expert installation for $800K+ properties.',
   keywords: [
     'luxury roofing lake norman',
-    'lake norman waterfront roofing',
     'premium roofing lake norman nc',
-    'lakefront home roofing',
-    'waterfront roofing cornelius',
     'estate roofing davidson nc',
     'luxury roofing mooresville',
     'high-end roofing huntersville',
     'copper roofing lake norman',
     'slate roofing lake norman nc',
     'cedar shake lake norman',
-    'impact resistant roofing lake norman',
-    'wind resistant roofing lake norman',
-    'the peninsula roofing',
-    'lake norman estate roofing',
+    'designer shingles lake norman nc',
+    'premium roof materials lake norman',
+    'luxury estate roofing lake norman',
+    'high end home roofer lake norman nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/luxury-roofing-lake-norman-nc`,
   },
   openGraph: {
-    title: 'Luxury Roofing Lake Norman NC | Waterfront Home Specialists',
+    title: 'Luxury Roofing Lake Norman NC | Premium Materials & Estates',
     description:
       'Premium roofing for Lake Norman\'s finest waterfront homes and estates. Expert installation of copper, slate, cedar shake, and designer shingles with wind-resistant ratings.',
     url: `${SITE_CONFIG.url}/luxury-roofing-lake-norman-nc`,

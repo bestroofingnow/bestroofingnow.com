@@ -287,6 +287,16 @@ const faqs = [
     answer:
       'Yes! We offer flexible financing options to make roof replacement affordable. Options include 0% interest promotional periods, low monthly payments, and terms up to 144 months. Most homeowners qualify, and approval takes just minutes. We can discuss financing during your free estimate.',
   },
+  {
+    question: 'How much does roof replacement cost near me in the Charlotte area?',
+    answer:
+      'Roof replacement costs in the Charlotte metro area typically range from $8,000 to $25,000 depending on your home size, material choice, and roof complexity. Charlotte-area pricing is competitive compared to national averages. Factors like your specific neighborhood, roof pitch, accessibility, and whether tear-off is needed all affect the final cost. Best Roofing Now provides free, no-obligation estimates throughout Charlotte and 60+ surrounding communities so you know exactly what your project will cost.',
+  },
+  {
+    question: 'Who does roof replacement near me in Charlotte NC?',
+    answer:
+      `Best Roofing Now handles roof replacements across the entire Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Concord, Gastonia, Fort Mill, Rock Hill, and 50+ more communities. With ${SITE_CONFIG.roofsInstalled}+ completed roofs, a perfect ${SITE_CONFIG.googleRating} Google rating, and certifications from CertainTeed, GAF, and Owens Corning, we deliver premium roof replacements with manufacturer-backed warranties up to 50 years. Call ${SITE_CONFIG.phone} for a free estimate.`,
+  },
 ];
 
 export default function RoofReplacementCharlotteNCPage() {

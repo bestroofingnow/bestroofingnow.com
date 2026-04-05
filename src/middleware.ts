@@ -70,6 +70,10 @@ const KNOWN_ROUTES = new Set([
   'roof-repair-vs-replacement-charlotte-nc',
   'charlotte-storm-season-roof-guide',
   'charlotte-roofing-costs-2026',
+  // Lake Norman hub pages (no -nc suffix, so not caught by SERVICE_LOCATION_PATTERN)
+  'lake-norman-waterfront-roofing',
+  'lake-norman-storm-damage-guide',
+  'lake-norman-roofing-costs-2026',
   // System routes
   'api',
   '_next',

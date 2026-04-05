@@ -163,6 +163,16 @@ const faqs = [
     answer:
       'It depends on the situation. For smaller issues like minor leaks or a few missing shingles, we can often complete permanent repairs during the emergency visit. For larger damage requiring materials ordering or extensive work, we focus on making your home watertight first (tarping, temporary patches) and schedule permanent repairs as soon as possible.',
   },
+  {
+    question: 'Where can I find emergency roof repair near me?',
+    answer:
+      `Best Roofing Now provides 24/7 emergency roof repair across the entire Charlotte metro area. We respond to emergencies in Charlotte, Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Concord, Gastonia, Fort Mill, Lake Norman, and 50+ surrounding communities. Our crews are stationed throughout the region for rapid response — typically 1-4 hours. Call ${SITE_CONFIG.phone} any time, day or night, for immediate emergency roofing assistance.`,
+  },
+  {
+    question: 'Who offers 24/7 roof repair near me in Charlotte?',
+    answer:
+      `Best Roofing Now is one of the few Charlotte-area roofing companies offering true 24/7 emergency service with no answering service runaround. When you call ${SITE_CONFIG.phone}, you reach our team directly. We handle everything from emergency tarping and leak repair to storm damage assessment and temporary fixes to protect your home until permanent repairs can be completed. BBB A+ rated with ${SITE_CONFIG.googleReviewCount}+ five-star reviews.`,
+  },
 ];
 
 export default function EmergencyRoofRepairCharlotteNCPage() {
