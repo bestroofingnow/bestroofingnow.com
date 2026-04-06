@@ -23,7 +23,7 @@ import {
   Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -53,16 +53,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Denver NC | Lake Norman Western Shore | Best Roofing Now',
-    description:
+  description:
       'Fast, reliable roof repair in Denver NC on Lake Norman\'s western shore. BBB A+ rated, veteran-owned roofing company. Emergency repairs, leak fixes, and storm damage restoration. Free estimates!',
-    url: `${SITE_CONFIG.url}/roof-repair-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.repairs,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof repair services in Denver NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof repair services in Denver NC - Best Roofing Now',
       },
     ],
   },
@@ -72,39 +72,39 @@ export const metadata: Metadata = {
 const repairServices = [
   {
     icon: Droplets,
-    title: 'Leak Repair',
-    description: 'Fast detection and repair of roof leaks to prevent water damage in Denver homes along the western shore.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Fast detection and repair of roof leaks to prevent water damage in Denver homes along the western shore.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wind,
-    title: 'Storm Damage Repair',
-    description: 'Emergency repairs for wind, hail, and storm damage from Lake Norman\'s western exposure weather patterns.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency repairs for wind, hail, and storm damage from Lake Norman\'s western exposure weather patterns.',
+  href: '/services/storm-damage',
   },
   {
     icon: Hammer,
-    title: 'Shingle Repair',
-    description: 'Missing, cracked, or curling shingle replacement to restore your Denver roof\'s protection.',
-    href: '/services/roof-repair',
+  title: 'Shingle Repair',
+  description: 'Missing, cracked, or curling shingle replacement to restore your Denver roof\'s protection.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Flashing Repair',
-    description: 'Expert repair of flashing around chimneys, vents, and skylights - critical for lakeside wind exposure.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Expert repair of flashing around chimneys, vents, and skylights - critical for lakeside wind exposure.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wrench,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency roof repair services for Denver and Lincoln County when you need immediate help.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency roof repair services for Denver and Lincoln County when you need immediate help.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Search,
-    title: 'Damage Assessment',
-    description: 'Free comprehensive roof inspections to identify all repair needs before any work begins.',
-    href: '/services/roof-inspection',
+  title: 'Damage Assessment',
+  description: 'Free comprehensive roof inspections to identify all repair needs before any work begins.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -112,33 +112,33 @@ const repairServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Clock,
-    title: 'Fast Response',
-    description: 'Same-day service available for urgent repairs throughout Denver and Lincoln County.',
+  title: 'Fast Response',
+  description: 'Same-day service available for urgent repairs throughout Denver and Lincoln County.',
   },
   {
     icon: Users,
-    title: 'Western Shore Experts',
-    description: 'We understand Denver\'s unique western shore exposure and Lincoln County building requirements.',
+  title: 'Western Shore Experts',
+  description: 'We understand Denver\'s unique western shore exposure and Lincoln County building requirements.',
   },
 ];
 
@@ -172,42 +172,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does roof repair cost in Denver NC?',
-    answer:
+  answer:
       'Roof repair costs in Denver typically range from $250-$1,500 depending on the type and extent of damage. Simple shingle repairs run $250-$500, while more involved leak repairs or flashing work around lakefront homes range $500-$1,500. Lincoln County permit fees, if required, are included in our transparent pricing. We provide free estimates with no hidden charges.',
   },
   {
     question: 'Do you offer emergency roof repair in Denver NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now offers 24/7 emergency roof repair services throughout Denver and the Lake Norman western shore. When you have an active leak or storm damage, our emergency team responds quickly to secure your property and prevent further water intrusion. Call us anytime at (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'Why do Denver NC roofs get damaged more often than inland homes?',
-    answer:
+  answer:
       'Denver sits on the western shore of Lake Norman, and prevailing weather systems approach from the west. This means Denver homes face storms head-on before they cross the lake. The open water fetch also amplifies wind speeds near the shoreline. Homes in Sailview, Pinnacle Shores, and other lakefront communities experience greater wind stress on their roofing systems, making regular inspections and prompt repairs essential.',
   },
   {
     question: 'How quickly can you repair my roof in Denver NC?',
-    answer:
+  answer:
       'For emergency repairs in Denver, we typically respond within 2-4 hours. Standard repairs are usually completed within 1-3 business days of your initial call. We understand that a damaged roof cannot wait, especially with Lake Norman weather patterns, so we prioritize fast response times while maintaining our quality standards.',
   },
   {
     question: 'Do you handle Lincoln County permits for roof repairs?',
-    answer:
+  answer:
       'Yes. Denver is in Lincoln County, not Mecklenburg County, which means different permitting requirements apply. Our team handles all necessary Lincoln County permit applications and inspections for your roof repair project. Many homeowners are unaware of this distinction, but proper permitting protects your home and ensures code compliance.',
   },
   {
     question: 'Can you repair roofs in the Trilogy at Lake Norman community?',
-    answer:
+  answer:
       'Absolutely! We regularly work in Trilogy at Lake Norman, Denver\'s popular 55+ active adult community. We are familiar with the community\'s architectural guidelines and HOA requirements. We coordinate directly with Trilogy\'s management for access and scheduling, and we ensure all repairs meet the community\'s aesthetic standards.',
   },
   {
     question: 'Do you help with insurance claims for storm damage in Denver?',
-    answer:
+  answer:
       'Yes, and this is one of our specialties. Denver\'s western shore location means homes here face greater storm exposure from Lake Norman weather patterns. We provide thorough damage documentation with photos and measurements, meet with your insurance adjuster on-site, and advocate for a fair settlement so your roof is properly restored.',
   },
   {
     question: 'What types of roof damage should I look for after a storm in Denver?',
-    answer:
+  answer:
       'After storms, Denver homeowners should check for missing or lifted shingles, damaged flashing around chimneys and vents, dented metal components from hail, granule accumulation in gutters, and any signs of water intrusion in the attic. Due to western shore wind exposure, pay special attention to ridge caps, edges, and any areas where wind can get underneath shingles. We offer free post-storm inspections.',
   },
 ];
@@ -222,7 +222,6 @@ export default function RoofRepairDenverNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-denver-nc`}
         pageName="Roof Repair Denver NC"

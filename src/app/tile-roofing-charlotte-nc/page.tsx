@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Tile Roofing Charlotte NC | Clay & Concrete Tiles | Best Roofing Now',
-    description:
+  description:
       'Premium tile roofing installation in Charlotte NC. Clay and concrete tiles for lasting beauty and durability.',
-    url: `${SITE_CONFIG.url}/tile-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/tile-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero13,
-        width: 1200,
-        height: 630,
-        alt: 'Tile roofing Charlotte NC - Best Roofing Now installation',
+  width: 1200,
+  height: 630,
+  alt: 'Tile roofing Charlotte NC - Best Roofing Now installation',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Clay Tile Installation',
-    description: 'Traditional terracotta and clay tile roofing for Mediterranean and Spanish-style homes.',
-    href: '/services/residential-roofing',
+  title: 'Clay Tile Installation',
+  description: 'Traditional terracotta and clay tile roofing for Mediterranean and Spanish-style homes.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Gem,
-    title: 'Concrete Tile Roofing',
-    description: 'Durable concrete tiles in various profiles and colors for modern and traditional homes.',
-    href: '/services/residential-roofing',
+  title: 'Concrete Tile Roofing',
+  description: 'Durable concrete tiles in various profiles and colors for modern and traditional homes.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Palette,
-    title: 'Synthetic Tile Options',
-    description: 'Lightweight synthetic alternatives that replicate the look of clay and concrete.',
-    href: '/services/residential-roofing',
+  title: 'Synthetic Tile Options',
+  description: 'Lightweight synthetic alternatives that replicate the look of clay and concrete.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Tile Roof Repair',
-    description: 'Expert repair of cracked, broken, or displaced tiles to restore your roof.',
-    href: '/services/roof-repair',
+  title: 'Tile Roof Repair',
+  description: 'Expert repair of cracked, broken, or displaced tiles to restore your roof.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Tile Roof Replacement',
-    description: 'Complete tile roof replacement with modern materials and improved underlayment.',
-    href: '/services/roof-replacement',
+  title: 'Tile Roof Replacement',
+  description: 'Complete tile roof replacement with modern materials and improved underlayment.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Sun,
-    title: 'Tile Roof Maintenance',
-    description: 'Regular inspection and maintenance to maximize your tile roof lifespan.',
-    href: '/services/roof-inspection',
+  title: 'Tile Roof Maintenance',
+  description: 'Regular inspection and maintenance to maximize your tile roof lifespan.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const tileRoofBenefits = [
   {
     icon: Clock,
-    title: '50+ Year Lifespan',
-    description: 'Clay and concrete tiles can last 50-100 years with proper installation and maintenance.',
+  title: '50+ Year Lifespan',
+  description: 'Clay and concrete tiles can last 50-100 years with proper installation and maintenance.',
   },
   {
     icon: Thermometer,
-    title: 'Energy Efficient',
-    description: 'Tile roofs provide natural insulation, reducing cooling costs in Charlotte summers.',
+  title: 'Energy Efficient',
+  description: 'Tile roofs provide natural insulation, reducing cooling costs in Charlotte summers.',
   },
   {
     icon: Shield,
-    title: 'Weather Resistant',
-    description: 'Tiles withstand high winds, hail, and are naturally fire-resistant (Class A rating).',
+  title: 'Weather Resistant',
+  description: 'Tiles withstand high winds, hail, and are naturally fire-resistant (Class A rating).',
   },
   {
     icon: Palette,
-    title: 'Timeless Beauty',
-    description: 'Classic aesthetic that enhances curb appeal and never goes out of style.',
+  title: 'Timeless Beauty',
+  description: 'Classic aesthetic that enhances curb appeal and never goes out of style.',
   },
   {
     icon: Sun,
-    title: 'Low Maintenance',
-    description: 'Tiles require minimal maintenance and retain their color for decades.',
+  title: 'Low Maintenance',
+  description: 'Tiles require minimal maintenance and retain their color for decades.',
   },
   {
     icon: Gem,
-    title: 'Increased Home Value',
-    description: 'Premium tile roofing adds significant value to your Charlotte home.',
+  title: 'Increased Home Value',
+  description: 'Premium tile roofing adds significant value to your Charlotte home.',
   },
 ];
 
@@ -144,27 +144,27 @@ const tileRoofBenefits = [
 const tileStyles = [
   {
     name: 'Spanish/Mediterranean',
-    description: 'Classic barrel-shaped clay tiles with curved profiles. Perfect for Mediterranean and Spanish Revival architecture.',
+  description: 'Classic barrel-shaped clay tiles with curved profiles. Perfect for Mediterranean and Spanish Revival architecture.',
   },
   {
     name: 'Mission Tiles',
-    description: 'Traditional half-cylinder tiles that create a distinctive ridged appearance popular in Southwestern styles.',
+  description: 'Traditional half-cylinder tiles that create a distinctive ridged appearance popular in Southwestern styles.',
   },
   {
     name: 'Flat/Interlocking',
-    description: 'Sleek, modern flat tiles that interlock for a clean, contemporary look. Available in concrete and clay.',
+  description: 'Sleek, modern flat tiles that interlock for a clean, contemporary look. Available in concrete and clay.',
   },
   {
     name: 'French Tiles',
-    description: 'Low-profile interlocking tiles with a subtle curve. Elegant option for European-inspired architecture.',
+  description: 'Low-profile interlocking tiles with a subtle curve. Elegant option for European-inspired architecture.',
   },
   {
     name: 'Slate-Look Tiles',
-    description: 'Concrete or clay tiles designed to replicate the appearance of natural slate at a lower cost.',
+  description: 'Concrete or clay tiles designed to replicate the appearance of natural slate at a lower cost.',
   },
   {
     name: 'Shake-Look Tiles',
-    description: 'Tiles that mimic the rustic appearance of wood shakes without the fire risk or maintenance.',
+  description: 'Tiles that mimic the rustic appearance of wood shakes without the fire risk or maintenance.',
   },
 ];
 
@@ -172,33 +172,33 @@ const tileStyles = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Tile Specialists',
-    description: 'Experienced installers trained in proper tile roofing techniques and best practices.',
+  title: 'Tile Specialists',
+  description: 'Experienced installers trained in proper tile roofing techniques and best practices.',
   },
   {
     icon: Clock,
-    title: 'Comprehensive Warranty',
-    description: 'Extended warranties on tile roofing materials and our installation workmanship.',
+  title: 'Comprehensive Warranty',
+  description: 'Extended warranties on tile roofing materials and our installation workmanship.',
   },
 ];
 
@@ -246,42 +246,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does a tile roof cost in Charlotte NC?',
-    answer:
+  answer:
       'Tile roofing in Charlotte typically costs $15-$30 per square foot installed, or $22,500-$45,000+ for an average home. The cost depends on tile type (clay is more expensive than concrete), roof complexity, and any structural reinforcement needed. While more expensive upfront than shingles, tile roofs last 2-3 times longer, often making them more cost-effective over time.',
   },
   {
     question: 'What is the difference between clay and concrete tiles?',
-    answer:
+  answer:
       'Clay tiles are made from natural clay and fired in a kiln, offering a classic terracotta look and exceptional longevity (75-100+ years). Concrete tiles are made from sand, cement, and water, providing similar durability (50-75 years) at a lower cost. Concrete tiles come in more colors and profiles. Both are excellent choices for Charlotte homes.',
   },
   {
     question: 'Can my Charlotte home support a tile roof?',
-    answer:
+  answer:
       'Tile roofs are heavier than asphalt shingles, so we first assess your home\'s structural capacity. Most homes built to modern codes can support tile. Older homes may need reinforcement, which we can evaluate during a free consultation. Lightweight synthetic tiles are also available as an alternative that requires no structural changes.',
   },
   {
     question: 'How long does a tile roof last?',
-    answer:
+  answer:
       'Clay tile roofs can last 75-100+ years, while concrete tiles typically last 50-75 years. The underlayment beneath the tiles usually needs replacement every 20-30 years, but the tiles themselves can often be reused. Proper installation and maintenance are key to achieving maximum lifespan.',
   },
   {
     question: 'Are tile roofs good for Charlotte weather?',
-    answer:
+  answer:
       'Yes, tile roofs perform excellently in Charlotte\'s climate. They provide natural insulation that reduces cooling costs in summer, are highly wind-resistant (many rated for 125+ mph winds), and are naturally fire-resistant. They also handle Charlotte\'s rain well when properly installed with appropriate underlayment.',
   },
   {
     question: 'Do tile roofs require more maintenance?',
-    answer:
+  answer:
       'Tile roofs actually require less maintenance than many other roofing materials. The tiles themselves are extremely durable and don\'t rot, warp, or require painting. We recommend annual inspections to check for cracked or displaced tiles and to ensure the underlayment remains in good condition.',
   },
   {
     question: 'Can you repair individual broken tiles?',
-    answer:
+  answer:
       'Yes, one of the advantages of tile roofing is that individual tiles can be replaced without affecting the rest of the roof. We carry common tile types and can source matching tiles for most roofs. For older or discontinued tiles, we can often find suitable matches or recommend alternatives.',
   },
   {
     question: 'What colors and styles of tile roofing do you offer?',
-    answer:
+  answer:
       'We offer a wide range of tile roofing options including Spanish/Mediterranean barrel tiles, mission tiles, flat interlocking tiles, and tiles that replicate slate or wood shake. Colors range from traditional terracotta and red to brown, gray, black, and custom blends. We help you select the perfect style for your home\'s architecture.',
   },
 ];
@@ -296,7 +296,6 @@ export default function TileRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

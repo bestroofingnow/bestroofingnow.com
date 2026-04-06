@@ -49,37 +49,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Warehouse Roof: Repair or Replace? | Charlotte NC Industrial Guide',
-    description:
+  description:
       'Make the right decision for your Charlotte warehouse. Complete cost analysis and decision framework.',
-    url: `${SITE_CONFIG.url}/warehouse-roof-repair-vs-replacement-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/warehouse-roof-repair-vs-replacement-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const warehouseFAQs = [
   {
     question: 'How do I know if my warehouse roof needs replacement vs just repair?',
-    answer:
+  answer:
       'Key indicators for replacement: roof is 20+ years old, multiple ongoing leaks, significant ponding water, wet or damaged insulation, membrane showing widespread deterioration, or repair costs approaching 30% of replacement cost. If issues are isolated and the roof is under 15 years old, repair is usually more cost-effective.',
   },
   {
     question: 'How much does warehouse roof replacement cost in Charlotte?',
-    answer:
+  answer:
       'Charlotte warehouse roof replacement typically costs $5-$12 per square foot depending on system type. For a 50,000 sq ft warehouse, expect $250,000-$600,000. TPO and EPDM are on the lower end; metal and high-performance systems cost more. Coating can be 30-50% less.',
   },
   {
     question: 'Can my warehouse keep operating during roof work?',
-    answer:
+  answer:
       'Usually yes. Professional commercial roofers work in sections to minimize disruption. Repair work rarely affects operations. Full replacement may require temporary relocation of inventory in work areas. We work nights and weekends when needed to minimize business impact.',
   },
   {
     question: 'How long does warehouse roof replacement take?',
-    answer:
+  answer:
       'Timeline depends on size and complexity. A 50,000 sq ft warehouse typically takes 2-4 weeks for full replacement. Repairs take 1-5 days depending on scope. Coating projects fall between at 1-2 weeks. Weather can affect timeline.',
   },
   {
     question: 'What roofing system is best for warehouses in Charlotte?',
-    answer:
+  answer:
       'TPO and EPDM are most common for Charlotte warehouses due to cost-effectiveness and performance. Metal roofing offers longer life but higher cost. For warehouses with heavy equipment vibration or chemical exposure, modified bitumen or specific single-ply systems may be better.',
   },
 ];
@@ -107,60 +107,60 @@ const replaceIndicators = [
 const costFactors = [
   {
     factor: 'Roof Size',
-    description: 'Larger roofs have lower per-square-foot costs due to economies of scale.',
+  description: 'Larger roofs have lower per-square-foot costs due to economies of scale.',
   },
   {
     factor: 'System Type',
-    description: 'TPO/EPDM: $5-$8/sf, Metal: $8-$15/sf, Modified Bitumen: $6-$10/sf',
+  description: 'TPO/EPDM: $5-$8/sf, Metal: $8-$15/sf, Modified Bitumen: $6-$10/sf',
   },
   {
     factor: 'Deck Condition',
-    description: 'Damaged decking adds $2-$5/sf for replacement or repairs.',
+  description: 'Damaged decking adds $2-$5/sf for replacement or repairs.',
   },
   {
     factor: 'Insulation',
-    description: 'New insulation adds $1-$3/sf but improves energy efficiency.',
+  description: 'New insulation adds $1-$3/sf but improves energy efficiency.',
   },
   {
     factor: 'Access & Height',
-    description: 'Multi-story or difficult access increases labor costs.',
+  description: 'Multi-story or difficult access increases labor costs.',
   },
   {
     factor: 'Current Roofing Removal',
-    description: 'Tear-off vs overlay affects cost by $1-$3/sf.',
+  description: 'Tear-off vs overlay affects cost by $1-$3/sf.',
   },
 ];
 
 const decisionMatrix = [
   {
     scenario: 'Roof is 5-10 years old with isolated leak',
-    recommendation: 'Repair',
-    reasoning: 'Plenty of life left. Fix the specific issue.',
+  recommendation: 'Repair',
+  reasoning: 'Plenty of life left. Fix the specific issue.',
   },
   {
     scenario: 'Roof is 15 years old with multiple leaks',
-    recommendation: 'Assess for Coating',
-    reasoning: 'If membrane is sound, coating can add 10-15 years at 40% of replacement cost.',
+  recommendation: 'Assess for Coating',
+  reasoning: 'If membrane is sound, coating can add 10-15 years at 40% of replacement cost.',
   },
   {
     scenario: 'Roof is 20+ years old with ongoing issues',
-    recommendation: 'Replace',
-    reasoning: 'Past useful life. Continued repairs waste money.',
+  recommendation: 'Replace',
+  reasoning: 'Past useful life. Continued repairs waste money.',
   },
   {
     scenario: 'Storm damage to 10-year-old roof',
-    recommendation: 'Repair (Insurance)',
-    reasoning: 'File claim, repair damage. Roof has years of life remaining.',
+  recommendation: 'Repair (Insurance)',
+  reasoning: 'File claim, repair damage. Roof has years of life remaining.',
   },
   {
     scenario: 'Planning to sell property in 2-3 years',
-    recommendation: 'Repair or Coat',
-    reasoning: 'New roof ROI unlikely if selling soon. Make it functional.',
+  recommendation: 'Repair or Coat',
+  reasoning: 'New roof ROI unlikely if selling soon. Make it functional.',
   },
   {
     scenario: 'High energy costs, roof is 12 years old',
-    recommendation: 'Coat with Reflective System',
-    reasoning: 'Adds insulation value and extends life while cutting energy costs.',
+  recommendation: 'Coat with Reflective System',
+  reasoning: 'Adds insulation value and extends life while cutting energy costs.',
   },
 ];
 
@@ -190,10 +190,10 @@ export default function WarehouseRoofRepairVsReplacementPage() {
       <ArticleSchema
         post={{
           title: 'Warehouse Roof Repair vs Replacement: Charlotte NC Decision Guide',
-          description: 'When to repair, when to replace your warehouse roof in Charlotte.',
-          slug: 'warehouse-roof-repair-vs-replacement-charlotte-nc',
-          datePublished: '2026-01-28',
-          dateModified: '2026-01-28',
+  description: 'When to repair, when to replace your warehouse roof in Charlotte.',
+  slug: 'warehouse-roof-repair-vs-replacement-charlotte-nc',
+  datePublished: '2026-01-28',
+  dateModified: '2026-01-28',
         }}
       />
       <FAQSchema faqs={warehouseFAQs} />
@@ -390,7 +390,7 @@ export default function WarehouseRoofRepairVsReplacementPage() {
             </h2>
             <p className="text-xl text-white/90 mb-8">
               For warehouses with structurally sound roofs that are 10-20 years old,
-              coating can extend roof life 10-15 years at 30-50% of replacement cost.
+  coating can extend roof life 10-15 years at 30-50% of replacement cost.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="bg-white/10 rounded-xl p-6">

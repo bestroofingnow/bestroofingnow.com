@@ -31,7 +31,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -49,19 +48,19 @@ export const metadata: Metadata = {
     'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed ShingleMaster, BBB A+ rated. 5.0 Google rating, veteran-owned. NC General Contractor license. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
   keywords: [
     'roofing contractor charlotte nc',
-    'licensed roofing contractor charlotte',
-    'certified roofing contractor charlotte nc',
-    'gaf certified contractor charlotte',
-    'certainteed contractor charlotte nc',
-    'bbb a+ roofing contractor charlotte',
-    'insured roofing contractor charlotte nc',
-    'bonded roofing contractor charlotte',
-    'nc licensed roofer charlotte',
-    'manufacturer certified roofer charlotte nc',
-    'general contractor roofing charlotte',
-    'warranty backed roofing contractor charlotte',
-    'best roofing contractor charlotte nc',
     'roofing contractor near me charlotte',
+    'best roofing contractor charlotte nc',
+    'licensed roofing contractor charlotte nc',
+    'certified roofing contractor charlotte nc',
+    'gaf certified contractor charlotte nc',
+    'certainteed contractor charlotte nc',
+    'bbb a+ roofing contractor charlotte nc',
+    'roofing contractor lake norman nc',
+    'roofing contractor lake wylie sc',
+    'roofing contractor huntersville nc',
+    'roofing contractor mooresville nc',
+    'roofing contractor fort mill sc',
+    'veteran owned roofing contractor charlotte nc',
     'local roofing contractor charlotte nc',
   ],
   alternates: {
@@ -69,16 +68,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Contractor Charlotte NC | Licensed & Insured | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor serving Charlotte NC. Licensed and insured with 500+ roofs installed. GAF, CertainTeed, Owens Corning certified. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing contractor Charlotte NC - Best Roofing Now team at work',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing contractor Charlotte NC - Best Roofing Now team at work',
       },
     ],
   },
@@ -88,39 +87,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for homes including shingle, metal, tile, and slate roofing with extended warranty options.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for homes including shingle, metal, tile, and slate roofing with extended warranty options.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for businesses of all sizes throughout Charlotte.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for businesses of all sizes throughout Charlotte.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, flashing damage, and storm damage with honest assessments.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, flashing damage, and storm damage with honest assessments.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and manufacturer-backed warranties up to 50 years.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and manufacturer-backed warranties up to 50 years.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports, photos, drone imagery, and honest recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports, photos, drone imagery, and honest recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: '24/7 emergency storm damage restoration with complete insurance claim assistance and documentation.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: '24/7 emergency storm damage restoration with complete insurance claim assistance and documentation.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -128,19 +127,19 @@ const services = [
 const licensingRequirements = [
   {
     title: 'NC General Contractor License',
-    description: 'North Carolina requires roofing contractors working on projects over $30,000 to hold a valid General Contractor license. This license is issued by the NC Licensing Board for General Contractors (NCLBGC) and requires passing an exam, demonstrating financial responsibility, and maintaining continuous education.',
+  description: 'North Carolina requires roofing contractors working on projects over $30,000 to hold a valid General Contractor license. This license is issued by the NC Licensing Board for General Contractors (NCLBGC) and requires passing an exam, demonstrating financial responsibility, and maintaining continuous education.',
   },
   {
     title: 'Licensing Board Verification',
-    description: 'You can verify any roofing contractor\'s license status through the NC Licensing Board website at nclbgc.org. Look up the contractor by name or license number to confirm their license is active and in good standing with no disciplinary actions.',
+  description: 'You can verify any roofing contractor\'s license status through the NC Licensing Board website at nclbgc.org. Look up the contractor by name or license number to confirm their license is active and in good standing with no disciplinary actions.',
   },
   {
     title: 'Insurance Requirements',
-    description: 'Licensed roofing contractors in NC are required to carry general liability insurance and workers compensation insurance. Best Roofing Now maintains comprehensive coverage including $2M general liability and full workers comp for all employees.',
+  description: 'Licensed roofing contractors in NC are required to carry general liability insurance and workers compensation insurance. Best Roofing Now maintains comprehensive coverage including $2M general liability and full workers comp for all employees.',
   },
   {
     title: 'Building Permits',
-    description: 'Charlotte NC requires building permits for roof replacement projects. Licensed roofing contractors handle the permit application process, ensure work meets NC Residential Building Code requirements, and arrange final inspections.',
+  description: 'Charlotte NC requires building permits for roof replacement projects. Licensed roofing contractors handle the permit application process, ensure work meets NC Residential Building Code requirements, and arrange final inspections.',
   },
 ];
 
@@ -148,35 +147,35 @@ const licensingRequirements = [
 const contractorQuestions = [
   {
     question: 'What is your NC General Contractor license number?',
-    why: 'Verifies they are legally allowed to perform roofing work in North Carolina. You can look up the number at nclbgc.org.',
+  why: 'Verifies they are legally allowed to perform roofing work in North Carolina. You can look up the number at nclbgc.org.',
   },
   {
     question: 'Can you provide proof of liability and workers comp insurance?',
-    why: 'Protects you from financial liability if workers are injured or property is damaged during the project.',
+  why: 'Protects you from financial liability if workers are injured or property is damaged during the project.',
   },
   {
     question: 'What manufacturer certifications do you hold?',
-    why: 'Certifications from GAF, CertainTeed, or Owens Corning enable better warranty coverage. Only 2% of contractors achieve top-tier status.',
+  why: 'Certifications from GAF, CertainTeed, or Owens Corning enable better warranty coverage. Only 2% of contractors achieve top-tier status.',
   },
   {
     question: 'What specific warranty do you offer on materials and labor?',
-    why: 'Understand exactly what is covered, for how long, and what could void the warranty. Get warranty terms in writing.',
+  why: 'Understand exactly what is covered, for how long, and what could void the warranty. Get warranty terms in writing.',
   },
   {
     question: 'Will you handle the building permit and inspections?',
-    why: 'A professional contractor handles all permitting. Unpermitted work can cause problems when selling your home.',
+  why: 'A professional contractor handles all permitting. Unpermitted work can cause problems when selling your home.',
   },
   {
     question: 'What is the detailed scope of work and timeline?',
-    why: 'A detailed written scope prevents misunderstandings and ensures all aspects of the job are covered in the price.',
+  why: 'A detailed written scope prevents misunderstandings and ensures all aspects of the job are covered in the price.',
   },
   {
     question: 'What materials will you use? Can I see specifications?',
-    why: 'Know exactly what materials are going on your roof. Compare brands, grades, and specifications between contractor quotes.',
+  why: 'Know exactly what materials are going on your roof. Compare brands, grades, and specifications between contractor quotes.',
   },
   {
     question: 'What is your payment schedule?',
-    why: 'Reputable contractors never require more than 30% upfront. Full payment should only be due upon satisfactory completion.',
+  why: 'Reputable contractors never require more than 30% upfront. Full payment should only be due upon satisfactory completion.',
   },
 ];
 
@@ -184,33 +183,33 @@ const contractorQuestions = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
+  title: 'Certified Installers',
+  description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when you need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when you need us most.',
   },
 ];
 
@@ -262,42 +261,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What makes a good roofing contractor in Charlotte?',
-    answer:
+  answer:
       `A good roofing contractor in Charlotte should have: (1) A valid NC General Contractor license verified at nclbgc.org, (2) BBB accreditation with an A or A+ rating, (3) Strong Google reviews (4.5+ stars with 50+ reviews), (4) Comprehensive insurance (liability + workers comp), (5) Manufacturer certifications from GAF, CertainTeed, or Owens Corning for enhanced warranties, (6) A local Charlotte office with a physical address, (7) Transparent pricing with detailed written estimates, and (8) A track record of completed projects. Best Roofing Now exceeds all these standards with a ${SITE_CONFIG.googleRating} Google rating, ${SITE_CONFIG.googleReviewCount}+ reviews, BBB A+ accreditation, and ${SITE_CONFIG.roofsInstalled}+ completed roofs.`,
   },
   {
     question: 'How much does a roofing contractor charge in Charlotte NC?',
-    answer:
+  answer:
       'Roofing contractor costs in Charlotte NC vary by project type. Roof repairs typically range from $200-$1,500 for minor issues. Partial roof replacements cost $3,000-$8,000. Full residential roof replacements with architectural shingles range from $8,000-$18,000 for average-sized homes (1,500-2,500 sq ft). Premium materials like metal roofing cost $15,000-$35,000. Factors affecting price include roof size, pitch, material choice, number of old layers to remove, and structural repair needs. Best Roofing Now provides free, detailed estimates with transparent pricing and no hidden fees. Call ' + SITE_CONFIG.phone + ' for your free estimate.',
   },
   {
     question: 'Do roofing contractors in NC need to be licensed?',
-    answer:
+  answer:
       'Yes, North Carolina requires roofing contractors to hold a valid General Contractor license issued by the NC Licensing Board for General Contractors (NCLBGC) for any project over $30,000. This license requires passing a comprehensive exam, demonstrating financial responsibility, carrying insurance, and completing continuing education. You can verify any contractor\'s license at nclbgc.org. Hiring an unlicensed contractor puts you at risk for substandard work, no warranty protection, and potential legal liability. Best Roofing Now is fully licensed in North Carolina.',
   },
   {
     question: 'What is the best time of year to hire a roofing contractor in Charlotte?',
-    answer:
+  answer:
       'The best time to hire a roofing contractor in Charlotte NC is during the fall (September-November) or spring (March-May). These seasons offer mild temperatures ideal for proper shingle adhesion and comfortable working conditions. However, emergency roof repairs should never wait regardless of season. Summer (June-August) is the busiest season for Charlotte roofing contractors, so booking during spring or fall often means shorter wait times and potentially better scheduling. Winter (December-February) is also a viable option for Charlotte since temperatures rarely stay below freezing for extended periods. Best Roofing Now serves Charlotte year-round with flexible scheduling.',
   },
   {
     question: 'How do I verify a roofing contractor\'s license in NC?',
-    answer:
+  answer:
       'To verify a roofing contractor\'s license in North Carolina, visit the NC Licensing Board for General Contractors website at nclbgc.org. Click on "Verify a License" and search by the contractor\'s name or license number. The search results will show: (1) License status (active, expired, revoked), (2) License type and classification, (3) Any disciplinary actions or complaints, (4) Insurance verification. You should always verify a contractor\'s license before signing any contract. If the contractor cannot provide a license number or their license is not active, do not hire them. Best Roofing Now\'s license can be verified at nclbgc.org.',
   },
   {
     question: 'What should a roofing contract include?',
-    answer:
+  answer:
       'A professional roofing contract from a Charlotte contractor should include: (1) Full contractor name, address, phone number, and NC license number, (2) Detailed scope of work including removal, materials, and installation methods, (3) Specific materials listed by manufacturer, product name, and color, (4) Project timeline with estimated start and completion dates, (5) Total cost with a payment schedule (never more than 30% upfront), (6) Warranty details for both materials and workmanship, (7) Permit responsibility (contractor should handle), (8) Cleanup and debris removal terms, (9) Change order process, and (10) Cancellation policy. Best Roofing Now provides comprehensive contracts that cover all these elements.',
   },
   {
     question: 'How long should a roofing project take?',
-    answer:
+  answer:
       'A typical residential roof replacement in Charlotte takes 1-3 days depending on the size and complexity. Here is a general timeline: Permit approval takes 1-3 business days. Tear-off and inspection of the existing roof takes 1 day. Installation of new underlayment, flashing, and roofing material takes 1-2 days. Final cleanup and inspection takes half a day. Larger homes (3,000+ sq ft), steep or complex designs, and projects requiring structural repairs may take 3-5 days total. Weather delays (Charlotte averages 43 inches of rain) can extend timelines. Best Roofing Now provides detailed timelines with each estimate and keeps homeowners informed throughout the project.',
   },
   {
     question: 'What warranty should a roofing contractor offer?',
-    answer:
+  answer:
       'A reputable Charlotte roofing contractor should offer both a workmanship warranty and a manufacturer material warranty. Workmanship warranties from the contractor typically cover 5-25 years and protect against installation errors. Material warranties from manufacturers range from 25-50 years for shingles and up to lifetime for metal roofing. Best Roofing Now offers the strongest warranties available: GAF Golden Pledge (50-year material + 25-year workmanship), CertainTeed SureStart PLUS (50-year material + 25-year workmanship), and Owens Corning extended coverage. These enhanced warranties are only available through manufacturer-certified contractors like Best Roofing Now.',
   },
 ];
@@ -312,7 +311,6 @@ export default function RoofingContractorCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`}
         pageName="Roofing Contractor Charlotte NC"
@@ -351,7 +349,7 @@ export default function RoofingContractorCharlotteNCPage() {
               <Link href="/roof-repair-charlotte-nc" className="text-accent-light hover:text-white underline">roof repairs</Link>{' '}
               to{' '}
               <Link href="/roof-replacement-charlotte-nc" className="text-accent-light hover:text-white underline">complete replacements</Link>,
-              our certified team delivers exceptional quality backed by industry-leading warranties from
+  our certified team delivers exceptional quality backed by industry-leading warranties from
               GAF, CertainTeed, and Owens Corning.
             </p>
 

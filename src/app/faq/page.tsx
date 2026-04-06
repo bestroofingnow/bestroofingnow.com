@@ -18,7 +18,6 @@ import {
   FAQSchema,
   VoiceSearchFAQSchema,
   WebPageSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -31,22 +30,26 @@ export const metadata: Metadata = {
   description:
     'Get answers to 36 common roofing questions about pricing, insurance claims, materials, weather damage, and more. Expert advice from Charlotte\'s trusted roofers at Best Roofing Now.',
   keywords: [
-    'roofing questions Charlotte',
-    'roof repair FAQ',
-    'roof replacement questions',
+    'roofing questions Charlotte NC',
+    'roof repair FAQ Charlotte',
+    'roof replacement questions Charlotte NC',
     'roofing insurance claims FAQ',
-    'Charlotte roofing help',
-    'roof cost FAQ',
+    'how much does a roof cost Charlotte NC',
+    'roof replacement cost Charlotte NC 2026',
     'storm damage roofing FAQ',
+    'roofing questions Lake Norman',
+    'roofing FAQ Lake Wylie SC',
+    'best roofer Charlotte NC FAQ',
+    'roof insurance claim questions Charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/faq`,
   },
   openGraph: {
     title: 'Roofing FAQs | 36 Questions Answered | Best Roofing Now Charlotte',
-    description: 'Comprehensive answers to roofing questions about costs, insurance, materials, weather damage, and more from Charlotte\'s trusted roofing experts.',
-    url: `${SITE_CONFIG.url}/faq`,
-    type: 'website',
+  description: 'Comprehensive answers to roofing questions about costs, insurance, materials, weather damage, and more from Charlotte\'s trusted roofing experts.',
+  url: `${SITE_CONFIG.url}/faq`,
+  type: 'website',
   },
 };
 
@@ -81,7 +84,6 @@ export default function FAQPage() {
           { name: 'FAQ', url: `${SITE_CONFIG.url}/faq` },
         ]}
       />
-      <LocalBusinessSchema includeRating={true} />
       {/* Only ONE FAQPage schema per page - ALL_FAQS includes comprehensive content */}
       {/* VoiceSearchFAQSchema removed to comply with Google's one FAQPage per page rule */}
       <FAQSchema faqs={ALL_FAQS} />
@@ -94,18 +96,18 @@ export default function FAQPage() {
         faqs={[
           {
             question: 'What are the most common roofing questions?',
-            answer: 'The most common roofing questions homeowners ask include: How much does a new roof cost? ($8,000-$25,000+ for Charlotte homes), Does my insurance cover roof damage? (typically yes for storm damage), How long do roofs last? (15-30 years for shingles, 50+ for metal), When should I replace my roof? (when shingles are curling, missing, or 20+ years old), and How do I find a reliable roofer?',
-            speakableAnswer: 'Common roofing questions include cost (8 to 25 thousand dollars), insurance coverage for storm damage, roof lifespan of 15 to 50 years depending on material, and when to replace an aging roof.',
+  answer: 'The most common roofing questions homeowners ask include: How much does a new roof cost? ($8,000-$25,000+ for Charlotte homes), Does my insurance cover roof damage? (typically yes for storm damage), How long do roofs last? (15-30 years for shingles, 50+ for metal), When should I replace my roof? (when shingles are curling, missing, or 20+ years old), and How do I find a reliable roofer?',
+  speakableAnswer: 'Common roofing questions include cost (8 to 25 thousand dollars), insurance coverage for storm damage, roof lifespan of 15 to 50 years depending on material, and when to replace an aging roof.',
           },
           {
             question: 'How do I know if I need a new roof?',
-            answer: 'Signs you need a new roof include: shingles that are curling, cracking, or missing; granules in your gutters; daylight visible through the attic; sagging roof deck; water stains on ceilings or walls; roof age over 20 years; and neighbors replacing their roofs (similar age homes). Best Roofing Now offers free inspections to assess your roof condition.',
-            speakableAnswer: 'You may need a new roof if shingles are curling, cracking or missing, you see granules in gutters, daylight in the attic, water stains inside, or your roof is over 20 years old.',
+  answer: 'Signs you need a new roof include: shingles that are curling, cracking, or missing; granules in your gutters; daylight visible through the attic; sagging roof deck; water stains on ceilings or walls; roof age over 20 years; and neighbors replacing their roofs (similar age homes). Best Roofing Now offers free inspections to assess your roof condition.',
+  speakableAnswer: 'You may need a new roof if shingles are curling, cracking or missing, you see granules in gutters, daylight in the attic, water stains inside, or your roof is over 20 years old.',
           },
           {
             question: 'Who can answer my roofing questions in Charlotte?',
-            answer: 'Best Roofing Now answers roofing questions for Charlotte homeowners. We provide free consultations, honest assessments, and expert guidance on roof repairs, replacements, insurance claims, and material selection. Call 704-605-6047 to speak with our roofing experts.',
-            speakableAnswer: 'Best Roofing Now answers roofing questions for Charlotte homeowners with free consultations and honest assessments. Call 704-605-6047 to speak with a roofing expert.',
+  answer: 'Best Roofing Now answers roofing questions for Charlotte homeowners. We provide free consultations, honest assessments, and expert guidance on roof repairs, replacements, insurance claims, and material selection. Call 704-605-6047 to speak with our roofing experts.',
+  speakableAnswer: 'Best Roofing Now answers roofing questions for Charlotte homeowners with free consultations and honest assessments. Call 704-605-6047 to speak with a roofing expert.',
           },
         ]}
       />

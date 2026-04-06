@@ -27,7 +27,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import EstimateButton from '@/components/estimate/EstimateButton';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -45,36 +45,41 @@ export const metadata: Metadata = {
     'Looking for roofing in Charlotte NC? Best Roofing Now is #1 rated with 5.0 Google rating, BBB A+, veteran-owned. Residential & commercial roofing, roof repair, roof replacement, inspections. 500+ roofs completed. FREE estimates! (704) 605-6047.',
   keywords: [
     'roofing charlotte nc',
-    'roofing services charlotte nc',
-    'charlotte nc roofing services',
-    'roofing in charlotte north carolina',
-    'charlotte roofing solutions',
-    'full service roofing charlotte',
-    'roof services charlotte nc',
-    'residential commercial roofing charlotte',
-    'roofing work charlotte nc',
-    'professional roofing charlotte nc',
-    'best roofing company charlotte nc',
+    'roofing company charlotte nc',
+    'roofing contractor charlotte nc',
+    'roofer near me charlotte nc',
+    'best roofer charlotte nc',
     'roof replacement charlotte nc',
     'roof repair charlotte nc',
+    'roof replacement cost charlotte nc',
+    'emergency roof repair charlotte nc',
+    'storm damage roof repair charlotte nc',
+    'hail damage roof repair charlotte nc',
+    'free roof inspection charlotte nc',
+    'roofing services charlotte nc',
+    'residential roofing charlotte nc',
+    'commercial roofing charlotte nc',
+    'metal roofing charlotte nc',
+    'roofing lake norman nc',
+    'roofing lake wylie sc',
     'roof inspection charlotte nc',
-    'new roof cost charlotte nc',
+    'new roof cost charlotte nc 2026',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-charlotte-nc`,
   },
   openGraph: {
     title: 'Roofing Charlotte NC | #1 Rated Roofer | Best Roofing Now',
-    description:
+  description:
       '#1 rated roofing company in Charlotte NC. BBB A+ rated, veteran-owned with 500+ roofs completed. Complete residential & commercial roofing services. Free estimates!',
-    url: `${SITE_CONFIG.url}/roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing Charlotte NC - Best Roofing Now team completing a roof installation',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing Charlotte NC - Best Roofing Now team completing a roof installation',
       },
     ],
   },
@@ -84,51 +89,51 @@ export const metadata: Metadata = {
 const roofingServices = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Charlotte homes including asphalt shingles, architectural shingles, metal roofing, tile, and slate. We handle everything from starter homes to luxury estates in Myers Park and Ballantyne.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Charlotte homes including asphalt shingles, architectural shingles, metal roofing, tile, and slate. We handle everything from starter homes to luxury estates in Myers Park and Ballantyne.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, built-up roofing, and commercial roof repairs for Charlotte businesses, offices, retail centers, and industrial facilities of all sizes.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, built-up roofing, and commercial roof repairs for Charlotte businesses, offices, retail centers, and industrial facilities of all sizes.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, flashing issues, damaged vents, sagging areas, and all types of residential and commercial roof damage in Charlotte.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, flashing issues, damaged vents, sagging areas, and all types of residential and commercial roof damage in Charlotte.',
+  href: '/services/roof-repair',
   },
   {
     icon: Hammer,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and manufacturer-backed warranties up to 50 years. We handle permits, disposal, and final inspection.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and manufacturer-backed warranties up to 50 years. We handle permits, disposal, and final inspection.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports, high-resolution photos, drone imagery, and honest assessments. Perfect before buying or selling a Charlotte home.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports, high-resolution photos, drone imagery, and honest assessments. Perfect before buying or selling a Charlotte home.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: '24/7 emergency storm damage restoration with full insurance claim assistance. Charlotte experiences frequent hail, wind, and severe thunderstorms that damage roofs.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: '24/7 emergency storm damage restoration with full insurance claim assistance. Charlotte experiences frequent hail, wind, and severe thunderstorms that damage roofs.',
+  href: '/services/storm-damage',
   },
   {
     icon: FileCheck,
-    title: 'Insurance Claims Assistance',
-    description: 'Expert help navigating insurance claims for storm damage and covered repairs. We document damage, meet with adjusters, and advocate for fair settlements on your behalf.',
-    href: '/services/storm-damage',
+  title: 'Insurance Claims Assistance',
+  description: 'Expert help navigating insurance claims for storm damage and covered repairs. We document damage, meet with adjusters, and advocate for fair settlements on your behalf.',
+  href: '/services/storm-damage',
   },
   {
     icon: Shield,
-    title: 'Roof Maintenance Programs',
-    description: 'Preventive maintenance programs with bi-annual inspections to extend roof life, catch small issues before they grow, and maintain your manufacturer warranty coverage.',
-    href: '/services/roof-repair',
+  title: 'Roof Maintenance Programs',
+  description: 'Preventive maintenance programs with bi-annual inspections to extend roof life, catch small issues before they grow, and maintain your manufacturer warranty coverage.',
+  href: '/services/roof-repair',
   },
 ];
 
@@ -136,43 +141,43 @@ const roofingServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated in Charlotte',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews make us the top-rated roofing company in Charlotte NC.`,
+  title: '#1 Rated in Charlotte',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews make us the top-rated roofing company in Charlotte NC.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints. We stand behind every job we do.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints. We stand behind every job we do.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity, excellence, and service guide everything we do at Best Roofing Now.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity, excellence, and service guide everything we do at Best Roofing Now.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Licensed & Insured',
-    description: 'NC licensed roofing contractor with comprehensive liability and workers compensation insurance.',
+  title: 'Fully Licensed & Insured',
+  description: 'NC licensed roofing contractor with comprehensive liability and workers compensation insurance.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
+  title: 'Manufacturer Certified',
+  description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
   },
   {
     icon: ThumbsUp,
-    title: 'Transparent Pricing',
-    description: 'Detailed written estimates with no hidden fees. We honor our quotes and never surprise you.',
+  title: 'Transparent Pricing',
+  description: 'Detailed written estimates with no hidden fees. We honor our quotes and never surprise you.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock availability for roofing emergencies throughout Charlotte and surrounding areas.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock availability for roofing emergencies throughout Charlotte and surrounding areas.',
   },
   {
     icon: FileCheck,
-    title: 'Industry-Leading Warranties',
-    description: 'Up to 50-year manufacturer warranties plus our own workmanship guarantee on every project.',
+  title: 'Industry-Leading Warranties',
+  description: 'Up to 50-year manufacturer warranties plus our own workmanship guarantee on every project.',
   },
 ];
 
@@ -180,33 +185,33 @@ const whyChooseUs = [
 const costOverview = [
   {
     service: 'Roof Repair',
-    range: '$200 - $1,500',
-    details: 'Leak fixes, missing shingles, flashing repair',
+  range: '$200 - $1,500',
+  details: 'Leak fixes, missing shingles, flashing repair',
   },
   {
     service: 'Partial Roof Replacement',
-    range: '$3,000 - $8,000',
-    details: 'Section replacement, valley repair, chimney re-flash',
+  range: '$3,000 - $8,000',
+  details: 'Section replacement, valley repair, chimney re-flash',
   },
   {
     service: 'Full Roof Replacement (Shingle)',
-    range: '$8,000 - $18,000',
-    details: 'Architectural shingles, full tear-off, new underlayment',
+  range: '$8,000 - $18,000',
+  details: 'Architectural shingles, full tear-off, new underlayment',
   },
   {
     service: 'Full Roof Replacement (Premium)',
-    range: '$15,000 - $35,000',
-    details: 'Metal, tile, slate, or designer shingles',
+  range: '$15,000 - $35,000',
+  details: 'Metal, tile, slate, or designer shingles',
   },
   {
     service: 'Roof Inspection',
-    range: 'FREE',
-    details: 'Full inspection, photos, written report, honest assessment',
+  range: 'FREE',
+  details: 'Full inspection, photos, written report, honest assessment',
   },
   {
     service: 'Storm Damage Repair',
-    range: 'Often $0 (Insurance)',
-    details: 'Insurance claim assistance, documentation, adjuster meeting',
+  range: 'Often $0 (Insurance)',
+  details: 'Insurance claim assistance, documentation, adjuster meeting',
   },
 ];
 
@@ -246,39 +251,43 @@ const charlotteNeighborhoods = [
 
 // Nearby cities served
 const nearbyCities = [
-  { name: 'Huntersville', href: '/locations/huntersville-nc' },
-  { name: 'Cornelius', href: '/locations/cornelius-nc' },
-  { name: 'Davidson', href: '/locations/davidson-nc' },
-  { name: 'Mooresville', href: '/locations/mooresville-nc' },
-  { name: 'Matthews', href: '/locations/matthews-nc' },
-  { name: 'Mint Hill', href: '/locations/mint-hill-nc' },
-  { name: 'Pineville', href: '/locations/pineville-nc' },
-  { name: 'Concord', href: '/locations/concord-nc' },
-  { name: 'Gastonia', href: '/locations/gastonia-nc' },
-  { name: 'Rock Hill, SC', href: '/locations/rock-hill-sc' },
-  { name: 'Fort Mill, SC', href: '/locations/fort-mill-sc' },
-  { name: 'Indian Trail', href: '/locations/indian-trail-nc' },
+  { name: 'Lake Norman', href: '/roofing-lake-norman-nc' },
+  { name: 'Lake Wylie, SC', href: '/roofing-lake-wylie-sc' },
+  { name: 'Huntersville', href: '/roofing-huntersville-nc' },
+  { name: 'Cornelius', href: '/roofing-cornelius-nc' },
+  { name: 'Davidson', href: '/roofing-davidson-nc' },
+  { name: 'Mooresville', href: '/roofing-mooresville-nc' },
+  { name: 'Matthews', href: '/roofing-matthews-nc' },
+  { name: 'Fort Mill, SC', href: '/roofing-fort-mill-sc' },
+  { name: 'Tega Cay, SC', href: '/roofing-tega-cay-sc' },
+  { name: 'Concord', href: '/roofing-concord-nc' },
+  { name: 'Gastonia', href: '/roofing-gastonia-nc' },
+  { name: 'Rock Hill, SC', href: '/roofing-rock-hill-sc' },
+  { name: 'Pineville', href: '/roofing-pineville-nc' },
+  { name: 'Indian Trail', href: '/roofing-indian-trail-nc' },
+  { name: 'Mint Hill', href: '/roofing-mint-hill-nc' },
+  { name: 'Denver', href: '/roofing-denver-nc' },
 ];
 
 // Customer testimonials
 const testimonials = [
   {
     name: 'Michael R.',
-    location: 'Myers Park, Charlotte',
-    rating: 5,
-    text: 'Best Roofing Now replaced our entire roof after storm damage. They handled the insurance claim, kept us informed throughout the process, and the final result exceeded our expectations. Truly the best roofing company in Charlotte!',
+  location: 'Myers Park, Charlotte',
+  rating: 5,
+  text: 'Best Roofing Now replaced our entire roof after storm damage. They handled the insurance claim, kept us informed throughout the process, and the final result exceeded our expectations. Truly the best roofing company in Charlotte!',
   },
   {
     name: 'Sarah T.',
-    location: 'Ballantyne, Charlotte',
-    rating: 5,
-    text: 'We got quotes from several roofing companies in Charlotte and Best Roofing Now stood out for their professionalism and transparent pricing. No surprise charges, excellent communication, and beautiful workmanship.',
+  location: 'Ballantyne, Charlotte',
+  rating: 5,
+  text: 'We got quotes from several roofing companies in Charlotte and Best Roofing Now stood out for their professionalism and transparent pricing. No surprise charges, excellent communication, and beautiful workmanship.',
   },
   {
     name: 'David & Linda K.',
-    location: 'Dilworth, Charlotte',
-    rating: 5,
-    text: 'After years of dealing with roof leaks, we finally found a roofing company we trust. Their team diagnosed the problem correctly the first time and fixed it permanently. Highly recommend their roofing services!',
+  location: 'Dilworth, Charlotte',
+  rating: 5,
+  text: 'After years of dealing with roof leaks, we finally found a roofing company we trust. Their team diagnosed the problem correctly the first time and fixed it permanently. Highly recommend their roofing services!',
   },
 ];
 
@@ -286,43 +295,58 @@ const testimonials = [
 const faqs = [
   {
     question: 'How much does a new roof cost in Charlotte NC?',
-    answer:
+  answer:
       'A new roof in Charlotte NC typically costs between $8,000 and $18,000 for standard architectural shingles on an average-sized home (1,500-2,500 sq ft). Premium materials like metal roofing range from $15,000 to $35,000. Factors that affect cost include roof size, pitch, material choice, number of layers to remove, and structural repairs needed. Best Roofing Now provides free, detailed estimates with transparent pricing and no hidden fees. Many Charlotte homeowners also qualify for insurance coverage if their roof was damaged by hail or storms.',
   },
   {
     question: 'What is the best roofing company in Charlotte?',
-    answer:
+  answer:
       `Best Roofing Now is consistently rated the #1 roofing company in Charlotte NC. With a perfect ${SITE_CONFIG.googleRating} Google rating from ${SITE_CONFIG.googleReviewCount}+ verified reviews, BBB A+ accreditation with zero complaints, and veteran-owned values of integrity and excellence, Best Roofing Now has earned the trust of over ${SITE_CONFIG.roofsInstalled} Charlotte homeowners. We are certified by CertainTeed (ShingleMaster), GAF (Factory-Certified), and Owens Corning (Preferred Contractor), allowing us to offer industry-leading warranties up to 50 years. Call ${SITE_CONFIG.phone} for a free estimate.`,
   },
   {
     question: 'How often should you replace your roof in North Carolina?',
-    answer:
+  answer:
       'In North Carolina, most asphalt shingle roofs last 20-25 years, though Charlotte\'s hot summers, heavy rainfall, and occasional hail storms can shorten that lifespan. Three-tab shingles may only last 15-20 years, while architectural shingles typically last 25-30 years. Metal roofs can last 40-70 years, and tile or slate roofs can exceed 50 years. Signs you need replacement include curling or missing shingles, granule loss in gutters, visible daylight through the roof deck, and your roof approaching 20 years old. Best Roofing Now offers free inspections to assess your roof\'s condition and remaining life.',
   },
   {
     question: 'Does Charlotte get enough hail to damage roofs?',
-    answer:
+  answer:
       'Yes, Charlotte NC experiences significant hail storms, particularly during spring and summer months (March through August). The Charlotte metro area averages 2-4 hail events per year, with some storms producing hail up to golf ball size. Hail damage can crack shingles, dislodge granules, dent flashing, and compromise your roof\'s waterproof barrier. Even small hail (pea-sized) can cause cumulative damage over time. Best Roofing Now provides free hail damage inspections and helps Charlotte homeowners file insurance claims when damage is found. If you suspect hail damage, call us at ' + SITE_CONFIG.phone + ' for a free assessment.',
   },
   {
     question: 'How do I find a reliable roofer in Charlotte NC?',
-    answer:
+  answer:
       'To find a reliable roofer in Charlotte NC, follow these steps: (1) Verify they hold a valid NC General Contractor license, (2) Check their BBB rating and Google reviews - look for companies with 4.5+ stars and 50+ reviews, (3) Ask for proof of liability insurance and workers compensation coverage, (4) Get at least 3 written estimates for comparison, (5) Ask about manufacturer certifications like GAF, CertainTeed, or Owens Corning, (6) Verify they have a local office and physical address in Charlotte. Best Roofing Now meets all these criteria with our BBB A+ rating, ' + SITE_CONFIG.googleReviewCount + '+ five-star reviews, full licensing, and Charlotte office at ' + SITE_CONFIG.address.full + '.',
   },
   {
     question: 'What type of roof is best for Charlotte NC weather?',
-    answer:
+  answer:
       'The best roof type for Charlotte NC weather depends on your budget and priorities. Architectural asphalt shingles are the most popular choice, offering excellent wind resistance (up to 130 mph), impact resistance from hail, and a 25-30 year lifespan at an affordable price point. Metal roofing is growing in popularity for Charlotte homes because it handles heat, wind (up to 140 mph), and hail exceptionally well while lasting 40-70 years. For luxury homes, synthetic slate or tile provides superior durability. Best Roofing Now recommends shingles rated for Class 4 impact resistance for Charlotte homes due to our hail risk. We help homeowners choose the right material based on their home style, budget, and HOA requirements.',
   },
   {
     question: 'Do I need a permit for a new roof in Charlotte NC?',
-    answer:
+  answer:
       'Yes, Charlotte NC requires a building permit for roof replacement projects. The City of Charlotte\'s Planning, Design & Development department issues roofing permits, which typically cost $100-$300 depending on the project scope. The permit ensures work meets the NC Residential Building Code and local Charlotte building standards. As a licensed roofing contractor, Best Roofing Now handles all permit applications, scheduling of inspections, and final sign-off as part of our roof replacement service. You don\'t need to worry about any paperwork - we take care of everything from start to finish.',
   },
   {
     question: 'How long does roof replacement take in Charlotte?',
-    answer:
+  answer:
       'Most residential roof replacements in Charlotte are completed in 1-3 days, depending on size and complexity. A standard 2,000 sq ft home with a straightforward gable roof typically takes 1-2 days. Larger homes (3,000+ sq ft), steep or complex roof designs, and projects requiring structural repairs may take 3-5 days. Factors that can extend the timeline include weather delays (Charlotte receives 43 inches of rain annually), multiple roof layers requiring removal, extensive decking replacement, and custom material installations. Best Roofing Now provides a detailed timeline before starting work and keeps you informed of progress throughout the project.',
+  },
+  {
+    question: 'Do you serve Lake Norman and Lake Wylie from Charlotte?',
+  answer:
+      'Yes! Best Roofing Now serves the entire Charlotte metro area including Lake Norman (Cornelius, Davidson, Mooresville, Huntersville, Denver) and Lake Wylie (Tega Cay, Fort Mill, Lake Wylie SC). We are fully licensed in both North Carolina and South Carolina, covering Mecklenburg, Iredell, Gaston, and York counties. We specialize in waterfront roofing for lakefront homes with wind-resistant, impact-rated materials designed for lakeside exposure. Call (704) 605-6047 for a free estimate anywhere in the Charlotte metro.',
+  },
+  {
+    question: 'Can you help file a roof insurance claim in Charlotte NC?',
+  answer:
+      'Yes, Best Roofing Now provides full insurance claim assistance for Charlotte homeowners. Our process includes: (1) Free storm damage inspection with detailed photo documentation, (2) Written damage report for your insurance company, (3) Meeting with your insurance adjuster on-site, (4) Filing supplemental claims if the initial estimate is too low, (5) Coordinating repairs around the claims timeline. We have helped hundreds of Charlotte, Lake Norman, and Lake Wylie homeowners get their roofs replaced through insurance at minimal out-of-pocket cost. There is no upfront fee for our insurance claim assistance.',
+  },
+  {
+    question: 'What is the cheapest way to replace a roof in Charlotte NC?',
+  answer:
+      'The most affordable roof replacement option in Charlotte is 3-tab asphalt shingles, starting around $6,000-$8,000 for average homes. However, we recommend architectural shingles ($8,000-$15,000) as the best value - they last 25-30 years vs. 15-20 for 3-tab, offer better wind and hail resistance, and add more curb appeal. Many Charlotte homeowners also save significantly through insurance claims for storm-damaged roofs. Best Roofing Now offers financing options and we help identify if your roof qualifies for insurance coverage. Call (704) 605-6047 for a free estimate.',
   },
 ];
 
@@ -338,7 +362,6 @@ export default function RoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-charlotte-nc`}
         pageName="Roofing Charlotte NC"
@@ -348,23 +371,23 @@ export default function RoofingCharlotteNCPage() {
         faqs={[
           {
             question: 'Who is the best roofing company in Charlotte NC?',
-            answer: 'Best Roofing Now is Charlotte\'s #1 rated roofing company with 5-star Google reviews, BBB A+ accreditation, and veteran-owned values. They are certified by CertainTeed, GAF, and Owens Corning for premium warranties up to 50 years. Over 500 Charlotte roofs completed. Call (704) 605-6047 for a free estimate.',
-            speakableAnswer: 'Best Roofing Now is Charlotte\'s #1 rated roofing company. 5-star rated, BBB A+, veteran-owned with 500+ roofs completed. Call 704-605-6047.',
+  answer: 'Best Roofing Now is Charlotte\'s #1 rated roofing company with 5-star Google reviews, BBB A+ accreditation, and veteran-owned values. They are certified by CertainTeed, GAF, and Owens Corning for premium warranties up to 50 years. Over 500 Charlotte roofs completed. Call (704) 605-6047 for a free estimate.',
+  speakableAnswer: 'Best Roofing Now is Charlotte\'s #1 rated roofing company. 5-star rated, BBB A+, veteran-owned with 500+ roofs completed. Call 704-605-6047.',
           },
           {
             question: 'What roofing services are available in Charlotte NC?',
-            answer: 'Charlotte roofing services from Best Roofing Now include: roof repairs, complete roof replacement, roof inspections, storm damage restoration, emergency 24/7 repairs, metal roofing, commercial roofing, gutter installation, and insurance claim assistance. They work with all roof types - shingles, metal, flat, tile, and slate.',
-            speakableAnswer: 'Best Roofing Now offers roof repair, replacement, inspections, storm damage restoration, 24/7 emergency service, and insurance help in Charlotte.',
+  answer: 'Charlotte roofing services from Best Roofing Now include: roof repairs, complete roof replacement, roof inspections, storm damage restoration, emergency 24/7 repairs, metal roofing, commercial roofing, gutter installation, and insurance claim assistance. They work with all roof types - shingles, metal, flat, tile, and slate.',
+  speakableAnswer: 'Best Roofing Now offers roof repair, replacement, inspections, storm damage restoration, 24/7 emergency service, and insurance help in Charlotte.',
           },
           {
             question: 'How much does roofing cost in Charlotte NC?',
-            answer: 'Roofing costs in Charlotte vary by project. Repairs cost $200-$5,000. Full roof replacement averages $8,000-$25,000 for most homes. Best Roofing Now provides free estimates with transparent pricing and offers financing options. Storm damage is often covered by insurance.',
-            speakableAnswer: 'Roofing in Charlotte costs $200 to $5,000 for repairs, $8,000 to $25,000 for replacement. Best Roofing Now offers free estimates and financing.',
+  answer: 'Roofing costs in Charlotte vary by project. Repairs cost $200-$5,000. Full roof replacement averages $8,000-$25,000 for most homes. Best Roofing Now provides free estimates with transparent pricing and offers financing options. Storm damage is often covered by insurance.',
+  speakableAnswer: 'Roofing in Charlotte costs $200 to $5,000 for repairs, $8,000 to $25,000 for replacement. Best Roofing Now offers free estimates and financing.',
           },
           {
             question: 'Does Best Roofing Now offer free roof inspections in Charlotte?',
-            answer: 'Yes, Best Roofing Now provides completely free roof inspections throughout Charlotte NC and surrounding areas. Their certified inspectors examine your roof, document issues with photos, and provide honest recommendations. There is no obligation to proceed - they earn your business through quality and transparency.',
-            speakableAnswer: 'Yes, Best Roofing Now offers free roof inspections in Charlotte. They document issues with photos and provide honest recommendations with no obligation.',
+  answer: 'Yes, Best Roofing Now provides completely free roof inspections throughout Charlotte NC and surrounding areas. Their certified inspectors examine your roof, document issues with photos, and provide honest recommendations. There is no obligation to proceed - they earn your business through quality and transparency.',
+  speakableAnswer: 'Yes, Best Roofing Now offers free roof inspections in Charlotte. They document issues with photos and provide honest recommendations with no obligation.',
           },
         ]}
       />
@@ -688,11 +711,11 @@ export default function RoofingCharlotteNCPage() {
                     <p className="leading-relaxed">
                       A lot of roofers will tell you what you want to hear just to get the job. We take a
                       different approach. Every estimate comes with detailed photos, an honest assessment,
-                      and a written quote that won&apos;t change once we start working. No games, no surprises.
+  and a written quote that won&apos;t change once we start working. No games, no surprises.
                     </p>
                     <p className="leading-relaxed font-semibold text-dark">
                       If you&apos;re looking for someone who will do the job right, stand behind their work,
-                      and treat you like a neighbor - give us a call. I look forward to meeting you.
+  and treat you like a neighbor - give us a call. I look forward to meeting you.
                     </p>
                   </div>
                   <p className="mt-6 text-primary font-bold text-lg">
@@ -760,8 +783,8 @@ export default function RoofingCharlotteNCPage() {
                 <p className="text-gray mb-4">
                   Charlotte&apos;s booming commercial real estate market demands reliable roofing contractors who understand
                   the unique challenges of commercial buildings. We install and maintain TPO, EPDM, PVC, modified bitumen,
-                  built-up roofing (BUR), and commercial metal roofing systems. Whether you own a retail center in SouthPark,
-                  an office building Uptown, or a warehouse in Steele Creek, our{' '}
+  built-up roofing (BUR), and commercial metal roofing systems. Whether you own a retail center in SouthPark,
+  an office building Uptown, or a warehouse in Steele Creek, our{' '}
                   <Link href="/commercial-roofing-charlotte-nc" className="text-primary hover:text-accent underline">commercial roofing team</Link>{' '}
                   delivers quality results on schedule.
                 </p>
@@ -780,10 +803,10 @@ export default function RoofingCharlotteNCPage() {
                 </div>
                 <p className="text-gray mb-4">
                   Charlotte&apos;s weather can be tough on roofs. From summer thunderstorms and hail to winter ice and wind,
-                  damage can occur at any time. Our{' '}
+  damage can occur at any time. Our{' '}
                   <Link href="/roof-repair-charlotte-nc" className="text-primary hover:text-accent underline">Charlotte roof repair services</Link>{' '}
                   cover leak detection and repair, missing or damaged shingle replacement, flashing repair, pipe boot replacement,
-                  ridge cap repair, valley repair, soffit and fascia repair, and emergency tarping. We diagnose the problem correctly
+  ridge cap repair, valley repair, soffit and fascia repair, and emergency tarping. We diagnose the problem correctly
                   the first time and provide a permanent fix - not a temporary patch.
                 </p>
                 <Link href="/services/roof-repair" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent">
@@ -803,8 +826,8 @@ export default function RoofingCharlotteNCPage() {
                   When repair is no longer cost-effective, our{' '}
                   <Link href="/roof-replacement-charlotte-nc" className="text-primary hover:text-accent underline">Charlotte roof replacement service</Link>{' '}
                   provides a complete solution. We handle permit acquisition, full tear-off of old materials, deck inspection and repair,
-                  installation of ice and water shield, synthetic underlayment, new drip edge, new shingles or your chosen material,
-                  proper ventilation, and final cleanup. Our manufacturer certifications allow us to offer extended warranties up to
+  installation of ice and water shield, synthetic underlayment, new drip edge, new shingles or your chosen material,
+  proper ventilation, and final cleanup. Our manufacturer certifications allow us to offer extended warranties up to
                   50 years, including GAF Golden Pledge and CertainTeed SureStart PLUS coverage.
                 </p>
                 <Link href="/roof-replacement-charlotte-nc" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent">
@@ -822,7 +845,7 @@ export default function RoofingCharlotteNCPage() {
                 </div>
                 <p className="text-gray mb-4">
                   Our free roof inspections include a thorough examination of shingles, flashing, vents, gutters, soffit,
-                  fascia, and interior attic spaces. We use drone technology for hard-to-reach areas and provide a detailed
+  fascia, and interior attic spaces. We use drone technology for hard-to-reach areas and provide a detailed
                   written report with high-resolution photos documenting our findings. Whether you&apos;re buying a home, selling
                   a home, or just want to know your roof&apos;s condition, our honest inspections give you the information you
                   need to make informed decisions.
@@ -890,7 +913,7 @@ export default function RoofingCharlotteNCPage() {
                   <h3 className="text-xl font-bold text-dark mb-2">Clear, Written Estimate</h3>
                   <p className="text-gray">
                     You&apos;ll get a detailed written estimate that breaks down everything: materials, labor,
-                    disposal, permits, the whole thing. The price we quote is the price you pay. Period.
+  disposal, permits, the whole thing. The price we quote is the price you pay. Period.
                     I don&apos;t believe in &quot;discovering&quot; extra work after we&apos;ve started and hitting you
                     with surprise charges. If we think there might be underlying issues, we discuss that
                     upfront and account for it in the estimate.
@@ -924,7 +947,7 @@ export default function RoofingCharlotteNCPage() {
                     When we&apos;re done, I or my project manager walks through everything with you. We show
                     you the completed work, answer any questions, and make sure you&apos;re 100% satisfied
                     before we consider the job complete. You&apos;ll receive all warranty paperwork,
-                    before-and-after photos, and my personal cell phone number in case you ever need
+  before-and-after photos, and my personal cell phone number in case you ever need
                     anything down the road.
                   </p>
                 </div>
@@ -946,14 +969,14 @@ export default function RoofingCharlotteNCPage() {
                 I&apos;ve been roofing homes across the Charlotte metro area for years, and let me tell you -
                 this area has its own unique challenges. We&apos;re not dealing with Arizona heat or Maine
                 snow. We&apos;ve got our own thing going on, and if your roofer doesn&apos;t understand that,
-                your roof is going to suffer.
+  your roof is going to suffer.
               </p>
               <p>
                 First off, the humidity. Charlotte summers are brutal on roofs. That constant moisture
                 in the air, combined with our afternoon thunderstorms, creates perfect conditions for
                 algae growth - those black streaks you see on older roofs? That&apos;s algae, and it&apos;s not
                 just ugly. It actually eats away at your shingles over time. When we install a roof,
-                we recommend algae-resistant shingles specifically designed for our climate.
+  we recommend algae-resistant shingles specifically designed for our climate.
               </p>
               <p>
                 Then there&apos;s the hail. Every spring and summer, Charlotte gets hit with hailstorms.
@@ -966,14 +989,14 @@ export default function RoofingCharlotteNCPage() {
               <p>
                 The temperature swings are another factor. We can go from 30 degrees to 70 degrees in
                 the same week during winter. That expansion and contraction stresses roofing materials,
-                especially around flashing and penetrations. Proper installation techniques that account
+  especially around flashing and penetrations. Proper installation techniques that account
                 for this movement are essential - something a contractor from Florida or up north might
                 not think about.
               </p>
               <p>
                 And let&apos;s talk about trees. Charlotte is called the &quot;City of Trees&quot; for a reason.
                 Those beautiful oaks and maples that shade our neighborhoods? They also drop leaves,
-                branches, and debris that can clog gutters and valleys. Overhanging branches scrape
+  branches, and debris that can clog gutters and valleys. Overhanging branches scrape
                 shingles and hold moisture against the roof. When we do an inspection, we look at the
                 whole picture - not just the roof, but what&apos;s affecting it.
               </p>
@@ -1326,6 +1349,68 @@ export default function RoofingCharlotteNCPage() {
             >
               Charlotte NC Service Area
               <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/roofing-lake-norman-nc"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Lake Norman Roofing
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/emergency-roof-repair"
+              className="inline-flex items-center gap-2 bg-light px-4 py-2 rounded-lg text-primary font-semibold hover:bg-primary hover:text-white transition-colors shadow-sm"
+            >
+              Emergency Roof Repair
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Cost Guides & Comparisons - Priority SEO Links */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Charlotte Roofing Cost Guides &amp; Material Comparisons
+            </h2>
+            <p className="text-gray">
+              Research costs, compare materials, and make informed decisions about your Charlotte roof.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <Link href="/asphalt-shingle-roof-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Shingle Roof Cost 2026</h3>
+              <p className="text-gray text-sm">3-tab, architectural, and designer shingle pricing for Charlotte.</p>
+            </Link>
+            <Link href="/metal-roof-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Metal Roof Cost 2026</h3>
+              <p className="text-gray text-sm">Standing seam and metal shingle pricing for Charlotte homes.</p>
+            </Link>
+            <Link href="/charlotte-roofing-costs-2026" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">All Roofing Costs 2026</h3>
+              <p className="text-gray text-sm">Complete Charlotte roofing price guide — every material and service.</p>
+            </Link>
+            <Link href="/gutter-guard-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Gutter Guard Cost</h3>
+              <p className="text-gray text-sm">Mesh, micro-mesh, and screen gutter guard pricing per foot.</p>
+            </Link>
+            <Link href="/tile-roof-vs-shingles-charlotte-nc" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Tile vs Shingles</h3>
+              <p className="text-gray text-sm">Complete cost and lifespan comparison for Charlotte homeowners.</p>
+            </Link>
+            <Link href="/shingle-vs-metal-roof-cost" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Shingles vs Metal Cost</h3>
+              <p className="text-gray text-sm">Side-by-side cost comparison with 30-year ROI analysis.</p>
+            </Link>
+            <Link href="/gaf-vs-certainteed-shingles-charlotte-nc" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">GAF vs CertainTeed</h3>
+              <p className="text-gray text-sm">Compare Charlotte&apos;s two most popular shingle brands.</p>
+            </Link>
+            <Link href="/storm-damage-roof-repair" className="bg-white p-5 rounded-xl hover:shadow-lg transition group">
+              <h3 className="font-bold text-primary mb-1 group-hover:text-accent transition">Storm Damage Repair</h3>
+              <p className="text-gray text-sm">Free inspections and insurance claim assistance in Charlotte.</p>
             </Link>
           </div>
         </div>

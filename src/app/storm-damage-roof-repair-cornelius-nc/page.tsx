@@ -55,16 +55,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Cornelius NC | Insurance Help',
-    description:
+  description:
       'Expert storm damage roof repair in Cornelius NC near Lake Norman. Hail, wind, and emergency repairs with full insurance claim assistance. Free storm inspections!',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-cornelius-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-cornelius-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero7,
-        width: 1200,
-        height: 630,
-        alt: 'Storm damage roof repair services in Cornelius NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Storm damage roof repair services in Cornelius NC - Best Roofing Now',
       },
     ],
   },
@@ -74,39 +74,39 @@ export const metadata: Metadata = {
 const stormServices = [
   {
     icon: CloudLightning,
-    title: 'Hail Damage Repair',
-    description: 'Thorough assessment and repair of hail impacts including dented shingles, cracked tiles, and granule loss.',
-    href: '/services/storm-damage',
+  title: 'Hail Damage Repair',
+  description: 'Thorough assessment and repair of hail impacts including dented shingles, cracked tiles, and granule loss.',
+  href: '/services/storm-damage',
   },
   {
     icon: CloudRain,
-    title: 'Wind Damage Repair',
-    description: 'Restoration of wind-lifted, torn, or missing shingles and ridge caps on Cornelius homes.',
-    href: '/services/storm-damage',
+  title: 'Wind Damage Repair',
+  description: 'Restoration of wind-lifted, torn, or missing shingles and ridge caps on Cornelius homes.',
+  href: '/services/storm-damage',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Tarping',
-    description: '24/7 emergency tarping to prevent water intrusion while permanent repairs are arranged.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Tarping',
+  description: '24/7 emergency tarping to prevent water intrusion while permanent repairs are arranged.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: FileText,
-    title: 'Insurance Claims Assistance',
-    description: 'End-to-end insurance claim support with documentation, adjuster meetings, and settlement advocacy.',
-    href: '/services/insurance-claims',
+  title: 'Insurance Claims Assistance',
+  description: 'End-to-end insurance claim support with documentation, adjuster meetings, and settlement advocacy.',
+  href: '/services/insurance-claims',
   },
   {
     icon: Umbrella,
-    title: 'Tree Damage Repair',
-    description: 'Safe removal of fallen limbs and structural repair of roof decking and shingles damaged by trees.',
-    href: '/services/emergency-roofing',
+  title: 'Tree Damage Repair',
+  description: 'Safe removal of fallen limbs and structural repair of roof decking and shingles damaged by trees.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Shield,
-    title: 'Water Damage Repair',
-    description: 'Quick response to stop active leaks and restore water-damaged decking, insulation, and interior ceilings.',
-    href: '/services/roof-repair',
+  title: 'Water Damage Repair',
+  description: 'Quick response to stop active leaks and restore water-damaged decking, insulation, and interior ceilings.',
+  href: '/services/roof-repair',
   },
 ];
 
@@ -114,33 +114,33 @@ const stormServices = [
 const whyChooseUs = [
   {
     icon: FileText,
-    title: 'Insurance Specialists',
-    description: 'Deep experience working with all major carriers to maximize your Cornelius storm damage claim.',
+  title: 'Insurance Specialists',
+  description: 'Deep experience working with all major carriers to maximize your Cornelius storm damage claim.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Response',
-    description: 'Round-the-clock emergency service for Cornelius homeowners when storms strike without warning.',
+  title: '24/7 Emergency Response',
+  description: 'Round-the-clock emergency service for Cornelius homeowners when storms strike without warning.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Better Business Bureau accredited with an A+ rating and a proven record of honest storm work.',
+  title: 'BBB A+ Rated',
+  description: 'Better Business Bureau accredited with an A+ rating and a proven record of honest storm work.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from Lake Norman homeowners we have helped after storms.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from Lake Norman homeowners we have helped after storms.`,
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed North Carolina roofing contractor with comprehensive liability and workers comp coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed North Carolina roofing contractor with comprehensive liability and workers comp coverage.',
   },
   {
     icon: Users,
-    title: 'Veteran-Owned',
-    description: 'A veteran-owned business built on integrity, discipline, and service to our Lake Norman neighbors.',
+  title: 'Veteran-Owned',
+  description: 'A veteran-owned business built on integrity, discipline, and service to our Lake Norman neighbors.',
   },
 ];
 
@@ -178,42 +178,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How do I know if my Cornelius home has storm damage?',
-    answer:
+  answer:
       'After a storm, check for obvious signs like missing shingles, dented gutters, broken siding, or water stains on ceilings. However, much hail and wind damage is invisible from the ground. Hail often leaves subtle dents or bruises on shingles that only trained inspectors can identify. We provide free post-storm inspections throughout Cornelius, including waterfront properties along The Peninsula and Sailview, where wind exposure is highest.',
   },
   {
     question: 'Will my insurance cover storm damage repairs in Cornelius NC?',
-    answer:
+  answer:
       'Most North Carolina homeowners insurance policies cover storm damage from wind, hail, and fallen trees. Coverage depends on your specific policy, deductible, and the type of damage. Many Cornelius HOA communities like Antiquity and Bailey\'s Glen have specific requirements that we understand well. We work directly with insurance companies every day and provide thorough documentation to support your claim.',
   },
   {
     question: 'How soon after a storm should I schedule a roof inspection?',
-    answer:
+  answer:
       'We recommend scheduling an inspection within 1-2 weeks of any significant storm event in Cornelius. North Carolina insurers have filing deadlines, and waiting too long can allow minor damage to develop into costly problems. Our team is available for rapid post-storm inspections and can typically be on your roof within 24-48 hours of your call.',
   },
   {
     question: 'Do you work with my insurance company on Cornelius claims?',
-    answer:
+  answer:
       'Yes. Best Roofing Now has extensive experience with all major insurance carriers serving Cornelius, including State Farm, Allstate, Nationwide, Liberty Mutual, USAA, and others. We handle the entire claims process: photographing and measuring damage, preparing detailed scope documents, meeting with your adjuster on your roof, and advocating for fair payment. Our goal is to take the stress off your shoulders.',
   },
   {
     question: 'Are Cornelius waterfront homes at greater storm risk?',
-    answer:
+  answer:
       'Cornelius properties along Lake Norman, especially in The Peninsula, Sailview, and Norman Shores, are exposed to stronger wind gusts that sweep across the open water. These homes often sustain more shingle lift-off, ridge cap damage, and soffit impact than inland properties. We recommend annual inspections for waterfront homeowners and proactive upgrades like impact-resistant shingles when it is time to reroof.',
   },
   {
     question: 'What if my insurance claim is denied or underpaid?',
-    answer:
+  answer:
       'We can help. Many initial claim assessments undercount legitimate damage, especially hail strikes that are difficult to spot. We frequently supplement underpaid claims with additional documentation, close-up photos, and detailed measurements that the adjuster may have missed. If necessary, we can request a re-inspection by a different adjuster to ensure fair compensation.',
   },
   {
     question: 'How long does storm damage repair take in Cornelius?',
-    answer:
+  answer:
       'The timeline depends on the severity of damage and the insurance approval process. Emergency tarping is typically completed within hours. Minor repairs are done within days of approval. Full roof replacements due to storm damage usually take 1-3 working days once materials arrive. The insurance claim process itself generally takes 2-4 weeks. We keep you informed at every step.',
   },
   {
     question: 'What should I do immediately after storm damage in Cornelius?',
-    answer:
+  answer:
       'First, make sure everyone is safe. Document visible damage with photos or video from ground level. If you have an active leak, place containers to catch water and move furniture away from the affected area. Call us at (704) 605-6047 for emergency tarping if needed. Avoid making permanent repairs before your insurance adjuster inspects the roof, as premature repairs can complicate your claim.',
   },
 ];
@@ -240,9 +240,9 @@ export default function StormDamageRoofRepairCorneliusNCPage() {
       <LocationSchema
         location={{
           city: 'Cornelius',
-          state: 'NC',
-          slug: 'cornelius-nc',
-          county: 'Mecklenburg',
+  state: 'NC',
+  slug: 'cornelius-nc',
+  county: 'Mecklenburg',
         }}
       />
       <AISearchOptimizationBundle
@@ -254,18 +254,18 @@ export default function StormDamageRoofRepairCorneliusNCPage() {
         faqs={[
           {
             question: 'Who repairs storm damaged roofs in Cornelius NC?',
-            answer: 'Best Roofing Now provides expert storm damage roof repair in Cornelius NC with 24/7 emergency response. We specialize in hail damage, wind damage, and insurance claim assistance for Lake Norman waterfront and inland homes. We serve Antiquity, The Peninsula, Sailview, Jetton Road, and all Cornelius neighborhoods. Call 704-605-6047 for a free storm inspection.',
-            speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Cornelius with 24/7 emergency response. We handle hail and wind damage plus insurance claims. Call 704-605-6047.',
+  answer: 'Best Roofing Now provides expert storm damage roof repair in Cornelius NC with 24/7 emergency response. We specialize in hail damage, wind damage, and insurance claim assistance for Lake Norman waterfront and inland homes. We serve Antiquity, The Peninsula, Sailview, Jetton Road, and all Cornelius neighborhoods. Call 704-605-6047 for a free storm inspection.',
+  speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Cornelius with 24/7 emergency response. We handle hail and wind damage plus insurance claims. Call 704-605-6047.',
           },
           {
             question: 'Does insurance cover storm damage roof repair in Cornelius?',
-            answer: 'Yes, most homeowners insurance policies in North Carolina cover storm damage including hail, wind, and fallen trees. Best Roofing Now works directly with all major insurance companies in Cornelius, meets with adjusters on your roof, and helps maximize your claim settlement. You typically pay only your deductible.',
-            speakableAnswer: 'Yes, most NC homeowners insurance covers storm damage to roofs. We work with all insurers and help maximize your claim. You typically pay only your deductible.',
+  answer: 'Yes, most homeowners insurance policies in North Carolina cover storm damage including hail, wind, and fallen trees. Best Roofing Now works directly with all major insurance companies in Cornelius, meets with adjusters on your roof, and helps maximize your claim settlement. You typically pay only your deductible.',
+  speakableAnswer: 'Yes, most NC homeowners insurance covers storm damage to roofs. We work with all insurers and help maximize your claim. You typically pay only your deductible.',
           },
           {
             question: 'How quickly can you respond to storm damage in Cornelius NC?',
-            answer: 'Best Roofing Now offers 24/7 emergency storm damage response across Cornelius and Lake Norman. We can typically dispatch a crew for emergency tarping within hours. Full inspections are scheduled within 24-48 hours of your call.',
-            speakableAnswer: 'We offer 24/7 emergency response in Cornelius. Emergency tarping within hours, full inspections within 24 to 48 hours.',
+  answer: 'Best Roofing Now offers 24/7 emergency storm damage response across Cornelius and Lake Norman. We can typically dispatch a crew for emergency tarping within hours. Full inspections are scheduled within 24-48 hours of your call.',
+  speakableAnswer: 'We offer 24/7 emergency response in Cornelius. Emergency tarping within hours, full inspections within 24 to 48 hours.',
           },
         ]}
       />
@@ -392,7 +392,7 @@ export default function StormDamageRoofRepairCorneliusNCPage() {
               </h2>
               <p className="text-gray text-lg">
                 We make the insurance claims process simple and stress-free for Cornelius homeowners,
-                including those in HOA communities with additional requirements.
+  including those in HOA communities with additional requirements.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -466,7 +466,7 @@ export default function StormDamageRoofRepairCorneliusNCPage() {
               <p className="text-gray text-lg mb-8">
                 Lake Norman waterfront properties and Cornelius HOA communities have unique needs after
                 storm events. We understand the architectural guidelines in Antiquity, The Peninsula,
-                and Bailey&apos;s Glen, and we navigate insurance claims to ensure you receive fair
+  and Bailey&apos;s Glen, and we navigate insurance claims to ensure you receive fair
                 compensation for every dollar of legitimate damage.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Certification Charlotte NC | Real Estate Inspections | Best Roofing Now',
-    description: 'Professional roof certification for real estate transactions in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/roof-certification`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof certification in Charlotte NC' }],
+  description: 'Professional roof certification for real estate transactions in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/roof-certification`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Roof certification in Charlotte NC' }],
   },
 };
 
@@ -100,8 +100,8 @@ export default function RoofCertificationPage() {
       <ServiceSchema
         service={{
           title: "Roof Certification",
-          description: "Professional roof certification for real estate transactions in Charlotte NC.",
-          slug: "roof-certification",
+  description: "Professional roof certification for real estate transactions in Charlotte NC.",
+  slug: "roof-certification",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/roof-certification`} pageName="Roof Certification Charlotte NC" city="Charlotte" />

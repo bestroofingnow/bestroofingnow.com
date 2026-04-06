@@ -39,9 +39,10 @@ import {
   BadgeCheck,
 } from 'lucide-react';
 import EstimateButton from '@/components/estimate/EstimateButton';
+import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -56,37 +57,36 @@ export const metadata: Metadata = {
   keywords: [
     'commercial roofing charlotte nc',
     'commercial roofing contractors charlotte nc',
-    'commercial roof repair charlotte',
+    'commercial roof repair charlotte nc',
     'flat roof contractors charlotte nc',
     'TPO roofing charlotte nc',
     'EPDM roofing charlotte nc',
-    'commercial roof replacement charlotte',
+    'commercial roof replacement charlotte nc',
     'industrial roofing charlotte nc',
-    'warehouse roofing charlotte',
+    'commercial roofing lake norman nc',
+    'commercial roofing mooresville nc',
+    'commercial roofing fort mill sc',
+    'commercial roofing huntersville nc',
+    'warehouse roofing charlotte nc',
     'office building roofing charlotte nc',
-    'commercial flat roof repair',
-    'metal roofing commercial charlotte',
-    'roof coating charlotte nc',
-    'commercial roofing company charlotte',
-    'business roofing charlotte nc',
-    'commercial roof maintenance charlotte nc',
-    'property manager roofing charlotte',
+    'commercial roof coating charlotte nc',
+    'commercial roofing company charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`,
   },
   openGraph: {
     title: 'Commercial Roofing Charlotte NC | #1 Rated | Best Roofing Now',
-    description:
+  description:
       'Expert commercial roofing services in Charlotte NC. TPO, EPDM, flat roofing, metal roofing for warehouses, offices, retail & more. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing Charlotte NC - Best Roofing Now completing a commercial roof installation',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing Charlotte NC - Best Roofing Now completing a commercial roof installation',
       },
     ],
   },
@@ -96,51 +96,51 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Layers,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient thermoplastic polyolefin membranes ideal for Charlotte\'s hot summers. Highly reflective and cost-effective.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient thermoplastic polyolefin membranes ideal for Charlotte\'s hot summers. Highly reflective and cost-effective.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    description: 'Durable synthetic rubber membrane roofing with excellent weather resistance. Proven performance for 30+ years.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Roofing',
+  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance. Proven performance for 30+ years.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Building2,
-    title: 'Flat Roof Systems',
-    description: 'Complete flat roof installation and repair including built-up roofing, modified bitumen, and single-ply systems.',
-    href: '/services/commercial-roofing',
+  title: 'Flat Roof Systems',
+  description: 'Complete flat roof installation and repair including built-up roofing, modified bitumen, and single-ply systems.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Metal Roofing',
-    description: 'Standing seam and corrugated metal roofing for industrial facilities. 40-70 year lifespan with minimal maintenance.',
-    href: '/services/commercial-roofing',
+  title: 'Metal Roofing',
+  description: 'Standing seam and corrugated metal roofing for industrial facilities. 40-70 year lifespan with minimal maintenance.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Roof Coatings',
-    description: 'Silicone and acrylic roof coatings that extend roof life, improve energy efficiency, and reduce cooling costs.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings',
+  description: 'Silicone and acrylic roof coatings that extend roof life, improve energy efficiency, and reduce cooling costs.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: '24/7 emergency repairs for leaks, storm damage, and ponding water. Minimize business disruption.',
-    href: '/services/roof-repair',
+  title: 'Commercial Roof Repair',
+  description: '24/7 emergency repairs for leaks, storm damage, and ponding water. Minimize business disruption.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive commercial roof assessments with detailed reports, drone imagery, and maintenance recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive commercial roof assessments with detailed reports, drone imagery, and maintenance recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: DollarSign,
-    title: 'Preventive Maintenance',
-    description: 'Scheduled maintenance programs to extend roof life, prevent costly repairs, and maintain warranty compliance.',
-    href: '/services/commercial-roofing',
+  title: 'Preventive Maintenance',
+  description: 'Scheduled maintenance programs to extend roof life, prevent costly repairs, and maintain warranty compliance.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -148,43 +148,43 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated Commercial Roofer',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied commercial clients throughout Charlotte.`,
+  title: '#1 Rated Commercial Roofer',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied commercial clients throughout Charlotte.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints. We stand behind every commercial project.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints. We stand behind every commercial project.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity, excellence, and commitment guide every commercial roofing project.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity, excellence, and commitment guide every commercial roofing project.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Licensed & Insured',
-    description: 'NC licensed commercial roofing contractor with $2M+ liability coverage and full workers comp.',
+  title: 'Fully Licensed & Insured',
+  description: 'NC licensed commercial roofing contractor with $2M+ liability coverage and full workers comp.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for GAF, Carlisle, Firestone, Johns Manville, and other commercial systems.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for GAF, Carlisle, Firestone, Johns Manville, and other commercial systems.',
   },
   {
     icon: Clock,
-    title: 'Minimal Business Disruption',
-    description: 'We work around your schedule - nights, weekends, and phased installation to keep your business running.',
+  title: 'Minimal Business Disruption',
+  description: 'We work around your schedule - nights, weekends, and phased installation to keep your business running.',
   },
   {
     icon: FileCheck,
-    title: 'Extended Warranties',
-    description: 'Up to 30-year NDL (No Dollar Limit) warranties on materials and workmanship for qualifying projects.',
+  title: 'Extended Warranties',
+  description: 'Up to 30-year NDL (No Dollar Limit) warranties on materials and workmanship for qualifying projects.',
   },
   {
     icon: DollarSign,
-    title: 'Commercial Financing',
-    description: 'Flexible financing options for commercial projects. Preserve capital while protecting your investment.',
+  title: 'Commercial Financing',
+  description: 'Flexible financing options for commercial projects. Preserve capital while protecting your investment.',
   },
 ];
 
@@ -192,87 +192,87 @@ const whyChooseUs = [
 const buildingTypesLinked = [
   {
     icon: Warehouse,
-    title: 'Warehouses',
-    href: '/warehouse-roofing-charlotte-nc',
-    description: 'Large-scale flat roof systems for logistics and storage facilities.',
+  title: 'Warehouses',
+  href: '/warehouse-roofing-charlotte-nc',
+  description: 'Large-scale flat roof systems for logistics and storage facilities.',
   },
   {
     icon: Warehouse,
-    title: 'Distribution Centers',
-    href: '/distribution-center-roofing-charlotte-nc',
-    description: 'High-capacity roofing for distribution and fulfillment centers.',
+  title: 'Distribution Centers',
+  href: '/distribution-center-roofing-charlotte-nc',
+  description: 'High-capacity roofing for distribution and fulfillment centers.',
   },
   {
     icon: Hospital,
-    title: 'Healthcare Facilities',
-    href: '/healthcare-facility-roofing-charlotte-nc',
-    description: 'Specialized roofing for hospitals, clinics, and medical offices.',
+  title: 'Healthcare Facilities',
+  href: '/healthcare-facility-roofing-charlotte-nc',
+  description: 'Specialized roofing for hospitals, clinics, and medical offices.',
   },
   {
     icon: Building,
-    title: 'Office Buildings',
-    href: '/office-building-roofing-charlotte-nc',
-    description: 'Professional roofing for corporate offices and business parks.',
+  title: 'Office Buildings',
+  href: '/office-building-roofing-charlotte-nc',
+  description: 'Professional roofing for corporate offices and business parks.',
   },
   {
     icon: ShoppingBag,
-    title: 'Retail & Shopping Centers',
-    href: '/retail-shopping-center-roofing-charlotte-nc',
-    description: 'Roofing solutions for strip malls, retail, and mixed-use spaces.',
+  title: 'Retail & Shopping Centers',
+  href: '/retail-shopping-center-roofing-charlotte-nc',
+  description: 'Roofing solutions for strip malls, retail, and mixed-use spaces.',
   },
   {
     icon: Building,
-    title: 'Hotels & Hospitality',
-    href: '/hotel-hospitality-roofing-charlotte-nc',
-    description: 'Expert roofing for hotels, motels, and hospitality properties.',
+  title: 'Hotels & Hospitality',
+  href: '/hotel-hospitality-roofing-charlotte-nc',
+  description: 'Expert roofing for hotels, motels, and hospitality properties.',
   },
   {
     icon: GraduationCap,
-    title: 'Schools & Education',
-    href: '/school-roofing-charlotte-nc',
-    description: 'Safe, efficient roofing for K-12 schools and educational facilities.',
+  title: 'Schools & Education',
+  href: '/school-roofing-charlotte-nc',
+  description: 'Safe, efficient roofing for K-12 schools and educational facilities.',
   },
   {
     icon: Factory,
-    title: 'Manufacturing Plants',
-    href: '/manufacturing-plant-roofing-charlotte-nc',
-    description: 'Industrial-grade roofing for manufacturing and processing facilities.',
+  title: 'Manufacturing Plants',
+  href: '/manufacturing-plant-roofing-charlotte-nc',
+  description: 'Industrial-grade roofing for manufacturing and processing facilities.',
   },
   {
     icon: Building2,
-    title: 'Government Buildings',
-    href: '/government-building-roofing-charlotte-nc',
-    description: 'Compliant roofing for government and municipal properties.',
+  title: 'Government Buildings',
+  href: '/government-building-roofing-charlotte-nc',
+  description: 'Compliant roofing for government and municipal properties.',
   },
   {
     icon: Server,
-    title: 'Data Centers',
-    href: '/data-center-roofing-charlotte-nc',
-    description: 'Mission-critical roofing for data centers and tech facilities.',
+  title: 'Data Centers',
+  href: '/data-center-roofing-charlotte-nc',
+  description: 'Mission-critical roofing for data centers and tech facilities.',
   },
   {
     icon: Car,
-    title: 'Auto Dealerships',
-    href: '/auto-dealership-roofing-charlotte-nc',
-    description: 'Specialized roofing for automotive dealerships and service centers.',
+  title: 'Auto Dealerships',
+  href: '/auto-dealership-roofing-charlotte-nc',
+  description: 'Specialized roofing for automotive dealerships and service centers.',
   },
   {
     icon: Church,
-    title: 'Churches & Worship',
-    href: '/church-roofing-charlotte-nc',
-    description: 'Expert roofing for houses of worship including flat and steep-slope.',
+  title: 'Churches & Worship',
+  href: '/church-roofing-charlotte-nc',
+  description: 'Expert roofing for houses of worship including flat and steep-slope.',
   },
   {
     icon: Home,
-    title: 'Apartments & Multi-Family',
-    href: '/apartment-roofing-charlotte-nc',
-    description: 'Comprehensive roofing for apartment complexes and multi-family housing.',
+  title: 'Apartments & Multi-Family',
+  href: '/apartment-roofing-charlotte-nc',
+  description: 'Comprehensive roofing for apartment complexes and multi-family housing.',
   },
   {
     icon: Factory,
-    title: 'Industrial Facilities',
-    href: '/industrial-roofing-charlotte-nc',
-    description: 'Heavy-duty roofing for industrial parks and production facilities.',
+  title: 'Industrial Facilities',
+  href: '/industrial-roofing-charlotte-nc',
+  description: 'Heavy-duty roofing for industrial parks and production facilities.',
   },
 ];
 
@@ -280,23 +280,23 @@ const buildingTypesLinked = [
 const propertyManagerServices = [
   {
     icon: Headphones,
-    title: '24/7 Emergency Response',
-    description: 'Round-the-clock emergency commercial roofing services. When a roof emergency threatens your property, we respond within 2-4 hours to minimize damage and protect tenants.',
+  title: '24/7 Emergency Response',
+  description: 'Round-the-clock emergency commercial roofing services. When a roof emergency threatens your property, we respond within 2-4 hours to minimize damage and protect tenants.',
   },
   {
     icon: ClipboardList,
-    title: 'Maintenance Contracts',
-    description: 'Customized preventive maintenance contracts with bi-annual inspections, priority scheduling, and discounted repairs. Extend roof life by 25-50% and reduce emergency costs.',
+  title: 'Maintenance Contracts',
+  description: 'Customized preventive maintenance contracts with bi-annual inspections, priority scheduling, and discounted repairs. Extend roof life by 25-50% and reduce emergency costs.',
   },
   {
     icon: LandPlot,
-    title: 'Multi-Property Portfolio Management',
-    description: 'Manage roofing across your entire property portfolio with a single trusted partner. Consistent quality, unified billing, and coordinated scheduling across all locations.',
+  title: 'Multi-Property Portfolio Management',
+  description: 'Manage roofing across your entire property portfolio with a single trusted partner. Consistent quality, unified billing, and coordinated scheduling across all locations.',
   },
   {
     icon: BarChart3,
-    title: 'Detailed Reporting for Stakeholders',
-    description: 'Comprehensive documentation including inspection reports, drone imagery, condition assessments, maintenance logs, and budget projections for property owners and investors.',
+  title: 'Detailed Reporting for Stakeholders',
+  description: 'Comprehensive documentation including inspection reports, drone imagery, condition assessments, maintenance logs, and budget projections for property owners and investors.',
   },
 ];
 
@@ -304,20 +304,20 @@ const propertyManagerServices = [
 const maintenanceTiers = [
   {
     name: 'Essential',
-    frequency: 'Annual Inspection',
-    features: [
+  frequency: 'Annual Inspection',
+  features: [
       'Annual roof inspection',
       'Written condition report',
       'Drone imagery documentation',
       'Minor repair identification',
       'Drain and gutter clearing',
     ],
-    ideal: 'Ideal for newer commercial roofs in good condition',
+  ideal: 'Ideal for newer commercial roofs in good condition',
   },
   {
     name: 'Professional',
-    frequency: 'Bi-Annual Inspections',
-    features: [
+  frequency: 'Bi-Annual Inspections',
+  features: [
       'Spring & fall inspections',
       'Detailed photo documentation',
       'Drone thermal imaging',
@@ -326,13 +326,13 @@ const maintenanceTiers = [
       'Warranty compliance tracking',
       'Priority scheduling',
     ],
-    ideal: 'Most popular for office buildings and retail properties',
-    popular: true,
+  ideal: 'Most popular for office buildings and retail properties',
+  popular: true,
   },
   {
     name: 'Premium',
-    frequency: 'Quarterly Inspections',
-    features: [
+  frequency: 'Quarterly Inspections',
+  features: [
       'Quarterly inspections',
       'Complete photo documentation',
       'Drone thermal imaging',
@@ -344,7 +344,7 @@ const maintenanceTiers = [
       'Annual budget projections',
       'Stakeholder reports',
     ],
-    ideal: 'Best for large portfolios and mission-critical facilities',
+  ideal: 'Best for large portfolios and mission-critical facilities',
   },
 ];
 
@@ -388,24 +388,24 @@ const nearbyCities = [
 const testimonials = [
   {
     name: 'Robert M.',
-    company: 'Industrial Park Manager',
-    location: 'University City, Charlotte',
-    rating: 5,
-    text: 'Best Roofing Now replaced the TPO roof on our 50,000 sq ft warehouse. They worked nights and weekends to avoid disrupting our operations. Exceptional quality and professionalism from start to finish.',
+  company: 'Industrial Park Manager',
+  location: 'University City, Charlotte',
+  rating: 5,
+  text: 'Best Roofing Now replaced the TPO roof on our 50,000 sq ft warehouse. They worked nights and weekends to avoid disrupting our operations. Exceptional quality and professionalism from start to finish.',
   },
   {
     name: 'Jennifer L.',
-    company: 'Property Management Company',
-    location: 'Ballantyne, Charlotte',
-    rating: 5,
-    text: 'We manage 12 commercial properties in Charlotte and Best Roofing Now handles all our roofing needs. Their preventive maintenance program has saved us thousands in emergency repairs. Highly recommend for commercial work.',
+  company: 'Property Management Company',
+  location: 'Ballantyne, Charlotte',
+  rating: 5,
+  text: 'We manage 12 commercial properties in Charlotte and Best Roofing Now handles all our roofing needs. Their preventive maintenance program has saved us thousands in emergency repairs. Highly recommend for commercial work.',
   },
   {
     name: 'Pastor David W.',
-    company: 'First Baptist Church',
-    location: 'South Charlotte',
-    rating: 5,
-    text: 'Our church needed a new flat roof on our fellowship hall plus repairs to the main sanctuary. Best Roofing Now provided excellent work at a fair price and even offered flexible payment terms. True professionals.',
+  company: 'First Baptist Church',
+  location: 'South Charlotte',
+  rating: 5,
+  text: 'Our church needed a new flat roof on our fellowship hall plus repairs to the main sanctuary. Best Roofing Now provided excellent work at a fair price and even offered flexible payment terms. True professionals.',
   },
 ];
 
@@ -413,42 +413,42 @@ const testimonials = [
 const faqs = [
   {
     question: 'How much does commercial roofing cost in Charlotte NC?',
-    answer:
+  answer:
       'Commercial roofing costs in Charlotte NC typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, building size, and accessibility. TPO roofing averages $5-8 per square foot, EPDM runs $4-7 per square foot, PVC costs $6-10 per square foot, and standing seam metal ranges from $8-15 per square foot. A 10,000 sq ft flat roof replacement typically costs $50,000-$100,000. Best Roofing Now provides free, detailed estimates with fully transparent pricing for all commercial projects in Charlotte.',
   },
   {
     question: 'What is the best commercial roofing system for Charlotte?',
-    answer:
+  answer:
       'For Charlotte\'s climate with hot, humid summers and occasional severe storms, TPO (Thermoplastic Polyolefin) is often the best commercial roofing choice. TPO\'s highly reflective white surface reduces cooling costs by 10-30%, resists UV degradation, and handles Charlotte\'s temperature fluctuations exceptionally well. EPDM is excellent for buildings with extensive rooftop equipment, while standing seam metal offers superior longevity (40-70 years) for industrial facilities. Best Roofing Now assesses each building\'s specific requirements to recommend the optimal system.',
   },
   {
     question: 'How often should a commercial roof be inspected?',
-    answer:
+  answer:
       'Commercial roofs in Charlotte should be inspected at least twice per year - ideally in spring (after winter weather) and fall (before storm season). Buildings with rooftop HVAC equipment, older roofs, or previous issues should consider quarterly inspections. Best Roofing Now offers commercial roof inspection programs with detailed reporting, drone thermal imaging, and actionable maintenance recommendations. Regular inspections catch small problems before they become costly emergencies and are required to maintain most manufacturer warranties.',
   },
   {
     question: 'Can you repair a commercial roof without replacing it?',
-    answer:
+  answer:
       'Yes, many commercial roof issues in Charlotte can be repaired without full replacement. Localized leaks, seam failures, punctures, ponding water issues, and flashing damage can often be addressed through targeted repairs. Roof coating systems can extend an aging roof\'s life by 10-15 years at a fraction of replacement cost. Best Roofing Now provides honest assessments - we recommend repair when it makes financial sense and replacement only when necessary. Our free inspection will give you a clear picture of your roof\'s condition and options.',
   },
   {
     question: 'What commercial roofing warranties do you offer?',
-    answer:
+  answer:
       'Best Roofing Now offers industry-leading commercial roofing warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. NDL warranties cover full replacement cost with no depreciation, providing maximum protection for your investment. Our workmanship warranty covers labor for 10-15 years depending on the project. Extended warranty options are available for qualifying commercial projects through our manufacturer certification status.',
   },
   {
     question: 'Do you work on occupied commercial buildings?',
-    answer:
+  answer:
       'Absolutely. Best Roofing Now specializes in working on occupied commercial buildings throughout Charlotte while minimizing disruption to daily operations. We offer flexible scheduling options including night shifts, weekend work, and phased installations. For retail locations, we can work after business hours. For 24/7 operations like warehouses and hospitals, we develop custom work plans that section the roof and manage noise, debris, and access carefully. Safety and minimal disruption are our top priorities.',
   },
   {
     question: 'What is the difference between TPO, EPDM, and PVC roofing?',
-    answer:
+  answer:
       'TPO (Thermoplastic Polyolefin) is a single-ply membrane that is heat-welded for seamless installation, highly energy-efficient with a white reflective surface, and cost-effective. EPDM (Ethylene Propylene Diene Monomer) is a synthetic rubber membrane available in black or white, extremely durable with 30+ year track records, and excellent for roofs with heavy foot traffic or equipment. PVC (Polyvinyl Chloride) is the most chemical-resistant option, ideal for restaurants and facilities with grease exhaust. Best Roofing Now installs all three systems and will recommend the best option for your specific building needs and budget.',
   },
   {
     question: 'How do I budget for commercial roof maintenance?',
-    answer:
+  answer:
       'Industry experts recommend budgeting 1-2% of your building\'s value annually for commercial roof maintenance in Charlotte. For a building worth $1 million, that\'s $10,000-$20,000 per year. This covers bi-annual inspections ($500-$1,500 each), minor repairs ($500-$5,000 per occurrence), drain maintenance, and coating touch-ups. Proactive maintenance extends roof life by 25-50% and prevents costly emergency repairs. Best Roofing Now offers structured maintenance contracts that simplify budgeting with fixed annual costs and priority service.',
   },
 ];
@@ -463,7 +463,6 @@ export default function CommercialRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
         pageName="Commercial Roofing Charlotte NC"
@@ -499,7 +498,7 @@ export default function CommercialRoofingCharlotteNCPage() {
               Best Roofing Now delivers professional commercial roofing solutions throughout Charlotte NC. From TPO and EPDM
               flat roofs to metal roofing systems, our certified team provides exceptional quality backed by industry-leading
               warranties, a BBB A+ rating, and {SITE_CONFIG.googleReviewCount}+ five-star reviews. We serve warehouses,
-              office buildings, retail centers, healthcare facilities, schools, churches, and every type of commercial property.
+  office buildings, retail centers, healthcare facilities, schools, churches, and every type of commercial property.
             </p>
 
             {/* CTA Buttons */}
@@ -756,7 +755,7 @@ export default function CommercialRoofingCharlotteNCPage() {
             <p className="text-gray text-lg">
               Managing commercial properties requires a roofing partner you can rely on 24/7. Best Roofing Now
               offers dedicated property manager services designed to protect your portfolio, simplify maintenance,
-              and deliver detailed reporting for stakeholders.
+  and deliver detailed reporting for stakeholders.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -1171,6 +1170,101 @@ export default function CommercialRoofingCharlotteNCPage() {
                 Approved installer for Johns Manville single-ply and built-up roofing systems.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commercial Roofing Costs Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <DollarSign className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Pricing Guide</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Commercial Roofing Costs in Charlotte NC
+              </h2>
+              <p className="text-gray max-w-2xl mx-auto">
+                Commercial roofing costs depend on system type, building size, and access complexity. Below are 2026 installed prices per square foot for Charlotte-area projects.
+              </p>
+            </div>
+
+            {/* Cost Table */}
+            <div className="overflow-x-auto mb-10">
+              <table className="w-full bg-white rounded-xl shadow-md overflow-hidden">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="text-left px-6 py-4 font-semibold">Roofing System</th>
+                    <th className="text-left px-6 py-4 font-semibold">Cost / Sq Ft</th>
+                    <th className="text-left px-6 py-4 font-semibold">Lifespan</th>
+                    <th className="text-left px-6 py-4 font-semibold hidden md:table-cell">Best For</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">TPO Membrane</td>
+                    <td className="px-6 py-4 text-primary font-bold">$5.50 - $8.50</td>
+                    <td className="px-6 py-4 text-gray">20-30 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Warehouses, retail, offices</td>
+                  </tr>
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">EPDM Rubber</td>
+                    <td className="px-6 py-4 text-primary font-bold">$4.50 - $7.00</td>
+                    <td className="px-6 py-4 text-gray">20-25 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Low-slope roofs, budget-conscious</td>
+                  </tr>
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">Modified Bitumen</td>
+                    <td className="px-6 py-4 text-primary font-bold">$4.00 - $8.00</td>
+                    <td className="px-6 py-4 text-gray">15-20 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Multi-layer flat roofs</td>
+                  </tr>
+                  <tr className="hover:bg-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-dark">Standing Seam Metal</td>
+                    <td className="px-6 py-4 text-primary font-bold">$12.00 - $18.00</td>
+                    <td className="px-6 py-4 text-gray">40-60 years</td>
+                    <td className="px-6 py-4 text-gray hidden md:table-cell">Premium commercial, churches, schools</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Average Project Sizes */}
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-light rounded-xl p-6 text-center">
+                <Building2 className="w-8 h-8 text-primary mx-auto mb-3" />
+                <h3 className="font-bold text-dark mb-1">Small Commercial</h3>
+                <p className="text-sm text-gray mb-2">2,000 - 5,000 sq ft</p>
+                <p className="text-xl font-bold text-primary">$11,000 - $42,500</p>
+              </div>
+              <div className="bg-light rounded-xl p-6 text-center">
+                <Warehouse className="w-8 h-8 text-primary mx-auto mb-3" />
+                <h3 className="font-bold text-dark mb-1">Mid-Size Commercial</h3>
+                <p className="text-sm text-gray mb-2">10,000 - 25,000 sq ft</p>
+                <p className="text-xl font-bold text-primary">$55,000 - $212,500</p>
+              </div>
+              <div className="bg-light rounded-xl p-6 text-center">
+                <Factory className="w-8 h-8 text-primary mx-auto mb-3" />
+                <h3 className="font-bold text-dark mb-1">Large Industrial</h3>
+                <p className="text-sm text-gray mb-2">25,000 - 100,000 sq ft</p>
+                <p className="text-xl font-bold text-primary">$137,500 - $850,000</p>
+              </div>
+            </div>
+
+            {/* Citation */}
+            <CitationSection
+              heading="Commercial Roofing Cost Facts"
+              citations={[
+                {
+                  topic: 'commercial roofing cost Charlotte NC 2026',
+                  content:
+                    'Commercial roofing in Charlotte NC costs $4 to $18 per square foot installed in 2026, depending on the membrane system. TPO roofing costs $5.50-$8.50/sqft, EPDM rubber membrane $4.50-$7.00/sqft, modified bitumen $4.00-$8.00/sqft, and standing seam metal $12-$18/sqft. A 10,000 square foot commercial roof replacement typically ranges from $55,000 to $212,500 depending on system choice and building complexity.',
+                  source: 'Best Roofing Now 2026 commercial pricing data — Charlotte NC market',
+                },
+              ]}
+            />
           </div>
         </div>
       </section>

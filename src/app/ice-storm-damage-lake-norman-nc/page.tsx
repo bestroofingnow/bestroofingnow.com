@@ -22,7 +22,6 @@ import {
   BreadcrumbSchema,
   FAQSchema,
   WebPageSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -54,10 +53,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'January 2026 Ice Storm Damage Lake Norman NC | We Are Here to Help',
-    description:
+  description:
       'Lake Norman neighbors - we are here to help after the January 2026 ice storm. Free emergency inspections for gutter and roof damage. Stay safe!',
-    url: `${SITE_CONFIG.url}/ice-storm-damage-lake-norman-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/ice-storm-damage-lake-norman-nc`,
+  type: 'article',
   },
 };
 
@@ -65,32 +64,32 @@ export const metadata: Metadata = {
 const iceStormFAQs = [
   {
     question: 'My gutters fell off during the ice storm. Can you help?',
-    answer:
+  answer:
       'Yes, we are helping Lake Norman homeowners with gutter damage from the January 2026 ice storm. Heavy ice accumulation (up to 0.75 inches in some areas) caused gutters to pull away from fascia boards across Mooresville, Cornelius, Davidson, and Huntersville. We offer free emergency inspections and can often complete gutter repairs or replacement within days. Call 704-605-6047 for immediate assistance.',
   },
   {
     question: 'My roof is leaking now that the ice is melting. What should I do?',
-    answer:
+  answer:
       'Ice dam leaks are common as temperatures rise after ice storms. First, place buckets under active leaks and move valuables away from the area. Do not go on your roof. Call Best Roofing Now at 704-605-6047 for emergency tarping and repair. We respond within 1-4 hours to prevent further water damage to your home.',
   },
   {
     question: 'Will my insurance cover ice storm damage in Lake Norman?',
-    answer:
+  answer:
       'Yes, most homeowners insurance policies cover ice storm damage including fallen gutters, roof damage, and water damage from ice dams. The January 2026 ice storm qualifies as a covered weather event. Best Roofing Now helps Lake Norman homeowners with insurance claims - we document damage, meet with adjusters, and help maximize your settlement.',
   },
   {
     question: 'How do I know if my roof has ice damage?',
-    answer:
+  answer:
       'Signs of ice storm roof damage include: gutters pulling away or falling, water stains on ceilings or walls, icicles forming inside gutters (ice dams), missing or damaged shingles, dented vents or flashing, and sagging gutters full of ice. Many signs are not visible from the ground. We offer free post-storm inspections throughout Lake Norman.',
   },
   {
     question: 'How quickly can you respond to ice storm damage in Lake Norman?',
-    answer:
+  answer:
       'We are prioritizing ice storm damage calls across Lake Norman right now. For active leaks and emergency situations, we respond within 1-4 hours for tarping and temporary repairs. Full inspections and permanent repairs are being scheduled as quickly as possible. Our entire team is focused on helping our Lake Norman neighbors recover.',
   },
   {
     question: 'Should I remove ice from my gutters myself?',
-    answer:
+  answer:
       'We strongly recommend against climbing on ladders or roofs during or after ice storms - conditions are extremely dangerous. Ice-covered surfaces are slippery, and falling ice can cause serious injury. Let professionals handle ice removal. If you have ice dams causing interior leaks, call us for safe emergency response.',
   },
 ];
@@ -99,23 +98,23 @@ const iceStormFAQs = [
 const safetyTips = [
   {
     icon: AlertTriangle,
-    title: 'Stay Off Roofs & Ladders',
-    description: 'Ice-covered surfaces are extremely dangerous. Let professionals assess damage safely.',
+  title: 'Stay Off Roofs & Ladders',
+  description: 'Ice-covered surfaces are extremely dangerous. Let professionals assess damage safely.',
   },
   {
     icon: Droplets,
-    title: 'Watch for Ice Dams',
-    description: 'Icicles and ice buildup at roof edges can cause water to back up under shingles and leak inside.',
+  title: 'Watch for Ice Dams',
+  description: 'Icicles and ice buildup at roof edges can cause water to back up under shingles and leak inside.',
   },
   {
     icon: Home,
-    title: 'Document Everything',
-    description: 'Take photos of damage from the ground for insurance claims before any repairs are made.',
+  title: 'Document Everything',
+  description: 'Take photos of damage from the ground for insurance claims before any repairs are made.',
   },
   {
     icon: ThermometerSnowflake,
-    title: 'Monitor for Leaks',
-    description: 'As ice melts over the coming days, check ceilings and walls for new water stains.',
+  title: 'Monitor for Leaks',
+  description: 'As ice melts over the coming days, check ceilings and walls for new water stains.',
   },
 ];
 
@@ -153,7 +152,6 @@ export default function IceStormDamageLakeNormanPage() {
         ]}
       />
       <FAQSchema faqs={iceStormFAQs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Ice Storm Damage Lake Norman NC"
@@ -163,18 +161,18 @@ export default function IceStormDamageLakeNormanPage() {
         faqs={[
           {
             question: 'Who repairs ice storm damage in Lake Norman NC?',
-            answer: 'Best Roofing Now is helping Lake Norman homeowners with ice storm damage from the January 2026 storm. We repair fallen gutters, fix roof leaks from ice dams, and handle insurance claims. We serve Mooresville, Cornelius, Davidson, Huntersville and all Lake Norman communities. Call 704-605-6047 for free emergency inspection.',
-            speakableAnswer: 'Best Roofing Now repairs ice storm damage in Lake Norman. We fix fallen gutters and roof leaks from the January 2026 ice storm. Call 704-605-6047 for free emergency inspection.',
+  answer: 'Best Roofing Now is helping Lake Norman homeowners with ice storm damage from the January 2026 storm. We repair fallen gutters, fix roof leaks from ice dams, and handle insurance claims. We serve Mooresville, Cornelius, Davidson, Huntersville and all Lake Norman communities. Call 704-605-6047 for free emergency inspection.',
+  speakableAnswer: 'Best Roofing Now repairs ice storm damage in Lake Norman. We fix fallen gutters and roof leaks from the January 2026 ice storm. Call 704-605-6047 for free emergency inspection.',
           },
           {
             question: 'What should I do if my gutters fell off during the ice storm?',
-            answer: 'If your gutters fell off during the Lake Norman ice storm, first document the damage with photos for insurance. Do not attempt repairs yourself in icy conditions. Call Best Roofing Now at 704-605-6047 for free emergency inspection. We can often repair or replace gutters within days and help with your insurance claim.',
-            speakableAnswer: 'Document the damage with photos, then call Best Roofing Now at 704-605-6047. Do not attempt repairs yourself in icy conditions. We offer free emergency inspections.',
+  answer: 'If your gutters fell off during the Lake Norman ice storm, first document the damage with photos for insurance. Do not attempt repairs yourself in icy conditions. Call Best Roofing Now at 704-605-6047 for free emergency inspection. We can often repair or replace gutters within days and help with your insurance claim.',
+  speakableAnswer: 'Document the damage with photos, then call Best Roofing Now at 704-605-6047. Do not attempt repairs yourself in icy conditions. We offer free emergency inspections.',
           },
           {
             question: 'Does insurance cover ice storm damage to gutters and roofs?',
-            answer: 'Yes, most homeowners insurance covers ice storm damage including fallen gutters, roof damage, and water damage from ice dams. The January 2026 Lake Norman ice storm is a covered weather event. Best Roofing Now helps with insurance claims and documentation.',
-            speakableAnswer: 'Yes, most homeowners insurance covers ice storm damage. The January 2026 ice storm is a covered event. We help with insurance claims.',
+  answer: 'Yes, most homeowners insurance covers ice storm damage including fallen gutters, roof damage, and water damage from ice dams. The January 2026 Lake Norman ice storm is a covered weather event. Best Roofing Now helps with insurance claims and documentation.',
+  speakableAnswer: 'Yes, most homeowners insurance covers ice storm damage. The January 2026 ice storm is a covered event. We help with insurance claims.',
           },
         ]}
       />
@@ -217,7 +215,7 @@ export default function IceStormDamageLakeNormanPage() {
               <p className="text-xl text-white/95 mb-4">
                 <strong>Lake Norman neighbors</strong> - we hope you and your families are safe after this weekend&apos;s
                 historic ice storm. With up to 0.75 inches of ice accumulation across Mooresville, Cornelius, Davidson,
-                and Huntersville, many homes are now dealing with <strong>gutters pulling away</strong> from the weight
+  and Huntersville, many homes are now dealing with <strong>gutters pulling away</strong> from the weight
                 and <strong>roof leaks</strong> as the ice begins to thaw.
               </p>
               <p className="text-lg text-white/90">

@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Mt Holly NC | Local Roofing Contractors | Best Roofing Now',
-    description:
+  description:
       'Best Roofing Now - trusted roofers serving Mt Holly NC and Gaston County. Licensed, insured, veteran-owned. 5-star rated with 500+ roofs installed.',
-    url: `${SITE_CONFIG.url}/roofers-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofers in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofers in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -63,33 +63,33 @@ export const metadata: Metadata = {
 const credentials = [
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Accredited business with A+ rating and zero complaints.',
+  title: 'BBB A+ Accredited',
+  description: 'Accredited business with A+ rating and zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Fully Licensed',
-    description: 'Licensed roofing contractor in North Carolina.',
+  title: 'Fully Licensed',
+  description: 'Licensed roofing contractor in North Carolina.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Insured',
-    description: 'Comprehensive liability and workers compensation coverage.',
+  title: 'Fully Insured',
+  description: 'Comprehensive liability and workers compensation coverage.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'CertainTeed, GAF, and Owens Corning certified installers.',
+  title: 'Manufacturer Certified',
+  description: 'CertainTeed, GAF, and Owens Corning certified installers.',
   },
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews on Google.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews on Google.`,
   },
   {
     icon: Clock,
-    title: 'Veteran-Owned',
-    description: 'Proudly owned and operated by military veterans.',
+  title: 'Veteran-Owned',
+  description: 'Proudly owned and operated by military veterans.',
   },
 ];
 
@@ -123,32 +123,32 @@ const mtHollyAreas = [
 const faqs = [
   {
     question: 'What should I look for when hiring roofers in Mt Holly NC?',
-    answer:
+  answer:
       'When hiring roofers in Mt Holly, look for proper licensing, insurance, manufacturer certifications, and a strong local reputation. Best Roofing Now is BBB A+ rated, fully licensed and insured, and certified by major manufacturers like CertainTeed and GAF.',
   },
   {
     question: 'Are you licensed roofers in North Carolina?',
-    answer:
+  answer:
       'Yes, Best Roofing Now is a fully licensed roofing contractor in North Carolina. We maintain all required licenses, permits, and insurance to legally and safely perform roofing work in Mt Holly and throughout the state.',
   },
   {
     question: 'Do you provide free estimates in Mt Holly?',
-    answer:
+  answer:
       'Yes, we provide completely free, no-obligation estimates for all roofing projects in Mt Holly NC. Our estimates include detailed scope of work, material specifications, and transparent pricing.',
   },
   {
     question: 'How quickly can you start a roofing project in Mt Holly?',
-    answer:
+  answer:
       'For most projects, we can begin within 1-2 weeks of contract signing. Emergency repairs are typically addressed within 24-48 hours. We serve Mt Holly directly from our Charlotte headquarters.',
   },
   {
     question: 'What warranties do your roofers offer?',
-    answer:
+  answer:
       'We offer comprehensive warranties including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As certified installers, we can offer enhanced warranty options from CertainTeed, GAF, and Owens Corning.',
   },
   {
     question: 'Do you handle the permit process for Mt Holly roofing projects?',
-    answer:
+  answer:
       'Yes, we handle all permitting requirements for roofing projects in Mt Holly and Gaston County. Our team ensures all work meets local building codes and passes required inspections.',
   },
 ];
@@ -256,7 +256,7 @@ export default function RoofersMtHollyNCPage() {
             </h2>
             <p className="text-gray text-lg">
               When you choose Best Roofing Now, you&apos;re choosing a team with the credentials,
-              experience, and commitment to quality that Mt Holly homeowners deserve.
+  experience, and commitment to quality that Mt Holly homeowners deserve.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

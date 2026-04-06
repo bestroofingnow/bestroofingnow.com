@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Mt Holly NC | Expert Installation | Best Roofing Now',
-    description:
+  description:
       'Premium metal roofing installation in Mt Holly NC. Standing seam, metal shingles, and more. 50+ year lifespan, energy efficient, low maintenance.',
-    url: `${SITE_CONFIG.url}/metal-roofing-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/metal-roofing-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Metal roofing installation in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Metal roofing installation in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -63,33 +63,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '50+ Year Lifespan',
-    description: 'Metal roofs last 2-3 times longer than traditional asphalt shingles, often lasting 50+ years.',
+  title: '50+ Year Lifespan',
+  description: 'Metal roofs last 2-3 times longer than traditional asphalt shingles, often lasting 50+ years.',
   },
   {
     icon: Zap,
-    title: 'Energy Efficient',
-    description: 'Reflective coatings reduce cooling costs by up to 25%, saving money on energy bills.',
+  title: 'Energy Efficient',
+  description: 'Reflective coatings reduce cooling costs by up to 25%, saving money on energy bills.',
   },
   {
     icon: Shield,
-    title: 'Storm Resistant',
-    description: 'Withstands winds up to 140 mph, resists hail, and won\'t rot or crack like other materials.',
+  title: 'Storm Resistant',
+  description: 'Withstands winds up to 140 mph, resists hail, and won\'t rot or crack like other materials.',
   },
   {
     icon: Leaf,
-    title: 'Eco-Friendly',
-    description: '100% recyclable at end of life and often made from recycled materials.',
+  title: 'Eco-Friendly',
+  description: '100% recyclable at end of life and often made from recycled materials.',
   },
   {
     icon: Award,
-    title: 'Low Maintenance',
-    description: 'Minimal upkeep required - no cracking, shrinking, or erosion concerns.',
+  title: 'Low Maintenance',
+  description: 'Minimal upkeep required - no cracking, shrinking, or erosion concerns.',
   },
   {
     icon: Star,
-    title: 'Increases Value',
-    description: 'Metal roofing can increase your home\'s resale value and curb appeal.',
+  title: 'Increases Value',
+  description: 'Metal roofing can increase your home\'s resale value and curb appeal.',
   },
 ];
 
@@ -97,19 +97,19 @@ const benefits = [
 const metalTypes = [
   {
     title: 'Standing Seam',
-    description: 'The premium choice with concealed fasteners and clean, modern lines. Ideal for contemporary homes.',
+  description: 'The premium choice with concealed fasteners and clean, modern lines. Ideal for contemporary homes.',
   },
   {
     title: 'Metal Shingles',
-    description: 'Combines the look of traditional shingles with metal durability. Perfect for traditional home styles.',
+  description: 'Combines the look of traditional shingles with metal durability. Perfect for traditional home styles.',
   },
   {
     title: 'Corrugated Metal',
-    description: 'Cost-effective option popular for agricultural, industrial, and modern residential applications.',
+  description: 'Cost-effective option popular for agricultural, industrial, and modern residential applications.',
   },
   {
     title: 'Stone-Coated Steel',
-    description: 'Metal durability with the appearance of slate, tile, or shake at a fraction of the weight.',
+  description: 'Metal durability with the appearance of slate, tile, or shake at a fraction of the weight.',
   },
 ];
 
@@ -117,32 +117,32 @@ const metalTypes = [
 const faqs = [
   {
     question: 'How much does metal roofing cost in Mt Holly NC?',
-    answer:
+  answer:
       'Metal roofing in Mt Holly typically costs $12,000 to $35,000 for most homes, depending on size, style, and material choice. While the upfront cost is higher than asphalt, the 50+ year lifespan often makes it more economical long-term.',
   },
   {
     question: 'Is metal roofing noisy during rain?',
-    answer:
+  answer:
       'Modern metal roofing installed over solid decking with proper underlayment is no noisier than any other roofing material. The insulation and decking absorb sound effectively.',
   },
   {
     question: 'Will a metal roof attract lightning?',
-    answer:
+  answer:
       'No, metal roofing does not attract lightning. In fact, if lightning does strike, metal roofing dissipates the charge safely and is non-combustible, making it safer than many alternatives.',
   },
   {
     question: 'Can you install a metal roof over existing shingles?',
-    answer:
+  answer:
       'While possible in some cases, we typically recommend removing old shingles for best results. This allows for proper decking inspection, ensures warranty coverage, and provides the best installation quality.',
   },
   {
     question: 'What colors and styles are available?',
-    answer:
+  answer:
       'Metal roofing comes in a wide variety of colors and styles. We offer standing seam, metal shingles, stone-coated steel, and more in dozens of colors to complement any Mt Holly home.',
   },
   {
     question: 'How long does metal roof installation take?',
-    answer:
+  answer:
       'Most residential metal roof installations in Mt Holly are completed in 2-5 days depending on size and complexity. Standing seam installations may take slightly longer than metal shingle systems.',
   },
 ];

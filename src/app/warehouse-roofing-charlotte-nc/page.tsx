@@ -30,7 +30,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import EstimateButton from '@/components/estimate/EstimateButton';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -54,16 +54,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Warehouse Roofing Charlotte NC | Flat Roof Specialists | Best Roofing Now',
-    description:
+  description:
       'Expert warehouse and distribution center roofing in Charlotte NC. TPO, EPDM, and metal roofing systems designed for large-scale facilities. Minimal disruption to your operations.',
-    url: `${SITE_CONFIG.url}/warehouse-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/warehouse-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Warehouse roofing Charlotte NC - Best Roofing Now warehouse roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Warehouse roofing Charlotte NC - Best Roofing Now warehouse roofing project',
       },
     ],
   },
@@ -73,33 +73,33 @@ export const metadata: Metadata = {
 const warehouseChallenges = [
   {
     icon: Building2,
-    title: 'Large Roof Spans',
-    description: 'Warehouses often have 50,000-500,000+ sq ft roofs requiring specialized equipment, experienced crews, and efficient project management to complete within tight timelines.',
+  title: 'Large Roof Spans',
+  description: 'Warehouses often have 50,000-500,000+ sq ft roofs requiring specialized equipment, experienced crews, and efficient project management to complete within tight timelines.',
   },
   {
     icon: Droplets,
-    title: 'Minimal Slope Drainage',
-    description: 'Flat and low-slope roofs on warehouses require precise drainage design to prevent ponding water, which can lead to structural stress and premature membrane failure.',
+  title: 'Minimal Slope Drainage',
+  description: 'Flat and low-slope roofs on warehouses require precise drainage design to prevent ponding water, which can lead to structural stress and premature membrane failure.',
   },
   {
     icon: Thermometer,
-    title: 'HVAC & Mechanical Systems',
-    description: 'Warehouse roofs support heavy HVAC units, exhaust systems, and rooftop equipment. Proper flashing and reinforcement around penetrations is critical.',
+  title: 'HVAC & Mechanical Systems',
+  description: 'Warehouse roofs support heavy HVAC units, exhaust systems, and rooftop equipment. Proper flashing and reinforcement around penetrations is critical.',
   },
   {
     icon: Wind,
-    title: 'Wind Uplift Resistance',
-    description: 'Large unobstructed roof areas are susceptible to wind uplift. We design and install systems that meet or exceed FM Global and local code requirements.',
+  title: 'Wind Uplift Resistance',
+  description: 'Large unobstructed roof areas are susceptible to wind uplift. We design and install systems that meet or exceed FM Global and local code requirements.',
   },
   {
     icon: Zap,
-    title: 'Energy Efficiency',
-    description: 'Climate control in large warehouses is expensive. Reflective roof membranes and proper insulation can reduce cooling costs by up to 30%.',
+  title: 'Energy Efficiency',
+  description: 'Climate control in large warehouses is expensive. Reflective roof membranes and proper insulation can reduce cooling costs by up to 30%.',
   },
   {
     icon: Package,
-    title: 'Protecting Inventory',
-    description: 'Warehouse roof leaks can damage millions in inventory. Our preventive maintenance and rapid response services protect your stored goods.',
+  title: 'Protecting Inventory',
+  description: 'Warehouse roof leaks can damage millions in inventory. Our preventive maintenance and rapid response services protect your stored goods.',
   },
 ];
 
@@ -107,27 +107,27 @@ const warehouseChallenges = [
 const warehouseRoofingSystems = [
   {
     icon: Shield,
-    title: 'TPO Roofing Systems',
-    description: 'The preferred choice for Charlotte warehouses. TPO offers excellent energy efficiency with its white reflective surface, reducing cooling costs in our hot summers. Heat-welded seams provide superior leak protection.',
-    benefits: ['30% cooling cost reduction', 'Heat-welded seams', '20-30 year warranties', 'Puncture resistant'],
+  title: 'TPO Roofing Systems',
+  description: 'The preferred choice for Charlotte warehouses. TPO offers excellent energy efficiency with its white reflective surface, reducing cooling costs in our hot summers. Heat-welded seams provide superior leak protection.',
+  benefits: ['30% cooling cost reduction', 'Heat-welded seams', '20-30 year warranties', 'Puncture resistant'],
   },
   {
     icon: Wrench,
-    title: 'EPDM Rubber Roofing',
-    description: 'A proven performer for large warehouse roofs. EPDM handles temperature extremes, offers excellent durability, and provides cost-effective coverage for expansive roof areas.',
-    benefits: ['50+ year track record', 'Temperature resistant', 'Low maintenance', 'Cost-effective for large roofs'],
+  title: 'EPDM Rubber Roofing',
+  description: 'A proven performer for large warehouse roofs. EPDM handles temperature extremes, offers excellent durability, and provides cost-effective coverage for expansive roof areas.',
+  benefits: ['50+ year track record', 'Temperature resistant', 'Low maintenance', 'Cost-effective for large roofs'],
   },
   {
     icon: Building2,
-    title: 'Standing Seam Metal',
-    description: 'Ideal for warehouses requiring maximum durability and longevity. Metal roofing handles heavy equipment loads, resists fire, and can last 40-60 years with minimal maintenance.',
-    benefits: ['40-60 year lifespan', 'Fire resistant', 'Handles equipment loads', 'Low maintenance'],
+  title: 'Standing Seam Metal',
+  description: 'Ideal for warehouses requiring maximum durability and longevity. Metal roofing handles heavy equipment loads, resists fire, and can last 40-60 years with minimal maintenance.',
+  benefits: ['40-60 year lifespan', 'Fire resistant', 'Handles equipment loads', 'Low maintenance'],
   },
   {
     icon: Warehouse,
-    title: 'Modified Bitumen',
-    description: 'Multi-layer protection perfect for warehouses with heavy rooftop traffic. Modified bitumen systems offer excellent puncture resistance and proven waterproofing performance.',
-    benefits: ['Multi-layer protection', 'High puncture resistance', 'Handles foot traffic', 'Proven performance'],
+  title: 'Modified Bitumen',
+  description: 'Multi-layer protection perfect for warehouses with heavy rooftop traffic. Modified bitumen systems offer excellent puncture resistance and proven waterproofing performance.',
+  benefits: ['Multi-layer protection', 'High puncture resistance', 'Handles foot traffic', 'Proven performance'],
   },
 ];
 
@@ -135,23 +135,23 @@ const warehouseRoofingSystems = [
 const minimalDisruptionApproach = [
   {
     icon: Clock,
-    title: 'Flexible Scheduling',
-    description: 'We work around your operation schedules, including nights, weekends, and off-peak hours to minimize impact on your business.',
+  title: 'Flexible Scheduling',
+  description: 'We work around your operation schedules, including nights, weekends, and off-peak hours to minimize impact on your business.',
   },
   {
     icon: Truck,
-    title: 'Phased Installation',
-    description: 'Large warehouse roofs are completed in sections, allowing your facility to remain operational throughout the project.',
+  title: 'Phased Installation',
+  description: 'Large warehouse roofs are completed in sections, allowing your facility to remain operational throughout the project.',
   },
   {
     icon: Users,
-    title: 'Experienced Crews',
-    description: 'Our commercial crews are trained in warehouse environments and understand the importance of maintaining a safe, clean work area.',
+  title: 'Experienced Crews',
+  description: 'Our commercial crews are trained in warehouse environments and understand the importance of maintaining a safe, clean work area.',
   },
   {
     icon: Shield,
-    title: 'Dust & Debris Control',
-    description: 'We implement strict containment protocols to prevent roofing debris from entering your warehouse or affecting operations.',
+  title: 'Dust & Debris Control',
+  description: 'We implement strict containment protocols to prevent roofing debris from entering your warehouse or affecting operations.',
   },
 ];
 
@@ -159,33 +159,33 @@ const minimalDisruptionApproach = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Trusted commercial roofing contractor with an A+ Better Business Bureau rating.',
+  title: 'BBB A+ Rated',
+  description: 'Trusted commercial roofing contractor with an A+ Better Business Bureau rating.',
   },
   {
     icon: Star,
-    title: 'Warehouse Specialists',
-    description: 'Extensive experience with distribution centers, logistics facilities, and industrial warehouses.',
+  title: 'Warehouse Specialists',
+  description: 'Extensive experience with distribution centers, logistics facilities, and industrial warehouses.',
   },
   {
     icon: Shield,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability and workers comp coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability and workers comp coverage.',
   },
   {
     icon: CheckCircle,
-    title: 'FM Global Compliant',
-    description: 'We install roof systems that meet FM Global standards for insurance compliance.',
+  title: 'FM Global Compliant',
+  description: 'We install roof systems that meet FM Global standards for insurance compliance.',
   },
   {
     icon: Users,
-    title: 'Experienced Team',
-    description: `${SITE_CONFIG.roofsInstalled}+ commercial and residential roofs completed in the Charlotte area.`,
+  title: 'Experienced Team',
+  description: `${SITE_CONFIG.roofsInstalled}+ commercial and residential roofs completed in the Charlotte area.`,
   },
   {
     icon: DollarSign,
-    title: 'Competitive Pricing',
-    description: 'Transparent quotes with volume pricing for large warehouse projects. Financing available.',
+  title: 'Competitive Pricing',
+  description: 'Transparent quotes with volume pricing for large warehouse projects. Financing available.',
   },
 ];
 
@@ -235,42 +235,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What is the best roofing system for a large warehouse in Charlotte?',
-    answer:
+  answer:
       'For most warehouses in Charlotte, we recommend TPO (Thermoplastic Polyolefin) roofing. Its white reflective surface reduces cooling costs by up to 30% in our hot summers, heat-welded seams provide superior leak protection, and it handles the thermal expansion of large roof areas exceptionally well. For warehouses with heavy rooftop equipment or foot traffic, we may recommend EPDM or modified bitumen systems.',
   },
   {
     question: 'How much does warehouse roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Warehouse roof replacement in Charlotte typically costs $4-10 per square foot depending on the roofing system, roof condition, and complexity. A 100,000 sq ft warehouse roof replacement might range from $400,000 to $1,000,000. We offer volume pricing for large projects and can work with your budget through phased installations. Contact us for a free, detailed estimate.',
   },
   {
     question: 'Can you replace our warehouse roof without shutting down operations?',
-    answer:
+  answer:
       'Yes, we specialize in minimizing operational disruption during warehouse roof projects. We use phased installation approaches, completing sections of the roof while your facility continues operating. We can also schedule work during off-hours, nights, or weekends. Our crews are trained in active warehouse environments and maintain strict safety and cleanliness protocols.',
   },
   {
     question: 'How long does it take to replace a large warehouse roof?',
-    answer:
+  answer:
       'The timeline for warehouse roof replacement depends on the roof size, system type, and weather conditions. A 50,000 sq ft warehouse typically takes 2-4 weeks. A 200,000+ sq ft distribution center might take 6-12 weeks. We provide detailed project schedules and can often work in phases to accommodate your operational needs.',
   },
   {
     question: 'Do you handle roof repairs for warehouse leaks?',
-    answer:
+  answer:
       'Absolutely. We provide emergency leak repairs for warehouses, often responding within 24 hours for urgent situations. We also offer comprehensive roof maintenance programs designed for large facilities, including bi-annual inspections, preventive repairs, and detailed condition assessments to catch problems before they cause inventory damage.',
   },
   {
     question: 'What warranties do you offer on warehouse roofing systems?',
-    answer:
+  answer:
       'We offer manufacturer warranties ranging from 15-30 years depending on the roofing system and installation package. As certified installers for major manufacturers, we can offer enhanced warranty packages including NDL (No Dollar Limit) coverage. We also provide our own workmanship warranty on all installations.',
   },
   {
     question: 'Are your roof installations FM Global compliant?',
-    answer:
+  answer:
       'Yes, we are experienced in FM Global requirements and install roofing systems that meet or exceed FM Global standards for wind uplift, fire resistance, and hail protection. This is important for warehouses carrying property insurance through FM Global-affiliated carriers. We can work with your insurance requirements to ensure compliance.',
   },
   {
     question: 'Can you install roofing systems for cold storage warehouses?',
-    answer:
+  answer:
       'Yes, we have experience with cold storage and refrigerated warehouse roofing. These facilities require specialized insulation systems and vapor barriers to prevent condensation and maintain temperature efficiency. We work with engineers to design roofing systems that meet the unique thermal requirements of cold storage facilities.',
   },
 ];
@@ -285,7 +285,6 @@ export default function WarehouseRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/warehouse-roofing-charlotte-nc`}
         pageName="Warehouse Roofing Charlotte NC"

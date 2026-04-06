@@ -40,31 +40,34 @@ export const metadata: Metadata = {
     'Schedule your FREE roof inspection in Charlotte NC today. Comprehensive inspections include drone technology, detailed reports, and expert recommendations. No obligation. Call (704) 605-6047.',
   keywords: [
     'roof inspection charlotte nc',
-    'free roof inspection charlotte',
-    'roof inspection near me',
+    'free roof inspection charlotte nc',
+    'roof inspection near me charlotte',
     'roof inspector charlotte nc',
-    'charlotte roof inspection services',
-    'roof assessment charlotte',
+    'free roof inspection lake norman nc',
+    'free roof inspection lake wylie sc',
+    'storm damage roof inspection charlotte nc',
+    'hail damage roof inspection charlotte nc',
     'roof condition report charlotte nc',
-    'professional roof inspection charlotte',
-    'annual roof inspection charlotte',
-    'storm damage roof inspection',
+    'annual roof inspection charlotte nc',
+    'free roof inspection huntersville nc',
+    'free roof inspection mooresville nc',
+    'free roof inspection fort mill sc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-charlotte-nc`,
   },
   openGraph: {
     title: 'Roof Inspection Charlotte NC | Free Roof Inspections | Best Roofing Now',
-    description:
+  description:
       'Get a FREE comprehensive roof inspection in Charlotte NC. Drone technology, detailed reports, no obligation. BBB A+ rated. Call (704) 605-6047.',
-    url: `${SITE_CONFIG.url}/roof-inspection-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-inspection-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.inspection,
-        width: 1200,
-        height: 630,
-        alt: 'Free roof inspection in Charlotte NC by Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Free roof inspection in Charlotte NC by Best Roofing Now',
       },
     ],
   },
@@ -74,42 +77,42 @@ export const metadata: Metadata = {
 const inspectionFAQs = [
   {
     question: 'How much does a roof inspection cost in Charlotte NC?',
-    answer:
+  answer:
       'At Best Roofing Now, roof inspections in Charlotte NC are completely FREE with no obligation. We believe homeowners deserve to know their roof\'s condition before making any decisions. Our free inspection includes a comprehensive assessment, photos, and a detailed written report. Some companies charge $100-$300 for inspections, but we waive this fee because we\'re confident in our honest, no-pressure approach.',
   },
   {
     question: 'How long does a roof inspection take in Charlotte?',
-    answer:
+  answer:
       'A thorough roof inspection in Charlotte typically takes 30-60 minutes, depending on your roof\'s size and complexity. Our inspectors examine every component: shingles, flashing, vents, gutters, soffits, and attic ventilation. We use drone technology for hard-to-reach areas, which allows us to complete inspections efficiently while capturing detailed imagery. You\'ll receive your report the same day.',
   },
   {
     question: 'What do roof inspectors look for during an inspection?',
-    answer:
+  answer:
       'Professional roof inspectors examine: shingle condition (cracking, curling, missing granules), flashing around chimneys and vents, gutter condition and drainage, soffit and fascia damage, attic ventilation, signs of water damage or leaks, structural integrity of the roof deck, and any storm damage from hail or wind. We document everything with photos and provide detailed recommendations.',
   },
   {
     question: 'How often should I get my roof inspected in Charlotte?',
-    answer:
+  answer:
       'In Charlotte NC, we recommend annual roof inspections, plus inspections after any significant storm. Charlotte\'s climate - with hot summers, occasional ice storms, and frequent thunderstorms - can stress roofing materials. Annual inspections catch small issues before they become expensive repairs. If your roof is over 15 years old, semi-annual inspections are wise.',
   },
   {
     question: 'Should I get a roof inspection before buying a home in Charlotte?',
-    answer:
+  answer:
       'Absolutely! A pre-purchase roof inspection in Charlotte is essential before buying a home. The roof is one of the most expensive components to replace ($8,000-$25,000+). Our inspection reveals the roof\'s true condition, remaining lifespan, and any needed repairs. This information is valuable for negotiations and helps you avoid unexpected expenses after closing.',
   },
   {
     question: 'Do you inspect roofs after storms in Charlotte?',
-    answer:
+  answer:
       'Yes, we provide priority storm damage inspections for Charlotte homeowners. After hail, wind, or severe weather, we can typically inspect your roof within 24-48 hours. We document all damage thoroughly for insurance claims, including date-stamped photos and detailed measurements. This documentation is crucial for getting fair insurance settlements.',
   },
   {
     question: 'What happens if damage is found during my roof inspection?',
-    answer:
+  answer:
       'If our inspection reveals damage, we provide you with honest options - not sales pressure. For minor issues, we\'ll explain what repairs are needed and their approximate cost. For significant damage, we\'ll discuss whether repair or replacement makes more sense. If storm damage is found, we help with the insurance claim process. There\'s never any obligation.',
   },
   {
     question: 'Can you inspect my roof for solar panel installation?',
-    answer:
+  answer:
       'Yes, we offer roof assessments for solar panel installation in Charlotte. Before installing solar panels, it\'s essential to ensure your roof is in good condition and can support the additional equipment for 25+ years. We\'ll evaluate your roof\'s structural integrity, remaining lifespan, and any repairs needed before solar installation.',
   },
   {
@@ -142,27 +145,27 @@ const inspectionChecklist = [
 const inspectionTypes = [
   {
     icon: Calendar,
-    title: 'Annual Maintenance Inspection',
-    description: 'Proactive yearly inspections to catch small issues before they become expensive problems. Ideal for extending your roof\'s lifespan.',
-    benefit: 'Prevent costly repairs',
+  title: 'Annual Maintenance Inspection',
+  description: 'Proactive yearly inspections to catch small issues before they become expensive problems. Ideal for extending your roof\'s lifespan.',
+  benefit: 'Prevent costly repairs',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Inspection',
-    description: 'Thorough assessment after hail, wind, or severe weather. Complete documentation for insurance claims with date-stamped photos.',
-    benefit: 'Maximize insurance claims',
+  title: 'Storm Damage Inspection',
+  description: 'Thorough assessment after hail, wind, or severe weather. Complete documentation for insurance claims with date-stamped photos.',
+  benefit: 'Maximize insurance claims',
   },
   {
     icon: Home,
-    title: 'Pre-Purchase Inspection',
-    description: 'Essential for homebuyers. Know exactly what you\'re buying and use findings in purchase negotiations.',
-    benefit: 'Make informed decisions',
+  title: 'Pre-Purchase Inspection',
+  description: 'Essential for homebuyers. Know exactly what you\'re buying and use findings in purchase negotiations.',
+  benefit: 'Make informed decisions',
   },
   {
     icon: FileText,
-    title: 'Insurance Claim Inspection',
-    description: 'Detailed documentation to support your insurance claim. We meet with adjusters and advocate for fair settlements.',
-    benefit: 'Expert claim support',
+  title: 'Insurance Claim Inspection',
+  description: 'Detailed documentation to support your insurance claim. We meet with adjusters and advocate for fair settlements.',
+  benefit: 'Expert claim support',
   },
 ];
 
@@ -170,28 +173,28 @@ const inspectionTypes = [
 const inspectionProcess = [
   {
     step: 1,
-    title: 'Schedule Your Free Inspection',
-    description: 'Call or fill out our form to book a convenient time. We offer same-day and next-day appointments for most Charlotte areas.',
+  title: 'Schedule Your Free Inspection',
+  description: 'Call or fill out our form to book a convenient time. We offer same-day and next-day appointments for most Charlotte areas.',
   },
   {
     step: 2,
-    title: 'Comprehensive Roof Assessment',
-    description: 'Our certified inspector examines every component of your roof, using drone technology for detailed aerial views of hard-to-reach areas.',
+  title: 'Comprehensive Roof Assessment',
+  description: 'Our certified inspector examines every component of your roof, using drone technology for detailed aerial views of hard-to-reach areas.',
   },
   {
     step: 3,
-    title: 'Photo Documentation',
-    description: 'We capture high-resolution photos of your entire roof, documenting current conditions and any areas of concern.',
+  title: 'Photo Documentation',
+  description: 'We capture high-resolution photos of your entire roof, documenting current conditions and any areas of concern.',
   },
   {
     step: 4,
-    title: 'Detailed Written Report',
-    description: 'Receive a comprehensive report with photos, findings, and honest recommendations - delivered the same day.',
+  title: 'Detailed Written Report',
+  description: 'Receive a comprehensive report with photos, findings, and honest recommendations - delivered the same day.',
   },
   {
     step: 5,
-    title: 'No-Obligation Consultation',
-    description: 'We review the findings with you, answer questions, and provide options if any work is needed. Zero pressure, ever.',
+  title: 'No-Obligation Consultation',
+  description: 'We review the findings with you, answer questions, and provide options if any work is needed. Zero pressure, ever.',
   },
 ];
 

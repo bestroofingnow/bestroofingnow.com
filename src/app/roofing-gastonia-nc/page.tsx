@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Gastonia NC | Gaston County Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor serving Gastonia NC and Gaston County. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-gastonia-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-gastonia-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero6,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Gastonia NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Gastonia NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Gastonia homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Gastonia homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Gaston County businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Gaston County businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage throughout Gastonia.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage throughout Gastonia.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Gastonia homeowners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Gastonia homeowners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Gaston County properties.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Gaston County properties.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across the region.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across the region.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when storms strike Gaston County.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when storms strike Gaston County.',
   },
 ];
 
@@ -167,42 +167,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Gastonia NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Gastonia and all of Gaston County from our Charlotte headquarters. Gastonia is approximately 20 miles from our office via I-85, making it a convenient and frequent service area for our team. We complete numerous roofing projects throughout Gastonia and the surrounding communities.',
   },
   {
     question: 'How far is Gastonia from your Charlotte location?',
-    answer:
+  answer:
       'Gastonia is approximately 20 miles west of Charlotte along the I-85 corridor. This direct highway connection means quick response times and easy access for our team. We regularly serve Gastonia customers and consider Gaston County a primary service area.',
   },
   {
     question: 'What makes Gastonia roofing different from other areas?',
-    answer:
+  answer:
       'Gastonia and Gaston County have a diverse housing stock ranging from historic downtown homes to newer suburban developments. The area also sees significant industrial and commercial construction along the I-85 corridor. Our team is experienced with all building types and understands the specific needs of Gaston County properties.',
   },
   {
     question: 'How much does a new roof cost in Gastonia NC?',
-    answer:
+  answer:
       'Roof replacement costs in Gastonia typically range from $8,000-$25,000 for most homes, depending on size, pitch, material choice, and complexity. Gastonia often has more affordable housing than Charlotte proper, which can translate to lower roofing costs. We provide free, no-obligation estimates with transparent pricing.',
   },
   {
     question: 'Do you offer free roof inspections in Gastonia?',
-    answer:
+  answer:
       'Absolutely! Best Roofing Now offers completely free roof inspections throughout Gastonia and Gaston County. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written report with photos. There is no obligation to hire us after the inspection.',
   },
   {
     question: 'Can you help with insurance claims for storm damage in Gastonia?',
-    answer:
+  answer:
       'Yes, we have extensive experience helping Gastonia and Gaston County homeowners with storm damage insurance claims. This area sees significant severe weather including hail, high winds, and occasional tornado activity. We provide thorough documentation, meet with adjusters, and advocate for fair settlements.',
   },
   {
     question: 'Do you work with commercial properties along the I-85 corridor?',
-    answer:
+  answer:
       'Yes, we provide commercial roofing services for businesses throughout Gastonia and along the I-85 corridor. This includes TPO, EPDM, flat roof systems, metal roofing, and commercial roof repairs. We understand that businesses need minimal disruption and can often work around your operating hours.',
   },
   {
     question: 'How quickly can you respond to roofing emergencies in Gastonia?',
-    answer:
+  answer:
       'We offer 24/7 emergency roofing services throughout Gastonia and Gaston County. For emergencies like active leaks or storm damage, we typically respond within 1-4 hours to secure your property and prevent further damage. Call us anytime at (704) 605-6047 for emergency service.',
   },
 ];
@@ -217,7 +217,12 @@ export default function RoofingGastoniaNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-gastonia-nc`}
+        pageName="Roofing Gastonia NC"
+        city="Gastonia"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

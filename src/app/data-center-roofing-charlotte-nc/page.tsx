@@ -35,7 +35,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -64,16 +63,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Data Center Roofing Charlotte NC | Server Farm & Tech Facility Roofs | Best Roofing Now',
-    description:
+  description:
       'Specialized data center roofing contractors in Charlotte NC for enterprise data centers, colocation facilities & cloud provider centers. Zero-downtime installations with free estimates.',
-    url: `${SITE_CONFIG.url}/data-center-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/data-center-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Data center roofing Charlotte NC - Best Roofing Now tech facility roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Data center roofing Charlotte NC - Best Roofing Now tech facility roofing project',
       },
     ],
   },
@@ -83,39 +82,39 @@ export const metadata: Metadata = {
 const dataCenterRoofingSystems = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'High-performance single-ply membrane with superior reflectivity that reduces cooling loads on data centers. Heat-welded seams provide watertight protection for critical equipment below.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'High-performance single-ply membrane with superior reflectivity that reduces cooling loads on data centers. Heat-welded seams provide watertight protection for critical equipment below.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Droplets,
-    title: 'PVC Roofing Systems',
-    description: 'Chemical-resistant membrane ideal for data centers with rooftop HVAC equipment, generators, and battery systems. Exceptional resistance to oils, greases, and chemical exposure.',
-    href: '/services/commercial-roofing',
+  title: 'PVC Roofing Systems',
+  description: 'Chemical-resistant membrane ideal for data centers with rooftop HVAC equipment, generators, and battery systems. Exceptional resistance to oils, greases, and chemical exposure.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Standing seam metal roofing providing superior wind resistance and 50+ year lifespan for mission-critical data center facilities that cannot afford roof failures.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Standing seam metal roofing providing superior wind resistance and 50+ year lifespan for mission-critical data center facilities that cannot afford roof failures.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Spray Foam Roofing',
-    description: 'Seamless insulation and waterproofing in one application. Excellent R-value reduces HVAC load, and the monolithic membrane eliminates seams where leaks could threaten equipment.',
-    href: '/services/commercial-roofing',
+  title: 'Spray Foam Roofing',
+  description: 'Seamless insulation and waterproofing in one application. Excellent R-value reduces HVAC load, and the monolithic membrane eliminates seams where leaks could threaten equipment.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'EPDM Rubber Roofing',
-    description: 'Proven synthetic rubber membrane with superior weather resistance and a 30+ year lifespan. Ideal for large data center footprints requiring reliable, cost-effective protection.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Proven synthetic rubber membrane with superior weather resistance and a 30+ year lifespan. Ideal for large data center footprints requiring reliable, cost-effective protection.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Roof Coatings & Restoration',
-    description: 'Reflective coating systems that extend existing roof life without the risk of full tear-off. Minimizes disruption to data center operations while improving energy efficiency.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings & Restoration',
+  description: 'Reflective coating systems that extend existing roof life without the risk of full tear-off. Minimizes disruption to data center operations while improving energy efficiency.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -123,33 +122,33 @@ const dataCenterRoofingSystems = [
 const dataCenterBuildingTypes = [
   {
     icon: Server,
-    title: 'Enterprise Data Centers',
-    description: 'Roofing for corporate-owned data centers operated by Charlotte&apos;s major financial institutions, healthcare systems, and Fortune 500 companies with on-premises IT infrastructure.',
+  title: 'Enterprise Data Centers',
+  description: 'Roofing for corporate-owned data centers operated by Charlotte&apos;s major financial institutions, healthcare systems, and Fortune 500 companies with on-premises IT infrastructure.',
   },
   {
     icon: Building2,
-    title: 'Colocation Facilities',
-    description: 'Multi-tenant data center roofing requiring zero-downtime installation methods. We coordinate with facility managers to protect all tenants&apos; equipment during roof work.',
+  title: 'Colocation Facilities',
+  description: 'Multi-tenant data center roofing requiring zero-downtime installation methods. We coordinate with facility managers to protect all tenants&apos; equipment during roof work.',
   },
   {
     icon: Cpu,
-    title: 'Cloud Provider Centers',
-    description: 'Large-scale roofing solutions for hyperscale and regional cloud provider facilities in the Charlotte metro area, including massive footprint buildings with specialized HVAC requirements.',
+  title: 'Cloud Provider Centers',
+  description: 'Large-scale roofing solutions for hyperscale and regional cloud provider facilities in the Charlotte metro area, including massive footprint buildings with specialized HVAC requirements.',
   },
   {
     icon: Zap,
-    title: 'Edge Data Centers',
-    description: 'Compact roofing solutions for distributed edge computing facilities throughout the Charlotte region, including cell tower equipment shelters and micro data centers.',
+  title: 'Edge Data Centers',
+  description: 'Compact roofing solutions for distributed edge computing facilities throughout the Charlotte region, including cell tower equipment shelters and micro data centers.',
   },
   {
     icon: Shield,
-    title: 'Disaster Recovery Sites',
-    description: 'Redundant roofing systems for backup and disaster recovery facilities that must maintain watertight integrity during the worst weather events Charlotte experiences.',
+  title: 'Disaster Recovery Sites',
+  description: 'Redundant roofing systems for backup and disaster recovery facilities that must maintain watertight integrity during the worst weather events Charlotte experiences.',
   },
   {
     icon: Activity,
-    title: 'Telecom Hubs & Network Centers',
-    description: 'Specialized roofing for telecommunications switching centers, carrier hotels, and fiber interconnection points that form the backbone of Charlotte&apos;s digital infrastructure.',
+  title: 'Telecom Hubs & Network Centers',
+  description: 'Specialized roofing for telecommunications switching centers, carrier hotels, and fiber interconnection points that form the backbone of Charlotte&apos;s digital infrastructure.',
   },
 ];
 
@@ -157,33 +156,33 @@ const dataCenterBuildingTypes = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'Zero-Downtime Installation',
-    description: 'We install and repair roofs without interrupting data center operations. Phased approach with redundant waterproofing at every stage protects equipment 24/7.',
+  title: 'Zero-Downtime Installation',
+  description: 'We install and repair roofs without interrupting data center operations. Phased approach with redundant waterproofing at every stage protects equipment 24/7.',
   },
   {
     icon: Droplets,
-    title: 'Waterproofing Specialists',
-    description: 'Multiple waterproofing layers and leak detection protocols protect millions of dollars in servers and networking equipment from even the smallest water intrusion.',
+  title: 'Waterproofing Specialists',
+  description: 'Multiple waterproofing layers and leak detection protocols protect millions of dollars in servers and networking equipment from even the smallest water intrusion.',
   },
   {
     icon: Wind,
-    title: 'HVAC Integration Experts',
-    description: 'Experienced with the massive rooftop HVAC systems, cooling towers, and mechanical equipment that data centers require. Proper penetration flashing is critical.',
+  title: 'HVAC Integration Experts',
+  description: 'Experienced with the massive rooftop HVAC systems, cooling towers, and mechanical equipment that data centers require. Proper penetration flashing is critical.',
   },
   {
     icon: Lock,
-    title: 'Security Protocol Compliant',
-    description: 'Background-checked crews familiar with data center security requirements including escort policies, camera monitoring, and restricted area access procedures.',
+  title: 'Security Protocol Compliant',
+  description: 'Background-checked crews familiar with data center security requirements including escort policies, camera monitoring, and restricted area access procedures.',
   },
   {
     icon: Shield,
-    title: 'Redundancy Planning',
-    description: 'We design roof systems with built-in redundancy — dual membrane layers, secondary drainage, and emergency response plans for your most critical facilities.',
+  title: 'Redundancy Planning',
+  description: 'We design roof systems with built-in redundancy — dual membrane layers, secondary drainage, and emergency response plans for your most critical facilities.',
   },
   {
     icon: Users,
-    title: 'Dedicated Project Managers',
-    description: 'Single point of contact with experience managing data center projects. Regular reporting, pre-work safety briefings, and coordination with your facility team.',
+  title: 'Dedicated Project Managers',
+  description: 'Single point of contact with experience managing data center projects. Regular reporting, pre-work safety briefings, and coordination with your facility team.',
   },
 ];
 
@@ -219,42 +218,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Can you replace a data center roof without any downtime to our operations?',
-    answer:
+  answer:
       'Yes, zero-downtime roof replacement is our standard approach for data center projects. We work in small sections with temporary waterproofing barriers in place at all times, ensuring your servers and equipment are never exposed. Our phased installation method means only a small portion of the roof is open at any given time, with redundant protection layers underneath. We have completed numerous data center roof projects in Charlotte without a single minute of unplanned downtime for our clients.',
   },
   {
     question: 'What makes data center roofing different from standard commercial roofing?',
-    answer:
+  answer:
       'Data center roofing is fundamentally different because the consequences of any water intrusion can be catastrophic — potentially destroying millions of dollars in equipment and causing service outages affecting thousands of users. We use enhanced waterproofing protocols including dual-membrane systems, redundant drainage, leak detection sensors, and emergency response plans. Additionally, data center roofs must accommodate massive HVAC penetrations, support heavy mechanical equipment loads, and provide superior thermal performance to reduce cooling costs.',
   },
   {
     question: 'How do you handle the massive HVAC equipment on data center roofs?',
-    answer:
+  answer:
       'Charlotte data centers often have extensive rooftop mechanical equipment including cooling towers, CRAH units, condensers, and generators. We coordinate with your mechanical contractors to properly flash around all penetrations, ensure adequate structural support for equipment loads, and maintain clear access paths for maintenance. We use pitch pockets, equipment curbs, and flexible flashing systems designed to accommodate the vibration and thermal movement that HVAC equipment produces.',
   },
   {
     question: 'What roofing system is best for data centers in Charlotte NC?',
-    answer:
+  answer:
       'For Charlotte data centers, we most often recommend TPO or PVC membrane systems. TPO provides excellent energy efficiency with its reflective surface, reducing the cooling load that makes up 30-40% of data center operating costs. PVC is ideal when chemical resistance is needed around generators, battery systems, or cooling equipment. For facilities requiring maximum lifespan, standing seam metal roofing offers 50+ years of protection. We assess each facility individually, considering equipment loads, penetration count, and your uptime requirements.',
   },
   {
     question: 'How do you address fire protection requirements for data center roofs?',
-    answer:
+  answer:
       'Data center roofing must meet strict fire protection standards including UL Class A fire ratings. We install roofing systems that are FM Global-approved and meet NFPA standards for data center construction. This includes fire-rated roof assemblies, proper fire stops at penetrations, and coordination with your fire suppression systems. Our installations comply with the International Building Code and any additional requirements specified by your insurance carrier or certification standards (such as Uptime Institute Tier requirements).',
   },
   {
     question: 'Do you work with Tier 3 and Tier 4 data center certification requirements?',
-    answer:
+  answer:
       'Yes, we understand the roofing implications of Uptime Institute Tier classifications. Tier 3 and Tier 4 facilities require concurrently maintainable and fault-tolerant infrastructure, and the roof is a critical component. We design roof systems with redundant drainage, dual waterproofing layers, and maintenance access that allows roof work without impacting IT operations — all requirements for maintaining Tier 3/4 certification. We provide documentation that supports your certification audits.',
   },
   {
     question: 'What is the cost of data center roofing in Charlotte NC?',
-    answer:
+  answer:
       'Data center roofing in Charlotte typically costs $8 to $16 per square foot for premium membrane systems with enhanced waterproofing, and $12 to $20 per square foot for metal roofing systems. These costs are higher than standard commercial roofing because of the additional waterproofing layers, phased installation requirements, and specialized penetration flashing that data centers demand. A 50,000 sq ft data center roof might cost $400,000-$800,000 depending on the system and complexity. We provide detailed estimates with transparent pricing.',
   },
   {
     question: 'How quickly can you respond to an emergency roof leak at a data center?',
-    answer:
+  answer:
       'We offer 24/7 emergency response for data center clients in the Charlotte area. For facilities with our priority service agreement, we guarantee a 2-hour on-site response time. Our emergency crews carry materials for immediate temporary repairs to stop water intrusion and protect your equipment. We also work with data center operators to develop pre-planned emergency response protocols so that our team knows exactly where to go and what to do when called — minimizing response time when every minute counts.',
   },
 ];
@@ -269,7 +268,6 @@ export default function DataCenterRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/data-center-roofing-charlotte-nc`}
         pageName="Data Center Roofing Charlotte NC"
@@ -430,7 +428,7 @@ export default function DataCenterRoofingCharlotteNCPage() {
               <p className="text-gray text-lg mb-8">
                 Data center roofing is not standard commercial roofing. A single roof leak can destroy millions in
                 equipment and cause outages affecting thousands of businesses. We bring the specialized expertise,
-                zero-downtime methods, and redundancy planning that mission-critical facilities demand.
+  zero-downtime methods, and redundancy planning that mission-critical facilities demand.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (

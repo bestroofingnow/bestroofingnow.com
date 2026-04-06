@@ -22,7 +22,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -39,31 +38,35 @@ export const metadata: Metadata = {
     'Emergency roof repair Charlotte NC with 24/7 response. Active leaks, storm damage, fallen trees - we respond fast. 1-4 hour response time. BBB A+ rated. Call (704) 605-6047 now!',
   keywords: [
     'emergency roof repair charlotte nc',
-    '24/7 roof repair charlotte',
+    '24/7 roof repair charlotte nc',
     'emergency roofing charlotte nc',
-    'urgent roof repair charlotte',
+    'urgent roof repair charlotte nc',
     'roof leak emergency charlotte nc',
-    'storm damage emergency charlotte',
+    'storm damage emergency charlotte nc',
     'emergency roof tarp charlotte nc',
     'same day roof repair charlotte',
-    '24 hour roof repair charlotte nc',
-    'emergency roofer charlotte',
+    '24 hour roofer charlotte nc',
+    'emergency roof repair lake norman nc',
+    'emergency roof repair lake wylie sc',
+    'emergency roof repair huntersville nc',
+    'emergency roof repair mooresville nc',
+    'emergency roofer near me charlotte',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-charlotte-nc`,
   },
   openGraph: {
     title: '24/7 Emergency Roof Repair Charlotte NC | Call Now | Best Roofing Now',
-    description:
+  description:
       'Charlotte emergency roof repair with 1-4 hour response. Active leaks, storm damage, fallen trees. 24/7 availability. BBB A+ rated veteran-owned company.',
-    url: `${SITE_CONFIG.url}/emergency-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/emergency-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.emergency,
-        width: 1200,
-        height: 630,
-        alt: '24/7 Emergency roof repair Charlotte NC - Best Roofing Now storm response',
+  width: 1200,
+  height: 630,
+  alt: '24/7 Emergency roof repair Charlotte NC - Best Roofing Now storm response',
       },
     ],
   },
@@ -73,27 +76,27 @@ export const metadata: Metadata = {
 const emergencyTypes = [
   {
     icon: CloudRain,
-    title: 'Active Roof Leaks',
-    description: 'Water actively entering your home needs immediate attention. We stop leaks fast to prevent mold and structural damage.',
-    urgency: 'Respond within 1-2 hours',
+  title: 'Active Roof Leaks',
+  description: 'Water actively entering your home needs immediate attention. We stop leaks fast to prevent mold and structural damage.',
+  urgency: 'Respond within 1-2 hours',
   },
   {
     icon: TreePine,
-    title: 'Fallen Tree Damage',
-    description: 'Trees or large branches on your roof require urgent response. We coordinate removal and secure your property.',
-    urgency: 'Respond within 2-4 hours',
+  title: 'Fallen Tree Damage',
+  description: 'Trees or large branches on your roof require urgent response. We coordinate removal and secure your property.',
+  urgency: 'Respond within 2-4 hours',
   },
   {
     icon: Zap,
-    title: 'Severe Storm Damage',
-    description: 'Hail, wind, and tornado damage that exposes your home to the elements. Emergency tarping available.',
-    urgency: 'Respond within 1-4 hours',
+  title: 'Severe Storm Damage',
+  description: 'Hail, wind, and tornado damage that exposes your home to the elements. Emergency tarping available.',
+  urgency: 'Respond within 1-4 hours',
   },
   {
     icon: AlertTriangle,
-    title: 'Structural Collapse',
-    description: 'Sagging, buckling, or partially collapsed roof sections that threaten safety and property.',
-    urgency: 'Respond within 1 hour',
+  title: 'Structural Collapse',
+  description: 'Sagging, buckling, or partially collapsed roof sections that threaten safety and property.',
+  urgency: 'Respond within 1 hour',
   },
 ];
 
@@ -125,42 +128,42 @@ const priorityNeighborhoods = [
 const faqs = [
   {
     question: 'How fast can you respond to a roof emergency in Charlotte?',
-    answer:
+  answer:
       'Best Roofing Now offers 24/7 emergency roof repair in Charlotte with typical response times of 1-4 hours. For active leaks or structural emergencies, we prioritize immediate response. Our crews are stationed throughout the Charlotte metro area for fast deployment. Call (704) 605-6047 any time, day or night.',
   },
   {
     question: 'What should I do while waiting for emergency roof repair?',
-    answer:
+  answer:
       'First, ensure everyone is safe and move away from the affected area. If water is entering, place buckets to catch drips and move valuables away from the leak. Turn off electricity to affected areas if there is water near outlets. Do NOT attempt to climb on a damaged roof - this is dangerous. Call us immediately and we will guide you through any additional steps.',
   },
   {
     question: 'Do you provide emergency roof tarping in Charlotte?',
-    answer:
+  answer:
       'Yes, emergency tarping is one of our core services. We install professional-grade tarps that provide weatherproof protection until permanent repairs can be completed. Our tarping service is available 24/7 and can often be completed within hours of your call. Tarping costs are often covered by insurance for storm-related damage.',
   },
   {
     question: 'Will insurance cover emergency roof repair in Charlotte NC?',
-    answer:
+  answer:
       'Yes, most homeowners insurance policies cover emergency roof repair when caused by storms, hail, wind, or fallen trees. Best Roofing Now works directly with all major insurance companies and helps document damage for your claim. We can provide emergency repairs and coordinate with your insurance adjuster to maximize your coverage.',
   },
   {
     question: 'How much does emergency roof repair cost in Charlotte?',
-    answer:
+  answer:
       'Emergency roof repair costs in Charlotte vary based on the type and extent of damage. Emergency tarping typically costs $300-$800. Minor leak repairs range from $200-$800. More extensive emergency repairs can cost $1,000-$3,000+. We provide transparent pricing before any work begins, and many emergency repairs are covered by insurance.',
   },
   {
     question: 'Do you charge extra for after-hours emergency calls?',
-    answer:
+  answer:
       'We maintain consistent, fair pricing for emergency services regardless of when you call. While emergency work may cost more than scheduled repairs due to the urgent nature and expedited response, we do not add arbitrary "after-hours" fees. You will receive a clear estimate before we begin any work.',
   },
   {
     question: 'What areas do you cover for emergency roof repair?',
-    answer:
+  answer:
       'We provide 24/7 emergency roof repair throughout the Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Pineville, Concord, Gastonia, and surrounding communities. Our crews are positioned throughout the region for rapid response to any location.',
   },
   {
     question: 'Can you make permanent repairs during an emergency call?',
-    answer:
+  answer:
       'It depends on the situation. For smaller issues like minor leaks or a few missing shingles, we can often complete permanent repairs during the emergency visit. For larger damage requiring materials ordering or extensive work, we focus on making your home watertight first (tarping, temporary patches) and schedule permanent repairs as soon as possible.',
   },
   {
@@ -185,7 +188,6 @@ export default function EmergencyRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/emergency-roof-repair-charlotte-nc`}
         pageName="24/7 Emergency Roof Repair Charlotte NC"
@@ -195,18 +197,18 @@ export default function EmergencyRoofRepairCharlotteNCPage() {
         faqs={[
           {
             question: 'Who provides 24/7 emergency roof repair in Charlotte NC?',
-            answer: 'Best Roofing Now provides 24/7 emergency roof repair in Charlotte NC with 1-4 hour response times. They handle active leaks, storm damage, fallen trees, and structural emergencies. BBB A+ rated and veteran-owned. Call (704) 605-6047 any time.',
-            speakableAnswer: 'Best Roofing Now provides 24/7 emergency roof repair in Charlotte with 1-4 hour response. Call 704-605-6047.',
+  answer: 'Best Roofing Now provides 24/7 emergency roof repair in Charlotte NC with 1-4 hour response times. They handle active leaks, storm damage, fallen trees, and structural emergencies. BBB A+ rated and veteran-owned. Call (704) 605-6047 any time.',
+  speakableAnswer: 'Best Roofing Now provides 24/7 emergency roof repair in Charlotte with 1-4 hour response. Call 704-605-6047.',
           },
           {
             question: 'How fast can I get emergency roof repair in Charlotte?',
-            answer: 'Best Roofing Now typically responds to Charlotte roof emergencies within 1-4 hours. For active leaks or structural damage, response is prioritized within 1-2 hours. Available 24/7, 365 days a year.',
-            speakableAnswer: 'Best Roofing Now responds to Charlotte emergencies within 1-4 hours. Call 704-605-6047 for immediate help.',
+  answer: 'Best Roofing Now typically responds to Charlotte roof emergencies within 1-4 hours. For active leaks or structural damage, response is prioritized within 1-2 hours. Available 24/7, 365 days a year.',
+  speakableAnswer: 'Best Roofing Now responds to Charlotte emergencies within 1-4 hours. Call 704-605-6047 for immediate help.',
           },
           {
             question: 'What is the phone number for emergency roof repair in Charlotte?',
-            answer: 'Call (704) 605-6047 for 24/7 emergency roof repair in Charlotte NC. Best Roofing Now answers emergency calls around the clock, including nights, weekends, and holidays.',
-            speakableAnswer: 'For emergency roof repair in Charlotte, call 704-605-6047. Available 24/7.',
+  answer: 'Call (704) 605-6047 for 24/7 emergency roof repair in Charlotte NC. Best Roofing Now answers emergency calls around the clock, including nights, weekends, and holidays.',
+  speakableAnswer: 'For emergency roof repair in Charlotte, call 704-605-6047. Available 24/7.',
           },
         ]}
       />

@@ -22,7 +22,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -54,16 +53,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Designer Shingles Charlotte NC | Luxury Architectural Shingles',
-    description:
+  description:
       'Premium designer shingles that replicate the look of slate and cedar shake. 50-year warranties. Perfect for Charlotte\'s upscale neighborhoods.',
-    url: `${SITE_CONFIG.url}/designer-shingles-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/designer-shingles-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Designer shingles installation Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Designer shingles installation Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -73,30 +72,30 @@ export const metadata: Metadata = {
 const designerBrands = [
   {
     brand: 'GAF',
-    products: [
+  products: [
       { name: 'Grand Canyon', description: 'Ultra-premium with rugged shake appearance', warranty: 'Lifetime' },
       { name: 'Camelot II', description: 'Old-world European style with artisan craftsmanship', warranty: 'Lifetime' },
       { name: 'Timberline Ultra HD', description: 'Bold, dramatic look with enhanced depth', warranty: 'Lifetime' },
     ],
-    certified: 'Factory-Certified Installer',
+  certified: 'Factory-Certified Installer',
   },
   {
     brand: 'CertainTeed',
-    products: [
+  products: [
       { name: 'Grand Manor', description: 'Handcrafted appearance of natural slate', warranty: '50 Year' },
       { name: 'Carriage House', description: 'Old-world luxury with dramatic shadow lines', warranty: '50 Year' },
       { name: 'Presidential Shake', description: 'Authentic wood shake appearance', warranty: '50 Year' },
     ],
-    certified: 'ShingleMaster',
+  certified: 'ShingleMaster',
   },
   {
     brand: 'Owens Corning',
-    products: [
+  products: [
       { name: 'Woodcrest', description: 'Natural wood shake look with superior protection', warranty: 'Lifetime' },
       { name: 'Woodmoor', description: 'Bold wood shake appearance with coastal durability', warranty: 'Lifetime' },
       { name: 'Duration Designer', description: 'Premium designer colors with patented technology', warranty: 'Lifetime' },
     ],
-    certified: 'Preferred Contractor',
+  certified: 'Preferred Contractor',
   },
 ];
 
@@ -104,33 +103,33 @@ const designerBrands = [
 const benefits = [
   {
     icon: Palette,
-    title: 'Stunning Aesthetics',
-    description: 'Replicate the look of expensive slate, cedar shake, or European tiles at a fraction of the cost.',
+  title: 'Stunning Aesthetics',
+  description: 'Replicate the look of expensive slate, cedar shake, or European tiles at a fraction of the cost.',
   },
   {
     icon: Clock,
-    title: '50-Year Warranties',
-    description: 'Premium designer shingles come with industry-leading warranties up to 50 years or lifetime.',
+  title: '50-Year Warranties',
+  description: 'Premium designer shingles come with industry-leading warranties up to 50 years or lifetime.',
   },
   {
     icon: Shield,
-    title: 'Superior Protection',
-    description: 'Multi-layer construction provides enhanced protection against wind, hail, and severe weather.',
+  title: 'Superior Protection',
+  description: 'Multi-layer construction provides enhanced protection against wind, hail, and severe weather.',
   },
   {
     icon: Wind,
-    title: '130+ MPH Wind Rating',
-    description: 'Highest wind resistance ratings available - critical for Charlotte storm season.',
+  title: '130+ MPH Wind Rating',
+  description: 'Highest wind resistance ratings available - critical for Charlotte storm season.',
   },
   {
     icon: Home,
-    title: 'Increases Home Value',
-    description: 'Designer shingles significantly boost curb appeal and resale value of your home.',
+  title: 'Increases Home Value',
+  description: 'Designer shingles significantly boost curb appeal and resale value of your home.',
   },
   {
     icon: CheckCircle,
-    title: 'HOA Approved',
-    description: 'Pre-approved in most Charlotte HOA communities including Ballantyne, Piper Glen, and Providence.',
+  title: 'HOA Approved',
+  description: 'Pre-approved in most Charlotte HOA communities including Ballantyne, Piper Glen, and Providence.',
   },
 ];
 
@@ -152,32 +151,32 @@ const luxuryNeighborhoods = [
 const faqs = [
   {
     question: 'What are designer shingles and how are they different from regular shingles?',
-    answer:
+  answer:
       'Designer shingles are premium architectural shingles that replicate the appearance of expensive roofing materials like slate, cedar shake, or European tiles. They feature multiple layers, enhanced dimensional appearance, and upgraded materials. Compared to standard 3-tab or basic architectural shingles, designers offer superior aesthetics, longer warranties (often 50 years to lifetime), and better wind/impact resistance.',
   },
   {
     question: 'How much do designer shingles cost in Charlotte NC?',
-    answer:
+  answer:
       'Designer shingles in Charlotte typically cost $5-$9 per square foot installed, or roughly $15,000-$35,000 for a typical home. This compares to $3-$5 per square foot for standard architectural shingles. While the upfront cost is 30-50% higher, designer shingles offer dramatically improved curb appeal, longer lifespan, better warranties, and increased home value - making them an excellent investment for upscale Charlotte homes.',
   },
   {
     question: 'Which designer shingles are best for Charlotte\'s climate?',
-    answer:
+  answer:
       'For Charlotte\'s hot, humid summers and occasional severe storms, we recommend GAF Grand Canyon, CertainTeed Grand Manor, or Owens Corning Woodcrest. All feature Class A fire rating, algae resistance (critical in our humid climate), high wind ratings (130+ MPH), and Class 4 impact resistance options. GAF\'s StainGuard Plus and CertainTeed\'s StreakFighter technology are particularly valuable for preventing black streaks in Charlotte\'s humidity.',
   },
   {
     question: 'Are designer shingles approved by Charlotte HOAs?',
-    answer:
+  answer:
       'Yes, designer shingles are approved by virtually all Charlotte HOAs. In fact, many upscale communities like Ballantyne, Piper Glen, and Providence Plantation prefer or require designer-grade shingles. We can help you select colors and styles that meet your HOA requirements. We also handle the HOA approval process, submitting samples and documentation on your behalf.',
   },
   {
     question: 'How long do designer shingles last compared to regular shingles?',
-    answer:
+  answer:
       'Designer shingles typically last 30-50 years compared to 15-25 years for standard shingles. Premium lines like GAF Grand Canyon and CertainTeed Grand Manor carry lifetime warranties and can last 40-50+ years with proper installation. The enhanced materials, thicker construction, and superior manufacturing translate to significantly longer service life.',
   },
   {
     question: 'Can designer shingles increase my home\'s value?',
-    answer:
+  answer:
       'Absolutely. Studies show premium roofing can increase home value by 15-40% of the roof\'s cost. In Charlotte\'s competitive luxury home market, designer shingles provide immediate curb appeal that attracts buyers and commands higher prices. For homes valued at $500K+, designer shingles are often expected by buyers and can make your home stand out in the market.',
   },
 ];
@@ -193,7 +192,6 @@ export default function DesignerShinglesCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/designer-shingles-charlotte-nc`}
         pageName="Designer Shingles Charlotte NC"
@@ -339,7 +337,7 @@ export default function DesignerShinglesCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Designer shingles are the roofing choice for Charlotte&apos;s most prestigious communities,
-              meeting strict HOA requirements while enhancing property values.
+  meeting strict HOA requirements while enhancing property values.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">

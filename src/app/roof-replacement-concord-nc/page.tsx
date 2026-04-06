@@ -21,7 +21,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Concord NC | Cabarrus County Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated roof replacement specialists serving Concord and Cabarrus County. Premium roofing materials with extended warranties. Free estimates.',
-    url: `${SITE_CONFIG.url}/roof-replacement-concord-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-concord-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Roof replacement Concord NC - Best Roofing Now new roof installation',
+  width: 1200,
+  height: 630,
+  alt: 'Roof replacement Concord NC - Best Roofing Now new roof installation',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Asphalt Shingle Roofing',
-    description: 'Premium shingles from CertainTeed, GAF, and Owens Corning with 25-50 year warranties.',
-    href: '/services/residential-roofing',
+  title: 'Asphalt Shingle Roofing',
+  description: 'Premium shingles from CertainTeed, GAF, and Owens Corning with 25-50 year warranties.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Metal Roofing',
-    description: 'Durable metal roofs with 50+ year lifespan and superior energy efficiency.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing',
+  description: 'Durable metal roofs with 50+ year lifespan and superior energy efficiency.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Search,
-    title: 'Free Roof Inspection',
-    description: 'Comprehensive assessment to determine if replacement is needed or if repairs will suffice.',
-    href: '/services/roof-inspection',
+  title: 'Free Roof Inspection',
+  description: 'Comprehensive assessment to determine if replacement is needed or if repairs will suffice.',
+  href: '/services/roof-inspection',
   },
   {
     icon: RefreshCw,
-    title: 'Complete Tear-Off',
-    description: 'Full removal of old roofing materials with decking inspection and repair as needed.',
-    href: '/services/roof-replacement',
+  title: 'Complete Tear-Off',
+  description: 'Full removal of old roofing materials with decking inspection and repair as needed.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Shield,
-    title: 'Extended Warranties',
-    description: 'Access to manufacturer-backed warranties up to 50 years as certified installers.',
-    href: '/services/roof-replacement',
+  title: 'Extended Warranties',
+  description: 'Access to manufacturer-backed warranties up to 50 years as certified installers.',
+  href: '/services/roof-replacement',
   },
   {
     icon: DollarSign,
-    title: 'Financing Available',
-    description: 'Flexible financing options to make your new roof affordable with low monthly payments.',
-    href: '/financing',
+  title: 'Financing Available',
+  description: 'Flexible financing options to make your new roof affordable with low monthly payments.',
+  href: '/financing',
   },
 ];
 
@@ -110,33 +110,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Cabarrus County homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Cabarrus County homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Fast Installation',
-    description: 'Most roof replacements completed in 1-3 days with thorough cleanup.',
+  title: 'Fast Installation',
+  description: 'Most roof replacements completed in 1-3 days with thorough cleanup.',
   },
 ];
 
@@ -172,23 +172,23 @@ const nearbyCities = [
 const roofingMaterials = [
   {
     name: 'CertainTeed Landmark',
-    description: 'Premium architectural shingles with SureStart warranty protection.',
-    warranty: 'Lifetime Limited',
+  description: 'Premium architectural shingles with SureStart warranty protection.',
+  warranty: 'Lifetime Limited',
   },
   {
     name: 'GAF Timberline HDZ',
-    description: 'America\'s #1 selling shingle with LayerLock technology.',
-    warranty: 'Lifetime Limited',
+  description: 'America\'s #1 selling shingle with LayerLock technology.',
+  warranty: 'Lifetime Limited',
   },
   {
     name: 'Owens Corning Duration',
-    description: 'SureNail technology for superior wind resistance up to 130 mph.',
-    warranty: 'Lifetime Limited',
+  description: 'SureNail technology for superior wind resistance up to 130 mph.',
+  warranty: 'Lifetime Limited',
   },
   {
     name: 'Standing Seam Metal',
-    description: 'Premium metal roofing with hidden fasteners and 50+ year lifespan.',
-    warranty: '50 Years',
+  description: 'Premium metal roofing with hidden fasteners and 50+ year lifespan.',
+  warranty: '50 Years',
   },
 ];
 
@@ -196,42 +196,42 @@ const roofingMaterials = [
 const faqs = [
   {
     question: 'How much does a roof replacement cost in Concord NC?',
-    answer:
+  answer:
       'Roof replacement costs in Concord typically range from $8,000-$25,000 for most homes, depending on roof size, pitch, material choice, and complexity. Metal roofing may cost more upfront but offers superior longevity. We provide free, detailed estimates with transparent pricing and no hidden fees. Financing options are available to make your new roof affordable.',
   },
   {
     question: 'How long does a roof replacement take in Concord?',
-    answer:
+  answer:
       'Most residential roof replacements in Concord are completed in 1-3 days. The timeline depends on your roof size, pitch, weather conditions, and whether any decking repairs are needed. We work efficiently while maintaining strict quality standards and always clean up thoroughly when the job is done.',
   },
   {
     question: 'What roofing materials do you recommend for Cabarrus County homes?',
-    answer:
+  answer:
       'We recommend premium architectural shingles from CertainTeed, GAF, or Owens Corning for most Concord homes. These offer excellent durability, curb appeal, and value. For homeowners seeking maximum longevity, metal roofing is an excellent choice with 50+ year lifespan. We\'ll help you choose the best material for your home, budget, and aesthetic preferences.',
   },
   {
     question: 'How do I know if I need a roof replacement vs. repair?',
-    answer:
+  answer:
       'Signs you may need a roof replacement include: your roof is 20+ years old, you see widespread granule loss, there are multiple leaks or extensive damage, shingles are curling or buckling throughout, or you\'ve already had several repairs. We offer free inspections and provide honest recommendations - we won\'t push for replacement if repairs are sufficient.',
   },
   {
     question: 'Do you offer warranties on roof replacements in Concord?',
-    answer:
+  answer:
       'Yes! As CertainTeed, GAF, and Owens Corning certified installers, we offer enhanced warranty options including GAF Golden Pledge (50-year material + 25-year workmanship), CertainTeed SureStart PLUS (4-star warranty), and Owens Corning Platinum Preferred protection. All work is also backed by our own workmanship guarantee.',
   },
   {
     question: 'Will my insurance cover roof replacement in Concord NC?',
-    answer:
+  answer:
       'If your roof was damaged by a covered event like hail, wind, or fallen trees, your homeowners insurance may cover replacement costs minus your deductible. Best Roofing Now has extensive experience working with insurance companies in Cabarrus County. We provide thorough documentation and meet with adjusters to ensure fair claim settlements.',
   },
   {
     question: 'What is included in a roof replacement from Best Roofing Now?',
-    answer:
+  answer:
       'Our complete roof replacements include: full tear-off of existing roofing, inspection and repair of decking as needed, installation of ice and water shield in valleys and at eaves, new synthetic underlayment, drip edge and flashing, premium shingles or metal roofing, ridge vent installation for proper ventilation, and thorough magnetic cleanup of nails and debris.',
   },
   {
     question: 'Do you offer financing for roof replacement in Concord?',
-    answer:
+  answer:
       'Yes! We offer flexible financing options to make your new roof affordable. With approved credit, you can get a new roof with low monthly payments. Some plans offer 0% interest for qualified buyers. Contact us for details on current financing promotions and to see what you qualify for.',
   },
 ];
@@ -246,7 +246,12 @@ export default function RoofReplacementConcordNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-replacement-concord-nc`}
+        pageName="Roof Replacement Concord NC"
+        city="Concord"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

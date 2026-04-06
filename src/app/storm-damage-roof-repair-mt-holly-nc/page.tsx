@@ -46,16 +46,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Mt Holly NC | 24/7 Emergency | Best Roofing Now',
-    description:
+  description:
       'Fast storm damage roof repair in Mt Holly NC. Hail, wind, and emergency repairs with insurance claim assistance. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Storm damage roof repair in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Storm damage roof repair in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -65,33 +65,33 @@ export const metadata: Metadata = {
 const damageTypes = [
   {
     icon: CloudRain,
-    title: 'Hail Damage',
-    description: 'Repair and replacement for hail-damaged shingles, dents, and granule loss.',
+  title: 'Hail Damage',
+  description: 'Repair and replacement for hail-damaged shingles, dents, and granule loss.',
   },
   {
     icon: Wind,
-    title: 'Wind Damage',
-    description: 'Fix lifted, torn, or missing shingles caused by high winds and storms.',
+  title: 'Wind Damage',
+  description: 'Fix lifted, torn, or missing shingles caused by high winds and storms.',
   },
   {
     icon: AlertTriangle,
-    title: 'Fallen Debris',
-    description: 'Repair damage from fallen trees, branches, and storm debris.',
+  title: 'Fallen Debris',
+  description: 'Repair damage from fallen trees, branches, and storm debris.',
   },
   {
     icon: Clock,
-    title: 'Emergency Tarping',
-    description: 'Immediate temporary protection to prevent further water damage.',
+  title: 'Emergency Tarping',
+  description: 'Immediate temporary protection to prevent further water damage.',
   },
   {
     icon: FileText,
-    title: 'Insurance Claims',
-    description: 'Complete assistance with documentation and insurance claim process.',
+  title: 'Insurance Claims',
+  description: 'Complete assistance with documentation and insurance claim process.',
   },
   {
     icon: Shield,
-    title: 'Full Restoration',
-    description: 'Complete roof restoration to pre-storm condition with quality materials.',
+  title: 'Full Restoration',
+  description: 'Complete roof restoration to pre-storm condition with quality materials.',
   },
 ];
 
@@ -107,32 +107,32 @@ const insuranceProcess = [
 const faqs = [
   {
     question: 'What should I do after storm damage to my Mt Holly roof?',
-    answer:
+  answer:
       'First, ensure everyone is safe. Then document any visible damage with photos if possible. Call us immediately for a free inspection - we offer 24/7 emergency response. Avoid going on your roof yourself as it may be unsafe.',
   },
   {
     question: 'Do you help with insurance claims for storm damage?',
-    answer:
+  answer:
       'Yes! We have extensive experience with storm damage insurance claims in Mt Holly and Gaston County. We document all damage, provide detailed estimates, meet with your adjuster, and advocate for fair settlement.',
   },
   {
     question: 'How quickly can you respond to storm damage in Mt Holly?',
-    answer:
+  answer:
       'We offer 24/7 emergency response for storm damage. For urgent situations with active leaks or exposed areas, we can typically respond within hours to provide temporary protection and prevent further damage.',
   },
   {
     question: 'Will my insurance cover storm damage repairs?',
-    answer:
+  answer:
       'Most homeowner\'s insurance policies cover storm damage including hail and wind damage. We work with all major insurance companies and will help you understand your coverage and maximize your claim.',
   },
   {
     question: 'How can I tell if my roof has storm damage?',
-    answer:
+  answer:
       'Signs include missing or lifted shingles, granules in gutters, dents on metal components, damaged flashing, and water stains inside. After any significant storm, we recommend a professional inspection even if damage isn\'t obvious.',
   },
   {
     question: 'Should I get multiple estimates for storm damage repair?',
-    answer:
+  answer:
       'While you can get multiple estimates, insurance typically pays based on the scope of damage, not the lowest bid. Choose a reputable contractor based on quality and service, not just price. We provide thorough documentation for fair claim settlement.',
   },
 ];

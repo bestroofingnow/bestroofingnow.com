@@ -23,7 +23,7 @@ import {
   Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -53,16 +53,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Mooresville NC | Lake Norman | Free Estimates',
-    description:
+  description:
       'Fast, reliable roof repair in Mooresville NC near northern Lake Norman. BBB A+ rated, veteran-owned roofing company. Emergency repairs, leak fixes, and storm damage restoration. Free estimates!',
-    url: `${SITE_CONFIG.url}/roof-repair-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.repairs,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof repair services in Mooresville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof repair services in Mooresville NC - Best Roofing Now',
       },
     ],
   },
@@ -72,39 +72,39 @@ export const metadata: Metadata = {
 const repairServices = [
   {
     icon: Droplets,
-    title: 'Leak Repair',
-    description: 'Rapid detection and repair of roof leaks to protect your Mooresville home from costly water damage.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Rapid detection and repair of roof leaks to protect your Mooresville home from costly water damage.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wind,
-    title: 'Storm Damage Repair',
-    description: 'Fast restoration after severe weather along the I-77 corridor and northern Lake Norman area.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Fast restoration after severe weather along the I-77 corridor and northern Lake Norman area.',
+  href: '/services/storm-damage',
   },
   {
     icon: Hammer,
-    title: 'Shingle Repair',
-    description: 'Expert replacement of cracked, missing, or wind-lifted shingles on Mooresville homes of all ages.',
-    href: '/services/roof-repair',
+  title: 'Shingle Repair',
+  description: 'Expert replacement of cracked, missing, or wind-lifted shingles on Mooresville homes of all ages.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Flashing Repair',
-    description: 'Precision flashing repair around chimneys, dormers, and skylights common in Race City neighborhoods.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Precision flashing repair around chimneys, dormers, and skylights common in Race City neighborhoods.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wrench,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency roof repair for Mooresville homeowners when urgent situations arise.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency roof repair for Mooresville homeowners when urgent situations arise.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Search,
-    title: 'Damage Assessment',
-    description: 'Thorough roof inspections to identify hidden damage before providing a complete repair plan.',
-    href: '/services/roof-inspection',
+  title: 'Damage Assessment',
+  description: 'Thorough roof inspections to identify hidden damage before providing a complete repair plan.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -112,33 +112,33 @@ const repairServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Better Business Bureau accredited with an A+ rating and zero unresolved complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Better Business Bureau accredited with an A+ rating and zero unresolved complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from homeowners across the Lake Norman region.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from homeowners across the Lake Norman region.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'A veteran-owned company built on military discipline, honesty, and top-tier workmanship.',
+  title: 'Veteran-Owned',
+  description: 'A veteran-owned company built on military discipline, honesty, and top-tier workmanship.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed North Carolina roofing contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed North Carolina roofing contractor with comprehensive liability coverage.',
   },
   {
     icon: Clock,
-    title: 'Rapid Response',
-    description: 'Same-day service available for Mooresville homeowners with urgent roof repair needs.',
+  title: 'Rapid Response',
+  description: 'Same-day service available for Mooresville homeowners with urgent roof repair needs.',
   },
   {
     icon: Users,
-    title: 'Iredell County Experts',
-    description: 'We understand the unique roofing challenges that Mooresville homes face near Lake Norman.',
+  title: 'Iredell County Experts',
+  description: 'We understand the unique roofing challenges that Mooresville homes face near Lake Norman.',
   },
 ];
 
@@ -176,42 +176,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does roof repair cost in Mooresville NC?',
-    answer:
+  answer:
       'Roof repair costs in Mooresville generally range from $250 to $1,800 depending on the scope of damage. Minor shingle replacements in neighborhoods like Morrison Plantation or Langtree may cost $250-$600, while complex leak repairs or flashing work on older homes near downtown Mooresville can run $600-$1,800. We provide detailed free estimates with no hidden charges.',
   },
   {
     question: 'Do you offer emergency roof repair in Mooresville?',
-    answer:
+  answer:
       'Yes. Best Roofing Now provides 24/7 emergency roof repair across Mooresville and the northern Lake Norman area. Whether a severe storm rolls through the I-77 corridor or a tree limb falls on your roof in Riverwood, our emergency crew can respond quickly to secure your property. Reach us anytime at (704) 605-6047.',
   },
   {
     question: 'How fast can you respond to a roof repair in Mooresville?',
-    answer:
+  answer:
       'For emergency situations, our team typically arrives within 1-4 hours anywhere in Mooresville. Standard repairs are generally scheduled within 1-3 business days of your initial call. We keep a dedicated crew available for the northern Lake Norman corridor so Mooresville homeowners never have to wait long.',
   },
   {
     question: 'What are the most common roof problems in Mooresville NC?',
-    answer:
+  answer:
       'Mooresville roofs face a unique mix of challenges. Lake Norman humidity accelerates shingle granule loss and encourages moss and algae growth. Severe thunderstorms along the I-77 corridor cause wind and hail damage. Older homes near downtown may have aging flashing, while newer developments like Curtis Pond and Alcove sometimes experience settling-related issues. Regular inspections catch these problems early.',
   },
   {
     question: 'Should I repair or replace my Mooresville roof?',
-    answer:
+  answer:
       'It depends on the roof\'s age and the extent of damage. If your Mooresville home has a roof under 15 years old with isolated damage, targeted repairs are usually the most cost-effective solution. Roofs over 20 years old with widespread deterioration may benefit from full replacement. We always give an honest recommendation and will never push replacement when repair is the right call.',
   },
   {
     question: 'Do you help with insurance claims for roof damage in Mooresville?',
-    answer:
+  answer:
       'Absolutely. We regularly assist Mooresville homeowners with storm damage insurance claims. Our team documents every detail with photos and measurements, meets with your adjuster on-site, and advocates for a fair settlement. Many roofs in neighborhoods like The Point and Muirfield have qualified for full insurance coverage after hail and wind events.',
   },
   {
     question: 'Can you repair roofs on older Mooresville homes?',
-    answer:
+  answer:
       'Yes. Mooresville has a rich mix of historic and newer construction. We have experience repairing roofs on older homes in the downtown historic district as well as modern architectural shingle roofs in communities like Morrison Plantation. Our technicians are trained in all roofing materials including asphalt, metal, tile, and slate.',
   },
   {
     question: 'What warranties come with your Mooresville roof repairs?',
-    answer:
+  answer:
       'Every repair we perform in Mooresville is backed by our workmanship warranty. When we use manufacturer-supplied materials, you also receive the applicable material warranty. As a CertainTeed ShingleMaster and GAF Factory-Certified Contractor, we can offer enhanced warranty options on qualifying repairs.',
   },
 ];
@@ -226,7 +226,6 @@ export default function RoofRepairMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-mooresville-nc`}
         pageName="Roof Repair Mooresville NC"
@@ -236,13 +235,13 @@ export default function RoofRepairMooresvilleNCPage() {
         faqs={[
           {
             question: 'How much does roof repair cost in Mooresville NC?',
-            answer: 'Roof repair in Mooresville NC costs $250-$1,800 depending on damage type. Best Roofing Now is BBB A+ rated and serves all Mooresville neighborhoods with free estimates and workmanship warranties.',
-            speakableAnswer: 'Roof repair in Mooresville costs $250 to $1,800. Best Roofing Now offers free estimates. Call 704-605-6047.',
+  answer: 'Roof repair in Mooresville NC costs $250-$1,800 depending on damage type. Best Roofing Now is BBB A+ rated and serves all Mooresville neighborhoods with free estimates and workmanship warranties.',
+  speakableAnswer: 'Roof repair in Mooresville costs $250 to $1,800. Best Roofing Now offers free estimates. Call 704-605-6047.',
           },
           {
             question: 'Who is the best roofer in Mooresville NC?',
-            answer: 'Best Roofing Now is a top-rated roof repair company serving Mooresville NC with a 5-star Google rating and BBB A+ accreditation. They are veteran-owned and serve all Mooresville neighborhoods including Langtree, Morrison Plantation, and The Point.',
-            speakableAnswer: 'Best Roofing Now is a 5-star, BBB A+ rated roofer serving Mooresville NC. Call 704-605-6047.',
+  answer: 'Best Roofing Now is a top-rated roof repair company serving Mooresville NC with a 5-star Google rating and BBB A+ accreditation. They are veteran-owned and serve all Mooresville neighborhoods including Langtree, Morrison Plantation, and The Point.',
+  speakableAnswer: 'Best Roofing Now is a 5-star, BBB A+ rated roofer serving Mooresville NC. Call 704-605-6047.',
           },
         ]}
       />
@@ -370,7 +369,7 @@ export default function RoofRepairMooresvilleNCPage() {
               <p className="text-gray text-lg mb-8">
                 Mooresville&apos;s mix of older downtown homes and newer Lake Norman developments demands a roofing
                 company that can handle it all. Best Roofing Now brings honest assessments, skilled craftsmanship,
-                and rapid response to every project in Iredell County.
+  and rapid response to every project in Iredell County.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (

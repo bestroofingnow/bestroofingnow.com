@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Pineville NC | Carolina Place Area Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Pineville NC and the Carolina Place area from our Charlotte headquarters. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-pineville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-pineville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Pineville NC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Pineville NC - Best Roofing Now team',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Pineville homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Pineville homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Pineville businesses near Carolina Place Mall.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Pineville businesses near Carolina Place Mall.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Pineville.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Pineville.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Pineville property owners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Pineville property owners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance in Pineville.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance in Pineville.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Convenient I-485 Access',
-    description: 'Easy access via I-485 means fast response times for Pineville roofing needs.',
+  title: 'Convenient I-485 Access',
+  description: 'Easy access via I-485 means fast response times for Pineville roofing needs.',
   },
 ];
 
@@ -169,42 +169,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Pineville NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Pineville NC from our Charlotte headquarters, just 12 miles away. We provide complete roofing services throughout Pineville, including the Carolina Place area, I-485 corridor, and all surrounding neighborhoods.',
   },
   {
     question: 'How quickly can you respond to roofing emergencies in Pineville?',
-    answer:
+  answer:
       'Thanks to easy I-485 access, we can typically respond to Pineville roofing emergencies within 30-45 minutes. For urgent situations like active leaks or storm damage, we offer 24/7 emergency services to protect your home or business.',
   },
   {
     question: 'Do you provide commercial roofing services near Carolina Place Mall?',
-    answer:
+  answer:
       'Absolutely. We serve commercial properties throughout Pineville including the Carolina Place Mall area, shopping centers, office buildings, and retail spaces. Our commercial roofing services include TPO, EPDM, flat roofs, and metal roofing systems.',
   },
   {
     question: 'What roofing services do you offer in Pineville NC?',
-    answer:
+  answer:
       'We offer complete roofing services in Pineville including residential roof repair, roof replacement, new construction roofing, commercial roofing, storm damage repair, emergency roofing services, free roof inspections, gutter services, and siding installation.',
   },
   {
     question: 'How much does a new roof cost in Pineville NC?',
-    answer:
+  answer:
       'The cost of a new roof in Pineville typically ranges from $8,000 to $25,000 for most residential homes, depending on size, pitch, and material choice. Commercial properties vary based on size and roof system type. We provide free, detailed estimates with no hidden fees.',
   },
   {
     question: 'Do you offer free roof inspections in Pineville?',
-    answer:
+  answer:
       'Yes, we offer completely free roof inspections for both residential and commercial properties throughout Pineville. Our certified inspectors will thoroughly examine your roof and provide a detailed written report with photos. There is no obligation afterward.',
   },
   {
     question: 'What type of roofing is best for Pineville homes?',
-    answer:
+  answer:
       'Most Pineville homes do well with architectural asphalt shingles like CertainTeed Landmark or GAF Timberline, offering durability and aesthetic appeal. For energy efficiency in our hot summers, metal roofing and reflective shingles are increasingly popular options.',
   },
   {
     question: 'Do you work with South Carolina clients near Pineville?',
-    answer:
+  answer:
       'Yes! Pineville\'s location near the NC/SC border means we frequently serve clients in Fort Mill, Indian Land, and other nearby South Carolina communities. We\'re fully licensed for roofing work in both North Carolina and South Carolina.',
   },
 ];
@@ -226,6 +226,12 @@ export default function RoofingPinevilleNCPage() {
         distance={12}
         slug="pineville-nc"
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-pineville-nc`}
+        pageName="Roofing Pineville NC"
+        city="Pineville"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -312,19 +318,19 @@ export default function RoofingPinevilleNCPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 Pineville is a vibrant Charlotte suburb known for its excellent shopping at Carolina Place Mall,
-                convenient access to I-485, and mix of residential and commercial properties. Located just 12 miles
+  convenient access to I-485, and mix of residential and commercial properties. Located just 12 miles
                 from our Charlotte headquarters, we're perfectly positioned to serve Pineville with fast, reliable
                 roofing services.
               </p>
               <p>
                 The community features a diverse mix of housing from established neighborhoods to newer developments,
-                along with a thriving commercial sector. Whether you own a home near McMullen Creek or a business
+  along with a thriving commercial sector. Whether you own a home near McMullen Creek or a business
                 property along Carolina Place Parkway, our team has the expertise to handle any roofing project.
               </p>
               <p>
                 Pineville's location near the South Carolina border means many residents and businesses benefit from
                 our cross-state service capability. We're fully licensed in both North Carolina and South Carolina,
-                making us a convenient choice for property owners throughout the greater Pineville area.
+  making us a convenient choice for property owners throughout the greater Pineville area.
               </p>
             </div>
           </div>

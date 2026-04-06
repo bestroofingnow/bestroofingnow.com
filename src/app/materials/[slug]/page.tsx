@@ -39,36 +39,36 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
     return { title: 'Material Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${material.name} Charlotte NC | Cost & Info`,
-    description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
-    keywords: [...material.keywords, `${material.shortName.toLowerCase()} roof Charlotte`, `${material.shortName.toLowerCase()} roofing contractor`],
-    alternates: {
+  description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
+  keywords: [...material.keywords, `${material.shortName.toLowerCase()} roof Charlotte`, `${material.shortName.toLowerCase()} roofing contractor`],
+  alternates: {
       canonical: materialCanonicals[slug]
         ? `${SITE_CONFIG.url}${materialCanonicals[slug]}`
         : `${SITE_CONFIG.url}/materials/${slug}`,
     },
-    openGraph: {
+  openGraph: {
       title: `${material.name} | Best Roofing Now Charlotte`,
-      description: material.description,
-      url: `${SITE_CONFIG.url}/materials/${slug}`,
-      type: 'article',
-      images: [
+  description: material.description,
+  url: `${SITE_CONFIG.url}/materials/${slug}`,
+  type: 'article',
+  images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: `${material.name} roofing in Charlotte NC - Best Roofing Now`,
+  width: 1200,
+  height: 630,
+  alt: `${material.name} roofing in Charlotte NC - Best Roofing Now`,
         },
       ],
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title: `${material.name} | Best Roofing Now Charlotte`,
-      description: material.description,
-      images: [ogImage],
+  title: `${material.name} | Best Roofing Now Charlotte`,
+  description: material.description,
+  images: [ogImage],
     },
   };
 }
@@ -78,35 +78,35 @@ function getMaterialFAQs(material: typeof ROOFING_MATERIALS[0]) {
   const baseFaqs = [
     {
       question: `How much does ${material.name.toLowerCase()} cost in Charlotte?`,
-      answer: `${material.name} typically costs ${material.costRange} in the Charlotte area. For an average 2,000 sq ft roof, expect to pay ${material.avgCost2000sqft || 'varies based on specifics'}. The exact price depends on your roof size, complexity, pitch, and any additional work needed. Contact us for a free, detailed estimate.`,
+  answer: `${material.name} typically costs ${material.costRange} in the Charlotte area. For an average 2,000 sq ft roof, expect to pay ${material.avgCost2000sqft || 'varies based on specifics'}. The exact price depends on your roof size, complexity, pitch, and any additional work needed. Contact us for a free, detailed estimate.`,
     },
     {
       question: `How long does ${material.name.toLowerCase()} last?`,
-      answer: `${material.name} has an expected lifespan of ${material.lifespan} when properly installed and maintained. Charlotte's humid subtropical climate with hot summers and occasional severe storms can affect longevity, which is why professional installation by certified contractors is crucial.`,
+  answer: `${material.name} has an expected lifespan of ${material.lifespan} when properly installed and maintained. Charlotte's humid subtropical climate with hot summers and occasional severe storms can affect longevity, which is why professional installation by certified contractors is crucial.`,
     },
     {
       question: `Is ${material.name.toLowerCase()} a good choice for Charlotte homes?`,
-      answer: `${material.charlotteConsiderations || `${material.name} is ${material.bestFor.toLowerCase()}. Charlotte's climate with hot summers, heavy rainfall, and occasional severe storms makes quality roofing essential. We can help determine if this material is right for your specific situation.`}`,
+  answer: `${material.charlotteConsiderations || `${material.name} is ${material.bestFor.toLowerCase()}. Charlotte's climate with hot summers, heavy rainfall, and occasional severe storms makes quality roofing essential. We can help determine if this material is right for your specific situation.`}`,
     },
     {
       question: `What are the pros and cons of ${material.name.toLowerCase()}?`,
-      answer: `Pros include: ${material.benefits.slice(0, 3).join(', ')}. ${material.cons ? `Considerations include: ${material.cons.slice(0, 2).join(', ')}.` : ''} Our experts can help you weigh these factors for your specific situation.`,
+  answer: `Pros include: ${material.benefits.slice(0, 3).join(', ')}. ${material.cons ? `Considerations include: ${material.cons.slice(0, 2).join(', ')}.` : ''} Our experts can help you weigh these factors for your specific situation.`,
     },
     {
       question: `How long does ${material.name.toLowerCase()} installation take?`,
-      answer: `${material.name} installation typically takes ${material.installationTime || '2-5 days for an average home'}. The exact timeline depends on roof size, complexity, weather conditions, and any necessary repairs to the underlying structure.`,
+  answer: `${material.name} installation typically takes ${material.installationTime || '2-5 days for an average home'}. The exact timeline depends on roof size, complexity, weather conditions, and any necessary repairs to the underlying structure.`,
     },
     {
       question: `What maintenance does ${material.name.toLowerCase()} require?`,
-      answer: `${material.maintenanceNeeds || `Regular maintenance includes annual inspections, debris removal, and addressing any issues promptly. Proper maintenance can significantly extend your roof's lifespan.`}`,
+  answer: `${material.maintenanceNeeds || `Regular maintenance includes annual inspections, debris removal, and addressing any issues promptly. Proper maintenance can significantly extend your roof's lifespan.`}`,
     },
     {
       question: `Do you offer financing for ${material.name.toLowerCase()} installation?`,
-      answer: `Yes! We offer flexible financing options for all roofing materials, including ${material.name.toLowerCase()}. Get the roof you want with affordable monthly payments. Ask about our 0% interest options for qualified buyers.`,
+  answer: `Yes! We offer flexible financing options for all roofing materials, including ${material.name.toLowerCase()}. Get the roof you want with affordable monthly payments. Ask about our 0% interest options for qualified buyers.`,
     },
     {
       question: `What warranty comes with ${material.name.toLowerCase()}?`,
-      answer: `${material.warrantyInfo || `Warranty coverage varies by manufacturer and product line. Most ${material.name.toLowerCase()} products come with manufacturer warranties, plus our workmanship warranty. We'll explain all warranty options during your consultation.`}`,
+  answer: `${material.warrantyInfo || `Warranty coverage varies by manufacturer and product line. Most ${material.name.toLowerCase()} products come with manufacturer warranties, plus our workmanship warranty. We'll explain all warranty options during your consultation.`}`,
     },
   ];
 
@@ -456,7 +456,7 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
               <h3 className="text-xl font-bold text-primary mb-3">Certified Experts</h3>
               <p className="text-gray">
                 Our installers are certified by top manufacturers and have years of experience with {material.name.toLowerCase()},
-                ensuring your roof is installed correctly the first time.
+  ensuring your roof is installed correctly the first time.
               </p>
             </div>
             <div className="bg-light rounded-xl p-6">
@@ -466,7 +466,7 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
               <h3 className="text-xl font-bold text-primary mb-3">Premium Materials</h3>
               <p className="text-gray">
                 We source only the highest quality {material.name.toLowerCase()} from trusted manufacturers,
-                backed by industry-leading warranties.
+  backed by industry-leading warranties.
               </p>
             </div>
             <div className="bg-light rounded-xl p-6">

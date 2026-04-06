@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Matthews NC | South Charlotte Roofing Company | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Matthews NC from our Charlotte headquarters. Free estimates for all roofing services in the South Charlotte area.',
-    url: `${SITE_CONFIG.url}/roofing-matthews-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-matthews-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Matthews NC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Matthews NC - Best Roofing Now team',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Matthews homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Matthews homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Matthews businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Matthews businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Matthews.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Matthews.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Matthews homeowners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Matthews homeowners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance in Matthews.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance in Matthews.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Fast Response Time',
-    description: 'Serving Matthews from nearby Charlotte means quick response for your roofing needs.',
+  title: 'Fast Response Time',
+  description: 'Serving Matthews from nearby Charlotte means quick response for your roofing needs.',
   },
 ];
 
@@ -169,42 +169,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Matthews NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Matthews NC from our Charlotte headquarters, just 10 miles away. We provide complete roofing services including roof repair, replacement, installation, and inspections throughout Matthews and the surrounding South Charlotte communities.',
   },
   {
     question: 'How quickly can you respond to roofing emergencies in Matthews?',
-    answer:
+  answer:
       'Our proximity to Matthews allows us to respond quickly to roofing emergencies. Typically, we can be on-site in Matthews within 30-45 minutes for urgent situations like active leaks or storm damage. We offer 24/7 emergency services.',
   },
   {
     question: 'What roofing services do you offer in Matthews NC?',
-    answer:
+  answer:
       'We offer complete roofing services in Matthews including residential roof repair, roof replacement, new construction roofing, commercial roofing, storm damage repair, emergency roofing services, free roof inspections, gutter services, and siding installation.',
   },
   {
     question: 'How much does a new roof cost in Matthews NC?',
-    answer:
+  answer:
       'The cost of a new roof in Matthews typically ranges from $8,000 to $25,000 for most homes, depending on size, pitch, and material choice. Matthews homes often have larger lots and multi-level designs that can affect pricing. We provide free, detailed estimates with no hidden fees.',
   },
   {
     question: 'Do you offer free roof inspections in Matthews?',
-    answer:
+  answer:
       'Yes, we offer completely free roof inspections throughout Matthews and the South Charlotte area. Our certified inspectors will thoroughly examine your roof and provide a detailed written report with photos. There is no obligation to hire us afterward.',
   },
   {
     question: 'Are you licensed and insured to work in Matthews NC?',
-    answer:
+  answer:
       'Yes, Best Roofing Now is fully licensed to perform roofing work in North Carolina and carries comprehensive general liability insurance and workers compensation coverage. We are happy to provide proof of insurance upon request.',
   },
   {
     question: 'What type of roofing is best for Matthews homes?',
-    answer:
+  answer:
       'Most Matthews homes do well with architectural asphalt shingles like CertainTeed Landmark or GAF Timberline, which offer excellent durability and curb appeal for the family-oriented neighborhoods. Metal roofing is also popular for its longevity and energy efficiency in our hot summers.',
   },
   {
     question: 'Do you help with insurance claims for storm damage in Matthews?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience helping Matthews homeowners with insurance claims for storm damage. We provide detailed documentation, meet with adjusters, and advocate for fair settlements. Many Matthews roofs qualify for insurance coverage after hail and wind events.',
   },
 ];
@@ -226,6 +226,12 @@ export default function RoofingMatthewsNCPage() {
         distance={10}
         slug="matthews-nc"
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-matthews-nc`}
+        pageName="Roofing Matthews NC"
+        city="Matthews"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -312,7 +318,7 @@ export default function RoofingMatthewsNCPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 Matthews is one of South Charlotte's most desirable communities, known for its excellent schools,
-                family-friendly neighborhoods, and charming downtown area. Located just 10 miles from our Charlotte
+  family-friendly neighborhoods, and charming downtown area. Located just 10 miles from our Charlotte
                 headquarters, we're perfectly positioned to serve Matthews homeowners with fast, reliable roofing
                 services.
               </p>

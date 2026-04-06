@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Solar Roofing Charlotte NC | Solar Panel Integration',
-    description:
+  description:
       'Solar roofing solutions in Charlotte NC. Expert solar panel roof integration and solar-ready installations.',
-    url: `${SITE_CONFIG.url}/solar-services`,
+  url: `${SITE_CONFIG.url}/solar-services`,
   },
 };
 
@@ -59,27 +59,27 @@ export const metadata: Metadata = {
 const solarServices = [
   {
     title: 'Solar-Ready Roof Installation',
-    description: 'New roof installations designed and reinforced for future solar panel mounting. Proper flashing and penetration planning included.',
-    icon: Home,
-    highlights: ['Reinforced structure', 'Pre-planned penetrations', 'Optimal orientation'],
+  description: 'New roof installations designed and reinforced for future solar panel mounting. Proper flashing and penetration planning included.',
+  icon: Home,
+  highlights: ['Reinforced structure', 'Pre-planned penetrations', 'Optimal orientation'],
   },
   {
     title: 'Solar Panel Roof Integration',
-    description: 'Expert coordination with solar installers to ensure proper mounting, flashing, and waterproofing around panel attachments.',
-    icon: Sun,
-    highlights: ['Waterproof mounting', 'Proper flashing', 'Warranty protection'],
+  description: 'Expert coordination with solar installers to ensure proper mounting, flashing, and waterproofing around panel attachments.',
+  icon: Sun,
+  highlights: ['Waterproof mounting', 'Proper flashing', 'Warranty protection'],
   },
   {
     title: 'Roof Repair for Solar Systems',
-    description: 'Specialized repairs for roofs with existing solar panels. We work around panels or coordinate removal/reinstallation.',
-    icon: Zap,
-    highlights: ['Panel coordination', 'Leak repair', 'Re-roofing under panels'],
+  description: 'Specialized repairs for roofs with existing solar panels. We work around panels or coordinate removal/reinstallation.',
+  icon: Zap,
+  highlights: ['Panel coordination', 'Leak repair', 'Re-roofing under panels'],
   },
   {
     title: 'Commercial Solar Roofing',
-    description: 'Large-scale solar-ready roofing for commercial buildings. TPO and metal systems optimized for solar mounting.',
-    icon: Building2,
-    highlights: ['Flat roof systems', 'Ballasted mounting', 'Energy efficiency'],
+  description: 'Large-scale solar-ready roofing for commercial buildings. TPO and metal systems optimized for solar mounting.',
+  icon: Building2,
+  highlights: ['Flat roof systems', 'Ballasted mounting', 'Energy efficiency'],
   },
 ];
 
@@ -87,27 +87,27 @@ const solarServices = [
 const solarFAQs = [
   {
     question: 'Do you install solar panels?',
-    answer: 'Best Roofing Now specializes in the roofing component of solar installations - we prepare roofs for solar, ensure proper mounting and flashing, and repair roofs with existing solar systems. For the actual solar panel installation, we partner with certified solar installers in Charlotte. This ensures you get roofing experts for your roof and solar experts for your panels.',
+  answer: 'Best Roofing Now specializes in the roofing component of solar installations - we prepare roofs for solar, ensure proper mounting and flashing, and repair roofs with existing solar systems. For the actual solar panel installation, we partner with certified solar installers in Charlotte. This ensures you get roofing experts for your roof and solar experts for your panels.',
   },
   {
     question: 'Should I replace my roof before installing solar panels?',
-    answer: 'If your roof is more than 10-15 years old or showing signs of wear, we strongly recommend replacing it before solar installation. Solar panels last 25-30 years, and removing them for a roof replacement mid-way is expensive (typically $1,500-$3,000 for removal and reinstallation). A new roof before solar saves money long-term and ensures your warranty remains intact.',
+  answer: 'If your roof is more than 10-15 years old or showing signs of wear, we strongly recommend replacing it before solar installation. Solar panels last 25-30 years, and removing them for a roof replacement mid-way is expensive (typically $1,500-$3,000 for removal and reinstallation). A new roof before solar saves money long-term and ensures your warranty remains intact.',
   },
   {
     question: 'What roofing materials are best for solar panels?',
-    answer: 'Standing seam metal roofing is ideal for solar because panels can be attached with clamps (no roof penetrations). Asphalt shingles work well with proper flashing around mounting points. Tile and slate require special mounting systems. We assess your specific situation and recommend the best approach for your home and solar goals.',
+  answer: 'Standing seam metal roofing is ideal for solar because panels can be attached with clamps (no roof penetrations). Asphalt shingles work well with proper flashing around mounting points. Tile and slate require special mounting systems. We assess your specific situation and recommend the best approach for your home and solar goals.',
   },
   {
     question: 'Will solar panel mounting damage my roof or void my warranty?',
-    answer: 'When properly installed with correct flashing and sealants, solar panel mounts should not damage your roof or cause leaks. However, improper installation can void your roofing warranty. Best Roofing Now ensures all penetrations are properly flashed and sealed to manufacturer specifications, protecting both your roof and warranty.',
+  answer: 'When properly installed with correct flashing and sealants, solar panel mounts should not damage your roof or cause leaks. However, improper installation can void your roofing warranty. Best Roofing Now ensures all penetrations are properly flashed and sealed to manufacturer specifications, protecting both your roof and warranty.',
   },
   {
     question: 'Can you repair a roof leak around solar panels?',
-    answer: 'Yes, we specialize in repairing leaks around solar panel mounting points. Common issues include failed sealants, improper flashing, or damage from installation. We can often repair without removing panels, but for extensive work, we coordinate with solar companies for temporary panel removal.',
+  answer: 'Yes, we specialize in repairing leaks around solar panel mounting points. Common issues include failed sealants, improper flashing, or damage from installation. We can often repair without removing panels, but for extensive work, we coordinate with solar companies for temporary panel removal.',
   },
   {
     question: 'What is a solar-ready roof?',
-    answer: 'A solar-ready roof is designed with future solar installation in mind. This includes reinforced decking in optimal locations, proper roof orientation, pre-planned conduit pathways, and documentation for the solar installer. Going solar-ready during a roof replacement adds minimal cost but saves significantly when you\'re ready to add panels.',
+  answer: 'A solar-ready roof is designed with future solar installation in mind. This includes reinforced decking in optimal locations, proper roof orientation, pre-planned conduit pathways, and documentation for the solar installer. Going solar-ready during a roof replacement adds minimal cost but saves significantly when you\'re ready to add panels.',
   },
 ];
 

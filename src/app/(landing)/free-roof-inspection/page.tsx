@@ -21,7 +21,6 @@ import {
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   FreeInspectionOfferSchema,
   HowToGetRoofEstimateSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -35,44 +34,44 @@ export const metadata: Metadata = {
     'Get a free roof inspection and instant satellite estimate in Charlotte NC. Storm damage check, cost analysis, and expert assessment. Veteran-owned, BBB A+ rated.',
   robots: {
     index: false,
-    follow: true,
+  follow: true,
   },
   alternates: {
     canonical: `${SITE_CONFIG.url}/free-roof-inspection`,
   },
   openGraph: {
     title: 'Free Roof Inspection & Instant Estimate | Best Roofing Now',
-    description:
+  description:
       'Get a free roof inspection and instant satellite estimate. Storm damage check, cost analysis, and expert assessment from Charlotte\'s top-rated roofing company.',
-    url: `${SITE_CONFIG.url}/free-roof-inspection`,
-    type: 'website',
+  url: `${SITE_CONFIG.url}/free-roof-inspection`,
+  type: 'website',
   },
 };
 
 const faqs = [
   {
     question: 'Is the roof inspection really free?',
-    answer:
+  answer:
       'Yes, 100% free with no obligation. We provide a complete roof inspection, satellite analysis, and written report at no cost. There is no pressure to buy — we believe honest assessments earn trust and referrals.',
   },
   {
     question: 'How accurate is the satellite roof estimate?',
-    answer:
+  answer:
       'Our satellite analysis measures your roof within 5-10% accuracy using the same technology insurance companies use. During the in-person inspection, we verify the satellite data and provide a final, exact quote.',
   },
   {
     question: 'Do I need to be home for the inspection?',
-    answer:
+  answer:
       'Not necessarily. Our certified inspectors can assess most roofs from the exterior using drone technology and satellite data. However, we recommend being present so we can walk you through our findings and answer questions.',
   },
   {
     question: 'Will you help with my insurance claim?',
-    answer:
+  answer:
       'Absolutely. We handle insurance claims daily and will meet with your adjuster, document all damage with photos and reports, and advocate for full coverage. We have a proven track record of getting claims approved.',
   },
   {
     question: 'What areas do you serve?',
-    answer:
+  answer:
       'We serve the entire Charlotte metro area including Huntersville, Cornelius, Davidson, Denver, Mooresville, Matthews, Mint Hill, Pineville, Fort Mill, Indian Trail, Gastonia, Concord, and surrounding Lake Norman communities.',
   },
 ];
@@ -80,27 +79,27 @@ const faqs = [
 const testimonials = [
   {
     name: 'Sarah M.',
-    location: 'Charlotte, NC',
-    text: 'They helped me navigate my insurance claim after a hail storm. Got a whole new roof and the process was incredibly smooth. James personally oversaw the entire project.',
-    service: 'Insurance Claim + Roof Replacement',
+  location: 'Charlotte, NC',
+  text: 'They helped me navigate my insurance claim after a hail storm. Got a whole new roof and the process was incredibly smooth. James personally oversaw the entire project.',
+  service: 'Insurance Claim + Roof Replacement',
   },
   {
     name: 'Mike T.',
-    location: 'Huntersville, NC',
-    text: 'Honest and professional from start to finish. They actually told me my roof had more life left and didn\'t need replacement yet. That kind of honesty is rare. When I do need a new roof, I know who to call.',
-    service: 'Roof Inspection',
+  location: 'Huntersville, NC',
+  text: 'Honest and professional from start to finish. They actually told me my roof had more life left and didn\'t need replacement yet. That kind of honesty is rare. When I do need a new roof, I know who to call.',
+  service: 'Roof Inspection',
   },
   {
     name: 'Jennifer L.',
-    location: 'Concord, NC',
-    text: 'After a bad storm, I had three roofers come out. Best Roofing Now was the only one who didn\'t try to upsell me on things I didn\'t need. Their estimate was fair and the work was top quality.',
-    service: 'Storm Damage Repair',
+  location: 'Concord, NC',
+  text: 'After a bad storm, I had three roofers come out. Best Roofing Now was the only one who didn\'t try to upsell me on things I didn\'t need. Their estimate was fair and the work was top quality.',
+  service: 'Storm Damage Repair',
   },
   {
     name: 'David R.',
-    location: 'Davidson, NC',
-    text: 'Asked them to inspect a roof on a house I was buying. They found issues the home inspector missed and saved me from a costly mistake. Truly looking out for the customer.',
-    service: 'Pre-Purchase Inspection',
+  location: 'Davidson, NC',
+  text: 'Asked them to inspect a roof on a house I was buying. They found issues the home inspector missed and saved me from a costly mistake. Truly looking out for the customer.',
+  service: 'Pre-Purchase Inspection',
   },
 ];
 
@@ -108,7 +107,6 @@ export default function FreeRoofInspectionPage() {
   return (
     <>
       {/* Schema Markup */}
-      <LocalBusinessSchema includeRating={true} />
       <FreeInspectionOfferSchema />
       <HowToGetRoofEstimateSchema />
       <BreadcrumbSchema
@@ -211,20 +209,20 @@ export default function FreeRoofInspectionPage() {
             {[
               {
                 icon: Satellite,
-                title: 'Satellite Roof Analysis',
-                description:
+  title: 'Satellite Roof Analysis',
+  description:
                   'We measure your roof using satellite imagery — the same technology insurance companies use. Get accurate square footage, pitch, and complexity data.',
               },
               {
                 icon: CloudLightning,
-                title: 'Storm Damage Assessment',
-                description:
+  title: 'Storm Damage Assessment',
+  description:
                   'Our certified inspectors check for hail impact, wind uplift, and weather damage. We document everything with photos for your insurance claim.',
               },
               {
                 icon: Calculator,
-                title: 'Instant Cost Estimate',
-                description:
+  title: 'Instant Cost Estimate',
+  description:
                   'Receive transparent pricing for multiple material options — from architectural shingles to standing seam metal. No hidden fees, no surprises.',
               },
             ].map(({ icon: Icon, title, description }) => (
@@ -363,23 +361,23 @@ export default function FreeRoofInspectionPage() {
             {[
               {
                 step: '1',
-                icon: ClipboardCheck,
-                title: 'Enter Your Address',
-                description:
+  icon: ClipboardCheck,
+  title: 'Enter Your Address',
+  description:
                   'Fill out the form above with your property address. We immediately begin analyzing your roof using satellite imagery.',
               },
               {
                 step: '2',
-                icon: Search,
-                title: 'Get Your Free Report',
-                description:
+  icon: Search,
+  title: 'Get Your Free Report',
+  description:
                   'Receive a detailed report with roof measurements, condition assessment, storm damage findings, and transparent cost estimates.',
               },
               {
                 step: '3',
-                icon: Calendar,
-                title: 'Schedule Your Inspection',
-                description:
+  icon: Calendar,
+  title: 'Schedule Your Inspection',
+  description:
                   'A certified roofing specialist comes to your home at YOUR convenience to verify findings and answer all your questions.',
               },
             ].map(({ step, icon: Icon, title, description }) => (

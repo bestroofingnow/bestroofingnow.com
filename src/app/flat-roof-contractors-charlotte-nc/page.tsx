@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -59,16 +59,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Flat Roof Contractors Charlotte NC | Licensed & Insured Specialists | Best Roofing Now',
-    description:
+  description:
       'Hire BBB A+ rated flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC for commercial and residential projects. Free estimates available.',
-    url: `${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.flatRoof,
-        width: 1200,
-        height: 630,
-        alt: 'Flat roof contractors Charlotte NC - Best Roofing Now commercial flat roof installation',
+  width: 1200,
+  height: 630,
+  alt: 'Flat roof contractors Charlotte NC - Best Roofing Now commercial flat roof installation',
       },
     ],
   },
@@ -78,39 +78,39 @@ export const metadata: Metadata = {
 const flatRoofSystems = [
   {
     icon: Thermometer,
-    title: 'TPO Roofing',
-    fullName: 'Thermoplastic Polyolefin',
-    description: 'Energy-efficient white membrane that reflects heat and reduces cooling costs. Hot-air welded seams for superior leak protection.',
-    lifespan: '20-30 years',
-    bestFor: 'Commercial buildings, warehouses, energy-conscious property owners',
-    cost: '$4-8/sq ft',
+  title: 'TPO Roofing',
+  fullName: 'Thermoplastic Polyolefin',
+  description: 'Energy-efficient white membrane that reflects heat and reduces cooling costs. Hot-air welded seams for superior leak protection.',
+  lifespan: '20-30 years',
+  bestFor: 'Commercial buildings, warehouses, energy-conscious property owners',
+  cost: '$4-8/sq ft',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    fullName: 'Ethylene Propylene Diene Monomer',
-    description: 'Durable synthetic rubber membrane known for exceptional weather resistance and longevity. Excellent for large commercial applications.',
-    lifespan: '25-30 years',
-    bestFor: 'Large commercial buildings, industrial facilities',
-    cost: '$4-8/sq ft',
+  title: 'EPDM Roofing',
+  fullName: 'Ethylene Propylene Diene Monomer',
+  description: 'Durable synthetic rubber membrane known for exceptional weather resistance and longevity. Excellent for large commercial applications.',
+  lifespan: '25-30 years',
+  bestFor: 'Large commercial buildings, industrial facilities',
+  cost: '$4-8/sq ft',
   },
   {
     icon: Layers,
-    title: 'PVC Roofing',
-    fullName: 'Polyvinyl Chloride',
-    description: 'Premium membrane with superior chemical resistance. Ideal for restaurants, kitchens, and facilities with grease or chemical exposure.',
-    lifespan: '25-30 years',
-    bestFor: 'Restaurants, medical facilities, chemical environments',
-    cost: '$6-12/sq ft',
+  title: 'PVC Roofing',
+  fullName: 'Polyvinyl Chloride',
+  description: 'Premium membrane with superior chemical resistance. Ideal for restaurants, kitchens, and facilities with grease or chemical exposure.',
+  lifespan: '25-30 years',
+  bestFor: 'Restaurants, medical facilities, chemical environments',
+  cost: '$6-12/sq ft',
   },
   {
     icon: Wrench,
-    title: 'Modified Bitumen',
-    fullName: 'Modified Bitumen Roofing',
-    description: 'Multi-layer asphalt system with added polymers for flexibility and durability. Great for buildings with foot traffic.',
-    lifespan: '15-20 years',
-    bestFor: 'Rooftop equipment areas, buildings with regular roof access',
-    cost: '$4-7/sq ft',
+  title: 'Modified Bitumen',
+  fullName: 'Modified Bitumen Roofing',
+  description: 'Multi-layer asphalt system with added polymers for flexibility and durability. Great for buildings with foot traffic.',
+  lifespan: '15-20 years',
+  bestFor: 'Rooftop equipment areas, buildings with regular roof access',
+  cost: '$4-7/sq ft',
   },
 ];
 
@@ -130,23 +130,23 @@ const systemComparison = [
 const commercialServices = [
   {
     icon: Building2,
-    title: 'Office Buildings',
-    description: 'Energy-efficient flat roof systems for professional office spaces and corporate complexes.',
+  title: 'Office Buildings',
+  description: 'Energy-efficient flat roof systems for professional office spaces and corporate complexes.',
   },
   {
     icon: Warehouse,
-    title: 'Warehouses',
-    description: 'Large-scale flat roof installation and repair for distribution centers and storage facilities.',
+  title: 'Warehouses',
+  description: 'Large-scale flat roof installation and repair for distribution centers and storage facilities.',
   },
   {
     icon: Factory,
-    title: 'Industrial Facilities',
-    description: 'Chemical-resistant roofing solutions for manufacturing plants and industrial properties.',
+  title: 'Industrial Facilities',
+  description: 'Chemical-resistant roofing solutions for manufacturing plants and industrial properties.',
   },
   {
     icon: Building2,
-    title: 'Retail Centers',
-    description: 'Reliable flat roof systems for shopping centers, strip malls, and standalone retail buildings.',
+  title: 'Retail Centers',
+  description: 'Reliable flat roof systems for shopping centers, strip malls, and standalone retail buildings.',
   },
 ];
 
@@ -154,23 +154,23 @@ const commercialServices = [
 const residentialApplications = [
   {
     title: 'Modern Architectural Homes',
-    description: 'Contemporary homes designed with flat or low-slope rooflines for sleek, modern aesthetics.',
+  description: 'Contemporary homes designed with flat or low-slope rooflines for sleek, modern aesthetics.',
   },
   {
     title: 'Room Additions',
-    description: 'Flat roof sections over additions, sunrooms, and extended living spaces.',
+  description: 'Flat roof sections over additions, sunrooms, and extended living spaces.',
   },
   {
     title: 'Garage Roofs',
-    description: 'Standalone or attached garages with flat roof construction.',
+  description: 'Standalone or attached garages with flat roof construction.',
   },
   {
     title: 'Porch & Patio Covers',
-    description: 'Covered outdoor spaces requiring weatherproof flat roofing.',
+  description: 'Covered outdoor spaces requiring weatherproof flat roofing.',
   },
   {
     title: 'Mid-Century Modern Homes',
-    description: 'Charlotte has many mid-century homes with flat roof designs requiring specialized care.',
+  description: 'Charlotte has many mid-century homes with flat roof designs requiring specialized care.',
   },
 ];
 
@@ -178,33 +178,33 @@ const residentialApplications = [
 const flatRoofProblems = [
   {
     title: 'Ponding Water',
-    description: 'Water that doesn\'t drain within 48 hours accelerates membrane deterioration and increases leak risk.',
-    solution: 'Proper drainage systems, tapered insulation, or roof crickets to redirect water.',
+  description: 'Water that doesn\'t drain within 48 hours accelerates membrane deterioration and increases leak risk.',
+  solution: 'Proper drainage systems, tapered insulation, or roof crickets to redirect water.',
   },
   {
     title: 'Membrane Punctures',
-    description: 'Foot traffic, dropped tools, or debris can puncture flat roof membranes.',
-    solution: 'Walkway pads, regular inspections, and prompt patch repairs.',
+  description: 'Foot traffic, dropped tools, or debris can puncture flat roof membranes.',
+  solution: 'Walkway pads, regular inspections, and prompt patch repairs.',
   },
   {
     title: 'Seam Failures',
-    description: 'Adhesive or welded seams can separate over time, creating leak points.',
-    solution: 'Professional seam repair or re-welding using proper techniques.',
+  description: 'Adhesive or welded seams can separate over time, creating leak points.',
+  solution: 'Professional seam repair or re-welding using proper techniques.',
   },
   {
     title: 'Flashing Deterioration',
-    description: 'Flashing around penetrations and edges fails over time, causing leaks.',
-    solution: 'Regular flashing inspections and replacement when needed.',
+  description: 'Flashing around penetrations and edges fails over time, causing leaks.',
+  solution: 'Regular flashing inspections and replacement when needed.',
   },
   {
     title: 'Blistering & Bubbling',
-    description: 'Trapped moisture or air creates blisters that can rupture and leak.',
-    solution: 'Professional blister repair and addressing underlying moisture issues.',
+  description: 'Trapped moisture or air creates blisters that can rupture and leak.',
+  solution: 'Professional blister repair and addressing underlying moisture issues.',
   },
   {
     title: 'Shrinkage & Cracking',
-    description: 'Older membranes can shrink and crack, especially at edges and corners.',
-    solution: 'Membrane replacement or roof coating application.',
+  description: 'Older membranes can shrink and crack, especially at edges and corners.',
+  solution: 'Membrane replacement or roof coating application.',
   },
 ];
 
@@ -212,33 +212,33 @@ const flatRoofProblems = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: 'Certified Installers',
-    description: 'Factory-trained in TPO, EPDM, PVC, and modified bitumen installation techniques.',
+  title: 'Certified Installers',
+  description: 'Factory-trained in TPO, EPDM, PVC, and modified bitumen installation techniques.',
   },
   {
     icon: Shield,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability and workers\' comp coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability and workers\' comp coverage.',
   },
   {
     icon: Users,
-    title: `${SITE_CONFIG.roofsInstalled}+ Roofs Completed`,
-    description: 'Proven track record with hundreds of successful roofing projects in Charlotte.',
+  title: `${SITE_CONFIG.roofsInstalled}+ Roofs Completed`,
+  description: 'Proven track record with hundreds of successful roofing projects in Charlotte.',
   },
   {
     icon: Clock,
-    title: 'Minimal Disruption',
-    description: 'We work around your schedule to minimize impact on business operations.',
+  title: 'Minimal Disruption',
+  description: 'We work around your schedule to minimize impact on business operations.',
   },
   {
     icon: DollarSign,
-    title: 'Competitive Pricing',
-    description: 'Transparent quotes with no hidden fees. Financing options available.',
+  title: 'Competitive Pricing',
+  description: 'Transparent quotes with no hidden fees. Financing options available.',
   },
 ];
 
@@ -274,52 +274,52 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What types of flat roofing systems do you install in Charlotte?',
-    answer:
+  answer:
       'We install all major flat roofing systems including TPO (Thermoplastic Polyolefin), EPDM (rubber roofing), PVC membranes, modified bitumen, and built-up roofing (BUR). Our team is factory-certified in each system type, allowing us to offer extended manufacturer warranties. We help you choose the best system based on your building type, budget, and performance requirements.',
   },
   {
     question: 'How much does a flat roof cost in Charlotte NC?',
-    answer:
+  answer:
       'Flat roof costs in Charlotte typically range from $4 to $12 per square foot installed, depending on the material and project complexity. TPO and EPDM generally cost $4-8 per sq ft, while PVC runs $6-12 per sq ft. For a 2,000 sq ft flat roof, expect $8,000-$24,000. Commercial projects often achieve better per-square-foot pricing due to scale. We provide free, detailed estimates for accurate pricing.',
   },
   {
     question: 'What is the best flat roof material for Charlotte\'s climate?',
-    answer:
+  answer:
       'For Charlotte\'s hot, humid summers and occasional severe weather, we typically recommend TPO or PVC roofing. TPO\'s white reflective surface can reduce cooling costs by 10-30% during summer while handling temperature fluctuations well. PVC offers superior chemical resistance - important for restaurants or facilities with HVAC equipment. EPDM is excellent for larger buildings where its durability and cost-effectiveness shine.',
   },
   {
     question: 'How long does a flat roof last?',
-    answer:
+  answer:
       'With proper installation and maintenance, flat roof lifespans in Charlotte are: TPO 20-30 years, EPDM 25-30 years, PVC 25-30 years, and modified bitumen 15-20 years. Key factors affecting lifespan include installation quality, membrane thickness, regular maintenance, and addressing repairs promptly. Roof coatings can extend the life of an aging flat roof by 10-15 years.',
   },
   {
     question: 'Do you install flat roofs on residential homes?',
-    answer:
+  answer:
       'Absolutely! We install flat roofs on residential properties including modern architectural homes, room additions, garage roofs, and covered patios. Charlotte has many mid-century modern homes and contemporary designs featuring flat or low-slope roofs. We use the same premium materials for residential projects as we do for commercial, ensuring your home gets top-quality protection.',
   },
   {
     question: 'What causes ponding water on flat roofs and how do you fix it?',
-    answer:
+  answer:
       'Ponding water (water that doesn\'t drain within 48 hours) occurs due to poor drainage design, sagging structure, clogged drains, or settling over time. We fix ponding issues by installing tapered insulation systems that create slope for drainage, adding roof crickets to redirect water, improving or adding drains, and ensuring proper scupper maintenance. Left untreated, ponding accelerates membrane deterioration and causes leaks.',
   },
   {
     question: 'How often should flat roofs be inspected?',
-    answer:
+  answer:
       'We recommend inspecting flat roofs twice yearly (spring and fall) plus after any severe weather event. Regular inspections catch small problems before they become expensive repairs. Our inspection checklist includes membrane condition, seam integrity, flashing, drainage systems, penetration seals, and overall structural condition. Many commercial clients use our maintenance programs for scheduled bi-annual inspections.',
   },
   {
     question: 'Can you repair a flat roof or does it need full replacement?',
-    answer:
+  answer:
       'Many flat roof problems can be repaired rather than requiring full replacement. We always assess repair options first. Localized membrane damage, seam failures, flashing issues, and small leaks are typically repairable. We recommend replacement when the membrane has widespread deterioration, multiple problem areas, is beyond its expected lifespan, or when repair costs approach replacement cost. Our honest assessment helps you make the best decision.',
   },
   {
     question: 'What warranties do you offer on flat roof installations?',
-    answer:
+  answer:
       'We offer comprehensive warranty coverage on all flat roof projects. Manufacturer warranties range from 10-30 years depending on the system and installation package. As certified installers, we can offer enhanced warranty packages including NDL (No Dollar Limit) coverage. We also provide our own workmanship warranty covering installation defects. Ask about warranty options during your free estimate.',
   },
   {
     question: 'How do TPO, EPDM, and PVC compare for commercial flat roofs?',
-    answer:
+  answer:
       'TPO offers excellent energy efficiency with heat-welded seams at the best price point - ideal for most commercial buildings. EPDM provides proven durability and performs well in large-scale applications at similar cost. PVC delivers superior chemical resistance with heat-welded seams - best for restaurants, medical facilities, or buildings with roof-mounted equipment. We help you choose based on your specific building needs and budget.',
   },
 ];
@@ -334,7 +334,6 @@ export default function FlatRoofContractorsCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`}
         pageName="Flat Roof Contractors Charlotte NC"
@@ -516,7 +515,7 @@ export default function FlatRoofContractorsCharlotteNCPage() {
                 Flat roofs dominate the commercial roofing landscape, and for good reason. They maximize usable
                 space, simplify HVAC placement, and offer excellent long-term value. Best Roofing Now serves
                 businesses of all sizes throughout Charlotte with expert flat roof installation, maintenance,
-                and repair.
+  and repair.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
                 {commercialServices.map((service) => (

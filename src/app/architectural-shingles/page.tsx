@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Architectural Shingles Charlotte NC | GAF, CertainTeed, Owens Corning | Best Roofing Now',
-    description: 'Premium architectural shingle installation in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/architectural-shingles`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Architectural shingles in Charlotte NC' }],
+  description: 'Premium architectural shingle installation in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/architectural-shingles`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Architectural shingles in Charlotte NC' }],
   },
 };
 
@@ -96,8 +96,8 @@ export default function ArchitecturalShinglesPage() {
       <ServiceSchema
         service={{
           title: "Architectural Shingle Installation",
-          description: "Premium architectural shingle installation in Charlotte NC from certified GAF, CertainTeed, and Owens Corning installers.",
-          slug: "architectural-shingles",
+  description: "Premium architectural shingle installation in Charlotte NC from certified GAF, CertainTeed, and Owens Corning installers.",
+  slug: "architectural-shingles",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/architectural-shingles`} pageName="Architectural Shingles Charlotte NC" city="Charlotte" />

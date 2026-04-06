@@ -49,37 +49,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Office Building Roof: Is Replacement Wasted Money? | Charlotte NC',
-    description:
+  description:
       'When does coating make more sense than replacement for Charlotte office buildings? Complete cost analysis and decision guide.',
-    url: `${SITE_CONFIG.url}/office-building-roof-replacement-vs-coating-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/office-building-roof-replacement-vs-coating-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const commercialFAQs = [
   {
     question: 'When is roof coating a better choice than replacement for my Charlotte office building?',
-    answer:
+  answer:
       'Coating is ideal when your existing roof membrane is structurally sound with no major damage, less than 15-20 years old, has isolated issues like minor leaks or UV degradation, and you want to extend roof life 10-15 years at 20-40% of replacement cost. It\'s also great for adding energy efficiency without full replacement.',
   },
   {
     question: 'How much does commercial roof coating cost vs replacement in Charlotte?',
-    answer:
+  answer:
       'In Charlotte, commercial roof coating typically costs $3-$7 per square foot, while full replacement costs $8-$15+ per square foot depending on system. For a 20,000 sq ft office building, that\'s $60,000-$140,000 for coating vs $160,000-$300,000+ for replacement.',
   },
   {
     question: 'How long does commercial roof coating last on Charlotte office buildings?',
-    answer:
+  answer:
       'Quality commercial roof coatings in Charlotte typically last 10-15 years with proper application. Some silicone coatings can be recoated indefinitely, potentially extending roof life to 30+ years total. This makes coating a sustainable long-term strategy for many buildings.',
   },
   {
     question: 'Will roof coating fix active leaks in my office building?',
-    answer:
+  answer:
       'Coating alone won\'t fix active leaks - the underlying issue must be repaired first. However, once repairs are made, coating creates a seamless waterproof membrane that prevents future leaks. We repair problem areas before coating application.',
   },
   {
     question: 'Does commercial roof coating help with energy costs in Charlotte?',
-    answer:
+  answer:
       'Yes, significantly. Reflective roof coatings can reduce rooftop temperatures by 50-80°F in Charlotte summers, lowering cooling costs 10-30%. For a large office building running AC constantly, this can mean $5,000-$20,000+ in annual energy savings.',
   },
 ];
@@ -123,73 +123,73 @@ const coatingCons = [
 const whenToReplace = [
   {
     situation: 'Roof is 25+ years old',
-    explanation: 'Multiple systems may have failed. Full replacement addresses all issues simultaneously.',
+  explanation: 'Multiple systems may have failed. Full replacement addresses all issues simultaneously.',
   },
   {
     situation: 'Significant ponding water issues',
-    explanation: 'Coating won\'t fix structural slope problems. Replacement can add proper drainage.',
+  explanation: 'Coating won\'t fix structural slope problems. Replacement can add proper drainage.',
   },
   {
     situation: 'Wet or damaged insulation',
-    explanation: 'Compromised insulation must be replaced. Coating over wet insulation traps moisture.',
+  explanation: 'Compromised insulation must be replaced. Coating over wet insulation traps moisture.',
   },
   {
     situation: 'Multiple membrane failures',
-    explanation: 'When the membrane has extensive damage, coating is just a Band-Aid solution.',
+  explanation: 'When the membrane has extensive damage, coating is just a Band-Aid solution.',
   },
   {
     situation: 'Planning to sell the building',
-    explanation: 'New roof warranty is more attractive to buyers than a coating warranty.',
+  explanation: 'New roof warranty is more attractive to buyers than a coating warranty.',
   },
 ];
 
 const whenToCoat = [
   {
     situation: 'Roof is 10-20 years old, structurally sound',
-    explanation: 'Prime candidate for coating. Extend life another 10-15 years at fraction of replacement cost.',
+  explanation: 'Prime candidate for coating. Extend life another 10-15 years at fraction of replacement cost.',
   },
   {
     situation: 'Minor leaks or localized damage',
-    explanation: 'Repair issues, then coat. Coating creates seamless waterproof barrier.',
+  explanation: 'Repair issues, then coat. Coating creates seamless waterproof barrier.',
   },
   {
     situation: 'High energy costs from summer heat',
-    explanation: 'Reflective coating immediately reduces cooling costs 10-30%.',
+  explanation: 'Reflective coating immediately reduces cooling costs 10-30%.',
   },
   {
     situation: 'Budget constraints',
-    explanation: 'Coating buys time. Plan full replacement when budget allows while protecting roof now.',
+  explanation: 'Coating buys time. Plan full replacement when budget allows while protecting roof now.',
   },
   {
     situation: 'Can\'t afford business disruption',
-    explanation: 'Coating is minimally invasive. No tear-off noise, debris, or extended closure needed.',
+  explanation: 'Coating is minimally invasive. No tear-off noise, debris, or extended closure needed.',
   },
 ];
 
 const costComparison = [
   {
     buildingSize: '10,000 sq ft',
-    replacementLow: '$80,000',
-    replacementHigh: '$150,000',
-    coatingLow: '$30,000',
-    coatingHigh: '$70,000',
-    savings: '$50,000 - $80,000',
+  replacementLow: '$80,000',
+  replacementHigh: '$150,000',
+  coatingLow: '$30,000',
+  coatingHigh: '$70,000',
+  savings: '$50,000 - $80,000',
   },
   {
     buildingSize: '25,000 sq ft',
-    replacementLow: '$200,000',
-    replacementHigh: '$375,000',
-    coatingLow: '$75,000',
-    coatingHigh: '$175,000',
-    savings: '$125,000 - $200,000',
+  replacementLow: '$200,000',
+  replacementHigh: '$375,000',
+  coatingLow: '$75,000',
+  coatingHigh: '$175,000',
+  savings: '$125,000 - $200,000',
   },
   {
     buildingSize: '50,000 sq ft',
-    replacementLow: '$400,000',
-    replacementHigh: '$750,000',
-    coatingLow: '$150,000',
-    coatingHigh: '$350,000',
-    savings: '$250,000 - $400,000',
+  replacementLow: '$400,000',
+  replacementHigh: '$750,000',
+  coatingLow: '$150,000',
+  coatingHigh: '$350,000',
+  savings: '$250,000 - $400,000',
   },
 ];
 
@@ -219,10 +219,10 @@ export default function OfficeBuildingRoofReplacementVsCoatingPage() {
       <ArticleSchema
         post={{
           title: 'Office Building Roof: Replacement vs Coating - Charlotte NC Guide',
-          description: 'When is replacement a waste of money? Cost analysis for Charlotte office buildings.',
-          slug: 'office-building-roof-replacement-vs-coating-charlotte-nc',
-          datePublished: '2026-01-27',
-          dateModified: '2026-01-27',
+  description: 'When is replacement a waste of money? Cost analysis for Charlotte office buildings.',
+  slug: 'office-building-roof-replacement-vs-coating-charlotte-nc',
+  datePublished: '2026-01-27',
+  dateModified: '2026-01-27',
         }}
       />
       <FAQSchema faqs={commercialFAQs} />
@@ -259,7 +259,7 @@ export default function OfficeBuildingRoofReplacementVsCoatingPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-3xl">
               Before spending $200,000+ on a new roof for your Charlotte office building,
-              consider this: coating could extend your roof&apos;s life 10-15 years at 20-40% of the cost.
+  consider this: coating could extend your roof&apos;s life 10-15 years at 20-40% of the cost.
               Here&apos;s how to know which option is right for your building.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -495,7 +495,7 @@ export default function OfficeBuildingRoofReplacementVsCoatingPage() {
               <div className="mt-6 pt-6 border-t border-white/20">
                 <p className="font-bold text-lg">
                   Result: Coating saves $175,000 upfront, provides better energy savings,
-                  and costs 40% less per year of roof life.
+  and costs 40% less per year of roof life.
                 </p>
                 <p className="text-white/80 text-sm mt-2">
                   *This building&apos;s roof was 12 years old with a sound membrane - ideal coating candidate

@@ -30,7 +30,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -61,16 +60,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roof Repair Cost Charlotte NC | 2026 Pricing | Best Roofing Now',
-    description:
+  description:
       'Commercial roof repair cost in Charlotte NC: TPO $3-$8/sq ft, EPDM $3-$7/sq ft, PVC $4-$9/sq ft, metal $5-$12/sq ft. Emergency repairs, maintenance contracts & full pricing guide. Free estimates.',
-    url: `${SITE_CONFIG.url}/commercial-roof-repair-cost-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roof-repair-cost-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.flatRoof,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roof repair cost Charlotte NC - Best Roofing Now commercial roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roof repair cost Charlotte NC - Best Roofing Now commercial roofing project',
       },
     ],
   },
@@ -80,39 +79,39 @@ export const metadata: Metadata = {
 const costBySystem = [
   {
     icon: Layers,
-    title: 'TPO Repair',
-    priceRange: '$3-$8/sq ft',
-    description: 'Membrane patches, seam re-welding, flashing repairs. The most popular commercial roofing system in Charlotte with predictable repair costs.',
+  title: 'TPO Repair',
+  priceRange: '$3-$8/sq ft',
+  description: 'Membrane patches, seam re-welding, flashing repairs. The most popular commercial roofing system in Charlotte with predictable repair costs.',
   },
   {
     icon: Shield,
-    title: 'EPDM Repair',
-    priceRange: '$3-$7/sq ft',
-    description: 'Rubber membrane patches, adhesive resealing, seam reinforcement. Durable and cost-effective repairs for aging EPDM roofs.',
+  title: 'EPDM Repair',
+  priceRange: '$3-$7/sq ft',
+  description: 'Rubber membrane patches, adhesive resealing, seam reinforcement. Durable and cost-effective repairs for aging EPDM roofs.',
   },
   {
     icon: Thermometer,
-    title: 'PVC Repair',
-    priceRange: '$4-$9/sq ft',
-    description: 'Heat-welded patches, drainage improvements, chemical-resistant membrane repairs. Ideal for restaurants and facilities with rooftop grease exposure.',
+  title: 'PVC Repair',
+  priceRange: '$4-$9/sq ft',
+  description: 'Heat-welded patches, drainage improvements, chemical-resistant membrane repairs. Ideal for restaurants and facilities with rooftop grease exposure.',
   },
   {
     icon: Wrench,
-    title: 'Metal Roof Repair',
-    priceRange: '$5-$12/sq ft',
-    description: 'Panel replacement, fastener tightening, sealant application, rust treatment. Standing seam and corrugated metal repair services.',
+  title: 'Metal Roof Repair',
+  priceRange: '$5-$12/sq ft',
+  description: 'Panel replacement, fastener tightening, sealant application, rust treatment. Standing seam and corrugated metal repair services.',
   },
   {
     icon: Building2,
-    title: 'BUR Repair',
-    priceRange: '$4-$10/sq ft',
-    description: 'Blister repair, re-coating, gravel replacement, felt layer patching. Multi-layer built-up roofing restoration for older commercial buildings.',
+  title: 'BUR Repair',
+  priceRange: '$4-$10/sq ft',
+  description: 'Blister repair, re-coating, gravel replacement, felt layer patching. Multi-layer built-up roofing restoration for older commercial buildings.',
   },
   {
     icon: Factory,
-    title: 'Modified Bitumen',
-    priceRange: '$3-$8/sq ft',
-    description: 'Torch-applied patches, seam repair, cap sheet replacement. Reliable repairs for this popular Charlotte commercial roofing system.',
+  title: 'Modified Bitumen',
+  priceRange: '$3-$8/sq ft',
+  description: 'Torch-applied patches, seam repair, cap sheet replacement. Reliable repairs for this popular Charlotte commercial roofing system.',
   },
 ];
 
@@ -120,39 +119,39 @@ const costBySystem = [
 const repairScopes = [
   {
     icon: Zap,
-    title: 'Emergency Leak Stop',
-    priceRange: '$500-$2,000',
-    description: 'Temporary patch to stop active leaks immediately. 24/7 emergency response to protect your inventory, equipment, and business operations.',
+  title: 'Emergency Leak Stop',
+  priceRange: '$500-$2,000',
+  description: 'Temporary patch to stop active leaks immediately. 24/7 emergency response to protect your inventory, equipment, and business operations.',
   },
   {
     icon: Wrench,
-    title: 'Spot Repairs',
-    priceRange: '$1,000-$5,000',
-    description: 'Localized damage repair, small area patches, individual flashing replacement. Targeted fixes for isolated problem areas.',
+  title: 'Spot Repairs',
+  priceRange: '$1,000-$5,000',
+  description: 'Localized damage repair, small area patches, individual flashing replacement. Targeted fixes for isolated problem areas.',
   },
   {
     icon: Ruler,
-    title: 'Section Repair',
-    priceRange: '$5,000-$15,000',
-    description: 'Larger area replacement, multiple penetration repairs, extensive flashing work. Addresses widespread damage in a defined roof section.',
+  title: 'Section Repair',
+  priceRange: '$5,000-$15,000',
+  description: 'Larger area replacement, multiple penetration repairs, extensive flashing work. Addresses widespread damage in a defined roof section.',
   },
   {
     icon: Truck,
-    title: 'Drainage Repair',
-    priceRange: '$2,000-$8,000',
-    description: 'Fix ponding water issues, add drains, improve slope, clear or replace internal drainage systems. Prevents long-term structural damage.',
+  title: 'Drainage Repair',
+  priceRange: '$2,000-$8,000',
+  description: 'Fix ponding water issues, add drains, improve slope, clear or replace internal drainage systems. Prevents long-term structural damage.',
   },
   {
     icon: Layers,
-    title: 'Full Membrane Overlay',
-    priceRange: '$8-$14/sq ft',
-    description: 'New membrane installed over existing when substrate is sound. A cost-effective alternative to full tear-off replacement.',
+  title: 'Full Membrane Overlay',
+  priceRange: '$8-$14/sq ft',
+  description: 'New membrane installed over existing when substrate is sound. A cost-effective alternative to full tear-off replacement.',
   },
   {
     icon: Calendar,
-    title: 'Preventive Maintenance',
-    priceRange: '$0.05-$0.15/sq ft/year',
-    description: 'Annual inspections, minor repairs, gutter cleaning, drain maintenance. The most cost-effective way to extend commercial roof life.',
+  title: 'Preventive Maintenance',
+  priceRange: '$0.05-$0.15/sq ft/year',
+  description: 'Annual inspections, minor repairs, gutter cleaning, drain maintenance. The most cost-effective way to extend commercial roof life.',
   },
 ];
 
@@ -160,33 +159,33 @@ const repairScopes = [
 const whyChooseUs = [
   {
     icon: Building2,
-    title: 'Commercial Specialists',
-    description: 'We are a dedicated commercial roofing company, not a residential contractor doing commercial on the side. Our crews train specifically for commercial systems.',
+  title: 'Commercial Specialists',
+  description: 'We are a dedicated commercial roofing company, not a residential contractor doing commercial on the side. Our crews train specifically for commercial systems.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Response',
-    description: 'Active leak at 2 AM? Our emergency crews respond around the clock to protect your business from water damage and lost revenue.',
+  title: '24/7 Emergency Response',
+  description: 'Active leak at 2 AM? Our emergency crews respond around the clock to protect your business from water damage and lost revenue.',
   },
   {
     icon: Calendar,
-    title: 'Maintenance Contract Programs',
-    description: 'Proactive maintenance programs that catch problems early, extend roof life, and provide predictable annual budgeting for property managers.',
+  title: 'Maintenance Contract Programs',
+  description: 'Proactive maintenance programs that catch problems early, extend roof life, and provide predictable annual budgeting for property managers.',
   },
   {
     icon: Calculator,
-    title: 'Budget Planning Assistance',
-    description: 'We help property managers and business owners plan for roof expenses with detailed condition reports and multi-year capital planning.',
+  title: 'Budget Planning Assistance',
+  description: 'We help property managers and business owners plan for roof expenses with detailed condition reports and multi-year capital planning.',
   },
   {
     icon: Shield,
-    title: 'Insurance & Warranty Claims',
-    description: 'Full support navigating insurance claims and manufacturer warranty processes. We document damage thoroughly and advocate for maximum coverage.',
+  title: 'Insurance & Warranty Claims',
+  description: 'Full support navigating insurance claims and manufacturer warranty processes. We document damage thoroughly and advocate for maximum coverage.',
   },
   {
     icon: Award,
-    title: 'Manufacturer-Certified Crews',
-    description: 'Factory-certified installers for GAF, Carlisle, Firestone, Johns Manville, and more. Certified repairs protect your existing manufacturer warranties.',
+  title: 'Manufacturer-Certified Crews',
+  description: 'Factory-certified installers for GAF, Carlisle, Firestone, Johns Manville, and more. Certified repairs protect your existing manufacturer warranties.',
   },
 ];
 
@@ -222,42 +221,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does commercial roof repair cost per square foot in Charlotte?',
-    answer:
+  answer:
       'Commercial roof repair costs in Charlotte range from $3 to $12 per square foot depending on the roofing system. TPO and EPDM repairs average $3-$8/sq ft, PVC runs $4-$9/sq ft, and metal roof repairs cost $5-$12/sq ft. Emergency leak repairs typically range from $500-$2,000 as a flat rate. Factors affecting cost include damage extent, roof accessibility, material type, and whether the work is emergency or scheduled.',
   },
   {
     question: 'Is it cheaper to repair or replace a commercial roof?',
-    answer:
+  answer:
       'Repair is almost always cheaper in the short term at $3-$12/sq ft for affected areas versus $8-$18/sq ft for full replacement. However, if your roof is over 20 years old or has widespread damage, replacement may be more cost-effective long-term. A good rule of thumb: if repair costs exceed 30-40% of replacement cost, or if you are making frequent repairs, replacement provides better value. We offer free assessments to help you make the right financial decision.',
   },
   {
     question: 'How often should a commercial roof be inspected?',
-    answer:
+  answer:
       'Commercial roofs should be inspected at least twice per year, ideally in spring and fall, plus after any major storm event. Charlotte experiences severe thunderstorms, occasional hail, and hurricanes that can cause hidden damage. Regular inspections catch small problems when they cost $500-$2,000 to fix rather than $15,000-$50,000 when they become major failures. Our maintenance contracts include bi-annual inspections and priority scheduling.',
   },
   {
     question: 'Does commercial property insurance cover roof repairs?',
-    answer:
+  answer:
       'Commercial property insurance typically covers roof repairs caused by sudden, accidental events like storms, hail, fallen trees, or fire. It generally does not cover damage from normal wear and tear, neglect, or lack of maintenance. Most policies have deductibles ranging from $1,000-$10,000. We work directly with insurance adjusters, provide detailed documentation, and advocate for fair claim settlements on behalf of our clients.',
   },
   {
     question: 'What is the cheapest commercial roofing system to repair?',
-    answer:
+  answer:
       'EPDM rubber roofing is typically the cheapest to repair at $3-$7 per square foot. Repairs often involve simple adhesive patches that can be applied quickly. TPO is also affordable at $3-$8/sq ft. Modified bitumen falls in a similar range. Metal roofing tends to be the most expensive to repair at $5-$12/sq ft due to specialized materials and skills required. However, the cheapest repair is always the one you prevent through regular maintenance.',
   },
   {
     question: 'Can commercial roof repairs be tax deductible?',
-    answer:
+  answer:
       'Yes, commercial roof repairs are generally tax deductible as a business expense in the year they are incurred under IRS guidelines. Repairs that maintain the roof in its current condition (patches, seam repairs, leak fixes) are typically deductible as operating expenses. However, major improvements or full replacements may need to be capitalized and depreciated over 39 years. Consult your tax professional for your specific situation, as the 2026 tax code may offer additional deductions for energy-efficient improvements.',
   },
   {
     question: 'How long do commercial roof repairs last?',
-    answer:
+  answer:
       'Quality commercial roof repairs typically last 5-15 years depending on the repair type, materials used, and ongoing maintenance. Properly welded TPO and PVC patches can last the remaining life of the membrane. EPDM adhesive repairs last 5-10 years. Metal roof repairs with quality sealants last 7-12 years. The key to longevity is using manufacturer-specified materials, certified installation techniques, and following up with regular maintenance inspections.',
   },
   {
     question: 'What should I look for in a commercial roofing maintenance contract?',
-    answer:
+  answer:
       'A good commercial roofing maintenance contract should include bi-annual inspections (spring and fall), written condition reports with photos, minor repair coverage, gutter and drain cleaning, priority emergency response, and transparent pricing. Look for contractors who are manufacturer-certified, carry adequate insurance ($1M+ general liability), and provide detailed documentation. Our maintenance contracts at $0.05-$0.15/sq ft per year include all of these features plus 24/7 emergency response.',
   },
 ];
@@ -272,7 +271,6 @@ export default function CommercialRoofRepairCostCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roof-repair-cost-charlotte-nc`}
         pageName="Commercial Roof Repair Cost Charlotte NC"
@@ -428,7 +426,7 @@ export default function CommercialRoofRepairCostCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 Commercial roof repair demands contractors who understand flat roofing systems, commercial building codes,
-                and the urgency of protecting business operations. We are commercial roofing specialists, not residential
+  and the urgency of protecting business operations. We are commercial roofing specialists, not residential
                 roofers doing commercial work on the side.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

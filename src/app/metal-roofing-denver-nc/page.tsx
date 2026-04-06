@@ -18,7 +18,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Denver NC | Lake Norman Western Shore Specialists',
-    description:
+  description:
       'Premium metal roofing for Denver NC and Lake Norman western shore homes. Standing seam rated 140+ MPH. 40-70 year lifespan with minimal maintenance. Free estimates.',
-    url: `${SITE_CONFIG.url}/metal-roofing-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/metal-roofing-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Metal roofing Denver NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Metal roofing Denver NC - Best Roofing Now',
       },
     ],
   },
@@ -68,33 +68,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '40-70 Year Lifespan',
-    description: 'Metal roofs last 2-3x longer than asphalt shingles, making them ideal for Denver\'s lakefront investment properties.',
+  title: '40-70 Year Lifespan',
+  description: 'Metal roofs last 2-3x longer than asphalt shingles, making them ideal for Denver\'s lakefront investment properties.',
   },
   {
     icon: Wind,
-    title: 'Wind Resistance 140+ MPH',
-    description: 'Standing seam metal handles Lake Norman western shore wind exposure where prevailing winds cross open water.',
+  title: 'Wind Resistance 140+ MPH',
+  description: 'Standing seam metal handles Lake Norman western shore wind exposure where prevailing winds cross open water.',
   },
   {
     icon: Zap,
-    title: 'Energy Efficiency',
-    description: 'Reflects solar heat reducing cooling costs 10-25% for Denver homes during hot North Carolina summers.',
+  title: 'Energy Efficiency',
+  description: 'Reflects solar heat reducing cooling costs 10-25% for Denver homes during hot North Carolina summers.',
   },
   {
     icon: Waves,
-    title: 'Lake Norman Weather Protection',
-    description: 'Engineered for western shore conditions including lake-effect moisture, wind-driven rain, and hail events.',
+  title: 'Lake Norman Weather Protection',
+  description: 'Engineered for western shore conditions including lake-effect moisture, wind-driven rain, and hail events.',
   },
   {
     icon: Shield,
-    title: 'Fire Resistance',
-    description: 'Class A fire rating provides maximum protection, especially valuable for Denver properties near wooded areas and Lake Norman State Park.',
+  title: 'Fire Resistance',
+  description: 'Class A fire rating provides maximum protection, especially valuable for Denver properties near wooded areas and Lake Norman State Park.',
   },
   {
     icon: Leaf,
-    title: 'Eco-Friendly',
-    description: '100% recyclable with 25-95% recycled content. Reduces landfill waste and lowers Denver homeowners\' carbon footprint.',
+  title: 'Eco-Friendly',
+  description: '100% recyclable with 25-95% recycled content. Reduces landfill waste and lowers Denver homeowners\' carbon footprint.',
   },
 ];
 
@@ -102,27 +102,27 @@ const benefits = [
 const metalOptions = [
   {
     title: 'Standing Seam',
-    description: 'Premium concealed fastener system with clean, modern lines. The top choice for Denver lakefront homes in Trilogy, Sailview, and Pinnacle Shores where wind resistance is paramount.',
-    lifespan: '40-70 years',
-    windRating: '140+ MPH',
+  description: 'Premium concealed fastener system with clean, modern lines. The top choice for Denver lakefront homes in Trilogy, Sailview, and Pinnacle Shores where wind resistance is paramount.',
+  lifespan: '40-70 years',
+  windRating: '140+ MPH',
   },
   {
     title: 'Corrugated Metal',
-    description: 'Classic ribbed profile popular for modern architectural and farmhouse styles found throughout Denver\'s rural and lakeside neighborhoods.',
-    lifespan: '40-50 years',
-    windRating: '120+ MPH',
+  description: 'Classic ribbed profile popular for modern architectural and farmhouse styles found throughout Denver\'s rural and lakeside neighborhoods.',
+  lifespan: '40-50 years',
+  windRating: '120+ MPH',
   },
   {
     title: 'Metal Shingles',
-    description: 'Metal panels designed to look like traditional shingles, slate, or cedar shake. Perfect for Denver HOA communities that require a traditional aesthetic.',
-    lifespan: '40-60 years',
-    windRating: '110+ MPH',
+  description: 'Metal panels designed to look like traditional shingles, slate, or cedar shake. Perfect for Denver HOA communities that require a traditional aesthetic.',
+  lifespan: '40-60 years',
+  windRating: '110+ MPH',
   },
   {
     title: 'Copper Accents',
-    description: 'Premium copper panels and accents with stunning natural patina development. A luxurious upgrade for high-end Lake Norman western shore estates.',
-    lifespan: '100+ years',
-    windRating: '140+ MPH',
+  description: 'Premium copper panels and accents with stunning natural patina development. A luxurious upgrade for high-end Lake Norman western shore estates.',
+  lifespan: '100+ years',
+  windRating: '140+ MPH',
   },
 ];
 
@@ -130,42 +130,42 @@ const metalOptions = [
 const faqs = [
   {
     question: 'How much does metal roofing cost in Denver NC?',
-    answer:
+  answer:
       'Metal roofing in Denver NC typically costs $15-30 per square foot installed for standing seam, depending on panel style, gauge, and coating. For a typical Denver home, expect $25,000-$50,000. Lakefront properties in Trilogy at Lake Norman, Sailview, or Pinnacle Shores with premium options like copper accents often range $40,000-$80,000+. While more expensive upfront than shingles, metal\'s 40-70 year lifespan makes it the most cost-effective option long-term.',
   },
   {
     question: 'Is metal roofing good for Lake Norman western shore homes?',
-    answer:
+  answer:
       'Metal roofing is the ideal choice for Lake Norman western shore properties in Denver. The western shore faces prevailing winds that cross miles of open water, creating higher wind loads than eastern shore communities. Standing seam metal rated for 140+ MPH handles this exposure easily. It also resists moisture, will not rot or grow mold from lake humidity, and handles temperature swings throughout the year.',
   },
   {
     question: 'How long does a metal roof last in Denver NC?',
-    answer:
+  answer:
       'Metal roofs in Denver NC typically last 40-70 years, with copper lasting 100+ years. This is 2-3x longer than asphalt shingles, which typically need replacement every 15-25 years in our climate. Most metal roofs in the Lake Norman area still perform well after 50+ years. The key is proper installation by certified contractors who understand western shore wind patterns.',
   },
   {
     question: 'Why is metal roofing especially recommended for Denver\'s western shore?',
-    answer:
+  answer:
       'Denver sits on the western shore of Lake Norman where prevailing westerly winds cross open water before hitting homes. Communities like Sailview, Island Point, and Pinnacle Shores experience consistently higher wind loads than inland areas. Metal roofing, especially standing seam systems rated 140+ MPH, is engineered for exactly this type of sustained wind exposure and offers superior performance compared to shingle roofs in these conditions.',
   },
   {
     question: 'Does Denver NC require special permits for metal roofing?',
-    answer:
+  answer:
       'Yes, Denver is in Lincoln County (not Mecklenburg County), so roof replacements require Lincoln County building permits and inspections. We handle the full permitting process for every Denver metal roofing project, ensuring compliance with Lincoln County building codes. Metal roofing easily meets and exceeds all Lincoln County wind load and fire resistance requirements.',
   },
   {
     question: 'Will a metal roof be noisy during Lake Norman storms?',
-    answer:
+  answer:
       'Modern metal roofs installed over solid decking with proper underlayment are no louder than shingle roofs during rain and storms. The combination of decking, synthetic underlayment, and attic insulation absorbs sound effectively. Many Denver homeowners are surprised how quiet their metal roof is, even during strong Lake Norman thunderstorms.',
   },
   {
     question: 'What colors are available for metal roofing in Denver NC?',
-    answer:
+  answer:
       'We offer metal roofing in 20+ colors to match Denver neighborhood aesthetics and HOA requirements. Popular choices for Trilogy at Lake Norman and Sailview include charcoal gray, bronze, dark brown, and slate blue. Kynar/PVDF coatings ensure color retention for 30+ years, even under Lake Norman\'s intense sun exposure. We help you select colors that complement your home and meet community guidelines.',
   },
   {
     question: 'Can you install metal roofing over existing shingles in Denver?',
-    answer:
+  answer:
       'In some cases, yes. Metal roofing can be installed over a single layer of existing shingles, which reduces labor costs and landfill waste. However, for Denver lakefront homes with high wind exposure, we typically recommend a full tear-off to inspect the decking and install enhanced underlayment for maximum western shore wind protection. We evaluate each Denver property individually and recommend the best approach.',
   },
 ];
@@ -181,7 +181,6 @@ export default function MetalRoofingDenverNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/metal-roofing-denver-nc`}
         pageName="Metal Roofing Denver NC"
@@ -382,7 +381,7 @@ export default function MetalRoofingDenverNCPage() {
             </h2>
             <p className="text-gray text-lg">
               We install metal roofing throughout Denver&apos;s lakefront and inland neighborhoods,
-              with solutions tailored to each community&apos;s wind exposure and aesthetic requirements.
+  with solutions tailored to each community&apos;s wind exposure and aesthetic requirements.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

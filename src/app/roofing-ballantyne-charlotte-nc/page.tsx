@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Ballantyne Charlotte NC | South Charlotte Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor serving Ballantyne Charlotte NC. Premium roofing services for upscale homes near Ballantyne Corporate Park. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofing-ballantyne-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-ballantyne-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Ballantyne Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Ballantyne Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Luxury Home Roofing',
-    description: 'Premium roofing solutions for Ballantyne\'s upscale homes with designer shingles and tile options.',
-    href: '/services/residential-roofing',
+  title: 'Luxury Home Roofing',
+  description: 'Premium roofing solutions for Ballantyne\'s upscale homes with designer shingles and tile options.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Expert commercial roofing for Ballantyne Corporate Park businesses and office buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'Expert commercial roofing for Ballantyne Corporate Park businesses and office buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Ballantyne.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Ballantyne.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Ballantyne homeowners with detailed reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Ballantyne homeowners with detailed reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Ballantyne residents.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Ballantyne residents.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Ballantyne homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Ballantyne homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Premium Materials',
-    description: 'We use only the finest materials from CertainTeed, GAF, and Owens Corning for lasting quality.',
+  title: 'Premium Materials',
+  description: 'We use only the finest materials from CertainTeed, GAF, and Owens Corning for lasting quality.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Ballantyne homeowners need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Ballantyne homeowners need us most.',
   },
 ];
 
@@ -179,42 +179,42 @@ const nearbyAreas = [
 const faqs = [
   {
     question: 'What roofing services do you offer in Ballantyne Charlotte NC?',
-    answer:
+  answer:
       'Best Roofing Now provides complete roofing services in Ballantyne including roof repair, roof replacement, new roof installation, storm damage repair, emergency roofing services, and free roof inspections. We specialize in premium materials and designer shingles that complement Ballantyne\'s upscale homes.',
   },
   {
     question: 'Why should Ballantyne homeowners choose Best Roofing Now?',
-    answer:
+  answer:
       'Ballantyne homeowners choose us because we understand the high standards of this prestigious community. We\'re BBB A+ rated, veteran-owned, and use only premium materials from CertainTeed, GAF, and Owens Corning. Our attention to detail and commitment to quality matches the expectations of Ballantyne\'s discerning residents.',
   },
   {
     question: 'How much does a roof replacement cost in Ballantyne?',
-    answer:
+  answer:
       'Roof replacement costs in Ballantyne typically range from $12,000-$35,000+ depending on home size, roof complexity, and material choice. Many Ballantyne homes feature larger footprints and premium architectural shingles or tile roofing. We provide free, detailed estimates with transparent pricing.',
   },
   {
     question: 'Do you work with HOAs in Ballantyne?',
-    answer:
+  answer:
       'Yes, we have extensive experience working with Ballantyne HOAs and understand the architectural guidelines and approval processes. We can help you select materials and colors that meet HOA requirements while enhancing your home\'s curb appeal and value.',
   },
   {
     question: 'How long does a roof replacement take in Ballantyne?',
-    answer:
+  answer:
       'Most Ballantyne roof replacements are completed in 2-4 days, depending on the size and complexity of your home. Larger estates may take 4-6 days. We work efficiently while maintaining meticulous attention to detail and always clean up thoroughly.',
   },
   {
     question: 'Do you offer financing for roofing projects in Ballantyne?',
-    answer:
+  answer:
       'Yes, we offer flexible financing options for Ballantyne homeowners including 0% APR for qualified buyers. This makes it easier to invest in premium roofing materials that protect your investment and enhance your home\'s value.',
   },
   {
     question: 'What warranty do you provide on Ballantyne roofing projects?',
-    answer:
+  answer:
       'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As certified installers, we can offer enhanced warranties like GAF Golden Pledge and CertainTeed SureStart PLUS protection.',
   },
   {
     question: 'Do you handle insurance claims for storm damage in Ballantyne?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience with insurance claims for storm damage in Ballantyne. We provide thorough documentation, meet with adjusters, and advocate for fair settlements. Many Ballantyne roofs qualify for full or partial insurance coverage after storm events.',
   },
 ];
@@ -229,7 +229,12 @@ export default function RoofingBallantyneCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-ballantyne-charlotte-nc`}
+        pageName="Roofing Ballantyne Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -315,12 +320,12 @@ export default function RoofingBallantyneCharlotteNCPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 Ballantyne represents the pinnacle of Charlotte living, with its beautiful master-planned communities,
-                world-class golf courses, and prestigious corporate headquarters. At Best Roofing Now, we understand
+  world-class golf courses, and prestigious corporate headquarters. At Best Roofing Now, we understand
                 that Ballantyne homeowners expect nothing less than excellence when it comes to protecting their investment.
               </p>
               <p>
                 Whether you own a stately home in Ballantyne Country Club, a modern residence near Ballantyne Corporate Park,
-                or a family home in one of the area's many desirable neighborhoods, our team delivers roofing solutions
+  or a family home in one of the area's many desirable neighborhoods, our team delivers roofing solutions
                 that match your home's quality and your high standards.
               </p>
               <p>

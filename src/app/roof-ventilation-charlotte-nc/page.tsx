@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Ventilation Charlotte NC | Attic Ventilation Experts | Best Roofing Now',
-    description:
+  description:
       'Expert roof and attic ventilation in Charlotte NC. Ridge vents, soffit vents, power ventilators. Reduce energy bills, prevent moisture damage. Free estimates.',
-    url: `${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero15,
-        width: 1200,
-        height: 630,
-        alt: 'Roof ventilation services in Charlotte NC - Best Roofing Now attic ventilation experts',
+  width: 1200,
+  height: 630,
+  alt: 'Roof ventilation services in Charlotte NC - Best Roofing Now attic ventilation experts',
       },
     ],
   },
@@ -67,26 +67,26 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Thermometer,
-    title: 'Lower Energy Bills',
-    description:
+  title: 'Lower Energy Bills',
+  description:
       'Proper ventilation can reduce attic temperatures by 30-40°F in summer, reducing AC workload and cutting cooling costs by 10-15%.',
   },
   {
     icon: Droplets,
-    title: 'Moisture Control',
-    description:
+  title: 'Moisture Control',
+  description:
       'Ventilation removes moisture from your attic, preventing mold growth, wood rot, and deterioration of insulation.',
   },
   {
     icon: Clock,
-    title: 'Extended Roof Life',
-    description:
+  title: 'Extended Roof Life',
+  description:
       'Excessive heat ages shingles prematurely. Proper ventilation helps your roof last its full expected lifespan of 20-30 years.',
   },
   {
     icon: Home,
-    title: 'Prevents Ice Dams',
-    description:
+  title: 'Prevents Ice Dams',
+  description:
       'In winter, ventilation keeps the roof cold, preventing snow melt and refreezing that causes damaging ice dams.',
   },
 ];
@@ -95,39 +95,39 @@ const benefits = [
 const ventilationTypes = [
   {
     title: 'Ridge Vents',
-    description:
+  description:
       'Installed along the roof peak, ridge vents provide continuous exhaust ventilation. They\'re virtually invisible and highly effective.',
-    benefits: ['Continuous exhaust', 'Invisible from ground', 'No moving parts', 'Works with wind and convection'],
+  benefits: ['Continuous exhaust', 'Invisible from ground', 'No moving parts', 'Works with wind and convection'],
   },
   {
     title: 'Soffit Vents',
-    description:
+  description:
       'Installed in the eave soffits, these vents provide essential intake air that makes the entire system work effectively.',
-    benefits: ['Critical for intake air', 'Multiple style options', 'Works with any exhaust system', 'Perforated or vented panels'],
+  benefits: ['Critical for intake air', 'Multiple style options', 'Works with any exhaust system', 'Perforated or vented panels'],
   },
   {
     title: 'Box Vents (Static Vents)',
-    description:
+  description:
       'Also called turtle vents, these are installed near the ridge and use natural convection to exhaust hot air.',
-    benefits: ['No electricity needed', 'Low profile', 'Affordable option', 'Multiple can be installed'],
+  benefits: ['No electricity needed', 'Low profile', 'Affordable option', 'Multiple can be installed'],
   },
   {
     title: 'Power Ventilators',
-    description:
+  description:
       'Electric or solar-powered fans that actively pull hot air from the attic. Ideal for homes needing extra ventilation.',
-    benefits: ['Active ventilation', 'Thermostat controlled', 'Solar options available', 'High CFM capacity'],
+  benefits: ['Active ventilation', 'Thermostat controlled', 'Solar options available', 'High CFM capacity'],
   },
   {
     title: 'Gable Vents',
-    description:
+  description:
       'Installed in gable ends of the attic, these provide both intake and exhaust depending on wind direction.',
-    benefits: ['Decorative options', 'Easy to retrofit', 'Work with natural airflow', 'No roof penetration'],
+  benefits: ['Decorative options', 'Easy to retrofit', 'Work with natural airflow', 'No roof penetration'],
   },
   {
     title: 'Turbine Vents',
-    description:
+  description:
       'Wind-powered spinning vents that actively draw hot air out. More effective than static vents in windy conditions.',
-    benefits: ['No electricity needed', 'Active extraction', 'Increases airflow', 'Works with any wind'],
+  benefits: ['No electricity needed', 'Active extraction', 'Increases airflow', 'Works with any wind'],
   },
 ];
 
@@ -135,33 +135,33 @@ const ventilationTypes = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: Wind,
-    title: 'Ventilation Experts',
-    description: 'We design balanced ventilation systems tailored to your home\'s specific needs.',
+  title: 'Ventilation Experts',
+  description: 'We design balanced ventilation systems tailored to your home\'s specific needs.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Zap,
-    title: 'Energy Efficient Solutions',
-    description: 'We focus on reducing your energy costs while protecting your roof.',
+  title: 'Energy Efficient Solutions',
+  description: 'We focus on reducing your energy costs while protecting your roof.',
   },
 ];
 
@@ -181,42 +181,42 @@ const poorVentilationSigns = [
 const faqs = [
   {
     question: 'How much ventilation does my roof need?',
-    answer:
+  answer:
       'The general rule is 1 square foot of net free ventilation area for every 150 square feet of attic floor space. This should be balanced between intake (at soffits) and exhaust (at or near the ridge). For a 1,500 sq ft attic, you\'d need about 10 sq ft of ventilation, split evenly. We\'ll calculate the exact requirements for your home during our inspection.',
   },
   {
     question: 'What\'s the best type of roof ventilation for Charlotte homes?',
-    answer:
+  answer:
       'For Charlotte\'s hot, humid climate, we typically recommend a balanced system with continuous soffit vents for intake and ridge vents for exhaust. This passive system works 24/7 without electricity. For homes with limited ridge space or extra ventilation needs, we may add power ventilators or additional box vents. Every home is different - we\'ll recommend the best solution for your specific situation.',
   },
   {
     question: 'Can I add ventilation to my existing roof?',
-    answer:
+  answer:
       'Absolutely! Ridge vents can be cut into most existing roofs, soffit vents can be added to enclosed soffits, and box vents or power ventilators can be installed on any roof. We often add ventilation during roof repairs or replacements, but standalone ventilation upgrades are also common. We\'ll assess your attic and recommend the most effective improvements.',
   },
   {
     question: 'How much does roof ventilation installation cost?',
-    answer:
+  answer:
       'Costs vary based on the type and extent of ventilation needed. Adding soffit vents to a home typically costs $300-$600. Ridge vent installation during a reroof is often included or costs $500-$1,000 extra. Power ventilators range from $300-$600 per unit installed. A complete ventilation system upgrade for a poorly ventilated home might cost $1,000-$3,000. We provide detailed quotes.',
   },
   {
     question: 'Will better ventilation really lower my energy bills?',
-    answer:
+  answer:
       'Yes, proper attic ventilation can significantly reduce cooling costs. In summer, attics can reach 150°F or higher without adequate ventilation. This heat radiates into your living space, forcing your AC to work harder. With proper ventilation, attic temps stay closer to outside air temperature, potentially reducing cooling costs by 10-15%. Many homeowners see savings that pay for the ventilation within a few years.',
   },
   {
     question: 'Does my roof have enough ventilation?',
-    answer:
+  answer:
       'Many Charlotte homes, especially older ones, are under-ventilated. Signs of inadequate ventilation include an extremely hot attic in summer, ice dams in winter, moisture problems, and shingles that age prematurely. We offer free attic inspections where we measure current ventilation, check for moisture issues, and recommend improvements if needed.',
   },
   {
     question: 'Can too much ventilation be a problem?',
-    answer:
+  answer:
       'Yes, improper ventilation can cause issues. Too much exhaust without adequate intake can create negative pressure, potentially pulling conditioned air from your living space. Mixing different types of exhaust vents (like ridge vents with gable vents) can cause short-circuiting of airflow. We design balanced systems to avoid these problems.',
   },
   {
     question: 'Should I use a power ventilator or passive vents?',
-    answer:
+  answer:
       'For most Charlotte homes, a properly designed passive system (ridge and soffit vents) is sufficient and more reliable since there are no motors to fail. Power ventilators are useful when passive ventilation isn\'t adequate due to limited ridge length, complex roof designs, or extra-large attics. Solar-powered options provide active ventilation without increasing electric bills.',
   },
 ];
@@ -247,7 +247,6 @@ export default function RoofVentilationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

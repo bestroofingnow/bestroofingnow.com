@@ -23,7 +23,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -56,16 +56,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Huntersville NC | 5-Star Rated | Best Roofing Now',
-    description:
+  description:
       '5-star rated, veteran-owned roofers serving Huntersville NC and the Lake Norman area. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service available.',
-    url: `${SITE_CONFIG.url}/roofers-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofers Huntersville NC - Best Roofing Now team at work',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofers Huntersville NC - Best Roofing Now team at work',
       },
     ],
   },
@@ -75,39 +75,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Huntersville homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Huntersville homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Huntersville businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Huntersville businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Huntersville.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Huntersville.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports and photos for Huntersville properties.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports and photos for Huntersville properties.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman area homes.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman area homes.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -115,33 +115,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman area homeowners.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman area homeowners.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofers with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofers with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Huntersville homeowners need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Huntersville homeowners need us most.',
   },
 ];
 
@@ -189,42 +189,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why should I choose Best Roofing Now over other roofers in Huntersville NC?',
-    answer:
+  answer:
       'Best Roofing Now stands out among Huntersville roofers with our 5-star Google rating, BBB A+ accreditation, and veteran-owned values. We have completed over 500 roofs in the Lake Norman area and are certified by CertainTeed, GAF, and Owens Corning. Our deep understanding of Huntersville\'s unique roofing needs, transparent pricing, and industry-leading warranties make us the top choice for local homeowners.',
   },
   {
     question: 'Are your roofers licensed and insured in Huntersville NC?',
-    answer:
+  answer:
       'Yes, all our roofers are fully licensed in North Carolina and we carry comprehensive general liability and workers compensation insurance. This protects Huntersville homeowners from any liability during roofing projects. We are happy to provide proof of insurance and licensing upon request before starting any work.',
   },
   {
     question: 'How much do roofers in Huntersville NC typically charge?',
-    answer:
+  answer:
       'Roofing costs in Huntersville vary based on the scope of work. Minor repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Factors include roof size, pitch, material choice, and complexity. Many Lake Norman area homes have larger footprints, which can affect pricing. We provide free, detailed estimates with transparent pricing and no hidden fees.',
   },
   {
     question: 'Do you offer free estimates for roofing work in Huntersville?',
-    answer:
+  answer:
       'Absolutely! Best Roofing Now provides completely free, no-obligation estimates for all roofing services in Huntersville and the Lake Norman area. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal. There is no pressure to hire us after receiving your estimate.',
   },
   {
     question: 'How quickly can your roofers respond to emergencies in Huntersville?',
-    answer:
+  answer:
       'We offer 24/7 emergency roofing services in Huntersville with typical response times of 1-4 hours for urgent situations like active leaks or storm damage. The Lake Norman area experiences significant storms, especially during spring and summer, and our emergency team is equipped to secure your property quickly, prevent further damage, and document everything for insurance purposes.',
   },
   {
     question: 'What areas near Huntersville do your roofers serve?',
-    answer:
+  answer:
       'Our roofers serve all of Huntersville and the greater Lake Norman region including Birkdale Village, Skybrook, Rosedale, Northstone, Vermillion, and more. We also serve nearby cities like Cornelius, Davidson, Mooresville, Charlotte, Denver, Concord, and areas throughout Mecklenburg and Iredell counties.',
   },
   {
     question: 'What roofing materials work best for Lake Norman area homes?',
-    answer:
+  answer:
       'Huntersville and Lake Norman area homes benefit from materials that withstand our humid subtropical climate. We recommend high-quality architectural shingles (CertainTeed, GAF, Owens Corning), metal roofing for durability and energy efficiency, and impact-resistant options for storm protection. Our experts can help you choose the best material for your specific home and budget.',
   },
   {
     question: 'Do your Huntersville roofers help with insurance claims?',
-    answer:
+  answer:
       'Yes! We have extensive experience helping Huntersville homeowners navigate insurance claims for storm damage. Lake Norman area homes frequently experience hail and wind damage, and our roofers provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. Many Huntersville roofs qualify for insurance coverage after storm events.',
   },
 ];
@@ -239,7 +239,6 @@ export default function RoofersHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-huntersville-nc`}
         pageName="Roofers Huntersville NC"
@@ -617,7 +616,7 @@ export default function RoofersHuntersvilleNCPage() {
               <p className="text-gray text-lg mb-6">
                 Living in Huntersville means enjoying the best of Lake Norman lifestyle - but it also means your
                 roof faces unique challenges. The combination of hot, humid summers, occasional severe thunderstorms,
-                and proximity to the lake creates specific roofing needs that generic contractors may overlook.
+  and proximity to the lake creates specific roofing needs that generic contractors may overlook.
               </p>
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-white rounded-xl p-6">

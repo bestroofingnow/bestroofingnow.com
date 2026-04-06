@@ -34,36 +34,36 @@ export async function generateMetadata({ params }: BrandPageProps): Promise<Meta
     return { title: 'Brand Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${brand.fullName} | Certified Charlotte`,
-    description: `${brand.description} As a ${brand.certificationLevel}, we offer enhanced warranty options on ${brand.name} products.`,
-    keywords: brand.keywords,
-    alternates: {
+  description: `${brand.description} As a ${brand.certificationLevel}, we offer enhanced warranty options on ${brand.name} products.`,
+  keywords: brand.keywords,
+  alternates: {
       canonical: brandCanonicals[slug]
         ? `${SITE_CONFIG.url}${brandCanonicals[slug]}`
         : `${SITE_CONFIG.url}/brands/${slug}`,
     },
-    openGraph: {
+  openGraph: {
       title: `${brand.fullName} | Best Roofing Now Charlotte`,
-      description: brand.description,
-      url: `${SITE_CONFIG.url}/brands/${slug}`,
-      type: 'article',
-      images: [
+  description: brand.description,
+  url: `${SITE_CONFIG.url}/brands/${slug}`,
+  type: 'article',
+  images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: `${brand.fullName} certified installer in Charlotte NC - Best Roofing Now`,
+  width: 1200,
+  height: 630,
+  alt: `${brand.fullName} certified installer in Charlotte NC - Best Roofing Now`,
         },
       ],
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title: `${brand.fullName} | Best Roofing Now Charlotte`,
-      description: brand.description,
-      images: [ogImage],
+  title: `${brand.fullName} | Best Roofing Now Charlotte`,
+  description: brand.description,
+  images: [ogImage],
     },
   };
 }
@@ -84,7 +84,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
   const brandReasons: Record<string, { reasons: string[]; overview: string }> = {
     gaf: {
       overview: 'GAF manufactures roughly one out of every four shingles installed in the United States. Their Timberline HDZ — America\'s best-selling shingle — uses patented LayerLock technology that creates a mechanical bond between layers, improving wind resistance up to 130 MPH. Charlotte homeowners benefit from GAF\'s StainGuard Plus algae-protection warranty, which is especially valuable in our humid, Southern climate.',
-      reasons: [
+  reasons: [
         'Timberline HDZ is the #1 selling shingle in North America for over 20 consecutive years',
         'LayerLock technology provides a mechanical nail-seal bond for 130 MPH wind resistance',
         'StainGuard Plus algae-protection warranty — critical for Charlotte\'s humid climate',
@@ -92,9 +92,9 @@ export default async function BrandPage({ params }: BrandPageProps) {
         'Full roofing system accessories (underlayment, ridge vents, starter strips) for total protection',
       ],
     },
-    certainteed: {
+  certainteed: {
       overview: 'CertainTeed has manufactured building materials in the U.S. since 1904, and their Landmark series architectural shingles consistently rank among the industry\'s most durable and aesthetically versatile options. As a ShingleMaster, Best Roofing Now qualifies for CertainTeed\'s highest warranty tier — the 5-Star SureStart PLUS coverage that includes material and workmanship protection.',
-      reasons: [
+  reasons: [
         'Over 120 years of manufacturing experience in the U.S.',
         'Landmark PRO shingles offer a Class 4 impact-resistance option for hail-prone areas',
         'NaturalWood color palette designed to complement Southern architecture styles',
@@ -104,7 +104,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
     },
     'owens-corning': {
       overview: 'Owens Corning is a Fortune 500 company whose patented SureNail Technology sets their shingles apart in high-wind regions like the Carolinas. The SureNail strip provides a visible nailing target and a triple-layer reinforcement zone, which independent testing shows outperforms standard shingles in blow-off resistance. Their Duration series is engineered for long-term color accuracy even under intense UV exposure.',
-      reasons: [
+  reasons: [
         'Patented SureNail Technology delivers 130 MPH wind-resistance rating with only 4 nails',
         'TruDefinition color granules resist UV fading — ideal for Charlotte\'s 215+ sunny days per year',
         'Duration FLEX shingles bend without cracking, perfect for complex roof shapes and dormers',
@@ -112,9 +112,9 @@ export default async function BrandPage({ params }: BrandPageProps) {
         'ENERGY STAR-rated Cool Roof shingles available to reduce summer cooling costs',
       ],
     },
-    iko: {
+  iko: {
       overview: 'IKO is a global manufacturer with over 70 years of experience and plants across North America and Europe. Their Dynasty line features ArmourZone technology — a reinforced nailing strip that improves wind-uplift resistance and simplifies proper nail placement. For Charlotte homeowners looking for premium performance at a competitive price point, IKO delivers strong value.',
-      reasons: [
+  reasons: [
         'ArmourZone reinforced nailing area improves fastener hold and installation accuracy',
         'Dynasty shingles rated for 130 MPH winds with only 4 nails per shingle',
         'Nordic line offers extra-large 7.4-inch exposure for dramatic curb appeal',
@@ -122,9 +122,9 @@ export default async function BrandPage({ params }: BrandPageProps) {
         'Competitive pricing makes premium architectural shingles accessible for more budgets',
       ],
     },
-    tamko: {
+  tamko: {
       overview: 'TAMKO is a family-owned American manufacturer that has been producing roofing products since 1944. Their Titan XT heavyweight shingle was designed specifically for extreme weather regions, making it a strong choice for the Charlotte area where summer storms and occasional hail are common. TAMKO also offers one of the broadest 3-tab selections on the market for budget-conscious projects.',
-      reasons: [
+  reasons: [
         'Family-owned for 80+ years — company values align with Best Roofing Now\'s family-run approach',
         'Titan XT heavyweight shingle provides extra thickness for severe-weather protection',
         'Heritage series architectural shingles deliver reliable performance at competitive prices',
@@ -136,7 +136,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
 
   const brandContent = brandReasons[slug] || {
     overview: `${brand.name} is a trusted name in the roofing industry, and as a ${brand.certificationLevel}, Best Roofing Now can offer enhanced warranty options on every ${brand.name} installation.`,
-    reasons: [
+  reasons: [
       'Industry-leading research and development',
       'Rigorous quality control and testing',
       'Wide range of colors and styles',

@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Real Roofing Stories from Charlotte Neighborhoods | Best Roofing Now',
-    description: 'See our completed roofing projects across Charlotte. Real homes, real results.',
-    url: `${SITE_CONFIG.url}/stories`,
+  description: 'See our completed roofing projects across Charlotte. Real homes, real results.',
+  url: `${SITE_CONFIG.url}/stories`,
   },
   alternates: {
     canonical: `${SITE_CONFIG.url}/stories`,
@@ -30,15 +30,15 @@ export const metadata: Metadata = {
 const STORY_FAQS = [
   {
     question: 'How many roofing projects has Best Roofing Now completed in Charlotte?',
-    answer: 'Best Roofing Now has completed over 500 roofing projects across Charlotte and surrounding areas including Huntersville, Cornelius, Concord, and Rock Hill. Our project map shows completed work in virtually every Charlotte neighborhood.',
+  answer: 'Best Roofing Now has completed over 500 roofing projects across Charlotte and surrounding areas including Huntersville, Cornelius, Concord, and Rock Hill. Our project map shows completed work in virtually every Charlotte neighborhood.',
   },
   {
     question: 'Can I see examples of roofs Best Roofing Now has installed in my neighborhood?',
-    answer: 'Yes! Our Stories section features real roofing projects organized by neighborhood and zip code. You can browse projects in Myers Park, Ballantyne, Highland Creek, SouthPark, and many more Charlotte neighborhoods.',
+  answer: 'Yes! Our Stories section features real roofing projects organized by neighborhood and zip code. You can browse projects in Myers Park, Ballantyne, Highland Creek, SouthPark, and many more Charlotte neighborhoods.',
   },
   {
     question: 'What roofing materials does Best Roofing Now use most often?',
-    answer: 'Our most popular products are CertainTeed Landmark architectural shingles and GAF Timberline HDZ shingles. Both offer excellent durability for Charlotte\'s climate with warranties up to lifetime coverage.',
+  answer: 'Our most popular products are CertainTeed Landmark architectural shingles and GAF Timberline HDZ shingles. Both offer excellent durability for Charlotte\'s climate with warranties up to lifetime coverage.',
   },
 ];
 

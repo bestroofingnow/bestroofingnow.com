@@ -102,6 +102,7 @@ const serviceContent: Record<
     benefits: string[];
     process: { title: string; description: string }[];
     faqs: { question: string; answer: string }[];
+    trendNote2026?: string;
   }
 > = {
   'residential-roofing': {
@@ -113,18 +114,19 @@ const serviceContent: Record<
       'Clean job sites - we respect your property',
       'Financing options available',
     ],
-    process: [
+  process: [
       { title: 'Free Inspection', description: 'We thoroughly assess your roof and provide a detailed report with photos.' },
       { title: 'Custom Quote', description: 'Receive a transparent, itemized quote with no hidden fees or surprises.' },
       { title: 'Material Selection', description: 'Choose from premium shingles, colors, and styles that match your home.' },
       { title: 'Professional Installation', description: 'Our certified crew installs your roof with precision and care.' },
       { title: 'Final Walkthrough', description: 'We inspect the completed work together and ensure your satisfaction.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'How long does a residential roof replacement take?', answer: 'Most residential roofs can be replaced in 1-3 days depending on size and complexity. We work efficiently while maintaining the highest quality standards.' },
       { question: 'What roofing materials do you recommend for Charlotte homes?', answer: 'We primarily recommend CertainTeed Landmark shingles for their durability, warranty, and value. For premium options, we offer GAF Timberline and architectural shingles.' },
       { question: 'Do you offer financing for residential roofing?', answer: 'Yes! We offer flexible financing options including 0% interest for qualified buyers. Ask about our payment plans during your free consultation.' },
     ],
+  trendNote2026: 'In 2026, Charlotte homeowners are choosing impact-resistant shingles and cool-roof technology for better storm protection and lower energy bills. Ask us about insurance discounts for Class 4 shingles.',
   },
   'commercial-roofing': {
     benefits: [
@@ -135,18 +137,19 @@ const serviceContent: Record<
       'Commercial-grade warranties',
       'Emergency repair services 24/7',
     ],
-    process: [
+  process: [
       { title: 'Site Assessment', description: 'Our commercial specialists evaluate your roof and business needs.' },
       { title: 'Detailed Proposal', description: 'Receive a comprehensive proposal with timeline and cost breakdown.' },
       { title: 'Project Planning', description: 'We coordinate with your schedule to minimize business disruption.' },
       { title: 'Expert Installation', description: 'Commercial-certified crews complete the work safely and efficiently.' },
       { title: 'Ongoing Support', description: 'Maintenance programs keep your roof protected year-round.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'What types of commercial roofing do you install?', answer: 'We specialize in TPO, PVC, modified bitumen, metal roofing, and built-up roofing systems. Each has advantages depending on your building and budget.' },
       { question: 'How do you minimize disruption to my business?', answer: 'We work around your schedule, often completing work in sections or during off-hours. Our crews are trained to maintain a safe, clean work environment.' },
       { question: 'Do you offer commercial roof maintenance contracts?', answer: 'Yes! Our maintenance programs include regular inspections, preventive repairs, and priority service. This extends your roof life and prevents costly emergency repairs.' },
     ],
+  trendNote2026: 'Commercial roof coatings and TPO systems continue to dominate Charlotte\'s commercial market in 2026, with energy-efficient options delivering ROI within 3-5 years through reduced cooling costs.',
   },
   'roof-repair': {
     benefits: [
@@ -157,18 +160,19 @@ const serviceContent: Record<
       'Insurance claim assistance',
       'Written warranties on all repairs',
     ],
-    process: [
+  process: [
       { title: 'Report the Issue', description: 'Call us or submit a request online - we respond quickly.' },
       { title: 'Rapid Assessment', description: 'We inspect the damage and identify the root cause.' },
       { title: 'Upfront Pricing', description: 'You receive a clear quote before any work begins.' },
       { title: 'Expert Repair', description: 'Our skilled technicians complete the repair right the first time.' },
       { title: 'Quality Check', description: 'We verify the repair and ensure your roof is fully protected.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'How quickly can you repair my roof?', answer: 'For emergencies, we offer same-day service. Standard repairs are typically scheduled within 1-3 business days depending on severity and weather.' },
       { question: 'Will you recommend a full replacement when I only need repairs?', answer: 'Never. We believe in honest assessments. If repairs can extend your roof life cost-effectively, that\'s what we\'ll recommend. We only suggest replacement when truly necessary.' },
       { question: 'Do you repair all types of roofs?', answer: 'Yes! We repair asphalt shingles, metal roofs, flat roofs, tile, slate, and more. Our team has experience with all residential and commercial roofing systems.' },
     ],
+  trendNote2026: 'With 2026 storm season approaching, proactive roof repairs are more important than ever. Our $49/month maintenance plan catches small issues before they become costly emergencies.',
   },
   'roof-replacement': {
     benefits: [
@@ -179,18 +183,19 @@ const serviceContent: Record<
       'Financing available',
       'Increase your home value',
     ],
-    process: [
+  process: [
       { title: 'Free Consultation', description: 'We assess your current roof and discuss your goals and budget.' },
       { title: 'Material Selection', description: 'Choose from our curated selection of premium roofing materials.' },
       { title: 'Preparation', description: 'We obtain permits and prepare your property for installation.' },
       { title: 'Installation', description: 'Complete tear-off, inspection of decking, and new roof installation.' },
       { title: 'Final Inspection', description: 'Thorough cleanup and walkthrough to ensure your satisfaction.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'How do I know if I need a roof replacement?', answer: 'Signs include age (15-25+ years), multiple leaks, widespread damage, curling/missing shingles, and granules in gutters. We provide free inspections to assess your roof honestly.' },
       { question: 'How much does a roof replacement cost in Charlotte?', answer: 'Costs typically range from $8,000 to $25,000+ depending on size, materials, and complexity. We provide detailed, transparent quotes with no hidden fees.' },
       { question: 'What happens to my old roof materials?', answer: 'We handle complete tear-off and disposal. Materials are taken to appropriate facilities, and recyclable components are processed responsibly.' },
     ],
+  trendNote2026: 'In 2026, the average Charlotte roof replacement costs $8,500-$25,000 depending on materials and size. We offer 0% financing to make your new roof affordable.',
   },
   'emergency-roofing': {
     benefits: [
@@ -201,18 +206,19 @@ const serviceContent: Record<
       'Priority scheduling',
       'Prevent further damage to your home',
     ],
-    process: [
+  process: [
       { title: 'Emergency Call', description: 'Call our 24/7 line - we answer day or night, rain or shine.' },
       { title: 'Rapid Response', description: 'Our emergency team arrives quickly to assess the situation.' },
       { title: 'Immediate Protection', description: 'We tarp or temporarily repair to prevent further damage.' },
       { title: 'Damage Documentation', description: 'Thorough documentation for your insurance claim.' },
       { title: 'Permanent Solution', description: 'We schedule full repairs once the emergency is contained.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'What qualifies as a roofing emergency?', answer: 'Active leaks, storm damage with exposed areas, fallen trees, significant structural damage, or any situation where delay could cause additional damage to your home.' },
       { question: 'How fast can you respond to emergencies?', answer: 'We prioritize emergencies and typically respond within 1-4 hours depending on conditions. For active leaks during storms, we come as quickly as safely possible.' },
       { question: 'Do you help with insurance claims for storm damage?', answer: 'Absolutely. We document all damage thoroughly, work directly with adjusters, and advocate for fair claim settlements. Our team has extensive experience with insurance processes.' },
     ],
+  trendNote2026: 'Charlotte\'s 2026 storm season is predicted to be active. Save our number (704) 605-6047 now so you\'re ready when severe weather strikes.',
   },
   'storm-damage': {
     benefits: [
@@ -223,18 +229,19 @@ const serviceContent: Record<
       'Fight for fair settlements',
       'Handle the entire claims process',
     ],
-    process: [
+  process: [
       { title: 'Free Inspection', description: 'We assess all storm damage to your roof, gutters, and siding.' },
       { title: 'Detailed Documentation', description: 'Photos, measurements, and reports ready for your insurance.' },
       { title: 'Insurance Coordination', description: 'We work directly with your adjuster and advocate for you.' },
       { title: 'Claim Approval', description: 'Once approved, we schedule repairs at your convenience.' },
       { title: 'Quality Restoration', description: 'Your roof is restored to pre-storm condition or better.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Should I file an insurance claim for roof damage?', answer: 'If you have significant storm damage, usually yes. We provide free inspections and honest assessments. Sometimes damage appears minor but affects your roof\'s integrity - we\'ll advise you honestly.' },
       { question: 'Will filing a claim raise my insurance rates?', answer: 'Storm damage claims typically don\'t affect rates like at-fault claims do. Your policy protects you for events like this. We can discuss your specific situation during inspection.' },
       { question: 'What if my insurance denies my claim?', answer: 'We help appeal denials with additional documentation and can work with public adjusters if needed. Our thorough documentation often helps overturn initial denials.' },
     ],
+  trendNote2026: '2026 update: Charlotte metro experienced significant storm activity in recent years. If your roof is 10+ years old, a free inspection can identify vulnerabilities before the next storm.',
   },
   'roof-inspection': {
     benefits: [
@@ -245,18 +252,19 @@ const serviceContent: Record<
       'Documentation for insurance or selling',
       'Expert recommendations',
     ],
-    process: [
+  process: [
       { title: 'Schedule Inspection', description: 'Book online or call - we work around your schedule.' },
       { title: 'Thorough Assessment', description: 'We inspect every aspect of your roof inside and out.' },
       { title: 'Photo Documentation', description: 'Detailed photos of any issues or areas of concern.' },
       { title: 'Written Report', description: 'Receive a comprehensive report with our findings.' },
       { title: 'Expert Consultation', description: 'We review the report and answer all your questions.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Is the roof inspection really free?', answer: 'Yes, 100% free with no obligation. We believe in educating homeowners about their roof\'s condition. There\'s no pressure to buy anything.' },
       { question: 'What do you look for during an inspection?', answer: 'We check shingles, flashing, vents, gutters, soffits, attic ventilation, signs of leaks, structural integrity, and overall wear. We also look for storm damage that may not be visible from the ground.' },
       { question: 'How often should I have my roof inspected?', answer: 'We recommend annual inspections, plus after any significant storm. Regular inspections catch small issues before they become expensive problems.' },
     ],
+  trendNote2026: 'In 2026, our free inspections now include drone photography for a complete aerial view of your roof condition, plus a detailed digital report you can share with your insurance company.',
   },
   'gutters': {
     benefits: [
@@ -267,18 +275,19 @@ const serviceContent: Record<
       'Proper drainage solutions',
       'Prevent foundation damage',
     ],
-    process: [
+  process: [
       { title: 'Assessment', description: 'We evaluate your current gutters and drainage needs.' },
       { title: 'Custom Solution', description: 'Recommendations tailored to your home and budget.' },
       { title: 'Professional Installation', description: 'Seamless gutters custom-fit to your home on-site.' },
       { title: 'Quality Check', description: 'We test flow and ensure proper drainage.' },
       { title: 'Maintenance Tips', description: 'Guidance on keeping your gutters functioning optimally.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Why are seamless gutters better?', answer: 'Seamless gutters have no joints along their length, reducing leak points. They\'re custom-made on-site to fit your home perfectly and look cleaner than sectional gutters.' },
       { question: 'Do gutter guards really work?', answer: 'Quality gutter guards significantly reduce debris buildup and maintenance needs. We offer several options and can recommend the best choice for your trees and environment.' },
       { question: 'How often should gutters be cleaned?', answer: 'Without guards, twice yearly (spring and fall) is recommended. With quality guards, annual inspection is usually sufficient. We offer maintenance services if needed.' },
     ],
+  trendNote2026: 'In 2026, seamless gutter systems with integrated leaf guards are the gold standard for Charlotte homes. Stop cleaning gutters twice a year — ask about our gutter guard solutions.',
   },
   'siding': {
     benefits: [
@@ -289,14 +298,14 @@ const serviceContent: Record<
       'Color and style variety',
       'Low maintenance options',
     ],
-    process: [
+  process: [
       { title: 'Consultation', description: 'Discuss your goals, preferences, and budget.' },
       { title: 'Material Selection', description: 'Choose from vinyl, fiber cement, wood, or other options.' },
       { title: 'Preparation', description: 'Protect landscaping and prepare your home.' },
       { title: 'Installation', description: 'Expert installation with attention to detail.' },
       { title: 'Final Walkthrough', description: 'Inspect the completed work and ensure satisfaction.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'What siding material do you recommend?', answer: 'It depends on your priorities. Vinyl offers low maintenance and affordability. Fiber cement provides durability and fire resistance. We\'ll help you choose based on your needs and budget.' },
       { question: 'Can you match my existing siding for repairs?', answer: 'In most cases, yes. We work to match colors and styles for seamless repairs. If exact matches aren\'t available, we\'ll discuss options with you.' },
       { question: 'Does new siding improve energy efficiency?', answer: 'Yes! Modern siding with proper insulation can significantly improve your home\'s energy efficiency, reducing heating and cooling costs.' },
@@ -311,14 +320,14 @@ const serviceContent: Record<
       'Maintain manufacturer warranty compliance',
       'Protect your largest investment - your home',
     ],
-    process: [
+  process: [
       { title: 'Schedule Your Visit', description: 'Choose a convenient time for your annual or bi-annual maintenance.' },
       { title: 'Comprehensive Inspection', description: 'We check shingles, flashing, vents, boots, and all roof components.' },
       { title: 'Preventive Repairs', description: 'Fix minor issues like cracked caulk, lifted shingles, and worn seals on the spot.' },
       { title: 'Debris & Gutter Cleaning', description: 'Clear leaves, branches, and buildup from your roof and gutters.' },
       { title: 'Photo Report & Recommendations', description: 'Receive a detailed report with photos and maintenance recommendations.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'How often should homeowners have roof maintenance?', answer: 'We recommend annual maintenance for most homes, ideally in spring or fall. Homes with many trees or in heavily wooded areas may benefit from twice-yearly maintenance to clear debris and check for damage from falling branches.' },
       { question: 'What does residential roof maintenance include?', answer: 'Our residential maintenance includes a comprehensive shingle-by-shingle inspection, checking all flashing and penetrations, vent boot assessment, gutter cleaning, debris removal, minor repairs, and a detailed photo report for your records.' },
       { question: 'Does maintenance keep my warranty valid?', answer: 'Yes! Most manufacturer warranties require regular maintenance to remain valid. We document all maintenance visits so you have proof of proper care if you ever need to make a warranty claim.' },
@@ -333,14 +342,14 @@ const serviceContent: Record<
       'HVAC penetration monitoring and sealing',
       'Documented maintenance history for property records',
     ],
-    process: [
+  process: [
       { title: 'Initial Assessment', description: 'Evaluate your commercial roof system type, age, and condition.' },
       { title: 'Bi-Annual Inspections', description: 'Scheduled visits in spring and fall to catch seasonal issues.' },
       { title: 'Drain & Debris Clearing', description: 'Clear all drains, scuppers, and gutters to prevent ponding water.' },
       { title: 'Membrane & Seam Inspection', description: 'Check TPO, EPDM, or PVC seams, penetrations, and flashings.' },
       { title: 'Detailed Property Report', description: 'Comprehensive documentation for property management and insurance records.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'How often should commercial roofs be maintained?', answer: 'We recommend bi-annual maintenance for commercial flat roofs - once in spring after winter weather and once in fall before winter sets in. High-traffic roofs with frequent HVAC access may need quarterly inspections.' },
       { question: 'What\'s included in commercial roof maintenance?', answer: 'Our commercial program includes membrane inspection, seam integrity checks, drain and scupper clearing, HVAC penetration assessment, parapet wall inspection, ponding water analysis, and a detailed report with photos for your property records.' },
       { question: 'Can maintenance extend my commercial roof\'s life?', answer: 'Absolutely. Proactive maintenance can add 5-10 years to a commercial roof\'s lifespan. More importantly, it prevents emergency repairs that cause business disruptions and costly interior damage from leaks.' },
@@ -355,14 +364,14 @@ const serviceContent: Record<
       'Tubular options for tight spaces',
       'Increase home value',
     ],
-    process: [
+  process: [
       { title: 'Consultation', description: 'Discuss your goals and identify the best skylight location.' },
       { title: 'Product Selection', description: 'Choose from fixed, venting, or tubular skylights.' },
       { title: 'Structural Assessment', description: 'Evaluate roof structure and plan the installation.' },
       { title: 'Professional Installation', description: 'Expert installation with proper flashing and sealing.' },
       { title: 'Quality Assurance', description: 'Test for leaks and ensure proper operation.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Will a skylight leak?', answer: 'Not when properly installed! We use premium flashing kits and follow manufacturer guidelines precisely. Our skylights are warranted against leaks.' },
       { question: 'What type of skylight is best for my home?', answer: 'It depends on your needs. Fixed skylights are most affordable. Venting skylights add ventilation. Tubular skylights work great for small spaces or rooms without direct roof access.' },
       { question: 'How much natural light will I get?', answer: 'A standard 2x4 skylight can illuminate a 200+ sq ft room. We\'ll help you determine the right size and placement for optimal lighting.' },
@@ -377,14 +386,14 @@ const serviceContent: Record<
       'Prevent moisture damage',
       'Improve indoor comfort',
     ],
-    process: [
+  process: [
       { title: 'Ventilation Assessment', description: 'Calculate your attic\'s ventilation needs based on size.' },
       { title: 'Solution Design', description: 'Recommend the right combination of intake and exhaust vents.' },
       { title: 'Professional Installation', description: 'Install ridge vents, soffit vents, or powered ventilators.' },
       { title: 'Balance Check', description: 'Ensure proper airflow balance for optimal performance.' },
       { title: 'Performance Verification', description: 'Test ventilation effectiveness and explain operation.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Why is roof ventilation important?', answer: 'Proper ventilation prevents heat buildup that damages shingles, reduces energy costs, and prevents moisture problems that lead to mold and rot.' },
       { question: 'What signs indicate poor ventilation?', answer: 'Signs include ice dams in winter, excessive heat in upper floors, curling shingles, mold in the attic, and higher-than-expected energy bills.' },
       { question: 'What type of ventilation do I need?', answer: 'Most homes benefit from a combination of soffit intake vents and ridge exhaust vents. We\'ll calculate your specific needs based on attic square footage.' },
@@ -399,14 +408,14 @@ const serviceContent: Record<
       'Crown repair and restoration',
       'Protect your home from water damage',
     ],
-    process: [
+  process: [
       { title: 'Chimney Inspection', description: 'Assess chimney condition, flashing, cap, and crown.' },
       { title: 'Problem Identification', description: 'Document issues and recommend solutions.' },
       { title: 'Repair Planning', description: 'Provide detailed quote for necessary repairs.' },
       { title: 'Professional Repair', description: 'Expert repairs with quality materials.' },
       { title: 'Waterproofing', description: 'Apply waterproof sealant for long-term protection.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Why do chimneys cause roof leaks?', answer: 'The chimney-roof intersection is vulnerable to leaks if flashing fails or the chimney crown cracks. Regular maintenance prevents these common issues.' },
       { question: 'Do I need a chimney cap?', answer: 'Yes! Chimney caps prevent rain, debris, and animals from entering your chimney. They also contain sparks and improve draft.' },
       { question: 'How often should chimney flashing be replaced?', answer: 'Quality flashing lasts 20-30 years but should be inspected annually. We often repair or reseal flashing rather than full replacement.' },
@@ -421,14 +430,14 @@ const serviceContent: Record<
       'Low-maintenance materials',
       'Color options to match your home',
     ],
-    process: [
+  process: [
       { title: 'Assessment', description: 'Inspect existing soffit and fascia condition.' },
       { title: 'Material Selection', description: 'Choose aluminum, vinyl, or wood options.' },
       { title: 'Color Matching', description: 'Select colors that complement your home.' },
       { title: 'Professional Installation', description: 'Remove old materials and install new.' },
       { title: 'Final Inspection', description: 'Ensure proper fit, ventilation, and appearance.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'What is soffit and fascia?', answer: 'Fascia is the board behind your gutter that covers rafter ends. Soffit is the underside of your roof overhang. Together they protect your roof structure and allow ventilation.' },
       { question: 'What material is best for soffit and fascia?', answer: 'Aluminum is most popular for durability and low maintenance. Vinyl is affordable. Wood offers a traditional look but requires more upkeep.' },
       { question: 'How do I know if my soffit needs replacing?', answer: 'Signs include peeling paint, rotting wood, pest damage, visible holes, or sagging. We provide free inspections to assess your needs.' },
@@ -443,14 +452,14 @@ const serviceContent: Record<
       'Emergency leak repair',
       'Extend roof life with coatings',
     ],
-    process: [
+  process: [
       { title: 'Flat Roof Inspection', description: 'Identify leaks, ponding areas, and membrane damage.' },
       { title: 'Solution Recommendation', description: 'Repair, coating, or replacement based on condition.' },
       { title: 'Surface Preparation', description: 'Clean and prep the roof surface.' },
       { title: 'Expert Repair', description: 'Apply patches, seams, or full coatings as needed.' },
       { title: 'Quality Testing', description: 'Water test repairs to ensure leak-free performance.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Why do flat roofs leak more than pitched roofs?', answer: 'Flat roofs can develop ponding water if not properly sloped. Over time, standing water degrades membranes and causes leaks. We address both the leak and drainage issues.' },
       { question: 'Can you coat my flat roof instead of replacing it?', answer: 'Often yes! Roof coatings can extend a flat roof\'s life by 10-15 years at a fraction of replacement cost. We\'ll assess if your roof is a good candidate.' },
       { question: 'What types of flat roofs do you repair?', answer: 'We repair all types: TPO, EPDM, PVC, modified bitumen, and built-up roofs. Our technicians are trained in all major flat roofing systems.' },
@@ -466,18 +475,19 @@ const serviceContent: Record<
       'Fire resistant - Class A rating',
       'Low maintenance requirements',
     ],
-    process: [
+  process: [
       { title: 'Consultation', description: 'Discuss your goals, budget, and metal roofing options.' },
       { title: 'Material Selection', description: 'Choose from standing seam, metal shingles, or corrugated panels.' },
       { title: 'Detailed Measurement', description: 'Precise measurements for custom panel fabrication.' },
       { title: 'Professional Installation', description: 'Expert installation with proper underlayment and flashing.' },
       { title: 'Final Inspection', description: 'Quality check and warranty registration.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Is metal roofing loud during rain?', answer: 'Not with proper installation! Modern metal roofs are installed over solid decking with underlayment, making them no louder than asphalt shingles.' },
       { question: 'Will metal roofing attract lightning?', answer: 'No, metal roofing doesn\'t attract lightning any more than other roofing materials. If struck, metal actually disperses the energy safely and won\'t catch fire.' },
       { question: 'How long does a metal roof last?', answer: 'Quality metal roofs last 50-70 years with minimal maintenance - 2-3 times longer than asphalt shingles. Many come with 50-year warranties.' },
     ],
+  trendNote2026: 'Metal roofing demand in Charlotte surged in 2026 as homeowners discover 50+ year lifespans and up to 25% energy savings. Standing seam metal is now the #1 premium upgrade in the Charlotte metro.',
   },
   'gutter-cleaning': {
     benefits: [
@@ -488,14 +498,14 @@ const serviceContent: Record<
       'Extend gutter lifespan',
       'Maintain proper drainage',
     ],
-    process: [
+  process: [
       { title: 'Inspection', description: 'Assess gutter condition and debris buildup.' },
       { title: 'Debris Removal', description: 'Hand-remove all leaves, twigs, and debris.' },
       { title: 'Downspout Flush', description: 'Flush downspouts to ensure proper flow.' },
       { title: 'System Check', description: 'Check for leaks, loose hangers, and damage.' },
       { title: 'Cleanup', description: 'Remove all debris from your property.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'How often should I have my gutters cleaned?', answer: 'We recommend twice yearly - in late spring after pollen season and late fall after leaves drop. Homes with many trees may need more frequent cleaning.' },
       { question: 'Can clogged gutters really damage my home?', answer: 'Yes! Clogged gutters cause water to overflow, damaging your foundation, causing basement flooding, rotting fascia boards, and creating conditions for mold growth.' },
       { question: 'Do you offer gutter cleaning maintenance plans?', answer: 'Yes! We offer annual and semi-annual gutter cleaning plans at discounted rates. Ask about our maintenance programs.' },
@@ -510,14 +520,14 @@ const serviceContent: Record<
       'No upfront costs in most cases',
       'Maximize your claim settlement',
     ],
-    process: [
+  process: [
       { title: 'Free Inspection', description: 'Thorough damage assessment with photo documentation.' },
       { title: 'Claim Filing Assistance', description: 'Help you file your claim with proper documentation.' },
       { title: 'Adjuster Meeting', description: 'Meet with insurance adjuster to review damage.' },
       { title: 'Scope Agreement', description: 'Work with insurance to agree on repair scope.' },
       { title: 'Quality Restoration', description: 'Complete repairs to pre-storm condition.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Will you help me file my insurance claim?', answer: 'Absolutely! We handle the entire process - from initial documentation to adjuster meetings to final settlement. We advocate for you throughout.' },
       { question: 'What if my insurance denies my claim?', answer: 'We help appeal denied claims with additional documentation and evidence. Our thorough documentation often helps overturn initial denials.' },
       { question: 'Do I have to pay anything upfront?', answer: 'For insurance claims, you typically only pay your deductible. We work directly with your insurance company and receive payment from them after repairs are complete.' },
@@ -532,14 +542,14 @@ const serviceContent: Record<
       'Protect foundation from water damage',
       'Increase curb appeal',
     ],
-    process: [
+  process: [
       { title: 'Assessment', description: 'Evaluate your home\'s drainage needs and roof layout.' },
       { title: 'Material Selection', description: 'Choose gutter size, color, and style.' },
       { title: 'On-Site Fabrication', description: 'Custom seamless gutters made on your property.' },
       { title: 'Professional Installation', description: 'Secure mounting with proper slope for drainage.' },
       { title: 'Flow Testing', description: 'Test system to ensure proper water flow.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Why are seamless gutters better?', answer: 'Seamless gutters have no joints along their length, eliminating the most common leak points. They\'re custom-made on-site to fit your home perfectly.' },
       { question: 'What size gutters do I need?', answer: 'Most homes use 5-inch gutters. Larger homes or those with steep roofs may benefit from 6-inch gutters. We\'ll recommend the right size for your needs.' },
       { question: 'How long do new gutters last?', answer: 'Quality aluminum gutters last 20-30 years with proper maintenance. We also offer copper gutters that can last 50+ years.' },
@@ -554,14 +564,14 @@ const serviceContent: Record<
       'Repair or replace downspouts',
       'Extend gutter system life',
     ],
-    process: [
+  process: [
       { title: 'Inspection', description: 'Identify all gutter issues and damage.' },
       { title: 'Repair Assessment', description: 'Determine if repair or replacement is best.' },
       { title: 'Expert Repair', description: 'Fix leaks, reattach sections, seal seams.' },
       { title: 'Flow Test', description: 'Verify proper drainage after repairs.' },
       { title: 'Maintenance Tips', description: 'Guidance on keeping gutters functioning.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Can you repair just a section of my gutters?', answer: 'Yes! We often repair individual sections rather than replacing the entire system. We\'ll give you an honest assessment of what\'s needed.' },
       { question: 'Why are my gutters pulling away from the house?', answer: 'Usually due to failed hangers, rotted fascia, or ice/debris weight. We can reattach gutters and address underlying issues.' },
       { question: 'Should I repair or replace my old gutters?', answer: 'It depends on the extent of damage and age. We\'ll give you an honest recommendation - sometimes repairs are all you need, sometimes replacement is more cost-effective.' },
@@ -576,14 +586,14 @@ const serviceContent: Record<
       'Extend gutter lifespan',
       'Reduce maintenance costs',
     ],
-    process: [
+  process: [
       { title: 'Gutter Assessment', description: 'Inspect existing gutters and debris challenges.' },
       { title: 'Product Selection', description: 'Recommend best guard type for your situation.' },
       { title: 'Gutter Cleaning', description: 'Thoroughly clean gutters before installation.' },
       { title: 'Guard Installation', description: 'Secure guards with proper fit and slope.' },
       { title: 'Performance Check', description: 'Test water flow through guard system.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Do gutter guards really work?', answer: 'Quality gutter guards significantly reduce debris buildup and maintenance. The key is choosing the right type for your specific trees and conditions.' },
       { question: 'What type of gutter guard is best?', answer: 'Micro-mesh guards work best for pine needles and small debris. Solid covers with surface tension are great for leaves. We\'ll recommend the best option for your home.' },
       { question: 'Will I never have to clean my gutters again?', answer: 'Guards dramatically reduce cleaning, but some maintenance may still be needed occasionally. Most homeowners go from twice-yearly cleaning to once every few years.' },
@@ -598,14 +608,14 @@ const serviceContent: Record<
       'Increase property value',
       'Multiple style and color options',
     ],
-    process: [
+  process: [
       { title: 'Consultation', description: 'Discuss your vision, budget, and material preferences.' },
       { title: 'Material Selection', description: 'Choose from vinyl, fiber cement, wood, or other options.' },
       { title: 'Site Preparation', description: 'Remove old siding and install moisture barriers.' },
       { title: 'Expert Installation', description: 'Precise installation with attention to detail.' },
       { title: 'Finishing Touches', description: 'Install trim, caulk, and final inspection.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Which siding material is best for Charlotte?', answer: 'Fiber cement (James Hardie) is excellent for our humid climate - it resists moisture, insects, and rot. Insulated vinyl is also popular for its energy efficiency and low cost.' },
       { question: 'How long does new siding last?', answer: 'Vinyl lasts 20-40 years, fiber cement 50+ years, and properly maintained wood 20-40 years. All our siding comes with manufacturer warranties.' },
       { question: 'Can you install siding over existing siding?', answer: 'Sometimes, but we usually recommend removing old siding to inspect sheathing for damage and ensure proper installation. We\'ll assess your specific situation.' },
@@ -620,14 +630,14 @@ const serviceContent: Record<
       'More affordable than full replacement',
       'Quick turnaround times',
     ],
-    process: [
+  process: [
       { title: 'Damage Assessment', description: 'Identify all damaged areas and underlying issues.' },
       { title: 'Material Matching', description: 'Source matching siding materials and colors.' },
       { title: 'Remove Damaged Sections', description: 'Carefully remove damaged siding.' },
       { title: 'Repair & Replace', description: 'Install new sections with proper sealing.' },
       { title: 'Quality Check', description: 'Ensure seamless appearance and weather tightness.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'Can you match my existing siding color?', answer: 'In most cases, yes. We have access to extensive color libraries and can often find exact or very close matches. For older siding, we\'ll discuss your options.' },
       { question: 'Is it worth repairing or should I replace all the siding?', answer: 'It depends on the extent of damage and siding age. If damage is localized and siding is in good condition overall, repair is cost-effective. We\'ll give you an honest assessment.' },
       { question: 'What causes siding damage?', answer: 'Common causes include storm damage (hail, wind, debris), moisture intrusion, pest damage, sun fading, and impact from lawn equipment. We\'ll identify the cause and prevent recurrence.' },
@@ -642,14 +652,14 @@ const serviceContent: Record<
       'Licensed and insured professionals',
       'Restore to pre-loss condition or better',
     ],
-    process: [
+  process: [
       { title: 'Emergency Response', description: 'Immediate action to secure and protect your property.' },
       { title: 'Damage Assessment', description: 'Comprehensive evaluation and documentation.' },
       { title: 'Insurance Coordination', description: 'Work with your insurance for proper coverage.' },
       { title: 'Restoration Plan', description: 'Develop detailed plan for complete restoration.' },
       { title: 'Quality Restoration', description: 'Execute repairs to restore your property fully.' },
     ],
-    faqs: [
+  faqs: [
       { question: 'What types of damage do you restore?', answer: 'We handle storm damage (hail, wind, tornado), fire damage to exteriors, water damage from roof leaks, and other catastrophic events affecting your roof, siding, gutters, and exterior.' },
       { question: 'Do you work with insurance companies?', answer: 'Yes! We have extensive experience with insurance claims and handle all communication, documentation, and coordination with your insurance company.' },
       { question: 'How quickly can you respond to emergencies?', answer: 'We offer 24/7 emergency response with typical arrival within 1-4 hours. We\'ll immediately secure your property to prevent further damage.' },
@@ -729,32 +739,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title,
-    description,
-    keywords: service.keywords,
-    alternates: {
+  description,
+  keywords: service.keywords,
+  alternates: {
       canonical: serviceCanonicals[slug]
         ? `${SITE_CONFIG.url}${serviceCanonicals[slug]}`
         : `${SITE_CONFIG.url}/services/${slug}`,
     },
-    openGraph: {
+  openGraph: {
       title,
-      description,
-      url: `${SITE_CONFIG.url}/services/${slug}`,
-      type: 'website',
-      images: [
+  description,
+  url: `${SITE_CONFIG.url}/services/${slug}`,
+  type: 'website',
+  images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: `${service.title} services in Charlotte NC - Best Roofing Now`,
+  width: 1200,
+  height: 630,
+  alt: `${service.title} services in Charlotte NC - Best Roofing Now`,
         },
       ],
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title,
-      description,
-      images: [ogImage],
+  title,
+  description,
+  images: [ogImage],
     },
   };
 }
@@ -782,7 +792,7 @@ export default async function ServicePage({ params }: PageProps) {
   // Gallery images for schema
   const galleryImages = pageImages.map((img, index) => ({
     url: img,
-    caption: `${service.title} project ${index + 1} in Charlotte NC - Best Roofing Now`,
+  caption: `${service.title} project ${index + 1} in Charlotte NC - Best Roofing Now`,
   }));
 
   return (
@@ -868,6 +878,17 @@ export default async function ServicePage({ params }: PageProps) {
                 {SITE_CONFIG.phone}
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO Quick Answer - optimized for AI search engines and featured snippets */}
+      <section className="py-8 bg-white border-b border-gray-100">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg text-gray leading-relaxed">
+              <strong className="text-dark">{service.title}</strong> — {service.description} Best Roofing Now is Charlotte&apos;s top-rated provider of {service.title.toLowerCase()} services in 2026, with a 5.0 Google rating and {SITE_CONFIG.roofsInstalled}+ completed projects since 2020. Call <a href={`tel:${SITE_CONFIG.phoneClean}`} className="text-primary font-semibold">{SITE_CONFIG.phone}</a> for a free estimate.
+            </p>
           </div>
         </div>
       </section>
@@ -963,6 +984,27 @@ export default async function ServicePage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* 2026 Industry Insight */}
+      {content?.trendNote2026 && (
+        <section className="py-10 bg-light">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <div className="bg-accent/5 border border-accent/20 rounded-xl p-6">
+                <div className="flex items-start gap-3">
+                  <div className="bg-accent/10 rounded-full p-2 flex-shrink-0">
+                    <Sun className="w-5 h-5 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-dark mb-1">2026 Industry Insight</h3>
+                    <p className="text-gray">{content.trendNote2026}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Image Gallery */}
       <section className="section bg-white">
         <div className="container">
@@ -1009,7 +1051,7 @@ export default async function ServicePage({ params }: PageProps) {
           <p className="text-center text-gray max-w-2xl mx-auto mb-8">
             We provide professional {service.title.toLowerCase()} services throughout the Charlotte
             metropolitan area. Whether you need {service.title.toLowerCase()} in Charlotte, Lake Norman,
-            or any surrounding community, our expert team is ready to help.
+  or any surrounding community, our expert team is ready to help.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {LOCATIONS.map((location) => (

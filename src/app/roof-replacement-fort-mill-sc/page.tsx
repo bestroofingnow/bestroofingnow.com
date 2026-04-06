@@ -20,7 +20,6 @@ import { CTASection } from '@/components/sections/CTASection';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -51,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Fort Mill SC | New Roof Installation | Best Roofing Now',
-    description:
+  description:
       'Premium roof replacement in Fort Mill SC. GAF, CertainTeed, Owens Corning certified installers. Up to 50-year warranties. BBB A+ rated, veteran-owned. Free estimates!',
-    url: `${SITE_CONFIG.url}/roof-replacement-fort-mill-sc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-fort-mill-sc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof replacement Fort Mill SC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof replacement Fort Mill SC - Best Roofing Now',
       },
     ],
   },
@@ -70,33 +69,33 @@ export const metadata: Metadata = {
 const replacementProcess = [
   {
     step: '1',
-    title: 'Free Inspection & Estimate',
-    description: 'We thoroughly inspect your roof, discuss options, and provide a detailed written estimate with no obligation.',
+  title: 'Free Inspection & Estimate',
+  description: 'We thoroughly inspect your roof, discuss options, and provide a detailed written estimate with no obligation.',
   },
   {
     step: '2',
-    title: 'Material Selection',
-    description: 'Choose from premium shingles by GAF, CertainTeed, and Owens Corning. We help you select the best option for your home.',
+  title: 'Material Selection',
+  description: 'Choose from premium shingles by GAF, CertainTeed, and Owens Corning. We help you select the best option for your home.',
   },
   {
     step: '3',
-    title: 'Preparation & Tear-Off',
-    description: 'Complete removal of old roofing materials down to the deck. We inspect for damage and make necessary repairs.',
+  title: 'Preparation & Tear-Off',
+  description: 'Complete removal of old roofing materials down to the deck. We inspect for damage and make necessary repairs.',
   },
   {
     step: '4',
-    title: 'Installation',
-    description: 'New underlayment, flashing, drip edge, and shingles installed according to manufacturer specifications.',
+  title: 'Installation',
+  description: 'New underlayment, flashing, drip edge, and shingles installed according to manufacturer specifications.',
   },
   {
     step: '5',
-    title: 'Cleanup & Final Inspection',
-    description: 'Thorough cleanup with magnetic sweeps for nails. Final inspection ensures everything meets our quality standards.',
+  title: 'Cleanup & Final Inspection',
+  description: 'Thorough cleanup with magnetic sweeps for nails. Final inspection ensures everything meets our quality standards.',
   },
   {
     step: '6',
-    title: 'Warranty Registration',
-    description: 'We register your warranty with the manufacturer and provide all documentation for your records.',
+  title: 'Warranty Registration',
+  description: 'We register your warranty with the manufacturer and provide all documentation for your records.',
   },
 ];
 
@@ -104,33 +103,33 @@ const replacementProcess = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Manufacturer Certified',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified for extended warranty options.',
+  title: 'Manufacturer Certified',
+  description: 'CertainTeed ShingleMaster, GAF Factory-Certified for extended warranty options.',
   },
   {
     icon: Shield,
-    title: 'Up to 50-Year Warranties',
-    description: 'Our certifications enable us to offer the best warranties in the industry protecting your investment.',
+  title: 'Up to 50-Year Warranties',
+  description: 'Our certifications enable us to offer the best warranties in the industry protecting your investment.',
   },
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Fort Mill and Charlotte area homeowners.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Fort Mill and Charlotte area homeowners.`,
   },
   {
     icon: FileCheck,
-    title: 'Insurance Specialists',
-    description: 'We work with insurance companies to help Fort Mill homeowners get coverage for storm damage replacements.',
+  title: 'Insurance Specialists',
+  description: 'We work with insurance companies to help Fort Mill homeowners get coverage for storm damage replacements.',
   },
   {
     icon: Clock,
-    title: 'Fast Installation',
-    description: 'Most roof replacements completed in 1-3 days with minimal disruption to your daily life.',
+  title: 'Fast Installation',
+  description: 'Most roof replacements completed in 1-3 days with minimal disruption to your daily life.',
   },
   {
     icon: CheckCircle,
-    title: 'Veteran-Owned',
-    description: 'Military values of integrity, discipline, and excellence guide everything we do.',
+  title: 'Veteran-Owned',
+  description: 'Military values of integrity, discipline, and excellence guide everything we do.',
   },
 ];
 
@@ -138,21 +137,21 @@ const whyChooseUs = [
 const shingleOptions = [
   {
     brand: 'GAF Timberline HDZ',
-    description: 'America\'s #1 selling shingle with LayerLock technology and StainGuard Plus protection.',
-    warranty: 'Lifetime Limited + 25-Year Golden Pledge',
-    windRating: '130 MPH',
+  description: 'America\'s #1 selling shingle with LayerLock technology and StainGuard Plus protection.',
+  warranty: 'Lifetime Limited + 25-Year Golden Pledge',
+  windRating: '130 MPH',
   },
   {
     brand: 'CertainTeed Landmark Pro',
-    description: 'Max Def color technology with exceptional depth and dimension for a premium look.',
-    warranty: 'Lifetime Limited + SureStart Plus',
-    windRating: '130 MPH',
+  description: 'Max Def color technology with exceptional depth and dimension for a premium look.',
+  warranty: 'Lifetime Limited + SureStart Plus',
+  windRating: '130 MPH',
   },
   {
     brand: 'Owens Corning Duration',
-    description: 'SureNail technology provides outstanding grip and wind resistance in any weather.',
-    warranty: 'Lifetime Limited + Platinum Protection',
-    windRating: '130 MPH',
+  description: 'SureNail technology provides outstanding grip and wind resistance in any weather.',
+  warranty: 'Lifetime Limited + Platinum Protection',
+  windRating: '130 MPH',
   },
 ];
 
@@ -174,35 +173,35 @@ const fortMillAreas = [
 const faqs = [
   {
     question: 'How much does roof replacement cost in Fort Mill SC?',
-    answer: 'Roof replacement costs in Fort Mill SC typically range from $8,000-$25,000 for most homes, depending on roof size, pitch, material choice, and complexity. A standard 2,000 sq ft home with architectural shingles averages $10,000-$15,000. We provide free, detailed estimates with itemized costs so you know exactly what to expect.',
+  answer: 'Roof replacement costs in Fort Mill SC typically range from $8,000-$25,000 for most homes, depending on roof size, pitch, material choice, and complexity. A standard 2,000 sq ft home with architectural shingles averages $10,000-$15,000. We provide free, detailed estimates with itemized costs so you know exactly what to expect.',
   },
   {
     question: 'How long does a roof replacement take in Fort Mill?',
-    answer: 'Most residential roof replacements in Fort Mill are completed in 1-3 days. A standard single-story home is typically done in 1 day, while larger or more complex roofs may take 2-3 days. Weather can affect the timeline. We provide a specific estimate before starting work.',
+  answer: 'Most residential roof replacements in Fort Mill are completed in 1-3 days. A standard single-story home is typically done in 1 day, while larger or more complex roofs may take 2-3 days. Weather can affect the timeline. We provide a specific estimate before starting work.',
   },
   {
     question: 'What is the best roofing material for Fort Mill SC homes?',
-    answer: 'Architectural asphalt shingles are the most popular choice for Fort Mill homes due to their durability, affordability, and variety of styles. They handle South Carolina weather well, including heat, humidity, and storms. We recommend GAF Timberline HDZ, CertainTeed Landmark Pro, or Owens Corning Duration for the best combination of quality and value.',
+  answer: 'Architectural asphalt shingles are the most popular choice for Fort Mill homes due to their durability, affordability, and variety of styles. They handle South Carolina weather well, including heat, humidity, and storms. We recommend GAF Timberline HDZ, CertainTeed Landmark Pro, or Owens Corning Duration for the best combination of quality and value.',
   },
   {
     question: 'Does roof replacement require a permit in Fort Mill?',
-    answer: 'Yes, roof replacement in Fort Mill SC requires a building permit from York County. As a licensed contractor, Best Roofing Now handles the entire permit process as part of our service. This ensures your new roof is inspected and meets all local building codes.',
+  answer: 'Yes, roof replacement in Fort Mill SC requires a building permit from York County. As a licensed contractor, Best Roofing Now handles the entire permit process as part of our service. This ensures your new roof is inspected and meets all local building codes.',
   },
   {
     question: 'Will my homeowner\'s insurance cover roof replacement?',
-    answer: 'If your roof was damaged by a covered event like a storm, hail, or fallen tree, your homeowner\'s insurance may cover replacement minus your deductible. We specialize in helping Fort Mill homeowners with insurance claims, providing documentation and meeting with adjusters to advocate for fair coverage.',
+  answer: 'If your roof was damaged by a covered event like a storm, hail, or fallen tree, your homeowner\'s insurance may cover replacement minus your deductible. We specialize in helping Fort Mill homeowners with insurance claims, providing documentation and meeting with adjusters to advocate for fair coverage.',
   },
   {
     question: 'What warranty do you offer on roof replacement in Fort Mill?',
-    answer: 'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As CertainTeed, GAF, and Owens Corning certified installers, we can offer enhanced warranties like GAF Golden Pledge (50 years material + 25 years workmanship) and CertainTeed SureStart Plus.',
+  answer: 'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As CertainTeed, GAF, and Owens Corning certified installers, we can offer enhanced warranties like GAF Golden Pledge (50 years material + 25 years workmanship) and CertainTeed SureStart Plus.',
   },
   {
     question: 'Can I stay in my home during roof replacement?',
-    answer: 'Yes, you can stay in your home during roof replacement. There will be noise during work hours (typically 7am-6pm), and we recommend moving vehicles away from the house. We take precautions to protect your property and landscaping, and we always clean up thoroughly at the end of each day.',
+  answer: 'Yes, you can stay in your home during roof replacement. There will be noise during work hours (typically 7am-6pm), and we recommend moving vehicles away from the house. We take precautions to protect your property and landscaping, and we always clean up thoroughly at the end of each day.',
   },
   {
     question: 'Do you offer financing for roof replacement in Fort Mill?',
-    answer: 'Yes! We offer flexible financing options including 0% APR for qualified buyers, low monthly payments, and quick approval. Most homeowners can get a new roof for as little as $99/month. We work with multiple lenders to find the best option for your budget.',
+  answer: 'Yes! We offer flexible financing options including 0% APR for qualified buyers, low monthly payments, and quick approval. Most homeowners can get a new roof for as little as $99/month. We work with multiple lenders to find the best option for your budget.',
   },
 ];
 
@@ -217,7 +216,6 @@ export default function RoofReplacementFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-fort-mill-sc`}
         pageName="Roof Replacement Fort Mill SC"

@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Hurricane Damage Roof Repair Charlotte NC | Storm Recovery | Best Roofing Now',
-    description:
+  description:
       '24/7 hurricane damage response in Charlotte NC. Emergency tarping, insurance claim assistance, and full roof restoration. BBB A+ rated.',
-    url: `${SITE_CONFIG.url}/hurricane-damage-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/hurricane-damage-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.stormDamage,
-        width: 1200,
-        height: 630,
-        alt: 'Hurricane damage roof repair in Charlotte NC - Best Roofing Now storm recovery experts',
+  width: 1200,
+  height: 630,
+  alt: 'Hurricane damage roof repair in Charlotte NC - Best Roofing Now storm recovery experts',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const hurricaneServices = [
   {
     icon: AlertTriangle,
-    title: '24/7 Emergency Response',
-    description: 'Immediate response to secure your property and prevent further damage after a hurricane.',
-    href: '/services/emergency-roofing',
+  title: '24/7 Emergency Response',
+  description: 'Immediate response to secure your property and prevent further damage after a hurricane.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Shield,
-    title: 'Emergency Tarping',
-    description: 'Professional tarping to protect your home from water damage until permanent repairs.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Tarping',
+  description: 'Professional tarping to protect your home from water damage until permanent repairs.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: FileText,
-    title: 'Insurance Claim Assistance',
-    description: 'Expert documentation and advocacy to maximize your hurricane damage insurance claim.',
-    href: '/services/insurance-claims',
+  title: 'Insurance Claim Assistance',
+  description: 'Expert documentation and advocacy to maximize your hurricane damage insurance claim.',
+  href: '/services/insurance-claims',
   },
   {
     icon: Wind,
-    title: 'Wind Damage Repair',
-    description: 'Repair or replace shingles and components damaged by hurricane-force winds.',
-    href: '/services/storm-damage',
+  title: 'Wind Damage Repair',
+  description: 'Repair or replace shingles and components damaged by hurricane-force winds.',
+  href: '/services/storm-damage',
   },
   {
     icon: CloudRain,
-    title: 'Water Damage Restoration',
-    description: 'Address roof leaks and water intrusion caused by hurricane rainfall.',
-    href: '/services/roof-repair',
+  title: 'Water Damage Restoration',
+  description: 'Address roof leaks and water intrusion caused by hurricane rainfall.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Full Roof Replacement',
-    description: 'Complete roof replacement when hurricane damage is too extensive to repair.',
-    href: '/services/roof-replacement',
+  title: 'Full Roof Replacement',
+  description: 'Complete roof replacement when hurricane damage is too extensive to repair.',
+  href: '/services/roof-replacement',
   },
 ];
 
@@ -110,33 +110,33 @@ const hurricaneServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Storm Damage Experts',
-    description: 'Extensive experience restoring Charlotte homes after hurricanes and tropical storms.',
+  title: 'Storm Damage Experts',
+  description: 'Extensive experience restoring Charlotte homes after hurricanes and tropical storms.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Military discipline and integrity applied to emergency storm response.',
+  title: 'Veteran-Owned',
+  description: 'Military discipline and integrity applied to emergency storm response.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with coverage for major storm restoration work.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with coverage for major storm restoration work.',
   },
   {
     icon: Users,
-    title: 'Insurance Specialists',
-    description: 'Deep experience working with insurance adjusters and maximizing claims.',
+  title: 'Insurance Specialists',
+  description: 'Deep experience working with insurance adjusters and maximizing claims.',
   },
   {
     icon: Clock,
-    title: '24/7 Availability',
-    description: 'Round-the-clock emergency response when hurricanes strike Charlotte.',
+  title: '24/7 Availability',
+  description: 'Round-the-clock emergency response when hurricanes strike Charlotte.',
   },
 ];
 
@@ -184,42 +184,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Does Charlotte get hurricane damage?',
-    answer:
+  answer:
       'Yes, while Charlotte is 175 miles inland, the city regularly experiences significant impacts from hurricanes and tropical storms. When hurricanes make landfall on the Carolina coast, they often track inland through Charlotte bringing damaging winds, heavy rain, and sometimes tornadoes. Recent storms like Hurricane Florence (2018) and Hurricane Ian (2022) caused substantial roof damage throughout the Charlotte area. Even weakening storms can bring 50-80 mph wind gusts that damage roofs.',
   },
   {
     question: 'What should I do immediately after hurricane damage?',
-    answer:
+  answer:
       'First, ensure your family\'s safety and don\'t enter areas with structural damage. Document all damage with photos and videos before any cleanup. If you have active leaks, place buckets to catch water and move valuables away from affected areas. Call Best Roofing Now for emergency tarping to prevent further water damage. Don\'t attempt to climb on your roof yourself - it may be structurally compromised. Contact your insurance company to start your claim, and save receipts for any emergency expenses.',
   },
   {
     question: 'How quickly can you respond after a hurricane?',
-    answer:
+  answer:
       'Best Roofing Now maintains 24/7 emergency response capability before, during, and after hurricanes. We stage crews and materials in advance of approaching storms to enable rapid response. For emergency tarping, we typically respond within 2-24 hours depending on storm severity and demand. We prioritize cases with active water intrusion to prevent further damage. Call us immediately at (704) 605-6047 - the sooner we can tarp, the less secondary damage your home will sustain.',
   },
   {
     question: 'Will my insurance cover hurricane roof damage?',
-    answer:
+  answer:
       'Most standard homeowner\'s insurance policies cover hurricane wind damage to roofs. However, you should be aware of your policy\'s wind/hurricane deductible, which is often a percentage of your home\'s value (typically 1-5%) rather than a flat amount. Document everything thoroughly, and be aware that insurance companies may try to minimize payouts after major storms. Best Roofing Now works directly with insurance companies and can help ensure you receive fair compensation for your damage.',
   },
   {
     question: 'How do you help with hurricane insurance claims?',
-    answer:
+  answer:
       'Our hurricane insurance claim assistance includes comprehensive damage documentation with photos and measurements, detailed scope of work estimates, direct communication with your insurance adjuster, on-site meetings with adjusters to ensure nothing is missed, supplement submissions when initial settlements are inadequate, and guidance throughout the entire claims process. We\'ve helped hundreds of Charlotte homeowners receive fair settlements after hurricane damage.',
   },
   {
     question: 'What types of hurricane damage do you repair?',
-    answer:
+  answer:
       'We repair all types of hurricane roof damage including missing or lifted shingles from wind, damaged or displaced flashing, broken vent caps and roof penetrations, fallen tree limbs on roofs, gutter damage and detachment, water intrusion damage from compromised areas, torn soffit and fascia, and structural damage requiring full replacement. We handle everything from minor wind damage to complete roof replacements.',
   },
   {
     question: 'How much does hurricane damage repair cost?',
-    answer:
+  answer:
       'Hurricane damage repair costs vary widely based on damage extent. Emergency tarping typically costs $500-$1,500, minor wind damage repairs range from $500-$2,500, moderate damage repairs run $2,500-$8,000, and full replacements due to catastrophic damage range from $10,000-$30,000+. The good news is that most hurricane damage is covered by insurance, and we work with your insurer to ensure proper compensation. We provide free damage assessments to determine the full scope of work needed.',
   },
   {
     question: 'How can I prepare my roof for hurricane season?',
-    answer:
+  answer:
       'Pre-hurricane preparation includes professional roof inspection to identify vulnerabilities, repair any existing damage before storm season (June-November), trim trees near your roof, ensure gutters are clear for heavy rainfall, consider impact-resistant shingles if replacing your roof, verify your insurance coverage and understand your deductible, and document your roof\'s pre-storm condition with photos. Best Roofing Now offers pre-hurricane inspections to help Charlotte homeowners prepare.',
   },
 ];
@@ -234,7 +234,6 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Concord NC | Speedway Area Roofing Company | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Concord NC and Cabarrus County from our Charlotte headquarters. Expert roofing services near Charlotte Motor Speedway.',
-    url: `${SITE_CONFIG.url}/roofing-concord-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-concord-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Concord NC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Concord NC - Best Roofing Now team',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Concord homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Concord homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Concord businesses and industrial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Concord businesses and industrial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Concord.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Concord.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Concord property owners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Concord property owners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance in Cabarrus County.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance in Cabarrus County.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'I-85 Access',
-    description: 'Easy I-85 corridor access means fast response times for Concord roofing needs.',
+  title: 'I-85 Access',
+  description: 'Easy I-85 corridor access means fast response times for Concord roofing needs.',
   },
 ];
 
@@ -169,42 +169,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Concord NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Concord NC and all of Cabarrus County from our Charlotte headquarters, just 20 miles away via I-85. We provide complete roofing services throughout Concord, including the Speedway area, Concord Mills, and all surrounding neighborhoods.',
   },
   {
     question: 'How quickly can you respond to roofing emergencies in Concord?',
-    answer:
+  answer:
       'Thanks to easy I-85 access, we can typically respond to Concord roofing emergencies within 45-60 minutes. For urgent situations like active leaks or storm damage, we offer 24/7 emergency services to protect your Cabarrus County home or business.',
   },
   {
     question: 'Do you work with commercial properties near Charlotte Motor Speedway?',
-    answer:
+  answer:
       'Absolutely. We serve commercial properties throughout the Speedway area including hotels, restaurants, retail centers, and industrial facilities. Our commercial roofing services include TPO, EPDM, flat roofs, metal roofing, and more.',
   },
   {
     question: 'What roofing services do you offer in Concord NC?',
-    answer:
+  answer:
       'We offer complete roofing services in Concord including residential roof repair, roof replacement, new construction roofing, commercial roofing, storm damage repair, emergency roofing services, free roof inspections, gutter services, and siding installation.',
   },
   {
     question: 'How much does a new roof cost in Concord NC?',
-    answer:
+  answer:
       'The cost of a new roof in Concord typically ranges from $8,000 to $25,000 for most residential homes, depending on size, pitch, and material choice. Concord has many newer subdivisions with varying home sizes. We provide free, detailed estimates with no hidden fees.',
   },
   {
     question: 'Do you offer free roof inspections in Concord?',
-    answer:
+  answer:
       'Yes, we offer completely free roof inspections for both residential and commercial properties throughout Concord and Cabarrus County. Our certified inspectors will thoroughly examine your roof and provide a detailed written report with photos.',
   },
   {
     question: 'What type of roofing is best for Concord homes?',
-    answer:
+  answer:
       'Most Concord homes do well with architectural asphalt shingles like CertainTeed Landmark or GAF Timberline. For the growing number of custom homes in areas like Christenbury and Skybrook, we also install premium designer shingles, metal roofing, and specialty materials.',
   },
   {
     question: 'Do you help with insurance claims for storm damage in Cabarrus County?',
-    answer:
+  answer:
       'Absolutely. Cabarrus County experiences significant storm activity including hail and high winds. We have extensive experience helping Concord homeowners with insurance claims and provide thorough documentation, adjuster coordination, and advocacy for fair settlements.',
   },
 ];
@@ -226,6 +226,12 @@ export default function RoofingConcordNCPage() {
         distance={20}
         slug="concord-nc"
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-concord-nc`}
+        pageName="Roofing Concord NC"
+        city="Concord"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -255,7 +261,7 @@ export default function RoofingConcordNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now proudly serves Concord NC from our Charlotte location, with easy access via I-85.
               Our veteran-owned, BBB A+ rated company provides expert roofing services throughout Cabarrus County,
-              from the Charlotte Motor Speedway area to the growing residential communities throughout Concord.
+  from the Charlotte Motor Speedway area to the growing residential communities throughout Concord.
             </p>
 
             {/* CTA Buttons */}

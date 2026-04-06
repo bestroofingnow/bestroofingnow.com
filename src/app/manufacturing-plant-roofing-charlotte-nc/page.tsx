@@ -30,7 +30,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -59,16 +58,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Manufacturing Plant Roofing Charlotte NC | Factories & Processing Facilities | Best Roofing Now',
-    description:
+  description:
       'Expert manufacturing plant roofing contractors in Charlotte NC. Chemical-resistant, OSHA-compliant roofing for factories and processing facilities. Licensed & insured with free estimates.',
-    url: `${SITE_CONFIG.url}/manufacturing-plant-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/manufacturing-plant-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Manufacturing plant roofing Charlotte NC - Best Roofing Now factory roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Manufacturing plant roofing Charlotte NC - Best Roofing Now factory roofing project',
       },
     ],
   },
@@ -78,39 +77,39 @@ export const metadata: Metadata = {
 const manufacturingRoofingSystems = [
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Standing seam and corrugated metal roofing for manufacturing plants. Superior durability against vibration, heat, and industrial stress. 40+ year lifespan with minimal maintenance.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Standing seam and corrugated metal roofing for manufacturing plants. Superior durability against vibration, heat, and industrial stress. 40+ year lifespan with minimal maintenance.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Rubber Roofing',
-    description: 'Synthetic rubber membrane with excellent resistance to extreme temperatures, UV exposure, and weathering. Ideal for large manufacturing roofs requiring long-term reliability.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Synthetic rubber membrane with excellent resistance to extreme temperatures, UV exposure, and weathering. Ideal for large manufacturing roofs requiring long-term reliability.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Layers,
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Multi-layer asphalt systems offering exceptional durability for heavy manufacturing environments. Excellent foot traffic resistance for maintenance access to rooftop equipment.',
-    href: '/services/commercial-roofing',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Multi-layer asphalt systems offering exceptional durability for heavy manufacturing environments. Excellent foot traffic resistance for maintenance access to rooftop equipment.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Spray Polyurethane Foam',
-    description: 'Seamless insulation and waterproofing system ideal for manufacturing plants with irregular roof shapes, multiple penetrations, and high energy costs.',
-    href: '/services/commercial-roofing',
+  title: 'Spray Polyurethane Foam',
+  description: 'Seamless insulation and waterproofing system ideal for manufacturing plants with irregular roof shapes, multiple penetrations, and high energy costs.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: FlaskConical,
-    title: 'PVC Roofing (Chemical Resistant)',
-    description: 'Superior chemical resistance makes PVC the top choice for facilities with chemical exposure, grease exhausts, and process emissions that can damage other roof membranes.',
-    href: '/services/commercial-roofing',
+  title: 'PVC Roofing (Chemical Resistant)',
+  description: 'Superior chemical resistance makes PVC the top choice for facilities with chemical exposure, grease exhausts, and process emissions that can damage other roof membranes.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Industrial Roof Coatings',
-    description: 'High-performance coatings that restore and protect aging manufacturing roofs. Chemical-resistant formulas available for harsh industrial environments.',
-    href: '/services/commercial-roofing',
+  title: 'Industrial Roof Coatings',
+  description: 'High-performance coatings that restore and protect aging manufacturing roofs. Chemical-resistant formulas available for harsh industrial environments.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -118,33 +117,33 @@ const manufacturingRoofingSystems = [
 const manufacturingBuildingTypes = [
   {
     icon: Factory,
-    title: 'Heavy Manufacturing Plants',
-    description: 'Roofing for large-scale manufacturing operations like Siemens Energy and heavy equipment producers. Systems designed to handle vibration, heat, and heavy rooftop loads.',
+  title: 'Heavy Manufacturing Plants',
+  description: 'Roofing for large-scale manufacturing operations like Siemens Energy and heavy equipment producers. Systems designed to handle vibration, heat, and heavy rooftop loads.',
   },
   {
     icon: Cog,
-    title: 'Light Manufacturing & Assembly',
-    description: 'Roofing solutions for assembly plants, fabrication shops, and light industrial manufacturing facilities throughout the Charlotte metro corridor.',
+  title: 'Light Manufacturing & Assembly',
+  description: 'Roofing solutions for assembly plants, fabrication shops, and light industrial manufacturing facilities throughout the Charlotte metro corridor.',
   },
   {
     icon: Building2,
-    title: 'Food Processing Facilities',
-    description: 'FDA and USDA-compliant roofing for food manufacturing and processing plants. Systems meeting sanitary requirements with no risk of contamination.',
+  title: 'Food Processing Facilities',
+  description: 'FDA and USDA-compliant roofing for food manufacturing and processing plants. Systems meeting sanitary requirements with no risk of contamination.',
   },
   {
     icon: FlaskConical,
-    title: 'Pharmaceutical Manufacturing',
-    description: 'Clean-room compatible roofing systems for pharmaceutical production facilities. Sealed systems that prevent particulate intrusion and maintain controlled environments.',
+  title: 'Pharmaceutical Manufacturing',
+  description: 'Clean-room compatible roofing systems for pharmaceutical production facilities. Sealed systems that prevent particulate intrusion and maintain controlled environments.',
   },
   {
     icon: Thermometer,
-    title: 'Chemical Processing Plants',
-    description: 'Chemically resistant roofing for facilities handling acids, solvents, and industrial chemicals. PVC and specialty coatings that withstand harsh chemical exposure.',
+  title: 'Chemical Processing Plants',
+  description: 'Chemically resistant roofing for facilities handling acids, solvents, and industrial chemicals. PVC and specialty coatings that withstand harsh chemical exposure.',
   },
   {
     icon: Wrench,
-    title: 'Automotive Parts Manufacturing',
-    description: 'Roofing for the Charlotte region&apos;s automotive parts suppliers and manufacturing facilities. Systems designed for high-heat environments and heavy equipment vibration.',
+  title: 'Automotive Parts Manufacturing',
+  description: 'Roofing for the Charlotte region&apos;s automotive parts suppliers and manufacturing facilities. Systems designed for high-heat environments and heavy equipment vibration.',
   },
 ];
 
@@ -152,33 +151,33 @@ const manufacturingBuildingTypes = [
 const whyChooseUs = [
   {
     icon: FlaskConical,
-    title: 'Chemical Exposure Expertise',
-    description: 'We specify roofing systems rated for chemical exposure from manufacturing processes. PVC, specialty coatings, and chemical-resistant flashings protect your investment.',
+  title: 'Chemical Exposure Expertise',
+  description: 'We specify roofing systems rated for chemical exposure from manufacturing processes. PVC, specialty coatings, and chemical-resistant flashings protect your investment.',
   },
   {
     icon: Thermometer,
-    title: 'High-Heat Environment Solutions',
-    description: 'Manufacturing plants generate extreme heat. We install systems designed to withstand thermal cycling and reflective surfaces that reduce interior temperatures.',
+  title: 'High-Heat Environment Solutions',
+  description: 'Manufacturing plants generate extreme heat. We install systems designed to withstand thermal cycling and reflective surfaces that reduce interior temperatures.',
   },
   {
     icon: Ruler,
-    title: 'Heavy Load Engineering',
-    description: 'Manufacturing roofs carry heavy HVAC, exhaust systems, and process equipment. We engineer solutions that properly distribute loads without compromising waterproofing.',
+  title: 'Heavy Load Engineering',
+  description: 'Manufacturing roofs carry heavy HVAC, exhaust systems, and process equipment. We engineer solutions that properly distribute loads without compromising waterproofing.',
   },
   {
     icon: Shield,
-    title: 'OSHA Compliance',
-    description: 'Full OSHA compliance for all manufacturing site work. Our crews hold OSHA 30 certifications, follow lockout/tagout procedures, and coordinate with your EHS team.',
+  title: 'OSHA Compliance',
+  description: 'Full OSHA compliance for all manufacturing site work. Our crews hold OSHA 30 certifications, follow lockout/tagout procedures, and coordinate with your EHS team.',
   },
   {
     icon: Clock,
-    title: 'Production Schedule Coordination',
-    description: 'We work around your production schedule with night, weekend, and holiday crews. Phased installation plans that never require a full production shutdown.',
+  title: 'Production Schedule Coordination',
+  description: 'We work around your production schedule with night, weekend, and holiday crews. Phased installation plans that never require a full production shutdown.',
   },
   {
     icon: Users,
-    title: 'Dedicated Project Managers',
-    description: 'Single point of contact who coordinates with your plant manager and maintenance team. Safety briefings, daily progress reports, and clear communication throughout.',
+  title: 'Dedicated Project Managers',
+  description: 'Single point of contact who coordinates with your plant manager and maintenance team. Safety briefings, daily progress reports, and clear communication throughout.',
   },
 ];
 
@@ -214,42 +213,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What roofing system is best for manufacturing plants with chemical exposure?',
-    answer:
+  answer:
       'For manufacturing facilities with chemical exposure, PVC (polyvinyl chloride) membrane roofing is typically our top recommendation. PVC has superior resistance to chemicals, oils, greases, and industrial byproducts that can degrade other roofing materials. For facilities with heavy acid exposure, we may recommend specialty coatings or stainless steel flashings. We always start with a chemical exposure assessment to understand exactly what your roof will face and specify materials accordingly. Facilities producing caustic fumes or exhaust should also consider enhanced ventilation curb details.',
   },
   {
     question: 'How do you handle roofing on manufacturing plants that operate 24/7?',
-    answer:
+  answer:
       'Many Charlotte-area manufacturing plants run continuous operations, and we are fully equipped to work around your production schedule. We develop phased installation plans that allow us to complete sections of the roof without disrupting active production areas below. Our crews are available nights, weekends, and holidays. We use vibration-dampening equipment near sensitive production areas and coordinate with your plant manager on material deliveries to avoid blocking loading docks or truck routes. Most of our 24/7 manufacturing clients experience zero production downtime during re-roofing.',
   },
   {
     question: 'How much does manufacturing plant roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Manufacturing plant roof replacement costs in Charlotte vary based on size, system, and complexity. EPDM and TPO membrane systems typically range from $4 to $9 per square foot. Metal roofing systems run $8 to $16 per square foot. PVC systems for chemical-resistant applications range from $6 to $12 per square foot. A 100,000 sq ft manufacturing plant might cost $400,000-$1,200,000 depending on the system selected, existing roof condition, and complexity of rooftop penetrations. We provide detailed estimates and can phase projects across multiple budget years if needed.',
   },
   {
     question: 'Can your roofing systems handle heavy rooftop equipment loads?',
-    answer:
+  answer:
       'Yes, manufacturing plants often have significant rooftop equipment including large RTU HVAC units, exhaust fans, process ventilation, cooling towers, and piping systems. We engineer our roofing systems to accommodate existing and planned equipment loads. This includes reinforced decking at equipment locations, properly engineered curbs and supports, and walk pads for maintenance access. Before installation, we conduct a structural assessment to ensure the roof deck can support both the roofing system and equipment. We also coordinate with mechanical contractors on any equipment that needs to be temporarily relocated during re-roofing.',
   },
   {
     question: 'What OSHA requirements apply to roofing work on manufacturing plants?',
-    answer:
+  answer:
       'Roofing work on manufacturing plants falls under OSHA General Industry (29 CFR 1910) and Construction (29 CFR 1926) standards. Our crews maintain OSHA 30 certifications, and we implement comprehensive safety plans including fall protection systems, hazard communication protocols, lockout/tagout procedures for rooftop equipment, and hot work permits when applicable. We participate in your plant&apos;s safety orientation programs and daily safety briefings. Our EMR (Experience Modification Rate) is maintained well below industry average, and we carry the elevated insurance coverage that manufacturing facilities require.',
   },
   {
     question: 'How do you manage ventilation and exhaust penetrations on manufacturing roofs?',
-    answer:
+  answer:
       'Manufacturing roofs typically have far more penetrations than standard commercial buildings, including exhaust stacks, process vents, makeup air intakes, and pipe supports. Each penetration is a potential leak point, so we use factory-fabricated flashings, multiple layers of membrane reinforcement, and chemical-resistant sealants appropriate for the exhaust type. For high-temperature exhaust stacks, we install heat shields and use high-temp rated flashings. We document every penetration with photos and details for your maintenance team, and our preventive maintenance programs include bi-annual inspection of all penetration flashings.',
   },
   {
     question: 'Do you offer preventive maintenance programs for manufacturing facilities?',
-    answer:
+  answer:
       'Yes, our preventive maintenance programs are especially valuable for manufacturing facilities where a roof leak can damage expensive equipment, halt production, or contaminate product. Our manufacturing maintenance program includes bi-annual inspections (spring and fall), drain clearing, flashing inspection around all penetrations and equipment curbs, membrane condition assessment, and a detailed report with photos. We identify and address small issues before they become expensive emergency repairs. Most manufacturing clients find that preventive maintenance extends their roof life by 5-10 years and reduces total cost of ownership significantly.',
   },
   {
     question: 'Can manufacturing roofs support solar panel installations?',
-    answer:
+  answer:
       'Many manufacturing facilities are ideal candidates for solar installations due to their large, unobstructed roof areas. Charlotte&apos;s manufacturing plants can often generate 500kW to 2MW+ from rooftop solar, significantly offsetting energy costs. We work with solar contractors to ensure proper roof system specification, including appropriate load distribution, waterproof penetrations, and warranty compatibility. If you are planning solar within the next 5 years, we can install a roof system specifically designed to support and integrate with solar arrays, potentially saving significant costs on the solar installation.',
   },
 ];
@@ -264,7 +263,6 @@ export default function ManufacturingPlantRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/manufacturing-plant-roofing-charlotte-nc`}
         pageName="Manufacturing Plant Roofing Charlotte NC"
@@ -298,7 +296,7 @@ export default function ManufacturingPlantRoofingCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               The Charlotte metro area is a major manufacturing hub, home to companies like Siemens Energy, Honeywell,
-              and hundreds of production facilities along the I-85 and I-77 corridors. Best Roofing Now specializes in
+  and hundreds of production facilities along the I-85 and I-77 corridors. Best Roofing Now specializes in
               manufacturing plant roofing with chemical-resistant systems, OSHA-compliant crews, and production schedule
               coordination that keeps your plant running.
             </p>
@@ -356,7 +354,7 @@ export default function ManufacturingPlantRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               From heavy manufacturing plants along the I-85 corridor to food processing facilities in Steele Creek,
-              we have the expertise to handle the demanding roofing needs of every manufacturing operation.
+  we have the expertise to handle the demanding roofing needs of every manufacturing operation.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

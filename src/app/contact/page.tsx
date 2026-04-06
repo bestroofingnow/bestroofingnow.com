@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
@@ -18,6 +18,7 @@ import {
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { FinancingBanner } from '@/components/ui/FinancingBanner';
+import Turnstile from '@/components/ui/Turnstile';
 
 // Schema markup for Contact page
 const contactPageSchema = {
@@ -68,8 +69,20 @@ export default function ContactPage() {
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [honeypot, setHoneypot] = useState('');
+  const [tcpaConsent, setTcpaConsent] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [showBookingWidget, setShowBookingWidget] = useState(false);
   const bookingRef = useRef<HTMLDivElement>(null);
+
+  const handleTurnstileVerify = useCallback((token: string) => {
+    setTurnstileToken(token);
+  }, []);
+
+  const handleTurnstileExpire = useCallback(() => {
+    setTurnstileToken(null);
+  }, []);
 
   // Validation functions
   const validateField = (name: string, value: string): string => {
@@ -141,8 +154,17 @@ export default function ContactPage() {
       return;
     }
 
+    // Honeypot check - bots fill hidden fields
+    if (honeypot) return;
+
+    if (!tcpaConsent) {
+      setSubmitError('Please agree to the communication consent to continue.');
+      return;
+    }
+
     // Submit to API route (which forwards to GHL webhook)
     setIsSubmitting(true);
+    setSubmitError(null);
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -156,21 +178,19 @@ export default function ContactPage() {
           address: formState.address,
           service: formState.service,
           message: formState.message,
+          tcpaConsent,
+          turnstileToken,
         }),
       });
 
       if (response.ok) {
         setIsSubmitted(true);
       } else {
-        const data = await response.json();
-        console.error('Form submission error:', data.error);
-        // Still show success to user, error is logged server-side
-        setIsSubmitted(true);
+        const data = await response.json().catch(() => ({ error: 'Submission failed' }));
+        setSubmitError(data.error || 'Something went wrong. Please call us directly.');
       }
-    } catch (error) {
-      console.error('Form submission error:', error);
-      // Still show success - we don't want to frustrate the user
-      setIsSubmitted(true);
+    } catch {
+      setSubmitError(`We couldn't submit your request. Please call us at ${SITE_CONFIG.phone} for immediate assistance.`);
     } finally {
       setIsSubmitting(false);
     }
@@ -404,6 +424,25 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {/* Honeypot - hidden from real users */}
+                  <div className="hidden" aria-hidden="true">
+                    <input
+                      type="text"
+                      name="website"
+                      value={honeypot}
+                      onChange={(e) => setHoneypot(e.target.value)}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </div>
+
+                  {/* Turnstile CAPTCHA */}
+                  <Turnstile
+                    onVerify={handleTurnstileVerify}
+                    onExpire={handleTurnstileExpire}
+                    className="flex justify-center"
+                  />
+
                   {/* Response Time Promise */}
                   <p className="text-sm text-accent font-medium text-center mb-2">
                     We respond within 2 hours during business hours
@@ -430,10 +469,19 @@ export default function ContactPage() {
                     )}
                   </button>
 
+                  {submitError && (
+                    <div className="p-4 bg-red-50 border border-red-200 rounded-lg" role="alert">
+                      <p className="text-sm text-red-700">{submitError}</p>
+                    </div>
+                  )}
+
                   <div className="mt-4 p-3 bg-gray-50 rounded-lg border border-gray-200">
                     <label className="flex items-start gap-3 cursor-pointer">
                       <input
                         type="checkbox"
+                        name="tcpaConsent"
+                        checked={tcpaConsent}
+                        onChange={(e) => setTcpaConsent(e.target.checked)}
                         required
                         className="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
                       />

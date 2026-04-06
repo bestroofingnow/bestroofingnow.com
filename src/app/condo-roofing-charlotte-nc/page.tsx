@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Condo Roofing Charlotte NC | Association Approved | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated condo roofing experts in Charlotte NC. Association approved, flat and low-slope specialists, complete condominium roofing services. Free estimates.',
-    url: `${SITE_CONFIG.url}/condo-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/condo-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional condo roofing services in Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional condo roofing services in Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,33 +67,33 @@ export const metadata: Metadata = {
 const condoServices = [
   {
     icon: Building,
-    title: 'Condo Roof Replacement',
-    description: 'Complete roof replacement for condominiums with minimal disruption to residents and common areas.',
+  title: 'Condo Roof Replacement',
+  description: 'Complete roof replacement for condominiums with minimal disruption to residents and common areas.',
   },
   {
     icon: Layers,
-    title: 'Flat & Low-Slope Roofing',
-    description: 'Specialized TPO, EPDM, and modified bitumen systems for condo buildings with flat or low-slope roofs.',
+  title: 'Flat & Low-Slope Roofing',
+  description: 'Specialized TPO, EPDM, and modified bitumen systems for condo buildings with flat or low-slope roofs.',
   },
   {
     icon: FileCheck,
-    title: 'Association Compliance',
-    description: 'We work directly with condo associations to meet all requirements and approval processes.',
+  title: 'Association Compliance',
+  description: 'We work directly with condo associations to meet all requirements and approval processes.',
   },
   {
     icon: Droplets,
-    title: 'Leak Detection & Repair',
-    description: 'Advanced leak detection for multi-unit buildings to identify and fix problems quickly.',
+  title: 'Leak Detection & Repair',
+  description: 'Advanced leak detection for multi-unit buildings to identify and fix problems quickly.',
   },
   {
     icon: Handshake,
-    title: 'Board Presentations',
-    description: 'We present to condo boards with detailed proposals, timelines, and budget options.',
+  title: 'Board Presentations',
+  description: 'We present to condo boards with detailed proposals, timelines, and budget options.',
   },
   {
     icon: ClipboardCheck,
-    title: 'Reserve Study Support',
-    description: 'Detailed roof assessments to help associations plan for future capital expenditures.',
+  title: 'Reserve Study Support',
+  description: 'Detailed roof assessments to help associations plan for future capital expenditures.',
   },
 ];
 
@@ -101,33 +101,33 @@ const condoServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Condo Experience',
-    description: "We've completed roofing projects for 50+ condo associations across Charlotte.",
+  title: 'Condo Experience',
+  description: "We've completed roofing projects for 50+ condo associations across Charlotte.",
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Charlotte property owners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Charlotte property owners.`,
   },
   {
     icon: Shield,
-    title: 'Fully Insured',
-    description: 'Comprehensive liability and workers comp coverage for condo association peace of mind.',
+  title: 'Fully Insured',
+  description: 'Comprehensive liability and workers comp coverage for condo association peace of mind.',
   },
   {
     icon: CheckCircle,
-    title: 'NC Licensed',
-    description: 'Fully licensed commercial roofing contractor meeting all NC requirements.',
+  title: 'NC Licensed',
+  description: 'Fully licensed commercial roofing contractor meeting all NC requirements.',
   },
   {
     icon: Users,
-    title: 'Resident Friendly',
-    description: 'We coordinate with residents and minimize disruption during roofing projects.',
+  title: 'Resident Friendly',
+  description: 'We coordinate with residents and minimize disruption during roofing projects.',
   },
   {
     icon: Clock,
-    title: 'Project Management',
-    description: 'Dedicated project managers for seamless communication with boards and managers.',
+  title: 'Project Management',
+  description: 'Dedicated project managers for seamless communication with boards and managers.',
   },
 ];
 
@@ -155,42 +155,42 @@ const condoCommunities = [
 const faqs = [
   {
     question: 'Who is responsible for condo roof repairs - the owner or the association?',
-    answer:
+  answer:
       "In most Charlotte condominiums, the association is responsible for the roof as it's considered a common element. However, this varies by condo documents. We can work with your association's property manager or board to coordinate the project, handle insurance claims, and ensure all work meets association requirements.",
   },
   {
     question: 'What type of roofing is best for condo buildings?',
-    answer:
+  answer:
       "Many Charlotte condo buildings have flat or low-slope roofs that require specialized systems. We commonly install TPO (thermoplastic polyolefin), EPDM rubber roofing, and modified bitumen. For pitched roofs, we use architectural shingles that meet HOA specifications. We'll recommend the best system based on your building's design and budget.",
   },
   {
     question: 'How do you minimize disruption to condo residents during roofing?',
-    answer:
+  answer:
       "We understand condo residents need to continue their daily lives during roofing projects. We provide advance notice to all units, coordinate parking restrictions, maintain clear access to entrances, and clean up daily. For larger projects, we can work in phases to minimize noise and debris in occupied areas.",
   },
   {
     question: 'Can you present to our condo board?',
-    answer:
+  answer:
       "Absolutely. We regularly present to condo association boards and can attend meetings to explain our proposal, answer questions, and discuss timeline and budget options. We provide professional presentations with material samples, warranty information, and detailed cost breakdowns to help boards make informed decisions.",
   },
   {
     question: 'How much does condo roof replacement cost?',
-    answer:
+  answer:
       "Condo roofing costs vary significantly based on building size, roof type, accessibility, and material choice. Flat roof systems typically range from $4-$12 per square foot. We provide detailed proposals with multiple options and can work with associations to phase projects over multiple budget years if needed.",
   },
   {
     question: 'Do you handle insurance claims for condo roof damage?',
-    answer:
+  answer:
       "Yes, we have extensive experience with commercial property insurance claims. We document all damage thoroughly, prepare detailed scope reports, meet with insurance adjusters, and advocate for fair settlements. Many condo associations have found our insurance expertise invaluable after storm events.",
   },
   {
     question: 'What warranties do you offer for condo roofing?',
-    answer:
+  answer:
       "We offer comprehensive warranty packages for condo roofing. Flat roof systems typically include manufacturer warranties of 15-30 years plus our workmanship warranty. As certified installers for major manufacturers, we can offer extended warranty options. All warranty terms are clearly documented in our proposals.",
   },
   {
     question: 'Can you provide roof assessments for our reserve study?',
-    answer:
+  answer:
       "Yes, we provide detailed roof condition assessments to help condo associations plan for future capital expenditures. Our reports include current condition, expected remaining lifespan, estimated replacement costs, and recommended maintenance to maximize roof life. This information is essential for accurate reserve fund planning.",
   },
 ];
@@ -205,7 +205,6 @@ export default function CondoRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

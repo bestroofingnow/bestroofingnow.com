@@ -51,37 +51,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roof vs Shingles: Which is Best for Charlotte NC Homes?',
-    description:
+  description:
       'Comprehensive comparison of metal roofing and asphalt shingles for Charlotte homeowners. Cost, lifespan, energy efficiency, and more.',
-    url: `${SITE_CONFIG.url}/metal-roof-vs-shingles-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/metal-roof-vs-shingles-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const comparisonFAQs = [
   {
     question: 'Is a metal roof worth the extra cost in Charlotte NC?',
-    answer:
+  answer:
       'For most Charlotte homeowners planning to stay in their home 15+ years, yes. While metal costs 2-3x more upfront ($15,000-$30,000 vs $8,000-$15,000 for shingles), it lasts 2-3x longer (40-70 years vs 20-30), reduces cooling costs 10-25% in Charlotte\'s hot summers, and often increases home value by 1-6%.',
   },
   {
     question: 'How much does a metal roof cost compared to shingles in Charlotte?',
-    answer:
+  answer:
       'In Charlotte, asphalt shingles cost $4-$8 per square foot installed ($8,000-$16,000 for average home), while metal roofing costs $8-$15 per square foot ($16,000-$30,000+). Standing seam metal is at the higher end; metal shingles are more affordable.',
   },
   {
     question: 'Are metal roofs loud during Charlotte thunderstorms?',
-    answer:
+  answer:
       'Modern metal roofs installed over solid decking with proper underlayment are NOT significantly louder than shingle roofs during rain. The insulation and attic space buffer sound effectively. Most Charlotte homeowners report no noticeable difference.',
   },
   {
     question: 'Do metal roofs rust in Charlotte\'s humid climate?',
-    answer:
+  answer:
       'Quality metal roofs use Galvalume steel or aluminum with protective coatings that resist rust for decades. Charlotte\'s humidity is not a concern for properly coated metal roofing. We recommend Galvalume or aluminum for best long-term performance.',
   },
   {
     question: 'Which roofing material handles Charlotte storms better?',
-    answer:
+  answer:
       'Metal roofs are significantly more wind and hail resistant. They\'re rated for 140+ mph winds (Class F) vs 110 mph for shingles. Metal also resists hail damage that would require shingle replacement. For Charlotte\'s storm-prone climate, metal has clear advantages.',
   },
 ];
@@ -89,93 +89,93 @@ const comparisonFAQs = [
 const comparisonData = [
   {
     category: 'Upfront Cost',
-    icon: DollarSign,
-    metal: '$16,000 - $30,000+',
-    metalNote: 'Higher initial investment',
-    shingles: '$8,000 - $16,000',
-    shinglesNote: 'More affordable upfront',
-    winner: 'shingles',
+  icon: DollarSign,
+  metal: '$16,000 - $30,000+',
+  metalNote: 'Higher initial investment',
+  shingles: '$8,000 - $16,000',
+  shinglesNote: 'More affordable upfront',
+  winner: 'shingles',
   },
   {
     category: 'Lifespan',
-    icon: Clock,
-    metal: '40-70 years',
-    metalNote: 'May last lifetime of home',
-    shingles: '20-30 years',
-    shinglesNote: 'Will need replacement',
-    winner: 'metal',
+  icon: Clock,
+  metal: '40-70 years',
+  metalNote: 'May last lifetime of home',
+  shingles: '20-30 years',
+  shinglesNote: 'Will need replacement',
+  winner: 'metal',
   },
   {
     category: 'Cost Per Year',
-    icon: Scale,
-    metal: '$400-$750/year',
-    metalNote: 'Best long-term value',
-    shingles: '$400-$800/year',
-    shinglesNote: 'Similar when factoring replacements',
-    winner: 'tie',
+  icon: Scale,
+  metal: '$400-$750/year',
+  metalNote: 'Best long-term value',
+  shingles: '$400-$800/year',
+  shinglesNote: 'Similar when factoring replacements',
+  winner: 'tie',
   },
   {
     category: 'Energy Efficiency',
-    icon: Thermometer,
-    metal: 'Excellent (10-25% savings)',
-    metalNote: 'Reflects heat, reduces AC',
-    shingles: 'Moderate (5-10% savings)',
-    shinglesNote: 'Cool roof options available',
-    winner: 'metal',
+  icon: Thermometer,
+  metal: 'Excellent (10-25% savings)',
+  metalNote: 'Reflects heat, reduces AC',
+  shingles: 'Moderate (5-10% savings)',
+  shinglesNote: 'Cool roof options available',
+  winner: 'metal',
   },
   {
     category: 'Storm Resistance',
-    icon: Wind,
-    metal: '140+ mph wind, Class 4 hail',
-    metalNote: 'Superior protection',
-    shingles: '110 mph wind, Class 3 hail max',
-    shinglesNote: 'More vulnerable to damage',
-    winner: 'metal',
+  icon: Wind,
+  metal: '140+ mph wind, Class 4 hail',
+  metalNote: 'Superior protection',
+  shingles: '110 mph wind, Class 3 hail max',
+  shinglesNote: 'More vulnerable to damage',
+  winner: 'metal',
   },
   {
     category: 'Maintenance',
-    icon: Shield,
-    metal: 'Very Low',
-    metalNote: 'Occasional inspection only',
-    shingles: 'Low-Moderate',
-    shinglesNote: 'May need repairs over time',
-    winner: 'metal',
+  icon: Shield,
+  metal: 'Very Low',
+  metalNote: 'Occasional inspection only',
+  shingles: 'Low-Moderate',
+  shinglesNote: 'May need repairs over time',
+  winner: 'metal',
   },
   {
     category: 'Style Options',
-    icon: Palette,
-    metal: 'Many colors, profiles',
-    metalNote: 'Modern and traditional looks',
-    shingles: 'Extensive variety',
-    shinglesNote: 'Most style flexibility',
-    winner: 'tie',
+  icon: Palette,
+  metal: 'Many colors, profiles',
+  metalNote: 'Modern and traditional looks',
+  shingles: 'Extensive variety',
+  shinglesNote: 'Most style flexibility',
+  winner: 'tie',
   },
   {
     category: 'Noise Level',
-    icon: Volume2,
-    metal: 'Similar when properly installed',
-    metalNote: 'Solid decking eliminates issue',
-    shingles: 'Quiet',
-    shinglesNote: 'Natural sound dampening',
-    winner: 'tie',
+  icon: Volume2,
+  metal: 'Similar when properly installed',
+  metalNote: 'Solid decking eliminates issue',
+  shingles: 'Quiet',
+  shinglesNote: 'Natural sound dampening',
+  winner: 'tie',
   },
   {
     category: 'Home Value',
-    icon: Home,
-    metal: '+1-6% value increase',
-    metalNote: 'Premium perceived value',
-    shingles: 'Neutral to slight increase',
-    shinglesNote: 'Expected standard',
-    winner: 'metal',
+  icon: Home,
+  metal: '+1-6% value increase',
+  metalNote: 'Premium perceived value',
+  shingles: 'Neutral to slight increase',
+  shinglesNote: 'Expected standard',
+  winner: 'metal',
   },
   {
     category: 'Environmental Impact',
-    icon: Leaf,
-    metal: '25-95% recyclable, lasts longer',
-    metalNote: 'Most sustainable option',
-    shingles: 'Mostly landfill disposal',
-    shinglesNote: 'Replaced more frequently',
-    winner: 'metal',
+  icon: Leaf,
+  metal: '25-95% recyclable, lasts longer',
+  metalNote: 'Most sustainable option',
+  shingles: 'Mostly landfill disposal',
+  shinglesNote: 'Replaced more frequently',
+  winner: 'metal',
   },
 ];
 
@@ -223,10 +223,10 @@ export default function MetalRoofVsShinglesPage() {
       <ArticleSchema
         post={{
           title: 'Metal Roof vs Shingles: Complete Charlotte NC Comparison Guide',
-          description: 'Which roofing material is best for your Charlotte home?',
-          slug: 'metal-roof-vs-shingles-charlotte-nc',
-          datePublished: '2026-01-27',
-          dateModified: '2026-01-27',
+  description: 'Which roofing material is best for your Charlotte home?',
+  slug: 'metal-roof-vs-shingles-charlotte-nc',
+  datePublished: '2026-01-27',
+  dateModified: '2026-01-27',
         }}
       />
       <FAQSchema faqs={comparisonFAQs} />
@@ -297,7 +297,7 @@ export default function MetalRoofVsShinglesPage() {
                 <h3 className="font-bold text-dark mb-2">Choose Shingles If:</h3>
                 <p className="text-gray text-sm">
                   Budget is primary concern, planning to sell soon, HOA restricts materials,
-                  or you prefer traditional aesthetics.
+  or you prefer traditional aesthetics.
                 </p>
               </div>
             </div>
@@ -416,7 +416,7 @@ export default function MetalRoofVsShinglesPage() {
                 </div>
                 <p className="text-gray text-sm">
                   Charlotte averages 90+ degree days for months. Metal reflects solar heat,
-                  keeping homes 10-25% cooler and reducing AC costs significantly.
+  keeping homes 10-25% cooler and reducing AC costs significantly.
                 </p>
               </div>
               <div className="card">

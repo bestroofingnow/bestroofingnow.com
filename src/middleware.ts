@@ -27,7 +27,7 @@ const KNOWN_ROUTES = new Set([
   'products',
   'warranty',
   'stories',
-  'sitemap',
+  'site-map',
   'sitemaps',
   'privacy-policy',
   'terms',
@@ -107,12 +107,14 @@ const LOCATION_PATTERN = /^(charlotte|huntersville|cornelius|davidson|mooresvill
 const SERVICE_LOCATION_PATTERN = /^.+-(charlotte|huntersville|cornelius|davidson|mooresville|denver|sherrills-ford|terrell|lake-norman|concord|kannapolis|harrisburg|mint-hill|matthews|pineville|indian-trail|weddington|waxhaw|monroe|gastonia|belmont|mount-holly|lincolnton|hickory|statesville|troutman|rock-hill|fort-mill|tega-cay|indian-land|lancaster)-(nc|north-carolina)$/i;
 
 export function middleware(request: NextRequest) {
-  // Force HTTPS redirect (defense in depth - Vercel also handles this)
-  const proto = request.headers.get('x-forwarded-proto');
-  if (proto === 'http') {
-    const httpsUrl = new URL(request.url);
-    httpsUrl.protocol = 'https:';
-    return NextResponse.redirect(httpsUrl, { status: 301 });
+  // Force HTTPS redirect in production (Vercel also handles this)
+  if (process.env.NODE_ENV === 'production') {
+    const proto = request.headers.get('x-forwarded-proto');
+    if (proto === 'http') {
+      const httpsUrl = new URL(request.url);
+      httpsUrl.protocol = 'https:';
+      return NextResponse.redirect(httpsUrl, { status: 301 });
+    }
   }
 
   const pathname = request.nextUrl.pathname;

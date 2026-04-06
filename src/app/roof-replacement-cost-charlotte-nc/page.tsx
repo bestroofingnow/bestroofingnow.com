@@ -17,7 +17,7 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { JamesTip } from '@/components/sections/PersonalTouch';
 import { Button } from '@/components/ui/Button';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
@@ -33,12 +33,16 @@ export const metadata: Metadata = {
     'How much does roof replacement cost in Charlotte NC? Average costs range from $8,000-$25,000 for typical homes. Get accurate pricing by roof size, materials, and complexity. Free estimates available.',
   keywords: [
     'roof replacement cost Charlotte NC',
-    'how much does a new roof cost Charlotte',
-    'Charlotte roof replacement prices',
-    'roof replacement estimate Charlotte',
+    'how much does a new roof cost Charlotte NC',
+    'roof replacement cost Charlotte NC 2026',
+    'average roof replacement cost Charlotte NC',
     'new roof cost Charlotte NC',
-    'average roof replacement cost Charlotte',
-    'roof replacement pricing Charlotte',
+    'cheapest roof replacement Charlotte NC',
+    'roof replacement cost per square foot Charlotte',
+    'roof replacement cost Lake Norman NC',
+    'roof replacement cost Lake Wylie SC',
+    'roof replacement cost Fort Mill SC',
+    'roof replacement cost Mooresville NC',
     'Charlotte roofing prices 2026',
   ],
   alternates: {
@@ -46,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Cost Charlotte NC | 2026 Price Guide',
-    description:
+  description:
       'Get accurate roof replacement costs for Charlotte NC. Typical homes range $8,000-$25,000. See cost breakdowns by size, material, and complexity. Free estimates from BBB A+ rated contractor.',
-    url: `${SITE_CONFIG.url}/roof-replacement-cost-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-cost-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Roof replacement cost Charlotte NC - professional roofing installation',
+  width: 1200,
+  height: 630,
+  alt: 'Roof replacement cost Charlotte NC - professional roofing installation',
       },
     ],
   },
@@ -74,100 +78,100 @@ const costBySize = [
 const materialCosts = [
   {
     material: 'Asphalt Shingles (3-Tab)',
-    perSqFt: '$3.50 - $5.50',
-    lifespan: '15-20 years',
-    pros: ['Most affordable option', 'Easy installation', 'Wide color variety'],
-    best: 'Budget-conscious homeowners',
+  perSqFt: '$3.50 - $5.50',
+  lifespan: '15-20 years',
+  pros: ['Most affordable option', 'Easy installation', 'Wide color variety'],
+  best: 'Budget-conscious homeowners',
   },
   {
     material: 'Architectural Shingles',
-    perSqFt: '$4.50 - $7.00',
-    lifespan: '25-30 years',
-    pros: ['Better appearance', 'Longer warranty', 'Wind resistant'],
-    best: 'Most Charlotte homeowners',
+  perSqFt: '$4.50 - $7.00',
+  lifespan: '25-30 years',
+  pros: ['Better appearance', 'Longer warranty', 'Wind resistant'],
+  best: 'Most Charlotte homeowners',
   },
   {
     material: 'Metal Roofing',
-    perSqFt: '$8.00 - $15.00',
-    lifespan: '40-70 years',
-    pros: ['Extreme durability', 'Energy efficient', 'Low maintenance'],
-    best: 'Long-term investment',
+  perSqFt: '$8.00 - $15.00',
+  lifespan: '40-70 years',
+  pros: ['Extreme durability', 'Energy efficient', 'Low maintenance'],
+  best: 'Long-term investment',
   },
   {
     material: 'Tile Roofing',
-    perSqFt: '$15.00 - $25.00',
-    lifespan: '50-100 years',
-    pros: ['Premium appearance', 'Exceptional lifespan', 'Fire resistant'],
-    best: 'Luxury homes, Mediterranean style',
+  perSqFt: '$15.00 - $25.00',
+  lifespan: '50-100 years',
+  pros: ['Premium appearance', 'Exceptional lifespan', 'Fire resistant'],
+  best: 'Luxury homes, Mediterranean style',
   },
 ];
 
 const costFactors = [
   {
     icon: Ruler,
-    title: 'Roof Size',
-    description: 'The primary cost driver. Measured in roofing squares (100 sq ft each).',
-    impact: 'Major Impact',
+  title: 'Roof Size',
+  description: 'The primary cost driver. Measured in roofing squares (100 sq ft each).',
+  impact: 'Major Impact',
   },
   {
     icon: Layers,
-    title: 'Material Choice',
-    description: 'From budget asphalt to premium metal or tile options.',
-    impact: 'Major Impact',
+  title: 'Material Choice',
+  description: 'From budget asphalt to premium metal or tile options.',
+  impact: 'Major Impact',
   },
   {
     icon: TrendingUp,
-    title: 'Roof Pitch/Slope',
-    description: 'Steeper roofs require more safety equipment and labor time.',
-    impact: 'Moderate Impact',
+  title: 'Roof Pitch/Slope',
+  description: 'Steeper roofs require more safety equipment and labor time.',
+  impact: 'Moderate Impact',
   },
   {
     icon: Home,
-    title: 'Roof Complexity',
-    description: 'Valleys, dormers, skylights, and multiple levels add cost.',
-    impact: 'Moderate Impact',
+  title: 'Roof Complexity',
+  description: 'Valleys, dormers, skylights, and multiple levels add cost.',
+  impact: 'Moderate Impact',
   },
 ];
 
 const faqs = [
   {
     question: 'How much does a new roof cost in Charlotte NC in 2026?',
-    answer:
+  answer:
       'A new roof in Charlotte NC typically costs between $8,000 and $25,000 for most homes in 2026. The average Charlotte homeowner pays around $12,000-$15,000 for a complete roof replacement with architectural shingles. Exact costs depend on your roof size, material choice, and complexity. We offer free estimates to give you an accurate price for your specific home.',
   },
   {
     question: 'What is the average cost per square foot for roof replacement in Charlotte?',
-    answer:
+  answer:
       'In Charlotte NC, roof replacement costs range from $4-$7 per square foot for standard asphalt shingles, $8-$15 per square foot for metal roofing, and $15-$25 per square foot for tile roofing. These prices include materials, labor, tear-off of the old roof, and disposal. Architectural shingles, the most popular choice, typically cost $4.50-$7.00 per square foot installed.',
   },
   {
     question: 'Does insurance cover roof replacement in Charlotte NC?',
-    answer:
+  answer:
       'Yes, homeowners insurance typically covers roof replacement if the damage was caused by a covered event like storms, hail, or wind. Charlotte experiences significant storm activity, and many roof replacements are at least partially covered by insurance. Best Roofing Now works directly with insurance companies and can help you navigate the claims process to maximize your coverage.',
   },
   {
     question: 'How long does a roof replacement take in Charlotte?',
-    answer:
+  answer:
       'Most residential roof replacements in Charlotte take 1-3 days to complete, depending on the size and complexity of your roof. A typical 2,000-2,500 square foot roof can usually be completed in 1-2 days. Larger homes, complex roof designs, or unexpected repairs may extend the timeline. We work efficiently to minimize disruption to your daily life.',
   },
   {
     question: 'When is the best time to replace a roof in Charlotte NC?',
-    answer:
+  answer:
       'The best time for roof replacement in Charlotte is during spring (March-May) or fall (September-November) when temperatures are moderate. However, experienced roofers can work year-round in Charlotte\'s climate. The key is to replace your roof before it fails rather than waiting for the "perfect" time. If your roof is showing signs of wear, schedule a free inspection to assess the urgency.',
   },
   {
     question: 'Should I repair or replace my roof in Charlotte?',
-    answer:
+  answer:
       'As a general rule, if repairs would cost more than 50% of a replacement, or if your roof is approaching 20+ years old, replacement is often the better investment. Minor repairs (under $1,500) for localized damage make sense for roofs with remaining lifespan. We provide honest assessments and never recommend replacement unless it\'s truly needed. Our free inspections help you make an informed decision.',
   },
   {
     question: 'What is the cheapest roof replacement option in Charlotte?',
-    answer:
+  answer:
       'The most affordable roof replacement option in Charlotte is 3-tab asphalt shingles, costing $3.50-$5.50 per square foot installed (around $6,000-$10,000 for an average home). However, we often recommend architectural shingles for just $1-2 more per square foot because they last 10+ years longer and offer better wind resistance - important in Charlotte\'s storm-prone climate. The slightly higher upfront cost often provides better long-term value.',
   },
   {
     question: 'Do you offer financing for roof replacement in Charlotte?',
-    answer:
+  answer:
       'Yes! Best Roofing Now offers flexible financing options including 0% APR for 12 months and low monthly payment plans. This allows Charlotte homeowners to get the roof they need without draining savings. Financing approval is quick (often same-day), and we can discuss your options during your free estimate.',
   },
 ];
@@ -177,57 +181,57 @@ function PricingSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Roof Replacement in Charlotte NC',
-    description:
+  name: 'Roof Replacement in Charlotte NC',
+  description:
       'Professional roof replacement services in Charlotte NC. Complete tear-off, installation of new roofing materials, and cleanup. BBB A+ rated.',
-    provider: {
+  provider: {
       ...getRoofingContractorIdentity(),
-      aggregateRating: {
+  aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: SITE_CONFIG.googleRating,
-        reviewCount: SITE_CONFIG.googleReviewCount,
-        bestRating: 5,
-        worstRating: 1,
+  ratingValue: SITE_CONFIG.googleRating,
+  reviewCount: SITE_CONFIG.googleReviewCount,
+  bestRating: 5,
+  worstRating: 1,
       },
     },
-    areaServed: {
+  areaServed: {
       '@type': 'City',
-      name: 'Charlotte, NC',
+  name: 'Charlotte, NC',
     },
-    hasOfferCatalog: {
+  hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Roof Replacement Pricing',
-      itemListElement: [
+  name: 'Roof Replacement Pricing',
+  itemListElement: [
         {
           '@type': 'Offer',
-          name: 'Asphalt Shingle Roof Replacement',
-          description: 'Complete roof replacement with 3-tab or architectural asphalt shingles',
-          priceSpecification: {
+  name: 'Asphalt Shingle Roof Replacement',
+  description: 'Complete roof replacement with 3-tab or architectural asphalt shingles',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '8000',
-            maxPrice: '18000',
-            unitText: 'per project',
+  priceCurrency: 'USD',
+  minPrice: '8000',
+  maxPrice: '18000',
+  unitText: 'per project',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Metal Roof Replacement',
-          description: 'Premium metal roofing installation including standing seam options',
-          priceSpecification: {
+  name: 'Metal Roof Replacement',
+  description: 'Premium metal roofing installation including standing seam options',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '15000',
-            maxPrice: '40000',
-            unitText: 'per project',
+  priceCurrency: 'USD',
+  minPrice: '15000',
+  maxPrice: '40000',
+  unitText: 'per project',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Free Roof Inspection',
-          description: 'Complimentary roof inspection and estimate',
-          price: '0',
-          priceCurrency: 'USD',
+  name: 'Free Roof Inspection',
+  description: 'Complimentary roof inspection and estimate',
+  price: '0',
+  priceCurrency: 'USD',
         },
       ],
     },
@@ -252,7 +256,6 @@ export default function RoofReplacementCostCharlottePage() {
       />
       <FAQSchema faqs={faqs} />
       <PricingSchema />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-cost-charlotte-nc`}
         pageName="Roof Replacement Cost Charlotte NC"
@@ -262,23 +265,23 @@ export default function RoofReplacementCostCharlottePage() {
         faqs={[
           {
             question: 'How much does a new roof cost in Charlotte NC in 2026?',
-            answer: 'A new roof in Charlotte NC costs $8,000-$25,000 for most homes in 2026. The average cost is $12,000-$15,000 for a 2,000 sq ft roof with architectural shingles. Best Roofing Now provides free estimates with exact pricing for your home.',
-            speakableAnswer: 'A new roof in Charlotte costs $8,000-25,000 for most homes. The average is $12,000-15,000. Call Best Roofing Now at 704-605-6047 for a free estimate.',
+  answer: 'A new roof in Charlotte NC costs $8,000-$25,000 for most homes in 2026. The average cost is $12,000-$15,000 for a 2,000 sq ft roof with architectural shingles. Best Roofing Now provides free estimates with exact pricing for your home.',
+  speakableAnswer: 'A new roof in Charlotte costs $8,000-25,000 for most homes. The average is $12,000-15,000. Call Best Roofing Now at 704-605-6047 for a free estimate.',
           },
           {
             question: 'What is the average cost per square foot for roof replacement in Charlotte?',
-            answer: 'Roof replacement in Charlotte costs $3.50-$7.00 per square foot for asphalt shingles, $7-$12 for metal roofing, and $10-$15 for premium materials like slate or tile. Labor and material costs vary by roof complexity.',
-            speakableAnswer: 'Roof replacement in Charlotte costs $3.50-7 per square foot for shingles, $7-12 for metal. Call Best Roofing Now for exact pricing.',
+  answer: 'Roof replacement in Charlotte costs $3.50-$7.00 per square foot for asphalt shingles, $7-$12 for metal roofing, and $10-$15 for premium materials like slate or tile. Labor and material costs vary by roof complexity.',
+  speakableAnswer: 'Roof replacement in Charlotte costs $3.50-7 per square foot for shingles, $7-12 for metal. Call Best Roofing Now for exact pricing.',
           },
           {
             question: 'Why do roof replacement costs vary so much in Charlotte NC?',
-            answer: 'Roof replacement costs in Charlotte vary based on: roof size (1,000-3,500+ sq ft), material choice (3-tab vs architectural vs designer), roof pitch and complexity, number of layers to remove, and ventilation/flashing needs. Best Roofing Now provides detailed free estimates.',
-            speakableAnswer: 'Roof costs vary by size, material, pitch, and complexity. Best Roofing Now offers free detailed estimates. Call 704-605-6047.',
+  answer: 'Roof replacement costs in Charlotte vary based on: roof size (1,000-3,500+ sq ft), material choice (3-tab vs architectural vs designer), roof pitch and complexity, number of layers to remove, and ventilation/flashing needs. Best Roofing Now provides detailed free estimates.',
+  speakableAnswer: 'Roof costs vary by size, material, pitch, and complexity. Best Roofing Now offers free detailed estimates. Call 704-605-6047.',
           },
           {
             question: 'Does insurance cover roof replacement in Charlotte NC?',
-            answer: 'Homeowners insurance typically covers roof replacement in Charlotte when caused by storms, hail, wind, or fallen trees. Best Roofing Now helps document damage and works directly with insurance companies to maximize your claim coverage.',
-            speakableAnswer: 'Insurance covers roof replacement from storm damage in Charlotte. Best Roofing Now helps with insurance claims. Call 704-605-6047.',
+  answer: 'Homeowners insurance typically covers roof replacement in Charlotte when caused by storms, hail, wind, or fallen trees. Best Roofing Now helps document damage and works directly with insurance companies to maximize your claim coverage.',
+  speakableAnswer: 'Insurance covers roof replacement from storm damage in Charlotte. Best Roofing Now helps with insurance claims. Call 704-605-6047.',
           },
         ]}
       />

@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { JamesTip } from '@/components/sections/PersonalTouch';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -53,16 +53,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Maintenance Charlotte NC | Annual Inspection Plans | Best Roofing Now',
-    description:
+  description:
       'Professional roof maintenance programs to extend your roof life. Annual inspections and preventive repairs in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.inspection,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof maintenance Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof maintenance Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -72,39 +72,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Search,
-    title: 'Annual Roof Inspections',
-    description: 'Comprehensive yearly inspections to catch problems early before they become costly repairs.',
-    href: '/services/roof-inspection',
+  title: 'Annual Roof Inspections',
+  description: 'Comprehensive yearly inspections to catch problems early before they become costly repairs.',
+  href: '/services/roof-inspection',
   },
   {
     icon: ClipboardCheck,
-    title: 'Maintenance Plans',
-    description: 'Customized maintenance programs with scheduled inspections and priority service.',
-    href: '/services/roof-inspection',
+  title: 'Maintenance Plans',
+  description: 'Customized maintenance programs with scheduled inspections and priority service.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Wrench,
-    title: 'Preventive Repairs',
-    description: 'Minor repairs and adjustments during inspections to prevent larger issues.',
-    href: '/services/roof-repair',
+  title: 'Preventive Repairs',
+  description: 'Minor repairs and adjustments during inspections to prevent larger issues.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Gutter Cleaning',
-    description: 'Regular gutter cleaning to ensure proper drainage and prevent water damage.',
-    href: '/services/gutters',
+  title: 'Gutter Cleaning',
+  description: 'Regular gutter cleaning to ensure proper drainage and prevent water damage.',
+  href: '/services/gutters',
   },
   {
     icon: Hammer,
-    title: 'Flashing & Sealant Service',
-    description: 'Inspection and resealing of flashing, vents, and penetrations.',
-    href: '/services/roof-repair',
+  title: 'Flashing & Sealant Service',
+  description: 'Inspection and resealing of flashing, vents, and penetrations.',
+  href: '/services/roof-repair',
   },
   {
     icon: TrendingUp,
-    title: 'Roof Life Extension',
-    description: 'Proactive care strategies to maximize your roof investment and extend its lifespan.',
-    href: '/services/roof-inspection',
+  title: 'Roof Life Extension',
+  description: 'Proactive care strategies to maximize your roof investment and extend its lifespan.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -112,33 +112,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Inspectors',
-    description: 'Factory-trained inspectors certified by CertainTeed, GAF, and Owens Corning.',
+  title: 'Certified Inspectors',
+  description: 'Factory-trained inspectors certified by CertainTeed, GAF, and Owens Corning.',
   },
   {
     icon: Clock,
-    title: 'Flexible Scheduling',
-    description: 'Convenient appointment times that work with your schedule, including weekends.',
+  title: 'Flexible Scheduling',
+  description: 'Convenient appointment times that work with your schedule, including weekends.',
   },
 ];
 
@@ -200,42 +200,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How often should I have my roof inspected in Charlotte?',
-    answer:
+  answer:
       'We recommend annual roof inspections for Charlotte homes, plus additional inspections after significant storms. Charlotte experiences severe weather including thunderstorms, hail, and occasional tropical systems that can damage roofs. Regular inspections catch minor issues before they become expensive repairs.',
   },
   {
     question: 'What does a roof maintenance inspection include?',
-    answer:
+  answer:
       'Our comprehensive inspection covers: shingle condition and granule loss, flashing around chimneys and vents, ridge caps and edge details, gutter condition and attachment, soffit and fascia, attic ventilation, signs of leaks or water damage, and overall structural integrity. You receive a detailed written report with photos.',
   },
   {
     question: 'How much does roof maintenance cost in Charlotte NC?',
-    answer:
+  answer:
       'Individual roof inspections start at $150-$250, while our annual maintenance plans range from $199-$349 per year depending on roof size and coverage level. Maintenance plans include annual inspections plus minor repairs, making them excellent value. Many homeowners save thousands by catching problems early.',
   },
   {
     question: 'Can roof maintenance really extend my roof life?',
-    answer:
+  answer:
       'Absolutely. A well-maintained roof can last 25-30 years or more, while a neglected roof may fail in 15-20 years. Regular maintenance catches small issues like lifted shingles, deteriorating caulk, or minor flashing problems before they lead to water damage and premature roof failure.',
   },
   {
     question: 'What minor repairs are included in the maintenance plan?',
-    answer:
+  answer:
       'Our maintenance plans include minor repairs up to $200 in value during each inspection. This typically covers: reattaching loose shingles, resealing small areas around vents and flashing, clearing debris from valleys, and adjusting gutter hangers. More extensive repairs are quoted separately but receive a 10% discount.',
   },
   {
     question: 'Do you offer commercial roof maintenance programs?',
-    answer:
+  answer:
       'Yes, we offer customized commercial roof maintenance programs for businesses throughout Charlotte. Commercial plans can include quarterly inspections, drain clearing, membrane checks for flat roofs, and detailed documentation for property management. Contact us for a custom commercial maintenance quote.',
   },
   {
     question: 'When is the best time to schedule roof maintenance?',
-    answer:
+  answer:
       'Spring and fall are ideal times for roof maintenance in Charlotte. Spring inspections catch any winter damage and prepare your roof for summer storms. Fall inspections ensure your roof is ready for winter weather. However, we perform inspections year-round and recommend timing based on your roof type and age.',
   },
   {
     question: 'Is your roof maintenance plan transferable if I sell my home?',
-    answer:
+  answer:
       'Yes! Our maintenance plans are fully transferable to new homeowners. This can be a selling point when you list your home, as it demonstrates you have maintained the roof properly. We simply update the account information at no additional charge.',
   },
 ];
@@ -250,7 +250,6 @@ export default function RoofMaintenanceCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`}
         pageName="Roof Maintenance Charlotte NC"
@@ -260,13 +259,13 @@ export default function RoofMaintenanceCharlotteNCPage() {
         faqs={[
           {
             question: 'How often should I have my roof inspected in Charlotte NC?',
-            answer: 'Charlotte homeowners should have their roof inspected annually, plus after any major storm. Charlotte experiences severe thunderstorms, hail, and occasional tropical systems. Best Roofing Now offers annual maintenance plans starting at $199/year.',
-            speakableAnswer: 'You should inspect your Charlotte roof at least once a year, plus after major storms. Best Roofing Now offers maintenance plans starting at $199 a year. Call 704-605-6047.',
+  answer: 'Charlotte homeowners should have their roof inspected annually, plus after any major storm. Charlotte experiences severe thunderstorms, hail, and occasional tropical systems. Best Roofing Now offers annual maintenance plans starting at $199/year.',
+  speakableAnswer: 'You should inspect your Charlotte roof at least once a year, plus after major storms. Best Roofing Now offers maintenance plans starting at $199 a year. Call 704-605-6047.',
           },
           {
             question: 'What does a roof maintenance plan include?',
-            answer: 'A roof maintenance plan from Best Roofing Now includes annual comprehensive inspection, written report with photos, minor repairs up to $200, gutter debris removal, flashing and sealant checks, attic ventilation assessment, priority scheduling, 10% repair discount, and storm damage inspections.',
-            speakableAnswer: 'Our maintenance plan includes annual inspection, minor repairs, gutter cleaning, and priority service starting at $199 a year. Call Best Roofing Now at 704-605-6047.',
+  answer: 'A roof maintenance plan from Best Roofing Now includes annual comprehensive inspection, written report with photos, minor repairs up to $200, gutter debris removal, flashing and sealant checks, attic ventilation assessment, priority scheduling, 10% repair discount, and storm damage inspections.',
+  speakableAnswer: 'Our maintenance plan includes annual inspection, minor repairs, gutter cleaning, and priority service starting at $199 a year. Call Best Roofing Now at 704-605-6047.',
           },
         ]}
       />

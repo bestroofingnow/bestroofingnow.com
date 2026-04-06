@@ -24,7 +24,7 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Fort Mill SC | Kingsley & Baxter',
-    description:
+  description:
       'Expert commercial roofing in Fort Mill SC. TPO, EPDM, flat roofing, metal roofing for Kingsley, Baxter Village & I-77 businesses. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/commercial-roofing-fort-mill-sc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-fort-mill-sc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing Fort Mill SC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing Fort Mill SC - Best Roofing Now',
       },
     ],
   },
@@ -76,51 +76,51 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Layers,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient thermoplastic membranes ideal for Fort Mill commercial buildings and offices.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient thermoplastic membranes ideal for Fort Mill commercial buildings and offices.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for warehouses.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Roofing',
+  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for warehouses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Building2,
-    title: 'Flat Roof Systems',
-    description: 'Complete flat roof installation and repair for office parks, retail, and industrial buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Flat Roof Systems',
+  description: 'Complete flat roof installation and repair for office parks, retail, and industrial buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Metal Roofing',
-    description: 'Standing seam and corrugated metal roofing for commercial and industrial applications.',
-    href: '/services/commercial-roofing',
+  title: 'Metal Roofing',
+  description: 'Standing seam and corrugated metal roofing for commercial and industrial applications.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Roof Coatings',
-    description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings',
+  description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
-    href: '/services/roof-repair',
+  title: 'Commercial Roof Repair',
+  description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: DollarSign,
-    title: 'Preventive Maintenance',
-    description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
-    href: '/services/commercial-roofing',
+  title: 'Preventive Maintenance',
+  description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -128,33 +128,33 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated Commercial Roofer',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Fort Mill commercial clients.`,
+  title: '#1 Rated Commercial Roofer',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Fort Mill commercial clients.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity and excellence on every commercial project.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity and excellence on every commercial project.',
   },
   {
     icon: CheckCircle,
-    title: 'SC Licensed & Insured',
-    description: 'SC licensed commercial contractor with $2M+ liability coverage.',
+  title: 'SC Licensed & Insured',
+  description: 'SC licensed commercial contractor with $2M+ liability coverage.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
   },
   {
     icon: Clock,
-    title: 'Minimal Business Disruption',
-    description: 'Nights, weekends, and phased installation to keep your business running.',
+  title: 'Minimal Business Disruption',
+  description: 'Nights, weekends, and phased installation to keep your business running.',
   },
 ];
 
@@ -206,42 +206,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What commercial roofing systems do you install in Fort Mill SC?',
-    answer:
+  answer:
       'Best Roofing Now installs all major commercial roofing systems in Fort Mill including TPO (Thermoplastic Polyolefin), EPDM (Ethylene Propylene Diene Monomer), PVC (Polyvinyl Chloride), modified bitumen, built-up roofing (BUR), standing seam metal roofing, and various roof coating systems. For Fort Mill\'s growing business community, we often recommend TPO for its energy efficiency and long-term value.',
   },
   {
     question: 'How much does commercial roofing cost in Fort Mill SC?',
-    answer:
+  answer:
       'Commercial roofing costs in Fort Mill typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, and project size. TPO and EPDM systems average $5-8 per square foot, while metal roofing ranges from $8-15 per square foot. We provide free, detailed estimates for all commercial projects.',
   },
   {
     question: 'Do you have experience with corporate office roofing?',
-    answer:
+  answer:
       'Yes, Best Roofing Now has extensive experience with corporate and office building roofing in Fort Mill including developments in Kingsley, Baxter Village, and along the I-77 corridor. We understand the importance of maintaining a professional appearance and work to minimize any disruption to your business operations and employees.',
   },
   {
     question: 'Do you offer emergency commercial roof repair in Fort Mill SC?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers 24/7 emergency commercial roofing services throughout Fort Mill and York County. For active leaks and urgent situations, we typically respond within 2-4 hours. Our emergency team provides temporary repairs to prevent further damage. Call (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'Are you licensed to work in South Carolina?',
-    answer:
+  answer:
       'Yes, Best Roofing Now is fully licensed to perform commercial roofing work in South Carolina. We maintain all required SC contractor licenses, comprehensive liability insurance, and workers compensation coverage. We serve Fort Mill, Indian Land, Tega Cay, and throughout York County.',
   },
   {
     question: 'How long does a commercial roof last in Fort Mill SC?',
-    answer:
+  answer:
       'Commercial roof lifespan in Fort Mill varies by material: TPO and EPDM typically last 20-30 years, modified bitumen 15-25 years, metal roofing 40-70 years, and built-up roofing 15-30 years. South Carolina\'s heat and humidity make quality installation and regular maintenance essential for maximizing roof life.',
   },
   {
     question: 'What commercial roof warranties do you offer?',
-    answer:
+  answer:
       'We offer industry-leading warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. Our workmanship warranty covers labor for 10-15 years. NDL warranties cover full replacement cost with no depreciation.',
   },
   {
     question: 'Can you work around our business hours in Fort Mill?',
-    answer:
+  answer:
       'Absolutely. We understand Fort Mill businesses need minimal disruption. Best Roofing Now offers flexible scheduling including night shifts, weekend work, and phased installations. For corporate offices and retail locations, we can complete sections after business hours to minimize impact on your operations.',
   },
 ];
@@ -257,7 +257,6 @@ export default function CommercialRoofingFortMillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-fort-mill-sc`}
         pageName="Commercial Roofing Fort Mill SC"

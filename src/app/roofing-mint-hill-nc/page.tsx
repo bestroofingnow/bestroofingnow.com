@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Mint Hill NC | East Charlotte Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Mint Hill NC from our Charlotte headquarters. Expert roofing for larger properties and rural estates in East Charlotte.',
-    url: `${SITE_CONFIG.url}/roofing-mint-hill-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-mint-hill-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Mint Hill NC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Mint Hill NC - Best Roofing Now team',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Mint Hill homes, including larger properties and estates.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Mint Hill homes, including larger properties and estates.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Mint Hill businesses and agricultural buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Mint Hill businesses and agricultural buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Mint Hill.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Mint Hill.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials for large and complex roofs.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials for large and complex roofs.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Mint Hill properties of all sizes.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Mint Hill properties of all sizes.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance in Mint Hill.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance in Mint Hill.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte area homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Large Property Experience',
-    description: 'Experienced with larger properties and complex roof designs common in Mint Hill.',
+  title: 'Large Property Experience',
+  description: 'Experienced with larger properties and complex roof designs common in Mint Hill.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Fast Response Time',
-    description: 'Serving Mint Hill from nearby Charlotte means quick response for your roofing needs.',
+  title: 'Fast Response Time',
+  description: 'Serving Mint Hill from nearby Charlotte means quick response for your roofing needs.',
   },
 ];
 
@@ -169,42 +169,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Mint Hill NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Mint Hill NC from our Charlotte headquarters, just 11 miles away. We provide complete roofing services throughout Mint Hill, including the rural areas and larger properties the community is known for.',
   },
   {
     question: 'Can you handle larger roofs and complex properties in Mint Hill?',
-    answer:
+  answer:
       'Absolutely. Mint Hill is known for its larger lots and spacious homes. Our team has extensive experience with larger residential roofs, multi-structure properties, and complex roof designs. We have the crew size and expertise to handle projects of any scale.',
   },
   {
     question: 'How quickly can you respond to roofing emergencies in Mint Hill?',
-    answer:
+  answer:
       'Our proximity to Mint Hill allows us to respond quickly to roofing emergencies. Typically, we can be on-site within 30-45 minutes for urgent situations like active leaks or storm damage. We offer 24/7 emergency services for the Mint Hill area.',
   },
   {
     question: 'What roofing materials work best for Mint Hill homes?',
-    answer:
+  answer:
       'Mint Hill homes often benefit from premium architectural shingles like CertainTeed Landmark Pro or GAF Timberline HDZ for their durability and aesthetic appeal. For larger properties, metal roofing is increasingly popular due to its longevity and low maintenance. We also install specialty materials for historic or custom homes.',
   },
   {
     question: 'How much does a new roof cost in Mint Hill NC?',
-    answer:
+  answer:
       'The cost of a new roof in Mint Hill typically ranges from $10,000 to $35,000 or more, as many Mint Hill homes are larger than average. Factors include roof size, pitch, accessibility, and material choice. We provide free, detailed estimates with no hidden fees.',
   },
   {
     question: 'Do you offer roofing services for barns and outbuildings in Mint Hill?',
-    answer:
+  answer:
       'Yes, we provide roofing services for all types of structures including barns, detached garages, workshops, and other outbuildings. Mint Hill\'s rural character means many properties have multiple structures, and we can handle them all with one convenient visit.',
   },
   {
     question: 'Do you offer free roof inspections in Mint Hill?',
-    answer:
+  answer:
       'Yes, we offer completely free roof inspections throughout Mint Hill. Our certified inspectors will thoroughly examine your roof - even on larger properties - and provide a detailed written report with photos. There is no obligation to hire us afterward.',
   },
   {
     question: 'Do you help with insurance claims for storm damage in Mint Hill?',
-    answer:
+  answer:
       'Absolutely. Mint Hill\'s rural setting can mean more exposure to storm damage. We have extensive experience helping homeowners with insurance claims and provide thorough documentation, adjuster coordination, and advocacy for fair settlements.',
   },
 ];
@@ -226,6 +226,12 @@ export default function RoofingMintHillNCPage() {
         distance={11}
         slug="mint-hill-nc"
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-mint-hill-nc`}
+        pageName="Roofing Mint Hill NC"
+        city="Mint Hill"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

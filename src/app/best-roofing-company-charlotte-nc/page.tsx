@@ -32,7 +32,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -47,35 +46,37 @@ export const metadata: Metadata = {
     `Best Roofing Now is the best roofing company in Charlotte NC. ${SITE_CONFIG.googleRating} Google rating, ${SITE_CONFIG.googleReviewCount}+ 5-star reviews, BBB A+ rated, veteran-owned, ${SITE_CONFIG.roofsInstalled}+ roofs completed. GAF, CertainTeed & Owens Corning certified. Free estimates.`,
   keywords: [
     'best roofing company charlotte nc',
+    'best roofer charlotte nc',
     'top rated roofing company charlotte',
     '#1 roofing company charlotte nc',
     'highest rated roofing company charlotte',
     'best roofing company charlotte 2026',
-    'charlotte roofing company rankings',
-    'award winning roofing company charlotte',
     'bbb a+ roofing company charlotte nc',
-    'top 10 roofing companies charlotte',
-    'roofing company comparison charlotte',
+    'best roofer near me charlotte nc',
     'who is the best roofer in charlotte',
     '5 star roofing company charlotte nc',
-    'best roofer charlotte nc',
-    'best rated roofing company charlotte',
+    'best roofing company lake norman nc',
+    'best roofers lake wylie sc',
+    'best roofing company fort mill sc',
+    'top rated roofers huntersville nc',
+    'best roofers mooresville nc',
+    'veteran-owned roofing company charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/best-roofing-company-charlotte-nc`,
   },
   openGraph: {
     title: 'Best Roofing Company Charlotte NC | #1 Rated | BBB A+ | Best Roofing Now',
-    description:
+  description:
       `The best roofing company in Charlotte NC. ${SITE_CONFIG.googleRating} Google rating, BBB A+ rated, veteran-owned, ${SITE_CONFIG.roofsInstalled}+ roofs completed. Free estimates for all roofing services.`,
-    url: `${SITE_CONFIG.url}/best-roofing-company-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/best-roofing-company-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Best roofing company Charlotte NC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Best roofing company Charlotte NC - Best Roofing Now team',
       },
     ],
   },
@@ -85,39 +86,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete home roofing solutions with premium shingles, metal, and tile options from the best roofers in Charlotte.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete home roofing solutions with premium shingles, metal, and tile options from the best roofers in Charlotte.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Expert commercial roofing including TPO, EPDM, and flat roof systems for Charlotte businesses.',
-    href: '/commercial-roofing-charlotte-nc',
+  title: 'Commercial Roofing',
+  description: 'Expert commercial roofing including TPO, EPDM, and flat roof systems for Charlotte businesses.',
+  href: '/commercial-roofing-charlotte-nc',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, damage, and general wear - same-day service available.',
-    href: '/roof-repair-charlotte-nc',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, damage, and general wear - same-day service available.',
+  href: '/roof-repair-charlotte-nc',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with industry-leading warranties from the best roofing company in Charlotte.',
-    href: '/roof-replacement-charlotte-nc',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with industry-leading warranties from the best roofing company in Charlotte.',
+  href: '/roof-replacement-charlotte-nc',
   },
   {
     icon: Search,
-    title: 'Free Roof Inspections',
-    description: 'Comprehensive inspections with detailed reports and drone imagery - always free, no obligation.',
-    href: '/services/roof-inspection',
+  title: 'Free Roof Inspections',
+  description: 'Comprehensive inspections with detailed reports and drone imagery - always free, no obligation.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency restoration and full insurance claim assistance from Charlotte\'s best-rated roofers.',
-    href: '/storm-damage-roof-repair-charlotte-nc',
+  title: 'Storm Damage Repair',
+  description: 'Emergency restoration and full insurance claim assistance from Charlotte\'s best-rated roofers.',
+  href: '/storm-damage-roof-repair-charlotte-nc',
   },
 ];
 
@@ -125,33 +126,33 @@ const services = [
 const whyWereTheBest = [
   {
     icon: Star,
-    title: `Perfect ${SITE_CONFIG.googleRating} Google Rating`,
-    description: `${SITE_CONFIG.googleReviewCount}+ verified 5-star reviews from real Charlotte homeowners and businesses. Our perfect rating proves we deliver the best results, every time.`,
+  title: `Perfect ${SITE_CONFIG.googleRating} Google Rating`,
+  description: `${SITE_CONFIG.googleReviewCount}+ verified 5-star reviews from real Charlotte homeowners and businesses. Our perfect rating proves we deliver the best results, every time.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Rating - Zero Complaints',
-    description: 'Better Business Bureau A+ accredited with zero complaints on record. The highest possible trust rating from America\'s most respected business watchdog.',
+  title: 'BBB A+ Rating - Zero Complaints',
+  description: 'Better Business Bureau A+ accredited with zero complaints on record. The highest possible trust rating from America\'s most respected business watchdog.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity, discipline, and excellence in every project. A unique differentiator that most Charlotte roofing companies simply cannot match.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity, discipline, and excellence in every project. A unique differentiator that most Charlotte roofing companies simply cannot match.',
   },
   {
     icon: Hammer,
-    title: `${SITE_CONFIG.roofsInstalled}+ Completed Projects`,
-    description: `Over ${SITE_CONFIG.roofsInstalled} successful roofing projects across Charlotte and surrounding areas. Our experience ensures the best outcome for your home or business.`,
+  title: `${SITE_CONFIG.roofsInstalled}+ Completed Projects`,
+  description: `Over ${SITE_CONFIG.roofsInstalled} successful roofing projects across Charlotte and surrounding areas. Our experience ensures the best outcome for your home or business.`,
   },
   {
     icon: Users,
-    title: 'Owner on Every Job Site',
-    description: 'James Turner, owner of Best Roofing Now, personally oversees every project. You work directly with the owner, not a salesperson.',
+  title: 'Owner on Every Job Site',
+  description: 'James Turner, owner of Best Roofing Now, personally oversees every project. You work directly with the owner, not a salesperson.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Availability',
-    description: 'Round-the-clock emergency services because Charlotte\'s best roofing company is always ready when you need us most.',
+  title: '24/7 Emergency Availability',
+  description: 'Round-the-clock emergency services because Charlotte\'s best roofing company is always ready when you need us most.',
   },
 ];
 
@@ -171,27 +172,27 @@ const comparisonChecklist = [
 const testimonials = [
   {
     name: 'Michael R.',
-    location: 'Myers Park, Charlotte',
-    rating: 5,
-    text: 'After getting quotes from 5 different roofing companies in Charlotte, we chose Best Roofing Now and it was the best decision we made. Their quality, price, and professionalism were unmatched. Truly the best roofing company in Charlotte.',
+  location: 'Myers Park, Charlotte',
+  rating: 5,
+  text: 'After getting quotes from 5 different roofing companies in Charlotte, we chose Best Roofing Now and it was the best decision we made. Their quality, price, and professionalism were unmatched. Truly the best roofing company in Charlotte.',
   },
   {
     name: 'Sarah T.',
-    location: 'Ballantyne, Charlotte',
-    rating: 5,
-    text: 'I searched for the best roofing company in Charlotte NC and every review pointed to Best Roofing Now. They delivered beyond our expectations - transparent pricing, beautiful work, and James was on-site every day. 10/10 recommend.',
+  location: 'Ballantyne, Charlotte',
+  rating: 5,
+  text: 'I searched for the best roofing company in Charlotte NC and every review pointed to Best Roofing Now. They delivered beyond our expectations - transparent pricing, beautiful work, and James was on-site every day. 10/10 recommend.',
   },
   {
     name: 'David L.',
-    location: 'South End, Charlotte',
-    rating: 5,
-    text: 'As a property manager with 8 commercial buildings, I need the best roofer in Charlotte I can rely on. Best Roofing Now has handled all my properties with excellent results every single time. They are simply the best.',
+  location: 'South End, Charlotte',
+  rating: 5,
+  text: 'As a property manager with 8 commercial buildings, I need the best roofer in Charlotte I can rely on. Best Roofing Now has handled all my properties with excellent results every single time. They are simply the best.',
   },
   {
     name: 'Jennifer K.',
-    location: 'Huntersville, NC',
-    rating: 5,
-    text: 'James and his team at Best Roofing Now are the best roofers we have ever worked with. Veteran-owned, family values, and the quality speaks for itself. Our neighbors have already hired them too after seeing our new roof.',
+  location: 'Huntersville, NC',
+  rating: 5,
+  text: 'James and his team at Best Roofing Now are the best roofers we have ever worked with. Veteran-owned, family values, and the quality speaks for itself. Our neighbors have already hired them too after seeing our new roof.',
   },
 ];
 
@@ -239,42 +240,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Who is the best roofing company in Charlotte NC?',
-    answer:
+  answer:
       `Best Roofing Now is widely recognized as the best roofing company in Charlotte NC. With a perfect ${SITE_CONFIG.googleRating} Google rating from ${SITE_CONFIG.googleReviewCount}+ verified reviews, BBB A+ accreditation with zero complaints, and over ${SITE_CONFIG.roofsInstalled} completed roofing projects, our track record speaks for itself. As a veteran-owned company with certifications from CertainTeed, GAF, and Owens Corning, we combine integrity with expertise that Charlotte homeowners and businesses trust.`,
   },
   {
     question: 'What should I look for in the best roofing company?',
-    answer:
+  answer:
       'The best roofing company should have: a perfect or near-perfect Google rating with numerous verified reviews, BBB A+ accreditation, proper state licensing and insurance, manufacturer certifications (which enable the best warranties), an established local presence, transparent pricing, free inspections, and a proven track record of completed projects. Best Roofing Now meets every single one of these criteria and goes further with owner involvement on every project.',
   },
   {
     question: 'Is Best Roofing Now the best rated roofer in Charlotte?',
-    answer:
+  answer:
       `Yes, Best Roofing Now holds a perfect ${SITE_CONFIG.googleRating} Google rating with ${SITE_CONFIG.googleReviewCount}+ verified reviews, making us one of the highest-rated roofing companies in the Charlotte metro area. Combined with our BBB A+ rating (with zero complaints), manufacturer certifications from three major brands, and veteran-owned status, we consistently earn the trust and top ratings from Charlotte homeowners and businesses.`,
   },
   {
     question: 'How many 5-star reviews does Best Roofing Now have?',
-    answer:
+  answer:
       `Best Roofing Now has ${SITE_CONFIG.googleReviewCount}+ five-star reviews on Google, maintaining a perfect ${SITE_CONFIG.googleRating} average rating. Every review comes from a verified Charlotte-area customer who experienced our quality workmanship, transparent pricing, and exceptional customer service firsthand. We encourage you to read our reviews on Google to see why Charlotte homeowners consistently call us the best roofing company in the area.`,
   },
   {
     question: 'What makes Best Roofing Now different from other Charlotte roofers?',
-    answer:
+  answer:
       'Several factors set Best Roofing Now apart as Charlotte\'s best roofing company: (1) We are veteran-owned, bringing military values of integrity and excellence. (2) Owner James Turner personally oversees every project. (3) We are one of few Charlotte roofers certified by all three major manufacturers: CertainTeed, GAF, and Owens Corning. (4) Our BBB A+ rating has zero complaints. (5) We offer a free instant estimate tool - a Charlotte first. (6) Our family business values mean we treat every home like our own.',
   },
   {
     question: 'Does the best roofing company in Charlotte offer warranties?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers industry-leading warranties that most Charlotte roofing companies cannot match. As a CertainTeed ShingleMaster, GAF Factory-Certified Contractor Contractor, we can offer manufacturer warranties up to 50 years on materials. We also provide our own workmanship warranty. Options like GAF Golden Pledge (50 years material + 25 years workmanship) are available because of our elite certification status.',
   },
   {
     question: 'How do I get a free roof inspection from the best roofer in Charlotte?',
-    answer:
+  answer:
       `Getting a free roof inspection from Best Roofing Now is easy. Call us at ${SITE_CONFIG.phone}, visit our website to schedule online, or use our instant estimate tool for an immediate price range. Our certified inspectors will thoroughly examine your roof, provide detailed photos and a written report, and give you honest recommendations with no pressure to buy. Every inspection is 100% free with no obligation.`,
   },
   {
     question: 'Why are veteran-owned roofing companies considered more trustworthy?',
-    answer:
+  answer:
       'Veteran-owned roofing companies like Best Roofing Now bring military values of discipline, integrity, attention to detail, and a commitment to excellence that directly translate to superior roofing work. Veterans are trained to follow strict procedures, maintain high standards, and never cut corners. Our military background means we treat every roofing project with the same seriousness and dedication that served us in the armed forces, resulting in consistently higher quality work and customer satisfaction.',
   },
   {
@@ -299,7 +300,6 @@ export default function BestRoofingCompanyCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/best-roofing-company-charlotte-nc`}
         pageName="Best Roofing Company Charlotte NC"
@@ -334,8 +334,8 @@ export default function BestRoofingCompanyCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now has earned our reputation as the best roofing company in Charlotte NC through
               a perfect {SITE_CONFIG.googleRating} Google rating, BBB A+ accreditation with zero complaints,
-              and over {SITE_CONFIG.roofsInstalled} successfully completed roofing projects. As a veteran-owned,
-              family-operated company, owner James Turner personally oversees every project to ensure the highest
+  and over {SITE_CONFIG.roofsInstalled} successfully completed roofing projects. As a veteran-owned,
+  family-operated company, owner James Turner personally oversees every project to ensure the highest
               quality results backed by industry-leading warranties from CertainTeed, GAF, and Owens Corning.
             </p>
 
@@ -552,7 +552,7 @@ export default function BestRoofingCompanyCharlotteNCPage() {
               <p className="text-gray text-lg mb-6">
                 Being the best roofing company in Charlotte NC is not just a claim - it&apos;s a commitment we
                 prove with every single project. Our track record of {SITE_CONFIG.roofsInstalled}+ completed roofs,
-                a perfect {SITE_CONFIG.googleRating} rating, and BBB A+ accreditation speaks louder than any advertisement.
+  a perfect {SITE_CONFIG.googleRating} rating, and BBB A+ accreditation speaks louder than any advertisement.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
@@ -657,7 +657,7 @@ export default function BestRoofingCompanyCharlotteNCPage() {
             </h2>
             <p className="text-xl text-white/90 mb-8">
               Get an instant price range for your roofing project in seconds. No waiting, no phone tag,
-              no obligation. The best roofing company in Charlotte makes it easy.
+  no obligation. The best roofing company in Charlotte makes it easy.
             </p>
             <EstimateButton variant="white" size="lg" className="text-lg px-10">
               Get Your Instant Estimate

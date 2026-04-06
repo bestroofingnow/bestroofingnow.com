@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Standing Seam Metal Roof Charlotte NC | Premium Metal Roofing',
-    description:
+  description:
       'Premium standing seam metal roof installation by Charlotte\'s BBB A+ rated, veteran-owned roofing company. 50+ year lifespan, energy savings, and beautiful design options.',
-    url: `${SITE_CONFIG.url}/standing-seam-metal-roof-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/standing-seam-metal-roof-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.metalRoof,
-        width: 1200,
-        height: 630,
-        alt: 'Standing seam metal roof installation Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Standing seam metal roof installation Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -69,33 +69,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '50+ Year Lifespan',
-    description: 'Standing seam metal roofs last 50-70 years with proper installation, outlasting asphalt shingles by decades.',
+  title: '50+ Year Lifespan',
+  description: 'Standing seam metal roofs last 50-70 years with proper installation, outlasting asphalt shingles by decades.',
   },
   {
     icon: Thermometer,
-    title: 'Energy Efficiency',
-    description: 'Reflective metal surfaces can reduce cooling costs by 25-40% in Charlotte\'s hot summers.',
+  title: 'Energy Efficiency',
+  description: 'Reflective metal surfaces can reduce cooling costs by 25-40% in Charlotte\'s hot summers.',
   },
   {
     icon: Wind,
-    title: 'Superior Wind Resistance',
-    description: 'Rated for winds up to 140 mph. Concealed fasteners eliminate lift points during storms.',
+  title: 'Superior Wind Resistance',
+  description: 'Rated for winds up to 140 mph. Concealed fasteners eliminate lift points during storms.',
   },
   {
     icon: Palette,
-    title: 'Color Options',
-    description: 'Choose from 40+ colors with Kynar 500 finishes that resist fading for 30+ years.',
+  title: 'Color Options',
+  description: 'Choose from 40+ colors with Kynar 500 finishes that resist fading for 30+ years.',
   },
   {
     icon: Shield,
-    title: 'Low Maintenance',
-    description: 'No shingles to replace, no granule loss. Just occasional inspections keep it pristine.',
+  title: 'Low Maintenance',
+  description: 'No shingles to replace, no granule loss. Just occasional inspections keep it pristine.',
   },
   {
     icon: Zap,
-    title: 'Fire Resistant',
-    description: 'Class A fire rating provides maximum protection for your home and family.',
+  title: 'Fire Resistant',
+  description: 'Class A fire rating provides maximum protection for your home and family.',
   },
 ];
 
@@ -103,33 +103,33 @@ const benefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Metal Roofing Specialists',
-    description: 'Our crews are specifically trained in standing seam installation techniques and best practices.',
+  title: 'Metal Roofing Specialists',
+  description: 'Our crews are specifically trained in standing seam installation techniques and best practices.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for premium metal roofing systems with enhanced warranty options.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for premium metal roofing systems with enhanced warranty options.',
   },
   {
     icon: Clock,
-    title: 'Lifetime Investment',
-    description: 'We help you choose the right metal roof system for your home and budget.',
+  title: 'Lifetime Investment',
+  description: 'We help you choose the right metal roof system for your home and budget.',
   },
 ];
 
@@ -137,15 +137,15 @@ const whyChooseUs = [
 const colorOptions = [
   {
     category: 'Classic Colors',
-    colors: ['Charcoal Gray', 'Matte Black', 'Dark Bronze', 'Forest Green', 'Colonial Red'],
+  colors: ['Charcoal Gray', 'Matte Black', 'Dark Bronze', 'Forest Green', 'Colonial Red'],
   },
   {
     category: 'Earth Tones',
-    colors: ['Weathered Copper', 'Rustic Brown', 'Terra Cotta', 'Clay', 'Sandstone'],
+  colors: ['Weathered Copper', 'Rustic Brown', 'Terra Cotta', 'Clay', 'Sandstone'],
   },
   {
     category: 'Modern Colors',
-    colors: ['Slate Blue', 'Ash Gray', 'Pewter', 'Burnished Slate', 'Zinc Gray'],
+  colors: ['Slate Blue', 'Ash Gray', 'Pewter', 'Burnished Slate', 'Zinc Gray'],
   },
 ];
 
@@ -163,42 +163,42 @@ const comparison = [
 const faqs = [
   {
     question: 'How much does a standing seam metal roof cost in Charlotte NC?',
-    answer:
+  answer:
       'Standing seam metal roofs in Charlotte typically cost $15,000 to $40,000+ for an average home, or $12-18 per square foot installed. While more expensive upfront than asphalt shingles, the 50+ year lifespan, energy savings of 25-40%, and virtually zero maintenance make it the most cost-effective roofing choice over time. Many Charlotte homeowners find it\'s the last roof they ever need.',
   },
   {
     question: 'Is a standing seam metal roof worth it in Charlotte?',
-    answer:
+  answer:
       'Absolutely. Charlotte\'s hot summers make metal roofing especially valuable due to its reflective properties that reduce cooling costs by 25-40%. Standing seam roofs also handle our occasional severe storms with wind ratings up to 140 mph. The 50-70 year lifespan means you\'ll likely never replace your roof again, and many homeowners see increased property values of 1-6%.',
   },
   {
     question: 'What colors are available for standing seam metal roofs?',
-    answer:
+  answer:
       'Standing seam metal roofs come in 40+ color options with Kynar 500/Hylar 5000 finishes that resist fading for 30+ years. Popular choices in Charlotte include Charcoal Gray, Matte Black, Dark Bronze, and Weathered Copper. We can help you choose colors that complement your home\'s architecture and meet any HOA requirements.',
   },
   {
     question: 'Are metal roofs noisy when it rains?',
-    answer:
+  answer:
       'Modern standing seam metal roofs installed over solid decking and with proper insulation are no louder than asphalt shingles during rain. The multiple layers (decking, underlayment, insulation, and metal panels) absorb and dampen sound. Many homeowners say they don\'t notice any difference from their previous roof.',
   },
   {
     question: 'How long does standing seam metal roof installation take?',
-    answer:
+  answer:
       'Most residential standing seam metal roof installations in Charlotte take 2-5 days depending on roof size and complexity. The process includes removing old roofing, inspecting and repairing decking, installing underlayment, and precisely fitting each metal panel. We work efficiently while maintaining the highest quality standards.',
   },
   {
     question: 'Do standing seam metal roofs attract lightning?',
-    answer:
+  answer:
       'No. Metal roofs do not attract lightning. In fact, because metal is non-combustible, a metal roof is actually safer than other roofing materials if lightning does strike. Metal roofs conduct electricity safely through the structure to the ground, and their fire resistance provides additional protection.',
   },
   {
     question: 'What warranty comes with a standing seam metal roof?',
-    answer:
+  answer:
       'Standing seam metal roofs typically include a 40-50 year paint/finish warranty against fading and chalking, plus a 25-30 year warranty against manufacturing defects. Best Roofing Now also provides our own workmanship warranty. Combined, you get comprehensive protection for decades.',
   },
   {
     question: 'Can you install a standing seam metal roof over existing shingles?',
-    answer:
+  answer:
       'While it\'s sometimes possible, we typically recommend full tear-off for standing seam installations. This allows proper inspection of the decking, ensures a flat substrate for optimal panel fit, and provides the best long-term performance. A full tear-off also ensures you get the maximum benefit from your investment.',
   },
 ];
@@ -213,7 +213,6 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -325,7 +324,7 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
               <p className="text-gray text-lg mb-6">
                 Standing seam metal roofs come in a stunning array of colors with Kynar 500 finishes
                 that resist fading for 30+ years. From classic charcoal to modern slate blue,
-                find the perfect complement to your home.
+  find the perfect complement to your home.
               </p>
               {colorOptions.map((group) => (
                 <div key={group.category} className="mb-6">

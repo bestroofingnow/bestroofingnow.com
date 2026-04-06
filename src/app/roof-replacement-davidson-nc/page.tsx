@@ -21,7 +21,7 @@ import {
   Landmark,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Davidson NC | Davidson College Area | Best Roofing Now',
-    description:
+  description:
       'Expert roof replacement in Davidson NC. Specializing in historic homes and Davidson College area properties. BBB A+ rated, veteran-owned. Premium materials with extended warranties.',
-    url: `${SITE_CONFIG.url}/roof-replacement-davidson-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-davidson-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.metalRoof,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof replacement services in Davidson NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof replacement services in Davidson NC - Best Roofing Now',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const replacementServices = [
   {
     icon: Home,
-    title: 'Residential Roof Replacement',
-    description: 'Complete tear-off and replacement for Davidson homes with premium roofing materials.',
-    href: '/services/roof-replacement',
+  title: 'Residential Roof Replacement',
+  description: 'Complete tear-off and replacement for Davidson homes with premium roofing materials.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Landmark,
-    title: 'Historic Home Roofing',
-    description: 'Specialized roofing for Davidson\'s historic homes that preserves character while improving protection.',
-    href: '/services/residential-roofing',
+  title: 'Historic Home Roofing',
+  description: 'Specialized roofing for Davidson\'s historic homes that preserves character while improving protection.',
+  href: '/services/residential-roofing',
   },
   {
     icon: RefreshCw,
-    title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 50-year warranties.',
-    href: '/services/roof-replacement',
+  title: 'Architectural Shingles',
+  description: 'Premium dimensional shingles from CertainTeed, GAF, and Owens Corning with 50-year warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Building2,
-    title: 'Metal Roofing',
-    description: 'Long-lasting metal roof systems perfect for Davidson\'s climate with 50+ year lifespans.',
-    href: '/services/residential-roofing',
+  title: 'Metal Roofing',
+  description: 'Long-lasting metal roof systems perfect for Davidson\'s climate with 50+ year lifespans.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Leaf,
-    title: 'Energy-Efficient Options',
-    description: 'Cool roofing systems that reduce energy costs and qualify for energy efficiency rebates.',
-    href: '/services/roof-replacement',
+  title: 'Energy-Efficient Options',
+  description: 'Cool roofing systems that reduce energy costs and qualify for energy efficiency rebates.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Wrench,
-    title: 'Full-Service Installation',
-    description: 'Complete service including tear-off, decking repair, underlayment, and cleanup.',
-    href: '/services/roof-replacement',
+  title: 'Full-Service Installation',
+  description: 'Complete service including tear-off, decking repair, underlayment, and cleanup.',
+  href: '/services/roof-replacement',
   },
 ];
 
@@ -110,33 +110,33 @@ const replacementServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Davidson homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Davidson homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty coverage.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty coverage.',
   },
   {
     icon: Landmark,
-    title: 'Historic Home Experts',
-    description: 'Experience with Davidson\'s historic homes and preservation-sensitive installations.',
+  title: 'Historic Home Experts',
+  description: 'Experience with Davidson\'s historic homes and preservation-sensitive installations.',
   },
   {
     icon: Users,
-    title: 'Local Knowledge',
-    description: 'We understand Davidson\'s architectural styles and neighborhood requirements.',
+  title: 'Local Knowledge',
+  description: 'We understand Davidson\'s architectural styles and neighborhood requirements.',
   },
 ];
 
@@ -174,42 +174,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does a roof replacement cost in Davidson NC?',
-    answer:
+  answer:
       'Roof replacement costs in Davidson typically range from $8,000-$25,000 for most homes, depending on size, pitch, material choice, and complexity. Historic homes may cost more due to special requirements. We provide detailed free estimates with transparent pricing. Financing options are available to make your new roof affordable.',
   },
   {
     question: 'How long does a roof replacement take in Davidson?',
-    answer:
+  answer:
       'Most residential roof replacements in Davidson are completed in 1-3 days. Larger homes, complex roof designs, or historic properties may take 3-5 days. We work efficiently while maintaining quality standards and always clean up thoroughly when finished.',
   },
   {
     question: 'What roofing materials do you recommend for Davidson homes?',
-    answer:
+  answer:
       'For most Davidson homes, we recommend premium architectural shingles from CertainTeed, GAF, or Owens Corning - they offer excellent durability and aesthetic appeal. For historic homes, we can match period-appropriate styles. Metal roofing is an excellent long-term investment, especially for lakefront properties. We\'ll recommend the best option for your specific home and budget.',
   },
   {
     question: 'Do you work on historic homes in Davidson?',
-    answer:
+  answer:
       'Yes! Best Roofing Now has extensive experience with Davidson\'s historic homes. We understand the importance of maintaining architectural integrity while providing modern protection. We work with appropriate materials and techniques that respect your home\'s character and can coordinate with the Historic Davidson Commission if needed.',
   },
   {
     question: 'What warranties do you offer on roof replacements?',
-    answer:
+  answer:
       'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As CertainTeed, GAF, and Owens Corning certified installers, we can offer enhanced warranty options like GAF Golden Pledge (50 years material + 25 years workmanship) and CertainTeed SureStart PLUS.',
   },
   {
     question: 'Can I stay in my home during a roof replacement?',
-    answer:
+  answer:
       'Yes, you can absolutely stay in your home during the replacement. There will be noise during work hours (typically 7am-6pm), and we take every precaution to protect your property. We use tarps, catch falling debris, and clean up thoroughly each day. Most Davidson homeowners choose to stay home throughout the process.',
   },
   {
     question: 'Do you offer financing for roof replacement in Davidson?',
-    answer:
+  answer:
       'Yes, we offer flexible financing options to make your new roof affordable. We work with several lending partners to provide competitive rates and terms. Many Davidson homeowners choose 0% interest options when available, or longer-term financing to keep monthly payments low.',
   },
   {
     question: 'How do I know if I need a roof replacement vs. repair?',
-    answer:
+  answer:
       'Schedule a free inspection and we\'ll provide an honest assessment. Generally, if your roof is over 20 years old, has widespread damage, or you\'re experiencing multiple leaks, replacement is often more cost-effective than ongoing repairs. We\'ll never push for replacement if repairs can effectively address the issue.',
   },
 ];
@@ -224,7 +224,12 @@ export default function RoofReplacementDavidsonNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-replacement-davidson-nc`}
+        pageName="Roof Replacement Davidson NC"
+        city="Davidson"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

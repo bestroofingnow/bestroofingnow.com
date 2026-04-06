@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Denver NC | Lake Norman Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Denver NC on Lake Norman\'s western shore. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Denver NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Denver NC - Best Roofing Now',
       },
     ],
   },
@@ -69,39 +69,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Denver homes from Trilogy at Lake Norman to Sailview and beyond.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Denver homes from Trilogy at Lake Norman to Sailview and beyond.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial repairs for Denver and Highway 16 corridor businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial repairs for Denver and Highway 16 corridor businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, dependable repairs for leaks, missing shingles, and western shore storm damage in Denver.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, dependable repairs for leaks, missing shingles, and western shore storm damage in Denver.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials rated for Lake Norman wind exposure.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials rated for Lake Norman wind exposure.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Denver homeowners with detailed photo reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Denver homeowners with detailed photo reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Lincoln County homes.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Lincoln County homes.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -109,33 +109,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Denver residents need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Denver residents need us most.',
   },
 ];
 
@@ -166,42 +166,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Denver NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Denver NC and the entire western shore of Lake Norman from our Charlotte headquarters, approximately 22 miles away. We provide full roofing services including roof repair, replacement, inspection, and storm damage restoration to all Denver neighborhoods from Trilogy at Lake Norman to Sailview and East Lincoln.',
   },
   {
     question: 'How much does a new roof cost in Denver NC?',
-    answer:
+  answer:
       'Roof replacement costs in Denver typically range from $8,000 to $25,000 for most homes, depending on roof size, pitch, material choice, and complexity. Lakefront properties in Sailview or Pinnacle Shores with larger square footage or premium materials may be higher. We provide free, no-obligation estimates with transparent pricing and no hidden fees.',
   },
   {
     question: 'Does Denver NC require different building permits than Mecklenburg County?',
-    answer:
+  answer:
       'Yes. Denver is located in Lincoln County, which has its own building codes and permit requirements separate from Mecklenburg County. Our team is fully familiar with Lincoln County permitting processes and handles all permit applications for your roofing project. This is an important distinction many out-of-area contractors miss.',
   },
   {
     question: 'What roofing challenges are unique to Lake Norman\'s western shore?',
-    answer:
+  answer:
       'Denver sits on the western shore of Lake Norman, which receives different storm exposure patterns than the eastern side. Prevailing westerly winds can drive rain directly against western-shore rooflines, and the open water fetch creates stronger gusts. We recommend wind-rated shingles and reinforced flashing systems specifically designed for these conditions.',
   },
   {
     question: 'Do you work with the Trilogy at Lake Norman community?',
-    answer:
+  answer:
       'Absolutely. We have experience working within Trilogy at Lake Norman, the popular 55+ active adult community in Denver. We understand their HOA guidelines, architectural standards, and the specific roof styles common in the community. We handle HOA approval paperwork and coordinate scheduling to minimize disruption to residents.',
   },
   {
     question: 'How does storm damage work with insurance in Lincoln County?',
-    answer:
+  answer:
       'We have extensive experience helping Denver homeowners navigate insurance claims after storms. Lake Norman\'s western shore is particularly susceptible to wind-driven rain and hail. We provide thorough damage documentation, meet with your insurance adjuster on-site, and advocate for fair settlements so your roof is fully restored.',
   },
   {
     question: 'Do you offer free roof inspections in Denver NC?',
-    answer:
+  answer:
       'Yes! We offer completely free roof inspections throughout Denver and the western shore of Lake Norman. Our certified inspectors will thoroughly examine your roof and provide a detailed written report with photos. There is no obligation - just honest information to help you make informed decisions about your home.',
   },
   {
     question: 'What areas near Denver NC do you also serve?',
-    answer:
+  answer:
       'In addition to Denver, we serve all Lake Norman communities including Mooresville, Cornelius, Davidson, Huntersville, and surrounding areas. Our Charlotte headquarters allows us to efficiently serve the entire Lake Norman region, including both the western and eastern shores.',
   },
 ];
@@ -456,7 +456,7 @@ export default function RoofingDenverNCPage() {
               The western shore presents unique roofing challenges. Prevailing weather systems move
               east across the Piedmont, meaning Denver homes are often the first to encounter storms
               crossing Lake Norman. The open water fetch creates stronger wind gusts along the shoreline,
-              making wind-rated materials and proper installation techniques essential for homes in
+  making wind-rated materials and proper installation techniques essential for homes in
               Sailview, Pinnacle Shores, and the Coves of Lake Norman.
             </p>
             <p className="text-gray mb-4">

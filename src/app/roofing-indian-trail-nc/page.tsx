@@ -27,7 +27,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -59,16 +59,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Indian Trail NC | 5-Star Rated | Best Roofing Now',
-    description:
+  description:
       '5-star rated, veteran-owned roofing company serving Indian Trail NC and Union County. BBB A+ rated with 500+ roofs completed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-indian-trail-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-indian-trail-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing Indian Trail NC - Best Roofing Now team completing a roof installation',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing Indian Trail NC - Best Roofing Now team completing a roof installation',
       },
     ],
   },
@@ -78,51 +78,51 @@ export const metadata: Metadata = {
 const roofingServices = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Indian Trail homes including asphalt shingles, metal roofing, tile, and slate.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Indian Trail homes including asphalt shingles, metal roofing, tile, and slate.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Indian Trail businesses of all sizes.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Indian Trail businesses of all sizes.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, flashing issues, and all types of roof damage.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, flashing issues, and all types of roof damage.',
+  href: '/services/roof-repair',
   },
   {
     icon: Hammer,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and manufacturer-backed warranties up to 50 years.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and manufacturer-backed warranties up to 50 years.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports, photos, and honest assessments for Indian Trail homes.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports, photos, and honest assessments for Indian Trail homes.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: '24/7 emergency storm damage restoration with full insurance claim assistance for Union County residents.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: '24/7 emergency storm damage restoration with full insurance claim assistance for Union County residents.',
+  href: '/services/storm-damage',
   },
   {
     icon: FileCheck,
-    title: 'Insurance Claims',
-    description: 'Expert assistance navigating insurance claims for storm damage and covered repairs in Indian Trail.',
-    href: '/services/storm-damage',
+  title: 'Insurance Claims',
+  description: 'Expert assistance navigating insurance claims for storm damage and covered repairs in Indian Trail.',
+  href: '/services/storm-damage',
   },
   {
     icon: Shield,
-    title: 'Roof Maintenance',
-    description: 'Preventive maintenance programs to extend roof life and catch small issues before they grow.',
-    href: '/services/roof-repair',
+  title: 'Roof Maintenance',
+  description: 'Preventive maintenance programs to extend roof life and catch small issues before they grow.',
+  href: '/services/roof-repair',
   },
 ];
 
@@ -130,43 +130,43 @@ const roofingServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews make us a top-rated roofing company in Indian Trail NC.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews make us a top-rated roofing company in Indian Trail NC.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints. We stand behind every job.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints. We stand behind every job.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity, excellence, and service guide everything we do.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity, excellence, and service guide everything we do.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Licensed & Insured',
-    description: 'NC licensed roofing contractor with comprehensive liability and workers comp insurance.',
+  title: 'Fully Licensed & Insured',
+  description: 'NC licensed roofing contractor with comprehensive liability and workers comp insurance.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
+  title: 'Manufacturer Certified',
+  description: 'CertainTeed ShingleMaster, GAF Factory-Certified.',
   },
   {
     icon: ThumbsUp,
-    title: 'Transparent Pricing',
-    description: 'Detailed written estimates with no hidden fees. We honor our quotes for Indian Trail residents.',
+  title: 'Transparent Pricing',
+  description: 'Detailed written estimates with no hidden fees. We honor our quotes for Indian Trail residents.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock availability for roofing emergencies throughout Indian Trail and Union County.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock availability for roofing emergencies throughout Indian Trail and Union County.',
   },
   {
     icon: FileCheck,
-    title: 'Industry-Leading Warranties',
-    description: 'Up to 50-year manufacturer warranties plus our own workmanship guarantee.',
+  title: 'Industry-Leading Warranties',
+  description: 'Up to 50-year manufacturer warranties plus our own workmanship guarantee.',
   },
 ];
 
@@ -214,21 +214,21 @@ const nearbyCities = [
 const testimonials = [
   {
     name: 'Robert & Jennifer M.',
-    location: 'Sun Valley, Indian Trail',
-    rating: 5,
-    text: 'Best Roofing Now replaced our entire roof after last spring\'s hail storm. They handled everything with our insurance company and the quality of work was outstanding. Highly recommend them to all our Indian Trail neighbors!',
+  location: 'Sun Valley, Indian Trail',
+  rating: 5,
+  text: 'Best Roofing Now replaced our entire roof after last spring\'s hail storm. They handled everything with our insurance company and the quality of work was outstanding. Highly recommend them to all our Indian Trail neighbors!',
   },
   {
     name: 'Patricia S.',
-    location: 'Brookhaven, Indian Trail',
-    rating: 5,
-    text: 'We got quotes from three different roofing companies in Indian Trail and Best Roofing Now was the most professional and transparent. No pushy sales tactics, just honest advice. Our new roof looks amazing.',
+  location: 'Brookhaven, Indian Trail',
+  rating: 5,
+  text: 'We got quotes from three different roofing companies in Indian Trail and Best Roofing Now was the most professional and transparent. No pushy sales tactics, just honest advice. Our new roof looks amazing.',
   },
   {
     name: 'Tom K.',
-    location: 'Hemby Bridge, Indian Trail',
-    rating: 5,
-    text: 'James and his team are the real deal. As a fellow veteran, I appreciate their integrity and work ethic. They found issues with our roof that other companies missed and fixed everything properly.',
+  location: 'Hemby Bridge, Indian Trail',
+  rating: 5,
+  text: 'James and his team are the real deal. As a fellow veteran, I appreciate their integrity and work ethic. They found issues with our roof that other companies missed and fixed everything properly.',
   },
 ];
 
@@ -236,42 +236,42 @@ const testimonials = [
 const faqs = [
   {
     question: 'What roofing services do you offer in Indian Trail NC?',
-    answer:
+  answer:
       'Best Roofing Now provides comprehensive roofing services throughout Indian Trail NC including residential and commercial roofing, roof repairs, complete roof replacements, roof inspections, storm damage restoration, gutter installation, and emergency roofing services. We work with all roofing materials including asphalt shingles, metal roofing, tile, slate, TPO, EPDM, and flat roof systems. Our team is experienced with all types of Indian Trail homes, from newer developments to established neighborhoods.',
   },
   {
     question: 'How much does roofing cost in Indian Trail NC?',
-    answer:
+  answer:
       'Roofing costs in Indian Trail vary based on several factors including roof size, pitch, material choice, and project complexity. Minor repairs typically range from $200-$1,500, while complete roof replacements average $8,000-$25,000 for most Indian Trail homes. Many homes in communities like Sun Valley and Brookhaven have larger footprints that may affect pricing. We provide free, detailed estimates with transparent pricing and no hidden fees so you know exactly what to expect.',
   },
   {
     question: 'Why is Best Roofing Now a top-rated roofing company in Indian Trail?',
-    answer:
+  answer:
       `Best Roofing Now has earned our top rating through exceptional workmanship, honest assessments, and dedicated customer service. With ${SITE_CONFIG.googleReviewCount}+ five-star Google reviews, BBB A+ accreditation, and veteran-owned values of integrity and excellence, we consistently deliver results that exceed expectations. Our manufacturer certifications from CertainTeed, GAF, and Owens Corning allow us to offer industry-leading warranties to protect your Indian Trail home.`,
   },
   {
     question: 'Do you offer free roofing estimates in Indian Trail?',
-    answer:
+  answer:
       'Yes! Best Roofing Now provides completely free, no-obligation estimates for all roofing services in Indian Trail and throughout Union County. Our certified inspectors will thoroughly examine your roof, identify any issues, document everything with photos, and provide a detailed written proposal. There is absolutely no pressure - we believe in earning your business through honest assessments and quality work.',
   },
   {
     question: 'How long does a roof replacement take in Indian Trail?',
-    answer:
+  answer:
       'Most residential roof replacements in Indian Trail are completed in 1-3 days, depending on the size and complexity of the roof. Larger homes in communities like Brookhaven or projects involving structural repairs may take 4-5 days. We always provide a timeline estimate before starting work and keep you informed of progress throughout the project. Weather can occasionally cause delays during Indian Trail\'s stormy spring and summer seasons.',
   },
   {
     question: 'What areas of Indian Trail do you provide roofing services?',
-    answer:
+  answer:
       'We provide roofing services throughout all of Indian Trail including Sun Valley, Brookhaven, Hemby Bridge, Raintree, Southgate, Brightmoor, Crossing at Indian Trail, Poplin Place, and all other neighborhoods. We also serve the greater Union County area including Matthews, Monroe, Stallings, Weddington, Wesley Chapel, Waxhaw, Marvin, and into Mecklenburg County including Charlotte and Mint Hill.',
   },
   {
     question: 'Do you help with roofing insurance claims in Indian Trail?',
-    answer:
+  answer:
       'Absolutely! We have extensive experience helping Indian Trail homeowners navigate insurance claims for storm damage. Union County experiences significant hail and wind damage, especially during spring and summer storm season. Our team provides detailed documentation, meets with insurance adjusters on your behalf, and advocates for fair settlements. Many Indian Trail roofs qualify for full or partial insurance coverage after storm events.',
   },
   {
     question: 'What roofing materials are best for Indian Trail NC homes?',
-    answer:
+  answer:
       'The best roofing material depends on your specific needs, budget, and aesthetic preferences. Asphalt architectural shingles are the most popular choice in Indian Trail due to their durability, affordability, and variety of styles that complement the area\'s suburban homes. Many homeowners are also choosing impact-resistant shingles for better hail protection. Metal roofing is growing in popularity for its longevity (40-70 years) and energy efficiency in our hot summers. We help homeowners choose the right material based on their home style, HOA requirements, and long-term goals.',
   },
 ];
@@ -286,7 +286,12 @@ export default function RoofingIndianTrailNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-indian-trail-nc`}
+        pageName="Roofing Indian Trail NC"
+        city="Indian Trail"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -866,7 +871,7 @@ export default function RoofingIndianTrailNCPage() {
                   families who take pride in their homes. When you call Best Roofing Now, you&apos;re getting
                   more than just a roofing contractor. You&apos;re getting a team that treats your home like
                   we&apos;d treat our own. We&apos;ve built our reputation on honest work and fair prices,
-                  and that&apos;s something we&apos;ll never compromise on.
+  and that&apos;s something we&apos;ll never compromise on.
                 </p>
                 <p className="text-primary font-semibold mt-4">
                   Give us a call at {SITE_CONFIG.phone} - we&apos;d be honored to help protect your Indian Trail home.

@@ -22,6 +22,8 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
@@ -50,9 +52,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Contractor Charlotte NC | TPO, EPDM, Flat Roofs',
-    description:
+  description:
       'Professional commercial roofing contractor in Charlotte NC. TPO, EPDM, PVC, metal, and flat roof systems.',
-    url: `${SITE_CONFIG.url}/commercial-roofing-services`,
+  url: `${SITE_CONFIG.url}/commercial-roofing-services`,
   },
 };
 
@@ -60,51 +62,51 @@ export const metadata: Metadata = {
 const commercialSystems = [
   {
     slug: 'tpo-roofing',
-    title: 'TPO Roofing',
-    description: 'Thermoplastic Polyolefin single-ply membrane. Energy-efficient white surface reflects heat, reducing cooling costs by up to 30%.',
-    highlights: ['Energy Star rated', 'Heat-welded seams', '20-30 year lifespan'],
-    priceRange: '$5-$8 per sq ft',
-    bestFor: 'Office buildings, retail centers, warehouses',
+  title: 'TPO Roofing',
+  description: 'Thermoplastic Polyolefin single-ply membrane. Energy-efficient white surface reflects heat, reducing cooling costs by up to 30%.',
+  highlights: ['Energy Star rated', 'Heat-welded seams', '20-30 year lifespan'],
+  priceRange: '$5-$8 per sq ft',
+  bestFor: 'Office buildings, retail centers, warehouses',
   },
   {
     slug: 'epdm-roofing',
-    title: 'EPDM Rubber Roofing',
-    description: 'Ethylene Propylene Diene Monomer synthetic rubber membrane. Proven 50+ year track record for flat roof durability.',
-    highlights: ['50+ year history', 'Flexible in cold', 'Easy repairs'],
-    priceRange: '$4-$7 per sq ft',
-    bestFor: 'Industrial buildings, older commercial properties',
+  title: 'EPDM Rubber Roofing',
+  description: 'Ethylene Propylene Diene Monomer synthetic rubber membrane. Proven 50+ year track record for flat roof durability.',
+  highlights: ['50+ year history', 'Flexible in cold', 'Easy repairs'],
+  priceRange: '$4-$7 per sq ft',
+  bestFor: 'Industrial buildings, older commercial properties',
   },
   {
     slug: 'pvc-roofing',
-    title: 'PVC Roofing',
-    description: 'Polyvinyl Chloride membrane with superior chemical resistance. Ideal for restaurants and facilities with rooftop equipment.',
-    highlights: ['Chemical resistant', 'Fire resistant', 'Weldable seams'],
-    priceRange: '$6-$10 per sq ft',
-    bestFor: 'Restaurants, hospitals, chemical facilities',
+  title: 'PVC Roofing',
+  description: 'Polyvinyl Chloride membrane with superior chemical resistance. Ideal for restaurants and facilities with rooftop equipment.',
+  highlights: ['Chemical resistant', 'Fire resistant', 'Weldable seams'],
+  priceRange: '$6-$10 per sq ft',
+  bestFor: 'Restaurants, hospitals, chemical facilities',
   },
   {
     slug: 'built-up-roofing',
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Traditional multi-layer system with alternating plies of bitumen and reinforcing fabric. Time-tested durability.',
-    highlights: ['Proven technology', 'Excellent waterproofing', 'Redundant layers'],
-    priceRange: '$5-$9 per sq ft',
-    bestFor: 'Large commercial buildings, traditional structures',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Traditional multi-layer system with alternating plies of bitumen and reinforcing fabric. Time-tested durability.',
+  highlights: ['Proven technology', 'Excellent waterproofing', 'Redundant layers'],
+  priceRange: '$5-$9 per sq ft',
+  bestFor: 'Large commercial buildings, traditional structures',
   },
   {
     slug: 'metal-commercial',
-    title: 'Commercial Metal Roofing',
-    description: 'Standing seam and R-panel metal systems for commercial applications. 40-60 year lifespan with minimal maintenance.',
-    highlights: ['50+ year lifespan', 'Low maintenance', 'Solar-ready'],
-    priceRange: '$8-$15 per sq ft',
-    bestFor: 'Warehouses, manufacturing, retail buildings',
+  title: 'Commercial Metal Roofing',
+  description: 'Standing seam and R-panel metal systems for commercial applications. 40-60 year lifespan with minimal maintenance.',
+  highlights: ['50+ year lifespan', 'Low maintenance', 'Solar-ready'],
+  priceRange: '$8-$15 per sq ft',
+  bestFor: 'Warehouses, manufacturing, retail buildings',
   },
   {
     slug: 'roof-coating',
-    title: 'Commercial Roof Coating',
-    description: 'Extend your existing roof\'s life by 10-15 years with reflective elastomeric coatings. Fraction of replacement cost.',
-    highlights: ['Extends roof life', 'Energy savings', 'No tear-off needed'],
-    priceRange: '$2-$5 per sq ft',
-    bestFor: 'Existing roofs in fair condition, budget-conscious projects',
+  title: 'Commercial Roof Coating',
+  description: 'Extend your existing roof\'s life by 10-15 years with reflective elastomeric coatings. Fraction of replacement cost.',
+  highlights: ['Extends roof life', 'Energy savings', 'No tear-off needed'],
+  priceRange: '$2-$5 per sq ft',
+  bestFor: 'Existing roofs in fair condition, budget-conscious projects',
   },
 ];
 
@@ -128,35 +130,35 @@ const propertyTypes = [
 const commercialFAQs = [
   {
     question: 'What is the best commercial roofing material for Charlotte?',
-    answer: 'TPO is our top recommendation for most Charlotte commercial buildings. Its white reflective surface reduces cooling costs by 20-30% - significant savings during our hot summers. TPO offers excellent durability, heat-welded seams for superior waterproofing, and a competitive price point. For restaurants or chemical facilities, PVC is better due to its chemical resistance. EPDM remains a solid budget-friendly option with a proven track record.',
+  answer: 'TPO is our top recommendation for most Charlotte commercial buildings. Its white reflective surface reduces cooling costs by 20-30% - significant savings during our hot summers. TPO offers excellent durability, heat-welded seams for superior waterproofing, and a competitive price point. For restaurants or chemical facilities, PVC is better due to its chemical resistance. EPDM remains a solid budget-friendly option with a proven track record.',
   },
   {
     question: 'How long does a commercial roof last?',
-    answer: 'Commercial roof lifespans vary by system: TPO and PVC last 20-30 years, EPDM 25-30 years, BUR 20-30 years, and metal 40-60+ years. Regular maintenance can extend these lifespans significantly. We offer commercial maintenance programs specifically designed to maximize your roof\'s service life and catch issues before they become expensive problems.',
+  answer: 'Commercial roof lifespans vary by system: TPO and PVC last 20-30 years, EPDM 25-30 years, BUR 20-30 years, and metal 40-60+ years. Regular maintenance can extend these lifespans significantly. We offer commercial maintenance programs specifically designed to maximize your roof\'s service life and catch issues before they become expensive problems.',
   },
   {
     question: 'Can you work around our business hours?',
-    answer: 'Absolutely. We understand your business can\'t afford disruption. Best Roofing Now regularly schedules commercial work during off-hours, weekends, or phases the project to minimize impact on your operations. For 24-hour facilities, we coordinate carefully to keep noise and disruption away from customer-facing areas during peak times.',
+  answer: 'Absolutely. We understand your business can\'t afford disruption. Best Roofing Now regularly schedules commercial work during off-hours, weekends, or phases the project to minimize impact on your operations. For 24-hour facilities, we coordinate carefully to keep noise and disruption away from customer-facing areas during peak times.',
   },
   {
     question: 'How much does commercial roofing cost in Charlotte?',
-    answer: 'Commercial roofing in Charlotte typically costs $4-$15 per square foot depending on the system. A 10,000 sq ft flat roof might run $50,000-$100,000 for TPO/EPDM, or $80,000-$150,000 for metal. Roof coatings can extend an existing roof\'s life for just $2-$5 per square foot. We provide detailed estimates with clear pricing and financing options.',
+  answer: 'Commercial roofing in Charlotte typically costs $4-$15 per square foot depending on the system. A 10,000 sq ft flat roof might run $50,000-$100,000 for TPO/EPDM, or $80,000-$150,000 for metal. Roof coatings can extend an existing roof\'s life for just $2-$5 per square foot. We provide detailed estimates with clear pricing and financing options.',
   },
   {
     question: 'Do you offer emergency commercial roof repair?',
-    answer: 'Yes, we provide 24/7 emergency commercial roof repair services. Active leaks in a commercial building can cause significant damage to inventory, equipment, and operations. Our emergency team responds quickly with tarping, temporary repairs, and permanent solutions. Call (704) 605-6047 any time for emergency service.',
+  answer: 'Yes, we provide 24/7 emergency commercial roof repair services. Active leaks in a commercial building can cause significant damage to inventory, equipment, and operations. Our emergency team responds quickly with tarping, temporary repairs, and permanent solutions. Call (704) 605-6047 any time for emergency service.',
   },
   {
     question: 'What is included in a commercial roof inspection?',
-    answer: 'Our comprehensive commercial inspections include: membrane condition assessment, seam integrity check, flashing evaluation, drain and scupper inspection, HVAC penetration assessment, parapet wall inspection, ponding water analysis, interior leak detection, and detailed photo documentation. We provide a written report with condition ratings and prioritized recommendations.',
+  answer: 'Our comprehensive commercial inspections include: membrane condition assessment, seam integrity check, flashing evaluation, drain and scupper inspection, HVAC penetration assessment, parapet wall inspection, ponding water analysis, interior leak detection, and detailed photo documentation. We provide a written report with condition ratings and prioritized recommendations.',
   },
   {
     question: 'Do you handle commercial roof maintenance contracts?',
-    answer: 'Yes, we offer commercial roof maintenance programs with bi-annual inspections, priority emergency service, drain cleaning, minor repairs, and detailed condition reports. Regular maintenance can extend your roof\'s life by 25-50% and helps identify warranty issues before they expire. Most commercial property managers find maintenance contracts far more cost-effective than reactive repairs.',
+  answer: 'Yes, we offer commercial roof maintenance programs with bi-annual inspections, priority emergency service, drain cleaning, minor repairs, and detailed condition reports. Regular maintenance can extend your roof\'s life by 25-50% and helps identify warranty issues before they expire. Most commercial property managers find maintenance contracts far more cost-effective than reactive repairs.',
   },
   {
     question: 'Can you install rooftop equipment curbs and penetrations?',
-    answer: 'Yes, we properly integrate HVAC units, exhaust fans, skylights, solar panels, and other rooftop equipment. Poorly installed penetrations are a leading cause of commercial roof leaks. We use proper curbs, flashing, and sealants to maintain waterproof integrity around all equipment. We can also relocate or add penetrations during roof replacement.',
+  answer: 'Yes, we properly integrate HVAC units, exhaust fans, skylights, solar panels, and other rooftop equipment. Poorly installed penetrations are a leading cause of commercial roof leaks. We use proper curbs, flashing, and sealants to maintain waterproof integrity around all equipment. We can also relocate or add penetrations during roof replacement.',
   },
 ];
 
@@ -193,6 +195,12 @@ export default function CommercialRoofingServicesPage() {
           { name: 'Commercial Roofing Contractor Charlotte NC', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/commercial-roofing-services`}
+        pageName="Commercial Roofing Services Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

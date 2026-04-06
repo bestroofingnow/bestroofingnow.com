@@ -23,7 +23,7 @@ import {
   Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -53,16 +53,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Cornelius NC | Lake Norman Emergency Roofers | Best Roofing Now',
-    description:
+  description:
       'Fast, reliable roof repair in Cornelius NC near Lake Norman. BBB A+ rated, veteran-owned roofing company. Emergency repairs, leak fixes, and storm damage restoration. Free estimates!',
-    url: `${SITE_CONFIG.url}/roof-repair-cornelius-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-cornelius-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.repairs,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof repair services in Cornelius NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof repair services in Cornelius NC - Best Roofing Now',
       },
     ],
   },
@@ -72,39 +72,39 @@ export const metadata: Metadata = {
 const repairServices = [
   {
     icon: Droplets,
-    title: 'Leak Repair',
-    description: 'Fast detection and repair of roof leaks to prevent water damage to your Cornelius home.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Fast detection and repair of roof leaks to prevent water damage to your Cornelius home.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wind,
-    title: 'Storm Damage Repair',
-    description: 'Emergency repairs for wind, hail, and storm damage affecting Lake Norman area homes.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency repairs for wind, hail, and storm damage affecting Lake Norman area homes.',
+  href: '/services/storm-damage',
   },
   {
     icon: Hammer,
-    title: 'Shingle Repair',
-    description: 'Missing, cracked, or curling shingle replacement to restore your roof\'s protection.',
-    href: '/services/roof-repair',
+  title: 'Shingle Repair',
+  description: 'Missing, cracked, or curling shingle replacement to restore your roof\'s protection.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Flashing Repair',
-    description: 'Expert repair of flashing around chimneys, vents, and skylights to stop leaks.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Expert repair of flashing around chimneys, vents, and skylights to stop leaks.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wrench,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency roof repair services when you need immediate help in Cornelius.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency roof repair services when you need immediate help in Cornelius.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Search,
-    title: 'Damage Assessment',
-    description: 'Free comprehensive roof inspections to identify all repair needs before we start.',
-    href: '/services/roof-inspection',
+  title: 'Damage Assessment',
+  description: 'Free comprehensive roof inspections to identify all repair needs before we start.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -112,33 +112,33 @@ const repairServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Clock,
-    title: 'Fast Response',
-    description: 'Same-day service available for urgent repairs in the Cornelius area.',
+  title: 'Fast Response',
+  description: 'Same-day service available for urgent repairs in the Cornelius area.',
   },
   {
     icon: Users,
-    title: 'Local Experts',
-    description: 'We know Cornelius roofs and the unique challenges of Lake Norman weather.',
+  title: 'Local Experts',
+  description: 'We know Cornelius roofs and the unique challenges of Lake Norman weather.',
   },
 ];
 
@@ -176,42 +176,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does roof repair cost in Cornelius NC?',
-    answer:
+  answer:
       'Roof repair costs in Cornelius typically range from $200-$1,500 depending on the type and extent of damage. Simple shingle repairs may cost $200-$500, while more complex leak repairs or flashing work can range from $500-$1,500. We provide free estimates with transparent pricing - no hidden fees or surprise charges.',
   },
   {
     question: 'Do you offer emergency roof repair in Cornelius?',
-    answer:
+  answer:
       'Yes! Best Roofing Now offers 24/7 emergency roof repair services throughout Cornelius and the Lake Norman area. When you have an active leak or storm damage, our emergency team responds quickly to secure your property and prevent further damage. Call us anytime at (704) 605-6047.',
   },
   {
     question: 'How quickly can you repair my roof in Cornelius?',
-    answer:
+  answer:
       'For emergency repairs, we typically respond within 1-4 hours. Standard repairs are usually completed within 1-3 days of your initial call. We understand that a damaged roof can\'t wait, so we prioritize quick response times while maintaining our quality standards.',
   },
   {
     question: 'What are common roof problems in Cornelius NC?',
-    answer:
+  answer:
       'Common roof issues in Cornelius include storm damage from Lake Norman weather patterns, missing or damaged shingles from wind, leaks around flashing and penetrations, granule loss from aging shingles, and moisture damage from humidity. Our humid climate and occasional severe storms make regular roof maintenance essential.',
   },
   {
     question: 'Should I repair or replace my roof in Cornelius?',
-    answer:
+  answer:
       'The decision depends on your roof\'s age, extent of damage, and overall condition. If your roof is under 15 years old with localized damage, repair is usually the best option. If it\'s over 20 years old with widespread issues, replacement may be more cost-effective. We provide honest assessments and will never push for replacement if repair will solve the problem.',
   },
   {
     question: 'Do you help with insurance claims for roof repair in Cornelius?',
-    answer:
+  answer:
       'Absolutely! We have extensive experience working with insurance companies on storm damage claims in the Lake Norman area. We provide thorough documentation, meet with adjusters, and advocate for fair settlements. Many Cornelius roofs qualify for insurance coverage after storm events.',
   },
   {
     question: 'What warranties do you offer on roof repairs?',
-    answer:
+  answer:
       'All our roof repairs come with a workmanship warranty. For repairs using manufacturer materials, you also benefit from the material warranty. We stand behind our work and will address any issues that arise from our repairs at no additional cost.',
   },
   {
     question: 'Can you repair all types of roofs in Cornelius?',
-    answer:
+  answer:
       'Yes, we repair all roofing types common in Cornelius including asphalt shingles, architectural shingles, metal roofing, tile roofs, and flat roof systems. Our certified technicians have experience with every roofing material and can handle any repair, big or small.',
   },
 ];
@@ -226,7 +226,6 @@ export default function RoofRepairCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-cornelius-nc`}
         pageName="Roof Repair Cornelius NC"
@@ -261,7 +260,7 @@ export default function RoofRepairCorneliusNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Is your Cornelius roof leaking or damaged? Best Roofing Now provides professional roof repair services
               throughout Cornelius and the Lake Norman area. From emergency leak repairs to storm damage restoration,
-              our certified team delivers fast, quality repairs backed by our satisfaction guarantee.
+  our certified team delivers fast, quality repairs backed by our satisfaction guarantee.
             </p>
 
             {/* CTA Buttons */}

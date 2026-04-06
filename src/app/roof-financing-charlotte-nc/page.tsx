@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Financing Charlotte NC | 0% Interest Options',
-    description:
+  description:
       'Affordable roof financing options for Charlotte homeowners. 0% interest available, easy approval, and flexible payment plans. Get a new roof with monthly payments that fit your budget.',
-    url: `${SITE_CONFIG.url}/roof-financing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-financing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero23,
-        width: 1200,
-        height: 630,
-        alt: 'Roof financing Charlotte NC - Affordable payment plans from Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof financing Charlotte NC - Affordable payment plans from Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const financingOptions = [
   {
     icon: Percent,
-    title: '0% Interest for 18 Months',
-    description: 'Qualified buyers can enjoy 0% APR financing for 18 months. Pay off your roof with no interest charges.',
-    highlight: 'Most Popular',
+  title: '0% Interest for 18 Months',
+  description: 'Qualified buyers can enjoy 0% APR financing for 18 months. Pay off your roof with no interest charges.',
+  highlight: 'Most Popular',
   },
   {
     icon: CreditCard,
-    title: 'Low Monthly Payments',
-    description: 'Payments starting as low as $99/month depending on project size. Make your new roof affordable.',
-    highlight: null,
+  title: 'Low Monthly Payments',
+  description: 'Payments starting as low as $99/month depending on project size. Make your new roof affordable.',
+  highlight: null,
   },
   {
     icon: Clock,
-    title: 'Extended Terms Available',
-    description: 'Terms from 12 to 144 months to find the monthly payment that fits your budget.',
-    highlight: null,
+  title: 'Extended Terms Available',
+  description: 'Terms from 12 to 144 months to find the monthly payment that fits your budget.',
+  highlight: null,
   },
   {
     icon: FileCheck,
-    title: 'Quick & Easy Approval',
-    description: 'Apply in minutes with a simple online application. Most approvals within hours, not days.',
-    highlight: 'Same Day Approval',
+  title: 'Quick & Easy Approval',
+  description: 'Apply in minutes with a simple online application. Most approvals within hours, not days.',
+  highlight: 'Same Day Approval',
   },
   {
     icon: DollarSign,
-    title: 'No Prepayment Penalties',
-    description: 'Pay off your loan early without any fees. Save on interest by paying ahead of schedule.',
-    highlight: null,
+  title: 'No Prepayment Penalties',
+  description: 'Pay off your loan early without any fees. Save on interest by paying ahead of schedule.',
+  highlight: null,
   },
   {
     icon: BadgeCheck,
-    title: 'Credit Options for All',
-    description: 'We work with multiple lenders to find options for good credit, fair credit, and everyone in between.',
-    highlight: null,
+  title: 'Credit Options for All',
+  description: 'We work with multiple lenders to find options for good credit, fair credit, and everyone in between.',
+  highlight: null,
   },
 ];
 
@@ -107,33 +107,33 @@ const financingOptions = [
 const applicationProcess = [
   {
     step: '1',
-    title: 'Get Your Free Estimate',
-    description: 'We provide a detailed quote for your roofing project with no obligation. Know exactly what your roof will cost.',
+  title: 'Get Your Free Estimate',
+  description: 'We provide a detailed quote for your roofing project with no obligation. Know exactly what your roof will cost.',
   },
   {
     step: '2',
-    title: 'Apply Online in Minutes',
-    description: 'Fill out a simple online application. No hard credit pull for pre-qualification - just basic information.',
+  title: 'Apply Online in Minutes',
+  description: 'Fill out a simple online application. No hard credit pull for pre-qualification - just basic information.',
   },
   {
     step: '3',
-    title: 'Receive Your Approval',
-    description: 'Most applications are approved the same day. We\'ll review your options and find the best terms for you.',
+  title: 'Receive Your Approval',
+  description: 'Most applications are approved the same day. We\'ll review your options and find the best terms for you.',
   },
   {
     step: '4',
-    title: 'Choose Your Plan',
-    description: 'Select the financing terms that work for your budget - interest rate, monthly payment, and loan length.',
+  title: 'Choose Your Plan',
+  description: 'Select the financing terms that work for your budget - interest rate, monthly payment, and loan length.',
   },
   {
     step: '5',
-    title: 'We Install Your Roof',
-    description: 'Our certified team completes your roof installation with premium materials and expert craftsmanship.',
+  title: 'We Install Your Roof',
+  description: 'Our certified team completes your roof installation with premium materials and expert craftsmanship.',
   },
   {
     step: '6',
-    title: 'Make Convenient Payments',
-    description: 'Pay monthly through easy online payments. Set up autopay and never miss a payment.',
+  title: 'Make Convenient Payments',
+  description: 'Pay monthly through easy online payments. Set up autopay and never miss a payment.',
   },
 ];
 
@@ -141,33 +141,33 @@ const applicationProcess = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Trusted by Charlotte homeowners with an A+ BBB rating for honest, ethical business practices.',
+  title: 'BBB A+ Rated',
+  description: 'Trusted by Charlotte homeowners with an A+ BBB rating for honest, ethical business practices.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across Charlotte.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across Charlotte.`,
   },
   {
     icon: Shield,
-    title: 'No Hidden Fees',
-    description: 'Transparent pricing with no surprises. We clearly explain all financing terms and costs.',
+  title: 'No Hidden Fees',
+  description: 'Transparent pricing with no surprises. We clearly explain all financing terms and costs.',
   },
   {
     icon: CheckCircle,
-    title: 'Premium Materials',
-    description: 'Financing includes the same top-quality materials we use on every job - no shortcuts.',
+  title: 'Premium Materials',
+  description: 'Financing includes the same top-quality materials we use on every job - no shortcuts.',
   },
   {
     icon: Calculator,
-    title: 'Multiple Lender Options',
-    description: 'We partner with several lenders to find the best rates and terms for your situation.',
+  title: 'Multiple Lender Options',
+  description: 'We partner with several lenders to find the best rates and terms for your situation.',
   },
   {
     icon: Clock,
-    title: 'Fast Installation',
-    description: 'Once approved, we can typically schedule your installation within 1-2 weeks.',
+  title: 'Fast Installation',
+  description: 'Once approved, we can typically schedule your installation within 1-2 weeks.',
   },
 ];
 
@@ -183,42 +183,42 @@ const paymentExamples = [
 const faqs = [
   {
     question: 'What credit score do I need for roof financing in Charlotte?',
-    answer:
+  answer:
       'We work with multiple lenders who have different requirements. While excellent credit gets the best rates (typically 700+), we have options for fair credit (640-699) and even some programs for scores below 640. The best way to know your options is to apply - the pre-qualification doesn\'t affect your credit score.',
   },
   {
     question: 'Is there really 0% interest financing available?',
-    answer:
+  answer:
       'Yes! We offer 0% APR financing for qualified buyers for periods up to 18 months. This promotional rate requires good credit and full repayment within the promotional period. It\'s a great option if you can pay off your roof quickly without interest charges.',
   },
   {
     question: 'How long does the financing approval take?',
-    answer:
+  answer:
       'Most applications receive a decision within hours, often within minutes. The online application takes just 5-10 minutes to complete. Once approved, we can typically schedule your installation within 1-2 weeks.',
   },
   {
     question: 'What is the typical monthly payment for a roof replacement?',
-    answer:
+  answer:
       'Monthly payments depend on your loan amount and terms. For a typical Charlotte roof replacement ($12,000-$18,000), monthly payments range from $150-$400 depending on the loan term you choose. Longer terms mean lower payments but more interest over time.',
   },
   {
     question: 'Can I finance just roof repairs or only full replacements?',
-    answer:
+  answer:
       'We offer financing for both repairs and full replacements. However, financing is typically most beneficial for larger projects ($5,000+) where spreading the cost makes sense. Smaller repairs may be easier to handle with other payment methods.',
   },
   {
     question: 'Are there any prepayment penalties?',
-    answer:
+  answer:
       'No. Our financing options have no prepayment penalties. You can pay off your loan early at any time without any additional fees. This saves you money on interest if you come into extra funds.',
   },
   {
     question: 'What information do I need to apply for roof financing?',
-    answer:
+  answer:
       'The application process is simple. You\'ll need basic personal information (name, address, SSN), employment details, and income information. The whole application takes about 5-10 minutes to complete online.',
   },
   {
     question: 'Do you offer financing for commercial roofing projects?',
-    answer:
+  answer:
       'Yes, we have commercial financing options available for businesses in Charlotte. Commercial terms may differ from residential financing. Contact us to discuss your commercial project and financing options.',
   },
 ];
@@ -233,7 +233,6 @@ export default function RoofFinancingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

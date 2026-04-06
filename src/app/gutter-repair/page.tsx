@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Repair Charlotte NC | Fix Leaks & Sagging | Best Roofing Now',
-    description: 'Professional gutter repair services in Charlotte NC. Fix leaks, sagging, and clogs.',
-    url: `${SITE_CONFIG.url}/gutter-repair`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter repair in Charlotte NC' }],
+  description: 'Professional gutter repair services in Charlotte NC. Fix leaks, sagging, and clogs.',
+  url: `${SITE_CONFIG.url}/gutter-repair`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter repair in Charlotte NC' }],
   },
 };
 
@@ -99,8 +99,8 @@ export default function GutterRepairPage() {
       <ServiceSchema
         service={{
           title: "Gutter Repair",
-          description: "Professional gutter repair services in Charlotte NC. Fix leaking, sagging, and damaged gutters.",
-          slug: "gutter-repair",
+  description: "Professional gutter repair services in Charlotte NC. Fix leaking, sagging, and damaged gutters.",
+  slug: "gutter-repair",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/gutter-repair`} pageName="Gutter Repair Charlotte NC" city="Charlotte" />

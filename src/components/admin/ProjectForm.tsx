@@ -157,7 +157,7 @@ export default function ProjectForm({ initialData, isEditing = false }: ProjectF
       }
 
       const savedProject = await response.json();
-      router.push('/admin/projects');
+      router.push('/n86gB65vtrCTV54d4d4e5r6vTJ8kK9k0kKk8j97j0K_LK/projects');
       router.refresh();
     } catch (err: any) {
       setError(err.message || 'Failed to save project');

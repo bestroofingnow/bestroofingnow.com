@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Mooresville NC | Standing Seam Experts | Best Roofing Now',
-    description:
+  description:
       'Premium metal roofing in Mooresville NC. Standing seam specialists with 50+ year systems. Energy efficient, storm resistant. Free estimates!',
-    url: `${SITE_CONFIG.url}/metal-roofing-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/metal-roofing-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero10,
-        width: 1200,
-        height: 630,
-        alt: 'Metal roofing installation in Mooresville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Metal roofing installation in Mooresville NC - Best Roofing Now',
       },
     ],
   },
@@ -68,39 +68,39 @@ export const metadata: Metadata = {
 const metalServices = [
   {
     icon: Layers,
-    title: 'Standing Seam Metal Roofing',
-    description: 'Premium standing seam panels with concealed fasteners for a sleek, modern look and superior durability.',
-    href: '/services/metal-roofing',
+  title: 'Standing Seam Metal Roofing',
+  description: 'Premium standing seam panels with concealed fasteners for a sleek, modern look and superior durability.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Home,
-    title: 'Metal Shingles',
-    description: 'Metal shingles that replicate the look of traditional materials with metal\'s superior performance.',
-    href: '/services/metal-roofing',
+  title: 'Metal Shingles',
+  description: 'Metal shingles that replicate the look of traditional materials with metal\'s superior performance.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Building2,
-    title: 'Corrugated Metal',
-    description: 'Durable corrugated metal panels for residential, agricultural, and commercial applications.',
-    href: '/services/metal-roofing',
+  title: 'Corrugated Metal',
+  description: 'Durable corrugated metal panels for residential, agricultural, and commercial applications.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Energy-Efficient Options',
-    description: 'Cool roof coatings and reflective finishes to reduce cooling costs in Lake Norman summers.',
-    href: '/services/metal-roofing',
+  title: 'Energy-Efficient Options',
+  description: 'Cool roof coatings and reflective finishes to reduce cooling costs in Lake Norman summers.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Wind,
-    title: 'Storm-Resistant Systems',
-    description: 'Metal roofing rated for extreme winds and impact resistance for maximum protection.',
-    href: '/services/metal-roofing',
+  title: 'Storm-Resistant Systems',
+  description: 'Metal roofing rated for extreme winds and impact resistance for maximum protection.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Shield,
-    title: 'Extended Warranties',
-    description: '40-50 year warranties available on premium metal roofing systems.',
-    href: '/services/metal-roofing',
+  title: 'Extended Warranties',
+  description: '40-50 year warranties available on premium metal roofing systems.',
+  href: '/services/metal-roofing',
   },
 ];
 
@@ -108,33 +108,33 @@ const metalServices = [
 const metalBenefits = [
   {
     icon: Clock,
-    title: '50+ Year Lifespan',
-    description: 'Metal roofs last 2-3 times longer than asphalt shingles, making them a smart long-term investment.',
+  title: '50+ Year Lifespan',
+  description: 'Metal roofs last 2-3 times longer than asphalt shingles, making them a smart long-term investment.',
   },
   {
     icon: Thermometer,
-    title: 'Energy Efficient',
-    description: 'Reflective metal roofing can reduce cooling costs by up to 25% in hot Lake Norman summers.',
+  title: 'Energy Efficient',
+  description: 'Reflective metal roofing can reduce cooling costs by up to 25% in hot Lake Norman summers.',
   },
   {
     icon: Wind,
-    title: 'Storm Resistant',
-    description: 'Metal roofing withstands winds up to 140 mph and resists hail damage better than shingles.',
+  title: 'Storm Resistant',
+  description: 'Metal roofing withstands winds up to 140 mph and resists hail damage better than shingles.',
   },
   {
     icon: Zap,
-    title: 'Low Maintenance',
-    description: 'Virtually maintenance-free with no worries about rot, insect damage, or cracking.',
+  title: 'Low Maintenance',
+  description: 'Virtually maintenance-free with no worries about rot, insect damage, or cracking.',
   },
   {
     icon: Shield,
-    title: 'Fire Resistant',
-    description: 'Class A fire rating provides the highest level of fire protection for your home.',
+  title: 'Fire Resistant',
+  description: 'Class A fire rating provides the highest level of fire protection for your home.',
   },
   {
     icon: Star,
-    title: 'Increases Home Value',
-    description: 'Metal roofs add significant value and appeal to Lake Norman waterfront and luxury homes.',
+  title: 'Increases Home Value',
+  description: 'Metal roofs add significant value and appeal to Lake Norman waterfront and luxury homes.',
   },
 ];
 
@@ -142,33 +142,33 @@ const metalBenefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Metal Roofing Specialists',
-    description: 'Specialized training and experience in all types of metal roofing systems.',
+  title: 'Metal Roofing Specialists',
+  description: 'Specialized training and experience in all types of metal roofing systems.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability coverage.',
   },
   {
     icon: Users,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with military values of integrity and quality.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with military values of integrity and quality.',
   },
   {
     icon: Clock,
-    title: 'Expert Installation',
-    description: 'Precise installation ensures your metal roof performs flawlessly for decades.',
+  title: 'Expert Installation',
+  description: 'Precise installation ensures your metal roof performs flawlessly for decades.',
   },
 ];
 
@@ -202,42 +202,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does metal roofing cost in Mooresville NC?',
-    answer:
+  answer:
       'Metal roofing in Mooresville typically costs $15,000-$40,000+ for residential homes, depending on the system type and roof size. Standing seam panels range from $10-$16 per square foot installed, while metal shingles range from $8-$12 per square foot. While more expensive upfront than asphalt shingles, metal roofs last 2-3 times longer and often pay for themselves in reduced energy and maintenance costs.',
   },
   {
     question: 'Is metal roofing a good choice for Lake Norman homes?',
-    answer:
+  answer:
       'Metal roofing is an excellent choice for Lake Norman homes. The reflective surface reduces cooling costs during hot summers, it handles our occasional severe storms with ease, and it stands up to the humidity without issues like algae growth. Many Lake Norman waterfront and luxury homes choose metal for its durability, low maintenance, and modern aesthetic.',
   },
   {
     question: 'How long does a metal roof last in Mooresville?',
-    answer:
+  answer:
       'A properly installed metal roof in Mooresville can last 50-70 years or more. Standing seam systems with quality coatings often last the longest. Compare this to 15-25 years for asphalt shingles. Many homeowners find that a metal roof is the last roof they ever need to install on their home.',
   },
   {
     question: 'What is standing seam metal roofing?',
-    answer:
+  answer:
       'Standing seam metal roofing features vertical panels with raised seams that interlock and conceal the fasteners. This creates a sleek, modern appearance with no exposed screws or nails. The concealed fastener system also eliminates potential leak points and allows for thermal expansion without damage. It is the premium choice for residential metal roofing.',
   },
   {
     question: 'Will a metal roof make my house hot?',
-    answer:
+  answer:
       'No - actually the opposite! Metal roofs reflect solar radiation rather than absorbing it like asphalt shingles. With proper ventilation and optional cool roof coatings, metal roofs can reduce cooling costs by up to 25%. Metal also releases heat quickly after sunset, unlike asphalt which radiates stored heat into the attic all night.',
   },
   {
     question: 'Is metal roofing noisy in the rain?',
-    answer:
+  answer:
       'Modern metal roofing installed over solid decking with proper underlayment is no louder than other roofing materials. The combination of solid roof deck, insulation, and attic space absorbs sound. Some homeowners enjoy the subtle rain sound, but it is far from the tin roof stereotype. We can demonstrate sound levels during your consultation.',
   },
   {
     question: 'Can metal roofing be installed over existing shingles?',
-    answer:
+  answer:
       'In some cases, metal roofing can be installed over existing shingles, which saves on tear-off costs. However, this depends on the condition of the existing roof, local building codes, and the type of metal system. We generally recommend full tear-off for standing seam installations to ensure proper inspection of the deck and optimal results.',
   },
   {
     question: 'What colors are available for metal roofing?',
-    answer:
+  answer:
       'Metal roofing comes in a wide range of colors and finishes. Popular choices for Mooresville homes include charcoal, bronze, slate gray, forest green, and various shades of brown and beige. Kynar/PVDF finishes resist fading for 30+ years. We can help you select a color that complements your home\'s style during your free consultation.',
   },
 ];
@@ -255,9 +255,9 @@ export default function MetalRoofingMooresvilleNCPage() {
       <LocationSchema
         location={{
           city: 'Mooresville',
-          state: 'NC',
-          slug: 'mooresville-nc',
-          county: 'Iredell',
+  state: 'NC',
+  slug: 'mooresville-nc',
+  county: 'Iredell',
         }}
       />
       <AISearchOptimizationBundle

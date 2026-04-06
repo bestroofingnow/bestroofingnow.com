@@ -27,34 +27,34 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
     return { title: 'Guide Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${guide.title}`,
-    description: guide.description,
-    keywords: guide.keywords,
-    alternates: {
+  description: guide.description,
+  keywords: guide.keywords,
+  alternates: {
       canonical: `${SITE_CONFIG.url}/guides/${slug}`,
     },
-    openGraph: {
+  openGraph: {
       title: `${guide.title} | Best Roofing Now`,
-      description: guide.description,
-      url: `${SITE_CONFIG.url}/guides/${slug}`,
-      type: 'article',
-      images: [
+  description: guide.description,
+  url: `${SITE_CONFIG.url}/guides/${slug}`,
+  type: 'article',
+  images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: `${guide.title} - Best Roofing Now Charlotte NC`,
+  width: 1200,
+  height: 630,
+  alt: `${guide.title} - Best Roofing Now Charlotte NC`,
         },
       ],
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title: `${guide.title} | Best Roofing Now`,
-      description: guide.description,
-      images: [ogImage],
+  title: `${guide.title} | Best Roofing Now`,
+  description: guide.description,
+  images: [ogImage],
     },
   };
 }
@@ -66,11 +66,11 @@ const guideContent: Record<string, {
 }> = {
   'roof-replacement-cost': {
     intro: 'Understanding the cost of a roof replacement is crucial for budgeting your home improvement project. In Charlotte, NC, roof replacement costs vary based on several factors including materials, roof size, and complexity.',
-    sections: [
+  sections: [
       {
         title: 'Average Roof Replacement Costs in Charlotte',
-        content: 'Most homeowners in Charlotte pay between $8,000 and $25,000 for a complete roof replacement. The average cost is around $12,000-$15,000 for a standard 2,000 square foot home with asphalt shingles.',
-        items: [
+  content: 'Most homeowners in Charlotte pay between $8,000 and $25,000 for a complete roof replacement. The average cost is around $12,000-$15,000 for a standard 2,000 square foot home with asphalt shingles.',
+  items: [
           'Asphalt shingles: $7,000-$15,000',
           'Metal roofing: $15,000-$30,000',
           'Tile roofing: $20,000-$40,000',
@@ -79,8 +79,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Factors That Affect Price',
-        content: 'Several factors influence your total roof replacement cost:',
-        items: [
+  content: 'Several factors influence your total roof replacement cost:',
+  items: [
           'Roof size and square footage',
           'Roofing material chosen',
           'Roof pitch and complexity',
@@ -92,8 +92,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Ways to Save on Your New Roof',
-        content: 'There are legitimate ways to reduce your roof replacement costs:',
-        items: [
+  content: 'There are legitimate ways to reduce your roof replacement costs:',
+  items: [
           'Get multiple quotes from reputable contractors',
           'Consider financing options with 0% interest',
           'Time your project during off-peak seasons',
@@ -105,11 +105,11 @@ const guideContent: Record<string, {
   },
   'signs-you-need-new-roof': {
     intro: 'Your roof protects your home and family from the elements. Knowing when it needs replacement can save you from costly water damage and emergency repairs. Here are the key warning signs to watch for.',
-    sections: [
+  sections: [
       {
         title: 'Age of Your Roof',
-        content: 'Most asphalt shingle roofs last 20-25 years. If your roof is approaching or exceeding this age, it\'s time for a professional inspection, even if no obvious problems exist.',
-        items: [
+  content: 'Most asphalt shingle roofs last 20-25 years. If your roof is approaching or exceeding this age, it\'s time for a professional inspection, even if no obvious problems exist.',
+  items: [
           'Asphalt shingles: 20-30 years',
           'Metal roofing: 40-70 years',
           'Tile roofing: 50-100 years',
@@ -118,8 +118,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Visible Warning Signs',
-        content: 'These exterior signs indicate your roof may need replacement:',
-        items: [
+  content: 'These exterior signs indicate your roof may need replacement:',
+  items: [
           'Curling, cracking, or missing shingles',
           'Excessive granules in gutters',
           'Sagging or uneven roof sections',
@@ -131,8 +131,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Interior Warning Signs',
-        content: 'Check inside your home for these indicators:',
-        items: [
+  content: 'Check inside your home for these indicators:',
+  items: [
           'Water stains on ceilings or walls',
           'Peeling paint near rooflines',
           'Mold or mildew in attic',
@@ -144,11 +144,11 @@ const guideContent: Record<string, {
   },
   'how-long-does-roof-last': {
     intro: 'The lifespan of your roof depends on several factors including the material used, installation quality, climate conditions, and maintenance. Understanding these factors helps you plan for future replacement.',
-    sections: [
+  sections: [
       {
         title: 'Roof Lifespan by Material',
-        content: 'Different roofing materials have vastly different expected lifespans:',
-        items: [
+  content: 'Different roofing materials have vastly different expected lifespans:',
+  items: [
           'Three-tab asphalt shingles: 15-20 years',
           'Architectural asphalt shingles: 25-30 years',
           'Metal roofing: 40-70 years',
@@ -160,8 +160,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Factors That Shorten Roof Life',
-        content: 'Several factors can reduce your roof\'s lifespan:',
-        items: [
+  content: 'Several factors can reduce your roof\'s lifespan:',
+  items: [
           'Poor installation quality',
           'Inadequate ventilation',
           'Lack of regular maintenance',
@@ -173,8 +173,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'How to Maximize Roof Life',
-        content: 'Extend your roof\'s lifespan with these practices:',
-        items: [
+  content: 'Extend your roof\'s lifespan with these practices:',
+  items: [
           'Schedule annual professional inspections',
           'Keep gutters clean and functional',
           'Trim trees away from the roof',
@@ -187,11 +187,11 @@ const guideContent: Record<string, {
   },
   'roof-maintenance-tips': {
     intro: 'Regular roof maintenance is the key to maximizing your roof\'s lifespan and avoiding expensive emergency repairs. These essential tips will help Charlotte homeowners keep their roofs in top condition.',
-    sections: [
+  sections: [
       {
         title: 'Seasonal Maintenance Schedule',
-        content: 'Follow this seasonal maintenance routine:',
-        items: [
+  content: 'Follow this seasonal maintenance routine:',
+  items: [
           'Spring: Post-winter inspection, clean gutters, check for damage',
           'Summer: Trim overhanging branches, check attic ventilation',
           'Fall: Clean gutters before leaf season, remove debris',
@@ -200,8 +200,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'DIY Maintenance Tasks',
-        content: 'These tasks can be safely performed by homeowners:',
-        items: [
+  content: 'These tasks can be safely performed by homeowners:',
+  items: [
           'Visual inspection from ground level',
           'Cleaning gutters and downspouts',
           'Removing debris from roof valleys',
@@ -212,8 +212,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'When to Call a Professional',
-        content: 'Some maintenance requires professional attention:',
-        items: [
+  content: 'Some maintenance requires professional attention:',
+  items: [
           'Walking on steep or high roofs',
           'Repairing or replacing shingles',
           'Sealing flashing around chimneys',
@@ -226,11 +226,11 @@ const guideContent: Record<string, {
   },
   'insurance-claim-guide': {
     intro: 'Filing a roof insurance claim after storm damage can be overwhelming. This step-by-step guide will help Charlotte homeowners navigate the process and maximize their claim.',
-    sections: [
+  sections: [
       {
         title: 'Before You File a Claim',
-        content: 'Take these important steps immediately after storm damage:',
-        items: [
+  content: 'Take these important steps immediately after storm damage:',
+  items: [
           'Document all damage with photos and video',
           'Prevent further damage with temporary repairs',
           'Keep receipts for any emergency repairs',
@@ -240,8 +240,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Filing Your Claim',
-        content: 'Follow these steps when filing your insurance claim:',
-        items: [
+  content: 'Follow these steps when filing your insurance claim:',
+  items: [
           'Contact your insurance company promptly',
           'Provide documentation of all damage',
           'Request a professional adjuster inspection',
@@ -252,8 +252,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Working with Your Roofing Contractor',
-        content: 'Choose a contractor who will advocate for you:',
-        items: [
+  content: 'Choose a contractor who will advocate for you:',
+  items: [
           'Select a licensed, insured contractor',
           'Get a detailed scope of work in writing',
           'Ensure they use quality materials',
@@ -266,11 +266,11 @@ const guideContent: Record<string, {
   },
   'choosing-roofing-contractor': {
     intro: 'Choosing the right roofing contractor is crucial for a successful project. Use these tips to find a reputable contractor and avoid common scams that target Charlotte homeowners.',
-    sections: [
+  sections: [
       {
         title: 'Essential Qualifications to Verify',
-        content: 'Every legitimate roofing contractor should have:',
-        items: [
+  content: 'Every legitimate roofing contractor should have:',
+  items: [
           'Valid NC contractor license',
           'General liability insurance',
           'Workers compensation insurance',
@@ -281,8 +281,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Red Flags to Avoid',
-        content: 'Be wary of contractors who:',
-        items: [
+  content: 'Be wary of contractors who:',
+  items: [
           'Demand large deposits upfront',
           'Go door-to-door after storms',
           'Pressure you to sign immediately',
@@ -294,8 +294,8 @@ const guideContent: Record<string, {
       },
       {
         title: 'Questions to Ask Before Hiring',
-        content: 'Ask potential contractors these questions:',
-        items: [
+  content: 'Ask potential contractors these questions:',
+  items: [
           'How long have you been in business locally?',
           'Can I see proof of insurance?',
           'What manufacturer certifications do you hold?',
@@ -345,10 +345,10 @@ export default async function GuidePage({ params }: GuidePageProps) {
       <ArticleSchema
         post={{
           title: guide.title,
-          description: guide.description,
-          slug: `guides/${slug}`,
-          datePublished: '2024-01-01',
-          dateModified: new Date().toISOString().split('T')[0],
+  description: guide.description,
+  slug: `guides/${slug}`,
+  datePublished: '2024-01-01',
+  dateModified: new Date().toISOString().split('T')[0],
         }}
       />
 
@@ -428,7 +428,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
                   <p className="text-gray">
                     When in doubt, get a professional opinion. Our free roof inspections provide detailed
                     assessments with no obligation. We&apos;ll give you honest advice whether you need repairs,
-                    replacement, or just regular maintenance.
+  replacement, or just regular maintenance.
                   </p>
                 </div>
               </div>

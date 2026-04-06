@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Mooresville NC | Lake Norman Experts | Best Roofing Now',
-    description:
+  description:
       'Premium roof replacement in Mooresville NC. Lake Norman\'s trusted roofing company with BBB A+ rating. CertainTeed, GAF, and Owens Corning certified. Free estimates!',
-    url: `${SITE_CONFIG.url}/roof-replacement-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof replacement in Mooresville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof replacement in Mooresville NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const replacementServices = [
   {
     icon: Home,
-    title: 'Asphalt Shingle Roofing',
-    description: 'Premium architectural shingles from CertainTeed, GAF, and Owens Corning with enhanced warranties.',
-    href: '/services/residential-roofing',
+  title: 'Asphalt Shingle Roofing',
+  description: 'Premium architectural shingles from CertainTeed, GAF, and Owens Corning with enhanced warranties.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Layers,
-    title: 'Metal Roofing',
-    description: 'Standing seam and metal shingle systems for superior durability and energy efficiency.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing',
+  description: 'Standing seam and metal shingle systems for superior durability and energy efficiency.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Building2,
-    title: 'Luxury Shingles',
-    description: 'Designer shingles that replicate the look of slate or cedar shake at a fraction of the cost.',
-    href: '/services/residential-roofing',
+  title: 'Luxury Shingles',
+  description: 'Designer shingles that replicate the look of slate or cedar shake at a fraction of the cost.',
+  href: '/services/residential-roofing',
   },
   {
     icon: RefreshCw,
-    title: 'Complete Tear-Off',
-    description: 'Full removal of old roofing down to the deck for proper inspection and replacement.',
-    href: '/services/roof-replacement',
+  title: 'Complete Tear-Off',
+  description: 'Full removal of old roofing down to the deck for proper inspection and replacement.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Shield,
-    title: 'Extended Warranties',
-    description: 'Up to 50-year warranties available through our manufacturer certifications.',
-    href: '/services/roof-replacement',
+  title: 'Extended Warranties',
+  description: 'Up to 50-year warranties available through our manufacturer certifications.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Sparkles,
-    title: 'Financing Available',
-    description: 'Flexible financing options to fit your budget with competitive rates.',
-    href: '/financing',
+  title: 'Financing Available',
+  description: 'Flexible financing options to fit your budget with competitive rates.',
+  href: '/financing',
   },
 ];
 
@@ -107,33 +107,33 @@ const replacementServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Certified Installers',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
+  title: 'Certified Installers',
+  description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp coverage.',
   },
   {
     icon: Users,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: Clock,
-    title: 'Fast Installation',
-    description: 'Most roof replacements completed in just 1-3 days with thorough cleanup.',
+  title: 'Fast Installation',
+  description: 'Most roof replacements completed in just 1-3 days with thorough cleanup.',
   },
 ];
 
@@ -167,42 +167,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does a roof replacement cost in Mooresville NC?',
-    answer:
+  answer:
       'Roof replacement costs in Mooresville typically range from $8,000-$25,000 for most homes, depending on size, materials, and complexity. Factors affecting price include roof square footage, pitch/steepness, number of layers to remove, material choice (architectural shingles vs. metal vs. premium), and any necessary repairs to decking or ventilation. We provide free, detailed estimates with transparent pricing.',
   },
   {
     question: 'How long does a roof replacement take in Mooresville?',
-    answer:
+  answer:
       'Most residential roof replacements in Mooresville are completed in 1-3 days. The exact timeline depends on your roof\'s size, complexity, and weather conditions. Larger Lake Norman lakefront homes or complex designs may take 3-5 days. We work efficiently while maintaining quality standards and always provide a clear timeline before starting.',
   },
   {
     question: 'What roofing materials do you recommend for Lake Norman homes?',
-    answer:
+  answer:
       'For Lake Norman homes, we typically recommend premium architectural shingles (CertainTeed Landmark Pro, GAF Timberline HDZ) or metal roofing for waterfront properties. The humid lakeside environment and occasional severe storms make impact-resistant, algae-resistant materials ideal. We help you select the best material for your specific location and budget.',
   },
   {
     question: 'Do you offer financing for roof replacement in Mooresville?',
-    answer:
+  answer:
       'Yes! We offer flexible financing options to make your roof replacement affordable. Our financing partners provide competitive rates with various term lengths. Many homeowners qualify for low monthly payments. We also work with insurance companies if your roof qualifies for storm damage coverage.',
   },
   {
     question: 'What warranties do you offer on new roofs in Mooresville?',
-    answer:
+  answer:
       'As CertainTeed ShingleMaster, GAF Factory-Certified Contractor, we offer enhanced warranty options. This includes GAF\'s Golden Pledge warranty (50 years material + 25 years workmanship), CertainTeed SureStart PLUS warranty, and Owens Corning Platinum Protection. We also provide our own workmanship warranty on every installation.',
   },
   {
     question: 'How do I know if I need a new roof vs. repairs?',
-    answer:
+  answer:
       'Key signs you need a replacement include: roof age over 20 years, widespread shingle damage or granule loss, multiple leaks, sagging or uneven areas, and if repair costs exceed 30% of replacement cost. We provide honest assessments and never recommend replacement if repairs will suffice. Our free inspections help you make an informed decision.',
   },
   {
     question: 'Will a new roof increase my home value in Mooresville?',
-    answer:
+  answer:
       'Yes! A new roof typically returns 60-70% of its cost in increased home value and can be a major selling point. In the competitive Lake Norman real estate market, a new roof provides peace of mind to buyers and can help your home sell faster. Quality materials like architectural shingles or metal roofing add even more value.',
   },
   {
     question: 'What is included in your roof replacement service?',
-    answer:
+  answer:
       'Our complete roof replacement includes: full tear-off of existing roofing, thorough deck inspection and repairs, installation of quality underlayment, proper ventilation assessment, installation of ice and water shield (where required), new drip edge and flashing, premium material installation, and complete cleanup with magnetic nail sweep. We leave your property cleaner than we found it.',
   },
 ];
@@ -220,9 +220,9 @@ export default function RoofReplacementMooresvilleNCPage() {
       <LocationSchema
         location={{
           city: 'Mooresville',
-          state: 'NC',
-          slug: 'mooresville-nc',
-          county: 'Iredell',
+  state: 'NC',
+  slug: 'mooresville-nc',
+  county: 'Iredell',
         }}
       />
       <AISearchOptimizationBundle
@@ -351,7 +351,7 @@ export default function RoofReplacementMooresvilleNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 A new roof is a major investment in your home. When Lake Norman homeowners need a roof replacement,
-                they trust Best Roofing Now for premium materials, expert installation, and exceptional warranties.
+  they trust Best Roofing Now for premium materials, expert installation, and exceptional warranties.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (

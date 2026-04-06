@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Attic Moisture Control Charlotte NC | Stop Mold & Ice Dams Before They Start',
-    description:
+  description:
       'Charlotte\'s humid climate creates unique attic moisture challenges. Learn how proper ventilation prevents summer mold AND winter ice dams. Free attic inspections.',
-    url: `${SITE_CONFIG.url}/attic-moisture-control-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/attic-moisture-control-charlotte-nc`,
+  type: 'article',
   },
 };
 
@@ -66,32 +66,32 @@ export const metadata: Metadata = {
 const moistureFAQs = [
   {
     question: 'Why do Charlotte homes have attic moisture problems?',
-    answer:
+  answer:
       'Charlotte\'s subtropical climate averages 60-75% humidity year-round. This moisture enters attics through bathroom vents, cooking, and natural air infiltration. Without proper ventilation, moisture gets trapped, leading to condensation on roof decking in winter and mold growth in summer. Charlotte homes built before 2000 often have inadequate ventilation by today\'s standards.',
   },
   {
     question: 'How does attic moisture cause ice dams in Charlotte?',
-    answer:
+  answer:
       'When warm, moist air from your living space rises into a poorly ventilated attic, it heats the roof deck unevenly. During Charlotte\'s occasional freezing weather, this melts snow on warmer sections while it refreezes at the colder eaves, creating ice dams. Proper attic ventilation keeps the roof temperature uniform, preventing this cycle.',
   },
   {
     question: 'What humidity level should my Charlotte attic maintain?',
-    answer:
+  answer:
       'Your attic humidity should stay below 50% relative humidity year-round. In Charlotte\'s humid climate, achieving this requires balanced ventilation with adequate soffit intake and ridge exhaust. A properly ventilated Charlotte attic will have 1 square foot of ventilation for every 150 square feet of attic floor space.',
   },
   {
     question: 'How do I know if my Charlotte home has attic moisture problems?',
-    answer:
+  answer:
       'Signs include: musty odors when entering the attic, visible condensation or frost on roof sheathing in winter, dark staining on rafters or decking, peeling paint on exterior soffits, unusually high summer cooling bills (10-15% higher than neighbors), and mold spots on attic insulation or wood surfaces.',
   },
   {
     question: 'Can attic moisture damage my roof in Charlotte?',
-    answer:
+  answer:
       'Yes, chronic moisture causes serious roof damage. It rots roof decking and rafters, promotes mold growth that affects indoor air quality, causes shingles to fail prematurely from underneath, and leads to expensive repairs. Charlotte\'s combination of humidity and temperature swings makes this damage progress faster than in drier climates.',
   },
   {
     question: 'How much does attic ventilation improvement cost in Charlotte?',
-    answer:
+  answer:
       'Basic ventilation improvements (adding soffit or ridge vents) typically cost $500-$1,500 in Charlotte. Comprehensive solutions including powered ventilation, vapor barriers, and insulation upgrades range from $2,000-$5,000. However, these investments typically reduce cooling costs 10-15% annually and prevent thousands in moisture damage repairs.',
   },
 ];
@@ -100,33 +100,33 @@ const moistureFAQs = [
 const warningSigns = [
   {
     icon: Droplets,
-    title: 'Visible Condensation',
-    description: 'Water droplets or frost on roof sheathing, especially in winter mornings.',
+  title: 'Visible Condensation',
+  description: 'Water droplets or frost on roof sheathing, especially in winter mornings.',
   },
   {
     icon: Wind,
-    title: 'Musty Odors',
-    description: 'Mold or mildew smell when entering the attic, particularly in humid summer months.',
+  title: 'Musty Odors',
+  description: 'Mold or mildew smell when entering the attic, particularly in humid summer months.',
   },
   {
     icon: ThermometerSun,
-    title: 'High Cooling Bills',
-    description: 'Summer energy costs 10-15% higher than similar Charlotte homes nearby.',
+  title: 'High Cooling Bills',
+  description: 'Summer energy costs 10-15% higher than similar Charlotte homes nearby.',
   },
   {
     icon: Home,
-    title: 'Peeling Paint',
-    description: 'Exterior paint peeling near soffits or roofline indicates moisture escaping.',
+  title: 'Peeling Paint',
+  description: 'Exterior paint peeling near soffits or roofline indicates moisture escaping.',
   },
   {
     icon: AlertTriangle,
-    title: 'Dark Staining',
-    description: 'Black or dark spots on rafters, decking, or insulation from mold growth.',
+  title: 'Dark Staining',
+  description: 'Black or dark spots on rafters, decking, or insulation from mold growth.',
   },
   {
     icon: Gauge,
-    title: 'Soft Roof Spots',
-    description: 'Spongy feeling when walking on roof - indicates rotting decking underneath.',
+  title: 'Soft Roof Spots',
+  description: 'Spongy feeling when walking on roof - indicates rotting decking underneath.',
   },
 ];
 
@@ -134,33 +134,33 @@ const warningSigns = [
 const ventilationSolutions = [
   {
     title: 'Ridge Vent Installation',
-    description: 'Continuous ventilation along the roof peak allows hot, moist air to escape naturally.',
-    benefit: 'Most effective exhaust method for Charlotte homes',
+  description: 'Continuous ventilation along the roof peak allows hot, moist air to escape naturally.',
+  benefit: 'Most effective exhaust method for Charlotte homes',
   },
   {
     title: 'Soffit Vent Repair/Addition',
-    description: 'Intake vents under the eaves draw fresh air into the attic, creating airflow.',
-    benefit: 'Critical for balanced ventilation system',
+  description: 'Intake vents under the eaves draw fresh air into the attic, creating airflow.',
+  benefit: 'Critical for balanced ventilation system',
   },
   {
     title: 'Powered Attic Ventilators',
-    description: 'Solar or electric fans actively remove hot, humid air during peak conditions.',
-    benefit: 'Ideal for Charlotte\'s extreme summer humidity',
+  description: 'Solar or electric fans actively remove hot, humid air during peak conditions.',
+  benefit: 'Ideal for Charlotte\'s extreme summer humidity',
   },
   {
     title: 'Vapor Barrier Installation',
-    description: 'Prevents moisture from living spaces from entering the attic.',
-    benefit: 'Reduces moisture load by up to 70%',
+  description: 'Prevents moisture from living spaces from entering the attic.',
+  benefit: 'Reduces moisture load by up to 70%',
   },
   {
     title: 'Insulation Upgrades',
-    description: 'Proper insulation keeps conditioned air in living spaces, reducing attic moisture.',
-    benefit: 'Improves energy efficiency and moisture control',
+  description: 'Proper insulation keeps conditioned air in living spaces, reducing attic moisture.',
+  benefit: 'Improves energy efficiency and moisture control',
   },
   {
     title: 'Bathroom Vent Correction',
-    description: 'Ensures bathroom exhaust vents terminate outside, not into the attic.',
-    benefit: 'Eliminates major moisture source',
+  description: 'Ensures bathroom exhaust vents terminate outside, not into the attic.',
+  benefit: 'Eliminates major moisture source',
   },
 ];
 
@@ -168,8 +168,8 @@ const ventilationSolutions = [
 const seasonalCalendar = [
   {
     season: 'Spring',
-    icon: CloudRain,
-    tasks: [
+  icon: CloudRain,
+  tasks: [
       'Inspect for winter moisture damage',
       'Check for mold growth as temperatures rise',
       'Clear debris from soffit vents',
@@ -178,8 +178,8 @@ const seasonalCalendar = [
   },
   {
     season: 'Summer',
-    icon: ThermometerSun,
-    tasks: [
+  icon: ThermometerSun,
+  tasks: [
       'Monitor attic temperature (should be <120F)',
       'Check for mold in humid conditions',
       'Ensure powered vents are functioning',
@@ -188,8 +188,8 @@ const seasonalCalendar = [
   },
   {
     season: 'Fall',
-    icon: Wind,
-    tasks: [
+  icon: Wind,
+  tasks: [
       'Clear leaves from soffit vents',
       'Inspect ridge vents for blockages',
       'Check insulation depth and condition',
@@ -198,8 +198,8 @@ const seasonalCalendar = [
   },
   {
     season: 'Winter',
-    icon: Thermometer,
-    tasks: [
+  icon: Thermometer,
+  tasks: [
       'Watch for frost on roof sheathing',
       'Check for ice dam formation',
       'Monitor for condensation drips',
@@ -248,10 +248,10 @@ export default function AtticMoistureControlCharlottePage() {
       <ArticleSchema
         post={{
           title: 'Attic Moisture Control Charlotte NC: Stop Mold & Ice Dams Before They Start',
-          description: 'Complete guide to controlling attic moisture in Charlotte\'s humid subtropical climate.',
-          slug: 'attic-moisture-control-charlotte-nc',
-          datePublished: '2026-01-27',
-          dateModified: '2026-01-27',
+  description: 'Complete guide to controlling attic moisture in Charlotte\'s humid subtropical climate.',
+  slug: 'attic-moisture-control-charlotte-nc',
+  datePublished: '2026-01-27',
+  dateModified: '2026-01-27',
         }}
       />
       <FAQSchema faqs={moistureFAQs} />
@@ -349,11 +349,11 @@ export default function AtticMoistureControlCharlottePage() {
                 Charlotte&apos;s humid subtropical climate puts your attic under year-round moisture stress.
                 With average humidity levels between 60-75%, moisture constantly enters your attic through
                 normal activities like cooking, showering, and even breathing. Without proper ventilation,
-                this moisture becomes trapped.
+  this moisture becomes trapped.
               </p>
               <p>
                 <strong>In summer</strong>, trapped humidity creates ideal conditions for mold growth on rafters,
-                sheathing, and insulation. Many Charlotte homeowners discover mold problems only after noticing
+  sheathing, and insulation. Many Charlotte homeowners discover mold problems only after noticing
                 musty odors or respiratory issues.
               </p>
               <p>

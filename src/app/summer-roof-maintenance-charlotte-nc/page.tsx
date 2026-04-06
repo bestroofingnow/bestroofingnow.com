@@ -21,7 +21,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Summer Roof Maintenance Charlotte NC | Heat Protection | Best Roofing Now',
-    description:
+  description:
       'Protect your Charlotte roof from intense summer heat and UV damage. Professional maintenance, ventilation upgrades, and cooling solutions. BBB A+ rated.',
-    url: `${SITE_CONFIG.url}/summer-roof-maintenance-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/summer-roof-maintenance-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'Summer roof maintenance services in Charlotte NC - Best Roofing Now heat protection experts',
+  width: 1200,
+  height: 630,
+  alt: 'Summer roof maintenance services in Charlotte NC - Best Roofing Now heat protection experts',
       },
     ],
   },
@@ -69,39 +69,39 @@ export const metadata: Metadata = {
 const summerServices = [
   {
     icon: Sun,
-    title: 'UV Protection Inspection',
-    description: 'Comprehensive assessment of UV damage and protective coating recommendations.',
-    href: '/services/roof-inspection',
+  title: 'UV Protection Inspection',
+  description: 'Comprehensive assessment of UV damage and protective coating recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Thermometer,
-    title: 'Heat Damage Assessment',
-    description: 'Identify shingle curling, cracking, and heat-related deterioration before it spreads.',
-    href: '/services/roof-repair',
+  title: 'Heat Damage Assessment',
+  description: 'Identify shingle curling, cracking, and heat-related deterioration before it spreads.',
+  href: '/services/roof-repair',
   },
   {
     icon: Wind,
-    title: 'Ventilation Upgrades',
-    description: 'Improve attic airflow to reduce heat buildup and extend shingle life.',
-    href: '/services/roof-ventilation',
+  title: 'Ventilation Upgrades',
+  description: 'Improve attic airflow to reduce heat buildup and extend shingle life.',
+  href: '/services/roof-ventilation',
   },
   {
     icon: Home,
-    title: 'Reflective Coatings',
-    description: 'Cool roof coatings that reflect sunlight and reduce cooling costs up to 25%.',
-    href: '/services/flat-roof-repair',
+  title: 'Reflective Coatings',
+  description: 'Cool roof coatings that reflect sunlight and reduce cooling costs up to 25%.',
+  href: '/services/flat-roof-repair',
   },
   {
     icon: Wrench,
-    title: 'Preventive Repairs',
-    description: 'Address minor issues before Charlotte\'s intense summer heat makes them worse.',
-    href: '/services/roof-repair',
+  title: 'Preventive Repairs',
+  description: 'Address minor issues before Charlotte\'s intense summer heat makes them worse.',
+  href: '/services/roof-repair',
   },
   {
     icon: Zap,
-    title: 'Energy Efficiency Audit',
-    description: 'Evaluate your roof\'s impact on cooling costs and recommend improvements.',
-    href: '/services/roof-inspection',
+  title: 'Energy Efficiency Audit',
+  description: 'Evaluate your roof\'s impact on cooling costs and recommend improvements.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -109,33 +109,33 @@ const summerServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Heat Protection Experts',
-    description: 'Specialized knowledge of how Charlotte\'s extreme summer heat affects roofing materials.',
+  title: 'Heat Protection Experts',
+  description: 'Specialized knowledge of how Charlotte\'s extreme summer heat affects roofing materials.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with commitment to quality and integrity in every service.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with commitment to quality and integrity in every service.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability coverage.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium products and warranties.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium products and warranties.',
   },
   {
     icon: Clock,
-    title: 'Flexible Scheduling',
-    description: 'Early morning appointments available to beat the summer heat.',
+  title: 'Flexible Scheduling',
+  description: 'Early morning appointments available to beat the summer heat.',
   },
 ];
 
@@ -183,42 +183,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why is summer roof maintenance important in Charlotte?',
-    answer:
+  answer:
       'Charlotte summers bring intense heat with temperatures regularly exceeding 90°F and attic temperatures often reaching 150°F or higher. This extreme heat accelerates shingle aging, causes thermal expansion stress, and can lead to premature cracking, curling, and granule loss. Summer maintenance identifies and addresses these issues before they become costly repairs. Additionally, summer thunderstorms can reveal vulnerabilities that weren\'t apparent in drier months.',
   },
   {
     question: 'How does Charlotte\'s heat damage roofs?',
-    answer:
+  answer:
       'Charlotte\'s intense summer heat affects roofs in several ways: UV radiation breaks down asphalt shingle compounds over time, extreme temperatures cause thermal expansion and contraction that stresses materials, heat buildup in poorly ventilated attics can "cook" shingles from below, and dark-colored roofs absorb heat that transfers into your home. Heat damage shows as curling, cracking, granule loss, and premature aging.',
   },
   {
     question: 'What does summer roof maintenance include?',
-    answer:
+  answer:
       'Our summer maintenance service includes comprehensive inspection for heat damage, UV deterioration assessment, ventilation evaluation, flashing and seal inspection, gutter and drainage check, debris removal, minor repair of worn areas, attic temperature assessment, and detailed report with recommendations. We focus on identifying heat-related issues and preventing summer storm damage.',
   },
   {
     question: 'How can I reduce heat damage to my roof?',
-    answer:
+  answer:
       'Several strategies help reduce heat damage: proper attic ventilation allows hot air to escape (we recommend at least 1 sq ft of vent area per 150 sq ft of attic space), reflective or "cool roof" coatings can reduce surface temperatures by 50°F, lighter-colored shingles absorb less heat, radiant barriers in the attic reduce heat transfer, and shade trees can significantly lower roof temperatures.',
   },
   {
     question: 'Should I install a ridge vent for better ventilation?',
-    answer:
+  answer:
       'Ridge vents are excellent for Charlotte homes and are one of the most effective ventilation solutions. They run along the roof peak, allowing hot air to escape naturally as it rises. Combined with soffit vents for intake, ridge vents create continuous airflow that significantly reduces attic temperatures. This protects your shingles from below and can reduce cooling costs by 10-15%. We recommend ridge vents for most Charlotte homes.',
   },
   {
     question: 'How much does summer roof maintenance cost?',
-    answer:
+  answer:
       'Summer roof maintenance in Charlotte typically costs $150-$350 depending on roof size and accessibility. This includes a comprehensive inspection, minor repairs, debris removal, and a detailed condition report. Ventilation upgrades, if needed, typically range from $400-$1,500 for ridge vent installation. Consider that proper maintenance can extend your roof\'s life by 5-10 years, making it a wise investment.',
   },
   {
     question: 'What are cool roof coatings?',
-    answer:
+  answer:
       'Cool roof coatings are reflective materials applied to your roof surface that reflect more sunlight and absorb less heat than standard roofing materials. They can reduce roof surface temperatures by up to 50°F, lower attic temperatures significantly, and decrease cooling costs by 10-30%. Coatings are especially effective on flat or low-slope commercial roofs but are also available for residential applications. We offer white, aluminum, and tinted reflective coatings.',
   },
   {
     question: 'When is the best time for summer roof maintenance?',
-    answer:
+  answer:
       'We recommend scheduling summer maintenance in late spring (May-June) before the most intense heat arrives. This timing allows us to identify and address any winter damage, prepare your roof for peak summer stress, and complete any ventilation upgrades before they\'re most needed. We offer early morning appointments (starting at 7 AM) during peak summer to work in cooler conditions.',
   },
 ];
@@ -233,7 +233,6 @@ export default function SummerRoofMaintenanceCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

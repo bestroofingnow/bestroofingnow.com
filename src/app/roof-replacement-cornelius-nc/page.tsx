@@ -18,7 +18,7 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Cornelius NC | Lake Norman Specialists',
-    description:
+  description:
       'Premium roof replacement for Cornelius NC and Lake Norman waterfront homes. GAF Master Elite certified. Financing available. Free estimates from veteran-owned contractor.',
-    url: `${SITE_CONFIG.url}/roof-replacement-cornelius-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-cornelius-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Roof replacement Cornelius NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof replacement Cornelius NC - Best Roofing Now',
       },
     ],
   },
@@ -68,27 +68,27 @@ export const metadata: Metadata = {
 const roofingOptions = [
   {
     title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles with 30-50 year warranties. GAF Timberline and CertainTeed Landmark.',
-    priceRange: '$12-18/sq ft',
-    bestFor: 'Most Cornelius homes',
+  description: 'Premium dimensional shingles with 30-50 year warranties. GAF Timberline and CertainTeed Landmark.',
+  priceRange: '$12-18/sq ft',
+  bestFor: 'Most Cornelius homes',
   },
   {
     title: 'Designer Shingles',
-    description: 'Luxury appearance mimicking slate or cedar. GAF Grand Canyon, CertainTeed Grand Manor.',
-    priceRange: '$18-28/sq ft',
-    bestFor: 'High-end neighborhoods',
+  description: 'Luxury appearance mimicking slate or cedar. GAF Grand Canyon, CertainTeed Grand Manor.',
+  priceRange: '$18-28/sq ft',
+  bestFor: 'High-end neighborhoods',
   },
   {
     title: 'Standing Seam Metal',
-    description: 'Premium metal roofing rated 140+ MPH. 40-70 year lifespan, ideal for lakefront.',
-    priceRange: '$18-30/sq ft',
-    bestFor: 'Waterfront properties',
+  description: 'Premium metal roofing rated 140+ MPH. 40-70 year lifespan, ideal for lakefront.',
+  priceRange: '$18-30/sq ft',
+  bestFor: 'Waterfront properties',
   },
   {
     title: 'Natural Slate',
-    description: 'Authentic slate with 100+ year lifespan. Ultimate luxury for estate homes.',
-    priceRange: '$30-50/sq ft',
-    bestFor: 'Luxury estates',
+  description: 'Authentic slate with 100+ year lifespan. Ultimate luxury for estate homes.',
+  priceRange: '$30-50/sq ft',
+  bestFor: 'Luxury estates',
   },
 ];
 
@@ -96,23 +96,23 @@ const roofingOptions = [
 const whyChooseUs = [
   {
     icon: Waves,
-    title: 'Lake Norman Specialists',
-    description: 'Deep experience with waterfront properties including The Peninsula, Jetton Road, and Antiquity.',
+  title: 'Lake Norman Specialists',
+  description: 'Deep experience with waterfront properties including The Peninsula, Jetton Road, and Antiquity.',
   },
   {
     icon: Award,
-    title: 'GAF Master Elite',
-    description: 'Top 2% of roofers nationally. Access to Golden Pledge warranties up to 50 years.',
+  title: 'GAF Master Elite',
+  description: 'Top 2% of roofers nationally. Access to Golden Pledge warranties up to 50 years.',
   },
   {
     icon: DollarSign,
-    title: 'Financing Available',
-    description: 'Flexible financing options with payments as low as $150/month for qualified buyers.',
+  title: 'Financing Available',
+  description: 'Flexible financing options with payments as low as $150/month for qualified buyers.',
   },
   {
     icon: FileCheck,
-    title: 'Insurance Experts',
-    description: 'We work directly with insurance companies to maximize your claim for storm damage replacements.',
+  title: 'Insurance Experts',
+  description: 'We work directly with insurance companies to maximize your claim for storm damage replacements.',
   },
 ];
 
@@ -120,32 +120,32 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'How much does roof replacement cost in Cornelius NC?',
-    answer:
+  answer:
       'Roof replacement in Cornelius typically ranges from $15,000-$35,000 for average homes with architectural shingles. Lake Norman waterfront properties with premium materials like metal or designer shingles often range $35,000-$75,000+. The Peninsula and Jetton Road estates with copper or slate can exceed $100,000. We provide free detailed estimates.',
   },
   {
     question: 'How long does roof replacement take in Cornelius?',
-    answer:
+  answer:
       'Most Cornelius roof replacements are completed in 1-3 days depending on size and complexity. Larger waterfront homes may take 3-5 days. We work efficiently while maintaining quality, and always secure your home each evening. Weather can affect timing, especially during Lake Norman\'s storm season.',
   },
   {
     question: 'What roofing materials are best for Cornelius waterfront homes?',
-    answer:
+  answer:
       'For Lake Norman waterfront properties, we recommend impact-resistant Class 4 shingles or standing seam metal rated 130+ MPH. These materials handle wind exposure, resist hail damage, and often qualify for insurance discounts. Premium options include copper accents and natural slate for estates.',
   },
   {
     question: 'Do you offer financing for roof replacement in Cornelius?',
-    answer:
+  answer:
       'Yes, we offer flexible financing options for Cornelius homeowners. Qualified buyers can get same-as-cash financing or low monthly payments starting around $150/month. We also work with insurance companies for storm damage claims, which may cover full replacement costs.',
   },
   {
     question: 'Will my Cornelius HOA approve my new roof?',
-    answer:
+  answer:
       'We have extensive experience with Cornelius HOAs including The Peninsula, Antiquity, and other communities. We provide all documentation needed for architectural review boards, help you select HOA-approved colors and materials, and can attend board meetings if needed.',
   },
   {
     question: 'What warranties do you offer on roof replacements?',
-    answer:
+  answer:
       'We offer comprehensive warranties: our 10-year workmanship warranty, plus manufacturer warranties up to 50 years on materials. As GAF Master Elite certified, we can offer the Golden Pledge warranty - the best in the industry covering both materials and workmanship.',
   },
 ];
@@ -161,7 +161,6 @@ export default function RoofReplacementCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-cornelius-nc`}
         pageName="Roof Replacement Cornelius NC"

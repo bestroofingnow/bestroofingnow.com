@@ -22,7 +22,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -51,16 +51,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Repair Charlotte NC | Fast & Affordable',
-    description:
+  description:
       'Fast and affordable gutter repair in Charlotte NC. BBB A+ rated, veteran-owned. Gutter repair, cleaning, and replacement services. Free estimates.',
-    url: `${SITE_CONFIG.url}/gutter-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.gutters,
-        width: 1200,
-        height: 630,
-        alt: 'Gutter repair Charlotte NC - Best Roofing Now gutter services',
+  width: 1200,
+  height: 630,
+  alt: 'Gutter repair Charlotte NC - Best Roofing Now gutter services',
       },
     ],
   },
@@ -70,39 +70,39 @@ export const metadata: Metadata = {
 const gutterServices = [
   {
     icon: Wrench,
-    title: 'Gutter Repair',
-    description: 'Fix leaks, sagging, holes, and damaged sections quickly and affordably.',
-    href: '/services/gutters',
+  title: 'Gutter Repair',
+  description: 'Fix leaks, sagging, holes, and damaged sections quickly and affordably.',
+  href: '/services/gutters',
   },
   {
     icon: Droplets,
-    title: 'Gutter Cleaning',
-    description: 'Professional cleaning to remove debris and ensure proper water flow.',
-    href: '/services/gutters',
+  title: 'Gutter Cleaning',
+  description: 'Professional cleaning to remove debris and ensure proper water flow.',
+  href: '/services/gutters',
   },
   {
     icon: Settings,
-    title: 'Gutter Replacement',
-    description: 'Complete gutter system replacement with seamless aluminum options.',
-    href: '/services/gutters',
+  title: 'Gutter Replacement',
+  description: 'Complete gutter system replacement with seamless aluminum options.',
+  href: '/services/gutters',
   },
   {
     icon: Home,
-    title: 'Seamless Gutters',
-    description: 'Custom-fit seamless gutters manufactured on-site for your home.',
-    href: '/services/gutters',
+  title: 'Seamless Gutters',
+  description: 'Custom-fit seamless gutters manufactured on-site for your home.',
+  href: '/services/gutters',
   },
   {
     icon: Shield,
-    title: 'Gutter Guards',
-    description: 'Protective covers to prevent clogs and reduce maintenance needs.',
-    href: '/services/gutters',
+  title: 'Gutter Guards',
+  description: 'Protective covers to prevent clogs and reduce maintenance needs.',
+  href: '/services/gutters',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Repairs',
-    description: 'Fast response for storm damage and urgent gutter issues.',
-    href: '/services/gutters',
+  title: 'Emergency Repairs',
+  description: 'Fast response for storm damage and urgent gutter issues.',
+  href: '/services/gutters',
   },
 ];
 
@@ -110,27 +110,27 @@ const gutterServices = [
 const gutterProblems = [
   {
     problem: 'Leaking Gutters',
-    solution: 'Seal joints, repair holes, and replace damaged sections to stop leaks.',
+  solution: 'Seal joints, repair holes, and replace damaged sections to stop leaks.',
   },
   {
     problem: 'Sagging Gutters',
-    solution: 'Replace hangers, re-secure fascia boards, and restore proper slope.',
+  solution: 'Replace hangers, re-secure fascia boards, and restore proper slope.',
   },
   {
     problem: 'Clogged Gutters',
-    solution: 'Remove debris, flush downspouts, and install gutter guards.',
+  solution: 'Remove debris, flush downspouts, and install gutter guards.',
   },
   {
     problem: 'Overflowing Gutters',
-    solution: 'Improve drainage, add downspouts, and resize undersized gutters.',
+  solution: 'Improve drainage, add downspouts, and resize undersized gutters.',
   },
   {
     problem: 'Damaged Downspouts',
-    solution: 'Repair or replace downspouts and extensions for proper drainage.',
+  solution: 'Repair or replace downspouts and extensions for proper drainage.',
   },
   {
     problem: 'Fascia Damage',
-    solution: 'Repair water-damaged fascia boards before installing new gutters.',
+  solution: 'Repair water-damaged fascia boards before installing new gutters.',
   },
 ];
 
@@ -138,33 +138,33 @@ const gutterProblems = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'Fast Service',
-    description: 'Same-day and next-day appointments available for gutter repairs.',
+  title: 'Fast Service',
+  description: 'Same-day and next-day appointments available for gutter repairs.',
   },
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from satisfied Charlotte customers.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from satisfied Charlotte customers.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Military values of integrity and excellence in every job.',
+  title: 'Veteran-Owned',
+  description: 'Military values of integrity and excellence in every job.',
   },
   {
     icon: Users,
-    title: 'Experienced Team',
-    description: 'Skilled technicians with years of gutter repair experience.',
+  title: 'Experienced Team',
+  description: 'Skilled technicians with years of gutter repair experience.',
   },
   {
     icon: CheckCircle,
-    title: 'Fair Pricing',
-    description: 'Transparent, competitive pricing with no hidden fees.',
+  title: 'Fair Pricing',
+  description: 'Transparent, competitive pricing with no hidden fees.',
   },
 ];
 
@@ -212,42 +212,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does gutter repair cost in Charlotte NC?',
-    answer:
+  answer:
       'Gutter repair costs in Charlotte typically range from $100-$500 depending on the extent of damage. Simple fixes like resealing joints or replacing hangers are on the lower end, while replacing damaged sections or fixing fascia damage costs more. Full gutter replacement ranges from $1,000-$3,500 for most homes. We provide free estimates with transparent pricing.',
   },
   {
     question: 'What are signs I need gutter repair?',
-    answer:
+  answer:
       'Watch for these signs: water overflowing during rain, visible sagging or pulling away from the house, leaking or dripping at seams, peeling paint or water stains on fascia, pooling water near your foundation, rust spots or holes in metal gutters, and plants growing in gutters. If you notice any of these, schedule a free inspection.',
   },
   {
     question: 'How often should gutters be cleaned in Charlotte?',
-    answer:
+  answer:
       'In Charlotte, we recommend cleaning gutters at least twice a year - once in late fall after leaves drop and once in late spring. Homes with many trees nearby may need more frequent cleaning. Gutter guards can significantly reduce cleaning frequency. Regular cleaning prevents clogs that cause overflow and damage.',
   },
   {
     question: 'Can you repair gutters in the rain?',
-    answer:
+  answer:
       'While we can assess gutter problems in light rain, most repairs are best performed in dry conditions for proper sealing and safety. However, we can perform emergency temporary repairs during rain to prevent further damage, then return for permanent repairs when weather permits.',
   },
   {
     question: 'Should I repair or replace my gutters?',
-    answer:
+  answer:
       'Repair is usually best for isolated issues like small leaks, loose hangers, or minor sagging. Consider replacement if you have widespread damage, multiple problem areas, gutters over 20 years old, or if repair costs approach 50% of replacement cost. We\'ll give you honest advice on the most cost-effective solution.',
   },
   {
     question: 'What type of gutters do you recommend for Charlotte homes?',
-    answer:
+  answer:
       'We typically recommend 5-inch or 6-inch seamless aluminum gutters for Charlotte homes. Seamless gutters have fewer leak points than sectional gutters. For homes with heavy tree coverage or high rainfall areas, 6-inch gutters with larger downspouts provide better capacity. We also offer copper and steel options.',
   },
   {
     question: 'Do you offer gutter guards installation?',
-    answer:
+  answer:
       'Yes! We install several types of gutter guards to reduce debris buildup and maintenance needs. Options include mesh guards, reverse curve systems, and foam inserts. Gutter guards are especially valuable for Charlotte homes with nearby trees. We\'ll recommend the best option for your specific situation.',
   },
   {
     question: 'How quickly can you repair my gutters?',
-    answer:
+  answer:
       'We offer fast service for gutter repairs in Charlotte. Many repairs can be scheduled within 1-2 days, and we offer same-day service for emergencies like active leaking causing water damage. Most gutter repairs are completed in just a few hours once our team arrives.',
   },
 ];
@@ -262,7 +262,6 @@ export default function GutterRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

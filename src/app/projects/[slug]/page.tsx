@@ -121,31 +121,31 @@ export async function generateMetadata({
     `${serviceType} ${project.city}`,
     `roof project ${project.city} nc`,
     `roofing company ${project.city}`,
-    county ? `roofing ${county} county nc` : '',
+  county ? `roofing ${county} county nc` : '',
     `${productType.toLowerCase()} installation near me`,
     `best roofer ${project.city}`,
   ].filter(k => k);
 
   return {
     title,
-    description,
-    keywords,
-    alternates: {
+  description,
+  keywords,
+  alternates: {
       canonical: `${SITE_CONFIG.url}/projects/${projectSlug}`,
     },
-    openGraph: {
+  openGraph: {
       title,
-      description,
-      url: `${SITE_CONFIG.url}/projects/${projectSlug}`,
-      type: 'article',
-      images: project.photos[0]?.url
+  description,
+  url: `${SITE_CONFIG.url}/projects/${projectSlug}`,
+  type: 'article',
+  images: project.photos[0]?.url
         ? [{ url: project.photos[0].url, width: 1200, height: 630, alt: `${productType} project in ${cityState}` }]
         : undefined,
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title,
-      description,
+  title,
+  description,
     },
   };
 }
@@ -160,81 +160,81 @@ function getAreaContext(city: string, county?: string): { description: string; c
   const contexts: Record<string, { description: string; challenges: string[]; tip: string }> = {
     'Charlotte': {
       description: 'Charlotte homeowners face unique roofing challenges due to the city\'s humid subtropical climate. With 44 inches of annual rainfall, summer temperatures exceeding 90\u00B0F, and occasional severe storms, roofs in the Queen City need materials that can handle heat, moisture, and wind.',
-      challenges: ['Heavy summer thunderstorms with potential hail', 'High humidity causing algae and moss growth', 'UV degradation from intense summer sun', 'Wind damage from severe weather events'],
-      tip: 'We recommend algae-resistant, impact-rated shingles for Charlotte homes to combat the humid climate and storm exposure.',
+  challenges: ['Heavy summer thunderstorms with potential hail', 'High humidity causing algae and moss growth', 'UV degradation from intense summer sun', 'Wind damage from severe weather events'],
+  tip: 'We recommend algae-resistant, impact-rated shingles for Charlotte homes to combat the humid climate and storm exposure.',
     },
     'Huntersville': {
       description: 'Huntersville sits at the gateway to Lake Norman, where lake-effect weather patterns can intensify storms. The growing community features a mix of newer subdivisions and established neighborhoods, each with distinct roofing needs.',
-      challenges: ['Lake-effect weather amplifying storms', 'HOA architectural requirements for roofing materials', 'Newer construction with builder-grade materials needing upgrades', 'Tree coverage causing debris accumulation'],
-      tip: 'Many Huntersville HOAs require architectural shingles in specific color palettes. We work directly with your HOA to ensure compliance.',
+  challenges: ['Lake-effect weather amplifying storms', 'HOA architectural requirements for roofing materials', 'Newer construction with builder-grade materials needing upgrades', 'Tree coverage causing debris accumulation'],
+  tip: 'Many Huntersville HOAs require architectural shingles in specific color palettes. We work directly with your HOA to ensure compliance.',
     },
     'Cornelius': {
       description: 'Cornelius is a lakefront community on Lake Norman where waterfront and near-lake homes face increased weather exposure. The town\'s mix of luxury lakefront properties and family neighborhoods requires versatile roofing solutions.',
-      challenges: ['Increased wind exposure near Lake Norman', 'Salt and moisture from lake proximity', 'Higher-end homes requiring premium materials', 'Steep roof pitches common in lakefront designs'],
-      tip: 'Lakefront homes in Cornelius benefit from wind-rated shingles (130+ MPH) and enhanced ventilation to combat lake moisture.',
+  challenges: ['Increased wind exposure near Lake Norman', 'Salt and moisture from lake proximity', 'Higher-end homes requiring premium materials', 'Steep roof pitches common in lakefront designs'],
+  tip: 'Lakefront homes in Cornelius benefit from wind-rated shingles (130+ MPH) and enhanced ventilation to combat lake moisture.',
     },
     'Mooresville': {
       description: 'Known as Race City USA, Mooresville combines small-town charm with rapid growth. The area\'s mix of historic downtown homes and modern Lake Norman estates creates diverse roofing demands.',
-      challenges: ['Wide range of home ages and styles', 'Lake Norman weather exposure for waterfront properties', 'Rapid growth means many homes hitting first roof replacement age', 'Varying soil conditions affecting foundation and roof stress'],
-      tip: 'Mooresville homes built in the 2000s boom are now reaching the 20-year mark\u2014the ideal time for a proactive roof inspection before leaks start.',
+  challenges: ['Wide range of home ages and styles', 'Lake Norman weather exposure for waterfront properties', 'Rapid growth means many homes hitting first roof replacement age', 'Varying soil conditions affecting foundation and roof stress'],
+  tip: 'Mooresville homes built in the 2000s boom are now reaching the 20-year mark\u2014the ideal time for a proactive roof inspection before leaks start.',
     },
     'Concord': {
       description: 'Concord, the seat of Cabarrus County, features growing residential neighborhoods alongside commercial corridors. The area sees its share of severe weather rolling through the Piedmont.',
-      challenges: ['Cabarrus County storm corridor exposure', 'Mix of residential and commercial roofing needs', 'Older neighborhoods with aging roof systems', 'Summer heat stress on roofing materials'],
-      tip: 'Concord homeowners should consider impact-resistant shingles that may qualify for insurance discounts in the storm-prone Cabarrus County area.',
+  challenges: ['Cabarrus County storm corridor exposure', 'Mix of residential and commercial roofing needs', 'Older neighborhoods with aging roof systems', 'Summer heat stress on roofing materials'],
+  tip: 'Concord homeowners should consider impact-resistant shingles that may qualify for insurance discounts in the storm-prone Cabarrus County area.',
     },
     'Davidson': {
       description: 'Davidson is an upscale college town on Lake Norman with strict architectural standards. The historic downtown and newer lakefront developments both require careful attention to roofing aesthetics and performance.',
-      challenges: ['Strict town architectural review requirements', 'Historic district preservation standards', 'Lake Norman weather exposure', 'Premium homes requiring high-end materials'],
-      tip: 'Davidson\'s architectural review board may require specific materials and colors. We handle the approval process to streamline your project.',
+  challenges: ['Strict town architectural review requirements', 'Historic district preservation standards', 'Lake Norman weather exposure', 'Premium homes requiring high-end materials'],
+  tip: 'Davidson\'s architectural review board may require specific materials and colors. We handle the approval process to streamline your project.',
     },
     'Denver': {
       description: 'Denver sits on the western shore of Lake Norman in Lincoln County. The community features many lakefront and lake-access homes that face direct weather exposure from the lake.',
-      challenges: ['Direct Lake Norman weather exposure on the western shore', 'Rural area with tall trees creating debris risk', 'Lincoln County storm patterns', 'Mix of waterfront and inland roofing needs'],
-      tip: 'Denver\'s western exposure to Lake Norman means homes here get the brunt of storm systems moving east. Enhanced wind protection is essential.',
+  challenges: ['Direct Lake Norman weather exposure on the western shore', 'Rural area with tall trees creating debris risk', 'Lincoln County storm patterns', 'Mix of waterfront and inland roofing needs'],
+  tip: 'Denver\'s western exposure to Lake Norman means homes here get the brunt of storm systems moving east. Enhanced wind protection is essential.',
     },
     'Matthews': {
       description: 'Matthews is a charming suburb southeast of Charlotte with tree-lined neighborhoods and a vibrant downtown. The mature tree canopy, while beautiful, creates specific roofing maintenance needs.',
-      challenges: ['Heavy tree canopy dropping leaves and debris', 'Older neighborhoods with original roofs nearing end of life', 'Shade-induced moss and algae growth', 'Storm debris from mature trees'],
-      tip: 'Matthews\' beautiful tree canopy means regular gutter cleaning and moss-resistant shingles are important for roof longevity.',
+  challenges: ['Heavy tree canopy dropping leaves and debris', 'Older neighborhoods with original roofs nearing end of life', 'Shade-induced moss and algae growth', 'Storm debris from mature trees'],
+  tip: 'Matthews\' beautiful tree canopy means regular gutter cleaning and moss-resistant shingles are important for roof longevity.',
     },
     'Mint Hill': {
       description: 'Mint Hill maintains a semi-rural character on Charlotte\'s eastern edge with larger lots and established neighborhoods. Many homes feature older roofing systems that benefit from modern material upgrades.',
-      challenges: ['Larger roof areas on spacious lots', 'Mature trees and rural debris exposure', 'Older homes needing comprehensive roof replacement', 'Limited contractor availability in outer suburbs'],
-      tip: 'Mint Hill\'s larger homes often mean bigger roof areas. We provide detailed measurements using satellite imaging for accurate estimates.',
+  challenges: ['Larger roof areas on spacious lots', 'Mature trees and rural debris exposure', 'Older homes needing comprehensive roof replacement', 'Limited contractor availability in outer suburbs'],
+  tip: 'Mint Hill\'s larger homes often mean bigger roof areas. We provide detailed measurements using satellite imaging for accurate estimates.',
     },
     'Monroe': {
       description: 'Monroe is the seat of Union County, a growing area south of Charlotte. The mix of historic homes near the courthouse and newer developments creates varied roofing needs across the community.',
-      challenges: ['Union County storm corridor', 'Historic homes requiring careful restoration', 'Fast-growing subdivisions with builder-grade materials', 'Distance from Charlotte means fewer contractor options'],
-      tip: 'Monroe homeowners in newer subdivisions should have their builder-grade roofs inspected around the 10-year mark for early signs of wear.',
+  challenges: ['Union County storm corridor', 'Historic homes requiring careful restoration', 'Fast-growing subdivisions with builder-grade materials', 'Distance from Charlotte means fewer contractor options'],
+  tip: 'Monroe homeowners in newer subdivisions should have their builder-grade roofs inspected around the 10-year mark for early signs of wear.',
     },
     'Rock Hill': {
       description: 'Rock Hill is a growing city just across the South Carolina border in York County. The area\'s lower cost of living attracts Charlotte commuters, and its roofing market benefits from our cross-state service area.',
-      challenges: ['South Carolina building codes differ from NC', 'Southern exposure increasing UV damage', 'Growing community with diverse housing stock', 'Cross-border insurance considerations'],
-      tip: 'We\'re licensed in both NC and SC, so Rock Hill homeowners get the same quality service and warranty protection as our Charlotte customers.',
+  challenges: ['South Carolina building codes differ from NC', 'Southern exposure increasing UV damage', 'Growing community with diverse housing stock', 'Cross-border insurance considerations'],
+  tip: 'We\'re licensed in both NC and SC, so Rock Hill homeowners get the same quality service and warranty protection as our Charlotte customers.',
     },
     'Fort Mill': {
       description: 'Fort Mill is one of the fastest-growing communities in the Charlotte metro, with numerous new subdivisions. Many homes are reaching the age where their original builder-grade roofs need attention.',
-      challenges: ['Builder-grade materials reaching end of warranty', 'HOA requirements in planned communities', 'South Carolina code compliance', 'Rapid growth straining local contractor availability'],
-      tip: 'Fort Mill homes built during the 2005-2015 boom are now due for their first roof assessment. Early inspection can prevent costly damage.',
+  challenges: ['Builder-grade materials reaching end of warranty', 'HOA requirements in planned communities', 'South Carolina code compliance', 'Rapid growth straining local contractor availability'],
+  tip: 'Fort Mill homes built during the 2005-2015 boom are now due for their first roof assessment. Early inspection can prevent costly damage.',
     },
     'Gastonia': {
       description: 'Gastonia is the seat of Gaston County, west of Charlotte. The city features a wide range of home styles from historic mill houses to modern developments, each with unique roofing requirements.',
-      challenges: ['Gaston County storm exposure from western weather systems', 'Historic mill homes requiring specialized roofing', 'Wide range of home ages and conditions', 'Cost-conscious market requiring value-focused solutions'],
-      tip: 'Gastonia\'s position west of Charlotte means storm systems hit here first. We recommend proactive inspections after every major storm event.',
+  challenges: ['Gaston County storm exposure from western weather systems', 'Historic mill homes requiring specialized roofing', 'Wide range of home ages and conditions', 'Cost-conscious market requiring value-focused solutions'],
+  tip: 'Gastonia\'s position west of Charlotte means storm systems hit here first. We recommend proactive inspections after every major storm event.',
     },
     'Kannapolis': {
       description: 'Kannapolis is a revitalized city in Cabarrus County, home to the minor league stadium district and growing residential areas. The mix of renovated historic homes and new construction creates diverse roofing opportunities.',
-      challenges: ['Cabarrus County severe weather exposure', 'Mix of renovated historic and new construction', 'Downtown revitalization affecting roofing standards', 'Industrial heritage homes with unique roof structures'],
-      tip: 'Kannapolis\' revitalization means many renovated homes need roofing that matches both historic character and modern performance standards.',
+  challenges: ['Cabarrus County severe weather exposure', 'Mix of renovated historic and new construction', 'Downtown revitalization affecting roofing standards', 'Industrial heritage homes with unique roof structures'],
+  tip: 'Kannapolis\' revitalization means many renovated homes need roofing that matches both historic character and modern performance standards.',
     },
   };
 
   // Default for cities not in the map
   const defaultContext = {
     description: `${city} homeowners in the greater Charlotte metro area face the challenges of North Carolina's humid subtropical climate. With significant annual rainfall, summer heat, and seasonal storms, choosing the right roofing materials and contractor is essential for long-term home protection.`,
-    challenges: ['Seasonal severe weather and storm exposure', 'High humidity promoting algae and moisture issues', 'Temperature extremes affecting material longevity', 'Wind and hail risk during storm season'],
-    tip: `As a locally-owned roofing company serving ${city} and the greater Charlotte area, we understand the specific weather patterns and building requirements in your community.`,
+  challenges: ['Seasonal severe weather and storm exposure', 'High humidity promoting algae and moisture issues', 'Temperature extremes affecting material longevity', 'Wind and hail risk during storm season'],
+  tip: `As a locally-owned roofing company serving ${city} and the greater Charlotte area, we understand the specific weather patterns and building requirements in your community.`,
   };
 
   return contexts[city] || defaultContext;
@@ -271,30 +271,30 @@ export default async function ProjectDetailPage({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ImageGallery',
-    name: `${project.product || 'Roofing'} Project in ${project.city}, ${project.state}`,
-    description: `Professional ${project.product || 'roofing'} project completed in ${project.city}, ${project.state}${county ? ` (${county} County)` : ''}`,
-    image: project.photos.map(p => p.url),
-    numberOfItems: project.photos.length,
-    datePublished: project.completedDate,
-    url: `${SITE_CONFIG.url}/projects/${projectSlug}`,
-    author: getRoofingContractorIdentity(),
-    contentLocation: {
+  name: `${project.product || 'Roofing'} Project in ${project.city}, ${project.state}`,
+  description: `Professional ${project.product || 'roofing'} project completed in ${project.city}, ${project.state}${county ? ` (${county} County)` : ''}`,
+  image: project.photos.map(p => p.url),
+  numberOfItems: project.photos.length,
+  datePublished: project.completedDate,
+  url: `${SITE_CONFIG.url}/projects/${projectSlug}`,
+  author: getRoofingContractorIdentity(),
+  contentLocation: {
       '@type': 'Place',
-      name: `${project.city}, ${project.state}`,
-      address: {
+  name: `${project.city}, ${project.state}`,
+  address: {
         '@type': 'PostalAddress',
-        addressLocality: project.city,
-        addressRegion: project.state,
+  addressLocality: project.city,
+  addressRegion: project.state,
         ...(project.zip ? { postalCode: project.zip } : {}),
         ...(county ? { addressCounty: county } : {}),
-        addressCountry: 'US',
+  addressCountry: 'US',
       },
       ...(project.latitude && project.longitude
         ? {
             geo: {
               '@type': 'GeoCoordinates',
-              latitude: project.latitude,
-              longitude: project.longitude,
+  latitude: project.latitude,
+  longitude: project.longitude,
             },
           }
         : {}),
@@ -305,33 +305,33 @@ export default async function ProjectDetailPage({
   const serviceJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: `${project.serviceType || project.product || 'Roofing'} in ${project.city}, ${project.state}`,
-    description: `Professional ${project.product || 'roofing'} completed in ${project.city}, ${project.state}. View ${project.photos.length} verified project photos.`,
-    provider: {
+  name: `${project.serviceType || project.product || 'Roofing'} in ${project.city}, ${project.state}`,
+  description: `Professional ${project.product || 'roofing'} completed in ${project.city}, ${project.state}. View ${project.photos.length} verified project photos.`,
+  provider: {
       ...getRoofingContractorIdentity(),
-      areaServed: {
+  areaServed: {
         '@type': 'City',
-        name: project.city,
-        containedInPlace: {
+  name: project.city,
+  containedInPlace: {
           '@type': 'State',
-          name: project.state === 'NC' ? 'North Carolina' : 'South Carolina',
+  name: project.state === 'NC' ? 'North Carolina' : 'South Carolina',
         },
       },
     },
-    areaServed: {
+  areaServed: {
       '@type': 'City',
-      name: project.city,
+  name: project.city,
     },
     ...(project.latitude && project.longitude
       ? {
           serviceArea: {
             '@type': 'GeoCircle',
-            geoMidpoint: {
+  geoMidpoint: {
               '@type': 'GeoCoordinates',
-              latitude: project.latitude,
-              longitude: project.longitude,
+  latitude: project.latitude,
+  longitude: project.longitude,
             },
-            geoRadius: '50',
+  geoRadius: '50',
           },
         }
       : {}),
@@ -344,13 +344,13 @@ export default async function ProjectDetailPage({
       <ProjectSchema
         project={{
           slug: projectSlug,
-          city: project.city,
-          state: project.state,
-          lat: project.latitude,
-          lng: project.longitude,
-          product: project.product,
-          completedDate: project.completedDate,
-          photos: project.photos.map(p => ({ url: p.url, caption: p.caption })),
+  city: project.city,
+  state: project.state,
+  lat: project.latitude,
+  lng: project.longitude,
+  product: project.product,
+  completedDate: project.completedDate,
+  photos: project.photos.map(p => ({ url: p.url, caption: p.caption })),
         }}
       />
       <PlaceSchema

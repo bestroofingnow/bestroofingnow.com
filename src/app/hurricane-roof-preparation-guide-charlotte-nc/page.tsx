@@ -51,37 +51,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Hurricane Roof Preparation Guide | Charlotte NC',
-    description:
+  description:
       'Complete hurricane preparation guide for Charlotte homeowners. Protect your roof before storm season arrives.',
-    url: `${SITE_CONFIG.url}/hurricane-roof-preparation-guide-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/hurricane-roof-preparation-guide-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const hurricaneFAQs = [
   {
     question: 'When should I prepare my roof for hurricane season in Charlotte?',
-    answer:
+  answer:
       'Start roof preparation in April or May, before the June 1 hurricane season start date. This gives time to schedule inspections, make repairs, and avoid the rush when storms are forecasted. By August-September (peak season), roofers are often booked solid with emergency repairs.',
   },
   {
     question: 'How do I know if my roof can withstand a hurricane?',
-    answer:
+  answer:
       'Schedule a professional inspection. Key factors include: roof age (under 15 years is better), shingle condition (no lifting or missing tabs), flashing integrity, and proper installation of roof-to-wall connections. Homes built after 2005 in NC meet stricter wind codes.',
   },
   {
     question: 'What wind speed can a typical Charlotte roof handle?',
-    answer:
+  answer:
       'Standard architectural shingles are rated for 110-130 mph winds when properly installed. However, poor installation, age, and pre-existing damage significantly reduce wind resistance. Roofs over 15 years old or with visible issues may fail at much lower wind speeds.',
   },
   {
     question: 'Should I have my roof inspected before hurricane season?',
-    answer:
+  answer:
       'Yes. Pre-season inspections identify weak points that could fail during storms. Issues like loose shingles, compromised flashing, and damaged seals are easily fixed before a storm but become major failures during one. Inspection cost ($100-300) is minor compared to storm damage.',
   },
   {
     question: 'Will my insurance cover hurricane roof damage in Charlotte?',
-    answer:
+  answer:
       'Yes, standard homeowners insurance covers hurricane damage in Charlotte. Note: Many NC policies have separate hurricane/wind deductibles (often 1-5% of dwelling coverage) that are higher than standard deductibles. Review your policy before storm season.',
   },
 ];
@@ -89,58 +89,58 @@ const hurricaneFAQs = [
 const preSeasonChecklist = [
   {
     task: 'Professional Roof Inspection',
-    description: 'Have a licensed roofer inspect for loose shingles, damaged flashing, and weak points.',
-    priority: 'Essential',
-    timing: 'April-May',
+  description: 'Have a licensed roofer inspect for loose shingles, damaged flashing, and weak points.',
+  priority: 'Essential',
+  timing: 'April-May',
   },
   {
     task: 'Clean Gutters and Downspouts',
-    description: 'Clear debris to ensure proper water drainage. Clogged gutters cause water backup damage.',
-    priority: 'Essential',
-    timing: 'May',
+  description: 'Clear debris to ensure proper water drainage. Clogged gutters cause water backup damage.',
+  priority: 'Essential',
+  timing: 'May',
   },
   {
     task: 'Trim Overhanging Branches',
-    description: 'Cut branches within 10 feet of your roof. Dead branches should be completely removed.',
-    priority: 'Essential',
-    timing: 'April-May',
+  description: 'Cut branches within 10 feet of your roof. Dead branches should be completely removed.',
+  priority: 'Essential',
+  timing: 'April-May',
   },
   {
     task: 'Check and Seal Roof Penetrations',
-    description: 'Inspect seals around vents, pipes, skylights, and chimney flashings. Reseal if cracked.',
-    priority: 'High',
-    timing: 'May',
+  description: 'Inspect seals around vents, pipes, skylights, and chimney flashings. Reseal if cracked.',
+  priority: 'High',
+  timing: 'May',
   },
   {
     task: 'Secure Loose Shingles',
-    description: 'Nail down any lifted or loose shingles. Replace missing shingles immediately.',
-    priority: 'High',
-    timing: 'Ongoing',
+  description: 'Nail down any lifted or loose shingles. Replace missing shingles immediately.',
+  priority: 'High',
+  timing: 'Ongoing',
   },
   {
     task: 'Review Insurance Policy',
-    description: 'Understand your hurricane deductible and coverage limits. Document home condition.',
-    priority: 'Essential',
-    timing: 'May',
+  description: 'Understand your hurricane deductible and coverage limits. Document home condition.',
+  priority: 'Essential',
+  timing: 'May',
   },
   {
     task: 'Photograph Your Roof',
-    description: 'Take dated photos of your roof condition. Useful for insurance claims if damage occurs.',
-    priority: 'High',
-    timing: 'May-June',
+  description: 'Take dated photos of your roof condition. Useful for insurance claims if damage occurs.',
+  priority: 'High',
+  timing: 'May-June',
   },
   {
     task: 'Stock Emergency Supplies',
-    description: 'Have tarps, plywood, nails, and basic tools ready for emergency temporary repairs.',
-    priority: 'Medium',
-    timing: 'June',
+  description: 'Have tarps, plywood, nails, and basic tools ready for emergency temporary repairs.',
+  priority: 'Medium',
+  timing: 'June',
   },
 ];
 
 const stormApproaching = [
   {
     timing: '72 Hours Before',
-    tasks: [
+  tasks: [
       'Monitor storm track and intensity forecasts',
       'Review evacuation routes if in evacuation zone',
       'Ensure you have tarps and emergency materials',
@@ -149,7 +149,7 @@ const stormApproaching = [
   },
   {
     timing: '48 Hours Before',
-    tasks: [
+  tasks: [
       'Secure or bring in outdoor furniture and decorations',
       'Clear yard of potential projectiles (branches, toys, tools)',
       'Check that attic vents are secure',
@@ -158,7 +158,7 @@ const stormApproaching = [
   },
   {
     timing: '24 Hours Before',
-    tasks: [
+  tasks: [
       'Close all windows and exterior doors',
       'If you have storm shutters, install them now',
       'Move vehicles into garage if possible',
@@ -167,7 +167,7 @@ const stormApproaching = [
   },
   {
     timing: 'During the Storm',
-    tasks: [
+  tasks: [
       'Stay away from windows and exterior walls',
       'Do NOT go outside during calm (eye) periods',
       'Listen to emergency alerts on battery-powered radio',
@@ -179,83 +179,83 @@ const stormApproaching = [
 const afterStormSteps = [
   {
     step: 1,
-    title: 'Wait for All-Clear',
-    description:
+  title: 'Wait for All-Clear',
+  description:
       'Don\'t go outside until authorities confirm the storm has passed. Secondary storms and downed power lines are dangerous.',
-    icon: Clock,
+  icon: Clock,
   },
   {
     step: 2,
-    title: 'Check for Injuries First',
-    description:
+  title: 'Check for Injuries First',
+  description:
       'Ensure all family members are safe. Call 911 for any injuries. Don\'t use phones for non-emergencies.',
-    icon: Shield,
+  icon: Shield,
   },
   {
     step: 3,
-    title: 'Assess Damage Safely',
-    description:
+  title: 'Assess Damage Safely',
+  description:
       'Look for obvious roof damage from ground level only. Don\'t climb on the roof. Watch for downed power lines.',
-    icon: Home,
+  icon: Home,
   },
   {
     step: 4,
-    title: 'Document Everything',
-    description:
+  title: 'Document Everything',
+  description:
       'Photograph all damage before cleanup. Take wide shots and close-ups. This is critical for insurance claims.',
-    icon: FileText,
+  icon: FileText,
   },
   {
     step: 5,
-    title: 'Prevent Further Damage',
-    description:
+  title: 'Prevent Further Damage',
+  description:
       'If safe, tarp any openings to prevent water damage. Insurance requires you to mitigate additional damage.',
-    icon: Droplets,
+  icon: Droplets,
   },
   {
     step: 6,
-    title: 'Contact Insurance',
-    description:
+  title: 'Contact Insurance',
+  description:
       'Report the claim as soon as possible. Be prepared for delays after major storms. Get a claim number.',
-    icon: FileText,
+  icon: FileText,
   },
 ];
 
 const roofReinforcements = [
   {
     name: 'Roof-to-Wall Connections',
-    description:
+  description:
       'Hurricane straps or clips connect your roof structure to wall framing. Essential for high-wind areas.',
-    effectiveness: 'High',
-    cost: '$1,000-$3,000',
+  effectiveness: 'High',
+  cost: '$1,000-$3,000',
   },
   {
     name: 'Impact-Resistant Shingles',
-    description:
+  description:
       'Class 3 or 4 impact-rated shingles resist wind and hail better than standard shingles. May qualify for insurance discounts.',
-    effectiveness: 'High',
-    cost: '$8,000-$15,000 (full roof)',
+  effectiveness: 'High',
+  cost: '$8,000-$15,000 (full roof)',
   },
   {
     name: 'Sealed Roof Deck',
-    description:
+  description:
       'Self-adhering underlayment creates a secondary water barrier if shingles blow off.',
-    effectiveness: 'High',
-    cost: '$500-$1,500',
+  effectiveness: 'High',
+  cost: '$500-$1,500',
   },
   {
     name: 'Gable End Bracing',
-    description:
+  description:
       'Braces reinforce gable walls which are vulnerable to wind pressure. Common failure point.',
-    effectiveness: 'Medium',
-    cost: '$500-$1,500',
+  effectiveness: 'Medium',
+  cost: '$500-$1,500',
   },
   {
     name: 'Soffit Reinforcement',
-    description:
+  description:
       'Strengthened soffits prevent wind from entering attic and lifting roof from inside.',
-    effectiveness: 'Medium',
-    cost: '$300-$800',
+  effectiveness: 'Medium',
+  cost: '$300-$800',
   },
 ];
 
@@ -287,7 +287,7 @@ export default function HurricaneRoofPreparationGuidePage() {
       <FAQSchema
         faqs={hurricaneFAQs.map((faq) => ({
           question: faq.question,
-          answer: faq.answer,
+  answer: faq.answer,
         }))}
       />
       <WebPageSchema
@@ -298,10 +298,10 @@ export default function HurricaneRoofPreparationGuidePage() {
       <ArticleSchema
         post={{
           title: 'Hurricane Roof Preparation Guide for Charlotte NC Homeowners',
-          description: 'Protect your Charlotte home from hurricane damage. Pre-season preparation, storm response, and post-storm recovery guide.',
-          slug: 'hurricane-roof-preparation-guide-charlotte-nc',
-          datePublished: '2025-02-01',
-          dateModified: '2025-02-01',
+  description: 'Protect your Charlotte home from hurricane damage. Pre-season preparation, storm response, and post-storm recovery guide.',
+  slug: 'hurricane-roof-preparation-guide-charlotte-nc',
+  datePublished: '2025-02-01',
+  dateModified: '2025-02-01',
         }}
       />
 

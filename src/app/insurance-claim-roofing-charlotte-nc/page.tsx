@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -33,31 +33,35 @@ export const metadata: Metadata = {
     'Expert insurance claim roofing in Charlotte NC. We handle your roof insurance claim from start to finish - free inspections, adjuster meetings, documentation, and repairs. BBB A+ rated.',
   keywords: [
     'insurance claim roofing Charlotte NC',
-    'roof insurance claim Charlotte',
+    'roof insurance claim Charlotte NC',
     'storm damage roof insurance Charlotte',
     'roofing insurance claims Charlotte NC',
-    'insurance roofing contractor Charlotte',
     'roof claim help Charlotte NC',
     'hail damage claim roofing Charlotte',
-    'wind damage roof insurance Charlotte',
-    'insurance roof replacement Charlotte',
+    'does insurance cover roof replacement Charlotte NC',
+    'how to file roof insurance claim Charlotte NC',
+    'insurance roof replacement Charlotte NC',
     'roofing company that works with insurance Charlotte',
+    'roof insurance claim Lake Norman NC',
+    'roof insurance claim Lake Wylie SC',
+    'roof insurance claim Fort Mill SC',
+    'storm damage insurance claim Charlotte NC',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`,
   },
   openGraph: {
     title: 'Insurance Claim Roofing Charlotte NC | Storm Damage Experts',
-    description:
+  description:
       'Expert insurance claim assistance for Charlotte homeowners. We work directly with your insurance company to get your roof repaired or replaced. Free inspections and documentation.',
-    url: `${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero18,
-        width: 1200,
-        height: 630,
-        alt: 'Insurance claim roofing Charlotte NC - Best Roofing Now storm damage experts',
+  width: 1200,
+  height: 630,
+  alt: 'Insurance claim roofing Charlotte NC - Best Roofing Now storm damage experts',
       },
     ],
   },
@@ -67,39 +71,39 @@ export const metadata: Metadata = {
 const claimProcess = [
   {
     icon: Phone,
-    step: '1',
-    title: 'Free Storm Damage Inspection',
-    description: 'We thoroughly inspect your roof for hail, wind, or storm damage and document everything with photos and detailed notes.',
+  step: '1',
+  title: 'Free Storm Damage Inspection',
+  description: 'We thoroughly inspect your roof for hail, wind, or storm damage and document everything with photos and detailed notes.',
   },
   {
     icon: FileText,
-    step: '2',
-    title: 'Comprehensive Documentation',
-    description: 'We prepare a detailed damage report with measurements, photos, and material specifications that insurance adjusters need.',
+  step: '2',
+  title: 'Comprehensive Documentation',
+  description: 'We prepare a detailed damage report with measurements, photos, and material specifications that insurance adjusters need.',
   },
   {
     icon: HandshakeIcon,
-    step: '3',
-    title: 'Meet with Your Adjuster',
-    description: 'We schedule and attend the insurance adjuster meeting at your property to ensure all damage is properly identified.',
+  step: '3',
+  title: 'Meet with Your Adjuster',
+  description: 'We schedule and attend the insurance adjuster meeting at your property to ensure all damage is properly identified.',
   },
   {
     icon: ClipboardCheck,
-    step: '4',
-    title: 'Review & Supplement',
-    description: 'We review your claim approval, identify any missed items, and file supplements if the settlement is insufficient.',
+  step: '4',
+  title: 'Review & Supplement',
+  description: 'We review your claim approval, identify any missed items, and file supplements if the settlement is insufficient.',
   },
   {
     icon: Camera,
-    step: '5',
-    title: 'Quality Repairs or Replacement',
-    description: 'Once approved, our certified team completes your roof repair or replacement using premium materials.',
+  step: '5',
+  title: 'Quality Repairs or Replacement',
+  description: 'Once approved, our certified team completes your roof repair or replacement using premium materials.',
   },
   {
     icon: Shield,
-    step: '6',
-    title: 'Final Documentation',
-    description: 'We provide all completion documentation, warranty information, and help you close out your claim properly.',
+  step: '6',
+  title: 'Final Documentation',
+  description: 'We provide all completion documentation, warranty information, and help you close out your claim properly.',
   },
 ];
 
@@ -107,33 +111,33 @@ const claimProcess = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating for honest, ethical business practices.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating for honest, ethical business practices.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Charlotte homeowners we've helped with claims.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Charlotte homeowners we've helped with claims.`,
   },
   {
     icon: Shield,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance for your protection.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance for your protection.',
   },
   {
     icon: Users,
-    title: 'Insurance Experts',
-    description: 'Years of experience working with all major insurance companies on Charlotte roof claims.',
+  title: 'Insurance Experts',
+  description: 'Years of experience working with all major insurance companies on Charlotte roof claims.',
   },
   {
     icon: CheckCircle,
-    title: 'No Upfront Costs',
-    description: 'We handle insurance work with no money out of pocket - you only pay your deductible.',
+  title: 'No Upfront Costs',
+  description: 'We handle insurance work with no money out of pocket - you only pay your deductible.',
   },
   {
     icon: Clock,
-    title: 'Fast Response',
-    description: 'Quick inspections and documentation to get your claim filed and processed promptly.',
+  title: 'Fast Response',
+  description: 'Quick inspections and documentation to get your claim filed and processed promptly.',
   },
 ];
 
@@ -157,42 +161,42 @@ const insuranceCompanies = [
 const faqs = [
   {
     question: 'How do I know if I should file a roof insurance claim?',
-    answer:
+  answer:
       'If your area has experienced a significant storm with hail, high winds, or heavy debris, you may have damage worth claiming. Signs include missing or damaged shingles, dents in gutters or vents, granules in gutters, and visible impact marks. Best Roofing Now offers free storm damage inspections to help you determine if you have a valid claim before you file.',
   },
   {
     question: 'Will filing a roof claim raise my insurance rates?',
-    answer:
+  answer:
       'Weather-related claims for storm damage typically don\'t raise your rates the same way at-fault claims might. Many Charlotte homeowners have storm damage without realizing it. We recommend getting a free inspection to understand your options - there\'s no obligation and no pressure.',
   },
   {
     question: 'What does Best Roofing Now do during the insurance adjuster meeting?',
-    answer:
+  answer:
       'We walk the roof with your adjuster, point out all documented damage, explain the scope of repairs needed, and ensure nothing is overlooked. Our presence helps ensure you receive a fair settlement. We know what adjusters look for and speak their language.',
   },
   {
     question: 'What if my insurance claim is denied or underpaid?',
-    answer:
+  answer:
       'We help with denied or underpaid claims regularly. We can file supplements with additional documentation, request re-inspections, and help you understand your policy. Our goal is to get you the settlement you deserve for the damage you have.',
   },
   {
     question: 'How long does the insurance claim roofing process take?',
-    answer:
+  answer:
       'The typical timeline is 2-4 weeks from inspection to claim approval. After approval, we can usually complete your roof within 1-3 days depending on the scope. We work efficiently while ensuring quality, and we keep you informed throughout the entire process.',
   },
   {
     question: 'Do I have to pay anything upfront for insurance roof work?',
-    answer:
+  answer:
       'No. For insurance claims, we work directly with your insurance company. You only pay your deductible once the work is complete. We handle all the paperwork, coordination, and communication with your insurer.',
   },
   {
     question: 'What types of storm damage does homeowner\'s insurance typically cover?',
-    answer:
+  answer:
       'Most Charlotte homeowner\'s policies cover hail damage, wind damage, damage from fallen trees or debris, and water damage from storm-related roof breaches. We help you understand your specific coverage and document all qualifying damage.',
   },
   {
     question: 'Can I choose my own roofing contractor for an insurance claim?',
-    answer:
+  answer:
       'Absolutely. You have the right to choose any licensed contractor for your insurance repairs. Insurance companies cannot force you to use a preferred vendor. Best Roofing Now works with all insurance companies and advocates for fair settlements on your behalf.',
   },
 ];
@@ -207,7 +211,6 @@ export default function InsuranceClaimRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

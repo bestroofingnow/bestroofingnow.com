@@ -47,37 +47,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Church Roof Replacement Guide | Charlotte NC Congregations',
-    description:
+  description:
       'Complete guide to church roofing in Charlotte. Financing, scheduling around services, and protecting your sacred space.',
-    url: `${SITE_CONFIG.url}/church-roof-replacement-guide-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/church-roof-replacement-guide-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const churchFAQs = [
   {
     question: 'How much does church roof replacement cost in Charlotte?',
-    answer:
+  answer:
       'Church roof replacement in Charlotte typically costs $10-$25 per square foot depending on roof type, complexity, and materials. For a 10,000 sq ft church roof, expect $100,000-$250,000. Steeples and complex architectural features add cost. We offer financing options specifically for nonprofit organizations.',
   },
   {
     question: 'Can you work around our church service schedule?',
-    answer:
+  answer:
       'Absolutely. We understand that Sunday services, Wednesday gatherings, and special events are non-negotiable. We schedule major work around your services and can even pause work for funerals, weddings, and other events. We\'ll create a timeline that respects your congregation\'s needs.',
   },
   {
     question: 'Do you offer financing for churches and nonprofits?',
-    answer:
+  answer:
       'Yes. We work with lenders who specialize in nonprofit and religious organization financing. Options include traditional loans, capital campaign support, phased payment plans, and 0% introductory rates. We also help churches document work for grant applications.',
   },
   {
     question: 'Can you preserve our historic church\'s architectural character?',
-    answer:
+  answer:
       'Yes. We have experience with historic preservation requirements and can source period-appropriate materials. For churches on the National Register or in historic districts, we understand the approval process and work with preservation commissions. We can match slate, copper, and other traditional materials.',
   },
   {
     question: 'How do you handle the unique challenges of church roofs?',
-    answer:
+  answer:
       'Church roofs often have steeples, multiple roof lines, valleys, and complex architecture. We use specialized equipment for steep steeples, understand the structural considerations of vaulted ceilings, and have experience with the various roof types found on religious buildings (slate, tile, metal, shingle).',
   },
 ];
@@ -85,98 +85,98 @@ const churchFAQs = [
 const uniqueChallenges = [
   {
     challenge: 'Steeples & Bell Towers',
-    solution: 'Specialized equipment and experienced crews for high, steep work. Proper fall protection and crane access when needed.',
+  solution: 'Specialized equipment and experienced crews for high, steep work. Proper fall protection and crane access when needed.',
   },
   {
     challenge: 'Multiple Roof Sections',
-    solution: 'Systematic approach addressing each section while maintaining water-tight integrity throughout the project.',
+  solution: 'Systematic approach addressing each section while maintaining water-tight integrity throughout the project.',
   },
   {
     challenge: 'Historic Materials',
-    solution: 'Access to period-appropriate slate, copper, and tile. Understanding of historic preservation requirements.',
+  solution: 'Access to period-appropriate slate, copper, and tile. Understanding of historic preservation requirements.',
   },
   {
     challenge: 'Budget Constraints',
-    solution: 'Flexible financing, phased replacement options, and help with grant documentation.',
+  solution: 'Flexible financing, phased replacement options, and help with grant documentation.',
   },
   {
     challenge: 'Service Schedules',
-    solution: 'Work scheduled around services. Pause for events. Respect for sacred space.',
+  solution: 'Work scheduled around services. Pause for events. Respect for sacred space.',
   },
   {
     challenge: 'Large Interior Spans',
-    solution: 'Understanding of structural implications. Protection for interior finishes during work.',
+  solution: 'Understanding of structural implications. Protection for interior finishes during work.',
   },
 ];
 
 const roofingOptions = [
   {
     type: 'Architectural Shingles',
-    bestFor: 'Most church buildings',
-    lifespan: '25-30 years',
-    cost: '$8-$12/sq ft',
-    notes: 'Most cost-effective for typical church buildings.',
+  bestFor: 'Most church buildings',
+  lifespan: '25-30 years',
+  cost: '$8-$12/sq ft',
+  notes: 'Most cost-effective for typical church buildings.',
   },
   {
     type: 'Metal Roofing',
-    bestFor: 'Long-term value, modern buildings',
-    lifespan: '40-60 years',
-    cost: '$12-$20/sq ft',
-    notes: 'Excellent for flat or low-slope sections.',
+  bestFor: 'Long-term value, modern buildings',
+  lifespan: '40-60 years',
+  cost: '$12-$20/sq ft',
+  notes: 'Excellent for flat or low-slope sections.',
   },
   {
     type: 'Slate',
-    bestFor: 'Historic churches',
-    lifespan: '75-150 years',
-    cost: '$20-$40/sq ft',
-    notes: 'Authentic for historic preservation.',
+  bestFor: 'Historic churches',
+  lifespan: '75-150 years',
+  cost: '$20-$40/sq ft',
+  notes: 'Authentic for historic preservation.',
   },
   {
     type: 'Copper',
-    bestFor: 'Steeples, accents',
-    lifespan: '100+ years',
-    cost: '$25-$50/sq ft',
-    notes: 'Traditional for steeple caps and flashing.',
+  bestFor: 'Steeples, accents',
+  lifespan: '100+ years',
+  cost: '$25-$50/sq ft',
+  notes: 'Traditional for steeple caps and flashing.',
   },
   {
     type: 'Synthetic Slate/Shake',
-    bestFor: 'Historic look, lower budget',
-    lifespan: '30-50 years',
-    cost: '$12-$18/sq ft',
-    notes: 'Looks authentic at lower cost and weight.',
+  bestFor: 'Historic look, lower budget',
+  lifespan: '30-50 years',
+  cost: '$12-$18/sq ft',
+  notes: 'Looks authentic at lower cost and weight.',
   },
 ];
 
 const planningSteps = [
   {
     step: 1,
-    title: 'Assessment & Inspection',
-    description: 'Free professional inspection to understand current condition and recommend solutions.',
+  title: 'Assessment & Inspection',
+  description: 'Free professional inspection to understand current condition and recommend solutions.',
   },
   {
     step: 2,
-    title: 'Budget Planning',
-    description: 'Detailed estimate with financing options. We can help with grant applications.',
+  title: 'Budget Planning',
+  description: 'Detailed estimate with financing options. We can help with grant applications.',
   },
   {
     step: 3,
-    title: 'Board/Committee Presentation',
-    description: 'We can present options to your building committee or board.',
+  title: 'Board/Committee Presentation',
+  description: 'We can present options to your building committee or board.',
   },
   {
     step: 4,
-    title: 'Schedule Coordination',
-    description: 'Timeline built around your service and event schedule.',
+  title: 'Schedule Coordination',
+  description: 'Timeline built around your service and event schedule.',
   },
   {
     step: 5,
-    title: 'Congregation Communication',
-    description: 'We provide updates and information you can share with members.',
+  title: 'Congregation Communication',
+  description: 'We provide updates and information you can share with members.',
   },
   {
     step: 6,
-    title: 'Project Execution',
-    description: 'Professional installation with respect for your sacred space.',
+  title: 'Project Execution',
+  description: 'Professional installation with respect for your sacred space.',
   },
 ];
 
@@ -206,10 +206,10 @@ export default function ChurchRoofReplacementGuidePage() {
       <ArticleSchema
         post={{
           title: 'Church Roof Replacement Guide: Charlotte NC Congregations',
-          description: 'Complete guide to church roofing in Charlotte NC.',
-          slug: 'church-roof-replacement-guide-charlotte-nc',
-          datePublished: '2026-02-01',
-          dateModified: '2026-02-01',
+  description: 'Complete guide to church roofing in Charlotte NC.',
+  slug: 'church-roof-replacement-guide-charlotte-nc',
+  datePublished: '2026-02-01',
+  dateModified: '2026-02-01',
         }}
       />
       <FAQSchema faqs={churchFAQs} />
@@ -276,7 +276,7 @@ export default function ChurchRoofReplacementGuidePage() {
             </h2>
             <p className="text-gray">
               Limited budgets, volunteer decision-makers, service schedules, historic preservation,
-              and the sacred nature of your space - we&apos;ve worked with Charlotte congregations
+  and the sacred nature of your space - we&apos;ve worked with Charlotte congregations
               for years and understand these realities.
             </p>
           </div>

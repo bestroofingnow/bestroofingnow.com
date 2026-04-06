@@ -5,6 +5,7 @@ import { CheckCircle, Loader2, MapPin, ArrowRight, Shield, Phone } from 'lucide-
 import { SITE_CONFIG } from '@/lib/constants';
 import { trackLead, trackFormSubmission } from '@/components/analytics';
 import { Prediction } from '@/types/estimate';
+import Turnstile from '@/components/ui/Turnstile';
 
 interface FormData {
   address: string;
@@ -49,6 +50,7 @@ export default function LandingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const [predictions, setPredictions] = useState<Prediction[]>([]);
   const [showPredictions, setShowPredictions] = useState(false);
   const [utmParams, setUtmParams] = useState<UTMParams>({
@@ -66,6 +68,14 @@ export default function LandingForm() {
 
   const debounceRef = useRef<NodeJS.Timeout | null>(null);
   const predictionsRef = useRef<HTMLDivElement>(null);
+
+  const handleTurnstileVerify = useCallback((token: string) => {
+    setTurnstileToken(token);
+  }, []);
+
+  const handleTurnstileExpire = useCallback(() => {
+    setTurnstileToken(null);
+  }, []);
 
   // Capture UTM params on mount
   useEffect(() => {
@@ -233,6 +243,7 @@ export default function LandingForm() {
           tcpaConsent: formData.tcpaConsent,
           consentTimestamp: new Date().toISOString(),
           landingPage: window.location.pathname,
+          turnstileToken,
           ...utmParams,
         }),
       });
@@ -452,6 +463,13 @@ export default function LandingForm() {
         {touched.tcpaConsent && errors.tcpaConsent && (
           <p className="text-xs text-red-600 -mt-2">{errors.tcpaConsent}</p>
         )}
+
+        {/* Turnstile CAPTCHA */}
+        <Turnstile
+          onVerify={handleTurnstileVerify}
+          onExpire={handleTurnstileExpire}
+          className="flex justify-center"
+        />
 
         {/* Submit error */}
         {submitError && (

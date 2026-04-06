@@ -28,7 +28,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -57,16 +56,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Office Building Roofing Charlotte NC | Corporate & Commercial Roofs | Best Roofing Now',
-    description:
+  description:
       'Expert office building roofing contractors in Charlotte NC. Specializing in high-rise towers, corporate campuses & multi-tenant office buildings. Licensed & insured with free estimates.',
-    url: `${SITE_CONFIG.url}/office-building-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/office-building-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.office,
-        width: 1200,
-        height: 630,
-        alt: 'Office building roofing Charlotte NC - Best Roofing Now commercial office roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Office building roofing Charlotte NC - Best Roofing Now commercial office roofing project',
       },
     ],
   },
@@ -76,39 +75,39 @@ export const metadata: Metadata = {
 const roofingSystems = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient single-ply membrane ideal for office building flat roofs. Reflective white surface meets Charlotte energy codes and reduces cooling costs for tenants.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient single-ply membrane ideal for office building flat roofs. Reflective white surface meets Charlotte energy codes and reduces cooling costs for tenants.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'PVC Roofing Systems',
-    description: 'Premium single-ply membrane offering superior chemical and grease resistance, ideal for office buildings with rooftop restaurants, mechanical rooms, or exhaust systems.',
-    href: '/services/commercial-roofing',
+  title: 'PVC Roofing Systems',
+  description: 'Premium single-ply membrane offering superior chemical and grease resistance, ideal for office buildings with rooftop restaurants, mechanical rooms, or exhaust systems.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'EPDM Rubber Roofing',
-    description: 'Time-tested rubber membrane for corporate campuses and office parks. Excellent for large, multi-building portfolios requiring consistent, cost-effective roofing.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Time-tested rubber membrane for corporate campuses and office parks. Excellent for large, multi-building portfolios requiring consistent, cost-effective roofing.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Architectural standing seam metal for office buildings where aesthetic curb appeal matters. Popular for Class A properties in Uptown, SouthPark, and Ballantyne.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Architectural standing seam metal for office buildings where aesthetic curb appeal matters. Popular for Class A properties in Uptown, SouthPark, and Ballantyne.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Green Roofing Systems',
-    description: 'Vegetated roof systems for LEED-certified office buildings pursuing sustainability goals. Reduces stormwater runoff, improves insulation, and creates rooftop amenity spaces.',
-    href: '/services/commercial-roofing',
+  title: 'Green Roofing Systems',
+  description: 'Vegetated roof systems for LEED-certified office buildings pursuing sustainability goals. Reduces stormwater runoff, improves insulation, and creates rooftop amenity spaces.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Roof Coatings & Restoration',
-    description: 'Reflective coatings that extend existing office building roof life by 10-15 years, avoiding the cost and tenant disruption of a full replacement.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings & Restoration',
+  description: 'Reflective coatings that extend existing office building roof life by 10-15 years, avoiding the cost and tenant disruption of a full replacement.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -116,33 +115,33 @@ const roofingSystems = [
 const buildingTypes = [
   {
     icon: Building2,
-    title: 'High-Rise Office Towers',
-    description: 'Specialized roofing for Charlotte\u0027s Uptown high-rises, including wind uplift engineering, multi-story access coordination, and crane logistics for material delivery.',
+  title: 'High-Rise Office Towers',
+  description: 'Specialized roofing for Charlotte\u0027s Uptown high-rises, including wind uplift engineering, multi-story access coordination, and crane logistics for material delivery.',
   },
   {
     icon: Layers,
-    title: 'Corporate Campuses',
-    description: 'Multi-building roofing programs for corporate campuses like those in Ballantyne and University Research Park, with consistent quality across every structure.',
+  title: 'Corporate Campuses',
+  description: 'Multi-building roofing programs for corporate campuses like those in Ballantyne and University Research Park, with consistent quality across every structure.',
   },
   {
     icon: Award,
-    title: 'Class A Office Buildings',
-    description: 'Premium roofing systems for Class A office properties where aesthetic standards, energy performance, and long-term warranty coverage are non-negotiable.',
+  title: 'Class A Office Buildings',
+  description: 'Premium roofing systems for Class A office properties where aesthetic standards, energy performance, and long-term warranty coverage are non-negotiable.',
   },
   {
     icon: Users,
-    title: 'Multi-Tenant Office Buildings',
-    description: 'Roofing for multi-tenant office buildings requiring careful coordination with property management, individual tenants, and shared building systems.',
+  title: 'Multi-Tenant Office Buildings',
+  description: 'Roofing for multi-tenant office buildings requiring careful coordination with property management, individual tenants, and shared building systems.',
   },
   {
     icon: Ruler,
-    title: 'Professional & Office Parks',
-    description: 'Cost-effective roofing solutions for suburban office parks and professional complexes throughout Charlotte\u0027s major business corridors.',
+  title: 'Professional & Office Parks',
+  description: 'Cost-effective roofing solutions for suburban office parks and professional complexes throughout Charlotte\u0027s major business corridors.',
   },
   {
     icon: Zap,
-    title: 'Coworking & Flex Space',
-    description: 'Modern roofing for Charlotte\u0027s growing coworking and flexible office spaces, often in renovated buildings requiring creative roofing solutions.',
+  title: 'Coworking & Flex Space',
+  description: 'Modern roofing for Charlotte\u0027s growing coworking and flexible office spaces, often in renovated buildings requiring creative roofing solutions.',
   },
 ];
 
@@ -150,33 +149,33 @@ const buildingTypes = [
 const whyChooseUs = [
   {
     icon: Building2,
-    title: 'High-Rise Experienced',
-    description: 'We have the equipment, safety training, and logistics expertise for multi-story office buildings, including crane operations and helicopter deliveries when needed.',
+  title: 'High-Rise Experienced',
+  description: 'We have the equipment, safety training, and logistics expertise for multi-story office buildings, including crane operations and helicopter deliveries when needed.',
   },
   {
     icon: Clock,
-    title: 'Minimal Tenant Disruption',
-    description: 'We schedule noisy work during off-hours and weekends, coordinate with your property management, and keep common areas clean and professional throughout.',
+  title: 'Minimal Tenant Disruption',
+  description: 'We schedule noisy work during off-hours and weekends, coordinate with your property management, and keep common areas clean and professional throughout.',
   },
   {
     icon: Award,
-    title: 'LEED & Energy Code Compliant',
-    description: 'We install roofing systems that meet Charlotte\u0027s energy codes and LEED requirements, helping your building achieve and maintain green certifications.',
+  title: 'LEED & Energy Code Compliant',
+  description: 'We install roofing systems that meet Charlotte\u0027s energy codes and LEED requirements, helping your building achieve and maintain green certifications.',
   },
   {
     icon: Shield,
-    title: 'Manufacturer Certified',
-    description: 'Factory-certified installers for GAF, Carlisle, Firestone, and Sika Sarnafil, providing NDL warranty coverage for your investment.',
+  title: 'Manufacturer Certified',
+  description: 'Factory-certified installers for GAF, Carlisle, Firestone, and Sika Sarnafil, providing NDL warranty coverage for your investment.',
   },
   {
     icon: DollarSign,
-    title: 'Portfolio Pricing',
-    description: 'Volume discounts for property owners and management companies with multiple office buildings. Standardized quality across your entire Charlotte portfolio.',
+  title: 'Portfolio Pricing',
+  description: 'Volume discounts for property owners and management companies with multiple office buildings. Standardized quality across your entire Charlotte portfolio.',
   },
   {
     icon: Users,
-    title: 'Property Manager Coordination',
-    description: 'We work seamlessly with property management teams, providing detailed project schedules, tenant notifications, and professional progress reporting.',
+  title: 'Property Manager Coordination',
+  description: 'We work seamlessly with property management teams, providing detailed project schedules, tenant notifications, and professional progress reporting.',
   },
 ];
 
@@ -212,42 +211,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does office building roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Office building roof replacement in Charlotte typically costs $6 to $14 per square foot for membrane systems (TPO, PVC, EPDM) and $12 to $22 per square foot for architectural metal or green roofing systems. A typical 30,000 sq ft Class A office building might cost $180,000-$420,000. High-rise buildings in Uptown Charlotte carry additional costs for crane logistics, safety rigging, and extended timelines. We provide free, detailed estimates for any office building project.',
   },
   {
     question: 'Can you reroof our office building without disrupting tenants?',
-    answer:
+  answer:
       'Yes, minimizing tenant disruption is central to how we approach office building projects. We schedule tear-off and other noisy work during evenings, nights, or weekends. During business hours, we focus on quiet work like membrane welding and detailing. We coordinate elevator usage for material transport in high-rises, keep common areas and entrances clean, and provide advance notice to all tenants through your property management team.',
   },
   {
     question: 'What roofing system is best for Charlotte office buildings?',
-    answer:
+  answer:
       'For most Charlotte office buildings, we recommend TPO membrane roofing for its energy efficiency, which helps meet Charlotte\u0027s commercial energy codes. For Class A properties where aesthetics matter, architectural standing seam metal provides a premium look. PVC is excellent for buildings with rooftop restaurants or heavy HVAC exhaust. For LEED-certified buildings, green roofing systems add insulation value and sustainability credentials. We recommend the best system based on your building\u0027s specific needs.',
   },
   {
     question: 'Do you work with office building property management companies?',
-    answer:
+  answer:
       'Yes, we regularly partner with property management companies across the Charlotte market. We understand PM workflows, provide standardized reporting and documentation, coordinate with on-site building engineers, and offer portfolio-wide pricing for multi-property owners. Our dedicated commercial project managers serve as your single point of contact, providing the professional communication and accountability that property managers require.',
   },
   {
     question: 'Can your roofing systems help our office building meet LEED requirements?',
-    answer:
+  answer:
       'Absolutely. We install Energy Star-rated roofing systems with high Solar Reflectance Index (SRI) values that contribute to LEED credits. We can also install green roof systems for stormwater management credits, use recycled-content materials, and provide documentation for waste diversion during tear-off. Our team is familiar with LEED v4.1 requirements and can help your project earn roofing-related credits.',
   },
   {
     question: 'How do you handle roofing on high-rise office buildings in Uptown Charlotte?',
-    answer:
+  answer:
       'High-rise office roofing requires specialized logistics. We coordinate crane permits and lane closures with the City of Charlotte, schedule material hoisting during off-peak traffic hours, and use dedicated freight elevators when available. Our crews are trained in high-rise safety protocols, including fall protection systems certified for your building. We carry elevated insurance coverage specifically for high-rise projects.',
   },
   {
     question: 'What about the aesthetic appearance of our office building roof?',
-    answer:
+  answer:
       'For office buildings, roof aesthetics matter — especially when the roof is visible from upper floors of adjacent buildings or from the street. We offer architectural metal roofing in a range of colors and profiles, clean white membrane systems, and green roof options that create attractive rooftop views. We also ensure all rooftop equipment is properly screened and flashings are clean and color-matched.',
   },
   {
     question: 'Do you offer roof maintenance programs for office building portfolios?',
-    answer:
+  answer:
       'Yes, we offer comprehensive preventive maintenance programs tailored to office building portfolios. Our plans include bi-annual inspections, drain clearing, sealant maintenance, and detailed condition reports with photos. Regular maintenance extends roof life by 5-10 years, prevents tenant disruption from unexpected leaks, and is often required to maintain manufacturer warranty coverage. We offer multi-building portfolio pricing for property management companies.',
   },
 ];
@@ -262,7 +261,6 @@ export default function OfficeBuildingRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/office-building-roofing-charlotte-nc`}
         pageName="Office Building Roofing Charlotte NC"
@@ -354,7 +352,7 @@ export default function OfficeBuildingRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               From Uptown Charlotte&apos;s tallest towers to suburban office parks in Ballantyne and University City,
-              we have the expertise to handle any commercial office roofing project.
+  we have the expertise to handle any commercial office roofing project.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

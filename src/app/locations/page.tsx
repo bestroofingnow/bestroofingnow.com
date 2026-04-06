@@ -59,8 +59,8 @@ export default function LocationsPage() {
               Proudly Serving Charlotte & Surrounding Areas
             </h1>
             <p className="text-xl text-white/90">
-              From our home base in Charlotte, we provide professional roofing
-              services throughout the greater Charlotte metropolitan area.
+              From our Charlotte headquarters, we provide professional roofing
+              services throughout the greater Charlotte metropolitan area in 2026. No travel fees, same-day availability.
             </p>
           </div>
         </div>

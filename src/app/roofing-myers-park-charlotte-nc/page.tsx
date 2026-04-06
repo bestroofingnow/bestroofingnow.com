@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Myers Park Charlotte NC | Luxury Home Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor specializing in luxury homes in Myers Park Charlotte NC. Premium materials for large estates. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofing-myers-park-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-myers-park-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.neighborhoods.myersPark,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Myers Park Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Myers Park Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Estate Roofing',
-    description: 'Premium roofing solutions for Myers Park\'s grand estates with luxury materials and expert installation.',
-    href: '/services/residential-roofing',
+  title: 'Estate Roofing',
+  description: 'Premium roofing solutions for Myers Park\'s grand estates with luxury materials and expert installation.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Expert roofing for Myers Park\'s boutique shops, offices, and commercial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'Expert roofing for Myers Park\'s boutique shops, offices, and commercial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Meticulous repairs for leaks, missing shingles, and storm damage on luxury homes.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Meticulous repairs for leaks, missing shingles, and storm damage on luxury homes.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full replacement with designer shingles, slate, tile, or premium metal roofing.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full replacement with designer shingles, slate, tile, or premium metal roofing.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Comprehensive inspections for Myers Park estates with detailed condition reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Comprehensive inspections for Myers Park estates with detailed condition reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration with premium materials and expert craftsmanship.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration with premium materials and expert craftsmanship.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Myers Park homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Myers Park homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Luxury Expertise',
-    description: 'Experienced with high-end materials including slate, tile, copper, and designer shingles.',
+  title: 'Luxury Expertise',
+  description: 'Experienced with high-end materials including slate, tile, copper, and designer shingles.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Premium Materials',
-    description: 'Access to the finest roofing materials from CertainTeed, GAF, and specialty suppliers.',
+  title: 'Premium Materials',
+  description: 'Access to the finest roofing materials from CertainTeed, GAF, and specialty suppliers.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Myers Park homeowners need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Myers Park homeowners need us most.',
   },
 ];
 
@@ -179,42 +179,42 @@ const nearbyAreas = [
 const faqs = [
   {
     question: 'What roofing services do you offer in Myers Park Charlotte NC?',
-    answer:
+  answer:
       'Best Roofing Now provides complete luxury roofing services in Myers Park including roof repair, roof replacement, new roof installation, storm damage repair, emergency services, and comprehensive inspections. We specialize in premium materials including designer shingles, slate, tile, and copper accents.',
   },
   {
     question: 'Do you specialize in luxury home roofing in Myers Park?',
-    answer:
+  answer:
       'Yes, Best Roofing Now has extensive experience with Myers Park\'s magnificent estates and luxury homes. We understand the high standards expected in this prestigious neighborhood and offer premium materials, expert craftsmanship, and meticulous attention to detail that matches the quality of these exceptional properties.',
   },
   {
     question: 'How much does a roof replacement cost in Myers Park?',
-    answer:
+  answer:
       'Roof replacement costs in Myers Park typically range from $15,000-$50,000+ depending on home size, roof complexity, and material choice. Many Myers Park estates feature larger footprints and premium materials like slate, tile, or designer shingles. We provide detailed, transparent estimates for every project.',
   },
   {
     question: 'What premium roofing materials do you offer for Myers Park homes?',
-    answer:
+  answer:
       'We offer the finest roofing materials including CertainTeed Grand Manor and Carriage House shingles, GAF Grand Sequoia designer shingles, natural slate, clay and concrete tile, standing seam copper and metal roofing, and premium synthetic options. We help you select materials that complement your home\'s architecture.',
   },
   {
     question: 'How long does a roof replacement take on a Myers Park estate?',
-    answer:
+  answer:
       'Large Myers Park estates typically require 3-7 days for complete roof replacement, depending on size, roof complexity, and material type. Premium materials like slate or tile may require additional time. We work efficiently while maintaining the highest quality standards.',
   },
   {
     question: 'Do you work with Myers Park HOAs and architectural review boards?',
-    answer:
+  answer:
       'Yes, we have extensive experience working with Myers Park HOAs and neighborhood architectural review committees. We understand the approval processes and can help you select materials and colors that meet community guidelines while enhancing your home\'s curb appeal.',
   },
   {
     question: 'What warranty do you provide on Myers Park roofing projects?',
-    answer:
+  answer:
       'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials (lifetime on some premium products) and our own workmanship warranty. As certified installers, we can offer enhanced warranties like GAF Golden Pledge and CertainTeed SureStart PLUS.',
   },
   {
     question: 'Do you handle insurance claims for storm damage in Myers Park?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience with insurance claims for storm damage on luxury properties in Myers Park. We provide thorough documentation, work directly with adjusters, and advocate for settlements that cover proper restoration with premium materials matching your home\'s existing quality.',
   },
 ];
@@ -229,7 +229,12 @@ export default function RoofingMyersParkCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-myers-park-charlotte-nc`}
+        pageName="Roofing Myers Park Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -315,12 +320,12 @@ export default function RoofingMyersParkCharlotteNCPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 Myers Park represents the pinnacle of Charlotte elegance, with its stately tree-lined boulevards,
-                magnificent estates, and timeless architectural beauty. At Best Roofing Now, we understand that
+  magnificent estates, and timeless architectural beauty. At Best Roofing Now, we understand that
                 homes in this prestigious neighborhood deserve nothing less than exceptional roofing services.
               </p>
               <p>
                 Whether you own a grand Georgian estate on Queens Road, a stunning Tudor on Providence Road,
-                or a beautiful Colonial on Cherokee Road, our team delivers premium roofing solutions that
+  or a beautiful Colonial on Cherokee Road, our team delivers premium roofing solutions that
                 protect your investment while enhancing your home's distinguished appearance.
               </p>
               <p>

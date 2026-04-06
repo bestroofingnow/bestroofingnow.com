@@ -26,7 +26,7 @@ export const SITE_CONFIG = {
   nextdoorRecommendations: 8,
   customerCount: 500,
   roofsInstalled: 500,
-  yearsInBusiness: 5,
+  yearsInBusiness: 6,
   bbbRating: 'A+',
   certifications: [
     'CertainTeed ShingleMaster',
@@ -72,7 +72,7 @@ export const SITE_CONFIG = {
     businessLeaders: 'https://www.businessleadersofcharlotte.com/Sys/PublicProfile/66833596',
     lakeNormanChamber: 'https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292',
     // Other profiles
-    projectMapIt: 'https://projectmapit.com/best-roofing-now-llc',
+
     digitalJournal: 'https://www.digitaljournal.com/pr/news/revupmarketer/best-roofing-llc-unveils-cost-effective-1822246992.html',
     wheree: 'https://best-roofing-now-llc.wheree.com/',
     roofingDirect: 'https://www.roofingdirect.com/contractors/best-roofing-now-llc/',
@@ -95,13 +95,8 @@ export const EXTERNAL_RESOURCES = {
     bookingCalendar: 'https://manage.bestroofingnow.com/widget/bookings/brn-roof-consultation',
   },
   webhooks: {
-    // Central GHL webhook for all form submissions
-    ghlLeadWebhook: 'https://services.leadconnectorhq.com/hooks/YnvUmp9cZqt5xmVLrnoq/webhook-trigger/EsQX2BVrRztaxx5QpwDH',
-  },
-  projectMapIt: {
-    baseUrl: 'https://projectmapit.com/best-roofing-now-llc/map',
-    apiBase: 'https://projectmapit.com/api/v1',
-    apiKey: '97151bdc-175f-402a-a56d-cf8e1f80047e',
+    // GHL webhook URL — set via GHL_LEAD_WEBHOOK_URL env var
+    ghlLeadWebhook: process.env.GHL_LEAD_WEBHOOK_URL || '',
   },
 };
 
@@ -783,11 +778,11 @@ export const ROOFING_COMPARISONS = [
   },
   {
     slug: 'tile-vs-shingles',
-    title: 'Tile Roofing vs Asphalt Shingles',
-    description: 'Compare tile roofing and asphalt shingles for durability, cost, and aesthetic appeal.',
+    title: 'Tile Roofing vs Asphalt Shingles Charlotte NC (2026 Cost Guide)',
+    description: 'Tile roof vs asphalt shingles: compare costs ($15-30 vs $4.50-7/sqft), lifespan (50-75 vs 25-30 years), weight, maintenance, and Charlotte NC climate suitability. Expert comparison from a BBB A+ rated contractor.',
     material1: 'tile-roofing',
     material2: 'asphalt-shingles',
-    keywords: ['tile vs shingle roof', 'tile roof vs asphalt', 'tile roofing cost comparison'],
+    keywords: ['tile roof vs asphalt shingles', 'tile vs shingle roof cost', 'is tile roofing worth it', 'tile roof cost Charlotte NC', 'tile vs shingle roof Charlotte', 'tile roof lifespan vs shingles', 'tile roofing pros and cons Charlotte NC'],
   },
   {
     slug: 'metal-vs-tile',
@@ -803,7 +798,7 @@ export const ROOFING_COMPARISONS = [
     description: 'Compare the two leading shingle manufacturers to choose the best brand for your roof.',
     material1: 'gaf',
     material2: 'certainteed',
-    keywords: ['GAF vs CertainTeed', 'best shingle brand', 'shingle brand comparison'],
+    keywords: ['gaf vs certainteed price', 'GAF vs CertainTeed', 'gaf vs certainteed shingles', 'best shingle brand', 'shingle brand comparison', 'gaf vs certainteed cost', 'gaf or certainteed which is better'],
   },
 ];
 
@@ -811,7 +806,7 @@ export const ROOFING_COMPARISONS = [
 export const ROOFING_GUIDES = [
   {
     slug: 'roof-replacement-cost',
-    title: 'Roof Replacement Cost Guide 2025',
+    title: 'Roof Replacement Cost Guide 2026',
     shortTitle: 'Cost Guide',
     description: 'Complete guide to roof replacement costs in Charlotte NC. Learn what factors affect pricing and how to budget for your new roof.',
     keywords: ['roof replacement cost Charlotte', 'new roof cost NC', 'roof replacement estimate', 'how much does roof cost'],
@@ -2613,7 +2608,7 @@ export const FEATURED_SNIPPET_CONTENT = {
   // Table snippets
   tables: [
     {
-      title: 'Average Roof Replacement Costs in Charlotte NC (2025)',
+      title: 'Average Roof Replacement Costs in Charlotte NC (2026)',
       headers: ['Home Size', 'Asphalt Shingles', 'Metal Roofing', 'Premium Materials'],
       rows: [
         ['1,500 sq ft', '$8,000-$12,000', '$15,000-$22,000', '$20,000-$30,000'],

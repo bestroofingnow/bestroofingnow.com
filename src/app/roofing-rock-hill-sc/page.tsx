@@ -20,7 +20,7 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Rock Hill SC | York County Roofing Company | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor serving Rock Hill SC and York County. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-rock-hill-sc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-rock-hill-sc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Rock Hill SC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Rock Hill SC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Rock Hill homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Rock Hill homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Rock Hill businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Rock Hill businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage throughout York County.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage throughout York County.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Rock Hill homeowners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Rock Hill homeowners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for York County properties.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for York County properties.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across the region.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied customers across the region.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed roofing contractor with comprehensive liability insurance for SC work.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed roofing contractor with comprehensive liability insurance for SC work.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when storms strike Rock Hill.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when storms strike Rock Hill.',
   },
 ];
 
@@ -167,42 +167,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Rock Hill SC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Rock Hill and all of York County from our Charlotte headquarters. Rock Hill is approximately 23 miles from our office, making it a convenient and frequent service area for our team. We complete numerous roofing projects throughout Rock Hill, from the Winthrop University area to the Galleria district.',
   },
   {
     question: 'Are you licensed to work in South Carolina?',
-    answer:
+  answer:
       'Yes, Best Roofing Now is fully licensed and insured to perform roofing work in South Carolina. We carry comprehensive general liability insurance and workers compensation coverage that protects you during any project. We are familiar with York County building codes and permit requirements.',
   },
   {
     question: 'Why should Rock Hill homeowners choose a Charlotte-based roofer?',
-    answer:
+  answer:
       'Charlotte-based companies like Best Roofing Now often have greater resources, more certified installers, and longer track records than smaller local operations. Our proximity to Rock Hill (just 23 miles) means you get quick response times while benefiting from our extensive experience across the greater Charlotte metro area. Many of our Rock Hill clients were referred by satisfied Charlotte customers.',
   },
   {
     question: 'How much does a new roof cost in Rock Hill SC?',
-    answer:
+  answer:
       'Roof replacement costs in Rock Hill typically range from $8,000-$25,000 for most homes, depending on size, pitch, material choice, and complexity. Rock Hill has diverse housing from historic homes near Winthrop to newer developments, and costs vary accordingly. We provide free, no-obligation estimates with transparent pricing.',
   },
   {
     question: 'Do you offer free roof inspections in Rock Hill?',
-    answer:
+  answer:
       'Absolutely! Best Roofing Now offers completely free roof inspections throughout Rock Hill and York County. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written report with photos. There is no obligation to hire us after the inspection.',
   },
   {
     question: 'Can you help with insurance claims for storm damage in Rock Hill?',
-    answer:
+  answer:
       'Yes, we have extensive experience helping Rock Hill and York County homeowners with storm damage insurance claims. Rock Hill sees significant severe weather including hail and high winds, and we provide thorough documentation, meet with adjusters, and advocate for fair settlements.',
   },
   {
     question: 'Do you work with historic homes near Winthrop University?',
-    answer:
+  answer:
       'Yes, we have experience working with older and historic homes in the Winthrop University area and throughout downtown Rock Hill. These homes often require special attention to architectural details and may have unique roofing requirements. Our team understands how to maintain the character of older homes while providing modern protection.',
   },
   {
     question: 'How quickly can you respond to roofing emergencies in Rock Hill?',
-    answer:
+  answer:
       'We offer 24/7 emergency roofing services throughout Rock Hill and York County. For emergencies like active leaks or storm damage, we typically respond within 1-4 hours to secure your property and prevent further damage. Call us anytime at (704) 605-6047 for emergency service.',
   },
 ];
@@ -217,7 +217,12 @@ export default function RoofingRockHillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-rock-hill-sc`}
+        pageName="Roofing Rock Hill SC"
+        city="Rock Hill"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -246,7 +251,7 @@ export default function RoofingRockHillSCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now provides expert roofing services to Rock Hill, the Winthrop area, the Galleria district,
-              and all of York County. Our certified team delivers exceptional quality backed by industry-leading warranties
+  and all of York County. Our certified team delivers exceptional quality backed by industry-leading warranties
               for South Carolina's largest city outside the Charlotte metro.
             </p>
 
@@ -429,9 +434,9 @@ export default function RoofingRockHillSCPage() {
               <p>
                 Rock Hill is the largest city in South Carolina's York County and one of the major cities in the
                 Charlotte metropolitan area. Home to Winthrop University, the popular Galleria shopping district,
-                and diverse neighborhoods ranging from historic to newly developed, Rock Hill offers something for
+  and diverse neighborhoods ranging from historic to newly developed, Rock Hill offers something for
                 everyone. Best Roofing Now is proud to serve Rock Hill homeowners from our Charlotte headquarters,
-                providing exceptional roofing services that have earned us a BBB A+ rating and over {SITE_CONFIG.googleReviewCount} five-star reviews.
+  providing exceptional roofing services that have earned us a BBB A+ rating and over {SITE_CONFIG.googleReviewCount} five-star reviews.
               </p>
               <p>
                 Rock Hill's mix of architectural styles presents varied roofing opportunities. Historic homes near

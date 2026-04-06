@@ -11,7 +11,7 @@ export async function GET() {
     { url: `${BASE_URL}/reviews`, changefreq: 'weekly', priority: '0.7' },
     { url: `${BASE_URL}/faq`, changefreq: 'monthly', priority: '0.5' },
     { url: `${BASE_URL}/nc-roofing-guide`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/sitemap`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/site-map`, changefreq: 'weekly', priority: '0.8' },
     // Trusted partners & roofing network
     { url: `${BASE_URL}/trusted-partners`, changefreq: 'monthly', priority: '0.6' },
     // YouTube videos page
@@ -44,6 +44,7 @@ export async function GET() {
     { url: `${BASE_URL}/roof-repair-vs-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/charlotte-storm-season-roof-guide`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/charlotte-roofing-costs-2026`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/tile-roof-vs-shingles-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     // Main service silo pages - GBP category aligned
     { url: `${BASE_URL}/gutter-services`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/siding-services`, changefreq: 'weekly', priority: '0.9' },
@@ -229,6 +230,33 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-waverly-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
     { url: `${BASE_URL}/roofing-providence-crossing-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
     { url: `${BASE_URL}/roofing-carmel-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
+
+    // ============================================
+    // LAKE NORMAN HUB + SERVICE PAGES
+    // ============================================
+    { url: `${BASE_URL}/roofing-lake-norman-nc`, changefreq: 'weekly', priority: '1.0' },
+    { url: `${BASE_URL}/roof-repair-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-replacement-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roofers-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/emergency-roof-repair-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/commercial-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/metal-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/gutter-installation-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-inspection-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+
+    // ============================================
+    // LAKE WYLIE & SOUTH CHARLOTTE HUB + SERVICE PAGES
+    // ============================================
+    { url: `${BASE_URL}/roofing-lake-wylie-sc`, changefreq: 'weekly', priority: '1.0' },
+    { url: `${BASE_URL}/roof-repair-lake-wylie-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roof-replacement-lake-wylie-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roofers-lake-wylie-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-lake-wylie-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/roofing-tega-cay-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/commercial-roofing-lake-wylie-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/metal-roofing-lake-wylie-sc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/gutter-installation-lake-wylie-sc`, changefreq: 'weekly', priority: '0.9' },
 
     // ============================================
     // LAKE NORMAN CITY PAGES

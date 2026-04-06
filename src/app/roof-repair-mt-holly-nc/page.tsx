@@ -45,16 +45,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Mt Holly NC | Fast & Reliable | Best Roofing Now',
-    description:
+  description:
       'Expert roof repair services in Mt Holly NC. Same-day emergency repairs, storm damage restoration, leak fixes. BBB A+ rated, veteran-owned roofing company.',
-    url: `${SITE_CONFIG.url}/roof-repair-mt-holly-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-mt-holly-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Roof repair services in Mt Holly NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof repair services in Mt Holly NC - Best Roofing Now',
       },
     ],
   },
@@ -64,33 +64,33 @@ export const metadata: Metadata = {
 const repairTypes = [
   {
     icon: Droplets,
-    title: 'Leak Repairs',
-    description: 'Fast detection and repair of roof leaks before they cause water damage to your Mt Holly home.',
+  title: 'Leak Repairs',
+  description: 'Fast detection and repair of roof leaks before they cause water damage to your Mt Holly home.',
   },
   {
     icon: Wind,
-    title: 'Storm Damage',
-    description: 'Comprehensive storm damage repairs including missing shingles, wind damage, and hail damage.',
+  title: 'Storm Damage',
+  description: 'Comprehensive storm damage repairs including missing shingles, wind damage, and hail damage.',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency roofing services for urgent situations requiring immediate attention.',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency roofing services for urgent situations requiring immediate attention.',
   },
   {
     icon: Shield,
-    title: 'Flashing Repairs',
-    description: 'Repair and replacement of roof flashing around chimneys, vents, and skylights.',
+  title: 'Flashing Repairs',
+  description: 'Repair and replacement of roof flashing around chimneys, vents, and skylights.',
   },
   {
     icon: CheckCircle,
-    title: 'Shingle Replacement',
-    description: 'Individual or section shingle replacement to restore your roof\'s protection.',
+  title: 'Shingle Replacement',
+  description: 'Individual or section shingle replacement to restore your roof\'s protection.',
   },
   {
     icon: Clock,
-    title: 'Preventive Repairs',
-    description: 'Minor repairs that prevent larger problems and extend your roof\'s lifespan.',
+  title: 'Preventive Repairs',
+  description: 'Minor repairs that prevent larger problems and extend your roof\'s lifespan.',
   },
 ];
 
@@ -106,32 +106,32 @@ const repairProcess = [
 const faqs = [
   {
     question: 'How quickly can you repair my roof in Mt Holly?',
-    answer:
+  answer:
       'For emergency repairs, we typically respond within 24 hours. Standard repairs are usually scheduled within 1-2 weeks depending on weather and workload. We prioritize urgent situations that could cause further damage.',
   },
   {
     question: 'How much does roof repair cost in Mt Holly NC?',
-    answer:
+  answer:
       'Roof repair costs in Mt Holly vary based on the type and extent of damage. Minor repairs may cost $200-$500, while more extensive repairs can range from $500-$2,000+. We provide free inspections and detailed estimates before any work begins.',
   },
   {
     question: 'Do you offer emergency roof repair in Mt Holly?',
-    answer:
+  answer:
       'Yes! We provide 24/7 emergency roof repair services for Mt Holly and Gaston County. If you have an urgent leak or storm damage, call us immediately and we\'ll respond as quickly as possible to prevent further damage.',
   },
   {
     question: 'Should I repair or replace my roof?',
-    answer:
+  answer:
       'The decision depends on your roof\'s age, the extent of damage, and cost considerations. Generally, if repairs exceed 30% of replacement cost or your roof is near the end of its lifespan, replacement may be more economical. We\'ll give you an honest recommendation.',
   },
   {
     question: 'Do you handle insurance claims for roof repairs?',
-    answer:
+  answer:
       'Yes, we have extensive experience with insurance claims for roof repairs in Mt Holly. We document all damage thoroughly, provide detailed estimates, and can meet with your adjuster to ensure fair claim settlement.',
   },
   {
     question: 'What are signs I need roof repair?',
-    answer:
+  answer:
       'Common signs include visible leaks or water stains, missing or damaged shingles, granules in gutters, sagging areas, daylight visible through the roof, and higher energy bills. If you notice any of these, schedule a free inspection.',
   },
 ];

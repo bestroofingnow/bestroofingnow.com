@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Huntersville NC | Top-Rated Roofers | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Huntersville NC and Lake Norman. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Huntersville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Huntersville NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Huntersville homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Huntersville homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Huntersville businesses and commercial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Huntersville businesses and commercial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Huntersville.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Huntersville.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Huntersville homeowners with detailed reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Huntersville homeowners with detailed reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Huntersville residents need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Huntersville residents need us most.',
   },
 ];
 
@@ -169,42 +169,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Huntersville NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Huntersville NC and all of the Lake Norman region from our Charlotte headquarters. We provide complete roofing services including roof repair, replacement, inspection, and storm damage restoration to all Huntersville neighborhoods from Birkdale Village to Skybrook.',
   },
   {
     question: 'How much does a roof replacement cost in Huntersville NC?',
-    answer:
+  answer:
       'Roof replacement costs in Huntersville typically range from $8,000 to $25,000 for most homes, depending on roof size, pitch, material choice, and complexity. Larger lakefront homes or properties with complex roof lines may be higher. We provide free, detailed estimates with transparent pricing.',
   },
   {
     question: 'What makes Huntersville roofing needs unique?',
-    answer:
+  answer:
       'Huntersville sits on the shores of Lake Norman, exposing homes to lake-effect weather patterns including humidity, strong winds, and severe storms. Our team understands these conditions and recommends roofing materials and installation methods that withstand the Lake Norman climate.',
   },
   {
     question: 'Do you handle insurance claims for storm damage in Huntersville?',
-    answer:
+  answer:
       'Yes, we have extensive experience helping Huntersville homeowners with storm damage insurance claims. Lake Norman sees severe weather, and we provide thorough documentation, meet with adjusters, and advocate for fair settlements to restore your roof properly.',
   },
   {
     question: 'What roofing materials work best for Huntersville homes?',
-    answer:
+  answer:
       'For Huntersville homes, we typically recommend architectural shingles from CertainTeed, GAF, or Owens Corning for their durability and aesthetic appeal. Metal roofing is popular for its longevity, especially for lakefront properties. We also install tile and specialty roofing materials.',
   },
   {
     question: 'How long does a roof replacement take in Huntersville?',
-    answer:
+  answer:
       'Most residential roof replacements in Huntersville are completed in 1-3 days. Larger homes or complex roof designs may take 3-5 days. We work efficiently while maintaining quality standards and always leave your property clean and debris-free.',
   },
   {
     question: 'Do you offer free roof inspections in Huntersville?',
-    answer:
+  answer:
       'Yes! We offer completely free roof inspections throughout Huntersville and Lake Norman. Our certified inspectors will thoroughly examine your roof and provide a detailed written report with photos. There\'s no sales pressure - just honest information to help you make informed decisions.',
   },
   {
     question: 'Are you familiar with Huntersville HOA requirements?',
-    answer:
+  answer:
       'Yes, we regularly work with HOA communities throughout Huntersville and Mecklenburg County. We can help you select approved materials and colors, and provide the documentation needed for HOA approval before starting your project.',
   },
 ];
@@ -570,6 +570,23 @@ export default function RoofingHuntersvilleNCPage() {
         service="Roofing"
 
       />
+
+      {/* Cost Guides & Comparisons */}
+      <section className="py-10 bg-light">
+        <div className="container">
+          <h2 className="text-xl font-bold text-primary mb-4 text-center">Huntersville Roofing Cost Guides</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/asphalt-shingle-roof-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Shingle Roof Cost</Link>
+            <Link href="/metal-roof-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Metal Roof Cost</Link>
+            <Link href="/charlotte-roofing-costs-2026" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">All Roofing Costs 2026</Link>
+            <Link href="/gutter-guard-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Gutter Guard Cost</Link>
+            <Link href="/tile-roof-vs-shingles-charlotte-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Tile vs Shingles</Link>
+            <Link href="/gaf-vs-certainteed-shingles-charlotte-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">GAF vs CertainTeed</Link>
+            <Link href="/storm-damage-roof-repair" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Storm Damage Repair</Link>
+            <Link href="/roofing-lake-norman-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Lake Norman Roofing</Link>
+          </div>
+        </div>
+      </section>
 
       <CTASection
         title="Ready for Expert Roofing in Huntersville NC?"

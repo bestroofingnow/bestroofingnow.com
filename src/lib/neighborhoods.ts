@@ -45,7 +45,7 @@ export interface Neighborhood {
   // NEW: Local Context
   localData: LocalData;
 
-  // NEW: Proof of Work (optional - populated from ProjectMapIt)
+  // NEW: Proof of Work (optional - populated from local project data)
   proofOfWork?: ProofOfWork;
 }
 

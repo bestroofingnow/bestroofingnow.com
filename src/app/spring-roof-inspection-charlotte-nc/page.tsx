@@ -21,7 +21,7 @@ import {
   FileText,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Spring Roof Inspection Charlotte NC | Post-Winter Check | Best Roofing Now',
-    description:
+  description:
       'Free spring roof inspections in Charlotte NC. Catch winter damage early and prepare for spring storms. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/spring-roof-inspection-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/spring-roof-inspection-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero7,
-        width: 1200,
-        height: 630,
-        alt: 'Spring roof inspection services in Charlotte NC - Best Roofing Now post-winter experts',
+  width: 1200,
+  height: 630,
+  alt: 'Spring roof inspection services in Charlotte NC - Best Roofing Now post-winter experts',
       },
     ],
   },
@@ -69,39 +69,39 @@ export const metadata: Metadata = {
 const springServices = [
   {
     icon: Search,
-    title: 'Free Spring Inspection',
-    description: 'Comprehensive post-winter roof assessment with detailed report and photos.',
-    href: '/services/roof-inspection',
+  title: 'Free Spring Inspection',
+  description: 'Comprehensive post-winter roof assessment with detailed report and photos.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Winter Damage Assessment',
-    description: 'Identify damage from ice, snow, and freeze-thaw cycles before it worsens.',
-    href: '/services/roof-repair',
+  title: 'Winter Damage Assessment',
+  description: 'Identify damage from ice, snow, and freeze-thaw cycles before it worsens.',
+  href: '/services/roof-repair',
   },
   {
     icon: Leaf,
-    title: 'Spring Cleaning',
-    description: 'Remove winter debris, leaves, and buildup that can trap moisture and cause damage.',
-    href: '/services/gutters',
+  title: 'Spring Cleaning',
+  description: 'Remove winter debris, leaves, and buildup that can trap moisture and cause damage.',
+  href: '/services/gutters',
   },
   {
     icon: Home,
-    title: 'Gutter Inspection',
-    description: 'Check gutters and downspouts for winter damage and proper drainage.',
-    href: '/services/gutter-services',
+  title: 'Gutter Inspection',
+  description: 'Check gutters and downspouts for winter damage and proper drainage.',
+  href: '/services/gutter-services',
   },
   {
     icon: Wrench,
-    title: 'Preventive Repairs',
-    description: 'Address minor issues found during inspection before spring storms arrive.',
-    href: '/services/roof-repair',
+  title: 'Preventive Repairs',
+  description: 'Address minor issues found during inspection before spring storms arrive.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileText,
-    title: 'Documentation',
-    description: 'Detailed written report with photos for your records and insurance purposes.',
-    href: '/services/roof-inspection',
+  title: 'Documentation',
+  description: 'Detailed written report with photos for your records and insurance purposes.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -109,33 +109,33 @@ const springServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Thorough Inspections',
-    description: 'Our certified inspectors check every component - shingles, flashing, vents, gutters, and more.',
+  title: 'Thorough Inspections',
+  description: 'Our certified inspectors check every component - shingles, flashing, vents, gutters, and more.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with attention to detail honed through military service.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with attention to detail honed through military service.',
   },
   {
     icon: CheckCircle,
-    title: 'Honest Assessments',
-    description: 'We tell you exactly what we find - no upselling, no pressure, just the facts.',
+  title: 'Honest Assessments',
+  description: 'We tell you exactly what we find - no upselling, no pressure, just the facts.',
   },
   {
     icon: Users,
-    title: 'Certified Inspectors',
-    description: 'Our team is trained and certified by CertainTeed, GAF, and Owens Corning.',
+  title: 'Certified Inspectors',
+  description: 'Our team is trained and certified by CertainTeed, GAF, and Owens Corning.',
   },
   {
     icon: Clock,
-    title: 'Same-Day Reports',
-    description: 'Receive your detailed inspection report with photos the same day.',
+  title: 'Same-Day Reports',
+  description: 'Receive your detailed inspection report with photos the same day.',
   },
 ];
 
@@ -183,42 +183,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why should I get a spring roof inspection in Charlotte?',
-    answer:
+  answer:
       'Spring is the ideal time to assess any damage from Charlotte\'s winter weather. Even our mild winters include freeze-thaw cycles, occasional ice storms, and heavy rains that stress roofing materials. A spring inspection catches problems early when they\'re less expensive to repair and prepares your roof for spring thunderstorm season. It\'s also the perfect time to clean debris that accumulated over winter before it causes moisture problems.',
   },
   {
     question: 'Is the spring roof inspection really free?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers completely free, no-obligation spring roof inspections throughout Charlotte. Our certified inspector will thoroughly examine your roof, identify any issues, and provide a detailed written report with photos. There\'s no pressure to hire us for repairs - we believe in building relationships through honest, helpful service. Many homeowners use our free inspections annually as part of their home maintenance routine.',
   },
   {
     question: 'What does your spring inspection include?',
-    answer:
+  answer:
       'Our comprehensive spring inspection covers shingle condition (looking for winter damage, granule loss, cracking), flashing around vents, chimneys, and skylights, vent and boot seals, gutter condition and drainage, soffit and fascia inspection, debris assessment and removal recommendations, attic ventilation check, and documentation with photos. We provide a written report same-day with our findings and recommendations.',
   },
   {
     question: 'What signs of winter damage do you look for?',
-    answer:
+  answer:
       'We look for specific winter damage indicators including lifted or displaced shingles from wind, cracked shingles from freeze-thaw cycles, ice dam damage along eaves, flashing that\'s pulled away or compromised, vent boot cracks from temperature fluctuations, gutter damage from ice weight, soffit or fascia damage from ice backup, and any signs of moisture intrusion in the attic. Charlotte winters may be mild, but they still take a toll.',
   },
   {
     question: 'How long does a spring roof inspection take?',
-    answer:
+  answer:
       'A typical spring inspection takes 30-60 minutes depending on roof size, complexity, and accessibility. We don\'t rush - our goal is a thorough evaluation that catches problems before they become expensive repairs. If we find significant issues that warrant closer examination, we may take additional time. You\'ll receive your detailed report with photos the same day.',
   },
   {
     question: 'Should I clean my roof in spring?',
-    answer:
+  answer:
       'Yes, spring cleaning is important for your roof\'s health. Over winter, leaves, pine needles, branches, and debris accumulate in valleys, around penetrations, and in gutters. This debris traps moisture against roofing materials, promotes moss and algae growth, and can clog drainage. We recommend professional cleaning for safety, but at minimum, ensure gutters are clear and visible debris is removed from valleys.',
   },
   {
     question: 'How often should I have my roof inspected?',
-    answer:
+  answer:
       'We recommend annual roof inspections for most Charlotte homes, ideally in spring after winter. Additionally, you should have your roof inspected after any significant storm event (hail, high winds, heavy rain), when buying or selling a home, when you notice interior signs like water stains, and when your roof reaches 15+ years of age. Regular inspections catch small problems before they become costly repairs.',
   },
   {
     question: 'What happens if you find damage during the inspection?',
-    answer:
+  answer:
       'If we find damage or issues during your spring inspection, we\'ll document everything with photos and explain our findings clearly. We\'ll provide repair recommendations with estimated costs and prioritize issues from urgent to routine. There\'s no pressure to make decisions on the spot or hire us for repairs. If it\'s storm damage that might be covered by insurance, we can help you understand your options and assist with the claims process if you choose.',
   },
 ];
@@ -233,7 +233,6 @@ export default function SpringRoofInspectionCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

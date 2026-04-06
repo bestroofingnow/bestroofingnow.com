@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Tree Damage Roof Repair Charlotte NC | Storm Cleanup | Best Roofing Now',
-    description:
+  description:
       'Fast emergency response for tree damage roof repair in Charlotte NC. Insurance claim assistance and full restoration. BBB A+ rated, veteran-owned.',
-    url: `${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.stormDamage,
-        width: 1200,
-        height: 630,
-        alt: 'Tree damage roof repair service in Charlotte NC - Best Roofing Now storm cleanup',
+  width: 1200,
+  height: 630,
+  alt: 'Tree damage roof repair service in Charlotte NC - Best Roofing Now storm cleanup',
       },
     ],
   },
@@ -68,23 +68,23 @@ export const metadata: Metadata = {
 const treeDamageTypes = [
   {
     icon: TreePine,
-    title: 'Fallen Trees',
-    description: 'Complete tree falls on roof requiring emergency response, tree removal, and full roof restoration.',
+  title: 'Fallen Trees',
+  description: 'Complete tree falls on roof requiring emergency response, tree removal, and full roof restoration.',
   },
   {
     icon: AlertTriangle,
-    title: 'Large Branch Damage',
-    description: 'Heavy limbs that puncture or crush roofing materials, causing structural damage.',
+  title: 'Large Branch Damage',
+  description: 'Heavy limbs that puncture or crush roofing materials, causing structural damage.',
   },
   {
     icon: Hammer,
-    title: 'Structural Damage',
-    description: 'Rafters, trusses, or decking damaged by tree impact requiring structural repair.',
+  title: 'Structural Damage',
+  description: 'Rafters, trusses, or decking damaged by tree impact requiring structural repair.',
   },
   {
     icon: FileText,
-    title: 'Insurance Claims',
-    description: 'Full documentation and assistance with your insurance claim for covered damage.',
+  title: 'Insurance Claims',
+  description: 'Full documentation and assistance with your insurance claim for covered damage.',
   },
 ];
 
@@ -92,33 +92,33 @@ const treeDamageTypes = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: '24/7 Emergency Response',
-    description: 'Immediate response to secure your property and prevent further damage from exposure.',
+  title: '24/7 Emergency Response',
+  description: 'Immediate response to secure your property and prevent further damage from exposure.',
   },
   {
     icon: Shield,
-    title: 'Insurance Experts',
-    description: 'Extensive experience working with insurance companies to ensure fair claim settlements.',
+  title: 'Insurance Experts',
+  description: 'Extensive experience working with insurance companies to ensure fair claim settlements.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Users,
-    title: 'Full-Service Restoration',
-    description: 'From tree removal to final repairs, we handle everything so you don\'t have to.',
+  title: 'Full-Service Restoration',
+  description: 'From tree removal to final repairs, we handle everything so you don\'t have to.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability and workers comp coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability and workers comp coverage.',
   },
   {
     icon: Star,
-    title: 'Quality Guaranteed',
-    description: 'All repairs backed by our workmanship warranty and manufacturer warranties.',
+  title: 'Quality Guaranteed',
+  description: 'All repairs backed by our workmanship warranty and manufacturer warranties.',
   },
 ];
 
@@ -126,28 +126,28 @@ const whyChooseUs = [
 const repairProcess = [
   {
     step: '1',
-    title: 'Emergency Response',
-    description: 'We respond 24/7 to secure your property. Emergency tarping prevents additional water damage while we plan repairs.',
+  title: 'Emergency Response',
+  description: 'We respond 24/7 to secure your property. Emergency tarping prevents additional water damage while we plan repairs.',
   },
   {
     step: '2',
-    title: 'Tree Removal Coordination',
-    description: 'We coordinate with tree removal professionals to safely remove the tree while protecting your roof from further damage.',
+  title: 'Tree Removal Coordination',
+  description: 'We coordinate with tree removal professionals to safely remove the tree while protecting your roof from further damage.',
   },
   {
     step: '3',
-    title: 'Damage Assessment',
-    description: 'Comprehensive inspection of all damage - roof, structure, interior - with detailed documentation for insurance.',
+  title: 'Damage Assessment',
+  description: 'Comprehensive inspection of all damage - roof, structure, interior - with detailed documentation for insurance.',
   },
   {
     step: '4',
-    title: 'Insurance Assistance',
-    description: 'We prepare detailed estimates and documentation, meet with adjusters, and advocate for fair claim settlements.',
+  title: 'Insurance Assistance',
+  description: 'We prepare detailed estimates and documentation, meet with adjusters, and advocate for fair claim settlements.',
   },
   {
     step: '5',
-    title: 'Complete Restoration',
-    description: 'Full repair of all damage including structural components, roofing materials, and interior finishes if needed.',
+  title: 'Complete Restoration',
+  description: 'Full repair of all damage including structural components, roofing materials, and interior finishes if needed.',
   },
 ];
 
@@ -155,42 +155,42 @@ const repairProcess = [
 const faqs = [
   {
     question: 'A tree just fell on my roof - what should I do first?',
-    answer:
+  answer:
       'First, ensure everyone is safe and evacuate if there\'s structural danger. Call 911 if there are injuries or immediate safety hazards. Then call us at (704) 605-6047 for emergency response. We\'ll dispatch a crew to secure your property with emergency tarping. Do NOT try to remove the tree yourself - this requires professional equipment and expertise.',
   },
   {
     question: 'Does homeowners insurance cover tree damage to my roof?',
-    answer:
+  answer:
       'Yes, most homeowners insurance policies cover damage caused by fallen trees, whether from your property or a neighbor\'s. This typically includes the roof repair, tree removal from the structure, and any interior water damage. We specialize in insurance claims and will document all damage thoroughly to support your claim.',
   },
   {
     question: 'How much does tree damage roof repair cost in Charlotte?',
-    answer:
+  answer:
       'Tree damage repairs vary widely based on the extent of damage - from $1,000 for minor branch damage to $15,000+ for major structural repairs. Most tree damage is covered by insurance, so your out-of-pocket cost may only be your deductible. We provide free detailed estimates and work directly with your insurance company.',
   },
   {
     question: 'How long does it take to repair a roof after tree damage?',
-    answer:
+  answer:
       'Timeline depends on damage severity. Emergency tarping is same-day. Minor repairs may take 1-2 days. Major structural repairs can take 1-2 weeks. Insurance processing adds additional time. We work efficiently while ensuring quality repairs, and we keep you informed throughout the process.',
   },
   {
     question: 'Do you handle tree removal or just the roof repair?',
-    answer:
+  answer:
       'We coordinate the entire restoration process for you. While we partner with licensed arborists for tree removal, we manage the project from start to finish. This ensures the tree is removed safely without causing additional roof damage, and repairs begin immediately after.',
   },
   {
     question: 'What if the tree also damaged the inside of my house?',
-    answer:
+  answer:
       'We handle complete restoration including interior damage. Water damage, ceiling repairs, drywall, painting - our network of trusted contractors can repair everything. This gives you a single point of contact for your entire claim rather than juggling multiple contractors.',
   },
   {
     question: 'Will you work with my insurance company?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience with all major insurance carriers. We document all damage thoroughly with photos and detailed estimates, meet with insurance adjusters on-site, and advocate for fair claim settlements. Our detailed documentation helps ensure nothing is missed in your claim.',
   },
   {
     question: 'What if my neighbor\'s tree fell on my roof?',
-    answer:
+  answer:
       'Your homeowners insurance typically covers damage from a neighbor\'s tree falling on your property. However, if the tree was dead or obviously hazardous and the neighbor was negligent, your insurance may pursue recovery from their policy. We focus on getting your roof fixed quickly regardless of where the tree came from.',
   },
 ];
@@ -245,7 +245,6 @@ export default function TreeDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -273,7 +272,7 @@ export default function TreeDamageRoofRepairCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Charlotte storms can bring down trees without warning. When a tree damages your roof,
-              Best Roofing Now provides complete restoration from emergency tarping to final repairs.
+  Best Roofing Now provides complete restoration from emergency tarping to final repairs.
               We work directly with your insurance to make the process stress-free.
             </p>
 
@@ -388,7 +387,7 @@ export default function TreeDamageRoofRepairCharlotteNCPage() {
               <p className="text-gray text-lg mb-8">
                 Tree damage is stressful enough without dealing with multiple contractors and
                 complicated insurance claims. Best Roofing Now handles everything for you,
-                from securing your property to final restoration.
+  from securing your property to final restoration.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (

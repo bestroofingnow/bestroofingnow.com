@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Cornelius NC | Lake Norman Roofing Company | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing company serving Cornelius NC and Lake Norman. Licensed and insured with 500+ roofs installed. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-cornelius-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-cornelius-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Cornelius NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Cornelius NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Cornelius homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Cornelius homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Lake Norman businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Lake Norman businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Cornelius.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Cornelius.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Cornelius homeowners with detailed reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Cornelius homeowners with detailed reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Lake Norman residents need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Lake Norman residents need us most.',
   },
 ];
 
@@ -169,42 +169,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Do you provide roofing services in Cornelius NC?',
-    answer:
+  answer:
       'Yes! Best Roofing Now proudly serves Cornelius NC and the entire Lake Norman area from our Charlotte headquarters. We provide full roofing services including roof repair, replacement, inspection, and storm damage restoration to all Cornelius neighborhoods from Antiquity to the Peninsula.',
   },
   {
     question: 'How much does a new roof cost in Cornelius NC?',
-    answer:
+  answer:
       'Roof replacement costs in Cornelius typically range from $8,000 to $25,000 for most homes, depending on roof size, pitch, material choice, and complexity. Many Lake Norman waterfront homes with larger square footage or steeper pitches may be on the higher end. We provide free, no-obligation estimates with transparent pricing.',
   },
   {
     question: 'What roofing materials do you recommend for Lake Norman homes?',
-    answer:
+  answer:
       'For Cornelius and Lake Norman homes, we typically recommend architectural shingles from CertainTeed, GAF, or Owens Corning for their durability and wind resistance. Waterfront properties may benefit from impact-resistant shingles. Metal roofing is also popular for its longevity and ability to withstand lake-area weather conditions.',
   },
   {
     question: 'Do you handle storm damage claims for Cornelius homeowners?',
-    answer:
+  answer:
       'Absolutely. Lake Norman sees its share of severe weather, and we have extensive experience helping Cornelius homeowners with insurance claims. We provide thorough damage documentation, meet with adjusters, and advocate for fair settlements. Our goal is to restore your roof with minimal hassle.',
   },
   {
     question: 'How long does a roof replacement take in Cornelius?',
-    answer:
+  answer:
       'Most residential roof replacements in Cornelius are completed in 1-3 days. Larger Lake Norman homes or complex roof designs may take 3-5 days. We work efficiently while maintaining quality standards and always clean up thoroughly, respecting your property and HOA requirements.',
   },
   {
     question: 'Are you familiar with Cornelius HOA roofing requirements?',
-    answer:
+  answer:
       'Yes, we work with many HOA communities throughout Cornelius and Lake Norman. We understand that neighborhoods like Antiquity, The Peninsula, and Bailey\'s Glen have specific architectural guidelines. We can help you choose approved materials and colors and provide documentation for HOA approval.',
   },
   {
     question: 'Do you offer free roof inspections in Cornelius?',
-    answer:
+  answer:
       'Yes! We offer completely free roof inspections throughout Cornelius and Lake Norman. Our certified inspectors will thoroughly examine your roof and provide a detailed written report with photos. There\'s no obligation - just honest information to help you make informed decisions.',
   },
   {
     question: 'What areas near Cornelius do you also serve?',
-    answer:
+  answer:
       'In addition to Cornelius, we serve all Lake Norman communities including Davidson, Huntersville, Mooresville, Denver, and surrounding areas. Our Charlotte headquarters allows us to efficiently serve the entire Lake Norman region with the same quality service.',
   },
 ];
@@ -225,6 +225,12 @@ export default function RoofingCorneliusNCPage() {
         slug="roofing-cornelius-nc"
         distance={20}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-cornelius-nc`}
+        pageName="Roofing Cornelius NC"
+        city="Cornelius"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -254,7 +260,7 @@ export default function RoofingCorneliusNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now serves Cornelius NC and the Lake Norman area from our Charlotte headquarters. Whether
               you need roof repairs for your waterfront home or a complete replacement in Antiquity or the Peninsula,
-              our certified team delivers exceptional quality backed by industry-leading warranties.
+  our certified team delivers exceptional quality backed by industry-leading warranties.
             </p>
 
             {/* CTA Buttons */}
@@ -546,6 +552,23 @@ export default function RoofingCorneliusNCPage() {
         service="Roofing"
 
       />
+
+      {/* Cost Guides & Comparisons */}
+      <section className="py-10 bg-light">
+        <div className="container">
+          <h2 className="text-xl font-bold text-primary mb-4 text-center">Cornelius Roofing Cost Guides</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/asphalt-shingle-roof-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Shingle Roof Cost</Link>
+            <Link href="/metal-roof-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Metal Roof Cost</Link>
+            <Link href="/charlotte-roofing-costs-2026" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">All Roofing Costs 2026</Link>
+            <Link href="/gutter-guard-cost" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Gutter Guard Cost</Link>
+            <Link href="/tile-roof-vs-shingles-charlotte-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Tile vs Shingles</Link>
+            <Link href="/gaf-vs-certainteed-shingles-charlotte-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">GAF vs CertainTeed</Link>
+            <Link href="/storm-damage-roof-repair" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Storm Damage Repair</Link>
+            <Link href="/roofing-lake-norman-nc" className="bg-white rounded-full px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors">Lake Norman Roofing</Link>
+          </div>
+        </div>
+      </section>
 
       <CTASection
         title="Ready for Expert Roofing in Cornelius NC?"

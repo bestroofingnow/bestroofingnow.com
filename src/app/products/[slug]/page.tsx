@@ -35,36 +35,36 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     return { title: 'Product Not Found' };
   }
 
-  const ogImage = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png';
+  const ogImage = 'https://www.bestroofingnow.com/images/logo.jpg';
 
   return {
     title: `${product.fullName} | Charlotte NC`,
-    description: `${product.description} Get ${product.name} installed by certified ${product.brandName} contractors in Charlotte NC. ${product.warranty} warranty. Free estimates.`,
-    keywords: product.keywords,
-    alternates: {
+  description: `${product.description} Get ${product.name} installed by certified ${product.brandName} contractors in Charlotte NC. ${product.warranty} warranty. Free estimates.`,
+  keywords: product.keywords,
+  alternates: {
       canonical: productCanonicals[slug]
         ? `${SITE_CONFIG.url}${productCanonicals[slug]}`
         : `${SITE_CONFIG.url}/products/${slug}`,
     },
-    openGraph: {
+  openGraph: {
       title: `${product.fullName} | Best Roofing Now Charlotte`,
-      description: product.description,
-      url: `${SITE_CONFIG.url}/products/${slug}`,
-      type: 'article',
-      images: [
+  description: product.description,
+  url: `${SITE_CONFIG.url}/products/${slug}`,
+  type: 'article',
+  images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: `${product.fullName} in Charlotte NC - Best Roofing Now`,
+  width: 1200,
+  height: 630,
+  alt: `${product.fullName} in Charlotte NC - Best Roofing Now`,
         },
       ],
     },
-    twitter: {
+  twitter: {
       card: 'summary_large_image',
-      title: `${product.fullName} | Best Roofing Now Charlotte`,
-      description: product.description,
-      images: [ogImage],
+  title: `${product.fullName} | Best Roofing Now Charlotte`,
+  description: product.description,
+  images: [ogImage],
     },
   };
 }
@@ -74,23 +74,23 @@ function getProductFAQs(product: typeof SHINGLE_PRODUCTS[0]) {
   return [
     {
       question: `How much does ${product.fullName} cost installed?`,
-      answer: `${product.name} typically costs ${product.priceRange} installed in Charlotte. Final pricing depends on roof size, complexity, and any repairs needed. Contact us for a free, detailed estimate.`,
+  answer: `${product.name} typically costs ${product.priceRange} installed in Charlotte. Final pricing depends on roof size, complexity, and any repairs needed. Contact us for a free, detailed estimate.`,
     },
     {
       question: `What warranty comes with ${product.name}?`,
-      answer: `${product.name} includes a ${product.warranty} warranty from ${product.brandName}. As a certified contractor, we can offer enhanced warranty options. Our workmanship warranty is included with every installation.`,
+  answer: `${product.name} includes a ${product.warranty} warranty from ${product.brandName}. As a certified contractor, we can offer enhanced warranty options. Our workmanship warranty is included with every installation.`,
     },
     {
       question: `What wind rating does ${product.name} have?`,
-      answer: `${product.name} is rated for winds up to ${product.windRating}. This makes it an excellent choice for Charlotte's occasional severe weather, including thunderstorms and the remnants of tropical systems.`,
+  answer: `${product.name} is rated for winds up to ${product.windRating}. This makes it an excellent choice for Charlotte's occasional severe weather, including thunderstorms and the remnants of tropical systems.`,
     },
     {
       question: `Is ${product.name} a good choice for Charlotte homes?`,
-      answer: `${product.bestFor}. Charlotte's humid subtropical climate makes quality shingles essential, and ${product.name} is designed to perform well in these conditions.`,
+  answer: `${product.bestFor}. Charlotte's humid subtropical climate makes quality shingles essential, and ${product.name} is designed to perform well in these conditions.`,
     },
     {
       question: `What colors are available for ${product.name}?`,
-      answer: `${product.name} is available in ${product.colors.length} colors including ${product.colors.slice(0, 3).join(', ')}, and more. We can show you color samples during your free consultation.`,
+  answer: `${product.name} is available in ${product.colors.length} colors including ${product.colors.slice(0, 3).join(', ')}, and more. We can show you color samples during your free consultation.`,
     },
   ];
 }

@@ -24,7 +24,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Huntersville NC | Flat Roof & TPO Experts',
-    description:
+  description:
       'Expert commercial roofing in Huntersville NC. TPO, EPDM, flat roofing, metal roofing for warehouses, offices, retail & more. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/commercial-roofing-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing Huntersville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing Huntersville NC - Best Roofing Now',
       },
     ],
   },
@@ -76,51 +76,51 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Layers,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient thermoplastic polyolefin membranes ideal for Huntersville businesses. Highly reflective and cost-effective.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient thermoplastic polyolefin membranes ideal for Huntersville businesses. Highly reflective and cost-effective.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    description: 'Durable synthetic rubber membrane roofing with excellent weather resistance. 30+ year proven performance.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Roofing',
+  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance. 30+ year proven performance.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Building2,
-    title: 'Flat Roof Systems',
-    description: 'Complete flat roof installation and repair including built-up roofing, modified bitumen, and single-ply systems.',
-    href: '/services/commercial-roofing',
+  title: 'Flat Roof Systems',
+  description: 'Complete flat roof installation and repair including built-up roofing, modified bitumen, and single-ply systems.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Metal Roofing',
-    description: 'Standing seam and corrugated metal roofing for industrial facilities. 40-70 year lifespan.',
-    href: '/services/commercial-roofing',
+  title: 'Metal Roofing',
+  description: 'Standing seam and corrugated metal roofing for industrial facilities. 40-70 year lifespan.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Roof Coatings',
-    description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs in Huntersville.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings',
+  description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs in Huntersville.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: '24/7 emergency repairs for leaks, storm damage, and ponding water. Minimize business disruption.',
-    href: '/services/roof-repair',
+  title: 'Commercial Roof Repair',
+  description: '24/7 emergency repairs for leaks, storm damage, and ponding water. Minimize business disruption.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive commercial roof assessments with detailed reports and maintenance recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive commercial roof assessments with detailed reports and maintenance recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: DollarSign,
-    title: 'Preventive Maintenance',
-    description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
-    href: '/services/commercial-roofing',
+  title: 'Preventive Maintenance',
+  description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -128,33 +128,33 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated Commercial Roofer',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Huntersville commercial clients.`,
+  title: '#1 Rated Commercial Roofer',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Huntersville commercial clients.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity and excellence on every project.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity and excellence on every project.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Licensed & Insured',
-    description: 'NC licensed commercial contractor with $2M+ liability coverage.',
+  title: 'Fully Licensed & Insured',
+  description: 'NC licensed commercial contractor with $2M+ liability coverage.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
   },
   {
     icon: Clock,
-    title: 'Minimal Business Disruption',
-    description: 'Nights, weekends, phased installation to keep your business running.',
+  title: 'Minimal Business Disruption',
+  description: 'Nights, weekends, phased installation to keep your business running.',
   },
 ];
 
@@ -204,42 +204,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What types of commercial roofing systems do you install in Huntersville NC?',
-    answer:
+  answer:
       'Best Roofing Now installs all major commercial roofing systems in Huntersville including TPO (Thermoplastic Polyolefin), EPDM (Ethylene Propylene Diene Monomer), PVC (Polyvinyl Chloride), modified bitumen, built-up roofing (BUR), standing seam metal roofing, and various roof coating systems. We help Huntersville businesses select the optimal system based on building type, budget, and energy efficiency goals.',
   },
   {
     question: 'How much does commercial roofing cost in Huntersville NC?',
-    answer:
+  answer:
       'Commercial roofing costs in Huntersville typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, and project size. TPO and EPDM systems average $5-8 per square foot, while metal roofing ranges from $8-15 per square foot. A 10,000 sq ft flat roof replacement typically costs $50,000-$100,000. We provide free, detailed estimates.',
   },
   {
     question: 'What is the best commercial roofing material for Huntersville businesses?',
-    answer:
+  answer:
       'For Huntersville\'s climate with hot summers and occasional severe storms, TPO roofing is often the best choice for commercial buildings. TPO\'s white reflective surface reduces cooling costs by 10-30%, resists UV damage, and handles temperature fluctuations well. EPDM is excellent for buildings with rooftop equipment, while metal roofing offers superior longevity for warehouses and industrial facilities.',
   },
   {
     question: 'Do you offer emergency commercial roof repair in Huntersville?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers 24/7 emergency commercial roofing services throughout Huntersville. For active leaks and urgent situations, we typically respond within 2-4 hours. Our emergency team provides temporary repairs to prevent further damage, then schedules permanent repairs. Call (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'How long does a commercial roof last in Huntersville NC?',
-    answer:
+  answer:
       'Commercial roof lifespan in Huntersville varies by material: TPO and EPDM typically last 20-30 years, modified bitumen 15-25 years, metal roofing 40-70 years, and built-up roofing 15-30 years. Proper maintenance significantly extends roof life. Huntersville\'s sun, heat, and occasional hail make quality installation and regular maintenance essential.',
   },
   {
     question: 'Can you work around our business operations in Huntersville?',
-    answer:
+  answer:
       'Absolutely. We understand business continuity is critical for Huntersville companies. Best Roofing Now offers flexible scheduling including night shifts, weekend work, and phased installations. For retail locations at Birkdale Village or Northcross, we can complete sections after business hours to minimize customer disruption.',
   },
   {
     question: 'What commercial roof warranties do you offer?',
-    answer:
+  answer:
       'We offer industry-leading warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. Our workmanship warranty covers labor for 10-15 years depending on the project. NDL warranties cover full replacement cost with no depreciation.',
   },
   {
     question: 'Do you handle commercial roof insurance claims in Huntersville?',
-    answer:
+  answer:
       'Yes, we have extensive experience with commercial roof insurance claims in Huntersville. We provide thorough damage documentation, meet with adjusters, prepare detailed estimates, and advocate for fair settlements. Storm damage, hail damage, and wind damage to commercial roofs are often covered by property insurance.',
   },
 ];
@@ -255,7 +255,6 @@ export default function CommercialRoofingHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-huntersville-nc`}
         pageName="Commercial Roofing Huntersville NC"

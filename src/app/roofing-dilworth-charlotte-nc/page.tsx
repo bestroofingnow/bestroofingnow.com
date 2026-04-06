@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Dilworth Charlotte NC | Historic Home Experts | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor specializing in historic homes in Dilworth Charlotte NC. Expert roofing for bungalows and preservation projects. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofing-dilworth-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-dilworth-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.neighborhoods.dilworth,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Dilworth Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Dilworth Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Historic Home Roofing',
-    description: 'Specialized roofing solutions for Dilworth\'s historic bungalows and craftsman homes.',
-    href: '/services/residential-roofing',
+  title: 'Historic Home Roofing',
+  description: 'Specialized roofing solutions for Dilworth\'s historic bungalows and craftsman homes.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Expert roofing for Dilworth\'s boutique shops, restaurants, and commercial buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'Expert roofing for Dilworth\'s boutique shops, restaurants, and commercial buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Careful, preservation-friendly repairs for leaks, missing shingles, and storm damage.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Careful, preservation-friendly repairs for leaks, missing shingles, and storm damage.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full replacement with materials that honor Dilworth\'s historic character.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full replacement with materials that honor Dilworth\'s historic character.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for Dilworth\'s historic and newer homes.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for Dilworth\'s historic and newer homes.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration that respects historic preservation guidelines.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration that respects historic preservation guidelines.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Dilworth homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Dilworth homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Historic Expertise',
-    description: 'Experienced with historic preservation requirements and period-appropriate materials.',
+  title: 'Historic Expertise',
+  description: 'Experienced with historic preservation requirements and period-appropriate materials.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Quality Craftsmanship',
-    description: 'Meticulous attention to detail that honors Dilworth\'s architectural heritage.',
+  title: 'Quality Craftsmanship',
+  description: 'Meticulous attention to detail that honors Dilworth\'s architectural heritage.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when Dilworth homeowners need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when Dilworth homeowners need us most.',
   },
 ];
 
@@ -179,42 +179,42 @@ const nearbyAreas = [
 const faqs = [
   {
     question: 'Do you specialize in historic home roofing in Dilworth?',
-    answer:
+  answer:
       'Yes, Best Roofing Now has extensive experience with historic homes in Dilworth. We understand the unique challenges of working with bungalows, craftsman homes, and other period architecture. We use materials and techniques that respect the historic character while providing modern protection.',
   },
   {
     question: 'What roofing materials are appropriate for Dilworth\'s historic homes?',
-    answer:
+  answer:
       'For Dilworth\'s historic homes, we often recommend architectural shingles that mimic the look of original materials, slate-look shingles, or in some cases, standing seam metal roofing. We work with homeowners and can consult on materials that meet historic preservation guidelines while providing excellent protection.',
   },
   {
     question: 'How much does a roof replacement cost in Dilworth?',
-    answer:
+  answer:
       'Roof replacement costs in Dilworth typically range from $10,000-$25,000+ depending on home size, roof complexity, and material choice. Historic homes often have unique features that require specialized attention. We provide free, detailed estimates with transparent pricing.',
   },
   {
     question: 'Do you work with the Dilworth Historic District guidelines?',
-    answer:
+  answer:
       'Yes, we\'re familiar with the Dilworth Historic District guidelines and can help ensure your roofing project meets preservation requirements. We can recommend materials that are appropriate for historic properties and work with the Charlotte-Mecklenburg Historic Landmarks Commission when needed.',
   },
   {
     question: 'How long does a roof replacement take on a historic Dilworth home?',
-    answer:
+  answer:
       'Historic home roof replacements in Dilworth typically take 2-4 days, depending on size and complexity. Older homes often require additional care and attention, which we factor into our timeline. We work carefully to protect your home\'s historic features during the process.',
   },
   {
     question: 'Can you match the original roofing style of my Dilworth bungalow?',
-    answer:
+  answer:
       'In most cases, yes. We offer a range of materials designed to replicate the look of original roofing materials, including dimensional shingles that mimic wood shake, slate-look shingles, and period-appropriate colors. We\'ll work with you to find options that honor your home\'s character.',
   },
   {
     question: 'Do you handle insurance claims for storm damage in Dilworth?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience with insurance claims for storm damage in Dilworth. Historic homes may require specialized documentation, and we help navigate this process. We meet with adjusters and advocate for fair settlements that cover proper restoration.',
   },
   {
     question: 'What warranty do you provide on Dilworth roofing projects?',
-    answer:
+  answer:
       'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As certified installers, we can offer enhanced warranties like GAF Golden Pledge and CertainTeed SureStart PLUS protection.',
   },
 ];
@@ -229,7 +229,12 @@ export default function RoofingDilworthCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-dilworth-charlotte-nc`}
+        pageName="Roofing Dilworth Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -257,7 +262,7 @@ export default function RoofingDilworthCharlotteNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now specializes in roofing for Dilworth's charming bungalows, craftsman homes,
-              and historic properties. We combine modern roofing technology with an appreciation for
+  and historic properties. We combine modern roofing technology with an appreciation for
               Dilworth's unique architectural heritage to protect your home for generations.
             </p>
 
@@ -315,17 +320,17 @@ export default function RoofingDilworthCharlotteNCPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 Dilworth is one of Charlotte's most treasured neighborhoods, known for its tree-lined streets,
-                stunning bungalows, and rich history as Charlotte's first streetcar suburb. At Best Roofing Now,
-                we understand that these homes deserve specialized care that respects their architectural significance.
+  stunning bungalows, and rich history as Charlotte's first streetcar suburb. At Best Roofing Now,
+  we understand that these homes deserve specialized care that respects their architectural significance.
               </p>
               <p>
                 Whether you own a classic 1920s bungalow near Latta Park, a stately craftsman on East Boulevard,
-                or a beautifully restored home in the Dilworth Historic District, our team brings the expertise
+  or a beautifully restored home in the Dilworth Historic District, our team brings the expertise
                 needed to protect your investment while honoring its character.
               </p>
               <p>
                 We've helped dozens of Dilworth homeowners navigate the unique challenges of historic home roofing,
-                from matching period-appropriate materials to working within preservation guidelines. Our
+  from matching period-appropriate materials to working within preservation guidelines. Our
                 attention to detail and respect for craftsmanship make us the trusted choice for Dilworth's
                 discerning homeowners.
               </p>

@@ -23,7 +23,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -56,16 +56,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Rock Hill SC | Industrial & Flat Roof',
-    description:
+  description:
       'Expert commercial roofing in Rock Hill SC. TPO, EPDM, flat roofing, metal roofing for warehouses, industrial facilities & retail. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/commercial-roofing-rock-hill-sc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-rock-hill-sc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing Rock Hill SC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing Rock Hill SC - Best Roofing Now',
       },
     ],
   },
@@ -75,51 +75,51 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Layers,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient thermoplastic membranes ideal for Rock Hill commercial buildings and warehouses.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient thermoplastic membranes ideal for Rock Hill commercial buildings and warehouses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for industrial facilities.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Roofing',
+  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for industrial facilities.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Building2,
-    title: 'Flat Roof Systems',
-    description: 'Complete flat roof installation and repair for industrial, retail, and office buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Flat Roof Systems',
+  description: 'Complete flat roof installation and repair for industrial, retail, and office buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Industrial Roofing',
-    description: 'Specialized roofing for manufacturing plants, distribution centers, and industrial parks.',
-    href: '/services/commercial-roofing',
+  title: 'Industrial Roofing',
+  description: 'Specialized roofing for manufacturing plants, distribution centers, and industrial parks.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Roof Coatings',
-    description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings',
+  description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
-    href: '/services/roof-repair',
+  title: 'Commercial Roof Repair',
+  description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: DollarSign,
-    title: 'Preventive Maintenance',
-    description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
-    href: '/services/commercial-roofing',
+  title: 'Preventive Maintenance',
+  description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -127,33 +127,33 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated Commercial Roofer',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Rock Hill commercial clients.`,
+  title: '#1 Rated Commercial Roofer',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Rock Hill commercial clients.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity and excellence on every commercial project.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity and excellence on every commercial project.',
   },
   {
     icon: CheckCircle,
-    title: 'SC Licensed & Insured',
-    description: 'SC licensed commercial contractor with $2M+ liability coverage.',
+  title: 'SC Licensed & Insured',
+  description: 'SC licensed commercial contractor with $2M+ liability coverage.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
   },
   {
     icon: Clock,
-    title: 'Minimal Business Disruption',
-    description: 'Nights, weekends, and phased installation to keep your business running.',
+  title: 'Minimal Business Disruption',
+  description: 'Nights, weekends, and phased installation to keep your business running.',
   },
 ];
 
@@ -205,42 +205,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What commercial roofing systems do you install in Rock Hill SC?',
-    answer:
+  answer:
       'Best Roofing Now installs all major commercial roofing systems in Rock Hill including TPO (Thermoplastic Polyolefin), EPDM (Ethylene Propylene Diene Monomer), PVC (Polyvinyl Chloride), modified bitumen, built-up roofing (BUR), standing seam metal roofing, and various roof coating systems. We help Rock Hill businesses select the optimal system based on building type, budget, and energy efficiency goals.',
   },
   {
     question: 'How much does commercial roofing cost in Rock Hill SC?',
-    answer:
+  answer:
       'Commercial roofing costs in Rock Hill typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, and project size. TPO and EPDM systems average $5-8 per square foot, while metal roofing ranges from $8-15 per square foot. Large industrial projects may qualify for volume pricing. We provide free, detailed estimates.',
   },
   {
     question: 'Do you have experience with industrial roofing in Rock Hill?',
-    answer:
+  answer:
       'Yes, Best Roofing Now has extensive experience with industrial roofing in Rock Hill including manufacturing plants along the I-77 corridor, Knowledge Park facilities, and distribution centers. We understand the unique requirements of industrial buildings including proper drainage, accommodating rooftop equipment, and working around production schedules.',
   },
   {
     question: 'Do you offer emergency commercial roof repair in Rock Hill SC?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers 24/7 emergency commercial roofing services throughout Rock Hill and York County. For active leaks and urgent situations, we typically respond within 2-4 hours. Our emergency team provides temporary repairs to prevent further damage. Call (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'Are you licensed to work in South Carolina?',
-    answer:
+  answer:
       'Yes, Best Roofing Now is fully licensed to perform commercial roofing work in South Carolina. We maintain all required SC contractor licenses, comprehensive liability insurance, and workers compensation coverage. We serve Rock Hill, Fort Mill, Indian Land, and throughout York County.',
   },
   {
     question: 'How long does a commercial roof last in Rock Hill SC?',
-    answer:
+  answer:
       'Commercial roof lifespan in Rock Hill varies by material: TPO and EPDM typically last 20-30 years, modified bitumen 15-25 years, metal roofing 40-70 years, and built-up roofing 15-30 years. South Carolina\'s heat and humidity make quality installation and regular maintenance essential for maximizing roof life.',
   },
   {
     question: 'What commercial roof warranties do you offer?',
-    answer:
+  answer:
       'We offer industry-leading warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. Our workmanship warranty covers labor for 10-15 years. NDL warranties cover full replacement cost with no depreciation.',
   },
   {
     question: 'Do you handle commercial roof insurance claims in Rock Hill?',
-    answer:
+  answer:
       'Yes, we have extensive experience with commercial roof insurance claims in Rock Hill and throughout South Carolina. We provide thorough damage documentation, meet with adjusters, prepare detailed estimates, and advocate for fair settlements. Storm damage, hail damage, and wind damage are often covered.',
   },
 ];
@@ -256,7 +256,6 @@ export default function CommercialRoofingRockHillSCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-rock-hill-sc`}
         pageName="Commercial Roofing Rock Hill SC"

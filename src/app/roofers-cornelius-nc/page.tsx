@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -55,16 +55,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Cornelius NC | Lake Norman | 5-Star Rated',
-    description:
+  description:
       '5-star rated, veteran-owned roofers serving Cornelius NC and Lake Norman waterfront homes. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service.',
-    url: `${SITE_CONFIG.url}/roofers-cornelius-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-cornelius-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofers Cornelius NC - Best Roofing Now team at work',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofers Cornelius NC - Best Roofing Now team at work',
       },
     ],
   },
@@ -74,39 +74,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Cornelius homes including shingle, metal, and luxury materials.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Cornelius homes including shingle, metal, and luxury materials.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems for Cornelius businesses and commercial properties.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems for Cornelius businesses and commercial properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Cornelius.',
-    href: '/roof-repair-cornelius-nc',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Cornelius.',
+  href: '/roof-repair-cornelius-nc',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Cornelius properties.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Cornelius properties.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
-    href: '/storm-damage-roof-repair-cornelius-nc',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman.',
+  href: '/storm-damage-roof-repair-cornelius-nc',
   },
 ];
 
@@ -114,33 +114,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman area homeowners.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman area homeowners.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofers with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofers with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services for Cornelius and Lake Norman homeowners.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services for Cornelius and Lake Norman homeowners.',
   },
 ];
 
@@ -164,32 +164,32 @@ const corneliusNeighborhoods = [
 const faqs = [
   {
     question: 'How do I find the best roofers in Cornelius NC?',
-    answer:
+  answer:
       'Look for roofers with strong reviews, proper licensing, and experience with Lake Norman properties. Best Roofing Now has 500+ five-star Google reviews, BBB A+ rating, and extensive experience with Cornelius waterfront homes including The Peninsula, Jetton Road, and Antiquity. We provide free inspections and transparent estimates.',
   },
   {
     question: 'What should I look for when hiring roofers in Cornelius?',
-    answer:
+  answer:
       'Key factors include: NC roofing license, comprehensive insurance, manufacturer certifications (GAF, CertainTeed), strong local reviews, experience with Lake Norman weather patterns, and warranty options. Avoid roofers who require large upfront deposits or can\'t provide references from Cornelius customers.',
   },
   {
     question: 'How much do roofers in Cornelius NC charge?',
-    answer:
+  answer:
       'Cornelius roofing costs vary by project scope: repairs typically range $300-$1,500, inspections are often free, and full replacements run $8,000-$25,000+ for standard homes. Lake Norman waterfront properties with premium materials can be $30,000-$100,000+. We provide free detailed estimates so you know exactly what to expect.',
   },
   {
     question: 'Do you offer emergency roofing services in Cornelius?',
-    answer:
+  answer:
       'Yes, we provide 24/7 emergency roofing services throughout Cornelius and the Lake Norman area. Our emergency team can typically respond within 1-2 hours for urgent situations like active leaks, storm damage, or fallen trees. Call our emergency line anytime for immediate assistance.',
   },
   {
     question: 'Are your roofers experienced with waterfront homes?',
-    answer:
+  answer:
       'Absolutely. Our team has extensive experience with Lake Norman waterfront properties including The Peninsula, Jetton Road estates, and other lakefront communities. We understand the unique challenges of lakefront construction including wind exposure, moisture management, and premium material requirements.',
   },
   {
     question: 'What roofing warranties do you offer in Cornelius?',
-    answer:
+  answer:
       'We offer comprehensive warranty options: our own 10-year workmanship warranty on all installations, plus manufacturer warranties up to 50 years on premium materials. As GAF Master Elite and CertainTeed ShingleMaster certified contractors, we can offer extended warranty programs not available from standard roofers.',
   },
 ];
@@ -205,7 +205,6 @@ export default function RoofersCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-cornelius-nc`}
         pageName="Roofers Cornelius NC"
@@ -238,7 +237,7 @@ export default function RoofersCorneliusNCPage() {
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Best Roofing Now is the trusted choice for Cornelius homeowners seeking reliable,
-              experienced roofers. From The Peninsula to Jetton Road, we deliver quality roofing
+  experienced roofers. From The Peninsula to Jetton Road, we deliver quality roofing
               with military precision and family values.
             </p>
 
@@ -323,7 +322,7 @@ export default function RoofersCorneliusNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When you need roofers in Cornelius NC, choose a company with proven expertise,
-                exceptional reviews, and a commitment to quality that matches the standards of
+  exceptional reviews, and a commitment to quality that matches the standards of
                 Lake Norman&apos;s finest communities.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

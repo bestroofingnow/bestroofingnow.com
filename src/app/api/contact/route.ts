@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { EXTERNAL_RESOURCES } from '@/lib/constants';
+import { verifyTurnstileToken } from '@/lib/turnstile';
+import { forwardLeadToBestRoofingAI } from '@/lib/best-roofing-ai';
 
 interface ContactFormPayload {
   name: string;
@@ -8,11 +10,21 @@ interface ContactFormPayload {
   address?: string;
   service?: string;
   message?: string;
+  turnstileToken?: string;
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as ContactFormPayload;
+
+    // Verify Turnstile CAPTCHA
+    const turnstileResult = await verifyTurnstileToken(body.turnstileToken);
+    if (!turnstileResult.success) {
+      return NextResponse.json(
+        { error: turnstileResult.error || 'CAPTCHA verification failed' },
+        { status: 400 }
+      );
+    }
 
     // Validate required fields
     if (!body.name || !body.email || !body.phone) {
@@ -74,6 +86,19 @@ export async function POST(request: NextRequest) {
       console.error('GHL contact webhook error:', webhookError);
       // Don't fail the request - log for manual follow-up
     }
+
+    // Forward to Best Roofing AI (inserts lead + sends Gmail thank-you)
+    forwardLeadToBestRoofingAI({
+      firstName: body.name.split(' ')[0],
+      lastName: body.name.split(' ').slice(1).join(' ') || '',
+      email: body.email,
+      phone: body.phone,
+      address: body.address,
+      source: 'website-contact-form',
+      serviceType: body.service,
+      notes: body.message,
+      tags: ['website-contact', 'contact-form'],
+    }).catch((err) => console.error('Best Roofing AI forward error:', err));
 
     return NextResponse.json({
       success: true,

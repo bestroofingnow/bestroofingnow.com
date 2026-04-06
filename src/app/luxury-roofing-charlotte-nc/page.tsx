@@ -23,7 +23,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -55,16 +54,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Luxury Roofing Charlotte NC | Premium Roofing for Fine Homes',
-    description:
+  description:
       'Charlotte\'s luxury roofing specialists. Premium materials for $800K+ homes including slate, copper, cedar shake, and designer shingles. Free consultation.',
-    url: `${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Luxury roofing Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Luxury roofing Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -74,51 +73,51 @@ export const metadata: Metadata = {
 const premiumMaterials = [
   {
     title: 'Natural Slate',
-    description: 'The ultimate in luxury roofing. Quarried stone with 100-150 year lifespan. Timeless beauty that only improves with age.',
-    lifespan: '100-150 years',
-    priceRange: '$$$$$',
-    ideal: 'Historic estates, traditional luxury homes',
-    href: '/slate-roofing-charlotte-nc',
+  description: 'The ultimate in luxury roofing. Quarried stone with 100-150 year lifespan. Timeless beauty that only improves with age.',
+  lifespan: '100-150 years',
+  priceRange: '$$$$$',
+  ideal: 'Historic estates, traditional luxury homes',
+  href: '/slate-roofing-charlotte-nc',
   },
   {
     title: 'Copper Roofing',
-    description: 'Premium metal with stunning natural patina. Full roofs, accents, dormers, and gutters. Zero maintenance required.',
-    lifespan: '100-200 years',
-    priceRange: '$$$$$',
-    ideal: 'Historic homes, architectural accents',
-    href: '/copper-roofing-charlotte-nc',
+  description: 'Premium metal with stunning natural patina. Full roofs, accents, dormers, and gutters. Zero maintenance required.',
+  lifespan: '100-200 years',
+  priceRange: '$$$$$',
+  ideal: 'Historic homes, architectural accents',
+  href: '/copper-roofing-charlotte-nc',
   },
   {
     title: 'Designer Shingles',
-    description: 'Luxury architectural shingles that replicate slate and shake. GAF Grand Canyon, CertainTeed Grand Manor.',
-    lifespan: '40-50 years',
-    priceRange: '$$$',
-    ideal: 'Upscale homes, HOA communities',
-    href: '/designer-shingles-charlotte-nc',
+  description: 'Luxury architectural shingles that replicate slate and shake. GAF Grand Canyon, CertainTeed Grand Manor.',
+  lifespan: '40-50 years',
+  priceRange: '$$$',
+  ideal: 'Upscale homes, HOA communities',
+  href: '/designer-shingles-charlotte-nc',
   },
   {
     title: 'Cedar Shake',
-    description: 'Natural wood beauty with rustic elegance. Hand-split or tapersawn shakes with superior insulation.',
-    lifespan: '30-40 years',
-    priceRange: '$$$$',
-    ideal: 'Traditional homes, lake houses',
-    href: '/asphalt-shingle-roofing-charlotte-nc',
+  description: 'Natural wood beauty with rustic elegance. Hand-split or tapersawn shakes with superior insulation.',
+  lifespan: '30-40 years',
+  priceRange: '$$$$',
+  ideal: 'Traditional homes, lake houses',
+  href: '/asphalt-shingle-roofing-charlotte-nc',
   },
   {
     title: 'Standing Seam Metal',
-    description: 'Modern architectural metal in premium finishes. Clean lines, exceptional durability, energy efficient.',
-    lifespan: '50-70 years',
-    priceRange: '$$$$',
-    ideal: 'Contemporary homes, transitional styles',
-    href: '/metal-roofing-charlotte-nc',
+  description: 'Modern architectural metal in premium finishes. Clean lines, exceptional durability, energy efficient.',
+  lifespan: '50-70 years',
+  priceRange: '$$$$',
+  ideal: 'Contemporary homes, transitional styles',
+  href: '/metal-roofing-charlotte-nc',
   },
   {
     title: 'Clay & Concrete Tile',
-    description: 'Mediterranean and Spanish Colonial elegance. Class A fire rating with exceptional longevity.',
-    lifespan: '50-100 years',
-    priceRange: '$$$$',
-    ideal: 'Mediterranean, Spanish, Italian styles',
-    href: '/tile-roofing-charlotte-nc',
+  description: 'Mediterranean and Spanish Colonial elegance. Class A fire rating with exceptional longevity.',
+  lifespan: '50-100 years',
+  priceRange: '$$$$',
+  ideal: 'Mediterranean, Spanish, Italian styles',
+  href: '/tile-roofing-charlotte-nc',
   },
 ];
 
@@ -142,33 +141,33 @@ const luxuryNeighborhoods = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Triple Manufacturer Certified',
-    description: 'GAF Factory-Certified, CertainTeed ShingleMaster - the highest certifications available.',
+  title: 'Triple Manufacturer Certified',
+  description: 'GAF Factory-Certified, CertainTeed ShingleMaster - the highest certifications available.',
   },
   {
     icon: Landmark,
-    title: 'Historic Home Specialists',
-    description: 'Extensive experience with Charlotte\'s historic properties and preservation requirements in Myers Park, Eastover, and Dilworth.',
+  title: 'Historic Home Specialists',
+  description: 'Extensive experience with Charlotte\'s historic properties and preservation requirements in Myers Park, Eastover, and Dilworth.',
   },
   {
     icon: Gem,
-    title: 'Premium Material Expertise',
-    description: 'Specialized training in slate, copper, cedar shake, and other premium materials that require advanced installation techniques.',
+  title: 'Premium Material Expertise',
+  description: 'Specialized training in slate, copper, cedar shake, and other premium materials that require advanced installation techniques.',
   },
   {
     icon: Crown,
-    title: 'White Glove Service',
-    description: 'Dedicated project manager, detailed communication, meticulous cleanup, and respect for your property throughout the project.',
+  title: 'White Glove Service',
+  description: 'Dedicated project manager, detailed communication, meticulous cleanup, and respect for your property throughout the project.',
   },
   {
     icon: Shield,
-    title: 'Comprehensive Warranties',
-    description: 'Extended manufacturer warranties up to 50 years plus our own workmanship guarantee for complete peace of mind.',
+  title: 'Comprehensive Warranties',
+  description: 'Extended manufacturer warranties up to 50 years plus our own workmanship guarantee for complete peace of mind.',
   },
   {
     icon: Home,
-    title: 'HOA Expertise',
-    description: 'We handle HOA approval processes, material submissions, and ensure compliance with community architectural standards.',
+  title: 'HOA Expertise',
+  description: 'We handle HOA approval processes, material submissions, and ensure compliance with community architectural standards.',
   },
 ];
 
@@ -176,32 +175,32 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'What makes a roofing contractor qualified for luxury homes?',
-    answer:
+  answer:
       'Luxury home roofing requires specialized expertise that most contractors don\'t have. Key qualifications include: manufacturer certifications (GAF Master Elite, CertainTeed ShingleMaster), experience with premium materials (slate, copper, cedar), understanding of historic preservation, knowledge of HOA requirements, and attention to architectural detail. Best Roofing Now holds the highest certifications from all major manufacturers and has extensive experience in Charlotte\'s most prestigious neighborhoods.',
   },
   {
     question: 'What roofing material is best for homes over $800K?',
-    answer:
+  answer:
       'For luxury homes valued at $800K+, we typically recommend: Natural Slate for traditional estates ($1M+), Copper for accents and historic homes, Designer Shingles (GAF Grand Canyon, CertainTeed Grand Manor) for most upscale homes, and Standing Seam Metal for contemporary architecture. The best choice depends on your home\'s architectural style, HOA requirements, and personal preference. We provide free consultations to help you select the perfect material.',
   },
   {
     question: 'Do you handle HOA approval for luxury neighborhoods?',
-    answer:
+  answer:
       'Yes, we handle the entire HOA approval process for communities like Ballantyne, Piper Glen, Quail Hollow, and Providence Plantation. We prepare material samples, color selections, and documentation. We know which materials are pre-approved in most Charlotte HOAs and can navigate any special requirements. Our experience with these communities means faster approvals and no surprises.',
   },
   {
     question: 'How do you protect my property during luxury home roofing?',
-    answer:
+  answer:
       'We implement extensive property protection protocols for luxury homes including: covering landscaping and outdoor living areas, protecting driveways with boards or runners, daily cleanup of all debris, magnetic sweeping for nails, and post-project inspection. We understand that our clients have invested significantly in their properties and we treat every home with the respect it deserves.',
   },
   {
     question: 'What warranties do you offer for premium roofing?',
-    answer:
+  answer:
       'Our premium roofing installations include: manufacturer warranties up to 50 years (lifetime for certain products), enhanced wind warranties up to 130 MPH, algae resistance guarantees for humid Charlotte climate, and our own 10-year workmanship warranty. For slate and copper, we offer specialized warranties reflecting these materials\' exceptional longevity.',
   },
   {
     question: 'Do you work with architects and builders on custom homes?',
-    answer:
+  answer:
       'Yes, we regularly collaborate with Charlotte architects, custom builders, and designers on new construction and renovation projects. We can provide detailed specifications, material samples, and pricing for architectural review. Our team understands blueprints and can coordinate installation timing with other trades. We\'ve partnered with many of Charlotte\'s premier custom home builders.',
   },
 ];
@@ -216,7 +215,6 @@ export default function LuxuryRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`}
         pageName="Luxury Roofing Charlotte NC"
@@ -349,7 +347,7 @@ export default function LuxuryRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               We have extensive experience in Charlotte&apos;s most exclusive communities,
-              understanding the unique architectural styles and HOA requirements of each area.
+  understanding the unique architectural styles and HOA requirements of each area.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -378,7 +376,7 @@ export default function LuxuryRoofingCharlotteNCPage() {
             </h2>
             <p className="text-gray text-lg">
               Luxury homes require contractors with specialized expertise, premium materials,
-              and a commitment to excellence that matches your standards.
+  and a commitment to excellence that matches your standards.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

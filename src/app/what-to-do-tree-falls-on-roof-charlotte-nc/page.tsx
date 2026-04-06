@@ -51,37 +51,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'What to Do When a Tree Falls on Your Roof | Charlotte NC Emergency Guide',
-    description:
+  description:
       'Emergency guide for Charlotte homeowners with tree damage. Safety first, then documentation, insurance, and repairs.',
-    url: `${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const treeFAQs = [
   {
     question: 'What should I do immediately when a tree falls on my roof?',
-    answer:
+  answer:
       'First, ensure everyone is safe and evacuate if there\'s structural concern. Call 911 if there are injuries, gas leaks, or downed power lines. Do NOT approach downed power lines. Once safe, call your insurance company to report the damage, then contact a roofing contractor for emergency tarping.',
   },
   {
     question: 'Does homeowners insurance cover tree damage to my roof?',
-    answer:
+  answer:
       'Yes, homeowners insurance typically covers tree damage from storms, wind, and other sudden events. Your policy covers roof repairs, structural damage, and often interior damage from water intrusion. Tree removal from the structure is usually covered; removal from your yard may have limited coverage.',
   },
   {
     question: 'How long can I leave a tree on my roof?',
-    answer:
+  answer:
       'Get the tree removed as soon as safely possible - ideally within 24-48 hours. A tree on your roof causes ongoing damage: water infiltration, structural stress, and potential collapse. Your insurance may deny additional damage claims if you unreasonably delay removal and repairs.',
   },
   {
     question: 'Who removes the tree - roofers or tree service?',
-    answer:
+  answer:
       'Usually a tree service removes the tree, then roofers handle repairs. Some roofing companies coordinate both. The key is careful removal to prevent additional damage. Never let anyone cut a tree without proper equipment and insurance - improper removal can cause more damage than the tree itself.',
   },
   {
     question: 'Can I stay in my house if a tree fell on the roof?',
-    answer:
+  answer:
       'It depends on the damage severity. Small branches may be safe. Large trees causing structural damage, ceiling sagging, or utility line issues mean you should evacuate. When in doubt, stay out. Your insurance typically covers temporary housing (Additional Living Expense coverage) if your home is uninhabitable.',
   },
 ];
@@ -89,59 +89,59 @@ const treeFAQs = [
 const immediateSteps = [
   {
     step: 1,
-    title: 'Ensure Everyone is Safe',
-    icon: Users,
-    description:
+  title: 'Ensure Everyone is Safe',
+  icon: Users,
+  description:
       'Account for all family members and pets. If anyone is trapped or injured, call 911 immediately. Do not re-enter the home if you hear cracking or see structural shifting.',
-    urgent: true,
+  urgent: true,
   },
   {
     step: 2,
-    title: 'Check for Downed Power Lines',
-    icon: Zap,
-    description:
+  title: 'Check for Downed Power Lines',
+  icon: Zap,
+  description:
       'Stay at least 35 feet away from any downed lines. Call Duke Energy (800-769-3766) to report. Assume all downed lines are live and deadly. Do not touch anything in contact with power lines.',
-    urgent: true,
+  urgent: true,
   },
   {
     step: 3,
-    title: 'Check for Gas Leaks',
-    icon: AlertTriangle,
-    description:
+  title: 'Check for Gas Leaks',
+  icon: AlertTriangle,
+  description:
       'If you smell gas or hear hissing, leave immediately. Don\'t flip light switches or use phones inside. Call Piedmont Natural Gas (800-752-7504) from outside. Don\'t return until cleared.',
-    urgent: true,
+  urgent: true,
   },
   {
     step: 4,
-    title: 'Turn Off Main Water',
-    icon: Droplets,
-    description:
+  title: 'Turn Off Main Water',
+  icon: Droplets,
+  description:
       'If there\'s ceiling damage, shut off water at the main valve to prevent additional damage from burst pipes. This also prevents flooding if plumbing was damaged.',
-    urgent: false,
+  urgent: false,
   },
   {
     step: 5,
-    title: 'Document Everything',
-    icon: Camera,
-    description:
+  title: 'Document Everything',
+  icon: Camera,
+  description:
       'Take photos and videos from multiple angles - outside and inside. Photograph all damage before any cleanup. This documentation is critical for insurance claims.',
-    urgent: false,
+  urgent: false,
   },
   {
     step: 6,
-    title: 'Call Your Insurance Company',
-    icon: FileText,
-    description:
+  title: 'Call Your Insurance Company',
+  icon: FileText,
+  description:
       'Report the claim immediately. Most insurers have 24/7 claim lines. Ask about coverage for emergency tarping, tree removal, and temporary housing if needed.',
-    urgent: false,
+  urgent: false,
   },
   {
     step: 7,
-    title: 'Get Emergency Tarping',
-    icon: Home,
-    description:
+  title: 'Get Emergency Tarping',
+  icon: Home,
+  description:
       'Call a roofing company for emergency tarp service to prevent water damage. Don\'t wait for the tree to be removed - tarps can often be installed around it.',
-    urgent: false,
+  urgent: false,
   },
 ];
 
@@ -169,32 +169,32 @@ const dosDonts = {
 const insuranceTips = [
   {
     tip: 'Report Immediately',
-    description:
+  description:
       'Call your insurance company\'s 24/7 claim line right away. Delayed reporting can complicate claims.',
   },
   {
     tip: 'Document Before Cleanup',
-    description:
+  description:
       'Take extensive photos and videos before anything is moved or cleaned. Adjusters need to see original damage.',
   },
   {
     tip: 'Get Emergency Work Pre-Approved',
-    description:
+  description:
       'Ask your insurer about coverage for emergency tarping before authorizing work. Get approval in writing if possible.',
   },
   {
     tip: 'Save All Receipts',
-    description:
+  description:
       'Keep receipts for temporary housing, meals, emergency repairs, and any other storm-related expenses.',
   },
   {
     tip: 'Get Your Own Estimate',
-    description:
+  description:
       'Don\'t rely solely on the insurance adjuster\'s estimate. Get a detailed estimate from a licensed roofer.',
   },
   {
     tip: 'Know Your Coverage',
-    description:
+  description:
       'Review your policy for tree removal limits, ALE (Additional Living Expense) coverage, and deductible amount.',
   },
 ];
@@ -202,23 +202,23 @@ const insuranceTips = [
 const stormSeasons = [
   {
     season: 'Hurricane Season (June-November)',
-    risk: 'High wind events can topple large trees, especially saturated soil conditions.',
-    preparation: 'Have dead trees removed, keep insurance current, know your evacuation routes.',
+  risk: 'High wind events can topple large trees, especially saturated soil conditions.',
+  preparation: 'Have dead trees removed, keep insurance current, know your evacuation routes.',
   },
   {
     season: 'Winter Storms (December-February)',
-    risk: 'Ice accumulation adds tremendous weight to branches. Frozen ground prevents root flex.',
-    preparation: 'Trim branches over roof, remove dead limbs, have tarps on hand.',
+  risk: 'Ice accumulation adds tremendous weight to branches. Frozen ground prevents root flex.',
+  preparation: 'Trim branches over roof, remove dead limbs, have tarps on hand.',
   },
   {
     season: 'Spring Storms (March-May)',
-    risk: 'Severe thunderstorms with straight-line winds and microbursts.',
-    preparation: 'Post-winter tree inspection, clear dead wood, check insurance deductible.',
+  risk: 'Severe thunderstorms with straight-line winds and microbursts.',
+  preparation: 'Post-winter tree inspection, clear dead wood, check insurance deductible.',
   },
   {
     season: 'Summer Storms (June-August)',
-    risk: 'Isolated severe thunderstorms, saturated soil from heavy rain.',
-    preparation: 'Monitor weather, have emergency contacts ready, document tree health.',
+  risk: 'Isolated severe thunderstorms, saturated soil from heavy rain.',
+  preparation: 'Monitor weather, have emergency contacts ready, document tree health.',
   },
 ];
 
@@ -226,18 +226,18 @@ const emergencyContacts = [
   { name: 'Emergency Services', number: '911', when: 'Injuries, fire, immediate danger' },
   {
     name: 'Duke Energy',
-    number: '800-769-3766',
-    when: 'Downed power lines, outages',
+  number: '800-769-3766',
+  when: 'Downed power lines, outages',
   },
   {
     name: 'Piedmont Natural Gas',
-    number: '800-752-7504',
-    when: 'Gas leaks or smell',
+  number: '800-752-7504',
+  when: 'Gas leaks or smell',
   },
   {
     name: SITE_CONFIG.name,
-    number: SITE_CONFIG.phone,
-    when: 'Emergency tarping & roof repair',
+  number: SITE_CONFIG.phone,
+  when: 'Emergency tarping & roof repair',
   },
 ];
 
@@ -260,7 +260,7 @@ export default function WhatToDoTreeFallsOnRoofPage() {
       <FAQSchema
         faqs={treeFAQs.map((faq) => ({
           question: faq.question,
-          answer: faq.answer,
+  answer: faq.answer,
         }))}
       />
       <WebPageSchema
@@ -271,10 +271,10 @@ export default function WhatToDoTreeFallsOnRoofPage() {
       <ArticleSchema
         post={{
           title: 'What to Do When a Tree Falls on Your Roof: Charlotte NC Emergency Guide',
-          description: 'Step-by-step emergency guide when a tree damages your Charlotte home. Safety, documentation, insurance claims, and repairs.',
-          slug: 'what-to-do-tree-falls-on-roof-charlotte-nc',
-          datePublished: '2025-01-31',
-          dateModified: '2025-01-31',
+  description: 'Step-by-step emergency guide when a tree damages your Charlotte home. Safety, documentation, insurance claims, and repairs.',
+  slug: 'what-to-do-tree-falls-on-roof-charlotte-nc',
+  datePublished: '2025-01-31',
+  dateModified: '2025-01-31',
         }}
       />
 

@@ -30,7 +30,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -46,31 +45,33 @@ export const metadata: Metadata = {
     'How much does roof repair cost in Charlotte NC? 2026 pricing guide: minor repairs $150-$500, moderate $500-$1,500, major $1,500-$5,000+. Free estimates, transparent pricing, no hidden fees. Licensed & insured.',
   keywords: [
     'roof repair cost charlotte nc',
-    'how much does roof repair cost charlotte',
-    'roof repair cost near me',
-    'minor roof repair cost nc',
-    'roof leak repair cost charlotte',
-    'roof repair pricing charlotte nc',
-    'shingle repair cost charlotte',
-    'roof repair estimate charlotte nc',
-    'emergency roof repair cost charlotte',
+    'how much does roof repair cost charlotte nc',
+    'roof repair cost near me charlotte',
+    'roof leak repair cost charlotte nc',
+    'roof repair pricing charlotte nc 2026',
+    'shingle repair cost charlotte nc',
+    'emergency roof repair cost charlotte nc',
     'affordable roof repair charlotte nc',
+    'roof repair cost lake norman nc',
+    'roof repair cost lake wylie sc',
+    'roof repair cost huntersville nc',
+    'minor roof repair cost charlotte nc',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-cost-charlotte-nc`,
   },
   openGraph: {
     title: 'Roof Repair Cost Charlotte NC | 2026 Pricing Guide | Best Roofing Now',
-    description:
+  description:
       'How much does roof repair cost in Charlotte NC? 2026 pricing guide with transparent pricing. Minor repairs from $150, free estimates, no hidden fees. Licensed & insured.',
-    url: `${SITE_CONFIG.url}/roof-repair-cost-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-cost-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.repairs,
-        width: 1200,
-        height: 630,
-        alt: 'Roof repair cost Charlotte NC - Best Roofing Now transparent pricing guide',
+  width: 1200,
+  height: 630,
+  alt: 'Roof repair cost Charlotte NC - Best Roofing Now transparent pricing guide',
       },
     ],
   },
@@ -80,39 +81,39 @@ export const metadata: Metadata = {
 const repairCostTypes = [
   {
     icon: CloudRain,
-    title: 'Leak Repair',
-    priceRange: '$150 - $500',
-    description: 'The most common roof repair in Charlotte. Includes locating the source of the leak, patching the affected area, and sealing to prevent future water intrusion.',
+  title: 'Leak Repair',
+  priceRange: '$150 - $500',
+  description: 'The most common roof repair in Charlotte. Includes locating the source of the leak, patching the affected area, and sealing to prevent future water intrusion.',
   },
   {
     icon: Layers,
-    title: 'Shingle Replacement',
-    priceRange: '$200 - $800',
-    description: 'Replace damaged, cracked, or missing shingles to restore your roof\u2019s protection. Price depends on the number of shingles and area affected.',
+  title: 'Shingle Replacement',
+  priceRange: '$200 - $800',
+  description: 'Replace damaged, cracked, or missing shingles to restore your roof\u2019s protection. Price depends on the number of shingles and area affected.',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repair',
-    priceRange: '$200 - $600',
-    description: 'Fix chimney flashing, vent flashing, or wall flashing to stop water intrusion at vulnerable roof intersections and penetration points.',
+  title: 'Flashing Repair',
+  priceRange: '$200 - $600',
+  description: 'Fix chimney flashing, vent flashing, or wall flashing to stop water intrusion at vulnerable roof intersections and penetration points.',
   },
   {
     icon: TrendingUp,
-    title: 'Valley Repair',
-    priceRange: '$300 - $1,000',
-    description: 'Repair damaged roof valleys where two slopes meet. Valleys channel heavy water flow and are prone to wear, leaks, and debris buildup.',
+  title: 'Valley Repair',
+  priceRange: '$300 - $1,000',
+  description: 'Repair damaged roof valleys where two slopes meet. Valleys channel heavy water flow and are prone to wear, leaks, and debris buildup.',
   },
   {
     icon: Shield,
-    title: 'Ridge Cap Repair',
-    priceRange: '$250 - $750',
-    description: 'Replace worn, cracked, or blown-off ridge caps along the peak of your roof to prevent water penetration and wind damage.',
+  title: 'Ridge Cap Repair',
+  priceRange: '$250 - $750',
+  description: 'Replace worn, cracked, or blown-off ridge caps along the peak of your roof to prevent water penetration and wind damage.',
   },
   {
     icon: AlertTriangle,
-    title: 'Sagging / Structural Repair',
-    priceRange: '$1,000 - $5,000+',
-    description: 'Address underlying roof deck damage, sagging rafters, or structural issues. These repairs are critical and may require decking replacement.',
+  title: 'Sagging / Structural Repair',
+  priceRange: '$1,000 - $5,000+',
+  description: 'Address underlying roof deck damage, sagging rafters, or structural issues. These repairs are critical and may require decking replacement.',
   },
 ];
 
@@ -120,33 +121,33 @@ const repairCostTypes = [
 const costFactors = [
   {
     icon: Layers,
-    title: 'Roof Material Type',
-    description: 'Asphalt shingle repairs are the most affordable. Metal, tile, and slate roofs cost more to repair due to specialized materials and labor requirements.',
+  title: 'Roof Material Type',
+  description: 'Asphalt shingle repairs are the most affordable. Metal, tile, and slate roofs cost more to repair due to specialized materials and labor requirements.',
   },
   {
     icon: TrendingUp,
-    title: 'Roof Pitch & Accessibility',
-    description: 'Steeper roofs require additional safety equipment and take longer to work on. Two-story or multi-level homes also add to the cost due to increased ladder and staging needs.',
+  title: 'Roof Pitch & Accessibility',
+  description: 'Steeper roofs require additional safety equipment and take longer to work on. Two-story or multi-level homes also add to the cost due to increased ladder and staging needs.',
   },
   {
     icon: AlertTriangle,
-    title: 'Extent of Damage',
-    description: 'A small patch or single shingle replacement costs far less than repairing a large section. The more widespread the damage, the higher the repair cost.',
+  title: 'Extent of Damage',
+  description: 'A small patch or single shingle replacement costs far less than repairing a large section. The more widespread the damage, the higher the repair cost.',
   },
   {
     icon: Home,
-    title: 'Underlying Deck Damage',
-    description: 'If the plywood decking beneath your shingles is rotted or damaged, it must be replaced before new roofing is installed, significantly increasing the total cost.',
+  title: 'Underlying Deck Damage',
+  description: 'If the plywood decking beneath your shingles is rotted or damaged, it must be replaced before new roofing is installed, significantly increasing the total cost.',
   },
   {
     icon: Clock,
-    title: 'Time of Year',
-    description: 'Emergency repairs during storms or peak season (spring/summer) may cost more. Scheduling repairs in fall or winter can sometimes save money when contractors have more availability.',
+  title: 'Time of Year',
+  description: 'Emergency repairs during storms or peak season (spring/summer) may cost more. Scheduling repairs in fall or winter can sometimes save money when contractors have more availability.',
   },
   {
     icon: Shield,
-    title: 'Insurance Coverage',
-    description: 'Storm damage, hail, and fallen trees may be covered by homeowner\u2019s insurance. Filing a claim can significantly reduce your out-of-pocket roof repair cost.',
+  title: 'Insurance Coverage',
+  description: 'Storm damage, hail, and fallen trees may be covered by homeowner\u2019s insurance. Filing a claim can significantly reduce your out-of-pocket roof repair cost.',
   },
 ];
 
@@ -154,33 +155,33 @@ const costFactors = [
 const whyChooseUs = [
   {
     icon: ThumbsUp,
-    title: 'Honest Assessments',
-    description: 'We tell you the truth \u2014 whether a repair is enough or if replacement makes more sense. No upselling, just honest recommendations.',
+  title: 'Honest Assessments',
+  description: 'We tell you the truth \u2014 whether a repair is enough or if replacement makes more sense. No upselling, just honest recommendations.',
   },
   {
     icon: CheckCircle,
-    title: 'Free Roof Inspections',
-    description: 'Every repair starts with a thorough free inspection. We identify all issues so you understand exactly what needs fixing before any work begins.',
+  title: 'Free Roof Inspections',
+  description: 'Every repair starts with a thorough free inspection. We identify all issues so you understand exactly what needs fixing before any work begins.',
   },
   {
     icon: FileText,
-    title: 'Transparent Written Estimates',
-    description: 'You receive a detailed written estimate with itemized costs. No surprise fees, no hidden charges \u2014 the price we quote is the price you pay.',
+  title: 'Transparent Written Estimates',
+  description: 'You receive a detailed written estimate with itemized costs. No surprise fees, no hidden charges \u2014 the price we quote is the price you pay.',
   },
   {
     icon: Shield,
-    title: 'Insurance Claim Assistance',
-    description: 'We help you navigate the insurance claim process, providing documentation, photos, and direct communication with your adjuster.',
+  title: 'Insurance Claim Assistance',
+  description: 'We help you navigate the insurance claim process, providing documentation, photos, and direct communication with your adjuster.',
   },
   {
     icon: Zap,
-    title: 'Same-Day Emergency Service',
-    description: 'Roof leaking right now? Our emergency repair team can respond the same day to stop the damage and protect your home.',
+  title: 'Same-Day Emergency Service',
+  description: 'Roof leaking right now? Our emergency repair team can respond the same day to stop the damage and protect your home.',
   },
   {
     icon: Award,
-    title: 'Workmanship Warranty',
-    description: 'All repairs are backed by our workmanship warranty. If the repair fails, we come back and fix it at no additional cost.',
+  title: 'Workmanship Warranty',
+  description: 'All repairs are backed by our workmanship warranty. If the repair fails, we come back and fix it at no additional cost.',
   },
 ];
 
@@ -216,42 +217,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does a typical roof repair cost in Charlotte NC?',
-    answer:
+  answer:
       'A typical roof repair in Charlotte NC costs between $150 and $1,500 depending on the type and extent of the damage. Minor repairs like small leaks or single shingle replacements run $150-$500. Moderate repairs involving flashing, valleys, or multiple shingle areas cost $500-$1,500. Major structural repairs can exceed $5,000. Best Roofing Now provides free inspections and written estimates so you know the exact cost before work begins.',
   },
   {
     question: 'Does homeowner insurance cover roof repairs?',
-    answer:
+  answer:
       'Homeowner insurance typically covers roof repairs caused by sudden, accidental events like storms, hail, fallen trees, and wind damage. It usually does not cover damage from normal wear and tear, neglected maintenance, or age-related deterioration. Best Roofing Now works directly with insurance companies and can help you file a claim, provide documentation, and communicate with your adjuster to maximize your coverage.',
   },
   {
     question: 'How do I know if I need roof repair or replacement?',
-    answer:
+  answer:
       'You likely need only a repair if the damage is localized to one area, your roof is less than 15 years old, and you have just 1-2 issues. You should consider full replacement if your roof is over 20 years old, repairs would cost more than 30% of a new roof, you have multiple leaks in different areas, or there is widespread shingle deterioration. Our free inspection will help you make the right decision.',
   },
   {
     question: 'Can I get a roof repair estimate for free?',
-    answer:
+  answer:
       'Yes, Best Roofing Now provides 100% free roof repair estimates in Charlotte NC and surrounding areas. We conduct a thorough inspection of your roof, identify all issues, and provide a detailed written estimate with itemized costs. There is no obligation, no pressure, and no hidden fees. Call us or submit a request online to schedule your free estimate.',
   },
   {
     question: 'How long does a roof repair take?',
-    answer:
+  answer:
       'Most minor roof repairs in Charlotte are completed in 1-3 hours. Moderate repairs like flashing replacement or valley work typically take 3-6 hours or a half day. Major repairs involving structural work or large sections may require 1-3 days. We always provide a time estimate upfront and work efficiently to minimize disruption to your daily routine.',
   },
   {
     question: 'What is the most common roof repair in Charlotte?',
-    answer:
+  answer:
       'The most common roof repair in Charlotte NC is leak repair, often caused by damaged or missing shingles, deteriorated flashing around chimneys and vents, or clogged valleys. Charlotte\u2019s mix of summer storms, heavy rain, and occasional hail makes leak repairs a frequent need for homeowners. Catching leaks early typically costs $150-$500 and prevents much more expensive water damage to your home\u2019s interior.',
   },
   {
     question: 'Is it cheaper to repair a roof in winter?',
-    answer:
+  answer:
       'Roof repairs can sometimes be less expensive in fall and winter because it is the off-peak season for roofing contractors in Charlotte. With lower demand, contractors may offer more competitive pricing and faster scheduling. However, weather conditions must be suitable for safe, quality work. Best Roofing Now offers competitive pricing year-round and will never compromise quality regardless of the season.',
   },
   {
     question: 'How much does emergency roof repair cost?',
-    answer:
+  answer:
       'Emergency roof repair in Charlotte typically costs $300-$1,500 depending on the severity and scope of the damage. Emergency service may carry a premium over scheduled repairs due to the urgency, after-hours availability, and immediate response required. Best Roofing Now offers same-day emergency service to stop active leaks and prevent further damage to your home. Temporary tarping may be included at no extra charge for active emergencies.',
   },
 ];
@@ -266,7 +267,6 @@ export default function RoofRepairCostCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-cost-charlotte-nc`}
         pageName="Roof Repair Cost Charlotte NC"
@@ -301,7 +301,7 @@ export default function RoofRepairCostCharlotteNCPage() {
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Wondering how much roof repair costs in Charlotte? Best Roofing Now believes in complete transparency.
               From minor leak repairs starting at $150 to major structural work, we provide honest assessments,
-              free inspections, and written estimates with no surprise costs.
+  free inspections, and written estimates with no surprise costs.
             </p>
 
             {/* CTA Buttons */}

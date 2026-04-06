@@ -24,7 +24,7 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -58,16 +58,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Mooresville NC | 5-Star Rated | Best Roofing Now',
-    description:
+  description:
       '5-star rated, veteran-owned roofers serving Mooresville NC and Lake Norman. BBB A+ rated with 500+ roofs completed. Free estimates and 24/7 emergency service available.',
-    url: `${SITE_CONFIG.url}/roofers-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofers Mooresville NC - Best Roofing Now team at work',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofers Mooresville NC - Best Roofing Now team at work',
       },
     ],
   },
@@ -77,39 +77,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Lake Norman homes including shingle, metal, and tile roofing.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Lake Norman homes including shingle, metal, and tile roofing.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Mooresville businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'TPO, EPDM, flat roof systems, and commercial roof repairs for Mooresville businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in the Lake Norman area.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in the Lake Norman area.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports and photos for Mooresville homeowners.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports and photos for Mooresville homeowners.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman residents.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for Lake Norman residents.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -117,33 +117,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofers with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofers with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services for Lake Norman area homes.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services for Lake Norman area homes.',
   },
 ];
 
@@ -191,42 +191,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why should I choose Best Roofing Now over other roofers in Mooresville NC?',
-    answer:
+  answer:
       'Best Roofing Now stands out among Mooresville roofers with our 5-star Google rating, BBB A+ accreditation, and veteran-owned values. We have completed over 500 roofs in the Lake Norman area and are certified by CertainTeed, GAF, and Owens Corning. We are active members of the Lake Norman Chamber of Commerce and deeply committed to serving our neighbors in Mooresville. Our transparent pricing, free estimates, and industry-leading warranties make us the top choice for Lake Norman homeowners.',
   },
   {
     question: 'Are your roofers licensed and insured in Mooresville NC?',
-    answer:
+  answer:
       'Yes, all our roofers are fully licensed in North Carolina and we carry comprehensive general liability and workers compensation insurance. This protects you from any liability during your roofing project. We serve Mooresville and the entire Lake Norman region with the same professional standards. We are happy to provide proof of insurance and licensing upon request.',
   },
   {
     question: 'How much do roofers in Mooresville NC typically charge?',
-    answer:
+  answer:
       'Roofing costs in Mooresville vary based on the scope of work and the unique characteristics of Lake Norman homes. Minor repairs typically range from $200-$1,500, while full roof replacements range from $8,000-$25,000 for most homes. Lakefront properties may have different considerations due to moisture exposure. Factors include roof size, pitch, material choice, and complexity. We provide free, detailed estimates with transparent pricing and no hidden fees.',
   },
   {
     question: 'Do you offer free estimates for roofing work in Mooresville?',
-    answer:
+  answer:
       'Absolutely! Best Roofing Now provides completely free, no-obligation estimates for all roofing services in Mooresville and the surrounding Lake Norman area. Our certified inspectors will thoroughly examine your roof, identify any issues, and provide a detailed written proposal. There is no pressure to hire us after receiving your estimate.',
   },
   {
     question: 'How quickly can your roofers respond to emergencies in Mooresville?',
-    answer:
+  answer:
       'We offer 24/7 emergency roofing services with typical response times of 1-4 hours for urgent situations like active leaks or storm damage. Our team is strategically positioned to serve the Lake Norman corridor from Huntersville to Statesville, ensuring fast response times for Mooresville residents. Our emergency team is equipped to secure your property quickly, prevent further damage, and document everything for insurance purposes.',
   },
   {
     question: 'What areas do your Mooresville roofers serve?',
-    answer:
+  answer:
       'Our roofers serve all of Mooresville and the greater Lake Norman region including Downtown Mooresville, Morrison Plantation, Langtree, The Point, Lake Norman Shores, and all lakefront communities. We also serve nearby cities like Huntersville, Cornelius, Davidson, Statesville, Troutman, Denver, and Sherrills Ford. Whether your home is on the lake or inland, we provide the same excellent service.',
   },
   {
     question: 'What types of roofing materials work best for Lake Norman area homes?',
-    answer:
+  answer:
       'Our experienced roofers work with all types of roofing materials, but we often recommend specific options for Lake Norman homes based on moisture exposure and local weather patterns. Popular choices include architectural asphalt shingles, metal roofing (which performs excellently in humid lake environments), and tile roofing. We can help you choose the best material for your home, budget, and the unique conditions of living near Lake Norman.',
   },
   {
     question: 'Do your roofers help with insurance claims in Mooresville?',
-    answer:
+  answer:
       'Yes! We have extensive experience helping Mooresville and Lake Norman homeowners navigate insurance claims for storm damage. Our roofers provide detailed documentation, meet with adjusters on your behalf, and advocate for fair settlements. The Lake Norman area frequently experiences severe thunderstorms, and many roofs qualify for insurance coverage after these events. We help maximize your claim while handling the paperwork stress for you.',
   },
 ];
@@ -241,7 +241,6 @@ export default function RoofersMoresville() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-mooresville-nc`}
         pageName="Roofers Mooresville NC"

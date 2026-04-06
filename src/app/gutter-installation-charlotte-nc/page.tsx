@@ -14,11 +14,13 @@ import {
   Building2,
   Clock,
   Wrench,
+  DollarSign,
 } from 'lucide-react';
+import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
 import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
@@ -32,30 +34,33 @@ export const metadata: Metadata = {
   keywords: [
     'gutter installation charlotte nc',
     'seamless gutters charlotte',
+    'gutter installation charlotte nc',
     'gutter replacement charlotte nc',
-    'gutter company charlotte',
-    'gutter installers charlotte nc',
-    'aluminum gutters charlotte',
-    'gutter contractors near me',
-    'seamless gutter installation charlotte',
+    'seamless gutter installation charlotte nc',
+    'gutter company charlotte nc',
+    'gutter installers near me charlotte',
+    'aluminum gutters charlotte nc',
+    'gutter installation lake norman nc',
+    'gutter installation lake wylie sc',
+    'gutter installation huntersville nc',
+    'gutter installation mooresville nc',
     'new gutters charlotte nc',
-    'residential gutter installation',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-charlotte-nc`,
   },
   openGraph: {
     title: 'Gutter Installation Charlotte NC | Seamless Gutters | Best Roofing Now',
-    description:
+  description:
       'Expert gutter installation in Charlotte NC. Seamless aluminum, copper & steel gutters custom-fit to your home. 20+ year lifespan, no leaky joints. Free estimates from BBB A+ rated contractor.',
-    url: `${SITE_CONFIG.url}/gutter-installation-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/gutter-installation-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.gutters,
-        width: 1200,
-        height: 630,
-        alt: 'Gutter installation Charlotte NC - seamless aluminum gutters',
+  width: 1200,
+  height: 630,
+  alt: 'Gutter installation Charlotte NC - seamless aluminum gutters',
       },
     ],
   },
@@ -65,39 +70,39 @@ export const metadata: Metadata = {
 const gutterTypes = [
   {
     name: 'Seamless Aluminum Gutters',
-    description: 'The most popular choice for Charlotte homes. Custom-formed on-site from a single piece of aluminum to fit your home perfectly. No seams means no leaks.',
-    priceRange: '$6 - $12/linear ft',
-    lifespan: '20-30 years',
-    bestFor: 'Most residential homes',
-    features: ['No seams or joints', 'Rust-resistant', '25+ color options', 'Lightweight yet durable'],
-    popular: true,
+  description: 'The most popular choice for Charlotte homes. Custom-formed on-site from a single piece of aluminum to fit your home perfectly. No seams means no leaks.',
+  priceRange: '$6 - $12/linear ft',
+  lifespan: '20-30 years',
+  bestFor: 'Most residential homes',
+  features: ['No seams or joints', 'Rust-resistant', '25+ color options', 'Lightweight yet durable'],
+  popular: true,
   },
   {
     name: 'Copper Gutters',
-    description: 'Premium gutters that develop a beautiful patina over time. Exceptional durability and a distinctive look that enhances historic and upscale homes.',
-    priceRange: '$25 - $40/linear ft',
-    lifespan: '50-100 years',
-    bestFor: 'Historic homes, luxury properties',
-    features: ['Develops natural patina', 'Extremely durable', 'Never rusts', 'Increases home value'],
-    popular: false,
+  description: 'Premium gutters that develop a beautiful patina over time. Exceptional durability and a distinctive look that enhances historic and upscale homes.',
+  priceRange: '$25 - $40/linear ft',
+  lifespan: '50-100 years',
+  bestFor: 'Historic homes, luxury properties',
+  features: ['Develops natural patina', 'Extremely durable', 'Never rusts', 'Increases home value'],
+  popular: false,
   },
   {
     name: 'Galvanized Steel Gutters',
-    description: 'Heavy-duty gutters ideal for commercial properties and homes that need maximum strength. Zinc coating provides corrosion resistance.',
-    priceRange: '$8 - $15/linear ft',
-    lifespan: '15-25 years',
-    bestFor: 'Commercial buildings, heavy-duty needs',
-    features: ['Maximum strength', 'Handles heavy loads', 'Dent-resistant', 'Cost-effective durability'],
-    popular: false,
+  description: 'Heavy-duty gutters ideal for commercial properties and homes that need maximum strength. Zinc coating provides corrosion resistance.',
+  priceRange: '$8 - $15/linear ft',
+  lifespan: '15-25 years',
+  bestFor: 'Commercial buildings, heavy-duty needs',
+  features: ['Maximum strength', 'Handles heavy loads', 'Dent-resistant', 'Cost-effective durability'],
+  popular: false,
   },
   {
     name: 'Vinyl Gutters',
-    description: 'Budget-friendly option that is easy to install and maintain. Best for mild climates and budget-conscious homeowners.',
-    priceRange: '$3 - $6/linear ft',
-    lifespan: '10-15 years',
-    bestFor: 'Budget projects, DIY-friendly',
-    features: ['Most affordable', 'Never rusts', 'Easy installation', 'Low maintenance'],
-    popular: false,
+  description: 'Budget-friendly option that is easy to install and maintain. Best for mild climates and budget-conscious homeowners.',
+  priceRange: '$3 - $6/linear ft',
+  lifespan: '10-15 years',
+  bestFor: 'Budget projects, DIY-friendly',
+  features: ['Most affordable', 'Never rusts', 'Easy installation', 'Low maintenance'],
+  popular: false,
   },
 ];
 
@@ -105,33 +110,33 @@ const gutterTypes = [
 const seamlessBenefits = [
   {
     icon: Droplets,
-    title: 'No Leaks',
-    description: 'Seamless gutters eliminate the joints where traditional sectional gutters leak. One continuous piece means water flows directly to downspouts.',
+  title: 'No Leaks',
+  description: 'Seamless gutters eliminate the joints where traditional sectional gutters leak. One continuous piece means water flows directly to downspouts.',
   },
   {
     icon: Clock,
-    title: 'Longer Lifespan',
-    description: 'Without seams to fail, seamless gutters last 20-30 years compared to 10-15 years for sectional gutters.',
+  title: 'Longer Lifespan',
+  description: 'Without seams to fail, seamless gutters last 20-30 years compared to 10-15 years for sectional gutters.',
   },
   {
     icon: Wrench,
-    title: 'Less Maintenance',
-    description: 'Fewer crevices mean less debris buildup. Seamless gutters require cleaning just 1-2 times per year.',
+  title: 'Less Maintenance',
+  description: 'Fewer crevices mean less debris buildup. Seamless gutters require cleaning just 1-2 times per year.',
   },
   {
     icon: Home,
-    title: 'Custom Fit',
-    description: 'Manufactured on-site to your exact measurements. Perfect fit means better water management and enhanced curb appeal.',
+  title: 'Custom Fit',
+  description: 'Manufactured on-site to your exact measurements. Perfect fit means better water management and enhanced curb appeal.',
   },
   {
     icon: Shield,
-    title: 'Stronger Construction',
-    description: 'Continuous aluminum construction is inherently stronger than sectional pieces joined together.',
+  title: 'Stronger Construction',
+  description: 'Continuous aluminum construction is inherently stronger than sectional pieces joined together.',
   },
   {
     icon: Star,
-    title: 'Better Appearance',
-    description: 'Clean, uninterrupted lines look better than sectional gutters with visible joints every 10 feet.',
+  title: 'Better Appearance',
+  description: 'Clean, uninterrupted lines look better than sectional gutters with visible joints every 10 feet.',
   },
 ];
 
@@ -139,35 +144,35 @@ const seamlessBenefits = [
 const gutterSizes = [
   {
     size: '5-Inch K-Style',
-    capacity: '1.2 gallons per foot',
-    roofArea: 'Up to 5,500 sq ft',
-    bestFor: 'Most residential homes in Charlotte',
-    downspoutSize: '2x3 inch',
-    recommended: true,
+  capacity: '1.2 gallons per foot',
+  roofArea: 'Up to 5,500 sq ft',
+  bestFor: 'Most residential homes in Charlotte',
+  downspoutSize: '2x3 inch',
+  recommended: true,
   },
   {
     size: '6-Inch K-Style',
-    capacity: '2.0 gallons per foot',
-    roofArea: '5,500 - 8,000 sq ft',
-    bestFor: 'Large homes, steep roofs, heavy rainfall areas',
-    downspoutSize: '3x4 inch',
-    recommended: false,
+  capacity: '2.0 gallons per foot',
+  roofArea: '5,500 - 8,000 sq ft',
+  bestFor: 'Large homes, steep roofs, heavy rainfall areas',
+  downspoutSize: '3x4 inch',
+  recommended: false,
   },
   {
     size: '5-Inch Half-Round',
-    capacity: '1.0 gallons per foot',
-    roofArea: 'Up to 4,500 sq ft',
-    bestFor: 'Historic homes, traditional aesthetics',
-    downspoutSize: '3-inch round',
-    recommended: false,
+  capacity: '1.0 gallons per foot',
+  roofArea: 'Up to 4,500 sq ft',
+  bestFor: 'Historic homes, traditional aesthetics',
+  downspoutSize: '3-inch round',
+  recommended: false,
   },
   {
     size: '6-Inch Half-Round',
-    capacity: '1.5 gallons per foot',
-    roofArea: '4,500 - 7,000 sq ft',
-    bestFor: 'Larger historic or luxury homes',
-    downspoutSize: '4-inch round',
-    recommended: false,
+  capacity: '1.5 gallons per foot',
+  roofArea: '4,500 - 7,000 sq ft',
+  bestFor: 'Larger historic or luxury homes',
+  downspoutSize: '4-inch round',
+  recommended: false,
   },
 ];
 
@@ -175,35 +180,35 @@ const gutterSizes = [
 const gutterGuards = [
   {
     type: 'Micro-Mesh Guards',
-    description: 'Fine stainless steel mesh blocks even tiny debris like pine needles and shingle grit while allowing water through.',
-    priceRange: '$15 - $25/linear ft installed',
-    effectiveness: '98%+ debris blocked',
-    bestFor: 'Pine trees, heavy debris areas',
-    warranty: '20-25 years',
+  description: 'Fine stainless steel mesh blocks even tiny debris like pine needles and shingle grit while allowing water through.',
+  priceRange: '$15 - $25/linear ft installed',
+  effectiveness: '98%+ debris blocked',
+  bestFor: 'Pine trees, heavy debris areas',
+  warranty: '20-25 years',
   },
   {
     type: 'Solid Cover Guards',
-    description: 'Uses surface tension to draw water into the gutter while debris slides off. Excellent for leaves and large debris.',
-    priceRange: '$12 - $20/linear ft installed',
-    effectiveness: '95%+ debris blocked',
-    bestFor: 'Oak trees, general leaf protection',
-    warranty: '15-20 years',
+  description: 'Uses surface tension to draw water into the gutter while debris slides off. Excellent for leaves and large debris.',
+  priceRange: '$12 - $20/linear ft installed',
+  effectiveness: '95%+ debris blocked',
+  bestFor: 'Oak trees, general leaf protection',
+  warranty: '15-20 years',
   },
   {
     type: 'Screen Guards',
-    description: 'Affordable mesh or perforated screens that fit over existing gutters. Good basic protection at lower cost.',
-    priceRange: '$7 - $12/linear ft installed',
-    effectiveness: '85%+ debris blocked',
-    bestFor: 'Budget-conscious, moderate debris',
-    warranty: '10-15 years',
+  description: 'Affordable mesh or perforated screens that fit over existing gutters. Good basic protection at lower cost.',
+  priceRange: '$7 - $12/linear ft installed',
+  effectiveness: '85%+ debris blocked',
+  bestFor: 'Budget-conscious, moderate debris',
+  warranty: '10-15 years',
   },
   {
     type: 'Foam Inserts',
-    description: 'Porous foam that fits inside gutters, allowing water through while blocking debris. Most affordable option.',
-    priceRange: '$4 - $8/linear ft installed',
-    effectiveness: '75%+ debris blocked',
-    bestFor: 'Light debris, tight budgets',
-    warranty: '5-10 years',
+  description: 'Porous foam that fits inside gutters, allowing water through while blocking debris. Most affordable option.',
+  priceRange: '$4 - $8/linear ft installed',
+  effectiveness: '75%+ debris blocked',
+  bestFor: 'Light debris, tight budgets',
+  warranty: '5-10 years',
   },
 ];
 
@@ -211,36 +216,36 @@ const gutterGuards = [
 const costComparison = [
   {
     material: 'Vinyl Gutters',
-    materialCost: '$3 - $6/ft',
-    laborCost: '$2 - $4/ft',
-    totalInstalled: '$5 - $10/ft',
-    avgHomeTotal: '$600 - $1,200',
-    lifespan: '10-15 years',
+  materialCost: '$3 - $6/ft',
+  laborCost: '$2 - $4/ft',
+  totalInstalled: '$5 - $10/ft',
+  avgHomeTotal: '$600 - $1,200',
+  lifespan: '10-15 years',
   },
   {
     material: 'Seamless Aluminum',
-    materialCost: '$4 - $8/ft',
-    laborCost: '$4 - $6/ft',
-    totalInstalled: '$8 - $14/ft',
-    avgHomeTotal: '$1,000 - $1,800',
-    lifespan: '20-30 years',
-    highlight: true,
+  materialCost: '$4 - $8/ft',
+  laborCost: '$4 - $6/ft',
+  totalInstalled: '$8 - $14/ft',
+  avgHomeTotal: '$1,000 - $1,800',
+  lifespan: '20-30 years',
+  highlight: true,
   },
   {
     material: 'Galvanized Steel',
-    materialCost: '$5 - $10/ft',
-    laborCost: '$4 - $6/ft',
-    totalInstalled: '$9 - $16/ft',
-    avgHomeTotal: '$1,100 - $2,000',
-    lifespan: '15-25 years',
+  materialCost: '$5 - $10/ft',
+  laborCost: '$4 - $6/ft',
+  totalInstalled: '$9 - $16/ft',
+  avgHomeTotal: '$1,100 - $2,000',
+  lifespan: '15-25 years',
   },
   {
     material: 'Copper Gutters',
-    materialCost: '$15 - $30/ft',
-    laborCost: '$8 - $12/ft',
-    totalInstalled: '$23 - $42/ft',
-    avgHomeTotal: '$2,800 - $5,000+',
-    lifespan: '50-100 years',
+  materialCost: '$15 - $30/ft',
+  laborCost: '$8 - $12/ft',
+  totalInstalled: '$23 - $42/ft',
+  avgHomeTotal: '$2,800 - $5,000+',
+  lifespan: '50-100 years',
   },
 ];
 
@@ -248,38 +253,38 @@ const costComparison = [
 const installationProcess = [
   {
     step: 1,
-    title: 'Free Inspection & Estimate',
-    description: 'We assess your current gutters, measure your roofline, evaluate drainage needs, and provide a detailed written estimate with options.',
+  title: 'Free Inspection & Estimate',
+  description: 'We assess your current gutters, measure your roofline, evaluate drainage needs, and provide a detailed written estimate with options.',
   },
   {
     step: 2,
-    title: 'Material Selection',
-    description: 'Choose your gutter style, size, and color from our extensive options. We help you select the best solution for your home and budget.',
+  title: 'Material Selection',
+  description: 'Choose your gutter style, size, and color from our extensive options. We help you select the best solution for your home and budget.',
   },
   {
     step: 3,
-    title: 'On-Site Fabrication',
-    description: 'Our truck-mounted gutter machine creates seamless gutters on-site, custom-cut to your exact measurements.',
+  title: 'On-Site Fabrication',
+  description: 'Our truck-mounted gutter machine creates seamless gutters on-site, custom-cut to your exact measurements.',
   },
   {
     step: 4,
-    title: 'Old Gutter Removal',
-    description: 'We carefully remove existing gutters and inspect fascia boards for damage that needs repair before installation.',
+  title: 'Old Gutter Removal',
+  description: 'We carefully remove existing gutters and inspect fascia boards for damage that needs repair before installation.',
   },
   {
     step: 5,
-    title: 'Professional Installation',
-    description: 'New gutters are installed with proper slope for optimal drainage. We use heavy-duty hangers spaced every 24 inches for maximum support.',
+  title: 'Professional Installation',
+  description: 'New gutters are installed with proper slope for optimal drainage. We use heavy-duty hangers spaced every 24 inches for maximum support.',
   },
   {
     step: 6,
-    title: 'Downspout & Drainage',
-    description: 'Strategic downspout placement ensures water is directed away from your foundation. We can add underground drainage if needed.',
+  title: 'Downspout & Drainage',
+  description: 'Strategic downspout placement ensures water is directed away from your foundation. We can add underground drainage if needed.',
   },
   {
     step: 7,
-    title: 'Final Inspection & Cleanup',
-    description: 'We test the system with water, make any adjustments, and clean up completely. Your property is left spotless.',
+  title: 'Final Inspection & Cleanup',
+  description: 'We test the system with water, make any adjustments, and clean up completely. Your property is left spotless.',
   },
 ];
 
@@ -287,35 +292,35 @@ const installationProcess = [
 const faqs = [
   {
     question: 'How much does gutter installation cost in Charlotte NC?',
-    answer: 'Gutter installation in Charlotte NC typically costs $6-$14 per linear foot for seamless aluminum gutters, the most popular choice. For an average Charlotte home with 150-200 linear feet of gutters, expect to pay $1,000-$2,500 for professional installation. Factors affecting cost include gutter material (aluminum, copper, steel, vinyl), home height and accessibility, number of corners and downspouts, and whether old gutters need removal. We provide free, detailed estimates with no hidden fees.',
+  answer: 'Gutter installation in Charlotte NC typically costs $6-$14 per linear foot for seamless aluminum gutters, the most popular choice. For an average Charlotte home with 150-200 linear feet of gutters, expect to pay $1,000-$2,500 for professional installation. Factors affecting cost include gutter material (aluminum, copper, steel, vinyl), home height and accessibility, number of corners and downspouts, and whether old gutters need removal. We provide free, detailed estimates with no hidden fees.',
   },
   {
     question: 'What are seamless gutters and why are they better?',
-    answer: 'Seamless gutters are custom-formed on-site from a continuous piece of aluminum (or other metal) to fit your home exactly. Unlike sectional gutters that have joints every 10 feet, seamless gutters have connections only at corners and downspouts. This eliminates the leak-prone joints that are the #1 failure point in traditional gutters. Seamless gutters last longer (20-30 years vs 10-15), require less maintenance, look cleaner, and handle Charlotte\'s heavy rainfall better.',
+  answer: 'Seamless gutters are custom-formed on-site from a continuous piece of aluminum (or other metal) to fit your home exactly. Unlike sectional gutters that have joints every 10 feet, seamless gutters have connections only at corners and downspouts. This eliminates the leak-prone joints that are the #1 failure point in traditional gutters. Seamless gutters last longer (20-30 years vs 10-15), require less maintenance, look cleaner, and handle Charlotte\'s heavy rainfall better.',
   },
   {
     question: 'How long does gutter installation take?',
-    answer: 'Most residential gutter installations in Charlotte are completed in one day. A typical single-story home takes 3-5 hours, while larger or multi-story homes may take 6-8 hours. Our crews arrive with truck-mounted gutter machines that fabricate seamless gutters on-site, ensuring a quick and efficient installation. We schedule installations to minimize disruption to your day.',
+  answer: 'Most residential gutter installations in Charlotte are completed in one day. A typical single-story home takes 3-5 hours, while larger or multi-story homes may take 6-8 hours. Our crews arrive with truck-mounted gutter machines that fabricate seamless gutters on-site, ensuring a quick and efficient installation. We schedule installations to minimize disruption to your day.',
   },
   {
     question: 'What size gutters do I need for my Charlotte home?',
-    answer: 'Most Charlotte homes work best with 5-inch K-style gutters and 2x3-inch downspouts - this handles the vast majority of rainfall conditions. However, larger homes (over 2,500 sq ft roof area), steep roofs, or homes in areas with heavy tree cover may benefit from 6-inch gutters with 3x4-inch downspouts. During our free inspection, we calculate the optimal gutter size based on your roof area, pitch, and local rainfall data.',
+  answer: 'Most Charlotte homes work best with 5-inch K-style gutters and 2x3-inch downspouts - this handles the vast majority of rainfall conditions. However, larger homes (over 2,500 sq ft roof area), steep roofs, or homes in areas with heavy tree cover may benefit from 6-inch gutters with 3x4-inch downspouts. During our free inspection, we calculate the optimal gutter size based on your roof area, pitch, and local rainfall data.',
   },
   {
     question: 'Are gutter guards worth the investment in Charlotte?',
-    answer: 'Yes, gutter guards are often worth the investment in Charlotte due to our abundant tree coverage. Quality gutter guards can reduce cleaning from 2-4 times per year to once every 2-3 years. They also prevent clogs that cause water damage to fascia, foundation, and landscaping. The best choice depends on your specific trees - micro-mesh works best for pine needles, while solid covers excel with oak leaves. We can recommend the best option for your property.',
+  answer: 'Yes, gutter guards are often worth the investment in Charlotte due to our abundant tree coverage. Quality gutter guards can reduce cleaning from 2-4 times per year to once every 2-3 years. They also prevent clogs that cause water damage to fascia, foundation, and landscaping. The best choice depends on your specific trees - micro-mesh works best for pine needles, while solid covers excel with oak leaves. We can recommend the best option for your property.',
   },
   {
     question: 'How do I know if I need new gutters or just repairs?',
-    answer: 'Signs you need gutter replacement include: gutters pulling away from the house, multiple leaks or holes, extensive rust or corrosion, sagging or improper slope, water pooling around foundation, gutters over 20 years old, or frequent overflows during moderate rain. Minor issues like a single leak or loose hanger can usually be repaired. During our free inspection, we provide an honest assessment - we recommend repairs when they make sense and only suggest replacement when truly needed.',
+  answer: 'Signs you need gutter replacement include: gutters pulling away from the house, multiple leaks or holes, extensive rust or corrosion, sagging or improper slope, water pooling around foundation, gutters over 20 years old, or frequent overflows during moderate rain. Minor issues like a single leak or loose hanger can usually be repaired. During our free inspection, we provide an honest assessment - we recommend repairs when they make sense and only suggest replacement when truly needed.',
   },
   {
     question: 'What colors do seamless gutters come in?',
-    answer: 'Seamless aluminum gutters are available in 25+ standard colors to match virtually any home exterior. Popular choices in Charlotte include white, black, bronze, dark brown, and various shades of gray to complement contemporary and traditional homes. Custom color matching is also available for unique situations. The color is baked-on enamel that resists fading and peeling for the life of the gutters.',
+  answer: 'Seamless aluminum gutters are available in 25+ standard colors to match virtually any home exterior. Popular choices in Charlotte include white, black, bronze, dark brown, and various shades of gray to complement contemporary and traditional homes. Custom color matching is also available for unique situations. The color is baked-on enamel that resists fading and peeling for the life of the gutters.',
   },
   {
     question: 'Do you install gutters on new construction?',
-    answer: 'Yes, we work with Charlotte-area builders and homeowners on new construction gutter installation. Installing gutters during the construction process allows for optimal placement and integration with the roofing system. We coordinate with your builder\'s timeline and can also add underground drainage systems more easily during construction. Contact us early in your build process for best results.',
+  answer: 'Yes, we work with Charlotte-area builders and homeowners on new construction gutter installation. Installing gutters during the construction process allows for optimal placement and integration with the roofing system. We coordinate with your builder\'s timeline and can also add underground drainage systems more easily during construction. Contact us early in your build process for best results.',
   },
 ];
 
@@ -325,69 +330,69 @@ function GutterInstallationServiceSchema() {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `${SITE_CONFIG.url}/gutter-installation-charlotte-nc/#service`,
-    name: 'Gutter Installation Charlotte NC',
-    description: 'Professional gutter installation services in Charlotte NC. Seamless aluminum, copper, steel, and vinyl gutters custom-fit to your home. Gutter guards, repairs, and replacement.',
-    provider: {
+  name: 'Gutter Installation Charlotte NC',
+  description: 'Professional gutter installation services in Charlotte NC. Seamless aluminum, copper, steel, and vinyl gutters custom-fit to your home. Gutter guards, repairs, and replacement.',
+  provider: {
       ...getRoofingContractorIdentity(),
-      aggregateRating: {
+  aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: SITE_CONFIG.googleRating,
-        reviewCount: SITE_CONFIG.googleReviewCount,
-        bestRating: 5,
-        worstRating: 1,
+  ratingValue: SITE_CONFIG.googleRating,
+  reviewCount: SITE_CONFIG.googleReviewCount,
+  bestRating: 5,
+  worstRating: 1,
       },
     },
-    areaServed: {
+  areaServed: {
       '@type': 'City',
-      name: 'Charlotte, NC',
+  name: 'Charlotte, NC',
     },
-    serviceType: 'Gutter Installation',
-    hasOfferCatalog: {
+  serviceType: 'Gutter Installation',
+  hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Gutter Installation Services',
-      itemListElement: [
+  name: 'Gutter Installation Services',
+  itemListElement: [
         {
           '@type': 'Offer',
-          name: 'Seamless Aluminum Gutter Installation',
-          description: 'Custom seamless aluminum gutters fabricated on-site with 20-30 year lifespan',
-          priceSpecification: {
+  name: 'Seamless Aluminum Gutter Installation',
+  description: 'Custom seamless aluminum gutters fabricated on-site with 20-30 year lifespan',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '1000',
-            maxPrice: '2500',
-            unitText: 'per typical home',
+  priceCurrency: 'USD',
+  minPrice: '1000',
+  maxPrice: '2500',
+  unitText: 'per typical home',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Copper Gutter Installation',
-          description: 'Premium copper gutters with 50-100 year lifespan for luxury and historic homes',
-          priceSpecification: {
+  name: 'Copper Gutter Installation',
+  description: 'Premium copper gutters with 50-100 year lifespan for luxury and historic homes',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '2800',
-            maxPrice: '6000',
-            unitText: 'per typical home',
+  priceCurrency: 'USD',
+  minPrice: '2800',
+  maxPrice: '6000',
+  unitText: 'per typical home',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Gutter Guard Installation',
-          description: 'Professional gutter guard systems to eliminate debris buildup',
-          priceSpecification: {
+  name: 'Gutter Guard Installation',
+  description: 'Professional gutter guard systems to eliminate debris buildup',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '7',
-            maxPrice: '25',
-            unitText: 'per linear foot',
+  priceCurrency: 'USD',
+  minPrice: '7',
+  maxPrice: '25',
+  unitText: 'per linear foot',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Free Gutter Inspection',
-          description: 'Complimentary gutter assessment and installation estimate',
-          price: '0',
-          priceCurrency: 'USD',
+  name: 'Free Gutter Inspection',
+  description: 'Complimentary gutter assessment and installation estimate',
+  price: '0',
+  priceCurrency: 'USD',
         },
       ],
     },
@@ -412,7 +417,6 @@ export default function GutterInstallationCharlottePage() {
       />
       <FAQSchema faqs={faqs} />
       <GutterInstallationServiceSchema />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/gutter-installation-charlotte-nc`}
         pageName="Gutter Installation Charlotte NC"
@@ -422,18 +426,18 @@ export default function GutterInstallationCharlottePage() {
         faqs={[
           {
             question: 'How much does gutter installation cost in Charlotte NC?',
-            answer: 'Gutter installation in Charlotte NC costs $6-$15 per linear foot for seamless aluminum gutters, or $1,000-$3,000 for most homes. Copper gutters cost $25-$40 per foot. Best Roofing Now provides free estimates with transparent pricing.',
-            speakableAnswer: 'Gutter installation in Charlotte costs $6-15 per foot for aluminum, or $1,000-3,000 for most homes. Call Best Roofing Now at 704-605-6047.',
+  answer: 'Gutter installation in Charlotte NC costs $6-$15 per linear foot for seamless aluminum gutters, or $1,000-$3,000 for most homes. Copper gutters cost $25-$40 per foot. Best Roofing Now provides free estimates with transparent pricing.',
+  speakableAnswer: 'Gutter installation in Charlotte costs $6-15 per foot for aluminum, or $1,000-3,000 for most homes. Call Best Roofing Now at 704-605-6047.',
           },
           {
             question: 'Who is the best gutter installation company in Charlotte?',
-            answer: 'Best Roofing Now is Charlotte\'s top-rated gutter installation company with a 5-star Google rating and BBB A+ accreditation. This veteran-owned company installs seamless gutters made on-site with lifetime warranties.',
-            speakableAnswer: 'Best Roofing Now is Charlotte\'s top-rated gutter installer with 5-star ratings and lifetime warranties. Call 704-605-6047.',
+  answer: 'Best Roofing Now is Charlotte\'s top-rated gutter installation company with a 5-star Google rating and BBB A+ accreditation. This veteran-owned company installs seamless gutters made on-site with lifetime warranties.',
+  speakableAnswer: 'Best Roofing Now is Charlotte\'s top-rated gutter installer with 5-star ratings and lifetime warranties. Call 704-605-6047.',
           },
           {
             question: 'What size gutters do I need in Charlotte NC?',
-            answer: 'Most Charlotte homes need 5-inch gutters for standard roof sizes or 6-inch oversized gutters for large roofs with steep pitches. Best Roofing Now assesses your roof during free inspections to recommend the right gutter size.',
-            speakableAnswer: 'Most Charlotte homes need 5 or 6-inch gutters. Best Roofing Now provides free inspections to recommend the right size.',
+  answer: 'Most Charlotte homes need 5-inch gutters for standard roof sizes or 6-inch oversized gutters for large roofs with steep pitches. Best Roofing Now assesses your roof during free inspections to recommend the right gutter size.',
+  speakableAnswer: 'Most Charlotte homes need 5 or 6-inch gutters. Best Roofing Now provides free inspections to recommend the right size.',
           },
         ]}
       />
@@ -941,6 +945,82 @@ export default function GutterInstallationCharlottePage() {
               View All Service Areas
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Gutter Installation Cost Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
+                <DollarSign className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Pricing Guide</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Gutter Installation Cost in Charlotte NC
+              </h2>
+              <p className="text-gray max-w-2xl mx-auto">
+                Gutter prices vary by material, size, and home layout. Here are 2026 installed prices for Charlotte-area gutter projects.
+              </p>
+            </div>
+
+            {/* Cost Grid */}
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+                <h3 className="font-bold text-dark text-lg mb-2">5&quot; Aluminum</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$4 - $7</p>
+                <p className="text-sm text-gray mb-3">per linear foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Most popular choice</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Rust-resistant</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> 25+ color options</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-accent">
+                <h3 className="font-bold text-dark text-lg mb-2">6&quot; Oversized</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$6 - $10</p>
+                <p className="text-sm text-gray mb-3">per linear foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Handles heavy rainfall</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Ideal for large roofs</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Reduces overflow risk</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border-t-4 border-primary">
+                <h3 className="font-bold text-dark text-lg mb-2">Copper</h3>
+                <p className="text-3xl font-bold text-primary mb-1">$25 - $40</p>
+                <p className="text-sm text-gray mb-3">per linear foot installed</p>
+                <ul className="text-sm text-gray space-y-1">
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> 50-100 year lifespan</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Beautiful patina finish</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" /> Increases home value</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Total Project Cost Callout */}
+            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center mb-10">
+              <h3 className="text-xl font-bold text-dark mb-2">Total Gutter Cost for a Typical Charlotte Home</h3>
+              <p className="text-4xl font-bold text-primary mb-2">$600 - $2,400</p>
+              <p className="text-gray max-w-xl mx-auto">
+                Based on 150-200 linear feet of seamless aluminum gutters with downspouts, hangers, and end caps. Copper gutter systems for the same home run $3,750-$8,000.
+              </p>
+            </div>
+
+            {/* Citation */}
+            <CitationSection
+              heading="Gutter Installation Cost Facts"
+              citations={[
+                {
+                  topic: 'gutter installation cost Charlotte NC 2026',
+                  content:
+                    'Gutter installation in Charlotte NC costs $4 to $40 per linear foot in 2026, depending on material. Standard 5-inch seamless aluminum gutters cost $4-$7/ft, 6-inch oversized gutters $6-$10/ft, and copper gutters $25-$40/ft installed. A complete gutter system for a typical Charlotte home with 150-200 linear feet of gutters and downspouts costs $600 to $2,400 for aluminum or $3,750 to $8,000 for copper.',
+                  source: 'Best Roofing Now 2026 pricing data — Charlotte NC market',
+                },
+              ]}
+            />
           </div>
         </div>
       </section>

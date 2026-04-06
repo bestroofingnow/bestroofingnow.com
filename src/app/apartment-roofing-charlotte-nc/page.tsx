@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Apartment Roofing Charlotte NC | Multi-Family Experts',
-    description:
+  description:
       'BBB A+ rated apartment roofing experts in Charlotte NC. Multi-family specialists, property management approved, complete apartment roofing services. Free estimates.',
-    url: `${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero4,
-        width: 1200,
-        height: 630,
-        alt: 'Professional apartment roofing services in Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional apartment roofing services in Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,33 +67,33 @@ export const metadata: Metadata = {
 const apartmentServices = [
   {
     icon: Building2,
-    title: 'Full Complex Re-Roofing',
-    description: 'Complete roof replacement for apartment complexes with phased scheduling to minimize tenant disruption.',
+  title: 'Full Complex Re-Roofing',
+  description: 'Complete roof replacement for apartment complexes with phased scheduling to minimize tenant disruption.',
   },
   {
     icon: Layers,
-    title: 'Flat Roof Systems',
-    description: 'TPO, EPDM, and modified bitumen installation for multi-story apartment buildings.',
+  title: 'Flat Roof Systems',
+  description: 'TPO, EPDM, and modified bitumen installation for multi-story apartment buildings.',
   },
   {
     icon: Hammer,
-    title: 'Emergency Leak Repair',
-    description: 'Fast response for urgent repairs to protect tenants and prevent property damage.',
+  title: 'Emergency Leak Repair',
+  description: 'Fast response for urgent repairs to protect tenants and prevent property damage.',
   },
   {
     icon: FileCheck,
-    title: 'Property Management Support',
-    description: 'Seamless coordination with property managers, owners, and maintenance teams.',
+  title: 'Property Management Support',
+  description: 'Seamless coordination with property managers, owners, and maintenance teams.',
   },
   {
     icon: AlertTriangle,
-    title: 'Preventive Maintenance',
-    description: 'Regular inspection programs to catch issues early and extend roof lifespan.',
+  title: 'Preventive Maintenance',
+  description: 'Regular inspection programs to catch issues early and extend roof lifespan.',
   },
   {
     icon: DollarSign,
-    title: 'Budget Planning',
-    description: 'Multi-year capital planning assistance for property owners and management companies.',
+  title: 'Budget Planning',
+  description: 'Multi-year capital planning assistance for property owners and management companies.',
   },
 ];
 
@@ -101,33 +101,33 @@ const apartmentServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Multi-Family Experience',
-    description: 'Proven track record with apartment complexes from 10 to 500+ units.',
+  title: 'Multi-Family Experience',
+  description: 'Proven track record with apartment complexes from 10 to 500+ units.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Charlotte property owners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Charlotte property owners.`,
   },
   {
     icon: Shield,
-    title: 'Fully Insured',
-    description: 'Comprehensive liability coverage essential for multi-family properties.',
+  title: 'Fully Insured',
+  description: 'Comprehensive liability coverage essential for multi-family properties.',
   },
   {
     icon: CheckCircle,
-    title: 'Minimal Disruption',
-    description: 'We work around tenant schedules and maintain safe, clean job sites.',
+  title: 'Minimal Disruption',
+  description: 'We work around tenant schedules and maintain safe, clean job sites.',
   },
   {
     icon: Users,
-    title: 'Dedicated PM',
-    description: 'Assigned project manager for seamless property management communication.',
+  title: 'Dedicated PM',
+  description: 'Assigned project manager for seamless property management communication.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency',
-    description: 'Round-the-clock emergency response for tenant-occupied properties.',
+  title: '24/7 Emergency',
+  description: 'Round-the-clock emergency response for tenant-occupied properties.',
   },
 ];
 
@@ -155,42 +155,42 @@ const apartmentAreas = [
 const faqs = [
   {
     question: 'How do you minimize disruption to apartment tenants during roofing?',
-    answer:
+  answer:
       "Tenant comfort is a top priority. We work in phases across the property, provide advance notice to affected units, maintain clear pathways to entrances, and complete thorough daily cleanup. For larger complexes, we create detailed schedules showing which buildings are affected each day so property managers can communicate with tenants.",
   },
   {
     question: 'Can you roof an occupied apartment building?',
-    answer:
+  answer:
       "Absolutely. We routinely roof occupied multi-family properties. Our crews are trained to work safely around tenants, minimize noise during quiet hours when possible, and keep all work areas secure. We coordinate closely with property management to address any tenant concerns quickly.",
   },
   {
     question: 'What roofing systems do you recommend for apartment buildings?',
-    answer:
+  answer:
       "The best system depends on your building's design and budget. For flat roofs, we commonly install TPO (energy-efficient white membrane), EPDM rubber roofing, or modified bitumen. For pitched roofs, architectural shingles offer the best value for multi-family properties. We'll assess your buildings and recommend the most cost-effective solution.",
   },
   {
     question: 'Do you work with property management companies?',
-    answer:
+  answer:
       "Yes, we work with major property management firms across Charlotte including Greystar, MAA, Lincoln Property Company, and many regional companies. We understand their approval processes, documentation requirements, and reporting expectations. Our project managers are experienced in property management communication protocols.",
   },
   {
     question: 'How much does apartment complex roofing cost?',
-    answer:
+  answer:
       "Costs vary based on property size, roof type, and material choice. Flat roofing typically ranges from $4-$10 per square foot. For large complexes, we offer phased project options to spread costs over multiple budget years. We provide detailed proposals with multiple options so you can choose what works for your budget.",
   },
   {
     question: 'Do you handle emergency roof repairs for apartments?',
-    answer:
+  answer:
       "Yes, we offer 24/7 emergency response for apartment properties. When leaks affect occupied units, fast response is critical to prevent water damage and protect tenant safety. Our emergency team can typically respond within 1-4 hours to secure the affected area and prevent further damage.",
   },
   {
     question: 'Can you help with insurance claims after storm damage?',
-    answer:
+  answer:
       "We have extensive experience with commercial property insurance claims. We document all damage thoroughly, prepare detailed scope reports, meet with insurance adjusters, and advocate for fair settlements. For apartment complexes, we understand the urgency of quick claims resolution to protect tenants.",
   },
   {
     question: 'Do you offer preventive maintenance programs?',
-    answer:
+  answer:
       "Yes, we offer annual inspection and maintenance programs for apartment properties. Regular maintenance catches small issues before they become expensive repairs, extends roof lifespan by years, and helps you budget more accurately for capital expenditures. Ask about our property management maintenance contracts.",
   },
 ];
@@ -205,7 +205,6 @@ export default function ApartmentRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -292,7 +291,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
               <p>
                 Apartment and multi-family roofing demands a contractor who understands the stakes. When
                 your roof protects dozens or hundreds of tenants and represents a major capital investment,
-                you need a partner with proven multi-family experience.
+  you need a partner with proven multi-family experience.
               </p>
               <p>
                 Best Roofing Now has completed roofing projects for apartment complexes throughout the

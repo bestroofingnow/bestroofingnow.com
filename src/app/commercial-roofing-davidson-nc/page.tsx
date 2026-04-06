@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Davidson NC | TPO, EPDM, Flat Roofs | Best Roofing Now',
-    description: 'Expert commercial roofing in Davidson NC for businesses.',
-    url: `${SITE_CONFIG.url}/commercial-roofing-davidson-nc`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Commercial roofing in Davidson NC' }],
+  description: 'Expert commercial roofing in Davidson NC for businesses.',
+  url: `${SITE_CONFIG.url}/commercial-roofing-davidson-nc`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Commercial roofing in Davidson NC' }],
   },
 };
 

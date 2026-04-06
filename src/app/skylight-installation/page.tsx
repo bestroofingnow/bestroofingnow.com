@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Skylight Installation Charlotte NC | VELUX Certified | Best Roofing Now',
-    description: 'Professional skylight installation and repair services in Charlotte NC.',
-    url: `${SITE_CONFIG.url}/skylight-installation`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Skylight installation in Charlotte NC' }],
+  description: 'Professional skylight installation and repair services in Charlotte NC.',
+  url: `${SITE_CONFIG.url}/skylight-installation`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Skylight installation in Charlotte NC' }],
   },
 };
 
@@ -96,8 +96,8 @@ export default function SkylightInstallationPage() {
       <ServiceSchema
         service={{
           title: "Skylight Installation",
-          description: "Professional skylight installation and repair services in Charlotte NC. VELUX certified installers.",
-          slug: "skylight-installation",
+  description: "Professional skylight installation and repair services in Charlotte NC. VELUX certified installers.",
+  slug: "skylight-installation",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/skylight-installation`} pageName="Skylight Installation Charlotte NC" city="Charlotte" />

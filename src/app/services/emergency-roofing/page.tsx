@@ -56,25 +56,25 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '24/7 Emergency Roof Repair Charlotte NC | 30-Minute Response',
-    description:
+  description:
       'Roof emergency? Call now for 24/7 emergency roof repair in Charlotte. 30-minute response for storm damage, leaks & urgent repairs. (704) 605-6047',
-    url: `${SITE_CONFIG.url}/services/emergency-roofing`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/services/emergency-roofing`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.emergency,
-        width: 1200,
-        height: 630,
-        alt: '24/7 Emergency Roof Repair Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: '24/7 Emergency Roof Repair Charlotte NC - Best Roofing Now',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '24/7 Emergency Roof Repair Charlotte NC | 30-Min Response',
-    description:
+  title: '24/7 Emergency Roof Repair Charlotte NC | 30-Min Response',
+  description:
       'Roof emergency? Call (704) 605-6047 for 24/7 emergency roof repair in Charlotte. 30-minute response time.',
-    images: [IMAGES.services.emergency],
+  images: [IMAGES.services.emergency],
   },
 };
 
@@ -82,52 +82,52 @@ export const metadata: Metadata = {
 const emergencyFAQs = [
   {
     question: 'What is your response time for emergency roof repairs in Charlotte?',
-    answer:
+  answer:
       'Our average response time is 30 minutes for emergency roof repairs in the Charlotte metro area. We dispatch crews 24/7, including nights, weekends, and holidays. For active leaks during storms, we arrive as quickly as safely possible to prevent further damage to your home.',
   },
   {
     question: 'What qualifies as a 24/7 roofing emergency?',
-    answer:
+  answer:
       'Roofing emergencies include: active roof leaks during rain, storm damage with exposed decking or insulation, fallen trees on your roof, significant structural damage, fire damage to roofing, missing shingles exposing underlayment, and any situation where delay could cause additional interior water damage. When in doubt, call us - we\'ll help you assess the urgency.',
   },
   {
     question: 'Do you provide emergency roof tarping services?',
-    answer:
+  answer:
       'Yes, emergency roof tarping is our most common immediate service. We arrive with professional-grade tarps and secure them properly to prevent water intrusion until permanent repairs can be made. Our tarps are industrial-strength and can protect your home through multiple storms if needed.',
   },
   {
     question: 'How much does emergency roof repair cost in Charlotte?',
-    answer:
+  answer:
       'Emergency tarping and temporary repairs typically range from $300-$1,000 depending on roof accessibility and damage extent. Permanent repairs vary based on damage severity. Many emergency repairs are covered by homeowner\'s insurance for storm damage. We provide clear pricing before any work begins.',
   },
   {
     question: 'Do you charge extra for nights, weekends, or holiday emergency calls?',
-    answer:
+  answer:
       'We maintain fair emergency rates 24/7. While emergency service involves some additional cost compared to scheduled repairs, we don\'t price-gouge during disasters. Our emergency service fee is clearly communicated upfront, and we believe protecting your home should be affordable when you need it most.',
   },
   {
     question: 'What areas do you cover for 24/7 emergency roofing?',
-    answer:
+  answer:
       'Our 24/7 emergency roofing service covers the entire Charlotte metro area within 50 miles, including Charlotte, Huntersville, Cornelius, Davidson, Matthews, Mint Hill, Concord, Gastonia, Mooresville, Lake Norman, Fort Mill SC, Rock Hill SC, and all surrounding communities. Distance doesn\'t prevent us from responding to emergencies.',
   },
   {
     question: 'Will you help with my insurance claim for emergency roof damage?',
-    answer:
+  answer:
       'Absolutely. We document all emergency damage thoroughly with photos, measurements, and written reports specifically for insurance purposes. We work directly with adjusters, meet them on-site when needed, and advocate for fair settlements. Our documentation has helped thousands of Charlotte homeowners receive proper compensation.',
   },
   {
     question: 'What should I do while waiting for emergency roof repair?',
-    answer:
+  answer:
       'While waiting for our crew: 1) Place buckets under active leaks, 2) Move furniture and valuables away from water, 3) Take photos and videos of damage for insurance, 4) Turn off electricity to affected areas if water is near electrical fixtures, 5) Stay off the roof yourself - it\'s dangerous. Our team will handle everything safely upon arrival.',
   },
   {
     question: 'Can you repair my roof during a storm?',
-    answer:
+  answer:
       'For safety reasons, we cannot work on roofs during active lightning or severe weather. However, we can perform emergency tarping and interior protection during rain once lightning has passed. We\'ll arrive during the storm to assess and prepare, then complete exterior work as soon as conditions are safe.',
   },
   {
     question: 'Do you provide permanent repairs or just temporary fixes?',
-    answer:
+  answer:
       'Our emergency service includes both immediate protection (tarping, temporary patches) and scheduling permanent repairs. We never leave you with just a tarp - we follow through with complete restoration. Emergency response stops the damage; permanent repair restores your roof to pre-damage condition.',
   },
 ];
@@ -136,38 +136,38 @@ const emergencyFAQs = [
 const emergencyServices = [
   {
     icon: CloudRain,
-    title: 'Emergency Roof Tarping',
-    description:
+  title: 'Emergency Roof Tarping',
+  description:
       'Industrial-grade tarps properly secured to prevent water intrusion until permanent repairs.',
   },
   {
     icon: Droplets,
-    title: 'Active Leak Repair',
-    description:
+  title: 'Active Leak Repair',
+  description:
       'Immediate response to stop active roof leaks and prevent interior water damage.',
   },
   {
     icon: AlertTriangle,
-    title: 'Storm Damage Response',
-    description:
+  title: 'Storm Damage Response',
+  description:
       'Rapid assessment and emergency repairs for hail, wind, and severe storm damage.',
   },
   {
     icon: Zap,
-    title: 'Fallen Tree Removal',
-    description:
+  title: 'Fallen Tree Removal',
+  description:
       'Safe removal of trees and debris from your roof with immediate protective repairs.',
   },
   {
     icon: Camera,
-    title: 'Insurance Documentation',
-    description:
+  title: 'Insurance Documentation',
+  description:
       'Thorough photo documentation and damage reports for your insurance claim.',
   },
   {
     icon: Shield,
-    title: 'Temporary Structural Repairs',
-    description:
+  title: 'Temporary Structural Repairs',
+  description:
       'Emergency structural support and protection for severe damage situations.',
   },
 ];
@@ -233,61 +233,61 @@ export default function EmergencyRoofingPage() {
             '@context': 'https://schema.org',
             '@type': 'EmergencyService',
             '@id': `${pageUrl}/#emergency-service`,
-            name: '24/7 Emergency Roof Repair Charlotte NC',
-            description: '24/7 emergency roof repair service with 30-minute response time. Emergency tarping, leak repair, storm damage restoration.',
-            provider: getRoofingContractorIdentity(),
-            serviceType: 'Emergency Roofing Repair',
-            areaServed: [
+  name: '24/7 Emergency Roof Repair Charlotte NC',
+  description: '24/7 emergency roof repair service with 30-minute response time. Emergency tarping, leak repair, storm damage restoration.',
+  provider: getRoofingContractorIdentity(),
+  serviceType: 'Emergency Roofing Repair',
+  areaServed: [
               ...primaryCoverageAreas.map(city => ({ '@type': 'City', name: `${city}, NC` })),
               { '@type': 'City', name: 'Fort Mill, SC' },
               { '@type': 'City', name: 'Rock Hill, SC' },
             ],
-            availableChannel: {
+  availableChannel: {
               '@type': 'ServiceChannel',
-              serviceUrl: pageUrl,
-              servicePhone: SITE_CONFIG.phone,
-              availableLanguage: 'English',
+  serviceUrl: pageUrl,
+  servicePhone: SITE_CONFIG.phone,
+  availableLanguage: 'English',
             },
-            hoursAvailable: {
+  hoursAvailable: {
               '@type': 'OpeningHoursSpecification',
-              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-              opens: '00:00',
-              closes: '23:59',
+  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+  opens: '00:00',
+  closes: '23:59',
             },
-            potentialAction: {
+  potentialAction: {
               '@type': 'ReserveAction',
-              target: {
+  target: {
                 '@type': 'EntryPoint',
-                urlTemplate: `tel:${SITE_CONFIG.phoneClean}`,
-                actionPlatform: ['http://schema.org/MobileWebPlatform', 'http://schema.org/DesktopWebPlatform'],
+  urlTemplate: `tel:${SITE_CONFIG.phoneClean}`,
+  actionPlatform: ['http://schema.org/MobileWebPlatform', 'http://schema.org/DesktopWebPlatform'],
               },
-              result: {
+  result: {
                 '@type': 'Reservation',
-                name: 'Emergency Roof Repair Appointment',
+  name: 'Emergency Roof Repair Appointment',
               },
             },
-            offers: [
+  offers: [
               {
                 '@type': 'Offer',
-                name: 'Emergency Roof Tarping',
-                description: 'Industrial-grade emergency roof tarping to prevent water intrusion',
-                priceRange: '$300-$800',
-                availability: 'https://schema.org/InStock',
+  name: 'Emergency Roof Tarping',
+  description: 'Industrial-grade emergency roof tarping to prevent water intrusion',
+  priceRange: '$300-$800',
+  availability: 'https://schema.org/InStock',
               },
               {
                 '@type': 'Offer',
-                name: 'Emergency Leak Repair',
-                description: 'Immediate repair of active roof leaks',
-                priceRange: '$300-$1500',
-                availability: 'https://schema.org/InStock',
+  name: 'Emergency Leak Repair',
+  description: 'Immediate repair of active roof leaks',
+  priceRange: '$300-$1500',
+  availability: 'https://schema.org/InStock',
               },
             ],
-            aggregateRating: {
+  aggregateRating: {
               '@type': 'AggregateRating',
-              ratingValue: SITE_CONFIG.googleRating,
-              reviewCount: SITE_CONFIG.googleReviewCount,
-              bestRating: 5,
-              worstRating: 1,
+  ratingValue: SITE_CONFIG.googleRating,
+  reviewCount: SITE_CONFIG.googleReviewCount,
+  bestRating: 5,
+  worstRating: 1,
             },
           }),
         }}
@@ -381,7 +381,7 @@ export default function EmergencyRoofingPage() {
 
             <p className="text-lg text-white/80 mb-8">
               Roof emergency? Don't wait. Our emergency roofing crews are standing by 24 hours a day,
-              7 days a week, including nights, weekends, and holidays. We respond fast to protect your home.
+  7 days a week, including nights, weekends, and holidays. We respond fast to protect your home.
             </p>
 
             {/* Prominent Phone CTA */}

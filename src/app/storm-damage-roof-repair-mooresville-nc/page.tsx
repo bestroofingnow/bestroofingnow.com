@@ -25,7 +25,6 @@ import { CTASection } from '@/components/sections/CTASection';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
@@ -59,16 +58,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Mooresville NC | Insurance Claims | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated storm damage roof repair specialists serving Mooresville and Lake Norman. Free storm damage inspections and insurance claim assistance.',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-mooresville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-mooresville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.stormDamage,
-        width: 1200,
-        height: 630,
-        alt: 'Storm damage roof repair Mooresville NC - Best Roofing Now emergency services',
+  width: 1200,
+  height: 630,
+  alt: 'Storm damage roof repair Mooresville NC - Best Roofing Now emergency services',
       },
     ],
   },
@@ -78,39 +77,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: CloudRain,
-    title: 'Hail Damage Repair',
-    description: 'Expert repair for hail-damaged shingles, dents, and granule loss on Lake Norman homes.',
-    href: '/services/storm-damage',
+  title: 'Hail Damage Repair',
+  description: 'Expert repair for hail-damaged shingles, dents, and granule loss on Lake Norman homes.',
+  href: '/services/storm-damage',
   },
   {
     icon: AlertTriangle,
-    title: 'Wind Damage Restoration',
-    description: 'Fast response for blown-off shingles, lifted flashing, and wind-related roof damage.',
-    href: '/services/storm-damage',
+  title: 'Wind Damage Restoration',
+  description: 'Fast response for blown-off shingles, lifted flashing, and wind-related roof damage.',
+  href: '/services/storm-damage',
   },
   {
     icon: FileText,
-    title: 'Insurance Claim Assistance',
-    description: 'We work directly with your insurance company to maximize your storm damage claim.',
-    href: '/services/insurance-claims',
+  title: 'Insurance Claim Assistance',
+  description: 'We work directly with your insurance company to maximize your storm damage claim.',
+  href: '/services/insurance-claims',
   },
   {
     icon: Search,
-    title: 'Free Storm Damage Inspection',
-    description: 'Comprehensive damage assessment with detailed documentation for insurance purposes.',
-    href: '/services/roof-inspection',
+  title: 'Free Storm Damage Inspection',
+  description: 'Comprehensive damage assessment with detailed documentation for insurance purposes.',
+  href: '/services/roof-inspection',
   },
   {
     icon: Wrench,
-    title: 'Emergency Tarping',
-    description: 'Immediate tarping services to prevent further water damage after severe storms.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Tarping',
+  description: 'Immediate tarping services to prevent further water damage after severe storms.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Home,
-    title: 'Complete Roof Replacement',
-    description: 'Full roof replacement when storm damage is too extensive for repairs.',
-    href: '/services/roof-replacement',
+  title: 'Complete Roof Replacement',
+  description: 'Full roof replacement when storm damage is too extensive for repairs.',
+  href: '/services/roof-replacement',
   },
 ];
 
@@ -118,33 +117,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: FileText,
-    title: 'Insurance Experts',
-    description: 'Extensive experience working with insurance companies to maximize your claim settlement.',
+  title: 'Insurance Experts',
+  description: 'Extensive experience working with insurance companies to maximize your claim settlement.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency storm damage services when you need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency storm damage services when you need us most.',
   },
 ];
 
@@ -180,42 +179,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How do I know if my Mooresville roof has storm damage?',
-    answer:
+  answer:
       'Common signs of storm damage include missing or lifted shingles, visible dents on shingles or metal components, granule loss in gutters, water stains on ceilings, and dented gutters or downspouts. After any significant storm in the Lake Norman area, we recommend a free professional inspection to identify hidden damage that may not be visible from the ground.',
   },
   {
     question: 'Will my insurance cover storm damage roof repair in Mooresville NC?',
-    answer:
+  answer:
       'Most homeowner insurance policies cover storm damage from hail, wind, and fallen trees. Best Roofing Now has extensive experience working with insurance companies in the Mooresville area. We provide detailed documentation, meet with adjusters, and advocate for fair settlements. Many Lake Norman homeowners have their entire roof replacement covered by insurance after storm events.',
   },
   {
     question: 'How quickly can you respond to storm damage in Mooresville?',
-    answer:
+  answer:
       'We offer 24/7 emergency response for storm damage in Mooresville and the Lake Norman area. For active leaks or severe damage, we can typically have a crew on-site within hours to perform emergency tarping and prevent further damage. Full inspections and repairs are scheduled as quickly as possible, usually within 24-48 hours.',
   },
   {
     question: 'What should I do immediately after storm damage to my roof?',
-    answer:
+  answer:
       'First, ensure everyone is safe and document any visible damage with photos. Do not go on the roof yourself. Call Best Roofing Now at (704) 605-6047 for a free emergency inspection. We will tarp any active leaks, document all damage for your insurance claim, and guide you through the entire repair process.',
   },
   {
     question: 'How do you help with insurance claims for storm damage?',
-    answer:
+  answer:
       'Our storm damage experts handle insurance claims daily. We provide comprehensive damage documentation with photos and measurements, meet with your insurance adjuster on-site, prepare detailed repair estimates, and supplement underpaid claims when necessary. Our goal is to ensure you receive fair compensation for all storm-related damage.',
   },
   {
     question: 'Why does Lake Norman see so much storm damage?',
-    answer:
+  answer:
       'The Lake Norman area, including Mooresville, is particularly susceptible to severe weather due to its geography. The lake can intensify thunderstorms and create localized weather patterns. Additionally, Iredell County falls within a moderate hail risk zone. Regular roof inspections and prompt storm damage repair are essential for Lake Norman homeowners.',
   },
   {
     question: 'How long does storm damage repair take in Mooresville?',
-    answer:
+  answer:
       'Minor storm damage repairs can often be completed in one day. More extensive damage requiring partial or full roof replacement typically takes 1-3 days for most homes. The timeline may be affected by insurance approval processes and material availability, but we work efficiently to restore your roof as quickly as possible.',
   },
   {
     question: 'Do you offer warranties on storm damage repairs?',
-    answer:
+  answer:
       'Yes! All storm damage repairs are backed by our workmanship warranty, and we use premium materials from CertainTeed, GAF, and Owens Corning that come with manufacturer warranties. For full roof replacements, we can offer enhanced warranty options like GAF Golden Pledge with 50-year material coverage and 25-year workmanship protection.',
   },
 ];
@@ -239,7 +238,6 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/storm-damage-roof-repair-mooresville-nc`}
         pageName="Storm Damage Roof Repair Mooresville NC"
@@ -249,18 +247,18 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
         faqs={[
           {
             question: 'Who repairs storm damaged roofs in Mooresville NC?',
-            answer: 'Best Roofing Now provides expert storm damage roof repair in Mooresville and the Lake Norman area. We specialize in hail damage, wind damage, and insurance claim assistance with 24/7 emergency response. We serve Morrison Plantation, Lake Norman, Langtree, and all Mooresville neighborhoods. Call 704-605-6047 for a free inspection.',
-            speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Mooresville and Lake Norman with 24/7 emergency response. We handle hail, wind damage, and insurance claims. Call 704-605-6047.',
+  answer: 'Best Roofing Now provides expert storm damage roof repair in Mooresville and the Lake Norman area. We specialize in hail damage, wind damage, and insurance claim assistance with 24/7 emergency response. We serve Morrison Plantation, Lake Norman, Langtree, and all Mooresville neighborhoods. Call 704-605-6047 for a free inspection.',
+  speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Mooresville and Lake Norman with 24/7 emergency response. We handle hail, wind damage, and insurance claims. Call 704-605-6047.',
           },
           {
             question: 'Does insurance cover storm damage roof repair in Mooresville?',
-            answer: 'Yes, most homeowners insurance policies cover storm damage from hail, wind, and fallen trees in Mooresville NC. Best Roofing Now has extensive experience with Lake Norman insurance claims. We document damage, meet with adjusters, and help maximize your settlement. You typically pay only your deductible.',
-            speakableAnswer: 'Yes, most insurance covers storm damage to Mooresville roofs. We work with all insurers and help maximize your Lake Norman claim. You pay only your deductible.',
+  answer: 'Yes, most homeowners insurance policies cover storm damage from hail, wind, and fallen trees in Mooresville NC. Best Roofing Now has extensive experience with Lake Norman insurance claims. We document damage, meet with adjusters, and help maximize your settlement. You typically pay only your deductible.',
+  speakableAnswer: 'Yes, most insurance covers storm damage to Mooresville roofs. We work with all insurers and help maximize your Lake Norman claim. You pay only your deductible.',
           },
           {
             question: 'Why does Lake Norman get so much storm damage?',
-            answer: 'The Lake Norman area including Mooresville is susceptible to severe weather due to geography. The lake can intensify thunderstorms and create localized weather patterns. Iredell County falls within a moderate hail risk zone. Regular roof inspections and prompt storm damage repair are essential for Lake Norman homeowners.',
-            speakableAnswer: 'Lake Norman intensifies thunderstorms and creates unique weather patterns. The area has moderate hail risk. Regular inspections are essential for Mooresville homeowners.',
+  answer: 'The Lake Norman area including Mooresville is susceptible to severe weather due to geography. The lake can intensify thunderstorms and create localized weather patterns. Iredell County falls within a moderate hail risk zone. Regular roof inspections and prompt storm damage repair are essential for Lake Norman homeowners.',
+  speakableAnswer: 'Lake Norman intensifies thunderstorms and creates unique weather patterns. The area has moderate hail risk. Regular inspections are essential for Mooresville homeowners.',
           },
         ]}
       />
@@ -386,7 +384,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When your Lake Norman home is damaged by a storm, you need a roofing company that responds fast,
-                works with your insurance, and delivers quality repairs. Best Roofing Now has helped hundreds of
+  works with your insurance, and delivers quality repairs. Best Roofing Now has helped hundreds of
                 Mooresville homeowners recover from storm damage.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

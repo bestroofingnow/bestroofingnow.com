@@ -23,7 +23,6 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -55,16 +54,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Copper Roofing Charlotte NC | Premium Copper Roof Installation',
-    description:
+  description:
       'Premium copper roofing for Charlotte\'s finest homes. Expert installation of copper roofs, accents, and gutters. 100+ year lifespan with stunning natural patina.',
-    url: `${SITE_CONFIG.url}/copper-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/copper-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Copper roofing installation Charlotte NC - Best Roofing Now luxury roofing',
+  width: 1200,
+  height: 630,
+  alt: 'Copper roofing installation Charlotte NC - Best Roofing Now luxury roofing',
       },
     ],
   },
@@ -74,33 +73,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '100+ Year Lifespan',
-    description: 'Copper roofs can last 100-200 years with minimal maintenance, far exceeding any other roofing material.',
+  title: '100+ Year Lifespan',
+  description: 'Copper roofs can last 100-200 years with minimal maintenance, far exceeding any other roofing material.',
   },
   {
     icon: Gem,
-    title: 'Stunning Natural Patina',
-    description: 'Develops a beautiful verdigris patina over time, giving your home timeless character and elegance.',
+  title: 'Stunning Natural Patina',
+  description: 'Develops a beautiful verdigris patina over time, giving your home timeless character and elegance.',
   },
   {
     icon: Shield,
-    title: 'Corrosion Resistant',
-    description: 'Naturally resistant to corrosion, mold, mildew, and pest damage. Never rusts or deteriorates.',
+  title: 'Corrosion Resistant',
+  description: 'Naturally resistant to corrosion, mold, mildew, and pest damage. Never rusts or deteriorates.',
   },
   {
     icon: Leaf,
-    title: '100% Recyclable',
-    description: 'Completely sustainable and recyclable. Copper roofs are eco-friendly and retain value even after removal.',
+  title: '100% Recyclable',
+  description: 'Completely sustainable and recyclable. Copper roofs are eco-friendly and retain value even after removal.',
   },
   {
     icon: Sparkles,
-    title: 'Increases Property Value',
-    description: 'Copper roofing significantly increases curb appeal and property value for luxury homes and estates.',
+  title: 'Increases Property Value',
+  description: 'Copper roofing significantly increases curb appeal and property value for luxury homes and estates.',
   },
   {
     icon: Zap,
-    title: 'Lightweight & Strong',
-    description: 'Lighter than slate or tile but incredibly durable. Ideal for historic homes and complex architectural details.',
+  title: 'Lightweight & Strong',
+  description: 'Lighter than slate or tile but incredibly durable. Ideal for historic homes and complex architectural details.',
   },
 ];
 
@@ -108,23 +107,23 @@ const benefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Certified Copper Craftsmen',
-    description: 'Our team includes certified copper roofing specialists trained in traditional and modern copper installation techniques.',
+  title: 'Certified Copper Craftsmen',
+  description: 'Our team includes certified copper roofing specialists trained in traditional and modern copper installation techniques.',
   },
   {
     icon: Landmark,
-    title: 'Historic Home Expertise',
-    description: 'Extensive experience with Charlotte\'s historic properties in Myers Park, Eastover, Dilworth, and Elizabeth.',
+  title: 'Historic Home Expertise',
+  description: 'Extensive experience with Charlotte\'s historic properties in Myers Park, Eastover, Dilworth, and Elizabeth.',
   },
   {
     icon: Home,
-    title: 'Custom Fabrication',
-    description: 'On-site copper fabrication for custom flashing, dormers, bay windows, and architectural details.',
+  title: 'Custom Fabrication',
+  description: 'On-site copper fabrication for custom flashing, dormers, bay windows, and architectural details.',
   },
   {
     icon: Shield,
-    title: 'Premium Materials',
-    description: 'We use only 16oz and 20oz cold-rolled copper sheets from trusted American suppliers.',
+  title: 'Premium Materials',
+  description: 'We use only 16oz and 20oz cold-rolled copper sheets from trusted American suppliers.',
   },
 ];
 
@@ -132,23 +131,23 @@ const whyChooseUs = [
 const applications = [
   {
     title: 'Full Copper Roofs',
-    description: 'Complete standing seam or flat seam copper roof installations for luxury homes and estates.',
-    ideal: 'Historic estates, custom homes, architectural landmarks',
+  description: 'Complete standing seam or flat seam copper roof installations for luxury homes and estates.',
+  ideal: 'Historic estates, custom homes, architectural landmarks',
   },
   {
     title: 'Copper Accents & Details',
-    description: 'Bay window roofs, cupolas, dormers, and turrets that add elegance and character.',
-    ideal: 'Traditional homes, Tudor style, French Provincial',
+  description: 'Bay window roofs, cupolas, dormers, and turrets that add elegance and character.',
+  ideal: 'Traditional homes, Tudor style, French Provincial',
   },
   {
     title: 'Copper Gutters & Downspouts',
-    description: 'Half-round copper gutters and custom downspouts that complement any roofing system.',
-    ideal: 'Any premium home seeking lasting curb appeal',
+  description: 'Half-round copper gutters and custom downspouts that complement any roofing system.',
+  ideal: 'Any premium home seeking lasting curb appeal',
   },
   {
     title: 'Copper Flashing & Chimney Caps',
-    description: 'Critical waterproofing details that protect vulnerable roof areas with lasting beauty.',
-    ideal: 'All roofing systems, especially slate and cedar shake',
+  description: 'Critical waterproofing details that protect vulnerable roof areas with lasting beauty.',
+  ideal: 'All roofing systems, especially slate and cedar shake',
   },
 ];
 
@@ -170,32 +169,32 @@ const luxuryNeighborhoods = [
 const faqs = [
   {
     question: 'How much does copper roofing cost in Charlotte NC?',
-    answer:
+  answer:
       'Copper roofing is a premium investment, typically ranging from $25-$40 per square foot installed for standing seam copper in Charlotte. Full copper roofs on luxury homes typically cost $40,000-$100,000+ depending on size and complexity. Copper accents like bay windows or dormers are more affordable at $3,000-$15,000. While the upfront cost is higher than other materials, copper\'s 100+ year lifespan and zero maintenance make it cost-effective long-term.',
   },
   {
     question: 'How long does a copper roof last?',
-    answer:
+  answer:
       'Copper roofs routinely last 100-200 years with virtually no maintenance required. Many copper roofs installed over a century ago in Europe and America are still in excellent condition today. The copper develops a protective patina that actually strengthens over time. Compared to asphalt shingles (15-25 years), copper provides exceptional long-term value.',
   },
   {
     question: 'Will my copper roof turn green?',
-    answer:
+  answer:
       'Yes, copper naturally develops a green patina (verdigris) over time - this is highly desirable and adds character. New copper starts bright and shiny, then darkens to brown over 1-5 years, and gradually develops the signature green patina over 10-30 years depending on climate. If you prefer to maintain the bright copper look, we can apply protective coatings, though most homeowners embrace the natural patina.',
   },
   {
     question: 'Is copper roofing good for Charlotte\'s climate?',
-    answer:
+  answer:
       'Copper is excellent for Charlotte\'s humid subtropical climate. It handles heat, humidity, heavy rain, and occasional ice/snow exceptionally well. Copper naturally resists mold, mildew, and algae that can affect other roofing materials in our climate. It also performs well during Charlotte\'s occasional severe storms and high winds.',
   },
   {
     question: 'What areas of my roof can have copper?',
-    answer:
+  answer:
       'Copper can be used for full roofs, partial applications, or accents. Common copper applications include: standing seam copper roofs, bay window roofs, dormers, cupolas, turrets, porch roofs, chimney caps and flashing, valleys and transition areas, and copper gutters with downspouts. Many Charlotte homeowners start with copper accents and later add more copper elements.',
   },
   {
     question: 'Do you install copper roofing in Myers Park and Eastover?',
-    answer:
+  answer:
       'Yes, we have extensive experience installing copper roofing in Charlotte\'s most prestigious neighborhoods including Myers Park, Eastover, Dilworth, SouthPark, Foxcroft, Quail Hollow, and Lake Norman waterfront communities. Our team understands the architectural styles and historic preservation requirements in these areas. We work closely with homeowners and architects to ensure copper installations complement the existing character.',
   },
 ];
@@ -211,7 +210,6 @@ export default function CopperRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/copper-roofing-charlotte-nc`}
         pageName="Copper Roofing Charlotte NC"

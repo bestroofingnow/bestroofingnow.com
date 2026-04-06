@@ -29,17 +29,17 @@ export function Header() {
 
   return (
     <>
-      {/* Top Bar - hidden on mobile */}
+      {/* Top Bar - Maintenance Plan CTA */}
       <div className="bg-primary text-white py-2 text-sm hidden md:block">
         <div className="container flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <span>Veteran-Founded, Family Owned</span>
-            <span>|</span>
-            <span>Residential, Commercial & Industrial</span>
-            <span>|</span>
-            <span>BBB A+ Rated</span>
-            <span>|</span>
-            <span>Open 24 Hours</span>
+            <span className="font-semibold">🛡️ Save $1,000s — Get Your Roof Maintenance Plan Today Starting at Just $49/mo</span>
+            <Link
+              href="/services/roof-maintenance"
+              className="bg-accent hover:bg-accent-dark text-white text-xs font-bold px-3 py-1 rounded-full transition-colors"
+            >
+              Learn More
+            </Link>
           </div>
           <a
             href={`tel:${SITE_CONFIG.phoneClean}`}
@@ -60,7 +60,7 @@ export function Header() {
             {/* Logo - critical for LCP */}
             <Link href="/" className="flex-shrink-0 flex items-center">
               <Image
-                src="https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png"
+                src="/images/logo.jpg"
                 alt={SITE_CONFIG.name}
                 width={180}
                 height={80}

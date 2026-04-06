@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Emergency Roof Tarp Service Charlotte NC | 24/7 | Best Roofing Now',
-    description:
+  description:
       '24/7 emergency roof tarping in Charlotte NC. Fast storm response to protect your home from water damage. BBB A+ rated, veteran-owned. Call now!',
-    url: `${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.emergency,
-        width: 1200,
-        height: 630,
-        alt: 'Emergency roof tarp service in Charlotte NC - Best Roofing Now storm response',
+  width: 1200,
+  height: 630,
+  alt: 'Emergency roof tarp service in Charlotte NC - Best Roofing Now storm response',
       },
     ],
   },
@@ -68,23 +68,23 @@ export const metadata: Metadata = {
 const emergencySituations = [
   {
     icon: CloudRain,
-    title: 'Storm Damage',
-    description: 'High winds, hail, and severe storms that tear off shingles or damage roofing materials.',
+  title: 'Storm Damage',
+  description: 'High winds, hail, and severe storms that tear off shingles or damage roofing materials.',
   },
   {
     icon: AlertTriangle,
-    title: 'Tree Damage',
-    description: 'Fallen trees or large branches that puncture or damage your roof structure.',
+  title: 'Tree Damage',
+  description: 'Fallen trees or large branches that puncture or damage your roof structure.',
   },
   {
     icon: Zap,
-    title: 'Tornado Damage',
-    description: 'Severe wind damage from tornadoes requiring immediate protection.',
+  title: 'Tornado Damage',
+  description: 'Severe wind damage from tornadoes requiring immediate protection.',
   },
   {
     icon: Home,
-    title: 'Fire Damage',
-    description: 'Exposed roof areas after fire damage requiring temporary weatherproofing.',
+  title: 'Fire Damage',
+  description: 'Exposed roof areas after fire damage requiring temporary weatherproofing.',
   },
 ];
 
@@ -92,33 +92,33 @@ const emergencySituations = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: '24/7 Availability',
-    description: 'We answer emergency calls around the clock, 365 days a year. Storms don\'t wait, and neither do we.',
+  title: '24/7 Availability',
+  description: 'We answer emergency calls around the clock, 365 days a year. Storms don\'t wait, and neither do we.',
   },
   {
     icon: Zap,
-    title: 'Rapid Response',
-    description: 'Our emergency crews are dispatched immediately to get to your property as fast as possible.',
+  title: 'Rapid Response',
+  description: 'Our emergency crews are dispatched immediately to get to your property as fast as possible.',
   },
   {
     icon: Shield,
-    title: 'Insurance Documentation',
-    description: 'We document all damage thoroughly to support your insurance claim process.',
+  title: 'Insurance Documentation',
+  description: 'We document all damage thoroughly to support your insurance claim process.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp insurance.',
   },
   {
     icon: Award,
-    title: 'Quality Materials',
-    description: 'We use heavy-duty commercial tarps properly secured to withstand additional weather.',
+  title: 'Quality Materials',
+  description: 'We use heavy-duty commercial tarps properly secured to withstand additional weather.',
   },
   {
     icon: Users,
-    title: 'Full Repair Services',
-    description: 'From emergency tarp to permanent repair, we handle the entire process for you.',
+  title: 'Full Repair Services',
+  description: 'From emergency tarp to permanent repair, we handle the entire process for you.',
   },
 ];
 
@@ -126,23 +126,23 @@ const whyChooseUs = [
 const tarpingProcess = [
   {
     step: '1',
-    title: 'Emergency Call',
-    description: 'Call our 24/7 line. We\'ll gather details about the damage and dispatch a crew immediately.',
+  title: 'Emergency Call',
+  description: 'Call our 24/7 line. We\'ll gather details about the damage and dispatch a crew immediately.',
   },
   {
     step: '2',
-    title: 'Rapid Assessment',
-    description: 'Our crew arrives quickly to assess damage and determine the best tarping approach.',
+  title: 'Rapid Assessment',
+  description: 'Our crew arrives quickly to assess damage and determine the best tarping approach.',
   },
   {
     step: '3',
-    title: 'Secure Installation',
-    description: 'Heavy-duty tarps are professionally installed and secured to prevent water intrusion.',
+  title: 'Secure Installation',
+  description: 'Heavy-duty tarps are professionally installed and secured to prevent water intrusion.',
   },
   {
     step: '4',
-    title: 'Documentation',
-    description: 'We photograph all damage and provide documentation for your insurance claim.',
+  title: 'Documentation',
+  description: 'We photograph all damage and provide documentation for your insurance claim.',
   },
 ];
 
@@ -150,42 +150,42 @@ const tarpingProcess = [
 const faqs = [
   {
     question: 'How quickly can you install an emergency roof tarp in Charlotte?',
-    answer:
+  answer:
       'We provide 24/7 emergency response and typically arrive within 1-4 hours of your call, depending on storm conditions and demand. During major storm events, we prioritize calls based on severity and work around the clock to help as many homeowners as possible. Call (704) 605-6047 immediately when you discover roof damage.',
   },
   {
     question: 'How much does emergency roof tarping cost in Charlotte NC?',
-    answer:
+  answer:
       'Emergency roof tarping in Charlotte typically ranges from $300 to $1,500 depending on the size of the damaged area, roof pitch, and accessibility. Most homeowners insurance policies cover emergency tarping when damage is from a covered event like a storm. We can work directly with your insurance company.',
   },
   {
     question: 'How long will a roof tarp last?',
-    answer:
+  answer:
       'A professionally installed roof tarp can provide temporary protection for 30-90 days, depending on weather conditions and tarp quality. We use heavy-duty commercial tarps that can withstand additional rain and moderate winds. However, tarps are a temporary solution - permanent repairs should be made as soon as possible.',
   },
   {
     question: 'Will my insurance cover emergency roof tarping?',
-    answer:
+  answer:
       'Yes, most homeowners insurance policies cover emergency tarping when the roof damage is from a covered peril like wind, hail, or fallen trees. Emergency tarping is considered "mitigation" - preventing further damage - which insurers require homeowners to do. We document everything and can assist with your claim.',
   },
   {
     question: 'Can you tarp a roof during a storm?',
-    answer:
+  answer:
       'For safety reasons, we cannot work on roofs during active storms with lightning, high winds, or heavy rain. However, we\'ll be ready to deploy the moment conditions become safe. If you call during a storm, we\'ll schedule you for immediate service once it passes and provide guidance on protecting your interior in the meantime.',
   },
   {
     question: 'Do you provide permanent repairs after tarping?',
-    answer:
+  answer:
       'Absolutely. Best Roofing Now provides complete roofing services from emergency tarping through permanent repair or replacement. Having one company handle the entire process ensures continuity, proper documentation for insurance, and a seamless experience for you. We\'ll provide a detailed estimate for permanent repairs.',
   },
   {
     question: 'What should I do while waiting for emergency roof tarp service?',
-    answer:
+  answer:
       'Move valuable items away from the damaged area, place containers to catch water, and take photos of the damage for insurance purposes. If water is pooling on the ceiling, carefully puncture a small hole to let it drain into a bucket - this prevents ceiling collapse. Do NOT go on the roof yourself.',
   },
   {
     question: 'Do you provide emergency tarping for commercial buildings?',
-    answer:
+  answer:
       'Yes, we provide emergency tarping services for both residential and commercial properties in Charlotte. Commercial roofs often require different techniques and larger tarps, which our trained crews are equipped to handle. We understand that business interruption is costly and work to protect your property quickly.',
   },
 ];
@@ -240,7 +240,6 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`}
         pageName="Emergency Roof Tarp Service Charlotte NC"
@@ -250,18 +249,18 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
         faqs={[
           {
             question: 'Who provides emergency roof tarp service in Charlotte NC?',
-            answer: 'Best Roofing Now provides 24/7 emergency roof tarp service in Charlotte NC. Their trained crews respond quickly to storm damage, fallen trees, and roof emergencies to prevent water damage. Call (704) 605-6047 for immediate tarping service.',
-            speakableAnswer: 'Best Roofing Now provides 24/7 emergency roof tarping in Charlotte. Call 704-605-6047 for immediate service.',
+  answer: 'Best Roofing Now provides 24/7 emergency roof tarp service in Charlotte NC. Their trained crews respond quickly to storm damage, fallen trees, and roof emergencies to prevent water damage. Call (704) 605-6047 for immediate tarping service.',
+  speakableAnswer: 'Best Roofing Now provides 24/7 emergency roof tarping in Charlotte. Call 704-605-6047 for immediate service.',
           },
           {
             question: 'How much does emergency roof tarping cost in Charlotte?',
-            answer: 'Emergency roof tarping in Charlotte NC typically costs $300-$800 depending on roof size and damage extent. Best Roofing Now provides transparent pricing with no price gouging during emergencies. The tarp service fee is often credited toward permanent repairs.',
-            speakableAnswer: 'Emergency roof tarping in Charlotte costs $300 to $800. Best Roofing Now offers transparent pricing. Call 704-605-6047.',
+  answer: 'Emergency roof tarping in Charlotte NC typically costs $300-$800 depending on roof size and damage extent. Best Roofing Now provides transparent pricing with no price gouging during emergencies. The tarp service fee is often credited toward permanent repairs.',
+  speakableAnswer: 'Emergency roof tarping in Charlotte costs $300 to $800. Best Roofing Now offers transparent pricing. Call 704-605-6047.',
           },
           {
             question: 'How long does emergency roof tarp last?',
-            answer: 'Professional emergency roof tarps properly installed last several weeks to a few months depending on weather. Best Roofing Now uses heavy-duty tarps with proper securing methods to withstand Charlotte weather until permanent repairs are completed.',
-            speakableAnswer: 'Professional roof tarps last weeks to months when properly installed. Best Roofing Now uses heavy-duty tarps for Charlotte weather.',
+  answer: 'Professional emergency roof tarps properly installed last several weeks to a few months depending on weather. Best Roofing Now uses heavy-duty tarps with proper securing methods to withstand Charlotte weather until permanent repairs are completed.',
+  speakableAnswer: 'Professional roof tarps last weeks to months when properly installed. Best Roofing Now uses heavy-duty tarps for Charlotte weather.',
           },
         ]}
       />
@@ -407,7 +406,7 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When your roof is damaged, you need a company that responds fast, does quality work,
-                and can handle the entire repair process. Best Roofing Now provides complete storm
+  and can handle the entire repair process. Best Roofing Now provides complete storm
                 response from initial tarping through permanent repairs.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

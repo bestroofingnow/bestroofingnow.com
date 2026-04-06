@@ -48,37 +48,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'TPO vs EPDM Roofing: Which is Best for Charlotte Buildings?',
-    description:
+  description:
       'Complete comparison of TPO and EPDM commercial roofing systems for Charlotte NC buildings.',
-    url: `${SITE_CONFIG.url}/tpo-vs-epdm-roofing-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/tpo-vs-epdm-roofing-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const comparisonFAQs = [
   {
     question: 'Which is better for Charlotte buildings, TPO or EPDM?',
-    answer:
+  answer:
       'For most Charlotte commercial buildings, TPO offers better value due to its heat reflectivity (reducing cooling costs 10-30%), white color options, and competitive pricing. EPDM may be preferred for buildings prioritizing longest-term durability over energy efficiency, or for budgets where the lower upfront cost is critical.',
   },
   {
     question: 'How much does TPO roofing cost vs EPDM in Charlotte?',
-    answer:
+  answer:
       'In Charlotte, TPO typically costs $5-$8 per square foot installed, while EPDM costs $4-$7 per square foot. The price difference narrows when you factor in TPO\'s energy savings. For a 20,000 sq ft building, expect $100,000-$160,000 for TPO or $80,000-$140,000 for EPDM.',
   },
   {
     question: 'Which lasts longer, TPO or EPDM?',
-    answer:
+  answer:
       'EPDM has a longer track record with proven 30+ year lifespans. Quality TPO can last 20-30 years, but as a newer technology (widely used since 2000s), it doesn\'t have the same decades of field performance data. Both have excellent warranties when properly installed.',
   },
   {
     question: 'Does TPO really save money on cooling costs in Charlotte?',
-    answer:
+  answer:
       'Yes. TPO\'s white reflective surface can reduce roof surface temperatures by 50-80°F compared to dark EPDM. In Charlotte\'s hot summers, this translates to 10-30% cooling cost savings. For a large commercial building running AC 6+ months per year, this can be $5,000-$20,000+ annually.',
   },
   {
     question: 'Can EPDM be white or reflective like TPO?',
-    answer:
+  answer:
       'Standard EPDM is black, but white EPDM is available. However, white EPDM typically costs more than TPO and may not perform as well for reflectivity. If energy efficiency is a priority, TPO is usually the better choice for a white/reflective roof.',
   },
 ];
@@ -86,73 +86,73 @@ const comparisonFAQs = [
 const comparisonData = [
   {
     category: 'Installed Cost',
-    tpo: '$5-$8/sq ft',
-    epdm: '$4-$7/sq ft',
-    winner: 'epdm',
-    notes: 'EPDM slightly cheaper upfront',
+  tpo: '$5-$8/sq ft',
+  epdm: '$4-$7/sq ft',
+  winner: 'epdm',
+  notes: 'EPDM slightly cheaper upfront',
   },
   {
     category: 'Energy Efficiency',
-    tpo: 'Excellent (reflective white)',
-    epdm: 'Moderate (absorbs heat)',
-    winner: 'tpo',
-    notes: 'TPO reduces cooling costs 10-30%',
+  tpo: 'Excellent (reflective white)',
+  epdm: 'Moderate (absorbs heat)',
+  winner: 'tpo',
+  notes: 'TPO reduces cooling costs 10-30%',
   },
   {
     category: 'Lifespan',
-    tpo: '20-30 years',
-    epdm: '25-35+ years',
-    winner: 'epdm',
-    notes: 'EPDM has longer track record',
+  tpo: '20-30 years',
+  epdm: '25-35+ years',
+  winner: 'epdm',
+  notes: 'EPDM has longer track record',
   },
   {
     category: 'Heat Resistance',
-    tpo: 'Very Good',
-    epdm: 'Excellent',
-    winner: 'tie',
-    notes: 'Both handle Charlotte heat well',
+  tpo: 'Very Good',
+  epdm: 'Excellent',
+  winner: 'tie',
+  notes: 'Both handle Charlotte heat well',
   },
   {
     category: 'UV Resistance',
-    tpo: 'Very Good (with additives)',
-    epdm: 'Excellent (inherent)',
-    winner: 'epdm',
-    notes: 'EPDM naturally resists UV',
+  tpo: 'Very Good (with additives)',
+  epdm: 'Excellent (inherent)',
+  winner: 'epdm',
+  notes: 'EPDM naturally resists UV',
   },
   {
     category: 'Puncture Resistance',
-    tpo: 'Good',
-    epdm: 'Very Good',
-    winner: 'epdm',
-    notes: 'EPDM more flexible',
+  tpo: 'Good',
+  epdm: 'Very Good',
+  winner: 'epdm',
+  notes: 'EPDM more flexible',
   },
   {
     category: 'Chemical Resistance',
-    tpo: 'Excellent',
-    epdm: 'Good (avoid oils/solvents)',
-    winner: 'tpo',
-    notes: 'TPO better for restaurants/industrial',
+  tpo: 'Excellent',
+  epdm: 'Good (avoid oils/solvents)',
+  winner: 'tpo',
+  notes: 'TPO better for restaurants/industrial',
   },
   {
     category: 'Seam Strength',
-    tpo: 'Excellent (heat-welded)',
-    epdm: 'Good (adhesive/tape)',
-    winner: 'tpo',
-    notes: 'TPO seams often stronger than membrane',
+  tpo: 'Excellent (heat-welded)',
+  epdm: 'Good (adhesive/tape)',
+  winner: 'tpo',
+  notes: 'TPO seams often stronger than membrane',
   },
   {
     category: 'Color Options',
-    tpo: 'White, tan, gray',
-    epdm: 'Black (white available)',
-    winner: 'tpo',
-    notes: 'More aesthetic flexibility',
+  tpo: 'White, tan, gray',
+  epdm: 'Black (white available)',
+  winner: 'tpo',
+  notes: 'More aesthetic flexibility',
   },
   {
     category: 'Repairability',
-    tpo: 'Requires heat welding',
-    epdm: 'Easy patch repairs',
-    winner: 'epdm',
-    notes: 'EPDM simpler to repair',
+  tpo: 'Requires heat welding',
+  epdm: 'Easy patch repairs',
+  winner: 'epdm',
+  notes: 'EPDM simpler to repair',
   },
 ];
 
@@ -202,10 +202,10 @@ export default function TPOvsEPDMRoofingPage() {
       <ArticleSchema
         post={{
           title: 'TPO vs EPDM Roofing: Charlotte NC Commercial Comparison',
-          description: 'Which single-ply membrane is best for your Charlotte building?',
-          slug: 'tpo-vs-epdm-roofing-charlotte-nc',
-          datePublished: '2026-01-29',
-          dateModified: '2026-01-29',
+  description: 'Which single-ply membrane is best for your Charlotte building?',
+  slug: 'tpo-vs-epdm-roofing-charlotte-nc',
+  datePublished: '2026-01-29',
+  dateModified: '2026-01-29',
         }}
       />
       <FAQSchema faqs={comparisonFAQs} />

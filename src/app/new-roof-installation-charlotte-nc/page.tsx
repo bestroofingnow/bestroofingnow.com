@@ -34,7 +34,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -64,16 +64,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'New Roof Installation Charlotte NC | First-Time Roof & New Construction | Best Roofing Now',
-    description:
+  description:
       'New roof installation in Charlotte NC for first-time builds, new construction, and complete roofing system installations with premium materials and industry-leading warranties.',
-    url: `${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'New roof installation Charlotte NC - Best Roofing Now expert installers',
+  width: 1200,
+  height: 630,
+  alt: 'New roof installation Charlotte NC - Best Roofing Now expert installers',
       },
     ],
   },
@@ -83,26 +83,26 @@ export const metadata: Metadata = {
 const newInstallationDifferences = [
   {
     icon: PlusCircle,
-    title: 'Complete System Installation',
-    description:
+  title: 'Complete System Installation',
+  description:
       'Unlike repairs that patch existing issues, a new roof installation involves installing an entirely new roofing system from the decking up - including underlayment, flashing, ventilation, and roofing materials.',
   },
   {
     icon: Layers,
-    title: 'Full Tear-Off Included',
-    description:
+  title: 'Full Tear-Off Included',
+  description:
       'New installations typically include complete removal of all existing roofing materials down to the bare decking, allowing for thorough inspection and any necessary deck repairs before the new system goes on.',
   },
   {
     icon: FileCheck,
-    title: 'Code Compliance',
-    description:
+  title: 'Code Compliance',
+  description:
       'New roof installations must meet current Charlotte and Mecklenburg County building codes, which may be more stringent than when your original roof was installed. We ensure full compliance.',
   },
   {
     icon: Shield,
-    title: 'Maximum Warranty Protection',
-    description:
+  title: 'Maximum Warranty Protection',
+  description:
       'New installations qualify for the best manufacturer warranties - up to 50 years on materials plus extended workmanship coverage. Repairs and overlays typically have limited warranty options.',
   },
 ];
@@ -111,38 +111,38 @@ const newInstallationDifferences = [
 const signsYouNeedNewRoof = [
   {
     icon: Clock,
-    title: 'Roof Age Over 20 Years',
-    description:
+  title: 'Roof Age Over 20 Years',
+  description:
       'If your roof is approaching or exceeding 20-25 years old (the typical lifespan of asphalt shingles), a new installation is usually more cost-effective than continued repairs.',
   },
   {
     icon: Droplets,
-    title: 'Multiple Leak Points',
-    description:
+  title: 'Multiple Leak Points',
+  description:
       'When leaks appear in multiple locations, it indicates widespread underlayment failure. Patching individual leaks becomes a losing battle when the entire system is compromised.',
   },
   {
     icon: Layers,
-    title: 'Widespread Shingle Damage',
-    description:
+  title: 'Widespread Shingle Damage',
+  description:
       'Curling, cracking, or missing shingles across 25% or more of your roof signals that the materials have reached end of life and need complete replacement.',
   },
   {
     icon: AlertTriangle,
-    title: 'Sagging Roof Deck',
-    description:
+  title: 'Sagging Roof Deck',
+  description:
       'A visibly sagging roofline indicates structural damage from prolonged water infiltration. This requires a full tear-off to assess and repair the underlying structure.',
   },
   {
     icon: ThermometerSun,
-    title: 'Excessive Granule Loss',
-    description:
+  title: 'Excessive Granule Loss',
+  description:
       'Finding large amounts of granules in your gutters means shingles have lost their protective coating. Without granules, shingles deteriorate rapidly from UV exposure.',
   },
   {
     icon: Wind,
-    title: 'Storm Damage Beyond Repair',
-    description:
+  title: 'Storm Damage Beyond Repair',
+  description:
       'Major storm events like hurricanes or severe hail can cause damage so extensive that insurance typically covers a complete new roof installation rather than piecemeal repairs.',
   },
 ];
@@ -151,74 +151,74 @@ const signsYouNeedNewRoof = [
 const installationProcess = [
   {
     step: 1,
-    title: 'Free Comprehensive Inspection',
-    description:
+  title: 'Free Comprehensive Inspection',
+  description:
       'Our certified inspector examines your current roof, attic space, ventilation, and structural components. We provide a detailed written assessment with photos documenting all findings.',
   },
   {
     step: 2,
-    title: 'Material Selection Consultation',
-    description:
+  title: 'Material Selection Consultation',
+  description:
       'We help you choose the perfect roofing material for your home, budget, and aesthetic preferences. We carry premium products from CertainTeed, GAF, and Owens Corning with various style and color options.',
   },
   {
     step: 3,
-    title: 'Permit & Scheduling',
-    description:
+  title: 'Permit & Scheduling',
+  description:
       'We handle all permit applications with Mecklenburg County and schedule your installation for optimal weather conditions. Most projects begin within 1-2 weeks of contract signing.',
   },
   {
     step: 4,
-    title: 'Complete Tear-Off',
-    description:
+  title: 'Complete Tear-Off',
+  description:
       'Our crew removes all existing roofing materials down to the bare decking. Tarps protect your landscaping and we use magnetic sweepers to collect every nail.',
   },
   {
     step: 5,
-    title: 'Deck Inspection & Repair',
-    description:
+  title: 'Deck Inspection & Repair',
+  description:
       'Every board is inspected for rot, water damage, and structural integrity. Any compromised sections are replaced with new plywood before installation begins.',
   },
   {
     step: 6,
-    title: 'Ice & Water Shield Installation',
-    description:
+  title: 'Ice & Water Shield Installation',
+  description:
       'We install ice and water shield membrane in vulnerable areas - valleys, around penetrations, and along eaves - providing an extra layer of protection against water infiltration.',
   },
   {
     step: 7,
-    title: 'Synthetic Underlayment',
-    description:
+  title: 'Synthetic Underlayment',
+  description:
       'Premium synthetic underlayment covers the entire roof deck, providing superior moisture protection compared to traditional felt paper and better durability during installation.',
   },
   {
     step: 8,
-    title: 'Flashing & Drip Edge',
-    description:
+  title: 'Flashing & Drip Edge',
+  description:
       'New metal flashing is installed around all penetrations (vents, pipes, chimneys) and drip edge protects the fascia. Proper flashing prevents the most common leak points.',
   },
   {
     step: 9,
-    title: 'Roofing Material Installation',
-    description:
+  title: 'Roofing Material Installation',
+  description:
       'Starter strips, field shingles (or chosen material), and ridge caps are installed according to manufacturer specifications, ensuring your warranty remains valid.',
   },
   {
     step: 10,
-    title: 'Ventilation System',
-    description:
+  title: 'Ventilation System',
+  description:
       'Proper attic ventilation is critical for roof longevity. We install ridge vents, soffit vents, or powered ventilators as needed to maintain optimal airflow.',
   },
   {
     step: 11,
-    title: 'Final Inspection & Cleanup',
-    description:
+  title: 'Final Inspection & Cleanup',
+  description:
       'Our project manager performs a thorough quality inspection. We clean all debris, run magnetic sweeps for stray nails, and ensure your property looks better than when we arrived.',
   },
   {
     step: 12,
-    title: 'Warranty Registration',
-    description:
+  title: 'Warranty Registration',
+  description:
       'We complete all manufacturer warranty registration and provide you with documentation for your new roof, including maintenance recommendations to maximize its lifespan.',
   },
 ];
@@ -227,63 +227,63 @@ const installationProcess = [
 const materialOptions = [
   {
     icon: Layers,
-    title: 'Architectural Asphalt Shingles',
-    description:
+  title: 'Architectural Asphalt Shingles',
+  description:
       'The most popular choice for Charlotte homes. These dimensional shingles offer excellent durability, wind resistance up to 130 MPH, and beautiful curb appeal. Multiple color options and styles available from CertainTeed, GAF, and Owens Corning.',
-    priceRange: '$8,000 - $15,000',
-    lifespan: '30-50 years',
-    features: ['Wind resistant to 130 MPH', 'Algae-resistant options', 'Wide color selection', 'Best value'],
-    popular: true,
+  priceRange: '$8,000 - $15,000',
+  lifespan: '30-50 years',
+  features: ['Wind resistant to 130 MPH', 'Algae-resistant options', 'Wide color selection', 'Best value'],
+  popular: true,
   },
   {
     icon: Shield,
-    title: 'Luxury Designer Shingles',
-    description:
+  title: 'Luxury Designer Shingles',
+  description:
       'Premium shingles that replicate the look of natural slate or cedar shake without the maintenance or weight concerns. Ideal for upscale homes in Myers Park, Dilworth, and Eastover where aesthetics are paramount.',
-    priceRange: '$15,000 - $28,000',
-    lifespan: '50+ years',
-    features: ['Slate/shake appearance', 'Lifetime warranties', 'Superior impact resistance', 'Premium aesthetics'],
-    popular: false,
+  priceRange: '$15,000 - $28,000',
+  lifespan: '50+ years',
+  features: ['Slate/shake appearance', 'Lifetime warranties', 'Superior impact resistance', 'Premium aesthetics'],
+  popular: false,
   },
   {
     icon: Sparkles,
-    title: 'Standing Seam Metal',
-    description:
+  title: 'Standing Seam Metal',
+  description:
       'Modern, sleek appearance with exceptional longevity. Standing seam metal roofs are growing in popularity for Charlotte homes, offering superior energy efficiency and virtually maintenance-free performance.',
-    priceRange: '$18,000 - $35,000',
-    lifespan: '50-70 years',
-    features: ['Energy efficient', 'Fire resistant', 'Minimal maintenance', 'Modern appearance'],
-    popular: false,
+  priceRange: '$18,000 - $35,000',
+  lifespan: '50-70 years',
+  features: ['Energy efficient', 'Fire resistant', 'Minimal maintenance', 'Modern appearance'],
+  popular: false,
   },
   {
     icon: Home,
-    title: 'Metal Shingles',
-    description:
+  title: 'Metal Shingles',
+  description:
       'Combines the traditional shingle appearance with metal durability. Metal shingles look like conventional roofing but offer dramatically longer lifespan and better storm protection.',
-    priceRange: '$14,000 - $25,000',
-    lifespan: '40-60 years',
-    features: ['Traditional appearance', 'Metal durability', 'Lightweight', 'Storm resistant'],
-    popular: false,
+  priceRange: '$14,000 - $25,000',
+  lifespan: '40-60 years',
+  features: ['Traditional appearance', 'Metal durability', 'Lightweight', 'Storm resistant'],
+  popular: false,
   },
   {
     icon: Building2,
-    title: 'Concrete & Clay Tile',
-    description:
+  title: 'Concrete & Clay Tile',
+  description:
       'For Mediterranean, Spanish, or Southwestern style homes, tile roofing provides unmatched elegance and longevity. Requires additional structural support but offers lifetime performance.',
-    priceRange: '$25,000 - $50,000',
-    lifespan: '75-100 years',
-    features: ['Distinctive style', 'Extreme longevity', 'Fire resistant', 'Zero maintenance'],
-    popular: false,
+  priceRange: '$25,000 - $50,000',
+  lifespan: '75-100 years',
+  features: ['Distinctive style', 'Extreme longevity', 'Fire resistant', 'Zero maintenance'],
+  popular: false,
   },
   {
     icon: Ruler,
-    title: 'Synthetic Slate & Shake',
-    description:
+  title: 'Synthetic Slate & Shake',
+  description:
       'Get the high-end look of natural slate or cedar shake without the weight, cost, or maintenance. Synthetic options are made from recycled materials and offer excellent durability.',
-    priceRange: '$12,000 - $22,000',
-    lifespan: '40-50 years',
-    features: ['Authentic appearance', 'Lightweight', 'Eco-friendly materials', 'Lower cost than natural'],
-    popular: false,
+  priceRange: '$12,000 - $22,000',
+  lifespan: '40-50 years',
+  features: ['Authentic appearance', 'Lightweight', 'Eco-friendly materials', 'Lower cost than natural'],
+  popular: false,
   },
 ];
 
@@ -291,23 +291,23 @@ const materialOptions = [
 const timelineExpectations = [
   {
     size: 'Small Home (Under 1,500 sq ft)',
-    duration: '1-2 days',
-    description: 'Smaller ranch homes and townhouses can typically be completed in a single day, weather permitting.',
+  duration: '1-2 days',
+  description: 'Smaller ranch homes and townhouses can typically be completed in a single day, weather permitting.',
   },
   {
     size: 'Average Home (1,500-2,500 sq ft)',
-    duration: '1-2 days',
-    description: 'Most Charlotte homes fall in this range. We typically complete tear-off and installation within two days.',
+  duration: '1-2 days',
+  description: 'Most Charlotte homes fall in this range. We typically complete tear-off and installation within two days.',
   },
   {
     size: 'Large Home (2,500-4,000 sq ft)',
-    duration: '2-3 days',
-    description: 'Larger homes with more complex roof designs require additional time for proper installation.',
+  duration: '2-3 days',
+  description: 'Larger homes with more complex roof designs require additional time for proper installation.',
   },
   {
     size: 'Estate/Custom Home (4,000+ sq ft)',
-    duration: '3-5 days',
-    description: 'Large custom homes with multiple roof sections, steep pitches, and architectural features need more time.',
+  duration: '3-5 days',
+  description: 'Large custom homes with multiple roof sections, steep pitches, and architectural features need more time.',
   },
 ];
 
@@ -315,38 +315,38 @@ const timelineExpectations = [
 const costFactors = [
   {
     icon: Ruler,
-    title: 'Roof Size (Square Footage)',
-    description:
+  title: 'Roof Size (Square Footage)',
+  description:
       'Roof size is measured in "squares" (100 sq ft each). The average Charlotte home has 20-30 squares. Larger roofs require more materials and labor.',
   },
   {
     icon: Layers,
-    title: 'Roof Pitch & Complexity',
-    description:
+  title: 'Roof Pitch & Complexity',
+  description:
       'Steeper roofs require additional safety equipment and more time. Complex designs with multiple valleys, dormers, and angles increase labor costs.',
   },
   {
     icon: Truck,
-    title: 'Material Selection',
-    description:
+  title: 'Material Selection',
+  description:
       'Your choice of roofing material has the biggest impact on price. Architectural shingles are most affordable, while metal and tile cost significantly more.',
   },
   {
     icon: Hammer,
-    title: 'Deck Repairs',
-    description:
+  title: 'Deck Repairs',
+  description:
       'Rotted or damaged decking discovered during tear-off must be replaced. Most roofs need some repairs, typically adding $500-$2,500 to the project.',
   },
   {
     icon: Wind,
-    title: 'Ventilation Upgrades',
-    description:
+  title: 'Ventilation Upgrades',
+  description:
       'Proper attic ventilation extends roof life and improves energy efficiency. Adding or upgrading ventilation may add $500-$1,500 but is a worthwhile investment.',
   },
   {
     icon: FileCheck,
-    title: 'Permits & Inspections',
-    description:
+  title: 'Permits & Inspections',
+  description:
       'Charlotte requires roofing permits for new installations. Permit costs typically range from $150-$400 and are included in our estimates.',
   },
 ];
@@ -355,26 +355,26 @@ const costFactors = [
 const warrantyInfo = [
   {
     title: 'Manufacturer Material Warranty',
-    duration: '25-50 years',
-    description:
+  duration: '25-50 years',
+  description:
       'Covers defects in roofing materials. Premium products like GAF HDZ or CertainTeed Landmark Pro include 50-year limited lifetime coverage.',
   },
   {
     title: 'Wind Warranty',
-    duration: 'Up to 130 MPH',
-    description:
+  duration: 'Up to 130 MPH',
+  description:
       'Architectural shingles installed by certified contractors include wind warranties covering speeds up to 130 MPH - critical for Charlotte storm season.',
   },
   {
     title: 'Workmanship Warranty',
-    duration: '10-25 years',
-    description:
+  duration: '10-25 years',
+  description:
       'Our workmanship warranty covers installation defects. As certified installers, we can offer extended workmanship coverage up to 25 years.',
   },
   {
     title: 'Enhanced System Warranties',
-    duration: 'Lifetime',
-    description:
+  duration: 'Lifetime',
+  description:
       'Programs like GAF Golden Pledge and CertainTeed SureStart PLUS provide comprehensive coverage combining materials and workmanship in one package.',
   },
 ];
@@ -383,33 +383,33 @@ const warrantyInfo = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Triple Certified',
-    description: 'CertainTeed SELECT, GAF Factory-Certified Contractor status.',
+  title: 'Triple Certified',
+  description: 'CertainTeed SELECT, GAF Factory-Certified Contractor status.',
   },
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'BBB A+ Rated',
-    description: 'Better Business Bureau accredited with A+ rating and zero complaints filed.',
+  title: 'BBB A+ Rated',
+  description: 'Better Business Bureau accredited with A+ rating and zero complaints filed.',
   },
   {
     icon: Users,
-    title: 'Experienced Crews',
-    description: 'Our installation teams have years of experience with all roofing materials and styles.',
+  title: 'Experienced Crews',
+  description: 'Our installation teams have years of experience with all roofing materials and styles.',
   },
   {
     icon: Clock,
-    title: 'On-Time Completion',
-    description: 'We respect your schedule and complete most installations in 1-3 days as promised.',
+  title: 'On-Time Completion',
+  description: 'We respect your schedule and complete most installations in 1-3 days as promised.',
   },
   {
     icon: CheckCircle,
-    title: 'Complete Cleanup',
-    description: 'Thorough site cleanup with magnetic nail sweeps. Your property will look better than we found it.',
+  title: 'Complete Cleanup',
+  description: 'Thorough site cleanup with magnetic nail sweeps. Your property will look better than we found it.',
   },
 ];
 
@@ -461,52 +461,52 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does a new roof installation cost in Charlotte NC?',
-    answer:
+  answer:
       'New roof installation in Charlotte typically costs between $8,000 and $25,000 for most residential homes. The exact cost depends on roof size (measured in squares - 100 sq ft each), material selection, roof complexity, and any necessary deck repairs. Architectural shingles are the most cost-effective option at $8,000-$15,000, while metal roofing runs $18,000-$35,000 and tile can exceed $40,000. We provide free, detailed estimates with transparent pricing so you know exactly what to expect.',
   },
   {
     question: 'How long does a new roof installation take in Charlotte?',
-    answer:
+  answer:
       'Most new roof installations in Charlotte are completed in 1-3 days for average-sized homes (1,500-2,500 square feet). Smaller homes may be completed in a single day, while larger custom homes with complex roof designs may take 3-5 days. Weather is the biggest variable - we avoid installing during rain or extreme conditions to ensure proper material adhesion and worker safety. We provide accurate timelines during your estimate and communicate any changes promptly.',
   },
   {
     question: 'What is the difference between a new roof installation and roof replacement?',
-    answer:
+  answer:
       'In most contexts, "new roof installation" and "roof replacement" are used interchangeably to describe complete tear-off and installation of a new roofing system. However, "new roof installation" may also refer to installing a roof on new construction where no previous roof exists. Both involve installing a complete roofing system including underlayment, flashing, ventilation, and roofing materials. The key distinction from "roof repair" is that new installation replaces the entire system rather than fixing specific problem areas.',
   },
   {
     question: 'What roofing material is best for Charlotte NC weather?',
-    answer:
+  answer:
       'For Charlotte\'s climate with hot humid summers, occasional severe storms, and mild winters, architectural asphalt shingles remain the best overall choice for most homes. They handle temperature extremes well, provide excellent wind resistance (up to 130 MPH), and offer the best value. Metal roofing is gaining popularity for its superior longevity and energy efficiency. For premium homes, designer shingles or synthetic slate provide exceptional aesthetics with excellent performance. We help each customer choose based on their specific priorities.',
   },
   {
     question: 'Do I need to be home during the new roof installation?',
-    answer:
+  answer:
       'No, you do not need to be home during your new roof installation. We just need access to your property and exterior electrical outlets if possible. Many homeowners prefer to be away due to the noise from tear-off and installation (typically 7 AM - 6 PM). We will contact you before starting work, keep you updated via text or phone throughout the process, and schedule a walkthrough when the job is complete.',
   },
   {
     question: 'What warranties come with a new roof installation from Best Roofing Now?',
-    answer:
+  answer:
       'Your new roof includes comprehensive warranty protection. Manufacturer material warranties range from 25-50 years depending on the product selected, with premium options like GAF HDZ and CertainTeed Landmark Pro offering 50-year limited lifetime coverage. As certified installers for major manufacturers, we can offer extended warranties including GAF Golden Pledge (50-year non-prorated materials plus 25-year workmanship) and CertainTeed SureStart PLUS. Our standard workmanship warranty covers installation for 10 years.',
   },
   {
     question: 'How do I know if I need a completely new roof vs. repairs?',
-    answer:
+  answer:
       'Generally, repairs make sense if your roof is under 15 years old with isolated damage affecting less than 25% of the surface. You likely need a new roof if: your roof is over 20 years old, you have multiple leaks in different areas, there is widespread shingle deterioration (curling, cracking, granule loss), you see daylight through the attic, or your roof deck is sagging. Our free inspection includes an honest assessment - we will never recommend replacement when repairs will suffice.',
   },
   {
     question: 'Will my insurance cover a new roof installation?',
-    answer:
+  answer:
       'Insurance typically covers new roof installation if the damage was caused by a covered peril such as hail, wind, fallen trees, or fire. Standard wear and aging are generally not covered. After storm damage, we provide detailed documentation and photos, work directly with your insurance adjuster, and advocate for fair settlements. Many Charlotte homes qualify for insurance-covered roof replacement after severe storms - we offer free storm damage inspections to assess your situation.',
   },
   {
     question: 'Do you handle permits for new roof installation in Charlotte?',
-    answer:
+  answer:
       'Yes, we handle all permit requirements for new roof installation in Charlotte and Mecklenburg County. Roof replacement requires a building permit to ensure work meets current codes. The permit fee (typically $150-$400) is included in our estimate. We submit the permit application, coordinate required inspections, and ensure your new roof meets all local building codes. You do not need to deal with any permitting paperwork.',
   },
   {
     question: 'Can you install a new roof in winter in Charlotte NC?',
-    answer:
+  answer:
       'Yes, we install new roofs year-round in Charlotte. While we prefer temperatures above 40 degrees for optimal shingle adhesion (the sealant strips activate with heat), Charlotte\'s relatively mild winters allow for installation most days. Our experienced crews know how to work safely in cooler weather and we use hand-sealing techniques when needed. We may need to reschedule around rain or the occasional ice/snow event, but these are rare in Charlotte.',
   },
 ];
@@ -521,7 +521,6 @@ export default function NewRoofInstallationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -749,7 +748,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
                 <h3 className="font-bold text-dark mb-2">Not Sure Which Material Is Right for You?</h3>
                 <p className="text-gray text-sm">
                   Our experts will help you choose the best roofing material based on your home&apos;s style,
-                  your budget, and your long-term goals. Schedule a free consultation to explore your options.
+  your budget, and your long-term goals. Schedule a free consultation to explore your options.
                 </p>
               </div>
               <Button
@@ -1021,7 +1020,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
                 <p className="text-gray">
                   When you trust Best Roofing Now with your new roof installation, you are getting more
                   than just a contractor - you are getting a neighbor who will stand behind every nail,
-                  every shingle, and every promise. We have installed {SITE_CONFIG.roofsInstalled}+ roofs
+  every shingle, and every promise. We have installed {SITE_CONFIG.roofsInstalled}+ roofs
                   in the Charlotte area, and every single one was built to the same standard: good enough
                   for my own family.
                 </p>

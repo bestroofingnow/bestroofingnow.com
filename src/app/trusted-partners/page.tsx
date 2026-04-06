@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Trusted Partners & Roofing Network | Best Roofing Now',
-    description: 'Our curated network of trusted roofing contractors and Charlotte-area home service professionals.',
-    url: `${SITE_CONFIG.url}/trusted-partners`,
-    type: 'website',
+  description: 'Our curated network of trusted roofing contractors and Charlotte-area home service professionals.',
+  url: `${SITE_CONFIG.url}/trusted-partners`,
+  type: 'website',
   },
 };
 
@@ -74,10 +74,10 @@ export default function TrustedPartnersPage() {
 
   const allPartnersForSchema = PARTNERS.map(p => ({
     name: p.name,
-    url: p.url,
-    description: p.description,
-    location: p.location,
-    serviceType: p.serviceType,
+  url: p.url,
+  description: p.description,
+  location: p.location,
+  serviceType: p.serviceType,
   }));
 
   return (
@@ -108,7 +108,7 @@ export default function TrustedPartnersPage() {
               At Best Roofing Now, we believe in building strong relationships
               with quality professionals. Whether you need a trusted roofer in
               another state or a reliable home service company here in Charlotte,
-              we have personally vetted these partners.
+  we have personally vetted these partners.
             </p>
           </div>
         </div>
@@ -123,8 +123,8 @@ export default function TrustedPartnersPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Home ownership involves more than just your roof. Over the years,
-              our customers have asked us to recommend HVAC companies, plumbers,
-              electricians, and other tradespeople they can trust. We only refer
+  our customers have asked us to recommend HVAC companies, plumbers,
+  electricians, and other tradespeople they can trust. We only refer
               companies that share our commitment to quality workmanship, honest
               pricing, and outstanding customer service.
             </p>
@@ -148,7 +148,7 @@ export default function TrustedPartnersPage() {
               <h3 className="font-bold text-lg text-dark mb-2">Quality Standards</h3>
               <p className="text-gray-600 text-sm">
                 We partner with companies that maintain proper licensing, insurance,
-                and a track record of excellence in their trade.
+  and a track record of excellence in their trade.
               </p>
             </div>
             <div className="text-center">
@@ -158,7 +158,7 @@ export default function TrustedPartnersPage() {
               <h3 className="font-bold text-lg text-dark mb-2">Customer Focused</h3>
               <p className="text-gray-600 text-sm">
                 These businesses share our values of transparency, fair pricing,
-                and treating every customer like family.
+  and treating every customer like family.
               </p>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function TrustedPartnersPage() {
               Moving out of the Charlotte area? Need a roofer in another state?
               These are reputable roofing contractors we trust outside our
               service area. Each company has been vetted for quality,
-              reputation, and customer satisfaction.
+  reputation, and customer satisfaction.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {networkRoofers.map((partner) => (

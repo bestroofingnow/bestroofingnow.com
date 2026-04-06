@@ -53,37 +53,37 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'DIY Roof Maintenance Checklist for Charlotte NC Homeowners',
-    description:
+  description:
       'Keep your Charlotte roof in top condition with this easy DIY maintenance checklist. Safe tasks you can do yourself, plus when to call a pro.',
-    url: `${SITE_CONFIG.url}/diy-roof-maintenance-checklist-charlotte-nc`,
-    type: 'article',
+  url: `${SITE_CONFIG.url}/diy-roof-maintenance-checklist-charlotte-nc`,
+  type: 'article',
   },
 };
 
 const maintenanceFAQs = [
   {
     question: 'How often should I inspect my roof in Charlotte NC?',
-    answer:
+  answer:
       'Charlotte homeowners should visually inspect their roof from ground level at least twice a year - in spring after winter weather and in fall before winter. Additional inspections are recommended after any severe storm, including the frequent summer thunderstorms Charlotte experiences.',
   },
   {
     question: 'Can I walk on my roof to inspect it?',
-    answer:
+  answer:
       'We strongly advise against walking on your roof. It\'s dangerous and can actually damage shingles, especially in Charlotte\'s hot summers when shingles become soft. Use binoculars from the ground or hire a professional for close-up inspections.',
   },
   {
     question: 'How often should I clean my gutters in Charlotte?',
-    answer:
+  answer:
       'Clean gutters at least twice a year - late spring after pollen season and late fall after leaves drop. If you have many trees near your home (common in Charlotte neighborhoods like Myers Park or Dilworth), clean them quarterly.',
   },
   {
     question: 'What roof maintenance can I safely do myself?',
-    answer:
+  answer:
       'Safe DIY tasks include: ground-level visual inspections with binoculars, gutter cleaning from a stable ladder, trimming tree branches away from the roof, checking attic for leaks or moisture, and documenting damage with photos. Leave anything requiring roof access to professionals.',
   },
   {
     question: 'When should I call a professional roofer instead of DIY?',
-    answer:
+  answer:
       'Call a professional if you notice: missing or damaged shingles, sagging areas, active leaks, damaged flashing, moss/algae growth, granules in gutters (sign of shingle wear), or any structural concerns. Also call after storm damage for proper documentation.',
   },
 ];
@@ -91,32 +91,32 @@ const maintenanceFAQs = [
 const safetyRules = [
   {
     icon: XCircle,
-    title: 'Never Walk on Your Roof',
-    description: 'Falls from roofs cause thousands of injuries yearly. Even professionals use safety equipment.',
+  title: 'Never Walk on Your Roof',
+  description: 'Falls from roofs cause thousands of injuries yearly. Even professionals use safety equipment.',
   },
   {
     icon: AlertTriangle,
-    title: 'Use Proper Ladder Safety',
-    description: 'Set ladders on level ground, maintain 3 points of contact, never overreach.',
+  title: 'Use Proper Ladder Safety',
+  description: 'Set ladders on level ground, maintain 3 points of contact, never overreach.',
   },
   {
     icon: Sun,
-    title: 'Avoid Hot Days',
-    description: 'Charlotte summer heat makes roofs dangerous. Inspect in morning or on cloudy days.',
+  title: 'Avoid Hot Days',
+  description: 'Charlotte summer heat makes roofs dangerous. Inspect in morning or on cloudy days.',
   },
   {
     icon: Camera,
-    title: 'Document Everything',
-    description: 'Take photos of any concerns. This helps professionals and insurance claims.',
+  title: 'Document Everything',
+  description: 'Take photos of any concerns. This helps professionals and insurance claims.',
   },
 ];
 
 const seasonalChecklist = [
   {
     season: 'Spring',
-    icon: Droplets,
-    color: 'green',
-    tasks: [
+  icon: Droplets,
+  color: 'green',
+  tasks: [
       { task: 'Check for winter damage from ice, snow, or fallen branches', safe: true },
       { task: 'Clean gutters of spring pollen and debris', safe: true },
       { task: 'Inspect flashing around chimneys and vents from ground', safe: true },
@@ -127,9 +127,9 @@ const seasonalChecklist = [
   },
   {
     season: 'Summer',
-    icon: Sun,
-    color: 'yellow',
-    tasks: [
+  icon: Sun,
+  color: 'yellow',
+  tasks: [
       { task: 'Check attic ventilation - should be hot but not wet', safe: true },
       { task: 'Trim tree branches hanging over roof (hire arborist for large trees)', safe: false },
       { task: 'Look for blistering, curling, or buckling shingles', safe: true },
@@ -140,9 +140,9 @@ const seasonalChecklist = [
   },
   {
     season: 'Fall',
-    icon: Leaf,
-    color: 'orange',
-    tasks: [
+  icon: Leaf,
+  color: 'orange',
+  tasks: [
       { task: 'Clean gutters thoroughly after leaves fall', safe: true },
       { task: 'Check that downspouts direct water away from foundation', safe: true },
       { task: 'Inspect for lifted or loose shingles before winter', safe: true },
@@ -153,9 +153,9 @@ const seasonalChecklist = [
   },
   {
     season: 'Winter',
-    icon: Snowflake,
-    color: 'blue',
-    tasks: [
+  icon: Snowflake,
+  color: 'blue',
+  tasks: [
       { task: 'After storms, check for visible damage from ground', safe: true },
       { task: 'Watch for ice dam formation at roof edges', safe: true },
       { task: 'Check attic for condensation or frost on sheathing', safe: true },
@@ -169,7 +169,7 @@ const seasonalChecklist = [
 const groundLevelInspectionPoints = [
   {
     area: 'Shingles',
-    lookFor: [
+  lookFor: [
       'Missing or damaged shingles',
       'Curling, buckling, or blistering',
       'Dark streaks (algae) or green patches (moss)',
@@ -178,7 +178,7 @@ const groundLevelInspectionPoints = [
   },
   {
     area: 'Roof Structure',
-    lookFor: [
+  lookFor: [
       'Sagging or uneven roofline',
       'Damaged or missing ridge cap',
       'Debris accumulation in valleys',
@@ -187,7 +187,7 @@ const groundLevelInspectionPoints = [
   },
   {
     area: 'Flashing & Penetrations',
-    lookFor: [
+  lookFor: [
       'Rust or deterioration around chimneys',
       'Gaps around vent pipes',
       'Damaged boot covers on pipes',
@@ -196,7 +196,7 @@ const groundLevelInspectionPoints = [
   },
   {
     area: 'Gutters & Drainage',
-    lookFor: [
+  lookFor: [
       'Sagging or pulling away from fascia',
       'Rust, holes, or separated joints',
       'Granules accumulating in gutters',
@@ -229,10 +229,10 @@ export default function DIYRoofMaintenanceChecklistPage() {
       <ArticleSchema
         post={{
           title: 'DIY Roof Maintenance Checklist for Charlotte NC Homeowners',
-          description: 'Complete guide to safe DIY roof maintenance for Charlotte homes.',
-          slug: 'diy-roof-maintenance-checklist-charlotte-nc',
-          datePublished: '2026-01-27',
-          dateModified: '2026-01-27',
+  description: 'Complete guide to safe DIY roof maintenance for Charlotte homes.',
+  slug: 'diy-roof-maintenance-checklist-charlotte-nc',
+  datePublished: '2026-01-27',
+  dateModified: '2026-01-27',
         }}
       />
       <FAQSchema faqs={maintenanceFAQs} />

@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Valley Repair Charlotte NC | Valley Leak Experts | Best Roofing Now',
-    description:
+  description:
       'Fix leaking roof valleys with expert repair services in Charlotte NC. Metal valley installation, shingle repair, and leak prevention. Free inspections.',
-    url: `${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roof valley repair Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roof valley repair Charlotte NC',
       },
     ],
   },
@@ -68,27 +68,27 @@ export const metadata: Metadata = {
 const valleyServices = [
   {
     icon: Wrench,
-    title: 'Open Valley Repair',
-    description: 'Repair or install metal valleys with exposed flashing for superior water drainage and longevity.',
-    features: ['Aluminum or copper options', 'W-style crimped center', '30+ year lifespan'],
+  title: 'Open Valley Repair',
+  description: 'Repair or install metal valleys with exposed flashing for superior water drainage and longevity.',
+  features: ['Aluminum or copper options', 'W-style crimped center', '30+ year lifespan'],
   },
   {
     icon: Home,
-    title: 'Closed Valley Repair',
-    description: 'Fix closed cut valleys where shingles extend across the valley with no exposed metal.',
-    features: ['Seamless appearance', 'Ice & water shield', 'Proper overlap technique'],
+  title: 'Closed Valley Repair',
+  description: 'Fix closed cut valleys where shingles extend across the valley with no exposed metal.',
+  features: ['Seamless appearance', 'Ice & water shield', 'Proper overlap technique'],
   },
   {
     icon: Droplets,
-    title: 'Woven Valley Repair',
-    description: 'Repair woven valleys where shingles from both roof planes interweave across the valley.',
-    features: ['Continuous shingle pattern', 'No exposed metal', 'Proper weaving technique'],
+  title: 'Woven Valley Repair',
+  description: 'Repair woven valleys where shingles from both roof planes interweave across the valley.',
+  features: ['Continuous shingle pattern', 'No exposed metal', 'Proper weaving technique'],
   },
   {
     icon: Shield,
-    title: 'Valley Flashing Installation',
-    description: 'Install proper underlayment and valley flashing to prevent leaks in new and existing valleys.',
-    features: ['Ice & water barrier', 'Metal valley liners', 'Sealed overlaps'],
+  title: 'Valley Flashing Installation',
+  description: 'Install proper underlayment and valley flashing to prevent leaks in new and existing valleys.',
+  features: ['Ice & water barrier', 'Metal valley liners', 'Sealed overlaps'],
   },
 ];
 
@@ -96,33 +96,33 @@ const valleyServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Valley Leak Specialists',
-    description: 'Our team has extensive experience diagnosing and repairing roof valley leaks.',
+  title: 'Valley Leak Specialists',
+  description: 'Our team has extensive experience diagnosing and repairing roof valley leaks.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for manufacturer-backed warranties.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for manufacturer-backed warranties.',
   },
   {
     icon: Clock,
-    title: 'Fast Response',
-    description: 'Same-day inspections and emergency valley leak repairs available.',
+  title: 'Fast Response',
+  description: 'Same-day inspections and emergency valley leak repairs available.',
   },
 ];
 
@@ -130,27 +130,27 @@ const whyChooseUs = [
 const valleyProblems = [
   {
     problem: 'Debris Accumulation',
-    description: 'Leaves, twigs, and debris clog valleys, causing water to back up under shingles.',
+  description: 'Leaves, twigs, and debris clog valleys, causing water to back up under shingles.',
   },
   {
     problem: 'Improper Shingle Installation',
-    description: 'Nails placed in the valley center or insufficient overlap leads to leaks.',
+  description: 'Nails placed in the valley center or insufficient overlap leads to leaks.',
   },
   {
     problem: 'Missing Ice & Water Shield',
-    description: 'Valleys without proper underlayment are vulnerable to ice dams and wind-driven rain.',
+  description: 'Valleys without proper underlayment are vulnerable to ice dams and wind-driven rain.',
   },
   {
     problem: 'Worn or Corroded Metal',
-    description: 'Old metal valleys can rust, crack, or separate from the roof surface.',
+  description: 'Old metal valleys can rust, crack, or separate from the roof surface.',
   },
   {
     problem: 'Shingle Granule Loss',
-    description: 'Heavy water flow wears away shingle granules in valley areas faster than elsewhere.',
+  description: 'Heavy water flow wears away shingle granules in valley areas faster than elsewhere.',
   },
   {
     problem: 'Incorrect Valley Type',
-    description: 'Some valley styles aren\'t suitable for certain roof pitches or climates.',
+  description: 'Some valley styles aren\'t suitable for certain roof pitches or climates.',
   },
 ];
 
@@ -184,42 +184,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why is my roof valley leaking in Charlotte?',
-    answer:
+  answer:
       'Roof valley leaks in Charlotte are commonly caused by debris accumulation, worn shingles, corroded metal flashing, improper installation, or missing ice and water shield. Charlotte\'s heavy rainfall concentrates in valleys, making them high-stress areas. Our free inspection identifies the exact cause and provides repair solutions.',
   },
   {
     question: 'How much does roof valley repair cost in Charlotte NC?',
-    answer:
+  answer:
       'Roof valley repair in Charlotte typically costs $300-$1,000 for minor repairs and $800-$2,500 for complete valley replacement. The cost depends on valley length, type (open vs closed), material choice, and extent of damage. We provide free estimates with transparent pricing.',
   },
   {
     question: 'What is the best type of roof valley for Charlotte homes?',
-    answer:
+  answer:
       'For Charlotte\'s climate with heavy rainfall, we often recommend open metal valleys with W-style crimping. The exposed metal handles high water volume better than closed valleys and is easier to maintain. However, closed valleys can work well with proper ice and water shield installation. We assess your specific roof and recommend the best option.',
   },
   {
     question: 'How long do roof valleys last?',
-    answer:
+  answer:
       'Properly installed roof valleys should last as long as your roof (20-30 years for shingles). Metal valleys can last 30-50+ years. However, valleys often fail before the rest of the roof due to concentrated water flow and debris accumulation. Regular maintenance extends valley life significantly.',
   },
   {
     question: 'Can you repair just the valley without replacing the whole roof?',
-    answer:
+  answer:
       'Yes, in most cases we can repair or replace just the valley without affecting the rest of your roof. We carefully remove shingles from the valley area, install new underlayment and flashing, then weave the existing or new shingles back into place. This targeted repair is much more cost-effective than full roof replacement.',
   },
   {
     question: 'What is ice and water shield for valleys?',
-    answer:
+  answer:
       'Ice and water shield is a self-adhering waterproof membrane installed under shingles in valleys before the metal or shingles are applied. It provides a secondary waterproofing layer that protects against leaks from ice dams, wind-driven rain, and water backup. We install ice and water shield on all valley repairs.',
   },
   {
     question: 'Should I choose an open or closed valley?',
-    answer:
+  answer:
       'Open valleys (with exposed metal) are generally better for Charlotte\'s heavy rainfall as they handle water volume more effectively and are easier to maintain. Closed valleys (shingles across the valley) provide a cleaner look but require careful installation. We\'ll recommend the best option based on your roof design and preferences.',
   },
   {
     question: 'How do I prevent roof valley leaks?',
-    answer:
+  answer:
       'Prevent valley leaks by: 1) Keeping valleys clear of debris and leaves, 2) Trimming overhanging tree branches, 3) Having annual roof inspections, 4) Addressing minor issues before they become major leaks, 5) Ensuring proper ice and water shield installation. Regular maintenance is key to long-lasting valleys.',
   },
 ];
@@ -234,7 +234,6 @@ export default function RoofValleyRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

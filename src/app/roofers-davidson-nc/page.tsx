@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -54,16 +54,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofers Davidson NC | Lake Norman | Historic Home Experts',
-    description:
+  description:
       '5-star rated, veteran-owned roofers serving Davidson NC. Historic home specialists with Lake Norman expertise. BBB A+ rated. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofers-davidson-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofers-davidson-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero2,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofers Davidson NC - Best Roofing Now team',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofers Davidson NC - Best Roofing Now team',
       },
     ],
   },
@@ -73,39 +73,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for Davidson homes including shingle, metal, slate, and cedar shake.',
-    href: '/services/residential-roofing',
+  title: 'Residential Roofing',
+  description: 'Complete roofing solutions for Davidson homes including shingle, metal, slate, and cedar shake.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Landmark,
-    title: 'Historic Home Roofing',
-    description: 'Specialized expertise preserving the character of Davidson\'s historic properties.',
-    href: '/services/residential-roofing',
+  title: 'Historic Home Roofing',
+  description: 'Specialized expertise preserving the character of Davidson\'s historic properties.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Davidson.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in Davidson.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials and extended warranties.',
-    href: '/roof-replacement-davidson-nc',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials and extended warranties.',
+  href: '/roof-replacement-davidson-nc',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections with detailed reports for Davidson properties.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections with detailed reports for Davidson properties.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -113,33 +113,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '5-Star Rated',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
+  title: '5-Star Rated',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Lake Norman homeowners.`,
   },
   {
     icon: Landmark,
-    title: 'Historic Home Experts',
-    description: 'Specialized experience with Davidson\'s historic properties and preservation requirements.',
+  title: 'Historic Home Experts',
+  description: 'Specialized experience with Davidson\'s historic properties and preservation requirements.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with military values of integrity and excellence.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with zero complaints.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'GAF Master Elite and CertainTeed SELECT certified for premium warranties.',
+  title: 'Certified Installers',
+  description: 'GAF Master Elite and CertainTeed SELECT certified for premium warranties.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services for Davidson homeowners.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services for Davidson homeowners.',
   },
 ];
 
@@ -163,32 +163,32 @@ const davidsonNeighborhoods = [
 const faqs = [
   {
     question: 'Do you have experience with historic homes in Davidson?',
-    answer:
+  answer:
       'Yes, we have extensive experience with Davidson\'s historic properties, particularly in the downtown historic district and areas near Davidson College. We understand the importance of preserving architectural character while ensuring modern protection. We work with appropriate materials like slate, cedar shake, and period-appropriate shingles.',
   },
   {
     question: 'How do I find the best roofers in Davidson NC?',
-    answer:
+  answer:
       'Look for roofers with strong local reviews, proper NC licensing, and experience with both Lake Norman waterfront properties and historic homes. Best Roofing Now has 500+ five-star reviews, BBB A+ rating, and specialized expertise with Davidson\'s unique mix of historic and lakefront properties.',
   },
   {
     question: 'What should roofers in Davidson know about local requirements?',
-    answer:
+  answer:
       'Davidson has specific requirements for historic districts and certain neighborhoods. Roofers should understand local architectural guidelines, HOA requirements, and preservation standards. Our team stays current with Davidson\'s building codes and works with the town\'s planning department when needed.',
   },
   {
     question: 'How much do roofers in Davidson NC charge?',
-    answer:
+  answer:
       'Davidson roofing costs vary by project: repairs typically $300-$1,500, full replacements $10,000-$30,000+ for standard homes. Historic homes with specialty materials like slate or cedar can be $40,000-$80,000+. Lake Norman waterfront properties with premium materials may exceed $100,000. We provide free detailed estimates.',
   },
   {
     question: 'Do you offer emergency roofing services in Davidson?',
-    answer:
+  answer:
       'Yes, we provide 24/7 emergency roofing services throughout Davidson and the Lake Norman area. Our emergency team typically responds within 1-2 hours for urgent situations like active leaks, storm damage, or fallen trees affecting roofs.',
   },
   {
     question: 'What roofing materials work best for Davidson homes?',
-    answer:
+  answer:
       'For Davidson, we recommend: architectural shingles for most residential homes, cedar shake or synthetic slate for historic properties, standing seam metal for lakefront homes needing wind resistance, and natural slate for high-end estates. We help you select materials that match your home\'s style and meet any HOA requirements.',
   },
 ];
@@ -204,7 +204,6 @@ export default function RoofersDavidsonNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofers-davidson-nc`}
         pageName="Roofers Davidson NC"
@@ -322,7 +321,7 @@ export default function RoofersDavidsonNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When you need roofers in Davidson NC, choose a company with historic home expertise,
-                exceptional reviews, and understanding of what makes Davidson special.
+  exceptional reviews, and understanding of what makes Davidson special.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((item) => (

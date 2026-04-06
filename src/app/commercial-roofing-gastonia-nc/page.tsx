@@ -24,7 +24,7 @@ import {
   Cog,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Gastonia NC | Industrial & Warehouse',
-    description:
+  description:
       'Expert commercial and industrial roofing in Gastonia NC. TPO, EPDM, flat roofing, metal roofing for warehouses and manufacturing. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/commercial-roofing-gastonia-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-gastonia-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing Gastonia NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing Gastonia NC - Best Roofing Now',
       },
     ],
   },
@@ -76,51 +76,51 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Layers,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient thermoplastic membranes ideal for Gastonia warehouses and manufacturing facilities.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient thermoplastic membranes ideal for Gastonia warehouses and manufacturing facilities.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for industrial buildings.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Roofing',
+  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for industrial buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Industrial Roofing',
-    description: 'Specialized roofing for manufacturing plants, factories, and industrial facilities throughout Gastonia.',
-    href: '/services/commercial-roofing',
+  title: 'Industrial Roofing',
+  description: 'Specialized roofing for manufacturing plants, factories, and industrial facilities throughout Gastonia.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Warehouse,
-    title: 'Warehouse Roofing',
-    description: 'Large-scale flat roof systems for distribution centers and storage facilities along I-85.',
-    href: '/services/commercial-roofing',
+  title: 'Warehouse Roofing',
+  description: 'Large-scale flat roof systems for distribution centers and storage facilities along I-85.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Roof Coatings',
-    description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings',
+  description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
-    href: '/services/roof-repair',
+  title: 'Commercial Roof Repair',
+  description: '24/7 emergency repairs for leaks, storm damage, and ponding water issues.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive commercial roof assessments with detailed reports and recommendations.',
+  href: '/services/roof-inspection',
   },
   {
     icon: DollarSign,
-    title: 'Preventive Maintenance',
-    description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
-    href: '/services/commercial-roofing',
+  title: 'Preventive Maintenance',
+  description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -128,33 +128,33 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated Commercial Roofer',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Gastonia commercial clients.`,
+  title: '#1 Rated Commercial Roofer',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Gastonia commercial clients.`,
   },
   {
     icon: Factory,
-    title: 'Industrial Expertise',
-    description: 'Extensive experience with manufacturing plants, warehouses, and industrial facilities.',
+  title: 'Industrial Expertise',
+  description: 'Extensive experience with manufacturing plants, warehouses, and industrial facilities.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity and excellence on every commercial project.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity and excellence on every commercial project.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Licensed & Insured',
-    description: 'NC licensed commercial contractor with $2M+ liability coverage.',
+  title: 'Fully Licensed & Insured',
+  description: 'NC licensed commercial contractor with $2M+ liability coverage.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville.',
   },
   {
     icon: Clock,
-    title: 'Minimal Production Disruption',
-    description: 'Nights, weekends, and phased installation to keep your facility running.',
+  title: 'Minimal Production Disruption',
+  description: 'Nights, weekends, and phased installation to keep your facility running.',
   },
 ];
 
@@ -206,42 +206,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What commercial roofing systems do you install in Gastonia NC?',
-    answer:
+  answer:
       'Best Roofing Now installs all major commercial roofing systems in Gastonia including TPO (Thermoplastic Polyolefin), EPDM (Ethylene Propylene Diene Monomer), PVC (Polyvinyl Chloride), modified bitumen, built-up roofing (BUR), standing seam metal roofing, and various roof coating systems. For Gastonia\'s manufacturing plants and warehouses, we often recommend TPO or metal for durability and energy efficiency.',
   },
   {
     question: 'How much does commercial roofing cost in Gastonia NC?',
-    answer:
+  answer:
       'Commercial roofing costs in Gastonia typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, and project size. TPO and EPDM systems average $5-8 per square foot, while metal roofing ranges from $8-15 per square foot. Large warehouse projects may qualify for volume discounts. We provide free, detailed estimates for all commercial projects.',
   },
   {
     question: 'Do you have experience with industrial roofing in Gastonia?',
-    answer:
+  answer:
       'Yes, Best Roofing Now has extensive experience with industrial roofing in Gastonia including manufacturing plants, warehouses, distribution centers, and processing facilities. We understand the unique requirements of industrial buildings including proper drainage for large roof spans, accommodating rooftop equipment, and working around production schedules.',
   },
   {
     question: 'Do you offer emergency commercial roof repair in Gastonia?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers 24/7 emergency commercial roofing services throughout Gastonia and Gaston County. For active leaks and urgent situations in manufacturing facilities and warehouses, we typically respond within 2-4 hours. Our emergency team provides temporary repairs to prevent production disruption and damage. Call (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'How long does a commercial roof last in Gastonia NC?',
-    answer:
+  answer:
       'Commercial roof lifespan in Gastonia varies by material: TPO and EPDM typically last 20-30 years, modified bitumen 15-25 years, metal roofing 40-70 years, and built-up roofing 15-30 years. Industrial buildings with proper maintenance can often exceed these lifespans. Regular inspections and maintenance are essential for Gastonia\'s commercial and industrial roofs.',
   },
   {
     question: 'Can you work around manufacturing schedules in Gastonia?',
-    answer:
+  answer:
       'Absolutely. We understand that production downtime costs money. Best Roofing Now offers flexible scheduling including night shifts, weekend work, and phased installations. For manufacturing facilities with 24/7 operations, we coordinate closely with plant managers to minimize disruption while ensuring worker safety.',
   },
   {
     question: 'What commercial roof warranties do you offer?',
-    answer:
+  answer:
       'We offer industry-leading warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. Our workmanship warranty covers labor for 10-15 years. For large industrial projects, extended warranty options are available.',
   },
   {
     question: 'Do you handle commercial roof insurance claims in Gastonia?',
-    answer:
+  answer:
       'Yes, we have extensive experience with commercial and industrial roof insurance claims in Gastonia. We provide thorough damage documentation, meet with adjusters, and prepare detailed estimates. Storm damage, hail damage, and wind damage to commercial roofs are often covered by property insurance.',
   },
 ];
@@ -257,7 +257,6 @@ export default function CommercialRoofingGastoniaNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-gastonia-nc`}
         pageName="Commercial Roofing Gastonia NC"

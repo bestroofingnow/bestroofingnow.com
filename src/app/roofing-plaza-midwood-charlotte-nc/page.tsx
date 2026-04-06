@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing Plaza Midwood Charlotte NC | Historic Craftsman Homes | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated roofing contractor serving Plaza Midwood. Experts in craftsman homes and historic properties. Free estimates for all roofing services.',
-    url: `${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.neighborhoods.plazaMidwood,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in Plaza Midwood Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in Plaza Midwood Charlotte NC',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Craftsman Home Roofing',
-    description: 'Specialized roofing for Plaza Midwood\'s iconic craftsman bungalows and historic homes.',
-    href: '/services/residential-roofing',
+  title: 'Craftsman Home Roofing',
+  description: 'Specialized roofing for Plaza Midwood\'s iconic craftsman bungalows and historic homes.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Wrench,
-    title: 'Historic Roof Repair',
-    description: 'Careful repairs that preserve the character and integrity of older homes.',
-    href: '/services/roof-repair',
+  title: 'Historic Roof Repair',
+  description: 'Careful repairs that preserve the character and integrity of older homes.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with materials that complement historic architecture.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with materials that complement historic architecture.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Comprehensive inspections for older homes with detailed condition reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Comprehensive inspections for older homes with detailed condition reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Quick response to storm damage with insurance claim assistance.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Quick response to storm damage with insurance claim assistance.',
+  href: '/services/storm-damage',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Roofing solutions for Plaza Midwood\'s eclectic mix of shops and restaurants.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'Roofing solutions for Plaza Midwood\'s eclectic mix of shops and restaurants.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Historic Home Experts',
-    description: 'Experience working with Plaza Midwood\'s unique craftsman and bungalow architecture.',
+  title: 'Historic Home Experts',
+  description: 'Experience working with Plaza Midwood\'s unique craftsman and bungalow architecture.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Installers',
-    description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
+  title: 'Certified Installers',
+  description: 'CertainTeed, GAF, and Owens Corning certified for premium warranty options.',
   },
   {
     icon: Clock,
-    title: 'Flexible Scheduling',
-    description: 'We work around your schedule and respect your neighborhood\'s character.',
+  title: 'Flexible Scheduling',
+  description: 'We work around your schedule and respect your neighborhood\'s character.',
   },
 ];
 
@@ -153,42 +153,42 @@ const nearbyNeighborhoods = [
 const faqs = [
   {
     question: 'Do you have experience with Plaza Midwood\'s craftsman homes?',
-    answer:
+  answer:
       'Absolutely! Best Roofing Now has extensive experience working with Plaza Midwood\'s beautiful craftsman bungalows and historic homes. We understand the unique architectural features of these homes, including their distinctive rooflines, exposed rafter tails, and decorative brackets. We use materials and techniques that preserve the historic character while providing modern protection.',
   },
   {
     question: 'What roofing materials work best for historic homes in Plaza Midwood?',
-    answer:
+  answer:
       'For Plaza Midwood\'s craftsman homes, we often recommend architectural shingles that mimic the look of traditional materials. CertainTeed Landmark and GAF Timberline HDZ are excellent choices that provide a dimensional appearance similar to wood shake while offering superior durability. For homeowners seeking authenticity, we also offer slate and cedar shake options.',
   },
   {
     question: 'How do you protect my landscaping during a roofing project?',
-    answer:
+  answer:
       'Plaza Midwood homes often have beautiful mature landscaping. We take extra care to protect your gardens, shrubs, and trees during the project. We use tarps and plywood to shield plants, carefully position dumpsters to minimize impact, and perform thorough cleanup including magnetic sweeps to collect any stray nails.',
   },
   {
     question: 'Do older Plaza Midwood homes need special ventilation considerations?',
-    answer:
+  answer:
       'Yes, many older homes in Plaza Midwood were built before modern ventilation standards. During our inspection, we assess your attic ventilation and may recommend improvements to prevent moisture buildup, extend roof life, and improve energy efficiency. Proper ventilation is especially important in Charlotte\'s humid climate.',
   },
   {
     question: 'Can you match existing roofing materials on my historic home?',
-    answer:
+  answer:
       'We specialize in matching roofing materials for repairs and partial replacements on historic homes. Our team can source materials that closely match your existing shingles in color, style, and texture. For complete replacements, we help you choose materials that complement your home\'s architectural style.',
   },
   {
     question: 'How much does roof replacement cost in Plaza Midwood?',
-    answer:
+  answer:
       'Roof replacement costs in Plaza Midwood typically range from $8,000 to $20,000 for most craftsman bungalows, depending on size, pitch, and material choice. Historic homes with complex rooflines or special material requirements may be higher. We provide free, detailed estimates with no obligation.',
   },
   {
     question: 'Do you offer financing for Plaza Midwood homeowners?',
-    answer:
+  answer:
       'Yes! We offer flexible financing options to help Plaza Midwood homeowners invest in quality roofing. We partner with trusted lenders to provide competitive rates and terms. Many homeowners qualify for 0% APR for 12-18 months or low monthly payments on longer terms.',
   },
   {
     question: 'How long does a typical roof replacement take in Plaza Midwood?',
-    answer:
+  answer:
       'Most craftsman bungalows in Plaza Midwood can be completed in 1-2 days. Larger homes or those with complex rooflines may take 2-3 days. We work efficiently while maintaining quality and being respectful of your neighbors in this close-knit community.',
   },
 ];
@@ -203,7 +203,12 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc`}
+        pageName="Roofing Plaza Midwood Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -289,7 +294,7 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-4">
                 Plaza Midwood is one of Charlotte&apos;s most beloved neighborhoods, known for its walkable streets,
-                independent businesses, and beautiful historic homes. The craftsman bungalows and early 20th-century
+  independent businesses, and beautiful historic homes. The craftsman bungalows and early 20th-century
                 architecture give this area its distinctive character.
               </p>
               <p className="text-gray text-lg mb-4">

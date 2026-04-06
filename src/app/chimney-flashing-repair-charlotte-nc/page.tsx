@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Chimney Flashing Repair Charlotte NC | Leak Prevention | Best Roofing Now',
-    description:
+  description:
       'Stop chimney leaks with expert flashing repair and waterproofing in Charlotte NC. Licensed contractor with 5-star reviews. Free inspections available.',
-    url: `${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Professional chimney flashing repair Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Professional chimney flashing repair Charlotte NC',
       },
     ],
   },
@@ -68,27 +68,27 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Droplets,
-    title: 'Step Flashing Repair',
-    description: 'Repair or replace step flashing where your roof meets the chimney sides to prevent water infiltration.',
-    features: ['Aluminum or copper materials', 'Proper overlap technique', 'Sealed integration'],
+  title: 'Step Flashing Repair',
+  description: 'Repair or replace step flashing where your roof meets the chimney sides to prevent water infiltration.',
+  features: ['Aluminum or copper materials', 'Proper overlap technique', 'Sealed integration'],
   },
   {
     icon: Shield,
-    title: 'Counter Flashing Installation',
-    description: 'Install counter flashing embedded in chimney mortar joints to cover step flashing and ensure watertight seal.',
-    features: ['Mortar joint installation', 'Proper sealing', 'Long-term protection'],
+  title: 'Counter Flashing Installation',
+  description: 'Install counter flashing embedded in chimney mortar joints to cover step flashing and ensure watertight seal.',
+  features: ['Mortar joint installation', 'Proper sealing', 'Long-term protection'],
   },
   {
     icon: Flame,
-    title: 'Chimney Cap Installation',
-    description: 'Protect your flue from rain, animals, and debris with properly fitted chimney caps.',
-    features: ['Stainless steel caps', 'Custom sizing', 'Spark arrestors'],
+  title: 'Chimney Cap Installation',
+  description: 'Protect your flue from rain, animals, and debris with properly fitted chimney caps.',
+  features: ['Stainless steel caps', 'Custom sizing', 'Spark arrestors'],
   },
   {
     icon: Home,
-    title: 'Cricket/Saddle Installation',
-    description: 'Install chimney crickets to divert water around wide chimneys and prevent pooling.',
-    features: ['Proper drainage', 'Prevents ice dams', 'Extends flashing life'],
+  title: 'Cricket/Saddle Installation',
+  description: 'Install chimney crickets to divert water around wide chimneys and prevent pooling.',
+  features: ['Proper drainage', 'Prevents ice dams', 'Extends flashing life'],
   },
 ];
 
@@ -96,33 +96,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Flashing Specialists',
-    description: 'Our team specializes in chimney flashing with proper installation techniques that last.',
+  title: 'Flashing Specialists',
+  description: 'Our team specializes in chimney flashing with proper installation techniques that last.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Team',
-    description: 'CertainTeed and GAF certified installers for proper flashing installation.',
+  title: 'Certified Team',
+  description: 'CertainTeed and GAF certified installers for proper flashing installation.',
   },
   {
     icon: Clock,
-    title: 'Same-Day Service',
-    description: 'Emergency chimney leak repairs available to prevent further water damage.',
+  title: 'Same-Day Service',
+  description: 'Emergency chimney leak repairs available to prevent further water damage.',
   },
 ];
 
@@ -168,42 +168,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Why is my chimney leaking in Charlotte NC?',
-    answer:
+  answer:
       'Chimney leaks in Charlotte are most commonly caused by failed flashing, cracked chimney crowns, deteriorated mortar joints, or missing chimney caps. Charlotte\'s heavy rainfall (43+ inches annually) and freeze-thaw cycles put significant stress on chimney waterproofing. Our free inspection identifies the exact cause of your leak and the best repair solution.',
   },
   {
     question: 'How much does chimney flashing repair cost in Charlotte?',
-    answer:
+  answer:
       'Chimney flashing repair in Charlotte typically costs $300-$800 for basic repairs and $500-$1,500 for complete flashing replacement. The cost depends on chimney size, flashing material (aluminum vs copper), accessibility, and extent of damage. We provide free estimates with transparent pricing.',
   },
   {
     question: 'What is chimney flashing and why is it important?',
-    answer:
+  answer:
       'Chimney flashing is the metal (usually aluminum, copper, or galvanized steel) installed where your chimney meets the roof. It creates a waterproof barrier that prevents rain from entering your home. Flashing consists of step flashing along the chimney sides and counter flashing embedded in the mortar joints. Properly installed flashing is critical for preventing leaks.',
   },
   {
     question: 'How long does chimney flashing last?',
-    answer:
+  answer:
       'Quality chimney flashing should last 20-30 years with proper installation. However, in Charlotte\'s climate, flashing may need attention sooner due to thermal expansion, settling, and weather exposure. Aluminum flashing typically lasts 20-25 years, while copper flashing can last 50+ years. We recommend annual inspections to catch issues early.',
   },
   {
     question: 'Can you repair chimney flashing without replacing the roof?',
-    answer:
+  answer:
       'Yes, chimney flashing can typically be repaired or replaced without affecting the rest of your roof. We carefully remove the old flashing, install new step and counter flashing, and integrate it with your existing roofing materials. This targeted repair is much more cost-effective than roof replacement.',
   },
   {
     question: 'What is a chimney cricket and do I need one?',
-    answer:
+  answer:
       'A chimney cricket (or saddle) is a small peaked structure installed behind a chimney to divert water around it. Chimneys wider than 30 inches on the uphill side of the roof typically need crickets to prevent water pooling and ice dams. If your wide chimney lacks a cricket, we recommend adding one when repairing flashing.',
   },
   {
     question: 'How do I know if my chimney flashing needs repair?',
-    answer:
+  answer:
       'Signs of failing chimney flashing include: water stains on ceilings/walls near the chimney, musty smells in the attic, visible rust or gaps in the flashing, deteriorated caulk or sealant, and water in the firebox. If you notice any of these signs, schedule a free inspection to prevent further damage.',
   },
   {
     question: 'Do you offer emergency chimney leak repair?',
-    answer:
+  answer:
       'Yes, we offer emergency chimney leak repair services in Charlotte. Active chimney leaks can cause significant water damage to your home\'s interior and structure. Call us at (704) 605-6047 for same-day emergency service to stop the leak and prevent further damage.',
   },
 ];
@@ -218,7 +218,6 @@ export default function ChimneyFlashingRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

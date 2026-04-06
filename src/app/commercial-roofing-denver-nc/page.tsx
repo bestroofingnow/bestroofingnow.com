@@ -24,7 +24,7 @@ import {
   Waves,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -57,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Commercial Roofing Denver NC | TPO & Flat Roof',
-    description:
+  description:
       'Expert commercial roofing in Denver NC. TPO, EPDM, flat roofing, metal roofing for Lake Norman businesses. Lincoln County specialists. BBB A+ rated. Free estimates!',
-    url: `${SITE_CONFIG.url}/commercial-roofing-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/commercial-roofing-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.warehouse,
-        width: 1200,
-        height: 630,
-        alt: 'Commercial roofing Denver NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Commercial roofing Denver NC - Best Roofing Now',
       },
     ],
   },
@@ -76,51 +76,51 @@ export const metadata: Metadata = {
 const commercialServices = [
   {
     icon: Layers,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient thermoplastic membranes ideal for Denver commercial buildings along Highway 16 and 73 corridors.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient thermoplastic membranes ideal for Denver commercial buildings along Highway 16 and 73 corridors.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Roofing',
-    description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for Lincoln County businesses.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Roofing',
+  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance for Lincoln County businesses.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Building2,
-    title: 'Flat Roof Systems',
-    description: 'Complete flat roof installation and repair including built-up roofing and single-ply systems for Denver properties.',
-    href: '/services/commercial-roofing',
+  title: 'Flat Roof Systems',
+  description: 'Complete flat roof installation and repair including built-up roofing and single-ply systems for Denver properties.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Factory,
-    title: 'Metal Roofing',
-    description: 'Standing seam and corrugated metal roofing for commercial and industrial facilities near Lake Norman.',
-    href: '/services/commercial-roofing',
+  title: 'Metal Roofing',
+  description: 'Standing seam and corrugated metal roofing for commercial and industrial facilities near Lake Norman.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Roof Coatings',
-    description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs in North Carolina summers.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings',
+  description: 'Silicone and acrylic roof coatings that extend roof life and reduce cooling costs in North Carolina summers.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Commercial Roof Repair',
-    description: '24/7 emergency repairs for leaks, storm damage, and ponding water on Denver commercial roofs.',
-    href: '/services/roof-repair',
+  title: 'Commercial Roof Repair',
+  description: '24/7 emergency repairs for leaks, storm damage, and ponding water on Denver commercial roofs.',
+  href: '/services/roof-repair',
   },
   {
     icon: FileCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive commercial roof assessments with detailed reports meeting Lincoln County standards.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspections',
+  description: 'Comprehensive commercial roof assessments with detailed reports meeting Lincoln County standards.',
+  href: '/services/roof-inspection',
   },
   {
     icon: DollarSign,
-    title: 'Maintenance Programs',
-    description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance for Denver businesses.',
-    href: '/services/commercial-roofing',
+  title: 'Maintenance Programs',
+  description: 'Scheduled maintenance programs to extend roof life and maintain warranty compliance for Denver businesses.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -128,33 +128,33 @@ const commercialServices = [
 const whyChooseUs = [
   {
     icon: Star,
-    title: '#1 Rated Commercial Roofer',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman area commercial clients.`,
+  title: '#1 Rated Commercial Roofer',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman area commercial clients.`,
   },
   {
     icon: Award,
-    title: 'BBB A+ Accredited',
-    description: 'Better Business Bureau A+ rating with zero complaints on commercial projects.',
+  title: 'BBB A+ Accredited',
+  description: 'Better Business Bureau A+ rating with zero complaints on commercial projects.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned & Operated',
-    description: 'Military values of integrity and excellence on every Denver commercial project.',
+  title: 'Veteran-Owned & Operated',
+  description: 'Military values of integrity and excellence on every Denver commercial project.',
   },
   {
     icon: CheckCircle,
-    title: 'Lincoln County Licensed',
-    description: 'Fully licensed NC commercial contractor familiar with Lincoln County permitting and codes.',
+  title: 'Lincoln County Licensed',
+  description: 'Fully licensed NC commercial contractor familiar with Lincoln County permitting and codes.',
   },
   {
     icon: Users,
-    title: 'Manufacturer Certified',
-    description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville commercial systems.',
+  title: 'Manufacturer Certified',
+  description: 'Certified installers for GAF, Carlisle, Firestone, and Johns Manville commercial systems.',
   },
   {
     icon: Clock,
-    title: 'Minimal Business Disruption',
-    description: 'Nights, weekends, and phased installation to keep your Denver business running smoothly.',
+  title: 'Minimal Business Disruption',
+  description: 'Nights, weekends, and phased installation to keep your Denver business running smoothly.',
   },
 ];
 
@@ -204,42 +204,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'What commercial roofing systems do you install in Denver NC?',
-    answer:
+  answer:
       'Best Roofing Now installs all major commercial roofing systems in Denver NC including TPO (Thermoplastic Polyolefin), EPDM (Ethylene Propylene Diene Monomer), PVC (Polyvinyl Chloride), modified bitumen, built-up roofing (BUR), standing seam metal roofing, and various roof coating systems. We help Denver and Lincoln County businesses select the optimal system based on building type, budget, and long-term performance requirements.',
   },
   {
     question: 'How much does commercial roofing cost in Denver NC?',
-    answer:
+  answer:
       'Commercial roofing costs in Denver typically range from $4 to $12 per square foot depending on the roofing system, roof complexity, and project size. TPO and EPDM systems average $5-8 per square foot, while metal roofing ranges from $8-15 per square foot. A 10,000 sq ft flat roof replacement typically costs $50,000-$100,000. Lincoln County permit fees are generally lower than Mecklenburg County. We provide free, detailed estimates for all Denver commercial projects.',
   },
   {
     question: 'What is the best commercial roofing material for Denver NC businesses?',
-    answer:
+  answer:
       'For Denver and the Lake Norman western shore climate with hot summers and occasional severe storms, TPO roofing is often the best choice for flat-roof commercial buildings. TPO\'s white reflective surface reduces cooling costs by 10-30%, resists UV damage, and handles temperature fluctuations well. For commercial buildings near the lakefront, we also recommend impact-resistant options to handle wind-driven debris from western shore exposure.',
   },
   {
     question: 'Do you handle Lincoln County commercial building permits?',
-    answer:
+  answer:
       'Yes, we manage the full Lincoln County permitting process for commercial roofing projects. Denver is in Lincoln County, which has different building codes and inspection requirements than Mecklenburg County (Charlotte). Our team handles permit applications, coordinates inspections with Lincoln County Building Inspections, and ensures full code compliance on every Denver commercial project.',
   },
   {
     question: 'Do you offer emergency commercial roof repair in Denver NC?',
-    answer:
+  answer:
       'Yes, Best Roofing Now offers 24/7 emergency commercial roofing services throughout Denver and the Lake Norman western shore. For active leaks and urgent situations, we typically respond within 2-4 hours. Our emergency team provides temporary repairs to prevent further damage, then schedules permanent repairs. Call (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'How long does a commercial roof last in Denver NC?',
-    answer:
+  answer:
       'Commercial roof lifespan in Denver varies by material: TPO and EPDM typically last 20-30 years, modified bitumen 15-25 years, metal roofing 40-70 years, and built-up roofing 15-30 years. Proper maintenance significantly extends roof life. Denver\'s western shore sun exposure, heat, and occasional severe weather from Lake Norman make quality installation and regular maintenance essential for maximum lifespan.',
   },
   {
     question: 'Can you work around business operations in Denver NC?',
-    answer:
+  answer:
       'Absolutely. We understand business continuity is critical for Denver and Lincoln County businesses. Best Roofing Now offers flexible scheduling including night shifts, weekend work, and phased installations. For Highway 16 and 73 corridor retail locations and restaurants, we can complete sections after business hours to minimize customer disruption.',
   },
   {
     question: 'What commercial roof warranties do you offer in Denver?',
-    answer:
+  answer:
       'We offer industry-leading warranties including manufacturer warranties up to 30 years NDL (No Dollar Limit) on materials from GAF, Carlisle, Firestone, and Johns Manville. Our workmanship warranty covers labor for 10-15 years. NDL warranties cover full replacement cost with no depreciation, providing maximum protection for Denver commercial property owners.',
   },
 ];
@@ -255,7 +255,6 @@ export default function CommercialRoofingDenverNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-denver-nc`}
         pageName="Commercial Roofing Denver NC"
@@ -550,7 +549,7 @@ export default function CommercialRoofingDenverNCPage() {
             </h2>
             <p className="text-gray text-lg">
               We provide commercial roofing services to businesses throughout Denver, Lincoln County,
-              and the greater Lake Norman region.
+  and the greater Lake Norman region.
             </p>
           </div>
 

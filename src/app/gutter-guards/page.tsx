@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Gutter Guards Charlotte NC | Never Clean Gutters Again | Best Roofing Now',
-    description: 'Professional gutter guard installation to keep debris out of your gutters.',
-    url: `${SITE_CONFIG.url}/gutter-guards`,
-    type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter guards in Charlotte NC' }],
+  description: 'Professional gutter guard installation to keep debris out of your gutters.',
+  url: `${SITE_CONFIG.url}/gutter-guards`,
+  type: 'website',
+  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Gutter guards in Charlotte NC' }],
   },
 };
 
@@ -96,8 +96,8 @@ export default function GutterGuardsPage() {
       <ServiceSchema
         service={{
           title: "Gutter Guard Installation",
-          description: "Professional gutter guard installation in Charlotte NC to keep debris out of your gutters.",
-          slug: "gutter-guards",
+  description: "Professional gutter guard installation in Charlotte NC to keep debris out of your gutters.",
+  slug: "gutter-guards",
         }}
       />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/gutter-guards`} pageName="Gutter Guards Charlotte NC" city="Charlotte" />

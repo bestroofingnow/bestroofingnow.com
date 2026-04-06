@@ -4,7 +4,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { StickyCTA } from '@/components/sections/CTASection';
-import { WebSiteSchema } from '@/components/seo/SchemaMarkup';
+import { WebSiteSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { EstimateProvider } from '@/components/estimate';
 import { SocialProofProvider } from '@/components/social-proof';
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
     default: `Best Roofer Charlotte NC | 5-Star | BBB A+`,
-    template: `%s | ${SITE_CONFIG.name}`,
+  template: `%s | ${SITE_CONFIG.name}`,
   },
   description: `5-star, veteran-owned roofing contractor in Charlotte NC. Roof repair and replacement, storm damage help, and free inspections. Call (704) 605-6047.`,
   keywords: [
@@ -81,39 +81,39 @@ export const metadata: Metadata = {
   publisher: SITE_CONFIG.name,
   formatDetection: {
     telephone: true,
-    email: true,
-    address: true,
+  email: true,
+  address: true,
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: SITE_CONFIG.url,
-    siteName: SITE_CONFIG.name,
-    title: `${SITE_CONFIG.name} | Charlotte's Most Trusted Roofing Company`,
-    description: SITE_CONFIG.description,
-    images: [
+  locale: 'en_US',
+  url: SITE_CONFIG.url,
+  siteName: SITE_CONFIG.name,
+  title: `${SITE_CONFIG.name} | Charlotte's Most Trusted Roofing Company`,
+  description: SITE_CONFIG.description,
+  images: [
       {
-        url: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
-        width: 1200,
-        height: 630,
-        alt: `${SITE_CONFIG.name} - Professional Roofing Services Charlotte NC`,
+        url: 'https://www.bestroofingnow.com/images/logo.jpg',
+  width: 1200,
+  height: 630,
+  alt: `${SITE_CONFIG.name} - Professional Roofing Services Charlotte NC`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_CONFIG.name} | Roofing Company Charlotte NC`,
-    description: SITE_CONFIG.description,
-    site: '@bestroofingnow',
-    creator: '@bestroofingnow',
-    images: ['https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png'],
+  title: `${SITE_CONFIG.name} | Roofing Company Charlotte NC`,
+  description: SITE_CONFIG.description,
+  site: '@bestroofingnow',
+  creator: '@bestroofingnow',
+  images: ['https://www.bestroofingnow.com/images/logo.jpg'],
   },
   robots: {
     index: true,
-    follow: true,
-    googleBot: {
+  follow: true,
+  googleBot: {
       index: true,
-      follow: true,
+  follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -148,14 +148,16 @@ export default function RootLayout({
         {/* CRITICAL: Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* CRITICAL: Preconnect to CMS for images */}
+        {/* CRITICAL: Preconnect to CMS for WordPress images and GCS for project photos */}
         <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
+        <link rel="preconnect" href="https://storage.googleapis.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://storage.googleapis.com" />
         {/* CRITICAL: Logo preload for LCP - the header logo is the LCP element */}
         <link
           rel="preload"
           as="image"
-          href="/_next/image?url=https%3A%2F%2Fcms.bestroofingnow.com%2Fwp-content%2Fuploads%2F2025%2F12%2FUntitled-design-53.png&w=384&q=75"
+          href="/_next/image?url=%2Fimages%2Flogo.jpg&w=384&q=75"
           fetchPriority="high"
         />
         {/* Hero image preload - ONLY for desktop (hero image hidden on mobile for faster LCP) */}
@@ -181,6 +183,8 @@ export default function RootLayout({
         {/* PowerPay financing application */}
         <link rel="dns-prefetch" href="https://app.getpowerpay.com" />
         <WebSiteSchema />
+        {/* Global RoofingContractor schema - rendered once for all pages */}
+        <LocalBusinessSchema includeRating={true} />
       </head>
       <body className="antialiased">
         <EstimateProvider>

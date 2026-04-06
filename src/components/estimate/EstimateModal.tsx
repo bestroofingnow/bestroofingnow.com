@@ -5,6 +5,7 @@ import { X, MapPin, Loader2, Home, Calculator, CheckCircle, Phone, AlertCircle, 
 import { RoofEstimate, PlacePrediction, LeadData } from '@/types/estimate';
 import { formatCurrency, formatNumber } from '@/lib/estimate/calculations';
 import { SITE_CONFIG } from '@/lib/constants';
+import Turnstile from '@/components/ui/Turnstile';
 
 type ModalStep = 'address' | 'calculating' | 'roofType' | 'steepness' | 'complexity' | 'stories' | 'form' | 'results' | 'success';
 
@@ -108,6 +109,15 @@ export default function EstimateModal({ isOpen, onClose, estimateType = 'residen
   });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+
+  const handleTurnstileVerify = useCallback((token: string) => {
+    setTurnstileToken(token);
+  }, []);
+
+  const handleTurnstileExpire = useCallback(() => {
+    setTurnstileToken(null);
+  }, []);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -620,7 +630,7 @@ export default function EstimateModal({ isOpen, onClose, estimateType = 'residen
       const response = await fetch('/api/estimate/submit-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ lead: leadData, estimate: enhancedEstimate }),
+        body: JSON.stringify({ lead: leadData, estimate: enhancedEstimate, turnstileToken }),
       });
 
       const data = await response.json();
@@ -1356,6 +1366,13 @@ export default function EstimateModal({ isOpen, onClose, estimateType = 'residen
                   <p className="text-red-500 text-xs mt-2">{formErrors.tcpaConsent}</p>
                 )}
               </div>
+
+              {/* Turnstile CAPTCHA */}
+              <Turnstile
+                onVerify={handleTurnstileVerify}
+                onExpire={handleTurnstileExpire}
+                className="flex justify-center"
+              />
 
               {error && (
                 <div className="p-3 bg-red-50 text-red-700 rounded-lg flex items-center gap-2">

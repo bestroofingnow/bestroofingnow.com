@@ -12,241 +12,158 @@ import {
   Award,
   Users,
   Clock,
+  Wrench,
   Home,
-  Building2,
-  Layers,
-  RefreshCw,
   MapPin,
-  Sparkles,
   DollarSign,
+  Layers,
+  Ruler,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import {
-  BreadcrumbSchema,
-  FAQSchema,
-  LocalBusinessSchema,
-  AISearchOptimizationBundle,
-  VoiceSearchActionSchema,
-} from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
-import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
+import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Lake Norman NC',
+  title: 'Roof Replacement Lake Norman NC | Free Estimates | Best Roofing Now',
   description:
-    'Roof replacement in Lake Norman NC. Premium wind-resistant and impact-rated materials for waterfront homes. BBB A+ rated. Free estimates. Call (704) 605-6047.',
+    'Professional roof replacement across the Lake Norman NC area. GAF & CertainTeed certified. $10,000-$30,000 range with financing available. Mooresville, Cornelius, Davidson, Denver. Free estimates!',
   keywords: [
     'roof replacement lake norman',
     'new roof lake norman nc',
-    'lake norman roof replacement cost',
+    'roof replacement cost lake norman',
+    'roof installation mooresville nc',
     'roof replacement cornelius nc',
-    'roof replacement davidson nc',
-    'lake norman roofer',
-    'lakefront roof replacement',
-    'waterfront roofing lake norman',
-    'lake norman roofing company',
-    'best roofer lake norman nc',
-    'roof replacement near lake norman',
-    'lkn roof replacement',
+    'new roof davidson nc',
+    'lake norman roofing contractor',
+    'roof replacement near me lake norman',
+    'reroof lake norman nc',
+    'asphalt shingle roof lake norman',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`,
   },
   openGraph: {
-    title: 'Roof Replacement Lake Norman NC | LKN Roofers | Best Roofing Now',
+    title: 'Roof Replacement Lake Norman NC | Free Estimates | Best Roofing Now',
     description:
-      'Premium roof replacement across Lake Norman NC. Wind-resistant and impact-rated materials for waterfront homes. CertainTeed, GAF, and Owens Corning certified. Free estimates!',
+      'Professional roof replacement across Lake Norman NC. GAF & CertainTeed certified installer. Serving Mooresville, Cornelius, Davidson, Denver & Huntersville. Free estimates!',
     url: `${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`,
     type: 'website',
     images: [
       {
-        url: IMAGES.hero.hero4,
+        url: IMAGES.hero.hero20,
         width: 1200,
         height: 630,
-        alt: 'Professional roof replacement in Lake Norman NC - Best Roofing Now',
+        alt: 'Professional roof replacement in the Lake Norman NC area - Best Roofing Now',
       },
     ],
   },
 };
 
-// Replacement services offered
-const replacementServices = [
-  {
-    icon: Home,
-    title: 'Asphalt Shingle Roofing',
-    description: 'Premium architectural shingles from CertainTeed, GAF, and Owens Corning with enhanced warranties for Lake Norman homes.',
-    href: '/services/residential-roofing',
-  },
+const roofingMaterials = [
   {
     icon: Layers,
-    title: 'Metal Roofing',
-    description: 'Standing seam and metal shingle systems ideal for lakefront homes needing superior wind resistance and durability.',
-    href: '/services/metal-roofing',
-  },
-  {
-    icon: Building2,
-    title: 'Impact-Resistant Shingles',
-    description: 'Class 4 impact-rated shingles that withstand hail up to 2 inches - perfect for exposed lakefront properties.',
-    href: '/services/residential-roofing',
-  },
-  {
-    icon: RefreshCw,
-    title: 'Complete Tear-Off',
-    description: 'Full removal of old roofing down to the deck for proper inspection and replacement on your Lake Norman home.',
-    href: '/services/roof-replacement',
+    title: 'Asphalt Shingles',
+    description: 'The most popular choice for Lake Norman homes. GAF Timberline and CertainTeed Landmark options with 25-50 year warranties.',
+    priceRange: '$10,000 - $18,000',
   },
   {
     icon: Shield,
-    title: 'Extended Warranties',
-    description: 'Up to 50-year warranties available through our manufacturer certifications.',
-    href: '/services/roof-replacement',
+    title: 'Architectural Shingles',
+    description: 'Premium dimensional shingles that add curb appeal and durability for LKN waterfront and upscale neighborhoods.',
+    priceRange: '$14,000 - $22,000',
   },
   {
-    icon: Sparkles,
-    title: 'Financing Available',
-    description: 'Flexible financing options to fit your budget with competitive rates for Lake Norman homeowners.',
-    href: '/financing',
+    icon: Home,
+    title: 'Metal Roofing',
+    description: 'Standing seam and metal panels ideal for Lake Norman homes seeking maximum longevity and storm resistance.',
+    priceRange: '$18,000 - $30,000',
+  },
+  {
+    icon: Ruler,
+    title: 'Designer Shingles',
+    description: 'Luxury options like CertainTeed Grand Manor or GAF Camelot for distinctive Lake Norman estates.',
+    priceRange: '$20,000 - $30,000',
   },
 ];
 
-// Why choose us points
-const whyChooseUs = [
+const whyReplaceNow = [
   {
-    icon: Award,
-    title: 'Certified Installers',
-    description: 'CertainTeed ShingleMaster, GAF Factory-Certified Contractor for premium warranties.',
-  },
-  {
-    icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from Lake Norman homeowners.`,
+    icon: DollarSign,
+    title: 'Increase Home Value',
+    description: 'A new roof adds $15,000-$25,000 in resale value to Lake Norman homes, one of the best ROI improvements available.',
   },
   {
     icon: Shield,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+    title: 'Better Storm Protection',
+    description: 'Modern roofing systems withstand winds up to 130 mph and resist hail damage far better than aging materials.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability and workers comp coverage.',
+    title: 'Energy Efficiency',
+    description: 'Cool-roof rated shingles and improved ventilation reduce energy costs for Lake Norman homeowners by up to 15%.',
   },
   {
-    icon: Users,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+    icon: Award,
+    title: 'Manufacturer Warranties',
+    description: 'As GAF and CertainTeed certified installers, we offer enhanced warranties up to 50 years on qualifying systems.',
   },
   {
     icon: Clock,
-    title: 'Fast Installation',
-    description: 'Most roof replacements completed in just 1-3 days with thorough cleanup.',
+    title: 'Avoid Costly Repairs',
+    description: 'Replacing an aging roof prevents recurring repair bills and potential water damage to your LKN home interior.',
+  },
+  {
+    icon: Users,
+    title: 'Insurance Compliance',
+    description: 'Many insurance companies require roof replacement after 20 years. A new roof ensures continued coverage.',
   },
 ];
 
-// Lake Norman communities and neighborhoods
-const lakeNormanAreas = [
-  'Cornelius',
-  'Davidson',
-  'Mooresville',
-  'Huntersville',
-  'Denver',
-  'Sherrills Ford',
-  'The Peninsula',
-  'The Point',
-  'Langtree',
-  'Morrison Plantation',
-  'Jetton Road',
-  'Birkdale',
-];
-
-// Lake Norman city page links
-const lakeNormanCityPages = [
-  { name: 'Cornelius', href: '/locations/cornelius-nc' },
-  { name: 'Davidson', href: '/locations/davidson-nc' },
-  { name: 'Mooresville', href: '/roof-replacement-mooresville-nc' },
-  { name: 'Huntersville', href: '/locations/huntersville-nc' },
-  { name: 'Denver', href: '/roof-replacement-denver-nc' },
+const lknCommunities = [
+  { name: 'Mooresville', href: '/roof-repair-mooresville-nc' },
+  { name: 'Cornelius', href: '/roof-repair-cornelius-nc' },
+  { name: 'Davidson', href: '/roof-repair-davidson-nc' },
+  { name: 'Denver', href: '/roof-repair-denver-nc' },
+  { name: 'Huntersville', href: '/roof-repair-huntersville-nc' },
   { name: 'Sherrills Ford', href: '/locations/sherrills-ford-nc' },
-  { name: 'Charlotte', href: '/roofing-contractor-charlotte-nc' },
-  { name: 'Statesville', href: '/locations/statesville-nc' },
+  { name: 'Troutman', href: '/locations/troutman-nc' },
+  { name: 'Terrell', href: '/locations/terrell-nc' },
 ];
 
-// Cost comparison data
-const materialComparison = [
-  {
-    material: 'Architectural Shingles',
-    costRange: '$8,000 - $18,000',
-    lifespan: '25-30 years',
-    bestFor: 'Most Lake Norman homes',
-    windRating: '130 mph',
-  },
-  {
-    material: 'Impact-Resistant Shingles',
-    costRange: '$10,000 - $22,000',
-    lifespan: '30-50 years',
-    bestFor: 'Waterfront/exposed homes',
-    windRating: '130 mph',
-  },
-  {
-    material: 'Standing Seam Metal',
-    costRange: '$18,000 - $35,000',
-    lifespan: '40-70 years',
-    bestFor: 'Lakefront premium homes',
-    windRating: '140+ mph',
-  },
-  {
-    material: 'Designer/Luxury Shingles',
-    costRange: '$15,000 - $30,000',
-    lifespan: '30-50 years',
-    bestFor: 'Upscale LKN properties',
-    windRating: '130 mph',
-  },
-];
-
-// FAQs specific to roof replacement in Lake Norman
 const faqs = [
   {
-    question: 'How much does a roof replacement cost in Lake Norman NC?',
+    question: 'How much does roof replacement cost in the Lake Norman area?',
     answer:
-      'Roof replacement costs in the Lake Norman area typically range from $8,000-$35,000 depending on home size, materials, and complexity. Architectural shingles average $8,000-$18,000, impact-resistant shingles $10,000-$22,000, and standing seam metal $18,000-$35,000. Larger lakefront homes with complex rooflines may cost more. We provide free, detailed estimates with transparent pricing for all Lake Norman communities.',
+      'Roof replacement in the Lake Norman area typically costs between $10,000 and $30,000 depending on roof size, material selection, and complexity. A standard 2,000 sq ft asphalt shingle roof in Mooresville or Cornelius averages $12,000-$16,000. Premium materials, steep pitches, or waterfront homes with complex rooflines will be at the higher end. We provide detailed free estimates.',
   },
   {
-    question: 'What roofing materials do you recommend for Lake Norman waterfront homes?',
+    question: 'How long does a roof replacement take in Lake Norman NC?',
     answer:
-      'For Lake Norman waterfront homes, we recommend impact-resistant Class 4 shingles (CertainTeed NorthGate, GAF Armor Shield II) or standing seam metal roofing. These materials are designed to withstand high winds crossing the lake and hailstones up to 2 inches. Impact-resistant shingles often qualify for insurance premium discounts of 10-28%, making them a smart investment for exposed lakefront properties.',
+      'Most Lake Norman roof replacements are completed in 1-3 days. A standard single-story home can often be done in one day, while larger homes in communities like The Point or Morrison Plantation with complex rooflines may take 2-3 days. We schedule around weather and always secure the roof at the end of each work day.',
   },
   {
-    question: 'How long does a roof replacement take on a Lake Norman home?',
+    question: 'What is the best roofing material for Lake Norman homes?',
     answer:
-      'Most residential roof replacements across Lake Norman are completed in 1-3 days. Larger lakefront homes with complex designs, multiple roof levels, or steep pitches may take 3-5 days. We work efficiently while maintaining quality standards and always provide a clear timeline before starting. Weather permitting, we complete most projects on schedule.',
+      'For most Lake Norman homes, architectural asphalt shingles like GAF Timberline HDZ or CertainTeed Landmark Pro offer the best balance of durability, aesthetics, and value. Waterfront homes benefit from algae-resistant shingles due to lake humidity. Metal roofing is an excellent choice for homeowners wanting maximum longevity and storm resistance.',
   },
   {
     question: 'Do you offer financing for roof replacement in Lake Norman?',
     answer:
-      'Yes! We offer flexible financing options to make your Lake Norman roof replacement affordable. Our financing partners provide competitive rates with various term lengths. Many homeowners qualify for low monthly payments. We also work with insurance companies if your roof qualifies for storm damage coverage, which is common around Lake Norman.',
+      'Yes. We offer flexible financing options to make roof replacement affordable for Lake Norman homeowners. Options include 12-month same-as-cash, low monthly payment plans, and longer-term financing. We help you find the best option during your free estimate appointment.',
   },
   {
-    question: 'What warranties do you offer on new roofs in Lake Norman?',
+    question: 'Will my insurance cover roof replacement in Lake Norman NC?',
     answer:
-      'As CertainTeed ShingleMaster and GAF Factory-Certified Contractor, we offer enhanced warranty options including GAF\'s Golden Pledge warranty (50 years material + 25 years workmanship), CertainTeed SureStart PLUS warranty, and Owens Corning Platinum Protection. We also provide our own workmanship warranty on every installation across all Lake Norman communities.',
+      'If your Lake Norman roof has sustained storm damage from hail, wind, or fallen trees, your homeowners insurance may cover full replacement minus your deductible. We assist with the entire claims process, including documentation, adjuster meetings, and supplemental claims to ensure you receive fair coverage.',
   },
   {
-    question: 'Which Lake Norman communities do you serve for roof replacement?',
+    question: 'What warranties come with a new roof from Best Roofing Now?',
     answer:
-      'We serve the entire Lake Norman region for roof replacement including Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford. We also serve waterfront neighborhoods like The Peninsula, The Point, Langtree, Jetton Road, Morrison Plantation, and all lakeside communities along the 520-mile shoreline.',
-  },
-  {
-    question: 'Will a new roof increase my Lake Norman home value?',
-    answer:
-      'Yes! A new roof typically returns 60-70% of its cost in increased home value. In Lake Norman\'s competitive real estate market, a new roof is a major selling point and can help your home sell faster. Premium materials like impact-resistant shingles or metal roofing add even more value, especially for waterfront properties where buyers expect quality construction.',
-  },
-  {
-    question: 'Do Lake Norman homes need special roofing considerations?',
-    answer:
-      'Yes. Lake Norman homes face unique challenges including higher wind exposure from storms crossing the open water, increased hail risk, humidity from the lake, and algae growth potential. We recommend wind-resistant materials (130+ mph rating), impact-resistant shingles for exposed properties, proper ventilation to combat moisture, and algae-resistant shingles. Our team understands these lakeside-specific needs.',
+      'Every roof we install around Lake Norman comes with our workmanship warranty plus the manufacturer warranty. As a GAF Factory-Certified contractor and CertainTeed ShingleMaster, we can offer enhanced warranty packages including GAF Golden Pledge (50-year, non-prorated) and CertainTeed SureStart Plus coverage.',
   },
 ];
 
@@ -260,7 +177,6 @@ export default function RoofReplacementLakeNormanNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`}
         pageName="Roof Replacement Lake Norman NC"
@@ -270,18 +186,13 @@ export default function RoofReplacementLakeNormanNCPage() {
         faqs={[
           {
             question: 'How much does roof replacement cost in Lake Norman NC?',
-            answer: 'Roof replacement in Lake Norman costs $8,000-$35,000 depending on size and materials. Architectural shingles run $8,000-$18,000, impact-resistant shingles $10,000-$22,000, and standing seam metal $18,000-$35,000. Best Roofing Now provides free estimates across Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford.',
-            speakableAnswer: 'Roof replacement in Lake Norman costs $8,000 to $35,000 depending on materials. Call Best Roofing Now at 704-605-6047 for a free estimate.',
+            answer: 'Roof replacement in the Lake Norman area costs $10,000-$30,000 depending on size and materials. Best Roofing Now is GAF and CertainTeed certified, serving all LKN communities with free estimates.',
+            speakableAnswer: 'Roof replacement around Lake Norman costs $10,000 to $30,000. Best Roofing Now offers free estimates. Call 704-605-6047.',
           },
           {
-            question: 'Who is the best roofer in Lake Norman NC?',
-            answer: 'Best Roofing Now is Lake Norman\'s top-rated roofing company with a 5-star Google rating and BBB A+ accreditation. This veteran-owned company serves all Lake Norman communities with CertainTeed and GAF certified installations. Call 704-605-6047.',
-            speakableAnswer: 'Best Roofing Now is Lake Norman\'s top-rated roofer with 5-star reviews and BBB A+ rating. Call 704-605-6047.',
-          },
-          {
-            question: 'What roofing is best for Lake Norman waterfront homes?',
-            answer: 'Impact-resistant Class 4 shingles or standing seam metal roofing are best for Lake Norman waterfront homes. These materials resist high winds crossing the lake and hail damage. Impact-resistant shingles can save 10-28% on insurance premiums.',
-            speakableAnswer: 'Impact-resistant shingles or standing seam metal are best for lakefront homes. They resist wind and hail and can save on insurance.',
+            question: 'Who is the best roofing contractor for roof replacement in Lake Norman?',
+            answer: 'Best Roofing Now is a top-rated roofing contractor serving Lake Norman NC with a 5-star Google rating, BBB A+ accreditation, and GAF/CertainTeed certifications. They serve Mooresville, Cornelius, Davidson, Denver, and Huntersville.',
+            speakableAnswer: 'Best Roofing Now is a 5-star, BBB A+ rated roofing contractor serving Lake Norman NC. Call 704-605-6047.',
           },
         ]}
       />
@@ -291,8 +202,8 @@ export default function RoofReplacementLakeNormanNCPage() {
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
           <Image
-            src={IMAGES.hero.hero4}
-            alt="Professional roof replacement in Lake Norman NC"
+            src={IMAGES.hero.hero20}
+            alt="Professional roof replacement across the Lake Norman NC area"
             fill
             className="object-cover opacity-20"
             priority
@@ -301,24 +212,23 @@ export default function RoofReplacementLakeNormanNCPage() {
         <div className="container relative z-10">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
-              <Award className="w-4 h-4" />
-              <span className="text-sm font-semibold">Lake Norman&apos;s Trusted Roofing Experts</span>
+              <Shield className="w-4 h-4" />
+              <span className="text-sm font-semibold">GAF & CertainTeed Certified Installer</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Roof Replacement <br className="hidden md:block" />
               <span className="text-accent-light">Lake Norman NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Premium roof replacement for waterfront and inland homes with {SITE_CONFIG.roofsInstalled}+ roofs installed across LKN
+              Premium roof installation for Lake Norman homes starting at $10,000
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Lake Norman&apos;s trusted roofing company for complete roof replacements across
-              Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford. As certified installers
-              for CertainTeed, GAF, and Owens Corning, we deliver exceptional quality with wind-resistant and
-              impact-rated materials designed for lakefront exposure.
+              When your Lake Norman roof has reached the end of its lifespan, trust the area&apos;s top-rated
+              contractor for a seamless replacement. Best Roofing Now delivers expert roof installation across
+              Mooresville, Cornelius, Davidson, Denver, and Huntersville with GAF and CertainTeed certified
+              materials, manufacturer-backed warranties, and financing options to fit any budget.
             </p>
 
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 href="/contact"
@@ -326,7 +236,7 @@ export default function RoofReplacementLakeNormanNCPage() {
                 size="lg"
                 icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
               >
-                Get Free Estimate
+                Get Free Replacement Estimate
               </Button>
               <Button
                 href={`tel:${SITE_CONFIG.phoneClean}`}
@@ -339,7 +249,6 @@ export default function RoofReplacementLakeNormanNCPage() {
               </Button>
             </div>
 
-            {/* Trust Signals */}
             <div className="flex flex-wrap items-center gap-6 mt-8 text-sm text-white/80">
               <span className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
@@ -351,114 +260,61 @@ export default function RoofReplacementLakeNormanNCPage() {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-400" />
-                Licensed & Insured
+                {SITE_CONFIG.roofsInstalled}+ Roofs Installed
               </span>
               <span className="flex items-center gap-2">
                 <Award className="w-5 h-5 text-accent-light" />
-                Certified Installers
+                Veteran-Owned
               </span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Materials & Cost Section */}
       <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Roof Replacement Options for Lake Norman Homes
+              Roofing Materials & Cost Ranges
             </h2>
             <p className="text-gray text-lg">
-              From premium architectural shingles to impact-resistant and metal roofing, we offer materials
-              specifically chosen for Lake Norman&apos;s waterfront and inland environments.
+              We install a full range of roofing materials to match every Lake Norman home&apos;s style and budget.
+              All pricing is for a typical 2,000-2,500 sq ft roof.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {replacementServices.map((service) => (
-              <Link
-                key={service.title}
-                href={service.href}
-                className="group p-6 bg-light rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {roofingMaterials.map((material) => (
+              <div
+                key={material.title}
+                className="p-6 bg-light rounded-xl hover:shadow-lg transition-all"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <material.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold text-dark mb-2 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray text-sm mb-3">{service.description}</p>
-                <span className="inline-flex items-center gap-1 text-primary font-semibold text-sm">
-                  Learn More
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </Link>
+                <h3 className="font-bold text-dark mb-2">{material.title}</h3>
+                <p className="text-gray text-sm mb-3">{material.description}</p>
+                <p className="text-primary font-bold text-lg">{material.priceRange}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Cost Comparison Section */}
+      {/* Why Replace Now */}
       <section className="section bg-light">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
-              <DollarSign className="w-4 h-4" aria-hidden="true" />
-              <span className="text-sm font-semibold">Cost Guide</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Lake Norman Roof Replacement Cost Comparison
-            </h2>
-            <p className="text-gray text-lg">
-              Compare materials and costs for your Lake Norman roof replacement. Prices reflect typical
-              2,000-3,000 sq ft homes in the area.
-            </p>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-xl shadow-md overflow-hidden">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="text-left p-4 font-bold">Material</th>
-                  <th className="text-left p-4 font-bold">Cost Range</th>
-                  <th className="text-left p-4 font-bold">Lifespan</th>
-                  <th className="text-left p-4 font-bold">Best For</th>
-                  <th className="text-left p-4 font-bold">Wind Rating</th>
-                </tr>
-              </thead>
-              <tbody>
-                {materialComparison.map((item, index) => (
-                  <tr key={item.material} className={index % 2 === 0 ? 'bg-white' : 'bg-light'}>
-                    <td className="p-4 font-semibold text-dark">{item.material}</td>
-                    <td className="p-4 text-gray">{item.costRange}</td>
-                    <td className="p-4 text-gray">{item.lifespan}</td>
-                    <td className="p-4 text-gray">{item.bestFor}</td>
-                    <td className="p-4 text-gray">{item.windRating}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-center text-gray text-sm mt-4">
-            * Costs are estimates for typical Lake Norman homes. Contact us for a free personalized estimate.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className="section bg-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Why Lake Norman Homeowners Choose Best Roofing Now
+                Why Replace Your Lake Norman Roof Now
               </h2>
               <p className="text-gray text-lg mb-8">
-                A new roof is a major investment in your Lake Norman home. Whether you&apos;re on the waterfront
-                in The Peninsula or in an inland neighborhood in Huntersville, we deliver premium materials,
-                expert installation, and exceptional warranties.
+                A new roof is one of the best investments you can make in your Lake Norman home. Here&apos;s
+                why homeowners across the LKN region are choosing to replace now.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
-                {whyChooseUs.map((item) => (
+                {whyReplaceNow.map((item) => (
                   <div key={item.title} className="flex items-start gap-3">
                     <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-5 h-5 text-primary" />
@@ -473,8 +329,8 @@ export default function RoofReplacementLakeNormanNCPage() {
             </div>
             <div className="relative">
               <Image
-                src={IMAGES.realProjects.drone2}
-                alt="Completed roof replacement project in Lake Norman NC"
+                src={IMAGES.realProjects.project15}
+                alt="Completed roof replacement project near Lake Norman NC"
                 width={600}
                 height={450}
                 className="rounded-xl shadow-lg"
@@ -487,8 +343,8 @@ export default function RoofReplacementLakeNormanNCPage() {
                     ))}
                   </div>
                   <div>
-                    <p className="font-bold text-dark">5.0 Rating</p>
-                    <p className="text-sm text-gray">{SITE_CONFIG.googleReviewCount}+ Google Reviews</p>
+                    <p className="font-bold text-dark">{SITE_CONFIG.roofsInstalled}+ Roofs</p>
+                    <p className="text-sm text-gray">Installed Across LKN</p>
                   </div>
                 </div>
               </div>
@@ -506,7 +362,7 @@ export default function RoofReplacementLakeNormanNCPage() {
                 Ready for a New Roof on Lake Norman?
               </h2>
               <p className="text-white/90">
-                Get a free estimate and see why homeowners across all 6 LKN communities trust us.
+                Get a free, detailed estimate with material options and financing for your LKN home.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -517,7 +373,7 @@ export default function RoofReplacementLakeNormanNCPage() {
                 className="border-white text-white hover:bg-white hover:text-accent"
                 icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
               >
-                Get Free Estimate
+                Schedule Free Estimate
               </Button>
               <Button
                 href={`tel:${SITE_CONFIG.phoneClean}`}
@@ -532,113 +388,39 @@ export default function RoofReplacementLakeNormanNCPage() {
         </div>
       </section>
 
-      {/* Service Areas Section */}
+      {/* LKN Communities */}
       <section className="section bg-white">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
               <MapPin className="w-4 h-4" aria-hidden="true" />
-              <span className="text-sm font-semibold">Service Areas</span>
+              <span className="text-sm font-semibold">Lake Norman Communities</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Serving All Lake Norman Communities
+              Roof Replacement Across Lake Norman
             </h2>
             <p className="text-gray text-lg">
-              We provide premium roof replacement services throughout the entire Lake Norman region.
+              We install new roofs in every community around the lake with the same quality and care.
             </p>
           </div>
-
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Lake Norman Areas */}
-            <div className="bg-light rounded-xl p-6">
-              <h3 className="text-xl font-bold text-dark mb-4">Lake Norman Areas We Serve</h3>
-              <div className="flex flex-wrap gap-2">
-                {lakeNormanAreas.map((area) => (
-                  <span
-                    key={area}
-                    className="inline-block bg-white px-3 py-1 rounded-full text-sm text-gray border border-gray-200"
-                  >
-                    {area}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* City Pages */}
-            <div className="bg-light rounded-xl p-6">
-              <h3 className="text-xl font-bold text-dark mb-4">Explore Our LKN City Pages</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {lakeNormanCityPages.map((city) => (
-                  <Link
-                    key={city.name}
-                    href={city.href}
-                    className="flex items-center gap-2 text-gray hover:text-primary transition-colors"
-                  >
-                    <ArrowRight className="w-4 h-4" />
-                    <span>{city.name}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link
-              href="/locations"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
-            >
-              View All Service Areas
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications Section */}
-      <section className="section bg-light">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Certified for Premium Warranties
-            </h2>
-            <p className="text-gray text-lg">
-              Our manufacturer certifications mean your new Lake Norman roof comes with the best warranty coverage available.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-bold text-dark mb-2">CertainTeed ShingleMaster</h3>
-              <p className="text-gray text-sm">
-                Top-tier certification with access to SureStart PLUS extended warranties.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-bold text-dark mb-2">GAF Factory-Certified</h3>
-              <p className="text-gray text-sm">
-                Authorized for GAF&apos;s Golden Pledge warranty - 50 years material, 25 years workmanship.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-bold text-dark mb-2">BBB A+ Accredited</h3>
-              <p className="text-gray text-sm">
-                Better Business Bureau A+ rating. Trusted by Lake Norman homeowners.
-              </p>
-            </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {lknCommunities.map((community) => (
+              <Link
+                key={community.name}
+                href={community.href}
+                className="flex items-center gap-3 bg-light rounded-xl p-4 shadow-md hover:shadow-lg transition-all hover:-translate-y-1"
+              >
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="font-semibold text-dark">{community.name}</span>
+                <ArrowRight className="w-4 h-4 text-gray ml-auto" />
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="section bg-white">
+      <section className="section bg-light">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -647,15 +429,15 @@ export default function RoofReplacementLakeNormanNCPage() {
                 <span className="text-sm font-semibold">Common Questions</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Roof Replacement FAQs - Lake Norman NC
+                Roof Replacement FAQs for Lake Norman NC
               </h2>
               <p className="text-gray text-lg">
-                Answers to common questions about roof replacement across the Lake Norman area.
+                Answers to common questions about roof replacement across the Lake Norman region.
               </p>
             </div>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="bg-light rounded-xl shadow-md p-6">
+                <div key={index} className="bg-white rounded-xl shadow-md p-6">
                   <h3 className="font-bold text-dark mb-2">{faq.question}</h3>
                   <p className="text-gray">{faq.answer}</p>
                 </div>
@@ -665,15 +447,10 @@ export default function RoofReplacementLakeNormanNCPage() {
         </div>
       </section>
 
-      {/* Project Gallery Strip */}
       <GeoProjectGalleryStrip
-        pageType="other"
-        city="Lake Norman"
+        pageType="location"
+        city="Mooresville"
         slug="roof-replacement-lake-norman-nc"
-        count={4}
-        title="Recent Roof Replacement Projects in Lake Norman"
-        subtitle="Browse completed roof replacement projects from the Lake Norman region by Best Roofing Now."
-        schemaPageUrl={`${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`}
       />
 
       <CityGeoSection
@@ -684,8 +461,8 @@ export default function RoofReplacementLakeNormanNCPage() {
       />
 
       <CTASection
-        title="Get Your Free Roof Replacement Estimate for Lake Norman"
-        subtitle="Contact us today for a free inspection and detailed estimate. We serve Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford with premium roofing solutions built for lakefront living."
+        title="Get Your Free Roof Replacement Estimate"
+        subtitle="Lake Norman's top-rated roofing contractor is ready to help. We'll inspect your roof, explain your material options, and provide a detailed estimate with financing available."
       />
     </>
   );

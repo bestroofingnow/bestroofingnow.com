@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Slate Roofing Charlotte NC | Luxury Slate Roof Installation',
-    description:
+  description:
       'Premium natural slate roof installation for Charlotte\'s finest homes. Timeless beauty, 100+ year lifespan, and unmatched elegance from BBB A+ rated experts.',
-    url: `${SITE_CONFIG.url}/slate-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/slate-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Slate roofing installation Charlotte NC - Best Roofing Now luxury roofing',
+  width: 1200,
+  height: 630,
+  alt: 'Slate roofing installation Charlotte NC - Best Roofing Now luxury roofing',
       },
     ],
   },
@@ -69,33 +69,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '100+ Year Lifespan',
-    description: 'Natural slate routinely lasts 100-150 years, often outliving the homes they protect.',
+  title: '100+ Year Lifespan',
+  description: 'Natural slate routinely lasts 100-150 years, often outliving the homes they protect.',
   },
   {
     icon: Gem,
-    title: 'Timeless Beauty',
-    description: 'Each slate tile is unique, creating a stunning, elegant appearance that only improves with age.',
+  title: 'Timeless Beauty',
+  description: 'Each slate tile is unique, creating a stunning, elegant appearance that only improves with age.',
   },
   {
     icon: Flame,
-    title: 'Fireproof Protection',
-    description: 'Natural stone is completely fireproof - the highest possible fire rating for any roofing material.',
+  title: 'Fireproof Protection',
+  description: 'Natural stone is completely fireproof - the highest possible fire rating for any roofing material.',
   },
   {
     icon: Leaf,
-    title: '100% Natural',
-    description: 'Quarried natural stone with zero environmental impact. No chemicals, plastics, or synthetics.',
+  title: '100% Natural',
+  description: 'Quarried natural stone with zero environmental impact. No chemicals, plastics, or synthetics.',
   },
   {
     icon: Shield,
-    title: 'Storm Resistant',
-    description: 'Dense slate stands up to high winds, hail, and severe weather better than almost any other material.',
+  title: 'Storm Resistant',
+  description: 'Dense slate stands up to high winds, hail, and severe weather better than almost any other material.',
   },
   {
     icon: Sparkles,
-    title: 'Increases Home Value',
-    description: 'Slate roofs significantly increase property values and are highly desirable to luxury home buyers.',
+  title: 'Increases Home Value',
+  description: 'Slate roofs significantly increase property values and are highly desirable to luxury home buyers.',
   },
 ];
 
@@ -103,33 +103,33 @@ const benefits = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Slate Roofing Specialists',
-    description: 'Our master craftsmen have specialized training in traditional slate installation techniques.',
+  title: 'Slate Roofing Specialists',
+  description: 'Our master craftsmen have specialized training in traditional slate installation techniques.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Historic Preservation',
-    description: 'Experience with historic homes and preservation requirements throughout Charlotte.',
+  title: 'Historic Preservation',
+  description: 'Experience with historic homes and preservation requirements throughout Charlotte.',
   },
   {
     icon: Clock,
-    title: 'Lifetime Investment',
-    description: 'We help you select the perfect slate for a roof that will last generations.',
+  title: 'Lifetime Investment',
+  description: 'We help you select the perfect slate for a roof that will last generations.',
   },
 ];
 
@@ -137,23 +137,23 @@ const whyChooseUs = [
 const slateTypes = [
   {
     type: 'Vermont Slate',
-    description: 'Premium American slate in unfading gray, green, purple, and red colors.',
-    lifespan: '125-200 years',
+  description: 'Premium American slate in unfading gray, green, purple, and red colors.',
+  lifespan: '125-200 years',
   },
   {
     type: 'Pennsylvania Slate',
-    description: 'Classic black and gray slates with proven multi-generational performance.',
-    lifespan: '100-150 years',
+  description: 'Classic black and gray slates with proven multi-generational performance.',
+  lifespan: '100-150 years',
   },
   {
     type: 'Welsh Slate',
-    description: 'Prestigious European slate known for its deep blue-gray tones.',
-    lifespan: '100-200 years',
+  description: 'Prestigious European slate known for its deep blue-gray tones.',
+  lifespan: '100-200 years',
   },
   {
     type: 'Spanish Slate',
-    description: 'Cost-effective option with beautiful dark gray and black coloring.',
-    lifespan: '75-100 years',
+  description: 'Cost-effective option with beautiful dark gray and black coloring.',
+  lifespan: '75-100 years',
   },
 ];
 
@@ -161,18 +161,18 @@ const slateTypes = [
 const applications = [
   {
     icon: Home,
-    title: 'Luxury Estates',
-    description: 'The ultimate roofing choice for upscale homes in Myers Park, Eastover, and other premier neighborhoods.',
+  title: 'Luxury Estates',
+  description: 'The ultimate roofing choice for upscale homes in Myers Park, Eastover, and other premier neighborhoods.',
   },
   {
     icon: Landmark,
-    title: 'Historic Homes',
-    description: 'Authentic restoration for Dilworth, Fourth Ward, and other historic Charlotte neighborhoods.',
+  title: 'Historic Homes',
+  description: 'Authentic restoration for Dilworth, Fourth Ward, and other historic Charlotte neighborhoods.',
   },
   {
     icon: Gem,
-    title: 'Custom Homes',
-    description: 'Make a statement with new construction featuring timeless slate roofing.',
+  title: 'Custom Homes',
+  description: 'Make a statement with new construction featuring timeless slate roofing.',
   },
 ];
 
@@ -180,42 +180,42 @@ const applications = [
 const faqs = [
   {
     question: 'How much does a slate roof cost in Charlotte NC?',
-    answer:
+  answer:
       'Slate roofing in Charlotte typically costs $20-40 per square foot installed, or $40,000-$80,000+ for an average home. Premium Vermont or Welsh slates can exceed $50/sq ft. While significantly more expensive upfront than other materials, slate\'s 100-150 year lifespan makes it the most cost-effective roofing choice over the very long term - often the only roof a home will ever need.',
   },
   {
     question: 'How long does a slate roof actually last?',
-    answer:
+  answer:
       'Natural slate roofs routinely last 100-150 years, with some lasting 200+ years. Many slate roofs installed in the 1800s are still protecting homes today. The key factors are slate quality (unfading vs weathering grades), proper installation, and appropriate roof structure. Hard slates like Vermont unfading can last 175-200 years when properly maintained.',
   },
   {
     question: 'Is my home\'s structure strong enough for slate?',
-    answer:
+  answer:
       'Slate is heavier than other roofing materials (800-1500 lbs per 100 sq ft vs 200-300 for shingles). Most homes built before 1940 were designed for slate and can support it without modification. Newer homes may need structural reinforcement. We provide thorough structural assessments to determine if your home can support slate or what modifications might be needed.',
   },
   {
     question: 'Can you repair my existing slate roof?',
-    answer:
+  answer:
       'Absolutely. Slate roof repair is one of our specialties. We can replace broken or missing slates, repair flashing, address leaks, and restore your slate roof to excellent condition. We maintain an inventory of salvaged and new slates in various sizes and colors to match existing roofs. Often, a well-executed repair extends a slate roof\'s life by decades.',
   },
   {
     question: 'What maintenance does a slate roof require?',
-    answer:
+  answer:
       'Slate roofs require minimal maintenance compared to their incredible lifespan. Annual inspections to check for cracked or slipped slates, debris in valleys, and flashing condition are recommended. The copper or stainless steel flashings typically need replacement every 70-100 years - still less often than most roofs need complete replacement!',
   },
   {
     question: 'Should I get natural slate or synthetic slate?',
-    answer:
+  answer:
       'Natural slate offers unmatched longevity (100-150+ years vs 50 years for synthetic), authentic beauty that improves with age, and the highest fire rating. Synthetic slate costs less and weighs less, but lacks the heirloom quality and exceptional lifespan of natural stone. For homes where slate is the goal, we typically recommend natural slate for its superior long-term value.',
   },
   {
     question: 'Is slate roofing appropriate for Charlotte\'s climate?',
-    answer:
+  answer:
       'Slate is excellent for Charlotte\'s climate. It handles our temperature variations, humidity, UV exposure, and occasional severe storms with ease. The dense stone is impervious to the rot and mold that can affect other materials in our humid climate. Many of Charlotte\'s oldest homes still have their original slate roofs.',
   },
   {
     question: 'Do you work with historic preservation requirements?',
-    answer:
+  answer:
       'Yes. We have experience working with Charlotte\'s historic neighborhoods and understand preservation requirements. We can match existing slate patterns, colors, and installation methods to maintain historic authenticity. We also work with the Charlotte-Mecklenburg Historic Landmarks Commission when required for designated properties.',
   },
 ];
@@ -230,7 +230,6 @@ export default function SlateRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

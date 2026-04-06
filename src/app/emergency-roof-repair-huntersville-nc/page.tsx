@@ -22,7 +22,7 @@ import {
   TreePine,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Emergency Roof Repair Huntersville NC | 24/7 Service | Best Roofing Now',
-    description:
+  description:
       '24/7 emergency roof repair in Huntersville NC. Fast response for storm damage, active leaks, and urgent repairs. BBB A+ rated, veteran-owned. Call now!',
-    url: `${SITE_CONFIG.url}/emergency-roof-repair-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/emergency-roof-repair-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.services.emergency,
-        width: 1200,
-        height: 630,
-        alt: 'Emergency roof repair services in Huntersville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Emergency roof repair services in Huntersville NC - Best Roofing Now',
       },
     ],
   },
@@ -71,39 +71,39 @@ export const metadata: Metadata = {
 const emergencyServices = [
   {
     icon: AlertTriangle,
-    title: 'Storm Damage Response',
-    description: 'Immediate response for wind, hail, and severe weather damage to protect your Huntersville home.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Response',
+  description: 'Immediate response for wind, hail, and severe weather damage to protect your Huntersville home.',
+  href: '/services/storm-damage',
   },
   {
     icon: CloudRain,
-    title: 'Active Leak Repair',
-    description: 'Fast repair for active roof leaks to prevent water damage to your home and belongings.',
-    href: '/services/roof-repair',
+  title: 'Active Leak Repair',
+  description: 'Fast repair for active roof leaks to prevent water damage to your home and belongings.',
+  href: '/services/roof-repair',
   },
   {
     icon: TreePine,
-    title: 'Fallen Tree/Debris',
-    description: 'Emergency removal of trees and debris and immediate roof protection and repair.',
-    href: '/services/emergency-roofing',
+  title: 'Fallen Tree/Debris',
+  description: 'Emergency removal of trees and debris and immediate roof protection and repair.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Shield,
-    title: 'Emergency Tarping',
-    description: 'Temporary tarping to protect your home until permanent repairs can be completed.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Tarping',
+  description: 'Temporary tarping to protect your home until permanent repairs can be completed.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Wrench,
-    title: 'Urgent Repairs',
-    description: 'Same-day repairs for missing shingles, exposed decking, and other urgent issues.',
-    href: '/services/roof-repair',
+  title: 'Urgent Repairs',
+  description: 'Same-day repairs for missing shingles, exposed decking, and other urgent issues.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Insurance Documentation',
-    description: 'Thorough documentation and photos for insurance claims after emergency events.',
-    href: '/services/storm-damage',
+  title: 'Insurance Documentation',
+  description: 'Thorough documentation and photos for insurance claims after emergency events.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -111,33 +111,33 @@ const emergencyServices = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: '24/7 Availability',
-    description: 'Round-the-clock emergency response when you need us most - nights, weekends, and holidays.',
+  title: '24/7 Availability',
+  description: 'Round-the-clock emergency response when you need us most - nights, weekends, and holidays.',
   },
   {
     icon: Zap,
-    title: 'Fast Response',
-    description: 'We respond to emergencies within 1-4 hours in the Huntersville area.',
+  title: 'Fast Response',
+  description: 'We respond to emergencies within 1-4 hours in the Huntersville area.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with military values of integrity and rapid response.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with military values of integrity and rapid response.',
   },
   {
     icon: Users,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability coverage.',
   },
   {
     icon: Star,
-    title: '5-Star Service',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from Huntersville homeowners.`,
+  title: '5-Star Service',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from Huntersville homeowners.`,
   },
 ];
 
@@ -175,42 +175,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How quickly can you respond to a roof emergency in Huntersville?',
-    answer:
+  answer:
       'Our emergency team typically responds within 1-4 hours for urgent situations in Huntersville. For active leaks, storm damage, or safety hazards, we prioritize getting to your home as quickly as possible. Call us 24/7 at (704) 605-6047 for immediate assistance.',
   },
   {
     question: 'Do you provide 24/7 emergency roofing service in Huntersville?',
-    answer:
+  answer:
       'Yes! Best Roofing Now offers true 24/7 emergency roofing services in Huntersville and throughout the Lake Norman area. Whether it\'s 2 AM on a Sunday or during a holiday, we\'re available when you need us most. Our after-hours line is always staffed.',
   },
   {
     question: 'What should I do if a tree falls on my roof in Huntersville?',
-    answer:
+  answer:
       'First, ensure everyone in your home is safe and evacuate if necessary. Do not attempt to remove the tree yourself. Call us immediately at (704) 605-6047 - we\'ll dispatch our emergency team to secure your home, safely remove the debris, and tarp exposed areas to prevent further damage while coordinating permanent repairs.',
   },
   {
     question: 'How much does emergency roof repair cost in Huntersville?',
-    answer:
+  answer:
       'Emergency roof repair costs vary based on the type and extent of damage. Emergency tarping typically ranges from $300-$800. Temporary repairs to stop active leaks usually cost $200-$500. More extensive emergency repairs range from $500-$2,000+. We provide upfront pricing before any work begins.',
   },
   {
     question: 'Will you help with my insurance claim for storm damage in Huntersville?',
-    answer:
+  answer:
       'Absolutely! We have extensive experience with storm damage insurance claims in the Huntersville area. We document all damage with photos and detailed reports, meet with your insurance adjuster, and advocate for fair settlements. Many Huntersville homes have qualified for full roof replacement after storm events.',
   },
   {
     question: 'What counts as a roofing emergency?',
-    answer:
+  answer:
       'Roofing emergencies include: active leaks allowing water into your home, storm damage with exposed roof decking, fallen trees or large debris on your roof, missing large sections of shingles after storms, structural damage compromising your roof\'s integrity, and any damage that poses a safety risk. If in doubt, call us - we\'ll help assess your situation.',
   },
   {
     question: 'Can you do permanent repairs during an emergency call?',
-    answer:
+  answer:
       'It depends on the damage and conditions. For minor damage, we can often complete permanent repairs during the emergency visit. For major damage requiring materials or extensive work, we typically perform emergency tarping and temporary repairs first to protect your home, then schedule permanent repairs within 1-7 days depending on material availability.',
   },
   {
     question: 'What areas of Huntersville do you cover for emergency service?',
-    answer:
+  answer:
       'We provide emergency roofing services throughout all of Huntersville including Birkdale Village, Rosedale, Vermillion, Skybrook, The Palisades, Highland Creek, and all surrounding neighborhoods. We also cover nearby communities including Cornelius, Davidson, Mooresville, and Charlotte.',
   },
 ];
@@ -225,7 +225,6 @@ export default function EmergencyRoofRepairHuntersvilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/emergency-roof-repair-huntersville-nc`}
         pageName="Emergency Roof Repair Huntersville NC"
@@ -316,7 +315,7 @@ export default function EmergencyRoofRepairHuntersvilleNCPage() {
             </h2>
             <p className="text-gray text-lg">
               When disaster strikes, our emergency team is ready to protect your home with fast,
-              professional response to any roofing emergency.
+  professional response to any roofing emergency.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

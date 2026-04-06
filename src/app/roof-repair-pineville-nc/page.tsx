@@ -22,7 +22,7 @@ import {
   Search,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Repair Pineville NC | Carolina Place Area | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated roof repair experts serving Pineville NC and Carolina Place area. Fast response, quality repairs, fair pricing. Veteran-owned. Free estimates!',
-    url: `${SITE_CONFIG.url}/roof-repair-pineville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-repair-pineville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Roof repair services in Pineville NC by Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof repair services in Pineville NC by Best Roofing Now',
       },
     ],
   },
@@ -71,39 +71,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Droplets,
-    title: 'Leak Repair',
-    description: 'Fast identification and repair of roof leaks to prevent water damage to your Pineville home.',
-    href: '/services/roof-repair',
+  title: 'Leak Repair',
+  description: 'Fast identification and repair of roof leaks to prevent water damage to your Pineville home.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Shingle Repair & Replacement',
-    description: 'Fix damaged, missing, or curling shingles to restore your roof\'s protection.',
-    href: '/services/roof-repair',
+  title: 'Shingle Repair & Replacement',
+  description: 'Fix damaged, missing, or curling shingles to restore your roof\'s protection.',
+  href: '/services/roof-repair',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency repairs for wind, hail, and storm damage with insurance claim assistance.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency repairs for wind, hail, and storm damage with insurance claim assistance.',
+  href: '/services/storm-damage',
   },
   {
     icon: Wrench,
-    title: 'Flashing Repair',
-    description: 'Fix leaking flashing around chimneys, vents, skylights, and roof valleys.',
-    href: '/services/roof-repair',
+  title: 'Flashing Repair',
+  description: 'Fix leaking flashing around chimneys, vents, skylights, and roof valleys.',
+  href: '/services/roof-repair',
   },
   {
     icon: Building2,
-    title: 'Flat Roof Repair',
-    description: 'Specialized repairs for flat and low-slope roofing systems on commercial buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Flat Roof Repair',
+  description: 'Specialized repairs for flat and low-slope roofing systems on commercial buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Roof Repair',
-    description: '24/7 emergency services for urgent roof problems requiring immediate attention.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Roof Repair',
+  description: '24/7 emergency services for urgent roof problems requiring immediate attention.',
+  href: '/services/emergency-roofing',
   },
 ];
 
@@ -111,33 +111,33 @@ const services = [
 const commonProblems = [
   {
     icon: Droplets,
-    title: 'Roof Leaks',
-    description: 'Active leaks, water stains on ceilings, and moisture in the attic.',
+  title: 'Roof Leaks',
+  description: 'Active leaks, water stains on ceilings, and moisture in the attic.',
   },
   {
     icon: Home,
-    title: 'Missing Shingles',
-    description: 'Shingles blown off by wind or deteriorated from age and weather.',
+  title: 'Missing Shingles',
+  description: 'Shingles blown off by wind or deteriorated from age and weather.',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage',
-    description: 'Hail damage, wind damage, and debris impact from severe weather.',
+  title: 'Storm Damage',
+  description: 'Hail damage, wind damage, and debris impact from severe weather.',
   },
   {
     icon: Wrench,
-    title: 'Flashing Issues',
-    description: 'Deteriorated or improperly installed flashing causing leaks.',
+  title: 'Flashing Issues',
+  description: 'Deteriorated or improperly installed flashing causing leaks.',
   },
   {
     icon: AlertTriangle,
-    title: 'Sagging Roof',
-    description: 'Structural issues causing visible sagging or dipping in the roofline.',
+  title: 'Sagging Roof',
+  description: 'Structural issues causing visible sagging or dipping in the roofline.',
   },
   {
     icon: Search,
-    title: 'Poor Ventilation',
-    description: 'Inadequate attic ventilation leading to moisture and heat problems.',
+  title: 'Poor Ventilation',
+  description: 'Inadequate attic ventilation leading to moisture and heat problems.',
   },
 ];
 
@@ -145,33 +145,33 @@ const commonProblems = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Pineville homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Pineville homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Certified Technicians',
-    description: 'CertainTeed, GAF, and Owens Corning certified repair technicians.',
+  title: 'Certified Technicians',
+  description: 'CertainTeed, GAF, and Owens Corning certified repair technicians.',
   },
   {
     icon: Clock,
-    title: 'Fast Response',
-    description: 'Same-day and next-day repair appointments available for Pineville area.',
+  title: 'Fast Response',
+  description: 'Same-day and next-day repair appointments available for Pineville area.',
   },
 ];
 
@@ -213,42 +213,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does roof repair cost in Pineville NC?',
-    answer:
+  answer:
       'Roof repair costs in Pineville typically range from $200-$1,500 depending on the type and extent of damage. Minor repairs like fixing a few shingles cost $200-$500, while more extensive repairs like fixing flashing or addressing multiple leaks range from $500-$1,500. We provide free inspections and detailed quotes before any work begins.',
   },
   {
     question: 'How quickly can you repair my roof in Pineville?',
-    answer:
+  answer:
       'Best Roofing Now offers fast response times for Pineville roof repairs. For emergencies like active leaks, we provide same-day or next-day service. Standard repairs are typically scheduled within 1-3 days. We understand that roof problems can\'t wait, especially with North Carolina\'s unpredictable weather.',
   },
   {
     question: 'Do you offer free roof inspections in Pineville?',
-    answer:
+  answer:
       'Yes! We offer completely free, no-obligation roof inspections throughout Pineville and the Carolina Place area. Our certified inspectors will thoroughly examine your roof, identify all issues, and provide a detailed written report with photos. There\'s no pressure to hire us after the inspection.',
   },
   {
     question: 'How do I know if my roof needs repair or replacement?',
-    answer:
+  answer:
       'Generally, if damage is localized to a small area and your roof is under 15 years old, repair is usually the best option. If damage is widespread, you have multiple leaks, or your roof is approaching 20+ years, replacement may be more cost-effective. We provide honest assessments and won\'t push for replacement unless it\'s truly necessary.',
   },
   {
     question: 'Do you repair roofs damaged by storms near Carolina Place?',
-    answer:
+  answer:
       'Absolutely. Storm damage repair is one of our specialties. We serve the entire Pineville area including neighborhoods near Carolina Place Mall. We provide emergency tarping to prevent further damage, thorough documentation for insurance claims, and work directly with your insurance company to maximize your claim.',
   },
   {
     question: 'What causes most roof leaks in Pineville homes?',
-    answer:
+  answer:
       'The most common causes of roof leaks in Pineville include: damaged or missing shingles from wind and age, deteriorated flashing around chimneys and vents, clogged gutters causing water backup, improper roof ventilation, and storm damage from hail and falling debris. Our free inspection identifies the exact cause of your leak.',
   },
   {
     question: 'Do you provide warranties on roof repairs?',
-    answer:
+  answer:
       'Yes, all our roof repairs come with warranty protection. Material warranties vary by product (typically 10-25 years), and we provide our own workmanship warranty on all repair work. As certified installers for major manufacturers, we can offer enhanced warranty options for qualifying repairs.',
   },
   {
     question: 'Can you repair a roof with multiple layers of shingles?',
-    answer:
+  answer:
       'We can often repair roofs with two layers of shingles, though it depends on the type of repair needed. However, NC building codes limit roofs to two layers. If your roof already has two layers and needs significant work, a tear-off and replacement may be required. We\'ll inspect and advise you honestly.',
   },
 ];
@@ -263,7 +263,12 @@ export default function RoofRepairPinevilleNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-repair-pineville-nc`}
+        pageName="Roof Repair Pineville NC"
+        city="Pineville"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -412,7 +417,7 @@ export default function RoofRepairPinevilleNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 When you need a roof repair in Pineville, you want a company that responds quickly, does quality work,
-                and charges fair prices. Best Roofing Now has built our reputation on honesty and excellent
+  and charges fair prices. Best Roofing Now has built our reputation on honesty and excellent
                 craftsmanship.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

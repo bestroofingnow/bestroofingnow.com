@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Church Roofing Charlotte NC | Religious Building Experts | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated church roofing experts in Charlotte NC. Steep slopes, steeples, historic churches, and religious building specialists. Free estimates.',
-    url: `${SITE_CONFIG.url}/church-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/church-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'Professional church roofing services in Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional church roofing services in Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,33 +67,33 @@ export const metadata: Metadata = {
 const churchServices = [
   {
     icon: Church,
-    title: 'Sanctuary Roofing',
-    description: 'Complete roofing solutions for main sanctuary buildings with attention to acoustic and aesthetic needs.',
+  title: 'Sanctuary Roofing',
+  description: 'Complete roofing solutions for main sanctuary buildings with attention to acoustic and aesthetic needs.',
   },
   {
     icon: Layers,
-    title: 'Steep Slope Specialists',
-    description: 'Expert installation on the steep, complex roof designs common in church architecture.',
+  title: 'Steep Slope Specialists',
+  description: 'Expert installation on the steep, complex roof designs common in church architecture.',
   },
   {
     icon: History,
-    title: 'Historic Preservation',
-    description: 'Sensitive restoration work for historic churches preserving original character and materials.',
+  title: 'Historic Preservation',
+  description: 'Sensitive restoration work for historic churches preserving original character and materials.',
   },
   {
     icon: Hammer,
-    title: 'Steeple & Spire Repair',
-    description: 'Specialized repair and restoration of steeples, spires, and bell towers.',
+  title: 'Steeple & Spire Repair',
+  description: 'Specialized repair and restoration of steeples, spires, and bell towers.',
   },
   {
     icon: Heart,
-    title: 'Multi-Building Campuses',
-    description: 'Comprehensive roofing for fellowship halls, education buildings, and parsonages.',
+  title: 'Multi-Building Campuses',
+  description: 'Comprehensive roofing for fellowship halls, education buildings, and parsonages.',
   },
   {
     icon: FileCheck,
-    title: 'Capital Campaign Support',
-    description: 'Detailed proposals and phased project options for church building committees.',
+  title: 'Capital Campaign Support',
+  description: 'Detailed proposals and phased project options for church building committees.',
   },
 ];
 
@@ -101,33 +101,33 @@ const churchServices = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'Religious Building Experience',
-    description: 'Extensive experience with churches, synagogues, and religious buildings throughout Charlotte.',
+  title: 'Religious Building Experience',
+  description: 'Extensive experience with churches, synagogues, and religious buildings throughout Charlotte.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte property owners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied Charlotte property owners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Military values of respect, integrity, and attention to detail in every project.',
+  title: 'Veteran-Owned',
+  description: 'Military values of respect, integrity, and attention to detail in every project.',
   },
   {
     icon: CheckCircle,
-    title: 'Fully Insured',
-    description: 'Comprehensive coverage including specialty access equipment for steeple work.',
+  title: 'Fully Insured',
+  description: 'Comprehensive coverage including specialty access equipment for steeple work.',
   },
   {
     icon: Users,
-    title: 'Respectful Service',
-    description: 'We understand the sacred nature of your space and work with appropriate reverence.',
+  title: 'Respectful Service',
+  description: 'We understand the sacred nature of your space and work with appropriate reverence.',
   },
   {
     icon: Clock,
-    title: 'Flexible Scheduling',
-    description: 'We work around worship services and church activities to minimize disruption.',
+  title: 'Flexible Scheduling',
+  description: 'We work around worship services and church activities to minimize disruption.',
   },
 ];
 
@@ -167,42 +167,42 @@ const areasServed = [
 const faqs = [
   {
     question: 'Do you have experience with steep church roofs?',
-    answer:
+  answer:
       "Absolutely. Church architecture often features steep-pitched roofs that require specialized skills and safety equipment. Our crews are trained for steep-slope work and have completed numerous church roofing projects with pitches of 8/12, 10/12, and even steeper. We use proper harnesses, scaffolding, and equipment to work safely at any pitch.",
   },
   {
     question: 'Can you repair or replace our church steeple roof?',
-    answer:
+  answer:
       "Yes, we specialize in steeple and spire work. These require specialized access equipment like boom lifts or scaffolding systems. We carefully assess the steeple structure, match existing materials when possible, and ensure proper flashing at all transition points. For historic steeples, we work to preserve original character while providing modern protection.",
   },
   {
     question: 'How do you handle roofing historic churches?',
-    answer:
+  answer:
       "Historic church roofing requires sensitivity to preservation principles. We work with original materials when possible, including slate, copper, and wood shakes. When replacement is necessary, we carefully match the original appearance. We can work with historic preservation requirements and coordinate with any applicable review boards.",
   },
   {
     question: 'Can you work around our worship schedule?',
-    answer:
+  answer:
       "Absolutely. We understand that worship services and church activities take priority. We schedule work around Sunday services, Wednesday nights, and other regular programming. For major projects, we create detailed schedules in coordination with church leadership to minimize impact on congregation activities.",
   },
   {
     question: 'What roofing materials do you recommend for churches?',
-    answer:
+  answer:
       "The best material depends on your church's architecture, budget, and goals. Architectural shingles offer excellent value and aesthetics for many churches. Metal roofing provides exceptional longevity - often 50+ years. For traditional or historic buildings, slate or slate-look materials maintain architectural integrity. We'll recommend options that balance appearance, durability, and budget.",
   },
   {
     question: 'How much does church roof replacement cost?',
-    answer:
+  answer:
       "Church roofing costs vary significantly based on building size, roof complexity, accessibility, and material choice. Steep slopes and steeples add to costs due to safety requirements and equipment needs. We provide detailed proposals with multiple material options so building committees can evaluate choices. We're also happy to present to church boards and answer questions.",
   },
   {
     question: 'Do you help with insurance claims for church roof damage?',
-    answer:
+  answer:
       "Yes, we have extensive experience with commercial property insurance claims. We thoroughly document damage, prepare detailed scope reports, meet with insurance adjusters, and advocate for fair settlements. Many churches find our insurance expertise invaluable after storm events. We handle the complexity so church leadership can focus on ministry.",
   },
   {
     question: 'Can you phase a large project over multiple budget years?',
-    answer:
+  answer:
       "Absolutely. We understand that many churches need to work within capital campaign timelines or phase projects across budget years. We can divide large projects into logical phases - perhaps sanctuary first, then education building, then fellowship hall. Our proposals clearly identify natural break points for phased execution.",
   },
 ];
@@ -217,7 +217,6 @@ export default function ChurchRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -303,7 +302,7 @@ export default function ChurchRoofingCharlotteNCPage() {
             <div className="prose prose-lg max-w-none text-gray">
               <p>
                 Churches and religious buildings present unique roofing challenges. Steep sanctuary roofs,
-                towering steeples, historic materials, and the need to work around worship schedules all
+  towering steeples, historic materials, and the need to work around worship schedules all
                 require a contractor with specialized experience and deep respect for your sacred space.
               </p>
               <p>
@@ -314,7 +313,7 @@ export default function ChurchRoofingCharlotteNCPage() {
               </p>
               <p>
                 Whether you need emergency leak repair before Sunday service, a complete sanctuary re-roofing,
-                or historic steeple restoration, our team has the skills and equipment to handle even the
+  or historic steeple restoration, our team has the skills and equipment to handle even the
                 most complex church roofing projects.
               </p>
             </div>

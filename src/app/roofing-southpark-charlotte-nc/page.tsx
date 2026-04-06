@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roofing SouthPark Charlotte NC | SouthPark Mall Area | Best Roofing Now',
-    description:
+  description:
       'BBB A+ rated, veteran-owned roofing contractor serving SouthPark Charlotte NC. Premium roofing services for upscale neighborhoods near SouthPark Mall. Free estimates.',
-    url: `${SITE_CONFIG.url}/roofing-southpark-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roofing-southpark-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero3,
-        width: 1200,
-        height: 630,
-        alt: 'Professional roofing services in SouthPark Charlotte NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Professional roofing services in SouthPark Charlotte NC - Best Roofing Now',
       },
     ],
   },
@@ -67,39 +67,39 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: Home,
-    title: 'Luxury Home Roofing',
-    description: 'Premium roofing solutions for SouthPark\'s elegant homes with designer shingles and high-end materials.',
-    href: '/services/residential-roofing',
+  title: 'Luxury Home Roofing',
+  description: 'Premium roofing solutions for SouthPark\'s elegant homes with designer shingles and high-end materials.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Expert commercial roofing for SouthPark businesses, retail centers, and office buildings.',
-    href: '/services/commercial-roofing',
+  title: 'Commercial Roofing',
+  description: 'Expert commercial roofing for SouthPark businesses, retail centers, and office buildings.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Roof Repair',
-    description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in SouthPark.',
-    href: '/services/roof-repair',
+  title: 'Roof Repair',
+  description: 'Fast, reliable repairs for leaks, missing shingles, and storm damage in SouthPark.',
+  href: '/services/roof-repair',
   },
   {
     icon: Home,
-    title: 'Roof Replacement',
-    description: 'Full tear-off and replacement with premium materials that enhance your home\'s value.',
-    href: '/services/roof-replacement',
+  title: 'Roof Replacement',
+  description: 'Full tear-off and replacement with premium materials that enhance your home\'s value.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Search,
-    title: 'Roof Inspection',
-    description: 'Free comprehensive inspections for SouthPark homeowners with detailed photo reports.',
-    href: '/services/roof-inspection',
+  title: 'Roof Inspection',
+  description: 'Free comprehensive inspections for SouthPark homeowners with detailed photo reports.',
+  href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
-    title: 'Storm Damage Repair',
-    description: 'Emergency storm damage restoration and insurance claim assistance for SouthPark residents.',
-    href: '/services/storm-damage',
+  title: 'Storm Damage Repair',
+  description: 'Emergency storm damage restoration and insurance claim assistance for SouthPark residents.',
+  href: '/services/storm-damage',
   },
 ];
 
@@ -107,33 +107,33 @@ const services = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and zero complaints.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied SouthPark homeowners.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star Google reviews from satisfied SouthPark homeowners.`,
   },
   {
     icon: Shield,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned and operated with military values of integrity and excellence.',
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC roofing contractor with comprehensive liability insurance.',
   },
   {
     icon: Users,
-    title: 'Premium Materials',
-    description: 'We use only the finest materials from CertainTeed, GAF, and Owens Corning.',
+  title: 'Premium Materials',
+  description: 'We use only the finest materials from CertainTeed, GAF, and Owens Corning.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency roofing services when SouthPark homeowners need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency roofing services when SouthPark homeowners need us most.',
   },
 ];
 
@@ -179,42 +179,42 @@ const nearbyAreas = [
 const faqs = [
   {
     question: 'What roofing services do you offer in SouthPark Charlotte NC?',
-    answer:
+  answer:
       'Best Roofing Now provides complete roofing services in SouthPark including roof repair, roof replacement, new roof installation, storm damage repair, emergency roofing services, and free roof inspections. We specialize in premium architectural shingles and designer roofing that complements SouthPark\'s upscale homes.',
   },
   {
     question: 'Why should SouthPark homeowners choose Best Roofing Now?',
-    answer:
+  answer:
       'SouthPark homeowners choose us because we understand the high expectations of this prestigious area. We\'re BBB A+ rated, veteran-owned, and use only premium materials. Our attention to detail, professional crew, and commitment to cleanliness matches the standards of SouthPark\'s discerning residents.',
   },
   {
     question: 'How much does a roof replacement cost in SouthPark?',
-    answer:
+  answer:
       'Roof replacement costs in SouthPark typically range from $12,000-$30,000+ depending on home size, roof complexity, and material choice. Many SouthPark homes feature architectural shingles or premium materials that enhance curb appeal. We provide free, detailed estimates with transparent pricing.',
   },
   {
     question: 'Do you work with SouthPark HOAs?',
-    answer:
+  answer:
       'Yes, we have extensive experience working with SouthPark HOAs and neighborhood associations. We understand the architectural guidelines and approval processes for communities like Foxcroft, Quail Hollow, and Barclay Downs. We can help select materials that meet HOA requirements.',
   },
   {
     question: 'How long does a roof replacement take in SouthPark?',
-    answer:
+  answer:
       'Most SouthPark roof replacements are completed in 1-3 days, depending on the size and complexity of your home. Larger homes or complex roof designs may take 3-5 days. We work efficiently while maintaining meticulous attention to detail and always clean up thoroughly.',
   },
   {
     question: 'Do you offer financing for roofing projects in SouthPark?',
-    answer:
+  answer:
       'Yes, we offer flexible financing options for SouthPark homeowners including 0% APR for qualified buyers. This makes it easier to invest in premium roofing materials that protect your investment and enhance your home\'s value in the competitive SouthPark market.',
   },
   {
     question: 'What warranty do you provide on SouthPark roofing projects?',
-    answer:
+  answer:
       'We offer comprehensive warranty coverage including manufacturer warranties up to 50 years on materials and our own workmanship warranty. As certified installers, we can offer enhanced warranties like GAF Golden Pledge and CertainTeed SureStart PLUS protection.',
   },
   {
     question: 'Do you handle insurance claims for storm damage in SouthPark?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience with insurance claims for storm damage in SouthPark. We provide thorough documentation, meet with adjusters, and advocate for fair settlements. Charlotte\'s severe weather makes storm damage coverage a common need for SouthPark homeowners.',
   },
 ];
@@ -229,7 +229,12 @@ export default function RoofingSouthParkCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-southpark-charlotte-nc`}
+        pageName="Roofing SouthPark Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

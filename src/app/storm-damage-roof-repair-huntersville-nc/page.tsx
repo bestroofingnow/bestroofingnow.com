@@ -55,16 +55,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help',
-    description:
+  description:
       'Expert storm damage roof repair in Huntersville NC. Hail, wind, and emergency repairs. Insurance claim assistance. Free storm damage inspections!',
-    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero7,
-        width: 1200,
-        height: 630,
-        alt: 'Storm damage roof repair services in Huntersville NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Storm damage roof repair services in Huntersville NC - Best Roofing Now',
       },
     ],
   },
@@ -74,39 +74,39 @@ export const metadata: Metadata = {
 const stormServices = [
   {
     icon: CloudLightning,
-    title: 'Hail Damage Repair',
-    description: 'Expert assessment and repair of hail damage including shingle dents, cracks, and granule loss.',
-    href: '/services/storm-damage',
+  title: 'Hail Damage Repair',
+  description: 'Expert assessment and repair of hail damage including shingle dents, cracks, and granule loss.',
+  href: '/services/storm-damage',
   },
   {
     icon: CloudRain,
-    title: 'Wind Damage Repair',
-    description: 'Repair of wind-lifted, torn, or missing shingles and damaged flashing from high winds.',
-    href: '/services/storm-damage',
+  title: 'Wind Damage Repair',
+  description: 'Repair of wind-lifted, torn, or missing shingles and damaged flashing from high winds.',
+  href: '/services/storm-damage',
   },
   {
     icon: AlertTriangle,
-    title: 'Emergency Tarping',
-    description: '24/7 emergency tarping service to prevent further water damage after severe storms.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Tarping',
+  description: '24/7 emergency tarping service to prevent further water damage after severe storms.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: FileText,
-    title: 'Insurance Claims Help',
-    description: 'Complete insurance claim assistance including documentation, adjuster meetings, and advocacy.',
-    href: '/services/insurance-claims',
+  title: 'Insurance Claims Help',
+  description: 'Complete insurance claim assistance including documentation, adjuster meetings, and advocacy.',
+  href: '/services/insurance-claims',
   },
   {
     icon: Umbrella,
-    title: 'Water Damage Prevention',
-    description: 'Fast response to prevent water intrusion and secondary damage to your home interior.',
-    href: '/services/emergency-roofing',
+  title: 'Water Damage Prevention',
+  description: 'Fast response to prevent water intrusion and secondary damage to your home interior.',
+  href: '/services/emergency-roofing',
   },
   {
     icon: Shield,
-    title: 'Free Storm Inspection',
-    description: 'Complimentary post-storm inspection with detailed damage assessment and photo documentation.',
-    href: '/services/roof-inspection',
+  title: 'Free Storm Inspection',
+  description: 'Complimentary post-storm inspection with detailed damage assessment and photo documentation.',
+  href: '/services/roof-inspection',
   },
 ];
 
@@ -114,33 +114,33 @@ const stormServices = [
 const whyChooseUs = [
   {
     icon: FileText,
-    title: 'Insurance Experts',
-    description: 'Extensive experience working with all major insurance companies to maximize your claim.',
+  title: 'Insurance Experts',
+  description: 'Extensive experience working with all major insurance companies to maximize your claim.',
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Response',
-    description: 'Round-the-clock emergency service when storms strike unexpectedly.',
+  title: '24/7 Emergency Response',
+  description: 'Round-the-clock emergency service when storms strike unexpectedly.',
   },
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Accredited with the Better Business Bureau with an A+ rating and proven track record.',
+  title: 'BBB A+ Rated',
+  description: 'Accredited with the Better Business Bureau with an A+ rating and proven track record.',
   },
   {
     icon: Star,
-    title: '5-Star Reviews',
-    description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from homeowners we've helped after storms.`,
+  title: '5-Star Reviews',
+  description: `${SITE_CONFIG.googleReviewCount}+ five-star reviews from homeowners we've helped after storms.`,
   },
   {
     icon: CheckCircle,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive insurance coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive insurance coverage.',
   },
   {
     icon: Users,
-    title: 'Veteran-Owned',
-    description: 'Proudly veteran-owned with military values of integrity and service.',
+  title: 'Veteran-Owned',
+  description: 'Proudly veteran-owned with military values of integrity and service.',
   },
 ];
 
@@ -174,42 +174,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How do I know if my Huntersville home has storm damage?',
-    answer:
+  answer:
       'After a storm, look for obvious signs like missing shingles, debris on the roof, dented gutters, or water stains inside. However, much storm damage is not visible from the ground - hail damage often appears as small dents or bruises on shingles, and wind damage may loosen shingles without removing them. We offer free post-storm inspections in Huntersville to identify all damage, including hidden issues that could lead to leaks later.',
   },
   {
     question: 'Will my insurance cover storm damage repairs in Huntersville?',
-    answer:
+  answer:
       'Most homeowners insurance policies in North Carolina cover storm damage including wind, hail, and fallen trees. Your coverage depends on your specific policy and deductible. We work directly with insurance companies every day and can help you understand your coverage. Our free inspection includes detailed documentation that supports your claim.',
   },
   {
     question: 'How soon after a storm should I get my roof inspected?',
-    answer:
+  answer:
       'We recommend getting your roof inspected within 1-2 weeks after any significant storm in Huntersville. North Carolina insurance policies typically have time limits for filing claims, and delaying inspection can allow small damage to become bigger problems. Our team responds quickly after storms and can usually inspect your roof within 24-48 hours.',
   },
   {
     question: 'Do you work with my insurance company?',
-    answer:
+  answer:
       'Yes! Best Roofing Now has extensive experience working with all major insurance companies including State Farm, Allstate, Nationwide, Liberty Mutual, USAA, and others. We handle the entire claims process - from documenting damage with photos and measurements, to meeting with adjusters, to advocating for fair settlements. We make the process as stress-free as possible.',
   },
   {
     question: 'What if my insurance claim is denied or underpaid?',
-    answer:
+  answer:
       'If your claim is denied or underpaid, we can help. We frequently supplement underpaid claims with additional documentation that insurance companies may have missed. If needed, we can request re-inspection by a different adjuster. Our goal is to ensure you receive fair compensation for legitimate storm damage.',
   },
   {
     question: 'How long does storm damage repair take in Huntersville?',
-    answer:
+  answer:
       'The timeline depends on the extent of damage and insurance approval process. Minor repairs can be completed within days of approval. Full roof replacements due to storm damage typically take 1-3 days once materials arrive. The insurance claim process usually takes 1-4 weeks. We keep you informed throughout and work efficiently once approved.',
   },
   {
     question: 'Do I need to pay anything upfront for storm damage repair?',
-    answer:
+  answer:
       'For insurance claims, you typically only pay your deductible. We do not require large upfront payments before work begins on approved insurance claims. We bill your insurance company directly for covered work. During your free inspection, we will explain exactly what costs to expect based on your policy.',
   },
   {
     question: 'What should I do immediately after a storm damages my roof?',
-    answer:
+  answer:
       'First, ensure your family is safe and document any visible damage with photos. If you have an active leak, place buckets to catch water and move valuables away from the affected area. Call us at (704) 605-6047 for emergency tarping if needed. Do not make permanent repairs before your insurance inspection, as this can complicate your claim. We can guide you through the entire process.',
   },
 ];
@@ -236,9 +236,9 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
       <LocationSchema
         location={{
           city: 'Huntersville',
-          state: 'NC',
-          slug: 'huntersville-nc',
-          county: 'Mecklenburg',
+  state: 'NC',
+  slug: 'huntersville-nc',
+  county: 'Mecklenburg',
         }}
       />
       <AISearchOptimizationBundle
@@ -250,18 +250,18 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
         faqs={[
           {
             question: 'Who repairs storm damaged roofs in Huntersville NC?',
-            answer: 'Best Roofing Now provides expert storm damage roof repair in Huntersville NC with 24/7 emergency response. We specialize in hail damage, wind damage, and insurance claim assistance. We serve Birkdale Village, Rosedale, Skybrook, and all Huntersville neighborhoods. Call 704-605-6047 for a free storm damage inspection.',
-            speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Huntersville with 24/7 emergency response. We handle hail and wind damage plus insurance claims. Call 704-605-6047.',
+  answer: 'Best Roofing Now provides expert storm damage roof repair in Huntersville NC with 24/7 emergency response. We specialize in hail damage, wind damage, and insurance claim assistance. We serve Birkdale Village, Rosedale, Skybrook, and all Huntersville neighborhoods. Call 704-605-6047 for a free storm damage inspection.',
+  speakableAnswer: 'Best Roofing Now repairs storm damaged roofs in Huntersville with 24/7 emergency response. We handle hail and wind damage plus insurance claims. Call 704-605-6047.',
           },
           {
             question: 'Does insurance cover storm damage roof repair in Huntersville?',
-            answer: 'Yes, most homeowners insurance policies in North Carolina cover storm damage including hail, wind, and fallen trees. Best Roofing Now works directly with all major insurance companies, meets with adjusters, and helps maximize your claim settlement. You typically pay only your deductible.',
-            speakableAnswer: 'Yes, most NC homeowners insurance covers storm damage to roofs. We work with all insurers and help maximize your claim. You typically pay only your deductible.',
+  answer: 'Yes, most homeowners insurance policies in North Carolina cover storm damage including hail, wind, and fallen trees. Best Roofing Now works directly with all major insurance companies, meets with adjusters, and helps maximize your claim settlement. You typically pay only your deductible.',
+  speakableAnswer: 'Yes, most NC homeowners insurance covers storm damage to roofs. We work with all insurers and help maximize your claim. You typically pay only your deductible.',
           },
           {
             question: 'How quickly can you respond to storm damage in Huntersville?',
-            answer: 'Best Roofing Now offers 24/7 emergency storm damage response in Huntersville. We can typically have a crew on-site within hours for emergency tarping. Full inspections are usually scheduled within 24-48 hours after you call.',
-            speakableAnswer: 'We offer 24/7 emergency response in Huntersville. Emergency tarping within hours, full inspections within 24 to 48 hours.',
+  answer: 'Best Roofing Now offers 24/7 emergency storm damage response in Huntersville. We can typically have a crew on-site within hours for emergency tarping. Full inspections are usually scheduled within 24-48 hours after you call.',
+  speakableAnswer: 'We offer 24/7 emergency response in Huntersville. Emergency tarping within hours, full inspections within 24 to 48 hours.',
           },
         ]}
       />

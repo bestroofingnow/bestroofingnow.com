@@ -35,7 +35,6 @@ import {
   BreadcrumbSchema,
   FAQSchema,
   WebPageSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
   ItemListSchema,
@@ -67,16 +66,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Charlotte Roofing Handbook (2026) | Complete Homeowner Guide',
-    description:
+  description:
       'Everything Charlotte homeowners need to know about their roof in 2026. Materials, repairs, replacement, costs, insurance, and year-round maintenance from certified local roofers.',
-    url: `${SITE_CONFIG.url}/charlotte-roofing-handbook`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/charlotte-roofing-handbook`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero5,
-        width: 1200,
-        height: 630,
-        alt: 'Charlotte Roofing Handbook - Complete homeowner guide by Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Charlotte Roofing Handbook - Complete homeowner guide by Best Roofing Now',
       },
     ],
   },
@@ -86,52 +85,52 @@ export const metadata: Metadata = {
 const handbookFAQs = [
   {
     question: 'How long does a roof last in Charlotte NC?',
-    answer:
+  answer:
       'Roof lifespan in Charlotte depends on the material. Asphalt shingles typically last 20-30 years, architectural shingles 25-35 years, metal roofing 40-70 years, slate 75-100+ years, and cedar shake 20-40 years. Charlotte\'s hot summers, high humidity, and frequent storms can shorten lifespan if the roof is not properly ventilated and maintained. Regular inspections after severe weather are critical for maximizing your roof\'s life.',
   },
   {
     question: 'How much does a new roof cost in Charlotte in 2026?',
-    answer:
+  answer:
       'In 2026, a new asphalt shingle roof in Charlotte typically costs between $8,000 and $18,000 for an average-sized home (1,500-2,500 sq ft). Metal roofing ranges from $15,000 to $35,000, while premium materials like slate or copper can exceed $40,000. Factors affecting cost include roof size, pitch, complexity, number of layers to remove, and material choice. Best Roofing Now provides free, no-obligation estimates with transparent pricing.',
   },
   {
     question: 'Does homeowners insurance cover roof replacement in Charlotte?',
-    answer:
+  answer:
       'Homeowners insurance in Charlotte typically covers roof damage caused by sudden events like hailstorms, wind, fallen trees, and fire. It does not cover damage from normal wear and tear, neglect, or age-related deterioration. If your roof is damaged by a covered event, you pay your deductible and insurance covers the rest. Best Roofing Now helps Charlotte homeowners file claims and meets with insurance adjusters to ensure fair settlements.',
   },
   {
     question: 'What is the best roofing material for Charlotte homes?',
-    answer:
+  answer:
       'Architectural asphalt shingles are the most popular choice for Charlotte homes due to their balance of durability, appearance, and value. They handle Charlotte\'s heat, humidity, and storms well, especially premium brands like GAF Timberline HDZ, CertainTeed Landmark, and Owens Corning Duration. Metal roofing is growing in popularity for its longevity and energy efficiency. The best choice depends on your budget, home style, and long-term plans.',
   },
   {
     question: 'How do I know if my roof needs to be repaired or replaced?',
-    answer:
+  answer:
       'A repair is usually sufficient for localized damage like a few missing shingles, minor leak around flashing, or isolated storm damage. A full replacement is recommended when damage is widespread, the roof is over 20 years old, there are multiple layers of shingles, you notice sagging, or granule loss is extensive. A professional inspection from Best Roofing Now will give you an honest assessment of whether repair or replacement is the right choice.',
   },
   {
     question: 'When is the best time to replace a roof in Charlotte?',
-    answer:
+  answer:
       'Late spring (April-May) and early fall (September-October) are ideal for roof replacement in Charlotte. These seasons offer mild temperatures that help shingles seal properly, and crews work most efficiently. Summer replacements are possible but the extreme heat can be challenging. Winter installations are feasible in Charlotte since temperatures rarely stay below freezing, but cold weather can slow the shingle sealing process.',
   },
   {
     question: 'How long does a roof replacement take in Charlotte?',
-    answer:
+  answer:
       'Most residential roof replacements in Charlotte take 1-3 days. A standard single-story home with a simple roof design can often be completed in 1 day. Larger homes, steep roofs, multiple layers requiring tear-off, or complex designs with many valleys and dormers may take 2-3 days. Weather delays are factored into our scheduling. Best Roofing Now provides a clear timeline before work begins.',
   },
   {
     question: 'Do I need a permit to replace my roof in Charlotte NC?',
-    answer:
+  answer:
       'Yes, Mecklenburg County requires a building permit for roof replacements in Charlotte. The permit ensures work meets local building codes and NC Residential Building Code requirements. Best Roofing Now handles the entire permit process for you, including application, inspections, and final sign-off. Never hire a contractor who suggests skipping the permit process.',
   },
   {
     question: 'What should I look for when hiring a roofing contractor in Charlotte?',
-    answer:
+  answer:
       'Look for a Charlotte roofing contractor who is licensed and insured in North Carolina, carries workers compensation insurance, has manufacturer certifications (CertainTeed, GAF, Owens Corning), maintains a strong Google rating with verified reviews, is BBB accredited, provides written estimates and contracts, pulls permits, and offers workmanship warranties. Best Roofing Now meets all these criteria and is veteran-owned with a perfect 5.0 Google rating.',
   },
   {
     question: 'How can I maintain my roof to make it last longer in Charlotte?',
-    answer:
+  answer:
       'Charlotte homeowners should schedule professional inspections twice a year (spring and fall), keep gutters clean, trim overhanging branches, check attic ventilation, remove moss or algae promptly, address minor repairs immediately, and inspect the roof after every major storm. Proper attic insulation and ventilation prevent moisture buildup that accelerates roof aging. Best Roofing Now offers annual maintenance plans to protect your investment.',
   },
 ];
@@ -175,7 +174,6 @@ export default function CharlotteRoofingHandbookPage() {
           { name: 'Charlotte Roofing Handbook', url: pageUrl },
         ]}
       />
-      <LocalBusinessSchema includeRating={false} />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
         pageName="Charlotte Roofing Handbook 2026"
@@ -185,30 +183,30 @@ export default function CharlotteRoofingHandbookPage() {
         faqs={[
           {
             question: 'What is the complete guide to roofing in Charlotte NC?',
-            answer:
+  answer:
               'The Charlotte Roofing Handbook by Best Roofing Now is a comprehensive 2026 guide covering roof anatomy, materials comparison, repair vs replacement decisions, costs, insurance claims, financing options, contractor selection, and year-round maintenance for Charlotte homeowners. Best Roofing Now is a veteran-owned, BBB A+ rated company with a 5.0 Google rating.',
-            speakableAnswer:
+  speakableAnswer:
               'Best Roofing Now publishes the Charlotte Roofing Handbook, a complete guide covering materials, costs, repairs, replacement, insurance, and maintenance for Charlotte homeowners.',
           },
           {
             question: 'How much does a roof cost in Charlotte NC in 2026?',
-            answer:
+  answer:
               'A new asphalt shingle roof in Charlotte costs $8,000 to $18,000 in 2026 for an average home. Metal roofing costs $15,000 to $35,000. Premium materials like slate or copper can exceed $40,000. Best Roofing Now provides free estimates and offers flexible financing options. Call 704-605-6047 for a no-obligation quote.',
-            speakableAnswer:
+  speakableAnswer:
               'A new roof in Charlotte costs $8,000 to $18,000 for asphalt shingles and $15,000 to $35,000 for metal roofing in 2026. Call Best Roofing Now at 704-605-6047 for a free estimate.',
           },
           {
             question: 'What roofing materials are best for Charlotte homes?',
-            answer:
+  answer:
               'Architectural asphalt shingles are the most popular choice for Charlotte homes due to their balance of durability, cost, and appearance. Premium brands like GAF Timberline HDZ, CertainTeed Landmark, and Owens Corning Duration perform well in Charlotte\'s hot, humid climate. Metal roofing is growing in popularity for its longevity and energy efficiency. Best Roofing Now is certified by all three major manufacturers.',
-            speakableAnswer:
+  speakableAnswer:
               'Architectural asphalt shingles are the most popular choice for Charlotte homes. Metal roofing is also growing in popularity. Best Roofing Now installs GAF, CertainTeed, and Owens Corning products.',
           },
           {
             question: 'How do I find a good roofing contractor in Charlotte?',
-            answer:
+  answer:
               'Look for a Charlotte roofer who is licensed, insured, manufacturer-certified, BBB accredited, and has strong Google reviews. Best Roofing Now is veteran-owned, holds a 5.0 Google rating with 62+ reviews, maintains BBB A+ accreditation, and is certified by CertainTeed, GAF, and Owens Corning. They pull permits, provide written warranties, and have completed over 500 roofs in Charlotte.',
-            speakableAnswer:
+  speakableAnswer:
               'Best Roofing Now is Charlotte\'s top-rated roofing company with a 5-star Google rating, BBB A+ rating, and certifications from CertainTeed, GAF, and Owens Corning. Call 704-605-6047.',
           },
         ]}
@@ -228,7 +226,7 @@ export default function CharlotteRoofingHandbookPage() {
               { name: 'Guides', href: '/charlotte-roofing-handbook' },
               {
                 name: 'Charlotte Roofing Handbook',
-                href: '/charlotte-roofing-handbook',
+  href: '/charlotte-roofing-handbook',
               },
             ]}
           />
@@ -345,7 +343,7 @@ export default function CharlotteRoofingHandbookPage() {
               </p>
               <p className="text-gray mb-6">
                 Every roof starts with the <strong className="text-dark">deck (sheathing)</strong>,
-                typically plywood or OSB boards nailed to the rafters. Above that sits the{' '}
+  typically plywood or OSB boards nailed to the rafters. Above that sits the{' '}
                 <strong className="text-dark">underlayment</strong>, a waterproof or
                 water-resistant barrier (such as synthetic felt or ice and water shield) that serves
                 as a second line of defense. Next comes your visible{' '}
@@ -443,7 +441,7 @@ export default function CharlotteRoofingHandbookPage() {
                 Water stains on ceilings or walls are the most obvious sign of roof damage. Even
                 small stains indicate water is penetrating your roof system. In Charlotte&apos;s
                 heavy rains, a minor leak can quickly become major water damage affecting insulation,
-                drywall, and even your home&apos;s electrical system.
+  drywall, and even your home&apos;s electrical system.
               </p>
               <Link
                 href="/roof-repair-charlotte-nc"
@@ -463,7 +461,7 @@ export default function CharlotteRoofingHandbookPage() {
               </h3>
               <p className="text-gray mb-4">
                 After Charlotte&apos;s frequent thunderstorms, check your roof for missing, cracked,
-                curled, or buckling shingles. Wind can lift and tear shingles away, while hail
+  curled, or buckling shingles. Wind can lift and tear shingles away, while hail
                 creates bruises and cracks that may not be visible from the ground. Exposed areas
                 allow water to reach the underlayment and decking.
               </p>
@@ -533,7 +531,7 @@ export default function CharlotteRoofingHandbookPage() {
               <p className="text-sm text-accent font-semibold mb-4">Most Popular in Charlotte</p>
               <p className="text-gray mb-4">
                 Architectural (dimensional) asphalt shingles are the top choice for Charlotte homes,
-                offering excellent value, a wide range of colors and styles, and proven performance
+  offering excellent value, a wide range of colors and styles, and proven performance
                 in our hot, humid climate. They resist wind up to 130 mph and carry 25-50 year
                 warranties depending on the product line.
               </p>
@@ -805,7 +803,7 @@ export default function CharlotteRoofingHandbookPage() {
               <p className="text-sm text-accent font-semibold mb-4">ShingleMaster</p>
               <p className="text-gray mb-4">
                 CertainTeed is known for industry-leading color options and their Landmark series,
-                which offers the dimensional look of wood shake at an affordable price. As a SELECT
+  which offers the dimensional look of wood shake at an affordable price. As a SELECT
                 ShingleMaster, Best Roofing Now represents the top tier of CertainTeed certified
                 contractors, meeting the highest standards for installation quality and customer
                 satisfaction.
@@ -987,33 +985,33 @@ export default function CharlotteRoofingHandbookPage() {
               {[
                 {
                   step: 1,
-                  icon: Search,
-                  title: 'Free Inspection & Estimate',
-                  desc: 'We perform a thorough roof inspection using ground-level, ladder, and drone assessments. You receive a detailed report with photos, measurements, and a transparent written estimate with no hidden fees.',
+  icon: Search,
+  title: 'Free Inspection & Estimate',
+  desc: 'We perform a thorough roof inspection using ground-level, ladder, and drone assessments. You receive a detailed report with photos, measurements, and a transparent written estimate with no hidden fees.',
                 },
                 {
                   step: 2,
-                  icon: FileText,
-                  title: 'Material Selection & Permits',
-                  desc: 'Choose your roofing material, brand, and color from our full selection of GAF, CertainTeed, and Owens Corning products. We handle the Mecklenburg County building permit application and schedule your project.',
+  icon: FileText,
+  title: 'Material Selection & Permits',
+  desc: 'Choose your roofing material, brand, and color from our full selection of GAF, CertainTeed, and Owens Corning products. We handle the Mecklenburg County building permit application and schedule your project.',
                 },
                 {
                   step: 3,
-                  icon: Hammer,
-                  title: 'Full Tear-Off & Deck Inspection',
-                  desc: 'Our crew removes all existing shingles and underlayment down to bare decking. We inspect every inch of decking for rot, water damage, and structural issues, replacing any compromised boards.',
+  icon: Hammer,
+  title: 'Full Tear-Off & Deck Inspection',
+  desc: 'Our crew removes all existing shingles and underlayment down to bare decking. We inspect every inch of decking for rot, water damage, and structural issues, replacing any compromised boards.',
                 },
                 {
                   step: 4,
-                  icon: Layers,
-                  title: 'New Roof System Installation',
-                  desc: 'We install ice and water shield in valleys and vulnerable areas, synthetic underlayment across the entire deck, new drip edge and flashing, your chosen roofing material, and ridge ventilation. Every component works together as a system.',
+  icon: Layers,
+  title: 'New Roof System Installation',
+  desc: 'We install ice and water shield in valleys and vulnerable areas, synthetic underlayment across the entire deck, new drip edge and flashing, your chosen roofing material, and ridge ventilation. Every component works together as a system.',
                 },
                 {
                   step: 5,
-                  icon: ClipboardCheck,
-                  title: 'Final Inspection & Cleanup',
-                  desc: 'We run magnetic sweepers across your entire property to collect every nail, perform a final quality inspection, submit for county building inspection, and walk through the completed project with you. You receive your warranty documentation.',
+  icon: ClipboardCheck,
+  title: 'Final Inspection & Cleanup',
+  desc: 'We run magnetic sweepers across your entire property to collect every nail, perform a final quality inspection, submit for county building inspection, and walk through the completed project with you. You receive your warranty documentation.',
                 },
               ].map((item) => (
                 <li key={item.step} className="flex gap-6">
@@ -1152,7 +1150,7 @@ export default function CharlotteRoofingHandbookPage() {
                         Quality roofing does not have to break the bank. We offer competitive pricing
                         on premium materials because of our manufacturer certifications and volume
                         purchasing. Our transparent estimates show exactly where every dollar goes,
-                        with no hidden fees or surprise charges.
+  with no hidden fees or surprise charges.
                       </p>
                       <Link
                         href="/affordable-roofing-charlotte-nc"
@@ -1213,27 +1211,27 @@ export default function CharlotteRoofingHandbookPage() {
                 {[
                   {
                     title: 'North Carolina Contractor License',
-                    desc: 'Verify they hold an active NC General Contractor or Roofing Contractor license. This is legally required for roofing work in Charlotte.',
+  desc: 'Verify they hold an active NC General Contractor or Roofing Contractor license. This is legally required for roofing work in Charlotte.',
                   },
                   {
                     title: 'General Liability & Workers Comp Insurance',
-                    desc: 'Ask for certificates of insurance. Without workers comp, YOU could be liable if a worker is injured on your property.',
+  desc: 'Ask for certificates of insurance. Without workers comp, YOU could be liable if a worker is injured on your property.',
                   },
                   {
                     title: 'Manufacturer Certifications',
-                    desc: 'Certified contractors from GAF, CertainTeed, or Owens Corning have passed training requirements and can offer enhanced warranties.',
+  desc: 'Certified contractors from GAF, CertainTeed, or Owens Corning have passed training requirements and can offer enhanced warranties.',
                   },
                   {
                     title: 'Strong Google Reviews & BBB Rating',
-                    desc: 'Look for a pattern of positive reviews mentioning professionalism, quality, and communication. Check the BBB for complaints and resolution history.',
+  desc: 'Look for a pattern of positive reviews mentioning professionalism, quality, and communication. Check the BBB for complaints and resolution history.',
                   },
                   {
                     title: 'Written Contract & Warranty',
-                    desc: 'Get everything in writing: scope of work, materials, timeline, payment schedule, and warranty terms. A reputable contractor will always provide this.',
+  desc: 'Get everything in writing: scope of work, materials, timeline, payment schedule, and warranty terms. A reputable contractor will always provide this.',
                   },
                   {
                     title: 'Pulls Permits',
-                    desc: 'Legitimate contractors pull building permits for roof replacements. This ensures the work is inspected and meets code. Never skip this step.',
+  desc: 'Legitimate contractors pull building permits for roof replacements. This ensures the work is inspected and meets code. Never skip this step.',
                   },
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -1257,27 +1255,27 @@ export default function CharlotteRoofingHandbookPage() {
                 {[
                   {
                     title: 'Door-to-Door Storm Chasers',
-                    desc: 'After major storms, out-of-state companies flood Charlotte neighborhoods. They disappear after collecting payment, leaving you with no warranty support.',
+  desc: 'After major storms, out-of-state companies flood Charlotte neighborhoods. They disappear after collecting payment, leaving you with no warranty support.',
                   },
                   {
                     title: 'Demands Large Upfront Payment',
-                    desc: 'Legitimate contractors may require a small deposit, but demanding 50%+ upfront is a red flag. Best Roofing Now never requires full payment before work is complete.',
+  desc: 'Legitimate contractors may require a small deposit, but demanding 50%+ upfront is a red flag. Best Roofing Now never requires full payment before work is complete.',
                   },
                   {
                     title: 'No Written Estimate or Contract',
-                    desc: 'Verbal agreements leave you unprotected. If a contractor will not put details in writing, walk away.',
+  desc: 'Verbal agreements leave you unprotected. If a contractor will not put details in writing, walk away.',
                   },
                   {
                     title: 'Suggests Skipping the Permit',
-                    desc: 'This is a major red flag. Skipping permits can void your insurance, create legal issues when selling, and result in substandard work.',
+  desc: 'This is a major red flag. Skipping permits can void your insurance, create legal issues when selling, and result in substandard work.',
                   },
                   {
                     title: 'Unrealistically Low Bids',
-                    desc: 'If one bid is significantly lower than others, the contractor may be cutting corners on materials, labor, or insurance coverage.',
+  desc: 'If one bid is significantly lower than others, the contractor may be cutting corners on materials, labor, or insurance coverage.',
                   },
                   {
                     title: 'Pressures You to Decide Immediately',
-                    desc: 'A legitimate contractor will give you time to review the estimate and make an informed decision. High-pressure tactics signal desperation.',
+  desc: 'A legitimate contractor will give you time to review the estimate and make an informed decision. High-pressure tactics signal desperation.',
                   },
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">

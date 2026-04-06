@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Flat Roof Repair Charlotte NC | Commercial & Residential | Best Roofing Now',
-    description:
+  description:
       'Expert flat roof repair for commercial and residential properties in Charlotte NC. TPO, EPDM, PVC repairs by licensed professionals. BBB A+ rated with free estimates.',
-    url: `${SITE_CONFIG.url}/flat-roof-repair-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/flat-roof-repair-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.flatRoof,
-        width: 1200,
-        height: 630,
-        alt: 'Flat roof repair Charlotte NC - Best Roofing Now professional flat roof services',
+  width: 1200,
+  height: 630,
+  alt: 'Flat roof repair Charlotte NC - Best Roofing Now professional flat roof services',
       },
     ],
   },
@@ -69,39 +69,39 @@ export const metadata: Metadata = {
 const flatRoofServices = [
   {
     icon: Wrench,
-    title: 'Flat Roof Leak Repair',
-    description: 'Fast, effective repairs for ponding water, membrane damage, seam failures, and flashing issues.',
-    href: '/services/flat-roof-repair',
+  title: 'Flat Roof Leak Repair',
+  description: 'Fast, effective repairs for ponding water, membrane damage, seam failures, and flashing issues.',
+  href: '/services/flat-roof-repair',
   },
   {
     icon: Layers,
-    title: 'TPO Roof Repair',
-    description: 'Expert repair of thermoplastic polyolefin membranes including seam welding and puncture repair.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roof Repair',
+  description: 'Expert repair of thermoplastic polyolefin membranes including seam welding and puncture repair.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Rubber Roof Repair',
-    description: 'Patch repairs, seam re-adhesion, and membrane replacement for synthetic rubber roofing systems.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roof Repair',
+  description: 'Patch repairs, seam re-adhesion, and membrane replacement for synthetic rubber roofing systems.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Droplets,
-    title: 'Roof Coatings',
-    description: 'Extend your flat roof life 10-15 years with reflective silicone or acrylic roof coatings.',
-    href: '/services/flat-roof-repair',
+  title: 'Roof Coatings',
+  description: 'Extend your flat roof life 10-15 years with reflective silicone or acrylic roof coatings.',
+  href: '/services/flat-roof-repair',
   },
   {
     icon: Building2,
-    title: 'Complete Replacement',
-    description: 'When repairs aren\'t enough, we provide full flat roof replacement with premium materials.',
-    href: '/services/roof-replacement',
+  title: 'Complete Replacement',
+  description: 'When repairs aren\'t enough, we provide full flat roof replacement with premium materials.',
+  href: '/services/roof-replacement',
   },
   {
     icon: Clock,
-    title: 'Emergency Repairs',
-    description: '24/7 emergency flat roof repair services to protect your property from water damage.',
-    href: '/services/emergency-roofing',
+  title: 'Emergency Repairs',
+  description: '24/7 emergency flat roof repair services to protect your property from water damage.',
+  href: '/services/emergency-roofing',
   },
 ];
 
@@ -109,27 +109,27 @@ const flatRoofServices = [
 const flatRoofProblems = [
   {
     title: 'Ponding Water',
-    description: 'Water pooling on flat roofs can accelerate membrane deterioration and cause leaks.',
+  description: 'Water pooling on flat roofs can accelerate membrane deterioration and cause leaks.',
   },
   {
     title: 'Membrane Damage',
-    description: 'Punctures, tears, and UV degradation can compromise your flat roof\'s waterproofing.',
+  description: 'Punctures, tears, and UV degradation can compromise your flat roof\'s waterproofing.',
   },
   {
     title: 'Seam Failures',
-    description: 'Heat-welded or adhesive seams can separate, allowing water infiltration.',
+  description: 'Heat-welded or adhesive seams can separate, allowing water infiltration.',
   },
   {
     title: 'Flashing Issues',
-    description: 'Failed flashing around penetrations and edges is a common leak source.',
+  description: 'Failed flashing around penetrations and edges is a common leak source.',
   },
   {
     title: 'Blistering & Bubbling',
-    description: 'Trapped moisture or air creates blisters that can rupture and leak.',
+  description: 'Trapped moisture or air creates blisters that can rupture and leak.',
   },
   {
     title: 'Shrinkage & Cracking',
-    description: 'Older membranes can shrink, pulling away from edges and creating cracks.',
+  description: 'Older membranes can shrink, pulling away from edges and creating cracks.',
   },
 ];
 
@@ -147,33 +147,33 @@ const flatRoofMaterials = [
 const whyChooseUs = [
   {
     icon: Award,
-    title: 'BBB A+ Rated',
-    description: 'Trusted by Charlotte property owners with an A+ Better Business Bureau rating.',
+  title: 'BBB A+ Rated',
+  description: 'Trusted by Charlotte property owners with an A+ Better Business Bureau rating.',
   },
   {
     icon: Star,
-    title: 'Certified Installers',
-    description: 'Factory-trained in TPO, EPDM, PVC, and modified bitumen repair techniques.',
+  title: 'Certified Installers',
+  description: 'Factory-trained in TPO, EPDM, PVC, and modified bitumen repair techniques.',
   },
   {
     icon: Shield,
-    title: 'Licensed & Insured',
-    description: 'Fully licensed NC contractor with comprehensive liability coverage.',
+  title: 'Licensed & Insured',
+  description: 'Fully licensed NC contractor with comprehensive liability coverage.',
   },
   {
     icon: CheckCircle,
-    title: 'All Flat Roof Types',
-    description: 'We repair and replace all flat roofing systems, commercial and residential.',
+  title: 'All Flat Roof Types',
+  description: 'We repair and replace all flat roofing systems, commercial and residential.',
   },
   {
     icon: Users,
-    title: 'Experienced Team',
-    description: `${SITE_CONFIG.roofsInstalled}+ roofing projects completed in the Charlotte area.`,
+  title: 'Experienced Team',
+  description: `${SITE_CONFIG.roofsInstalled}+ roofing projects completed in the Charlotte area.`,
   },
   {
     icon: Clock,
-    title: '24/7 Emergency Service',
-    description: 'Round-the-clock emergency flat roof repairs when you need us most.',
+  title: '24/7 Emergency Service',
+  description: 'Round-the-clock emergency flat roof repairs when you need us most.',
   },
 ];
 
@@ -207,42 +207,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How much does flat roof repair cost in Charlotte NC?',
-    answer:
+  answer:
       'Flat roof repair costs in Charlotte typically range from $300-$2,000 depending on the type of repair needed. Minor patch repairs and seam fixes cost $300-$600, while more extensive repairs like membrane replacement or drainage corrections can run $1,000-$2,000. Roof coatings range from $2-5 per square foot. We provide free estimates with transparent, upfront pricing.',
   },
   {
     question: 'What causes flat roofs to leak?',
-    answer:
+  answer:
       'The most common causes of flat roof leaks in Charlotte include: ponding water (standing water that doesn\'t drain within 48 hours), failed seams where membrane sheets meet, damaged flashing around penetrations like vents and HVAC units, membrane punctures from foot traffic or debris, and age-related deterioration from UV exposure. Our inspections identify the exact cause so we can provide lasting repairs.',
   },
   {
     question: 'Can you repair a flat roof or does it need replacement?',
-    answer:
+  answer:
       'Many flat roof issues can be repaired rather than replaced. We always assess repair options first and only recommend replacement when it\'s truly necessary. Factors we consider include the roof\'s age, extent of damage, overall membrane condition, and repair history. A flat roof nearing the end of its lifespan with multiple problems may benefit more from replacement, but localized damage on a sound roof is typically repairable.',
   },
   {
     question: 'How long do flat roofs last in Charlotte?',
-    answer:
+  answer:
       'Flat roof lifespan depends on the material and maintenance. In Charlotte\'s climate, TPO and PVC roofs typically last 20-30 years, EPDM rubber roofs 25-30 years, modified bitumen 15-20 years, and built-up roofing 15-30 years. Regular maintenance and addressing repairs promptly can extend these lifespans. Roof coatings can add 10-15 years to an aging flat roof.',
   },
   {
     question: 'What is the best material for flat roofs in Charlotte NC?',
-    answer:
+  answer:
       'For Charlotte\'s hot, humid climate, we often recommend TPO (Thermoplastic Polyolefin) or PVC membranes. Their white reflective surfaces significantly reduce cooling costs - especially important given Charlotte\'s hot summers. TPO is typically more cost-effective, while PVC offers superior chemical resistance. EPDM is an excellent, durable option for properties where reflectivity is less critical.',
   },
   {
     question: 'Do you repair residential flat roofs?',
-    answer:
+  answer:
       'Yes, we repair and replace both commercial and residential flat roofs in Charlotte. Many homes have flat roof sections over additions, porches, or modern architectural designs. We\'re experienced with all flat roof materials and can match repairs to your existing system. The same quality materials and workmanship we provide for commercial properties are available for residential projects.',
   },
   {
     question: 'What are roof coatings and when should I consider them?',
-    answer:
+  answer:
       'Roof coatings are liquid-applied membranes that create a seamless, reflective, waterproof layer over your existing flat roof. They\'re an excellent option when your roof membrane is aging but still structurally sound. Coatings can extend your roof life 10-15 years at a fraction of replacement cost, reduce energy bills with reflective properties, and eliminate minor leaks and seam issues.',
   },
   {
     question: 'How quickly can you respond to flat roof emergencies?',
-    answer:
+  answer:
       'We offer 24/7 emergency flat roof repair services in Charlotte and surrounding areas. For active leaks and storm damage, we typically respond within 1-4 hours. Our emergency team can provide temporary repairs or tarping to stop water intrusion, followed by permanent repairs once conditions allow. Don\'t wait with a leaking flat roof - water damage compounds quickly.',
   },
 ];
@@ -257,7 +257,6 @@ export default function FlatRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/flat-roof-repair-charlotte-nc`}
         pageName="Flat Roof Repair Charlotte NC"
@@ -489,7 +488,7 @@ export default function FlatRoofRepairCharlotteNCPage() {
               <h3 className="text-2xl font-bold text-dark mb-4">Commercial Flat Roofs</h3>
               <p className="text-gray mb-4">
                 We serve businesses of all sizes throughout Charlotte including warehouses,
-                retail centers, office buildings, restaurants, and industrial facilities.
+  retail centers, office buildings, restaurants, and industrial facilities.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-gray">
@@ -511,7 +510,7 @@ export default function FlatRoofRepairCharlotteNCPage() {
               <h3 className="text-2xl font-bold text-dark mb-4">Residential Flat Roofs</h3>
               <p className="text-gray mb-4">
                 Many Charlotte homes feature flat roof sections on additions, porches,
-                garages, or modern architectural designs. We handle them all.
+  garages, or modern architectural designs. We handle them all.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-gray">

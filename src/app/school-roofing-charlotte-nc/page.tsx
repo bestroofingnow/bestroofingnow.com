@@ -29,7 +29,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -58,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'School Roofing Charlotte NC | K-12, Universities & Educational Facilities | Best Roofing Now',
-    description:
+  description:
       'Expert school and educational facility roofing contractors in Charlotte NC. Summer scheduling, student safety focused. Licensed & insured with free estimates.',
-    url: `${SITE_CONFIG.url}/school-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/school-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.education,
-        width: 1200,
-        height: 630,
-        alt: 'School roofing Charlotte NC - Best Roofing Now educational facility roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'School roofing Charlotte NC - Best Roofing Now educational facility roofing project',
       },
     ],
   },
@@ -77,39 +76,39 @@ export const metadata: Metadata = {
 const schoolRoofingSystems = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient single-ply membrane ideal for school buildings. Reflective surface helps reduce HVAC costs, keeping classrooms comfortable year-round.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient single-ply membrane ideal for school buildings. Reflective surface helps reduce HVAC costs, keeping classrooms comfortable year-round.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'EPDM Rubber Roofing',
-    description: 'Durable synthetic rubber membrane with proven 30+ year lifespan. Low maintenance requirements make it ideal for school district budget planning.',
-    href: '/services/commercial-roofing',
+  title: 'EPDM Rubber Roofing',
+  description: 'Durable synthetic rubber membrane with proven 30+ year lifespan. Low maintenance requirements make it ideal for school district budget planning.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Long-lasting standing seam metal roofing for school buildings. Excellent durability for athletic facilities, gymnasiums, and administration buildings.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Long-lasting standing seam metal roofing for school buildings. Excellent durability for athletic facilities, gymnasiums, and administration buildings.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Layers,
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Multi-layer roofing system providing exceptional waterproofing for large-footprint school buildings, cafeterias, and auditoriums.',
-    href: '/services/commercial-roofing',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Multi-layer roofing system providing exceptional waterproofing for large-footprint school buildings, cafeterias, and auditoriums.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Shingle Roofing',
-    description: 'Architectural shingles for smaller school buildings, portable classrooms, and administration offices. Cost-effective with excellent aesthetics.',
-    href: '/services/residential-roofing',
+  title: 'Shingle Roofing',
+  description: 'Architectural shingles for smaller school buildings, portable classrooms, and administration offices. Cost-effective with excellent aesthetics.',
+  href: '/services/residential-roofing',
   },
   {
     icon: Clock,
-    title: 'Roof Coatings & Restoration',
-    description: 'Extend the life of existing school roofs by 10-15 years. A budget-friendly alternative to full replacement that can be completed during shorter breaks.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings & Restoration',
+  description: 'Extend the life of existing school roofs by 10-15 years. A budget-friendly alternative to full replacement that can be completed during shorter breaks.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -117,33 +116,33 @@ const schoolRoofingSystems = [
 const schoolBuildingTypes = [
   {
     icon: BookOpen,
-    title: 'K-12 Schools',
-    description: 'Comprehensive roofing for elementary, middle, and high schools across the Charlotte-Mecklenburg Schools (CMS) district and surrounding counties.',
+  title: 'K-12 Schools',
+  description: 'Comprehensive roofing for elementary, middle, and high schools across the Charlotte-Mecklenburg Schools (CMS) district and surrounding counties.',
   },
   {
     icon: GraduationCap,
-    title: 'Universities & Colleges',
-    description: 'Campus-wide roofing solutions for UNC Charlotte, Queens University, Johnson C. Smith, and other higher education institutions in the Charlotte area.',
+  title: 'Universities & Colleges',
+  description: 'Campus-wide roofing solutions for UNC Charlotte, Queens University, Johnson C. Smith, and other higher education institutions in the Charlotte area.',
   },
   {
     icon: Building2,
-    title: 'Community Colleges',
-    description: 'Roofing for Central Piedmont Community College (CPCC) campuses and other community college facilities throughout the region.',
+  title: 'Community Colleges',
+  description: 'Roofing for Central Piedmont Community College (CPCC) campuses and other community college facilities throughout the region.',
   },
   {
     icon: Star,
-    title: 'Private & Charter Schools',
-    description: 'Specialized roofing for Charlotte&apos;s many private, parochial, and charter schools including Providence Day, Charlotte Latin, and Charlotte Country Day.',
+  title: 'Private & Charter Schools',
+  description: 'Specialized roofing for Charlotte&apos;s many private, parochial, and charter schools including Providence Day, Charlotte Latin, and Charlotte Country Day.',
   },
   {
     icon: Users,
-    title: 'Administration Buildings',
-    description: 'Roofing for school district offices, maintenance facilities, bus depots, and support buildings that keep the educational system running.',
+  title: 'Administration Buildings',
+  description: 'Roofing for school district offices, maintenance facilities, bus depots, and support buildings that keep the educational system running.',
   },
   {
     icon: Shield,
-    title: 'Athletic Facilities',
-    description: 'Metal and membrane roofing for gymnasiums, field houses, natatoriums, press boxes, and other athletic buildings on school and university campuses.',
+  title: 'Athletic Facilities',
+  description: 'Metal and membrane roofing for gymnasiums, field houses, natatoriums, press boxes, and other athletic buildings on school and university campuses.',
   },
 ];
 
@@ -151,33 +150,33 @@ const schoolBuildingTypes = [
 const whyChooseUs = [
   {
     icon: Clock,
-    title: 'Summer Scheduling Expertise',
-    description: 'We understand the June-August work window. Our crews are scaled for fast completion during summer breaks, and we hit deadlines before students return.',
+  title: 'Summer Scheduling Expertise',
+  description: 'We understand the June-August work window. Our crews are scaled for fast completion during summer breaks, and we hit deadlines before students return.',
   },
   {
     icon: Shield,
-    title: 'Student Safety First',
-    description: 'Enhanced safety protocols for work near children. Secured staging areas, background-checked crews, and coordination with school administrators at every step.',
+  title: 'Student Safety First',
+  description: 'Enhanced safety protocols for work near children. Secured staging areas, background-checked crews, and coordination with school administrators at every step.',
   },
   {
     icon: DollarSign,
-    title: 'Budget & Procurement Ready',
-    description: 'Experienced with school district bidding processes, state procurement rules, and bond-funded projects. We provide the documentation your board requires.',
+  title: 'Budget & Procurement Ready',
+  description: 'Experienced with school district bidding processes, state procurement rules, and bond-funded projects. We provide the documentation your board requires.',
   },
   {
     icon: Award,
-    title: 'NC Building Code Compliant',
-    description: 'All installations meet or exceed North Carolina building codes for educational facilities, including fire ratings, wind uplift, and energy efficiency standards.',
+  title: 'NC Building Code Compliant',
+  description: 'All installations meet or exceed North Carolina building codes for educational facilities, including fire ratings, wind uplift, and energy efficiency standards.',
   },
   {
     icon: Ruler,
-    title: 'Long-Term Warranty Programs',
-    description: 'We offer 20-30 year NDL warranties ideal for school districts. Extended coverage means fewer budget surprises and predictable maintenance costs.',
+  title: 'Long-Term Warranty Programs',
+  description: 'We offer 20-30 year NDL warranties ideal for school districts. Extended coverage means fewer budget surprises and predictable maintenance costs.',
   },
   {
     icon: Users,
-    title: 'Dedicated Project Managers',
-    description: 'A single point of contact who works with your facilities director, principal, and district leadership. Clear communication and daily progress updates.',
+  title: 'Dedicated Project Managers',
+  description: 'A single point of contact who works with your facilities director, principal, and district leadership. Clear communication and daily progress updates.',
   },
 ];
 
@@ -213,42 +212,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'Can you complete a school roof replacement during summer break?',
-    answer:
+  answer:
       'Yes, summer break scheduling is our specialty for school projects. Charlotte-Mecklenburg Schools typically release students in early June, giving us an 8-10 week window before classes resume in late August. For a typical school building (30,000-60,000 sq ft), we can complete a full roof replacement in 4-6 weeks. We pre-order materials in spring, mobilize crews on the first available day, and run extended shifts to ensure completion well before the first day of school. For larger campuses requiring multi-building work, we create phased plans spanning multiple summers if needed.',
   },
   {
     question: 'What safety protocols do you follow when working on occupied school buildings?',
-    answer:
+  answer:
       'When work must occur during the school year (such as emergency repairs), we implement strict safety protocols: all workers undergo background checks, work areas are fully barricaded and separated from student areas, materials are delivered and staged during non-school hours, and a safety coordinator communicates daily with school administrators. We carry additional liability insurance for educational facility work. All debris is cleaned up before students arrive each morning, and we coordinate with maintenance staff on building access and HVAC impacts.',
   },
   {
     question: 'How does school district procurement and bidding work for roofing projects?',
-    answer:
+  answer:
       'We are experienced with North Carolina public school procurement requirements. For CMS and surrounding districts, projects over $30,000 typically require formal bidding. We can participate in sealed bid processes, provide prevailing wage documentation, meet HUB (Historically Underutilized Business) requirements, and supply all required bonds and insurance certificates. We also work with school districts on capital improvement bond projects and can provide multi-year project proposals for districts planning campus-wide upgrades. For private schools, the process is typically simpler with direct proposals and negotiated contracts.',
   },
   {
     question: 'What warranties do you offer for school roofing projects?',
-    answer:
+  answer:
       'For school district projects, we typically provide manufacturer NDL (No Dollar Limit) warranties ranging from 20 to 30 years, which cover both materials and labor at no additional cost to the school. This is critical for districts managing long-term budgets. Our workmanship warranty covers the quality of our installation. We can also set up preventive maintenance programs with bi-annual inspections to maintain warranty compliance and extend roof life. Extended warranty options are available, and we provide all documentation needed for district facility records.',
   },
   {
     question: 'How much does school roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'School roof replacement costs in Charlotte depend on building size, roofing system, and condition. TPO and EPDM membrane systems typically range from $5 to $10 per square foot. Metal roofing ranges from $8 to $15 per square foot. A typical CMS elementary school (40,000 sq ft roof) might cost $200,000-$400,000. University buildings with more complex architecture can be higher. We provide detailed estimates broken down by building section, and we work within school district budget cycles. Bond-funded and capital improvement projects may qualify for volume pricing.',
   },
   {
     question: 'Can you help schools improve energy efficiency with a new roof?',
-    answer:
+  answer:
       'Absolutely. A new reflective roof (white TPO or cool-roof coated metal) can reduce a school&apos;s cooling costs by 20-30%, which is significant for buildings running AC from April through October in Charlotte. We also install additional insulation during re-roofing to meet or exceed current NC energy code. Some systems may qualify for utility rebates through Duke Energy&apos;s commercial programs. For districts pursuing LEED or Green Globes certification, we can specify materials and systems that earn points toward those programs.',
   },
   {
     question: 'Do you work with school districts on emergency roof repairs?',
-    answer:
+  answer:
       'Yes, we provide emergency roof repair services for schools with priority response times. A leaking school roof can damage equipment, books, and technology, and can force classroom closures. We maintain emergency response agreements with several school districts that guarantee response within 4 hours during business days. Our crews can perform temporary weatherproofing immediately and schedule permanent repairs for the next available break period. We also provide detailed damage documentation for insurance claims and FEMA reimbursement if applicable.',
   },
   {
     question: 'What roofing system is best for school gymnasiums and athletic facilities?',
-    answer:
+  answer:
       'For gymnasiums and athletic facilities, we typically recommend standing seam metal roofing for its superior durability, minimal maintenance, and ability to handle long spans without interior columns. For natatoriums (pools), PVC membrane is ideal due to its resistance to chlorine and moisture. Field houses and press boxes often do well with TPO or modified bitumen. We consider factors like acoustics (metal roofs can amplify rain noise in a gym), condensation control, and the higher ventilation demands of athletic spaces when making our recommendations.',
   },
 ];
@@ -263,7 +262,6 @@ export default function SchoolRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/school-roofing-charlotte-nc`}
         pageName="School Roofing Charlotte NC"
@@ -299,7 +297,7 @@ export default function SchoolRoofingCharlotteNCPage() {
               Charlotte-Mecklenburg Schools is one of the largest school districts in the United States, and the
               Charlotte metro is home to UNC Charlotte, Queens University, Johnson C. Smith, CPCC, and dozens of
               private schools. Best Roofing Now specializes in educational facility roofing with summer scheduling,
-              student safety protocols, and budget-conscious solutions.
+  student safety protocols, and budget-conscious solutions.
             </p>
 
             {/* CTA Buttons */}
@@ -423,7 +421,7 @@ export default function SchoolRoofingCharlotteNCPage() {
               </h2>
               <p className="text-gray text-lg mb-8">
                 School roofing is unlike any other commercial project. Tight summer timelines, student safety requirements,
-                public procurement processes, and long-term budget planning all demand a contractor who truly understands
+  public procurement processes, and long-term budget planning all demand a contractor who truly understands
                 educational facilities. We deliver on every front.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">

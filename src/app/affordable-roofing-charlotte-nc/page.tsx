@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -38,31 +38,33 @@ export const metadata: Metadata = {
     'Affordable roofing services in Charlotte NC without sacrificing quality. Transparent pricing, flexible financing options, and insurance claim assistance. Get value you can trust from a BBB A+ rated family-owned company.',
   keywords: [
     'affordable roofing Charlotte NC',
-    'cheap roofing Charlotte',
-    'budget roofing Charlotte NC',
-    'low cost roof repair Charlotte',
-    'affordable roof replacement Charlotte',
+    'cheapest roof replacement Charlotte NC',
+    'affordable roof replacement Charlotte NC',
+    'low cost roof repair Charlotte NC',
     'roofing financing Charlotte NC',
-    'roof payment plans Charlotte',
-    'best value roofing Charlotte',
-    'honest roofing prices Charlotte',
-    'fair price roofing Charlotte NC',
+    'roof payment plans Charlotte NC',
+    'best value roofing Charlotte NC',
+    'affordable roofing Lake Norman NC',
+    'affordable roofing Lake Wylie SC',
+    'cheap roofer Charlotte NC',
+    'affordable roof repair near me Charlotte NC',
+    'budget roofing Charlotte NC',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`,
   },
   openGraph: {
     title: 'Affordable Roofing Charlotte NC | Quality at Fair Prices',
-    description:
+  description:
       'Get quality roofing services at fair prices in Charlotte NC. Transparent pricing, financing options, and insurance claim help. BBB A+ rated, veteran-owned company.',
-    url: `${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Affordable roofing Charlotte NC - quality roof installation at fair prices',
+  width: 1200,
+  height: 630,
+  alt: 'Affordable roofing Charlotte NC - quality roof installation at fair prices',
       },
     ],
   },
@@ -72,33 +74,33 @@ export const metadata: Metadata = {
 const pricingBreakdown = [
   {
     service: 'Roof Inspection',
-    range: 'FREE',
-    includes: 'Comprehensive assessment, photos, detailed report',
+  range: 'FREE',
+  includes: 'Comprehensive assessment, photos, detailed report',
   },
   {
     service: 'Minor Repairs (leaks, flashing)',
-    range: '$250 - $750',
-    includes: 'Materials, labor, cleanup, warranty',
+  range: '$250 - $750',
+  includes: 'Materials, labor, cleanup, warranty',
   },
   {
     service: 'Moderate Repairs (shingle replacement)',
-    range: '$500 - $1,500',
-    includes: 'Up to 100 sq ft, materials, labor, disposal',
+  range: '$500 - $1,500',
+  includes: 'Up to 100 sq ft, materials, labor, disposal',
   },
   {
     service: 'Major Repairs (structural)',
-    range: '$1,500 - $4,000',
-    includes: 'Decking repair, flashing, full restoration',
+  range: '$1,500 - $4,000',
+  includes: 'Decking repair, flashing, full restoration',
   },
   {
     service: 'Full Roof Replacement (avg home)',
-    range: '$8,000 - $18,000',
-    includes: 'Tear-off, disposal, materials, labor, warranty',
+  range: '$8,000 - $18,000',
+  includes: 'Tear-off, disposal, materials, labor, warranty',
   },
   {
     service: 'Premium Roof Replacement',
-    range: '$15,000 - $35,000',
-    includes: 'Designer shingles or metal, extended warranty',
+  range: '$15,000 - $35,000',
+  includes: 'Designer shingles or metal, extended warranty',
   },
 ];
 
@@ -106,26 +108,26 @@ const pricingBreakdown = [
 const valuePropositions = [
   {
     icon: Shield,
-    title: 'Quality Materials Only',
-    description:
+  title: 'Quality Materials Only',
+  description:
       'We use CertainTeed, GAF, and Owens Corning products. Cheaper materials cost more in the long run.',
   },
   {
     icon: Award,
-    title: 'Manufacturer Warranties',
-    description:
+  title: 'Manufacturer Warranties',
+  description:
       'Our certifications mean you get the best warranties available - up to 50 years on materials.',
   },
   {
     icon: Users,
-    title: 'Skilled Crews',
-    description:
+  title: 'Skilled Crews',
+  description:
       'Our experienced installers do the job right the first time, eliminating costly callbacks.',
   },
   {
     icon: FileText,
-    title: 'Transparent Quotes',
-    description:
+  title: 'Transparent Quotes',
+  description:
       'Detailed line-item estimates so you know exactly where every dollar goes. No hidden fees.',
   },
 ];
@@ -134,27 +136,27 @@ const valuePropositions = [
 const financingOptions = [
   {
     title: '0% APR for 12 Months',
-    description: 'No interest if paid within a year',
-    icon: Percent,
-    details: 'Perfect for planned replacements when you want to spread payments without extra cost.',
+  description: 'No interest if paid within a year',
+  icon: Percent,
+  details: 'Perfect for planned replacements when you want to spread payments without extra cost.',
   },
   {
     title: 'Low Monthly Payments',
-    description: 'From $99/month',
-    icon: CreditCard,
-    details: 'Terms up to 144 months available. Protect your home now, pay over time.',
+  description: 'From $99/month',
+  icon: CreditCard,
+  details: 'Terms up to 144 months available. Protect your home now, pay over time.',
   },
   {
     title: 'Same-Day Approval',
-    description: 'Quick, easy application',
-    icon: Clock,
-    details: 'Soft credit check available. Know your options within minutes, not days.',
+  description: 'Quick, easy application',
+  icon: Clock,
+  details: 'Soft credit check available. Know your options within minutes, not days.',
   },
   {
     title: 'Insurance Assistance',
-    description: 'Maximize your coverage',
-    icon: FileText,
-    details: 'We work directly with insurance companies to help you get the coverage you deserve.',
+  description: 'Maximize your coverage',
+  icon: FileText,
+  details: 'We work directly with insurance companies to help you get the coverage you deserve.',
   },
 ];
 
@@ -174,42 +176,42 @@ const scamWarnings = [
 const faqs = [
   {
     question: 'How much does a typical roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'A typical roof replacement in Charlotte costs between $8,000 and $25,000 for most homes, depending on size and materials. The average Charlotte homeowner pays around $12,000-$15,000 for quality architectural shingles. We provide free, detailed estimates so you know exactly what to expect. Our pricing includes tear-off, disposal, premium materials, professional installation, and comprehensive warranties.',
   },
   {
     question: 'Do you offer financing for roofing projects?',
-    answer:
+  answer:
       'Yes! We offer multiple financing options including 0% APR for 12 months and low monthly payment plans starting at $99/month with terms up to 144 months. Our financing partners serve a wide range of credit profiles, and approval is often same-day. We believe everyone deserves a quality roof, regardless of their immediate financial situation.',
   },
   {
     question: 'Will my homeowners insurance cover roof replacement?',
-    answer:
+  answer:
       'Insurance typically covers roof replacement if damage was caused by a covered event like storms, hail, wind, or falling debris. Charlotte experiences significant storm activity, and many roof replacements are at least partially covered. Best Roofing Now works directly with insurance companies, provides documentation, meets with adjusters, and helps you navigate the claims process to maximize your coverage.',
   },
   {
     question: 'Why should I avoid the cheapest roofing quote?',
-    answer:
+  answer:
       'The cheapest quote often means cut corners - inferior materials, inexperienced labor, skipped steps, or hidden fees that appear later. A roof is a major investment that protects everything you own. Companies offering prices 40% or more below market rate are typically using substandard materials, cutting corners on installation, or plan to hit you with change orders. Our pricing reflects quality materials, proper installation, and real warranties.',
   },
   {
     question: 'How can I budget for a new roof?',
-    answer:
+  answer:
       'Start with a free inspection to understand your roof condition and timeline. If replacement is needed within 2-5 years, you can plan ahead. For unexpected needs, our financing options make monthly payments manageable. Many homeowners use home equity, personal savings, or financing. We also help maximize insurance claims for storm damage, which can significantly reduce your out-of-pocket costs.',
   },
   {
     question: 'What makes Best Roofing Now affordable without being cheap?',
-    answer:
+  answer:
       'We are efficient, not cheap. Our crews are experienced and work quickly without sacrificing quality. We buy materials in volume from manufacturers we are certified with, passing savings to you. We do not have expensive showrooms or massive overhead - we are a family-owned company focused on roofing, not marketing. And we will never recommend unnecessary work just to inflate a bill.',
   },
   {
     question: 'Do you offer payment plans for roof repairs?',
-    answer:
+  answer:
       'Yes, financing is available for projects starting at $1,000. Even smaller repairs can be financed to help manage unexpected expenses. For minor repairs under that threshold, we accept all major credit cards, checks, and cash. We also offer multiple payment schedule options for larger projects.',
   },
   {
     question: 'How do I know if I really need a full replacement or just repairs?',
-    answer:
+  answer:
       'We provide honest assessments. If repairs will cost more than 50% of a replacement, or if your roof is 20+ years old with widespread wear, replacement often makes more financial sense. But we never push unnecessary replacements. Our free inspections include photos and explanations so you can make an informed decision. We will tell you the truth, even if it means losing a bigger job.',
   },
 ];
@@ -219,54 +221,54 @@ function AffordableRoofingSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Affordable Roofing Services in Charlotte NC',
-    description:
+  name: 'Affordable Roofing Services in Charlotte NC',
+  description:
       'Quality roofing services at fair, transparent prices in Charlotte NC. Financing available, insurance assistance, and honest pricing from a BBB A+ rated family-owned company.',
-    provider: {
+  provider: {
       ...getRoofingContractorIdentity(),
-      aggregateRating: {
+  aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: SITE_CONFIG.googleRating,
-        reviewCount: SITE_CONFIG.googleReviewCount,
-        bestRating: 5,
-        worstRating: 1,
+  ratingValue: SITE_CONFIG.googleRating,
+  reviewCount: SITE_CONFIG.googleReviewCount,
+  bestRating: 5,
+  worstRating: 1,
       },
     },
-    areaServed: {
+  areaServed: {
       '@type': 'City',
-      name: 'Charlotte, NC',
+  name: 'Charlotte, NC',
     },
-    hasOfferCatalog: {
+  hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Roofing Services Pricing',
-      itemListElement: [
+  name: 'Roofing Services Pricing',
+  itemListElement: [
         {
           '@type': 'Offer',
-          name: 'Free Roof Inspection',
-          description: 'Comprehensive roof assessment with photos and detailed report',
-          price: '0',
-          priceCurrency: 'USD',
+  name: 'Free Roof Inspection',
+  description: 'Comprehensive roof assessment with photos and detailed report',
+  price: '0',
+  priceCurrency: 'USD',
         },
         {
           '@type': 'Offer',
-          name: 'Roof Repair Services',
-          description: 'Minor to major roof repairs including leaks, flashing, and shingle replacement',
-          priceSpecification: {
+  name: 'Roof Repair Services',
+  description: 'Minor to major roof repairs including leaks, flashing, and shingle replacement',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '250',
-            maxPrice: '4000',
+  priceCurrency: 'USD',
+  minPrice: '250',
+  maxPrice: '4000',
           },
         },
         {
           '@type': 'Offer',
-          name: 'Roof Replacement',
-          description: 'Complete roof replacement with premium materials and warranty',
-          priceSpecification: {
+  name: 'Roof Replacement',
+  description: 'Complete roof replacement with premium materials and warranty',
+  priceSpecification: {
             '@type': 'PriceSpecification',
-            priceCurrency: 'USD',
-            minPrice: '8000',
-            maxPrice: '35000',
+  priceCurrency: 'USD',
+  minPrice: '8000',
+  maxPrice: '35000',
           },
         },
       ],
@@ -291,7 +293,6 @@ export default function AffordableRoofingCharlottePage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AffordableRoofingSchema />
 
       {/* Hero Section */}
@@ -397,7 +398,7 @@ export default function AffordableRoofingCharlottePage() {
               </p>
               <p className="text-gray text-lg mb-6">
                 True affordability comes from quality materials installed correctly the first time,
-                backed by real warranties, from a company that will still be here when you need us.
+  backed by real warranties, from a company that will still be here when you need us.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -695,8 +696,8 @@ export default function AffordableRoofingCharlottePage() {
                 </h4>
                 <p className="text-gray">
                   Reputable contractors like Best Roofing Now have a physical local address, carry proper insurance,
-                  provide written contracts with clear scope, offer references, never demand full payment upfront,
-                  and have verifiable reviews. We have been serving Charlotte for over {SITE_CONFIG.yearsInBusiness} years
+  provide written contracts with clear scope, offer references, never demand full payment upfront,
+  and have verifiable reviews. We have been serving Charlotte for over {SITE_CONFIG.yearsInBusiness} years
                   with a BBB A+ rating and 5.0 Google rating.
                 </p>
               </div>

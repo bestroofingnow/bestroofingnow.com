@@ -1,12 +1,55 @@
-// Real project photos from PMI (ProjectMapIt) database
-// All images sourced from actual Best Roofing Now job sites across Charlotte metro area
-// Hosted on Google Cloud Storage: storage.googleapis.com/pmi-photos/
+// Real project photos from Best Roofing Now job sites across Charlotte metro area
+// Previously hosted on PMI (ProjectMapIt) GCS bucket, now served locally
 
-const PMI = 'https://storage.googleapis.com/pmi-photos';
+const PMI = '/images/projects';
+const STOCK = '/images/stock';
 
 export const IMAGES = {
   // Logo - keep branded asset
-  logo: 'https://cms.bestroofingnow.com/wp-content/uploads/2025/12/Untitled-design-53.png',
+  logo: '/images/logo.jpg',
+
+  // Free stock images (Unsplash, license: free for commercial use)
+  stock: {
+    // Hero images - high-res 1920px wide
+    heroRoofingAerial: `${STOCK}/hero-roofing-aerial.jpg`,
+    heroSuburbanHomes: `${STOCK}/hero-suburban-homes.jpg`,
+    heroHouseExterior: `${STOCK}/hero-house-exterior.jpg`,
+    heroBeautifulHome: `${STOCK}/hero-beautiful-home.jpg`,
+    heroModernHouse: `${STOCK}/hero-modern-house.jpg`,
+    heroNeighborhood: `${STOCK}/hero-neighborhood.jpg`,
+    heroCraftsmanHome: `${STOCK}/hero-craftsman-home.jpg`,
+    ctaFamilyHome: `${STOCK}/cta-family-home.jpg`,
+    // Service images - 1280px wide
+    serviceRoofTiles: `${STOCK}/service-roof-tiles.jpg`,
+    serviceConstructionWorker: `${STOCK}/service-construction-worker.jpg`,
+    serviceRoofingWork: `${STOCK}/service-roofing-work.jpg`,
+    serviceHomeRepair: `${STOCK}/service-home-repair.jpg`,
+    serviceStormDamage: `${STOCK}/service-storm-damage.jpg`,
+    // Blog / content images
+    blogTools: `${STOCK}/blog-tools.jpg`,
+    blogHouseRain: `${STOCK}/blog-house-rain.jpg`,
+    blogMaintenance: `${STOCK}/blog-maintenance.jpg`,
+    // About / team
+    aboutTeamConstruction: `${STOCK}/about-team-construction.jpg`,
+    // Home hero rotation - aerial views showing roofs clearly
+    roofAerialHome1: `${STOCK}/roof-aerial-home-1.jpg`,
+    roofAerialHome2: `${STOCK}/roof-aerial-home-2.jpg`,
+    roofAerialHome3: `${STOCK}/roof-aerial-home-3.jpg`,
+    roofAerialHome4: `${STOCK}/roof-aerial-home-4.jpg`,
+    // Commercial flat roofs / workers
+    roofCommercialFlat1: `${STOCK}/roof-commercial-flat-1.jpg`,
+    roofCommercialFlat2: `${STOCK}/roof-commercial-flat-2.jpg`,
+  },
+
+  // Home page hero rotation images (order matters)
+  heroRotation: [
+    `${STOCK}/roof-aerial-home-1.jpg`,
+    `${STOCK}/roof-aerial-home-2.jpg`,
+    `${STOCK}/roof-commercial-flat-1.jpg`,
+    `${STOCK}/roof-aerial-home-3.jpg`,
+    `${STOCK}/roof-aerial-home-4.jpg`,
+    `${STOCK}/roof-commercial-flat-2.jpg`,
+  ],
 
   // Hero/Banner Images - Real PMI project photos from Charlotte area jobs
   hero: {
@@ -77,8 +120,8 @@ export const IMAGES = {
     certainteed1: `${PMI}/2024-12-03-03-13-01-14b359e3-370d-4a0a-91ef-3c7b79acadfc.jpg`, // Charlotte
     project11: `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`, // Huntersville
     project12: `${PMI}/full-bdb1d414-6ebc-457a-8ce2-e65cd267b64d.jpeg`, // Huntersville
-    drone1: `${PMI}/full-22fa0267-3c36-4ab4-8131-f498d47c8c25.jpeg`, // Huntersville
-    drone2: `${PMI}/full-a19f5d5c-3f3e-460b-b312-f6f5dbb5b0e5.jpeg`, // Huntersville
+    drone1: `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`, // Huntersville (fallback - original missing from PMI)
+    drone2: `${PMI}/full-bdb1d414-6ebc-457a-8ce2-e65cd267b64d.jpeg`, // Huntersville (fallback - original missing from PMI)
     project13: `${PMI}/full-76a79ab8-dc86-4c03-b8db-ac9587236449.jpeg`, // Concord
     project14: `${PMI}/2024-05-15-02-51-18-30457b83-64a7-4a2f-ad1f-234a9eaba60b.jpg`, // Concord
     project15: `${PMI}/full-9e7b90cb-bb7a-445e-b809-7fbc9cd21377.jpeg`, // Mooresville
@@ -103,7 +146,7 @@ export const IMAGES = {
   // House/exterior images - real PMI completed projects showing full homes
   houses: {
     house1: `${PMI}/2024-07-31-01-39-21-4ab97766-d05f-4a09-bee7-f43f3c591dae.jpg`,
-    house2: `${PMI}/2024-06-11-06-21-10-70e2a7c3-20bc-4093-9fe4-1eeb5f45fb39.jpg`,
+    house2: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`, // fallback - original missing from PMI
     house3: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`, // Dallas
     house4: `${PMI}/2024-12-21-04-35-58-5b1c5136-6fdd-4b1f-ad37-e260afcd43f3.jpg`, // Lincolnton
     house5: `${PMI}/2024-01-24-06-42-58-0d0dd377-3feb-4e3d-a062-2a9bb941712e.jpg`, // Albemarle
@@ -122,23 +165,23 @@ export const IMAGES = {
     work2: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
     work3: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
     work4: `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`,
-    work5: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
-    work6: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
-    work7: `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
-    work8: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+    work5: `${PMI}/full-daa76aa1-8063-4951-8df1-9c4fa0193fbf.jpeg`, // replacement - original missing from PMI
+    work6: `${PMI}/full-d393635e-9ef9-4029-8f0b-94665c4fc527.jpeg`, // replacement - original missing from PMI
+    work7: `${PMI}/full-7af5f870-cc77-4685-bc18-7fb52016aa47.jpeg`, // replacement - original missing from PMI
+    work8: `${PMI}/full-8d86cfc6-b7b2-497c-8814-08370dd7365c.jpeg`, // replacement - original missing from PMI
   },
 
   // Professional/Marketing images - replaced with real PMI project showcase photos
   marketing: {
-    image1: `${PMI}/2024-09-04-03-58-23-ac3c5a20-6ecb-4dc2-a780-c89a09e44f4d.jpg`,
-    image2: `${PMI}/2024-08-14-07-05-04-0e6f3e6f-ae0e-4370-b5a1-ac1fe9df2f2c.jpg`,
-    image3: `${PMI}/2024-08-06-06-26-47-e9cc1df2-5c3d-4d2b-9d6e-e1fdee83a818.jpg`,
+    image1: `${PMI}/full-4864ac50-76be-4e99-8768-209d54235119.jpeg`,
+    image2: `${PMI}/full-48a95f36-bac5-4f52-a4a7-4cd3191119ff.jpeg`,
+    image3: `${PMI}/full-4ebe8cc6-e668-4066-92ad-6ccee8763dc7.jpeg`,
     image4: `${PMI}/2024-07-31-01-39-21-4ab97766-d05f-4a09-bee7-f43f3c591dae.jpg`,
-    image5: `${PMI}/2024-07-16-04-41-39-daec3c1a-3e89-46e1-b2e8-a19f5f3e3c82.jpg`,
+    image5: `${PMI}/full-607b6541-c151-49b9-8c73-fe9f92252f19.jpeg`,
     image6: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
     image7: `${PMI}/2024-07-02-04-38-14-ac6ed3f5-a9ef-4b2d-91ab-a3790e5b1bb3.jpg`,
     image8: `${PMI}/2024-06-29-02-58-16-3cf62886-c208-47ee-97df-665ce9af09ad.jpg`,
-    image9: `${PMI}/2024-06-11-06-21-10-70e2a7c3-20bc-4093-9fe4-1eeb5f45fb39.jpg`,
+    image9: `${PMI}/full-f412b906-b8c1-4e7d-9c68-50a6695a76da.jpeg`,
     image10: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`,
     image11: `${PMI}/2024-05-17-06-53-49-106727f5-6597-4311-af3f-39fa31609843.jpg`,
     image12: `${PMI}/2024-05-15-02-51-18-30457b83-64a7-4a2f-ad1f-234a9eaba60b.jpg`,
@@ -148,10 +191,10 @@ export const IMAGES = {
     image16: `${PMI}/2024-12-13-04-43-12-202a1e47-27ef-4a61-83b0-ef49b58f2f17.jpg`,
     image17: `${PMI}/2024-12-06-07-36-41-4106108d-4be1-47de-a8f9-80c04c77e56a.jpg`,
     image18: `${PMI}/2024-12-03-03-13-01-14b359e3-370d-4a0a-91ef-3c7b79acadfc.jpg`,
-    image19: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
-    image20: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
-    image21: `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
-    image22: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+    image19: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
+    image20: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
+    image21: `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`,
+    image22: `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`,
     image23: `${PMI}/2024-01-24-06-42-58-0d0dd377-3feb-4e3d-a062-2a9bb941712e.jpg`,
     image24: `${PMI}/2023-08-23-05-23-53-b874c86e-12de-4359-b43a-2ba908468e3e.jpg`,
     image25: `${PMI}/2023-07-07-06-53-53-4072732b-c62b-4619-a0d9-4cc49af7315d.jpg`,
@@ -276,7 +319,7 @@ export function getRandomGalleryImages(count: number = 6): string[] {
   return shuffled.slice(0, count);
 }
 
-// Helper to get random hero image
+// Helper to get random hero image (mix of PMI + stock)
 export function getRandomHeroImage(): string {
   const heroImages = [
     IMAGES.hero.hero1, IMAGES.hero.hero2, IMAGES.hero.hero3, IMAGES.hero.hero4,
@@ -286,8 +329,18 @@ export function getRandomHeroImage(): string {
     IMAGES.hero.hero17, IMAGES.hero.hero18, IMAGES.hero.hero19, IMAGES.hero.hero20,
     IMAGES.hero.hero21, IMAGES.hero.hero22, IMAGES.hero.hero23, IMAGES.hero.hero24,
     IMAGES.hero.hero25, IMAGES.hero.hero26,
+    // Stock images mixed in for variety
+    IMAGES.stock.heroRoofingAerial, IMAGES.stock.heroSuburbanHomes,
+    IMAGES.stock.heroBeautifulHome, IMAGES.stock.heroModernHouse,
+    IMAGES.stock.heroNeighborhood, IMAGES.stock.heroCraftsmanHome,
   ];
   return heroImages[Math.floor(Math.random() * heroImages.length)];
+}
+
+// Helper to get random stock image
+export function getRandomStockImage(): string {
+  const stockImages = Object.values(IMAGES.stock);
+  return stockImages[Math.floor(Math.random() * stockImages.length)];
 }
 
 // Helper to get random house image
@@ -302,18 +355,21 @@ export function getRandomProjectImage(): string {
   return projectImages[Math.floor(Math.random() * projectImages.length)];
 }
 
-// Image sets for specific pages - using real PMI project photos
+// Image sets for specific pages - mix of real PMI photos + stock for variety
 export const PAGE_IMAGES = {
   home: {
     hero: IMAGES.hero.roofTeam,
-    services: [IMAGES.hero.hero1, IMAGES.hero.hero2, IMAGES.hero.hero3],
-    whyChooseUs: IMAGES.marketing.image1,
+    heroFallback: IMAGES.stock.heroBeautifulHome,
+    services: [IMAGES.hero.hero1, IMAGES.stock.serviceRoofTiles, IMAGES.hero.hero3],
+    whyChooseUs: IMAGES.stock.heroSuburbanHomes,
     projects: [IMAGES.projects.work1, IMAGES.projects.work2, IMAGES.projects.work3],
+    neighborhood: IMAGES.stock.heroNeighborhood,
   },
   about: {
-    hero: IMAGES.hero.hero5,
-    team: [IMAGES.hero.menOnRoof, IMAGES.projects.contractor1, IMAGES.projects.contractor2],
-    values: IMAGES.marketing.image3,
+    hero: IMAGES.stock.aboutTeamConstruction,
+    heroFallback: IMAGES.hero.hero5,
+    team: [IMAGES.hero.menOnRoof, IMAGES.projects.contractor1, IMAGES.stock.serviceConstructionWorker],
+    values: IMAGES.stock.heroCraftsmanHome,
   },
   services: {
     hero: IMAGES.hero.hero7,
@@ -364,23 +420,33 @@ export const PAGE_IMAGES = {
     default: [IMAGES.hero.hero18, IMAGES.hero.hero19, IMAGES.hero.hero20],
   },
   contact: {
-    hero: IMAGES.hero.hero21,
+    hero: IMAGES.stock.heroModernHouse,
+    heroFallback: IMAGES.hero.hero21,
     form: IMAGES.marketing.image5,
   },
   faq: {
-    hero: IMAGES.hero.hero22,
+    hero: IMAGES.stock.heroHouseExterior,
+    heroFallback: IMAGES.hero.hero22,
   },
   financing: {
     hero: IMAGES.hero.hero23,
-    cards: [IMAGES.houses.house3, IMAGES.houses.house4, IMAGES.houses.house5],
+    cards: [IMAGES.stock.heroBeautifulHome, IMAGES.houses.house4, IMAGES.stock.heroCraftsmanHome],
   },
   reviews: {
-    hero: IMAGES.hero.hero24,
-    testimonials: [IMAGES.houses.house1, IMAGES.houses.house2, IMAGES.houses.modern1],
+    hero: IMAGES.stock.heroSuburbanHomes,
+    heroFallback: IMAGES.hero.hero24,
+    testimonials: [IMAGES.houses.house1, IMAGES.stock.heroBeautifulHome, IMAGES.houses.modern1],
   },
   blog: {
-    hero: IMAGES.hero.hero25,
-    featured: IMAGES.marketing.image7,
+    hero: IMAGES.stock.heroRoofingAerial,
+    heroFallback: IMAGES.hero.hero25,
+    featured: IMAGES.stock.blogHouseRain,
+    defaultThumbnail: IMAGES.stock.blogMaintenance,
+  },
+  cta: {
+    default: IMAGES.stock.ctaFamilyHome,
+    blog: IMAGES.stock.blogHouseRain,
+    services: IMAGES.stock.serviceRoofingWork,
   },
 };
 
@@ -538,10 +604,10 @@ export const LOCATION_HERO_IMAGES: Record<string, string> = {
   'monroe-nc': `${PMI}/2023-03-07-08-45-53-d8516fd9-8480-4747-bbc9-4a0a79f285c4.jpg`,
   'indian-trail-nc': `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
   'waxhaw-nc': `${PMI}/full-b312124c-913c-4408-9882-616a23d564fe.jpeg`,
-  'stallings-nc': `${PMI}/2024-09-04-03-58-23-ac3c5a20-6ecb-4dc2-a780-c89a09e44f4d.jpg`,
-  'weddington-nc': `${PMI}/2024-08-14-07-05-04-0e6f3e6f-ae0e-4370-b5a1-ac1fe9df2f2c.jpg`,
-  'marvin-nc': `${PMI}/2024-08-06-06-26-47-e9cc1df2-5c3d-4d2b-9d6e-e1fdee83a818.jpg`,
-  'wesley-chapel-nc': `${PMI}/2024-07-16-04-41-39-daec3c1a-3e89-46e1-b2e8-a19f5f3e3c82.jpg`,
+  'stallings-nc': `${PMI}/full-fc50a77c-88a0-4057-b721-775da5beae84.jpeg`,
+  'weddington-nc': `${PMI}/full-2eabcdf5-2cc3-434f-a9f7-9d0654950e33.jpeg`,
+  'marvin-nc': `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`,
+  'wesley-chapel-nc': `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
 
   // Gaston County
   'gastonia-nc': `${PMI}/2024-12-13-04-43-12-202a1e47-27ef-4a61-83b0-ef49b58f2f17.jpg`,
@@ -558,7 +624,7 @@ export const LOCATION_HERO_IMAGES: Record<string, string> = {
   'statesville-nc': `${PMI}/full-6d141284-87ff-4aff-9c99-c918070f28bd.jpeg`,
 
   // Catawba County
-  'hickory-nc': `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
+  'hickory-nc': `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`,
   'newton-nc': `${PMI}/2023-01-05-11-50-16-878bdef9-910b-4683-8d19-cbbc41df0999.jpg`,
 
   // Other NC counties
@@ -567,11 +633,11 @@ export const LOCATION_HERO_IMAGES: Record<string, string> = {
 
   // South Carolina - York County
   'rock-hill-sc': `${PMI}/2025-01-15-01-49-06-ac388860-da9e-4997-91f7-334ecac4b044.jpg`,
-  'fort-mill-sc': `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
-  'tega-cay-sc': `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
+  'fort-mill-sc': `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
+  'tega-cay-sc': `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
 
   // South Carolina - Lancaster County
-  'indian-land-sc': `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+  'indian-land-sc': `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`,
   'lancaster-sc': `${PMI}/2024-05-17-06-53-49-106727f5-6597-4311-af3f-39fa31609843.jpg`,
 
   // Default fallback
@@ -756,7 +822,7 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
     description: 'completed home exterior with new roof in Charlotte',
   },
   {
-    url: `${PMI}/2024-06-11-06-21-10-70e2a7c3-20bc-4093-9fe4-1eeb5f45fb39.jpg`,
+    url: `${PMI}/2024-05-27-05-41-23-a6b76f02-3e31-4997-ab2d-5325eafe1876.jpg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'completed-exterior', roofType: 'residential',
     description: 'beautiful home with professionally installed new roof',
@@ -824,25 +890,25 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
     description: 'professional roof installation in Charlotte',
   },
   {
-    url: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
+    url: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'work-in-progress', roofType: 'residential',
     description: 'roof work being performed by certified roofers',
   },
   {
-    url: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
+    url: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'work-in-progress', roofType: 'residential',
     description: 'roofing team completing installation work',
   },
   {
-    url: `${PMI}/2024-10-17-04-00-24-a52cff1a-ed18-42b2-bb45-1e959e15cf81.jpg`,
+    url: `${PMI}/full-8fd42447-4e8a-4c20-bcda-c00c35cdccf5.jpeg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'work-in-progress', roofType: 'residential',
     description: 'ongoing roof project in Charlotte metro area',
   },
   {
-    url: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+    url: `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'work-in-progress', roofType: 'residential',
     description: 'professional roofing work in progress',
@@ -858,19 +924,19 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
 
   // Charlotte - Marketing/Showcase Projects
   {
-    url: `${PMI}/2024-09-04-03-58-23-ac3c5a20-6ecb-4dc2-a780-c89a09e44f4d.jpg`,
+    url: `${PMI}/full-fc50a77c-88a0-4057-b721-775da5beae84.jpeg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'new-roof', roofType: 'residential',
     description: 'showcase roof replacement project in Charlotte',
   },
   {
-    url: `${PMI}/2024-08-14-07-05-04-0e6f3e6f-ae0e-4370-b5a1-ac1fe9df2f2c.jpg`,
+    url: `${PMI}/full-2eabcdf5-2cc3-434f-a9f7-9d0654950e33.jpeg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'new-roof', roofType: 'residential',
     description: 'premium roof installation on Charlotte property',
   },
   {
-    url: `${PMI}/2024-08-06-06-26-47-e9cc1df2-5c3d-4d2b-9d6e-e1fdee83a818.jpg`,
+    url: `${PMI}/full-35542a8d-56f9-45b4-b164-7915f9a2b154.jpeg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'new-roof', roofType: 'residential',
     description: 'quality roof replacement completed in Charlotte',
@@ -914,13 +980,13 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
     description: 'completed roof replacement in Huntersville neighborhood',
   },
   {
-    url: `${PMI}/full-22fa0267-3c36-4ab4-8131-f498d47c8c25.jpeg`,
+    url: `${PMI}/full-d5248d63-f0f6-46c9-b79b-997175234376.jpeg`,
     city: 'Huntersville', state: 'NC', lat: 35.4107, lng: -80.8429,
     projectType: 'new-roof', roofType: 'residential',
     description: 'aerial drone view of completed Huntersville roof project',
   },
   {
-    url: `${PMI}/full-a19f5d5c-3f3e-460b-b312-f6f5dbb5b0e5.jpeg`,
+    url: `${PMI}/full-bdb1d414-6ebc-457a-8ce2-e65cd267b64d.jpeg`,
     city: 'Huntersville', state: 'NC', lat: 35.4107, lng: -80.8429,
     projectType: 'new-roof', roofType: 'residential',
     description: 'drone inspection of new roof in Huntersville',
@@ -1092,7 +1158,7 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
 
   // Additional Charlotte marketing images as new-roof
   {
-    url: `${PMI}/2024-07-16-04-41-39-daec3c1a-3e89-46e1-b2e8-a19f5f3e3c82.jpg`,
+    url: `${PMI}/2024-07-11-04-48-43-da5be235-29fa-46e2-8ef0-4890e20af887.jpg`,
     city: 'Charlotte', state: 'NC', lat: 35.2271, lng: -80.8431,
     projectType: 'new-roof', roofType: 'residential',
     description: 'quality residential roof replacement in Charlotte',
@@ -1148,7 +1214,7 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
 
   // Fort Mill, SC
   {
-    url: `${PMI}/2024-11-05-04-59-37-0f11be7d-ca65-4a46-a71c-68e8c0d2e09a.jpg`,
+    url: `${PMI}/full-e9de1146-89f1-455a-9587-4734724123be.jpeg`,
     city: 'Fort Mill', state: 'SC', lat: 35.0074, lng: -80.9451,
     projectType: 'new-roof', roofType: 'residential',
     description: 'new roof installation in Fort Mill',
@@ -1156,7 +1222,7 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
 
   // Tega Cay, SC
   {
-    url: `${PMI}/2024-10-30-04-44-42-66b2f37b-c7e7-4a6d-8dbf-bfc7f954b82b.jpg`,
+    url: `${PMI}/full-c8289e62-8746-48da-9717-d6559be80a3c.jpeg`,
     city: 'Tega Cay', state: 'SC', lat: 35.0240, lng: -81.0279,
     projectType: 'new-roof', roofType: 'residential',
     description: 'residential roof project in Tega Cay',
@@ -1164,7 +1230,7 @@ export const PROJECT_IMAGES: GeoTaggedImage[] = [
 
   // Indian Land, SC
   {
-    url: `${PMI}/2024-09-25-04-36-22-20e8b9e0-1bb0-4b66-a853-a21d8b34b0db.jpg`,
+    url: `${PMI}/full-b8652508-2173-49d0-bba1-5367b855f07a.jpeg`,
     city: 'Indian Land', state: 'SC', lat: 34.9571, lng: -80.8923,
     projectType: 'new-roof', roofType: 'residential',
     description: 'new roof installation in Indian Land',

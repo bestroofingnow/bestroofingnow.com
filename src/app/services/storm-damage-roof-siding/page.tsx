@@ -31,15 +31,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Storm Damage Roof & Siding Repair Charlotte NC | Insurance Experts',
-    description: 'Complete storm damage restoration for your roof and siding. We handle the insurance process from start to finish.',
-    url: `${SITE_CONFIG.url}/services/storm-damage-roof-siding`,
-    type: 'website',
-    images: [
+  description: 'Complete storm damage restoration for your roof and siding. We handle the insurance process from start to finish.',
+  url: `${SITE_CONFIG.url}/services/storm-damage-roof-siding`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.projects.stormDamage1,
-        width: 1200,
-        height: 630,
-        alt: 'Storm damage roof and siding repair Charlotte NC',
+  width: 1200,
+  height: 630,
+  alt: 'Storm damage roof and siding repair Charlotte NC',
       },
     ],
   },
@@ -48,58 +48,58 @@ export const metadata: Metadata = {
 const stormFAQs = [
   {
     question: 'Should I file one insurance claim for both roof and siding damage?',
-    answer: 'Yes, typically you should file a single comprehensive claim covering all storm damage. This ensures your deductible only applies once, and the adjuster can assess everything together. We document all roof and siding damage in one thorough inspection report, making the claims process smoother.',
+  answer: 'Yes, typically you should file a single comprehensive claim covering all storm damage. This ensures your deductible only applies once, and the adjuster can assess everything together. We document all roof and siding damage in one thorough inspection report, making the claims process smoother.',
   },
   {
     question: 'How do I know if my roof and siding have storm damage?',
-    answer: 'Roof damage signs: missing/damaged shingles, granules in gutters, dents in metal components, exposed underlayment. Siding damage signs: cracks, holes, dents (hail), loose or missing panels, water stains. Much storm damage isn\'t visible from the ground—our free inspection documents damage you might miss.',
+  answer: 'Roof damage signs: missing/damaged shingles, granules in gutters, dents in metal components, exposed underlayment. Siding damage signs: cracks, holes, dents (hail), loose or missing panels, water stains. Much storm damage isn\'t visible from the ground—our free inspection documents damage you might miss.',
   },
   {
     question: 'Will my insurance cover both roof and siding damage from a storm?',
-    answer: 'Most homeowner policies cover storm damage to both roof and siding from the same weather event. We help you maximize your claim by documenting all damage thoroughly. Our experience with Charlotte insurance adjusters ensures nothing gets overlooked.',
+  answer: 'Most homeowner policies cover storm damage to both roof and siding from the same weather event. We help you maximize your claim by documenting all damage thoroughly. Our experience with Charlotte insurance adjusters ensures nothing gets overlooked.',
   },
   {
     question: 'How long do I have to file a storm damage claim in Charlotte?',
-    answer: 'Most insurance policies allow 1-2 years to file, but we strongly recommend filing within 30 days of the storm. Quick action prevents further damage and strengthens your claim with fresh evidence. Charlotte sees multiple severe storms yearly—document damage promptly.',
+  answer: 'Most insurance policies allow 1-2 years to file, but we strongly recommend filing within 30 days of the storm. Quick action prevents further damage and strengthens your claim with fresh evidence. Charlotte sees multiple severe storms yearly—document damage promptly.',
   },
   {
     question: 'Do you meet with insurance adjusters for roof and siding claims?',
-    answer: 'Absolutely! Meeting with adjusters is a key part of our storm damage service. We walk them through all documented damage on both roof and siding, ensure nothing is missed, and advocate for fair assessment. This often results in better settlements for Charlotte homeowners.',
+  answer: 'Absolutely! Meeting with adjusters is a key part of our storm damage service. We walk them through all documented damage on both roof and siding, ensure nothing is missed, and advocate for fair assessment. This often results in better settlements for Charlotte homeowners.',
   },
   {
     question: 'What if my insurance only approves roof repair but not siding?',
-    answer: 'We help you appeal partial approvals with additional documentation. Sometimes damage isn\'t initially apparent, or certain siding types show damage differently than adjusters expect. Our detailed photos and reports often help overturn these partial denials.',
+  answer: 'We help you appeal partial approvals with additional documentation. Sometimes damage isn\'t initially apparent, or certain siding types show damage differently than adjusters expect. Our detailed photos and reports often help overturn these partial denials.',
   },
   {
     question: 'How much does storm damage repair for roof and siding cost?',
-    answer: 'Costs vary widely based on damage extent. Minor repairs might run $1,000-$5,000, while full replacement of both can reach $30,000-$50,000+ for larger homes. For storm damage, you typically only pay your deductible—insurance covers the rest. We provide free damage assessments.',
+  answer: 'Costs vary widely based on damage extent. Minor repairs might run $1,000-$5,000, while full replacement of both can reach $30,000-$50,000+ for larger homes. For storm damage, you typically only pay your deductible—insurance covers the rest. We provide free damage assessments.',
   },
   {
     question: 'Can you match my existing siding color after storm damage?',
-    answer: 'We work hard to match existing siding colors. For partial siding damage, we source matching materials from major manufacturers. If exact matches aren\'t available (discontinued colors), insurance typically covers replacement of entire affected sections for a uniform appearance.',
+  answer: 'We work hard to match existing siding colors. For partial siding damage, we source matching materials from major manufacturers. If exact matches aren\'t available (discontinued colors), insurance typically covers replacement of entire affected sections for a uniform appearance.',
   },
 ];
 
 const stormServices = [
   {
     icon: CloudRain,
-    title: 'Emergency Tarping',
-    description: 'Immediate protection to prevent further damage. Available 24/7 for active storm events.',
+  title: 'Emergency Tarping',
+  description: 'Immediate protection to prevent further damage. Available 24/7 for active storm events.',
   },
   {
     icon: FileText,
-    title: 'Damage Documentation',
-    description: 'Thorough photo documentation and detailed reports ready for your insurance claim.',
+  title: 'Damage Documentation',
+  description: 'Thorough photo documentation and detailed reports ready for your insurance claim.',
   },
   {
     icon: Shield,
-    title: 'Insurance Advocacy',
-    description: 'We meet with adjusters, file supplements, and fight for fair claim settlements.',
+  title: 'Insurance Advocacy',
+  description: 'We meet with adjusters, file supplements, and fight for fair claim settlements.',
   },
   {
     icon: Clock,
-    title: 'Complete Restoration',
-    description: 'Professional roof and siding restoration to pre-storm condition or better.',
+  title: 'Complete Restoration',
+  description: 'Professional roof and siding restoration to pre-storm condition or better.',
   },
 ];
 
@@ -109,11 +109,11 @@ export default function StormDamageRoofSidingPage() {
   // Create a combined service object for schema
   const combinedService = {
     slug: 'storm-damage-roof-siding',
-    title: 'Storm Damage Roof & Siding Repair',
-    shortTitle: 'Storm Damage',
-    description: 'Complete storm damage restoration for roof and siding in Charlotte NC. Expert insurance claim assistance included.',
-    keywords: ['storm damage roof siding', 'hail damage Charlotte NC'],
-    icon: 'CloudRain',
+  title: 'Storm Damage Roof & Siding Repair',
+  shortTitle: 'Storm Damage',
+  description: 'Complete storm damage restoration for roof and siding in Charlotte NC. Expert insurance claim assistance included.',
+  keywords: ['storm damage roof siding', 'hail damage Charlotte NC'],
+  icon: 'CloudRain',
   };
 
   return (

@@ -18,7 +18,7 @@ import {
   DollarSign,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Metal Roofing Cornelius NC | Lake Norman Waterfront Specialists',
-    description:
+  description:
       'Premium metal roofing for Cornelius NC and Lake Norman waterfront homes. Standing seam rated 140+ MPH. 40-70 year lifespan with minimal maintenance. Free estimates.',
-    url: `${SITE_CONFIG.url}/metal-roofing-cornelius-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/metal-roofing-cornelius-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.houses.modern1,
-        width: 1200,
-        height: 630,
-        alt: 'Metal roofing Cornelius NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Metal roofing Cornelius NC - Best Roofing Now',
       },
     ],
   },
@@ -68,33 +68,33 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: Clock,
-    title: '40-70 Year Lifespan',
-    description: 'Metal roofs last 2-3x longer than asphalt shingles with minimal maintenance required.',
+  title: '40-70 Year Lifespan',
+  description: 'Metal roofs last 2-3x longer than asphalt shingles with minimal maintenance required.',
   },
   {
     icon: Wind,
-    title: '140+ MPH Wind Rating',
-    description: 'Standing seam metal is ideal for Lake Norman waterfront homes exposed to high winds.',
+  title: '140+ MPH Wind Rating',
+  description: 'Standing seam metal is ideal for Lake Norman waterfront homes exposed to high winds.',
   },
   {
     icon: Zap,
-    title: 'Energy Efficient',
-    description: 'Reflects solar heat reducing cooling costs 10-25% in Cornelius summers.',
+  title: 'Energy Efficient',
+  description: 'Reflects solar heat reducing cooling costs 10-25% in Cornelius summers.',
   },
   {
     icon: Shield,
-    title: 'Impact Resistant',
-    description: 'Class 4 hail rating protects against Lake Norman\'s severe storm events.',
+  title: 'Impact Resistant',
+  description: 'Class 4 hail rating protects against Lake Norman\'s severe storm events.',
   },
   {
     icon: Leaf,
-    title: '100% Recyclable',
-    description: 'Environmentally friendly with most metal roofs containing 25-95% recycled content.',
+  title: '100% Recyclable',
+  description: 'Environmentally friendly with most metal roofs containing 25-95% recycled content.',
   },
   {
     icon: DollarSign,
-    title: 'Insurance Savings',
-    description: 'Many insurers offer premium discounts for metal roofing\'s durability.',
+  title: 'Insurance Savings',
+  description: 'Many insurers offer premium discounts for metal roofing\'s durability.',
   },
 ];
 
@@ -102,27 +102,27 @@ const benefits = [
 const metalOptions = [
   {
     title: 'Standing Seam',
-    description: 'Premium concealed fastener system with clean, modern lines. Most popular for Lake Norman homes.',
-    lifespan: '40-70 years',
-    windRating: '140+ MPH',
+  description: 'Premium concealed fastener system with clean, modern lines. Most popular for Lake Norman homes.',
+  lifespan: '40-70 years',
+  windRating: '140+ MPH',
   },
   {
     title: 'Metal Shingles',
-    description: 'Metal panels designed to look like traditional shingles, slate, or cedar shake.',
-    lifespan: '40-60 years',
-    windRating: '110+ MPH',
+  description: 'Metal panels designed to look like traditional shingles, slate, or cedar shake.',
+  lifespan: '40-60 years',
+  windRating: '110+ MPH',
   },
   {
     title: 'Corrugated Metal',
-    description: 'Classic ribbed profile, popular for modern architectural and farmhouse styles.',
-    lifespan: '40-50 years',
-    windRating: '120+ MPH',
+  description: 'Classic ribbed profile, popular for modern architectural and farmhouse styles.',
+  lifespan: '40-50 years',
+  windRating: '120+ MPH',
   },
   {
     title: 'Copper Roofing',
-    description: 'Premium copper panels and accents with stunning natural patina development.',
-    lifespan: '100+ years',
-    windRating: '140+ MPH',
+  description: 'Premium copper panels and accents with stunning natural patina development.',
+  lifespan: '100+ years',
+  windRating: '140+ MPH',
   },
 ];
 
@@ -130,32 +130,32 @@ const metalOptions = [
 const faqs = [
   {
     question: 'How much does metal roofing cost in Cornelius NC?',
-    answer:
+  answer:
       'Metal roofing in Cornelius typically costs $15-30 per square foot installed for standing seam, depending on panel style, gauge, and coating. For a typical Cornelius home, expect $25,000-$50,000. Lake Norman waterfront homes with premium options like copper accents often range $40,000-$80,000+. While more expensive upfront than shingles, metal\'s 40-70 year lifespan makes it cost-effective long-term.',
   },
   {
     question: 'Is metal roofing good for Lake Norman waterfront homes?',
-    answer:
+  answer:
       'Metal roofing is excellent for Lake Norman waterfront properties. Standing seam metal is rated for 140+ MPH winds - ideal for exposed lakefront locations. It resists moisture, won\'t rot or grow mold, and handles temperature swings well. Many Peninsula and Jetton Road homeowners choose metal specifically for its waterfront performance.',
   },
   {
     question: 'How long does a metal roof last in Cornelius?',
-    answer:
+  answer:
       'Metal roofs in Cornelius typically last 40-70 years, with copper lasting 100+ years. This is 2-3x longer than asphalt shingles. Most metal roofs in our area still look great and perform well after 50+ years. The key is proper installation and quality materials - both of which we guarantee.',
   },
   {
     question: 'Will a metal roof be noisy in rain?',
-    answer:
+  answer:
       'Modern metal roofs installed over solid decking with proper underlayment are no louder than shingle roofs during rain. The combination of decking, underlayment, and insulation absorbs sound effectively. Most Cornelius homeowners are surprised how quiet their metal roof is.',
   },
   {
     question: 'Do metal roofs attract lightning?',
-    answer:
+  answer:
       'No, metal roofs do not attract lightning. Metal is no more likely to be struck than other roofing materials. In fact, if lightning does strike, metal roofs are actually safer because they\'re non-combustible and disperse the energy safely. Metal roofing is a great choice for Lake Norman\'s thunderstorm-prone climate.',
   },
   {
     question: 'What colors are available for metal roofing in Cornelius?',
-    answer:
+  answer:
       'We offer metal roofing in 20+ colors to match Cornelius neighborhood aesthetics. Popular choices include charcoal gray, bronze, dark brown, and forest green. Kynar/PVDF coatings ensure color retention for 30+ years. We help you select colors that complement your home and meet HOA requirements.',
   },
 ];
@@ -171,7 +171,6 @@ export default function MetalRoofingCorneliusNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/metal-roofing-cornelius-nc`}
         pageName="Metal Roofing Cornelius NC"

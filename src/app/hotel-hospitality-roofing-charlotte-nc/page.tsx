@@ -29,7 +29,6 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
   FAQSchema,
-  LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
@@ -58,16 +57,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Hotel & Hospitality Roofing Charlotte NC | Hotels, Resorts & Convention Centers | Best Roofing Now',
-    description:
+  description:
       'Expert hotel and hospitality roofing contractors in Charlotte NC. Minimal guest disruption, fast turnaround. Licensed & insured with free estimates.',
-    url: `${SITE_CONFIG.url}/hotel-hospitality-roofing-charlotte-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/hotel-hospitality-roofing-charlotte-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.commercial.hospitality,
-        width: 1200,
-        height: 630,
-        alt: 'Hotel and hospitality roofing Charlotte NC - Best Roofing Now hotel roofing project',
+  width: 1200,
+  height: 630,
+  alt: 'Hotel and hospitality roofing Charlotte NC - Best Roofing Now hotel roofing project',
       },
     ],
   },
@@ -77,39 +76,39 @@ export const metadata: Metadata = {
 const hospitalityRoofingSystems = [
   {
     icon: Building2,
-    title: 'TPO Roofing Systems',
-    description: 'Energy-efficient single-ply membrane ideal for large hotel roofs. The reflective white surface reduces cooling costs, keeping guest rooms comfortable during Charlotte summers.',
-    href: '/services/commercial-roofing',
+  title: 'TPO Roofing Systems',
+  description: 'Energy-efficient single-ply membrane ideal for large hotel roofs. The reflective white surface reduces cooling costs, keeping guest rooms comfortable during Charlotte summers.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
-    title: 'PVC Roofing Systems',
-    description: 'Superior chemical resistance perfect for hotels with rooftop restaurants, pools, and grease-producing kitchen exhaust. Excellent fire rating and long lifespan.',
-    href: '/services/commercial-roofing',
+  title: 'PVC Roofing Systems',
+  description: 'Superior chemical resistance perfect for hotels with rooftop restaurants, pools, and grease-producing kitchen exhaust. Excellent fire rating and long lifespan.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
-    title: 'Metal Roofing Systems',
-    description: 'Standing seam metal roofing adds curb appeal to boutique hotels and resorts. Available in designer colors to match brand aesthetics and architectural style.',
-    href: '/services/metal-roofing',
+  title: 'Metal Roofing Systems',
+  description: 'Standing seam metal roofing adds curb appeal to boutique hotels and resorts. Available in designer colors to match brand aesthetics and architectural style.',
+  href: '/services/metal-roofing',
   },
   {
     icon: Layers,
-    title: 'Modified Bitumen Roofing',
-    description: 'Multi-layer roofing offering excellent waterproofing for multi-story hotels. Ideal for roofs with heavy foot traffic from HVAC maintenance access.',
-    href: '/services/commercial-roofing',
+  title: 'Modified Bitumen Roofing',
+  description: 'Multi-layer roofing offering excellent waterproofing for multi-story hotels. Ideal for roofs with heavy foot traffic from HVAC maintenance access.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Thermometer,
-    title: 'Built-Up Roofing (BUR)',
-    description: 'Time-tested roofing system providing superior protection for convention centers and large hospitality complexes with expansive flat roof areas.',
-    href: '/services/commercial-roofing',
+  title: 'Built-Up Roofing (BUR)',
+  description: 'Time-tested roofing system providing superior protection for convention centers and large hospitality complexes with expansive flat roof areas.',
+  href: '/services/commercial-roofing',
   },
   {
     icon: Clock,
-    title: 'Roof Coatings & Restoration',
-    description: 'Extend the life of your existing hotel roof by 10-15 years with reflective coatings. Minimal disruption to guests during application.',
-    href: '/services/commercial-roofing',
+  title: 'Roof Coatings & Restoration',
+  description: 'Extend the life of your existing hotel roof by 10-15 years with reflective coatings. Minimal disruption to guests during application.',
+  href: '/services/commercial-roofing',
   },
 ];
 
@@ -117,33 +116,33 @@ const hospitalityRoofingSystems = [
 const hospitalityBuildingTypes = [
   {
     icon: Building2,
-    title: 'Full-Service Hotels',
-    description: 'Comprehensive roofing for large branded hotels like Marriott, Hilton, and Hyatt properties across the Charlotte metro area.',
+  title: 'Full-Service Hotels',
+  description: 'Comprehensive roofing for large branded hotels like Marriott, Hilton, and Hyatt properties across the Charlotte metro area.',
   },
   {
     icon: BedDouble,
-    title: 'Limited-Service & Budget Hotels',
-    description: 'Cost-effective roofing solutions for select-service and economy hotels along Charlotte corridors and near CLT Airport.',
+  title: 'Limited-Service & Budget Hotels',
+  description: 'Cost-effective roofing solutions for select-service and economy hotels along Charlotte corridors and near CLT Airport.',
   },
   {
     icon: Clock,
-    title: 'Extended Stay Properties',
-    description: 'Roofing for extended-stay hotels that require minimal disruption to long-term guests who are essentially living on-site.',
+  title: 'Extended Stay Properties',
+  description: 'Roofing for extended-stay hotels that require minimal disruption to long-term guests who are essentially living on-site.',
   },
   {
     icon: Users,
-    title: 'Convention Centers & Event Venues',
-    description: 'Large-scale roofing for convention facilities and event spaces, including coordination around scheduled events and conferences.',
+  title: 'Convention Centers & Event Venues',
+  description: 'Large-scale roofing for convention facilities and event spaces, including coordination around scheduled events and conferences.',
   },
   {
     icon: Star,
-    title: 'Resorts & Spas',
-    description: 'Premium roofing solutions for upscale resorts and spa facilities where aesthetics and guest experience are paramount.',
+  title: 'Resorts & Spas',
+  description: 'Premium roofing solutions for upscale resorts and spa facilities where aesthetics and guest experience are paramount.',
   },
   {
     icon: UtensilsCrossed,
-    title: 'Bed & Breakfasts / Boutique Hotels',
-    description: 'Specialized roofing for historic and boutique properties that require careful preservation of architectural character and charm.',
+  title: 'Bed & Breakfasts / Boutique Hotels',
+  description: 'Specialized roofing for historic and boutique properties that require careful preservation of architectural character and charm.',
   },
 ];
 
@@ -151,33 +150,33 @@ const hospitalityBuildingTypes = [
 const whyChooseUs = [
   {
     icon: Users,
-    title: 'Guest Disruption Management',
-    description: 'We coordinate work schedules to minimize noise, debris, and visual impact. Night and early morning crews available for occupied properties.',
+  title: 'Guest Disruption Management',
+  description: 'We coordinate work schedules to minimize noise, debris, and visual impact. Night and early morning crews available for occupied properties.',
   },
   {
     icon: Clock,
-    title: 'Speed of Completion',
-    description: 'Fast turnaround times critical in hospitality. We work in phases so you never have to close sections of your hotel during roofing work.',
+  title: 'Speed of Completion',
+  description: 'Fast turnaround times critical in hospitality. We work in phases so you never have to close sections of your hotel during roofing work.',
   },
   {
     icon: Shield,
-    title: 'Multi-Story Expertise',
-    description: 'Experienced with 3-story to 20+ story hotel buildings. Proper safety rigging, crane access, and material staging for high-rise projects.',
+  title: 'Multi-Story Expertise',
+  description: 'Experienced with 3-story to 20+ story hotel buildings. Proper safety rigging, crane access, and material staging for high-rise projects.',
   },
   {
     icon: Award,
-    title: 'Curb Appeal Focus',
-    description: 'We understand that your hotel roof is part of the guest first impression. Clean, professional installations that enhance property appearance.',
+  title: 'Curb Appeal Focus',
+  description: 'We understand that your hotel roof is part of the guest first impression. Clean, professional installations that enhance property appearance.',
   },
   {
     icon: DollarSign,
-    title: 'Brand Standard Compliance',
-    description: 'Familiar with franchise brand standards from Marriott, Hilton, IHG, Wyndham, and Choice Hotels. We meet or exceed PIP requirements.',
+  title: 'Brand Standard Compliance',
+  description: 'Familiar with franchise brand standards from Marriott, Hilton, IHG, Wyndham, and Choice Hotels. We meet or exceed PIP requirements.',
   },
   {
     icon: Ruler,
-    title: 'Dedicated Project Managers',
-    description: 'Single point of contact who coordinates with your hotel GM and engineering team. Detailed daily progress reports and clear timelines.',
+  title: 'Dedicated Project Managers',
+  description: 'Single point of contact who coordinates with your hotel GM and engineering team. Detailed daily progress reports and clear timelines.',
   },
 ];
 
@@ -213,42 +212,42 @@ const nearbyCities = [
 const faqs = [
   {
     question: 'How do you minimize disruption to hotel guests during roofing work?',
-    answer:
+  answer:
       'Guest comfort is our top priority on hospitality projects. We develop detailed disruption management plans with your hotel team before any work begins. This includes scheduling noisy work during low-occupancy periods, using sound-dampening equipment, maintaining clean staging areas hidden from guest view, and coordinating with housekeeping to manage dust and debris. We can also work nights and early mornings when guest areas are least impacted. Many of our hotel clients report that guests were completely unaware roofing work was happening overhead.',
   },
   {
     question: 'What is the best time of year to replace a hotel roof in Charlotte?',
-    answer:
+  answer:
       'Charlotte hotels typically see lower occupancy in January through March, making winter the ideal time for major roofing work. However, convention center hotels near Uptown may have different patterns. We work with your revenue management team to identify low-occupancy windows. For properties near Charlotte Motor Speedway or Carowinds, we avoid major event weekends. Spring and fall offer the best weather for installation, but we can work year-round in Charlotte&apos;s relatively mild climate.',
   },
   {
     question: 'How much does hotel roof replacement cost in Charlotte NC?',
-    answer:
+  answer:
       'Hotel roof replacement in Charlotte typically ranges from $5 to $12 per square foot for membrane systems (TPO, PVC) and $10 to $18 per square foot for premium metal roofing. A 50,000 sq ft hotel roof might cost $250,000-$600,000 depending on the system, number of stories, HVAC penetrations, and access complexity. We provide detailed estimates broken down by phase so you can budget accordingly, and we offer financing options for larger projects.',
   },
   {
     question: 'Can you work around our pool deck and outdoor amenity areas?',
-    answer:
+  answer:
       'Absolutely. We frequently work on hotels with rooftop pools, outdoor dining areas, and amenity decks. We install temporary protection barriers to keep debris away from pool areas and coordinate with your facilities team on pool closure schedules if needed. For rooftop restaurants, we phase the work to keep dining areas operational. We carry additional liability coverage specifically for work near guest amenity areas.',
   },
   {
     question: 'How do you handle the large HVAC systems on hotel roofs?',
-    answer:
+  answer:
       'Hotel roofs typically have extensive HVAC equipment including RTUs, cooling towers, and exhaust fans. Our crews are experienced in working around this equipment and coordinating with HVAC contractors when units need to be temporarily relocated or raised during re-roofing. We ensure proper flashing and curb details around all penetrations to prevent leaks. We can also coordinate HVAC replacement or upgrades during the roofing project for cost savings.',
   },
   {
     question: 'Do you meet franchise brand PIP (Property Improvement Plan) requirements?',
-    answer:
+  answer:
       'Yes, we are familiar with PIP requirements from major hotel brands including Marriott, Hilton, IHG, Wyndham, Choice Hotels, and Best Western. We can provide documentation, warranties, and finish specifications that meet or exceed brand standards. Our project managers can coordinate directly with brand inspectors during and after the project to ensure full compliance.',
   },
   {
     question: 'What roofing system is best for hotels with rooftop amenities?',
-    answer:
+  answer:
       'For hotels with rooftop pools, bars, or event spaces, we typically recommend PVC membrane as the base waterproofing layer due to its superior chemical resistance and weldable seams. Over-decking options include pavers, synthetic turf, or composite decking systems. For visible roof areas, standing seam metal provides an attractive, durable solution. We design systems that accommodate heavy foot traffic, furniture loads, and drainage requirements unique to amenity spaces.',
   },
   {
     question: 'Do you offer emergency roof repair for hotels?',
-    answer:
+  answer:
       'Yes, we provide 24/7 emergency roof repair services for hospitality properties. A hotel leak impacts guest experience immediately, so we treat every hotel leak as urgent. Our emergency team can typically respond within 2-4 hours in the Charlotte area to provide temporary weatherproofing and prevent further interior damage. We carry tarps, sealants, and temporary repair materials on our trucks at all times.',
   },
 ];
@@ -263,7 +262,6 @@ export default function HotelHospitalityRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/hotel-hospitality-roofing-charlotte-nc`}
         pageName="Hotel & Hospitality Roofing Charlotte NC"

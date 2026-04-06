@@ -18,7 +18,7 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Roof Replacement Denver NC | Lake Norman Western Shore Specialists',
-    description:
+  description:
       'Premium roof replacement for Denver NC and Lake Norman western shore homes. GAF & CertainTeed certified. Financing available. Free estimates from veteran-owned contractor.',
-    url: `${SITE_CONFIG.url}/roof-replacement-denver-nc`,
-    type: 'website',
-    images: [
+  url: `${SITE_CONFIG.url}/roof-replacement-denver-nc`,
+  type: 'website',
+  images: [
       {
         url: IMAGES.hero.hero1,
-        width: 1200,
-        height: 630,
-        alt: 'Roof replacement Denver NC - Best Roofing Now',
+  width: 1200,
+  height: 630,
+  alt: 'Roof replacement Denver NC - Best Roofing Now',
       },
     ],
   },
@@ -68,27 +68,27 @@ export const metadata: Metadata = {
 const roofingOptions = [
   {
     title: 'Architectural Shingles',
-    description: 'Premium dimensional shingles with 30-50 year warranties. GAF Timberline and CertainTeed Landmark series, ideal for most Denver homes.',
-    priceRange: '$12-18/sq ft',
-    bestFor: 'Most Denver homes',
+  description: 'Premium dimensional shingles with 30-50 year warranties. GAF Timberline and CertainTeed Landmark series, ideal for most Denver homes.',
+  priceRange: '$12-18/sq ft',
+  bestFor: 'Most Denver homes',
   },
   {
     title: 'Premium Designer Shingles',
-    description: 'Luxury appearance mimicking slate or cedar shake. GAF Grand Canyon and CertainTeed Grand Manor for upscale lakefront properties.',
-    priceRange: '$18-25/sq ft',
-    bestFor: 'Sailview & Pinnacle Shores',
+  description: 'Luxury appearance mimicking slate or cedar shake. GAF Grand Canyon and CertainTeed Grand Manor for upscale lakefront properties.',
+  priceRange: '$18-25/sq ft',
+  bestFor: 'Sailview & Pinnacle Shores',
   },
   {
     title: 'Standing Seam Metal',
-    description: 'Premium metal roofing rated 140+ MPH wind resistance. 40-70 year lifespan, engineered for western shore wind exposure.',
-    priceRange: '$15-25/sq ft',
-    bestFor: 'Lakefront & high-wind areas',
+  description: 'Premium metal roofing rated 140+ MPH wind resistance. 40-70 year lifespan, engineered for western shore wind exposure.',
+  priceRange: '$15-25/sq ft',
+  bestFor: 'Lakefront & high-wind areas',
   },
   {
     title: 'Impact-Resistant Shingles',
-    description: 'Class 4 hail-rated shingles designed for storm-prone areas. May qualify for insurance premium discounts in Lincoln County.',
-    priceRange: '$14-20/sq ft',
-    bestFor: 'Storm-prone western shore',
+  description: 'Class 4 hail-rated shingles designed for storm-prone areas. May qualify for insurance premium discounts in Lincoln County.',
+  priceRange: '$14-20/sq ft',
+  bestFor: 'Storm-prone western shore',
   },
 ];
 
@@ -96,23 +96,23 @@ const roofingOptions = [
 const whyChooseUs = [
   {
     icon: Waves,
-    title: 'Western Shore Specialists',
-    description: 'Deep experience with Lake Norman western shore properties including Trilogy, Sailview, and Westport.',
+  title: 'Western Shore Specialists',
+  description: 'Deep experience with Lake Norman western shore properties including Trilogy, Sailview, and Westport.',
   },
   {
     icon: Award,
-    title: 'GAF & CertainTeed Certified',
-    description: 'Factory-certified contractor with access to extended warranties up to 50 years on materials.',
+  title: 'GAF & CertainTeed Certified',
+  description: 'Factory-certified contractor with access to extended warranties up to 50 years on materials.',
   },
   {
     icon: DollarSign,
-    title: 'Financing Available',
-    description: 'Flexible financing options with payments as low as $150/month for qualified Denver homeowners.',
+  title: 'Financing Available',
+  description: 'Flexible financing options with payments as low as $150/month for qualified Denver homeowners.',
   },
   {
     icon: FileCheck,
-    title: 'Lincoln County Permit Experts',
-    description: 'We handle all Lincoln County permits and inspections - different requirements than Mecklenburg County.',
+  title: 'Lincoln County Permit Experts',
+  description: 'We handle all Lincoln County permits and inspections - different requirements than Mecklenburg County.',
   },
 ];
 
@@ -120,42 +120,42 @@ const whyChooseUs = [
 const faqs = [
   {
     question: 'How much does roof replacement cost in Denver NC?',
-    answer:
+  answer:
       'Roof replacement in Denver typically ranges from $12,000-$30,000 for most homes with architectural shingles. Lakefront properties in Sailview or Pinnacle Shores with premium materials like standing seam metal or designer shingles may range $30,000-$60,000+. Impact-resistant options are popular on the western shore and typically cost $14-20 per square foot. We provide free detailed estimates for every Denver home.',
   },
   {
     question: 'Does Denver NC require building permits for roof replacement?',
-    answer:
+  answer:
       'Yes. Denver is located in Lincoln County, which has separate building permit requirements from Mecklenburg County. A roofing permit is required for full replacements and must be obtained through Lincoln County Building Inspections. Our team handles the entire permitting process, including applications and scheduling final inspections, so you do not have to worry about the paperwork.',
   },
   {
     question: 'What roofing materials are best for Lake Norman western shore homes?',
-    answer:
+  answer:
       'For Denver and the western shore, we recommend wind-rated materials that can handle the open water fetch across Lake Norman. Impact-resistant Class 4 shingles rated for 130+ MPH winds are excellent for storm protection and often qualify for insurance discounts. Standing seam metal is ideal for direct lakefront homes in Sailview and Pinnacle Shores. For Trilogy at Lake Norman, architectural shingles that meet HOA requirements are the most popular choice.',
   },
   {
     question: 'How long does roof replacement take in Denver NC?',
-    answer:
+  answer:
       'Most Denver roof replacements are completed in 1-3 days depending on size and complexity. Larger lakefront homes with steep pitches or complex rooflines may take 3-5 days. We work efficiently while maintaining quality, secure your home each evening, and coordinate with Lincoln County inspectors for final approval. Weather can affect timing, especially during Lake Norman\'s spring and summer storm seasons.',
   },
   {
     question: 'Do you work with Trilogy at Lake Norman HOA requirements?',
-    answer:
+  answer:
       'Absolutely. We have extensive experience working within Trilogy at Lake Norman, the 55+ active adult community in Denver. We understand their architectural review guidelines, approved material selections, and color palettes. We provide all documentation needed for HOA approval, coordinate scheduling to minimize disruption to the community, and ensure every installation meets Trilogy\'s aesthetic standards.',
   },
   {
     question: 'Do you offer financing for roof replacement in Denver?',
-    answer:
+  answer:
       'Yes, we offer flexible financing options for Denver homeowners. Qualified buyers can access same-as-cash financing or low monthly payments starting around $150/month. We also work directly with insurance companies for storm damage claims, which may cover full replacement costs. Many Denver homes on the western shore qualify for insurance-funded replacements after major storms.',
   },
   {
     question: 'Why is wind rating important for Denver NC roofs?',
-    answer:
+  answer:
       'Denver sits on Lake Norman\'s western shore, where prevailing weather systems approach directly from the west before crossing the open water. The unobstructed fetch across the lake amplifies wind speeds, especially during thunderstorms and nor\'easters. We recommend shingles rated for at least 110 MPH and install them with enhanced nailing patterns. Standing seam metal rated for 140+ MPH is the premium choice for the most exposed lakefront properties.',
   },
   {
     question: 'What warranties do you offer on Denver NC roof replacements?',
-    answer:
+  answer:
       'We provide comprehensive warranties: our own 10-year workmanship warranty plus manufacturer warranties up to 50 years on materials. As a GAF Factory-Certified and CertainTeed ShingleMaster contractor, we can offer extended warranty programs that cover both materials and labor. All warranties are registered with the manufacturer and transferable if you sell your Denver home.',
   },
 ];
@@ -171,7 +171,6 @@ export default function RoofReplacementDenverNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
-      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-denver-nc`}
         pageName="Roof Replacement Denver NC"
@@ -392,7 +391,7 @@ export default function RoofReplacementDenverNCPage() {
                 <p className="text-gray text-sm">
                   Trilogy at Lake Norman is Denver&apos;s premier 55+ active adult community with specific
                   architectural guidelines for roofing. We work within Trilogy&apos;s approved materials list,
-                  coordinate with community management for access and scheduling, and ensure every replacement
+  coordinate with community management for access and scheduling, and ensure every replacement
                   meets the community&apos;s high aesthetic standards while maximizing protection.
                 </p>
               </div>
