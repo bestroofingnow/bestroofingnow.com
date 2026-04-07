@@ -36,7 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Estate Roofing Charlotte NC | Large Homes',
   description:
-    'Estate roofing specialists in Charlotte NC for homes 5,000+ sq ft. Complex roof systems, premium materials, and multi-phase project management for large homes and mansions. Free consultation.',
+    'Estate roofing specialists in Charlotte NC for homes 5,000+ sq ft. Complex roof systems and premium materials for large homes. BBB A+ rated. Free consultation.',
   keywords: [
     'estate roofing charlotte',
     'large home roofing charlotte nc',

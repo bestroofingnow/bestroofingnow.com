@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -25,7 +25,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Matthews NC',
   description:
-    'Need new gutters in Matthews NC? Best Roofing Now installs seamless aluminum and copper gutters with gutter guards. Protect your home from water damage. Free estimates!',
+    'Seamless gutter installation in Matthews NC. Aluminum, copper, and gutter guards. BBB A+ rated, veteran-owned. Free estimates. Call (704) 605-6047.',
   keywords: [
     'gutter installation matthews nc',
     'seamless gutters matthews nc',
@@ -80,6 +80,7 @@ export default function GutterInstallationMatthewsNCPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Gutter Installation', url: `${SITE_CONFIG.url}/services/gutter-installation` }, { name: 'Matthews NC', url: `${SITE_CONFIG.url}/gutter-installation-matthews-nc` }]} />
       <FAQSchema faqs={faqs} />
+      <LocalBusinessSchema includeRating={true} />
       <ServiceAreaPageSchema city="Matthews" state="NC" slug="gutter-installation-matthews-nc" distance={12} />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/gutter-installation-matthews-nc`} pageName="Gutter Installation Matthews NC" city="Matthews" />
       <VoiceSearchActionSchema />

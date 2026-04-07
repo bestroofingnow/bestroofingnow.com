@@ -36,7 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Rea Farms Charlotte NC',
   description:
-    'Expert roofing contractor serving Rea Farms in South Charlotte NC. Roof replacement, repair, and storm damage for newer luxury homes built 2000s-2010s. BBB A+ rated, veteran-owned. Free estimates.',
+    'Roofing contractor in Rea Farms, South Charlotte NC. Roof replacement, repair, and storm damage for luxury homes. BBB A+ rated. Free estimates.',
   keywords: [
     'roofing rea farms charlotte nc',
     'roofer rea farms charlotte',

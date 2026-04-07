@@ -32,9 +32,9 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Best Roofer Lake Norman NC | #1 Rated LKN',
+  title: 'Best Roofer Lake Norman NC',
   description:
-    `Best roofer in Lake Norman NC. ${SITE_CONFIG.googleRating}-star rated, ${SITE_CONFIG.roofsInstalled}+ roofs installed, veteran-owned. GAF & CertainTeed certified. Serving Cornelius, Davidson, Mooresville & all LKN. Call (704) 605-6047.`,
+    'Best roofer in Lake Norman NC. 5-star rated, 500+ roofs installed, veteran-owned. BBB A+, GAF & CertainTeed certified. Call (704) 605-6047.',
   keywords: [
     'best roofer lake norman',
     'best roofing company lake norman nc',

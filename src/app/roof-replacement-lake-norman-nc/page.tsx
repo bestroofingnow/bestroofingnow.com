@@ -20,7 +20,7 @@ import {
   Ruler,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -28,9 +28,9 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Lake Norman NC | Free Estimates | Best Roofing Now',
+  title: 'Roof Replacement Lake Norman NC',
   description:
-    'Professional roof replacement across the Lake Norman NC area. GAF & CertainTeed certified. $10,000-$30,000 range with financing available. Mooresville, Cornelius, Davidson, Denver. Free estimates!',
+    'Professional roof replacement in Lake Norman NC. GAF & CertainTeed certified, financing available. Serving Mooresville, Cornelius, Davidson, Denver. Free estimates!',
   keywords: [
     'roof replacement lake norman',
     'new roof lake norman nc',
@@ -177,6 +177,7 @@ export default function RoofReplacementLakeNormanNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`}
         pageName="Roof Replacement Lake Norman NC"

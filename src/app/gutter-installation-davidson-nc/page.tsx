@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -25,7 +25,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Davidson NC',
   description:
-    'Need new gutters in Davidson NC? Best Roofing Now installs seamless aluminum and copper gutters with gutter guards. Protect your home from water damage. Free estimates!',
+    'Seamless gutter installation in Davidson NC. Aluminum, copper, and gutter guards. BBB A+ rated, veteran-owned. Free estimates. Call (704) 605-6047.',
   keywords: [
     'gutter installation davidson nc',
     'seamless gutters davidson nc',
@@ -78,6 +78,7 @@ export default function GutterInstallationDavidsonNCPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Gutter Installation', url: `${SITE_CONFIG.url}/services/gutter-installation` }, { name: 'Davidson NC', url: `${SITE_CONFIG.url}/gutter-installation-davidson-nc` }]} />
       <FAQSchema faqs={faqs} />
+      <LocalBusinessSchema includeRating={true} />
       <ServiceAreaPageSchema city="Davidson" state="NC" slug="gutter-installation-davidson-nc" distance={18} />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/gutter-installation-davidson-nc`} pageName="Gutter Installation Davidson NC" city="Davidson" />
       <VoiceSearchActionSchema />

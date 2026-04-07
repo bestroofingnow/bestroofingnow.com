@@ -36,7 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Historic Home Roofing Charlotte NC',
   description:
-    'Historic home roofing preservation in Charlotte NC. Period-appropriate materials, historic district compliance, Dilworth, Elizabeth, and Myers Park specialists. Synthetic slate and traditional roofing. Free consultation.',
+    'Historic home roofing in Charlotte NC. Period-appropriate materials and district compliance for Dilworth, Elizabeth, and Myers Park. BBB A+ rated. Free consultation.',
   keywords: [
     'historic home roofing charlotte nc',
     'historic district roofing charlotte nc',

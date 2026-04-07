@@ -36,7 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Waverly Charlotte NC',
   description:
-    'Trusted roofing contractor serving Waverly in South Charlotte NC. Roof replacement, repair, and storm damage for newer 2010s luxury homes. BBB A+ rated, veteran-owned. Free estimates.',
+    'Roofing contractor in Waverly, South Charlotte NC. Roof replacement, repair, and storm damage for luxury homes. BBB A+ rated. Free estimates.',
   keywords: [
     'roofing waverly charlotte nc',
     'roofer waverly charlotte',
