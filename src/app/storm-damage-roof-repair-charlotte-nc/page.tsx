@@ -38,15 +38,16 @@ import { EstimateButton } from '@/components/estimate';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Charlotte NC | 24/7 Insurance Help',
+  title: 'Storm Damage Roof Repair Charlotte NC',
   description:
-    'Charlotte storm damage roof repair with full insurance claim assistance. Hail damage, wind damage, fallen tree damage experts. We meet with adjusters and document damage. Free storm damage inspection.',
+    'Storm damage roof repair Charlotte NC -- 24/7 emergency response for hail, wind & hurricane damage. Insurance claim experts who meet adjusters on-site. 2026 storm season ready. Free inspection!',
   keywords: [
     'storm damage roof repair charlotte nc',
     'hail damage roof repair charlotte nc',
     'wind damage roof repair charlotte',
     'roof insurance claim charlotte nc',
     'storm damage roofing contractor charlotte',
+    'emergency roof repair charlotte nc',
     'hail damage shingles charlotte',
     'tree fell on roof charlotte nc',
     'roof damage insurance claim charlotte',

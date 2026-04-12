@@ -42,14 +42,17 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Metal Roofing Charlotte NC | Standing Seam & Metal Roof Installation',
+  title: 'Metal Roofing Charlotte NC | 40-70 Yr',
   description:
-    'Metal roof Charlotte NC -- standing seam, metal shingles, corrugated & stone-coated steel installed by BBB A+ certified contractors. Lasts 40-70 yrs, cuts cooling costs 25%, withstands 140 MPH winds. Get your free estimate today!',
+    'Metal roofing Charlotte NC experts -- 2026 pricing, 40-70 yr lifespan, 25% energy savings & 140 MPH wind resistance. Standing seam & metal shingle installs by BBB A+ veteran-owned contractors. Free estimate!',
   keywords: [
     'metal roofing charlotte nc',
-    'standing seam metal roof charlotte nc',
-    'metal roof cost charlotte nc',
+    'standing seam metal roof charlotte',
     'metal roof installation charlotte nc',
+    'metal roof cost charlotte nc',
+    'metal roofing contractors charlotte nc',
+    'metal vs shingles charlotte',
+    'standing seam metal roof charlotte nc',
     'metal roof contractors charlotte nc',
     'metal roofing lake norman nc',
     'metal roofing lake wylie sc',
@@ -64,9 +67,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/metal-roofing-charlotte-nc`,
   },
   openGraph: {
-    title: 'Metal Roofing Charlotte NC | Standing Seam & Metal Roof Installation',
+    title: 'Metal Roofing Charlotte NC | 40-70 Year Lifespan | Best Roofing Now',
   description:
-      'Premium metal roofing installation in Charlotte NC. Standing seam, metal shingles, and corrugated options. 40-70 year lifespan, energy savings up to 25%. Free estimates from BBB A+ rated contractor.',
+      'Metal roofing Charlotte NC -- standing seam, metal shingles & corrugated options. 40-70 yr lifespan, 25% energy savings, 140 MPH wind resistance. Free estimates from BBB A+ veteran-owned contractor.',
   url: `${SITE_CONFIG.url}/metal-roofing-charlotte-nc`,
   type: 'website',
   images: [

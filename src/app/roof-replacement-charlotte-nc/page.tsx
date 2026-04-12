@@ -41,13 +41,14 @@ import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Charlotte NC',
+  title: 'Roof Replacement Charlotte NC | 2026',
   description:
-    'Complete roof replacement services in Charlotte NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
+    'Roof replacement Charlotte NC -- 2026 pricing from $8K. Veteran-owned, BBB A+ rated, free estimates. GAF & Owens Corning certified installers. Financing available. 500+ roofs completed!',
   keywords: [
     'roof replacement charlotte nc',
-    'roof replacement cost charlotte nc',
     'new roof charlotte nc',
+    'reroof charlotte',
+    'roof replacement cost charlotte nc',
     'how much does a roof replacement cost charlotte nc',
     'roof replacement cost charlotte nc 2026',
     'full roof replacement charlotte nc',
@@ -300,6 +301,31 @@ const faqs = [
     question: 'Who does roof replacement near me in Charlotte NC?',
     answer:
       `Best Roofing Now handles roof replacements across the entire Charlotte metro area including Huntersville, Cornelius, Davidson, Mooresville, Matthews, Mint Hill, Concord, Gastonia, Fort Mill, Rock Hill, and 50+ more communities. With ${SITE_CONFIG.roofsInstalled}+ completed roofs, a perfect ${SITE_CONFIG.googleRating} Google rating, and certifications from CertainTeed, GAF, and Owens Corning, we deliver premium roof replacements with manufacturer-backed warranties up to 50 years. Call ${SITE_CONFIG.phone} for a free estimate.`,
+  },
+  {
+    question: 'How much does it cost to replace a roof on a 2,000 sq ft house in Charlotte?',
+    answer:
+      'Replacing a roof on a 2,000 sq ft Charlotte home typically costs $9,000-$16,000 for asphalt shingles. This breaks down to roughly $4,500-$6,000 for materials, $3,000-$5,000 for labor, and $500-$1,000 for permits, dumpster, and cleanup. Premium materials like metal or tile increase the total to $15,000-$35,000.',
+  },
+  {
+    question: 'Can you put a new roof over old shingles?',
+    answer:
+      'NC building code allows a maximum of 2 shingle layers, so technically yes. However, most contractors recommend full tear-off because overlays hide underlying damage, add weight stress, void some manufacturer warranties, and typically last 20-25% shorter than a fresh installation. Best Roofing Now recommends tear-off for the best long-term value.',
+  },
+  {
+    question: 'Is it worth replacing my roof before selling my house?',
+    answer:
+      'A new roof can increase Charlotte home value by $12,000-$15,000, with a 61-65% ROI. Replace if visible damage hurts curb appeal, the roof threatens sale completion, or the lender requires it for FHA/VA loans. Alternatively, offer a buyer credit at closing if the roof is functional but aging.',
+  },
+  {
+    question: 'What is the best time of year to replace a roof in Charlotte NC?',
+    answer:
+      'Fall (September-November) is the ideal time for roof replacement in Charlotte. Moderate temperatures help shingle adhesion, and it\'s past hurricane season. Spring is the second-best option. Summer works but extreme heat affects shingle sealing. Winter installations are possible but not preferred due to cold temperatures and shorter daylight.',
+  },
+  {
+    question: 'How long does a new roof last in Charlotte NC?',
+    answer:
+      'In Charlotte\'s climate, asphalt shingles last 20-30 years, architectural shingles 25-35 years, metal roofs 40-70 years, tile roofs 50-75 years, and slate roofs 75-150 years. Charlotte\'s humidity, UV exposure, and severe storms can reduce these lifespans by 10-15% compared to drier climates. Regular maintenance extends roof life significantly.',
   },
 ];
 

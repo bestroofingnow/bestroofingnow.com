@@ -40,12 +40,15 @@ import { getGeoImages } from '@/lib/geo-images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Charlotte NC | #1 Rated | 500+ Roofs',
+  title: 'Roofing Charlotte NC | #1 Rated 2026',
   description:
-    'Looking for roofing in Charlotte NC? Best Roofing Now is #1 rated with 5.0 Google rating, BBB A+, veteran-owned. Residential & commercial roofing, roof repair, roof replacement, inspections. 500+ roofs completed. FREE estimates! (704) 605-6047.',
+    'Roofing Charlotte NC -- #1 rated roofing company with 5.0 Google rating, BBB A+, veteran-owned. 500+ roofs completed in 2026. Roof replacement, repair & storm damage. Free estimates! (704) 605-6047.',
   keywords: [
     'roofing charlotte nc',
     'roofing company charlotte nc',
+    'charlotte roofing',
+    'roofers charlotte nc',
+    'best roofing company charlotte nc',
     'roofing contractor charlotte nc',
     'roofer near me charlotte nc',
     'best roofer charlotte nc',
@@ -342,6 +345,16 @@ const faqs = [
     question: 'Can you help file a roof insurance claim in Charlotte NC?',
   answer:
       'Yes, Best Roofing Now provides full insurance claim assistance for Charlotte homeowners. Our process includes: (1) Free storm damage inspection with detailed photo documentation, (2) Written damage report for your insurance company, (3) Meeting with your insurance adjuster on-site, (4) Filing supplemental claims if the initial estimate is too low, (5) Coordinating repairs around the claims timeline. We have helped hundreds of Charlotte, Lake Norman, and Lake Wylie homeowners get their roofs replaced through insurance at minimal out-of-pocket cost. There is no upfront fee for our insurance claim assistance.',
+  },
+  {
+    question: 'What does a roof replacement include?',
+  answer:
+      'A complete roof replacement includes tear-off of old shingles, decking inspection and repair, installation of ice and water shield, synthetic underlayment, drip edge, flashing, new shingles or chosen material, ridge caps, pipe boots, and full cleanup with magnetic nail sweep. Best Roofing Now includes all materials and labor in our transparent quotes.',
+  },
+  {
+    question: 'How many roof estimates should I get?',
+  answer:
+      'Get 3-5 estimates from licensed, insured roofing contractors. Compare scope of work, materials specified, warranty length, payment terms, and timeline. The cheapest estimate isn\'t always the best value \u2014 look for detailed written proposals that specify materials by brand and model.',
   },
   {
     question: 'What is the cheapest way to replace a roof in Charlotte NC?',

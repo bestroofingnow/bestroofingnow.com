@@ -124,6 +124,15 @@ export async function GET() {
     { url: `${BASE_URL}/copper-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/designer-shingles-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/cedar-shake-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/synthetic-slate-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    // Solar roofing
+    { url: `${BASE_URL}/solar-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/solar-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    // Siding
+    { url: `${BASE_URL}/siding-installation-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    { url: `${BASE_URL}/siding-installation-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
+    // Veteran-owned
+    { url: `${BASE_URL}/veteran-owned-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
 
     // ============================================
     // BRAND-SPECIFIC PAGES
@@ -165,6 +174,17 @@ export async function GET() {
     // Scheduled blogs Feb 1
     { url: `${BASE_URL}/hurricane-roof-preparation-guide-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
     { url: `${BASE_URL}/church-roof-replacement-guide-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // AEO educational guides (Apr 2026)
+    { url: `${BASE_URL}/signs-you-need-new-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-maintenance-checklist-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // Buyer-intent FAQ pages (Apr 2026)
+    { url: `${BASE_URL}/how-many-roof-estimates-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-overlay-vs-tear-off-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/replace-roof-before-selling-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-permits-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    // Lake Norman specialty pages (Apr 2026)
+    { url: `${BASE_URL}/flat-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-guards-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // ============================================
     // INSURANCE & FINANCING PAGES
@@ -268,6 +288,8 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-denver-nc`, changefreq: 'weekly', priority: '0.9' },
 
     { url: `${BASE_URL}/roofing-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-troutman-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-terrell-nc`, changefreq: 'weekly', priority: '0.8' },
     // Lake Norman hub content (Apr 2026)
     { url: `${BASE_URL}/roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.9' },
@@ -352,6 +374,25 @@ export async function GET() {
     { url: `${BASE_URL}/gutter-installation-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roof-inspection-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/emergency-roof-repair-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Sherrills Ford
+    { url: `${BASE_URL}/roofers-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-repair-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/emergency-roof-repair-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-sherrills-ford-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Statesville
+    { url: `${BASE_URL}/roofers-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-repair-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/gutter-installation-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/emergency-roof-repair-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/commercial-roofing-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/storm-damage-roof-repair-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-inspection-statesville-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // Mt Holly
     { url: `${BASE_URL}/roofing-mt-holly-nc`, changefreq: 'weekly', priority: '0.9' },

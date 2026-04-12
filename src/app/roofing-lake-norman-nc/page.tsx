@@ -38,18 +38,21 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersville', 'Denver', 'Sherrills Ford'];
 
 export const metadata: Metadata = {
-  title: 'Lake Norman Roofing | #1 Rated LKN Roofers | Free Estimates',
+  title: 'Roofing Lake Norman NC | #1 LKN Roofer',
   description:
-    'Lake Norman\'s #1 rated roofing company serving Cornelius, Davidson, Mooresville & Huntersville. Roof replacement from $10K, storm damage experts, insurance claim help. Veteran-owned, BBB A+, 200+ LKN projects. FREE estimates! Call (704) 605-6047.',
+    'Roofing Lake Norman NC -- #1 rated roofer serving Cornelius, Davidson, Mooresville & Huntersville. 200+ LKN projects, veteran-owned, BBB A+. Storm damage & insurance experts. Free estimates 2026!',
   keywords: [
-    'lake norman roofing',
     'roofing lake norman nc',
+    'lake norman roofing',
+    'roofers lake norman',
+    'lake norman roofer',
+    'LKN roofing',
+    'lake norman roofing company',
     'roofers lake norman nc',
     'lake norman roofers',
     'lkn roofers',
     'lkn roofing',
     'roof repair lake norman nc',
-    'lake norman roofing company',
     'lake norman area roofing contractor',
     'storm damage roofing lake norman',
     'roofing company lake norman',
@@ -66,9 +69,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/roofing-lake-norman-nc`,
   },
   openGraph: {
-    title: 'Lake Norman Roofing | #1 Rated LKN Roofers | Best Roofing Now',
+    title: 'Roofing Lake Norman NC | #1 Rated LKN Roofer | Best Roofing Now',
   description:
-      'Lake Norman\'s #1 rated roofing company. Roof replacement, repair & storm damage for Cornelius, Davidson, Mooresville & Huntersville. 200+ LKN projects. Free estimates & insurance claim experts.',
+      'Roofing Lake Norman NC -- #1 rated roofer for Cornelius, Davidson, Mooresville & Huntersville. 200+ LKN projects completed. Storm damage & insurance claim experts. Free estimates!',
   url: `${SITE_CONFIG.url}/roofing-lake-norman-nc`,
   type: 'website',
   images: [
@@ -209,6 +212,18 @@ const lakeNormanFAQs = [
   {
     question: 'Is it worth getting a metal roof in Lake Norman NC?',
   answer: 'Metal roofing is an excellent investment for Lake Norman homes, especially waterfront properties. Standing seam metal roofs last 50+ years, resist 140+ MPH winds, and are Class 4 impact-rated for hail protection. While the upfront cost is higher ($15,000-$35,000), the longevity means you may never need another roof. Metal roofing also offers energy savings of 15-25% on cooling costs. Best Roofing Now installs standing seam and metal shingle roofing across the Lake Norman area.',
+  },
+  {
+    question: 'How much does a new roof cost in Lake Norman NC?',
+  answer: 'A new roof in the Lake Norman area typically costs $10,000-$30,000. Waterfront homes often require premium materials (impact-resistant shingles, enhanced underlayment) that add 10-20% to costs. Standard asphalt ranges from $8,000-$18,000, while metal roofing for lakefront homes runs $15,000-$35,000. We provide free estimates for all Lake Norman communities.',
+  },
+  {
+    question: 'What roofing material is best for Lake Norman waterfront homes?',
+  answer: 'Impact-resistant architectural shingles (Class 4) or standing seam metal roofing are the best choices for Lake Norman waterfront properties. These materials withstand high winds, resist hail damage, and handle the increased moisture exposure from the lake. We recommend CertainTeed, GAF, or Owens Corning products with enhanced wind ratings.',
+  },
+  {
+    question: 'Do I need a special roof for a Lake Norman waterfront home?',
+  answer: 'Yes, Lake Norman waterfront homes face unique challenges: increased wind speeds across the water, higher humidity, and water-driven rain during storms. We recommend impact-resistant shingles with Class F or H wind ratings, enhanced synthetic underlayment, proper ridge ventilation, and corrosion-resistant flashing for optimal protection.',
   },
 ];
 

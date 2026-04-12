@@ -398,6 +398,17 @@ export const CITY_GEO_DATA: CityGeoData[] = [
     googleMapsUrl: 'https://www.google.com/maps/place/Statesville,+NC',
     googleMapsEmbedQuery: 'Best+Roofing+Now+Statesville+NC',
   },
+  {
+    slug: 'troutman-nc',
+    city: 'Troutman',
+    state: 'NC',
+    stateFullName: 'North_Carolina',
+    latitude: 35.7051,
+    longitude: -80.8882,
+    wikipediaUrl: 'https://en.wikipedia.org/wiki/Troutman,_North_Carolina',
+    googleMapsUrl: 'https://www.google.com/maps/place/Troutman,+NC',
+    googleMapsEmbedQuery: 'Best+Roofing+Now+Troutman+NC',
+  },
 
   // === LINCOLN COUNTY ===
   {

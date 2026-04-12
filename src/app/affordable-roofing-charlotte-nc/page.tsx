@@ -33,11 +33,14 @@ import { TURNER_NOTES } from '@/lib/turner-family';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Affordable Roofing Charlotte NC | Quality at Fair Prices',
+  title: 'Affordable Roofing Charlotte NC | 2026',
   description:
-    'Affordable roofing services in Charlotte NC without sacrificing quality. Transparent pricing, flexible financing options, and insurance claim assistance. Get value you can trust from a BBB A+ rated family-owned company.',
+    'Affordable roofing Charlotte NC -- quality roofs from $3.50/sq ft with flexible financing. Budget-friendly options, no hidden fees. BBB A+, veteran-owned. Free estimates 2026!',
   keywords: [
-    'affordable roofing Charlotte NC',
+    'affordable roofing charlotte nc',
+    'cheap roofing charlotte',
+    'budget roofing charlotte nc',
+    'low cost roof replacement charlotte',
     'cheapest roof replacement Charlotte NC',
     'affordable roof replacement Charlotte NC',
     'low cost roof repair Charlotte NC',
