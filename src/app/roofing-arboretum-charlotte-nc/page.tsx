@@ -35,6 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Arboretum Charlotte NC',
+  robots: { index: false, follow: true },
   description:
     'Roofing contractor in the Arboretum area of Charlotte NC. Roof replacement, repair, and storm damage. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [

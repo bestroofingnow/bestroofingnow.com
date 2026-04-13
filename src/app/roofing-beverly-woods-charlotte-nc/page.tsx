@@ -29,6 +29,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Beverly Woods Charlotte NC',
+  robots: { index: false, follow: true },
   description:
     'Trusted roofer in Beverly Woods Charlotte NC. Roofing for mid-century ranches and renovated homes. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [

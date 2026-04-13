@@ -326,6 +326,29 @@ export default function RoofingFoxcroftCharlotteNCPage() {
                 Road corridor, our team delivers premium roofing solutions that protect your substantial
                 investment while enhancing your property's distinguished appearance.
               </p>
+              <h3>Foxcroft's Unique Roofing Challenges</h3>
+              <p>
+                Foxcroft's tree canopy — one of the densest in Charlotte — creates specific roofing
+                concerns. Mature oaks and hickories drop heavy limbs during summer storms, and the
+                shade-heavy lots promote moss and algae growth on north-facing roof slopes. Homes
+                along Baltusrol Lane and Pellyn Wood sit beneath particularly heavy canopy, requiring
+                roofing materials rated for algae resistance (look for the AR designation on shingles)
+                and regular debris clearing from valleys and gutters.
+              </p>
+              <p>
+                Many original Foxcroft roofs were natural slate, installed when the neighborhood was
+                developed in the 1960s-70s. After 50-60 years, these slate roofs reach end-of-life and
+                homeowners face a choice: re-slate at $25-$45 per square foot (installed) or transition
+                to high-end synthetic slate like DaVinci Roofscapes at roughly half the cost while
+                maintaining the estate aesthetic. We help Foxcroft homeowners navigate this decision with
+                honest material comparisons and samples brought directly to your property.
+              </p>
+              <p>
+                Foxcroft's architectural review process requires pre-approval for exterior changes including
+                roof replacements. We handle the approval paperwork, provide material samples and color
+                boards for committee review, and coordinate timelines so work begins promptly after approval.
+                Most Foxcroft projects require 2-3 weeks advance scheduling during peak season (March-October).
+              </p>
               <p>
                 We offer Foxcroft homeowners access to the finest roofing materials available, including
                 natural slate from Vermont and Wales, premium cedar shake, designer architectural shingles,

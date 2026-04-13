@@ -35,6 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Carmel Charlotte NC',
+  robots: { index: false, follow: true },
   description:
     'Roofing contractor in Carmel, South Charlotte NC. Roof replacement, repair, and storm damage for established homes. BBB A+ rated. Free estimates.',
   keywords: [

@@ -192,14 +192,14 @@ const faqs = [
       'Absolutely! We have extensive experience with storm damage insurance claims in the Davidson area. We document all damage with photos and detailed reports, meet with your insurance adjuster, and advocate for fair settlements. Many Davidson homes have qualified for full roof replacement after storm events.',
   },
   {
-    question: 'What counts as a roofing emergency?',
+    question: 'Are Davidson\'s historic village homes more vulnerable to roof emergencies?',
     answer:
-      'Roofing emergencies include: active leaks allowing water into your home, storm damage with exposed roof decking, fallen trees or large debris on your roof, missing large sections of shingles after storms, structural damage compromising your roof\'s integrity, and any damage that poses a safety risk. If in doubt, call us - we\'ll help assess your situation.',
+      'Davidson Village homes from the early-to-mid 1900s do have unique vulnerabilities. Older roof framing may not meet modern wind uplift codes, original plank decking (versus plywood) can rot at nail holes, and steep-pitch slate or shake roofs shed debris that damages lower roof sections. We carry materials suited to historic homes and take extra care with trim, gutters, and architectural details during emergency work in the Village area.',
   },
   {
-    question: 'Can you do permanent repairs during an emergency call in Davidson?',
+    question: 'How do you handle emergency roof work near Davidson College campus?',
     answer:
-      'It depends on the damage and conditions. For minor damage, we can often complete permanent repairs during the emergency visit. For major damage requiring materials or extensive work, we typically perform emergency tarping and temporary repairs first to protect your home, then schedule permanent repairs within 1-7 days depending on material availability.',
+      'Davidson College-area homes on South Main and the surrounding streets often have shared driveways and limited staging space. We use smaller trucks and targeted debris containment for these properties. For urgent tarping, we can usually respond within 25-40 minutes from our Charlotte office via I-77. If your roof is leaking during a storm, call immediately — we\'ll talk you through temporary interior water management while our crew is en route.',
   },
   {
     question: 'What areas of Davidson do you cover for emergency service?',

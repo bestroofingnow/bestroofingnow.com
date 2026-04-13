@@ -319,17 +319,37 @@ export default function RoofingPiperGlenCharlotteNCPage() {
                 1990s and 2000s, these impressive 4,000-7,000+ square foot homes represent the finest in
                 Charlotte luxury living with values ranging from $600K to $1.5M.
               </p>
+              <h3>Roofing Challenges Specific to Piper Glen</h3>
               <p>
-                Whether you own a stately executive home overlooking the 18th fairway, a custom build in
-                Piper Glen Estates, or a distinguished property near Providence Country Club, our team
-                delivers premium roofing solutions that protect your investment while maintaining the
-                polished curb appeal your community demands.
+                Piper Glen homes built in the late 1990s and early 2000s are now 25-30 years old — right
+                at the end of life for the standard 25-year architectural shingles that were commonly
+                installed during original construction. If your home still has its original roof, you're
+                likely seeing granule loss in gutters, curling edges on south-facing slopes, and reduced
+                wind resistance. The golf-course-adjacent lots get heavy sun exposure on the
+                fairway side with little shade protection, which accelerates shingle aging by 3-5 years
+                compared to tree-shaded sections.
               </p>
               <p>
-                We offer Piper Glen homeowners access to premium designer shingles, high-performance
-                architectural shingles, and tasteful metal accents. Our certified installers understand
-                the unique requirements of golf community roofing, from HOA compliance to minimizing
-                disruption during installation on course-adjacent properties.
+                The Piper Glen HOA's architectural review committee requires pre-approval for all roof
+                replacements. Approved colors and materials are specified in the community covenants —
+                generally earth-tone architectural shingles in the "Weathered Wood," "Barkwood," or
+                "Charcoal" family. Designer shingles like CertainTeed Grand Manor and GAF Camelot II
+                are approved and popular among homeowners seeking a distinctive look. We submit the
+                approval paperwork on your behalf and typically receive approval within 5-10 business days.
+              </p>
+              <p>
+                With roof areas averaging 35-55 squares (3,500-5,500 sq ft) on Piper Glen homes,
+                replacement costs typically fall between $18,000-$35,000 for premium architectural
+                shingles, depending on complexity and material grade. Homes with multiple roof planes,
+                hip-and-valley designs, or standing-seam metal accents on portico roofs will be at the
+                higher end. We provide itemized estimates so you see exactly where each dollar goes.
+              </p>
+              <p>
+                Course-adjacent homes require special coordination during tear-off and installation.
+                We schedule work on weekday mornings to minimize disruption to golfers and neighbors,
+                use magnetic nail sweepers along the property perimeter, and place protective tarps on
+                landscaping adjacent to the course. Our crews are experienced in the extra care these
+                high-visibility properties demand.
               </p>
             </div>
           </div>

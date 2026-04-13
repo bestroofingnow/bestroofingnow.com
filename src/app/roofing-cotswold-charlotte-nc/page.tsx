@@ -29,6 +29,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Cotswold Charlotte NC',
+  robots: { index: false, follow: true },
   description:
     'Trusted roofer in Cotswold Charlotte NC. Roofing for classic ranches, Cape Cods, and renovated homes. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [

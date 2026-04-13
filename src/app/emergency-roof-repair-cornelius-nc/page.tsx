@@ -192,14 +192,14 @@ const faqs = [
       'Absolutely! We have extensive experience with storm damage insurance claims in the Cornelius area. We document all damage with photos and detailed reports, meet with your insurance adjuster, and advocate for fair settlements. Many Cornelius homes have qualified for full roof replacement after storm events.',
   },
   {
-    question: 'What counts as a roofing emergency?',
+    question: 'What storm damage is most common on Cornelius lakefront roofs?',
     answer:
-      'Roofing emergencies include: active leaks allowing water into your home, storm damage with exposed roof decking, fallen trees or large debris on your roof, missing large sections of shingles after storms, structural damage compromising your roof\'s integrity, and any damage that poses a safety risk. If in doubt, call us - we\'ll help assess your situation.',
+      'Cornelius homes along Lake Norman\'s eastern shore take the brunt of westerly storm systems that cross the lake with little wind break. The most common damage we see is wind-lifted shingles on the lake-facing side, debris impacts from mature hardwoods in The Peninsula and Jetton Cove, and flashing failures at dormers caused by sustained high winds. After severe storms, we recommend a free inspection even if you don\'t see visible damage — wind can loosen shingle seals without immediately tearing them off.',
   },
   {
-    question: 'Can you do permanent repairs during an emergency call in Cornelius?',
+    question: 'Can you tarp a Cornelius roof the same day I call?',
     answer:
-      'It depends on the damage and conditions. For minor damage, we can often complete permanent repairs during the emergency visit. For major damage requiring materials or extensive work, we typically perform emergency tarping and temporary repairs first to protect your home, then schedule permanent repairs within 1-7 days depending on material availability.',
+      'Yes, for active leaks and exposed decking, we carry tarping materials on our trucks and can reach Cornelius within 20-35 minutes. We secure the tarp with 2x4 battens screwed through the decking (not just weighted with sandbags) so it holds through additional rain. For minor damage like a few missing shingles, we can often complete a permanent repair on the same visit if we have matching materials on hand.',
   },
   {
     question: 'What areas of Cornelius do you cover for emergency service?',

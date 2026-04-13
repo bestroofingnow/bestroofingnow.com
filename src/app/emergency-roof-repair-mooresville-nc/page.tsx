@@ -190,14 +190,14 @@ const faqs = [
       'Absolutely! We have extensive experience with storm damage insurance claims in the Mooresville and Iredell County area. We document all damage with photos and detailed reports, meet with your insurance adjuster, and advocate for fair settlements. Many Mooresville homes have qualified for full roof replacement after storm events.',
   },
   {
-    question: 'What counts as a roofing emergency?',
+    question: 'What types of commercial roof emergencies do you handle in Mooresville?',
     answer:
-      'Roofing emergencies include: active leaks allowing water into your home, storm damage with exposed roof decking, fallen trees or large debris on your roof, missing large sections of shingles after storms, structural damage compromising your roof\'s integrity, and any damage that poses a safety risk. If in doubt, call us - we\'ll help assess your situation.',
+      'Mooresville has a growing commercial corridor along NC-150 and I-77 with flat-roof buildings, strip malls, and light industrial properties. We handle TPO and EPDM membrane punctures, ponding water from clogged commercial drains, blown-off metal panels on warehouse roofs, and gutter system failures on retail buildings. Our commercial emergency crew carries membrane patches, sealants, and temporary drain solutions so we can stop active leaks on the first visit.',
   },
   {
-    question: 'Can you do permanent repairs during an emergency call in Mooresville?',
+    question: 'How does Mooresville\'s growth affect emergency roof repair availability?',
     answer:
-      'It depends on the damage and conditions. For minor damage, we can often complete permanent repairs during the emergency visit. For major damage requiring materials or extensive work, we typically perform emergency tarping and temporary repairs first to protect your home, then schedule permanent repairs within 1-7 days depending on material availability.',
+      'Mooresville\'s rapid residential growth — especially in The Point, Curtis Pond, and developments along Brawley School Road — means more homes competing for contractors after storms. During severe weather events, our phone lines can see 30-50 calls in a single day from the Mooresville-Lake Norman corridor. We triage by severity and typically clear emergency calls within 24-48 hours of a storm. For non-urgent storm damage, we schedule free inspections within 3-5 business days.',
   },
   {
     question: 'What areas of Mooresville do you cover for emergency service?',

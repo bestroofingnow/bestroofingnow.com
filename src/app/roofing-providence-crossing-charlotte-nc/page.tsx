@@ -35,6 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Providence Crossing Charlotte NC',
+  robots: { index: false, follow: true },
   description:
     'Roofing contractor in Providence Crossing, Charlotte NC. Roof replacement, repair, and storm damage. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [

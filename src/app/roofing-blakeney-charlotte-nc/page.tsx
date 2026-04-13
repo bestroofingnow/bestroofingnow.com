@@ -35,6 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Blakeney Charlotte NC',
+  robots: { index: false, follow: true },
   description:
     'Roofing contractor in Blakeney, South Charlotte NC. Roof replacement, repair, and storm damage restoration. BBB A+ rated. Free estimates.',
   keywords: [

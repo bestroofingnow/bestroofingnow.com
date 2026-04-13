@@ -190,14 +190,14 @@ const faqs = [
       'Absolutely! We have extensive experience with storm damage insurance claims in the Denver and Lincoln County area. We document all damage with photos and detailed reports, meet with your insurance adjuster, and advocate for fair settlements. Many Denver homes have qualified for full roof replacement after storm events.',
   },
   {
-    question: 'What counts as a roofing emergency?',
+    question: 'Why are Denver NC roofs more exposed to storm damage than inland homes?',
     answer:
-      'Roofing emergencies include: active leaks allowing water into your home, storm damage with exposed roof decking, fallen trees or large debris on your roof, missing large sections of shingles after storms, structural damage compromising your roof\'s integrity, and any damage that poses a safety risk. If in doubt, call us - we\'ll help assess your situation.',
+      'Denver sits on Lake Norman\'s western shore where prevailing storm systems arrive with sustained winds across several miles of open water. Governor\'s Island, Westport, and lakefront properties on NC-73 regularly see wind speeds 10-15 mph higher than homes just a mile inland. This means shingle uplift, ridge cap blowoffs, and debris impacts are more frequent. We recommend impact-resistant shingles (Class 4 rated) for Denver lakefront homes — they cost about 10-15% more but resist hail and wind damage significantly better.',
   },
   {
-    question: 'Can you do permanent repairs during an emergency call in Denver?',
+    question: 'How quickly can you tarp a Denver NC roof during a storm?',
     answer:
-      'It depends on the damage and conditions. For minor damage, we can often complete permanent repairs during the emergency visit. For major damage requiring materials or extensive work, we typically perform emergency tarping and temporary repairs first to protect your home, then schedule permanent repairs within 1-7 days depending on material availability.',
+      'Denver is our furthest Lake Norman service point at roughly 30-45 minutes from our Charlotte office via I-77 and NC-73. During active storms with multiple emergency calls, we triage by severity — active leaks and structural damage get dispatched first. We carry heavy-duty tarps, 2x4 battens, and impact drivers on every truck so we can secure a temporary cover on arrival without waiting for additional materials.',
   },
   {
     question: 'What areas of Denver do you cover for emergency service?',

@@ -29,6 +29,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Providence Plantation Charlotte NC',
+  robots: { index: false, follow: true },
   description:
     'Trusted roofer in Providence Plantation Charlotte NC. Premium architectural shingles for established homes. BBB A+ rated, veteran-owned. Free estimates.',
   keywords: [

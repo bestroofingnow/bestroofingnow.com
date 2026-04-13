@@ -320,11 +320,30 @@ export default function RoofingQuailHollowCharlotteNCPage() {
                 Quail Hollow's estates range from $500K to well over $2M, featuring generous lots and
                 distinguished architectural styles.
               </p>
+              <h3>Quail Hollow's Roofing Landscape</h3>
               <p>
-                Whether you own a stately brick colonial on Gleneagles Road, an elegant Mediterranean
-                villa in Quail Hollow Estates, or a custom home along the Sharon Road corridor, our team
-                delivers premium roofing solutions that protect your substantial investment while enhancing
-                your property's distinguished curb appeal.
+                The Quail Hollow area spans a wide construction timeline. The original homes along
+                Gleneagles Road and near the club date to the 1960s-70s, while Quail Hollow Estates
+                and homes along the Rea Road corridor were built through the 1990s. This age range
+                creates two distinct roofing situations: older homes (50-60 years) may be on their
+                second or third roof and could have underlying decking issues, while 1990s homes
+                (30+ years) are reaching first replacement age with original shingles failing.
+              </p>
+              <p>
+                The older Quail Hollow homes often feature complex roof designs — multi-hip roofs with
+                6-8 valleys, shed dormers, and attached breezeway roofs that connect to garages and
+                guest houses. These multi-plane designs require experienced crews who understand proper
+                valley flashing techniques (we use W-metal valley flashing, not the cheaper woven
+                valley method that leads to premature failure). Expect 40-70 squares of roofing area
+                on the larger estates, putting replacement costs between $25,000 and $55,000+
+                depending on material selection.
+              </p>
+              <p>
+                Quail Hollow sits in one of Charlotte's most active hail corridors — the south
+                Charlotte zone from Ballantyne to SouthPark that gets hit hard during spring and
+                early summer convective storms. We see significant hail claim activity from Quail
+                Hollow each year, typically between April and July. If you suspect hail damage, we
+                provide free inspections and can document damage for insurance filing within 24 hours.
               </p>
               <p>
                 We offer Quail Hollow homeowners access to the finest roofing materials available, including

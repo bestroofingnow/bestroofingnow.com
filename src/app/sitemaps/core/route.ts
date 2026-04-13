@@ -235,21 +235,14 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-plaza-midwood-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-noda-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-steele-creek-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-    // High-end Charlotte neighborhoods (Apr 2026)
+    // High-end Charlotte neighborhoods — INDEXED (unique content)
     { url: `${BASE_URL}/roofing-foxcroft-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-piper-glen-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-quail-hollow-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/roofing-providence-plantation-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-elizabeth-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/roofing-beverly-woods-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-    { url: `${BASE_URL}/roofing-cotswold-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
-    // Secondary Charlotte neighborhoods (Apr 2026)
-    { url: `${BASE_URL}/roofing-arboretum-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
-    { url: `${BASE_URL}/roofing-rea-farms-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
-    { url: `${BASE_URL}/roofing-blakeney-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
-    { url: `${BASE_URL}/roofing-waverly-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
-    { url: `${BASE_URL}/roofing-providence-crossing-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
-    { url: `${BASE_URL}/roofing-carmel-charlotte-nc`, changefreq: 'weekly', priority: '0.7' },
+    // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
+    // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
+    // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written
 
     // ============================================
     // LAKE NORMAN HUB + SERVICE PAGES

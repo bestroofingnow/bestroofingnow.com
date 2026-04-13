@@ -325,6 +325,36 @@ export default function RoofingElizabethCharlotteNCPage() {
                 complex roof lines, and the need for materials that honor the neighborhood's architectural
                 heritage while providing modern weather protection.
               </p>
+              <h3>Why Elizabeth Homes Need Specialized Roofers</h3>
+              <p>
+                Elizabeth's housing stock presents challenges that general roofers often mishandle. The
+                original 1910s-1930s Craftsman bungalows along Hawthorne Lane and Scott Avenue feature
+                low-slope shed dormers, exposed rafter tails, and wide overhanging eaves — details that
+                require careful flashing work and materials compatible with the original pitch (often 4:12
+                to 6:12). A standard crew unfamiliar with these homes may damage the decorative brackets
+                or bargeboard trim during tear-off.
+              </p>
+              <p>
+                The renovated Victorians near Elizabeth Avenue and Commonwealth present the opposite
+                challenge: steep cross-gable roofs (often 10:12 to 12:12 pitch) with multiple dormers,
+                turrets, and decorative ridge caps. These require steep-slope safety equipment and
+                installers experienced with the complex flashing patterns at each roof intersection.
+                Improper flashing at dormer-to-main-roof transitions is the number one leak source we
+                find on Elizabeth Victorians.
+              </p>
+              <p>
+                Elizabeth sits within Charlotte's older tree canopy zone, with mature oaks, pecans, and
+                magnolias. Storm damage from falling branches is common — we typically see 3-5 emergency
+                calls from Elizabeth per major summer storm. We stock tarping materials and can respond
+                within 30 minutes from our Mallard Creek Road office via I-85 and Independence Boulevard.
+              </p>
+              <p>
+                While Elizabeth is not a designated historic district with formal review boards, neighbors
+                and the active Elizabeth Community Association expect exterior changes to respect the
+                neighborhood's character. We carry material samples from CertainTeed's Landmark and
+                Grand Manor lines, GAF's Camelot II designer shingles, and DaVinci synthetic slate —
+                all available in colors that complement the earthy palettes typical of Elizabeth homes.
+              </p>
               <p>
                 Whether your home is an original Craftsman on Hawthorne Lane, a beautifully renovated Victorian
                 near Elizabeth Avenue, or a charming cottage in Kenilworth or Chantilly, our team delivers

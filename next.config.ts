@@ -277,8 +277,8 @@ const nextConfig: NextConfig = {
       // ===========================================
       // Roof Installation → Roof Replacement (same service, different names)
       { source: '/roof-installation-charlotte-nc', destination: '/roof-replacement-charlotte-nc', permanent: true },
-      // Emergency Roof Repair Charlotte → Main Repair Page (emergency is subset of repair)
-      { source: '/emergency-roof-repair-charlotte-nc', destination: '/roof-repair-charlotte-nc', permanent: true },
+      // RESTORED: Emergency repair is distinct intent from general repair — keep as separate page
+      // { source: '/emergency-roof-repair-charlotte-nc', destination: '/roof-repair-charlotte-nc', permanent: true },
 
       // ===========================================
       // KEYWORD CANNIBALIZATION FIXES
@@ -294,9 +294,9 @@ const nextConfig: NextConfig = {
       { source: '/storm-restoration', destination: '/storm-damage-roof-repair-charlotte-nc', permanent: true },
       // Commercial contractors: near-identical title to /commercial-roofing-services
       { source: '/commercial-roofing-contractors-charlotte-nc', destination: '/commercial-roofing-services', permanent: true },
-      // Best Roofers Charlotte: consolidate to homepage which is the primary authority for "best" Charlotte keywords
-      // The homepage has stronger domain authority and should rank for "best roofers charlotte nc"
-      { source: '/best-roofers-charlotte-nc', destination: '/', permanent: true },
+      // Best Roofers Charlotte: redirect to dedicated best-roofing-company page (not homepage)
+      // Homepage should rank on domain authority; keyword page should rank on content relevance
+      { source: '/best-roofers-charlotte-nc', destination: '/best-roofing-company-charlotte-nc', permanent: true },
 
       // ===========================================
       // SEO AUDIT 404 REDIRECTS (2026-02-14)
