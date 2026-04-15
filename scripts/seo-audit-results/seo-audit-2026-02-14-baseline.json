@@ -1,0 +1,1254 @@
+{
+  "meta": {
+    "domain": "bestroofingnow.com",
+    "generatedAt": "2026-02-14T01:16:04.604Z",
+    "version": "1.0.0"
+  },
+  "summary": {
+    "overallScore": 59,
+    "criticalIssues": 1,
+    "highIssues": 0,
+    "mediumIssues": 15,
+    "lowIssues": 0
+  },
+  "cannibalization": {
+    "summary": {
+      "totalCannibalized": 0,
+      "highSeverity": 0,
+      "mediumSeverity": 0,
+      "lowSeverity": 0
+    },
+    "highSeverityIssues": [],
+    "mediumSeverityIssues": [],
+    "lowSeverityIssues": []
+  },
+  "onPage": {
+    "summary": {
+      "pagesAnalyzed": 9,
+      "pagesWithIssues": 9,
+      "avgTitleLength": 36,
+      "avgDescriptionLength": 127,
+      "avgWordCount": 1892
+    },
+    "pages": [
+      {
+        "url": "/",
+        "type": "homepage",
+        "statusCode": 200,
+        "title": {
+          "text": "Best Roofer Charlotte NC | 5-Star | BBB A+",
+          "length": 42,
+          "isOptimal": true,
+          "issues": []
+        },
+        "description": {
+          "text": "Best Roofing Now is Charlotte NC&#x27;s top-rated roofer. 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Roof repair, replacement, inspections. FREE estimates! Call (704) 605-6047.",
+          "length": 203,
+          "isOptimal": false,
+          "issues": [
+            "Description too long (>160 chars)"
+          ]
+        },
+        "headings": {
+          "h1Count": 1,
+          "h1Text": [
+            "Charlotte NC Roofing Company — 5-Star Rated Roofers"
+          ],
+          "h2Count": 10,
+          "hasMultipleH1": false,
+          "issues": []
+        },
+        "images": {
+          "total": 11,
+          "withAlt": 11,
+          "withoutAlt": 0,
+          "altCoverage": "100.0",
+          "issues": []
+        },
+        "content": {
+          "wordCount": 2508,
+          "isOptimal": true,
+          "issues": []
+        },
+        "internalLinks": {
+          "count": 167,
+          "issues": []
+        }
+      },
+      {
+        "url": "/roof-replacement",
+        "type": "service",
+        "error": "Invalid URL"
+      },
+      {
+        "url": "/roof-repair",
+        "type": "service",
+        "error": "Invalid URL"
+      },
+      {
+        "url": "/commercial-roofing",
+        "type": "service",
+        "error": "Invalid URL"
+      },
+      {
+        "url": "/roofing-charlotte-nc",
+        "type": "location",
+        "statusCode": 200,
+        "title": {
+          "text": "Roofing Charlotte NC | #1 Rated | 500+ Roofs | Best Roofing Now",
+          "length": 63,
+          "isOptimal": false,
+          "issues": [
+            "Title too long (>60 chars)"
+          ]
+        },
+        "description": {
+          "text": "Looking for roofing in Charlotte NC? Best Roofing Now is #1 rated with 5.0 Google rating, BBB A+, veteran-owned. Residential &amp; commercial roofing, roof repair, roof replacement, inspections. 500+ roofs completed. FREE estimates! (704) 605-6047.",
+          "length": 248,
+          "isOptimal": false,
+          "issues": [
+            "Description too long (>160 chars)"
+          ]
+        },
+        "headings": {
+          "h1Count": 0,
+          "h1Text": [],
+          "h2Count": 20,
+          "hasMultipleH1": false,
+          "issues": [
+            "Missing H1 tag"
+          ]
+        },
+        "images": {
+          "total": 13,
+          "withAlt": 13,
+          "withoutAlt": 0,
+          "altCoverage": "100.0",
+          "issues": []
+        },
+        "content": {
+          "wordCount": 4201,
+          "isOptimal": true,
+          "issues": []
+        },
+        "internalLinks": {
+          "count": 124,
+          "issues": []
+        }
+      },
+      {
+        "url": "/locations/huntersville-nc",
+        "type": "location",
+        "statusCode": 200,
+        "title": {
+          "text": "Top Roofer Huntersville NC | 5-Star | Best Roofing Now",
+          "length": 54,
+          "isOptimal": true,
+          "issues": []
+        },
+        "description": {
+          "text": "Looking for a roofing company in Huntersville? Best Roofing Now serves the Lake Norman area with 5-star rated service. Just 13 miles from our Charlotte HQ. Free estimates! (704) 605-6047.",
+          "length": 187,
+          "isOptimal": false,
+          "issues": [
+            "Description too long (>160 chars)"
+          ]
+        },
+        "headings": {
+          "h1Count": 0,
+          "h1Text": [],
+          "h2Count": 9,
+          "hasMultipleH1": false,
+          "issues": [
+            "Missing H1 tag"
+          ]
+        },
+        "images": {
+          "total": 11,
+          "withAlt": 11,
+          "withoutAlt": 0,
+          "altCoverage": "100.0",
+          "issues": []
+        },
+        "content": {
+          "wordCount": 3711,
+          "isOptimal": true,
+          "issues": []
+        },
+        "internalLinks": {
+          "count": 119,
+          "issues": []
+        }
+      },
+      {
+        "url": "/locations/mooresville-nc",
+        "type": "location",
+        "statusCode": 200,
+        "title": {
+          "text": "Top Roofer Mooresville NC | 5-Star | Best Roofing Now",
+          "length": 53,
+          "isOptimal": true,
+          "issues": []
+        },
+        "description": {
+          "text": "Looking for a roofing company in Mooresville? Best Roofing Now serves the Lake Norman area with 5-star rated service. Just 26 miles from our Charlotte HQ. Free estimates! (704) 605-6047.",
+          "length": 186,
+          "isOptimal": false,
+          "issues": [
+            "Description too long (>160 chars)"
+          ]
+        },
+        "headings": {
+          "h1Count": 0,
+          "h1Text": [],
+          "h2Count": 9,
+          "hasMultipleH1": false,
+          "issues": [
+            "Missing H1 tag"
+          ]
+        },
+        "images": {
+          "total": 11,
+          "withAlt": 11,
+          "withoutAlt": 0,
+          "altCoverage": "100.0",
+          "issues": []
+        },
+        "content": {
+          "wordCount": 3684,
+          "isOptimal": true,
+          "issues": []
+        },
+        "internalLinks": {
+          "count": 119,
+          "issues": []
+        }
+      },
+      {
+        "url": "/blog/roof-shingle-cost-per-square-foot",
+        "type": "blog",
+        "statusCode": 200,
+        "title": {
+          "text": "Roof Shingle Cost per Square Foot | Best Roofing Now",
+          "length": 52,
+          "isOptimal": true,
+          "issues": []
+        },
+        "description": {
+          "text": "The cost of roof shingles varies by the type and the size of the shingle. Whether you choose asphalt, wood, clay, or another material, determines the pricing pe",
+          "length": 160,
+          "isOptimal": true,
+          "issues": []
+        },
+        "headings": {
+          "h1Count": 2,
+          "h1Text": [
+            "Expert Roofing Advice for Charlotte Homeowners",
+            "Roof Shingle Cost per Square Foot"
+          ],
+          "h2Count": 2,
+          "hasMultipleH1": true,
+          "issues": [
+            "Multiple H1 tags (2)"
+          ]
+        },
+        "images": {
+          "total": 11,
+          "withAlt": 11,
+          "withoutAlt": 0,
+          "altCoverage": "100.0",
+          "issues": []
+        },
+        "content": {
+          "wordCount": 697,
+          "isOptimal": false,
+          "issues": [
+            "Content below benchmark (697 < 1500)"
+          ]
+        },
+        "internalLinks": {
+          "count": 90,
+          "issues": []
+        }
+      },
+      {
+        "url": "/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+        "type": "blog",
+        "statusCode": 200,
+        "title": {
+          "text": "Roof Crickets 101: What They Are, Benefits | Best Roofing Now",
+          "length": 61,
+          "isOptimal": false,
+          "issues": [
+            "Title too long (>60 chars)"
+          ]
+        },
+        "description": {
+          "text": "If you ve ever looked at a roof and noticed a small peaked structure behind a chimney, you ve seen a roof cricket. Most homeowners in Charlotte and Lake Norman",
+          "length": 159,
+          "isOptimal": true,
+          "issues": []
+        },
+        "headings": {
+          "h1Count": 2,
+          "h1Text": [
+            "Expert Roofing Advice for Charlotte Homeowners",
+            "Roof Crickets 101: What They Are, Benefits, and Why Your Roof Might Need One"
+          ],
+          "h2Count": 10,
+          "hasMultipleH1": true,
+          "issues": [
+            "Multiple H1 tags (2)"
+          ]
+        },
+        "images": {
+          "total": 17,
+          "withAlt": 17,
+          "withoutAlt": 0,
+          "altCoverage": "100.0",
+          "issues": []
+        },
+        "content": {
+          "wordCount": 2231,
+          "isOptimal": true,
+          "issues": []
+        },
+        "internalLinks": {
+          "count": 96,
+          "issues": []
+        }
+      }
+    ]
+  },
+  "technical": {
+    "summary": {
+      "pagesAnalyzed": 0,
+      "avgPerformance": null,
+      "avgSEO": null,
+      "pagesWithCWVIssues": 0
+    },
+    "pages": []
+  },
+  "schema": {
+    "summary": {
+      "pagesAnalyzed": 4,
+      "pagesWithAllSchemas": 1,
+      "pagesWithMissingSchemas": 2
+    },
+    "pages": [
+      {
+        "url": "/",
+        "type": "homepage",
+        "foundSchemas": [
+          "WebSite",
+          "RoofingContractor",
+          "HowTo",
+          "Offer",
+          "WebPage",
+          "FAQPage",
+          "BreadcrumbList",
+          "ImageObject",
+          "ImageGallery",
+          "Organization",
+          "ItemList",
+          "DefinedTerm",
+          "Map",
+          "QAPage"
+        ],
+        "expectedSchemas": [
+          "LocalBusiness",
+          "WebSite",
+          "Organization"
+        ],
+        "missingSchemas": [
+          "LocalBusiness"
+        ],
+        "hasAllRequired": false,
+        "schemaCount": 29,
+        "issues": [
+          "Missing schemas: LocalBusiness"
+        ]
+      },
+      {
+        "url": "/roof-replacement",
+        "type": "service",
+        "error": "Invalid URL"
+      },
+      {
+        "url": "/roofing-charlotte-nc",
+        "type": "location",
+        "foundSchemas": [
+          "WebSite",
+          "BreadcrumbList",
+          "FAQPage",
+          "RoofingContractor",
+          "WebPage",
+          "ImageObject",
+          "ImageGallery"
+        ],
+        "expectedSchemas": [
+          "LocalBusiness",
+          "Place",
+          "BreadcrumbList"
+        ],
+        "missingSchemas": [
+          "LocalBusiness",
+          "Place"
+        ],
+        "hasAllRequired": false,
+        "schemaCount": 10,
+        "issues": [
+          "Missing schemas: LocalBusiness, Place"
+        ]
+      },
+      {
+        "url": "/blog/roof-shingle-cost-per-square-foot",
+        "type": "blog",
+        "foundSchemas": [
+          "WebSite",
+          "BreadcrumbList",
+          "Article",
+          "ImageGallery",
+          "ImageObject"
+        ],
+        "expectedSchemas": [
+          "Article",
+          "BreadcrumbList"
+        ],
+        "missingSchemas": [],
+        "hasAllRequired": true,
+        "schemaCount": 5,
+        "issues": []
+      }
+    ]
+  },
+  "backlinks": {
+    "summary": null,
+    "anchorDistribution": null
+  },
+  "contentGap": {
+    "topCompetitors": [
+      {
+        "domain": "bestroofingnow.com",
+        "intersections": 346,
+        "relevance": 306.88927973620594
+      },
+      {
+        "domain": "facebook.com",
+        "intersections": 306,
+        "relevance": 2821955775.572864
+      },
+      {
+        "domain": "angi.com",
+        "intersections": 253,
+        "relevance": 21282893.817941237
+      },
+      {
+        "domain": "gaf.com",
+        "intersections": 248,
+        "relevance": 2780358.517038282
+      },
+      {
+        "domain": "reddit.com",
+        "intersections": 245,
+        "relevance": 4520835661.786603
+      }
+    ],
+    "keywordGaps": [],
+    "strikingDistance": {
+      "count": 22,
+      "totalVolume": 4100,
+      "keywords": [
+        {
+          "keyword": "what is roof cricket",
+          "position": 20,
+          "searchVolume": 1000,
+          "url": "/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one"
+        },
+        {
+          "keyword": "roofing contractors charlotte nc",
+          "position": 28,
+          "searchVolume": 880,
+          "url": "/"
+        },
+        {
+          "keyword": "gaf vs certainteed shingles",
+          "position": 30,
+          "searchVolume": 390,
+          "url": "/compare/gaf-vs-certainteed"
+        },
+        {
+          "keyword": "best roofing company charlotte",
+          "position": 23,
+          "searchVolume": 210,
+          "url": "https://bestroofingnow.com/"
+        },
+        {
+          "keyword": "best roofing company charlotte nc",
+          "position": 24,
+          "searchVolume": 210,
+          "url": "https://bestroofingnow.com/"
+        },
+        {
+          "keyword": "best roofing companies in charlotte nc",
+          "position": 29,
+          "searchVolume": 210,
+          "url": "https://bestroofingnow.com/"
+        },
+        {
+          "keyword": "veteran-owned roofing company",
+          "position": 18,
+          "searchVolume": 170,
+          "url": "https://bestroofingnow.com/blog/5-unexpected-benefits-of-choosing-a-veteran-owned-roofing-company-in-charlotte"
+        },
+        {
+          "keyword": "roofing companies lancaster sc",
+          "position": 17,
+          "searchVolume": 110,
+          "url": "https://bestroofingnow.com/locations/lancaster-sc"
+        },
+        {
+          "keyword": "best roofer charlotte",
+          "position": 22,
+          "searchVolume": 110,
+          "url": "https://bestroofingnow.com/"
+        },
+        {
+          "keyword": "rb farina roofing reviews",
+          "position": 19,
+          "searchVolume": 110,
+          "url": "https://bestroofingnow.com/blog/top-rated-roofing-company-excellence-you-can-trust"
+        },
+        {
+          "keyword": "roofing waxhaw nc",
+          "position": 24,
+          "searchVolume": 90,
+          "url": "/locations/waxhaw-nc"
+        },
+        {
+          "keyword": "terrell roofing",
+          "position": 21,
+          "searchVolume": 90,
+          "url": "/locations/terrell-nc"
+        },
+        {
+          "keyword": "catawba valley roofing",
+          "position": 27,
+          "searchVolume": 90,
+          "url": "https://bestroofingnow.com/locations/hickory-nc"
+        },
+        {
+          "keyword": "your local roofing company charlotte nc",
+          "position": 28,
+          "searchVolume": 70,
+          "url": "https://bestroofingnow.com/blog/find-your-trusted-local-roofing-company-today"
+        },
+        {
+          "keyword": "flat roof replacement charlotte nc",
+          "position": 30,
+          "searchVolume": 70,
+          "url": "https://bestroofingnow.com/blog/the-ultimate-guide-to-flat-roof-replacement-everything-charlotte-businesses-need-to-succeed"
+        },
+        {
+          "keyword": "leaf guard charlotte nc",
+          "position": 28,
+          "searchVolume": 50,
+          "url": "/services/gutter-guards"
+        },
+        {
+          "keyword": "lkn roofing",
+          "position": 26,
+          "searchVolume": 50,
+          "url": "https://bestroofingnow.com/blog/looking-for-lkn-roofers-here-are-10-things-you-should-know-before-hiring"
+        },
+        {
+          "keyword": "expert roofing solutions",
+          "position": 30,
+          "searchVolume": 50,
+          "url": "https://bestroofingnow.com/expert-roofing-solutions-for-your-home/"
+        },
+        {
+          "keyword": "roof leak repair charlotte nc",
+          "position": 22,
+          "searchVolume": 40,
+          "url": "https://bestroofingnow.com/problems/roof-leak-repair"
+        },
+        {
+          "keyword": "charlotte's best roofing",
+          "position": 28,
+          "searchVolume": 40,
+          "url": "https://bestroofingnow.com/locations/charlotte-nc"
+        },
+        {
+          "keyword": "most popular certainteed shingle color",
+          "position": 20,
+          "searchVolume": 30,
+          "url": "https://bestroofingnow.com/blog/top-10-most-popular-asphalt-shingle-colors-for-charlotte-homes-in-2025-certainteed-landmark-edition"
+        },
+        {
+          "keyword": "roofing york sc",
+          "position": 30,
+          "searchVolume": 30,
+          "url": "/locations/york-sc"
+        }
+      ]
+    }
+  },
+  "localSEO": {
+    "localRankings": [],
+    "napConsistency": {
+      "name": true,
+      "address": true,
+      "phone": true
+    },
+    "hasLocalBusinessSchema": true
+  },
+  "serp": {
+    "summary": {
+      "totalKeywords": 346,
+      "totalVolume": 121340,
+      "top10Volume": 330,
+      "visibilityScore": 4648460,
+      "estimatedTraffic": 23
+    },
+    "positionDistribution": {
+      "top3": 1,
+      "top10": 4,
+      "top20": 9,
+      "top50": 112,
+      "top100": 284
+    },
+    "topKeywords": [
+      {
+        "keyword": "roof cricket",
+        "position": 45,
+        "searchVolume": 8100,
+        "url": "https://bestroofingnow.com/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+        "cpc": 0.9100000262260437
+      },
+      {
+        "keyword": "best roofing co",
+        "position": 32,
+        "searchVolume": 5400,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 18.139999389648438
+      },
+      {
+        "keyword": "roofing shingles prices",
+        "position": 60,
+        "searchVolume": 5400,
+        "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
+        "cpc": 4.570000171661377
+      },
+      {
+        "keyword": "best roofing",
+        "position": 44,
+        "searchVolume": 4400,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 13.220000267028809
+      },
+      {
+        "keyword": "roofer charlotte",
+        "position": 118,
+        "searchVolume": 3600,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 13.020000457763672
+      },
+      {
+        "keyword": "roofers charlotte nc",
+        "position": 52,
+        "searchVolume": 3600,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 13.020000457763672
+      },
+      {
+        "keyword": "roofers charlotte north carolina",
+        "position": 46,
+        "searchVolume": 3600,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 13.020000457763672
+      },
+      {
+        "keyword": "roofing charlotte nc",
+        "position": 46,
+        "searchVolume": 3600,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 13.020000457763672
+      },
+      {
+        "keyword": "roofing in charlotte",
+        "position": 60,
+        "searchVolume": 3600,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 13.020000457763672
+      },
+      {
+        "keyword": "roof ridge",
+        "position": 36,
+        "searchVolume": 2900,
+        "url": "https://bestroofingnow.com/blog/roof-ridges-and-valleys-explained-purpose-benefits-and-maintenance-for-homeowners",
+        "cpc": 1.309999942779541
+      },
+      {
+        "keyword": "roofing companies charlotte north carolina",
+        "position": 40,
+        "searchVolume": 2900,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 21.06999969482422
+      },
+      {
+        "keyword": "roofing companies in charlotte nc",
+        "position": 43,
+        "searchVolume": 2900,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 21.06999969482422
+      },
+      {
+        "keyword": "roofing company charlotte",
+        "position": 45,
+        "searchVolume": 2900,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 21.06999969482422
+      },
+      {
+        "keyword": "roofing company charlotte nc",
+        "position": 93,
+        "searchVolume": 2900,
+        "url": "https://bestroofingnow.com/",
+        "cpc": 21.06999969482422
+      },
+      {
+        "keyword": "roofing company charlotte north carolina",
+        "position": 109,
+        "searchVolume": 2900,
+        "url": "https://bestroofingnow.com/",
+        "cpc": 21.06999969482422
+      },
+      {
+        "keyword": "roofing contractors in charlotte nc",
+        "position": 91,
+        "searchVolume": 2900,
+        "url": "https://bestroofingnow.com/",
+        "cpc": 21.06999969482422
+      },
+      {
+        "keyword": "gutter guard installation near me",
+        "position": 58,
+        "searchVolume": 2400,
+        "url": "https://www.bestroofingnow.com/services/gutter-guards",
+        "cpc": 34
+      },
+      {
+        "keyword": "roof cricket installation",
+        "position": 97,
+        "searchVolume": 2400,
+        "url": "https://bestroofingnow.com/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+        "cpc": 0
+      },
+      {
+        "keyword": "inspecting roof for hail damage",
+        "position": 99,
+        "searchVolume": 1900,
+        "url": "https://bestroofingnow.com/blog/everything-you-need-to-know-about-storm-damage-roof-inspections-in-lake-norman",
+        "cpc": 14.779999732971191
+      },
+      {
+        "keyword": "reliable roofing companies",
+        "position": 99,
+        "searchVolume": 1900,
+        "url": "https://bestroofingnow.com/",
+        "cpc": 16.030000686645508
+      },
+      {
+        "keyword": "shingle price per square",
+        "position": 79,
+        "searchVolume": 1900,
+        "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
+        "cpc": 4.360000133514404
+      },
+      {
+        "keyword": "anatomy of a roof",
+        "position": 95,
+        "searchVolume": 1600,
+        "url": "https://www.bestroofingnow.com/blog/the-anatomy-of-a-roof-every-part-homeowners-should-know",
+        "cpc": 0.029999999329447746
+      },
+      {
+        "keyword": "ridge roof",
+        "position": 59,
+        "searchVolume": 1300,
+        "url": "https://bestroofingnow.com/blog/roof-ridges-and-valleys-explained-purpose-benefits-and-maintenance-for-homeowners",
+        "cpc": 5.21999979019165
+      },
+      {
+        "keyword": "presidential roofing",
+        "position": 107,
+        "searchVolume": 1000,
+        "url": "https://bestroofingnow.com/presidential/",
+        "cpc": 5.980000019073486
+      },
+      {
+        "keyword": "what is roof cricket",
+        "position": 20,
+        "searchVolume": 1000,
+        "url": "https://www.bestroofingnow.com/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+        "cpc": 0
+      },
+      {
+        "keyword": "charlotte roofing contractor",
+        "position": 54,
+        "searchVolume": 880,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 20.510000228881836
+      },
+      {
+        "keyword": "roofing contractor charlotte",
+        "position": 51,
+        "searchVolume": 880,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 12.880000114440918
+      },
+      {
+        "keyword": "roofing contractors charlotte nc",
+        "position": 28,
+        "searchVolume": 880,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 12.880000114440918
+      },
+      {
+        "keyword": "roofing contractors in charlotte",
+        "position": 50,
+        "searchVolume": 880,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 12.880000114440918
+      },
+      {
+        "keyword": "china roofing",
+        "position": 93,
+        "searchVolume": 720,
+        "url": "https://www.bestroofingnow.com/locations/china-grove-nc",
+        "cpc": 1.9900000095367432
+      },
+      {
+        "keyword": "flat rubber roof",
+        "position": 101,
+        "searchVolume": 720,
+        "url": "https://www.bestroofingnow.com/materials/flat-roofing",
+        "cpc": 4.239999771118164
+      },
+      {
+        "keyword": "how much does a shingle roof cost",
+        "position": 105,
+        "searchVolume": 720,
+        "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
+        "cpc": 9.109999656677246
+      },
+      {
+        "keyword": "incorrect gutter installation",
+        "position": 87,
+        "searchVolume": 720,
+        "url": "https://bestroofingnow.com/blog/gutter-installation-mistakes-that-can-wreck-your-roof-and-how-to-avoid-them",
+        "cpc": 11.760000228881836
+      },
+      {
+        "keyword": "best roofing companies",
+        "position": 36,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 29.700000762939453
+      },
+      {
+        "keyword": "certainteed or gaf",
+        "position": 64,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+        "cpc": 4.840000152587891
+      },
+      {
+        "keyword": "certainteed versus gaf",
+        "position": 68,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+        "cpc": 4.840000152587891
+      },
+      {
+        "keyword": "charlotte roofing repair",
+        "position": 106,
+        "searchVolume": 590,
+        "url": "https://bestroofingnow.com/",
+        "cpc": 67.2699966430664
+      },
+      {
+        "keyword": "gaf or certainteed",
+        "position": 46,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+        "cpc": 4.840000152587891
+      },
+      {
+        "keyword": "gaf versus certainteed",
+        "position": 59,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+        "cpc": 4.840000152587891
+      },
+      {
+        "keyword": "gaf vs certainteed",
+        "position": 68,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/compare/gaf-vs-certainteed",
+        "cpc": 4.840000152587891
+      },
+      {
+        "keyword": "hickory nc roofing",
+        "position": 46,
+        "searchVolume": 590,
+        "url": "https://bestroofingnow.com/locations/hickory-nc",
+        "cpc": 0.5699999928474426
+      },
+      {
+        "keyword": "metal roof charlotte nc",
+        "position": 69,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/metal-roofing-services",
+        "cpc": 15.720000267028809
+      },
+      {
+        "keyword": "metal roofing in charlotte nc",
+        "position": 35,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/services/metal-roofing",
+        "cpc": 15.720000267028809
+      },
+      {
+        "keyword": "roof contractors charlotte nc",
+        "position": 95,
+        "searchVolume": 590,
+        "url": "https://bestroofingnow.com/",
+        "cpc": 13.6899995803833
+      },
+      {
+        "keyword": "roof repair charlotte",
+        "position": 56,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 67.2699966430664
+      },
+      {
+        "keyword": "roof repairs charlotte",
+        "position": 36,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 67.2699966430664
+      },
+      {
+        "keyword": "roof replacement charlotte nc",
+        "position": 94,
+        "searchVolume": 590,
+        "url": "https://bestroofingnow.com/services/roof-replacement",
+        "cpc": 98.37999725341797
+      },
+      {
+        "keyword": "roofing repair charlotte nc",
+        "position": 42,
+        "searchVolume": 590,
+        "url": "https://www.bestroofingnow.com/",
+        "cpc": 67.2699966430664
+      },
+      {
+        "keyword": "emergency roofing service",
+        "position": 92,
+        "searchVolume": 480,
+        "url": "https://www.bestroofingnow.com/services/emergency-roofing",
+        "cpc": 71.7300033569336
+      },
+      {
+        "keyword": "flintlastic roofing",
+        "position": 67,
+        "searchVolume": 480,
+        "url": "https://cms.bestroofingnow.com/certainteed-flintastic-built-up-roofing/",
+        "cpc": 3.9600000381469727
+      }
+    ],
+    "topPages": [
+      {
+        "url": "/",
+        "keywords": 21,
+        "volume": 42700,
+        "bestPosition": 10
+      },
+      {
+        "url": "https://bestroofingnow.com/",
+        "keywords": 39,
+        "volume": 15090,
+        "bestPosition": 1
+      },
+      {
+        "url": "https://bestroofingnow.com/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+        "keywords": 5,
+        "volume": 10630,
+        "bestPosition": 9
+      },
+      {
+        "url": "https://bestroofingnow.com/blog/roof-shingle-cost-per-square-foot",
+        "keywords": 23,
+        "volume": 10250,
+        "bestPosition": 52
+      },
+      {
+        "url": "https://bestroofingnow.com/blog/roof-ridges-and-valleys-explained-purpose-benefits-and-maintenance-for-homeowners",
+        "keywords": 2,
+        "volume": 4200,
+        "bestPosition": 36
+      },
+      {
+        "url": "/compare/gaf-vs-certainteed",
+        "keywords": 8,
+        "volume": 3480,
+        "bestPosition": 30
+      },
+      {
+        "url": "/services/gutter-guards",
+        "keywords": 4,
+        "volume": 2670,
+        "bestPosition": 28
+      },
+      {
+        "url": "https://bestroofingnow.com/blog/everything-you-need-to-know-about-storm-damage-roof-inspections-in-lake-norman",
+        "keywords": 2,
+        "volume": 1970,
+        "bestPosition": 88
+      },
+      {
+        "url": "/blog/the-anatomy-of-a-roof-every-part-homeowners-should-know",
+        "keywords": 1,
+        "volume": 1600,
+        "bestPosition": 95
+      },
+      {
+        "url": "/locations/concord-nc",
+        "keywords": 7,
+        "volume": 1190,
+        "bestPosition": 44
+      },
+      {
+        "url": "https://bestroofingnow.com/presidential/",
+        "keywords": 1,
+        "volume": 1000,
+        "bestPosition": 107
+      },
+      {
+        "url": "/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+        "keywords": 1,
+        "volume": 1000,
+        "bestPosition": 20
+      },
+      {
+        "url": "https://bestroofingnow.com/locations/rock-hill-sc",
+        "keywords": 10,
+        "volume": 920,
+        "bestPosition": 37
+      },
+      {
+        "url": "https://bestroofingnow.com/locations/hickory-nc",
+        "keywords": 7,
+        "volume": 910,
+        "bestPosition": 27
+      },
+      {
+        "url": "/materials/flat-roofing",
+        "keywords": 3,
+        "volume": 850,
+        "bestPosition": 101
+      },
+      {
+        "url": "/blog/when-should-i-replace-my-roof",
+        "keywords": 7,
+        "volume": 800,
+        "bestPosition": 40
+      },
+      {
+        "url": "/locations/hickory-nc",
+        "keywords": 2,
+        "volume": 780,
+        "bestPosition": 32
+      },
+      {
+        "url": "/locations/china-grove-nc",
+        "keywords": 1,
+        "volume": 720,
+        "bestPosition": 93
+      },
+      {
+        "url": "https://bestroofingnow.com/blog/gutter-installation-mistakes-that-can-wreck-your-roof-and-how-to-avoid-them",
+        "keywords": 1,
+        "volume": 720,
+        "bestPosition": 87
+      },
+      {
+        "url": "/services/metal-roofing",
+        "keywords": 2,
+        "volume": 640,
+        "bestPosition": 35
+      }
+    ]
+  },
+  "actionItems": [
+    {
+      "priority": "critical",
+      "priorityScore": 100,
+      "category": "serp",
+      "title": "Very few top 10 rankings",
+      "description": "Only 4 keywords in top 10. Focus on improving existing rankings and building authority.",
+      "affectedUrls": []
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Description too long (>160 chars)",
+      "description": "Found on /",
+      "affectedUrls": [
+        "/"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Title too long (>60 chars)",
+      "description": "Found on /roofing-charlotte-nc",
+      "affectedUrls": [
+        "/roofing-charlotte-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Description too long (>160 chars)",
+      "description": "Found on /roofing-charlotte-nc",
+      "affectedUrls": [
+        "/roofing-charlotte-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Missing H1 tag",
+      "description": "Found on /roofing-charlotte-nc",
+      "affectedUrls": [
+        "/roofing-charlotte-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Description too long (>160 chars)",
+      "description": "Found on /locations/huntersville-nc",
+      "affectedUrls": [
+        "/locations/huntersville-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Missing H1 tag",
+      "description": "Found on /locations/huntersville-nc",
+      "affectedUrls": [
+        "/locations/huntersville-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Description too long (>160 chars)",
+      "description": "Found on /locations/mooresville-nc",
+      "affectedUrls": [
+        "/locations/mooresville-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Missing H1 tag",
+      "description": "Found on /locations/mooresville-nc",
+      "affectedUrls": [
+        "/locations/mooresville-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Multiple H1 tags (2)",
+      "description": "Found on /blog/roof-shingle-cost-per-square-foot",
+      "affectedUrls": [
+        "/blog/roof-shingle-cost-per-square-foot"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Content below benchmark (697 < 1500)",
+      "description": "Found on /blog/roof-shingle-cost-per-square-foot",
+      "affectedUrls": [
+        "/blog/roof-shingle-cost-per-square-foot"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Title too long (>60 chars)",
+      "description": "Found on /blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+      "affectedUrls": [
+        "/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "onPage",
+      "title": "Multiple H1 tags (2)",
+      "description": "Found on /blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one",
+      "affectedUrls": [
+        "/blog/roof-crickets-101-what-they-are-benefits-and-why-your-roof-might-need-one"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "schema",
+      "title": "Missing schema on /",
+      "description": "Missing: LocalBusiness",
+      "affectedUrls": [
+        "/"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "schema",
+      "title": "Missing schema on /roofing-charlotte-nc",
+      "description": "Missing: LocalBusiness, Place",
+      "affectedUrls": [
+        "/roofing-charlotte-nc"
+      ]
+    },
+    {
+      "priority": "medium",
+      "priorityScore": 50,
+      "category": "contentGap",
+      "title": "22 keywords in striking distance",
+      "description": "Keywords ranking 11-30 with 4,100 total volume. Optimize these pages for quick wins.",
+      "affectedUrls": []
+    }
+  ]
+}

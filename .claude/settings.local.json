@@ -134,7 +134,17 @@
       "WebFetch(domain:cms.bestroofingnow.com)",
       "Bash(where:*)",
       "Bash(node scripts/blog-cannibalization-audit.js:*)",
-      "Bash(node scripts/seo-full-audit.js:*)"
+      "Bash(node scripts/seo-full-audit.js:*)",
+      "Bash(git -c commit.gpgsign=false merge origin/main --no-edit)",
+      "Bash(git -c commit.gpgsign=false commit --no-edit)",
+      "Bash(git pull:*)",
+      "WebSearch",
+      "Bash(cat src/app/robots.ts)",
+      "Bash(cat public/robots.txt)",
+      "Bash(git remote:*)",
+      "Bash(gh pr:*)",
+      "mcp__claude_ai_Vercel__list_teams",
+      "mcp__claude_ai_Vercel__list_projects"
     ]
   }
 }
