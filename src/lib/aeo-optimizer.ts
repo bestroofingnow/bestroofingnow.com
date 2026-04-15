@@ -34,24 +34,24 @@ function getDb() {
 const BUSINESS_INFO = {
   name: 'Best Roofing Now',
   type: 'RoofingContractor',
-  url: 'https://bestroofingnow.com',
-  phone: '(704) 305-1980',
+  url: 'https://www.bestroofingnow.com',
+  phone: '(704) 605-6047',
   email: 'info@bestroofingnow.com',
   address: {
-    streetAddress: '1108 Greenwood Cliff',
+    streetAddress: '10130 Mallard Creek Rd Ste 300',
     addressLocality: 'Charlotte',
     addressRegion: 'NC',
-    postalCode: '28204',
+    postalCode: '28262',
     addressCountry: 'US',
   },
-  geo: { latitude: 35.2271, longitude: -80.8431 },
+  geo: { latitude: 35.3388195, longitude: -80.7695464 },
   areaServed: [
     'Charlotte', 'Huntersville', 'Cornelius', 'Davidson', 'Mooresville',
     'Concord', 'Matthews', 'Mint Hill', 'Indian Trail', 'Fort Mill',
     'Rock Hill', 'Gastonia', 'Mt Holly', 'Denver', 'Lake Norman',
   ],
   priceRange: '$$',
-  rating: { value: 4.9, count: 150 },
+  rating: { value: 5.0, count: 62 },
 };
 
 interface AeoSuggestion {
