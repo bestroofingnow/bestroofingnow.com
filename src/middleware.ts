@@ -74,6 +74,7 @@ const KNOWN_ROUTES = new Set([
   'lake-norman-waterfront-roofing',
   'lake-norman-storm-damage-guide',
   'lake-norman-roofing-costs-2026',
+  'lake-norman-roofing-guide',
   // System routes
   'api',
   '_next',
