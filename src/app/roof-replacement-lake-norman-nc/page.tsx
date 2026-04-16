@@ -25,6 +25,7 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
@@ -460,6 +461,27 @@ export default function RoofReplacementLakeNormanNCPage() {
         citySlug="lake-norman"
         service="Roof Replacement"
       />
+
+      {/* Lake Norman Community Trust Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-primary mb-6">Trusted by the Lake Norman Community</h2>
+            <p className="text-gray text-lg mb-8">
+              Best Roofing Now is a proud member of the{' '}
+              <a href="https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292" target="_blank" rel="noopener" className="text-primary font-semibold hover:text-accent">Lake Norman Chamber of Commerce</a>,{' '}
+              <a href="https://lknsbn.com" target="_blank" rel="noopener" className="text-primary font-semibold hover:text-accent">LKN Small Business Network</a>, and{' '}
+              <a href="https://lknconnect.com" target="_blank" rel="noopener" className="text-primary font-semibold hover:text-accent">LKN Connect Community</a>.
+              We are the preferred roofing contractor for Keller Williams Lake Norman agents for pre-listing and buyer-requested roof replacements.
+            </p>
+            <Link href="/lake-norman-roofing-guide" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+              Read Our Complete Lake Norman Roofing Guide <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <DirectoryCitations pageType="location" locationSlug="lake-norman" />
 
       <CTASection
         title="Get Your Free Roof Replacement Estimate"

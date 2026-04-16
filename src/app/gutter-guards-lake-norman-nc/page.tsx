@@ -605,6 +605,18 @@ export default function GutterGuardsLakeNormanNCPage() {
         service="Gutter Guards"
       />
 
+      {/* Lake Norman Guide Cross-Link */}
+      <section className="py-8 bg-primary/5">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gray mb-4">Want to learn everything about roofing on Lake Norman?</p>
+            <Link href="/lake-norman-roofing-guide" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors text-lg">
+              Read The Complete Lake Norman Roofing Guide (2026) <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="Ready to Stop Cleaning Gutters on Lake Norman?"
         subtitle="Get a free, no-obligation estimate for gutter guard installation. We'll assess your tree coverage and recommend the best gutter protection for your Lake Norman home."

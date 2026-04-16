@@ -27,6 +27,7 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
@@ -427,6 +428,27 @@ export default function RoofRepairLakeNormanNCPage() {
         citySlug="lake-norman"
         service="Roof Repair"
       />
+
+      {/* Lake Norman Community Trust Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-primary mb-6">Lake Norman&apos;s Trusted Roof Repair Team</h2>
+            <p className="text-gray text-lg mb-8">
+              As members of the{' '}
+              <a href="https://business.lakenormanchamber.org/directory/details/best-roofing-now-4317292" target="_blank" rel="noopener" className="text-primary font-semibold hover:text-accent">Lake Norman Chamber of Commerce</a>,{' '}
+              <a href="https://lknsbn.com" target="_blank" rel="noopener" className="text-primary font-semibold hover:text-accent">LKN Small Business Network</a>, and{' '}
+              <a href="https://lknconnect.com" target="_blank" rel="noopener" className="text-primary font-semibold hover:text-accent">LKN Connect Community</a>,
+              we are invested in the Lake Norman community. Keller Williams Lake Norman trusts us as their preferred roofing contractor.
+            </p>
+            <Link href="/lake-norman-roofing-guide" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+              Read Our Complete Lake Norman Roofing Guide <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <DirectoryCitations pageType="location" locationSlug="lake-norman" />
 
       <CTASection
         title="Ready to Fix Your Lake Norman Roof?"

@@ -605,6 +605,18 @@ export default function LakeNormanRoofingCostsPage() {
         service="Roofing"
       />
 
+      {/* Lake Norman Guide Cross-Link */}
+      <section className="py-8 bg-primary/5">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gray mb-4">Want to learn everything about roofing on Lake Norman?</p>
+            <Link href="/lake-norman-roofing-guide" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors text-lg">
+              Read The Complete Lake Norman Roofing Guide (2026) <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="Get Your Free Lake Norman Roofing Estimate"
         subtitle="Transparent pricing with no hidden fees. Contact Lake Norman's trusted roofers for a detailed, no-obligation estimate for your home."

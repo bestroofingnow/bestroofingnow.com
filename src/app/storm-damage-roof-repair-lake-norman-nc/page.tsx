@@ -473,6 +473,18 @@ export default function StormDamageRoofRepairLakeNormanNCPage() {
         service="Storm Damage Roof Repair"
       />
 
+      {/* Lake Norman Guide Cross-Link */}
+      <section className="py-8 bg-primary/5">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gray mb-4">Want to learn everything about roofing on Lake Norman?</p>
+            <Link href="/lake-norman-roofing-guide" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors text-lg">
+              Read The Complete Lake Norman Roofing Guide (2026) <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="Storm Damage? We're Here to Help."
         subtitle="Get a free storm damage inspection and insurance claim assistance from Lake Norman's most trusted roofing company. We'll document the damage, guide you through the claims process, and restore your roof."
