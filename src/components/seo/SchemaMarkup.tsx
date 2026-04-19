@@ -109,7 +109,7 @@ export function LocalBusinessSchema({ includeRating = false }: { includeRating?:
         },
         geoRadius: '80467', // 50 miles in meters
       },
-      ...LOCATIONS.slice(0, 10).map((loc) => ({
+      ...LOCATIONS.map((loc) => ({
         '@type': 'City',
         name: loc.city,
         containedInPlace: {
@@ -199,6 +199,12 @@ interface ServiceSchemaProps {
     title: string;
     description: string;
     slug: string;
+    // Optional price range — when both values are provided the schema emits
+    // an AggregateOffer, which lets Google/Bing show the price in rich results
+    // for "cost" queries. Omit both to keep the generic Offer fallback.
+    lowPrice?: number;
+    highPrice?: number;
+    offerCount?: number;
   };
   includeRating?: boolean;
 }
@@ -210,6 +216,11 @@ export function ServiceSchema({ service, includeRating = false }: ServiceSchemaP
     '@id': `${SITE_CONFIG.url}/services/${service.slug}/#service`,
     name: service.title,
     description: service.description,
+    // Disambiguate the concept for LLMs and knowledge-graph ingestion.
+    additionalType: [
+      'https://en.wikipedia.org/wiki/Domestic_roof_construction',
+      'https://www.wikidata.org/wiki/Q83180',
+    ],
     provider: getRoofingContractorIdentity(),
     areaServed: LOCATIONS.map((loc) => ({
       '@type': 'City',
@@ -226,14 +237,24 @@ export function ServiceSchema({ service, includeRating = false }: ServiceSchemaP
         worstRating: 1,
       },
     } : {}),
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        priceCurrency: 'USD',
-      },
-    },
+    offers: (service.lowPrice !== undefined && service.highPrice !== undefined)
+      ? {
+          '@type': 'AggregateOffer',
+          priceCurrency: 'USD',
+          lowPrice: service.lowPrice,
+          highPrice: service.highPrice,
+          offerCount: service.offerCount ?? 1,
+          availability: 'https://schema.org/InStock',
+          priceValidUntil: '2026-12-31',
+        }
+      : {
+          '@type': 'Offer',
+          availability: 'https://schema.org/InStock',
+          priceSpecification: {
+            '@type': 'PriceSpecification',
+            priceCurrency: 'USD',
+          },
+        },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: `${service.title} Services`,
@@ -1022,7 +1043,12 @@ export function ProductSchema({ product }: ProductSchemaProps) {
 // For voice search, featured snippets, and AI assistants
 // ============================================
 
-// Speakable Schema for voice assistants (Google Assistant, Alexa, Siri)
+// Speakable Schema for voice assistants (Google Assistant, Alexa, Siri).
+// Selectors target DOM that actually exists on every page — h1 is universal,
+// .speakable-intro is rendered by SpeakableContent/SpeakableContentBlocks and
+// present on most service/location pages. The richer selector list (services,
+// contact, cost, etc.) lives in EnhancedSpeakableSchema for pages that render
+// SpeakableContentBlocks.
 export function SpeakableSchema() {
   const schema = {
     '@context': 'https://schema.org',
@@ -1031,7 +1057,7 @@ export function SpeakableSchema() {
     name: `${SITE_CONFIG.name} - Charlotte's Trusted Roofing Company`,
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['.speakable-intro', '.speakable-services', '.speakable-contact'],
+      cssSelector: ['h1', '.speakable-intro'],
       xpath: [
         '/html/head/meta[@name="description"]/@content',
       ],
@@ -2258,20 +2284,34 @@ interface ServiceAreaPageSchemaProps {
   county?: string;
   distance: number; // Distance from Charlotte HQ in miles
   slug: string;
+  // Optional override for pages NOT under /locations/[slug].
+  // When provided, schema @id and url match the actual page path (prevents Google
+  // seeing a Service URL that resolves to 404).
+  pagePath?: string;
 }
 
-export function ServiceAreaPageSchema({ city, state, county, distance, slug }: ServiceAreaPageSchemaProps) {
+export function ServiceAreaPageSchema({ city, state, county, distance, slug, pagePath }: ServiceAreaPageSchemaProps) {
   // Calculate estimated response time based on distance
   const responseTime = distance <= 15 ? '30-45 minutes' : distance <= 25 ? '45-60 minutes' : '1-2 hours';
+  // Build the real page URL: use explicit pagePath when given, otherwise fall back
+  // to the legacy /locations/{slug} form for pages that really do live there.
+  const normalizedPath = pagePath
+    ? (pagePath.startsWith('/') ? pagePath : `/${pagePath}`)
+    : `/locations/${slug}`;
+  const pageUrl = `${SITE_CONFIG.url}${normalizedPath}`;
 
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `${SITE_CONFIG.url}/locations/${slug}/#service`,
+    '@id': `${pageUrl}/#service`,
     name: `Roofing Services in ${city}, ${state}`,
     description: `Professional roofing services in ${city}, ${state}${county ? ` (${county} County)` : ''} provided by ${SITE_CONFIG.name}. Located ${distance} miles from our Charlotte headquarters, we offer fast response times and expert roofing solutions for the ${city} area.`,
-    url: `${SITE_CONFIG.url}/locations/${slug}`,
+    url: pageUrl,
     serviceType: 'Roofing Services',
+    additionalType: [
+      'https://en.wikipedia.org/wiki/Domestic_roof_construction',
+      'https://www.wikidata.org/wiki/Q83180',
+    ],
     // Reference the global business entity by @id (full details in LocalBusinessSchema)
     provider: {
       '@type': 'RoofingContractor',

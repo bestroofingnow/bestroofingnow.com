@@ -1,4 +1,7 @@
-import { NextResponse } from 'next/server';
+import {
+NextResponse } from 'next/server';
+
+export const dynamic = 'force-static';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
@@ -13,6 +16,7 @@ export async function GET() {
     { loc: `${BASE_URL}/sitemaps/products`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/materials`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/resources`, lastmod: new Date().toISOString() },
+    { loc: `${BASE_URL}/sitemaps/faq`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/stories`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/blog`, lastmod: new Date().toISOString() },
     { loc: `${BASE_URL}/sitemaps/images`, lastmod: new Date().toISOString() },

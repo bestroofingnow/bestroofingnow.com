@@ -1,4 +1,7 @@
-import { NextResponse } from 'next/server';
+import {
+NextResponse } from 'next/server';
+
+export const dynamic = 'force-static';
 import {
   ROOFING_MATERIALS,
   ROOFING_GUIDES,

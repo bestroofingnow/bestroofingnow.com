@@ -1,4 +1,7 @@
-import { NextResponse } from 'next/server';
+import {
+NextResponse } from 'next/server';
+
+export const dynamic = 'force-static';
 import { LOCATIONS } from '@/lib/constants';
 import { getAllNeighborhoodParams } from '@/lib/neighborhoods';
 

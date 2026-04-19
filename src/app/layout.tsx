@@ -148,9 +148,7 @@ export default function RootLayout({
         {/* CRITICAL: Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* CRITICAL: Preconnect to CMS for WordPress images and GCS for project photos */}
-        <link rel="preconnect" href="https://cms.bestroofingnow.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://cms.bestroofingnow.com" />
+        {/* CRITICAL: Preconnect to GCS for PMI project photos */}
         <link rel="preconnect" href="https://storage.googleapis.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://storage.googleapis.com" />
         {/* CRITICAL: Logo preload for LCP - the header logo is the LCP element */}
@@ -160,18 +158,6 @@ export default function RootLayout({
           href="/_next/image?url=%2Fimages%2Flogo.jpg&w=384&q=75"
           fetchPriority="high"
         />
-        {/* Hero image preload - ONLY for desktop (hero image hidden on mobile for faster LCP) */}
-        <link
-          rel="preload"
-          as="image"
-          href="https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp"
-          type="image/webp"
-          fetchPriority="high"
-          media="(min-width: 768px)"
-        />
-        {/* PMI project photos - storage.googleapis.com */}
-        <link rel="preconnect" href="https://storage.googleapis.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://storage.googleapis.com" />
         {/* Secondary preconnects */}
         <link rel="preconnect" href="https://www.bestroofingnow.com" />
         <link rel="dns-prefetch" href="https://www.bestroofingnow.com" />

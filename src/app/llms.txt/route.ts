@@ -196,6 +196,10 @@ Best Roofing Now is the most community-embedded roofing company in the Lake Norm
 - [Contact](${BASE}/contact): Get a free estimate. Phone (704) 605-6047. Address: 10130 Mallard Creek Road, Suite 300, Charlotte NC 28262.
 - [FAQ](${BASE}/faq): General roofing FAQs.
 
+## Machine-Readable Data
+
+- [Service Areas (JSON)](${BASE}/data/service-areas.json): Structured data covering every city we serve — name, county, distance from HQ, estimated response time, coordinates, canonical page URL.
+
 ## Optional
 
 - [Blog](${BASE}/blog): Roofing tips, guides, and news from Best Roofing Now.
