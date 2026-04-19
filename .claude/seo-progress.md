@@ -74,7 +74,7 @@ Candidate for extraction once 2 more siblings done: `<ServiceLocationEnhancement
 All 10 Tier 3 directory pages enhanced (locations, blog, products, materials, brands, roof-types, seasonal, guides, services, compare). Next pass: Tier 4 service entity pages, starting with `flat-roof-repair` (227 lines).
 
 ### Tier 4 — Service entity pages
-- [ ] `flat-roof-repair` (227 lines)
+- [x] `flat-roof-repair` — 2026-04-19 — Tier 4 service entity page (located at /flat-roof-repair not /services/flat-roof-repair). Preserved existing BreadcrumbSchema + FAQSchema + ServiceSchema + AISearchBundle + VoiceSearch. Added: WebPageSchema, FeaturedSnippetListAnswerSchema (5 flat-roof systems), SpeakableContentBlocks, FreeInspectionOfferSchema. Expanded FAQs 6→10 with commercial flat-roof specifics (2026 pricing per repair type with emergency surcharge, all 5 system repair methods, 5 ponding root causes, coating-vs-repair-vs-replace economics, manufacturer warranty compatibility, commercial insurance claim process, emergency dispatch response times). Added 10-point diagnostic checklist (infrared moisture scan, probe-test seams, pitch pockets, HVAC curb skirt, parapet coping, ponding mapping, blister progression). Added 3-option "Repair vs Coat vs Replace" decision framework grid with when/cost criteria per option. Added speakable-intro hero paragraph naming certifications and NDL warranty preservation. Added related-services internal link strip. Expanded system-specific descriptions with manufacturer detail. Fixed internal link (/commercial-roofing-services → /services/commercial-roofing). 227→322 lines.
 - [ ] `chimney-flashing-repair` (238 lines)
 - [ ] `skylight-installation` (241 lines)
 - [ ] `standing-seam-metal-roofing` (244 lines)
