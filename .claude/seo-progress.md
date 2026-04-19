@@ -36,7 +36,7 @@
 
 ### Tier 2 — Thin service+location pages (200–250 lines, highest enhancement ROI)
 - [x] `roof-inspection-matthews-nc` — 2026-04-19 — Added 4 schemas (WebPage, FeaturedSnippet, Speakable, FreeInspectionOffer), expanded FAQs 6→10 with Matthews-specific answers, added 10-point inspector checklist section, added "Roof Conditions Unique to Matthews" section (4 local climate cards), added speakable-intro with neighborhoods, added related-services internal link strip. 199→287 lines.
-- [ ] `storm-damage-roof-repair-matthews-nc` (201 lines)
+- [x] `storm-damage-roof-repair-matthews-nc` — 2026-04-19 — Same enhancement pattern as inspection page: +4 schemas, FAQs 6→10 with claim/insurance specifics, 10-point damage red-flags section, Matthews storm history + insurance carriers section, speakable-intro with neighborhoods, related-services link strip. 201→322 lines.
 - [ ] `storm-damage-roof-repair-davidson-nc` (202 lines)
 - [ ] `commercial-roofing-matthews-nc` (203 lines)
 - [ ] `roof-repair-davidson-nc` (204 lines)
