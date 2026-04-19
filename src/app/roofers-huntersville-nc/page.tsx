@@ -30,7 +30,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Huntersville NC | 5-Star Rated',
   description:
@@ -813,6 +814,9 @@ export default function RoofersHuntersvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Huntersville"} />
+      <LKNDataCitations city={"Huntersville"} />
       <CTASection
         title="Ready to Work with Huntersville's Top-Rated Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Lake Norman home's needs and budget."

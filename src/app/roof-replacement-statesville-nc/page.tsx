@@ -25,7 +25,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Statesville NC',
   description:
@@ -553,6 +554,9 @@ export default function RoofReplacementStatesvilleNCPage() {
         service="Roof Replacement"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Ready for a New Roof on Your Statesville Home?"
         subtitle="Get a free, no-obligation replacement estimate from our certified team. We'll help you choose the perfect roofing system for your Iredell County home."

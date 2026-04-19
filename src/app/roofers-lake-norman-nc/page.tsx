@@ -22,12 +22,16 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: "Roofers Lake Norman NC | LKN's Top-Rated | Best Roofing Now",
   description:
@@ -198,6 +202,9 @@ export default function RoofersLakeNormanNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofers-lake-norman-nc`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/roofers-lake-norman-nc`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/roofers-lake-norman-nc`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -466,6 +473,7 @@ export default function RoofersLakeNormanNCPage() {
 
       <DirectoryCitations pageType="location" locationSlug="lake-norman" />
 
+      <LKNNeighborhoodGrid currentSlug="roofers-lake-norman-nc" />
       <CTASection
         title="Ready to Work With Lake Norman's Best Roofers?"
         subtitle="Get a free, no-obligation estimate from the LKN area's highest-rated roofing company. 200+ projects completed, 5-star rated, veteran-owned."

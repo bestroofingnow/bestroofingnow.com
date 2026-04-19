@@ -25,7 +25,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Cornelius NC | Lake Norman | Free Estimates',
   description:
@@ -396,6 +397,9 @@ export default function RoofReplacementCorneliusNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Cornelius"} />
+      <LKNDataCitations city={"Cornelius"} />
       <CTASection
         title="Ready for Your New Cornelius Roof?"
         subtitle="Get a free estimate for roof replacement from Lake Norman's most trusted roofing contractor. Financing available with payments as low as $150/month."

@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Statesville NC',
   description:
@@ -554,6 +555,9 @@ export default function EmergencyRoofRepairStatesvilleNCPage() {
         service="Emergency Roof Repair"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Roof Emergency in Statesville? We're Here 24/7."
         subtitle="Call now for immediate emergency roofing assistance. Our team will respond quickly to secure your property and prevent further damage."

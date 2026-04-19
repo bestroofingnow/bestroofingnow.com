@@ -31,7 +31,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Jetton Cove Cornelius NC',
   description:
@@ -619,6 +621,10 @@ export default function RoofingJettonCoveCorneliusPage() {
         service="Waterfront Roofing"
       />
 
+
+      <LKNNeighborhoodGrid currentCity="Cornelius" currentSlug="roofing-jetton-cove-cornelius-nc" />
+      <LKNPartnershipsBlock city={"Cornelius"} />
+      <LKNDataCitations city={"Cornelius"} />
       <CTASection
         title="Elevate Your Jetton Cove Home"
         subtitle="Request a consultation with our waterfront roofing specialists. We'll help you select premium materials engineered for lakeside exposure and built to protect your Jetton Cove investment for generations."

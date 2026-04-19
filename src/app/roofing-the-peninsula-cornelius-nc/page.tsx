@@ -32,7 +32,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing The Peninsula Cornelius NC',
   description:
@@ -629,6 +631,10 @@ export default function RoofingThePeninsulaCorneliusPage() {
         service="Luxury Roofing"
       />
 
+
+      <LKNNeighborhoodGrid currentCity="Cornelius" currentSlug="roofing-the-peninsula-cornelius-nc" />
+      <LKNPartnershipsBlock city={"Cornelius"} />
+      <LKNDataCitations city={"Cornelius"} />
       <CTASection
         title="Elevate Your Peninsula Estate"
         subtitle="Request a private consultation with our luxury lakefront roofing specialists. We'll help you select premium materials engineered for Peninsula waterfront exposure and built to protect your investment for generations."

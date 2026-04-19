@@ -27,7 +27,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Lake Norman NC | Flat Roof & TPO Specialists',
   description:
@@ -700,6 +701,9 @@ export default function CommercialRoofingLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Ready to Protect Your Lake Norman Business?"
         subtitle="Get a free, no-obligation commercial roofing quote. We serve businesses across Cornelius, Davidson, Mooresville, Huntersville, and Denver with honest recommendations tailored to your needs."

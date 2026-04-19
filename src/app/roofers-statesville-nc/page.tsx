@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Statesville NC',
   description:
@@ -557,6 +558,9 @@ export default function RoofersStatesvilleNCPage() {
         service="Roofers"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Ready to Hire Statesville's Most Trusted Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified roofing team. We'll assess your roof and provide honest recommendations for your Iredell County home."

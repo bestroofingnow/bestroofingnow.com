@@ -32,7 +32,10 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Mooresville NC | 5-Star',
   description:
@@ -237,6 +240,7 @@ export default function RoofingMooresvilleNCPage() {
         city="Mooresville"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofing-mooresville-nc`} city={"Mooresville"} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -577,6 +581,10 @@ export default function RoofingMooresvilleNCPage() {
         </div>
       </section>
 
+
+      <LKNNeighborhoodGrid currentCity="Mooresville" currentSlug="roofing-mooresville-nc" />
+      <LKNPartnershipsBlock city={"Mooresville"} />
+      <LKNDataCitations city={"Mooresville"} />
       <CTASection
         title="Ready for Expert Roofing in Mooresville NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Lake Norman home or business."

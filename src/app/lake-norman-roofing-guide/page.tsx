@@ -60,10 +60,13 @@ import {
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
-
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 // ============================================================
 // METADATA
 // ============================================================
@@ -500,6 +503,9 @@ export default function LakeNormanRoofingGuidePage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-guide`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-guide`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-guide`} />
       <ItemListSchema
         title="Lake Norman Roofing Guide - Table of Contents"
         description="Complete roofing guide for Lake Norman NC homeowners"
@@ -1954,6 +1960,7 @@ export default function LakeNormanRoofingGuidePage() {
       {/* ============================================================ */}
       {/* FINAL CTA */}
       {/* ============================================================ */}
+      <LKNNeighborhoodGrid currentSlug="lake-norman-roofing-guide" />
       <CTASection />
     </>
   );

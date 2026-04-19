@@ -29,7 +29,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Denver NC | 5-Star',
   description:
@@ -517,6 +518,9 @@ export default function RoofersDenverNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Denver"} />
+      <LKNDataCitations city={"Denver"} />
       <CTASection
         title="Ready for Quality Roofing in Denver NC?"
         subtitle="Get a free estimate from Denver's most trusted roofers. Our team will assess your roof and provide honest recommendations tailored to your Lake Norman western shore home."

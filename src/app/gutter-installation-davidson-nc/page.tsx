@@ -21,7 +21,8 @@ import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Davidson NC',
   description:
@@ -199,6 +200,9 @@ export default function GutterInstallationDavidsonNCPage() {
       <ServiceCityLinks city="Davidson" citySlug="davidson-nc" title="Complete Roofing Services in Davidson" subtitle="Beyond gutters, we offer comprehensive solutions." />
       <RelatedCitiesLinks currentCity="Davidson" service="Gutter Installation" serviceSlug="gutter-installation" title="Gutter Installation in Nearby Cities" />
       <CityGeoSection city="Davidson" state="NC" citySlug="davidson-nc" service="Gutter Installation" />
+
+      <LKNPartnershipsBlock city={"Davidson"} />
+      <LKNDataCitations city={"Davidson"} />
       <CTASection title="Protect Your Davidson Home with New Gutters" subtitle="Get a free estimate for seamless gutter installation." />
     </>
   );

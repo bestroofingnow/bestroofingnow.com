@@ -28,7 +28,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Cornelius NC | Free',
   description:
@@ -687,6 +688,9 @@ export default function RoofInspectionCorneliusNCPage() {
         service="Roof Inspection"
       />
 
+
+      <LKNPartnershipsBlock city={"Cornelius"} />
+      <LKNDataCitations city={"Cornelius"} />
       <CTASection
         title="Schedule Your Free Cornelius NC Roof Inspection"
         subtitle="Get a comprehensive roof assessment with detailed photos and report for your Lake Norman eastern shore home. 100% free, no obligation. Know exactly what shape your roof is in."

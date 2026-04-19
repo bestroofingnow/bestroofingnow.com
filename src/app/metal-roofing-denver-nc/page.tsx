@@ -25,7 +25,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Denver NC',
   description:
@@ -517,6 +518,9 @@ export default function MetalRoofingDenverNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Denver"} />
+      <LKNDataCitations city={"Denver"} />
       <CTASection
         title="Ready for Metal Roofing in Denver NC?"
         subtitle="Get a free quote for premium metal roofing from Lake Norman's western shore specialists. Our standing seam systems are engineered for Denver's lakefront wind exposure and backed by warranties up to 50 years."

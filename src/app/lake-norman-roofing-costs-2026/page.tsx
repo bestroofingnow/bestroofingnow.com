@@ -29,7 +29,10 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 export const metadata: Metadata = {
   title: 'Lake Norman Roofing Costs 2026',
   description:
@@ -251,6 +254,9 @@ export default function LakeNormanRoofingCostsPage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-costs-2026`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-costs-2026`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-costs-2026`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -617,6 +623,7 @@ export default function LakeNormanRoofingCostsPage() {
         </div>
       </section>
 
+      <LKNNeighborhoodGrid currentSlug="lake-norman-roofing-costs-2026" />
       <CTASection
         title="Get Your Free Lake Norman Roofing Estimate"
         subtitle="Transparent pricing with no hidden fees. Contact Lake Norman's trusted roofers for a detailed, no-obligation estimate for your home."

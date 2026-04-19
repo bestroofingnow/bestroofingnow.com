@@ -32,7 +32,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing The Point Mooresville NC',
   description:
@@ -625,6 +627,10 @@ export default function RoofingThePointMooresvillePage() {
         service="Luxury Roofing"
       />
 
+
+      <LKNNeighborhoodGrid currentCity="Mooresville" currentSlug="roofing-the-point-mooresville-nc" />
+      <LKNPartnershipsBlock city={"Mooresville"} />
+      <LKNDataCitations city={"Mooresville"} />
       <CTASection
         title="Elevate Your Point Estate"
         subtitle="Request a consultation with our lakefront roofing specialists. We'll help you select premium materials engineered for The Point's waterfront and golf course exposure, built to protect your investment for generations."

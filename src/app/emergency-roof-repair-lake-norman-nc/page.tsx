@@ -28,7 +28,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Lake Norman NC | 24/7 Service | Best Roofing Now',
   description:
@@ -494,6 +495,9 @@ export default function EmergencyRoofRepairLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Roof Emergency? Call Now for Immediate Help."
         subtitle="Best Roofing Now provides 24/7 emergency roof repair across the entire Lake Norman region. Our crews respond within 1-4 hours to protect your home from further damage."

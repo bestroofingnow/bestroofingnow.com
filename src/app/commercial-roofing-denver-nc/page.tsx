@@ -31,7 +31,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Denver NC',
   description:
@@ -701,6 +702,9 @@ export default function CommercialRoofingDenverNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Denver"} />
+      <LKNDataCitations city={"Denver"} />
       <CTASection
         title="Ready for Professional Commercial Roofing in Denver NC?"
         subtitle="Get a free, no-obligation estimate from Lake Norman's trusted commercial roofing company. Our certified team will assess your building and provide expert recommendations tailored to Lincoln County requirements and your business needs."

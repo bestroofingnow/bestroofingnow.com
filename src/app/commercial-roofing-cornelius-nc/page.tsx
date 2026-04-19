@@ -31,7 +31,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Cornelius NC',
   description:
@@ -643,6 +644,9 @@ export default function CommercialRoofingCorneliusNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Cornelius"} />
+      <LKNDataCitations city={"Cornelius"} />
       <CTASection
         title="Ready for Professional Commercial Roofing in Cornelius NC?"
         subtitle="Get a free, no-obligation estimate from Lake Norman's trusted commercial roofing company. Our certified team will assess your building and provide expert recommendations tailored to your business needs."

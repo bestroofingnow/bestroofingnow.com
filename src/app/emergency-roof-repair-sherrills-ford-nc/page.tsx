@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Sherrills Ford',
   description:
@@ -517,6 +518,9 @@ export default function EmergencyRoofRepairSherrillsFordNCPage() {
         service="Emergency Roof Repair"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Roof Emergency? We're Here 24/7 for Sherrills Ford"
         subtitle="Don't wait when your roof is compromised. Call our emergency team now for fast, professional response to protect your Lake Norman home."

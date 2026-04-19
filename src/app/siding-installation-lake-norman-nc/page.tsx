@@ -27,7 +27,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Siding Lake Norman NC',
   description:
@@ -617,6 +618,9 @@ export default function SidingInstallationLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Ready for Professional Siding on Lake Norman?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your waterfront home's exterior and recommend the best siding solution for lasting lakefront protection."

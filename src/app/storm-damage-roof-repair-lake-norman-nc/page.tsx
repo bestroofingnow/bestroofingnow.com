@@ -28,7 +28,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Lake Norman NC | Insurance Claims | Best Roofing Now',
   description:
@@ -485,6 +486,9 @@ export default function StormDamageRoofRepairLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Storm Damage? We're Here to Help."
         subtitle="Get a free storm damage inspection and insurance claim assistance from Lake Norman's most trusted roofing company. We'll document the damage, guide you through the claims process, and restore your roof."

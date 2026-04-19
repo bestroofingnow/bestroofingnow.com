@@ -32,7 +32,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Hail Damage Roof Repair Lake Norman NC',
   description:
@@ -653,6 +654,9 @@ export default function HailDamageRoofRepairLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Don't Let Hail Damage Go Unrepaired"
         subtitle="Schedule your free hail damage inspection today. Our team covers the entire Lake Norman region and will document all damage, help with your insurance claim, and ensure your lakefront or inland home is properly protected."

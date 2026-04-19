@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Guards Lake Norman NC',
   description:
@@ -617,6 +618,9 @@ export default function GutterGuardsLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Ready to Stop Cleaning Gutters on Lake Norman?"
         subtitle="Get a free, no-obligation estimate for gutter guard installation. We'll assess your tree coverage and recommend the best gutter protection for your Lake Norman home."

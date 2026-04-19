@@ -28,7 +28,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Mooresville NC',
   description:
@@ -684,6 +685,9 @@ export default function RoofInspectionMooresvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Mooresville"} />
+      <LKNDataCitations city={"Mooresville"} />
       <CTASection
         title="Schedule Your Free Mooresville Roof Inspection"
         subtitle="Get a comprehensive roof assessment with detailed photos and report - 100% free, no obligation. Know exactly what shape your roof is in."

@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Sherrills Ford NC',
   description:
@@ -524,6 +525,9 @@ export default function RoofersSherrillsFordNCPage() {
         service="Roofers"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Ready to Hire Sherrills Ford's Top-Rated Roofers?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations for your Lake Norman home."

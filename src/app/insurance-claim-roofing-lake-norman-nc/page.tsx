@@ -32,7 +32,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Insurance Claim Roofing Lake Norman NC',
   description:
@@ -689,6 +690,9 @@ export default function InsuranceClaimRoofingLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Need Help with a Roof Insurance Claim in Lake Norman?"
         subtitle="Get a free storm damage inspection and let us handle your insurance claim from start to finish. We serve Cornelius, Davidson, Mooresville, Huntersville, Denver, and Sherrills Ford."

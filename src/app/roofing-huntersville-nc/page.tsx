@@ -22,13 +22,16 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Huntersville NC | 5-Star',
   description:
@@ -231,6 +234,7 @@ export default function RoofingHuntersvilleNCPage() {
         city="Huntersville"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofing-huntersville-nc`} city={"Huntersville"} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -588,6 +592,10 @@ export default function RoofingHuntersvilleNCPage() {
         </div>
       </section>
 
+
+      <LKNNeighborhoodGrid currentCity="Huntersville" currentSlug="roofing-huntersville-nc" />
+      <LKNPartnershipsBlock city={"Huntersville"} />
+      <LKNDataCitations city={"Huntersville"} />
       <CTASection
         title="Ready for Expert Roofing in Huntersville NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Lake Norman home or business."

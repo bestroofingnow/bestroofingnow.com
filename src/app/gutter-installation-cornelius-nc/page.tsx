@@ -27,7 +27,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Cornelius NC',
   description:
@@ -697,6 +698,9 @@ export default function GutterInstallationCorneliusNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Cornelius"} />
+      <LKNDataCitations city={"Cornelius"} />
       <CTASection
         title="Ready for Seamless Gutters in Cornelius?"
         subtitle="Get a free, no-obligation estimate for custom seamless gutters. We'll measure your home, recommend the right size and style, and provide transparent pricing with no hidden fees."

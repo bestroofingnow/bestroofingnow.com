@@ -28,6 +28,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Mooresville NC',
@@ -612,6 +614,9 @@ export default function EmergencyRoofRepairMooresvilleNCPage() {
         citySlug="mooresville-nc"
         service="Emergency Roof Repair"
       />
+
+      <LKNPartnershipsBlock city="Mooresville" />
+      <LKNDataCitations city="Mooresville" />
 
       {/* Final Emergency CTA */}
       <section className="bg-accent text-white py-16">

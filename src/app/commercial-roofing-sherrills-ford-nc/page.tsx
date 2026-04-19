@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Sherrills Ford',
   description:
@@ -516,6 +517,9 @@ export default function CommercialRoofingSherrillsFordNCPage() {
         service="Commercial Roofing"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Get a Commercial Roofing Estimate for Sherrills Ford"
         subtitle="Free assessments and detailed estimates for commercial roofing projects. Protect your Catawba County business with expert roofing solutions."

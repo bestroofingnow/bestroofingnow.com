@@ -32,7 +32,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: "Roofing Governor's Island Denver NC | Lakefront Homes",
   description:
@@ -621,6 +623,10 @@ export default function RoofingGovernorsIslandDenverPage() {
         service="Luxury Roofing"
       />
 
+
+      <LKNNeighborhoodGrid currentCity="Denver" currentSlug="roofing-governors-island-denver-nc" />
+      <LKNPartnershipsBlock city={"Denver"} />
+      <LKNDataCitations city={"Denver"} />
       <CTASection
         title="Elevate Your Governor's Island Home"
         subtitle="Request a consultation with our lakefront roofing specialists. We'll help you select premium materials engineered for waterfront exposure and built to protect your investment for generations."

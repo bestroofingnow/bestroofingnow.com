@@ -27,7 +27,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Sherrills Ford',
   description:
@@ -523,6 +524,9 @@ export default function StormDamageRoofRepairSherrillsFordNCPage() {
         service="Storm Damage Roof Repair"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Storm Damage? Get Your Free Sherrills Ford Inspection"
         subtitle="Don't wait to file your insurance claim. Get a free storm damage inspection from our certified team and let us advocate for your Lake Norman home."

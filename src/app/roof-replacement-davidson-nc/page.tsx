@@ -27,7 +27,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Davidson NC',
   description:
@@ -650,6 +651,9 @@ export default function RoofReplacementDavidsonNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Davidson"} />
+      <LKNDataCitations city={"Davidson"} />
       <CTASection
         title="Ready to Replace Your Davidson Roof?"
         subtitle="Get a free, no-obligation quote from Davidson's trusted roofing experts. We'll help you choose the perfect roofing system for your home and budget."

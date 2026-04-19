@@ -33,7 +33,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Cornelius NC | Insurance Help',
   description:
@@ -694,6 +695,9 @@ export default function StormDamageRoofRepairCorneliusNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Cornelius"} />
+      <LKNDataCitations city={"Cornelius"} />
       <CTASection
         title="Need Storm Damage Help in Cornelius?"
         subtitle="Contact us today for a free storm damage inspection. We'll document all damage, guide you through the insurance process, and restore your Lake Norman home to pre-storm condition."

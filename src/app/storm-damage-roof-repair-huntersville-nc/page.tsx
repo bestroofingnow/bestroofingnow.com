@@ -33,7 +33,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help',
   description:
@@ -639,6 +640,9 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Huntersville"} />
+      <LKNDataCitations city={"Huntersville"} />
       <CTASection
         title="Need Storm Damage Help in Huntersville?"
         subtitle="Contact us today for a free storm damage inspection. We'll document all damage, help file your insurance claim, and restore your roof to pre-storm condition."

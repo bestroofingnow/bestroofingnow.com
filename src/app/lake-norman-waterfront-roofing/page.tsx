@@ -30,7 +30,10 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersville', 'Denver', 'Sherrills Ford'];
 
 export const metadata: Metadata = {
@@ -239,6 +242,9 @@ export default function LakeNormanWaterfrontRoofingPage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/lake-norman-waterfront-roofing`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-waterfront-roofing`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-waterfront-roofing`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -592,6 +598,7 @@ export default function LakeNormanWaterfrontRoofingPage() {
         </div>
       </section>
 
+      <LKNNeighborhoodGrid currentSlug="lake-norman-waterfront-roofing" />
       <CTASection
         title="Protect Your Lakefront Investment"
         subtitle="Get a free waterfront roofing assessment from Lake Norman's lakefront home specialists. Wind-resistant, impact-rated solutions for every shore of LKN."

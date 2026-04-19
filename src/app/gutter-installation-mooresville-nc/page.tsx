@@ -27,7 +27,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Mooresville NC | Seamless Gutters',
   description:
@@ -708,6 +709,9 @@ export default function GutterInstallationMooresvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Mooresville"} />
+      <LKNDataCitations city={"Mooresville"} />
       <CTASection
         title="Ready for Seamless Gutters in Mooresville?"
         subtitle="Get a free, no-obligation estimate for custom seamless gutters. We'll measure your home, recommend the ideal size and color, and provide transparent pricing with zero hidden fees."

@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Statesville NC',
   description:
@@ -554,6 +555,9 @@ export default function GutterInstallationStatesvilleNCPage() {
         service="Gutter Installation"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Ready for New Gutters on Your Statesville Home?"
         subtitle="Get a free, no-obligation estimate for seamless gutter installation. We'll assess your home and recommend the perfect gutter system for your needs."

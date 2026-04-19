@@ -22,11 +22,14 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Davidson NC | Top Rated',
   description:
@@ -231,6 +234,7 @@ export default function RoofingDavidsonNCPage() {
         city="Davidson"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofing-davidson-nc`} city={"Davidson"} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -571,6 +575,10 @@ export default function RoofingDavidsonNCPage() {
         </div>
       </section>
 
+
+      <LKNNeighborhoodGrid currentCity="Davidson" currentSlug="roofing-davidson-nc" />
+      <LKNPartnershipsBlock city={"Davidson"} />
+      <LKNDataCitations city={"Davidson"} />
       <CTASection
         title="Ready for Expert Roofing in Davidson NC?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations that respect your home's character and your budget."

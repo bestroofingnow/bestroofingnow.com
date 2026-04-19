@@ -27,7 +27,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Statesville NC',
   description:
@@ -553,6 +554,9 @@ export default function RoofInspectionStatesvilleNCPage() {
         service="Roof Inspection"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Schedule Your Free Statesville Roof Inspection"
         subtitle="Know your roof's true condition with a free, no-obligation inspection from our certified team. Detailed photo report included."

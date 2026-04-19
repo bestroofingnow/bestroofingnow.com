@@ -22,7 +22,8 @@ import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Davidson NC',
   description:
@@ -192,6 +193,9 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
       <ServiceCityLinks city="Davidson" citySlug="davidson-nc" title="Complete Roofing Services in Davidson" subtitle="Beyond storm damage, we offer comprehensive solutions." />
       <RelatedCitiesLinks currentCity="Davidson" service="Storm Damage Repair" serviceSlug="storm-damage-roof-repair" title="Storm Damage Repair in Nearby Cities" />
       <CityGeoSection city="Davidson" state="NC" citySlug="davidson-nc" service="Storm Damage Repair" />
+
+      <LKNPartnershipsBlock city={"Davidson"} />
+      <LKNDataCitations city={"Davidson"} />
       <CTASection title="Storm Damage? We're Here to Help Davidson" subtitle="Get a free inspection and insurance claim assistance." />
     </>
   );

@@ -31,7 +31,10 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 export const metadata: Metadata = {
   title: 'Best Roofer Lake Norman NC',
   description:
@@ -235,6 +238,9 @@ export default function BestRooferLakeNormanPage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/best-roofer-lake-norman-nc`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/best-roofer-lake-norman-nc`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/best-roofer-lake-norman-nc`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -638,6 +644,7 @@ export default function BestRooferLakeNormanPage() {
 
       <DirectoryCitations pageType="location" locationSlug="lake-norman" />
 
+      <LKNNeighborhoodGrid currentSlug="best-roofer-lake-norman-nc" />
       <CTASection
         title="Ready to Work with Lake Norman's Best Roofer?"
         subtitle="Get a free estimate from the #1 rated roofing company on Lake Norman. Veteran-owned, manufacturer certified, and trusted by hundreds of LKN homeowners."

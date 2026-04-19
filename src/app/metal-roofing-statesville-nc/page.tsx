@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Statesville NC',
   description:
@@ -552,6 +553,9 @@ export default function MetalRoofingStatesvilleNCPage() {
         service="Metal Roofing"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Ready for a Metal Roof on Your Statesville Home?"
         subtitle="Get a free consultation and estimate from our metal roofing specialists. We'll help you choose the perfect system for your Iredell County property."

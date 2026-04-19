@@ -34,7 +34,10 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getProjectMarkersForCities } from '@/lib/project-data';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 // All cities in the Lake Norman area for project map/gallery
 const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersville', 'Denver', 'Sherrills Ford'];
 
@@ -245,6 +248,9 @@ export default async function LakeNormanRoofingPage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -703,6 +709,7 @@ export default async function LakeNormanRoofingPage() {
 
       <DirectoryCitations pageType="location" locationSlug="lake-norman" />
 
+      <LKNNeighborhoodGrid currentSlug="roofing-lake-norman-nc" />
       <CTASection
         title="Ready for Your Lake Norman Roofing Project?"
         subtitle="Get a free estimate from Lake Norman's trusted roofing experts. We serve Cornelius, Davidson, Mooresville, Huntersville, and all LKN communities."

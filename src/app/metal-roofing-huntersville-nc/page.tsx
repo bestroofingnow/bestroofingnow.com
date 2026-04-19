@@ -28,7 +28,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Huntersville NC',
   description:
@@ -661,6 +662,9 @@ export default function MetalRoofingHuntersvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Huntersville"} />
+      <LKNDataCitations city={"Huntersville"} />
       <CTASection
         title="Ready for Premium Metal Roofing in Huntersville?"
         subtitle="Get a free, no-obligation estimate from Huntersville's metal roofing experts. We'll help you choose the perfect metal roofing system for your home and budget."

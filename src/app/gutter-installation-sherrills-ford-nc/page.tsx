@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Sherrills Ford',
   description:
@@ -517,6 +518,9 @@ export default function GutterInstallationSherrillsFordNCPage() {
         service="Gutter Installation"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Protect Your Sherrills Ford Home with New Gutters"
         subtitle="Get a free, no-obligation estimate for seamless gutter installation. Keep water away from your foundation and protect your Lake Norman investment."

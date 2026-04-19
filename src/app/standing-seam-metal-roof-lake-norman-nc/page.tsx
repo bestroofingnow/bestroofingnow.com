@@ -32,7 +32,9 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Standing Seam Metal Roof Lake Norman NC',
   description:
@@ -239,6 +241,7 @@ export default function StandingSeamMetalRoofLakeNormanNCPage() {
         city="Cornelius"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/standing-seam-metal-roof-lake-norman-nc`} city={"Lake Norman"} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
@@ -581,6 +584,9 @@ export default function StandingSeamMetalRoofLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Ready for Wind-Resistant Metal Roofing?"
         subtitle="Get a free estimate from Lake Norman's standing seam metal roofing specialists. We'll assess your property, recommend the best metal panel system, and deliver an installation built to last 50-70+ years."

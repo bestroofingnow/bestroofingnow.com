@@ -27,7 +27,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Huntersville NC',
   description:
@@ -539,6 +540,9 @@ export default function RoofRepairHuntersvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Huntersville"} />
+      <LKNDataCitations city={"Huntersville"} />
       <CTASection
         title="Ready to Get Your Roof Repaired in Huntersville?"
         subtitle="Contact us today for a free inspection and estimate. Our expert team will diagnose your roof problems and provide honest repair recommendations."

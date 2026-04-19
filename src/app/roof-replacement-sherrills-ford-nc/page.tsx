@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Sherrills Ford',
   description:
@@ -521,6 +522,9 @@ export default function RoofReplacementSherrillsFordNCPage() {
         service="Roof Replacement"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Get a New Roof for Your Sherrills Ford Home"
         subtitle="Get a free, no-obligation replacement estimate from our certified team. Premium materials, expert installation, and warranties you can count on."

@@ -27,7 +27,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Mooresville NC',
   description:
@@ -596,6 +597,9 @@ export default function MetalRoofingMooresvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Mooresville"} />
+      <LKNDataCitations city={"Mooresville"} />
       <CTASection
         title="Get Your Free Metal Roofing Estimate in Mooresville"
         subtitle="Contact us today for a free consultation on metal roofing. We'll help you choose the perfect system for your Lake Norman home and provide transparent pricing."

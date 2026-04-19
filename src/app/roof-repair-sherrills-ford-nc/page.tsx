@@ -27,7 +27,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Sherrills Ford NC',
   description:
@@ -520,6 +521,9 @@ export default function RoofRepairSherrillsFordNCPage() {
         service="Roof Repair"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Ready to Fix Your Sherrills Ford Roof?"
         subtitle="Get a free, no-obligation repair estimate from Lake Norman's trusted roofing experts. We'll assess the damage and provide honest recommendations."

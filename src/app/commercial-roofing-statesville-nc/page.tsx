@@ -25,7 +25,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Statesville NC',
   description:
@@ -553,6 +554,9 @@ export default function CommercialRoofingStatesvilleNCPage() {
         service="Commercial Roofing"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Ready to Protect Your Statesville Business?"
         subtitle="Get a free commercial roof assessment and estimate. We'll recommend the best roofing system for your Iredell County business and work around your schedule."

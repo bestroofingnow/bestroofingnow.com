@@ -33,7 +33,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Flat Roofing Lake Norman NC',
   description:
@@ -588,6 +589,9 @@ export default function FlatRoofingLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Ready for Expert Flat Roofing in Lake Norman?"
         subtitle="Get a free, no-obligation estimate from our certified flat roof specialists. We assess your property and recommend the best flat roofing system for your building and budget."

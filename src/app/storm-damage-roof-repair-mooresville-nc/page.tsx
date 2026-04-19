@@ -34,7 +34,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Repair Mooresville',
   description:
@@ -695,6 +696,9 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Mooresville"} />
+      <LKNDataCitations city={"Mooresville"} />
       <CTASection
         title="Storm Damage? Get Your Free Inspection Today."
         subtitle="Don't wait - storm damage can worsen quickly. Our Mooresville storm damage experts provide free inspections and help you navigate the insurance claim process from start to finish."

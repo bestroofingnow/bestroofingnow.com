@@ -29,7 +29,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Davidson NC | 5-Star',
   description:
@@ -430,6 +431,9 @@ export default function RoofersDavidsonNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Davidson"} />
+      <LKNDataCitations city={"Davidson"} />
       <CTASection
         title="Ready for Quality Roofing in Davidson?"
         subtitle="Get a free estimate from Davidson's most trusted roofers. Our team will assess your roof and provide honest recommendations tailored to your historic or lakefront home."

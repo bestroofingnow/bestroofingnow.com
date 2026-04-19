@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Statesville',
   description:
@@ -554,6 +555,9 @@ export default function StormDamageRoofRepairStatesvilleNCPage() {
         service="Storm Damage Roof Repair"
       />
 
+
+      <LKNPartnershipsBlock city={"Statesville"} />
+      <LKNDataCitations city={"Statesville"} />
       <CTASection
         title="Storm Damage in Statesville? We Can Help."
         subtitle="Get a free storm damage inspection and insurance claim assistance from Iredell County's trusted roofing experts. We'll fight for a fair settlement on your behalf."

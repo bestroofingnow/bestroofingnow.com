@@ -23,6 +23,9 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -30,6 +33,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roof Repair Lake Norman NC | Same-Day Service | Best Roofing Now',
   description:
@@ -179,6 +183,9 @@ export default function RoofRepairLakeNormanNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roof-repair-lake-norman-nc`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/roof-repair-lake-norman-nc`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/roof-repair-lake-norman-nc`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -450,6 +457,7 @@ export default function RoofRepairLakeNormanNCPage() {
 
       <DirectoryCitations pageType="location" locationSlug="lake-norman" />
 
+      <LKNNeighborhoodGrid currentSlug="roof-repair-lake-norman-nc" />
       <CTASection
         title="Ready to Fix Your Lake Norman Roof?"
         subtitle="Get a free, no-obligation repair estimate from the Lake Norman area's most trusted roofing experts. We serve every community around the lake with same-day service available."

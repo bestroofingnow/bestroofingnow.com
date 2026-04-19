@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Sherrills Ford NC',
   description:
@@ -517,6 +518,9 @@ export default function MetalRoofingSherrillsFordNCPage() {
         service="Metal Roofing"
       />
 
+
+      <LKNPartnershipsBlock city={"Sherrills Ford"} />
+      <LKNDataCitations city={"Sherrills Ford"} />
       <CTASection
         title="Upgrade to a Metal Roof in Sherrills Ford"
         subtitle="Get a free, no-obligation estimate for a premium metal roof. Superior durability, energy efficiency, and beauty for your Lake Norman home."

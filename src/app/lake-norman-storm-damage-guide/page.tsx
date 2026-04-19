@@ -32,7 +32,10 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 export const metadata: Metadata = {
   title: 'Lake Norman Storm Damage Roof Guide',
   description:
@@ -249,6 +252,9 @@ export default function LakeNormanStormDamageGuidePage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/lake-norman-storm-damage-guide`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-storm-damage-guide`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-storm-damage-guide`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
@@ -621,6 +627,7 @@ export default function LakeNormanStormDamageGuidePage() {
         </div>
       </section>
 
+      <LKNNeighborhoodGrid currentSlug="lake-norman-storm-damage-guide" />
       <CTASection
         title="Storm Damage? We're Here 24/7."
         subtitle="Call Lake Norman's trusted storm damage experts for emergency tarping, free inspections, and full insurance claim support. We serve every LKN community."

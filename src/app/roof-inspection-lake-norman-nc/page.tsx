@@ -28,7 +28,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Lake Norman NC | Free Inspections | Expert Roofers',
   description:
@@ -704,6 +705,9 @@ export default function RoofInspectionLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Schedule Your Free Lake Norman Roof Inspection"
         subtitle="Get a comprehensive roof assessment with detailed photos and report for your Lake Norman home. 100% free, no obligation. Serving Cornelius, Davidson, Mooresville, Huntersville, Denver & Sherrills Ford."

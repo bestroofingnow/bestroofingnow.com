@@ -31,7 +31,8 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'January 2026 Ice Storm Damage Lake Norman NC | Emergency Gutter & Roof Repair',
   description:
@@ -620,6 +621,9 @@ export default function IceStormDamageLakeNormanPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Ice Storm Damage? We're Here to Help."
         subtitle="Lake Norman neighbors - call us today for a free emergency inspection. We'll document your damage, help with insurance, and get your home back to normal. Stay safe out there."

@@ -26,7 +26,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Lake Norman NC | Seamless Gutters & Guards',
   description:
@@ -708,6 +709,9 @@ export default function GutterInstallationLakeNormanNCPage() {
         </div>
       </section>
 
+
+      <LKNPartnershipsBlock city={"Lake Norman"} />
+      <LKNDataCitations city={"Lake Norman"} />
       <CTASection
         title="Ready for Seamless Gutters in Lake Norman?"
         subtitle="Get a free, no-obligation estimate for custom seamless gutters. We serve all Lake Norman communities including Cornelius, Davidson, Mooresville, Huntersville, and Denver with transparent pricing."

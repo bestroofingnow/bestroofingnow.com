@@ -25,7 +25,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Denver NC | Lake Norman | Free Estimates',
   description:
@@ -497,6 +498,9 @@ export default function RoofReplacementDenverNCPage() {
 
       />
 
+
+      <LKNPartnershipsBlock city={"Denver"} />
+      <LKNDataCitations city={"Denver"} />
       <CTASection
         title="Ready for Your New Denver NC Roof?"
         subtitle="Get a free estimate for roof replacement from Lake Norman's western shore roofing experts. Financing available with payments as low as $150/month."

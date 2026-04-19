@@ -21,6 +21,9 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
+import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
+import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -28,6 +31,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
+import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roof Replacement Lake Norman NC',
   description:
@@ -199,6 +203,9 @@ export default function RoofReplacementLakeNormanNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`} city={"Lake Norman"} />
+      <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`} />
+      <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -483,6 +490,7 @@ export default function RoofReplacementLakeNormanNCPage() {
 
       <DirectoryCitations pageType="location" locationSlug="lake-norman" />
 
+      <LKNNeighborhoodGrid currentSlug="roof-replacement-lake-norman-nc" />
       <CTASection
         title="Get Your Free Roof Replacement Estimate"
         subtitle="Lake Norman's top-rated roofing contractor is ready to help. We'll inspect your roof, explain your material options, and provide a detailed estimate with financing available."

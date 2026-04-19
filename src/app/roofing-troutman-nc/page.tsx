@@ -26,7 +26,8 @@ import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofing Troutman NC',
   description:
@@ -615,6 +616,9 @@ export default function RoofingTroutmanNCPage() {
         service="Roofing"
       />
 
+
+      <LKNPartnershipsBlock city={"Troutman"} />
+      <LKNDataCitations city={"Troutman"} />
       <CTASection
         title="Ready to Work with Troutman's Trusted Roofing Team?"
         subtitle="Get a free, no-obligation estimate from our certified team. We'll assess your roof and provide honest recommendations tailored to your Troutman home's needs."

@@ -23,7 +23,8 @@ import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Davidson NC',
   description:
@@ -195,6 +196,9 @@ export default function CommercialRoofingDavidsonNCPage() {
       <ServiceCityLinks city="Davidson" citySlug="davidson-nc" title="Complete Roofing Services in Davidson" subtitle="Beyond commercial, we offer comprehensive solutions." />
       <RelatedCitiesLinks currentCity="Davidson" service="Commercial Roofing" serviceSlug="commercial-roofing" title="Commercial Roofing in Nearby Cities" />
       <CityGeoSection city="Davidson" state="NC" citySlug="davidson-nc" service="Commercial Roofing" />
+
+      <LKNPartnershipsBlock city={"Davidson"} />
+      <LKNDataCitations city={"Davidson"} />
       <CTASection title="Expert Commercial Roofing in Davidson" subtitle="Get a free estimate. We work around your schedule." />
     </>
   );

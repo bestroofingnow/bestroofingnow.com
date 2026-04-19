@@ -23,7 +23,8 @@ import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
-
+import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
+import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Davidson NC | Fast Fixes',
   description:
@@ -194,6 +195,9 @@ export default function RoofRepairDavidsonNCPage() {
       <ServiceCityLinks city="Davidson" citySlug="davidson-nc" title="Complete Roofing Services in Davidson" subtitle="Beyond repairs, we offer comprehensive roofing solutions." />
       <RelatedCitiesLinks currentCity="Davidson" service="Roof Repair" serviceSlug="roof-repair" title="Roof Repair in Nearby Cities" />
       <CityGeoSection city="Davidson" state="NC" citySlug="davidson-nc" service="Roof Repair" />
+
+      <LKNPartnershipsBlock city={"Davidson"} />
+      <LKNDataCitations city={"Davidson"} />
       <CTASection title="Ready to Fix Your Roof in Davidson?" subtitle="Get a free inspection and honest assessment from our certified team." />
     </>
   );
