@@ -15,7 +15,18 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  ServiceAreaPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  SpeakableContentBlocks,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
+import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -64,12 +75,29 @@ const inspectionProcess = [
 ];
 
 const faqs = [
-  { question: 'Is the roof inspection really free?', answer: 'Yes! Our roof inspections in Matthews are completely free with no obligation. We believe in honest assessments without sales pressure.' },
-  { question: 'How long does a roof inspection take?', answer: 'Most inspections take 30-60 minutes depending on roof size and complexity. We\'ll be thorough without rushing.' },
-  { question: 'Will you go on my roof?', answer: 'Yes, our inspectors will safely access your roof to perform a hands-on inspection. We also use drone technology when needed.' },
-  { question: 'When should I get a roof inspection?', answer: 'We recommend annual inspections, after major storms, before buying/selling a home, or if you notice any issues like leaks or missing shingles.' },
-  { question: 'What does the inspection report include?', answer: 'Your report includes photos, condition assessment, identified issues, repair recommendations, and estimated remaining roof lifespan.' },
-  { question: 'Can you inspect for insurance claims?', answer: 'Yes, we provide detailed inspections for insurance purposes and can document storm damage with photos and measurements.' },
+  { question: 'Is the roof inspection really free?', answer: 'Yes. Our roof inspections in Matthews NC are completely free with no obligation and no sales pressure. Best Roofing Now provides honest assessments because an informed homeowner is our best customer — whether you need a repair today or in five years.' },
+  { question: 'How long does a roof inspection take in Matthews?', answer: 'Most Matthews roof inspections take 30 to 60 minutes depending on roof size, pitch, and complexity. Larger homes in Providence Country Club, Olde Sycamore, or the Willowmere area may take up to 90 minutes for a thorough assessment.' },
+  { question: 'Will you go on my roof?', answer: 'Yes. Our certified inspectors safely access your roof for a hands-on inspection when conditions allow. We also use drone technology for steep or tall roofs and to document hard-to-reach areas with high-resolution photos.' },
+  { question: 'When should I get a roof inspection in Matthews?', answer: 'Annual inspections are recommended for every Matthews home, plus inspections after major storms, before buying or selling a home, or if you notice leaks, missing shingles, granules in gutters, or daylight through the attic. Matthews homes built before 2005 are prime candidates for annual inspections.' },
+  { question: 'What does the inspection report include?', answer: 'Your report includes geo-tagged photos, a full condition assessment (shingles, flashing, vents, gutters, soffits, fascia, chimney, skylights), identified issues ranked by severity, repair or replacement recommendations, estimated remaining roof lifespan, and pricing for any recommended work.' },
+  { question: 'Can you inspect for insurance claims in Matthews?', answer: 'Yes. We provide detailed inspections for insurance purposes including storm, hail, and wind damage documentation. Our reports meet requirements for carriers common in Matthews (State Farm, Allstate, Nationwide, USAA, Farm Bureau NC) and we work directly with adjusters to ensure a fair outcome.' },
+  { question: 'How much does a roof inspection cost in Matthews NC?', answer: 'Best Roofing Now charges $0 for standard roof inspections in Matthews. Paid third-party inspections in the Charlotte metro typically run $150 to $400. We offer free inspections because we want homeowners to know their true roof condition without a financial barrier.' },
+  { question: 'Do you inspect roofs for home buyers in Matthews?', answer: 'Yes. We provide pre-purchase roof inspections for Matthews home buyers, with a written report suitable for negotiation with the seller. Turnaround is typically same-day or next-business-day. Ask about our "Buyer Protection Inspection" for a more detailed report that includes a moisture scan of the attic.' },
+  { question: 'What common roof problems do you see in Matthews?', answer: 'Matthews homes commonly show: wind-lifted shingles along west-facing slopes (prevailing wind direction), hail bruising from Piedmont NC storms, granule loss on south-facing shingles from summer UV exposure, flashing failures around chimneys and skylights in homes 15+ years old, and clogged valleys from surrounding oak and pine trees.' },
+  { question: 'How soon can you schedule my Matthews roof inspection?', answer: 'Most Matthews roof inspections can be scheduled within 48 hours, often same-day for urgent situations (active leaks, storm damage, real estate closings). Call (704) 605-6047 or request online — we\'ll confirm a time window that works for your schedule.' },
+];
+
+const inspectorChecklist = [
+  'Shingle condition: curling, cupping, cracking, granule loss, missing tabs',
+  'Flashing integrity: chimney, skylights, vents, pipe boots, valleys',
+  'Roof deck and decking: sagging, soft spots, rot, structural concerns',
+  'Attic inspection: moisture, mold, ventilation, insulation, daylight through sheathing',
+  'Gutters and downspouts: blockages, separation, fascia damage, proper pitch',
+  'Soffit and fascia: rot, paint failure, pest intrusion, ventilation blocks',
+  'Chimney condition: crown, mortar joints, cap, flashing, brick deterioration',
+  'Ridge, hips, and valleys: shingle alignment, nail pops, sealant condition',
+  'Skylights and roof penetrations: seal integrity, flashing, glass/dome condition',
+  'Storm damage assessment: hail bruising, wind lift, debris impact, granule scatter patterns',
 ];
 
 export default function RoofInspectionMatthewsNCPage() {
@@ -78,6 +106,32 @@ export default function RoofInspectionMatthewsNCPage() {
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Roof Inspection', url: `${SITE_CONFIG.url}/services/roof-inspection` }, { name: 'Matthews NC', url: `${SITE_CONFIG.url}/roof-inspection-matthews-nc` }]} />
       <FAQSchema faqs={faqs} />
       <ServiceAreaPageSchema city="Matthews" state="NC" slug="roof-inspection-matthews-nc" distance={12} />
+      <WebPageSchema
+        name="Roof Inspection Matthews NC | Free Comprehensive Inspections"
+        description="Free roof inspections in Matthews NC. Certified inspectors, drone technology, detailed written reports, photo documentation, insurance claim support. BBB A+ rated."
+        url={`${SITE_CONFIG.url}/roof-inspection-matthews-nc`}
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Inspection', url: `${SITE_CONFIG.url}/services/roof-inspection` },
+          { name: 'Matthews NC', url: `${SITE_CONFIG.url}/roof-inspection-matthews-nc` },
+        ]}
+      />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="When should I get a roof inspection in Matthews NC?"
+        directAnswer="Get a roof inspection in Matthews NC under these 6 conditions."
+        items={[
+          'Annually, as preventive maintenance',
+          'After any major storm (hail, wind over 50 mph, ice)',
+          'Before buying or selling a home',
+          'When you notice leaks, stains, or missing shingles',
+          'When your roof is 15 or more years old',
+          'Before filing any insurance claim',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roof-inspection-matthews-nc`}
+      />
+      <SpeakableContentBlocks city="Matthews" includeCompany={true} includeServices={true} includeContact={true} />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/roof-inspection-matthews-nc`} pageName="Roof Inspection Matthews NC" city="Matthews" />
       <VoiceSearchActionSchema />
 
@@ -97,8 +151,8 @@ export default function RoofInspectionMatthewsNCPage() {
               <span className="text-accent-light">Free Comprehensive Inspections</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">Know your roof&apos;s condition with a free professional inspection</p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides free, thorough roof inspections throughout Matthews. Get an honest assessment with detailed photos and a written report - no obligation.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now provides free, thorough roof inspections throughout Matthews NC — including Olde Sycamore, Providence Country Club, Matthews Woods, Willowmere, Windsor Forest, and the Downtown Matthews historic district. Get an honest assessment from BBB A+ certified inspectors with detailed photo documentation, drone imagery for steep roofs, and a written report you own — no obligation, no sales pressure, no upsell.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/contact" variant="primary" size="lg" icon={<Calendar className="w-5 h-5" aria-hidden="true" />}>Schedule Free Inspection</Button>
@@ -147,6 +201,66 @@ export default function RoofInspectionMatthewsNCPage() {
                 <p className="text-gray text-sm">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Our Matthews Inspectors Check</h2>
+              <p className="text-gray text-lg">A complete roofing system has 10+ failure points. Our certified inspectors document every one.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              {inspectorChecklist.map((item, index) => (
+                <div key={index} className="flex items-start gap-3 bg-light rounded-lg p-4">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <p className="text-gray-700 text-sm">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Roof Conditions Unique to Matthews NC</h2>
+              <p className="text-gray text-lg">Matthews sits in the Piedmont climate zone with specific roof stressors our inspectors know by heart.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Piedmont Hail &amp; Wind</h3>
+                <p className="text-gray-700 text-sm">Matthews sees 3–5 named hail events per year and wind gusts above 50 mph during spring storms. Our inspectors check for granule scatter in gutters, soft hail bruising (visible only at low-angle light), and wind-lifted shingles along west-facing slopes.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Tree Canopy Damage</h3>
+                <p className="text-gray-700 text-sm">Older Matthews neighborhoods like Olde Sycamore and downtown have significant oak and pine canopy. We document debris in valleys, branch abrasion on shingles, algae streaks on north-facing slopes, and moisture trapped under needles.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Summer UV &amp; Heat</h3>
+                <p className="text-gray-700 text-sm">Matthews summers regularly hit 95°+ with heat-index peaks above 105°. South-facing shingles lose granules 30% faster than north-facing ones. We document granule loss patterns to pinpoint replacement timing before active leaks begin.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Older Home Flashing</h3>
+                <p className="text-gray-700 text-sm">Many Matthews homes were built between 1985 and 2005, meaning chimney and skylight flashing is now at the end of its service life. Flashing failure is the #1 cause of leaks in Matthews homes — we prioritize it on every inspection.</p>
+              </div>
+            </div>
+            <div className="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/20">
+              <p className="text-sm text-gray-700">
+                <strong className="text-primary">Related Matthews roofing services:</strong>{' '}
+                <Link href="/roofing-matthews-nc" className="text-primary hover:underline">Roofing Matthews NC</Link>{' · '}
+                <Link href="/roof-repair-matthews-nc" className="text-primary hover:underline">Roof Repair</Link>{' · '}
+                <Link href="/roof-replacement-matthews-nc" className="text-primary hover:underline">Roof Replacement</Link>{' · '}
+                <Link href="/storm-damage-roof-repair-matthews-nc" className="text-primary hover:underline">Storm Damage</Link>{' · '}
+                <Link href="/metal-roofing-matthews-nc" className="text-primary hover:underline">Metal Roofing</Link>{' · '}
+                <Link href="/gutter-installation-matthews-nc" className="text-primary hover:underline">Gutter Installation</Link>{' · '}
+                <Link href="/commercial-roofing-matthews-nc" className="text-primary hover:underline">Commercial Roofing</Link>
+              </p>
+            </div>
           </div>
         </div>
       </section>

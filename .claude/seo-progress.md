@@ -1,0 +1,86 @@
+# SEO / AEO / LLMO Audit Progress
+
+**Started:** 2026-04-19
+**Loop:** /loop dynamic mode, 20-min cadence
+**Scope:** Audit + enhance every page on bestroofingnow.com for SEO, AEO (Answer Engine Optimization), and LLMO (LLM discoverability)
+
+## Audit Framework (applied to each page)
+
+**SEO:**
+- Metadata: title ≤42 chars, description 120–160, keywords array, canonical, openGraph (title, desc, url, images), twitter card
+- Structured headings: one H1, logical H2/H3 nesting
+- Internal links: parent hub + sibling services + related cities
+- Image alt text on all images
+- Word count sufficient for intent (≥800 words for service+location)
+
+**AEO:**
+- FAQSchema (10+ questions minimum for service+location)
+- FeaturedSnippetListAnswerSchema (one per page, list-format question)
+- SpeakableContentBlocks (company + services + contact)
+- VoiceSearchActionSchema
+- Speakable intro paragraph with `.speakable-intro` class
+- AISearchOptimizationBundle
+- FreeInspectionOfferSchema (where relevant)
+
+**LLMO:**
+- Listed in `/llms.txt` and `/llms-full.txt`
+- Listed in appropriate sitemap (core, lake-norman, etc.)
+- WebPageSchema with full breadcrumb + primaryImage
+- Local context: named neighborhoods, climate stressors, common issues
+- Citations-ready content (pricing ranges, service timelines, specific brands)
+
+## Queue (priority-ordered)
+
+### Tier 1 — High-value hubs (already heavily optimized, verify only)
+- [x] `/` (homepage) — 2026-04-19 — Comprehensive, no enhancement needed. 16+ schemas, full AEO bundle, speakable content blocks, featured snippet schema, geo-tagged gallery, community sections.
+
+### Tier 2 — Thin service+location pages (200–250 lines, highest enhancement ROI)
+- [x] `roof-inspection-matthews-nc` — 2026-04-19 — Added 4 schemas (WebPage, FeaturedSnippet, Speakable, FreeInspectionOffer), expanded FAQs 6→10 with Matthews-specific answers, added 10-point inspector checklist section, added "Roof Conditions Unique to Matthews" section (4 local climate cards), added speakable-intro with neighborhoods, added related-services internal link strip. 199→287 lines.
+- [ ] `storm-damage-roof-repair-matthews-nc` (201 lines)
+- [ ] `storm-damage-roof-repair-davidson-nc` (202 lines)
+- [ ] `commercial-roofing-matthews-nc` (203 lines)
+- [ ] `roof-repair-davidson-nc` (204 lines)
+- [ ] `commercial-roofing-davidson-nc` (205 lines)
+- [ ] `gutter-installation-matthews-nc` (207 lines)
+- [ ] `gutter-installation-davidson-nc` (209 lines)
+
+### Tier 3 — Directory/listing pages
+- [ ] `locations` (146 lines)
+- [ ] `blog` (160 lines)
+- [ ] `products` (187 lines)
+- [ ] `materials` (212 lines)
+- [ ] `brands` (215 lines)
+- [ ] `roof-types` (215 lines)
+- [ ] `seasonal` (215 lines)
+- [ ] `guides` (217 lines)
+- [ ] `services` (230 lines)
+- [ ] `compare` (234 lines)
+
+### Tier 4 — Service entity pages
+- [ ] `flat-roof-repair` (227 lines)
+- [ ] `chimney-flashing-repair` (238 lines)
+- [ ] `skylight-installation` (241 lines)
+- [ ] `standing-seam-metal-roofing` (244 lines)
+- [ ] `emergency-roof-tarping`
+- [ ] `fascia-soffit-repair`
+- [ ] `gutter-repair`
+- [ ] `architectural-shingles`
+- [ ] `hail-damage-roof-repair`
+- [ ] `roof-coating`
+- [ ] `roof-maintenance`
+- [ ] `roof-certification`
+- [ ] `gutter-guards`
+- [ ] `ridge-vent-installation`
+- [ ] `cedar-shake-roofing`
+- [ ] `tile-roofing`
+
+### Tier 5+ — Charlotte service+location (expand queue as we go)
+- Pending: ~90 Charlotte-suffix pages
+- Pending: ~30 Lake Norman cluster pages
+- Pending: ~25 neighborhood pages
+- Pending: brand pages, building-type pages, blog posts
+
+## Notes
+- Homepage needs no changes — skip in future passes.
+- Service+location templates (Matthews/Davidson pattern) are the highest-leverage enhancement targets: many siblings, same template gaps.
+- After fixing ~5 siblings of same template, consider extracting the enhancements into a shared helper/component.
