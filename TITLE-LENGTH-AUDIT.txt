@@ -1,0 +1,260 @@
+
+=== OVERFLOWS (123 pages with rendered title > 60 chars) ===
+
+      111 nc-roofing-guide
+         rendered: Complete NC Roofing Guide | Building Codes, Permits & Requirements | Charlotte & Lake Norman | Best Roofing Now
+       99 roof-maintenance-faq
+         rendered: Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered | Charlotte NC | Best Roofing Now
+       99 roofing-technical-terms-faq
+         rendered: Roofing Terms Explained FAQ | Technical Glossary & Warranty Guide | Charlotte NC | Best Roofing Now
+       96 ice-storm-damage-lake-norman-nc
+         rendered: January 2026 Ice Storm Damage Lake Norman NC | Emergency Gutter & Roof Repair | Best Roofing Now
+       94 ice-storm-damage-charlotte-nc
+         rendered: January 2026 Ice Storm Damage Charlotte NC | Emergency Gutter & Roof Repair | Best Roofing Now
+       94 metal-roofing-services
+         rendered: Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust | Best Roofing Now
+       94 roofing-shingles-prices
+         rendered: Roofing Shingles Prices in Charlotte NC (2026) | Cost Per Square Foot Guide | Best Roofing Now
+       94 when-to-replace-roof-faq
+         rendered: When to Replace Your Roof FAQ | 15 Timing Questions Answered | Charlotte NC | Best Roofing Now
+       93 brands
+         rendered: Roofing Brands We Install | GAF, CertainTeed, Owens Corning | Charlotte NC | Best Roofing Now
+       93 services\storm-damage-roof-siding
+         rendered: Storm Damage Roof and Siding Repair Charlotte NC | Insurance Claim Experts | Best Roofing Now
+       92 gutter-cost-charlotte-nc
+         rendered: Gutter Installation Cost Charlotte NC | 2026 Price Guide | Free Estimates | Best Roofing Now
+       92 shingle-vs-metal-roof-cost
+         rendered: Shingle vs Metal Roof Cost: Complete 2026 Comparison Guide | Charlotte NC | Best Roofing Now
+       92 siding-cost-charlotte-nc
+         rendered: Siding Cost Charlotte NC | 2026 Vinyl Siding Price Guide | Free Estimates | Best Roofing Now
+       91 choosing-roofing-contractor-faq
+         rendered: How to Choose a Roofing Contractor FAQ | Questions to Ask | Charlotte NC | Best Roofing Now
+       91 roofing-contractor-charlotte-nc
+         rendered: Roofing Contractor Charlotte NC | Licensed & Certified | GAF CertainTeed | Best Roofing Now
+       91 what-to-do-tree-falls-on-roof-charlotte-nc
+         rendered: What to Do When a Tree Falls on Your Roof Charlotte NC | Emergency Guide | Best Roofing Now
+       90 roof-insurance-claims-faq
+         rendered: Roof Insurance Claim FAQ | Does Insurance Cover My Roof? | Charlotte NC | Best Roofing Now
+       90 roofing-materials-comparison-faq
+         rendered: Roofing Materials Comparison FAQ | 18 Questions Answered | Charlotte NC | Best Roofing Now
+       90 specialty-services
+         rendered: Specialty Roofing Services Charlotte NC | Skylights, Ventilation & More | Best Roofing Now
+       89 auto-dealership-roofing-charlotte-nc
+         rendered: Auto Dealership Roofing Charlotte NC | Showroom & Service Center Roofs | Best Roofing Now
+       89 gutter-services
+         rendered: Gutter Services Charlotte NC | Installation, Repair, Cleaning & Guards | Best Roofing Now
+       89 roof-replacement-cost-charlotte-nc
+         rendered: Roof Replacement Cost Charlotte NC | 2026 Price Guide | Free Estimates | Best Roofing Now
+       88 charlotte-storm-season-roof-guide
+         rendered: Charlotte Storm Season Roof Protection Guide | Before, During & After | Best Roofing Now
+       87 roofing-costs-faq
+         rendered: Roofing Cost FAQ | 25 Pricing Questions Answered | Charlotte NC 2026 | Best Roofing Now
+       86 services\roof-and-gutter-replacement
+         rendered: Roof and Gutter Replacement Charlotte NC | Save with Bundle Pricing | Best Roofing Now
+       86 what-to-do-roof-leak-charlotte-nc
+         rendered: What to Do When You Find a Roof Leak | Charlotte NC Emergency Guide | Best Roofing Now
+       85 cedar-shake-roofing-charlotte-nc
+         rendered: Cedar Shake Roofing Charlotte NC | Premium Wood Shake Installation | Best Roofing Now
+       85 charlotte-roofing-costs-2026
+         rendered: Charlotte NC Roofing Costs & Pricing Guide (2026) | What to Expect | Best Roofing Now
+       85 commercial-roofing-services
+         rendered: Commercial Roofing Contractor Charlotte NC | TPO, EPDM, Flat Roofs | Best Roofing Now
+       85 faq
+         rendered: Roofing FAQs | 36 Common Roofing Questions Answered | Charlotte NC | Best Roofing Now
+       85 roof-inspection-lake-norman-nc
+         rendered: Roof Inspection Lake Norman NC | Free Inspections | Expert Roofers | Best Roofing Now
+       85 services
+         rendered: Roofing Services Charlotte NC | Residential, Commercial, Emergency | Best Roofing Now
+       84 roofing-faq
+         rendered: Roofing FAQ | 100+ Roofing Questions Answered | Charlotte NC 2026 | Best Roofing Now
+       84 siding-services
+         rendered: Siding Services Charlotte NC | Installation, Repair & Replacement | Best Roofing Now
+       84 storm-damage-roof-repair
+         rendered: Storm Damage Roof Repair Near Me | Charlotte NC | Free Inspection | Best Roofing Now
+       84 wind-damage-roof-repair-charlotte-nc
+         rendered: Wind Damage Roof Repair Charlotte NC | Blown Shingles & High Wind | Best Roofing Now
+       83 attic-insulation-cost-charlotte-nc
+         rendered: Attic Insulation Cost Charlotte NC | $1.50-$7/sqft (2026 Prices) | Best Roofing Now
+       83 emergency
+         rendered: 24/7 Emergency Roofing Services Charlotte NC | 1-2 Hour Response | Best Roofing Now
+       83 metal-roof-cost
+         rendered: Metal Roof Cost (2026) | Pricing Per Sq Ft, by Type & House Size | Best Roofing Now
+       83 metal-roofing-cornelius-nc
+         rendered: Metal Roofing Cornelius NC | Lake Norman | Standing Seam Experts | Best Roofing Now
+       83 roof-repair-vs-replacement-charlotte-nc
+         rendered: Roof Repair vs. Replacement Charlotte NC | Decision Guide (2026) | Best Roofing Now
+       83 roof-storm-damage-insurance-claim-charlotte-nc
+         rendered: Roof Storm Damage Insurance Claim Charlotte NC | Free Inspection | Best Roofing Now
+       83 when-to-replace-roof-charlotte-nc
+         rendered: When to Replace Your Roof Charlotte NC | 10 Warning Signs (2026) | Best Roofing Now
+       82 commercial-roofing-lake-norman-nc
+         rendered: Commercial Roofing Lake Norman NC | Flat Roof & TPO Specialists | Best Roofing Now
+       82 metal-roofing-davidson-nc
+         rendered: Metal Roofing Davidson NC | Lake Norman | Standing Seam Experts | Best Roofing Now
+       82 roof-replacement-huntersville-nc
+         rendered: Roof Replacement Huntersville NC | Lake Norman | Free Estimates | Best Roofing Now
+       82 trusted-partners
+         rendered: Trusted Partners & Roofing Network | Home Service Professionals | Best Roofing Now
+       81 copper-roofing-charlotte-nc
+         rendered: Copper Roofing Charlotte NC | Premium Copper Roof Installation | Best Roofing Now
+       81 designer-shingles-charlotte-nc
+         rendered: Designer Shingles Charlotte NC | Luxury Architectural Shingles | Best Roofing Now
+       81 gutter-installation-lake-norman-nc
+         rendered: Gutter Installation Lake Norman NC | Seamless Gutters & Guards | Best Roofing Now
+       81 roof-types
+         rendered: Roof Types & Styles | Gable, Hip, Mansard, Flat | Charlotte NC | Best Roofing Now
+       81 services\emergency-roofing
+         rendered: 24/7 Emergency Roof Repair Charlotte NC | 30-Min Response Time | Best Roofing Now
+       81 what-to-do-after-hail-storm-charlotte-nc
+         rendered: What to Do After a Hail Storm Charlotte NC | Roof Damage Guide | Best Roofing Now
+       80 diy-roof-maintenance-checklist-charlotte-nc
+         rendered: DIY Roof Maintenance Checklist Charlotte NC | Homeowner Guide | Best Roofing Now
+       80 gutter-installation-lake-wylie-sc
+         rendered: Gutter Installation Lake Wylie SC | Seamless Gutters & Guards | Best Roofing Now
+       80 metal-roofing-lake-norman-nc
+         rendered: Metal Roofing Lake Norman NC | Standing Seam & Metal Shingles | Best Roofing Now
+       80 standing-seam-metal-roof-charlotte-nc
+         rendered: Standing Seam Metal Roof Charlotte NC | Premium Metal Roofing | Best Roofing Now
+       80 tpo-vs-epdm-roofing-charlotte-nc
+         rendered: TPO vs EPDM Roofing Charlotte NC | Commercial Roof Comparison | Best Roofing Now
+       79 charlotte-roofing-handbook
+         rendered: Charlotte Roofing Handbook (2026) | Complete Homeowner Guide | Best Roofing Now
+       79 emergency-roof-repair
+         rendered: Emergency Roof Repair Near Me | Charlotte NC 24/7 | Call Now | Best Roofing Now
+       79 how-to-choose-roofing-contractor-charlotte-nc
+         rendered: How to Choose a Roofing Contractor Charlotte NC | 2026 Guide | Best Roofing Now
+       79 luxury-roofing-charlotte-nc
+         rendered: Luxury Roofing Charlotte NC | Premium Roofing for Fine Homes | Best Roofing Now
+       79 metal-roofing-lake-wylie-sc
+         rendered: Metal Roofing Lake Wylie SC | Standing Seam & Metal Shingles | Best Roofing Now
+       79 roof-replacement-cornelius-nc
+         rendered: Roof Replacement Cornelius NC | Lake Norman | Free Estimates | Best Roofing Now
+       79 stories
+         rendered: Roofing Stories | Real Projects from Charlotte Neighborhoods | Best Roofing Now
+       78 asphalt-shingle-roof-cost
+         rendered: Asphalt Shingle Roof Cost Charlotte NC | 2026 Pricing Guide | Best Roofing Now
+       78 gaf-vs-certainteed-shingles-charlotte-nc
+         rendered: GAF vs CertainTeed Shingles Charlotte NC | 2026 Price Guide | Best Roofing Now
+       78 gutter-cleaning-diy-guide-charlotte-nc
+         rendered: DIY Gutter Cleaning Guide Charlotte NC | Safe Cleaning Tips | Best Roofing Now
+       78 luxury-roofing-lake-norman-nc
+         rendered: Luxury Roofing Lake Norman NC | Premium Materials & Estates | Best Roofing Now
+       78 slate-roofing-charlotte-nc
+         rendered: Slate Roofing Charlotte NC | Luxury Slate Roof Installation | Best Roofing Now
+       77 commercial-roofing-lake-wylie-sc
+         rendered: Commercial Roofing Lake Wylie SC | Flat Roof & TPO Experts | Best Roofing Now
+       77 products
+         rendered: Roofing Shingle Products | GAF, CertainTeed, Owens Corning | Best Roofing Now
+       77 residential-roof-replacement
+         rendered: Residential Roof Replacement Charlotte NC | Free Estimates | Best Roofing Now
+       77 storm-damage-roof-repair-lake-norman-nc
+         rendered: Storm Damage Roof Repair Lake Norman NC | Insurance Claims | Best Roofing Now
+       76 gutter-guard-cost
+         rendered: Gutter Guard Installation Cost 2026 | Charlotte NC Prices | Best Roofing Now
+       76 roof-repair-mooresville-nc
+         rendered: Roof Repair Mooresville NC | Lake Norman | Free Estimates | Best Roofing Now
+       76 roof-replacement-denver-nc
+         rendered: Roof Replacement Denver NC | Lake Norman | Free Estimates | Best Roofing Now
+       76 storm-damage-roof-repair-huntersville-nc
+         rendered: Storm Damage Roof Repair Huntersville NC | Insurance Help | Best Roofing Now
+       76 storm-damage-roof-repair-lake-wylie-sc
+         rendered: Storm Damage Roof Repair Lake Wylie SC | Insurance Claims | Best Roofing Now
+       75 asphalt-shingle-roofing-charlotte-nc
+         rendered: Asphalt Shingle Roofing Charlotte NC | CertainTeed & GAF | Best Roofing Now
+       75 church-roofing-charlotte-nc
+         rendered: Church Roofing Charlotte NC | Religious Building Experts | Best Roofing Now
+       74 commercial-roof-repair-cost-charlotte-nc
+         rendered: Commercial Roof Repair Cost Charlotte NC | 2026 Pricing | Best Roofing Now
+       74 guides
+         rendered: Roofing Guides & Resources | Charlotte NC & Lake Norman | Best Roofing Now
+       74 tpo-roofing-charlotte-nc
+         rendered: TPO Roofing Charlotte NC | Commercial Flat Roof Experts | Best Roofing Now
+       73 (landing)\free-roof-inspection
+         rendered: Free Roof Inspection & Instant Estimate | Charlotte NC | Best Roofing Now
+       73 chimney-flashing-repair-charlotte-nc
+         rendered: Chimney Flashing Repair Charlotte NC | Leak Prevention | Best Roofing Now
+       73 residential-roofing-charlotte-nc
+         rendered: Residential Roofing Charlotte NC | Expert Home Roofers | Best Roofing Now
+       73 roof-coating-charlotte-nc
+         rendered: Roof Coating Charlotte NC | Extend Roof Life 15+ Years | Best Roofing Now
+       73 roofing-costs-2026
+         rendered: Complete Guide to Roofing Costs in Charlotte NC (2026) | Best Roofing Now
+       73 storm-damage-roof-repair-cornelius-nc
+         rendered: Storm Damage Roof Repair Cornelius NC | Insurance Help | Best Roofing Now
+       72 about
+         rendered: About Us | Veteran-Owned Roofing Company Charlotte NC | Best Roofing Now
+       72 apartment-roofing-charlotte-nc
+         rendered: Apartment Roofing Charlotte NC | Multi-Family Experts | Best Roofing Now
+       72 best-roofing-company-charlotte-nc
+         rendered: Best Roofing Company Charlotte NC | #1 Rated | BBB A+ | Best Roofing Now
+       72 church-roof-replacement-guide-charlotte-nc
+         rendered: Church Roof Replacement Charlotte NC | Free Estimates | Best Roofing Now
+       72 gutter-installation-mooresville-nc
+         rendered: Gutter Installation Mooresville NC | Seamless Gutters | Best Roofing Now
+       72 metal-roof-vs-shingles-charlotte-nc
+         rendered: Metal Roof vs Shingles Charlotte NC | 2026 Comparison | Best Roofing Now
+       72 roofers-lake-wylie-sc
+         rendered: Roofers Lake Wylie SC | Top-Rated Roofing Contractors | Best Roofing Now
+       72 roofing-governors-island-denver-nc
+         rendered: Roofing Governor's Island Denver NC | Lakefront Homes | Best Roofing Now
+       71 epdm-roofing-charlotte-nc
+         rendered: EPDM Roofing Charlotte NC | Rubber Roof Installation | Best Roofing Now
+       71 materials
+         rendered: Roofing Materials Guide | Charlotte NC & Lake Norman | Best Roofing Now
+       71 roof-repair-denver-nc
+         rendered: Roof Repair Denver NC | Lake Norman | Free Estimates | Best Roofing Now
+       71 tile-roof-vs-shingles-charlotte-nc
+         rendered: Tile Roof vs Shingles Charlotte NC | 2026 Cost Guide | Best Roofing Now
+       70 emergency-roof-repair-lake-norman-nc
+         rendered: Emergency Roof Repair Lake Norman NC | 24/7 Service | Best Roofing Now
+       70 roofing-lake-wylie-sc
+         rendered: Roofing Lake Wylie SC | #1 Rated Lake Wylie Roofers | Best Roofing Now
+       70 seasonal
+         rendered: Seasonal Roofing Services | Charlotte NC Year-Round | Best Roofing Now
+       69 attic-moisture-control-charlotte-nc
+         rendered: Attic Moisture Control Charlotte NC | Prevent Mold | Best Roofing Now
+       69 emergency-roof-repair-charlotte-nc
+         rendered: 24/7 Emergency Roof Repair Charlotte NC | Call Now | Best Roofing Now
+       69 locations
+         rendered: Roofing Service Areas | Charlotte NC & Lake Norman | Best Roofing Now
+       69 office-building-roof-replacement-vs-coating-charlotte-nc
+         rendered: Office Roof: Replacement vs Coating | Charlotte NC | Best Roofing Now
+       68 certainteed-shingles-charlotte-nc
+         rendered: CertainTeed Shingles Charlotte NC | ShingleMaster | Best Roofing Now
+       66 restaurant-roof-repair-vs-replacement-charlotte-nc
+         rendered: Restaurant Roof: Repair vs Replace Charlotte NC | Best Roofing Now
+       66 roof-replacement-lake-wylie-sc
+         rendered: Roof Replacement Lake Wylie SC | Free Estimates | Best Roofing Now
+       65 gutter-repair-charlotte-nc
+         rendered: Gutter Repair Charlotte NC | Fast & Affordable | Best Roofing Now
+       65 warehouse-roof-repair-vs-replacement-charlotte-nc
+         rendered: Warehouse Roof: Repair vs Replace Charlotte NC | Best Roofing Now
+       64 blog
+         rendered: Roofing Blog | Charlotte & Lake Norman Guides | Best Roofing Now
+       64 roof-repair-lake-norman-nc
+         rendered: Roof Repair Lake Norman NC | Same-Day Service | Best Roofing Now
+       63 architectural-vs-3-tab-shingles-charlotte-nc
+         rendered: Architectural vs 3-Tab Shingles Charlotte NC | Best Roofing Now
+       63 roof-repair-lake-wylie-sc
+         rendered: Roof Repair Lake Wylie SC | Fast, Affordable | Best Roofing Now
+       63 roofers-charlotte-nc
+         rendered: Roofers Charlotte NC | 5-Star Rated | BBB A+ | Best Roofing Now
+       62 roof-repair-charlotte-nc
+         rendered: Roof Repair Charlotte NC | Same-Day Service | Best Roofing Now
+       62 tile-roofing
+         rendered: Tile Roofing Charlotte NC | Clay & Concrete | Best Roofing Now
+       61 commercial-roofing-charlotte-nc
+         rendered: Commercial Roofing Charlotte NC | #1 Rated | Best Roofing Now
+       61 roofing-providence-plantation-charlotte-nc
+         rendered: Roofing Providence Plantation Charlotte NC | Best Roofing Now
+
+=== PAGES WITH NO TITLE METADATA (2) ===
+
+  contact
+  projects
+
+=== SUMMARY ===
+Total pages scanned:       381
+Overflow (> 60 chars):        123
+Missing title metadata:    2
+Using absolute titles:     1
