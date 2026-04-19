@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -316,7 +316,7 @@ export default function RoofingJettonCoveCorneliusPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero1}
                 alt="Waterfront roofing Jetton Cove Cornelius NC near Jetton Park"
                 width={600}

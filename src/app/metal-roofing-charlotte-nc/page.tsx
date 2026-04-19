@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Shield,
@@ -367,7 +367,7 @@ export default function MetalRoofingCharlottePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.metalRoof}
             alt="Metal roofing installation Charlotte NC - standing seam metal roof"
             fill
@@ -499,7 +499,7 @@ export default function MetalRoofingCharlottePage() {
               >
                 <div className="lg:w-2/5 relative">
                   <div className="aspect-video lg:aspect-auto lg:h-full">
-                    <Image
+                    <SEOImage
                       src={type.image}
                       alt={`${type.name} installation in Charlotte NC`}
                       fill
@@ -667,7 +667,7 @@ export default function MetalRoofingCharlottePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Metal roof installation Charlotte NC - completed project"
                 width={600}
@@ -1001,7 +1001,7 @@ export default function MetalRoofingCharlottePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.metalRoof}
                 alt="Standing seam metal roof installation Charlotte NC"
                 fill
@@ -1009,7 +1009,7 @@ export default function MetalRoofingCharlottePage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Completed metal roofing project Charlotte"
                 fill
@@ -1017,7 +1017,7 @@ export default function MetalRoofingCharlottePage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of metal roof Charlotte NC"
                 fill
@@ -1025,7 +1025,7 @@ export default function MetalRoofingCharlottePage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Metal roofing contractor Charlotte NC"
                 fill

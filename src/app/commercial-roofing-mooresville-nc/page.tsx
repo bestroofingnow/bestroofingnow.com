@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -251,7 +251,7 @@ export default function CommercialRoofingMooresvilleNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.commercial.warehouse}
             alt="Commercial roofing services in Mooresville NC - Best Roofing Now"
             fill
@@ -380,7 +380,7 @@ export default function CommercialRoofingMooresvilleNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.office}
                 alt="Commercial roofing for Mooresville businesses - Best Roofing Now"
                 width={600}
@@ -599,7 +599,7 @@ export default function CommercialRoofingMooresvilleNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.warehouse}
                 alt="Commercial warehouse roofing in Mooresville NC"
                 fill
@@ -607,7 +607,7 @@ export default function CommercialRoofingMooresvilleNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.office}
                 alt="Office building roofing in Mooresville"
                 fill
@@ -615,7 +615,7 @@ export default function CommercialRoofingMooresvilleNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.beforeAfter.commercialFlat.after}
                 alt="Commercial flat roof installation in Mooresville NC"
                 fill
@@ -623,7 +623,7 @@ export default function CommercialRoofingMooresvilleNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of commercial roofing project in Mooresville"
                 fill

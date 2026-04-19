@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -225,7 +225,7 @@ export default function RoofingCorneliusNCPage() {
       <ServiceAreaPageSchema
         city="Cornelius"
         state="NC"
-        slug="roofing-cornelius-nc"
+        slug="roofing-cornelius-nc" pagePath="/roofing-cornelius-nc"
         distance={20}
       />
       <AISearchOptimizationBundle
@@ -239,7 +239,7 @@ export default function RoofingCorneliusNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero2}
             alt="Professional roofing services in Cornelius NC - Best Roofing Now"
             fill
@@ -374,7 +374,7 @@ export default function RoofingCorneliusNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Completed roofing project in Cornelius NC by Best Roofing Now"
                 width={600}

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -233,7 +233,7 @@ export default function RoofRepairDenverNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.repairs}
             alt="Professional roof repair services in Denver NC - Best Roofing Now"
             fill
@@ -369,7 +369,7 @@ export default function RoofRepairDenverNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Best Roofing Now - Trusted roof repair company serving Denver NC and Lake Norman western shore"
                 width={600}
@@ -567,7 +567,7 @@ export default function RoofRepairDenverNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Completed roof repair in Denver NC"
                 fill
@@ -575,7 +575,7 @@ export default function RoofRepairDenverNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Shingle repair work on Lake Norman western shore"
                 fill
@@ -583,7 +583,7 @@ export default function RoofRepairDenverNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of completed roof repair near Lake Norman State Park"
                 fill
@@ -591,7 +591,7 @@ export default function RoofRepairDenverNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional roof repair by Best Roofing Now in Denver NC"
                 fill

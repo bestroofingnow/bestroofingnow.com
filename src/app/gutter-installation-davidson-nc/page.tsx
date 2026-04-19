@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -114,7 +114,7 @@ export default function GutterInstallationDavidsonNCPage() {
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Gutter Installation', url: `${SITE_CONFIG.url}/services/gutter-installation` }, { name: 'Davidson NC', url: `${SITE_CONFIG.url}/gutter-installation-davidson-nc` }]} />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
-      <ServiceAreaPageSchema city="Davidson" state="NC" slug="gutter-installation-davidson-nc" distance={18} />
+      <ServiceAreaPageSchema city="Davidson" state="NC" slug="gutter-installation-davidson-nc" pagePath="/gutter-installation-davidson-nc" distance={18} />
       <WebPageSchema
         name="Gutter Installation Davidson NC | Seamless K-Style, Half-Round, Copper"
         description='Seamless gutter installation in Davidson NC and Lake Norman. 5"/6"/7" K-style aluminum, half-round, copper, micro-mesh gutter guards, fascia repair. Free estimates.'
@@ -147,7 +147,7 @@ export default function GutterInstallationDavidsonNCPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Gutter installation in Davidson NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Gutter installation in Davidson NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl">
@@ -213,7 +213,7 @@ export default function GutterInstallationDavidsonNCPage() {
               </ul>
             </div>
             <div className="relative">
-              <Image src={IMAGES.realProjects.drone2} alt="Gutter installation project in Davidson NC" width={600} height={450} className="rounded-xl shadow-lg" />
+              <SEOImage src={IMAGES.realProjects.drone2} alt="Gutter installation project in Davidson NC" width={600} height={450} className="rounded-xl shadow-lg" />
             </div>
           </div>
         </div>

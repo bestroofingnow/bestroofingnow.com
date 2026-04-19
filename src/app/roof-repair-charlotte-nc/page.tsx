@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -31,6 +31,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  ServiceSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
@@ -251,6 +252,18 @@ export default function RoofRepairCharlotteNCPage() {
           { name: 'Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/roof-repair-charlotte-nc` },
         ]}
       />
+      <ServiceSchema
+        service={{
+          title: 'Roof Repair Charlotte NC',
+          description:
+            'Expert roof repair in Charlotte NC. 24/7 emergency leak repair, storm damage restoration, shingle replacement, flashing repair. Same-day service, BBB A+ rated, veteran-owned. Free estimates.',
+          slug: 'roof-repair-charlotte-nc',
+          lowPrice: 200,
+          highPrice: 5000,
+          offerCount: 6,
+        }}
+        includeRating={true}
+      />
       <FAQSchema faqs={faqs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
@@ -286,7 +299,7 @@ export default function RoofRepairCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero3}
             alt="Professional roof repair Charlotte NC - Best Roofing Now technician repairing roof"
             fill

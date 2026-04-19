@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -227,7 +227,7 @@ export default function RoofingGastoniaNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero6}
             alt="Professional roofing services in Gastonia NC - Best Roofing Now"
             fill
@@ -363,7 +363,7 @@ export default function RoofingGastoniaNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project4}
                 alt="Best Roofing Now - Trusted roofing contractor serving Gastonia NC"
                 width={600}
@@ -530,7 +530,7 @@ export default function RoofingGastoniaNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project9}
                 alt="Completed residential roof replacement in Gastonia NC"
                 fill
@@ -538,7 +538,7 @@ export default function RoofingGastoniaNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation in Gaston County"
                 fill
@@ -546,7 +546,7 @@ export default function RoofingGastoniaNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Aerial view of completed roof project in Gastonia"
                 fill
@@ -554,7 +554,7 @@ export default function RoofingGastoniaNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project10}
                 alt="Professional roofing work in Gastonia area"
                 fill

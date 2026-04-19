@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -271,7 +271,7 @@ export default function MetalRoofingMooresvilleNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero10}
             alt="Metal roofing installation in Mooresville NC - Lake Norman area"
             fill
@@ -405,7 +405,7 @@ export default function MetalRoofingMooresvilleNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.metalRoof}
                 alt="Premium metal roofing on Lake Norman home"
                 width={600}

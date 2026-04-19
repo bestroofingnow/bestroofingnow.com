@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -150,7 +150,7 @@ export default function GutterInstallationMtHollyNCPage() {
       <ServiceAreaPageSchema
         city="Mt Holly"
         state="NC"
-        slug="gutter-installation-mt-holly-nc"
+        slug="gutter-installation-mt-holly-nc" pagePath="/gutter-installation-mt-holly-nc"
         distance={15}
       />
       <AISearchOptimizationBundle
@@ -163,7 +163,7 @@ export default function GutterInstallationMtHollyNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero3}
             alt="Gutter installation in Mt Holly NC - Best Roofing Now"
             fill
@@ -282,7 +282,7 @@ export default function GutterInstallationMtHollyNCPage() {
               </ul>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Gutter installation project in Mt Holly NC"
                 width={600}

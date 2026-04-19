@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -275,7 +275,7 @@ export default function RoofReplacementThePointMooresvillePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Roof replacement The Point Trump National Mooresville NC - estate roof replacement"
             fill
@@ -392,7 +392,7 @@ export default function RoofReplacementThePointMooresvillePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero1}
                 alt="Roof replacement The Point Trump National Mooresville NC luxury estate"
                 width={600}
@@ -761,7 +761,7 @@ export default function RoofReplacementThePointMooresvillePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero1}
                 alt="The Point Trump National roof replacement Mooresville NC - Best Roofing Now"
                 width={600}

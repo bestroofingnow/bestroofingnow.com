@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -225,7 +225,7 @@ export default function RoofingDavidsonNCPage() {
       <ServiceAreaPageSchema
         city="Davidson"
         state="NC"
-        slug="roofing-davidson-nc"
+        slug="roofing-davidson-nc" pagePath="/roofing-davidson-nc"
         distance={20}
       />
       <AISearchOptimizationBundle
@@ -239,7 +239,7 @@ export default function RoofingDavidsonNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero4}
             alt="Professional roofing services in Davidson NC - Best Roofing Now"
             fill
@@ -375,7 +375,7 @@ export default function RoofingDavidsonNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project13}
                 alt="Completed roofing project in Davidson NC by Best Roofing Now"
                 width={600}

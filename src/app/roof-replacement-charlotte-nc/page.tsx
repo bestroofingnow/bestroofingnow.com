@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -29,6 +29,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  ServiceSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -340,6 +341,18 @@ export default function RoofReplacementCharlotteNCPage() {
           { name: 'Roof Replacement Charlotte NC', url: `${SITE_CONFIG.url}/roof-replacement-charlotte-nc` },
         ]}
       />
+      <ServiceSchema
+        service={{
+          title: 'Roof Replacement Charlotte NC',
+          description:
+            'Complete roof replacement in Charlotte NC starting at $8,000. GAF and Owens Corning certified installers, architectural shingles and premium metal systems, financing from $99/month. BBB A+ rated, veteran-owned, 500+ roofs completed. Free estimates.',
+          slug: 'roof-replacement-charlotte-nc',
+          lowPrice: 8000,
+          highPrice: 35000,
+          offerCount: 4,
+        }}
+        includeRating={true}
+      />
       <FAQSchema faqs={faqs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
@@ -375,7 +388,7 @@ export default function RoofReplacementCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero4}
             alt="Professional roof replacement Charlotte NC - Best Roofing Now crew installing a new roof"
             fill

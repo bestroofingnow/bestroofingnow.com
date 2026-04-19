@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { Plus, Search, MapPin, Camera, Calendar, Edit, Trash2, Eye, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Project {
@@ -211,7 +211,7 @@ export default function AdminProjectsPage() {
                         <div className="flex items-center gap-3">
                           <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
                             {thumbnail ? (
-                              <Image
+                              <SEOImage
                                 src={thumbnail}
                                 alt=""
                                 fill

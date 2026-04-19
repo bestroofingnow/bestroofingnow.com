@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { BookOpen, HelpCircle, CheckCircle, CloudRain, FileText, Wrench, Layers, Shield, DollarSign } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import {
@@ -206,7 +206,7 @@ export default async function BlogPage() {
       {/* Hero Section - Mobile optimized */}
       <section className="relative bg-gradient-primary text-white py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero25}
             alt="Roofing tips and guides from Charlotte experts"
             fill

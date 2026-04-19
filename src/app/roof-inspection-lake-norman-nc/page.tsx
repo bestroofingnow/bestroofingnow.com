@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -255,14 +255,14 @@ export default function RoofInspectionLakeNormanNCPage() {
       <ServiceAreaPageSchema
         city="Lake Norman"
         state="NC"
-        slug="roof-inspection-lake-norman-nc"
+        slug="roof-inspection-lake-norman-nc" pagePath="/roof-inspection-lake-norman-nc"
         distance={25}
       />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.inspection}
             alt="Professional roof inspection services across Lake Norman NC"
             fill
@@ -392,7 +392,7 @@ export default function RoofInspectionLakeNormanNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.services.droneInspection}
                 alt="Comprehensive roof inspection in Lake Norman NC using drone technology"
                 width={600}

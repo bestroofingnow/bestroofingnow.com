@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   BookOpen,
@@ -40,6 +40,7 @@ import {
   ItemListSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { LastUpdated } from '@/components/ui/LastUpdated';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -230,13 +231,14 @@ export default function CharlotteRoofingHandbookPage() {
               },
             ]}
           />
+          <LastUpdated date="2026-04-19" className="mt-1" />
         </div>
       </div>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero5}
             alt="Charlotte roofing handbook - complete homeowner guide"
             fill
@@ -389,7 +391,7 @@ export default function CharlotteRoofingHandbookPage() {
             </div>
             <div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                <Image
+                <SEOImage
                   src={IMAGES.projects.closeup1}
                   alt="Close-up of roof components showing shingles, flashing, and ventilation in Charlotte NC"
                   width={600}
@@ -882,7 +884,7 @@ export default function CharlotteRoofingHandbookPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
-              <Image
+              <SEOImage
                 src={IMAGES.services.repairs}
                 alt="Professional roof repair service in Charlotte NC"
                 width={600}
@@ -1166,7 +1168,7 @@ export default function CharlotteRoofingHandbookPage() {
             </div>
             <div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                <Image
+                <SEOImage
                   src={IMAGES.houses.modern1}
                   alt="Beautiful Charlotte home with a new roof - affordable roofing options"
                   width={600}

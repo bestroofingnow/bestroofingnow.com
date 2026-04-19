@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -331,7 +331,7 @@ export default function RoofingSailviewDenverPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero1}
                 alt="Roofing Sailview Denver NC waterfront home on Lake Norman western shore"
                 width={600}

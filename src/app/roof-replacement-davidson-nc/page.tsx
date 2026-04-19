@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -235,7 +235,7 @@ export default function RoofReplacementDavidsonNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.metalRoof}
             alt="Professional roof replacement services in Davidson NC - Best Roofing Now"
             fill
@@ -370,7 +370,7 @@ export default function RoofReplacementDavidsonNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project13}
                 alt="Best Roofing Now - Trusted roof replacement company serving Davidson NC"
                 width={600}
@@ -558,7 +558,7 @@ export default function RoofReplacementDavidsonNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Completed roof replacement in Davidson NC"
                 fill
@@ -566,7 +566,7 @@ export default function RoofReplacementDavidsonNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation in Davidson"
                 fill
@@ -574,7 +574,7 @@ export default function RoofReplacementDavidsonNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of completed roof replacement near Davidson College"
                 fill
@@ -582,7 +582,7 @@ export default function RoofReplacementDavidsonNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional roof replacement by Best Roofing Now in Davidson"
                 fill

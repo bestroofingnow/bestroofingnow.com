@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -271,7 +271,7 @@ export default function FlatRoofCoatingCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.commercial.flatRoof}
             alt="Flat roof coating Charlotte NC - Best Roofing Now commercial roof coating project"
             fill
@@ -431,7 +431,7 @@ export default function FlatRoofCoatingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.flatRoof}
                 alt="Flat roof coating project in Charlotte NC - commercial roof restoration"
                 width={600}

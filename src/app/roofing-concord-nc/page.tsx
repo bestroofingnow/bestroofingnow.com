@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -224,7 +224,7 @@ export default function RoofingConcordNCPage() {
         state="NC"
         county="Cabarrus"
         distance={20}
-        slug="concord-nc"
+        slug="concord-nc" pagePath="/concord-nc"
       />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-concord-nc`}
@@ -236,7 +236,7 @@ export default function RoofingConcordNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero5}
             alt="Professional roofing services in Concord NC - Best Roofing Now"
             fill
@@ -404,7 +404,7 @@ export default function RoofingConcordNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional roofing project completed in Concord NC area"
                 width={600}

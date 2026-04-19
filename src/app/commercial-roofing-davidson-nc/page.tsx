@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -112,7 +112,7 @@ export default function CommercialRoofingDavidsonNCPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Commercial Roofing', url: `${SITE_CONFIG.url}/services/commercial-roofing` }, { name: 'Davidson NC', url: `${SITE_CONFIG.url}/commercial-roofing-davidson-nc` }]} />
       <FAQSchema faqs={faqs} />
-      <ServiceAreaPageSchema city="Davidson" state="NC" slug="commercial-roofing-davidson-nc" distance={18} />
+      <ServiceAreaPageSchema city="Davidson" state="NC" slug="commercial-roofing-davidson-nc" pagePath="/commercial-roofing-davidson-nc" distance={18} />
       <WebPageSchema
         name="Commercial Roofing Davidson NC | TPO, EPDM, PVC, Metal Specialists"
         description="Commercial roofing in Davidson NC and Lake Norman. TPO, EPDM, PVC, modified bitumen, metal, and coatings. NDL warranties, weekend installs, property-manager friendly."
@@ -144,7 +144,7 @@ export default function CommercialRoofingDavidsonNCPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Commercial roofing in Davidson NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Commercial roofing in Davidson NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl">

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Sun,
@@ -161,7 +161,7 @@ export default function SpecialtyServicesPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero11}
             alt="Specialty roofing services in Charlotte NC"
             fill

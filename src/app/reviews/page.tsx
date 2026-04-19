@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { Star, Quote, Phone, ArrowRight, ExternalLink } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { BreadcrumbSchema, ReviewsSchema, AISearchOptimizationBundle } from '@/components/seo/SchemaMarkup';
@@ -150,7 +150,7 @@ export default function ReviewsPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.houses.house1}
             alt="Beautiful home with new roof by Best Roofing Now"
             fill
@@ -314,7 +314,7 @@ export default function ReviewsPage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="5-star rated roofing project Charlotte NC - Best Roofing Now customer review"
                 fill
@@ -322,7 +322,7 @@ export default function ReviewsPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Roof replacement Charlotte - verified customer testimonial project photo"
                 fill
@@ -330,7 +330,7 @@ export default function ReviewsPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Aerial drone photo completed roof Charlotte NC - Google 5-star reviewed contractor"
                 fill
@@ -338,7 +338,7 @@ export default function ReviewsPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.house1}
                 alt="Charlotte home with new roof installation - satisfied customer review project"
                 fill

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -217,7 +217,7 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.metalRoof}
             alt="Standing seam metal roof installation Charlotte NC - Best Roofing Now"
             fill
@@ -346,7 +346,7 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
               </p>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.metalRoof}
                 alt="Standing seam metal roof colors and styles available in Charlotte NC"
                 width={600}
@@ -422,7 +422,7 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Best Roofing Now - Premium standing seam metal roof installation in Charlotte NC"
                 width={600}

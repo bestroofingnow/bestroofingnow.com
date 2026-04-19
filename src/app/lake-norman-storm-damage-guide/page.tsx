@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -259,7 +259,7 @@ export default function LakeNormanStormDamageGuidePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Lake Norman storm damage roof repair and insurance claim assistance"
             fill
@@ -399,7 +399,7 @@ export default function LakeNormanStormDamageGuidePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.house1}
                 alt="Lake Norman roof storm damage inspection and insurance claim support"
                 width={600}

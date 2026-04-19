@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { MapPin, CheckCircle, HelpCircle } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import {
@@ -145,7 +145,7 @@ export default function LocationsPage() {
       {/* Hero */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero17}
             alt="Roofing services across Charlotte metro area"
             fill

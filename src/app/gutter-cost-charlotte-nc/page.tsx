@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   DollarSign,
@@ -341,7 +341,7 @@ export default function GutterCostCharlottePage() {
       {/* Hero Section with Cost Range */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.gutters}
             alt="Gutter installation cost Charlotte NC - professional gutter services"
             fill
@@ -711,7 +711,7 @@ export default function GutterCostCharlottePage() {
               </ul>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Gutter installation project Charlotte NC by Best Roofing Now"
                 width={600}

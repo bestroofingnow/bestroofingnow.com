@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -378,7 +378,7 @@ export default function RoofingCompanyCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero2}
             alt="Best Roofing Now - Trusted roofing company in Charlotte NC"
             fill
@@ -490,7 +490,7 @@ export default function RoofingCompanyCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Best Roofing Now - Established roofing company in Charlotte NC"
                 width={600}
@@ -627,7 +627,7 @@ export default function RoofingCompanyCharlotteNCPage() {
             {projectHighlights.map((project) => (
               <div key={project.title} className="bg-white rounded-xl overflow-hidden shadow-lg">
                 <div className="relative h-64">
-                  <Image
+                  <SEOImage
                     src={project.image}
                     alt={`${project.title} by Best Roofing Now - roofing company Charlotte NC`}
                     fill

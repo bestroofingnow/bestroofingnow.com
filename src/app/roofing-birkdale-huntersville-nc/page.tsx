@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -363,7 +363,7 @@ export default function RoofingBirkdaleHuntersvillePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero1}
                 alt="Roofing Birkdale Huntersville NC - architectural shingle replacement on Birkdale Golf Club home"
                 width={600}

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -224,7 +224,7 @@ export default function RoofingMintHillNCPage() {
         state="NC"
         county="Mecklenburg"
         distance={11}
-        slug="mint-hill-nc"
+        slug="mint-hill-nc" pagePath="/mint-hill-nc"
       />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-mint-hill-nc`}
@@ -236,7 +236,7 @@ export default function RoofingMintHillNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero3}
             alt="Professional roofing services in Mint Hill NC - Best Roofing Now"
             fill
@@ -402,7 +402,7 @@ export default function RoofingMintHillNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Professional roofing project completed in Mint Hill NC area"
                 width={600}

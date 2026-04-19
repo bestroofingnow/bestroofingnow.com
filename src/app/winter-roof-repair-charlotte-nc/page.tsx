@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -236,7 +236,7 @@ export default function WinterRoofRepairCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero3}
             alt="Winter roof repair in Charlotte NC - Best Roofing Now cold weather experts"
             fill
@@ -371,7 +371,7 @@ export default function WinterRoofRepairCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Best Roofing Now - Winter roof repair experts in Charlotte NC"
                 width={600}
@@ -550,7 +550,7 @@ export default function WinterRoofRepairCharlotteNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Winter roof repair completed in Charlotte NC"
                 fill
@@ -558,7 +558,7 @@ export default function WinterRoofRepairCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation during winter in Charlotte"
                 fill
@@ -566,7 +566,7 @@ export default function WinterRoofRepairCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of winter roof project in Charlotte NC"
                 fill
@@ -574,7 +574,7 @@ export default function WinterRoofRepairCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional winter roofing work in Charlotte area"
                 fill

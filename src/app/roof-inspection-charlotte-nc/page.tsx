@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Search,
@@ -259,7 +259,7 @@ export default function RoofInspectionCharlottePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.services.inspection}
             alt="Free roof inspection in Charlotte NC"
             fill
@@ -433,7 +433,7 @@ export default function RoofInspectionCharlottePage() {
               </ol>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.services.droneInspection}
                 alt="Drone roof inspection in Charlotte NC"
                 width={600}
@@ -496,7 +496,7 @@ export default function RoofInspectionCharlottePage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Professional roof assessment in Charlotte NC"
                 width={600}

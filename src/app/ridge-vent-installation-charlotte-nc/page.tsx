@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -245,7 +245,7 @@ export default function RidgeVentInstallationCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero4}
             alt="Professional ridge vent installation Charlotte NC"
             fill
@@ -382,7 +382,7 @@ export default function RidgeVentInstallationCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Roof with proper ventilation Charlotte NC"
                 width={600}
@@ -412,7 +412,7 @@ export default function RidgeVentInstallationCharlotteNCPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Attic ventilation inspection Charlotte NC"
                 width={600}

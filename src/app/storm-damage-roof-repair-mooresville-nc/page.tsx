@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -268,7 +268,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.stormDamage}
             alt="Storm damage roof repair Mooresville NC - Best Roofing Now emergency storm response team"
             fill
@@ -403,7 +403,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Storm damage roof repair completed in Mooresville NC - Best Roofing Now"
                 width={600}
@@ -590,7 +590,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Storm damage roof repair completed in Mooresville NC"
                 fill
@@ -598,7 +598,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Hail damage repair with CertainTeed shingles in Lake Norman"
                 fill
@@ -606,7 +606,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of completed storm damage repair in Mooresville"
                 fill
@@ -614,7 +614,7 @@ export default function StormDamageRoofRepairMooresvilleNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Wind damage repair project in Lake Norman area"
                 fill

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import {
   HelpCircle,
   Phone,
@@ -116,7 +116,7 @@ export default function FAQPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.services.inspection}
             alt="Professional roof inspection Charlotte NC - Best Roofing Now certified roofing contractor FAQ"
             fill

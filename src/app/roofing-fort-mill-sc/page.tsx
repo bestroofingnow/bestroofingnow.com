@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -227,7 +227,7 @@ export default function RoofingFortMillSCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero4}
             alt="Professional roofing services in Fort Mill SC - Best Roofing Now"
             fill
@@ -363,7 +363,7 @@ export default function RoofingFortMillSCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Best Roofing Now - Trusted roofing contractor serving Fort Mill SC"
                 width={600}
@@ -529,7 +529,7 @@ export default function RoofingFortMillSCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project5}
                 alt="Completed residential roof replacement in Fort Mill SC"
                 fill
@@ -537,7 +537,7 @@ export default function RoofingFortMillSCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation in York County"
                 fill
@@ -545,7 +545,7 @@ export default function RoofingFortMillSCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Aerial view of completed roof project in Fort Mill"
                 fill
@@ -553,7 +553,7 @@ export default function RoofingFortMillSCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project6}
                 alt="Professional roofing work in Fort Mill area"
                 fill

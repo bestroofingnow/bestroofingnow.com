@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import {
   MapPin,
   Calendar,

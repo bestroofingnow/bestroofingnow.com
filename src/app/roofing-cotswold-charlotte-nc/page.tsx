@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -235,7 +235,7 @@ export default function RoofingCotswoldCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.neighborhoods.cotswold}
             alt="Professional roofing contractor in Cotswold Charlotte NC - Best Roofing Now crew"
             fill
@@ -401,7 +401,7 @@ export default function RoofingCotswoldCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.neighborhoods.cotswold}
                 alt="Best Roofing Now - Trusted roofing contractor in Cotswold Charlotte NC"
                 width={600}
@@ -580,7 +580,7 @@ export default function RoofingCotswoldCharlotteNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Completed roof replacement in Cotswold Charlotte NC"
                 fill
@@ -588,7 +588,7 @@ export default function RoofingCotswoldCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed architectural shingle installation in Cotswold"
                 fill
@@ -596,7 +596,7 @@ export default function RoofingCotswoldCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Aerial view of completed roof project in Cotswold Charlotte"
                 fill
@@ -604,7 +604,7 @@ export default function RoofingCotswoldCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Professional roofing work on Cotswold home"
                 fill

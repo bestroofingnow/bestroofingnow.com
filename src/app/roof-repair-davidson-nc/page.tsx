@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -110,7 +110,7 @@ export default function RoofRepairDavidsonNCPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Roof Repair', url: `${SITE_CONFIG.url}/services/roof-repair` }, { name: 'Davidson NC', url: `${SITE_CONFIG.url}/roof-repair-davidson-nc` }]} />
       <FAQSchema faqs={faqs} />
-      <ServiceAreaPageSchema city="Davidson" state="NC" slug="roof-repair-davidson-nc" distance={18} />
+      <ServiceAreaPageSchema city="Davidson" state="NC" slug="roof-repair-davidson-nc" pagePath="/roof-repair-davidson-nc" distance={18} />
       <WebPageSchema
         name="Roof Repair Davidson NC | Leaks, Flashing, Storm & Emergency"
         description="Expert roof repair in Davidson NC and Lake Norman. Leaks, flashing, valleys, shingles, emergency tarping. 2-year workmanship warranty. BBB A+ rated."
@@ -143,7 +143,7 @@ export default function RoofRepairDavidsonNCPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Roof repair services in Davidson NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Roof repair services in Davidson NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl">

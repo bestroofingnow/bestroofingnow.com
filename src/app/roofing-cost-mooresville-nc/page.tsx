@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -393,7 +393,7 @@ export default function RoofingCostMooresvilleNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.houses.modern1}
             alt="Roofing cost Mooresville NC 2026 - Race City home pricing guide"
             fill
@@ -704,7 +704,7 @@ export default function RoofingCostMooresvilleNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.house2}
                 alt="Mooresville NC home roof replacement - what drives roofing cost"
                 width={600}

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -261,14 +261,14 @@ export default function SolarRoofingCharlotteNCPage() {
       <ServiceAreaPageSchema
         city="Charlotte"
         state="NC"
-        slug="solar-roofing-charlotte-nc"
+        slug="solar-roofing-charlotte-nc" pagePath="/solar-roofing-charlotte-nc"
         distance={25}
       />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero6}
             alt="Solar roofing installation in Charlotte NC - Best Roofing Now"
             fill
@@ -402,7 +402,7 @@ export default function SolarRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero6}
                 alt="Solar roofing installation on a Charlotte NC home"
                 width={600}

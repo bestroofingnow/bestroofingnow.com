@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import {
   Star,
   Shield,
@@ -123,7 +123,7 @@ export default function FreeRoofInspectionPage() {
       <section className="relative bg-primary overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Professional roof inspection in Charlotte NC"
             fill

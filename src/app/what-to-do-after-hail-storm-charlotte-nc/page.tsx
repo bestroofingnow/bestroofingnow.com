@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -203,7 +203,7 @@ export default function WhatToDoAfterHailStormPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-700 via-slate-600 to-slate-800 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero25}
             alt="Hail storm damage Charlotte NC"
             fill

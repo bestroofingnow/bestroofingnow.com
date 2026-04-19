@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -112,7 +112,7 @@ export default function GutterInstallationMatthewsNCPage() {
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Gutter Installation', url: `${SITE_CONFIG.url}/services/gutter-installation` }, { name: 'Matthews NC', url: `${SITE_CONFIG.url}/gutter-installation-matthews-nc` }]} />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
-      <ServiceAreaPageSchema city="Matthews" state="NC" slug="gutter-installation-matthews-nc" distance={12} />
+      <ServiceAreaPageSchema city="Matthews" state="NC" slug="gutter-installation-matthews-nc" pagePath="/gutter-installation-matthews-nc" distance={12} />
       <WebPageSchema
         name="Gutter Installation Matthews NC | Seamless K-Style, Half-Round, Copper"
         description='Seamless gutter installation in Matthews NC. 5"/6"/7" K-style aluminum, half-round, copper, micro-mesh gutter guards, fascia repair. Free estimates, BBB A+ rated.'
@@ -145,7 +145,7 @@ export default function GutterInstallationMatthewsNCPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Gutter installation in Matthews NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Gutter installation in Matthews NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl">
@@ -211,7 +211,7 @@ export default function GutterInstallationMatthewsNCPage() {
               </ul>
             </div>
             <div className="relative">
-              <Image src={IMAGES.realProjects.drone2} alt="Gutter installation project in Matthews NC" width={600} height={450} className="rounded-xl shadow-lg" />
+              <SEOImage src={IMAGES.realProjects.drone2} alt="Gutter installation project in Matthews NC" width={600} height={450} className="rounded-xl shadow-lg" />
             </div>
           </div>
         </div>

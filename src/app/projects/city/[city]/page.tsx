@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { MapPin, Camera, Calendar, ChevronRight, ArrowLeft, Star, Phone, Shield } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
@@ -396,7 +396,7 @@ export default async function CityProjectsPage({
                   {/* Thumbnail */}
                   <div className="relative aspect-square">
                     {thumbnail ? (
-                      <Image
+                      <SEOImage
                         src={thumbnail}
                         alt={`${project.product || 'Roofing'} project in ${displayCity}, ${state}`}
                         fill

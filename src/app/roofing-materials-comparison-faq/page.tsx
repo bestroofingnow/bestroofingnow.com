@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Layers,
@@ -234,7 +234,7 @@ export default function RoofingMaterialsComparisonFAQPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.metalRoof}
             alt="Roofing materials comparison guide - metal vs shingles Charlotte NC by Best Roofing Now"
             fill

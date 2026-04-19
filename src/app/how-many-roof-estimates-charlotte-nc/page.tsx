@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   AlertTriangle,
@@ -212,7 +212,7 @@ export default function HowManyRoofEstimatesCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-700 via-blue-800 to-blue-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero5}
             alt="How many roof estimates to get in Charlotte NC"
             fill

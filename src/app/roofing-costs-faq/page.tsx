@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import {
   HelpCircle,
   Phone,
@@ -290,7 +290,7 @@ export default function RoofingCostsFAQPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.stock.heroSuburbanHomes}
             alt="Roofing cost guide Charlotte NC - Best Roofing Now FAQ"
             fill

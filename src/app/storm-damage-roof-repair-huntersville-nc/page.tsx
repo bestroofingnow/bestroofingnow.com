@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -271,7 +271,7 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero7}
             alt="Storm damage roof repair services in Huntersville NC"
             fill
@@ -437,7 +437,7 @@ export default function StormDamageRoofRepairHuntersvilleNCPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.projects.stormDamage1}
                 alt="Storm damage assessment in Huntersville NC"
                 width={600}

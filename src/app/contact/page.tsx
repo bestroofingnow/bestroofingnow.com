@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Script from 'next/script';
 import {
   Phone,
@@ -215,7 +215,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero21}
             alt="Contact Best Roofing Now for your roofing needs"
             fill
@@ -660,7 +660,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-2xl p-4 shadow-lg">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="relative aspect-video md:aspect-square rounded-xl overflow-hidden">
-                <Image
+                <SEOImage
                   src={IMAGES.hero.hero21}
                   alt="Best Roofing Now service area in Charlotte"
                   fill
@@ -668,7 +668,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="relative aspect-video md:aspect-square rounded-xl overflow-hidden">
-                <Image
+                <SEOImage
                   src={IMAGES.location.serviceAreaMap}
                   alt="Charlotte metro service area map"
                   fill

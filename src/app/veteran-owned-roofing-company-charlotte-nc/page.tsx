@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -304,7 +304,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.team.jamesAndFred}
             alt="Veteran-owned roofing company Charlotte NC - James and Fred Turner, Best Roofing Now founders"
             fill
@@ -381,7 +381,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl relative z-10">
-                <Image
+                <SEOImage
                   src={IMAGES.team.jamesAndFred}
                   alt="Fred and James Turner - veteran-owned family roofing business Charlotte NC"
                   width={600}
@@ -557,7 +557,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Veteran-owned roofing company Charlotte NC - completed project"
                 width={600}
@@ -823,7 +823,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Veteran-owned roofing company Charlotte - completed residential project"
                 fill
@@ -831,7 +831,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Military precision roofing Charlotte - CertainTeed installation"
                 fill
@@ -839,7 +839,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Veteran roofer Charlotte NC - quality workmanship"
                 fill
@@ -847,7 +847,7 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project5}
                 alt="Family veteran-owned roofer Charlotte - completed project"
                 fill

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -365,7 +365,7 @@ export default function CedarShakeRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.house1}
                 alt="Cedar shake roofing installation in Charlotte NC luxury home"
                 width={600}

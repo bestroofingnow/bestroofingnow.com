@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import {
   CheckCircle,
   Phone,
@@ -105,7 +105,7 @@ export default function RoofInspectionMatthewsNCPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Roof Inspection', url: `${SITE_CONFIG.url}/services/roof-inspection` }, { name: 'Matthews NC', url: `${SITE_CONFIG.url}/roof-inspection-matthews-nc` }]} />
       <FAQSchema faqs={faqs} />
-      <ServiceAreaPageSchema city="Matthews" state="NC" slug="roof-inspection-matthews-nc" distance={12} />
+      <ServiceAreaPageSchema city="Matthews" state="NC" slug="roof-inspection-matthews-nc" pagePath="/roof-inspection-matthews-nc" distance={12} />
       <WebPageSchema
         name="Roof Inspection Matthews NC | Free Comprehensive Inspections"
         description="Free roof inspections in Matthews NC. Certified inspectors, drone technology, detailed written reports, photo documentation, insurance claim support. BBB A+ rated."
@@ -137,7 +137,7 @@ export default function RoofInspectionMatthewsNCPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Roof inspection in Matthews NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Roof inspection in Matthews NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl">

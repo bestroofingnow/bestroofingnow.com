@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -343,7 +343,7 @@ export default function RoofingNorthstoneHuntersvillePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero11}
                 alt="Roofing Northstone Huntersville NC - Northstone Country Club estate roof replacement"
                 width={600}

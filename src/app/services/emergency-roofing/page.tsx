@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -349,7 +349,7 @@ export default function EmergencyRoofingPage() {
       {/* Hero Section - Optimized for 24/7 Emergency Keywords */}
       <section className="relative bg-gradient-primary text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.services.emergency}
             alt="24/7 Emergency Roof Repair Charlotte NC - Best Roofing Now emergency response team"
             fill
@@ -664,7 +664,7 @@ export default function EmergencyRoofingPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-video rounded-2xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.services.stormDamage}
                 alt="Emergency roof damage insurance documentation Charlotte NC"
                 fill

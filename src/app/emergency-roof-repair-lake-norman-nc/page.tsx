@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -31,7 +31,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'Emergency Roof Repair Lake Norman NC | 24/7 Service | Best Roofing Now',
+  title: 'Emergency Roof Repair Lake Norman NC | 24/7 Service',
   description:
     'Emergency roof repair across Lake Norman NC. 24/7 response for storm damage, fallen trees, active leaks, and emergency tarping. Serving Mooresville, Cornelius, Davidson & Denver. Call now!',
   keywords: [
@@ -200,7 +200,7 @@ export default function EmergencyRoofRepairLakeNormanNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero13}
             alt="Emergency roof repair services across the Lake Norman NC area"
             fill
@@ -390,7 +390,7 @@ export default function EmergencyRoofRepairLakeNormanNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project15}
                 alt="Emergency roof repair project near Lake Norman NC"
                 width={600}

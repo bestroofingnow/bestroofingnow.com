@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -296,7 +296,7 @@ export default function RoofingIndianTrailNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Professional roofing Indian Trail NC - Best Roofing Now team installing a new roof"
             fill
@@ -402,7 +402,7 @@ export default function RoofingIndianTrailNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Indian Trail NC roofing project completed by Best Roofing Now"
                 width={600}
@@ -488,7 +488,7 @@ export default function RoofingIndianTrailNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Best Roofing Now - Top-rated roofing company in Indian Trail NC with completed roof project"
                 width={600}
@@ -798,7 +798,7 @@ export default function RoofingIndianTrailNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Completed residential roofing project in Indian Trail NC"
                 fill
@@ -806,7 +806,7 @@ export default function RoofingIndianTrailNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation by Best Roofing Now in Indian Trail"
                 fill
@@ -814,7 +814,7 @@ export default function RoofingIndianTrailNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of completed roofing project in Indian Trail NC"
                 fill
@@ -822,7 +822,7 @@ export default function RoofingIndianTrailNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional roofing work completed in Indian Trail area"
                 fill

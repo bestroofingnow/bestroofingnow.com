@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -261,7 +261,7 @@ export default function GutterInstallationCorneliusNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.gutters}
             alt="Gutter installation Cornelius NC - Best Roofing Now seamless gutter experts"
             fill
@@ -396,7 +396,7 @@ export default function GutterInstallationCorneliusNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Professional gutter installation completed in Cornelius NC - Best Roofing Now"
                 width={600}
@@ -598,7 +598,7 @@ export default function GutterInstallationCorneliusNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Seamless gutter installation completed in Cornelius NC"
                 fill
@@ -606,7 +606,7 @@ export default function GutterInstallationCorneliusNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Gutter and roof installation in Lake Norman area"
                 fill
@@ -614,7 +614,7 @@ export default function GutterInstallationCorneliusNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Aerial view of completed gutter installation in Cornelius"
                 fill
@@ -622,7 +622,7 @@ export default function GutterInstallationCorneliusNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional gutter installation project in Cornelius NC"
                 fill

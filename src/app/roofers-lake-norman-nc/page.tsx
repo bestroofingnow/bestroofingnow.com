@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -33,7 +33,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
-  title: "Roofers Lake Norman NC | LKN's Top-Rated | Best Roofing Now",
+  title: "Roofers Lake Norman NC | LKN's Top-Rated",
   description:
     'Top-rated roofers serving Lake Norman NC. 200+ LKN projects completed, 5-star Google rating, BBB A+ accredited. Veteran-owned roofing contractors in Mooresville, Cornelius, Davidson & Denver.',
   keywords: [
@@ -209,7 +209,7 @@ export default function RoofersLakeNormanNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero21}
             alt="Top-rated roofers serving the Lake Norman NC area"
             fill

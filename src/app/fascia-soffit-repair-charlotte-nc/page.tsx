@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -246,7 +246,7 @@ export default function FasciaSoffitRepairCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero3}
             alt="Professional fascia and soffit repair Charlotte NC"
             fill
@@ -390,7 +390,7 @@ export default function FasciaSoffitRepairCharlotteNCPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Fascia and soffit inspection Charlotte NC"
                 width={600}

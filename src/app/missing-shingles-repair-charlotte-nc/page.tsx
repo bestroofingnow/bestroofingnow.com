@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -232,7 +232,7 @@ export default function MissingShinglesRepairCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero3}
             alt="Missing shingles repair in Charlotte NC - Best Roofing Now professional service"
             fill
@@ -353,7 +353,7 @@ export default function MissingShinglesRepairCharlotteNCPage() {
               </ul>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.projects.stormDamage1}
                 alt="Storm damaged roof with missing shingles in Charlotte NC"
                 width={600}
@@ -447,7 +447,7 @@ export default function MissingShinglesRepairCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Best Roofing Now - Professional roofing team completing shingle repair in Charlotte"
                 width={600}

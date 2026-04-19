@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -33,7 +33,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Lake Wylie SC | Insurance Claims | Best Roofing Now',
+  title: 'Storm Damage Roof Repair Lake Wylie SC | Insurance Claims',
   description:
     'Expert storm damage roof repair in Lake Wylie SC. Hail damage, wind damage, fallen trees. Insurance claim specialists. 24/7 emergency response. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
   keywords: [
@@ -225,7 +225,7 @@ export default function StormDamageRoofRepairLakeWylieSCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.realProjects.project5}
             alt="Storm damage roof repair Lake Wylie SC - Best Roofing Now"
             fill
@@ -410,7 +410,7 @@ export default function StormDamageRoofRepairLakeWylieSCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project17}
                 alt="Storm damage repair completed in Lake Wylie SC by Best Roofing Now"
                 width={600}

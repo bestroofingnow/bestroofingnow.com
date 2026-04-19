@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -224,7 +224,7 @@ export default function WhatToDoRoofLeakPage() {
       {/* Hero Section - Emergency Style */}
       <section className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero25}
             alt="Emergency roof leak repair"
             fill

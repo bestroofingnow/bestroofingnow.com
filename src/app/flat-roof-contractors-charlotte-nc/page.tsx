@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -344,7 +344,7 @@ export default function FlatRoofContractorsCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.commercial.flatRoof}
             alt="Flat roof contractors Charlotte NC - Best Roofing Now commercial flat roof installation"
             fill
@@ -542,7 +542,7 @@ export default function FlatRoofContractorsCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.warehouse}
                 alt="Commercial flat roof installation Charlotte NC"
                 width={600}
@@ -572,7 +572,7 @@ export default function FlatRoofContractorsCharlotteNCPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.modern1}
                 alt="Modern residential flat roof Charlotte NC"
                 width={600}

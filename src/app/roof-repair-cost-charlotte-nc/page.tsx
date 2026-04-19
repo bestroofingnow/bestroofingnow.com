@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -277,7 +277,7 @@ export default function RoofRepairCostCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.repairs}
             alt="Roof repair cost Charlotte NC - Best Roofing Now transparent pricing"
             fill
@@ -438,7 +438,7 @@ export default function RoofRepairCostCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.projects.closeup1}
                 alt="Roof repair in Charlotte NC - Best Roofing Now quality workmanship"
                 width={600}

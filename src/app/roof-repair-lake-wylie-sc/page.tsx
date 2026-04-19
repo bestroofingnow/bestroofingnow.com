@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -33,7 +33,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair Lake Wylie SC | Fast, Affordable | Best Roofing Now',
+  title: 'Roof Repair Lake Wylie SC | Fast, Affordable',
   description:
     'Fast, affordable roof repair in Lake Wylie SC. Emergency leak repair, storm damage, shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for a free estimate.',
   keywords: [
@@ -201,7 +201,7 @@ export default function RoofRepairLakeWylieSCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero14}
             alt="Professional roof repair Lake Wylie SC - Best Roofing Now team"
             fill
@@ -326,7 +326,7 @@ export default function RoofRepairLakeWylieSCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project17}
                 alt="Completed roof repair project in Lake Wylie SC"
                 width={600}

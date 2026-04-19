@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -269,7 +269,7 @@ export default function MossAlgaeRemovalRoofCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero5}
             alt="Moss and algae removal in Charlotte NC - Best Roofing Now roof cleaning experts"
             fill
@@ -367,7 +367,7 @@ export default function MossAlgaeRemovalRoofCharlotteNCPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
-              <Image
+              <SEOImage
                 src={IMAGES.cleaning.softWash}
                 alt="Soft washing roof cleaning in Charlotte NC"
                 width={600}
@@ -460,7 +460,7 @@ export default function MossAlgaeRemovalRoofCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Best Roofing Now - Professional roof cleaning in Charlotte NC"
                 width={600}

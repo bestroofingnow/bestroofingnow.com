@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -723,7 +723,7 @@ export default function GutterCleaningDIYGuidePage() {
               </div>
               <div className="mt-8 md:mt-0">
                 <div className="relative aspect-square w-48 mx-auto">
-                  <Image
+                  <SEOImage
                     src={IMAGES.services.gutters}
                     alt="Gutter guard installation in Charlotte NC"
                     fill

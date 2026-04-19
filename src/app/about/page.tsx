@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import NextImage from 'next/image';
+import { SEOImage as NextImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Shield,

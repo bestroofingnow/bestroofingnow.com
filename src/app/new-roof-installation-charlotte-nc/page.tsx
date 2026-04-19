@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -525,7 +525,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero5}
             alt="New roof installation Charlotte NC - Best Roofing Now expert installation team"
             fill
@@ -791,7 +791,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Completed new roof installation Charlotte NC - aerial view"
                 width={600}
@@ -968,7 +968,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="New roof installation in Charlotte NC - CertainTeed shingles installed by Best Roofing Now"
                 width={600}
@@ -1109,7 +1109,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="New roof installation Charlotte NC - completed project"
                 fill
@@ -1117,7 +1117,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle new roof installation Charlotte"
                 fill
@@ -1125,7 +1125,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of new roof installation Charlotte NC"
                 fill
@@ -1133,7 +1133,7 @@ export default function NewRoofInstallationCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional new roof installation in Charlotte area"
                 fill

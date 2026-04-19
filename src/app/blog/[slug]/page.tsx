@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { Calendar, ArrowLeft, Clock, Phone, ArrowRight, MapPin } from 'lucide-react';
 import { BreadcrumbSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES } from '@/lib/constants';
@@ -187,7 +187,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Article Header */}
       <section className="relative bg-gradient-primary text-white py-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={featuredImage || IMAGES.hero.hero26}
             alt={title}
             fill
@@ -232,7 +232,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {/* Featured Image */}
               {featuredImage && (
                 <div className="aspect-video relative rounded-xl overflow-hidden mb-8">
-                  <Image
+                  <SEOImage
                     src={featuredImage}
                     alt={title}
                     fill

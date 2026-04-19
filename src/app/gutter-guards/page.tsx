@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -105,7 +105,7 @@ export default function GutterGuardsPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Gutter guards in Charlotte NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Gutter guards in Charlotte NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <Breadcrumbs items={breadcrumbItems} className="mb-6 text-white/80" />
@@ -193,7 +193,7 @@ export default function GutterGuardsPage() {
               </ul>
             </div>
             <div className="relative">
-              <Image src={IMAGES.realProjects.drone1} alt="Gutter guards installed on home" width={600} height={450} className="rounded-xl shadow-lg" />
+              <SEOImage src={IMAGES.realProjects.drone1} alt="Gutter guards installed on home" width={600} height={450} className="rounded-xl shadow-lg" />
             </div>
           </div>
         </div>

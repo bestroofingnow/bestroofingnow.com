@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   DollarSign,
@@ -33,6 +33,7 @@ import {
   VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { LastUpdated } from '@/components/ui/LastUpdated';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
@@ -249,7 +250,7 @@ export default function CharlotteRoofingCosts2026Page() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Charlotte NC roofing costs and pricing guide 2026 - Best Roofing Now"
             fill
@@ -266,6 +267,7 @@ export default function CharlotteRoofingCosts2026Page() {
             ]}
             className="mb-6 text-white/70"
           />
+          <LastUpdated date="2026-04-19" className="mb-4 text-white/70" label="Pricing reviewed" />
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <DollarSign className="w-4 h-4" />
@@ -879,7 +881,7 @@ export default function CharlotteRoofingCosts2026Page() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.services.commercial}
                 alt="Commercial roofing costs Charlotte NC - flat roof systems"
                 width={600}
@@ -1004,7 +1006,7 @@ export default function CharlotteRoofingCosts2026Page() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero5}
                 alt="Saving money on roofing costs in Charlotte NC"
                 width={600}

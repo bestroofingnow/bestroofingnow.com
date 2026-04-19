@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -273,7 +273,7 @@ export default function StormDamageRoofRepairPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.stock.serviceStormDamage}
             alt="Storm damage roof repair in Charlotte NC"
             fill
@@ -445,7 +445,7 @@ export default function StormDamageRoofRepairPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.stock.serviceStormDamage}
                 alt="Storm damage roof inspection Charlotte NC"
                 width={600}

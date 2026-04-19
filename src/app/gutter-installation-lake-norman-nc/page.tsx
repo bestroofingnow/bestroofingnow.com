@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -257,14 +257,14 @@ export default function GutterInstallationLakeNormanNCPage() {
       <ServiceAreaPageSchema
         city="Lake Norman"
         state="NC"
-        slug="gutter-installation-lake-norman-nc"
+        slug="gutter-installation-lake-norman-nc" pagePath="/gutter-installation-lake-norman-nc"
         distance={25}
       />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.gutters}
             alt="Gutter installation Lake Norman NC - Best Roofing Now seamless gutter experts"
             fill
@@ -400,7 +400,7 @@ export default function GutterInstallationLakeNormanNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Professional gutter installation completed at Lake Norman home - Best Roofing Now"
                 width={600}
@@ -608,7 +608,7 @@ export default function GutterInstallationLakeNormanNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Seamless gutter installation completed in Lake Norman NC"
                 fill
@@ -616,7 +616,7 @@ export default function GutterInstallationLakeNormanNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Gutter and roofing project in the Lake Norman area"
                 fill
@@ -624,7 +624,7 @@ export default function GutterInstallationLakeNormanNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of completed gutter installation near Lake Norman"
                 fill
@@ -632,7 +632,7 @@ export default function GutterInstallationLakeNormanNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional gutter installation project in Lake Norman NC"
                 fill

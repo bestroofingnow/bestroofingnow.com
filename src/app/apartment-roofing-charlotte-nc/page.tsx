@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -209,7 +209,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero4}
             alt="Professional apartment roofing services in Charlotte NC - Best Roofing Now"
             fill
@@ -364,7 +364,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.warehouse}
                 alt="Apartment roofing project by Best Roofing Now in Charlotte NC"
                 width={600}
@@ -521,7 +521,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project2}
                 alt="Apartment roof replacement in Charlotte NC"
                 fill
@@ -529,7 +529,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.office}
                 alt="Multi-family roofing project in Charlotte"
                 fill
@@ -537,7 +537,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Aerial view of apartment roofing project"
                 fill
@@ -545,7 +545,7 @@ export default function ApartmentRoofingCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project4}
                 alt="Completed apartment roof in Charlotte"
                 fill

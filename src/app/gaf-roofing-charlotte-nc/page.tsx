@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -227,7 +227,7 @@ export default function GAFRoofingCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="GAF roofing installation Charlotte NC - Best Roofing Now certified contractor"
             fill
@@ -362,7 +362,7 @@ export default function GAFRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="GAF Timberline roof installation completed by Best Roofing Now in Charlotte NC"
                 width={600}
@@ -494,7 +494,7 @@ export default function GAFRoofingCharlotteNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="GAF Timberline HDZ roof installation in Charlotte NC"
                 fill
@@ -502,7 +502,7 @@ export default function GAFRoofingCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Completed GAF roofing project in Charlotte"
                 fill
@@ -510,7 +510,7 @@ export default function GAFRoofingCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of GAF roof project in Charlotte NC"
                 fill
@@ -518,7 +518,7 @@ export default function GAFRoofingCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional GAF roofing work in Charlotte area"
                 fill

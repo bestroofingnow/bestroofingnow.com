@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -218,7 +218,7 @@ export default function SidingInstallationLakeNormanNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero2}
             alt="Professional siding installation for Lake Norman NC homes - Best Roofing Now"
             fill
@@ -352,7 +352,7 @@ export default function SidingInstallationLakeNormanNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Best Roofing Now - Trusted siding contractor serving Lake Norman NC"
                 width={600}
@@ -517,7 +517,7 @@ export default function SidingInstallationLakeNormanNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Completed siding installation on Lake Norman waterfront home"
                 fill
@@ -525,7 +525,7 @@ export default function SidingInstallationLakeNormanNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Fiber cement siding project in Lake Norman area"
                 fill
@@ -533,7 +533,7 @@ export default function SidingInstallationLakeNormanNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of completed exterior project near Lake Norman"
                 fill
@@ -541,7 +541,7 @@ export default function SidingInstallationLakeNormanNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional siding work in Lake Norman community"
                 fill

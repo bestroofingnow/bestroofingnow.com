@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   ArrowRight,
@@ -226,7 +226,7 @@ export default function FlatRoofingLakeNormanNCPage() {
         state="NC"
         county="Mecklenburg/Iredell"
         distance={15}
-        slug="flat-roofing-lake-norman-nc"
+        slug="flat-roofing-lake-norman-nc" pagePath="/flat-roofing-lake-norman-nc"
       />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/flat-roofing-lake-norman-nc`}
@@ -246,7 +246,7 @@ export default function FlatRoofingLakeNormanNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.stock.roofCommercialFlat1}
             alt="Flat roofing services in Lake Norman NC - commercial and residential"
             fill
@@ -380,7 +380,7 @@ export default function FlatRoofingLakeNormanNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.stock.roofCommercialFlat2}
                 alt="Commercial flat roof installation in Lake Norman NC area"
                 width={600}

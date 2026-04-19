@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -281,7 +281,7 @@ export default function CommercialRoofRepairCostCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.commercial.flatRoof}
             alt="Commercial roof repair cost Charlotte NC - Best Roofing Now commercial roofing project"
             fill
@@ -444,7 +444,7 @@ export default function CommercialRoofRepairCostCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.office}
                 alt="Commercial roof repair project in Charlotte NC - office building roofing"
                 width={600}
@@ -583,7 +583,7 @@ export default function CommercialRoofRepairCostCharlotteNCPage() {
               </Button>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.warehouse}
                 alt="Commercial roof maintenance contract - proactive roof care in Charlotte NC"
                 width={600}

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -221,7 +221,7 @@ export default function ChurchRoofingCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero5}
             alt="Professional church roofing services in Charlotte NC - Best Roofing Now"
             fill
@@ -354,7 +354,7 @@ export default function ChurchRoofingCharlotteNCPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Steep church roof completed by Best Roofing Now in Charlotte NC"
                 width={600}
@@ -432,7 +432,7 @@ export default function ChurchRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Church roofing project completed by Best Roofing Now"
                 width={600}
@@ -572,7 +572,7 @@ export default function ChurchRoofingCharlotteNCPage() {
                 </ul>
               </div>
               <div className="relative">
-                <Image
+                <SEOImage
                   src={IMAGES.realProjects.certainteed1}
                   alt="Historic church roofing preservation in Charlotte NC"
                   width={500}

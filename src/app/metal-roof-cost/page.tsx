@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   DollarSign,
@@ -254,7 +254,7 @@ export default function MetalRoofCostPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.metalRoof}
             alt="Metal roof cost guide 2026 - standing seam metal roofing installation"
             fill
@@ -703,7 +703,7 @@ export default function MetalRoofCostPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.metalRoof}
                 alt="Types of metal roofing - standing seam metal roof installation in Charlotte NC"
                 width={600}
@@ -864,7 +864,7 @@ export default function MetalRoofCostPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero3}
                 alt="Metal roof ROI analysis - is a metal roof worth the cost in Charlotte NC"
                 width={600}

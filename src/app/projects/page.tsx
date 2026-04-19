@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { MapPin, Camera, Calendar, ChevronRight, ExternalLink } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -241,7 +241,7 @@ export default async function ProjectsPage() {
                     {/* Thumbnail */}
                     <div className="relative aspect-square">
                       {thumbnail ? (
-                        <Image
+                        <SEOImage
                           src={thumbnail}
                           alt={`Roofing project in ${project.city}, ${project.state}`}
                           fill

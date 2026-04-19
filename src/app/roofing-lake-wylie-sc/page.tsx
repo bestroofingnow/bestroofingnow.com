@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -33,7 +33,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Lake Wylie SC | #1 Rated Lake Wylie Roofers | Best Roofing Now',
+  title: 'Roofing Lake Wylie SC | #1 Rated Lake Wylie Roofers',
   description:
     'Lake Wylie\'s trusted roofing company serving Tega Cay, Fort Mill & York County. Waterfront roofing specialists with 500+ roofs installed. BBB A+, veteran-owned. FREE estimates! Call (704) 605-6047.',
   keywords: [
@@ -224,7 +224,7 @@ export default function RoofingLakeWylieSCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero14}
             alt="Lake Wylie roofing - waterfront roofing experts serving Tega Cay and York County"
             fill
@@ -425,7 +425,7 @@ export default function RoofingLakeWylieSCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project17}
                 alt="Lake Wylie waterfront home roofing project"
                 width={600}

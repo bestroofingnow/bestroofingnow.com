@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -238,7 +238,7 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.stormDamage}
             alt="Hurricane damage roof repair in Charlotte NC - Best Roofing Now storm recovery experts"
             fill
@@ -373,7 +373,7 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.projects.stormDamage1}
                 alt="Best Roofing Now - Hurricane damage experts in Charlotte NC"
                 width={600}
@@ -552,7 +552,7 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Hurricane damage roof repair completed in Charlotte NC"
                 fill
@@ -560,7 +560,7 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Storm damage restoration in Charlotte"
                 fill
@@ -568,7 +568,7 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of hurricane restoration project in Charlotte NC"
                 fill
@@ -576,7 +576,7 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional hurricane damage repair in Charlotte area"
                 fill

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   BookOpen,
@@ -58,6 +58,7 @@ import {
   LocalBusinessSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { LastUpdated } from '@/components/ui/LastUpdated';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
@@ -523,6 +524,7 @@ export default function LakeNormanRoofingGuidePage() {
               { name: 'Complete Roofing Guide', href: '/lake-norman-roofing-guide' },
             ]}
           />
+          <LastUpdated date="2026-04-19" className="mt-1" />
         </div>
       </div>
 
@@ -531,7 +533,7 @@ export default function LakeNormanRoofingGuidePage() {
       {/* ============================================================ */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={IMAGES.houses.modern1}
             alt="Lake Norman roofing guide - complete homeowner resource"
             fill
@@ -693,7 +695,7 @@ export default function LakeNormanRoofingGuidePage() {
             </div>
             <div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                <Image
+                <SEOImage
                   src={IMAGES.houses.modern1}
                   alt="Aerial view of Lake Norman waterfront homes showing roofing challenges"
                   width={600}

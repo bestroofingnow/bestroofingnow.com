@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -312,7 +312,7 @@ export default function CedarShakeRoofingLakeNormanNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-amber-900 via-amber-800 to-stone-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Cedar shake roofing Lake Norman NC - handsplit Western Red Cedar lakefront cottage"
             fill
@@ -766,7 +766,7 @@ export default function CedarShakeRoofingLakeNormanNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero1}
                 alt="Cedar shake roof installation Lake Norman NC - Best Roofing Now CSSB certified"
                 width={600}

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -33,7 +33,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Residential Roof Replacement Charlotte NC | Free Estimates | Best Roofing Now',
+  title: 'Residential Roof Replacement Charlotte NC | Free Estimates',
   description:
     'Professional residential roof replacement in Charlotte NC. Asphalt, metal, tile, slate & cedar options. Free estimates, financing available, 25-year warranties. Trusted by 500+ homeowners. Call now!',
   keywords: [
@@ -278,7 +278,7 @@ export default function ResidentialRoofReplacementPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.stock.heroSuburbanHomes}
             alt="Residential roof replacement in Charlotte NC"
             fill

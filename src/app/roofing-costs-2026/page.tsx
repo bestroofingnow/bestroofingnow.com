@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   DollarSign,
@@ -48,7 +48,7 @@ import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Complete Guide to Roofing Costs in Charlotte NC (2026) | Best Roofing Now',
+  title: 'Complete Guide to Roofing Costs in Charlotte NC (2026)',
   description:
     'Comprehensive 2026 roofing cost guide for Charlotte NC. Roof replacement $8,000-$15,000, metal roofing $12-18/sqft, roof repair $250-$4,500, gutter installation $600-$2,400, siding $5-15/sqft. Free estimates from BBB A+ rated contractor.',
   keywords: [
@@ -348,7 +348,7 @@ export default function RoofingCosts2026Page() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Complete guide to roofing costs in Charlotte NC 2026 - Best Roofing Now"
             fill
@@ -846,7 +846,7 @@ export default function RoofingCosts2026Page() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.metalRoof}
                 alt="Metal roof installation cost Charlotte NC - standing seam metal roofing"
                 width={600}
@@ -1189,7 +1189,7 @@ export default function RoofingCosts2026Page() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.services.siding}
                 alt="Siding installation cost Charlotte NC - fiber cement and vinyl siding"
                 width={600}

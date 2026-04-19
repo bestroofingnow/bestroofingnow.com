@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -256,7 +256,7 @@ export default function RoofReplacementConcordNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero4}
             alt="Roof replacement Concord NC - Best Roofing Now new roof installation team"
             fill
@@ -391,7 +391,7 @@ export default function RoofReplacementConcordNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Roof replacement completed in Concord NC - Best Roofing Now"
                 width={600}
@@ -598,7 +598,7 @@ export default function RoofReplacementConcordNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Roof replacement completed in Concord NC"
                 fill
@@ -606,7 +606,7 @@ export default function RoofReplacementConcordNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation in Cabarrus County"
                 fill
@@ -614,7 +614,7 @@ export default function RoofReplacementConcordNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Aerial view of completed roof replacement in Concord"
                 fill
@@ -622,7 +622,7 @@ export default function RoofReplacementConcordNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="New roof installation project in Concord NC"
                 fill

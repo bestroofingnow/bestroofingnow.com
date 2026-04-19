@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import { MapPin, Camera, Calendar, ChevronRight, ArrowLeft, ExternalLink, Shield, Star, CloudRain, Home, Wrench } from 'lucide-react';
 import { SITE_CONFIG, LOCATIONS } from '@/lib/constants';
@@ -625,7 +625,7 @@ export default async function ProjectDetailPage({
                   >
                     <div className="relative aspect-square">
                       {thumbnail ? (
-                        <Image
+                        <SEOImage
                           src={thumbnail}
                           alt={`${related.product || 'Roofing'} project in ${related.city}, ${related.state}`}
                           fill

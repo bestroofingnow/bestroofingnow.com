@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -279,7 +279,7 @@ export default function MetalRoofingThePeninsulaCorneliusPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Standing seam metal roof at The Peninsula Cornelius NC — Lake Norman luxury estate"
             fill
@@ -765,7 +765,7 @@ export default function MetalRoofingThePeninsulaCorneliusPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero1}
                 alt="Standing seam metal roof installation at The Peninsula in Cornelius NC by Best Roofing Now"
                 width={600}

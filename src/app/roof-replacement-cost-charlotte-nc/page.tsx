@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   DollarSign,
@@ -290,7 +290,7 @@ export default function RoofReplacementCostCharlottePage() {
       {/* Hero Section with Cost Range */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Roof replacement cost in Charlotte NC - professional roofing installation"
             fill
@@ -602,7 +602,7 @@ export default function RoofReplacementCostCharlottePage() {
               </ul>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Charlotte NC roof replacement project by Best Roofing Now"
                 width={600}
@@ -640,7 +640,7 @@ export default function RoofReplacementCostCharlottePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Completed roof replacement in Charlotte NC"
                 fill
@@ -648,7 +648,7 @@ export default function RoofReplacementCostCharlottePage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation Charlotte"
                 fill
@@ -656,7 +656,7 @@ export default function RoofReplacementCostCharlottePage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of roof replacement Charlotte NC"
                 fill
@@ -664,7 +664,7 @@ export default function RoofReplacementCostCharlottePage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Residential roofing project Charlotte area"
                 fill

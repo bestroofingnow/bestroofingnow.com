@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Phone,
@@ -108,7 +108,7 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Storm Damage', url: `${SITE_CONFIG.url}/services/storm-damage` }, { name: 'Davidson NC', url: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc` }]} />
       <FAQSchema faqs={faqs} />
-      <ServiceAreaPageSchema city="Davidson" state="NC" slug="storm-damage-roof-repair-davidson-nc" distance={18} />
+      <ServiceAreaPageSchema city="Davidson" state="NC" slug="storm-damage-roof-repair-davidson-nc" pagePath="/storm-damage-roof-repair-davidson-nc" distance={18} />
       <WebPageSchema
         name="Storm Damage Roof Repair Davidson NC | 24/7 Emergency Response"
         description="24/7 storm damage roof repair in Davidson NC and Lake Norman. Hail, wind, and tree damage. Free inspection, insurance claim assistance, emergency tarping. BBB A+ rated."
@@ -141,7 +141,7 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Storm damage roof repair in Davidson NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Storm damage roof repair in Davidson NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl">

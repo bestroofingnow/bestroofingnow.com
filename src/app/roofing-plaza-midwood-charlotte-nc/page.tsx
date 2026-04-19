@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -213,7 +213,7 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.neighborhoods.plazaMidwood}
             alt="Roofing services in Plaza Midwood Charlotte NC - craftsman homes and historic bungalows"
             fill
@@ -319,7 +319,7 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Completed roofing project in Plaza Midwood Charlotte NC"
                 width={600}
@@ -394,7 +394,7 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Quality roofing installation in Plaza Midwood by Best Roofing Now"
                 width={600}

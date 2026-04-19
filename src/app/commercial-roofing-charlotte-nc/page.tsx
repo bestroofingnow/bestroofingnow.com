@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -473,7 +473,7 @@ export default function CommercialRoofingCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.commercial.warehouse}
             alt="Commercial roofing Charlotte NC - Best Roofing Now team completing a commercial roof installation"
             fill
@@ -658,7 +658,7 @@ export default function CommercialRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.office}
                 alt="Commercial roofing Charlotte NC - Office building roof installation by Best Roofing Now"
                 width={600}
@@ -958,7 +958,7 @@ export default function CommercialRoofingCharlotteNCPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-48">
-                <Image
+                <SEOImage
                   src={IMAGES.commercial.warehouse}
                   alt="Commercial warehouse roofing project Charlotte NC"
                   fill
@@ -975,7 +975,7 @@ export default function CommercialRoofingCharlotteNCPage() {
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-48">
-                <Image
+                <SEOImage
                   src={IMAGES.commercial.office}
                   alt="Commercial office building roofing project Charlotte NC"
                   fill
@@ -992,7 +992,7 @@ export default function CommercialRoofingCharlotteNCPage() {
             </div>
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-48">
-                <Image
+                <SEOImage
                   src={IMAGES.commercial.flatRoof}
                   alt="Commercial retail center roofing project Charlotte NC"
                   fill

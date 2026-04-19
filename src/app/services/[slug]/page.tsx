@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import {
   Phone,
   CheckCircle,
@@ -846,7 +846,7 @@ export default async function ServicePage({ params }: PageProps) {
       {/* Hero Section */}
       <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <SEOImage
             src={SERVICE_HERO_IMAGES[slug] || IMAGES.hero.roofTeam}
             alt={`${service.title} services in Charlotte NC - Best Roofing Now certified contractor`}
             fill
@@ -1023,7 +1023,7 @@ export default async function ServicePage({ params }: PageProps) {
               ];
               return (
                 <div key={index} className="relative aspect-square rounded-xl overflow-hidden">
-                  <Image
+                  <SEOImage
                     src={image}
                     alt={altTexts[index % altTexts.length]}
                     fill

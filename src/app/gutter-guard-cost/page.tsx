@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   DollarSign,
@@ -275,7 +275,7 @@ export default function GutterGuardCostPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.gutters}
             alt="Gutter guard installation cost guide - Best Roofing Now Charlotte NC"
             fill
@@ -1035,7 +1035,7 @@ export default function GutterGuardCostPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.hero.hero5}
                 alt="Gutter guard ROI and long-term savings for Charlotte homeowners"
                 width={600}

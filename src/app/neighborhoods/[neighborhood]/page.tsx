@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { MapPin, Phone, CheckCircle, ArrowRight, Home, Clock, Building, Ruler, Calendar, Trees, Shield, Star } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
@@ -678,7 +678,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
                 </div>
               </div>
               <div className="relative">
-                <Image
+                <SEOImage
                   src={IMAGES.hero.roofTeam}
                   alt={`Best Roofing Now team serving ${displayName}`}
                   width={600}

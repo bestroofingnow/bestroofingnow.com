@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -269,7 +269,7 @@ export default function SkylightInstallationCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero14}
             alt="Skylight installation Charlotte NC - Best Roofing Now professional skylight services"
             fill
@@ -403,7 +403,7 @@ export default function SkylightInstallationCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.modern1}
                 alt="Modern home with skylights in Charlotte NC"
                 width={600}

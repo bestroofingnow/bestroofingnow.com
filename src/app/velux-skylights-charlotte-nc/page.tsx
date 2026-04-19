@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -245,7 +245,7 @@ export default function VeluxSkylightsCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero4}
             alt="VELUX skylight installation Charlotte NC - Best Roofing Now certified installer"
             fill
@@ -387,7 +387,7 @@ export default function VeluxSkylightsCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.modern1}
                 alt="VELUX skylight installation on Charlotte home - natural light flooding interior"
                 width={600}

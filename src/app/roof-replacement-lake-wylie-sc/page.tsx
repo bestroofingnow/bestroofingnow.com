@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -30,7 +30,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Lake Wylie SC | Free Estimates | Best Roofing Now',
+  title: 'Roof Replacement Lake Wylie SC | Free Estimates',
   description:
     'Professional roof replacement in Lake Wylie SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning. $8,500-$25,000. Up to 50-year warranties. Call (704) 605-6047.',
   keywords: [
@@ -219,7 +219,7 @@ export default function RoofReplacementLakeWylieSCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.realProjects.project5}
             alt="Professional roof replacement Lake Wylie SC - Best Roofing Now"
             fill
@@ -435,7 +435,7 @@ export default function RoofReplacementLakeWylieSCPage() {
               </p>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="CertainTeed shingle installation on Lake Wylie SC home"
                 width={600}

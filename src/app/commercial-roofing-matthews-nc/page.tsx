@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -109,7 +109,7 @@ export default function CommercialRoofingMatthewsNCPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Commercial Roofing', url: `${SITE_CONFIG.url}/services/commercial-roofing` }, { name: 'Matthews NC', url: `${SITE_CONFIG.url}/commercial-roofing-matthews-nc` }]} />
       <FAQSchema faqs={faqs} />
-      <ServiceAreaPageSchema city="Matthews" state="NC" slug="commercial-roofing-matthews-nc" distance={12} />
+      <ServiceAreaPageSchema city="Matthews" state="NC" slug="commercial-roofing-matthews-nc" pagePath="/commercial-roofing-matthews-nc" distance={12} />
       <WebPageSchema
         name="Commercial Roofing Matthews NC | TPO, EPDM, PVC, Metal Specialists"
         description="Commercial roofing in Matthews NC. TPO, EPDM, PVC, modified bitumen, metal, and coatings. NDL manufacturer warranties, weekend installs, property-manager friendly."
@@ -141,7 +141,7 @@ export default function CommercialRoofingMatthewsNCPage() {
 
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image src={IMAGES.hero.hero3} alt="Commercial roofing in Matthews NC" fill className="object-cover opacity-20" priority />
+          <SEOImage src={IMAGES.hero.hero3} alt="Commercial roofing in Matthews NC" fill className="object-cover opacity-20" priority />
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl">

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   Droplets,
@@ -333,7 +333,7 @@ export default function RoofLeakRepairCharlottePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero1}
             alt="Roof leak repair in Charlotte NC - professional leak detection and repair services"
             fill
@@ -658,7 +658,7 @@ export default function RoofLeakRepairCharlottePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Professional roof leak repair in Charlotte NC"
                 width={600}

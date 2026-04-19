@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -239,7 +239,7 @@ export default function EPDMRoofingCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.commercial.flatRoof}
             alt="EPDM rubber roof installation Charlotte NC - Best Roofing Now"
             fill
@@ -375,7 +375,7 @@ export default function EPDMRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.warehouse}
                 alt="EPDM rubber roofing for industrial buildings in Charlotte NC"
                 width={600}
@@ -481,7 +481,7 @@ export default function EPDMRoofingCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.commercial.office}
                 alt="Best Roofing Now - Professional EPDM roofing installation in Charlotte NC"
                 width={600}

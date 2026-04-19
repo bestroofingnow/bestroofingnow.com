@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { MapPin, Phone, CheckCircle, ArrowRight, Cloud, Thermometer, Droplets, Wind, AlertTriangle, Building, Clock, Navigation } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Services } from '@/components/sections/Services';
@@ -1139,7 +1139,7 @@ export default async function LocationPage({ params }: PageProps) {
                     aria-label={`Best Roofing Now team working in ${location.city}`}
                   />
                 ) : (
-                  <Image
+                  <SEOImage
                     src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
                     alt={`Roofing company in ${location.city} ${location.state} - Best Roofing Now certified roofing contractor`}
                     width={600}
@@ -1217,7 +1217,7 @@ export default async function LocationPage({ params }: PageProps) {
                   aria-label={`Roofing project video in ${location.city}`}
                 />
               ) : (
-                <Image
+                <SEOImage
                   src={LOCATION_HERO_IMAGES[city] || IMAGES.houses.house1}
                   alt={`Professional roofing contractor ${location.city} ${location.state} - completed roof project`}
                   fill
@@ -1227,7 +1227,7 @@ export default async function LocationPage({ params }: PageProps) {
               )}
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.house1}
                 alt={`Residential roof replacement in ${location.city} NC - asphalt shingle installation`}
                 fill
@@ -1236,7 +1236,7 @@ export default async function LocationPage({ params }: PageProps) {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.projects.work1}
                 alt={`Roof repair services ${location.city} - Best Roofing Now work in progress`}
                 fill
@@ -1245,7 +1245,7 @@ export default async function LocationPage({ params }: PageProps) {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.houses.modern1}
                 alt={`New roof installation ${location.city} ${location.state} - modern home roofing`}
                 fill

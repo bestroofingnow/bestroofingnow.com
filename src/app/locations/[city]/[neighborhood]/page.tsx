@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import { MapPin, Phone, CheckCircle, ArrowRight, Home, Calendar, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
@@ -235,7 +235,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
 
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <Image
+                <SEOImage
                   src={IMAGES.houses.house1}
                   alt={`Roofing services in ${neighborhoodData.name}, ${location.city}`}
                   width={600}

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -261,7 +261,7 @@ export default function GutterInstallationDenverNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.services.gutters}
             alt="Gutter installation Denver NC - Best Roofing Now seamless gutter experts on Lake Norman western shore"
             fill
@@ -397,7 +397,7 @@ export default function GutterInstallationDenverNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone1}
                 alt="Professional gutter installation completed in Denver NC near Lake Norman"
                 width={600}
@@ -599,7 +599,7 @@ export default function GutterInstallationDenverNCPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project1}
                 alt="Seamless gutter installation completed in Denver NC"
                 fill
@@ -607,7 +607,7 @@ export default function GutterInstallationDenverNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Gutter and roof installation in Denver NC Lake Norman area"
                 fill
@@ -615,7 +615,7 @@ export default function GutterInstallationDenverNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.drone2}
                 alt="Aerial view of completed gutter installation in Denver NC"
                 fill
@@ -623,7 +623,7 @@ export default function GutterInstallationDenverNCPage() {
               />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.project3}
                 alt="Professional gutter installation project near Lake Norman State Park"
                 fill

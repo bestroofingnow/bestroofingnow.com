@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
   CheckCircle,
@@ -240,7 +240,7 @@ export default function IceDamPreventionCharlotteNCPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 hidden md:block">
-          <Image
+          <SEOImage
             src={IMAGES.hero.hero6}
             alt="Ice dam prevention services in Charlotte NC - Best Roofing Now winter experts"
             fill
@@ -359,7 +359,7 @@ export default function IceDamPreventionCharlotteNCPage() {
               </ul>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.services.emergency}
                 alt="Ice dam damage to Charlotte home roof"
                 width={600}
@@ -427,7 +427,7 @@ export default function IceDamPreventionCharlotteNCPage() {
               </div>
             </div>
             <div className="relative">
-              <Image
+              <SEOImage
                 src={IMAGES.realProjects.certainteed1}
                 alt="Best Roofing Now - Trusted roofing company in Charlotte NC"
                 width={600}
