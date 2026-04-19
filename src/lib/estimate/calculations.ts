@@ -15,7 +15,7 @@ const WASTE_FACTOR = 1.15;
 const MATERIAL_PRICING = [
   {
     name: 'Architectural Shingles',
-    pricePerSqFt: { low: 3.60, mid: 5.74, high: 7.88 },
+    pricePerSqFt: { low: 3.95, mid: 5.00, high: 6.00 },
   },
   {
     name: 'Metal Roofing',
