@@ -179,7 +179,7 @@ export default function CedarShakeRoofingPage() {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">Timeless natural beauty for historic and luxury homes</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              Cedar shake roofing across Charlotte NC and Lake Norman — Certi-Split, Certi-Sawn, and Certi-Shake grades in Western Red Cedar and Alaskan Yellow Cedar, plus fire-retardant Class A/B treated options and synthetic cedar composite alternatives (DaVinci, Brava) for Charlotte&apos;s humid climate. Historic Matthews, Historic Davidson, Dilworth, Fourth Ward, Myers Park, Eastover, and lakefront Lake Norman custom-home specialty. Realistic Charlotte lifespan 25–40 years with proper maintenance — or 40–50 years with synthetic alternative.
+              Cedar shake is beautiful. It&apos;s also work — it needs cleaning and oiling over the years, and Charlotte&apos;s humidity is harder on it than the Pacific Northwest, so lifespan is more like 25–40 years than the 50+ you&apos;ll see in marketing. We do the real thing on historic and custom homes in Matthews, Davidson, Dilworth, Myers Park, and around Lake Norman — plus a modern synthetic option that looks like cedar without the maintenance. We&apos;ll help you pick the right path for your place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/contact" variant="primary" size="lg" className="bg-white !text-amber-800 hover:bg-white/90" icon={<Calendar className="w-5 h-5" aria-hidden="true" />}>Get Free Estimate</Button>

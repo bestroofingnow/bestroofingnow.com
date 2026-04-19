@@ -323,7 +323,7 @@ export default function RoofRepairCharlotteNCPage() {
               Fast, Affordable Roof Repairs You Can Trust
             </p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              Expert roof repair across Charlotte NC and Lake Norman — leaks, pipe boots (typical 8–12 year failure point), chimney flashing, valley repair, missing shingles, storm damage, and sagging decking. Same-day emergency response (2–4 hour Mecklenburg dispatch), 2026 transparent pricing, 2-year workmanship warranty, and insurance claim support with Xactimate-compatible estimates. Honest repair-vs-replace assessments — not every Charlotte roof needs replacement.
+              Leaky roof, missing shingles, storm damage, or something that just doesn&apos;t look right? We fix roofs all over Charlotte and Lake Norman — usually same-day for active leaks. Straightforward pricing, a 2-year warranty on the work, and a real answer to the question most people are asking: do I actually need to replace this, or will a repair do? Often it&apos;s the repair.
             </p>
 
             {/* CTA Buttons */}

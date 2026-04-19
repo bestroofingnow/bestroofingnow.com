@@ -168,7 +168,7 @@ export default function FlatRoofRepairPage() {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">Expert repairs for all flat roof systems</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              From small seam leaks to ponding-water corrections and full membrane overlays, Best Roofing Now repairs every flat and low-slope roof system across Charlotte NC and Lake Norman — TPO, EPDM, PVC, modified bitumen (SBS/APP), built-up roofing, and roof coatings. Authorized installer for Carlisle SynTec, Johns Manville, and Firestone/Holcim, so our repairs preserve manufacturer NDL warranty status. Free inspection with infrared moisture scan and photo-documented condition report.
+              Flat roofs are their own thing — different materials, different failure points, different fix. We work on all of them: TPO, EPDM, PVC, modified bitumen, built-up, and coated roofs. Free inspection to figure out what&apos;s really going on (including an infrared scan for hidden moisture), a clear photo report, and repairs that keep your manufacturer warranty intact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/contact" variant="primary" size="lg" icon={<Calendar className="w-5 h-5" aria-hidden="true" />}>Get Free Estimate</Button>

@@ -283,7 +283,7 @@ export default function RoofInspectionCharlottePage() {
               Roof Inspection Charlotte NC
             </h1>
             <p className="speakable-intro text-xl text-white/90 mb-8">
-              Free comprehensive roof inspections across Charlotte NC and Lake Norman by HAAG certified inspectors using drone thermal imaging and walk-the-roof probe testing. Photo-documented written reports in 24–48 hours, covering shingle condition, flashing integrity, ventilation (NC code IRC §R806 NFVA ratio), attic moisture, gutter performance, and remaining useful life estimate. No sales pressure, no obligation — just honest assessments to protect your Charlotte home.
+              A free roof inspection from people who know Charlotte roofs. We walk your roof, check your attic, fly a drone when it helps, and send you an honest written report with photos — usually within a day or two. No sales pressure. If your roof is fine, we&apos;ll tell you. If something needs attention, we&apos;ll show you exactly what and what it would cost to fix.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button

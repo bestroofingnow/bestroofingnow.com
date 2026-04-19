@@ -179,7 +179,7 @@ export default function TileRoofingPage() {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">The ultimate in beauty and longevity</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              Tile roofing across Charlotte NC and Lake Norman — clay (terracotta), concrete, Spanish S-tile, flat slate-look, and synthetic composite alternatives (DaVinci Slate, Brava Spanish). 75–100 year clay lifespan, Class A fire rating, 150+ MPH wind resistance. Structural engineering review included — tile at 900–1,200 lb/sq requires framing assessment; synthetic tile at 250–400 lb/sq installs on standard framing. Common in Myers Park, Eastover, Foxcroft, SouthPark Mediterranean architecture, and custom lakefront builds.
+              Tile roofs last the longest — a well-installed clay tile roof can outlive you. The catch: tile is heavy, and most houses built in the last 30 years need some structural reinforcement before they can carry it. We check that on the estimate. If you love the look but don&apos;t want the extra framing work, there&apos;s now a lightweight synthetic tile that reads the same from the street. Common choice on custom homes in Myers Park, Eastover, Foxcroft, and around Lake Norman.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/contact" variant="primary" size="lg" className="bg-white !text-orange-800 hover:bg-white/90" icon={<Calendar className="w-5 h-5" aria-hidden="true" />}>Get Free Estimate</Button>

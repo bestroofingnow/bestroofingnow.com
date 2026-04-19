@@ -172,7 +172,7 @@ export default function StandingSeamMetalRoofingPage() {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">The last roof you&apos;ll ever need</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              Premium standing seam metal roofing across Charlotte NC and Lake Norman — snap-lock and mechanically seamed double-lock systems in 22 to 26 gauge steel, aluminum, zinc, and copper with Kynar 500 or Hylar 5000 PVDF finish. On-site panel fabrication means zero seams per elevation. 40–50 year system warranties, 140+ MPH wind resistance, S-5! solar-ready, and Class 4 impact-rated upgrade options for NC insurance premium discounts.
+              Standing seam is the roof you probably won&apos;t replace again. 40–50 year life, handles Carolina wind, and the panels are fabricated right on your driveway so each run is one continuous piece — no seams to leak. Steel is the sweet spot for most homes; aluminum is worth the extra if you&apos;re near the lake; copper and zinc are for the custom builds that want something special. Solar-panel compatible too, if that&apos;s on your horizon.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/contact" variant="primary" size="lg" icon={<Calendar className="w-5 h-5" aria-hidden="true" />}>Get Free Estimate</Button>

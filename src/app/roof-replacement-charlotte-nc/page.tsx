@@ -412,7 +412,7 @@ export default function RoofReplacementCharlotteNCPage() {
               Complete tear-off and new roof installation by certified professionals
             </p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              Complete roof replacement across Charlotte NC and Lake Norman — GAF Master Elite (top 2% US contractors), CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred certified installer. Unlocks enhanced NDL full-system warranties (GAF Golden Pledge, CertainTeed 5-Star, OC Platinum Protection) with 25–50 year labor coverage not available to uncertified contractors. Class 4 impact-resistant upgrade options for 10–30% NC insurance premium discount. 2026 pricing transparent, Enhancify financing available, typical 1–3 week completion.
+              A new roof is a big deal. We make it easy: honest estimate, the shingle brands you&apos;ve actually heard of (GAF, CertainTeed, Owens Corning), warranties that protect both the materials and our installation, and financing if you&apos;d rather not write one check. Most Charlotte homes we re-roof in a single week. Ask us about impact-rated shingles — many insurance companies in NC give you a discount for putting them on.
             </p>
 
             {/* CTA Buttons */}

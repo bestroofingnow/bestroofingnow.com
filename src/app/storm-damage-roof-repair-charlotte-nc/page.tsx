@@ -260,7 +260,7 @@ export default function StormDamageRoofRepairCharlottePage() {
               Storm Damage Roof Repair Charlotte NC
             </h1>
             <p className="speakable-intro text-xl text-white/90 mb-8">
-              24/7 storm damage roof repair across Charlotte NC and Lake Norman — hail (Piedmont peak May–June, NOAA 3–5 hail days/yr), wind (60+ MPH spring squall lines), tropical remnants (Florence 2018, Isaias 2020, Helene 2024), and tree-fall damage. Free walk-the-roof inspection with test-square counts, Xactimate-compatible insurance estimates, RCV/ACV policy review, adjuster meetings on-site, and Class 4 impact-resistant replacement upgrades that unlock 10–30% NC insurance premium discounts. 500+ Charlotte homes restored.
+              Storm hit? We&apos;ve been here for every big one — Florence, Isaias, Helene, and the hailstorms that come through every spring. Call us, we&apos;ll come look, and we&apos;ll tell you honestly whether you have a claim worth filing. If you do, we handle the paperwork, meet your adjuster on the roof, and make sure nothing gets missed. 500+ Charlotte homes restored and counting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
