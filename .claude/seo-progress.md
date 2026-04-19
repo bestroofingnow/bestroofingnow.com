@@ -1,7 +1,7 @@
 # SEO / AEO / LLMO Audit Progress
 
 **Started:** 2026-04-19
-**Loop:** /loop dynamic mode, 20-min cadence
+**Loop:** /loop dynamic mode, 10-min cadence
 **Scope:** Audit + enhance every page on bestroofingnow.com for SEO, AEO (Answer Engine Optimization), and LLMO (LLM discoverability)
 
 ## Audit Framework (applied to each page)
@@ -39,7 +39,7 @@
 - [x] `storm-damage-roof-repair-matthews-nc` — 2026-04-19 — Same enhancement pattern as inspection page: +4 schemas, FAQs 6→10 with claim/insurance specifics, 10-point damage red-flags section, Matthews storm history + insurance carriers section, speakable-intro with neighborhoods, related-services link strip. 201→322 lines.
 - [x] `storm-damage-roof-repair-davidson-nc` — 2026-04-19 — Mirrored Matthews pattern with Lake Norman framing: +4 schemas (WebPage, FeaturedSnippet, Speakable, FreeInspectionOffer), FAQs 6→10 with LKN-specific context (lakefront wind fetch, lakefront deductibles, lakefront cost range), 10-point damage red-flags section, Davidson + LKN storm history card grid (lake-effect wind exposure added), speakable-intro with River Run/Bailey's Glen/St. Alban's/Summers Walk/Davidson College neighborhoods, related-services link strip. Preserved existing LKNPartnershipsBlock + LKNDataCitations. 202→283 lines.
 - [ ] `commercial-roofing-matthews-nc` (203 lines)
-- [ ] `commercial-roofing-matthews-nc` (203 lines)
+- [x] `commercial-roofing-matthews-nc` — 2026-04-19 — Commercial-specific enhancement pass: +4 schemas (WebPage, FeaturedSnippet, Speakable, FreeInspectionOffer), FAQs 6→10 with commercial specifics (2026 pricing by system, NDL warranties, re-cover vs tear-off, cool roof/energy code, building types, Duke Energy rebates), added 6-system roofing-systems grid with pricing/warranties, replaced inspection section with 10-point commercial inspection checklist (moisture survey, termination bar, drain strainers, lightning protection), added Matthews commercial context 4-card grid (building types, corridors like Independence Blvd / Matthews Township Pkwy, certifications, IECC zone 4A energy code), speakable-intro enumerating corridors + building types, related-services link strip. 203→284 lines.
 - [ ] `roof-repair-davidson-nc` (204 lines)
 - [ ] `commercial-roofing-davidson-nc` (205 lines)
 - [ ] `gutter-installation-matthews-nc` (207 lines)
