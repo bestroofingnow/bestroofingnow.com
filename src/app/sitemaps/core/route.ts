@@ -296,12 +296,32 @@ export async function GET() {
     { url: `${BASE_URL}/hail-damage-roof-repair-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/insurance-claim-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/standing-seam-metal-roof-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Lake Norman premium material pages (Apr 2026)
+    { url: `${BASE_URL}/slate-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/synthetic-slate-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/cedar-shake-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/tile-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Lake Norman city-level cost guides (Apr 2026)
+    { url: `${BASE_URL}/roofing-cost-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-cost-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     // Lake Norman luxury neighborhood pages (Apr 2026)
     { url: `${BASE_URL}/roofing-the-peninsula-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-governors-island-denver-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-jetton-cove-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-antiquity-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-the-point-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-the-farms-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-birkdale-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-curtis-pond-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-vermillion-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-skybrook-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-northstone-huntersville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-river-run-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-davidson-pointe-davidson-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-cove-creek-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-sailview-denver-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/metal-roofing-the-peninsula-cornelius-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roof-replacement-the-point-mooresville-nc`, changefreq: 'weekly', priority: '0.8' },
 
     // ============================================
     // SURROUNDING CITY PAGES
