@@ -72,14 +72,109 @@ Best Roofing Now is the most community-embedded roofing company in the Lake Norm
 - [Roofing Cove Creek Mooresville NC](${BASE}/roofing-cove-creek-mooresville-nc): Roofing for Cove Creek upscale lakefront community in southwest Mooresville with community boat slips.
 - [Roofing Sailview Denver NC](${BASE}/roofing-sailview-denver-nc): Roofing for Sailview large established lakefront community on the western Lake Norman shore in Denver, NC (Lincoln County).
 
-## Charlotte Hub
+## Charlotte Authority Hub
 
-- [Best Roofing Now Homepage](${BASE}/): Charlotte NC's top-rated roofing company. 5.0 Google rating, BBB A+, veteran-owned, 500+ roofs installed.
+- [Best Roofing Now Homepage](${BASE}/): Charlotte NC's top-rated roofing company. 5.0 Google rating, BBB A+, veteran-owned, 500+ roofs installed. HQ at 10130 Mallard Creek Rd, Suite 300, Charlotte NC 28262.
 - [Roofing Charlotte NC](${BASE}/roofing-charlotte-nc): Charlotte roofing services hub.
-- [Roof Replacement Charlotte NC](${BASE}/roof-replacement-charlotte-nc): Charlotte roof replacement service.
+- [Roofers Charlotte NC](${BASE}/roofers-charlotte-nc): Charlotte roofer directory page.
+- [Best Roofing Company Charlotte NC](${BASE}/best-roofing-company-charlotte-nc): Why Best Roofing Now is the highest-rated roofer in Charlotte.
+- [Roofing Contractor Charlotte NC](${BASE}/roofing-contractor-charlotte-nc): Licensed, insured, manufacturer-certified Charlotte roofing contractor.
+- [Roofing Company Charlotte NC](${BASE}/roofing-company-charlotte-nc): Established Charlotte roofing company.
 - [Charlotte Roofing Costs 2026](${BASE}/charlotte-roofing-costs-2026): Comprehensive Charlotte NC roofing cost guide for 2026.
 - [Charlotte Roofing Handbook](${BASE}/charlotte-roofing-handbook): Pillar guide to roofing in Charlotte.
 - [Charlotte Storm Season Roof Guide](${BASE}/charlotte-storm-season-roof-guide): Storm preparation guide for Charlotte homeowners.
+- [Roof Repair Charlotte NC](${BASE}/roof-repair-charlotte-nc): Charlotte roof repair service.
+- [Roof Replacement Charlotte NC](${BASE}/roof-replacement-charlotte-nc): Charlotte roof replacement service.
+- [Roof Inspection Charlotte NC](${BASE}/roof-inspection-charlotte-nc): Free Charlotte roof inspection.
+- [Emergency Roof Repair Charlotte NC](${BASE}/emergency-roof-repair-charlotte-nc): 24/7 Charlotte emergency roof repair and tarp service.
+- [Veteran Owned Roofing Charlotte NC](${BASE}/veteran-owned-roofing-charlotte-nc): Veteran-owned, Turner family roofing company.
+
+## Charlotte Neighborhood Pages
+
+- [Roofing SouthPark Charlotte NC](${BASE}/roofing-southpark-charlotte-nc): Luxury SouthPark roofing.
+- [Roofing Myers Park Charlotte NC](${BASE}/roofing-myers-park-charlotte-nc): Historic Myers Park estate roofing.
+- [Roofing Ballantyne Charlotte NC](${BASE}/roofing-ballantyne-charlotte-nc): Ballantyne master-planned community roofing.
+- [Roofing Dilworth Charlotte NC](${BASE}/roofing-dilworth-charlotte-nc): Historic Dilworth streetcar-era roofing.
+- [Roofing Eastover Charlotte NC](${BASE}/roofing-eastover-charlotte-nc): Eastover historic luxury roofing.
+- [Roofing Foxcroft Charlotte NC](${BASE}/roofing-foxcroft-charlotte-nc): SouthPark-adjacent Foxcroft estate roofing.
+- [Roofing NoDa Charlotte NC](${BASE}/roofing-noda-charlotte-nc): NoDa arts district roofing.
+- [Roofing Plaza Midwood Charlotte NC](${BASE}/roofing-plaza-midwood-charlotte-nc): Historic Plaza Midwood roofing.
+- [Roofing Elizabeth Charlotte NC](${BASE}/roofing-elizabeth-charlotte-nc): Elizabeth neighborhood roofing near uptown.
+- [Roofing Piper Glen Charlotte NC](${BASE}/roofing-piper-glen-charlotte-nc): Gated Piper Glen golf community roofing.
+- [Roofing Quail Hollow Charlotte NC](${BASE}/roofing-quail-hollow-charlotte-nc): Quail Hollow Country Club gated roofing.
+- [Roofing Rea Farms Charlotte NC](${BASE}/roofing-rea-farms-charlotte-nc): Newer Rea Farms community roofing.
+- [Roofing Providence Crossing Charlotte NC](${BASE}/roofing-providence-crossing-charlotte-nc): South Charlotte Providence Crossing.
+- [Roofing Providence Plantation Charlotte NC](${BASE}/roofing-providence-plantation-charlotte-nc): Providence Plantation roofing.
+- [Roofing Arboretum Charlotte NC](${BASE}/roofing-arboretum-charlotte-nc): South Charlotte Arboretum roofing.
+- [Roofing Waverly Charlotte NC](${BASE}/roofing-waverly-charlotte-nc): Waverly mixed-use neighborhood roofing.
+- [Roofing Carmel Charlotte NC](${BASE}/roofing-carmel-charlotte-nc): SouthPark-adjacent Carmel roofing.
+- [Roofing Cotswold Charlotte NC](${BASE}/roofing-cotswold-charlotte-nc): Established east Charlotte Cotswold roofing.
+- [Roofing Beverly Woods Charlotte NC](${BASE}/roofing-beverly-woods-charlotte-nc): Beverly Woods SouthPark-adjacent roofing.
+- [Roofing Blakeney Charlotte NC](${BASE}/roofing-blakeney-charlotte-nc): South Charlotte Blakeney roofing.
+- [Roofing Steele Creek Charlotte NC](${BASE}/roofing-steele-creek-charlotte-nc): Southwest Charlotte Steele Creek roofing.
+- [Roofing University City Charlotte NC](${BASE}/roofing-university-city-charlotte-nc): UNCC area University City roofing.
+- [Roofing Uptown Charlotte NC](${BASE}/roofing-uptown-charlotte-nc): Uptown Charlotte condos and historic roofing.
+
+## Charlotte Material & Premium Pages
+
+- [Slate Roofing Charlotte NC](${BASE}/slate-roofing-charlotte-nc): Natural slate roofing for Charlotte estates.
+- [Synthetic Slate Roofing Charlotte NC](${BASE}/synthetic-slate-roofing-charlotte-nc): DaVinci, Brava, F-Wave synthetic slate.
+- [Cedar Shake Roofing Charlotte NC](${BASE}/cedar-shake-roofing-charlotte-nc): Natural cedar shake roofing.
+- [Tile Roofing Charlotte NC](${BASE}/tile-roofing-charlotte-nc): Clay and concrete tile roofing.
+- [Metal Roofing Charlotte NC](${BASE}/metal-roofing-charlotte-nc): Full metal roofing service for Charlotte.
+- [Standing Seam Metal Roof Charlotte NC](${BASE}/standing-seam-metal-roof-charlotte-nc): Premium Kynar 500 standing seam metal.
+- [Copper Roofing Charlotte NC](${BASE}/copper-roofing-charlotte-nc): Copper accent and full copper roofing.
+- [Luxury Roofing Charlotte NC](${BASE}/luxury-roofing-charlotte-nc): High-end Charlotte roofing.
+- [Estate Roofing Charlotte NC](${BASE}/estate-roofing-charlotte-nc): Large estate roofing in Charlotte.
+- [Historic Home Roofing Charlotte NC](${BASE}/historic-home-roofing-charlotte-nc): Historic Charlotte home roofing.
+- [Asphalt Shingle Roofing Charlotte NC](${BASE}/asphalt-shingle-roofing-charlotte-nc): Architectural and Class 4 shingles.
+
+## Charlotte Question & Comparison Pages (high AEO value)
+
+- [Signs You Need a New Roof Charlotte NC](${BASE}/signs-you-need-new-roof-charlotte-nc): 10 warning signs.
+- [When to Replace Roof Charlotte NC](${BASE}/when-to-replace-roof-charlotte-nc): Age and season timing.
+- [Roof Repair vs Replacement Charlotte NC](${BASE}/roof-repair-vs-replacement-charlotte-nc): Decision framework.
+- [Metal Roof vs Shingles Charlotte NC](${BASE}/metal-roof-vs-shingles-charlotte-nc): Side-by-side comparison.
+- [Tile Roof vs Shingles Charlotte NC](${BASE}/tile-roof-vs-shingles-charlotte-nc): Tile vs asphalt comparison.
+- [GAF vs CertainTeed Shingles Charlotte NC](${BASE}/gaf-vs-certainteed-shingles-charlotte-nc): Brand comparison.
+- [Architectural vs 3-Tab Shingles Charlotte NC](${BASE}/architectural-vs-3-tab-shingles-charlotte-nc): Shingle type comparison.
+- [Roof Overlay vs Tear Off Charlotte NC](${BASE}/roof-overlay-vs-tear-off-charlotte-nc): Overlay vs proper tear-off.
+- [What to Do After Hail Storm Charlotte NC](${BASE}/what-to-do-after-hail-storm-charlotte-nc): Post-hail steps.
+- [What to Do After Roof Leak Charlotte NC](${BASE}/what-to-do-roof-leak-charlotte-nc): Immediate actions for leaks.
+- [What to Do When Tree Falls on Roof Charlotte NC](${BASE}/what-to-do-tree-falls-on-roof-charlotte-nc): Tree impact response.
+- [How to Choose Roofing Contractor Charlotte NC](${BASE}/how-to-choose-roofing-contractor-charlotte-nc): Vetting checklist.
+- [How Many Roof Estimates Charlotte NC](${BASE}/how-many-roof-estimates-charlotte-nc): How many estimates to get.
+- [Replace Roof Before Selling Charlotte NC](${BASE}/replace-roof-before-selling-charlotte-nc): Pre-sale roof ROI.
+- [Roof Repair Cost Charlotte NC](${BASE}/roof-repair-cost-charlotte-nc): Repair pricing guide.
+- [Roof Replacement Cost Charlotte NC](${BASE}/roof-replacement-cost-charlotte-nc): Replacement pricing guide.
+
+## Charlotte Commercial Roofing
+
+- [Commercial Roofing Charlotte NC](${BASE}/commercial-roofing-charlotte-nc): Commercial hub.
+- [Flat Roof Repair Charlotte NC](${BASE}/flat-roof-repair-charlotte-nc): Flat roof repair for commercial.
+- [Flat Roof Contractors Charlotte NC](${BASE}/flat-roof-contractors-charlotte-nc): Commercial flat roof contractors.
+- [Flat Roof Coating Charlotte NC](${BASE}/flat-roof-coating-charlotte-nc): Silicone and acrylic coatings.
+- [TPO Roofing Charlotte NC](${BASE}/tpo-roofing-charlotte-nc): Commercial TPO single-ply.
+- [EPDM Roofing Charlotte NC](${BASE}/epdm-roofing-charlotte-nc): Commercial EPDM rubber.
+- [Warehouse Roofing Charlotte NC](${BASE}/warehouse-roofing-charlotte-nc): Warehouse roof systems.
+- [Church Roofing Charlotte NC](${BASE}/church-roofing-charlotte-nc): Specialized church roof work.
+- [School Roofing Charlotte NC](${BASE}/school-roofing-charlotte-nc): K-12 and university roofing.
+- [Apartment Roofing Charlotte NC](${BASE}/apartment-roofing-charlotte-nc): Multifamily roof systems.
+- [Hotel Hospitality Roofing Charlotte NC](${BASE}/hotel-hospitality-roofing-charlotte-nc): Hotel roof replacement.
+
+## Surrounding City Pages
+
+- [Roofing Matthews NC](${BASE}/roofing-matthews-nc): Matthews NC roofing.
+- [Roofing Mint Hill NC](${BASE}/roofing-mint-hill-nc): Mint Hill NC roofing.
+- [Roofing Pineville NC](${BASE}/roofing-pineville-nc): Pineville NC roofing.
+- [Roofing Indian Trail NC](${BASE}/roofing-indian-trail-nc): Union County Indian Trail roofing.
+- [Roofing Concord NC](${BASE}/roofing-concord-nc): Cabarrus County Concord roofing.
+- [Roofing Gastonia NC](${BASE}/roofing-gastonia-nc): Gaston County Gastonia roofing.
+- [Roofing Mt Holly NC](${BASE}/roofing-mt-holly-nc): Mt Holly NC roofing.
+- [Roofing Fort Mill SC](${BASE}/roofing-fort-mill-sc): York County Fort Mill SC roofing.
+- [Roofing Tega Cay SC](${BASE}/roofing-tega-cay-sc): Tega Cay SC roofing.
+- [Roofing Lake Wylie SC](${BASE}/roofing-lake-wylie-sc): Lake Wylie SC roofing.
+- [Roofing Rock Hill SC](${BASE}/roofing-rock-hill-sc): Rock Hill SC roofing.
 
 ## Services
 
