@@ -59,7 +59,7 @@ After 3 rounds (inspection-matthews, storm-matthews, storm-davidson), the enhanc
 Candidate for extraction once 2 more siblings done: `<ServiceLocationEnhancementBlock city service neighborhoods />` wrapper.
 
 ### Tier 3 — Directory/listing pages
-- [ ] `locations` (146 lines)
+- [x] `locations` — 2026-04-19 — Directory page enhancement (different recipe than Tier 2). Added: WebPageSchema, CollectionPageSchema (maps all 45+ cities to schema.org ItemList), FAQSchema (7 coverage FAQs), SpeakableContentBlocks, AISearchOptimizationBundle, VoiceSearchActionSchema. Added speakable-intro listing 12 counties across NC + SC. Regrouped flat grid into by-county sections (Mecklenburg, Cabarrus, Union, Gaston, Iredell, Lincoln, Catawba, Rowan, Cleveland, Stanly, York SC, Lancaster SC) with county-level descriptor paragraphs. Added 6-point coverage checklist ("What You'll Find on Every City Page"). Each city card now shows distance-from-HQ. Fixed keyword set, canonical, og tags. 146→268 lines.
 - [ ] `blog` (160 lines)
 - [ ] `products` (187 lines)
 - [ ] `materials` (212 lines)
