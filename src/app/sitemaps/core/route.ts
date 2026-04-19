@@ -187,6 +187,7 @@ export async function GET() {
     // Lake Norman specialty pages (Apr 2026)
     { url: `${BASE_URL}/flat-roofing-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/gutter-guards-lake-norman-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/signs-you-need-new-roof-lake-norman-nc`, changefreq: 'monthly', priority: '0.8' },
 
     // ============================================
     // INSURANCE & FINANCING PAGES

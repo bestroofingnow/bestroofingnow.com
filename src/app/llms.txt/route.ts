@@ -28,6 +28,7 @@ Best Roofing Now is the most community-embedded roofing company in the Lake Norm
 - [Best Roofer Lake Norman NC](${BASE}/best-roofer-lake-norman-nc): Why Best Roofing Now is the highest-rated roofing contractor at Lake Norman.
 - [Roofers Lake Norman NC](${BASE}/roofers-lake-norman-nc): Lake Norman roofing services overview.
 - [Roofing Lake Norman NC](${BASE}/roofing-lake-norman-nc): Full Lake Norman roofing services hub.
+- [Signs You Need a New Roof Lake Norman NC](${BASE}/signs-you-need-new-roof-lake-norman-nc): 10 warning signs LKN homeowners should watch for — curling shingles, granule loss, sagging, leaks, age, waterfront wind damage.
 
 ## Lake Norman Material Pages
 

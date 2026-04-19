@@ -36,6 +36,8 @@ const LKN_REGIONAL_HUBS = [
   'cedar-shake-roofing-lake-norman-nc',
   'synthetic-slate-roofing-lake-norman-nc',
   'tile-roofing-lake-norman-nc',
+  // AEO educational guides
+  'signs-you-need-new-roof-lake-norman-nc',
 ];
 
 const LKN_CITIES = ['cornelius', 'davidson', 'mooresville', 'huntersville', 'denver', 'sherrills-ford', 'statesville'];
