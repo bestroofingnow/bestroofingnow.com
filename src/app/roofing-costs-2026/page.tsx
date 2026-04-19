@@ -42,6 +42,7 @@ import { CitationSection } from '@/components/seo/CitationBlock';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { Button } from '@/components/ui/Button';
+import { EnhancifyCalculator } from '@/components/ui/EnhancifyCalculator';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
@@ -1519,8 +1520,28 @@ export default function RoofingCosts2026Page() {
         </div>
       </section>
 
-      {/* Citation Section */}
+      {/* Payment Calculator Section */}
       <section className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              See Your Monthly Payment
+            </h2>
+            <p className="text-gray text-lg">
+              Curious what a new roof would cost per month? Enter your project amount below to see real financing options &mdash; no credit pull required.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-4 md:p-8">
+            <EnhancifyCalculator />
+          </div>
+          <p className="text-center text-gray text-sm mt-6">
+            *Estimates only. Actual rates and terms depend on credit approval.
+          </p>
+        </div>
+      </section>
+
+      {/* Citation Section */}
+      <section className="section bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <CitationSection
