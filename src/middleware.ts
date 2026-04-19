@@ -82,6 +82,8 @@ const KNOWN_ROUTES = new Set([
   'favicon.ico',
   'robots.txt',
   'sitemap.xml',
+  'llms.txt',
+  'llms-full.txt',
   'manifest.webmanifest',
   'icon',
   'apple-icon',

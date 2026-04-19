@@ -177,6 +177,9 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.bestroofingnow.com" />
         {/* RSS Feed for projects - social media automation */}
         <link rel="alternate" type="application/rss+xml" title="Best Roofing Now - Recent Projects" href="/projects/feed.xml" />
+        {/* LLM crawler alternates (llmstxt.org) - declares machine-readable content maps for AI engines */}
+        <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
+        <link rel="alternate" type="text/markdown" title="llms-full.txt" href="/llms-full.txt" />
         {/* Non-critical third-party - dns-prefetch only */}
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
