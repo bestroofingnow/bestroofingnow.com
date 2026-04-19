@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   Phone,
   Calendar,
@@ -10,12 +11,21 @@ import {
   CloudRain,
   Wind,
   AlertTriangle,
-  MapPin,
   FileText,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  ServiceAreaPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  SpeakableContentBlocks,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -24,6 +34,7 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
+
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Davidson NC',
   description:
@@ -34,43 +45,62 @@ export const metadata: Metadata = {
     'wind damage roof repair davidson nc',
     'emergency roof repair davidson',
     'storm damage roofing davidson',
+    'roof storm damage davidson nc',
     'roofing insurance claims davidson',
+    'lake norman storm damage roofing',
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`,
   },
   openGraph: {
     title: 'Storm Damage Roof Repair Davidson NC | 24/7 Emergency | Best Roofing Now',
-  description: 'Fast storm damage roof repair in Davidson NC with insurance claim assistance.',
-  url: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`,
-  type: 'website',
-  images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Storm damage roof repair in Davidson NC' }],
+    description: 'Fast storm damage roof repair in Davidson NC with insurance claim assistance.',
+    url: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`,
+    type: 'website',
+    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Storm damage roof repair in Davidson NC' }],
   },
 };
 
 const damageTypes = [
-  { icon: CloudRain, title: 'Hail Damage', description: 'Repair and replacement for hail-damaged shingles.' },
-  { icon: Wind, title: 'Wind Damage', description: 'Fix lifted, torn, or missing shingles from high winds.' },
-  { icon: AlertTriangle, title: 'Fallen Debris', description: 'Repair damage from fallen trees and branches.' },
-  { icon: Clock, title: 'Emergency Tarping', description: 'Immediate temporary protection.' },
-  { icon: FileText, title: 'Insurance Claims', description: 'Complete insurance claim assistance.' },
+  { icon: CloudRain, title: 'Hail Damage', description: 'Repair and replacement for hail-damaged shingles and granule loss.' },
+  { icon: Wind, title: 'Wind Damage', description: 'Fix lifted, torn, or missing shingles caused by Lake Norman high winds.' },
+  { icon: AlertTriangle, title: 'Fallen Debris', description: 'Repair damage from fallen trees, branches, and storm debris.' },
+  { icon: Clock, title: 'Emergency Tarping', description: 'Immediate temporary protection to prevent further damage.' },
+  { icon: FileText, title: 'Insurance Claims', description: 'Complete assistance with documentation and claim process.' },
   { icon: Shield, title: 'Full Restoration', description: 'Complete roof restoration to pre-storm condition.' },
 ];
 
 const insuranceProcess = [
-  { step: 1, title: 'Free Inspection', description: 'We document all damage with photos and reports.' },
-  { step: 2, title: 'Insurance Filing', description: 'We help file your claim properly.' },
-  { step: 3, title: 'Adjuster Meeting', description: 'We meet with your adjuster for fair assessment.' },
-  { step: 4, title: 'Approved Repairs', description: 'We complete repairs to highest standards.' },
+  { step: 1, title: 'Free Inspection', description: 'We document all storm damage with photos and reports.' },
+  { step: 2, title: 'Insurance Filing', description: 'We help you file your claim with proper documentation.' },
+  { step: 3, title: 'Adjuster Meeting', description: 'We meet with your adjuster to ensure fair assessment.' },
+  { step: 4, title: 'Approved Repairs', description: 'Once approved, we complete repairs to highest standards.' },
 ];
 
 const faqs = [
-  { question: 'What should I do after storm damage to my Davidson roof?', answer: 'First, ensure safety. Document damage with photos. Call us for a free 24/7 inspection.' },
-  { question: 'Do you help with insurance claims?', answer: 'Yes! We document all damage, provide estimates, and meet with your adjuster.' },
-  { question: 'How quickly can you respond in Davidson?', answer: 'We offer 24/7 emergency response. For urgent situations, we can respond within hours.' },
-  { question: 'Will my insurance cover storm damage?', answer: 'Most policies cover storm damage including hail and wind. We work with all major insurers.' },
-  { question: 'How can I tell if my roof has storm damage?', answer: 'Signs include missing shingles, granules in gutters, dents, and water stains inside.' },
-  { question: 'Should I get multiple estimates?', answer: 'Insurance pays based on damage scope. Choose a reputable contractor for quality.' },
+  { question: 'What should I do after storm damage to my Davidson roof?', answer: 'First, ensure safety — stay inside until winds pass and watch for ceiling sagging. Take photos of visible damage from the ground (do not climb on a storm-damaged roof). Call Best Roofing Now at (704) 605-6047 for a free inspection. We offer 24/7 emergency response with tarping service for active leaks throughout Davidson and the Lake Norman area.' },
+  { question: 'Do you help with insurance claims for storm damage in Davidson?', answer: 'Yes. We have extensive experience with storm damage claims for carriers common in Davidson and Lake Norman (State Farm, Allstate, Nationwide, USAA, Farm Bureau NC, Erie, Liberty Mutual, Travelers). We document all damage with geo-tagged photos, provide detailed Xactimate-compatible estimates, and meet adjusters on-site to ensure a fair settlement.' },
+  { question: 'How quickly can you respond to storm damage in Davidson?', answer: 'We offer 24/7 emergency response in Davidson. For active leaks, our typical on-site response is under 3 hours for emergency tarping. Full damage inspections are usually scheduled within 24 hours. After large storms on Lake Norman (hailstorms, tropical systems, derecho events) we prioritize by severity.' },
+  { question: 'Will my insurance cover storm damage repairs on a Lake Norman home?', answer: 'Most HO-3 and HO-5 homeowner policies cover sudden storm damage including hail, wind, lightning, and fallen debris. Coverage depends on your deductible, policy age cap (some NC carriers cap coverage on roofs 20+ years old), and proof the damage is storm-related (not wear-and-tear). Waterfront Lake Norman policies occasionally carry wind/hail deductibles — we review your declarations page before filing.' },
+  { question: 'How can I tell if my Davidson roof has storm damage?', answer: 'Signs include: missing or lifted shingles, granules in gutters or downspouts, dents on metal vents and gutters, bruised shingles (dark spots that feel soft), tree debris in valleys, water stains on interior ceilings, and daylight visible through attic sheathing. Schedule a free inspection within 12 months of any significant storm — most NC carriers require claims within a year.' },
+  { question: 'Should I get multiple estimates for storm damage repair?', answer: 'Your insurance typically pays based on damage scope, not the lowest bid — so the cheapest estimate does not save you money. Choose a reputable, licensed, and insured local contractor based on quality, manufacturer certifications (GAF, CertainTeed, Owens Corning), and Lake Norman reputation. Avoid out-of-state storm chasers that appear after major storms without local references or permanent addresses.' },
+  { question: 'What types of storms damage Davidson roofs most?', answer: 'The most damaging storms in Davidson NC are: (1) hailstorms with 1"+ stones (Piedmont NC averages 3–5 per year), (2) straight-line wind events with gusts above 60 mph (common in spring squall lines crossing Lake Norman), (3) tropical systems and remnants of Atlantic hurricanes tracking inland (Florence 2018, Helene 2024), (4) ice storms (rare but significant damage when they occur), and (5) tornadic microbursts during severe weather outbreaks.' },
+  { question: 'Can I still file a storm damage claim if the storm was months ago?', answer: 'Usually yes, but time is critical. Most NC insurance carriers allow 12 months from the storm date to file a claim, though some require reporting within 30 or 60 days. Document the storm date (NOAA and weather history records for Davidson/Mecklenburg County), then call us for an inspection. Do not delay — adjusters will argue late claims represent wear and tear, not storm damage.' },
+  { question: 'Do you install impact-resistant (Class 4) shingles after storm damage in Davidson?', answer: 'Yes. If your roof needs replacement, we recommend Class 4 impact-resistant shingles — GAF Armor Shield II, CertainTeed NorthGate, or Malarkey Vista. Many insurers offer premium discounts of 10–30% for Class 4 roofs in NC. They withstand 2" hail in UL 2218 testing and carry extended warranties — especially valuable for lakefront homes with longer wind-exposure fetch.' },
+  { question: 'What does storm damage repair cost in Davidson NC?', answer: 'Minor wind damage repairs (10–20 shingles) start around $400–$800. Partial slope replacement runs $2,500–$6,000. Full roof replacement due to hail or wind ranges $10,000–$30,000+ depending on home size, pitch, and material (lakefront custom homes often run higher). If your claim is approved, your out-of-pocket cost is typically just your deductible ($1,000–$2,500 for most Davidson homeowners).' },
+];
+
+const damageRedFlags = [
+  'Soft, bruised spots on shingles (hail impact — often invisible from the ground)',
+  'Granule scatter in gutters and at downspout outlets',
+  'Lifted, creased, or missing shingles along roof edges and ridges',
+  'Dented metal vents, flashing, and gutters (a proxy for hail size)',
+  'Exposed mat (black) on shingles where granule layer is stripped',
+  'Wrinkled or buckled shingles from heat + wind uplift combined',
+  'Tree debris lodged in valleys, around chimneys, and in gutters',
+  'Water stains on attic sheathing or insulation (active leak indicator)',
+  'Daylight visible through roof boards or around penetrations',
+  'Cracked or missing sealant around flashings after high-wind events',
 ];
 
 export default function StormDamageRoofRepairDavidsonNCPage() {
@@ -79,6 +109,33 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
       <BreadcrumbSchema items={[{ name: 'Home', url: SITE_CONFIG.url }, { name: 'Storm Damage', url: `${SITE_CONFIG.url}/services/storm-damage` }, { name: 'Davidson NC', url: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc` }]} />
       <FAQSchema faqs={faqs} />
       <ServiceAreaPageSchema city="Davidson" state="NC" slug="storm-damage-roof-repair-davidson-nc" distance={18} />
+      <WebPageSchema
+        name="Storm Damage Roof Repair Davidson NC | 24/7 Emergency Response"
+        description="24/7 storm damage roof repair in Davidson NC and Lake Norman. Hail, wind, and tree damage. Free inspection, insurance claim assistance, emergency tarping. BBB A+ rated."
+        url={`${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`}
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Storm Damage', url: `${SITE_CONFIG.url}/services/storm-damage` },
+          { name: 'Davidson NC', url: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc` },
+        ]}
+      />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What are the signs of storm damage on a Davidson NC roof?"
+        directAnswer="Look for these 7 common signs of storm damage on Davidson and Lake Norman roofs."
+        items={[
+          'Missing or lifted shingles',
+          'Granules in gutters or downspouts',
+          'Dented gutters, vents, or flashing',
+          'Soft, bruised spots on shingles (hail)',
+          'Tree debris lodged in valleys',
+          'Water stains on interior ceilings',
+          'Daylight through attic sheathing',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`}
+      />
+      <SpeakableContentBlocks city="Davidson" includeCompany={true} includeServices={true} includeContact={true} />
       <AISearchOptimizationBundle pageUrl={`${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`} pageName="Storm Damage Roof Repair Davidson NC" city="Davidson" />
       <VoiceSearchActionSchema />
 
@@ -98,8 +155,8 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
               <span className="text-accent-light">Davidson NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">Fast emergency repairs + insurance claim assistance</p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              When storms damage your Davidson roof, trust Best Roofing Now for fast, professional repairs. We provide 24/7 emergency response and complete insurance claim assistance.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              When storms damage your Davidson NC roof — hail, straight-line wind off Lake Norman, tropical systems, or fallen trees — Best Roofing Now responds 24/7 throughout Davidson, River Run, The Farm at Bailey&apos;s Glen, St. Alban&apos;s Square, Summers Walk, McConnell, Lake Davidson Preserve, Historic Davidson, and the Davidson College campus corridor. Free damage inspection, emergency tarping service, full insurance claim documentation, and repairs backed by a 10-year workmanship warranty.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href={`tel:${SITE_CONFIG.phoneClean}`} variant="primary" size="lg" icon={<Phone className="w-5 h-5" aria-hidden="true" />}>Call Now: {SITE_CONFIG.phone}</Button>
@@ -118,7 +175,7 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Storm Damage Services in Davidson</h2>
-            <p className="text-gray text-lg">We handle all types of storm damage.</p>
+            <p className="text-gray text-lg">We handle all types of storm damage to Davidson and Lake Norman roofs.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {damageTypes.map((type) => (
@@ -138,6 +195,7 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Insurance Claim Process</h2>
+            <p className="text-gray text-lg">We guide you through the entire insurance claim process.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {insuranceProcess.map((item) => (
@@ -151,12 +209,72 @@ export default function StormDamageRoofRepairDavidsonNCPage() {
         </div>
       </section>
 
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Storm Damage Red Flags Our Davidson Inspectors Look For</h2>
+              <p className="text-gray text-lg">10 damage signatures that trigger an insurance claim — many invisible from the ground.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              {damageRedFlags.map((item, index) => (
+                <div key={index} className="flex items-start gap-3 bg-light rounded-lg p-4">
+                  <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <p className="text-gray-700 text-sm">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-light">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Davidson &amp; Lake Norman Storm History + Insurance Context</h2>
+              <p className="text-gray text-lg">Local storm patterns, lake-effect wind exposure, and what Davidson insurance adjusters look for.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Piedmont Hail Season</h3>
+                <p className="text-gray-700 text-sm">Davidson sits in the Piedmont hail belt. Peak season runs April through August with severe events most common in May and June. NOAA records 3–5 hail days per year for northern Mecklenburg County, with stones occasionally exceeding 2". Hail damage is often invisible from the ground — proper inspection requires walking the roof.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Lake Norman Wind Exposure</h3>
+                <p className="text-gray-700 text-sm">Lakefront and near-lake Davidson homes face longer wind fetch across open water, amplifying gust impact on west- and north-facing slopes. Gust events above 60 mph occur 4–8 times annually. Remnants of Atlantic hurricanes (2018 Florence, 2020 Isaias, 2024 Helene) regularly bring 40–50 mph sustained winds to the Lake Norman corridor.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Tree-Fall Damage</h3>
+                <p className="text-gray-700 text-sm">Davidson&apos;s mature oak, pine, and hardwood canopy — combined with lakefront loblollies — creates elevated tree-fall risk. Weighted branches during wet winter storms and derecho events cause structural impact damage. We handle cosmetic repairs through full sheathing replacement, coordinating with arborists and insurance adjusters.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-primary mb-2">Insurance Carriers We Work With</h3>
+                <p className="text-gray-700 text-sm">We routinely work with State Farm, Allstate, Nationwide, USAA, Farm Bureau NC, Erie, Liberty Mutual, Travelers, and the NC Joint Underwriting Association. We provide Xactimate-compatible estimates and meet adjusters on-site for every Davidson and Lake Norman claim.</p>
+              </div>
+            </div>
+            <div className="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/20">
+              <p className="text-sm text-gray-700">
+                <strong className="text-primary">Related Davidson storm services:</strong>{' '}
+                <Link href="/roof-inspection-davidson-nc" className="text-primary hover:underline">Free Roof Inspection</Link>{' · '}
+                <Link href="/roof-repair-davidson-nc" className="text-primary hover:underline">Roof Repair</Link>{' · '}
+                <Link href="/roof-replacement-davidson-nc" className="text-primary hover:underline">Roof Replacement</Link>{' · '}
+                <Link href="/roofing-davidson-nc" className="text-primary hover:underline">Roofing Davidson NC</Link>{' · '}
+                <Link href="/insurance-claim-roofing-charlotte-nc" className="text-primary hover:underline">Insurance Claim Help</Link>{' · '}
+                <Link href="/emergency-tarp-service-charlotte-nc" className="text-primary hover:underline">Emergency Tarping</Link>{' · '}
+                <Link href="/hail-damage-roof-repair-charlotte-nc" className="text-primary hover:underline">Hail Damage Repair</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-red-600 text-white py-12">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Storm Damage Emergency?</h2>
-              <p className="text-white/90">Call now for 24/7 emergency response in Davidson.</p>
+              <p className="text-white/90">Call now for 24/7 emergency response in Davidson and across Lake Norman.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href={`tel:${SITE_CONFIG.phoneClean}`} className="bg-white !text-red-600 hover:bg-white/90" size="lg" icon={<Phone className="w-5 h-5" aria-hidden="true" />}>Call {SITE_CONFIG.phone}</Button>

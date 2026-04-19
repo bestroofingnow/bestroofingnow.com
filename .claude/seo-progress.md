@@ -37,12 +37,24 @@
 ### Tier 2 — Thin service+location pages (200–250 lines, highest enhancement ROI)
 - [x] `roof-inspection-matthews-nc` — 2026-04-19 — Added 4 schemas (WebPage, FeaturedSnippet, Speakable, FreeInspectionOffer), expanded FAQs 6→10 with Matthews-specific answers, added 10-point inspector checklist section, added "Roof Conditions Unique to Matthews" section (4 local climate cards), added speakable-intro with neighborhoods, added related-services internal link strip. 199→287 lines.
 - [x] `storm-damage-roof-repair-matthews-nc` — 2026-04-19 — Same enhancement pattern as inspection page: +4 schemas, FAQs 6→10 with claim/insurance specifics, 10-point damage red-flags section, Matthews storm history + insurance carriers section, speakable-intro with neighborhoods, related-services link strip. 201→322 lines.
-- [ ] `storm-damage-roof-repair-davidson-nc` (202 lines)
+- [x] `storm-damage-roof-repair-davidson-nc` — 2026-04-19 — Mirrored Matthews pattern with Lake Norman framing: +4 schemas (WebPage, FeaturedSnippet, Speakable, FreeInspectionOffer), FAQs 6→10 with LKN-specific context (lakefront wind fetch, lakefront deductibles, lakefront cost range), 10-point damage red-flags section, Davidson + LKN storm history card grid (lake-effect wind exposure added), speakable-intro with River Run/Bailey's Glen/St. Alban's/Summers Walk/Davidson College neighborhoods, related-services link strip. Preserved existing LKNPartnershipsBlock + LKNDataCitations. 202→283 lines.
+- [ ] `commercial-roofing-matthews-nc` (203 lines)
 - [ ] `commercial-roofing-matthews-nc` (203 lines)
 - [ ] `roof-repair-davidson-nc` (204 lines)
 - [ ] `commercial-roofing-davidson-nc` (205 lines)
 - [ ] `gutter-installation-matthews-nc` (207 lines)
 - [ ] `gutter-installation-davidson-nc` (209 lines)
+
+### Tier 2 template learnings
+After 3 rounds (inspection-matthews, storm-matthews, storm-davidson), the enhancement recipe is stable:
+1. Add 4 schemas: WebPageSchema, FreeInspectionOfferSchema, FeaturedSnippetListAnswerSchema, SpeakableContentBlocks
+2. Expand FAQs 6→10 with hyperlocal answers (pricing ranges, carriers, deductibles, neighborhoods)
+3. Add a 10-point "red flags / inspection checklist" grid section
+4. Add a 4-card local context grid (climate, carriers, materials, property type)
+5. Add `.speakable-intro` class to hero paragraph, enumerate neighborhoods
+6. Add related-services internal link strip inside the context section
+7. Preserve existing LKN components on LKN cities (Davidson, Cornelius, Huntersville, Mooresville, Denver, Troutman, Sherrills Ford)
+Candidate for extraction once 2 more siblings done: `<ServiceLocationEnhancementBlock city service neighborhoods />` wrapper.
 
 ### Tier 3 — Directory/listing pages
 - [ ] `locations` (146 lines)
