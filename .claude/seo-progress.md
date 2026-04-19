@@ -112,6 +112,10 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 
 **Completed:**
 - [x] `architectural-vs-3-tab-shingles-charlotte-nc` — 2026-04-19 — surgical pattern pilot: added SpeakableContentBlocks + AISearchBundle + VoiceSearch, added `.speakable-intro` class with expanded 2026-specific hero copy, refreshed dateModified. 425→431 lines (+6).
+- [x] `roof-inspection-charlotte-nc` — 2026-04-19 — surgical: added all 3 AEO schemas (page had none), expanded hero with HAAG credential + IRC §R806 NFVA context + 24-48hr report turnaround.
+- [x] `roof-repair-charlotte-nc` — 2026-04-19 — surgical: added SpeakableContentBlocks (had AISearch+Voice already), expanded hero with pipe-boot 8-12yr failure point + 2-4hr Mecklenburg dispatch + 2-year workmanship + Xactimate claim support.
+- [x] `roof-replacement-charlotte-nc` — 2026-04-19 — surgical: added SpeakableContentBlocks, expanded hero naming GAF Master Elite top 2% / CertainTeed SELECT / OC Platinum certifications + NDL warranty unlock + Class 4 insurance discount + Enhancify financing.
+- [x] `storm-damage-roof-repair-charlotte-nc` — 2026-04-19 — surgical: added SpeakableContentBlocks, expanded hero with NOAA 3-5 hail days/yr + named tropical remnants (Florence/Isaias/Helene) + Xactimate + RCV/ACV review + Class 4 upgrade path.
 
 **Queue (thinnest first — highest ROI for surgical additions):**
 - [ ] `designer-shingles-charlotte-nc` (481)
@@ -131,10 +135,10 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [ ] ... +120 more pages
 
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
-- [ ] `roof-inspection-charlotte-nc` (765) — top-of-funnel
-- [ ] `roof-repair-charlotte-nc` (770) — high intent
-- [ ] `roof-replacement-charlotte-nc` (938) — highest-value conversion
-- [ ] `storm-damage-roof-repair-charlotte-nc` (859) — claims traffic
+- [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19
+- [x] `roof-repair-charlotte-nc` (770) — high intent — done 2026-04-19
+- [x] `roof-replacement-charlotte-nc` (938) — highest-value conversion — done 2026-04-19
+- [x] `storm-damage-roof-repair-charlotte-nc` (859) — claims traffic — done 2026-04-19
 - [ ] `roofing-charlotte-nc` (1,468) — master hub
 - [ ] `commercial-roofing-charlotte-nc` (1,346) — commercial hub
 - [ ] `metal-roofing-charlotte-nc` (1,352) — material hub

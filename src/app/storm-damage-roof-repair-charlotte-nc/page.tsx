@@ -27,6 +27,7 @@ import {
   ServiceSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -186,6 +187,7 @@ export default function StormDamageRoofRepairCharlottePage() {
       />
       <ServiceSchema service={stormDamageService} />
       <FAQSchema faqs={stormFAQs} />
+      <SpeakableContentBlocks city="Charlotte" includeCompany={true} includeServices={true} includeContact={true} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
@@ -257,11 +259,8 @@ export default function StormDamageRoofRepairCharlottePage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Storm Damage Roof Repair Charlotte NC
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Charlotte&apos;s trusted storm damage roof repair specialists. Whether hail dented
-              your shingles, wind tore off sections, or a tree fell on your roof, we respond fast
-              and handle your insurance claim from start to finish. Over 500 Charlotte homes
-              restored after storm damage.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              24/7 storm damage roof repair across Charlotte NC and Lake Norman — hail (Piedmont peak May–June, NOAA 3–5 hail days/yr), wind (60+ MPH spring squall lines), tropical remnants (Florence 2018, Isaias 2020, Helene 2024), and tree-fall damage. Free walk-the-roof inspection with test-square counts, Xactimate-compatible insurance estimates, RCV/ACV policy review, adjuster meetings on-site, and Class 4 impact-resistant replacement upgrades that unlock 10–30% NC insurance premium discounts. 500+ Charlotte homes restored.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button

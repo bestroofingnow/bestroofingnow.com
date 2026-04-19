@@ -27,6 +27,9 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  SpeakableContentBlocks,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -238,6 +241,9 @@ export default function RoofInspectionCharlottePage() {
       />
       <ServiceSchema service={inspectionService} />
       <FAQSchema faqs={inspectionFAQs} />
+      <SpeakableContentBlocks city="Charlotte" includeCompany={true} includeServices={true} includeContact={true} />
+      <AISearchOptimizationBundle pageUrl={pageUrl} pageName="Roof Inspection Charlotte NC" city="Charlotte" />
+      <VoiceSearchActionSchema />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
@@ -276,10 +282,8 @@ export default function RoofInspectionCharlottePage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
               Roof Inspection Charlotte NC
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Get a FREE comprehensive roof inspection from Charlotte&apos;s most trusted roofing
-              company. Our certified inspectors use drone technology and provide detailed reports
-              with photos. No sales pressure - just honest assessments to protect your home.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Free comprehensive roof inspections across Charlotte NC and Lake Norman by HAAG certified inspectors using drone thermal imaging and walk-the-roof probe testing. Photo-documented written reports in 24–48 hours, covering shingle condition, flashing integrity, ventilation (NC code IRC §R806 NFVA ratio), attic moisture, gutter performance, and remaining useful life estimate. No sales pressure, no obligation — just honest assessments to protect your Charlotte home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button

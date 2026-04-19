@@ -30,6 +30,7 @@ import {
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
   ServiceSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -354,6 +355,7 @@ export default function RoofReplacementCharlotteNCPage() {
         includeRating={true}
       />
       <FAQSchema faqs={faqs} />
+      <SpeakableContentBlocks city="Charlotte" includeCompany={true} includeServices={true} includeContact={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
         pageName="Roof Replacement Charlotte NC"
@@ -409,10 +411,8 @@ export default function RoofReplacementCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Complete tear-off and new roof installation by certified professionals
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              When repairs are no longer enough, trust Best Roofing Now for your complete roof replacement in Charlotte.
-              We use premium materials from CertainTeed, GAF, and Owens Corning, backed by industry-leading warranties
-              and our expert installation.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Complete roof replacement across Charlotte NC and Lake Norman — GAF Master Elite (top 2% US contractors), CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred certified installer. Unlocks enhanced NDL full-system warranties (GAF Golden Pledge, CertainTeed 5-Star, OC Platinum Protection) with 25–50 year labor coverage not available to uncertified contractors. Class 4 impact-resistant upgrade options for 10–30% NC insurance premium discount. 2026 pricing transparent, Enhancify financing available, typical 1–3 week completion.
             </p>
 
             {/* CTA Buttons */}

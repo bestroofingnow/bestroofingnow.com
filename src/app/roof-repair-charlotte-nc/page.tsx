@@ -32,6 +32,7 @@ import {
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
   ServiceSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
@@ -265,6 +266,7 @@ export default function RoofRepairCharlotteNCPage() {
         includeRating={true}
       />
       <FAQSchema faqs={faqs} />
+      <SpeakableContentBlocks city="Charlotte" includeCompany={true} includeServices={true} includeContact={true} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
         pageName="Roof Repair Charlotte NC"
@@ -320,10 +322,8 @@ export default function RoofRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Fast, Affordable Roof Repairs You Can Trust
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Leaking roof? Storm damage? Missing shingles? Best Roofing Now provides expert roof repair
-              services throughout Charlotte NC with same-day emergency response, honest assessments, and
-              lasting repairs backed by warranty.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Expert roof repair across Charlotte NC and Lake Norman — leaks, pipe boots (typical 8–12 year failure point), chimney flashing, valley repair, missing shingles, storm damage, and sagging decking. Same-day emergency response (2–4 hour Mecklenburg dispatch), 2026 transparent pricing, 2-year workmanship warranty, and insurance claim support with Xactimate-compatible estimates. Honest repair-vs-replace assessments — not every Charlotte roof needs replacement.
             </p>
 
             {/* CTA Buttons */}
