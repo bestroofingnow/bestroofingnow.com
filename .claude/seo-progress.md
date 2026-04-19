@@ -94,11 +94,57 @@ All 10 Tier 3 directory pages enhanced (locations, blog, products, materials, br
 ### Tier 4 status: COMPLETE
 All Tier 4 service entity pages enhanced (17 pages): flat-roof-repair, chimney-flashing-repair, skylight-installation, standing-seam-metal-roofing, emergency-roof-tarping, fascia-soffit-repair, gutter-repair, architectural-shingles, hail-damage-roof-repair, roof-coating, roof-maintenance, roof-certification, gutter-guards, ridge-vent-installation, cedar-shake-roofing, tile-roofing. Next pass: Tier 5+ (Charlotte service+location pages — ~90 pages).
 
-### Tier 5+ — Charlotte service+location (expand queue as we go)
-- Pending: ~90 Charlotte-suffix pages
-- Pending: ~30 Lake Norman cluster pages
-- Pending: ~25 neighborhood pages
-- Pending: brand pages, building-type pages, blog posts
+### Tier 5 — Charlotte service+location pages (136 pages)
+
+**Audit finding:** All Charlotte-suffix pages are 425–1,468 lines (rich content), not thin pages. Typical existing schema: WebPage + Breadcrumb + Article + FAQ. Typical gaps: SpeakableContentBlocks, AISearchOptimizationBundle, VoiceSearchActionSchema, `.speakable-intro` class on hero, refresh `dateModified` to current date.
+
+**Surgical enhancement pattern (per Tier 5 page):**
+1. Add `SpeakableContentBlocks` with city="Charlotte"
+2. Add `AISearchOptimizationBundle` with pageUrl and pageName
+3. Add `VoiceSearchActionSchema`
+4. Add `.speakable-intro` class to the hero paragraph; optionally expand the intro with 2026 specifics
+5. Update `dateModified` in ArticleSchema to 2026-04-19
+6. Verify `pageUrl` const exists; add if missing
+
+This is a ~15-line surgical diff per page vs full rewrites — allows batch processing multiple pages per tick without degrading page quality.
+
+**Batch plan:** Target 3–5 pages per 10-min tick at this surgical scope. Prioritize by strategic importance: homepage-adjacent service pages first (roof-inspection, roof-repair, roof-replacement, storm-damage-roof-repair), then material pages, then commercial/industry pages, then neighborhood pages, then comparison/guide pages.
+
+**Completed:**
+- [x] `architectural-vs-3-tab-shingles-charlotte-nc` — 2026-04-19 — surgical pattern pilot: added SpeakableContentBlocks + AISearchBundle + VoiceSearch, added `.speakable-intro` class with expanded 2026-specific hero copy, refreshed dateModified. 425→431 lines (+6).
+
+**Queue (thinnest first — highest ROI for surgical additions):**
+- [ ] `designer-shingles-charlotte-nc` (481)
+- [ ] `luxury-roofing-charlotte-nc` (486)
+- [ ] `what-to-do-after-hail-storm-charlotte-nc` (499)
+- [ ] `church-roof-replacement-guide-charlotte-nc` (518)
+- [ ] `how-to-choose-roofing-contractor-charlotte-nc` (518)
+- [ ] `how-many-roof-estimates-charlotte-nc` (523)
+- [ ] `tpo-vs-epdm-roofing-charlotte-nc` (524)
+- [ ] `warehouse-roof-repair-vs-replacement-charlotte-nc` (527)
+- [ ] `cedar-shake-roofing-charlotte-nc` (537)
+- [ ] `copper-roofing-charlotte-nc` (537)
+- [ ] `what-to-do-roof-leak-charlotte-nc` (552)
+- [ ] `roofing-waverly-charlotte-nc` (553)
+- [ ] `roofing-rea-farms-charlotte-nc` (554)
+- [ ] `metal-roof-vs-shingles-charlotte-nc` (555)
+- [ ] ... +120 more pages
+
+**Strategic priority (target these across next 5–10 ticks regardless of line count):**
+- [ ] `roof-inspection-charlotte-nc` (765) — top-of-funnel
+- [ ] `roof-repair-charlotte-nc` (770) — high intent
+- [ ] `roof-replacement-charlotte-nc` (938) — highest-value conversion
+- [ ] `storm-damage-roof-repair-charlotte-nc` (859) — claims traffic
+- [ ] `roofing-charlotte-nc` (1,468) — master hub
+- [ ] `commercial-roofing-charlotte-nc` (1,346) — commercial hub
+- [ ] `metal-roofing-charlotte-nc` (1,352) — material hub
+- [ ] `hail-damage-roof-repair-charlotte-nc` (682) — seasonal spike
+
+### Additional scope beyond Charlotte (Tier 6+)
+- Pending: ~30 additional Lake Norman and satellite-city service+location pages
+- Pending: brand pages (/brands/[slug]) ~6 pages
+- Pending: material detail pages (/materials/[slug]) ~10 pages
+- Pending: individual blog posts (400+ WordPress posts — treat separately)
 
 ## Notes
 - Homepage needs no changes — skip in future passes.

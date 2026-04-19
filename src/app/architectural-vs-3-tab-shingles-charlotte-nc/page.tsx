@@ -20,6 +20,9 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  SpeakableContentBlocks,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -139,10 +142,13 @@ export default function ArchitecturalVs3TabShinglesPage() {
   description: 'Which asphalt shingle type is best for your Charlotte home?',
   slug: 'architectural-vs-3-tab-shingles-charlotte-nc',
   datePublished: '2026-01-31',
-  dateModified: '2026-01-31',
+  dateModified: '2026-04-19',
         }}
       />
       <FAQSchema faqs={shingleFAQs} />
+      <SpeakableContentBlocks city="Charlotte" includeCompany={true} includeServices={true} includeContact={true} />
+      <AISearchOptimizationBundle pageUrl={pageUrl} pageName="Architectural vs 3-Tab Shingles Charlotte NC" city="Charlotte" />
+      <VoiceSearchActionSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -171,9 +177,8 @@ export default function ArchitecturalVs3TabShinglesPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Which Asphalt Shingle is Right for Your Charlotte Home?
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Compare durability, cost, appearance, and storm performance to make
-              the best choice for your roof replacement.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Compare durability, cost, appearance, and storm performance across architectural (laminated dimensional, 25–30 year life, 130 MPH wind) vs 3-tab (single-layer, 15–20 year life, 60–70 MPH wind) shingles to make the best choice for your Charlotte roof replacement. 2026 pricing, Piedmont climate context, and Charlotte HOA considerations included.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
