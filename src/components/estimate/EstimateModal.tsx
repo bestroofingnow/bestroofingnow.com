@@ -6,6 +6,7 @@ import { RoofEstimate, PlacePrediction, LeadData } from '@/types/estimate';
 import { formatCurrency, formatNumber } from '@/lib/estimate/calculations';
 import { SITE_CONFIG } from '@/lib/constants';
 import Turnstile from '@/components/ui/Turnstile';
+import { EnhancifyWidget } from '@/components/ui/EnhancifyWidget';
 
 type ModalStep = 'address' | 'calculating' | 'roofType' | 'steepness' | 'complexity' | 'stories' | 'form' | 'results' | 'success';
 
@@ -1502,15 +1503,7 @@ export default function EstimateModal({ isOpen, onClose, estimateType = 'residen
                     <span className="bg-white px-2 py-1 rounded">Low Monthly Payments</span>
                     <span className="bg-white px-2 py-1 rounded">Quick Approval</span>
                   </div>
-                  <a
-                    href="https://app.getpowerpay.com/apply/16995"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg transition text-sm"
-                  >
-                    Apply for Financing
-                    <ChevronRight className="w-4 h-4" />
-                  </a>
+                  <EnhancifyWidget textButton="Apply for Financing" />
                 </div>
               </div>
             </div>

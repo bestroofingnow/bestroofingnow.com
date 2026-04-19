@@ -2,11 +2,12 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin, Shield } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { getCurrentYear, trackPhoneClick } from '@/lib/utils';
 import { EstimateButton } from '@/components/estimate';
 import { getLinksByCategory } from '@/lib/directory-links';
+import { EnhancifyWidget } from '@/components/ui/EnhancifyWidget';
 
 // Custom icon components for platforms not in Lucide
 const XTwitterIcon = () => (
@@ -379,17 +380,9 @@ export function Footer() {
               </EstimateButton>
             </div>
 
-            {/* Financing Badge */}
+            {/* Financing Widget */}
             <div className="mt-6">
-              <a
-                href="https://app.getpowerpay.com/apply/16995"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#ee9c48] hover:bg-[#d98a3a] text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
-              >
-                <Shield className="w-4 h-4" aria-hidden="true" />
-                Apply for Roof Financing
-              </a>
+              <EnhancifyWidget textButton="Apply for Roof Financing" />
             </div>
           </div>
         </div>

@@ -180,8 +180,8 @@ export default function RootLayout({
         {/* Non-critical third-party - dns-prefetch only */}
         <link rel="dns-prefetch" href="https://widgets.leadconnectorhq.com" />
         <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
-        {/* PowerPay financing application */}
-        <link rel="dns-prefetch" href="https://app.getpowerpay.com" />
+        {/* Enhancify financing widget */}
+        <link rel="dns-prefetch" href="https://www.enhancify.com" />
         <WebSiteSchema />
         {/* Global RoofingContractor schema - rendered once for all pages */}
         <LocalBusinessSchema includeRating={true} />

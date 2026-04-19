@@ -23,6 +23,9 @@ import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
+import { EnhancifyBanner } from '@/components/ui/EnhancifyBanner';
+import { EnhancifyCalculator } from '@/components/ui/EnhancifyCalculator';
+import { EnhancifyFullPage } from '@/components/ui/EnhancifyFullPage';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
@@ -171,14 +174,6 @@ const whyChooseUs = [
   },
 ];
 
-// Sample monthly payments
-const paymentExamples = [
-  { amount: '$10,000', monthly12: '$833', monthly36: '$286', monthly60: '$175' },
-  { amount: '$15,000', monthly12: '$1,250', monthly36: '$429', monthly60: '$263' },
-  { amount: '$20,000', monthly12: '$1,667', monthly36: '$572', monthly60: '$350' },
-  { amount: '$25,000', monthly12: '$2,083', monthly36: '$715', monthly60: '$438' },
-];
-
 // FAQs about roof financing
 const faqs = [
   {
@@ -306,6 +301,13 @@ export default function RoofFinancingCharlotteNCPage() {
         </div>
       </section>
 
+      {/* Enhancify Banner Strip */}
+      <section className="py-6 bg-white border-b border-gray-100">
+        <div className="container">
+          <EnhancifyBanner />
+        </div>
+      </section>
+
       {/* Financing Options Section */}
       <section className="section bg-white">
         <div className="container">
@@ -339,41 +341,22 @@ export default function RoofFinancingCharlotteNCPage() {
         </div>
       </section>
 
-      {/* Payment Examples Section */}
+      {/* Payment Calculator Section */}
       <section className="section bg-light">
         <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Sample Monthly Payments
+              Calculate Your Monthly Payment
             </h2>
             <p className="text-gray text-lg">
-              See how affordable a new roof can be with our financing options. Payments vary based on credit approval and terms.
+              Enter your project amount to see real-time monthly payment options for your new roof. No credit pull required.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto overflow-x-auto">
-            <table className="w-full bg-white rounded-xl shadow-md overflow-hidden">
-              <thead className="bg-primary text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left font-semibold">Loan Amount</th>
-                  <th className="px-6 py-4 text-center font-semibold">12 Months</th>
-                  <th className="px-6 py-4 text-center font-semibold">36 Months</th>
-                  <th className="px-6 py-4 text-center font-semibold">60 Months</th>
-                </tr>
-              </thead>
-              <tbody>
-                {paymentExamples.map((example, index) => (
-                  <tr key={example.amount} className={index % 2 === 0 ? 'bg-light' : 'bg-white'}>
-                    <td className="px-6 py-4 font-bold text-dark">{example.amount}</td>
-                    <td className="px-6 py-4 text-center text-gray">{example.monthly12}/mo</td>
-                    <td className="px-6 py-4 text-center text-gray">{example.monthly36}/mo</td>
-                    <td className="px-6 py-4 text-center text-gray">{example.monthly60}/mo</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-4 md:p-8">
+            <EnhancifyCalculator />
           </div>
           <p className="text-center text-gray text-sm mt-6">
-            *Sample payments are estimates based on 0% APR promotional rates. Actual payments may vary based on credit approval, loan terms, and interest rates. Contact us for personalized payment options.
+            *Estimates only. Actual rates and terms depend on credit approval and lender review.
           </p>
         </div>
       </section>
@@ -539,6 +522,23 @@ export default function RoofFinancingCharlotteNCPage() {
               View All Service Areas
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Apply Now - Full-Page Widget */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Check Your Rate in Seconds
+            </h2>
+            <p className="text-gray text-lg">
+              Pre-qualify with no impact to your credit score. See real loan offers and pick the option that fits your budget.
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <EnhancifyFullPage />
           </div>
         </div>
       </section>

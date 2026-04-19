@@ -18,6 +18,7 @@ import {
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { FinancingBanner } from '@/components/ui/FinancingBanner';
+import { EnhancifyBanner } from '@/components/ui/EnhancifyBanner';
 import Turnstile from '@/components/ui/Turnstile';
 
 // Schema markup for Contact page
@@ -602,6 +603,7 @@ export default function ContactPage() {
       {/* Financing Banner */}
       <section className="section bg-light">
         <div className="container">
+          <EnhancifyBanner className="mb-8" />
           <FinancingBanner variant="inline" />
         </div>
       </section>

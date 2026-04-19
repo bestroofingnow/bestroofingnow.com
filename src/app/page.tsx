@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
-import { Shield } from 'lucide-react';
 import { Hero } from '@/components/sections/Hero';
+import { EnhancifyWidget } from '@/components/ui/EnhancifyWidget';
+import { EnhancifyBanner } from '@/components/ui/EnhancifyBanner';
 import { Services } from '@/components/sections/Services';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { Testimonials } from '@/components/sections/Testimonials';
@@ -435,22 +436,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Financing Badge Section */}
-      <section className="py-8 bg-gray-50">
+      {/* Financing Widget Section */}
+      <section className="py-10 bg-gray-50">
         <div className="container">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+          <div className="text-center mb-6">
             <p className="text-lg font-semibold text-gray-700">
               Affordable Financing Options Available
             </p>
-            <a
-              href="https://app.getpowerpay.com/apply/16995"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#ee9c48] hover:bg-[#d98a3a] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-            >
-              <Shield className="w-5 h-5" aria-hidden="true" />
-              Apply for Roof Financing
-            </a>
+          </div>
+          <EnhancifyBanner className="mb-6" />
+          <div className="flex justify-center">
+            <EnhancifyWidget textButton="Apply for Roof Financing" />
           </div>
         </div>
       </section>

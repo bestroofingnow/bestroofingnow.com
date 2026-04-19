@@ -42,6 +42,7 @@ import { IMAGES, PAGE_IMAGES, SERVICE_HERO_IMAGES } from '@/lib/images';
 import { getServiceFAQs } from '@/lib/faqs';
 import { EstimateButton } from '@/components/estimate';
 import { FinancingBanner } from '@/components/ui/FinancingBanner';
+import { EnhancifyBanner } from '@/components/ui/EnhancifyBanner';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 
 // Map service slugs to their image sets
@@ -1038,6 +1039,7 @@ export default async function ServicePage({ params }: PageProps) {
       {/* Financing Banner */}
       <section className="section bg-light">
         <div className="container">
+          <EnhancifyBanner className="mb-8" />
           <FinancingBanner variant="inline" />
         </div>
       </section>
