@@ -60,7 +60,7 @@ Candidate for extraction once 2 more siblings done: `<ServiceLocationEnhancement
 
 ### Tier 3 — Directory/listing pages
 - [x] `locations` — 2026-04-19 — Directory page enhancement (different recipe than Tier 2). Added: WebPageSchema, CollectionPageSchema (maps all 45+ cities to schema.org ItemList), FAQSchema (7 coverage FAQs), SpeakableContentBlocks, AISearchOptimizationBundle, VoiceSearchActionSchema. Added speakable-intro listing 12 counties across NC + SC. Regrouped flat grid into by-county sections (Mecklenburg, Cabarrus, Union, Gaston, Iredell, Lincoln, Catawba, Rowan, Cleveland, Stanly, York SC, Lancaster SC) with county-level descriptor paragraphs. Added 6-point coverage checklist ("What You'll Find on Every City Page"). Each city card now shows distance-from-HQ. Fixed keyword set, canonical, og tags. 146→268 lines.
-- [ ] `blog` (160 lines)
+- [x] `blog` — 2026-04-19 — Directory enhancement. Preserved existing Blog schema + BlogPosting loop + BlogContent component. Added: WebPageSchema, FAQSchema (6 blog-meta FAQs covering authorship, update cadence, scope, commercial coverage, CMS hosting, NC geo-scope), SpeakableContentBlocks, AISearchOptimizationBundle, VoiceSearchActionSchema. Added speakable-intro paragraph describing content scope and team. Added 6-item "What You'll Find" pillar checklist. Added 6-cluster "Browse by Topic" section — storms/hail, insurance claims, repair-vs-replace, materials/comparisons, maintenance/seasonal, cost/financing/warranties — each with 3 curated anchor links to representative posts for topic-cluster internal linking. Expanded metadata keywords, canonical, og. 160→279 lines.
 - [ ] `products` (187 lines)
 - [ ] `materials` (212 lines)
 - [ ] `brands` (215 lines)
