@@ -13,13 +13,13 @@ export function UrgencyBanner() {
     <div className="bg-accent text-white py-2 px-4 text-sm relative" role="banner">
       <div className="container flex items-center justify-center gap-2 text-center pr-8">
         <p className="font-medium">
-          Get <span className="font-bold">10% off repairs</span> with a free inspection or{' '}
-          <span className="font-bold">25% off</span> when you sign up for a maintenance plan.{' '}
+          <span className="font-bold">Spring storm season is here.</span>{' '}
+          Free roof inspection — honest answers, no pressure.{' '}
           <Link
             href="/contact"
             className="underline underline-offset-2 font-bold hover:text-white/90 transition-colors"
           >
-            Schedule Now
+            Schedule yours
           </Link>
         </p>
       </div>

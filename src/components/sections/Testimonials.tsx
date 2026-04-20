@@ -1,8 +1,7 @@
 'use client';
 
-import { Star } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
-import { TestimonialCarousel } from '@/components/ui/TestimonialCarousel';
 import { FadeInUp } from '@/components/ui/Animations';
 
 const testimonials = [
@@ -81,13 +80,33 @@ export function Testimonials() {
           </div>
         </FadeInUp>
 
-        {/* Testimonial Carousel */}
+        {/* Testimonial Grid — 3 visible on desktop, stacked on mobile */}
         <FadeInUp delay={0.2}>
-          <TestimonialCarousel
-            testimonials={testimonials}
-            autoPlay={true}
-            autoPlayInterval={6000}
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {testimonials.slice(0, 6).map((t, idx) => (
+              <div
+                key={idx}
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 flex flex-col"
+              >
+                <Quote className="w-8 h-8 text-accent-light mb-3 flex-shrink-0" aria-hidden="true" />
+                <p className="text-white/95 text-sm leading-relaxed mb-4 flex-1">
+                  &ldquo;{t.text}&rdquo;
+                </p>
+                <div className="flex items-center gap-2 mb-2" role="img" aria-label={`${t.rating} out of 5 stars`}>
+                  {[...Array(t.rating)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                  ))}
+                </div>
+                <div className="flex items-baseline justify-between gap-2 pt-3 border-t border-white/10">
+                  <div>
+                    <p className="font-semibold text-white text-sm">{t.name}</p>
+                    <p className="text-white/70 text-xs">{t.location}</p>
+                  </div>
+                  <span className="text-xs text-accent-light whitespace-nowrap">{t.service}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </FadeInUp>
 
         {/* Google Reviews Link */}

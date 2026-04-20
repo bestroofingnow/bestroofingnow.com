@@ -11,8 +11,8 @@ const UrgencyBanner = dynamic(() => import('./UrgencyBanner').then(m => ({ defau
     <div className="bg-accent text-white py-2 px-4 text-sm" role="banner">
       <div className="container flex items-center justify-center gap-2 text-center pr-8">
         <p className="font-medium">
-          <span className="font-bold">Ice & Snow Damage?</span>
-          {' '}Get <span className="font-bold">10% off repairs</span> with a free inspection.
+          <span className="font-bold">Spring storm season is here.</span>
+          {' '}Free roof inspection — honest answers, no pressure.
         </p>
       </div>
     </div>

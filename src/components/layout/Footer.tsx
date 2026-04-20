@@ -157,37 +157,27 @@ export function Footer() {
               </li>
             </ul>
 
-            {/* Top Charlotte Searches - High Priority SEO Pages */}
-            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Charlotte Roofing</h3>
+            {/* Popular intents in Charlotte */}
+            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Popular in Charlotte</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
-                  Roofing Charlotte NC
-                </Link>
-              </li>
-              <li>
-                <Link href="/roofers-charlotte-nc" className="text-white hover:text-white transition-colors">
-                  Roofers Charlotte NC
-                </Link>
-              </li>
-              <li>
-                <Link href="/roofing-company-charlotte-nc" className="text-white hover:text-white transition-colors">
-                  Roofing Company Charlotte
-                </Link>
-              </li>
-              <li>
                 <Link href="/roof-repair-charlotte-nc" className="text-white hover:text-white transition-colors">
-                  Roof Repair Charlotte NC
+                  Roof Repair
                 </Link>
               </li>
               <li>
                 <Link href="/roof-replacement-charlotte-nc" className="text-white hover:text-white transition-colors">
-                  Roof Replacement Charlotte
+                  Roof Replacement
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-contractor-charlotte-nc" className="text-white hover:text-white transition-colors">
-                  Roofing Contractor Charlotte
+                <Link href="/storm-damage-roof-repair-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Storm Damage
+                </Link>
+              </li>
+              <li>
+                <Link href="/roof-inspection-charlotte-nc" className="text-white hover:text-white transition-colors">
+                  Free Inspection
                 </Link>
               </li>
             </ul>
