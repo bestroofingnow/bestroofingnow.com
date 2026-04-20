@@ -22,8 +22,12 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
+  WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -191,6 +195,16 @@ export default function DesignerShinglesCharlotteNCPage() {
           { name: 'Designer Shingles Charlotte NC', url: `${SITE_CONFIG.url}/designer-shingles-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Designer Shingles Charlotte NC | Luxury Asphalt"
+        description="Designer shingles Charlotte NC. GAF Grand Sequoia / Camelot / Glenwood, CertainTeed Grand Manor / Presidential, OC Berkshire. Slate and shake looks with 50-year warranties."
+        url={`${SITE_CONFIG.url}/designer-shingles-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Services', url: `${SITE_CONFIG.url}/roofing-services` },
+          { name: 'Designer Shingles Charlotte NC', url: `${SITE_CONFIG.url}/designer-shingles-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/designer-shingles-charlotte-nc`}
@@ -198,6 +212,22 @@ export default function DesignerShinglesCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="Which designer shingle lines are installed in Charlotte NC?"
+        pageUrl={`${SITE_CONFIG.url}/designer-shingles-charlotte-nc`}
+        directAnswer="Seven designer shingle lines are commonly installed across Charlotte's luxury neighborhoods: GAF Grand Sequoia and Camelot II (slate-look), GAF Glenwood (shake profile), CertainTeed Grand Manor and Presidential Shake TL (deepest dimension), Owens Corning Berkshire Collection (polymer-modified), and Malarkey Vista Class 4 for impact-resistant luxury. All carry 50-year or lifetime limited warranties when installed by GAF Master Elite, CertainTeed SELECT ShingleMaster, or OC Platinum Preferred contractors."
+        items={[
+          'GAF Grand Sequoia — slate-look dimensional with Timbertex ridge',
+          'GAF Camelot II — classic slate aesthetic with SBS-modified asphalt',
+          'GAF Glenwood — hand-split shake profile, four-layer architecture',
+          'CertainTeed Grand Manor — triple-layer deep-shadow slate',
+          'CertainTeed Presidential Shake TL — polymer-modified shake replica',
+          'Owens Corning Berkshire Collection — polymer-modified dimensional',
+          'Malarkey Vista Class 4 — impact-resistant designer-weight upgrade',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 text-white py-16 md:py-24 overflow-hidden">
@@ -214,9 +244,13 @@ export default function DesignerShinglesCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Luxury aesthetics with lifetime protection
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Transform your home with premium designer shingles that replicate the beauty of slate and cedar shake.
-              GAF, CertainTeed, and Owens Corning certified installer with 50-year warranties.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Designer shingles deliver slate and hand-split shake aesthetics at roughly half the installed cost of natural
+              materials — typical 2026 Charlotte pricing runs $9-14 per sq ft installed vs $16-30+ per sq ft for natural slate.
+              GAF Grand Sequoia, CertainTeed Grand Manor, and Owens Corning Berkshire lines carry 50-year limited warranties
+              when installed by GAF Master Elite, CertainTeed SELECT ShingleMaster, or OC Platinum Preferred contractors —
+              certifications Best Roofing Now holds across all three manufacturers. Popular in Myers Park, Eastover, Foxcroft,
+              Ballantyne, and lakefront Lake Norman custom builds.
             </p>
 
             {/* CTA Buttons */}

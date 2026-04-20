@@ -23,8 +23,12 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
+  WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -214,6 +218,15 @@ export default function LuxuryRoofingCharlotteNCPage() {
           { name: 'Luxury Roofing Charlotte NC', url: `${SITE_CONFIG.url}/luxury-roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Luxury Roofing Charlotte NC | Slate, Copper, Designer"
+        description="Luxury roofing Charlotte NC. Natural slate, copper, zinc, cedar shake, and designer shingles for $800K+ homes. HAAG-certified, Master Elite, historic-home specialists."
+        url={`${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Luxury Roofing Charlotte NC', url: `${SITE_CONFIG.url}/luxury-roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`}
@@ -221,6 +234,21 @@ export default function LuxuryRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What luxury roofing materials are used on Charlotte's high-end homes?"
+        pageUrl={`${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`}
+        directAnswer="Six premium materials dominate Charlotte luxury homes: natural quarried slate (75-150+ year lifespan), copper standing seam and shingle (75-100 years with living patina), zinc (architectural European modernism), clay and concrete tile, cedar shake (historic districts), and designer asphalt replicas like GAF Grand Sequoia and CertainTeed Grand Manor. Typical 2026 installed pricing ranges from $9-14 per sq ft for designer asphalt to $25-60+ per sq ft for natural slate or copper. Common in Myers Park, Eastover, Foxcroft, SouthPark, Dilworth, Fourth Ward, and lakefront Lake Norman."
+        items={[
+          'Natural quarried slate — 75-150+ year lifespan, Vermont/Virginia stone',
+          'Copper standing seam and shingle — 75-100 years, living patina',
+          'Zinc — European architectural modernism, 80-100 year life',
+          'Clay and concrete tile — Mediterranean and transitional luxury',
+          'Cedar shake and shingle — historic districts and lakefront custom',
+          'Designer asphalt (GAF Grand Sequoia, CertainTeed Grand Manor) — slate look at half the cost',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
@@ -246,10 +274,13 @@ export default function LuxuryRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium roofing for Charlotte&apos;s finest homes
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in luxury roofing for homes valued at $800K and above.
-              From natural slate and copper to designer shingles, we deliver exceptional quality
-              that protects your investment and enhances your home&apos;s beauty for generations.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now serves Charlotte&apos;s $800K+ homes with natural slate ($25-60/sq ft installed, 75-150 year
+              life), copper standing seam and shingle (75-100 years with living patina), zinc European architectural,
+              designer asphalt replicas (GAF Grand Sequoia, CertainTeed Grand Manor at $9-14/sq ft), clay tile, and
+              cedar shake. HAAG-certified forensic reporting, Master Elite / SELECT ShingleMaster / Platinum Preferred
+              certifications, and decades of historic-home experience across Myers Park, Eastover, Foxcroft, SouthPark,
+              Dilworth, Fourth Ward, Elizabeth, and lakefront Lake Norman custom builds.
             </p>
 
             {/* CTA Buttons */}

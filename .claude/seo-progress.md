@@ -118,9 +118,9 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `storm-damage-roof-repair-charlotte-nc` — 2026-04-19 — surgical: added SpeakableContentBlocks, expanded hero with NOAA 3-5 hail days/yr + named tropical remnants (Florence/Isaias/Helene) + Xactimate + RCV/ACV review + Class 4 upgrade path.
 
 **Queue (thinnest first — highest ROI for surgical additions):**
-- [ ] `designer-shingles-charlotte-nc` (481)
-- [ ] `luxury-roofing-charlotte-nc` (486)
-- [ ] `what-to-do-after-hail-storm-charlotte-nc` (499)
+- [x] `designer-shingles-charlotte-nc` (481→499) — 2026-04-20 — added WebPage + Speakable + FeaturedSnippet (7 designer lines: GAF Grand Sequoia/Camelot/Glenwood, CertainTeed Grand Manor/Presidential Shake TL, OC Berkshire, Malarkey Vista Class 4) + FreeInspection, wrapped hero with .speakable-intro and 2026 pricing + Myers Park/Eastover/Foxcroft/Ballantyne/LKN lakefront neighborhoods.
+- [x] `luxury-roofing-charlotte-nc` (486→510) — 2026-04-20 — added WebPage + Speakable + FeaturedSnippet (6 premium materials: slate, copper, zinc, tile, cedar, designer asphalt) + FreeInspection, hero `.speakable-intro` with 2026 pricing bands $9-60+/sq ft and 7 luxury neighborhoods.
+- [x] `what-to-do-after-hail-storm-charlotte-nc` (499→521) — 2026-04-20 — added AISearch + Voice + Speakable + FeaturedSnippet (8-step 48-hour action checklist) + FreeInspection, hero `.speakable-intro` with NOAA stats + 12-month NC claim window + 2-4hr Mecklenburg response, bumped dateModified to 2026-04-20.
 - [ ] `church-roof-replacement-guide-charlotte-nc` (518)
 - [ ] `how-to-choose-roofing-contractor-charlotte-nc` (518)
 - [ ] `how-many-roof-estimates-charlotte-nc` (523)

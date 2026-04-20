@@ -21,6 +21,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -195,10 +200,33 @@ export default function WhatToDoAfterHailStormPage() {
   description: 'Complete guide to handling hail damage for Charlotte homeowners.',
   slug: 'what-to-do-after-hail-storm-charlotte-nc',
   datePublished: '2026-01-29',
-  dateModified: '2026-01-29',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={hailFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="What to Do After a Hail Storm in Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What should Charlotte homeowners do in the first 48 hours after a hail storm?"
+        pageUrl={pageUrl}
+        directAnswer="Eight immediate steps protect both the home and a future insurance claim: confirm personal safety and shelter in place until the storm passes, check for interior water intrusion in the attic and ceilings, photograph collateral soft-metal damage (AC condenser fins, gutter downspouts, window screens) while conditions are fresh, note the hail size in inches using a coin or golf-ball reference, save any NOAA or local weather alerts, request an emergency tarp if shingles were lifted or leaks are active, schedule a professional roof inspection before filing with insurance, and document the date of loss for North Carolina's 12-month claim window."
+        items={[
+          'Confirm safety and wait for the storm to pass before going outside',
+          'Check attic and ceilings for interior water intrusion',
+          'Photograph collateral soft-metal damage (AC fins, downspouts, screens)',
+          'Estimate hail stone size using a coin or common object reference',
+          'Save NOAA or local weather alerts as timestamped evidence',
+          'Request emergency tarping if shingles are lifted or leaks are active',
+          'Schedule a professional roof inspection before filing a claim',
+          'Record the date of loss for the NC 12-month claim filing window',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-700 via-slate-600 to-slate-800 text-white py-16 md:py-24 overflow-hidden">
@@ -227,10 +255,13 @@ export default function WhatToDoAfterHailStormPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Step-by-Step Guide to Protect Your Home &amp; File Your Claim
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Charlotte sees damaging hail storms every year. Here&apos;s exactly what to do
-              in the hours and days after a hail event to protect your home and get your
-              roof repaired.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Charlotte averages 3-5 damaging hail days per year per the NOAA Storm Events Database, with the May-June
+              Piedmont "hail belt" peak. This eight-step guide walks through the first 48 hours after a hail event:
+              confirming safety, checking for interior intrusion, photographing collateral soft-metal damage,
+              estimating stone size, saving weather alerts, requesting emergency tarping when needed, scheduling a
+              professional inspection before filing, and documenting the date of loss for the North Carolina 12-month
+              claim window. Best Roofing Now responds in 2-4 hours across Mecklenburg with Xactimate-format reports.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
