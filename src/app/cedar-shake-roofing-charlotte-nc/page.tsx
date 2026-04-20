@@ -23,8 +23,12 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
+  WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -209,6 +213,16 @@ export default function CedarShakeRoofingCharlotteNCPage() {
           { name: 'Cedar Shake Roofing Charlotte NC', url: `${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Cedar Shake Roofing Charlotte NC | Certi-Split & Synthetic"
+        description="Cedar shake roofing Charlotte NC. Certi-Split / Certi-Sawn / Certi-Shake CSSB grades, fire-retardant treated, and synthetic DaVinci/Brava alternatives for historic homes and luxury builds."
+        url={`${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Luxury Roofing', url: `${SITE_CONFIG.url}/luxury-roofing-charlotte-nc` },
+          { name: 'Cedar Shake Roofing Charlotte NC', url: `${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`}
@@ -216,6 +230,20 @@ export default function CedarShakeRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What cedar shake options are available for Charlotte luxury roofs?"
+        pageUrl={`${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`}
+        directAnswer="Five cedar shake tiers fit Charlotte's historic and luxury neighborhoods: Certi-Split (hand-split natural grain, deep shadow lines), Certi-Sawn (tapered sawn face with rustic character), Certi-Shake (premium heavy-butt Alaskan yellow or western red cedar), fire-retardant treated Class A/B rated for HOAs and insurance requirements, and synthetic composite alternatives like DaVinci Bellaforté Shake, Brava Cedar, and CeDUR — Class A fire and Class 4 impact with 50-year warranties. Typical 2026 Charlotte pricing runs $7-14 per sq ft installed for natural grades, $8-11 for synthetic alternatives, with realistic 25-40 year lifespan in Piedmont humidity."
+        items={[
+          'Certi-Split — hand-split natural grain with deep shadow lines',
+          'Certi-Sawn — tapered sawn face, rustic character',
+          'Certi-Shake — premium heavy-butt Alaskan yellow or western red cedar',
+          'Fire-Retardant Treated — Class A/B rated for strict HOA and insurance',
+          'Synthetic composite (DaVinci / Brava / CeDUR) — Class A fire + Class 4 impact',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-amber-700 via-amber-800 to-amber-900 text-white py-16 md:py-24 overflow-hidden">
@@ -235,10 +263,13 @@ export default function CedarShakeRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Natural elegance with rustic character
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in premium cedar shake and shingle roofing for Charlotte&apos;s
-              finest homes. Our certified installers deliver exceptional quality that enhances your home&apos;s
-              natural beauty with 30-50+ years of distinguished protection.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Certi-Split, Certi-Sawn, and Certi-Shake (Cedar Shake and Shingle Bureau grades) install at $7-14 per sq ft
+              in Charlotte — with realistic 25-40 year lifespan in Piedmont humidity, shorter than Pacific Northwest
+              norms. Fire-retardant treated natural cedar meets strict HOA and insurance requirements; synthetic
+              alternatives like DaVinci Bellaforté, Brava Cedar, and CeDUR add Class A fire and Class 4 impact ratings
+              with 50-year warranties. Common in Historic Matthews, Historic Davidson, Dilworth, Myers Park, Eastover,
+              and lakefront Lake Norman custom homes.
             </p>
 
             {/* CTA Buttons */}

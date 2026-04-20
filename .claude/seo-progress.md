@@ -124,9 +124,9 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `church-roof-replacement-guide-charlotte-nc` (518) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (7-point church-replacement considerations) + FreeInspection, hero `.speakable-intro` with budget range and NDL warranty list, bumped dateModified.
 - [x] `how-to-choose-roofing-contractor-charlotte-nc` (518) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8 credentials/red-flag checklist) + FreeInspection, hero `.speakable-intro` with NC §58-24-10 deductible-fraud rule + all 4 certifications, bumped dateModified.
 - [x] `how-many-roof-estimates-charlotte-nc` (523) — 2026-04-20 — added Speakable+FeaturedSnippet (8 line-item comparison checklist) + FreeInspection, hero `.speakable-intro` with 3-5 bid sweet-spot framing and normalized comparison criteria.
-- [ ] `tpo-vs-epdm-roofing-charlotte-nc` (524)
-- [ ] `warehouse-roof-repair-vs-replacement-charlotte-nc` (527)
-- [ ] `cedar-shake-roofing-charlotte-nc` (537)
+- [x] `tpo-vs-epdm-roofing-charlotte-nc` (524) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8-factor TPO vs EPDM decision matrix: SRI / cost / seam chemistry / life / chemical resistance / impact / NDL warranties / Duke Energy rebate) + FreeInspection, hero `.speakable-intro` with 2026 installed pricing and manufacturer list, bumped dateModified.
+- [x] `warehouse-roof-repair-vs-replacement-charlotte-nc` (527) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (7-criteria repair-vs-replace matrix: age / moisture % / leak frequency / damage area / substrate / NDL warranty / coating ROI) + FreeInspection, hero `.speakable-intro` naming I-85 / Steele Creek / URP / Westinghouse corridors with 2026 pricing, bumped dateModified.
+- [x] `cedar-shake-roofing-charlotte-nc` (537) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (5 CSSB grades + synthetic alternatives) + FreeInspection, hero `.speakable-intro` with realistic Piedmont 25-40yr lifespan (honest vs PNW norms) + Historic Matthews/Davidson/Dilworth/Myers Park/Eastover/LKN neighborhoods.
 - [ ] `copper-roofing-charlotte-nc` (537)
 - [ ] `what-to-do-roof-leak-charlotte-nc` (552)
 - [ ] `roofing-waverly-charlotte-nc` (553)

@@ -23,6 +23,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -193,10 +198,32 @@ export default function WarehouseRoofRepairVsReplacementPage() {
   description: 'When to repair, when to replace your warehouse roof in Charlotte.',
   slug: 'warehouse-roof-repair-vs-replacement-charlotte-nc',
   datePublished: '2026-01-28',
-  dateModified: '2026-01-28',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={warehouseFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Warehouse Roof Repair vs Replacement Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="When should a Charlotte warehouse owner repair vs replace the roof?"
+        pageUrl={pageUrl}
+        directAnswer="Seven criteria drive the repair-or-replace decision for Charlotte industrial roofs: membrane age relative to manufacturer life (repair if under 70% of expected life), moisture survey results (over 25% wet insulation typically tips to replace), leak frequency (3+ active leaks or 5+ repairs in 12 months usually signals replacement), total damage area (under 20% favors repair with warranty coordination), substrate condition (soaked deck or delaminated cover boards favor replace), warranty status (NDL-warranted roofs need manufacturer-approved repair procedures), and ROI math (coating or targeted repair often buys 10-15 years at 30-50% of replacement cost). Infrared moisture scans and core cuts are the authoritative diagnostic."
+        items={[
+          'Membrane age — repair if under 70% of expected service life',
+          'Moisture survey — over 25% wet insulation tips toward replacement',
+          '3+ active leaks or 5+ repairs in 12 months signals replacement',
+          'Damage area — under 20% generally favors targeted repair',
+          'Substrate condition — soaked deck or delaminated cover tips to replace',
+          'NDL warranty status — manufacturer-approved repair procedures required',
+          'Coating or targeted repair often extends life 10-15 yrs at 30-50% of replacement cost',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
@@ -228,10 +255,13 @@ export default function WarehouseRoofRepairVsReplacementPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Charlotte NC Decision Guide for Industrial Building Owners
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Don&apos;t spend $500,000 on replacement when repairs could solve the problem.
-              But don&apos;t waste money on repairs for a roof that needs replacement.
-              Here&apos;s how to make the right call.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Warehouse roof replacement across Charlotte&apos;s industrial corridors — I-85 Northside, Steele Creek,
+              University Research Park, Westinghouse Boulevard — typically runs $3-8 per sq ft for TPO or EPDM
+              single-ply, or $4-12 per sq ft for modified bitumen or restoration coatings. Infrared moisture survey
+              plus 2-4 core cuts is the authoritative diagnostic. Repair often makes sense when membrane age is under
+              70% of service life and moisture intrusion is under 25% of surface area. Replace when the deck is
+              soaked, leak frequency exceeds 3 in 12 months, or NDL warranty has lapsed.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

@@ -21,6 +21,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -205,10 +210,33 @@ export default function TPOvsEPDMRoofingPage() {
   description: 'Which single-ply membrane is best for your Charlotte building?',
   slug: 'tpo-vs-epdm-roofing-charlotte-nc',
   datePublished: '2026-01-29',
-  dateModified: '2026-01-29',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={comparisonFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="TPO vs EPDM Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="How do TPO and EPDM compare for Charlotte commercial roofs?"
+        pageUrl={pageUrl}
+        directAnswer="Seven decision factors separate TPO from EPDM single-ply membranes on Charlotte commercial buildings: thermal reflectivity (TPO white typically delivers 78+ SRI vs EPDM black ~20), installed cost ($5-9/sq ft TPO vs $4-7 EPDM), seam chemistry (heat-welded TPO vs tape or liquid-adhesive EPDM), realistic service life (22-30 years for modern 60-mil TPO vs 25-35 years for fleece-back EPDM), chemical resistance (EPDM tolerates oils better, TPO handles greases), puncture and hail resistance (fleece-back EPDM wins), manufacturer NDL options (both offer 20-30 year warranties from Carlisle, Johns Manville, Firestone-Holcim, GAF, Mule-Hide), and Duke Energy rebate eligibility (cool-roof TPO qualifies)."
+        items={[
+          'Reflectivity — TPO white 78+ SRI vs EPDM black ~20 SRI',
+          'Installed cost — TPO $5-9/sq ft vs EPDM $4-7/sq ft',
+          'Seam chemistry — heat-welded TPO vs taped or adhered EPDM',
+          'Service life — 22-30 yr TPO vs 25-35 yr fleece-back EPDM',
+          'Chemical resistance — EPDM better for oils, TPO for greases',
+          'Impact and hail — fleece-back EPDM wins on puncture resistance',
+          'Manufacturer NDL options — Carlisle, JM, Firestone-Holcim, GAF, Mule-Hide',
+          'Duke Energy cool-roof rebate — TPO qualifies when light-colored',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -240,10 +268,13 @@ export default function TPOvsEPDMRoofingPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Which Single-Ply Membrane is Best for Your Building?
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Both TPO and EPDM are excellent commercial roofing options, but they excel in
-              different situations. Here&apos;s how to choose the right one for your Charlotte
-              building.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              TPO typically installs at $5-9 per sq ft with heat-welded seams, 78+ SRI reflectivity, and 22-30 year
+              service life — ideal for warehouses, retail, and office seeking Duke Energy cool-roof rebates. EPDM
+              installs at $4-7 per sq ft with taped or adhered seams, 25-35 year life, and superior puncture resistance
+              — often the better choice for HVAC-concentrated or chemical-exposed Charlotte rooftops. Best Roofing Now
+              installs Carlisle, Johns Manville, Firestone-Holcim, GAF EverGuard, and Mule-Hide systems with NDL
+              warranties up to 30 years.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
