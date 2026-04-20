@@ -21,6 +21,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -209,10 +214,32 @@ export default function ChurchRoofReplacementGuidePage() {
   description: 'Complete guide to church roofing in Charlotte NC.',
   slug: 'church-roof-replacement-guide-charlotte-nc',
   datePublished: '2026-02-01',
-  dateModified: '2026-02-01',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={churchFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Church Roof Replacement Guide Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What should Charlotte churches know before replacing a roof?"
+        pageUrl={pageUrl}
+        directAnswer="Seven considerations specific to religious buildings: budget and nonprofit financing options (congregational campaigns, denominational loans, roofing-specific financing partners), scheduling around worship calendars and special services, steeple and bell-tower complications that drive specialty labor, stained-glass and historic-preservation coordination, commercial NDL warranty options (Carlisle, Johns Manville, Firestone-Holcim, Mule-Hide), insurance and casualty-claim coordination through the church's carrier, and building-envelope inspections that address HVAC, flashing, and attic ventilation in one project."
+        items={[
+          'Budget and nonprofit financing (campaigns, denomination loans, installment plans)',
+          'Scheduling around worship, weddings, funerals, and special services',
+          'Steeple, bell-tower, and dormer specialty labor',
+          'Stained-glass and historic-preservation coordination',
+          'Commercial NDL warranty options — Carlisle, Johns Manville, Firestone-Holcim, Mule-Hide',
+          'Insurance and casualty-claim coordination with church carrier',
+          'Building-envelope scope: HVAC curbs, flashing, attic ventilation in one project',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
@@ -244,10 +271,13 @@ export default function ChurchRoofReplacementGuidePage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Protecting Your Sacred Space in Charlotte NC
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Your church building is more than a structure - it&apos;s a gathering place for your
-              congregation. We understand the unique needs of religious buildings and work with
-              respect for your mission, budget, and schedule.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Charlotte churches typically budget $35,000-$150,000+ for full sanctuary roof replacement depending on
+              square footage, pitch, steeple complexity, and membrane choice. This guide walks through nonprofit
+              financing, worship-calendar scheduling, steeple and stained-glass coordination, commercial NDL warranty
+              options from Carlisle / Johns Manville / Firestone-Holcim / Mule-Hide, and insurance-claim handling for
+              storm-damaged religious buildings. Best Roofing Now has served Mecklenburg, Cabarrus, and Union county
+              congregations with flexible scheduling around services, weddings, and funerals.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

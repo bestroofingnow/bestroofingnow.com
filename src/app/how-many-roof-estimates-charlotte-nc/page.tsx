@@ -28,6 +28,9 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
@@ -200,6 +203,23 @@ export default function HowManyRoofEstimatesCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What should Charlotte homeowners compare when evaluating roof estimates?"
+        pageUrl={`${SITE_CONFIG.url}/how-many-roof-estimates-charlotte-nc`}
+        directAnswer="Eight line items to compare side-by-side across 3-5 contractor bids: scope of work (tear-off vs overlay, deck repair allowances), shingle brand, tier, and wind rating (110 vs 130 vs 150 MPH), underlayment type (felt vs synthetic, ice-and-water shield coverage), ridge and intake ventilation math (NC IRC §R806 1/150 NFVA or 1/300 balanced), flashing detail (step, counter, chimney cricket), warranty structure (manufacturer shingle, system-level NDL, contractor workmanship), payment schedule (no more than deposit + completion), and credentials (NC license, $1M liability insurance, manufacturer certifications). Lowest bid is rarely the best value once scope normalization is applied."
+        items={[
+          'Scope of work — tear-off vs overlay, deck repair allowances',
+          'Shingle brand, tier, and wind rating (110, 130, or 150 MPH)',
+          'Underlayment type and ice-and-water shield coverage',
+          'Ventilation math per NC IRC §R806 (1/150 NFVA or 1/300 balanced)',
+          'Flashing detail — step, counter, chimney cricket',
+          'Warranty structure — manufacturer, NDL system, contractor workmanship',
+          'Payment schedule — deposit plus completion (avoid heavy upfront)',
+          'Credentials — NC license, $1M liability, manufacturer certifications',
+        ]}
+      />
 
       {/* Breadcrumbs */}
       <Breadcrumbs
@@ -234,10 +254,13 @@ export default function HowManyRoofEstimatesCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Get 3-5 estimates from licensed contractors. Compare scope of work, materials, warranty length, and payment terms.
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Choosing a roofer is one of the biggest home improvement decisions you will make.
-              This guide shows Charlotte homeowners exactly what to compare, what red flags to watch for,
-              and how to pick the right contractor from your estimates. From our team with {SITE_CONFIG.roofsInstalled}+ roofs installed.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Three to five bids is the Charlotte sweet spot — fewer than three leaves blind spots, more than five produces
+              diminishing returns. Compare eight normalized line items side-by-side: scope (tear-off vs overlay), shingle
+              tier and wind rating (110 / 130 / 150 MPH), underlayment and ice-and-water shield coverage, ventilation math
+              per NC IRC §R806, flashing detail, warranty structure, payment schedule, and credentials. Lowest price rarely
+              wins once scope is normalized. From our team with {SITE_CONFIG.roofsInstalled}+ roofs completed across Mecklenburg,
+              Cabarrus, Union, Gaston, and Iredell counties.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

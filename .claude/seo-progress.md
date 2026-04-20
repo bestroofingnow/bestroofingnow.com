@@ -121,9 +121,9 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `designer-shingles-charlotte-nc` (481→499) — 2026-04-20 — added WebPage + Speakable + FeaturedSnippet (7 designer lines: GAF Grand Sequoia/Camelot/Glenwood, CertainTeed Grand Manor/Presidential Shake TL, OC Berkshire, Malarkey Vista Class 4) + FreeInspection, wrapped hero with .speakable-intro and 2026 pricing + Myers Park/Eastover/Foxcroft/Ballantyne/LKN lakefront neighborhoods.
 - [x] `luxury-roofing-charlotte-nc` (486→510) — 2026-04-20 — added WebPage + Speakable + FeaturedSnippet (6 premium materials: slate, copper, zinc, tile, cedar, designer asphalt) + FreeInspection, hero `.speakable-intro` with 2026 pricing bands $9-60+/sq ft and 7 luxury neighborhoods.
 - [x] `what-to-do-after-hail-storm-charlotte-nc` (499→521) — 2026-04-20 — added AISearch + Voice + Speakable + FeaturedSnippet (8-step 48-hour action checklist) + FreeInspection, hero `.speakable-intro` with NOAA stats + 12-month NC claim window + 2-4hr Mecklenburg response, bumped dateModified to 2026-04-20.
-- [ ] `church-roof-replacement-guide-charlotte-nc` (518)
-- [ ] `how-to-choose-roofing-contractor-charlotte-nc` (518)
-- [ ] `how-many-roof-estimates-charlotte-nc` (523)
+- [x] `church-roof-replacement-guide-charlotte-nc` (518) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (7-point church-replacement considerations) + FreeInspection, hero `.speakable-intro` with budget range and NDL warranty list, bumped dateModified.
+- [x] `how-to-choose-roofing-contractor-charlotte-nc` (518) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8 credentials/red-flag checklist) + FreeInspection, hero `.speakable-intro` with NC §58-24-10 deductible-fraud rule + all 4 certifications, bumped dateModified.
+- [x] `how-many-roof-estimates-charlotte-nc` (523) — 2026-04-20 — added Speakable+FeaturedSnippet (8 line-item comparison checklist) + FreeInspection, hero `.speakable-intro` with 3-5 bid sweet-spot framing and normalized comparison criteria.
 - [ ] `tpo-vs-epdm-roofing-charlotte-nc` (524)
 - [ ] `warehouse-roof-repair-vs-replacement-charlotte-nc` (527)
 - [ ] `cedar-shake-roofing-charlotte-nc` (537)

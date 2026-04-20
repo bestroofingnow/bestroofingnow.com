@@ -23,6 +23,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -252,10 +257,33 @@ export default function HowToChooseRoofingContractorPage() {
   description: 'Complete guide to finding a trustworthy roofer in Charlotte.',
   slug: 'how-to-choose-roofing-contractor-charlotte-nc',
   datePublished: '2026-01-28',
-  dateModified: '2026-01-28',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={contractorFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="How to Choose a Roofing Contractor in Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What should Charlotte homeowners verify before hiring a roofer?"
+        pageUrl={pageUrl}
+        directAnswer="Eight credentials and red flags a Charlotte homeowner should check: NC General Contractor license or Limited Building Contractor classification for projects over $30K, certificate of general liability insurance ($1M+) and workers' compensation (not simply a 1099 crew), manufacturer certifications such as GAF Master Elite, CertainTeed SELECT ShingleMaster, or Owens Corning Platinum Preferred, a permanent local address and 3+ years of Charlotte history, BBB accreditation and verifiable Google reviews, written itemized estimates (not verbal door-knock offers), refusal to waive or 'eat' the insurance deductible (NC §58-24-10 defines that as fraud), and willingness to pull required Mecklenburg County permits."
+        items={[
+          'NC General Contractor or Limited Building Contractor license for $30K+ jobs',
+          'Certificate of $1M+ liability insurance and active workers compensation',
+          'Manufacturer certifications (GAF Master Elite, CertainTeed SELECT, OC Platinum)',
+          'Permanent local address and 3+ years of Charlotte history',
+          'BBB accreditation and independently verifiable Google reviews',
+          'Written itemized estimate — not a verbal door-knock offer',
+          'Refusal to waive the insurance deductible (NC §58-24-10 prohibits it)',
+          'Willingness to pull Mecklenburg County building permits',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -284,9 +312,13 @@ export default function HowToChooseRoofingContractorPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Don&apos;t Get Scammed: The Complete 2026 Guide
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Learn exactly what credentials to verify, questions to ask, and red flags to avoid
-              when hiring a roofer in Charlotte. Protect your home and your wallet.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Charlotte sees hundreds of storm-chaser contractors after every hail and tropical event. This guide
+              covers eight credentials to verify — NC General Contractor license for projects over $30K, $1M+ liability
+              insurance, active workers compensation, manufacturer certifications (GAF Master Elite, CertainTeed SELECT
+              ShingleMaster, OC Platinum Preferred), permanent local address with 3+ year history, BBB accreditation,
+              written itemized estimates, and refusal to waive insurance deductibles (NC §58-24-10 defines that as fraud).
+              Best Roofing Now has held all four certifications continuously since founding.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
