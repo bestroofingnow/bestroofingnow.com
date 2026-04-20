@@ -288,11 +288,10 @@ export default function HomePage() {
         <div className="container">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-primary mb-4">
-              Charlotte&apos;s Full-Service Roofing &amp; Exterior Contractor
+              What We Do
             </h2>
             <p className="text-gray-600 mb-8">
-              Best Roofing Now is more than just a roofing contractor. As a licensed general contractor and construction company,
-              we provide comprehensive exterior services including metal roofing, gutter installation, siding, and storm damage restoration.
+              Roofing is the core — but we handle the whole exterior. Gutters, siding, skylights, storm damage, and everything else that keeps your house weather-tight.
             </p>
 
             {/* GBP Category Cards - Primary Link Tier */}
@@ -329,22 +328,6 @@ export default function HomePage() {
                   Get Help Now <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </span>
               </a>
-              <a href="/specialty-services" className="bg-gradient-to-br from-primary to-primary-dark rounded-xl p-6 text-white hover:shadow-xl transition-all group">
-                <div className="text-3xl mb-3">✨</div>
-                <h3 className="font-bold text-xl mb-2">Specialty Services</h3>
-                <p className="text-white/80 text-sm mb-3">Skylights, ventilation, chimney &amp; flat roof repair</p>
-                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
-                  Explore Specialty <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </span>
-              </a>
-              <a href="/solar-services" className="bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl p-6 text-white hover:shadow-xl transition-all group">
-                <div className="text-3xl mb-3">☀️</div>
-                <h3 className="font-bold text-xl mb-2">Solar Roofing</h3>
-                <p className="text-white/80 text-sm mb-3">Solar panel roof integration &amp; solar-ready roofing</p>
-                <span className="inline-flex items-center text-sm font-medium text-white/90 group-hover:text-white">
-                  Explore Solar <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </span>
-              </a>
               <a href="/metal-roofing-services" className="bg-gradient-to-br from-slate-600 to-slate-800 rounded-xl p-6 text-white hover:shadow-xl transition-all group">
                 <div className="text-3xl mb-3">🔩</div>
                 <h3 className="font-bold text-xl mb-2">Metal Roofing</h3>
@@ -361,13 +344,13 @@ export default function HomePage() {
                   Explore Commercial <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </span>
               </a>
-              <a href="/services" className="bg-light rounded-xl p-6 text-primary hover:shadow-xl transition-all group border-2 border-primary/20 hover:border-primary">
-                <div className="text-3xl mb-3">📋</div>
-                <h3 className="font-bold text-xl mb-2">All 27 Services</h3>
-                <p className="text-gray-600 text-sm mb-3">View our complete service directory</p>
-                <span className="inline-flex items-center text-sm font-medium text-primary group-hover:text-accent">
-                  View All <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </span>
+            </div>
+
+            {/* Complete service directory link — smaller, subordinate to the 7 primary cards above */}
+            <div className="text-center mb-10">
+              <a href="/services" className="inline-flex items-center gap-2 text-primary font-medium hover:text-accent transition-colors">
+                See all roofing &amp; exterior services
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
               </a>
             </div>
 
