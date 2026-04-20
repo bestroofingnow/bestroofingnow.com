@@ -27,7 +27,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import EstimateButton from '@/components/estimate/EstimateButton';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -405,6 +405,7 @@ export default function RoofingCharlotteNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -430,11 +431,13 @@ export default function RoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Charlotte&apos;s #1 rated roofing company with {SITE_CONFIG.roofsInstalled}+ roofs completed
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now delivers premium roofing services throughout Charlotte NC. From expert repairs
-              to complete replacements, our certified team provides exceptional quality backed by industry-leading
-              warranties, a BBB A+ rating, and {SITE_CONFIG.googleReviewCount}+ five-star reviews. As a veteran-owned
-              company, we bring military-grade discipline and integrity to every roofing project.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now is Charlotte&apos;s top-rated roofing company, serving Mecklenburg County and surrounding
+              areas from Uptown to Ballantyne, Myers Park to University City. We hold GAF Master Elite (top 2% nationally),
+              CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred certifications, unlocking 50-year
+              non-prorated warranties most contractors cannot offer. With {SITE_CONFIG.googleReviewCount}+ five-star reviews,
+              BBB A+ accreditation, and 500+ Charlotte roofs completed, we bring veteran-owned discipline, free inspections
+              with photo documentation, and 2-4 hour Mecklenburg dispatch for storm emergencies.
             </p>
 
             {/* CTA Buttons */}

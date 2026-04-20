@@ -139,10 +139,10 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `roof-repair-charlotte-nc` (770) — high intent — done 2026-04-19
 - [x] `roof-replacement-charlotte-nc` (938) — highest-value conversion — done 2026-04-19
 - [x] `storm-damage-roof-repair-charlotte-nc` (859) — claims traffic — done 2026-04-19
-- [ ] `roofing-charlotte-nc` (1,468) — master hub
-- [ ] `commercial-roofing-charlotte-nc` (1,346) — commercial hub
-- [ ] `metal-roofing-charlotte-nc` (1,352) — material hub
-- [ ] `hail-damage-roof-repair-charlotte-nc` (682) — seasonal spike
+- [x] `roofing-charlotte-nc` (1,468) — master hub — done 2026-04-19 — surgical: added SpeakableContentBlocks (page already had AISearch+Voice+FAQ+Breadcrumb), added `.speakable-intro` class to hero paragraph and rewrote hero with 2026 specifics (GAF Master Elite top 2% / CertainTeed SELECT / OC Platinum certifications, 50-yr non-prorated warranty unlock, neighborhoods Uptown/Ballantyne/Myers Park/University City, 2-4hr Mecklenburg dispatch)
+- [x] `commercial-roofing-charlotte-nc` (1,346) — commercial hub — done 2026-04-19 — surgical: added SpeakableContentBlocks, added `.speakable-intro` and rewrote hero naming Carlisle SynTec / Johns Manville / Holcim-Firestone / GAF EverGuard / Mule-Hide NDL warranty certs, IRC IECC 4A energy code, Independence Blvd / South End / University Research Park / Ballantyne Corporate Park / I-77/I-485 corridors, infrared moisture surveys.
+- [x] `metal-roofing-charlotte-nc` (1,352) — material hub — done 2026-04-19 — surgical: added SpeakableContentBlocks, added new `.speakable-intro` paragraph below subhead naming all 4 systems (standing seam steel/aluminum/zinc/copper, metal shingles, corrugated, stone-coated steel), PVDF Kynar 500 30-40yr color warranties, $9-22/sq ft 2026 pricing, Class 4 + 10-30% NC insurance discount + 25%+ energy savings, Myers Park/Eastover/Ballantyne/lakefront LKN/Dilworth/Plaza Midwood neighborhoods.
+- [x] `hail-damage-roof-repair-charlotte-nc` (682) — seasonal spike — done 2026-04-19 — surgical: added SpeakableContentBlocks, added `.speakable-intro` and rewrote hero with NOAA hail-belt data (3-5 days/yr, May-June peak, 1.75" 2024 event), Xactimate format, RCV/ACV review, NC carrier list (State Farm/Allstate/USAA/Travelers/Liberty/NC Farm Bureau), NC §58-24-10 legal right, 2-4hr Mecklenburg dispatch, 12-month NC claim window.
 
 ### Additional scope beyond Charlotte (Tier 6+)
 - Pending: ~30 additional Lake Norman and satellite-city service+location pages

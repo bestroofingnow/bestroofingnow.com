@@ -27,6 +27,7 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -277,6 +278,7 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -302,10 +304,13 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Insurance claim experts helping Charlotte homeowners since {SITE_CONFIG.founded}
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Did a recent hail storm damage your roof? Best Roofing Now provides free hail damage inspections,
-  expert insurance claim assistance, and professional repairs. We fight to ensure you get the
-              settlement you deserve. Don't wait - hidden damage gets worse over time.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Charlotte averages 3-5 hail days per year per NOAA Storm Events Database, with the May-June "hail belt" peak
+              and recent significant events including 1.75" stones in 2024. Best Roofing Now documents damage in adjuster-format
+              Xactimate reports, files RCV vs ACV reviews and supplemental claims, and works with State Farm, Allstate, USAA,
+              Travelers, Liberty Mutual, and NC Farm Bureau. Under NC §58-24-10 you have the legal right to choose any licensed
+              contractor — not the insurer's preferred vendor. We respond in 2-4 hours across Mecklenburg with free inspections,
+              chalk-circle damage photos, and 12-month NC claim windows tracked from the date of loss.
             </p>
 
             {/* CTA Buttons */}

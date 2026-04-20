@@ -34,6 +34,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -363,6 +364,7 @@ export default function MetalRoofingCharlottePage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -387,6 +389,9 @@ export default function MetalRoofingCharlottePage() {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               <Link href="/standing-seam-metal-roof-charlotte-nc" className="underline decoration-accent-light/50 hover:decoration-accent-light">Standing seam</Link>, metal shingles, corrugated, and stone-coated steel metal roof installation by Charlotte's trusted <Link href="/roofing-contractor-charlotte-nc" className="underline decoration-accent-light/50 hover:decoration-accent-light">roofing experts</Link>.
+            </p>
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs four metal roofing systems across Charlotte: standing seam (24/26-gauge steel, aluminum, zinc, copper) with PVDF Kynar 500 finishes carrying 30-40 year color warranties, metal shingles in slate/shake/tile profiles, exposed-fastener corrugated for outbuildings and agricultural, and stone-coated steel for shingle aesthetics with metal performance. 2026 pricing runs $9-22 per sq ft depending on material and gauge, with Class 4 impact-resistant ratings unlocking 10-30% NC homeowner insurance discounts and 25%+ reflective energy savings vs asphalt. We serve Myers Park, Eastover, Ballantyne, lakefront LKN, and historic Dilworth/Plaza Midwood with engineering for snow load, wind uplift, and thermal expansion.
             </p>
 
             {/* Key Benefits Display */}

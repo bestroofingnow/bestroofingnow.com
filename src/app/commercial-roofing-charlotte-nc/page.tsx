@@ -42,7 +42,7 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -469,6 +469,7 @@ export default function CommercialRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -494,11 +495,13 @@ export default function CommercialRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Charlotte&apos;s trusted commercial roofing experts with {SITE_CONFIG.roofsInstalled}+ projects completed
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now delivers professional commercial roofing solutions throughout Charlotte NC. From TPO and EPDM
-              flat roofs to metal roofing systems, our certified team provides exceptional quality backed by industry-leading
-              warranties, a BBB A+ rating, and {SITE_CONFIG.googleReviewCount}+ five-star reviews. We serve warehouses,
-  office buildings, retail centers, healthcare facilities, schools, churches, and every type of commercial property.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now is Charlotte&apos;s authorized commercial roofing contractor for Carlisle SynTec, Johns Manville,
+              Holcim/Firestone Building Products, GAF EverGuard, and Mule-Hide — the certifications that unlock NDL (no-dollar-limit)
+              warranties on TPO, EPDM, PVC, and modified-bitumen systems. We serve Independence Blvd, South End, University Research
+              Park, Ballantyne Corporate Park, and the I-77/I-485 corridors with infrared moisture surveys, IRC IECC zone 4A energy-code
+              spec, and same-week emergency response. {SITE_CONFIG.googleReviewCount}+ five-star reviews, BBB A+ rated, veteran-owned —
+              serving warehouses, office buildings, retail centers, healthcare facilities, schools, and churches across Mecklenburg County.
             </p>
 
             {/* CTA Buttons */}
