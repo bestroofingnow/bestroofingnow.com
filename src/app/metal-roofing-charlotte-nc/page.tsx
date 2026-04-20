@@ -32,9 +32,12 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
+  WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
   SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -356,7 +359,29 @@ export default function MetalRoofingCharlottePage() {
           { name: 'Metal Roofing Charlotte NC', url: `${SITE_CONFIG.url}/metal-roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Metal Roofing Charlotte NC | Standing Seam & Stone-Coated"
+        description="Metal roofing Charlotte NC. Standing seam, stone-coated steel, aluminum, and copper. 40-70 year lifespan, Class 4 hail rating, Kynar 500 finishes."
+        url={`${SITE_CONFIG.url}/metal-roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Metal Roofing Charlotte NC', url: `${SITE_CONFIG.url}/metal-roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What types of metal roofing work best in Charlotte NC?"
+        pageUrl={`${SITE_CONFIG.url}/metal-roofing-charlotte-nc`}
+        directAnswer="Five metal roofing systems perform well in Charlotte's Piedmont climate: standing seam (the architectural standard, 50-70 year lifespan), stone-coated steel (shingle-profile aesthetic with metal durability), screw-down exposed-fastener R-panel for outbuildings and barns, aluminum for coastal/lakefront corrosion resistance, and copper or zinc for historic and luxury applications. All can carry Class 4 impact ratings, PVDF Kynar 500 finishes, and 130-150+ MPH wind uplift engineering."
+        items={[
+          'Standing seam metal — 50-70 year architectural standard with concealed fasteners',
+          'Stone-coated steel — shingle-profile aesthetics with metal durability',
+          'Screw-down R-panel — budget-friendly exposed-fastener for outbuildings',
+          'Aluminum standing seam — corrosion resistance for LKN lakefront homes',
+          'Copper and zinc — historic restoration and luxury architectural projects',
+        ]}
+      />
       <MetalRoofingServiceSchema />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/metal-roofing-charlotte-nc`}

@@ -42,7 +42,7 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, WebPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema, FreeInspectionOfferSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
@@ -462,7 +462,30 @@ export default function CommercialRoofingCharlotteNCPage() {
           { name: 'Commercial Roofing Charlotte NC', url: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Commercial Roofing Charlotte NC | TPO, EPDM, Metal"
+        description="Commercial roofing Charlotte NC. TPO, EPDM, modified bitumen, standing seam metal. NDL warranties, Carlisle/JM/Firestone certified, 24/7 emergency service."
+        url={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Commercial Roofing Charlotte NC', url: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What commercial roofing systems does Best Roofing Now install in Charlotte?"
+        pageUrl={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
+        directAnswer="Six commercial roofing systems are installed and serviced across Charlotte: TPO single-ply thermoplastic for warehouses and retail, EPDM rubber for established flat roofs, modified bitumen for heavy-traffic and mechanical-concentrated applications, PVC membrane for restaurants and chemical-exposure sites, standing seam metal for durability-first projects, and silicone or acrylic restoration coatings as tear-off alternatives. Carlisle, GAF, Johns Manville, Firestone-Holcim, and Mule-Hide certifications unlock 20-30 year NDL warranties."
+        items={[
+          'TPO single-ply thermoplastic — warehouses, retail, office',
+          'EPDM rubber membrane — established flat roofs and re-covers',
+          'Modified bitumen — heavy-traffic and HVAC-concentrated rooftops',
+          'PVC membrane — restaurants, chemical plants, medical',
+          'Standing seam metal — long-life architectural commercial',
+          'Silicone and acrylic restoration coatings — tear-off alternatives',
+        ]}
+      />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
         pageName="Commercial Roofing Charlotte NC"

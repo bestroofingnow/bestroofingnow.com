@@ -28,6 +28,8 @@ import {
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
   SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -279,6 +281,22 @@ export default function HailDamageRoofRepairCharlotteNCPage() {
       />
       <VoiceSearchActionSchema />
       <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What are the most common signs of hail damage on a Charlotte roof?"
+        pageUrl={`${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`}
+        directAnswer="Eight common signs of hail damage on Charlotte roofs include dented or bruised shingles, missing granules appearing as dark spots, cracked or split shingles, dented gutters and downspouts, damaged roof vents and flashing, collateral dents on soft metals (AC condensers, window screens, gutter downspouts), fresh exposed asphalt mat, and loss of sealed laminate bond — typically 6 or more strikes per 10×10 test square triggers full replacement."
+        items={[
+          'Dented or bruised shingles visible on close inspection',
+          'Missing granules appearing as dark spots or bare patches',
+          'Cracked or split shingle tabs',
+          'Dents in gutters, downspouts, and metal flashing',
+          'Damaged or bent roof vents, caps, and ridge vents',
+          'Collateral soft-metal dents on AC fins, gutter downspouts, window screens',
+          'Fresh exposed asphalt mat where granules were knocked off',
+          'Broken seal bond between laminate layers on architectural shingles',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

@@ -27,7 +27,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import EstimateButton from '@/components/estimate/EstimateButton';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, WebPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema, FreeInspectionOfferSchema } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -374,7 +374,32 @@ export default function RoofingCharlotteNCPage() {
           { name: 'Roofing Charlotte NC', url: `${SITE_CONFIG.url}/roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Roofing Charlotte NC | #1 Rated 2026"
+        description="Roofing Charlotte NC -- #1 rated roofing company with 5.0 Google rating, BBB A+, veteran-owned. 500+ roofs completed in 2026."
+        url={`${SITE_CONFIG.url}/roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Charlotte NC', url: `${SITE_CONFIG.url}/roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services does Best Roofing Now provide in Charlotte NC?"
+        pageUrl={`${SITE_CONFIG.url}/roofing-charlotte-nc`}
+        directAnswer="Best Roofing Now provides eight core services across Charlotte: complete roof replacement with GAF, CertainTeed, and Owens Corning certifications; same-day leak and shingle repair; 24/7 emergency response within 2-4 hours across Mecklenburg; hail and wind storm damage restoration with Xactimate claim support; free roof inspections with photo reports; metal and flat commercial roofing; gutter installation and repair; and full insurance claim advocacy."
+        items={[
+          'Complete roof replacement (GAF Master Elite, CertainTeed SELECT, OC Platinum certified)',
+          'Same-day leak repair and shingle replacement',
+          '24/7 emergency response across Mecklenburg in 2-4 hours',
+          'Hail and wind storm damage restoration with Xactimate claim support',
+          'Free roof inspections with photo-documented reports',
+          'Residential shingle, metal, tile, slate, and synthetic roofing',
+          'Commercial TPO, EPDM, modified bitumen, and standing seam metal',
+          'Gutter installation, repair, and insurance claim advocacy',
+        ]}
+      />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/roofing-charlotte-nc`}
         pageName="Roofing Charlotte NC"

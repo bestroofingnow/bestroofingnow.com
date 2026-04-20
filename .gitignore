@@ -46,3 +46,5 @@ next-env.d.ts
 # GSC reports (keep directory, ignore contents)
 /reports/*
 !/reports/.gitkeep
+
+.vercel
