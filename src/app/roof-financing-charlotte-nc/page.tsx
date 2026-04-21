@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { EnhancifyBanner } from '@/components/ui/EnhancifyBanner';
 import { EnhancifyCalculator } from '@/components/ui/EnhancifyCalculator';
@@ -227,7 +236,37 @@ export default function RoofFinancingCharlotteNCPage() {
           { name: 'Roof Financing Charlotte NC', url: `${SITE_CONFIG.url}/roof-financing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Roof Financing Charlotte NC | 0% Interest Options"
+        description="Roof financing Charlotte NC. Same-day approval, 0% interest promotional plans, terms from 18-180 months via Enhancify and Service Finance Company. FICO 600+."
+        url={`${SITE_CONFIG.url}/roof-financing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Financing Charlotte NC', url: `${SITE_CONFIG.url}/roof-financing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-financing-charlotte-nc`}
+        pageName="Roof Financing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="How can Charlotte homeowners finance a new roof?"
+        pageUrl={`${SITE_CONFIG.url}/roof-financing-charlotte-nc`}
+        directAnswer="Six financing paths work for most Charlotte roof projects: 0% promotional plans (typically 12-24 months same-as-cash through Enhancify and Service Finance Company, often approved same-day with FICO 650+), extended installment plans (60-180 months with fixed APR for predictable monthly payments as low as $99/month on a $15K project), homeowner insurance claim assistance (hail and wind damage typically covered minus deductible), home equity line of credit (HELOC — lowest rates at 7-10% APR, bank-originated), FHA 203(k) or Fannie Mae HomeStyle renovation loans (rolled into a purchase mortgage), and PACE programs where available (property-assessed clean energy financing for energy-efficient roof upgrades)."
+        items={[
+          '0% promotional same-as-cash — 12-24 months, Enhancify and Service Finance Company',
+          'Extended installment — 60-180 months fixed APR, $99/mo start',
+          'Homeowner insurance claims — hail and wind covered minus deductible',
+          'Home equity line of credit (HELOC) — 7-10% APR, lowest rates',
+          'FHA 203(k) and Fannie Mae HomeStyle renovation loans',
+          'PACE programs — property-assessed clean energy for efficiency upgrades',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,8 +292,12 @@ export default function RoofFinancingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Get a new roof today with affordable monthly payments as low as $99/month
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Don't let budget concerns delay protecting your home. Best Roofing Now offers flexible financing options with 0% interest promotions, easy approval, and terms that fit your budget. Apply in minutes and get approved the same day.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Six financing paths work for most Charlotte roof projects: 0% promotional same-as-cash plans via Enhancify
+              and Service Finance Company (same-day approval at FICO 650+), extended installment terms up to 180 months
+              with payments starting around $99/month, homeowner insurance coverage for hail and wind claims, home equity
+              lines of credit at 7-10% APR, FHA 203(k) / Fannie Mae HomeStyle renovation loans for purchases, and PACE
+              programs for qualifying energy-efficient upgrades. Apply in under 5 minutes with no impact to credit score.
             </p>
 
             {/* CTA Buttons */}

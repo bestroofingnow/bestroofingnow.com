@@ -23,6 +23,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -222,10 +227,32 @@ export default function OfficeBuildingRoofReplacementVsCoatingPage() {
   description: 'When is replacement a waste of money? Cost analysis for Charlotte office buildings.',
   slug: 'office-building-roof-replacement-vs-coating-charlotte-nc',
   datePublished: '2026-01-27',
-  dateModified: '2026-01-27',
+  dateModified: '2026-04-21',
         }}
       />
       <FAQSchema faqs={commercialFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Office Building Roof Replacement vs Coating Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="When does a Charlotte office building need replacement vs coating?"
+        pageUrl={pageUrl}
+        directAnswer="Seven criteria separate the two paths for Charlotte office roofs: membrane age (coat if under 70% of expected service life, replace above), moisture survey results (coat if under 25% wet insulation, replace above), leak frequency (coat with 2 or fewer repairs per year, replace at 3+ active leaks or 5+ repairs), substrate condition (coat if deck and cover boards are intact, replace if soaked or delaminated), warranty status (NDL-warranted roofs need manufacturer-approved coating products), building envelope scope (coat if HVAC and parapets are sound, replace if major flashing rework is needed), and budget window (coating runs $1.50-3.50 per sq ft at 20-40% of replacement cost, which averages $7-12 per sq ft for a 20,000 sq ft office roof)."
+        items={[
+          'Membrane age — coat if under 70% of service life',
+          'Moisture survey — coat if under 25% wet insulation',
+          'Leak frequency — coat at 2 or fewer repairs per year',
+          'Substrate condition — coat only if deck and cover boards are sound',
+          'NDL warranty — needs manufacturer-approved coating products',
+          'Building envelope — coat if HVAC and parapets are sound',
+          'Budget — coating 20-40% of replacement, $1.50-3.50 vs $7-12 per sq ft',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
@@ -257,10 +284,13 @@ export default function OfficeBuildingRoofReplacementVsCoatingPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               When Commercial Roof Coating Makes More Sense Than Replacement
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Before spending $200,000+ on a new roof for your Charlotte office building,
-  consider this: coating could extend your roof&apos;s life 10-15 years at 20-40% of the cost.
-              Here&apos;s how to know which option is right for your building.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Coating a sound Charlotte office roof typically runs $1.50-3.50 per sq ft and extends life 10-20 years —
+              20-40% of a full tear-off replacement at $7-12 per sq ft on a 20,000 sq ft building. The decision turns on
+              seven criteria: membrane age relative to service life, infrared moisture survey results, leak frequency,
+              substrate condition, NDL warranty status, building envelope scope, and budget window. Best Roofing Now
+              starts every project with an infrared moisture scan and 2-4 core cuts so the recommendation is defensible
+              to ownership and CFOs. Duke Energy cool-roof rebates may apply to acrylic or silicone restorations.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

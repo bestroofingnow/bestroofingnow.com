@@ -17,7 +17,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -222,7 +231,37 @@ export default function GAFRoofingCharlotteNCPage() {
           { name: 'GAF Roofing Charlotte NC', url: `${SITE_CONFIG.url}/gaf-roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="GAF Roofing Charlotte NC | Master Elite Contractor"
+        description="GAF roofing Charlotte NC. Timberline HDZ, Grand Sequoia, Camelot II, Glenwood installed by GAF Master Elite Contractor. Golden Pledge 50-year non-prorated warranty."
+        url={`${SITE_CONFIG.url}/gaf-roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'GAF Roofing Charlotte NC', url: `${SITE_CONFIG.url}/gaf-roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gaf-roofing-charlotte-nc`}
+        pageName="GAF Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="Which GAF shingle lines are installed in Charlotte NC?"
+        pageUrl={`${SITE_CONFIG.url}/gaf-roofing-charlotte-nc`}
+        directAnswer="Six GAF product tiers fit Charlotte homes: Timberline HDZ (the flagship architectural shingle with LayerLock and 130 MPH wind rating, $5.50-8.50 per sq ft installed), Timberline UHDZ (thicker dimensional with Dual Shadow Line, $6.50-9.50 per sq ft), Timberline AS II Class 4 (impact-resistant for 10-30% NC insurance discount, $7-10 per sq ft), Grand Sequoia (slate-look luxury, $8.50-11 per sq ft), Camelot II (classic slate aesthetic, $9-12 per sq ft), and Glenwood (hand-split shake profile, $9.50-13 per sq ft). GAF Master Elite Contractors — which Best Roofing Now holds — represent roughly the top 2% of GAF-certified roofers nationwide and unlock the Golden Pledge 50-year non-prorated warranty."
+        items={[
+          'Timberline HDZ — flagship, LayerLock, 130 MPH, $5.50-8.50 per sq ft',
+          'Timberline UHDZ — thicker dimensional, Dual Shadow Line, $6.50-9.50 per sq ft',
+          'Timberline AS II Class 4 — impact-resistant, 10-30% insurance discount',
+          'Grand Sequoia — slate-look luxury designer, $8.50-11 per sq ft',
+          'Camelot II — classic slate aesthetic, SBS-modified, $9-12 per sq ft',
+          'Glenwood — hand-split shake profile, four-layer, $9.50-13 per sq ft',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -248,10 +287,12 @@ export default function GAFRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Factory-Certified GAF contractor with Golden Pledge warranty coverage
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is your trusted GAF Factory-Certified roofing contractor in Charlotte. We install
-              America's #1 selling shingles - GAF Timberline - with the industry's strongest warranty protection.
-              Get the peace of mind that comes with professional installation and 50-year material coverage.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now is a GAF Master Elite Contractor — a certification held by roughly the top 2% of GAF
+              roofers in North America — which unlocks the Golden Pledge 50-year non-prorated warranty. We install
+              Timberline HDZ with LayerLock (the best-selling architectural shingle in the country), Timberline UHDZ
+              Dual Shadow Line, Timberline AS II Class 4 (10-30% NC insurance discount), and the Designer tier:
+              Grand Sequoia, Camelot II, and Glenwood. 2026 Charlotte pricing runs $5.50-13 per sq ft depending on tier.
             </p>
 
             {/* CTA Buttons */}
