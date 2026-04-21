@@ -127,9 +127,9 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `tpo-vs-epdm-roofing-charlotte-nc` (524) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8-factor TPO vs EPDM decision matrix: SRI / cost / seam chemistry / life / chemical resistance / impact / NDL warranties / Duke Energy rebate) + FreeInspection, hero `.speakable-intro` with 2026 installed pricing and manufacturer list, bumped dateModified.
 - [x] `warehouse-roof-repair-vs-replacement-charlotte-nc` (527) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (7-criteria repair-vs-replace matrix: age / moisture % / leak frequency / damage area / substrate / NDL warranty / coating ROI) + FreeInspection, hero `.speakable-intro` naming I-85 / Steele Creek / URP / Westinghouse corridors with 2026 pricing, bumped dateModified.
 - [x] `cedar-shake-roofing-charlotte-nc` (537) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (5 CSSB grades + synthetic alternatives) + FreeInspection, hero `.speakable-intro` with realistic Piedmont 25-40yr lifespan (honest vs PNW norms) + Historic Matthews/Davidson/Dilworth/Myers Park/Eastover/LKN neighborhoods.
-- [ ] `copper-roofing-charlotte-nc` (537)
-- [ ] `what-to-do-roof-leak-charlotte-nc` (552)
-- [ ] `roofing-waverly-charlotte-nc` (553)
+- [x] `copper-roofing-charlotte-nc` (537) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (6 copper applications: full standing seam / flat-seam / bay-turret / chimney flashing / half-round gutters / architectural accents) + FreeInspection, hero `.speakable-intro` with penny-bright-to-verdigris patina timeline + 16/20/24 oz gauges + 7 luxury neighborhoods.
+- [x] `what-to-do-roof-leak-charlotte-nc` (552) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (6-step emergency response: contain / photograph / trace upstream / cut power / call roofer) + FreeInspection, hero `.speakable-intro` with 3-10 ft leak-travel fact + 1-4hr Mecklenburg response, bumped dateModified.
+- [x] `roofing-waverly-charlotte-nc` (553) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (5 common Waverly services: builder-grade replacement / storm claims / inspections / HOA coord / gutter upsize) + FreeInspection, hero `.speakable-intro` with 2010s builder-grade 12-15yr wear framing + Providence Rd location context. Page is noindex but AEO still valuable for LLM.
 - [ ] `roofing-rea-farms-charlotte-nc` (554)
 - [ ] `metal-roof-vs-shingles-charlotte-nc` (555)
 - [ ] ... +120 more pages

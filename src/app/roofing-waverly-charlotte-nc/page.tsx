@@ -24,9 +24,13 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
+  WebPageSchema,
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -220,6 +224,15 @@ export default function RoofingWaverlyCharlotteNCPage() {
           { name: 'Roofing Waverly Charlotte NC', url: `${SITE_CONFIG.url}/roofing-waverly-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Roofing Waverly Charlotte NC | South Charlotte Luxury"
+        description="Roofing contractor in Waverly, South Charlotte NC. Roof replacement, repair, and storm damage for 2010s luxury homes. BBB A+ rated, free estimates."
+        url={`${SITE_CONFIG.url}/roofing-waverly-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Waverly Charlotte NC', url: `${SITE_CONFIG.url}/roofing-waverly-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
@@ -228,6 +241,20 @@ export default function RoofingWaverlyCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services are common in Waverly, South Charlotte NC?"
+        pageUrl={`${SITE_CONFIG.url}/roofing-waverly-charlotte-nc`}
+        directAnswer="Five service categories dominate Waverly, the 2010s-era luxury mixed-use community off Providence Road: architectural and designer asphalt replacements as original builder-grade shingles hit their 12-15 year wear window, hail and wind storm damage insurance claims (Waverly sits in the Piedmont hail belt), proactive roof inspections with photo reports for homes approaching warranty handoff, HOA color-compliant shingle and metal accent coordination, and gutter upgrades from 5-inch to 6-inch+ oversized systems for heavy Piedmont rain intensity."
+        items={[
+          'Architectural and designer shingle replacement (builder-grade 12-15 yr wear)',
+          'Hail and wind storm damage insurance claim support',
+          'Proactive roof inspections with photo reports',
+          'HOA color-compliant shingle and metal accent coordination',
+          'Gutter upsize from 5" to 6"+ for Piedmont rainfall intensity',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,10 +280,13 @@ export default function RoofingWaverlyCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Expert Roofing for Waverly&apos;s Newer Luxury Homes
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now serves the Waverly community in South Charlotte with expert roofing
-              for newer luxury homes built in the 2010s. From storm damage repairs to proactive
-              maintenance and full replacements, we deliver the quality your Waverly home deserves.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Waverly is the 2010s-era luxury mixed-use community off Providence Road in South Charlotte — the original
+              builder-grade architectural shingles on many homes are now hitting their 12-15 year wear window, making
+              this a high-volume replacement zone. Best Roofing Now handles HOA color-compliant shingle and metal accent
+              coordination, hail and wind insurance claims (Piedmont hail belt), proactive inspections with photo reports,
+              and 5-inch to 6-inch gutter upsizes for Piedmont rainfall intensity. BBB A+ rated, veteran-owned,
+              {SITE_CONFIG.roofsInstalled}+ roofs completed.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

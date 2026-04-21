@@ -21,6 +21,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -216,10 +221,31 @@ export default function WhatToDoRoofLeakPage() {
   description: 'Emergency step-by-step guide for handling roof leaks.',
   slug: 'what-to-do-roof-leak-charlotte-nc',
   datePublished: '2026-01-27',
-  dateModified: '2026-01-27',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={leakFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="What to Do When You Find a Roof Leak in Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What are the first 6 steps when a Charlotte homeowner finds a roof leak?"
+        pageUrl={pageUrl}
+        directAnswer="Six immediate actions minimize water damage and preserve an insurance claim: move valuables and electronics out of the drip path, contain the water with a bucket and towels and drill a small hole in a bulging ceiling to relieve pressure, photograph and video the active drip and all affected materials with timestamps, trace the leak upstream (water typically enters 3-10 feet uphill of the interior drip point), turn off electricity to any affected circuit, and call a licensed roofer for emergency tarp service — Best Roofing Now responds in 1-4 hours across Mecklenburg. Document everything for insurance; do not sign repair contracts offered by door-knocking contractors during an active leak."
+        items={[
+          'Move valuables and electronics away from the drip path',
+          'Contain water with buckets and relieve bulging ceilings with a small drain hole',
+          'Photograph and video everything with timestamps',
+          'Trace the leak upstream — water travels 3-10 ft before dripping',
+          'Turn off electricity to any water-affected circuit',
+          'Call a licensed roofer for emergency tarp (1-4 hr Mecklenburg response)',
+        ]}
+      />
 
       {/* Hero Section - Emergency Style */}
       <section className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white py-16 md:py-24 overflow-hidden">
@@ -248,9 +274,13 @@ export default function WhatToDoRoofLeakPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Charlotte NC Emergency Response Guide
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Found water dripping from your ceiling? Don&apos;t panic. Follow these steps to
-              minimize damage while help is on the way.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Six immediate actions minimize water damage and protect any future insurance claim: move valuables and
+              electronics out of the drip path, contain the water with buckets, relieve any bulging ceiling with a small
+              drain hole, photograph and video everything with timestamps, trace the leak upstream (water typically
+              enters 3-10 feet above the interior drip point), and turn off affected electrical circuits. Best Roofing
+              Now responds in 1-4 hours across Mecklenburg with emergency 12 mil tarp service and insurance-grade
+              documentation.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

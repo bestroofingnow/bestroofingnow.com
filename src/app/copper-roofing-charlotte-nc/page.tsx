@@ -23,8 +23,12 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
+  WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -209,6 +213,16 @@ export default function CopperRoofingCharlotteNCPage() {
           { name: 'Copper Roofing Charlotte NC', url: `${SITE_CONFIG.url}/copper-roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Copper Roofing Charlotte NC | Standing Seam & Accents"
+        description="Copper roofing Charlotte NC. Standing seam copper, flat-seam, bay windows, turrets, and architectural accents. 75-100+ year lifespan with natural patina development."
+        url={`${SITE_CONFIG.url}/copper-roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Metal Roofing', url: `${SITE_CONFIG.url}/metal-roofing-charlotte-nc` },
+          { name: 'Copper Roofing Charlotte NC', url: `${SITE_CONFIG.url}/copper-roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/copper-roofing-charlotte-nc`}
@@ -216,6 +230,21 @@ export default function CopperRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What copper roofing applications are common on Charlotte luxury homes?"
+        pageUrl={`${SITE_CONFIG.url}/copper-roofing-charlotte-nc`}
+        directAnswer="Six copper applications dominate Charlotte luxury and historic work: full standing seam copper roofs (75-100+ year life, $25-45+ per sq ft installed), flat-seam copper for low-slope entry overhangs and dormers, bay-window and turret cladding, copper chimney chase covers and cricket flashing, copper gutters and half-round downspouts paired with shingle or slate roofs, and copper finials or cupola accents. All develop a natural patina from penny-bright to brown to verdigris green over 10-30 years. 16 oz and 20 oz soft copper are standard, with 24 oz for high-exposure details."
+        items={[
+          'Full standing seam copper roof — 75-100+ year lifespan',
+          'Flat-seam copper — low-slope entries, dormers, bay windows',
+          'Bay window and turret cladding — architectural focal points',
+          'Chimney chase covers, cricket flashing, saddle details',
+          'Half-round copper gutters and downspouts — slate and shingle pairings',
+          'Finials, cupola caps, and architectural accents',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-amber-800 via-amber-900 to-amber-950 text-white py-16 md:py-24 overflow-hidden">
@@ -235,10 +264,13 @@ export default function CopperRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Timeless elegance with 100+ year lifespan
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in premium copper roofing for Charlotte&apos;s finest homes.
-              From full copper roofs to elegant accents, our certified craftsmen deliver exceptional quality
-              that enhances your home&apos;s beauty and value for generations.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Full standing seam copper runs $25-45+ per sq ft installed in Charlotte, with 75-100+ year service life and
+              natural patina that evolves from penny-bright to chocolate brown to verdigris green over 10-30 years. More
+              common applications are flat-seam copper on bay windows, dormers, entry overhangs, turret caps, chimney
+              cricket flashing, and half-round copper gutters paired with slate or designer asphalt roofs. Best Roofing
+              Now hand-solders 16 oz and 20 oz soft copper across Myers Park, Eastover, Foxcroft, Dilworth, Fourth Ward,
+              Elizabeth, and lakefront Lake Norman custom builds.
             </p>
 
             {/* CTA Buttons */}
