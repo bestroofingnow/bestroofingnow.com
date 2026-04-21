@@ -26,6 +26,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -232,10 +237,33 @@ export default function DIYRoofMaintenanceChecklistPage() {
   description: 'Complete guide to safe DIY roof maintenance for Charlotte homes.',
   slug: 'diy-roof-maintenance-checklist-charlotte-nc',
   datePublished: '2026-01-27',
-  dateModified: '2026-01-27',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={maintenanceFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="DIY Roof Maintenance Checklist Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What DIY roof maintenance tasks can a Charlotte homeowner safely do twice a year?"
+        pageUrl={pageUrl}
+        directAnswer="Eight ground-level or attic-based tasks are safe for most Charlotte homeowners without walking the roof: visual scan with binoculars for missing shingles or lifted flashing after every major wind/hail event, gutter and downspout cleanout twice a year (spring and fall) in tree-canopy neighborhoods, attic check for daylight, wet insulation, or musty smells, attic-vent and soffit-intake clearance confirmation, tree-limb trimming to stay 10 feet off the roof, moss and algae observation on north-facing slopes, sealant and caulking inspection on accessible wall flashings, and professional inspection scheduling every 2-3 years. Never walk a wet, steep, or two-story roof — defer to a licensed contractor."
+        items={[
+          'Binocular visual scan after every major wind or hail event',
+          'Gutter and downspout cleanout spring and fall',
+          'Attic check for daylight, wet insulation, and musty odors',
+          'Confirm attic vents and soffit intake are clear',
+          'Trim tree limbs to 10 ft off the roofline',
+          'Inspect north-facing slopes for moss and algae',
+          'Visually inspect sealant and caulk on wall flashings',
+          'Schedule professional inspection every 2-3 years (always free with us)',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -264,10 +292,13 @@ export default function DIYRoofMaintenanceChecklistPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Simple, Safe Tasks to Keep Your Roof in Top Condition
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Learn what you can safely inspect and maintain yourself, and when it&apos;s time to call
-              a professional. This guide helps Charlotte homeowners extend their roof&apos;s life
-              while staying safe.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Most Charlotte roofs can be kept in great shape with eight ground-level or attic-based DIY tasks:
+              binocular post-storm visual scan, spring and fall gutter cleanout, attic check for daylight and wet
+              insulation, soffit and ridge-vent clearance, 10-foot tree-limb trimming, north-slope moss and algae
+              inspection, caulking and sealant review, and professional inspection every 2-3 years. Never walk a wet,
+              steep, or two-story roof — fall accidents are the #1 DIY hazard. Best Roofing Now offers free inspections
+              for anything that needs eyes-on-the-roof work.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

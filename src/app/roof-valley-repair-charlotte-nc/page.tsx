@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -233,7 +242,35 @@ export default function RoofValleyRepairCharlotteNCPage() {
           { name: 'Roof Valley Repair Charlotte NC', url: `${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Roof Valley Repair Charlotte NC | Open, Closed-Cut, Woven"
+        description="Roof valley repair Charlotte NC. Open-metal, closed-cut, woven, and California valley installation. Ice shield and W-valley upgrades. BBB A+ licensed."
+        url={`${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Valley Repair Charlotte NC', url: `${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc`}
+        pageName="Roof Valley Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What roof valley styles are used on Charlotte homes?"
+        pageUrl={`${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc`}
+        directAnswer="Four valley styles fit Charlotte roofs: open-metal valley (exposed W-profile or flat aluminum, copper, or painted steel pan with clip fasteners — best for heavy debris or long valley runs), closed-cut valley (shingles lapped one side over the other — most common on architectural shingle jobs and cheapest to install), woven valley (shingles interlaced from both slopes — older technique, poor performance with architectural laminates), and California-cut valley (last shingle cut along a diagonal chalk line — a code-acceptable variant of closed-cut). Failure modes include debris dams, missing ice-and-water shield, nails too close to the centerline, and undersized 12-inch pan width."
+        items={[
+          'Open-metal valley — exposed W-profile aluminum / copper / painted steel',
+          'Closed-cut valley — most common on architectural shingles, economical',
+          'Woven valley — legacy technique, poor fit for modern laminate shingles',
+          'California-cut valley — diagonal chalk-line variant of closed-cut',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -259,10 +296,13 @@ export default function RoofValleyRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Stop valley leaks with expert repair and metal valley installation
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Roof valleys are one of the most common leak sources on Charlotte homes. Best Roofing Now
-              specializes in valley repair, replacement, and proper installation to permanently stop leaks
-              and protect your home from water damage.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Valleys channel the heaviest water flow on any roof — a single clogged or improperly installed valley can
+              shed tens of thousands of gallons per year into one concentrated line of shingles. Charlotte homes use four
+              valley styles: open-metal W-profile (best for debris and long runs), closed-cut (most common with
+              architectural shingles), woven (legacy), and California-cut. Best Roofing Now installs ice-and-water shield
+              the full valley width, holds nails 6+ inches off centerline, and uses 14-inch minimum pan widths — details
+              that eliminate the top three valley leak causes. Free inspections with photo reports.
             </p>
 
             {/* CTA Buttons */}

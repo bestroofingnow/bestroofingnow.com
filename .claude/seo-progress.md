@@ -133,7 +133,10 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `roofing-rea-farms-charlotte-nc` (554) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (6 service patterns for 2005-2018 builder-grade community) + FreeInspection, hero `.speakable-intro` with Providence/Rea Road location + 15-20yr wear window + NC IRC §R806 NFVA + all 3 residential certs.
 - [x] `metal-roof-vs-shingles-charlotte-nc` (555) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8-factor metal vs shingle comparison: cost/life/TCO/hail/wind/cool-roof/noise/insurance) + FreeInspection, hero `.speakable-intro` with 2026 installed pricing + SRI + Class 4 discount, bumped dateModified.
 - [x] `chimney-flashing-repair-charlotte-nc` (558) — 2026-04-20 — added full AEO bundle (WebPage+AISearch+Voice+Speakable) + FeaturedSnippet (8 chimney-leak failure modes including IRC R1003.20 cricket code) + FreeInspection, hero `.speakable-intro` with 2026 per-scope pricing + historic chimney neighborhoods + aluminum/lead/copper materials.
-- [ ] ... +117 more pages
+- [x] `roof-coating-charlotte-nc` (573) — 2026-04-20 — added full AEO bundle (had only Breadcrumb+FAQ) + FeaturedSnippet (5 coating systems: silicone / acrylic / SPF / asphalt emulsion / hybrid) + FreeInspection + `.speakable-intro` with 2026 per-sq-ft pricing + GAF Unisil / Henry Dura-Brite / Carlisle CCW-LM / Gaco authorizations + Duke Energy rebate.
+- [x] `roof-valley-repair-charlotte-nc` (574) — 2026-04-20 — added full AEO bundle (had only Breadcrumb+FAQ) + FeaturedSnippet (4 valley styles: open-metal / closed-cut / woven / California-cut) + FreeInspection + `.speakable-intro` with W-profile width + ice-and-water shield + nail-offset best-practice details.
+- [x] `diy-roof-maintenance-checklist-charlotte-nc` (578) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8 ground-level DIY tasks: binocular scan / gutter clean / attic check / ventilation clear / tree trim / moss watch / sealant review / pro inspection) + FreeInspection + `.speakable-intro` with fall-safety warning, bumped dateModified.
+- [ ] ... +114 more pages
 
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19

@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -206,7 +215,36 @@ export default function RoofCoatingCharlotteNCPage() {
           { name: 'Roof Coating Charlotte NC', url: `${SITE_CONFIG.url}/roof-coating-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Roof Coating Charlotte NC | Silicone, Acrylic, SPF"
+        description="Roof coating Charlotte NC. Silicone, acrylic, SPF, and asphalt-emulsion systems. GAF Unisil, Henry Dura-Brite, Carlisle CCW-LM. 10-20 year NDL warranties."
+        url={`${SITE_CONFIG.url}/roof-coating-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Coating Charlotte NC', url: `${SITE_CONFIG.url}/roof-coating-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-coating-charlotte-nc`}
+        pageName="Roof Coating Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What roof coating systems are installed on Charlotte commercial roofs?"
+        pageUrl={`${SITE_CONFIG.url}/roof-coating-charlotte-nc`}
+        directAnswer="Five coating systems extend commercial roof life 10-20+ years in Charlotte: silicone (ponding-water tolerant, $2.00-3.50 per sq ft installed, Henry Dura-Brite / GAF Unisil / Gaco S20), acrylic (budget-friendly cool-roof with 85-90 SRI, $1.50-2.50 per sq ft, ideal in the Piedmont when ponding is minimal), SPF spray foam (R-6.5 per inch insulation plus membrane in one pass, $3.50-6.00 per sq ft), asphalt emulsion (low-cost tar-roof repair, $1.00-1.80 per sq ft), and hybrid silicone-over-asphalt restoration. All require a moisture survey before application and extend life at 30-50% of tear-off replacement cost."
+        items={[
+          'Silicone — ponding tolerant, Henry/GAF/Gaco, $2.00-3.50 per sq ft',
+          'Acrylic — cool-roof 85-90 SRI, best when ponding is minimal, $1.50-2.50 per sq ft',
+          'SPF spray foam — R-6.5 per inch + membrane in one pass, $3.50-6.00 per sq ft',
+          'Asphalt emulsion — budget tar-roof refresh, $1.00-1.80 per sq ft',
+          'Hybrid silicone-over-asphalt — restoration of aged BUR and modified bitumen',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -232,10 +270,13 @@ export default function RoofCoatingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Extend your roof life by 10-15 years with professional roof coatings
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides expert silicone and acrylic roof coating services for commercial and residential
-              properties throughout Charlotte. Protect your investment, reduce energy costs, and avoid costly
-              replacement with our premium coating systems.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Professional roof coatings extend commercial and flat-roof life 10-20+ years at 30-50% of tear-off
+              replacement cost. 2026 Charlotte pricing runs $1.50-2.50 per sq ft for acrylic cool-roof systems,
+              $2.00-3.50 for ponding-tolerant silicone, and $3.50-6.00 for SPF spray foam. Best Roofing Now is authorized
+              to install GAF Unisil, Henry Dura-Brite, Carlisle CCW-LM, and Gaco S20 systems with 10-20 year NDL
+              warranties. Every project starts with an infrared moisture survey to verify substrate and document
+              Duke Energy cool-roof rebate eligibility.
             </p>
 
             {/* CTA Buttons */}
