@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -244,7 +253,37 @@ export default function TreeDamageRoofRepairCharlotteNCPage() {
           { name: 'Tree Damage Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Tree Damage Roof Repair Charlotte NC | 24/7 Emergency"
+        description="Tree damage roof repair Charlotte NC. 24/7 emergency tarping, tree removal coordination, structural decking replacement, and full insurance claim handling."
+        url={`${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Tree Damage Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc`}
+        pageName="Tree Damage Roof Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What happens after a tree falls on a Charlotte home's roof?"
+        pageUrl={`${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc`}
+        directAnswer="Six-step process from emergency call to final repair: safety assessment and evacuation of damaged rooms (structural compromise plus downed power line risk), tree removal by a licensed arborist coordinating with the roofing crew, emergency 12 mil tarp installation within 1-4 hours to stop secondary water damage, structural assessment of rafters and decking with photo-documented claim package, homeowner insurance claim filing under dwelling coverage with Xactimate-format scope, and full restoration including rafter sistering, decking replacement, underlayment, shingle match, and interior drywall if needed. Best Roofing Now handles the roofing scope and coordinates the tree-removal and interior-repair trades for a single point of accountability."
+        items={[
+          'Safety assessment and evacuation of compromised rooms',
+          'Licensed arborist tree removal coordinated with roof crew',
+          'Emergency 12 mil tarp within 1-4 hours across Mecklenburg',
+          'Structural assessment — rafters and decking, photo-documented',
+          'Insurance claim filing in Xactimate format under dwelling coverage',
+          'Full restoration — rafter sistering, decking, underlayment, shingle match, interior repair',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -270,10 +309,13 @@ export default function TreeDamageRoofRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Tree Fell on Your Roof? We Handle Everything - Emergency to Restoration
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Charlotte storms can bring down trees without warning. When a tree damages your roof,
-  Best Roofing Now provides complete restoration from emergency tarping to final repairs.
-              We work directly with your insurance to make the process stress-free.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Charlotte&apos;s mature oak, loblolly pine, sweetgum, and tulip poplar canopy drops limbs and entire trees
+              in every major wind event — and tropical remnants like Florence (2018), Isaias (2020), and Helene (2024)
+              have produced multi-hundred-home tree-damage spikes in Mecklenburg. Best Roofing Now runs a six-step
+              response: safety assessment, arborist-coordinated tree removal, emergency 12 mil tarp within 1-4 hours,
+              photo-documented structural claim package, Xactimate-format dwelling-coverage filing, and full rafter /
+              decking / shingle restoration. Single point of accountability, direct insurance coordination.
             </p>
 
             {/* CTA Buttons */}

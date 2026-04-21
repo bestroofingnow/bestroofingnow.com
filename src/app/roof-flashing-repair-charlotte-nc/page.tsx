@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -243,7 +252,38 @@ export default function RoofFlashingRepairCharlotteNCPage() {
           { name: 'Roof Flashing Repair Charlotte NC', url: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Roof Flashing Repair Charlotte NC | Step, Counter, Apron, Valley"
+        description="Roof flashing repair Charlotte NC. Step, counter, apron, valley, skylight, and vent-pipe flashing. Aluminum, lead, and copper materials. BBB A+ licensed contractor."
+        url={`${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Flashing Repair Charlotte NC', url: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`}
+        pageName="Roof Flashing Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="Which roof flashing types commonly leak on Charlotte homes?"
+        pageUrl={`${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`}
+        directAnswer="Seven flashing details cause most Charlotte roof leaks: step flashing at sidewall-to-roof intersections, counter-flashing cut into masonry reglets, apron (head) flashing at the top of vertical walls, valley flashing where two slopes meet, skylight flashing kits that age faster than the surrounding shingles, vent-pipe boots with EPDM collars that crack at 8-12 years, and drip-edge flashing at eaves and rakes. Aluminum is the cost-effective default, lead-coated copper performs best on historic chimneys, and hand-soldered copper is the luxury choice for 75+ year service life."
+        items={[
+          'Step flashing at sidewall-to-roof intersections',
+          'Counter-flashing cut into masonry reglets',
+          'Apron (head) flashing at vertical wall transitions',
+          'Valley flashing where two slopes meet',
+          'Skylight flashing kits — VELUX, Wasco, Fakro',
+          'Vent-pipe boots with EPDM collars (fail at 8-12 yr)',
+          'Drip-edge flashing at eaves and rakes',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -269,10 +309,13 @@ export default function RoofFlashingRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Expert Flashing Repair for Chimneys, Vents, Skylights & More
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Most roof leaks originate at flashing points - where your roof meets walls, chimneys, vents,
-  and skylights. Best Roofing Now specializes in flashing repair and replacement to stop leaks
-              permanently. Free inspections to identify and fix the problem.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Over 80% of non-storm roof leaks in Charlotte start at flashing — step, counter, apron, valley, skylight,
+              vent-pipe boots, and drip edge. EPDM pipe-boot collars typically crack at 8-12 years; step flashing that
+              was caulked rather than embedded between shingle courses fails within a decade; drip edge that was omitted
+              on older Charlotte homes causes slow fascia rot. Best Roofing Now uses aluminum as the cost-effective
+              default, lead-coated copper on historic chimneys, and hand-soldered copper pans for luxury work across
+              Myers Park, Dilworth, Fourth Ward, Matthews, and Davidson.
             </p>
 
             {/* CTA Buttons */}

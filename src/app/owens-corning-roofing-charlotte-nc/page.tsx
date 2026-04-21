@@ -18,7 +18,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -220,7 +229,36 @@ export default function OwensCorningRoofingCharlotteNCPage() {
           { name: 'Owens Corning Roofing Charlotte NC', url: `${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Owens Corning Roofing Charlotte NC | Platinum Preferred"
+        description="Owens Corning roofing Charlotte NC. Duration, TruDefinition, Oakridge, and Berkshire shingle lines installed by Platinum Preferred Contractor. 50-year Platinum Protection warranty."
+        url={`${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Owens Corning Roofing Charlotte NC', url: `${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`}
+        pageName="Owens Corning Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="Which Owens Corning shingle lines are installed in Charlotte NC?"
+        pageUrl={`${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`}
+        directAnswer="Five Owens Corning shingle tiers fit Charlotte homes: Oakridge (three-tab replacement, entry architectural at $4.50-6.00 per sq ft installed), TruDefinition Duration (flagship architectural with SureNail Technology and 130 MPH wind rating, $6-9 per sq ft), TruDefinition Duration Storm (Class 4 impact-resistant for 10-30% NC insurance discount, $7-10 per sq ft), TruDefinition Duration Designer (enhanced color blends, $7.50-10 per sq ft), and Berkshire Collection (luxury polymer-modified slate-look, $9-12 per sq ft). Platinum Preferred Contractors — which Best Roofing Now holds — unlock the 50-year Platinum Protection limited warranty with non-prorated coverage."
+        items={[
+          'Oakridge — entry architectural, $4.50-6.00 per sq ft',
+          'TruDefinition Duration — flagship, SureNail, 130 MPH, $6-9 per sq ft',
+          'TruDefinition Duration Storm — Class 4, 10-30% insurance discount, $7-10 per sq ft',
+          'TruDefinition Duration Designer — enhanced color blends, $7.50-10 per sq ft',
+          'Berkshire Collection — luxury polymer-modified slate look, $9-12 per sq ft',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -246,11 +284,13 @@ export default function OwensCorningRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium Duration shingles with SureNail Technology
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now installs award-winning Owens Corning Duration shingles in Charlotte.
-              Experience superior wind resistance up to 130 MPH with patented SureNail Technology and
-              TruDefinition colors that enhance your home&apos;s curb appeal. Quality products from a
-              Fortune 500 company with 80+ years of roofing innovation.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now is an Owens Corning Platinum Preferred Contractor — a certification held by roughly 1%
+              of Charlotte roofers — which unlocks the 50-year Platinum Protection limited warranty with non-prorated
+              coverage. We install Oakridge, TruDefinition Duration (flagship architectural with SureNail Technology and
+              130 MPH wind rating), Duration Storm (Class 4 impact-resistant for 10-30% NC insurance discount),
+              Duration Designer (enhanced color blends), and the Berkshire Collection (luxury polymer-modified slate
+              look). 2026 installed pricing runs $4.50-12 per sq ft depending on tier and project specifics.
             </p>
 
             {/* CTA Buttons */}

@@ -136,7 +136,10 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `roof-coating-charlotte-nc` (573) — 2026-04-20 — added full AEO bundle (had only Breadcrumb+FAQ) + FeaturedSnippet (5 coating systems: silicone / acrylic / SPF / asphalt emulsion / hybrid) + FreeInspection + `.speakable-intro` with 2026 per-sq-ft pricing + GAF Unisil / Henry Dura-Brite / Carlisle CCW-LM / Gaco authorizations + Duke Energy rebate.
 - [x] `roof-valley-repair-charlotte-nc` (574) — 2026-04-20 — added full AEO bundle (had only Breadcrumb+FAQ) + FeaturedSnippet (4 valley styles: open-metal / closed-cut / woven / California-cut) + FreeInspection + `.speakable-intro` with W-profile width + ice-and-water shield + nail-offset best-practice details.
 - [x] `diy-roof-maintenance-checklist-charlotte-nc` (578) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8 ground-level DIY tasks: binocular scan / gutter clean / attic check / ventilation clear / tree trim / moss watch / sealant review / pro inspection) + FreeInspection + `.speakable-intro` with fall-safety warning, bumped dateModified.
-- [ ] ... +114 more pages
+- [x] `roof-flashing-repair-charlotte-nc` (580) — 2026-04-21 — added full AEO bundle (had only Breadcrumb+FAQ) + FeaturedSnippet (7 flashing types: step / counter / apron / valley / skylight / vent-pipe / drip-edge) + FreeInspection + `.speakable-intro` with 80% leak-source stat + EPDM pipe-boot 8-12yr failure point + material choice framework.
+- [x] `tree-damage-roof-repair-charlotte-nc` (585) — 2026-04-21 — added full AEO bundle + FeaturedSnippet (6-step emergency response workflow: safety/arborist/tarp/assessment/claim/restoration) + FreeInspection + `.speakable-intro` naming Florence/Isaias/Helene tropical events + Mecklenburg canopy species.
+- [x] `owens-corning-roofing-charlotte-nc` (598) — 2026-04-21 — added full AEO bundle + FeaturedSnippet (5 OC shingle tiers: Oakridge / TruDef Duration / Duration Storm / Duration Designer / Berkshire) + FreeInspection + `.speakable-intro` with Platinum Preferred 1% contractor stat + 50-yr non-prorated warranty + 2026 pricing.
+- [ ] ... +111 more pages
 
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19
