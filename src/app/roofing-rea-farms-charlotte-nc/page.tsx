@@ -24,9 +24,13 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import {
   BreadcrumbSchema,
   FAQSchema,
+  WebPageSchema,
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -220,6 +224,15 @@ export default function RoofingReaFarmsCharlotteNCPage() {
           { name: 'Roofing Rea Farms Charlotte NC', url: `${SITE_CONFIG.url}/roofing-rea-farms-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Roofing Rea Farms Charlotte NC | South Charlotte"
+        description="Roofing contractor in Rea Farms South Charlotte NC. Architectural and designer shingles, storm damage insurance claims, HOA color-compliant work. BBB A+, veteran-owned."
+        url={`${SITE_CONFIG.url}/roofing-rea-farms-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Rea Farms Charlotte NC', url: `${SITE_CONFIG.url}/roofing-rea-farms-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
       <AISearchOptimizationBundle
@@ -228,6 +241,21 @@ export default function RoofingReaFarmsCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services fit Rea Farms homes in South Charlotte?"
+        pageUrl={`${SITE_CONFIG.url}/roofing-rea-farms-charlotte-nc`}
+        directAnswer="Six service patterns fit the 2000s-2010s Rea Farms South Charlotte community near Providence Road and Rea Road: architectural and designer shingle replacements as original builder-grade hits 15-20 year wear, hail and wind insurance claim documentation in adjuster-ready Xactimate format, HOA color-compliant shingle selection coordinated with the Rea Farms architectural committee, proactive inspections with photo reports, attic ventilation upgrades per NC IRC §R806 NFVA math, and gutter upsizing from 5-inch to 6-inch with larger downspouts for Piedmont rainfall intensity."
+        items={[
+          'Architectural and designer shingle replacement (15-20 yr builder-grade wear)',
+          'Hail and wind insurance claims in Xactimate format',
+          'HOA color-compliant shingle selection and architectural-committee coordination',
+          'Proactive photo-report inspections (pre-sale and annual)',
+          'Attic ventilation upgrades per NC IRC §R806 NFVA math',
+          'Gutter upsize from 5" to 6" with larger downspouts for Piedmont rainfall',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,11 +281,13 @@ export default function RoofingReaFarmsCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium Roofing for Rea Farms&apos; Newer Luxury Homes
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now serves the Rea Farms area of South Charlotte with premium roofing
-              services for homes built in the 2000s and 2010s. From routine maintenance to full
-              replacements and storm damage repair, we deliver quality that matches the caliber
-              of your Rea Farms home.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Rea Farms is the Providence Road / Rea Road luxury community in South Charlotte, with most homes built
+              between 2005 and 2018 — original builder-grade architectural shingles are now hitting their 15-20 year
+              wear window. Best Roofing Now holds GAF Master Elite, CertainTeed SELECT ShingleMaster, and OC Platinum
+              Preferred certifications for up to 50-year transferable warranties, coordinates HOA color-committee
+              approvals, documents hail and wind damage in Xactimate format, and upgrades attic ventilation per
+              NC IRC §R806 NFVA requirements. BBB A+ rated, veteran-owned, {SITE_CONFIG.roofsInstalled}+ roofs completed.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

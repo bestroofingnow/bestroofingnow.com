@@ -25,6 +25,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -226,10 +231,33 @@ export default function MetalRoofVsShinglesPage() {
   description: 'Which roofing material is best for your Charlotte home?',
   slug: 'metal-roof-vs-shingles-charlotte-nc',
   datePublished: '2026-01-27',
-  dateModified: '2026-01-27',
+  dateModified: '2026-04-20',
         }}
       />
       <FAQSchema faqs={comparisonFAQs} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Metal Roof vs Shingles Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="How do metal roofs compare to asphalt shingles in Charlotte NC?"
+        pageUrl={pageUrl}
+        directAnswer="Eight factors separate metal from asphalt on Charlotte homes: installed cost (metal $9-22 vs shingle $4-8 per sq ft), service life (40-70 years metal vs 20-30 years architectural shingle), 30-year total cost of ownership (metal typically wins once one shingle replacement is avoided), hail performance (Class 4 metal dents cosmetically but rarely functionally, while asphalt requires full replacement after significant impact), wind rating (metal 130-150+ MPH standard vs 110-130 MPH architectural shingle), energy efficiency (cool metal reflects 60-80% solar vs 10-25% dark shingle, typically 10-25% summer cooling savings), noise (underlayment and decking neutralize the rain-on-tin myth), and insurance discounts (10-30% in NC for Class 4 metal or impact-resistant shingle)."
+        items={[
+          'Installed cost — metal $9-22 vs shingle $4-8 per sq ft',
+          'Service life — 40-70 years metal vs 20-30 years architectural shingle',
+          '30-year total cost of ownership — metal wins after one shingle cycle avoided',
+          'Hail — Class 4 metal dents cosmetically; asphalt needs full replacement',
+          'Wind — 130-150+ MPH metal vs 110-130 MPH architectural shingle',
+          'Cool-roof energy savings — 60-80% solar reflect on metal, 10-25% on dark shingle',
+          'Noise — underlayment and decking neutralize rain-on-tin myth',
+          'Insurance discount — 10-30% in NC for Class 4 metal or impact-resistant shingle',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -258,10 +286,13 @@ export default function MetalRoofVsShinglesPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4 leading-relaxed">
               Complete 2026 Comparison: Cost, Durability &amp; Value
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Trying to decide between metal roofing and asphalt shingles for your Charlotte home?
-              This guide compares real costs, lifespans, energy savings, and storm performance
-              to help you make the right choice.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Metal roofs install at $9-22 per sq ft in Charlotte with 40-70 year service life, 130-150+ MPH wind rating,
+              and 60-80% solar reflectance. Architectural asphalt installs at $4-8 per sq ft with 20-30 year life and
+              110-130 MPH wind rating. Thirty-year total cost of ownership typically tips metal once one shingle cycle
+              is avoided, and NC insurance carriers discount 10-30% for Class 4 metal or impact-resistant shingle. Best
+              Roofing Now holds GAF Master Elite, CertainTeed SELECT, OC Platinum, and metal manufacturer certifications
+              — so we install both systems honestly against each property's specifics.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

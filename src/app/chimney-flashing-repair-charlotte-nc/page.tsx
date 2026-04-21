@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -217,7 +226,39 @@ export default function ChimneyFlashingRepairCharlotteNCPage() {
           { name: 'Chimney Flashing Repair Charlotte NC', url: `${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc` },
         ]}
       />
+      <WebPageSchema
+        name="Chimney Flashing Repair Charlotte NC | Leak Prevention"
+        description="Expert chimney flashing repair in Charlotte NC. Step flashing, counter flashing, crickets, and historic chimney restoration. BBB A+ licensed contractor."
+        url={`${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Chimney Flashing Repair Charlotte NC', url: `${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc` },
+        ]}
+      />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc`}
+        pageName="Chimney Flashing Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FreeInspectionOfferSchema />
+      <FeaturedSnippetListAnswerSchema
+        question="What chimney flashing issues cause leaks in Charlotte homes?"
+        pageUrl={`${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc`}
+        directAnswer="Eight failure modes account for most chimney leaks on Charlotte roofs: step flashing that was caulked rather than embedded into the shingle courses, missing or shallow counter-flashing reglets (needs 1-inch minimum cut into masonry), failed pick-test mortar joints behind the flashing, missing cricket on chimneys 30+ inches wide per IRC R1003.20 (24+ recommended), cracked or missing crown, efflorescence indicating long-standing intrusion, previous aluminum-over-aluminum caulk repairs, and degraded 40-year old tar patches on historic chimneys across Dilworth, Elizabeth, Fourth Ward, Myers Park, Matthews, and Davidson."
+        items={[
+          'Step flashing caulked rather than embedded into shingle courses',
+          'Missing or shallow counter-flashing reglet (1 in minimum cut)',
+          'Failed mortar joints behind flashing (fails pick-test)',
+          'Missing cricket on chimneys 30+ in wide (IRC R1003.20)',
+          'Cracked or missing chimney crown',
+          'Efflorescence indicating long-standing water intrusion',
+          'Previous caulk-only repairs that cured and cracked',
+          'Degraded tar patches on historic district chimneys',
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -243,10 +284,13 @@ export default function ChimneyFlashingRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Stop chimney leaks with expert flashing repair and waterproofing
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in chimney flashing repair and replacement throughout Charlotte.
-              Our certified team properly installs step flashing, counter flashing, and chimney caps to
-              permanently stop leaks and protect your home.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Chimney flashing is the #1 leak source on Charlotte roofs — step flashing embedded into shingle courses,
+              counter-flashing cut 1 inch into the masonry reglet, and a cricket (required on chimneys 30+ inches wide
+              per IRC R1003.20) are the three details that actually stop water. 2026 Charlotte pricing runs $450-950 for
+              minor repointing, $950-2,800 for full step + counter rebuild, and $3,500+ with a new cricket and hand-soldered
+              copper pan. Best Roofing Now specializes in historic chimney restoration across Dilworth, Elizabeth,
+              Fourth Ward, Myers Park, Matthews, and Davidson — with aluminum, lead, or copper material choices to match.
             </p>
 
             {/* CTA Buttons */}

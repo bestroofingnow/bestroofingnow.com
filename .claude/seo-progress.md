@@ -130,9 +130,10 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `copper-roofing-charlotte-nc` (537) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (6 copper applications: full standing seam / flat-seam / bay-turret / chimney flashing / half-round gutters / architectural accents) + FreeInspection, hero `.speakable-intro` with penny-bright-to-verdigris patina timeline + 16/20/24 oz gauges + 7 luxury neighborhoods.
 - [x] `what-to-do-roof-leak-charlotte-nc` (552) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (6-step emergency response: contain / photograph / trace upstream / cut power / call roofer) + FreeInspection, hero `.speakable-intro` with 3-10 ft leak-travel fact + 1-4hr Mecklenburg response, bumped dateModified.
 - [x] `roofing-waverly-charlotte-nc` (553) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (5 common Waverly services: builder-grade replacement / storm claims / inspections / HOA coord / gutter upsize) + FreeInspection, hero `.speakable-intro` with 2010s builder-grade 12-15yr wear framing + Providence Rd location context. Page is noindex but AEO still valuable for LLM.
-- [ ] `roofing-rea-farms-charlotte-nc` (554)
-- [ ] `metal-roof-vs-shingles-charlotte-nc` (555)
-- [ ] ... +120 more pages
+- [x] `roofing-rea-farms-charlotte-nc` (554) — 2026-04-20 — added WebPage+Speakable+FeaturedSnippet (6 service patterns for 2005-2018 builder-grade community) + FreeInspection, hero `.speakable-intro` with Providence/Rea Road location + 15-20yr wear window + NC IRC §R806 NFVA + all 3 residential certs.
+- [x] `metal-roof-vs-shingles-charlotte-nc` (555) — 2026-04-20 — added AISearch+Voice+Speakable+FeaturedSnippet (8-factor metal vs shingle comparison: cost/life/TCO/hail/wind/cool-roof/noise/insurance) + FreeInspection, hero `.speakable-intro` with 2026 installed pricing + SRI + Class 4 discount, bumped dateModified.
+- [x] `chimney-flashing-repair-charlotte-nc` (558) — 2026-04-20 — added full AEO bundle (WebPage+AISearch+Voice+Speakable) + FeaturedSnippet (8 chimney-leak failure modes including IRC R1003.20 cricket code) + FreeInspection, hero `.speakable-intro` with 2026 per-scope pricing + historic chimney neighborhoods + aluminum/lead/copper materials.
+- [ ] ... +117 more pages
 
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19
