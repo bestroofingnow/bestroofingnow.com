@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Fraunces } from 'next/font/google';
 import { SEOImage } from '@/components/ui/SEOImage';
 import Link from 'next/link';
 import {
@@ -17,6 +18,30 @@ import {
   Sun,
   Home,
 } from 'lucide-react';
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-fraunces',
+});
+
+// Evolved "Lake Norman Waterfront" palette from Claude Design handoff
+const LKN_PALETTE = {
+  navy: '#0E1F57',
+  navyDeep: '#081134',
+  red: '#B8322B',
+  copper: '#A86A43',
+  copperLight: '#C88B64',
+  cream: '#F5F1EA',
+  lakeMist: '#E7EEF2',
+  ink: '#0B1220',
+  slate: '#3C4658',
+  mute: '#8A93A3',
+  line: '#E5E8EE',
+  gold: '#D8A852',
+} as const;
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
@@ -39,7 +64,7 @@ const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersvill
 export const metadata: Metadata = {
   title: 'Lake Norman Waterfront Roofing',
   description:
-    'Waterfront roofing for Lake Norman lakefront homes. Wind-resistant, impact-rated materials for lake exposure. BBB A+ rated. Call (704) 605-6047.',
+    'Waterfront roofing for Lake Norman lakefront estates. Standing seam metal, natural slate, and Class 4 impact systems engineered for open-water exposure. Call (704) 605-6047.',
   keywords: [
     'waterfront roofing lake norman',
     'lakefront home roofer',
@@ -246,62 +271,212 @@ export default function LakeNormanWaterfrontRoofingPage() {
       <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-waterfront-roofing`} />
       <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-waterfront-roofing`} />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-primary text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <SEOImage
-            src={IMAGES.houses.modern1}
-            alt="Lake Norman waterfront home roofing - lakefront specialists"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-        </div>
-        <div className="container relative z-10">
-          <div className="max-w-4xl">
-            <div className="flex items-center gap-2 mb-4">
-              <Waves className="w-6 h-6 text-accent" />
-              <span className="text-accent font-semibold">Lakefront Roofing Specialists</span>
+      {/* Hero — Editorial Split (Claude Design V1) */}
+      <section
+        className={`${fraunces.variable} relative grid grid-cols-1 lg:grid-cols-[5fr_4fr]`}
+        style={{ background: LKN_PALETTE.lakeMist, minHeight: 720 }}
+      >
+        {/* Left: editorial navy panel */}
+        <div
+          className="relative overflow-hidden px-8 py-14 md:px-14 md:py-20 lg:px-14 lg:py-[72px] text-white flex flex-col justify-between"
+          style={{ background: `linear-gradient(180deg, ${LKN_PALETTE.navyDeep} 0%, ${LKN_PALETTE.navy} 100%)` }}
+        >
+          {/* Topographic lake wave background */}
+          <svg
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full"
+            viewBox="0 0 1200 600"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <g fill="none" stroke="#fff" strokeOpacity="0.05" strokeWidth="1">
+              {Array.from({ length: 18 }).map((_, i) => (
+                <path
+                  key={i}
+                  d={`M0 ${60 + i * 28} Q 300 ${20 + i * 28} 600 ${60 + i * 28} T 1200 ${60 + i * 28}`}
+                />
+              ))}
+            </g>
+          </svg>
+
+          <div className="relative z-[2]">
+            <div className="flex items-center gap-3.5 mb-9">
+              <span className="inline-block h-px w-7" style={{ background: LKN_PALETTE.copperLight }} aria-hidden="true" />
+              <span
+                className="text-[11px] font-semibold uppercase"
+                style={{ color: LKN_PALETTE.copperLight, letterSpacing: '0.22em' }}
+              >
+                Vol. 11 — Est. {SITE_CONFIG.founded}
+              </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Lake Norman Waterfront Roofing<br />
-              <span className="text-accent">Lakefront Home Specialists</span>
+
+            <h1
+              className="m-0 text-[44px] sm:text-[56px] lg:text-[76px] font-normal"
+              style={{
+                fontFamily: 'var(--font-fraunces), Georgia, serif',
+                lineHeight: 0.98,
+                letterSpacing: '-0.025em',
+                textWrap: 'balance',
+              }}
+            >
+              Lake Norman waterfront{' '}
+              <em
+                className="font-normal italic"
+                style={{ color: LKN_PALETTE.copperLight }}
+              >
+                roofing.
+              </em>
             </h1>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl">
-              Purpose-built roofing solutions for Lake Norman&apos;s waterfront homes.
-              Wind-resistant materials rated for 130+ MPH, engineered underlayment systems,
-              and decades of lakeside installation experience.
+
+            <p
+              className="mt-7 mb-10 max-w-[480px] text-[17px] font-normal"
+              style={{ color: 'rgba(255,255,255,0.82)', lineHeight: 1.55 }}
+            >
+              A quiet specialty practice serving Lake Norman&apos;s waterfront estates since {SITE_CONFIG.founded}. Standing seam metal, natural slate, and Class 4 impact-rated systems engineered for open-water exposure — installed by a veteran-led crew that treats your home like heritage.
             </p>
 
-            {/* Trust badges */}
-            <div className="flex flex-wrap gap-4 mb-8">
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                <span>{SITE_CONFIG.googleRating} Google Rating</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                <Wind className="w-5 h-5 text-accent" />
-                <span>130+ MPH Rated</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                <Shield className="w-5 h-5 text-accent" />
-                <span>Veteran-Owned</span>
+            <div className="flex flex-col sm:flex-row gap-3.5 items-start sm:items-center">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2.5 px-7 py-[15px] text-[13px] font-semibold uppercase text-white transition-colors hover:brightness-110"
+                style={{
+                  background: LKN_PALETTE.red,
+                  borderRadius: 2,
+                  letterSpacing: '0.1em',
+                }}
+              >
+                Schedule Site Visit <ArrowRight className="h-4 w-4" />
+              </Link>
+              <a
+                href={`tel:${SITE_CONFIG.phoneClean}`}
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 text-[13px] font-medium uppercase text-white transition-colors hover:bg-white/10"
+                style={{
+                  background: 'transparent',
+                  border: '1px solid rgba(255,255,255,0.35)',
+                  borderRadius: 2,
+                  letterSpacing: '0.08em',
+                }}
+              >
+                <Phone className="h-3.5 w-3.5" /> {SITE_CONFIG.phone}
+              </a>
+            </div>
+          </div>
+
+          {/* Bottom: rating + credentials */}
+          <div
+            className="relative z-[2] mt-12 flex flex-col sm:flex-row gap-6 sm:items-end sm:justify-between pt-7"
+            style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}
+          >
+            <div>
+              <span className="inline-flex items-center gap-0.5" role="img" aria-label="5 out of 5 stars">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star
+                    key={i}
+                    className="h-3.5 w-3.5"
+                    style={{ color: LKN_PALETTE.gold, fill: LKN_PALETTE.gold }}
+                    aria-hidden="true"
+                  />
+                ))}
+              </span>
+              <div className="mt-2 text-[12px]" style={{ color: 'rgba(255,255,255,0.75)', lineHeight: 1.5 }}>
+                {SITE_CONFIG.googleRating} across {SITE_CONFIG.googleReviewCount}+ Google, Facebook<br className="hidden sm:block" />
+                {' '}&amp; Nextdoor reviews
               </div>
             </div>
+            <div className="sm:text-right">
+              <div
+                className="text-[10.5px] font-medium uppercase mb-2.5"
+                style={{ color: 'rgba(255,255,255,0.55)', letterSpacing: '0.22em' }}
+              >
+                Credentials
+              </div>
+              <div className="flex flex-wrap gap-3 sm:gap-4 text-[12.5px] font-medium" style={{ letterSpacing: '0.04em' }}>
+                <span>GAF Master Elite</span>
+                <span style={{ color: 'rgba(255,255,255,0.3)' }}>·</span>
+                <span>CertainTeed SELECT</span>
+                <span style={{ color: 'rgba(255,255,255,0.3)' }}>·</span>
+                <span>BBB A+</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <div className="flex flex-wrap gap-4">
-              <Button href="/contact" variant="primary" size="lg">
-                <Calendar className="w-5 h-5" />
-                Free Waterfront Estimate
-              </Button>
-              <Button href={`tel:${SITE_CONFIG.phone}`} variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-                <Phone className="w-5 h-5" />
-                (704) 605-6047
-              </Button>
+        {/* Right: image with copper inset frame + featured-project caption */}
+        <div className="relative overflow-hidden min-h-[360px] lg:min-h-0" style={{ background: LKN_PALETTE.lakeMist }}>
+          <SEOImage
+            src={IMAGES.houses.modern1}
+            alt="Lake Norman waterfront luxury home — standing seam metal roof installed by Best Roofing Now"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Subtle copper inset frame */}
+          <div
+            className="pointer-events-none absolute inset-4 lg:inset-7"
+            style={{ border: `1px solid ${LKN_PALETTE.copperLight}` }}
+            aria-hidden="true"
+          />
+          {/* Featured project caption card */}
+          <div
+            className="absolute left-5 bottom-5 lg:left-10 lg:bottom-10 max-w-[280px] bg-white"
+            style={{
+              padding: '20px 24px',
+              borderLeft: `3px solid ${LKN_PALETTE.copper}`,
+              boxShadow: '0 20px 40px rgba(8, 17, 52, 0.15)',
+            }}
+          >
+            <div
+              className="text-[10.5px] font-semibold uppercase mb-2"
+              style={{ color: LKN_PALETTE.copper, letterSpacing: '0.2em' }}
+            >
+              Featured Project
+            </div>
+            <div
+              className="text-[17px] font-medium"
+              style={{
+                fontFamily: 'var(--font-fraunces), Georgia, serif',
+                color: LKN_PALETTE.navy,
+                lineHeight: 1.25,
+              }}
+            >
+              Standing seam copper roof, The Peninsula
+            </div>
+            <div className="mt-1.5 text-[12px]" style={{ color: LKN_PALETTE.mute }}>
+              Cornelius, NC · March 2026
             </div>
           </div>
         </div>
       </section>
+
+      {/* Credentials Marquee */}
+      <div
+        className={`${fraunces.variable} flex flex-wrap justify-center lg:justify-between items-center gap-x-8 gap-y-3 px-6 md:px-14 py-[22px]`}
+        style={{
+          background: LKN_PALETTE.cream,
+          borderBottom: `1px solid ${LKN_PALETTE.line}`,
+        }}
+      >
+        {[
+          'GAF Master Elite',
+          'CertainTeed SELECT',
+          'BBB A+ Accredited',
+          'NRCA Member',
+          'Owens Corning Preferred',
+          'Veteran-Owned',
+        ].map((c) => (
+          <div
+            key={c}
+            className="text-[14px] font-medium"
+            style={{
+              fontFamily: 'var(--font-fraunces), Georgia, serif',
+              color: LKN_PALETTE.navy,
+              letterSpacing: '0.01em',
+              opacity: 0.85,
+            }}
+          >
+            {c}
+          </div>
+        ))}
+      </div>
 
       {/* Waterfront Challenges Section */}
       <section className="py-16 bg-white">
@@ -334,50 +509,134 @@ export default function LakeNormanWaterfrontRoofingPage() {
         </div>
       </section>
 
-      {/* Materials Comparison Section */}
-      <section className="py-16 bg-light">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Best Roofing Materials for Lakefront Homes
+      {/* The Practice — Editorial 3-Column Materials (Claude Design V1) */}
+      <section className={`${fraunces.variable} bg-white px-6 md:px-14 py-20 md:py-[88px]`}>
+        <div className="mb-14 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+          <div>
+            <div
+              className="mb-3.5 text-[11px] font-semibold uppercase"
+              style={{ color: LKN_PALETTE.copper, letterSpacing: '0.22em' }}
+            >
+              The Practice
+            </div>
+            <h2
+              className="m-0 text-[36px] sm:text-[44px] lg:text-[52px] font-normal"
+              style={{
+                fontFamily: 'var(--font-fraunces), Georgia, serif',
+                color: LKN_PALETTE.navy,
+                lineHeight: 1.02,
+                letterSpacing: '-0.02em',
+              }}
+            >
+              Three systems, engineered for open water.
             </h2>
-            <p className="text-gray-600 text-lg">
-              Not every roofing material can withstand Lake Norman&apos;s waterfront conditions.
-              We recommend these proven options based on hundreds of lakefront installations.
-            </p>
           </div>
+          <p
+            className="m-0 max-w-[480px] text-[16px]"
+            style={{ color: LKN_PALETTE.slate, lineHeight: 1.65 }}
+          >
+            Lake Norman spans 32,000 acres. Homes on the shoreline face sustained winds 20–40% stronger than inland properties, with UV reflection 25% higher and humidity that never quits. We install accordingly.
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {waterfrontMaterials.map((material) => (
+        <div
+          className="grid grid-cols-1 md:grid-cols-3"
+          style={{ borderTop: `1px solid ${LKN_PALETTE.line}` }}
+        >
+          {waterfrontMaterials.slice(0, 3).map((material, i) => {
+            const tag = String(i + 1).padStart(2, '0');
+            return (
               <div
                 key={material.name}
-                className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all"
+                className="py-9"
+                style={{
+                  borderBottom: `1px solid ${LKN_PALETTE.line}`,
+                  borderRight: i < 2 ? `1px solid ${LKN_PALETTE.line}` : undefined,
+                  paddingLeft: i > 0 ? 32 : 0,
+                  paddingRight: 32,
+                }}
               >
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-xl font-bold text-primary">{material.name}</h3>
-                  <span className="bg-accent/10 text-accent text-sm font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-4">
-                    {material.rating}
-                  </span>
+                <div
+                  className="mb-5 italic font-light"
+                  style={{
+                    fontFamily: 'var(--font-fraunces), Georgia, serif',
+                    fontSize: 34,
+                    color: LKN_PALETTE.copper,
+                  }}
+                >
+                  {tag}
                 </div>
-                <p className="text-gray-600 mb-6">{material.description}</p>
-                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
-                  <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wide">Wind Rating</p>
-                    <p className="font-bold text-primary">{material.windRating}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wide">Lifespan</p>
-                    <p className="font-bold text-primary">{material.lifespan}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wide">Price</p>
-                    <p className="font-bold text-primary text-sm">{material.priceRange}</p>
-                  </div>
+                <div
+                  className="mb-3 text-[22px] font-medium"
+                  style={{
+                    fontFamily: 'var(--font-fraunces), Georgia, serif',
+                    color: LKN_PALETTE.navy,
+                    letterSpacing: '-0.01em',
+                  }}
+                >
+                  {material.name}
                 </div>
+                <div className="mb-5 text-[14px]" style={{ color: LKN_PALETTE.slate, lineHeight: 1.6 }}>
+                  {material.description}
+                </div>
+                <dl className="space-y-1 text-[12px]" style={{ color: LKN_PALETTE.mute }}>
+                  <div className="flex gap-2">
+                    <dt className="uppercase" style={{ letterSpacing: '0.08em' }}>Wind</dt>
+                    <dd style={{ fontVariantNumeric: 'tabular-nums', color: LKN_PALETTE.slate }}>
+                      {material.windRating}
+                    </dd>
+                  </div>
+                  <div className="flex gap-2">
+                    <dt className="uppercase" style={{ letterSpacing: '0.08em' }}>Lifespan</dt>
+                    <dd style={{ fontVariantNumeric: 'tabular-nums', color: LKN_PALETTE.slate }}>
+                      {material.lifespan}
+                    </dd>
+                  </div>
+                  <div className="flex gap-2">
+                    <dt className="uppercase" style={{ letterSpacing: '0.08em' }}>Installed</dt>
+                    <dd style={{ fontVariantNumeric: 'tabular-nums', color: LKN_PALETTE.slate }}>
+                      {material.priceRange}
+                    </dd>
+                  </div>
+                </dl>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
+
+        {/* 4th material (Synthetic) rendered as a quieter footnote card so we don't lose SEO content */}
+        {waterfrontMaterials[3] && (
+          <div
+            className="mt-10 flex flex-col md:flex-row md:items-start md:justify-between gap-6 pt-10"
+            style={{ borderTop: `1px solid ${LKN_PALETTE.line}` }}
+          >
+            <div className="max-w-[560px]">
+              <div
+                className="mb-3 text-[11px] font-semibold uppercase"
+                style={{ color: LKN_PALETTE.copper, letterSpacing: '0.22em' }}
+              >
+                Also specified — {waterfrontMaterials[3].rating}
+              </div>
+              <div
+                className="mb-2 text-[20px] font-medium"
+                style={{
+                  fontFamily: 'var(--font-fraunces), Georgia, serif',
+                  color: LKN_PALETTE.navy,
+                }}
+              >
+                {waterfrontMaterials[3].name}
+              </div>
+              <p className="m-0 text-[14px]" style={{ color: LKN_PALETTE.slate, lineHeight: 1.65 }}>
+                {waterfrontMaterials[3].description}
+              </p>
+            </div>
+            <div className="flex flex-col gap-1 text-[12px] md:text-right" style={{ color: LKN_PALETTE.mute }}>
+              <span>Wind <span style={{ color: LKN_PALETTE.slate }}>{waterfrontMaterials[3].windRating}</span></span>
+              <span>Lifespan <span style={{ color: LKN_PALETTE.slate }}>{waterfrontMaterials[3].lifespan}</span></span>
+              <span>Installed <span style={{ color: LKN_PALETTE.slate }}>{waterfrontMaterials[3].priceRange}</span></span>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Our Waterfront Approach */}
@@ -462,36 +721,207 @@ export default function LakeNormanWaterfrontRoofingPage() {
         </div>
       </section>
 
-      {/* Communities Section */}
-      <section className="py-16 bg-light">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Lake Norman Waterfront Communities We Serve
+      {/* Coverage — Navy Editorial Communities Grid (Claude Design V1) */}
+      <section
+        className={`${fraunces.variable} relative overflow-hidden px-6 md:px-14 py-20 md:py-[88px] text-white`}
+        style={{ background: LKN_PALETTE.navy }}
+      >
+        {/* Topographic background */}
+        <svg
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full"
+          viewBox="0 0 1200 600"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <g fill="none" stroke="#fff" strokeOpacity="0.04" strokeWidth="1">
+            {Array.from({ length: 18 }).map((_, i) => (
+              <path
+                key={i}
+                d={`M0 ${60 + i * 28} Q 300 ${20 + i * 28} 600 ${60 + i * 28} T 1200 ${60 + i * 28}`}
+              />
+            ))}
+          </g>
+        </svg>
+
+        <div className="relative z-[2] grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-[72px] items-start">
+          <div>
+            <div
+              className="mb-3.5 text-[11px] font-semibold uppercase"
+              style={{ color: LKN_PALETTE.copperLight, letterSpacing: '0.22em' }}
+            >
+              Coverage
+            </div>
+            <h2
+              className="m-0 text-[32px] sm:text-[38px] lg:text-[44px] font-normal"
+              style={{
+                fontFamily: 'var(--font-fraunces), Georgia, serif',
+                lineHeight: 1.05,
+                letterSpacing: '-0.02em',
+              }}
+            >
+              Every cove. Every community.
             </h2>
-            <p className="text-gray-600 text-lg">
-              From The Peninsula in Cornelius to Westport in Denver, we protect
-              lakefront homes across every shore of Lake Norman.
+            <p
+              className="mt-6 max-w-[360px] text-[15px]"
+              style={{ color: 'rgba(255,255,255,0.72)', lineHeight: 1.65 }}
+            >
+              200+ completed projects across Lake Norman&apos;s shoreline. We know the permit desks, HOA architectural boards, and wind patterns block by block.
             </p>
+            <Link
+              href="/locations/lake-norman"
+              className="mt-8 inline-flex items-center gap-2.5 text-[13px] font-medium uppercase transition-colors hover:brightness-125"
+              style={{ color: LKN_PALETTE.copperLight, letterSpacing: '0.08em' }}
+            >
+              View coverage map <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {waterfrontCommunities.map((community) => (
+          <div
+            className="grid grid-cols-2 lg:grid-cols-4"
+            style={{ gap: 1, background: 'rgba(255,255,255,0.08)' }}
+          >
+            {[
+              { name: 'The Peninsula', city: 'Cornelius', count: 42, slug: 'cornelius-nc' },
+              { name: 'The Point', city: 'Mooresville', count: 38, slug: 'mooresville-nc' },
+              { name: 'The Farms', city: 'Mooresville', count: 27, slug: 'mooresville-nc' },
+              { name: 'Davidson Landing', city: 'Davidson', count: 19, slug: 'davidson-nc' },
+              { name: 'Jetton Cove', city: 'Cornelius', count: 24, slug: 'cornelius-nc' },
+              { name: 'Northington', city: 'Huntersville', count: 16, slug: 'huntersville-nc' },
+              { name: 'Trump National', city: 'Mooresville', count: 31, slug: 'mooresville-nc' },
+              { name: 'Bay Crossing', city: 'Denver', count: 14, slug: 'denver-nc' },
+            ].map((h) => (
               <Link
-                key={community.slug}
-                href={`/roofing-${community.slug}`}
-                className="group bg-white rounded-xl p-6 hover:shadow-lg transition-all"
+                key={`${h.name}-${h.city}`}
+                href={`/roofing-${h.slug}`}
+                className="group block p-5 lg:px-5 lg:py-6 transition-colors"
+                style={{ background: LKN_PALETTE.navy }}
               >
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
-                    {community.name}
-                  </h3>
-                  <MapPin className="w-5 h-5 text-accent" />
+                <div
+                  className="text-[18px] lg:text-[20px] font-medium transition-colors group-hover:brightness-110"
+                  style={{
+                    fontFamily: 'var(--font-fraunces), Georgia, serif',
+                    letterSpacing: '-0.01em',
+                  }}
+                >
+                  {h.name}
                 </div>
-                <p className="text-sm text-gray-500 mb-2">{community.neighborhoods}</p>
-                <p className="text-gray-600 text-sm">{community.waterfrontNote}</p>
+                <div
+                  className="mt-1 text-[12px]"
+                  style={{ color: 'rgba(255,255,255,0.55)', letterSpacing: '0.04em' }}
+                >
+                  {h.city}, NC
+                </div>
+                <div
+                  className="mt-4 flex items-baseline gap-1.5"
+                  style={{ color: LKN_PALETTE.copperLight }}
+                >
+                  <span
+                    className="text-[22px] font-normal"
+                    style={{ fontFamily: 'var(--font-fraunces), Georgia, serif' }}
+                  >
+                    {h.count}
+                  </span>
+                  <span
+                    className="text-[10.5px] uppercase opacity-75"
+                    style={{ letterSpacing: '0.14em' }}
+                  >
+                    projects
+                  </span>
+                </div>
               </Link>
             ))}
+          </div>
+        </div>
+
+        {/* Secondary: the original cities/neighborhoods list, preserved for SEO */}
+        <div className="relative z-[2] mt-16 grid grid-cols-2 md:grid-cols-3 gap-6" style={{ color: 'rgba(255,255,255,0.82)' }}>
+          {waterfrontCommunities.map((community) => (
+            <Link
+              key={community.slug}
+              href={`/roofing-${community.slug}`}
+              className="block pt-5 transition-colors hover:text-white"
+              style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}
+            >
+              <div className="flex items-center justify-between">
+                <span
+                  className="text-[15px] font-medium"
+                  style={{ fontFamily: 'var(--font-fraunces), Georgia, serif' }}
+                >
+                  {community.name}
+                </span>
+                <MapPin className="h-4 w-4" style={{ color: LKN_PALETTE.copperLight }} aria-hidden="true" />
+              </div>
+              <p className="mt-1 text-[12px]" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                {community.neighborhoods}
+              </p>
+              <p className="mt-1 text-[12px]" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                {community.waterfrontNote}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Private Site Visit — Editorial CTA (Claude Design V1) */}
+      <section className={`${fraunces.variable}`} style={{ background: LKN_PALETTE.cream, padding: '72px 24px' }}>
+        <div
+          className="mx-auto grid max-w-6xl grid-cols-1 lg:grid-cols-[1fr_auto] items-center gap-10 lg:gap-14 bg-white"
+          style={{
+            padding: '48px 40px',
+            borderTop: `3px solid ${LKN_PALETTE.copper}`,
+            boxShadow: '0 1px 0 rgba(0,0,0,0.03)',
+          }}
+        >
+          <div>
+            <div
+              className="mb-3 text-[11px] font-semibold uppercase"
+              style={{ color: LKN_PALETTE.copper, letterSpacing: '0.22em' }}
+            >
+              Scheduling — April 2026
+            </div>
+            <h2
+              className="m-0 text-[30px] md:text-[40px] font-normal"
+              style={{
+                fontFamily: 'var(--font-fraunces), Georgia, serif',
+                color: LKN_PALETTE.navy,
+                lineHeight: 1.08,
+                letterSpacing: '-0.015em',
+              }}
+            >
+              A private site visit,{' '}
+              <em className="italic font-normal" style={{ color: LKN_PALETTE.copper }}>
+                at no cost.
+              </em>
+            </h2>
+            <p
+              className="mt-4 max-w-[560px] text-[15px]"
+              style={{ color: LKN_PALETTE.slate, lineHeight: 1.6 }}
+            >
+              Drone inspection, moisture scan, and a written assessment delivered within 72 hours. No pressure, no commission-driven upsell — just an honest read from a veteran-led crew that specializes in open-water exposure.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 lg:min-w-[240px]">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 text-[13px] font-semibold uppercase text-white transition-colors hover:brightness-110"
+              style={{
+                background: LKN_PALETTE.navy,
+                borderRadius: 2,
+                letterSpacing: '0.1em',
+              }}
+            >
+              Request Consultation <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+            <div className="text-center text-[12px]" style={{ color: LKN_PALETTE.mute }}>
+              or call{' '}
+              <a
+                href={`tel:${SITE_CONFIG.phoneClean}`}
+                className="font-semibold"
+                style={{ color: LKN_PALETTE.navy }}
+              >
+                {SITE_CONFIG.phone}
+              </a>
+            </div>
           </div>
         </div>
       </section>
