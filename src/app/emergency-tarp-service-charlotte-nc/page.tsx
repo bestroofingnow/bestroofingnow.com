@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -265,6 +274,32 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Emergency Roof Tarp Service Charlotte NC | 24/7 | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`}
+        description="24/7 emergency roof tarping in Charlotte NC. 1-4 hour dispatch with 12 mil heavy-duty tarps, batten frame, insurance loss-mitigation documentation."
+        primaryImage={IMAGES.services.emergency}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Emergency Roof Tarp Service Charlotte NC', url: `${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does professional emergency roof tarping in Charlotte include?"
+        directAnswer="Professional emergency roof tarping in Charlotte includes a 1-4 hour dispatch from our 24/7 line, 12 mil reinforced commercial tarps with 4-foot overlap, 2x4 batten frame screwed to the deck (not nailed through shingles), peel-and-stick upper-edge seal, full insurance loss-mitigation photo documentation, and 60-90 day temporary protection while permanent repair is scheduled."
+        items={[
+          '1-4 hour dispatch from our 24/7 emergency line across the Charlotte metro (Mecklenburg fastest, LKN/satellite next, outer counties same-day)',
+          '12 mil reinforced commercial-grade tarps with 4-foot overlap on damaged area (NOT consumer-grade blue poly)',
+          '2x4 batten frame screwed to the roof deck (not driven through good shingles), tensioned to prevent ponding',
+          'Peel-and-stick upper-edge seal that tucks under upslope shingle course to prevent water migration behind the tarp',
+          'Full insurance loss-mitigation photo documentation that satisfies State Farm / Allstate / Liberty Mutual / USAA / Travelers claim requirements',
+          '60-90 day temporary protection (UV/wind life on commercial 12 mil); permanent repair scheduled within that window',
+          'Commercial parapet-walled flat-roof tarping for galleries / retail / mixed-use buildings (different technique than pitched residential)',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -290,10 +325,12 @@ export default function EmergencyTarpServiceCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Fast Storm Response | Protect Your Home from Water Damage
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              When a storm damages your roof, every minute counts. Best Roofing Now provides 24/7 emergency
-              roof tarping to protect your home from further water damage. Our crews are ready to respond
-              immediately with professional-grade tarps and proper installation.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              When a storm damages your roof, every minute counts. Best Roofing Now provides 24/7
+              emergency tarping across Charlotte, Mecklenburg County, Lake Norman, and the surrounding
+              Piedmont with 1-4 hour dispatch, 12 mil reinforced commercial tarps, 2x4 batten frames
+              screwed to the deck, and full insurance loss-mitigation photo documentation that satisfies
+              State Farm, Allstate, Liberty Mutual, USAA, and Travelers claim requirements.
             </p>
 
             {/* CTA Buttons */}

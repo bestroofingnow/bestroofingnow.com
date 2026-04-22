@@ -26,6 +26,9 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
@@ -205,6 +208,22 @@ export default function ReplaceRoofBeforeSellingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="Should I replace my roof before selling my Charlotte home?"
+        directAnswer="Replace the roof before selling if it's visibly damaged, over 20 years old, FHA/VA buyers need a sound roof for loan approval, or your market is competitive enough that curb appeal matters. A new roof in Charlotte adds an average of $12,000-$15,000 in value at 61-65% ROI, reduces days on market by 10-15 days, and removes one of the largest negotiation items. Otherwise, offer a $5,000-$10,000 closing credit or sell as-is at a price reflecting the roof condition."
+        items={[
+          'REPLACE — visible damage, 20+ years old, will fail home inspection, or FHA/VA buyer pool requires a sound roof for loan approval',
+          'REPLACE — competitive market where move-in-ready homes win multiple-offer situations and curb appeal commands a premium',
+          'OFFER CREDIT — roof has 5-10 years remaining, you want to avoid the replacement timeline, buyers prefer choosing their own contractor (typical credit $5,000-$10,000)',
+          'SELL AS-IS — roof has 10+ years remaining, selling to investors or cash buyers, you can close quickly, or you price the home to reflect roof condition',
+          'Charlotte ROI math — average $8,000-$15,000 cost adds $12,000-$15,000 value (61-65% ROI per Remodeling Magazine 2024 Cost vs Value)',
+          'FHA/VA hard requirements — 2+ years remaining useful life, no active leaks, no missing/curling shingles, no more than 3 layers, intact flashing',
+          'Pre-sale inspection — 24-48 hr report shareable with buyers; identifies issues BEFORE inspection contingency kills the deal',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/replace-roof-before-selling-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Breadcrumbs */}
       <Breadcrumbs
@@ -236,8 +255,12 @@ export default function ReplaceRoofBeforeSellingCharlotteNCPage() {
               <br className="hidden md:block" />
               <span className="text-blue-200">Before Selling?</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">
-              A new roof can increase home value by $12,000-$15,000 on average, with a 61-65% ROI. Replace if your roof threatens the sale, the lender requires it, or visible damage reduces curb appeal.
+            <p className="speakable-intro text-xl md:text-2xl text-white/90 mb-6">
+              A new roof in Charlotte adds an average of $12,000-$15,000 in home value at 61-65% ROI
+              (per Remodeling Magazine 2024 Cost vs Value), reduces days on market by 10-15 days, and
+              removes a major buyer negotiation point. Replace if your roof threatens the sale, FHA/VA
+              lenders require it, or visible damage hurts curb appeal — otherwise offer a $5,000-$10,000
+              closing credit or sell as-is at a price reflecting the roof condition.
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               This guide helps Charlotte home sellers decide whether to replace, offer a credit, or sell as-is

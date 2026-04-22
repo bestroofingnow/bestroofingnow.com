@@ -26,6 +26,9 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
@@ -210,6 +213,22 @@ export default function RoofingPermitsCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="What is the Charlotte NC roofing permit process step-by-step?"
+        directAnswer="Charlotte and Mecklenburg County require a building permit for every roof replacement. The licensed contractor submits the application, the county reviews it in 1-3 business days, the permit is posted at the job site before work starts, the roof is installed to NC Residential Code, the contractor schedules the final inspection, and the permit closes once the inspector passes the work. Total cost is typically $100-$300 and the contractor — not you — must pull it."
+        items={[
+          'Step 1 — Licensed contractor submits the application to Mecklenburg County Code Enforcement (property address, scope, materials, NC license number)',
+          'Step 2 — County reviews 1-3 business days to verify license, property records, and code compliance of the proposed work',
+          'Step 3 — Permit issued and posted visibly at the job site before work begins (required by Mecklenburg County)',
+          'Step 4 — Roof installed to NC Residential Building Code (underlayment, drip edge, ice-and-water shield, flashing, IRC §R806 ventilation, fastening pattern)',
+          'Step 5 — Contractor requests final inspection from Mecklenburg County (scheduled within 1-3 business days)',
+          'Step 6 — County inspector verifies code compliance, materials, flashing, and ventilation; permit closed once passed',
+          'HOA approval is a separate process — submit color/material to the architectural review board BEFORE the contractor pulls the permit',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-permits-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Breadcrumbs */}
       <Breadcrumbs
@@ -241,8 +260,11 @@ export default function RoofingPermitsCharlotteNCPage() {
               <br className="hidden md:block" />
               <span className="text-blue-200">Charlotte NC</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Yes, Charlotte and Mecklenburg County require a building permit for roof replacement. Your contractor should pull the permit — if they suggest you do it yourself, that&apos;s a red flag.
+            <p className="speakable-intro text-xl md:text-2xl text-white/90 mb-6">
+              Yes, Charlotte and Mecklenburg County require a building permit for every roof replacement.
+              The permit costs $100-$300, is typically approved in 1-3 business days, and the licensed
+              contractor — not the homeowner — must pull it. If a contractor suggests you pull it yourself
+              or skip it entirely, that&apos;s a red flag indicating they may be unlicensed.
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               This guide covers the permit process, costs, timeline, inspections, and what happens if you skip
