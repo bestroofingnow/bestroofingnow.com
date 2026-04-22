@@ -27,6 +27,10 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -250,6 +254,32 @@ export default function GatedCommunityRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Gated Community Roofing Charlotte NC | HOA Compliant | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/gated-community-roofing-charlotte-nc`}
+        description="HOA-compliant roofing for Charlotte gated communities (The Peninsula, Piper Glen, Quail Hollow, Ballantyne CC, Foxcroft, Carmel CC, Trump National). Architectural review handling, material matching, gate-access protocols."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Gated Community Roofing Charlotte NC', url: `${SITE_CONFIG.url}/gated-community-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does HOA-compliant roofing in a Charlotte gated community include?"
+        directAnswer="HOA-compliant roofing in a Charlotte gated community includes architectural-review submission and approval (typically 2-4 weeks), material and color matching to neighboring homes, certified-installer credentials documentation, gate-access pre-coordination, uniformed and background-checked crews, and adherence to community rules on parking, noise hours, and cleanup. Communities served include The Peninsula, Piper Glen, Quail Hollow, Ballantyne CC, Foxcroft, Carmel CC, Trump National, and River Run."
+        items={[
+          'Architectural-review-board (ARB) approval — material samples, color selections, contractor credentials, brochures submitted on the HOA template; typical 2-4 week turnaround',
+          'Material and color matching to neighboring homes — physical samples brought on-site for comparison before any product is ordered',
+          'Certified-installer documentation — GAF Master Elite, CertainTeed SELECT ShingleMaster, OC Platinum Preferred credentials submitted with the ARB packet',
+          'Gate-access pre-coordination with HOA management or property management company (FirstService Residential, CAMS, AMG) and gate guards',
+          'Uniformed, background-checked crews in marked vehicles — required by most exclusive communities (Trump National, The Peninsula, Quail Hollow)',
+          'Adherence to community rules — work hours (often 8am-5pm M-F only), no Saturday work in some communities, designated dumpster placement, magnetic nail sweeps daily',
+          'Community-specific references — homeowner referrals from prior projects in your specific gated community available on request',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/gated-community-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -275,10 +305,13 @@ export default function GatedCommunityRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               HOA-Compliant Roofing for Charlotte&apos;s Exclusive Communities
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in roofing for Charlotte&apos;s gated communities and HOA
-              neighborhoods. We handle the entire approval process, from material selection to
-              architectural review submission, ensuring your new roof meets every community standard.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now specializes in roofing for Charlotte&apos;s gated communities — The Peninsula,
+              Piper Glen, Quail Hollow, Ballantyne Country Club, Foxcroft, Carmel Country Club, Trump
+              National, River Run, and more. As GAF Master Elite, CertainTeed SELECT ShingleMaster, and
+              Owens Corning Platinum Preferred installers, we handle the full ARB packet, material matching
+              to neighboring homes, gate-access coordination with FirstService/CAMS/AMG management, and
+              uniformed background-checked crews from start to community-protocol cleanup.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

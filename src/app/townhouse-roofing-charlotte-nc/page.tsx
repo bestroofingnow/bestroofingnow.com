@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -205,6 +214,38 @@ export default function TownhouseRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc`}
+        pageName="Townhouse Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Townhouse Roofing Charlotte NC | HOA Compliant | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc`}
+        description="Townhouse and townhome roofing for Charlotte HOA communities. Shared-roof flashing, neighbor coordination, color matching, ARB approval, and condominium-style scheduling."
+        primaryImage={IMAGES.hero.hero2}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Townhouse Roofing Charlotte NC', url: `${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What's different about townhouse roofing in Charlotte HOA communities?"
+        directAnswer="Townhouse roofing in Charlotte HOA communities requires HOA architectural-review approval (2-4 weeks), exact color and style matching to neighboring units, shared-roof flashing and seam coordination at unit boundaries, neighbor scheduling when work crosses shared sections, HOA management coordination (FirstService/CAMS/AMG), and clarification of HOA-vs-owner responsibility for the shared roof — sometimes the HOA owns it, sometimes individual owners do."
+        items={[
+          'HOA architectural-review approval — required by most Charlotte townhouse communities; 2-4 week typical turnaround for ARB packet review',
+          'Exact color and style matching to adjacent units — physical samples brought on-site; we work with manufacturer HOA-approved color palettes',
+          'Shared-roof flashing at unit boundaries — proper step flashing, ice-and-water shield, and butyl seam seals at the party-wall transition',
+          'Neighbor scheduling coordination — required when work affects shared sections (we notify, time, and document with adjacent owners)',
+          'HOA management company coordination — FirstService Residential, CAMS, AMG, and other Charlotte management firms for documentation submission',
+          'HOA-vs-owner responsibility clarification — review of CC&Rs to determine who owns/maintains the shared roof; we advise on the correct claim/coverage path',
+          'Cost — typical Charlotte townhouse replacement $6,000-$15,000 depending on square footage and material; smaller than detached because roof areas are smaller',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -230,10 +271,13 @@ export default function TownhouseRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               HOA-compliant roofing specialists for Charlotte townhouse communities
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now understands the unique requirements of townhouse roofing. From HOA approvals
-              to neighbor coordination and precise color matching, we handle every detail to protect your
-              investment and maintain your community's appearance.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now handles townhouse roofing across Ballantyne, SouthPark, Dilworth, Plaza
+              Midwood, NoDa, South End, Myers Park, Uptown, University City, Huntersville, Cornelius,
+              Davidson, Matthews, Mint Hill, Pineville, and Fort Mill. As GAF Master Elite, CertainTeed
+              SELECT ShingleMaster, and Owens Corning Platinum Preferred installers, we manage HOA
+              architectural-review submission, exact-match shingle selection, shared-roof flashing at
+              party walls, and neighbor coordination — with 30-50 year non-prorated warranties.
             </p>
 
             {/* CTA Buttons */}

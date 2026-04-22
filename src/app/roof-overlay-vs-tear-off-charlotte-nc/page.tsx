@@ -27,6 +27,9 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
@@ -219,6 +222,23 @@ export default function RoofOverlayVsTearOffCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="Should I do a roof overlay or tear-off in Charlotte NC?"
+        directAnswer="Most Charlotte roofers recommend a full tear-off over an overlay. NC building code allows a maximum of 2 asphalt shingle layers, and overlays hide deck damage, add 2-3 lbs/sq ft of weight, shorten lifespan to 12-18 years (vs 20-30 for tear-off), void many GAF/CertainTeed/Owens Corning warranties, and can cause insurance complications. The $2,000-$5,000 upfront savings rarely justify the long-term cost."
+        items={[
+          'Cost — Overlay $4,500-$9,000 vs tear-off $8,000-$25,000 (overlay saves 25-40% upfront in Charlotte)',
+          'Lifespan — Overlay 12-18 years vs tear-off 20-30 years (architectural shingles); per-year-of-life cost favors tear-off',
+          'NC code limit — Maximum 2 asphalt shingle layers; if you already have 2, tear-off is mandatory and Mecklenburg inspectors enforce it',
+          'Warranty — GAF, CertainTeed, OC all reduce or void manufacturer warranties on overlays; tear-off preserves full coverage',
+          'Deck inspection — Overlay HIDES rot, soft sheathing, and prior damage; tear-off allows full deck inspection and repair',
+          'Structural load — Overlay adds 2-3 lbs/sq ft (4,000-6,000 lbs on a typical 2,000 sq ft Charlotte home); tear-off keeps load neutral',
+          'Insurance — Some Charlotte carriers charge higher premiums or limit coverage on overlaid roofs; tear-off accepted at standard rates',
+          'Resale — Overlay flagged by home inspectors and concerns FHA/VA buyers; tear-off preferred for clean title and inspection record',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roof-overlay-vs-tear-off-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Breadcrumbs */}
       <Breadcrumbs
@@ -250,8 +270,11 @@ export default function RoofOverlayVsTearOffCharlotteNCPage() {
               <br className="hidden md:block" />
               <span className="text-blue-200">Charlotte NC Guide</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Technically yes, you can put a new roof over old shingles. But most contractors recommend a full tear-off. NC building code allows a maximum of 2 shingle layers. Overlays hide damage and void some warranties.
+            <p className="speakable-intro text-xl md:text-2xl text-white/90 mb-6">
+              Technically yes, you can put a new roof over old shingles in Charlotte. But most local
+              roofers recommend a full tear-off. NC building code caps you at 2 asphalt shingle layers
+              and Mecklenburg inspectors enforce it. Overlays hide deck damage, add 2-3 lbs/sq ft, shorten
+              lifespan to 12-18 years (vs 20-30 for tear-off), and void many GAF/CertainTeed/OC warranties.
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
               Before you decide, understand the real cost differences, warranty implications, and building code
