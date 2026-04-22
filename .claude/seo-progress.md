@@ -142,7 +142,10 @@ This is a ~15-line surgical diff per page vs full rewrites — allows batch proc
 - [x] `gaf-roofing-charlotte-nc` (599) — 2026-04-21 — added full AEO bundle (had only Breadcrumb+FAQ) + FeaturedSnippet (6 GAF tiers: Timberline HDZ / UHDZ / AS II Class 4 / Grand Sequoia / Camelot II / Glenwood) + FreeInspection + `.speakable-intro` with Master Elite top-2% stat + 50yr Golden Pledge non-prorated + 2026 pricing.
 - [x] `roof-financing-charlotte-nc` (604) — 2026-04-21 — added full AEO bundle + FeaturedSnippet (6 financing paths: 0% promo / extended installment / insurance / HELOC / FHA 203k / PACE) + FreeInspection + `.speakable-intro` with FICO thresholds + $99/mo starting payment + Enhancify/Service Finance partners.
 - [x] `office-building-roof-replacement-vs-coating-charlotte-nc` (607) — 2026-04-21 — added AISearch+Voice+Speakable+FeaturedSnippet (7-criteria replace-vs-coat decision matrix) + FreeInspection + `.speakable-intro` with 2026 per-sq-ft pricing + Duke Energy cool-roof rebate, bumped dateModified.
-- [ ] ... +108 more pages
+- [x] `roofing-arboretum-charlotte-nc` (555) — 2026-04-21 — added Speakable+WebPage+FeaturedSnippet (5 Arboretum-area common services: 1990s-2000s home architectural-shingle replacement, hail/wind Xactimate, pipe-boot/flashing 8-12yr, HOA coord, 6"+ gutter upsizing) + FreeInspection, hero `.speakable-intro` with all 3 residential certs + 50yr non-prorated + 2-4hr Mecklenburg dispatch.
+- [x] `roofing-carmel-charlotte-nc` (555) — 2026-04-21 — added Speakable+WebPage+FeaturedSnippet (5 Carmel-corridor common services: 1980s-2000s replacement, wood-shake/cedar replacement past Piedmont lifespan, pipe-boot, hail Xactimate carrier list, gutter upsizing) + FreeInspection, hero `.speakable-intro` with cert list + dispatch SLA.
+- [x] `roofing-blakeney-charlotte-nc` (556) — 2026-04-21 — added Speakable+WebPage+FeaturedSnippet (5 Blakeney/Ballantyne-adjacent common services: 2000s builder-grade replacement now in 20-25yr wear window, hail Xactimate, pipe-boot, HOA coord, gutter upsizing) + FreeInspection, hero `.speakable-intro` with cert list + dispatch SLA.
+- [ ] ... +105 more pages
 
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19

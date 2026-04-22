@@ -27,6 +27,10 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+  WebPageSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -228,6 +232,30 @@ export default function RoofingCarmelCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Carmel Charlotte NC | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-carmel-charlotte-nc`}
+        description="Roofing contractor serving the Carmel Road corridor in South Charlotte NC. Roof replacement, repair, storm damage."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Carmel Charlotte NC', url: `${SITE_CONFIG.url}/roofing-carmel-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Carmel-corridor Charlotte homeowners need most?"
+        directAnswer="The Carmel Road corridor includes a mix of 1980s-2000s established homes whose original roofs are now 25-40 years old. The most common services are full architectural-shingle replacement, wood-shake/cedar replacement, pipe-boot and flashing repairs, hail/wind storm assessments with Xactimate, and gutter upsizing for canopy rainfall."
+        items={[
+          'Full architectural-shingle replacement of original 25-yr 3-tab and early-architectural roofs',
+          'Repair and replacement of 1980s wood-shake and cedar roofs (now well past their 25-30 year Piedmont lifespan)',
+          'Pipe-boot, valley, and chimney-flashing repairs (8-12 year EPDM pipe-boot failure window)',
+          'Hail and wind storm damage assessments with Xactimate-format documentation for State Farm, Allstate, USAA, Travelers, and Liberty Mutual',
+          'Gutter repair and 6-inch+ upsizing to handle Piedmont rainfall intensity from mature oak/maple/sweetgum canopy',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-carmel-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,11 +281,13 @@ export default function RoofingCarmelCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Trusted Roofing for the Carmel Road Corridor of South Charlotte
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted roofing contractor for homeowners along the Carmel
-              Road corridor in South Charlotte. We specialize in the established 1980s-2000s homes
-              that define this area, delivering quality roof replacements, repairs, and storm
-              damage restoration at competitive prices.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now serves homeowners along the Carmel Road corridor in South Charlotte. The
+              Carmel area mixes 1980s-2000s established homes — many on their original architectural
+              shingles or aging wood shake — putting most properties in the prime replacement window. We
+              hold GAF Master Elite, CertainTeed SELECT, and Owens Corning Platinum Preferred certifications
+              (50-year non-prorated warranties), respond inside 2-4 hours for Mecklenburg storm calls, and
+              provide free inspections with adjuster-format Xactimate photo documentation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

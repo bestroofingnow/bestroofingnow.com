@@ -27,6 +27,10 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+  WebPageSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -228,6 +232,30 @@ export default function RoofingArboretumCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Arboretum Charlotte NC | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-arboretum-charlotte-nc`}
+        description="Roofing contractor serving the Arboretum area off Providence Road in South Charlotte NC. Roof replacement, repair, storm damage."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Arboretum Charlotte NC', url: `${SITE_CONFIG.url}/roofing-arboretum-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Arboretum-area Charlotte homeowners need most?"
+        directAnswer="Most Arboretum-area Charlotte homes were built between the 1990s and early 2000s, so the most common roofing services we deliver in this neighborhood are full architectural-shingle replacement, hail/wind storm damage assessment with Xactimate documentation, pipe-boot and flashing repairs, HOA-compliant product selection, and gutter upsizing for Piedmont rainfall."
+        items={[
+          'Full architectural-shingle roof replacement (original 25-yr 3-tab shingles now 25-30 years in)',
+          'Hail and wind storm damage assessments and insurance claim documentation (Xactimate format)',
+          'Pipe-boot, valley, and chimney-flashing repairs (typical 8-12 year failure points)',
+          'HOA-compliant color and product selection coordination for Arboretum homeowner associations',
+          'Gutter repair and 6-inch+ upsizing to handle Piedmont rainfall intensity from oak/sweetgum canopy',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-arboretum-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,11 +281,13 @@ export default function RoofingArboretumCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Trusted Roofing for South Charlotte&apos;s Arboretum Neighborhood
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for homeowners in the Arboretum area of South
-              Charlotte. With homes primarily built in the 1990s-2000s, many roofs in this area are
-              reaching the end of their lifespan. We deliver expert roof replacements, repairs, and
-              storm damage restoration at competitive prices.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now serves the Arboretum area along Providence Road in South Charlotte. Most
+              Arboretum homes were built in the 1990s-early 2000s with 25-year 3-tab shingles, so a large
+              share of these roofs are now in their 25-30 year replacement window. We hold GAF Master Elite,
+              CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred certifications — unlocking
+              50-year non-prorated warranties — and respond inside 2-4 hours for Mecklenburg storm calls. Free
+              inspections include adjuster-format photo documentation and Xactimate claim support.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

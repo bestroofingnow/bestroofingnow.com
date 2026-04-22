@@ -27,6 +27,10 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+  WebPageSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -228,6 +232,30 @@ export default function RoofingBlakeneyCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Blakeney Charlotte NC | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-blakeney-charlotte-nc`}
+        description="Roofing contractor serving the Blakeney area of South Charlotte NC. Roof replacement, repair, storm damage."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Blakeney Charlotte NC', url: `${SITE_CONFIG.url}/roofing-blakeney-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Blakeney-area Charlotte homeowners need most?"
+        directAnswer="Blakeney is a popular Ballantyne-adjacent neighborhood built primarily in the 2000s, so most homes are now in the 20-25 year window where original architectural shingles begin to fail. The most common services we deliver here are full architectural-shingle replacement, hail/wind storm assessments with Xactimate documentation, pipe-boot and flashing repairs, HOA-compliant product selection, and gutter upsizing."
+        items={[
+          'Full architectural-shingle roof replacement of 2000s-builder-grade roofs reaching end of life',
+          'Hail and wind storm damage assessments with Xactimate-format insurance documentation',
+          'Pipe-boot, valley, and chimney-flashing repairs (8-12 year EPDM pipe-boot failure window)',
+          'HOA-compliant color and product selection coordination for Blakeney homeowner associations',
+          'Gutter repair and 6-inch+ upsizing to handle Piedmont rainfall intensity from neighborhood canopy',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-blakeney-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,10 +281,13 @@ export default function RoofingBlakeneyCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Trusted Roofing for the Blakeney Area of South Charlotte
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the go-to roofing contractor for homeowners near Blakeney in South
-              Charlotte. We specialize in the 2000s-era homes that define this popular area, delivering
-              quality roof replacements, repairs, and storm damage restoration at fair prices.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now serves homeowners in Blakeney and the surrounding Ballantyne-adjacent area
+              of South Charlotte. Most Blakeney homes were built in the 2000s with architectural shingles
+              now in their 20-25 year wear window — prime time for replacement before granule loss accelerates
+              insurance claim risk. We hold GAF Master Elite, CertainTeed SELECT, and Owens Corning Platinum
+              Preferred certifications (50-year non-prorated warranties), respond inside 2-4 hours for storm
+              calls, and provide free inspections with adjuster-format Xactimate documentation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
