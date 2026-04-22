@@ -27,6 +27,10 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -242,6 +246,31 @@ export default function EstateRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Estate Roofing Charlotte NC | Large Home Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/estate-roofing-charlotte-nc`}
+        description="Estate roofing for Charlotte homes 5,000+ sq ft: complex multi-plane roofs, premium materials (slate / copper / clay tile / designer shingles), dedicated PM, multi-phase scheduling."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Estate Roofing Charlotte NC', url: `${SITE_CONFIG.url}/estate-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What makes estate roofing different from standard residential roofing in Charlotte?"
+        directAnswer="Estate roofing on Charlotte homes 5,000+ sq ft requires specialized crews, premium materials, multi-week timelines, and dedicated project management. Roof areas often exceed 8,000-15,000 sq ft with 20+ planes, steep pitches, dormers, turrets, and mixed materials — and 2026 budgets typically run $25,000 to $150,000+."
+        items={[
+          'Complex multi-plane roof systems with 20+ planes, steep pitches, dormers, turrets, covered porticos, and architectural details requiring specialized crews and engineering review',
+          'Premium materials with full NDL warranty stack: natural slate, hand-formed copper, imported clay tile, CertainTeed Grand Manor / Presidential Shake, GAF Camelot II / Glenwood / Grand Sequoia (Golden Pledge / 5-Star)',
+          'Multi-week to multi-phase execution (5,000-7,000 sq ft asphalt projects 1-2 weeks; 10,000+ sq ft slate/copper estates 3-4 weeks; phased scheduling on occupied properties)',
+          'Dedicated estate project manager as single point of contact for material procurement, crew scheduling, quality control, HOA coordination, and daily client communication',
+          'Comprehensive property protection: tarped landscaping, plywood paths over driveways, dedicated material staging away from pools and outdoor kitchens, daily debris cleanup, magnetic nail sweeps',
+          'High-value insurance claim handling with Xactimate documentation for matching premium materials, on-site adjuster meetings, and supplemental filing for code-required upgrades',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/estate-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
@@ -267,11 +296,14 @@ export default function EstateRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium Roofing for Charlotte&apos;s Largest &amp; Finest Homes
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in estate roofing for homes 5,000 square feet and above.
-              Our experienced crews handle the most complex roof systems with premium materials,
-              dedicated project management, and the meticulous attention to detail that
-              Charlotte&apos;s grandest properties demand.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now specializes in estate roofing for Charlotte homes 5,000-15,000+ sq ft
+              across Myers Park, Eastover, Quail Hollow, Foxcroft, Piper Glen, The Peninsula, and
+              Lake Norman waterfront. As GAF Master Elite, CertainTeed SELECT ShingleMaster, and
+              Owens Corning Platinum Preferred installers, we deliver premium materials (natural
+              slate, hand-formed copper, imported clay tile, designer shingles) with 50-year
+              non-prorated warranties, dedicated project management, and multi-phase scheduling
+              for occupied properties.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -209,6 +218,31 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Plaza Midwood Charlotte NC | Historic Craftsman Homes | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc`}
+        description="Roofing for Plaza Midwood's 1920s craftsman bungalows and historic homes. Material matching, low-pitch reroofs, decorative-rafter preservation, mature-landscape protection."
+        primaryImage={IMAGES.neighborhoods.plazaMidwood}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Plaza Midwood Charlotte NC', url: `${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What's different about roofing Plaza Midwood's historic craftsman bungalows?"
+        directAnswer="Plaza Midwood's 1920s-1940s craftsman bungalows have low-pitched roofs (4/12-6/12), wide eaves with exposed rafter tails, decorative knee braces, and dated attic ventilation. We preserve historic character with material-matched architectural shingles, upgrade attic ventilation to NC code (IRC §R806 1:300 NFVA), and protect the mature landscaping these homes are known for."
+        items={[
+          'Historic-character architectural shingle replacement (CertainTeed Landmark Pro and GAF Timberline HDZ in heritage colors with 30+ year non-prorated warranties)',
+          'Cedar shake and slate restoration with CSSB Certi-Grade cedar and natural slate for The Plaza, Pecan Avenue, and Central Avenue contributing properties',
+          'Decorative rafter-tail and knee-brace preservation: careful tear-off, drip-edge integration, and ice-and-water shield install that protects exposed craftsman trim',
+          'Attic ventilation upgrades to NC IRC §R806 1:300 balanced NFVA (many pre-WWII Plaza Midwood homes have inadequate intake/exhaust causing premature shingle failure)',
+          'Mature landscape and tree-canopy protection: tarped gardens, plywood paths, dumpster placement off mature root zones, and magnetic nail sweeps for oak/maple/dogwood beds',
+          'Hail and wind insurance claim documentation in Xactimate format for State Farm / Allstate / Liberty Mutual / USAA / Travelers Mecklenburg claims',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -234,10 +268,13 @@ export default function RoofingPlazaMidwoodCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Expert Roofing for Historic Craftsman Homes
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Plaza Midwood&apos;s eclectic charm deserves roofing contractors who understand historic homes.
-              Best Roofing Now specializes in craftsman bungalows, historic properties, and the unique
-              architectural character that makes this neighborhood special.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Plaza Midwood&apos;s 1920s-1940s craftsman bungalows along The Plaza, Pecan Avenue, Central
+              Avenue, and Thomas Avenue deserve roofers who understand historic homes. As GAF Master
+              Elite, CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred installers,
+              we deliver heritage-color architectural shingles and CSSB cedar with 30-50 year
+              non-prorated warranties, attic ventilation brought to NC IRC §R806 code, and the
+              landscape protection these mature-canopy properties demand.
             </p>
 
             {/* CTA Buttons */}

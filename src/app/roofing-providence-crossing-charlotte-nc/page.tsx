@@ -27,6 +27,10 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -228,6 +232,30 @@ export default function RoofingProvidenceCrossingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Providence Crossing Charlotte NC | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-providence-crossing-charlotte-nc`}
+        description="Roofing contractor for Providence Crossing in South Charlotte. Replacement, repair, hail/storm claims, HOA coordination for 1990s-2000s homes."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Providence Crossing Charlotte NC', url: `${SITE_CONFIG.url}/roofing-providence-crossing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Providence Crossing homeowners need most?"
+        directAnswer="Providence Crossing's 1990s-2000s homes are now in the 20-35 year wear window, so the most common requests are full architectural-shingle replacement, hail/wind insurance claims, pipe-boot and flashing repair, HOA architectural-review coordination, and 6-inch+ gutter upsizing for tropical-remnant rainfall."
+        items={[
+          'Full architectural-shingle replacement on 1990s-2000s homes (GAF Timberline HDZ / CertainTeed Landmark Pro / OC TruDef Duration past original 25-30 yr shingle life)',
+          'Hail and wind insurance claim documentation in Xactimate format with NOAA hail-event matching (State Farm / Allstate / Liberty Mutual / USAA / Travelers Mecklenburg)',
+          'Pipe-boot, flashing, and pipe-collar repair (EPDM pipe boots fail at 8-12 years on Charlotte sun exposure — top leak source on Providence Crossing roofs)',
+          'HOA architectural-review board coordination for Providence Crossing / Providence Plantation / Providence Country Club (sample boards, color selections, submittals)',
+          '6-inch+ gutter upsizing with 3x4 downspouts (original 5-inch gutters undersized for tropical remnants like Florence/Helene; 30-40% bundling savings during reroof)',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-providence-crossing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,11 +281,14 @@ export default function RoofingProvidenceCrossingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Trusted Roofing for Providence Crossing Homeowners
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now serves Providence Crossing and the surrounding Providence Road
-              corridor with expert roofing services. With many homes in this area now 20-35
-              years old, we help homeowners make smart decisions about repair, maintenance,
-              and replacement.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now serves Providence Crossing and the Providence Road corridor (Providence
+              Plantation, Providence Country Club, Providence Downs, Highgate, Sardis, Colony, Sharon)
+              with GAF Master Elite (top 2% of US roofers), CertainTeed SELECT ShingleMaster, and
+              Owens Corning Platinum Preferred installation. Homes here are now in the 20-35 year
+              shingle-wear window — we deliver 50-year non-prorated warranty replacements, 2-4 hour
+              Mecklenburg dispatch, and Xactimate-format insurance documentation for hail and wind
+              claims.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
