@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -209,6 +218,31 @@ export default function RoofingNodaCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing NoDa Charlotte NC | Arts District Roofers | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-noda-charlotte-nc`}
+        description="Roofing for NoDa's converted textile mills, 1900s worker cottages, galleries, breweries, and mixed-use buildings along North Davidson Street."
+        primaryImage={IMAGES.neighborhoods.noda}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing NoDa Charlotte NC', url: `${SITE_CONFIG.url}/roofing-noda-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do NoDa Arts District properties typically need?"
+        directAnswer="NoDa's mix of 1900s worker cottages, converted textile mill lofts, galleries, breweries, and mixed-use buildings along North Davidson Street need flat-roof TPO/EPDM systems for mill conversions, heritage-color architectural shingles for cottages, gallery-crawl scheduling, dense-neighbor coordination, and 24/7 emergency response for water-sensitive art and inventory."
+        items={[
+          'Flat-roof TPO and EPDM systems for converted textile mill lofts (60 mil reinforced membranes with proper ponding-prevention slope)',
+          'Modified bitumen torch-down for parapet-walled mill buildings along 36th Street and North Davidson',
+          'Heritage-color architectural shingles for 1900s worker cottages (CertainTeed Landmark Pro / GAF Timberline HDZ in period-appropriate colors)',
+          'Gallery-crawl and street-festival schedule coordination (NoDa First Friday, Crawl events, Booty Loop runs)',
+          'Dense-neighbor protection protocols (tarped adjacent properties, plywood paths, magnetic nail sweeps for the tight cottage spacing typical to this neighborhood)',
+          '24/7 emergency dispatch for water-sensitive art inventory at galleries, breweries, and studio spaces (1-3hr response in the NoDa zone)',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-noda-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -234,10 +268,13 @@ export default function RoofingNodaCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Arts District Roofing Experts
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              NoDa&apos;s creative spirit deserves roofing contractors who appreciate its unique character.
-              From historic mill homes to gallery spaces, Best Roofing Now provides expert roofing services
-              tailored to the Arts District&apos;s diverse properties.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              NoDa&apos;s converted textile mills, 1900s worker cottages, galleries, and breweries along
+              North Davidson and 36th Street deserve roofers who handle both flat commercial systems and
+              historic residential. As GAF Master Elite, CertainTeed SELECT ShingleMaster, OC Platinum
+              Preferred, and Carlisle/JM/Firestone-Holcim authorized commercial installers, we deliver
+              TPO/EPDM mill-loft reroofs, heritage-color shingles for cottages, 30-50 yr non-prorated
+              warranties, and 1-3 hr emergency response for water-sensitive art and inventory.
             </p>
 
             {/* CTA Buttons */}

@@ -28,6 +28,10 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -242,6 +246,31 @@ export default function CustomHomeRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Custom Home Roofing Charlotte NC | Architect-Designed Homes | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/custom-home-roofing-charlotte-nc`}
+        description="New-construction roofing for Charlotte custom builders. Blueprint review, complex multi-plane systems, premium material selection (designer shingles / metal / slate), builder volume pricing, on-time delivery."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Custom Home Roofing Charlotte NC', url: `${SITE_CONFIG.url}/custom-home-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does custom home roofing in Charlotte include during new construction?"
+        directAnswer="Custom home roofing on Charlotte new construction starts with blueprint review during design phase, then includes material selection (designer shingles, standing seam metal, natural or synthetic slate), complex multi-plane installation, balanced ventilation engineered to NC IRC §R806, builder coordination, and warranty documentation for the homeowner closing package."
+        items={[
+          'Pre-construction blueprint review (drainage paths, ventilation calc, material takeoffs, valley/hip/ridge planning) before framing locks in geometry',
+          'Material selection for architectural style: designer shingles (CertainTeed Grand Manor / GAF Grand Sequoia / Camelot II) for traditional, standing seam metal Kynar finishes for modern farmhouse, natural or synthetic slate (DaVinci / Brava) for estate',
+          'Complex multi-plane installation with steep pitches, dormers, turrets, and architectural transitions requiring specialized crews and engineering review',
+          'Balanced ventilation system to NC IRC §R806 (1:300 NFVA balanced ridge intake/soffit exhaust) coordinated with HVAC and insulation contractors',
+          'Direct GC coordination through dedicated project manager: scheduling around dry-in milestones, change-order responsiveness, on-site progress meetings, code-inspection support',
+          'Premium NDL warranty documentation for closing packages: GAF Golden Pledge / CertainTeed 5-Star / Owens Corning Platinum Protection 50 yr non-prorated transferable',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/custom-home-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -267,10 +296,14 @@ export default function CustomHomeRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Expert Roofing for New Construction &amp; Custom-Built Homes
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now partners with Charlotte&apos;s top custom home builders and general contractors
-              to deliver premium roofing installations on new construction projects. From blueprint review
-              to final inspection, we coordinate seamlessly with your build team.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now partners with Charlotte&apos;s top custom home builders and architects on
+              new construction across Myers Park, SouthPark, Ballantyne, Lake Norman waterfront, and the
+              Davidson/Huntersville/Waxhaw corridors. As GAF Master Elite (top 2% of US roofers),
+              CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred installers, we
+              deliver blueprint review, premium material selection (designer shingles, standing seam
+              metal, natural or synthetic slate), 50 yr non-prorated transferable warranties, and
+              dedicated PM coordination through framing, dry-in, and final inspection.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -209,6 +218,31 @@ export default function RoofingSteeleCreekCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Steele Creek Charlotte NC | Southwest Charlotte | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-steele-creek-charlotte-nc`}
+        description="Roofing for Steele Creek master-planned communities (Berewick, Rivergate, Whitehall, Palisades). 2000s-2010s builder-grade replacement, hail/wind claims, HOA coordination."
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Steele Creek Charlotte NC', url: `${SITE_CONFIG.url}/roofing-steele-creek-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Steele Creek homeowners need most?"
+        directAnswer="Steele Creek's 2000s-2010s master-planned communities (Berewick, Rivergate, Whitehall, Palisades) are now in the 10-25 year builder-grade-shingle wear window, so the most common requests are full architectural-shingle replacement, hail/wind insurance claim documentation, HOA architectural-review board coordination, pipe-boot and flashing repair, and Class 4 impact-resistant upgrades for State Farm/Allstate insurance discounts."
+        items={[
+          'Full architectural-shingle replacement on 2000s-2010s builder-grade roofs (GAF Timberline HDZ / CertainTeed Landmark Pro / OC TruDef Duration with 30-50 yr non-prorated warranties)',
+          'Hail and wind insurance claim documentation in Xactimate format with NOAA hail-event matching for Berewick / Rivergate / Whitehall / Palisades / Lake Wylie',
+          'HOA architectural-review board coordination (sample boards, color matching, submittal packets) for Steele Creek master-planned community ARBs',
+          'Pipe-boot, flashing, and pipe-collar repair (EPDM pipe boots fail at 8-12 years on Charlotte sun exposure — top leak source on builder-grade roofs)',
+          'Class 4 impact-resistant shingle upgrades (Malarkey Vista / GAF AS II) qualifying for 10-30% NC homeowners insurance discount with 5-7 year payback',
+          '6-inch+ K-style gutter upsizing with 3x4 downspouts for tropical-remnant rainfall (Florence / Isaias / Helene)',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-steele-creek-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -234,10 +268,13 @@ export default function RoofingSteeleCreekCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Southwest Charlotte&apos;s Family Roofing Experts
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Steele Creek&apos;s growing communities deserve roofing contractors who understand modern
-              subdivisions. Best Roofing Now provides expert roofing services for family homes,
-  working within HOA guidelines while delivering exceptional quality.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Steele Creek&apos;s 2000s-2010s master-planned communities (Berewick, Rivergate, Whitehall,
+              Palisades, Lake Wylie corridor) are in the 10-25 year builder-grade shingle wear window.
+              As GAF Master Elite (top 2%), CertainTeed SELECT ShingleMaster, and Owens Corning Platinum
+              Preferred installers, we deliver 30-50 yr non-prorated warranty replacements, Class 4
+              impact-resistant upgrades for 10-30% NC insurance discounts, HOA architectural-review
+              coordination, Xactimate-format claim documentation, and 2-4 hr Mecklenburg dispatch.
             </p>
 
             {/* CTA Buttons */}
