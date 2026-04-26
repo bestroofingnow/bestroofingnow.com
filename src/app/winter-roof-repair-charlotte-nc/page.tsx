@@ -20,7 +20,16 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -232,6 +241,39 @@ export default function WinterRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/winter-roof-repair-charlotte-nc`}
+        pageName="Winter Roof Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Winter Roof Repair Charlotte NC | Cold-Weather Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/winter-roof-repair-charlotte-nc`}
+        description="Winter roof repair in Charlotte NC. Cold-weather mastic hand-seal application, ice dam removal, freeze-thaw crack repair, emergency leak response in 1-4 hours. Service-temperature spec follows shingle manufacturer 40°F minimum with mastic exception."
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Winter Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/winter-roof-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does winter roof repair in Charlotte NC involve?"
+        directAnswer="Winter roof repair in Charlotte NC works through cold-weather adaptations: shingle install requires 40°F minimum surface temperature per GAF/CertainTeed/OC, but emergency repair uses hand-applied roofing mastic to seal at any temp; ice dam removal uses calcium chloride pucks (not rock salt — corrodes flashing) and steam removal for thick events; freeze-thaw crack repair seals expanded fastener pop-outs and split underlayment; emergency leak response gets a tarp on within 1-4 hours by zone. Pricing $400-$2,800 typical winter scope. Charlotte sees 1-3 ice events per year (notably 2002, 2014, 2026 storms) and the December-February freeze-thaw cycle is harder on roofs than summer hail in lifecycle terms."
+        items={[
+          'Cold-temp shingle limitations — manufacturer 40°F minimum for self-seal; below that we use mastic hand-seal exception',
+          'Roofing mastic emergency seal — Karnak 19, Henry 208R, Geocel 2300; works in any temp for spot leak repair',
+          'Ice dam removal — calcium chloride pucks (NOT rock salt, which corrodes flashing); steam-removal for thick events',
+          'Freeze-thaw fastener pop repair — re-nail with sealed coil and dab of mastic; common after deep cold cycles',
+          'Pipe boot crack repair — neoprene/EPDM splits at the flange; cold accelerates UV-aged material failure',
+          '24/7 emergency leak response — 1-4 hr tarp dispatch by zone, even during ice events',
+          'Heat cable retrofit — for high-risk eaves at Davidson/Cornelius/Huntersville/Lake Norman north shore',
+          'Charlotte ice event history — 2002 ice storm, 2014 freeze, 2026 ice storm; preparation matters more than south-Charlotte assumes',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/winter-roof-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -257,10 +299,15 @@ export default function WinterRoofRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Cold weather specialists protecting Charlotte homes through winter
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Don't let winter damage compromise your home. Best Roofing Now provides expert cold weather roof repairs,
-  ice dam prevention, and 24/7 emergency services throughout the Charlotte area. Our trained crews work
-              safely in winter conditions to protect your home.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now performs winter roof repair across Charlotte and the higher-risk
+              shaded north Mecklenburg and Lake Norman corridors of Davidson, Cornelius,
+              Huntersville, Mooresville, Denver, and Sherrills Ford, plus Ballantyne, SouthPark,
+              Plaza Midwood, Myers Park, NoDa, Eastover, Foxcroft, Beverly Woods, Steele Creek, and
+              University City. Our crews work safely in cold conditions using Karnak 19 / Henry 208R
+              / Geocel 2300 mastic for sub-40°F seals, calcium chloride pucks for ice dam removal,
+              and 24/7 emergency tarp dispatch in 1-4 hours. Battle-tested through the 2002, 2014,
+              and 2026 ice storms.
             </p>
 
             {/* CTA Buttons */}

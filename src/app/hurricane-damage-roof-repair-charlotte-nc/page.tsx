@@ -23,7 +23,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -234,6 +243,39 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/hurricane-damage-roof-repair-charlotte-nc`}
+        pageName="Hurricane Damage Roof Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Hurricane Damage Roof Repair Charlotte NC | 24/7 Storm Response | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/hurricane-damage-roof-repair-charlotte-nc`}
+        description="Hurricane damage roof repair in Charlotte NC. 24/7 emergency tarp dispatch in 1-4 hours by zone, full insurance claim handling, FEMA disaster declaration support, post-storm Florence/Helene/Idalia experience. NC code 110+ MPH wind-rated installation."
+        primaryImage={IMAGES.services.stormDamage}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Hurricane Damage Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/hurricane-damage-roof-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="How does hurricane damage roof repair work in Charlotte NC?"
+        directAnswer="Hurricane damage roof repair in Charlotte NC follows a 7-step process after storm impact: (1) safety assessment and 24/7 emergency tarp dispatch in 1-4 hours by zone; (2) photo and chalk-circle documentation of every damage point; (3) NOAA storm-event verification and Xactimate-format estimate prep; (4) insurance claim filing and on-site adjuster meeting; (5) supplemental filing for missed damage and code upgrades; (6) full or partial replacement with NC code minimum 110 MPH wind rating (Class 4 upgrade to 150 MPH for 10-30% NC insurance discount); (7) FEMA disaster-declaration support including DR registration and SBA loan documentation. Common Charlotte hurricane events: Florence 2018, Idalia 2023, Helene 2024 — Charlotte sits in the inland tropical-remnant zone for August-October systems."
+        items={[
+          '24/7 emergency tarp dispatch — 1-4 hr response by zone with 12-mil reinforced tarp + 2x4 batten frame',
+          'NOAA storm-event verification — wind speed, hail size, system path documentation for adjuster',
+          'Xactimate-format estimate — adjuster-recognized line items including code upgrades and overhead-and-profit',
+          'Adjuster on-site meeting — we walk the roof together, supplement at the appointment for missed damage',
+          'NC code 110 MPH minimum — Class 4 upgrade reaches 150 MPH with 6-nail starter and 10-30% NC insurance discount',
+          'FEMA disaster declaration support — DR registration, individual assistance applications, SBA loan documentation',
+          'Recent Charlotte hurricane experience — Florence 2018, Idalia 2023, Helene 2024 inland tropical remnants',
+          'Free contractor choice under NC law — you may use any licensed contractor, not just carrier preferred vendor',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/hurricane-damage-roof-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -259,10 +301,16 @@ export default function HurricaneDamageRoofRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Rapid storm recovery when hurricanes impact Charlotte
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              When hurricanes and tropical storms strike Charlotte, Best Roofing Now is ready with 24/7 emergency
-              response, professional tarping, and complete storm restoration. Our insurance claim specialists ensure
-              you receive fair compensation while we restore your home to pre-storm condition.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now provides 24/7 hurricane damage roof repair across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Steele Creek, University City, and the Lake
+              Norman lakefront communities of Huntersville, Cornelius, Davidson, and Mooresville.
+              Tarp dispatch in 1-4 hours by zone, NC 110+ MPH wind-rated installations, Class 4
+              upgrades that reach 150 MPH and unlock 10-30% NC insurance discounts, FEMA
+              disaster-declaration support, and full claim handling for State Farm, Allstate, USAA,
+              Liberty Mutual, Travelers, Nationwide, Erie, and Farm Bureau. Battle-tested through
+              Florence 2018, Idalia 2023, and Helene 2024.
             </p>
 
             {/* CTA Buttons */}

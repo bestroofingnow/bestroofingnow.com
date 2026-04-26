@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -234,6 +243,39 @@ export default function ResidentialRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/residential-roofing-charlotte-nc`}
+        pageName="Residential Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Residential Roofing Charlotte NC | Certified Installer | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/residential-roofing-charlotte-nc`}
+        description="Residential roofing in Charlotte NC. Architectural shingles ($5-9/sq ft), metal standing seam ($9-16/sq ft), tile and slate, full GAF Master Elite + CertainTeed SELECT ShingleMaster + OC Platinum certifications, 30-50 year non-prorated warranties."
+        primaryImage={IMAGES.hero.hero4}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Residential Roofing Charlotte NC', url: `${SITE_CONFIG.url}/residential-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does residential roofing in Charlotte NC cost?"
+        directAnswer="Residential roofing in Charlotte NC ranges $5-$25+ per sq ft installed depending on material: architectural shingles $5-$9/sq ft (most common — typical 30-square Charlotte home $11,000-$18,000), Class 4 impact-resistant shingles $7-$11/sq ft, designer/luxury shingles $9-$14/sq ft, standing seam metal $9-$16/sq ft, stone-coated steel $10-$14/sq ft, synthetic slate $11-$18/sq ft, real slate $20-$35/sq ft, clay tile $15-$25/sq ft. Premium upgrades that affect total cost: synthetic underlayment +$0.30/sq ft, ice-and-water shield +$0.40/sq ft, ridge vent +$8-$12/lf, drip edge replacement +$2/lf, decking replacement $80-$120/sheet. Best Roofing Now is GAF Master Elite (top 2%), CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred — unlocking 30-50 year non-prorated transferable warranties."
+        items={[
+          'Architectural shingles — $5-$9/sq ft installed; GAF Timberline HDZ, CertainTeed Landmark, OC TruDefinition Duration',
+          'Class 4 impact-resistant shingles — $7-$11/sq ft installed; 10-30% NC insurance discount, hail belt protection',
+          'Designer/luxury shingles — $9-$14/sq ft installed; GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire',
+          'Standing seam metal — $9-$16/sq ft installed; aluminum/steel/zinc/copper, 50+ yr lifespan',
+          'Stone-coated steel — $10-$14/sq ft installed; Class 4 with 50 yr warranty',
+          'Synthetic slate (DaVinci, Brava, CeDUR) — $11-$18/sq ft installed; Class 4 + Class A fire',
+          'Real slate — $20-$35/sq ft installed; 100+ yr lifespan; Eastover/Foxcroft/Quail Hollow estate use',
+          'GAF Master Elite + CertainTeed SELECT + OC Platinum — unlocks 30-50 yr non-prorated warranties',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/residential-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -259,10 +301,16 @@ export default function ResidentialRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Expert home roofing services with {SITE_CONFIG.roofsInstalled}+ roofs completed
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in residential roofing throughout Charlotte NC. From shingle repairs
-              to complete roof replacements, our certified installers deliver exceptional quality with premium
-              materials and industry-leading warranties for your home.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs and replaces residential roofs across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University
+              City, Providence, Quail Hollow, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville. We install architectural and Class 4 shingles, designer
+              and luxury lines, standing-seam metal, stone-coated steel, synthetic slate, real slate,
+              and clay tile — all backed by GAF Master Elite (top 2% nationwide), CertainTeed SELECT
+              ShingleMaster, and OC Platinum Preferred 30-50 year non-prorated transferable
+              warranties.
             </p>
 
             {/* CTA Buttons */}

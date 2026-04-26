@@ -21,7 +21,16 @@ import {
   FileText,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -233,6 +242,39 @@ export default function SpringRoofInspectionCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/spring-roof-inspection-charlotte-nc`}
+        pageName="Spring Roof Inspection Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Spring Roof Inspection Charlotte NC | Free Pre-Storm Assessment | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/spring-roof-inspection-charlotte-nc`}
+        description="Free spring roof inspection in Charlotte NC. Catch winter freeze-thaw damage and prep for May-June hail belt and August-October tropical remnants. 12-point inspection report with photo documentation, no pressure, no obligation."
+        primaryImage={IMAGES.hero.hero7}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Spring Roof Inspection Charlotte NC', url: `${SITE_CONFIG.url}/spring-roof-inspection-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does a spring roof inspection in Charlotte NC include?"
+        directAnswer="A free spring roof inspection in Charlotte NC catches winter freeze-thaw damage and pre-storm-prep before the May-June hail belt peak and August-October tropical remnants. A standard 12-point spring inspection includes: shingle integrity check, granule loss assessment, fastener pop-out review, ridge cap and flashing verification, valley wear, pipe boot condition (8-12 yr typical lifespan), chimney flashing reglet, gutter and downspout integrity, debris clearing, attic ventilation NC IRC §R806 NFVA balance check, soffit/fascia rot probe, and full photo documentation packet for insurance baseline. Free of charge, with detailed written report and honest repair-vs-replace recommendation."
+        items={[
+          'Shingle integrity — lifted seams, exposed nails, freeze-thaw cracks, hail strikes from prior storms',
+          'Granule loss — bald spots indicate end-of-life shingle; mat exposure creates UV degradation',
+          'Fastener pop-outs — winter expansion lifts nails out 1/8-1/4 in; common cause of winter leaks',
+          'Pipe boot condition — neoprene/EPDM 8-12 yr lifespan; spring is the season they crack',
+          'Chimney flashing reglet — mortar pick-test, step flashing alignment, cricket integrity check',
+          'Attic ventilation NFVA balance — verify NC IRC §R806 1:150 / 1:300 ratios with paired soffit intake',
+          'Gutter flush — pollen, oak catkins, sweetgum balls; full water flow test under 4 in/hr equivalent',
+          'Insurance baseline photo packet — pre-storm condition documentation skips "was this existing?" disputes',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/spring-roof-inspection-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -258,10 +300,16 @@ export default function SpringRoofInspectionCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Free post-winter assessment to catch damage before spring storms
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Winter takes a toll on Charlotte roofs. Our free spring inspection identifies damage from freeze-thaw
-              cycles, clears winter debris, and prepares your roof for thunderstorm season. Get a detailed report with
-              photos and honest recommendations - no pressure, no obligation.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now provides free spring roof inspections across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University
+              City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville.
+              Our 12-point post-winter assessment catches freeze-thaw damage, debris, and pipe-boot
+              cracks before the May-June hail belt and August-October tropical remnants — including
+              full photo documentation packets for insurance baseline. No pressure, no obligation,
+              and honest repair-vs-replace guidance from a BBB A+, GAF Master Elite, CertainTeed
+              SELECT ShingleMaster contractor.
             </p>
 
             {/* CTA Buttons */}

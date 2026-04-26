@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -235,6 +244,39 @@ export default function EPDMRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/epdm-roofing-charlotte-nc`}
+        pageName="EPDM Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="EPDM Roofing Charlotte NC | Rubber Membrane Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/epdm-roofing-charlotte-nc`}
+        description="EPDM rubber roofing in Charlotte NC. 45-mil, 60-mil, and 90-mil ballasted, mechanically attached, and fully adhered systems from Carlisle Sure-Seal, Johns Manville JM EPDM, Firestone-Holcim RubberGard, and Mule-Hide. 30-50 year service life with NDL warranties."
+        primaryImage={IMAGES.commercial.flatRoof}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'EPDM Roofing Charlotte NC', url: `${SITE_CONFIG.url}/epdm-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does EPDM roofing cost in Charlotte NC?"
+        directAnswer="EPDM (ethylene propylene diene monomer) rubber roofing in Charlotte NC runs $4-$10 per sq ft installed depending on thickness, attachment, and insulation. 45-mil mechanically attached starts at $4-$6/sq ft (budget-tier on smaller commercial buildings); 60-mil fully adhered with R-25 polyiso runs $6-$9/sq ft (industry standard); 90-mil ballasted reinforced reaches $8-$10/sq ft (premium with stone-ballast wind protection). EPDM has 60+ years of proven Charlotte performance with 30-50 year typical service life and NDL (no-dollar-limit) warranties 15-30 years from Carlisle Sure-Seal, Johns Manville JM EPDM, Firestone-Holcim RubberGard, and Mule-Hide. EPDM excels for parapet-walled buildings, retrofits over existing systems, and humid Charlotte climate (no plasticizer migration like PVC)."
+        items={[
+          'EPDM 45-mil mechanically attached — $4-$6/sq ft installed; budget tier for warehouses and small commercial',
+          'EPDM 60-mil fully adhered — $6-$9/sq ft installed; industry-standard with smooth surface and minimal seams',
+          'EPDM 90-mil ballasted with reinforcement — $8-$10/sq ft installed; stone-ballast wind protection',
+          'Carlisle Sure-Seal — 20-30 yr NDL via authorized installer; industry-leading wind warranty',
+          'Johns Manville JM EPDM — 20-yr NDL; available with PVKEE topcoat for industrial chemical exposure',
+          'Firestone-Holcim RubberGard — 20-30 yr NDL; QuickSeam splice tape for monolithic seams',
+          'Mule-Hide — 15-20 yr warranty; cost-competitive option for budget-conscious capital projects',
+          '60+ year proven Charlotte performance — no plasticizer migration in humid climate; superior to first-gen PVC',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/epdm-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -260,10 +302,15 @@ export default function EPDMRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Durable rubber roof installation with a 30-50 year lifespan
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in EPDM rubber roof installation for commercial and
-              industrial buildings throughout Charlotte. With 60+ years of proven performance,
-  EPDM delivers unmatched reliability and the lowest lifecycle costs.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs EPDM rubber roofing systems for commercial and industrial
+              buildings across Charlotte and the I-77, I-85, I-485, US-29, and Independence Boulevard
+              corridors — including warehouses in Steele Creek and University City, manufacturing
+              in Concord and Mooresville, retail centers in SouthPark and Ballantyne, and office
+              complexes in South End and Park Road. We are authorized installers for Carlisle
+              Sure-Seal, Johns Manville JM EPDM, Firestone-Holcim RubberGard, and Mule-Hide with
+              15-30 year NDL warranties — proven in Charlotte's humid climate for 60+ years with
+              no plasticizer migration concerns.
             </p>
 
             {/* CTA Buttons */}
