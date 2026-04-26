@@ -6,7 +6,15 @@ import { SITE_CONFIG, ROOFING_COMPARISONS, ROOFING_MATERIALS } from '@/lib/const
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { EstimateButton } from '@/components/estimate';
-import { BreadcrumbSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -373,6 +381,29 @@ export default async function ComparePage({ params }: ComparePageProps) {
           { name: comparison.title, url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${comparison.title} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question={`${comparison.title} — which is right for Charlotte NC homes?`}
+        directAnswer={`${comparison.description} Best Roofing Now is a certified installer for both options across all major manufacturers (GAF Master Elite top 2%, CertainTeed SELECT ShingleMaster, OC Platinum Preferred for residential; Carlisle Sure-Seal, Johns Manville, Firestone-Holcim, Mule-Hide for commercial), so the choice is informed by your priorities — cost, longevity, aesthetic, HOA approval, insurance discount eligibility, and Charlotte climate compatibility — rather than installer access. We provide free written comparison estimates with line-item materials, labor, and warranty options across both choices.`}
+        items={[
+          `Cost comparison — 2026 Charlotte per-sq-ft pricing for both options`,
+          `Lifespan comparison — expected service life in Charlotte humid subtropical climate`,
+          `Insurance discount eligibility — Class 4 impact resistance and NC IBHS Fortified`,
+          `HOA approval considerations — color/style restrictions in Charlotte communities`,
+          `Maintenance requirements over 25-50 year lifespan`,
+          `Warranty options and what each unlock requires`,
+          `Best fit for specific Charlotte neighborhoods and architectural styles`,
+          `Resale ROI on appraisal for typical Charlotte home`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">

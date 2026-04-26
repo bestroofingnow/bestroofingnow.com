@@ -6,6 +6,15 @@ import { SITE_CONFIG, COMMERCIAL_SYSTEMS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 interface CommercialSystemPageProps {
   params: Promise<{ slug: string }>;
@@ -74,9 +83,51 @@ export default async function CommercialSystemPage({ params }: CommercialSystemP
   }
 
   const otherSystems = COMMERCIAL_SYSTEMS.filter((s) => s.slug !== slug).slice(0, 3);
+  const pageUrl = `${SITE_CONFIG.url}/commercial-systems/${slug}`;
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Commercial Systems', url: `${SITE_CONFIG.url}/commercial-systems` },
+          { name: system.name, url: pageUrl },
+        ]}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${system.name} Commercial Roofing Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name={`${system.name} Commercial Roofing Charlotte NC | Best Roofing Now`}
+        url={pageUrl}
+        description={`${system.description} Best Roofing Now installs ${system.name} commercial roofing systems across Charlotte and the I-77, I-85, I-485, US-29, and Independence Boulevard corridors with NDL warranties from authorized manufacturers.`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Commercial Systems', url: `${SITE_CONFIG.url}/commercial-systems` },
+          { name: system.name, url: pageUrl },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question={`What does ${system.name} commercial roofing cost in Charlotte NC?`}
+        directAnswer={`${system.description} Best Roofing Now is an authorized commercial installer for Carlisle Syntec, Johns Manville, Firestone-Holcim, GAF, and Mule-Hide ${system.name} systems with NDL (no-dollar-limit) warranties of 15-30 years. We service Charlotte commercial buildings across the I-77, I-85, I-485, US-29, and Independence Boulevard corridors — warehouses in Steele Creek and University City, retail centers in SouthPark and Ballantyne, manufacturing in Concord and Mooresville, office complexes in South End and Park Road. Free written commercial estimates with itemized line items including system, insulation R-value, attachment method, edge metal, and warranty options.`}
+        items={[
+          `${system.name} system specifications and Charlotte 2026 per-sq-ft pricing`,
+          `NDL warranty options 15-30 yr from authorized manufacturers`,
+          `Insulation R-value options for NC commercial energy code compliance`,
+          `Attachment method comparison (mechanical, fully adhered, ballasted)`,
+          `Energy Star cool-roof eligibility and Duke Energy commercial rebates`,
+          `Best fit for Charlotte commercial building types (warehouse, retail, office, manufacturing)`,
+          `Maintenance contract options to preserve NDL warranty validity`,
+          `Insurance claim handling for storm-damaged commercial roofs`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -94,8 +145,13 @@ export default async function CommercialSystemPage({ params }: CommercialSystemP
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {system.fullName}
             </h1>
-            <p className="text-xl text-white/90 mb-6">
-              {system.description}
+            <p className="speakable-intro text-xl text-white/90 mb-6">
+              {system.description} Best Roofing Now installs {system.name} commercial systems
+              across Charlotte and the I-77, I-85, I-485, US-29, and Independence Boulevard
+              corridors — warehouses in Steele Creek and University City, retail in SouthPark and
+              Ballantyne, manufacturing in Concord and Mooresville, office complexes in South End
+              and Park Road. Authorized installer for Carlisle, Johns Manville, Firestone-Holcim,
+              GAF, and Mule-Hide with 15-30 year NDL warranties.
             </p>
             <div className="flex items-center gap-4 mb-8">
               <div className="flex items-center gap-2">

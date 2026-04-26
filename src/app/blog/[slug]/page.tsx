@@ -3,7 +3,15 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { SEOImage } from '@/components/ui/SEOImage';
 import { Calendar, ArrowLeft, Clock, Phone, ArrowRight, MapPin } from 'lucide-react';
-import { BreadcrumbSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG, SERVICES } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 import { getPostBySlug, getPosts, getAllPostSlugs } from '@/lib/wordpress';
@@ -175,6 +183,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   readingTime: readTime,
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/blog/${slug}`}
+        pageName={title}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name={`${title} | Best Roofing Now Blog`}
+        url={`${SITE_CONFIG.url}/blog/${slug}`}
+        description={stripHtml(post.excerpt.rendered).slice(0, 160)}
+        primaryImage={featuredImage}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Blog', url: `${SITE_CONFIG.url}/blog` },
+          { name: title, url: `${SITE_CONFIG.url}/blog/${slug}` },
+        ]}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* FAQ Schema for AEO (if optimized) */}
       {faqSchema && (

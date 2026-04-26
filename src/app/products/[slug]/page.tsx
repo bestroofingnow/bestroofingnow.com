@@ -6,7 +6,16 @@ import { SITE_CONFIG, SHINGLE_PRODUCTS, ROOFING_BRANDS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { FAQ } from '@/components/sections/FAQ';
-import { BreadcrumbSchema, ProductSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  ProductSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
@@ -136,6 +145,29 @@ export default async function ProductPage({ params }: ProductPageProps) {
         ]}
       />
       <ProductSchema product={product} />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${product.fullName} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question={`What does ${product.fullName} cost installed in Charlotte NC?`}
+        directAnswer={`${product.fullName} typically costs ${product.priceRange} installed in Charlotte. Final pricing depends on roof size, complexity, decking condition, and any repairs needed. Best Roofing Now is a certified ${product.brandName} contractor and unlocks the full manufacturer warranty (${product.warranty}) when installed by our top-tier credentialed crews. ${product.bestFor} Wind rating ${product.windRating}. We install across Charlotte and the Lake Norman region with 30-50 year non-prorated transferable warranties.`}
+        items={[
+          `${product.fullName} pricing — ${product.priceRange} installed in Charlotte`,
+          `Manufacturer warranty — ${product.warranty} from ${product.brandName}`,
+          `Wind rating — ${product.windRating}`,
+          `Best for — ${product.bestFor}`,
+          `Best Roofing Now is a certified ${product.brandName} installer`,
+          `Class 4 impact resistance and NC IBHS Fortified insurance discount eligibility`,
+          `30-50 year non-prorated transferable warranty when installed by Best Roofing Now`,
+          `Free written estimates with line-item materials and labor breakdowns`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">

@@ -7,7 +7,16 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { FAQ } from '@/components/sections/FAQ';
 import { EstimateButton } from '@/components/estimate';
-import { BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -146,6 +155,29 @@ export default async function MaterialPage({ params }: MaterialPageProps) {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/materials/${slug}`}
+        pageName={`${material.name} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question={`What does ${material.name.toLowerCase()} roofing cost in Charlotte NC?`}
+        directAnswer={`${material.name} roofing in Charlotte NC typically costs ${material.costRange} installed depending on roof size, complexity, and finish quality. Average 2,000 sq ft roof: ${material.avgCost2000sqft || 'varies based on specifics'}. Lifespan ${material.lifespan} in Charlotte's humid subtropical climate. ${material.description} Best Roofing Now is a certified installer for all major manufacturers (GAF Master Elite top 2%, CertainTeed SELECT ShingleMaster, OC Platinum Preferred for residential; Carlisle, Johns Manville, Firestone-Holcim, Mule-Hide for commercial) and unlocks the full manufacturer warranty when installed by our top-tier credentialed crews.`}
+        items={[
+          `${material.name} pricing — ${material.costRange} installed in Charlotte`,
+          `Average 2,000 sq ft total — ${material.avgCost2000sqft || 'varies based on specifics'}`,
+          `Lifespan — ${material.lifespan} in Charlotte humid subtropical climate`,
+          `Best Roofing Now is a certified installer with full manufacturer warranty unlock`,
+          `Class 4 impact resistance and NC IBHS Fortified insurance discount eligibility (where applicable)`,
+          `NC IRC §R806 ventilation balance required for warranty validity`,
+          `30-50 year non-prorated transferable warranty on top-tier installs`,
+          `Free written estimates with line-item materials, labor, and warranty options`,
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/materials/${slug}`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
