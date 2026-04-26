@@ -21,7 +21,17 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -230,6 +240,39 @@ export default function RoofingFoxcroftCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-foxcroft-charlotte-nc`}
+        pageName="Roofing Foxcroft Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Foxcroft Charlotte NC | Estate Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-foxcroft-charlotte-nc`}
+        description="Roofing for Foxcroft, south Charlotte's prestigious estate community of brick colonials, Tudors, and Mediterranean homes. Slate, copper, and designer architectural shingle restoration with HOA ARB coordination, structural engineering for slate/tile, and 30-50 year warranties."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Foxcroft Charlotte NC', url: `${SITE_CONFIG.url}/roofing-foxcroft-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Foxcroft Charlotte NC homes commonly need?"
+        directAnswer="Foxcroft is one of south Charlotte's most prestigious estate communities, with brick colonials, Tudors, Mediterranean villas, and custom homes typically valued $1M-$5M+. Most original 1950s-1980s slate, tile, and cedar roofs are now in major restoration cycles. Common services include: natural slate restoration ($20-$35/sq ft); clay or concrete tile repair and replacement ($15-$25/sq ft); cedar shake restoration ($12-$22/sq ft); copper standing-seam and bay-window roofing ($24-$30/sq ft); designer architectural shingles (GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire) at $9-$14/sq ft; HOA ARB coordination; structural engineering coordination for slate/tile (800-1,200 lb/sq weight); and discreet weekday estate scheduling. Foxcroft 30-50 sq home reroofs typically $19,000-$80,000+ depending on material."
+        items={[
+          'Natural slate restoration — $20-$35/sq ft installed; matched-quarry sourcing for 1950s-era slate roofs',
+          'Clay or concrete tile work — $15-$25/sq ft installed; Mediterranean villa restoration and individual tile match',
+          'Cedar shake restoration — $12-$22/sq ft installed; CSSB Certi-Grade for Tudor and English-style homes',
+          'Copper standing-seam — $24-$30/sq ft installed; develops natural patina; bay window and eyebrow detail',
+          'Designer architectural shingles — $9-$14/sq ft installed; GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire',
+          'Foxcroft HOA ARB coordination — architectural-review approval for color/material; we manage the packet',
+          'Structural engineering — slate and tile 800-1,200 lb/sq weight needs engineer-stamped drawings for asphalt conversion',
+          'Discreet estate-class scheduling — weekday work, dedicated PM, daily progress photos, neighbor-aware crews',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-foxcroft-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -255,11 +298,17 @@ export default function RoofingFoxcroftCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Estate Roofing for Charlotte's Most Exclusive Neighborhood
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for Foxcroft's discerning homeowners. We specialize in
-              premium roofing for grand Colonial estates, French Country manors, and English Tudor homes,
-              using only the finest materials and delivering craftsmanship worthy of Charlotte's most
-              prestigious addresses.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now restores and reroofs Foxcroft's grand brick colonials, French country
+              manors, English Tudors, and Mediterranean villas. We install natural slate (Vermont,
+              Pennsylvania, Buckingham, Spanish quarries) with copper step-flashing, clay and
+              concrete tile, cedar shake (CSSB Certi-Grade), copper standing-seam and bay-window
+              roofing, and designer architectural shingles (GAF Grand Sequoia, CertainTeed
+              Presidential, OC Berkshire) — all coordinated with Foxcroft HOA architectural-review
+              approval and discreet weekday estate scheduling. GAF Master Elite (top 2%),
+              CertainTeed SELECT ShingleMaster, OC Platinum Preferred — 30-50 year non-prorated
+              transferable warranties; structural engineering coordination for slate and tile
+              conversions.
             </p>
 
             {/* CTA Buttons */}

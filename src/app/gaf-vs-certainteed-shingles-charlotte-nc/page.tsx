@@ -18,7 +18,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -338,6 +347,29 @@ export default function GAFvsCertainTeedPage() {
           { name: 'GAF vs CertainTeed Shingles', url: PAGE_URL },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={PAGE_URL}
+        pageName="GAF vs CertainTeed Shingles Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="Which is better in Charlotte NC, GAF or CertainTeed shingles?"
+        directAnswer="GAF and CertainTeed are both top-tier asphalt shingle manufacturers and the right choice depends on installer credential more than brand difference. Side-by-side: (1) Wind rating tie — GAF Timberline HDZ and CertainTeed Landmark Premium both 130 MPH; (2) Algae warranty — CertainTeed StreakFighter 25 yr beats GAF StainGuard Plus 10 yr; (3) Wind sealant — GAF LayerLock with Dual Sealant Strip outperforms CT factory-sealed; (4) Top warranty — GAF Golden Pledge 50 yr non-prorated material + workmanship via Master Elite; CertainTeed 5-Star Plus 50 yr SureStart Plus via SELECT ShingleMaster — both essentially equal; (5) Price — within $500 on a typical 30-square Charlotte home; (6) Designer line — both have premium tiers (GAF Grand Sequoia / Camelot II vs CT Presidential Solaris / Carriage House); (7) Charlotte availability — both fully stocked at ABC Supply, SRS, Beacon. Best Roofing Now holds both top-tier credentials (GAF Master Elite top 2% + CertainTeed SELECT ShingleMaster top tier) — the brand choice usually comes down to color preference and HOA approval."
+        items={[
+          'Wind rating — GAF HDZ 130 MPH vs CertainTeed Landmark Premium 130 MPH; tie',
+          'Algae warranty — CertainTeed StreakFighter 25 yr beats GAF StainGuard Plus 10 yr',
+          'Wind sealant tech — GAF LayerLock Dual Sealant Strip slight edge over CT factory seal',
+          'Top warranty — GAF Golden Pledge 50 yr (Master Elite) vs CT 5-Star Plus 50 yr (SELECT); tie',
+          'Price — within $500 on typical 30-square Charlotte home; not a deciding factor',
+          'Designer lines — GAF Grand Sequoia/Camelot II vs CT Presidential Solaris/Carriage House',
+          'Charlotte availability — both fully stocked at ABC Supply, SRS, Beacon distributors',
+          'Best Roofing Now — holds top-tier credential for both brands; choice is usually color/HOA',
+        ]}
+        pageUrl={PAGE_URL}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -363,10 +395,15 @@ export default function GAFvsCertainTeedPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Side-by-side pricing, warranty, and performance comparison for Charlotte NC homeowners (2026)
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              As a certified installer of both GAF and CertainTeed, Best Roofing Now provides an
-              unbiased comparison to help you choose the right shingle brand for your Charlotte home
-              and budget. GAF Timberline HDZ starts at $90/sq while CertainTeed Landmark starts at $85/sq.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              As a certified installer of both GAF (Master Elite — top 2% nationwide) and
+              CertainTeed (SELECT ShingleMaster — top tier), Best Roofing Now provides an unbiased
+              comparison across Charlotte and the surrounding communities of Ballantyne, SouthPark,
+              Dilworth, Plaza Midwood, Myers Park, Eastover, Foxcroft, Steele Creek, University
+              City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville.
+              Both brands deliver 50-yr top-tier warranties, 130 MPH wind ratings, and similar
+              pricing — the right choice usually comes down to color preference and HOA approval
+              rather than performance differences.
             </p>
 
             {/* CTA Buttons */}

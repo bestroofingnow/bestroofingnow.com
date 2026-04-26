@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -234,6 +243,39 @@ export default function CertainTeedShinglesCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`}
+        pageName="CertainTeed Shingles Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="CertainTeed Shingles Charlotte NC | SELECT ShingleMaster | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`}
+        description="CertainTeed shingles in Charlotte NC. Landmark, Landmark PRO, Landmark Premium, Presidential Solaris, Carriage House, Highland Slate. CertainTeed SELECT ShingleMaster installer (top tier) with 5-Star Plus warranty unlocking 50 yr SureStart Plus protection."
+        primaryImage={IMAGES.realProjects.certainteed1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'CertainTeed Shingles Charlotte NC', url: `${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="Which CertainTeed shingle is best for Charlotte NC homes?"
+        directAnswer="CertainTeed shingles in Charlotte NC come in 6 product tiers: (1) Landmark — entry architectural at $5-$8/sq ft installed, 30-yr warranty, NC code default; (2) Landmark PRO — $6-$9/sq ft installed, lifetime limited warranty, 110 MPH wind; (3) Landmark Premium — $7-$11/sq ft installed, 130 MPH wind with StreakFighter algae warranty; (4) Presidential Solaris — $9-$13/sq ft installed, ENERGY STAR cool-roof granules, designer aesthetic; (5) Carriage House — $10-$14/sq ft installed, hand-cut profile for historic restoration (Elizabeth, Dilworth, Plaza Midwood, Myers Park heritage homes); (6) Highland Slate — $11-$15/sq ft installed, slate look at architectural-shingle weight. As CertainTeed SELECT ShingleMaster installers (top tier of CertainTeed credentials), Best Roofing Now unlocks the 5-Star Plus warranty providing 50 yr SureStart Plus material + workmanship coverage with 25 yr StreakFighter algae warranty."
+        items={[
+          'Landmark — $5-$8/sq ft installed; entry architectural; 30 yr warranty; NC code default',
+          'Landmark PRO — $6-$9/sq ft installed; lifetime limited; 110 MPH wind; better dimensional appearance',
+          'Landmark Premium — $7-$11/sq ft installed; 130 MPH wind; StreakFighter algae warranty',
+          'Presidential Solaris — $9-$13/sq ft installed; ENERGY STAR cool-roof; designer for high-end homes',
+          'Carriage House — $10-$14/sq ft installed; hand-cut historic profile; Elizabeth/Dilworth/Plaza Midwood/Myers Park',
+          'Highland Slate — $11-$15/sq ft installed; slate aesthetic at architectural weight; no structural reinforcement',
+          'CertainTeed SELECT ShingleMaster — top tier credential; less than 1% of CT installers nationwide',
+          '5-Star Plus warranty — 50 yr SureStart Plus material + workmanship + 25 yr StreakFighter algae',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -259,10 +301,16 @@ export default function CertainTeedShinglesCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium Landmark shingles with enhanced SureStart PLUS warranty
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte's trusted CertainTeed ShingleMaster contractor.
-              This top-tier certification means you get factory-trained installation, enhanced warranty
-              coverage, and the peace of mind that comes with working with the best.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs the full CertainTeed shingle lineup — Landmark, Landmark
+              PRO, Landmark Premium, Presidential Solaris (ENERGY STAR cool-roof), Carriage House
+              (hand-cut historic profile), and Highland Slate — across Charlotte and the surrounding
+              communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa,
+              Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University City, and the
+              Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville. As CertainTeed
+              SELECT ShingleMaster installers (top tier, less than 1% of CT installers nationwide),
+              we unlock the 5-Star Plus warranty: 50 yr SureStart Plus material + workmanship + 25
+              yr StreakFighter algae warranty.
             </p>
 
             {/* CTA Buttons */}

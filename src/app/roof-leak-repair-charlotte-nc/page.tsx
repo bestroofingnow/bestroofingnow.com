@@ -23,7 +23,16 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
@@ -329,6 +338,39 @@ export default function RoofLeakRepairCharlottePage() {
       />
       <FAQSchema faqs={faqs} />
       <LeakRepairServiceSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-leak-repair-charlotte-nc`}
+        pageName="Roof Leak Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roof Leak Repair Charlotte NC | 1-4 Hour Emergency | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roof-leak-repair-charlotte-nc`}
+        description="Roof leak repair in Charlotte NC. 1-4 hour emergency response by zone, infrared moisture mapping, root-cause leak isolation, water-damage interior coordination, full insurance claim handling for State Farm, Allstate, USAA, Liberty Mutual, and Travelers."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Leak Repair Charlotte NC', url: `${SITE_CONFIG.url}/roof-leak-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What are the 8 most common causes of roof leaks in Charlotte NC?"
+        directAnswer="Roof leaks in Charlotte NC have 8 ranked common causes: (1) cracked or aged pipe boots — the #1 leak source in Charlotte, with EPDM/neoprene boots failing at 8-12 yr; (2) failed chimney flashing — step flashing pulls away or mortar reglet fails; (3) lifted shingles after wind/storm events; (4) ice dam back-up at eaves (most common Davidson, Cornelius, north Mecklenburg); (5) clogged gutters causing water back-up under shingles; (6) failed valley flashing or lack of ice-and-water shield; (7) cracked or missing skylight flashing; (8) decking rot from undetected long-term leaks. Repair costs typically $250-$1,800 depending on root cause and access. We use infrared moisture mapping and water-stain trace techniques to isolate the source — leaks rarely appear directly under the entry point. Insurance covers most leak damage minus the deductible if storm-driven."
+        items={[
+          'Pipe boot crack — #1 cause; EPDM/neoprene fails at 8-12 yr; $250-$500 repair',
+          'Chimney flashing failure — step flashing pull-away or mortar reglet failure; $400-$1,200 repair',
+          'Lifted shingles after wind/storm — sealant breaks, water intrudes; $350-$950 repair',
+          'Ice dam back-up — Davidson/Cornelius/north Mecklenburg most affected; prevention better than repair',
+          'Clogged gutters — water backs up under shingles; gutter clean + repair $200-$600',
+          'Valley flashing failure — missing ice-and-water shield; $600-$1,800 repair with valley rebuild',
+          'Skylight flashing — cracked EPDM seal or missing kit; $400-$1,400 with full kit replacement',
+          'Decking rot from chronic leak — replacement $80-$120/sheet; full slope $3,500-$8,000',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roof-leak-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -356,6 +398,16 @@ export default function RoofLeakRepairCharlottePage() {
 
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Fast leak detection and permanent repairs by Charlotte&apos;s trusted roofing experts
+            </p>
+            <p className="speakable-intro text-lg text-white/80 mb-6 max-w-2xl">
+              Best Roofing Now provides 1-4 hour emergency roof leak repair across Charlotte and
+              the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers
+              Park, NoDa, South End, Eastover, Foxcroft, Steele Creek, University City, and the
+              Lake Norman lakefront communities of Huntersville, Cornelius, Davidson, and
+              Mooresville. We use infrared moisture mapping and water-stain trace techniques to
+              isolate root causes — leaks rarely appear under the entry point. Full insurance claim
+              handling for State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie,
+              and Farm Bureau when leaks are storm-driven.
             </p>
 
             {/* Key Benefits */}

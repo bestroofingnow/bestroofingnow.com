@@ -22,7 +22,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -296,6 +305,39 @@ export default function TileRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/tile-roofing-charlotte-nc`}
+        pageName="Tile Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Tile Roofing Charlotte NC | Clay, Concrete, Synthetic | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/tile-roofing-charlotte-nc`}
+        description="Tile roofing in Charlotte NC. Clay, concrete, and synthetic tile installation, individual tile replacement, and Mediterranean villa restoration. Structural engineering coordination for 800-1,200 lb/sq weight. Eastover, Foxcroft, Quail Hollow, lakefront LKN luxury homes."
+        primaryImage={IMAGES.hero.hero13}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Tile Roofing Charlotte NC', url: `${SITE_CONFIG.url}/tile-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does tile roofing cost in Charlotte NC?"
+        directAnswer="Tile roofing in Charlotte NC ranges $11-$25 per sq ft installed depending on type: synthetic composite tile (DaVinci, Brava) $11-$18/sq ft, concrete tile $15-$22/sq ft, clay tile $18-$25/sq ft, and Spanish/Mediterranean clay $20-$28/sq ft. Tile lasts 50-100 years but the underlayment needs replacement at year 30-50 (designed behavior, not defect — the tile lifts off, gets re-used, and the underlayment is replaced). Tile weighs 800-1,200 lb/sq vs 250-400 lb/sq for asphalt, so converting an asphalt-shingle roof to tile usually requires structural engineering ($5,000-$15,000 added cost) including engineer-stamped drawings and rafter reinforcement. Synthetic alternatives like DaVinci and Brava (250-400 lb/sq) eliminate the structural cost while delivering Class 4 impact + Class A fire. Most-common Charlotte tile installs: Eastover, Foxcroft, Quail Hollow, Myers Park, Piper Glen, lakefront LKN."
+        items={[
+          'Synthetic composite tile (DaVinci, Brava) — $11-$18/sq ft installed; Class 4 impact, Class A fire, 50 yr warranty',
+          'Concrete tile — $15-$22/sq ft installed; 50-yr expected lifespan; popular Mediterranean look',
+          'Clay tile — $18-$25/sq ft installed; 75-100 yr lifespan; classic terracotta',
+          'Spanish/Mediterranean clay — $20-$28/sq ft installed; barrel/S-tile profile; 100+ yr lifespan',
+          'Underlayment replacement at yr 30-50 — designed behavior; tile is lifted, re-used, underlayment renewed',
+          'Tile weight — 800-1,200 lb/sq (clay) vs 250-400 lb/sq (asphalt); structural engineering required for conversion',
+          'Engineer-stamped conversion cost — typically $5,000-$15,000 added for rafter reinforcement and stamped drawings',
+          'Synthetic alternatives — DaVinci/Brava 250-400 lb/sq; eliminates structural cost while keeping aesthetic',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/tile-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -321,11 +363,16 @@ export default function TileRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Clay and concrete tiles for lasting beauty and durability
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Tile roofing offers unmatched beauty and longevity for Charlotte homes. Best Roofing Now installs
-              premium clay and concrete tile roofing systems that can last 50-100+ years. Whether you prefer
-              Mediterranean style, modern flat tiles, or classic Spanish barrel tiles, our expert team delivers
-              exceptional craftsmanship.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs and restores tile roofing across Charlotte's premier
+              communities — Eastover, Foxcroft, Quail Hollow, Myers Park, SouthPark, Piper Glen, and
+              the Lake Norman lakefront waterfront communities of Cornelius, Davidson, and
+              Mooresville. We install clay tile, concrete tile, Spanish/Mediterranean barrel tile,
+              and synthetic composite alternatives (DaVinci Roofscapes, Brava). Tile weight 800-1,200
+              lb/sq vs asphalt 250-400 lb/sq means asphalt-to-tile conversions need engineer-stamped
+              structural drawings — synthetic composite tile (250-400 lb/sq) is often the right
+              answer when structural reinforcement isn't justified. 50-100+ year lifespan with
+              underlayment refresh at year 30-50.
             </p>
 
             {/* CTA Buttons */}
