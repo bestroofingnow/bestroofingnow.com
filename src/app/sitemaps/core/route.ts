@@ -71,6 +71,10 @@ export async function GET() {
     { url: `${BASE_URL}/best-roofing-company-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-replacement-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/roof-repair-cost-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
+    // PAA / AI Overview Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/25-percent-rule-roofing`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/is-30000-too-much-for-a-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.8' },
+    { url: `${BASE_URL}/how-to-tell-if-roofer-is-lying`, changefreq: 'monthly', priority: '0.8' },
     { url: `${BASE_URL}/residential-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     // roof-installation-charlotte-nc redirects to roof-replacement-charlotte-nc (SEO consolidation)
     { url: `${BASE_URL}/industrial-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
@@ -246,6 +250,12 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-piper-glen-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-quail-hollow-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/roofing-elizabeth-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-eastover-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/roofing-uptown-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    // Conversion / discount / HOA / estimate pages
+    { url: `${BASE_URL}/free-roof-estimate-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/hoa-approved-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/military-veteran-roofing-discount-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
     // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
     // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written
