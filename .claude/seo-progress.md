@@ -429,3 +429,13 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - Homepage needs no changes — skip in future passes.
 - Service+location templates (Matthews/Davidson pattern) are the highest-leverage enhancement targets: many siblings, same template gaps.
 - After fixing ~5 siblings of same template, consider extracting the enhancements into a shared helper/component.
+
+### Batch 27 (2026-04-26): Q&A landing pages — insurance denial, roof care, attic ventilation
+- ✅ what-do-i-do-if-insurance-denies-my-roof-claim-charlotte-nc (NEW Q&A page) — 5-step denial dispute process (written letter, denial reason review, Xactimate independent inspection, supplemental claim, appraisal clause invocation), 5 follow-up FAQs (top denial reasons, appraisal mechanics, lawsuit options, NC dispute deadlines, public adjuster decisions)
+- ✅ should-i-clean-my-roof-charlotte-nc (NEW Q&A page) — ARMA-approved soft-wash $400-1,800, NEVER pressure wash (voids GAF/CertainTeed/OC warranty), zinc/copper ridge strip prevention, Charlotte canopy areas (Plaza Midwood, Dilworth, Myers Park, Eastover, Cotswold, Beverly Woods, lakefront LKN)
+- ✅ how-do-i-check-my-roof-without-climbing-charlotte-nc (NEW Q&A page) — 6 safe methods (binoculars 30-50 ft perimeter, attic flashlight, ceiling stains, gutter granules, drone $50-150/day, second-floor windows), 5 FAQs (ground signs, attic signs, drone limits, when to call pro, Google Earth limits)
+- ✅ why-does-my-attic-get-so-hot-charlotte-nc (NEW Q&A page) — 4 root causes (inadequate ventilation, missing soffit intake, dark roof, low insulation), NC IRC §R806 1:150/1:300 NFVA, solutions (balanced vent $800-2,500, radiant barrier $1,500-4,000, R-49 insulation), 8-15% AC bill reduction
+- ✅ how-much-does-attic-ventilation-cost-charlotte-nc (NEW Q&A page) — 7 system pricing tiers (ridge $400-900, soffit $300-800, balanced $800-2,500, gable $200-600, turbine $150-400, power vent $400-1,200, whole-house fan $1,200-3,500), Duke Energy rebates, federal 25C tax credit
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 27 Q&A pages section)
+- Type-check: clean (no errors in batch 27 files)

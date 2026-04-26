@@ -515,6 +515,13 @@ export async function GET() {
     { url: `${BASE_URL}/gated-community-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/estate-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/historic-home-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+
+    // Batch 27 Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/what-do-i-do-if-insurance-denies-my-roof-claim-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/should-i-clean-my-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-check-my-roof-without-climbing-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/why-does-my-attic-get-so-hot-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-much-does-attic-ventilation-cost-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
   ];
 
   const lastmod = new Date().toISOString();
