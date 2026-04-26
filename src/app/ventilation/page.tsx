@@ -2,9 +2,19 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Phone, Wind, Thermometer, DollarSign, CheckCircle, AlertTriangle, Home } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
+import { IMAGES } from '@/lib/images';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Attic Ventilation Charlotte NC',
@@ -54,6 +64,46 @@ const ventilationTypes = [
 export default function VentilationPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Attic Ventilation & Energy Efficiency', url: `${SITE_CONFIG.url}/ventilation` },
+        ]}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/ventilation`}
+        pageName="Attic Ventilation Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Attic Ventilation & Energy Efficiency Charlotte NC | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/ventilation`}
+        description="Attic ventilation in Charlotte NC. Ridge vents, soffit intake, gable vents, power ventilators, and solar attic fans. NC IRC §R806 1:150/1:300 NFVA balanced ventilation that keeps GAF Master Elite, CertainTeed SELECT, and OC Platinum warranties intact."
+        primaryImage={IMAGES.hero.hero15}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Attic Ventilation', url: `${SITE_CONFIG.url}/ventilation` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="Why is attic ventilation important in Charlotte NC?"
+        directAnswer="Attic ventilation in Charlotte NC matters for 6 reasons: (1) NC IRC §R806 code requires 1 sq ft NFVA per 150 sq ft attic (or 1:300 with balanced 50/50 intake/exhaust); (2) GAF Golden Pledge, CertainTeed 5-Star, and OC Platinum manufacturer warranties REQUIRE balanced ventilation — insufficient NFVA = denial risk on a leak claim; (3) Charlotte attics hit 150°F+ in July without ventilation, baking shingle granules off and shortening lifespan 3-7 years; (4) reduces summer cooling costs 10-15% by lowering HVAC load; (5) prevents winter ice dams in shaded north Mecklenburg / Lake Norman by keeping the eaves cold; (6) prevents moisture buildup that causes decking rot, mold, and pest infestation. Ridge vent + soffit intake balance is the standard solution; install $400-$1,200 retrofit, $200-$500 incremental during a re-roof."
+        items={[
+          'NC IRC §R806 code — 1:150 NFVA total, or 1:300 with balanced intake/exhaust 50/50',
+          'Manufacturer warranty compliance — GAF/CertainTeed/OC require balanced ventilation; missing NFVA = claim denial risk',
+          'Charlotte attic temperature — 150°F+ in July without ventilation; bakes granules off shingles',
+          'Cooling cost reduction — proper ventilation drops attic temps 20-40°F and saves 10-15% on AC',
+          'Ice dam prevention — keeps eaves cold; critical for Davidson/Cornelius/north Mecklenburg shaded slopes',
+          'Moisture / pest prevention — stops decking rot, mold, carpenter bee/squirrel intrusion at soffit',
+          'Standard solution — ridge vent + soffit intake balance; $400-$1,200 retrofit',
+          'Re-roof bundle — adding ridge vent during full re-roof is only $200-$500 incremental',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/ventilation`}
+      />
+      <FreeInspectionOfferSchema />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -68,9 +118,13 @@ export default function VentilationPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Attic Ventilation & Energy Efficiency
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Proper attic ventilation is critical for roof longevity and home comfort.
-              Poor ventilation can void warranties, increase energy costs, and cause
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Proper attic ventilation is critical for roof longevity and home comfort across
+              Charlotte and the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza
+              Midwood, Steele Creek, University City, and the Lake Norman towns of Huntersville,
+              Cornelius, Davidson, and Mooresville. NC IRC §R806 requires 1:150/1:300 NFVA balanced
+              ventilation — and missing it voids GAF/CertainTeed/OC warranties, increases energy
+              costs, and causes
               premature roof failure.
             </p>
             <a

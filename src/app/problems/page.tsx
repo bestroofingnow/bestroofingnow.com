@@ -3,6 +3,16 @@ import Link from 'next/link';
 import { ArrowRight, Phone, AlertTriangle, Wrench } from 'lucide-react';
 import { SITE_CONFIG, ROOFING_PROBLEMS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { IMAGES } from '@/lib/images';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Common Roofing Problems',
@@ -28,6 +38,46 @@ export const metadata: Metadata = {
 export default function ProblemsPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Problems', url: `${SITE_CONFIG.url}/problems` },
+        ]}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/problems`}
+        pageName="Common Roofing Problems"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Common Roofing Problems | Best Roofing Now Charlotte NC"
+        url={`${SITE_CONFIG.url}/problems`}
+        description="Diagnostic guide to common roofing problems in Charlotte NC: leaks, missing shingles, hail and wind damage, ice dams, sagging roofs, ventilation, fascia rot. Each problem links to its repair page with pricing, root causes, and timeline."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Problems', url: `${SITE_CONFIG.url}/problems` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What are the most common roofing problems in Charlotte NC?"
+        directAnswer="Charlotte NC homeowners face 8 most common roofing problems: (1) pipe boot cracks (#1 leak source, EPDM/neoprene fails at 8-12 yr); (2) chimney flashing failure from mortar/step-flashing aging; (3) missing or wind-lifted shingles after May-October storm season; (4) hail damage during the May-June hail belt peak (NOAA records 3-5 hail days/yr in Mecklenburg); (5) ice dam back-up at eaves (most common in Davidson, Cornelius, north Mecklenburg); (6) sagging roof from long-term water damage or undersized framing; (7) inadequate attic ventilation per NC IRC §R806; (8) fascia and soffit rot from gutter overflow and humid climate. Repair costs range $250 (single shingle) to $25,000+ (structural rebuild). Best Roofing Now diagnoses every problem with a free inspection — sometimes a $400-$1,800 repair beats full replacement."
+        items={[
+          'Pipe boot cracks — #1 leak source in Charlotte; EPDM/neoprene fails at 8-12 yr; $250-$500 repair',
+          'Chimney flashing failure — mortar reglet or step-flashing aging; $400-$1,200 repair',
+          'Missing/wind-lifted shingles — after May-October storm season; $250-$2,400 spot repair',
+          'Hail damage — May-June Charlotte hail belt peak; insurance claim filing covers most',
+          'Ice dam back-up — Davidson/Cornelius/north Mecklenburg most affected; prevention via insulation + ventilation',
+          'Sagging roof — long-term water damage or undersized framing; structural assessment $1,200-$25,000+',
+          'Inadequate ventilation — NC IRC §R806 1:150 NFVA; voids GAF/CertainTeed/OC warranties when missing',
+          'Fascia and soffit rot — gutter overflow and humidity; #1 prevention is gutter system maintenance',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/problems`}
+      />
+      <FreeInspectionOfferSchema />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -39,10 +89,14 @@ export default function ProblemsPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Common Roofing Problems
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Every roofing problem has a solution. From minor leaks to major storm
-              damage, our experts diagnose and fix issues quickly to protect your
-              Charlotte home.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Every roofing problem has a solution. Best Roofing Now diagnoses and repairs the
+              8 most common Charlotte roofing problems — pipe boot cracks (the #1 leak source),
+              chimney flashing failure, missing or wind-lifted shingles, hail damage during the
+              May-June hail belt, ice dams, sagging roofs, ventilation deficiencies, and fascia
+              rot. Free inspection across Charlotte and the surrounding Mecklenburg, Cabarrus,
+              Iredell, Union, Gaston, and York counties — and sometimes a $400-$1,800 repair
+              beats full replacement.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

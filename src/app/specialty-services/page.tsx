@@ -18,6 +18,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -148,6 +153,29 @@ export default function SpecialtyServicesPage() {
           { name: 'Specialty Services', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Specialty Roofing Services Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="What specialty roofing services are available in Charlotte NC?"
+        directAnswer="Specialty roofing services in Charlotte NC cover the work that doesn't fit standard reroof scope: VELUX, Wasco, and Fakro skylight installation ($1,400-$5,200 per unit including 10-year no-leak warranty); attic ventilation systems balanced to NC IRC §R806 1:150/1:300 NFVA ratios ($400-$1,200 retrofit); chimney flashing repair and reconstruction ($400-$1,200 step flashing replacement); flat-roof repair and TPO/EPDM/modified bitumen for low-slope sections; standing-seam metal accent roofs (porch covers, dormer caps); ridge vent installation; cedar shake restoration on heritage homes; copper and zinc patina-developing accents on premier estate homes. Best Roofing Now is VELUX certified, GAF Master Elite, CertainTeed SELECT ShingleMaster, and OC Platinum Preferred — credentialed across the full specialty range."
+        items={[
+          'Skylight install — VELUX/Wasco/Fakro $1,400-$5,200 per unit; 10-year no-leak warranty with certified install',
+          'Attic ventilation systems — balanced ridge + soffit per NC IRC §R806; $400-$1,200 retrofit',
+          'Chimney flashing repair — step flashing, reglet, cricket; $400-$1,200',
+          'Flat-roof TPO/EPDM/modified bitumen — for low-slope sections, dormers, additions',
+          'Standing-seam metal accents — porch covers, dormer caps, bay windows',
+          'Ridge vent installation — continuous vent for warranty compliance and cooling',
+          'Cedar shake restoration — CSSB Certi-Grade for heritage homes (Elizabeth, Dilworth, Plaza Midwood)',
+          'Copper/zinc patina accents — premier estate homes (Eastover, Foxcroft, Quail Hollow, lakefront LKN)',
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
@@ -177,10 +205,15 @@ export default function SpecialtyServicesPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Specialty Roofing Services Charlotte NC
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Beyond basic roofing, we provide specialized services that enhance your home&apos;s comfort, efficiency, and protection.
-              From beautiful skylights that flood rooms with natural light to proper ventilation that extends your roof&apos;s life,
-  our specialty services solve problems most contractors can&apos;t.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Beyond standard reroofs, Best Roofing Now provides specialty services across Charlotte
+              and the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood,
+              Myers Park, NoDa, Eastover, Foxcroft, Steele Creek, University City, and the Lake
+              Norman towns of Huntersville, Cornelius, Davidson, and Mooresville. VELUX-certified
+              skylight installation, NC IRC §R806 balanced attic ventilation, chimney flashing
+              repair, flat-roof TPO/EPDM/modified bitumen, standing-seam metal accents, ridge vent
+              retrofits, cedar shake restoration on heritage homes, and copper/zinc patina accents
+              on premier estates.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <EstimateButton

@@ -3,7 +3,16 @@ import Link from 'next/link';
 import { Phone, CheckCircle, Clock, Shield, Users, FileText, Hammer, Sparkles } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
-import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { IMAGES } from '@/lib/images';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -124,6 +133,39 @@ export default function ProcessPage() {
           { name: 'Our Process', url: `${SITE_CONFIG.url}/process` },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/process`}
+        pageName="Our Roofing Process"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Our Roofing Process | Step-by-Step Guide | Best Roofing Now Charlotte NC"
+        url={`${SITE_CONFIG.url}/process`}
+        description="What to expect during a roof project with Best Roofing Now Charlotte NC. 7-step process: free inspection, written estimate, material selection, scheduling, install day, cleanup walkthrough, NDL warranty packet. 1-2 day completion typical for residential."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Our Process', url: `${SITE_CONFIG.url}/process` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What is the roof installation process with Best Roofing Now Charlotte NC?"
+        directAnswer="Best Roofing Now's roof project process has 7 steps from first call to final warranty packet: (1) free on-site inspection within 48 hours including 30+ photos, attic check, and decking probe; (2) detailed written estimate with line-item materials, labor, and warranty options (typically delivered in 24-48 hours); (3) material selection meeting — physical shingle samples, color matching to home, HOA verification; (4) scheduling — typical lead time 2-6 weeks for non-emergency, same-day for storm tarp and emergency repair; (5) install day — landscape protection, full tear-off, decking inspection, ice-and-water shield, synthetic underlayment, drip edge, starter strip, shingle install with 4-6 nail pattern, ridge vent, magnetic nail sweep cleanup (1-2 days for 30-square home); (6) walkthrough with homeowner and final cleanup verification; (7) NDL warranty packet delivery (GAF Golden Pledge 50 yr, CertainTeed 5-Star Plus 50 yr, OC Platinum). Veteran-owned, BBB A+, GAF Master Elite, CertainTeed SELECT ShingleMaster credentialed."
+        items={[
+          'Step 1 — free on-site inspection within 48 hours; 30+ photos, attic check, decking probe',
+          'Step 2 — detailed written estimate; line-item materials, labor, warranty options; 24-48 hr turnaround',
+          'Step 3 — material selection meeting; physical samples, color match, HOA verification',
+          'Step 4 — scheduling; 2-6 week typical lead time; same-day for emergency tarp and leak repair',
+          'Step 5 — install day; landscape protection, tear-off, ice-and-water shield, underlayment, shingles, ridge vent, cleanup',
+          'Step 6 — walkthrough with homeowner; magnetic nail sweep verification; final cleanup',
+          'Step 7 — NDL warranty packet; GAF Golden Pledge / CertainTeed 5-Star Plus / OC Platinum',
+          'Credentials — veteran-owned, BBB A+, GAF Master Elite (top 2%), CertainTeed SELECT ShingleMaster',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/process`}
+      />
+      <FreeInspectionOfferSchema />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -135,10 +177,14 @@ export default function ProcessPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Roofing Process
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              We believe a great roofing experience starts with clear communication
-              and a well-defined process. Here&apos;s exactly what to expect when you
-              choose Best Roofing Now.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              We believe a great roofing experience starts with clear communication and a
+              well-defined process. Best Roofing Now follows a 7-step process from free inspection
+              through final NDL warranty packet — typically completing a 30-square home in 1-2 days
+              across Charlotte and the surrounding communities of Ballantyne, SouthPark, Steele
+              Creek, University City, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville. Veteran-owned, BBB A+, GAF Master Elite (top 2%),
+              CertainTeed SELECT ShingleMaster credentialed.
             </p>
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}

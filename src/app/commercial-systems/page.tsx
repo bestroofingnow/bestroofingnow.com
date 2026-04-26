@@ -3,7 +3,16 @@ import Link from 'next/link';
 import { ArrowRight, Phone, Building2, CheckCircle, Clock } from 'lucide-react';
 import { SITE_CONFIG, COMMERCIAL_SYSTEMS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
-import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { IMAGES } from '@/lib/images';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Commercial Roofing Systems Charlotte NC',
@@ -36,6 +45,39 @@ export default function CommercialSystemsPage() {
           { name: 'Commercial Roofing Systems', url: `${SITE_CONFIG.url}/commercial-systems` },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/commercial-systems`}
+        pageName="Commercial Roofing Systems Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Commercial Roofing Systems Charlotte NC | TPO EPDM PVC Modified Bitumen | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/commercial-systems`}
+        description="Commercial roofing systems in Charlotte NC: TPO, EPDM, PVC, modified bitumen, built-up, standing seam metal, and silicone/acrylic coatings. Carlisle, Johns Manville, Firestone-Holcim, GAF, Mule-Hide authorized installers with 15-30 year NDL warranties."
+        primaryImage={IMAGES.commercial.flatRoof}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Commercial Roofing Systems', url: `${SITE_CONFIG.url}/commercial-systems` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What commercial roofing systems are available in Charlotte NC?"
+        directAnswer="Charlotte NC commercial roofing systems span 7 main categories with NDL (no-dollar-limit) warranties of 15-30 years from authorized installers: (1) TPO single-ply membrane $5-$12/sq ft (most popular for new commercial); (2) EPDM rubber single-ply $4-$10/sq ft (60+ year track record, parapet-walled buildings); (3) PVC single-ply $7-$14/sq ft (chemical and grease resistance for restaurants, manufacturing); (4) modified bitumen torch-down or self-adhered $6-$12/sq ft (parapet walls, walkable surface); (5) built-up roofing tar-and-gravel $5-$10/sq ft (legacy systems still common on older buildings); (6) standing seam metal $9-$30/sq ft (50+ year lifespan); (7) silicone/acrylic restoration coatings $2-$5/sq ft (extends existing roof 10-15 years, defers capex). Best Roofing Now is authorized for Carlisle, Johns Manville, Firestone-Holcim, GAF, and Mule-Hide."
+        items={[
+          'TPO single-ply — $5-$12/sq ft installed; 60-mil reinforced standard; 20-30 yr NDL warranty',
+          'EPDM rubber — $4-$10/sq ft installed; 60+ yr track record; ideal for parapet-walled buildings',
+          'PVC single-ply — $7-$14/sq ft installed; chemical/grease resistance for restaurants and manufacturing',
+          'Modified bitumen — $6-$12/sq ft installed; torch-down or self-adhered; walkable surface',
+          'Built-up roofing — $5-$10/sq ft installed; legacy tar-and-gravel; common on older buildings',
+          'Standing seam metal — $9-$30/sq ft installed; 24-26 ga steel, aluminum, zinc, copper; 50+ yr',
+          'Silicone/acrylic restoration coatings — $2-$5/sq ft; extends existing roof 10-15 yr; defers capex',
+          'Authorized installer — Carlisle, Johns Manville, Firestone-Holcim, GAF, Mule-Hide commercial systems',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/commercial-systems`}
+      />
+      <FreeInspectionOfferSchema />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -50,10 +92,13 @@ export default function CommercialSystemsPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Commercial Roofing Systems
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Protect your business investment with the right commercial roofing system.
-              We install and service TPO, EPDM, PVC, Built-Up, and Metal roofing for
-              Charlotte-area businesses.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Protect your business investment with the right commercial roofing system. Best
+              Roofing Now installs and services 7 commercial systems — TPO, EPDM, PVC, modified
+              bitumen, built-up, standing seam metal, and silicone/acrylic restoration coatings —
+              across Charlotte and the I-77, I-85, I-485, US-29, and Independence Boulevard
+              corridors. Authorized installer for Carlisle, Johns Manville, Firestone-Holcim, GAF,
+              and Mule-Hide with 15-30 year NDL (no-dollar-limit) warranties.
             </p>
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}
