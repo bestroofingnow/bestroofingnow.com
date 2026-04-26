@@ -264,6 +264,11 @@ export async function GET() {
     { url: `${BASE_URL}/can-i-replace-my-own-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-long-does-roof-replacement-take-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/roofing-warranty-comparison-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-color-roof-should-i-choose-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-time-of-year-best-to-replace-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/signs-of-hail-damage-on-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-to-prepare-for-roof-replacement-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/does-a-new-roof-increase-home-value-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
     // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
     // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written

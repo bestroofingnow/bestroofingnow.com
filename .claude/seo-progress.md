@@ -344,6 +344,18 @@ Building Q&A pages targeting common Charlotte roofing search intent — each one
 
 All 5 added to core sitemap with priority 0.7, monthly changefreq. Routes auto-handled by middleware SERVICE_LOCATION_PATTERN regex.
 
+**Tier 10 batch 2 (batch 20):** 5 more high-traffic Q&A pages targeting purchase-decision search intent.
+
+- [x] `what-color-roof-should-i-choose-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — color choice guide covering 4 factors (architectural style, HOA palette, climate impact, resale value), 5 most popular Charlotte 2026 colors (Weathered Wood, Charcoal, Driftwood, Pewter, Slate Gray), brick-matching rules, summer cooling cost differential ($80-$200/year). 5 follow-up FAQs.
+- [x] `what-time-of-year-best-to-replace-roof-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — seasonal timing guide (fall ideal, spring 2nd-best, winter saves 5-15% off-season), Charlotte lead times by season (1-2 wk off-season to 4-6 wk peak summer), 40°F mastic-seal exception. 5 follow-up FAQs.
+- [x] `signs-of-hail-damage-on-roof-charlotte-nc` (NEW, ~205 lines) — 2026-04-26 — 8 hail damage signs (bruises, granule loss, exposed mat, cracked shingles, dented soft metal, test-square hits, damaged flashing, collateral damage), hail size impact thresholds (1 in to 2+ in), insurance claim filing under N.C. Gen. Stat. §58-3-100, chalk-circle test square method. 5 follow-up FAQs.
+- [x] `how-to-prepare-for-roof-replacement-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — 10-step pre-install checklist (cars, attic prep, wall art, trees, satellite dishes, neighbor notification, pet care, HVAC, children, photo baseline). 5 follow-up FAQs covering attic protection, landscape damage, work hours, pet handling, homeowner attendance.
+- [x] `does-a-new-roof-increase-home-value-charlotte-nc` (NEW, ~205 lines) — 2026-04-26 — ROI guide ($12-15K added value per 2024 Cost vs Value, 60-95% recovery by material, 10-15 fewer days on market, FHA/VA loan certifications, RCV vs ACV insurance impact at 20-yr roof age). 5 follow-up FAQs covering value calculation, replace-before-selling decision, material ROI comparison, roof age vs insurance, FHA/VA roof requirements.
+
+All 5 added to core sitemap with priority 0.7, monthly changefreq. Routes auto-handled by middleware SERVICE_LOCATION_PATTERN regex.
+
+**Tier 10 progress:** 10 of ~20 planned Q&A pages complete (5 batch 19 + 5 batch 20). Next 10 candidates: financing options, contractor selection deeper, ventilation requirements, NC-specific code questions, commercial-roofing Q&A, Lake Norman-specific Q&A.
+
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19
 - [x] `roof-repair-charlotte-nc` (770) — high intent — done 2026-04-19
