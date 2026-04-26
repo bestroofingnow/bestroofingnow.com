@@ -4,6 +4,36 @@
 **Loop:** /loop dynamic mode, 10-min cadence
 **Scope:** Audit + enhance every page on bestroofingnow.com for SEO, AEO (Answer Engine Optimization), and LLMO (LLM discoverability)
 
+## 2026-04-26 — Site-wide AEO foundations from `reports/full-site-seo-ai-ranking-plan-2026-04-26.md`
+
+Built two reusable, AI-citation-ready components and wired them into the priority money/cost pages identified in the plan.
+
+**New components:**
+- `src/components/sections/CitationFacts.tsx` — visible NAP, license (NC GC #87344), service radius (50 mi), certifications (CertainTeed ShingleMaster, GAF Factory-Certified, Owens Corning Preferred), BBB A+, veteran-owned/family-operated, response time (1–4 hr emergency), 500+ roofs, free-inspection promise. Uses microdata `itemProp` for direct Google/AI consumption.
+- `src/components/sections/CostTable.tsx` — quotable cost table with embedded JSON-LD `AggregateOffer` schema (per-row `Offer` with `PriceSpecification`, seller, areaServed). Designed for AI Overview / PAA citation.
+
+**Pages strengthened:**
+- `/` — added `<CitationFacts>` after `<ServiceAreas>`.
+- `/roof-repair-charlotte-nc` — added 8-row Charlotte-specific `<CostTable>` (200–950 + free inspection) + `<CitationFacts>`.
+- `/roof-replacement-charlotte-nc` — added 6-row 2026 replacement `<CostTable>` (3-tab through tile $6.5K–$40K) + `<CitationFacts>`.
+- `/roof-replacement-cost-charlotte-nc` — added `<CitationFacts>` (existing visible cost tables retained).
+- `/roof-repair-cost-charlotte-nc` — added `<CitationFacts>`.
+- `/metal-roof-cost` — added `<CitationFacts>` (national AI Overview target).
+- `/gutter-guard-cost` — added `<CitationFacts>`.
+- `/commercial-systems` — added 8 visible FAQs with `<details>` accordion + `FAQSchema` + `<CitationFacts>` (commercial inquiries: TPO/EPDM/PVC, costs, lifespan, maintenance, coatings, certs, emergency, claims).
+- `/commercial-roofing-charlotte-nc` — added `<CitationFacts>`.
+- `/commercial-roofing-services` — added `<CitationFacts>`.
+
+**Build status:** `npx next build` ✓ compiled successfully.
+
+**Still open from plan (next session):**
+- Internal linking map — long-tail city pages → 10 priority money pages with exact-match anchors.
+- Performance pass on `/`, `/blog`, `/about`, `/commercial-systems`, `/commercial-roofing-services`, `/gutter-services`, `/affordable-roofing-charlotte-nc`, `/apartment-roofing-charlotte-nc` (FID/LCP).
+- CMS asset stabilization for hero/icons/sitemaps.
+- Question-first content for PAA ("25% rule", "$30K too much", "How to tell if a roofer is lying").
+- Local link acquisition + directory cleanup.
+
+
 ## Audit Framework (applied to each page)
 
 **SEO:**
@@ -221,6 +251,14 @@ Discovery: all non-Charlotte location pages (commercial-roofing-{matthews,davids
 - [x] `videos` (385 → 434) — 2026-04-26 — added partial bundle (had Breadcrumb+FAQ+WebPage): added AISearch+Voice+Speakable+FeaturedSnippet (8 YouTube channel topic areas: DIY inspection, repair vs replace signs, shingle brand comparisons GAF vs CertainTeed vs OC, ice dam prevention LKN, hail damage identification, NC IRC §R806 attic ventilation diagnostics, install process documentation, Charlotte project showcases) + FreeInspection, hero `.speakable-intro` adding GAF Master Elite top 2% / CertainTeed SELECT / BBB A+ credentials.
 - [x] `services/roof-and-gutter-replacement` (392 → 444) — 2026-04-26 — added partial bundle (had Breadcrumb+FAQ+WebPage+Service): added AISearch+Voice+Speakable+FeaturedSnippet (8 bundle savings rationale: one trip/crew/tarp setup saves $1.5-3.5K, integrated drip-edge install correctness, gutter hanger replacement during fascia exposure, NC IRC §R806 ventilation balance, single warranty packet, bundled financing $15-22K typical, fascia/soffit add-on, 25-30 yr typical Charlotte same-age failure window) + FreeInspection, hero `.speakable-intro` enumerating Charlotte + LKN service area + 15-30% bundle savings. Note: hit JSX inch-mark error (6\\" inside attribute) — fixed by switching to `{'...'}` JS expression form per saved memory.
 - [x] `warranty` (395 → 451) — 2026-04-26 — added partial bundle (had Breadcrumb+AllWarranties): added AISearch+Voice+Speakable+WebPage+FeaturedSnippet (8 warranty stack specifics: 3-layer system [manufacturer material + top-tier extended + workmanship], GAF Golden Pledge 50 yr non-prorated material+workmanship via Master Elite top 2%, CertainTeed 5-Star Plus 50 yr SureStart Plus + 25 yr StreakFighter via SELECT ShingleMaster, OC Platinum, Best Roofing Now 10 yr workmanship guarantee, Carlisle/JM/Firestone-Holcim/Mule-Hide commercial NDL 15-30 yr, transferable within 60 days of sale, NC IRC §R806 ventilation required for warranty validity) + FreeInspection, hero `.speakable-intro` enumerating Charlotte + LKN service area + 3-layer warranty stack + transferability terms.
+- [x] `siding-services` (450 → 502) — 2026-04-26 — added partial bundle (had Breadcrumb+FAQ+WebPage+Service): added AISearch+Voice+Speakable+FeaturedSnippet (8 siding pricing tier specifics: vinyl $5-8/sq ft most-popular, fiber cement HardiePlank $8-13 50+ yr fire-resistant, LP SmartSide engineered wood $7-11, cedar shake $9-15 heritage, metal $11-18 modern, 2,500 sq ft Charlotte home totals per tier, bundle siding+roof+gutters 20-35% savings, James Hardie Preferred Contractor) + FreeInspection, hero `.speakable-intro` enumerating Charlotte + LKN service area + full 5-material range + bundle savings.
+- [x] `solar-services` (474 → 526) — 2026-04-26 — added partial bundle (had Breadcrumb+FAQ+WebPage+Service): added AISearch+Voice+Speakable+FeaturedSnippet (8 solar specifics: 6-10 kW $15-45K, federal Residential Clean Energy Credit 30% through 2032 phasing 26%/22%/0% by 2035, Duke Energy net metering retail rate, NC property tax exemption, solar attic fans $700-1,400, S-5! non-penetrating clamp-mount on standing-seam preserves warranty, integrated solar shingles GAF DecoTech / CertainTeed Apollo II for asphalt) + FreeInspection, hero `.speakable-intro` enumerating Charlotte + LKN service area + warranty-compatible install methods + 30% federal credit framing.
+- [x] `services/storm-damage-roof-siding` (434 → 487) — 2026-04-26 — added partial bundle (had Breadcrumb+FAQ+WebPage+Service): added AISearch+Voice+Speakable+FeaturedSnippet (8 combined claim rationale: same storm damages both surfaces, single insurance deductible saves $1.5-3K, one scaffold/tarp deploy, integrated J-channel + drip-edge install correctness, single Xactimate estimate, 1-3 day combined timeline vs 2-5 separate, 8 NC carriers handled, Florence/Idalia/Helene combined-claim history) + FreeInspection, hero `.speakable-intro` enumerating Charlotte + LKN service area + deductible savings + 3-storm experience.
+- [x] `services/emergency-roofing` (820 → 873) — 2026-04-26 — added partial bundle (had Breadcrumb+FAQ+WebPage+HeroImage+Gallery): added AISearch+Voice+Speakable+FeaturedSnippet (8 emergency-call situations: active interior leak with $3K-25K compounding cost, tree limb on roof, exposed decking, structural sag/collapse, chimney brick fall ice storm pattern, hail with active leaks, commercial ponding, critical event protection; response times Mecklenburg 1-2hr / LKN 2-4hr / outer 3-6hr; 12-mil tarp with 2x4 batten frame screwed-not-nailed for 60-90 day; after-hours surcharge $250-500 reimbursable as loss mitigation) + FreeInspection, hero `.speakable-intro` enumerating Charlotte + LKN response zones + Florence/Idalia/Helene + 2002/2014/2026 ice storm experience.
+- [x] `nc-roofing-guide` (1,323 → 1,377) — 2026-04-26 — added partial bundle (had Breadcrumb + page-internal FAQ/Article): added AISearch+Voice+Speakable+WebPage+FeaturedSnippet (8 NC-specific roofing rules and 2026 pricing: NC IRC §R806 ventilation, NC code wind 110 MPH min/130 coastal, NC IBHS Fortified Class 4 10-30% insurance discount, N.C. Gen. Stat. §58-3-100 12-mo claim statute / 30-60 day notice, N.C. Gen. Stat. §58-24-10 deductible-rebate prohibition, free contractor choice under NC law, 8 NC carriers, 2026 per-material pricing across 5 tiers) + FreeInspection, hero `.speakable-intro` updating to 2,000+ completed projects + Charlotte + LKN service area + 2026 update.
+
+### Tier 6 status: COMPLETE (all 15 high-value static content pages enhanced)
+All static content pages worth enhancing now carry the AEO bundle. Remaining ~30 unoptimized pages site-wide are dynamic [slug] route templates (high-leverage, would affect many generated pages each) and ~12 utility/admin pages (skip). Next pass: Tier 7 — dynamic route templates (blog/[slug], services/[slug], locations/[city], brands/[slug], etc.).
 
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19

@@ -12,7 +12,53 @@ import {
   WebPageSchema,
   FeaturedSnippetListAnswerSchema,
   FreeInspectionOfferSchema,
+  FAQSchema,
 } from '@/components/seo/SchemaMarkup';
+import { CitationFacts } from '@/components/sections/CitationFacts';
+import { HelpCircle } from 'lucide-react';
+
+const commercialSystemsFAQs = [
+  {
+    question: 'Which commercial roofing system is best for Charlotte NC?',
+    answer:
+      'For most flat or low-slope commercial buildings in Charlotte NC, TPO single-ply is the best balance of cost, energy efficiency, and warranty — typically $5–$12 per square foot installed with a 20–30 year NDL warranty from manufacturers like Carlisle and Johns Manville. EPDM rubber is preferred for parapet-walled buildings (60+ year track record). PVC is best for restaurants and manufacturing where chemical or grease resistance is required. Best Roofing Now is an authorized installer for Carlisle, Johns Manville, Firestone-Holcim, GAF, and Mule-Hide.',
+  },
+  {
+    question: 'How much does commercial roofing cost in Charlotte NC?',
+    answer:
+      'Commercial roofing costs in Charlotte NC range from $4–$30 per square foot installed depending on system: silicone restoration coatings $2–$5/sqft (extends existing roof 10–15 years), EPDM $4–$10/sqft, TPO $5–$12/sqft, built-up $5–$10/sqft, modified bitumen $6–$12/sqft, PVC $7–$14/sqft, and standing seam metal $9–$30/sqft. For a 20,000 sq ft warehouse, expect $80,000–$240,000 for full replacement or $40,000–$100,000 for a coating system. Best Roofing Now provides free written commercial estimates with itemized line items.',
+  },
+  {
+    question: 'How long do commercial roofing systems last?',
+    answer:
+      'Commercial roofing system lifespans in Charlotte NC: TPO 20–30 years, EPDM 25–40 years, PVC 25–35 years, modified bitumen 15–25 years, built-up roofing 20–30 years, standing seam metal 50+ years, silicone/acrylic restoration coatings 10–20 years (and recoatable). All systems are backed by manufacturer NDL (no-dollar-limit) warranties when installed by an authorized contractor like Best Roofing Now.',
+  },
+  {
+    question: 'Do you offer commercial roof maintenance contracts?',
+    answer:
+      'Yes. Best Roofing Now offers preventive maintenance contracts for Charlotte commercial buildings — typically two inspections per year (spring + fall), drain and gutter clearing, seam and flashing inspection, photographic reporting, and minor repair allowance. Contracts protect manufacturer warranty validity and extend system life by 5–10 years. Pricing typically runs $0.05–$0.15 per square foot per year depending on system and access requirements.',
+  },
+  {
+    question: 'Can you coat my existing flat roof instead of replacing it?',
+    answer:
+      'Often yes. Silicone and acrylic roof restoration coatings can extend the life of an existing TPO, EPDM, modified bitumen, or metal roof by 10–15 years at $2–$5 per square foot — typically 30–50% the cost of a full replacement. The roof must be structurally sound (no saturated insulation), and we run an infrared moisture survey before quoting. Coatings preserve the original substrate, defer capital expenditure, and can qualify as a maintenance expense for some businesses.',
+  },
+  {
+    question: 'Are you certified to install manufacturer warranties?',
+    answer:
+      'Yes. Best Roofing Now is an authorized commercial installer for Carlisle Syntec, Johns Manville, Firestone-Holcim, GAF, and Mule-Hide commercial systems. Authorized status is required to issue manufacturer NDL (no-dollar-limit) warranties of 15–30 years. We also carry NC General Contractor License #87344, full general liability and workers comp insurance, and are BBB A+ accredited.',
+  },
+  {
+    question: 'How quickly can you respond to a commercial roof emergency?',
+    answer:
+      'Best Roofing Now offers 24/7 emergency response for commercial roof leaks in Charlotte NC. Same-day emergency tarp and patch service is typically dispatched within 1–4 hours in Mecklenburg County and the I-77/I-85 corridor. We document everything for insurance, coordinate with property managers, and minimize tenant disruption. Emergency dispatch: (704) 605-6047.',
+  },
+  {
+    question: 'Do you handle commercial roof insurance claims?',
+    answer:
+      'Yes. We provide full insurance claim assistance for commercial roofs in Charlotte NC: storm damage documentation with drone and ground photos, Xactimate-format estimates, meeting with adjusters on-site, supplement requests, and code-required upgrade documentation (NC commercial reroofing must meet current code). The building owner typically pays only the deductible.',
+  },
+];
 
 export const metadata: Metadata = {
   title: 'Commercial Roofing Systems Charlotte NC',
@@ -78,6 +124,7 @@ export default function CommercialSystemsPage() {
         pageUrl={`${SITE_CONFIG.url}/commercial-systems`}
       />
       <FreeInspectionOfferSchema />
+      <FAQSchema faqs={commercialSystemsFAQs} />
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -307,6 +354,51 @@ export default function CommercialSystemsPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="section bg-light" aria-labelledby="commercial-systems-faq">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-3">
+                <HelpCircle className="w-4 h-4" aria-hidden="true" />
+                <span className="text-sm font-semibold">Common Questions</span>
+              </div>
+              <h2
+                id="commercial-systems-faq"
+                className="text-3xl md:text-4xl font-bold text-primary"
+              >
+                Commercial Roofing Systems FAQs
+              </h2>
+              <p className="text-gray-600 mt-2">
+                Answers Charlotte NC property managers, owners, and facility managers ask before
+                committing to a commercial roof project.
+              </p>
+            </div>
+            <div className="space-y-4">
+              {commercialSystemsFAQs.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="bg-white rounded-xl shadow-sm p-5 group"
+                >
+                  <summary className="font-bold text-dark cursor-pointer list-none flex items-start justify-between gap-4">
+                    <span>{faq.question}</span>
+                    <span
+                      className="text-primary transition-transform group-open:rotate-45 text-2xl leading-none"
+                      aria-hidden="true"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <p className="text-gray-700 mt-3 leading-relaxed">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CitationFacts service="Commercial Roofing" city="Charlotte" state="NC" />
 
       {/* CTA Section */}
       <section className="section bg-gradient-primary text-white">

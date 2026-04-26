@@ -24,6 +24,11 @@ import {
   WebPageSchema,
   HeroImageSchema,
   GallerySchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -301,6 +306,29 @@ export default function EmergencyRoofingPage() {
           { name: '24/7 Emergency Roof Repair', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="24/7 Emergency Roof Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="When should I call for emergency roof repair in Charlotte NC?"
+        directAnswer="Call Best Roofing Now's 24/7 emergency line in Charlotte NC for these 8 situations: (1) active water leak inside the home (drip into bucket, ceiling water stain spreading) — never wait, water damage compounds at $3,000-$25,000 per affected room; (2) tree limb on roof — tarp ASAP to stop secondary damage; (3) wind-blown shingles missing exposing decking — water entry imminent; (4) structural sagging or partial collapse — evacuate area, life safety; (5) chimney brick fall (2002/2014/2026 ice storm pattern); (6) hail damage with active leaks during the storm window; (7) commercial flat-roof ponding with leak (insurance loss-mitigation requires you respond); (8) any roof issue threatening to disrupt a closing, wedding, or critical event. Response times by zone: Mecklenburg County 1-2 hr, Lake Norman 2-4 hr, outer counties 3-6 hr. Standard tarp deploy uses 12-mil reinforced material with 2x4 batten frame screwed (not nailed) to last 60-90 days. After-hours surcharge $250-$500 (often reimbursable as insurance loss mitigation)."
+        items={[
+          'Active interior leak — never wait; water damage compounds at $3K-$25K per affected room',
+          'Tree limb on roof — tarp ASAP to stop secondary damage; coordinate tree service after',
+          'Wind-blown shingles exposing decking — water entry imminent; same-day patch',
+          'Structural sagging or partial collapse — evacuate; call 911 if injuries; we coordinate after',
+          'Chimney brick fall — common 2002/2014/2026 ice storm pattern; immediate stabilization',
+          'Hail damage with active leaks — file claim same-day for proper documentation',
+          'Commercial ponding with leak — insurance loss-mitigation requires response',
+          'Critical event protection — closing, wedding, hospital visit; we prioritize emergency calendar',
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
       <HeroImageSchema
         url={IMAGES.services.emergency}
         caption="24/7 Emergency Roof Repair Charlotte NC - Best Roofing Now responds in 30 minutes"
@@ -379,9 +407,15 @@ export default function EmergencyRoofingPage() {
               <strong>30-Minute Response Time</strong> for Active Leaks, Storm Damage & Urgent Repairs
             </p>
 
-            <p className="text-lg text-white/80 mb-8">
-              Roof emergency? Don't wait. Our emergency roofing crews are standing by 24 hours a day,
-  7 days a week, including nights, weekends, and holidays. We respond fast to protect your home.
+            <p className="speakable-intro text-lg text-white/80 mb-8">
+              Roof emergency? Don't wait. Best Roofing Now's emergency crews are standing by 24/7
+              across Charlotte and the surrounding communities of Ballantyne, SouthPark, Steele
+              Creek, University City, and the Lake Norman lakefront communities of Huntersville,
+              Cornelius, Davidson, and Mooresville. Tarp dispatch in 1-2 hours for Mecklenburg
+              County, 2-4 hours for Lake Norman, 3-6 hours for outer counties — using 12-mil
+              reinforced tarp with 2x4 batten frame screwed (not nailed) for 60-90 day temporary
+              protection. Battle-tested through Florence 2018, Idalia 2023, Helene 2024, and the
+              2002/2014/2026 ice storms.
             </p>
 
             {/* Prominent Phone CTA */}

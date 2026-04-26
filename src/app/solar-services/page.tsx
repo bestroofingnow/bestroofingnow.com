@@ -21,6 +21,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
@@ -144,6 +149,29 @@ export default function SolarServicesPage() {
           { name: 'Solar Roofing Charlotte NC', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Solar Roofing Services Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="What does solar roofing cost in Charlotte NC and what are the tax credits?"
+        directAnswer="Solar roofing in Charlotte NC costs $15,000-$45,000 for a typical residential 6-10 kW system installed (before tax credits) — the federal Residential Clean Energy Credit covers 30% through 2032 (phasing to 26% in 2033, 22% in 2034). Charlotte NC homeowners also qualify for Duke Energy net metering crediting export at retail rates, $0.04/kWh state corporate solar credit, and property-tax exemption on the system value. Solar attic fans (a smaller alternative) cost $700-$1,400 installed and qualify for the same 30% credit. For standing-seam metal roofs, S-5! non-penetrating clamp-mount preserves the manufacturer warranty — DO NOT through-bolt panels through metal seams. For asphalt shingle roofs, GAF DecoTech and CertainTeed Apollo II integrated solar singles are warranty-compatible alternatives to bolt-on PV."
+        items={[
+          'Residential 6-10 kW system — $15,000-$45,000 installed before tax credits',
+          'Federal Residential Clean Energy Credit — 30% through 2032 (phasing 26%/22%/0% by 2035)',
+          'Duke Energy net metering — exports credited at retail rates in NC',
+          'NC property tax exemption — solar system value not assessed for property tax',
+          'Solar attic fans — $700-$1,400 installed; same 30% federal credit; smaller alternative',
+          'S-5! non-penetrating clamp-mount — for standing-seam metal; preserves manufacturer warranty',
+          'Integrated solar shingles — GAF DecoTech, CertainTeed Apollo II for asphalt shingle roofs',
+          'Best Roofing Now coordination — we work with vetted local solar installers; warranty-compatible install methods',
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
@@ -188,10 +216,15 @@ export default function SolarServicesPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-4">
               Expert Roof Preparation &amp; Solar Panel Integration
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-3xl">
-              Thinking about solar panels? Your roof is the foundation. Best Roofing Now provides
-              solar-ready roof installations, expert solar panel integration, and specialized repairs
-              for roofs with existing solar systems throughout Charlotte.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
+              Thinking about solar panels? Your roof is the foundation. Best Roofing Now installs
+              solar-ready roofs and integrates with vetted solar partners across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Steele Creek, University City, and
+              the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville. We use
+              warranty-compatible install methods — S-5! non-penetrating clamp-mount on standing-seam
+              metal, integrated solar shingles (GAF DecoTech, CertainTeed Apollo II) on asphalt —
+              and coordinate the federal 30% Residential Clean Energy Credit (through 2032) plus
+              Duke Energy net metering and NC property-tax exemption.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

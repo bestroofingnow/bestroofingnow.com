@@ -18,6 +18,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ServiceSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -137,6 +142,29 @@ export default function SidingServicesPage() {
           { name: 'Siding Services', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Siding Services Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="What does siding installation cost in Charlotte NC?"
+        directAnswer="Siding installation in Charlotte NC ranges $5-$18 per sq ft installed depending on material. Vinyl siding $5-$8/sq ft (most popular new install, 30-40 yr lifespan, low maintenance); fiber cement (James Hardie HardiePlank) $8-$13/sq ft (50+ yr warranty, fire-resistant, holds paint 10-15 yr); LP SmartSide engineered wood $7-$11/sq ft (50 yr limited, real wood look); cedar shake $9-$15/sq ft (heritage homes, 25-40 yr Charlotte climate); metal $11-$18/sq ft (modern, low-maintenance). For a typical Charlotte 2,500 sq ft home: vinyl $12,500-$20,000, James Hardie $20,000-$32,500, LP SmartSide $17,500-$27,500. Bundling siding + roof + gutters saves 20-35% versus separate scopes. Best Roofing Now is HardiePlank Preferred Contractor with manufacturer-trained installers."
+        items={[
+          'Vinyl siding — $5-$8/sq ft installed; 30-40 yr lifespan; most popular new install',
+          'Fiber cement (James Hardie HardiePlank) — $8-$13/sq ft installed; 50+ yr; fire-resistant',
+          'LP SmartSide engineered wood — $7-$11/sq ft installed; 50 yr limited; real wood look',
+          'Cedar shake — $9-$15/sq ft installed; 25-40 yr Charlotte climate; heritage homes',
+          'Metal siding — $11-$18/sq ft installed; modern, low-maintenance',
+          '2,500 sq ft Charlotte home totals — vinyl $12,500-20K, Hardie $20K-32.5K, LP $17.5K-27.5K',
+          'Bundle savings — siding + roof + gutters together saves 20-35% vs separate',
+          'HardiePlank Preferred Contractor — manufacturer-trained installers, full warranty unlock',
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
@@ -166,10 +194,14 @@ export default function SidingServicesPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Siding Services Charlotte NC
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Transform your home&apos;s exterior with professional siding services from Charlotte&apos;s trusted contractor.
-              James Hardie certified installer for fiber cement siding, plus vinyl and engineered wood options.
-              Boost curb appeal, improve energy efficiency, and protect your home for decades.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Best Roofing Now installs the full siding range — vinyl, fiber cement (James Hardie
+              HardiePlank), LP SmartSide engineered wood, cedar shake, and metal — across Charlotte
+              and the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood,
+              Myers Park, NoDa, Steele Creek, University City, and the Lake Norman towns of
+              Huntersville, Cornelius, Davidson, and Mooresville. James Hardie Preferred Contractor
+              with manufacturer-trained installers. Bundle siding + roof + gutters together for
+              20-35% savings versus separate scopes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <EstimateButton

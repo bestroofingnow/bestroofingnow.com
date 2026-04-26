@@ -22,7 +22,16 @@ import {
 } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
-import { BreadcrumbSchema } from '@/components/seo/SchemaMarkup';
+import { IMAGES } from '@/lib/images';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -182,6 +191,39 @@ export default function NCRoofingGuidePage() {
       />
       <FAQSchema />
       <ArticleSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/nc-roofing-guide`}
+        pageName="NC Roofing Guide"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="NC Roofing Guide | Charlotte & Statewide North Carolina | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/nc-roofing-guide`}
+        description="Comprehensive North Carolina roofing guide covering Charlotte and statewide cities, NC building code (IRC §R806 ventilation, 110+ MPH wind ratings, Class 4 impact discount), insurance carriers and claim filing under N.C. Gen. Stat. §58-3-100, 2026 pricing per material and tier."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'NC Roofing Guide', url: `${SITE_CONFIG.url}/nc-roofing-guide` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What should North Carolina homeowners know about roofing in 2026?"
+        directAnswer="North Carolina roofing in 2026 is governed by 8 key rules and economic factors: (1) NC IRC §R806 attic ventilation requires 1:150 NFVA or 1:300 with balanced 50/50 intake/exhaust; (2) NC code minimum wind rating is 110 MPH (130 MPH coastal/coastal-adjacent), with most architectural shingles meeting 130 MPH and Class 4 reaching 150 MPH; (3) Class 4 impact-resistant shingles unlock a 10-30% NC homeowner insurance discount through the NC IBHS Fortified program; (4) N.C. Gen. Stat. §58-3-100 sets a 12-month statute of limitations on hail/wind insurance claims (most policies require notice within 30-60 days); (5) N.C. Gen. Stat. §58-24-10 makes deductible-rebating illegal — any contractor offering it is risking your claim; (6) homeowners may use any licensed contractor under NC law (not just carrier-preferred vendors); (7) major NC carriers: State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie, Farm Bureau; (8) 2026 pricing: architectural shingles $5-9/sq ft, Class 4 $7-11, designer $9-14, standing-seam metal $9-30, slate $20-35, tile $11-25 (synthetic $11-18)."
+        items={[
+          'NC IRC §R806 ventilation — 1:150 NFVA or 1:300 with balanced 50/50; warranty compliance requirement',
+          'NC code wind rating — 110 MPH minimum (130 MPH coastal); architectural typically 130, Class 4 up to 150',
+          'Class 4 insurance discount — 10-30% via NC IBHS Fortified program; payback 5-7 yr',
+          'N.C. Gen. Stat. §58-3-100 — 12-month claim statute; most policies 30-60 day notice window',
+          'N.C. Gen. Stat. §58-24-10 — deductible rebating illegal; any contractor offering it risks your claim',
+          'Free contractor choice — NC law allows any licensed contractor; not just carrier preferred vendor',
+          'NC carriers — State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie, Farm Bureau',
+          '2026 pricing — architectural $5-9/sq ft, Class 4 $7-11, designer $9-14, metal $9-30, slate $20-35',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/nc-roofing-guide`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
@@ -202,9 +244,13 @@ export default function NCRoofingGuidePage() {
               Everything you need to know about roofing in North Carolina — from building codes
               and permit requirements to HOA rules and best materials for Charlotte and Lake Norman.
             </p>
-            <p className="text-lg text-white/80 mb-8">
-              This comprehensive guide is based on current NC building codes, local ordinances,
-              and our experience completing 500+ roofing projects across the Charlotte metro area.
+            <p className="speakable-intro text-lg text-white/80 mb-8">
+              This comprehensive guide is based on current NC IRC §R806 building code, NC IBHS
+              Fortified insurance discount eligibility, N.C. Gen. Stat. §58-3-100 and §58-24-10
+              insurance law, and Best Roofing Now's 2,000+ completed roofing projects across
+              Charlotte and the surrounding communities of Ballantyne, SouthPark, Steele Creek,
+              University City, and the Lake Norman towns of Huntersville, Cornelius, Davidson,
+              and Mooresville. Updated for 2026 pricing and code.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

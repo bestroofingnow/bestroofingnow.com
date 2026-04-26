@@ -5,7 +5,17 @@ import { Phone, CheckCircle, ArrowRight, AlertTriangle, CloudRain, Shield, FileT
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { ServiceSchema, BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  ServiceSchema,
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -139,6 +149,29 @@ export default function StormDamageRoofSidingPage() {
           { name: 'Storm Damage Roof & Siding', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Storm Damage Roof & Siding Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="Why combine storm damage roof and siding repair in Charlotte NC?"
+        directAnswer="Combining roof and siding storm damage repair in Charlotte NC is the right move because: (1) the same hail/wind event almost always damages both surfaces, especially the wind-facing slope and adjacent siding (NOAA records 3-5 hail days/yr in Mecklenburg with 1-2+ inch hail capable of breaking shingles AND vinyl/Hardie siding); (2) one insurance claim covers both with a single deductible — separate claims = separate deductibles ($1,500-$3,000 each); (3) one set of scaffolding and one tarp deployment vs two; (4) integrated J-channel and drip-edge install ensures siding-to-roof transition is sealed correctly (sequencing wrong needs rework); (5) photo documentation and Xactimate estimate covers both for the adjuster meeting; (6) faster total restoration timeline (1-3 days vs 2-5 days separate). Best Roofing Now handles roof + siding storm restoration end-to-end with State Farm, Allstate, USAA, Liberty Mutual, Travelers, and other major NC carriers."
+        items={[
+          'Same storm damages both — wind-facing slope shingles + adjacent siding panels typically hit together',
+          'Single insurance deductible — one claim covers both vs two claims = two deductibles ($1,500-$3,000 each)',
+          'One scaffold setup / one tarp dispatch — vs two for separate scopes',
+          'Integrated J-channel + drip-edge install — siding-to-roof transition sealed correctly only when done together',
+          'Single Xactimate estimate — covers both for adjuster meeting; supplemental for missed damage',
+          'Faster restoration timeline — 1-3 days for combined vs 2-5 days for sequential separate scopes',
+          'Carriers handled — State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie, Farm Bureau',
+          'Common Charlotte storms triggering combined claims — Florence 2018, Idalia 2023, Helene 2024, May-June hail belt',
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
@@ -172,8 +205,14 @@ export default function StormDamageRoofSidingPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Storm Damage Roof & Siding Repair in Charlotte, NC
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Hail, wind, or fallen trees damaged your roof and siding? We handle complete restoration and work directly with your insurance company—one contractor, one claim, one solution.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Hail, wind, or fallen trees damaged your roof and siding? Best Roofing Now handles
+              combined restoration end-to-end across Charlotte and the surrounding communities of
+              Ballantyne, SouthPark, Steele Creek, University City, and the Lake Norman lakefront
+              communities of Huntersville, Cornelius, Davidson, and Mooresville. One contractor,
+              one Xactimate-format insurance claim, one deductible — saving you $1,500-$3,000 vs
+              two separate claims. Battle-tested through Florence 2018, Idalia 2023, and Helene
+              2024.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
