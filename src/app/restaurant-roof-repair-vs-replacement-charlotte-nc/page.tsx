@@ -24,6 +24,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -268,6 +273,29 @@ export default function RestaurantRoofRepairVsReplacementPage() {
   dateModified: '2025-01-30',
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/restaurant-roof-repair-vs-replacement-charlotte-nc`}
+        pageName="Restaurant Roof Repair vs Replacement Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="Should a Charlotte NC restaurant repair or replace its roof?"
+        directAnswer="The repair-vs-replace decision for a Charlotte NC restaurant follows 7 criteria: (1) age — under 15 yr typically repair, 15-20 yr evaluate, 20+ yr replace; (2) leak-frequency — isolated leaks repair, multiple-area leaks replace; (3) ponding water on flat roofs — minor repair plus drainage fix, severe replace; (4) Mecklenburg County Health Department code compliance — kitchen exhaust hood and grease-vent penetrations must be properly flashed; (5) energy and HVAC load — old uninsulated decks waste 15-30% on summer cooling; (6) business-disruption tolerance — phased work or off-hours install (10pm-6am) keeps doors open; (7) insurance and capital budget — repair $2,500-$15,000, full replacement $25,000-$150,000+ for typical 2,000-8,000 sq ft restaurant. We've worked on independent restaurants and chain locations across Plaza Midwood, NoDa, South End, SouthPark, University City, and Ballantyne corridors."
+        items={[
+          'Age criterion — under 15 yr typically repair; 15-20 yr evaluate; 20+ yr replace (especially for old EPDM/BUR)',
+          'Leak frequency — isolated single-area leak repair; multi-zone or recurring leaks indicate system end-of-life',
+          'Ponding water — minor improve drainage with crickets; severe ponding (>1 in after 48 hr) indicates structural fail',
+          'Mecklenburg health code — kitchen hood and grease-vent flashing must be code-compliant for inspection pass',
+          'Energy economics — uninsulated old deck wastes 15-30% on summer cooling; payback 5-8 yr on full reroof with R-25+',
+          'Business disruption — phased section work or off-hours install (10pm-6am) keeps the dining room open',
+          'Capital ranges — repair $2,500-$15,000; full replacement $25,000-$150,000+ for 2,000-8,000 sq ft restaurant',
+          'Charlotte restaurant corridors — Plaza Midwood, NoDa, South End, SouthPark, University City, Ballantyne',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/restaurant-roof-repair-vs-replacement-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       <section className="pt-8 pb-12 bg-gradient-to-b from-slate-900 via-slate-800 to-blue-900">
         <div className="container mx-auto px-4">
@@ -281,9 +309,15 @@ export default function RestaurantRoofRepairVsReplacementPage() {
               Restaurant Roof Repair vs Replacement
               <span className="block text-orange-400 mt-2">Charlotte NC Guide</span>
             </h1>
-            <p className="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
-              Make the right decision for your restaurant&apos;s roof. Health code compliance,
-  minimizing downtime, and protecting your investment.
+            <p className="speakable-intro text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
+              Best Roofing Now reroofs and repairs restaurants across Charlotte's dining corridors —
+              Plaza Midwood, NoDa, South End, SouthPark, University City, Ballantyne, Cotswold, and
+              the Lake Norman dining hubs of Cornelius and Davidson. We coordinate Mecklenburg
+              County Health Department compliance for kitchen exhaust hood and grease-vent
+              flashing, schedule phased or off-hours work (10pm-6am) to keep dining rooms open, and
+              install Carlisle / Johns Manville / Firestone-Holcim / Mule-Hide TPO and EPDM systems
+              with NDL warranties. Capital ranges $2,500 (single-leak repair) to $150,000+ (full
+              8,000 sq ft replacement).
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <EstimateButton

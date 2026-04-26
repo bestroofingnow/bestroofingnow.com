@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -282,6 +291,39 @@ export default function AsphaltShingleRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/asphalt-shingle-roofing-charlotte-nc`}
+        pageName="Asphalt Shingle Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Asphalt Shingle Roofing Charlotte NC | All Tier Installer | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/asphalt-shingle-roofing-charlotte-nc`}
+        description="Asphalt shingle roofing in Charlotte NC. 3-tab, architectural, Class 4 impact-resistant, designer/luxury, and cool-roof reflective lines from GAF, CertainTeed, Owens Corning, Tamko. $4-14 per sq ft installed. GAF Master Elite + CertainTeed SELECT + OC Platinum certifications."
+        primaryImage={IMAGES.houses.house1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Asphalt Shingle Roofing Charlotte NC', url: `${SITE_CONFIG.url}/asphalt-shingle-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does asphalt shingle roofing cost in Charlotte NC?"
+        directAnswer="Asphalt shingle roofing in Charlotte NC ranges $4-$14 per sq ft installed across 5 tiers: (1) 3-tab basic at $4-$6/sq ft (rare on new builds, 20-25 yr lifespan, NC code 60 MPH minimum); (2) architectural standard at $5-$9/sq ft (most popular, 130 MPH wind rating, 30-50 yr non-prorated warranty); (3) Class 4 impact-resistant at $7-$11/sq ft (10-30% NC insurance discount, hail-belt protection); (4) designer / luxury at $9-$14/sq ft (GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire — for Eastover/Foxcroft/Quail Hollow estate homes); (5) cool-roof reflective at $8-$10/sq ft (Energy Star, 10-15% summer cooling savings). Charlotte 30-square home totals: 3-tab $9,000-$13,500; architectural $13,000-$18,000; Class 4 $15,500-$20,000; designer $19,000-$26,000."
+        items={[
+          '3-tab basic — $4-$6/sq ft installed; 20-25 yr lifespan; NC 60 MPH wind code minimum',
+          'Architectural standard — $5-$9/sq ft installed; 130 MPH wind; 30-50 yr non-prorated; Charlotte default',
+          'Class 4 impact-resistant — $7-$11/sq ft installed; 10-30% NC insurance discount; hail-belt protection',
+          'Designer / luxury — $9-$14/sq ft installed; GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire',
+          'Cool-roof reflective — $8-$10/sq ft installed; Energy Star qualified; 10-15% AC savings',
+          'Brand certifications — GAF Master Elite (top 2%), CertainTeed SELECT ShingleMaster, OC Platinum Preferred',
+          'Warranty unlocks — 30-50 yr non-prorated transferable when installed by certified contractor',
+          'Charlotte 30-square totals — 3-tab $9-13.5K; architectural $13-18K; Class 4 $15.5-20K; designer $19-26K',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/asphalt-shingle-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -307,10 +349,15 @@ export default function AsphaltShingleRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium shingles with lifetime warranties from Charlotte's trusted roofers
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is a certified installer for CertainTeed, GAF, and Owens Corning - the industry's
-              top shingle manufacturers. From architectural shingles to designer options, we provide expert
-              installation backed by the best warranties in the industry.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs the full asphalt shingle range — 3-tab, architectural, Class
+              4 impact-resistant, designer/luxury, and cool-roof reflective — across Charlotte and
+              the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers
+              Park, NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek,
+              University City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and
+              Mooresville. As GAF Master Elite (top 2% nationwide), CertainTeed SELECT ShingleMaster,
+              and OC Platinum Preferred installers, we unlock 30-50 year non-prorated transferable
+              warranties on every install.
             </p>
 
             {/* CTA Buttons */}

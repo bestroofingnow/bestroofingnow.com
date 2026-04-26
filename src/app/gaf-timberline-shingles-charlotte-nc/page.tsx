@@ -19,7 +19,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -226,6 +235,39 @@ export default function GAFTimberlineShinglesCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gaf-timberline-shingles-charlotte-nc`}
+        pageName="GAF Timberline Shingles Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="GAF Timberline Shingles Charlotte NC | Master Elite Installer | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/gaf-timberline-shingles-charlotte-nc`}
+        description="GAF Timberline architectural shingles in Charlotte NC. HDZ with LayerLock and StainGuard Plus, AS for Class 4 impact-resistant, UHDZ ultra-thick designer profile. GAF Master Elite installer (top 2% nationwide) with Golden Pledge transferable warranty."
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'GAF Timberline Shingles Charlotte NC', url: `${SITE_CONFIG.url}/gaf-timberline-shingles-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="Which GAF Timberline shingle is best for Charlotte NC homes?"
+        directAnswer="GAF Timberline shingles in Charlotte NC come in 5 product tiers, each suited to different needs and budgets: (1) Timberline Natural Shadow — entry architectural at $5-$7/sq ft installed, 30-yr warranty; (2) Timberline HDZ with LayerLock and StainGuard Plus — most popular at $6-$9/sq ft installed, 130 MPH wind, algae warranty; (3) Timberline AS II Class 4 impact-resistant — $7-$10/sq ft installed, qualifies for the 10-30% NC insurance discount on hail-belt homes; (4) Timberline UHDZ ultra-thick designer profile — $9-$11/sq ft installed, 1.5x dimensional thickness, 25 yr StainGuard Plus algae warranty; (5) Timberline CS cool-roof reflective — $8-$10/sq ft installed, Energy Star qualified for 10-15% summer cooling savings. As GAF Master Elite installers (top 2% nationwide), Best Roofing Now unlocks the Golden Pledge transferable warranty (50 yr non-prorated material + workmanship) on all Timberline lines."
+        items={[
+          'Timberline Natural Shadow — $5-$7/sq ft installed; entry architectural; 30 yr warranty; 110 MPH wind',
+          'Timberline HDZ — $6-$9/sq ft installed; LayerLock + StainGuard Plus; 130 MPH wind; most-popular Charlotte choice',
+          'Timberline AS II Class 4 — $7-$10/sq ft installed; impact-resistant; 10-30% NC insurance discount',
+          'Timberline UHDZ — $9-$11/sq ft installed; ultra-thick designer profile; 1.5x dimensional thickness',
+          'Timberline CS cool-roof — $8-$10/sq ft installed; Energy Star qualified; 10-15% summer cooling savings',
+          'GAF Master Elite (top 2%) — Best Roofing Now is one of fewer than 100 Master Elite contractors in NC',
+          'Golden Pledge warranty — 50 yr non-prorated material + workmanship; transferable to next homeowner',
+          'Charlotte 30-square home totals — Natural Shadow $11-15K; HDZ $13-18K; AS II $15-20K; UHDZ $19-22K',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/gaf-timberline-shingles-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -251,11 +293,15 @@ export default function GAFTimberlineShinglesCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Timberline HDZ & NS with LayerLock technology and StainGuard Plus
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now installs America's most trusted shingles - GAF Timberline HDZ and NS.
-              Featuring LayerLock technology for superior wind resistance, StainGuard Plus for algae
-              protection, and beautiful color options that enhance your home's curb appeal. Backed by
-              the industry's strongest warranty when installed by our certified team.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs the full GAF Timberline lineup — Natural Shadow, HDZ, AS II
+              Class 4 impact-resistant, UHDZ ultra-thick designer, and CS cool-roof — across
+              Charlotte and the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza
+              Midwood, Myers Park, NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods,
+              Steele Creek, University City, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville. As GAF Master Elite installers (top 2% nationwide, fewer
+              than 100 in NC), we unlock the Golden Pledge transferable warranty: 50 yr non-prorated
+              material plus workmanship.
             </p>
 
             {/* CTA Buttons */}

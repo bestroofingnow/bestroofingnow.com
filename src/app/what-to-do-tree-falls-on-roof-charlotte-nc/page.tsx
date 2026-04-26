@@ -24,6 +24,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -277,6 +282,29 @@ export default function WhatToDoTreeFallsOnRoofPage() {
   dateModified: '2025-01-31',
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`}
+        pageName="What to Do When a Tree Falls on Your Roof Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="What should I do immediately if a tree falls on my Charlotte NC roof?"
+        directAnswer="If a tree falls on your Charlotte NC roof, follow these 8 steps in order: (1) ensure household safety — evacuate if the tree is still settling or branches are near power lines, call 911 if anyone is injured; (2) call your power company (Duke Energy 800-769-3766) immediately if branches touch power lines — never approach them yourself; (3) avoid going onto the roof or under the impact zone; (4) photograph and video the damage from ground level (multiple angles, before any cleanup); (5) call your homeowner insurance carrier to open a claim — most policies cover tree damage minus your deductible; (6) call a licensed roofer for emergency tarp service (Best Roofing Now responds 1-4 hours by zone); (7) save all receipts for emergency mitigation (insurance reimbursable as 'loss mitigation'); (8) get the tree professionally removed before roof repair begins."
+        items={[
+          'Step 1 — household safety first; evacuate if structure is shifting or power lines are involved; call 911 for injuries',
+          'Step 2 — Duke Energy 800-769-3766 if branches touch power lines; do not approach yourself',
+          'Step 3 — stay off the roof and out of the impact zone until a professional clears it safe',
+          'Step 4 — ground-level photo/video documentation from multiple angles before any cleanup or movement',
+          'Step 5 — call homeowner insurance carrier same-day; most policies cover tree damage minus deductible',
+          'Step 6 — emergency roofer for tarp dispatch; Best Roofing Now 1-4 hr response by zone',
+          'Step 7 — save all receipts (tarp materials, lodging if displaced); reimbursable as insurance loss mitigation',
+          'Step 8 — licensed tree service to remove the tree before roof repair starts; coordinated with roofer',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       <section className="pt-8 pb-12 bg-gradient-to-b from-red-900 via-red-800 to-slate-900">
         <div className="container mx-auto px-4">
@@ -290,9 +318,14 @@ export default function WhatToDoTreeFallsOnRoofPage() {
               Tree Fell on Your Roof?
               <span className="block text-red-300 mt-2">Here&apos;s What to Do Now</span>
             </h1>
-            <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-              Stay calm. Follow these steps to stay safe, protect your home, and navigate the
-              insurance process.
+            <p className="speakable-intro text-xl text-red-100 mb-8 max-w-2xl mx-auto">
+              Stay calm. Best Roofing Now responds 24/7 across Charlotte and the surrounding
+              communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa,
+              Steele Creek, University City, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville with 1-4 hour emergency tarp dispatch by zone. Follow the
+              8 steps below to stay safe, document the damage for insurance, and navigate the claim
+              with State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie, or Farm
+              Bureau.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

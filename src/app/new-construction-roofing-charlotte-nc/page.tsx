@@ -22,7 +22,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -262,6 +271,39 @@ export default function NewConstructionRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/new-construction-roofing-charlotte-nc`}
+        pageName="New Construction Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="New Construction Roofing Charlotte NC | GC Coordination | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/new-construction-roofing-charlotte-nc`}
+        description="New construction roofing in Charlotte NC. Pre-construction blueprint review, multi-phase scheduling with general contractors, NC IRC §R806 ventilation compliance, dry-in coordination, GAF Master Elite / CertainTeed SELECT / OC Platinum 30-50 yr warranties for closing packages."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'New Construction Roofing Charlotte NC', url: `${SITE_CONFIG.url}/new-construction-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does new construction roofing in Charlotte NC involve?"
+        directAnswer="New construction roofing in Charlotte NC integrates the roof system into the broader build via 8 coordinated phases: (1) pre-construction blueprint review with the GC and architect (pitch, ventilation, valley/hip layout, ice-and-water shield zones); (2) material selection by architectural style and HOA palette; (3) pre-dry-in framing inspection (rafter spacing, sheathing nail pattern); (4) ice-and-water shield application at eaves, valleys, penetrations; (5) synthetic underlayment field-out (Tyvek/Titanium PSU30, GAF Tiger Paw, OC ProArmor); (6) drip edge plus starter strip plus shingle install with 4-nail pattern minimum (6-nail for high-wind); (7) NC IRC §R806 1:150/1:300 NFVA balanced ventilation with paired soffit intake and continuous ridge vent; (8) NDL warranty packet for closing (GAF Golden Pledge, CertainTeed 5-Star, OC Platinum). We coordinate with custom GCs and production builders across SouthPark, Ballantyne, Davidson, Cornelius, Huntersville, Mooresville, and Waxhaw."
+        items={[
+          'Pre-construction blueprint review — pitch, ventilation NFVA math, valley/hip layout, ice-and-water shield zones',
+          'Material selection by style and HOA — architectural style match plus HOA architectural review board palette',
+          'Pre-dry-in framing inspection — rafter spacing, sheathing nail pattern, deck OSB/CDX type verification',
+          'Ice-and-water shield — eaves (3-6 ft from edge), valleys, penetrations; Grace Ice & Water or GAF WeatherWatch',
+          'Synthetic underlayment — Tyvek/Titanium PSU30, GAF Tiger Paw, OC ProArmor (replaces felt #15)',
+          'Drip edge + starter strip + 4-nail shingle install — 6-nail pattern for high-wind locations',
+          'NC IRC §R806 balanced ventilation — soffit intake + continuous ridge vent for 1:150/1:300 NFVA',
+          'NDL warranty closing packet — GAF Golden Pledge, CertainTeed 5-Star, OC Platinum 30-50 yr non-prorated',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/new-construction-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -287,11 +329,15 @@ export default function NewConstructionRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Reliable roofing services for builders and developers
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte's trusted new construction roofing partner. We deliver quality
-              craftsmanship, on-time completion, and competitive pricing for production builders, custom home
-              builders, and developers. Our certified crews and dedicated account management keep your projects
-              on schedule.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now coordinates new construction roofing for production builders, custom
+              home builders, and developers across Charlotte and the surrounding communities of
+              Ballantyne, SouthPark, Davidson, Cornelius, Huntersville, Mooresville, Waxhaw,
+              Matthews, Mint Hill, Concord, and the Lake Norman lakefront and Catawba River corridor.
+              We coordinate pre-construction blueprint review, dry-in scheduling with the GC,
+              NC IRC §R806 ventilation balancing, and warranty packet delivery for closing — GAF
+              Master Elite (top 2%) Golden Pledge, CertainTeed SELECT 5-Star, and OC Platinum
+              Preferred 30-50 yr non-prorated transferable warranties.
             </p>
 
             {/* CTA Buttons */}
