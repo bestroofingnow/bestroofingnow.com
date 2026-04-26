@@ -256,6 +256,8 @@ export async function GET() {
     { url: `${BASE_URL}/free-roof-estimate-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/hoa-approved-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/military-veteran-roofing-discount-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/shingle-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    { url: `${BASE_URL}/siding-and-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
     // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
     // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written
