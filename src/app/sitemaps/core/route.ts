@@ -557,6 +557,13 @@ export async function GET() {
     { url: `${BASE_URL}/what-is-solar-reflective-index-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/what-is-a-roof-inspection-report-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/what-is-xactimate-scoping-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+
+    // Batch 33 Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/what-is-overhead-and-profit-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-a-public-adjuster-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-roof-certification-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-get-a-roofing-permit-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-rcv-vs-acv-insurance-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
   ];
 
   const lastmod = new Date().toISOString();

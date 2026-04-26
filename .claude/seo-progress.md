@@ -489,3 +489,13 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
 - Sitemap: 5 entries added to core/route.ts (Batch 32 Q&A pages section)
 - Type-check: clean
+
+### Batch 33 (2026-04-26): Q&A landing pages — insurance claim mechanics
+- ✅ what-is-overhead-and-profit-charlotte-nc (NEW Q&A page) — 10%+10%=20% markup applied when 3+ trades required, missing O&P costs Charlotte homeowners 16-20% of claim, three-trade rule, supplemental claim filing, NC §58-24-10 deductible-rebating prohibition
+- ✅ what-is-a-public-adjuster-charlotte-nc (NEW Q&A page) — NC §58-33A licensed pro working for homeowner, 8-15% fee (regulated maximum), best for $50K+ claims, verify at ncdoi.gov, vs attorney for litigation
+- ✅ what-is-roof-certification-charlotte-nc (NEW Q&A page) — written professional opinion of remaining useful life (2-5 yr typical), required for FHA/VA loans + insurance + sales, $200-$650 standalone or FREE with reroof, document validity 30-180 days
+- ✅ how-do-i-get-a-roofing-permit-charlotte-nc (NEW Q&A page) — City of Charlotte/Mecklenburg County LUESA, contractor handles entire process, $125-$1,500+ cost, 2-15 day issuance, NC IRC code compliance verification, unpermitted roof penalties
+- ✅ what-is-rcv-vs-acv-insurance-charlotte-nc (NEW Q&A page) — RCV pays full replacement vs ACV pays depreciated value, Charlotte 15-yr roof RCV $20K vs ACV $8-$12K, recoverable depreciation released after work completion, $50-$200/yr premium difference
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 33 Q&A pages section)
+- Type-check: clean
