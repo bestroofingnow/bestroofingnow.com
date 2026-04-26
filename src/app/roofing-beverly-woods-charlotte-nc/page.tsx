@@ -21,7 +21,17 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -231,6 +241,39 @@ export default function RoofingBeverlyWoodsCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-beverly-woods-charlotte-nc`}
+        pageName="Roofing Beverly Woods Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Beverly Woods Charlotte NC | Mid-Century Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-beverly-woods-charlotte-nc`}
+        description="Roofing for Beverly Woods, south Charlotte's classic 1950s-1960s mid-century community. Architectural shingle replacement on ranches and split-levels, hail Xactimate claims, mature canopy navigation, color-matched repair, 30-50 year non-prorated warranties."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Beverly Woods Charlotte NC', url: `${SITE_CONFIG.url}/roofing-beverly-woods-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Beverly Woods Charlotte NC homes commonly need?"
+        directAnswer={'Beverly Woods is a classic 1950s-1960s south Charlotte neighborhood of mid-century ranches, split-levels, and renovated brick homes — most original roofs have already been replaced once or twice and are now in their 2nd or 3rd reroof cycle. Common services include: full architectural shingle replacement ($10,000-$18,000 typical for 22-32 sq home), low-pitch ranch challenges (4/12 to 6/12 pitch needs ice-and-water shield extension), hail and wind storm Xactimate claims, mature oak/maple/loblolly canopy navigation (specialty extension/lift access for tight setbacks), color-matched spot repair, ridge vent retrofit per NC IRC §R806, 6-inch gutter upsizing for tropical-remnant rain, and Class 4 impact-resistant upgrades for the 10-30% NC insurance discount.'}
+        items={[
+          'Mid-century ranch shingle replacement — 1950s-1960s ranches now in 2nd/3rd reroof cycle; $10K-$18K typical',
+          'Low-pitch (4/12 to 6/12) handling — extended ice-and-water shield, smaller exposure, premium underlayment',
+          'Hail and wind insurance claims — Xactimate-format estimates, on-site adjuster meetings, supplemental filing',
+          'Mature canopy access — specialty extension lifts, smaller crew zones, careful tree-limb protection',
+          'Color-matched repair — GAF Timberline HDZ, CertainTeed Landmark, OC TruDefinition Duration libraries',
+          'Ridge vent retrofit — NC IRC §R806 1:150/1:300 NFVA balance often missing on original ranch builds',
+          '6\" gutter upsizing — tropical-remnant rain capacity for 2-3 in/hr peak Charlotte storms',
+          'Class 4 impact-resistant upgrade — 10-30% NC insurance discount, hail belt protection',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-beverly-woods-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -256,10 +299,16 @@ export default function RoofingBeverlyWoodsCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Expert Roofing for South Charlotte's Classic Mid-Century Community
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for Beverly Woods homeowners. We specialize in roofing
-              for mid-century ranches, split-levels, and beautifully renovated homes, delivering expert
-              craftsmanship with premium materials that protect and enhance this affluent south Charlotte neighborhood.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now reroofs Beverly Woods mid-century ranches and split-levels, with most
+              homes now in their 2nd or 3rd reroof cycle since original 1950s-1960s construction. We
+              handle low-pitch (4/12 to 6/12) installations with extended ice-and-water shield and
+              premium synthetic underlayment, color-match from GAF Timberline HDZ / CertainTeed
+              Landmark / OC TruDefinition Duration libraries, file Xactimate-format hail and wind
+              claims with State Farm, Allstate, USAA, and Liberty Mutual, and install Class 4
+              impact-resistant upgrades for the 10-30% NC insurance discount. GAF Master Elite (top
+              2%), CertainTeed SELECT ShingleMaster, OC Platinum Preferred — 30-50 year non-prorated
+              transferable warranties.
             </p>
 
             {/* CTA Buttons */}

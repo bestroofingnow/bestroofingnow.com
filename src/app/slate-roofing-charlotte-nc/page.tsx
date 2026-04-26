@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -230,6 +239,39 @@ export default function SlateRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/slate-roofing-charlotte-nc`}
+        pageName="Slate Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Slate Roofing Charlotte NC | 100+ Year Lifespan | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/slate-roofing-charlotte-nc`}
+        description="Natural slate roofing in Charlotte NC. Vermont, Pennsylvania, Virginia (Buckingham), and Spanish slate sourcing. Estate-class installation with copper flashing and step-flashing on Eastover, Foxcroft, Quail Hollow, and Myers Park luxury homes. Repair, restoration, and synthetic alternatives."
+        primaryImage={IMAGES.houses.modern1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Slate Roofing Charlotte NC', url: `${SITE_CONFIG.url}/slate-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does slate roofing cost in Charlotte NC?"
+        directAnswer="Natural slate roofing in Charlotte NC ranges $20-$35 per sq ft installed depending on quarry source, slate grade, and complexity: Vermont gray-green and gray $20-$28/sq ft, Pennsylvania black $22-$28/sq ft, Virginia Buckingham unfading black $25-$32/sq ft (premium AAA-grade), Spanish slate $20-$26/sq ft, and reclaimed historic slate $30-$45/sq ft. Charlotte 30-square home totals $60,000-$105,000 for natural slate. Slate has 100-150 year lifespan but the underlayment beneath needs replacement every 30-50 years (designed behavior, not a defect). For Charlotte's structural framing, conversion from asphalt requires engineer-stamped drawings due to slate's 800-1,200 lb/sq weight (vs 250-400 lb/sq for asphalt). Synthetic slate alternatives (DaVinci Roofscapes, Brava, CeDUR) at $11-$18/sq ft eliminate the structural reinforcement cost while delivering Class 4 impact + Class A fire."
+        items={[
+          'Vermont gray-green / gray slate — $20-$28/sq ft installed; New England standard, 150+ yr lifespan',
+          'Pennsylvania black slate — $22-$28/sq ft installed; deep black color, 100+ yr lifespan',
+          'Virginia Buckingham unfading black — $25-$32/sq ft installed; AAA-grade premium, 150+ yr lifespan',
+          'Spanish slate — $20-$26/sq ft installed; cost-effective imported alternative, 75-100 yr lifespan',
+          'Reclaimed historic slate — $30-$45/sq ft installed; salvaged from East Coast historic restorations',
+          'Underlayment replacement at 30-50 yr — designed behavior, not defect; tile re-uses original slate',
+          'Structural engineering — slate weighs 800-1,200 lb/sq vs asphalt 250-400 lb/sq; engineer-stamped drawings required for conversion',
+          'Synthetic slate alternative (DaVinci/Brava/CeDUR) — $11-$18/sq ft; Class 4 impact, Class A fire, no structural reinforcement',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/slate-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -255,10 +297,16 @@ export default function SlateRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Natural slate roofing with a 100+ year lifespan for Charlotte's finest homes
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in luxury slate roof installation and repair throughout
-              Charlotte. Natural slate offers timeless beauty, unmatched durability, and the
-              prestige that discerning homeowners deserve.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs and restores natural slate roofing on Charlotte's luxury
+              estate homes — primarily in Eastover, Foxcroft, Quail Hollow, Myers Park, SouthPark,
+              Piper Glen, and the Lake Norman lakefront waterfront communities of Cornelius,
+              Davidson, and Mooresville. We source Vermont, Pennsylvania, Virginia (Buckingham),
+              Spanish, and reclaimed historic slate, install with copper step flashing and 2-ply
+              synthetic underlayment, and coordinate licensed structural engineering for asphalt-to-slate
+              conversions (slate weighs 800-1,200 lb/sq vs 250-400 lb/sq for asphalt). Synthetic
+              slate alternatives (DaVinci Roofscapes, Brava, CeDUR) at $11-18/sq ft also available
+              when structural reinforcement isn't justified.
             </p>
 
             {/* CTA Buttons */}

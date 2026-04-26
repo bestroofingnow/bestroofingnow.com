@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -247,6 +256,39 @@ export default function RoofVentilationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`}
+        pageName="Roof Ventilation Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roof Ventilation Charlotte NC | NC IRC §R806 Balanced | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`}
+        description="Roof ventilation in Charlotte NC. Continuous ridge vents, soffit intake, gable vents, power ventilators, solar attic fans. NC IRC §R806 1:150 / 1:300 NFVA balanced ventilation that keeps GAF Master Elite, CertainTeed SELECT, and OC Platinum warranties intact."
+        primaryImage={IMAGES.hero.hero15}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Ventilation Charlotte NC', url: `${SITE_CONFIG.url}/roof-ventilation-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="How much does roof ventilation cost in Charlotte NC?"
+        directAnswer="Roof ventilation in Charlotte NC ranges $250 (single replacement vent) to $3,500 (full balanced system retrofit) depending on scope. Per NC IRC §R806, attic ventilation must provide 1 sq ft of NFVA per 150 sq ft of attic, or 1:300 if intake and exhaust are balanced 50/50. Pricing: continuous ridge vent install $7-$15/linear ft, soffit intake retrofit $400-$1,200, gable vent install $250-$500 each, power ventilator $400-$900 installed, solar attic fan $700-$1,400 (eligible for 26% federal Residential Clean Energy Credit through 2026). Properly balanced ventilation reduces attic temperature 20-40°F in summer, lowers cooling costs 10-15%, extends shingle life 3-7 years, and is required to keep GAF Golden Pledge, CertainTeed 5-Star, and OC Platinum manufacturer warranties valid."
+        items={[
+          'NC IRC §R806 — 1:150 NFVA total, or 1:300 with balanced intake/exhaust 50/50',
+          'NFVA worked example — 1,500 sq ft attic = 5 sq ft (720 sq in) NFVA total, balanced split',
+          'Continuous ridge vent install — $7-$15/linear ft; GAF Cobra, Air Vent ShingleVent II, OC VentSure',
+          'Soffit intake retrofit — $400-$1,200; existing soffit may need cutting / un-painting',
+          'Power ventilator — $400-$900 installed; thermostat- or humidistat-controlled',
+          'Solar attic fan — $700-$1,400 installed; 26% federal RCEC tax credit eligible through 2026',
+          'Energy and life impact — 20-40°F attic temperature drop, 10-15% AC savings, 3-7 yr shingle life extension',
+          'Warranty compliance — GAF/CertainTeed/OC require balanced ventilation; insufficient NFVA = denial risk',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -272,10 +314,15 @@ export default function RoofVentilationCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Lower energy bills, extend roof life, and eliminate moisture problems
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Proper roof ventilation is critical in Charlotte's hot, humid climate. Best Roofing Now installs
-              and upgrades attic ventilation systems that reduce cooling costs, prevent moisture damage, and help
-              your roof last longer. From ridge vents to power ventilators, we have the right solution for your home.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs balanced attic ventilation across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University
+              City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville.
+              Continuous ridge vents (GAF Cobra, Air Vent ShingleVent II, OC VentSure), soffit intake
+              retrofits, gable vents, power ventilators, and solar attic fans (26% federal RCEC tax
+              credit eligible through 2026) — all calculated to NC IRC §R806 1:150 / 1:300 NFVA
+              ratios that drop attic temperatures 20-40°F and keep GAF/CertainTeed/OC warranties intact.
             </p>
 
             {/* CTA Buttons */}

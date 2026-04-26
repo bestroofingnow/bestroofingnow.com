@@ -21,7 +21,17 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -231,6 +241,39 @@ export default function RoofingProvidencePlantationCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-providence-plantation-charlotte-nc`}
+        pageName="Roofing Providence Plantation Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Providence Plantation Charlotte NC | Established Community | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-providence-plantation-charlotte-nc`}
+        description="Roofing for Providence Plantation, south Charlotte's established 1970s-1990s community. Architectural shingle replacement matched to mature landscaping, hail Xactimate claims, HOA ARB coordination, and 30-50 year non-prorated warranties from BBB A+ Best Roofing Now."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Providence Plantation Charlotte NC', url: `${SITE_CONFIG.url}/roofing-providence-plantation-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Providence Plantation Charlotte NC homes commonly need?"
+        directAnswer={'Providence Plantation is an established south Charlotte community built primarily 1970s-1990s, putting most original roofs at the 25-50 year wear window where roof systems most commonly need full replacement, supplemental repair, or major component renewal. Common services include: full architectural shingle replacement ($11,000-$22,000 typical for 25-40 sq home), hail and wind storm Xactimate-format insurance claims (heavy 2014, 2019, 2024 hail event impact), pipe boot replacement at 8-12 yr typical lifespan, ridge vent retrofit per NC IRC §R806 NFVA balance, 6-inch gutter upsizing for tropical-remnant rain capacity, HOA ARB color/style approval coordination, and color-matched repair from GAF/CertainTeed/OC libraries. Best Roofing Now is GAF Master Elite, CertainTeed SELECT ShingleMaster, and OC Platinum Preferred for warranty unlocks.'}
+        items={[
+          'Full shingle replacement — original 1970s-1990s roofs at 25-50 yr wear window; $11K-$22K typical for the 25-40 sq Providence Plantation home',
+          'Hail and wind insurance claims — Xactimate-format estimates, on-site adjuster meetings, supplemental filing for code/missed damage',
+          'Pipe boot replacement — 8-12 yr typical EPDM/neoprene lifespan; #1 source of slow leaks in Charlotte homes',
+          'Ridge vent retrofit — NC IRC §R806 1:150/1:300 NFVA balance with paired soffit intake for warranty compliance',
+          '6\" gutter upsizing — tropical-remnant rain capacity for the 2-3 in/hr peak Charlotte storms',
+          'HOA ARB coordination — Providence Plantation HOA requires architectural review for shingle color/style; we manage the packet',
+          'Color-matched spot repair — GAF Timberline HDZ, CertainTeed Landmark, OC TruDefinition Duration libraries',
+          'Class 4 impact-resistant upgrade — 10-30% NC insurance discount, hail belt protection',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-providence-plantation-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -256,10 +299,15 @@ export default function RoofingProvidencePlantationCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Trusted Roofing for South Charlotte's Established Community
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for Providence Plantation homeowners. We specialize in
-              roofing for established south Charlotte homes, delivering expert craftsmanship with premium
-              architectural shingles that protect your home and enhance curb appeal on every tree-lined street.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now reroofs and repairs Providence Plantation homes built primarily in
+              the 1970s-1990s, with most original roof systems now in the 25-50 year wear window.
+              We coordinate Providence Plantation HOA architectural-review submission, color-match
+              from GAF Timberline HDZ / CertainTeed Landmark / OC TruDefinition Duration libraries,
+              file Xactimate-format hail and wind claims with State Farm, Allstate, USAA, Liberty
+              Mutual, and Travelers, and install Class 4 impact-resistant upgrades for the 10-30%
+              NC insurance discount. GAF Master Elite (top 2%), CertainTeed SELECT ShingleMaster,
+              OC Platinum Preferred — 30-50 year non-prorated transferable warranties.
             </p>
 
             {/* CTA Buttons */}

@@ -21,7 +21,17 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -231,6 +241,39 @@ export default function RoofingCotswoldCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-cotswold-charlotte-nc`}
+        pageName="Roofing Cotswold Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Cotswold Charlotte NC | 1950s-1960s Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-cotswold-charlotte-nc`}
+        description="Roofing for Cotswold, east Charlotte's charming 1950s-1960s village. Architectural shingle replacement on classic ranches, Cape Cods, and renovated homes. Hail Xactimate claims, mature canopy navigation, and color-matched repair from BBB A+ Best Roofing Now."
+        primaryImage={IMAGES.neighborhoods.cotswold}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Cotswold Charlotte NC', url: `${SITE_CONFIG.url}/roofing-cotswold-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Cotswold Charlotte NC homes commonly need?"
+        directAnswer="Cotswold is a charming 1950s-1960s east Charlotte village of classic ranches, Cape Cods, and beautifully renovated homes — most original roofs are now in the 2nd or 3rd reroof cycle, with mature oak/maple/loblolly canopy creating both aesthetic and access challenges. Common services include: full architectural shingle replacement ($10,000-$18,000 typical for 22-32 sq home), Cape Cod gable-and-dormer detail work, hail and wind storm Xactimate-format insurance claims, mature canopy access via specialty extension lifts, gutter-guard installation for heavy-canopy debris management, color-matched spot repair from major shingle libraries, and ridge vent retrofit per NC IRC §R806 NFVA balance. Class 4 impact-resistant shingles unlock 10-30% NC insurance discount."
+        items={[
+          'Mid-century ranch and Cape Cod replacement — 1950s-1960s originals at 2nd/3rd reroof cycle; $10K-$18K typical',
+          'Cape Cod gable-and-dormer detail — multiple flashing transitions, valley work, peak vent integration',
+          'Hail and wind insurance claims — Xactimate-format estimates, on-site adjuster meetings, supplemental filing',
+          'Mature canopy access — specialty extension lifts for tight setbacks under oak/maple/loblolly canopy',
+          'Heavy-canopy gutter guards — micro-mesh 316 stainless or LeafGuard for oak catkin / sweetgum / pine needle load',
+          'Color-matched repair — GAF Timberline HDZ, CertainTeed Landmark, OC TruDefinition Duration libraries',
+          'Ridge vent retrofit — NC IRC §R806 1:150/1:300 NFVA balance for warranty compliance',
+          'Class 4 impact-resistant upgrade — 10-30% NC insurance discount, hail belt protection',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-cotswold-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -256,10 +299,16 @@ export default function RoofingCotswoldCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Trusted Roofing for Cotswold's Charming Village Neighborhood
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for Cotswold homeowners. We specialize in roofing for
-              classic 1950s-1960s ranches, Cape Cods, and renovated homes, delivering expert craftsmanship
-              with premium materials that protect and enhance this charming east Charlotte community.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now reroofs Cotswold's classic 1950s-1960s ranches, Cape Cods, and
+              renovated homes, with most properties now in their 2nd or 3rd reroof cycle. We handle
+              Cape Cod gable-and-dormer flashing detail, navigate mature oak/maple/loblolly canopy
+              with specialty extension lifts, install heavy-canopy gutter guards (micro-mesh 316
+              stainless or LeafGuard), color-match from GAF Timberline HDZ / CertainTeed Landmark /
+              OC TruDefinition Duration libraries, and file Xactimate-format hail and wind claims
+              with State Farm, Allstate, USAA, and Liberty Mutual. GAF Master Elite (top 2%),
+              CertainTeed SELECT ShingleMaster, OC Platinum Preferred — 30-50 year non-prorated
+              transferable warranties.
             </p>
 
             {/* CTA Buttons */}
