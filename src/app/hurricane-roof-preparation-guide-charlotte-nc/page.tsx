@@ -25,6 +25,11 @@ import {
   FAQSchema,
   WebPageSchema,
   ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -304,6 +309,29 @@ export default function HurricaneRoofPreparationGuidePage() {
   dateModified: '2025-02-01',
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/hurricane-roof-preparation-guide-charlotte-nc`}
+        pageName="Hurricane Roof Preparation Guide Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="How should Charlotte NC homeowners prepare a roof for hurricane season?"
+        directAnswer="Charlotte NC homeowners should prepare their roof for the August-October Atlantic hurricane season with this 8-step checklist by July 31: (1) book a pre-season inspection (free with Best Roofing Now) to catch granule loss, lifted seams, missing shingles, pipe boot cracks, chimney flashing failures; (2) trim trees within 10 ft of the roof — 2024 Helene snapped pines and oaks across Charlotte; (3) clear gutters and downspouts and verify 4 in/hr flow capacity; (4) inspect attic ventilation NC IRC §R806 1:150 NFVA balance; (5) photograph and document roof condition for insurance baseline (skip 'was this existing?' adjuster disputes); (6) review homeowner policy — confirm wind/hail deductible (often percentage-based for lakefront LKN), RCV vs ACV, code-upgrade endorsement; (7) save Best Roofing Now's 24/7 number for 1-4 hr emergency tarp dispatch; (8) consider Class 4 impact-resistant upgrade for 10-30% NC insurance discount. Charlotte tropical-remnant history: Florence 2018, Idalia 2023, Helene 2024."
+        items={[
+          'Step 1 — pre-season inspection by July 31; free with Best Roofing Now; catches all 8 common pre-storm issues',
+          'Step 2 — trim trees within 10 ft of roof; 2024 Helene snapped pines and oaks across Charlotte',
+          'Step 3 — clear gutters and downspouts; verify 4 in/hr flow capacity for tropical-remnant rain',
+          'Step 4 — verify NC IRC §R806 attic ventilation 1:150 NFVA balance with paired soffit and ridge',
+          'Step 5 — pre-storm photo documentation packet for insurance baseline; skip adjuster pre-existing disputes',
+          'Step 6 — review homeowner policy: wind/hail deductible (lakefront often percentage-based), RCV vs ACV, code-upgrade',
+          'Step 7 — save Best Roofing Now 24/7 number; 1-4 hr emergency tarp dispatch by zone after impact',
+          'Step 8 — consider Class 4 impact-resistant upgrade; 150 MPH wind, 10-30% NC insurance discount',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/hurricane-roof-preparation-guide-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       <section className="pt-8 pb-12 bg-gradient-to-b from-slate-900 via-blue-900 to-slate-800">
         <div className="container mx-auto px-4">
@@ -317,9 +345,14 @@ export default function HurricaneRoofPreparationGuidePage() {
               Hurricane Roof Preparation Guide
               <span className="block text-blue-400 mt-2">Charlotte NC Homeowners</span>
             </h1>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Don&apos;t wait until a storm is forecasted. Prepare your roof now to minimize
-              damage and recover faster when hurricanes threaten Charlotte.
+            <p className="speakable-intro text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Don&apos;t wait until a storm is forecasted. Best Roofing Now hardens roofs and
+              responds 24/7 across Charlotte and the surrounding communities of Ballantyne,
+              SouthPark, Dilworth, Plaza Midwood, Myers Park, Steele Creek, University City, and
+              the Lake Norman lakefront communities of Huntersville, Cornelius, Davidson, and
+              Mooresville — all hit by Florence 2018, Idalia 2023, and Helene 2024 tropical
+              remnants. The 8-step pre-season checklist below should be complete by July 31, before
+              the August-October Atlantic hurricane peak.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <EstimateButton

@@ -21,7 +21,17 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -230,6 +240,39 @@ export default function RoofingElizabethCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-elizabeth-charlotte-nc`}
+        pageName="Roofing Elizabeth Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Elizabeth Charlotte NC | Historic Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-elizabeth-charlotte-nc`}
+        description="Historic home roofing in Elizabeth, one of Charlotte's oldest neighborhoods. Period-appropriate Craftsman bungalow, Victorian, and cottage roofing in cedar shake, slate, copper, and architectural shingles. National Register coordination and Historic District compliance."
+        primaryImage={IMAGES.neighborhoods.elizabeth}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Elizabeth Charlotte NC', url: `${SITE_CONFIG.url}/roofing-elizabeth-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Elizabeth Charlotte NC historic homes need?"
+        directAnswer="Elizabeth is one of Charlotte's oldest neighborhoods (originally platted 1891) and includes Craftsman bungalows, Victorians, and cottages — many in the National Register-listed Elizabeth Historic District requiring period-appropriate roofing materials and Historic District Commission (HDC) review for exterior changes. Common services include: cedar shake restoration ($12-$22/sq ft) for Craftsman bungalows; natural slate repair and replacement ($20-$35/sq ft) for Victorian-era homes; copper standing-seam and bay-window roofing ($24-$30/sq ft); architectural shingle replacement in heritage-correct colors ($6-$11/sq ft); HDC application coordination (4-6 week typical review); preservation-trained crew with experience in 1890s-1920s detail (rafter tails, knee braces, dormer flashing); and structural assessment for 100+ year framing."
+        items={[
+          'Cedar shake restoration — $12-$22/sq ft installed; CSSB Certi-Grade tapersawn or Certi-Split for Craftsman bungalows',
+          'Natural slate repair and replacement — $20-$35/sq ft installed; matched-quarry sourcing for Victorian-era homes',
+          'Copper standing-seam and bay-window roofing — $24-$30/sq ft installed; develops natural patina over 50-100 yr',
+          'Architectural shingle in heritage colors — $6-$11/sq ft installed; CertainTeed Carriage House, GAF Camelot II',
+          'Charlotte HDC application coordination — 4-6 week typical review; we manage drawings + material samples',
+          '1890s-1920s detail preservation — rafter tail exposure, knee brace integration, dormer flashing replication',
+          'Structural assessment for 100+ year framing — pre-reroof inspection of original rafters, decking, ridge beam',
+          'NC Historic District compliance — required for Elizabeth Historic District; we work with HDC reviewers regularly',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-elizabeth-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -255,10 +298,16 @@ export default function RoofingElizabethCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Historic Home Roofing for One of Charlotte's Oldest Neighborhoods
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for Elizabeth homeowners. We specialize in roofing for
-              historic Craftsman bungalows, renovated Victorians, and charming cottages, using period-appropriate
-              materials that preserve the character of this beloved near-uptown neighborhood.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now restores and reroofs Elizabeth's historic Craftsman bungalows,
+              renovated Victorians, and original cottages dating back to the neighborhood's 1891
+              founding. We coordinate Charlotte Historic District Commission (HDC) review for the
+              Elizabeth Historic District, install period-appropriate cedar shake (CSSB Certi-Grade),
+              natural slate (Vermont, Pennsylvania, Buckingham), copper standing-seam, and
+              heritage-color architectural shingles (CertainTeed Carriage House, GAF Camelot II), and
+              preserve original 1890s-1920s detail like rafter tails, knee braces, and dormer
+              flashing. GAF Master Elite (top 2%), CertainTeed SELECT ShingleMaster, OC Platinum
+              Preferred — 30-50 year non-prorated transferable warranties.
             </p>
 
             {/* CTA Buttons */}

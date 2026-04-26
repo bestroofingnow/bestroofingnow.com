@@ -21,7 +21,17 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -230,6 +240,39 @@ export default function RoofingQuailHollowCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-quail-hollow-charlotte-nc`}
+        pageName="Roofing Quail Hollow Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Quail Hollow Charlotte NC | Estate Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-quail-hollow-charlotte-nc`}
+        description="Roofing for Quail Hollow, the prestigious south Charlotte community surrounding the world-renowned Quail Hollow Club. Brick colonial, Mediterranean villa, and custom estate roofing in slate, copper, designer shingles. Discreet scheduling, dedicated PM, 30-50 year warranties."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Quail Hollow Charlotte NC', url: `${SITE_CONFIG.url}/roofing-quail-hollow-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Quail Hollow Charlotte NC homes commonly need?"
+        directAnswer="Quail Hollow surrounds the world-renowned Quail Hollow Club (host of the PGA Championship and Wells Fargo Championship) and includes brick colonials, Mediterranean villas, and custom estates valued $1M-$10M+. Common services include: natural slate restoration ($20-$35/sq ft) with copper flashing; clay or concrete tile roof work ($15-$25/sq ft); designer architectural shingles (GAF Grand Sequoia, CertainTeed Presidential Solaris, OC Berkshire) at $9-$14/sq ft; copper standing-seam metal at $24-$30/sq ft; estate-class crew with discreet weekday scheduling that respects neighbors and the Club; HOA architectural-review-board (ARB) coordination; and structural engineering coordination for slate or tile conversions (800-1,200 lb/sq weight)."
+        items={[
+          'Natural slate restoration — $20-$35/sq ft installed; Vermont, Pennsylvania, Buckingham, Spanish quarries',
+          'Clay or concrete tile work — $15-$25/sq ft installed; Mediterranean villa restoration and individual tile match',
+          'Designer architectural shingles — $9-$14/sq ft installed; GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire',
+          'Copper standing-seam metal — $24-$30/sq ft installed; develops natural patina; 60-100 yr lifespan',
+          'Synthetic slate alternatives — DaVinci Roofscapes, Brava, CeDUR at $11-$18/sq ft; eliminates structural reinforcement cost',
+          'Quail Hollow HOA ARB coordination — architectural-review-board approval for color/material',
+          'Discreet estate-class scheduling — weekday work that respects neighbors and the Club',
+          'Structural engineering — slate/tile 800-1,200 lb/sq weight needs engineer-stamped drawings for asphalt conversion',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-quail-hollow-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -255,10 +298,16 @@ export default function RoofingQuailHollowCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Golf Estate Roofing for Charlotte's Most Prestigious Club Community
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for Quail Hollow's distinguished homeowners. We specialize in
-              premium roofing for brick colonials, Mediterranean villas, and custom homes surrounding the
-              world-renowned Quail Hollow Club, delivering craftsmanship worthy of this iconic community.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now restores and reroofs Quail Hollow estates surrounding the
+              world-renowned Quail Hollow Club. We install natural slate (Vermont, Pennsylvania,
+              Buckingham, Spanish quarries) with copper step-flashing, clay and concrete tile,
+              designer architectural shingles (GAF Grand Sequoia, CertainTeed Presidential Solaris,
+              OC Berkshire), and copper standing-seam metal — all coordinated with Quail Hollow HOA
+              architectural-review-board approval and discreet estate-class weekday scheduling. GAF
+              Master Elite (top 2%), CertainTeed SELECT ShingleMaster, OC Platinum Preferred —
+              30-50 year non-prorated transferable warranties; structural engineering coordination
+              for slate and tile conversions.
             </p>
 
             {/* CTA Buttons */}

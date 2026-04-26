@@ -21,7 +21,17 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  LocalBusinessSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -230,6 +240,39 @@ export default function RoofingPiperGlenCharlotteNCPage() {
       />
       <FAQSchema faqs={faqs} />
       <LocalBusinessSchema includeRating={true} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/roofing-piper-glen-charlotte-nc`}
+        pageName="Roofing Piper Glen Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Piper Glen Charlotte NC | Premier Golf Community | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/roofing-piper-glen-charlotte-nc`}
+        description="Roofing for Piper Glen, south Charlotte's premier golf community of executive custom homes. Designer architectural shingles, standing seam metal, slate restoration, gated-community access coordination, and 30-50 year non-prorated warranties from BBB A+ Best Roofing Now."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Piper Glen Charlotte NC', url: `${SITE_CONFIG.url}/roofing-piper-glen-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing services do Piper Glen Charlotte NC homes commonly need?"
+        directAnswer="Piper Glen is south Charlotte's premier gated golf community surrounding TPC Piper Glen. Most homes are executive custom builds from the 1990s-2010s, putting many roofs in the 15-30 year range — common services include: designer/luxury architectural shingle replacement (GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire) at $9-$14/sq ft; standing-seam metal roofs in copper, zinc, or PVDF Kynar 24-gauge steel ($11-$30/sq ft); slate or synthetic-slate (DaVinci, Brava, CeDUR) restoration at $11-$35/sq ft; Class 4 impact-resistant upgrades for 10-30% NC insurance discount; HOA architectural-review-board (ARB) submission and gated-access coordination; estate-class crew and uniformed background-checked installers. Piper Glen 30-50 sq home reroofs typically $19,000-$60,000 depending on material."
+        items={[
+          'Designer architectural shingles — $9-$14/sq ft installed; GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire',
+          'Standing-seam metal roofs — $11-$30/sq ft installed; copper, zinc, PVDF Kynar 24-gauge steel',
+          'Slate or synthetic slate — $11-$35/sq ft installed; DaVinci, Brava, CeDUR; or natural Vermont/Pennsylvania/Buckingham',
+          'Class 4 impact-resistant upgrade — 10-30% NC insurance discount; 150 MPH wind protection',
+          'Piper Glen HOA ARB submission — architectural-review board approval for color/material; we manage the packet',
+          'Gated-community access coordination — schedule with HOA security; uniformed background-checked installers',
+          'Estate-class project management — dedicated PM, daily progress photos, neighbor-aware scheduling',
+          'Typical 30-50 sq home reroof — $19,000-$60,000 depending on material and complexity',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/roofing-piper-glen-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -255,10 +298,15 @@ export default function RoofingPiperGlenCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium Roofing for Charlotte's Premier Golf Community
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is the trusted choice for Piper Glen's executive homeowners. We specialize in
-              premium roofing for custom-built golf course homes, using designer materials and delivering
-              craftsmanship that matches the excellence of this exclusive gated community.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now reroofs and restores Piper Glen's executive custom homes surrounding
+              TPC Piper Glen. We coordinate Piper Glen HOA architectural-review-board submission,
+              schedule gated-community access with security, install designer architectural shingles
+              (GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire), copper and PVDF Kynar
+              standing-seam metal, and natural or synthetic slate (DaVinci, Brava, CeDUR). All
+              crews are uniformed and background-checked. GAF Master Elite (top 2%), CertainTeed
+              SELECT ShingleMaster, OC Platinum Preferred — 30-50 year non-prorated transferable
+              warranties.
             </p>
 
             {/* CTA Buttons */}

@@ -20,7 +20,16 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -265,6 +274,39 @@ export default function MossAlgaeRemovalRoofCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/moss-algae-removal-roof-charlotte-nc`}
+        pageName="Moss & Algae Removal Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Moss & Algae Removal Roof Charlotte NC | Soft-Wash Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/moss-algae-removal-roof-charlotte-nc`}
+        description="Roof moss and algae removal in Charlotte NC. ARMA-approved soft-wash with 50/50 sodium hypochlorite treatment, zinc/copper strip prevention installs, and shingle-safe protocols. Common in canopy-heavy Plaza Midwood, Dilworth, Myers Park, Cotswold, Beverly Woods, lakefront LKN."
+        primaryImage={IMAGES.hero.hero5}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Moss & Algae Removal Charlotte NC', url: `${SITE_CONFIG.url}/moss-algae-removal-roof-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does roof moss and algae removal cost in Charlotte NC?"
+        directAnswer="Roof moss and algae removal in Charlotte NC ranges $400-$1,800 depending on roof size and severity. Standard pricing: light algae streaks $400-$800 (under 30 squares), moderate algae plus light moss $800-$1,200 (typical Charlotte home), heavy moss with shingle penetration $1,200-$1,800 (severe canopy-shaded north slopes). The ARMA-approved method is soft-wash (NOT pressure wash, which dislodges granules and voids GAF/CertainTeed/OC warranties): 50/50 sodium hypochlorite + water + surfactant, applied with low-pressure pump, dwelled 15-30 minutes, then rinsed gently. Prevention: install 4 in zinc or copper strips at the ridge ($200-$500 add) — rainwater leaches metal ions that inhibit growth for 10-15 years. Most affected Charlotte areas: Plaza Midwood, Dilworth, Myers Park, Eastover, Cotswold, Beverly Woods, lakefront LKN — anywhere with heavy oak/maple/pine canopy and north-facing slopes."
+        items={[
+          'Light algae streaks under 30 squares — $400-$800; soft-wash treatment with 30-day kill cycle',
+          'Moderate algae + light moss — $800-$1,200 for typical Charlotte home; full-roof soft-wash with surfactant',
+          'Heavy moss with shingle penetration — $1,200-$1,800; multiple treatment cycles + manual moss removal',
+          'ARMA-approved soft-wash method — 50/50 sodium hypochlorite + water + surfactant, low-pressure',
+          'NEVER pressure wash — dislodges granules; voids GAF Master Elite, CertainTeed SELECT, OC Platinum warranties',
+          'Zinc or copper strip prevention — 4 in strip at ridge; $200-$500 add; 10-15 yr inhibition window',
+          'Most affected Charlotte areas — Plaza Midwood, Dilworth, Myers Park, Eastover, Cotswold, Beverly Woods, LKN',
+          'Underlying causes — north-facing slope, heavy canopy shade, age 10+ yr shingle, no zinc strip prevention',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/moss-algae-removal-roof-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -290,10 +332,16 @@ export default function MossAlgaeRemovalRoofCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Restore your roof's appearance and extend its life with professional cleaning
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Charlotte's humid climate makes roofs prone to unsightly moss and algae growth. Best Roofing Now
-              uses safe, effective soft washing techniques to remove growth without damaging your shingles. We
-              also offer prevention treatments to keep your roof cleaner longer.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now removes roof moss and algae across Charlotte and the surrounding
+              communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa,
+              South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University City,
+              and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville. We
+              use the ARMA-approved soft-wash method (50/50 sodium hypochlorite + water + surfactant
+              with low-pressure pump — never pressure-wash, which voids GAF/CertainTeed/OC
+              warranties) and install 4-inch zinc or copper ridge strips for 10-15 year prevention.
+              Most-affected areas: north-facing canopy-shaded slopes in Plaza Midwood, Dilworth,
+              Myers Park, Eastover, Cotswold, Beverly Woods, and lakefront LKN.
             </p>
 
             {/* CTA Buttons */}
