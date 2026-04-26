@@ -378,6 +378,17 @@ All 5 added to core sitemap with priority 0.7, monthly changefreq.
 
 **Tier 10 progress:** 20 of ~20 planned Q&A pages complete. **Tier 10 status: COMPLETE** — all major Charlotte roofing search-intent Q&A topics now have dedicated landing pages with QAPageSchema + FeaturedSnippetListAnswerSchema for AI Overview / Featured Snippet eligibility.
 
+### Tier 11 — Commercial roofing Q&A landing pages (different audience: business owners, property managers)
+Targeting commercial-search-intent topics not yet covered by existing commercial pages.
+
+- [x] `how-much-does-commercial-roof-replacement-cost-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — commercial pricing breakdown ($4-30/sq ft by system; 20K sq ft building totals $40K coating to $600K standing-seam metal). 5 follow-up FAQs covering cost factors, coat-vs-replace decision, timeline, NDL warranty access, commercial insurance claims process.
+- [x] `how-long-does-tpo-roof-last-charlotte-nc` (NEW, ~180 lines) — 2026-04-26 — TPO lifespan by attachment (60-mil mech 20-25 yr, fully adhered 25-30 yr, 80-mil with R-30 25-30 yr) plus 5 NDL manufacturer warranty options. 5 follow-up FAQs covering lifespan factors, TPO vs EPDM, coating extension, maintenance, replacement triggers.
+- [x] `what-is-an-ndl-warranty-commercial-roof-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — NDL warranty terminology explained (No Dollar Limit, no aggregate cap, only via authorized installers). 5 follow-up FAQs covering 5 NDL manufacturers, NDL vs limited/prorated, exclusions, registration timeline, transferability on building sale.
+- [x] `how-do-i-find-a-roof-leak-on-flat-roof-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — 6-step flat-roof leak diagnostic with infrared moisture survey ($350-900). 5 follow-up FAQs covering why flat-roof leaks are harder, infrared cost, DIY water test limits, top 5 leak sources, professional vs DIY repair.
+- [x] `when-should-i-replace-my-commercial-roof-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — 8 replacement indicators (age, chronic leaks, saturated insulation 25%+, seam failures, expired warranty, energy loss, building modifications, sale prep). 5 follow-up FAQs covering system lifespans, repair-vs-replace crossover, coat-vs-replace decision, best season timing, decision-to-completion budget timeline.
+
+All 5 added to core sitemap with priority 0.7, monthly changefreq.
+
 ### Build verification (batch 21)
 Ran `npm run build` (Next.js production build) at start of batch 21 — exit code 0, all 1,300+ pages generated successfully including all 17 new pages from batches 17-20. No regression issues from the SEO/AEO sweep.
 

@@ -279,6 +279,12 @@ export async function GET() {
     { url: `${BASE_URL}/how-much-does-a-roof-inspection-cost-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/roof-leak-causing-mold-in-attic-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-do-i-know-if-i-need-new-decking-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    // Commercial Q&A landing pages
+    { url: `${BASE_URL}/how-much-does-commercial-roof-replacement-cost-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-long-does-tpo-roof-last-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-an-ndl-warranty-commercial-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-find-a-roof-leak-on-flat-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/when-should-i-replace-my-commercial-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
     // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
     // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written
