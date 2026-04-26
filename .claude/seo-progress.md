@@ -439,3 +439,13 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
 - Sitemap: 5 entries added to core/route.ts (Batch 27 Q&A pages section)
 - Type-check: clean (no errors in batch 27 files)
+
+### Batch 28 (2026-04-26): Q&A landing pages — roof valley, gutters, drip edge, ice dams
+- ✅ what-is-a-roof-valley-charlotte-nc (NEW Q&A page) — 3 valley types (open metal $8-15/ft 30+ yr, closed-cut $5-10/ft 20-25 yr, woven $5-10/ft 15-20 yr), NC IRC §R905.1.1 ice-and-water shield required, 30-60% of roof runoff concentrated in 3-6% of roof area
+- ✅ how-do-i-clean-my-gutters-charlotte-nc (NEW Q&A page) — 6-step cleaning process, 2-4x per year (heavy canopy areas need 4x), DIY $0 vs pro $125-$650, ladder safety, micro-mesh guard 3.5 yr payback
+- ✅ when-should-i-replace-my-gutters-charlotte-nc (NEW Q&A page) — 8 indicators (age 20+ yr aluminum/15+ steel/50+ copper, sagging, joint separation, rust, fascia rot, overflow, hail damage, reroof bundle), 5 vs 6 inch sizing, K-style vs half-round, $1,400-$9,000 typical
+- ✅ what-is-a-drip-edge-charlotte-nc (NEW Q&A page) — NC IRC §R905.2.8.5 mandatory, 30-40% pre-2010 Charlotte homes lack drip edge, 4 failure modes prevented, 3 profiles (Type C/D/F), $300-$1,000 typical (no premium in reroof)
+- ✅ how-do-i-prevent-ice-dams-charlotte-nc (NEW Q&A page) — 5-step prevention bundle (ice-and-water shield, R-49 insulation, balanced ventilation, drip edge, heat cable), Charlotte 1-3x per decade north Mecklenburg/LKN, $3,300-$9,700 prevention vs $10,000-$45,000 damage
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 28 Q&A pages section)
+- Type-check: clean
