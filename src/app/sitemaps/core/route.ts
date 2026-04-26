@@ -291,6 +291,12 @@ export async function GET() {
     { url: `${BASE_URL}/how-do-i-protect-my-lake-norman-roof-from-wind-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/lake-norman-hoa-roof-approval-process-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/should-i-use-metal-or-asphalt-roof-on-lake-norman-home-nc`, changefreq: 'monthly', priority: '0.7' },
+    // Niche Q&A landing pages
+    { url: `${BASE_URL}/how-much-does-roof-flashing-repair-cost-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/should-i-replace-my-roof-in-sections-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-find-a-good-roofing-contractor-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/when-do-i-need-emergency-roof-tarp-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-a-roof-square-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
     // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
     // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written
