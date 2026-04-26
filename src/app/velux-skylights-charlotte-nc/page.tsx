@@ -19,7 +19,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -241,6 +250,39 @@ export default function VeluxSkylightsCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/velux-skylights-charlotte-nc`}
+        pageName="VELUX Skylights Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="VELUX Skylights Charlotte NC | Certified Installer | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/velux-skylights-charlotte-nc`}
+        description="VELUX certified skylight installation in Charlotte NC. Fixed, Fresh Air manual, solar-powered venting, and Sun Tunnel models with 10-year no-leak warranty. 26% federal solar tax credit eligible."
+        primaryImage={IMAGES.hero.hero4}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'VELUX Skylights Charlotte NC', url: `${SITE_CONFIG.url}/velux-skylights-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does a VELUX skylight install cost in Charlotte NC?"
+        directAnswer="VELUX skylight installation in Charlotte NC ranges $1,800-$5,200 per unit installed depending on model and roof material: Fixed FS $1,800-$2,800, Fresh Air manual VS $2,400-$3,400, Solar-powered VSS (Energy Star, 26% federal Residential Clean Energy Credit eligible through 2026) $3,200-$4,800, and Sun Tunnel tubular TGR/TMR $1,400-$2,200. Asphalt-shingle roofs are baseline; metal adds 15-25%, tile/slate adds 30-60%. Every install includes the VELUX 10-year no-leak warranty (only when installed by a VELUX-certified installer with EDL/EDW/EDM flashing kit and ZZZ underlayment)."
+        items={[
+          'Fixed FS — sealed glass, max light, $1,800-$2,800 installed; ideal for hallways, stairwells, walk-in closets',
+          'Fresh Air manual VS — manual venting via crank or telescoping rod, $2,400-$3,400 installed; baths, kitchens',
+          'Solar-powered VSS — Energy Star qualified, rain sensor, smart-home integration, $3,200-$4,800 installed; 26% federal tax credit eligible (drops to 22% in 2027)',
+          'Sun Tunnel TGR rigid / TMR flexible — tubular daylighting for hallways and closets, $1,400-$2,200 installed; no electrical, no leaks',
+          'EDL/EDW/EDM step flashing kit — required for the 10-year no-leak warranty; matched to your roof material (shingle, tile, metal)',
+          'Deck-mounted vs curb-mounted — deck-mount lower-profile and watertight on standard pitches (14°-85°); curb-mount required on low-slope or for taller integration',
+          'Charlotte resale ROI — 1.5-2.5x install cost on appraisal, plus 5-15% energy savings from natural daylighting',
+          'Permit and HOA — Mecklenburg requires permit on solar-electric only; HOAs in Ballantyne/Providence/Quail Hollow generally allow with low-profile bronze finish',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/velux-skylights-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -266,11 +308,15 @@ export default function VeluxSkylightsCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Certified installers for solar-powered skylights with no-leak warranty
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is your trusted VELUX certified installer in Charlotte. We install
-              fixed, venting, and solar-powered skylights along with Sun Tunnel tubular skylights.
-              Every installation is backed by VELUX's industry-leading 10-year no leak warranty.
-              Brighten your home with natural light today.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now is a VELUX-certified skylight installer serving Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University
+              City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville.
+              We install Fixed FS, Fresh Air manual VS, Solar Powered VSS (eligible for the 26%
+              federal Residential Clean Energy Credit through 2026), and Sun Tunnel TGR/TMR tubular
+              models. Every install uses the matched EDL/EDW/EDM step-flashing kit and is backed by
+              VELUX's 10-year no-leak warranty.
             </p>
 
             {/* CTA Buttons */}

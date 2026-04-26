@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -216,6 +225,32 @@ export default function SidingInstallationCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Siding Installation Charlotte NC | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/siding-installation-charlotte-nc`}
+        description="Siding installation and replacement in Charlotte NC. Vinyl, James Hardie fiber cement, LP SmartSide, and board & batten with manufacturer-certified installation."
+        primaryImage={IMAGES.hero.hero2}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Siding Installation Charlotte NC', url: `${SITE_CONFIG.url}/siding-installation-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What siding materials work best in Charlotte NC's humid climate?"
+        directAnswer="James Hardie fiber cement is the top choice for Charlotte's humid subtropical climate at $8-$14 per sq ft installed — it resists moisture, won't rot or warp, and handles 95°F summer to occasional freeze swings. Vinyl ($3-$8 per sq ft) is the budget pick. LP SmartSide engineered wood splits the difference. Board & batten adds curb appeal in any material. All come with manufacturer warranties from 30-year non-prorated (Hardie) to lifetime limited (vinyl)."
+        items={[
+          'James Hardie fiber cement — $8-$14 per sq ft installed; 30-year non-prorated warranty; ColorPlus baked-on finish; Charlotte-climate proof against rot, warp, mold',
+          'Vinyl siding — $3-$8 per sq ft installed; lifetime limited warranty; widest color/style range; lowest maintenance for Charlotte humidity',
+          'LP SmartSide engineered wood — $7-$11 per sq ft; 5/50-year warranty (5 yr labor / 50 yr substrate); SmartGuard treatment vs Charlotte moisture',
+          'Board & batten vertical — available in vinyl, fiber cement, or LP; classic curb-appeal upgrade for craftsman/farmhouse Charlotte styles',
+          'Mecklenburg County permit — required for full siding replacement; we pull and manage the permit and inspection',
+          'HOA approval — most Charlotte HOAs regulate color/material; we handle ARB packets for Ballantyne / Providence / Olde Sycamore / River Run / Plaza Midwood historic',
+          'Resale ROI — siding replacement returns 70-80% per Remodeling Magazine; James Hardie typically tops the Charlotte ROI tables',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/siding-installation-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -242,10 +277,13 @@ export default function SidingInstallationCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Vinyl, fiber cement, and engineered wood siding with {SITE_CONFIG.roofsInstalled}+ exterior projects completed
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides professional siding installation, replacement, and repair throughout Charlotte
-              and Mecklenburg County. From James Hardie fiber cement to affordable vinyl, our certified team delivers
-              beautiful, weather-resistant results backed by manufacturer warranties.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs siding across Charlotte and Mecklenburg County (Uptown, South,
+              Myers Park, Dilworth, Plaza Midwood, NoDa, Ballantyne, Steele Creek, University City,
+              Matthews) and Lake Norman. As James Hardie Preferred, LP SmartSide, and CertainTeed
+              certified installers, we deliver fiber cement at $8-$14 per sq ft with a 30-year
+              non-prorated warranty, vinyl at $3-$8 per sq ft, and full Mecklenburg permit handling
+              + HOA architectural-review-board coordination.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

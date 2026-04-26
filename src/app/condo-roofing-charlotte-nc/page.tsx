@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -205,6 +214,38 @@ export default function CondoRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/condo-roofing-charlotte-nc`}
+        pageName="Condo Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Condo Roofing Charlotte NC | Association Approved | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/condo-roofing-charlotte-nc`}
+        description="Condo and condominium roofing for Charlotte HOA associations. TPO/EPDM/modified bitumen flat-roof systems, board presentations, reserve study assessments, multi-unit insurance claim handling."
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Condo Roofing Charlotte NC', url: `${SITE_CONFIG.url}/condo-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does condominium roofing in Charlotte NC include?"
+        directAnswer="Condominium roofing in Charlotte typically requires flat or low-slope systems (TPO, EPDM, or modified bitumen) at $4-$12 per sq ft, association-board presentations with material samples and budget options, multi-phase scheduling to minimize resident disruption, multi-unit insurance claim coordination, and reserve study assessments to support 5-30 year capital planning. We've completed roofing for 50+ Charlotte condo associations."
+        items={[
+          'Flat and low-slope systems — TPO (60 mil reinforced), EPDM rubber, modified bitumen torch-down for parapet-walled condo buildings; $4-$12 per sq ft installed',
+          'Pitched-roof condominium replacement — architectural shingles meeting association color/style requirements with 30-50 year non-prorated warranties',
+          'Association board presentations — physical samples, warranty documentation, multi-option budget proposals, attendance at board meetings',
+          'Multi-phase scheduling — divide the building into sections to minimize noise/parking/access disruption to residents and HOA common areas',
+          'Multi-unit insurance claim coordination — single-claim handling for storm events affecting multiple units; commercial property carrier expertise',
+          'Reserve study roof assessments — current condition, expected remaining lifespan, replacement cost estimates, recommended maintenance for 5-30 year capital planning',
+          'Property management firm coordination — FirstService Residential, CAMS, AMG, RealManage and other Charlotte HOA management companies',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/condo-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -230,10 +271,13 @@ export default function CondoRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Association-approved roofing for Charlotte condominium communities
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in condominium roofing projects. From flat roof systems to
-              pitched shingle roofs, we work closely with condo associations, property managers, and
-              boards to deliver quality roofing with minimal resident disruption.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now has completed roofing for 50+ Charlotte condo associations across Uptown,
+              South End, Dilworth, Elizabeth, NoDa, Plaza Midwood, SouthPark, Ballantyne, Myers Park,
+              Fourth Ward, and University City. As authorized installers for Carlisle, Johns Manville,
+              Firestone-Holcim, and Mule-Hide commercial systems, we deliver TPO/EPDM/modified bitumen
+              flat-roof reroofs with NDL warranties, board presentations with material samples, reserve
+              study assessments, and multi-phase scheduling that respects resident routines.
             </p>
 
             {/* CTA Buttons */}

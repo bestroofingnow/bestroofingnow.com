@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -242,6 +251,39 @@ export default function FasciaSoffitRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc`}
+        pageName="Fascia & Soffit Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Fascia & Soffit Repair Charlotte NC | Trim Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc`}
+        description="Professional fascia and soffit repair in Charlotte NC. Wood rot repair, aluminum and PVC fascia replacement, vented soffit installation, NC IRC §R806 ventilation balancing, gutter-bundling savings."
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Fascia & Soffit Repair Charlotte NC', url: `${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does fascia and soffit repair cost in Charlotte NC?"
+        directAnswer="Fascia and soffit repair in Charlotte NC typically costs $8-$32 per linear foot installed depending on material and scope: wood pine $8-$14/ft, primed cedar $12-$18/ft, PVC trim $18-$26/ft, aluminum wrap over existing $10-$16/ft, vented aluminum/vinyl soffit $9-$15/ft, copper or specialty $25-$32/ft. Spot rot repairs start at $400-$900 per section. Bundling fascia and soffit work with new gutters typically saves 30-40% versus separate scopes. Most projects complete in 1-3 days for an average Charlotte home."
+        items={[
+          'Wood pine fascia $8-$14/ft — economy option, requires paint maintenance every 5-7 years; lifespan 15-20 years in Charlotte humidity',
+          'Primed cedar fascia $12-$18/ft — better rot resistance, 20-25 year lifespan with paint upkeep, common in Historic Dilworth/Plaza Midwood/Myers Park',
+          'PVC fascia and beaded soffit $18-$26/ft — rot-proof, color-stable 30+ years, ideal for Charlotte humidity and HOA-approved historic profiles',
+          'Aluminum wrap over existing fascia $10-$16/ft — preserves wood backing, factory color match, 30+ year service life',
+          'Vented aluminum/vinyl soffit $9-$15/ft — provides NC IRC §R806 attic intake (1/150 NFVA or 1/300 balanced with ridge vent)',
+          'Copper or specialty fascia $25-$32/ft — premium homes in Eastover/Foxcroft/Quail Hollow/lakefront LKN; develops natural patina',
+          'Spot rot repair sections $400-$900 — single board, includes carpenter-bee treatment and prime/paint or wrap',
+          'Gutter + fascia + soffit bundle — typical 30-40% savings versus separate trips; preserves manufacturer warranty integration',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -267,10 +309,15 @@ export default function FasciaSoffitRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Protect your home with expert fascia and soffit repair and replacement
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides professional fascia and soffit services throughout Charlotte.
-              Whether you need wood rot repair, aluminum fascia wrap, or complete replacement, our
-              experienced team delivers quality craftsmanship that protects your home.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now repairs and replaces fascia and soffit across Ballantyne, SouthPark,
+              Dilworth, Plaza Midwood, Myers Park, NoDa, South End, Elizabeth, Foxcroft, Cotswold,
+              Eastover, Beverly Woods, University City, Steele Creek, Providence, and the Lake Norman
+              communities of Huntersville, Cornelius, and Davidson. We install wood, PVC, aluminum
+              wrap, and vented soffit systems with NC IRC §R806 attic-ventilation balancing, treat
+              and prevent carpenter-bee and woodpecker damage, and bundle with gutter and drip-edge
+              work for 30-40% project savings. BBB A+, GAF Master Elite, and CertainTeed SELECT
+              ShingleMaster credentialed.
             </p>
 
             {/* CTA Buttons */}

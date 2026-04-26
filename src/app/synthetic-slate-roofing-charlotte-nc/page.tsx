@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -215,6 +224,33 @@ export default function SyntheticSlateRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Synthetic Slate Roofing Charlotte NC | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/synthetic-slate-roofing-charlotte-nc`}
+        description="Synthetic slate roofing in Charlotte NC. DaVinci Roofscapes, Brava Roof Tile, CeDUR composite slate at $12-$20 per sq ft installed — 75-80% lighter than natural slate, Class 4 impact, 50-year warranty."
+        primaryImage={IMAGES.hero.hero2}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Synthetic Slate Roofing Charlotte NC', url: `${SITE_CONFIG.url}/synthetic-slate-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="Why choose synthetic slate over natural slate in Charlotte NC?"
+        directAnswer="Synthetic slate from DaVinci, Brava, or CeDUR runs $12-$20 per sq ft installed in Charlotte versus $25-$50+ for natural slate — a 40-60% savings. It weighs 1.5-3.5 lbs/sq ft (75-80% lighter than natural slate's 8-15 lbs/sq ft), so most Charlotte homes need NO structural reinforcement. Class 4 impact resistance qualifies for NC insurance discounts, and 50-year-to-lifetime warranties match natural slate longevity."
+        items={[
+          'Cost — $12-$20 per sq ft installed (synthetic) vs $25-$50+ (natural slate); $24K-$40K for 2,000 sq ft Charlotte home vs $50K-$100K+',
+          'Weight — 1.5-3.5 lbs/sq ft (synthetic) vs 8-15 lbs/sq ft (natural); 75-80% reduction means NO structural reinforcement on most Charlotte homes',
+          'DaVinci Roofscapes — premium composite slate, 50-year limited lifetime warranty, multi-width Bellaforte/single-width Slate, factory-trained installation',
+          'Brava Roof Tile — eco-friendly recycled materials, Old World Slate / Spanish Barrel Tile / Cedar Shake profiles, Class A fire / Class 4 impact',
+          'CeDUR Synthetic Shake — lightweight cedar-shake look, Class A fire rating, Class 4 impact resistance, 50-year warranty',
+          'Wind rating — 110-150+ mph rated, exceeds NC building code; performs through severe Piedmont thunderstorms and tropical remnants',
+          'Class 4 impact — withstands 2-inch hailstones (natural slate cracks); qualifies for 10-30% NC homeowners insurance discount',
+          'HOA approval — virtually indistinguishable from natural slate; Charlotte HOAs in Myers Park, Eastover, Foxcroft, Quail Hollow, Providence Plantation routinely approve',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/synthetic-slate-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -241,10 +277,13 @@ export default function SyntheticSlateRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               DaVinci, Brava, and CeDUR composite slate with {SITE_CONFIG.roofsInstalled}+ roofs installed
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Get the timeless elegance of natural slate roofing at a fraction of the cost and weight.
-              Best Roofing Now installs premium synthetic slate products that are lighter, more impact-resistant,
-              and more affordable than real stone, with warranties up to 50 years.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Get the timeless elegance of natural slate at 40-60% less cost and 75-80% less weight.
+              Best Roofing Now is factory-trained on DaVinci Roofscapes, Brava Roof Tile, and CeDUR
+              synthetic shake — installing across Myers Park, Eastover, Foxcroft, Quail Hollow,
+              Providence Plantation, Ballantyne, Dilworth, and South Charlotte. Class 4 impact for NC
+              insurance discounts, 110-150+ mph wind rating, and 50-year-to-lifetime warranties on most
+              Charlotte homes with NO structural reinforcement required.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
