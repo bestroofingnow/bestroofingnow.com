@@ -479,3 +479,13 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
 - Sitemap: 5 entries added to core/route.ts (Batch 31 Q&A pages section)
 - Type-check: clean
+
+### Batch 32 (2026-04-26): Q&A landing pages — IBHS Fortified, Class 4, SRI, inspection report, Xactimate
+- ✅ what-is-ibhs-fortified-roof-charlotte-nc (NEW Q&A page) — third-party hurricane-resilience certification, NC 10-30% insurance discount $200-$700/yr savings, 3 levels (Roof/Silver/Gold), upgrade cost $1,100-$3,450, 1-7 yr payback
+- ✅ what-is-class-4-impact-resistance-charlotte-nc (NEW Q&A page) — UL 2218 highest hail rating (2-inch ball, 20 ft drop), NC 10-30% insurance discount, GAF ARMORShield/CertainTeed Landmark IR/OC Duration STORM, $300-$1,200 premium, 1-6 yr payback, 70-85% fewer claims
+- ✅ what-is-solar-reflective-index-charlotte-nc (NEW Q&A page) — SRI scale 0-100+, ENERGY STAR cool-roof minimum 25 SRI initial / 15 SRI 3-yr, Charlotte $80-$500/yr AC bill savings, GAF Cool Series/CertainTeed Solaris/OC Premium COOL, federal 25C tax credit 30% up to $1,200
+- ✅ what-is-a-roof-inspection-report-charlotte-nc (NEW Q&A page) — 8-section structure (property ID, specs, structural, material, flashing, ventilation, photos, recommendations), $150-$650 standalone vs FREE with reroof estimate, when needed (purchase, sale, storm, annual maintenance, insurance renewal, financing)
+- ✅ what-is-xactimate-scoping-charlotte-nc (NEW Q&A page) — Verisk industry-standard insurance estimating software (95%+ of US carriers), without contractor matching scoping homeowners receive only 60-80% of full claim, NC §58-3-180 contractor choice rights, supplemental claim filing process
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 32 Q&A pages section)
+- Type-check: clean

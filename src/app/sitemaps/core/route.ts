@@ -550,6 +550,13 @@ export async function GET() {
     { url: `${BASE_URL}/what-is-owens-corning-platinum-preferred-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/what-is-roof-flashing-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-do-i-budget-for-a-new-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+
+    // Batch 32 Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/what-is-ibhs-fortified-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-class-4-impact-resistance-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-solar-reflective-index-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-a-roof-inspection-report-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-xactimate-scoping-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
   ];
 
   const lastmod = new Date().toISOString();
