@@ -389,6 +389,17 @@ Targeting commercial-search-intent topics not yet covered by existing commercial
 
 All 5 added to core sitemap with priority 0.7, monthly changefreq.
 
+### Tier 12 — Lake Norman-specific Q&A landing pages (waterfront premium audience)
+Targeting Lake Norman waterfront-specific search intent: salt-air corrosion, wind-fetch exposure, gated communities, premium estate roofing decisions.
+
+- [x] `why-aluminum-best-for-lake-norman-waterfront-roofing-nc` (NEW, ~190 lines) — 2026-04-26 — aluminum gold standard for LKN waterfront (100% corrosion immune, lightweight, salt-spray resistant, PVDF Kynar 30-40 yr warranty, 150+ MPH wind, $13-17/sq ft). 5 follow-up FAQs covering steel rust risk lakefront, weight comparison, copper alternative, panel profiles for wind, HOA approval.
+- [x] `lake-norman-waterfront-roof-cost-guide-nc` (NEW, ~200 lines) — 2026-04-26 — waterfront pricing 15-30% premium over inland Charlotte due to access, salt-air mitigation, larger homes, HOA review, structural reinforcement. 40-50 sq home: architectural $15-25K, Class 4 $20-32K, aluminum $35-70K, copper $60-150K+. 5 follow-up FAQs.
+- [x] `how-do-i-protect-my-lake-norman-roof-from-wind-nc` (NEW, ~210 lines) — 2026-04-26 — 7 wind-protection strategies for lake-effect wind exposure (Class 4 + 6-nail 150+ MPH, standing-seam aluminum, 6-ft ice-and-water shield, reinforced ridge cap, Air Vent ShingleVent II external-baffle, tree trim 20 ft, annual inspection). 5 follow-up FAQs.
+- [x] `lake-norman-hoa-roof-approval-process-nc` (NEW, ~190 lines) — 2026-04-26 — 7-step LKN HOA ARB process with 99%+ first-pass approval rate. Premier estates Peninsula/Skybrook/NorthBay/Trump National 4-6 wk review. 5 follow-up FAQs.
+- [x] `should-i-use-metal-or-asphalt-roof-on-lake-norman-home-nc` (NEW, ~200 lines) — 2026-04-26 — material decision matrix (waterfront → aluminum standing-seam $13-17/sq ft, non-waterfront → Class 4 asphalt $7-11/sq ft). 5 follow-up FAQs covering waterfront vs non-waterfront, cost premium math, NC IBHS Fortified eligibility for both, noise myth debunk, aluminum/copper/zinc comparison.
+
+All 5 added to core sitemap with priority 0.7, monthly changefreq. These slugs don't match the SERVICE_LOCATION_PATTERN regex but render correctly because middleware falls through to `next()` for unmatched paths (only KNOWN_BLOG_SLUGS would trigger a redirect).
+
 ### Build verification (batch 21)
 Ran `npm run build` (Next.js production build) at start of batch 21 — exit code 0, all 1,300+ pages generated successfully including all 17 new pages from batches 17-20. No regression issues from the SEO/AEO sweep.
 
