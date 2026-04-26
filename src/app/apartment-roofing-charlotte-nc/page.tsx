@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -205,6 +214,39 @@ export default function ApartmentRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`}
+        pageName="Apartment Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Apartment Roofing Charlotte NC | Multi-Family Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`}
+        description="Multi-family and apartment-complex roofing in Charlotte NC. TPO, EPDM, modified bitumen, and architectural-shingle reroofs with phased scheduling, tenant notifications, and NDL warranty packages for owners and management companies."
+        primaryImage={IMAGES.hero.hero4}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Apartment Roofing Charlotte NC', url: `${SITE_CONFIG.url}/apartment-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does apartment roofing in Charlotte NC include?"
+        directAnswer="Apartment-complex roofing in Charlotte NC covers $4-$12 per sq ft TPO/EPDM/modified-bitumen flat-roof reroofs and $5-$9 per sq ft architectural-shingle pitched reroofs, phased multi-building scheduling to keep tenants in place, written tenant notifications coordinated with property managers, balcony and walkway protection, dumpster placement that preserves resident parking, single-claim handling for storm events affecting multiple buildings, and NDL (no-dollar-limit) manufacturer warranty packages from Carlisle, Johns Manville, Firestone-Holcim, Mule-Hide, GAF, CertainTeed, and Owens Corning."
+        items={[
+          'TPO 60-mil reinforced membrane — $5-$10/sq ft installed; preferred for low-slope multi-family roofs with 20-year manufacturer warranties',
+          'EPDM rubber roofing — $4-$8/sq ft installed; durable single-ply for older multi-family buildings with parapet walls',
+          'Modified-bitumen torch-down — $6-$10/sq ft installed; ideal for parapet-walled apartments and walkable surface tolerance',
+          'Architectural shingle reroofs — $5-$9/sq ft installed; for pitched-roof garden apartments with 30-50 yr non-prorated warranties',
+          'Phased scheduling — building-by-building or section-by-section to keep tenants in place; typically 1-3 buildings per week',
+          'Tenant communication packets — written notification 7-14 days ahead, daily work-window notices, parking and dumpster maps',
+          'Property-management coordination — Greystar, RPM, Cushman & Wakefield, Drucker + Falk, RangeWater, FirstService Residential',
+          'Single multi-unit insurance claim — one claim across multiple buildings for hail/wind events, supplemental filing, Xactimate-format estimates',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -230,10 +272,15 @@ export default function ApartmentRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Multi-family roofing specialists for Charlotte apartment communities
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte's trusted partner for apartment and multi-family roofing.
-              From 10-unit properties to large complexes, we deliver professional results while minimizing
-              disruption to your tenants and operations.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now reroofs apartment communities and multi-family complexes across
+              University City, Steele Creek, Ballantyne, South End, NoDa, Plaza Midwood, SouthPark,
+              Pineville, Matthews, Mint Hill, Huntersville, Cornelius, and Mooresville. We install
+              TPO, EPDM, modified-bitumen, and architectural-shingle systems with phased
+              building-by-building scheduling, written tenant notifications coordinated with
+              Greystar/RPM/Drucker + Falk/RangeWater property managers, and NDL warranties from
+              Carlisle, JM, Firestone-Holcim, and Mule-Hide. Veteran-owned, BBB A+, and certified
+              residential and commercial installers.
             </p>
 
             {/* CTA Buttons */}

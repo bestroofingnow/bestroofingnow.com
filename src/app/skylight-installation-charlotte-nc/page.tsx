@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -265,6 +274,39 @@ export default function SkylightInstallationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/skylight-installation-charlotte-nc`}
+        pageName="Skylight Installation Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Skylight Installation Charlotte NC | Certified Installer | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/skylight-installation-charlotte-nc`}
+        description="Skylight installation in Charlotte NC across VELUX, Wasco, and Fakro lines. Fixed, Fresh Air manual, solar-powered venting, and Sun Tunnel tubular models — leak-free with 10-year warranty and 26% federal Residential Clean Energy Credit on solar models."
+        primaryImage={IMAGES.hero.hero14}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Skylight Installation Charlotte NC', url: `${SITE_CONFIG.url}/skylight-installation-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does skylight installation cost in Charlotte NC?"
+        directAnswer="Skylight installation in Charlotte NC ranges $1,400-$5,200 per unit installed depending on type, brand, and roof material. Fixed glass starts at $1,800-$2,800; Fresh Air manual venting $2,400-$3,400; solar-powered venting (eligible for the 26% federal Residential Clean Energy Credit through 2026) $3,200-$4,800; Sun Tunnel tubular daylighting $1,400-$2,200. Asphalt shingle is baseline; metal adds 15-25%, tile or slate adds 30-60%. Every install includes manufacturer flashing kits and a leak-free workmanship warranty. Charlotte resale ROI averages 1.5-2.5x install cost."
+        items={[
+          'Fixed FS skylights — $1,800-$2,800 installed; sealed glass for stairwells, hallways, walk-in closets',
+          'Fresh Air manual VS — $2,400-$3,400 installed; venting via crank or telescoping pole for kitchens, baths',
+          'Solar-powered VSS — $3,200-$4,800 installed; rain sensor, smart-home integration, 26% federal tax credit through 2026',
+          'Sun Tunnel TGR rigid / TMR flexible — $1,400-$2,200 installed; tubular daylighting with no electrical and no leaks',
+          'Material upcharges — metal +15-25%, tile/slate +30-60% over asphalt-shingle baseline',
+          'Required step-flashing kits — VELUX EDL/EDW/EDM, Wasco kit, Fakro EBV; matched to your roof type for warranty validity',
+          'Deck-mounted vs curb-mounted — deck-mount on standard pitches (14°-85°); curb-mount on low-slope or for taller integration',
+          'Charlotte resale ROI — appraisal value averages 1.5-2.5x install cost; 5-15% energy savings from natural daylighting',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/skylight-installation-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -290,10 +332,15 @@ export default function SkylightInstallationCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Bring natural light into your home with professional skylight installation
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is your trusted source for skylight installation in Charlotte NC. As VELUX certified
-              installers, we offer fixed, venting, and tubular skylights that transform dark spaces with beautiful
-              natural light. Leak-free installation guaranteed.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs VELUX, Wasco, and Fakro skylights across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University
+              City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville.
+              We install Fixed FS, Fresh Air manual VS, Solar Powered VSS (eligible for the 26%
+              federal Residential Clean Energy Credit through 2026), and Sun Tunnel TGR/TMR tubular
+              models. Every install uses the matched manufacturer flashing kit and is backed by both
+              the 10-year no-leak warranty and our workmanship guarantee.
             </p>
 
             {/* CTA Buttons */}

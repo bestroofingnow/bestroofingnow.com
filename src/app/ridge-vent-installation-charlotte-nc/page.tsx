@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -241,6 +250,39 @@ export default function RidgeVentInstallationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/ridge-vent-installation-charlotte-nc`}
+        pageName="Ridge Vent Installation Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Ridge Vent Installation Charlotte NC | Attic Ventilation | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/ridge-vent-installation-charlotte-nc`}
+        description="Ridge vent installation in Charlotte NC. Continuous shingle-over ridge vents, low-profile historic options, NC IRC §R806 1:150/1:300 NFVA balancing with soffit intake, and warranty-compliant ventilation for GAF, CertainTeed, and Owens Corning roofs."
+        primaryImage={IMAGES.hero.hero4}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Ridge Vent Installation Charlotte NC', url: `${SITE_CONFIG.url}/ridge-vent-installation-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does ridge vent installation cost in Charlotte NC?"
+        directAnswer="Ridge vent installation in Charlotte NC typically runs $7-$15 per linear foot installed (most homes need 30-50 linear feet of ridge for $250-$750 retrofit total, or $400-$1,200 with shingle-over and balanced soffit intake). Bundled into a re-roof, ridge vents add only $200-$500 to the total. Per NC IRC §R806, attic ventilation must provide 1 sq ft of NFVA per 150 sq ft of attic space, or 1:300 if intake and exhaust are balanced 50/50. We install GAF Cobra, Air Vent ShingleVent II, Owens Corning VentSure, and low-profile continuous ridge vent options."
+        items={[
+          'Continuous shingle-over ridge vent (GAF Cobra) — $7-$11/linear ft installed; standard for most Charlotte gable roofs',
+          'External-baffle high-performance vent (Air Vent ShingleVent II) — $9-$13/linear ft; rated for 110+ MPH wind-driven rain',
+          'Owens Corning VentSure — $8-$12/linear ft; integrates seamlessly with OC TruDefinition Duration shingles for Platinum warranty',
+          'Low-profile continuous ridge vent — $10-$15/linear ft; preserves Historic Dilworth/Plaza Midwood/Fourth Ward sightlines',
+          'Mandatory soffit intake — required by NC code; without intake, ridge vent does nothing (existing soffit may need cutting/un-painting)',
+          'NC IRC §R806 NFVA math — 1,500 sq ft attic = 5 sq ft NFVA total = 720 sq in split 50/50 intake/exhaust',
+          'Warranty compliance — GAF/CertainTeed/OC require balanced ventilation to honor manufacturer warranty (denial-risk if missing)',
+          'Re-roof bundle pricing — adding ridge vent during a full reroof is only $200-$500 incremental vs $250-$1,200 standalone',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/ridge-vent-installation-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -266,10 +308,15 @@ export default function RidgeVentInstallationCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Improve your attic ventilation and reduce energy costs
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides professional ridge vent and attic ventilation services
-              throughout Charlotte. Proper ventilation protects your roof, reduces energy costs,
-  and prevents moisture damage. Get a free ventilation assessment today.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs ridge vents and balances attic ventilation across Ballantyne,
+              SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa, Eastover, Foxcroft, Beverly
+              Woods, Cotswold, University City, Steele Creek, and the Lake Norman towns of
+              Huntersville, Cornelius, and Davidson. We use GAF Cobra, Air Vent ShingleVent II,
+              Owens Corning VentSure, and low-profile continuous vents — calculated to NC IRC §R806
+              1:150/1:300 NFVA ratios with paired soffit intake to keep your GAF Master Elite,
+              CertainTeed SELECT ShingleMaster, or OC Platinum warranty intact and your attic 20-40°F
+              cooler in summer.
             </p>
 
             {/* CTA Buttons */}

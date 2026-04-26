@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -211,6 +220,39 @@ export default function InsuranceClaimRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`}
+        pageName="Insurance Claim Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Insurance Claim Roofing Charlotte NC | Adjuster Meetings | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`}
+        description="Insurance claim roofing in Charlotte NC. Free storm damage inspections, Xactimate-format estimates, adjuster meetings on-site, supplemental filing, RCV vs ACV review, NC §58-24-10 deductible compliance. State Farm, Allstate, Liberty Mutual, USAA, Travelers, Erie."
+        primaryImage={IMAGES.hero.hero18}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Insurance Claim Roofing Charlotte NC', url: `${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="How does a roof insurance claim work in Charlotte NC?"
+        directAnswer="A roof insurance claim in Charlotte NC follows 7 steps: (1) free storm-damage inspection within 48 hours with photo and chalk-circle documentation; (2) claim filed with carrier (most NC policies require reporting within 30-60 days, with a 12-month statute under N.C. Gen. Stat. §58-3-100); (3) adjuster scheduled — we meet on-site to walk the roof together; (4) Xactimate-format estimate submitted with line-item supplements for code upgrades; (5) approval letter and ACV check issued (depreciation withheld until completion); (6) tear-off and replace using approved materials with photo log; (7) final invoice triggers depreciation release. Under NC law you can choose any licensed contractor — not just a 'preferred vendor.' We never offer to cover or rebate your deductible (illegal under NC §58-24-10)."
+        items={[
+          'Free 48-hour storm inspection — photo log, chalk-circle hail strikes, NOAA hail-size confirmation, Xactimate-format report',
+          'Claim filing window — most NC policies 30-60 days, statute of limitations 12 months under N.C. Gen. Stat. §58-3-100',
+          'On-site adjuster meeting — we walk the roof with the adjuster, document missed damage, supplement at the appointment',
+          'RCV vs ACV review — we audit your declarations page; older roofs may be capped to ACV (depreciated value) at age 20+',
+          'Supplemental filing — for code upgrades (decking, ice/water shield, drip edge), missed damage, and overhead-and-profit',
+          'NC §58-24-10 compliance — deductible-rebating is illegal in NC; any contractor offering this is risking your claim',
+          'Free contractor choice — under NC law you may use any licensed contractor; you are not required to use the carrier preferred vendor',
+          'Carriers handled — State Farm, Allstate, Liberty Mutual, USAA, Travelers, Nationwide, Farm Bureau, Erie, Progressive',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -236,8 +278,15 @@ export default function InsuranceClaimRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Storm damage? We handle your entire roof insurance claim from start to finish.
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in insurance claim roofing for Charlotte homeowners. From free storm damage inspections to adjuster meetings and quality repairs - we advocate for you every step of the way. No money out of pocket beyond your deductible.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now files and manages roof insurance claims for Charlotte homeowners
+              across Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa, Eastover,
+              Foxcroft, Steele Creek, University City, and the Lake Norman communities of
+              Huntersville, Cornelius, Davidson, and Mooresville. We meet adjusters on-site, deliver
+              Xactimate-format estimates, file supplements for missed damage and code upgrades, and
+              know every major carrier including State Farm, Allstate, Liberty Mutual, USAA,
+              Travelers, Nationwide, Farm Bureau, Erie, and Progressive. Veteran-owned, BBB A+, and
+              fully compliant with N.C. Gen. Stat. §58-24-10 — we never rebate your deductible.
             </p>
 
             {/* CTA Buttons */}

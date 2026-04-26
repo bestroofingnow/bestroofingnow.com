@@ -20,7 +20,16 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -242,6 +251,39 @@ export default function LeafGuardGuttersCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc`}
+        pageName="LeafGuard Gutters Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="LeafGuard Gutters Charlotte NC | One-Piece Clog-Free Gutters | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc`}
+        description="LeafGuard one-piece seamless gutters in Charlotte NC. Patented curved-hood debris-shedding design, ScratchGuard paint finish, ClogFree lifetime guarantee, sized for Charlotte oak/loblolly/sweetgum tree canopy. Compare against micro-mesh, reverse-curve, and foam alternatives."
+        primaryImage={IMAGES.hero.hero5}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'LeafGuard Gutters Charlotte NC', url: `${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="How does LeafGuard compare to other gutter guards in Charlotte NC?"
+        directAnswer="LeafGuard differs from add-on gutter guards because it's a one-piece system: the curved hood and gutter are formed together (no seams to separate), use liquid-adhesion physics to drive water in while shedding debris, and carry a ClogFree lifetime transferable warranty. Pricing in Charlotte runs $20-$45 per linear foot installed (vs $4-$15/ft for add-on micro-mesh). LeafGuard handles 32 inches per hour of rainfall — well above the 2-3 in/hr peak of Charlotte tropical-remnant storms. For canopy-heavy neighborhoods like Myers Park, Dilworth, Plaza Midwood, and lakefront LKN with oak, loblolly pine, sweetgum, and maple, LeafGuard is the lowest long-term-maintenance option."
+        items={[
+          'LeafGuard one-piece seamless — $20-$45/linear ft installed; lifetime ClogFree warranty, ScratchGuard paint, transferable on home sale',
+          'Micro-mesh add-on guards — $4-$15/linear ft; effective vs all debris but require periodic mesh cleaning',
+          'Reverse-curve add-on — $5-$10/linear ft; can overshoot in heavy Charlotte downpours, struggles with pine needles',
+          'Foam inserts — $1-$4/linear ft; 3-5 year lifespan in Charlotte humidity, accumulates debris in foam pores',
+          'Bottle brush — $3-$6/linear ft; effective for leaves only, traps small debris on bristles',
+          'Charlotte rainfall handling — LeafGuard rated 32 in/hr; tropical remnant peak ~2-3 in/hr (5x safety margin)',
+          'Tree-canopy fit — micro-mesh and LeafGuard tie for fine-debris (pine needles, sweetgum balls, oak catkins)',
+          'Long-term economics — LeafGuard offsets $125-$300/yr cleaning cost; resale ROI 1.5-2x install on appraisal',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -267,11 +309,15 @@ export default function LeafGuardGuttersCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               One-piece seamless design with clog-free guarantee
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now installs LeafGuard, the only gutter system with a built-in hood
-              that keeps debris out while letting water flow freely. The patented one-piece design
-              is guaranteed to never clog - or we clean it for free. Stop climbing ladders and
-              protect your home with Charlotte's best gutter solution.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs LeafGuard one-piece seamless gutters across Ballantyne,
+              SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa, South End, Eastover, Foxcroft,
+              Cotswold, Beverly Woods, Steele Creek, University City, and the Lake Norman
+              communities of Huntersville, Cornelius, Davidson, and Mooresville. The patented
+              curved-hood design uses liquid adhesion to drive water in while shedding leaves, pine
+              needles, sweetgum balls, and oak catkins — backed by a ClogFree lifetime transferable
+              warranty and ScratchGuard paint finish. Sized for Charlotte tree-canopy and tropical
+              rainfall (rated 32 in/hr, 5x peak storm intensity).
             </p>
 
             {/* CTA Buttons */}
