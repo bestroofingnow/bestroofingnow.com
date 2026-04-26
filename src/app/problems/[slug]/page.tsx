@@ -7,6 +7,15 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 interface ProblemPageProps {
   params: Promise<{ slug: string }>;
@@ -67,9 +76,51 @@ export default async function ProblemPage({ params }: ProblemPageProps) {
   }
 
   const otherProblems = ROOFING_PROBLEMS.filter((p) => p.slug !== slug).slice(0, 3);
+  const pageUrl = `${SITE_CONFIG.url}/problems/${slug}`;
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Problems', url: `${SITE_CONFIG.url}/problems` },
+          { name: problem.title, url: pageUrl },
+        ]}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${problem.title} | Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name={`${problem.title} | Charlotte NC | Best Roofing Now`}
+        url={pageUrl}
+        description={`${problem.description} Best Roofing Now diagnoses and repairs ${problem.title.toLowerCase()} across Charlotte and the Lake Norman region with 1-4 hour emergency response, full insurance claim handling, and 30-50 year non-prorated warranties on permanent repairs.`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roofing Problems', url: `${SITE_CONFIG.url}/problems` },
+          { name: problem.title, url: pageUrl },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question={`How does Best Roofing Now diagnose and repair ${problem.title.toLowerCase()} in Charlotte NC?`}
+        directAnswer={`${problem.description} Best Roofing Now follows a diagnostic-first approach: free on-site inspection with photo documentation, root-cause isolation (leaks rarely appear under the entry point), written estimate with material and labor line items, repair work with manufacturer-spec materials, and post-repair walkthrough. We coordinate insurance claims (State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie, Farm Bureau) when storm damage is involved, and offer 1-4 hour emergency response by zone for active leaks or storm damage. Sometimes a $400-$1,800 targeted repair beats full replacement — we'll tell you which.`}
+        items={[
+          `Free on-site diagnostic inspection within 48 hours`,
+          `Root-cause isolation — leaks rarely appear directly under the entry point`,
+          `Written estimate with material + labor line items`,
+          `Repair with manufacturer-spec materials and best-practice technique`,
+          `Insurance claim handling when storm-driven (8 NC carriers)`,
+          `1-4 hour emergency response for active leaks (Mecklenburg / LKN / outer county zones)`,
+          `Repair-vs-replace honest assessment — sometimes targeted repair beats full replacement`,
+          `Post-repair walkthrough + warranty packet (manufacturer + 10 yr workmanship)`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -87,8 +138,13 @@ export default async function ProblemPage({ params }: ProblemPageProps) {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {problem.title}
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              {problem.description}
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              {problem.description} Best Roofing Now diagnoses and repairs {problem.title.toLowerCase()}
+              across Charlotte and the surrounding communities of Ballantyne, SouthPark, Dilworth,
+              Plaza Midwood, Myers Park, Steele Creek, University City, and the Lake Norman towns
+              of Huntersville, Cornelius, Davidson, and Mooresville — with 1-4 hour emergency
+              response by zone, free written estimates, and 30-50 year non-prorated warranties on
+              permanent repairs.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

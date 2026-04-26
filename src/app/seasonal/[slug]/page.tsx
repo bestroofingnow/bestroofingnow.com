@@ -6,6 +6,15 @@ import { SITE_CONFIG, SEASONAL_ROOFING } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 interface SeasonalPageProps {
   params: Promise<{ slug: string }>;
@@ -170,9 +179,51 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
   const details = seasonDetails[slug];
   const Icon = seasonIcons[season.season as keyof typeof seasonIcons];
   const otherSeasons = SEASONAL_ROOFING.filter((s) => s.slug !== slug);
+  const pageUrl = `${SITE_CONFIG.url}/seasonal/${slug}`;
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Seasonal Roofing', url: `${SITE_CONFIG.url}/seasonal` },
+          { name: `${season.season} Roofing`, url: pageUrl },
+        ]}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${season.title} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name={`${season.title} | Charlotte NC | Best Roofing Now`}
+        url={pageUrl}
+        description={`${season.description} Charlotte NC seasonal roofing scheduled around the May-June hail belt and August-October tropical remnants, with NC IRC §R806 ventilation balance and 30-50 year non-prorated transferable warranties.`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Seasonal Roofing', url: `${SITE_CONFIG.url}/seasonal` },
+          { name: `${season.season} Roofing`, url: pageUrl },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question={`When should Charlotte NC homeowners schedule ${season.season.toLowerCase()} roofing work?`}
+        directAnswer={`${season.description} Charlotte's roofing calendar follows weather patterns: spring inspections complete by April-May before May-June hail belt peak; summer maintenance and reroofs through July-August (heat risk after 11am); fall reroofs through September-October (best window with 60-80°F temps); winter emergencies and hand-sealed mastic repairs through December-February (40°F shingle minimum requires mastic exception below). Best Roofing Now schedules ${season.season.toLowerCase()} work across Charlotte and the surrounding Lake Norman region with NC IRC §R806 ventilation balance and 30-50 year non-prorated warranties through GAF Master Elite, CertainTeed SELECT ShingleMaster, and OC Platinum Preferred.`}
+        items={[
+          `${season.season} weather patterns affecting Charlotte roofs`,
+          `Best ${season.season.toLowerCase()} timing for inspections and reroofs`,
+          `Common ${season.season.toLowerCase()} roof issues unique to Charlotte climate`,
+          `Pre-storm prep before May-June hail belt and August-October tropical remnants`,
+          `Cold-weather (40°F minimum) install limitations and mastic-seal exception`,
+          `${season.season} maintenance checklist for warranty compliance`,
+          `Emergency response (1-4 hour tarp dispatch) for ${season.season.toLowerCase()} storm damage`,
+          `Insurance claim documentation for storm-driven ${season.season.toLowerCase()} damage`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -190,8 +241,12 @@ export default async function SeasonalPage({ params }: SeasonalPageProps) {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {season.title}
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              {season.description}
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              {season.description} Best Roofing Now schedules {season.season.toLowerCase()} roofing
+              work across Charlotte and the surrounding communities of Ballantyne, SouthPark,
+              Dilworth, Plaza Midwood, Steele Creek, University City, and the Lake Norman towns of
+              Huntersville, Cornelius, Davidson, and Mooresville — keyed to Piedmont weather
+              patterns and NC IRC §R806 ventilation requirements.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

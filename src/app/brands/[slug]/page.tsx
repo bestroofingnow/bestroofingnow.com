@@ -5,9 +5,18 @@ import { Phone, CheckCircle, Award, Shield, ArrowRight, Star } from 'lucide-reac
 import { SITE_CONFIG, ROOFING_BRANDS } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
-import { BreadcrumbSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import { MoneyPagesLinkBlock } from '@/components/sections/MoneyPagesLinkBlock';
 
 interface BrandPageProps {
   params: Promise<{ slug: string }>;
@@ -165,6 +174,20 @@ export default async function BrandPage({ params }: BrandPageProps) {
           { name: brand.name, url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${brand.fullName} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question={`Why choose ${brand.fullName} roofing for your Charlotte NC home?`}
+        directAnswer={`${brand.fullName} is one of the top roofing brands installed by Best Roofing Now in Charlotte NC. As a ${brand.certificationLevel}, we unlock the manufacturer's enhanced warranty and factory-trained installation. ${brand.description} Charlotte 30-square home installs typically run within the standard architectural to designer range depending on product line. Best Roofing Now holds top-tier credentials across GAF (Master Elite, top 2% nationwide), CertainTeed (SELECT ShingleMaster, top tier), and Owens Corning (Platinum Preferred) — so the brand decision is usually about color, style, and HOA approval rather than installer access.`}
+        items={brand.keywords.slice(0, 8).map((kw) => `${kw} — installed by Best Roofing Now ${brand.certificationLevel} in Charlotte NC`)}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
@@ -187,8 +210,11 @@ export default async function BrandPage({ params }: BrandPageProps) {
               {brand.fullName}
             </h1>
             <p className="text-xl text-accent font-semibold mb-4">{brand.tagline}</p>
-            <p className="text-xl text-white/90 mb-8">
-              {brand.description}
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              {brand.description} Best Roofing Now is a {brand.certificationLevel} for {brand.name} —
+              installing across Charlotte, Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers
+              Park, Steele Creek, University City, and the Lake Norman towns of Huntersville,
+              Cornelius, Davidson, and Mooresville.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -373,6 +399,12 @@ export default async function BrandPage({ params }: BrandPageProps) {
           </div>
         </div>
       </section>
+
+      <MoneyPagesLinkBlock
+        title={`Charlotte Roofing Services Featuring ${brand.name}`}
+        subtitle={`See pricing and book ${brand.name} installation, repair, or replacement across Charlotte and Lake Norman.`}
+        maxLinks={9}
+      />
     </>
   );
 }

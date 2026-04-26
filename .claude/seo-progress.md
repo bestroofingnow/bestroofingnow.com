@@ -26,12 +26,30 @@ Built two reusable, AI-citation-ready components and wired them into the priorit
 
 **Build status:** `npx next build` ✓ compiled successfully.
 
-**Still open from plan (next session):**
-- Internal linking map — long-tail city pages → 10 priority money pages with exact-match anchors.
-- Performance pass on `/`, `/blog`, `/about`, `/commercial-systems`, `/commercial-roofing-services`, `/gutter-services`, `/affordable-roofing-charlotte-nc`, `/apartment-roofing-charlotte-nc` (FID/LCP).
-- CMS asset stabilization for hero/icons/sitemaps.
-- Question-first content for PAA ("25% rule", "$30K too much", "How to tell if a roofer is lying").
-- Local link acquisition + directory cleanup.
+**Continuation (same date) — internal linking map + PAA pages:**
+
+- **`src/components/sections/MoneyPagesLinkBlock.tsx`** — reusable internal-linking component that routes authority to the 10 priority money pages with exact-match natural anchors. Filterable by tier (1=core, 2=cost, 3=nearby cities) and category (core/cost/city/commercial/gutter/metal). Auto-excludes the current page.
+- Wired into 3 dynamic templates (≈ 100+ pages):
+  - `/locations/[city]` — covers all 60+ city pages.
+  - `/services/[slug]` — covers all service detail pages.
+  - `/brands/[slug]` — covers GAF, CertainTeed, Owens Corning, etc.
+
+**3 new PAA / AI Overview Q&A pages:**
+- `/25-percent-rule-roofing` — IRC R908.3 explainer. QAPageSchema + 5 FAQ + per-slope/whole-roof clarification + Charlotte enforcement context. Targets "What is the 25% rule in roofing?".
+- `/is-30000-too-much-for-a-roof-charlotte-nc` — pricing reality check. QAPageSchema + 6 FAQ + visible CostTable with full 2026 Charlotte material pricing (3-tab → tile). Targets "Is $30,000 too much for a roof?".
+- `/how-to-tell-if-roofer-is-lying` — 10 red flags + 7-step verification (NC license, BBB, mfr cert, COI). QAPageSchema + HowToSchema + 5 FAQ. Targets "How to tell if a roofer is lying?".
+
+All 3 added to `src/app/sitemaps/core/route.ts` and `src/middleware.ts` KNOWN_ROUTES. Each page includes `<CitationFacts>` + `<MoneyPagesLinkBlock>` for internal authority routing.
+
+**Build status:** `npx next build` ✓ compiled in 14.4s. All new pages prerendered as static.
+
+**Performance pass — analysis:**
+Existing perf infrastructure is strong: AnalyticsProvider wrapped in `LazyThirdParty` (defers GA4 + Microsoft Clarity + Facebook Pixel until first user interaction or 5s fallback), `LazyChatWidget`, `LazyCustomCursor`, `LazyUrgencyBanner` already in place. Inter font configured with `display: 'swap'` and `adjustFontFallback`. Logo preloaded with `fetchPriority="high"`. WebVitals reports CLS / FCP / INP / LCP / TTFB. Further perf wins require real Lighthouse field data — deferred.
+
+**Still open (next session):**
+- CMS asset stabilization for hero/icons (cms.bestroofingnow.com 403s).
+- Local link acquisition + directory cleanup (per Month 3 of plan).
+- Re-pull DataForSEO striking-distance + Ahrefs SERP for 6 core Charlotte terms in 1–2 weeks to measure impact.
 
 
 ## Audit Framework (applied to each page)
@@ -259,6 +277,19 @@ Discovery: all non-Charlotte location pages (commercial-roofing-{matthews,davids
 
 ### Tier 6 status: COMPLETE (all 15 high-value static content pages enhanced)
 All static content pages worth enhancing now carry the AEO bundle. Remaining ~30 unoptimized pages site-wide are dynamic [slug] route templates (high-leverage, would affect many generated pages each) and ~12 utility/admin pages (skip). Next pass: Tier 7 — dynamic route templates (blog/[slug], services/[slug], locations/[city], brands/[slug], etc.).
+
+### Tier 7 — Dynamic route templates (HIGH leverage)
+Each template change here applies to ALL generated pages of that type. ~30 templates remaining; targeting the smaller/simpler ones first (300-500 lines), saving services/[slug] (1,436) and locations/[city] (1,956) for later.
+
+**Template pattern:** Use template literals (backticks) with variable interpolation rather than JSX double-quoted attribute strings, so the bundle works for any slug data without hardcoding. Use `{...}` JS expression form for any string containing inch-marks or quotes (per saved JSX inch-mark memory).
+
+- [x] `brands/[slug]` (385 → 415) — 2026-04-26 — added partial bundle (had Breadcrumb+WebPage): added AISearch+Voice+Speakable+FeaturedSnippet+FreeInspection. Schema fields use `${brand.fullName}`, `${brand.certificationLevel}`, `${brand.description}` template literals. items array maps `brand.keywords.slice(0, 8)`. Hero `.speakable-intro` adds Charlotte + LKN service area + brand-specific certification level. Affects all ROOFING_BRANDS entries (~9 brand pages including GAF, CertainTeed, OC, Tamko, IKO, Atlas, Malarkey, etc.).
+- [x] `roof-types/[slug]` (309 → 367) — 2026-04-26 — added FULL bundle (NO schemas before — page had only Breadcrumbs UI!): added BreadcrumbSchema+AISearch+Voice+Speakable+WebPage+FeaturedSnippet+FreeInspection. Schema fields use `${roofType.name}`, `${roofType.description}`, `${roofType.shortName}`. Hero `.speakable-intro` adds Charlotte + LKN service area + 3 cert lines. Affects all ROOF_TYPES entries (~8 roof type pages: gable, hip, mansard, shed, gambrel, flat, dutch-gable, butterfly).
+- [x] `problems/[slug]` (344 → 408) — 2026-04-26 — added FULL bundle (NO schemas before — same gap as roof-types!): added BreadcrumbSchema+AISearch+Voice+Speakable+WebPage+FeaturedSnippet+FreeInspection. Schema fields use `${problem.title}`, `${problem.description}`. Hero `.speakable-intro` adds Charlotte + LKN service area + 1-4 hr emergency response. Affects all ROOFING_PROBLEMS entries (~10 problem pages: leak, missing shingles, hail damage, ice dam, sagging, ventilation, fascia rot, etc.).
+- [x] `seasonal/[slug]` (357 → 419) — 2026-04-26 — added FULL bundle (NO schemas before): added BreadcrumbSchema+AISearch+Voice+Speakable+WebPage+FeaturedSnippet+FreeInspection. Schema fields use `${season.title}`, `${season.season}`, `${season.description}`. Hero `.speakable-intro` adds Charlotte + LKN service area + Piedmont weather pattern keying. Affects all SEASONAL_ROOFING entries (4 pages: spring, summer, fall, winter roofing).
+- [x] `guides/[slug]` (514 → 568) — 2026-04-26 — added partial bundle (had Breadcrumb+WebPage+Article): added AISearch+Voice+Speakable+FeaturedSnippet+FreeInspection. Schema fields use `${guide.title}`, `${guide.shortTitle}`, `${guide.description}`. Hero `.speakable-intro` adds Charlotte + LKN service area + 2,000+ projects + 2026 NC code/insurance update. Affects all ROOFING_GUIDES entries (~6 guide pages: cost, replacement decision, maintenance, insurance, contractor selection, storm prep).
+
+**Tier 7 progress:** 5 of ~30 templates complete. ~25 remaining: materials/[slug], compare/[slug], stories/[slug], commercial-systems/[slug], blog/[slug], products/[slug], projects/[slug], projects/city/[city], services/[slug] (1,436 lines), locations/[city] (1,956 lines).
 
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19

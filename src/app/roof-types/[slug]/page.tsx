@@ -7,6 +7,15 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 interface RoofTypePageProps {
   params: Promise<{ slug: string }>;
@@ -67,9 +76,51 @@ export default async function RoofTypePage({ params }: RoofTypePageProps) {
   }
 
   const otherTypes = ROOF_TYPES.filter((r) => r.slug !== slug).slice(0, 3);
+  const pageUrl = `${SITE_CONFIG.url}/roof-types/${slug}`;
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Types', url: `${SITE_CONFIG.url}/roof-types` },
+          { name: roofType.shortName, url: pageUrl },
+        ]}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${roofType.name} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name={`${roofType.name} | Charlotte NC | Best Roofing Now`}
+        url={pageUrl}
+        description={`${roofType.description} Best Roofing Now installs ${roofType.name.toLowerCase()} systems across Charlotte and the Lake Norman region with full GAF Master Elite, CertainTeed SELECT ShingleMaster, and OC Platinum Preferred warranty unlocks.`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Roof Types', url: `${SITE_CONFIG.url}/roof-types` },
+          { name: roofType.shortName, url: pageUrl },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question={`What should Charlotte NC homeowners know about ${roofType.name.toLowerCase()}?`}
+        directAnswer={`${roofType.description} For Charlotte NC homes, ${roofType.shortName.toLowerCase()} roofs are common across specific neighborhoods and architectural styles. Best Roofing Now installs and replaces this roof type with full NC IRC §R806 ventilation balance, NC code 110+ MPH wind rating, and 30-50 year non-prorated transferable warranties through GAF Master Elite (top 2% nationwide), CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred credentials.`}
+        items={[
+          `${roofType.shortName} roof identification — visual signs and pitch range`,
+          `Best material match for ${roofType.shortName.toLowerCase()} roofs in Charlotte climate`,
+          `2026 Charlotte pricing for ${roofType.shortName.toLowerCase()} reroofs`,
+          `NC IRC §R806 ventilation requirements specific to this roof shape`,
+          `Wind-uplift considerations for Charlotte's 110 MPH minimum NC code`,
+          `Class 4 impact-resistant upgrade options for 10-30% NC insurance discount`,
+          `HOA architectural-review-board considerations for color/style approval`,
+          `Best Roofing Now warranty stack for ${roofType.shortName.toLowerCase()} installs`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
+
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
         <div className="container">
@@ -87,8 +138,12 @@ export default async function RoofTypePage({ params }: RoofTypePageProps) {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {roofType.name}
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              {roofType.description}
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              {roofType.description} Best Roofing Now installs and replaces {roofType.name.toLowerCase()}
+              systems across Charlotte and the surrounding communities of Ballantyne, SouthPark,
+              Dilworth, Plaza Midwood, Myers Park, Steele Creek, University City, and the Lake
+              Norman towns of Huntersville, Cornelius, Davidson, and Mooresville — backed by GAF
+              Master Elite, CertainTeed SELECT ShingleMaster, and OC Platinum Preferred warranties.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

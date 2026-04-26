@@ -5,7 +5,16 @@ import { Phone, ArrowRight, CheckCircle, AlertTriangle, DollarSign, Clock, FileT
 import { SITE_CONFIG, ROOFING_GUIDES } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
-import { BreadcrumbSchema, WebPageSchema, ArticleSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  WebPageSchema,
+  ArticleSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -351,6 +360,29 @@ export default async function GuidePage({ params }: GuidePageProps) {
   dateModified: new Date().toISOString().split('T')[0],
         }}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${guide.title} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question={`What does ${guide.title.toLowerCase()} cover for Charlotte NC homeowners?`}
+        directAnswer={`${guide.description} This guide is updated for 2026 NC code (NC IRC §R806 ventilation, 110 MPH minimum wind rating, NC IBHS Fortified Class 4 insurance discount eligibility), N.C. Gen. Stat. §58-3-100 insurance claim statute, N.C. Gen. Stat. §58-24-10 deductible-rebate prohibition, and Best Roofing Now's 2,000+ completed Charlotte projects across Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, Steele Creek, University City, and the Lake Norman region.`}
+        items={[
+          `${guide.shortTitle} key concepts and definitions`,
+          `2026 Charlotte pricing ranges and what affects cost`,
+          `NC code and insurance considerations specific to this topic`,
+          `Common Charlotte/Lake Norman scenarios and decision criteria`,
+          `Best practices and what to ask your contractor`,
+          `Red flags and contractor warning signs`,
+          `Warranty and material recommendations from a GAF Master Elite installer`,
+          `When to call Best Roofing Now for a free inspection`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
@@ -366,8 +398,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {guide.title}
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              {guide.description}
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              {guide.description} Updated for 2026 NC code, insurance law, and Best Roofing Now's
+              2,000+ completed Charlotte projects across Ballantyne, SouthPark, Dilworth, Plaza
+              Midwood, Myers Park, Steele Creek, University City, and the Lake Norman towns of
+              Huntersville, Cornelius, Davidson, and Mooresville. Veteran-owned, BBB A+, GAF Master
+              Elite (top 2% nationwide), CertainTeed SELECT ShingleMaster credentialed.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
