@@ -543,6 +543,13 @@ export async function GET() {
     { url: `${BASE_URL}/what-causes-roof-leaks-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/what-is-fascia-board-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-do-i-prevent-squirrel-damage-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+
+    // Batch 31 Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/what-is-gaf-master-elite-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-certainteed-select-shinglemaster-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-owens-corning-platinum-preferred-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-roof-flashing-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-budget-for-a-new-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
   ];
 
   const lastmod = new Date().toISOString();

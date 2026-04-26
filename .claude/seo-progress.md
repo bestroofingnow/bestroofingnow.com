@@ -469,3 +469,13 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
 - Sitemap: 5 entries added to core/route.ts (Batch 30 Q&A pages section)
 - Type-check: clean
+
+### Batch 31 (2026-04-26): Q&A landing pages — installer credentials, flashing, budgeting
+- ✅ what-is-gaf-master-elite-charlotte-nc (NEW Q&A page) — top 2% of US contractors, exclusive Golden Pledge warranty 50/25/25, 130 MPH wind, transferable, verifiable on gaf.com
+- ✅ what-is-certainteed-select-shinglemaster-charlotte-nc (NEW Q&A page) — under 1% of CT contractors, 5-Star Integrity warranty 50/25/25, requires Master Shingle Applicator + Quality Master + 5 yr exp + audits, verifiable on certainteed.com
+- ✅ what-is-owens-corning-platinum-preferred-charlotte-nc (NEW Q&A page) — top 1% of OC contractors, Platinum Protection warranty 50/LIFETIME/LIFETIME (industry-leading workmanship), Duration FLEX best Class 4 impact, verifiable on owenscorning.com
+- ✅ what-is-roof-flashing-charlotte-nc (NEW Q&A page, substituted from roof square which already existed) — 22% of Charlotte leaks from flashing, 7 types (step, counter, apron, valley, drip edge, pipe boot, skylight), aluminum vs copper vs steel materials and lifespans
+- ✅ how-do-i-budget-for-a-new-roof-charlotte-nc (NEW Q&A page) — 4-step framework (estimate, contingency, funding, timing), Charlotte 30-sq home $11K-$60K by material, financing options (HELOC, PowerPay 0%, FHA Title I), tax credits 25C cool-roof, off-season 5-10% savings
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 31 Q&A pages section)
+- Type-check: clean
