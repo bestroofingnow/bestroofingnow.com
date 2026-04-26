@@ -23,7 +23,16 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -235,6 +244,39 @@ export default function GutterGuardsCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gutter-guards-charlotte-nc`}
+        pageName="Gutter Guards Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Gutter Guards Charlotte NC | 5 System Comparison | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/gutter-guards-charlotte-nc`}
+        description="Gutter guards in Charlotte NC. Compare micro-mesh (316 stainless), reverse-curve, foam, bottle brush, and integrated systems sized for Charlotte's oak/loblolly pine/sweetgum/maple canopy. $4-$45 per linear foot installed depending on type."
+        primaryImage={IMAGES.services.gutters}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Gutter Guards Charlotte NC', url: `${SITE_CONFIG.url}/gutter-guards-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What gutter guard works best in Charlotte NC?"
+        directAnswer="Charlotte's heavy oak, loblolly pine, sweetgum, and maple canopy makes micro-mesh (316 stainless steel mesh, 30 micron) the best-performing gutter guard for most homes — it stops everything from large leaves down to pine needles and pollen. Pricing across all 5 system types: micro-mesh $4-$15 per linear foot installed (best for canopy areas), reverse-curve $5-$10 (struggles with pine needles), foam inserts $1-$4 (3-5 yr lifespan), bottle brush $3-$6 (leaf-only), integrated one-piece systems like LeafGuard $20-$45 (lifetime warranty). For canopy-heavy Charlotte neighborhoods like Myers Park, Dilworth, Plaza Midwood, Eastover, Cotswold, Beverly Woods, and lakefront LKN: micro-mesh or LeafGuard. For light-canopy newer construction in Ballantyne, Steele Creek, Berewick: reverse-curve or basic micro-mesh."
+        items={[
+          'Micro-mesh 316 stainless — $4-$15/linear ft installed; 30-micron mesh stops everything; 20+ yr lifespan',
+          'Reverse-curve — $5-$10/linear ft; uses surface tension; struggles with pine needles in heavy storms',
+          'Foam inserts — $1-$4/linear ft; cheap and DIY-friendly; 3-5 yr lifespan in Charlotte humidity',
+          'Bottle brush — $3-$6/linear ft; effective for leaves only; traps small debris on bristles',
+          'Integrated one-piece (LeafGuard) — $20-$45/linear ft; lifetime ClogFree warranty, transferable',
+          'Best for canopy areas — micro-mesh or LeafGuard for Myers Park/Dilworth/Plaza Midwood/Eastover/lakefront LKN',
+          'Best for light canopy — reverse-curve or basic micro-mesh for Ballantyne/Steele Creek/Berewick newer builds',
+          'Cleaning cost offset — replaces $125-$300/yr cleanout; resale ROI 1.5-2x install on appraisal',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/gutter-guards-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -260,10 +302,15 @@ export default function GutterGuardsCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               LeafGuard and professional gutter protection installation
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Stop climbing ladders to clean clogged gutters. Best Roofing Now installs premium gutter guard systems
-              that keep leaves, pine needles, and debris out while allowing water to flow freely. Protect your home
-              from water damage with our professional gutter guard solutions.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs all 5 major gutter-guard system types across Charlotte and
+              the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers
+              Park, NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek,
+              University City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and
+              Mooresville. We size systems to your tree canopy — micro-mesh 316 stainless or
+              LeafGuard for heavy oak/loblolly pine/sweetgum/maple cover, reverse-curve or basic
+              micro-mesh for newer light-canopy builds. Replaces $125-$300/yr cleanout costs and
+              adds 1.5-2x resale ROI on appraisal.
             </p>
 
             {/* CTA Buttons */}

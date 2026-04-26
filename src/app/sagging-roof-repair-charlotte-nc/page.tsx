@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -240,6 +249,39 @@ export default function SaggingRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc`}
+        pageName="Sagging Roof Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Sagging Roof Repair Charlotte NC | Structural Specialists | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc`}
+        description="Sagging roof repair in Charlotte NC. Structural diagnosis (rafter, decking, ridge, truss, foundation), water-damage rebuild, sister-sister rafter reinforcement, structural engineer coordination, full or partial roof replacement when warranted."
+        primaryImage={IMAGES.hero.hero4}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Sagging Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What causes a sagging roof in Charlotte NC and how is it repaired?"
+        directAnswer="Sagging roofs in Charlotte NC have 6 common causes ranked by frequency: (1) long-term water damage from undetected leaks rotting decking and rafters; (2) undersized rafters or trusses for current snow/wind load (common in 1950s-1970s ranches); (3) failed ridge beam from removed center wall during prior remodel; (4) overweight roof system (asphalt over slate, multiple shingle layers exceeding NC code 2-layer cap); (5) foundation settlement transferring stress to roof framing; (6) termite or carpenter-bee structural damage. Repair scope ranges from $1,200 (sister-rafter reinforcement of 2-3 rafters) to $25,000+ (full structural rebuild with engineer-stamped drawings). Pricing: rafter sister-rafter $300-$600 each, ridge beam re-support $2,500-$8,000, decking replacement $80-$120/sheet, full structural redesign with engineer $5,000-$25,000+. Always book a free assessment first — visible sag often indicates active danger."
+        items={[
+          'Long-term water damage — #1 cause; undetected leak rots decking and rafters; 5-15 yr time-to-failure',
+          'Undersized rafters/trusses — 1950s-1970s ranches commonly under-spec for modern code',
+          'Failed ridge beam — removed center wall during prior remodel without proper LVL replacement',
+          'Overweight roof system — NC code 2-layer cap violated; asphalt over slate; multi-layer rebuild',
+          'Foundation settlement — clay-soil heave/shrink in Charlotte transfers stress to roof framing',
+          'Termite or carpenter-bee damage — structural members compromised; common in older Plaza Midwood/Dilworth/historic homes',
+          'Sister-rafter reinforcement — $300-$600 each; preserves original framing while adding capacity',
+          'Engineer-stamped redesign — $5,000-$25,000+ for ridge-beam upgrade or full truss replacement',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -265,10 +307,16 @@ export default function SaggingRoofRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Expert structural repairs to restore your roof's integrity and protect your home
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              A sagging roof is a serious structural issue that won't fix itself. Best Roofing Now specializes in
-              diagnosing and repairing sagging roofs throughout Charlotte. From water damage to structural deficiencies,
-  our experienced team gets to the root cause and delivers lasting solutions.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now diagnoses and repairs sagging roofs across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University
+              City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville.
+              We isolate root causes — water damage, undersized rafters, failed ridge beams,
+              overweight roof systems, foundation settlement, termite/pest damage — and coordinate
+              with licensed structural engineers when stamped drawings are required. Sister-rafter
+              reinforcement, ridge-beam re-support, decking replacement, or full structural rebuild
+              as the diagnosis warrants.
             </p>
 
             {/* CTA Buttons */}

@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -213,6 +222,39 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/standing-seam-metal-roof-charlotte-nc`}
+        pageName="Standing Seam Metal Roof Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Standing Seam Metal Roof Charlotte NC | 50+ Year Lifespan | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/standing-seam-metal-roof-charlotte-nc`}
+        description="Standing seam metal roofing in Charlotte NC. 24-gauge and 26-gauge steel, aluminum, zinc, and copper panel systems. PVDF Kynar/Hylar 5000 finishes with 30-40 yr warranties, snap-lock and mechanically-seamed installations, S-5! solar-clamp ready."
+        primaryImage={IMAGES.hero.metalRoof}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Standing Seam Metal Roof Charlotte NC', url: `${SITE_CONFIG.url}/standing-seam-metal-roof-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does standing seam metal roofing cost in Charlotte NC?"
+        directAnswer="Standing seam metal roofing in Charlotte NC ranges $9-$30 per sq ft installed depending on material, gauge, and finish. 26-gauge steel with SMP finish runs $9-$12/sq ft, 24-gauge steel with PVDF Kynar finish $11-$14/sq ft, aluminum $13-$17/sq ft (preferred for lakefront LKN salt-air immunity), zinc $19-$25/sq ft (modern architectural), copper $24-$30/sq ft (historic and luxury). 50+ year lifespan with PVDF Kynar 500 / Hylar 5000 30-40 yr finish warranty. Charlotte 30-square home totals: standard steel $11,000-$18,000, premium aluminum/zinc $19,000-$30,000, copper $36,000-$48,000. S-5! solar clamp compatible, Class 4 impact resistant for 10-30% NC insurance discount, 1/8 in per 10 ft thermal expansion handled by floating clip system."
+        items={[
+          '26-gauge steel SMP — $9-$12/sq ft installed; 30-yr finish warranty, budget tier',
+          '24-gauge steel PVDF Kynar 500/Hylar 5000 — $11-$14/sq ft; 30-40 yr finish warranty, industry standard',
+          'Aluminum — $13-$17/sq ft; salt-air immune (Lake Norman lakefront, LKN waterfront preferred)',
+          'Zinc — $19-$25/sq ft; modern architectural, develops natural patina, 60-100 yr lifespan',
+          'Copper — $24-$30/sq ft; historic restoration, luxury homes (Eastover, Foxcroft, Quail Hollow, Trump National)',
+          'PVDF Kynar 500 finish — fluoropolymer paint resists fade/chalk; 30-40 yr warranty',
+          'S-5! solar-clamp compatibility — non-penetrating photovoltaic mounting; preserves manufacturer warranty',
+          'Class 4 impact rated — 10-30% NC insurance discount, hail-belt protection',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/standing-seam-metal-roof-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -238,10 +280,16 @@ export default function StandingSeamMetalRoofCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Premium metal roofing that lasts 50+ years with superior energy efficiency
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in standing seam metal roof installation throughout Charlotte.
-              Experience the ultimate in durability, energy savings, and timeless beauty with a roof
-              that may be the last one you ever need.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs standing seam metal roofing across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Quail Hollow, Steele Creek, University City, and
+              the Lake Norman lakefront communities of Huntersville, Cornelius, Davidson, Mooresville,
+              Denver, and Sherrills Ford. We install 24-gauge and 26-gauge steel, salt-air-immune
+              aluminum (preferred for lakefront), modern zinc, and historic copper — all with PVDF
+              Kynar 500 / Hylar 5000 30-40 year finish warranties, S-5! solar-clamp compatibility,
+              Class 4 hail rating for 10-30% NC insurance discount, and floating clip system for
+              proper thermal expansion (1/8 in per 10 ft).
             </p>
 
             {/* CTA Buttons */}

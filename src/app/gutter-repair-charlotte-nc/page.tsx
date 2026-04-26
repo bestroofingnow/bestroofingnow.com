@@ -22,7 +22,16 @@ import {
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import YouTubeShort from '@/components/sections/YouTubeShort';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -262,6 +271,39 @@ export default function GutterRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/gutter-repair-charlotte-nc`}
+        pageName="Gutter Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Gutter Repair Charlotte NC | Same-Day Service | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/gutter-repair-charlotte-nc`}
+        description="Gutter repair in Charlotte NC. Seam re-seal, hanger re-spacing, downspout repair, miter and endcap, full storm-section replacement. ASTM C920 sealant standard, $150 minimum service fee, same-day availability for most jobs."
+        primaryImage={IMAGES.services.gutters}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Gutter Repair Charlotte NC', url: `${SITE_CONFIG.url}/gutter-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does gutter repair cost in Charlotte NC?"
+        directAnswer="Gutter repair in Charlotte NC ranges from $150 (minimum service fee) for a single-point seal up to $1,400 for a major storm-section rebuild. Typical repair pricing: seam or miter re-seal $150-$300, hanger re-spacing $200-$450, single downspout repair $175-$425, endcap re-seal $150-$250, full slope-section replacement $450-$1,400, fascia-rot bundled repair $400-$900 add-on. We use ASTM C920 sealant and pop-rivet + butyl tape on seams (not silicone — silicone fails on aluminum within 2-3 years). Repair-vs-replace crossover happens around 50% of new-install cost ($850-$1,400 for a typical 2,400 sq ft Charlotte home with 150-200 lf of gutter). Same-day or next-day service for most non-emergency jobs."
+        items={[
+          'Single seam or miter re-seal — $150-$300; ASTM C920 polyurethane sealant, not silicone',
+          'Hanger re-spacing — $200-$450; modern 18-24 in spacing vs legacy 30-36 in (failure source)',
+          'Downspout repair — $175-$425; clog clearing, bracket re-attach, elbow replacement',
+          'Endcap re-seal — $150-$250; pop-rivet + butyl tape installation',
+          'Full slope-section replacement (10-30 ft) — $450-$1,400; matched profile, color, gauge',
+          'Fascia rot bundled repair — $400-$900 add-on; treats #1 cause of repeated gutter failure',
+          'ASTM C920 sealant standard — polyurethane bonds aluminum; silicone fails 2-3 yr in heat',
+          'Repair-vs-replace crossover — $850-$1,400 (50% of new-install cost) for typical Charlotte home',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/gutter-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -287,10 +329,14 @@ export default function GutterRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Fast, affordable gutter services from Charlotte&apos;s trusted roofing experts
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now provides professional gutter repair, cleaning, and replacement services
-              throughout Charlotte NC. From fixing leaks to complete gutter system installation, our
-              experienced team delivers quality work with fast turnaround times.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now repairs, cleans, and replaces gutters across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University
+              City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville.
+              We use ASTM C920 polyurethane sealant (not silicone, which fails on aluminum), modern
+              18-24 in hanger spacing, and same-day service for most repairs. $150 minimum service
+              fee — bundle multiple gutter issues for the same trip for the most economical pricing.
             </p>
 
             {/* CTA Buttons */}

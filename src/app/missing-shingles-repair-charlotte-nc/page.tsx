@@ -20,7 +20,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -228,6 +237,39 @@ export default function MissingShinglesRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/missing-shingles-repair-charlotte-nc`}
+        pageName="Missing Shingles Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Missing Shingles Repair Charlotte NC | Same-Day Service | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/missing-shingles-repair-charlotte-nc`}
+        description="Missing shingles repair in Charlotte NC. Wind-blown shingle replacement, ridge cap reseat, color-matched repairs from GAF Timberline / CertainTeed Landmark / OC TruDefinition Duration libraries, sealed nail line, same-day or next-day service."
+        primaryImage={IMAGES.hero.hero3}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Missing Shingles Repair Charlotte NC', url: `${SITE_CONFIG.url}/missing-shingles-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="How much does missing shingles repair cost in Charlotte NC?"
+        directAnswer="Missing shingles repair in Charlotte NC ranges from $250 (1-3 single-tab replacements with sealed nail line) to $2,800 (10-30 shingles plus flashing or ridge-cap rebuild) depending on scope. Common pricing: 1-3 missing shingles $250-$450, 4-10 shingles + ridge cap reseat $450-$950, 10-30 shingles slope-section + flashing $950-$2,400, 30+ shingles or full slope $2,400-$6,500. Color matching from GAF Timberline HDZ, CertainTeed Landmark, Owens Corning TruDefinition Duration, and Tamko Heritage libraries. Same-day or next-day repair for most jobs. Often insurance-covered after wind/hail events — most homeowner policies include wind damage minus the wind/hail deductible."
+        items={[
+          '1-3 missing shingles + sealed nail line — $250-$450; same-day repair for spot wind damage',
+          '4-10 shingles + ridge cap reseat — $450-$950; common after squall lines or microbursts',
+          '10-30 shingles slope-section + flashing — $950-$2,400; matched color and exposure pattern',
+          '30+ shingles or full slope replacement — $2,400-$6,500; insurance-claim eligible',
+          'Color matching — GAF Timberline HDZ, CertainTeed Landmark, OC TruDefinition Duration, Tamko Heritage libraries',
+          'Sealed nail line — 4-nail per shingle minimum, dab of asphalt sealant for hand-seal in cold weather',
+          'Insurance-covered triggers — wind ≥45 MPH, any hail event, fallen tree limb damage; deductible applies',
+          'Free pre-repair assessment — photo documentation included for insurance claim baseline if needed',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/missing-shingles-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -253,10 +295,15 @@ export default function MissingShinglesRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Fast, professional shingle repair to protect your home from water damage
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Missing shingles leave your roof vulnerable to leaks and water damage. Best Roofing Now provides fast,
-  expert repairs for wind-damaged, storm-damaged, and age-worn shingles throughout Charlotte. Don't wait
-              until a small problem becomes a costly repair.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now repairs missing and wind-damaged shingles same-day or next-day across
+              Charlotte and the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza
+              Midwood, Myers Park, NoDa, South End, Eastover, Foxcroft, Cotswold, Beverly Woods,
+              Steele Creek, University City, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville. We color-match from GAF Timberline HDZ, CertainTeed
+              Landmark, OC TruDefinition Duration, and Tamko Heritage libraries with sealed
+              4-nail-per-shingle install, photo documentation for insurance baseline, and free
+              pre-repair assessment.
             </p>
 
             {/* CTA Buttons */}
