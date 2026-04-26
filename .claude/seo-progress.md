@@ -366,7 +366,20 @@ All 5 added to core sitemap with priority 0.7, monthly changefreq. Routes auto-h
 
 All 5 added to core sitemap with priority 0.7, monthly changefreq.
 
-**Tier 10 progress:** 15 of ~20 planned Q&A pages complete (5 batch 19 + 5 batch 20 + 5 batch 21).
+**Tier 10 batch 4 (batch 22):** 5 more Q&A pages on Class 4 ROI, brand selection, inspection cost, mold remediation, decking replacement.
+
+- [x] `is-class-4-impact-resistant-shingle-worth-it-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — Class 4 ROI analysis (yes — $1,500-$3,500 premium, 10-30% NC IBHS Fortified insurance discount, 5-7 yr payback, 25-45 yr post-payback savings, 150 MPH wind, hail-belt protection). 5 follow-up FAQs covering NC IBHS Fortified mechanics, brand comparison (GAF AS II, CT Landmark Premium, OC Duration Storm, Malarkey Vista), cost vs standard, retrofit feasibility, roof shape compatibility.
+- [x] `what-is-the-best-shingle-brand-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — brand-agnostic guide (no single best — installer credential matters more than brand; GAF/CT/OC perform comparably). 5 follow-up FAQs covering warranty comparison, humid climate algae considerations (CertainTeed StreakFighter 25-yr edge), GAF popularity #1, tier-2 brands (Tamko/IKO/Atlas/Malarkey), price-only decision warning.
+- [x] `how-much-does-a-roof-inspection-cost-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — inspection pricing breakdown (FREE for residential estimates, $200-$450 FHA/VA HAAG-credentialed certifications, $350-$900 commercial with infrared moisture survey). 5 follow-up FAQs covering free-vs-paid red flag, paid HAAG certification value, commercial pricing, drone inspection limits, inspection duration.
+- [x] `roof-leak-causing-mold-in-attic-charlotte-nc` (NEW, ~205 lines) — 2026-04-26 — 4-step mold response (stop leak first, document for insurance, hire licensed remediation contractor $2,500-$15K+, fix NC IRC §R806 ventilation). 5 follow-up FAQs covering insurance coverage rules, growth speed in Charlotte humidity (24-48 hr visible), DIY thresholds, mold-vs-mildew distinction, prevention plan.
+- [x] `how-do-i-know-if-i-need-new-decking-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — 6 decking damage signs (sagging, attic water stains, soft spots, daylight through deck, granule loss patterns, home age 30+), $80-$120 per sheet replacement cost, typical 0-3 sheets needed for under-25-year-old homes. 5 follow-up FAQs.
+
+All 5 added to core sitemap with priority 0.7, monthly changefreq.
+
+**Tier 10 progress:** 20 of ~20 planned Q&A pages complete. **Tier 10 status: COMPLETE** — all major Charlotte roofing search-intent Q&A topics now have dedicated landing pages with QAPageSchema + FeaturedSnippetListAnswerSchema for AI Overview / Featured Snippet eligibility.
+
+### Build verification (batch 21)
+Ran `npm run build` (Next.js production build) at start of batch 21 — exit code 0, all 1,300+ pages generated successfully including all 17 new pages from batches 17-20. No regression issues from the SEO/AEO sweep.
 
 ### Build verification (batch 21)
 Ran `npm run build` (Next.js production build) at start of batch 21 — exit code 0, all 1,300+ pages generated successfully including all 17 new pages from batches 17-20. No regression issues from the SEO/AEO sweep.
