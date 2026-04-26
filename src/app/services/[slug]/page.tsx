@@ -27,6 +27,7 @@ import {
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
+import { MoneyPagesLinkBlock } from '@/components/sections/MoneyPagesLinkBlock';
 import {
   ServiceSchema,
   BreadcrumbSchema,
@@ -34,6 +35,11 @@ import {
   WebPageSchema,
   HeroImageSchema,
   GallerySchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
@@ -819,6 +825,29 @@ export default async function ServicePage({ params }: PageProps) {
           { name: service.title, url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${service.title} Charlotte NC`}
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question={`What does ${service.title.toLowerCase()} cost in Charlotte NC?`}
+        directAnswer={`${service.description} Best Roofing Now provides ${service.title.toLowerCase()} across Charlotte and the surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, Steele Creek, University City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville. Free written estimates with line-item materials and labor breakdowns. Veteran-owned, BBB A+, GAF Master Elite (top 2% nationwide), CertainTeed SELECT ShingleMaster, and OC Platinum Preferred credentialed for full manufacturer warranty unlock and 30-50 year non-prorated transferable coverage.`}
+        items={[
+          `${service.title} pricing — typical 2026 Charlotte ranges by scope`,
+          `Free 48-hour on-site inspection with photo documentation`,
+          `Insurance claim handling for storm-driven damage (8 NC carriers)`,
+          `1-4 hour emergency response for active leaks (Mecklenburg / LKN / outer county zones)`,
+          `Best Roofing Now warranty stack — manufacturer + 10 yr workmanship`,
+          `NC IRC §R806 ventilation balance and Class 4 NC IBHS Fortified eligibility`,
+          `HOA architectural-review-board coordination for Charlotte communities`,
+          `Free written estimates with line-item materials and labor breakdowns`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
       <HeroImageSchema
         url={heroImage}
         caption={`${service.title} services in Charlotte NC - Best Roofing Now certified contractor`}
@@ -1424,6 +1453,13 @@ export default async function ServicePage({ params }: PageProps) {
         title="Charlotte NC Roofing Projects"
         subtitle="Browse recent completed projects by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/services/${slug}`}
+      />
+
+      <MoneyPagesLinkBlock
+        title="Other Charlotte Roofing Services & Cost Guides"
+        subtitle="Browse our most-requested services across Charlotte and Lake Norman."
+        excludeHrefs={[`/services/${slug}`]}
+        maxLinks={9}
       />
 
       {/* CTA */}

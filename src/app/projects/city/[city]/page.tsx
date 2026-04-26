@@ -9,6 +9,14 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectMap from '@/components/projects/ProjectMap';
 import { getProjectMarkersForCity } from '@/lib/project-data';
+import {
+  BreadcrumbSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 interface Project {
   pmiId: string;
@@ -267,6 +275,8 @@ export default async function CityProjectsPage({
     },
   };
 
+  const pageUrl = `${SITE_CONFIG.url}/projects/city/${city}`;
+
   return (
     <>
       <script
@@ -277,6 +287,31 @@ export default async function CityProjectsPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
       />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Projects', url: `${SITE_CONFIG.url}/projects` },
+          { name: displayCity, url: pageUrl },
+        ]}
+      />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`${displayCity} Roofing Projects`}
+        city={displayCity}
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city={displayCity} />
+      <WebPageSchema
+        name={`${displayCity} Roofing Projects | Best Roofing Now`}
+        url={pageUrl}
+        description={`${cityData.projects.length} completed roofing projects in ${displayCity} by Best Roofing Now. Project map, photos, materials selected, and customer testimonials from real installations.`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Projects', url: `${SITE_CONFIG.url}/projects` },
+          { name: displayCity, url: pageUrl },
+        ]}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Breadcrumbs */}
       <section className="bg-gray-50 py-4 border-b">

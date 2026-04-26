@@ -8,7 +8,17 @@ import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectGallery from '@/components/projects/ProjectGallery';
-import { BreadcrumbSchema, ProjectSchema, PlaceSchema, EnhancedSpeakableSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  ProjectSchema,
+  PlaceSchema,
+  EnhancedSpeakableSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 
 interface ProjectPhoto {
   id: string;
@@ -373,6 +383,20 @@ export default async function ProjectDetailPage({
         pageName={`${project.product || 'Roofing'} Project in ${project.city}, ${project.state} | Best Roofing Now`}
         cssSelectors={['h1', '.project-description', '.area-context']}
       />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/projects/${projectSlug}`}
+        pageName={`${project.product || 'Roofing'} Project ${project.city} ${project.state}`}
+        city={project.city}
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city={project.city} />
+      <WebPageSchema
+        name={`${project.product || 'Roofing'} Project in ${project.city}, ${project.state} | Best Roofing Now`}
+        url={`${SITE_CONFIG.url}/projects/${projectSlug}`}
+        description={`Real roofing project completed by Best Roofing Now in ${project.city}, ${project.state}. ${project.product || 'Roofing installation'} with photo documentation, materials selected, and customer story.`}
+        breadcrumb={breadcrumbs.map((b) => ({ name: b.name, url: b.url }))}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Breadcrumbs */}
       <section className="bg-gray-50 py-4 border-b">

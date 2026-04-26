@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Services } from '@/components/sections/Services';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
+import { MoneyPagesLinkBlock } from '@/components/sections/MoneyPagesLinkBlock';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import {
@@ -21,6 +22,10 @@ import {
   PrimaryLocationSchema,
   LocationAISearchBundle,
   SpeakableContentBlocks,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ, PeopleAlsoAsk } from '@/components/seo/PeopleAlsoAsk';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -826,6 +831,28 @@ export default async function LocationPage({ params }: PageProps) {
         state={location.state}
         pageUrl={pageUrl}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName={`Roofing in ${location.city}, ${location.state}`}
+        city={location.city}
+      />
+      <VoiceSearchActionSchema />
+      <FeaturedSnippetListAnswerSchema
+        question={`What roofing services does Best Roofing Now offer in ${location.city}, ${location.state}?`}
+        directAnswer={`Best Roofing Now serves ${location.city}, ${location.state} from our Charlotte headquarters with the full residential and commercial roofing service line. Free 48-hour on-site inspections; same-day to 2-day reroofs for typical 30-square homes; 24/7 emergency tarp dispatch in 1-4 hours; full insurance claim handling for State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie, and Farm Bureau. We are a GAF Master Elite (top 2% nationwide), CertainTeed SELECT ShingleMaster, and Owens Corning Platinum Preferred installer — unlocking 30-50 year non-prorated transferable warranties. NC IRC §R806 ventilation balance and Class 4 NC IBHS Fortified insurance discount eligibility on every install.`}
+        items={[
+          `Free 48-hour on-site roof inspection in ${location.city}`,
+          `Architectural shingle replacements ($5-9/sq ft) and Class 4 upgrades ($7-11/sq ft)`,
+          `Standing seam metal, slate, tile, and synthetic slate options`,
+          `24/7 emergency tarp dispatch in 1-4 hours by zone`,
+          `Insurance claim handling for 8 major NC carriers`,
+          `Commercial TPO, EPDM, modified bitumen with NDL warranties`,
+          `30-50 year non-prorated transferable manufacturer warranties`,
+          `Veteran-owned, BBB A+, GAF Master Elite, CertainTeed SELECT ShingleMaster`,
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Lake Norman Voice Search FAQ Schema - AEO Optimization */}
       {isLakeNorman && (
@@ -1945,6 +1972,13 @@ export default async function LocationPage({ params }: PageProps) {
       {/* Meet the Turner Family - Personal Touch */}
       {isCharlotte && <MeetTheFamily variant="full" />}
       {!isCharlotte && <MeetTheFamily variant="compact" />}
+
+      <MoneyPagesLinkBlock
+        title={`Top Roofing Services for ${location.city} Homeowners`}
+        subtitle={`The most-requested Charlotte-area roofing services and 2026 cost guides — all available in ${location.city}.`}
+        excludeHrefs={[`/locations/${city}`]}
+        maxLinks={9}
+      />
 
       {/* CTA */}
       <CTASection

@@ -31,6 +31,11 @@ import {
   LocationSchema,
   SpeakableSchema,
   ItemListSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FreeInspectionOfferSchema,
 } from '@/components/seo/SchemaMarkup';
 import { ProjectPhotoGallery, ProjectPhotoStrip } from '@/components/ui/ProjectPhotoGallery';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
@@ -517,6 +522,24 @@ export default async function CityStoryPage({
       />
       {cityData?.faqs && <FAQSchema faqs={cityData.faqs} />}
       {location && <LocationSchema location={location} />}
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/stories/${slug}`}
+        pageName={`${displayName} Roofing Stories`}
+        city={displayName}
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city={displayName} />
+      <WebPageSchema
+        name={`${displayName} ${state} Roofing Stories | Best Roofing Now`}
+        url={`${SITE_CONFIG.url}/stories/${slug}`}
+        description={`Real roofing projects completed by Best Roofing Now in ${displayName}, ${state}. Before and after photos, materials selected, customer testimonials, and project details from ${cityProjects.length} completed roofing jobs.`}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Stories', url: `${SITE_CONFIG.url}/stories` },
+          { name: displayName, url: `${SITE_CONFIG.url}/stories/${slug}` },
+        ]}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* AEO Schemas for Voice Search */}
       <SpeakableSchema />
