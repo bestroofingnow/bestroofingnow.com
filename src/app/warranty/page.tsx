@@ -4,7 +4,17 @@ import { Phone, Shield, CheckCircle, Award, FileText, Clock } from 'lucide-react
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { EstimateButton } from '@/components/estimate';
-import { BreadcrumbSchema, AllWarrantiesSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  AllWarrantiesSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
+import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
@@ -40,6 +50,39 @@ export default function WarrantyPage() {
         ]}
       />
       <AllWarrantiesSchema />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/warranty`}
+        pageName="Roofing Warranty Information"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Roofing Warranty Information | Best Roofing Now Charlotte NC"
+        url={`${SITE_CONFIG.url}/warranty`}
+        description="Roofing warranty guide for Charlotte NC homeowners. Manufacturer warranties (GAF Golden Pledge 50 yr, CertainTeed 5-Star Plus 50 yr, OC Platinum, Carlisle/JM/Firestone-Holcim/Mule-Hide commercial NDL 15-30 yr), workmanship guarantee, transferability rules."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Warranty Information', url: `${SITE_CONFIG.url}/warranty` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing warranties does Best Roofing Now Charlotte NC offer?"
+        directAnswer="Best Roofing Now offers 3 warranty layers on every roof in Charlotte NC: (1) manufacturer material warranty — covers shingle defects (GAF Timberline lifetime limited, CertainTeed Landmark 30-yr to lifetime, OC TruDefinition Duration lifetime); (2) top-tier extended warranty — UNLOCKED only when installed by a top-credentialed contractor (GAF Golden Pledge 50 yr non-prorated material + workmanship via Master Elite top 2%; CertainTeed 5-Star Plus 50 yr SureStart Plus + 25 yr StreakFighter algae via SELECT ShingleMaster top tier; OC Platinum Preferred Protection); (3) workmanship guarantee — Best Roofing Now's own 10-year workmanship guarantee covers leaks from install error, separate from material warranties. Commercial NDL warranties 15-30 years from Carlisle Sure-Seal, Johns Manville JM TPO/EPDM, Firestone-Holcim, and Mule-Hide. All top-tier warranties are transferable to next homeowner within 60 days of sale (registration required)."
+        items={[
+          'Manufacturer material — covers shingle defects; GAF/CertainTeed/OC base lifetime limited',
+          'GAF Golden Pledge — 50 yr non-prorated material + workmanship; UNLOCKED via Master Elite (top 2%)',
+          'CertainTeed 5-Star Plus — 50 yr SureStart Plus + 25 yr StreakFighter; UNLOCKED via SELECT ShingleMaster top tier',
+          'OC Platinum Preferred Protection — top-tier OC warranty unlock',
+          'Best Roofing Now workmanship — 10 yr guarantee covers install error leaks separate from material',
+          'Commercial NDL — Carlisle Sure-Seal, JM TPO/EPDM, Firestone-Holcim, Mule-Hide 15-30 yr',
+          'Transferability — top-tier warranties transferable to next homeowner within 60 days of sale',
+          'Required for warranty validity — NC IRC §R806 ventilation balance, ice-and-water shield, drip edge',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/warranty`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
@@ -55,9 +98,14 @@ export default function WarrantyPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Roofing Warranty Information
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              A quality roof is a major investment. Understanding your warranty
-              coverage helps protect that investment for decades to come.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              A quality roof is a major investment. Best Roofing Now's 3-layer warranty stack —
+              manufacturer material, top-tier extended (GAF Golden Pledge 50 yr / CertainTeed
+              5-Star Plus 50 yr / OC Platinum), and our 10-year workmanship guarantee — protects
+              your investment across Charlotte and the surrounding communities of Ballantyne,
+              SouthPark, Steele Creek, University City, and the Lake Norman towns of Huntersville,
+              Cornelius, Davidson, and Mooresville. All top-tier warranties are transferable to the
+              next homeowner within 60 days of sale.
             </p>
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}

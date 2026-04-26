@@ -3,7 +3,17 @@ import Link from 'next/link';
 import { MapPin, Calendar, Camera, ArrowRight, Home, Star } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { fetchAllProjects, formatProjectForDisplay, getProjectStatsByCity } from '@/lib/pmi-api';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
+import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Roofing Stories | Real Projects from Charlotte Neighborhoods',
@@ -70,6 +80,39 @@ export default async function StoriesPage() {
         ]}
       />
       <FAQSchema faqs={STORY_FAQS} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/stories`}
+        pageName="Charlotte Roofing Stories"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Charlotte Roofing Stories | Real Projects | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/stories`}
+        description="Real roofing projects from Charlotte neighborhoods. Before & after photos, materials selected, timelines, and homeowner stories from 2,000+ completed Charlotte roofs across Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, and Lake Norman communities."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Stories', url: `${SITE_CONFIG.url}/stories` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What kind of roofing projects has Best Roofing Now completed in Charlotte NC?"
+        directAnswer="Best Roofing Now has completed 2,000+ roofing projects across Charlotte and surrounding areas, organized into 8 project categories with photo documentation: (1) full architectural shingle replacements (the most common — 60% of projects); (2) Class 4 impact-resistant upgrades for hail-belt protection and 10-30% NC insurance discount; (3) designer/luxury shingle installs (GAF Grand Sequoia, CertainTeed Presidential, OC Berkshire) on Eastover/Foxcroft/Quail Hollow homes; (4) standing-seam metal roofs (copper, zinc, PVDF Kynar steel); (5) natural slate restoration on premier estates; (6) commercial TPO/EPDM/modified bitumen reroofs on warehouses, retail, restaurants; (7) emergency tarp + storm restoration after Florence 2018, Idalia 2023, Helene 2024; (8) historic cedar shake and copper restoration in Elizabeth, Dilworth, Plaza Midwood, Myers Park."
+        items={[
+          'Full architectural shingle replacements — 60% of projects; standard Charlotte residential reroof',
+          'Class 4 impact-resistant upgrades — hail-belt protection; 10-30% NC insurance discount',
+          'Designer/luxury shingle installs — Eastover, Foxcroft, Quail Hollow, Myers Park estate homes',
+          'Standing-seam metal roofs — copper, zinc, PVDF Kynar steel; lakefront LKN salt-air aluminum',
+          'Natural slate restoration — premier estates with engineer-stamped structural drawings',
+          'Commercial TPO/EPDM/modified bitumen — warehouses, retail, restaurants on I-77/I-85/I-485 corridors',
+          'Emergency tarp + storm restoration — Florence 2018, Idalia 2023, Helene 2024 events',
+          'Historic restoration — cedar shake, copper, slate in Elizabeth, Dilworth, Plaza Midwood, Myers Park',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/stories`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-16 md:py-24">
@@ -78,10 +121,13 @@ export default async function StoriesPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Roofing Stories from Your Neighborhood
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Real projects. Real homes. Real results. Explore our completed roofing
-              work across Charlotte and see the quality craftsmanship we bring to
-              every project.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Real projects. Real homes. Real results. Best Roofing Now has completed 2,000+
+              roofing projects across Charlotte and the surrounding communities of Ballantyne,
+              SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa, Eastover, Foxcroft, Steele
+              Creek, University City, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville — from full architectural reroofs to slate restoration
+              on premier estates and emergency tarp dispatches after Florence, Idalia, and Helene.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4">

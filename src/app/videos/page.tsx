@@ -3,7 +3,16 @@ import Link from 'next/link';
 import { Play, Youtube, ExternalLink, Video, Film } from 'lucide-react';
 import { fetchChannelVideos, YouTubeVideo, FALLBACK_VIDEOS } from '@/lib/youtube-api';
 import { YouTubeVideoCard, YouTubeShortCard } from '@/components/ui/YouTubeVideoCard';
-import { BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import { Button } from '@/components/ui/Button';
@@ -89,6 +98,29 @@ export default async function VideosPage() {
         breadcrumb={breadcrumbItems}
       />
       <FAQSchema faqs={videoFaqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/videos`}
+        pageName="Roofing Videos & Tips"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="What roofing topics does Best Roofing Now cover in YouTube videos?"
+        directAnswer="Best Roofing Now's YouTube channel covers 8 roofing topic areas relevant to Charlotte NC homeowners: (1) DIY roof inspection and pre-storm prep walkthroughs; (2) signs your roof needs replacement vs repair; (3) shingle brand comparisons (GAF Timberline HDZ vs CertainTeed Landmark vs OC Duration); (4) ice dam prevention for north Mecklenburg / Lake Norman homes; (5) hail damage identification and insurance claim filing; (6) attic ventilation diagnostics per NC IRC §R806; (7) installation process documentation (tear-off through magnetic nail sweep cleanup); (8) before-and-after Charlotte project showcases from Ballantyne, SouthPark, Dilworth, Plaza Midwood, and Lake Norman. Subscribe for new uploads weekly during roofing season."
+        items={[
+          'DIY roof inspection — pre-storm prep walkthroughs for May-October Charlotte storm season',
+          'Signs you need a new roof — granule loss, lifted seams, multi-zone leaks, age 20+ yr',
+          'Shingle brand comparisons — GAF vs CertainTeed vs OC; what matters and what doesn\'t',
+          'Ice dam prevention — for shaded north Mecklenburg / Lake Norman homes after 2002/2014/2026 events',
+          'Hail damage identification — chalk-circle test square method, Xactimate-compatible documentation',
+          'Attic ventilation diagnostics — NC IRC §R806 1:150/1:300 NFVA balance verification',
+          'Install process documentation — full tear-off through cleanup, what to expect day-of',
+          'Before-and-after project showcases — Ballantyne, SouthPark, Dilworth, Plaza Midwood, LKN',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/videos`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24">
@@ -108,10 +140,12 @@ export default async function VideosPage() {
               Roofing Videos & Tips
             </h1>
 
-            <p className="text-xl text-white/90 mb-8">
-              Watch educational roofing content, project showcases, and expert tips from
-              Charlotte&apos;s top-rated roofing company. Learn how to maintain your roof,
-  identify damage, and make informed decisions about repairs and replacements.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Watch educational roofing content, project showcases, and expert tips from Best
+              Roofing Now — Charlotte's GAF Master Elite (top 2% nationwide), CertainTeed SELECT
+              ShingleMaster, and BBB A+ rated roofing company. New uploads weekly during roofing
+              season cover DIY inspection, hail damage identification, attic ventilation diagnostics,
+              shingle brand comparisons, and before-and-after Charlotte project showcases.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

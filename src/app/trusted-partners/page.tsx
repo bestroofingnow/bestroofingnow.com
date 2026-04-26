@@ -3,7 +3,17 @@ import Link from 'next/link';
 import { Globe, Thermometer, Droplets, Zap, Trees, Paintbrush, HardHat, Shield, Home, Search, ExternalLink, CheckCircle, Users, Award } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
-import { BreadcrumbSchema, PartnerNetworkSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  PartnerNetworkSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
+import { IMAGES } from '@/lib/images';
 import { CTASection } from '@/components/sections/CTASection';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { PARTNERS, PARTNER_CATEGORIES, getNetworkRoofers, getLocalPartners, type Partner, type PartnerType } from '@/lib/partners';
@@ -89,6 +99,39 @@ export default function TrustedPartnersPage() {
         ]}
       />
       <PartnerNetworkSchema partners={allPartnersForSchema} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/trusted-partners`}
+        pageName="Trusted Partners & Roofing Network"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Trusted Partners & Roofing Network | Best Roofing Now Charlotte NC"
+        url={`${SITE_CONFIG.url}/trusted-partners`}
+        description="Best Roofing Now's trusted partner network: nationwide roofing contractors for out-of-area referrals plus top-rated Charlotte home service professionals (HVAC, plumbing, electrical, landscaping, painting, solar, pest control, gutter cleaning) we recommend after 2,000+ Charlotte projects."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Trusted Partners', url: `${SITE_CONFIG.url}/trusted-partners` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="Who are Best Roofing Now's trusted home-service partners in Charlotte NC?"
+        directAnswer="Best Roofing Now maintains a curated trusted-partner network for Charlotte homeowners across 8 home service categories — these are companies we've worked alongside on 2,000+ Charlotte projects and recommend without referral fee: (1) HVAC contractors for attic ventilation/insulation coordination; (2) plumbers for plumbing-stack flashing leaks; (3) electricians for solar attic fan and skylight wiring; (4) landscapers for tree-near-roof trimming and gutter-discharge drainage; (5) painters for fascia/soffit/exterior; (6) solar installers for S-5! clamp-mount systems on standing-seam metal; (7) pest control for carpenter bee/woodpecker/squirrel exclusion at soffit; (8) gutter cleaning services. Plus a nationwide network of trusted roofing contractors for out-of-area referrals when Charlotte homeowners need work outside our service area."
+        items={[
+          'HVAC contractors — attic ventilation/insulation coordination, ridge vent + soffit balance',
+          'Plumbers — plumbing-stack flashing leaks, vent stack reseat',
+          'Electricians — solar attic fan wiring, skylight electrical, ridge-mount lightning protection',
+          'Landscapers — tree trim within 10 ft of roof, gutter-discharge drainage routing',
+          'Painters — fascia, soffit, trim, exterior color refresh after a reroof',
+          'Solar installers — S-5! non-penetrating clamp-mount on standing-seam metal preserves warranty',
+          'Pest control — carpenter bee, woodpecker, squirrel exclusion at soffit and rafter tail',
+          'Gutter cleaning services — twice-yearly maintenance for canopy-heavy Charlotte neighborhoods',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/trusted-partners`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">
@@ -104,11 +147,15 @@ export default function TrustedPartnersPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Trusted Partners & Roofing Network
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              At Best Roofing Now, we believe in building strong relationships
-              with quality professionals. Whether you need a trusted roofer in
-              another state or a reliable home service company here in Charlotte,
-  we have personally vetted these partners.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Best Roofing Now maintains a curated trusted-partner network across 8 home service
+              categories — companies we've worked alongside on 2,000+ Charlotte projects and
+              recommend without referral fee. Whether you need an HVAC contractor for ridge vent
+              coordination, an electrician for skylight wiring, a tree service for storm-prep
+              trimming, or a trusted out-of-area roofer in another state, we've personally vetted
+              every partner. Charlotte service area includes Ballantyne, SouthPark, Steele Creek,
+              University City, and the Lake Norman towns of Huntersville, Cornelius, Davidson, and
+              Mooresville.
             </p>
           </div>
         </div>

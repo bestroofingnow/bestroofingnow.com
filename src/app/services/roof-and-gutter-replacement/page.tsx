@@ -5,7 +5,17 @@ import { Phone, CheckCircle, ArrowRight, Home, Droplets, DollarSign, Shield, Clo
 import { Button } from '@/components/ui/Button';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
-import { ServiceSchema, BreadcrumbSchema, FAQSchema, WebPageSchema } from '@/components/seo/SchemaMarkup';
+import {
+  ServiceSchema,
+  BreadcrumbSchema,
+  FAQSchema,
+  WebPageSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -139,6 +149,29 @@ export default function RoofAndGutterPage() {
           { name: 'Roof & Gutter Replacement', url: pageUrl },
         ]}
       />
+      <AISearchOptimizationBundle
+        pageUrl={pageUrl}
+        pageName="Roof & Gutter Replacement Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <FeaturedSnippetListAnswerSchema
+        question="Why bundle a roof and gutter replacement in Charlotte NC?"
+        directAnswer={'Bundling roof and gutter replacement in Charlotte NC saves 15-30% versus separate scopes for 6 reasons: (1) one trip / one crew / one set of tarps and dump fees instead of two; (2) integrated drip-edge install — drip edge tucks under starter shingle and over gutter back, so doing both at once gets the seal right (sequencing wrong needs rework); (3) gutter hangers can be replaced when fascia is exposed during drip-edge work, eliminating leak risks at the hanger penetration; (4) NC IRC §R806 ventilation can be balanced with new ridge vent and proper soffit intake at the same time; (5) one warranty packet covers shingle + gutter + workmanship; (6) financing is simpler — bundled $15,000-$22,000 typical Charlotte 30-square home with 6-inch K-style gutters. We commonly add fascia/soffit and ridge vent during the same trip for further savings.'}
+        items={[
+          'One trip / one crew / one tarp setup — vs two for separate scopes; saves $1,500-$3,500',
+          'Integrated drip edge — tucks under starter shingle and over gutter back; correct only if both done together',
+          'Gutter hanger replacement during drip-edge work — eliminates leak risks at hanger penetration',
+          'NC IRC §R806 ventilation balance — new ridge vent + soffit intake at the same time',
+          'Single warranty packet — shingle + gutter + workmanship covered together',
+          'Bundled financing — $15,000-$22,000 typical Charlotte 30-sq home with 6 in K-style',
+          'Add fascia/soffit during same trip — further 15-30% savings on the bundle',
+          'Recommended every 25-30 years — most Charlotte original gutters fail at the same age as original shingles',
+        ]}
+        pageUrl={pageUrl}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">
@@ -172,8 +205,14 @@ export default function RoofAndGutterPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Roof and Gutter Replacement in Charlotte, NC
             </h1>
-            <p className="text-xl text-white/90 mb-8">
-              Replace your roof and gutters together with one trusted contractor. Save money, time, and hassle with our complete exterior protection packages.
+            <p className="speakable-intro text-xl text-white/90 mb-8">
+              Best Roofing Now bundles roof and gutter replacement across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Steele
+              Creek, University City, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville. Bundle savings 15-30% vs separate scopes — one crew, one
+              tarp setup, integrated drip-edge install, gutter hanger replacement during fascia
+              exposure, NC IRC §R806 ventilation balance with new ridge vent and soffit intake,
+              and a single NDL warranty packet covering shingle + gutter + workmanship.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <EstimateButton
