@@ -34,7 +34,16 @@ import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -521,6 +530,39 @@ export default function NewRoofInstallationCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`}
+        pageName="New Roof Installation Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="New Roof Installation Charlotte NC | Master Elite Installer | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`}
+        description="New roof installation in Charlotte NC. Architectural shingles, Class 4 impact-resistant, designer/luxury shingles, standing seam metal, slate, tile. Same-day to 2-day install with full tear-off, ice-and-water shield, synthetic underlayment, ridge vent, NDL warranty packet."
+        primaryImage={IMAGES.hero.hero5}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'New Roof Installation Charlotte NC', url: `${SITE_CONFIG.url}/new-roof-installation-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does a new roof installation in Charlotte NC involve?"
+        directAnswer="A new roof installation in Charlotte NC follows 8 phases for a typical 30-square home over 1-2 days: (1) protect landscaping and driveway with tarps and plywood; (2) full tear-off of existing shingles and inspection of decking; (3) replace any rotted decking ($80-$120/sheet); (4) install ice-and-water shield at eaves (3-6 ft from edge), valleys, and around penetrations; (5) install synthetic underlayment (Tyvek/Titanium PSU30, GAF Tiger Paw, OC ProArmor) across the field; (6) install drip edge, starter strip, and shingles with 4-nail pattern (6-nail for high-wind areas) — typically 30-50 square feet/hour per crew member; (7) install NC IRC §R806 balanced ventilation with ridge vent and verified soffit intake; (8) clean up with magnetic nail sweep, walk through with homeowner, file 30-50 yr non-prorated warranty packet (GAF Golden Pledge, CertainTeed 5-Star Plus, OC Platinum). Charlotte 30-square home totals: architectural $13,000-$18,000; Class 4 $15,500-$20,000; designer $19,000-$26,000; metal $27,000-$48,000."
+        items={[
+          'Phase 1 — landscaping and driveway protection with tarps and plywood',
+          'Phase 2 — full tear-off and decking inspection (look for rot, soft spots, fastener pull-out)',
+          'Phase 3 — decking replacement at $80-$120/sheet for rotted areas',
+          'Phase 4 — ice-and-water shield at eaves (3-6 ft), valleys, around penetrations',
+          'Phase 5 — synthetic underlayment field-out (Tyvek, GAF Tiger Paw, OC ProArmor)',
+          'Phase 6 — drip edge, starter strip, shingle install with 4-6 nail pattern',
+          'Phase 7 — NC IRC §R806 ventilation: ridge vent + verified soffit intake balance',
+          'Phase 8 — magnetic nail sweep cleanup, homeowner walkthrough, NDL warranty packet',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -546,11 +588,16 @@ export default function NewRoofInstallationCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Complete new roof installation with {SITE_CONFIG.roofsInstalled}+ roofs completed
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now specializes in professional new roof installation throughout Charlotte NC.
-              Whether you are building a new home, replacing an aging roof, or need a complete tear-off
-              after storm damage, our certified installers deliver exceptional quality with premium
-              materials and industry-leading warranties.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs new roofs across Charlotte and the surrounding communities
+              of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park, NoDa, South End,
+              Eastover, Foxcroft, Cotswold, Beverly Woods, Steele Creek, University City, and the
+              Lake Norman towns of Huntersville, Cornelius, Davidson, and Mooresville. We do
+              architectural shingles, Class 4 impact-resistant, designer/luxury (GAF Grand Sequoia,
+              CertainTeed Presidential, OC Berkshire), standing-seam metal, slate, and tile —
+              typically completing a 30-square home in 1-2 days with full tear-off, ice-and-water
+              shield, synthetic underlayment, balanced NC IRC §R806 ventilation, and 30-50 year
+              non-prorated transferable NDL warranties.
             </p>
 
             {/* CTA Buttons */}

@@ -23,7 +23,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -296,6 +305,39 @@ export default function AffordableRoofingCharlottePage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`}
+        pageName="Affordable Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Affordable Roofing Charlotte NC | Honest Pricing | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`}
+        description="Affordable roofing in Charlotte NC. 0% APR financing through PowerPay (24-120 month terms), insurance-claim-only options, repair-vs-replace honest assessment, military and veteran discount, transparent pricing — quality work that fits your budget without cutting corners."
+        primaryImage={IMAGES.hero.hero1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Affordable Roofing Charlotte NC', url: `${SITE_CONFIG.url}/affordable-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="How can Charlotte NC homeowners get affordable roofing without sacrificing quality?"
+        directAnswer="Affordable roofing in Charlotte NC is achievable through 8 proven strategies that don't compromise quality: (1) start with an honest free inspection — sometimes a $400-$1,800 repair is the right call instead of full replacement; (2) get an insurance claim assessment if any storm damage exists (most homeowner policies cover wind, hail, fallen tree); (3) finance through PowerPay 0% APR for 12-24 months or extended 60-120 month terms (typical $200-$400/month for a $13,000 reroof); (4) bundle multiple services (roof + gutters + fascia) for 15-30% savings; (5) choose 30-yr architectural shingles ($5-$8/sq ft) instead of 50-yr designer ($9-$14/sq ft) when budget is tight; (6) ask about military/veteran discount (5-10%); (7) ask about senior discount; (8) install Class 4 impact-resistant shingles for ongoing 10-30% NC insurance discount. Avoid the false economy of choosing the absolute cheapest contractor — workmanship matters more than material on roof longevity."
+        items={[
+          'Free honest inspection — sometimes a $400-$1,800 repair beats full replacement',
+          'Insurance claim assessment — most policies cover wind, hail, fallen tree damage',
+          'PowerPay 0% APR financing — 12-24 month no-interest, 60-120 month extended terms',
+          'Multi-service bundling — roof + gutters + fascia + drip edge saves 15-30%',
+          'Architectural shingles 30-yr ($5-$8/sq ft) — versus designer 50-yr ($9-$14/sq ft) when budget tight',
+          'Military / veteran discount — 5-10% with verified ID',
+          'Senior discount — typically 5% for 65+',
+          'Class 4 impact-resistant shingles — 10-30% NC insurance discount, hail-belt protection',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
       <AffordableRoofingSchema />
 
       {/* Hero Section */}
@@ -321,6 +363,17 @@ export default function AffordableRoofingCharlottePage() {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Quality roofing that fits your budget - not the cheapest, but the best value.
+            </p>
+            <p className="speakable-intro text-lg text-white/80 mb-6 max-w-2xl">
+              Best Roofing Now offers genuinely affordable roofing across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Steele
+              Creek, University City, and the Lake Norman towns of Huntersville, Cornelius,
+              Davidson, and Mooresville — through honest inspections (sometimes a $400-$1,800 repair
+              beats full replacement), insurance claim assistance, PowerPay 0% APR financing
+              (12-24 month no-interest or 60-120 month extended), multi-service bundle savings of
+              15-30%, military/veteran/senior discounts, and Class 4 upgrades that pay back through
+              10-30% NC insurance discounts. Quality work that fits your budget without cutting
+              corners.
             </p>
 
             {/* Value Statement Box */}

@@ -27,7 +27,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -300,6 +309,39 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/veteran-owned-roofing-company-charlotte-nc`}
+        pageName="Veteran-Owned Roofing Company Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Veteran-Owned Roofing Company Charlotte NC | Mission-Driven | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/veteran-owned-roofing-company-charlotte-nc`}
+        description="Veteran-owned roofing company in Charlotte NC. Active-duty, retiree, and dependent military discount, VA loan documentation support, FHA/VA roof certification, BBB A+ rated, GAF Master Elite, CertainTeed SELECT ShingleMaster credentialed."
+        primaryImage={IMAGES.team.jamesAndFred}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Veteran-Owned Roofing Company Charlotte NC', url: `${SITE_CONFIG.url}/veteran-owned-roofing-company-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="Why choose a veteran-owned roofing company in Charlotte NC?"
+        directAnswer="A veteran-owned roofing company in Charlotte NC offers 8 distinct advantages: (1) mission-driven discipline and accountability honed in military service; (2) detail-oriented documentation and after-action review carried into roof work; (3) chain-of-command coordination useful in multi-crew large jobs; (4) familiarity with VA loan and FHA/VA refinance roof certification requirements; (5) active-duty, retiree, and military dependent discount (typically 5-10%); (6) genuine community connection — Charlotte has a large veteran population (Fort Bragg/Pope nearby, Charlotte VA Health Care System, multiple active VFW and American Legion posts); (7) supports veteran employment within the company; (8) understanding of military relocation timelines and PCS deadlines. Best Roofing Now is veteran-owned and operated, BBB A+ rated, GAF Master Elite, CertainTeed SELECT ShingleMaster credentialed."
+        items={[
+          'Mission-driven discipline — military training translates directly to roof project execution',
+          'Detail-oriented documentation — after-action review ensures every photo, measurement, and warranty filed correctly',
+          'Chain-of-command coordination — useful for multi-crew large reroofs and commercial projects',
+          'VA loan / FHA-VA refinance roof certification — 2/3/5-year periods with HAAG-credentialed inspector',
+          'Military discount — 5-10% for active duty, retirees, dependents (verified ID required)',
+          'Charlotte veteran community — Fort Bragg/Pope, Charlotte VA Health, VFW posts, American Legion',
+          'Veteran employment support — we hire veterans for crew, project management, and office roles',
+          'PCS timeline understanding — we accommodate military relocation and pre-sale deadlines',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/veteran-owned-roofing-company-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -325,10 +367,15 @@ export default function VeteranOwnedRoofingCompanyCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Built on Military Values. Committed to Excellence.
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now was founded by Fred Turner, a proud military veteran, and his son James.
-              We brought the values of integrity, discipline, and service learned in uniform to protect
-              Charlotte homes. When you work with us, you work with a family that puts honor above profit.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now was founded by Fred Turner, a proud military veteran, and his son
+              James. We brought military values of integrity, discipline, and service to roofing
+              across Charlotte and the surrounding communities of Ballantyne, SouthPark, Dilworth,
+              Plaza Midwood, Myers Park, NoDa, Steele Creek, University City, and the Lake Norman
+              towns of Huntersville, Cornelius, Davidson, and Mooresville. We offer a 5-10% military
+              discount for active duty, retirees, and dependents (verified ID), VA loan and FHA/VA
+              refinance roof certifications, and PCS-timeline-aware scheduling. BBB A+, GAF Master
+              Elite (top 2%), CertainTeed SELECT ShingleMaster credentialed.
             </p>
 
             {/* CTA Buttons */}
