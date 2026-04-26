@@ -356,6 +356,21 @@ All 5 added to core sitemap with priority 0.7, monthly changefreq. Routes auto-h
 
 **Tier 10 progress:** 10 of ~20 planned Q&A pages complete (5 batch 19 + 5 batch 20). Next 10 candidates: financing options, contractor selection deeper, ventilation requirements, NC-specific code questions, commercial-roofing Q&A, Lake Norman-specific Q&A.
 
+**Tier 10 batch 3 (batch 21):** 5 more high-traffic Q&A pages (gutter maintenance, solar coordination, leak diagnostics, metal roofing, gutter+roof bundle).
+
+- [x] `how-often-should-i-clean-gutters-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — gutter cleaning frequency (2-3x/year minimum, spring + fall + optional summer for canopy areas), $125-$300/cleaning, gutter guard alternative, $5-25K foundation damage cost. 5 follow-up FAQs.
+- [x] `can-i-put-solar-panels-on-my-new-roof-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — solar + roof timing (roof first if 10+ yr old), S-5! clamp-mount on metal, flashed mounts on asphalt, integrated solar shingles (GAF DecoTech, CertainTeed Apollo II), 30% federal tax credit through 2032. 5 follow-up FAQs.
+- [x] `why-does-my-roof-leak-when-it-rains-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — 8 ranked Charlotte leak causes (pipe boot #1, chimney flashing, lifted shingles, clogged gutters, ice dam, valley flashing, skylight, decking rot), water travels 3-15 ft along rafters, infrared moisture mapping methodology. 5 follow-up FAQs.
+- [x] `are-metal-roofs-good-for-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — metal roof analysis (yes — 50+ yr lifespan, Class 4 hail, 150+ MPH wind, 75-85% resale ROI, 10-30% NC insurance discount), per-material pricing $9-30/sq ft, aluminum lakefront LKN preference. 5 follow-up FAQs covering noise myth, lightning safety myth, lakefront LKN aluminum, cost vs asphalt 2-3x, HOA approval.
+- [x] `do-i-need-new-gutters-with-new-roof-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — bundle decision guide (replace WITH roof when 15+ yr old, upgrade to 6-inch + 3x4 downspouts, drip-edge integration sequence), 15-30% bundle savings, single Xactimate insurance claim. 5 follow-up FAQs.
+
+All 5 added to core sitemap with priority 0.7, monthly changefreq.
+
+**Tier 10 progress:** 15 of ~20 planned Q&A pages complete (5 batch 19 + 5 batch 20 + 5 batch 21).
+
+### Build verification (batch 21)
+Ran `npm run build` (Next.js production build) at start of batch 21 — exit code 0, all 1,300+ pages generated successfully including all 17 new pages from batches 17-20. No regression issues from the SEO/AEO sweep.
+
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19
 - [x] `roof-repair-charlotte-nc` (770) — high intent — done 2026-04-19

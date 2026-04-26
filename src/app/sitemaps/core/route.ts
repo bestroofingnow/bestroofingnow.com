@@ -269,6 +269,11 @@ export async function GET() {
     { url: `${BASE_URL}/signs-of-hail-damage-on-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-to-prepare-for-roof-replacement-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/does-a-new-roof-increase-home-value-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-often-should-i-clean-gutters-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/can-i-put-solar-panels-on-my-new-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/why-does-my-roof-leak-when-it-rains-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/are-metal-roofs-good-for-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/do-i-need-new-gutters-with-new-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
     // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
     // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written
