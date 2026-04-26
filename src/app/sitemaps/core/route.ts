@@ -529,6 +529,13 @@ export async function GET() {
     { url: `${BASE_URL}/when-should-i-replace-my-gutters-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/what-is-a-drip-edge-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-do-i-prevent-ice-dams-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+
+    // Batch 29 Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/what-is-roof-underlayment-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-find-a-roof-leak-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-a-roof-boot-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-keep-birds-off-my-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-a-chimney-cricket-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
   ];
 
   const lastmod = new Date().toISOString();

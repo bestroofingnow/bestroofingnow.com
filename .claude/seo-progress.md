@@ -449,3 +449,13 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
 - Sitemap: 5 entries added to core/route.ts (Batch 28 Q&A pages section)
 - Type-check: clean
+
+### Batch 29 (2026-04-26): Q&A landing pages — underlayment, leaks, boots, birds, chimney crickets
+- ✅ what-is-roof-underlayment-charlotte-nc (NEW Q&A page) — 3 types (felt $0.10-0.20/ft NOT recommended, synthetic $0.30-0.60/ft 30-50 yr BEST, ice-and-water shield $0.80-1.50/ft REQUIRED in valleys per NC IRC §R905.1.1), 60-70% of leaks originate from underlayment failures
+- ✅ how-do-i-find-a-roof-leak-charlotte-nc (NEW Q&A page) — 6-step diagnostic (interior evidence, uphill offset 2-15 ft, attic trace, exterior 8 sources, hose test, photos), pipe boots = 60% of all Charlotte leaks, infrared imaging diagnoses in 30-60 min
+- ✅ what-is-a-roof-boot-charlotte-nc (NEW Q&A page) — typical home has 3-8 boots, #1 leak source 60% of Charlotte leaks, 3 types (rubber 8-12 yr, lead 50+ yr PREMIUM, ultimate flashing 20-30 yr), Charlotte UV degrades 30-50% faster than national average
+- ✅ how-do-i-keep-birds-off-my-roof-charlotte-nc (NEW Q&A page) — 5-tier deterrent (spikes $8-15/ft, netting $5-12/ft, ultrasonic $30-200, gel $50-150, gap sealing), Charlotte species (pigeons, starlings, woodpeckers, crows), Migratory Bird Treaty Act compliance for woodpeckers
+- ✅ what-is-a-chimney-cricket-charlotte-nc (NEW Q&A page) — NC IRC §R1003.20 REQUIRES on chimneys >30 inches, 3 types (framed $400-1,200, sheet metal $600-1,800, copper $1,500-3,500), most pre-2010 Charlotte homes lack crickets, chimney is #2 most common leak source
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 29 Q&A pages section)
+- Type-check: clean
