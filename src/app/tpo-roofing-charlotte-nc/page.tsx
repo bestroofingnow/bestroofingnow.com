@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -216,6 +225,39 @@ export default function TPORoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/tpo-roofing-charlotte-nc`}
+        pageName="TPO Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="TPO Roofing Charlotte NC | Hot-Air Welded Single-Ply | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/tpo-roofing-charlotte-nc`}
+        description="TPO membrane roofing in Charlotte NC. 60-mil and 80-mil reinforced TPO from Carlisle Sure-Weld, Johns Manville JM TPO, GAF EverGuard, and Firestone-Holcim UltraPly. Hot-air welded seams, NDL warranties, Energy Star cool-roof rebates."
+        primaryImage={IMAGES.commercial.flatRoof}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'TPO Roofing Charlotte NC', url: `${SITE_CONFIG.url}/tpo-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does TPO roofing cost in Charlotte NC?"
+        directAnswer="TPO (thermoplastic polyolefin) roofing in Charlotte NC runs $5-$12 per sq ft installed depending on thickness, attachment, insulation R-value, and warranty tier. 60-mil mechanically attached starts at $5-$8/sq ft; 80-mil fully adhered with R-30 polyiso runs $9-$12/sq ft. Hot-air welded seams form a monolithic membrane stronger than the field. NDL (no-dollar-limit) warranties are available 15-30 years from Carlisle Sure-Weld, Johns Manville JM TPO, GAF EverGuard, and Firestone-Holcim UltraPly when installed by authorized contractors. Energy Star cool-roof TPO qualifies for Duke Energy commercial rebates and reduces summer cooling load 10-30%."
+        items={[
+          'TPO 60-mil mechanically attached — $5-$8/sq ft installed; standard for warehouses and big-box',
+          'TPO 60-mil fully adhered — $7-$10/sq ft installed; quieter, no fasteners through field',
+          'TPO 80-mil fully adhered with R-30 — $9-$12/sq ft installed; commercial premium with energy code maxed',
+          'Carlisle Sure-Weld — 20-30 yr NDL via authorized installer; industry-leading wind warranty',
+          'Johns Manville JM TPO — 20-yr NDL; available with PVKEE topcoat for chemical-resistant applications',
+          'GAF EverGuard — 20-30 yr NDL; full GAF system with Energy Guard ISO insulation',
+          'Firestone-Holcim UltraPly — 20-25 yr NDL; OctaGuard WX wind-uplift performance',
+          'Energy Star cool-roof — Charlotte buildings see 10-30% AC savings; Duke Energy commercial rebate $0.05-0.20/sq ft',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/tpo-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -241,10 +283,15 @@ export default function TPORoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Energy-efficient TPO membrane roofing for commercial buildings
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte's trusted commercial roofing contractor for TPO installation.
-              Our hot-air welded TPO systems deliver superior energy efficiency, durability, and
-              long-term value for businesses throughout the Charlotte metro area.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now installs hot-air-welded TPO membrane roofing for commercial buildings
+              across Charlotte and the I-77, I-85, I-485, US-29, and Independence Boulevard
+              corridors — including warehouses in Steele Creek and University City, retail centers
+              in SouthPark and Ballantyne, office complexes in South End and Park Road, and
+              distribution facilities in Concord and Mooresville. We are authorized installers for
+              Carlisle Sure-Weld, Johns Manville JM TPO, GAF EverGuard, and Firestone-Holcim
+              UltraPly with 20-30 year NDL warranties, and we install Energy Star cool-roof TPO
+              qualified for Duke Energy commercial rebates.
             </p>
 
             {/* CTA Buttons */}

@@ -20,7 +20,16 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -236,6 +245,39 @@ export default function IceDamPreventionCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc`}
+        pageName="Ice Dam Prevention Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Ice Dam Prevention Charlotte NC | Winter Roof Protection | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc`}
+        description="Ice dam prevention in Charlotte NC. Attic insulation R-38 to R-49 upgrades, NC IRC §R806 ventilation balancing, ice-and-water shield retrofit (3-6 ft from eave), heat-cable installation. Critical after 2002, 2014, and 2026 ice storms."
+        primaryImage={IMAGES.hero.hero6}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Ice Dam Prevention Charlotte NC', url: `${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="How do you prevent ice dams on a Charlotte NC roof?"
+        directAnswer="Ice dams form when warm attic air melts roof snow that refreezes at the colder eave, then back-up water under shingles and into the home. Charlotte gets 1-3 ice events per winter (notably the 2002, 2014, and 2026 storms), and prevention has 4 layers: (1) seal attic air leaks at recessed cans, ductwork, and bath fans; (2) upgrade attic insulation to R-38 (south Charlotte) or R-49 (LKN/north); (3) balance NC IRC §R806 ventilation 1:150 NFVA with paired soffit intake and ridge exhaust; (4) install ice-and-water shield 3-6 ft from the eave during reroof or as retrofit. Heat-cable installation is the emergency option for already-formed dams. Pricing typically $800-$3,500 for full prevention package."
+        items={[
+          'Air-sealing attic — caulk and foam recessed cans, attic hatch, ductwork penetrations, plumbing stacks; $300-$800',
+          'Insulation upgrade R-38 to R-49 — blown cellulose or fiberglass to depth marker; $1,200-$3,200 for typical Charlotte attic',
+          'NC IRC §R806 ventilation — 1:150 NFVA balanced 50/50 intake (soffit) and exhaust (ridge); $400-$1,200 retrofit',
+          'Ice-and-water shield (Grace Ice & Water, GAF WeatherWatch) — 3-6 ft from eave + valleys + penetrations; $300-$900 add to reroof',
+          'Heat cables (self-regulating WarmlyYours, Frost King) — eave + downspout install for at-risk roofs; $400-$1,400',
+          'Common Charlotte trigger — first warm day after a snow/ice event with 25-32°F night cycle (2014 freeze, 2026 ice storm)',
+          'Insurance treatment — water damage from ice dams is generally covered if pre-existing maintenance was reasonable',
+          'Most-at-risk neighborhoods — Davidson, Cornelius, Huntersville, Lake Norman waterfronts, north Mecklenburg shaded valleys',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -261,10 +303,15 @@ export default function IceDamPreventionCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Protect your roof from winter weather damage before it starts
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Charlotte's winter freeze-thaw cycles can create damaging ice dams on poorly ventilated roofs.
-              Best Roofing Now provides comprehensive ice dam prevention services including insulation upgrades,
-  ventilation improvements, and ice barrier installation. Don't wait until winter damage strikes.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now prevents and resolves ice dams across Charlotte and the higher-risk
+              shaded north Mecklenburg and Lake Norman corridors of Davidson, Cornelius, Huntersville,
+              Mooresville, Denver, Sherrills Ford, and Troutman, plus Ballantyne, SouthPark, Plaza
+              Midwood, Myers Park, Foxcroft, Eastover, Beverly Woods, and Steele Creek. We seal
+              attic air leaks, upgrade insulation to R-38 (south Charlotte) or R-49 (north and LKN),
+              balance NC IRC §R806 1:150 NFVA ventilation with paired soffit intake and ridge
+              exhaust, and install Grace Ice & Water or GAF WeatherWatch ice-and-water shield
+              3-6 ft from the eave. Battle-tested through the 2002, 2014, and 2026 ice storms.
             </p>
 
             {/* CTA Buttons */}

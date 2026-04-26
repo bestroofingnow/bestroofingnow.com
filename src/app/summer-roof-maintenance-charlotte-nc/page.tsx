@@ -21,7 +21,16 @@ import {
   Zap,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -233,6 +242,39 @@ export default function SummerRoofMaintenanceCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/summer-roof-maintenance-charlotte-nc`}
+        pageName="Summer Roof Maintenance Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Summer Roof Maintenance Charlotte NC | Heat & Storm Prep | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/summer-roof-maintenance-charlotte-nc`}
+        description="Summer roof maintenance for Charlotte NC homes. Pre-storm inspection before May-June hail belt and August-October tropical remnants. Attic ventilation tune-up, debris clearing, sealant refresh, gutter flush — keeps GAF/CertainTeed/OC warranties intact."
+        primaryImage={IMAGES.hero.hero5}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Summer Roof Maintenance Charlotte NC', url: `${SITE_CONFIG.url}/summer-roof-maintenance-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does summer roof maintenance in Charlotte NC include?"
+        directAnswer="Summer roof maintenance in Charlotte NC should happen by late April or early May to prepare for the May-June hail belt peak and August-October tropical remnants. A standard summer service includes: 10-point inspection (shingles, flashing, ridge cap, valleys, penetrations), debris clearing, gutter and downspout flush, attic ventilation tune-up (NC IRC §R806 1:150 NFVA verification), sealant refresh at pipe boots and chimney flashing, moss/algae spot treatment with zinc strip option, granule-loss assessment, and condition photos for insurance baseline. Pricing typically $150-$450 per residential visit, $0.08-$0.14 per sq ft for commercial. Required by GAF Golden Pledge, CertainTeed 5-Star, and OC Platinum manufacturer warranties."
+        items={[
+          'Pre-storm scheduling — complete by April-May before May-June hail belt and August-October tropical remnants',
+          '10-point shingle and flashing inspection — granule loss, lifted seams, exposed nails, valley wear, ridge cap integrity',
+          'Attic temperature and ventilation check — Charlotte attics hit 150°F+ in July; verify NC IRC §R806 NFVA balance',
+          'Pipe boot reseal — typical 8-12 yr lifespan; cracks at neoprene/EPDM are #1 summer leak source in Charlotte',
+          'Chimney flashing sealant refresh — step flashing reglet check, mortar pick-test, butyl tape if needed',
+          'Gutter flush and downspout test — clear pollen, oak catkins, sweetgum balls; water-test 4 in/hr equivalent',
+          'Moss and algae treatment — Plaza Midwood, Dilworth, Myers Park canopy areas most affected; zinc strip prevention',
+          'Insurance baseline photo documentation — pre-storm condition packet to skip "was this existing?" adjuster disputes',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/summer-roof-maintenance-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -258,10 +300,15 @@ export default function SummerRoofMaintenanceCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Protect your roof from Charlotte's intense summer heat and UV damage
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Charlotte summers are brutal on roofs. With temperatures pushing into the 90s and attic temps reaching
-              150°F+, your roof needs expert care to stay in top condition. Best Roofing Now provides comprehensive
-              summer maintenance to prevent heat damage and extend your roof's life.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now performs summer roof maintenance across Ballantyne, SouthPark,
+              Dilworth, Plaza Midwood, Myers Park, NoDa, South End, Eastover, Foxcroft, Cotswold,
+              Beverly Woods, Steele Creek, University City, and the Lake Norman communities of
+              Huntersville, Cornelius, Davidson, and Mooresville. We schedule pre-storm visits by
+              late April to prep for the May-June hail belt and August-October tropical remnants —
+              attic ventilation tune-ups, pipe-boot reseals, chimney-flashing sealant refresh,
+              gutter flushes, moss and algae treatment, and insurance baseline photo documentation.
+              Required to keep GAF Golden Pledge, CertainTeed 5-Star, and OC Platinum warranties intact.
             </p>
 
             {/* CTA Buttons */}

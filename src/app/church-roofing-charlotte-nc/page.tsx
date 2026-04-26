@@ -21,7 +21,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -217,6 +226,39 @@ export default function ChurchRoofingCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/church-roofing-charlotte-nc`}
+        pageName="Church Roofing Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Church Roofing Charlotte NC | Sanctuary, Steeple, Historic | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/church-roofing-charlotte-nc`}
+        description="Church and religious building roofing in Charlotte NC. Steep sanctuary roofs, steeple repair and reconstruction, slate and copper restoration, historic preservation, congregational scheduling around services, capital-campaign payment plans."
+        primaryImage={IMAGES.hero.hero5}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Church Roofing Charlotte NC', url: `${SITE_CONFIG.url}/church-roofing-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does church roofing in Charlotte NC require?"
+        directAnswer="Church roofing in Charlotte NC requires steep-slope safety access (most sanctuaries are 10/12 to 18/12 pitch), steeple work with extension lifts or scaffold towers, historic-preservation expertise (slate, copper, standing-seam metal), service-schedule coordination (avoid weekends, weddings, funerals, holy week), congregation communication, capital-campaign-friendly payment phasing, and 501(c)(3) tax-exempt invoicing. Charlotte's church roofing typically runs $25,000-$250,000+ depending on size, material, and steeple scope. We've worked on Mecklenburg sanctuaries from 1870s historic to modern multi-purpose buildings."
+        items={[
+          'Steep-slope sanctuary access — 10/12 to 18/12 pitch requires harness, anchor points, sometimes scaffold; specialty crews',
+          'Steeple repair and reconstruction — extension lifts, scaffold towers, weathervane and cross restoration; $8,000-$80,000 scope',
+          'Slate restoration — individual tile replacement, copper flashing, valley work; preserves 100-150 yr historic roofs',
+          'Copper standing-seam restoration — soldered seam repair, oxidation/patina preservation, lightning protection',
+          'Service-schedule coordination — work between services; pause Sundays/holy week; coordinate weddings and funerals',
+          'Capital-campaign phasing — sanctuary, education wing, fellowship hall split into 2-3 funded phases over 12-24 months',
+          '501(c)(3) tax-exempt invoicing — no NC sales tax on materials with proper exemption certificate; estimated 6.75-7.25% savings',
+          'Insurance and bonding — workers comp, general liability $2M+, performance bond on capital projects $50K+',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/church-roofing-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -242,10 +284,15 @@ export default function ChurchRoofingCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Protecting Charlotte's places of worship with expert craftsmanship
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now understands the unique requirements of church roofing. From steep sanctuary
-              roofs to steeple repairs and historic preservation, we bring reverence and expertise to every
-              religious building project.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now reroofs and restores churches across Charlotte and the surrounding
+              Mecklenburg, Cabarrus, Iredell, and Union County congregations — from Uptown historic
+              sanctuaries to suburban Ballantyne, Steele Creek, University City, Matthews, Mint Hill,
+              Concord, Davidson, Cornelius, Huntersville, and Mooresville. We handle steep sanctuary
+              slopes (10/12 to 18/12), steeple reconstruction with extension lifts, slate and copper
+              historic restoration, and reroofs in asphalt, metal, or modified bitumen — all
+              scheduled around services, weddings, and holy week. 501(c)(3) tax-exempt invoicing
+              available; capital-campaign payment phasing offered.
             </p>
 
             {/* CTA Buttons */}

@@ -22,7 +22,16 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup';
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AISearchOptimizationBundle,
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+  WebPageSchema,
+  FeaturedSnippetListAnswerSchema,
+  FreeInspectionOfferSchema,
+} from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -234,6 +243,39 @@ export default function WindDamageRoofRepairCharlotteNCPage() {
         ]}
       />
       <FAQSchema faqs={faqs} />
+      <AISearchOptimizationBundle
+        pageUrl={`${SITE_CONFIG.url}/wind-damage-roof-repair-charlotte-nc`}
+        pageName="Wind Damage Roof Repair Charlotte NC"
+        city="Charlotte"
+      />
+      <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
+      <WebPageSchema
+        name="Wind Damage Roof Repair Charlotte NC | 24/7 Emergency | Best Roofing Now"
+        url={`${SITE_CONFIG.url}/wind-damage-roof-repair-charlotte-nc`}
+        description="Wind damage roof repair in Charlotte NC. 24/7 emergency tarp dispatch 1-4 hours by zone, missing-shingle replacement, ridge cap rebuild, NC code 110+ MPH wind-rated installation, insurance claim handling for State Farm, Allstate, USAA, Liberty Mutual."
+        primaryImage={IMAGES.services.stormDamage}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Wind Damage Roof Repair Charlotte NC', url: `${SITE_CONFIG.url}/wind-damage-roof-repair-charlotte-nc` },
+        ]}
+      />
+      <FeaturedSnippetListAnswerSchema
+        question="What does wind damage roof repair cost in Charlotte NC?"
+        directAnswer="Wind damage roof repair in Charlotte NC ranges from $350 (single missing-shingle replacement and ridge cap reseat) to $14,000+ (full slope or full roof replacement after a tropical-remnant or microburst event). Charlotte's NC code minimum is 110 MPH wind rating; standard architectural shingles meet 130 MPH, and Class 4 impact-resistant upgrades reach 150 MPH with 6-nail patterns and starter strip. Insurance claims are common — most homeowner policies cover wind damage minus the wind/hail deductible (often percentage-based for lakefront LKN). 24/7 emergency tarp dispatch responds in 1-4 hours by zone. Common wind events in Charlotte: spring squall lines, summer microbursts, August-October tropical remnants (Hurricane Florence 2018, Hurricane Helene 2024)."
+        items={[
+          'Missing single shingle + ridge cap reseat — $350-$700; same-day or next-day repair',
+          'Slope-section repair (10-20 shingles + flashing) — $850-$2,400; matched-color replacements with sealed nail line',
+          'Full slope replacement after wind uplift — $3,500-$7,500; matches existing or full-roof color refresh',
+          'Full roof replacement post-storm — $8,500-$25,000+; insurance-approved with NC 110 MPH minimum',
+          'Class 4 impact-resistant upgrade — 150 MPH wind rating, 6-nail pattern, 10-30% NC insurance discount',
+          '24/7 emergency tarp — 1-4 hr dispatch by zone; 12-mil reinforced tarp with 2x4 batten frame',
+          'Insurance carriers handled — State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide, Erie, Farm Bureau',
+          'Free contractor choice under NC law — you are not required to use the carrier-preferred vendor',
+        ]}
+        pageUrl={`${SITE_CONFIG.url}/wind-damage-roof-repair-charlotte-nc`}
+      />
+      <FreeInspectionOfferSchema />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">
@@ -259,10 +301,15 @@ export default function WindDamageRoofRepairCharlotteNCPage() {
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Fast emergency response for storm and wind damage repairs
             </p>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Charlotte storms can strike without warning, leaving your roof vulnerable to water damage. Best Roofing
-              Now provides 24/7 emergency wind damage repair with rapid response times. We handle everything from
-              temporary tarping to complete restoration, including insurance claim assistance.
+            <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
+              Best Roofing Now provides 24/7 wind damage roof repair across Charlotte and the
+              surrounding communities of Ballantyne, SouthPark, Dilworth, Plaza Midwood, Myers Park,
+              NoDa, South End, Eastover, Foxcroft, Cotswold, Steele Creek, University City, and the
+              Lake Norman lakefront communities of Huntersville, Cornelius, Davidson, and
+              Mooresville. Tarp dispatch in 1-4 hours by zone, NC 110+ MPH wind-rated installations,
+              Class 4 impact-resistant upgrades that unlock 10-30% insurance discounts, and full
+              claim handling for State Farm, Allstate, USAA, Liberty Mutual, Travelers, Nationwide,
+              Erie, and Farm Bureau. Battle-tested through Hurricane Florence 2018 and Helene 2024.
             </p>
 
             {/* CTA Buttons */}
