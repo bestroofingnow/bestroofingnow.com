@@ -258,6 +258,12 @@ export async function GET() {
     { url: `${BASE_URL}/military-veteran-roofing-discount-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/shingle-replacement-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
     { url: `${BASE_URL}/siding-and-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.8' },
+    // High-traffic Q&A landing pages (PAA / AI Overview targets)
+    { url: `${BASE_URL}/how-long-does-a-roof-last-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/do-i-need-permit-to-replace-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/can-i-replace-my-own-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-long-does-roof-replacement-take-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/roofing-warranty-comparison-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     // Noindexed neighborhood pages omitted from sitemap (thin/templated content)
     // Providence Plantation, Beverly Woods, Cotswold, Arboretum, Rea Farms,
     // Blakeney, Waverly, Providence Crossing, Carmel — re-add after unique content is written

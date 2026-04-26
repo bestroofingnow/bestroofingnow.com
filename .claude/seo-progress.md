@@ -333,6 +333,17 @@ Discovered during scan: 3 high-value Q&A / PAA / AI Overview pages missing the A
 ### True site-wide AEO bundle coverage: 100% of customer-facing content pages
 After Tiers 1-9, ALL non-admin and non-utility pages on bestroofingnow.com carry the full AEO bundle. Remaining pages without it are intentionally skipped: 16 admin tool pages (n86gB.../) and 5 utility pages (privacy-policy, terms, contact, sitemap, blocked).
 
+### Tier 10 — New high-traffic Q&A landing pages (PAA / AI Overview targets)
+Building Q&A pages targeting common Charlotte roofing search intent — each one is a Featured Snippet / People Also Ask / AI Overview answer surface. Modeled after the proven 25-percent-rule-roofing template (~250 lines each: QAPageSchema + FAQSchema + speakable content + AEO bundle + hero + quick answer block + bullet list + 5 follow-up FAQs + CTA).
+
+- [x] `how-long-does-a-roof-last-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — answers roof lifespan question across 8 materials (3-tab 15-25 yr, architectural 25-50, Class 4 30-50, designer 30-50, standing seam metal 50+, synthetic slate 50, real slate 75-150, cedar 25-40). 5 follow-up FAQs covering Charlotte climate factors, lifespan extension tactics, age determination methods, warranty vs lifespan distinction, proactive replacement timing.
+- [x] `do-i-need-permit-to-replace-roof-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — answers Mecklenburg County permit question (yes, $100-$300, 1-3 day turnaround, contractor pulls). 5 follow-up FAQs covering permit timing, no-permit consequences, repair vs replacement permit thresholds, HOA approval (separate), retroactive permit costs ($1,500-$5,000+).
+- [x] `can-i-replace-my-own-roof-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — honest DIY analysis (legally yes, but loses 50-yr warranty, insurance risk, only $2-4K real savings). 5 follow-up FAQs covering actual savings math, appropriate DIY tasks, insurance impact, common DIY mistakes (nail placement, missing ice-and-water shield, wrong ventilation, wrong underlayment), get-pro-estimate-first advice.
+- [x] `how-long-does-roof-replacement-take-charlotte-nc` (NEW, ~190 lines) — 2026-04-26 — project timeline (1-2 days standard 25-35 sq, 2-3 days 40-60 sq, 5-10 days slate/tile/copper). 5 follow-up FAQs covering timeline factors, single-day projects, slate/metal/tile timelines, staying-home considerations, weather contingency.
+- [x] `roofing-warranty-comparison-charlotte-nc` (NEW, ~200 lines) — 2026-04-26 — 3-brand top-tier warranty comparison (GAF Golden Pledge 50-yr non-prorated via Master Elite, CertainTeed 5-Star Plus 50-yr SureStart Plus + 25-yr StreakFighter algae via SELECT ShingleMaster, OC Platinum Preferred Protection). 5 follow-up FAQs covering manufacturer vs workmanship distinction, Golden Pledge value, CertainTeed StreakFighter algae advantage, transferability, voider risks.
+
+All 5 added to core sitemap with priority 0.7, monthly changefreq. Routes auto-handled by middleware SERVICE_LOCATION_PATTERN regex.
+
 **Strategic priority (target these across next 5–10 ticks regardless of line count):**
 - [x] `roof-inspection-charlotte-nc` (765) — top-of-funnel — done 2026-04-19
 - [x] `roof-repair-charlotte-nc` (770) — high intent — done 2026-04-19
