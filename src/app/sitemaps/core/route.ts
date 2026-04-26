@@ -536,6 +536,13 @@ export async function GET() {
     { url: `${BASE_URL}/what-is-a-roof-boot-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-do-i-keep-birds-off-my-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/what-is-a-chimney-cricket-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+
+    // Batch 30 Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/what-is-roof-decking-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-a-soffit-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-causes-roof-leaks-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-fascia-board-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-prevent-squirrel-damage-roof-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
   ];
 
   const lastmod = new Date().toISOString();

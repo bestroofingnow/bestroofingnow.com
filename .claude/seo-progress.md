@@ -459,3 +459,13 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
 - Sitemap: 5 entries added to core/route.ts (Batch 29 Q&A pages section)
 - Type-check: clean
+
+### Batch 30 (2026-04-26): Q&A landing pages — decking, soffit, leak causes, fascia, squirrel prevention
+- ✅ what-is-roof-decking-charlotte-nc (NEW Q&A page) — NC IRC §R803 requires 7/16-inch OSB or 15/32-inch plywood, replace when sponginess/daylight/25%+ staining/delamination/mold/sagging, typical Charlotte reroof 5-15% sheets need replacement ($400-$1,500)
+- ✅ what-is-a-soffit-charlotte-nc (NEW Q&A page) — horizontal panel under eaves, 4 functions (NC IRC §R806 ventilation intake, eave protection, pest exclusion, aesthetic), aluminum $4-8/ft, vinyl $3-6/ft, Hardie $6-12/ft
+- ✅ what-causes-roof-leaks-charlotte-nc (NEW Q&A page) — 8 causes ranked (pipe boots 60%, valley 12%, chimney 10%, skylight 6%, missing shingles 4%, ridge 3%, ice dams 3%, other 2%), Charlotte climate stressors, prevention protocol
+- ✅ what-is-fascia-board-charlotte-nc (NEW Q&A page) — vertical board at rafter ends where gutters attach, 4 functions (gutter attachment, rafter protection, aesthetic roofline, NC IRC §R905.2.8.5 drip edge backing), aluminum-wrapped $5-10/ft, Hardie $7-15/ft
+- ✅ how-do-i-prevent-squirrel-damage-roof-charlotte-nc (NEW Q&A page) — 6-step exclusion (8-10 ft branch trim, seal entry, hardware cloth, chimney cap $150-400, tree guards, professional exclusion), damage $3K-$15K vs prevention $500-$2,500
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 30 Q&A pages section)
+- Type-check: clean
