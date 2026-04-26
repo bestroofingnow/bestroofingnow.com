@@ -564,6 +564,13 @@ export async function GET() {
     { url: `${BASE_URL}/what-is-roof-certification-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/how-do-i-get-a-roofing-permit-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
     { url: `${BASE_URL}/what-is-rcv-vs-acv-insurance-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+
+    // Batch 34 Q&A pages (Apr 2026)
+    { url: `${BASE_URL}/what-is-wind-uplift-rating-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-causes-shingle-granule-loss-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-read-a-roof-estimate-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/what-is-a-roof-tear-off-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
+    { url: `${BASE_URL}/how-do-i-prepare-my-home-for-reroofing-charlotte-nc`, changefreq: 'monthly', priority: '0.7' },
   ];
 
   const lastmod = new Date().toISOString();

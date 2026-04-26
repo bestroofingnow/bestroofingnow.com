@@ -499,3 +499,16 @@ Next pass: Tier 5 remaining Charlotte pages (~130 pages) in thinnest-first order
 - All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
 - Sitemap: 5 entries added to core/route.ts (Batch 33 Q&A pages section)
 - Type-check: clean
+
+### Batch 34 (2026-04-26): Q&A landing pages — wind uplift, granules, estimates, tear-off, prep [LAST SMALL BATCH]
+- ✅ what-is-wind-uplift-rating-charlotte-nc (NEW Q&A page) — ASTM D7158 wind certification, NC code 110 MPH min, Charlotte recommended 130 MPH (60-90 MPH storms), Lake Norman 150 MPH waterfront, NC insurance discount 5-15%
+- ✅ what-causes-shingle-granule-loss-charlotte-nc (NEW Q&A page) — 5 causes (normal aging, hail, UV, foot traffic, pressure washing), gutter accumulation diagnostic (trace = normal, 1+ cup = reroof 2-5 yr), top-tier brand granule retention
+- ✅ how-do-i-read-a-roof-estimate-charlotte-nc (NEW Q&A page) — 12 line items required, red flags (lump sum, vague shingle spec, missing ice-and-water shield/drip edge, deductible rebating), apples-to-apples comparison framework
+- ✅ what-is-a-roof-tear-off-charlotte-nc (NEW Q&A page) — NC IRC §R908.3 max 2 layers, tear-off vs overlay (overlay voids warranty + 5-10 yr lifespan loss), $75-$150/sq tear-off cost, disposal at Mecklenburg County certified facilities
+- ✅ how-do-i-prepare-my-home-for-reroofing-charlotte-nc (NEW Q&A page) — 10-item prep checklist (vehicles, dumpster, attic items, wall hangings, neighbors, pets, AC, walkthrough), 3-5 day project timeline, weather restrictions, post-install walking restrictions
+- All 5 pages: full AEO bundle (BreadcrumbSchema, WebPageSchema, QAPageSchema, FAQSchema, SpeakableContent, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema with 8 items, FreeInspectionOfferSchema)
+- Sitemap: 5 entries added to core/route.ts (Batch 34 Q&A pages section)
+- Type-check: clean
+
+### Strategy change (Apr 2026): Switching to parallel agents for batch 35+
+User directive — batch 34 was the last small/sequential batch. Batch 35+ will use multiple parallel agents to build remaining valuable Q&A pages and finish the loop.
