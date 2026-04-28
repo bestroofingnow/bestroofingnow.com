@@ -25,6 +25,9 @@ import {
   Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { CitationFacts } from '@/components/sections/CitationFacts';
+import { CostTable } from '@/components/sections/CostTable';
+import { MoneyPagesLinkBlock } from '@/components/sections/MoneyPagesLinkBlock';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
@@ -40,7 +43,7 @@ import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getGeoImages } from '@/lib/geo-images';
-import { IMAGES, CITY_COORDINATES } from '@/lib/images';
+import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
@@ -703,6 +706,74 @@ export default function RoofRepairCharlotteNCPage() {
         schemaPageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
       />
 
+      <CostTable
+        title="Roof Repair Cost in Charlotte NC (2026)"
+        subtitle="Real Charlotte-area roof repair pricing by problem type. Free, no-obligation written estimates."
+        city="Charlotte"
+        itemName="Roof Repair"
+        pageUrl={`${SITE_CONFIG.url}/roof-repair-charlotte-nc`}
+        description="Roof repair pricing for Charlotte NC homes by repair category, including labor, materials, and disposal."
+        rows={[
+          {
+            label: 'Minor Leak / Single Shingle Replacement',
+            unit: 'per repair',
+            low: 200,
+            high: 600,
+            notes: 'Common pipe-boot, exposed-nail, or 1–3 missing shingles.',
+          },
+          {
+            label: 'Storm Damage Patch (asphalt)',
+            unit: 'per repair',
+            low: 450,
+            high: 1500,
+            notes: 'Wind-blown shingles, hail bruising in localized area.',
+          },
+          {
+            label: 'Flashing Repair (chimney, vent, valley)',
+            unit: 'per repair',
+            low: 350,
+            high: 1800,
+            notes: 'Step flashing, counter flashing, or skylight perimeter.',
+          },
+          {
+            label: 'Pipe Boot / Vent Boot Replacement',
+            unit: 'per boot',
+            low: 175,
+            high: 450,
+            notes: 'Cracked rubber boots fail at 8–12 yrs in Charlotte UV.',
+          },
+          {
+            label: 'Section Re-Roof (small)',
+            unit: 'per 100 sq ft area',
+            low: 800,
+            high: 2500,
+            notes: 'For damage covering one slope or limited area.',
+          },
+          {
+            label: '24/7 Emergency Tarp Service',
+            unit: 'per dispatch',
+            low: 350,
+            high: 950,
+            notes: 'Same-day, often within 1–4 hours; insurance billable.',
+          },
+          {
+            label: 'Flat Roof Patch (TPO / EPDM / modified bit.)',
+            unit: 'per repair',
+            low: 400,
+            high: 2500,
+            notes: 'Hot-air weld or seam re-flash; commercial common.',
+          },
+          {
+            label: 'Full Roof Inspection & Written Report',
+            unit: 'inspection',
+            low: 0,
+            high: 0,
+            notes: 'Always free for Charlotte homeowners — photos & PDF report.',
+          },
+        ]}
+        footnote="Repairs under $300 may be cheaper if combined with another service call. Insurance-covered storm damage typically results in only a deductible owed by the homeowner."
+      />
+
       {/* FAQ Section */}
       <section className="section bg-light">
         <div className="container">
@@ -731,6 +802,14 @@ export default function RoofRepairCharlotteNCPage() {
         </div>
       </section>
 
+      <MoneyPagesLinkBlock
+        excludeHrefs={['/roof-repair-charlotte-nc']}
+        categories={['core', 'cost', 'metal', 'gutter']}
+        maxLinks={9}
+        title="Related Charlotte Roofing Services and Cost Guides"
+        subtitle="Compare repair, replacement, metal roofing, gutters, and 2026 Charlotte pricing before you decide."
+      />
+
       {/* Service City Links */}
       <ServiceCityLinks
         city="Charlotte"
@@ -746,6 +825,8 @@ export default function RoofRepairCharlotteNCPage() {
         serviceSlug="roof-repair"
         title="Roof Repair in Nearby Cities"
       />
+
+      <CitationFacts service="Roof Repair" city="Charlotte" state="NC" />
 
       {/* Final CTA */}
 

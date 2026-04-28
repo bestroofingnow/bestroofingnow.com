@@ -23,9 +23,9 @@ import {
   FileCheck,
   DollarSign,
   Zap,
-  Layers,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { MoneyPagesLinkBlock } from '@/components/sections/MoneyPagesLinkBlock';
 import EstimateButton from '@/components/estimate/EstimateButton';
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema, FreeInspectionOfferSchema } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
@@ -33,7 +33,7 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
 import { RelatedCitiesLinks } from '@/components/ui/RelatedCitiesLinks';
 import { SITE_CONFIG } from '@/lib/constants';
-import { IMAGES, CITY_COORDINATES } from '@/lib/images';
+import { IMAGES } from '@/lib/images';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
 import { getGeoImages } from '@/lib/geo-images';
@@ -1456,6 +1456,14 @@ export default function RoofingCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      <MoneyPagesLinkBlock
+        excludeHrefs={['/roofing-charlotte-nc']}
+        categories={['core', 'cost', 'commercial', 'gutter', 'metal']}
+        maxLinks={12}
+        title="Priority Charlotte Roofing Services"
+        subtitle="Fast paths to repair, replacement, commercial, gutter, metal roofing, and 2026 cost resources."
+      />
 
       {/* Service City Links - Internal Linking */}
       <ServiceCityLinks

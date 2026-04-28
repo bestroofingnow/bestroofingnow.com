@@ -24,12 +24,11 @@ import {
   Briefcase,
   Heart,
   Hammer,
-  DollarSign,
-  FileCheck,
   Zap,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
+import { MoneyPagesLinkBlock } from '@/components/sections/MoneyPagesLinkBlock';
 import EstimateButton from '@/components/estimate/EstimateButton';
 import {
   BreadcrumbSchema,
@@ -919,6 +918,14 @@ export default function RoofingCompanyCharlotteNCPage() {
           </div>
         </div>
       </section>
+
+      <MoneyPagesLinkBlock
+        excludeHrefs={['/roofing-company-charlotte-nc']}
+        categories={['core', 'cost', 'commercial', 'gutter', 'metal']}
+        maxLinks={12}
+        title="Most Requested Charlotte Roofing Services"
+        subtitle="Direct links to the service and cost pages Charlotte homeowners search for most."
+      />
 
       {/* Service City Links */}
       <ServiceCityLinks

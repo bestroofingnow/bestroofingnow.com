@@ -1,5 +1,6 @@
 import {
 NextResponse } from 'next/server';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 export const dynamic = 'force-static';
 
@@ -18,7 +19,7 @@ const CITIES = [
 
 // Stories sitemap: All city story pages
 export async function GET() {
-  const lastmod = new Date().toISOString();
+  const lastmod = getSitemapLastmod();
 
   // Stories index page
   const indexPage = {

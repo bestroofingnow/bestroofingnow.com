@@ -1,5 +1,6 @@
 import {
 NextResponse } from 'next/server';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 export const dynamic = 'force-static';
 
@@ -18,7 +19,7 @@ export async function GET() {
     { url: `${BASE_URL}/roofing-technical-terms-faq`, changefreq: 'weekly', priority: '0.7' },
   ];
 
-  const lastmod = new Date().toISOString();
+  const lastmod = getSitemapLastmod();
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -4,12 +4,13 @@ NextResponse } from 'next/server';
 export const dynamic = 'force-static';
 import { LOCATIONS } from '@/lib/constants';
 import { getAllNeighborhoodParams } from '@/lib/neighborhoods';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Locations sitemap: All cities and neighborhoods
 export async function GET() {
-  const lastmod = new Date().toISOString();
+  const lastmod = getSitemapLastmod();
 
   // Locations index page
   const indexPage = {

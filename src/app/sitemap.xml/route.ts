@@ -1,5 +1,6 @@
 import {
 NextResponse } from 'next/server';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 export const dynamic = 'force-static';
 
@@ -7,20 +8,21 @@ const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Master sitemap index that links to all category sitemaps
 export async function GET() {
+  const lastmod = getSitemapLastmod();
   const sitemaps = [
-    { loc: `${BASE_URL}/sitemaps/core`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/services`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/locations`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/lake-norman`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/projects`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/products`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/materials`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/resources`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/faq`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/stories`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/blog`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/images`, lastmod: new Date().toISOString() },
-    { loc: `${BASE_URL}/sitemaps/videos`, lastmod: new Date().toISOString() },
+    { loc: `${BASE_URL}/sitemaps/core`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/services`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/locations`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/lake-norman`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/projects`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/products`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/materials`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/resources`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/faq`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/stories`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/blog`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/images`, lastmod },
+    { loc: `${BASE_URL}/sitemaps/videos`, lastmod },
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

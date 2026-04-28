@@ -1,5 +1,6 @@
 import {
 NextResponse } from 'next/server';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 export const dynamic = 'force-static';
 
@@ -100,7 +101,7 @@ const LKN_COST_GUIDES = [
 ];
 
 export async function GET() {
-  const lastmod = new Date().toISOString();
+  const lastmod = getSitemapLastmod();
 
   // Use a Set to dedupe in case any slug appears in multiple groups
   const allSlugs = new Set<string>([

@@ -3,12 +3,13 @@ NextResponse } from 'next/server';
 
 export const dynamic = 'force-static';
 import { SERVICES } from '@/lib/constants';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Services sitemap: All service pages
 export async function GET() {
-  const lastmod = new Date().toISOString();
+  const lastmod = getSitemapLastmod();
 
   // Services index page
   const indexPage = {

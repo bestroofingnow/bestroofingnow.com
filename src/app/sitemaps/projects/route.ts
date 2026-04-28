@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import * as fs from 'fs';
 import * as path from 'path';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
@@ -52,7 +53,7 @@ export async function GET() {
     console.error('Error loading projects for sitemap:', error);
   }
 
-  const lastmod = new Date().toISOString();
+  const lastmod = getSitemapLastmod();
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

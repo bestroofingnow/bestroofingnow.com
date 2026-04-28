@@ -12,17 +12,19 @@ import {
   ROOFING_BRANDS,
   COMMERCIAL_SYSTEMS,
 } from '@/lib/constants';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Resources sitemap: Materials, Guides, Comparisons, Roof Types, Problems, Seasonal, Warranty
 export async function GET() {
+  const lastmod = getSitemapLastmod();
   const pages: { url: string; lastmod: string; changefreq: string; priority: string }[] = [];
 
   // Materials index page
   pages.push({
     url: `${BASE_URL}/materials`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -31,7 +33,7 @@ export async function GET() {
   ROOFING_MATERIALS.forEach((material) => {
     pages.push({
       url: `${BASE_URL}/materials/${material.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -40,7 +42,7 @@ export async function GET() {
   // Guides index page
   pages.push({
     url: `${BASE_URL}/guides`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -49,7 +51,7 @@ export async function GET() {
   ROOFING_GUIDES.forEach((guide) => {
     pages.push({
       url: `${BASE_URL}/guides/${guide.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -58,7 +60,7 @@ export async function GET() {
   // Comparisons index page
   pages.push({
     url: `${BASE_URL}/compare`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -67,7 +69,7 @@ export async function GET() {
   ROOFING_COMPARISONS.forEach((comparison) => {
     pages.push({
       url: `${BASE_URL}/compare/${comparison.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -76,7 +78,7 @@ export async function GET() {
   // Roof Types index page
   pages.push({
     url: `${BASE_URL}/roof-types`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -85,7 +87,7 @@ export async function GET() {
   ROOF_TYPES.forEach((roofType) => {
     pages.push({
       url: `${BASE_URL}/roof-types/${roofType.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -94,7 +96,7 @@ export async function GET() {
   // Roofing Problems index page
   pages.push({
     url: `${BASE_URL}/problems`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -103,7 +105,7 @@ export async function GET() {
   ROOFING_PROBLEMS.forEach((problem) => {
     pages.push({
       url: `${BASE_URL}/problems/${problem.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -112,7 +114,7 @@ export async function GET() {
   // Seasonal Roofing index page
   pages.push({
     url: `${BASE_URL}/seasonal`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -121,7 +123,7 @@ export async function GET() {
   SEASONAL_ROOFING.forEach((season) => {
     pages.push({
       url: `${BASE_URL}/seasonal/${season.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -130,7 +132,7 @@ export async function GET() {
   // Warranty information page
   pages.push({
     url: `${BASE_URL}/warranty`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'monthly',
     priority: '0.7',
   });
@@ -138,7 +140,7 @@ export async function GET() {
   // Process page
   pages.push({
     url: `${BASE_URL}/process`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'monthly',
     priority: '0.8',
   });
@@ -146,7 +148,7 @@ export async function GET() {
   // Emergency services page
   pages.push({
     url: `${BASE_URL}/emergency`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'monthly',
     priority: '0.8',
   });
@@ -154,7 +156,7 @@ export async function GET() {
   // Brands index page
   pages.push({
     url: `${BASE_URL}/brands`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -163,7 +165,7 @@ export async function GET() {
   ROOFING_BRANDS.forEach((brand) => {
     pages.push({
       url: `${BASE_URL}/brands/${brand.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -172,7 +174,7 @@ export async function GET() {
   // Commercial Systems index page
   pages.push({
     url: `${BASE_URL}/commercial-systems`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -181,7 +183,7 @@ export async function GET() {
   COMMERCIAL_SYSTEMS.forEach((system) => {
     pages.push({
       url: `${BASE_URL}/commercial-systems/${system.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
@@ -190,7 +192,7 @@ export async function GET() {
   // Ventilation page
   pages.push({
     url: `${BASE_URL}/ventilation`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'monthly',
     priority: '0.7',
   });

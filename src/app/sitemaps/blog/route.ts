@@ -1,14 +1,16 @@
 import { NextResponse } from 'next/server';
 import { getAllPosts } from '@/lib/wordpress';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Blog sitemap: All blog posts
 export async function GET() {
+  const lastmod = getSitemapLastmod();
   // Blog index page
   const indexPage = {
     url: `${BASE_URL}/blog`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'daily',
     priority: '0.7',
   };
@@ -20,7 +22,7 @@ export async function GET() {
     const posts = await getAllPosts();
     blogPages = posts.map((post) => ({
       url: `${BASE_URL}/blog/${post.slug}`,
-      lastmod: post.modified ? new Date(post.modified).toISOString() : new Date().toISOString(),
+      lastmod: post.modified ? new Date(post.modified).toISOString() : lastmod,
       changefreq: 'monthly',
       priority: '0.6',
     }));

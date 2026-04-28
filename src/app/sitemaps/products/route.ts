@@ -3,12 +3,13 @@ NextResponse } from 'next/server';
 
 export const dynamic = 'force-static';
 import { SHINGLE_PRODUCTS } from '@/lib/constants';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Products sitemap: /products and /products/[slug]
 export async function GET() {
-  const lastmod = new Date().toISOString();
+  const lastmod = getSitemapLastmod();
 
   const indexPage = {
     url: `${BASE_URL}/products`,

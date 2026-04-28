@@ -24,6 +24,9 @@ import {
   MapPin,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { CitationFacts } from '@/components/sections/CitationFacts';
+import { CostTable } from '@/components/sections/CostTable';
+import { MoneyPagesLinkBlock } from '@/components/sections/MoneyPagesLinkBlock';
 import {
   BreadcrumbSchema,
   FAQSchema,
@@ -39,7 +42,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { GeoTaggedProjectImage } from '@/components/ui/GeoTaggedProjectImage';
 import { SITE_CONFIG } from '@/lib/constants';
 import { getGeoImages } from '@/lib/geo-images';
-import { IMAGES, CITY_COORDINATES } from '@/lib/images';
+import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
@@ -860,6 +863,66 @@ export default function RoofReplacementCharlotteNCPage() {
         schemaPageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
       />
 
+      <CostTable
+        title="Roof Replacement Cost in Charlotte NC (2026)"
+        subtitle="Transparent 2026 pricing for full roof replacements in Charlotte. Final cost depends on roof size, pitch, decking condition, and material selection."
+        city="Charlotte"
+        itemName="Roof Replacement"
+        pageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
+        description="Full roof replacement pricing for Charlotte NC homes by material type, including tear-off, underlayment, flashing, and new shingle installation."
+        rows={[
+          {
+            label: '3-Tab Asphalt Shingles',
+            unit: 'per 2,000 sq ft roof',
+            low: 6500,
+            high: 11000,
+            typicalProject: { low: 6500, high: 11000 },
+            notes: '15–20 yr lifespan; budget option, single-tab profile.',
+          },
+          {
+            label: 'Architectural Shingles (GAF Timberline / CertainTeed Landmark)',
+            unit: 'per 2,000 sq ft roof',
+            low: 9000,
+            high: 16000,
+            typicalProject: { low: 9000, high: 16000 },
+            notes: '25–30 yr lifespan; most popular choice in Charlotte.',
+          },
+          {
+            label: 'Designer / Premium Shingles',
+            unit: 'per 2,000 sq ft roof',
+            low: 14000,
+            high: 22000,
+            typicalProject: { low: 14000, high: 22000 },
+            notes: 'Slate-look, shake-look profiles; 30–50 yr warranty.',
+          },
+          {
+            label: 'Standing Seam Metal Roof',
+            unit: 'per 2,000 sq ft roof',
+            low: 20000,
+            high: 36000,
+            typicalProject: { low: 20000, high: 36000 },
+            notes: '40–70 yr lifespan; 25% cooling savings; insurance discount.',
+          },
+          {
+            label: 'Synthetic Slate / Composite',
+            unit: 'per 2,000 sq ft roof',
+            low: 22000,
+            high: 35000,
+            typicalProject: { low: 22000, high: 35000 },
+            notes: 'Class 4 impact rated; lifetime warranty.',
+          },
+          {
+            label: 'Concrete or Clay Tile',
+            unit: 'per 2,000 sq ft roof',
+            low: 24000,
+            high: 40000,
+            typicalProject: { low: 24000, high: 40000 },
+            notes: '50+ yr lifespan; structural review may be required.',
+          },
+        ]}
+        footnote="Pricing assumes single-story home, accessible roof, and standard 4/12–8/12 pitch. Steeper pitches, multiple stories, complex roof geometry, or rotted decking add 10–25%. We provide free written estimates with itemized line-items so you see exactly what you are paying for."
+      />
+
       {/* FAQ Section */}
       <section className="section bg-light">
         <div className="container">
@@ -888,6 +951,14 @@ export default function RoofReplacementCharlotteNCPage() {
         </div>
       </section>
 
+      <MoneyPagesLinkBlock
+        excludeHrefs={['/roof-replacement-charlotte-nc']}
+        categories={['core', 'cost', 'metal']}
+        maxLinks={9}
+        title="Compare Roof Replacement, Repair, and 2026 Cost Guides"
+        subtitle="Use these Charlotte pages to compare options, materials, financing, and related roofing services."
+      />
+
       {/* Service City Links */}
       <ServiceCityLinks
         city="Charlotte"
@@ -914,6 +985,8 @@ export default function RoofReplacementCharlotteNCPage() {
         subtitle="See our latest roof replacement work across the Charlotte metro area."
         schemaPageUrl={`${SITE_CONFIG.url}/roof-replacement-charlotte-nc`}
       />
+
+      <CitationFacts service="Roof Replacement" city="Charlotte" state="NC" />
 
       {/* Final CTA */}
 

@@ -3,17 +3,19 @@ NextResponse } from 'next/server';
 
 export const dynamic = 'force-static';
 import { ROOFING_MATERIALS } from '@/lib/constants';
+import { getSitemapLastmod } from '@/lib/sitemap';
 
 const BASE_URL = 'https://www.bestroofingnow.com';
 
 // Materials sitemap: All roofing materials pages
 export async function GET() {
+  const lastmod = getSitemapLastmod();
   const pages: { url: string; lastmod: string; changefreq: string; priority: string }[] = [];
 
   // Materials index page
   pages.push({
     url: `${BASE_URL}/materials`,
-    lastmod: new Date().toISOString(),
+    lastmod,
     changefreq: 'weekly',
     priority: '0.8',
   });
@@ -22,7 +24,7 @@ export async function GET() {
   ROOFING_MATERIALS.forEach((material) => {
     pages.push({
       url: `${BASE_URL}/materials/${material.slug}`,
-      lastmod: new Date().toISOString(),
+      lastmod,
       changefreq: 'monthly',
       priority: '0.7',
     });
