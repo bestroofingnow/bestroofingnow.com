@@ -25,7 +25,7 @@ function TipCard({ tip }: TipCardProps) {
           <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">
             Tip from James
           </p>
-          <h4 className="font-bold text-dark mb-2">{tip.title}</h4>
+          <h3 className="font-bold text-dark mb-2">{tip.title}</h3>
           <p className="text-gray italic">&ldquo;{tip.tip}&rdquo;</p>
           <p className="text-sm text-primary font-medium mt-3">— James Turner, Founder</p>
         </div>
@@ -56,7 +56,7 @@ function CommunityCard({ item }: CommunityCardProps) {
           </div>
         </div>
         <div>
-          <h4 className="font-bold text-dark mb-2">{item.name}</h4>
+          <h3 className="font-bold text-dark mb-2">{item.name}</h3>
           <p className="text-gray text-sm">&ldquo;{item.description}&rdquo;</p>
           {item.ongoing && (
             <span className="inline-block mt-3 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
@@ -83,7 +83,7 @@ function AnecdoteCard({ anecdote }: AnecdoteCardProps) {
   return (
     <div className="bg-light rounded-xl p-6 relative">
       <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/10" />
-      <h4 className="font-bold text-dark mb-3">{anecdote.title}</h4>
+      <h3 className="font-bold text-dark mb-3">{anecdote.title}</h3>
       <p className="text-gray italic mb-4">&ldquo;{anecdote.story}&rdquo;</p>
       <p className="text-sm text-primary font-medium">
         — {authorNames[anecdote.author as keyof typeof authorNames]}

@@ -37,7 +37,7 @@ const HERO_IMAGES = IMAGES.heroRotation;
 
 export const metadata: Metadata = {
   title: { absolute: 'Best Roofer Charlotte NC | 5-Star | BBB A+' },
-  description: 'Best Roofing Now is Charlotte NC\'s top-rated roofer. 5.0 Google Rating, 500+ roofs completed, BBB A+ rated, veteran-owned. Roof repair, replacement, inspections. FREE estimates! Call (704) 605-6047.',
+  description: 'Charlotte NC\'s top-rated roofer. 5.0 Google rating, BBB A+, veteran-owned. Roof repair, replacement & free inspections. Call (704) 605-6047.',
   keywords: [
     // Primary Charlotte brand keywords - homepage is the authority
     'best roofing company Charlotte NC',
