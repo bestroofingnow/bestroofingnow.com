@@ -44,9 +44,11 @@ export const metadata: Metadata = {
   // Title rewritten 2026-05-11: page already ranks pos 5 for "roof replacement cost charlotte nc"
   // and pos 9 for "how much does a new roof cost in nc". Title and description now lead with the
   // higher-volume "Roof Replacement Cost" phrase to match user intent and lift CTR.
-  title: 'Roof Replacement Cost Charlotte NC 2026 | Average Pricing Guide',
+  // Title trimmed 2026-05-16 — was 63 chars, Google truncates at ~60.
+  title: 'Roof Replacement Cost Charlotte NC | 2026 Pricing Guide',
+  // Description trimmed 2026-05-16 — was 206 chars, Google truncates at ~160.
   description:
-    'Average roof replacement cost in Charlotte NC (2026): $8,500–$15,000 for asphalt shingles, $15,000–$30,000 for metal. New roof, repair & material pricing by home size. Free estimates from BBB A+ contractor.',
+    "Roof replacement cost in Charlotte NC (2026): asphalt $8,500–$15,000, metal $15,000–$30,000. Pricing by home size · BBB A+ · free estimates.",
   alternates: {
     canonical: `${SITE_CONFIG.url}/charlotte-roofing-costs-2026`,
   },

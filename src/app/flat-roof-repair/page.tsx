@@ -39,9 +39,11 @@ export const metadata: Metadata = {
   // Title rewritten 2026-05-11: page ranks pos 9 for "flat roof repair charlotte nc" (80/mo, KD 0).
   // Multiple commercial cluster keywords pos 11-13 (commercial roof maintenance contractor, scheduled
   // commercial roof inspection, etc). Title now signals commercial expertise plus trust badge.
-  title: 'Flat Roof Repair Charlotte NC | Commercial & Residential | TPO EPDM',
+  // Title trimmed 2026-05-16 — was 67 chars, Google truncates at ~60.
+  title: 'Flat Roof Repair Charlotte NC | TPO EPDM Commercial',
+  // Description trimmed 2026-05-16 — was 204 chars, Google truncates at ~160.
   description:
-    'Expert flat roof repair in Charlotte NC — TPO, EPDM, PVC, modified bitumen. Commercial maintenance contracts, 24/7 emergency response, scheduled inspections. BBB A+ · 5-star rated. Call (704) 605-6047.',
+    'Flat roof repair in Charlotte NC — TPO, EPDM, PVC, modified bitumen. Commercial maintenance, 24/7 emergency. BBB A+ · (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-repair`,
   },
