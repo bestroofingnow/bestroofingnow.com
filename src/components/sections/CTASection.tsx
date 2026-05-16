@@ -20,6 +20,7 @@ interface CTABannerData {
 interface CTASectionProps {
   title?: string;
   subtitle?: string;
+  /** Retained for backwards compatibility — ignored in editorial layout. */
   variant?: 'primary' | 'accent';
   placement?: string;
 }
@@ -36,9 +37,10 @@ const DEFAULTS = {
 export function CTASection({
   title,
   subtitle,
-  variant = 'accent',
+  variant: _variant = 'accent',
   placement = 'global',
 }: CTASectionProps) {
+  void _variant;
   const [banner, setBanner] = useState<CTABannerData | null>(null);
 
   useEffect(() => {
@@ -60,85 +62,90 @@ export function CTASection({
   // Use banner data from DB, or props, or defaults
   const displayTitle = title || banner?.title || DEFAULTS.title;
   const displaySubtitle = subtitle || banner?.subtitle || DEFAULTS.subtitle;
-  const displayVariant = banner?.variant || variant;
   const displayButtonText = banner?.buttonText || DEFAULTS.buttonText;
   const displayButtonUrl = banner?.buttonUrl || DEFAULTS.buttonUrl;
   const displayFootnote = banner?.footnote || DEFAULTS.footnote;
 
-  const bgClass = displayVariant === 'primary' ? 'bg-gradient-primary' : 'bg-accent';
-
   return (
-    <section className={`${bgClass} text-white py-16`}>
+    <section className="bg-cream py-14 md:py-20">
       <div className="container">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">{displayTitle}</h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">{displaySubtitle}</p>
+        <div
+          className="max-w-5xl mx-auto bg-white shadow-[0_8px_24px_rgba(14,31,87,0.08)] grid lg:grid-cols-[1.4fr_1fr] gap-8 lg:gap-12 items-center px-7 py-10 md:px-12 md:py-12"
+          style={{ borderTop: '3px solid var(--color-copper)' }}
+        >
+          <div>
+            <div className="eyebrow mb-3">Scheduling Now</div>
+            <h2 className="heading-display text-[26px] sm:text-[30px] md:text-[36px]">
+              {displayTitle}
+            </h2>
+            <p className="text-slate text-[15px] leading-[1.6] mt-3 max-w-xl">
+              {displaySubtitle}
+            </p>
+            {displayFootnote && (
+              <p className="mt-5 text-mute text-[12.5px] leading-[1.5]">
+                {displayFootnote}
+              </p>
+            )}
+          </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col gap-2.5">
             <Button
               href={displayButtonUrl}
-              variant="outline"
+              variant="secondary"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-accent"
-              icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
+              icon={<Calendar className="w-4 h-4" aria-hidden="true" />}
+              iconPosition="right"
             >
               {displayButtonText}
             </Button>
             {banner?.secondaryButtonText && banner?.secondaryButtonUrl ? (
               <Button
                 href={banner.secondaryButtonUrl}
-                variant="secondary"
+                variant="outline"
                 size="lg"
-                className="bg-white !text-accent hover:bg-white/90"
-                icon={<ArrowRight className="w-5 h-5" aria-hidden="true" />}
+                icon={<ArrowRight className="w-4 h-4" aria-hidden="true" />}
+                iconPosition="right"
               >
                 {banner.secondaryButtonText}
               </Button>
             ) : (
               <Button
                 href={`tel:${SITE_CONFIG.phoneClean}`}
-                variant="secondary"
+                variant="outline"
                 size="lg"
-                className="bg-white !text-accent hover:bg-white/90"
-                icon={<Phone className="w-5 h-5" aria-hidden="true" />}
+                icon={<Phone className="w-4 h-4" aria-hidden="true" />}
                 onClick={() => trackPhoneClick('cta-section')}
               >
                 Call {SITE_CONFIG.phone}
               </Button>
             )}
           </div>
-
-          {displayFootnote && (
-            <p className="mt-6 text-white/90 text-sm">
-              {displayFootnote}
-            </p>
-          )}
         </div>
       </div>
     </section>
   );
 }
 
-// Sticky Mobile CTA - unchanged
+// Sticky Mobile CTA
 export function StickyCTA() {
   return (
     <div className="sticky-cta" role="navigation" aria-label="Quick contact options">
       <a
         href={`tel:${SITE_CONFIG.phoneClean}`}
-        className="flex-1 flex items-center justify-center gap-2 bg-primary text-white min-h-[44px] py-3 rounded-lg font-semibold"
+        className="flex-1 flex items-center justify-center gap-2 bg-navy text-white min-h-[44px] py-3 rounded-[2px] font-semibold uppercase tracking-[0.06em] text-[12.5px]"
         aria-label={`Call Best Roofing Now at ${SITE_CONFIG.phone}`}
         onClick={() => trackPhoneClick('sticky-cta')}
       >
-        <Phone className="w-5 h-5" aria-hidden="true" />
-        Call Now
+        <Phone className="w-4 h-4" aria-hidden="true" />
+        Active Leak? Call
       </a>
       <a
         href="/contact"
-        className="flex-1 flex items-center justify-center gap-2 bg-accent text-white min-h-[44px] py-3 rounded-lg font-semibold"
-        aria-label="Get a free roofing quote"
+        className="flex-1 flex items-center justify-center gap-2 bg-accent text-white min-h-[44px] py-3 rounded-[2px] font-semibold uppercase tracking-[0.06em] text-[12.5px]"
+        aria-label="Schedule a free roof inspection"
       >
-        Free Quote
-        <ArrowRight className="w-5 h-5" aria-hidden="true" />
+        Free Inspection
+        <ArrowRight className="w-4 h-4" aria-hidden="true" />
       </a>
     </div>
   );

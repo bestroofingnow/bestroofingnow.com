@@ -20,36 +20,38 @@ export function FAQ({
 
   return (
     <section
-      className="section bg-light"
+      className="section bg-white"
       aria-labelledby="faq-section-title"
     >
       <div className="container">
         <div className="max-w-3xl mx-auto">
-          {/* Section Header */}
-          <header className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
-              <HelpCircle className="w-4 h-4" aria-hidden="true" />
-              <span className="text-sm font-semibold">FAQ</span>
+          {/* Editorial section header */}
+          <header className="mb-10 md:mb-12">
+            <div className="inline-flex items-center gap-2 mb-3">
+              <HelpCircle className="w-3.5 h-3.5 text-copper" aria-hidden="true" />
+              <span className="eyebrow">FAQ</span>
             </div>
             <h2
               id="faq-section-title"
-              className="text-3xl md:text-4xl font-bold text-primary mb-4"
+              className="heading-display text-[28px] sm:text-[32px] md:text-[40px] mb-3"
             >
               {title}
             </h2>
-            <p className="text-gray text-lg">{subtitle}</p>
+            <p className="text-slate text-[15px] md:text-[16px] leading-[1.65] max-w-2xl">
+              {subtitle}
+            </p>
           </header>
 
           {/* FAQ Accordion - JSON-LD schema is handled separately via FAQSchema component */}
-          <div className="space-y-4" role="list">
+          <div className="border-t border-line" role="list">
             {faqs.map((faq, index) => (
               <article
                 key={index}
-                className="bg-white rounded-xl shadow-md overflow-hidden"
+                className="border-b border-line"
                 role="listitem"
               >
                 <button
-                  className="w-full flex items-center justify-between p-6 text-left"
+                  className="w-full flex items-center justify-between py-5 text-left group"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   aria-expanded={openIndex === index}
                   aria-controls={`faq-answer-${index}`}
@@ -57,14 +59,14 @@ export function FAQ({
                 >
                   <span
                     id={`faq-question-${index}`}
-                    className="font-semibold text-dark pr-4"
+                    className="font-display font-medium text-navy text-[17px] md:text-[18px] pr-4 group-hover:text-copper transition-colors"
                   >
                     {faq.question}
                   </span>
                   <ChevronDown
                     className={cn(
-                      'w-5 h-5 text-primary flex-shrink-0 transition-transform duration-200',
-                      openIndex === index && 'rotate-180'
+                      'w-4 h-4 text-mute flex-shrink-0 transition-transform duration-200',
+                      openIndex === index && 'rotate-180 text-copper'
                     )}
                     aria-hidden="true"
                   />
@@ -78,7 +80,7 @@ export function FAQ({
                   role="region"
                   aria-labelledby={`faq-question-${index}`}
                 >
-                  <div className="px-6 pb-6 text-gray leading-relaxed">
+                  <div className="pb-5 pr-8 text-slate text-[14.5px] leading-[1.65]">
                     {faq.answer}
                   </div>
                 </div>
@@ -87,11 +89,11 @@ export function FAQ({
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-10">
-            <p className="text-gray mb-4">Still have questions?</p>
+          <div className="mt-10">
+            <p className="text-slate text-[14px] mb-3">Still have questions?</p>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+              className="inline-flex items-center gap-1.5 text-navy text-[12.5px] font-semibold uppercase tracking-[0.08em] hover:text-copper transition-colors"
             >
               Contact us for a free consultation →
             </a>

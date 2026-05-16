@@ -3,7 +3,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Shield, Clock } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import { Button } from '@/components/ui/Button';
 import { trackPhoneClick } from '@/lib/utils';
@@ -29,46 +29,64 @@ export function Header() {
 
   return (
     <>
-      {/* Top Bar - Maintenance Plan CTA */}
-      <div className="bg-primary text-white py-2 text-sm hidden md:block">
-        <div className="container flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <span className="font-semibold">🛡️ Save $1,000s — Get Your Roof Maintenance Plan Today Starting at Just $49/mo</span>
-            <Link
-              href="/services/roof-maintenance"
-              className="bg-accent hover:bg-accent-dark text-white text-xs font-bold px-3 py-1 rounded-full transition-colors"
-            >
-              Learn More
+      {/* Top Bar - editorial trust strip */}
+      <div className="bg-navy-deep text-white text-[12px] hidden md:block">
+        <div className="container flex justify-between items-center py-2">
+          <div className="flex items-center gap-4 lg:gap-5">
+            <span className="inline-flex items-center gap-1.5">
+              <Shield className="w-3 h-3 text-gold" aria-hidden="true" />
+              Veteran-Owned
+            </span>
+            <span className="text-white/40" aria-hidden="true">·</span>
+            <span>BBB A+ Accredited</span>
+            <span className="text-white/40" aria-hidden="true">·</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Clock className="w-3 h-3 text-gold" aria-hidden="true" />
+              24/7 Emergency
+            </span>
+            <span className="text-white/40 hidden lg:inline" aria-hidden="true">·</span>
+            <Link href="/services/roof-maintenance" className="hidden lg:inline text-white/80 hover:text-white">
+              Save $1,000s — Get Your Roof Maintenance Plan Today Starting at Just $49/mo
             </Link>
           </div>
-          <a
-            href={`tel:${SITE_CONFIG.phoneClean}`}
-            className="flex items-center gap-2 font-semibold hover:text-accent-light transition-colors"
-            aria-label={`Call us at ${SITE_CONFIG.phone}`}
-            onClick={() => trackPhoneClick('header-top-bar')}
-          >
-            <Phone className="w-4 h-4" aria-hidden="true" />
-            {SITE_CONFIG.phone}
-          </a>
+          <div className="flex items-center gap-4 lg:gap-5">
+            <span className="text-white/70 hidden lg:inline">Financing available</span>
+            <a
+              href={`tel:${SITE_CONFIG.phoneClean}`}
+              className="font-semibold tabular hover:text-gold transition-colors"
+              aria-label={`Call us at ${SITE_CONFIG.phone}`}
+              onClick={() => trackPhoneClick('header-top-bar')}
+            >
+              {SITE_CONFIG.phone}
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Main Header - uses CSS scroll-driven shadow instead of JS listener */}
-      <header className="sticky top-0 z-50 bg-white shadow-sm header-scroll-shadow">
+      {/* Main Header - hairline border + scroll shadow */}
+      <header className="sticky top-0 z-50 bg-white border-b border-line header-scroll-shadow">
         <div className="container">
-          <div className="flex items-center justify-between h-28">
+          <div className="flex items-center justify-between h-24 lg:h-[88px]">
             {/* Logo - critical for LCP */}
-            <Link href="/" className="flex-shrink-0 flex items-center">
+            <Link href="/" className="flex-shrink-0 flex items-center gap-3.5">
               <Image
                 src="/images/logo.jpg"
                 alt={SITE_CONFIG.name}
                 width={180}
                 height={80}
-                className="h-20 w-auto"
+                className="h-16 lg:h-[60px] w-auto"
                 priority
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
               />
+              <span className="hidden xl:flex flex-col leading-tight pl-3.5 border-l border-line">
+                <span className="text-[10px] tracking-[0.18em] uppercase font-semibold text-mute">
+                  Charlotte · Lake Norman
+                </span>
+                <span className="text-[11px] font-semibold text-copper mt-0.5">
+                  Veteran-Owned · Since 2020
+                </span>
+              </span>
             </Link>
 
             {/* Desktop Navigation - Lazy loaded MegaMenu */}
@@ -77,17 +95,17 @@ export function Header() {
             </Suspense>
 
             {/* CTA Buttons - Desktop */}
-            <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-4">
               <a
                 href={`tel:${SITE_CONFIG.phoneClean}`}
-                className="phone-link flex items-center gap-2"
+                className="inline-flex items-center gap-2 text-navy font-semibold text-[14px] tabular hover:text-accent transition-colors"
                 aria-label={`Call us at ${SITE_CONFIG.phone}`}
                 onClick={() => trackPhoneClick('header-desktop')}
               >
-                <Phone className="w-5 h-5" aria-hidden="true" />
+                <Phone className="w-4 h-4" aria-hidden="true" />
                 {SITE_CONFIG.phone}
               </a>
-              <Button href="/contact" variant="primary">
+              <Button href="/contact" variant="primary" size="sm">
                 Free Inspection
               </Button>
             </div>
@@ -96,7 +114,7 @@ export function Header() {
             <div className="lg:hidden flex items-center gap-2">
               <a
                 href={`tel:${SITE_CONFIG.phoneClean}`}
-                className="flex items-center gap-1.5 px-3 py-3 min-h-[44px] bg-primary text-white rounded-lg font-semibold text-sm"
+                className="flex items-center gap-1.5 px-3 py-3 min-h-[44px] bg-accent text-white rounded-[2px] font-semibold text-[12.5px] uppercase tracking-[0.06em]"
                 aria-label={`Call ${SITE_CONFIG.phone}`}
                 onClick={() => trackPhoneClick('header-mobile')}
               >
@@ -104,7 +122,7 @@ export function Header() {
                 <span className="hidden sm:inline">Call Now</span>
               </a>
               <button
-                className="p-2 rounded-lg hover:bg-light"
+                className="p-2 rounded-[2px] hover:bg-light text-navy"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={isMobileMenuOpen}

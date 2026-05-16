@@ -1,13 +1,21 @@
 import { SITE_CONFIG, SERVICES, LOCATIONS, SHINGLE_PRODUCTS, SPEAKABLE_CONTENT, VOICE_SEARCH_FAQS, HOWTO_CONTENT, AI_CITATION_CONTENT, FEATURED_SNIPPET_CONTENT } from '@/lib/constants';
 import { getOrganizationAddress, getRoofingContractorIdentity } from '@/lib/schema-helpers';
 
-// Canonical image URLs for schema markup - using real CMS-hosted images
+// Canonical image URLs for schema markup - first-party assets
 const SCHEMA_LOGO = 'https://www.bestroofingnow.com/images/logo.jpg';
-const SCHEMA_HERO = 'https://cms.bestroofingnow.com/wp-content/uploads/2025/07/b5462b39-d7e7-479d-b417-39f82e68ae21-hero-picture.webp';
+const SCHEMA_HERO = 'https://www.bestroofingnow.com/images/stock/hero-craftsman-home.jpg';
 
 // Local Business Schema for the main site - Enhanced for Map Pack ranking
-// includeRating: only set to true on pages that display visible reviews/ratings (homepage, reviews, service pages)
-// Google penalizes aggregateRating on pages without visible review content
+//
+// includeRating RULE (per §9 of .claude/plan/brn-gold-standard.md and Google's review-snippet guidelines):
+// - Default is FALSE. The site-wide layout renders this with the default to avoid emitting
+//   aggregateRating on pages that do not display visible review content (a self-serving review
+//   schema violation per Google: https://developers.google.com/search/docs/appearance/structured-data/review-snippet#about-this-feature).
+// - Set includeRating={true} ONLY on pages that display visible review/testimonial content
+//   sourced from real customers. Approved opt-in pages: /, /reviews, and service+city landing pages
+//   that show testimonials inline.
+// - Do NOT mark up hidden, fabricated, or unverifiable reviews. Do NOT inflate review counts.
+//   Visible review count and rating must match what is shown on the page.
 export function LocalBusinessSchema({ includeRating = false }: { includeRating?: boolean } = {}) {
   // Build comprehensive sameAs array with social + key business profiles
   const sameAsLinks = [

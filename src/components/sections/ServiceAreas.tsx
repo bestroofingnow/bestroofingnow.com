@@ -22,36 +22,36 @@ export function ServiceAreas() {
 
           {/* Content Side */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 mb-4">
-              <MapPin className="w-4 h-4" aria-hidden="true" />
-              <span className="text-sm font-semibold">Service Areas</span>
+            <div className="inline-flex items-center gap-2 mb-3">
+              <MapPin className="w-3.5 h-3.5 text-copper" aria-hidden="true" />
+              <span className="eyebrow">Service Areas</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <h2 className="heading-display text-[28px] sm:text-[32px] md:text-[40px] mb-4">
               See Our Work & Service Areas
             </h2>
 
-            <p className="text-gray text-lg mb-4">
+            <p className="text-slate text-[15px] md:text-[16px] leading-[1.65] mb-3 max-w-xl">
               We provide professional roofing services throughout the Charlotte
               metropolitan area. Whether you&apos;re in the heart of Charlotte or a
               surrounding community, our team is ready to help protect your home.
             </p>
 
-            <p className="text-gray mb-8">
-              <strong>Click the map pins</strong> to view our completed roofing projects in your area.
+            <p className="text-slate text-[14px] leading-[1.65] mb-8 max-w-xl">
+              <strong className="text-navy">Click the map pins</strong> to view our completed roofing projects in your area.
               See before &amp; after photos, project details, and the quality craftsmanship we deliver to homes just like yours.
             </p>
 
-            {/* Locations Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
+            {/* Locations Grid — editorial hairline chips */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-line border border-line mb-8">
               {LOCATIONS.map((location) => (
                 <Link
                   key={location.slug}
                   href={`/locations/${location.slug}`}
-                  className="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md hover:bg-light transition-all group"
+                  className="flex items-center gap-2 px-4 py-3 bg-white hover:bg-cream transition-colors group"
                 >
-                  <MapPin className="w-4 h-4 text-accent flex-shrink-0" aria-hidden="true" />
-                  <span className="text-dark font-medium group-hover:text-primary transition-colors">
+                  <MapPin className="w-3.5 h-3.5 text-copper flex-shrink-0" aria-hidden="true" />
+                  <span className="text-navy text-[13.5px] font-medium group-hover:text-copper transition-colors">
                     {location.city}
                   </span>
                 </Link>
@@ -59,18 +59,18 @@ export function ServiceAreas() {
             </div>
 
             {/* CTA */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
               <Link
                 href="/locations"
-                className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+                className="inline-flex items-center gap-1.5 text-navy text-[12.5px] font-semibold uppercase tracking-[0.08em] hover:text-copper transition-colors"
               >
                 View All Service Areas
-                <ArrowRight className="w-5 h-5" aria-hidden="true" />
+                <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
               </Link>
-              <span className="text-gray">|</span>
+              <span className="text-line" aria-hidden="true">|</span>
               <a
                 href={`tel:${SITE_CONFIG.phoneClean}`}
-                className="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark transition-colors"
+                className="inline-flex items-center gap-2 text-accent text-[13.5px] font-semibold hover:text-accent-dark transition-colors"
               >
                 Not sure if we serve your area? Call us!
               </a>

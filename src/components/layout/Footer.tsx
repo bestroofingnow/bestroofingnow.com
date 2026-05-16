@@ -47,7 +47,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-white mt-12">
+    <footer className="bg-navy-deep text-white/80 mt-12">
       {/* Main Footer */}
       <div className="container py-16 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 text-center lg:text-left">
@@ -58,15 +58,21 @@ export function Footer() {
               alt={SITE_CONFIG.name}
               width={180}
               height={80}
-              className="h-16 w-auto mb-6 brightness-0 invert"
+              className="h-14 w-auto mb-5 brightness-0 invert"
               loading="lazy"
             />
-            <p className="text-white mb-6">
+            <p className="text-white/75 text-[13.5px] leading-relaxed mb-5">
               Family-owned, veteran-operated residential, commercial & industrial
               roofing company serving Charlotte and surrounding areas since 2020.
               We believe in honesty, transparency, and doing the right thing for
               every customer.
             </p>
+            {/* Cert chips */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-5">
+              <span className="px-3 py-1.5 bg-white/10 rounded-[2px] text-[11px] font-semibold text-white">BBB A+</span>
+              <span className="px-3 py-1.5 bg-white/10 rounded-[2px] text-[11px] font-semibold text-white">GAF Master Elite</span>
+              <span className="px-3 py-1.5 bg-white/10 rounded-[2px] text-[11px] font-semibold text-white">Veteran-Owned</span>
+            </div>
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-2" role="img" aria-label={`Rated ${SITE_CONFIG.googleRating} out of 5 stars based on ${SITE_CONFIG.googleReviewCount} Google reviews`}>
               <div className="stars" aria-hidden="true">
                 {[...Array(5)].map((_, i) => (
@@ -102,8 +108,8 @@ export function Footer() {
               ))}
             </div>
             {/* Directory Listings - Enhanced */}
-            <div className="mt-4 pt-4 border-t border-white/10">
-              <p className="text-white/70 text-sm mb-2">Verified On:</p>
+            <div className="mt-2 pt-5 border-t border-white/10">
+              <p className="text-[10px] tracking-[0.18em] uppercase font-semibold text-white/60 mb-2">Verified On:</p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-x-3 gap-y-1 text-sm">
                 {/* Review Platforms */}
                 {getLinksByCategory('reviews').slice(0, 4).map((link, idx) => (
@@ -113,7 +119,7 @@ export function Footer() {
                   </span>
                 ))}
               </div>
-              <p className="text-white/70 text-sm mb-2 mt-3">Certifications:</p>
+              <p className="text-[10px] tracking-[0.18em] uppercase font-semibold text-white/60 mb-2 mt-3">Certifications:</p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-x-3 gap-y-1 text-sm">
                 {/* Certification Links */}
                 {getLinksByCategory('certification').map((link, idx, arr) => (
@@ -135,13 +141,13 @@ export function Footer() {
 
           {/* Services */}
           <div className="lg:col-span-2">
-            <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
+            <h3 className="text-[11px] tracking-[0.18em] uppercase font-bold mb-5 text-white">Our Services</h3>
             <ul className="space-y-3">
               {SERVICES.slice(0, 6).map((service) => (
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-white hover:text-white transition-colors"
+                    className="text-white/75 hover:text-white text-[13.5px] transition-colors"
                   >
                     {service.title}
                   </Link>
@@ -150,7 +156,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="text-accent-light hover:text-white font-medium"
+                  className="text-copper-light hover:text-white font-medium text-[13.5px]"
                 >
                   View All Services →
                 </Link>
@@ -158,25 +164,25 @@ export function Footer() {
             </ul>
 
             {/* Popular intents in Charlotte */}
-            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Popular in Charlotte</h3>
+            <h3 className="text-[11px] tracking-[0.18em] uppercase font-bold mb-4 mt-8 text-white">Popular in Charlotte</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/roof-repair-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roof-repair-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roof Repair
                 </Link>
               </li>
               <li>
-                <Link href="/roof-replacement-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roof-replacement-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roof Replacement
                 </Link>
               </li>
               <li>
-                <Link href="/storm-damage-roof-repair-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/storm-damage-roof-repair-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Storm Damage
                 </Link>
               </li>
               <li>
-                <Link href="/roof-inspection-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roof-inspection-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Free Inspection
                 </Link>
               </li>
@@ -185,40 +191,40 @@ export function Footer() {
 
           {/* Commercial & Industrial */}
           <div className="lg:col-span-2">
-            <h3 className="text-lg font-bold mb-6 text-white">Commercial & Industrial</h3>
+            <h3 className="text-[11px] tracking-[0.18em] uppercase font-bold mb-5 text-white">Commercial & Industrial</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/commercial-roofing-services" className="text-white hover:text-white transition-colors">
+                <Link href="/commercial-roofing-services" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Commercial Roofing
                 </Link>
               </li>
               <li>
-                <Link href="/industrial-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/industrial-roofing-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Industrial Roofing
                 </Link>
               </li>
               <li>
-                <Link href="/warehouse-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/warehouse-roofing-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Warehouse Roofing
                 </Link>
               </li>
               <li>
-                <Link href="/office-building-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/office-building-roofing-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Office Buildings
                 </Link>
               </li>
               <li>
-                <Link href="/healthcare-facility-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/healthcare-facility-roofing-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Healthcare Facilities
                 </Link>
               </li>
               <li>
-                <Link href="/distribution-center-roofing-charlotte-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/distribution-center-roofing-charlotte-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Distribution Centers
                 </Link>
               </li>
               <li>
-                <Link href="/commercial-systems" className="text-accent-light hover:text-white font-medium">
+                <Link href="/commercial-systems" className="text-copper-light hover:text-white font-medium text-[13.5px]">
                   View All Building Types →
                 </Link>
               </li>
@@ -227,13 +233,13 @@ export function Footer() {
 
           {/* Locations & Service-City Pages */}
           <div className="lg:col-span-2">
-            <h3 className="text-lg font-bold mb-6 text-white">Service Areas</h3>
+            <h3 className="text-[11px] tracking-[0.18em] uppercase font-bold mb-5 text-white">Service Areas</h3>
             <ul className="space-y-3">
               {LOCATIONS.slice(0, 8).map((location) => (
                 <li key={location.slug}>
                   <Link
                     href={`/locations/${location.slug}`}
-                    className="text-white hover:text-white transition-colors"
+                    className="text-white/75 hover:text-white text-[13.5px] transition-colors"
                   >
                     {location.city}, {location.state}
                   </Link>
@@ -242,7 +248,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/locations"
-                  className="text-accent-light hover:text-white font-medium"
+                  className="text-copper-light hover:text-white font-medium text-[13.5px]"
                 >
                   View All Locations →
                 </Link>
@@ -250,70 +256,70 @@ export function Footer() {
             </ul>
 
             {/* Lake Norman & Surrounding Service Links */}
-            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Lake Norman Area</h3>
+            <h3 className="text-[11px] tracking-[0.18em] uppercase font-bold mb-4 mt-8 text-white">Lake Norman Area</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/roofing-lake-norman-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-lake-norman-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Lake Norman NC
                 </Link>
               </li>
               <li>
-                <Link href="/roof-repair-lake-norman-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roof-repair-lake-norman-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roof Repair Lake Norman
                 </Link>
               </li>
               <li>
-                <Link href="/roof-replacement-lake-norman-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roof-replacement-lake-norman-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roof Replacement Lake Norman
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-mooresville-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-mooresville-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Mooresville NC
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-cornelius-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-cornelius-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Cornelius NC
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-huntersville-nc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-huntersville-nc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Huntersville NC
                 </Link>
               </li>
             </ul>
 
             {/* Lake Wylie & South Charlotte */}
-            <h3 className="text-lg font-bold mb-4 mt-8 text-white">Lake Wylie &amp; South Charlotte</h3>
+            <h3 className="text-[11px] tracking-[0.18em] uppercase font-bold mb-4 mt-8 text-white">Lake Wylie &amp; South Charlotte</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/roofing-lake-wylie-sc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-lake-wylie-sc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Lake Wylie SC
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-tega-cay-sc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-tega-cay-sc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Tega Cay SC
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-fort-mill-sc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-fort-mill-sc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Fort Mill SC
                 </Link>
               </li>
               <li>
-                <Link href="/roof-repair-lake-wylie-sc" className="text-white hover:text-white transition-colors">
+                <Link href="/roof-repair-lake-wylie-sc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roof Repair Lake Wylie
                 </Link>
               </li>
               <li>
-                <Link href="/roof-replacement-lake-wylie-sc" className="text-white hover:text-white transition-colors">
+                <Link href="/roof-replacement-lake-wylie-sc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roof Replacement Lake Wylie
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-rock-hill-sc" className="text-white hover:text-white transition-colors">
+                <Link href="/roofing-rock-hill-sc" className="text-white/75 hover:text-white text-[13.5px] transition-colors">
                   Roofing Rock Hill SC
                 </Link>
               </li>
@@ -322,39 +328,39 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
-            <h3 className="text-lg font-bold mb-6 text-white">Contact Us</h3>
+            <h3 className="text-[11px] tracking-[0.18em] uppercase font-bold mb-5 text-white">Contact Us</h3>
             <ul className="space-y-4">
               <li>
                 <a
                   href={`tel:${SITE_CONFIG.phoneClean}`}
-                  className="flex items-center lg:items-start gap-3 text-white hover:text-white transition-colors"
+                  className="flex items-center lg:items-start gap-3 text-white hover:text-gold transition-colors"
                   aria-label={`Call us at ${SITE_CONFIG.phone}`}
                   onClick={() => trackPhoneClick('footer')}
                 >
-                  <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                  <span className="font-semibold text-lg">{SITE_CONFIG.phone}</span>
+                  <Phone className="w-4 h-4 mt-1 flex-shrink-0 text-copper-light" aria-hidden="true" />
+                  <span className="font-semibold text-[16px] tabular">{SITE_CONFIG.phone}</span>
                 </a>
               </li>
               <li>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="flex items-center lg:items-start gap-3 text-white hover:text-white transition-colors"
+                  className="flex items-center lg:items-start gap-3 text-white/75 hover:text-white text-[13.5px] transition-colors"
                   aria-label={`Email us at ${SITE_CONFIG.email}`}
                 >
-                  <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-copper-light" aria-hidden="true" />
                   <span>{SITE_CONFIG.email}</span>
                 </a>
               </li>
-              <li className="flex items-center lg:items-start gap-3 text-white">
-                <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <li className="flex items-center lg:items-start gap-3 text-white/75 text-[13.5px]">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-copper-light" aria-hidden="true" />
                 <span>
                   {SITE_CONFIG.address.street}<br />
                   {SITE_CONFIG.address.suite}<br />
                   {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}
                 </span>
               </li>
-              <li className="flex items-center lg:items-start gap-3 text-white">
-                <Clock className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <li className="flex items-center lg:items-start gap-3 text-white/75 text-[13.5px]">
+                <Clock className="w-4 h-4 mt-0.5 flex-shrink-0 text-copper-light" aria-hidden="true" />
                 <span>{SITE_CONFIG.hours}</span>
               </li>
             </ul>
@@ -380,30 +386,30 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container py-8 pb-12 md:pb-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="container py-5 pb-10 md:pb-5">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3">
             <div className="text-center md:text-left">
-              <p className="text-white/90 text-sm">
+              <p className="text-white/55 text-[12px]">
                 © {getCurrentYear()} {SITE_CONFIG.name}. All rights reserved.
               </p>
-              <p className="text-white/70 text-xs mt-1">
+              <p className="text-white/45 text-[11px] mt-0.5">
                 Fully Insured | Veteran-Owned & Family-Operated
               </p>
             </div>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
-              <Link href="/privacy-policy" className="text-white/90 hover:text-white">
+            <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-[12px]">
+              <Link href="/privacy-policy" className="text-white/65 hover:text-white">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-white/90 hover:text-white">
+              <Link href="/terms" className="text-white/65 hover:text-white">
                 Terms of Service
               </Link>
-              <Link href="/site-map" className="text-white/90 hover:text-white">
+              <Link href="/site-map" className="text-white/65 hover:text-white">
                 Sitemap
               </Link>
-              <Link href="/videos" className="text-white/90 hover:text-white">
+              <Link href="/videos" className="text-white/65 hover:text-white">
                 Videos
               </Link>
-              <Link href="/trusted-partners" className="text-white/90 hover:text-white">
+              <Link href="/trusted-partners" className="text-white/65 hover:text-white">
                 Trusted Partners
               </Link>
             </div>

@@ -41,42 +41,52 @@ export function Services({
   const displayedServices = showAll ? SERVICES : SERVICES.slice(0, limit);
 
   return (
-    <section className="section bg-light overflow-hidden">
+    <section className="section bg-white overflow-hidden">
       <div className="container">
-        {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
-            {title}
-          </h2>
-          <p className="text-gray text-base md:text-lg">{subtitle}</p>
+        {/* Editorial section header — 2-col split */}
+        <div className="grid md:grid-cols-2 gap-8 md:gap-14 items-end mb-10 md:mb-12">
+          <div>
+            <div className="eyebrow mb-3">Services</div>
+            <h2 className="heading-display text-[28px] sm:text-[34px] md:text-[44px]">
+              {title}
+            </h2>
+          </div>
+          <p className="text-slate text-[15px] md:text-[16px] leading-[1.65] md:max-w-md">
+            {subtitle}
+          </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {displayedServices.map((service) => {
+        {/* Services grid — hairline borders, tag prefix */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-line">
+          {displayedServices.map((service, i) => {
             const Icon = iconMap[service.icon] || Home;
+            const tag = String(i + 1).padStart(2, '0');
+            const isLastCol = (i + 1) % 3 === 0;
 
             return (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="block p-4 md:p-6 bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full"
+                className={`group block px-6 py-7 md:px-7 md:py-8 border-b border-line lg:border-r ${
+                  isLastCol ? 'lg:border-r-0' : ''
+                } hover:bg-cream transition-colors`}
               >
-                <div className="flex items-start gap-3 md:gap-4">
-                  <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
-                    <Icon className="w-6 h-6 md:w-7 md:h-7 text-primary group-hover:text-white transition-colors duration-300" aria-hidden="true" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-base md:text-lg font-bold text-dark mb-1 md:mb-2 group-hover:text-primary transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray text-sm mb-3 md:mb-4 line-clamp-2">{service.description}</p>
-                    <div className="flex items-center text-primary font-medium text-sm group-hover:text-accent transition-colors">
-                      Learn More
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                    </div>
-                  </div>
+                <div className="flex items-baseline justify-between mb-4">
+                  <span className="font-display italic text-copper text-[26px] font-light leading-none">
+                    {tag}
+                  </span>
+                  <Icon className="w-5 h-5 text-mute group-hover:text-copper transition-colors" aria-hidden="true" />
                 </div>
+                <h3 className="font-display font-medium text-navy text-[19px] md:text-[20px] tracking-[-0.01em] mb-2.5 leading-snug">
+                  {service.title}
+                </h3>
+                <p className="text-slate text-[13.5px] leading-[1.6] mb-4 line-clamp-3">
+                  {service.description}
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-navy text-[11.5px] font-semibold uppercase tracking-[0.08em] group-hover:text-copper transition-colors">
+                  Learn more
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
+                </span>
               </Link>
             );
           })}
@@ -84,13 +94,13 @@ export function Services({
 
         {/* View All Link */}
         {!showAll && SERVICES.length > limit && (
-          <div className="text-center mt-8 md:mt-10">
+          <div className="text-center mt-10 md:mt-12">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent hover:scale-105 transition-all"
+              className="inline-flex items-center gap-2 text-navy font-semibold text-[12.5px] uppercase tracking-[0.08em] hover:text-copper transition-colors"
             >
               View All Services
-              <ArrowRight className="w-5 h-5" aria-hidden="true" />
+              <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
             </Link>
           </div>
         )}

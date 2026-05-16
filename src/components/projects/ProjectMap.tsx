@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { MapPin, Camera, ChevronRight, X, Loader2, Filter, ZoomIn, ZoomOut, Maximize2 } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 interface MapMarker {
   id: string;
@@ -43,6 +44,7 @@ export function ProjectMap({
   showCityFilter = false,
   onMarkerClick,
 }: ProjectMapProps) {
+  const router = useRouter();
   const [markers, setMarkers] = useState<MapMarker[]>(initialMarkers || []);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -239,7 +241,7 @@ export function ProjectMap({
               ${formattedDate ? `<span>📅 ${formattedDate}</span>` : ''}
             </div>
             ${marker.slug ? `
-              <button onclick="window.location.href='/projects/${marker.slug}'" style="display: inline-block; margin-top: 8px; padding: 8px 16px; background: #1d4ed8; color: white; font-size: 13px; font-weight: 500; border-radius: 6px; border: none; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#1d4ed8'">
+              <button data-project-slug="${marker.slug}" style="display: inline-block; margin-top: 8px; padding: 8px 16px; background: #1d4ed8; color: white; font-size: 13px; font-weight: 500; border-radius: 6px; border: none; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#1d4ed8'">
                 View Project →
               </button>
             ` : ''}
@@ -263,7 +265,9 @@ export function ProjectMap({
                 btn.onclick = (e: MouseEvent) => {
                   e.preventDefault();
                   e.stopPropagation();
-                  window.location.href = `/projects/${marker.slug}`;
+                  // Use Next router instead of window.location.href to preserve SPA history
+                  // (per §13 of brn-gold-standard plan; June 15 2026 spam-policy compliance)
+                  router.push(`/projects/${marker.slug}`);
                 };
               }
             }

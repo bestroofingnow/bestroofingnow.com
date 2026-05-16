@@ -14,6 +14,7 @@ import {
   Star,
   CreditCard,
   FileText,
+  AlertTriangle,
 } from 'lucide-react';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
 import { cn, trackPhoneClick } from '@/lib/utils';
@@ -44,10 +45,19 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
           onClick={() => trackPhoneClick('mobile-menu')}
         >
           <Phone className="w-5 h-5" aria-hidden="true" />
-          Call {SITE_CONFIG.phone}
+          Active Leak? Call {SITE_CONFIG.phone}
         </a>
 
         <div className="space-y-1">
+          <Link
+            href="/emergency-roof-repair-charlotte-nc"
+            className="flex items-center gap-2 py-4 font-medium border-b border-gray-100 text-accent"
+            onClick={onClose}
+          >
+            <AlertTriangle className="w-5 h-5" aria-hidden="true" />
+            Emergency Roof Repair
+          </Link>
+
           {/* Services Accordion */}
           <div className="border-b border-gray-100">
             <button
@@ -274,8 +284,11 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
             className="flex items-center justify-center gap-2 w-full py-4 bg-accent text-white rounded-lg font-semibold text-lg"
             onClick={onClose}
           >
-            Get Free Inspection
+            Schedule Free Roof Inspection
           </Link>
+          <p className="mt-2 text-center text-xs text-gray-500">
+            Photos, plain-English recommendations, and no pressure to replace what can be repaired.
+          </p>
         </div>
       </div>
     </nav>

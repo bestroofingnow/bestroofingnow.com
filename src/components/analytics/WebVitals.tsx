@@ -1,52 +1,37 @@
 'use client';
 
 import { useEffect } from 'react';
-
-// Web Vitals types (FID replaced by INP in web-vitals v4+)
-type MetricName = 'CLS' | 'FCP' | 'INP' | 'LCP' | 'TTFB';
+import { rateMetric, type MetricName, type Rating } from '@/lib/performance/web-vitals-thresholds';
 
 interface Metric {
   name: MetricName;
   value: number;
-  rating: 'good' | 'needs-improvement' | 'poor';
+  googleRating: Rating;
+  internalRating: Rating;
   delta: number;
   id: string;
 }
 
-// Thresholds for Core Web Vitals (2024 standards)
-const thresholds: Record<MetricName, { good: number; poor: number }> = {
-  CLS: { good: 0.1, poor: 0.25 },      // Cumulative Layout Shift
-  FCP: { good: 1800, poor: 3000 },     // First Contentful Paint (ms)
-  INP: { good: 200, poor: 500 },       // Interaction to Next Paint (ms)
-  LCP: { good: 2500, poor: 4000 },     // Largest Contentful Paint (ms)
-  TTFB: { good: 800, poor: 1800 },     // Time to First Byte (ms)
-};
-
-function getRating(name: MetricName, value: number): 'good' | 'needs-improvement' | 'poor' {
-  const threshold = thresholds[name];
-  if (value <= threshold.good) return 'good';
-  if (value <= threshold.poor) return 'needs-improvement';
-  return 'poor';
-}
-
-// Report metrics to console in development, analytics in production
 function reportMetric(metric: Metric) {
-  // Log to console in development
   if (process.env.NODE_ENV === 'development') {
-    const emoji = metric.rating === 'good' ? '✅' : metric.rating === 'needs-improvement' ? '⚠️' : '❌';
+    const emoji = metric.googleRating === 'good' ? '✅' : metric.googleRating === 'needs-improvement' ? '⚠️' : '❌';
+    const internalEmoji = metric.internalRating === 'good' ? '🏆' : metric.internalRating === 'needs-improvement' ? '🔍' : '🚧';
+    // eslint-disable-next-line no-console
     console.log(
-      `${emoji} Web Vital: ${metric.name}`,
+      `${emoji} ${metric.name}`,
       `| Value: ${metric.value.toFixed(metric.name === 'CLS' ? 3 : 0)}`,
-      `| Rating: ${metric.rating}`
+      `| Google: ${metric.googleRating}`,
+      `| Internal: ${internalEmoji} ${metric.internalRating}`
     );
   }
 
-  // Send to analytics in production (Google Analytics 4, etc.)
   if (typeof window !== 'undefined' && 'gtag' in window) {
-    (window as any).gtag('event', metric.name, {
+    (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', metric.name, {
       value: Math.round(metric.name === 'CLS' ? metric.delta * 1000 : metric.delta),
       event_category: 'Web Vitals',
       event_label: metric.id,
+      google_rating: metric.googleRating,
+      internal_rating: metric.internalRating,
       non_interaction: true,
     });
   }
@@ -54,23 +39,21 @@ function reportMetric(metric: Metric) {
 
 export function WebVitals() {
   useEffect(() => {
-    // Dynamically import web-vitals to avoid blocking initial render
-    // Note: FID was replaced by INP in web-vitals v4+
     import('web-vitals').then(({ onCLS, onFCP, onINP, onLCP, onTTFB }) => {
-      const handleMetric = (metric: any) => {
-        const webVitalMetric: Metric = {
+      const handleMetric = (metric: { name: MetricName; value: number; delta: number; id: string }) => {
+        reportMetric({
           name: metric.name,
           value: metric.value,
-          rating: getRating(metric.name, metric.value),
+          googleRating: rateMetric(metric.name, metric.value, 'google'),
+          internalRating: rateMetric(metric.name, metric.value, 'internal'),
           delta: metric.delta,
           id: metric.id,
-        };
-        reportMetric(webVitalMetric);
+        });
       };
 
       onCLS(handleMetric);
       onFCP(handleMetric);
-      onINP(handleMetric); // INP replaced FID as Core Web Vital
+      onINP(handleMetric);
       onLCP(handleMetric);
       onTTFB(handleMetric);
     }).catch(() => {

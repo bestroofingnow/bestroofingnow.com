@@ -51,58 +51,62 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="section bg-gradient-to-br from-primary via-primary to-primary-dark text-white overflow-hidden relative">
-      {/* Static Background Elements - hidden on mobile for better performance */}
-      <div className="absolute inset-0 overflow-hidden hidden md:block" aria-hidden="true">
-        <div className="absolute top-10 right-10 w-64 h-64 bg-white/5 rounded-full" />
-        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/10 rounded-full" />
-      </div>
-
+    <section className="section bg-cream text-ink overflow-hidden relative">
       <div className="container relative z-10">
-        {/* Section Header */}
+        {/* Editorial section header */}
         <FadeInUp>
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="flex justify-center mb-4" role="img" aria-label="5 star rating">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className="w-8 h-8 fill-yellow-400 text-yellow-400"
-                  aria-hidden="true"
-                />
-              ))}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12">
+            <div>
+              <div className="eyebrow mb-3">Reviews</div>
+              <h2 className="heading-display text-[28px] sm:text-[32px] md:text-[40px] max-w-2xl">
+                {SITE_CONFIG.googleRating} Star Rating from {SITE_CONFIG.googleReviewCount}+ Reviews
+              </h2>
+              <p className="text-slate text-[15px] md:text-[16px] leading-[1.65] mt-3 max-w-xl">
+                Do not just take our word for it. Here is what Charlotte homeowners say about working with us.
+              </p>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-              {SITE_CONFIG.googleRating} Star Rating from {SITE_CONFIG.googleReviewCount}+ Reviews
-            </h2>
-            <p className="text-white/90 text-lg">
-              Do not just take our word for it. Here is what Charlotte homeowners say about working with us.
-            </p>
+            <div className="flex flex-col items-start md:items-end gap-1" role="img" aria-label={`${SITE_CONFIG.googleRating} star rating`}>
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="w-4 h-4 fill-gold text-gold"
+                    aria-hidden="true"
+                  />
+                ))}
+              </div>
+              <div className="text-[12px] text-slate mt-1">
+                {SITE_CONFIG.googleRating} · Google · {SITE_CONFIG.googleReviewCount}+ reviews
+              </div>
+            </div>
           </div>
         </FadeInUp>
 
-        {/* Testimonial Grid — 3 visible on desktop, stacked on mobile */}
+        {/* Testimonial Grid — editorial cards, white on cream */}
         <FadeInUp delay={0.2}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {testimonials.slice(0, 6).map((t, idx) => (
               <div
                 key={idx}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 flex flex-col"
+                className="relative bg-white p-7 rounded-[4px] flex flex-col"
               >
-                <Quote className="w-8 h-8 text-accent-light mb-3 flex-shrink-0" aria-hidden="true" />
-                <p className="text-white/95 text-sm leading-relaxed mb-4 flex-1">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="flex items-center gap-2 mb-2" role="img" aria-label={`${t.rating} out of 5 stars`}>
+                <Quote className="absolute top-5 right-5 w-7 h-7 text-copper opacity-25" aria-hidden="true" />
+                <div className="flex gap-0.5 mb-3.5" role="img" aria-label={`${t.rating} out of 5 stars`}>
                   {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-gold text-gold" aria-hidden="true" />
                   ))}
                 </div>
-                <div className="flex items-baseline justify-between gap-2 pt-3 border-t border-white/10">
+                <p className="text-slate text-[14.5px] leading-[1.55] mb-6 flex-1">
+                  {t.text}
+                </p>
+                <div className="flex items-end justify-between gap-2 pt-4 border-t border-line">
                   <div>
-                    <p className="font-semibold text-white text-sm">{t.name}</p>
-                    <p className="text-white/70 text-xs">{t.location}</p>
+                    <p className="font-semibold text-navy text-[13.5px]">{t.name}</p>
+                    <p className="text-mute text-[12px] mt-0.5">{t.location}</p>
                   </div>
-                  <span className="text-xs text-accent-light whitespace-nowrap">{t.service}</span>
+                  <span className="text-[10px] tracking-[0.14em] uppercase text-mute font-semibold whitespace-nowrap">
+                    {t.service}
+                  </span>
                 </div>
               </div>
             ))}
@@ -116,9 +120,9 @@ export function Testimonials() {
               href="https://www.google.com/search?q=Best+Roofing+Now+Charlotte+NC+reviews"
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-2 bg-white text-primary font-semibold py-3 px-6 rounded-lg hover:bg-white/90 hover:scale-105 hover:shadow-xl transition-all duration-300 shadow-lg"
+              className="inline-flex items-center gap-2 bg-navy text-white font-semibold py-3.5 px-6 rounded-[2px] uppercase tracking-[0.08em] text-[12.5px] hover:bg-navy-deep transition-colors"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
