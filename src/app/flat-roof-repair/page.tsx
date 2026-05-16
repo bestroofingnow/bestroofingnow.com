@@ -36,21 +36,12 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Flat Roof Repair Charlotte NC',
+  // Title rewritten 2026-05-11: page ranks pos 9 for "flat roof repair charlotte nc" (80/mo, KD 0).
+  // Multiple commercial cluster keywords pos 11-13 (commercial roof maintenance contractor, scheduled
+  // commercial roof inspection, etc). Title now signals commercial expertise plus trust badge.
+  title: 'Flat Roof Repair Charlotte NC | Commercial & Residential | TPO EPDM',
   description:
-    'Expert flat roof repair in Charlotte NC — TPO, EPDM, PVC, modified bitumen. Seam welds, ponding water correction, blister patching, emergency response. BBB A+ rated.',
-  keywords: [
-    'flat roof repair charlotte nc',
-    'flat roof leak repair charlotte',
-    'commercial flat roof repair',
-    'tpo roof repair charlotte',
-    'epdm roof repair charlotte nc',
-    'pvc roof repair charlotte',
-    'modified bitumen repair nc',
-    'ponding water flat roof',
-    'flat roof seam repair',
-    'low slope roof repair charlotte',
-  ],
+    'Expert flat roof repair in Charlotte NC — TPO, EPDM, PVC, modified bitumen. Commercial maintenance contracts, 24/7 emergency response, scheduled inspections. BBB A+ · 5-star rated. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-repair`,
   },
@@ -284,6 +275,85 @@ export default function FlatRoofRepairPage() {
                 <Link href="/services/commercial-roof-maintenance" className="text-primary hover:underline">Commercial PM Programs</Link>{' · '}
                 <Link href="/services/emergency-roofing" className="text-primary hover:underline">Emergency Response</Link>
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commercial flat roof maintenance — added 2026-05-11. Anchors GSC near-misses at pos 11-13:
+          "commercial roof maintenance contractor", "scheduled commercial roof inspection",
+          "preventative commercial roof maintenance", "flat roof maintenance commercial",
+          "commercial roof installation service". */}
+      <section id="commercial-flat-roof-maintenance" className="section bg-white">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">Commercial Flat Roofs</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Charlotte&apos;s Commercial Roof Maintenance Contractor
+              </h2>
+              <p className="text-gray text-lg max-w-3xl mx-auto">
+                Best Roofing Now is a full-service commercial roof maintenance contractor for Charlotte
+                NC and Mecklenburg County. Our preventative commercial roof maintenance programs cover
+                TPO, EPDM, PVC, modified bitumen, and BUR systems on warehouses, retail, medical,
+                multi-family, and industrial properties.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div id="scheduled-commercial-roof-inspection" className="bg-light rounded-xl p-6 border border-gray-100">
+                <Calendar className="w-8 h-8 text-primary mb-3" aria-hidden="true" />
+                <h3 className="text-xl font-bold text-primary mb-2">Scheduled Commercial Roof Inspection</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  Two visits per year (spring after pollen-off, fall before leaf drop). Drone and
+                  walk-on inspection, infrared moisture scan, drain/scupper cleanout, seam probe
+                  testing, and a written condition report with photos. Documentation supports warranty
+                  claims and insurance underwriting.
+                </p>
+              </div>
+              <div id="preventative-commercial-roof-maintenance" className="bg-light rounded-xl p-6 border border-gray-100">
+                <Wrench className="w-8 h-8 text-primary mb-3" aria-hidden="true" />
+                <h3 className="text-xl font-bold text-primary mb-2">Preventative Commercial Roof Maintenance</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  Minor field repairs included: pitch-pocket refill, sealant top-offs at terminations,
+                  pipe-boot replacement, edge metal re-secure. PM contracts start at $450/year for
+                  small flat roofs and prevent 3–5 years of premature membrane failure on aged systems.
+                </p>
+              </div>
+              <div id="flat-roof-maintenance-commercial" className="bg-light rounded-xl p-6 border border-gray-100">
+                <Shield className="w-8 h-8 text-primary mb-3" aria-hidden="true" />
+                <h3 className="text-xl font-bold text-primary mb-2">Flat Roof Maintenance — Commercial Programs</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  Manufacturer-authorized maintenance keeps your Carlisle SynTec, Johns Manville, or
+                  Firestone/Holcim warranty in effect. We handle warranty documentation, annual reports,
+                  and incident filings on your behalf. Charlotte property managers receive priority
+                  emergency response.
+                </p>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div id="commercial-roof-installation-service" className="bg-primary/5 rounded-xl p-6 border border-primary/20">
+                <Building2 className="w-8 h-8 text-primary mb-3" aria-hidden="true" />
+                <h3 className="text-xl font-bold text-primary mb-2">Commercial Roof Installation Service</h3>
+                <p className="text-gray text-sm leading-relaxed mb-3">
+                  Beyond repair and maintenance, we install full TPO, EPDM, PVC, and modified bitumen
+                  systems for new construction and reroofs across Charlotte commercial properties. All
+                  installations include manufacturer NDL (no-dollar-limit) warranty registration.
+                </p>
+                <Link href="/services/commercial-roofing" className="inline-flex items-center text-primary font-semibold text-sm hover:underline">
+                  Commercial roofing services <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
+              </div>
+              <div className="bg-primary/5 rounded-xl p-6 border border-primary/20">
+                <Award className="w-8 h-8 text-primary mb-3" aria-hidden="true" />
+                <h3 className="text-xl font-bold text-primary mb-2">Why Property Managers Choose Us</h3>
+                <ul className="text-gray text-sm space-y-1.5 leading-relaxed">
+                  <li>• Same-day emergency response across Charlotte and Lake Norman</li>
+                  <li>• Manufacturer-certified by Carlisle, Johns Manville, Firestone/Holcim</li>
+                  <li>• Xactimate-compatible estimates for insurance and capital planning</li>
+                  <li>• 5-star Google rating · BBB A+ · veteran-owned · NC-licensed GC</li>
+                  <li>• Single point of contact for portfolios of 5+ properties</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

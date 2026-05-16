@@ -37,23 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Flat Roof Contractors Charlotte',
   description:
-    'Hire the best flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC, and modified bitumen. Find a trusted flat roof contractor for your commercial or residential project. BBB A+ rated. Free estimates.',
-  keywords: [
-    'flat roof contractors charlotte nc',
-    'flat roof installation charlotte',
-    'commercial flat roof charlotte nc',
-    'residential flat roof contractors charlotte',
-    'tpo roofing contractors charlotte nc',
-    'epdm roofing charlotte',
-    'pvc flat roof charlotte nc',
-    'modified bitumen roofing charlotte',
-    'flat roof replacement charlotte nc',
-    'flat roof specialists charlotte nc',
-    'low slope roofing contractors charlotte',
-    'flat roof maintenance charlotte nc',
-    'commercial roofing contractors charlotte',
-    'hire flat roof contractor charlotte nc',
-  ],
+    'Hire the best flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC, and modified bitumen. Find a trusted flat roof contractor for your commercial or residential project. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`,
   },

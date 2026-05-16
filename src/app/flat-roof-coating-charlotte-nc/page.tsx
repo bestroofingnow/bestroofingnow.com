@@ -44,19 +44,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Flat Roof Coating Charlotte NC',
   description:
-    'Professional flat roof coating services in Charlotte NC. Silicone, acrylic & elastomeric roof coatings that extend roof life 15-20 years at 50-70% less than replacement. Free infrared moisture scans. Licensed & insured.',
-  keywords: [
-    'flat roof coating charlotte nc',
-    'commercial roof coating charlotte',
-    'silicone roof coating charlotte',
-    'roof coating charlotte nc',
-    'flat roof coating near me',
-    'acrylic roof coating charlotte nc',
-    'elastomeric roof coating charlotte',
-    'reflective roof coating charlotte nc',
-    'flat roof restoration charlotte',
-    'commercial roof coating contractors charlotte',
-  ],
+    'Professional flat roof coating services in Charlotte NC. Silicone, acrylic & elastomeric roof coatings that extend roof life 15-20 years at 50-70% less than replacement. Free infrared moisture scans. Licensed & insured.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-coating-charlotte-nc`,
   },

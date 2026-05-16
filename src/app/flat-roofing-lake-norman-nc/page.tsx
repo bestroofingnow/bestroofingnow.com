@@ -38,16 +38,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Flat Roofing Lake Norman NC',
   description:
-    'Expert flat roofing services for Lake Norman NC commercial and residential properties. TPO, EPDM, modified bitumen, and flat roof repair. BBB A+ rated, veteran-owned. Free estimates for Cornelius, Davidson, Mooresville, and Huntersville.',
-  keywords: [
-    'flat roofing lake norman nc',
-    'flat roof repair lake norman',
-    'TPO roofing lake norman nc',
-    'EPDM roofing lake norman',
-    'commercial flat roof lake norman',
-    'flat roof contractors lake norman nc',
-    'flat roof coating lake norman',
-  ],
+    'Expert flat roofing services for Lake Norman NC commercial and residential properties. TPO, EPDM, modified bitumen, and flat roof repair. BBB A+ rated, veteran-owned. Free estimates for Cornelius, Davidson, Mooresville, and Huntersville.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roofing-lake-norman-nc`,
   },

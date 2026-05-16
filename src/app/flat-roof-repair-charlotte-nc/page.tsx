@@ -30,21 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Flat Roof Repair Charlotte NC',
   description:
-    'Expert flat roof repair in Charlotte NC for commercial and residential properties. TPO, EPDM, PVC, and modified bitumen repairs. Licensed, insured, BBB A+ rated. Free estimates available.',
-  keywords: [
-    'flat roof repair charlotte nc',
-    'flat roof replacement charlotte',
-    'flat roof contractors charlotte nc',
-    'tpo roof repair charlotte',
-    'epdm roof repair charlotte nc',
-    'commercial flat roof repair charlotte',
-    'residential flat roof charlotte',
-    'flat roof leak repair charlotte nc',
-    'rubber roof repair charlotte',
-    'flat roof coating charlotte nc',
-    'modified bitumen repair charlotte',
-    'flat roof specialists charlotte',
-  ],
+    'Expert flat roof repair in Charlotte NC for commercial and residential properties. TPO, EPDM, PVC, and modified bitumen repairs. Licensed, insured, BBB A+ rated. Free estimates available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-repair-charlotte-nc`,
   },
