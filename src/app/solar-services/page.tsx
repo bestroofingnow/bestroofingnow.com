@@ -36,16 +36,19 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Solar Roofing Charlotte NC',
+  // Disambiguated 2026-05-16: service hub (integration, installation, repair). Local
+  // conversion variant: /solar-roofing-charlotte-nc. Both used to share the exact title
+  // "Solar Roofing Charlotte NC" causing cannibalism — fixed.
+  title: 'Solar Roofing Services: Integration, Installation & Repair',
   description:
-    'Solar roofing solutions in Charlotte NC. Expert solar panel roof integration, solar-ready roof installations, and roof repairs for solar systems. GAF certified. Free consultations!',
+    'Solar roofing services — solar-ready roof installations, panel integration, repairs for solar systems, and solar-compatible material selection. GAF certified, serving the Carolinas.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/solar-services`,
   },
   openGraph: {
-    title: 'Solar Roofing Charlotte NC | Solar Panel Integration',
+    title: 'Solar Roofing Services: Integration, Installation & Repair',
   description:
-      'Solar roofing solutions in Charlotte NC. Expert solar panel roof integration and solar-ready installations.',
+      'Solar roofing services — solar-ready installations, panel integration, and repairs for solar systems.',
   url: `${SITE_CONFIG.url}/solar-services`,
   },
 };
@@ -109,9 +112,9 @@ const solarFAQs = [
 // Service for schema
 const solarCategoryService = {
   slug: 'solar-services',
-  title: 'Solar Roofing Charlotte NC',
-  description: 'Solar roofing solutions in Charlotte NC. Expert solar panel roof integration, solar-ready installations, and roof repairs for solar systems. GAF certified contractor.',
-  keywords: ['solar roofing Charlotte NC', 'solar roof contractor', 'solar panel roof integration'],
+  title: 'Solar Roofing Services',
+  description: 'Solar roofing services covering solar-ready roof installations, panel integration, and repairs for solar systems. GAF certified contractor serving the Carolinas.',
+  keywords: ['solar roofing services', 'solar roof contractor', 'solar panel roof integration'],
   priceRange: '$8,000 - $30,000+',
 };
 
@@ -122,13 +125,13 @@ export default function SolarServicesPage() {
     <>
       {/* Schema Markup */}
       <WebPageSchema
-        name="Solar Roofing Charlotte NC | Solar Panel Integration | Best Roofing Now"
-        description="Solar roofing solutions in Charlotte NC. Expert solar panel roof integration and solar-ready installations."
+        name="Solar Roofing Services: Integration, Installation & Repair"
+        description="Solar roofing services — solar-ready installations, panel integration, and repairs for solar systems. GAF certified."
         url={pageUrl}
         primaryImage={IMAGES.hero.hero10}
         breadcrumb={[
           { name: 'Home', url: SITE_CONFIG.url },
-          { name: 'Solar Roofing Charlotte NC', url: pageUrl },
+          { name: 'Solar Roofing Services', url: pageUrl },
         ]}
       />
       <ServiceSchema service={solarCategoryService} />
@@ -136,12 +139,12 @@ export default function SolarServicesPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
-          { name: 'Solar Roofing Charlotte NC', url: pageUrl },
+          { name: 'Solar Roofing Services', url: pageUrl },
         ]}
       />
       <AISearchOptimizationBundle
         pageUrl={pageUrl}
-        pageName="Solar Roofing Services Charlotte NC"
+        pageName="Solar Roofing Services"
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
@@ -201,10 +204,10 @@ export default function SolarServicesPage() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              Solar Roofing Charlotte NC
+              Solar Roofing Services
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-4">
-              Expert Roof Preparation &amp; Solar Panel Integration
+              Solar-ready installations, panel integration &amp; repair for solar systems. For local pricing in Charlotte, see <Link href="/solar-roofing-charlotte-nc" className="underline">our Charlotte solar roofing page</Link>.
             </p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-3xl">
               Thinking about solar panels? Your roof is the foundation. Best Roofing Now installs

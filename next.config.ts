@@ -391,6 +391,14 @@ const nextConfig: NextConfig = {
       { source: '/stories/weddington', destination: '/stories', permanent: true },
       { source: '/stories/wesley-chapel', destination: '/stories', permanent: true },
       { source: '/stories/york', destination: '/stories', permanent: true },
+
+      // ===========================================
+      // CANNIBALIZATION REDIRECTS — 2026-05-16
+      // Audit found pages with identical or near-identical titles competing for the same query.
+      // Redirect the weaker variant to the canonical/larger page to consolidate authority.
+      // ===========================================
+      // /veteran-owned-roofing-charlotte-nc (618 lines) → /veteran-owned-roofing-company-charlotte-nc (989 lines)
+      { source: '/veteran-owned-roofing-charlotte-nc', destination: '/veteran-owned-roofing-company-charlotte-nc', permanent: true },
     ];
   },
 

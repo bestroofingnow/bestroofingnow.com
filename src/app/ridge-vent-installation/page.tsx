@@ -34,14 +34,16 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Ridge Vent Installation Charlotte NC',
+  // Disambiguated 2026-05-16: service-entity (informational) page covering vent types, sizing,
+  // and code. Local conversion variant: /ridge-vent-installation-charlotte-nc.
+  title: 'Ridge Vent Installation: Types, Sizing & IRC R806 Code Guide',
   description:
     'Ridge vent installation in Charlotte NC — external baffle shingle-over design, balanced 1:300 ventilation to NC code IRC R806, paired with matched soffit intake. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/ridge-vent-installation`,
   },
   openGraph: {
-    title: 'Ridge Vent Installation Charlotte NC | Balanced Ventilation | Best Roofing Now',
+    title: 'Ridge Vent Installation: Types, Sizing & IRC R806 Code Guide',
     description: 'Ridge vent installation for balanced 1:300 attic ventilation to NC code IRC R806 — shingle-over design, external baffle weather protection.',
     url: `${SITE_CONFIG.url}/ridge-vent-installation`,
     type: 'website',
@@ -151,9 +153,9 @@ export default function RidgeVentInstallationPage() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Ridge Vent Installation
               <br className="hidden md:block" />
-              <span className="text-accent-light">Charlotte NC</span>
+              <span className="text-accent-light">Types, Sizing & Code</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">Proper ventilation to NC code IRC §R806</p>
+            <p className="text-xl md:text-2xl text-white/90 mb-6">Vent types, balanced 1:300 sizing, and IRC §R806 compliance. For local Charlotte installation, see <Link href="/ridge-vent-installation-charlotte-nc" className="underline">our Charlotte ridge vent page</Link>.</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
               Ridge vent installation across Charlotte NC and Lake Norman — external-baffle shingle-over design (GAF Cobra Snow Country, Air Vent ShingleVent II, Owens Corning VentSure) balanced 50/50 with matched soffit intake to achieve NC code IRC §R806 1:300 NFVA ratio. Drops Charlotte attic temps 20–40°F in summer, cuts cooling bills 10–15%, extends shingle life 3–7 years, and preserves manufacturer warranty compliance. Retrofit or bundled with re-roof.
             </p>

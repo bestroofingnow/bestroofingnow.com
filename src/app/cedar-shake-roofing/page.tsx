@@ -35,18 +35,20 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Cedar Shake Roofing Charlotte NC',
+  // Disambiguated 2026-05-16: this is the service-entity (informational) page covering grades,
+  // materials, and process. The local conversion variant lives at /cedar-shake-roofing-charlotte-nc.
+  title: 'Cedar Shake Roofing: Grades, Materials & Installation Guide',
   description:
-    'Cedar shake roofing in Charlotte NC — Certi-Split, Certi-Sawn, Certi-Shake grades in Western Red Cedar. Fire-retardant Class B/C treatment. Synthetic cedar alternatives available.',
+    'Cedar shake roofing guide — Certi-Split, Certi-Sawn, Certi-Shake grades, Western Red Cedar specs, Class B/C fire retardant, synthetic DaVinci/Brava alternatives, expected lifespan, and installation process.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/cedar-shake-roofing`,
   },
   openGraph: {
-    title: 'Cedar Shake Roofing Charlotte NC | Natural Wood & Synthetic | Best Roofing Now',
-    description: 'Cedar shake roofing installation and repair in Charlotte NC — natural Western Red Cedar and synthetic DaVinci/Brava alternatives.',
+    title: 'Cedar Shake Roofing: Grades, Materials & Installation Guide',
+    description: 'Cedar shake roofing guide — grades, Western Red Cedar specs, fire-retardant treatment, synthetic alternatives, and installation process.',
     url: `${SITE_CONFIG.url}/cedar-shake-roofing`,
     type: 'website',
-    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Cedar shake roofing in Charlotte NC' }],
+    images: [{ url: IMAGES.hero.hero3, width: 1200, height: 630, alt: 'Cedar shake roofing installation' }],
   },
 };
 
@@ -160,9 +162,9 @@ export default function CedarShakeRoofingPage() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Cedar Shake Roofing
               <br className="hidden md:block" />
-              <span className="text-amber-200">Charlotte NC</span>
+              <span className="text-amber-200">Grades, Materials & Process</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">Timeless natural beauty for historic and luxury homes</p>
+            <p className="text-xl md:text-2xl text-white/90 mb-6">The complete guide to natural and synthetic cedar — plus when each makes sense. For local installation in the Charlotte metro, see <Link href="/cedar-shake-roofing-charlotte-nc" className="underline">our Charlotte cedar shake page</Link>.</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
               Cedar shake is beautiful. It&apos;s also work — it needs cleaning and oiling over the years, and Charlotte&apos;s humidity is harder on it than the Pacific Northwest, so lifespan is more like 25–40 years than the 50+ you&apos;ll see in marketing. We do the real thing on historic and custom homes in Matthews, Davidson, Dilworth, Myers Park, and around Lake Norman — plus a modern synthetic option that looks like cedar without the maintenance. We&apos;ll help you pick the right path for your place.
             </p>

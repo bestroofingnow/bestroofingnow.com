@@ -34,14 +34,16 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Skylight Installation Charlotte NC',
+  // Disambiguated 2026-05-16: service-entity (informational) page covering skylight types,
+  // mounting, and tax credit. Local conversion variant: /skylight-installation-charlotte-nc.
+  title: 'Skylight Installation: Types, Mounting & Tax Credit Guide',
   description:
     'VELUX, Wasco, and Fakro skylight installation and replacement in Charlotte NC. Deck-mounted, curb-mounted, solar-vented. 26% federal tax credit eligible. Leak-free warranty.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/skylight-installation`,
   },
   openGraph: {
-    title: 'Skylight Installation Charlotte NC | VELUX Certified | Best Roofing Now',
+    title: 'Skylight Installation: Types, Mounting & Tax Credit Guide',
     description: 'Professional skylight installation and repair services in Charlotte NC — VELUX, Wasco, Fakro. Solar-vented models qualify for 26% federal tax credit.',
     url: `${SITE_CONFIG.url}/skylight-installation`,
     type: 'website',
@@ -159,9 +161,9 @@ export default function SkylightInstallationPage() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Skylight Installation
               <br className="hidden md:block" />
-              <span className="text-accent-light">Charlotte NC</span>
+              <span className="text-accent-light">Types, Mounting & Tax Credit</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">Professional skylight installation &amp; repair</p>
+            <p className="text-xl md:text-2xl text-white/90 mb-6">VELUX vs Wasco vs Fakro · deck vs curb mount · solar-vented for the 26% federal tax credit. For local Charlotte installation, see <Link href="/skylight-installation-charlotte-nc" className="underline">our Charlotte skylight page</Link>.</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
               VELUX, Wasco, and Fakro skylight installation across Charlotte NC and Lake Norman — fixed, manual venting, electric, and solar-powered models with 26% federal tax credit eligibility. Deck-mounted and curb-mounted options for every roof pitch. Manufacturer flashing kits, peel-and-stick ice shield perimeters, and a 10-year leak-free workmanship warranty paired with the manufacturer&apos;s 10-year glass coverage.
             </p>

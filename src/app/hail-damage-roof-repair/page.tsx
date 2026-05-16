@@ -34,14 +34,17 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Hail Damage Roof Repair Charlotte NC',
+  // Disambiguated 2026-05-16 from /hail-damage-roof-repair-charlotte-nc to avoid H1 cannibalism.
+  // Suffix-less URL targets "hail damage roof repair near me" generic intent across the Carolinas
+  // service area; the -charlotte-nc variant keeps the city-specific transactional focus.
+  title: 'Hail Damage Roof Repair Near Me | Insurance Claim Experts',
   description:
-    'Hail damage roof repair and insurance claim assistance in Charlotte NC — Xactimate estimates, adjuster meetings, RCV/ACV review, Class 4 impact-resistant replacement options.',
+    'Hail damage roof repair near you across the Charlotte metro, Lake Norman, and Carolinas service area. Free inspection, full insurance claim support, Xactimate estimates, Class 4 impact upgrades.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hail-damage-roof-repair`,
   },
   openGraph: {
-    title: 'Hail Damage Roof Repair Charlotte NC | Insurance Claims | Best Roofing Now',
+    title: 'Hail Damage Roof Repair Near Me | Insurance Claim Experts',
     description: 'Expert hail damage roof repair and insurance claim assistance in Charlotte NC — free inspections, Xactimate estimates, and Class 4 upgrade options.',
     url: `${SITE_CONFIG.url}/hail-damage-roof-repair`,
     type: 'website',
@@ -117,27 +120,27 @@ export default function HailDamageRoofRepairPage() {
       <FAQSchema faqs={faqs} />
       <ServiceSchema
         service={{
-          title: "Hail Damage Roof Repair",
-          description: "Expert hail damage roof repair and insurance claim assistance in Charlotte NC.",
+          title: "Hail Damage Roof Repair Near Me",
+          description: "Hail damage roof repair near you across the Charlotte metro, Lake Norman, and Carolinas service area. Free inspections, full insurance claim handling, and Class 4 impact-resistant replacement upgrades.",
           slug: "hail-damage-roof-repair",
         }}
       />
       <WebPageSchema
-        name="Hail Damage Roof Repair Charlotte NC | Insurance Claim Experts"
-        description="Hail damage roof repair and insurance claim assistance in Charlotte NC — Xactimate estimates, RCV/ACV review, Class 4 impact-resistant replacement options, adjuster meetings."
+        name="Hail Damage Roof Repair Near Me | Insurance Claim Experts"
+        description="Hail damage roof repair near you across the Charlotte metro and Carolinas. Free inspection, Xactimate estimates, RCV/ACV review, Class 4 impact-resistant replacement, adjuster meetings."
         url={pageUrl}
         primaryImage={IMAGES.hero.hero3}
         breadcrumb={breadcrumbItems}
       />
       <FreeInspectionOfferSchema />
       <FeaturedSnippetListAnswerSchema
-        question="What are the signs of hail damage on a Charlotte NC roof?"
-        directAnswer="Eight common warning signs indicate hail damage on a Charlotte roof."
+        question="What are the signs of hail damage on a roof?"
+        directAnswer="Eight common warning signs indicate hail damage on a roof, visible in a walk-the-roof inspection."
         items={hailDamageSigns}
         pageUrl={pageUrl}
       />
       <SpeakableContentBlocks includeCompany={true} includeServices={true} includeContact={true} />
-      <AISearchOptimizationBundle pageUrl={pageUrl} pageName="Hail Damage Roof Repair Charlotte NC" city="Charlotte" />
+      <AISearchOptimizationBundle pageUrl={pageUrl} pageName="Hail Damage Roof Repair Near Me" city="Charlotte" />
       <VoiceSearchActionSchema />
 
       <section className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
@@ -154,9 +157,9 @@ export default function HailDamageRoofRepairPage() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Hail Damage Roof Repair
               <br className="hidden md:block" />
-              <span className="text-blue-300">Charlotte NC</span>
+              <span className="text-blue-300">Near Me</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">Insurance claim experts + Xactimate estimates</p>
+            <p className="text-xl md:text-2xl text-white/90 mb-6">Insurance claim experts + Xactimate estimates · Charlotte metro + Lake Norman + Carolinas</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
               Charlotte sees 3–5 hail days per year per NOAA with peak season May–June. Best Roofing Now provides free walk-the-roof hail inspections with test-square counts, geo-tagged photo documentation, and Xactimate-compatible insurance estimates. We handle RCV vs ACV policy review, adjuster meetings, supplemental claim filing for missed collateral damage, and Class 4 impact-resistant replacement upgrades that unlock 10–30% premium discounts with NC carriers (State Farm, Allstate, USAA, Farm Bureau, Erie, Nationwide).
             </p>

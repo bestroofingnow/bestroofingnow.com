@@ -34,14 +34,16 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Chimney Flashing Repair Charlotte NC',
+  // Disambiguated 2026-05-16: service-entity (informational) page covering flashing types,
+  // materials, and process. Local conversion variant: /chimney-flashing-repair-charlotte-nc.
+  title: 'Chimney Flashing Repair: Types, Materials & Process Guide',
   description:
-    'Expert chimney flashing repair in Charlotte NC — step flashing, counter flashing, cricket/saddle install, lead/aluminum/copper specs. Historic chimney experienced.',
+    'Expert chimney flashing repair in Charlotte NC — step flashing, counter flashing, cricket/saddle install, lead/aluminum/copper specs. Historic chimney experienced.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/chimney-flashing-repair`,
   },
   openGraph: {
-    title: 'Chimney Flashing Repair Charlotte NC | Stop Chimney Leaks | Best Roofing Now',
+    title: 'Chimney Flashing Repair: Types, Materials & Process Guide',
     description: 'Professional chimney flashing repair to stop leaks around your chimney — step, counter, base flashing, crickets, and historic restoration.',
     url: `${SITE_CONFIG.url}/chimney-flashing-repair`,
     type: 'website',
@@ -147,9 +149,9 @@ export default function ChimneyFlashingRepairPage() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Chimney Flashing Repair
               <br className="hidden md:block" />
-              <span className="text-accent-light">Charlotte NC</span>
+              <span className="text-accent-light">Types, Materials & Process</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6">Expert flashing repair to stop leaks at the source</p>
+            <p className="text-xl md:text-2xl text-white/90 mb-6">Step, counter, base, apron flashing — what each one does and how leaks happen. For local Charlotte installation, see <Link href="/chimney-flashing-repair-charlotte-nc" className="underline">our Charlotte chimney flashing page</Link>.</p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
               Chimney flashing is the #1 leak source we diagnose on Charlotte roofs. Best Roofing Now repairs every flashing type — step flashing, counter flashing, base/apron flashing, cricket saddles on 24"+ chimneys, and mortar joint repointing. Aluminum (our default), lead (historic), and copper (premium) options. Historic chimney experienced across Matthews, Davidson, Dilworth, Fourth Ward, and Myers Park.
             </p>

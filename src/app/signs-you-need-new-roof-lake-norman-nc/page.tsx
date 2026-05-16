@@ -41,9 +41,10 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
 
 export const metadata: Metadata = {
-  title: 'Signs You Need a New Roof',
+  // Disambiguated 2026-05-16 — was sharing exact title with /signs-you-need-new-roof-charlotte-nc.
+  title: '10 Signs You Need a New Roof at Lake Norman NC',
   description:
-    'How to tell if you need a new roof in Lake Norman NC. 10 warning signs for LKN homeowners — curling shingles, granule loss, sagging, leaks, age, waterfront wind damage. Free inspections from veteran-owned LKN Chamber member roofers.',
+    'How to tell if you need a new roof in Lake Norman NC. 10 warning signs for LKN homeowners — curling shingles, granule loss, sagging, leaks, age, waterfront wind damage. Free inspections from veteran-owned LKN Chamber member roofers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/signs-you-need-new-roof-lake-norman-nc`,
   },

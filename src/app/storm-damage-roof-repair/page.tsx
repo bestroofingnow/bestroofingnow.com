@@ -36,7 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Near Me | Charlotte NC | Free Inspection',
   description:
-    'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage. BBB A+ rated. Call now!',
+    'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage. BBB A+ rated. Call now!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair`,
   },
@@ -246,15 +246,15 @@ export default function StormDamageRoofRepairPage() {
       <FAQSchema faqs={faqs} />
       <ServiceSchema
         service={{
-          title: 'Storm Damage Roof Repair',
+          title: 'Storm Damage Roof Repair Near Me',
           description:
-            'Expert storm damage roof repair and insurance claim assistance in Charlotte NC. Hail, wind, fallen trees, and emergency storm response.',
+            'Storm damage roof repair near you in the Charlotte metro and Lake Norman region. Hail, wind, fallen trees, and 24/7 emergency response with full insurance claim support.',
           slug: 'storm-damage-roof-repair',
         }}
       />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/storm-damage-roof-repair`}
-        pageName="Storm Damage Roof Repair Charlotte NC"
+        pageName="Storm Damage Roof Repair Near Me"
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
@@ -280,16 +280,18 @@ export default function StormDamageRoofRepairPage() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Storm Damage Roof Repair
               <br className="hidden md:block" />
-              <span className="text-blue-300">Charlotte NC</span>
+              <span className="text-blue-300">Near Me</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
               Free inspections + insurance claim experts + 24/7 emergency response
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Charlotte&apos;s storm season runs March through September, bringing hail, high winds,
-              fallen trees, and tropical remnants that damage hundreds of roofs every year. Best
-              Roofing Now provides free storm damage inspections, handles your entire insurance claim
-              process, and delivers fast, professional repairs so your home stays protected.
+              Searching for storm damage roof repair near you? Best Roofing Now serves the Charlotte
+              metro and Lake Norman region — Charlotte, Cornelius, Davidson, Huntersville, Mooresville,
+              Matthews, Statesville, Concord, Mt. Holly, Fort Mill and Lake Wylie SC — with free
+              inspections, full insurance claim handling, and 24/7 emergency response. Storm season
+              runs March through September; we&apos;ve responded to every major Carolinas event from
+              Florence to Helene.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -573,11 +575,12 @@ export default function StormDamageRoofRepairPage() {
                 <span className="text-sm font-semibold">Local Coverage</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Storm Damage Roof Repair Across Charlotte
+                Storm Damage Roof Repair Near You — Service Area
               </h2>
               <p className="text-gray text-lg">
-                We provide storm damage repair throughout the Charlotte metro and surrounding
-                communities. When severe weather strikes, our crews deploy across the region.
+                We dispatch storm damage repair crews across the Charlotte metro, Lake Norman, and
+                surrounding Carolinas communities. Looking for storm damage roof repair near you?
+                Pick the city closest for local pricing, response time, and recent project photos.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
