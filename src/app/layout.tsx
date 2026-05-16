@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Fraunces } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -21,8 +21,19 @@ const inter = Inter({
   preload: true,
   // Automatically adjust fallback font metrics to reduce CLS
   adjustFontFallback: true,
-  // Minimal weights for faster initial load - 400 for body, 700 for headings
-  weight: ['400', '700'],
+  // Weights: 400 body, 500/600 UI, 700 headings
+  weight: ['400', '500', '600', '700'],
+});
+
+// Editorial display serif — used for hero headlines, section titles, eyebrow numerals
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-fraunces',
+  preload: true,
+  adjustFontFallback: false,
+  style: ['normal', 'italic'],
+  axes: ['opsz'],
 });
 
 // Viewport configuration for mobile optimization
@@ -43,39 +54,6 @@ export const metadata: Metadata = {
   template: `%s | ${SITE_CONFIG.name}`,
   },
   description: `5-star, veteran-owned roofing contractor in Charlotte NC. Roof repair and replacement, storm damage help, and free inspections. Call (704) 605-6047.`,
-  keywords: [
-    // Primary target keywords
-    'roofing contractor Charlotte NC',
-    'roofing company Charlotte NC',
-    'roofing contractor near me',
-    'roofing company near me',
-    'roofers near me Charlotte',
-    'Charlotte roofers',
-    'Charlotte roofing contractor',
-    'Charlotte roofing company',
-    // Service keywords
-    'roof repair Charlotte NC',
-    'roof replacement Charlotte NC',
-    'roof inspection Charlotte',
-    'emergency roof repair Charlotte',
-    'storm damage roof repair Charlotte',
-    'residential roofing Charlotte',
-    'commercial roofing Charlotte NC',
-    // Long-tail keywords
-    'best roofer Charlotte NC',
-    'top rated roofing company Charlotte',
-    'roof leak repair Charlotte NC',
-    'new roof installation Charlotte',
-    'shingle roof replacement Charlotte',
-    'gutter installation Charlotte',
-    'hail damage roof repair Charlotte',
-    'insurance claim roofer Charlotte',
-    // Near me variations
-    'roofers near me',
-    'roofing contractors near me',
-    'roof repair near me',
-    'roof replacement near me',
-  ],
   authors: [{ name: SITE_CONFIG.name, url: SITE_CONFIG.url }],
   creator: SITE_CONFIG.name,
   publisher: SITE_CONFIG.name,
@@ -143,7 +121,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <head>
         {/* CRITICAL: Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -172,8 +150,11 @@ export default function RootLayout({
         {/* Enhancify financing widget */}
         <link rel="dns-prefetch" href="https://www.enhancify.com" />
         <WebSiteSchema />
-        {/* Global RoofingContractor schema - rendered once for all pages */}
-        <LocalBusinessSchema includeRating={true} />
+        {/* Global RoofingContractor schema - emitted on every page WITHOUT aggregateRating.
+            aggregateRating is opt-in via includeRating={true} only on pages with visible
+            review/testimonial content (homepage, /reviews, service+city landing pages).
+            See SchemaMarkup.tsx for the rule. */}
+        <LocalBusinessSchema />
       </head>
       <body className="antialiased">
         <EstimateProvider>

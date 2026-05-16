@@ -1,35 +1,74 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #1A43AA;
-  --color-primary-dark: #142F7A;
-  --color-primary-light: #2E5BC9;
-  --color-accent: #C62F2F;
-  --color-accent-dark: #A52525;
-  --color-accent-light: #E04545;
-  --color-dark: #1e293b;
-  --color-gray: #374151;
-  --color-light: #F0F5FA;
+  /* Brand primary — overridden to Refined Editorial navy (was #1A43AA) */
+  --color-primary: #0E1F57;
+  --color-primary-dark: #081134;
+  --color-primary-light: #1A43AA;
+  /* Accent — overridden to Refined Editorial red */
+  --color-accent: #B8322B;
+  --color-accent-dark: #8E231E;
+  --color-accent-light: #C84A42;
+  --color-dark: #0B1220;
+  --color-gray: #3C4658;
+  --color-light: #F7F9FB;
   --color-white: #FFFFFF;
-  --color-link: #046bd2;
+  --color-link: #1A43AA;
+
+  /* Refined Editorial extension palette */
+  --color-navy: #0E1F57;
+  --color-navy-deep: #081134;
+  --color-navy-mid: #1A43AA;
+  --color-copper: #A86A43;
+  --color-copper-light: #C88B64;
+  --color-gold: #D8A852;
+  --color-cream: #F5F1EA;
+  --color-mist: #F7F9FB;
+  --color-lake-mist: #E7EEF2;
+  --color-ink: #0B1220;
+  --color-slate: #3C4658;
+  --color-mute: #8A93A3;
+  --color-line: #E5E8EE;
+
+  /* Editorial radii — tight, near-square */
+  --radius-edit: 4px;
+  --radius-edit-btn: 2px;
+
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-editorial: 0 24px 60px rgb(0 0 0 / 0.25);
 }
 
 @theme inline {
-  --color-primary: #1A43AA;
-  --color-primary-dark: #142F7A;
-  --color-primary-light: #2E5BC9;
-  --color-accent: #C62F2F;
-  --color-accent-dark: #A52525;
-  --color-accent-light: #E04545;
-  --color-dark: #1e293b;
-  --color-gray: #374151;
-  --color-light: #F0F5FA;
-  --color-link: #046bd2;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-primary: #0E1F57;
+  --color-primary-dark: #081134;
+  --color-primary-light: #1A43AA;
+  --color-accent: #B8322B;
+  --color-accent-dark: #8E231E;
+  --color-accent-light: #C84A42;
+  --color-dark: #0B1220;
+  --color-gray: #3C4658;
+  --color-light: #F7F9FB;
+  --color-link: #1A43AA;
+
+  --color-navy: #0E1F57;
+  --color-navy-deep: #081134;
+  --color-navy-mid: #1A43AA;
+  --color-copper: #A86A43;
+  --color-copper-light: #C88B64;
+  --color-gold: #D8A852;
+  --color-cream: #F5F1EA;
+  --color-mist: #F7F9FB;
+  --color-lake-mist: #E7EEF2;
+  --color-ink: #0B1220;
+  --color-slate: #3C4658;
+  --color-mute: #8A93A3;
+  --color-line: #E5E8EE;
+
+  --font-sans: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-fraunces), 'Fraunces', Georgia, serif;
 }
 
 /* Smooth scroll only if user hasn't set reduced motion preference */
@@ -63,12 +102,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline-offset: 2px;
 }
 
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.875rem 1.75rem; font-weight: 600; font-size: 1rem; border-radius: 0.5rem; transition: all 0.2s; cursor: pointer; border: none; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; padding: 0.875rem 1.375rem; font-weight: 600; font-size: 0.8125rem; letter-spacing: 0.08em; text-transform: uppercase; border-radius: var(--radius-edit-btn); transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease; cursor: pointer; border: none; }
 .btn-primary { background-color: var(--color-accent); color: white; }
-.btn-primary:hover { background-color: var(--color-accent-dark); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+.btn-primary:hover { background-color: var(--color-accent-dark); }
 .btn-secondary { background-color: var(--color-primary); color: white; }
-.btn-secondary:hover { background-color: var(--color-primary-dark); transform: translateY(-1px); }
-.btn-outline { background: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); }
+.btn-secondary:hover { background-color: var(--color-primary-dark); }
+.btn-outline { background: white; color: var(--color-primary); border: 1.5px solid var(--color-primary); }
 .btn-outline:hover { background: var(--color-primary); color: white; }
 
 .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 1rem; }
@@ -111,7 +150,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   /* Disable hover transforms on mobile */
   .card:hover { transform: none; box-shadow: var(--shadow-md); }
-  .btn-primary:hover, .btn-secondary:hover { transform: none; }
 
   /* Improve scrolling performance */
   * { -webkit-overflow-scrolling: touch; }
@@ -431,3 +469,74 @@ section:first-of-type h1 {
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
   }
 }
+
+/* ============================================
+   Refined Editorial — Direction A utilities
+   ============================================ */
+
+.font-display {
+  font-family: var(--font-fraunces), 'Fraunces', Georgia, serif;
+  font-feature-settings: 'ss01', 'ss02';
+  font-optical-sizing: auto;
+}
+
+/* Section eyebrow — uppercase, tight tracking, copper */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-copper);
+  font-weight: 700;
+}
+
+/* Display heading — Fraunces, large, tight tracking */
+.heading-display {
+  font-family: var(--font-fraunces), 'Fraunces', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--color-navy);
+  font-optical-sizing: auto;
+}
+
+/* Italic copper accent inside display headings */
+.heading-display em {
+  font-style: italic;
+  color: var(--color-copper);
+}
+
+/* Square CTA — tight uppercase tracking */
+.btn-editorial {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 14px 22px;
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-edit-btn);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.18s ease;
+}
+.btn-editorial:hover { background: var(--color-accent-dark); }
+
+.btn-editorial-outline {
+  background: #fff;
+  color: var(--color-navy);
+  border: 1.5px solid var(--color-navy);
+}
+.btn-editorial-outline:hover {
+  background: var(--color-navy);
+  color: #fff;
+}
+
+/* Hairline divider */
+.divider-hairline { border-top: 1px solid var(--color-line); }
+
+/* Tabular numerals for pricing/phone */
+.tabular { font-variant-numeric: tabular-nums; }
