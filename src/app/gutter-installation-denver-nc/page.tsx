@@ -32,21 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Denver NC',
   description:
-    'Professional gutter installation in Denver NC. Seamless aluminum gutters, gutter guards, and repairs for Lake Norman homes. BBB A+ rated. Free estimates!',
-  keywords: [
-    'gutter installation Denver NC',
-    'gutters Denver NC',
-    'seamless gutters Denver',
-    'gutter company Denver NC',
-    'gutter repair Denver NC',
-    'gutter guards Denver',
-    'aluminum gutters Denver NC',
-    'gutter replacement Denver',
-    'Lake Norman western shore gutters',
-    'Denver NC gutter contractor',
-    'downspout installation Denver NC',
-    'gutter cleaning Denver NC',
-  ],
+    'Professional gutter installation in Denver NC. Seamless aluminum gutters, gutter guards, and repairs for Lake Norman homes. BBB A+ rated. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-denver-nc`,
   },

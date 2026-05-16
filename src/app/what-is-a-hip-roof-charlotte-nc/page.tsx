@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Hip Roof Guide for Charlotte NC',
   description: "What is a hip roof? Learn advantages, costs ($7,500-$15,000), wind resistance benefits, and best materials for Charlotte NC homes.",
-  keywords: ['hip roof Charlotte NC', 'hip roof advantages', 'hip roof cost Charlotte', 'hip vs gable roof', 'hip roof wind resistance', 'hip roof materials', 'Charlotte roof styles', 'hip roof replacement'],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Hip Roof Guide for Charlotte NC',

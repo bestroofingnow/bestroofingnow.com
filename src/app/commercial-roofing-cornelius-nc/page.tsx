@@ -36,23 +36,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Cornelius NC',
   description:
-    'Expert commercial roofing in Cornelius NC. TPO, EPDM, flat roofs, metal roofing for Lake Norman businesses. The Peninsula to Jetton Road. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'commercial roofing cornelius nc',
-    'commercial roofing contractors cornelius',
-    'commercial roof repair cornelius nc',
-    'flat roof contractors cornelius',
-    'tpo roofing cornelius nc',
-    'epdm roofing cornelius',
-    'industrial roofing cornelius nc',
-    'warehouse roofing cornelius',
-    'office building roofing cornelius',
-    'commercial flat roof cornelius nc',
-    'metal roofing commercial cornelius',
-    'lake norman commercial roofing',
-    'commercial roofer cornelius',
-    'business roofing cornelius nc',
-  ],
+    'Expert commercial roofing in Cornelius NC. TPO, EPDM, flat roofs, metal roofing for Lake Norman businesses. The Peninsula to Jetton Road. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-cornelius-nc`,
   },

@@ -41,17 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'How Many Roof Estimates to Get',
   description:
-    'Get 3-5 roof estimates from licensed Charlotte NC contractors. Learn what to compare in roofing quotes, red flags to watch for, and why the cheapest estimate is rarely the best choice.',
-  keywords: [
-    'how many roof estimates should I get',
-    'how many roofing quotes',
-    'comparing roof estimates charlotte nc',
-    'roof estimate comparison',
-    'multiple roof quotes charlotte',
-    'roof replacement estimates charlotte nc',
-    'roofing bid comparison',
-    'how to compare roof estimates',
-  ],
+    'Get 3-5 roof estimates from licensed Charlotte NC contractors. Learn what to compare in roofing quotes, red flags to watch for, and why the cheapest estimate is rarely the best choice.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/how-many-roof-estimates-charlotte-nc`,
   },

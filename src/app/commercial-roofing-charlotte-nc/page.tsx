@@ -41,6 +41,7 @@ import {
 import EstimateButton from '@/components/estimate/EstimateButton';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { CTASection } from '@/components/sections/CTASection';
+import { CitationFacts } from '@/components/sections/CitationFacts';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { BreadcrumbSchema, FAQSchema, WebPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks, FeaturedSnippetListAnswerSchema, FreeInspectionOfferSchema } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
@@ -54,24 +55,7 @@ export const metadata: Metadata = {
   title: 'Commercial Roofing Charlotte NC | #1 Rated',
   description:
     `Expert commercial roofing in Charlotte NC. TPO, EPDM, flat roofing, metal roofing & roof coatings for warehouses, offices, retail & more. ${SITE_CONFIG.googleRating} Google rating, BBB A+ rated, veteran-owned. Free estimates!`,
-  keywords: [
-    'commercial roofing charlotte nc',
-    'commercial roofing contractors charlotte nc',
-    'commercial roof repair charlotte nc',
-    'flat roof contractors charlotte nc',
-    'TPO roofing charlotte nc',
-    'EPDM roofing charlotte nc',
-    'commercial roof replacement charlotte nc',
-    'industrial roofing charlotte nc',
-    'commercial roofing lake norman nc',
-    'commercial roofing mooresville nc',
-    'commercial roofing fort mill sc',
-    'commercial roofing huntersville nc',
-    'warehouse roofing charlotte nc',
-    'office building roofing charlotte nc',
-    'commercial roof coating charlotte nc',
-    'commercial roofing company charlotte nc',
-  ],
+
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`,
   },
@@ -97,19 +81,19 @@ const commercialServices = [
   {
     icon: Layers,
   title: 'TPO Roofing Systems',
-  description: 'Energy-efficient thermoplastic polyolefin membranes ideal for Charlotte\'s hot summers. Highly reflective and cost-effective.',
+  description: 'White TPO systems for Charlotte warehouses, retail centers, churches, and office buildings where summer heat and rooftop HVAC traffic beat up older flat roofs.',
   href: '/services/commercial-roofing',
   },
   {
     icon: Shield,
   title: 'EPDM Roofing',
-  description: 'Durable synthetic rubber membrane roofing with excellent weather resistance. Proven performance for 30+ years.',
+  description: 'Rubber membrane repairs and replacements for older low-slope roofs around University City, South End, and the I-77 corridor.',
   href: '/services/commercial-roofing',
   },
   {
     icon: Building2,
   title: 'Flat Roof Systems',
-  description: 'Complete flat roof installation and repair including built-up roofing, modified bitumen, and single-ply systems.',
+  description: 'Leak tracking, drains, scuppers, seams, curbs, and ponding water fixes before a small roof problem shuts down a tenant space.',
   href: '/services/commercial-roofing',
   },
   {
@@ -121,13 +105,13 @@ const commercialServices = [
   {
     icon: Thermometer,
   title: 'Roof Coatings',
-  description: 'Silicone and acrylic roof coatings that extend roof life, improve energy efficiency, and reduce cooling costs.',
+  description: 'Silicone and acrylic restoration coatings when the roof has life left and a tear-off does not make financial sense.',
   href: '/services/commercial-roofing',
   },
   {
     icon: Wrench,
   title: 'Commercial Roof Repair',
-  description: '24/7 emergency repairs for leaks, storm damage, and ponding water. Minimize business disruption.',
+  description: 'Fast leak response with photos, moisture notes, and a plain-English repair plan your property manager or owner can approve.',
   href: '/services/roof-repair',
   },
   {
@@ -174,7 +158,7 @@ const whyChooseUs = [
   {
     icon: Clock,
   title: 'Minimal Business Disruption',
-  description: 'We work around your schedule - nights, weekends, and phased installation to keep your business running.',
+  description: 'We plan access, noise, dumpsters, tenant notices, and phased work before crews show up so your business can keep operating.',
   },
   {
     icon: FileCheck,
@@ -516,15 +500,14 @@ export default function CommercialRoofingCharlotteNCPage() {
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Charlotte&apos;s trusted commercial roofing experts with {SITE_CONFIG.roofsInstalled}+ projects completed
+              Flat roof leaks, aging TPO, and storm damage handled by a Charlotte roofing crew that plans around your business.
             </p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte&apos;s authorized commercial roofing contractor for Carlisle SynTec, Johns Manville,
-              Holcim/Firestone Building Products, GAF EverGuard, and Mule-Hide — the certifications that unlock NDL (no-dollar-limit)
-              warranties on TPO, EPDM, PVC, and modified-bitumen systems. We serve Independence Blvd, South End, University Research
-              Park, Ballantyne Corporate Park, and the I-77/I-485 corridors with infrared moisture surveys, IRC IECC zone 4A energy-code
-              spec, and same-week emergency response. {SITE_CONFIG.googleReviewCount}+ five-star reviews, BBB A+ rated, veteran-owned —
-              serving warehouses, office buildings, retail centers, healthcare facilities, schools, and churches across Mecklenburg County.
+              We work on the roofs Charlotte business owners actually have: low-slope TPO over warehouses near Westinghouse, older EPDM
+              over office buildings around SouthPark and Ballantyne, retail centers off Independence, and church or school roofs that need
+              careful scheduling. We document leaks with photos, check seams, drains, curbs, and ponding water, then tell you whether a
+              repair, coating, or replacement is the honest move. The goal is simple: stop the leak, protect the building, and keep your
+              property open and dry.
             </p>
 
             {/* CTA Buttons */}
@@ -1348,6 +1331,8 @@ export default function CommercialRoofingCharlotteNCPage() {
         subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`}
       />
+
+      <CitationFacts service="Commercial Roofing" city="Charlotte" state="NC" />
 
       {/* Final CTA */}
 

@@ -26,17 +26,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Matthews NC | New Roof',
   description:
-    'Need a new roof in Matthews NC? Best Roofing Now provides expert roof replacement with premium materials and warranties. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'roof replacement matthews nc',
-    'new roof matthews nc',
-    'reroof matthews nc',
-    'roof installation matthews',
-    'replace roof matthews nc',
-    'matthews roof replacement cost',
-    'roof replacement near me matthews',
-    'residential roof replacement matthews',
-  ],
+    'Need a new roof in Matthews NC? Best Roofing Now provides expert roof replacement with premium materials and warranties. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-matthews-nc`,
   },

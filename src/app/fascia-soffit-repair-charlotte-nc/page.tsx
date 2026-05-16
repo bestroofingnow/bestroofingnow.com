@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Fascia & Soffit Charlotte NC',
   description:
-    'Professional fascia and soffit repair in Charlotte NC. Fix wood rot, replace damaged trim, and install aluminum fascia and soffit. BBB A+ rated, licensed contractor. Free estimates available.',
-  keywords: [
-    'fascia soffit repair Charlotte NC',
-    'fascia repair Charlotte',
-    'soffit repair Charlotte NC',
-    'wood rot repair Charlotte',
-    'fascia replacement Charlotte NC',
-    'soffit replacement Charlotte',
-    'aluminum fascia Charlotte NC',
-    'vinyl soffit Charlotte',
-    'fascia board repair Charlotte',
-    'soffit vent installation Charlotte NC',
-    'rotted fascia repair Charlotte',
-    'trim repair Charlotte NC',
-  ],
+    'Professional fascia and soffit repair in Charlotte NC. Fix wood rot, replace damaged trim, and install aluminum fascia and soffit. BBB A+ rated, licensed contractor. Free estimates available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc`,
   },

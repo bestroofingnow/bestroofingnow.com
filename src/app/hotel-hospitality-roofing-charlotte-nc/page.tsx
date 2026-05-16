@@ -40,18 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Hotel Roofing Charlotte NC',
   description:
-    'Expert hotel and hospitality roofing contractors in Charlotte NC. We specialize in hotels, resorts, convention centers & restaurants. Minimal guest disruption, fast turnaround. Licensed & insured. Free estimates.',
-  keywords: [
-    'hotel roofing charlotte nc',
-    'hospitality roofing charlotte nc',
-    'hotel roof repair charlotte',
-    'convention center roofing charlotte nc',
-    'resort roofing charlotte',
-    'hotel roof replacement charlotte nc',
-    'commercial hotel roofing charlotte',
-    'hospitality roofing contractors charlotte',
-    'restaurant roofing charlotte nc',
-  ],
+    'Expert hotel and hospitality roofing contractors in Charlotte NC. We specialize in hotels, resorts, convention centers & restaurants. Minimal guest disruption, fast turnaround. Licensed & insured. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hotel-hospitality-roofing-charlotte-nc`,
   },

@@ -39,19 +39,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Cost Cornelius NC',
   description:
-    'Roofing cost in Cornelius NC for 2026. Replacement pricing $5,925-$125,000+ by material and home size. The Peninsula, Antiquity, Jetton Cove rates. Free estimate.',
-  keywords: [
-    'roofing cost cornelius nc',
-    'roof replacement cost cornelius',
-    'how much does a roof cost in cornelius nc',
-    'cornelius nc roofing prices 2026',
-    'metal roof cost cornelius nc',
-    'roof repair cost cornelius',
-    'the peninsula roofing cost',
-    'antiquity cornelius roof price',
-    'cornelius roof estimate',
-    'new roof price cornelius north carolina',
-  ],
+    'Roofing cost in Cornelius NC for 2026. Replacement pricing $5,925-$125,000+ by material and home size. The Peninsula, Antiquity, Jetton Cove rates. Free estimate.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-cost-cornelius-nc`,
   },

@@ -439,15 +439,7 @@ export async function generateMetadata({
 
   return {
     title: `Roofing Projects ${cityName} ${state}`,
-  description: `See completed roofing projects in ${cityName}, ${state}. Before & after photos, materials used, and stories from homeowners we've helped. ${cityData?.description?.slice(0, 100) || ''}`,
-  keywords: [
-      `roofing ${cityName} ${state}`,
-      `roof replacement ${cityName}`,
-      `roofer near me ${cityName}`,
-      `${cityName} roofing company`,
-      `CertainTeed ${cityName}`,
-      `GAF roofing ${cityName}`,
-    ],
+  description: `See completed roofing projects in ${cityName}, ${state}. Before & after photos, materials used, and stories from homeowners we've helped. ${cityData?.description?.slice(0, 100) || ''}`,
   openGraph: {
       title: `Roofing Projects in ${cityName} | Best Roofing Now`,
   description: `Explore our completed roofing work in ${cityName}. Real projects from real homes.`,

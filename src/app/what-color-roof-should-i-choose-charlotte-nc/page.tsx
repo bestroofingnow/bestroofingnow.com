@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'What Color Roof Should I Choose for My Charlotte NC Home?',
   description:
     "What color roof works best in Charlotte NC? Match brick, consider HOA palette, climate impact (lighter saves $80-200/yr cooling), and resale value. Physical samples brought to every consultation.",
-  keywords: [
-    'what color roof should I choose Charlotte NC',
-    'best roof color for Charlotte',
-    'roof color matching brick',
-    'cool roof shingle colors',
-    'HOA approved roof colors Charlotte',
-    'popular roof colors NC',
-    'roof color for resale value',
-    'Charlotte roof color guide',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Color Roof Should I Choose for My Charlotte NC Home?',

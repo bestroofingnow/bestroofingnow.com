@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Statesville NC',
   description:
-    'Need emergency roof repair in Statesville NC? Best Roofing Now provides 24/7 emergency roofing services in Iredell County. BBB A+ rated, veteran-owned. Storm damage, active leaks, fallen trees. Call now!',
-  keywords: [
-    'emergency roof repair statesville nc',
-    'emergency roofer statesville',
-    '24/7 roof repair statesville nc',
-    'storm damage roof repair statesville',
-    'urgent roof repair statesville nc',
-    'iredell county emergency roofer',
-    'roof leak emergency statesville',
-    'emergency roofing statesville nc',
-    'after hours roof repair statesville',
-    'emergency roof repair near me statesville',
-  ],
+    'Need emergency roof repair in Statesville NC? Best Roofing Now provides 24/7 emergency roofing services in Iredell County. BBB A+ rated, veteran-owned. Storm damage, active leaks, fallen trees. Call now!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-statesville-nc`,
   },

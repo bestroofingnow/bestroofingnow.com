@@ -37,23 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Indian Trail NC | 5-Star Rated',
   description:
-    'Looking for quality roofing in Indian Trail NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Union County. BBB A+ rated with 500+ roofs completed. Free estimates for residential and commercial roofing services.',
-  keywords: [
-    'roofing indian trail nc',
-    'indian trail nc roofing',
-    'roofing in indian trail nc',
-    'roofing services indian trail nc',
-    'local roofing indian trail nc',
-    'best roofing indian trail nc',
-    'top rated roofing indian trail',
-    'quality roofing indian trail nc',
-    'reliable roofing indian trail',
-    'trusted roofing indian trail nc',
-    'roof repair indian trail nc',
-    'roof replacement indian trail nc',
-    'union county roofing',
-    'roofing company indian trail',
-  ],
+    'Looking for quality roofing in Indian Trail NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Union County. BBB A+ rated with 500+ roofs completed. Free estimates for residential and commercial roofing services.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-indian-trail-nc`,
   },

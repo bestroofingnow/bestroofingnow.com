@@ -36,16 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Owens Corning Charlotte NC',
   description:
-    'Owens Corning shingle installation in Charlotte NC. Install Duration and TruDefinition shingles with manufacturer warranties. BBB A+ rated, veteran-owned roofing company.',
-  keywords: [
-    'owens corning roofing charlotte nc',
-    'owens corning shingles charlotte',
-    'owens corning duration shingles charlotte nc',
-    'owens corning roofer near me',
-    'trudefinition duration shingles charlotte',
-    'owens corning roof installation charlotte',
-    'owens corning contractor charlotte nc',
-  ],
+    'Owens Corning shingle installation in Charlotte NC. Install Duration and TruDefinition shingles with manufacturer warranties. BBB A+ rated, veteran-owned roofing company.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/owens-corning-roofing-charlotte-nc`,
   },

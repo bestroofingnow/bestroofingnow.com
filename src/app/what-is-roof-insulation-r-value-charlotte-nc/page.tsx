@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Roof Insulation R-Value Charlotte NC',
   description: "What roof insulation R-value means and what your Charlotte NC home needs. NC code R-38 minimum, R-49 preferred, cellulose vs fiberglass costs.",
-  keywords: ['roof insulation r-value charlotte nc', 'attic insulation charlotte', 'r-38 r-49 charlotte', 'nc residential code insulation', 'blown in cellulose charlotte', 'fiberglass batt charlotte', 'attic insulation cost charlotte', 'energy savings charlotte nc'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'Roof Insulation R-Value Charlotte NC', description: 'NC code requirements, material options, and cost ranges for attic insulation in Charlotte NC.', url: PAGE_URL, type: 'article' },
 };

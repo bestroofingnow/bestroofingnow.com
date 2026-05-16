@@ -38,19 +38,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Cornelius NC | Insurance Help',
   description:
-    'Storm damage roof repair in Cornelius NC. Expert hail, wind, and emergency repairs near Lake Norman. Insurance claim assistance. Free storm inspections!',
-  keywords: [
-    'storm damage roof repair Cornelius NC',
-    'hail damage roof repair Cornelius',
-    'wind damage roof Cornelius NC',
-    'storm damage roofer Cornelius',
-    'roof insurance claim Cornelius',
-    'emergency storm repair Cornelius',
-    'hail damage roofer Lake Norman',
-    'storm damage roofing Cornelius NC',
-    'Cornelius storm damage contractor',
-    'roof repair after storm Cornelius',
-  ],
+    'Storm damage roof repair in Cornelius NC. Expert hail, wind, and emergency repairs near Lake Norman. Insurance claim assistance. Free storm inspections!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-cornelius-nc`,
   },

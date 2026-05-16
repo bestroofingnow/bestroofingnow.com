@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Coating Charlotte NC | Extend Roof Life 15+ Years',
   description:
-    'Professional roof coating for all roof types in Charlotte NC -- pitched, flat, residential, and commercial. Silicone, acrylic, and elastomeric coatings extend your roof\'s life by 15+ years. Free estimates from BBB A+ rated contractor.',
-  keywords: [
-    'roof coating Charlotte NC',
-    'roof coating commercial Charlotte',
-    'silicone roof coating Charlotte NC',
-    'acrylic roof coating Charlotte',
-    'commercial roof coating Charlotte',
-    'roof restoration Charlotte NC',
-    'elastomeric roof coating Charlotte',
-    'cool roof coating Charlotte NC',
-    'roof sealant Charlotte NC',
-    'reflective roof coating Charlotte',
-    'residential roof coating Charlotte NC',
-    'all roof types coating Charlotte',
-  ],
+    'Professional roof coating for all roof types in Charlotte NC -- pitched, flat, residential, and commercial. Silicone, acrylic, and elastomeric coatings extend your roof\'s life by 15+ years. Free estimates from BBB A+ rated contractor.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-coating-charlotte-nc`,
   },

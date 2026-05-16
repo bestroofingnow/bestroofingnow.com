@@ -42,18 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Distribution Center Roofing CLT',
   description:
-    'Expert distribution center roofing contractors in Charlotte NC. Specializing in fulfillment centers, cold storage, logistics facilities & e-commerce warehouses along the I-85 corridor. TPO, EPDM, metal roofing. Free estimates.',
-  keywords: [
-    'distribution center roofing charlotte nc',
-    'fulfillment center roofing charlotte',
-    'logistics facility roofing charlotte nc',
-    'cold storage roofing charlotte',
-    'warehouse roofing i-85 corridor',
-    'e-commerce warehouse roofing charlotte nc',
-    'distribution center roof repair charlotte',
-    'commercial roofing charlotte nc',
-    'last mile hub roofing charlotte',
-  ],
+    'Expert distribution center roofing contractors in Charlotte NC. Specializing in fulfillment centers, cold storage, logistics facilities & e-commerce warehouses along the I-85 corridor. TPO, EPDM, metal roofing. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/distribution-center-roofing-charlotte-nc`,
   },

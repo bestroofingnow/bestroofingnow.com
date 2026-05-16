@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Time Do Roofers Start?',
   description: "What time do roofers start in Charlotte NC? Typically 7am-5pm M-F. HOAs may restrict to 8am-5pm. Summer crews start 6am to beat heat.",
-  keywords: ['what time roofers start charlotte nc', 'roofing work hours charlotte', 'charlotte roofer schedule', 'roofing noise ordinance charlotte', 'hoa construction hours charlotte', 'roofer start time', 'charlotte roof install hours', 'roofing summer schedule'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'What Time Do Roofers Start?', description: 'Charlotte NC roofers: 7am-5pm M-F standard, 6am summer start, HOA rules vary.', url: PAGE_URL, type: 'article' },
 };

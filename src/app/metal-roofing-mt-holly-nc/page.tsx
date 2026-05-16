@@ -28,17 +28,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roofing Mt Holly NC | Durable',
   description:
-    'Looking for metal roofing in Mt Holly NC? Best Roofing Now installs premium standing seam and metal shingle roofs. 50+ year lifespan, energy efficient. Free estimates!',
-  keywords: [
-    'metal roofing mt holly nc',
-    'metal roof mt holly nc',
-    'standing seam metal roof mt holly',
-    'metal roofing contractors mt holly',
-    'metal roof installation mt holly nc',
-    'metal roofing cost mt holly',
-    'metal roof near me mt holly',
-    'metal shingle roof mt holly nc',
-  ],
+    'Looking for metal roofing in Mt Holly NC? Best Roofing Now installs premium standing seam and metal shingle roofs. 50+ year lifespan, energy efficient. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-mt-holly-nc`,
   },

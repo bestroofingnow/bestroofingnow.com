@@ -30,21 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Cornelius NC | Lake Norman | Free Estimates',
   description:
-    'Expert roof replacement in Cornelius NC. Serving Lake Norman waterfront homes with premium materials. GAF & CertainTeed certified. Financing available. Free estimates from BBB A+ rated contractor.',
-  keywords: [
-    'roof replacement cornelius nc',
-    'cornelius roof replacement',
-    'new roof cornelius nc',
-    'roof replacement cost cornelius',
-    'replace roof cornelius',
-    'cornelius nc roof replacement',
-    'lake norman roof replacement',
-    'waterfront roof replacement cornelius',
-    'residential roof replacement cornelius',
-    'full roof replacement cornelius nc',
-    'roof replacement near the peninsula',
-    'cornelius roofing replacement',
-  ],
+    'Expert roof replacement in Cornelius NC. Serving Lake Norman waterfront homes with premium materials. GAF & CertainTeed certified. Financing available. Free estimates from BBB A+ rated contractor.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-cornelius-nc`,
   },

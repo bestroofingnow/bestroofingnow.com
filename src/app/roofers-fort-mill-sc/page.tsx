@@ -35,19 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofers Fort Mill SC | Top Rated',
   description:
-    'Looking for trusted roofers in Fort Mill SC? Best Roofing Now serves Fort Mill, Tega Cay, and York County with BBB A+ rated service. Licensed, insured, veteran-owned. Free estimates for all roofing services. Call (704) 605-6047.',
-  keywords: [
-    'roofers fort mill sc',
-    'fort mill roofers',
-    'roofers near me fort mill',
-    'best roofers fort mill sc',
-    'fort mill sc roofing company',
-    'local roofers fort mill',
-    'top rated roofers fort mill sc',
-    'roofers tega cay sc',
-    'york county roofers',
-    'trusted roofers fort mill',
-  ],
+    'Looking for trusted roofers in Fort Mill SC? Best Roofing Now serves Fort Mill, Tega Cay, and York County with BBB A+ rated service. Licensed, insured, veteran-owned. Free estimates for all roofing services. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-fort-mill-sc`,
   },

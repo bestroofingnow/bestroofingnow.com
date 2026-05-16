@@ -36,19 +36,6 @@ export const metadata: Metadata = {
   title: 'Roof Certification Charlotte NC | Real Estate & Lender',
   description:
     'Roof certification for Charlotte NC real estate transactions — HAAG certified inspectors, 2-5 year certification period, 24-48 hour letter turnaround. FHA/VA lender accepted.',
-  keywords: [
-    'roof certification charlotte nc',
-    'roof certification for home sale charlotte',
-    'real estate roof inspection charlotte',
-    'roof condition report charlotte nc',
-    'roof certification letter charlotte',
-    'haag certified roof inspector charlotte',
-    'fha roof certification',
-    'va loan roof certification',
-    'conventional loan roof certification',
-    '2 year roof certification',
-    '5 year roof certification',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-certification`,
   },

@@ -32,21 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Mooresville NC | Seamless Gutters',
   description:
-    'Professional gutter installation in Mooresville NC. Seamless aluminum gutters, gutter guards, and repairs for Lake Norman homes. BBB A+ rated. Free estimates!',
-  keywords: [
-    'gutter installation Mooresville NC',
-    'gutters Mooresville NC',
-    'seamless gutters Mooresville',
-    'gutter company Mooresville NC',
-    'gutter repair Mooresville NC',
-    'gutter guards Mooresville',
-    'aluminum gutters Mooresville NC',
-    'gutter replacement Mooresville',
-    'Lake Norman gutter installer',
-    'Mooresville gutter contractor',
-    'downspout installation Mooresville NC',
-    'gutter cleaning Mooresville NC',
-  ],
+    'Professional gutter installation in Mooresville NC. Seamless aluminum gutters, gutter guards, and repairs for Lake Norman homes. BBB A+ rated. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-mooresville-nc`,
   },

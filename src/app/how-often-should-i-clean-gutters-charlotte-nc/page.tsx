@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'How Often Should I Clean My Gutters in Charlotte NC?',
   description:
     "Clean Charlotte NC gutters 2-3x/year minimum: spring + fall + optional summer for canopy-heavy areas. Clogged gutters cause $5-25K foundation damage. $125-300 per cleaning, or install gutter guards.",
-  keywords: [
-    'how often clean gutters Charlotte NC',
-    'gutter cleaning frequency',
-    'when to clean gutters Charlotte',
-    'gutter cleaning cost Charlotte',
-    'do I need gutter guards',
-    'clogged gutters damage',
-    'Charlotte tree canopy gutters',
-    'fall gutter cleaning Charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Often Should I Clean My Gutters in Charlotte NC?',

@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Roof Anchor Points Charlotte NC',
   description: "What roof anchor points are and when Charlotte NC homes need them. OSHA 6-ft rule, permanent vs temporary, $200-$600 installation costs.",
-  keywords: ['roof anchor point charlotte nc', 'fall protection charlotte', 'osha roof safety charlotte', 'permanent roof anchor', 'd-ring roof anchor charlotte', 'roof safety harness', 'solar panel anchor charlotte', 'commercial roof anchor mecklenburg'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'Roof Anchor Points Charlotte NC', description: 'OSHA-compliant roof anchor point guide for Charlotte NC homes and commercial buildings.', url: PAGE_URL, type: 'article' },
 };

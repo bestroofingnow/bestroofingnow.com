@@ -38,24 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing River Run Davidson NC',
   description:
-    'Expert roofing for River Run Country Club in Davidson NC. Synthetic slate, standing-seam metal, and ARC-approved replacements for 25-30 yr aging roofs.',
-  keywords: [
-    'river run roofing',
-    'river run davidson roofer',
-    'roof replacement river run',
-    'roof repair river run',
-    'river run country club roofing',
-    'roofing river run davidson nc',
-    'davidson nc roofing contractor',
-    'gated community roofing davidson',
-    'synthetic slate roofing river run',
-    'standing seam metal roofing davidson nc',
-    'river run hoa roofing',
-    'arc approved roofing davidson',
-    'luxury roofing davidson nc',
-    'davidson 28036 roofer',
-    'lake norman roofing river run',
-  ],
+    'Expert roofing for River Run Country Club in Davidson NC. Synthetic slate, standing-seam metal, and ARC-approved replacements for 25-30 yr aging roofs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-river-run-davidson-nc`,
   },

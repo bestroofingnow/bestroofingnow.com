@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Sherrills Ford',
   description:
-    'Need emergency roof repair in Sherrills Ford NC? Best Roofing Now provides 24/7 emergency roofing services for Lake Norman homes. Storm damage, active leaks, fallen trees. BBB A+ rated, veteran-owned. Call now: (704) 605-6047!',
-  keywords: [
-    'emergency roof repair sherrills ford nc',
-    'emergency roofer sherrills ford',
-    '24/7 roof repair sherrills ford',
-    'storm damage roof repair sherrills ford',
-    'emergency roof leak sherrills ford nc',
-    'lake norman emergency roofer',
-    'catawba county emergency roofing',
-    'urgent roof repair sherrills ford',
-    'roof emergency sherrills ford nc',
-    'after hours roof repair sherrills ford',
-  ],
+    'Need emergency roof repair in Sherrills Ford NC? Best Roofing Now provides 24/7 emergency roofing services for Lake Norman homes. Storm damage, active leaks, fallen trees. BBB A+ rated, veteran-owned. Call now: (704) 605-6047!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-sherrills-ford-nc`,
   },

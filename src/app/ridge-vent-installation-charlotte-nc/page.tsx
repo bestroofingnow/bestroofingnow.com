@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Ridge Vent Install Charlotte NC',
   description:
-    'Professional ridge vent installation in Charlotte NC. Improve attic ventilation, reduce energy costs, and prevent moisture damage. BBB A+ rated, licensed contractor. Free estimates available.',
-  keywords: [
-    'ridge vent installation Charlotte NC',
-    'ridge vents Charlotte',
-    'ridge vent repair Charlotte NC',
-    'ridge vent cost Charlotte NC',
-    'roof ridge vent Charlotte NC',
-    'continuous ridge vent Charlotte',
-    'shingle over ridge vent Charlotte',
-    'ridge vent replacement Charlotte NC',
-    'ridge vent vs box vent Charlotte',
-    'best ridge vent Charlotte NC',
-  ],
+    'Professional ridge vent installation in Charlotte NC. Improve attic ventilation, reduce energy costs, and prevent moisture damage. BBB A+ rated, licensed contractor. Free estimates available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/ridge-vent-installation-charlotte-nc`,
   },

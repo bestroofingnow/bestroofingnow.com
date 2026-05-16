@@ -37,18 +37,6 @@ export const metadata: Metadata = {
   title: 'Gutter Repair Charlotte NC',
   description:
     'Gutter repair in Charlotte NC — miter and endcap re-seal, sagging re-pitch, hidden-hanger re-set at 18-24", downspout replacement. 2026 pricing, same-day service available.',
-  keywords: [
-    'gutter repair charlotte nc',
-    'leaking gutter repair charlotte',
-    'sagging gutter fix charlotte nc',
-    'downspout repair charlotte',
-    'gutter seam repair',
-    'miter leak repair charlotte',
-    'endcap gutter repair',
-    'gutter re-pitch charlotte',
-    'gutter hanger replacement',
-    'clogged gutter repair',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-repair`,
   },

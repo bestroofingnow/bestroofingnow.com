@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Cedar Shake Roofing Charlotte NC | Premium Wood Shake Installation',
   description:
-    'Expert cedar shake roofing installation in Charlotte NC. Natural wood shakes & shingles for luxury homes. 30-50 year lifespan with stunning rustic elegance. Free estimates from certified installers.',
-  keywords: [
-    'cedar shake roofing charlotte nc',
-    'cedar shake roof installation charlotte',
-    'wood shake roof charlotte nc',
-    'cedar shingle roofing charlotte',
-    'cedar roofing contractors charlotte nc',
-    'natural wood roofing charlotte',
-    'premium cedar shakes charlotte nc',
-    'cedar roof repair charlotte nc',
-    'luxury wood roof charlotte',
-    'cedar shake replacement charlotte',
-    'treated cedar shakes charlotte nc',
-    'cedar roofing myers park charlotte',
-  ],
+    'Expert cedar shake roofing installation in Charlotte NC. Natural wood shakes & shingles for luxury homes. 30-50 year lifespan with stunning rustic elegance. Free estimates from certified installers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/cedar-shake-roofing-charlotte-nc`,
   },

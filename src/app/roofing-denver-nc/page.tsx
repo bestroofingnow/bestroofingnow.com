@@ -33,21 +33,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Denver NC | Lake Norman Roofers',
   description:
-    'Trusted roofing company serving Denver NC on Lake Norman\'s western shore. BBB A+ rated, veteran-owned. Roof repair, replacement & inspection. Free estimates!',
-  keywords: [
-    'roofing denver nc',
-    'roofing company denver nc',
-    'denver nc roofers',
-    'denver nc roofing contractor',
-    'roof repair denver nc',
-    'roof replacement denver nc',
-    'lake norman western shore roofing',
-    'roofers near denver nc',
-    'best roofer denver nc',
-    'lincoln county roofing',
-    'denver nc roof inspection',
-    'trilogy at lake norman roofing',
-  ],
+    'Trusted roofing company serving Denver NC on Lake Norman\'s western shore. BBB A+ rated, veteran-owned. Roof repair, replacement & inspection. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-denver-nc`,
   },

@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Arboretum Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Roofing contractor in the Arboretum area of Charlotte NC. Roof replacement, repair, and storm damage. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing arboretum charlotte nc',
-    'roofer arboretum charlotte',
-    'arboretum roof replacement charlotte',
-    'arboretum roof repair charlotte nc',
-    'roofing contractor arboretum charlotte',
-    'Providence Road roofing charlotte',
-    'south charlotte roofing arboretum',
-    'arboretum neighborhood roofer',
-    'best roofer arboretum charlotte nc',
-    'arboretum charlotte roofing services',
-  ],
+    'Roofing contractor in the Arboretum area of Charlotte NC. Roof replacement, repair, and storm damage. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-arboretum-charlotte-nc`,
   },

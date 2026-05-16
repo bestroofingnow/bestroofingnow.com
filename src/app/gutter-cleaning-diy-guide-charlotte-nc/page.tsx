@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'DIY Gutter Cleaning Guide Charlotte NC | Safe Cleaning Tips',
   description:
-    'Step-by-step guide to safely clean your gutters in Charlotte NC. Learn when to DIY vs hire pros, essential tools, safety tips, and seasonal cleaning schedules.',
-  keywords: [
-    'gutter cleaning Charlotte NC',
-    'DIY gutter cleaning Charlotte',
-    'how to clean gutters Charlotte',
-    'cleaning gutters safely',
-    'how to clean gutters safely',
-    'safe gutter cleaning tips',
-    'gutter cleaning tips Charlotte NC',
-    'gutter cleaning safety Charlotte',
-    'when to clean gutters Charlotte',
-    'gutter cleaning tools Charlotte',
-    'gutter maintenance Charlotte NC',
-    'gutter cleaning near me',
-  ],
+    'Step-by-step guide to safely clean your gutters in Charlotte NC. Learn when to DIY vs hire pros, essential tools, safety tips, and seasonal cleaning schedules.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-cleaning-diy-guide-charlotte-nc`,
   },

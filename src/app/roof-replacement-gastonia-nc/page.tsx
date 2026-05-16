@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Gastonia NC',
   description:
-    'Professional roof replacement services in Gastonia NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
-  keywords: [
-    'roof replacement gastonia nc',
-    'new roof gastonia nc',
-    'roof replacement cost gastonia',
-    'full roof replacement gastonia nc',
-    'complete roof replacement gastonia',
-    'roof replacement company gastonia',
-    'affordable roof replacement gastonia nc',
-    'quality roof replacement gastonia',
-    'roof replacement services gastonia nc',
-    'professional roof replacement gastonia',
-    'gastonia roofing contractor',
-    'gaston county roof replacement',
-  ],
+    'Professional roof replacement services in Gastonia NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-gastonia-nc`,
   },

@@ -38,24 +38,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Antiquity Cornelius NC',
   description:
-    'Expert roofing for Antiquity in Cornelius NC. Premium materials for gated luxury estates near Lake Norman. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'antiquity roofing cornelius nc',
-    'roofing antiquity cornelius',
-    'gated community roofing cornelius nc',
-    'antiquity cornelius roofing contractor',
-    'luxury roofing antiquity cornelius',
-    'hoa roofing cornelius nc',
-    'designer shingles antiquity',
-    'standing seam metal roofing cornelius',
-    'cedar shake roofing antiquity cornelius',
-    'copper roofing cornelius nc',
-    'slate roofing antiquity',
-    'premium roofing cornelius nc',
-    'antiquity hoa roofing compliance',
-    'gated community roof replacement cornelius',
-    'upscale roofing cornelius nc',
-  ],
+    'Expert roofing for Antiquity in Cornelius NC. Premium materials for gated luxury estates near Lake Norman. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-antiquity-cornelius-nc`,
   },

@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Davidson NC',
   description:
-    '24/7 emergency roof repair in Davidson NC. Fast response for storm damage, active leaks, and fallen trees. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
-  keywords: [
-    'emergency roof repair Davidson NC',
-    '24 hour roofer Davidson',
-    'emergency roofer Davidson NC',
-    'storm damage repair Davidson',
-    'roof leak emergency Davidson',
-    'urgent roof repair Davidson NC',
-    '24/7 roofing Davidson',
-    'emergency tarping Davidson',
-    'tree fell on roof Davidson',
-    'hail damage repair Davidson NC',
-    'after hours roofer Davidson',
-    'emergency roofing near me Davidson',
-  ],
+    '24/7 emergency roof repair in Davidson NC. Fast response for storm damage, active leaks, and fallen trees. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-davidson-nc`,
   },

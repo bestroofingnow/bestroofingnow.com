@@ -43,23 +43,7 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 export const metadata: Metadata = {
   title: 'Roof Storm Damage Insurance Claim Charlotte NC | Free Inspection',
   description:
-    'Step-by-step guide to filing a roof storm damage insurance claim in Charlotte NC. Hail damage, wind damage, emergency roof repair. FREE inspections from BBB A+ rated contractor. We work with your insurance company.',
-  keywords: [
-    'roof storm damage insurance claim',
-    'hail damage roof insurance',
-    'roof insurance claim tips',
-    'storm damage roof repair Charlotte NC',
-    'emergency roof repair Charlotte',
-    'how to file roof insurance claim',
-    'wind damage roof repair',
-    'roof damage from storm what to do',
-    'roof insurance claim process Charlotte NC',
-    'hail damage roof repair Charlotte NC',
-    'storm damage roofing contractor Charlotte',
-    'insurance claim roofing Charlotte NC',
-    'roof damage inspection Charlotte NC',
-    'Charlotte NC storm damage specialist',
-  ],
+    'Step-by-step guide to filing a roof storm damage insurance claim in Charlotte NC. Hail damage, wind damage, emergency roof repair. FREE inspections from BBB A+ rated contractor. We work with your insurance company.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-storm-damage-insurance-claim-charlotte-nc`,
   },

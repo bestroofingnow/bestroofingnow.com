@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'How to Choose a Roofing Contractor Charlotte NC | 2026 Guide',
   description:
-    'Expert guide to choosing a roofing contractor in Charlotte NC. Red flags to avoid, questions to ask, credentials to verify, and how to spot scams after storms.',
-  keywords: [
-    'how to choose roofing contractor Charlotte NC',
-    'questions to ask roofer before hiring Charlotte NC',
-    'how to find a reputable roofer Charlotte NC',
-    'avoid roofing scams Charlotte NC',
-    'what to look for in a roofer Charlotte NC',
-    'licensed roofer Charlotte NC',
-    'roofing contractor credentials NC',
-    'storm chaser roofers Charlotte NC',
-    'how to choose roofer Lake Norman NC',
-    'how to find roofer Lake Wylie SC',
-    'best roofing contractor Charlotte NC 2026',
-    'roofing contractor red flags Charlotte NC',
-  ],
+    'Expert guide to choosing a roofing contractor in Charlotte NC. Red flags to avoid, questions to ask, credentials to verify, and how to spot scams after storms.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/how-to-choose-roofing-contractor-charlotte-nc`,
   },

@@ -40,17 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'What to Do When a Tree Falls on Your Roof Charlotte NC | Emergency Guide',
   description:
-    'Tree fell on your Charlotte home? Step-by-step emergency guide: stay safe, document damage, file insurance claims, and get repairs. 24/7 emergency service available.',
-  keywords: [
-    'tree fell on roof Charlotte NC',
-    'tree damage roof Charlotte',
-    'emergency tree damage Charlotte',
-    'tree on house Charlotte NC',
-    'storm tree damage roof Charlotte',
-    'tree removal roof Charlotte',
-    'tree damage insurance claim Charlotte',
-    'emergency roof repair Charlotte NC',
-  ],
+    'Tree fell on your Charlotte home? Step-by-step emergency guide: stay safe, document damage, file insurance claims, and get repairs. 24/7 emergency service available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`,
   },

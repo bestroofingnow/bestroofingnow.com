@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'How Much Does a Roof Inspection Cost in Charlotte NC?',
   description:
     "Charlotte NC roof inspection cost: FREE for Best Roofing Now estimates, $200-450 for FHA/VA certifications, $350-900 commercial. Never pay for an estimate (red flag).",
-  keywords: [
-    'how much roof inspection cost Charlotte NC',
-    'roof inspection cost',
-    'free roof inspection Charlotte',
-    'FHA VA roof certification cost',
-    'commercial roof inspection',
-    'HAAG inspector Charlotte',
-    'home buyer roof inspection',
-    'roof certification cost NC',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Much Does a Roof Inspection Cost in Charlotte NC?',

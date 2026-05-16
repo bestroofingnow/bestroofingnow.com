@@ -32,21 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Mooresville NC',
   description:
-    'Commercial roofing experts in Mooresville NC serving race shops, warehouses, and industrial facilities. TPO, EPDM, flat roofs, and metal roofing. BBB A+ rated, veteran-owned. Free estimates for commercial properties!',
-  keywords: [
-    'commercial roofing Mooresville NC',
-    'flat roof Mooresville',
-    'race shop roofing Mooresville',
-    'industrial roofing Mooresville NC',
-    'TPO roofing Mooresville',
-    'EPDM roofing Mooresville NC',
-    'warehouse roofing Mooresville',
-    'commercial roof repair Mooresville',
-    'flat roof repair Mooresville NC',
-    'commercial roofer Mooresville',
-    'metal roof commercial Mooresville',
-    'NASCAR shop roofing',
-  ],
+    'Commercial roofing experts in Mooresville NC serving race shops, warehouses, and industrial facilities. TPO, EPDM, flat roofs, and metal roofing. BBB A+ rated, veteran-owned. Free estimates for commercial properties!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-mooresville-nc`,
   },

@@ -40,19 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Foxcroft Charlotte NC | Estates',
   description:
-    'Trusted roofer in Foxcroft Charlotte NC. Estate roofing with slate, cedar shake, and copper for luxury homes. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing foxcroft charlotte nc',
-    'roofers foxcroft',
-    'foxcroft roofing contractor',
-    'estate roofing charlotte',
-    'foxcroft roof repair',
-    'foxcroft roof replacement',
-    'luxury roofing foxcroft',
-    'slate roofing foxcroft charlotte',
-    'best roofer foxcroft charlotte',
-    'foxcroft east roofing services',
-  ],
+    'Trusted roofer in Foxcroft Charlotte NC. Estate roofing with slate, cedar shake, and copper for luxury homes. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-foxcroft-charlotte-nc`,
   },

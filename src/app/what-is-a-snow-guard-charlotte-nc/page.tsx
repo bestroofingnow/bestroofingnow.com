@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Snow Guard? Charlotte NC Need-to-Know',
   description:
     "Snow guards prevent dangerous snow slides off metal roofs. Rare in Charlotte (3-5 inch annual avg) but critical above entrances and on Lake Norman metal roofs. Install $8-$45/ft.",
-  keywords: [
-    'what is a snow guard Charlotte NC',
-    'snow guard metal roof Charlotte',
-    'S-5 ColorGard Charlotte',
-    'snow stop installation NC',
-    'metal roof snow slide prevention',
-    'Lake Norman metal roof snow guards',
-    'standing seam snow guard',
-    'snow guard cost Charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Snow Guard? Charlotte NC Need-to-Know',

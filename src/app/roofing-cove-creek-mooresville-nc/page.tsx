@@ -39,19 +39,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Cove Creek Mooresville NC',
   description:
-    'Cove Creek Mooresville NC roofing experts for waterfront and lake-view homes off Brawley School Rd. Wind-rated installs, HOA/ARC approval, free estimates.',
-  keywords: [
-    'cove creek roofing',
-    'cove creek mooresville roofer',
-    'roof replacement cove creek',
-    'cove creek mooresville nc roofing',
-    'cove creek lake norman roofing',
-    'brawley school rd roofing',
-    'waterfront roofing cove creek',
-    'cove creek hoa roofing',
-    'standing seam metal cove creek',
-    'wind rated roofing 28117',
-  ],
+    'Cove Creek Mooresville NC roofing experts for waterfront and lake-view homes off Brawley School Rd. Wind-rated installs, HOA/ARC approval, free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-cove-creek-mooresville-nc`,
   },

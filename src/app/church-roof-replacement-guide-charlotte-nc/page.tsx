@@ -36,17 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Church Roof Replacement Charlotte NC | Free Estimates',
   description:
-    'Church roof replacement in Charlotte NC: Financing options, minimal disruption to services, historic preservation. Trusted by Charlotte congregations.',
-  keywords: [
-    'church roofing Charlotte NC',
-    'church roof replacement Charlotte',
-    'religious building roofing Charlotte',
-    'church roof repair Charlotte NC',
-    'steeple repair Charlotte',
-    'historic church roofing Charlotte',
-    'church roofing financing Charlotte',
-    'nonprofit roofing Charlotte NC',
-  ],
+    'Church roof replacement in Charlotte NC: Financing options, minimal disruption to services, historic preservation. Trusted by Charlotte congregations.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/church-roof-replacement-guide-charlotte-nc`,
   },

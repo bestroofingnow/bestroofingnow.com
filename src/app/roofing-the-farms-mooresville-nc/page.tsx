@@ -38,19 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing The Farms Mooresville NC',
   description:
-    'Roofing for The Farms in Mooresville NC on Brawley School Rd. Architectural shingles, metal accents, HOA-approved colors. BBB A+ rated, free estimates.',
-  keywords: [
-    'the farms mooresville roofing',
-    'roofing the farms mooresville nc',
-    'the farms roofer',
-    'roof replacement the farms mooresville',
-    'brawley school road roofing',
-    'the village at the farms roofing',
-    'mooresville 28117 roofing',
-    'lake norman peninsula roofing',
-    'the farms hoa roof colors',
-    'architectural shingles the farms mooresville',
-  ],
+    'Roofing for The Farms in Mooresville NC on Brawley School Rd. Architectural shingles, metal accents, HOA-approved colors. BBB A+ rated, free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-the-farms-mooresville-nc`,
   },

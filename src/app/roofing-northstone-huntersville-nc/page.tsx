@@ -39,19 +39,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Northstone Huntersville NC',
   description:
-    'Trusted Northstone roofer in Huntersville NC 28078. Roof replacement, synthetic slate, Class 4 shingles & metal roofing for Northstone Country Club homes. ARC-ready.',
-  keywords: [
-    'northstone roofing',
-    'northstone country club roofing',
-    'northstone huntersville roofer',
-    'roof replacement northstone',
-    'roofing northstone huntersville nc',
-    'northstone hoa roofing',
-    'synthetic slate roofing northstone',
-    'class 4 shingles huntersville 28078',
-    'metal roofing northstone country club',
-    'roof inspection northstone huntersville',
-  ],
+    'Trusted Northstone roofer in Huntersville NC 28078. Roof replacement, synthetic slate, Class 4 shingles & metal roofing for Northstone Country Club homes. ARC-ready.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-northstone-huntersville-nc`,
   },

@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Emergency Tarp Service Charlotte',
   description:
-    'Emergency roof tarp service in Charlotte NC. 24/7 storm response for damaged roofs. Fast tarping to prevent water damage. Call Best Roofing Now for immediate help!',
-  keywords: [
-    'emergency roof tarp charlotte nc',
-    'roof tarping charlotte',
-    'emergency tarp service charlotte nc',
-    'storm damage tarp charlotte',
-    'roof tarp installation charlotte',
-    '24/7 roof tarping charlotte nc',
-    'emergency roof cover charlotte',
-    'temporary roof repair charlotte',
-    'storm roof protection charlotte nc',
-    'roof tarp after storm charlotte',
-    'emergency roofing charlotte nc',
-    'roof damage tarp service charlotte',
-  ],
+    'Emergency roof tarp service in Charlotte NC. 24/7 storm response for damaged roofs. Fast tarping to prevent water damage. Call Best Roofing Now for immediate help!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`,
   },

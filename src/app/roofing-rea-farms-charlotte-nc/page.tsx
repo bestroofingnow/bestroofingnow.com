@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Rea Farms Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Roofing contractor in Rea Farms, South Charlotte NC. Roof replacement, repair, and storm damage for luxury homes. BBB A+ rated. Free estimates.',
-  keywords: [
-    'roofing rea farms charlotte nc',
-    'roofer rea farms charlotte',
-    'rea farms roof replacement charlotte',
-    'rea farms roof repair charlotte nc',
-    'roofing contractor rea farms',
-    'rea road roofing charlotte',
-    'south charlotte roofing rea farms',
-    'rea farms neighborhood roofer',
-    'best roofer rea farms charlotte nc',
-    'rea farms charlotte roofing services',
-  ],
+    'Roofing contractor in Rea Farms, South Charlotte NC. Roof replacement, repair, and storm damage for luxury homes. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-rea-farms-charlotte-nc`,
   },

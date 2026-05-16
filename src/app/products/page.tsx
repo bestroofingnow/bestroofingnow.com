@@ -18,18 +18,6 @@ export const metadata: Metadata = {
   title: 'Roofing Shingle Products | GAF, CertainTeed, Owens Corning',
   description:
     'Compare shingle products from GAF, CertainTeed, Owens Corning, Malarkey, and Atlas. Wind ratings, warranties, Class 4 impact options, and 2026 price ranges for Charlotte roofs.',
-  keywords: [
-    'roofing shingle products charlotte',
-    'gaf timberline shingles',
-    'certainteed landmark shingles',
-    'owens corning duration shingles',
-    'malarkey vista shingles',
-    'class 4 impact resistant shingles nc',
-    'architectural shingles charlotte',
-    'designer shingles charlotte',
-    'shingle comparison chart',
-    'best shingles lake norman',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/products`,
   },

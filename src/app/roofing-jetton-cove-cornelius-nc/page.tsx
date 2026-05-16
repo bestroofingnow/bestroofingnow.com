@@ -37,24 +37,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Jetton Cove Cornelius NC',
   description:
-    'Expert roofing for Jetton Cove in Cornelius NC. Premium materials for waterfront homes near Jetton Park on Lake Norman. BBB A+ rated. Free estimates.',
-  keywords: [
-    'jetton cove roofing cornelius nc',
-    'roofing jetton cove lake norman',
-    'waterfront roofing cornelius nc',
-    'jetton cove cornelius roofing contractor',
-    'lakefront roofing jetton cove',
-    'luxury roofing jetton park area',
-    'slate roofing cornelius nc',
-    'copper roofing jetton cove',
-    'cedar shake roofing cornelius',
-    'designer shingles jetton cove',
-    'lake norman roofing cornelius',
-    'premium roofing cornelius nc',
-    'standing seam metal roofing cornelius nc',
-    'jetton road roofing cornelius',
-    'waterfront home roofing lake norman',
-  ],
+    'Expert roofing for Jetton Cove in Cornelius NC. Premium materials for waterfront homes near Jetton Park on Lake Norman. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-jetton-cove-cornelius-nc`,
   },

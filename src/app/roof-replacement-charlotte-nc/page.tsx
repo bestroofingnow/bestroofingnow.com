@@ -49,24 +49,6 @@ export const metadata: Metadata = {
   title: 'Roof Replacement Charlotte NC | 2026',
   description:
     'Roof replacement Charlotte NC -- 2026 pricing from $8K. Veteran-owned, BBB A+ rated, free estimates. GAF & Owens Corning certified installers. Financing available. 500+ roofs completed!',
-  keywords: [
-    'roof replacement charlotte nc',
-    'new roof charlotte nc',
-    'reroof charlotte',
-    'roof replacement cost charlotte nc',
-    'how much does a roof replacement cost charlotte nc',
-    'roof replacement cost charlotte nc 2026',
-    'full roof replacement charlotte nc',
-    'roof replacement company charlotte nc',
-    'affordable roof replacement charlotte nc',
-    'roof replacement near me charlotte',
-    'roof replacement lake norman nc',
-    'roof replacement lake wylie sc',
-    'roof replacement fort mill sc',
-    'roof replacement huntersville nc',
-    'roof replacement mooresville nc',
-    'best roof replacement charlotte nc',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-charlotte-nc`,
   },
@@ -405,17 +387,17 @@ export default function RoofReplacementCharlotteNCPage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-2 mb-4">
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-              <span className="text-sm font-semibold">Certified Installers | Financing Available</span>
+              <span className="text-sm font-semibold">Charlotte crews | Certified installers | Financing available</span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Roof Replacement <br className="hidden md:block" />
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Complete tear-off and new roof installation by certified professionals
+              Full tear-offs, honest repair-vs-replacement advice, and clean job sites from Ballantyne to University City.
             </p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              A new roof is a big deal. We make it easy: honest estimate, the shingle brands you&apos;ve actually heard of (GAF, CertainTeed, Owens Corning), warranties that protect both the materials and our installation, and financing if you&apos;d rather not write one check. Most Charlotte homes we re-roof in a single week. Ask us about impact-rated shingles — many insurance companies in NC give you a discount for putting them on.
+              A new roof is a big decision, and we treat it that way. We check the attic, decking, pipe boots, valleys, chimney flashing, and ventilation before we tell you a replacement is the right move. If the roof still has life left, we will say so. If it is time, you get clear photos, shingle options from brands homeowners recognize, clean tear-off work, and a written scope that makes sense before a crew shows up.
             </p>
 
             {/* CTA Buttons */}
@@ -426,7 +408,7 @@ export default function RoofReplacementCharlotteNCPage() {
                 size="lg"
                 icon={<Calendar className="w-5 h-5" aria-hidden="true" />}
               >
-                Get Your Free Estimate
+                Schedule Roof Inspection
               </Button>
               <Button
                 href={`tel:${SITE_CONFIG.phoneClean}`}
@@ -435,9 +417,12 @@ export default function RoofReplacementCharlotteNCPage() {
                 className="border-white text-white hover:bg-white hover:text-primary"
                 icon={<Phone className="w-5 h-5" aria-hidden="true" />}
               >
-                Call {SITE_CONFIG.phone}
+                Talk Through Your Roof
               </Button>
             </div>
+            <p className="mt-3 text-sm text-white/70">
+              We bring photos, explain the tradeoffs, and price the roof before asking for a decision.
+            </p>
 
             {/* Trust Signals */}
             <div className="flex flex-wrap items-center gap-6 mt-8 text-sm text-white/80">

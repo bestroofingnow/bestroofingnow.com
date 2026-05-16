@@ -28,17 +28,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Mt Holly NC',
   description:
-    'Commercial roofing services in Mt Holly NC. Best Roofing Now installs TPO, EPDM, metal, and flat roofing systems for businesses. Licensed, insured. Free estimates!',
-  keywords: [
-    'commercial roofing mt holly nc',
-    'commercial roof repair mt holly',
-    'flat roof mt holly nc',
-    'tpo roofing mt holly nc',
-    'commercial roofing contractors mt holly',
-    'business roofing mt holly nc',
-    'industrial roofing mt holly',
-    'commercial roof replacement mt holly',
-  ],
+    'Commercial roofing services in Mt Holly NC. Best Roofing Now installs TPO, EPDM, metal, and flat roofing systems for businesses. Licensed, insured. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-mt-holly-nc`,
   },

@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Denver NC',
   description:
-    '24/7 emergency roof repair in Denver NC. Fast response for storm damage and active leaks on Lake Norman. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
-  keywords: [
-    'emergency roof repair Denver NC',
-    '24 hour roofer Denver NC',
-    'emergency roofer Denver NC',
-    'storm damage repair Denver NC',
-    'roof leak emergency Denver NC',
-    'urgent roof repair Denver NC',
-    '24/7 roofing Denver NC',
-    'emergency tarping Denver NC',
-    'tree fell on roof Denver NC',
-    'hail damage repair Denver NC',
-    'after hours roofer Denver NC',
-    'emergency roofing near me Denver NC',
-  ],
+    '24/7 emergency roof repair in Denver NC. Fast response for storm damage and active leaks on Lake Norman. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-denver-nc`,
   },

@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Luxury Roofing Charlotte NC | Premium Roofing for Fine Homes',
   description:
-    'Premium luxury roofing for Charlotte\'s finest homes. Slate, copper, cedar shake, designer shingles for $800K+ homes. Myers Park, Eastover, SouthPark specialists. Free consultation.',
-  keywords: [
-    'luxury roofing charlotte nc',
-    'premium roofing charlotte',
-    'high end roofing charlotte nc',
-    'luxury home roofing charlotte',
-    'upscale roofing charlotte nc',
-    'fine home roofing charlotte',
-    'executive home roofing charlotte',
-    'premium roof materials charlotte nc',
-    'slate copper roofing charlotte',
-    'designer shingles charlotte nc',
-    'myers park roofing',
-    'eastover roofing',
-  ],
+    'Premium luxury roofing for Charlotte\'s finest homes. Slate, copper, cedar shake, designer shingles for $800K+ homes. Myers Park, Eastover, SouthPark specialists. Free consultation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/luxury-roofing-charlotte-nc`,
   },

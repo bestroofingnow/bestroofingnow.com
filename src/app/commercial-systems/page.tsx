@@ -62,15 +62,7 @@ const commercialSystemsFAQs = [
 
 export const metadata: Metadata = {
   title: 'Commercial Roofing Systems Charlotte NC',
-  description: 'Expert installation of commercial roofing systems in Charlotte NC. TPO, EPDM, PVC, Built-Up, and Metal roofing for businesses and industrial facilities.',
-  keywords: [
-    'commercial roofing Charlotte',
-    'TPO roofing',
-    'EPDM rubber roofing',
-    'PVC roofing',
-    'flat roof commercial',
-    'industrial roofing',
-  ],
+  description: 'Expert installation of commercial roofing systems in Charlotte NC. TPO, EPDM, PVC, Built-Up, and Metal roofing for businesses and industrial facilities.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-systems`,
   },

@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Concord NC | Top Rated',
   description:
-    'Looking for a trusted roofing company in Concord NC? Best Roofing Now serves Cabarrus County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair and replacement near Charlotte Motor Speedway.',
-  keywords: [
-    'roofing concord nc',
-    'roofers concord nc',
-    'roofing company concord nc',
-    'roof repair concord nc',
-    'roof replacement concord nc',
-    'concord roofing contractor',
-    'cabarrus county roofers',
-    'concord nc roofer',
-    'roofing contractors near me concord',
-    'speedway area roofing',
-  ],
+    'Looking for a trusted roofing company in Concord NC? Best Roofing Now serves Cabarrus County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair and replacement near Charlotte Motor Speedway.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-concord-nc`,
   },

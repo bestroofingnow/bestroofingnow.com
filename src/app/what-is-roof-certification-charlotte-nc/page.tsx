@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Roof Certification and When Do I Need One in Charlotte NC?',
   description:
     "Roof certification = professional opinion of remaining useful life (2-5 yr). Charlotte NC needed for FHA/VA loans, home purchase, insurance renewal. Cost $200-$650 standalone.",
-  keywords: [
-    'what is roof certification Charlotte NC',
-    'roof certification cost Charlotte',
-    'FHA roof certification',
-    'VA roof certification',
-    'home sale roof certification',
-    'roof certification vs inspection',
-    'NC roof certification requirements',
-    'Charlotte roof life certification',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Certification and When Do I Need One in Charlotte NC?',

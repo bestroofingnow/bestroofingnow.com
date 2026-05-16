@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'When Can I Walk on My New Roof?',
   description: "When can I walk on my new roof in Charlotte NC? Wait 30-90 days for shingle sealant to cure. Foot traffic causes granule loss and accelerates aging.",
-  keywords: ['when can i walk on new roof charlotte nc', 'walk on new shingle roof', 'shingle sealant cure time charlotte', 'new roof foot traffic damage', 'walking on new roof', 'charlotte roof care', 'shingle damage from walking', 'new roof maintenance'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'When Can I Walk on My New Roof?', description: 'Charlotte NC: wait 30-90 days for sealant cure. Foot traffic damages shingles.', url: PAGE_URL, type: 'article' },
 };

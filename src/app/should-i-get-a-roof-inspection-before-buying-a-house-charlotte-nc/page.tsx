@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'Should I Get a Roof Inspection Before Buying a House in Charlotte NC?',
   description:
     "Yes — get pre-purchase roof inspection ($200-450) for homes 10+ yr old. Standard home inspection misses subtle issues. FHA/VA loans require HAAG-credentialed certification.",
-  keywords: [
-    'pre-purchase roof inspection Charlotte NC',
-    'home buyer roof inspection',
-    'FHA VA roof certification',
-    'roof inspection before closing',
-    'real estate roof inspection',
-    'due diligence roof check',
-    'home inspection roof component',
-    'pre-sale roof inspection Charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Should I Get a Roof Inspection Before Buying a House in Charlotte NC?',

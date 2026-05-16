@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Asphalt Shingle Roofing Charlotte NC | CertainTeed & GAF',
   description:
-    'Expert asphalt shingle roofing in Charlotte NC. CertainTeed and GAF certified installer offering architectural shingles, 3-tab, and designer options. BBB A+ rated, lifetime warranties available. Free estimates.',
-  keywords: [
-    'asphalt shingle roofing charlotte nc',
-    'architectural shingles charlotte',
-    'shingle roof replacement charlotte nc',
-    'certainteed shingles charlotte',
-    'gaf shingles charlotte nc',
-    'shingle roof repair charlotte',
-    'owens corning shingles charlotte nc',
-    'residential shingle roofing charlotte',
-    'shingle roof installation charlotte nc',
-    'asphalt roof charlotte',
-    'dimensional shingles charlotte nc',
-    'shingle roofing contractors charlotte',
-  ],
+    'Expert asphalt shingle roofing in Charlotte NC. CertainTeed and GAF certified installer offering architectural shingles, 3-tab, and designer options. BBB A+ rated, lifetime warranties available. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/asphalt-shingle-roofing-charlotte-nc`,
   },

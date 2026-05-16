@@ -17,15 +17,7 @@ import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Roofing Stories | Real Projects from Charlotte Neighborhoods',
-  description: 'Explore real roofing projects from Charlotte neighborhoods. See before & after photos, learn about materials used, and read stories from homeowners we\'ve helped.',
-  keywords: [
-    'Charlotte roofing projects',
-    'roof replacement Charlotte NC',
-    'roofing before and after',
-    'Charlotte neighborhood roofing',
-    'CertainTeed roofing Charlotte',
-    'GAF roofing Charlotte',
-  ],
+  description: 'Explore real roofing projects from Charlotte neighborhoods. See before & after photos, learn about materials used, and read stories from homeowners we\'ve helped.',
   openGraph: {
     title: 'Real Roofing Stories from Charlotte Neighborhoods | Best Roofing Now',
   description: 'See our completed roofing projects across Charlotte. Real homes, real results.',

@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Valley Repair Charlotte NC',
   description:
-    'Expert roof valley repair in Charlotte NC. Fix leaking roof valleys with professional metal valley installation and shingle repair. BBB A+ rated, licensed contractor. Free inspections available.',
-  keywords: [
-    'roof valley repair Charlotte NC',
-    'leaking roof valley Charlotte',
-    'roof valley leak repair Charlotte NC',
-    'metal roof valley Charlotte',
-    'valley flashing repair Charlotte',
-    'roof valley replacement Charlotte NC',
-    'open valley repair Charlotte',
-    'closed valley repair Charlotte NC',
-    'woven valley repair Charlotte',
-    'roof valley leak Charlotte',
-    'valley shingle repair Charlotte NC',
-    'roof valley experts Charlotte',
-  ],
+    'Expert roof valley repair in Charlotte NC. Fix leaking roof valleys with professional metal valley installation and shingle repair. BBB A+ rated, licensed contractor. Free inspections available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc`,
   },

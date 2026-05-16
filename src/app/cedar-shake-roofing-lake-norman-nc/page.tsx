@@ -42,19 +42,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Cedar Shake Roofing Lake Norman NC',
   description:
-    'Premium handsplit cedar shake roofing for Lake Norman NC homes. Class A fire-treated Western Red Cedar at $7-$12/sqft installed. 30-50yr lifespan.',
-  keywords: [
-    'cedar shake roofing lake norman nc',
-    'cedar shake roof lake norman',
-    'wood shake roof cornelius nc',
-    'cedar shingle roofing davidson nc',
-    'lake norman cedar roof contractor',
-    'fire treated cedar shake mooresville',
-    'western red cedar roofing huntersville',
-    'lakefront cedar shake roof denver nc',
-    'synthetic cedar shake lake norman',
-    'cedarbreather underlayment lake norman',
-  ],
+    'Premium handsplit cedar shake roofing for Lake Norman NC homes. Class A fire-treated Western Red Cedar at $7-$12/sqft installed. 30-50yr lifespan.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/cedar-shake-roofing-lake-norman-nc`,
   },

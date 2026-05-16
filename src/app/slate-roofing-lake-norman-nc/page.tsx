@@ -38,19 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Slate Roofing Lake Norman NC',
   description:
-    'Natural slate roofing for Lake Norman estate homes. 75-150+ year lifespan, $20-$50/sq ft installed, Buckingham & Vermont quarried slate. BBB A+ rated.',
-  keywords: [
-    'slate roofing lake norman nc',
-    'natural slate roof lake norman',
-    'slate roof cornelius nc',
-    'slate roof davidson nc',
-    'slate roof mooresville nc',
-    'lake norman slate roof contractor',
-    'buckingham slate roof lake norman',
-    'vermont slate roof nc',
-    'estate home slate roofing lake norman',
-    'luxury slate roofing peninsula cornelius',
-  ],
+    'Natural slate roofing for Lake Norman estate homes. 75-150+ year lifespan, $20-$50/sq ft installed, Buckingham & Vermont quarried slate. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/slate-roofing-lake-norman-nc`,
   },

@@ -42,17 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'DIY Roof Maintenance Checklist Charlotte NC | Homeowner Guide',
   description:
-    'Simple DIY roof maintenance checklist for Charlotte NC homeowners. Safe ground-level inspections, gutter cleaning tips, and when to call a professional roofer.',
-  keywords: [
-    'DIY roof maintenance Charlotte NC',
-    'roof maintenance checklist Charlotte',
-    'homeowner roof inspection Charlotte',
-    'gutter cleaning Charlotte NC',
-    'roof care tips Charlotte',
-    'seasonal roof maintenance Charlotte',
-    'roof inspection checklist NC',
-    'how to maintain roof Charlotte',
-  ],
+    'Simple DIY roof maintenance checklist for Charlotte NC homeowners. Safe ground-level inspections, gutter cleaning tips, and when to call a professional roofer.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/diy-roof-maintenance-checklist-charlotte-nc`,
   },

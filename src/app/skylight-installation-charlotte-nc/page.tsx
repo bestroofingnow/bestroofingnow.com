@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Skylight Install Charlotte NC',
   description:
-    'Professional skylight installation in Charlotte NC. VELUX certified installers offering fixed, venting, and tubular skylights. Bring natural light into your home. Free estimates, licensed & insured.',
-  keywords: [
-    'skylight installation charlotte nc',
-    'skylights charlotte',
-    'velux skylight charlotte nc',
-    'skylight installers charlotte',
-    'sun tunnel installation charlotte nc',
-    'tubular skylight charlotte',
-    'roof window charlotte nc',
-    'skylight repair charlotte',
-    'skylight replacement charlotte nc',
-    'natural light solutions charlotte',
-    'venting skylight charlotte',
-    'energy efficient skylights charlotte nc',
-  ],
+    'Professional skylight installation in Charlotte NC. VELUX certified installers offering fixed, venting, and tubular skylights. Bring natural light into your home. Free estimates, licensed & insured.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/skylight-installation-charlotte-nc`,
   },

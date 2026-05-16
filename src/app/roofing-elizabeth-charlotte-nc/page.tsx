@@ -40,19 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Elizabeth Charlotte NC | Historic',
   description:
-    'Expert roofer for Elizabeth Charlotte NC historic homes. Craftsman bungalows and Victorians with period-appropriate materials. BBB A+ rated. Free estimates.',
-  keywords: [
-    'roofing elizabeth charlotte nc',
-    'roofers elizabeth charlotte',
-    'elizabeth charlotte roofing contractor',
-    'historic home roofers charlotte',
-    'elizabeth roof repair',
-    'elizabeth roof replacement',
-    'craftsman bungalow roofing charlotte',
-    'synthetic slate roofing elizabeth',
-    'best roofer elizabeth charlotte',
-    'elizabeth charlotte roofing services',
-  ],
+    'Expert roofer for Elizabeth Charlotte NC historic homes. Craftsman bungalows and Victorians with period-appropriate materials. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-elizabeth-charlotte-nc`,
   },

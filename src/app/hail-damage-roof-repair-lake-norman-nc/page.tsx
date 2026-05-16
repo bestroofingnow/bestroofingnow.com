@@ -37,21 +37,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Hail Damage Roof Repair Lake Norman NC',
   description:
-    'Hail damage roof repair in Lake Norman NC. Expert storm damage restoration for lakefront homes. BBB A+ rated. Free inspections. Call (704) 605-6047.',
-  keywords: [
-    'hail damage roof repair lake norman',
-    'hail damage roofer lake norman nc',
-    'lake norman hail damage',
-    'hail damage roof repair cornelius nc',
-    'hail damage roof repair davidson nc',
-    'hail storm roof damage lake norman',
-    'lake norman hail damage roofer',
-    'hail damage insurance claim lake norman',
-    'lakefront roof hail damage repair',
-    'waterfront hail damage roofing lake norman',
-    'hail damage restoration lake norman nc',
-    'storm damage roof repair lake norman',
-  ],
+    'Hail damage roof repair in Lake Norman NC. Expert storm damage restoration for lakefront homes. BBB A+ rated. Free inspections. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hail-damage-roof-repair-lake-norman-nc`,
   },

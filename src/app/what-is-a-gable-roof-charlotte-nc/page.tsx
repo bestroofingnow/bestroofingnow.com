@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Gable Roof Guide for Charlotte NC',
   description: "What is a gable roof? Learn pros, cons, costs ($6,500-$13,000), pitch options, and whether it's right for your Charlotte NC home.",
-  keywords: ['gable roof Charlotte NC', 'gable roof cost', 'gable vs hip roof', 'gable roof pitch', 'gable roof advantages', 'Charlotte roof styles', 'gable dormer Charlotte', 'gable roof replacement'],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Gable Roof Guide for Charlotte NC',

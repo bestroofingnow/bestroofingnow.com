@@ -36,16 +36,6 @@ export const metadata: Metadata = {
   title: 'HOA-Approved Roofing Charlotte NC',
   description:
     'HOA-approved roofing for Charlotte NC communities. Architectural review board (ARB) packet preparation, color/style matching, and approved-installer credentials. Ballantyne, SouthPark, Providence, Quail Hollow.',
-  keywords: [
-    'HOA approved roofing Charlotte NC',
-    'HOA roof replacement Charlotte',
-    'architectural review board roofing',
-    'HOA shingle approval Charlotte',
-    'community association roofing Charlotte NC',
-    'HOA color matching shingles',
-    'HOA approved roofer near me',
-    'Ballantyne HOA roofing',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/hoa-approved-roofing-charlotte-nc`,
   },

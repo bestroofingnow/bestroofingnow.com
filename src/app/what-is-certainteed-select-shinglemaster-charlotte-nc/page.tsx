@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is CertainTeed SELECT ShingleMaster and Why Does It Matter for My Charlotte NC Roof?',
   description:
     "CertainTeed SELECT ShingleMaster = under 1% of contractors. Charlotte NC exclusive 5-Star Integrity warranty (50 yr material + 25 yr workmanship + 25 yr tear-off + 130 MPH wind).",
-  keywords: [
-    'what is CertainTeed SELECT ShingleMaster Charlotte NC',
-    'CertainTeed SELECT contractor',
-    'CertainTeed 5-Star Integrity warranty',
-    'CertainTeed certified roofer',
-    'Landmark shingle installer',
-    'CertainTeed Quality Master',
-    'best CertainTeed contractor',
-    'SELECT ShingleMaster verification',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is CertainTeed SELECT ShingleMaster and Why Does It Matter for My Charlotte NC Roof?',

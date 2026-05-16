@@ -64,19 +64,7 @@ const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersvill
 export const metadata: Metadata = {
   title: 'Lake Norman Waterfront Roofing',
   description:
-    'Waterfront roofing for Lake Norman lakefront estates. Standing seam metal, natural slate, and Class 4 impact systems engineered for open-water exposure. Call (704) 605-6047.',
-  keywords: [
-    'waterfront roofing lake norman',
-    'lakefront home roofer',
-    'lake house roofing lake norman nc',
-    'waterfront roof replacement lake norman',
-    'lakefront roofing contractor',
-    'wind resistant roofing lake norman',
-    'lake norman waterfront home roofer',
-    'impact resistant shingles lake norman',
-    'standing seam metal roof lake norman',
-    'lake house roof repair',
-  ],
+    'Waterfront roofing for Lake Norman lakefront estates. Standing seam metal, natural slate, and Class 4 impact systems engineered for open-water exposure. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/lake-norman-waterfront-roofing`,
   },

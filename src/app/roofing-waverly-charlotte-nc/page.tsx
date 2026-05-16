@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Waverly Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Roofing contractor in Waverly, South Charlotte NC. Roof replacement, repair, and storm damage for luxury homes. BBB A+ rated. Free estimates.',
-  keywords: [
-    'roofing waverly charlotte nc',
-    'roofer waverly charlotte',
-    'waverly roof replacement charlotte',
-    'waverly roof repair charlotte nc',
-    'roofing contractor waverly charlotte',
-    'waverly south charlotte roofing',
-    'waverly neighborhood roofer',
-    'best roofer waverly charlotte nc',
-    'waverly charlotte roofing services',
-    'waverly luxury home roofing charlotte',
-  ],
+    'Roofing contractor in Waverly, South Charlotte NC. Roof replacement, repair, and storm damage for luxury homes. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-waverly-charlotte-nc`,
   },

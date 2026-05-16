@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Gastonia NC | Top Rated',
   description:
-    'Looking for roofing services in Gastonia NC? Best Roofing Now serves Gastonia and Gaston County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation along the I-85 corridor.',
-  keywords: [
-    'roofing gastonia nc',
-    'roofing company gastonia nc',
-    'roofers gastonia nc',
-    'roof repair gastonia nc',
-    'roof replacement gastonia',
-    'gaston county roofers',
-    'gastonia roof contractor',
-    'i-85 corridor roofing',
-    'gastonia nc roofing services',
-    'best roofer gastonia nc',
-  ],
+    'Looking for roofing services in Gastonia NC? Best Roofing Now serves Gastonia and Gaston County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation along the I-85 corridor.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-gastonia-nc`,
   },

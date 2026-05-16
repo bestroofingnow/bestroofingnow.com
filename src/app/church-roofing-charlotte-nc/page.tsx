@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Church Roofing Charlotte NC | Religious Building Experts',
   description:
-    'Expert church roofing services in Charlotte NC. Specializing in steep slopes, steeples, historic churches, and religious buildings. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'church roofing Charlotte NC',
-    'church roof repair Charlotte',
-    'religious building roofing Charlotte',
-    'steeple repair Charlotte NC',
-    'historic church roofing Charlotte',
-    'church roof replacement Charlotte',
-    'sanctuary roofing Charlotte NC',
-    'chapel roofing contractor Charlotte',
-    'place of worship roofing Charlotte',
-    'church building roofer Charlotte',
-  ],
+    'Expert church roofing services in Charlotte NC. Specializing in steep slopes, steeples, historic churches, and religious buildings. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/church-roofing-charlotte-nc`,
   },

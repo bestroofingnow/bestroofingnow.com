@@ -52,8 +52,7 @@ export async function generateMetadata({ params }: MaterialPageProps): Promise<M
 
   return {
     title: `${material.name} Charlotte NC | Cost & Info`,
-  description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
-  keywords: [...material.keywords, `${material.shortName.toLowerCase()} roof Charlotte`, `${material.shortName.toLowerCase()} roofing contractor`],
+  description: `${material.name} in Charlotte NC: ${material.costRange} installed. ${material.lifespan} lifespan. ${material.description} Get a free estimate today!`,
   alternates: {
       canonical: materialCanonicals[slug]
         ? `${SITE_CONFIG.url}${materialCanonicals[slug]}`

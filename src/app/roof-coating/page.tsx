@@ -38,20 +38,6 @@ export const metadata: Metadata = {
   title: 'Roof Coating Charlotte NC | Silicone, Acrylic, SPF',
   description:
     'Commercial roof coating in Charlotte NC — silicone, acrylic, SPF, elastomeric. Adds 10-15 years to aged membranes at 50-70% below tear-off cost. Duke Energy rebates documented.',
-  keywords: [
-    'roof coating charlotte nc',
-    'silicone roof coating charlotte',
-    'commercial roof coating charlotte nc',
-    'elastomeric roof coating charlotte',
-    'acrylic roof coating',
-    'spf roof coating charlotte',
-    'reflective roof coating charlotte',
-    'flat roof coating charlotte nc',
-    'roof restoration charlotte',
-    'cool roof coating',
-    'capex deferred maintenance coating',
-    'duke energy roof rebate',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-coating`,
   },

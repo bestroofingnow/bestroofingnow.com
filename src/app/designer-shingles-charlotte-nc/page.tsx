@@ -37,21 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Designer Shingles Charlotte NC | Luxury Architectural Shingles',
   description:
-    'Premium designer shingles for Charlotte NC luxury homes. GAF Grand Canyon, Timberline Ultra HD, CertainTeed Grand Manor, Owens Corning Woodcrest. HOA approved. Free estimates.',
-  keywords: [
-    'designer shingles charlotte nc',
-    'luxury shingles charlotte',
-    'premium architectural shingles charlotte nc',
-    'gaf grand canyon shingles charlotte',
-    'certainteed grand manor charlotte nc',
-    'owens corning woodcrest charlotte',
-    'designer roof shingles charlotte',
-    'high end shingles charlotte nc',
-    'luxury roofing shingles charlotte',
-    'estate shingles charlotte nc',
-    'hoa approved shingles charlotte',
-    'premium roof charlotte nc',
-  ],
+    'Premium designer shingles for Charlotte NC luxury homes. GAF Grand Canyon, Timberline Ultra HD, CertainTeed Grand Manor, Owens Corning Woodcrest. HOA approved. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/designer-shingles-charlotte-nc`,
   },

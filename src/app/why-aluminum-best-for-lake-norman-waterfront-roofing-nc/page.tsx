@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'Why Is Aluminum the Best Metal Roofing for Lake Norman Waterfront Homes NC?',
   description:
     "Aluminum gold standard for Lake Norman waterfront NC: 100% corrosion immune, lightweight, salt-spray resistant, PVDF Kynar 30-40 yr warranty, 150+ MPH wind. $13-17/sq ft.",
-  keywords: [
-    'aluminum roofing Lake Norman NC',
-    'best metal roof lakefront',
-    'aluminum standing seam Lake Norman',
-    'lakefront metal roofing',
-    'PVDF Kynar finish',
-    'salt-air immune roofing',
-    'Cornelius Davidson Huntersville aluminum roof',
-    'lake norman waterfront roof',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Why Aluminum Is the Best Metal Roofing for Lake Norman Waterfront Homes',

@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Chimney Flashing Repair Charlotte NC | Leak Prevention',
   description:
-    'Expert chimney flashing repair in Charlotte NC. Stop chimney leaks with professional flashing installation and waterproofing. BBB A+ rated, licensed contractor. Free inspections available.',
-  keywords: [
-    'chimney flashing repair Charlotte NC',
-    'chimney leak repair Charlotte',
-    'chimney flashing Charlotte NC',
-    'chimney waterproofing Charlotte NC',
-    'chimney cap installation Charlotte',
-    'chimney crown repair Charlotte NC',
-    'leaking chimney Charlotte',
-    'chimney flashing replacement Charlotte',
-    'chimney step flashing Charlotte NC',
-    'chimney counter flashing Charlotte',
-    'chimney leak fix Charlotte',
-    'chimney cricket installation Charlotte',
-  ],
+    'Expert chimney flashing repair in Charlotte NC. Stop chimney leaks with professional flashing installation and waterproofing. BBB A+ rated, licensed contractor. Free inspections available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc`,
   },

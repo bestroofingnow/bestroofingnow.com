@@ -17,13 +17,6 @@ import {
 export const metadata: Metadata = {
   title: 'Common Roofing Problems',
   description: 'Expert solutions for common roofing problems including leaks, storm damage, missing shingles, and more. Fast repairs in Charlotte NC.',
-  keywords: [
-    'roofing problems',
-    'roof leak repair',
-    'storm damage roof',
-    'missing shingles',
-    'Charlotte roof repair',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/problems`,
   },

@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Long Does Roof Install Take?',
   description: "How long does roof installation take in Charlotte NC? Typical 3-5 days for 30-square home. Tear-off, decking, underlayment, shingles, cleanup timeline.",
-  keywords: ['how long does roof installation take charlotte nc', 'roof install timeline charlotte', 'roof replacement days charlotte', 'roofing project length charlotte nc', 'shingle install time', 'roof tear off how long', 'charlotte roofing schedule', 'roof installation duration'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'How Long Does Roof Install Take?', description: 'Charlotte NC roof install timeline: 3-5 days typical, day-by-day breakdown.', url: PAGE_URL, type: 'article' },
 };

@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'How Long Does Roof Replacement Take in Charlotte NC?',
   description:
     "How long does roof replacement take in Charlotte NC? 1-2 days for typical 25-35 sq home, 2-3 days for 40-60 sq, 5-10 days for slate/tile/copper. Day-by-day breakdown.",
-  keywords: [
-    'how long does roof replacement take Charlotte NC',
-    'roof replacement timeline',
-    'roof install duration',
-    'how many days roof replacement',
-    'roof replacement schedule',
-    'shingle install time Charlotte',
-    'metal roof install time',
-    'slate roof install duration',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Long Does Roof Replacement Take in Charlotte NC?',

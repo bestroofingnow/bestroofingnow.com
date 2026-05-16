@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Soffit and What Does It Do for My Charlotte NC Home?',
   description:
     "Soffit = horizontal panel under roof eaves. Functions: NC IRC §R806 ventilation intake, eave protection, pest exclusion, aesthetic. Aluminum $4-8/ft, vinyl $3-6/ft, Hardie $6-12/ft.",
-  keywords: [
-    'what is a soffit Charlotte NC',
-    'soffit replacement Charlotte',
-    'soffit vs fascia',
-    'perforated soffit ventilation',
-    'soffit cost NC',
-    'soffit material types',
-    'aluminum vinyl Hardie soffit',
-    'NC IRC soffit ventilation',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Soffit and What Does It Do for My Charlotte NC Home?',

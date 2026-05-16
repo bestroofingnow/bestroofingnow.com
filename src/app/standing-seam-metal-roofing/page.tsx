@@ -37,20 +37,6 @@ export const metadata: Metadata = {
   title: 'Standing Seam Metal Roofing Charlotte',
   description:
     'Premium standing seam metal roofing in Charlotte NC — 22/24/26 gauge steel, aluminum, zinc, copper. Kynar 500/Hylar 5000 PVDF finish, 40-50 year warranties, solar-ready.',
-  keywords: [
-    'standing seam metal roof charlotte nc',
-    'standing seam roof installation charlotte',
-    'metal roof charlotte nc',
-    'standing seam roofing contractor',
-    'premium metal roofing charlotte',
-    'snap lock metal roof charlotte',
-    'mechanically seamed metal roof',
-    'kynar 500 metal roof',
-    '24 gauge standing seam',
-    'aluminum standing seam charlotte',
-    'copper standing seam nc',
-    'zinc standing seam',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/standing-seam-metal-roofing`,
   },

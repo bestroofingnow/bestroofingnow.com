@@ -37,21 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Attic Insulation Cost Charlotte NC | $1.50-$7/sqft (2026 Prices)',
   description:
-    'How much does attic insulation cost in Charlotte NC? Blown-in $1.50-3.50/sqft, batt $1-2.50/sqft, spray foam $3-7/sqft. R-38 minimum code requirement. Save 15-25% on energy bills. Free estimates from Best Roofing Now.',
-  keywords: [
-    'attic insulation cost',
-    'attic insulation charlotte nc',
-    'insulation cost per square foot',
-    'blown-in insulation cost charlotte',
-    'spray foam insulation charlotte nc',
-    'batt insulation cost',
-    'attic insulation R-value charlotte',
-    'insulation installation charlotte nc',
-    'home insulation cost charlotte',
-    'attic insulation upgrade charlotte',
-    'energy efficient insulation charlotte nc',
-    'insulation contractor charlotte nc',
-  ],
+    'How much does attic insulation cost in Charlotte NC? Blown-in $1.50-3.50/sqft, batt $1-2.50/sqft, spray foam $3-7/sqft. R-38 minimum code requirement. Save 15-25% on energy bills. Free estimates from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/attic-insulation-cost-charlotte-nc`,
   },

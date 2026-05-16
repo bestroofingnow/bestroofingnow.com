@@ -31,23 +31,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing Materials Comparison FAQ | 18 Questions Answered | Charlotte NC',
   description:
-    'Compare roofing materials: metal vs shingles, GAF vs CertainTeed, best colors, and more. 18 expert answers about roofing material selection for Charlotte NC homes from Best Roofing Now.',
-  keywords: [
-    'best roofing material',
-    'roofing material comparison',
-    'metal vs shingles',
-    'metal roof vs asphalt shingles',
-    'best roofing material for Charlotte NC',
-    'GAF vs CertainTeed',
-    'Owens Corning shingles review',
-    'roofing material pros and cons',
-    'best shingle color',
-    'architectural shingles vs 3-tab',
-    'metal roofing pros cons',
-    'standing seam vs metal shingles',
-    'best roof for hurricane wind',
-    'energy efficient roofing Charlotte NC',
-  ],
+    'Compare roofing materials: metal vs shingles, GAF vs CertainTeed, best colors, and more. 18 expert answers about roofing material selection for Charlotte NC homes from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-materials-comparison-faq`,
   },

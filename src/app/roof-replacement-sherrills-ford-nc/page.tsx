@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Sherrills Ford',
   description:
-    'Need roof replacement in Sherrills Ford NC? Best Roofing Now provides full roof replacement for Lake Norman homes. BBB A+ rated, veteran-owned. CertainTeed, GAF, and Owens Corning certified. Free estimates for Catawba County homeowners!',
-  keywords: [
-    'roof replacement sherrills ford nc',
-    'sherrills ford roof replacement',
-    'new roof sherrills ford',
-    'roof replacement cost sherrills ford',
-    'lake norman roof replacement',
-    'catawba county roof replacement',
-    'sherrills ford roofing contractor',
-    'replace roof sherrills ford nc',
-    'roof installation sherrills ford',
-    'best roof replacement sherrills ford',
-  ],
+    'Need roof replacement in Sherrills Ford NC? Best Roofing Now provides full roof replacement for Lake Norman homes. BBB A+ rated, veteran-owned. CertainTeed, GAF, and Owens Corning certified. Free estimates for Catawba County homeowners!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-sherrills-ford-nc`,
   },

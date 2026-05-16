@@ -37,15 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Inspection Matthews NC | Free',
   description:
-    'Need a roof inspection in Matthews NC? Best Roofing Now offers FREE comprehensive roof inspections with detailed reports. BBB A+ rated, veteran-owned. Schedule today!',
-  keywords: [
-    'roof inspection matthews nc',
-    'free roof inspection matthews',
-    'roof inspection near me matthews',
-    'roof inspection cost matthews nc',
-    'roof inspection service matthews',
-    'roof assessment matthews nc',
-  ],
+    'Need a roof inspection in Matthews NC? Best Roofing Now offers FREE comprehensive roof inspections with detailed reports. BBB A+ rated, veteran-owned. Schedule today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-matthews-nc`,
   },

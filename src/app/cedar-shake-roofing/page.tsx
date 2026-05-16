@@ -38,21 +38,6 @@ export const metadata: Metadata = {
   title: 'Cedar Shake Roofing Charlotte NC',
   description:
     'Cedar shake roofing in Charlotte NC — Certi-Split, Certi-Sawn, Certi-Shake grades in Western Red Cedar. Fire-retardant Class B/C treatment. Synthetic cedar alternatives available.',
-  keywords: [
-    'cedar shake roofing charlotte nc',
-    'cedar shake roof installation charlotte',
-    'cedar shingle roofing charlotte nc',
-    'wood shake roof charlotte',
-    'cedar roof repair charlotte nc',
-    'cedar shake replacement charlotte',
-    'western red cedar roofing',
-    'alaskan yellow cedar roof',
-    'certi-split shake',
-    'certi-sawn shake',
-    'fire retardant cedar',
-    'synthetic cedar davinci',
-    'brava shake',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/cedar-shake-roofing`,
   },

@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Fascia Board and Why Does My Charlotte NC Roof Have One?',
   description:
     "Fascia = vertical board at end of rafters where gutters attach. Charlotte materials: aluminum-wrapped $5-10/ft, wood $4-8/ft, Hardie $7-15/ft, PVC $8-14/ft. NC IRC drip edge backing.",
-  keywords: [
-    'what is fascia board Charlotte NC',
-    'fascia replacement Charlotte',
-    'fascia vs soffit',
-    'aluminum wrap fascia',
-    'wood fascia rot',
-    'fascia cost NC',
-    'Hardie fascia',
-    'gutter attachment fascia',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Fascia Board and Why Does My Charlotte NC Roof Have One?',

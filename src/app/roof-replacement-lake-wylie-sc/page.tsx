@@ -32,19 +32,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Lake Wylie SC | Free Estimates',
   description:
-    'Professional roof replacement in Lake Wylie SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning. $8,500-$25,000. Up to 50-year warranties. Call (704) 605-6047.',
-  keywords: [
-    'roof replacement lake wylie sc',
-    'new roof lake wylie',
-    'roof replacement cost lake wylie sc',
-    'roof installation lake wylie',
-    'reroof lake wylie sc',
-    'lake wylie new roof',
-    'best roof replacement lake wylie sc',
-    'roof replacement near me lake wylie',
-    'affordable roof replacement lake wylie',
-    'lake wylie roof installation cost',
-  ],
+    'Professional roof replacement in Lake Wylie SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning. $8,500-$25,000. Up to 50-year warranties. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-lake-wylie-sc`,
   },

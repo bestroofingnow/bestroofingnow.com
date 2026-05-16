@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Roof Inspection Report and What Should It Include in Charlotte NC?',
   description:
     "Charlotte NC roof inspection report: 8 sections (property ID, specs, structure, material, flashing, ventilation, 30-100+ photos, recommendations). Cost $150-$650 or FREE with Best Roofing Now.",
-  keywords: [
-    'what is a roof inspection report Charlotte NC',
-    'Charlotte roof inspection cost',
-    'free roof inspection Charlotte',
-    '4-point inspection NC',
-    'roof inspection home purchase',
-    'infrared roof inspection',
-    'hail damage forensic inspection',
-    'roof inspection report sample',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Roof Inspection Report and What Should It Include in Charlotte NC?',

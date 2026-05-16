@@ -33,19 +33,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Cornelius NC | 5-Star',
   description:
-    'Looking for a trusted roofing company in Cornelius NC? Best Roofing Now serves Lake Norman area homeowners from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
-  keywords: [
-    'roofing cornelius nc',
-    'roofing company cornelius nc',
-    'cornelius roofers',
-    'cornelius nc roofing contractor',
-    'roof repair cornelius nc',
-    'roof replacement cornelius nc',
-    'lake norman roofing company',
-    'roofers near cornelius nc',
-    'best roofer cornelius',
-    'cornelius roof inspection',
-  ],
+    'Looking for a trusted roofing company in Cornelius NC? Best Roofing Now serves Lake Norman area homeowners from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-cornelius-nc`,
   },

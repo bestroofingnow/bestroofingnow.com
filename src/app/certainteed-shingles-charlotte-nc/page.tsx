@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'CertainTeed Shingles Charlotte NC | ShingleMaster',
   description:
-    'CertainTeed shingles installed by Charlotte\'s only ShingleMaster contractor. Premium Landmark shingles with industry-best warranties. BBB A+ rated. Free estimates.',
-  keywords: [
-    'certainteed shingles charlotte nc',
-    'certainteed roofing charlotte',
-    'certainteed landmark shingles charlotte',
-    'select shinglemaster charlotte nc',
-    'certainteed contractor charlotte',
-    'certainteed landmark pro charlotte',
-    'certainteed warranty charlotte nc',
-    'architectural shingles charlotte',
-    'certainteed colors charlotte nc',
-    'premium shingles charlotte',
-    'certainteed installer charlotte nc',
-    'surestart warranty charlotte',
-  ],
+    'CertainTeed shingles installed by Charlotte\'s only ShingleMaster contractor. Premium Landmark shingles with industry-best warranties. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/certainteed-shingles-charlotte-nc`,
   },

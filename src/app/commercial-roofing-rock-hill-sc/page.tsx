@@ -34,23 +34,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Rock Hill SC',
   description:
-    'Expert commercial roofing in Rock Hill SC. TPO, EPDM, flat roofs, metal roofing for warehouses, industrial facilities & retail. I-77 corridor. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'commercial roofing rock hill sc',
-    'commercial roofing contractors rock hill',
-    'commercial roof repair rock hill sc',
-    'flat roof contractors rock hill sc',
-    'tpo roofing rock hill sc',
-    'epdm roofing rock hill',
-    'industrial roofing rock hill sc',
-    'warehouse roofing rock hill',
-    'commercial flat roof rock hill sc',
-    'metal roofing commercial rock hill',
-    'commercial roofer rock hill sc',
-    'business roofing rock hill sc',
-    'rock hill industrial roofing',
-    'knowledge park roofing',
-  ],
+    'Expert commercial roofing in Rock Hill SC. TPO, EPDM, flat roofs, metal roofing for warehouses, industrial facilities & retail. I-77 corridor. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-rock-hill-sc`,
   },

@@ -36,19 +36,7 @@ import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 export const metadata: Metadata = {
   title: 'Lake Norman Roofing Costs 2026',
   description:
-    'Lake Norman roofing costs for 2026. Replacement pricing from $8K-$60K+ for standard to luxury homes. Free estimates. Call (704) 605-6047.',
-  keywords: [
-    'roof replacement cost lake norman',
-    'roofing prices mooresville nc',
-    'new roof cost cornelius nc',
-    'lake norman roofing costs 2026',
-    'roof replacement price lake norman nc',
-    'how much does a new roof cost lake norman',
-    'roofing estimate lake norman',
-    'waterfront roofing cost lake norman',
-    'metal roof cost lake norman nc',
-    'roof replacement cost davidson nc',
-  ],
+    'Lake Norman roofing costs for 2026. Replacement pricing from $8K-$60K+ for standard to luxury homes. Free estimates. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/lake-norman-roofing-costs-2026`,
   },

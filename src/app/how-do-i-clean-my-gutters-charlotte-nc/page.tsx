@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Clean My Gutters in Charlotte NC?',
   description:
     "Charlotte NC gutter cleaning: 6-step process, 2-4x per year, DIY $0 or pro $125-$650. Heavy canopy areas (Plaza Midwood, Dilworth, Myers Park) need 3-4x. Bundled with inspection.",
-  keywords: [
-    'how to clean gutters Charlotte NC',
-    'gutter cleaning Charlotte',
-    'DIY gutter cleaning',
-    'professional gutter cleaning cost',
-    'gutter cleaning frequency NC',
-    'gutter cleaning safety',
-    'clogged gutters damage',
-    'gutter cleaning bundled inspection',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Clean My Gutters in Charlotte NC?',

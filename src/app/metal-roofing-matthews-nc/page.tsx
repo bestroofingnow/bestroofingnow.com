@@ -28,17 +28,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roofing Matthews NC | Durable',
   description:
-    'Looking for metal roofing in Matthews NC? Best Roofing Now installs premium standing seam and metal shingle roofs. 50+ year lifespan, energy efficient. Free estimates!',
-  keywords: [
-    'metal roofing matthews nc',
-    'metal roof matthews nc',
-    'standing seam metal roof matthews',
-    'metal roofing contractors matthews',
-    'metal roof installation matthews nc',
-    'metal roofing cost matthews',
-    'metal roof near me matthews',
-    'metal shingle roof matthews nc',
-  ],
+    'Looking for metal roofing in Matthews NC? Best Roofing Now installs premium standing seam and metal shingle roofs. 50+ year lifespan, energy efficient. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-matthews-nc`,
   },

@@ -42,19 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Financing Charlotte NC | 0%',
   description:
-    'Affordable roof financing in Charlotte NC with 0% interest options. Easy approval, low monthly payments, and flexible terms. Get a new roof today with payments as low as $99/month.',
-  keywords: [
-    'roof financing Charlotte NC',
-    'roofing payment plans Charlotte',
-    'finance new roof Charlotte',
-    '0 interest roof financing Charlotte',
-    'roof replacement financing Charlotte NC',
-    'affordable roofing Charlotte',
-    'monthly payment roofing Charlotte',
-    'roofing loans Charlotte NC',
-    'no credit check roofing Charlotte',
-    'easy approval roof financing Charlotte',
-  ],
+    'Affordable roof financing in Charlotte NC with 0% interest options. Easy approval, low monthly payments, and flexible terms. Get a new roof today with payments as low as $99/month.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-financing-charlotte-nc`,
   },

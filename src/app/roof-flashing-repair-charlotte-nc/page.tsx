@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Flashing Repair Charlotte',
   description:
-    'Expert roof flashing repair in Charlotte NC. We fix wall flashing, vent pipe boots, skylight seals, valley flashing, and step flashing leaks. Licensed roofers, free inspections. Call Best Roofing Now today!',
-  keywords: [
-    'roof flashing repair charlotte nc',
-    'flashing replacement charlotte',
-    'skylight flashing repair charlotte',
-    'vent flashing repair charlotte nc',
-    'roof flashing leak charlotte',
-    'step flashing repair charlotte',
-    'counter flashing charlotte nc',
-    'roof valley flashing charlotte',
-    'metal flashing repair charlotte',
-    'roof flashing installation charlotte',
-    'wall flashing repair charlotte nc',
-    'pipe flashing repair charlotte',
-  ],
+    'Expert roof flashing repair in Charlotte NC. We fix wall flashing, vent pipe boots, skylight seals, valley flashing, and step flashing leaks. Licensed roofers, free inspections. Call Best Roofing Now today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`,
   },

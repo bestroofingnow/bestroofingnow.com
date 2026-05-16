@@ -30,22 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Charlotte NC',
   description:
-    'Professional gutter installation in Charlotte NC. Seamless aluminum, copper, steel & vinyl gutters. Expert gutter replacement, sizing, and gutter guard options. Free estimates from BBB A+ rated contractor. Call (704) 605-6047.',
-  keywords: [
-    'gutter installation charlotte nc',
-    'seamless gutters charlotte',
-    'gutter installation charlotte nc',
-    'gutter replacement charlotte nc',
-    'seamless gutter installation charlotte nc',
-    'gutter company charlotte nc',
-    'gutter installers near me charlotte',
-    'aluminum gutters charlotte nc',
-    'gutter installation lake norman nc',
-    'gutter installation lake wylie sc',
-    'gutter installation huntersville nc',
-    'gutter installation mooresville nc',
-    'new gutters charlotte nc',
-  ],
+    'Professional gutter installation in Charlotte NC. Seamless aluminum, copper, steel & vinyl gutters. Expert gutter replacement, sizing, and gutter guard options. Free estimates from BBB A+ rated contractor. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-charlotte-nc`,
   },

@@ -37,17 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'TPO vs EPDM Roofing Charlotte NC | Commercial Roof Comparison',
   description:
-    'TPO vs EPDM commercial roofing in Charlotte NC: Cost, durability, energy efficiency compared. Which single-ply membrane is best for your building?',
-  keywords: [
-    'TPO vs EPDM Charlotte NC',
-    'TPO roofing Charlotte',
-    'EPDM roofing Charlotte',
-    'commercial flat roof Charlotte NC',
-    'single ply roofing Charlotte',
-    'TPO roof cost Charlotte',
-    'EPDM roof cost Charlotte',
-    'best commercial roofing Charlotte',
-  ],
+    'TPO vs EPDM commercial roofing in Charlotte NC: Cost, durability, energy efficiency compared. Which single-ply membrane is best for your building?',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tpo-vs-epdm-roofing-charlotte-nc`,
   },

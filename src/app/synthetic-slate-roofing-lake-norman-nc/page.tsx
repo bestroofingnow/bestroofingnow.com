@@ -40,19 +40,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Synthetic Slate Roofing Lake Norman NC',
   description:
-    'Synthetic slate roofing for Lake Norman NC homes — DaVinci, Brava, F-Wave, CertainTeed Symphony. Class 4 impact, 50-yr warranty, $9-$18/sq ft. BBB A+.',
-  keywords: [
-    'synthetic slate roofing lake norman nc',
-    'composite slate roof lake norman',
-    'davinci roofscapes lake norman',
-    'brava roof tile lake norman',
-    'f-wave revia synthetic slate nc',
-    'certainteed symphony slate cornelius',
-    'polymer slate roof davidson nc',
-    'synthetic slate mooresville nc',
-    'lightweight slate alternative lake norman',
-    'class 4 impact slate roof lake norman',
-  ],
+    'Synthetic slate roofing for Lake Norman NC homes — DaVinci, Brava, F-Wave, CertainTeed Symphony. Class 4 impact, 50-yr warranty, $9-$18/sq ft. BBB A+.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/synthetic-slate-roofing-lake-norman-nc`,
   },

@@ -36,21 +36,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Luxury Roofing Lake Norman NC | Premium Materials & Estates',
   description:
-    'Premium luxury roofing for Lake Norman estates. Copper, slate, cedar shake, designer shingles for Cornelius, Davidson, Mooresville, Huntersville homes. Expert installation for $800K+ properties.',
-  keywords: [
-    'luxury roofing lake norman',
-    'premium roofing lake norman nc',
-    'estate roofing davidson nc',
-    'luxury roofing mooresville',
-    'high-end roofing huntersville',
-    'copper roofing lake norman',
-    'slate roofing lake norman nc',
-    'cedar shake lake norman',
-    'designer shingles lake norman nc',
-    'premium roof materials lake norman',
-    'luxury estate roofing lake norman',
-    'high end home roofer lake norman nc',
-  ],
+    'Premium luxury roofing for Lake Norman estates. Copper, slate, cedar shake, designer shingles for Cornelius, Davidson, Mooresville, Huntersville homes. Expert installation for $800K+ properties.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/luxury-roofing-lake-norman-nc`,
   },

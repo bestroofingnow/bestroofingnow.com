@@ -33,17 +33,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Architectural vs 3-Tab Shingles Charlotte NC',
   description:
-    'Architectural shingles vs 3-tab in Charlotte NC: Compare cost, durability, appearance, and value. Expert guide to choosing the right shingles for your home.',
-  keywords: [
-    'architectural shingles vs 3-tab Charlotte NC',
-    'architectural shingles Charlotte',
-    '3-tab shingles Charlotte NC',
-    'dimensional shingles Charlotte',
-    'best shingles Charlotte NC',
-    'shingle comparison Charlotte',
-    'asphalt shingle types Charlotte',
-    'laminated shingles Charlotte',
-  ],
+    'Architectural shingles vs 3-tab in Charlotte NC: Compare cost, durability, appearance, and value. Expert guide to choosing the right shingles for your home.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/architectural-vs-3-tab-shingles-charlotte-nc`,
   },

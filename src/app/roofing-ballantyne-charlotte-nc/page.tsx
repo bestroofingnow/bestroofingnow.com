@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Ballantyne Charlotte NC',
   description:
-    'Looking for a trusted roofer in Ballantyne Charlotte NC? Best Roofing Now serves the Ballantyne Corporate Park area with premium roofing services for upscale homes. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing ballantyne charlotte nc',
-    'roofers ballantyne',
-    'ballantyne roofing contractor',
-    'south charlotte roofers',
-    'ballantyne roof repair',
-    'ballantyne roof replacement',
-    'roofing company ballantyne nc',
-    'ballantyne corporate park roofers',
-    'upscale home roofing ballantyne',
-    'best roofer ballantyne charlotte',
-  ],
+    'Looking for a trusted roofer in Ballantyne Charlotte NC? Best Roofing Now serves the Ballantyne Corporate Park area with premium roofing services for upscale homes. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-ballantyne-charlotte-nc`,
   },

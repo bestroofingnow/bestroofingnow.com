@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Tree Damage Roof Repair Charlotte',
   description:
-    'Expert tree damage roof repair in Charlotte NC. Fast emergency response when a tree falls on your roof. Insurance claim assistance, full restoration. Call Best Roofing Now 24/7!',
-  keywords: [
-    'tree damage roof repair charlotte nc',
-    'tree fell on roof charlotte',
-    'storm tree damage roof charlotte',
-    'tree on house repair charlotte nc',
-    'tree limb roof damage charlotte',
-    'fallen tree roof repair charlotte',
-    'emergency tree damage charlotte nc',
-    'roof repair after tree fell charlotte',
-    'tree damage insurance claim charlotte',
-    'storm cleanup roof charlotte nc',
-    'tree removal roof repair charlotte',
-    'tree crashed on roof charlotte',
-  ],
+    'Expert tree damage roof repair in Charlotte NC. Fast emergency response when a tree falls on your roof. Insurance claim assistance, full restoration. Call Best Roofing Now 24/7!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc`,
   },

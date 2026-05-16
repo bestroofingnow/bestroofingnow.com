@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Beverly Woods Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Trusted roofer in Beverly Woods Charlotte NC. Roofing for mid-century ranches and renovated homes. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing beverly woods charlotte nc',
-    'roofers beverly woods',
-    'beverly woods roofing contractor',
-    'south charlotte roofers beverly woods',
-    'beverly woods roof repair',
-    'beverly woods roof replacement',
-    'mid-century ranch roofing charlotte',
-    'architectural shingles beverly woods',
-    'best roofer beverly woods charlotte',
-    'beverly woods charlotte roofing services',
-  ],
+    'Trusted roofer in Beverly Woods Charlotte NC. Roofing for mid-century ranches and renovated homes. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-beverly-woods-charlotte-nc`,
   },

@@ -38,19 +38,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Repair Denver NC',
   description:
-    'Storm damage roof repair in Denver NC. Expert hail, wind, and emergency repairs on Lake Norman western shore. Insurance claim help. Free inspections!',
-  keywords: [
-    'storm damage roof repair Denver NC',
-    'hail damage roof repair Denver',
-    'wind damage roof Denver NC',
-    'storm damage roofer Denver',
-    'roof insurance claim Denver NC',
-    'emergency storm repair Denver NC',
-    'Lake Norman western shore storm damage',
-    'Denver NC storm damage contractor',
-    'roof repair after storm Denver',
-    'Lincoln County storm damage roofing',
-  ],
+    'Storm damage roof repair in Denver NC. Expert hail, wind, and emergency repairs on Lake Norman western shore. Insurance claim help. Free inspections!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-denver-nc`,
   },

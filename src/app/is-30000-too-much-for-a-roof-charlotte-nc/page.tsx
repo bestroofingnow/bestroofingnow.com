@@ -63,14 +63,6 @@ export const metadata: Metadata = {
   title: 'Is $30,000 Too Much for a Roof in Charlotte NC? (2026 Pricing)',
   description:
     "Is a $30K roof quote fair? 2026 Charlotte pricing by material and home size, plus what your $30K should include. Free second-opinion estimates from Best Roofing Now.",
-  keywords: [
-    'is 30000 too much for a roof',
-    'is $30,000 too much for a roof',
-    'fair roof replacement price charlotte',
-    'roof replacement quote charlotte nc',
-    'how much is a roof charlotte nc',
-    'average roof cost charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Is $30,000 Too Much for a Charlotte NC Roof? Honest Pricing Breakdown',

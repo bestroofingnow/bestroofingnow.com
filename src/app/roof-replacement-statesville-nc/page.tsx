@@ -30,19 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Statesville NC',
   description:
-    'Need a roof replacement in Statesville NC? Best Roofing Now provides expert roof replacement services in Iredell County. BBB A+ rated, veteran-owned. CertainTeed, GAF, and Owens Corning certified. Free estimates!',
-  keywords: [
-    'roof replacement statesville nc',
-    'new roof statesville nc',
-    'reroof statesville',
-    'roof replacement cost statesville',
-    'statesville roof replacement',
-    'iredell county roof replacement',
-    'shingle roof replacement statesville',
-    'roof replacement near me statesville',
-    'best roof replacement statesville nc',
-    'roof tear off statesville nc',
-  ],
+    'Need a roof replacement in Statesville NC? Best Roofing Now provides expert roof replacement services in Iredell County. BBB A+ rated, veteran-owned. CertainTeed, GAF, and Owens Corning certified. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-statesville-nc`,
   },

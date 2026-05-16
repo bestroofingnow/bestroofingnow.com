@@ -35,23 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: '24/7 Emergency Roof Repair Charlotte NC | Call Now',
   description:
-    'Emergency roof repair Charlotte NC with 24/7 response. Active leaks, storm damage, fallen trees - we respond fast. 1-4 hour response time. BBB A+ rated. Call (704) 605-6047 now!',
-  keywords: [
-    'emergency roof repair charlotte nc',
-    '24/7 roof repair charlotte nc',
-    'emergency roofing charlotte nc',
-    'urgent roof repair charlotte nc',
-    'roof leak emergency charlotte nc',
-    'storm damage emergency charlotte nc',
-    'emergency roof tarp charlotte nc',
-    'same day roof repair charlotte',
-    '24 hour roofer charlotte nc',
-    'emergency roof repair lake norman nc',
-    'emergency roof repair lake wylie sc',
-    'emergency roof repair huntersville nc',
-    'emergency roof repair mooresville nc',
-    'emergency roofer near me charlotte',
-  ],
+    'Emergency roof repair Charlotte NC with 24/7 response. Active leaks, storm damage, fallen trees - we respond fast. 1-4 hour response time. BBB A+ rated. Call (704) 605-6047 now!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-charlotte-nc`,
   },

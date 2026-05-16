@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Find a Roof Leak in My Charlotte NC Home?',
   description:
     "Find Charlotte NC roof leak: 6-step diagnostic from interior stain to entry point. Pipe boots cause 60% of leaks. Free infrared moisture imaging inspection in 30-60 min.",
-  keywords: [
-    'how to find roof leak Charlotte NC',
-    'roof leak diagnosis',
-    'pipe boot leak Charlotte',
-    'roof leak entry point',
-    'attic leak hunt',
-    'infrared moisture imaging',
-    'roof leak repair urgency',
-    'common roof leak sources',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Find a Roof Leak in My Charlotte NC Home?',

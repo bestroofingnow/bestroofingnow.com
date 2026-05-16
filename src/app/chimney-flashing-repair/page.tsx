@@ -36,20 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Chimney Flashing Repair Charlotte NC',
   description:
-    'Expert chimney flashing repair in Charlotte NC — step flashing, counter flashing, cricket/saddle install, lead/aluminum/copper specs. Historic chimney experienced.',
-  keywords: [
-    'chimney flashing repair charlotte nc',
-    'chimney leak repair charlotte',
-    'roof flashing repair charlotte',
-    'chimney flashing replacement',
-    'step flashing repair charlotte nc',
-    'counter flashing charlotte',
-    'chimney cricket installation',
-    'chimney saddle',
-    'leaking chimney repair',
-    'lead flashing chimney',
-    'copper chimney flashing charlotte',
-  ],
+    'Expert chimney flashing repair in Charlotte NC — step flashing, counter flashing, cricket/saddle install, lead/aluminum/copper specs. Historic chimney experienced.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/chimney-flashing-repair`,
   },

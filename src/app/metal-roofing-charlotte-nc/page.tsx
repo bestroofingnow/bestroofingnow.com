@@ -48,25 +48,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roofing Charlotte NC | 40-70 Yr',
   description:
-    'Metal roofing Charlotte NC experts -- 2026 pricing, 40-70 yr lifespan, 25% energy savings & 140 MPH wind resistance. Standing seam & metal shingle installs by BBB A+ veteran-owned contractors. Free estimate!',
-  keywords: [
-    'metal roofing charlotte nc',
-    'standing seam metal roof charlotte',
-    'metal roof installation charlotte nc',
-    'metal roof cost charlotte nc',
-    'metal roofing contractors charlotte nc',
-    'metal vs shingles charlotte',
-    'standing seam metal roof charlotte nc',
-    'metal roof contractors charlotte nc',
-    'metal roofing lake norman nc',
-    'metal roofing lake wylie sc',
-    'metal roofing mooresville nc',
-    'metal roofing huntersville nc',
-    'metal roof vs shingles charlotte nc',
-    'is a metal roof worth it charlotte nc',
-    'metal shingle roofing charlotte nc',
-    'metal roof replacement charlotte nc',
-  ],
+    'Metal roofing Charlotte NC experts -- 2026 pricing, 40-70 yr lifespan, 25% energy savings & 140 MPH wind resistance. Standing seam & metal shingle installs by BBB A+ veteran-owned contractors. Free estimate!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-charlotte-nc`,
   },

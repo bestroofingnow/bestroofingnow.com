@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'How Much Does a Commercial Roof Replacement Cost in Charlotte NC?',
   description:
     "Commercial roof replacement Charlotte NC: $4-$30/sq ft. 20K sq ft building: $40K coating, $80-200K EPDM, $100-240K TPO, $180-600K standing-seam metal. NDL warranties 15-30 yr.",
-  keywords: [
-    'commercial roof replacement cost Charlotte NC',
-    'commercial roofing cost',
-    'TPO replacement cost',
-    'flat roof replacement cost commercial',
-    'warehouse roof cost',
-    'office roof replacement Charlotte',
-    'commercial roof estimate',
-    'NDL warranty commercial roof',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Much Does a Commercial Roof Replacement Cost in Charlotte NC?',

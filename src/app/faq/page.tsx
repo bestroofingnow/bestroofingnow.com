@@ -20,6 +20,7 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { SITE_CONFIG, FAQ_CATEGORIES, ALL_FAQS, VOICE_SEARCH_FAQS as VOICE_FAQS } from '@/lib/constants';
@@ -29,19 +30,6 @@ export const metadata: Metadata = {
   title: 'Roofing FAQs | 36 Common Roofing Questions Answered | Charlotte NC',
   description:
     'Get answers to 36 common roofing questions about pricing, insurance claims, materials, weather damage, and more. Expert advice from Charlotte\'s trusted roofers at Best Roofing Now.',
-  keywords: [
-    'roofing questions Charlotte NC',
-    'roof repair FAQ Charlotte',
-    'roof replacement questions Charlotte NC',
-    'roofing insurance claims FAQ',
-    'how much does a roof cost Charlotte NC',
-    'roof replacement cost Charlotte NC 2026',
-    'storm damage roofing FAQ',
-    'roofing questions Lake Norman',
-    'roofing FAQ Lake Wylie SC',
-    'best roofer Charlotte NC FAQ',
-    'roof insurance claim questions Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/faq`,
   },
@@ -87,6 +75,14 @@ export default function FAQPage() {
       {/* Only ONE FAQPage schema per page - ALL_FAQS includes comprehensive content */}
       {/* VoiceSearchFAQSchema removed to comply with Google's one FAQPage per page rule */}
       <FAQSchema faqs={ALL_FAQS} />
+      {/* AEO: sr-only blocks for voice assistants. FAQ page is a prime voice-search target. */}
+      <SpeakableContentBlocks
+        includeCompany={true}
+        includeServices={true}
+        includeContact={true}
+        includeCost={true}
+        city="Charlotte"
+      />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/faq`}
         pageName="Roofing FAQ Charlotte NC"

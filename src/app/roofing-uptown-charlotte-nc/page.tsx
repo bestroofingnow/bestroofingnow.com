@@ -36,16 +36,6 @@ export const metadata: Metadata = {
   title: 'Roofing Uptown Charlotte NC',
   description:
     "Commercial and condo roofing for Uptown Charlotte NC. TPO, EPDM, modified bitumen for high-rise terraces, mid-rise condos, mixed-use buildings, and Fourth Ward historic homes. NDL warranties, after-hours scheduling, building-management coordination.",
-  keywords: [
-    'roofing Uptown Charlotte NC',
-    'Uptown Charlotte commercial roofing',
-    'Uptown condo roofing',
-    'Fourth Ward roofing',
-    'Charlotte high-rise roofing',
-    'Uptown Charlotte flat roof',
-    'CBD roofing Charlotte',
-    'mixed-use roofing Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-uptown-charlotte-nc`,
   },

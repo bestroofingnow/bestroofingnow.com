@@ -36,23 +36,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Denver NC',
   description:
-    'Expert commercial roofing in Denver NC. TPO, EPDM, flat roofs, metal for Lake Norman businesses. Lincoln County specialists. BBB A+ rated. Free estimates!',
-  keywords: [
-    'commercial roofing denver nc',
-    'commercial roofing contractors denver nc',
-    'commercial roof repair denver nc',
-    'flat roof contractors denver nc',
-    'tpo roofing denver nc',
-    'epdm roofing denver nc',
-    'industrial roofing denver nc',
-    'warehouse roofing denver nc',
-    'office building roofing denver',
-    'commercial flat roof denver nc',
-    'metal roofing commercial denver',
-    'lake norman commercial roofing',
-    'lincoln county commercial roofer',
-    'business roofing denver nc',
-  ],
+    'Expert commercial roofing in Denver NC. TPO, EPDM, flat roofs, metal for Lake Norman businesses. Lincoln County specialists. BBB A+ rated. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-denver-nc`,
   },

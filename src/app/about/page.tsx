@@ -20,6 +20,8 @@ import {
   EnhancedOrganizationSchema,
   PersonSchema,
   AISearchOptimizationBundle,
+  SpeakableContentBlocks,
+  WebPageSchema,
 } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -29,19 +31,6 @@ export const metadata: Metadata = {
   title: 'About Us | Veteran-Owned Roofing Company Charlotte NC',
   description:
     'Best Roofing Now is a veteran-owned, family-operated residential, commercial & industrial roofing company in Charlotte NC. Founded by James and his dad Fred with military values of integrity and service. BBB A+ rated, manufacturer certified.',
-  keywords: [
-    'veteran owned roofing company Charlotte',
-    'family owned roofer Charlotte NC',
-    'Best Roofing Now about',
-    'Charlotte roofing contractor',
-    'trusted roofer Charlotte',
-    'James Turner roofing',
-    'Fred Turner roofing',
-    'CertainTeed certified roofer',
-    'GAF certified Charlotte',
-    'commercial roofing company Charlotte',
-    'industrial roofing Charlotte NC',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/about`,
   },
@@ -112,7 +101,28 @@ export default function AboutPage() {
           { name: 'About Us', url: `${SITE_CONFIG.url}/about` },
         ]}
       />
+      {/* WebPageSchema with explicit dateModified — E-E-A-T freshness signal per §5 of brn-gold-standard plan */}
+      <WebPageSchema
+        name="About Best Roofing Now | Veteran-Owned Roofing Company Charlotte NC"
+        description="Family-owned, veteran-operated roofing company serving Charlotte NC. BBB A+ rated with military values of integrity and excellence. 500+ roofs completed."
+        url={`${SITE_CONFIG.url}/about`}
+        datePublished="2024-01-01"
+        dateModified={new Date().toISOString().split('T')[0]}
+        primaryImage={IMAGES.team.teamPhoto}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'About Us', url: `${SITE_CONFIG.url}/about` },
+        ]}
+      />
       <EnhancedOrganizationSchema />
+      {/* AEO: voice-search blocks — /about is the target for "tell me about [company]" queries */}
+      <SpeakableContentBlocks
+        includeCompany={true}
+        includeServices={true}
+        includeContact={true}
+        includeWarranty={true}
+        city="Charlotte"
+      />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/about`}
         pageName="About Best Roofing Now"

@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Xactimate Scoping and Why Does It Matter for My Charlotte NC Insurance Claim?',
   description:
     "Xactimate = industry-standard insurance estimating software (95% of US carriers). Charlotte NC contractors must provide matching scoping to maximize claim. Without it, you receive only 60-80% of full claim.",
-  keywords: [
-    'what is Xactimate scoping Charlotte NC',
-    'Xactimate insurance claim',
-    'roof insurance claim Charlotte',
-    'supplemental claim NC',
-    'Xactimate line items',
-    'NC insurance claim contractor',
-    'maximize roof insurance claim',
-    'NC §58-3-180 contractor choice',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Xactimate Scoping and Why Does It Matter for My Charlotte NC Insurance Claim?',

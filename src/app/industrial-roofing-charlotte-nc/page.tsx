@@ -42,18 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Industrial Roofing Charlotte NC',
   description:
-    'Expert industrial roofing contractors in Charlotte NC specializing in warehouses, factories, manufacturing plants & distribution centers. TPO, EPDM, metal roofing systems. Licensed & insured. Free estimates.',
-  keywords: [
-    'industrial roofing charlotte nc',
-    'industrial roof repair charlotte',
-    'warehouse roofing charlotte nc',
-    'factory roofing charlotte',
-    'manufacturing plant roofing charlotte nc',
-    'industrial roof replacement charlotte',
-    'large building roofing charlotte nc',
-    'metal roof industrial charlotte',
-    'industrial roofing contractors charlotte',
-  ],
+    'Expert industrial roofing contractors in Charlotte NC specializing in warehouses, factories, manufacturing plants & distribution centers. TPO, EPDM, metal roofing systems. Licensed & insured. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/industrial-roofing-charlotte-nc`,
   },

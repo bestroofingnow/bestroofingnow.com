@@ -36,18 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Near Me | Charlotte NC | Free Inspection',
   description:
-    'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage. BBB A+ rated. Call now!',
-  keywords: [
-    'storm damage roof repair',
-    'storm damage roof repair near me',
-    'storm damage roofing Charlotte NC',
-    'roof storm damage repair cost',
-    'emergency storm roof repair Charlotte',
-    'wind damage roof repair Charlotte NC',
-    'storm damage insurance claim Charlotte',
-    'fallen tree roof damage Charlotte',
-    'hurricane roof damage repair Charlotte NC',
-  ],
+    'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage. BBB A+ rated. Call now!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair`,
   },

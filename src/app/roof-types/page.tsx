@@ -18,20 +18,6 @@ export const metadata: Metadata = {
   title: 'Roof Types & Styles | Gable, Hip, Mansard, Flat | Charlotte NC',
   description:
     'Compare roof shapes for Charlotte NC homes: gable, hip, mansard, gambrel, flat/low-slope, shed, dutch gable, butterfly. Climate fit, drainage, pitch, and cost implications.',
-  keywords: [
-    'roof types charlotte nc',
-    'roof styles',
-    'gable roof charlotte',
-    'hip roof nc',
-    'mansard roof',
-    'gambrel roof',
-    'flat roof charlotte',
-    'dutch gable roof',
-    'shed roof',
-    'butterfly roof',
-    'roof shape guide',
-    'residential roof designs',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-types`,
   },

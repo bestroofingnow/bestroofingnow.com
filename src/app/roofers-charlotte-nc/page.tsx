@@ -45,25 +45,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofers Charlotte NC | 5-Star Rated | BBB A+',
   description:
-    'Need trusted roofers in Charlotte NC? Best Roofing Now is 5-star rated with 62+ Google reviews, BBB A+ accredited, veteran-owned. Licensed NC roofers with 500+ roofs completed. FREE estimates! Call (704) 605-6047.',
-  keywords: [
-    'roofers charlotte nc',
-    'roofers near me charlotte nc',
-    'best roofers charlotte nc',
-    'local roofers charlotte nc',
-    'roofer near me charlotte',
-    'top rated roofers charlotte nc',
-    'hire roofers charlotte nc',
-    'roofers lake norman nc',
-    'roofers lake wylie sc',
-    'roofers huntersville nc',
-    'roofers mooresville nc',
-    'roofers fort mill sc',
-    'roofers cornelius nc',
-    'trusted roofers charlotte nc',
-    'how to find a roofer charlotte nc',
-    'veteran owned roofer charlotte nc',
-  ],
+    'Need trusted roofers in Charlotte NC? Best Roofing Now is 5-star rated with 62+ Google reviews, BBB A+ accredited, veteran-owned. Licensed NC roofers with 500+ roofs completed. FREE estimates! Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
   },
@@ -89,7 +71,7 @@ const services = [
   {
     icon: Home,
   title: 'Residential Roofing',
-  description: 'Complete roofing solutions for Charlotte homes including shingle, metal, tile, and slate roofing for any style or budget.',
+  description: 'Roof repairs and replacements for Charlotte homes from brick ranches in Cotswold to steep-slope homes in Myers Park and Ballantyne.',
   href: '/services/residential-roofing',
   },
   {
@@ -101,7 +83,7 @@ const services = [
   {
     icon: Wrench,
   title: 'Roof Repair',
-  description: 'Fast, reliable repairs for leaks, missing shingles, flashing damage, and all types of roof issues.',
+  description: 'Leaks, missing shingles, pipe boots, valleys, chimney flashing, and storm damage diagnosed with photos before we quote the fix.',
   href: '/services/roof-repair',
   },
   {
@@ -113,13 +95,13 @@ const services = [
   {
     icon: Search,
   title: 'Roof Inspection',
-  description: 'Free comprehensive inspections with detailed reports, high-resolution photos, and honest assessments.',
+  description: 'Free roof inspections with photos from the roof and attic so you can see what we see before making a decision.',
   href: '/services/roof-inspection',
   },
   {
     icon: CloudRain,
   title: 'Storm Damage Repair',
-  description: '24/7 emergency storm damage restoration with full insurance claim documentation and adjuster meetings.',
+  description: 'Wind, hail, fallen limbs, and emergency tarping with the documentation adjusters expect after a Charlotte storm.',
   href: '/services/storm-damage',
   },
 ];
@@ -322,15 +304,14 @@ export default function RoofersCharlotteNCPage() {
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Charlotte&apos;s most trusted roofers with {SITE_CONFIG.roofsInstalled}+ roofs completed
+              Local roofers who know Charlotte roofs, Charlotte weather, and how homeowners here actually buy.
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Looking for reliable roofers in Charlotte NC? Best Roofing Now provides 5-star rated roofing services
-              throughout Charlotte and the surrounding metro area. From{' '}
-              <Link href="/roof-repair-charlotte-nc" className="text-accent-light hover:text-white underline">repairs</Link> to{' '}
-              <Link href="/roof-replacement-charlotte-nc" className="text-accent-light hover:text-white underline">complete replacements</Link>,
-  our certified roofers deliver exceptional quality backed by industry-leading warranties
-              and our BBB A+ rating.
+              If your roof is leaking after a summer thunderstorm, missing shingles after a wind gust off I-485, or just getting old
+              enough that you want a straight opinion, we can help. Best Roofing Now serves neighborhoods across Charlotte, handling{' '}
+              <Link href="/roof-repair-charlotte-nc" className="text-accent-light hover:text-white underline">repairs</Link> and{' '}
+              <Link href="/roof-replacement-charlotte-nc" className="text-accent-light hover:text-white underline">complete replacements</Link> with
+              clear photos, written scopes, and crews that treat your driveway, gutters, landscaping, and attic like they matter.
             </p>
 
             {/* CTA Buttons */}

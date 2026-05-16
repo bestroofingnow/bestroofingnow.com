@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing NoDa Charlotte NC',
   description:
-    'Professional roofing services for NoDa Charlotte NC. Specializing in historic mill homes, arts district properties, and mixed-use buildings. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing noda charlotte nc',
-    'roof repair noda',
-    'noda roofers',
-    'noda roof replacement',
-    'arts district roofing charlotte',
-    'historic mill home roofing',
-    'north davidson roofing',
-    'noda roofing contractor',
-    'roof repair north davidson charlotte',
-    'best roofer noda',
-  ],
+    'Professional roofing services for NoDa Charlotte NC. Specializing in historic mill homes, arts district properties, and mixed-use buildings. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-noda-charlotte-nc`,
   },

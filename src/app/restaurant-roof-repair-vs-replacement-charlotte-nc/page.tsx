@@ -39,17 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Restaurant Roof: Repair vs Replace Charlotte NC',
   description:
-    'Should you repair or replace your Charlotte restaurant roof? Guide to costs, timing, health code compliance, and minimizing downtime. Free commercial estimates.',
-  keywords: [
-    'restaurant roof repair Charlotte NC',
-    'restaurant roof replacement Charlotte',
-    'commercial kitchen roofing Charlotte',
-    'restaurant roofing contractor Charlotte NC',
-    'flat roof restaurant Charlotte',
-    'grease trap ventilation roof Charlotte',
-    'commercial restaurant roofing Charlotte',
-    'food service roofing Charlotte NC',
-  ],
+    'Should you repair or replace your Charlotte restaurant roof? Guide to costs, timing, health code compliance, and minimizing downtime. Free commercial estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/restaurant-roof-repair-vs-replacement-charlotte-nc`,
   },

@@ -38,16 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Matthews NC',
   description:
-    'Storm damage to your Matthews roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned. Call now!',
-  keywords: [
-    'storm damage roof repair matthews nc',
-    'hail damage roof repair matthews',
-    'wind damage roof repair matthews nc',
-    'emergency roof repair matthews',
-    'storm damage roofing matthews',
-    'roof storm damage matthews nc',
-    'roofing insurance claims matthews',
-  ],
+    'Storm damage to your Matthews roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned. Call now!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-matthews-nc`,
   },

@@ -35,17 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Specialty Roofing Services Charlotte NC | Skylights, Ventilation & More',
   description:
-    'Specialty roofing services in Charlotte NC. Skylight installation, roof ventilation, chimney services, and flat roof repair. VELUX certified. Free estimates!',
-  keywords: [
-    'skylight installation Charlotte NC',
-    'roof ventilation Charlotte',
-    'chimney repair Charlotte NC',
-    'flat roof repair Charlotte',
-    'VELUX skylight Charlotte',
-    'attic ventilation Charlotte NC',
-    'chimney flashing Charlotte',
-    'specialty roofing Charlotte',
-  ],
+    'Specialty roofing services in Charlotte NC. Skylight installation, roof ventilation, chimney services, and flat roof repair. VELUX certified. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/specialty-services`,
   },

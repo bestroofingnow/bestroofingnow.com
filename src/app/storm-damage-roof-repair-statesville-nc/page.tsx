@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Statesville',
   description:
-    'Storm damage roof repair in Statesville NC. Best Roofing Now provides fast storm damage restoration, insurance claim help, and emergency repairs in Iredell County. BBB A+ rated, veteran-owned. Free inspections!',
-  keywords: [
-    'storm damage roof repair statesville nc',
-    'storm damage roofer statesville',
-    'hail damage roof repair statesville',
-    'wind damage roof statesville nc',
-    'storm damage roofing statesville',
-    'iredell county storm damage repair',
-    'roof insurance claim statesville',
-    'storm damage restoration statesville nc',
-    'roof storm damage near me statesville',
-    'statesville storm damage contractor',
-  ],
+    'Storm damage roof repair in Statesville NC. Best Roofing Now provides fast storm damage restoration, insurance claim help, and emergency repairs in Iredell County. BBB A+ rated, veteran-owned. Free inspections!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-statesville-nc`,
   },

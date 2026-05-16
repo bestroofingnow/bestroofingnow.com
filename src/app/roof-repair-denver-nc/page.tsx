@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Denver NC | Lake Norman | Free Estimates',
   description:
-    'Fast roof repair in Denver NC. Leak repair, storm damage, shingle replacement for Lake Norman western shore homes. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'roof repair denver nc',
-    'roofing repair denver nc',
-    'denver nc roof repair',
-    'roof leak repair denver nc',
-    'emergency roof repair denver nc',
-    'lake norman western shore roofer',
-    'shingle repair denver nc',
-    'storm damage repair denver nc',
-    'roof repair near me denver nc',
-    'fix roof leak denver nc',
-    'lincoln county roof repair',
-    'trilogy at lake norman roof repair',
-  ],
+    'Fast roof repair in Denver NC. Leak repair, storm damage, shingle replacement for Lake Norman western shore homes. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-denver-nc`,
   },

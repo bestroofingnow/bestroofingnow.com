@@ -31,15 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Guards Lake Norman NC',
   description:
-    'Professional gutter guard installation for Lake Norman NC homes. Micro-mesh, reverse curve, and screen guards for heavy tree canopy and pine needle protection. Veteran-owned, BBB A+ rated. Free estimates for gutter guard installation.',
-  keywords: [
-    'gutter guards lake norman nc',
-    'leaf guard lake norman',
-    'gutter protection lake norman nc',
-    'micro mesh gutter guards lake norman',
-    'gutter guard installation lake norman',
-    'leaffilter lake norman nc',
-  ],
+    'Professional gutter guard installation for Lake Norman NC homes. Micro-mesh, reverse curve, and screen guards for heavy tree canopy and pine needle protection. Veteran-owned, BBB A+ rated. Free estimates for gutter guard installation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-guards-lake-norman-nc`,
   },

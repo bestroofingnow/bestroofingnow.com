@@ -37,19 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'GAF Timberline Charlotte NC',
   description:
-    'GAF Timberline HDZ and NS shingles installed in Charlotte NC. America\'s #1 selling shingle with LayerLock technology, StainGuard Plus, and 130 MPH wind warranty. Factory-Certified contractor.',
-  keywords: [
-    'gaf timberline shingles charlotte nc',
-    'timberline hdz charlotte',
-    'gaf timberline hdz shingles charlotte',
-    'timberline ns shingles charlotte nc',
-    'gaf timberline colors charlotte',
-    'timberline shingles cost charlotte',
-    'layerlock technology shingles',
-    'stainGuard plus shingles charlotte',
-    'gaf hdz installation charlotte nc',
-    'timberline roof charlotte',
-  ],
+    'GAF Timberline HDZ and NS shingles installed in Charlotte NC. America\'s #1 selling shingle with LayerLock technology, StainGuard Plus, and 130 MPH wind warranty. Factory-Certified contractor.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gaf-timberline-shingles-charlotte-nc`,
   },

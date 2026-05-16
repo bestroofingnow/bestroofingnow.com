@@ -33,23 +33,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roofing Lake Wylie SC | Standing Seam & Metal Shingles',
   description:
-    'Premium metal roofing in Lake Wylie SC. Standing seam, metal shingles, and metal roof repairs for waterfront homes. 130+ MPH wind rating, salt air resistant. BBB A+ rated. Free estimates!',
-  keywords: [
-    'metal roofing lake wylie sc',
-    'standing seam metal roof lake wylie',
-    'metal roof installation lake wylie',
-    'metal roofing contractors lake wylie sc',
-    'metal roof repair lake wylie sc',
-    'metal shingle roof lake wylie',
-    'waterfront metal roofing lake wylie',
-    'wind resistant metal roof lake wylie',
-    'steel roofing lake wylie sc',
-    'aluminum roofing lake wylie',
-    'energy efficient roofing lake wylie',
-    'metal roof cost lake wylie sc',
-    'best metal roofer lake wylie',
-    'tega cay metal roofing',
-  ],
+    'Premium metal roofing in Lake Wylie SC. Standing seam, metal shingles, and metal roof repairs for waterfront homes. 130+ MPH wind rating, salt air resistant. BBB A+ rated. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-lake-wylie-sc`,
   },

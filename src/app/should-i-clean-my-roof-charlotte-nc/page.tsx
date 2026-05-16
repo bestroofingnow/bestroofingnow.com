@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'Should I Clean My Roof in Charlotte NC?',
   description:
     "Yes — clean Charlotte NC roof when you see algae streaks or moss. ARMA-approved soft-wash $400-$1,800. NEVER pressure wash (voids warranty). Zinc/copper strip prevention.",
-  keywords: [
-    'should I clean my roof Charlotte NC',
-    'roof cleaning Charlotte',
-    'algae streaks roof',
-    'moss removal roof Charlotte',
-    'soft wash roof cleaning',
-    'zinc copper ridge strip',
-    'pressure wash roof damage',
-    'ARMA roof cleaning method',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Should I Clean My Roof in Charlotte NC?',

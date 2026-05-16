@@ -32,21 +32,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Pineville NC',
   description:
-    'Need roof repair in Pineville NC? Best Roofing Now offers fast, reliable repairs for leaks, storm damage, and shingle replacement near Carolina Place Mall. BBB A+ rated. Free estimates!',
-  keywords: [
-    'roof repair Pineville NC',
-    'roofing repair Pineville',
-    'Pineville roof repair',
-    'roof leak repair Pineville NC',
-    'emergency roof repair Pineville',
-    'roof repair near Carolina Place',
-    'shingle repair Pineville NC',
-    'roof repair contractors Pineville',
-    'fix roof leak Pineville',
-    'storm damage repair Pineville NC',
-    'roof repair near me Pineville',
-    'best roofer Pineville NC',
-  ],
+    'Need roof repair in Pineville NC? Best Roofing Now offers fast, reliable repairs for leaks, storm damage, and shingle replacement near Carolina Place Mall. BBB A+ rated. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-pineville-nc`,
   },

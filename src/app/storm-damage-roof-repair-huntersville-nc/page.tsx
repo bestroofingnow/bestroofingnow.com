@@ -38,19 +38,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Huntersville NC | Insurance Help',
   description:
-    'Storm damage roof repair in Huntersville NC. Expert hail damage, wind damage, and emergency repairs. We work with your insurance company to get your roof restored. Free inspections!',
-  keywords: [
-    'storm damage roof repair Huntersville NC',
-    'hail damage roof repair Huntersville',
-    'wind damage roof Huntersville NC',
-    'storm damage roofer Huntersville',
-    'roof insurance claim Huntersville',
-    'emergency storm repair Huntersville',
-    'hail damage roofer near me',
-    'storm damage roofing company',
-    'Huntersville storm damage contractor',
-    'roof repair after storm Huntersville',
-  ],
+    'Storm damage roof repair in Huntersville NC. Expert hail damage, wind damage, and emergency repairs. We work with your insurance company to get your roof restored. Free inspections!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-huntersville-nc`,
   },

@@ -40,21 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Tile Roofing Charlotte NC',
   description:
-    'Professional tile roofing installation in Charlotte NC. Clay tiles, concrete tiles, Mediterranean styles. Durable, beautiful, and long-lasting. BBB A+ rated, veteran-owned company.',
-  keywords: [
-    'tile roofing Charlotte NC',
-    'clay tile roof Charlotte',
-    'concrete tile roofing Charlotte',
-    'tile roof installation Charlotte',
-    'Mediterranean tile roof Charlotte',
-    'Spanish tile roof Charlotte NC',
-    'tile roof replacement Charlotte',
-    'tile roof repair Charlotte NC',
-    'terracotta roof tiles Charlotte',
-    'tile roofing contractor Charlotte',
-    'clay roof tiles Charlotte NC',
-    'tile roof cost Charlotte',
-  ],
+    'Professional tile roofing installation in Charlotte NC. Clay tiles, concrete tiles, Mediterranean styles. Durable, beautiful, and long-lasting. BBB A+ rated, veteran-owned company.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tile-roofing-charlotte-nc`,
   },

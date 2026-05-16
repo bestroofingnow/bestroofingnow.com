@@ -38,19 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Standing Seam Metal Roof Lake Norman NC',
   description:
-    'Standing seam metal roofing for Lake Norman NC homes. Wind-resistant, energy-efficient, 50-70 year lifespan. BBB A+ rated. Free estimates.',
-  keywords: [
-    'standing seam metal roof lake norman',
-    'metal roofing lake norman nc',
-    'standing seam metal roof cornelius nc',
-    'lake norman metal roof contractor',
-    'wind resistant roofing lake norman',
-    'waterfront metal roofing lake norman nc',
-    'standing seam roof davidson nc',
-    'metal roof mooresville nc',
-    'lake norman waterfront roofing',
-    'energy efficient metal roofing lake norman',
-  ],
+    'Standing seam metal roofing for Lake Norman NC homes. Wind-resistant, energy-efficient, 50-70 year lifespan. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/standing-seam-metal-roof-lake-norman-nc`,
   },

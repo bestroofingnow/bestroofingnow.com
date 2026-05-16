@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'How Do I Know if I Need New Decking Under My Roof in Charlotte NC?',
   description:
     "Charlotte NC roof decking signs: sagging slopes, attic water stains, soft spots, daylight through deck, granule loss patterns. $80-120/sheet replacement cost; typical 0-3 sheets needed.",
-  keywords: [
-    'do I need new roof decking Charlotte NC',
-    'roof decking replacement cost',
-    'roof sheathing replacement',
-    'sagging roof decking',
-    'rotten roof decking signs',
-    'roof decking inspection',
-    'OSB plywood roof deck',
-    'attic water stains roof',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Know if I Need New Decking Under My Roof in Charlotte NC?',

@@ -35,23 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Concord NC',
   description:
-    'Expert commercial roofing in Concord NC. TPO, EPDM, flat roofs, metal roofing for warehouses, retail centers & Concord Mills area. I-85 corridor. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'commercial roofing concord nc',
-    'commercial roofing contractors concord',
-    'commercial roof repair concord nc',
-    'flat roof contractors concord',
-    'tpo roofing concord nc',
-    'epdm roofing concord',
-    'industrial roofing concord nc',
-    'warehouse roofing concord',
-    'concord mills roofing',
-    'commercial flat roof concord nc',
-    'metal roofing commercial concord',
-    'speedway area roofing',
-    'commercial roofer concord',
-    'business roofing concord nc',
-  ],
+    'Expert commercial roofing in Concord NC. TPO, EPDM, flat roofs, metal roofing for warehouses, retail centers & Concord Mills area. I-85 corridor. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-concord-nc`,
   },

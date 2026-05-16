@@ -33,21 +33,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Maintenance Charlotte NC',
   description:
-    'Professional roof maintenance programs in Charlotte NC. Annual inspections, preventive repairs, and maintenance plans to extend your roof life. BBB A+ rated, veteran-owned company.',
-  keywords: [
-    'roof maintenance Charlotte NC',
-    'roof maintenance program',
-    'annual roof inspection Charlotte',
-    'preventive roof maintenance',
-    'roof maintenance plan Charlotte',
-    'roof care Charlotte NC',
-    'roof maintenance service near me',
-    'residential roof maintenance Charlotte',
-    'commercial roof maintenance Charlotte',
-    'extend roof life Charlotte',
-    'roof inspection plan Charlotte NC',
-    'roof preventive care',
-  ],
+    'Professional roof maintenance programs in Charlotte NC. Annual inspections, preventive repairs, and maintenance plans to extend your roof life. BBB A+ rated, veteran-owned company.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`,
   },

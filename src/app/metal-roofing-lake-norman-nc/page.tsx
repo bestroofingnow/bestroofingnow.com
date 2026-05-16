@@ -32,21 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Lake Norman NC | Standing Seam & Metal Shingles',
   description:
-    'Premium metal roofing installation across Lake Norman NC. Standing seam, metal shingles, and corrugated panels for waterfront and lakefront homes. 50+ year lifespan, wind-resistant. Free estimates!',
-  keywords: [
-    'metal roofing lake norman nc',
-    'standing seam metal roof lake norman',
-    'metal roof cost lake norman',
-    'metal roofing contractor lake norman',
-    'lakefront metal roofing lake norman',
-    'waterfront metal roof lake norman nc',
-    'metal shingles lake norman',
-    'metal roof installation lake norman',
-    'wind resistant roofing lake norman',
-    'lake norman metal roofing company',
-    'standing seam roof cornelius nc',
-    'metal roof mooresville nc',
-  ],
+    'Premium metal roofing installation across Lake Norman NC. Standing seam, metal shingles, and corrugated panels for waterfront and lakefront homes. 50+ year lifespan, wind-resistant. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-lake-norman-nc`,
   },

@@ -20,15 +20,7 @@ import { PARTNERS, PARTNER_CATEGORIES, getNetworkRoofers, getLocalPartners, type
 
 export const metadata: Metadata = {
   title: 'Trusted Partners & Roofing Network | Home Service Professionals',
-  description: 'Best Roofing Now partners with trusted roofing contractors nationwide and top-rated Charlotte home service professionals including HVAC, plumbing, electrical, and landscaping companies.',
-  keywords: [
-    'trusted roofers network',
-    'Charlotte home service companies',
-    'recommended HVAC Charlotte NC',
-    'roofing network partners',
-    'Charlotte home improvement referrals',
-    'trusted home service professionals Charlotte',
-  ],
+  description: 'Best Roofing Now partners with trusted roofing contractors nationwide and top-rated Charlotte home service professionals including HVAC, plumbing, electrical, and landscaping companies.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/trusted-partners`,
   },

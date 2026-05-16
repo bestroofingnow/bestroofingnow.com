@@ -38,19 +38,6 @@ export const metadata: Metadata = {
   title: 'Tile Roofing Charlotte NC | Clay & Concrete',
   description:
     'Tile roofing in Charlotte NC — clay (terracotta), concrete, Spanish S, flat slate-look, and synthetic alternatives. 50-100 year lifespan, structural engineering required.',
-  keywords: [
-    'tile roofing charlotte nc',
-    'clay tile roof charlotte',
-    'concrete tile roofing charlotte nc',
-    'spanish tile roof charlotte',
-    'barrel tile charlotte',
-    'flat tile charlotte nc',
-    'tile roof repair charlotte nc',
-    'mediterranean tile roofing charlotte',
-    'terracotta roof charlotte',
-    'synthetic tile davinci brava',
-    'tile roof structural engineering',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/tile-roofing`,
   },

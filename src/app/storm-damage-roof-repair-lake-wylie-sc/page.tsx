@@ -35,19 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Lake Wylie SC | Insurance Claims',
   description:
-    'Expert storm damage roof repair in Lake Wylie SC. Hail damage, wind damage, fallen trees. Insurance claim specialists. 24/7 emergency response. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
-  keywords: [
-    'storm damage roof repair lake wylie sc',
-    'hail damage roofing lake wylie',
-    'wind damage roof lake wylie',
-    'roof insurance claim lake wylie sc',
-    'emergency roof repair lake wylie sc',
-    'storm damage roofer lake wylie',
-    'hail damage roof repair lake wylie',
-    'roof storm damage lake wylie sc',
-    'insurance roof claim lake wylie',
-    'emergency roofing lake wylie sc',
-  ],
+    'Expert storm damage roof repair in Lake Wylie SC. Hail damage, wind damage, fallen trees. Insurance claim specialists. 24/7 emergency response. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-lake-wylie-sc`,
   },

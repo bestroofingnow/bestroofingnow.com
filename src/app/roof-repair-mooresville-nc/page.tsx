@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Mooresville NC | Lake Norman | Free Estimates',
   description:
-    'Fast roof repair in Mooresville NC. Leak repair, storm damage, emergency service for Lake Norman homes. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'roof repair Mooresville NC',
-    'roofing repair Mooresville',
-    'Mooresville roof repair',
-    'roof leak repair Mooresville NC',
-    'emergency roof repair Mooresville',
-    'Lake Norman roof repair',
-    'shingle repair Mooresville NC',
-    'storm damage repair Mooresville',
-    'roof repair near me Mooresville',
-    'fix roof leak Mooresville NC',
-    'roofer Mooresville NC',
-    'roofing contractor Mooresville',
-  ],
+    'Fast roof repair in Mooresville NC. Leak repair, storm damage, emergency service for Lake Norman homes. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-mooresville-nc`,
   },

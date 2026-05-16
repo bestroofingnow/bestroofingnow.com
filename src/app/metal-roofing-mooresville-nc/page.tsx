@@ -32,19 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Mooresville NC',
   description:
-    'Premium metal roofing installation in Mooresville NC. Standing seam, metal shingles, and corrugated panels. 50+ year lifespan, energy efficient. Lake Norman\'s metal roofing experts!',
-  keywords: [
-    'metal roofing Mooresville NC',
-    'metal roof Mooresville',
-    'standing seam metal roof Mooresville NC',
-    'metal roofing contractor Mooresville',
-    'steel roofing Mooresville NC',
-    'metal roof installation Lake Norman',
-    'metal shingles Mooresville',
-    'metal roof cost Mooresville NC',
-    'metal roofing company near me',
-    'Lake Norman metal roofing',
-  ],
+    'Premium metal roofing installation in Mooresville NC. Standing seam, metal shingles, and corrugated panels. 50+ year lifespan, energy efficient. Lake Norman\'s metal roofing experts!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-mooresville-nc`,
   },

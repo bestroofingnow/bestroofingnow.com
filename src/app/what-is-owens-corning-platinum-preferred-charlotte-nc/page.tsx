@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Owens Corning Platinum Preferred and Why Does It Matter for My Charlotte NC Roof?',
   description:
     "OC Platinum Preferred = top 1% of OC contractors. Charlotte NC exclusive Platinum Protection (50 yr material + LIFETIME workmanship + LIFETIME tear-off + 130 MPH wind).",
-  keywords: [
-    'what is Owens Corning Platinum Preferred Charlotte NC',
-    'OC Platinum Preferred contractor',
-    'OC Platinum Protection warranty',
-    'Owens Corning certified roofer',
-    'TruDefinition Duration installer',
-    'best OC contractor NC',
-    'Owens Corning warranty tiers',
-    'OC Platinum verification',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Owens Corning Platinum Preferred and Why Does It Matter for My Charlotte NC Roof?',

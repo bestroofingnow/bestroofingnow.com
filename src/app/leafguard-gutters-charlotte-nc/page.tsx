@@ -38,19 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'LeafGuard Gutters Charlotte NC',
   description:
-    'LeafGuard gutter installation in Charlotte NC. One-piece seamless design with clog-free guarantee. Never clean gutters again! Professional installation with lifetime warranty. Free estimates.',
-  keywords: [
-    'leafguard gutters charlotte nc',
-    'leafguard gutter installation',
-    'leafguard charlotte',
-    'clog free gutters charlotte nc',
-    'leafguard warranty charlotte',
-    'one piece gutter system charlotte',
-    'leafguard reviews charlotte nc',
-    'leafguard cost charlotte nc',
-    'leafguard brand gutters charlotte',
-    'never clean gutters charlotte',
-  ],
+    'LeafGuard gutter installation in Charlotte NC. One-piece seamless design with clog-free guarantee. Never clean gutters again! Professional installation with lifetime warranty. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc`,
   },

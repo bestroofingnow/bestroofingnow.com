@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Roof Underlayment and Which Type Is Best for Charlotte NC?',
   description:
     "Roof underlayment = waterproof barrier under shingles. Charlotte NC best: synthetic $0.30-$0.60/sq ft (Tiger Paw, RoofRunner) + ice-and-water shield in valleys/penetrations per NC IRC §R905.1.1.",
-  keywords: [
-    'what is roof underlayment Charlotte NC',
-    'synthetic vs felt underlayment',
-    'ice and water shield NC code',
-    'NC IRC R905.1.1 underlayment',
-    'GAF Tiger Paw',
-    'CertainTeed RoofRunner',
-    'roof underlayment cost',
-    'best underlayment Charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Underlayment and Which Type Is Best for Charlotte NC?',

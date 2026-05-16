@@ -42,19 +42,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing Services Charlotte NC | Residential, Commercial, Emergency',
   description:
-    'Full-service roofing, gutter, and siding services in Charlotte NC and Lake Norman. Residential and commercial, 24/7 emergency, insurance claims, maintenance programs.',
-  keywords: [
-    'roofing services charlotte nc',
-    'roofing services near me',
-    'full service roofing company charlotte',
-    'complete roofing solutions charlotte nc',
-    'roof repair services charlotte',
-    'residential roofing services charlotte',
-    'commercial roofing services charlotte',
-    'roofing maintenance services charlotte nc',
-    'emergency roofing charlotte',
-    'lake norman roofing services',
-  ],
+    'Full-service roofing, gutter, and siding services in Charlotte NC and Lake Norman. Residential and commercial, 24/7 emergency, insurance claims, maintenance programs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/services`,
   },

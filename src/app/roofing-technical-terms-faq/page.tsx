@@ -29,22 +29,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing Terms Explained FAQ | Technical Glossary & Warranty Guide | Charlotte NC',
   description:
-    'Roofing terms explained in plain language. Understand underlayment, flashing, drip edge, ridge cap, soffit vents, and more. 13 technical FAQs plus glossary for Charlotte NC homeowners from Best Roofing Now.',
-  keywords: [
-    'roofing terms explained',
-    'roofing glossary',
-    'what is roof underlayment',
-    'what is roof flashing',
-    'roofing technical terms',
-    'roof warranty explained',
-    'what is drip edge',
-    'what is ridge cap',
-    'soffit vent purpose',
-    'roof valley definition',
-    'roof cricket definition',
-    'roofing terminology guide',
-    'roofing jargon explained Charlotte NC',
-  ],
+    'Roofing terms explained in plain language. Understand underlayment, flashing, drip edge, ridge cap, soffit vents, and more. 13 technical FAQs plus glossary for Charlotte NC homeowners from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-technical-terms-faq`,
   },

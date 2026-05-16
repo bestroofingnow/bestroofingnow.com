@@ -111,14 +111,6 @@ export const metadata: Metadata = {
   title: 'How to Tell if a Roofer Is Lying (10 Red Flags + Verify)',
   description:
     "10 verifiable red flags that mean a Charlotte roofer is lying — plus a 7-step verification checklist with official NC license, BBB, and manufacturer cert lookups.",
-  keywords: [
-    'how to tell if a roofer is lying',
-    'how to spot a dishonest roofer',
-    'roofing scam red flags',
-    'storm chaser roofer charlotte',
-    'verify roofer license nc',
-    'roofing fraud charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How to Tell if a Roofer Is Lying — 10 Red Flags & Verification Checklist',

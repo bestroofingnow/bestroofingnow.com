@@ -35,18 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Residential Roof Replacement Charlotte NC | Free Estimates',
   description:
-    'Professional residential roof replacement in Charlotte NC. Asphalt, metal, tile, slate & cedar options. Free estimates, financing available, 25-year warranties. Trusted by 500+ homeowners. Call now!',
-  keywords: [
-    'residential roof replacement near me',
-    'residential roof replacement Charlotte NC',
-    'home roof replacement cost Charlotte',
-    'best residential roofer Charlotte NC',
-    'roof replacement contractor near me',
-    'roof replacement cost Charlotte NC',
-    'asphalt shingle roof replacement Charlotte',
-    'metal roof replacement Charlotte NC',
-    'residential roofing company Charlotte',
-  ],
+    'Professional residential roof replacement in Charlotte NC. Asphalt, metal, tile, slate & cedar options. Free estimates, financing available, 25-year warranties. Trusted by 500+ homeowners. Call now!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/residential-roof-replacement`,
   },

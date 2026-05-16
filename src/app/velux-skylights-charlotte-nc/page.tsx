@@ -37,19 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'VELUX Skylights Charlotte NC',
   description:
-    'VELUX skylight installation in Charlotte NC. Certified installers for solar-powered, fixed, and venting skylights with no-leak warranty. Sun Tunnel tubular skylights. Free estimates.',
-  keywords: [
-    'velux skylights charlotte nc',
-    'velux skylight installation charlotte',
-    'velux certified installer charlotte nc',
-    'solar powered skylights charlotte',
-    'velux sun tunnel charlotte',
-    'skylight installation charlotte nc',
-    'velux no leak warranty',
-    'velux fresh air skylights charlotte',
-    'tubular skylights charlotte nc',
-    'velux roof windows charlotte',
-  ],
+    'VELUX skylight installation in Charlotte NC. Certified installers for solar-powered, fixed, and venting skylights with no-leak warranty. Sun Tunnel tubular skylights. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/velux-skylights-charlotte-nc`,
   },

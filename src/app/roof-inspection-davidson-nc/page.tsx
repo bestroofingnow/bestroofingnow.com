@@ -33,21 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Davidson NC | Free',
   description:
-    'Free roof inspections in Davidson NC. Comprehensive assessments with detailed reports for college town historic and newer homes. BBB A+ rated. Schedule today!',
-  keywords: [
-    'roof inspection Davidson NC',
-    'free roof inspection Davidson',
-    'roof assessment Davidson NC',
-    'roof inspection near me Davidson',
-    'Lake Norman roof inspection Davidson',
-    'roof evaluation Davidson NC',
-    'home inspection roofing Davidson NC',
-    'roof condition report Davidson',
-    'pre-purchase roof inspection Davidson',
-    'storm damage inspection Davidson NC',
-    'Mecklenburg County roof inspection',
-    'Davidson College area roof inspection',
-  ],
+    'Free roof inspections in Davidson NC. Comprehensive assessments with detailed reports for college town historic and newer homes. BBB A+ rated. Schedule today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-davidson-nc`,
   },

@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Weather Stops Roof Work?',
   description: "What weather conditions stop roofing work in Charlotte NC? Rain, 25 MPH wind, freezing temps, extreme heat, lightning within 30 miles all halt work.",
-  keywords: ['what weather stops roofing charlotte nc', 'roofing weather conditions', 'rain delay roof install', 'cold weather roofing charlotte', 'roof install temperature limits', 'wind speed roofing stops', 'roofing weather delays', 'charlotte storm roofing'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'What Weather Stops Roof Work?', description: 'Charlotte NC: rain, 25 MPH wind, sub-40F, extreme heat, and lightning all halt roofing.', url: PAGE_URL, type: 'article' },
 };

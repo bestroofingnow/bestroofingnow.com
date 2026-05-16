@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Overhead and Profit (O&P) and When Does It Apply to My Charlotte NC Insurance Claim?',
   description:
     "O&P = 10% + 10% (20% total) markup added to insurance claims when 3+ trades required. Missing O&P costs Charlotte NC homeowners 16-20% of claim. Best Roofing Now ensures inclusion.",
-  keywords: [
-    'what is overhead and profit Charlotte NC',
-    'O&P insurance claim',
-    'three-trade rule O&P',
-    'NC O&P insurance',
-    'roof claim overhead profit',
-    'supplemental claim O&P',
-    'Xactimate O&P calculation',
-    'maximize roof insurance claim',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Overhead and Profit (O&P) and When Does It Apply to My Charlotte NC Insurance Claim?',

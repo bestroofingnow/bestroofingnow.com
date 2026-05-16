@@ -35,16 +35,6 @@ export const metadata: Metadata = {
   title: 'Shingle Replacement Charlotte NC',
   description:
     'Shingle replacement in Charlotte NC — partial slope, full slope, or complete roof. GAF Master Elite, CertainTeed SELECT, OC Platinum installer with 30-50 year non-prorated warranties. Same-day to 2-day completion typical.',
-  keywords: [
-    'shingle replacement Charlotte NC',
-    'roof shingle replacement Charlotte',
-    'partial roof replacement Charlotte NC',
-    'full roof shingle replacement',
-    'shingle reroof Charlotte',
-    'asphalt shingle replacement Charlotte',
-    'replace roof shingles Charlotte NC',
-    'shingle replacement cost Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/shingle-replacement-charlotte-nc`,
   },

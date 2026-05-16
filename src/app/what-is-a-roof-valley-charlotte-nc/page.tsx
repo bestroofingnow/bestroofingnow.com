@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Roof Valley and Why Does It Matter for My Charlotte NC Home?',
   description:
     "Roof valley = V-shape where slopes meet, handles 30-60% of roof runoff. Charlotte NC types: open metal $8-15/ft, closed-cut $5-10/ft. Ice-and-water shield required NC IRC §R905.1.1.",
-  keywords: [
-    'what is a roof valley Charlotte NC',
-    'roof valley types',
-    'open valley vs closed valley',
-    'roof valley repair cost',
-    'roof valley leak Charlotte',
-    'ice water shield valley',
-    'NC roof valley code',
-    'metal roof valley flashing',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Roof Valley and Why Does It Matter for My Charlotte NC Home?',

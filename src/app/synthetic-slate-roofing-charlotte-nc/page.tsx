@@ -39,16 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Synthetic Slate Roofing Charlotte',
   description:
-    'Synthetic slate roofing in Charlotte NC by Best Roofing Now. DaVinci Roofscapes, Brava Roof Tile, and CeDUR composite slate installation. Lightweight, impact-resistant, and affordable alternative to natural slate. Veteran-owned, BBB A+ rated.',
-  keywords: [
-    'synthetic slate roofing charlotte nc',
-    'faux slate roof charlotte',
-    'composite slate roofing charlotte nc',
-    'davinci roofing charlotte',
-    'brava roof tile charlotte',
-    'synthetic slate cost charlotte nc',
-    'lightweight slate roof charlotte',
-  ],
+    'Synthetic slate roofing in Charlotte NC by Best Roofing Now. DaVinci Roofscapes, Brava Roof Tile, and CeDUR composite slate installation. Lightweight, impact-resistant, and affordable alternative to natural slate. Veteran-owned, BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/synthetic-slate-roofing-charlotte-nc`,
   },

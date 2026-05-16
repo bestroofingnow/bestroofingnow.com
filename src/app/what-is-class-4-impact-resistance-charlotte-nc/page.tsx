@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Class 4 Impact Resistance and Is It Worth It for My Charlotte NC Roof?',
   description:
     "Class 4 = highest UL 2218 hail rating (2-inch steel ball, 20 ft drop, no cracking). Charlotte NC 10-30% insurance discount. Cost premium $300-$1,200. Payback 1-6 years.",
-  keywords: [
-    'what is Class 4 impact resistance Charlotte NC',
-    'Class 4 shingles Charlotte',
-    'UL 2218 hail rating',
-    'Class 4 insurance discount NC',
-    'GAF ARMORShield',
-    'CertainTeed Landmark IR',
-    'OC Duration STORM',
-    'hail resistant shingles Charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Class 4 Impact Resistance and Is It Worth It for My Charlotte NC Roof?',

@@ -41,19 +41,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roof Replacement The Point Mooresville NC',
   description:
-    'Roof replacement at The Point Trump National in Mooresville NC. Synthetic slate, natural slate, premium shingles, copper accents. ARC compliant. Free estimates.',
-  keywords: [
-    'roof replacement the point mooresville',
-    'the point trump national roof replacement',
-    'trump national charlotte roof replacement',
-    'roof replacement the point lake norman',
-    'the point mooresville roof replacement contractor',
-    'luxury estate roof replacement mooresville nc',
-    'synthetic slate roof replacement the point',
-    'davinci bellaforte the point mooresville',
-    'arc approved roof replacement the point',
-    'brawley school rd roof replacement mooresville',
-  ],
+    'Roof replacement at The Point Trump National in Mooresville NC. Synthetic slate, natural slate, premium shingles, copper accents. ARC compliant. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-the-point-mooresville-nc`,
   },

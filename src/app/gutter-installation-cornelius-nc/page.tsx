@@ -32,21 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Cornelius NC',
   description:
-    'Professional gutter installation in Cornelius NC. Seamless aluminum gutters, gutter guards, and gutter repair for Lake Norman homes. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'gutter installation Cornelius NC',
-    'gutters Cornelius NC',
-    'seamless gutters Cornelius',
-    'gutter company Cornelius NC',
-    'gutter repair Cornelius NC',
-    'gutter guards Cornelius',
-    'aluminum gutters Cornelius NC',
-    'gutter replacement Cornelius',
-    'Lake Norman gutter installation',
-    'Cornelius gutter contractor',
-    'downspout installation Cornelius NC',
-    'gutter cleaning Cornelius NC',
-  ],
+    'Professional gutter installation in Cornelius NC. Seamless aluminum gutters, gutter guards, and gutter repair for Lake Norman homes. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-cornelius-nc`,
   },

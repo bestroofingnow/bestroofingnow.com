@@ -39,18 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Office Building Roofing Charlotte',
   description:
-    'Expert office building roofing contractors in Charlotte NC. Specializing in high-rise towers, corporate campuses, Class A office, and multi-tenant buildings in Uptown, SouthPark & Ballantyne. Free estimates.',
-  keywords: [
-    'office building roofing charlotte nc',
-    'corporate campus roofing charlotte',
-    'high rise roof repair charlotte nc',
-    'commercial office roofing charlotte',
-    'class a office building roofing charlotte nc',
-    'office park roofing charlotte',
-    'uptown charlotte roofing contractor',
-    'ballantyne office roofing',
-    'southpark office building roofing charlotte',
-  ],
+    'Expert office building roofing contractors in Charlotte NC. Specializing in high-rise towers, corporate campuses, Class A office, and multi-tenant buildings in Uptown, SouthPark & Ballantyne. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/office-building-roofing-charlotte-nc`,
   },

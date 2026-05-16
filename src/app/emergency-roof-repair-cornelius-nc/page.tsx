@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Cornelius NC',
   description:
-    '24/7 emergency roof repair in Cornelius NC. Fast response for storm damage and active leaks. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
-  keywords: [
-    'emergency roof repair Cornelius NC',
-    '24 hour roofer Cornelius',
-    'emergency roofer Cornelius NC',
-    'storm damage repair Cornelius',
-    'roof leak emergency Cornelius',
-    'urgent roof repair Cornelius NC',
-    '24/7 roofing Cornelius',
-    'emergency tarping Cornelius',
-    'tree fell on roof Cornelius',
-    'hail damage repair Cornelius NC',
-    'after hours roofer Cornelius',
-    'emergency roofing near me Cornelius',
-  ],
+    '24/7 emergency roof repair in Cornelius NC. Fast response for storm damage and active leaks. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-cornelius-nc`,
   },

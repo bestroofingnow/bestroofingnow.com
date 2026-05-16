@@ -35,17 +35,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Huntersville NC | 5-Star',
   description:
-    'Looking for top-rated roofers in Huntersville NC? Best Roofing Now provides expert roofing services to Huntersville and the Lake Norman area. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
-  keywords: [
-    'roofing huntersville nc',
-    'roofers huntersville nc',
-    'roofing contractor huntersville',
-    'roofing company huntersville nc',
-    'huntersville roofing',
-    'local roofers huntersville nc',
-    'huntersville nc roofing company',
-    'best roofers huntersville nc',
-  ],
+    'Looking for top-rated roofers in Huntersville NC? Best Roofing Now provides expert roofing services to Huntersville and the Lake Norman area. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-huntersville-nc`,
   },

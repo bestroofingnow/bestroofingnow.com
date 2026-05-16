@@ -37,19 +37,6 @@ export const metadata: Metadata = {
   title: 'Gutter Guards Charlotte NC | Micro-Mesh, Reverse Curve',
   description:
     'Gutter guard installation in Charlotte NC — stainless micro-mesh (our default), reverse-curve, screen, foam, brush. Engineered for Charlotte oak/pine/sweetgum canopy.',
-  keywords: [
-    'gutter guards charlotte nc',
-    'gutter protection charlotte',
-    'leaf guard charlotte nc',
-    'gutter screens charlotte',
-    'micro mesh gutter guards charlotte',
-    'stainless micro mesh charlotte',
-    'reverse curve gutter guards',
-    'leaffilter charlotte nc',
-    'guttergloveve charlotte',
-    'leafguard charlotte',
-    'gutter cover installation',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-guards`,
   },

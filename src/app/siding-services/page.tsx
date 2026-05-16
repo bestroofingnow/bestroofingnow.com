@@ -35,17 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Siding Services Charlotte NC | Installation, Repair & Replacement',
   description:
-    'Professional siding services in Charlotte NC. James Hardie fiber cement, vinyl siding installation and repair. Transform your home\'s exterior. Free estimates!',
-  keywords: [
-    'siding services Charlotte NC',
-    'siding installation Charlotte',
-    'siding repair Charlotte NC',
-    'James Hardie siding Charlotte',
-    'vinyl siding Charlotte',
-    'fiber cement siding Charlotte NC',
-    'siding contractor near me',
-    'siding company Charlotte',
-  ],
+    'Professional siding services in Charlotte NC. James Hardie fiber cement, vinyl siding installation and repair. Transform your home\'s exterior. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/siding-services`,
   },

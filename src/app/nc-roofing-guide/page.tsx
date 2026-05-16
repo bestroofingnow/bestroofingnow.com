@@ -37,22 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Complete NC Roofing Guide | Building Codes, Permits & Requirements | Charlotte & Lake Norman',
-  description: 'Comprehensive guide to roofing in North Carolina. Learn about NC building codes, permit requirements, HOA rules, insurance claims, and best materials for Charlotte and Lake Norman areas. Expert local knowledge.',
-  keywords: [
-    'NC roofing codes',
-    'North Carolina building codes roofing',
-    'Charlotte roofing permits',
-    'Mecklenburg County roofing requirements',
-    'Lake Norman roofing',
-    'NC roofing regulations',
-    'roofing permit Charlotte NC',
-    'HOA roofing requirements NC',
-    'NC roof replacement guide',
-    'Charlotte roofing guide',
-    'Huntersville roofing permits',
-    'Cornelius roofing HOA',
-    'Davidson roofing requirements',
-  ],
+  description: 'Comprehensive guide to roofing in North Carolina. Learn about NC building codes, permit requirements, HOA rules, insurance claims, and best materials for Charlotte and Lake Norman areas. Expert local knowledge.',
   openGraph: {
     title: 'Complete NC Roofing Guide | Building Codes, Permits & Requirements',
     description: 'Everything you need to know about roofing in North Carolina - codes, permits, HOA rules, and best practices for Charlotte and Lake Norman.',

@@ -19,18 +19,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing Service Areas | Charlotte NC & Lake Norman',
   description:
-    'Best Roofing Now serves 45+ cities across Charlotte metro — Mecklenburg, Cabarrus, Union, Gaston, Iredell, Lincoln, York SC, and more. Free estimates, no travel fees.',
-  keywords: [
-    'roofing service areas charlotte nc',
-    'charlotte metro roofing',
-    'lake norman roofing contractor',
-    'union county roofer',
-    'cabarrus county roofing',
-    'iredell county roofer',
-    'mecklenburg county roofing contractor',
-    'york county sc roofing',
-    'roofing companies near me charlotte',
-  ],
+    'Best Roofing Now serves 45+ cities across Charlotte metro — Mecklenburg, Cabarrus, Union, Gaston, Iredell, Lincoln, York SC, and more. Free estimates, no travel fees.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/locations`,
   },

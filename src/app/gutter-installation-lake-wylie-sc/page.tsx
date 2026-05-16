@@ -31,23 +31,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Lake Wylie SC | Seamless Gutters & Guards',
   description:
-    'Professional gutter installation in Lake Wylie SC. Custom seamless gutters, gutter guards, and repairs for waterfront homes. Heavy rainfall management & erosion prevention. Free estimates!',
-  keywords: [
-    'gutter installation lake wylie sc',
-    'seamless gutters lake wylie',
-    'gutter guards lake wylie sc',
-    'gutter company lake wylie sc',
-    'gutter repair lake wylie sc',
-    'aluminum gutters lake wylie',
-    'gutter replacement lake wylie sc',
-    'gutter contractor lake wylie',
-    'waterfront gutters lake wylie',
-    'tega cay gutter installation',
-    'york county gutter company',
-    'lake wylie seamless gutters',
-    'gutter guards lake wylie',
-    'lake wylie gutter repair',
-  ],
+    'Professional gutter installation in Lake Wylie SC. Custom seamless gutters, gutter guards, and repairs for waterfront homes. Heavy rainfall management & erosion prevention. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-lake-wylie-sc`,
   },

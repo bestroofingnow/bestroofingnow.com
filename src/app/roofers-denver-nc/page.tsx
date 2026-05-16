@@ -34,23 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Denver NC | 5-Star',
   description:
-    'Looking for roofers in Denver NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman western shore. BBB A+. Free estimates.',
-  keywords: [
-    'roofers denver nc',
-    'denver nc roofers',
-    'local roofers denver nc',
-    'roofers in denver nc',
-    'best roofers denver nc',
-    'top roofers denver',
-    'professional roofers denver nc',
-    'licensed roofers denver nc',
-    'experienced roofers denver nc',
-    'lake norman western shore roofers',
-    'roofers near trilogy lake norman',
-    'lincoln county roofers',
-    'roofing company denver nc',
-    'denver nc roofing contractors',
-  ],
+    'Looking for roofers in Denver NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman western shore. BBB A+. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-denver-nc`,
   },

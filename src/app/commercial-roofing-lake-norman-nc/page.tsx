@@ -32,21 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Lake Norman NC | Flat Roof & TPO Specialists',
   description:
-    'Commercial roofing experts serving the entire Lake Norman NC area. TPO, EPDM, flat roofs, metal commercial roofing for Cornelius, Davidson, Mooresville, Huntersville & Denver. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'commercial roofing lake norman nc',
-    'commercial roof repair lake norman',
-    'flat roof lake norman',
-    'TPO roofing lake norman nc',
-    'EPDM roofing lake norman',
-    'commercial roofer lake norman',
-    'flat roof repair lake norman nc',
-    'commercial roof inspection lake norman',
-    'metal commercial roofing lake norman',
-    'lake norman commercial roofing contractor',
-    'commercial roofing cornelius nc',
-    'commercial roofing davidson nc',
-  ],
+    'Commercial roofing experts serving the entire Lake Norman NC area. TPO, EPDM, flat roofs, metal commercial roofing for Cornelius, Davidson, Mooresville, Huntersville & Denver. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-lake-norman-nc`,
   },

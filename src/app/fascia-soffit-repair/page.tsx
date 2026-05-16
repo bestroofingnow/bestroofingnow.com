@@ -37,19 +37,6 @@ export const metadata: Metadata = {
   title: 'Fascia & Soffit Repair Charlotte NC',
   description:
     'Fascia and soffit repair in Charlotte NC — wood, PVC (Azek/Kleer), and aluminum coil wrap. Ventilated soffit for code-compliant attic airflow. Rot remediation, pest damage.',
-  keywords: [
-    'fascia repair charlotte nc',
-    'soffit repair charlotte nc',
-    'fascia replacement charlotte',
-    'soffit replacement charlotte',
-    'rotted fascia repair',
-    'aluminum soffit installation',
-    'wood fascia repair charlotte',
-    'azek fascia charlotte',
-    'kleer pvc fascia',
-    'ventilated soffit charlotte',
-    'attic ventilation fascia',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/fascia-soffit-repair`,
   },

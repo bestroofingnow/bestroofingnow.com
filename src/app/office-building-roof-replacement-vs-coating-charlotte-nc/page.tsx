@@ -38,17 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Office Roof: Replacement vs Coating | Charlotte NC',
   description:
-    'Is your Charlotte office building roof replacement a waste of money? Compare commercial roof coating vs full replacement. Cost analysis, ROI, and when each option makes sense.',
-  keywords: [
-    'office building roof replacement Charlotte NC',
-    'commercial roof coating Charlotte',
-    'office roof repair vs replace Charlotte',
-    'commercial roofing cost Charlotte NC',
-    'office building roofing Charlotte',
-    'TPO roof coating Charlotte',
-    'commercial flat roof Charlotte NC',
-    'office building roof restoration Charlotte',
-  ],
+    'Is your Charlotte office building roof replacement a waste of money? Compare commercial roof coating vs full replacement. Cost analysis, ROI, and when each option makes sense.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/office-building-roof-replacement-vs-coating-charlotte-nc`,
   },

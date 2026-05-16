@@ -38,24 +38,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing The Peninsula Cornelius NC',
   description:
-    'Expert roofing for The Peninsula in Cornelius NC. Slate, copper, and cedar shake for luxury lakefront estates. BBB A+ rated. Free estimates.',
-  keywords: [
-    'the peninsula roofing cornelius nc',
-    'roofing the peninsula lake norman',
-    'luxury roofing cornelius nc',
-    'peninsula cornelius roofing contractor',
-    'gated community roofing lake norman',
-    'lakefront roofing the peninsula',
-    'slate roofing cornelius nc',
-    'copper roofing the peninsula',
-    'cedar shake roofing cornelius',
-    'designer shingles the peninsula',
-    'hoa roofing cornelius nc',
-    'waterfront roofing lake norman',
-    'standing seam metal roofing cornelius',
-    'luxury estate roofing cornelius',
-    'the peninsula hoa roofing',
-  ],
+    'Expert roofing for The Peninsula in Cornelius NC. Slate, copper, and cedar shake for luxury lakefront estates. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-the-peninsula-cornelius-nc`,
   },

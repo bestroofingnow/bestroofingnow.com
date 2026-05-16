@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Sherrills Ford NC',
   description:
-    'Looking for metal roofing in Sherrills Ford NC? Best Roofing Now installs standing seam and metal panel roofs for Lake Norman homes. 50+ year lifespan, energy efficient, wind resistant. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'metal roofing sherrills ford nc',
-    'metal roof sherrills ford',
-    'standing seam metal roof sherrills ford',
-    'metal roof installation sherrills ford nc',
-    'lake norman metal roofing',
-    'catawba county metal roof',
-    'metal roof cost sherrills ford',
-    'metal roofing contractor sherrills ford',
-    'steel roofing sherrills ford nc',
-    'metal roof replacement sherrills ford',
-  ],
+    'Looking for metal roofing in Sherrills Ford NC? Best Roofing Now installs standing seam and metal panel roofs for Lake Norman homes. 50+ year lifespan, energy efficient, wind resistant. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-sherrills-ford-nc`,
   },

@@ -39,19 +39,7 @@ import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 export const metadata: Metadata = {
   title: 'Lake Norman Storm Damage Roof Guide',
   description:
-    'Lake Norman storm damage roof guide. Hail, wind damage, insurance claims, and emergency repairs for LKN homeowners. BBB A+ rated. Call (704) 605-6047.',
-  keywords: [
-    'lake norman storm damage',
-    'hail damage lake norman',
-    'storm damage roof lake norman nc',
-    'wind damage roof lake norman',
-    'lake norman roof insurance claim',
-    'emergency roof repair lake norman',
-    'storm damage roofer mooresville nc',
-    'hail damage cornelius nc',
-    'roof storm damage davidson nc',
-    'lake norman emergency roofer',
-  ],
+    'Lake Norman storm damage roof guide. Hail, wind damage, insurance claims, and emergency repairs for LKN homeowners. BBB A+ rated. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/lake-norman-storm-damage-guide`,
   },

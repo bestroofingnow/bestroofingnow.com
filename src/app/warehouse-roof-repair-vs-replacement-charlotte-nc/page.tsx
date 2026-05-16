@@ -38,17 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Warehouse Roof: Repair vs Replace Charlotte NC',
   description:
-    'Should you repair or replace your warehouse roof in Charlotte? Cost analysis, decision criteria, and when each option makes sense for industrial buildings.',
-  keywords: [
-    'warehouse roof repair Charlotte NC',
-    'warehouse roof replacement Charlotte',
-    'industrial roofing Charlotte NC',
-    'warehouse roof cost Charlotte',
-    'commercial flat roof Charlotte',
-    'warehouse roofing contractor Charlotte',
-    'industrial roof repair Charlotte NC',
-    'warehouse roof inspection Charlotte',
-  ],
+    'Should you repair or replace your warehouse roof in Charlotte? Cost analysis, decision criteria, and when each option makes sense for industrial buildings.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/warehouse-roof-repair-vs-replacement-charlotte-nc`,
   },

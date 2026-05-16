@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { SEOImage } from '@/components/ui/SEOImage';
 import { Star, Quote, Phone, ArrowRight, ExternalLink } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, ReviewsSchema, AISearchOptimizationBundle } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, ReviewsSchema, LocalBusinessSchema, AISearchOptimizationBundle, WebPageSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { LazyReviewWidget } from '@/components/ui/LazyReviewWidget';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -12,13 +12,6 @@ export const metadata: Metadata = {
   title: 'Customer Reviews | 5-Star Rated',
   description:
     'Read 62+ five-star reviews from real Charlotte homeowners about Best Roofing Now. BBB A+ rated, veteran-owned roofing company. See why we are Charlotte\'s most trusted roofers.',
-  keywords: [
-    'Best Roofing Now reviews',
-    'Charlotte roofer reviews',
-    'roofing company reviews Charlotte NC',
-    '5 star roofer Charlotte',
-    'trusted roofing contractor reviews',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/reviews`,
   },
@@ -133,13 +126,35 @@ const stats = [
 export default function ReviewsPage() {
   return (
     <>
+      {/* Reviews page renders ~12 visible 5-star reviews — opt-in to aggregateRating per §9 of the gold-standard plan */}
+      <LocalBusinessSchema includeRating={true} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: SITE_CONFIG.url },
           { name: 'Reviews', url: `${SITE_CONFIG.url}/reviews` },
         ]}
       />
+      {/* WebPageSchema with dateModified — E-E-A-T freshness signal */}
+      <WebPageSchema
+        name="Customer Reviews | Best Roofing Now Charlotte NC"
+        description="Read 62+ five-star reviews from real Charlotte homeowners about Best Roofing Now. BBB A+ rated, veteran-owned roofing company."
+        url={`${SITE_CONFIG.url}/reviews`}
+        datePublished="2024-01-01"
+        dateModified={new Date().toISOString().split('T')[0]}
+        primaryImage={IMAGES.houses.house1}
+        breadcrumb={[
+          { name: 'Home', url: SITE_CONFIG.url },
+          { name: 'Reviews', url: `${SITE_CONFIG.url}/reviews` },
+        ]}
+      />
       <ReviewsSchema />
+      {/* AEO: voice-search blocks — review queries are prime AEO targets */}
+      <SpeakableContentBlocks
+        includeCompany={true}
+        includeServices={true}
+        includeContact={true}
+        city="Charlotte"
+      />
       <AISearchOptimizationBundle
         pageUrl={`${SITE_CONFIG.url}/reviews`}
         pageName="Best Roofing Now Reviews"

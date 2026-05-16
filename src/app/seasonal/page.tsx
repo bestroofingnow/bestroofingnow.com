@@ -17,18 +17,6 @@ export const metadata: Metadata = {
   title: 'Seasonal Roofing Services | Charlotte NC Year-Round',
   description:
     'Spring hail/storm inspections, summer re-roof and heat prep, fall gutter/winter prep, winter ice and emergency service for Charlotte NC and Lake Norman. Free estimates.',
-  keywords: [
-    'seasonal roofing charlotte nc',
-    'spring roof inspection charlotte',
-    'summer roof replacement nc',
-    'fall roof maintenance lake norman',
-    'winter roof repair charlotte',
-    'hail season roofing nc',
-    'hurricane season roof prep',
-    'ice storm roof damage charlotte',
-    'piedmont nc roof weather',
-    'pre-winter roof inspection',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/seasonal`,
   },

@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'Should I Replace My Roof in Sections or All at Once in Charlotte NC?',
   description:
     "Replace Charlotte NC roof all at once in almost every case: color match impossible, NC 25% rule triggers full replacement, warranty issues with section patches, 30-50% cost savings.",
-  keywords: [
-    'replace roof in sections Charlotte NC',
-    'partial roof replacement',
-    'full roof vs section replacement',
-    'NC 25 percent rule roof',
-    'roof slope replacement',
-    'phased roof replacement',
-    'one slope roof replacement',
-    'half roof replacement',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Should I Replace My Roof in Sections or All at Once in Charlotte NC?',

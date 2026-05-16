@@ -38,19 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Birkdale Huntersville NC',
   description:
-    'Top-rated Birkdale roofer in Huntersville NC 28078. Roof repair, replacement & metal roofing for Birkdale Village & Arnold Palmer golf homes. Free estimates.',
-  keywords: [
-    'birkdale roofing',
-    'birkdale roofer',
-    'roof repair birkdale huntersville',
-    'roof replacement birkdale',
-    'birkdale village roofing',
-    'birkdale golf club roofing',
-    'roofing huntersville nc 28078',
-    'birkdale hoa roofing',
-    'metal roofing birkdale huntersville',
-    'storm damage roof repair birkdale',
-  ],
+    'Top-rated Birkdale roofer in Huntersville NC 28078. Roof repair, replacement & metal roofing for Birkdale Village & Arnold Palmer golf homes. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-birkdale-huntersville-nc`,
   },

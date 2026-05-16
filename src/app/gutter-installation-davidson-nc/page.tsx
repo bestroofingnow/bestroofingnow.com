@@ -39,19 +39,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Davidson NC',
   description:
-    'Seamless gutter installation in Davidson NC. K-style aluminum, half-round copper, 5"/6"/7" sizes, micro-mesh gutter guards for Lake Norman tree canopy. BBB A+ rated.',
-  keywords: [
-    'gutter installation davidson nc',
-    'seamless gutters davidson nc',
-    'gutter replacement davidson',
-    'gutter contractors davidson nc',
-    'new gutters davidson nc',
-    'gutter guards davidson',
-    'copper gutters davidson',
-    '6 inch gutters davidson nc',
-    'k style gutters davidson nc',
-    'lake norman gutters',
-  ],
+    'Seamless gutter installation in Davidson NC. K-style aluminum, half-round copper, 5"/6"/7" sizes, micro-mesh gutter guards for Lake Norman tree canopy. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-davidson-nc`,
   },

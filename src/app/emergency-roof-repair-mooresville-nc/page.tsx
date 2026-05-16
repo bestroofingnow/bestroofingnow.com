@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Mooresville NC',
   description:
-    '24/7 emergency roof repair in Mooresville NC. Fast response for storm damage, leaks, and fallen trees. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
-  keywords: [
-    'emergency roof repair Mooresville NC',
-    '24 hour roofer Mooresville',
-    'emergency roofer Mooresville NC',
-    'storm damage repair Mooresville',
-    'roof leak emergency Mooresville',
-    'urgent roof repair Mooresville NC',
-    '24/7 roofing Mooresville',
-    'emergency tarping Mooresville',
-    'tree fell on roof Mooresville',
-    'hail damage repair Mooresville NC',
-    'after hours roofer Mooresville',
-    'emergency roofing near me Mooresville',
-  ],
+    '24/7 emergency roof repair in Mooresville NC. Fast response for storm damage, leaks, and fallen trees. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-mooresville-nc`,
   },

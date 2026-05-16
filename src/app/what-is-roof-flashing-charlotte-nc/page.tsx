@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Roof Flashing and Why Does It Matter for My Charlotte NC Roof?',
   description:
     "Roof flashing = metal sheeting at junctions and penetrations. 22% of Charlotte leaks. 7 types: step, counter, apron, valley, drip edge, pipe boot, skylight. Aluminum 30-50 yr.",
-  keywords: [
-    'what is roof flashing Charlotte NC',
-    'step flashing vs counterflashing',
-    'chimney flashing Charlotte',
-    'roof flashing repair cost',
-    'aluminum vs copper flashing',
-    'flashing failure signs',
-    'NC roof flashing types',
-    'pipe boot flashing',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Flashing and Why Does It Matter for My Charlotte NC Roof?',

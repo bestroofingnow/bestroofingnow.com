@@ -32,21 +32,12 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
+import { CitationFacts } from '@/components/sections/CitationFacts';
 
 export const metadata: Metadata = {
   title: 'Commercial Roofing Contractor Charlotte NC | TPO, EPDM, Flat Roofs',
   description:
-    'Professional commercial roofing contractor in Charlotte NC. TPO, EPDM, PVC, metal, and flat roof systems for businesses. Minimal disruption, 24/7 emergency service. Free estimates!',
-  keywords: [
-    'commercial roofing contractor Charlotte NC',
-    'commercial roofing Charlotte',
-    'flat roof contractor Charlotte NC',
-    'TPO roofing Charlotte',
-    'EPDM roofing Charlotte NC',
-    'commercial roof repair Charlotte',
-    'industrial roofing Charlotte',
-    'business roofing contractor Charlotte',
-  ],
+    'Professional commercial roofing contractor in Charlotte NC. TPO, EPDM, PVC, metal, and flat roof systems for businesses. Minimal disruption, 24/7 emergency service. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-services`,
   },
@@ -480,6 +471,8 @@ export default function CommercialRoofingServicesPage() {
         citySlug="charlotte-nc"
         service="Commercial Roofing"
       />
+
+      <CitationFacts service="Commercial Roofing" city="Charlotte" state="NC" />
 
       {/* Final CTA */}
       <section className="bg-accent text-white py-16">

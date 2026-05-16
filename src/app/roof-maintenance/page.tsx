@@ -37,18 +37,6 @@ export const metadata: Metadata = {
   title: 'Roof Maintenance Program Charlotte NC',
   description:
     'Preventive roof maintenance in Charlotte NC — 2x/year inspections, gutter clean, flashing checks, sealant refresh, warranty-compliant documentation. Residential and commercial tiers.',
-  keywords: [
-    'roof maintenance charlotte nc',
-    'roof maintenance program charlotte',
-    'preventive roof maintenance charlotte',
-    'commercial roof maintenance charlotte nc',
-    'residential roof maintenance charlotte',
-    'roof inspection program charlotte',
-    'annual roof maintenance charlotte',
-    'ndl warranty maintenance',
-    'manufacturer warranty maintenance',
-    '2x per year roof inspection',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance`,
   },

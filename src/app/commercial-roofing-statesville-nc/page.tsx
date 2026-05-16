@@ -30,19 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Statesville NC',
   description:
-    'Need commercial roofing in Statesville NC? Best Roofing Now provides TPO, EPDM, flat roof, and metal roofing for Iredell County businesses. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'commercial roofing statesville nc',
-    'commercial roofer statesville',
-    'flat roof repair statesville nc',
-    'tpo roofing statesville',
-    'epdm roofing statesville nc',
-    'iredell county commercial roofing',
-    'commercial roof repair statesville',
-    'business roofing statesville nc',
-    'commercial roofing contractor statesville',
-    'industrial roofing statesville nc',
-  ],
+    'Need commercial roofing in Statesville NC? Best Roofing Now provides TPO, EPDM, flat roof, and metal roofing for Iredell County businesses. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-statesville-nc`,
   },

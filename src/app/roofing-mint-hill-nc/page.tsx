@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Mint Hill NC | 5-Star',
   description:
-    'Need a roofer in Mint Hill NC? Best Roofing Now serves Mint Hill from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair, replacement, and installation for larger properties in East Charlotte.',
-  keywords: [
-    'roofing mint hill nc',
-    'roof repair mint hill nc',
-    'roofers mint hill nc',
-    'roofing company mint hill nc',
-    'roof replacement mint hill nc',
-    'mint hill roofing contractor',
-    'east charlotte roofers',
-    'mint hill nc roofer',
-    'roofing contractors near me mint hill',
-    'best roofer mint hill nc',
-  ],
+    'Need a roofer in Mint Hill NC? Best Roofing Now serves Mint Hill from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair, replacement, and installation for larger properties in East Charlotte.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-mint-hill-nc`,
   },

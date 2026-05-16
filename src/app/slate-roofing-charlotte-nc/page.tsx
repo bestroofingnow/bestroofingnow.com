@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Slate Roofing Charlotte NC | Luxury Slate Roof Installation',
   description:
-    'Expert slate roof installation and repair in Charlotte NC. Natural slate roofing for luxury homes and historic properties. 100+ year lifespan. BBB A+ rated. Free estimates.',
-  keywords: [
-    'slate roofing charlotte nc',
-    'slate roof repair charlotte',
-    'slate roof installation charlotte nc',
-    'natural slate roofing charlotte',
-    'slate roof contractors charlotte',
-    'luxury roofing charlotte nc',
-    'historic home roofing charlotte',
-    'slate shingles charlotte nc',
-    'slate roof replacement charlotte',
-    'premium roofing charlotte nc',
-    'slate tile roof charlotte',
-    'estate roofing charlotte',
-  ],
+    'Expert slate roof installation and repair in Charlotte NC. Natural slate roofing for luxury homes and historic properties. 100+ year lifespan. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/slate-roofing-charlotte-nc`,
   },

@@ -39,19 +39,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Cost Mooresville NC',
   description:
-    'Roofing cost Mooresville NC for 2026: shingle roofs $9,875–$15,000, metal $30K–$55K, slate $50K+. Permits, insurance, financing. Call (704) 605-6047.',
-  keywords: [
-    'roofing cost mooresville nc',
-    'roof replacement cost mooresville',
-    'roof repair cost mooresville nc',
-    'how much does a roof cost in mooresville',
-    'mooresville nc roofing prices 2026',
-    'metal roof cost mooresville nc',
-    'slate roof cost mooresville',
-    'roof estimate mooresville nc',
-    'cheapest roofer mooresville nc',
-    'the point mooresville roofing cost',
-  ],
+    'Roofing cost Mooresville NC for 2026: shingle roofs $9,875–$15,000, metal $30K–$55K, slate $50K+. Permits, insurance, financing. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-cost-mooresville-nc`,
   },

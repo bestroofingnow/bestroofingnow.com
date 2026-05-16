@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Matthews NC | Top Rated',
   description:
-    'Looking for a trusted roofing company in Matthews NC? Best Roofing Now serves Matthews from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in South Charlotte.',
-  keywords: [
-    'roofing matthews nc',
-    'roofing company matthews nc',
-    'roofers matthews nc',
-    'roof repair matthews nc',
-    'roof replacement matthews nc',
-    'matthews roofing contractor',
-    'south charlotte roofing company',
-    'matthews nc roofer',
-    'roofing contractors near me matthews',
-    'best roofer matthews nc',
-  ],
+    'Looking for a trusted roofing company in Matthews NC? Best Roofing Now serves Matthews from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in South Charlotte.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-matthews-nc`,
   },

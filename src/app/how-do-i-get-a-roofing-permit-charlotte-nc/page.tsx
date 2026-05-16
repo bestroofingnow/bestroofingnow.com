@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Get a Roofing Permit in Charlotte NC?',
   description:
     "Charlotte NC roofing permits issued by City of Charlotte or Mecklenburg County. Required for all reroofs. Cost $125-$1,500+. Best Roofing Now handles permitting at $0 homeowner labor.",
-  keywords: [
-    'how to get roofing permit Charlotte NC',
-    'Charlotte NC roof permit',
-    'Mecklenburg County roof permit',
-    'roof permit cost Charlotte',
-    'NC roofing permit requirements',
-    'roof permit inspection',
-    'unpermitted roof penalty',
-    'commercial roof permit Charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Get a Roofing Permit in Charlotte NC?',

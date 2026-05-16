@@ -21,17 +21,7 @@ const BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA
 export const metadata: Metadata = {
   title: 'Roofing Blog | Charlotte & Lake Norman Guides',
   description:
-    'Expert roofing tips from Best Roofing Now — storm prep, insurance claims, shingle vs metal, inspection checklists, and cost guides for Charlotte and Lake Norman.',
-  keywords: [
-    'charlotte roofing blog',
-    'lake norman roofing tips',
-    'roof insurance claim guide',
-    'storm damage roof charlotte',
-    'roof maintenance tips',
-    'roof replacement cost charlotte',
-    'shingle vs metal roof nc',
-    'diy roof inspection',
-  ],
+    'Expert roofing tips from Best Roofing Now — storm prep, insurance claims, shingle vs metal, inspection checklists, and cost guides for Charlotte and Lake Norman.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/blog`,
   },

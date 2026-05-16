@@ -35,19 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Fort Mill SC',
   description:
-    'Fast, reliable roof repair in Fort Mill SC. Emergency repairs, storm damage, leak repair, and shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for free estimate.',
-  keywords: [
-    'roof repair fort mill sc',
-    'fort mill roof repair',
-    'roof leak repair fort mill',
-    'emergency roof repair fort mill sc',
-    'storm damage repair fort mill',
-    'shingle repair fort mill sc',
-    'roof repair near me fort mill',
-    'roofing repair fort mill south carolina',
-    'best roof repair fort mill',
-    'affordable roof repair fort mill sc',
-  ],
+    'Fast, reliable roof repair in Fort Mill SC. Emergency repairs, storm damage, leak repair, and shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for free estimate.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-fort-mill-sc`,
   },

@@ -32,19 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Huntersville NC',
   description:
-    'Need roof repair in Huntersville NC? Best Roofing Now offers fast, reliable roof repair services including leak repair, storm damage, and emergency repairs. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'roof repair Huntersville NC',
-    'roofers Huntersville',
-    'Huntersville roof repair',
-    'roof leak repair Huntersville',
-    'emergency roof repair Huntersville NC',
-    'roof repair near me Huntersville',
-    'storm damage repair Huntersville',
-    'shingle repair Huntersville NC',
-    'fix roof leak Huntersville',
-    'roofing company Huntersville NC',
-  ],
+    'Need roof repair in Huntersville NC? Best Roofing Now offers fast, reliable roof repair services including leak repair, storm damage, and emergency repairs. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-huntersville-nc`,
   },

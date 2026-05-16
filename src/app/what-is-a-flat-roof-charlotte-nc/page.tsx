@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Flat Roof Guide for Charlotte NC',
   description: "What is a flat roof? Learn best materials (TPO, EPDM), costs ($4-$10/sq ft), and lifespans for Charlotte NC commercial and modern homes.",
-  keywords: ['flat roof Charlotte NC', 'TPO roofing Charlotte', 'EPDM rubber roof', 'flat roof cost Charlotte', 'commercial flat roof', 'modified bitumen Charlotte', 'flat roof materials', 'low slope roofing'],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Flat Roof Guide for Charlotte NC',

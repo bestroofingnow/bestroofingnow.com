@@ -40,18 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Retail Center Roofing Charlotte',
   description:
-    'Expert retail and shopping center roofing contractors in Charlotte NC. Specializing in malls, strip centers, big box stores & grocery stores. Minimal business disruption. SouthPark, Northlake, Concord Mills. Free estimates.',
-  keywords: [
-    'shopping center roofing charlotte nc',
-    'retail roofing charlotte nc',
-    'strip mall roofing charlotte',
-    'mall roofing charlotte nc',
-    'big box store roofing charlotte',
-    'grocery store roofing charlotte nc',
-    'retail roof repair charlotte',
-    'shopping center roof replacement charlotte nc',
-    'commercial retail roofing charlotte',
-  ],
+    'Expert retail and shopping center roofing contractors in Charlotte NC. Specializing in malls, strip centers, big box stores & grocery stores. Minimal business disruption. SouthPark, Northlake, Concord Mills. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/retail-shopping-center-roofing-charlotte-nc`,
   },

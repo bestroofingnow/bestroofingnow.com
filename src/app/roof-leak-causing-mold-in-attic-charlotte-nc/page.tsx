@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'Roof Leak Causing Mold in Attic — Charlotte NC',
   description:
     "Roof leak + attic mold response in Charlotte NC: stop leak first ($250-1,800), document for insurance, hire mold remediation contractor ($2,500-$15K+), fix NC IRC §R806 ventilation.",
-  keywords: [
-    'roof leak mold attic Charlotte NC',
-    'attic mold from roof leak',
-    'mold remediation Charlotte cost',
-    'attic mold insurance claim',
-    'black mold attic Charlotte',
-    'roof leak mold health risk',
-    'how to remove attic mold',
-    'mold from leak NC',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'My Roof Leak Caused Mold in My Attic — What Do I Do?',

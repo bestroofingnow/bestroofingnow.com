@@ -35,23 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Gastonia NC',
   description:
-    'Expert commercial roofing in Gastonia NC. TPO, EPDM, flat roofs, metal roofing for warehouses, manufacturing plants & industrial facilities. I-85 corridor specialists. BBB A+ rated. Free estimates!',
-  keywords: [
-    'commercial roofing gastonia nc',
-    'commercial roofing contractors gastonia',
-    'commercial roof repair gastonia nc',
-    'flat roof contractors gastonia',
-    'tpo roofing gastonia nc',
-    'epdm roofing gastonia',
-    'industrial roofing gastonia nc',
-    'warehouse roofing gastonia',
-    'manufacturing plant roofing gastonia',
-    'commercial flat roof gastonia nc',
-    'metal roofing commercial gastonia',
-    'factory roofing gastonia nc',
-    'commercial roofer gastonia',
-    'business roofing gastonia nc',
-  ],
+    'Expert commercial roofing in Gastonia NC. TPO, EPDM, flat roofs, metal roofing for warehouses, manufacturing plants & industrial facilities. I-85 corridor specialists. BBB A+ rated. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-gastonia-nc`,
   },

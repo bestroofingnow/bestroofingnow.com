@@ -35,21 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered | Charlotte NC',
   description:
-    'How to maintain your roof, seasonal maintenance checklists, damage signs, and when to call a pro. 12 expert maintenance FAQs for Charlotte NC homeowners from Best Roofing Now.',
-  keywords: [
-    'roof maintenance tips',
-    'how to maintain roof',
-    'roof inspection',
-    'roof inspection Charlotte NC',
-    'roof maintenance checklist',
-    'roof damage signs',
-    'roof maintenance schedule',
-    'DIY roof maintenance',
-    'when to call roofer',
-    'roof leak repair Charlotte NC',
-    'roof cleaning Charlotte NC',
-    'gutter maintenance Charlotte NC',
-  ],
+    'How to maintain your roof, seasonal maintenance checklists, damage signs, and when to call a pro. 12 expert maintenance FAQs for Charlotte NC homeowners from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance-faq`,
   },

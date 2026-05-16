@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Mooresville NC',
   description:
-    'Need a new roof in Mooresville NC? Best Roofing Now is the Lake Norman area\'s trusted roof replacement company. Premium materials, expert installation, and financing available. Free estimates!',
-  keywords: [
-    'roof replacement Mooresville NC',
-    'new roof Mooresville',
-    'Mooresville roof replacement',
-    'roof replacement cost Mooresville NC',
-    'roofing company Mooresville NC',
-    'roofers Mooresville NC',
-    'Lake Norman roof replacement',
-    'Mooresville roofing contractor',
-    'new roof cost Mooresville',
-    'best roofer Mooresville NC',
-  ],
+    'Need a new roof in Mooresville NC? Best Roofing Now is the Lake Norman area\'s trusted roof replacement company. Premium materials, expert installation, and financing available. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-mooresville-nc`,
   },

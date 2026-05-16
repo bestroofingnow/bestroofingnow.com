@@ -30,21 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Denver NC',
   description:
-    'Premium metal roofing in Denver NC. Standing seam & corrugated for Lake Norman western shore homes. 140+ MPH wind rated. 40-70 year lifespan. Free estimates.',
-  keywords: [
-    'metal roofing denver nc',
-    'denver nc metal roof',
-    'standing seam metal roof denver nc',
-    'metal roof installation denver nc',
-    'metal roofing contractors denver nc',
-    'lake norman western shore metal roofing',
-    'lincoln county metal roofing',
-    'metal roof replacement denver nc',
-    'metal roofing cost denver nc',
-    'wind resistant roofing denver nc',
-    'metal roof trilogy lake norman',
-    'denver nc metal roofing company',
-  ],
+    'Premium metal roofing in Denver NC. Standing seam & corrugated for Lake Norman western shore homes. 140+ MPH wind rated. 40-70 year lifespan. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-denver-nc`,
   },

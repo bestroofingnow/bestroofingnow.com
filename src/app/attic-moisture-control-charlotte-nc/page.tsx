@@ -35,21 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Attic Moisture Control Charlotte NC | Prevent Mold',
   description:
-    'How to control attic moisture in Charlotte NC homes. Prevent mold growth, ice dams, and roof damage caused by humidity. Expert ventilation solutions from Best Roofing Now. Free inspections.',
-  keywords: [
-    'attic moisture control Charlotte NC',
-    'Charlotte attic humidity problems',
-    'prevent mold in attic Charlotte',
-    'attic ventilation Charlotte NC',
-    'ice dam prevention Charlotte',
-    'Charlotte humidity roof damage',
-    'attic condensation Charlotte homes',
-    'ridge vent installation Charlotte',
-    'soffit vent repair Charlotte NC',
-    'attic moisture inspection Charlotte',
-    'mold prevention Charlotte roofing',
-    'Charlotte subtropical climate roofing',
-  ],
+    'How to control attic moisture in Charlotte NC homes. Prevent mold growth, ice dams, and roof damage caused by humidity. Expert ventilation solutions from Best Roofing Now. Free inspections.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/attic-moisture-control-charlotte-nc`,
   },

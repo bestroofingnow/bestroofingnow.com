@@ -20,15 +20,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roofing Warranty Information',
-  description: 'Understand roofing warranties including manufacturer warranties, workmanship guarantees, and extended coverage options. Best Roofing Now Charlotte NC.',
-  keywords: [
-    'roofing warranty',
-    'roof warranty Charlotte',
-    'GAF warranty',
-    'CertainTeed warranty',
-    'roofing guarantee',
-    'workmanship warranty',
-  ],
+  description: 'Understand roofing warranties including manufacturer warranties, workmanship guarantees, and extended coverage options. Best Roofing Now Charlotte NC.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/warranty`,
   },

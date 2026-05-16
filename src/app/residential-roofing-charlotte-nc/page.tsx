@@ -39,22 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Residential Roofing Charlotte NC | Expert Home Roofers',
   description:
-    'Expert residential roofing services in Charlotte NC. Best Roofing Now specializes in home roof repair, replacement, and installation. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'residential roofing charlotte nc',
-    'home roofing charlotte nc',
-    'residential roofers charlotte nc',
-    'home roof replacement charlotte nc',
-    'residential roof replacement charlotte nc',
-    'home roofing contractors charlotte nc',
-    'best residential roofers charlotte nc',
-    'residential roofing lake norman nc',
-    'residential roofing lake wylie sc',
-    'residential roofing huntersville nc',
-    'residential roofing mooresville nc',
-    'residential roofing fort mill sc',
-    'affordable home roofing charlotte nc',
-  ],
+    'Expert residential roofing services in Charlotte NC. Best Roofing Now specializes in home roof repair, replacement, and installation. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/residential-roofing-charlotte-nc`,
   },

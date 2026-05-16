@@ -44,24 +44,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Affordable Roofing Charlotte NC | 2026',
   description:
-    'Affordable roofing Charlotte NC -- quality roofs from $3.50/sq ft with flexible financing. Budget-friendly options, no hidden fees. BBB A+, veteran-owned. Free estimates 2026!',
-  keywords: [
-    'affordable roofing charlotte nc',
-    'cheap roofing charlotte',
-    'budget roofing charlotte nc',
-    'low cost roof replacement charlotte',
-    'cheapest roof replacement Charlotte NC',
-    'affordable roof replacement Charlotte NC',
-    'low cost roof repair Charlotte NC',
-    'roofing financing Charlotte NC',
-    'roof payment plans Charlotte NC',
-    'best value roofing Charlotte NC',
-    'affordable roofing Lake Norman NC',
-    'affordable roofing Lake Wylie SC',
-    'cheap roofer Charlotte NC',
-    'affordable roof repair near me Charlotte NC',
-    'budget roofing Charlotte NC',
-  ],
+    'Affordable roofing Charlotte NC -- quality roofs from $3.50/sq ft with flexible financing. Budget-friendly options, no hidden fees. BBB A+, veteran-owned. Free estimates 2026!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`,
   },

@@ -43,25 +43,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Best Roofing Company Charlotte NC | #1 Rated | BBB A+',
   description:
-    `Best Roofing Now is the best roofing company in Charlotte NC. ${SITE_CONFIG.googleRating} Google rating, ${SITE_CONFIG.googleReviewCount}+ 5-star reviews, BBB A+ rated, veteran-owned, ${SITE_CONFIG.roofsInstalled}+ roofs completed. GAF, CertainTeed & Owens Corning certified. Free estimates.`,
-  keywords: [
-    'best roofing company charlotte nc',
-    'best roofer charlotte nc',
-    'top rated roofing company charlotte',
-    '#1 roofing company charlotte nc',
-    'highest rated roofing company charlotte',
-    'best roofing company charlotte 2026',
-    'bbb a+ roofing company charlotte nc',
-    'best roofer near me charlotte nc',
-    'who is the best roofer in charlotte',
-    '5 star roofing company charlotte nc',
-    'best roofing company lake norman nc',
-    'best roofers lake wylie sc',
-    'best roofing company fort mill sc',
-    'top rated roofers huntersville nc',
-    'best roofers mooresville nc',
-    'veteran-owned roofing company charlotte nc',
-  ],
+    `Best Roofing Now is the best roofing company in Charlotte NC. ${SITE_CONFIG.googleRating} Google rating, ${SITE_CONFIG.googleReviewCount}+ 5-star reviews, BBB A+ rated, veteran-owned, ${SITE_CONFIG.roofsInstalled}+ roofs completed. GAF, CertainTeed & Owens Corning certified. Free estimates.`,
   alternates: {
     canonical: `${SITE_CONFIG.url}/best-roofing-company-charlotte-nc`,
   },

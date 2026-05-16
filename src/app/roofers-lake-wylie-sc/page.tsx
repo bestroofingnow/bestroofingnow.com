@@ -35,19 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofers Lake Wylie SC | Top-Rated Roofing Contractors',
   description:
-    'Looking for trusted roofers in Lake Wylie SC? Best Roofing Now serves Lake Wylie, Tega Cay, and York County with BBB A+ rated service. Licensed, insured, veteran-owned. Free estimates. Call (704) 605-6047.',
-  keywords: [
-    'roofers lake wylie sc',
-    'roofing contractors lake wylie',
-    'best roofers lake wylie sc',
-    'lake wylie roofing company',
-    'roofers near me lake wylie',
-    'local roofers lake wylie sc',
-    'top rated roofers lake wylie',
-    'roofers tega cay sc',
-    'york county roofers',
-    'trusted roofers lake wylie sc',
-  ],
+    'Looking for trusted roofers in Lake Wylie SC? Best Roofing Now serves Lake Wylie, Tega Cay, and York County with BBB A+ rated service. Licensed, insured, veteran-owned. Free estimates. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-lake-wylie-sc`,
   },

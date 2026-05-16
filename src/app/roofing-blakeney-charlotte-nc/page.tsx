@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Blakeney Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Roofing contractor in Blakeney, South Charlotte NC. Roof replacement, repair, and storm damage restoration. BBB A+ rated. Free estimates.',
-  keywords: [
-    'roofing blakeney charlotte nc',
-    'roofer blakeney charlotte',
-    'blakeney roof replacement charlotte',
-    'blakeney roof repair charlotte nc',
-    'roofing contractor blakeney',
-    'blakeney shopping center roofing',
-    'south charlotte roofing blakeney',
-    'blakeney neighborhood roofer',
-    'best roofer blakeney charlotte nc',
-    'blakeney charlotte roofing services',
-  ],
+    'Roofing contractor in Blakeney, South Charlotte NC. Roof replacement, repair, and storm damage restoration. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-blakeney-charlotte-nc`,
   },

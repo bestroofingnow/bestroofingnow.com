@@ -32,19 +32,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Fort Mill SC',
   description:
-    'Professional roof replacement in Fort Mill SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning. Up to 50-year warranties. BBB A+ rated. Free estimates. Call (704) 605-6047.',
-  keywords: [
-    'roof replacement fort mill sc',
-    'new roof fort mill sc',
-    'fort mill roof replacement',
-    'roof installation fort mill',
-    'reroof fort mill sc',
-    'roof replacement cost fort mill',
-    'best roof replacement fort mill sc',
-    'fort mill new roof installation',
-    'roof replacement near me fort mill',
-    'affordable roof replacement fort mill',
-  ],
+    'Professional roof replacement in Fort Mill SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning. Up to 50-year warranties. BBB A+ rated. Free estimates. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-fort-mill-sc`,
   },

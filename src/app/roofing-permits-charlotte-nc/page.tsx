@@ -39,17 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Permits Charlotte NC',
   description:
-    'Do you need a permit to replace a roof in Charlotte NC? Yes. Learn about Mecklenburg County roofing permits, costs ($100-$300), timeline, inspections, and why your contractor should pull the permit.',
-  keywords: [
-    'roofing permits charlotte nc',
-    'do I need permit for roof replacement',
-    'mecklenburg county roofing permit',
-    'charlotte nc building permit roof',
-    'roofing permit cost charlotte',
-    'who pulls roofing permit',
-    'roof replacement permit nc',
-    'building permit for roofing',
-  ],
+    'Do you need a permit to replace a roof in Charlotte NC? Yes. Learn about Mecklenburg County roofing permits, costs ($100-$300), timeline, inspections, and why your contractor should pull the permit.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-permits-charlotte-nc`,
   },

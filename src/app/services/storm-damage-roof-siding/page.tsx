@@ -25,17 +25,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Storm Damage Roof and Siding Repair Charlotte NC | Insurance Claim Experts',
-  description: 'Storm damage to your roof and siding? We handle complete restoration and insurance claims in Charlotte NC. 24/7 emergency service. Free inspection. Call (704) 605-6047.',
-  keywords: [
-    'storm damage roof and siding Charlotte NC',
-    'hail damage roof siding repair Charlotte',
-    'wind damage roofing siding Charlotte',
-    'storm damage restoration Charlotte NC',
-    'insurance claim roofer siding Charlotte',
-    'roof siding storm repair near me',
-    'exterior storm damage Charlotte',
-    'hail damage contractor Charlotte NC',
-  ],
+  description: 'Storm damage to your roof and siding? We handle complete restoration and insurance claims in Charlotte NC. 24/7 emergency service. Free inspection. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/services/storm-damage-roof-siding`,
   },

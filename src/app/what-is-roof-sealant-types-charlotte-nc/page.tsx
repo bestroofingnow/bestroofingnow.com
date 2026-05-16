@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Roof Sealant Types Charlotte NC',
   description: "5 roof sealant types compared for Charlotte NC: silicone, polyurethane, butyl, asphalt, acrylic. Best uses, lifespan, and pricing.",
-  keywords: ['roof sealant charlotte nc', 'silicone roof sealant', 'polyurethane roof sealant charlotte', 'butyl rubber metal roof', 'roof caulk charlotte', 'roof coating charlotte nc', 'flat roof sealant charlotte', 'shingle leak sealant'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'Roof Sealant Types Charlotte NC', description: '5 roof sealant types compared for Charlotte NC homes and commercial buildings.', url: PAGE_URL, type: 'article' },
 };

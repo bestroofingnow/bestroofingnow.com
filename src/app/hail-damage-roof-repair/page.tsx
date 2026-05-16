@@ -37,18 +37,6 @@ export const metadata: Metadata = {
   title: 'Hail Damage Roof Repair Charlotte NC',
   description:
     'Hail damage roof repair and insurance claim assistance in Charlotte NC — Xactimate estimates, adjuster meetings, RCV/ACV review, Class 4 impact-resistant replacement options.',
-  keywords: [
-    'hail damage roof repair charlotte nc',
-    'hail damage roofing charlotte',
-    'roof hail damage inspection charlotte',
-    'hail damage insurance claim charlotte nc',
-    'storm damage roof repair charlotte',
-    'hail damaged shingles charlotte',
-    'class 4 impact resistant shingles',
-    'xactimate hail estimate',
-    'rcv acv insurance roof',
-    '12 month nc claim window',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/hail-damage-roof-repair`,
   },

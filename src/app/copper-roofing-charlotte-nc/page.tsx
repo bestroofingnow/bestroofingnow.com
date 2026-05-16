@@ -38,21 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Copper Roofing Charlotte NC | Premium Copper Roof Installation',
   description:
-    'Expert copper roofing installation in Charlotte NC. Copper roofs, accents, dormers, bay windows & gutters for luxury homes. 100+ year lifespan with beautiful patina. Free estimates from certified craftsmen.',
-  keywords: [
-    'copper roofing charlotte nc',
-    'copper roof installation charlotte',
-    'copper roof charlotte nc',
-    'copper accent roofing charlotte',
-    'copper dormers charlotte nc',
-    'copper bay window roofs charlotte',
-    'copper gutters charlotte nc',
-    'standing seam copper roof charlotte',
-    'copper roof repair charlotte nc',
-    'premium copper roofing charlotte',
-    'luxury copper roof charlotte',
-    'copper roofing contractors charlotte nc',
-  ],
+    'Expert copper roofing installation in Charlotte NC. Copper roofs, accents, dormers, bay windows & gutters for luxury homes. 100+ year lifespan with beautiful patina. Free estimates from certified craftsmen.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/copper-roofing-charlotte-nc`,
   },

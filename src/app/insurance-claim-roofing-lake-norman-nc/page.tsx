@@ -37,19 +37,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Insurance Claim Roofing Lake Norman NC',
   description:
-    'Insurance claim roofing in Lake Norman NC. We handle your roof claim from inspection to completion. BBB A+ rated. Free estimates. Call (704) 605-6047.',
-  keywords: [
-    'insurance claim roofing lake norman',
-    'lake norman roofing insurance claims',
-    'roof insurance claim lake norman nc',
-    'storm damage roof insurance lake norman',
-    'insurance roofing contractor lake norman',
-    'roof claim help lake norman',
-    'hail damage claim roofing lake norman',
-    'wind damage roof insurance lake norman',
-    'insurance roof replacement lake norman nc',
-    'roofing company that works with insurance lake norman',
-  ],
+    'Insurance claim roofing in Lake Norman NC. We handle your roof claim from inspection to completion. BBB A+ rated. Free estimates. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/insurance-claim-roofing-lake-norman-nc`,
   },

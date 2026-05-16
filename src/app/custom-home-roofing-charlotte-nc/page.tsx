@@ -41,19 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Custom Home Roofing Charlotte NC',
   description:
-    'Custom home roofing in Charlotte NC. Premium materials and builder coordination for architect-designed homes. BBB A+ rated. Free estimates.',
-  keywords: [
-    'custom home roofing charlotte nc',
-    'custom home roofer charlotte',
-    'architect designed home roofing charlotte',
-    'custom roof installation charlotte nc',
-    'one of a kind roof design charlotte',
-    'custom home roof materials charlotte',
-    'luxury custom home roofer charlotte nc',
-    'unique roof design charlotte nc',
-    'custom build roofing charlotte',
-    'charlotte custom home roofing contractor',
-  ],
+    'Custom home roofing in Charlotte NC. Premium materials and builder coordination for architect-designed homes. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/custom-home-roofing-charlotte-nc`,
   },

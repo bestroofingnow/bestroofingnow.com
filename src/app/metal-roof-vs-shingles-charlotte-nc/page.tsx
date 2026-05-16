@@ -40,17 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roof vs Shingles Charlotte NC | 2026 Comparison',
   description:
-    'Metal roof vs asphalt shingles in Charlotte NC: Cost, durability, energy savings, and which is best for your home. Honest comparison from local roofing experts.',
-  keywords: [
-    'metal roof vs shingles Charlotte NC',
-    'metal roofing cost Charlotte',
-    'asphalt shingles vs metal Charlotte',
-    'best roofing material Charlotte NC',
-    'metal roof benefits Charlotte',
-    'shingle roof Charlotte NC',
-    'roofing comparison Charlotte',
-    'metal roof energy savings Charlotte',
-  ],
+    'Metal roof vs asphalt shingles in Charlotte NC: Cost, durability, energy savings, and which is best for your home. Honest comparison from local roofing experts.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roof-vs-shingles-charlotte-nc`,
   },

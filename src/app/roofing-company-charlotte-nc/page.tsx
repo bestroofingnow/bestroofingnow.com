@@ -47,23 +47,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Company Charlotte NC',
   description:
-    'Best Roofing Now is Charlotte NC\'s top-rated veteran-owned roofing company. 5.0 Google rating, 62+ reviews, BBB A+ rated, 500+ roofs installed. GAF, CertainTeed & Owens Corning certified. Free estimates for residential & commercial roofing.',
-  keywords: [
-    'roofing company charlotte nc',
-    'roofing companies near me charlotte nc',
-    'veteran owned roofing company charlotte nc',
-    'best roofing company charlotte nc',
-    'top rated roofing company charlotte nc',
-    'local roofing company charlotte nc',
-    'trusted roofing company charlotte nc',
-    'bbb a+ roofing company charlotte nc',
-    'roofing company lake norman nc',
-    'roofing company lake wylie sc',
-    'roofing company fort mill sc',
-    'roofing company huntersville nc',
-    'roofing company mooresville nc',
-    'family owned roofing company charlotte nc',
-  ],
+    'Best Roofing Now is Charlotte NC\'s top-rated veteran-owned roofing company. 5.0 Google rating, 62+ reviews, BBB A+ rated, 500+ roofs installed. GAF, CertainTeed & Owens Corning certified. Free estimates for residential & commercial roofing.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-company-charlotte-nc`,
   },
@@ -89,7 +73,7 @@ const companyCredentials = [
   {
     icon: Shield,
   title: 'Veteran-Owned & Operated',
-  description: 'Proudly veteran-owned and operated with military values of integrity, discipline, and excellence in every project.',
+  description: 'Veteran-owned and run with the same job-site discipline we expect from our crews: show up, protect the property, clean up, and do what we said.',
   },
   {
     icon: Award,
@@ -163,7 +147,7 @@ const whyChooseUs = [
   {
     icon: Briefcase,
   title: 'Professional Team',
-  description: 'Experienced, background-checked crews who treat your property with the utmost respect and care.',
+  description: 'Experienced crews who tarp landscaping, protect driveways, run magnets for nails, and leave the house cleaner than most people expect from a roof job.',
   },
   {
     icon: CheckCircle,
@@ -173,7 +157,7 @@ const whyChooseUs = [
   {
     icon: Users,
   title: 'Local Ownership',
-  description: 'Locally owned and operated by the Turner family - we live and work in the communities we serve.',
+  description: 'Locally owned by the Turner family. We work in the same neighborhoods where our kids go to school, our customers worship, and our trucks are seen every week.',
   },
   {
     icon: Clock,
@@ -396,13 +380,13 @@ export default function RoofingCompanyCharlotteNCPage() {
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Charlotte&apos;s Most Trusted Roofing Company with {SITE_CONFIG.roofsInstalled}+ Roofs Completed &amp; a {SITE_CONFIG.googleRating} Google Rating
+              A Charlotte roofing company run like the owner&apos;s name is on every yard sign, because it is.
             </p>
             <p className="text-lg text-white/80 mb-8 max-w-2xl">
-              Best Roofing Now is Charlotte&apos;s premier veteran-owned, family-operated roofing company. Owner James Turner
-              personally oversees every project, ensuring military-grade quality and attention to detail. With a BBB A+ rating,
-              {SITE_CONFIG.googleReviewCount}+ five-star Google reviews, and certifications from CertainTeed, GAF, and Owens Corning,
-  we deliver exceptional roofing services backed by the industry&apos;s best warranties.
+              We repair and replace roofs from Ballantyne to University City, Myers Park to Mint Hill, and up through Lake Norman.
+              When James Turner looks at a roof, the first question is not how big the sale can be. It is whether the roof needs a
+              repair, a full replacement, an insurance claim, or just a straight answer. You get photos, a written scope, clean crews,
+              and a company that will still answer the phone after the job is done.
             </p>
 
             {/* CTA Buttons */}

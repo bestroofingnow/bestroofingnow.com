@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Statesville NC',
   description:
-    'Need gutter installation in Statesville NC? Best Roofing Now installs seamless gutters, gutter guards, and downspout systems in Iredell County. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'gutter installation statesville nc',
-    'seamless gutters statesville',
-    'gutter replacement statesville nc',
-    'gutter guards statesville',
-    'gutter company statesville nc',
-    'iredell county gutter installation',
-    'gutter repair statesville nc',
-    'rain gutters statesville',
-    'gutter installation near me statesville',
-    'gutter contractors statesville nc',
-  ],
+    'Need gutter installation in Statesville NC? Best Roofing Now installs seamless gutters, gutter guards, and downspout systems in Iredell County. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-statesville-nc`,
   },

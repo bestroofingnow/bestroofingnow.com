@@ -33,21 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Cornelius NC | Free',
   description:
-    'Free roof inspections in Cornelius NC. Comprehensive assessments with detailed reports for Lake Norman eastern shore luxury homes. BBB A+ rated. Schedule today!',
-  keywords: [
-    'roof inspection Cornelius NC',
-    'free roof inspection Cornelius',
-    'roof assessment Cornelius NC',
-    'roof inspection near me Cornelius',
-    'Lake Norman eastern shore roof inspection',
-    'roof evaluation Cornelius NC',
-    'home inspection roofing Cornelius NC',
-    'roof condition report Cornelius',
-    'pre-purchase roof inspection Cornelius',
-    'storm damage inspection Cornelius NC',
-    'Mecklenburg County roof inspection',
-    'The Peninsula Cornelius roof inspection',
-  ],
+    'Free roof inspections in Cornelius NC. Comprehensive assessments with detailed reports for Lake Norman eastern shore luxury homes. BBB A+ rated. Schedule today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-cornelius-nc`,
   },

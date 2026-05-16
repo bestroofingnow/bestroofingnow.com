@@ -38,24 +38,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: "Roofing Governor's Island Denver NC | Lakefront Homes",
   description:
-    "Expert roofing for Governor's Island in Denver NC. Premium materials for lakefront estates on Lake Norman. BBB A+ rated. Free estimates.",
-  keywords: [
-    'governors island roofing denver nc',
-    'roofing governors island lake norman',
-    'luxury roofing denver nc',
-    'governors island denver roofing contractor',
-    'lakefront roofing governors island',
-    'waterfront roofing denver nc',
-    'slate roofing denver nc',
-    'copper roofing governors island',
-    'cedar shake roofing denver',
-    'designer shingles governors island',
-    'lake norman roofing denver',
-    'premium roofing denver nc',
-    'standing seam metal roofing denver nc',
-    'luxury estate roofing denver',
-    'governors island hoa roofing',
-  ],
+    "Expert roofing for Governor's Island in Denver NC. Premium materials for lakefront estates on Lake Norman. BBB A+ rated. Free estimates.",
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-governors-island-denver-nc`,
   },

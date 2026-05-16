@@ -38,17 +38,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Davidson NC',
   description:
-    'Storm damage to your Davidson roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned. Call now!',
-  keywords: [
-    'storm damage roof repair davidson nc',
-    'hail damage roof repair davidson',
-    'wind damage roof repair davidson nc',
-    'emergency roof repair davidson',
-    'storm damage roofing davidson',
-    'roof storm damage davidson nc',
-    'roofing insurance claims davidson',
-    'lake norman storm damage roofing',
-  ],
+    'Storm damage to your Davidson roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned. Call now!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-davidson-nc`,
   },

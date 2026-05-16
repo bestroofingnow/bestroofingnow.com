@@ -40,17 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Overlay vs Tear-Off',
   description:
-    'Can you put a new roof over old shingles in Charlotte NC? Compare roof overlay vs tear-off costs, warranties, NC building code limits, and when each option makes sense.',
-  keywords: [
-    'can you put new roof over old roof',
-    'roof overlay vs tear off',
-    'reroofing over existing shingles charlotte nc',
-    'second layer shingles',
-    'roof overlay charlotte nc',
-    'reroof vs tear off cost',
-    'two layers of shingles nc',
-    'roof overlay pros and cons',
-  ],
+    'Can you put a new roof over old shingles in Charlotte NC? Compare roof overlay vs tear-off costs, warranties, NC building code limits, and when each option makes sense.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-overlay-vs-tear-off-charlotte-nc`,
   },

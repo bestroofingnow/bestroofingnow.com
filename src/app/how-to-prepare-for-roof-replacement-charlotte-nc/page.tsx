@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'How Do I Prepare for Roof Replacement in Charlotte NC?',
   description:
     "10-step pre-install checklist for roof replacement in Charlotte NC: cars, attic prep, wall art, trees, HVAC, pets, neighbors. Provided to every customer 7 days before install.",
-  keywords: [
-    'how to prepare for roof replacement Charlotte NC',
-    'roof replacement preparation',
-    'before roof replacement checklist',
-    'pre-install roof prep',
-    'what to do before roofers come',
-    'protect attic during roofing',
-    'roof replacement and pets',
-    'roof install day prep',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Prepare for Roof Replacement in Charlotte NC?',

@@ -37,21 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'What to Do After a Hail Storm Charlotte NC | Roof Damage Guide',
   description:
-    'Hail storm hit Charlotte? Step-by-step guide for checking roof damage, filing insurance claims, and getting repairs. Free hail damage inspections available.',
-  keywords: [
-    'what to do after hail storm Charlotte NC',
-    'hail damage roof Charlotte NC',
-    'hail damage inspection Charlotte NC',
-    'hail damage insurance claim Charlotte NC',
-    'hail storm roof repair Charlotte NC',
-    'check roof after hail Charlotte',
-    'what to do after hail storm Lake Norman NC',
-    'hail damage roof Lake Wylie SC',
-    'hail damage inspection Huntersville NC',
-    'hail damage insurance claim Mooresville NC',
-    'how to tell if roof has hail damage Charlotte NC',
-    'free hail damage inspection Charlotte NC',
-  ],
+    'Hail storm hit Charlotte? Step-by-step guide for checking roof damage, filing insurance claims, and getting repairs. Free hail damage inspections available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/what-to-do-after-hail-storm-charlotte-nc`,
   },

@@ -38,19 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Skybrook Huntersville NC',
   description:
-    'Trusted roofing for Skybrook in Huntersville NC 28078. Roof replacement, repair, and metal roofing for the Skybrook Golf community. BBB A+, free estimates.',
-  keywords: [
-    'skybrook roofing',
-    'skybrook huntersville roofer',
-    'roof replacement skybrook',
-    'roof repair skybrook',
-    'roofing skybrook huntersville nc',
-    'skybrook golf community roofing',
-    'roofing 28078',
-    'huntersville nc roofer skybrook',
-    'metal roofing skybrook',
-    'storm damage roof repair skybrook huntersville',
-  ],
+    'Trusted roofing for Skybrook in Huntersville NC 28078. Roof replacement, repair, and metal roofing for the Skybrook Golf community. BBB A+, free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-skybrook-huntersville-nc`,
   },

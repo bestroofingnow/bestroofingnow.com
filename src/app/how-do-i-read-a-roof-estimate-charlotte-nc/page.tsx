@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Read a Roof Estimate and What Should It Include in Charlotte NC?',
   description:
     "Charlotte NC roof estimate must include 12 line items: measurement, tear-off, decking, underlayment, ice-and-water shield, drip edge, shingles, fasteners, boots, flashing, ridge, permit + O&P.",
-  keywords: [
-    'how to read a roof estimate Charlotte NC',
-    'roof estimate line items',
-    'compare Charlotte roof bids',
-    'roof estimate red flags',
-    'Charlotte reroof pricing breakdown',
-    'roof estimate sample',
-    'NC roof contract terms',
-    'roofing estimate transparency',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Read a Roof Estimate and What Should It Include in Charlotte NC?',

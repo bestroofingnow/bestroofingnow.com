@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Gambrel Roof Guide for Charlotte NC',
   description: "What is a gambrel roof? Learn about Dutch Colonial styles, costs ($9,500-$18,000), and where to find gambrel roofs in Charlotte NC.",
-  keywords: ['gambrel roof Charlotte NC', 'Dutch Colonial Charlotte', 'gambrel roof cost', 'barn roof Charlotte', 'gambrel vs gable', 'Charlotte historic homes', 'gambrel roof leaks', 'Myers Park Dutch Colonial'],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Gambrel Roof Guide for Charlotte NC',

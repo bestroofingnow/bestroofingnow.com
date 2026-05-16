@@ -29,17 +29,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Mt Holly NC | Fast Fixes',
   description:
-    'Need roof repair in Mt Holly NC? Best Roofing Now provides fast, reliable repairs for leaks, storm damage, and more. BBB A+ rated, veteran-owned. Free inspections!',
-  keywords: [
-    'roof repair mt holly nc',
-    'roof leak repair mt holly',
-    'emergency roof repair mt holly nc',
-    'roofing repair mt holly',
-    'fix roof leak mt holly nc',
-    'storm damage repair mt holly',
-    'roof repair near me mt holly',
-    'mt holly roof repair services',
-  ],
+    'Need roof repair in Mt Holly NC? Best Roofing Now provides fast, reliable repairs for leaks, storm damage, and more. BBB A+ rated, veteran-owned. Free inspections!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-mt-holly-nc`,
   },

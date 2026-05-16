@@ -38,19 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Davidson Pointe NC',
   description:
-    'Trusted roofer for Davidson Pointe in Davidson NC 28036. Architectural shingles, Class 4 IR, synthetic slate, ARC-approved replacements for 25-30 yr roofs.',
-  keywords: [
-    'davidson pointe roofing',
-    'davidson pointe roofer',
-    'roof replacement davidson pointe',
-    'roofing davidson pointe davidson nc',
-    'davidson pointe hoa roofing',
-    'roof repair davidson pointe',
-    'architectural shingles davidson pointe',
-    'class 4 impact resistant shingles davidson nc',
-    'synthetic slate davidson pointe',
-    'davidson 28036 roofer',
-  ],
+    'Trusted roofer for Davidson Pointe in Davidson NC 28036. Architectural shingles, Class 4 IR, synthetic slate, ARC-approved replacements for 25-30 yr roofs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-davidson-pointe-davidson-nc`,
   },

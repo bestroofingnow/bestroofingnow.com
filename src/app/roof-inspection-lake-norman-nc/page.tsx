@@ -33,21 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Lake Norman NC | Free Inspections | Expert Roofers',
   description:
-    'Free roof inspections across Lake Norman NC. Comprehensive assessments with detailed reports for Cornelius, Davidson, Mooresville, Huntersville & Denver homes. BBB A+ rated. Schedule today!',
-  keywords: [
-    'roof inspection lake norman nc',
-    'free roof inspection lake norman',
-    'roof inspection near me lake norman',
-    'roof assessment lake norman nc',
-    'storm damage inspection lake norman',
-    'roof evaluation lake norman',
-    'home inspection roofing lake norman nc',
-    'roof condition report lake norman',
-    'pre-purchase roof inspection lake norman',
-    'annual roof inspection lake norman nc',
-    'insurance roof inspection lake norman',
-    'lakefront roof inspection',
-  ],
+    'Free roof inspections across Lake Norman NC. Comprehensive assessments with detailed reports for Cornelius, Davidson, Mooresville, Huntersville & Denver homes. BBB A+ rated. Schedule today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-lake-norman-nc`,
   },

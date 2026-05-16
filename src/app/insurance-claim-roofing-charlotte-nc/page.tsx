@@ -39,23 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Insurance Claim Roofing Charlotte',
   description:
-    'Expert insurance claim roofing in Charlotte NC. We handle your roof insurance claim from start to finish - free inspections, adjuster meetings, documentation, and repairs. BBB A+ rated.',
-  keywords: [
-    'insurance claim roofing Charlotte NC',
-    'roof insurance claim Charlotte NC',
-    'storm damage roof insurance Charlotte',
-    'roofing insurance claims Charlotte NC',
-    'roof claim help Charlotte NC',
-    'hail damage claim roofing Charlotte',
-    'does insurance cover roof replacement Charlotte NC',
-    'how to file roof insurance claim Charlotte NC',
-    'insurance roof replacement Charlotte NC',
-    'roofing company that works with insurance Charlotte',
-    'roof insurance claim Lake Norman NC',
-    'roof insurance claim Lake Wylie SC',
-    'roof insurance claim Fort Mill SC',
-    'storm damage insurance claim Charlotte NC',
-  ],
+    'Expert insurance claim roofing in Charlotte NC. We handle your roof insurance claim from start to finish - free inspections, adjuster meetings, documentation, and repairs. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`,
   },

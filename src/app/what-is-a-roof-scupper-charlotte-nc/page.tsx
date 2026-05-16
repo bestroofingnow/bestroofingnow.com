@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Roof Scupper? Charlotte NC Guide',
   description:
     "Roof scupper: parapet drainage opening on Charlotte NC commercial roofs. Primary + overflow types, TPO/EPDM/PVC sealing, $400-$1,500 repair cost. NC Code compliant.",
-  keywords: [
-    'roof scupper Charlotte NC',
-    'commercial roof scupper',
-    'parapet drainage opening',
-    'overflow scupper code',
-    'TPO scupper flashing',
-    'EPDM scupper repair',
-    'commercial flat roof drainage',
-    'Mecklenburg County roof drainage',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Roof Scupper? Charlotte NC Guide',

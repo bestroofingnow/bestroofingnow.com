@@ -42,19 +42,7 @@ import { EstimateButton } from '@/components/estimate';
 export const metadata: Metadata = {
   title: 'Charlotte Storm Season Roof Protection Guide | Before, During & After',
   description:
-    'Complete Charlotte NC storm season roof protection guide. Pre-storm preparation checklist, during-storm safety, post-storm action plan, insurance claim tips, and damage repair by type. Free storm damage inspections.',
-  keywords: [
-    'Charlotte NC storm season roof protection',
-    'storm season roof guide Charlotte',
-    'Charlotte storm damage prevention',
-    'roof storm preparation Charlotte NC',
-    'hail damage prevention Charlotte',
-    'wind damage roof Charlotte NC',
-    'hurricane roof protection Charlotte',
-    'Charlotte storm roof inspection',
-    'storm damage insurance claim Charlotte',
-    'Charlotte roofing storm guide',
-  ],
+    'Complete Charlotte NC storm season roof protection guide. Pre-storm preparation checklist, during-storm safety, post-storm action plan, insurance claim tips, and damage repair by type. Free storm damage inspections.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/charlotte-storm-season-roof-guide`,
   },

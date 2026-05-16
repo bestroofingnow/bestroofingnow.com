@@ -37,18 +37,6 @@ export const metadata: Metadata = {
   title: 'Emergency Roof Tarping Charlotte NC | 24/7 Response',
   description:
     '24/7 emergency roof tarping in Charlotte NC — 2-4 hour response, heavy-duty tarps with 2x4 battens, insurance claim documentation. Loss mitigation covered by most policies.',
-  keywords: [
-    'emergency roof tarping charlotte nc',
-    'roof tarp service charlotte',
-    'emergency roof cover charlotte',
-    'storm damage tarping charlotte nc',
-    'temporary roof repair charlotte',
-    '24/7 roof tarping service',
-    'roof tarp installation',
-    'active leak emergency',
-    'loss mitigation tarping',
-    'insurance tarping coverage',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-tarping`,
   },

@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Apartment Roofing Charlotte NC | Multi-Family Experts',
   description:
-    'Expert apartment roofing services in Charlotte NC. Multi-family roofing specialists, apartment complex roof repair and replacement. Property management approved. Free estimates.',
-  keywords: [
-    'apartment roofing Charlotte NC',
-    'apartment complex roofing Charlotte',
-    'multi-family roofing Charlotte NC',
-    'apartment roof repair Charlotte',
-    'apartment building roof replacement',
-    'property management roofing Charlotte',
-    'apartment complex roofer Charlotte',
-    'multi-unit roofing contractor Charlotte',
-    'rental property roofing Charlotte NC',
-    'apartment maintenance roofing Charlotte',
-  ],
+    'Expert apartment roofing services in Charlotte NC. Multi-family roofing specialists, apartment complex roof repair and replacement. Property management approved. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`,
   },

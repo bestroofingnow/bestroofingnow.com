@@ -38,24 +38,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing The Point Mooresville NC',
   description:
-    'Expert roofing for The Point in Mooresville NC. Slate, copper, and cedar shake for lakefront and golf course estates. BBB A+ rated. Free estimates.',
-  keywords: [
-    'the point roofing mooresville nc',
-    'roofing the point lake norman',
-    'luxury roofing mooresville nc',
-    'the point mooresville roofing contractor',
-    'lakefront roofing the point',
-    'golf course roofing mooresville nc',
-    'slate roofing mooresville nc',
-    'copper roofing the point',
-    'cedar shake roofing mooresville',
-    'designer shingles the point',
-    'lake norman roofing mooresville',
-    'premium roofing mooresville nc',
-    'standing seam metal roofing mooresville nc',
-    'the point hoa roofing',
-    'waterfront estate roofing mooresville',
-  ],
+    'Expert roofing for The Point in Mooresville NC. Slate, copper, and cedar shake for lakefront and golf course estates. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-the-point-mooresville-nc`,
   },

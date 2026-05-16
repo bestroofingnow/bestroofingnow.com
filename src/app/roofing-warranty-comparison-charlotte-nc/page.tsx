@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'Roofing Warranty Comparison Charlotte NC',
   description:
     'Roofing warranty comparison for Charlotte NC: GAF Golden Pledge 50-yr vs CertainTeed 5-Star Plus 50-yr vs OC Platinum. Manufacturer + workmanship + transferability explained.',
-  keywords: [
-    'roofing warranty comparison Charlotte NC',
-    'GAF vs CertainTeed warranty',
-    'GAF Golden Pledge warranty',
-    'CertainTeed 5-Star Plus',
-    'OC Platinum Preferred',
-    'roof warranty 50 year',
-    'transferable roofing warranty',
-    'workmanship warranty Charlotte',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Roofing Warranty Comparison Charlotte NC',

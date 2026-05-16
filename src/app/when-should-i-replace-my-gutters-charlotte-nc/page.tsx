@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'When Should I Replace My Gutters in Charlotte NC?',
   description:
     "Replace Charlotte NC gutters when 3+ of 8 signs present: age 20+ yr, sagging, joint separation, rust, fascia rot, overflow. Aluminum $1,400-$3,000, copper $4,000-$9,000.",
-  keywords: [
-    'when replace gutters Charlotte NC',
-    'gutter replacement signs',
-    'gutter lifespan Charlotte',
-    '5 inch vs 6 inch gutters',
-    'K-style vs half-round gutters',
-    'aluminum gutter replacement cost',
-    'copper gutter Charlotte',
-    'reroof gutter bundle',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'When Should I Replace My Gutters in Charlotte NC?',

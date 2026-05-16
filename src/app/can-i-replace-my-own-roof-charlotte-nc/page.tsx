@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'Can I Replace My Own Roof in Charlotte NC?',
   description:
     "Can I DIY roof replacement in Charlotte NC? Legally yes, but loses 50-year warranty + insurance coverage and saves only $2-4K. Honest analysis from Best Roofing Now.",
-  keywords: [
-    'can I replace my own roof Charlotte NC',
-    'DIY roof replacement Charlotte',
-    'replace own roof legally NC',
-    'DIY roof cost savings',
-    'homeowner roof replacement DIY',
-    'is it worth DIYing my roof',
-    'DIY roofing risks',
-    'DIY vs hire roofer',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Can I Replace My Own Roof in Charlotte NC? | Best Roofing Now',

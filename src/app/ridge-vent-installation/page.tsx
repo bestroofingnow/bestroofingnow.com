@@ -37,19 +37,6 @@ export const metadata: Metadata = {
   title: 'Ridge Vent Installation Charlotte NC',
   description:
     'Ridge vent installation in Charlotte NC — external baffle shingle-over design, balanced 1:300 ventilation to NC code IRC R806, paired with matched soffit intake. Free estimates.',
-  keywords: [
-    'ridge vent installation charlotte nc',
-    'ridge vent charlotte',
-    'roof ventilation charlotte nc',
-    'attic ventilation charlotte',
-    'ridge vent replacement charlotte',
-    'roof vent installation charlotte nc',
-    'air vent ridge vent',
-    'gaf cobra ridge vent',
-    'balanced attic ventilation',
-    'irc r806 ventilation',
-    'nfva ratio calculator',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/ridge-vent-installation`,
   },

@@ -35,23 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Fort Mill SC',
   description:
-    'Expert commercial roofing in Fort Mill SC. TPO, EPDM, flat roofs, metal roofing for Kingsley, Baxter Village & I-77 businesses. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'commercial roofing fort mill sc',
-    'commercial roofing contractors fort mill',
-    'commercial roof repair fort mill sc',
-    'flat roof contractors fort mill sc',
-    'tpo roofing fort mill sc',
-    'epdm roofing fort mill',
-    'industrial roofing fort mill sc',
-    'warehouse roofing fort mill',
-    'kingsley commercial roofing',
-    'baxter village roofing',
-    'commercial flat roof fort mill sc',
-    'metal roofing commercial fort mill',
-    'commercial roofer fort mill sc',
-    'business roofing fort mill sc',
-  ],
+    'Expert commercial roofing in Fort Mill SC. TPO, EPDM, flat roofs, metal roofing for Kingsley, Baxter Village & I-77 businesses. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-fort-mill-sc`,
   },

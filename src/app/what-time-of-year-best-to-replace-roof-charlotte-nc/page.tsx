@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'What Time of Year Is Best to Replace a Roof in Charlotte NC?',
   description:
     "Best time of year for roof replacement in Charlotte NC: fall (Sep-Nov) ideal, spring (Apr-May) second-best, winter (Jan-Mar) saves 5-15%. Year-round scheduling with cold-weather mastic-seal options.",
-  keywords: [
-    'best time of year to replace roof Charlotte NC',
-    'when to schedule roof replacement',
-    'best season for roofing',
-    'fall roof replacement Charlotte',
-    'winter roofing Charlotte NC',
-    'roof scheduling lead times',
-    'off-season roofing pricing',
-    'spring roof replacement',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Time of Year Is Best to Replace a Roof in Charlotte NC?',

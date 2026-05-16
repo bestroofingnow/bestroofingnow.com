@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Can I Stay Home During Reroof?',
   description: "Can I stay home during a reroof in Charlotte NC? Yes — plan for 80-95 dB noise, AC shutoff, work-from-home limits. Hotel option for premium comfort.",
-  keywords: ['can i stay home during reroof charlotte nc', 'reroof noise level', 'staying home during roof replacement', 'charlotte reroof comfort', 'work from home roof install', 'reroof ac shutoff', 'roof replacement disruption', 'charlotte roof install living'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'Can I Stay Home During Reroof?', description: 'Charlotte NC: yes, you can stay home — but plan for noise, AC shutoff, and work-from-home limits.', url: PAGE_URL, type: 'article' },
 };

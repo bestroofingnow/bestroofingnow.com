@@ -25,17 +25,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof and Gutter Replacement Charlotte NC | Save with Bundle Pricing',
-  description: 'Get roof and gutter replacement together in Charlotte NC and save. One contractor, one timeline, one warranty. Free estimates, financing available. Call (704) 605-6047.',
-  keywords: [
-    'roof and gutter replacement Charlotte NC',
-    'roof and gutter installation Charlotte',
-    'roof gutter combo Charlotte NC',
-    'roofing and gutter contractor Charlotte',
-    'roof and gutter replacement cost Charlotte',
-    'roofing and gutter company near me',
-    'new roof and gutters Charlotte',
-    'roof gutter package Charlotte NC',
-  ],
+  description: 'Get roof and gutter replacement together in Charlotte NC and save. One contractor, one timeline, one warranty. Free estimates, financing available. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/services/roof-and-gutter-replacement`,
   },

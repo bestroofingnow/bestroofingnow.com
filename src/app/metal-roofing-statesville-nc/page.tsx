@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Statesville NC',
   description:
-    'Looking for metal roofing in Statesville NC? Best Roofing Now installs premium standing seam and metal shingle roofing in Iredell County. BBB A+ rated, veteran-owned. 50+ year lifespan, energy efficient. Free estimates!',
-  keywords: [
-    'metal roofing statesville nc',
-    'metal roof statesville',
-    'standing seam metal roof statesville nc',
-    'metal roofing contractors statesville',
-    'metal roof installation statesville nc',
-    'iredell county metal roofing',
-    'metal roof cost statesville',
-    'metal roofing near me statesville',
-    'best metal roofing statesville nc',
-    'metal roof replacement statesville',
-  ],
+    'Looking for metal roofing in Statesville NC? Best Roofing Now installs premium standing seam and metal shingle roofing in Iredell County. BBB A+ rated, veteran-owned. 50+ year lifespan, energy efficient. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-statesville-nc`,
   },

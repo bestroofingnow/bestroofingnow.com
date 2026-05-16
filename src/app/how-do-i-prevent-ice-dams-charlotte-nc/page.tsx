@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Prevent Ice Dams on My Charlotte NC Roof?',
   description:
     "Charlotte NC ice dam prevention: ice-and-water shield, R-49 insulation, balanced ventilation, drip edge, heat cable. Bundle $1,500-$9,700 prevents $10K-$45K damage.",
-  keywords: [
-    'how to prevent ice dams Charlotte NC',
-    'ice dam prevention',
-    'ice and water shield',
-    'attic insulation ice dam',
-    'heat cable Charlotte NC',
-    'Lake Norman ice dam',
-    'Davidson Cornelius ice dam',
-    'roof rake ice dam',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Prevent Ice Dams on My Charlotte NC Roof?',

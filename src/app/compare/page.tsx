@@ -17,17 +17,6 @@ export const metadata: Metadata = {
   title: 'Roofing Material Comparisons | Side-by-Side | Charlotte NC',
   description:
     'Head-to-head roofing comparisons for Charlotte NC homes — metal vs asphalt, tile vs slate, GAF vs CertainTeed, Class 4 vs standard shingles. Cost, lifespan, and climate fit.',
-  keywords: [
-    'roofing material comparison charlotte',
-    'metal vs shingles',
-    'tile vs slate roofing',
-    'gaf vs certainteed',
-    'asphalt vs metal roof',
-    'best roof type nc',
-    'roof material side by side',
-    'class 4 vs standard shingles',
-    'charlotte roofing options',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/compare`,
   },

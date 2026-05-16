@@ -35,23 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofers Concord NC | 5-Star Rated',
   description:
-    'Looking for trusted roofers in Concord NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Cabarrus County. BBB A+ rated with 500+ roofs completed. Free estimates for all roofing services in the Charlotte Motor Speedway area.',
-  keywords: [
-    'roofers concord nc',
-    'concord nc roofers',
-    'concord roofers',
-    'local roofers concord nc',
-    'roofers in concord nc',
-    'best roofers concord nc',
-    'top roofers concord',
-    'professional roofers concord nc',
-    'licensed roofers concord',
-    'experienced roofers concord nc',
-    'affordable roofers concord',
-    'roofers near me concord nc',
-    'cabarrus county roofers',
-    'roofing contractors concord nc',
-  ],
+    'Looking for trusted roofers in Concord NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Cabarrus County. BBB A+ rated with 500+ roofs completed. Free estimates for all roofing services in the Charlotte Motor Speedway area.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-concord-nc`,
   },

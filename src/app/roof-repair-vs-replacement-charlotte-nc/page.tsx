@@ -43,20 +43,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair vs. Replacement Charlotte NC | Decision Guide (2026)',
   description:
-    'Should you repair or replace your roof in Charlotte NC? Use our 5-question decision framework, cost comparison tables, and material-specific guidance to make the right choice. Free inspections from BBB A+ rated contractor.',
-  keywords: [
-    'roof repair vs replacement Charlotte NC',
-    'should I repair or replace my roof Charlotte NC',
-    'is it cheaper to repair or replace a roof Charlotte NC',
-    'when to replace roof Charlotte NC',
-    'roof repair or replacement Charlotte NC',
-    'repair or replace roof cost Charlotte NC',
-    'how do I know if my roof needs to be replaced Charlotte NC',
-    'roof repair vs replacement Lake Norman NC',
-    'roof repair vs replacement Lake Wylie SC',
-    'when is roof repair not enough Charlotte NC',
-    'signs you need a new roof Charlotte NC',
-  ],
+    'Should you repair or replace your roof in Charlotte NC? Use our 5-question decision framework, cost comparison tables, and material-specific guidance to make the right choice. Free inspections from BBB A+ rated contractor.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-vs-replacement-charlotte-nc`,
   },

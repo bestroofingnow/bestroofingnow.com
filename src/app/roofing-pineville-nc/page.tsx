@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Pineville NC | Top Rated',
   description:
-    'Looking for a trusted roofing company in Pineville NC? Best Roofing Now serves the Carolina Place area from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
-  keywords: [
-    'roofing pineville nc',
-    'roofing company pineville nc',
-    'roofers pineville nc',
-    'roof repair pineville nc',
-    'roof replacement pineville nc',
-    'pineville roofing contractor',
-    'carolina place area roofers',
-    'pineville nc roofer',
-    'roofing contractors near me pineville',
-    'best roofer pineville nc',
-  ],
+    'Looking for a trusted roofing company in Pineville NC? Best Roofing Now serves the Carolina Place area from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-pineville-nc`,
   },

@@ -36,19 +36,6 @@ export const metadata: Metadata = {
   title: 'Architectural Shingles Charlotte NC',
   description:
     'Architectural shingle installation in Charlotte NC — GAF Master Elite, CertainTeed SELECT, Owens Corning Platinum certified. Laminated dimensional shingles, 130 MPH wind, lifetime limited warranties.',
-  keywords: [
-    'architectural shingles charlotte nc',
-    'dimensional shingles charlotte',
-    'laminated shingles charlotte nc',
-    'gaf shingles charlotte',
-    'certainteed shingles charlotte nc',
-    'owens corning shingles charlotte',
-    'premium shingles charlotte',
-    'gaf timberline hdz',
-    'certainteed landmark',
-    'owens corning duration',
-    'algae resistant shingles',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/architectural-shingles`,
   },

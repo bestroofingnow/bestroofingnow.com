@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'When Do I Need an Emergency Roof Tarp in Charlotte NC?',
   description:
     "Call for emergency roof tarp Charlotte NC: active leak, tree on roof, exposed decking, hail damage with leak, structural sag, chimney fall, commercial ponding, critical event protection.",
-  keywords: [
-    'when need emergency roof tarp Charlotte NC',
-    'emergency roof tarp dispatch',
-    '24/7 roof tarp Charlotte',
-    'emergency tarp cost',
-    'roof tarp insurance coverage',
-    'storm damage tarp service',
-    'commercial flat roof emergency',
-    'tree on roof emergency',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'When Do I Need an Emergency Roof Tarp in Charlotte NC?',

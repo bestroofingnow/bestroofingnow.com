@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Sherrills Ford',
   description:
-    'Need gutter installation in Sherrills Ford NC? Best Roofing Now installs seamless gutters, gutter guards, and downspouts for Lake Norman homes. Protect your foundation from water damage. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'gutter installation sherrills ford nc',
-    'seamless gutters sherrills ford',
-    'gutter guards sherrills ford nc',
-    'gutter replacement sherrills ford',
-    'lake norman gutter installation',
-    'catawba county gutters',
-    'gutter company sherrills ford nc',
-    'rain gutters sherrills ford',
-    'gutter repair sherrills ford nc',
-    'downspout installation sherrills ford',
-  ],
+    'Need gutter installation in Sherrills Ford NC? Best Roofing Now installs seamless gutters, gutter guards, and downspouts for Lake Norman homes. Protect your foundation from water damage. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-sherrills-ford-nc`,
   },

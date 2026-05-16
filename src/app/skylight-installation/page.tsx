@@ -37,20 +37,6 @@ export const metadata: Metadata = {
   title: 'Skylight Installation Charlotte NC',
   description:
     'VELUX, Wasco, and Fakro skylight installation and replacement in Charlotte NC. Deck-mounted, curb-mounted, solar-vented. 26% federal tax credit eligible. Leak-free warranty.',
-  keywords: [
-    'skylight installation charlotte nc',
-    'skylight repair charlotte',
-    'velux skylight installer charlotte',
-    'wasco skylight charlotte',
-    'fakro skylight nc',
-    'skylight replacement charlotte nc',
-    'leaking skylight repair',
-    'solar skylight tax credit',
-    'sun tunnel installation charlotte',
-    'deck mounted skylight',
-    'curb mounted skylight',
-    'roof window installation',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/skylight-installation`,
   },

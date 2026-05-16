@@ -45,24 +45,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Contractor Charlotte NC | Licensed & Certified | GAF CertainTeed',
   description:
-    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed ShingleMaster, BBB A+ rated. 5.0 Google rating, veteran-owned. NC General Contractor license. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
-  keywords: [
-    'roofing contractor charlotte nc',
-    'roofing contractor near me charlotte',
-    'best roofing contractor charlotte nc',
-    'licensed roofing contractor charlotte nc',
-    'certified roofing contractor charlotte nc',
-    'gaf certified contractor charlotte nc',
-    'certainteed contractor charlotte nc',
-    'bbb a+ roofing contractor charlotte nc',
-    'roofing contractor lake norman nc',
-    'roofing contractor lake wylie sc',
-    'roofing contractor huntersville nc',
-    'roofing contractor mooresville nc',
-    'roofing contractor fort mill sc',
-    'veteran owned roofing contractor charlotte nc',
-    'local roofing contractor charlotte nc',
-  ],
+    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed ShingleMaster, BBB A+ rated. 5.0 Google rating, veteran-owned. NC General Contractor license. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`,
   },

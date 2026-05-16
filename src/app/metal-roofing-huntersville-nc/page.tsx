@@ -33,21 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Huntersville NC',
   description:
-    'Looking for metal roofing in Huntersville NC? Best Roofing Now specializes in standing seam metal roofs, metal shingles, and metal roof repairs. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'metal roofing Huntersville NC',
-    'metal roof Huntersville',
-    'standing seam metal roof Huntersville NC',
-    'metal roof installation Huntersville',
-    'metal roofing contractors Huntersville',
-    'metal roof repair Huntersville NC',
-    'aluminum roofing Huntersville',
-    'steel roofing Huntersville NC',
-    'metal shingle roof Huntersville',
-    'energy efficient roofing Huntersville',
-    'metal roof cost Huntersville NC',
-    'best metal roofer Huntersville',
-  ],
+    'Looking for metal roofing in Huntersville NC? Best Roofing Now specializes in standing seam metal roofs, metal shingles, and metal roof repairs. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-huntersville-nc`,
   },

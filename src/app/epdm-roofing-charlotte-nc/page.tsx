@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'EPDM Roofing Charlotte NC | Rubber Roof Installation',
   description:
-    'Expert EPDM rubber roof installation in Charlotte NC. Durable, low-maintenance EPDM roofing for commercial and industrial buildings. BBB A+ rated. Free estimates.',
-  keywords: [
-    'epdm roofing charlotte nc',
-    'rubber roof charlotte nc',
-    'epdm rubber roof installation',
-    'commercial rubber roofing charlotte',
-    'epdm roofing contractors charlotte',
-    'rubber roof repair charlotte nc',
-    'flat rubber roof charlotte',
-    'industrial roofing charlotte nc',
-    'epdm membrane roofing charlotte',
-    'black rubber roof charlotte',
-    'single ply roofing charlotte',
-    'commercial flat roof charlotte',
-  ],
+    'Expert EPDM rubber roof installation in Charlotte NC. Durable, low-maintenance EPDM roofing for commercial and industrial buildings. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/epdm-roofing-charlotte-nc`,
   },

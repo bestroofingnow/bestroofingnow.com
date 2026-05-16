@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Solar Roofing Lake Norman NC',
   description:
-    'Solar roofing for Lake Norman waterfront and lakefront homes. GAF Timberline Solar shingles, solar panel integration for Cornelius, Davidson, Mooresville, Huntersville. Federal 30% ITC eligible. Veteran-owned, BBB A+. Free estimates!',
-  keywords: [
-    'solar roofing lake norman nc',
-    'solar shingles lake norman',
-    'GAF timberline solar lake norman',
-    'solar roof installation lake norman',
-    'solar panel roofing lake norman nc',
-    'lakefront solar roofing',
-    'lake norman green energy roofing',
-    'solar roofing cornelius nc',
-    'solar roofing mooresville nc',
-    'waterfront solar roofing lake norman',
-  ],
+    'Solar roofing for Lake Norman waterfront and lakefront homes. GAF Timberline Solar shingles, solar panel integration for Cornelius, Davidson, Mooresville, Huntersville. Federal 30% ITC eligible. Veteran-owned, BBB A+. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/solar-roofing-lake-norman-nc`,
   },

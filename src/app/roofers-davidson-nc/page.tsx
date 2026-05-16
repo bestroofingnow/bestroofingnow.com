@@ -34,22 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Davidson NC | 5-Star',
   description:
-    'Looking for trusted roofers in Davidson NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company. Historic home expertise. Davidson College area specialists. Free estimates.',
-  keywords: [
-    'roofers davidson nc',
-    'davidson roofers',
-    'local roofers davidson',
-    'roofers in davidson nc',
-    'davidson nc roofers',
-    'best roofers davidson nc',
-    'top roofers davidson',
-    'professional roofers davidson nc',
-    'licensed roofers davidson',
-    'historic home roofers davidson',
-    'lake norman roofers davidson',
-    'davidson college area roofers',
-    'roofing company davidson nc',
-  ],
+    'Looking for trusted roofers in Davidson NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company. Historic home expertise. Davidson College area specialists. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-davidson-nc`,
   },

@@ -33,21 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Huntersville NC | Free',
   description:
-    'Free roof inspections in Huntersville NC. Comprehensive assessments with detailed reports for fast-growing suburb homes. BBB A+ rated. Schedule today!',
-  keywords: [
-    'roof inspection Huntersville NC',
-    'free roof inspection Huntersville',
-    'roof assessment Huntersville NC',
-    'roof inspection near me Huntersville',
-    'Lake Norman roof inspection Huntersville',
-    'roof evaluation Huntersville NC',
-    'home inspection roofing Huntersville NC',
-    'roof condition report Huntersville',
-    'pre-purchase roof inspection Huntersville',
-    'storm damage inspection Huntersville NC',
-    'Mecklenburg County roof inspection',
-    'Birkdale Village roof inspection',
-  ],
+    'Free roof inspections in Huntersville NC. Comprehensive assessments with detailed reports for fast-growing suburb homes. BBB A+ rated. Schedule today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-huntersville-nc`,
   },

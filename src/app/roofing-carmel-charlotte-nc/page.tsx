@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Carmel Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Roofing contractor in Carmel, South Charlotte NC. Roof replacement, repair, and storm damage for established homes. BBB A+ rated. Free estimates.',
-  keywords: [
-    'roofing carmel charlotte nc',
-    'roofer carmel charlotte',
-    'carmel road roofing charlotte',
-    'carmel roof replacement charlotte nc',
-    'carmel roof repair charlotte',
-    'roofing contractor carmel charlotte',
-    'south charlotte roofing carmel',
-    'carmel neighborhood roofer charlotte',
-    'best roofer carmel charlotte nc',
-    'carmel charlotte roofing services',
-  ],
+    'Roofing contractor in Carmel, South Charlotte NC. Roof replacement, repair, and storm damage for established homes. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-carmel-charlotte-nc`,
   },

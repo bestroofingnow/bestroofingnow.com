@@ -29,22 +29,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'How to Choose a Roofing Contractor FAQ | Questions to Ask | Charlotte NC',
   description:
-    'Learn how to choose a roofing contractor in Charlotte NC. 12 FAQs answered, red flags checklist, and 10 essential questions to ask any roofer before hiring. Expert guide from Best Roofing Now.',
-  keywords: [
-    'questions to ask roofer',
-    'how to choose roofing contractor',
-    'questions to ask roofing contractor',
-    'roofing contractor red flags',
-    'how to hire a roofer Charlotte NC',
-    'what to look for in a roofer',
-    'roofing contractor checklist',
-    'licensed roofer Charlotte NC',
-    'roofing contractor questions',
-    'best roofer Charlotte NC',
-    'roofing contractor near me',
-    'roofing scams to avoid',
-    'roofing contractor reviews Charlotte',
-  ],
+    'Learn how to choose a roofing contractor in Charlotte NC. 12 FAQs answered, red flags checklist, and 10 essential questions to ask any roofer before hiring. Expert guide from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/choosing-roofing-contractor-faq`,
   },

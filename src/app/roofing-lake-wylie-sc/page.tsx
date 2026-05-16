@@ -35,25 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Lake Wylie SC | #1 Rated Lake Wylie Roofers',
   description:
-    'Lake Wylie\'s trusted roofing company serving Tega Cay, Fort Mill & York County. Waterfront roofing specialists with 500+ roofs installed. BBB A+, veteran-owned. FREE estimates! Call (704) 605-6047.',
-  keywords: [
-    'roofing lake wylie sc',
-    'roofers lake wylie sc',
-    'lake wylie roofing company',
-    'roof repair lake wylie sc',
-    'roof replacement lake wylie sc',
-    'roofing contractor lake wylie sc',
-    'best roofer lake wylie sc',
-    'emergency roof repair lake wylie',
-    'storm damage roofing lake wylie',
-    'waterfront roofing lake wylie',
-    'roofing tega cay sc',
-    'york county roofers',
-    'lake wylie roof replacement cost',
-    'lake wylie roof repair near me',
-    'metal roofing lake wylie sc',
-    'hail damage roof repair lake wylie',
-  ],
+    'Lake Wylie\'s trusted roofing company serving Tega Cay, Fort Mill & York County. Waterfront roofing specialists with 500+ roofs installed. BBB A+, veteran-owned. FREE estimates! Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-lake-wylie-sc`,
   },

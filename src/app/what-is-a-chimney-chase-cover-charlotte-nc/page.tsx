@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Chimney Chase Cover and When Does It Need Replacement?',
   description:
     "Chimney chase cover = metal cap on framed chimney chase (post-1980 Charlotte homes). Galvanized 8-15 yr, stainless 25-50 yr, copper 50-100+ yr. Cost $200-$2,000.",
-  keywords: [
-    'what is a chimney chase cover Charlotte NC',
-    'chimney chase cover replacement',
-    'galvanized chase cover rust',
-    'stainless steel chase cover',
-    'copper chase cover Charlotte',
-    'chimney chase vs crown',
-    'chase cover cost NC',
-    'chimney waterproofing',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Chimney Chase Cover and When Does It Need Replacement?',

@@ -29,23 +29,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roof Insurance Claim FAQ | Does Insurance Cover My Roof? | Charlotte NC',
   description:
-    'Roof insurance claim FAQ for Charlotte NC homeowners. Does insurance cover roof damage? How to file a claim? NC-specific rules including 1-year filing deadline and deductible waiver prohibition. Expert answers from Best Roofing Now.',
-  keywords: [
-    'roof insurance claim faq',
-    'does insurance cover roof',
-    'does insurance cover roof replacement',
-    'roof insurance claim Charlotte NC',
-    'how to file roof insurance claim',
-    'roof insurance deductible',
-    'storm damage roof insurance',
-    'hail damage roof claim',
-    'roof insurance claim denied',
-    'NC roof insurance rules',
-    'insurance adjuster roof inspection',
-    'roof insurance claim process',
-    'does homeowners insurance cover roof leak',
-    'roof insurance claim time limit NC',
-  ],
+    'Roof insurance claim FAQ for Charlotte NC homeowners. Does insurance cover roof damage? How to file a claim? NC-specific rules including 1-year filing deadline and deductible waiver prohibition. Expert answers from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-insurance-claims-faq`,
   },

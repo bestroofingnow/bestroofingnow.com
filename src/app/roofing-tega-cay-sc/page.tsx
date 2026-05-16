@@ -34,23 +34,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Tega Cay SC | Waterfront Roofers',
   description:
-    'Tega Cay\'s trusted roofing company on the Lake Wylie peninsula. Waterfront roofing specialists in York County SC. Veteran-owned, BBB A+, 500+ roofs installed. FREE estimates! Call (704) 605-6047.',
-  keywords: [
-    'roofing tega cay sc',
-    'roofers tega cay',
-    'roof repair tega cay sc',
-    'roof replacement tega cay',
-    'tega cay roofing company',
-    'waterfront roofing tega cay',
-    'lake wylie roofers tega cay',
-    'roofing contractor tega cay sc',
-    'storm damage roofing tega cay',
-    'best roofer tega cay sc',
-    'tega cay roof replacement cost',
-    'peninsula roofing tega cay',
-    'york county roofers',
-    'hail damage roof repair tega cay',
-  ],
+    'Tega Cay\'s trusted roofing company on the Lake Wylie peninsula. Waterfront roofing specialists in York County SC. Veteran-owned, BBB A+, 500+ roofs installed. FREE estimates! Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-tega-cay-sc`,
   },

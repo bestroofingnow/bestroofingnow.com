@@ -27,17 +27,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Mt Holly NC',
   description:
-    'Need new gutters in Mt Holly NC? Best Roofing Now installs seamless aluminum and copper gutters with gutter guards. Protect your home from water damage. Free estimates!',
-  keywords: [
-    'gutter installation mt holly nc',
-    'seamless gutters mt holly nc',
-    'gutter replacement mt holly',
-    'gutter contractors mt holly nc',
-    'new gutters mt holly nc',
-    'gutter guards mt holly',
-    'gutter company mt holly nc',
-    'gutter installation near me mt holly',
-  ],
+    'Need new gutters in Mt Holly NC? Best Roofing Now installs seamless aluminum and copper gutters with gutter guards. Protect your home from water damage. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-mt-holly-nc`,
   },

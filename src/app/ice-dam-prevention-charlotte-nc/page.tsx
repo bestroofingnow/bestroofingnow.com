@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Ice Dam Prevention Charlotte NC',
   description:
-    'Expert ice dam prevention services in Charlotte NC. Protect your roof from winter damage with proper ventilation, insulation, and ice barriers. BBB A+ rated, veteran-owned. Free inspections.',
-  keywords: [
-    'ice dam prevention Charlotte NC',
-    'ice dams Charlotte roofing',
-    'ice dam removal Charlotte NC',
-    'winter roof protection Charlotte',
-    'ice and water shield Charlotte NC',
-    'prevent ice dams Charlotte',
-    'attic insulation Charlotte NC',
-    'winter roofing Charlotte',
-    'ice dam damage repair Charlotte',
-    'roof ice prevention Charlotte NC',
-  ],
+    'Expert ice dam prevention services in Charlotte NC. Protect your roof from winter damage with proper ventilation, insulation, and ice barriers. BBB A+ rated, veteran-owned. Free inspections.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc`,
   },

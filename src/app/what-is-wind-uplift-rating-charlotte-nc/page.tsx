@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Wind Uplift Rating and What Does My Charlotte NC Roof Need?',
   description:
     "Wind uplift rating = max MPH shingles withstand. NC code minimum 110 MPH. Charlotte recommended 130 MPH (storms, tropical remnants). Lake Norman 150 MPH for waterfront. Insurance discount 5-15%.",
-  keywords: [
-    'what is wind uplift rating Charlotte NC',
-    'wind rating shingles Charlotte',
-    'ASTM D7158 wind test',
-    '110 MPH vs 130 MPH shingles',
-    '6-nail fastening pattern',
-    'NC wind code roof',
-    'Lake Norman wind rating',
-    'wind insurance discount NC',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Wind Uplift Rating and What Does My Charlotte NC Roof Need?',

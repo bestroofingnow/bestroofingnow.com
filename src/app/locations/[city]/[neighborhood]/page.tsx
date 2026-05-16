@@ -65,25 +65,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Neighborhood Not Found' };
   }
 
-  const title = `Roofer ${neighborhoodData.name} ${location.city}`;
-  const description = `Professional roofing services in ${neighborhoodData.name}, ${location.city}. Roof repair, replacement, and inspection for ${neighborhoodData.homeStyles.split(',')[0].toLowerCase()} and more. Free estimates! Call (704) 605-6047.`;
+  // Title rewritten 2026-05-11: prior generic template produced 0 clicks at pos 1.97 (Providence
+  // Plantation), 3.26 (Dilworth), 5.10 (University City) on ~170 GSC imp/90d. Adds "Roofing Company"
+  // exact phrase, 5-star trust signal, and primary ZIP for neighborhood specificity.
+  const primaryZip = neighborhoodData.primaryZip ? ` ${neighborhoodData.primaryZip}` : '';
+  const title = `${neighborhoodData.name} Roofing Company | ${location.city}${primaryZip} | 5-Star`;
+  const firstHighlight = neighborhoodData.highlights[0] ?? 'Local roofing experts';
+  const homeStyleForMeta = neighborhoodData.homeStyles.split(',')[0].toLowerCase();
+  const description = `${neighborhoodData.name} ${location.city} NC roofing company — 5-star rated, BBB A+, veteran-owned. ${firstHighlight}. Roof repair, replacement & free estimates for ${homeStyleForMeta}. Call (704) 605-6047.`;
 
   return {
     title,
   description,
-  keywords: [
-      `${neighborhoodData.name} roofing company`,
-      `roof repair ${neighborhoodData.name} ${location.city}`,
-      `roof replacement ${neighborhoodData.name}`,
-      `roofers near ${neighborhoodData.name}`,
-      `${location.city} ${location.state} roofer`,
-    ],
   alternates: {
       canonical: `${SITE_CONFIG.url}/locations/${city}/${neighborhoodSlug}`,
     },
   openGraph: {
-      title: `Roofing Services in ${neighborhoodData.name}, ${location.city}`,
-  description: `Professional roofing for ${neighborhoodData.name} homes. ${neighborhoodData.highlights[0]}. Free inspections available.`,
+      title: `${neighborhoodData.name} Roofing Company in ${location.city}, ${location.state}`,
+  description: `Top-rated roofing for ${neighborhoodData.name} homes. ${firstHighlight}. Free inspections, 5-star Google, BBB A+.`,
   url: `${SITE_CONFIG.url}/locations/${city}/${neighborhoodSlug}`,
     },
   };

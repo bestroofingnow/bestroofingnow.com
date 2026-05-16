@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Cotswold Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Trusted roofer in Cotswold Charlotte NC. Roofing for classic ranches, Cape Cods, and renovated homes. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing cotswold charlotte nc',
-    'roofers cotswold charlotte',
-    'cotswold charlotte roofing contractor',
-    'east charlotte roofers cotswold',
-    'cotswold roof repair',
-    'cotswold roof replacement',
-    'ranch home roofing cotswold',
-    'architectural shingles cotswold charlotte',
-    'best roofer cotswold charlotte',
-    'cotswold charlotte roofing services',
-  ],
+    'Trusted roofer in Cotswold Charlotte NC. Roofing for classic ranches, Cape Cods, and renovated homes. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-cotswold-charlotte-nc`,
   },

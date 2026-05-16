@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Roof Square in Charlotte NC Roofing?',
   description:
     "A roof 'square' = 100 sq ft (10x10 ft area). Charlotte NC homes: starter 18-22 sq, mid-size 25-35 sq, large 40-50 sq, estate 50-70+ sq. Per-square pricing $400-$3,000.",
-  keywords: [
-    'what is a roof square Charlotte NC',
-    'roof square measurement',
-    'roofing square explained',
-    'how to measure roof squares',
-    'roof pitch and squares',
-    'shingles per square',
-    'roof estimate squares',
-    'Charlotte roofing terminology',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Roof Square in Charlotte NC Roofing?',

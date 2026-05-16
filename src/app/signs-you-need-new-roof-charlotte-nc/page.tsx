@@ -41,17 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Signs You Need a New Roof',
   description:
-    'How to tell if you need a new roof in Charlotte NC. 10 warning signs including curling shingles, granule loss, sagging, leaks, and age. Free roof inspections from BBB A+ rated, veteran-owned roofers.',
-  keywords: [
-    'signs you need a new roof charlotte nc',
-    'when to replace roof charlotte',
-    'how to tell if roof needs replacing',
-    'roof replacement signs',
-    'aging roof signs charlotte nc',
-    'damaged roof indicators',
-    'roof lifespan charlotte nc',
-    'do i need a new roof',
-  ],
+    'How to tell if you need a new roof in Charlotte NC. 10 warning signs including curling shingles, granule loss, sagging, leaks, and age. Free roof inspections from BBB A+ rated, veteran-owned roofers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/signs-you-need-new-roof-charlotte-nc`,
   },

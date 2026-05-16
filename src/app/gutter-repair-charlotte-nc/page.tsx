@@ -40,21 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Repair Charlotte NC | Fast & Affordable',
   description:
-    'Fast and affordable gutter repair in Charlotte NC. Best Roofing Now offers gutter repair, cleaning, and replacement services. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'gutter repair charlotte nc',
-    'gutter services charlotte',
-    'gutter repair near me charlotte',
-    'fix gutters charlotte nc',
-    'gutter cleaning charlotte',
-    'seamless gutter repair charlotte',
-    'leaking gutter repair charlotte',
-    'gutter contractors charlotte nc',
-    'affordable gutter repair charlotte',
-    'gutter maintenance charlotte nc',
-    'sagging gutter repair charlotte',
-    'clogged gutter repair charlotte nc',
-  ],
+    'Fast and affordable gutter repair in Charlotte NC. Best Roofing Now offers gutter repair, cleaning, and replacement services. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-repair-charlotte-nc`,
   },

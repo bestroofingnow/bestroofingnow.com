@@ -33,19 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Lake Norman NC | Insurance Claims',
   description:
-    'Storm damage roof repair across Lake Norman NC. Hail, wind, and tree damage restoration with full insurance claim assistance. Emergency response for Mooresville, Cornelius, Davidson & Denver.',
-  keywords: [
-    'storm damage roof repair lake norman',
-    'hail damage lake norman nc',
-    'wind damage roofing lake norman',
-    'roof insurance claim lake norman',
-    'storm damage roofer mooresville nc',
-    'hail damage roof cornelius nc',
-    'wind damage roof repair davidson nc',
-    'lake norman storm damage restoration',
-    'roof insurance claim assistance lake norman',
-    'tree damage roof repair lake norman',
-  ],
+    'Storm damage roof repair across Lake Norman NC. Hail, wind, and tree damage restoration with full insurance claim assistance. Emergency response for Mooresville, Cornelius, Davidson & Denver.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-lake-norman-nc`,
   },

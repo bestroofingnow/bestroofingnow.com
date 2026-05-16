@@ -32,24 +32,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing FAQ | 100+ Roofing Questions Answered | Charlotte NC 2026',
   description:
-    'Get answers to 100+ roofing questions about costs, choosing a contractor, materials, insurance claims, maintenance, timing, and technical details. Expert answers from Charlotte NC trusted roofers at Best Roofing Now.',
-  keywords: [
-    'roofing faq',
-    'roofing questions to ask',
-    'questions about roofing',
-    'roofing FAQ Charlotte NC',
-    'common roofing questions',
-    'roof replacement questions',
-    'roofing cost questions',
-    'questions to ask roofer',
-    'roof insurance questions',
-    'roof maintenance FAQ',
-    'roofing materials FAQ',
-    'how to choose roofing contractor',
-    'roofing questions and answers',
-    'roof repair FAQ Charlotte NC',
-    'roofing help Charlotte NC',
-  ],
+    'Get answers to 100+ roofing questions about costs, choosing a contractor, materials, insurance claims, maintenance, timing, and technical details. Expert answers from Charlotte NC trusted roofers at Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-faq`,
   },

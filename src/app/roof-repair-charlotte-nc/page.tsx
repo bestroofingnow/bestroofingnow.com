@@ -50,23 +50,7 @@ export const metadata: Metadata = {
   title: 'Roof Repair Charlotte NC | Same-Day Service',
   description:
     'Expert roof repair in Charlotte NC. 24/7 emergency service, leak repair, storm damage restoration, and shingle replacement. Fast response, affordable prices. Free estimates from BBB A+ rated roofers.',
-  keywords: [
-    'roof repair charlotte nc',
-    'roof repair near me charlotte',
-    'roof leak repair charlotte nc',
-    'emergency roof repair charlotte nc',
-    'storm damage roof repair charlotte nc',
-    'roof repair cost charlotte nc',
-    'affordable roof repair charlotte nc',
-    'fast roof repair charlotte nc',
-    'same day roof repair charlotte nc',
-    'roof repair lake norman nc',
-    'roof repair lake wylie sc',
-    'roof repair huntersville nc',
-    'roof repair mooresville nc',
-    'roof repair fort mill sc',
-    'best roof repair company charlotte nc',
-  ],
+
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-charlotte-nc`,
   },
@@ -92,31 +76,31 @@ const repairTypes = [
   {
     icon: Droplets,
   title: 'Leak Repair',
-  description: 'Fast, permanent solutions for roof leaks. We locate the source of water intrusion and fix it right the first time.',
+  description: 'We trace the leak path from the roof down into the attic so we fix the source, not just the stain on the ceiling.',
   href: '/services/roof-repair',
   },
   {
     icon: Wind,
   title: 'Shingle Replacement',
-  description: 'Missing, cracked, or curling shingles replaced with perfect color matches and proper installation.',
+  description: 'Missing, creased, or lifted shingles after Charlotte wind events, matched as closely as the existing roof allows.',
   href: '/services/roof-repair',
   },
   {
     icon: Wrench,
   title: 'Flashing Repair',
-  description: 'Critical repairs to flashing around chimneys, vents, skylights, and valleys to prevent water damage.',
+  description: 'Chimneys, sidewalls, pipe boots, skylights, and valleys checked carefully because most mystery leaks start at transitions.',
   href: '/services/roof-repair',
   },
   {
     icon: CloudRain,
   title: 'Storm Damage Repair',
-  description: 'Emergency repairs for hail, wind, and storm damage. Insurance claim assistance included.',
+  description: 'Wind, hail, and fallen-limb repairs with photos, measurements, and insurance documentation if the damage qualifies.',
   href: '/storm-damage-roof-repair-charlotte',
   },
   {
     icon: AlertTriangle,
   title: 'Emergency Repairs',
-  description: '24/7 emergency response for urgent roof problems. Temporary tarping and permanent repairs available.',
+  description: 'Temporary tarping first when water is coming in, then a permanent repair plan once the roof is safe and dry.',
   href: '/services/emergency-roofing',
   },
   {
@@ -323,10 +307,13 @@ export default function RoofRepairCharlotteNCPage() {
               <span className="text-accent-light">Charlotte NC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-6">
-              Fast, Affordable Roof Repairs You Can Trust
+              A straight answer on whether your Charlotte roof needs a repair or a replacement.
             </p>
             <p className="speakable-intro text-lg text-white/80 mb-8 max-w-2xl">
-              Leaky roof, missing shingles, storm damage, or something that just doesn&apos;t look right? We fix roofs all over Charlotte and Lake Norman — usually same-day for active leaks. Straightforward pricing, a 2-year warranty on the work, and a real answer to the question most people are asking: do I actually need to replace this, or will a repair do? Often it&apos;s the repair.
+              Leaky roof, missing shingles, storm damage, or something that just does not look right? We fix roofs all over Charlotte
+              and Lake Norman, usually same-day for active leaks. We check the attic, photograph the problem, explain the repair in plain
+              language, and tell you when a repair is enough. If the roof is too far gone, we will say that too, but we do not sell a full
+              replacement when a clean repair will protect the house.
             </p>
 
             {/* CTA Buttons */}

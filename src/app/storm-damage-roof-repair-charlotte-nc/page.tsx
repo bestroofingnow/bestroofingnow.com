@@ -41,24 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Charlotte NC',
   description:
-    'Storm damage roof repair Charlotte NC -- 24/7 emergency response for hail, wind & hurricane damage. Insurance claim experts who meet adjusters on-site. 2026 storm season ready. Free inspection!',
-  keywords: [
-    'storm damage roof repair charlotte nc',
-    'hail damage roof repair charlotte nc',
-    'wind damage roof repair charlotte',
-    'roof insurance claim charlotte nc',
-    'storm damage roofing contractor charlotte',
-    'emergency roof repair charlotte nc',
-    'hail damage shingles charlotte',
-    'tree fell on roof charlotte nc',
-    'roof damage insurance claim charlotte',
-    'hurricane damage roof charlotte nc',
-    'roof adjuster meeting charlotte',
-    'storm damage roof repair lake norman nc',
-    'hail damage roofing lake wylie sc',
-    'storm damage roofing huntersville nc',
-    'storm damage roof repair mooresville nc',
-  ],
+    'Storm damage roof repair Charlotte NC -- 24/7 emergency response for hail, wind & hurricane damage. Insurance claim experts who meet adjusters on-site. 2026 storm season ready. Free inspection!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,
   },

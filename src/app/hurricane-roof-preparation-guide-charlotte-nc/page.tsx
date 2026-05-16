@@ -40,17 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Hurricane Roof Prep Guide Charlotte NC',
   description:
-    'Prepare your Charlotte roof for hurricane season. Inspection checklist, reinforcement options, insurance tips, and what to do before, during, and after the storm.',
-  keywords: [
-    'hurricane roof preparation Charlotte NC',
-    'hurricane season roof Charlotte',
-    'prepare roof for hurricane Charlotte',
-    'storm prep roof Charlotte NC',
-    'hurricane roof inspection Charlotte',
-    'wind resistant roofing Charlotte',
-    'hurricane roof damage prevention Charlotte',
-    'charlotte hurricane season preparation',
-  ],
+    'Prepare your Charlotte roof for hurricane season. Inspection checklist, reinforcement options, insurance tips, and what to do before, during, and after the storm.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hurricane-roof-preparation-guide-charlotte-nc`,
   },

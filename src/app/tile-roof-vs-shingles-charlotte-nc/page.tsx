@@ -39,23 +39,7 @@ const PAGE_URL = `${SITE_CONFIG.url}/tile-roof-vs-shingles-charlotte-nc`;
 export const metadata: Metadata = {
   title: 'Tile Roof vs Shingles Charlotte NC | 2026 Cost Guide',
   description:
-    'Tile roof vs asphalt shingles in Charlotte NC: costs, lifespan, weight, and storm performance compared. Free estimates from 5-star rated Charlotte roofer.',
-  keywords: [
-    'tile roof vs asphalt shingles',
-    'tile vs shingle roof cost',
-    'is tile roofing worth it',
-    'tile roof cost Charlotte NC',
-    'tile vs shingle roof Charlotte',
-    'tile roof lifespan vs shingles',
-    'tile roofing pros and cons Charlotte NC',
-    'clay tile roof cost per square foot',
-    'concrete tile vs asphalt shingles',
-    'tile roof weight requirements',
-    'best roofing material Charlotte NC',
-    'tile roof vs shingles durability',
-    'tile roof maintenance cost',
-    'asphalt shingles vs tile roof insurance',
-  ],
+    'Tile roof vs asphalt shingles in Charlotte NC: costs, lifespan, weight, and storm performance compared. Free estimates from 5-star rated Charlotte roofer.',
   alternates: {
     canonical: PAGE_URL,
   },

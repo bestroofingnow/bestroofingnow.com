@@ -35,19 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'GAF Roofing Charlotte NC',
   description:
-    'Looking for GAF roofing in Charlotte NC? Best Roofing Now is a GAF Factory-Certified contractor offering Timberline HDZ shingles with Golden Pledge warranty. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'gaf roofing charlotte nc',
-    'gaf shingles charlotte',
-    'gaf certified contractor charlotte',
-    'gaf timberline charlotte nc',
-    'gaf golden pledge warranty charlotte',
-    'gaf factory certified roofer charlotte',
-    'gaf hdz shingles charlotte nc',
-    'gaf roofing contractor near me',
-    'gaf master elite charlotte',
-    'gaf roof installation charlotte',
-  ],
+    'Looking for GAF roofing in Charlotte NC? Best Roofing Now is a GAF Factory-Certified contractor offering Timberline HDZ shingles with Golden Pledge warranty. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gaf-roofing-charlotte-nc`,
   },

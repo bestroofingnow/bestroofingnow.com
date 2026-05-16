@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Mansard Roof Guide for Charlotte NC',
   description: "What is a mansard roof? Learn how it differs from hip and gambrel roofs, costs ($14,000-$28,000), and where to find them in Charlotte NC.",
-  keywords: ['mansard roof Charlotte NC', 'French Second Empire roof', 'mansard vs hip roof', 'mansard roof cost', 'Charlotte luxury roofing', 'Eastover mansard', 'mansard slate roof', 'historic Charlotte roofs'],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Mansard Roof Guide for Charlotte NC',

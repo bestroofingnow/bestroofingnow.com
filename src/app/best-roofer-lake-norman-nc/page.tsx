@@ -38,19 +38,7 @@ import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
 export const metadata: Metadata = {
   title: 'Best Roofer Lake Norman NC',
   description:
-    'Best roofer in Lake Norman NC. 5-star rated, 500+ roofs installed, veteran-owned. BBB A+, GAF & CertainTeed certified. Call (704) 605-6047.',
-  keywords: [
-    'best roofer lake norman',
-    'best roofing company lake norman nc',
-    'top rated roofer lake norman',
-    'best roofer mooresville nc',
-    'best roofer cornelius nc',
-    '#1 roofer lake norman nc',
-    'highest rated roofer lake norman',
-    'best roofing contractor lake norman',
-    'top roofer lake norman nc',
-    'lake norman best roofing company',
-  ],
+    'Best roofer in Lake Norman NC. 5-star rated, 500+ roofs installed, veteran-owned. BBB A+, GAF & CertainTeed certified. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/best-roofer-lake-norman-nc`,
   },

@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Townhouse Roofing Charlotte NC',
   description:
-    'Expert townhouse roofing services in Charlotte NC. HOA compliant installations, shared roof specialists, and townhome roof repair. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'townhouse roofing Charlotte NC',
-    'townhome roof repair Charlotte',
-    'HOA roofing Charlotte NC',
-    'townhouse roof replacement Charlotte',
-    'shared roof repair Charlotte',
-    'townhome roofing contractor Charlotte',
-    'HOA approved roofer Charlotte NC',
-    'townhouse roofers near me',
-    'townhome roofing company Charlotte',
-    'attached home roofing Charlotte NC',
-  ],
+    'Expert townhouse roofing services in Charlotte NC. HOA compliant installations, shared roof specialists, and townhome roof repair. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc`,
   },

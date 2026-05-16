@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Ventilation Charlotte NC',
   description:
-    'Expert roof and attic ventilation services in Charlotte NC. Ridge vents, soffit vents, power ventilators - we install it all. Reduce energy bills, prevent moisture damage. BBB A+ rated. Free estimates.',
-  keywords: [
-    'roof ventilation Charlotte NC',
-    'attic ventilation Charlotte',
-    'soffit vent installation Charlotte',
-    'attic fan Charlotte NC',
-    'roof vent installation Charlotte',
-    'improve attic ventilation Charlotte',
-    'attic ventilation contractors Charlotte NC',
-    'exhaust vent installation Charlotte',
-    'intake vent installation Charlotte NC',
-    'balanced attic ventilation Charlotte',
-  ],
+    'Expert roof and attic ventilation services in Charlotte NC. Ridge vents, soffit vents, power ventilators - we install it all. Reduce energy bills, prevent moisture damage. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`,
   },

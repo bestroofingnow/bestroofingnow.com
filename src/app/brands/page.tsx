@@ -17,18 +17,6 @@ export const metadata: Metadata = {
   title: 'Roofing Brands We Install | GAF, CertainTeed, Owens Corning | Charlotte NC',
   description:
     'Certified installer for GAF (Master Elite), CertainTeed (SELECT ShingleMaster), Owens Corning (Platinum), Malarkey, and Atlas in Charlotte NC. NDL warranty eligible.',
-  keywords: [
-    'GAF roofing Charlotte',
-    'GAF Master Elite contractor',
-    'CertainTeed SELECT ShingleMaster charlotte',
-    'Owens Corning Platinum installer nc',
-    'malarkey roofing contractor',
-    'atlas roofing installer',
-    'carlisle syntec commercial roofing nc',
-    'johns manville commercial roofer',
-    'certified roofing contractor charlotte',
-    'best shingle brands',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/brands`,
   },

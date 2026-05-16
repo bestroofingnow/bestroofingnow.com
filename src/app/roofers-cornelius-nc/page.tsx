@@ -34,23 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Cornelius NC | 5-Star',
   description:
-    'Looking for trusted roofers in Cornelius NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman waterfront homes. BBB A+ rated. Free estimates.',
-  keywords: [
-    'roofers cornelius nc',
-    'cornelius roofers',
-    'local roofers cornelius',
-    'roofers in cornelius nc',
-    'cornelius nc roofers',
-    'best roofers cornelius nc',
-    'top roofers cornelius',
-    'professional roofers cornelius nc',
-    'licensed roofers cornelius',
-    'experienced roofers cornelius nc',
-    'lake norman roofers',
-    'roofers near the peninsula',
-    'waterfront roofers cornelius',
-    'roofing company cornelius nc',
-  ],
+    'Looking for trusted roofers in Cornelius NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman waterfront homes. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-cornelius-nc`,
   },

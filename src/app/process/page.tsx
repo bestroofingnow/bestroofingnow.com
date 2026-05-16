@@ -19,13 +19,6 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Our Roofing Process | What to Expect',
   description: 'Learn what to expect during your roof replacement or repair. Our step-by-step process ensures quality results and a stress-free experience.',
-  keywords: [
-    'roofing process',
-    'roof replacement steps',
-    'what to expect roof installation',
-    'roofing timeline',
-    'Charlotte roofing company',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/process`,
   },

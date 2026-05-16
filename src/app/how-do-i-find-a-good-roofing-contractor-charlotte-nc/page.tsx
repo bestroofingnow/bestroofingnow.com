@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Find a Good Roofing Contractor in Charlotte NC?',
   description:
     "Find good Charlotte NC roofer: 8-step verification (NC license, $2M+ insurance, BBB A+, manufacturer top-tier creds, written estimates, no pressure, reject deductible-rebating).",
-  keywords: [
-    'how to find good roofing contractor Charlotte NC',
-    'good roofer Charlotte',
-    'reliable Charlotte roofer',
-    'verify Charlotte roofing license',
-    'NC roofing contractor red flags',
-    'best Charlotte roofers',
-    'how to choose roofer NC',
-    'storm chaser warning signs',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Find a Good Roofing Contractor in Charlotte NC?',

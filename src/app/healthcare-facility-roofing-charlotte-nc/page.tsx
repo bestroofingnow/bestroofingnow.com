@@ -39,18 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Healthcare Roofing Charlotte NC',
   description:
-    'Expert healthcare facility roofing contractors in Charlotte NC. Specializing in hospitals, medical offices, clinics & assisted living facilities. Infection control compliant, zero-disruption installation. Free estimates.',
-  keywords: [
-    'healthcare facility roofing charlotte nc',
-    'hospital roofing charlotte nc',
-    'medical office roofing charlotte',
-    'clinic roofing charlotte nc',
-    'assisted living roofing charlotte',
-    'healthcare roof repair charlotte',
-    'medical building roofing charlotte nc',
-    'Atrium Health roofing contractor',
-    'Novant Health roofing contractor charlotte',
-  ],
+    'Expert healthcare facility roofing contractors in Charlotte NC. Specializing in hospitals, medical offices, clinics & assisted living facilities. Infection control compliant, zero-disruption installation. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/healthcare-facility-roofing-charlotte-nc`,
   },

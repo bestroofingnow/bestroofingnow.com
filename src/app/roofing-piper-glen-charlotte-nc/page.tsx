@@ -40,19 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Piper Glen Charlotte NC',
   description:
-    'Trusted roofer in Piper Glen Charlotte NC. Premium roofing for executive golf community homes. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing piper glen charlotte nc',
-    'roofers piper glen',
-    'piper glen roofing contractor',
-    'golf community roofing charlotte',
-    'piper glen roof repair',
-    'piper glen roof replacement',
-    'luxury roofing piper glen',
-    'designer shingles piper glen charlotte',
-    'best roofer piper glen charlotte',
-    'piper glen estates roofing services',
-  ],
+    'Trusted roofer in Piper Glen Charlotte NC. Premium roofing for executive golf community homes. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-piper-glen-charlotte-nc`,
   },

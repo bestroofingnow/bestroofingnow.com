@@ -42,19 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roof Repair Cost Charlotte NC | 2026 Pricing',
   description:
-    'Commercial roof repair cost in Charlotte NC: TPO $3-$8/sq ft, EPDM $3-$7/sq ft, metal $5-$12/sq ft. Full pricing guide with free estimates.',
-  keywords: [
-    'commercial roof repair cost charlotte nc',
-    'commercial roofing cost per square foot charlotte',
-    'flat roof repair cost charlotte',
-    'commercial roof maintenance cost',
-    'TPO roof repair cost',
-    'commercial roof repair charlotte nc',
-    'EPDM roof repair cost charlotte',
-    'PVC roof repair cost charlotte nc',
-    'commercial roofing repair pricing',
-    'flat roof repair cost per square foot',
-  ],
+    'Commercial roof repair cost in Charlotte NC: TPO $3-$8/sq ft, EPDM $3-$7/sq ft, metal $5-$12/sq ft. Full pricing guide with free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roof-repair-cost-charlotte-nc`,
   },

@@ -36,23 +36,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Huntersville',
   description:
-    'Expert commercial roofing in Huntersville NC. TPO, EPDM, flat roofs, metal roofing for warehouses, offices & retail. Birkdale Village to Northcross. BBB A+ rated, veteran-owned. Free estimates!',
-  keywords: [
-    'commercial roofing huntersville nc',
-    'commercial roofing contractors huntersville',
-    'commercial roof repair huntersville nc',
-    'flat roof contractors huntersville',
-    'tpo roofing huntersville nc',
-    'epdm roofing huntersville',
-    'industrial roofing huntersville nc',
-    'warehouse roofing huntersville',
-    'office building roofing huntersville',
-    'commercial flat roof huntersville nc',
-    'metal roofing commercial huntersville',
-    'roof coating huntersville nc',
-    'commercial roofer huntersville',
-    'business roofing huntersville nc',
-  ],
+    'Expert commercial roofing in Huntersville NC. TPO, EPDM, flat roofs, metal roofing for warehouses, offices & retail. Birkdale Village to Northcross. BBB A+ rated, veteran-owned. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-huntersville-nc`,
   },

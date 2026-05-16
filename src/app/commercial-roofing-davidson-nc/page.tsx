@@ -39,20 +39,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Davidson NC',
   description:
-    'Commercial roofing in Davidson NC — TPO, EPDM, PVC, modified bitumen, metal for Lake Norman businesses. 30-yr NDL warranties, weekend installs, property-manager friendly.',
-  keywords: [
-    'commercial roofing davidson nc',
-    'commercial roof repair davidson',
-    'flat roof davidson nc',
-    'tpo roofing davidson nc',
-    'epdm roofing davidson',
-    'pvc roofing davidson nc',
-    'modified bitumen davidson',
-    'commercial roofing contractors davidson',
-    'business roofing davidson nc',
-    'lake norman commercial roofing',
-    'low slope roofing davidson nc',
-  ],
+    'Commercial roofing in Davidson NC — TPO, EPDM, PVC, modified bitumen, metal for Lake Norman businesses. 30-yr NDL warranties, weekend installs, property-manager friendly.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-davidson-nc`,
   },

@@ -19,14 +19,6 @@ import {
 export const metadata: Metadata = {
   title: 'Attic Ventilation Charlotte NC',
   description: 'Improve your home\'s energy efficiency with proper attic ventilation. Ridge vents, soffit vents, and ventilation solutions for Charlotte homes.',
-  keywords: [
-    'attic ventilation Charlotte',
-    'roof ventilation',
-    'ridge vent installation',
-    'soffit vents',
-    'energy efficient roofing',
-    'cool roof Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/ventilation`,
   },

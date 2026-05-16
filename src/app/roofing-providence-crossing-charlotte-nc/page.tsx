@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Providence Crossing Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Roofing contractor in Providence Crossing, Charlotte NC. Roof replacement, repair, and storm damage. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing providence crossing charlotte nc',
-    'roofer providence crossing charlotte',
-    'providence crossing roof replacement',
-    'providence crossing roof repair charlotte nc',
-    'roofing contractor providence crossing',
-    'providence road roofing charlotte',
-    'south charlotte roofing providence crossing',
-    'providence crossing neighborhood roofer',
-    'best roofer providence crossing charlotte',
-    'providence crossing charlotte roofing services',
-  ],
+    'Roofing contractor in Providence Crossing, Charlotte NC. Roof replacement, repair, and storm damage. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-providence-crossing-charlotte-nc`,
   },

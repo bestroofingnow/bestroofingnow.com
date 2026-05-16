@@ -40,17 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Maintenance Checklist',
   description:
-    'Seasonal roof maintenance checklist for Charlotte NC homeowners. Spring, summer, fall, and winter tasks to extend your roof life. DIY tips and professional inspection guidance from BBB A+ rated roofers.',
-  keywords: [
-    'roof maintenance checklist charlotte nc',
-    'roof maintenance tips',
-    'annual roof maintenance charlotte',
-    'how to maintain your roof',
-    'roof care guide charlotte nc',
-    'preventive roof maintenance',
-    'seasonal roof checklist',
-    'roof upkeep charlotte',
-  ],
+    'Seasonal roof maintenance checklist for Charlotte NC homeowners. Spring, summer, fall, and winter tasks to extend your roof life. DIY tips and professional inspection guidance from BBB A+ rated roofers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance-checklist-charlotte-nc`,
   },

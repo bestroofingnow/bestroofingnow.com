@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Condo Roofing Charlotte NC | HOA',
   description:
-    'Expert condo roofing services in Charlotte NC. Association approved installations, flat and low-slope roof specialists, condominium roof repair. BBB A+ rated. Free estimates.',
-  keywords: [
-    'condo roofing Charlotte NC',
-    'condominium roof repair Charlotte',
-    'condo association roofing Charlotte',
-    'flat roof condo Charlotte NC',
-    'low slope roofing Charlotte',
-    'condo roof replacement Charlotte',
-    'condominium roofing contractor Charlotte',
-    'condo HOA roofer Charlotte NC',
-    'condo complex roofing Charlotte',
-    'association approved roofing Charlotte',
-  ],
+    'Expert condo roofing services in Charlotte NC. Association approved installations, flat and low-slope roof specialists, condominium roof repair. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/condo-roofing-charlotte-nc`,
   },

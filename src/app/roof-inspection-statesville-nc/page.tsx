@@ -32,19 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Statesville NC',
   description:
-    'Free roof inspection in Statesville NC. Best Roofing Now provides comprehensive roof inspections with detailed photo reports for Iredell County homes. BBB A+ rated, veteran-owned. Schedule your free inspection today!',
-  keywords: [
-    'roof inspection statesville nc',
-    'free roof inspection statesville',
-    'roof inspection near me statesville',
-    'statesville roof inspection',
-    'iredell county roof inspection',
-    'roof condition report statesville',
-    'roof inspection company statesville nc',
-    'home roof inspection statesville',
-    'certified roof inspector statesville',
-    'roof assessment statesville nc',
-  ],
+    'Free roof inspection in Statesville NC. Best Roofing Now provides comprehensive roof inspections with detailed photo reports for Iredell County homes. BBB A+ rated, veteran-owned. Schedule your free inspection today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-statesville-nc`,
   },

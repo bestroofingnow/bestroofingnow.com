@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'Do I Need New Gutters With a New Roof in Charlotte NC?',
   description:
     "Charlotte NC gutter+roof bundle decision: replace gutters with roof when 15+ yr old or upgrading to 6-inch. Bundle saves 15-30%. Single Xactimate insurance claim possible.",
-  keywords: [
-    'do I need new gutters with new roof Charlotte NC',
-    'gutter and roof bundle Charlotte',
-    'replace gutters with roof',
-    'new gutters Charlotte NC',
-    '5 inch vs 6 inch gutters',
-    'gutter cost Charlotte NC',
-    'gutter guards new roof',
-    'gutter insurance claim',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Do I Need New Gutters With a New Roof in Charlotte NC?',

@@ -39,20 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Winter Roof Repair Charlotte NC',
   description:
-    'Expert winter roof repair in Charlotte NC. Cold weather specialists handling ice dam prevention, frozen pipe damage, snow load issues, and emergency repairs. Available 24/7 during winter storms.',
-  keywords: [
-    'winter roof repair Charlotte NC',
-    'roof repair winter Charlotte',
-    'cold weather roof repair',
-    'ice dam prevention Charlotte',
-    'ice dam removal Charlotte NC',
-    'winter roofing services',
-    'emergency roof repair winter',
-    'frozen roof repair Charlotte',
-    'snow damage roof repair',
-    'winter storm roof damage',
-    'Charlotte winter roofer',
-  ],
+    'Expert winter roof repair in Charlotte NC. Cold weather specialists handling ice dam prevention, frozen pipe damage, snow load issues, and emergency repairs. Available 24/7 during winter storms.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/winter-roof-repair-charlotte-nc`,
   },

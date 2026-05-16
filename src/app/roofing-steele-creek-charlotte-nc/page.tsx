@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Steele Creek Charlotte NC',
   description:
-    'Professional roofing services for Steele Creek Charlotte NC. Specializing in newer subdivisions, family homes, and growing communities. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing steele creek charlotte nc',
-    'roofers steele creek',
-    'steele creek roof repair',
-    'steele creek roof replacement',
-    'southwest charlotte roofing',
-    'steele creek roofing contractor',
-    'family home roofing steele creek',
-    'subdivision roofing charlotte nc',
-    'roof repair steele creek charlotte',
-    'best roofer steele creek',
-  ],
+    'Professional roofing services for Steele Creek Charlotte NC. Specializing in newer subdivisions, family homes, and growing communities. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-steele-creek-charlotte-nc`,
   },

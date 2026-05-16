@@ -37,16 +37,6 @@ export const metadata: Metadata = {
   title: 'Free Roof Estimate Charlotte NC',
   description:
     'Free, no-obligation roof estimate in Charlotte NC. 48-hour scheduling, 30+ photo documentation, attic check, decking probe, and detailed written estimate within 24-48 hours. BBB A+ rated.',
-  keywords: [
-    'free roof estimate Charlotte NC',
-    'free roof inspection Charlotte',
-    'no obligation roof quote Charlotte',
-    'roof estimate near me',
-    'free roofing quote Charlotte NC',
-    'Charlotte roof estimate',
-    'free roof assessment',
-    'roof inspection cost Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/free-roof-estimate-charlotte-nc`,
   },

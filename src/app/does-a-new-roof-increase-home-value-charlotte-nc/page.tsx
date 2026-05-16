@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'Does a New Roof Increase Home Value in Charlotte NC?',
   description:
     "Yes — new roof adds $12-15K Charlotte home value (2024 Cost vs Value), 60-95% ROI by material, 10-15 fewer days on market, FHA/VA approval, full RCV insurance coverage.",
-  keywords: [
-    'does a new roof increase home value Charlotte NC',
-    'new roof ROI Charlotte',
-    'roof replacement before selling',
-    'FHA VA roof certification Charlotte',
-    'home value roof age',
-    'cost vs value roof Charlotte',
-    'roof appraisal value',
-    'sell home with old roof',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Does a New Roof Increase Home Value in Charlotte NC?',

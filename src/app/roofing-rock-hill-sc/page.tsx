@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Rock Hill SC | 5-Star',
   description:
-    'Looking for roofing services in Rock Hill SC? Best Roofing Now serves Rock Hill and York County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation near Winthrop and the Galleria.',
-  keywords: [
-    'roofing rock hill sc',
-    'roofers rock hill sc',
-    'roof repair rock hill sc',
-    'roof replacement rock hill',
-    'york county roofing company',
-    'rock hill roof contractor',
-    'roofing company rock hill sc',
-    'winthrop area roofing',
-    'galleria rock hill roofers',
-    'rock hill sc roofing services',
-  ],
+    'Looking for roofing services in Rock Hill SC? Best Roofing Now serves Rock Hill and York County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation near Winthrop and the Galleria.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-rock-hill-sc`,
   },

@@ -37,16 +37,6 @@ export const metadata: Metadata = {
   title: 'Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust',
   description:
     'Professional metal roofing installation services in Charlotte NC. Hire a trusted contractor for standing seam, metal shingles, and corrugated panel installation. 50+ year lifespan, energy efficient. GAF certified. Free estimates!',
-  keywords: [
-    'metal roofing installation services Charlotte NC',
-    'metal roofing contractor Charlotte NC',
-    'metal roof installation Charlotte',
-    'metal roof contractor near me',
-    'steel roofing installation Charlotte NC',
-    'metal shingle installation Charlotte',
-    'metal roofing company Charlotte',
-    'hire metal roofing contractor Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-services`,
   },

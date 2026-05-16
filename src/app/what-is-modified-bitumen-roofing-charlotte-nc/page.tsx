@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Modified Bitumen Roofing Charlotte NC',
   description: "What modified bitumen roofing is and whether it's right for Charlotte NC commercial buildings. APP vs SBS, costs $6-$12/sq ft, 15-25 year lifespan.",
-  keywords: ['modified bitumen roofing charlotte nc', 'mod bit roof charlotte', 'app sbs roofing', 'commercial flat roof charlotte', 'torch down roofing charlotte', 'low slope roofing mecklenburg', 'commercial roofer charlotte nc', 'warehouse roofing charlotte'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'Modified Bitumen Roofing Charlotte NC', description: 'APP vs SBS modified bitumen roofing for Charlotte NC commercial buildings. Costs, lifespan, and comparison to TPO.', url: PAGE_URL, type: 'article' },
 };

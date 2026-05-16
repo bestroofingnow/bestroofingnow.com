@@ -39,22 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Hail Damage Roof Repair Charlotte',
   description:
-    'Hail damage roof repair in Charlotte NC. Best Roofing Now specializes in hail storm damage assessment, insurance claims assistance, and professional repairs. BBB A+ rated, licensed & insured. Free inspections after any storm.',
-  keywords: [
-    'hail damage roof repair charlotte nc',
-    'hail damage roofing charlotte nc',
-    'hail storm roof damage charlotte nc',
-    'hail damage insurance claim charlotte nc',
-    'how to tell if roof has hail damage charlotte',
-    'hail damage roofing contractor charlotte nc',
-    'hail damage restoration charlotte nc',
-    'hail damage roof repair lake norman nc',
-    'hail damage roof repair lake wylie sc',
-    'hail damage roof repair huntersville nc',
-    'hail damage roof repair mooresville nc',
-    'does insurance cover hail damage roof charlotte nc',
-    'free hail damage roof inspection charlotte nc',
-  ],
+    'Hail damage roof repair in Charlotte NC. Best Roofing Now specializes in hail storm damage assessment, insurance claims assistance, and professional repairs. BBB A+ rated, licensed & insured. Free inspections after any storm.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`,
   },

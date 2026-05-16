@@ -40,19 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gated Community Roofing Charlotte NC',
   description:
-    'HOA-compliant roofing for Charlotte\'s gated communities. We handle architectural review approvals, material matching, and community references. The Peninsula, Piper Glen, Quail Hollow specialists. Free estimates.',
-  keywords: [
-    'gated community roofing charlotte nc',
-    'HOA roof replacement charlotte nc',
-    'HOA compliant roofing charlotte',
-    'gated community roofer charlotte nc',
-    'HOA approved roofing contractor charlotte',
-    'architectural review roofing charlotte',
-    'private community roofing charlotte nc',
-    'HOA roofing approval charlotte',
-    'gated neighborhood roofer charlotte',
-    'charlotte HOA roofing contractor',
-  ],
+    'HOA-compliant roofing for Charlotte\'s gated communities. We handle architectural review approvals, material matching, and community references. The Peninsula, Piper Glen, Quail Hollow specialists. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gated-community-roofing-charlotte-nc`,
   },

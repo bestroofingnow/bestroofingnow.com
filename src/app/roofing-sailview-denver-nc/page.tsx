@@ -38,24 +38,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Sailview Denver NC',
   description:
-    'Wind-rated roofing for Sailview waterfront and lake-access homes in Denver NC. Standing-seam metal, Class 4 shingles, storm repairs. BBB A+ rated. Free estimates.',
-  keywords: [
-    'sailview roofing',
-    'sailview denver nc roofer',
-    'roof replacement sailview',
-    'sailview waterfront roofing',
-    'sailview lake norman roofing',
-    'metal roofing sailview denver nc',
-    'standing seam metal sailview',
-    'wind resistant roof sailview',
-    'storm damage roof sailview denver nc',
-    'sailview hoa roof replacement',
-    'lake norman western shore roofing',
-    '28037 roofing contractor',
-    'lincoln county roofer denver nc',
-    'sailview marina roof',
-    'lake norman waterfront roofing denver',
-  ],
+    'Wind-rated roofing for Sailview waterfront and lake-access homes in Denver NC. Standing-seam metal, Class 4 shingles, storm repairs. BBB A+ rated. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-sailview-denver-nc`,
   },

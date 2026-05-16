@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Causes Shingle Granule Loss on My Charlotte NC Roof?',
   description:
     "Shingle granule loss causes: normal aging, hail damage, UV degradation, foot traffic, pressure washing. Check Charlotte NC gutters for accumulation. Heavy = reroof needed.",
-  keywords: [
-    'what causes shingle granule loss Charlotte NC',
-    'roof granules in gutter',
-    'shingle aging signs',
-    'hail damage granule loss',
-    'pressure wash granule loss',
-    'roof granule replacement',
-    'shingle UV degradation',
-    'when reroof Charlotte signs',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Causes Shingle Granule Loss on My Charlotte NC Roof?',

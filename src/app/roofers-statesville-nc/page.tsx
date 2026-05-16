@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Statesville NC',
   description:
-    'Looking for roofers in Statesville NC? Best Roofing Now is a BBB A+ rated, veteran-owned roofing company serving Statesville and Iredell County. Licensed, insured, certified installers. Free estimates for all roofing services.',
-  keywords: [
-    'roofers statesville nc',
-    'roofer statesville nc',
-    'roofing contractors statesville',
-    'best roofers statesville nc',
-    'local roofers statesville',
-    'iredell county roofers',
-    'statesville roofing contractors',
-    'roofer near me statesville nc',
-    'licensed roofer statesville',
-    'top rated roofers statesville nc',
-  ],
+    'Looking for roofers in Statesville NC? Best Roofing Now is a BBB A+ rated, veteran-owned roofing company serving Statesville and Iredell County. Licensed, insured, certified installers. Free estimates for all roofing services.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-statesville-nc`,
   },

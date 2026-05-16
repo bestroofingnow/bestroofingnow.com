@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is Roof Decking and How Do I Know If Mine Needs Replacement in Charlotte NC?',
   description:
     "Roof decking = plywood/OSB structural base. NC IRC §R803 requires 7/16-inch OSB or 15/32-inch plywood. Charlotte reroofs typically replace 5-15% of decking ($400-$1,500 add-on).",
-  keywords: [
-    'what is roof decking Charlotte NC',
-    'roof sheathing replacement',
-    'plywood vs OSB decking',
-    'NC IRC R803 decking',
-    'rotted decking replacement',
-    'CDX plywood roof',
-    'roof decking cost Charlotte',
-    'decking inspection',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Decking and How Do I Know If Mine Needs Replacement in Charlotte NC?',

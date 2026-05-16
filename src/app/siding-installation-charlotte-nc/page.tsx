@@ -39,17 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Siding Charlotte NC | Install',
   description:
-    'Professional siding installation in Charlotte NC by Best Roofing Now. Vinyl siding, James Hardie fiber cement, LP SmartSide, and board & batten. Veteran-owned, BBB A+ rated. Free estimates for siding replacement and repair.',
-  keywords: [
-    'siding installation charlotte nc',
-    'siding company charlotte',
-    'vinyl siding charlotte nc',
-    'james hardie siding charlotte',
-    'fiber cement siding charlotte nc',
-    'siding replacement charlotte',
-    'siding contractors charlotte nc',
-    'siding repair charlotte nc',
-  ],
+    'Professional siding installation in Charlotte NC by Best Roofing Now. Vinyl siding, James Hardie fiber cement, LP SmartSide, and board & batten. Veteran-owned, BBB A+ rated. Free estimates for siding replacement and repair.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/siding-installation-charlotte-nc`,
   },

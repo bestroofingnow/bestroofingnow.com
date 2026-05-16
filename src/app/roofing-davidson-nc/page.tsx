@@ -33,19 +33,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roofing Davidson NC | Top Rated',
   description:
-    'Looking for a trusted roofing company in Davidson NC? Best Roofing Now serves Davidson and Lake Norman from our Charlotte headquarters. Expert roofers for historic homes and modern properties. BBB A+ rated, veteran-owned.',
-  keywords: [
-    'roofing davidson nc',
-    'roofing company davidson nc',
-    'davidson roofers',
-    'davidson nc roofing contractor',
-    'roof repair davidson nc',
-    'roof replacement davidson nc',
-    'davidson college area roofing',
-    'roofers near davidson nc',
-    'best roofer davidson',
-    'historic home roofing davidson',
-  ],
+    'Looking for a trusted roofing company in Davidson NC? Best Roofing Now serves Davidson and Lake Norman from our Charlotte headquarters. Expert roofers for historic homes and modern properties. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-davidson-nc`,
   },

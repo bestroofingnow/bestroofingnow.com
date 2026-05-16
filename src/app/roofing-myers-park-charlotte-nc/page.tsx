@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Myers Park Charlotte NC',
   description:
-    'Looking for a trusted roofer in Myers Park Charlotte NC? Best Roofing Now specializes in luxury home roofing with premium materials for large estates. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing myers park charlotte nc',
-    'roofers myers park',
-    'myers park roofing contractor',
-    'luxury home roofers charlotte',
-    'myers park roof repair',
-    'myers park roof replacement',
-    'estate roofing charlotte',
-    'premium roofing myers park',
-    'best roofer myers park charlotte',
-    'myers park charlotte roofing services',
-  ],
+    'Looking for a trusted roofer in Myers Park Charlotte NC? Best Roofing Now specializes in luxury home roofing with premium materials for large estates. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-myers-park-charlotte-nc`,
   },

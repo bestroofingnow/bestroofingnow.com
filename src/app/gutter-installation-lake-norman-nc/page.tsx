@@ -31,21 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Lake Norman NC | Seamless Gutters & Guards',
   description:
-    'Professional gutter installation across Lake Norman NC. Seamless aluminum gutters, gutter guards, and repairs for lakefront homes in Cornelius, Davidson, Mooresville, Huntersville & Denver. Free estimates!',
-  keywords: [
-    'gutter installation lake norman nc',
-    'seamless gutters lake norman',
-    'gutter guards lake norman',
-    'gutter company lake norman nc',
-    'gutter repair lake norman nc',
-    'aluminum gutters lake norman',
-    'gutter replacement lake norman',
-    'lakefront gutter installation',
-    'lake norman gutter contractor',
-    'downspout installation lake norman nc',
-    'gutter cleaning lake norman',
-    'seamless gutters cornelius nc',
-  ],
+    'Professional gutter installation across Lake Norman NC. Seamless aluminum gutters, gutter guards, and repairs for lakefront homes in Cornelius, Davidson, Mooresville, Huntersville & Denver. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-lake-norman-nc`,
   },

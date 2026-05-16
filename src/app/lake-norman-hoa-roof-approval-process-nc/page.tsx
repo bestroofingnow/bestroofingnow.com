@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is the Lake Norman HOA Roof Approval Process in NC?',
   description:
     "Lake Norman NC HOA roof approval: 7-step process including ARB packet, FirstService/CAMS/AMG/RealManage submission, 2-4 week review (4-6 weeks for premier estates).",
-  keywords: [
-    'Lake Norman HOA roof approval NC',
-    'Cornelius HOA roof process',
-    'Davidson HOA roof approval',
-    'Huntersville HOA roofing',
-    'The Peninsula HOA roof',
-    'Skybrook HOA roof approval',
-    'lake norman ARB roof submission',
-    'lake norman roof permit HOA',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is the Lake Norman HOA Roof Approval Process in NC?',

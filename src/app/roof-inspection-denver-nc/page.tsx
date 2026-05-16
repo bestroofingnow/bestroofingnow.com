@@ -33,21 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Denver NC | Free',
   description:
-    'Free roof inspections in Denver NC. Comprehensive assessments with detailed reports for Lake Norman western shore homes. BBB A+ rated. Schedule today!',
-  keywords: [
-    'roof inspection Denver NC',
-    'free roof inspection Denver',
-    'roof assessment Denver NC',
-    'roof inspection near me Denver',
-    'Lake Norman western shore roof inspection',
-    'roof evaluation Denver NC',
-    'home inspection roofing Denver NC',
-    'roof condition report Denver',
-    'pre-purchase roof inspection Denver',
-    'storm damage inspection Denver NC',
-    'Lincoln County roof inspection',
-    'Trilogy at Lake Norman roof inspection',
-  ],
+    'Free roof inspections in Denver NC. Comprehensive assessments with detailed reports for Lake Norman western shore homes. BBB A+ rated. Schedule today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-denver-nc`,
   },

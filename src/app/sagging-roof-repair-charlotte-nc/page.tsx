@@ -38,19 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Sagging Roof Repair Charlotte NC',
   description:
-    'Expert sagging roof repair in Charlotte NC. Water damage, structural issues, age-related sag - we fix it all. Licensed structural roofing experts. BBB A+ rated, veteran-owned. Free inspections.',
-  keywords: [
-    'sagging roof repair Charlotte NC',
-    'roof sagging fix Charlotte',
-    'structural roof repair Charlotte NC',
-    'roof dip repair Charlotte',
-    'bowed roof Charlotte NC',
-    'roof structural damage Charlotte',
-    'fix sagging roof Charlotte',
-    'roof deck repair Charlotte NC',
-    'rafter repair Charlotte',
-    'roof truss repair Charlotte NC',
-  ],
+    'Expert sagging roof repair in Charlotte NC. Water damage, structural issues, age-related sag - we fix it all. Licensed structural roofing experts. BBB A+ rated, veteran-owned. Free inspections.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc`,
   },

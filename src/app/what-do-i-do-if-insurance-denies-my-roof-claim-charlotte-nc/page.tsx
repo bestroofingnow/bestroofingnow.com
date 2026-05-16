@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Do I Do if My Insurance Denies My Roof Claim in Charlotte NC?',
   description:
     "If insurance denies Charlotte NC roof claim: get written denial letter, order Xactimate independent inspection, file supplemental, invoke appraisal clause. 30-40% overturn rate.",
-  keywords: [
-    'insurance denied my roof claim Charlotte NC',
-    'roof insurance claim denial',
-    'appraisal clause roof claim',
-    'NC Department of Insurance complaint',
-    'supplemental insurance claim roof',
-    'public adjuster Charlotte NC',
-    'storm damage claim denial',
-    'wear and tear claim denial',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Do I Do if My Insurance Denies My Roof Claim in Charlotte NC?',

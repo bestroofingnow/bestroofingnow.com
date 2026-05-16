@@ -36,16 +36,6 @@ export const metadata: Metadata = {
   title: 'Roofing Eastover Charlotte NC',
   description:
     "Roofing for Eastover, Charlotte's prestigious historic estate community. Slate, copper, cedar shake, and designer architectural shingle restoration on 1920s-1940s mansions. HOA ARB coordination, structural engineering, 30-50 yr warranties.",
-  keywords: [
-    'roofing Eastover Charlotte NC',
-    'Eastover roof replacement',
-    'Eastover slate roofing',
-    'Eastover historic roofing',
-    'Eastover estate roofer',
-    'Charlotte historic district roofing',
-    'Myers Park Eastover roofing',
-    'luxury roofing Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-eastover-charlotte-nc`,
   },

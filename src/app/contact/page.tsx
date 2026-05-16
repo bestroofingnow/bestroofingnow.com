@@ -49,11 +49,10 @@ const contactPageSchema = {
       opens: '00:00',
       closes: '23:59',
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: SITE_CONFIG.customerCount.toString(),
-    },
+    // aggregateRating intentionally omitted — /contact has no visible reviews on the page.
+    // Per §9 of .claude/plan/brn-gold-standard.md and Google's review-snippet guidelines,
+    // aggregateRating must only be emitted on pages that display visible review content.
+    // Approved opt-in pages: / and /reviews via <LocalBusinessSchema includeRating={true} />.
   },
 };
 

@@ -39,19 +39,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Mooresville NC | 5-Star',
   description:
-    'Looking for a trusted roofing contractor in Mooresville NC? Best Roofing Now serves Mooresville and Lake Norman from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
-  keywords: [
-    'roofing mooresville nc',
-    'roofing contractor mooresville nc',
-    'mooresville roofers',
-    'mooresville nc roofing company',
-    'roof repair mooresville nc',
-    'roof replacement mooresville nc',
-    'lake norman roofers',
-    'roofers near mooresville nc',
-    'best roofer mooresville',
-    'mooresville roof inspection',
-  ],
+    'Looking for a trusted roofing contractor in Mooresville NC? Best Roofing Now serves Mooresville and Lake Norman from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-mooresville-nc`,
   },

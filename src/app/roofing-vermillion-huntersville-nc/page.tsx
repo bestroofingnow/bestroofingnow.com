@@ -39,19 +39,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Vermillion Huntersville NC',
   description:
-    'Vermillion Huntersville NC roofer serving the Verhoeff Drive TND. Architectural shingles, ARC color compliance, metal accents. BBB A+. Free estimates.',
-  keywords: [
-    'vermillion roofing',
-    'vermillion huntersville roofer',
-    'roof repair vermillion',
-    'roof replacement vermillion',
-    'vermillion huntersville nc roofing',
-    'verhoeff drive roofing',
-    'tnd roofing huntersville',
-    'vermillion arc roof approval',
-    'vermillion hoa roofing colors',
-    '28078 roofing contractor',
-  ],
+    'Vermillion Huntersville NC roofer serving the Verhoeff Drive TND. Architectural shingles, ARC color compliance, metal accents. BBB A+. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-vermillion-huntersville-nc`,
   },

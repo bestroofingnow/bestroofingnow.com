@@ -28,17 +28,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofers Mt Holly NC | Local Experts',
   description:
-    'Looking for trusted roofers in Mt Holly NC? Best Roofing Now offers expert residential and commercial roofing services. BBB A+ rated, veteran-owned, free estimates. Call today!',
-  keywords: [
-    'roofers mt holly nc',
-    'roofing contractors mt holly nc',
-    'local roofers mt holly',
-    'best roofers mt holly nc',
-    'mt holly roofing contractors',
-    'roofing company mt holly nc',
-    'roof contractors mt holly',
-    'mt holly nc roofers',
-  ],
+    'Looking for trusted roofers in Mt Holly NC? Best Roofing Now offers expert residential and commercial roofing services. BBB A+ rated, veteran-owned, free estimates. Call today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-mt-holly-nc`,
   },

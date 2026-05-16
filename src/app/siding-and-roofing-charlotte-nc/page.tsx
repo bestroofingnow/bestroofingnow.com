@@ -35,16 +35,6 @@ export const metadata: Metadata = {
   title: 'Siding and Roofing Charlotte NC',
   description:
     'Bundled siding and roofing replacement in Charlotte NC. Save 20-35% versus separate scopes. James Hardie HardiePlank Preferred Contractor + GAF Master Elite roofer with 30-50 yr warranties on shingles and 50 yr on Hardie.',
-  keywords: [
-    'siding and roofing Charlotte NC',
-    'roof and siding replacement Charlotte',
-    'James Hardie installer Charlotte NC',
-    'HardiePlank siding Charlotte',
-    'roof siding bundle Charlotte NC',
-    'exterior renovation Charlotte',
-    'whole house exterior Charlotte NC',
-    'siding contractor Charlotte',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/siding-and-roofing-charlotte-nc`,
   },

@@ -15,19 +15,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: '24/7 Emergency Roofing Services Charlotte NC | 1-2 Hour Response',
-  description: 'Charlotte NC 24/7 emergency roofing hotline. We respond in 1-2 hours for roof emergencies - active leaks, fallen trees, sudden damage. Call (704) 605-6047 anytime!',
-  keywords: [
-    '24/7 roofing service charlotte nc',
-    '24 hour roofer charlotte',
-    'emergency roofing hotline charlotte',
-    'roofer on call charlotte nc',
-    'night time roof repair charlotte',
-    'after hours roofer charlotte nc',
-    'weekend roofing service charlotte',
-    'immediate roof help charlotte',
-    'round the clock roofer charlotte nc',
-    'late night roof repair charlotte',
-  ],
+  description: 'Charlotte NC 24/7 emergency roofing hotline. We respond in 1-2 hours for roof emergencies - active leaks, fallen trees, sudden damage. Call (704) 605-6047 anytime!',
   openGraph: {
     title: '24/7 Emergency Roof Repair Charlotte NC | 1-2 Hour Response',
   description: 'Emergency roof repair available 24/7 in Charlotte NC. Storm damage, active leaks, fallen trees - we respond in 1-2 hours. Call now!',

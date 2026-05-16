@@ -39,21 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Standing Seam Metal Roof Charlotte NC | Premium Metal Roofing',
   description:
-    'Expert standing seam metal roof installation in Charlotte NC. Premium metal roofing with 50+ year lifespan, superior energy efficiency, and stunning curb appeal. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'standing seam metal roof charlotte nc',
-    'standing seam roofing charlotte',
-    'metal roof charlotte nc',
-    'metal roofing contractors charlotte',
-    'standing seam metal roof installation',
-    'premium metal roofing charlotte',
-    'metal roof cost charlotte nc',
-    'steel roofing charlotte nc',
-    'metal roof colors charlotte',
-    'energy efficient metal roof charlotte',
-    'residential metal roofing charlotte',
-    'metal roof replacement charlotte nc',
-  ],
+    'Expert standing seam metal roof installation in Charlotte NC. Premium metal roofing with 50+ year lifespan, superior energy efficiency, and stunning curb appeal. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/standing-seam-metal-roof-charlotte-nc`,
   },

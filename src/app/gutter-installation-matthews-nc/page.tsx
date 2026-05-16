@@ -37,19 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Matthews NC',
   description:
-    'Seamless gutter installation in Matthews NC. K-style aluminum, half-round copper, 5"/6"/7" sizes, gutter guards. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'gutter installation matthews nc',
-    'seamless gutters matthews nc',
-    'gutter replacement matthews',
-    'gutter contractors matthews nc',
-    'new gutters matthews nc',
-    'gutter guards matthews',
-    'gutter company matthews nc',
-    '6 inch gutters matthews nc',
-    'copper gutters matthews',
-    'k style gutters matthews nc',
-  ],
+    'Seamless gutter installation in Matthews NC. K-style aluminum, half-round copper, 5"/6"/7" sizes, gutter guards. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-matthews-nc`,
   },

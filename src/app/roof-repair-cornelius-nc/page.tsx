@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Cornelius NC',
   description:
-    'Need roof repair in Cornelius NC? Best Roofing Now provides fast, reliable roof repair services near Lake Norman. BBB A+ rated, veteran-owned. Emergency roof repairs, leak fixes, shingle replacement, and storm damage repair. Free estimates!',
-  keywords: [
-    'roof repair Cornelius NC',
-    'roofing repair Cornelius',
-    'Cornelius roof repair',
-    'roof leak repair Cornelius NC',
-    'emergency roof repair Cornelius',
-    'Lake Norman roofer',
-    'shingle repair Cornelius NC',
-    'storm damage repair Cornelius',
-    'roof repair near me Cornelius',
-    'fix roof leak Cornelius NC',
-    'roofer Cornelius NC',
-    'roofing contractor Cornelius',
-  ],
+    'Need roof repair in Cornelius NC? Best Roofing Now provides fast, reliable roof repair services near Lake Norman. BBB A+ rated, veteran-owned. Emergency roof repairs, leak fixes, shingle replacement, and storm damage repair. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-cornelius-nc`,
   },

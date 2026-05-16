@@ -32,19 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Install Huntersville NC',
   description:
-    'Professional gutter installation in Huntersville NC. Custom seamless gutters, gutter guards, and repairs. Protect your home from water damage. Free estimates!',
-  keywords: [
-    'gutter installation Huntersville NC',
-    'gutters Huntersville',
-    'seamless gutters Huntersville NC',
-    'gutter company Huntersville',
-    'gutter repair Huntersville NC',
-    'gutter guards Huntersville',
-    'aluminum gutters Huntersville',
-    'gutter replacement Huntersville NC',
-    'gutter contractor near me',
-    'gutter installation Lake Norman',
-  ],
+    'Professional gutter installation in Huntersville NC. Custom seamless gutters, gutter guards, and repairs. Protect your home from water damage. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-huntersville-nc`,
   },

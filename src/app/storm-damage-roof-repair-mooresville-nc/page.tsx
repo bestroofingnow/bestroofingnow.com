@@ -39,21 +39,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Repair Mooresville',
   description:
-    'Expert storm damage roof repair in Mooresville NC and the Lake Norman area. Hail damage repair, wind damage restoration, and insurance claim assistance. BBB A+ rated, veteran-owned. Free storm damage inspections.',
-  keywords: [
-    'storm damage roof repair Mooresville NC',
-    'hail damage Mooresville',
-    'storm damage roofer Mooresville',
-    'Lake Norman storm damage repair',
-    'hail damage roof repair Mooresville NC',
-    'wind damage roof Mooresville',
-    'roof insurance claim Mooresville NC',
-    'emergency roof repair Mooresville',
-    'storm damage restoration Mooresville NC',
-    'hail damage insurance claim Mooresville',
-    'roof repair after storm Mooresville',
-    'Mooresville roofing contractor storm damage',
-  ],
+    'Expert storm damage roof repair in Mooresville NC and the Lake Norman area. Hail damage repair, wind damage restoration, and insurance claim assistance. BBB A+ rated, veteran-owned. Free storm damage inspections.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-mooresville-nc`,
   },

@@ -38,17 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Solar Roofing Charlotte NC',
   description:
-    'Solar roofing solutions in Charlotte NC. Expert solar panel roof integration, solar-ready roof installations, and roof repairs for solar systems. GAF certified. Free consultations!',
-  keywords: [
-    'solar roofing Charlotte NC',
-    'solar panel roof installation Charlotte',
-    'solar roof contractor Charlotte',
-    'solar-ready roofing Charlotte NC',
-    'solar panel integration roofing',
-    'roof for solar panels Charlotte',
-    'solar energy roofing contractor',
-    'solar roof repair Charlotte',
-  ],
+    'Solar roofing solutions in Charlotte NC. Expert solar panel roof integration, solar-ready roof installations, and roof repairs for solar systems. GAF certified. Free consultations!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/solar-services`,
   },

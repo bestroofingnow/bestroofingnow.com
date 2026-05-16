@@ -145,15 +145,7 @@ export async function generateMetadata({
 
   return {
     title,
-    description,
-    keywords: [
-      `roofing projects ${displayCity}`,
-      `roof replacement ${displayCity} ${state}`,
-      `roofing contractor ${displayCity}`,
-      `${displayCity} roofing company`,
-      `best roofer ${displayCity}`,
-      ...cityData.products.map(p => `${p} ${displayCity}`),
-    ],
+    description,
     openGraph: {
       title,
       description,

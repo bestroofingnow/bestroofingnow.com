@@ -31,17 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofing Troutman NC',
   description:
-    'Looking for roofing services in Troutman NC? Best Roofing Now serves Troutman and the I-77 corridor from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in Iredell County.',
-  keywords: [
-    'roofing troutman nc',
-    'roofers troutman',
-    'roof repair troutman nc',
-    'roof replacement troutman',
-    'iredell county roofers',
-    'troutman roofing contractor',
-    'lake norman roofing',
-    'troutman nc roofer',
-  ],
+    'Looking for roofing services in Troutman NC? Best Roofing Now serves Troutman and the I-77 corridor from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in Iredell County.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-troutman-nc`,
   },

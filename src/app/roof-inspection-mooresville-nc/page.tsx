@@ -33,21 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Mooresville NC',
   description:
-    'Free roof inspections in Mooresville NC. Comprehensive assessments with detailed reports and photos. BBB A+ rated, veteran-owned. Serving Lake Norman area. Schedule your free inspection today!',
-  keywords: [
-    'roof inspection Mooresville NC',
-    'free roof inspection Mooresville',
-    'roof assessment Mooresville NC',
-    'roof inspection near me Mooresville',
-    'Lake Norman roof inspection',
-    'roof evaluation Mooresville',
-    'home inspection roofing Mooresville NC',
-    'roof condition report Mooresville',
-    'pre-purchase roof inspection Mooresville',
-    'storm damage inspection Mooresville NC',
-    'free roofing estimate Mooresville',
-    'roofer Mooresville NC',
-  ],
+    'Free roof inspections in Mooresville NC. Comprehensive assessments with detailed reports and photos. BBB A+ rated, veteran-owned. Serving Lake Norman area. Schedule your free inspection today!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-mooresville-nc`,
   },

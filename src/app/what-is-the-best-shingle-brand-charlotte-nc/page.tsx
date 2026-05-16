@@ -55,16 +55,6 @@ export const metadata: Metadata = {
   title: 'What Is the Best Shingle Brand for Charlotte NC?',
   description:
     "There's no single 'best' brand — GAF, CertainTeed, OC perform comparably. What matters: top-tier installer credential (Master Elite, SELECT, Platinum), algae warranty for humid climate, HOA color match.",
-  keywords: [
-    'best shingle brand Charlotte NC',
-    'GAF vs CertainTeed vs OC',
-    'best roofing shingles Charlotte',
-    'shingle brand comparison',
-    'top shingle manufacturer',
-    'GAF Master Elite Charlotte',
-    'CertainTeed SELECT ShingleMaster',
-    'Owens Corning Platinum Preferred',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is the Best Shingle Brand for Charlotte NC?',

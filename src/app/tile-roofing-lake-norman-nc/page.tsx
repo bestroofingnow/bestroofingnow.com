@@ -40,19 +40,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Tile Roofing Lake Norman NC',
   description:
-    'Clay & concrete tile roofing for Lake Norman NC estate homes. Boral, Eagle, Ludowici. 50-100 year lifespan, 150 MPH wind. Free estimates from Best Roofing Now.',
-  keywords: [
-    'tile roofing lake norman nc',
-    'clay tile roof lake norman',
-    'concrete tile roof cornelius nc',
-    'spanish tile roofing davidson nc',
-    'mediterranean roof mooresville nc',
-    'boral tile roof lake norman',
-    'eagle tile roofing huntersville nc',
-    'ludowici clay tile lake norman',
-    'tile roof installer lake norman',
-    'luxury tile roofing trump national charlotte',
-  ],
+    'Clay & concrete tile roofing for Lake Norman NC estate homes. Boral, Eagle, Ludowici. 50-100 year lifespan, 150 MPH wind. Free estimates from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tile-roofing-lake-norman-nc`,
   },

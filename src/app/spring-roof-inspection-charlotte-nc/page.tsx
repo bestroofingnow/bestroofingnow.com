@@ -40,20 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Spring Roof Inspection Charlotte',
   description:
-    'Free spring roof inspections in Charlotte NC. Assess winter damage, clear debris, and prepare for spring storms. Expert post-winter evaluation with detailed reports and photos.',
-  keywords: [
-    'spring roof inspection Charlotte NC',
-    'roof inspection spring Charlotte',
-    'post-winter roof check',
-    'winter damage assessment Charlotte',
-    'spring roof maintenance',
-    'free roof inspection Charlotte NC',
-    'spring roofing services',
-    'roof debris cleaning',
-    'Charlotte spring roofer',
-    'seasonal roof inspection',
-    'roof condition assessment',
-  ],
+    'Free spring roof inspections in Charlotte NC. Assess winter damage, clear debris, and prepare for spring storms. Expert post-winter evaluation with detailed reports and photos.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/spring-roof-inspection-charlotte-nc`,
   },

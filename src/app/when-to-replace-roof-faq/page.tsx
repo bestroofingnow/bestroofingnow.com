@@ -34,21 +34,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'When to Replace Your Roof FAQ | 15 Timing Questions Answered | Charlotte NC',
   description:
-    'When should you replace your roof? Get answers to 15 common questions about roof lifespan, repair vs replace decisions, seasonal timing, and warning signs. Expert Charlotte NC roofing advice from Best Roofing Now.',
-  keywords: [
-    'when to replace roof faq',
-    'how long does a roof last',
-    'should i repair or replace roof',
-    'roof lifespan Charlotte NC',
-    'when to get new roof',
-    'roof replacement timing',
-    'signs roof needs replacing',
-    'roof age replacement',
-    'best time to replace roof Charlotte',
-    'roof repair vs replace decision',
-    'how often replace roof',
-    'roof replacement schedule',
-  ],
+    'When should you replace your roof? Get answers to 15 common questions about roof lifespan, repair vs replace decisions, seasonal timing, and warning signs. Expert Charlotte NC roofing advice from Best Roofing Now.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/when-to-replace-roof-faq`,
   },

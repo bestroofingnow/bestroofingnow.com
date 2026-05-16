@@ -30,21 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Denver NC | Lake Norman | Free Estimates',
   description:
-    'Expert roof replacement in Denver NC. Premium materials for Lake Norman western shore homes. GAF & CertainTeed certified. Financing available. Free estimates!',
-  keywords: [
-    'roof replacement denver nc',
-    'denver nc roof replacement',
-    'new roof denver nc',
-    'roof replacement cost denver nc',
-    'replace roof denver nc',
-    'denver nc roof replacement cost',
-    'lake norman western shore roof replacement',
-    'trilogy at lake norman roof replacement',
-    'lincoln county roof replacement',
-    'residential roof replacement denver nc',
-    'full roof replacement denver nc',
-    'sailview roof replacement',
-  ],
+    'Expert roof replacement in Denver NC. Premium materials for Lake Norman western shore homes. GAF & CertainTeed certified. Financing available. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-denver-nc`,
   },

@@ -21,16 +21,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Roofing Videos & Tips',
   description:
-    'Watch roofing tips, project videos, and educational content from Best Roofing Now. Learn about roof maintenance, repairs, and what to look for in a Charlotte NC roofing company.',
-  keywords: [
-    'roofing videos charlotte nc',
-    'roof repair tips',
-    'roofing educational videos',
-    'charlotte roofing company videos',
-    'roof inspection videos',
-    'roofing how to',
-    'best roofing now youtube',
-  ],
+    'Watch roofing tips, project videos, and educational content from Best Roofing Now. Learn about roof maintenance, repairs, and what to look for in a Charlotte NC roofing company.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/videos`,
   },

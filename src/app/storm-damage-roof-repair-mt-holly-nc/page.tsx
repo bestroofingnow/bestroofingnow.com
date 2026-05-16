@@ -30,17 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Mt Holly NC',
   description:
-    'Storm damage to your Mt Holly roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned. Call now for fast help!',
-  keywords: [
-    'storm damage roof repair mt holly nc',
-    'hail damage roof repair mt holly',
-    'wind damage roof repair mt holly nc',
-    'emergency roof repair mt holly',
-    'storm damage roofing mt holly',
-    'roof storm damage mt holly nc',
-    'roofing insurance claims mt holly',
-    'storm damage restoration mt holly nc',
-  ],
+    'Storm damage to your Mt Holly roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned. Call now for fast help!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-mt-holly-nc`,
   },

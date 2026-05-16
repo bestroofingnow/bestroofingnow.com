@@ -40,19 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Quail Hollow Charlotte NC',
   description:
-    'Trusted roofer in Quail Hollow Charlotte NC. Premium roofing for golf estates with slate, tile, and designer shingles. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing quail hollow charlotte nc',
-    'roofers quail hollow',
-    'quail hollow roofing contractor',
-    'golf estate roofing charlotte',
-    'quail hollow roof repair',
-    'quail hollow roof replacement',
-    'luxury roofing quail hollow',
-    'slate roofing quail hollow charlotte',
-    'best roofer quail hollow charlotte',
-    'quail hollow estates roofing services',
-  ],
+    'Trusted roofer in Quail Hollow Charlotte NC. Premium roofing for golf estates with slate, tile, and designer shingles. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-quail-hollow-charlotte-nc`,
   },

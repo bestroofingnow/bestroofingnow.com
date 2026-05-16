@@ -32,7 +32,6 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Hip and Ridge Shingles Charlotte NC',
   description: "What hip and ridge shingles are and why your Charlotte NC roof needs them. GAF TimberTex, CertainTeed Mountain Ridge, OC pricing, warranty rules.",
-  keywords: ['hip and ridge shingles charlotte nc', 'ridge cap shingles charlotte', 'gaf timbertex charlotte', 'certainteed mountain ridge', 'owens corning hip ridge', 'ridge vent shingles charlotte', 'roof ridge cap cost', 'shingle warranty charlotte nc'],
   alternates: { canonical: PAGE_URL },
   openGraph: { title: 'Hip and Ridge Shingles Charlotte NC', description: 'Pre-formed accent shingles for the roof ridge. Brands, costs, warranty rules in Charlotte NC.', url: PAGE_URL, type: 'article' },
 };

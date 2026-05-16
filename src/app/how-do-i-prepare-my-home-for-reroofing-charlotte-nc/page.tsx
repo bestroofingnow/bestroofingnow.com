@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Prepare My Home for Reroofing in Charlotte NC?',
   description:
     "Charlotte NC reroof prep checklist: 10 items (vehicles, dumpster, attic items, wall hangings, neighbors, pets, AC, landscape, walkthrough). 3-5 day project, minimal disruption.",
-  keywords: [
-    'how to prepare home for reroofing Charlotte NC',
-    'reroof prep checklist',
-    'roof install preparation',
-    'do I leave home during reroof',
-    'reroof landscape protection',
-    'reroof noise levels',
-    'reroof weather delays',
-    'when can I walk on new roof',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Prepare My Home for Reroofing in Charlotte NC?',

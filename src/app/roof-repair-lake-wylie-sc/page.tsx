@@ -35,19 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Lake Wylie SC | Fast, Affordable',
   description:
-    'Fast, affordable roof repair in Lake Wylie SC. Emergency leak repair, storm damage, shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for a free estimate.',
-  keywords: [
-    'roof repair lake wylie sc',
-    'lake wylie roof leak repair',
-    'emergency roof repair lake wylie',
-    'roof repair near me lake wylie',
-    'roof repair cost lake wylie sc',
-    'roof repair tega cay sc',
-    'storm damage repair lake wylie sc',
-    'shingle repair lake wylie',
-    'best roof repair lake wylie sc',
-    'affordable roof repair lake wylie',
-  ],
+    'Fast, affordable roof repair in Lake Wylie SC. Emergency leak repair, storm damage, shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for a free estimate.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-lake-wylie-sc`,
   },

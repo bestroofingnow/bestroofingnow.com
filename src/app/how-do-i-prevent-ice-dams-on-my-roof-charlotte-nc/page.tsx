@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'How Do I Prevent Ice Dams on My Roof in Charlotte NC?',
   description:
     "Prevent Charlotte NC ice dams with 4-layer strategy: air-sealing $300-800, R-38/R-49 insulation $1,200-3,200, NC IRC §R806 ventilation $400-1,200, ice-and-water shield 6 ft eave retrofit.",
-  keywords: [
-    'how to prevent ice dams Charlotte NC',
-    'ice dam prevention NC',
-    'attic air sealing Charlotte',
-    'attic insulation R-38 R-49',
-    'ridge vent installation',
-    'ice and water shield Charlotte',
-    'heat cable roof installation',
-    'north Mecklenburg ice dams',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Prevent Ice Dams on My Roof in Charlotte NC?',

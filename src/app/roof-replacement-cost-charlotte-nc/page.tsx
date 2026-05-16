@@ -17,6 +17,7 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { CitationFacts } from '@/components/sections/CitationFacts';
 import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
 import { JamesTip } from '@/components/sections/PersonalTouch';
 import { Button } from '@/components/ui/Button';
@@ -30,21 +31,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Cost Charlotte NC | 2026 Price Guide | Free Estimates',
   description:
-    'How much does roof replacement cost in Charlotte NC? Average costs range from $8,000-$25,000 for typical homes. Get accurate pricing by roof size, materials, and complexity. Free estimates available.',
-  keywords: [
-    'roof replacement cost Charlotte NC',
-    'how much does a new roof cost Charlotte NC',
-    'roof replacement cost Charlotte NC 2026',
-    'average roof replacement cost Charlotte NC',
-    'new roof cost Charlotte NC',
-    'cheapest roof replacement Charlotte NC',
-    'roof replacement cost per square foot Charlotte',
-    'roof replacement cost Lake Norman NC',
-    'roof replacement cost Lake Wylie SC',
-    'roof replacement cost Fort Mill SC',
-    'roof replacement cost Mooresville NC',
-    'Charlotte roofing prices 2026',
-  ],
+    'How much does roof replacement cost in Charlotte NC? Average costs range from $8,000-$25,000 for typical homes. Get accurate pricing by roof size, materials, and complexity. Free estimates available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-cost-charlotte-nc`,
   },
@@ -814,6 +801,8 @@ export default function RoofReplacementCostCharlottePage() {
         subtitle="Browse completed roofing projects from the Charlotte area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/roof-replacement-cost-charlotte-nc`}
       />
+
+      <CitationFacts service="Roof Replacement" city="Charlotte" state="NC" />
 
       {/* Final CTA */}
 

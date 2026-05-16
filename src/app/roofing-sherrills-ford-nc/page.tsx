@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofing Sherrills Ford NC',
   description:
-    'Looking for roofing services in Sherrills Ford NC? Best Roofing Now serves Sherrills Ford and the Lake Norman area from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in Catawba County.',
-  keywords: [
-    'roofing sherrills ford nc',
-    'roofers sherrills ford',
-    'roof repair sherrills ford nc',
-    'roof replacement sherrills ford',
-    'lake norman roofing',
-    'catawba county roofers',
-    'sherrills ford roof contractor',
-    'roofing company sherrills ford nc',
-    'waterfront roofing lake norman',
-    'sherrills ford nc roofer',
-  ],
+    'Looking for roofing services in Sherrills Ford NC? Best Roofing Now serves Sherrills Ford and the Lake Norman area from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in Catawba County.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-sherrills-ford-nc`,
   },

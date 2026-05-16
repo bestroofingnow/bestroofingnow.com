@@ -31,19 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Sherrills Ford',
   description:
-    'Need commercial roofing in Sherrills Ford NC? Best Roofing Now installs and repairs TPO, EPDM, flat roofs, and metal systems for Catawba County businesses. BBB A+ rated, veteran-owned. Free commercial roof estimates!',
-  keywords: [
-    'commercial roofing sherrills ford nc',
-    'commercial roofer sherrills ford',
-    'flat roof sherrills ford nc',
-    'tpo roofing sherrills ford',
-    'epdm roofing sherrills ford nc',
-    'commercial roof repair sherrills ford',
-    'catawba county commercial roofing',
-    'lake norman commercial roofer',
-    'metal roof commercial sherrills ford',
-    'commercial roofing contractor sherrills ford nc',
-  ],
+    'Need commercial roofing in Sherrills Ford NC? Best Roofing Now installs and repairs TPO, EPDM, flat roofs, and metal systems for Catawba County businesses. BBB A+ rated, veteran-owned. Free commercial roof estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-sherrills-ford-nc`,
   },

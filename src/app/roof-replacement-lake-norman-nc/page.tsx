@@ -35,19 +35,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roof Replacement Lake Norman NC',
   description:
-    'Professional roof replacement in Lake Norman NC. GAF & CertainTeed certified, financing available. Serving Mooresville, Cornelius, Davidson, Denver. Free estimates!',
-  keywords: [
-    'roof replacement lake norman',
-    'new roof lake norman nc',
-    'roof replacement cost lake norman',
-    'roof installation mooresville nc',
-    'roof replacement cornelius nc',
-    'new roof davidson nc',
-    'lake norman roofing contractor',
-    'roof replacement near me lake norman',
-    'reroof lake norman nc',
-    'asphalt shingle roof lake norman',
-  ],
+    'Professional roof replacement in Lake Norman NC. GAF & CertainTeed certified, financing available. Serving Mooresville, Cornelius, Davidson, Denver. Free estimates!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-lake-norman-nc`,
   },

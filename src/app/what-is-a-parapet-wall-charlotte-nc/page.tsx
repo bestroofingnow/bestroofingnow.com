@@ -54,16 +54,6 @@ export const metadata: Metadata = {
   title: 'What Is a Parapet Wall? Charlotte NC Guide',
   description:
     "Parapet wall: short wall above the roofline on Charlotte NC commercial buildings. Fire, aesthetic, fall protection, wind functions. Repair $35-$200/lf. Code-compliant.",
-  keywords: [
-    'parapet wall Charlotte NC',
-    'commercial parapet wall',
-    'parapet coping cap',
-    'parapet wall flashing',
-    'commercial roof parapet',
-    'parapet wall leaks',
-    'NC building code parapet',
-    'commercial roof termination',
-  ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Parapet Wall? Charlotte NC Guide',

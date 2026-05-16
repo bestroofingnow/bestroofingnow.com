@@ -40,22 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Inspection Charlotte NC | Free',
   description:
-    'Schedule your FREE roof inspection in Charlotte NC today. Comprehensive inspections include drone technology, detailed reports, and expert recommendations. No obligation. Call (704) 605-6047.',
-  keywords: [
-    'roof inspection charlotte nc',
-    'free roof inspection charlotte nc',
-    'roof inspection near me charlotte',
-    'roof inspector charlotte nc',
-    'free roof inspection lake norman nc',
-    'free roof inspection lake wylie sc',
-    'storm damage roof inspection charlotte nc',
-    'hail damage roof inspection charlotte nc',
-    'roof condition report charlotte nc',
-    'annual roof inspection charlotte nc',
-    'free roof inspection huntersville nc',
-    'free roof inspection mooresville nc',
-    'free roof inspection fort mill sc',
-  ],
+    'Schedule your FREE roof inspection in Charlotte NC today. Comprehensive inspections include drone technology, detailed reports, and expert recommendations. No obligation. Call (704) 605-6047.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-charlotte-nc`,
   },

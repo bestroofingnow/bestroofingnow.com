@@ -34,21 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Huntersville',
   description:
-    '24/7 emergency roof repair in Huntersville NC. Fast response for storm damage, active leaks, fallen trees, and urgent repairs. BBB A+ rated, veteran-owned. Call now for immediate help!',
-  keywords: [
-    'emergency roof repair Huntersville NC',
-    '24 hour roofer Huntersville',
-    'emergency roofer Huntersville NC',
-    'storm damage repair Huntersville',
-    'roof leak emergency Huntersville',
-    'urgent roof repair Huntersville NC',
-    '24/7 roofing Huntersville',
-    'emergency tarping Huntersville',
-    'tree fell on roof Huntersville',
-    'hail damage repair Huntersville NC',
-    'after hours roofer Huntersville',
-    'emergency roofing near me Huntersville',
-  ],
+    '24/7 emergency roof repair in Huntersville NC. Fast response for storm damage, active leaks, fallen trees, and urgent repairs. BBB A+ rated, veteran-owned. Call now for immediate help!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-huntersville-nc`,
   },

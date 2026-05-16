@@ -41,20 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Hurricane Roof Repair Charlotte',
   description:
-    'Expert hurricane damage roof repair in Charlotte NC. 24/7 emergency response for tropical storm and hurricane damage. Insurance claim assistance, emergency tarping, and full restoration.',
-  keywords: [
-    'hurricane damage roof repair Charlotte NC',
-    'hurricane roof repair Charlotte',
-    'tropical storm roof damage Charlotte',
-    'storm damage roof repair Charlotte NC',
-    'hurricane restoration Charlotte',
-    'emergency roof repair hurricane',
-    'wind damage roof repair',
-    'hurricane insurance claim Charlotte',
-    'storm recovery roofing',
-    'Charlotte hurricane roofer',
-    'emergency tarping Charlotte',
-  ],
+    'Expert hurricane damage roof repair in Charlotte NC. 24/7 emergency response for tropical storm and hurricane damage. Insurance claim assistance, emergency tarping, and full restoration.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hurricane-damage-roof-repair-charlotte-nc`,
   },
