@@ -77,6 +77,7 @@ const KNOWN_ROUTES = new Set([
   'charlotte-storm-season-roof-guide',
   'charlotte-roofing-costs-2026',
   'energy-efficient-roofing-charlotte-nc',
+  'asphalt-shingle-cost-by-brand-charlotte-nc',
   // PAA / AI Overview Q&A pages
   '25-percent-rule-roofing',
   'how-to-tell-if-roofer-is-lying',

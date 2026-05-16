@@ -1,9 +1,9 @@
 # Cannibalization Audit — 2026-05-16
 
 **Scope:** Every `src/app/**/page.tsx` (excluding dynamic `[slug]` routes).
-**Pages scanned:** 514
-**Pages with title extracted:** 495
-**Pages with H1 extracted:** 513
+**Pages scanned:** 515
+**Pages with title extracted:** 496
+**Pages with H1 extracted:** 514
 **Pages with canonical extracted:** 383
 
 ## 🚨 Exact-duplicate canonicals

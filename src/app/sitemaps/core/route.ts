@@ -49,6 +49,7 @@ export async function GET() {
     { url: `${BASE_URL}/charlotte-storm-season-roof-guide`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/charlotte-roofing-costs-2026`, changefreq: 'weekly', priority: '0.9' },
     { url: `${BASE_URL}/energy-efficient-roofing-charlotte-nc`, changefreq: 'weekly', priority: '0.85' },
+    { url: `${BASE_URL}/asphalt-shingle-cost-by-brand-charlotte-nc`, changefreq: 'weekly', priority: '0.85' },
     { url: `${BASE_URL}/tile-roof-vs-shingles-charlotte-nc`, changefreq: 'weekly', priority: '0.9' },
     // Lake Norman pillar content
     { url: `${BASE_URL}/lake-norman-roofing-guide`, changefreq: 'weekly', priority: '0.9' },
