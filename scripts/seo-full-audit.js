@@ -421,6 +421,10 @@ function makeDataForSEORequest(endpoint, postData) {
           const parsed = JSON.parse(data);
           if (parsed.status_code && parsed.status_code !== 20000) {
             console.log(`    API Warning (${endpoint}): ${parsed.status_message}`);
+            if ([40100, 40200, 40300].includes(parsed.status_code)) {
+              reject(new Error(`DataForSEO authentication/billing error (${parsed.status_code}): ${parsed.status_message}`));
+              return;
+            }
           }
           resolve(parsed);
         } catch (e) {
@@ -436,7 +440,14 @@ function makeDataForSEORequest(endpoint, postData) {
 }
 
 function getFirstResult(response) {
-  return response?.tasks?.[0]?.result?.[0] || null;
+  const task = response?.tasks?.[0];
+  if (task?.status_code && task.status_code !== 20000) {
+    if ([40100, 40200, 40300].includes(task.status_code)) {
+      throw new Error(`DataForSEO authentication/billing error (${task.status_code}): ${task.status_message}`);
+    }
+    console.log(`    API Warning: ${task.status_message}`);
+  }
+  return task?.result?.[0] || null;
 }
 
 async function mapLimit(items, limit, worker) {
@@ -750,10 +761,10 @@ async function analyzeTechnical(pageInventory) {
   for (const page of pages) {
     await delay(300);
     try {
-      const response = await makeDataForSEORequest('/v3/on_page/lighthouse/live', [{
+      const response = await makeDataForSEORequest('/v3/on_page/lighthouse/live/json', [{
         url: page.url,
         for_mobile: true,
-        categories: ['performance', 'accessibility', 'best-practices', 'seo'],
+        categories: ['performance', 'accessibility', 'best_practices', 'seo'],
       }]);
       const raw = getFirstResult(response);
       const data = raw?.items?.[0] || raw;
@@ -767,7 +778,7 @@ async function analyzeTechnical(pageInventory) {
       const perf = Math.round((categories.performance?.score || 0) * 100);
       const seo = Math.round((categories.seo?.score || 0) * 100);
       const acc = Math.round((categories.accessibility?.score || 0) * 100);
-      const bp = Math.round((categories['best-practices']?.score || 0) * 100);
+      const bp = Math.round(((categories.best_practices || categories['best-practices'])?.score || 0) * 100);
       const lcp = audits['largest-contentful-paint']?.numericValue || null;
       const fid = audits['max-potential-fid']?.numericValue || null;
       const cls = audits['cumulative-layout-shift']?.numericValue || null;
@@ -1150,7 +1161,13 @@ async function analyzeLocalSEO() {
   ];
 
   let ranked = [];
-  try { ranked = await getRankedKeywords(); } catch (e) { addIssue('high', 'localSEO', 'Local ranking data unavailable', e.message); }
+  let rankedDataAvailable = true;
+  try {
+    ranked = await getRankedKeywords();
+  } catch (e) {
+    rankedDataAvailable = false;
+    addIssue('high', 'localSEO', 'Local ranking data unavailable', e.message);
+  }
   const localRankings = localKeywords.map((keyword) => {
     const found = ranked.find((row) => row.keyword.toLowerCase() === keyword.toLowerCase());
     return { keyword, position: typeof found?.position === 'number' ? found.position : 'Not ranked', searchVolume: found?.searchVolume || 0 };
@@ -1187,7 +1204,7 @@ async function analyzeLocalSEO() {
 
   if (!hasLocalBusinessSchema) addIssue('high', 'localSEO', 'Missing LocalBusiness schema on homepage', 'Add LocalBusiness or RoofingContractor schema to homepage', ['/']);
   const notRanked = localRankings.filter((row) => row.position === 'Not ranked');
-  if (notRanked.length > 0) addIssue('high', 'localSEO', `Not ranking for ${notRanked.length} local keywords`, `Missing rankings for: ${notRanked.map((row) => row.keyword).join(', ')}`);
+  if (rankedDataAvailable && notRanked.length > 0) addIssue('high', 'localSEO', `Not ranking for ${notRanked.length} local keywords`, `Missing rankings for: ${notRanked.map((row) => row.keyword).join(', ')}`);
   const poor = localRankings.filter((row) => typeof row.position === 'number' && row.position > 20);
   if (poor.length > 0) addIssue('medium', 'localSEO', `${poor.length} local keywords outside top 20`, `Improve rankings for: ${poor.map((row) => `${row.keyword} (#${row.position})`).join(', ')}`);
   if (directorySummary.reachable < 6) addIssue('medium', 'localSEO', 'Directory presence gaps detected', `${directorySummary.reachable}/${directorySummary.total} priority directories are directly reachable.`);

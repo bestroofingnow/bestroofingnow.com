@@ -1,15 +1,770 @@
 {
-  "timestamp": "2026-02-06T02:17:40.481Z",
+  "timestamp": "2026-05-01T13:16:28.501Z",
   "keywords": {
-    "roofing charlotte nc": [],
-    "roofers charlotte nc": [],
-    "roofing company charlotte nc": [],
-    "roof repair charlotte nc": [],
-    "commercial roofing charlotte nc": [],
-    "roofing huntersville nc": [],
-    "roofing mooresville nc": [],
-    "metal roofing charlotte nc": []
+    "roofing charlotte nc": [
+      {
+        "position": 1,
+        "domain": "bakerroofing.com",
+        "url": "https://bakerroofing.com/charlotte-roofing-company/",
+        "title": "Charlotte Roofing Contractor"
+      },
+      {
+        "position": 2,
+        "domain": "premier-roofing.com",
+        "url": "https://premier-roofing.com/locations/charlotte-roofing/",
+        "title": "Charlotte Roofing Services"
+      },
+      {
+        "position": 3,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?find_desc=Roofers&find_loc=Charlotte%2C+NC",
+        "title": "TOP 10 BEST Roofers in Charlotte, NC - Updated 2026"
+      },
+      {
+        "position": 4,
+        "domain": "www.pinnacleroofinginc.net",
+        "url": "https://www.pinnacleroofinginc.net/",
+        "title": "Pinnacle Roofing | Roofing and Exteriors | Charlotte NC"
+      },
+      {
+        "position": 5,
+        "domain": "www.thumbtack.com",
+        "url": "https://www.thumbtack.com/nc/charlotte/roofing",
+        "title": "Roofing professionals near Charlotte, NC"
+      },
+      {
+        "position": 6,
+        "domain": "visionroofingllc.com",
+        "url": "https://visionroofingllc.com/",
+        "title": "Vision Roofing: Top-Rated Charlotte NC Roofing Company"
+      },
+      {
+        "position": 7,
+        "domain": "guyroofing.com",
+        "url": "https://guyroofing.com/locations/charlotte-nc",
+        "title": "Roof Replacement and Repairs Charlotte NC"
+      },
+      {
+        "position": 8,
+        "domain": "hsroofing.com",
+        "url": "https://hsroofing.com/",
+        "title": "H&S Roofing and Gutters: Roofing and Gutters | Charlotte NC"
+      },
+      {
+        "position": 9,
+        "domain": "signatureexteriorsinc.com",
+        "url": "https://signatureexteriorsinc.com/",
+        "title": "Residential & Commercial Roofing in Charlotte, NC ..."
+      },
+      {
+        "position": 10,
+        "domain": "davcoroofing.com",
+        "url": "https://davcoroofing.com/",
+        "title": "#1 Charlotte Commercial Roofing Company - Davco Roofing ..."
+      }
+    ],
+    "roofers charlotte nc": [
+      {
+        "position": 1,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?find_desc=Roofers&find_loc=Charlotte%2C+NC",
+        "title": "TOP 10 BEST Roofers in Charlotte, NC - Updated 2026"
+      },
+      {
+        "position": 2,
+        "domain": "bakerroofing.com",
+        "url": "https://bakerroofing.com/charlotte-roofing-company/",
+        "title": "Charlotte Roofing Contractor"
+      },
+      {
+        "position": 3,
+        "domain": "www.pinnacleroofinginc.net",
+        "url": "https://www.pinnacleroofinginc.net/",
+        "title": "Pinnacle Roofing | Roofing and Exteriors | Charlotte NC"
+      },
+      {
+        "position": 4,
+        "domain": "www.gaf.com",
+        "url": "https://www.gaf.com/en-us/roofing-contractors/residential/usa/nc/charlotte",
+        "title": "Best Roofers in Charlotte, NC | GAF Roofing Contractors"
+      },
+      {
+        "position": 5,
+        "domain": "premier-roofing.com",
+        "url": "https://premier-roofing.com/locations/charlotte-roofing/",
+        "title": "Charlotte Roofing Services"
+      },
+      {
+        "position": 6,
+        "domain": "21roofinggroup.com",
+        "url": "https://21roofinggroup.com/",
+        "title": "Roofing Charlotte NC | 21 Roofing Group | Local Roofer"
+      },
+      {
+        "position": 7,
+        "domain": "visionroofingllc.com",
+        "url": "https://visionroofingllc.com/",
+        "title": "Vision Roofing: Top-Rated Charlotte NC Roofing Company"
+      },
+      {
+        "position": 8,
+        "domain": "www.bbb.org",
+        "url": "https://www.bbb.org/us/nc/charlotte/category/roofing-contractors",
+        "title": "Roofing Contractors near Charlotte, NC"
+      },
+      {
+        "position": 9,
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Charlotte/comments/1fvknpg/roofer_suggestions/",
+        "title": "Roofer suggestions? : r/Charlotte"
+      },
+      {
+        "position": 10,
+        "domain": "hsroofing.com",
+        "url": "https://hsroofing.com/",
+        "title": "H&S Roofing and Gutters: Roofing and Gutters | Charlotte NC"
+      }
+    ],
+    "roofing company charlotte nc": [
+      {
+        "position": 1,
+        "domain": "bakerroofing.com",
+        "url": "https://bakerroofing.com/charlotte-roofing-company/",
+        "title": "Charlotte Roofing Contractor"
+      },
+      {
+        "position": 2,
+        "domain": "premier-roofing.com",
+        "url": "https://premier-roofing.com/locations/charlotte-roofing/",
+        "title": "Charlotte Roofing Services"
+      },
+      {
+        "position": 3,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?find_desc=Roofers&find_loc=Charlotte%2C+NC",
+        "title": "TOP 10 BEST Roofers in Charlotte, NC - Updated 2026"
+      },
+      {
+        "position": 4,
+        "domain": "21roofinggroup.com",
+        "url": "https://21roofinggroup.com/",
+        "title": "Roofing Charlotte NC | 21 Roofing Group | Local Roofer"
+      },
+      {
+        "position": 5,
+        "domain": "guyroofing.com",
+        "url": "https://guyroofing.com/locations/charlotte-nc",
+        "title": "Roof Replacement and Repairs Charlotte NC"
+      },
+      {
+        "position": 6,
+        "domain": "visionroofingllc.com",
+        "url": "https://visionroofingllc.com/",
+        "title": "Vision Roofing: Top-Rated Charlotte NC Roofing Company"
+      },
+      {
+        "position": 7,
+        "domain": "www.highlandroofingcompany.com",
+        "url": "https://www.highlandroofingcompany.com/contact/charlotte/",
+        "title": "Charlotte – Highland Roofing Company"
+      },
+      {
+        "position": 8,
+        "domain": "www.bbb.org",
+        "url": "https://www.bbb.org/us/nc/charlotte/category/roofing-contractors",
+        "title": "Roofing Contractors near Charlotte, NC"
+      },
+      {
+        "position": 9,
+        "domain": "www.wellkraftedroofing.com",
+        "url": "https://www.wellkraftedroofing.com/",
+        "title": "Gutter & Roofing Company in Charlotte, NC"
+      },
+      {
+        "position": 10,
+        "domain": "www.valhallaroofingnc.com",
+        "url": "https://www.valhallaroofingnc.com/",
+        "title": "Valhalla Roofing: Local Roof Replacements | Charlotte, NC"
+      }
+    ],
+    "roof repair charlotte nc": [
+      {
+        "position": 1,
+        "domain": "guyroofing.com",
+        "url": "https://guyroofing.com/locations/charlotte-nc",
+        "title": "Roof Replacement and Repairs Charlotte NC"
+      },
+      {
+        "position": 2,
+        "domain": "bakerroofing.com",
+        "url": "https://bakerroofing.com/charlotte-roofing-company/",
+        "title": "Charlotte Roofing Contractor"
+      },
+      {
+        "position": 3,
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Charlotte/comments/1fvknpg/roofer_suggestions/",
+        "title": "Roofer suggestions? : r/Charlotte"
+      },
+      {
+        "position": 4,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?find_desc=Roofers&find_loc=Charlotte%2C+NC",
+        "title": "TOP 10 BEST Roofers in Charlotte, NC - Updated 2026"
+      },
+      {
+        "position": 5,
+        "domain": "www.rrischarlotte.com",
+        "url": "https://www.rrischarlotte.com/",
+        "title": "Charlotte, NC | Roof Repair: Residential Roofer"
+      },
+      {
+        "position": 6,
+        "domain": "visionroofingllc.com",
+        "url": "https://visionroofingllc.com/",
+        "title": "Vision Roofing: Top-Rated Charlotte NC Roofing Company"
+      },
+      {
+        "position": 7,
+        "domain": "www.charlotteroofing.com",
+        "url": "https://www.charlotteroofing.com/",
+        "title": "Professional Roofers Charlotte NC | Charlotte Roofing"
+      },
+      {
+        "position": 8,
+        "domain": "hsroofing.com",
+        "url": "https://hsroofing.com/",
+        "title": "H&S Roofing and Gutters: Roofing and Gutters | Charlotte NC"
+      },
+      {
+        "position": 9,
+        "domain": "www.bbb.org",
+        "url": "https://www.bbb.org/us/nc/charlotte/category/roofing-contractors",
+        "title": "Roofing Contractors near Charlotte, NC"
+      },
+      {
+        "position": 10,
+        "domain": "premier-roofing.com",
+        "url": "https://premier-roofing.com/locations/charlotte-roofing/",
+        "title": "Charlotte Roofing Services"
+      }
+    ],
+    "commercial roofing charlotte nc": [
+      {
+        "position": 1,
+        "domain": "cdsroofing.com",
+        "url": "https://cdsroofing.com/",
+        "title": "Commercial & Industrial Roofing Company in Charlotte"
+      },
+      {
+        "position": 2,
+        "domain": "bentonroofing.com",
+        "url": "https://bentonroofing.com/charlotte-commercial-roofing-company/",
+        "title": "Reliable Commercial Roofing in Charlotte, NC"
+      },
+      {
+        "position": 3,
+        "domain": "davcoroofing.com",
+        "url": "https://davcoroofing.com/",
+        "title": "Davco Roofing & Sheet Metal - Charlotte"
+      },
+      {
+        "position": 4,
+        "domain": "www.centimark.com",
+        "url": "https://www.centimark.com/locations/charlotte-north-carolina",
+        "title": "Commercial & Industrial Roofing Services in Charlotte, NC"
+      },
+      {
+        "position": 5,
+        "domain": "www.tcrfg.com",
+        "url": "https://www.tcrfg.com/charlotte",
+        "title": "Charlotte Roofer — TeamCraft Commercial and Industrial ..."
+      },
+      {
+        "position": 6,
+        "domain": "simonroofing.com",
+        "url": "https://simonroofing.com/locations/charlotte-commercial-roofing/",
+        "title": "Commercial Roofing in Charlotte, NC"
+      },
+      {
+        "position": 7,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?find_desc=Commercial+Roofers&find_loc=Charlotte%2C+NC",
+        "title": "TOP 10 BEST Commercial Roofers in Charlotte, NC"
+      },
+      {
+        "position": 8,
+        "domain": "bakerroofing.com",
+        "url": "https://bakerroofing.com/charlotte-roofing-company/",
+        "title": "Charlotte Roofing Contractor"
+      },
+      {
+        "position": 9,
+        "domain": "www.tectaamerica.com",
+        "url": "https://www.tectaamerica.com/location/commercial-roofing-north-carolina/",
+        "title": "Commercial Roofing in Charlotte NC"
+      },
+      {
+        "position": 10,
+        "domain": "bakerroofing.com",
+        "url": "https://bakerroofing.com/charlotte-roofing-company/",
+        "title": "Charlotte Roofing Contractor"
+      }
+    ],
+    "roofing huntersville nc": [
+      {
+        "position": 1,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?cflt=roofing&find_loc=Huntersville%2C+NC+28078",
+        "title": "THE BEST 10 ROOFING NEAR HUNTERSVILLE, NC 28078"
+      },
+      {
+        "position": 2,
+        "domain": "tiddsroofing.com",
+        "url": "https://tiddsroofing.com/",
+        "title": "Huntersville NC Roofing Company #1 Top-Rated Roofer"
+      },
+      {
+        "position": 3,
+        "domain": "widemeadowroofing.com",
+        "url": "https://widemeadowroofing.com/",
+        "title": "Wide Meadow Roofing | Serving Huntersville, NC, and Beyond"
+      },
+      {
+        "position": 4,
+        "domain": "roofologycarolinas.com",
+        "url": "https://roofologycarolinas.com/",
+        "title": "Roofing Services Huntersville, NC | Roofology of the Carolinas"
+      },
+      {
+        "position": 5,
+        "domain": "www.angi.com",
+        "url": "https://www.angi.com/companylist/us/nc/huntersville/roofing.htm",
+        "title": "Top 10 Best Roofers in Huntersville, NC"
+      },
+      {
+        "position": 6,
+        "domain": "www.wellkraftedroofing.com",
+        "url": "https://www.wellkraftedroofing.com/",
+        "title": "Well Krafted Roofing | Gutter & Roofing Company in Charlotte ..."
+      },
+      {
+        "position": 7,
+        "domain": "www.bbb.org",
+        "url": "https://www.bbb.org/us/nc/huntersville/category/roofing-contractors",
+        "title": "Roofing Contractors near Huntersville, NC"
+      },
+      {
+        "position": 8,
+        "domain": "pandaexteriors.com",
+        "url": "https://pandaexteriors.com/huntersville-nc/roofing/residential/",
+        "title": "Residential Roofing - ​Huntersville, NC"
+      },
+      {
+        "position": 9,
+        "domain": "bestchoiceroofing.com",
+        "url": "https://bestchoiceroofing.com/charlotte/huntersville-nc-roofing-contractor/",
+        "title": "Huntersville, NC Roofers"
+      },
+      {
+        "position": 10,
+        "domain": "www.roofroofnc.com",
+        "url": "https://www.roofroofnc.com/huntersville-nc.html",
+        "title": "Mighty Dog Roofing in Huntersville, NC"
+      }
+    ],
+    "roofing mooresville nc": [
+      {
+        "position": 1,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?cflt=roofing&find_loc=Mooresville%2C+NC",
+        "title": "THE BEST 10 ROOFING IN MOORESVILLE, NC"
+      },
+      {
+        "position": 2,
+        "domain": "racecityroofing.com",
+        "url": "https://racecityroofing.com/",
+        "title": "Race City Roofing: Roofing Contractors & Roofing Repair ..."
+      },
+      {
+        "position": 3,
+        "domain": "easternrooftech.com",
+        "url": "https://easternrooftech.com/",
+        "title": "Eastern Roof Technologies | Roof Replacement and Roof ..."
+      },
+      {
+        "position": 4,
+        "domain": "lightningboltroofing.com",
+        "url": "https://lightningboltroofing.com/",
+        "title": "Lightning Bolt Roofing"
+      },
+      {
+        "position": 5,
+        "domain": "riseroofingandrestoration.com",
+        "url": "https://riseroofingandrestoration.com/",
+        "title": "RISE Roofing & Restoration: Mooresville ..."
+      },
+      {
+        "position": 6,
+        "domain": "www.angi.com",
+        "url": "https://www.angi.com/companylist/us/nc/mooresville/roofing.htm",
+        "title": "Top 10 Best Roofers in Mooresville, NC"
+      },
+      {
+        "position": 7,
+        "domain": "business.mooresvillenc.org",
+        "url": "https://business.mooresvillenc.org/list/category/roofing-contractors-346",
+        "title": "ROOFING Category | Mooresville- ..."
+      },
+      {
+        "position": 8,
+        "domain": "www.philcoroofingcompany.com",
+        "url": "https://www.philcoroofingcompany.com/",
+        "title": "Philco Roofing & Remodeling: Mooresville Roofers"
+      },
+      {
+        "position": 9,
+        "domain": "www.bbb.org",
+        "url": "https://www.bbb.org/us/nc/mooresville/category/roofing-contractors",
+        "title": "Roofing Contractors near Mooresville, NC"
+      },
+      {
+        "position": 10,
+        "domain": "ultimateroofinginc.com",
+        "url": "https://ultimateroofinginc.com/",
+        "title": "Ultimate Roofing Inc.: Expert Roofing Services in North ..."
+      }
+    ],
+    "metal roofing charlotte nc": [
+      {
+        "position": 1,
+        "domain": "www.metalroofingcharlotte.net",
+        "url": "https://www.metalroofingcharlotte.net/",
+        "title": "Metal Roofing Charlotte NC: Commercial, Residential ..."
+      },
+      {
+        "position": 2,
+        "domain": "www.bestbuymetalroofing.com",
+        "url": "https://www.bestbuymetalroofing.com/about/charlotte-nc/",
+        "title": "Charlotte, NC - Best Buy Metals"
+      },
+      {
+        "position": 3,
+        "domain": "www.yelp.com",
+        "url": "https://www.yelp.com/search?find_desc=Metal+Roofing&find_loc=Charlotte%2C+NC",
+        "title": "TOP 10 BEST Metal Roofing in Charlotte, NC - Updated 2026"
+      },
+      {
+        "position": 4,
+        "domain": "davcoroofing.com",
+        "url": "https://davcoroofing.com/",
+        "title": "Davco Roofing & Sheet Metal - Charlotte"
+      },
+      {
+        "position": 5,
+        "domain": "eriehome.com",
+        "url": "https://eriehome.com/locations/roofing/charlotte-nc/",
+        "title": "Roofing Charlotte NC"
+      },
+      {
+        "position": 6,
+        "domain": "21roofinggroup.com",
+        "url": "https://21roofinggroup.com/metal-roofing/",
+        "title": "Metal Roofing in Charlotte, NC"
+      },
+      {
+        "position": 7,
+        "domain": "www.angi.com",
+        "url": "https://www.angi.com/articles/how-much-does-metal-roofing-cost/nc/charlotte",
+        "title": "How Much Does a Metal Roof Cost in Charlotte? [2026 Data]"
+      },
+      {
+        "position": 8,
+        "domain": "www.roof-m-all.com",
+        "url": "https://www.roof-m-all.com/products/metal/",
+        "title": "Metal Roofing Charlotte and Surrounding Areas"
+      },
+      {
+        "position": 9,
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Charlotte/comments/m6fi6s/metal_roof_installation/",
+        "title": "Metal roof installation : r/Charlotte"
+      },
+      {
+        "position": 10,
+        "domain": "www.bbb.org",
+        "url": "https://www.bbb.org/us/nc/charlotte/category/metal-roofing-contractors",
+        "title": "Metal Roofing Contractors near Charlotte, NC"
+      }
+    ]
   },
-  "competitors": {},
-  "mainCompetitors": []
+  "competitors": {
+    "www.yelp.com": {
+      "count": 8,
+      "keywords": [
+        "roofing charlotte nc",
+        "roofers charlotte nc",
+        "roofing company charlotte nc",
+        "roof repair charlotte nc",
+        "commercial roofing charlotte nc",
+        "roofing huntersville nc",
+        "roofing mooresville nc",
+        "metal roofing charlotte nc"
+      ],
+      "positions": [
+        3,
+        1,
+        3,
+        4,
+        7,
+        1,
+        1,
+        3
+      ]
+    },
+    "bakerroofing.com": {
+      "count": 6,
+      "keywords": [
+        "roofing charlotte nc",
+        "roofers charlotte nc",
+        "roofing company charlotte nc",
+        "roof repair charlotte nc",
+        "commercial roofing charlotte nc",
+        "commercial roofing charlotte nc"
+      ],
+      "positions": [
+        1,
+        2,
+        1,
+        2,
+        8,
+        10
+      ]
+    },
+    "www.bbb.org": {
+      "count": 6,
+      "keywords": [
+        "roofers charlotte nc",
+        "roofing company charlotte nc",
+        "roof repair charlotte nc",
+        "roofing huntersville nc",
+        "roofing mooresville nc",
+        "metal roofing charlotte nc"
+      ],
+      "positions": [
+        8,
+        8,
+        9,
+        7,
+        9,
+        10
+      ]
+    },
+    "premier-roofing.com": {
+      "count": 4,
+      "keywords": [
+        "roofing charlotte nc",
+        "roofers charlotte nc",
+        "roofing company charlotte nc",
+        "roof repair charlotte nc"
+      ],
+      "positions": [
+        2,
+        5,
+        2,
+        10
+      ]
+    },
+    "visionroofingllc.com": {
+      "count": 4,
+      "keywords": [
+        "roofing charlotte nc",
+        "roofers charlotte nc",
+        "roofing company charlotte nc",
+        "roof repair charlotte nc"
+      ],
+      "positions": [
+        6,
+        7,
+        6,
+        6
+      ]
+    },
+    "guyroofing.com": {
+      "count": 3,
+      "keywords": [
+        "roofing charlotte nc",
+        "roofing company charlotte nc",
+        "roof repair charlotte nc"
+      ],
+      "positions": [
+        7,
+        5,
+        1
+      ]
+    },
+    "hsroofing.com": {
+      "count": 3,
+      "keywords": [
+        "roofing charlotte nc",
+        "roofers charlotte nc",
+        "roof repair charlotte nc"
+      ],
+      "positions": [
+        8,
+        10,
+        8
+      ]
+    },
+    "davcoroofing.com": {
+      "count": 3,
+      "keywords": [
+        "roofing charlotte nc",
+        "commercial roofing charlotte nc",
+        "metal roofing charlotte nc"
+      ],
+      "positions": [
+        10,
+        3,
+        4
+      ]
+    },
+    "21roofinggroup.com": {
+      "count": 3,
+      "keywords": [
+        "roofers charlotte nc",
+        "roofing company charlotte nc",
+        "metal roofing charlotte nc"
+      ],
+      "positions": [
+        6,
+        4,
+        6
+      ]
+    },
+    "www.reddit.com": {
+      "count": 3,
+      "keywords": [
+        "roofers charlotte nc",
+        "roof repair charlotte nc",
+        "metal roofing charlotte nc"
+      ],
+      "positions": [
+        9,
+        3,
+        9
+      ]
+    },
+    "www.angi.com": {
+      "count": 3,
+      "keywords": [
+        "roofing huntersville nc",
+        "roofing mooresville nc",
+        "metal roofing charlotte nc"
+      ],
+      "positions": [
+        5,
+        6,
+        7
+      ]
+    },
+    "www.pinnacleroofinginc.net": {
+      "count": 2,
+      "keywords": [
+        "roofing charlotte nc",
+        "roofers charlotte nc"
+      ],
+      "positions": [
+        4,
+        3
+      ]
+    },
+    "www.wellkraftedroofing.com": {
+      "count": 2,
+      "keywords": [
+        "roofing company charlotte nc",
+        "roofing huntersville nc"
+      ],
+      "positions": [
+        9,
+        6
+      ]
+    },
+    "www.thumbtack.com": {
+      "count": 1,
+      "keywords": [
+        "roofing charlotte nc"
+      ],
+      "positions": [
+        5
+      ]
+    },
+    "signatureexteriorsinc.com": {
+      "count": 1,
+      "keywords": [
+        "roofing charlotte nc"
+      ],
+      "positions": [
+        9
+      ]
+    },
+    "www.gaf.com": {
+      "count": 1,
+      "keywords": [
+        "roofers charlotte nc"
+      ],
+      "positions": [
+        4
+      ]
+    },
+    "www.highlandroofingcompany.com": {
+      "count": 1,
+      "keywords": [
+        "roofing company charlotte nc"
+      ],
+      "positions": [
+        7
+      ]
+    },
+    "www.valhallaroofingnc.com": {
+      "count": 1,
+      "keywords": [
+        "roofing company charlotte nc"
+      ],
+      "positions": [
+        10
+      ]
+    },
+    "www.rrischarlotte.com": {
+      "count": 1,
+      "keywords": [
+        "roof repair charlotte nc"
+      ],
+      "positions": [
+        5
+      ]
+    },
+    "www.charlotteroofing.com": {
+      "count": 1,
+      "keywords": [
+        "roof repair charlotte nc"
+      ],
+      "positions": [
+        7
+      ]
+    }
+  },
+  "mainCompetitors": [
+    "www.yelp.com",
+    "bakerroofing.com",
+    "www.bbb.org",
+    "premier-roofing.com",
+    "visionroofingllc.com",
+    "guyroofing.com",
+    "hsroofing.com",
+    "davcoroofing.com",
+    "21roofinggroup.com",
+    "www.reddit.com",
+    "www.angi.com"
+  ]
 }

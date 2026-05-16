@@ -1,174 +1,188 @@
 {
-  "timestamp": "2026-01-25T04:31:49.126Z",
+  "timestamp": "2026-05-01T13:16:41.338Z",
   "total": 46,
   "keywords": [
     {
       "keyword": "roofing charlotte nc",
-      "volume": 1000,
-      "competition": "HIGH",
-      "competitionIndex": 68,
-      "cpc": 19.76
+      "volume": 880,
+      "competition": "MEDIUM",
+      "competitionIndex": 40,
+      "cpc": 19.04
     },
     {
       "keyword": "roofers charlotte nc",
-      "volume": 1000,
-      "competition": "HIGH",
-      "competitionIndex": 68,
-      "cpc": 19.76
+      "volume": 880,
+      "competition": "MEDIUM",
+      "competitionIndex": 40,
+      "cpc": 19.04
     },
     {
       "keyword": "roofing company charlotte nc",
-      "volume": 1000,
-      "competition": "MEDIUM",
-      "competitionIndex": 67,
-      "cpc": 22.63
+      "volume": 880,
+      "competition": "HIGH",
+      "competitionIndex": 80,
+      "cpc": 9.4
     },
     {
       "keyword": "roof repair charlotte nc",
-      "volume": 260,
+      "volume": 390,
       "competition": "MEDIUM",
-      "competitionIndex": 36,
-      "cpc": 65.15
-    },
-    {
-      "keyword": "roofing contractor charlotte nc",
-      "volume": 140,
-      "competition": "LOW",
-      "competitionIndex": 33,
-      "cpc": 54.77
+      "competitionIndex": 57,
+      "cpc": 40.8
     },
     {
       "keyword": "roof replacement charlotte nc",
-      "volume": 140,
-      "competition": "HIGH",
-      "competitionIndex": 71,
-      "cpc": 98.38
+      "volume": 210,
+      "competition": "LOW",
+      "competitionIndex": 14,
+      "cpc": 26.54
     },
     {
-      "keyword": "roof inspection near me",
+      "keyword": "roofing contractor charlotte nc",
       "volume": 90,
-      "competition": "HIGH",
-      "competitionIndex": 99,
-      "cpc": 20.68
+      "competition": "LOW",
+      "competitionIndex": 23,
+      "cpc": 10.44
+    },
+    {
+      "keyword": "gutter installation charlotte nc",
+      "volume": 90,
+      "competition": "MEDIUM",
+      "competitionIndex": 47,
+      "cpc": 66.91
     },
     {
       "keyword": "commercial roofing charlotte nc",
       "volume": 70,
-      "competition": "LOW",
-      "competitionIndex": 7,
-      "cpc": 0
-    },
-    {
-      "keyword": "gutter installation charlotte nc",
-      "volume": 70,
-      "competition": "HIGH",
-      "competitionIndex": 69,
-      "cpc": 31.49
+      "competition": "MEDIUM",
+      "competitionIndex": 41,
+      "cpc": 58.01
     },
     {
       "keyword": "metal roofing charlotte nc",
       "volume": 70,
-      "competition": "HIGH",
-      "competitionIndex": 72,
-      "cpc": 20.62
+      "competition": "MEDIUM",
+      "competitionIndex": 51,
+      "cpc": 37.75
+    },
+    {
+      "keyword": "roof inspection near me",
+      "volume": 70,
+      "competition": "LOW",
+      "competitionIndex": 25,
+      "cpc": 18.33
     },
     {
       "keyword": "commercial roofing contractor charlotte",
-      "volume": 40,
+      "volume": 30,
       "competition": "LOW",
-      "competitionIndex": 23,
-      "cpc": 171.83
+      "competitionIndex": 3,
+      "cpc": 0
+    },
+    {
+      "keyword": "storm damage roof repair charlotte",
+      "volume": 30,
+      "competition": "LOW",
+      "competitionIndex": 0,
+      "cpc": 0
     },
     {
       "keyword": "roof leak repair charlotte nc",
-      "volume": 20,
-      "competition": "MEDIUM",
-      "competitionIndex": 49,
+      "volume": 30,
+      "competition": "LOW",
+      "competitionIndex": 14,
       "cpc": 0
     },
     {
       "keyword": "roof inspection charlotte nc",
-      "volume": 10,
+      "volume": 20,
       "competition": "MEDIUM",
-      "competitionIndex": 37,
-      "cpc": 22.62
+      "competitionIndex": 54,
+      "cpc": 36.41
     },
     {
       "keyword": "new roof charlotte nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
+      "competition": "HIGH",
+      "competitionIndex": 71,
+      "cpc": 0
+    },
+    {
+      "keyword": "roof repair lake norman",
+      "volume": 10,
+      "competition": "MEDIUM",
+      "competitionIndex": 43,
       "cpc": 0
     },
     {
       "keyword": "roofing huntersville nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
+      "competition": "HIGH",
+      "competitionIndex": 73,
       "cpc": 0
     },
     {
       "keyword": "roofers huntersville nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
+      "competition": "HIGH",
+      "competitionIndex": 73,
       "cpc": 0
     },
     {
       "keyword": "roofing contractor huntersville",
       "volume": 10,
-      "competition": null,
+      "competition": "LOW",
       "competitionIndex": 0,
       "cpc": 0
     },
     {
       "keyword": "roof repair huntersville nc",
       "volume": 10,
-      "competition": "HIGH",
-      "competitionIndex": 100,
+      "competition": "LOW",
+      "competitionIndex": 20,
       "cpc": 0
     },
     {
       "keyword": "roofing concord nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
-      "cpc": 0
+      "competition": "HIGH",
+      "competitionIndex": 100,
+      "cpc": 73.05
     },
     {
       "keyword": "roofers concord nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
-      "cpc": 0
+      "competition": "HIGH",
+      "competitionIndex": 100,
+      "cpc": 73.05
     },
     {
       "keyword": "roofing contractor concord nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
+      "competition": "LOW",
+      "competitionIndex": 29,
       "cpc": 0
     },
     {
       "keyword": "roof repair concord nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
+      "competition": "MEDIUM",
+      "competitionIndex": 50,
       "cpc": 0
     },
     {
       "keyword": "roofing mooresville nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
-      "cpc": 0
+      "competition": "MEDIUM",
+      "competitionIndex": 56,
+      "cpc": 41.91
     },
     {
       "keyword": "roofers mooresville nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
-      "cpc": 0
+      "competition": "MEDIUM",
+      "competitionIndex": 56,
+      "cpc": 41.91
     },
     {
       "keyword": "roofing contractor mooresville",
@@ -180,9 +194,9 @@
     {
       "keyword": "roof repair mooresville nc",
       "volume": 10,
-      "competition": "HIGH",
-      "competitionIndex": 100,
-      "cpc": 251.32
+      "competition": "MEDIUM",
+      "competitionIndex": 50,
+      "cpc": 0
     },
     {
       "keyword": "roofing cornelius nc",
@@ -201,8 +215,8 @@
     {
       "keyword": "roof repair cornelius nc",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
+      "competition": "HIGH",
+      "competitionIndex": 86,
       "cpc": 0
     },
     {
@@ -222,13 +236,6 @@
     {
       "keyword": "industrial roofing charlotte nc",
       "volume": 10,
-      "competition": "LOW",
-      "competitionIndex": 0,
-      "cpc": 0
-    },
-    {
-      "keyword": "storm damage roof repair charlotte",
-      "volume": 10,
       "competition": null,
       "competitionIndex": 0,
       "cpc": 0
@@ -236,9 +243,9 @@
     {
       "keyword": "free roof inspection charlotte",
       "volume": 10,
-      "competition": null,
-      "competitionIndex": 0,
-      "cpc": 0
+      "competition": "LOW",
+      "competitionIndex": 12,
+      "cpc": 43.67
     },
     {
       "keyword": "roofing near me charlotte",
@@ -263,13 +270,6 @@
     },
     {
       "keyword": "roofing contractor lake norman",
-      "volume": 0,
-      "competition": null,
-      "competitionIndex": 0,
-      "cpc": 0
-    },
-    {
-      "keyword": "roof repair lake norman",
       "volume": 0,
       "competition": null,
       "competitionIndex": 0,

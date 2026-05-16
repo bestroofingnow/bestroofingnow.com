@@ -1,0 +1,72 @@
+{
+  "date": "2026-04-29",
+  "filesScanned": 751,
+  "findings": [
+    {
+      "file": "src\\components\\analytics\\AutoTrack.tsx",
+      "line": 84,
+      "pattern": "beforeunload listener",
+      "snippet": "window.addEventListener('beforeunload', handleBeforeUnload);"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 35,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "// Session storage key for exit intent - persists for the entire browser session"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 52,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "// Check if exit intent was already shown this session on mount"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 64,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "// Handle exit intent - only fires once per session"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 103,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "// Enable exit intent only on desktop after user has been on page for 15 seconds"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 106,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "// Skip on mobile - exit intent doesn't work well on mobile anyway"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 118,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "// Add exit intent listener using mouseleave on document"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 125,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "document.documentElement.addEventListener('mouseleave', handleMouseLeave);"
+    },
+    {
+      "file": "src\\components\\estimate\\EstimateProvider.tsx",
+      "line": 128,
+      "pattern": "mouseleave/exit-intent",
+      "snippet": "document.documentElement.removeEventListener('mouseleave', handleMouseLeave);"
+    },
+    {
+      "file": "src\\components\\layout\\Header.tsx",
+      "line": 23,
+      "pattern": "scroll-lock body overflow",
+      "snippet": "document.body.style.overflow = 'hidden';"
+    },
+    {
+      "file": "src\\components\\projects\\ProjectGallery.tsx",
+      "line": 26,
+      "pattern": "scroll-lock body overflow",
+      "snippet": "document.body.style.overflow = 'hidden';"
+    }
+  ]
+}

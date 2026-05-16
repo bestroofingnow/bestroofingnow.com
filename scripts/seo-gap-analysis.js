@@ -133,7 +133,7 @@ async function checkSERPRankings() {
     }));
 
     try {
-      const response = await makeRequest('/v3/serp/google/organic/live', tasks);
+      const response = await makeRequest('/v3/serp/google/organic/live/regular', tasks);
 
       if (response.tasks) {
         for (const task of response.tasks) {

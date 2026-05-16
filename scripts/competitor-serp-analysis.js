@@ -59,7 +59,7 @@ function makeRequest(endpoint, postData) {
 }
 
 async function analyzeSERP(keyword) {
-  const response = await makeRequest('/v3/serp/google/organic/live', [{
+  const response = await makeRequest('/v3/serp/google/organic/live/regular', [{
     keyword,
     location_name: 'Charlotte,North Carolina,United States',
     language_name: 'English',

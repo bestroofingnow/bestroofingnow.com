@@ -23,7 +23,7 @@ const postData = JSON.stringify([{
 
 const options = {
   hostname: 'api.dataforseo.com',
-  path: '/v3/serp/google/organic/live',
+  path: '/v3/serp/google/organic/live/regular',
   method: 'POST',
   headers: {
     'Authorization': 'Basic ' + auth,
