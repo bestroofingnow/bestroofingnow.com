@@ -8,10 +8,12 @@ import { Testimonials } from '@/components/sections/Testimonials';
 import { ServiceAreas } from '@/components/sections/ServiceAreas';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTASection } from '@/components/sections/CTASection';
+import { CitationFacts } from '@/components/sections/CitationFacts';
 import {
   FAQSchema,
   BreadcrumbSchema,
   HomePageAEOSchemas,
+  LocalBusinessSchema,
   SpeakableContent,
   WebPageSchema,
   HeroImageSchema,
@@ -36,30 +38,16 @@ import { IMAGES, CITY_COORDINATES } from '@/lib/images';
 const HERO_IMAGES = IMAGES.heroRotation;
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Roofer Charlotte NC | 5-Star | BBB A+' },
-  description: 'Charlotte NC\'s top-rated roofer. 5.0 Google rating, BBB A+, veteran-owned. Roof repair, replacement & free inspections. Call (704) 605-6047.',
-  keywords: [
-    // Primary Charlotte brand keywords - homepage is the authority
-    'best roofing company Charlotte NC',
-    'best roofing company Charlotte',
-    'best roofers near me',
-    'best roofer Charlotte NC',
-    'top rated roofing company Charlotte',
-    'veteran owned roofing Charlotte',
-    'BBB A+ rated roofer Charlotte',
-    '5 star roofing company Charlotte',
-    'highly rated roofing company near me',
-    'roofing company Charlotte NC',
-    'Charlotte roofing contractor',
-    'roofers Charlotte NC',
-    'roofing contractors Charlotte NC',
-    // Generic "near me" keywords for local SEO
-    'roofers near me',
-    'roofing contractor near me',
-  ],
+  // Title rewritten 2026-05-11: prior "Best Roofer Charlotte NC" mismatched the #1 GSC quick-win
+  // "best roofing company charlotte nc" (pos 9, 150/mo, $12.35 CPC) and the page-2 cluster of
+  // "roofing companies charlotte nc" / "roofing contractor charlotte nc" queries. Putting the exact
+  // "Roofing Company" phrase in the title to lift CTR from 0.12% on 50,890 impressions.
+  // Length trimmed (May 16 rebase): 60-char Google display limit cuts off phone-number taglines.
+  title: { absolute: 'Best Roofing Company Charlotte NC | 5★ BBB A+' },
+  description: "Charlotte NC's top-rated roofing company. 5★ Google · BBB A+ · veteran-owned. Roof repair, replacement, storm damage. FREE estimate: (704) 605-6047.",
   openGraph: {
-    title: "Best Roofing Now | Charlotte's Top-Rated Roofing Company",
-    description: 'Charlotte\'s top-rated roofing contractor. 5-star Google rating, veteran-owned, BBB A+ rated. Free roof inspections and estimates.',
+    title: "Best Roofing Now | Charlotte NC's Top-Rated Roofing Company",
+    description: "Charlotte NC's top-rated roofing company. 5-star Google rating · veteran-owned · BBB A+. Free roof inspections, storm damage repair, metal roofing, replacements. Call (704) 605-6047.",
     url: 'https://www.bestroofingnow.com',
   },
   alternates: {
@@ -80,6 +68,8 @@ export default function HomePage() {
 
   return (
     <>
+      {/* Homepage has visible testimonials + reviews — opt-in to aggregateRating per §9 of the gold-standard plan */}
+      <LocalBusinessSchema includeRating={true} />
       <HowToGetRoofEstimateSchema />
       <FreeInspectionOfferSchema />
       <ReviewsSchema />
@@ -462,6 +452,8 @@ export default function HomePage() {
       </section>
 
       <ServiceAreas />
+
+      <CitationFacts city="Charlotte" state="NC" />
 
       {/* Community Involvement */}
       <CommunityInvolvementSection count={4} />

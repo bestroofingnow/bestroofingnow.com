@@ -50,6 +50,12 @@ const KNOWN_ROUTES = new Set([
   'free-roof-inspection',
   // Service entity pages (SEO gap fills)
   'flat-roof-repair',
+  // Added 2026-05-11: high-CPC "near me" pages exist as files but were missing from
+  // KNOWN_ROUTES and sitemap. Title/meta already optimized for "storm damage roof repair
+  // near me" (+179% growth, 2,900/mo, $17.67 CPC) and "emergency roof repair near me"
+  // (+85%, 6,600/mo, $44.52 CPC).
+  'storm-damage-roof-repair',
+  'emergency-roof-repair',
   'chimney-flashing-repair',
   'skylight-installation',
   'emergency-roof-tarping',
@@ -70,6 +76,9 @@ const KNOWN_ROUTES = new Set([
   'roof-repair-vs-replacement-charlotte-nc',
   'charlotte-storm-season-roof-guide',
   'charlotte-roofing-costs-2026',
+  // PAA / AI Overview Q&A pages
+  '25-percent-rule-roofing',
+  'how-to-tell-if-roofer-is-lying',
   // Lake Norman hub pages (no -nc suffix, so not caught by SERVICE_LOCATION_PATTERN)
   'lake-norman-waterfront-roofing',
   'lake-norman-storm-damage-guide',
