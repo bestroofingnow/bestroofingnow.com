@@ -30,19 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing University City Charlotte',
   description:
-    'Looking for a trusted roofer in University City Charlotte NC? Best Roofing Now serves the UNCC area with professional roofing services for homes, apartments, and student housing. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing university city charlotte nc',
-    'roofers university area',
-    'university city roofing contractor',
-    'UNCC area roofers',
-    'university city roof repair',
-    'university city roof replacement',
-    'roofing company university city nc',
-    'student housing roofing charlotte',
-    'apartment roofing university city',
-    'best roofer university city charlotte',
-  ],
+    'Looking for a trusted roofer in University City Charlotte NC? Best Roofing Now serves the UNCC area with professional roofing services for homes, apartments, and student housing. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-university-city-charlotte-nc`,
   },

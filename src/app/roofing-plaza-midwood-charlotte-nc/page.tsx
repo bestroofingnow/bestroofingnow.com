@@ -39,19 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Plaza Midwood Charlotte NC',
   description:
-    'Expert roofing services for Plaza Midwood Charlotte NC. Specializing in craftsman homes, bungalows, and historic properties. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
-  keywords: [
-    'roofing plaza midwood charlotte nc',
-    'roofers plaza midwood',
-    'plaza midwood roof repair',
-    'plaza midwood roof replacement',
-    'craftsman home roofing charlotte',
-    'historic home roofing plaza midwood',
-    'bungalow roofing charlotte nc',
-    'plaza midwood roofing contractor',
-    'roof repair plaza midwood charlotte',
-    'best roofer plaza midwood',
-  ],
+    'Expert roofing services for Plaza Midwood Charlotte NC. Specializing in craftsman homes, bungalows, and historic properties. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc`,
   },

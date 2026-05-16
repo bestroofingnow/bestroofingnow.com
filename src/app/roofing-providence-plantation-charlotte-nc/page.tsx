@@ -41,19 +41,7 @@ export const metadata: Metadata = {
   title: 'Roofing Providence Plantation Charlotte NC',
   robots: { index: false, follow: true },
   description:
-    'Trusted roofer in Providence Plantation Charlotte NC. Premium architectural shingles for established homes. BBB A+ rated, veteran-owned. Free estimates.',
-  keywords: [
-    'roofing providence plantation charlotte nc',
-    'roofers providence plantation',
-    'providence plantation roofing contractor',
-    'south charlotte roofers',
-    'providence plantation roof repair',
-    'providence plantation roof replacement',
-    'roofing providence country club',
-    'architectural shingles providence plantation',
-    'best roofer providence plantation charlotte',
-    'providence plantation charlotte roofing services',
-  ],
+    'Trusted roofer in Providence Plantation Charlotte NC. Premium architectural shingles for established homes. BBB A+ rated, veteran-owned. Free estimates.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-providence-plantation-charlotte-nc`,
   },
