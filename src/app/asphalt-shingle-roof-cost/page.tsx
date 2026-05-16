@@ -42,22 +42,6 @@ export const metadata: Metadata = {
   title: 'Asphalt Shingle Roof Cost Charlotte NC | 2026 Pricing Guide',
   description:
     'Asphalt shingle roof cost in Charlotte NC: 3-tab $3.50-5.50/sqft, architectural $4.50-7/sqft, designer $7-12/sqft. Full pricing by house size. Free estimates.',
-  keywords: [
-    'asphalt shingle roof cost',
-    'cost of an asphalt shingle roof',
-    'cost of asphalt shingle roof',
-    'cost to replace an asphalt shingle roof',
-    'asphalt shingle roof replacement cost',
-    'shingle roof cost per square foot',
-    '3-tab vs architectural shingle cost',
-    'asphalt shingle roof cost Charlotte NC',
-    'shingle roof replacement cost Charlotte',
-    'how much does a shingle roof cost Charlotte NC',
-    'architectural shingle roof cost per square foot',
-    'asphalt roof cost 2026',
-    'shingle roof installation cost Charlotte NC',
-    'cheapest shingle roof Charlotte NC',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/asphalt-shingle-roof-cost`,
   },
@@ -352,6 +336,98 @@ export default function AsphaltShingleRoofCostPage() {
                 <CheckCircle className="w-5 h-5 text-green-400" />
                 {SITE_CONFIG.customerCount}+ Projects Completed
               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cluster phrase variants — added 2026-05-11. Existing topic cluster shows large unranked
+          volume across four phrase variants (each ~8,100-12,100/mo, LOW competition):
+          "cost of an asphalt shingle roof", "asphalt shingle roof cost",
+          "cost of asphalt shingle roof replacement", "asphalt shingle roof replacement cost".
+          These H2/H3 anchors give each variant an on-page header match. */}
+      <section id="asphalt-shingle-cost-variants" className="section bg-white">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">Quick Answers</p>
+
+            <h2 id="cost-of-asphalt-shingle-roof" className="text-2xl md:text-3xl font-bold text-primary mb-3">
+              Cost of an Asphalt Shingle Roof (2026)
+            </h2>
+            <p className="text-gray leading-relaxed mb-6">
+              The cost of an asphalt shingle roof in Charlotte NC is{' '}
+              <strong>$3.50 to $12 per square foot installed</strong>, or{' '}
+              <strong>$5,500 to $25,000 for a typical home</strong>. Pricing breaks down by shingle
+              grade: budget 3-tab ($3.50–$5.50/sqft), mid-grade architectural ($4.50–$7/sqft), and
+              premium designer ($7–$12/sqft). The total cost of an asphalt shingle roof includes
+              materials, labor, underlayment, drip edge, ridge cap, and standard manufacturer
+              warranties.
+            </p>
+
+            <h2 id="asphalt-shingle-roof-replacement-cost" className="text-2xl md:text-3xl font-bold text-primary mb-3">
+              Asphalt Shingle Roof Replacement Cost
+            </h2>
+            <p className="text-gray leading-relaxed mb-4">
+              The asphalt shingle roof replacement cost in Charlotte NC ranges from{' '}
+              <strong>$7,000 to $25,000+</strong> depending on home size, shingle grade, and the
+              condition of the decking underneath. Replacement includes tear-off and disposal of the
+              existing roof, which adds <strong>$1.00–$1.50 per square foot</strong> on top of new
+              installation pricing.
+            </p>
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
+                <thead className="bg-primary text-white">
+                  <tr>
+                    <th className="px-4 py-3 text-left font-semibold">Home Size</th>
+                    <th className="px-4 py-3 text-left font-semibold">3-Tab Replacement</th>
+                    <th className="px-4 py-3 text-left font-semibold">Architectural Replacement</th>
+                    <th className="px-4 py-3 text-left font-semibold">Designer Replacement</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 text-sm">
+                  <tr><td className="px-4 py-3 font-medium">1,500 sq ft</td><td className="px-4 py-3">$5,250–$8,250</td><td className="px-4 py-3">$6,750–$10,500</td><td className="px-4 py-3">$10,500–$18,000</td></tr>
+                  <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">2,000 sq ft</td><td className="px-4 py-3">$7,000–$11,000</td><td className="px-4 py-3">$9,000–$14,000</td><td className="px-4 py-3">$14,000–$24,000</td></tr>
+                  <tr><td className="px-4 py-3 font-medium">2,500 sq ft</td><td className="px-4 py-3">$8,750–$13,750</td><td className="px-4 py-3">$11,250–$17,500</td><td className="px-4 py-3">$17,500–$30,000</td></tr>
+                  <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">3,000 sq ft</td><td className="px-4 py-3">$10,500–$16,500</td><td className="px-4 py-3">$13,500–$21,000</td><td className="px-4 py-3">$21,000–$36,000</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray italic mb-8">
+              Replacement pricing includes tear-off, disposal, new underlayment, drip edge, ridge
+              vent, ice & water shield at eaves/valleys, and standard manufacturer warranties.
+              Charlotte/Mecklenburg County 2026 labor rates.
+            </p>
+
+            <h3 id="cost-of-asphalt-shingle-roof-replacement" className="text-xl font-bold text-primary mb-3">
+              Cost of Asphalt Shingle Roof Replacement: What&apos;s Included
+            </h3>
+            <p className="text-gray leading-relaxed mb-3">
+              A complete asphalt shingle roof replacement in Charlotte should include all of the
+              following — if any item is missing from your quote, ask why:
+            </p>
+            <ul className="text-gray text-sm space-y-2 leading-relaxed mb-10">
+              <li>✓ <strong>Full tear-off</strong> of existing shingles down to the deck</li>
+              <li>✓ <strong>Disposal fees</strong> for old roofing material (typically 4–6 tons of debris)</li>
+              <li>✓ <strong>Deck inspection</strong> and replacement of any rotted plywood ($60–$90/sheet)</li>
+              <li>✓ <strong>Synthetic underlayment</strong> (NOT 15# felt) across the entire roof</li>
+              <li>✓ <strong>Ice & water shield</strong> at eaves, valleys, and around penetrations</li>
+              <li>✓ <strong>Drip edge</strong> on all eaves and rakes (Charlotte code requirement)</li>
+              <li>✓ <strong>Pipe boots and step flashing</strong> — new, not reused</li>
+              <li>✓ <strong>Ridge vent</strong> for proper attic ventilation</li>
+              <li>✓ <strong>Architectural shingles</strong> with manufacturer warranty registration</li>
+              <li>✓ <strong>Permit fees</strong> and Charlotte/Mecklenburg County inspection</li>
+              <li>✓ <strong>Worker&apos;s comp + general liability insurance</strong> documentation</li>
+              <li>✓ <strong>Workmanship warranty</strong> (5–10 years standard, lifetime available)</li>
+            </ul>
+
+            <div className="bg-primary/5 rounded-xl p-6 border border-primary/20">
+              <h3 className="text-xl font-bold text-primary mb-3">Related Cost Comparisons</h3>
+              <ul className="text-gray text-sm space-y-2">
+                <li>→ <Link href="/shingle-vs-metal-roof-cost" className="text-primary hover:underline">Asphalt Shingle Cost vs Metal Roof Cost</Link> — side-by-side ROI</li>
+                <li>→ <Link href="/metal-roof-cost" className="text-primary hover:underline">Metal Roof Cost Guide</Link> — pricing by metal type and home size</li>
+                <li>→ <Link href="/charlotte-roofing-costs-2026" className="text-primary hover:underline">Charlotte 2026 Roofing Cost Guide</Link> — all materials, all sizes</li>
+                <li>→ <Link href="/blog/roof-shingle-cost-per-square-foot" className="text-primary hover:underline">Roof Shingle Cost Per Square Foot</Link> — detailed price breakdown</li>
+              </ul>
             </div>
           </div>
         </div>

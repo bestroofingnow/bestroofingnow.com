@@ -34,20 +34,6 @@ export const metadata: Metadata = {
   title: 'Shingle vs Metal Roof Cost: Complete 2026 Comparison Guide | Charlotte NC',
   description:
     'Shingle vs metal roof cost comparison for Charlotte NC homeowners. Upfront costs, lifetime value, insurance savings, and ROI breakdown. Find out which roofing material saves you more money over 50 years.',
-  keywords: [
-    'shingle vs metal roof cost',
-    'metal roof cost vs shingle',
-    'cost of shingle roof vs metal roof',
-    'shingle versus metal roof cost',
-    'is a metal roof worth the extra cost',
-    'metal roof vs asphalt shingles cost comparison',
-    'metal roof vs shingles pros and cons',
-    'metal roof cost Charlotte NC',
-    'shingle roof cost Charlotte NC',
-    'metal roof lifetime cost comparison',
-    'metal roof insurance savings Charlotte',
-    'metal roof energy savings Charlotte NC',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/shingle-vs-metal-roof-cost`,
   },
@@ -272,6 +258,97 @@ export default function ShingleVsMetalRoofCostPage() {
               </div>
               <p className="text-sm text-gray">Standing seam most popular</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cluster phrase variants — added 2026-05-11. Page ranks pos 19 for "cost of metal roof
+          vs shingle" (600/mo, KD 3). Existing topic cluster shows three 6,600/mo unranked variants:
+          "shingle versus metal roof cost", "cost of shingle roof vs metal roof", "metal roof cost
+          vs shingle". These H2 anchors give each variant an explicit on-page header match. */}
+      <section className="section bg-white">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">Quick Answers</p>
+            <h2 id="shingle-versus-metal-roof-cost" className="text-2xl md:text-3xl font-bold text-primary mb-3">
+              Shingle Versus Metal Roof Cost: At a Glance
+            </h2>
+            <p className="text-gray leading-relaxed mb-8">
+              For a 2,000 sq ft Charlotte NC home, <strong>asphalt shingles cost $8,500–$15,000</strong>{' '}
+              installed while a <strong>metal roof costs $15,000–$30,000</strong>. Metal costs roughly
+              1.5–2× shingles upfront but lasts 2–3× as long (40–70 years vs 20–30 years), making the
+              cost per year of useful life lower for metal in most cases.
+            </p>
+
+            <h2 id="cost-of-shingle-roof-vs-metal-roof" className="text-2xl md:text-3xl font-bold text-primary mb-3">
+              Cost of Shingle Roof vs Metal Roof (By Home Size)
+            </h2>
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
+                <thead className="bg-primary text-white">
+                  <tr>
+                    <th className="px-4 py-3 text-left font-semibold">Home Size</th>
+                    <th className="px-4 py-3 text-left font-semibold">Asphalt Shingles</th>
+                    <th className="px-4 py-3 text-left font-semibold">Metal (Standing Seam)</th>
+                    <th className="px-4 py-3 text-left font-semibold">Metal Premium</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 text-sm">
+                  <tr><td className="px-4 py-3 font-medium">1,500 sq ft</td><td className="px-4 py-3">$6,750–$11,250</td><td className="px-4 py-3">$15,000–$27,000</td><td className="px-4 py-3 text-accent">+$8,250–$15,750</td></tr>
+                  <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">2,000 sq ft</td><td className="px-4 py-3">$9,000–$15,000</td><td className="px-4 py-3">$20,000–$36,000</td><td className="px-4 py-3 text-accent">+$11,000–$21,000</td></tr>
+                  <tr><td className="px-4 py-3 font-medium">2,500 sq ft</td><td className="px-4 py-3">$11,250–$18,750</td><td className="px-4 py-3">$25,000–$45,000</td><td className="px-4 py-3 text-accent">+$13,750–$26,250</td></tr>
+                  <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">3,000 sq ft</td><td className="px-4 py-3">$13,500–$22,500</td><td className="px-4 py-3">$30,000–$54,000</td><td className="px-4 py-3 text-accent">+$16,500–$31,500</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray italic mb-10">
+              Includes tear-off, underlayment, flashing, and standard manufacturer warranties.
+              Pricing reflects Charlotte/Mecklenburg County labor rates as of 2026.
+            </p>
+
+            <h2 id="metal-roof-cost-vs-shingle" className="text-2xl md:text-3xl font-bold text-primary mb-3">
+              Metal Roof Cost vs Shingle: Cost-Per-Year ROI
+            </h2>
+            <p className="text-gray leading-relaxed mb-4">
+              The fairest way to compare metal roof cost vs shingle is to divide the installed price
+              by realistic lifespan in Charlotte&apos;s climate. Hail, humidity, and intense summer heat
+              shorten Charlotte shingle lifespans toward the lower end of the national range, while
+              metal holds closer to the upper end.
+            </p>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
+                <thead className="bg-gray-100 text-dark">
+                  <tr>
+                    <th className="px-4 py-3 text-left font-semibold">Metric (2,000 sq ft home)</th>
+                    <th className="px-4 py-3 text-left font-semibold">3-Tab Shingles</th>
+                    <th className="px-4 py-3 text-left font-semibold">Architectural Shingles</th>
+                    <th className="px-4 py-3 text-left font-semibold">Standing Seam Metal</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 text-sm">
+                  <tr><td className="px-4 py-3 font-medium">Installed cost</td><td className="px-4 py-3">$7,000–$10,000</td><td className="px-4 py-3">$9,000–$15,000</td><td className="px-4 py-3">$20,000–$36,000</td></tr>
+                  <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">Charlotte lifespan</td><td className="px-4 py-3">15–20 yrs</td><td className="px-4 py-3">22–28 yrs</td><td className="px-4 py-3">45–55 yrs</td></tr>
+                  <tr><td className="px-4 py-3 font-medium">Cost per year</td><td className="px-4 py-3">$425–$575</td><td className="px-4 py-3">$370–$540</td><td className="px-4 py-3 text-accent font-semibold">$400–$700</td></tr>
+                  <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">Insurance discount (NC)</td><td className="px-4 py-3">None</td><td className="px-4 py-3">0–10%</td><td className="px-4 py-3">10–30%</td></tr>
+                  <tr><td className="px-4 py-3 font-medium">Energy savings (cooling)</td><td className="px-4 py-3">Baseline</td><td className="px-4 py-3">0–5%</td><td className="px-4 py-3">10–25%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-gray leading-relaxed">
+              When you bake in insurance discounts and lower cooling bills, the true cost-per-year of
+              metal often <em>beats</em> architectural shingles in Charlotte — especially for owners
+              planning to stay 20+ years.
+            </p>
+
+            <h3 id="charlotte-shingle-metal-considerations" className="text-xl font-bold text-primary mt-10 mb-3">
+              Charlotte-Specific Considerations
+            </h3>
+            <ul className="text-gray text-sm space-y-2 leading-relaxed mb-2">
+              <li><strong>HOA approval:</strong> Many South Charlotte and Lake Norman HOAs (Ballantyne, The Peninsula, Skybrook) restrict metal roof colors and styles. Always check covenants first.</li>
+              <li><strong>Hail performance:</strong> Charlotte sits in moderate-to-high hail zones. Class 4 impact-rated shingles narrow the longevity gap but still average 7–10 years shorter than metal.</li>
+              <li><strong>NC insurance:</strong> Several NC carriers offer wind/hail mitigation discounts of 15–25% on metal roofs installed to UL 2218 Class 4 standard.</li>
+              <li><strong>Resale boost:</strong> NC home appraisers credit 1–6% additional resale value for metal roofs versus equivalent homes with shingles.</li>
+            </ul>
           </div>
         </div>
       </section>

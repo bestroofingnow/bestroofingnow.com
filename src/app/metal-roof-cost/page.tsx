@@ -25,6 +25,7 @@ import {
   Flame,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
+import { CitationFacts } from '@/components/sections/CitationFacts';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import {
   BreadcrumbSchema,
@@ -43,22 +44,6 @@ export const metadata: Metadata = {
   title: 'Metal Roof Cost (2026) | Pricing Per Sq Ft, by Type & House Size',
   description:
     'Complete 2026 metal roof cost guide. Standing seam $10-$18/sqft, corrugated $5-$10, metal shingles $7-$14, copper $25-$40. Cost by house size, installation factors, ROI analysis. Free estimates in Charlotte NC.',
-  keywords: [
-    'metal roof cost',
-    'metal roofing cost per square foot',
-    'standing seam metal roof cost',
-    'metal roof installation cost',
-    'metal roof cost Charlotte NC',
-    'how much does a metal roof cost',
-    'metal roof price per square',
-    'corrugated metal roof cost',
-    'metal shingle roof cost',
-    'stone coated metal roof cost',
-    'copper roof cost',
-    'metal roof cost per square foot 2026',
-    'is a metal roof worth the cost',
-    'metal roof vs shingles cost',
-  ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roof-cost`,
   },
@@ -490,6 +475,115 @@ export default function MetalRoofCostPage() {
                 home. Prices include tear-off, underlayment, flashing, trim, and standard warranties.{' '}
                 <Link href="/contact" className="text-primary font-semibold hover:underline">Get your custom quote</Link>.
               </div>
+            </div>
+
+            {/* Quick cost-by-size index — added 2026-05-11 to anchor specific volume keywords
+                ("1,000 sq ft metal roof cost" 100/mo, "1,500 sq ft metal roof cost" 1,500/mo,
+                "average cost of metal roof on 1500 square foot homes" 40/mo). Page already
+                ranks pos 10 for the 1,500 sq ft term — these explicit H3s help variants. */}
+            <div className="mt-12 max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+              <div id="1000-sq-ft-metal-roof-cost" className="bg-light rounded-xl p-6 border border-gray-100">
+                <h3 className="text-xl font-bold text-primary mb-2">1,000 Sq Ft Metal Roof Cost</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  A 1,000 sq ft metal roof in Charlotte NC runs <strong>$5,000–$18,000 installed</strong>,
+                  depending on whether you choose corrugated panels, metal shingles, or standing seam.
+                  Small bungalows, cottages, and many in-town Plaza Midwood and Dilworth homes fall in
+                  this size range. Best Roofing Now provides free written estimates for 1,000 sq ft
+                  roofs across Mecklenburg County.
+                </p>
+              </div>
+              <div id="1500-sq-ft-metal-roof-cost" className="bg-light rounded-xl p-6 border border-accent/30">
+                <h3 className="text-xl font-bold text-primary mb-2">1,500 Sq Ft Metal Roof Cost</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  The average cost of a metal roof on a 1,500 square foot home is{' '}
+                  <strong>$7,500–$27,000 installed</strong>. This is one of the most common Charlotte
+                  home sizes — typical ranch and two-story homes in Cornelius, Huntersville, and
+                  University City. Standing seam at 1,500 sq ft averages $15,000–$27,000; metal
+                  shingles average $10,500–$21,000; corrugated runs $7,500–$15,000.
+                </p>
+              </div>
+              <div id="2000-sq-ft-metal-roof-cost" className="bg-light rounded-xl p-6 border border-gray-100">
+                <h3 className="text-xl font-bold text-primary mb-2">2,000 Sq Ft Metal Roof Cost</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  A 2,000 sq ft metal roof — the most common Charlotte home size — costs{' '}
+                  <strong>$10,000–$36,000 installed</strong>. Most Mooresville, Matthews, and South
+                  Charlotte homes fall here. Standing seam runs $20,000–$36,000, metal shingles
+                  $14,000–$28,000, and corrugated $10,000–$20,000. Includes tear-off and standard
+                  warranties.
+                </p>
+              </div>
+              <div id="2500-sq-ft-metal-roof-cost" className="bg-light rounded-xl p-6 border border-gray-100">
+                <h3 className="text-xl font-bold text-primary mb-2">2,500 Sq Ft Metal Roof Cost</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  A 2,500 sq ft metal roof typically costs <strong>$12,500–$45,000 installed</strong>{' '}
+                  in the Charlotte area. Larger two-story and luxury homes in Ballantyne, Davidson,
+                  and Lake Norman waterfronts fall in this range. Steep roof pitches, multiple
+                  dormers, and copper accents can push pricing toward the higher end.
+                </p>
+              </div>
+              <div id="3000-sq-ft-metal-roof-cost" className="bg-light rounded-xl p-6 border border-gray-100">
+                <h3 className="text-xl font-bold text-primary mb-2">3,000 Sq Ft Metal Roof Cost</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  A 3,000 sq ft metal roof costs <strong>$15,000–$54,000 installed</strong>. Estate
+                  homes in Eastover, Myers Park, and The Peninsula at Lake Norman typically fall in
+                  this size. Larger roofs often qualify for material volume discounts but include
+                  more complex flashings, copper details, and multiple roof planes.
+                </p>
+              </div>
+              <div id="corrugated-metal-roof-cost" className="bg-light rounded-xl p-6 border border-gray-100">
+                <h3 className="text-xl font-bold text-primary mb-2">Corrugated Metal Roof Cost</h3>
+                <p className="text-gray text-sm leading-relaxed">
+                  Corrugated metal roofing is the most affordable type at{' '}
+                  <strong>$5–$10 per sq ft installed</strong> ($5,000–$30,000 for typical Charlotte
+                  homes). Best for farmhouse, industrial, agricultural, and rustic-style properties.
+                  G90 galvanized and Galvalume are the most common substrates. Lifespan: 40–60 years.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Metal Roof Replacement Cost — added 2026-05-11. Targets "metal roof replacement cost"
+          (700/mo, pos 25 on this URL) and "replace metal roof cost" variants. Replacement-specific
+          framing (tear-off vs overlay, structural assessment, removal/disposal) distinct from
+          new-construction pricing. */}
+      <section id="metal-roof-replacement-cost" className="section bg-light">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Metal Roof Replacement Cost (2026)
+            </h2>
+            <p className="text-gray text-lg">
+              Replacing an existing roof with metal in Charlotte NC costs{' '}
+              <strong>$5–$40 per square foot installed</strong> — the same base material range as a
+              new metal roof, plus tear-off and disposal of your old roofing. For most homeowners,
+              metal roof replacement cost lands between $12,000 and $40,000 depending on home size,
+              metal type, and roof complexity.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-primary mb-3">What Drives Replacement Cost</h3>
+              <ul className="text-gray text-sm space-y-2 leading-relaxed">
+                <li>• <strong>Tear-off & disposal:</strong> $1,000–$3,000 to remove existing shingles or metal</li>
+                <li>• <strong>Decking repair:</strong> $300–$1,500 if rotted plywood is found</li>
+                <li>• <strong>Underlayment upgrade:</strong> Synthetic or self-adhering ice & water shield, $0.50–$1.50/sqft</li>
+                <li>• <strong>Structural reinforcement:</strong> Rarely needed (metal is lighter than shingles)</li>
+                <li>• <strong>Permits & inspection:</strong> $200–$600 in Charlotte/Mecklenburg County</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-primary mb-3">Replacement vs Overlay (Metal-Over-Shingles)</h3>
+              <p className="text-gray text-sm leading-relaxed mb-3">
+                Charlotte building codes generally allow one roof overlay. Installing metal directly
+                over existing asphalt shingles saves $1,000–$3,000 on tear-off — but limits future
+                warranty coverage and complicates leak detection. We recommend full tear-off in
+                most cases, especially for homes 20+ years old or with any moisture damage.
+              </p>
+              <Link href="/contact" className="inline-flex items-center text-primary font-semibold hover:underline text-sm">
+                Schedule a free replacement quote <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
             </div>
           </div>
         </div>
@@ -1240,6 +1334,8 @@ export default function MetalRoofCostPage() {
         subtitle="Browse completed metal roofing projects from the Charlotte area by Best Roofing Now."
         schemaPageUrl={`${SITE_CONFIG.url}/metal-roof-cost`}
       />
+
+      <CitationFacts service="Metal Roof Installation" city="Charlotte" state="NC" />
 
       {/* Final CTA */}
       <CTASection

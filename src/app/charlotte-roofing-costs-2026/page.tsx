@@ -41,32 +41,19 @@ import { IMAGES } from '@/lib/images';
 import EstimateButton from '@/components/estimate/EstimateButton';
 
 export const metadata: Metadata = {
-  title: 'Charlotte NC Roofing Costs & Pricing Guide (2026) | What to Expect',
+  // Title rewritten 2026-05-11: page already ranks pos 5 for "roof replacement cost charlotte nc"
+  // and pos 9 for "how much does a new roof cost in nc". Title and description now lead with the
+  // higher-volume "Roof Replacement Cost" phrase to match user intent and lift CTR.
+  title: 'Roof Replacement Cost Charlotte NC 2026 | Average Pricing Guide',
   description:
-    'Complete 2026 Charlotte NC roofing cost guide. Roof repair $150-$5,000+, shingle replacement $8,500-$15,000, metal roofing $15,000-$30,000. Free estimates with transparent pricing from BBB A+ rated contractor.',
-  keywords: [
-    'roofing costs Charlotte NC 2026',
-    'roof replacement cost Charlotte NC',
-    'how much does a new roof cost Charlotte NC',
-    'roof repair cost Charlotte NC',
-    'metal roofing cost Charlotte NC',
-    'commercial roofing cost Charlotte',
-    'Charlotte roofing pricing guide 2026',
-    'roofing estimate Charlotte NC',
-    'roof replacement cost Lake Norman NC',
-    'roof replacement cost Lake Wylie SC',
-    'new roof cost Mooresville NC',
-    'roof replacement cost Fort Mill SC',
-    'cheapest roof replacement Charlotte NC',
-    'Charlotte NC roofer prices 2026',
-  ],
+    'Average roof replacement cost in Charlotte NC (2026): $8,500–$15,000 for asphalt shingles, $15,000–$30,000 for metal. New roof, repair & material pricing by home size. Free estimates from BBB A+ contractor.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/charlotte-roofing-costs-2026`,
   },
   openGraph: {
-    title: 'Charlotte NC Roofing Costs & Pricing Guide (2026) | What to Expect',
+    title: 'Roof Replacement Cost Charlotte NC 2026 | Average Pricing Guide',
     description:
-      'Complete 2026 roofing cost guide for Charlotte NC homeowners and businesses. Repair, replacement, and material pricing with free estimates from Best Roofing Now.',
+      'Average roof replacement cost in Charlotte NC for 2026. Complete pricing for shingle, metal, tile, and flat roofing with free estimates from Best Roofing Now.',
     url: `${SITE_CONFIG.url}/charlotte-roofing-costs-2026`,
     type: 'website',
     images: [
