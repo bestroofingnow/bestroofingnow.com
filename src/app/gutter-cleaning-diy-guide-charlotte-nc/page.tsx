@@ -26,6 +26,7 @@ import {
   ArticleSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -292,6 +293,7 @@ export default function GutterCleaningDIYGuidePage() {
         city="Charlotte"
         skipFAQ={true}
       />
+      <SpeakableContentBlocks city="Charlotte" />
 
       <section className="pt-8 pb-12 bg-gradient-to-b from-blue-900 via-blue-800 to-slate-900">
         <div className="container mx-auto px-4">

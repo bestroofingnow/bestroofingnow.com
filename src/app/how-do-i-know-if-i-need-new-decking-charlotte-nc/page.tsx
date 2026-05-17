@@ -52,7 +52,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'How Do I Know if I Need New Decking Under My Roof in Charlotte NC?',
+  title: 'How to Know if I Need New Decking Under My Roof Charlotte NC?',
   description:
     "Charlotte NC roof decking signs: sagging slopes, attic water stains, soft spots, daylight through deck, granule loss patterns.",
   alternates: { canonical: PAGE_URL },

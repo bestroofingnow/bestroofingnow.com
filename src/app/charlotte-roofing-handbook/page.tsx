@@ -38,6 +38,7 @@ import {
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
   ItemListSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { LastUpdated } from '@/components/ui/LastUpdated';
@@ -201,6 +202,7 @@ export default function CharlotteRoofingHandbookPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <ItemListSchema
         title="Charlotte Roofing Handbook - Table of Contents"
         description="Complete guide to roofing for Charlotte NC homeowners"

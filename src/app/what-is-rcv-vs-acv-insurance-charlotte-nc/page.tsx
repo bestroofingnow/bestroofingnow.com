@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is RCV vs ACV Insurance and Which Is Better for My Charlotte NC Roof Claim?',
+  title: 'What Is RCV vs ACV Insurance and Which Is Better for Charlotte NC Roof Claim?',
   description:
     "RCV pays full replacement cost; ACV pays depreciated value. Charlotte NC 15-year roof: RCV $20K vs ACV $8-12K. RCV premium $50-$200/yr extra.",
   alternates: { canonical: PAGE_URL },

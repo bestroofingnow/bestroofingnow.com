@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is Roof Decking and How Do I Know If Mine Needs Replacement in Charlotte NC?',
+  title: 'What Is Roof Decking and How Do I Know If Mine Needs Replacement Charlotte NC?',
   description:
     "Roof decking = plywood/OSB structural base. NC IRC §R803 requires 7/16-inch OSB or 15/32-inch plywood.",
   alternates: { canonical: PAGE_URL },

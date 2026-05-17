@@ -21,7 +21,7 @@ import {
   Waves,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -29,7 +29,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Gutter Installation Lake Wylie SC | Seamless Gutters & Guards',
+  title: 'Gutter Installation Lake Wylie SC',
   description:
     'Professional gutter installation in Lake Wylie SC. Custom seamless gutters, gutter guards, and repairs for waterfront homes.',
   alternates: {
@@ -217,6 +217,7 @@ export default function GutterInstallationLakeWylieSCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

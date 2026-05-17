@@ -9,12 +9,13 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Roofing Services Charlotte NC | 1-2 Hour Response',
+  title: '24/7 Emergency Roofing Services Charlotte NC',
   description: 'Charlotte NC 24/7 emergency roofing hotline. We respond in 1-2 hours for roof emergencies - active leaks, fallen trees, sudden damage.',
   openGraph: {
     title: '24/7 Emergency Roof Repair Charlotte NC | 1-2 Hour Response',
@@ -215,6 +216,7 @@ export default function EmergencyPage() {
         includeVoiceActions={true}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       {/* Emergency Hero */}
       <section className="bg-red-600 text-white py-16 md:py-20">
         <div className="container">

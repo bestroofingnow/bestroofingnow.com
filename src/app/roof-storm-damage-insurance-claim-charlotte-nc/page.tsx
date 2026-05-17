@@ -32,6 +32,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
@@ -41,7 +42,7 @@ import { IMAGES } from '@/lib/images';
 import EstimateButton from '@/components/estimate/EstimateButton';
 
 export const metadata: Metadata = {
-  title: 'Roof Storm Damage Insurance Claim Charlotte NC | Free Inspection',
+  title: 'Roof Storm Damage Insurance Claim Charlotte NC',
   description:
     'Step-by-step guide to filing a roof storm damage insurance claim in Charlotte NC. Hail damage, wind damage, emergency roof repair.',
   alternates: {
@@ -239,6 +240,7 @@ export default function RoofStormDamageInsuranceClaimPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

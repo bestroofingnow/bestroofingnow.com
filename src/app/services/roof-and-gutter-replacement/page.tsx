@@ -24,7 +24,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof and Gutter Replacement Charlotte NC | Save with Bundle Pricing',
+  title: 'Roof and Gutter Replacement Charlotte NC',
   description: 'Get roof and gutter replacement together in Charlotte NC and save. One contractor, one timeline, one warranty. Free estimates, financing available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/services/roof-and-gutter-replacement`,

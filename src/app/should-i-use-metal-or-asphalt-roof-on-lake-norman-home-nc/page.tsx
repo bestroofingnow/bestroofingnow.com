@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Should I Use Metal or Asphalt Roof on My Lake Norman NC Home?',
+  title: 'Should I Use Metal or Asphalt Roof on My Lake Norman Home?',
   description:
     "Lake Norman NC roof material choice: aluminum standing-seam for waterfront ($13-17/sq ft), Class 4 asphalt for non-waterfront ($7-11/sq ft).",
   alternates: { canonical: PAGE_URL },

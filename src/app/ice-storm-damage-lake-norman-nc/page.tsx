@@ -24,6 +24,7 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -34,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'January 2026 Ice Storm Damage Lake Norman NC | Emergency Gutter & Roof Repair',
+  title: '2026 Ice Storm Damage Lake Norman NC',
   description:
     'Lake Norman ice storm damage help. Gutters falling off? Roof leaking as ice thaws? Best Roofing Now is here for our Lake Norman neighbors.',
   alternates: {
@@ -166,6 +167,7 @@ export default function IceStormDamageLakeNormanPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

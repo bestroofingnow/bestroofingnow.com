@@ -22,7 +22,7 @@ import {
   Hammer,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
 import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
@@ -171,6 +171,7 @@ export default function RoofRepairLakeNormanNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roof-repair-lake-norman-nc`} city={"Lake Norman"} />
       <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/roof-repair-lake-norman-nc`} />
       <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/roof-repair-lake-norman-nc`} />

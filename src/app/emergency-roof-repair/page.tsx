@@ -26,6 +26,7 @@ import {
   ServiceSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -294,6 +295,7 @@ export default function EmergencyRoofRepairPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-900 text-white py-16 md:py-24 overflow-hidden">

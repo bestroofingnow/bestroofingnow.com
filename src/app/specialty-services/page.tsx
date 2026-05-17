@@ -33,7 +33,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Specialty Roofing Services Charlotte NC | Skylights, Ventilation & More',
+  title: 'Specialty Roofing Services Charlotte NC',
   description:
     'Specialty roofing services in Charlotte NC. Skylight installation, roof ventilation, chimney services, and flat roof repair. VELUX certified.',
   alternates: {

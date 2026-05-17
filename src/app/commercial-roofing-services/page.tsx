@@ -24,6 +24,7 @@ import {
   ServiceSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
@@ -35,7 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { CitationFacts } from '@/components/sections/CitationFacts';
 
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Contractor Charlotte NC | TPO, EPDM, Flat Roofs',
+  title: 'Commercial Roofing Contractor Charlotte NC',
   description:
     'Professional commercial roofing contractor in Charlotte NC. TPO, EPDM, PVC, metal, and flat roof systems for businesses.',
   alternates: {
@@ -192,6 +193,7 @@ export default function CommercialRoofingServicesPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

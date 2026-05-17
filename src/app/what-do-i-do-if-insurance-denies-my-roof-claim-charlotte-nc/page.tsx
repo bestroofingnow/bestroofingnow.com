@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Do I Do if My Insurance Denies My Roof Claim in Charlotte NC?',
+  title: 'What Do I Do if My Insurance Denies My Roof Claim Charlotte NC?',
   description:
     "If insurance denies Charlotte NC roof claim: get written denial letter, order Xactimate independent inspection, file supplemental, invoke appraisal clause.",
   alternates: { canonical: PAGE_URL },

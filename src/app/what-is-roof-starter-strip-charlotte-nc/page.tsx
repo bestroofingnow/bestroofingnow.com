@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is Roof Starter Strip and Why Does It Matter for My Charlotte NC Reroof?',
+  title: 'What Is Roof Starter Strip and Why It Matters for Charlotte NC Reroof?',
   description:
     "Starter strip = first shingle row at eaves/rakes with factory adhesive. Required by NC IRC §R905.2.5 and all manufacturer warranties.",
   alternates: { canonical: PAGE_URL },

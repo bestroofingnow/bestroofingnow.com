@@ -30,7 +30,7 @@ import { CTASection } from '@/components/sections/CTASection';
 import { MeetTheFamily } from '@/components/sections/MeetTheFamily';
 import { TURNER_NOTES } from '@/lib/turner-family';
 import EstimateButton from '@/components/estimate/EstimateButton';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { VoiceSearchFAQ } from '@/components/seo/PeopleAlsoAsk';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -281,6 +281,7 @@ export default function RoofersCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

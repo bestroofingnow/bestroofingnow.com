@@ -25,6 +25,7 @@ import {
   WebPageSchema,
   ArticleSchema,
   AISearchOptimizationBundle,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -249,6 +250,7 @@ export default function AtticMoistureControlCharlottePage() {
         city="Charlotte"
         skipFAQ={true}
       />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

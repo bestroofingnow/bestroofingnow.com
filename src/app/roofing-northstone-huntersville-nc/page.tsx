@@ -26,6 +26,7 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -218,6 +219,7 @@ export default function RoofingNorthstoneHuntersvillePage() {
         city="Huntersville"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofing-northstone-huntersville-nc`} city={"Huntersville"} />
 
       {/* Hero Section */}

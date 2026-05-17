@@ -23,6 +23,7 @@ import {
   FAQSchema,
   FreeInspectionOfferSchema,
   HowToGetRoofEstimateSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -108,6 +109,7 @@ export default function FreeRoofInspectionPage() {
     <>
       {/* Schema Markup */}
       <FreeInspectionOfferSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <HowToGetRoofEstimateSchema />
       <BreadcrumbSchema
         items={[

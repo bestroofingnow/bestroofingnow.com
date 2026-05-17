@@ -39,6 +39,7 @@ import {
   ArticleSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { Button } from '@/components/ui/Button';
@@ -48,7 +49,7 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'When to Replace Your Roof Charlotte NC | 10 Warning Signs (2026)',
+  title: 'When to Replace Your Roof Charlotte NC',
   description:
     'How to know when your roof needs replacing in Charlotte NC. 10 warning signs, material lifespan guide, seasonal timing, replacement costs.',
   alternates: {
@@ -490,6 +491,7 @@ export default function WhenToReplaceRoofCharlotteNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

@@ -19,7 +19,7 @@ import {
   ThermometerSun,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { Button } from '@/components/ui/Button';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
@@ -341,6 +341,7 @@ export default function SidingCostCharlottePage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section with Cost Range */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

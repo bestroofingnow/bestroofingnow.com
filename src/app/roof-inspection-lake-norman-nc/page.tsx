@@ -22,7 +22,7 @@ import {
   ThumbsUp,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, ServiceAreaPageSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -238,6 +238,7 @@ export default function RoofInspectionLakeNormanNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <ServiceAreaPageSchema
         city="Lake Norman"
         state="NC"

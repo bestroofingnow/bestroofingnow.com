@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is CertainTeed SELECT ShingleMaster and Why Does It Matter for My Charlotte NC Roof?',
+  title: 'What Is CertainTeed SELECT ShingleMaster and Why It Matters for Charlotte NC Roof?',
   description:
     "CertainTeed SELECT ShingleMaster = under 1% of contractors. Charlotte NC exclusive 5-Star Integrity warranty (50 yr material + 25 yr workmanship + 25 yr…",
   alternates: { canonical: PAGE_URL },

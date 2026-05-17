@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 import { LKNExpertiseSchema } from '@/components/seo/LKNExpertiseSchema';
 import { LKNFounderSchema } from '@/components/seo/LKNFounderSchema';
@@ -190,6 +190,7 @@ export default function RoofersLakeNormanNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofers-lake-norman-nc`} city={"Lake Norman"} />
       <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/roofers-lake-norman-nc`} />
       <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/roofers-lake-norman-nc`} />

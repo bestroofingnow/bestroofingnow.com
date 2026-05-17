@@ -26,6 +26,7 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -34,7 +35,7 @@ import { EstimateButton } from '@/components/estimate';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'January 2026 Ice Storm Damage Charlotte NC | Emergency Gutter & Roof Repair',
+  title: '2026 Ice Storm Damage Charlotte NC',
   description:
     'Charlotte ice storm damage help. Gutters falling off? Roof leaking as ice thaws? Best Roofing Now is here for Charlotte and Mecklenburg County.',
   alternates: {
@@ -170,6 +171,7 @@ export default function IceStormDamageCharlottePage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

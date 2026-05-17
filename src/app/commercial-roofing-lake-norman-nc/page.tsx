@@ -21,7 +21,7 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, ServiceAreaPageSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'Commercial Roofing Lake Norman NC | Flat Roof & TPO Specialists',
+  title: 'Commercial Roofing Lake Norman NC',
   description:
     'Commercial roofing experts serving the entire Lake Norman NC area. TPO, EPDM, flat roofs, metal commercial roofing for Cornelius, Davidson, Mooresville.',
   alternates: {
@@ -227,6 +227,7 @@ export default function CommercialRoofingLakeNormanNCPage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <ServiceAreaPageSchema
         city="Lake Norman"
         state="NC"

@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Should I Replace My Roof in Sections or All at Once in Charlotte NC?',
+  title: 'Should I Replace My Roof in Sections or All at Once Charlotte NC?',
   description:
     "Replace Charlotte NC roof all at once in almost every case: color match impossible, NC 25% rule triggers full replacement.",
   alternates: { canonical: PAGE_URL },

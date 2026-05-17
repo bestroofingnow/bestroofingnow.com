@@ -26,6 +26,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { Button } from '@/components/ui/Button';
@@ -33,7 +34,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered | Charlotte NC',
+  title: 'Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered',
   description:
     'How to maintain your roof, seasonal maintenance checklists, damage signs, and when to call a pro.',
   alternates: {
@@ -182,6 +183,7 @@ export default function RoofMaintenanceFAQPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

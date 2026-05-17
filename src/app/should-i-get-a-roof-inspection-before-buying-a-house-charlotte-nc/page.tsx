@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Should I Get a Roof Inspection Before Buying a House in Charlotte NC?',
+  title: 'Should I Get a Roof Inspection Before Buying a House Charlotte NC?',
   description:
     "Yes — get pre-purchase roof inspection ($200-450) for homes 10+ yr old. Standard home inspection misses subtle issues.",
   alternates: { canonical: PAGE_URL },

@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is Roof Flashing and Why Does It Matter for My Charlotte NC Roof?',
+  title: 'What Is Roof Flashing and Why It Matters for Charlotte NC Roof?',
   description:
     "Roof flashing = metal sheeting at junctions and penetrations. 22% of Charlotte leaks.",
   alternates: { canonical: PAGE_URL },

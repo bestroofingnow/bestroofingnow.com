@@ -31,6 +31,7 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { LastUpdated } from '@/components/ui/LastUpdated';
@@ -40,7 +41,7 @@ import { IMAGES } from '@/lib/images';
 import { EstimateButton } from '@/components/estimate';
 
 export const metadata: Metadata = {
-  title: 'Charlotte Storm Season Roof Protection Guide | Before, During & After',
+  title: 'Charlotte Storm Season Roof Protection Guide',
   description:
     'Complete Charlotte NC storm season roof protection guide. Pre-storm preparation checklist, during-storm safety, post-storm action plan.',
   alternates: {
@@ -169,6 +170,7 @@ export default function CharlotteStormSeasonRoofGuidePage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

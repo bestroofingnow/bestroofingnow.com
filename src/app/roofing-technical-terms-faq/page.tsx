@@ -20,6 +20,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { Button } from '@/components/ui/Button';
@@ -27,7 +28,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Terms Explained FAQ | Technical Glossary & Warranty Guide | Charlotte NC',
+  title: 'Roofing Terms Explained FAQ | Technical Glossary & Warranty Guide',
   description:
     'Roofing terms explained in plain language. Understand underlayment, flashing, drip edge, ridge cap, soffit vents, and more.',
   alternates: {
@@ -249,6 +250,7 @@ export default function RoofingTechnicalTermsFAQPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

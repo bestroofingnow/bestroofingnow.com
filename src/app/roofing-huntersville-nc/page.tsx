@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
 import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryStrip';
-import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, ServiceAreaPageSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -224,6 +224,7 @@ export default function RoofingHuntersvilleNCPage() {
         city="Huntersville"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofing-huntersville-nc`} city={"Huntersville"} />
 
       {/* Hero Section */}

@@ -26,6 +26,7 @@ import {
   ArticleSchema,
   ServiceSchema,
   AISearchOptimizationBundle,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { CitationSection } from '@/components/seo/CitationBlock';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -35,7 +36,7 @@ import { EstimateButton } from '@/components/estimate';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Attic Insulation Cost Charlotte NC | $1.50-$7/sqft (2026 Prices)',
+  title: 'Attic Insulation Cost Charlotte NC',
   description:
     'How much does attic insulation cost in Charlotte NC? Blown-in $1.50-3.50/sqft, batt $1-2.50/sqft, spray foam $3-7/sqft. R-38 minimum code requirement.',
   alternates: {
@@ -284,6 +285,7 @@ export default function AtticInsulationCostCharlottePage() {
         city="Charlotte"
         skipFAQ={true}
       />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

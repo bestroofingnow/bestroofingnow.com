@@ -26,6 +26,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import ProjectMap from '@/components/projects/ProjectMap';
@@ -224,6 +225,7 @@ export default async function LakeNormanRoofingPage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`} city={"Lake Norman"} />
       <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`} />
       <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/roofing-lake-norman-nc`} />

@@ -20,7 +20,7 @@ import {
   Ruler,
 } from 'lucide-react';
 import { CTASection } from '@/components/sections/CTASection';
-import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, ServiceAreaPageSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, FAQSchema, AISearchOptimizationBundle, VoiceSearchActionSchema, ServiceAreaPageSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
@@ -29,7 +29,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'Gutter Installation Lake Norman NC | Seamless Gutters & Guards',
+  title: 'Gutter Installation Lake Norman NC',
   description:
     'Professional gutter installation across Lake Norman NC. Seamless aluminum gutters, gutter guards, and repairs for lakefront homes in Cornelius, Davidson.',
   alternates: {
@@ -240,6 +240,7 @@ export default function GutterInstallationLakeNormanNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <ServiceAreaPageSchema
         city="Lake Norman"
         state="NC"

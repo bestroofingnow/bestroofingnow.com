@@ -36,7 +36,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Complete NC Roofing Guide | Building Codes, Permits & Requirements | Charlotte & Lake Norman',
+  title: 'Complete NC Roofing Guide | Building Codes, Permits & Requirements',
   description: 'Comprehensive guide to roofing in North Carolina. Learn about NC building codes, permit requirements, HOA rules, insurance claims.',
   openGraph: {
     title: 'Complete NC Roofing Guide | Building Codes, Permits & Requirements',

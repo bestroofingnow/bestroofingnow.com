@@ -29,6 +29,7 @@ import {
   FAQSchema,
   WebPageSchema,
   AISearchOptimizationBundle,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -390,6 +391,7 @@ export default function TileRoofVsShinglesCharlotteNCPage() {
           },
         ]}
       />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="bg-gradient-primary text-white py-16 md:py-20">

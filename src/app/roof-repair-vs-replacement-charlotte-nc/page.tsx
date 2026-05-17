@@ -34,6 +34,7 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -41,7 +42,7 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Repair vs. Replacement Charlotte NC | Decision Guide (2026)',
+  title: 'Roof Repair vs. Replacement Charlotte NC',
   description:
     'Should you repair or replace your roof in Charlotte NC? Use our 5-question decision framework, cost comparison tables.',
   alternates: {
@@ -343,6 +344,7 @@ export default function RoofRepairVsReplacementCharlotteNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

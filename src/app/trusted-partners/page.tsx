@@ -19,7 +19,7 @@ import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { PARTNERS, PARTNER_CATEGORIES, getNetworkRoofers, getLocalPartners, type Partner, type PartnerType } from '@/lib/partners';
 
 export const metadata: Metadata = {
-  title: 'Trusted Partners & Roofing Network | Home Service Professionals',
+  title: 'Trusted Partners & Roofing Network',
   description: 'Best Roofing Now partners with trusted roofing contractors nationwide and top-rated Charlotte home service professionals including HVAC, plumbing.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/trusted-partners`,

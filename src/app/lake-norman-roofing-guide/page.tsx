@@ -56,6 +56,7 @@ import {
   VoiceSearchActionSchema,
   ItemListSchema,
   LocalBusinessSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { LastUpdated } from '@/components/ui/LastUpdated';
@@ -482,6 +483,7 @@ export default function LakeNormanRoofingGuidePage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-guide`} city={"Lake Norman"} />
       <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-guide`} />
       <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-roofing-guide`} />

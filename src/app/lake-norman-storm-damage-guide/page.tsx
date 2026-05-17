@@ -27,6 +27,7 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -240,6 +241,7 @@ export default function LakeNormanStormDamageGuidePage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/lake-norman-storm-damage-guide`} city={"Lake Norman"} />
       <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-storm-damage-guide`} />
       <LKNFounderSchema pageUrl={`${SITE_CONFIG.url}/lake-norman-storm-damage-guide`} />

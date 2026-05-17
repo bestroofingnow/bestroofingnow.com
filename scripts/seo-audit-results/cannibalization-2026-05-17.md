@@ -28,7 +28,7 @@ _None_ — every page has a unique H1.
 Clusters of 3+ pages targeting the same core phrase. Some of these are intentional
 (geographic variants), others may be cannibalizing.
 
-### "commercial roofing" — 13 pages
+### "commercial roofing" — 14 pages
 - `/commercial-roofing-concord-nc` — title: Commercial Roofing Concord NC
 - `/commercial-roofing-cornelius-nc` — title: Commercial Roofing Cornelius NC
 - `/commercial-roofing-davidson-nc` — title: Commercial Roofing Davidson NC
@@ -36,12 +36,24 @@ Clusters of 3+ pages targeting the same core phrase. Some of these are intention
 - `/commercial-roofing-fort-mill-sc` — title: Commercial Roofing Fort Mill SC
 - `/commercial-roofing-gastonia-nc` — title: Commercial Roofing Gastonia NC
 - `/commercial-roofing-huntersville-nc` — title: Commercial Roofing Huntersville
+- `/commercial-roofing-lake-norman-nc` — title: Commercial Roofing Lake Norman NC
 - `/commercial-roofing-matthews-nc` — title: Commercial Roofing Matthews NC
 - `/commercial-roofing-mooresville-nc` — title: Commercial Roofing Mooresville NC
 - `/commercial-roofing-mt-holly-nc` — title: Commercial Roofing Mt Holly NC
 - `/commercial-roofing-rock-hill-sc` — title: Commercial Roofing Rock Hill SC
-- `/commercial-roofing-sherrills-ford-nc` — title: Commercial Roofing Sherrills Ford
-- … and 1 more
+- … and 2 more
+
+### "gutter installation" — 10 pages
+- `/gutter-installation-charlotte-nc` — title: Gutter Installation Charlotte NC
+- `/gutter-installation-cornelius-nc` — title: Gutter Installation Cornelius NC
+- `/gutter-installation-davidson-nc` — title: Gutter Installation Davidson NC
+- `/gutter-installation-denver-nc` — title: Gutter Installation Denver NC
+- `/gutter-installation-lake-norman-nc` — title: Gutter Installation Lake Norman NC
+- `/gutter-installation-lake-wylie-sc` — title: Gutter Installation Lake Wylie SC
+- `/gutter-installation-matthews-nc` — title: Gutter Installation Matthews NC
+- `/gutter-installation-mt-holly-nc` — title: Gutter Installation Mt Holly NC
+- `/gutter-installation-sherrills-ford-nc` — title: Gutter Installation Sherrills Ford
+- `/gutter-installation-statesville-nc` — title: Gutter Installation Statesville NC
 
 ### "roof replacement" — 10 pages
 - `/roof-replacement-charlotte-nc` — title: Roof Replacement Charlotte NC | 2026
@@ -54,16 +66,6 @@ Clusters of 3+ pages targeting the same core phrase. Some of these are intention
 - `/roof-replacement-mooresville-nc` — title: Roof Replacement Mooresville NC
 - `/roof-replacement-sherrills-ford-nc` — title: Roof Replacement Sherrills Ford
 - `/roof-replacement-statesville-nc` — title: Roof Replacement Statesville NC
-
-### "gutter installation" — 8 pages
-- `/gutter-installation-charlotte-nc` — title: Gutter Installation Charlotte NC
-- `/gutter-installation-cornelius-nc` — title: Gutter Installation Cornelius NC
-- `/gutter-installation-davidson-nc` — title: Gutter Installation Davidson NC
-- `/gutter-installation-denver-nc` — title: Gutter Installation Denver NC
-- `/gutter-installation-matthews-nc` — title: Gutter Installation Matthews NC
-- `/gutter-installation-mt-holly-nc` — title: Gutter Installation Mt Holly NC
-- `/gutter-installation-sherrills-ford-nc` — title: Gutter Installation Sherrills Ford
-- `/gutter-installation-statesville-nc` — title: Gutter Installation Statesville NC
 
 ### "emergency roof repair" — 7 pages
 - `/emergency-roof-repair-cornelius-nc` — title: Emergency Roof Repair Cornelius NC

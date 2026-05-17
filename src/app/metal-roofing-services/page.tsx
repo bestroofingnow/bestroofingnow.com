@@ -24,7 +24,9 @@ import {
   WebPageSchema,
   ServiceSchema,
   AISearchOptimizationBundle,
-  VoiceSearchActionSchema,} from '@/components/seo/SchemaMarkup';
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations, TrustBadges } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -34,7 +36,7 @@ import { GeoProjectGalleryStrip } from '@/components/sections/GeoProjectGalleryS
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust',
+  title: 'Metal Roofing Installation Services Charlotte NC',
   description:
     'Professional metal roofing installation services in Charlotte NC. Hire a trusted contractor for standing seam, metal shingles.',
   alternates: {
@@ -207,6 +209,7 @@ export default function MetalRoofingServicesPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

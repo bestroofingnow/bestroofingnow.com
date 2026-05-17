@@ -38,7 +38,7 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Wind Damage Roof Repair Charlotte NC | Blown Shingles & High Wind',
+  title: 'Wind Damage Roof Repair Charlotte NC',
   description:
     'Wind damage roof repair in Charlotte NC. Shingle blowoff, high wind damage, and exposed roof deck repairs.',
   alternates: {

@@ -7,7 +7,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { CTASection } from '@/components/sections/CTASection';
 import ProjectMap from '@/components/projects/ProjectMap';
 import { getAllProjectMarkers } from '@/lib/project-data';
-import { BreadcrumbSchema, CollectionPageSchema, ServiceAreaMapSchema, AISearchOptimizationBundle, FeaturedSnippetListAnswerSchema } from '@/components/seo/SchemaMarkup';
+import { BreadcrumbSchema, CollectionPageSchema, ServiceAreaMapSchema, AISearchOptimizationBundle, FeaturedSnippetListAnswerSchema, SpeakableContentBlocks } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: `Our Roofing Projects | ${SITE_CONFIG.name}`,
@@ -137,6 +137,7 @@ export default async function ProjectsPage() {
         city="Charlotte"
         skipFAQ={false}
       />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Featured Snippet Schema for "roofing materials" list */}
       <FeaturedSnippetListAnswerSchema

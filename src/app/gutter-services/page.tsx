@@ -20,7 +20,9 @@ import {
   WebPageSchema,
   ServiceSchema,
   AISearchOptimizationBundle,
-  VoiceSearchActionSchema,} from '@/components/seo/SchemaMarkup';
+  VoiceSearchActionSchema,
+  SpeakableContentBlocks,
+} from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { DirectoryCitations } from '@/components/ui/DirectoryCitations';
 import { SITE_CONFIG, SERVICES, LOCATIONS } from '@/lib/constants';
@@ -164,6 +166,7 @@ export default function GutterServicesPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Visual Breadcrumbs */}
       <div className="bg-light border-b border-gray-200">

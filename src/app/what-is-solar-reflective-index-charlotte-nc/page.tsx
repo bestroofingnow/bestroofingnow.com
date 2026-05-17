@@ -51,7 +51,7 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is Solar Reflective Index (SRI) and How Does It Affect My Charlotte NC Roof?',
+  title: 'What Is Solar Reflective Index and How Does It Affect My Charlotte NC Roof?',
   description:
     "SRI = solar reflectance measurement (0-100+). Charlotte NC cool-roof shingles save $80-$500/year AC bill, 5-12% summer cooling reduction.",
   alternates: { canonical: PAGE_URL },

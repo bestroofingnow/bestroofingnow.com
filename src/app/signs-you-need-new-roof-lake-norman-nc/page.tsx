@@ -30,6 +30,7 @@ import {
   WebPageSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Button } from '@/components/ui/Button';
@@ -233,6 +234,7 @@ export default function SignsYouNeedNewRoofLakeNormanNCPage() {
         city="Lake Norman"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNExpertiseSchema pageUrl={`${SITE_CONFIG.url}/signs-you-need-new-roof-lake-norman-nc`} />
 
       <Breadcrumbs

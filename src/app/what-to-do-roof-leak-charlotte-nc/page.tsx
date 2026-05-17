@@ -35,7 +35,7 @@ import { EstimateButton } from '@/components/estimate';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'What to Do When You Find a Roof Leak | Charlotte NC Emergency Guide',
+  title: 'What to Do When You Find a Roof Leak',
   description:
     'Found a roof leak in your Charlotte home? Follow this step-by-step emergency guide.',
   alternates: {

@@ -24,6 +24,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { ServiceCityLinks } from '@/components/ui/ServiceCityLinks';
@@ -197,6 +198,7 @@ export default function EmergencyRoofRepairCharlotteNCPage() {
         ]}
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* URGENT Hero Section - RED background for emergency emphasis */}
       <section className="relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white py-12 md:py-20 overflow-hidden">

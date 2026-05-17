@@ -1,0 +1,210 @@
+# Title Trim v2 — 2026-05-17
+
+**Mode:** APPLIED
+**Titles changed:** 54
+**Still over 60 (need manual review):** 39
+
+## Changes applied
+- `/attic-insulation-cost-charlotte-nc` (64 → 34)
+  - From: "Attic Insulation Cost Charlotte NC | $1.50-$7/sqft (2026 Prices)"
+  - To:   "Attic Insulation Cost Charlotte NC"
+- `/auto-dealership-roofing-charlotte-nc` (70 → 36)
+  - From: "Auto Dealership Roofing Charlotte NC | Showroom & Service Center Roofs"
+  - To:   "Auto Dealership Roofing Charlotte NC"
+- `/charlotte-storm-season-roof-guide` (69 → 44)
+  - From: "Charlotte Storm Season Roof Protection Guide | Before, During & After"
+  - To:   "Charlotte Storm Season Roof Protection Guide"
+- `/commercial-roofing-lake-norman-nc` (63 → 33)
+  - From: "Commercial Roofing Lake Norman NC | Flat Roof & TPO Specialists"
+  - To:   "Commercial Roofing Lake Norman NC"
+- `/commercial-roofing-services` (66 → 42)
+  - From: "Commercial Roofing Contractor Charlotte NC | TPO, EPDM, Flat Roofs"
+  - To:   "Commercial Roofing Contractor Charlotte NC"
+- `/emergency` (64 → 44)
+  - From: "24/7 Emergency Roofing Services Charlotte NC | 1-2 Hour Response"
+  - To:   "24/7 Emergency Roofing Services Charlotte NC"
+- `/gutter-installation-lake-norman-nc` (62 → 34)
+  - From: "Gutter Installation Lake Norman NC | Seamless Gutters & Guards"
+  - To:   "Gutter Installation Lake Norman NC"
+- `/gutter-installation-lake-wylie-sc` (61 → 33)
+  - From: "Gutter Installation Lake Wylie SC | Seamless Gutters & Guards"
+  - To:   "Gutter Installation Lake Wylie SC"
+- `/how-do-i-find-a-roof-leak-on-flat-roof-charlotte-nc` (68 → 63)
+  - From: "How Do I Find a Roof Leak on a Flat Commercial Roof in Charlotte NC?"
+  - To:   "How to Find a Roof Leak on a Flat Commercial Roof Charlotte NC?"
+- `/how-do-i-know-if-i-need-new-decking-charlotte-nc` (66 → 61)
+  - From: "How Do I Know if I Need New Decking Under My Roof in Charlotte NC?"
+  - To:   "How to Know if I Need New Decking Under My Roof Charlotte NC?"
+- `/how-do-i-read-a-roof-estimate-charlotte-nc` (73 → 68)
+  - From: "How Do I Read a Roof Estimate and What Should It Include in Charlotte NC?"
+  - To:   "How to Read a Roof Estimate and What Should It Include Charlotte NC?"
+- `/how-much-does-commercial-roof-replacement-cost-charlotte-nc` (65 → 62)
+  - From: "How Much Does a Commercial Roof Replacement Cost in Charlotte NC?"
+  - To:   "How Much Does a Commercial Roof Replacement Cost Charlotte NC?"
+- `/ice-storm-damage-charlotte-nc` (75 → 34)
+  - From: "January 2026 Ice Storm Damage Charlotte NC | Emergency Gutter & Roof Repair"
+  - To:   "2026 Ice Storm Damage Charlotte NC"
+- `/ice-storm-damage-lake-norman-nc` (77 → 36)
+  - From: "January 2026 Ice Storm Damage Lake Norman NC | Emergency Gutter & Roof Repair"
+  - To:   "2026 Ice Storm Damage Lake Norman NC"
+- `/metal-roofing-lake-norman-nc` (61 → 58)
+  - From: "Metal Roofing Lake Norman NC | Standing Seam & Metal Shingles"
+  - To:   "Metal Roofing Lake Norman | Standing Seam & Metal Shingles"
+- `/metal-roofing-services` (75 → 48)
+  - From: "Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust"
+  - To:   "Metal Roofing Installation Services Charlotte NC"
+- `/nc-roofing-guide` (92 → 66)
+  - From: "Complete NC Roofing Guide | Building Codes, Permits & Requirements | Charlotte & Lake Norman"
+  - To:   "Complete NC Roofing Guide | Building Codes, Permits & Requirements"
+- `/roof-maintenance-faq` (80 → 65)
+  - From: "Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered | Charlotte NC"
+  - To:   "Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered"
+- `/roof-repair-vs-replacement-charlotte-nc` (64 → 40)
+  - From: "Roof Repair vs. Replacement Charlotte NC | Decision Guide (2026)"
+  - To:   "Roof Repair vs. Replacement Charlotte NC"
+- `/roof-storm-damage-insurance-claim-charlotte-nc` (64 → 46)
+  - From: "Roof Storm Damage Insurance Claim Charlotte NC | Free Inspection"
+  - To:   "Roof Storm Damage Insurance Claim Charlotte NC"
+- `/roofing-shingles-prices` (75 → 43)
+  - From: "Roofing Shingles Prices in Charlotte NC (2026) | Cost Per Square Foot Guide"
+  - To:   "Roofing Shingles Prices Charlotte NC (2026)"
+- `/roofing-technical-terms-faq` (80 → 65)
+  - From: "Roofing Terms Explained FAQ | Technical Glossary & Warranty Guide | Charlotte NC"
+  - To:   "Roofing Terms Explained FAQ | Technical Glossary & Warranty Guide"
+- `/services/roof-and-gutter-replacement` (67 → 40)
+  - From: "Roof and Gutter Replacement Charlotte NC | Save with Bundle Pricing"
+  - To:   "Roof and Gutter Replacement Charlotte NC"
+- `/services/storm-damage-roof-siding` (74 → 48)
+  - From: "Storm Damage Roof and Siding Repair Charlotte NC | Insurance Claim Experts"
+  - To:   "Storm Damage Roof and Siding Repair Charlotte NC"
+- `/shingle-vs-metal-roof-cost` (73 → 58)
+  - From: "Shingle vs Metal Roof Cost: Complete 2026 Comparison Guide | Charlotte NC"
+  - To:   "Shingle vs Metal Roof Cost: Complete 2026 Comparison Guide"
+- `/should-i-get-a-roof-inspection-before-buying-a-house-charlotte-nc` (69 → 66)
+  - From: "Should I Get a Roof Inspection Before Buying a House in Charlotte NC?"
+  - To:   "Should I Get a Roof Inspection Before Buying a House Charlotte NC?"
+- `/should-i-replace-my-roof-in-sections-charlotte-nc` (68 → 65)
+  - From: "Should I Replace My Roof in Sections or All at Once in Charlotte NC?"
+  - To:   "Should I Replace My Roof in Sections or All at Once Charlotte NC?"
+- `/should-i-use-metal-or-asphalt-roof-on-lake-norman-home-nc` (61 → 58)
+  - From: "Should I Use Metal or Asphalt Roof on My Lake Norman NC Home?"
+  - To:   "Should I Use Metal or Asphalt Roof on My Lake Norman Home?"
+- `/specialty-services` (71 → 39)
+  - From: "Specialty Roofing Services Charlotte NC | Skylights, Ventilation & More"
+  - To:   "Specialty Roofing Services Charlotte NC"
+- `/trusted-partners` (63 → 34)
+  - From: "Trusted Partners & Roofing Network | Home Service Professionals"
+  - To:   "Trusted Partners & Roofing Network"
+- `/what-do-i-do-if-insurance-denies-my-roof-claim-charlotte-nc` (66 → 63)
+  - From: "What Do I Do if My Insurance Denies My Roof Claim in Charlotte NC?"
+  - To:   "What Do I Do if My Insurance Denies My Roof Claim Charlotte NC?"
+- `/what-is-a-public-adjuster-charlotte-nc` (80 → 77)
+  - From: "What Is a Public Adjuster and Do I Need One for My Charlotte NC Insurance Claim?"
+  - To:   "What Is a Public Adjuster and Do I Need One for Charlotte NC Insurance Claim?"
+- `/what-is-a-roof-inspection-report-charlotte-nc` (76 → 73)
+  - From: "What Is a Roof Inspection Report and What Should It Include in Charlotte NC?"
+  - To:   "What Is a Roof Inspection Report and What Should It Include Charlotte NC?"
+- `/what-is-a-roof-tear-off-charlotte-nc` (74 → 71)
+  - From: "What Is a Roof Tear-Off and Why Is It Better Than Overlay in Charlotte NC?"
+  - To:   "What Is a Roof Tear-Off and Why Is It Better Than Overlay Charlotte NC?"
+- `/what-is-a-roof-valley-charlotte-nc` (70 → 63)
+  - From: "What Is a Roof Valley and Why Does It Matter for My Charlotte NC Home?"
+  - To:   "What Is a Roof Valley and Why It Matters for Charlotte NC Home?"
+- `/what-is-certainteed-select-shinglemaster-charlotte-nc` (89 → 82)
+  - From: "What Is CertainTeed SELECT ShingleMaster and Why Does It Matter for My Charlotte NC Roof?"
+  - To:   "What Is CertainTeed SELECT ShingleMaster and Why It Matters for Charlotte NC Roof?"
+- `/what-is-class-4-impact-resistance-charlotte-nc` (78 → 75)
+  - From: "What Is Class 4 Impact Resistance and Is It Worth It for My Charlotte NC Roof?"
+  - To:   "What Is Class 4 Impact Resistance and Is It Worth It for Charlotte NC Roof?"
+- `/what-is-gaf-master-elite-charlotte-nc` (73 → 66)
+  - From: "What Is GAF Master Elite and Why Does It Matter for My Charlotte NC Roof?"
+  - To:   "What Is GAF Master Elite and Why It Matters for Charlotte NC Roof?"
+- `/what-is-ibhs-fortified-roof-charlotte-nc` (68 → 44)
+  - From: "What Is an IBHS Fortified Roof and How Do I Get One in Charlotte NC?"
+  - To:   "What Is an IBHS Fortified Roof Charlotte NC?"
+- `/what-is-overhead-and-profit-charlotte-nc` (92 → 86)
+  - From: "What Is Overhead and Profit (O&P) and When Does It Apply to My Charlotte NC Insurance Claim?"
+  - To:   "What Is Overhead and Profit and When Does It Apply to My Charlotte NC Insurance Claim?"
+- `/what-is-owens-corning-platinum-preferred-charlotte-nc` (89 → 82)
+  - From: "What Is Owens Corning Platinum Preferred and Why Does It Matter for My Charlotte NC Roof?"
+  - To:   "What Is Owens Corning Platinum Preferred and Why It Matters for Charlotte NC Roof?"
+- `/what-is-rcv-vs-acv-insurance-charlotte-nc` (80 → 77)
+  - From: "What Is RCV vs ACV Insurance and Which Is Better for My Charlotte NC Roof Claim?"
+  - To:   "What Is RCV vs ACV Insurance and Which Is Better for Charlotte NC Roof Claim?"
+- `/what-is-roof-certification-charlotte-nc` (66 → 63)
+  - From: "What Is Roof Certification and When Do I Need One in Charlotte NC?"
+  - To:   "What Is Roof Certification and When Do I Need One Charlotte NC?"
+- `/what-is-roof-decking-charlotte-nc` (81 → 78)
+  - From: "What Is Roof Decking and How Do I Know If Mine Needs Replacement in Charlotte NC?"
+  - To:   "What Is Roof Decking and How Do I Know If Mine Needs Replacement Charlotte NC?"
+- `/what-is-roof-flashing-charlotte-nc` (70 → 63)
+  - From: "What Is Roof Flashing and Why Does It Matter for My Charlotte NC Roof?"
+  - To:   "What Is Roof Flashing and Why It Matters for Charlotte NC Roof?"
+- `/what-is-roof-starter-strip-charlotte-nc` (77 → 70)
+  - From: "What Is Roof Starter Strip and Why Does It Matter for My Charlotte NC Reroof?"
+  - To:   "What Is Roof Starter Strip and Why It Matters for Charlotte NC Reroof?"
+- `/what-is-roof-underlayment-and-why-does-it-matter-charlotte-nc` (65 → 58)
+  - From: "What Is Roof Underlayment and Why Does It Matter in Charlotte NC?"
+  - To:   "What Is Roof Underlayment and Why It Matters Charlotte NC?"
+- `/what-is-solar-reflective-index-charlotte-nc` (81 → 75)
+  - From: "What Is Solar Reflective Index (SRI) and How Does It Affect My Charlotte NC Roof?"
+  - To:   "What Is Solar Reflective Index and How Does It Affect My Charlotte NC Roof?"
+- `/what-is-tpo-seam-welding-charlotte-nc` (69 → 65)
+  - From: "What Is TPO Seam Welding and Why Does It Matter for Commercial Roofs?"
+  - To:   "What Is TPO Seam Welding and Why It Matters for Commercial Roofs?"
+- `/what-is-xactimate-scoping-charlotte-nc` (85 → 78)
+  - From: "What Is Xactimate Scoping and Why Does It Matter for My Charlotte NC Insurance Claim?"
+  - To:   "What Is Xactimate Scoping and Why It Matters for Charlotte NC Insurance Claim?"
+- `/what-to-do-roof-leak-charlotte-nc` (67 → 36)
+  - From: "What to Do When You Find a Roof Leak | Charlotte NC Emergency Guide"
+  - To:   "What to Do When You Find a Roof Leak"
+- `/what-to-do-tree-falls-on-roof-charlotte-nc` (72 → 54)
+  - From: "What to Do When a Tree Falls on Your Roof Charlotte NC | Emergency Guide"
+  - To:   "What to Do When a Tree Falls on Your Roof Charlotte NC"
+- `/when-to-replace-roof-charlotte-nc` (64 → 38)
+  - From: "When to Replace Your Roof Charlotte NC | 10 Warning Signs (2026)"
+  - To:   "When to Replace Your Roof Charlotte NC"
+- `/wind-damage-roof-repair-charlotte-nc` (65 → 36)
+  - From: "Wind Damage Roof Repair Charlotte NC | Blown Shingles & High Wind"
+  - To:   "Wind Damage Roof Repair Charlotte NC"
+
+## Still over limit
+- `/gutter-services` (70) — "Gutter Services Charlotte NC | Installation, Repair, Cleaning & Guards"
+- `/how-do-i-find-a-roof-leak-on-flat-roof-charlotte-nc` (63) — "How to Find a Roof Leak on a Flat Commercial Roof Charlotte NC?"
+- `/how-do-i-know-if-i-need-new-decking-charlotte-nc` (61) — "How to Know if I Need New Decking Under My Roof Charlotte NC?"
+- `/how-do-i-read-a-roof-estimate-charlotte-nc` (68) — "How to Read a Roof Estimate and What Should It Include Charlotte NC?"
+- `/how-much-does-commercial-roof-replacement-cost-charlotte-nc` (62) — "How Much Does a Commercial Roof Replacement Cost Charlotte NC?"
+- `/metal-roof-cost` (64) — "Metal Roof Cost (2026) | Pricing Per Sq Ft, by Type & House Size"
+- `/nc-roofing-guide` (66) — "Complete NC Roofing Guide | Building Codes, Permits & Requirements"
+- `/roof-maintenance-faq` (65) — "Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered"
+- `/roofing-technical-terms-faq` (65) — "Roofing Terms Explained FAQ | Technical Glossary & Warranty Guide"
+- `/services` (66) — "Roofing Services Charlotte NC | Residential, Commercial, Emergency"
+- `/should-i-get-a-roof-inspection-before-buying-a-house-charlotte-nc` (66) — "Should I Get a Roof Inspection Before Buying a House Charlotte NC?"
+- `/should-i-replace-my-roof-in-sections-charlotte-nc` (65) — "Should I Replace My Roof in Sections or All at Once Charlotte NC?"
+- `/what-do-i-do-if-insurance-denies-my-roof-claim-charlotte-nc` (63) — "What Do I Do if My Insurance Denies My Roof Claim Charlotte NC?"
+- `/what-is-a-chimney-chase-cover-charlotte-nc` (64) — "What Is a Chimney Chase Cover and When Does It Need Replacement?"
+- `/what-is-a-chimney-cricket-charlotte-nc` (65) — "What Is a Chimney Cricket and Does My Charlotte NC Home Need One?"
+- `/what-is-a-public-adjuster-charlotte-nc` (77) — "What Is a Public Adjuster and Do I Need One for Charlotte NC Insurance Claim?"
+- `/what-is-a-roof-inspection-report-charlotte-nc` (73) — "What Is a Roof Inspection Report and What Should It Include Charlotte NC?"
+- `/what-is-a-roof-tear-off-charlotte-nc` (71) — "What Is a Roof Tear-Off and Why Is It Better Than Overlay Charlotte NC?"
+- `/what-is-a-roof-valley-charlotte-nc` (63) — "What Is a Roof Valley and Why It Matters for Charlotte NC Home?"
+- `/what-is-an-ndl-warranty-charlotte-nc` (69) — "What Is an NDL Warranty and Why Is It Important for Commercial Roofs?"
+- `/what-is-certainteed-select-shinglemaster-charlotte-nc` (82) — "What Is CertainTeed SELECT ShingleMaster and Why It Matters for Charlotte NC Roof?"
+- `/what-is-class-4-impact-resistance-charlotte-nc` (75) — "What Is Class 4 Impact Resistance and Is It Worth It for Charlotte NC Roof?"
+- `/what-is-epdm-roof-membrane-charlotte-nc` (70) — "What Is EPDM Roof Membrane and Is It Good for Charlotte NC Commercial?"
+- `/what-is-fascia-board-charlotte-nc` (64) — "What Is Fascia Board and Why Does My Charlotte NC Roof Have One?"
+- `/what-is-gaf-master-elite-charlotte-nc` (66) — "What Is GAF Master Elite and Why It Matters for Charlotte NC Roof?"
+- `/what-is-overhead-and-profit-charlotte-nc` (86) — "What Is Overhead and Profit and When Does It Apply to My Charlotte NC Insurance Claim?"
+- `/what-is-owens-corning-platinum-preferred-charlotte-nc` (82) — "What Is Owens Corning Platinum Preferred and Why It Matters for Charlotte NC Roof?"
+- `/what-is-rcv-vs-acv-insurance-charlotte-nc` (77) — "What Is RCV vs ACV Insurance and Which Is Better for Charlotte NC Roof Claim?"
+- `/what-is-roof-certification-charlotte-nc` (63) — "What Is Roof Certification and When Do I Need One Charlotte NC?"
+- `/what-is-roof-decking-charlotte-nc` (78) — "What Is Roof Decking and How Do I Know If Mine Needs Replacement Charlotte NC?"
+- `/what-is-roof-flashing-charlotte-nc` (63) — "What Is Roof Flashing and Why It Matters for Charlotte NC Roof?"
+- `/what-is-roof-pitch-charlotte-nc` (64) — "What Is Roof Pitch and What Does It Mean for Charlotte NC Homes?"
+- `/what-is-roof-starter-strip-charlotte-nc` (70) — "What Is Roof Starter Strip and Why It Matters for Charlotte NC Reroof?"
+- `/what-is-roof-underlayment-charlotte-nc` (66) — "What Is Roof Underlayment and Which Type Is Best for Charlotte NC?"
+- `/what-is-solar-reflective-index-charlotte-nc` (75) — "What Is Solar Reflective Index and How Does It Affect My Charlotte NC Roof?"
+- `/what-is-tpo-seam-welding-charlotte-nc` (65) — "What Is TPO Seam Welding and Why It Matters for Commercial Roofs?"
+- `/what-is-wind-uplift-rating-charlotte-nc` (67) — "What Is Wind Uplift Rating and What Does My Charlotte NC Roof Need?"
+- `/what-is-xactimate-scoping-charlotte-nc` (78) — "What Is Xactimate Scoping and Why It Matters for Charlotte NC Insurance Claim?"
+- `/why-aluminum-best-for-lake-norman-waterfront-roofing-nc` (75) — "Why Is Aluminum the Best Metal Roofing for Lake Norman Waterfront Homes NC?"

@@ -23,6 +23,7 @@ import {
   WebPageSchema,
   ArticleSchema,
   AISearchOptimizationBundle,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -31,7 +32,7 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Shingle vs Metal Roof Cost: Complete 2026 Comparison Guide | Charlotte NC',
+  title: 'Shingle vs Metal Roof Cost: Complete 2026 Comparison Guide',
   description:
     'Shingle vs metal roof cost comparison for Charlotte NC homeowners. Upfront costs, lifetime value, insurance savings, and ROI breakdown.',
   alternates: {
@@ -177,6 +178,7 @@ export default function ShingleVsMetalRoofCostPage() {
         city="Charlotte"
         skipFAQ={true}
       />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

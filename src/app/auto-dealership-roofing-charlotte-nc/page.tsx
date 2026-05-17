@@ -37,6 +37,7 @@ import {
   FAQSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -44,7 +45,7 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Auto Dealership Roofing Charlotte NC | Showroom & Service Center Roofs',
+  title: 'Auto Dealership Roofing Charlotte NC',
   description:
     'Expert auto dealership roofing contractors in Charlotte NC for showrooms, service bays, body shops & car washes. Curb appeal specialists.',
   alternates: {
@@ -263,6 +264,7 @@ export default function AutoDealershipRoofingCharlotteNCPage() {
         city="Charlotte"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-dark text-white py-16 md:py-24 overflow-hidden">

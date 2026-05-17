@@ -29,6 +29,7 @@ import {
   LocalBusinessSchema,
   AISearchOptimizationBundle,
   VoiceSearchActionSchema,
+  SpeakableContentBlocks,
 } from '@/components/seo/SchemaMarkup';
 import { Button } from '@/components/ui/Button';
 import { SITE_CONFIG } from '@/lib/constants';
@@ -283,6 +284,7 @@ export default function TileRoofingLakeNormanNCPage() {
         city="Cornelius"
       />
       <VoiceSearchActionSchema />
+      <SpeakableContentBlocks city="Charlotte" />
       <LKNHowToBundle pageUrl={`${SITE_CONFIG.url}/tile-roofing-lake-norman-nc`} city={"Lake Norman"} />
 
       {/* Hero Section */}
