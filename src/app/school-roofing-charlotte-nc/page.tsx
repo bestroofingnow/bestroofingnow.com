@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'School Roofing Charlotte NC',
   description:
-    'Expert school and educational facility roofing contractors in Charlotte NC. Serving CMS schools, universities, private schools & colleges. Summer scheduling, student safety focused. Licensed & insured. Free estimates.',
+    'Expert school and educational facility roofing contractors in Charlotte NC. Serving CMS schools, universities, private schools & colleges.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/school-roofing-charlotte-nc`,
   },

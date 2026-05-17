@@ -35,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Fort Mill SC',
   description:
-    'Fast, reliable roof repair in Fort Mill SC. Emergency repairs, storm damage, leak repair, and shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for free estimate.',
+    'Fast, reliable roof repair in Fort Mill SC. Emergency repairs, storm damage, leak repair, and shingle replacement. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-fort-mill-sc`,
   },

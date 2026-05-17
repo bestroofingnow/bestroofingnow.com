@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is GAF Master Elite and Why Does It Matter for My Charlotte NC Roof?',
   description:
-    "GAF Master Elite = top 2% of US roofing contractors. Charlotte NC exclusive Golden Pledge warranty (50 yr material + 25 yr workmanship + 25 yr tear-off + 130 MPH wind). Best Roofing Now certified.",
+    "GAF Master Elite = top 2% of US roofing contractors. Charlotte NC exclusive Golden Pledge warranty (50 yr material + 25 yr workmanship + 25 yr tear-off +…",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is GAF Master Elite and Why Does It Matter for My Charlotte NC Roof?',

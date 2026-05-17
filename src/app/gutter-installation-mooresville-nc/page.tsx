@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Mooresville NC | Seamless Gutters',
   description:
-    'Professional gutter installation in Mooresville NC. Seamless aluminum gutters, gutter guards, and repairs for Lake Norman homes. BBB A+ rated. Free estimates!',
+    'Professional gutter installation in Mooresville NC. Seamless aluminum gutters, gutter guards, and repairs for Lake Norman homes. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-mooresville-nc`,
   },

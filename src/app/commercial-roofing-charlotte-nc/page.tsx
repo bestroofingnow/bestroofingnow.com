@@ -54,7 +54,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Charlotte NC | #1 Rated',
   description:
-    `Expert commercial roofing in Charlotte NC. TPO, EPDM, flat roofing, metal roofing & roof coatings for warehouses, offices, retail & more. ${SITE_CONFIG.googleRating} Google rating, BBB A+ rated, veteran-owned. Free estimates!`,
+    `Expert commercial roofing in Charlotte NC. TPO, EPDM, flat roofing, metal roofing & roof coatings for warehouses, offices, retail & more.`,
 
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-charlotte-nc`,

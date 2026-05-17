@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Sherrills Ford NC',
   description:
-    'Looking for metal roofing in Sherrills Ford NC? Best Roofing Now installs standing seam and metal panel roofs for Lake Norman homes. 50+ year lifespan, energy efficient, wind resistant. BBB A+ rated, veteran-owned. Free estimates!',
+    'Looking for metal roofing in Sherrills Ford NC? Best Roofing Now installs standing seam and metal panel roofs for Lake Norman homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-sherrills-ford-nc`,
   },

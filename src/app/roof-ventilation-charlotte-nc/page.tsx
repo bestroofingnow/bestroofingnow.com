@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Ventilation Charlotte NC',
   description:
-    'Expert roof and attic ventilation services in Charlotte NC. Ridge vents, soffit vents, power ventilators - we install it all. Reduce energy bills, prevent moisture damage. BBB A+ rated. Free estimates.',
+    'Expert roof and attic ventilation services in Charlotte NC. Ridge vents, soffit vents, power ventilators - we install it all.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-ventilation-charlotte-nc`,
   },

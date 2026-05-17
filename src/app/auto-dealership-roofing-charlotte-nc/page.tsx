@@ -46,7 +46,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Auto Dealership Roofing Charlotte NC | Showroom & Service Center Roofs',
   description:
-    'Expert auto dealership roofing contractors in Charlotte NC for showrooms, service bays, body shops & car washes. Curb appeal specialists. Quick turnaround to minimize revenue loss. Licensed & insured. Free estimates.',
+    'Expert auto dealership roofing contractors in Charlotte NC for showrooms, service bays, body shops & car washes. Curb appeal specialists.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/auto-dealership-roofing-charlotte-nc`,
   },

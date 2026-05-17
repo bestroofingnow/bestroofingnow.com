@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   // Disambiguated 2026-05-16 — was sharing exact title with /signs-you-need-new-roof-lake-norman-nc.
   title: '10 Signs You Need a New Roof in Charlotte NC',
   description:
-    'How to tell if you need a new roof in Charlotte NC. 10 warning signs including curling shingles, granule loss, sagging, leaks, and age. Free roof inspections from BBB A+ rated, veteran-owned roofers.',
+    'How to tell if you need a new roof in Charlotte NC. 10 warning signs including curling shingles, granule loss, sagging, leaks, and age.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/signs-you-need-new-roof-charlotte-nc`,
   },

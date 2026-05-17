@@ -43,7 +43,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair vs. Replacement Charlotte NC | Decision Guide (2026)',
   description:
-    'Should you repair or replace your roof in Charlotte NC? Use our 5-question decision framework, cost comparison tables, and material-specific guidance to make the right choice. Free inspections from BBB A+ rated contractor.',
+    'Should you repair or replace your roof in Charlotte NC? Use our 5-question decision framework, cost comparison tables.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-vs-replacement-charlotte-nc`,
   },

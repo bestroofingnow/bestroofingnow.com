@@ -36,7 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'January 2026 Ice Storm Damage Charlotte NC | Emergency Gutter & Roof Repair',
   description:
-    'Charlotte ice storm damage help. Gutters falling off? Roof leaking as ice thaws? Best Roofing Now is here for Charlotte and Mecklenburg County. Free emergency inspections. Call 704-605-6047.',
+    'Charlotte ice storm damage help. Gutters falling off? Roof leaking as ice thaws? Best Roofing Now is here for Charlotte and Mecklenburg County.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/ice-storm-damage-charlotte-nc`,
   },

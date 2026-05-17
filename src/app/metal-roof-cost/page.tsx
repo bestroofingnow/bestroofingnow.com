@@ -43,7 +43,7 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 export const metadata: Metadata = {
   title: 'Metal Roof Cost (2026) | Pricing Per Sq Ft, by Type & House Size',
   description:
-    'Complete 2026 metal roof cost guide. Standing seam $10-$18/sqft, corrugated $5-$10, metal shingles $7-$14, copper $25-$40. Cost by house size, installation factors, ROI analysis. Free estimates in Charlotte NC.',
+    'Complete 2026 metal roof cost guide. Standing seam $10-$18/sqft, corrugated $5-$10, metal shingles $7-$14, copper $25-$40.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roof-cost`,
   },

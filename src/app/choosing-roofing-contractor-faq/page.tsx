@@ -27,9 +27,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'How to Choose a Roofing Contractor FAQ | Questions to Ask | Charlotte NC',
+  title: 'How to Choose a Roofing Contractor FAQ | Questions to Ask',
   description:
-    'Learn how to choose a roofing contractor in Charlotte NC. 12 FAQs answered, red flags checklist, and 10 essential questions to ask any roofer before hiring. Expert guide from Best Roofing Now.',
+    'Learn how to choose a roofing contractor in Charlotte NC. 12 FAQs answered, red flags checklist.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/choosing-roofing-contractor-faq`,
   },

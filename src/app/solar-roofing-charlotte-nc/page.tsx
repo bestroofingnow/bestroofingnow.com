@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Solar Roofing Charlotte NC',
   description:
-    'Solar roofing installation in Charlotte NC by GAF certified installers. GAF Timberline Solar shingles, solar panel integration, and Tesla Solar Roof options. Federal 30% ITC tax credit eligible. Veteran-owned, BBB A+ rated. Free estimates!',
+    'Solar roofing installation in Charlotte NC by GAF certified installers. GAF Timberline Solar shingles, solar panel integration.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/solar-roofing-charlotte-nc`,
   },

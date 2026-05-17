@@ -28,9 +28,9 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'Metal Roofing Cornelius NC | Lake Norman | Standing Seam Experts',
+  title: 'Metal Roofing Cornelius NC | Lake Norman',
   description:
-    'Expert metal roofing installation in Cornelius NC. Standing seam & corrugated metal for Lake Norman waterfront homes. 140+ MPH wind rated. 40-70 year lifespan. Free estimates.',
+    'Expert metal roofing installation in Cornelius NC. Standing seam & corrugated metal for Lake Norman waterfront homes. 140+ MPH wind rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-cornelius-nc`,
   },

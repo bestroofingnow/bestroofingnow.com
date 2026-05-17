@@ -19,7 +19,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing Service Areas | Charlotte NC & Lake Norman',
   description:
-    'Best Roofing Now serves 45+ cities across Charlotte metro — Mecklenburg, Cabarrus, Union, Gaston, Iredell, Lincoln, York SC, and more. Free estimates, no travel fees.',
+    'Best Roofing Now serves 45+ cities across Charlotte metro — Mecklenburg, Cabarrus, Union, Gaston, Iredell, Lincoln, York SC, and more.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/locations`,
   },

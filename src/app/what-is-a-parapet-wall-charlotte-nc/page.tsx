@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Parapet Wall? Charlotte NC Guide',
   description:
-    "Parapet wall: short wall above the roofline on Charlotte NC commercial buildings. Fire, aesthetic, fall protection, wind functions. Repair $35-$200/lf. Code-compliant.",
+    "Parapet wall: short wall above the roofline on Charlotte NC commercial buildings. Fire, aesthetic, fall protection, wind functions. Repair $35-$200/lf.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Parapet Wall? Charlotte NC Guide',

@@ -110,7 +110,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How to Tell if a Roofer Is Lying (10 Red Flags + Verify)',
   description:
-    "10 verifiable red flags that mean a Charlotte roofer is lying — plus a 7-step verification checklist with official NC license, BBB, and manufacturer cert lookups.",
+    "10 verifiable red flags that mean a Charlotte roofer is lying — plus a 7-step verification checklist with official NC license, BBB.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How to Tell if a Roofer Is Lying — 10 Red Flags & Verification Checklist',

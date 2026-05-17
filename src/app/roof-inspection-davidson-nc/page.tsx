@@ -33,7 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Davidson NC | Free',
   description:
-    'Free roof inspections in Davidson NC. Comprehensive assessments with detailed reports for college town historic and newer homes. BBB A+ rated. Schedule today!',
+    'Free roof inspections in Davidson NC. Comprehensive assessments with detailed reports for college town historic and newer homes. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-davidson-nc`,
   },

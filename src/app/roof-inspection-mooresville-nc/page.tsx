@@ -33,7 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Mooresville NC',
   description:
-    'Free roof inspections in Mooresville NC. Comprehensive assessments with detailed reports and photos. BBB A+ rated, veteran-owned. Serving Lake Norman area. Schedule your free inspection today!',
+    'Free roof inspections in Mooresville NC. Comprehensive assessments with detailed reports and photos. BBB A+ rated, veteran-owned. Serving Lake Norman area.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-mooresville-nc`,
   },

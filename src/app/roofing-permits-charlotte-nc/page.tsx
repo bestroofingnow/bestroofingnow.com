@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Permits Charlotte NC',
   description:
-    'Do you need a permit to replace a roof in Charlotte NC? Yes. Learn about Mecklenburg County roofing permits, costs ($100-$300), timeline, inspections, and why your contractor should pull the permit.',
+    'Do you need a permit to replace a roof in Charlotte NC? Yes. Learn about Mecklenburg County roofing permits, costs ($100-$300), timeline, inspections.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-permits-charlotte-nc`,
   },

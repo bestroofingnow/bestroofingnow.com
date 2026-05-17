@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Gastonia NC',
   description:
-    'Professional roof replacement services in Gastonia NC. Full tear-off and new roof installation with premium materials. GAF, CertainTeed & Owens Corning certified. Financing available. Free estimates!',
+    'Professional roof replacement services in Gastonia NC. Full tear-off and new roof installation with premium materials.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-gastonia-nc`,
   },

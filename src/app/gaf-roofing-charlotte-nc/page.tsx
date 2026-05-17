@@ -35,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'GAF Roofing Charlotte NC',
   description:
-    'Looking for GAF roofing in Charlotte NC? Best Roofing Now is a GAF Factory-Certified contractor offering Timberline HDZ shingles with Golden Pledge warranty. BBB A+ rated, veteran-owned. Free estimates.',
+    'Looking for GAF roofing in Charlotte NC? Best Roofing Now is a GAF Factory-Certified contractor offering Timberline HDZ shingles with Golden Pledge…',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gaf-roofing-charlotte-nc`,
   },

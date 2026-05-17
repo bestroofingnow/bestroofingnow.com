@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing SouthPark Charlotte NC',
   description:
-    'Looking for a trusted roofer in SouthPark Charlotte NC? Best Roofing Now serves the SouthPark Mall area with premium roofing services for upscale neighborhoods. BBB A+ rated, veteran-owned. Free estimates.',
+    'Looking for a trusted roofer in SouthPark Charlotte NC? Best Roofing Now serves the SouthPark Mall area with premium roofing services for upscale…',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-southpark-charlotte-nc`,
   },

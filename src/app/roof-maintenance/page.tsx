@@ -36,7 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roof Maintenance Program Charlotte NC',
   description:
-    'Preventive roof maintenance in Charlotte NC — 2x/year inspections, gutter clean, flashing checks, sealant refresh, warranty-compliant documentation. Residential and commercial tiers.',
+    'Preventive roof maintenance in Charlotte NC — 2x/year inspections, gutter clean, flashing checks, sealant refresh, warranty-compliant documentation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance`,
   },

@@ -43,7 +43,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Cost Charlotte NC',
   description:
-    'How much does roof repair cost in Charlotte NC? 2026 pricing guide: minor repairs $150-$500, moderate $500-$1,500, major $1,500-$5,000+. Free estimates, transparent pricing, no hidden fees. Licensed & insured.',
+    'How much does roof repair cost in Charlotte NC? 2026 pricing guide: minor repairs $150-$500, moderate $500-$1,500, major $1,500-$5,000+.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-cost-charlotte-nc`,
   },

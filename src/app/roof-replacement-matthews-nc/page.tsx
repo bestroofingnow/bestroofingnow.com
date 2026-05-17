@@ -26,7 +26,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Matthews NC | New Roof',
   description:
-    'Need a new roof in Matthews NC? Best Roofing Now provides expert roof replacement with premium materials and warranties. BBB A+ rated, veteran-owned. Free estimates!',
+    'Need a new roof in Matthews NC? Best Roofing Now provides expert roof replacement with premium materials and warranties. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-matthews-nc`,
   },

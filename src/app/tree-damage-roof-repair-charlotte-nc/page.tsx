@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Tree Damage Roof Repair Charlotte',
   description:
-    'Expert tree damage roof repair in Charlotte NC. Fast emergency response when a tree falls on your roof. Insurance claim assistance, full restoration. Call Best Roofing Now 24/7!',
+    'Expert tree damage roof repair in Charlotte NC. Fast emergency response when a tree falls on your roof. Insurance claim assistance, full restoration.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tree-damage-roof-repair-charlotte-nc`,
   },

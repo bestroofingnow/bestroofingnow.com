@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Missing Shingles Repair Charlotte',
   description:
-    'Missing shingles on your roof? Best Roofing Now provides fast, professional missing shingle repair in Charlotte NC. Wind damage, age-related wear - we fix it all. BBB A+ rated, veteran-owned. Free estimates.',
+    'Missing shingles on your roof? Best Roofing Now provides fast, professional missing shingle repair in Charlotte NC.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/missing-shingles-repair-charlotte-nc`,
   },

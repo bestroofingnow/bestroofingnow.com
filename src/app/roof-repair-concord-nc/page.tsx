@@ -31,7 +31,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Concord NC | Fast',
   description:
-    'Need roof repair in Concord NC? Best Roofing Now offers fast, affordable roof repair services including leak repair, storm damage, and emergency repairs. BBB A+ rated, veteran-owned. Free estimates for Cabarrus County homeowners!',
+    'Need roof repair in Concord NC? Best Roofing Now offers fast, affordable roof repair services including leak repair, storm damage, and emergency repairs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-concord-nc`,
   },

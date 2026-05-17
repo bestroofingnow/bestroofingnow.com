@@ -48,7 +48,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roofing Charlotte NC | 40-70 Yr',
   description:
-    'Metal roofing Charlotte NC experts -- 2026 pricing, 40-70 yr lifespan, 25% energy savings & 140 MPH wind resistance. Standing seam & metal shingle installs by BBB A+ veteran-owned contractors. Free estimate!',
+    'Metal roofing Charlotte NC experts -- 2026 pricing, 40-70 yr lifespan, 25% energy savings & 140 MPH wind resistance.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-charlotte-nc`,
   },

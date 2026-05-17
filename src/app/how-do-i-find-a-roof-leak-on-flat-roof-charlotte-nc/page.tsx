@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Find a Roof Leak on a Flat Commercial Roof in Charlotte NC?',
   description:
-    "Finding flat-roof leaks in Charlotte NC: infrared moisture survey ($350-900), seam inspection, flashing check, water test. Water travels 10-30+ ft from entry to drip location.",
+    "Finding flat-roof leaks in Charlotte NC: infrared moisture survey ($350-900), seam inspection, flashing check, water test.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Find a Roof Leak on a Flat Commercial Roof in Charlotte NC?',

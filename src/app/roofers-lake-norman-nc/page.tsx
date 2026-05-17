@@ -35,7 +35,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: "Roofers Lake Norman NC | LKN's Top-Rated",
   description:
-    'Top-rated roofers serving Lake Norman NC. 200+ LKN projects completed, 5-star Google rating, BBB A+ accredited. Veteran-owned roofing contractors in Mooresville, Cornelius, Davidson & Denver.',
+    'Top-rated roofers serving Lake Norman NC. 200+ LKN projects completed, 5-star Google rating, BBB A+ accredited.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-lake-norman-nc`,
   },

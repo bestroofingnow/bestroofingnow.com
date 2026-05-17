@@ -27,9 +27,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roof Insurance Claim FAQ | Does Insurance Cover My Roof? | Charlotte NC',
+  title: 'Roof Insurance Claim FAQ | Does Insurance Cover My Roof?',
   description:
-    'Roof insurance claim FAQ for Charlotte NC homeowners. Does insurance cover roof damage? How to file a claim? NC-specific rules including 1-year filing deadline and deductible waiver prohibition. Expert answers from Best Roofing Now.',
+    'Roof insurance claim FAQ for Charlotte NC homeowners. Does insurance cover roof damage? How to file a claim?',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-insurance-claims-faq`,
   },

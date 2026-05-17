@@ -32,9 +32,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'When to Replace Your Roof FAQ | 15 Timing Questions Answered | Charlotte NC',
+  title: 'When to Replace Your Roof FAQ | 15 Timing Questions Answered',
   description:
-    'When should you replace your roof? Get answers to 15 common questions about roof lifespan, repair vs replace decisions, seasonal timing, and warning signs. Expert Charlotte NC roofing advice from Best Roofing Now.',
+    'When should you replace your roof? Get answers to 15 common questions about roof lifespan, repair vs replace decisions, seasonal timing, and warning signs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/when-to-replace-roof-faq`,
   },

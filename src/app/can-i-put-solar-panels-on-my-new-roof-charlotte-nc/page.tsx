@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Can I Put Solar Panels on My New Roof in Charlotte NC?',
   description:
-    "Yes — but timing matters. Roof first if 10+ yr old, S-5! clamp-mount on metal, flashed mounts on asphalt, or integrated solar shingles. 30% federal tax credit through 2032.",
+    "Yes — but timing matters. Roof first if 10+ yr old, S-5! clamp-mount on metal, flashed mounts on asphalt, or integrated solar shingles.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Can I Put Solar Panels on My New Roof in Charlotte NC?',

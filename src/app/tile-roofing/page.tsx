@@ -37,7 +37,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Tile Roofing Charlotte NC | Clay & Concrete',
   description:
-    'Tile roofing in Charlotte NC — clay (terracotta), concrete, Spanish S, flat slate-look, and synthetic alternatives. 50-100 year lifespan, structural engineering required.',
+    'Tile roofing in Charlotte NC — clay (terracotta), concrete, Spanish S, flat slate-look, and synthetic alternatives.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tile-roofing`,
   },

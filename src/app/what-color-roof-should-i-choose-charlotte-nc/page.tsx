@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Color Roof Should I Choose for My Charlotte NC Home?',
   description:
-    "What color roof works best in Charlotte NC? Match brick, consider HOA palette, climate impact (lighter saves $80-200/yr cooling), and resale value. Physical samples brought to every consultation.",
+    "What color roof works best in Charlotte NC? Match brick, consider HOA palette, climate impact (lighter saves $80-200/yr cooling), and resale value.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Color Roof Should I Choose for My Charlotte NC Home?',

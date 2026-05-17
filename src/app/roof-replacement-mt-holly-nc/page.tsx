@@ -27,7 +27,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Mt Holly NC | New Roof',
   description:
-    'Need a new roof in Mt Holly NC? Best Roofing Now provides expert roof replacement with premium materials and warranties. BBB A+ rated, veteran-owned. Free estimates!',
+    'Need a new roof in Mt Holly NC? Best Roofing Now provides expert roof replacement with premium materials and warranties. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-mt-holly-nc`,
   },

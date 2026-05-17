@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'LeafGuard Gutters Charlotte NC',
   description:
-    'LeafGuard gutter installation in Charlotte NC. One-piece seamless design with clog-free guarantee. Never clean gutters again! Professional installation with lifetime warranty. Free estimates.',
+    'LeafGuard gutter installation in Charlotte NC. One-piece seamless design with clog-free guarantee. Never clean gutters again!',
   alternates: {
     canonical: `${SITE_CONFIG.url}/leafguard-gutters-charlotte-nc`,
   },

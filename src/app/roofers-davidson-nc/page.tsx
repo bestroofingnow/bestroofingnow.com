@@ -34,7 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Davidson NC | 5-Star',
   description:
-    'Looking for trusted roofers in Davidson NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company. Historic home expertise. Davidson College area specialists. Free estimates.',
+    'Looking for trusted roofers in Davidson NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company. Historic home expertise.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-davidson-nc`,
   },

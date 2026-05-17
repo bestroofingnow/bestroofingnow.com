@@ -27,7 +27,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Mt Holly NC',
   description:
-    'Need new gutters in Mt Holly NC? Best Roofing Now installs seamless aluminum and copper gutters with gutter guards. Protect your home from water damage. Free estimates!',
+    'Need new gutters in Mt Holly NC? Best Roofing Now installs seamless aluminum and copper gutters with gutter guards. Protect your home from water damage.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-mt-holly-nc`,
   },

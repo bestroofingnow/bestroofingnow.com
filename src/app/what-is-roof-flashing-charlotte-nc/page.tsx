@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is Roof Flashing and Why Does It Matter for My Charlotte NC Roof?',
   description:
-    "Roof flashing = metal sheeting at junctions and penetrations. 22% of Charlotte leaks. 7 types: step, counter, apron, valley, drip edge, pipe boot, skylight. Aluminum 30-50 yr.",
+    "Roof flashing = metal sheeting at junctions and penetrations. 22% of Charlotte leaks.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Flashing and Why Does It Matter for My Charlotte NC Roof?',

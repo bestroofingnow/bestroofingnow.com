@@ -30,7 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Cornelius NC | Lake Norman | Free Estimates',
   description:
-    'Expert roof replacement in Cornelius NC. Serving Lake Norman waterfront homes with premium materials. GAF & CertainTeed certified. Financing available. Free estimates from BBB A+ rated contractor.',
+    'Expert roof replacement in Cornelius NC. Serving Lake Norman waterfront homes with premium materials. GAF & CertainTeed certified. Financing available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-cornelius-nc`,
   },

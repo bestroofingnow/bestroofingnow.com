@@ -33,7 +33,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roofing Lake Wylie SC | Standing Seam & Metal Shingles',
   description:
-    'Premium metal roofing in Lake Wylie SC. Standing seam, metal shingles, and metal roof repairs for waterfront homes. 130+ MPH wind rating, salt air resistant. BBB A+ rated. Free estimates!',
+    'Premium metal roofing in Lake Wylie SC. Standing seam, metal shingles, and metal roof repairs for waterfront homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-lake-wylie-sc`,
   },

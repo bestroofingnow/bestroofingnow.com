@@ -30,7 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Denver NC | Lake Norman | Free Estimates',
   description:
-    'Expert roof replacement in Denver NC. Premium materials for Lake Norman western shore homes. GAF & CertainTeed certified. Financing available. Free estimates!',
+    'Expert roof replacement in Denver NC. Premium materials for Lake Norman western shore homes. GAF & CertainTeed certified. Financing available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-denver-nc`,
   },

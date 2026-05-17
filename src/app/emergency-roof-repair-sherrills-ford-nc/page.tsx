@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Sherrills Ford',
   description:
-    'Need emergency roof repair in Sherrills Ford NC? Best Roofing Now provides 24/7 emergency roofing services for Lake Norman homes. Storm damage, active leaks, fallen trees. BBB A+ rated, veteran-owned. Call now: (704) 605-6047!',
+    'Need emergency roof repair in Sherrills Ford NC? Best Roofing Now provides 24/7 emergency roofing services for Lake Norman homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-sherrills-ford-nc`,
   },

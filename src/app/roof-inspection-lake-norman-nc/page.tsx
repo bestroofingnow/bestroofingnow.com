@@ -31,9 +31,9 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'Roof Inspection Lake Norman NC | Free Inspections | Expert Roofers',
+  title: 'Roof Inspection Lake Norman NC | Free Inspections',
   description:
-    'Free roof inspections across Lake Norman NC. Comprehensive assessments with detailed reports for Cornelius, Davidson, Mooresville, Huntersville & Denver homes. BBB A+ rated. Schedule today!',
+    'Free roof inspections across Lake Norman NC. Comprehensive assessments with detailed reports for Cornelius, Davidson, Mooresville.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-lake-norman-nc`,
   },

@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Statesville NC',
   description:
-    'Looking for metal roofing in Statesville NC? Best Roofing Now installs premium standing seam and metal shingle roofing in Iredell County. BBB A+ rated, veteran-owned. 50+ year lifespan, energy efficient. Free estimates!',
+    'Looking for metal roofing in Statesville NC? Best Roofing Now installs premium standing seam and metal shingle roofing in Iredell County.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-statesville-nc`,
   },

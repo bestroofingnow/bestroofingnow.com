@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Replace Roof Before Selling?',
   description:
-    'Should you replace your roof before selling your Charlotte NC home? A new roof adds $12,000-$15,000 in value with 61-65% ROI. Learn when to replace, offer credit, or sell as-is.',
+    'Should you replace your roof before selling your Charlotte NC home? A new roof adds $12,000-$15,000 in value with 61-65% ROI.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/replace-roof-before-selling-charlotte-nc`,
   },

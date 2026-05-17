@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Roof Curb and Where Is It Used in Charlotte NC?',
   description:
-    "Roof curb = raised perimeter framing around HVAC, skylights, fans. NC IRC §R905 requires 8-inch min height. Cost $300-$3,500 by application. Bundle with reroof for savings.",
+    "Roof curb = raised perimeter framing around HVAC, skylights, fans. NC IRC §R905 requires 8-inch min height. Cost $300-$3,500 by application.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Roof Curb and Where Is It Used in Charlotte NC?',

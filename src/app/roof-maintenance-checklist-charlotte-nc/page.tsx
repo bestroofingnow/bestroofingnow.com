@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Maintenance Checklist',
   description:
-    'Seasonal roof maintenance checklist for Charlotte NC homeowners. Spring, summer, fall, and winter tasks to extend your roof life. DIY tips and professional inspection guidance from BBB A+ rated roofers.',
+    'Seasonal roof maintenance checklist for Charlotte NC homeowners. Spring, summer, fall, and winter tasks to extend your roof life.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance-checklist-charlotte-nc`,
   },

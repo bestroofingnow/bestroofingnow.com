@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Residential Roof Replacement Charlotte NC | Free Estimates',
   description:
-    'Professional residential roof replacement in Charlotte NC. Asphalt, metal, tile, slate & cedar options. Free estimates, financing available, 25-year warranties. Trusted by 500+ homeowners. Call now!',
+    'Professional residential roof replacement in Charlotte NC. Asphalt, metal, tile, slate & cedar options.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/residential-roof-replacement`,
   },

@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Snow Guard? Charlotte NC Need-to-Know',
   description:
-    "Snow guards prevent dangerous snow slides off metal roofs. Rare in Charlotte (3-5 inch annual avg) but critical above entrances and on Lake Norman metal roofs. Install $8-$45/ft.",
+    "Snow guards prevent dangerous snow slides off metal roofs. Rare in Charlotte (3-5 inch annual avg) but critical above entrances and on Lake Norman metal…",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Snow Guard? Charlotte NC Need-to-Know',

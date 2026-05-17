@@ -43,9 +43,9 @@ import { IMAGES } from '@/lib/images';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roofing Contractor Charlotte NC | Licensed & Certified | GAF CertainTeed',
+  title: 'Roofing Contractor Charlotte NC | Licensed & Certified',
   description:
-    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed ShingleMaster, BBB A+ rated. 5.0 Google rating, veteran-owned. NC General Contractor license. 500+ roofs completed. Free estimates! Call (704) 605-6047.',
+    'Licensed roofing contractor in Charlotte NC. GAF Factory-Certified, CertainTeed ShingleMaster, BBB A+ rated. 5.0 Google rating, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-contractor-charlotte-nc`,
   },

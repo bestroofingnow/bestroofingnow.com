@@ -28,9 +28,9 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'Metal Roofing Davidson NC | Lake Norman | Standing Seam Experts',
+  title: 'Metal Roofing Davidson NC | Lake Norman',
   description:
-    'Expert metal roofing installation in Davidson NC. Standing seam & metal shingles for Lake Norman homes. Historic & modern styles. 40-70 year lifespan. Free estimates.',
+    'Expert metal roofing installation in Davidson NC. Standing seam & metal shingles for Lake Norman homes. Historic & modern styles. 40-70 year lifespan.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-davidson-nc`,
   },

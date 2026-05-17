@@ -41,7 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'How Many Roof Estimates to Get',
   description:
-    'Get 3-5 roof estimates from licensed Charlotte NC contractors. Learn what to compare in roofing quotes, red flags to watch for, and why the cheapest estimate is rarely the best choice.',
+    'Get 3-5 roof estimates from licensed Charlotte NC contractors. Learn what to compare in roofing quotes, red flags to watch for.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/how-many-roof-estimates-charlotte-nc`,
   },

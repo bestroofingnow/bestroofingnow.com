@@ -41,9 +41,9 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 // Emergency-specific metadata optimized for 24/7 keywords
 export const metadata: Metadata = {
-  title: '24/7 Emergency Roof Repair Charlotte NC | 30-Min Response Time',
+  title: '24/7 Emergency Roof Repair Charlotte | 30-Min Response Time',
   description:
-    '24/7 emergency roof repair in Charlotte NC. 30-minute response time for active leaks, storm damage & urgent repairs. Call (704) 605-6047 now for immediate help. Available nights, weekends & holidays.',
+    '24/7 emergency roof repair in Charlotte NC. 30-minute response time for active leaks, storm damage & urgent repairs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/services/emergency-roofing`,
   },

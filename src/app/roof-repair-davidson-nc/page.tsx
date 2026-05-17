@@ -39,7 +39,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Davidson NC | Fast Fixes',
   description:
-    'Roof repair in Davidson NC — leaks, shingle, flashing, valley, and storm repairs for Lake Norman homes. Same-day emergency service. BBB A+ rated, veteran-owned.',
+    'Roof repair in Davidson NC — leaks, shingle, flashing, valley, and storm repairs for Lake Norman homes. Same-day emergency service.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-davidson-nc`,
   },

@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Valley Repair Charlotte NC',
   description:
-    'Expert roof valley repair in Charlotte NC. Fix leaking roof valleys with professional metal valley installation and shingle repair. BBB A+ rated, licensed contractor. Free inspections available.',
+    'Expert roof valley repair in Charlotte NC. Fix leaking roof valleys with professional metal valley installation and shingle repair.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-valley-repair-charlotte-nc`,
   },

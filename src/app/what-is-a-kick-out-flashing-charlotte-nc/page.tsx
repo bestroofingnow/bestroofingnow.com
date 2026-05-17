@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Kick-Out Flashing? Charlotte NC Guide',
   description:
-    "Kick-out flashing diverts roof water into gutters away from siding. Missing one = $4,500-$18,000 hidden wall rot. NC code required. Charlotte NC install $35-$95.",
+    "Kick-out flashing diverts roof water into gutters away from siding. Missing one = $4,500-$18,000 hidden wall rot. NC code required.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Kick-Out Flashing? Charlotte NC Guide',

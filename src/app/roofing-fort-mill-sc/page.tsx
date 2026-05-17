@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Fort Mill SC | Top Rated',
   description:
-    'Looking for roofing services in Fort Mill SC? Best Roofing Now serves Fort Mill, Baxter, and Tega Cay from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation in York County.',
+    'Looking for roofing services in Fort Mill SC? Best Roofing Now serves Fort Mill, Baxter, and Tega Cay from our Charlotte headquarters.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-fort-mill-sc`,
   },

@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Sherrills Ford',
   description:
-    'Need roof replacement in Sherrills Ford NC? Best Roofing Now provides full roof replacement for Lake Norman homes. BBB A+ rated, veteran-owned. CertainTeed, GAF, and Owens Corning certified. Free estimates for Catawba County homeowners!',
+    'Need roof replacement in Sherrills Ford NC? Best Roofing Now provides full roof replacement for Lake Norman homes. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-sherrills-ford-nc`,
   },

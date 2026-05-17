@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'What to Do When a Tree Falls on Your Roof Charlotte NC | Emergency Guide',
   description:
-    'Tree fell on your Charlotte home? Step-by-step emergency guide: stay safe, document damage, file insurance claims, and get repairs. 24/7 emergency service available.',
+    'Tree fell on your Charlotte home? Step-by-step emergency guide: stay safe, document damage, file insurance claims, and get repairs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/what-to-do-tree-falls-on-roof-charlotte-nc`,
   },

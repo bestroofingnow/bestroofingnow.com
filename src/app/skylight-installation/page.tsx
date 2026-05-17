@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   // mounting, and tax credit. Local conversion variant: /skylight-installation-charlotte-nc.
   title: 'Skylight Installation: Types, Mounting & Tax Credit Guide',
   description:
-    'VELUX, Wasco, and Fakro skylight installation and replacement in Charlotte NC. Deck-mounted, curb-mounted, solar-vented. 26% federal tax credit eligible. Leak-free warranty.',
+    'VELUX, Wasco, and Fakro skylight installation and replacement in Charlotte NC. Deck-mounted, curb-mounted, solar-vented. 26% federal tax credit eligible.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/skylight-installation`,
   },

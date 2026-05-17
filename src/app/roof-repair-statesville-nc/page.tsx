@@ -34,7 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Statesville NC',
   description:
-    'Need roof repair in Statesville NC? Best Roofing Now provides fast, reliable roof repair services in Iredell County. BBB A+ rated, veteran-owned. Emergency roof repairs, leak fixes, shingle replacement, and storm damage repair. Free estimates!',
+    'Need roof repair in Statesville NC? Best Roofing Now provides fast, reliable roof repair services in Iredell County. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-statesville-nc`,
   },

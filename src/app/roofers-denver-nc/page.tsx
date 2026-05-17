@@ -34,7 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Denver NC | 5-Star',
   description:
-    'Looking for roofers in Denver NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman western shore. BBB A+. Free estimates.',
+    'Looking for roofers in Denver NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman western shore. BBB A+.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-denver-nc`,
   },

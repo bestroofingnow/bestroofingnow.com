@@ -52,9 +52,9 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Is a Class 4 Impact-Resistant Shingle Worth It in Charlotte NC?',
+  title: 'Is a Class 4 Impact-Resistant Shingle Worth It in Charlotte?',
   description:
-    "Yes — Class 4 shingles cost $1,500-3,500 extra but unlock 10-30% NC IBHS Fortified insurance discount with 5-7 year payback. 150 MPH wind, hail-belt protection.",
+    "Yes — Class 4 shingles cost $1,500-3,500 extra but unlock 10-30% NC IBHS Fortified insurance discount with 5-7 year payback.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Is a Class 4 Impact-Resistant Shingle Worth It in Charlotte NC?',

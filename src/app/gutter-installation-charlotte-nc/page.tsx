@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Charlotte NC',
   description:
-    'Professional gutter installation in Charlotte NC. Seamless aluminum, copper, steel & vinyl gutters. Expert gutter replacement, sizing, and gutter guard options. Free estimates from BBB A+ rated contractor. Call (704) 605-6047.',
+    'Professional gutter installation in Charlotte NC. Seamless aluminum, copper, steel & vinyl gutters.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-charlotte-nc`,
   },

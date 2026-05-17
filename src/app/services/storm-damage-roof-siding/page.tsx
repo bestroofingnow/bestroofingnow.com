@@ -25,7 +25,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Storm Damage Roof and Siding Repair Charlotte NC | Insurance Claim Experts',
-  description: 'Storm damage to your roof and siding? We handle complete restoration and insurance claims in Charlotte NC. 24/7 emergency service. Free inspection. Call (704) 605-6047.',
+  description: 'Storm damage to your roof and siding? We handle complete restoration and insurance claims in Charlotte NC. 24/7 emergency service. Free inspection.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/services/storm-damage-roof-siding`,
   },

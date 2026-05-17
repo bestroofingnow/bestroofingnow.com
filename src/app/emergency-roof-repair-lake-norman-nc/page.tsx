@@ -33,7 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Lake Norman NC | 24/7 Service',
   description:
-    'Emergency roof repair across Lake Norman NC. 24/7 response for storm damage, fallen trees, active leaks, and emergency tarping. Serving Mooresville, Cornelius, Davidson & Denver. Call now!',
+    'Emergency roof repair across Lake Norman NC. 24/7 response for storm damage, fallen trees, active leaks, and emergency tarping.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-lake-norman-nc`,
   },

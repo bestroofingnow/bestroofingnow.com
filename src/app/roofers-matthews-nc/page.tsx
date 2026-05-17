@@ -28,7 +28,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofers Matthews NC | Local Experts',
   description:
-    'Looking for trusted roofers in Matthews NC? Best Roofing Now offers expert residential and commercial roofing services in South Charlotte. BBB A+ rated, veteran-owned. Free estimates!',
+    'Looking for trusted roofers in Matthews NC? Best Roofing Now offers expert residential and commercial roofing services in South Charlotte.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-matthews-nc`,
   },

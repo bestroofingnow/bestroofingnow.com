@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Install Huntersville NC',
   description:
-    'Professional gutter installation in Huntersville NC. Custom seamless gutters, gutter guards, and repairs. Protect your home from water damage. Free estimates!',
+    'Professional gutter installation in Huntersville NC. Custom seamless gutters, gutter guards, and repairs. Protect your home from water damage.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-huntersville-nc`,
   },

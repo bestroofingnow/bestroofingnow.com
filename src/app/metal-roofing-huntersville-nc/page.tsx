@@ -33,7 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Huntersville NC',
   description:
-    'Looking for metal roofing in Huntersville NC? Best Roofing Now specializes in standing seam metal roofs, metal shingles, and metal roof repairs. BBB A+ rated, veteran-owned. Free estimates!',
+    'Looking for metal roofing in Huntersville NC? Best Roofing Now specializes in standing seam metal roofs, metal shingles, and metal roof repairs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-huntersville-nc`,
   },

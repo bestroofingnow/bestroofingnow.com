@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Lake Norman NC | Seamless Gutters & Guards',
   description:
-    'Professional gutter installation across Lake Norman NC. Seamless aluminum gutters, gutter guards, and repairs for lakefront homes in Cornelius, Davidson, Mooresville, Huntersville & Denver. Free estimates!',
+    'Professional gutter installation across Lake Norman NC. Seamless aluminum gutters, gutter guards, and repairs for lakefront homes in Cornelius, Davidson.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-lake-norman-nc`,
   },

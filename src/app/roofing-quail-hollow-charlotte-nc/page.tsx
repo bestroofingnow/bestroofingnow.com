@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Quail Hollow Charlotte NC',
   description:
-    'Trusted roofer in Quail Hollow Charlotte NC. Premium roofing for golf estates with slate, tile, and designer shingles. BBB A+ rated, veteran-owned. Free estimates.',
+    'Trusted roofer in Quail Hollow Charlotte NC. Premium roofing for golf estates with slate, tile, and designer shingles. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-quail-hollow-charlotte-nc`,
   },

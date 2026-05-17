@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   // "Solar Roofing Charlotte NC" causing cannibalism — fixed.
   title: 'Solar Roofing Services: Integration, Installation & Repair',
   description:
-    'Solar roofing services — solar-ready roof installations, panel integration, repairs for solar systems, and solar-compatible material selection. GAF certified, serving the Carolinas.',
+    'Solar roofing services — solar-ready roof installations, panel integration, repairs for solar systems, and solar-compatible material selection.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/solar-services`,
   },

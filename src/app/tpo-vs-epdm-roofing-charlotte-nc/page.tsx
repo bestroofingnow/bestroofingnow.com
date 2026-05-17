@@ -35,7 +35,7 @@ import { EstimateButton } from '@/components/estimate';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'TPO vs EPDM Roofing Charlotte NC | Commercial Roof Comparison',
+  title: 'TPO vs EPDM Roofing Charlotte | Commercial Roof Comparison',
   description:
     'TPO vs EPDM commercial roofing in Charlotte NC: Cost, durability, energy efficiency compared. Which single-ply membrane is best for your building?',
   alternates: {

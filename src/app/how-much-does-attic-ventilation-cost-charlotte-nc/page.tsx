@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Much Does Attic Ventilation Cost in Charlotte NC?',
   description:
-    "Charlotte NC attic ventilation cost: ridge vent $400-900, soffit $300-800, balanced ridge+soffit $800-2,500, power vent $400-1,200, whole-house fan $1,200-3,500. NC code compliant.",
+    "Charlotte NC attic ventilation cost: ridge vent $400-900, soffit $300-800, balanced ridge+soffit $800-2,500, power vent $400-1,200.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Much Does Attic Ventilation Cost in Charlotte NC?',

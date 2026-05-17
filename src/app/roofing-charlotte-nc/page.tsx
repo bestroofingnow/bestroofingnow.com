@@ -42,7 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Charlotte NC | #1 Rated 2026',
   description:
-    'Roofing Charlotte NC -- #1 rated roofing company with 5.0 Google rating, BBB A+, veteran-owned. 500+ roofs completed in 2026. Roof replacement, repair & storm damage. Free estimates! (704) 605-6047.',
+    'Roofing Charlotte NC -- #1 rated roofing company with 5.0 Google rating, BBB A+, veteran-owned. 500+ roofs completed in 2026.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-charlotte-nc`,
   },

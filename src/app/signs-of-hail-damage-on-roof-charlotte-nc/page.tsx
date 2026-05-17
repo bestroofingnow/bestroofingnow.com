@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Are the Signs of Hail Damage on a Roof in Charlotte NC?',
   description:
-    "8 signs of hail damage on Charlotte NC roofs: bruises, granule loss, exposed mat, cracked shingles, dented soft metal, test-square hits, damaged flashing, collateral damage. Free Xactimate-format inspection.",
+    "8 signs of hail damage on Charlotte NC roofs: bruises, granule loss, exposed mat, cracked shingles, dented soft metal, test-square hits, damaged flashing.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Are the Signs of Hail Damage on a Roof in Charlotte NC?',

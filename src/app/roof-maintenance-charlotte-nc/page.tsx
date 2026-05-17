@@ -33,7 +33,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Maintenance Charlotte NC',
   description:
-    'Professional roof maintenance programs in Charlotte NC. Annual inspections, preventive repairs, and maintenance plans to extend your roof life. BBB A+ rated, veteran-owned company.',
+    'Professional roof maintenance programs in Charlotte NC. Annual inspections, preventive repairs, and maintenance plans to extend your roof life.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance-charlotte-nc`,
   },

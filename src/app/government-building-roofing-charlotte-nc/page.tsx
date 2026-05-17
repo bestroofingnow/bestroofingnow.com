@@ -44,7 +44,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Government Roofing Charlotte NC',
   description:
-    'Expert government building roofing contractors in Charlotte NC serving Mecklenburg County facilities, City of Charlotte buildings, federal complexes & public works. Procurement compliant. Licensed & insured. Free estimates.',
+    'Expert government building roofing contractors in Charlotte NC serving Mecklenburg County facilities, City of Charlotte buildings.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/government-building-roofing-charlotte-nc`,
   },

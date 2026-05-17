@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is TPO Seam Welding and Why Does It Matter for Commercial Roofs?',
   description:
-    "TPO seam welding = hot-air fusion (1,000-1,200°F) creating monolithic waterproof membrane. Charlotte NC commercial #1 install quality factor for 20-30 yr lifespan. Probe-tested.",
+    "TPO seam welding = hot-air fusion (1,000-1,200°F) creating monolithic waterproof membrane.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is TPO Seam Welding and Why Does It Matter for Commercial Roofs?',

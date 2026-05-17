@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Prepare My Home for Reroofing in Charlotte NC?',
   description:
-    "Charlotte NC reroof prep checklist: 10 items (vehicles, dumpster, attic items, wall hangings, neighbors, pets, AC, landscape, walkthrough). 3-5 day project, minimal disruption.",
+    "Charlotte NC reroof prep checklist: 10 items (vehicles, dumpster, attic items, wall hangings, neighbors, pets, AC, landscape, walkthrough).",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Prepare My Home for Reroofing in Charlotte NC?',

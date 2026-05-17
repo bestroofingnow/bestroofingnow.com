@@ -50,7 +50,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Complete Guide to Roofing Costs in Charlotte NC (2026)',
   description:
-    'Comprehensive 2026 roofing cost guide for Charlotte NC. Roof replacement $8,000-$15,000, metal roofing $12-18/sqft, roof repair $250-$4,500, gutter installation $600-$2,400, siding $5-15/sqft. Free estimates from BBB A+ rated contractor.',
+    'Comprehensive 2026 roofing cost guide for Charlotte NC. Roof replacement $8,000-$15,000, metal roofing $12-18/sqft, roof repair $250-$4,500.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-costs-2026`,
   },

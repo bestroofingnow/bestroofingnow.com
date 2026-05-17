@@ -51,9 +51,9 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is an NDL Warranty on a Commercial Roof in Charlotte NC?',
+  title: 'What Is an NDL Warranty on a Commercial Roof in Charlotte?',
   description:
-    "NDL (No Dollar Limit) warranty: manufacturer covers 100% of warranted commercial roof defect costs over 15-30 yr term, no aggregate cap. Required for SBA loans and most insurance.",
+    "NDL (No Dollar Limit) warranty: manufacturer covers 100% of warranted commercial roof defect costs over 15-30 yr term, no aggregate cap.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is an NDL Warranty on a Commercial Roof in Charlotte NC?',

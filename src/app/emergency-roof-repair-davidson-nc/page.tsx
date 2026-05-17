@@ -34,7 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Davidson NC',
   description:
-    '24/7 emergency roof repair in Davidson NC. Fast response for storm damage, active leaks, and fallen trees. BBB A+ rated, veteran-owned. Call (704) 605-6047.',
+    '24/7 emergency roof repair in Davidson NC. Fast response for storm damage, active leaks, and fallen trees. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-davidson-nc`,
   },

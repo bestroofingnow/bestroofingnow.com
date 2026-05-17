@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: 'Seasonal Roofing Services | Charlotte NC Year-Round',
   description:
-    'Spring hail/storm inspections, summer re-roof and heat prep, fall gutter/winter prep, winter ice and emergency service for Charlotte NC and Lake Norman. Free estimates.',
+    'Spring hail/storm inspections, summer re-roof and heat prep, fall gutter/winter prep, winter ice and emergency service for Charlotte NC and Lake Norman.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/seasonal`,
   },

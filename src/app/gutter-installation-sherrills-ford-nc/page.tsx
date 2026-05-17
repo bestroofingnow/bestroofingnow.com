@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Sherrills Ford',
   description:
-    'Need gutter installation in Sherrills Ford NC? Best Roofing Now installs seamless gutters, gutter guards, and downspouts for Lake Norman homes. Protect your foundation from water damage. BBB A+ rated, veteran-owned. Free estimates!',
+    'Need gutter installation in Sherrills Ford NC? Best Roofing Now installs seamless gutters, gutter guards, and downspouts for Lake Norman homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-sherrills-ford-nc`,
   },

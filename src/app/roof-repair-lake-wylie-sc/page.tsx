@@ -35,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Lake Wylie SC | Fast, Affordable',
   description:
-    'Fast, affordable roof repair in Lake Wylie SC. Emergency leak repair, storm damage, shingle replacement. BBB A+ rated, veteran-owned. Same-day service available. Call (704) 605-6047 for a free estimate.',
+    'Fast, affordable roof repair in Lake Wylie SC. Emergency leak repair, storm damage, shingle replacement. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-lake-wylie-sc`,
   },

@@ -42,7 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Industrial Roofing Charlotte NC',
   description:
-    'Expert industrial roofing contractors in Charlotte NC specializing in warehouses, factories, manufacturing plants & distribution centers. TPO, EPDM, metal roofing systems. Licensed & insured. Free estimates.',
+    'Expert industrial roofing contractors in Charlotte NC specializing in warehouses, factories, manufacturing plants & distribution centers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/industrial-roofing-charlotte-nc`,
   },

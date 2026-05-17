@@ -17,7 +17,7 @@ import { EstimateButton } from '@/components/estimate';
 export const metadata: Metadata = {
   title: 'Roofing Shingle Products | GAF, CertainTeed, Owens Corning',
   description:
-    'Compare shingle products from GAF, CertainTeed, Owens Corning, Malarkey, and Atlas. Wind ratings, warranties, Class 4 impact options, and 2026 price ranges for Charlotte roofs.',
+    'Compare shingle products from GAF, CertainTeed, Owens Corning, Malarkey, and Atlas.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/products`,
   },

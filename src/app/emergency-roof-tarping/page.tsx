@@ -36,7 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Emergency Roof Tarping Charlotte NC | 24/7 Response',
   description:
-    '24/7 emergency roof tarping in Charlotte NC — 2-4 hour response, heavy-duty tarps with 2x4 battens, insurance claim documentation. Loss mitigation covered by most policies.',
+    '24/7 emergency roof tarping in Charlotte NC — 2-4 hour response, heavy-duty tarps with 2x4 battens, insurance claim documentation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-tarping`,
   },

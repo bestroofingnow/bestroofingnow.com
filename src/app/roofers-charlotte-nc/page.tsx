@@ -45,7 +45,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofers Charlotte NC | 5-Star Rated | BBB A+',
   description:
-    'Need trusted roofers in Charlotte NC? Best Roofing Now is 5-star rated with 62+ Google reviews, BBB A+ accredited, veteran-owned. Licensed NC roofers with 500+ roofs completed. FREE estimates! Call (704) 605-6047.',
+    'Need trusted roofers in Charlotte NC? Best Roofing Now is 5-star rated with 62+ Google reviews, BBB A+ accredited, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-charlotte-nc`,
   },

@@ -27,9 +27,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Cost FAQ | 25 Pricing Questions Answered | Charlotte NC 2026',
+  title: 'Roofing Cost FAQ | 25 Pricing Questions Answered',
   description:
-    'How much does a roof cost in Charlotte NC? Get 25 detailed roofing cost answers with 2026 pricing for roof replacement ($8,000-$15,000), metal roofing ($12-18/sqft), repairs ($250-$4,500), and more. Free estimates from Best Roofing Now.',
+    'How much does a roof cost in Charlotte NC? Get 25 detailed roofing cost answers with 2026 pricing for roof replacement ($8,000-$15,000).',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-costs-faq`,
   },

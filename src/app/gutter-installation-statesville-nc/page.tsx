@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Statesville NC',
   description:
-    'Need gutter installation in Statesville NC? Best Roofing Now installs seamless gutters, gutter guards, and downspout systems in Iredell County. BBB A+ rated, veteran-owned. Free estimates!',
+    'Need gutter installation in Statesville NC? Best Roofing Now installs seamless gutters, gutter guards, and downspout systems in Iredell County.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-statesville-nc`,
   },

@@ -53,7 +53,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'New Roof Install Charlotte NC',
   description:
-    'New roof installation in Charlotte NC for first-time builds and new construction. Complete roofing system installation from the decking up. Shingle, metal, and tile options. BBB A+ rated, veteran-owned. Free estimates!',
+    'New roof installation in Charlotte NC for first-time builds and new construction. Complete roofing system installation from the decking up.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/new-roof-installation-charlotte-nc`,
   },

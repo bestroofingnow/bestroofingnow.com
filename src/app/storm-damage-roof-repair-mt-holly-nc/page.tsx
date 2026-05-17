@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Mt Holly NC',
   description:
-    'Storm damage to your Mt Holly roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned. Call now for fast help!',
+    'Storm damage to your Mt Holly roof? Best Roofing Now provides 24/7 emergency repairs and insurance claim assistance. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-mt-holly-nc`,
   },

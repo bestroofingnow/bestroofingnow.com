@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Emergency Tarp Service Charlotte',
   description:
-    'Emergency roof tarp service in Charlotte NC. 24/7 storm response for damaged roofs. Fast tarping to prevent water damage. Call Best Roofing Now for immediate help!',
+    'Emergency roof tarp service in Charlotte NC. 24/7 storm response for damaged roofs. Fast tarping to prevent water damage.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-tarp-service-charlotte-nc`,
   },

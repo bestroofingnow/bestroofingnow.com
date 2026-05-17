@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Hail Damage Roof Repair Charlotte',
   description:
-    'Hail damage roof repair in Charlotte NC. Best Roofing Now specializes in hail storm damage assessment, insurance claims assistance, and professional repairs. BBB A+ rated, licensed & insured. Free inspections after any storm.',
+    'Hail damage roof repair in Charlotte NC. Best Roofing Now specializes in hail storm damage assessment, insurance claims assistance.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hail-damage-roof-repair-charlotte-nc`,
   },

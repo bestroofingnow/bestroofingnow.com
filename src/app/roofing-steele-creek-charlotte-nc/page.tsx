@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Steele Creek Charlotte NC',
   description:
-    'Professional roofing services for Steele Creek Charlotte NC. Specializing in newer subdivisions, family homes, and growing communities. BBB A+ rated, veteran-owned. Free estimates.',
+    'Professional roofing services for Steele Creek Charlotte NC. Specializing in newer subdivisions, family homes, and growing communities.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-steele-creek-charlotte-nc`,
   },

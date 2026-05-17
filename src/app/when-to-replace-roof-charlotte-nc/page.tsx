@@ -50,7 +50,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'When to Replace Your Roof Charlotte NC | 10 Warning Signs (2026)',
   description:
-    'How to know when your roof needs replacing in Charlotte NC. 10 warning signs, material lifespan guide, seasonal timing, replacement costs, and what to expect during the process. Free inspections from BBB A+ rated contractor.',
+    'How to know when your roof needs replacing in Charlotte NC. 10 warning signs, material lifespan guide, seasonal timing, replacement costs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/when-to-replace-roof-charlotte-nc`,
   },

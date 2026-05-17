@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Sherrills Ford NC',
   description:
-    'Need roof repair in Sherrills Ford NC? Best Roofing Now provides fast, reliable roof repairs for Lake Norman waterfront homes and Catawba County properties. BBB A+ rated, veteran-owned. Emergency leak repair, storm damage, and shingle fixes. Free estimates!',
+    'Need roof repair in Sherrills Ford NC? Best Roofing Now provides fast, reliable roof repairs for Lake Norman waterfront homes and Catawba County…',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-sherrills-ford-nc`,
   },

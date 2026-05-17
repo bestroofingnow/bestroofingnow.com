@@ -41,7 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Charlotte NC',
   description:
-    'Storm damage roof repair Charlotte NC -- 24/7 emergency response for hail, wind & hurricane damage. Insurance claim experts who meet adjusters on-site. 2026 storm season ready. Free inspection!',
+    'Storm damage roof repair Charlotte NC -- 24/7 emergency response for hail, wind & hurricane damage. Insurance claim experts who meet adjusters on-site.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-charlotte-nc`,
   },

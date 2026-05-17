@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is an NDL Warranty and Why Is It Important for Commercial Roofs?',
   description:
-    "NDL (No Dollar Limit) warranty = strongest commercial roofing warranty. Covers material AND labor with no cost cap. 5-30 yr terms. Premium $0.50-$2/sq ft. Far exceeds upfront cost.",
+    "NDL (No Dollar Limit) warranty = strongest commercial roofing warranty. Covers material AND labor with no cost cap. 5-30 yr terms. Premium $0.50-$2/sq ft.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is an NDL Warranty and Why Is It Important for Commercial Roofs?',

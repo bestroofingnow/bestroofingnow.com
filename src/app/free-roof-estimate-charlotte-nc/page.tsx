@@ -36,7 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Free Roof Estimate Charlotte NC',
   description:
-    'Free, no-obligation roof estimate in Charlotte NC. 48-hour scheduling, 30+ photo documentation, attic check, decking probe, and detailed written estimate within 24-48 hours. BBB A+ rated.',
+    'Free, no-obligation roof estimate in Charlotte NC. 48-hour scheduling, 30+ photo documentation, attic check, decking probe.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/free-roof-estimate-charlotte-nc`,
   },

@@ -37,7 +37,7 @@ import { LKNNeighborhoodGrid } from '@/components/sections/LKNNeighborhoodGrid';
 export const metadata: Metadata = {
   title: 'Roof Repair Lake Norman NC | Same-Day Service',
   description:
-    'Expert roof repair across the Lake Norman NC area. Same-day service for leaks, storm damage, and emergency repairs in Mooresville, Cornelius, Davidson, Denver, and Huntersville. Free estimates!',
+    'Expert roof repair across the Lake Norman NC area. Same-day service for leaks, storm damage, and emergency repairs in Mooresville, Cornelius, Davidson.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-lake-norman-nc`,
   },

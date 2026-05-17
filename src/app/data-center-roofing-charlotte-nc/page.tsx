@@ -46,7 +46,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Data Center Roofing Charlotte NC',
   description:
-    'Specialized data center roofing contractors in Charlotte NC for enterprise data centers, colocation facilities & cloud provider centers. Zero-downtime installations. Waterproofing experts. Licensed & insured. Free estimates.',
+    'Specialized data center roofing contractors in Charlotte NC for enterprise data centers, colocation facilities & cloud provider centers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/data-center-roofing-charlotte-nc`,
   },

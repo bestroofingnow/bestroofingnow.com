@@ -29,9 +29,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing Materials Comparison FAQ | 18 Questions Answered | Charlotte NC',
+  title: 'Roofing Materials Comparison FAQ | 18 Questions Answered',
   description:
-    'Compare roofing materials: metal vs shingles, GAF vs CertainTeed, best colors, and more. 18 expert answers about roofing material selection for Charlotte NC homes from Best Roofing Now.',
+    'Compare roofing materials: metal vs shingles, GAF vs CertainTeed, best colors, and more.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-materials-comparison-faq`,
   },

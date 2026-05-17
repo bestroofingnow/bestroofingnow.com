@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'TPO Roofing Charlotte NC | Commercial Flat Roof Experts',
   description:
-    'Expert TPO roofing installation in Charlotte NC. Energy-efficient TPO membrane roofing for commercial buildings. BBB A+ rated commercial roofing contractor. Free estimates.',
+    'Expert TPO roofing installation in Charlotte NC. Energy-efficient TPO membrane roofing for commercial buildings.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tpo-roofing-charlotte-nc`,
   },

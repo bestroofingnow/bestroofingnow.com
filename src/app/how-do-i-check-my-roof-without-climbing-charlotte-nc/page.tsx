@@ -51,9 +51,9 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'How Do I Check My Roof Without Climbing on It in Charlotte NC?',
+  title: 'How Do I Check My Roof Without Climbing on It in Charlotte?',
   description:
-    "Safely check Charlotte NC roof without climbing: ground-level binoculars, attic flashlight inspection, ceiling stain check, gutter granule check, drone for spot-checks. Free pro inspection.",
+    "Safely check Charlotte NC roof without climbing: ground-level binoculars, attic flashlight inspection, ceiling stain check, gutter granule check.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Check My Roof Without Climbing on It in Charlotte NC?',

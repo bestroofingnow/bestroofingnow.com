@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Hurricane Roof Prep Guide Charlotte NC',
   description:
-    'Prepare your Charlotte roof for hurricane season. Inspection checklist, reinforcement options, insurance tips, and what to do before, during, and after the storm.',
+    'Prepare your Charlotte roof for hurricane season. Inspection checklist, reinforcement options, insurance tips, and what to do before, during.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hurricane-roof-preparation-guide-charlotte-nc`,
   },

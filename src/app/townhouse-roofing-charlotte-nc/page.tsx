@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Townhouse Roofing Charlotte NC',
   description:
-    'Expert townhouse roofing services in Charlotte NC. HOA compliant installations, shared roof specialists, and townhome roof repair. BBB A+ rated, veteran-owned. Free estimates.',
+    'Expert townhouse roofing services in Charlotte NC. HOA compliant installations, shared roof specialists, and townhome roof repair.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/townhouse-roofing-charlotte-nc`,
   },

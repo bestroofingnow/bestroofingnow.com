@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Military & Veteran Roofing Discount Charlotte NC',
   description:
-    "Military and veteran roofing discount in Charlotte NC. 5-10% off for active duty, retirees, dependents, Gold Star families. VA loan and FHA/VA refinance roof certifications. Veteran-owned by Best Roofing Now.",
+    "Military and veteran roofing discount in Charlotte NC. 5-10% off for active duty, retirees, dependents, Gold Star families.",
   alternates: {
     canonical: `${SITE_CONFIG.url}/military-veteran-roofing-discount-charlotte-nc`,
   },

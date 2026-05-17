@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Pineville NC | Top Rated',
   description:
-    'Looking for a trusted roofing company in Pineville NC? Best Roofing Now serves the Carolina Place area from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
+    'Looking for a trusted roofing company in Pineville NC? Best Roofing Now serves the Carolina Place area from our Charlotte headquarters.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-pineville-nc`,
   },

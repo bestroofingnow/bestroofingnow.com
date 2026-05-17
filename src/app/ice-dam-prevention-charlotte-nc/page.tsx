@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Ice Dam Prevention Charlotte NC',
   description:
-    'Expert ice dam prevention services in Charlotte NC. Protect your roof from winter damage with proper ventilation, insulation, and ice barriers. BBB A+ rated, veteran-owned. Free inspections.',
+    'Expert ice dam prevention services in Charlotte NC. Protect your roof from winter damage with proper ventilation, insulation, and ice barriers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/ice-dam-prevention-charlotte-nc`,
   },

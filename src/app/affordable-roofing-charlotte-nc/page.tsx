@@ -44,7 +44,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Affordable Roofing Charlotte NC | 2026',
   description:
-    'Affordable roofing Charlotte NC -- quality roofs from $3.50/sq ft with flexible financing. Budget-friendly options, no hidden fees. BBB A+, veteran-owned. Free estimates 2026!',
+    'Affordable roofing Charlotte NC -- quality roofs from $3.50/sq ft with flexible financing. Budget-friendly options, no hidden fees. BBB A+, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/affordable-roofing-charlotte-nc`,
   },

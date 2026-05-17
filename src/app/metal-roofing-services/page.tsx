@@ -36,7 +36,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Metal Roofing Installation Services Charlotte NC | Contractor You Can Trust',
   description:
-    'Professional metal roofing installation services in Charlotte NC. Hire a trusted contractor for standing seam, metal shingles, and corrugated panel installation. 50+ year lifespan, energy efficient. GAF certified. Free estimates!',
+    'Professional metal roofing installation services in Charlotte NC. Hire a trusted contractor for standing seam, metal shingles.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-services`,
   },

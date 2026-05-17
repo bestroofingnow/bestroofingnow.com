@@ -35,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Fort Mill SC',
   description:
-    'Expert commercial roofing in Fort Mill SC. TPO, EPDM, flat roofs, metal roofing for Kingsley, Baxter Village & I-77 businesses. BBB A+ rated, veteran-owned. Free estimates!',
+    'Expert commercial roofing in Fort Mill SC. TPO, EPDM, flat roofs, metal roofing for Kingsley, Baxter Village & I-77 businesses.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-fort-mill-sc`,
   },

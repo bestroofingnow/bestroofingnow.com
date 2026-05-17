@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Do I Need a Permit to Replace My Roof in Charlotte NC?',
   description:
-    "Do I need a roof permit in Charlotte NC? Yes — Mecklenburg County requires permits for all reroofs ($100-$300, 1-3 day turnaround). Contractor pulls the permit, never the homeowner. Best Roofing Now handles all permits.",
+    "Do I need a roof permit in Charlotte NC? Yes — Mecklenburg County requires permits for all reroofs ($100-$300, 1-3 day turnaround).",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Do I Need a Permit to Replace My Roof in Charlotte NC?',

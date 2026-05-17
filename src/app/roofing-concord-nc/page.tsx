@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Concord NC | Top Rated',
   description:
-    'Looking for a trusted roofing company in Concord NC? Best Roofing Now serves Cabarrus County from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair and replacement near Charlotte Motor Speedway.',
+    'Looking for a trusted roofing company in Concord NC? Best Roofing Now serves Cabarrus County from our Charlotte headquarters. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-concord-nc`,
   },

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   // cannibalizing the pillar or the brand pages.
   title: 'Asphalt Shingle Cost by Brand Charlotte NC (2026)',
   description:
-    'GAF vs CertainTeed vs Owens Corning vs Atlas vs Malarkey asphalt shingle cost in Charlotte NC (2026). Per-sq-ft pricing, warranty, wind rating, and installed total for a 2,000 sq ft home.',
+    'GAF vs CertainTeed vs Owens Corning vs Atlas vs Malarkey asphalt shingle cost in Charlotte NC (2026).',
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Asphalt Shingle Cost by Brand Charlotte NC (2026)',

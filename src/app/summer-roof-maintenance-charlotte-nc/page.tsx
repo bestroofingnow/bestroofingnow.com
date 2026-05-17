@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Summer Roof Maintenance Charlotte',
   description:
-    'Expert summer roof maintenance in Charlotte NC. Protect your roof from UV damage, heat stress, and summer storms. Professional inspections, ventilation upgrades, and preventive care.',
+    'Expert summer roof maintenance in Charlotte NC. Protect your roof from UV damage, heat stress, and summer storms.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/summer-roof-maintenance-charlotte-nc`,
   },

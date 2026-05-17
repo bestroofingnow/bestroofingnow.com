@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Apartment Roofing Charlotte NC | Multi-Family Experts',
   description:
-    'Expert apartment roofing services in Charlotte NC. Multi-family roofing specialists, apartment complex roof repair and replacement. Property management approved. Free estimates.',
+    'Expert apartment roofing services in Charlotte NC. Multi-family roofing specialists, apartment complex roof repair and replacement.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/apartment-roofing-charlotte-nc`,
   },

@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Office Roof: Replacement vs Coating | Charlotte NC',
   description:
-    'Is your Charlotte office building roof replacement a waste of money? Compare commercial roof coating vs full replacement. Cost analysis, ROI, and when each option makes sense.',
+    'Is your Charlotte office building roof replacement a waste of money? Compare commercial roof coating vs full replacement.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/office-building-roof-replacement-vs-coating-charlotte-nc`,
   },

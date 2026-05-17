@@ -4,7 +4,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'Privacy policy for Best Roofing Now. Learn how we collect, use, and protect your personal information when you visit our website or use our roofing services in Charlotte, NC.',
+    'Privacy policy for Best Roofing Now. Learn how we collect, use, and protect your personal information when you visit our website or use our roofing…',
   alternates: {
     canonical: `${SITE_CONFIG.url}/privacy-policy`,
   },

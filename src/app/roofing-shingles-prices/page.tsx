@@ -38,7 +38,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing Shingles Prices in Charlotte NC (2026) | Cost Per Square Foot Guide',
   description:
-    'Complete 2026 roofing shingles prices for Charlotte NC. 3-tab shingles $3-4.50/sqft, architectural $4.50-7/sqft, designer $7-13/sqft, impact-resistant $5-8/sqft. Cost by home size, brand comparison, and free estimates from a BBB A+ rated contractor.',
+    'Complete 2026 roofing shingles prices for Charlotte NC. 3-tab shingles $3-4.50/sqft, architectural $4.50-7/sqft, designer $7-13/sqft.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-shingles-prices`,
   },

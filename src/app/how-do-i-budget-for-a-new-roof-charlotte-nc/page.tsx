@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Budget for a New Roof in Charlotte NC?',
   description:
-    "Charlotte NC reroof budget: typical 30-sq home $11K-$60K. 4-step plan: estimate range, 15-20% contingency, identify funding (cash/HELOC/PowerPay/FHA), off-season timing.",
+    "Charlotte NC reroof budget: typical 30-sq home $11K-$60K. 4-step plan: estimate range, 15-20% contingency, identify funding (cash/HELOC/PowerPay/FHA).",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Budget for a New Roof in Charlotte NC?',

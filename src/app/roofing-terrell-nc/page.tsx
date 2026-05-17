@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofing Terrell NC | Lake Norman',
   description:
-    'Looking for roofing services in Terrell NC? Best Roofing Now serves Terrell and West Lake Norman from our Charlotte headquarters. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
+    'Looking for roofing services in Terrell NC? Best Roofing Now serves Terrell and West Lake Norman from our Charlotte headquarters.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-terrell-nc`,
   },

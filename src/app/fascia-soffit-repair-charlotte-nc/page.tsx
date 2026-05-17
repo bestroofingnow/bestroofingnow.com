@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Fascia & Soffit Charlotte NC',
   description:
-    'Professional fascia and soffit repair in Charlotte NC. Fix wood rot, replace damaged trim, and install aluminum fascia and soffit. BBB A+ rated, licensed contractor. Free estimates available.',
+    'Professional fascia and soffit repair in Charlotte NC. Fix wood rot, replace damaged trim, and install aluminum fascia and soffit.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/fascia-soffit-repair-charlotte-nc`,
   },

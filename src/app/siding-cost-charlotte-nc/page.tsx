@@ -29,9 +29,9 @@ import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Siding Cost Charlotte NC | 2026 Vinyl Siding Price Guide | Free Estimates',
+  title: 'Siding Cost Charlotte NC | 2026 Vinyl Siding Price Guide',
   description:
-    'How much does siding cost in Charlotte NC? Vinyl siding installation costs $5-$12 per sq ft. Average home total: $7,000-$18,000. See cost breakdowns by material, home size, and style. Free estimates.',
+    'How much does siding cost in Charlotte NC? Vinyl siding installation costs $5-$12 per sq ft. Average home total: $7,000-$18,000.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/siding-cost-charlotte-nc`,
   },

@@ -37,7 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Matthews NC',
   description:
-    'Commercial roofing in Matthews NC — TPO, EPDM, PVC, modified bitumen, metal. 30-yr NDL warranties, weekend installs, property-manager friendly. BBB A+ rated.',
+    'Commercial roofing in Matthews NC — TPO, EPDM, PVC, modified bitumen, metal. 30-yr NDL warranties, weekend installs, property-manager friendly.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-matthews-nc`,
   },

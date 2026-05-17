@@ -51,9 +51,9 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is a Drip Edge and Why Does My Charlotte NC Roof Need One?',
+  title: 'What Is a Drip Edge and Why Does My Charlotte Roof Need One?',
   description:
-    "Drip edge = L-shape metal flashing at eaves/rakes. NC IRC §R905.2.8.5 REQUIRED. Prevents fascia rot, decking water wicking, ice dam damage. Cost $1.50-$8/ft, no premium in reroof.",
+    "Drip edge = L-shape metal flashing at eaves/rakes. NC IRC §R905.2.8.5 REQUIRED. Prevents fascia rot, decking water wicking, ice dam damage.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Drip Edge and Why Does My Charlotte NC Roof Need One?',

@@ -37,7 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'VELUX Skylights Charlotte NC',
   description:
-    'VELUX skylight installation in Charlotte NC. Certified installers for solar-powered, fixed, and venting skylights with no-leak warranty. Sun Tunnel tubular skylights. Free estimates.',
+    'VELUX skylight installation in Charlotte NC. Certified installers for solar-powered, fixed, and venting skylights with no-leak warranty.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/velux-skylights-charlotte-nc`,
   },

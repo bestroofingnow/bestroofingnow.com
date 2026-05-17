@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Much Does a Lake Norman Waterfront Roof Cost in NC?',
   description:
-    "Lake Norman waterfront roof costs 15-30% more than inland Charlotte. 40-50 sq home: architectural $15-25K, Class 4 $20-32K, aluminum standing-seam $35-70K, copper $60-150K+.",
+    "Lake Norman waterfront roof costs 15-30% more than inland Charlotte. 40-50 sq home: architectural $15-25K, Class 4 $20-32K, aluminum standing-seam $35-70K.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Much Does a Lake Norman Waterfront Roof Cost in NC?',

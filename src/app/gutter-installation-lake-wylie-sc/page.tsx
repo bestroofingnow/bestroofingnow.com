@@ -31,7 +31,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Installation Lake Wylie SC | Seamless Gutters & Guards',
   description:
-    'Professional gutter installation in Lake Wylie SC. Custom seamless gutters, gutter guards, and repairs for waterfront homes. Heavy rainfall management & erosion prevention. Free estimates!',
+    'Professional gutter installation in Lake Wylie SC. Custom seamless gutters, gutter guards, and repairs for waterfront homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-lake-wylie-sc`,
   },

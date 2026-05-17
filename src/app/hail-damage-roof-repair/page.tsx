@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   // service area; the -charlotte-nc variant keeps the city-specific transactional focus.
   title: 'Hail Damage Roof Repair Near Me | Insurance Claim Experts',
   description:
-    'Hail damage roof repair near you across the Charlotte metro, Lake Norman, and Carolinas service area. Free inspection, full insurance claim support, Xactimate estimates, Class 4 impact upgrades.',
+    'Hail damage roof repair near you across the Charlotte metro, Lake Norman, and Carolinas service area.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hail-damage-roof-repair`,
   },

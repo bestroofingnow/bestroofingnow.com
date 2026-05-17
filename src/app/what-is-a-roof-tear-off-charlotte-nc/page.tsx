@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Roof Tear-Off and Why Is It Better Than Overlay in Charlotte NC?',
   description:
-    "Roof tear-off = remove all existing roofing to bare decking. NC IRC §R908.3 limits 2 layers max. Tear-off cost $75-$150/sq. Overlay loses warranty + 5-10 yr lifespan. Always tear-off.",
+    "Roof tear-off = remove all existing roofing to bare decking. NC IRC §R908.3 limits 2 layers max. Tear-off cost $75-$150/sq.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Roof Tear-Off and Why Is It Better Than Overlay in Charlotte NC?',

@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Siding Lake Norman NC',
   description:
-    'Professional siding installation for Lake Norman NC waterfront homes. Vinyl siding, James Hardie fiber cement, LP SmartSide engineered wood. Moisture-resistant siding built for lakefront living. Veteran-owned, BBB A+ rated. Free estimates.',
+    'Professional siding installation for Lake Norman NC waterfront homes. Vinyl siding, James Hardie fiber cement, LP SmartSide engineered wood.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/siding-installation-lake-norman-nc`,
   },

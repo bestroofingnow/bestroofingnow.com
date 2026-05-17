@@ -36,7 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Standing Seam Metal Roofing Charlotte',
   description:
-    'Premium standing seam metal roofing in Charlotte NC — 22/24/26 gauge steel, aluminum, zinc, copper. Kynar 500/Hylar 5000 PVDF finish, 40-50 year warranties, solar-ready.',
+    'Premium standing seam metal roofing in Charlotte NC — 22/24/26 gauge steel, aluminum, zinc, copper.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/standing-seam-metal-roofing`,
   },

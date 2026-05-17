@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is Roof Starter Strip and Why Does It Matter for My Charlotte NC Reroof?',
   description:
-    "Starter strip = first shingle row at eaves/rakes with factory adhesive. Required by NC IRC §R905.2.5 and all manufacturer warranties. GAF Pro-Start, CertainTeed SwiftStart, OC ProEdge.",
+    "Starter strip = first shingle row at eaves/rakes with factory adhesive. Required by NC IRC §R905.2.5 and all manufacturer warranties.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Starter Strip and Why Does It Matter for My Charlotte NC Reroof?',

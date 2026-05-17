@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is the Lake Norman HOA Roof Approval Process in NC?',
   description:
-    "Lake Norman NC HOA roof approval: 7-step process including ARB packet, FirstService/CAMS/AMG/RealManage submission, 2-4 week review (4-6 weeks for premier estates).",
+    "Lake Norman NC HOA roof approval: 7-step process including ARB packet, FirstService/CAMS/AMG/RealManage submission.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is the Lake Norman HOA Roof Approval Process in NC?',

@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Statesville NC',
   description:
-    'Free roof inspection in Statesville NC. Best Roofing Now provides comprehensive roof inspections with detailed photo reports for Iredell County homes. BBB A+ rated, veteran-owned. Schedule your free inspection today!',
+    'Free roof inspection in Statesville NC. Best Roofing Now provides comprehensive roof inspections with detailed photo reports for Iredell County homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-statesville-nc`,
   },

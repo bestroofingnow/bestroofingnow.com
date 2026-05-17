@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Insurance Claim Roofing Charlotte',
   description:
-    'Expert insurance claim roofing in Charlotte NC. We handle your roof insurance claim from start to finish - free inspections, adjuster meetings, documentation, and repairs. BBB A+ rated.',
+    'Expert insurance claim roofing in Charlotte NC. We handle your roof insurance claim from start to finish - free inspections, adjuster meetings.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/insurance-claim-roofing-charlotte-nc`,
   },

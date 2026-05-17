@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Sagging Roof Repair Charlotte NC',
   description:
-    'Expert sagging roof repair in Charlotte NC. Water damage, structural issues, age-related sag - we fix it all. Licensed structural roofing experts. BBB A+ rated, veteran-owned. Free inspections.',
+    'Expert sagging roof repair in Charlotte NC. Water damage, structural issues, age-related sag - we fix it all. Licensed structural roofing experts.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/sagging-roof-repair-charlotte-nc`,
   },

@@ -44,7 +44,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Flat Roof Coating Charlotte NC',
   description:
-    'Professional flat roof coating services in Charlotte NC. Silicone, acrylic & elastomeric roof coatings that extend roof life 15-20 years at 50-70% less than replacement. Free infrared moisture scans. Licensed & insured.',
+    'Professional flat roof coating services in Charlotte NC. Silicone, acrylic & elastomeric roof coatings that extend roof life 15-20 years at 50-70% less…',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-coating-charlotte-nc`,
   },

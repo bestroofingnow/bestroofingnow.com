@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Tile Roofing Charlotte NC',
   description:
-    'Professional tile roofing installation in Charlotte NC. Clay tiles, concrete tiles, Mediterranean styles. Durable, beautiful, and long-lasting. BBB A+ rated, veteran-owned company.',
+    'Professional tile roofing installation in Charlotte NC. Clay tiles, concrete tiles, Mediterranean styles. Durable, beautiful, and long-lasting.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/tile-roofing-charlotte-nc`,
   },

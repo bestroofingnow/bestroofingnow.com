@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: 'Roofing Materials Guide | Charlotte NC & Lake Norman',
   description:
-    'Compare asphalt, metal, tile, slate, cedar shake, synthetic, and flat-roof materials for Charlotte NC homes. Lifespan, cost per square foot, Piedmont climate suitability.',
+    'Compare asphalt, metal, tile, slate, cedar shake, synthetic, and flat-roof materials for Charlotte NC homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/materials`,
   },

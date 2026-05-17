@@ -28,9 +28,9 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 import { LKNPartnershipsBlock } from '@/components/sections/LKNPartnershipsBlock';
 import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
-  title: 'Roof Replacement Huntersville NC | Lake Norman | Free Estimates',
+  title: 'Roof Replacement Huntersville NC | Lake Norman',
   description:
-    'Expert roof replacement in Huntersville NC. Serving Birkdale, Skybrook & Lake Norman area. GAF & CertainTeed certified. Financing available. Free estimates from BBB A+ rated contractor.',
+    'Expert roof replacement in Huntersville NC. Serving Birkdale, Skybrook & Lake Norman area. GAF & CertainTeed certified. Financing available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-huntersville-nc`,
   },

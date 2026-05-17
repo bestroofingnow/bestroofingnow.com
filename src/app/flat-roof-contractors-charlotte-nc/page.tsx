@@ -37,7 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Flat Roof Contractors Charlotte',
   description:
-    'Hire the best flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC, and modified bitumen. Find a trusted flat roof contractor for your commercial or residential project. BBB A+ rated. Free estimates.',
+    'Hire the best flat roof contractors in Charlotte NC. Licensed & insured specialists in TPO, EPDM, PVC, and modified bitumen.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-contractors-charlotte-nc`,
   },

@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Inspection Charlotte NC | Free',
   description:
-    'Schedule your FREE roof inspection in Charlotte NC today. Comprehensive inspections include drone technology, detailed reports, and expert recommendations. No obligation. Call (704) 605-6047.',
+    'Schedule your FREE roof inspection in Charlotte NC today. Comprehensive inspections include drone technology, detailed reports, and expert recommendations.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-charlotte-nc`,
   },

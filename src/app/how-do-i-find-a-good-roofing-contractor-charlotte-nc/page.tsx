@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Find a Good Roofing Contractor in Charlotte NC?',
   description:
-    "Find good Charlotte NC roofer: 8-step verification (NC license, $2M+ insurance, BBB A+, manufacturer top-tier creds, written estimates, no pressure, reject deductible-rebating).",
+    "Find good Charlotte NC roofer: 8-step verification (NC license, $2M+ insurance, BBB A+, manufacturer top-tier creds, written estimates, no pressure.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Find a Good Roofing Contractor in Charlotte NC?',

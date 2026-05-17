@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Does a New Roof Increase Home Value in Charlotte NC?',
   description:
-    "Yes — new roof adds $12-15K Charlotte home value (2024 Cost vs Value), 60-95% ROI by material, 10-15 fewer days on market, FHA/VA approval, full RCV insurance coverage.",
+    "Yes — new roof adds $12-15K Charlotte home value (2024 Cost vs Value), 60-95% ROI by material, 10-15 fewer days on market, FHA/VA approval.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Does a New Roof Increase Home Value in Charlotte NC?',

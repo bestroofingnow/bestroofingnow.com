@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   // roofing options that we cannot edit.
   title: 'Energy-Efficient Roofing Charlotte NC | 2026 Guide',
   description:
-    'Energy-efficient roofing in Charlotte NC: cool-roof shingles, metal, attic ventilation, R-49 insulation, solar integration. Save $200–$650/yr on AC. Free estimate.',
+    'Energy-efficient roofing in Charlotte NC: cool-roof shingles, metal, attic ventilation, R-49 insulation, solar integration. Save $200–$650/yr on AC.',
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Energy-Efficient Roofing Charlotte NC | 2026 Guide',

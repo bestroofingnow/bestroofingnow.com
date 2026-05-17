@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Warehouse Roofing Charlotte NC',
   description:
-    'Expert warehouse roofing contractors in Charlotte NC. Specializing in flat roofs for warehouses, distribution centers, and logistics facilities. TPO, EPDM, and metal roofing systems. Minimal business disruption guaranteed. Free estimates.',
+    'Expert warehouse roofing contractors in Charlotte NC. Specializing in flat roofs for warehouses, distribution centers, and logistics facilities.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/warehouse-roofing-charlotte-nc`,
   },

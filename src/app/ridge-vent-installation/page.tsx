@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   // and code. Local conversion variant: /ridge-vent-installation-charlotte-nc.
   title: 'Ridge Vent Installation: Types, Sizing & IRC R806 Code Guide',
   description:
-    'Ridge vent installation in Charlotte NC — external baffle shingle-over design, balanced 1:300 ventilation to NC code IRC R806, paired with matched soffit intake. Free estimates.',
+    'Ridge vent installation in Charlotte NC — external baffle shingle-over design, balanced 1:300 ventilation to NC code IRC R806.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/ridge-vent-installation`,
   },

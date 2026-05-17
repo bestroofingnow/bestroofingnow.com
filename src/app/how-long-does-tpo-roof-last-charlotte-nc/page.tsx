@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Long Does a TPO Roof Last in Charlotte NC?',
   description:
-    "TPO commercial roof lifespan in Charlotte NC: 60-mil mechanically attached 20-25 yr, fully adhered 25-30 yr, 80-mil with R-30 25-30 yr. NDL warranties 15-30 yr. Coating extends 10-15 yr.",
+    "TPO commercial roof lifespan in Charlotte NC: 60-mil mechanically attached 20-25 yr, fully adhered 25-30 yr, 80-mil with R-30 25-30 yr.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Long Does a TPO Roof Last in Charlotte NC?',

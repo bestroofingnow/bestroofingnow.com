@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Public Adjuster and Do I Need One for My Charlotte NC Insurance Claim?',
   description:
-    "Public adjuster = state-licensed pro who works for homeowner (not carrier). NC §58-33A regulated, 8-15% fee. Best for $50K+ claims. Verify license at ncdoi.gov.",
+    "Public adjuster = state-licensed pro who works for homeowner (not carrier). NC §58-33A regulated, 8-15% fee. Best for $50K+ claims.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Public Adjuster and Do I Need One for My Charlotte NC Insurance Claim?',

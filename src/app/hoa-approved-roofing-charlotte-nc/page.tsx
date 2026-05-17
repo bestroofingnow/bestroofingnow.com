@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'HOA-Approved Roofing Charlotte NC',
   description:
-    'HOA-approved roofing for Charlotte NC communities. Architectural review board (ARB) packet preparation, color/style matching, and approved-installer credentials. Ballantyne, SouthPark, Providence, Quail Hollow.',
+    'HOA-approved roofing for Charlotte NC communities. Architectural review board (ARB) packet preparation, color/style matching.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/hoa-approved-roofing-charlotte-nc`,
   },

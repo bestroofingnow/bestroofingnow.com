@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Office Building Roofing Charlotte',
   description:
-    'Expert office building roofing contractors in Charlotte NC. Specializing in high-rise towers, corporate campuses, Class A office, and multi-tenant buildings in Uptown, SouthPark & Ballantyne. Free estimates.',
+    'Expert office building roofing contractors in Charlotte NC. Specializing in high-rise towers, corporate campuses, Class A office.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/office-building-roofing-charlotte-nc`,
   },

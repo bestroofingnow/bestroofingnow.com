@@ -30,9 +30,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Roofing FAQ | 100+ Roofing Questions Answered | Charlotte NC 2026',
+  title: 'Roofing FAQ | 100+ Roofing Questions Answered',
   description:
-    'Get answers to 100+ roofing questions about costs, choosing a contractor, materials, insurance claims, maintenance, timing, and technical details. Expert answers from Charlotte NC trusted roofers at Best Roofing Now.',
+    'Get answers to 100+ roofing questions about costs, choosing a contractor, materials, insurance claims, maintenance, timing, and technical details.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-faq`,
   },

@@ -35,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: '24/7 Emergency Roof Repair Charlotte NC | Call Now',
   description:
-    'Emergency roof repair Charlotte NC with 24/7 response. Active leaks, storm damage, fallen trees - we respond fast. 1-4 hour response time. BBB A+ rated. Call (704) 605-6047 now!',
+    'Emergency roof repair Charlotte NC with 24/7 response. Active leaks, storm damage, fallen trees - we respond fast. 1-4 hour response time. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-charlotte-nc`,
   },

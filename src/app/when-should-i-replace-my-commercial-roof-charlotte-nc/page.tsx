@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'When Should I Replace My Commercial Roof in Charlotte NC?',
   description:
-    "Replace Charlotte NC commercial roof when 4+ of 8 indicators present: age, chronic leaks, saturated insulation, seam failures, expired warranty, energy loss, modifications, sale prep.",
+    "Replace Charlotte NC commercial roof when 4+ of 8 indicators present: age, chronic leaks, saturated insulation, seam failures, expired warranty.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'When Should I Replace My Commercial Roof in Charlotte NC?',

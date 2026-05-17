@@ -44,7 +44,7 @@ const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersvill
 export const metadata: Metadata = {
   title: 'Roofing Lake Norman NC | #1 LKN Roofer',
   description:
-    'Roofing Lake Norman NC -- #1 rated roofer serving Cornelius, Davidson, Mooresville & Huntersville. 200+ LKN projects, veteran-owned, BBB A+. Storm damage & insurance experts. Free estimates 2026!',
+    'Roofing Lake Norman NC -- #1 rated roofer serving Cornelius, Davidson, Mooresville & Huntersville. 200+ LKN projects, veteran-owned, BBB A+.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-lake-norman-nc`,
   },

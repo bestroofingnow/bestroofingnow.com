@@ -34,7 +34,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Siding and Roofing Charlotte NC',
   description:
-    'Bundled siding and roofing replacement in Charlotte NC. Save 20-35% versus separate scopes. James Hardie HardiePlank Preferred Contractor + GAF Master Elite roofer with 30-50 yr warranties on shingles and 50 yr on Hardie.',
+    'Bundled siding and roofing replacement in Charlotte NC. Save 20-35% versus separate scopes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/siding-and-roofing-charlotte-nc`,
   },

@@ -34,7 +34,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Shingle Replacement Charlotte NC',
   description:
-    'Shingle replacement in Charlotte NC — partial slope, full slope, or complete roof. GAF Master Elite, CertainTeed SELECT, OC Platinum installer with 30-50 year non-prorated warranties. Same-day to 2-day completion typical.',
+    'Shingle replacement in Charlotte NC — partial slope, full slope, or complete roof.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/shingle-replacement-charlotte-nc`,
   },

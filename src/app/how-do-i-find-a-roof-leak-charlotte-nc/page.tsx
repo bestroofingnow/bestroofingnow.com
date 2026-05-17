@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Find a Roof Leak in My Charlotte NC Home?',
   description:
-    "Find Charlotte NC roof leak: 6-step diagnostic from interior stain to entry point. Pipe boots cause 60% of leaks. Free infrared moisture imaging inspection in 30-60 min.",
+    "Find Charlotte NC roof leak: 6-step diagnostic from interior stain to entry point. Pipe boots cause 60% of leaks.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Find a Roof Leak in My Charlotte NC Home?',

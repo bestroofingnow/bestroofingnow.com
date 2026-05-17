@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Chimney Cricket and Does My Charlotte NC Home Need One?',
   description:
-    "Chimney cricket = triangular peaked roof on uphill side of chimney. NC IRC §R1003.20 REQUIRES on chimneys >30 inches. Cost $300-$3,500. Prevents 2nd most common Charlotte leak.",
+    "Chimney cricket = triangular peaked roof on uphill side of chimney. NC IRC §R1003.20 REQUIRES on chimneys >30 inches. Cost $300-$3,500.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Chimney Cricket and Does My Charlotte NC Home Need One?',

@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roofing Uptown Charlotte NC',
   description:
-    "Commercial and condo roofing for Uptown Charlotte NC. TPO, EPDM, modified bitumen for high-rise terraces, mid-rise condos, mixed-use buildings, and Fourth Ward historic homes. NDL warranties, after-hours scheduling, building-management coordination.",
+    "Commercial and condo roofing for Uptown Charlotte NC. TPO, EPDM, modified bitumen for high-rise terraces, mid-rise condos, mixed-use buildings.",
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-uptown-charlotte-nc`,
   },

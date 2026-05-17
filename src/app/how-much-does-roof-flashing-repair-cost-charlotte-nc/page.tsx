@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Much Does Roof Flashing Repair Cost in Charlotte NC?',
   description:
-    "Roof flashing repair Charlotte NC: pipe boot $250-500, chimney flashing $400-1,200, valley $600-1,800, skylight $400-1,400, cricket $800-2,500. Most repairs same-day.",
+    "Roof flashing repair Charlotte NC: pipe boot $250-500, chimney flashing $400-1,200, valley $600-1,800, skylight $400-1,400, cricket $800-2,500.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Much Does Roof Flashing Repair Cost in Charlotte NC?',

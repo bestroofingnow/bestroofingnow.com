@@ -49,7 +49,7 @@ import { EstimateButton } from '@/components/estimate';
 export const metadata: Metadata = {
   title: 'Charlotte Roofing Handbook (2026) | Complete Homeowner Guide',
   description:
-    'The complete Charlotte homeowner roofing guide for 2026. Learn about roof anatomy, materials, repairs, replacement, costs, insurance claims, financing, and seasonal maintenance. Expert advice from certified Charlotte roofers.',
+    'The complete Charlotte homeowner roofing guide for 2026. Learn about roof anatomy, materials, repairs, replacement, costs, insurance claims, financing.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/charlotte-roofing-handbook`,
   },

@@ -30,7 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Denver NC',
   description:
-    'Premium metal roofing in Denver NC. Standing seam & corrugated for Lake Norman western shore homes. 140+ MPH wind rated. 40-70 year lifespan. Free estimates.',
+    'Premium metal roofing in Denver NC. Standing seam & corrugated for Lake Norman western shore homes. 140+ MPH wind rated. 40-70 year lifespan.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-denver-nc`,
   },

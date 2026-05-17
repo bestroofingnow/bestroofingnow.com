@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Keep Birds Off My Charlotte NC Roof?',
   description:
-    "Charlotte NC bird deterrents: spikes $8-15/ft, netting $5-12/ft, ultrasonic $30-200, gel $50-150, gap sealing. Pigeons, starlings, woodpeckers, crows. Free inspection.",
+    "Charlotte NC bird deterrents: spikes $8-15/ft, netting $5-12/ft, ultrasonic $30-200, gel $50-150, gap sealing. Pigeons, starlings, woodpeckers, crows.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Keep Birds Off My Charlotte NC Roof?',

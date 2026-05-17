@@ -36,7 +36,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Mooresville NC | 5-Star Rated',
   description:
-    'Looking for trusted roofers in Mooresville NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving the Lake Norman area. BBB A+ rated. Free estimates for all roofing services.',
+    'Looking for trusted roofers in Mooresville NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving the Lake Norman area.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-mooresville-nc`,
   },

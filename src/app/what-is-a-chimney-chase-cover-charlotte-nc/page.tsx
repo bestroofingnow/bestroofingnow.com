@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is a Chimney Chase Cover and When Does It Need Replacement?',
   description:
-    "Chimney chase cover = metal cap on framed chimney chase (post-1980 Charlotte homes). Galvanized 8-15 yr, stainless 25-50 yr, copper 50-100+ yr. Cost $200-$2,000.",
+    "Chimney chase cover = metal cap on framed chimney chase (post-1980 Charlotte homes). Galvanized 8-15 yr, stainless 25-50 yr, copper 50-100+ yr.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Chimney Chase Cover and When Does It Need Replacement?',

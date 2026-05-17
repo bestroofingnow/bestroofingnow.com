@@ -28,7 +28,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Mt Holly NC',
   description:
-    'Commercial roofing services in Mt Holly NC. Best Roofing Now installs TPO, EPDM, metal, and flat roofing systems for businesses. Licensed, insured. Free estimates!',
+    'Commercial roofing services in Mt Holly NC. Best Roofing Now installs TPO, EPDM, metal, and flat roofing systems for businesses. Licensed, insured.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-mt-holly-nc`,
   },

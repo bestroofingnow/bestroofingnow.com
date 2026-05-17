@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   // materials, and process. Local conversion variant: /chimney-flashing-repair-charlotte-nc.
   title: 'Chimney Flashing Repair: Types, Materials & Process Guide',
   description:
-    'Expert chimney flashing repair in Charlotte NC — step flashing, counter flashing, cricket/saddle install, lead/aluminum/copper specs. Historic chimney experienced.',
+    'Expert chimney flashing repair in Charlotte NC — step flashing, counter flashing, cricket/saddle install, lead/aluminum/copper specs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/chimney-flashing-repair`,
   },

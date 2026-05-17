@@ -41,7 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Manufacturing Roofing Charlotte',
   description:
-    'Expert manufacturing plant roofing contractors in Charlotte NC. Specializing in factories, processing facilities & production centers. Chemical-resistant, OSHA-compliant roofing. Licensed & insured. Free estimates.',
+    'Expert manufacturing plant roofing contractors in Charlotte NC. Specializing in factories, processing facilities & production centers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/manufacturing-plant-roofing-charlotte-nc`,
   },

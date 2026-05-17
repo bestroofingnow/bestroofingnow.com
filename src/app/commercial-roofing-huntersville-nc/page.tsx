@@ -36,7 +36,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Huntersville',
   description:
-    'Expert commercial roofing in Huntersville NC. TPO, EPDM, flat roofs, metal roofing for warehouses, offices & retail. Birkdale Village to Northcross. BBB A+ rated, veteran-owned. Free estimates!',
+    'Expert commercial roofing in Huntersville NC. TPO, EPDM, flat roofs, metal roofing for warehouses, offices & retail. Birkdale Village to Northcross.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-huntersville-nc`,
   },

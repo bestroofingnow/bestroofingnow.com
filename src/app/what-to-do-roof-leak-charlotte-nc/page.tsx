@@ -37,7 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'What to Do When You Find a Roof Leak | Charlotte NC Emergency Guide',
   description:
-    'Found a roof leak in your Charlotte home? Follow this step-by-step emergency guide. What to do first, how to minimize damage, and when to call for emergency roof repair.',
+    'Found a roof leak in your Charlotte home? Follow this step-by-step emergency guide.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/what-to-do-roof-leak-charlotte-nc`,
   },

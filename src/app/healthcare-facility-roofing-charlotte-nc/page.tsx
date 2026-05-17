@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Healthcare Roofing Charlotte NC',
   description:
-    'Expert healthcare facility roofing contractors in Charlotte NC. Specializing in hospitals, medical offices, clinics & assisted living facilities. Infection control compliant, zero-disruption installation. Free estimates.',
+    'Expert healthcare facility roofing contractors in Charlotte NC. Specializing in hospitals, medical offices, clinics & assisted living facilities.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/healthcare-facility-roofing-charlotte-nc`,
   },

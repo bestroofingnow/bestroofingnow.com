@@ -34,9 +34,9 @@ import { SITE_CONFIG } from '@/lib/constants';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Storm Damage Roof Repair Near Me | Charlotte NC | Free Inspection',
+  title: 'Storm Damage Roof Repair Near Me | Charlotte NC',
   description:
-    'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage. BBB A+ rated. Call now!',
+    'Storm damage roof repair near me in Charlotte NC. Free inspections, insurance claim help, 24/7 emergency response. Hail, wind, tree damage. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair`,
   },

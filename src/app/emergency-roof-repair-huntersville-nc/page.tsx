@@ -34,7 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Huntersville',
   description:
-    '24/7 emergency roof repair in Huntersville NC. Fast response for storm damage, active leaks, fallen trees, and urgent repairs. BBB A+ rated, veteran-owned. Call now for immediate help!',
+    '24/7 emergency roof repair in Huntersville NC. Fast response for storm damage, active leaks, fallen trees, and urgent repairs. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair-huntersville-nc`,
   },

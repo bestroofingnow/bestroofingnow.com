@@ -35,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Gastonia NC',
   description:
-    'Expert commercial roofing in Gastonia NC. TPO, EPDM, flat roofs, metal roofing for warehouses, manufacturing plants & industrial facilities. I-85 corridor specialists. BBB A+ rated. Free estimates!',
+    'Expert commercial roofing in Gastonia NC. TPO, EPDM, flat roofs, metal roofing for warehouses, manufacturing plants & industrial facilities.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-gastonia-nc`,
   },

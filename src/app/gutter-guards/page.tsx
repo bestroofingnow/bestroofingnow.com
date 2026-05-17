@@ -36,7 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Gutter Guards Charlotte NC | Micro-Mesh, Reverse Curve',
   description:
-    'Gutter guard installation in Charlotte NC — stainless micro-mesh (our default), reverse-curve, screen, foam, brush. Engineered for Charlotte oak/pine/sweetgum canopy.',
+    'Gutter guard installation in Charlotte NC — stainless micro-mesh (our default), reverse-curve, screen, foam, brush.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-guards`,
   },

@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Plaza Midwood Charlotte NC',
   description:
-    'Expert roofing services for Plaza Midwood Charlotte NC. Specializing in craftsman homes, bungalows, and historic properties. BBB A+ rated, veteran-owned. Free estimates for roof repair and replacement.',
+    'Expert roofing services for Plaza Midwood Charlotte NC. Specializing in craftsman homes, bungalows, and historic properties. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-plaza-midwood-charlotte-nc`,
   },

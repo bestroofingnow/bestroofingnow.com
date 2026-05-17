@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Repair Huntersville NC',
   description:
-    'Need roof repair in Huntersville NC? Best Roofing Now offers fast, reliable roof repair services including leak repair, storm damage, and emergency repairs. BBB A+ rated, veteran-owned. Free estimates!',
+    'Need roof repair in Huntersville NC? Best Roofing Now offers fast, reliable roof repair services including leak repair, storm damage.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-huntersville-nc`,
   },

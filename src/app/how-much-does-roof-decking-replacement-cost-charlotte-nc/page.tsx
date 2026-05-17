@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Much Does Roof Decking Replacement Cost in Charlotte NC?',
   description:
-    "Roof decking replacement in Charlotte NC: $80-$120 per 4x8 sheet during reroof. Typical 30-sq home: 0-3 sheets ($0-$360) under 25 yr; 8-20 sheets ($640-$2,400) older homes.",
+    "Roof decking replacement in Charlotte NC: $80-$120 per 4x8 sheet during reroof. Typical 30-sq home: 0-3 sheets ($0-$360) under 25 yr; 8-20 sheets…",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Much Does Roof Decking Replacement Cost in Charlotte NC?',

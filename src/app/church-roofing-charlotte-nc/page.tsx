@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Church Roofing Charlotte NC | Religious Building Experts',
   description:
-    'Expert church roofing services in Charlotte NC. Specializing in steep slopes, steeples, historic churches, and religious buildings. BBB A+ rated, veteran-owned. Free estimates.',
+    'Expert church roofing services in Charlotte NC. Specializing in steep slopes, steeples, historic churches, and religious buildings.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/church-roofing-charlotte-nc`,
   },

@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is EPDM Roof Membrane and Is It Good for Charlotte NC Commercial?',
   description:
-    "EPDM = synthetic single-ply rubber roofing membrane. 25-40 yr lifespan, $4-$10/sq ft. Charlotte NC commercial choice for parapet-walled buildings, easy repair, cost-effectiveness.",
+    "EPDM = synthetic single-ply rubber roofing membrane. 25-40 yr lifespan, $4-$10/sq ft.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is EPDM Roof Membrane and Is It Good for Charlotte NC Commercial?',

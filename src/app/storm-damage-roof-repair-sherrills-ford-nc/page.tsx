@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Storm Damage Roof Repair Sherrills Ford',
   description:
-    'Storm damage roof repair in Sherrills Ford NC. Best Roofing Now restores wind, hail, and storm-damaged roofs for Lake Norman homes. Insurance claim experts. BBB A+ rated, veteran-owned. Free storm damage inspections!',
+    'Storm damage roof repair in Sherrills Ford NC. Best Roofing Now restores wind, hail, and storm-damaged roofs for Lake Norman homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/storm-damage-roof-repair-sherrills-ford-nc`,
   },

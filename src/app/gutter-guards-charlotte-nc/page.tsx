@@ -41,7 +41,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Gutter Guards Charlotte NC',
   description:
-    'Professional gutter guard installation in Charlotte NC. Mesh, micro-mesh, screen, brush, and reverse-curve systems to prevent clogs and protect your home. Compare all gutter guard types. Free estimates from BBB A+ rated, veteran-owned company.',
+    'Professional gutter guard installation in Charlotte NC. Mesh, micro-mesh, screen, brush, and reverse-curve systems to prevent clogs and protect your home.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-guards-charlotte-nc`,
   },

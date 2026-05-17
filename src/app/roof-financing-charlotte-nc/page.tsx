@@ -42,7 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Financing Charlotte NC | 0%',
   description:
-    'Affordable roof financing in Charlotte NC with 0% interest options. Easy approval, low monthly payments, and flexible terms. Get a new roof today with payments as low as $99/month.',
+    'Affordable roof financing in Charlotte NC with 0% interest options. Easy approval, low monthly payments, and flexible terms.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-financing-charlotte-nc`,
   },

@@ -32,7 +32,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Pineville NC',
   description:
-    'Need roof repair in Pineville NC? Best Roofing Now offers fast, reliable repairs for leaks, storm damage, and shingle replacement near Carolina Place Mall. BBB A+ rated. Free estimates!',
+    'Need roof repair in Pineville NC? Best Roofing Now offers fast, reliable repairs for leaks, storm damage, and shingle replacement near Carolina Place Mall.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-pineville-nc`,
   },

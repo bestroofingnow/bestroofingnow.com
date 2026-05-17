@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: 'Roofing Guides & Resources | Charlotte NC & Lake Norman',
   description:
-    'Long-form roofing guides for Charlotte homeowners — 2026 cost ranges, replacement signs, lifespan by material, maintenance checklists, insurance claim roadmap, contractor selection.',
+    'Long-form roofing guides for Charlotte homeowners — 2026 cost ranges, replacement signs, lifespan by material, maintenance checklists.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/guides`,
   },

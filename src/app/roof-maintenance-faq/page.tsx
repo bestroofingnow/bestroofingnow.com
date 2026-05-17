@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roof Maintenance FAQ | 12 Maintenance & Repair Questions Answered | Charlotte NC',
   description:
-    'How to maintain your roof, seasonal maintenance checklists, damage signs, and when to call a pro. 12 expert maintenance FAQs for Charlotte NC homeowners from Best Roofing Now.',
+    'How to maintain your roof, seasonal maintenance checklists, damage signs, and when to call a pro.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-maintenance-faq`,
   },

@@ -31,7 +31,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Guards Lake Norman NC',
   description:
-    'Professional gutter guard installation for Lake Norman NC homes. Micro-mesh, reverse curve, and screen guards for heavy tree canopy and pine needle protection. Veteran-owned, BBB A+ rated. Free estimates for gutter guard installation.',
+    'Professional gutter guard installation for Lake Norman NC homes. Micro-mesh, reverse curve.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-guards-lake-norman-nc`,
   },

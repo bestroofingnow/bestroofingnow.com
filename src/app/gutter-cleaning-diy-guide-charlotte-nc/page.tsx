@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'DIY Gutter Cleaning Guide Charlotte NC | Safe Cleaning Tips',
   description:
-    'Step-by-step guide to safely clean your gutters in Charlotte NC. Learn when to DIY vs hire pros, essential tools, safety tips, and seasonal cleaning schedules.',
+    'Step-by-step guide to safely clean your gutters in Charlotte NC. Learn when to DIY vs hire pros, essential tools, safety tips.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-cleaning-diy-guide-charlotte-nc`,
   },

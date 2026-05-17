@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Why Does My Attic Get So Hot in Charlotte NC?',
   description:
-    "Charlotte NC attic 130-160°F summer = inadequate ventilation, missing soffit intake, dark roof, low insulation. Solutions: balanced vent $800-2,500, radiant barrier $1,500-4,000.",
+    "Charlotte NC attic 130-160°F summer = inadequate ventilation, missing soffit intake, dark roof, low insulation.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Why Does My Attic Get So Hot in Charlotte NC?',

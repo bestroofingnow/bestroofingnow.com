@@ -32,7 +32,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Mt Holly NC | 5-Star Roofers',
   description:
-    'Looking for top-rated roofers in Mt Holly NC? Best Roofing Now provides expert roofing services to Mt Holly and Gaston County. BBB A+ rated, veteran-owned. Free estimates for roof repair, replacement, and installation.',
+    'Looking for top-rated roofers in Mt Holly NC? Best Roofing Now provides expert roofing services to Mt Holly and Gaston County. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-mt-holly-nc`,
   },

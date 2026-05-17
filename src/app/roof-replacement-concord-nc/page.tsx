@@ -31,7 +31,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Concord NC',
   description:
-    'Professional roof replacement in Concord NC. New roof installation for Cabarrus County homes with premium shingles from CertainTeed, GAF & Owens Corning. BBB A+ rated, veteran-owned. Free estimates.',
+    'Professional roof replacement in Concord NC. New roof installation for Cabarrus County homes with premium shingles from CertainTeed, GAF & Owens Corning.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-concord-nc`,
   },

@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Chimney Flashing Repair Charlotte NC | Leak Prevention',
   description:
-    'Expert chimney flashing repair in Charlotte NC. Stop chimney leaks with professional flashing installation and waterproofing. BBB A+ rated, licensed contractor. Free inspections available.',
+    'Expert chimney flashing repair in Charlotte NC. Stop chimney leaks with professional flashing installation and waterproofing.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/chimney-flashing-repair-charlotte-nc`,
   },

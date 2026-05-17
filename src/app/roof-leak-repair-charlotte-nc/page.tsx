@@ -42,7 +42,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Leak Repair Charlotte NC',
   description:
-    'Expert roof leak repair in Charlotte NC. Fast leak detection, emergency repairs 24/7, and permanent solutions for leaking roofs. Free inspections. BBB A+ rated. Call (704) 605-6047.',
+    'Expert roof leak repair in Charlotte NC. Fast leak detection, emergency repairs 24/7, and permanent solutions for leaking roofs. Free inspections.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-leak-repair-charlotte-nc`,
   },

@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'EPDM Roofing Charlotte NC | Rubber Roof Installation',
   description:
-    'Expert EPDM rubber roof installation in Charlotte NC. Durable, low-maintenance EPDM roofing for commercial and industrial buildings. BBB A+ rated. Free estimates.',
+    'Expert EPDM rubber roof installation in Charlotte NC. Durable, low-maintenance EPDM roofing for commercial and industrial buildings. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/epdm-roofing-charlotte-nc`,
   },

@@ -34,7 +34,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roofers Cornelius NC | 5-Star',
   description:
-    'Looking for trusted roofers in Cornelius NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman waterfront homes. BBB A+ rated. Free estimates.',
+    'Looking for trusted roofers in Cornelius NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Lake Norman waterfront homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofers-cornelius-nc`,
   },

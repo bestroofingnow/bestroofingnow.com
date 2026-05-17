@@ -39,7 +39,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Davidson NC',
   description:
-    'Commercial roofing in Davidson NC — TPO, EPDM, PVC, modified bitumen, metal for Lake Norman businesses. 30-yr NDL warranties, weekend installs, property-manager friendly.',
+    'Commercial roofing in Davidson NC — TPO, EPDM, PVC, modified bitumen, metal for Lake Norman businesses.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-davidson-nc`,
   },

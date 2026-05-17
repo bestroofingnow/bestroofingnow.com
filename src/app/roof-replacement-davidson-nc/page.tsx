@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Davidson NC',
   description:
-    'Need a new roof in Davidson NC? Best Roofing Now specializes in roof replacement for Davidson homes, including historic properties near Davidson College. BBB A+ rated, veteran-owned. Premium materials with 50-year warranties. Free estimates!',
+    'Need a new roof in Davidson NC? Best Roofing Now specializes in roof replacement for Davidson homes, including historic properties near Davidson College.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-davidson-nc`,
   },

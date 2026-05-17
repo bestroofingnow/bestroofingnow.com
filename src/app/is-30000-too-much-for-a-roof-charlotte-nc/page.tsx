@@ -60,9 +60,9 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Is $30,000 Too Much for a Roof in Charlotte NC? (2026 Pricing)',
+  title: 'Is $30,000 Too Much for a Roof in Charlotte? (2026 Pricing)',
   description:
-    "Is a $30K roof quote fair? 2026 Charlotte pricing by material and home size, plus what your $30K should include. Free second-opinion estimates from Best Roofing Now.",
+    "Is a $30K roof quote fair? 2026 Charlotte pricing by material and home size, plus what your $30K should include.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Is $30,000 Too Much for a Charlotte NC Roof? Honest Pricing Breakdown',

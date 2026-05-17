@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is an IBHS Fortified Roof and How Do I Get One in Charlotte NC?',
   description:
-    "IBHS Fortified Roof = third-party hurricane-resilience certification. Charlotte NC 10-30% insurance discount ($200-$700/year savings). 3 levels: Roof, Silver, Gold. Upgrade cost $1,100-$3,450.",
+    "IBHS Fortified Roof = third-party hurricane-resilience certification. Charlotte NC 10-30% insurance discount ($200-$700/year savings).",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is an IBHS Fortified Roof and How Do I Get One in Charlotte NC?',

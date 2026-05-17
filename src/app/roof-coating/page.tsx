@@ -37,7 +37,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roof Coating Charlotte NC | Silicone, Acrylic, SPF',
   description:
-    'Commercial roof coating in Charlotte NC — silicone, acrylic, SPF, elastomeric. Adds 10-15 years to aged membranes at 50-70% below tear-off cost. Duke Energy rebates documented.',
+    'Commercial roof coating in Charlotte NC — silicone, acrylic, SPF, elastomeric. Adds 10-15 years to aged membranes at 50-70% below tear-off cost.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-coating`,
   },

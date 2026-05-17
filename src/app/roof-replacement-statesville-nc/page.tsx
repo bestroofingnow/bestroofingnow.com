@@ -30,7 +30,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Replacement Statesville NC',
   description:
-    'Need a roof replacement in Statesville NC? Best Roofing Now provides expert roof replacement services in Iredell County. BBB A+ rated, veteran-owned. CertainTeed, GAF, and Owens Corning certified. Free estimates!',
+    'Need a roof replacement in Statesville NC? Best Roofing Now provides expert roof replacement services in Iredell County. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-statesville-nc`,
   },

@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing NoDa Charlotte NC',
   description:
-    'Professional roofing services for NoDa Charlotte NC. Specializing in historic mill homes, arts district properties, and mixed-use buildings. BBB A+ rated, veteran-owned. Free estimates.',
+    'Professional roofing services for NoDa Charlotte NC. Specializing in historic mill homes, arts district properties, and mixed-use buildings.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-noda-charlotte-nc`,
   },

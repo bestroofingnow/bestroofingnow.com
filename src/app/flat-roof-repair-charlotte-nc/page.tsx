@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Flat Roof Repair Charlotte NC',
   description:
-    'Expert flat roof repair in Charlotte NC for commercial and residential properties. TPO, EPDM, PVC, and modified bitumen repairs. Licensed, insured, BBB A+ rated. Free estimates available.',
+    'Expert flat roof repair in Charlotte NC for commercial and residential properties. TPO, EPDM, PVC, and modified bitumen repairs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/flat-roof-repair-charlotte-nc`,
   },

@@ -43,7 +43,7 @@ import EstimateButton from '@/components/estimate/EstimateButton';
 export const metadata: Metadata = {
   title: 'Roof Storm Damage Insurance Claim Charlotte NC | Free Inspection',
   description:
-    'Step-by-step guide to filing a roof storm damage insurance claim in Charlotte NC. Hail damage, wind damage, emergency roof repair. FREE inspections from BBB A+ rated contractor. We work with your insurance company.',
+    'Step-by-step guide to filing a roof storm damage insurance claim in Charlotte NC. Hail damage, wind damage, emergency roof repair.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-storm-damage-insurance-claim-charlotte-nc`,
   },

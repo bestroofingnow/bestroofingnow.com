@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Prevent Squirrel Damage to My Charlotte NC Roof?',
   description:
-    "Prevent Charlotte NC squirrel roof damage: trim branches 8-10 ft, seal entry points, hardware cloth backing, chimney cap $150-$400, tree guards. Damage $3K-$15K vs prevention $500-$2,500.",
+    "Prevent Charlotte NC squirrel roof damage: trim branches 8-10 ft, seal entry points, hardware cloth backing, chimney cap $150-$400, tree guards.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Prevent Squirrel Damage to My Charlotte NC Roof?',

@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is Roof Underlayment and Why Does It Matter in Charlotte NC?',
   description:
-    "Roof underlayment is the waterproof barrier under shingles. Synthetic ($0.30-0.50/sq ft) lasts 30-50 yr vs felt 5-10 yr. Ice-and-water shield required at eaves/valleys per NC code.",
+    "Roof underlayment is the waterproof barrier under shingles. Synthetic ($0.30-0.50/sq ft) lasts 30-50 yr vs felt 5-10 yr.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Underlayment and Why Does It Matter in Charlotte NC?',

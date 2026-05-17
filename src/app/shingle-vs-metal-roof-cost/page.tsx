@@ -33,7 +33,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Shingle vs Metal Roof Cost: Complete 2026 Comparison Guide | Charlotte NC',
   description:
-    'Shingle vs metal roof cost comparison for Charlotte NC homeowners. Upfront costs, lifetime value, insurance savings, and ROI breakdown. Find out which roofing material saves you more money over 50 years.',
+    'Shingle vs metal roof cost comparison for Charlotte NC homeowners. Upfront costs, lifetime value, insurance savings, and ROI breakdown.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/shingle-vs-metal-roof-cost`,
   },

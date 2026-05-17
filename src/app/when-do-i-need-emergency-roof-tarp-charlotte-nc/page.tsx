@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'When Do I Need an Emergency Roof Tarp in Charlotte NC?',
   description:
-    "Call for emergency roof tarp Charlotte NC: active leak, tree on roof, exposed decking, hail damage with leak, structural sag, chimney fall, commercial ponding, critical event protection.",
+    "Call for emergency roof tarp Charlotte NC: active leak, tree on roof, exposed decking, hail damage with leak, structural sag, chimney fall.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'When Do I Need an Emergency Roof Tarp in Charlotte NC?',

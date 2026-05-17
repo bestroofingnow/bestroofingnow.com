@@ -37,7 +37,7 @@ import { CitationFacts } from '@/components/sections/CitationFacts';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Contractor Charlotte NC | TPO, EPDM, Flat Roofs',
   description:
-    'Professional commercial roofing contractor in Charlotte NC. TPO, EPDM, PVC, metal, and flat roof systems for businesses. Minimal disruption, 24/7 emergency service. Free estimates!',
+    'Professional commercial roofing contractor in Charlotte NC. TPO, EPDM, PVC, metal, and flat roof systems for businesses.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-services`,
   },

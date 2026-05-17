@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Restaurant Roof: Repair vs Replace Charlotte NC',
   description:
-    'Should you repair or replace your Charlotte restaurant roof? Guide to costs, timing, health code compliance, and minimizing downtime. Free commercial estimates.',
+    'Should you repair or replace your Charlotte restaurant roof? Guide to costs, timing, health code compliance, and minimizing downtime.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/restaurant-roof-repair-vs-replacement-charlotte-nc`,
   },

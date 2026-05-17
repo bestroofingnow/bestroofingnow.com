@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   // materials, and process. The local conversion variant lives at /cedar-shake-roofing-charlotte-nc.
   title: 'Cedar Shake Roofing: Grades, Materials & Installation Guide',
   description:
-    'Cedar shake roofing guide — Certi-Split, Certi-Sawn, Certi-Shake grades, Western Red Cedar specs, Class B/C fire retardant, synthetic DaVinci/Brava alternatives, expected lifespan, and installation process.',
+    'Cedar shake roofing guide — Certi-Split, Certi-Sawn, Certi-Shake grades, Western Red Cedar specs, Class B/C fire retardant.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/cedar-shake-roofing`,
   },

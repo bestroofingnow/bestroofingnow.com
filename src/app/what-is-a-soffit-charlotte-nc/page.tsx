@@ -51,9 +51,9 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is a Soffit and What Does It Do for My Charlotte NC Home?',
+  title: 'What Is a Soffit and What Does It Do for My Charlotte Home?',
   description:
-    "Soffit = horizontal panel under roof eaves. Functions: NC IRC §R806 ventilation intake, eave protection, pest exclusion, aesthetic. Aluminum $4-8/ft, vinyl $3-6/ft, Hardie $6-12/ft.",
+    "Soffit = horizontal panel under roof eaves. Functions: NC IRC §R806 ventilation intake, eave protection, pest exclusion, aesthetic.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Soffit and What Does It Do for My Charlotte NC Home?',

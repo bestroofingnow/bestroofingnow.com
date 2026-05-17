@@ -36,7 +36,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Fascia & Soffit Repair Charlotte NC',
   description:
-    'Fascia and soffit repair in Charlotte NC — wood, PVC (Azek/Kleer), and aluminum coil wrap. Ventilated soffit for code-compliant attic airflow. Rot remediation, pest damage.',
+    'Fascia and soffit repair in Charlotte NC — wood, PVC (Azek/Kleer), and aluminum coil wrap. Ventilated soffit for code-compliant attic airflow.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/fascia-soffit-repair`,
   },

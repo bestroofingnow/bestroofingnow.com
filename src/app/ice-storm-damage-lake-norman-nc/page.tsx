@@ -36,7 +36,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'January 2026 Ice Storm Damage Lake Norman NC | Emergency Gutter & Roof Repair',
   description:
-    'Lake Norman ice storm damage help. Gutters falling off? Roof leaking as ice thaws? Best Roofing Now is here for our Lake Norman neighbors. Free emergency inspections for Mooresville, Cornelius, Davidson, Huntersville. Call 704-605-6047.',
+    'Lake Norman ice storm damage help. Gutters falling off? Roof leaking as ice thaws? Best Roofing Now is here for our Lake Norman neighbors.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/ice-storm-damage-lake-norman-nc`,
   },

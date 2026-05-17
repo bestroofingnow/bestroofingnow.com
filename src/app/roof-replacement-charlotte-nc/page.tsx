@@ -48,7 +48,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Charlotte NC | 2026',
   description:
-    'Roof replacement Charlotte NC -- 2026 pricing from $8K. Veteran-owned, BBB A+ rated, free estimates. GAF & Owens Corning certified installers. Financing available. 500+ roofs completed!',
+    'Roof replacement Charlotte NC -- 2026 pricing from $8K. Veteran-owned, BBB A+ rated, free estimates. GAF & Owens Corning certified installers.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-charlotte-nc`,
   },

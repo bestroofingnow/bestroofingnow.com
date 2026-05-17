@@ -31,7 +31,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Repair Matthews NC | Fast',
   description:
-    'Fast, reliable roof repair in Matthews NC and South Charlotte. Fix leaks, storm damage, and shingle problems. BBB A+ rated, veteran-owned. Same-day emergency service available. Free estimates.',
+    'Fast, reliable roof repair in Matthews NC and South Charlotte. Fix leaks, storm damage, and shingle problems. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-repair-matthews-nc`,
   },

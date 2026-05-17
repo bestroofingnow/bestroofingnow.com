@@ -33,7 +33,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Roof Inspection Cornelius NC | Free',
   description:
-    'Free roof inspections in Cornelius NC. Comprehensive assessments with detailed reports for Lake Norman eastern shore luxury homes. BBB A+ rated. Schedule today!',
+    'Free roof inspections in Cornelius NC. Comprehensive assessments with detailed reports for Lake Norman eastern shore luxury homes. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-inspection-cornelius-nc`,
   },

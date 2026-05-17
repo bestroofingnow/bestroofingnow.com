@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Lake Norman NC | Flat Roof & TPO Specialists',
   description:
-    'Commercial roofing experts serving the entire Lake Norman NC area. TPO, EPDM, flat roofs, metal commercial roofing for Cornelius, Davidson, Mooresville, Huntersville & Denver. BBB A+ rated, veteran-owned. Free estimates!',
+    'Commercial roofing experts serving the entire Lake Norman NC area. TPO, EPDM, flat roofs, metal commercial roofing for Cornelius, Davidson, Mooresville.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-lake-norman-nc`,
   },

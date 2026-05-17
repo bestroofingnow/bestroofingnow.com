@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Causes Roof Leaks in Charlotte NC?',
   description:
-    "Charlotte NC roof leak causes ranked: pipe boots 60%, valley 12%, chimney 10%, skylight 6%, missing shingles 4%, ridge 3%, ice dams 3%. Free infrared inspection in 30-60 min.",
+    "Charlotte NC roof leak causes ranked: pipe boots 60%, valley 12%, chimney 10%, skylight 6%, missing shingles 4%, ridge 3%, ice dams 3%.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Causes Roof Leaks in Charlotte NC?',

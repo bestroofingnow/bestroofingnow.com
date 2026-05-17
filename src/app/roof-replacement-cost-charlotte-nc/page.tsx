@@ -29,9 +29,9 @@ import { Lightbulb, Quote } from 'lucide-react';
 import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
-  title: 'Roof Replacement Cost Charlotte NC | 2026 Price Guide | Free Estimates',
+  title: 'Roof Replacement Cost Charlotte NC | 2026 Price Guide',
   description:
-    'How much does roof replacement cost in Charlotte NC? Average costs range from $8,000-$25,000 for typical homes. Get accurate pricing by roof size, materials, and complexity. Free estimates available.',
+    'How much does roof replacement cost in Charlotte NC? Average costs range from $8,000-$25,000 for typical homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-cost-charlotte-nc`,
   },

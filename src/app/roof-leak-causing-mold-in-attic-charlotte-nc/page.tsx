@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Roof Leak Causing Mold in Attic — Charlotte NC',
   description:
-    "Roof leak + attic mold response in Charlotte NC: stop leak first ($250-1,800), document for insurance, hire mold remediation contractor ($2,500-$15K+), fix NC IRC §R806 ventilation.",
+    "Roof leak + attic mold response in Charlotte NC: stop leak first ($250-1,800), document for insurance, hire mold remediation contractor ($2,500-$15K+).",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'My Roof Leak Caused Mold in My Attic — What Do I Do?',

@@ -39,7 +39,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Northstone Huntersville NC',
   description:
-    'Trusted Northstone roofer in Huntersville NC 28078. Roof replacement, synthetic slate, Class 4 shingles & metal roofing for Northstone Country Club homes. ARC-ready.',
+    'Trusted Northstone roofer in Huntersville NC 28078. Roof replacement, synthetic slate, Class 4 shingles & metal roofing for Northstone Country Club homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-northstone-huntersville-nc`,
   },

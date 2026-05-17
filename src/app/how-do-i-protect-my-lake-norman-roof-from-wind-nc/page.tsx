@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Do I Protect My Lake Norman NC Roof from Wind Damage?',
   description:
-    "Protect Lake Norman NC roof from wind: Class 4 impact-resistant 150+ MPH shingles, standing-seam aluminum, 6 ft ice-and-water shield, high-wind ridge vent, tree trimming.",
+    "Protect Lake Norman NC roof from wind: Class 4 impact-resistant 150+ MPH shingles, standing-seam aluminum, 6 ft ice-and-water shield, high-wind ridge vent.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Do I Protect My Lake Norman NC Roof from Wind Damage?',

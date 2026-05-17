@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'How Long Does a Roof Last in Charlotte NC?',
   description:
-    "How long does a roof last in Charlotte NC? Asphalt 25-50 yr, metal 50+, slate 75-150. Climate factors, lifespan extension tips, and free inspection from Best Roofing Now.",
+    "How long does a roof last in Charlotte NC? Asphalt 25-50 yr, metal 50+, slate 75-150.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'How Long Does a Roof Last in Charlotte NC? | Best Roofing Now',

@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Residential Roofing Charlotte NC | Expert Home Roofers',
   description:
-    'Expert residential roofing services in Charlotte NC. Best Roofing Now specializes in home roof repair, replacement, and installation. BBB A+ rated, veteran-owned. Free estimates.',
+    'Expert residential roofing services in Charlotte NC. Best Roofing Now specializes in home roof repair, replacement, and installation.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/residential-roofing-charlotte-nc`,
   },

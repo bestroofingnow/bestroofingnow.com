@@ -35,7 +35,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Commercial Roofing Lake Wylie SC | Flat Roof & TPO Experts',
   description:
-    'Expert commercial roofing in Lake Wylie SC. TPO, EPDM, flat roofs, metal roofing for waterfront businesses, Tega Cay & River District. BBB A+ rated, veteran-owned. Free estimates!',
+    'Expert commercial roofing in Lake Wylie SC. TPO, EPDM, flat roofs, metal roofing for waterfront businesses, Tega Cay & River District.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/commercial-roofing-lake-wylie-sc`,
   },

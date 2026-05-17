@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Dilworth Charlotte NC',
   description:
-    'Looking for a trusted roofer in Dilworth Charlotte NC? Best Roofing Now specializes in historic home roofing, bungalows, and preservation-friendly repairs. BBB A+ rated, veteran-owned. Free estimates.',
+    'Looking for a trusted roofer in Dilworth Charlotte NC? Best Roofing Now specializes in historic home roofing, bungalows, and preservation-friendly repairs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-dilworth-charlotte-nc`,
   },

@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Are Metal Roofs Good for Charlotte NC Homes?',
   description:
-    "Yes — metal roofs are excellent for Charlotte NC: 50+ yr lifespan, Class 4 hail resistance, 150+ MPH wind, 75-85% resale ROI, 10-30% insurance discount. $9-30/sq ft installed.",
+    "Yes — metal roofs are excellent for Charlotte NC: 50+ yr lifespan, Class 4 hail resistance, 150+ MPH wind, 75-85% resale ROI, 10-30% insurance discount.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Are Metal Roofs Good for Charlotte NC Homes?',

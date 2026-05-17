@@ -54,7 +54,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'Why Does My Roof Leak When It Rains in Charlotte NC?',
   description:
-    "Charlotte NC roof leaks have 8 common causes: pipe boot cracks #1, chimney flashing, lifted shingles, clogged gutters, ice dams, valley flashing, skylight, decking rot. 1-4 hour emergency tarp dispatch.",
+    "Charlotte NC roof leaks have 8 common causes: pipe boot cracks #1, chimney flashing, lifted shingles, clogged gutters, ice dams, valley flashing, skylight.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Why Does My Roof Leak When It Rains in Charlotte NC?',

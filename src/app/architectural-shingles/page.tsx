@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Architectural Shingles Charlotte NC',
   description:
-    'Architectural shingle installation in Charlotte NC — GAF Master Elite, CertainTeed SELECT, Owens Corning Platinum certified. Laminated dimensional shingles, 130 MPH wind, lifetime limited warranties.',
+    'Architectural shingle installation in Charlotte NC — GAF Master Elite, CertainTeed SELECT, Owens Corning Platinum certified.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/architectural-shingles`,
   },

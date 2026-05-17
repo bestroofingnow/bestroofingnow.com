@@ -25,7 +25,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 
 export const metadata: Metadata = {
   title: 'Roof and Gutter Replacement Charlotte NC | Save with Bundle Pricing',
-  description: 'Get roof and gutter replacement together in Charlotte NC and save. One contractor, one timeline, one warranty. Free estimates, financing available. Call (704) 605-6047.',
+  description: 'Get roof and gutter replacement together in Charlotte NC and save. One contractor, one timeline, one warranty. Free estimates, financing available.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/services/roof-and-gutter-replacement`,
   },

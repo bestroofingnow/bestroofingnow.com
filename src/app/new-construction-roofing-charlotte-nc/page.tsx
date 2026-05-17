@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'New Construction Roofing Charlotte',
   description:
-    'Professional new construction roofing services in Charlotte NC. Reliable builder partnerships, quality materials, and on-schedule completion. BBB A+ rated, veteran-owned company.',
+    'Professional new construction roofing services in Charlotte NC. Reliable builder partnerships, quality materials, and on-schedule completion.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/new-construction-roofing-charlotte-nc`,
   },

@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Emergency Roof Repair Near Me | Charlotte NC 24/7 | Call Now',
   description:
-    'Emergency roof repair near me in Charlotte NC. 24/7 same-day service, 1-hour response. Leaks, shingles, storm damage. Licensed & insured. Call (704) 605-6047!',
+    'Emergency roof repair near me in Charlotte NC. 24/7 same-day service, 1-hour response. Leaks, shingles, storm damage. Licensed & insured.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/emergency-roof-repair`,
   },

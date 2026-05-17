@@ -56,7 +56,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is the 25% Rule in Roofing? (Code & Insurance Guide)',
   description:
-    'The 25% rule (IRC R908.3) requires full roof replacement if more than 25% is damaged. NC code enforcement, insurance impact, and how Charlotte homeowners should respond. Free inspection from Best Roofing Now.',
+    'The 25% rule (IRC R908.3) requires full roof replacement if more than 25% is damaged.',
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'The 25% Rule in Roofing — What It Means for Charlotte Homeowners',

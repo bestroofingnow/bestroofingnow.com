@@ -41,7 +41,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Metal Roof The Peninsula Cornelius NC',
   description:
-    'Standing seam metal roofing for The Peninsula Cornelius NC. Kynar 500 finishes, 140+ MPH wind rating, HOA-approved palettes, McElroy & Drexel installs. Free estimate.',
+    'Standing seam metal roofing for The Peninsula Cornelius NC. Kynar 500 finishes, 140+ MPH wind rating, HOA-approved palettes, McElroy & Drexel installs.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-the-peninsula-cornelius-nc`,
   },

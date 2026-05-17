@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is Owens Corning Platinum Preferred and Why Does It Matter for My Charlotte NC Roof?',
   description:
-    "OC Platinum Preferred = top 1% of OC contractors. Charlotte NC exclusive Platinum Protection (50 yr material + LIFETIME workmanship + LIFETIME tear-off + 130 MPH wind).",
+    "OC Platinum Preferred = top 1% of OC contractors. Charlotte NC exclusive Platinum Protection (50 yr material + LIFETIME workmanship + LIFETIME tear-off +…",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Owens Corning Platinum Preferred and Why Does It Matter for My Charlotte NC Roof?',

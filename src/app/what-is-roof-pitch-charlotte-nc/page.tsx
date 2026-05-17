@@ -53,7 +53,7 @@ const followUpFAQs = [
 export const metadata: Metadata = {
   title: 'What Is Roof Pitch and What Does It Mean for Charlotte NC Homes?',
   description:
-    "Roof pitch = inches rise per 12 inches run. Charlotte typical 4/12-8/12. Pitch affects cost (steeper +15-40%), material compatibility, surface area (1.05x to 1.41x footprint).",
+    "Roof pitch = inches rise per 12 inches run. Charlotte typical 4/12-8/12. Pitch affects cost (steeper +15-40%), material compatibility.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is Roof Pitch and What Does It Mean for Charlotte NC Homes?',

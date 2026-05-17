@@ -30,7 +30,7 @@ import { EstimateButton } from '@/components/estimate';
 export const metadata: Metadata = {
   title: 'Gutter Services Charlotte NC | Installation, Repair, Cleaning & Guards',
   description:
-    'Professional gutter services in Charlotte NC. Seamless gutter installation, repair, cleaning, and gutter guard systems. Protect your home from water damage. Free estimates!',
+    'Professional gutter services in Charlotte NC. Seamless gutter installation, repair, cleaning, and gutter guard systems.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-services`,
   },

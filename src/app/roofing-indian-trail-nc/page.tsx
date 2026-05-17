@@ -37,7 +37,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Indian Trail NC | 5-Star Rated',
   description:
-    'Looking for quality roofing in Indian Trail NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Union County. BBB A+ rated with 500+ roofs completed. Free estimates for residential and commercial roofing services.',
+    'Looking for quality roofing in Indian Trail NC? Best Roofing Now is a 5-star rated, veteran-owned roofing company serving Union County.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-indian-trail-nc`,
   },

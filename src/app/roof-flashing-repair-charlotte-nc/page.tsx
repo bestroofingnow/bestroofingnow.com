@@ -38,7 +38,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Flashing Repair Charlotte',
   description:
-    'Expert roof flashing repair in Charlotte NC. We fix wall flashing, vent pipe boots, skylight seals, valley flashing, and step flashing leaks. Licensed roofers, free inspections. Call Best Roofing Now today!',
+    'Expert roof flashing repair in Charlotte NC. We fix wall flashing, vent pipe boots, skylight seals, valley flashing, and step flashing leaks.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-flashing-repair-charlotte-nc`,
   },

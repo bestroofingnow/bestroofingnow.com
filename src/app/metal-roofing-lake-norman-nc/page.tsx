@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Metal Roofing Lake Norman NC | Standing Seam & Metal Shingles',
   description:
-    'Premium metal roofing installation across Lake Norman NC. Standing seam, metal shingles, and corrugated panels for waterfront and lakefront homes. 50+ year lifespan, wind-resistant. Free estimates!',
+    'Premium metal roofing installation across Lake Norman NC. Standing seam, metal shingles, and corrugated panels for waterfront and lakefront homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/metal-roofing-lake-norman-nc`,
   },

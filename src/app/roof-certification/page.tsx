@@ -35,7 +35,7 @@ import { IMAGES } from '@/lib/images';
 export const metadata: Metadata = {
   title: 'Roof Certification Charlotte NC | Real Estate & Lender',
   description:
-    'Roof certification for Charlotte NC real estate transactions — HAAG certified inspectors, 2-5 year certification period, 24-48 hour letter turnaround. FHA/VA lender accepted.',
+    'Roof certification for Charlotte NC real estate transactions — HAAG certified inspectors, 2-5 year certification period, 24-48 hour letter turnaround.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-certification`,
   },

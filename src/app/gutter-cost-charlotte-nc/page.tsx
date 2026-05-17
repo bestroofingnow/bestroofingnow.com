@@ -28,9 +28,9 @@ import { getRoofingContractorIdentity } from '@/lib/schema-helpers';
 import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
-  title: 'Gutter Installation Cost Charlotte NC | 2026 Price Guide | Free Estimates',
+  title: 'Gutter Installation Cost Charlotte NC | 2026 Price Guide',
   description:
-    'How much do gutters cost in Charlotte NC? Gutter installation costs $6-$15 per linear foot. Average home total: $1,000-$3,500. See cost breakdowns by material, size, and style. Free estimates available.',
+    'How much do gutters cost in Charlotte NC? Gutter installation costs $6-$15 per linear foot. Average home total: $1,000-$3,500.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-cost-charlotte-nc`,
   },

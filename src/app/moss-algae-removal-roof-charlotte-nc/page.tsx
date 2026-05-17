@@ -39,7 +39,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Moss & Algae Removal Charlotte',
   description:
-    'Professional moss and algae removal from roofs in Charlotte NC. Soft washing, prevention treatments, and NC humidity solutions. BBB A+ rated, veteran-owned. Free estimates.',
+    'Professional moss and algae removal from roofs in Charlotte NC. Soft washing, prevention treatments, and NC humidity solutions.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/moss-algae-removal-roof-charlotte-nc`,
   },

@@ -40,7 +40,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Overlay vs Tear-Off',
   description:
-    'Can you put a new roof over old shingles in Charlotte NC? Compare roof overlay vs tear-off costs, warranties, NC building code limits, and when each option makes sense.',
+    'Can you put a new roof over old shingles in Charlotte NC? Compare roof overlay vs tear-off costs, warranties, NC building code limits.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-overlay-vs-tear-off-charlotte-nc`,
   },

@@ -51,9 +51,9 @@ const followUpFAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: 'What Is a Roof Boot and Why Does My Charlotte NC Roof Have One?',
+  title: 'What Is a Roof Boot and Why Does My Charlotte Roof Have One?',
   description:
-    "Roof boot = flashing/gasket sealing pipes through roof. #1 cause of Charlotte NC leaks (60%). Rubber 8-12 yr, lead 50+ yr. Replace cost $150-$2,500. Upgrade to lead during reroof.",
+    "Roof boot = flashing/gasket sealing pipes through roof. #1 cause of Charlotte NC leaks (60%). Rubber 8-12 yr, lead 50+ yr. Replace cost $150-$2,500.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'What Is a Roof Boot and Why Does My Charlotte NC Roof Have One?',

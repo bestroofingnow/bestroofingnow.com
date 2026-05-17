@@ -64,7 +64,7 @@ const LAKE_NORMAN_CITIES = ['Mooresville', 'Cornelius', 'Davidson', 'Huntersvill
 export const metadata: Metadata = {
   title: 'Lake Norman Waterfront Roofing',
   description:
-    'Waterfront roofing for Lake Norman lakefront estates. Standing seam metal, natural slate, and Class 4 impact systems engineered for open-water exposure. Call (704) 605-6047.',
+    'Waterfront roofing for Lake Norman lakefront estates. Standing seam metal, natural slate, and Class 4 impact systems engineered for open-water exposure.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/lake-norman-waterfront-roofing`,
   },

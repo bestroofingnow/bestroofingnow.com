@@ -40,7 +40,7 @@ import { LKNHowToBundle } from '@/components/seo/LKNHowToSchemas';
 export const metadata: Metadata = {
   title: 'Roofing Curtis Pond Mooresville NC',
   description:
-    'Expert roofing for Curtis Pond in Mooresville NC. Class 4 impact-resistant shingles, synthetic slate, and HOA-approved replacements. BBB A+ rated. Free quotes.',
+    'Expert roofing for Curtis Pond in Mooresville NC. Class 4 impact-resistant shingles, synthetic slate, and HOA-approved replacements. BBB A+ rated.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-curtis-pond-mooresville-nc`,
   },

@@ -399,6 +399,32 @@ const nextConfig: NextConfig = {
       // ===========================================
       // /veteran-owned-roofing-charlotte-nc (618 lines) → /veteran-owned-roofing-company-charlotte-nc (989 lines)
       { source: '/veteran-owned-roofing-charlotte-nc', destination: '/veteran-owned-roofing-company-charlotte-nc', permanent: true },
+
+      // ===========================================
+      // BROKEN-BACKLINK RECLAMATION — 2026-05-17
+      // Each source URL is a legacy slug that no longer has a page but has external
+      // inbound links per Ahrefs broken-backlinks. Redirecting preserves the link
+      // equity instead of letting it 404 into the void. Targets are the closest
+      // current live page that matches the original intent.
+      // ===========================================
+      // ProjectMapIt partner profile (DR 50) links — citation listing for /best-roofing-now-llc
+      { source: '/residential-roof-maintenance', destination: '/roof-maintenance-charlotte-nc', permanent: true },
+      { source: '/commercial-gutter-replacement', destination: '/gutter-installation-charlotte-nc', permanent: true },
+      { source: '/new-roof-installation', destination: '/new-roof-installation-charlotte-nc', permanent: true },
+      { source: '/instant-estimator', destination: '/contact', permanent: true },
+      { source: '/residential-roof-inspection', destination: '/roof-inspection-charlotte-nc', permanent: true },
+      { source: '/residential-roof-installation', destination: '/services/residential-roofing', permanent: true },
+      { source: '/insurance-claims', destination: '/insurance-claim-roofing-charlotte-nc', permanent: true },
+      // ApexRoof citation (DR 29)
+      { source: '/residential-emergency-roofing-assistance', destination: '/emergency-roof-repair-charlotte-nc', permanent: true },
+      // FalconRoofing citation (DR 28)
+      { source: '/metal-roofing', destination: '/metal-roofing-charlotte-nc', permanent: true },
+      // LKN Connect community listing (DR 25)
+      { source: '/commercial-roof-maintenance', destination: '/services/commercial-roofing', permanent: true },
+      // VeraRoofing slate-roofing context (DR 14)
+      { source: '/slate-roofing-materials', destination: '/synthetic-slate-roofing-charlotte-nc', permanent: true },
+      // Generic homepage fallback for the lowest-DR contextual citation
+      { source: '/top-rated-roofing-contractor-for-your-home-needs', destination: '/', permanent: true },
     ];
   },
 

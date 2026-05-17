@@ -32,7 +32,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roof Replacement Fort Mill SC',
   description:
-    'Professional roof replacement in Fort Mill SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning. Up to 50-year warranties. BBB A+ rated. Free estimates. Call (704) 605-6047.',
+    'Professional roof replacement in Fort Mill SC. Complete tear-off and installation with premium shingles from GAF, CertainTeed, and Owens Corning.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roof-replacement-fort-mill-sc`,
   },

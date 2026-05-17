@@ -46,7 +46,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Veteran-Owned Roofer Charlotte',
   description:
-    'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Founded on military values of integrity, discipline, and excellence. BBB A+ rated. Free estimates. Our Roofs for Veterans program gives back to those who served.',
+    'Best Roofing Now is a veteran-owned, family-operated roofing company in Charlotte NC. Founded on military values of integrity, discipline, and excellence.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/veteran-owned-roofing-company-charlotte-nc`,
   },

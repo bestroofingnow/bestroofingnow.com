@@ -32,7 +32,7 @@ import { LKNDataCitations } from '@/components/sections/LKNDataCitations';
 export const metadata: Metadata = {
   title: 'Gutter Installation Cornelius NC',
   description:
-    'Professional gutter installation in Cornelius NC. Seamless aluminum gutters, gutter guards, and gutter repair for Lake Norman homes. BBB A+ rated, veteran-owned. Free estimates.',
+    'Professional gutter installation in Cornelius NC. Seamless aluminum gutters, gutter guards, and gutter repair for Lake Norman homes.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/gutter-installation-cornelius-nc`,
   },

@@ -30,7 +30,7 @@ import { CityGeoSection } from '@/components/sections/CityGeoSection';
 export const metadata: Metadata = {
   title: 'Roofing Mint Hill NC | 5-Star',
   description:
-    'Need a roofer in Mint Hill NC? Best Roofing Now serves Mint Hill from our Charlotte headquarters. BBB A+ rated, veteran-owned. Expert roof repair, replacement, and installation for larger properties in East Charlotte.',
+    'Need a roofer in Mint Hill NC? Best Roofing Now serves Mint Hill from our Charlotte headquarters. BBB A+ rated, veteran-owned.',
   alternates: {
     canonical: `${SITE_CONFIG.url}/roofing-mint-hill-nc`,
   },
