@@ -66,9 +66,12 @@ async function getCityStats() {
         }
       });
 
+      // Return ALL cities with projects (was previously sliced to top 10), so every
+      // /projects/city/{city} page receives an internal link from /projects. This
+      // fixes the orphan-page issue flagged by Ahrefs Site Audit on 2026-05-11
+      // where projects in non-top-10 cities had no path from the homepage.
       return Object.entries(stats)
         .sort((a, b) => b[1] - a[1])
-        .slice(0, 10)
         .map(([city, count]) => ({ city, count }));
     }
 
@@ -206,7 +209,11 @@ export default async function ProjectsPage() {
               >
                 All Cities
               </Link>
-              {cityStats.slice(0, 8).map(({ city, count }) => (
+              {/* Render ALL city links — was previously sliced to top 8, which left
+                  projects in smaller cities orphaned (no internal link path). The
+                  /projects/city/{slug} pages are the only listing that links to ALL
+                  projects per city, so every city must be reachable from here. */}
+              {cityStats.map(({ city, count }) => (
                 <Link
                   key={city}
                   href={`/projects/city/${city.toLowerCase().replace(/\s+/g, '-')}`}

@@ -17,7 +17,7 @@ import { IMAGES } from '@/lib/images';
 
 export const metadata: Metadata = {
   title: 'Roofing Stories | Real Projects from Charlotte Neighborhoods',
-  description: 'Explore real roofing projects from Charlotte neighborhoods. See before & after photos, learn about materials used, and read stories from homeowners we\'ve helped.',
+  description: 'Explore real roofing projects from Charlotte neighborhoods. See before & after photos, learn about materials used, and read stories from homeowners we\'ve helped.',
   openGraph: {
     title: 'Real Roofing Stories from Charlotte Neighborhoods | Best Roofing Now',
   description: 'See our completed roofing projects across Charlotte. Real homes, real results.',
@@ -58,10 +58,11 @@ export default async function StoriesPage() {
   // Get recent featured projects
   const recentProjects = formattedProjects.slice(0, 12);
 
-  // Get cities sorted by project count
+  // Get cities sorted by project count (was previously sliced to top 10 — removed
+  // to give every /stories/{city} page an incoming internal link, fixing the
+  // orphan-page issue flagged by Ahrefs Site Audit on 2026-05-11).
   const citiesSorted = Object.entries(cityStats)
-    .sort(([, a], [, b]) => b.count - a.count)
-    .slice(0, 10);
+    .sort(([, a], [, b]) => b.count - a.count);
 
   return (
     <>
