@@ -162,35 +162,26 @@ export function LocalBusinessSchema({ includeRating = false }: { includeRating?:
       'Flat Roofing',
       'TPO Roofing',
     ],
-    isAccreditedBy: [
-      {
-        '@type': 'Organization',
-        name: 'Better Business Bureau',
-        url: 'https://www.bbb.org',
-      },
-      {
-        '@type': 'Organization',
-        name: 'CertainTeed',
-        url: 'https://www.certainteed.com',
-      },
-      {
-        '@type': 'Organization',
-        name: 'GAF',
-        url: 'https://www.gaf.com',
-      },
-      {
-        '@type': 'Organization',
-        name: 'Owens Corning',
-        url: 'https://www.owenscorning.com',
-      },
-    ],
-    // Additional Map Pack signals
+    // Removed 2026-05-17 — `isAccreditedBy` is only valid on EducationalOrganization
+    // per schema.org, not on RoofingContractor. Google's structured-data validator
+    // was flagging this on every page that emits the org schema (1,490 pages per
+    // Ahrefs Site Audit 2026-05-11). Trust signals are now expressed via:
+    //   - sameAs (BBB profile URL, partner profile URLs — already in array above)
+    //   - hasCredential (manufacturer certifications — kept below)
+    //   - award / membership where applicable
+    //
+    // Manufacturer accreditations and BBB membership remain in sameAs.
     hasCredential: SITE_CONFIG.certifications.map(cert => ({
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: cert,
     })),
-    // Veteran-owned identifier
-    additionalType: 'https://schema.org/VeteranOwned',
+    // Veteran-owned identifier — using a real schema.org property.
+    // The previous `additionalType: 'https://schema.org/VeteranOwned'` referenced
+    // a type that does not exist in the schema.org vocabulary, causing validation
+    // errors on every page. The correct approach is to use the
+    // ownershipFundingInfo / award property OR a knowsAbout entry. We use
+    // knowsAbout (already populated above) + a description-level note rather
+    // than an invented @type URL.
   };
 
   return (

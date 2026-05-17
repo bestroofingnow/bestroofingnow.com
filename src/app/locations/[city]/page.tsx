@@ -1533,13 +1533,19 @@ export default async function LocationPage({ params }: PageProps) {
             <p className="text-gray">
               Explore roofing projects we have completed in the {location.city} area and throughout the Charlotte metro.
             </p>
-            <Link
-              href={`/projects/city/${location.city.toLowerCase().replace(/\s+/g, '-')}`}
-              className="inline-flex items-center gap-2 text-primary font-semibold hover:underline mt-4"
-            >
-              View all {location.city} projects with photos
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            {/* Conditional link — only emit if /projects/city/{slug} actually has projects.
+                Was previously linking unconditionally and emitting 4XXs for cities without
+                project data, which was a major contributor to the 563 4XX errors flagged by
+                Ahrefs Site Audit on 2026-05-11. */}
+            {cityMarkers.length > 0 && (
+              <Link
+                href={`/projects/city/${location.city.toLowerCase().replace(/\s+/g, '-')}`}
+                className="inline-flex items-center gap-2 text-primary font-semibold hover:underline mt-4"
+              >
+                View all {location.city} projects with photos
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            )}
           </div>
           <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
             <ProjectMap city={location.city} height="500px" showControls={true} initialMarkers={cityMarkers} />

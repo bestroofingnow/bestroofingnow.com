@@ -1,0 +1,51 @@
+# Disavow file for bestroofingnow.com
+# Generated 2026-05-17
+# Submit at: https://search.google.com/search-console/disavow-links
+# Select property: bestroofingnow.com (or www.bestroofingnow.com)
+#
+# Source: Ahrefs Site Explorer referring-domains + anchors analysis 2026-05-17.
+# All entries are domains flagged as is_spam=true by Ahrefs OR carrying
+# coordinated fake-testimonial / cloaked anchor patterns.
+#
+# Format: one domain per line, prefixed with "domain:" to disavow the
+# entire domain. Google's disavow tool ignores comment lines starting with #.
+
+# === 1. FAKE-TESTIMONIAL BACKLINK SCHEME ===
+# 32 referring domains using an identical fake testimonial anchor naming
+# "SEOExpress.org" as the SEO provider. The anchor text is verbatim across
+# all sites — textbook PBN or paid-link injection. The DR of these is
+# variable (some up to DR 32) but the pattern is the same.
+domain:seoexpress.org
+
+# === 2. SPAM DOMAINS FLAGGED BY AHREFS ===
+# Each of these is is_spam=true in Ahrefs and is either DR-inflated bait
+# or part of a link-injection network.
+domain:za.com
+domain:pages.dev
+domain:itxoft.com
+domain:buybacklinks.agency
+domain:example3.com
+domain:rank-your.site
+domain:rankyour.website
+domain:rank-top.click
+
+# === 3. TELEGRAM-CHANNEL CLOAKED ANCHORS ===
+# 14+ referring domains pointing to us with anchors like:
+#   "OUR TELEGRAM CHANEL https://t.me/s/quarterlinks25"
+#   "JOIN OUR TELEGRAM https://t.me/s/darksidelinks"
+# These are clearly injection attacks — disavow at domain level whenever
+# the host appears legit but the anchor is cloaked spam.
+#
+# NOTE: t.me itself is Telegram and shouldn't be disavowed (legitimate
+# linking domain). The disavow handles the source sites that host the
+# injected anchor text — those should be identified per-URL via GSC's
+# "External Links" report and added below by URL after that lookup.
+
+# === 4. URL-LEVEL DISAVOW (placeholder — add specific URLs after GSC review) ===
+# Pattern for adding URL-level entries when domain-level is too broad:
+# https://example.com/spam-page-with-injected-anchor
+
+# === END OF DISAVOW FILE ===
+# After submitting, expect 4-12 weeks for Google to reprocess link signals.
+# Re-pull Ahrefs anchors and referring-domains in 30/60/90 days; the
+# fake-testimonial anchor count should decline if the scheme is recrawled.

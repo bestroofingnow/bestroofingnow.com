@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { hasServiceCityPage, type ServiceSlug } from '@/lib/service-city-pages';
 
 interface ServiceLink {
   title: string;
@@ -17,63 +18,37 @@ interface ServiceCityLinksProps {
   variant?: 'grid' | 'inline' | 'compact';
 }
 
-// Service-city page mappings
-const getServiceLinks = (citySlug: string, cityName: string): ServiceLink[] => {
-  const baseSlug = citySlug.replace('-nc', '').replace('-sc', '');
-  const state = citySlug.includes('-sc') ? 'SC' : 'NC';
+// Templates for all 10 service-city page patterns.
+// `getServiceLinks` filters these against the SERVICE_CITY_PAGES registry so we
+// never emit a link to a page that hasn't been built — that was the root cause
+// of the 563 4XX errors flagged by Ahrefs Site Audit on 2026-05-11.
+interface ServiceTemplate {
+  service: ServiceSlug;
+  title: (city: string) => string;
+  description: string;
+}
 
-  return [
-    {
-      title: `Roofing ${cityName}`,
-      href: `/roofing-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Complete roofing services',
-    },
-    {
-      title: `Roofers ${cityName}`,
-      href: `/roofers-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Local trusted roofers',
-    },
-    {
-      title: `Roof Repair ${cityName}`,
-      href: `/roof-repair-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Fast, reliable roof repairs',
-    },
-    {
-      title: `Roof Replacement ${cityName}`,
-      href: `/roof-replacement-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Complete roof replacement',
-    },
-    {
-      title: `Roof Inspection ${cityName}`,
-      href: `/roof-inspection-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Free comprehensive inspections',
-    },
-    {
-      title: `Emergency Roof Repair ${cityName}`,
-      href: `/emergency-roof-repair-${baseSlug}-${state.toLowerCase()}`,
-      description: '24/7 emergency service',
-    },
-    {
-      title: `Storm Damage Repair ${cityName}`,
-      href: `/storm-damage-roof-repair-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Insurance claim assistance',
-    },
-    {
-      title: `Commercial Roofing ${cityName}`,
-      href: `/commercial-roofing-${baseSlug}-${state.toLowerCase()}`,
-      description: 'TPO, EPDM & flat roofs',
-    },
-    {
-      title: `Metal Roofing ${cityName}`,
-      href: `/metal-roofing-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Standing seam & metal panels',
-    },
-    {
-      title: `Gutter Installation ${cityName}`,
-      href: `/gutter-installation-${baseSlug}-${state.toLowerCase()}`,
-      description: 'Seamless gutter systems',
-    },
-  ];
+const SERVICE_TEMPLATES: ServiceTemplate[] = [
+  { service: 'roofing',                  title: (c) => `Roofing ${c}`,                  description: 'Complete roofing services' },
+  { service: 'roofers',                  title: (c) => `Roofers ${c}`,                  description: 'Local trusted roofers' },
+  { service: 'roof-repair',              title: (c) => `Roof Repair ${c}`,              description: 'Fast, reliable roof repairs' },
+  { service: 'roof-replacement',         title: (c) => `Roof Replacement ${c}`,         description: 'Complete roof replacement' },
+  { service: 'roof-inspection',          title: (c) => `Roof Inspection ${c}`,          description: 'Free comprehensive inspections' },
+  { service: 'emergency-roof-repair',    title: (c) => `Emergency Roof Repair ${c}`,    description: '24/7 emergency service' },
+  { service: 'storm-damage-roof-repair', title: (c) => `Storm Damage Repair ${c}`,      description: 'Insurance claim assistance' },
+  { service: 'commercial-roofing',       title: (c) => `Commercial Roofing ${c}`,       description: 'TPO, EPDM & flat roofs' },
+  { service: 'metal-roofing',            title: (c) => `Metal Roofing ${c}`,            description: 'Standing seam & metal panels' },
+  { service: 'gutter-installation',      title: (c) => `Gutter Installation ${c}`,      description: 'Seamless gutter systems' },
+];
+
+const getServiceLinks = (citySlug: string, cityName: string): ServiceLink[] => {
+  return SERVICE_TEMPLATES
+    .filter((t) => hasServiceCityPage(t.service, citySlug))
+    .map((t) => ({
+      title: t.title(cityName),
+      href: `/${t.service}-${citySlug}`,
+      description: t.description,
+    }));
 };
 
 export function ServiceCityLinks({
