@@ -27,10 +27,13 @@ node "$ROOT/scripts/cannibalization-audit.mjs" > /tmp/cannib-precommit.log 2>&1 
   exit 1
 }
 
-# Parse counts
-DUPCAN=$(grep "Exact-duplicate canonicals:" /tmp/cannib-precommit.log | sed 's/[^0-9]//g' | head -1)
-DUPTITLE=$(grep "Exact-duplicate titles:" /tmp/cannib-precommit.log | sed 's/[^0-9]//g' | head -1)
-DUPH1=$(grep "Exact-duplicate H1s:" /tmp/cannib-precommit.log | sed 's/[^0-9]//g' | head -1)
+# Parse counts — use awk to grab the LAST whitespace-separated field on each
+# matched line (the numeric count). Original sed-based approach broke because
+# `sed 's/[^0-9]//g'` keeps every digit in the line, including the "1" in "H1s",
+# so "Exact-duplicate H1s:    0" became "10" instead of "0".
+DUPCAN=$(grep "Exact-duplicate canonicals:" /tmp/cannib-precommit.log | awk '{print $NF}' | head -1)
+DUPTITLE=$(grep "Exact-duplicate titles:" /tmp/cannib-precommit.log | awk '{print $NF}' | head -1)
+DUPH1=$(grep "Exact-duplicate H1s:" /tmp/cannib-precommit.log | awk '{print $NF}' | head -1)
 
 # Block on any non-zero count
 if [ "${DUPCAN:-0}" != "0" ] || [ "${DUPTITLE:-0}" != "0" ] || [ "${DUPH1:-0}" != "0" ]; then
