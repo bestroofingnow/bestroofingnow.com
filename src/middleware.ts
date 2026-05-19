@@ -133,6 +133,21 @@ export function middleware(request: NextRequest) {
 
   const pathname = request.nextUrl.pathname;
 
+  // 2026-05-18: Return 410 Gone for any /wp-content/, /wp-admin/, /wp-includes/,
+  // /wp-json/ request. The WordPress CMS is permanently decommissioned (project
+  // memory documents the disconnected state), so these legacy URLs should signal
+  // "permanently gone" to crawlers rather than 403/404 which keeps Ahrefs and
+  // Google retrying. This kills the 627 broken-image errors Ahrefs flagged on
+  // 2026-05-18 (all sourced from /wp-content/uploads/*).
+  if (
+    pathname.startsWith('/wp-content/') ||
+    pathname.startsWith('/wp-admin/') ||
+    pathname.startsWith('/wp-includes/') ||
+    pathname.startsWith('/wp-json/')
+  ) {
+    return new NextResponse(null, { status: 410 });
+  }
+
   // Get the first segment of the path
   const firstSegment = pathname.split('/')[1] || '';
 

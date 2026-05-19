@@ -80,6 +80,16 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: title.length > 42 ? title.slice(0, 42) : title,
   description,
+  // 2026-05-18: WordPress CMS is disconnected (cms.bestroofingnow.com DNS points to
+  // Vercel, not WP — see project memory). Blog posts render with broken /wp-content/
+  // images and inconsistent markup. Adding noindex while CMS is down so Ahrefs/Google
+  // stop flagging Multiple H1 (11 pages), broken-image (627 errors), and 2 MB-page-size
+  // issues all sourced from this dynamic route. Remove this `robots` block when the
+  // WP CMS is restored. See research/seo-action-items-2026-05-17.md and project memory.
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
       canonical: `${SITE_CONFIG.url}/blog/${slug}`,
     },
