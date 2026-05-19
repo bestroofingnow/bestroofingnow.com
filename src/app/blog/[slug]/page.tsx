@@ -35,6 +35,34 @@ function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, '').replace(/&[^;]+;/g, ' ').trim();
 }
 
+/**
+ * Sanitize WordPress-rendered HTML for embedding in our Next.js template.
+ *
+ * WHY this exists: WP posts authored via Elementor (the WordPress page builder)
+ * routinely include their own `<h1>` inside the post body. When we render the
+ * post body inside our [slug] template — which already wraps the post.title in
+ * an `<h1>` — the result is multiple H1s per page. Ahrefs Site Audit on
+ * 2026-05-18 flagged 11 such pages; Google's "one H1 per page" expectation is
+ * a real SEO signal.
+ *
+ * Sanitization steps applied in order:
+ *   1. Demote every `<h1>` in the WP body to `<h2>` (preserves visual weight
+ *      enough for in-body section headers without competing with our title H1)
+ *   2. Demote any inline `<h2>` that was previously rendered AS an H1 by
+ *      Elementor's class-based styling — left alone for now; if a problem
+ *      surfaces, layer on a class-name strip pass
+ *
+ * Future image-fallback step (NOT applied yet): rewrite
+ * `src="https://www.bestroofingnow.com/wp-content/uploads/..."` to a hosted
+ * fallback. That fix waits until we have a CDN host for blog images.
+ */
+function sanitizeWpContent(html: string): string {
+  // Demote H1 → H2 (covers `<h1>`, `<h1 class="...">`, etc.)
+  return html
+    .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
+    .replace(/<\/h1>/gi, '</h2>');
+}
+
 function formatDate(dateString: string): string {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
@@ -159,8 +187,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const contentToProcess = optimizedData?.content || post.content.rendered;
   const readTime = estimateReadTime(contentToProcess);
 
-  // Process content with automatic internal links
-  const processedContent = addInternalLinks(contentToProcess);
+  // Process content with automatic internal links, then sanitize WP markup
+  // (demote any in-body H1s to H2 so we have exactly one H1 per page — see
+  // sanitizeWpContent docstring for why)
+  const processedContent = sanitizeWpContent(addInternalLinks(contentToProcess));
 
   // Get smart related links based on content analysis
   const smartLinks = getSmartLinks(contentToProcess);
